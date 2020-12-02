@@ -1,0 +1,298 @@
+{{COI|date=December 2017}}
+'''Large deformation diffeomorphic metric mapping''' ('''LDDMM''') is a specific suite of algorithms used for diffeomorphic mapping and manipulating dense imagery based on  '''diffeomorphic metric mapping''' within the academic discipline of [[computational anatomy]], to be distinguished from its precursor based on '''diffeomorphic mapping'''.  The distinction between the two is that diffeomorphic metric maps satisfy the property that the length associated to their flow away from the identity induces a metric on the [[Computational anatomy#The Diffeomorphism Group of Computational Anatomy|group of diffeomorphisms]], which in turn induces a metric on the orbit of [[Computational anatomy#Shapes and forms|shapes and forms]] within the field of [[Computational anatomy|Computational Anatomy]]. The study of shapes and forms with the metric of diffeomorphic metric mapping is called [[Computational Anatomy#Diffeomorphometry:the metric space of shapes and forms|diffeomorphometry]].
+
+A '''diffeomorphic mapping''' system is a system designed to map, manipulate, and transfer information which is stored in many types of spatially distributed medical imagery.
+
+Diffeomorphic mapping is the underlying technology for mapping and analyzing information measured in human anatomical coordinate systems which have been measured via Medical imaging{{Citation needed|date=April 2017}}. Diffeomorphic mapping is a broad term that actually refers to a number of different algorithms, processes, and methods. It is attached to many operations and has many applications for analysis and visualization. Diffeomorphic mapping can be used to relate various sources of information which are indexed as a function of spatial position as the key index variable. Diffeomorphisms are by their Latin root structure preserving transformations, which are in turn differentiable and therefore smooth, allowing for the calculation of metric based quantities such as arc length and surface areas. Spatial location and extents in human anatomical coordinate systems can be recorded via a variety of Medical imaging modalities, generally termed multi-modal medical imagery, providing either scalar and or vector quantities at each spatial location. Examples are scalar [[T1 (MRI)|T1]] or T2 [[Magnetic resonance imaging|magnetic resonance imagery]], or as 3x3 diffusion tensor matrices [[diffusion MRI]] and [[diffusion-weighted imaging]], to scalar densities associated to [[computed tomography]] (CT), or functional imagery such as temporal data of [[functional magnetic resonance imaging]] and scalar densities such as [[Positron emission tomography|Positron emission tomography (PET)]].
+
+Computational anatomy is a subdiscipline within the broader field of [[neuroinformatics]] within [[bioinformatics]] and [[medical imaging]]. The first algorithm for dense image mapping via diffeomorphic metric mapping was Beg's LDDMM<ref>{{cite journal|url=https://www.researchgate.net/publication/220660081|title=Computing Large Deformation Metric Mappings via Geodesic Flows of Diffeomorphisms|journal=International Journal of Computer Vision|doi=10.1023/B:VISI.0000043755.93987.aa|access-date=2016-01-27|author1=M.F. Beg|author2=M. I. Miller|author3=A. Trouve|author4=L. Younes|volume=61|issue=2|pages=139–157|year=2005}}</ref><ref name=":1">{{cite web|title=NITRC: LDDMM: Tool/Resource Info|url=https://www.nitrc.org/projects/lddmm-volume/|website=www.nitrc.org|accessdate=2015-12-11}}</ref> for volumes and Joshi's landmark matching for point sets with correspondence,<ref name="Joshi 1357–1370"/><ref name=":6">{{Cite book|url=https://books.google.com/books?id=FzvNfkMjvPwC|title=Handbook of Mathematical Methods in Imaging|last=Scherzer|first=Otmar|date=2010-11-23|publisher=Springer Science & Business Media|isbn=9780387929194}}</ref> with LDDMM algorithms now available for computing diffeomorphic metric maps between non-corresponding landmarks<ref>{{Cite book|last=Glaunes|first=J.|last2=Trouve|first2=A.|last3=Younes|first3=L.|date=2004-06-01 |volume=2|pages=II–712–II–718 Vol.2|doi=10.1109/CVPR.2004.1315234|isbn=978-0-7695-2158-9|citeseerx=10.1.1.158.4209|chapter=Diffeomorphic matching of distributions: A new approach for unlabelled point-sets and sub-manifolds matching|title=Proceedings of the 2004 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2004. CVPR 2004}}</ref> and landmark matching intrinsic to spherical manifolds,<ref>{{cite journal|url=https://www.researchgate.net/publication/263559913|title=Landmark Matching via Large Deformation Diffeomorphisms on the Sphere: Special Issue on Mathematics and Image Analysis|journal=Journal of Mathematical Imaging and Vision|doi=10.1023/B:JMIV.0000011326.88682.e5|access-date=2016-03-27|volume=20|pages=179–200|year=2004|last1=Glaunès|first1=Joan|last2=Vaillant|first2=Marc|last3=Miller|first3=Michael I}}</ref>  curves,<ref>{{Cite journal|last=Du|first=Jia|last2=Younes|first2=Laurent|last3=Qiu|first3=Anqi|date=2011-05-01|title=Whole brain diffeomorphic metric mapping via integration of sulcal and gyral curves, cortical surfaces, and images|journal=NeuroImage|volume=56|issue=1|pages=162–173|doi=10.1016/j.neuroimage.2011.01.067|issn=1053-8119|pmc=3119076|pmid=21281722}}</ref> currents and surfaces,<ref name=":18">{{Cite journal|last=Vaillant|first=Marc|last2=Glaunès|first2=Joan|date=2005-01-01 |volume=19|pages=381–392|issn=1011-2499|pmid=17354711|title=Surface matching via currents|journal=Information Processing in Medical Imaging : Proceedings of the ... Conference|doi=10.1007/11505730_32|series=Lecture Notes in Computer Science|isbn=978-3-540-26545-0|url=https://semanticscholar.org/paper/8e934e4c4fdf90663444eea0f75d38e22d0e87f8}}</ref><ref name="Vaillant 1149–1159">{{Cite journal|last=Vaillant|first=Marc|last2=Qiu|first2=Anqi|last3=Glaunès|first3=Joan|last4=Miller|first4=Michael I.|date=2007-02-01|title=Diffeomorphic Metric Surface Mapping in Superior Temporal Gyrus|journal=NeuroImage|volume=34|issue=3|pages=1149–1159|doi=10.1016/j.neuroimage.2006.08.053|issn=1053-8119|pmc=3140704|pmid=17185000}}</ref><ref>{{Cite journal|last=Durrleman|first=Stanley|last2=Pennec|first2=Xavier|last3=Trouvé|first3=Alain|last4=Ayache|first4=Nicholas|date=2009-10-01|title=Statistical models of sets of curves and surfaces based on currents|journal=Medical Image Analysis|volume=13|issue=5|pages=793–808|doi=10.1016/j.media.2009.07.007|issn=1361-8423|pmid=19679507|citeseerx=10.1.1.221.5224}}</ref> tensors,<ref>{{Cite book|last=Cao|first=Yan|last2=Miller|first2=Michael I.|last3=Mori|first3=Susumu|last4=Winslow|first4=Raimond L.|last5=Younes|first5=Laurent|date=2006-07-05 |volume=2006|page=67|doi=10.1109/CVPRW.2006.65|issn=1063-6919|pmc=2920614|pmid=20711423|isbn=978-0-7695-2646-1|chapter=Diffeomorphic Matching of Diffusion Tensor Images|title=2006 Conference on Computer Vision and Pattern Recognition Workshop (CVPRW'06)|journal=Proceedings. IEEE Computer Society Conference on Computer Vision and Pattern Recognition}}</ref> varifolds,<ref name="Charon 2547–2580">{{Cite journal|last=Charon|first=Nicolas|last2=Trouvé|first2=Alain|title=The varifold representation of non-oriented shapes for diffeomorphic registration|arxiv=1304.6108|journal=SIAM Journal on Imaging Sciences|volume=6|issue=4|pages=2547–2580|doi=10.1137/130918885|issn=1936-4954|year=2013|bibcode=2013arXiv1304.6108C}}</ref> and time-series.<ref name=":15">{{Cite journal|last=Miller|first=Michael I.|date=2004-01-01|title=Computational anatomy: shape, growth, and atrophy comparison via diffeomorphisms|journal=NeuroImage|volume=23 Suppl 1|pages=S19–33|doi=10.1016/j.neuroimage.2004.07.021|issn=1053-8119|pmid=15501089|citeseerx=10.1.1.121.4222}}</ref><ref>{{cite journal|last1=Trouvé|first1=Alain|last2=Vialard|first2=François-Xavier|title=Shape splines and stochastic shape evolutions: A second order point of view|journal=Quarterly of Applied Mathematics|date=1 May 2012|volume=70|issue=2|pages=219–251|doi=10.1090/S0033-569X-2012-01250-4|bibcode=2010arXiv1003.3895T|jstor=43639026|arxiv=1003.3895}}</ref><ref>{{Cite journal|last=Fletcher|first=P.T.|last2=Lu|first2=C.|last3=Pizer|first3=S.M.|last4=Joshi|first4=S.|date=2004-08-01|title=Principal geodesic analysis for the study of nonlinear statistics of shape|journal=IEEE Transactions on Medical Imaging|volume=23|issue=8|pages=995–1005|doi=10.1109/TMI.2004.831793|pmid=15338733|issn=0278-0062|citeseerx=10.1.1.76.539}}</ref> The term LDDMM was first established as part of the [[National Institutes of Health]] supported [[Biomedical Informatics Research Network]].<ref>{{cite web|url=http://www.birncommunity.org/tools-catalog/large-deformation-diffeomorphic-metric-mapping-lddmm/|title=Large Deformation Diffeomorphic Metric Mapping (LDDMM) {{!}} Biomedical Informatics Research Network (BIRN)|website=www.birncommunity.org|access-date=2016-03-11}}</ref>
+
+In a more general sense, diffeomorphic mapping is any solution that registers or builds correspondences between dense coordinate systems in medical imaging by ensuring the solutions are diffeomorphic. There are now many codes organized around diffeomorphic registration<ref name="Christensen 1435–1447" />  including ANTS,<ref name=":2">{{cite web|title=stnava/ANTs|url=https://github.com/stnava/ANTs/blob/master/Scripts/antsIntroduction.sh|website=GitHub|accessdate=2015-12-11}}</ref> DARTEL,<ref name=":3">{{Cite journal|title=A fast diffeomorphic image registration algorithm|journal=NeuroImage|date=2007-10-15|issn=1053-8119|pmid=17761438|pages=95–113|volume=38|issue=1|doi=10.1016/j.neuroimage.2007.07.007|first=John|last=Ashburner}}</ref> DEMONS,<ref>{{cite web|url=https://sites.google.com/site/tomvercauteren/software|title=Software - Tom Vercauteren|website=sites.google.com|access-date=2016-04-16}}</ref> StationaryLDDMM,<ref name=":5">{{cite web|title=Publication:Comparing algorithms for diffeomorphic registration: Stationary LDDMM and Diffeomorphic Demons|url=https://www.openaire.eu/search/publication?articleId=dedup_wf_001::ea7b28db1d4570e248acdffb6211d98d|website=www.openaire.eu|accessdate=2015-12-11}}</ref> FastLDDMM,<ref>{{Cite journal|last=Zhang|first=Miaomiao|last2=Fletcher|first2=P. Thomas|date=2015 |volume=24|pages=249–259|issn=1011-2499|pmid=26221678|title=Finite-Dimensional Lie Algebras for Fast Diffeomorphic Image Registration|journal=Information Processing in Medical Imaging : Proceedings of the ... Conference|doi=10.1007/978-3-319-19992-4_19|series=Lecture Notes in Computer Science|isbn=978-3-319-19991-7|url=https://semanticscholar.org/paper/9175107c9f92fb96d7acd0f6968c1c36388db2fa}}</ref><ref>{{Cite book|last=Zhang|first=Miaomiao|last2=Liao|first2=Ruizhi|last3=Dalca|first3=Adrian V.|last4=Turk|first4=Esra A.|last5=Luo|first5=Jie|last6=Grant|first6=P. Ellen|last7=Golland|first7=Polina|date=2017-06-25|title=Frequency Diffeomorphisms for Efficient Image Registration|journal=Information Processing in Medical Imaging|volume=10265|series=Lecture Notes in Computer Science|language=en|pages=559–570|doi=10.1007/978-3-319-59050-9_44|pmid=29391767|pmc=5788203|isbn=9783319590493}}</ref> as examples of actively used computational codes for constructing correspondences between coordinate systems based on dense images.
+
+The distinction between diffeomorphic metric mapping forming the basis for LDDMM and the earliest methods of diffeomorphic mapping is the introduction of a Hamilton principle of least-action in which large deformations are selected of shortest length corresponding to geodesic flows. This important distinction arises from the original formulation of the [[Riemannian metric and Lie-bracket in computational anatomy|Riemannian metric]] corresponding to the right-invariance. The lengths of these geodesics give the metric in the metric space structure of human anatomy. Non-geodesic formulations of diffeomorphic mapping in general does not correspond to any metric formulation.
+
+==History of development==
+Diffeomorphic mapping 3-dimensional information across coordinate systems is central to high-resolution [[Medical imaging]] and the area of  [[Neuroinformatics]] [[Bioinformatics|within the newly emerging field of bioinformatics]]. Diffeomorphic ma'''<nowiki/>'''pping 3-dimensional coordinate systems as measured via high resolution dense imagery has a long history in 3-D beginning with [[CT scan|Computed Axial Tomography]] (CAT scanning) in the early 80's by the University of Pennsylvania group led by [[Ruzena Bajcsy]],<ref>{{Cite journal|title=Multiresolution Elastic Matching|journal=Comput. Vision Graph. Image Process.|date=1989-04-01|issn=0734-189X|pages=1–21|volume=46|issue=1|doi=10.1016/S0734-189X(89)80014-3|first=Ruzena|last=Bajcsy|first2=Stane|last2=Kovačič}}</ref> and subsequently the [[Ulf Grenander]] school at [[Brown University]] with the HAND experiments.<ref>{{Cite book|title=Hands: a pattern theoretic study of biological shapes|url=https://books.google.com/books?id=zelRAAAAMAAJ|publisher=Springer-Verlag|date=1991-01-01|isbn=9780387973869|language=en|first=Ulf|last=Grenander|first2=Yun-shyong|last2=Chow|first3=Daniel MacRae|last3=Keenan}}</ref><ref>{{Cite journal|title=Structural Image Restoration Through Deformable Templates|jstor=2290581|journal=Journal of the American Statistical Association|date=1991-01-01|pages=376–387|volume=86|issue=414|doi=10.2307/2290581|first=Yali|last=Amit|first2=Ulf|last2=Grenander|first3=Mauro|last3=Piccioni}}</ref> In the 90's there were several solutions for image registration which were associated to linearizations of '''small deformation''' and non-linear elasticity.<ref>{{Cite journal|title=Evaluation of multiresolution elastic matching using MRI data|date=1991-01-01|pages=226–234|volume=1445|doi=10.1117/12.45220|first=James C.|last=Gee|first2=Martin|last2=Reivich|first3=L.|last3=Bilaniuk|first4=David|last4=Hackney|first5=R.|last5=Zimmerman|first6=Stanislav|last6=Kovacic|first7=Ruzena K.|last7=Bajcsy|journal=Medical Imaging V: Image Processing|bibcode=1991SPIE.1445..226G}}</ref><ref>{{Cite journal|last=Gee|first=J. C.|last2=Reivich|first2=M.|last3=Bajcsy|first3=R.|date=1993-04-01|title=Elastically deforming 3D atlas to match anatomical brain images|journal=Journal of Computer Assisted Tomography|volume=17|issue=2|pages=225–236|issn=0363-8715|pmid=8454749|doi=10.1097/00004728-199303000-00011 }}</ref><ref>{{Cite journal|title=Mathematical textbook of deformable neuroanatomies|journal=Proceedings of the National Academy of Sciences of the United States of America|date=1993-12-15|issn=0027-8424|pmc=48101|pmid=8265653|pages=11944–11948|volume=90|issue=24|first=M I|last=Miller|first2=G E|last2=Christensen|first3=Y|last3=Amit|first4=U|last4=Grenander|doi=10.1073/pnas.90.24.11944|bibcode=1993PNAS...9011944M}}</ref><ref>{{Cite journal|title=A survey of medical image registration|journal=Medical Image Analysis|date=1998-03-01|issn=1361-8415|pmid=10638851|pages=1–36|volume=2|issue=1|first=J. B.|last=Maintz|first2=M. A.|last2=Viergever|doi=10.1016/s1361-8415(01)80026-8|citeseerx=10.1.1.46.4959}}</ref><ref>{{Cite journal|title=Mapping of hyperelastic deformable templates using the finite element method|date=1995-01-01|pages=252–265|volume=2573|doi=10.1117/12.216419|first=Richard D.|last=Rabbitt|first2=Jeffrey A.|last2=Weiss|first3=Gary E.|last3=Christensen|first4=Michael I.|last4=Miller|journal=Vision Geometry IV|bibcode=1995SPIE.2573..252R}}</ref>
+
+The central focus of the sub-field of '''[[Computational anatomy]] (CA)''' within [[medical imaging]]  is mapping information across anatomical coordinate systems at the 1 millimeter [[morphome]] scale. In CA mapping of dense information measured within [[Magnetic resonance imaging|Magnetic resonance image]] (MRI) based coordinate systems such as in the brain has been solved via inexact matching of 3D MR images one onto the other. The earliest introduction of the use of '''diffeomorphic mapping''' via '''large deformation''' flows of [[diffeomorphisms]] for transformation of coordinate systems in image analysis and medical imaging was by Christensen, Rabbitt and Miller <ref name="Christensen 1435–1447">{{Cite journal|title=Deformable Templates Using Large Deformation Kinematics|journal=Trans. Img. Proc.|date=1996-10-01|issn=1057-7149|pages=1435–1447|volume=5|issue=10|doi=10.1109/83.536892|first=G. E.|last=Christensen|first2=R. D.|last2=Rabbitt|first3=M. I.|last3=Miller|pmid=18290061|bibcode=1996ITIP....5.1435C}}</ref><ref>{{Cite journal|last=Christensen|first=G. E.|last2=Rabbitt|first2=R. D.|last3=Miller|first3=M. I.|date=1994-03-01|title=3D brain mapping using a deformable neuroanatomy|journal=Physics in Medicine and Biology|volume=39|issue=3|pages=609–618|issn=0031-9155|pmid=15551602|doi=10.1088/0031-9155/39/3/022|bibcode=1994PMB....39..609C|citeseerx=10.1.1.46.1833 }}</ref> and Trouve.<ref>{{Cite journal|last=Trouvé|first=Alain|date=1998-07-01|title=Diffeomorphisms Groups and Pattern Matching in Image Analysis|journal=International Journal of Computer Vision|language=en|volume=28|issue=3|pages=213–221|doi=10.1023/A:1008001603737|issn=0920-5691 }}</ref> The introduction of flows, which are akin to the equations of motion used in fluid dynamics, exploit the notion that dense coordinates in image analysis follow the [[Lagrangian and Eulerian specification of the flow field|Lagrangian and Eulerian]] equations of motion. This model becomes more appropriate for cross-sectional studies in which brains and or hearts are not necessarily deformations of one to the other. Methods based on linear or non-linear elasticity energetics which grows with distance from the identity mapping of the template, is not appropriate for cross-sectional study. Rather, in models based on Lagrangian and Eulerian flows of diffeomorphisms, the constraint is associated to topological properties, such as open sets being preserved, coordinates not crossing implying uniqueness and existence of the inverse mapping, and connected sets remaining connected.  The use of diffeomorphic methods grew quickly to dominate the field of mapping methods post Christensen's original paper, with fast and symmetric methods becoming available.<ref name=":3"/><ref>{{Cite journal|last=Avants|first=B. B.|last2=Epstein|first2=C. L.|last3=Grossman|first3=M.|last4=Gee|first4=J. C.|date=2008-02-01|title=Symmetric diffeomorphic image registration with cross-correlation: evaluating automated labeling of elderly and neurodegenerative brain|journal=Medical Image Analysis|volume=12|issue=1|pages=26–41|doi=10.1016/j.media.2007.06.004|issn=1361-8423|pmc=2276735|pmid=17659998 }}</ref>
+
+Such methods are powerful in that they introduce notions of regularity of the solutions so that they can be differentiated and local inverses can be calculated. The disadvantages of these methods is that there was no associated global least-action property which could score the flows of minimum energy. This contrasts the geodesic motions which are central to the study of  [[Rigid-body kinematics|Rigid body kinematics]] and the many problems solved in [[Physics]] via<nowiki/> [[Hamilton's principal of least action|Hamilton's principle of least action]]. In 1998, Dupuis, Grenander and Miller<ref name=":142">{{Cite journal|title=Variational Problems on Flows of Diffeomorphisms for Image Matching|url=http://dl.acm.org/citation.cfm?id=298828.298844|journal=Q. Appl. Math.|date=1998-09-01|issn=0033-569X|pages=587–600|volume=LVI|issue=3|first=Paul|last=Dupuis|first2=Ulf|last2=Grenander|doi = 10.1090/qam/1632326|doi-access=free}}</ref> established the conditions for guaranteeing the existence of solutions for dense image matching in the space of flows of diffeomorphisms. These conditions require an action penalizing kinetic energy measured via the Sobolev norm on spatial derivatives of the flow of vector fields.
+
+The large deformation diffeomorphic metric mapping (LDDMM) code that Faisal Beg derived and implemented for his PhD at Johns Hopkins University<ref name=":13">{{Cite journal|title=Computing Large Deformation Metric Mappings via Geodesic Flows of Diffeomorphisms|journal=International Journal of Computer Vision|date=2005-02-01|issn=0920-5691|pages=139–157|volume=61|issue=2|doi=10.1023/B:VISI.0000043755.93987.aa|language=en|first=M. Faisal|last=Beg|first2=Michael I.|last2=Miller|first3=Alain|last3=Trouvé|first4=Laurent|last4=Younes}}</ref> developed the earliest algorithmic code  which solved for flows with fixed points satisfying the necessary conditions for the dense image matching problem subject to least-action. Computational anatomy now has many existing codes organized around diffeomorphic registration<ref name="Christensen 1435–1447" />  including ANTS,<ref name=":2"/> DARTEL,<ref name=":3"/> DEMONS,<ref name=":4">{{cite web|url=https://sites.google.com/site/tomvercauteren/software|title=Software - Tom Vercauteren|website=sites.google.com|accessdate=2015-12-11}}</ref> LDDMM,<ref name=":1"/> StationaryLDDMM<ref name=":5"/> as examples of actively used computational codes for constructing correspondences between coordinate systems based on dense images.
+
+These large deformation methods have been extended to landmarks without registration via measure matching,<ref>{{Cite book|title=L.: Diffeomorphic matching of distributions: A new approach for unlabelled point-sets and sub-manifolds matching|volume=2|pages=712–718|chapter-url=https://www.researchgate.net/publication/4082354|accessdate=2015-11-25|doi=10.1109/CVPR.2004.1315234|chapter=Diffeomorphic matching of distributions: A new approach for unlabelled point-sets and sub-manifolds matching|year=2004|last1=Glaunes|first1=J|last2=Trouve|first2=A|last3=Younes|first3=L|isbn=978-0-7695-2158-9|citeseerx=10.1.1.158.4209}}</ref> curves,<ref>{{Cite journal|title=Large Deformation Diffeomorphic Metric Curve Mapping|journal=International Journal of Computer Vision|date=2008-12-01|issn=0920-5691|pmc=2858418|pmid=20419045|pages=317–336|volume=80|issue=3|doi=10.1007/s11263-008-0141-9|first=Joan|last=Glaunès|first2=Anqi|last2=Qiu|first3=Michael I.|last3=Miller|first4=Laurent|last4=Younes}}</ref> surfaces,<ref>{{Cite journal|title=Surface matching via currents|journal=Proceedings of Information Processing in Medical Imaging (IPMI 2005), Number 3565 in Lecture Notes in Computer Science|date=2005-01-01|pages=381–392|first=Marc|last=Vaillant|first2=Joan|last2=Glaunès|series=Lecture Notes in Computer Science|volume=19|doi=10.1007/11505730_32|pmid=17354711|isbn=978-3-540-26545-0|citeseerx=10.1.1.88.4666}}</ref> dense vector<ref name="Cao 1379–1386 Vol. 2">{{Cite book|title=Large deformation diffeomorphic metric mapping of fiber orientations|journal=Tenth IEEE International Conference on Computer Vision, 2005. ICCV 2005|date=2005-10-01|pages=1379–1386 Vol. 2|volume=2|doi=10.1109/ICCV.2005.132|first=Yan|last=Cao|first2=M.I.|last2=Miller|first3=R.L.|last3=Winslow|first4=L.|last4=Younes|isbn=978-0-7695-2334-7|citeseerx=10.1.1.158.1582}}</ref> and tensor <ref>{{Cite journal|title=Large deformation diffeomorphic metric mapping of vector fields|journal=IEEE Transactions on Medical Imaging|date=2005-09-01|issn=0278-0062|pmid=16156359|pages=1216–1230|volume=24|issue=9|doi=10.1109/TMI.2005.853923|first=Yan|last=Cao|first2=M.I.|last2=Miller|first3=R.L.|last3=Winslow|first4=L.|last4=Younes|citeseerx=10.1.1.157.8377}}</ref> imagery, and varifolds removing orientation.<ref>{{Cite journal|title=The Varifold Representation of Nonoriented Shapes for Diffeomorphic Registration|journal=SIAM Journal on Imaging Sciences|date=2013-01-01|pages=2547–2580|volume=6|issue=4|doi=10.1137/130918885|first=N.|last=Charon|first2=A.|last2=Trouvé|arxiv=1304.6108|bibcode=2013arXiv1304.6108C}}</ref>
+
+==The diffeomorphism orbit model in computational anatomy==
+Deformable shape in [[Computational anatomy|Computational Anatomy (CA)]]<ref>{{Cite journal|last=Miller|first=Michael|last2=Banerjee|first2=Ayananshu|last3=Christensen|first3=Gary|last4=Joshi|first4=Sarang|last5=Khaneja|first5=Navin|last6=Grenander|first6=Ulf|last7=Matejic|first7=Larissa|date=1997-06-01|title=Statistical methods in computational anatomy|journal=Statistical Methods in Medical Research|language=en|volume=6|issue=3|pages=267–299|doi=10.1177/096228029700600305|issn=0962-2802|pmid=9339500}}</ref><ref>{{cite journal|last1=Grenander|first1=Ulf|last2=Miller|first2=Michael I.|title=Computational anatomy: an emerging discipline|journal=Quarterly of Applied Mathematics|date=1 December 1998|volume=56|issue=4|pages=617–694|doi=10.1090/qam/1668732|doi-access=free}}</ref><ref>{{Cite journal|last=Miller|first=Michael I.|last2=Trouvé|first2=Alain|last3=Younes|first3=Laurent|date=2002-01-01|title=On the Metrics and Euler-Lagrange Equations of Computational Anatomy|journal=Annual Review of Biomedical Engineering|volume=4|issue=1|pages=375–405|doi=10.1146/annurev.bioeng.4.092101.125733|pmid=12117763|citeseerx=10.1.1.157.6533}}</ref><ref>{{Cite journal|last=Miller|first=Michael I.|last2=Qiu|first2=Anqi|date=2009-03-01|title=The emerging discipline of Computational Functional Anatomy|journal=NeuroImage|volume=45|issue=1 Suppl|pages=S16–39|doi=10.1016/j.neuroimage.2008.10.044|issn=1095-9572|pmc=2839904|pmid=19103297}}</ref><nowiki/>is studied via the use of diffeomorphic mapping for establishing correspondences between anatomical coordinates in Medical Imaging. In this setting, three dimensional medical images are modelled as a random deformation of some exemplar, termed the template <math> I_{temp} </math>, with the set of observed images element in the random [[Computational anatomy#The deformable template orbit model of CA|orbit model of CA]] for images <math> I \in \mathcal {I}
+\doteq \{ I=I_{temp} \circ \varphi, \varphi \in Diff_V \} </math>. The template is mapped onto the target by defining a variational problem in which the template is transformed via the diffeomorphism used as a change of coordinate to minimize a squared-error matching condition between the transformed template and the target.
+
+The diffeomorphisms are generated via smooth flows  <math>\phi_t,  t \in [0,1]</math> , with <math>\varphi \doteq \phi_1</math>, satisfying the [[Computational anatomy#Lagrangian and Eulerian flows for generating diffeomorphisms|Lagrangian and Eulerian specification of the flow field]] associated to the ordinary differential equation,
+:<math>
+\frac{d}{dt} \phi_t=v_t \circ \phi_t , \ \phi_0=id
+</math>,
+with 
+<math>
+v_t, t \in [0,1]
+</math> the [[Lagrangian and Eulerian specification of the flow field|Eulerian]] vector fields determining the flow.
+The vector fields are guaranteed to be 1-time continuously differentiable <math> v_t \in C^1 </math> by modelling them to be in a 
+[[Computational anatomy#The Smoothness Condition on Vector fields as Modelled in a Reproducing kernel Hilbert space|smooth Hilbert space]]  <math>v \in V</math> supporting 1-continuous derivative.<ref name=":0"/> The inverse <math> \phi_t^{-1}, t \in [0,1] </math>  is defined by the Eulerian vector-field with flow given by
+
+{{NumBlk|::|<math>
+\frac{d}{dt} \phi_t^{-1}=- (D \phi_t^{-1}) v_t , \ \phi_0^{-1}=id \ .
+</math>|{{EquationRef|Inverse Transport flow}}}}
+
+To ensure smooth flows of diffeomorphisms with inverse,  the vector fields with components in <math>  {\mathbb R}^3   </math> must be at least 1-time continuously differentiable in space<ref name=":7">A. Trouvé. Action de groupe de dimension infinie et reconnaissance de formes. C R Acad Sci Paris Sér I Math, 321(8):1031– 1034, 1995.</ref><ref name=":22">P. Dupuis, U. Grenander, M.I. Miller, Existence of Solutions on Flows of Diffeomorphisms, Quarterly of Applied Math, 1997.</ref> which are modelled as elements of the Hilbert space  <math>(V, \|\cdot \|_V )</math> using the [[Sobolev space|Sobolev]] embedding theorems so that each element <math>v_i \in H_0^3, i=1,2,3,</math> has 3-times square-integrable weak-derivatives. Thus <math>(V, \|\cdot \|_V )</math> embeds smoothly in 1-time continuously differentiable functions.<ref name=":4" /><ref name=":22" />  The diffeomorphism group are flows with vector fields absolutely integrable in Sobolev norm
+
+{{NumBlk|::|<math>
+Diff_V \doteq \{\varphi=\phi_1: \dot \phi_t=v_t \circ \phi_t , \phi_0=id, \int_0^1 \|v_t \|_V dt < \infty \} \ .
+</math>|{{EquationRef|Diffeomorphism Group}}}}
+
+==The variational problem of dense image matching and sparse landmark matching==
+
+===LDDMM algorithm for dense image matching===
+In CA the space of vector fields <math>(V, \|\cdot \|_V )</math> are modelled as a [[Computational anatomy#The Smoothness Condition on Vector fields as Modelled in a Reproducing kernel Hilbert space|reproducing Kernel Hilbert space]] (RKHS) defined by a 1-1, differential operator<math> A: V \rightarrow V^*  </math> determining the norm <math>  \|v\|_V^2 \doteq \int_{R^3} Av\cdot v dx, \ v \in V \ ,
+</math> 
+where the integral is calculated by integration by parts when <math>Av</math> is a generalized function  in the dual space <math> V^*</math>. 
+The differential operator is selected so that the Green's kernel, the inverse of the operator, is continuously differentiable in each variable implying that the [[Computational anatomy#The Smoothness Condition on Vector fields as Modelled in a Reproducing kernel Hilbert space|vector fields support 1-continuous derivative]]; see<ref name=":0">{{cite journal|last1=Dupuis|first1=Paul|last2=Grenander|first2=Ulf|last3=Miller|first3=Michael I.|title=Variational problems on flows of diffeomorphisms for image matching|journal=Quarterly of Applied Mathematics|date=1 September 1998|volume=56|issue=3|pages=587–600|doi=10.1090/qam/1632326|doi-access=free}}</ref> for the necessary conditions on the norm for existence of solutions.
+
+The original large deformation diffeomorphic metric mapping (LDDMM) algorithms of Beg, Miller, Trouve, Younes<ref>{{cite journal|url=https://www.researchgate.net/publication/220660081|title=Computing Large Deformation Metric Mappings via Geodesic Flows of Diffeomorphisms|journal=International Journal of Computer Vision|doi=10.1023/B:VISI.0000043755.93987.aa|access-date=2016-03-20|volume=61|issue=2|pages=139–157|year=2005|last1=Beg|first1=M. Faisal|last2=Miller|first2=Michael I|last3=Trouvé|first3=Alain|last4=Younes|first4=Laurent}}</ref> was derived taking variations with respect to the vector field parameterization of the group, since <math> v=\dot \phi \circ \phi^{-1} </math> are in a vector spaces. Beg solved the dense image matching minimizing the action integral of kinetic energy of diffeomorphic flow while
+minimizing endpoint matching term according to{{NumBlk||
+<math display="inline"> \min_{v: \dot \phi=v \circ \phi, \phi_0=id} C(v) \doteq 
+\frac{1}{2} \int_0^1 \int_{R^3} Av_t \cdot v_t dx dt   +\frac{1}{2} \int_{R^3}|I\circ \phi_1^{-1}-J|^2dx </math>
+|{{EquationRef|Variational Problem Images}}}}
+*Beg's Iterative Algorithm for Dense Image Matching
+Update until convergence,  <math> \phi_t^{old} \leftarrow \phi_t^{new} </math> each iteration, with <math>\phi_{t1} \doteq \phi_1 \circ \phi_t^{-1}</math>:{{NumBlk||<math> \begin{cases}
+&v_t^{new}(\cdot)=v_t^{old}(\cdot) - \epsilon(v_t^{old} -  \int_{R^3} K(\cdot, y) (I \circ \phi_t^{-1 old}(y) -J \circ \phi_{t1}^{old}(y) ) \nabla(I \circ \phi_t^{-1old}(y))
+|D\phi_{t1}^{old}(y)|dy ), t \in [0,1]
+\\
+& \dot \phi_t^{new}=v_t^{new} \circ \phi_t^{new}, t \in [0,1]
+\end{cases} </math>|{{EquationRef|Beg-LDDMM-iteration}}}}
+This implies that the fixed point at <math> t=0 </math> satisfies 
+:<math> \mu_0^*=Av_0^*=(I -J \circ \phi_1^* ) \nabla I|D\phi_1^*|</math>, 
+which in turn implies it satisfies the Conservation equation given by the {{EquationNote|Endpoint Matching Condition}} according to 
+:<math>Av_t^*=(D \phi_t^{*-1})^T Av_0^* \circ \phi_t^{*-1}|D \phi_t^{*-1}|</math>
+<ref name="Miller 36">{{Cite journal|last=Miller|first=Michael I.|last2=Younes|first2=Laurent|last3=Trouvé|first3=Alain|date=2014-03-01|title=Diffeomorphometry and geodesic positioning systems for human anatomy|journal=Technology|volume=2|issue=1|pages=36–43|doi=10.1142/S2339547814500010|issn=2339-5478|pmc=4041578|pmid=24904924}}</ref><ref name="Miller 447–509"/>
+
+===LDDMM registered landmark matching===
+
+The landmark matching problem has a pointwise correspondence defining the endpoint condition with geodesics given by the following minimum:
+:<math> \min_{v:\dot \phi_t=v_t \circ \phi_t}  C(v) \doteq \frac{1}{2} \int_0^1 \int_{R^3} Av_t \cdot v_t dx dt  +\frac{1}{2} \sum_i ( \phi_1(x_i)-y_i) \cdot ( \phi_1(x_i)-y_i) </math>;
+[[File:Faisal Beg LDDMM Algorithnm.png|alt=Figure showing dense image mtaching LDDMM for transporting a curved motion.|thumb|Figure depicts LDMM dense image matching. Top row shows transport of the image under the flow <math>I \circ \phi_t^{-1}</math>; middle row shows sequence of vector fields <math>v_t,</math>t=0,1/5,2/5,3/5,4/5,1; bottom row shows the sequence of grids under <math>\phi_t.</math>]]
+*Iterative Algorithm for Landmark Matching
+Joshi originally defined the registered landmark matching probleme,.<ref name="Joshi 1357–1370"/> Update until convergence,  <math> \phi_t^{old} \leftarrow \phi_t^{new} </math> each iteration, with <math>\phi_{t1} \doteq \phi_1 \circ \phi_t^{-1}</math>:
+{{NumBlk||<math> \begin{cases}
+&v_t^{new}(\cdot)=v_t^{old}(\cdot) - \epsilon(v_t^{old} +  \sum_i  K(\cdot, \phi_t^{old}(x_i)) (D \phi_{t1})^{oldT}|_{\phi_t^{old}(x_i)} (y_i-\phi_1^{old}(x_i)), t \in [0,1]
+\\
+& \dot \phi_t^{new}=v_t^{new} \circ \phi_t^{new}, t \in [0,1]
+\end{cases} </math>|{{EquationRef|Landmark-LDDMM-iteration}}}}
+
+This implies that the fixed point satisfy 
+:<math> Av_0=-\sum_i (D \phi_1)(x_i)^T (y_i - \phi_1(x_i)) \delta_{x_i} </math>
+with
+:<math>Av_t=-\sum_i  (D \phi_{t1})^T|_{\phi_t(x_i)} (y_i-\phi_1(x_i))\delta_{\phi_t(x_i)}</math>.
+
+===Variations for LDDMM dense image and landmark matching===
+The [[Calculus of variations]] was used in Beg<sup>[49]</sup><ref name="Miller 447–509"/>  to derive the iterative algorithm as a solution which when it converges satisfies the necessary maximizer conditions given by the  necessary conditions for a first order variation requiring the variation of the endpoint with respect to a first order variation of the vector field. The directional derivative calculates the [[Fréchet derivative#Relation to the Gateaux derivative|Gateaux derivative]] as calculated in Beg's original paper<sup>[49]</sup> and.<ref>{{Cite book|title=Pattern Theory: From Representation to Inference|last=Grenander|first=Ulf|last2=Miller|first2=Michael|date=2007-02-08|publisher=Oxford University Press|isbn=9780199297061}}</ref><ref>{{cite book|url=https://www.springer.com/us/book/9783642120541|title=Shapes and Diffeomorphisms {{!}} Laurent Younes {{!}} Springer|website=www.springer.com|access-date=2016-04-16|isbn=9783642120541|last1=Younes|first1=Laurent|date=2010-05-25}}</ref>
+
+{{Hide|
+First Order Variation of the Flow and Vector Field for Dense Image and Landmark Matching|
+
+The first order variation in the vector fields <math>v+\epsilon \delta v</math> requires the variation of  <math>\phi^{-1}</math> generalizes the [[Matrix (mathematics)|matrix]] [[Invertible matrix#Derivative of the matrix inverse|perturbation of the inverse]]  via <math>(\phi + \epsilon \delta \phi \circ \phi)\circ (\phi^{-1} + \epsilon \delta \phi^{-1} \circ \phi^{-1})=id + o(\epsilon)</math> giving  <math>\delta \phi^{-1} \circ \phi^{-1}=-(D \phi_1^{-1}) \delta \phi  </math> . 
+To express the variation in terms of <math> \delta v </math>, use the solution to the [[Lie bracket of vector fields|Lie bracket]]
+<math>\frac{d }{d t} \left( \delta \phi_{|\phi} \right)=(Dv)_{|\phi} \delta \phi_{|\phi} + \delta v_{|\phi}</math> giving
+:<math>
+\delta \phi_1=(D \phi_1)_{|\phi_1^{-1}} \int_0^1 (D \phi_t)_{|\phi_1^{-1}}^{-1} (\delta v_t )_{\phi_t \circ \phi_1^{-1} } dt
+</math>
+
+*Image Matching:
+Taking the directional derivative of the image endpoint condition <math> E(\phi)=\int_X|I \circ \phi^{-1} - J|^2 dx </math> gives
+:<math>
+\frac{d}{d \epsilon} \frac{1}{2} \int_X|I \circ ( \phi^{-1} + \epsilon \delta \phi^{-1} \circ \phi^{-1})-J|^2 dx|_{\epsilon=0}
+=\int_X (I \circ \phi^{-1} -J ) \nabla I|_{\phi^{-1}} \delta \phi^{-1} \circ \phi^{-1} dx
+</math><math>
+=\int_X (I \circ \phi^{-1} -J ) \nabla I|_{\phi^{-1}} 
+(-D \phi_1^{-1}) \delta \phi dx
+</math>
+:<math>=\int_X(I \circ \phi_1^{-1} -J) \nabla I|_{\phi_1^{-1}} (- D \phi_1)_{|\phi_1^{-1}}^{-1}(D \phi_1)_{|\phi_1^{-1}}) \int_0^1 (D \phi_t)_{|\phi_1^{-1}}^{-1} (\delta v_t)_{|{\phi_t \circ \phi_1^{-1}}} dt dx
+</math>.
+ 
+Substituting <math>
+\phi_{t1} \doteq \phi_1 \circ \phi_t^{-1} </math> gives the necessary condition for an optimum:
+:<math>
+\begin{align}
+\frac{d}{d \epsilon}C(v +\epsilon\delta v)|_{\epsilon=0}&=\int_0^1 \int_X Av_t \cdot \delta v_t\ dx\ dt -\int_0^1 \int_X (I \circ \phi_1^{-1} -J) \nabla I|_{\phi_1^{-1}}(D \phi_t)_{|\phi_1^{-1}}^{-1} (\delta v_t)_{|{\phi_t \circ \phi_1^{-1}}}\ dx\,dt \\
+& =\int_0^1 \int_X \left( Av_t - (I \circ \phi_t^{-1} -J \circ \phi_{t1}) \nabla I|_{\phi_t^{-1}}(D \phi_t)_{|\phi_t^{-1}}^{-1}|D \phi_{t1}|\right) \cdot \delta v_t\ dx\,dt \\
+&=0 
+\end{align}
+</math>.
+*Landmark Matching: 
+Take the variation in the vector fields <math>v+\epsilon \delta v</math> of <math> \frac{1}{2} \sum_{i}|\phi_1(x_i)-y_i)|^2 </math>
+use the chain rule for the perturbation <math> \delta \phi \circ \phi </math> to gives the first variation
+
+: <math> \sum_i (\phi_1(x_i) - y_i) \cdot D \phi_1|_{\phi_1^{-1}(\phi_1(x_i))} \int_0^1 (D \phi_t)_{|\phi_1^{-1}(\phi_1(x_i))}^{-1} \delta v_t|_{\phi_t \circ \phi_1^{-1} (\phi_1(x_i))} dt
+</math>
+
+: <math>=\int_0^1 \int_X \sum_i \delta_{\phi_t(x_i)}(x) (\phi_1(x_i) - y_i) \cdot (D \phi_1)_{\phi_t^{-1} (x)}(D \phi_t)_{\phi_t^{-1}(x)}^{-1} \delta v_t (x) dx dt
+=\int_0^1 \int_X \sum_i \delta_{\phi_t(x_i)}(y) (D \phi_{t1})_{\phi_t(x_i)}^T (\phi_1(x_i) - y_i) \cdot  \delta v_t (x) dx dt
+</math>
+}}
+
+==LDDMM Diffusion Tensor Image Matching==
+LDDMM matching based on the principal eigenvector of the diffusion tensor matrix
+takes the image <math> I(x), x \in {\mathbb R}^3 </math> as a unit vector field defined by the first eigenvector.
+<ref name="Cao 1379–1386 Vol. 2"/>
+The group action becomes
+:<math>
+\varphi \cdot I=
+\begin{cases}
+\frac{D_{\varphi^{-1}} \varphi I \circ \varphi^{-1} \|I \circ \varphi^{-1}\|}{\|D_{\varphi^{-1}} \varphi I \circ \varphi^{-1}\|} & I\circ \varphi \neq 0, \\
+0 & \text{otherwise.}
+\end{cases}
+</math>
+where <math> \|\cdot \|</math> that denotes image squared-error norm.
+
+LDDMM matching based on the entire tensor matrix
+<ref>{{Cite book|title=Diffeomorphic Matching of Diffusion Tensor Images|journal=Conference on Computer Vision and Pattern Recognition Workshop, 2006. CVPRW '06|date=2006-06-01|pmc=2920614|pmid=20711423|pages=67|doi=10.1109/CVPRW.2006.65|first=Yan|last=Cao|first2=M.I.|last2=Miller|first3=Susumu|last3=Mori|first4=R.L.|last4=Winslow|first5=L.|last5=Younes|volume=2006|isbn=978-0-7695-2646-1}}</ref> 
+has group action <math>\varphi \cdot M=(\lambda_1 \hat{e}_1 \hat{e}_1^{T}+\lambda_2 \hat{e}_2 \hat{e}_2^{T} +\lambda_3 \hat{e}_3 \hat{e}_3^{T}) \circ \varphi^{-1} , </math> transformed eigenvectors
+:<math>\begin{align}
+ \hat{e}_1 &=\frac{D \varphi e_1}{\|D \varphi e_1\|} \ , \  \ \ 
+\hat{e}_2=\frac{D \varphi e_2-\langle \hat{e}_1,D \varphi e_2\rangle \hat{e}_1}{\sqrt{\|D \varphi e_2\|^2-\langle \hat{e}_1,D \varphi e_2\rangle^2}}\ , \ \ \ 
+\hat{e}_3=\hat{e}_1 \times \hat{e}_2
+\end{align}</math>.
+
+===Dense matching problem onto principle eigenvector of DTI===
+The variational problem matching onto vector image <math>I^\prime (x), x \in {\mathbb R}^3</math>with endpoint
+:<math>
+E(\phi_1) \doteq \alpha \int_{{\mathbb R}^3} \|\phi_1 \cdot I -I^\prime \|^2 \, dx+\beta \int_{{\mathbb R}^3} (\|\phi_1 \cdot I\|-\|I^\prime\|)^2 \, dx).
+</math>
+becomes
+: <math>
+\min_{v: \dot \phi \circ \phi^{-1}} \frac{1}{2} \int_0^1 \int_{R^3} Av_t \cdot v_t dx dt  + \alpha \int_{{\mathbb R}^3} \|\phi_1 \cdot I -I^\prime \|^2 \, dx+\beta \int_{{\mathbb R}^3} (\|\phi_1 \cdot I\|-\|I^\prime\|)^2 \, dx \ .
+</math>
+
+===Dense matching problem onto DTI MATRIX===
+The variational problem matching onto :<math> M^\prime (x), x \in {\mathbb R}^3 </math>  with endpoint 
+:<math> E(\phi_1) \doteq \int_{{\mathbb R}^3} \|\phi_1 \cdot M(x) - M^\prime(x) \|_F^2 dx </math> 
+with <math> \|\cdot \|_F </math> Frobenius norm, giving variational problem
+{{NumBlk|::|
+<math>
+\min_{v: v=\dot \phi \circ \phi^{-1}} \frac{1}{2} \int_0^1 \int_{R^3} Av_t \cdot v_t dx dt +\alpha \int_{{\mathbb R}^3} \|\phi_1 \cdot M(x) - M^\prime(x) \|_F^2 dx
+</math>|{{EquationRef|Dense-TensorDTI-Matching}}}}
+
+==LDDMM ODF==
+High angular resolution diffusion imaging (HARDI) addresses the well-known limitation of DTI, that is, DTI can only reveal one dominant fiber orientation at each location. HARDI measures diffusion along <math> n </math> uniformly distributed directions on the sphere and can characterize more complex fiber geometries by reconstructing an orientation distribution function (ODF) that characterizes the angular profile of the diffusion probability density function of water molecules. The ODF is a function defined on a unit sphere, <math> {\mathbb{S}}^2 </math>.<ref>{{cite journal|last1=Du|first1=J|last2=Goh|first2=A|last3=Qiu|first3=A|title=Diffeomorphic metric mapping of high angular resolution diffusion imaging based on Riemannian structure of orientation distribution functions|journal=IEEE Trans Med Imaging|date=2012|volume=31|issue=5|pages=1021–1033|doi=10.1109/TMI.2011.2178253|pmid=22156979}}</ref> 
+Denote the square-root ODF (<math>{\sqrt{\text{ODF}}} </math>) as <math> \psi({\bf s}) </math>, where <math> \psi({\bf s}) </math> is non-negative to ensure uniqueness and <math> \int_{{\bf s}\in  {\mathbb{S}}^2} \psi^2({\bf s}) d{\bf s}=1</math>. The metric defines the distance between two <math>{\sqrt{\text{ODF}}} </math> functions <math> \psi_1, \psi_2 \in \Psi </math> as 
+:<math>
+\begin{align}
+\rho(\psi_1,\psi_2)=
+\|\log_{\psi_1}(\psi_2)\|_{\psi_1} 
+=\cos^{-1} \langle \psi_1, \psi_2 \rangle=
+\cos^{-1}\left(\int_{{\bf s}\in {\mathbb{S}}^2} \psi_1({\bf s}) \psi_2({\bf s})d{\bf s}\right),
+\end{align}
+</math>
+where <math> \langle \cdot, \cdot \rangle </math> is the normal dot product between points in the sphere under the <math>\mathrm{L}^2 </math> metric.
+The template and target are denoted
+<math> \psi_{\mathrm{temp}}({\bf s},x)</math>, <math>\psi_{\mathrm{targ}}({\bf s}, x)</math>,<math> {\bf s} \in {{\mathbb{S}}^2} </math><math> x \in X </math> indexed across the unit sphere and the image domain, with the target indexed similarly.
+
+Define the variational problem assuming that two ODF volumes can be generated from one to another via flows of diffeomorphisms <math> \phi_t </math>, which are solutions of ordinary differential equations 
+<math> \dot \phi_t=v_t (\phi_t), t \in [0,1],\phi_0={id}</math>. 
+The group action of the diffeomorphism on the template is given according to  
+<math>\phi_1 \cdot \psi (x)\doteq  (D\phi_1) \psi \circ \phi_1^{-1}(x), x \in X </math>,
+where <math> (D\phi_1) </math> is the Jacobian of the affined transformed ODF and is defined as
+:<math>
+\begin{align}
+(D \phi_1) \psi\circ \phi_1^{-1}(x)=\sqrt{\frac{\det{\bigl(D_{\phi_1^{-1}}\phi_1 \bigr)^{-1}} }{\left\|{\bigl(D_{\phi_1^{-1}}\phi_1 \bigr)^{-1} } {\bf s} \right\|^3} } \quad
+\psi \left( \frac{(D_{\phi_1^{-1}}\phi_1 \bigr)^{-1} {\bf s}}{\|(D_{\phi_1^{-1}}\phi_1 \bigr)^{-1} {\bf s}\|}, \phi_1^{-1}(x) \right) .
+\end{align}
+</math>
+
+The LDDMM variational problem is defined as
+:<math>
+\begin{align}
+\min_{v: \dot \phi_t=
+v_t \circ \phi_t,\phi_0={
+id}}\int_0^1 \int_{R^3} Av_t \cdot v_t dx \ dt 
+ +\lambda \int_{R^3}\|\log_{(D\phi_1) \psi_{\mathrm{temp}} \circ \phi_1^{-1}(x)}(\psi_{\mathrm{targ}}(x))\|^2_{(D\phi_1) \psi_{\mathrm{temp}}\circ \phi_1^{-1}(x)}dx 
+\end{align}
+</math>.
+
+==Hamiltonian LDDMM for dense image matching==
+Beg solved the early LDDMM algorithms by solving the variational matching taking variations with respect to the vector fields.<ref name=":132">{{Cite journal|last=Beg|first=M. Faisal|last2=Miller|first2=Michael I.|last3=Trouvé|first3=Alain|last4=Younes|first4=Laurent|date=2005-02-01|title=Computing Large Deformation Metric Mappings via Geodesic Flows of Diffeomorphisms|journal=International Journal of Computer Vision|language=en|volume=61|issue=2|pages=139–157|doi=10.1023/B:VISI.0000043755.93987.aa|issn=0920-5691}}</ref> Another solution by Vialard,<ref name=":12">{{Cite journal|last=Vialard|first=François-Xavier|last2=Risser|first2=Laurent|last3=Rueckert|first3=Daniel|last4=Cotter|first4=Colin J.|date=2012-04-01|title=Diffeomorphic 3D Image Registration via Geodesic Shooting Using an Efficient Adjoint Calculation|journal=Int. J. Comput. Vis.|volume=97|issue=2|pages=229–241|doi=10.1007/s11263-011-0481-8|issn=0920-5691}}</ref> reparameterizes the optimization problem in terms of the state <math>q_t \doteq I \circ \phi_t^{-1}, q_0=I</math>, for image <math> I(x), x \in X=R^3 </math>, with the dynamics equation controlling the state by the control given in terms of the [[advection]] equation according to <math>\dot q_t=- \nabla q_t \cdot v_t</math>. The endpoint  matching term
+<math>
+E(q_1) \doteq \frac{1}{2} \|q_1-J\|^2 
+</math> gives the variational problem:
+{{NumBlk|::|
+<math>
+\begin{matrix}
+& \ \  \ \ \  \min_{v:   \dot q=v \circ q} C(v) \doteq \frac{1}{2} \int_0^1 \int_{R^3} Av_t \cdot v_t dx dt   +\frac{1}{2} \int_{{\mathbb R}^3}|q_1(x)-J(x)|^2dx
+\end{matrix}
+</math>|{{EquationRef|Advective-State-Image-Matching}}}}{{NumBlk||<math>
+\begin{cases}
+\text{Hamiltonian Dynamics}&\ \ \ \ \ \ \ \ \ \   \dot q_t=- \nabla q_t \cdot v_t \\
+&\ \ \ \ \ \ \ \ \ \   \dot p_t=- \text{div} (p_t v_t ) , \  \  \ \ t \in [0,1]\\
+&\ \ \ \ \ \ \ \ \ \  Av_t=\mu_t=-p_t \nabla q_t \\
+\text{Endpoint Condition} &  \ \ \ \ \ \ \ \ \  p_1=-\frac{\partial E}{\partial q_1}(q_1)=-(q_1-J)=-(I \circ \phi_1^{-1} -J)
+\\
+&\ \ \ \ \ \ \ \ \ \   Av_1=\mu_1=(I\circ \phi_1^{-1}-J ) \nabla (I\circ \phi_1^{-1}) \ \  t=1 \ . \\
+\text{Conserved Dynamics}&\ \ \ \ \ \ \ \ \ \   p_t=- (I \circ \phi_t^{-1} -J \circ \phi_{t1} )|D\phi_{t1}|\ , \ \  t \in [0,1] \ . \\
+\end{cases}
+</math>
+|{{EquationRef|Hamiltonian Matching Condition}}}}
+
+{{hidden
+|Proof of Hamiltonian Dynamics
+|
+The [[Computational anatomy#Hamiltonian formulation of Computational Anatomy|Hamiltonian dynamics]] with advected state and control dynamics  <math> q_t=I \circ \phi_t^{-1}</math>, <math> \dot q=- \nabla q \cdot v </math> with extended Hamiltonian 
+<math> H(q,p,v)=(p|-\nabla q \cdot v ) -\frac{1}{2} (Av|v) </math> gives the variational problem<ref name="Miller 447–509"/> 
+:<math>
+\min_{p,q,v} C(p,q,v) \doteq (p|\dot q)-\left( (p|-\nabla q \cdot v ) -\frac{1}{2} (Av|v) \right) + E(q_1)
+=(p|\dot q) - H(p,q,v) +E(q_1) \ .
+</math>
+The first variation gives the condition on the optimizing vector field <math>Av=-p\nabla q </math>, with the endpoint condition <math>
+ p_1=-\frac{\partial E}{\partial q}(q_1)
+</math> and dynamics on the Lagrange multipliers determined by the Gatteux derivative conditions <math>
+ (-\dot p - \nabla \cdot (pv)|\delta q) )=0
+
+</math> and the state <math>
+
+( \delta p|\dot q + \nabla q \cdot v  )=0
+</math>.
+
+}}
+
+==Software for diffeomorphic mapping==
+[[Software suite]]s containing a variety of diffeomorphic mapping algorithms include the following:
+* Deformetrica<ref>{{cite journal|title=Software - Stanley Durrleman|url=https://raweb.inria.fr/rapportsactivite/RA2015/aramis/uid32.html}}</ref>
+* ANTS<ref name=":2"/>
+* DARTEL<ref>{{Cite journal|title=A fast diffeomorphic image registration algorithm|journal=NeuroImage|date=2007-10-15|pmid=17761438|pages=95–113|volume=38|issue=1|doi=10.1016/j.neuroimage.2007.07.007|first=John|last=Ashburner}}</ref> [[Voxel-based morphometry]](VBM)
+* DEMONS<ref>{{cite web|title=Software - Tom Vercauteren|url=https://sites.google.com/site/tomvercauteren/software|website=sites.google.com|accessdate=2015-12-11}}</ref>
+* LDDMM<ref name=":1"/>
+* StationaryLDDMM<ref name=":5"/>
+
+===Cloud software===
+* MRICloud<ref>{{cite web|url=http://www.mricloud.org|title=MRICloud|website=|publisher=The Johns Hopkins University|access-date=1 January 2015}}</ref>
+
+==See also==
+*[[Computational anatomy#Dense image matching in computational anatomy]]
+*[[Riemannian metric and Lie-bracket in computational anatomy]]
+*[[Bayesian model of computational anatomy]]
+
+==References==
+{{reflist|3|refs=
+<ref name="Joshi 1357–1370">{{Cite journal|last=Joshi|first=S. C.|last2=Miller|first2=M. I.|date=2000-01-01|title=Landmark matching via large deformation diffeomorphisms|journal=IEEE Transactions on Image Processing|volume=9|issue=8|pages=1357–1370|doi=10.1109/83.855431|issn=1057-7149|pmid=18262973|bibcode=2000ITIP....9.1357J|url=https://semanticscholar.org/paper/2d8c3c725609cd60756471800e4e442d373b1e5a}}</ref>
+
+<ref name="Miller 447–509">{{Cite journal|last=Miller|first=Michael I.|last2=Trouvé|first2=Alain|last3=Younes|first3=Laurent|date=2015-01-01|title=Hamiltonian Systems and Optimal Control in Computational Anatomy: 100 Years Since D'Arcy Thompson|journal=Annual Review of Biomedical Engineering|volume=17|pages=447–509|doi=10.1146/annurev-bioeng-071114-040601|issn=1545-4274|pmid=26643025}}</ref>
+}}
+
+==Further reading==
+*{{Cite journal|last=Ceritoglu|first=Can|last2=Wang|first2=Lei|last3=Selemon|first3=Lynn D.|last4=Csernansky|first4=John G.|last5=Miller|first5=Michael I.|last6=Ratnanather|first6=J. Tilak|date=2010-05-28|title=Large Deformation Diffeomorphic Metric Mapping Registration of Reconstructed 3D Histological Section Images and in vivo MR Images|journal=Frontiers in Human Neuroscience|volume=4|pages=43|doi=10.3389/fnhum.2010.00043|issn=1662-5161|pmc=2889720|pmid=20577633}}
+{{Visualization}}
+{{Medicine}}
+
+[[Category:Computational anatomy]]
+[[Category:Physics]]
+[[Category:Geometry]]
+[[Category:Fluid mechanics]]
+[[Category:Neuroscience]]
+[[Category:Neural engineering]]
+[[Category:Biomedical engineering]]

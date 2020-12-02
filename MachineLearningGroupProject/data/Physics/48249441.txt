@@ -1,0 +1,76 @@
+[[File:PST edge detection on an astronomical image.jpg|thumb|PST operated on an astronomical image reveals the accuracy of the method in enhancing sharp and faint features.]]
+[[File:PST edge detection on lightbulb image.jpg|thumb|PST edge detection on lightbulb image]]
+
+[[File:PST edge detector saint Paul.tif|thumb|Feature enhancement in an image ([[St Paul's Cathedral]], London) using phase stretch transform (PST). Left panel shows the original image and the right panel shows the detected features using PST.]]
+[[File:PST for resolution enhancement in microscopy.tif|thumb|PST applied for resolution enhancement in microscopy]]
+[[File:PST edge detector biomedical application.tif|thumb|Application of PST to feature enhancement in biomedical images. Left panel shows the original image and the right panel shows the detected features using PST.]]
+[[File:PST edge detection on barbara image.tif|thumb|PST operated on Barbara image reveals the accuracy of the method in enhancing sharp and close by features. Left panel shows the original image and the right panel shows the detected features using PST.]]
+
+[[File:PST edge detection on SAR image.tif|thumb|Application of PST for feature enhancement in [[synthetic-aperture radar]] (SAR) images. In this figure detected features (in red) are overlaid with the original SAR image.]]
+
+[[File:Feature detection on 1D time domain data using Phase Stretch Transform.png|thumb|Feature detection on 1-D time domain data using phase stretch transform.]]
+'''Phase stretch transform''' ('''PST''') is a computational approach to signal and image processing. One of its utilities is for feature detection and classification.<ref name="original">M. H. Asghari, and B. Jalali, "Edge detection in digital images using dispersive phase stretch", International Journal of Biomedical Imaging, Vol. 2015, Article ID 687819, pp. 1–6 (2015).</ref><ref>M. H. Asghari, and B. Jalali, "Physics-inspired image edge detection", IEEE Global Signal and Information Processing Symposium (GlobalSIP 2014), paper: WdBD-L.1, Atlanta, December 2014.</ref> PST is related to [[time stretch dispersive Fourier transform]].<ref>Y. Han and B. Jalali, "Photonic time-stretched analog-to-digital converter: fundamental concepts and practical considerations", Journal of Lightwave Technology 21, 3085 (2003)</ref> It transforms the image by emulating propagation through a diffractive medium with engineered 3D dispersive property (refractive index). The operation relies on symmetry of the dispersion profile and can be understood in terms of dispersive eigenfunctions or stretch modes.<ref name="prec">B. Jalali and A. Mahjoubfar, "Tailoring Wideband Signals With a Photonic Hardware Accelerator", Proceedings of the IEEE, Vol. 103, No. 7, pp. 1071–1086 (2015).
+</ref> PST performs similar functionality as [[phase-contrast microscopy]], but on digital images. PST can be applied to digital images and temporal (time series) data.
+
+==Operation principle==
+Here the principle is described in the context of feature enhancement in digital images. The image is first filtered with a spatial kernel followed by application of a nonlinear frequency-dependent phase. The output of the transform is the phase in the spatial domain. The main step is the 2-D phase function which is typically applied in the frequency domain. The amount of phase applied to the image is frequency dependent, with higher amount of phase applied to higher frequency features of the image. Since sharp transitions, such as edges and corners, contain higher frequencies, PST emphasizes the edge information. Features can be further enhanced by applying [[thresholding (image processing)|thresholding]] and [[morphological operations]]. PST is a pure phase operation whereas conventional edge detection algorithms operate on amplitude.  
+
+==Physical and mathematical foundations of Phase Stretch Transform==
+Photonic time stretch technique can be understood by considering the propagation of an optical pulse through a dispersive fiber. By disregarding the loss and non-linearity in fiber, the non-linear Schrödinger equation governing the optical pulse propagation in fiber upon integration <ref name="agarwal">Agrawal, G. P. (2007). Nonlinear fiber optics. Academic press. Chicago.
+</ref> reduces to:
+
+<math>E_o(z,t)= \frac{1}{2\pi} \int_{-\infty}^{\infty}\tilde{E}_i(0,\omega) \cdot e^\frac{-j\beta_2z\omega^2}{2} \cdot e^{j\omega{t}} d\omega</math>  (1)
+
+where <math>\beta_2</math> =GVD parameter, z is propagation distance, <math>E_o(z,t)</math> is the reshaped output pulse at distance z and time t. The response of this dispersive element in the time-stretch system can be approximated as a phase propagator as presented in <ref name="prec"/>
+<math>H(\omega)=e^{i\phi(\omega)}=e^{i\sum_{m=0}^\infty \phi_m(\omega)}= \prod_{m=0}^\infty H_m(\omega)</math>  (2)
+<br>
+Therefore, Eq. 1 can be written as following for a pulse that propagates through the time-stretch system and is reshaped into a temporal signal with a complex envelope given by <ref name="prec"/>
+<br>
+<math>E_o(t)= \frac{1}{2\pi} \int_{-\infty}^{\infty}\tilde{E}_i(\omega)\cdot  H(\omega) \cdot  e^{j\omega{t}} d\omega</math>  (3)
+<br>
+The time stretch operation is formulated as generalized phase and amplitude operations,
+<br>
+<math>\mathbb{S}\{E_i(t)\}=\int_{-\infty}^{+\infty}\mathcal{F}\{E_i(t)\} \cdot e^{j\phi(\omega)} \cdot \tilde{L}(\omega) \cdot e^{j\omega{t}} d\omega</math>   (4)
+
+where <math>e^{j\phi(\omega)}</math> is the phase filter and <math> \tilde{L}(\omega) </math>is the amplitude filter. Next the operator is converted to discrete domain, 
+<br>
+<math>
+\mathbb{S}\{E_i[n]\}=\frac{1}{N}\sum_{u=0}^{N-1}FFT\{E_i(n)\} \cdot \tilde{K}(u) \cdot \tilde{L}(u) \cdot e^{j\frac{2\pi}{N}un}   
+</math>    (5)
+<br>
+where <math> u </math> is the discrete frequency, <math>\tilde{K}(u)</math>  is the phase filter, <math>\tilde{L}(u)</math>  is the amplitude filter and FFT is Fast Fourier Transform.
+
+The Stretch operator <math>\mathbb{S} \{ \}</math>  for a digital image is then 
+<br>
+<math>
+\mathbb{S}\{E_i[n,m]\}=\frac{1}{MN}\sum_{v=0}^{N-1}\sum_{u=0}^{M-1}FFT^2\{E_i(n,m)\} \cdot \tilde{K}(u,v) \cdot \tilde{L}(u,v) \cdot e^{j\frac{2\pi}{M}um} \cdot e^{j\frac{2\pi}{N}vn}   
+</math>    (6)
+
+In the above equations, <math>E_i[n,m]</math> is the input image, <math>n</math> and <math>m</math> are the spatial variables, <math>FFT^2</math>  is the two dimensional Fast Fourier Transform, and <math>u</math> and <math>v</math> are spatial frequency variables. The function <math>\tilde{K}(u,v)</math> is the warped phase kernel and the function <math>\tilde{L}(u,v)</math> is a localization kernel implemented in frequency domain. PST operator is defined as the phase of the Warped Stretch Transform output as follows
+
+<math>
+PST\{E_i[n,m]\}\triangleq \measuredangle \{\mathbb{S}\{E_i[x,y]\}\}
+</math>    (7)
+
+where <math>\measuredangle \{ \} </math>is the angle operator.
+
+==Applications==
+PST has been used for [[edge detection]] in biological and biomedical images as well as [[synthetic-aperture radar]] (SAR) image processing.<ref>{{cite journal|last=Abdol|first=A.M.|last2=Bedard|first2=Andrew|last3=Lánský|first3=Imke|last4=Kaandorp|first4=J.A.|date=2018|title=High-throughput method for extracting and visualizing the spatial gene expressions from in situ hybridization images: A case study of the early development of the sea anemone Nematostella vectensis|journal=Gene Expression Patterns|volume=27|pages=36–45|doi=10.1016/j.gep.2017.10.005|pmid=29122675|issn=1567-133X}}</ref><ref>M. H. Asghari, C. Clemente, B. Jalali, and J. Soraghan, "Synthetic aperture radar image compression using discrete anamorphic stretch transform", IEEE Global Signal and Information Processing Symposium (GlobalSIP 2014), paper: WsBD-P.7, Atlanta, December 2014.</ref><ref>	C. V. Ilioudis, C. Clemente, M. H. Asghari, B. Jalali, and J. Soraghan, "Edge detection in SAR images using Dispersive Phase Stretch Transform", submitted to 2nd IET International Conference on Intelligent Signal Processing, London, 2015</ref> PST has also been applied to improve the point spread function for single molecule imaging in order to achieve super-resolution.<ref>T. Ilovitsh, B. Jalali, M. H. Asghari, and Z. Zalevsky, "Phase stretch transform for super-resolution localization microscopy", Biomedical optics express. 2016 Oct 1;7(10):4198-209.</ref> The transform exhibits intrinsic superior properties compared to conventional edge detectors for feature detection in low contrast visually impaired images.<ref>M. Suthar, H. Asghari, and B. Jalali, "Feature Enhancement in Visually Impaired Images", IEEE Access 6 (2018): 1407-1415.</ref>
+
+The PST function can also be performed on 1-D temporal waveforms in the analog domain to reveal transitions and anomalies in real time.<ref name="prec"/>
+
+==Open source code release==
+On February 9, 2016, a UCLA Engineering research group has made public the computer code for PST algorithm that helps computers process images at high speeds and "see" them in ways that human eyes cannot. The researchers say the code could eventually be used in [[facial recognition system|face]], [[fingerprint]], and [[iris recognition]] systems for high-tech security, as well as in self-driving cars' navigation systems or for inspecting industrial products.
+Matlab and Python implementation for PST is available for free download from our Github Repository.<ref>{{cite web|url=https://github.com/JalaliLabUCLA/Image-feature-detection-using-Phase-Stretch-Transform|title=GitHub - JalaliLabUCLA/Image-feature-detection-using-Phase-Stretch-Transform|publisher=}}</ref>  The Matlab implementation for PST can also be downloaded from Matlab Files Exchange.<ref>{{cite web|url=https://www.mathworks.com/matlabcentral/fileexchange/55330-jalalilabucla-image-feature-detection-using-phase-stretch-transform|title=JalaliLabUCLA/Image-feature-detection-using-Phase-Stretch-Transform – File Exchange – MATLAB Central|publisher=}}</ref> However, it is provided for research purposes only, and a license must be obtained for any commercial applications. The software is protected under a US patent.
+
+==See also==
+*[[Edge detection]]
+*[[Feature detection (computer vision)]]
+*[[Time stretch analog-to-digital converter]]
+*[[Time stretch dispersive Fourier transform]]
+
+==References==
+{{Reflist}}
+
+[[Category:Image processing]]
+[[Category:Physics]]
