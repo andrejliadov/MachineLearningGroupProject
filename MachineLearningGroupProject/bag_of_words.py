@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_files
 from sklearn.model_selection import train_test_split
-from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import classification_report, accuracy_score
 from sklearn.svm import LinearSVC
@@ -31,7 +31,7 @@ for i in range(0, len(data.data)):
 
 X_train, X_test, Y_train, Y_test = train_test_split(data.data, data.target)
 
-vectoriser = TfidfVectorizer(stop_words='english', max_features=10000, decode_error='ignore', sublinear_tf=True, ngram_range=(1,2))
+vectoriser = CountVectorizer(ngram_range=(1, 2), token_pattern=r'\b\w+\b', min_df=1)
 vectoriser.fit(X_train)
 
 model = LinearSVC()

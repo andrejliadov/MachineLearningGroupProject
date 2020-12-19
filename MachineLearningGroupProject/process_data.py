@@ -1,6 +1,6 @@
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
+# import numpy as np
+# import pandas as pd
+# import matplotlib.pyplot as plt
 import glob
 
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
@@ -10,7 +10,7 @@ from nltk.corpus import stopwords
 
 #Parse words in the text files into their catagories
 def parse_data(catagory):
-    root_dir = 'data/'
+    root_dir = 'MachineLearningGroupProject/MachineLearningGroupProject/data/'
     text_data = ""
     text_data_list = []
 
