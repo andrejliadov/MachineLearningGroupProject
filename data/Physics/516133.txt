@@ -1,0 +1,726 @@
+{{short description|theorem in classical statistical mechanics}}
+{{pp-move-indef|small=yes}}
+{{refimprove|date=April 2015}}
+[[Image:Thermally Agitated Molecule.gif|thumb|right|'''Thermal motion''' of an [[alpha helix|α-helical]] [[peptide]]. The jittery motion is random and complex, and the energy of any particular atom can fluctuate wildly. Nevertheless, the equipartition theorem allows the ''average'' [[kinetic energy]] of each atom to be computed, as well as the average potential energies of many vibrational modes. The grey, red and blue spheres represent [[atom]]s of [[carbon]], [[oxygen]] and [[nitrogen]], respectively; the smaller white spheres represent atoms of [[hydrogen]].]]
+
+In [[classical physics|classical]] [[statistical mechanics]], the '''equipartition theorem''' relates the [[temperature]] of a system to its average [[energy|energies]]. The equipartition theorem is also known as the '''law of equipartition''', '''equipartition of energy''', or simply '''equipartition'''. The original idea of equipartition was that, in [[thermal equilibrium]], energy is shared equally among all of its various forms; for example, the average [[kinetic energy]] per [[Degrees of freedom (physics and chemistry)|degree of freedom]] in [[translation (physics)|translational motion]] of a molecule should equal that in [[rotational motion]].
+
+The equipartition theorem makes quantitative predictions. Like the [[virial theorem]], it gives the total average kinetic and potential energies for a system at a given temperature, from which the system's [[heat capacity]] can be computed. However, equipartition also gives the average values of individual components of the energy, such as the kinetic energy of a particular particle or the potential energy of a single [[spring (device)|spring]]. For example, it predicts that every atom in a [[monatomic]] [[ideal gas]] has an average kinetic energy of (3/2)''k''<sub>B</sub>''T'' in thermal equilibrium, where ''k''<sub>B</sub> is the [[Boltzmann constant]] and ''T'' is the [[Thermodynamic temperature|(thermodynamic) temperature]]. More generally, equipartition can be applied to any [[classical physics|classical system]] in [[thermal equilibrium]], no matter how complicated. It can be used to derive the [[ideal gas law]], and the [[Dulong–Petit law]] for the [[specific heat capacity|specific heat capacities]] of solids. The equipartition theorem can also be used to predict the properties of [[star]]s, even [[white dwarf]]s and [[neutron star]]s, since it holds even when [[special relativity|relativistic]] effects are considered.
+
+Although the equipartition theorem makes accurate predictions in certain conditions, it is inaccurate when [[quantum physics|quantum effects]] are significant, such as at low temperatures.  When the [[thermal energy]] ''k''<sub>B</sub>''T'' is smaller than the quantum energy spacing in a particular [[degrees of freedom (physics and chemistry)|degree of freedom]], the average energy and heat capacity of this degree of freedom are less than the values predicted by equipartition. Such a degree of freedom is said to be "frozen out" when the thermal energy is much smaller than this spacing. For example, the heat capacity of a solid decreases at low temperatures as various types of motion become frozen out, rather than remaining constant as predicted by equipartition. Such decreases in heat capacity were among the first signs to physicists of the 19th century that classical physics was incorrect and that a new, more subtle, scientific model was required. Along with other evidence, equipartition's failure to model [[black-body radiation]]—also known as the [[ultraviolet catastrophe]]—led [[Max Planck]] to suggest that energy in the oscillators in an object, which emit light, were quantized, a revolutionary hypothesis that spurred the development of [[quantum mechanics]] and [[quantum field theory]].
+
+==Basic concept and simple examples==
+{{See also|Kinetic energy|Heat capacity}}
+
+[[File:MaxwellBoltzmann-en.svg|right|thumb|upright=1.7|Figure 2. Probability density functions of the molecular speed for four [[noble gas]]es at a [[temperature]] of 298.15 [[Kelvin|K]] (25 [[Celsius|°C]]). The four gases are [[helium]] (<sup>4</sup>He), [[neon]] (<sup>20</sup>Ne), [[argon]] (<sup>40</sup>Ar) and [[xenon]] (<sup>132</sup>Xe); the superscripts indicate their [[mass number]]s. These probability density functions have [[dimensional analysis|dimensions]] of probability times inverse speed; since probability is dimensionless, they can be expressed in units of seconds per meter.]]
+
+The name "equipartition" means "equal division," as derived from the [[Latin]] ''equi'' from the antecedent, æquus ("equal or even"), and partition from the noun, ''partitio'' ("division, portion").<ref>{{cite web|url=http://www.etymonline.com/index.php?search=equi&searchmode=none|title=equi-|publisher=Online Etymology Dictionary|accessdate=2008-12-20}}</ref><ref>{{cite web|url=http://www.etymonline.com/index.php?search=Partition&searchmode=none|title=partition|publisher=Online Etymology Dictionary|accessdate=2008-12-20}}.</ref> The original concept of equipartition was that the total [[kinetic energy]] of a system is shared equally among all of its independent parts, ''on the average'', once the system has reached thermal equilibrium. Equipartition also makes quantitative predictions for these energies. For example, it predicts that every atom of an inert [[noble gas]], in thermal equilibrium at temperature ''T'', has an average translational kinetic energy of (3/2)''k''<sub>B</sub>''T'', where ''k''<sub>B</sub> is the [[Boltzmann constant]]. As a consequence, since kinetic energy is equal to 1/2(mass)(velocity)<sup>2</sup>, the heavier atoms of [[xenon]] have a lower average speed than do the lighter atoms of [[helium]] at the same temperature. Figure&nbsp;2 shows the [[Maxwell–Boltzmann distribution]] for the speeds of the atoms in four noble gases.
+
+In this example, the key point is that the kinetic energy is quadratic in the velocity. The equipartition theorem shows that in thermal equilibrium, any [[degrees of freedom (physics and chemistry)|degree of freedom]] (such as a component of the position or velocity of a particle) which appears only quadratically in the energy has an average energy of {{frac|1|2}}''k''<sub>B</sub>''T'' and therefore contributes {{frac|1|2}}''k''<sub>B</sub> to the system's [[heat capacity]]. This has many applications.
+
+===Translational energy and ideal gases===
+{{See also|Ideal gas}}
+
+The (Newtonian) kinetic energy of a particle of mass ''m'', velocity '''v''' is given by
+
+:<math>
+H_{\text{kin}} = \tfrac12 m |\mathbf{v}|^2 = \tfrac{1}{2} m\left( v_x^2 + v_y^2 + v_z^2 \right),
+</math>
+
+where ''v<sub>x</sub>'', ''v<sub>y</sub>'' and ''v<sub>z</sub>'' are the Cartesian components of the velocity '''v'''. Here, ''H'' is short for [[Hamiltonian (quantum mechanics)|Hamiltonian]], and used henceforth as a symbol for energy because the [[Hamiltonian mechanics|Hamiltonian formalism]] plays a central role in the most [[#General formulation of the equipartition theorem|general form]] of the equipartition theorem.
+
+Since the kinetic energy is quadratic in the components of the velocity, by equipartition these three components each contribute {{frac|1|2}}''k''<sub>B</sub>''T'' to the average kinetic energy in thermal equilibrium. Thus the average kinetic energy of the particle is (3/2)''k''<sub>B</sub>''T'', as in the example of noble gases above.
+
+More generally, in an ideal gas, the total energy consists purely of (translational) kinetic energy: by assumption, the particles have no internal degrees of freedom and move independently of one another. Equipartition therefore predicts that the total energy of an ideal gas of ''N'' particles is (3/2)&nbsp;''N&thinsp;k''<sub>B</sub>&thinsp;''T''.
+
+It follows that the [[heat capacity]] of the gas is (3/2)&nbsp;''N&thinsp;k''<sub>B</sub> and hence, in particular, the heat capacity of a [[mole (unit)|mole]] of such gas particles is (3/2)''N''<sub>A</sub>''k''<sub>B</sub>&nbsp;= (3/2)''R'', where ''N''<sub>A</sub> is the [[Avogadro constant]] and ''R'' is the [[gas constant]]. Since ''R'' ≈ 2 [[calorie|cal]]/([[mole (unit)|mol]]·[[Kelvin|K]]), equipartition predicts that the [[molar heat capacity]] of an ideal gas is roughly 3&nbsp;cal/(mol·K). This prediction is confirmed by experiment.<ref name="kundt_1876" />
+
+The mean kinetic energy also allows the [[root mean square speed]] ''v''<sub>rms</sub> of the gas particles to be calculated:
+:<math>
+v_{\text{rms}} = \sqrt{\langle v^2 \rangle} = \sqrt{\frac{3 k_B T}{m}} = \sqrt{\frac{3 R T}{M}},
+</math>
+
+where ''M''&nbsp;= ''N''<sub>A</sub>''m'' is the mass of a mole of gas particles. This result is useful for many applications such as [[Graham's law]] of [[effusion]], which provides a method for [[enriched uranium|enriching]] [[uranium]].<ref>[https://www.nrc.gov/reading-rm/doc-collections/fact-sheets/enrichment.html Fact Sheet on Uranium Enrichment] U.S. Nuclear Regulatory Commission. Accessed 30 April 2007</ref>
+
+===Rotational energy and molecular tumbling in solution===
+{{See also|Angular velocity|Rotational diffusion}}
+
+A similar example is provided by a rotating molecule with [[principal moments of inertia]] ''I''<sub>1</sub>, ''I''<sub>2</sub> and ''I''<sub>3</sub>. The rotational energy of such a molecule is given by
+:<math>
+H_{\mathrm{rot}} = \tfrac{1}{2} ( I_{1} \omega_{1}^{2} + I_{2} \omega_{2}^{2} + I_{3} \omega_{3}^{2} ),
+</math>
+where ''ω''<sub>1</sub>, ''ω''<sub>2</sub>, and ''ω''<sub>3</sub> are the principal components of the [[angular velocity]]. By exactly the same reasoning as in the translational case, equipartition implies that in thermal equilibrium the average rotational energy of each particle is (3/2)''k''<sub>B</sub>''T''. Similarly, the equipartition theorem allows the average (more precisely, the root mean square) angular speed of the molecules to be calculated.<ref name="pathria_1972" />
+
+The tumbling of rigid molecules—that is, the random rotations of molecules in solution—plays a key role in the [[relaxation (NMR)|relaxation]]s observed by [[nuclear magnetic resonance]], particularly [[protein nuclear magnetic resonance spectroscopy|protein NMR]] and [[residual dipolar coupling]]s.<ref>{{cite book | authors = Cavanagh, J; Fairbrother WJ, Palmer AG III, Skelton NJ, Rance M | year = 2006 | title = Protein NMR Spectroscopy: Principles and Practice | edition = 2nd | publisher = Academic Press | isbn = 978-0-12-164491-8}}</ref> Rotational diffusion can also be observed by other biophysical probes such as [[fluorescence anisotropy]], [[flow birefringence]] and [[dielectric spectroscopy]].<ref>{{cite book | last = Cantor | first = CR |author2=Schimmel PR | year = 1980 | title = Biophysical Chemistry. Part II. Techniques for the study of biological structure and function | publisher = W. H. Freeman | isbn = 978-0-7167-1189-6}}</ref>
+
+===Potential energy and harmonic oscillators===
+Equipartition applies to [[potential energy|potential energies]] as well as kinetic energies: important examples include [[harmonic oscillator]]s such as a [[spring (device)|spring]], which has a quadratic potential energy
+
+:<math>
+H_{\text{pot}} = \tfrac 12 a q^2,\,
+</math>
+
+where the constant ''a'' describes the stiffness of the spring and ''q'' is the deviation from equilibrium. If such a one-dimensional system has mass ''m'', then its kinetic energy ''H''<sub>kin</sub> is
+<!-- {{frac|1|2}}''mv''<sup>2</sup> = ''p''<sup>2</sup>/2''m'', -->
+:<math>
+H_{\text{kin}} = \frac{1}{2}mv^2 = \frac{p^2}{2m},
+</math>
+
+where ''v'' and ''p''&nbsp;= ''mv'' denote the velocity and momentum of the oscillator. Combining these terms yields the total energy<ref name="goldstein_1980" />
+
+:<math>
+H = H_{\text{kin}} + H_{\text{pot}} = \frac{p^2}{2m} + \frac{1}{2} a q^2.
+</math>
+
+Equipartition therefore implies that in thermal equilibrium, the oscillator has average energy
+
+:<math>
+\langle H \rangle = 
+\langle H_{\text{kin}} \rangle + \langle H_{\text{pot}} \rangle = 
+\tfrac{1}{2} k_B T + \tfrac{1}{2} k_B T = k_B T,
+</math>
+
+where the angular brackets <math>\left\langle \ldots \right\rangle</math> denote the average of the enclosed quantity,<ref name="huang_1987" />
+
+This result is valid for any type of harmonic oscillator, such as a [[pendulum]], a vibrating molecule or a passive [[electronic oscillator]]. Systems of such oscillators arise in many situations; by equipartition, each such oscillator receives an average total energy ''k''<sub>B</sub>''T'' and hence contributes ''k''<sub>B</sub> to the system's [[heat capacity]]. This can be used to derive the formula for [[Johnson–Nyquist noise]]<ref name="mandl_1971" >{{cite book | last = Mandl | first = F | year = 1971 | title = Statistical Physics | publisher = John Wiley and Sons | pages = [https://archive.org/details/statisticalphysi00fman/page/213 213–219] | isbn = 0-471-56658-6 | url = https://archive.org/details/statisticalphysi00fman/page/213 }}</ref> and the [[Dulong–Petit law]] of solid heat capacities. The latter application was particularly significant in the history of equipartition.
+
+[[Image:Vätskefas.png|frame|left|Figure 3. Atoms in a crystal can vibrate about their equilibrium positions in the [[crystal structure|lattice]]. Such vibrations account largely for the [[heat capacity]] of crystalline [[dielectric]]s; with [[metal]]s, [[electron]]s also contribute to the heat capacity.]]
+
+===Specific heat capacity of solids===
+::''For more details on the molar specific heat capacities of [[solid]]s, see [[Einstein solid]] and [[Debye model]].''
+
+An important application of the equipartition theorem is to the specific heat capacity of a crystalline solid. Each atom in such a solid can oscillate in three independent directions, so the solid can be viewed as a system of 3''N'' independent [[simple harmonic oscillator]]s, where ''N'' denotes the number of atoms in the lattice. Since each harmonic oscillator has average energy ''k''<sub>B</sub>''T'', the average total energy of the solid is 3''Nk''<sub>B</sub>''T'', and its heat capacity is 3''Nk''<sub>B</sub>.
+
+By taking ''N'' to be the [[Avogadro constant]] ''N''<sub>A</sub>, and using the relation ''R''&nbsp;= ''N''<sub>A</sub>''k''<sub>B</sub> between the [[gas constant]] ''R'' and the Boltzmann constant ''k''<sub>B</sub>, this provides an explanation for the [[Dulong–Petit law]] of [[specific heat capacity|specific heat capacities]] of solids, which stated that the specific heat capacity (per unit mass) of a solid element is inversely proportional to its [[atomic weight]]. A modern version is that the molar heat capacity of a solid is ''3R''&nbsp;≈ 6&nbsp;cal/(mol·K).
+
+However, this law is inaccurate at lower temperatures, due to quantum effects; it is also inconsistent with the experimentally derived [[third law of thermodynamics]], according to which the molar heat capacity of any substance must go to zero as the temperature goes to absolute zero.<ref name="mandl_1971" /> A more accurate theory, incorporating quantum effects, was developed by [[Albert Einstein]] (1907) and [[Peter Debye]] (1911).<ref name="pais_1982" />
+
+Many other physical systems can be modeled as sets of [[oscillation#Coupled oscillations|coupled oscillators]]. The motions of such oscillators can be decomposed into [[normal mode]]s, like the vibrational modes of a [[piano string]] or the [[resonance]]s of an [[organ pipe]]. On the other hand, equipartition often breaks down for such systems, because there is no exchange of energy between the normal modes. In an extreme situation, the modes are independent and so their energies are independently conserved. This shows that some sort of mixing of energies, formally called ''ergodicity'', is important for the law of equipartition to hold.
+
+===Sedimentation of particles===
+{{See also|Sedimentation|Mason&ndash;Weaver equation|Brewing}}
+
+Potential energies are not always quadratic in the position. However, the equipartition theorem also shows that if a degree of freedom ''x'' contributes only a multiple of ''x''<sup>s</sup> (for a fixed real number ''s'') to the energy, then in thermal equilibrium the average energy of that part is ''k''<sub>B</sub>''T''/''s''.
+
+There is a simple application of this extension to the [[sedimentation]] of particles under [[gravitation|gravity]].<ref name="tolman_1918" /> For example, the haze sometimes seen in [[beer]] can be caused by clumps of [[protein]]s that [[Rayleigh scattering|scatter]] light.<ref>{{cite journal |vauthors=Miedl M, Garcia M, Bamforth C |title=Haze formation in model beer systems |journal=J. Agric. Food Chem. |volume=53 |issue=26 |pages=10161–5 |year=2005 |pmid=16366710 |doi=10.1021/jf0506941}}</ref> Over time, these clumps settle downwards under the influence of gravity, causing more haze near the bottom of a bottle than near its top. However, in a process working in the opposite direction, the particles also [[diffusion|diffuse]] back up towards the top of the bottle. Once equilibrium has been reached, the equipartition theorem may be used to determine the average position of a particular clump of [[buoyant mass]] ''m''<sub>b</sub>. For an infinitely tall bottle of beer, the gravitational [[potential energy]] is given by
+
+:<math>
+H^{\mathrm{grav}} = m_{\rm b} g z\, </math>
+
+where ''z'' is the height of the protein clump in the bottle and ''[[Earth's gravity|g]]'' is the [[acceleration]] due to gravity. Since ''s''&nbsp;= 1, the average potential energy of a protein clump equals ''k''<sub>B</sub>''T''. Hence, a protein clump with a buoyant mass of 10&nbsp;[[Dalton (unit)|MDa]] (roughly the size of a [[virus]]) would produce a haze with an average height of about 2&nbsp;cm at equilibrium. The process of such sedimentation to equilibrium is described by the [[Mason–Weaver equation]].<ref name="mason_1924" >{{cite journal | last = Mason | first = M |author2=Weaver W | year = 1924 | title = The Settling of Small Particles in a Fluid | journal = [[Physical Review]] | volume = 23 | issue = 3 | pages = 412–426 | doi = 10.1103/PhysRev.23.412|bibcode = 1924PhRv...23..412M }}</ref>
+
+==History==
+::''This article uses the non-[[International System of Units|SI]] unit of ''[[calorie|cal]]/([[mole (unit)|mol]]·[[Kelvin|K]])'' for heat capacity, because it offers greater accuracy for single digits.<br />For an approximate conversion to the corresponding SI unit of ''J/(mol·K)'', such values should be multiplied by 4.2''&nbsp;[[Joule|J]]/cal.
+
+The equipartition of kinetic energy was proposed initially in 1843, and more correctly in 1845, by [[John James Waterston]].<ref>{{cite book | last = Brush | first = SG | year = 1976 | title = The Kind of Motion We Call Heat, Volume 1 | publisher = North Holland | location = Amsterdam | pages = 134–159 | isbn = 978-0-444-87009-4}}<br />{{cite book | last = Brush | first = SG | year = 1976 | title = The Kind of Motion We Call Heat, Volume 2 | publisher = North Holland | location = Amsterdam | pages = 336–339 | isbn = 978-0-444-87009-4}}<br />{{cite journal | last = Waterston | first = JJ | author-link = John James Waterston | year = 1846 | title = On the physics of media that are composed of free and elastic molecules in a state of motion | journal = Proc. R. Soc. Lond. | volume = 5 | pages = 604 | doi = 10.1098/rspl.1843.0077 | postscript=none| doi-access = free }} (abstract only). Published in full {{cite journal | title= On the Physics of Media that are Composed of Free and Perfectly Elastic Molecules in a State of Motion| journal = [[Philosophical Transactions of the Royal Society]] | year = 1893 | volume = A183 |pages = 1–79 | doi = 10.1098/rsta.1892.0001 |bibcode = 1892RSPTA.183....1W | last1 = Waterston | first1 = J. J. | last2 = Rayleigh | first2 = L. | doi-access = free }} Reprinted {{cite book | editor = J.S. Haldane | title = The collected scientific papers of John James Waterston | url = https://archive.org/details/b29487468 | year = 1928 | location = Edinburgh | publisher = Oliver & Boyd}}<br />{{cite book | last = Waterston | first = JJ | author-link = John James Waterston | year = 1843 | title = Thoughts on the Mental Functions }} (reprinted in his ''Papers'', '''3''', 167, 183.)<br />{{cite journal | last = Waterston | first = JJ | author-link = John James Waterston | year = 1851 | journal = British Association Reports | volume = 21 | pages = 6}}
+Waterston's key paper was written and submitted in 1845 to the [[Royal Society]]. After refusing to publish his work, the Society also refused to return his manuscript and stored it among its files. The manuscript was discovered in 1891 by [[John Strutt, 3rd Baron Rayleigh|Lord Rayleigh]], who criticized the original reviewer for failing to recognize the significance of Waterston's work. Waterston managed to publish his ideas in 1851, and therefore has priority over Maxwell for enunciating the first version of the equipartition theorem.</ref> In 1859, [[James Clerk Maxwell]] argued that the kinetic heat energy of a gas is equally divided between linear and rotational energy.<ref>{{cite book | last = Maxwell | first = JC | author-link = James Clerk Maxwell | year = 2003 | chapter = Illustrations of the Dynamical Theory of Gases | title = The Scientific Papers of James Clerk Maxwell | editor = WD Niven | pages = Vol.1, pp. 377–409 | publisher = Dover | location = New York | isbn = 978-0-486-49560-6 | no-pp = true}} Read by Prof. Maxwell at a Meeting of the British Association at Aberdeen on 21 September 1859.</ref> In 1876, [[Ludwig Boltzmann]] expanded on this principle by showing that the average energy was divided equally among all the independent components of motion in a system.<ref>{{cite journal | last = Boltzmann | first = L | author-link = Ludwig Boltzmann | year = 1871 | title = Einige allgemeine Sätze über Wärmegleichgewicht (Some general statements on thermal equilibrium) | journal = Wiener Berichte | volume = 63 | pages = 679–711|language=de}} In this preliminary work, Boltzmann showed that the average total kinetic energy equals the average total potential energy when a system is acted upon by external harmonic forces.</ref><ref>{{cite journal | last = Boltzmann | first = L | author-link = Ludwig Boltzmann | year = 1876 | title = Über die Natur der Gasmoleküle (On the nature of gas molecules) | journal = Wiener Berichte | volume = 74 | pages = 553–560|language=de}}</ref> Boltzmann applied the equipartition theorem to provide a theoretical explanation of the [[Dulong–Petit law]] for the [[specific heat|specific heat capacities]] of solids.
+
+[[Image:DiatomicSpecHeat1.png|thumb|upright=1.5|Figure 4. Idealized plot of the [[specific heat capacity|molar specific heat]] of a diatomic gas against temperature. It agrees with the value (7/2)''R'' predicted by equipartition at high temperatures (where ''R'' is the [[gas constant]]), but decreases to (5/2)''R'' and then (3/2)''R'' at lower temperatures, as the vibrational and [[rotational modes]] of motion are "frozen out". The failure of the equipartition theorem led to a paradox that was only resolved by [[quantum mechanics]]. For most molecules, the transitional temperature T<sub>rot</sub> is much less than room temperature, whereas ''T''<sub>vib</sub> can be ten times larger or more. A typical example is [[carbon monoxide]], CO, for which ''T''<sub>rot</sub> ≈ 2.8&nbsp;[[Kelvin|K]] and ''T''<sub>vib</sub>&nbsp;≈ 3103&nbsp;[[Kelvin|K]]. For molecules with very large or weakly bound atoms, ''T''<sub>vib</sub> can be close to room temperature (about 300&nbsp;K); for example, ''T''<sub>vib</sub>&nbsp;≈ 308&nbsp;K for [[iodine]] gas, I<sub>2</sub>.<ref name="mcquarrie_2000c" />]]
+
+The history of the equipartition theorem is intertwined with that of [[specific heat capacity]], both of which were studied in the 19th century. In 1819, the French physicists [[Pierre Louis Dulong]] and [[Alexis Thérèse Petit]] discovered that the specific heat capacities of solid elements at room temperature were inversely proportional to the atomic weight of the element.<ref>{{cite journal | last = Petit | first = AT | author-link = Alexis Thérèse Petit |author2=Dulong PL |author-link2=Pierre Louis Dulong  | year = 1819 | title = Recherches sur quelques points importants de la théorie de la chaleur (Studies on key points in the theory of heat) | url = http://web.lemoyne.edu/~giunta/PETIT.html | journal = [[Annales de Chimie et de Physique]] | volume = 10 | pages = 395–413|language=fr}}</ref> Their law was used for many years as a technique for measuring atomic weights.<ref name="pais_1982" >{{cite book | last = Pais | first = A | author-link = Abraham Pais | year = 1982 | title = Subtle is the Lord | publisher = Oxford University Press | isbn = 0-19-853907-X | url = https://archive.org/details/subtleislordscie00pais }}</ref> However, subsequent studies by [[James Dewar]] and [[Heinrich Friedrich Weber]] showed that this [[Dulong–Petit law]] holds only at high [[temperature]]s;<ref>{{cite journal | last = Dewar | first = J | author-link = James Dewar | year = 1872 | title = The Specific Heat of Carbon at High Temperatures | journal = [[Philosophical Magazine]] | volume = 44 | pages = 461}}<br />{{cite journal | last = Weber | first = HF | author-link = Heinrich Friedrich Weber | year = 1872 | title = Die specifische Wärme des Kohlenstoffs (The specific heat of carbon) | journal = [[Annalen der Physik]] | volume = 147 | issue = 10 | pages = 311–319 | url = http://gallica.bnf.fr/ark:/12148/bpt6k152316|language=de|doi=10.1002/andp.18722231007|bibcode = 1872AnP...223..311W }}<br />{{cite journal | last = Weber | first = HF | author-link = Heinrich Friedrich Weber | year = 1875 | title = Die specifische Wärmen der Elemente Kohlenstoff, Bor und Silicium (The specific heats of elemental carbon, boron, and silicon) | journal = [[Annalen der Physik]] | volume = 154 | issue = 3 | pages = 367–423, 553–582 |doi=10.1002/andp.18752300307 | url = http://gallica.bnf.fr/ark:/12148/bpt6k15238m|language=de|bibcode = 1875AnP...230..367W }}</ref> at lower temperatures, or for exceptionally hard solids such as [[diamond]], the specific heat capacity was lower.<ref>{{cite journal | last = de la Rive | first = A |author2=Marcet F | year = 1840 | title = Quelques recherches sur la chaleur spécifique (Some research on specific heat) | journal = Annales de Chimie et de Physique | volume = 75 | pages = 113–144 | url=https://books.google.com/books?id=vBwAAAAAMAAJ&pg=RA1-PA3 | publisher = Masson.|language=fr}}<br />{{cite journal | last = Regnault | first = HV | author-link = Henri Victor Regnault | year = 1841 | title = Recherches sur la chaleur spécifique des corps simples et des corps composés (deuxième Mémoire) (Studies of the specific heats of simple and composite bodies) | journal = [[Annales de Chimie et de Physique]] | volume = 1 | series = (3me Série)| pages = 129–207 | url = http://gallica.bnf.fr/ark:/12148/bpt6k34742d|language=fr}} Read at l'Académie des Sciences on 11 January 1841.<br />{{cite journal | last = Wigand | first = A | year = 1907 | title = Über Temperaturabhängigkeit der spezifischen Wärme fester Elemente (On the temperature dependence of the specific heats of solids) | journal = [[Annalen der Physik]] | volume = 22 | issue = 1 | pages = 99–106|language=de|doi=10.1002/andp.19063270105 |bibcode = 1906AnP...327...99W | url = https://zenodo.org/record/1424079 }}</ref>
+
+Experimental observations of the specific heat capacities of gases also raised concerns about the validity of the equipartition theorem. The theorem predicts that the molar heat capacity of simple monatomic gases should be roughly 3&nbsp;cal/(mol·K), whereas that of diatomic gases should be roughly 7&nbsp;cal/(mol·K). Experiments confirmed the former prediction,<ref name="kundt_1876" >{{cite journal | last = Kundt | first = A | author-link = August Kundt |author2=Warburg E |author-link2=Emil Warburg  | year = 1876 | title = Über die specifische Wärme des Quecksilbergases (On the specific heat of mercury gases) | journal = [[Annalen der Physik]] | volume = 157 | issue = 3 | pages = 353–369 | url = http://gallica.bnf.fr/ark:/12148/bpt6k15241h|language=de|doi=10.1002/andp.18762330302 |bibcode = 1876AnP...233..353K }}</ref> but found that molar heat capacities of diatomic gases were typically about 5&nbsp;cal/(mol·K),<ref name="Wueller_1896">{{cite book | last = Wüller | first = A | year = 1896 | title = Lehrbuch der Experimentalphysik (Textbook of Experimental Physics) | publisher = Teubner | location = Leipzig | pages = Vol. 2, 507ff | no-pp = true|language=de}}</ref> and fell to about 3&nbsp;cal/(mol·K) at very low temperatures.<ref name="Eucken_1912" >{{cite journal | last = Eucken | first = A | year = 1912 | title = Die Molekularwärme des Wasserstoffs bei tiefen Temperaturen (The molecular specific heat of hydrogen at low temperatures) | journal = Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften | volume = 1912 | pages = 141–151|language=de}}</ref> [[James Clerk Maxwell|Maxwell]] noted in 1875 that the disagreement between experiment and the equipartition theorem was much worse than even these numbers suggest;<ref name="maxwell_1875" >{{cite book | last = Maxwell | first = JC | author-link = James Clerk Maxwell | year = 1890 | chapter = On the Dynamical Evidence of the Molecular Constitution of Bodies | title = The Scientific Papers of James Clerk Maxwell | url = https://archive.org/details/scientificpapers02maxwuoft | editor = WD Niven | pages = Vol.2, pp.418–438 | publisher = At the University Press | location = Cambridge | id = ASIN B000GW7DXY | no-pp = true | isbn = 0-486-61534-0}} A lecture delivered by Prof. Maxwell at the Chemical Society on 18 February 1875.</ref> since atoms have internal parts, heat energy should go into the motion of these internal parts, making the predicted specific heats of monatomic and diatomic gases much higher than 3&nbsp;cal/(mol·K) and 7&nbsp;cal/(mol·K), respectively.
+
+A third discrepancy concerned the specific heat of metals.<ref name="kittel_1996" >{{cite book | last = Kittel | first = C | year = 1996 | title = [[Introduction to Solid State Physics]] | publisher = John Wiley and Sons | location = New York | isbn = 978-0-471-11181-8 | pages = 151–156}}</ref> According to the classical [[Drude model]], metallic electrons act as a nearly ideal gas, and so they should contribute (3/2)&nbsp;''N''<sub>e</sub>''k''<sub>B</sub> to the heat capacity by the equipartition theorem, where ''N''<sub>e</sub> is the number of electrons. Experimentally, however, electrons contribute little to the heat capacity: the molar heat capacities of many conductors and insulators are nearly the same.<ref name="kittel_1996" />
+
+Several explanations of equipartition's failure to account for molar heat capacities were proposed. [[Ludwig Boltzmann|Boltzmann]] defended the derivation of his equipartition theorem as correct, but suggested that gases might not be in [[thermal equilibrium]] because of their interactions with the [[luminiferous aether|aether]].<ref>{{cite journal | last = Boltzmann | first = L | author-link = Ludwig Boltzmann | year = 1895 | title = On certain Questions of the Theory of Gases | journal = Nature | volume = 51 | issue = 1322 | pages = 413–415 | doi = 10.1038/051413b0|bibcode = 1895Natur..51..413B | s2cid = 4037658 | url = https://zenodo.org/record/1429366 }}</ref> [[William Thomson, 1st Baron Kelvin|Lord Kelvin]] suggested that the derivation of the equipartition theorem must be incorrect, since it disagreed with experiment, but was unable to show how.<ref>{{cite book | last = Thomson | first = W | author-link = William Thomson, 1st Baron Kelvin | year = 1904 | title = Baltimore Lectures | publisher = Johns Hopkins University Press | location = Baltimore | pages = Sec. 27 | no-pp = true | isbn = 0-8391-1022-7 | url = https://archive.org/details/macromoleculesbe0000unse }} Re-issued in 1987 by MIT Press as ''Kelvin's Baltimore Lectures and Modern Theoretical Physics: Historical and Philosophical Perspectives'' (Robert Kargon and Peter Achinstein, editors). {{ISBN|978-0-262-11117-1}}</ref> In 1900 [[John Strutt, 3rd Baron Rayleigh|Lord Rayleigh]] instead put forward a more radical view that the equipartition theorem and the experimental assumption of thermal equilibrium were ''both'' correct; to reconcile them, he noted the need for a new principle that would provide an "escape from the destructive simplicity" of the equipartition theorem.<ref>{{cite journal | last = Rayleigh | first = JWS | author-link = John Strutt, 3rd Baron Rayleigh | year = 1900 | title = The Law of Partition of Kinetic Energy | journal = [[Philosophical Magazine]] | volume = 49 | issue = 296 | pages = 98–118 | doi=10.1080/14786440009463826| url = https://zenodo.org/record/1430610 }}</ref> [[Albert Einstein]] provided that escape, by showing in 1906 that these anomalies in the specific heat were due to quantum effects, specifically the quantization of energy in the elastic modes of the solid.<ref>{{cite journal | last = Einstein | first = A | author-link = Albert Einstein | year = 1906 | title = Die Plancksche Theorie der Strahlung und die Theorie der spezifischen Wärme (The Planck theory of radiation and the theory of specific heat) | journal = Annalen der Physik | volume = 22 | issue = 1 | pages = 180–190|bibcode = 1906AnP...327..180E|doi = 10.1002/andp.19063270110 | url = https://zenodo.org/record/1424081 |language=de}}<br />{{cite journal | last = Einstein | first = A | author-link = Albert Einstein | year = 1907 | title = Berichtigung zu meiner Arbeit: 'Die Plancksche Theorie der Strahlung und die Theorie der spezifischen Wärme' (Correction to previous article) | journal = Annalen der Physik | volume = 22 | issue = 4 | pages = 800 | doi = 10.1002/andp.19073270415|bibcode = 1907AnP...327..800E |language=de| url = https://zenodo.org/record/1424089 }}<br />{{cite journal | last = Einstein | first = A | author-link = Albert Einstein | year = 1911 | title = Eine Beziehung zwischen dem elastischen Verhalten and der spezifischen Wärme bei festen Körpern mit einatomigem Molekül (A connection between the elastic behavior and the specific heat of solids with single-atom molecules) | journal = Annalen der Physik | volume = 34 | issue = 1 | pages = 170–174 | url = http://gallica.bnf.fr/ark:/12148/bpt6k15337j | doi = 10.1002/andp.19113390110|bibcode = 1911AnP...339..170E |language=de}}<br />{{cite journal | last = Einstein | first = A | author-link = Albert Einstein | year = 1911 | title = Bemerkung zu meiner Arbeit: 'Eine Beziehung zwischen dem elastischen Verhalten and der spezifischen Wärme bei festen Körpern mit einatomigem Molekül' (Comment on previous article) | journal = Annalen der Physik | volume = 34 | issue = 3 | pages = 590 | url = http://gallica.bnf.fr/ark:/12148/bpt6k15337j | doi = 10.1002/andp.19113390312|bibcode = 1911AnP...339..590E |language=de}}<br />{{cite journal | last = Einstein | first = A | author-link = Albert Einstein | year = 1911 | title = Elementare Betrachtungen über die thermische Molekularbewegung in festen Körpern (Elementary observations on the thermal movements of molecules in solids) | journal = Annalen der Physik | volume = 35 | pages = 679–694 | url = http://gallica.bnf.fr/ark:/12148/bpt6k15338w|bibcode = 1911AnP...340..679E|doi = 10.1002/andp.19113400903 | issue = 9 |language=de}}</ref> Einstein used the failure of equipartition to argue for the need of a new quantum theory of matter.<ref name="pais_1982" /> [[Walther Nernst|Nernst's]] 1910 measurements of specific heats at low temperatures<ref>{{cite journal | last = Nernst | first = W | author-link = Walther Nernst | year = 1910 | title = Untersuchungen über die spezifische Wärme bei tiefen Temperaturen. II. (Investigations into the specific heat at low temperatures) | journal = Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften | volume = 1910 | pages = 262–282|language=de}}</ref> supported Einstein's theory, and led to the widespread acceptance of [[Quantum mechanics|quantum theory]] among physicists.<ref>{{cite book | last = Hermann | first = Armin | year = 1971 | title = The Genesis of Quantum Theory (1899–1913) | edition = original title: ''Frühgeschichte der Quantentheorie (1899–1913)'', translated by Claude W. Nash | publisher = The MIT Press | location = Cambridge, MA | isbn = 0-262-08047-8 | pages = [https://archive.org/details/genesisofquantum00herm/page/124 124–145] | lccn = 73151106 | url = https://archive.org/details/genesisofquantum00herm/page/124 }}</ref>
+
+==General formulation of the equipartition theorem==
+{{See also|Generalized coordinates|Hamiltonian mechanics|Microcanonical ensemble|Canonical ensemble}}
+
+The most general form of the equipartition theorem states that under suitable assumptions (discussed below), for a physical system with [[Hamiltonian function|Hamiltonian]] energy function ''H'' and degrees of freedom ''x<sub>n</sub>'', the following equipartition formula holds in thermal equilibrium for all indices ''m'' and ''n'':<ref name="pathria_1972" /><ref name="huang_1987" /><ref name="tolman_1918" >{{cite journal | last = Tolman | first = RC | author-link = Richard C. Tolman | year = 1918 | title = A General Theory of Energy Partition with Applications to Quantum Theory | journal = [[Physical Review]] | volume = 11 | issue = 4 | pages = 261–275 | doi = 10.1103/PhysRev.11.261|bibcode = 1918PhRv...11..261T | url = https://authors.library.caltech.edu/9471/1/TOLpr18.pdf }}</ref>
+:<math>\!
+\Bigl\langle x_{m} \frac{\partial H}{\partial x_{n}} \Bigr\rangle = \delta_{mn} k_{B} T.
+</math>
+
+Here ''δ<sub>mn</sub>'' is the [[Kronecker delta]], which is equal to one if ''m''&nbsp;= ''n'' and is zero otherwise. The averaging brackets <math>\left\langle \ldots \right\rangle</math> is assumed to be an [[ensemble average]] over phase space or, under an assumption of [[ergodic]]ity, a time average of a single system.
+
+The general equipartition theorem holds in both the [[microcanonical ensemble]],<ref name="huang_1987">{{cite book | last = Huang | first = K | author-link = Kerson Huang | year = 1987 | title = Statistical Mechanics | edition = 2nd | publisher = John Wiley and Sons | pages = 136–138 | isbn = 0-471-81518-7}}</ref> when the total energy of the system is constant, and also in the [[canonical ensemble]],<ref name="pathria_1972" >{{cite book | last = Pathria | first = RK | year = 1972 | title = Statistical Mechanics | publisher = Pergamon Press | pages = 43–48, 73–74 | isbn = 0-08-016747-0}}</ref><ref name="tolman_1938" >{{cite book | last = Tolman | first = RC | author-link = Richard C. Tolman | year = 1938 | title = The Principles of Statistical Mechanics | publisher = Dover Publications | location = New York | pages = 93–98 | isbn = 0-486-63896-0}}</ref> when the system is coupled to a [[heat bath]] with which it can exchange energy. Derivations of the general formula are given [[#Derivations|later in the article]].
+
+The general formula is equivalent to the following two:
+# <math>\Bigl\langle x_{n} \frac{\partial H}{\partial x_{n}} \Bigr\rangle = k_{B} T \quad \mbox{for all } n</math>
+# <math>\Bigl\langle x_{m} \frac{\partial H}{\partial x_{n}} \Bigr\rangle = 0 \quad \mbox{for all } m \neq n.</math>
+
+If a degree of freedom ''x<sub>n</sub>'' appears only as a quadratic term ''a<sub>n</sub>x<sub>n</sub>''<sup>2</sup> in the Hamiltonian ''H'', then the first of these formulae implies that
+:<math>
+k_{B} T = \Bigl\langle x_{n} \frac{\partial H}{\partial x_{n}}\Bigr\rangle = 2\langle a_n x_n^2 \rangle,
+</math>
+which is twice the contribution that this degree of freedom makes to the average energy <math>\langle H\rangle</math>. Thus the equipartition theorem for systems with quadratic energies follows easily from the general formula. A similar argument, with 2 replaced by ''s'', applies to energies of the form ''a<sub>n</sub>x<sub>n</sub><sup>s</sup>''.
+
+The degrees of freedom ''x<sub>n</sub>'' are coordinates on the [[phase space]] of the system and are therefore commonly subdivided into [[canonical coordinates|generalized position]] coordinates ''q<sub>k</sub>'' and [[generalized momentum]] coordinates ''p<sub>k</sub>'', where ''p<sub>k</sub>'' is the [[conjugate momentum]] to ''q<sub>k</sub>''. In this situation, formula 1 means that for all ''k'',
+
+:<math>
+\Bigl\langle p_{k} \frac{\partial H}{\partial p_{k}} \Bigr\rangle =  \Bigl\langle q_{k} \frac{\partial H}{\partial q_{k}} \Bigr\rangle = k_{\rm B} T.
+</math>
+
+Using the equations of [[Hamiltonian mechanics]],<ref name="goldstein_1980" >{{cite book | last = Goldstein |first = H | author-link = Herbert Goldstein | year = 1980 | title = Classical Mechanics | edition = 2nd. | publisher = Addison-Wesley | isbn = 0-201-02918-9}}</ref> these formulae may also be written
+
+:<math>
+\Bigl\langle p_{k} \frac{dq_{k}}{dt} \Bigr\rangle = -\Bigl\langle q_{k} \frac{dp_{k}}{dt} \Bigr\rangle = k_{\rm B} T.
+</math>
+
+Similarly, one can show using formula 2 that
+
+:<math>
+\Bigl\langle q_{j} \frac{\partial H}{\partial p_{k}} \Bigr\rangle = \Bigl\langle p_{j} \frac{\partial H}{\partial q_{k}} \Bigr\rangle = 0 
+\quad \mbox{ for all } \, j,k
+</math>
+
+and
+
+:<math>
+\Bigl\langle q_{j} \frac{\partial H}{\partial q_{k}} \Bigr\rangle = 
+\Bigl\langle p_{j} \frac{\partial H}{\partial p_{k}} \Bigr\rangle = 0 \quad \mbox{ for all } \, j \neq k.
+</math>
+
+===Relation to the virial theorem===
+{{See also|Virial theorem|Generalized coordinates|Hamiltonian mechanics}}
+
+The general equipartition theorem is an extension of the [[virial theorem]] (proposed in 1870<ref>{{cite journal | last = Clausius | first = R | author-link = Rudolf Clausius | year = 1870 | title = Ueber einen auf die Wärme anwendbaren mechanischen Satz | journal = Annalen der Physik | volume = 141 | issue = 9 | pages = 124–130 | url = http://gallica.bnf.fr/ark:/12148/bpt6k152258 | doi=10.1002/andp.18702170911|language=de|bibcode = 1870AnP...217..124C }}<br />{{cite journal | last = Clausius | first = RJE | author-link = Rudolf Clausius | year = 1870 | title = On a Mechanical Theorem Applicable to Heat | journal = [[Philosophical Magazine]] |series=Series 4 | volume = 40 | pages = 122–127}}</ref>), which states that
+
+:<math>
+\Bigl\langle \sum_{k} q_{k} \frac{\partial H}{\partial q_{k}} \Bigr\rangle = 
+\Bigl\langle \sum_{k} p_{k} \frac{\partial H}{\partial p_{k}} \Bigr\rangle = 
+\Bigl\langle \sum_{k} p_{k} \frac{dq_{k}}{dt} \Bigr\rangle = -\Bigl\langle \sum_{k} q_{k} \frac{dp_{k}}{dt} \Bigr\rangle,
+</math>
+
+where ''t'' denotes [[time]].<ref name="goldstein_1980" /> Two key differences are that the virial theorem relates ''summed'' rather than ''individual'' averages to each other, and it does not connect them to the [[temperature]] ''T''. Another difference is that traditional derivations of the virial theorem use averages over time, whereas those of the equipartition theorem use averages over [[phase space]].
+
+==Applications==
+
+===Ideal gas law===
+{{See also|Ideal gas|Ideal gas law}}
+
+[[Ideal gas]]es provide an important application of the equipartition theorem. As well as providing the formula
+:<math>
+\begin{align}
+\langle H^{\mathrm{kin}} \rangle &= \frac{1}{2m} \langle p_{x}^{2} + p_{y}^{2} + p_{z}^{2} \rangle\\
+&=  \frac{1}{2} \biggl(
+\Bigl\langle p_{x} \frac{\partial H^{\mathrm{kin}}}{\partial p_{x}} \Bigr\rangle + 
+\Bigl\langle p_{y} \frac{\partial H^{\mathrm{kin}}}{\partial p_{y}} \Bigr\rangle +
+\Bigl\langle p_{z} \frac{\partial H^{\mathrm{kin}}}{\partial p_{z}} \Bigr\rangle \biggr) = 
+\frac{3}{2} k_{B} T
+\end{align}
+</math>
+for the average kinetic energy per particle, the equipartition theorem can be used to derive the [[ideal gas law]] from classical mechanics.<ref name="pathria_1972" /> If '''q''' = (''q<sub>x</sub>'', ''q<sub>y</sub>'', ''q<sub>z</sub>'') and '''p''' = (''p<sub>x</sub>'', ''p<sub>y</sub>'', ''p<sub>z</sub>'') denote the position vector and momentum of a particle in the gas, and
+'''F''' is the net force on that particle, then
+:<math>
+\begin{align}
+\langle \mathbf{q} \cdot \mathbf{F} \rangle &= \Bigl\langle q_x \frac{dp_x}{dt} \Bigr\rangle + 
+\Bigl\langle q_y \frac{dp_y}{dt} \Bigr\rangle + 
+\Bigl\langle q_z \frac{dp_z}{dt} \Bigr\rangle\\
+&=-\Bigl\langle q_x \frac{\partial H}{\partial q_x} \Bigr\rangle -
+\Bigl\langle q_y \frac{\partial H}{\partial q_y} \Bigr\rangle - 
+\Bigl\langle q_z \frac{\partial H}{\partial q_z} \Bigr\rangle = -3k_B T,
+\end{align}
+</math>
+where the first equality is [[Newton's second law]], and the second line uses [[Hamilton's equations]] and the equipartition formula. Summing over a system of ''N'' particles yields
+
+:<math>
+3Nk_{B} T = - \biggl\langle \sum_{k=1}^{N} \mathbf{q}_{k} \cdot \mathbf{F}_{k} \biggr\rangle.
+</math>
+
+[[Image:Translational motion.gif|frame|right|Figure 5. The kinetic energy of a particular molecule can [[thermal fluctuations|fluctuate wildly]], but the equipartition theorem allows its ''average'' energy to be calculated at any temperature. Equipartition also provides a derivation of the [[ideal gas law]], an equation that relates the [[pressure]], [[volume]] and [[temperature]] of the gas. (In this diagram five of the molecules have been colored red to track their motion; this coloration has no other significance.)]]
+
+By [[Newton's third law]] and the ideal gas assumption, the net force on the system is the force applied by the walls of their container, and this force is given by the pressure ''P'' of the gas. Hence
+
+:<math>
+-\biggl\langle\sum_{k=1}^{N} \mathbf{q}_{k} \cdot \mathbf{F}_{k}\biggr\rangle = P \oint_{\mathrm{surface}} \mathbf{q} \cdot \mathbf{dS},
+</math>
+
+where '''d''S''''' is the infinitesimal area element along the walls of the container. Since the [[divergence]] of the position vector '''q''' is
+
+:<math>
+\boldsymbol\nabla \cdot \mathbf{q} =
+\frac{\partial q_{x}}{\partial q_{x}} + 
+\frac{\partial q_{y}}{\partial q_{y}} + 
+\frac{\partial q_{z}}{\partial q_{z}} = 3,
+</math>
+
+the [[divergence theorem]] implies that
+
+:<math>
+P \oint_{\mathrm{surface}} \mathbf{q} \cdot \mathbf{dS} = P \int_{\mathrm{volume}} \left( \boldsymbol\nabla \cdot \mathbf{q} \right) \, dV = 3PV,
+</math>
+
+where d''V'' is an infinitesimal volume within the container and ''V'' is the total volume of the container.
+
+Putting these equalities together yields
+
+:<math>
+3Nk_{B} T = -\biggl\langle \sum_{k=1}^{N} \mathbf{q}_{k} \cdot \mathbf{F}_{k} \biggr\rangle = 3PV,
+</math>
+
+which immediately implies the [[ideal gas law]] for ''N'' particles:
+
+:<math>
+PV = Nk_{B} T = nRT,\,
+</math>
+
+where ''n''&nbsp;= ''N''/''N''<sub>A</sub> is the number of moles of gas and ''R''&nbsp;= ''N''<sub>A</sub>''k''<sub>B</sub> is the [[gas constant]]. Although equipartition provides a simple derivation of the ideal-gas law and the internal energy, the same results can be obtained by an alternative method using the [[partition function (statistical mechanics)|partition function]].<ref name="configint">
+Vu-Quoc, L., [http://clesm.mae.ufl.edu/wiki.pub/index.php/Configuration_integral_%28statistical_mechanics%29 Configuration integral (statistical mechanics)], 2008. this wiki site is down; see [https://web.archive.org/web/20120428193950/http://clesm.mae.ufl.edu/wiki.pub/index.php/Configuration_integral_%28statistical_mechanics%29 this article in the web archive on 2012 April 28].
+<!---
+L. Vu-Quoc, [http://clesm.mae.ufl.edu/wiki.pub/index.php/Configuration_integral_%28statistical_mechanics%29 Configuration integral (statistical mechanics)], 2008.
+--->
+</ref>
+
+===Diatomic gases===
+{{See also|Two-body problem|Rigid rotor|Harmonic oscillator}}
+
+A diatomic gas can be modelled as two masses, ''m''<sub>1</sub> and ''m''<sub>2</sub>, joined by a [[spring (device)|spring]] of [[Hooke's law|stiffness]] ''a'', which is called the ''rigid rotor-harmonic oscillator approximation''.<ref name="mcquarrie_2000c" >{{cite book | last = McQuarrie | first = DA | year = 2000 | title = Statistical Mechanics | edition = revised 2nd | publisher = University Science Books | isbn = 978-1-891389-15-3 | pages = [https://archive.org/details/statisticalmecha00mcqu_0/page/91 91–128] | url = https://archive.org/details/statisticalmecha00mcqu_0/page/91 }}</ref> The classical energy of this system is
+
+:<math>
+H = 
+\frac{\left| \mathbf{p}_{1} \right|^{2}}{2m_{1}} + 
+\frac{\left| \mathbf{p}_{2} \right|^{2}}{2m_{2}} + 
+\frac{1}{2} a q^{2},
+</math>
+
+where '''p'''<sub>1</sub> and '''p'''<sub>2</sub> are the momenta of the two atoms, and ''q'' is the deviation of the inter-atomic separation from its equilibrium value. Every degree of freedom in the energy is quadratic and, thus, should contribute {{frac|1|2}}''k''<sub>B</sub>''T'' to the total average energy, and {{frac|1|2}}''k''<sub>B</sub> to the heat capacity. Therefore, the heat capacity of a gas of ''N'' diatomic molecules is predicted to be 7''N''·{{frac|1|2}}''k''<sub>B</sub>: the momenta '''p'''<sub>1</sub> and '''p'''<sub>2</sub> contribute three degrees of freedom each, and the extension ''q'' contributes the seventh. It follows that the heat capacity of a mole of diatomic molecules with no other degrees of freedom should be (7/2)''N''<sub>A</sub>''k''<sub>B</sub>&nbsp;= (7/2)''R'' and, thus, the predicted molar heat capacity should be roughly 7&nbsp;cal/(mol·K). However, the experimental values for molar heat capacities of diatomic gases are typically about 5&nbsp;cal/(mol·K)<ref name="Wueller_1896" /> and fall to 3&nbsp;cal/(mol·K) at very low temperatures.<ref name="Eucken_1912" /> This disagreement between the equipartition prediction and the experimental value of the molar heat capacity cannot be explained by using a more complex model of the molecule, since adding more degrees of freedom can only ''increase'' the predicted specific heat, not decrease it.<ref name="maxwell_1875" /> This discrepancy was a key piece of evidence showing the need for a [[Quantum mechanics|quantum theory]] of matter.
+
+[[Image:Chandra-crab.jpg|thumb|left|upright=1.25|Figure 6. A combined X-ray and optical image of the [[Crab Nebula]]. At the heart of this nebula there is a rapidly rotating [[neutron star]] which has about one and a half times the mass of the [[Sun]] but is only 25 km across. The equipartition theorem is useful in predicting the properties of such neutron stars.]]
+
+===Extreme relativistic ideal gases===
+{{See also|Special relativity|White dwarf|Neutron star}}
+
+Equipartition was used above to derive the classical [[ideal gas law]] from [[Newtonian mechanics]]. However, [[special relativity|relativistic effects]] become dominant in some systems, such as [[white dwarf]]s and [[neutron star]]s,<ref name="huang_1987" /> and the ideal gas equations must be modified. The equipartition theorem provides a convenient way to derive the corresponding laws for an extreme relativistic [[ideal gas]].<ref name="pathria_1972" /> In such cases, the kinetic energy of a [[relativistic particle|single particle]] is given by the formula
+
+:<math>
+H_{\mathrm{kin}} \approx cp = c \sqrt{p_{x}^{2} + p_{y}^{2} + p_{z}^{2}}.
+</math>
+
+Taking the derivative of ''H'' with respect to the ''p<sub>x</sub>'' momentum component gives the formula
+
+:<math>
+p_x \frac{\partial H_{\mathrm{kin}}}{\partial p_x}  = c \frac{p_x^2}{\sqrt{p_x^2 + p_y^2 + p_z^2}}
+</math>
+
+and similarly for the ''p<sub>y</sub>'' and ''p<sub>z</sub>'' components. Adding the three components together gives
+
+:<math>
+\begin{align}
+\langle H_{\mathrm{kin}} \rangle
+&= \biggl\langle c \frac{p_{x}^{2} + p_{y}^{2} + p_{z}^{2}}{\sqrt{p_{x}^{2} + p_{y}^{2} + p_{z}^{2}}}  \biggr\rangle\\
+&= \Bigl\langle p_{x} \frac{\partial H^{\mathrm{kin}}}{\partial p_{x}} \Bigr\rangle + 
+\Bigl\langle p_{y} \frac{\partial H^{\mathrm{kin}}}{\partial p_{y}} \Bigr\rangle + 
+\Bigl\langle p_{z} \frac{\partial H^{\mathrm{kin}}}{\partial p_{z}} \Bigr\rangle\\
+&= 3 k_{B} T
+\end{align}
+</math>
+where the last equality follows from the equipartition formula. Thus, the average total energy of an extreme relativistic gas is twice that of the non-relativistic case: for ''N'' particles, it is 3&nbsp;''Nk''<sub>B</sub>''T''.
+
+===Non-ideal gases===
+{{See also|Virial expansion|Virial coefficient}}
+
+In an ideal gas the particles are assumed to interact only through collisions. The equipartition theorem may also be used to derive the energy and pressure of "non-ideal gases" in which the particles also interact with one another through [[conservative force]]s whose potential ''U''(''r'') depends only on the distance ''r'' between the particles.<ref name="pathria_1972" /> This situation can be described by first restricting attention to a single gas particle, and approximating the rest of the gas by a [[spherical symmetry|spherically symmetric]] distribution. It is then customary to introduce a [[radial distribution function]] ''g''(''r'') such that the [[probability density function|probability density]] of finding another particle at a distance ''r'' from the given particle is equal to 4π''r''<sup>2</sup>''ρg''(''r''), where ''ρ''&nbsp;= ''N''/''V'' is the mean [[density]] of the gas.<ref name="mcquarrie_2000b" >{{cite book | last = McQuarrie | first = DA | year = 2000 | title = Statistical Mechanics | edition = revised 2nd | publisher = University Science Books | isbn = 978-1-891389-15-3 | pages = [https://archive.org/details/statisticalmecha00mcqu_0/page/254 254–264] | url = https://archive.org/details/statisticalmecha00mcqu_0/page/254 }}</ref> It follows that the mean potential energy associated to the interaction of the given particle with the rest of the gas is
+
+:<math>
+\langle h_{\mathrm{pot}} \rangle = \int_{0}^{\infty} 4\pi r^{2} \rho U(r) g(r)\, dr.
+</math>
+
+The total mean potential energy of the gas is therefore <math> \langle H_{pot} \rangle = \tfrac12 N \langle h_{\mathrm{pot}} \rangle </math>, where ''N'' is the number of particles in the gas, and the factor {{frac|1|2}} is needed because summation over all the particles counts each interaction twice.
+Adding kinetic and potential energies, then applying equipartition, yields the ''energy equation''
+
+:<math>
+H = 
+\langle H_{\mathrm{kin}} \rangle + \langle H_{\mathrm{pot}} \rangle = 
+\frac{3}{2} Nk_{B}T + 2\pi N \rho \int_{0}^{\infty} r^{2} U(r) g(r) \, dr.
+</math>
+
+A similar argument,<ref name="pathria_1972" /> can be used to derive the ''pressure equation''
+
+:<math>
+3Nk_{\rm B}T = 3PV + 2\pi N \rho \int_{0}^{\infty} r^{3} U'(r) g(r)\, dr.
+</math>
+
+===Anharmonic oscillators===
+{{See also|Anharmonic oscillator}}
+
+An anharmonic oscillator (in contrast to a simple harmonic oscillator) is one in which the potential energy is not quadratic in the extension ''q'' (the [[canonical coordinate|generalized position]] which measures the deviation of the system from equilibrium). Such oscillators provide a complementary point of view on the equipartition theorem.<ref name="tolman_1927" >{{cite book | last = Tolman | first = RC | author-link = Richard C. Tolman | year = 1927 | title = Statistical Mechanics, with Applications to Physics and Chemistry | url = https://archive.org/details/statisticalmecha00tolm | publisher = Chemical Catalog Company | pages = [https://archive.org/details/statisticalmecha00tolm/page/76 76–77]}}</ref><ref name="terletskii_1971" >{{cite book | last = Terletskii | first = YP | year = 1971 | title = Statistical Physics | edition = translated: N. Fröman | publisher = North-Holland | location = Amsterdam | isbn = 0-7204-0221-2 | pages = 83–84 | lccn = 70157006}}</ref> Simple examples are provided by potential energy functions of the form
+
+:<math>
+H_{\mathrm{pot}} = C q^{s},\,
+</math>
+
+where ''C'' and ''s'' are arbitrary [[real number|real constants]]. In these cases, the law of equipartition predicts that
+
+:<math>
+k_{\rm B} T = \Bigl\langle q \frac{\partial H_{\mathrm{pot}}}{\partial q} \Bigr\rangle = 
+\langle q \cdot s C q^{s-1} \rangle = \langle s C q^{s} \rangle = s \langle H_{\mathrm{pot}} \rangle.
+</math>
+
+Thus, the average potential energy equals ''k''<sub>B</sub>''T''/''s'', not ''k''<sub>B</sub>''T''/2 as for the quadratic harmonic oscillator (where ''s''&nbsp;= 2).
+
+More generally, a typical energy function of a one-dimensional system has a [[Taylor expansion]] in the extension ''q'':
+
+:<math>
+H_{\mathrm{pot}} = \sum_{n=2}^{\infty} C_{n} q^{n}
+</math>
+
+for non-negative [[integer]]s ''n''. There is no ''n''&nbsp;= 1 term, because at the equilibrium point, there is no net force and so the first derivative of the energy is zero. The ''n''&nbsp;= 0 term need not be included, since the energy at the equilibrium position may be set to zero by convention. In this case, the law of equipartition predicts that<ref name="tolman_1927" />
+
+:<math>
+k_{B} T = \Bigl\langle q \frac{\partial H_{\mathrm{pot}}}{\partial q} \Bigr\rangle = 
+\sum_{n=2}^{\infty} \langle q \cdot n C_{n} q^{n-1} \rangle = 
+\sum_{n=2}^{\infty} n C_{n} \langle q^{n} \rangle.
+</math>
+
+In contrast to the other examples cited here, the equipartition formula
+:<math>
+\langle H_{\mathrm{pot}} \rangle = \frac{1}{2} k_{\rm B} T - 
+\sum_{n=3}^{\infty} \left( \frac{n - 2}{2} \right) C_{n} \langle q^{n} \rangle
+</math>
+does ''not'' allow the average potential energy to be written in terms of known constants.
+
+===Brownian motion===
+[[Image:Wiener process 3d.png|thumb|upright=1.5|Figure 7. Typical Brownian motion of a particle in three dimensions.]]
+The equipartition theorem can be used to derive the [[Brownian motion]] of a particle from the [[Langevin equation]].<ref name="pathria_1972" /> According to that equation, the motion of a particle of mass ''m'' with velocity '''v''' is governed by [[Newton's laws of motion|Newton's second law]]
+
+:<math>
+\frac{d\mathbf{v}}{dt} = \frac{1}{m} \mathbf{F} = -\frac{\mathbf{v}}{\tau} + \frac{1}{m} \mathbf{F}_{\mathrm{rnd}},
+</math>
+
+where '''F'''<sub>rnd</sub> is a random force representing the random collisions of the particle and the surrounding molecules, and where the [[time constant]] τ reflects the [[drag (physics)|drag force]] that opposes the particle's motion through the solution. The drag force is often written '''F'''<sub>drag</sub>&nbsp;= −γ'''v'''; therefore, the time constant τ equals ''m''/γ.
+
+The dot product of this equation with the position vector '''r''', after averaging, yields the equation
+
+:<math>
+\Bigl\langle \mathbf{r} \cdot \frac{d\mathbf{v}}{dt} \Bigr\rangle + 
+\frac{1}{\tau} \langle \mathbf{r} \cdot \mathbf{v} \rangle = 0
+</math>
+
+for Brownian motion (since the random force '''F'''<sub>rnd</sub> is uncorrelated with the position '''r'''). Using the mathematical identities
+
+:<math>
+\frac{d}{dt} \left( \mathbf{r} \cdot \mathbf{r} \right) = 
+\frac{d}{dt} \left( r^{2} \right) = 2 \left( \mathbf{r} \cdot \mathbf{v} \right)
+</math>
+
+and
+
+:<math>
+\frac{d}{dt} \left( \mathbf{r} \cdot \mathbf{v} \right) = v^{2} + \mathbf{r} \cdot \frac{d\mathbf{v}}{dt},
+</math>
+
+the basic equation for Brownian motion can be transformed into
+
+:<math>
+\frac{d^{2}}{dt^{2}} \langle r^{2} \rangle + \frac{1}{\tau} \frac{d}{dt} \langle r^{2} \rangle = 
+2 \langle v^{2} \rangle = \frac{6}{m} k_{\rm B} T,
+</math>
+
+where the last equality follows from the equipartition theorem for translational kinetic energy:
+
+:<math>
+\langle H_{\mathrm{kin}} \rangle = \Bigl\langle \frac{p^{2}}{2m} \Bigr\rangle = \langle \tfrac{1}{2} m v^{2} \rangle = \tfrac{3}{2} k_{\rm B} T.
+</math>
+
+The above [[differential equation]] for <math>\langle r^2\rangle</math> (with suitable initial conditions) may be solved exactly:
+
+:<math>
+\langle r^{2} \rangle = \frac{6k_{\rm B} T \tau^{2}}{m} \left( e^{-t/\tau} - 1 + \frac{t}{\tau} \right).
+</math>
+
+On small time scales, with ''t''&nbsp;<< ''τ'', the particle acts as a freely moving particle: by the [[Taylor series]] of the [[exponential function]], the squared distance grows approximately ''quadratically'':
+
+:<math>
+\langle r^{2} \rangle \approx \frac{3k_{\rm B} T}{m} t^{2} = \langle v^{2} \rangle t^{2}.
+</math>
+
+However, on long time scales, with ''t''&nbsp;>> ''τ'', the exponential and constant terms are negligible, and the squared distance grows only ''linearly'':
+
+:<math>
+\langle r^{2} \rangle \approx \frac{6k_{B} T\tau}{m} t = \frac{6 k_{B} T t}{\gamma}.
+</math>
+
+This describes the [[diffusion]] of the particle over time. An analogous equation for the rotational diffusion of a rigid molecule can be derived in a similar way.
+
+===Stellar physics===
+{{See also|Astrophysics|Stellar structure}}
+
+The equipartition theorem and the related [[virial theorem]] have long been used as a tool in [[astrophysics]].<ref>{{cite book | last = Collins | first = GW | year = 1978 | title = The Virial Theorem in Stellar Astrophysics  | url = http://ads.harvard.edu/books/1978vtsa.book/ | publisher = Pachart Press}}</ref> As examples, the virial theorem may be used to estimate stellar temperatures or the [[Chandrasekhar limit]] on the mass of [[white dwarf]] stars.<ref>{{cite book | last = Chandrasekhar | first = S | author-link = Subrahmanyan Chandrasekhar | year = 1939 | title = An Introduction to the Study of Stellar Structure | publisher = University of Chicago Press | location = Chicago | pages = 49–53 | isbn = 0-486-60413-6}}</ref><ref>{{cite book | last = Kourganoff | first = V | year = 1980 | title = Introduction to Advanced Astrophysics | publisher = D. Reidel | location = Dordrecht, Holland | pages = 59–60, 134–140, 181–184}}</ref>
+
+The average temperature of a star can be estimated from the equipartition theorem.<ref>{{cite book | last = Chiu | first = H-Y | year = 1968 | title = Stellar Physics, volume I | publisher = Blaisdell Publishing | location = Waltham, MA | lccn = 67017990}}</ref> Since most stars are spherically symmetric, the total [[Newton's law of universal gravitation|gravitational]] [[Potential energy#Gravitational potential energy|potential energy]] can be estimated by integration
+
+:<math>
+H_{\mathrm{grav}} = -\int_0^R \frac{4\pi r^2 G}{r} M(r)\, \rho(r)\, dr,
+</math>
+
+where ''M''(''r'') is the mass within a radius ''r'' and ''ρ''(''r'') is the stellar density at radius ''r''; ''G'' represents the [[gravitational constant]] and ''R'' the total radius of the star. Assuming a constant density throughout the star, this integration yields the formula
+
+:<math>
+H_{\mathrm{grav}} = - \frac{3G M^{2}}{5R},
+</math>
+
+where ''M'' is the star's total mass. Hence, the average potential energy of a single particle is
+
+:<math>
+\langle H_{\mathrm{grav}} \rangle = \frac{H_{\mathrm{grav}}}{N} = - \frac{3G M^{2}}{5RN},
+</math>
+
+where ''N'' is the number of particles in the star. Since most [[star]]s are composed mainly of [[ion]]ized [[hydrogen]], ''N'' equals roughly ''M''/''m''<sub>p</sub>, where ''m''<sub>p</sub> is the mass of one proton. Application of the equipartition theorem gives an estimate of the star's temperature
+
+:<math>
+\Bigl\langle r \frac{\partial H_{\mathrm{grav}}}{\partial r} \Bigr\rangle = \langle -H_{\mathrm{grav}} \rangle = 
+k_B T = \frac{3G M^2}{5RN}.
+</math>
+
+Substitution of the mass and radius of the [[Sun]] yields an estimated solar temperature of ''T''&nbsp;= 14 million kelvins, very close to its core temperature of 15 million kelvins. However, the Sun is much more complex than assumed by this model—both its temperature and density vary strongly with radius—and such excellent agreement (≈7% [[approximation error|relative error]]) is partly fortuitous.<ref>{{cite book | last = Noyes | first = RW | year = 1982 | title = The Sun, Our Star | publisher = Harvard University Press | location = Cambridge, MA | isbn = 0-674-85435-7 | url = https://archive.org/details/sunourstar00robe }}</ref>
+
+===Star formation===
+The same formulae may be applied to determining the conditions for [[star formation]] in giant [[molecular cloud]]s.<ref>{{cite book |last1=Carroll |first1=Bradley W. |last2=Ostlie |first2=Dale A. |year=1996 |title=An Introduction to Modern Stellar Astrophysics |publisher=Addison–Wesley |location=Reading, MA |isbn=0-201-59880-9 }}</ref> A local fluctuation in the density of such a cloud can lead to a runaway condition in which the cloud collapses inwards under its own gravity. Such a collapse occurs when the equipartition theorem—or, equivalently, the [[virial theorem]]—is no longer valid, i.e., when the gravitational potential energy exceeds twice the kinetic energy
+
+:<math>
+\frac{3G M^{2}}{5R} > 3 N k_{B} T.
+</math>
+
+Assuming a constant density ρ for the cloud
+
+:<math>
+M = \frac{4}{3} \pi R^{3} \rho
+</math>
+
+yields a minimum mass for stellar contraction, the Jeans mass ''M''<sub>J</sub>
+
+:<math>
+M_{\rm J}^{2} = \left( \frac{5k_{B}T}{G m_{p}} \right)^{3} \left( \frac{3}{4\pi \rho} \right).
+</math>
+
+Substituting the values typically observed in such clouds (''T''&nbsp;= 150&nbsp;K, ρ&nbsp;= 2{{e|&minus;16}}&nbsp;g/cm<sup>3</sup>) gives an estimated minimum mass of 17 solar masses, which is consistent with observed star formation. This effect is also known as the [[Jeans instability]], after the British physicist [[James Hopwood Jeans]] who published it in 1902.<ref>{{cite journal | last = Jeans | first = JH | author-link = James Hopwood Jeans | year = 1902 | title = The Stability of a Spherical Nebula | journal = [[Philosophical Transactions of the Royal Society A]] | volume = 199 | issue = 312–320 | pages = 1–53 | doi = 10.1098/rsta.1902.0012 | bibcode=1902RSPTA.199....1J| doi-access = free }}</ref>
+
+==Derivations==
+
+===Kinetic energies and the Maxwell&ndash;Boltzmann distribution===
+The original formulation of the equipartition theorem states that, in any physical system in [[thermal equilibrium]], every particle has exactly the same average translational [[kinetic energy]], (3/2)''k''<sub>B</sub>''T''.<ref name="mcquarrie_2000a" >{{cite book | last = McQuarrie | first = DA | year = 2000 | title = Statistical Mechanics | edition = revised 2nd | publisher = University Science Books | isbn = 978-1-891389-15-3 | pages = [https://archive.org/details/statisticalmecha00mcqu_0/page/121 121–128] | url = https://archive.org/details/statisticalmecha00mcqu_0/page/121 }}</ref> This may be shown using the [[Maxwell&ndash;Boltzmann distribution]] (see Figure 2), which is the probability distribution
+
+:<math>
+f (v) = 4 \pi 
+\left( \frac{m}{2 \pi k_{\rm B} T}\right)^{3/2}\!\!v^2
+\exp \Bigl(
+\frac{-mv^2}{2k_{\rm B} T}
+\Bigr)
+</math>
+
+for the speed of a particle of mass ''m'' in the system, where the speed ''v'' is the magnitude <math>\sqrt{v_x^2 + v_y^2 + v_z^2}</math> of the [[velocity]] [[Vector (geometric)|vector]] <math>\mathbf{v} = (v_x,v_y,v_z).</math>
+
+The Maxwell–Boltzmann distribution applies to any system composed of atoms, and assumes only a [[canonical ensemble]], specifically, that the kinetic energies are distributed according to their [[Boltzmann factor]] at a temperature ''T''.<ref name="mcquarrie_2000a" /> The average translational kinetic energy for a particle of mass ''m'' is then given by the integral formula
+
+:<math>
+\langle H_{\mathrm{kin}} \rangle = 
+\langle \tfrac{1}{2} m v^{2} \rangle = 
+\int _{0}^{\infty} \tfrac{1}{2} m v^{2}\  f(v)\  dv = \tfrac{3}{2} k_{\rm B} T,
+</math>
+
+as stated by the equipartition theorem. The same result can also be obtained by averaging the particle energy using the probability of finding the particle in certain quantum energy state.<ref name="configint"/>
+
+===Quadratic energies and the partition function===
+More generally, the equipartition theorem states that any [[degrees of freedom (physics and chemistry)|degree of freedom]] ''x'' which appears in the total energy ''H'' only as a simple quadratic term ''Ax''<sup>2</sup>, where ''A'' is a constant, has an average energy of ½''k''<sub>B</sub>''T'' in thermal equilibrium. In this case the equipartition theorem may be derived from the [[Partition function (statistical mechanics)|partition function]] ''Z''(''β''), where ''β''&nbsp;= 1/(''k''<sub>B</sub>''T'') is the canonical [[inverse temperature]].<ref>{{cite book | last = Callen | first = HB | author-link = Herbert Callen | year = 1985 | title = Thermodynamics and an Introduction to Thermostatistics | publisher = John Wiley and Sons | location = New York | pages = 375–377 | isbn = 0-471-86256-8}}</ref> Integration over the variable ''x'' yields a factor
+
+:<math>
+Z_{x} = \int_{-\infty}^{\infty} dx \ e^{-\beta A x^{2}} = \sqrt{\frac{\pi}{\beta A}},
+</math>
+
+in the formula for ''Z''. The mean energy associated with this factor is given by
+
+:<math>
+\langle H_{x} \rangle = - \frac{\partial \log Z_{x}}{\partial \beta} = \frac{1}{2\beta} = \frac{1}{2} k_{\rm B} T
+</math>
+
+as stated by the equipartition theorem.
+
+===General proofs===
+General derivations of the equipartition theorem can be found in many [[statistical mechanics]] textbooks, both for the [[microcanonical ensemble]]<ref name="pathria_1972" /><ref name="huang_1987" /> and for the [[canonical ensemble]].<ref name="pathria_1972" /><ref name="tolman_1938" />
+They involve taking averages over the [[phase space]] of the system, which is a [[symplectic manifold]].
+
+To explain these derivations, the following notation is introduced. First, the phase space is described in terms of [[canonical coordinates|generalized position coordinates]] ''q''<sub>''j''</sub> together with their [[conjugate momentum|conjugate momenta]] ''p''<sub>''j''</sub>. The quantities ''q''<sub>''j''</sub> completely describe the [[Configuration space (physics)|configuration]] of the system, while the quantities (''q''<sub>''j''</sub>,''p''<sub>''j''</sub>) together completely describe its [[Classical mechanics|state]].
+
+Secondly, the infinitesimal volume
+:<math>
+d\Gamma = \prod_i  dq_i \, dp_i \,
+</math>
+
+of the phase space is introduced and used to define the volume Σ(''E'', Δ''E'') of the portion of phase space where the energy ''H'' of the system lies between two limits, ''E'' and ''E''&nbsp;+&nbsp;Δ''E'':
+
+:<math>
+\Sigma (E, \Delta E) = \int_{H \in \left[E, E+\Delta E \right]} d\Gamma .
+</math>
+In this expression, Δ''E'' is assumed to be very small, Δ''E''&nbsp;<< ''E''. Similarly, Ω(''E'') is defined to be the total volume of phase space where the energy is less than ''E'':
+
+:<math>
+\Omega (E) = \int_{H < E} d\Gamma.\,
+</math>
+
+Since Δ''E'' is very small, the following integrations are equivalent
+
+:<math>
+\int_{H \in \left[ E, E+\Delta E \right]} \ldots d\Gamma  = \Delta E \frac{\partial}{\partial E} \int_{H < E} \ldots d\Gamma,
+</math>
+
+where the ellipses represent the integrand. From this, it follows that Γ is proportional to Δ''E''
+
+:<math>
+\Sigma = \Delta E \ \frac{\partial \Omega}{\partial E} = \Delta E \ \rho(E),
+</math>
+
+where ''ρ''(''E'') is the [[density of states]]. By the usual definitions of [[statistical mechanics]], the [[entropy]] ''S'' equals ''k''<sub>B</sub> log ''Ω''(''E''), and the [[temperature]] ''T'' is defined by
+
+:<math>
+\frac{1}{T} = \frac{\partial S}{\partial E} = k_{\rm B} \frac{\partial \log \Omega}{\partial E} = k_{\rm B} \frac{1}{\Omega}\,\frac{\partial \Omega}{\partial E} .
+</math>
+
+====The canonical ensemble====
+In the [[canonical ensemble]], the system is in [[thermal equilibrium]] with an infinite heat bath at [[temperature]] ''T'' (in kelvins).<ref name="pathria_1972" /><ref name="tolman_1938" /> The probability of each state in [[phase space]] is given by its [[Boltzmann factor]] times a [[normalization factor]] <math>\mathcal{N}</math>, which is chosen so that the probabilities sum to one
+
+:<math>
+\mathcal{N} \int e^{-\beta H(p, q)} d\Gamma = 1,
+</math>
+
+where ''β''&nbsp;= 1/''k''<sub>B</sub>''T''. Using [[Integration by parts]] for a phase-space variable ''x<sub>k</sub>'' the above can be written as
+:<math>
+\mathcal{N} \int e^{-\beta H(p, q)} d\Gamma = \mathcal{N} \int d[x_k e^{-\beta H(p, q)}] d\Gamma_k - \mathcal{N} \int x_k \frac{\partial e^{-\beta H(p, q)}}{\partial x_k} d\Gamma,
+</math>
+where d''Γ<sub>k</sub>''&nbsp;= d''Γ''/d''x<sub>k</sub>'', i.e., the first integration is not carried out over ''x<sub>k</sub>''. Performing the first integral between two limits ''a'' and ''b'' and simplifying the second integral yields the equation
+
+:<math>
+\mathcal{N} \int  \left[ e^{-\beta H(p, q)} x_{k} \right]_{x_{k}=a}^{x_{k}=b} d\Gamma_{k}+ 
+\mathcal{N} \int  e^{-\beta H(p, q)} x_{k} \beta \frac{\partial H}{\partial x_{k}} d\Gamma = 1,
+</math>
+
+The first term is usually zero, either because ''x<sub>k</sub>'' is zero at the limits, or because the energy goes to infinity at those limits. In that case, the equipartition theorem for the canonical ensemble follows immediately
+
+:<math>
+\mathcal{N} \int e^{-\beta H(p, q)} x_{k} \frac{\partial H}{\partial x_{k}} \,d\Gamma = 
+\Bigl\langle x_{k} \frac{\partial H}{\partial x_{k}} \Bigr\rangle = \frac{1}{\beta} = k_{B} T.
+</math>
+
+Here, the averaging symbolized by <math>\langle \ldots \rangle</math> is the [[ensemble average]] taken over the [[canonical ensemble]].
+
+====The microcanonical ensemble====
+In the microcanonical ensemble, the system is isolated from the rest of the world, or at least very weakly coupled to it.<ref name="huang_1987" /> Hence, its total energy is effectively constant; to be definite, we say that the total energy ''H'' is confined between ''E'' and ''E''+d''E''. For a given energy ''E'' and spread d''E'', there is a region of [[phase space]] Σ in which the system has that energy, and the probability of each state in that region of [[phase space]] is equal, by the definition of the microcanonical ensemble. Given these definitions, the equipartition average of phase-space variables ''x<sub>m</sub>'' (which could be either ''q<sub>k</sub>''or ''p<sub>k</sub>'') and ''x<sub>n</sub>'' is given by
+
+:<math>
+\begin{align}
+\Bigl\langle x_{m} \frac{\partial H}{\partial x_{n}} \Bigr \rangle &=
+\frac{1}{\Sigma}   \, \int_{H \in \left[ E, E+\Delta E \right]}  x_{m} \frac{\partial H}{\partial x_{n}} \,d\Gamma\\
+&=\frac{\Delta E}{\Sigma}\, \frac{\partial}{\partial E} \int_{H < E}  x_{m} \frac{\partial H}{\partial x_{n}} \,d\Gamma\\
+&= \frac{1}{\rho} \,\frac{\partial}{\partial E} \int_{H < E}  x_{m} \frac{\partial \left( H - E \right)}{\partial x_{n}} \,d\Gamma,
+\end{align}
+</math>
+
+where the last equality follows because ''E'' is a constant that does not depend on ''x<sub>n</sub>''. [[Integration by parts|Integrating by parts]] yields the relation
+
+:<math>
+\begin{align}
+\int_{H < E}  x_{m} \frac{\partial ( H - E )}{\partial x_{n}} \,d\Gamma &= 
+\int_{H < E}  \frac{\partial}{\partial x_{n}} \bigl( x_{m} ( H - E ) \bigr) \,d\Gamma - 
+\int_{H < E}  \delta_{mn} ( H - E ) d\Gamma\\
+&=  \delta_{mn} \int_{H < E} ( E - H ) \,d\Gamma,
+\end{align}
+</math>
+since the first term on the right hand side of the first line is zero (it can be rewritten as an integral of ''H'' − ''E'' on the [[hypersurface]] where ''H'' = ''E'').
+
+Substitution of this result into the previous equation yields
+
+:<math>
+\Bigl\langle x_{m} \frac{\partial H}{\partial x_{n}} \Bigr\rangle = 
+\delta_{mn} \frac{1}{\rho} \, \frac{\partial}{\partial E} \int_{H < E}\left( E - H \right)\,d\Gamma  = 
+\delta_{mn}  \frac{1}{\rho}  \, \int_{H < E} \,d\Gamma = 
+\delta_{mn}  \frac{\Omega}{\rho}.
+</math>
+
+Since <math> \rho = \frac{\partial \Omega}{\partial E} </math> the equipartition theorem follows:
+
+:<math>
+\Bigl\langle x_{m} \frac{\partial H}{\partial x_{n}} \Bigr\rangle = 
+\delta_{mn} \Bigl(\frac{1}{\Omega} \frac{\partial \Omega}{\partial E}\Bigr)^{-1}  = 
+\delta_{mn} \Bigl(\frac{\partial \log \Omega} {\partial E}\Bigr)^{-1} = \delta_{mn} k_{B} T.
+</math>
+
+Thus, we have derived the [[#General_formulation_for_all_energies|general formulation of the equipartition theorem]]
+
+<div style="border:2px solid black; padding:3px; margin-left: 0em; width: 250px;
+text-align:left">
+
+:<math>\!
+\Bigl\langle x_{m} \frac{\partial H}{\partial x_{n}} \Bigr\rangle = \delta_{mn} k_{B} T,
+</math></div>
+
+which was so useful in the [[#Applications|applications]] described above.
+
+==Limitations==
+[[Image:1D normal modes (280 kB).gif|frame|right|Figure 9. Energy is ''not'' shared among the various [[normal modes]] in an isolated system of ideal coupled [[harmonic oscillator|oscillators]]; the energy in each mode is constant and independent of the energy in the other modes. Hence, the equipartition theorem does ''not'' hold for such a system in the [[microcanonical ensemble]] (when isolated), although it does hold in the [[canonical ensemble]] (when coupled to a heat bath). However, by adding a sufficiently strong nonlinear coupling between the modes, energy will be shared and equipartition holds in both ensembles.]]
+
+===Requirement of ergodicity===
+{{See also|Ergodicity|Chaos theory|Kolmogorov–Arnold–Moser theorem|Solitons}}
+
+The law of equipartition holds only for [[ergodic hypothesis|ergodic]] systems in [[thermal equilibrium]], which implies that all states with the same energy must be equally likely to be populated.<ref name="huang_1987" /> Consequently, it must be possible to exchange energy among all its various forms within the system, or with an external [[heat bath]] in the [[canonical ensemble]]. The number of physical systems that have been rigorously proven to be ergodic is small; a famous example is the [[dynamical billiards|hard-sphere system]] of [[Yakov G. Sinai|Yakov Sinai]].<ref>{{cite book | last = Arnold | first = VI | author-link = Vladimir Arnold |author2=Avez A | year = 1957 | title = Théorie ergodique des systèms dynamiques | publisher = Gauthier-Villars, Paris. (English edition: Benjamin-Cummings, Reading, Mass. 1968)|language=fr}}</ref> The requirements for isolated systems to ensure [[ergodic theory|ergodicity]]—and, thus equipartition—have been studied, and provided motivation for the modern [[chaos theory]] of [[dynamical system]]s. A chaotic [[Hamiltonian system]] need not be ergodic, although that is usually a good assumption.<ref name="reichl_1998" />
+
+A commonly cited counter-example where energy is ''not'' shared among its various forms and where equipartition does ''not'' hold in the microcanonical ensemble is a system of coupled harmonic oscillators.<ref name="reichl_1998" >{{cite book | last = Reichl | first = LE|author-link= Linda Reichl | year = 1998 | title = A Modern Course in Statistical Physics | edition = 2nd | publisher = Wiley Interscience | isbn = 978-0-471-59520-5 | pages = 326–333}}</ref> If the system is isolated from the rest of the world, the energy in each [[normal mode]] is constant; energy is not transferred from one mode to another. Hence, equipartition does not hold for such a system; the amount of energy in each normal mode is fixed at its initial value. If sufficiently strong nonlinear terms are present in the [[energy]] function, energy may be transferred between the normal modes, leading to ergodicity and rendering the law of equipartition valid. However, the [[Kolmogorov–Arnold–Moser theorem]] states that energy will not be exchanged unless the nonlinear perturbations are strong enough; if they are too small, the energy will remain trapped in at least some of the modes.
+
+Another way ergodicity can be broken is by the existence of nonlinear [[soliton]] symmetries. In 1953, [[Enrico Fermi|Fermi]], [[John Pasta|Pasta]], [[Stanislaw Ulam|Ulam]] and [[Mary Tsingou|Tsingou]] conducted [[Fermi–Pasta–Ulam–Tsingou problem|computer simulations]] of a vibrating string that included a non-linear term (quadratic in one test, cubic in another, and a piecewise linear approximation to a cubic in a third). They found that the behavior of the system was quite different from what intuition based on equipartition would have led them to expect. Instead of the energies in the modes becoming equally shared, the system exhibited a very complicated quasi-periodic behavior. This puzzling result was eventually explained by Kruskal and Zabusky in 1965 in a paper which, by connecting the simulated system to the [[Korteweg–de Vries equation]] led to the development of soliton mathematics.
+
+===Failure due to quantum effects===
+{{See also|Ultraviolet catastrophe|History of quantum mechanics|Identical particles}}
+
+The law of equipartition breaks down when the thermal energy ''k<sub>B</sub>T'' is significantly smaller than the spacing between energy levels. Equipartition no longer holds because it is a poor approximation to assume that the energy levels form a smooth [[continuum (theory)|continuum]], which is required in the [[#Derivations|derivations of the equipartition theorem above]].<ref name="pathria_1972" /><ref name="huang_1987" /> Historically, the failures of the classical equipartition theorem to explain [[specific heats]] and [[blackbody radiation]] were critical in showing the need for a new theory of matter and radiation, namely, [[quantum mechanics]] and [[quantum field theory]].<ref name="pais_1982" />
+
+[[Image:Et fig2.png|left|thumb|upright=1.45|Figure 10. Log–log plot of the average energy of a quantum mechanical oscillator (shown in red) as a function of temperature. For comparison, the value predicted by the equipartition theorem is shown in black. At high temperatures, the two agree nearly perfectly, but at low temperatures when ''k<sub>B</sub>T << hν'', the quantum mechanical value decreases much more rapidly. This resolves the problem of the [[ultraviolet catastrophe]]: for a given temperature, the energy in the high-frequency modes (where ''hν >> k<sub>B</sub>T'') is almost zero.]]
+
+To illustrate the breakdown of equipartition, consider the average energy in a single (quantum) harmonic oscillator, which was discussed above for the classical case. Neglecting the irrelevant [[zero-point energy]] term, its quantum energy levels are given by ''E<sub>n</sub>&nbsp;= nhν'', where ''h'' is the [[Planck constant]], ''ν'' is the [[fundamental frequency]] of the oscillator, and ''n'' is an integer. The probability of a given energy level being populated in the [[canonical ensemble]] is given by its [[Boltzmann factor]]
+
+:<math>
+P(E_{n}) = \frac{e^{-n\beta h\nu}}{Z},
+</math>
+
+where ''β''&nbsp;= 1/''k''<sub>B</sub>''T'' and the denominator ''Z'' is the [[partition function (statistical mechanics)|partition function]], here a [[geometric series]]
+
+:<math>
+Z = \sum_{n=0}^{\infty} e^{-n\beta h\nu} = \frac{1}{1 - e^{-\beta h\nu}}.
+</math>
+
+Its average energy is given by
+
+:<math>
+\langle H \rangle = \sum_{n=0}^{\infty} E_{n} P(E_{n}) =
+\frac{1}{Z} \sum_{n=0}^{\infty} nh\nu \ e^{-n\beta h\nu} = 
+-\frac{1}{Z} \frac{\partial Z}{\partial \beta} = 
+-\frac{\partial \log Z}{\partial \beta}.
+</math>
+
+Substituting the formula for ''Z'' gives the final result<ref name="huang_1987" />
+
+:<math>
+\langle H \rangle = h\nu \frac{e^{-\beta h\nu}}{1 - e^{-\beta h\nu}}.
+</math>
+
+At high temperatures, when the thermal energy ''k''<sub>B</sub>''T'' is much greater than the spacing ''hν'' between energy levels, the exponential argument ''βhν'' is much less than one and the average energy becomes ''k''<sub>B</sub>''T'', in agreement with the equipartition theorem (Figure 10). However, at low temperatures, when ''hν''&nbsp;>> ''k''<sub>B</sub>''T'', the average energy goes to zero—the higher-frequency energy levels are "frozen out" (Figure 10). As another example, the internal excited electronic states of a hydrogen atom do not contribute to its specific heat as a gas at room temperature, since the thermal energy ''k''<sub>B</sub>''T'' (roughly 0.025&nbsp;[[electronvolt|eV]]) is much smaller than the spacing between the lowest and next higher electronic energy levels (roughly 10&nbsp;eV).
+
+Similar considerations apply whenever the energy level spacing is much larger than the thermal energy. This reasoning was used by [[Max Planck]] and [[Albert Einstein]], among others, to resolve the [[ultraviolet catastrophe]] of [[blackbody radiation]].<ref name="Einstein1905">{{cite journal | last = Einstein | first = A | author-link = Albert Einstein | year = 1905 | title = Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt (A Heuristic Model of the Creation and Transformation of Light) | journal = [[Annalen der Physik]] | volume = 17 | issue = 6 | pages = 132&ndash;148 | url = http://gallica.bnf.fr/ark:/12148/bpt6k2094597 | doi = 10.1002/andp.19053220607|bibcode = 1905AnP...322..132E |language=de}}. An [[s:A Heuristic Model of the Creation and Transformation of Light|English translation]] is available from [[Wikisource]].</ref> The paradox arises because there are an infinite number of independent modes of the [[electromagnetic field]] in a closed container, each of which may be treated as a harmonic oscillator. If each electromagnetic mode were to have an average energy ''k''<sub>B</sub>''T'', there would be an infinite amount of energy in the container.<ref name="Einstein1905" /><ref>{{cite journal | last = Rayleigh | first = JWS | author-link = John Strutt, 3rd Baron Rayleigh | year = 1900 | title = Remarks upon the Law of Complete Radiation | journal = [[Philosophical Magazine]] | volume = 49 | pages = 539–540 | doi=10.1080/14786440009463878| url = https://zenodo.org/record/1430616 }}</ref> However, by the reasoning above, the average energy in the higher-frequency modes goes to zero as ''ν'' goes to infinity; moreover, [[Planck's law of black body radiation]], which describes the experimental distribution of energy in the modes, follows from the same reasoning.<ref name="Einstein1905" />
+
+Other, more subtle quantum effects can lead to corrections to equipartition, such as [[identical particles]] and [[symmetry|continuous symmetries]]. The effects of identical particles can be dominant at very high densities and low temperatures. For example, the [[valence electron]]s in a metal can have a mean kinetic energy of a few [[electronvolt]]s, which would normally correspond to a temperature of tens of thousands of kelvins. Such a state, in which the density is high enough that the [[Pauli exclusion principle]] invalidates the classical approach, is called a [[degenerate matter|degenerate fermion gas]]. Such gases are important for the structure of [[white dwarf]] and [[neutron star]]s.{{citation needed|date=March 2018}} At low temperatures, a [[fermionic condensate|fermionic analogue]] of the [[Bose–Einstein condensate]] (in which a large number of identical particles occupy the lowest-energy state) can form; such [[superfluid]] electrons are responsible{{dubious|date=May 2018}} for [[superconductivity]].
+
+==See also==
+* [[Kinetic theory of gases|Kinetic theory]]
+* [[Quantum statistical mechanics]]
+
+==Notes and references==
+{{reflist|colwidth=30em}}
+
+==Further reading==
+* {{cite book | last = Huang | first = K | author-link = Kerson Huang | year = 1987 | title = Statistical Mechanics | edition = 2nd | publisher = John Wiley and Sons | pages = 136–138 | isbn = 0-471-81518-7}}
+* {{cite book | last = Khinchin | first = AI | author-link = Aleksandr Khinchin | year = 1949 | title = Mathematical Foundations of Statistical Mechanics (G. Gamow, translator) | publisher = Dover Publications | location = New York | pages = 93–98 | isbn = 0-486-63896-0| title-link = George Gamow }}
+* {{cite book | last = Landau | first = LD | author-link = Lev Landau |author2=Lifshitz EM |author-link2=Evgeny Lifshitz  | year = 1980 | title = Statistical Physics, Part 1 | edition = 3rd | publisher = Pergamon Press | pages = 129–132 | isbn = 0-08-023039-3}}
+* {{cite book | last = Mandl | first = F | year = 1971 | title = Statistical Physics | publisher = John Wiley and Sons | pages = [https://archive.org/details/statisticalphysi00fman/page/213 213–219] | isbn = 0-471-56658-6 | url = https://archive.org/details/statisticalphysi00fman/page/213 }}
+* {{cite book | last = Mohling | first = F | year = 1982 | title = Statistical Mechanics: Methods and Applications | publisher = John Wiley and Sons | pages = 137–139, 270–273, 280, 285–292 | isbn = 0-470-27340-2}}
+* {{cite book | last = Pathria | first = RK | author-link = Raj Pathria |year = 1972 | title = Statistical Mechanics | publisher = Pergamon Press | pages = 43–48, 73–74 | isbn = 0-08-016747-0}}
+* {{cite book | last = Pauli | first = W | author-link = Wolfgang Pauli | year = 1973 | title = Pauli Lectures on Physics: Volume 4. Statistical Mechanics | publisher = MIT Press | pages = 27–40 | isbn = 0-262-16049-8}}
+* {{cite book | last = Tolman | first = RC | author-link = Richard C. Tolman | year = 1927 | title = Statistical Mechanics, with Applications to Physics and Chemistry | url = https://archive.org/details/statisticalmecha00tolm | publisher = Chemical Catalog Company | pages = [https://archive.org/details/statisticalmecha00tolm/page/72 72–81]}} ASIN B00085D6OO
+* {{cite book | last = Tolman | first = RC | author-link = Richard C. Tolman | year = 1938 | title = The Principles of Statistical Mechanics | publisher = Dover Publications | location = New York | pages = 93–98 | isbn = 0-486-63896-0}}
+
+==External links==
+* [http://webphysics.davidson.edu/physlet_resources/thermo_paper/thermo/examples/ex20_4.html Applet demonstrating equipartition in real time for a mixture of monatomic and diatomic gases]
+* [http://www.sciencebits.com/StellarEquipartition The equipartition theorem in stellar physics], written by Nir J. Shaviv, an associate professor at [[the Racah Institute of Physics]] in the [[Hebrew University of Jerusalem]].
+
+[[Category:Concepts in physics]]
+[[Category:Laws of thermodynamics]]
+[[Category:Statistical mechanics theorems]]

@@ -1,0 +1,20 @@
+{{Unreferenced|date=February 2010}}
+'''Alternate-Phase Return-to-Zero''' ('''APRZ''') is an optical [[line code]].
+
+In APRZ the [[field intensity]] drops to zero between consecutive bits, and the [[Field (physics)|field]] [[Phase (waves)|phase]] alternates between neighbouring bits, so that if the phase of the signal is, for example, 0 in even bits (bit number 2''n''), the phase in odd bit slots (bit number 2''n''+1) will be ''ΔΦ'', the phase alternation amplitude.
+
+==Special cases==
+[[Return-to-zero]] can be seen as a special case of APRZ in which ''ΔΦ''=0, while [[Carrier-Suppressed Return-to-Zero]] (CSRZ) can be viewed as a special case of APRZ in which ''ΔΦ''=π (and the [[duty cycle]] is 67%, at least in the standard form of CSRZ).
+
+APRZ can be used to generate specific optical modulation formats, for example, APRZ-[[On–off keying|OOK]], in which data is coded on the intensity of the signal using a binary scheme (light on=1, light off=0). APRZ is often used to designate APRZ-OOK.
+
+==Characteristics==
+The characteristic properties of an APRZ signal are those to have a spectrum similar to that of an RZ signal, except that frequency peaks at a spacing of ''B<sub>R</sub>''/2 as opposed to ''B<sub>R</sub>'' are observed (where ''B<sub>R</sub>'' is the [[bit rate]]).
+
+{{DEFAULTSORT:Alternate-Phase Return-To-Zero}}
+[[Category:Line codes]]
+[[Category:Fiber-optic communications]]
+
+
+{{Physics-stub}}
+{{Telecom-stub}}

@@ -1,0 +1,227 @@
+[[File:Convection-snapshot.png|thumb|400px|right|This figure shows a calculation for thermal convection in the [[Mantle (geology)|Earth's mantle]]. Colors closer to red are hot areas and colors closer to blue are in warm and cold areas. A hot, less-dense lower boundary layer sends plumes of hot material upwards, and likewise, cold material from the top moves downwards.]]
+'''Convection''' is the transfer of heat due to the bulk movement of [[molecule]]s within [[fluid]]s ([[gas]]es and [[liquid]]s), including molten rock ([[rheid]]). Convection includes sub-mechanisms of [[advection]] (directional bulk-flow transfer of heat), and [[diffusion]] (non-directional transfer of energy or mass particles along a concentration gradient).
+[[File:Ghillie Kettle Thermal.jpg|thumb|Thermal image of a newly lit [[Kelly Kettle|Ghillie kettle]]. The plume of hot air resulting from the convection current is visible.]]
+Convection cannot take place in most solids because neither bulk current flows nor significant diffusion of matter can take place. Diffusion of heat takes place in rigid solids, but that is called [[Thermal conduction|heat conduction]]. Convection, additionally may take place in soft solids or mixtures where solid particles can move past each other.
+
+Thermal convection can be demonstrated by placing a heat source (e.g. a [[Bunsen burner]]) at the side of a glass filled with a liquid, and observing the changes in temperature in the glass caused by the warmer fluid circulating into cooler areas.
+
+[[Convective heat transfer]] is one of the major types of [[heat transfer]], and convection is also a major mode of [[mass transfer]] in fluids. Convective heat and mass transfer takes place both by [[diffusion]] – the random [[Brownian motion]] of individual particles in the fluid – and by [[advection]], in which matter or heat is transported by the larger-scale motion of currents in the fluid. In the context of heat and mass transfer, the term "convection" is used to refer to the combined effects of [[wikt: advective|advective]] and diffusive transfer.<ref name="Interop">{{cite book
+  | first1 = Frank P. | last1 = Incropera
+  | author-link = Frank P. Incropera
+  | first2 = David P. | last2 = DeWitt 
+  | title = Fundamentals of Heat and Mass Transfer
+  | url = https://archive.org/details/fundamentalsofhe00incr | url-access = registration | edition = 3rd
+  | publisher = John Wiley & Sons
+  | year = 1990
+  | page = [https://archive.org/details/fundamentalsofhe00incr/page/28 28]
+  | isbn = 978-0-471-51729-0 }} See Table 1.5</ref> Sometimes the term "convection" is used to refer specifically to "[[free convection|free heat convection]]" (natural heat convection) where bulk-flow in a fluid is due to temperature-induced differences in buoyancy, as opposed to "forced heat convection" where forces other than buoyancy (such as pump or fan) move the fluid. However, in mechanics, the correct use of the word "convection" is the more general sense, and different types of convection should be further qualified, for clarity.
+
+Convection can be qualified in terms of being natural, forced, gravitational, granular, or [[thermomagnetic convection|thermomagnetic]]. It may also be said to be due to [[combustion]], [[capillary action]], or [[Marangoni effect|Marangoni]] and [[Weissenberg effect]]s. Heat transfer by natural convection plays a role in the structure of [[Earth's atmosphere]], its oceans, and its mantle. Discrete convective cells in the atmosphere can be seen as clouds, with stronger convection resulting in [[thunderstorm]]s. Natural convection also plays a role in stellar physics.
+
+The convection mechanism is also used in [[cooking]], when using a [[convection oven]], which uses fans to circulate hot air around food in order to cook the food faster than a conventional oven.
+
+==Terminology==
+The word ''convection'' may have slightly different but related usages in different scientific or engineering contexts or applications. The broader sense is in [[fluid mechanics]], where ''convection'' refers to the motion of fluid regardless of cause.<ref>{{cite book| title=Fundamentals of Fluid Mechanics| first= Bruce R. |last=Munson |isbn= 978-0-471-85526-2 |publisher = [[John Wiley & Sons]]| year= 1990 }}</ref><ref>{{cite book|last=Falkovich|first=G.|title=Fluid Mechanics, a short course for physicists|url=http://www.weizmann.ac.il/complex/falkovich/fluid-mechanics|publisher=Cambridge University Press|year=2011|isbn=978-1-107-00575-4|url-status=live|archive-url=https://web.archive.org/web/20120120034443/http://www.weizmann.ac.il/complex/falkovich/fluid-mechanics|archive-date=2012-01-20}}</ref> However, in [[thermodynamics]] "convection" often refers specifically to heat transfer by convection.<ref>{{cite book|title=Thermodynamics:An Engineering Approach|first1= Yunus A. |last1=Çengel |first2= Michael A. |last2 = Boles |isbn=978-0-07-121688-3 |publisher =[[McGraw-Hill Education]]}}</ref>
+
+==Examples and applications==
+Convection occurs on a large scale in [[Earth atmosphere|atmosphere]]s, oceans, [[planet]]ary [[Mantle (geology)|mantle]]s, and it provides the mechanism of heat transfer for a large fraction of the outermost interiors of our sun and all stars. Fluid movement during convection may be invisibly slow, or it may be obvious and rapid, as in a [[hurricane]]. On astronomical scales, convection of gas and dust is thought to occur in the accretion disks of [[black hole]]s, at speeds which may closely approach that of light.
+
+===Heat transfer===
+{{Main|Convective heat transfer}}
+[[File:Radiator FxJ v2.JPG|thumb|200px|left|A [[heat sink]] provides a large surface area for conduction to efficiently carry away heat.]]
+
+'''Convective heat transfer''' is a mechanism of [[heat transfer]] occurring because of bulk motion (observable movement) of fluids.<ref>{{cite book |first= Yunus A. |last=Çengel | date = 2003 | title = Heat transfer-A Practical Approach | edition = 2nd | publisher = McGraw Hill Professional | page = 26 | isbn = 978-0-07-245893-0 }}</ref> [[Heat]] is the entity of interest being advected (carried), and diffused (dispersed). This can be contrasted with [[Heat conduction|conductive]] heat transfer, which is the transfer of energy by vibrations at a molecular level through a solid or fluid, and [[radiative heat transfer]], the transfer of energy through [[electromagnetic waves]].
+
+Heat is transferred by convection in numerous examples of naturally occurring fluid flow, such as wind, oceanic currents, and movements within the Earth's mantle. Convection is also used in engineering practices of homes, industrial processes, cooling of equipment, etc.
+
+The rate of convective heat transfer may be improved by the use of a [[heat sink]]{{citation needed|date=August 2020|reason=Heat sinks improve conductive heat transfer, not convective. Fans do the convection part.}}, often in conjunction with a fan. For instance, a typical computer [[CPU]] will have a purpose-made [[CPU fan|fan]] to ensure its [[operating temperature]] is kept within tolerable limits.
+{{clear}}
+
+===Convection cells===
+{{main|Convection cell}}
+[[File:ConvectionCells.svg|thumb|right|300px|Convection cells in a gravity field]]
+
+A '''convection cell''', also known as a '''[[Bénard cell]]''', is a characteristic fluid flow pattern in many convection systems. A rising body of fluid typically loses heat because it encounters a colder surface. In liquid, this occurs because it exchanges heat with colder liquid through direct exchange. In the example of the Earth's atmosphere, this occurs because it radiates heat. Because of this heat loss the fluid becomes denser than the fluid underneath it, which is still rising. Since it cannot descend through the rising fluid, it moves to one side. At some distance, its downward force overcomes the rising force beneath it, and the fluid begins to descend. As it descends, it warms again and the cycle repeats itself.
+
+===Atmospheric convection===
+{{main|Atmospheric convection}}
+
+====Atmospheric circulation====
+{{main|Atmospheric circulation}}
+[[File:Earth Global Circulation.jpg|thumb|300px|left|Idealised depiction of the global circulation on Earth]]
+
+'''Atmospheric circulation''' is the large-scale movement of air, and is a means by which thermal energy is distributed on the surface of the Earth, together with the much slower (lagged) ocean circulation system. The large-scale structure of the atmospheric circulation varies from year to year, but the basic climatological structure remains fairly constant.
+
+Latitudinal circulation occurs because incident solar radiation per unit area is highest at the [[heat equator]], and decreases as the [[latitude]] increases, reaching minima at the poles. It consists of two primary convection cells, the [[Hadley cell]] and the [[polar vortex]], with the [[Hadley cell]] experiencing stronger convection due to the release of [[latent heat]] energy by [[condensation]] of [[water vapor]] at higher altitudes during cloud formation.
+
+Longitudinal circulation, on the other hand, comes about because the ocean has a higher specific heat capacity than land (and also thermal conductivity, allowing the heat to penetrate further beneath the surface ) and thereby absorbs and releases more heat, but the temperature changes less than land. This brings the sea breeze, air cooled by the water, ashore in the day, and carries the land breeze, air cooled by contact with the ground, out to sea during the night. Longitudinal circulation consists of two cells, the [[Walker circulation]] and [[El Niño-Southern Oscillation|El Niño / Southern Oscillation]].
+{{clear}}
+
+====Weather====
+{{see also|Cloud|Thunderstorm|Wind}}
+[[File:foehn1.svg|right|thumb|300px|How Foehn is produced]]
+
+Some more localized phenomena than global atmospheric movement are also due to convection, including wind and some of the [[hydrologic cycle]]. For example, a [[foehn wind]] is a down-slope wind which occurs on the downwind side of a mountain range. It results from the [[adiabatic]] warming of air which has dropped most of its moisture on windward slopes.<ref name="MT">{{cite web|first=Michael|last=Pidwirny|year=2008|url=http://www.physicalgeography.net/fundamentals/8e.html|title=CHAPTER 8: Introduction to the Hydrosphere (e). Cloud Formation Processes|publisher=Physical Geography|access-date=2009-01-01|url-status=dead|archive-url=https://web.archive.org/web/20081220230524/http://www.physicalgeography.net/fundamentals/8e.html|archive-date=2008-12-20}}</ref> Because of the different adiabatic lapse rates of moist and dry air, the air on the leeward slopes becomes warmer than at the same height on the windward slopes.
+
+A [[thermal column]] (or thermal) is a vertical section of rising air in the lower altitudes of the Earth's atmosphere. Thermals are created by the uneven heating of the Earth's surface from solar radiation. The Sun warms the ground, which in turn warms the air directly above it. The warmer air expands, becoming less dense than the surrounding air mass, and creating a [[thermal low]].<ref>{{cite web|agency=National Weather Service Forecast Office in [[Tucson, Arizona]]|year=2008|url=http://www.wrh.noaa.gov/twc/monsoon/monsoon_whatis.php|title=What is a monsoon?|publisher=National Weather Service Western Region Headquarters|access-date=2009-03-08|url-status=live|archive-url=https://web.archive.org/web/20120623140647/http://www.wrh.noaa.gov/twc/monsoon/monsoon_whatis.php|archive-date=2012-06-23}}</ref><ref>{{cite journal|first1 = Douglas G. | last1 = Hahn | author2-link = Syukuro Manabe | first2 = Syukuro | last2 = Manabe |year=1975|bibcode=1975JAtS...32.1515H|title=The Role of Mountains in the South Asian Monsoon Circulation|journal=[[Journal of the Atmospheric Sciences]]|volume=32|issue=8|pages=1515–1541|doi=10.1175/1520-0469(1975)032<1515:TROMIT>2.0.CO;2|issn=1520-0469|doi-access=free}}</ref> The mass of lighter air rises, and as it does, it cools by expansion at lower air pressures. It stops rising when it has cooled to the same temperature as the surrounding air. Associated with a thermal is a downward flow surrounding the thermal column. The downward moving exterior is caused by colder air being displaced at the top of the thermal. Another convection-driven weather effect is the [[sea breeze]].<ref>University of Wisconsin. [http://cimss.ssec.wisc.edu/wxwise/seabrz.html Sea and Land Breezes.] {{webarchive|url=https://web.archive.org/web/20120704184333/http://cimss.ssec.wisc.edu/wxwise/seabrz.html |date=2012-07-04 }} Retrieved on 2006-10-24.</ref><ref name="Jet">JetStream:  An Online School For Weather (2008). [http://www.srh.weather.gov/srh/jetstream/ocean/seabreezes.htm The Sea Breeze.] {{webarchive|url=https://web.archive.org/web/20060923233344/http://www.srh.weather.gov/srh/jetstream/ocean/seabreezes.htm |date=2006-09-23 }} [[National Weather Service]]. Retrieved on 2006-10-24.</ref>
+
+[[File:Thunderstorm formation.jpg|thumb|500px|Stages of a thunderstorm's life.]]
+Warm air has a lower density than cool air, so warm air rises within cooler air,<ref>{{cite book|url=https://books.google.com/books?id=PDtIAAAAIAAJ&pg=PA462 |title=Civil engineers' pocket book: a reference-book for engineers, contractors|first = Albert Irvin | last = Frye|page=462|publisher=D. Van Nostrand Company|year=1913|access-date=2009-08-31}}</ref> similar to [[hot air balloon]]s.<ref>{{cite book
+| url = https://books.google.com/books?id=ssO_19TRQ9AC&q=Kongming+balloon&pg=PA112
+| title = Ancient Chinese Inventions
+| first = Yikne | last = Deng
+| publisher = Chinese International Press
+| isbn=978-7-5085-0837-5
+| year=2005
+| pages = 112–13
+| access-date = 2009-06-18}}</ref>  Clouds form as relatively warmer air carrying moisture rises within cooler air. As the moist air rises, it cools, causing some of the [[water vapor]] in the rising packet of air to [[condensation|condense]].<ref>{{cite web|agency=FMI|year=2007|url=http://www.zamg.ac.at/docu/Manual/SatManu/main.htm?/docu/Manual/SatManu/CMs/FgStr/backgr.htm|title=Fog And Stratus – Meteorological Physical Background|publisher=Zentralanstalt für Meteorologie und Geodynamik|access-date=2009-02-07|url-status=live|archive-url=https://web.archive.org/web/20110706085616/http://www.zamg.ac.at/docu/Manual/SatManu/main.htm?%2Fdocu%2FManual%2FSatManu%2FCMs%2FFgStr%2Fbackgr.htm|archive-date=2011-07-06}}</ref>  When the moisture condenses, it releases energy known as [[latent heat]] of condensation which allows the rising packet of air to cool less than its surrounding air,<ref>{{cite book|url=https://books.google.com/books?id=RRSzR4NQdGkC&pg=PA20 |title=Storm world: hurricanes, politics, and the battle over global warming| first = Chris C. | last = Mooney|page=20|isbn=978-0-15-101287-9|publisher=Houghton Mifflin Harcourt|year=2007|access-date=2009-08-31}}</ref> continuing the cloud's ascension. If enough [[Convective available potential energy|instability]] is present in the atmosphere, this process will continue long enough for [[Cumulonimbus|cumulonimbus clouds]] to form, which support lightning and thunder. Generally, thunderstorms require three conditions to form: moisture, an unstable airmass, and a lifting force (heat).
+
+All [[thunderstorm]]s, regardless of type, go through three stages: the '''developing stage''', the '''mature stage''', and the '''dissipation stage'''.<ref name="Extreme Weather">{{cite book |title=Extreme Weather |first=Michael H. |last=Mogil |year=2007 |publisher=Black Dog & Leventhal Publisher |location=New York |isbn=978-1-57912-743-5 |pages=[https://archive.org/details/extremeweatherun0000mogi/page/210 210–211] |url=https://archive.org/details/extremeweatherun0000mogi/page/210 }}</ref> The average thunderstorm has a {{convert|24|km|mi|abbr=on}} diameter. Depending on the conditions present in the atmosphere, these three stages take an average of 30 minutes to go through.<ref name="tsbasics">{{cite web|url=http://www.nssl.noaa.gov/primer/tstorm/tst_basics.html|title=A Severe Weather Primer: Questions and Answers about Thunderstorms|agency=National Severe Storms Laboratory|publisher=[[National Oceanic and Atmospheric Administration]]|date=2006-10-15|access-date=2009-09-01|url-status=dead|archive-url=https://web.archive.org/web/20090825000832/http://www.nssl.noaa.gov/primer/tstorm/tst_basics.html|archive-date=2009-08-25}}</ref>
+
+===Oceanic circulation===
+{{Main|Gulf Stream|Thermohaline circulation}}
+[[File:Conveyor belt.svg|Ocean currents|thumb|200px|right]]
+
+Solar radiation affects the oceans: warm water from the Equator tends to circulate toward the [[geographical pole|pole]]s, while cold polar water heads towards the Equator.  The surface currents are initially dictated by surface wind conditions.  The [[trade winds]] blow westward in the tropics,<ref>{{cite web |title=trade winds |work=Glossary of Meteorology |publisher=American Meteorological Society |year=2009 |access-date=2008-09-08 |url=http://amsglossary.allenpress.com/glossary/search?id=trade-winds1 |url-status=dead |archive-url=https://web.archive.org/web/20081211050708/http://amsglossary.allenpress.com/glossary/search?id=trade-winds1 |archive-date=2008-12-11 }}</ref> and the [[westerlies]] blow eastward at mid-latitudes.<ref>Glossary of Meteorology (2009). [http://amsglossary.allenpress.com/glossary/search?id=westerlies1 Westerlies.] {{webarchive|url=https://web.archive.org/web/20100622073904/http://amsglossary.allenpress.com/glossary/search?id=westerlies1 |date=2010-06-22 }} [[American Meteorological Society]]. Retrieved on 2009-04-15.</ref>  This wind pattern applies a [[stress (physics)|stress]] to the subtropical ocean surface with negative [[curl (mathematics)|curl]] across the [[Northern Hemisphere]],<ref>Matthias Tomczak and J. Stuart Godfrey (2001). [http://www.es.flinders.edu.au/~mattom/regoc/pdffiles/colour/double/04P-Ekman-left.pdf Regional Oceanography: an Introduction.] {{webarchive|url=https://web.archive.org/web/20090914120630/http://www.es.flinders.edu.au/~mattom/regoc/pdffiles/colour/double/04P-Ekman-left.pdf |date=2009-09-14 }} Matthias Tomczak, pp. 42. {{ISBN|81-7035-306-8}}. Retrieved on 2009-05-06.</ref> and the reverse across the [[Southern Hemisphere]].  The resulting [[Sverdrup transport]] is equatorward.<ref>Earthguide (2007). [http://earthguide.ucsd.edu/parkerprogram/berger/pdf/OcnBasLesson06.pdf Lesson 6: Unraveling the Gulf Stream Puzzle - On a Warm Current Running North.] {{webarchive|url=https://web.archive.org/web/20080723104316/http://earthguide.ucsd.edu/parkerprogram/berger/pdf/OcnBasLesson06.pdf |date=2008-07-23 }} [[University of California]] at San Diego. Retrieved on 2009-05-06.</ref>  Because of conservation of [[potential vorticity]] caused by the poleward-moving winds on the [[subtropical ridge]]'s western periphery and the increased relative vorticity of poleward moving water, transport is balanced by a narrow, accelerating poleward current, which flows along the western boundary of the ocean basin, outweighing the effects of friction with the cold western boundary current which originates from high latitudes.<ref>Angela Colling (2001). [https://books.google.com/books?id=tFJRLhSez_YC&pg=PA90 Ocean circulation.] {{webarchive|url=https://web.archive.org/web/20180302144439/https://books.google.com/books?id=tFJRLhSez_YC&pg=PA90 |date=2018-03-02 }} Butterworth-Heinemann, pp. 96. Retrieved on 2009-05-07.</ref>  The overall process, known as western intensification, causes currents on the western boundary of an ocean basin to be stronger than those on the eastern boundary.<ref>National Environmental Satellite, Data, and Information Service (2009). [http://www.science-house.org/nesdis/gulf/background.html Investigating the Gulf Stream.] {{webarchive|url=https://web.archive.org/web/20100503013457/http://www.science-house.org/nesdis/gulf/background.html |date=2010-05-03 }} [[North Carolina State University]]. Retrieved on 2009-05-06.</ref>
+
+As it travels poleward, warm water transported by strong warm water current undergoes evaporative cooling. The cooling is wind driven: wind moving over water cools the water and also causes [[evaporation]], leaving a saltier brine. In this process, the water becomes saltier and denser. and decreases in temperature.  Once sea ice forms, salts are left out of the ice, a process known as brine exclusion.<ref>{{cite web |last=Russel |first=Randy |title=Thermohaline Ocean Circulation |url=http://www.windows.ucar.edu/tour/link=/earth/Water/thermohaline_ocean_circulation.html |publisher=University Corporation for Atmospheric Research |access-date=2009-01-06 |url-status=live |archive-url=https://web.archive.org/web/20090325062339/http://www.windows.ucar.edu/tour/link=/earth/Water/thermohaline_ocean_circulation.html |archive-date=2009-03-25 }}</ref>  These two processes produce water that is denser and colder.  The water across the northern [[Atlantic ocean]] becomes so dense that it begins to sink down through less salty and less dense water. (The convective action is not unlike that of a [[lava lamp]].) This downdraft of heavy, cold and dense water becomes a part of the [[North Atlantic Deep Water]], a southgoing stream.<ref>{{cite web |last=Behl |first=R. |title=Atlantic Ocean water masses |url=http://seis.natsci.csulb.edu/rbehl/NADW.htm |publisher=[[California State University]] Long Beach |access-date=2009-01-06|archive-url = https://web.archive.org/web/20080523170145/http://seis.natsci.csulb.edu/rbehl/NADW.htm |archive-date = May 23, 2008|url-status=dead}}</ref>
+{{clear}}
+
+===Mantle convection===
+{{main|Mantle convection}}
+[[File:Accretion-Subduction.PNG|thumb|right|250px|An [[oceanic plate]] is added to by upwelling (left) and consumed at a [[subduction]] zone (right).]]
+
+'''Mantle convection''' is the slow creeping motion of Earth's rocky mantle caused by convection currents carrying heat from the interior of the earth to the surface.<ref name="University of Winnipeg">{{cite web | date = 2002-12-16 | last1 = Kobes | first1 = Randy | first2 = Gabor | last2 = Kunstatter | url = http://theory.uwinnipeg.ca/mod_tech/node195.html | title = Mantle Convection | publisher = Physics Department, University of Winnipeg | access-date = 2010-01-03 | url-status = dead | archive-url = https://web.archive.org/web/20110114151750/http://theory.uwinnipeg.ca/mod_tech/node195.html | archive-date = 2011-01-14 }}</ref> It is one of 3 driving forces that causes tectonic plates to move around the Earth's surface.<ref name=Condie>{{cite book |title=Plate tectonics and crustal evolution |first=Kent C. |last=Condie |url=https://books.google.com/books?id=HZrA6OQzsvgC&pg=PA5 |page=5 |isbn=978-0-7506-3386-4 |year=1997 |edition=4th |publisher=Butterworth-Heinemann |url-status=live |archive-url=https://web.archive.org/web/20131029161501/http://books.google.com/books?id=HZrA6OQzsvgC&pg=PA5 |archive-date=2013-10-29 }}</ref>
+
+The Earth's surface is divided into a number of [[tectonic]] plates that are continuously being created and consumed at their opposite plate boundaries. Creation ([[Accretion (geology)|accretion]]) occurs as mantle is added to the growing edges of a plate. This hot added material cools down by conduction and convection of heat. At the consumption edges of the plate, the material has thermally contracted to become dense, and it sinks under its own weight in the process of subduction at an ocean trench. This subducted material sinks to some depth in the Earth's interior where it is prohibited from sinking further. The subducted oceanic crust triggers volcanism.
+{{clear}}
+
+===Stack effect===
+{{Main|Stack effect}}
+The '''Stack effect''' or '''chimney effect''' is the movement of air into and out of buildings, chimneys, flue gas stacks, or other containers due to buoyancy. Buoyancy occurs due to a difference in indoor-to-outdoor air density resulting from temperature and moisture differences. The greater the thermal difference and the height of the structure, the greater the buoyancy force, and thus the stack effect. The stack effect helps drive natural ventilation and infiltration. Some [[cooling tower]]s operate on this principle; similarly the [[solar updraft tower]] is a proposed device to generate electricity based on the stack effect.
+
+===Stellar physics===
+{{main|Convection zone|granule (solar physics)}}
+[[File:Structure of Stars (artist’s impression).jpg|thumb|right|300px|An illustration of the structure of the [[Sun]] and a [[red giant]] star, showing their convective zones. These are the granular zones in the outer layers of these stars.]]
+[[File:Granules2-Cropped-Photospheric-Granulation-G.Scharmer-Swedish-Vacuum-Solar-Telescope-10-July-1997.jpg|thumb|left|200px|Granules—the tops or upper visible sizes of convection cells, seen on the photosphere of the Sun. These are caused by the convection in the upper photosphere of the Sun. North America is superimposed to indicate scale.]]
+
+The convection zone of a star is the range of radii in which energy is transported primarily by convection.
+
+Granules on the [[photosphere]] of the Sun are the visible tops of convection cells in the photosphere, caused by convection of [[plasma (physics)|plasma]] in the photosphere. The rising part of the granules is located in the center where the plasma is hotter. The outer edge of the granules is darker due to the cooler descending plasma. A typical granule has a diameter on the order of 1,000 kilometers and each lasts 8 to 20 minutes before dissipating. Below the photosphere is a layer of much larger "supergranules" up to 30,000 kilometers in diameter, with lifespans of up to 24 hours.
+{{clear}}
+
+===Cooking=== 
+{{main|Convection oven}} 
+A convection oven is an [[oven]] that has fans to circulate air around food, using the convection mechanism to cook food faster than a conventional oven.<ref>{{cite web|url=http://www.merriam-webster.com/dictionary/convection+oven|title=Definition of CONVECTION OVEN|website=www.merriam-webster.com}}</ref> Convection ovens distribute heat evenly around the food, removing the blanket of cooler air that surrounds food when it is first placed in an oven and allowing food to cook more evenly in less time and at a lower temperature than in a conventional oven.<ref>Ojakangas, Beatrice. ''Cooking with Convection" Everything You Need to Know to Get the Most from Your Convection Oven'', 2009.</ref> A convection oven has a fan with a [[heating element]] around it. A small fan circulates the air in the cooking chamber.<ref>http://www.smeg.com/faq/ovens/what-s-the-difference-between-fan-and-fan-assisted-ovens/ {{Webarchive|url=https://web.archive.org/web/20130507034832/http://www.smeg.com/faq/ovens/what-s-the-difference-between-fan-and-fan-assisted-ovens/ |date=2013-05-07 }} What's the difference between fan and convection ovens? Retrieved on 20 July 2013</ref><ref>http://service.hoover.co.uk/advice-centre/built-in-appliances/ovens/troubleshooting/ Ovens Advice Centre Retrieved on 20 July 2013</ref>
+
+==Mechanisms==
+Convection may happen in [[fluids]] at all scales larger than a few atoms. There are a variety of circumstances in which the forces required for natural and forced convection arise, leading to different types of convection, described below. In broad terms, convection arises because of [[body force]]s acting within the fluid, such as gravity.
+
+The causes of convection are generally described as one of either "natural" ("free") or "forced", although other mechanisms also exist (discussed below).  However, the distinction between natural and forced convection is particularly important for [[convective heat transfer]].
+
+===Natural convection===
+{{main|Natural convection}}
+[[File:Thermal-plume-from-human-hand.jpg|thumb|This color [[schlieren]] image reveals [[thermal convection]] originating from heat conduction from a human hand (in silhouette) to the surrounding still atmosphere.]]
+
+'''Natural convection''', or '''free convection''', occurs due to temperature differences which affect the density, and thus relative buoyancy, of the fluid. Heavier (denser) components will fall, while lighter (less dense) components rise, leading to bulk fluid movement.  Natural convection can only occur, therefore, in a gravitational field. A common example of natural convection is the rise of smoke from a fire. It can be seen in a pot of boiling water in which the hot and less-dense water on the bottom layer moves upwards in plumes, and the cool and more dense water near the top of the pot likewise sinks.
+
+Natural convection will be more likely and more rapid with a greater variation in density between the two fluids, a larger acceleration due to gravity that drives the convection or a larger distance through the convecting medium. Natural convection will be less likely and less rapid with more rapid diffusion (thereby diffusing away the thermal gradient that is causing the convection) or a more viscous (sticky) fluid.
+
+The onset of natural convection can be determined by the [[Rayleigh number]] ('''Ra''').
+
+Note that differences in buoyancy within a fluid can arise for reasons other than temperature variations, in which case the fluid motion is called '''gravitational convection''' (see below). However, all types of buoyant convection, including natural convection, do not occur in [[microgravity]] environments. All require the presence of an environment which experiences [[g-force]] ([[proper acceleration]]).
+
+===Forced convection===
+{{main|Forced convection}}
+
+In '''forced convection''', also called '''heat advection''', fluid movement results from external [[surface forces]] such as a fan or pump. Forced convection is typically used to increase the rate of heat exchange. Many types of [[Mixing (process engineering)|mixing]] also utilize forced convection to distribute one substance within another. Forced convection also occurs as a by-product to other processes, such as the action of a propeller in a fluid or [[aerodynamic heating]]. Fluid radiator systems, and also heating and cooling of parts of the body by blood circulation, are other familiar examples of forced convection.
+
+Forced convection may happen by natural means, such as when the heat of a fire causes expansion of air and bulk air flow by this means. In microgravity, such flow (which happens in all directions) along with diffusion is the only means by which fires are able to draw in fresh oxygen to maintain themselves. The shock wave that transfers heat and mass out of explosions is also a type of forced convection.
+
+Although forced convection from thermal gas expansion in [[zero-g]] does not fuel a fire as well as natural convection in a gravity field, some types of artificial forced convection are far more efficient than free convection, as they are not limited by natural mechanisms. For instance, a [[convection oven]] works by forced convection, as a fan which rapidly circulates hot air forces heat into food faster than would naturally happen due to simple heating without the fan.
+
+===Gravitational or buoyant convection===
+'''Gravitational convection''' is a type of natural convection induced by buoyancy variations resulting from material properties other than temperature.  Typically this is caused by a variable composition of the fluid.  If the varying property is a concentration gradient, it is known as '''solutal convection'''.<ref>{{cite journal|citeseerx=10.1.1.15.8288 |title=Pattern Formation in Solutal Convection: Vermiculated Rolls and Isolated Cells |journal=Physica A: Statistical Mechanics and Its Applications |volume=314 |issue=1 |pages=291 |bibcode=2002PhyA..314..291C |last1=Cartwright |first1=Julyan H. E. |last2=Piro |first2=Oreste |last3=Villacampa |first3=Ana I. |year=2002 |doi=10.1016/S0378-4371(02)01080-4 }}</ref> For example, gravitational convection can be seen in the diffusion of a source of dry salt downward into wet soil due to the buoyancy of fresh water in saline.<ref>{{cite journal|last=Raats|first= P. A. C.  |year=1969 |title=Steady Gravitational Convection Induced by a Line Source of Salt in a Soil|journal = Soil Science Society of America Proceedings |volume = 33 |pages = 483–487 | doi=10.2136/sssaj1969.03615995003300040005x |issue=4|bibcode=1969SSASJ..33..483R}}</ref>
+
+Variable [[salinity]] in water and variable water content in air masses are frequent causes of convection in the oceans and atmosphere which do not involve heat, or else involve additional compositional density factors other than the density changes from thermal expansion (see ''[[thermohaline circulation]]''). Similarly, variable composition within the Earth's interior which has not yet achieved maximal stability and minimal energy (in other words, with densest parts deepest) continues to cause a fraction of the convection of fluid rock and molten metal within the Earth's interior (see below).
+
+Gravitational convection, like natural thermal convection, also requires a [[g-force]] environment in order to occur.
+
+===Granular convection===
+{{main|Granular convection}}
+
+Vibration-induced convection occurs in powders and granulated materials in containers subject to vibration where an axis of vibration is parallel to the force of gravity.  When the container accelerates upward, the bottom of the container pushes the entire contents upward. In contrast, when the container accelerates downward, the sides of the container push the adjacent material downward by friction, but the material more remote from the sides is less affected.  The net result is a slow circulation of particles downward at the sides, and upward in the middle.
+
+If the container contains particles of different sizes, the downward-moving region at the sides is often narrower than the largest particles. Thus, larger particles tend to become sorted to the top of such a mixture.  This is one possible explanation of the [[Brazil nut effect]].
+
+===Solid-state convection in ice===
+
+[[Sputnik Planitia#Convection cells|Ice convection on Pluto]] is believed to occur in a soft mixture of [[nitrogen ice]] and [[carbon monoxide]] ice.  It has also been proposed for [[Europa (moon)|Europa]],<ref>{{cite journal| doi=10.1016/j.icarus.2006.03.004 | bibcode=2006Icar..183..435M | volume=183 | issue=2 | title=On convection in ice I shells of outer Solar System bodies, with detailed application to Callisto | year=2006 | journal=Icarus | pages=435–450 | last1 = McKinnon | first1 = William B.}}</ref> and other bodies in the outer solar system.<ref>{{cite journal| doi=10.1016/j.icarus.2006.03.004 | bibcode=2006Icar..183..435M | volume=183 | issue=2 | title=On convection in ice I shells of outer Solar System bodies, with detailed application to Callisto | year=2006 | journal=Icarus | pages=435–450 | last1 = McKinnon | first1 = William B.}}</ref>
+
+===Thermomagnetic convection===
+{{main|Thermomagnetic convection}}
+'''Thermomagnetic convection''' can occur when an external magnetic field is imposed on a [[ferrofluid]] with varying [[magnetic susceptibility]].  In the presence of a temperature gradient this results in a nonuniform magnetic body force, which leads to fluid movement. A ferrofluid is a liquid which becomes strongly magnetized in the presence of a [[magnetic field]].
+
+This form of heat transfer can be useful for cases where conventional convection fails to provide adequate heat transfer, e.g., in miniature microscale devices or under reduced gravity conditions.
+
+===Capillary action===
+{{main|Capillary action}}
+
+'''Capillary action''' is a phenomenon where liquid spontaneously rises in a narrow space such as a thin tube, or in porous materials. This effect can cause liquids to flow against the force of gravity. It occurs because of inter-molecular attractive forces between the liquid and solid surrounding surfaces; If the diameter of the tube is sufficiently small, then the combination of surface tension and forces of adhesion between the liquid and container act to lift the liquid.
+
+===Marangoni effect===
+{{main|Marangoni effect}}
+The '''Marangoni effect''' is the convection of fluid along an interface between dissimilar substances because of variations in surface tension.  Surface tension can vary because of inhomogeneous composition of the substances or the temperature-dependence of surface tension forces. In the latter case the effect is known as '''thermo-capillary convection'''.
+
+A well-known phenomenon exhibiting this type of convection is the "[[tears of wine]]".
+
+===Weissenberg effect===
+{{Main|Weissenberg effect}}
+{{see also|Reptation}}
+The '''Weissenberg effect''' is a phenomenon that occurs when a spinning rod is placed into a solution of liquid [[polymer]].<ref>Gooch J.W. (2011) Weissenberg Effect. In: Gooch J.W. (eds) Encyclopedic Dictionary of Polymers. Springer, New York, NY. https://doi.org/10.1007/978-1-4419-6247-8_12775</ref> Entanglements cause the polymer chains to be drawn towards the rod instead of being thrown outward as would happen with an ordinary fluid (i.e., water).{{Citation needed|reason=This explanation does not match with the main article nor the referenced text in the main article|date=July 2017}}
+
+===Combustion===
+In a [[zero-gravity]] environment, there can be '''no'''  buoyancy forces, and thus no natural (free) convection possible, so flames in many circumstances without gravity smother in their own waste gases. However, flames may be maintained with any type of forced convection (breeze); or (in high oxygen environments in "still" gas environments) entirely from the minimal forced convection that occurs as heat-induced ''expansion'' (not buoyancy) of gases allows for ventilation of the flame, as waste gases move outward and cool, and fresh high-oxygen gas moves in to take up the low pressure zones created when flame-exhaust water condenses.<ref>[http://www.straightdope.com/classics/a3_360.html Does a candle burn in zero-g?] {{webarchive|url=https://web.archive.org/web/20080317151841/http://www.straightdope.com/classics/a3_360.html |date=2008-03-17 }}</ref>
+
+==Mathematical models of convection==
+Mathematically, convection can be described by the [[convection–diffusion equation]], also known as the [[generic scalar transport equation]].
+
+===Quantifying natural versus forced convection===
+In cases of mixed convection (natural and forced occurring together) one would often like to know how much of the convection is due to external constraints, such as the fluid velocity in the pump, and how much is due to natural convection occurring in the system.
+
+The relative magnitudes of the [[Grashof number]] and the square of the [[Reynolds number]] determine which form of convection dominates. If <math>\rm Gr/Re^2 \gg 1 </math>, forced convection may be neglected, whereas if <math>\rm Gr/Re^2 \ll 1 </math>, natural convection may be neglected. If the ratio, known as the [[Richardson number#Thermal convection|Richardson number]], is approximately one, then both forced and natural convection need to be taken into account.
+
+==See also==
+* [[Bénard cells]]
+* [[Convection oven]]
+* [[Churchill–Bernstein equation]]
+* [[Combined forced and natural convection]]
+* [[Double diffusive convection]]
+* [[Fluid dynamics]]
+* [[Heat transfer]]
+** [[Heat conduction]]
+** [[Thermal radiation]]
+* [[Radiation properties]]
+* [[Heat pipe]]
+* [[Laser-heated pedestal growth]]
+* [[Nusselt number]]
+* [[Thermomagnetic convection]]
+* [[Vortex tube]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category|Convection}}
+* [http://www.cheresources.com/convection.shtml Correlations for Convective Heat Transfer]
+* [http://energy.concord.org/energy2d/ Energy2D: Interactive Heat Transfer Simulations for Everyone]
+{{Meteorological variables}}
+{{HVAC}}
+
+{{Authority control}}
+
+[[Category:Convection| ]]
+[[Category:Concepts in physics]]
+[[Category:Fluid mechanics]]
+[[Category:Heat transfer|Convection]]
+[[Category:Stellar physics]]

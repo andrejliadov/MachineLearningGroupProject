@@ -1,0 +1,104 @@
+{{good article}}
+{{for|the physiological term|Compliance (physiology)}}
+'''Electrical elastance''' is the [[multiplicative inverse|inverse]] of [[capacitance]].  The [[SI]] unit of elastance is the inverse [[farad]] (F<sup>−1</sup>).  The concept is not widely used by electrical and electronic engineers.  The value of [[capacitor]]s is invariably specified in units of capacitance rather than inverse capacitance.  However, it is used in theoretical work in network analysis and has some niche applications at [[microwave]] frequencies.
+
+The term ''elastance'' was coined by [[Oliver Heaviside]] through the analogy of a capacitor as a spring. The term is also used for analogous quantities in some other energy domains.  It maps to [[stiffness]] in the mechanical domain, and is the inverse of [[Compliance (physiology)|compliance]] in the fluid flow domain, especially in [[physiology]].  It is also the name of the generalised quantity in [[bond-graph]] analysis and other schemes analysing systems across multiple domains.
+
+==Usage==
+The definition of capacitance (''C'') is the charge (''Q'') stored per unit voltage (''V'').
+
+:<math> C = {Q \over V} \ , </math>
+
+Elastance (''S'') is the [[multiplicative inverse|reciprocal]] of capacitance, thus,
+
+:<math> S = {V \over Q} \ . </math><ref>Camara, p.16–11</ref>
+
+Expressing the values of [[capacitor]]s as elastance is not done much by practical electrical engineers, although it is sometimes convenient for capacitors in series.  The total elastance is simply the sum of the individual elastances in that case.  However, it is used by network theorists in their analysis.  One advantage is that an increase in elastance increases [[electrical impedance|impedance]].  This is in the same direction as the other two basic passive [[Electrical element|elements]], [[Electrical resistance|resistance]] and [[inductance]].  An example of the use of elastance can be found in the 1926 doctoral thesis of [[Wilhelm Cauer]].  On his path to founding [[network synthesis]] he formed the [[mesh analysis|loop matrix]] '''A''',
+
+:<math>\mathbf{A}= s^2 \mathbf{L} + s \mathbf{R} + \mathbf{S} = s \mathbf{Z}</math>
+
+where '''L''', '''R''', '''S''' and '''Z''' are the network loop matrices of inductance, resistance, elastance and impedance respectively and ''s'' is [[complex frequency]].  This expression would be significantly more complicated if Cauer had tried to use a matrix of capacitances instead of elastances.  The use of elastance here is merely for mathematical convenience, in much the same way as mathematicians use [[radian]]s rather than the more common units for angles.<ref>Cauer, Mathis & Pauli, p.4<br/>The symbols in Cauer's expression have been modified for consistency within this article and with modern practice</ref>
+
+Elastance is also used in [[microwave engineering]].  In this field [[varactor diode]]s are used as a voltage variable capacitor in [[frequency multiplier]]s, [[parametric amplifier]]s and variable [[electronic filter|filters]].  These diodes store a charge in their [[p-n junction|junction]] when [[reverse bias]]ed which is the source of the capacitor effect.  The slope of the voltage-stored charge curve is called ''differential elastance'' in this field.<ref>Miles, Harrison & Lippens, pp.29–30</ref>
+
+==Units==
+The [[SI]] unit of elastance is the reciprocal [[farad]] (F<sup>−1</sup>). The term ''[[daraf]]'' is sometimes used for this unit, but it is not approved by SI and its use is discouraged.<ref>{{multiref|Michell, p.168|Mills, p.17}}</ref>  The term is formed by writing ''farad'' backwards, in much the same way as the unit ''[[mho]]'' (unit of conductance, also not approved by SI) is formed by writing ''[[ohm]]'' backwards.<ref>Klein, p.466</ref>
+
+The term ''daraf'' was coined by [[Arthur E. Kennelly]].  He used it from at least 1920.<ref>{{multiref|Kennelly & Kurokawa, p.41|Blake, p.29|Jerrard, p.33}}</ref>
+
+==History==
+The terms ''elastance'' and ''elastivity'' were coined by [[Oliver Heaviside]] in 1886.<ref>Howe, p.60</ref>  Heaviside coined a great many of the terms used in [[circuit analysis]] today, such as [[electrical impedance|impedance]], [[inductance]], [[admittance]], and [[electrical conductance|conductance]].  Heaviside's terminology followed the model of [[Electrical resistance|resistance]] and [[resistivity]] with the ''-ance'' ending used for [[extensive properties]] and the ''-ivity'' ending used for [[intensive properties]].  The extensive properties are used in circuit analysis (they are the "values" of components) and the intensive properties are used in [[field (physics)|field analysis]].  Heaviside's nomenclature was designed to highlight the connection between corresponding quantities in field and circuit.<ref>Yavetz, p.236</ref>  Elastivity is the intensive property of a material corresponding to the bulk property of a component, elastance.  It is the reciprocal of [[permittivity]].  As Heaviside put it,
+{{blockquote|Permittivity gives rise to permittance, and elastivity to elastance.<ref>Heaviside, p.28</ref>|Oliver Heaviside}}
+Here, ''permittance'' is Heaviside's term for capacitance.  He did not like any term that suggested that a [[capacitor]] was a container for holding charge.  He rejected the terms ''capacity'' (capacitance) and ''capacious'' (capacitive) and their inverses ''incapacity'' and ''incapacious''.<ref>Howe, p.60</ref>  The terms current in his time for a capacitor were ''condenser'' (suggesting that the "electric fluid" could be condensed out) and ''leyden''<ref>Heaviside, p.268</ref> after the [[Leyden jar]], an early form of capacitor, also suggesting some sort of storage.  Heaviside preferred the analogy of a mechanical spring under compression, hence his preference for terms that suggested a property of a spring.<ref>Yavetz, pp.150–151</ref>  This preference was a result of Heaviside following [[James Clerk Maxwell]]'s view of electric current, or at least, Heaviside's interpretation of it.  In this view, electric current is a flow caused by the [[electromotive force]] and is the analogue of [[velocity]] caused by a mechanical [[force]].  At the capacitor, this current causes a "[[displacement current|displacement]]" whose rate of change is equal to the current.  The displacement is viewed as an electric [[deformation (mechanics)#Strain|strain]], like a mechanical strain in a compressed spring.  The existence of a flow of physical charge is denied, as is the buildup of charge on the capacitor plates.  This is replaced with the concept of [[divergence]] of the displacement field at the plates, which is numerically equal to the charge collected on the plates in the charge flow view.<ref>Yavetz, pp.150–151</ref>
+
+For a period in the nineteenth and early-twentieth centuries, some authors followed Heaviside in the use of ''elastance'' and ''elastivity''.<ref>See, for instance, Peek, p.215, writing in 1915</ref>  Today, the reciprocal quantities ''capacitance'' and ''permittivity'' are almost universally preferred by electrical engineers.  However, elastance does still see some usage by theoretical writers.  A further consideration in Heaviside's choice of these terms was a wish to distinguish them from mechanical terms.  Thus, he chose ''elastivity'' rather than ''[[elasticity (physics)|elasticity]]''.  This avoids having to write ''electrical elasticity'' to disambiguate it from ''mechanical elasticity''.<ref>Howe, p.60</ref>
+
+Heaviside carefully chose his terms to be unique to [[electromagnetism]], most especially avoiding commonality with [[mechanics]].  Ironically, many of his terms have subsequently been borrowed back into mechanics and other domains in order to name analogous properties.  For instance, it is now necessary to distinguish ''[[electrical impedance]]'' from ''[[mechanical impedance]]'' in some contexts.<ref>van der Tweel & Verburg, pp.16–20</ref>  ''Elastance'' has also been borrowed back into mechanics for the analogous quantity by some authors, but often ''[[stiffness]]'' is the preferred term instead.  However, ''elastance'' is widely used for the analogous property in the domain of [[fluid dynamics]], especially in the fields of [[biomedicine]] and [[physiology]].<ref>see for instance Enderle & Bronzino, pp.197–201, especially equation 4.72</ref>
+
+==Mechanical analogy==
+[[Mechanical-electrical analogies]] are formed by comparing the mathematical description of the two systems.  Quantities that appear in the same place in equations of the same form are called ''analogues''.  There are two main reasons for forming such analogies.  The first is to allow electrical phenomena to be explained in terms of the more familiar mechanical systems.  For instance, an electrical [[RLC circuit|inductor-capacitor-resistor circuit]] has [[differential equation]]s of the same form as a mechanical mass-spring-damper system.  In such cases the electrical domain is converted to the mechanical domain.  The second, and more important, reason is to allow a system containing both mechanical and electrical parts to be analysed as a unified whole.  This is of great benefit in the fields of [[mechatronics]] and [[robotics]].  In such cases the mechanical domain is most often converted to the electrical domain because [[Network analysis (electrical circuits)|network analysis]] in the electrical domain is highly developed.<ref>Busch-Vishniac, pp.17–18</ref>
+
+===The Maxwellian analogy===
+In the analogy developed by Maxwell, now known as the [[impedance analogy]], [[voltage]] is made analogous to [[force]].  The voltage of a source of electric power is still called [[electromotive force]] for this reason.  Current is analogous to [[velocity]].  The [[time derivative]] of distance (displacement) is equal to velocity and the time derivative of momentum is equal to force.  Quantities in other energy domains that are in this same differential relationship are called respectively ''generalised displacement'', ''generalised velocity'', ''generalised momentum'', and ''generalised force''.  In the electrical domain, it can be seen that the generalised displacement is charge, explaining the Maxwellians' use of the term ''displacement''.<ref>Gupta, p.18</ref>
+
+Since elastance is the ratio of voltage over charge, then it follows that the analogue of elastance in another energy domain is the ratio of a generalised force over a generalised displacement.  Thus, an elastance can be defined in any energy domain.  ''Elastance'' is used as the name of the generalised quantity in the formal analysis of systems with multiple energy domains, such as is done with [[bond graph]]s.<ref>Vieil, p.47</ref>
+
+{| class="wikitable"
+|+Definition of elastance in different energy domains<ref>{{multiref|Busch-Vishniac, pp.18–19|Regtien, p.21|Borutzky, p.27}}</ref>
+|-
+!Energy domain||Generalised force||Generalised displacement||Name for elastance
+|-
+|[[Electrical science|Electrical]]||Voltage||Charge||Elastance
+|-
+|[[Mechanics|Mechanical (translational)]]||Force||Displacement||Stiffness/elastance<ref>Horowitz, p.29</ref>
+|-
+|[[Rotational mechanics|Mechanical (rotational)]]||[[Torque]]||[[Angle]]||Rotational stiffness/elastance<br/>Moment of stiffness/elastance<br/>Torsional stiffness/elastance<ref>{{multiref|Vieil, p.361|Tschoegl, p.76}}</ref>
+|-
+|[[Fluid dynamics|Fluid]]||Pressure||Volume||Elastance
+|-
+|[[Thermodynamics|Thermal]]||Temperature difference||[[Entropy]]||Warming factor<ref>Fuchs, p.149</ref>
+|-
+|[[Magnetostatics|Magnetic]]||[[Magnetomotive force]] (mmf)||[[Magnetic flux]]||[[Permeance]]<ref>Karapetoff, p.9</ref>
+|-
+|[[Chemistry|Chemical]]||[[Chemical potential]]||[[Mole (unit)|Molar amount]]||Inverse chemical capacitance<ref>Hillert, pp.120–121</ref>
+|}
+
+===Other analogies===
+Maxwell's analogy is not the only way that analogies can be constructed between mechanical and electrical systems.  There are any number of ways to do this.  One very common system is the [[mobility analogy]].  In this analogy force maps to current instead of voltage.  Electrical impedance no longer maps to mechanical impedance, and likewise, electrical elastance no longer maps to mechanical elastance.<ref>Busch-Vishniac, p.20</ref>
+
+==References==
+{{reflist|23em}}
+
+==Bibliography==
+* Blake, F. C., [https://ieeexplore.ieee.org/document/6593059/ "On electrostatic transformers and coupling coefficients"], ''Journal of the American Institute of Electrical Engineers'', vol.&nbsp; 40, no.&nbsp;1, pp.&nbsp;23–[https://books.google.co.uk/books?id=Xo9MAAAAYAAJ&q=%22He+has+called+the+reciprocal+of+the+farad%22 29], January 1921
+* Borutzky, Wolfgang, ''Bond Graph Methodology, ''Springer, 2009 {{ISBN|1848828829}}.
+* Busch-Vishniac, Ilene J., ''Electromechanical Sensors and Actuators'', Springer Science & Business Media, 1999 {{ISBN|038798495X}}.
+* Camara, John A., ''Electrical and Electronics Reference Manual for the Electrical and Computer PE Exam'', Professional Publications, 2010 {{ISBN|159126166X}}.
+* Cauer, E.; Mathis, W.; Pauli, R., "[http://www.cs.princeton.edu/courses/archive/fall03/cs323/links/cauer.pdf Life and Work of Wilhelm Cauer (1900 – 1945)]", ''Proceedings of the Fourteenth International Symposium of Mathematical Theory of Networks and Systems (MTNS2000)'', Perpignan, June, 2000. 
+* Enderle, John; Bronzino, Joseph, ''Introduction to Biomedical Engineering'', Academic Press, 2011 {{ISBN|0080961215}}.
+* Fuchs, Hans U., ''The Dynamics of Heat: A Unified Approach to Thermodynamics and Heat Transfer'', Springer Science & Business Media, 2010 {{ISBN|1441976043}}.
+* Gupta, S. C., ''Thermodynamics'', Pearson Education India, 2005 {{ISBN|813171795X}}.
+* Heaviside, Oliver, ''Electromagnetic Theory: Volume I'', Cosimo, 2007 {{ISBN|1602062714}} (first published 1893).
+* Hillert, Mats, ''Phase Equilibria, Phase Diagrams and Phase Transformations'', Cambridge University Press, 2007 {{ISBN|1139465864}}.
+* Horowitz, Isaac M., ''Synthesis of Feedback Systems'', Elsevier, 2013 {{ISBN|1483267709}}.
+* Howe, G. W. O., [http://digital-library.theiet.org/content/journals/10.1049/jiee-1.1931.0203 "The nomenclature of the fundamental concepts of electrical engineering"], ''Journal of the Institution of Electrical Engineers'', vol.&nbsp; 70, no.&nbsp; 420, pp.&nbsp;54–61, December 1931.
+* Jerrard, H. G., ''A Dictionary of Scientific Units'', Springer, 2013 {{ISBN|9401705712}}.
+* Kennelly, Arthur E.; Kurokawa, K., "[https://archive.org/stream/proceedingsofam56amer#page/40/mode/2up Acoustic impedance and its measurement"], ''Proceedings of the American Academy of Arts and Sciences'', vol.&nbsp; 56, no.&nbsp; 1, pp.&nbsp;3–42, 1921.
+* Klein, H. Arthur, ''The Science of Measurement: A Historical Survey'', Courier Corporation, 1974 {{ISBN|0486258394}}.
+* Miles, Robert; Harrison, P.; Lippens, D., ''Terahertz Sources and Systems'', Springer, 2012 {{ISBN|9401008248}}.
+* Mills, Jeffrey P., ''Electro-magnetic Interference Reduction in Electronic Systems'', PTR Prentice Hall, 1993 {{ISBN|0134639022}}.
+* Mitchell, John Howard, ''Writing for Professional and Technical Journals'', Wiley, 1968 {{OCLC|853309510}}
+* Peek, Frank William, ''Dielectric Phenomena in High Voltage Engineering'', Watchmaker Publishing, 1915 (reprint) {{ISBN|0972659668}}.
+* Regtien, Paul P. L., ''Sensors for Mechatronics'', Elsevier, 2012 {{ISBN|0123944090}}.
+* van der Tweel, L. H.; Verburg, J., "Physical concepts", in  Reneman, Robert S.; Strackee, J., ''Data in Medicine: Collection, Processing and Presentation'', Springer Science & Business Media, 2012 {{ISBN|9400993099}}.
+* Tschoegl, Nicholas W., ''The Phenomenological Theory of Linear Viscoelastic Behavior'', Springer, 2012 {{ISBN|3642736025}}.
+* Vieil, Eric, ''Understanding Physics and Physical Chemistry Using Formal Graphs'', CRC Press, 2012 {{ISBN|1420086138}}
+* Yavetz, Ido, ''[https://books.google.com/books?id=JgXZQTeYby8C From Obscurity to Enigma: The Work of Oliver Heaviside, 1872–1889]'', Springer, 2011 {{ISBN|3034801777}}.
+
+[[Category:Electrostatics]]
+[[Category:Physical quantities]]
+[[Category:Concepts in physics]]
+[[Category:Electromagnetism]]
+[[Category:Capacitance]]
+
+[[ca:Elastància (electricitat)]]

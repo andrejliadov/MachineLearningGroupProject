@@ -1,0 +1,163 @@
+{{short description|Specification for encoding location as part of a Web feed}}
+{{Infobox file format
+| name = GeoRSS
+| logo =
+| screenshot = 
+| caption = 
+| extension = .rss, .xml
+| mime = <code>application/rss+xml</code> (Registration Being Prepared)<ref>{{cite web |url=http://www.rssboard.org/rss-mime-type-application.txt |title=The application/rss+xml Media Type |publisher=Network Working Group |date=May 22, 2006 |accessdate=2007-08-16}}</ref>
+|_nomimecode = yes 
+| type code = 
+| uniform type = 
+| owner = 
+| genre = 
+| container for = 
+| contained by = 
+| extended from = [[XML]]
+| extended to = 
+| standards = 
+}}
+'''GeoRSS''' is a specification for encoding location as part of a [[Web feed]]. ''(Web feeds are used to describe feeds ("channels") of content, such as news articles, [[MP3 blog|Audio blogs]], [[Vlog|video blogs]] and text [[blog]] entries. These [[web feed]]s are rendered by programs such as [[feed aggregator|aggregator]]s and [[web browser]]s.)'' The name "GeoRSS" is derived from [[RSS]], the most known [[Web feed]] and syndication format.
+
+In GeoRSS, location content consists of geographical points, lines, and polygons of interest and related feature descriptions. GeoRSS feeds are designed to be consumed by geographic software such as map generators. By building these encodings on a common information model, the GeoRSS collaboration is promoting interoperability and "upwards-compatibility" across encodings.
+
+At this point, the GeoRSS collaboration has completed work on two primary encodings that are called GeoRSS [[Geography Markup Language]] (GML) and GeoRSS Simple. GeoRSS-Simple is a very lightweight format that supports basic geometries (point, line, box, polygon) and covers the typical use cases when encoding locations. GeoRSS GML is a formal [[Open Geospatial Consortium]] (OGC) GML Application Profile, and supports a greater range of features than GeoRSS Simple, notably coordinate reference systems other than [[World Geodetic System|WGS84]] latitude/longitude. There is also a [[Geography Markup Language|W3C]] GeoRSS serialization, which is older and partly deprecated but still the most widely used.
+
+GeoRSS can be used to extend both RSS 1.0 and 2.0, as well as [[Atom (standard)|Atom]], the [[Internet Engineering Task Force|IETF]]'s latest standard for feeds.
+
+==Examples==
+Here's a GeoRSS Simple example using Atom.
+<syntaxhighlight lang="xml">
+ <?xml version="2.0" encoding="utf-8"?>
+ <feed xmlns="http://www.w3.org/2005/Atom" 
+       xmlns:georss="http://www.georss.org/georss">
+   <title>Earthquakes</title>
+   <subtitle>International earthquake observation labs</subtitle>
+   <link href="http://example.org/"/>
+   <updated>2005-12-13T18:30:02Z</updated>
+   <author>
+      <name>Dr. Thaddeus Remor</name>
+      <email>tremor@quakelab.edu</email>
+   </author>
+   <id>urn:uuid:60a76c80-d399-11d9-b93C-0003939e0af6</id>
+   <entry>
+      <title>M 3.2, Mona Passage</title>
+      <link href="http://example.org/2005/09/09/atom01"/>
+      <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</id>
+      <updated>2005-08-17T07:02:32Z</updated>
+      <summary>We just had a big one.</summary>
+      <georss:point>45.256 -71.92</georss:point>
+   </entry>
+ </feed></syntaxhighlight>
+Here is a schema fragment for a GeoRSS GML encoding for RSS 2.0 
+<syntaxhighlight lang="xml">
+  <?xml version="1.0" encoding="UTF-8"?>
+  <rss version="2.0" 
+       xmlns:georss="http://www.georss.org/georss" 
+       xmlns:gml="http://www.opengis.net/gml">
+    <channel>
+    <link>http://maps.google.com</link>
+    <title>Cambridge Neighborhoods</title>
+    <description>One guy's view of Cambridge, Massachusetts</description>
+    <item>
+      <guid isPermaLink="true">00000111c36421c1321d3</guid>
+      <pubDate>Thu, 05 Apr 2007 20:16:31 +0000</pubDate>
+      <title>Central Square</title>
+      <description>The heart and soul of the "new" Cambridge. Depending on where you 
+               stand, you can feel like you're in the 1970s or 2020.</description>
+      <author>rajrsingh</author>
+      <georss:where>
+        <gml:Polygon>
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList>
+                +71.106216 42.366661
+                +71.105576 42.367104
+                +71.104378 42.367134
+                +71.103729 42.366249
+                +71.098793 42.363331
+                +71.101028 42.362541
+                +71.106865 42.366123
+                +71.106216 42.366661
+              </gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </georss:where>
+    </item>
+   </channel>
+ </rss>
+</syntaxhighlight>
+Here is example of W3C geo GeoRSS
+<syntaxhighlight lang="xml">
+ <?xml version="1.0"?>
+ <?xml-stylesheet href="/eqcenter/catalogs/rssxsl.php?feed=eqs7day-M5.xml" type="text/xsl" 
+                  media="screen"?>
+ <rss version="2.0" 
+      xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+     <title>USGS M5+ Earthquakes</title>
+     <description>Real-time, worldwide earthquake list for the past 7 days</description>
+     <link>https://earthquake.usgs.gov/eqcenter/</link>
+     <dc:publisher>U.S. Geological Survey</dc:publisher>
+     <pubDate>Thu, 27 Dec 2007 23:56:15 PST</pubDate>
+     <item>
+       <pubDate>Fri, 28 Dec 2007 05:24:17 GMT</pubDate>
+       <title>M 5.3, northern Sumatra, Indonesia</title>
+       <description>December 28, 2007 05:24:17 GMT</description>
+       <link>https://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2007llai.php</link>
+       <geo:lat>5.5319</geo:lat>
+       <geo:long>95.8972</geo:long>
+     </item>
+   </channel>
+ </rss>
+</syntaxhighlight>
+
+== Examples of GeoRSS Implementations ==
+
+'''Example feeds'''
+*[[GeoNetwork opensource]]: [http://www.fao.org/geonetwork/srv/en/rss.latest?georss=simple Simple] and [http://www.fao.org/geonetwork/srv/en/rss.latest?georss=gml GML] -feeds.
+*[https://earthquake.usgs.gov/eqcenter/catalogs/eqs7day-M5.xml USGS Real-time, worldwide earthquake list for the past 7 days] (W3C GeoRSS)
+
+'''Usage and implementation'''
+*[[Google Maps]]: [http://googlemapsapi.blogspot.com/2007/03/kml-and-georss-support-added-to-google.html Google Maps API blog posting] on Google support for the Simple, GML, and W3C Geo encodings of GeoRSS 
+*[http://developer.yahoo.com/maps/georss/index.html Yahoo Maps], a reference on using GeoRSS in the Yahoo Maps Web Services.
+*[[Virtual Earth]]: [http://msdn2.microsoft.com/en-us/library/aa972905.aspx Microsoft Virtual Earth support] for GeoRSS geo, simple, and GML.
+*[https://web.archive.org/web/20070927184907/http://georss.org/geopress GeoPress] WordPress and MovableType plugins for adding GeoRSS to your blog.
+*[http://drupal.org/project/georss GeoRSS Module] Drupal module for adding GeoRSS to your Drupal website.
+*[http://mapufacture.com Mapufacture] GeoRSS Feed Aggregator. 
+*[https://web.archive.org/web/20100207131919/http://www.mapquest.com/features/georss-how-to MapQuest] MapQuest Embeddable Map using GeoRSS Feed
+*[[CitySurf Globe]] 3D Virtual Globe Software using GeoRSS Feed
+*[https://archive.is/20130203092838/http://www.taodyne.com/shop/en/blog/44-gitorious-project-for-tao-presentations-demos Tao Presentations] Integrating GeoRSS in Taodyne's 3D presentation software
+'''Open source projects'''
+*[https://web.archive.org/web/20070818194631/http://openlayers.org/dev/examples/georss.html OpenLayers] Demo using the OpenLayers GeoRSS parser. GeoRSS geo and simple are supported.
+*[http://worldkit.org/doc/rss.php Worldkit] Both GeoRSS Simple and GeoRSS GML are supported.
+*[[GeoServer]]
+* The [[GDAL|OGR Library]] provides [https://web.archive.org/web/20090603135629/http://www.gdal.org/ogr/drv_georss.html support] for read and write access to GeoRSS data.
+
+'''Products'''
+*[https://web.archive.org/web/20101011081354/http://www.cadcorp.com/pdf/FS-Format%20Support%202009.pdf Cadcorp] GeoRSS built into Cadcorp SIS.
+*[https://web.archive.org/web/20090304084723/http://www.cubewerx.com/main/PDFs/CubeSERV_WFS.pdf CubeWerx WFS] The new release of the CubeWerx OGC Web Feature Service product supports GeoRSS GML.
+*[https://web.archive.org/web/20070928083557/http://www.ionicsoft.com/templates/home.php?page=91&lng=en&text=Key%20Features Ionic/Leica Geosystems] The use of GeoRSS in Ionic redSpider products
+*[https://web.archive.org/web/20070630204732/http://www.bayofislands.net/ Bay of Islands] Contains GeoRSS information about local accommodation
+*[https://web.archive.org/web/20120228194607/http://dev.marklogic.com/pubs/4.0/apidocs/GeoRSS.html MarkLogic] Provides support for geospatial queries using GeoRSS/Simple markup.
+
+==See also==
+*[[Geospatial Content Management System]]
+*[[Atom (standard)]], the IETF's XML-based Web syndication format.
+*[[RSS]] - Really Simple Syndication.
+
+==References==
+<references/>
+
+== External links ==
+*[https://web.archive.org/web/20200909171629/http://www.georss.org/ Georss.org (archived 2020-09-09)], web site for GeoRSS specifications (describes all 3 encodings) and examples
+*[https://web.archive.org/web/20081012214053/http://www.opengeospatial.org/pt/06-050r3 OGC Whitepaper (pdf)], Open Geospatial Consortium: An Introduction to GeoRSS.
+
+{{OGC}}
+{{Web syndication}}
+
+[[Category:Open Geospatial Consortium]]
+[[Category:Geographical technology]]
+[[Category:Web mapping]]

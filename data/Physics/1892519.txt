@@ -1,0 +1,56 @@
+The '''Barrett–Crane model''' is a model in [[quantum gravity]], first published in 1998, which was defined using the [[Plebanski action]].<ref name=Barrett1998>
+{{citation
+ |author1=Barrett, John W.
+ |author2=Louis Crane
+ |year=1998
+ |title=Relativistic spin networks and quantum gravity
+ |journal=J. Math. Phys.
+ |volume=39 |issue=6 |pages=3296–3302
+ |arxiv=gr-qc/9709028
+ |bibcode=1998JMP....39.3296B
+ |doi=10.1063/1.532254
+}}</ref><ref name=Barrett>
+{{citation
+ |author1=Barrett, John W.
+ |author2=Louis Crane
+ |year=2000
+ |title=A Lorentzian signature model for quantum general relativity
+ |journal=Classical and Quantum Gravity
+ |volume=17 |issue=16 |pages=3101–3118
+ |arxiv=gr-qc/9904025
+ |bibcode=2000CQGra..17.3101B
+ |doi=10.1088/0264-9381/17/16/302
+}}</ref>
+
+The <math>B</math> field in the action is supposed to be a <math>so(3, 1)</math>-valued [[2-form]], i.e. taking values in the [[Lie algebra]] of a [[special orthogonal group]]. The term
+
+:<math>B^{ij} \wedge B^{kl}</math>
+
+in the action has the same symmetries as it does to provide the [[Einstein–Hilbert action]]. But the form of
+
+:<math>B^{ij}</math>
+
+is not unique and can be posed by the different forms:
+*<math>\pm e^i \wedge e^j</math>
+*<math>\pm \epsilon^{ijkl} e_k \wedge e_l</math>
+where <math>e^i</math> is the [[Tetrad (general relativity)|tetrad]] and <math>\epsilon^{ijkl}</math> is the [[antisymmetric symbol]] of the <math>so(3, 1)</math>-valued 2-form fields.
+
+The Plebanski action can be constrained to produce the [[BF model]] which is a theory of no local [[degrees of freedom (physics and chemistry)|degrees of freedom]]. [[John W. Barrett]] and [[Louis Crane]] modeled the analogous constraint on the summation over [[spin foam]].
+
+The Barrett–Crane model on spin foam quantizes the [[Plebanski action]], but its [[functional integration|path integral]] amplitude corresponds to the degenerate <math>B</math> field and not the specific definition
+
+:<math>B^{ij} = e^i \wedge e^j</math>,
+
+which formally satisfies the [[Einstein's field equation]] of [[general relativity]]. However, if analysed with the tools of [[loop quantum gravity]] the Barrett–Crane model gives an incorrect long-distance limit [https://arxiv.org/abs/0708.0883], and so the model is not identical to loop quantum gravity.
+
+==See also==
+* [[EPRL model]]
+
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:Barrett-Crane model}}
+[[Category:Loop quantum gravity]]
+
+
+{{physics-stub}}

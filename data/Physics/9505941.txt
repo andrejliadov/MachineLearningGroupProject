@@ -1,0 +1,67 @@
+Much insight in [[quantum mechanics]] can be gained from understanding the [[closed-form solution]]s to the time-dependent non-relativistic [[Schrödinger equation]]. It takes the form
+
+:<math>
+\hat{H} \psi\left(\mathbf{r}, t\right) =
+\left[ - \frac{\hbar^2}{2m} \nabla^2 + V\left(\mathbf{r}\right) \right] \psi\left(\mathbf{r}, t\right) = i\hbar \frac{\partial\psi\left(\mathbf{r}, t\right)}{\partial t},
+</math>
+
+where <math>\psi</math> is the [[wave function]] of the system, <math>\hat{H}</math> is the [[Hamiltonian operator]], and <math>t</math> is time. [[Stationary state]]s of this equation are found by solving the time-independent  Schrödinger equation,
+
+:<math>
+\left[ - \frac{\hbar^2}{2m} \nabla^2 + V\left(\mathbf{r}\right) \right] \psi\left(\mathbf{r}\right) = E \psi \left(\mathbf{r}\right),
+</math>
+
+which is an eigenvalue equation. Very often, only numerical solutions to the Schrödinger equation can be found for a given physical system and its associated potential energy. However, there exists a subset of physical systems for which the form of the eigenfunctions and their associated energies, or eigenvalues, can be found. These quantum-mechanical systems with analytical solutions are listed below.
+
+== Solvable systems ==
+
+*The [[two-state quantum system]] (the simplest possible quantum system)
+*The [[free particle]]
+*The [[delta potential]]
+*The [[Delta potential#Double delta potential|double-well Dirac delta potential]]
+*The [[particle in a box]] / [[infinite potential well]]
+*The [[finite potential well]]
+*The [[Airy function|one-dimensional triangular potential]]
+*The [[particle in a ring]] or [[ring wave guide]]
+*The [[particle in a spherically symmetric potential]]
+*The [[quantum harmonic oscillator]]
+*The quantum harmonic oscillator with an applied linear field<ref name="Hodgson">[http://etheses.whiterose.ac.uk/15657/] Hodgson, M.J.P., 2016. Electrons in model nanostructures (Doctoral dissertation, University of York) pages 122-124.</ref>
+*The [[hydrogen atom]] or [[hydrogen-like atom]] e.g. [[positronium]]
+*The [[hydrogen atom]] in a spherical cavity with [[Dirichlet boundary condition|Dirichlet boundary conditions]]<ref>{{Cite journal |doi = 10.1016/j.cpc.2015.02.009|bibcode = 2015CoPhC.191..221S|title = Efficient hybrid-symbolic methods for quantum mechanical calculations|year = 2015|last1 = Scott|first1 = T.C.|last2 = Zhang|first2 = Wenxing|journal = Computer Physics Communications|volume = 191|pages = 221–234}}</ref>
+*The [[particle in a one-dimensional lattice (periodic potential)]]
+*The [[Morse potential]]
+*The [[step potential]]
+*The [[Rigid rotor#Quantum mechanical linear rigid rotor|linear rigid rotor]]  
+*The [[Rigid rotor#Quantum mechanical rigid rotor|symmetric top]]
+*The [[Hooke's atom]]
+*The [[Spherium]] atom
+*Zero range interaction in a harmonic trap<ref>{{Cite journal | last1 = Busch | first1 = Thomas| last2 = Englert | first2 = Berthold-Georg | last3 = Rzażewski | first3 = Kazimierz | last4 = Wilkens | first4 = Martin | doi = 10.1023/A:1018705520999 | title = Two Cold Atoms in a Harmonic Trap | journal = Foundations of Physics | volume = 27 | issue = 4 | pages = 549–559 | year = 1998 }}</ref>
+*The [[quantum pendulum]]
+*The [[rectangular potential barrier]]
+*The [[Pöschl–Teller potential]]
+*The [[Inverse square root potential]]<ref>{{Cite journal | last1 = Ishkhanyan | first1 =  A. M.| doi = 10.1209/0295-5075/112/10006 | title = Exact solution of the Schrödinger equation for the inverse square root potential <math>V_{0} /\sqrt{x}</math> | journal = Europhysics Letters | volume = 112 | issue = 1 | pages = 10006 | year = 2015 | arxiv=1509.00019}}</ref>
+* Multistate Landau–Zener models<ref name='sinitsyn-17jpa'>{{cite journal|title=The Quest for Solvable Multistate Landau-Zener Models|journal=Journal of Physics A: Mathematical and Theoretical |volume=50 |issue=25 |pages=255203 |author1=N. A. Sinitsyn |author2=V. Y. Chernyak |arxiv=1701.01870|year=2017|doi=10.1088/1751-8121/aa6800 |bibcode=2017JPhA...50y5203S }}</ref>
+*The [[Luttinger liquid]] (the only exact quantum mechanical solution to a model including interparticle interactions)
+
+== See also ==
+* [[List of quantum-mechanical potentials]] &ndash; a list of physically relevant potentials without regard to analytic solubility
+* [[List of integrable models]]
+* [[WKB approximation]]
+
+==References==
+{{reflist}}
+
+== Reading materials ==
+
+* {{cite book
+  | last = Mattis
+  | first = Daniel C.
+  | authorlink = Daniel C. Mattis
+  | title = The Many-Body Problem: An Encyclopedia of Exactly Solved Models in One Dimension
+  | publisher = [[World Scientific]]
+  | date = 1993
+  | isbn = 978-981-02-0975-9}}
+
+[[Category:Quantum mechanics]]
+[[Category:Quantum models]]
+[[Category:Physics-related lists|Quantum-mechanical systems with analytical solutions]]

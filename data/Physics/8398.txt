@@ -1,0 +1,276 @@
+{{about|the dimension of a space|the dimension of an object|size|the dimension of a quantity|Dimensional analysis|other uses|Dimension (disambiguation)}}
+{{short description|Maximum number of independent directions within a mathematical space}}
+[[File:Squarecubetesseract.png|thumb
+ | 236px<!--(approx Sidebar/Infobox width)-->
+ | From left to right: the [[square (geometry)|square]], the [[cube]] and the [[tesseract]]. The [[two-dimensional space|two-dimensional (2D)]] square is bounded by [[one-dimensional space|one-dimensional (1D)]] lines; the [[three-dimensional space|three-dimensional (3D)]] cube by two-dimensional areas; and the [[four-dimensional space|four-dimensional (4D)]] [[tesseract]] by three-dimensional volumes. For display on a two-dimensional surface such as a screen, the 3D cube and 4D tesseract require [[projection (linear algebra)|projection]].
+]]
+[[File:Dimension levels.svg|thumb
+ | 236px<!--(as above)-->
+ | The first four spatial dimensions, represented in a two-dimensional picture.
+ {{ordered list
+  | Two points <!--(These and subsequent points not identified in diagram:) A and B--> can be connected to create a [[line segment]].
+  | Two parallel line segments <!--AB and CD--> can be connected to form a [[square]]<!-- (corners marked ABCD)-->.
+  | Two parallel squares <!--ABCD and EFGH--> can be connected to form a [[cube]]<!-- (corners marked as ABCDEFGH)-->.
+  | Two parallel cubes <!--ABCDEFGH and IJKLMNOP--> can be connected to form a [[tesseract]]<!-- (corners marked as ABCDEFGHIJKLMNOP)-->.
+ }}
+]]
+{{General geometry}}
+In [[physics]] and [[mathematics]], the '''dimension''' of a [[mathematical space]] (or object) is informally defined as the minimum number of [[coordinates]] needed to specify any [[Point (geometry)|point]] within it.<ref>{{cite web|url=http://curious.astro.cornell.edu/question.php?number=4 |title=Curious About Astronomy |publisher=Curious.astro.cornell.edu |access-date=2014-03-03 |url-status=dead |archive-url=https://web.archive.org/web/20140111191053/http://curious.astro.cornell.edu/question.php?number=4 |archive-date=2014-01-11 }}</ref><ref>{{cite web |url=http://mathworld.wolfram.com/Dimension.html |title=MathWorld: Dimension |publisher=Mathworld.wolfram.com |date=2014-02-27 |access-date=2014-03-03 |url-status=live |archive-url=https://web.archive.org/web/20140325220941/http://mathworld.wolfram.com/Dimension.html |archive-date=2014-03-25 }}</ref> Thus a [[Line (geometry)|line]] has a dimension of one (1D) because only one coordinate is needed to specify a point on it{{spndash}}for example, the point at 5 on a number line. A [[Surface (topology)|surface]] such as a [[Plane (mathematics)|plane]] or the surface of a [[Cylinder (geometry)|cylinder]] or [[sphere]] has a [[two-dimensional space|dimension of two]] (2D) because two coordinates are needed to specify a point on it{{spndash}}for example, both a [[latitude]] and [[longitude]] are required to locate a point on the surface of a sphere. The inside of a [[cube]], a cylinder or a sphere is [[three-dimensional]] (3D) because three coordinates are needed to locate a point within these spaces.
+
+In [[classical mechanics]], [[space]] and [[time]] are different categories and refer to [[absolute space and time]]. That conception of the world is a [[four-dimensional space]] but not the one that was found necessary to describe [[electromagnetism]]. The four dimensions (4D) of [[spacetime]] consist of [[event (relativity)|events]] that are not absolutely defined spatially and temporally, but rather are known relative to the motion of an [[observer (special relativity)|observer]]. [[Minkowski space]] first approximates the universe without [[gravity]]; the [[pseudo-Riemannian manifold]]s of [[general relativity]] describe spacetime with matter and gravity. 10 dimensions are used to describe [[superstring theory]] (6D [[hyperspace]] + 4D), 11 dimensions can describe [[supergravity]] and [[M-theory]] (7D hyperspace + 4D), and the state-space of [[quantum mechanics]] is an infinite-dimensional [[function space]].
+
+The concept of dimension is not restricted to physical objects. '''{{vanchor|High-dimensional space|N-dimensional space|n dimensional space}}s''' frequently occur in mathematics and the sciences. They may be [[parameter space]]s or [[Configuration space (mathematics)|configuration spaces]] such as in [[Lagrangian mechanics|Lagrangian]] or [[Hamiltonian mechanics]]; these are abstract [[space (mathematics)|spaces]], independent of the physical [[space]] we live in.
+
+== In mathematics ==
+
+In mathematics, the dimension of an object is, roughly speaking, the number of [[degrees of freedom]] of a point that moves on this object. In other words, the dimension is the number of independent [[parameter]]s or [[coordinates]] that are needed for defining the position of a point that is constrained to be on the object. For example, the dimension of a point is zero; the dimension of a [[line (geometry)|line]] is one, as a point can move on a line in only one direction (or its opposite); the dimension of a [[plane (geometry)|plane]] is two, etc.
+
+The dimension is an intrinsic property of an object, in the sense that it is independent of the dimension of the space in which the object is or can be embedded. For example, a [[curve]], such as a [[circle]] is of dimension one, because the position of a point on a curve is determined by its signed distance along the curve to a fixed point on the curve. This is independent from the fact that a curve cannot be embedded in a [[Euclidean space]] of dimension lower than two, unless it is a line.
+
+The dimension of [[Euclidean space|Euclidean {{math|''n''}}-space]] {{math|'''E'''<sup>''n''</sup> }}is {{math|''n''}}. When trying to generalize to other types of spaces, one is faced with the question "what makes {{math|'''E'''<sup>''n''</sup> }} {{math|''n''}}-dimensional?" One answer is that to cover a fixed [[Ball (mathematics)|ball]] in {{math|'''E'''<sup>''n''</sup> }} by small balls of radius {{math|''ε''}}, one needs on the order of {{math|''ε''<sup>−''n''</sup>}} such small balls. This observation leads to the definition of the [[Minkowski dimension]] and its more sophisticated variant, the [[Hausdorff dimension]], but there are also other answers to that question. For example, the boundary of a ball in {{math|'''E'''<sup>''n''</sup> }} looks locally like {{math|'''E'''<sup>''n''-1</sup> }} and this leads to the notion of the [[inductive dimension]]. While these notions agree on {{math|'''E'''<sup>''n''</sup>}}, they turn out to be different when one looks at more general spaces.
+
+A [[tesseract]] is an example of a four-dimensional object. Whereas outside mathematics the use of the term "dimension" is as in: "A tesseract ''has four dimensions''", mathematicians usually express this as: "The tesseract ''has dimension 4''", or: "The dimension of the tesseract ''is'' 4" or: 4D.
+
+Although the notion of higher dimensions goes back to [[René Descartes]], substantial development of a higher-dimensional geometry only began in the 19th century, via the work of [[Arthur Cayley]], [[William Rowan Hamilton]], [[Ludwig Schläfli]] and [[Bernhard Riemann]]. Riemann's 1854 [[Habilitationsschrift]], Schläfli's 1852 ''Theorie der vielfachen Kontinuität'', and Hamilton's discovery of the [[quaternion]]s and [[John T. Graves]]' discovery of the [[octonion]]s in 1843 marked the beginning of higher-dimensional geometry.
+
+The rest of this section examines some of the more important mathematical definitions of dimension.
+
+===Vector spaces===
+{{main|Dimension (vector space)}}
+The dimension of a [[vector space]] is the number of vectors in any [[Basis (linear algebra)|basis]] for the space, i.e. the number of coordinates necessary to specify any vector. This notion of dimension (the [[cardinality]] of a basis) is often referred to as the ''Hamel dimension'' or ''algebraic dimension'' to distinguish it from other notions of dimension.
+
+For the non-[[free module|free]] case, this generalizes to the notion of the [[length of a module]].
+
+===Manifolds===
+<!--Linked from [[Ball (mathematics)]]-->
+The uniquely defined dimension of every [[Connectedness|connected]] topological [[manifold]] can be calculated. A connected topological manifold is [[Local property|locally]] [[homeomorphic]] to Euclidean {{math|''n''}}-space, in which the number {{math|''n''}} is the manifold's dimension.
+
+For connected [[differentiable manifold]]s, the dimension is also the dimension of the [[Tangent space|tangent vector space]] at any point.
+
+In [[geometric topology]], the theory of manifolds is characterized by the way dimensions 1 and 2 are relatively elementary, the '''high-dimensional''' cases {{nowrap|{{math|''n'' > 4}}}} are simplified by having extra space in which to "work"; and the cases {{math|''n'' &#61; 3}} and {{math|4}} are in some senses the most difficult. This state of affairs was highly marked in the various cases of the [[Poincaré conjecture]], where four different proof methods are applied.
+
+====Complex dimension====
+
+The dimension of a manifold depends on the base field with respect to which Euclidean space is defined.  While analysis usually assumes a manifold to be over the [[real numbers]], it is sometimes useful in the study of [[complex manifold]]s and [[dimension of an algebraic variety|algebraic varieties]] to work over the [[complex numbers]] instead. A complex number (''x'' + ''iy'') has a [[real part]] ''x'' and an [[imaginary part]] ''y'', where x and y are both real numbers; hence, the complex dimension is half the real dimension.
+
+Conversely, in algebraically unconstrained contexts, a single complex coordinate system may be applied to an object having two real dimensions.  For example, an ordinary two-dimensional [[sphere|spherical surface]], when given a complex metric, becomes a [[Riemann sphere]] of one complex dimension.<ref>{{cite book |first1=Shing-Tung |last1=Yau |first2=Steve |last2=Nadis |chapter=4. Too Good to be True |title=The Shape of Inner Space: String Theory and the Geometry of the Universe's Hidden Dimensions |chapter-url=https://books.google.com/books?id=vlA4DgAAQBAJ&pg=PT60 |date=2010 |publisher=Basic Books |isbn=978-0-465-02266-3 |pages=60–}}</ref>
+
+===Varieties===
+{{main|Dimension of an algebraic variety}}
+The dimension of an [[algebraic variety]] may be defined in various equivalent ways. The most intuitive way is probably the dimension of the [[tangent space]] at any [[Regular point of an algebraic variety]]. Another intuitive way is to define the dimension as the number of [[hyperplane]]s that are needed in order to have an intersection with the variety that is reduced to a finite number of points (dimension zero). This definition is based on the fact that the intersection of a variety with a hyperplane reduces the dimension by one unless if the hyperplane contains the variety.
+
+An [[algebraic set]] being a finite union of algebraic varieties, its dimension is the maximum of the dimensions of its components. It is equal to the maximal length of the chains <math>V_0\subsetneq V_1\subsetneq \cdots \subsetneq V_d</math> of sub-varieties of the given algebraic set (the length of such a chain is the number of "<math>\subsetneq</math>").
+
+Each variety can be considered as an [[stack (mathematics)|algebraic stack]], and its dimension as variety agrees with its dimension as stack. There are however many stacks which do not correspond to varieties, and some of these have negative dimension. Specifically, if ''V'' is a variety of dimension ''m'' and ''G'' is an [[algebraic group]] of dimension ''n'' [[Group action (mathematics)|acting on ''V'']], then the [[quotient stack]] [''V''/''G''] has dimension ''m''&nbsp;−&nbsp;''n''.<ref>{{citation |last=Fantechi|first=Barbara|chapter=Stacks for everybody|title=European Congress of Mathematics Volume I|volume=201|pages=349–359|series=Progr. Math.|publisher=Birkhäuser|year=2001|chapter-url=http://www.mathematik.uni-bielefeld.de/~rehmann/ECM/cdrom/3ecm/pdfs/pant3/fantechi.pdf|url-status=live|archive-url=https://web.archive.org/web/20060117052957/http://www.mathematik.uni-bielefeld.de/~rehmann/ECM/cdrom/3ecm/pdfs/pant3/fantechi.pdf|archive-date=2006-01-17}}
+</ref>
+
+===Krull dimension===
+The [[Krull dimension]] of a [[commutative ring]] is the maximal length of chains of [[prime ideal]]s in it, a chain of length ''n'' being a sequence <math>\mathcal{P}_0\subsetneq \mathcal{P}_1\subsetneq \cdots \subsetneq\mathcal{P}_n </math> of prime ideals related by inclusion. It is strongly related to the dimension of an algebraic variety, because of the natural correspondence between sub-varieties and prime ideals of the ring of the polynomials on the variety.
+
+For an [[algebra over a field]], the dimension as [[vector space]] is finite if and only if its Krull dimension is 0.
+
+===Topological spaces===
+
+For any [[normal topological space]] {{math|''X''}}, the [[Lebesgue covering dimension]] of {{math|''X''}} is defined to be the smallest [[integer]] ''n'' for which the following holds: any [[open cover]] has an open refinement (a second open cover where each element is a subset of an element in the first cover) such that no point is included in more than {{math|''n'' + 1}} elements. In this case dim {{math|''X'' {{=}} ''n''}}. For {{math|''X''}} a manifold, this coincides with the dimension mentioned above. If no such integer {{math|''n''}} exists, then the dimension of {{math|''X''}} is said to be infinite, and one writes dim {{math|''X'' {{=}} ∞}}. Moreover, {{math|''X''}} has dimension −1, i.e. dim {{math|''X'' {{=}} −1}} if and only if {{math|''X''}} is empty. This definition of covering dimension can be extended from the class of normal spaces to all [[Tychonoff space]]s merely by replacing the term "open" in the definition by the term "'''functionally open'''".
+
+An [[inductive dimension]] may be defined [[Mathematical induction|inductively]] as follows. Consider a [[Isolated point|discrete set]] of points (such as a finite collection of points) to be 0-dimensional. By dragging a 0-dimensional object in some direction, one obtains a 1-dimensional object. By dragging a 1-dimensional object in a ''new direction'', one obtains a 2-dimensional object. In general one obtains an ({{math|''n'' + 1}})-dimensional object by dragging an {{math|''n''}}-dimensional object in a ''new'' direction.  The inductive dimension of a topological space may refer to the ''small inductive dimension'' or the ''large inductive dimension'', and is based on the analogy that, in the case of metric spaces, {{nowrap|({{math|''n'' + 1}})-dimensional}} balls have {{math|''n''}}-dimensional [[boundary (topology)|boundaries]], permitting an inductive definition based on the dimension of the boundaries of open sets. Moreover, the boundary of a discrete set of points is the empty set, and therefore the empty set can be taken to have dimension -1.<ref>{{cite book |title=Dimension Theory (PMS-4), Volume 4 |first1=Witold |last1=Hurewicz |first2=Henry |last2=Wallman |publisher=[[Princeton University Press]] |year=2015 |isbn=978-1-4008-7566-5 |page=24 |url=https://books.google.com/books?id=_xTWCgAAQBAJ}} [https://books.google.com/books?id=_xTWCgAAQBAJ&pg=PA24 Extract of page 24]</ref>
+
+Similarly, for the class of [[CW complexes]], the dimension of an object is the largest {{mvar|n}} for which the [[n-skeleton|{{mvar|n}}-skeleton]] is nontrivial.  Intuitively, this can be described as follows: if the original space can be [[homotopy|continuously deformed]] into a collection of [[simplex|higher-dimensional triangles]] joined at their faces with a complicated surface, then the dimension of the object is the dimension of those triangles.{{citation needed|date=June 2018}}
+
+{{See also|dimension of a scheme}}
+
+===Hausdorff dimension===
+The [[Hausdorff dimension]] is useful for studying structurally complicated sets, especially [[fractal]]s. The Hausdorff dimension is defined for all [[metric space]]s and, unlike the dimensions considered above, can also have non-integer real values.<ref name="Hausdorff dimension">[http://math.bu.edu/DYSYS/chaos-game/node6.html Fractal Dimension] {{webarchive|url=https://web.archive.org/web/20061027003440/http://math.bu.edu/DYSYS/chaos-game/node6.html |date=2006-10-27 }}, Boston University Department of Mathematics and Statistics</ref> The [[box-counting dimension|box dimension]] or [[Minkowski dimension]] is a variant of the same idea. In general, there exist more definitions of [[fractal dimension]]s that work for highly irregular sets and attain non-integer positive real values. Fractals have been found useful to describe many natural objects and phenomena.<ref>{{cite book |editor2-first=Shlomo |editor2-last=Havlin |editor1-first=Armin |editor1-last=Bunde |editor2-link=Shlomo Havlin |title=Fractals and Disordered Systems |orig-year=1991 |url=https://books.google.com/books?id=TCzwCAAAQBAJ |date=2012 |publisher=Springer |isbn=978-3-642-84868-1 |edition=2nd }}</ref>{{page needed|date=March 2015}}<ref>{{cite book |editor2-first=Shlomo |editor2-last=Havlin |editor1-first=Armin |editor1-last=Bunde |editor2-link=Shlomo Havlin  |chapter=1. A Brief Introduction to Fractal Geometry 1.2.1 The Koch Curve |title=Fractals in Science |chapter-url=https://books.google.com/books?id=dh7rCAAAQBAJ&pg=PA3 |date=2013 |publisher=Springer |isbn=978-3-642-77953-4 |pages=3– |orig-year=1994 }}</ref>{{page needed|date=March 2015}}
+
+===Hilbert spaces===
+Every [[Hilbert space]] admits an [[orthonormal basis]], and any two such bases for a particular space have the same [[cardinality]]. This cardinality is called the dimension of the Hilbert space. This dimension is finite if and only if the space's [[Hamel dimension]] is finite, and in this case the two dimensions coincide.
+
+== In physics ==
+
+===Spatial dimensions===
+Classical physics theories describe three [[physical dimension]]s: from a particular point in [[space]], the basic directions in which we can move are up/down, left/right, and forward/backward. Movement in any other direction can be expressed in terms of just these three. Moving down is the same as moving up a negative distance. Moving diagonally upward and forward is just as the name of the direction implies; ''i.e.'', moving in a [[linear combination]] of up and forward. In its simplest form: a line describes one dimension, a plane describes two dimensions, and a cube describes three dimensions. (See [[Space]] and [[Cartesian coordinate system]].)
+
+{| class="wikitable" style="margin:auto;text-align:center;"
+|-
+!style="width:7.5em;"| {{longitem|Number of<br />dimensions}}
+! Example co-ordinate systems
+|-
+| [[One-dimensional space|1]] ||
+{| border="0"
+|- style="vertical-align:bottom;line-height:2.0em;"
+!style="padding-right:1.0em;"| [[File:Coord NumberLine.svg|200px|Number line]]<br />[[Number line]]
+! [[File:Coord Angle.svg|200px|Angle]]<br />[[Angle]]
+|}
+|-
+| [[Two-dimensional space|2]] ||
+{|
+|- style="line-height:3.0em;"
+!style="padding:1.0em 1.0em 0 0;"| [[File:Coord-XY.svg|200x200px]]<br />[[Cartesian coordinate system|Cartesian]]&nbsp;<span style="font-size:90%;font-weight:normal;">(two-dimensional)</span>
+!style="padding:1.0em 1.0em 0 0;"| [[File:Coord Circular.svg|200px|Polar system]]<br />[[Polar coordinate system|Polar]]
+!style="padding:1.0em 1.0em 0 0;"| [[File:Coord LatLong.svg|200px|Geographic system]]<br />[[Geographic coordinate system|Latitude and longitude]]
+|}
+|-
+| [[Three-dimensional space|3]] ||
+{| border="0"
+|- style="line-height:3.0em;"
+!style="padding:1.0em 1.0em 0 0;"| [[File:Coord XYZ.svg|200px|Cartesian system (3d)]]<br />Cartesian&nbsp;<span style="font-size:90%;font-weight:normal;">(three-dimensional)</span>
+!style="padding:1.0em 1.0em 0 0;"| [[File:Cylindrical Coordinates.svg|200px|Cylindrical system]]<br />[[Cylindrical coordinate system|Cylindrical]]
+!style="padding:1.0em 1.0em 0 0;"| [[File:Spherical Coordinates (Colatitude, Longitude).svg|200px|Spherical system]]<br />[[Spherical coordinate system|Spherical]]
+|}
+|}
+
+===Time<!--'Temporal dimension' and 'Temporal dimensions' redirect here-->===
+A '''temporal dimension''', or '''time dimension''',<!--boldface per WP:R#PLA-->  is a dimension of time. Time is often referred to as the "[[Spacetime|fourth dimension]]" for this reason, but that is not to imply that it is a spatial dimension. A temporal dimension is one way to measure physical change. It is perceived differently from the three spatial dimensions in that there is only one of it, and that we cannot move freely in time but subjectively move [[Arrow of time|in one direction]].
+
+The equations used in physics to model reality do not treat time in the same way that humans commonly perceive it. The equations of [[classical mechanics]] are [[T-symmetry|symmetric with respect to time]], and equations of quantum mechanics are typically symmetric if both time and other quantities (such as [[C-symmetry|charge]] and [[Parity (physics)|parity]]) are reversed. In these models, the perception of time flowing in one direction is an artifact of the [[laws of thermodynamics]] (we perceive time as flowing in the direction of increasing [[entropy]]).
+
+The best-known treatment of time as a dimension is [[Henri Poincaré|Poincaré]] and [[Albert Einstein|Einstein]]'s [[special relativity]] (and extended to [[general relativity]]), which treats perceived space and time as components of a four-dimensional [[manifold]], known as [[spacetime]], and in the special, flat case as [[Minkowski space]].
+
+===Additional dimensions===
+
+In physics, three dimensions of space and one of time is the accepted norm. However, there are theories that attempt to unify the four [[fundamental forces]] by introducing [[extra dimensions]]/[[hyperspace]]. Most notably, [[superstring theory]] requires [[10 spacetime dimensions]], and originates from a more fundamental 11-dimensional theory tentatively called [[M-theory]] which subsumes five previously distinct superstring theories. [[Supergravity theory]] also promotes 11D spacetime = 7D hyperspace + 4 common dimensions. To date, no direct experimental or observational evidence is available to support the existence of these extra dimensions. If hyperspace exists, it must be hidden from us by some physical mechanism. One well-studied possibility is that the extra dimensions may be "curled up" at such tiny scales as to be effectively invisible to current experiments. Limits on the size and other properties of extra dimensions are set by particle experiments{{clarify|date=October 2014}} such as those at the [[Large Hadron Collider]].<ref>{{cite journal |author=CMS Collaboration |title=Search for Microscopic Black Hole Signatures at the Large Hadron Collider |journal=Phys. Lett. B |volume=697 |issue= 5|pages=434–453 |year=2011 |doi=10.1016/j.physletb.2011.02.032 |arxiv=1012.3375 |id=CMS-EXO-10-017, CERN-PH-EP-2010-073|bibcode=2011PhLB..697..434C |s2cid=118488193 }}</ref>
+
+In 1921, [[Kaluza-Klein theory]] presented 5D including an extra dimension of space. At the level of [[quantum field theory]], Kaluza–Klein theory unifies [[gravity]] with [[Gauge theory|gauge]] interactions, based on the realization that gravity propagating in small, compact extra dimensions is equivalent to gauge interactions at long distances. In particular when the geometry of the extra dimensions is trivial, it reproduces [[electromagnetism]]. However at sufficiently high energies or short distances, this setup still suffers from the same pathologies that famously obstruct direct attempts to describe [[quantum gravity]]. Therefore, these models still require a [[UV completion]], of the kind that string theory is intended to provide. In particular, superstring theory requires six compact dimensions (6D hyperspace) forming a [[Calabi–Yau manifold]]. Thus Kaluza-Klein theory may be considered either as an incomplete description on its own, or as a subset of string theory model building.
+
+In addition to small and curled up extra dimensions, there may be extra dimensions that instead aren't apparent because the matter associated with our visible universe is localized on a {{nowrap|(3 + 1)-dimensional}} subspace. Thus the extra dimensions need not be small and compact but may be [[large extra dimensions]]. [[D-brane]]s are dynamical extended objects of various dimensionalities predicted by string theory that could play this role. They have the property that open string excitations, which are associated with gauge interactions, are confined to the [[brane]] by their endpoints, whereas the closed strings that mediate the gravitational interaction are free to propagate into the whole spacetime, or "the bulk". This could be related to why gravity is exponentially weaker than the other forces, as it effectively dilutes itself as it propagates into a higher-dimensional volume.
+
+Some aspects of brane physics have been applied to [[Brane cosmology|cosmology]]. For example, brane gas cosmology<ref>{{cite journal |last1=Brandenberger |first1=R. |last2=Vafa |first2=C. |title=Superstrings in the early universe |journal=Nuclear Physics B |volume=316 |issue=2 |pages=391–410 |year=1989 |doi=10.1016/0550-3213(89)90037-0 |bibcode=1989NuPhB.316..391B}}</ref><ref>Scott Watson, [http://www-astro-theory.fnal.gov/Conferences/cosmo02/poster/watson.pdf Brane Gas Cosmology] {{webarchive|url=https://web.archive.org/web/20141027144123/http://www-astro-theory.fnal.gov/Conferences/cosmo02/poster/watson.pdf |date=2014-10-27 }} (pdf).</ref> attempts to explain why there are three dimensions of space using topological and thermodynamic considerations. According to this idea it would be because three is the largest number of spatial dimensions where strings can generically intersect. If initially there are many windings of strings around compact dimensions, space could only expand to macroscopic sizes once these windings are eliminated, which requires oppositely wound strings to find each other and annihilate. But strings can only find each other to annihilate at a meaningful rate in three dimensions, so it follows that only three dimensions of space are allowed to grow large given this kind of initial configuration.
+
+Extra dimensions are said to be [[Universal extra dimension|universal]] if all fields are equally free to propagate within them.
+
+== In computer graphics and spatial data ==
+{{ main | Geometric primitive }}
+
+Several types of digital systems are based on the storage, analysis, and visualization of geometric shapes, including [[Vector graphics editor | illustration software]], [[Computer-aided design]], and [[Geographic information systems]]. Different vector systems use a wide variety of data structures to represent shapes, but almost all are fundamentally based on a set of [[Geometric primitive | geometric primitives ]] corresponding to the spatial dimensions: <ref>[https://saylordotorg.github.io/text_essentials-of-geographic-information-systems/s08-02-vector-data-models.html Vector Data Models], ''Essentials of Geographic Information Systems'', Saylor Academy, 2012</ref>
+* '''Point''' (0-dimensional), a single coordinate in a [[Cartesian coordinate system]].
+* '''Line''' or '''Polyline''' (1-dimensional), usually represented as an ordered list of points sampled from a continuous line, whereupon the software is expected to [[Interpolation | interpolate]] the intervening shape of the line as straight or curved line segments.
+* '''Polygon''' (2-dimensional), usually represented as a line that closes at its endpoints, representing the boundary of a two-dimensional region. The software is expected to use this boundary to partition 2-dimensional space into an interior and exterior.
+* '''Surface''' (3-dimensional), represented using a variety of strategies, such as a [[polyhedron]] consisting of connected polygon faces. The software is expected to use this surface to partition 3-dimensional space into an interior and exterior.
+
+Frequently in these systems, especially GIS and [[Cartography]], a representation of a real-world phenomena may have a different (usually lower) dimension than the phenomenon being represented. For example, a city (a two-dimensional region) may be represented as a point, or a road (a three-dimensional volume of material) may be represented as a line. This ''dimensional generalization'' correlates with tendencies in spatial cognition. For example, asking the distance between two cities presumes a conceptual model of the cities as points, while giving directions involving travel "up," "down," or "along" a road imply a one-dimensional conceptual model. This is frequently done for purposes of data efficiency, visual simplicity, or cognitive efficiency, and is acceptable if the distinction between the representation and the represented is understood, but can cause confusion if information users assume that the digital shape is a perfect representation of reality (i.e., believing that roads really are lines).
+
+== Networks and dimension ==
+
+Some complex [[Network science|networks]] are characterized by [[fractal dimension]]s.<ref>{{cite journal|last1=Song |first1=Chaoming|  author2-link=Shlomo Havlin  |title=Self-similarity of complex networks |journal=Nature |year=2005 |volume=433  |doi=10.1038/nature03248 |pmid=15674285 |arxiv=cond-mat/0503078v1 |bibcode=2005Natur.433..392S |last2=Havlin |first2=Shlomo |last3=Makse |first3=Hernán A. |issue=7024|pages=392–395|s2cid=1985935}}</ref>  The concept of dimension can be generalized to include networks embedded in space.<ref>{{cite journal |title=Dimension of spatially embedded networks |journal=Nature Physics |year=2011 |bibcode=2011NatPh...7..481D|doi=10.1038/nphys1932 |last1=Daqing |first1=Li |last2=Kosmidis |first2=Kosmas |last3=Bunde |first3=Armin |last4=Havlin |first4=Shlomo |author4-link=Shlomo Havlin|volume=7 |issue=6 |pages=481 |url=http://polymer.bu.edu/hes/articles/dkbh11.pdf }}</ref> The dimension characterize their spatial constraints.
+
+== In literature ==
+{{main|Fourth dimension in literature}}
+
+[[Science fiction]] texts often mention the concept of "dimension" when referring to [[Parallel universes in fiction|parallel or alternate universes]] or other imagined [[Plane (esotericism)|planes of existence]]. This usage is derived from the idea that to travel to parallel/alternate universes/planes of existence one must travel in a direction/dimension besides the standard ones. In effect, the other universes/planes are just a small distance away from our own, but the distance is in a fourth (or higher) spatial (or non-spatial) dimension, not the standard ones.
+
+One of the most heralded science fiction stories regarding true geometric dimensionality, and often recommended as a starting point for those just starting to investigate such matters, is the 1884 novella ''[[Flatland]]'' by Edwin A. Abbott. Isaac Asimov, in his foreword to the Signet Classics 1984 edition, described ''Flatland'' as "The best introduction one can find into the manner of perceiving dimensions."
+
+The idea of other dimensions was incorporated into many early science fiction stories, appearing prominently, for example, in [[Miles J. Breuer]]'s ''The Appendix and the Spectacles'' (1928) and [[Murray Leinster]]'s ''The Fifth-Dimension Catapult'' (1931); and appeared irregularly in science fiction by the 1940s.  Classic stories involving other dimensions include [[Robert A. Heinlein]]'s ''[[—And He Built a Crooked House]]'' (1941), in which a California architect designs a house based on a three-dimensional projection of a tesseract; and [[Alan E. Nourse]]'s ''Tiger by the Tail'' and ''The Universe Between'' (both 1951). Another reference is [[Madeleine L'Engle]]'s novel ''[[A Wrinkle In Time]]'' (1962), which uses the fifth dimension as a way for "tesseracting the universe" or "folding" space in order to move across it quickly. The fourth and fifth dimensions are also a key component of the book ''[[The Boy Who Reversed Himself]]'' by [[William Sleator]].
+
+== In philosophy ==
+
+[[Immanuel Kant]], in 1783, wrote: "That everywhere space (which is not itself the boundary of another space) has three dimensions and that space in general cannot have more dimensions is based on the proposition that not more than three lines can intersect at right angles in one point. This proposition cannot at all be shown from concepts, but rests immediately on intuition and indeed on pure intuition ''a priori'' because it is apodictically (demonstrably) certain."<ref>''[[Prolegomena to Any Future Metaphysics That Will Be Able to Present Itself as a Science|Prolegomena]]'', § 12</ref>
+
+"Space has Four Dimensions" is a short story published in 1846 by German philosopher and [[Experimental psychology|experimental psychologist]] [[Gustav Fechner]] under the [[pseudonym]] "Dr. Mises". The protagonist in the tale is a shadow who is aware of and able to communicate with other shadows, but who is trapped on a two-dimensional surface. According to Fechner, this "shadow-man" would conceive of the third dimension as being one of time.<ref>{{cite journal |last=Banchoff |first=Thomas F. |journal=Interdisciplinary Science Reviews |title=From Flatland to Hypergraphics: Interacting with Higher Dimensions |year=1990 |url=http://www.geom.uiuc.edu/~banchoff/ISR/ISR.html |doi=10.1179/030801890789797239 |volume=15 |issue=4 |page=364 |url-status=live |archive-url=https://web.archive.org/web/20130414023125/http://www.geom.uiuc.edu/~banchoff/ISR/ISR.html |archive-date=2013-04-14 }}</ref> The story bears a strong similarity to the "[[Allegory of the Cave]]" presented in [[Plato]]'s ''[[The Republic (Plato)|The Republic]]'' ([[Circa|c.]] 380&nbsp;BC).
+
+Simon Newcomb wrote an article for the ''Bulletin of the American Mathematical Society'' in 1898 entitled "The Philosophy of Hyperspace".<ref>{{cite journal |last=Newcomb |first=Simon |year=1898 |url=https://archive.org/details/cihm_42903 |title=The Philosophy of Hyperspace |journal=Bulletin of the American Mathematical Society |doi=10.1090/S0002-9904-1898-00478-0 |volume=4 |issue=5 |page=187 |doi-access=free }}</ref> [[Linda Dalrymple Henderson]] coined the term "hyperspace philosophy", used to describe writing that uses higher dimensions to explore [[Metaphysics|metaphysical]] themes, in her 1983 thesis about the fourth dimension in early-twentieth-century art.<ref>{{cite journal |last=Kruger |first=Runette |journal=Spaces of Utopia: An Electronic Journal |issue=5 |year=2007 |title=Art in the Fourth Dimension: Giving Form to Form – The Abstract Paintings of Piet Mondrian |page=11 |url=http://ler.letras.up.pt/uploads/ficheiros/4351.pdf |url-status=live |archive-url=https://web.archive.org/web/20110929071218/http://ler.letras.up.pt/uploads/ficheiros/4351.pdf |archive-date=2011-09-29 }}</ref> Examples of "hyperspace philosophers" include [[Charles Howard Hinton]], the first writer, in 1888, to use the word "tesseract";<ref>{{citation |title=The Math Book: From Pythagoras to the 57th Dimension, 250 Milestones in the History of Mathematics |first=Clifford A. |last=Pickover |author-link=Clifford Pickover |publisher=Sterling Publishing |year=2009 |isbn=978-1-4027-5796-9 |chapter=Tesseract |page=282 |chapter-url=https://books.google.com/books?id=JrslMKTgSZwC&pg=PA282 |url-status=live |archive-url=https://web.archive.org/web/20170330181025/https://books.google.com/books?id=JrslMKTgSZwC&pg=PA282 |archive-date=2017-03-30 }}.</ref> and the Russian [[Esotericism|esotericist]] [[P. D. Ouspensky]].
+
+== More dimensions ==
+{{General geometry |concepts}}
+{{div col|content=
+* Degrees of freedom
+** in [[Degrees of freedom (mechanics)|mechanics]]
+** in [[Degrees of freedom (physics and chemistry)|physics and chemistry]]
+** in [[Degrees of freedom (statistics)|statistics]]
+* [[Exterior dimension]]
+* [[Hurst exponent]]
+* [[Isoperimetric dimension]]
+* [[Metric dimension (graph theory)|Metric dimension]]
+* [[Order dimension]]
+* [[q-dimension|''q''-dimension]] <!--redirect/stub needed-->
+** {{nowrap|[[Fractal dimension|Fractal (''q'' &#61; 1)]]}}
+** {{nowrap|[[Correlation dimension|Correlation (''q'' &#61; 2)]]}}
+}}
+
+== See also ==
+{{div col|content=
+* [[Dimension (data warehouse)]]
+** [[Dimension table]]s
+* [[Dimensional analysis]]
+* [[Hyperspace (disambiguation)]]
+* [[Intrinsic dimension]]
+* [[Multidimensional analysis]]
+* [[Space-filling curve]]
+* [[Mean dimension]]
+}}
+
+===Topics by dimension===
+{{div col|content=
+* Zero
+** [[Point (geometry)|Point]]
+** [[Zero-dimensional space]]
+** [[Integer]]
+* One
+** [[Line (geometry)|Line]]
+** [[Curve]]
+** [[Graph (discrete mathematics)|Graph (combinatorics)]]
+** [[Real number]]
+* Two
+** [[Complex number]]
+** [[Cartesian coordinate system]]
+** [[List of uniform tilings]]
+** [[Surface (topology)|Surface]]
+* Three
+** [[Platonic solid]]
+** [[Stereoscopy|Stereoscopy (3-D imaging)]]
+** [[3-manifold]]
+** [[Knot (mathematics)|Knots]]
+* Four
+** [[Spacetime]]
+** [[Four-dimensional space|Fourth spatial dimension]]
+** [[Convex regular 4-polytope]]
+** [[Quaternion]]
+** [[4-manifold]]
+** [[Fourth dimension in art]]
+** [[Fourth dimension in literature]]
+* Higher dimensions
+** in mathematics
+*** [[Octonion]]
+*** [[Vector space]]
+*** [[Curse of dimensionality]]
+** in physics
+*** [[Kaluza–Klein theory]]
+*** [[String theory]]
+*** [[M-theory]]
+* Infinite
+** [[Hilbert space]]
+** [[Function space]]
+}}
+
+== References ==
+{{more citations needed|date=May 2010}}
+{{reflist}}
+
+== Further reading ==
+*{{cite book |first=Katta G. |last=Murty |chapter=1. Systems of Simultaneous Linear Equations |chapter-url=http://www.worldscientific.com/doi/suppl/10.1142/8261/suppl_file/8261_chap01.pdf |title=Computational and Algorithmic Linear Algebra and n-Dimensional Geometry |publisher=World Scientific Publishing |year=2014  |isbn=978-981-4366-62-5 |doi=10.1142/8261 }}
+*{{cite book |author-link=Edwin A. Abbott |first=Edwin A. |last=Abbott |title=Flatland: A Romance of Many Dimensions |publisher=Seely & Co. |location=London |year=1884 |title-link=Flatland}}
+**{{cite book |author-mask=1 |first=Edwin A. |last=Abbott |title=Flatland: ... |publisher=[[Project Gutenberg]] |url=https://www.gutenberg.org/ebooks/201}}
+**{{cite book |author-mask=1 |first1=Edwin A. |last1=Abbott |first2=Ian |last2=Stewart |author-link2=Ian Stewart (mathematician) |title=The Annotated Flatland: A Romance of Many Dimensions |url=https://books.google.com/books?id=mvE4DgAAQBAJ |date=2008 |publisher=Basic Books |isbn=978-0-7867-2183-2 }}
+*{{cite book |author-link=Thomas Banchoff |first=Thomas F. |last=Banchoff |title=Beyond the Third Dimension: Geometry, Computer Graphics, and Higher Dimensions |url=https://books.google.com/books?id=cstzQgAACAAJ |year=1996 |publisher=Scientific American Library |isbn=978-0-7167-6015-3}}
+*{{cite book |author-link=Clifford A. Pickover |first=Clifford A. |last=Pickover |title=Surfing through Hyperspace: Understanding Higher Universes in Six Easy Lessons |url=https://books.google.com/books?id=LOUiWjsgue8C |date=2001 |publisher=[[Oxford University Press]] |isbn=978-0-19-992381-6}}
+*{{cite book |author-link=Rudy Rucker |first=Rudy |last=Rucker |title=The Fourth Dimension: Toward a Geometry of Higher Reality |title-link=The Fourth Dimension (book) |date=2014 |orig-year=1984 |publisher=Courier Corporation |isbn=978-0-486-77978-2}} [https://books.google.com/books?id=Vgk7BAAAQBAJ Google preview]
+* {{cite book |first=Michio |last=Kaku |author-link=Michio Kaku |title=Hyperspace, a Scientific Odyssey Through the 10th Dimension |publisher=Oxford University Press  |isbn=978-0-19-286189-4 |year=1994 |title-link=Hyperspace (book)}}
+* {{cite book |first=Lawrence M. |last=Krauss |author-link=Lawrence M. Krauss |title=Hiding in the Mirror|publisher=Viking Press |isbn=978-0-670-03395-9 |year=2005 |title-link=Hiding in the Mirror}}
+
+== External links ==
+{{wikiquote}}
+{{Commons category|Dimensions}}
+{{EB1911 poster|Dimension}}
+* {{cite web |last=Copeland |first=Ed |title=Extra Dimensions |url=http://www.sixtysymbols.com/videos/dimensions.htm |website=Sixty Symbols |publisher=[[Brady Haran]] for the [[University of Nottingham]] |year=2009}}
+
+{{Dimension topics}}
+{{tensors}}
+
+<!--Eponymous category:-->
+
+[[Category:Dimension| ]]
+<!--Other categories:-->
+[[Category:Concepts in physics]]
+[[Category:Abstract algebra]]
+[[Category:Geometric measurement]]
+[[Category:Mathematical concepts]]

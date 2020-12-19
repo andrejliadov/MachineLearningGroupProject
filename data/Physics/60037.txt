@@ -1,0 +1,336 @@
+In thermodynamics, a physical property is any property that is measurable, and whose value describes a state of a physical system. Thermodynamic properties are defined as characteristic features of a system, capable of specifying the system's state. Some constants, such as the [[ideal gas constant]], {{mvar|R}}, do not describe the state of a system, and so are not properties.  On the other hand, some constants, such as {{mvar|K<sub>f</sub>}} (the freezing point depression constant, or [[cryoscopic constant]]), depend on the identity of a substance, and so may be considered to describe the state of a system, and therefore may be considered physical properties.
+
+"Specific" properties are expressed on a per mass basis.  If the units were changed from per mass to, for example, per mole, the property would remain as it was (i.e., [[Intensive and extensive properties|intensive or extensive]]). 
+
+==Regarding work and heat==
+
+[[Work (thermodynamics)|Work]] and [[heat]] are not thermodynamic properties, but rather ''[[process function|process quantities]]:'' flows of energy across a system boundary. Systems do not ''contain'' work, but can ''perform'' work, and likewise, in formal thermodynamics, systems do not ''contain'' heat, but can ''transfer'' heat. Informally, however, a difference in the energy of a system that occurs solely because of a difference in its temperature is commonly called ''heat'', and the energy that flows across a boundary as a result of a temperature difference is "heat".
+
+Altitude (or elevation) is usually not a thermodynamic property.  Altitude can help specify the location of a system, but that does not describe the state of the system.  An exception would be if the effect of gravity need to be considered in order to describe a state, in which case altitude could indeed be a thermodynamic property.
+
+{| class="wikitable" style="text-align:center"
+|+[[Thermodynamic]] [[physical property|properties]] and their characteristics
+!Property!!Symbol!!Units!![[Intensive and extensive properties|Extensive?]]!![[Intensive and extensive properties|Intensive?]]!![[Conjugate variables (thermodynamics)|Conjugate]]!![[Thermodynamic potential|Potential?]]
+|-
+|style="text-align:left"|[[activity (chemistry)|Activity]]
+|{{mvar|a}}
+|{{spaced ndash}}
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Chemical potential]]
+|{{mvar|μ<sub>i</sub>}}
+|kJ/mol
+|
+|{{aye}}
+|Particle<br /> number {{mvar|N<sub>i</sub>}}
+|
+|-
+|style="text-align:left"|[[Compressibility]] <small>(adiabatic)</small>
+|{{mvar|β<sub>S</sub>}}, {{mvar|κ}}
+|Pa<sup>−1</sup>
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Compressibility]] <small>(isothermal)</small>
+|{{mvar|β<sub>T</sub>}}, {{mvar|κ}}
+|Pa<sup>−1</sup>
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Cryoscopic constant]]<ref>{{Citation
+  | last = Aylward
+  | first = Gordon
+  | author-link = Gordon Aylward
+  | last2 = Findlay
+  | first2 = Tristan
+  | author2-link = Tristan Findlay
+  | title = SI Chemical Data 5th ed.
+  | place = Sweden
+  | publisher = John Wiley & Sons
+  | year = 2002
+  | edition = 5
+  | pages = 202
+  | isbn = 0-470-80044-5}}</ref>
+|{{mvar|K<sub>f</sub>}}
+|K·kg/mol
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Density]]
+|{{mvar|ρ}}
+|kg/m<sup>3</sup>
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Ebullioscopic constant]]
+|{{mvar|K<sub>b</sub>}}
+|K·kg/mol
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Enthalpy]]
+|{{mvar|H}}
+|J
+|{{aye}}
+|
+|
+|{{aye}}
+|-
+|style="text-align:left"|{{space|3}} [[Specific enthalpy]]
+|{{mvar|h}} 
+|J/kg
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Entropy]]
+|{{mvar|S}}
+|J/K
+|{{aye}}
+|
+|Temperature {{mvar|T}}
+|{{aye}} <small>([[Free entropy|entropic]])</small>
+|-
+|style="text-align:left"|{{space|3}} Specific entropy
+|{{mvar|s}}
+|J/(kg K)
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Fugacity]]
+|{{mvar|f}}
+|N/m<sup>2</sup>
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Gibbs free energy]]
+|{{mvar|G}}
+|J
+|{{aye}}
+|
+|
+|{{aye}}
+|-
+|style="text-align:left"|{{space|3}} Specific Gibbs free entropy
+|{{mvar|g}}
+|J/(kg K)
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Free entropy|Gibbs free entropy]]
+|{{mvar|Ξ}}
+|J/K
+|{{aye}}
+|
+|
+|{{aye}} <small>([[Free entropy|entropic]])</small>
+|-
+|style="text-align:left"|[[Grand potential|Grand / Landau potential]]
+|{{mvar|Ω}}
+|J
+|{{aye}}
+|
+|
+|{{aye}}
+|-
+|style="text-align:left"|[[Heat capacity]] <small>(constant pressure)</small>
+|{{mvar|C<sub>p</sub>}} 
+|J/K
+|{{aye}}
+|
+|
+|
+|-
+|style="text-align:left"|{{space|3}} [[Specific heat capacity]]<br/>{{space|6}}<small>(constant pressure)</small>
+|{{mvar|c<sub>p</sub>}} 
+|J/(kg·K)
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Heat capacity]] <small>(constant volume)</small>
+|{{mvar|C<sub>v</sub>}}
+|J/K
+|{{aye}}
+|
+|
+|
+|-
+|style="text-align:left"|{{space|3}} [[Specific heat capacity]]<br/>{{space|6}}<small>(constant volume)</small>
+|{{mvar|c<sub>v</sub>}}
+|J/(kg·K)
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Helmholtz free energy]]
+|{{mvar|A}}, {{mvar|F}}
+|J
+|{{aye}}
+|
+|
+|{{aye}}
+|-
+|style="text-align:left"|[[Free entropy|Helmholtz free entropy]]
+|{{mvar|Φ}}
+|J/K
+|{{aye}}
+|
+|
+|{{aye}} <small>([[Free entropy|entropic]])</small>
+|-
+|style="text-align:left"|[[Internal energy]]
+|{{mvar|U}}
+|J
+|{{aye}}
+|
+|
+|{{aye}}
+|-
+|style="text-align:left"|{{space|3}} [[Specific internal energy]]
+|{{mvar|u}}
+|J/kg
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Internal pressure]]
+|{{mvar|π<sub>T</sub>}}
+|Pa
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Mass]]
+|{{mvar|m}}
+|kg
+|{{aye}}
+|
+|
+|
+|-
+|style="text-align:left"|[[Particle number]]
+|{{mvar|N<sub>i</sub>}}
+|{{spaced ndash}}
+|{{aye}}
+|
+|Chemical<br /> potential {{mvar|μ<sub>i</sub>}}
+|
+|-
+|style="text-align:left"|[[Pressure]]
+|{{mvar|p}}
+|Pa
+|
+|{{aye}}
+|Volume {{mvar|V}}
+|
+|-
+|style="text-align:left"|[[Thermodynamic temperature|Temperature]]
+|{{mvar|T}}
+|K
+|
+|{{aye}}
+|Entropy {{mvar|S}}
+|
+|-
+|style="text-align:left"|[[Thermal conductivity]]
+|{{mvar|k}}
+|W/(m·K)
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Thermal diffusivity]]
+|{{mvar|α}} 
+|m<sup>2</sup>/s
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Thermal expansion]] <small>(linear)</small>
+|{{mvar|α<sub>L</sub>}}
+|K<sup>−1</sup>
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Thermal expansion]] <small>(area)</small>
+|{{mvar|α<sub>A</sub>}}
+|K<sup>−1</sup>
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Thermal expansion]] <small>(volumetric)</small>
+|{{mvar|α<sub>V</sub>}}
+|K<sup>−1</sup>
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Vapor quality]]<ref name=boles>{{Cite book  | last1 = Cengel | first1 = Yunus A. | last2 = Boles | first2 = Michael A. | title = Thermodynamics: an engineering approach | year = 2002 | publisher = McGraw-Hill | location = Boston  | isbn = 0-07-121688-X | pages =  79}}</ref>
+|{{mvar|χ}}
+|{{spaced ndash}}
+|
+|{{aye}}
+|
+|
+|-
+|style="text-align:left"|[[Volume (thermodynamics)|Volume]]
+|{{mvar|V}} 
+|m<sup>3</sup>
+|{{aye}}
+|
+|Pressure {{mvar|P}}
+|
+|-
+|style="text-align:left"|{{spaces|3}} [[Specific volume]]
+|{{mvar|v}} 
+|m<sup>3</sup>/kg
+|
+|{{aye}}
+|
+|
+|}
+
+==See also==
+* [[Conjugate variables (thermodynamics)|Conjugate variables]]
+* [[Dimensionless number|Dimensionless numbers]]
+* [[Intensive and extensive properties]]
+* [[Thermodynamic databases for pure substances]]
+* [[Thermodynamic variable]]
+
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:List Of Thermodynamic Properties}}
+[[Category:Physics-related lists|Thermodynamic properties]]

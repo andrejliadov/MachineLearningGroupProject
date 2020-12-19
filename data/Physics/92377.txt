@@ -1,0 +1,523 @@
+{{short description|Type of magnet in which the magnetic field is produced by the flow of electric current}}
+{{Broader|Electromagnetism}}
+{{pp-move|small=yes}}
+
+[[File:Simple electromagnet2.gif|thumb|A simple electromagnet consisting of a coil of wire wrapped around an iron core.  A core of ferromagnetic material like iron serves to increase the magnetic field created.<ref name="Hyperphysics" />  The strength of magnetic field generated is proportional to the amount of current through the winding.<ref name="Hyperphysics" />]]
+[[File:VFPt Solenoid correct2.svg|thumb|Magnetic field produced by a [[solenoid]] (coil of wire).  This drawing shows a cross section through the center of the coil.  The crosses are wires in which current is moving into the page; the dots are wires in which current is moving up out of the page.]]
+
+An '''electromagnet''' is a type of [[magnet]] in which the [[magnetic field]] is produced by an [[electric current]].  Electromagnets usually consist of wire wound into a [[electromagnetic coil|coil]].  A current through the wire creates a magnetic field which is concentrated in the hole, denoting the centre of the coil. The magnetic field disappears when the current is turned off.  The wire turns are often wound around a [[magnetic core]] made from a [[ferromagnetic]] or [[ferrimagnetic]] material such as [[iron]]; the magnetic core concentrates the [[magnetic flux]] and makes a more powerful magnet.
+
+The main advantage of an electromagnet over a [[permanent magnet]] is that the magnetic field can be quickly changed by controlling the amount of electric current in the winding. However, unlike a permanent magnet that needs no power, an electromagnet requires a continuous supply of current to maintain the magnetic field.
+
+Electromagnets are widely used as components of other electrical devices, such as [[Electric motor|motors]], [[Electric generator|generators]], [[Solenoid#Applications|electromechanical solenoid]]s, [[relay]]s, [[loudspeaker]]s, [[hard disk]]s, [[Magnetic resonance imaging|MRI machines]], scientific instruments, and [[magnetic separation]] equipment.  Electromagnets are also employed in industry for picking up and moving heavy iron objects such as scrap iron and steel.<ref name="Merzouki" />
+
+== History ==
+{{multiple image
+| align = right
+| direction = horizontal
+| header   =
+| image1   = Sturgeon electromagnet.png
+| caption1 = Sturgeon's electromagnet, 1824
+| width1   = 150
+| image2   = Joseph Henry electromagnet.png
+| caption2 = One of Henry's electromagnets that could lift hundreds of pounds, 1830s
+| width2   = 163
+| image3   = Joseph Henry electromagnet closeup.jpg
+| caption3 = Closeup of a large Henry electromagnet
+| width3   = 140
+| footer   =
+}}
+
+Danish scientist [[Hans Christian Ørsted]] discovered in 1820 that electric currents create magnetic fields.  British scientist [[William Sturgeon]] invented the electromagnet in 1824.<ref>{{cite journal
+  | last = Sturgeon
+  | first = W.
+  | title = Improved Electro Magnetic Apparatus
+  | journal = Trans. Royal Society of Arts, Manufactures, & Commerce
+  | volume = 43
+  | pages = 37–52
+  | year = 1825
+  }} cited in {{cite book
+ |last        = Miller
+ |first       = T.J.E
+ |title       = Electronic Control of Switched Reluctance Machines
+ |publisher   = Newnes
+ |year        = 2001
+ |pages       = 7
+ |url         = https://books.google.com/books?id=E8VroIWyjB8C&pg=PA7
+ |isbn        = 978-0-7506-5073-1
+ |url-status     = live
+ |archive-url  = https://web.archive.org/web/20161203032419/https://books.google.com/books?id=E8VroIWyjB8C&pg=PA7
+ |archive-date = 2016-12-03
+}}</ref><ref>Windelspecht, Michael. [https://books.google.com/books?id=hX1jPbJVSu4C&pg=PR22&lpg=PR22&dq=%22William+Sturgeon%22+electromagnet+1825&source=web&ots=BhXj3j9j4t&sig=6gI6QNC-Yc5YMCY5RpEE43eIfgU&hl=en&sa=X&oi=book_result&resnum=9&ct=result#PPR22,M1 Groundbreaking Scientific Experiments, Inventions, and Discoveries of the 19th Century] {{webarchive|url=https://web.archive.org/web/20170111015300/https://books.google.com/books?id=hX1jPbJVSu4C&pg=PR22&lpg=PR22&dq=%22William+Sturgeon%22+electromagnet+1825&source=web&ots=BhXj3j9j4t&sig=6gI6QNC-Yc5YMCY5RpEE43eIfgU&hl=en&sa=X&oi=book_result&resnum=9&ct=result |date=2017-01-11 }}, xxii, Greenwood Publishing Group, 2003, {{ISBN|0-313-31969-3}}.</ref> His first electromagnet was a horseshoe-shaped piece of iron that was wrapped with about 18 turns of bare copper wire ([[Insulator (electricity)|insulated]] wire didn't exist yet). The iron was [[varnish]]ed to insulate it from the windings. When a current was passed through the coil, the iron became magnetized and attracted other pieces of iron; when the current was stopped, it lost magnetization. Sturgeon displayed its power by showing that although it only weighed seven ounces (roughly 200 grams), it could lift nine pounds (roughly 4 kilos) when the current of a single-cell power supply was applied. However, Sturgeon's magnets were weak because the uninsulated wire he used could only be wrapped in a single spaced out layer around the core, limiting the number of turns.
+
+Beginning in 1830, US scientist [[Joseph Henry]] systematically improved and popularised the electromagnet.<ref name="Cavicchi">{{cite document
+ |last        = Cavicchi
+ |first       = Elizabeth
+ |title       = Series and Parallel Experimenting with Electromagnets
+ |publisher   = Pavia Project Physics, Univ. of Pavia, Italy
+ |url         = http://ppp.unipv.it/Collana/Pages/Libri/Saggi/Volta%20and%20the%20History%20of%20Electricity/V%26H%20Sect4/V%26H%20387-407.pdf
+ |accessdate  = August 22, 2015
+ |url-status     = live
+ |archive-url  = https://web.archive.org/web/20160315231307/http://ppp.unipv.it/Collana/Pages/Libri/Saggi/Volta%20and%20the%20History%20of%20Electricity/V%26H%20Sect4/V%26H%20387-407.pdf
+ |archive-date = March 15, 2016
+}}</ref><ref name="Sherman">{{cite web
+ |last        = Sherman
+ |first       = Roger
+ |title       = Joseph Henry's contributions to the electromagnet and the electric motor
+ |website        = The Joseph Henry Papers
+ |publisher   = The Smithsonian Institution
+ |year        = 2007
+ |url         = http://siarchives.si.edu/history/exhibits/henry/electromagnetism
+ |accessdate  = 2008-08-27
+ |url-status     = live
+ |archive-url  = https://web.archive.org/web/20120608070442/http://siarchives.si.edu/history/exhibits/henry/electromagnetism
+ |archive-date = 2012-06-08
+}}</ref>  By using wire insulated by silk thread, and inspired by [[Johann Schweigger|Schweigger]]'s use of multiple turns of wire to make a [[galvanometer]],<ref>{{cite web|title=Schweigger Multiplier – 1820|url=https://nationalmaglab.org/education/magnet-academy/history-of-electricity-magnetism/museum/schweigger-multiplier|website=Maglab|publisher=National High Magnetic Field Laboratory|accessdate=17 October 2017|url-status=live|archive-url=https://web.archive.org/web/20171017202030/https://nationalmaglab.org/education/magnet-academy/history-of-electricity-magnetism/museum/schweigger-multiplier|archive-date=17 October 2017}}</ref> he was able to wind multiple layers of wire on cores, creating powerful magnets with thousands of turns of wire, including one that could support {{convert|2063|lb|kg|abbr=on}}. The first major use for electromagnets was in [[telegraph sounder]]s.
+
+The [[magnetic domain]] theory of how ferromagnetic cores work was first proposed in 1906 by French physicist [[Pierre-Ernest Weiss]], and the detailed modern quantum mechanical theory of ferromagnetism was worked out in the 1920s by [[Werner Heisenberg]], [[Lev Landau]], [[Felix Bloch]] and others.
+
+== Applications of electromagnets ==
+[[File:Industrial lifting magnet.jpg|thumb|upright|Industrial electromagnet lifting scrap iron, 1914]]
+
+A ''portative electromagnet'' is one designed to just hold material in place; an example is a lifting magnet. A ''tractive electromagnet'' applies a force and moves something.<ref name="Marks 105">{{cite book |first=Chester L. |last=Dawes |chapter=Electrical Engineering |title=Standard Handbook for Mechanical Engineers |edition=7th |editor-first=Theodore |editor-last=Baumeister |publisher=McGraw-Hill |date=1967 |at=p.&nbsp;15-105<!-- hypenated pages! -->}}</ref>
+
+Electromagnets are very widely used in electric and [[electromechanical]] devices, including:
+* [[electric motor|Motors]] and [[Electric generator|generators]]
+* [[Transformer]]s
+* [[Pickup (music technology)|Pickup]]s
+* [[Relay]]s
+* [[Electric bell]]s and buzzers
+* [[Loudspeaker]]s and [[headphone]]s
+* [[Actuator]]s such as valves
+* [[Magnetic recording]] and data storage equipment: [[tape recorder]]s, [[VCR]]s, [[hard disk]]s
+* [[MRI]] machines
+* Scientific equipment such as [[mass spectrometer]]s
+* [[Particle accelerator]]s
+* [[Magnetic lock]]s
+* [[Magnetic separation]] equipment, used for separating magnetic from nonmagnetic material, for example separating ferrous metal from other material in scrap.
+* Industrial lifting magnets
+* [[magnetic levitation]], used in a [[maglev train]] or trains
+* [[Induction heating]] for cooking, manufacturing, and [[hyperthermia therapy]]
+
+{{multiple image
+|align = left
+|image1 =
+|width1 = 160
+|caption1 = Electromagnet used in the [[Tevatron]] [[particle accelerator]], Fermilab, USA
+|image2 = AGEM5520.jpg
+|width2 = 113
+|caption2 = Laboratory electromagnet. Produces 2 T field with 20 A current.
+|image3 = ICP-SFMS Magnet 1.JPG
+|width3 = 80
+|caption3 = Magnet in a [[mass spectrometer]]
+|image4 = Stator eines Universalmotor.JPG
+|width4 = 140
+|caption4 = AC electromagnet on the [[stator]] of an [[electric motor]]
+|image5 = DoorBell 001.jpg
+|width5 = 205
+|caption5 = Magnets in an [[electric bell]]
+|image6   = Aust.-Synchrotron,-Sextupole-Focusing-Magnet,-14.06.2007.jpg
+|caption6 = Sextupole focusing magnet in a synchrotron
+|width6   = 79
+
+}}
+{{Clear}}
+
+==Simple solenoid==
+
+{{main|Solenoid}}
+
+A common tractive electromagnet is a uniformly-wound [[solenoid]] and plunger. The solenoid is a coil of wire, and the plunger is made of a material such as soft iron.  Applying a current to the solenoid applies a force to the plunger and may make it move. The plunger stops moving when the forces upon it are balanced. For example, the forces are balanced when the plunger is centered in the solenoid.
+
+The maximum uniform pull happens when one end of the plunger is at the middle of the solenoid. An approximation for the force {{mvar|F}} is<ref name="Marks 105"/>
+:<math>F = C A n I / l</math>
+where {{mvar|C}} is a proportionality constant, {{mvar|A}} is the cross-sectional area of the plunger, {{mvar|n}} is the number of turns in the solenoid, {{mvar|I}} is the current through the solenoid wire, and {{mvar|l}} is the length of the solenoid. For units using inches, pounds force, and amperes with long, slender, solenoids, the value of {{mvar|C}} is around 0.009 to 0.010&nbsp;psi (maximum pull pounds per square inch of plunger cross-sectional area).<ref name="Marks 105-6">{{harvnb|Dawes|1967|loc=p. 15-105–15-106}}</ref> For example, a 12-inch long coil ({{math|1=''l''=12 in}}) with a long plunger of 1-square inch cross section ({{math|1=''A''=1 in<sup>2</sup>}}) and 11,200 [[ampere-turn]]s ({{math|1=''n I''=11,200 Aturn}}) had a maximum pull of 8.75 pounds (corresponding to {{math|1=''C''=0.0094 psi}}).<ref>{{harvnb|Dawes|1967|loc=p. 15-106, Table 25}}</ref>
+
+The maximum pull is increased when a magnetic stop is inserted into the solenoid. The stop becomes a magnet that will attract the plunger; it adds little to the solenoid pull when the plunger is far away but dramatically increases the pull when they are close. An approximation for the pull {{mvar|P}} is<ref>{{harvnb|Dawes|1967|loc=p. 15-106}}</ref>
+:<math>P = A n I [(n I / l_\mathrm{a}^2C_1^2) + (C /l)] = (A n^2 I^2 / l_\mathrm{a}^2C_1^2) + (C A n I/l)</math>
+Here {{math|''l''<sub>a</sub>}} is the distance between the end of the stop and the end of the plunger. The additional constant {{math|''C''<sub>1</sub>}} for units of inches, pounds, and amperes with slender solenoids is about 2660<!-- units -->. The second term within the bracket represents the same force as the stop-less solenoid above; the first term represents the attraction between the stop and the plunger.
+
+Some improvements can be made on the basic design. The ends of the stop and plunger are often conical. For example, the plunger may have a pointed end that fits into a matching recess in the stop. The shape makes the solenoid's pull more uniform as a function of separation. Another improvement is to add a magnetic return path around the outside of the solenoid (an "iron-clad solenoid").<ref>{{harvnb|Dawes|1967|loc=p. 15-106}}</ref><ref>{{cite book |last=Underhill |first=Charles R. |date=1906 |title=The Electromagnet |publisher=D. Van Nostrand |page=113 |url=https://books.google.com/books?id=n9tYAAAAYAAJ&pg=PA113 |url-status=live |archive-url=https://web.archive.org/web/20160501182508/https://books.google.com/books?id=n9tYAAAAYAAJ&pg=PA113&lpg=PA113&hl=en&f=false |archive-date=2016-05-01 }}</ref> The magnetic return path, just as the stop, has little impact until the air gap is small.
+
+== Physics ==
+[[File:Electromagnetism.svg|thumb|Current (I) through a wire produces a magnetic field (B). The field is oriented according to the [[Right-hand rule#Electromagnetics|right-hand rule]].]]
+[[File:Magnetic field of wire loop.svg|thumb|The magnetic field lines of a current-carrying loop of wire pass through the center of the loop, concentrating the field there]]
+[[File:Elecmagnet.png|thumb|The magnetic field generated by passing a current through a coil]]
+An electric current flowing in a wire creates a magnetic field around the wire, due to [[Ampere's circuital law|Ampere's law]] (see drawing below).   To concentrate the magnetic field, in an electromagnet the wire is wound into a [[electromagnetic coil|coil]] with many turns of wire lying side by side.<ref name="Merzouki" /> The magnetic field of all the turns of wire passes through the center of the coil, creating a strong magnetic field there.<ref name="Merzouki" /> A coil forming the shape of a straight tube (a [[helix]]) is called a [[solenoid]].<ref name="Hyperphysics" /><ref name="Merzouki" />
+
+The direction of the magnetic field through a coil of wire can be found from a form of the [[Right-hand rule#Electromagnetics|right-hand rule]].<ref>{{cite book
+ |last1        = Millikin
+ |first1       = Robert
+ |first2      = Edwin
+ |last2       = Bishop
+ |title       = Elements of Electricity
+ |publisher   = American Technical Society
+ |year        = 1917
+ |location    = Chicago
+ |pages       = [https://archive.org/details/elementselectri00bishgoog/page/n140 125]
+ |url         = https://archive.org/details/elementselectri00bishgoog
+ }}</ref><ref>{{cite book
+ |last        = Fleming
+ |first       = John Ambrose
+ |title       = Short Lectures to Electrical Artisans, 4th Ed
+ |publisher   = E.& F. N. Spon
+ |year        = 1892
+ |location    = London
+ |pages       = 38–40
+ |url         = https://books.google.com/books?id=wzdHAAAAIAAJ&pg=PA38
+ |url-status     = live
+ |archive-url  = https://web.archive.org/web/20170111023313/https://books.google.com/books?id=wzdHAAAAIAAJ&pg=PA38
+ |archive-date = 2017-01-11
+}}</ref>  If the fingers of the right hand are curled around the coil in the direction of current flow ([[conventional current]], flow of [[positive charge]]) through the windings, the thumb points in the direction of the field inside the coil. The side of the magnet that the field lines emerge from is defined to be the ''north pole''.
+
+Much stronger magnetic fields can be produced if a "[[magnetic core]]" of a [[soft magnetic material|soft]]  [[ferromagnetic]] (or [[ferrimagnetic]]) material, such as [[iron]], is placed inside the coil.<ref name="Hyperphysics">{{cite web
+ |last        = Nave
+ |first       = Carl R.
+ |title       = Electromagnet
+ |website        = Hyperphysics
+ |publisher   = Dept. of Physics and Astronomy, Georgia State Univ.
+ |date        = 2012
+ |url         = http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/elemag.html
+ |accessdate  = September 17, 2014
+ |url-status     = live
+ |archive-url  = https://web.archive.org/web/20140922065602/http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/elemag.html
+ |archive-date = September 22, 2014
+}}</ref><ref name="Merzouki">{{cite book
+ |last1       = Merzouki
+ |first1      = Rochdi
+ |last2       = Samantaray
+ |first2      = Arun Kumar
+ |last3       = Pathak
+ |first3      = Pushparaj Mani
+ |title       = Intelligent Mechatronic Systems: Modeling, Control and Diagnosis
+ |publisher   = Springer Science & Business Media
+ |date        = 2012
+ |pages       = 403–405
+ |url         = https://books.google.com/books?id=k81ECeMxyk8C&q=ferromagnetic+electromagnet&pg=PA404
+ |isbn        = 978-1447146285
+ |url-status     = live
+ |archive-url  = https://web.archive.org/web/20161203041435/https://books.google.com/books?id=k81ECeMxyk8C&pg=PA404&dq=ferromagnetic+electromagnet#v=onepage&q=ferromagnetic%20electromagnet&f=false
+ |archive-date = 2016-12-03
+}}</ref><ref name="Gates">{{cite book
+ |last1       = Gates
+ |first1      = Earl
+ |title       = Introduction to Basic Electricity and Electronics Technology
+ |publisher   = Cengage Learning
+ |date        = 2013
+ |pages       = 184
+ |url         = https://books.google.com/books?id=7vE7Esf3WVAC&q=electromagnet+ferromagnetic+electromagnet+coil&pg=PA184
+ |isbn        = 978-1133948513
+ |url-status     = live
+ |archive-url  = https://web.archive.org/web/20170110211309/https://books.google.com/books?id=7vE7Esf3WVAC&pg=PA184&dq=electromagnet+ferromagnetic+electromagnet+coil
+ |archive-date = 2017-01-10
+}}</ref><ref name="Shipman">{{cite book
+ |last1       = Shipman
+ |first1      = James
+ |last2       = Jerry
+ |first2      = Wilson
+ |last3       = Todd
+ |first3      = Aaron
+ |title       = Introduction to Physical Science
+ |publisher   = Cengage Learning
+ |edition     = 12
+ |date        = 2009
+ |pages       = 205–206
+ |url         = https://books.google.com/books?id=PZs8AAAAQBAJ&q=electromagnet+ferromagnetic+solenoid+coil&pg=PA205
+ |isbn        = 978-1111810283
+ |url-status     = live
+ |archive-url  = https://web.archive.org/web/20170111023648/https://books.google.com/books?id=PZs8AAAAQBAJ&pg=PA205&dq=electromagnet+ferromagnetic+solenoid+coil
+ |archive-date = 2017-01-11
+}}</ref>   A core can increase the magnetic field to thousands of times the strength of the field of the coil alone, due to the high [[Permeability (electromagnetism)|magnetic permeability]] μ of the material.<ref name="Hyperphysics" /><ref name="Merzouki" /> This is called a ferromagnetic-core or iron-core electromagnet. However, not all electromagnets use cores, and the very strongest electromagnets, such as superconducting and the very high current electromagnets, cannot use them due to saturation.
+
+===Ampere's law===
+'''For definitions of the variables below, see box at end of article.'''
+
+The magnetic field of electromagnets in the general case is given by [[Ampere's Law]]:
+
+:<math>\int \mathbf{J}\cdot d\mathbf{A} = \oint \mathbf{H}\cdot d\mathbf{l}</math>
+
+which says that the integral of the magnetizing field H around any closed loop of the field is equal to the sum of the current flowing through the loop.  Another equation used, that gives the magnetic field due to each small segment of current, is the [[Biot–Savart law]].  Computing the magnetic field and force exerted by ferromagnetic materials is difficult for two reasons. First, because the strength of the field varies from point to point in a complicated way, particularly outside the core and in air gaps, where ''fringing fields'' and ''[[leakage flux]]'' must be considered.  Second, because the magnetic field B and force are [[nonlinear]] functions of the current, depending on the nonlinear relation between B and H for the particular core material used.  For precise calculations, computer programs that can produce a model of the magnetic field using the [[finite element method]] are employed.
+
+=== Magnetic core ===
+The material of a [[magnetic core]] (often made of [[iron]] or steel) is composed of small regions called [[magnetic domains]] that act like tiny magnets (see [[ferromagnetism]]).  Before the current in the electromagnet is turned on, the domains in the iron core point in random directions, so their tiny magnetic fields cancel each other out, and the iron has no large-scale magnetic field.  When a current is passed through the wire wrapped around the iron, its [[magnetic field]] penetrates the iron, and causes the domains to turn, aligning parallel to the magnetic field, so their tiny magnetic fields add to the wire's field, creating a large magnetic field that extends into the space around the magnet. The effect of the core is to concentrate the field, and the magnetic field passes through the core more easily than it would pass through air.
+
+The larger the current passed through the wire coil, the more the domains align, and the stronger the magnetic field is.  Finally, all the domains are lined up, and further increases in current only cause slight increases in the magnetic field: this phenomenon is called [[Saturation (magnetic)|saturation]].
+
+When the current in the coil is turned off, in the magnetically soft materials that are nearly always used as cores, most of the domains lose alignment and return to a random state and the field disappears.  However, some of the alignment persists, because the domains have difficulty turning their direction of magnetization, leaving the core a weak permanent magnet.  This phenomenon is called [[hysteresis]] and the remaining magnetic field is called [[remanence|remanent magnetism]]. The residual magnetization of the core can be removed by [[degaussing]]. In alternating current electromagnets, such as are used in motors, the core's magnetization is constantly reversed, and the remanence contributes to the motor's losses.
+
+=== Magnetic circuit – the constant ''B'' field approximation ===
+[[Image:Electromagnet with gap.svg|thumb|upright=1.7|Magnetic field ''(<span style="color:green;">green</span>)'' of a typical electromagnet, with the iron core ''C'' forming a closed loop with two air gaps ''G'' in it.<br /> 
+''B'' – magnetic field in the core<br />
+''B<sub>F</sub>'' – "fringing fields".  In the gaps ''G'' the magnetic field lines "bulge" out, so the field strength is less than in the core:   ''B<sub>F</sub>''&nbsp;<&nbsp;''B''<br />
+''B<sub>L</sub>''  – [[leakage flux]]; magnetic field lines which don't follow complete magnetic circuit<br />
+''L'' – average length of the magnetic circuit used in eq. 1 below.  It is the sum of the length ''L<sub>core</sub>'' in the iron core pieces and the length ''L<sub>gap</sub>'' in the air gaps ''G''.<br />
+Both the leakage flux and the fringing fields get larger as the gaps are increased, reducing the force exerted by the magnet. ]]
+
+In many practical applications of electromagnets, such as motors, generators, transformers, lifting magnets, and loudspeakers, the iron core is in the form of a loop or [[magnetic circuit]], possibly broken by a few narrow air gaps.<ref name="Merzouki"/>  This is because the magnetic field lines are in the form of closed loops. Iron presents much less "resistance" ([[reluctance]]) to the magnetic field than air, so a stronger field can be obtained if most of the magnetic field's path is within the core.<ref name="Merzouki" />
+
+Since most of the magnetic field is confined within the outlines of the core loop, this allows a simplification of the mathematical analysis.<ref name="Merzouki" />  See the drawing at right.  A common simplifying assumption satisfied by many electromagnets, which will be used in this section, is that the magnetic field strength ''B'' is constant around the magnetic circuit (within the core and air gaps) and zero outside it.  Most of the magnetic field will be concentrated in the core material ''(C)''.  Within the core the magnetic field ''(B)'' will be approximately uniform across any cross section, so if in addition the core has roughly constant area throughout its length, the field in the core will be constant.<ref name="Merzouki" />  This just leaves the air gaps ''(G)'', if any, between core sections.   In the gaps the magnetic field lines are no longer confined by the core, so they 'bulge' out beyond the outlines of the core before curving back to enter the next piece of core material, reducing the field strength in the gap.<ref name="Merzouki" />  The bulges ''(B<sub>F</sub>)'' are called ''fringing fields''.<ref name="Merzouki" />  However, as long as the length of the gap is smaller than the cross section dimensions of the core, the field in the gap will be approximately the same as in the core.  In addition, some of the magnetic field lines ''(B<sub>L</sub>)'' will take 'short cuts' and not pass through the entire core circuit, and thus will not contribute to the force exerted by the magnet.  This also includes field lines that encircle the wire windings but do not enter the core.  This is called ''[[leakage flux]]''.   Therefore, the equations in this section are valid for electromagnets for which:
+# the magnetic circuit is a single loop of core material, possibly broken by a few air gaps
+# the core has roughly the same cross sectional area throughout its length.
+# any air gaps between sections of core material are not large compared with the cross sectional dimensions of the core.
+# there is negligible leakage flux
+The main nonlinear feature of [[ferromagnetic]] materials is that the B field [[magnetic saturation|saturates]] at a certain value,<ref name="Merzouki" /> which is around 1.6 to 2 [[Tesla (unit)|teslas]] (T) for most high permeability core steels.<ref name="Pauley">"''Saturation flux levels of various magnetic materials range up to 24.5 kilogauss''" (2.5 T) p.1  "''Silicon steel saturates at about 17 kilogauss''" (1.7 T) p.3  {{cite journal| last =Pauley| first =Donald E.| title =Power Supply Magnetics Part 1: Selecting transformer/inductor core material| journal =Power Conversion and Intelligent Motion| date =March 1996| url =http://www.arnoldmagnetics.com/WorkArea/DownloadAsset.aspx?id=4396| accessdate =September 19, 2014| url-status =dead| archive-url =https://web.archive.org/web/20141224075136/http://www.arnoldmagnetics.com/WorkArea/DownloadAsset.aspx?id=4396| archive-date =December 24, 2014}}</ref><ref name="MagneticMaterials">The most widely used magnetic core material, 3% silicon steel, has saturation induction of 20 kilogauss (2 T). {{cite web
+ |title       = Material Properties, 3% grain-oriented silicon steel| page = 16
+ |website        = Catalog
+ |publisher   =  Magnetic Materials Co. 
+ |date        = 2013
+ |url         = http://ludens.cl/Electron/Magnet.html
+ |accessdate  = September 19, 2014
+ |url-status     = live
+ |archive-url  = https://web.archive.org/web/20140920230119/http://ludens.cl/Electron/Magnet.html
+ |archive-date = September 20, 2014
+}}</ref><ref name="Short">"''Magnetic steel fully saturates at about 2 T''" {{cite book
+ |last1       = Short
+ |first1      = Thomas Allen
+ |title       = Electric Power Distribution Handbook
+ |publisher   = CRC Press
+ |date        = 2003
+ |pages       = 214
+ |url         = https://books.google.com/books?id=mVW2D_6XB5EC&pg=PA214
+ |isbn        = 978-0203486504
+ }}</ref>  The B field increases quickly with increasing current up to that value, but above that value the field levels off and becomes almost constant, regardless of how much current is sent through the windings.<ref name="Merzouki" />   So the maximum strength of the magnetic field possible from an iron core electromagnet is limited to around 1.6 to 2 T.<ref name="Pauley" /><ref name="Short" />
+
+=== Magnetic field created by a current ===
+The magnetic field created by an electromagnet is proportional to both the number of turns in the winding, ''N'', and the current in the wire, ''I'', hence this product, ''NI'', in [[Ampere (unit)|ampere]]-turns, is given the name [[magnetomotive force]].   For an electromagnet with a single [[magnetic circuit]], of which length ''L''<sub>core</sub> of the magnetic field path is in the core material and length ''L''<sub>gap</sub> is in air gaps, Ampere's Law reduces to:<ref name="Merzouki" /><ref>{{cite book
+  | last = Feynman
+  | first = Richard P.
+  | title = Lectures on Physics, Vol. 2
+  | publisher = Addison-Wesley
+  | year = 1963
+  | location = New York
+  | pages = 36–9 to 36–11, eq. 36–26
+  | isbn =  978-8185015842}}</ref><ref name="Fitzgerald">{{cite book
+  | last1 = Fitzgerald
+  | first1 = A.
+  | last2= Kingsley |first2=Charles |last3=Kusko |first3=Alexander
+  | title = Electric Machinery, 3rd Ed
+  | publisher = McGraw-Hill
+  | year = 1971
+  | location = USA
+  | pages = 3–5}}</ref>
+
+:<math>NI = H_{\mathrm{core}} L_{\mathrm{core}} + H_{\mathrm{gap}} L_{\mathrm{gap}}\,</math>
+
+:<math>NI = B \left(\frac{L_{\mathrm{core}}}{\mu} + \frac{L_{\mathrm{gap}}}{\mu_0} \right)  \qquad \qquad \qquad \qquad (1)  \,</math>
+::where
+::<math>\mu = B/H\,</math>  is the [[magnetic permeability]] of the core material at the particular ''B'' field used.
+::<math>\mu_0 = 4 \pi (10^{-7}) \ \mathrm{N} \cdot \mathrm{A}^{-2}</math> is the permeability of free space (or air); note that <math>\mathrm{A}</math> in this definition is [[amperes]].
+
+This is a [[nonlinear equation]], because the [[Magnetic permeability|permeability]] of the core, ''μ'', varies with the magnetic field ''B''.  For an exact solution, the value of ''μ'' at the ''B'' value used must be obtained from the core material [[Hysteresis loop|hysteresis curve]].<ref name="Merzouki" />  If ''B'' is unknown, the equation must be solved by [[Numerical analysis|numerical methods]].  However, if the magnetomotive force is well above saturation, so the core material is in saturation, the magnetic field will be approximately the saturation value ''B<sub>sat</sub>'' for the material, and won't vary much with changes in ''NI''.  For a closed magnetic circuit (no air gap) most core materials saturate at a magnetomotive force of roughly 800 ampere-turns per meter of flux path.
+
+For most core materials, <math>\mu_r = \mu / \mu_0 \approx 2000 - 6000\,</math>.<ref name="Fitzgerald" />  So in equation (1) above, the second term dominates.  Therefore, in magnetic circuits with an air gap, the strength of the magnetic field ''B'' depends strongly on the length of the air gap, and the length of the flux path in the core doesn't matter much. Given an air gap of 1mm, a magnetomotive force of about 796 Ampere-turns is required to produce a magnetic field of 1T.
+
+=== Force exerted by magnetic field ===
+The force exerted by an electromagnet on a section of core material is:
+
+:<math>F = \frac{B^2 A}{2 \mu_0}   \qquad \qquad \qquad \qquad \qquad \qquad (2)   \,</math>
+
+where <math>A</math> is the cross-sectional area of the core.  The force equation can be derived from the [[Magnetic energy|energy stored in a magnetic field]]. [[Energy]] is force times distance. Rearranging terms yields the equation above.
+
+The 1.6&nbsp;T limit on the field<ref name="Pauley" /><ref name="Short" /> mentioned above sets a limit on the maximum force per unit core area, or [[magnetic pressure]], an iron-core electromagnet can exert; roughly:
+
+:<math>\frac{F}{A} = \frac {B_{sat}^2}{2 \mu_0}  \approx 1000\ \mathrm{kPa} = 10^6 \mathrm{N/m^2} = 145\ \mathrm{lbf} \cdot \mathrm{in}^{-2}\,</math>
+<!--(1.6**2)/(2*4*pi*10**-7)-->
+In more intuitive units it's useful to remember that at 1&nbsp;T the magnetic pressure is approximately 4 atmospheres, or kg/cm<sup>2</sup>.
+
+Given a core geometry, the B field needed for a given force can be calculated from (2); if it comes out to much more than 1.6 T, a larger core must be used.
+
+=== Closed magnetic circuit ===
+[[File: Lifting electromagnet cross section.png|thumb|Cross section of lifting electromagnet like that in above photo, showing cylindrical construction. The windings ''(C)'' are flat copper strips to withstand the Lorentz force of the magnetic field.  The core is formed by the thick iron housing ''(D)'' that wraps around the windings.]]
+
+For a closed magnetic circuit (no air gap), such as would be found in an electromagnet lifting a piece of iron bridged across its poles, equation (1) becomes:
+
+:<math>B = \frac{NI\mu}{L}  \qquad \qquad \qquad \qquad \qquad \qquad (3)  \,</math>
+
+Substituting into (2), the force is:
+
+:<math>F = \frac{\mu^2 N^2 I^2 A}{2\mu_0 L^2}  \qquad \qquad \qquad \qquad \qquad (4)  \,</math>
+
+It can be seen that to maximize the force, a core with a short flux path ''L'' and a wide cross-sectional area ''A'' is preferred (this also applies to magnets with an air gap).  To achieve this, in applications like lifting magnets (see photo above) and [[loudspeaker]]s a flat cylindrical design is often used.  The winding is wrapped around a short wide cylindrical core that forms one pole, and a thick metal housing that wraps around the outside of the windings forms the other part of the magnetic circuit, bringing the magnetic field to the front to form the other pole.
+
+=== Force between electromagnets ===
+The above methods are applicable to electromagnets with a [[magnetic circuit]] and do not apply when a large part of the magnetic field path is outside the core.  An example would be a magnet with a straight cylindrical core like the one shown at the top of this article. For electromagnets (or permanent magnets) with well defined 'poles' where the field lines emerge from the core, the force between two electromagnets can be found using the 'Gilbert model' which assumes the magnetic field is produced by fictitious 'magnetic charges' on the surface of the poles, with pole strength ''m'' and units of [[Ampere (unit)|Ampere]]-turn meter.  Magnetic pole strength of electromagnets can be found from:
+
+<math>m = \frac{NIA}{L}</math>
+
+The force between two poles is:
+
+<math>F = \frac{\mu_0 m_1 m_2}{4\pi r^2}</math>
+
+This model doesn't give the correct magnetic field inside the core and thus gives incorrect results if the pole of one magnet gets too close to another magnet.
+
+==Side effects==
+There are several side effects which occur in electromagnets which must be provided for in their design.  These generally become more significant in larger electromagnets.
+
+===Ohmic heating===
+[[Image:Current carrying busbars at the LNCMI.jpg|thumb|Large aluminum busbars carrying current into the electromagnets at the [[LNCMI]] (Laboratoire National des Champs Magnétiques Intenses) high field laboratory.]]
+
+The only power consumed in a [[Direct current|DC]] electromagnet under steady state conditions is due to the [[Electrical resistance|resistance]] of the windings, and is dissipated as heat.  Some large electromagnets require cooling water circulating through pipes in the windings to carry off the [[waste heat]].
+
+Since the magnetic field is proportional to the product ''NI'', the number of turns in the windings ''N'' and the current ''I'' can be chosen to minimize heat losses, as long as their product is constant.   Since the power dissipation, ''P = I<sup>2</sup>R'', increases with the square of the current but only increases approximately linearly with the number of windings, the power lost in the windings can be minimized by reducing ''I'' and increasing the number of turns ''N'' proportionally, or using thicker wire to reduce the resistance.  For example, halving ''I'' and doubling ''N'' halves the power loss, as does doubling the area of the wire. In either case, increasing the amount of wire reduces the ohmic losses. For this reason, electromagnets often have a significant thickness of windings.
+
+However, the limit to increasing ''N'' or lowering the resistance is that the windings take up more room between the magnet's core pieces.  If the area available for the windings is filled up, more turns require going to a smaller diameter of wire, which has higher resistance, which cancels the advantage of using more turns.  So in large magnets there is a minimum amount of heat loss that can't be reduced.  This increases with the square of the [[magnetic flux]] ''B<sup>2</sup>''.
+
+===Inductive voltage spikes===
+An electromagnet has significant [[inductance]], and resists changes in the current through its windings.  Any sudden changes in the winding current cause large voltage spikes across the windings.  This is because when the current through the magnet is increased, such as when it is turned on, energy from the circuit must be stored in the magnetic field.  When it is turned off the energy in the field is returned to the circuit.
+
+If an ordinary [[switch]] is used to control the winding current, this can cause sparks at the terminals of the switch.  This doesn't occur when the magnet is switched on, because the limited supply voltage causes the current through the magnet and the field energy to increase slowly,  but when it is switched off, the energy in the magnetic field is suddenly returned to the circuit, causing a large voltage spike and an [[Electric arc|arc]] across the switch contacts, which can damage them.  With small electromagnets a [[capacitor]] is sometimes used across the contacts, which reduces arcing by temporarily storing the current.  More often a [[diode]] is used to prevent voltage spikes by providing a path for the current to recirculate through the winding until the energy is dissipated as heat.  The diode is connected across the winding, oriented so it is reverse-biased during steady state operation and doesn't conduct.  When the supply voltage is removed, the voltage spike forward-biases the diode and the reactive current continues to flow through the winding, through the diode and back into the winding. A diode used in this way is called a [[freewheeling diode]] or [[flyback diode]].
+
+Large electromagnets are usually powered by variable current electronic [[power supply|power supplies]], controlled by a [[microprocessor]],  which prevent voltage spikes by accomplishing current changes slowly, in gentle ramps.  It may take several minutes to energize or deenergize a large magnet. 
+
+===Lorentz forces===
+{{unsourced section|date=July 2020}}
+In powerful electromagnets, the magnetic field exerts a force on each turn of the windings, due to the [[Lorentz force]] <math>q\mathbf{v}\times\mathbf{B}\,</math>   acting on the moving charges within the wire.  The Lorentz force is perpendicular to both the axis of the wire and the magnetic field.  It can be visualized as a pressure between the [[magnetic field lines]], pushing them apart.  It has two effects on an electromagnet's windings:
+* The field lines within the axis of the coil exert a radial force on each turn of the windings, tending to push them outward in all directions. This causes a [[tensile stress]] in the wire.
+* The leakage field lines between each turn of the coil exert an attractive force between adjacent turns, tending to pull them together.{{cn|date=July 2020}}
+The Lorentz forces increase with ''B<sup>2</sup>''.   In large electromagnets the windings must be firmly clamped in place, to prevent motion on power-up and power-down from causing [[metal fatigue]] in the windings.  In the [[Bitter electromagnet|Bitter]] design, below, used in very high field research magnets, the windings are constructed as flat disks to resist the radial forces, and clamped in an axial direction to resist the axial ones.
+
+===Core losses===
+In [[alternating current]] (AC) electromagnets, used in [[transformer]]s, [[inductor]]s, and [[AC motor]]s and [[Electric generator|generators]], the magnetic field is constantly changing.  This causes energy losses in their [[magnetic core]]s that is dissipated as heat in the core.  The losses stem from two processes:
+* ''[[Eddy current]]s'': From [[Faraday's law of induction]], the changing magnetic field induces circulating [[electric current]]s inside nearby conductors,  called [[eddy current]]s.  The energy in these currents is dissipated as heat in the [[electrical resistance]] of the conductor, so they are a cause of energy loss.   Since the magnet's iron core is conductive, and most of the magnetic field is concentrated there, [[eddy current]]s in the core are the major problem.  Eddy currents are closed loops of current that flow in planes perpendicular to the magnetic field.  The energy dissipated is proportional to the area enclosed by the loop. To prevent them, the cores of AC electromagnets are made of stacks of thin steel sheets, or [[lamination]]s, oriented parallel to the magnetic field, with an insulating coating on the surface.  The insulation layers prevent eddy current from flowing between the sheets.  Any remaining eddy currents must flow within the cross-section of each individual lamination, which reduces losses greatly.  Another alternative is to use a [[ferrite core]], which is a nonconductor.
+* ''[[Hysteresis loss]]es'': Reversing the direction of magnetization of the [[magnetic domain]]s in the core material each cycle causes energy loss, because of the [[coercivity]] of the material.  These losses are called [[hysteresis]].  The energy lost per cycle is proportional to the area of the [[hysteresis loop]] in the ''BH'' graph.  To minimize this loss, magnetic cores used in transformers and other AC electromagnets are made of "soft" low coercivity materials, such as [[silicon steel]] or [[soft ferrite]].
+The energy loss per cycle of the AC current is constant for each of these processes, so the power loss increases linearly with [[frequency]].
+
+== High-field electromagnets ==
+
+=== Superconducting electromagnets ===
+[[Image:Small small IMG 0836.jpg|thumb|The most powerful electromagnet in the world, the 45 T hybrid Bitter-superconducting magnet at the US National High Magnetic Field Laboratory, Tallahassee, Florida, USA]]
+
+{{main|Superconducting magnet}}
+When a magnetic field higher than the ferromagnetic limit of 1.6 T is needed, [[Superconducting magnet|superconducting electromagnets]] can be used.  Instead of using ferromagnetic materials, these use [[Superconductivity|superconducting]] windings cooled with [[liquid helium]], which conduct current without [[electrical resistance]].  These allow enormous currents to flow, which generate intense magnetic fields.  Superconducting magnets are limited by the field strength at which the winding material ceases to be superconducting. Current designs are limited to 10–20 T, with the current (2017) record of 32 T.<ref name="nationalmaglab">{{cite web
+ |title       = 32 Tesla All-Superconducting Magnet
+ |publisher   = National High Magnetic Field Laboratory, USA
+ |year        = 2018
+ |url         = https://nationalmaglab.org/magnet-development/magnet-science-technology/magnet-projects/32-tesla-scm
+ }}</ref><ref name="MagnetLab">{{cite web
+ |title       = Mag Lab World Records
+ |website     = Media Center
+ |publisher   = National High Magnetic Field Laboratory, USA
+ |year        = 2008
+ |url         = http://www.magnet.fsu.edu/mediacenter/factsheets/records.html
+ |accessdate  = 2008-08-31
+ |url-status  = dead
+ |archive-url  = https://web.archive.org/web/20081007201258/http://www.magnet.fsu.edu/mediacenter/factsheets/records.html
+ |archive-date = 2008-10-07
+}}</ref> The necessary refrigeration equipment and [[cryostat]] make them much more expensive than ordinary electromagnets.  However, in high power applications this can be offset by lower operating costs, since after startup no power is required for the windings, since no energy is lost to ohmic heating.  They are used in [[particle accelerator]]s and [[MRI]] machines.
+
+=== Bitter electromagnets ===
+{{main|Bitter electromagnet}}
+Both iron-core and superconducting electromagnets have limits to the field they can produce.  Therefore, the most powerful man-made magnetic fields have been generated by ''air-core'' nonsuperconducting electromagnets of a design invented by [[Francis Bitter]] in 1933, called [[Bitter electromagnet]]s.<ref name="MagnetLabU">{{cite web
+ |last        = Coyne
+ |first       = Kristin
+ |title       = Magnets: from Mini to Mighty
+ |website     = Magnet Lab U
+ |publisher   = National High Magnetic Field Laboratory
+ |year        = 2008
+ |url         = http://www.magnet.fsu.edu/education/tutorials/magnetacademy/magnets/fullarticle.html
+ |accessdate  = 2008-08-31
+ |url-status     = dead
+ |archive-url  = https://web.archive.org/web/20080917101425/http://www.magnet.fsu.edu/education/tutorials/magnetacademy/magnets/fullarticle.html
+ |archive-date = 2008-09-17
+}}</ref>  Instead of wire windings, a Bitter magnet consists of a [[solenoid]] made of a stack of conducting disks, arranged so that the current moves in a helical path through them, with a hole through the center where the maximum field is created.  This design has the mechanical strength to withstand the extreme [[Lorentz force]]s of the field, which increase with ''B''<sup>2</sup>.  The disks are pierced with holes through which cooling water passes to carry away the heat caused by the high current. The strongest continuous field achieved solely with a resistive magnet is 37.5 T {{as of|2014|March|31|lc=y}}, produced by a Bitter electromagnet at the [[Radboud University]] High Field Magnet Laboratory in [[Nijmegen]], the [[Netherlands]].<ref name="Dutch record">{{cite news |title=HFML sets world record with a new 37.5 tesla magnet |url=http://www.ru.nl/hfml/news/news/news-items/hfml-sets-world/ |accessdate=21 May 2014 |publisher=High Field Magnet Laboratory |date=31 March 2014 |url-status=dead |archive-url=https://web.archive.org/web/20150904093407/http://www.ru.nl/hfml/news/news/news-items/hfml-sets-world/ |archive-date=4 September 2015 }}</ref> The previous record was 35 T.<ref name="MagnetLab"/> The strongest continuous magnetic field overall, 45 T,<ref name="MagnetLabU" /> was achieved in June 2000 with a hybrid device consisting of a Bitter magnet inside a superconducting magnet.
+
+The factor limiting the strength of electromagnets is the inability to dissipate the enormous waste heat, so more powerful fields, up to 100 T,<ref name="MagnetLab" /> have been obtained from resistive magnets by sending brief pulses of high current through them; the inactive period after each pulse allows the heat produced during the pulse to be removed, before the next pulse. 
+{{breakafterimages}}
+
+=== Explosively pumped flux compression ===
+{{main|Explosively pumped flux compression generator}}
+[[Image:Flux compression generator 1.png|thumb|upright=1.2|A hollow tube type of explosively pumped flux compression generator.]]
+The most  powerful manmade magnetic fields<ref name="Apex">{{cite web
+ |title       = What is the strongest magnet in the world?
+ |publisher   = Apex magnets
+ |date        = November 2014
+ |url         = https://www.apexmagnets.com/news-how-tos/what-is-the-strongest-magnet-in-the-world/
+ |accessdate  = February 5, 2017
+ |url-status     = live
+ |archive-url  = https://web.archive.org/web/20170205183546/https://www.apexmagnets.com/news-how-tos/what-is-the-strongest-magnet-in-the-world/
+ |archive-date = February 5, 2017
+}}</ref> have been created by using explosives to compress the magnetic field inside an electromagnet as it is pulsed; these are called [[explosively pumped flux compression generator]]s.  The [[Implosion (mechanical process)|implosion]] compresses the magnetic field to values of around 1000 T<ref name="MagnetLabU" /> for a few microseconds. While this method may seem very destructive, it is possible to redirect the brunt of the blast radially outwards so that neither the experiment nor the magnetic structure are harmed. These devices are known as destructive pulsed electromagnets.<ref name="MagnetLab-pulsed">{{cite web
+  |last=Coyne |first=Kristin
+  |title=7. Pulsed Magnets: Brief Shining Moments
+  |website=Magnets from Mini to Mighty
+  |publisher=[[National High Magnetic Field Laboratory]]
+  |year=2008
+  |url=https://nationalmaglab.org/education/magnet-academy/learn-the-basics/stories/magnets-from-mini-to-mighty
+  |archive-url=https://web.archive.org/web/20141220145448/http://www.magnet.fsu.edu/education/tutorials/magnetacademy/magnets/page7.html
+  |archive-date=2014-12-20
+  |accessdate=2014-05-21 }}</ref> They are used in [[physics]] and [[materials science]] research to study the properties of materials at high magnetic fields.
+
+== Definition of terms ==
+{|cellpadding="1" style="border:1px solid;"
+|'''Term'''
+|'''Significance'''
+|'''Unit'''
+|-
+| width="40" |<math>A\,</math>||cross sectional area of core
+|square meter
+|-
+|<math>B\,</math>||[[Magnetic field]] (Magnetic flux density)
+|tesla
+|-
+|<math>F\,</math>||Force exerted by magnetic field
+|newton
+|-
+|<math>H\,</math>||[[Magnetic field|Magnetizing field]]
+|ampere per meter
+|-
+|<math>I\,</math>||Current in the winding wire
+|ampere
+|-
+|<math>L\,</math>||Total length of the magnetic field path <math>L_{\mathrm{core}}+L_{\mathrm{gap}}\,</math>
+|meter
+|-
+|<math>L_{\mathrm{core}}\,</math>||Length of the magnetic field path in the core material
+|meter
+|-
+|<math>L_{\mathrm{gap}}\,</math>||Length of the magnetic field path in air gaps
+|meter
+|-
+|<math>m_1, m_2\,</math>||Pole strength of the electromagnet
+|ampere meter
+|-
+|<math>\mu\,</math>||Permeability of the electromagnet core material
+|newton per square ampere
+|-
+|<math>\mu_0\,</math>||Permeability of free space (or air) = 4π(10<sup>−7</sup>)
+|newton per square ampere
+|-
+|<math>\mu_r\,</math>||Relative permeability of the electromagnet core material
+| -
+|-
+|<math>N\,</math>||Number of turns of wire on the electromagnet
+| -
+|-
+|<math>r\,</math>||Distance between the poles of two electromagnets
+|meter
+|-
+|}
+
+== See also ==
+* [[Dipole magnet]] – the most basic form of magnet
+* [[Electromagnetism]]
+* [[Electropermanent magnet]] - a magnetically hard electromagnet arrangement
+* [[Explosively pumped flux compression generator]]
+* [[Field coil]]
+* [[Magnetic bearing]]
+* [[Pulsed field magnet]]
+* [[Quadrupole magnet]] – a combination of magnets and electromagnets used mainly to affect the motion of charged particles
+
+== References ==
+{{reflist}}
+
+== External links ==
+{{Commons category|Electromagnets}}
+* [https://nationalmaglab.org/education/magnet-academy/learn-the-basics/stories/magnets-from-mini-to-mighty Magnets from Mini to Mighty: Primer on electromagnets and other magnets] National High Magnetic Field Laboratory
+* [https://web.archive.org/web/20120220030524/http://instruct.tri-c.edu/fgram/web/Mdipole.htm Magnetic Fields and Forces] Cuyahoga Community College
+* [https://web.archive.org/web/20100709205321/http://geophysics.ou.edu/solid_earth/notes/mag_basic/mag_basic.html Fundamental Relationships] School of Geology and Geophysics, University of Oklahoma
+
+{{Authority control}}
+
+[[Category:Concepts in physics]]
+[[Category:Electromagnetism]]
+[[Category:Types of magnets]]

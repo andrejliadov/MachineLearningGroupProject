@@ -1,0 +1,42 @@
+'''Geomessaging''' is a technology that allows a person or system to send a message based on any media to a device that enters or exits one or more regions.<ref>{{Cite book|publisher=IEEE|doi=10.1109/ITST.2012.6425228|title=2012 12th International Conference on ITS Telecommunications|pages=497–501|year=2012|last1=Fujioka|first1=Masanobu|last2=Takahashi|first2=Masanori|last3=Matsumura|first3=Takeshi|last4=Chunmeng Wang|last5=Hirakoba|first5=Hiroyuki|isbn=978-1-4673-3070-1}}</ref> Those regions can be created by using [[Geo-fence|geofences]], based on Latitude and Longitude, or adding beacons to the system associating those beacons with named locations. The device  will receive the message according to the rules defined by the campaign administrator (the person or system in charge of defining those locations and messages).
+
+Rules can be: The minimum time to wait before resending a message, weekday, time range, etc.
+
+The content of the message associated to those rules can be any images, text, html, metadata key-value pair, etc.
+
+Increasingly geomessaging is finding its use in various applications including crisis communication and geo-location sensitive communication management.<ref>{{cite web|url=http://ugoround.com/white_papers/UgoRound-White-Paper-events-venue.pdf |title=Location Based Messaging for Events and Venue Crisis and Incident Management |publisher=UgoRound.com |date=21 July 2017 |accessdate=25 September 2017}}</ref>
+
+==Geomessage media==
+Geomessage Media defines a [[Media (communication)|media]] genre where information or messages can be sent to recipients based on their location. Platforms that enable geo-notifications to a defined [[geo-fence]] would fall into the category of Geomessage Media. A geo-fence is a virtual radius or polygon defined by longitude and latitude coordinates on a map. Geofences are being used for a vast array of applications and services like reminder applications based on area, location sharing and localized advertising.<ref>{{Cite book |vauthors=Loyola L, Wong F, Pereira D|display-authors=etal|title=Proceedings of the Second ACM SIGSPATIAL International Workshop on Mobile Geographic Information Systems - MobiGIS '13|pages=51–58|chapter-url=https://dl.acm.org/citation.cfm?id=2534193|publisher=MobiGIS13| date=5 November 2016|accessdate=25 November 2016|doi=10.1145/2534190.2534193|isbn=9781450325318|chapter=Extending battery lifetime of mobile devices with geofence capabilities on dynamic-speed urban environments}}</ref> Geomessage Media is a natural progression of information sent on Mass Media and Social Media. Geomessage Media platforms allow communicating or sending a geomessage to a hyper-local area. This allows for much more relevant, geo-contextual information to be sent. In some use cases the platforms allow messaging to an anonymised group, in a defined geolocation.<ref>{{cite web|url=http://blogs.shephertz.com/2016/05/05/geo-fencing-push-notifications-next-step-user-engagement |title=Geo-fencing in Push Notifications: The Next Step in User Engagement |publisher=ShepHertz |date=5 May 2016 |accessdate=24 September 2017}}</ref> Other use cases include sending messages to a geolocation where members of a known group may enter.
+
+Circumstances where a Geomessage would benefit recipients are many, for example:
+* Evacuations – instructions can be given to a localised area or areas to evacuate
+* Transport Management - Commuters can be sent advice and information that may delay their commute
+* Weather – recipients in the path of a weather event can be notified
+* Place of Interest – people entering, exiting or even dwelling in a place could be sent a message.
+
+==References==
+{{reflist}}
+
+==See also==
+{{Div col|colwidth=22em}}
+*[[Cell Broadcast]]
+*[[Geo-blocking]]
+*[[Geocoding]]
+*[[TV White Space Database|Geolocation Database]]
+*[[Geolocation software]]
+*[[Kinomap|Geolocation Video]]
+*[[Geomarketing]]
+*[[Geotagged photo]]
+*[[Geotagging]]
+*[[Geo targeting]]
+*[[Indoor positioning]]
+*[[Location-based service]]
+*[[Mobile phone tracking]]
+*[[Web analytics]]
+*[[W3C Geolocation API]]
+{{div col end}}
+
+[[Category:Communication design]]
+[[Category:Message transfer agents]]
+[[Category:Geographic position|Geolocation]]

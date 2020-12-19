@@ -1,0 +1,156 @@
+{{short description|Physical law}}
+'''Newton's law of cooling''' states that ''the rate of [[heat]] loss of a body is directly proportional to the difference in the [[temperature]]s between the body and its surroundings.'' The law is frequently qualified to include the condition that the temperature difference is small and the nature of heat transfer mechanism remains the same. As such, it is equivalent to a statement that the [[heat transfer coefficient]], which mediates between heat losses and temperature differences, is a constant. This condition is generally met in [[thermal conduction|heat conduction]] (where it is guaranteed by [[Thermal conduction#Fourier.27s law|Fourier's law]]) as the thermal conductivity of most materials is only weakly dependent on temperature. In [[convective heat transfer]], Newton's Law is followed for forced air or pumped fluid cooling, where the properties of the fluid do not vary strongly with temperature, but it is only approximately true for buoyancy-driven convection, where the velocity of the flow increases with temperature difference. Finally, in the case of heat transfer by [[thermal radiation]], Newton's law of cooling holds only for very small temperature differences.
+
+When stated in terms of temperature differences, Newton's law (with several further simplifying assumptions, such as a low [[Biot number]] and a temperature-independent heat capacity) results in a simple differential equation expressing temperature-difference as a function of time. The solution to that equation describes an exponential decrease of temperature-difference over time. This characteristic decay of the temperature-difference is also associated with Newton's law of cooling.
+
+== Historical background ==
+[[Sir Isaac Newton]] published his work on cooling anonymously in 1701 as "Scala graduum Caloris. Calorum Descriptiones & signa." in ''Philosophical Transactions'', volume 22, issue 270.<ref>{{citation|author=Anonymous|title=Scala graduum Caloris. Calorum Descriptiones & signa.|journal=Philosophical Transactions|volume=22|issue=270|pages=824–829|date=March–April 1701|doi=10.1098/rstl.1700.0082|jstor=102813|url=https://archive.org/details/philtrans07084697/mode/2up|doi-access=free}}</ref><ref>[https://books.google.com/books?id=x8NeAAAAcAAJ&pg=PA824#v=onepage&q&f=false 824]&ndash;829; 
+ed. Joannes Nichols, ''Isaaci Newtoni Opera quae exstant omnia'', vol. 4 (1782), [https://books.google.com/books?id=Dz2FzJqaJMUC&pg=PA403 403]&ndash;407.</ref>
+
+Newton did not originally state his law in the above form in 1701. Rather, using today's terms, Newton noted after some mathematical manipulation that ''the rate of temperature change'' of a body is proportional to the difference in temperatures between the body and its surroundings. This final simplest version of the law, given by Newton himself, was partly due to confusion in Newton's time between the concepts of heat and temperature, which would not be fully disentangled until much later.<ref>[http://paginas.fisica.uson.mx/laura.yeomans/tc/Sci-Edu-Springer-2010.pdf History of Newton's cooling law] {{webarchive|url=https://web.archive.org/web/20150614122639/http://paginas.fisica.uson.mx/laura.yeomans/tc/Sci-Edu-Springer-2010.pdf |date=2015-06-14 }}</ref>
+
+In 2020, Shigenao and Shuichi repeated Newton's experiments with modern apparatus, and they applied modern data reduction techniques.<ref>{{cite journal
+| last1      = Maruyama 
+| first1     = Shigenao
+| last2      = Moriya
+| first2     = Shuichi
+| date       = 2021
+| title      = Newton’s Law of Cooling: Follow up and exploration
+| url        = https://doi.org/10.1016/j.ijheatmasstransfer.2020.120544
+| journal    = International Journal of Heat and Mass Transfer
+| volume     = 164
+| issue      = 
+| pages      = 120544
+| doi        = 10.1016/j.ijheatmasstransfer.2020.120544
+| access-date = November 15, 2020
+}}
+</ref> In particular, these investigators took account of thermal radiation at high temperatures (as for the molten metals Newton used), and they accounted for buoyancy effects on the air flow. By comparison to Newton's original data, they concluded that his measurements (from 1692-3) had been "quite accurate". 
+
+== Relationship to mechanism of cooling==
+Convection cooling is sometimes said to be governed by "Newton's law of cooling."  When the [[heat transfer coefficient]] is independent, or relatively independent, of the temperature difference between object and environment, Newton's law is followed. The law holds well for forced air and pumped liquid cooling, where the fluid velocity does not rise with increasing temperature difference. Newton's law is most closely obeyed in purely conduction-type cooling. However, the heat transfer coefficient is a function of the temperature difference in natural convective (buoyancy driven) heat transfer. In that case, Newton's law only approximates the result when the temperature difference is relatively small. Newton himself realized this limitation. 
+
+A correction to Newton's law concerning convection for larger temperature differentials by including an exponent, was made in 1817 by [[Pierre Louis Dulong|Dulong]] and [[Alexis Thérèse Petit|Petit]].<ref>{{cite book|title= History of the Inductive Sciences from the Earliest to the Present Times|last=Whewell|first=William|year=1866|url=https://books.google.com/books?id=DspUyunZCdgC}}</ref> (These men are better-known for their formulation of the [[Dulong–Petit law]] concerning the molar specific heat capacity of a crystal.)
+
+Another situation that does not obey Newton's law is [[Thermal radiation|radiative heat transfer]].  Radiative cooling is better described by the [[Stefan-Boltzmann law]] in which the heat transfer rate varies as the difference in the 4th powers of the absolute temperatures of the object and of its environment.
+
+== Mathematical formulation of Newton's law ==
+
+The statement of Newton's law used in the heat transfer literature puts into mathematics the idea that ''the rate of heat loss of a body is proportional to the difference in temperatures between the body and its surroundings''. For a temperature-independent heat transfer coefficient, the statement is:
+
+:  <math>Q = h \cdot A \cdot (T(t) - T_\text{env}) = h \cdot A \cdot \Delta T(t),</math>
+where
+: <math>Q</math> is the rate of heat transfer out of the body (SI unit: [[Watt|watt]]),
+: <math>h</math> is the [[heat transfer coefficient]] (assumed independent of ''T'' and averaged over the surface) (SI unit: W/m<sup>2</sup>-K),
+: <math>A</math> is the heat transfer surface area (SI unit: m<sup>2</sup>),
+: <math>T</math> is the temperature of the object's surface (SI unit: K),
+: <math>T_\text{env}</math> is the temperature of the environment; i.e. the temperature suitably far from the surface (SI unit: K),
+: <math>\Delta T(t) = T(t) - T_\text{env}</math> is the time-dependent temperature difference between environment and object (SI unit: K).
+
+The heat transfer coefficient ''h'' depends upon physical properties of the fluid and the physical situation in which convection occurs. Therefore, a single usable heat transfer coefficient (one that does not vary significantly across the temperature-difference ranges covered during cooling and heating) must be derived or found experimentally for every system that is to be analyzed.
+
+Formulas and correlations are available in many references to calculate heat transfer coefficients for typical configurations and fluids.  For laminar flows, the heat transfer coefficient is usually smaller than in [[Turbulence|turbulent flows]] because turbulent flows have strong mixing within the [[boundary layer]] on the heat transfer surface.<ref>
+{{cite book |last1=Lienhard |first1=John H., IV |last2=Lienhard |first2=John H., V|date=2019 |title=A Heat Transfer Textbook|url=http://ahtt.mit.edu|isbn=9780486837352|publisher=Dover Publications|edition=5th|location=Mineola, NY|chapter=Laminar and turbulent boundary layers|page=271–347}}</ref> Note the heat transfer coefficient changes in a system when a transition from laminar to turbulent flow occurs.
+
+=== The Biot number ===
+{{main|Biot number}}
+The Biot number, a dimensionless quantity, is defined for a body as
+
+: <math>\text{Bi} = \frac{h L_C}{k_b},</math>
+where
+: ''h'' = film coefficient or [[heat transfer coefficient]] or convective heat transfer coefficient,
+: ''L<sub>C</sub>'' = [[characteristic length]], which is commonly defined as the volume of the body divided by the surface area of the body, such that <math>L_C = V_\text{body} / A_\text{surface}</math>,
+: ''k<sub>b</sub>'' = [[thermal conductivity]] of the body.
+
+The physical significance of Biot number can be understood by imagining the heat flow from a hot metal sphere suddenly immersed in a pool to the surrounding fluid. The heat flow experiences two resistances: the first outside the surface of the sphere, and the second within the solid metal (which is influenced by both the size and composition of the sphere). The ratio of these resistances is the dimensionless Biot number.
+
+If the thermal resistance at the fluid/sphere interface exceeds that thermal resistance offered by the interior of the metal sphere, the Biot number will be less than one. For systems where it is much less than one, the interior of the sphere may be presumed always to have the same temperature, although this temperature may be changing, as heat passes into the sphere from the surface. The equation to describe this change in (relatively uniform) temperature inside the object, is the simple exponential one described in Newton's law of cooling expressed in terms of temperature difference (see below).
+
+In contrast, the metal sphere may be large, causing the characteristic length to increase to the point that the Biot number is larger than one. In this case, temperature gradients within the sphere become important, even though the sphere material is a good conductor. Equivalently, if the sphere is made of a thermally insulating (poorly conductive) material, such as wood or styrofoam, the interior resistance to heat flow will exceed that at the fluid/sphere boundary, even with a much smaller sphere. In this case, again, the Biot number will be greater than one.
+
+Values of the Biot number smaller than 0.1 imply that the heat conduction inside the body is much faster than the heat convection away from its surface, and temperature [[gradient]]s are negligible inside of it.  This can indicate the applicability (or inapplicability) of certain methods of solving transient heat transfer problems.  For example, a Biot number less than 0.1 typically indicates less than 5% error will be present when assuming a [[lumped-capacitance model]] of transient heat transfer (also called lumped system analysis).<ref>{{cite book 
+  | author1 = Frank Incropera
+  | author2 = Theodore L. Bergman
+  | author3 = David DeWitt
+  | author4 = Adrienne S. Lavine
+  | title = Fundamentals of Heat and Mass Transfer 
+  | url = https://archive.org/details/fundamentalsheat00incr_869
+  | url-access = limited
+  | edition = 6th 
+  | year = 2007 
+  | isbn = 978-0-471-45728-2 
+  | publisher = [[John Wiley & Sons]] 
+  | pages = [https://archive.org/details/fundamentalsheat00incr_869/page/n267 260]–261}}</ref> Typically, this type of analysis leads to simple exponential heating or cooling behavior ("Newtonian" cooling or heating) since the internal energy of the body is directly proportional to its temperature, which in turn determines the rate of heat transfer into or out of it. This leads to a simple first-order differential equation which describes [[heat transfer]] in these systems.
+
+Having a Biot number smaller than 0.1 labels a substance as "thermally thin," and temperature can be assumed to be constant throughout the material's volume. The opposite is also true: A Biot number greater than 0.1 (a "thermally thick" substance) indicates that one cannot make this assumption, and more complicated heat transfer equations for "transient heat conduction" will be required to describe the time-varying and non-spatially-uniform temperature field within the material body. Analytic methods for handling these problems, which may exist for simple geometric shapes and uniform material [[thermal conductivity]], are described in the article on the [[heat equation]].
+
+== Application of Newton's law transient cooling ==
+
+Simple solutions for transient cooling of an object may be obtained when the internal thermal resistance within the object is small in comparison to the resistance to heat transfer away from the object's surface (by external conduction or convection), which is the condition for which the Biot number is less than about 0.1. This condition allows the presumption of a single, approximately uniform temperature inside the body, which varies in time but not with position. (Otherwise the body would have many different temperatures inside it at any one time.) This single temperature will generally change exponentially as time progresses (see below).
+
+The condition of low Biot number leads to the so-called [[lumped capacitance model]]. In this model, the [[internal energy]] (the amount of thermal energy in the body) is calculated by assuming a constant [[heat capacity]]. In that case, the internal energy of the body is a linear function of the body's single internal temperature.
+
+The lumped capacitance solution that follows assumes a constant heat transfer coefficient, as would be the case in forced convection. For free convection, the lumped capacitance model can be solved with a heat transfer coefficient that varies with temperature difference.<ref>
+{{cite book |last1=Lienhard |first1=John H., IV |last2=Lienhard |first2=John H., V|date=2019 |title=A Heat Transfer Textbook|url=http://ahtt.mit.edu|isbn=9780486837352|publisher=Dover Publications|edition=5th|location=Mineola, NY|page=419–420}}</ref>
+
+=== First-order transient response of lumped-capacitance objects ===
+
+A body treated as a lumped capacitance object, with a total [[internal energy]] of <math>U</math> (in joules), is characterized by a single uniform internal temperature, <math>T(t)</math>. The heat capacitance, <math>C</math>, of the body is <math>C = dU/dT</math> (in J/K), for the case of an incompressible material.  The internal energy may be written in terms of the temperature of the body, the heat capacitance (taken to be independent of temperature), and a reference temperature at which the internal energy is zero:  <math>U = C (T -T_\text{ref})</math>.  
+
+Differentiating <math>U</math> with respect to time gives:
+
+: <math>\frac{dU}{dt}  = C \, \frac{dT}{dt}.</math>
+
+Applying the [[first law of thermodynamics]] to the lumped object gives <math>dU/dt = -Q</math>, where the heat transfer out of the body, <math>Q</math>, may be expressed by Newton's law of cooling, and where no work transfer occurs for an incompressible material. Thus,
+
+: <math>\frac{dT(t)}{dt} = -\frac{hA}{C} (T(t) - T_\text{env}) = -\frac{1}{\tau} \Delta T(t),</math>
+
+where the [[time constant]] of the system is <math>\tau = C / (hA)</math>. The heat capacitance <math>C</math> may be written in terms of the object's [[specific heat capacity]], <math>c</math>  (J/kg-K), and mass, <math>m</math> (kg). The time constant is then <math>\tau = mc / (hA)</math>. 
+
+When the environmental temperature is constant in time, we may define <math>\Delta T(t) = T(t) - T_\text{env}</math>. The equation becomes
+
+: <math>\frac{dT(t)}{dt} = \frac{d\Delta T(t)}{dt} = -\frac{1}{\tau} \Delta T(t).</math>
+
+The solution of this differential equation, by integration from the initial condition, is
+
+: <math>\Delta T(t) = \Delta T(0) \, e^{-t / \tau}.</math>
+
+where <math>\Delta T(0)</math> is the temperature difference at time 0. Reverting to temperature, the solution is
+
+: <math>T(t) = T_\text{env} + (T(0) - T_\text{env}) \, e^{-t/\tau}.</math>
+
+The temperature difference between the body and the environment [[exponential decay |decays exponentially]] as a function of time.
+
+==See also==
+* [[Thermal transmittance]]
+* [[List of thermal conductivities]]
+* [[Convection diffusion equation]]
+* [[R-value (insulation)]]
+* [[Heat pipe]]
+* [[Fick's law of diffusion]]
+* [[Relativistic heat conduction]]
+* [[Churchill–Bernstein equation]]
+* [[Fourier number]]
+* [[Biot number]]
+* [[False diffusion]]
+
+==References==
+{{Reflist}}
+
+See also:
+*Dehghani, F 2007, CHNG2801 – Conservation and Transport Processes: Course Notes, University of Sydney, Sydney
+
+==External links==
+* [https://wwww.thermalfluidscentral.org/e-encyclopedia/index.php/Heat_conduction Heat conduction] - Thermal-FluidsPedia
+* [http://demonstrations.wolfram.com/NewtonsLawOfCooling/ Newton's Law of Cooling] by Jeff Bryant based on a program by [[Stephen Wolfram]], [[Wolfram Demonstrations Project]].
+* [https://ahtt.mit.edu ''A Heat Transfer Textbook, 5/e''], free ebook.
+
+{{Isaac Newton}}
+
+{{DEFAULTSORT:Newton's law of cooling}}
+[[Category:Concepts in physics]]
+[[Category:Heat conduction]]
+[[Category:Heat transfer]]
+[[Category:Isaac Newton]]
+[[Category:History of physics]]
+[[Category:Scientific observation]]
+[[Category:Experimental physics]]

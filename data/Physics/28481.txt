@@ -1,0 +1,254 @@
+{{Short description|Physics of large number of particles' statistical behavior}}
+
+{{Merge from|Statistical physics|date=September 2020}}
+{{use Oxford English|date=January 2019}}
+{{use mdy dates|date=January 2019}}
+
+{{Statistical mechanics}}
+
+'''Statistical mechanics''', one of the pillars of modern [[physics]], describes how macroscopic observations (such as [[temperature]] and [[pressure]]) are related to microscopic parameters that fluctuate around an average. It connects thermodynamic quantities (such as [[heat capacity]]) to microscopic behavior, whereas, in [[classical thermodynamics]], the only available option would be to measure and tabulate such quantities for various materials.<ref name="gibbs"/>
+
+Statistical mechanics is necessary for the fundamental study of any physical system that has many [[degrees of freedom]]. The approach is based on [[Statistics|statistical]] methods, [[probability theory]] and the [[Microscopic scale|microscopic]] physical laws.<ref name="gibbs" /><ref name="tolman" /><ref name="balescu" />{{NoteTag|The term ''statistical mechanics'' is sometimes used to refer to only ''statistical thermodynamics''. This article takes the broader view. By some definitions, ''[[statistical physics]]'' is an even broader term which statistically studies any type of physical system, but is often taken to be synonymous with statistical mechanics.}}
+
+It can be used to explain the [[thermodynamics|thermodynamic]] behaviour of large systems. This branch of statistical mechanics, which treats and extends classical thermodynamics, is known as ''statistical thermodynamics'' or ''equilibrium statistical mechanics''.
+
+Statistical mechanics can also be used to study systems that are out of [[Thermodynamic equilibrium|equilibrium]]. An important sub-branch known as ''non-equilibrium statistical mechanics'' (sometimes called ''statistical dynamics'') deals with the issue of microscopically modelling the speed of [[irreversible process]]es that are driven by imbalances. Examples of such processes include [[chemical reaction]]s or flows of particles and heat. The [[fluctuation–dissipation theorem]] is the basic knowledge obtained from applying [[non-equilibrium statistical mechanics]] to study the simplest non-equilibrium situation of a steady state current flow in a system of many particles.
+
+== Principles: mechanics and ensembles ==
+{{main|Mechanics|Statistical ensemble (mathematical physics)|l2=Statistical ensemble}}
+
+In physics, two types of mechanics are usually examined: [[classical mechanics]] and [[quantum mechanics]]. For both types of mechanics, the standard mathematical approach is to consider two concepts:
+# The complete state of the mechanical system at a given time, mathematically encoded as a [[phase space|phase point]] (classical mechanics) or a pure [[quantum state vector]] (quantum mechanics).
+# An equation of motion which carries the state forward in time: [[Hamiltonian mechanics|Hamilton's equations]] (classical mechanics) or the [[Schrödinger equation]] (quantum mechanics)
+Using these two concepts, the state at any other time, past or future, can in principle be calculated.
+There is however a disconnection between these laws and everyday life experiences, as we do not find it necessary (nor even theoretically possible) to know exactly at a microscopic level the simultaneous positions and velocities of each molecule while carrying out processes at the human scale (for example, when performing a chemical reaction). Statistical mechanics fills this disconnection between the laws of mechanics and the practical experience of incomplete knowledge, by adding some uncertainty about which state the system is in.
+
+Whereas ordinary mechanics only considers the behaviour of a single state, statistical mechanics introduces the [[Statistical ensemble (mathematical physics)|statistical ensemble]], which is a large collection of virtual, independent copies of the system in various states. The statistical ensemble is a [[probability distribution]] over all possible states of the system. In classical statistical mechanics, the ensemble is a probability distribution over phase points (as opposed to a single phase point in ordinary mechanics), usually represented as a distribution in a [[phase space]] with [[canonical coordinates]]. In quantum statistical mechanics, the ensemble is a probability distribution over pure states,{{NoteTag|The probabilities in quantum statistical mechanics should not be confused with [[quantum superposition]]. While a quantum ensemble can contain states with quantum superpositions, a single quantum state cannot be used to represent an ensemble.}} and can be compactly summarized as a [[density matrix]].
+
+As is usual for probabilities, the ensemble can be interpreted in different ways:<ref name="gibbs" />
+* an ensemble can be taken to represent the various possible states that a ''single system'' could be in ([[epistemic probability]], a form of knowledge), or
+* the members of the ensemble can be understood as the states of the systems in experiments repeated on independent systems which have been prepared in a similar but imperfectly controlled manner ([[empirical probability]]), in the limit of an infinite number of trials.
+These two meanings are equivalent for many purposes, and will be used interchangeably in this article.
+
+However the probability is interpreted, each state in the ensemble evolves over time according to the equation of motion. Thus, the ensemble itself (the probability distribution over states) also evolves, as the virtual systems in the ensemble continually leave one state and enter another. The ensemble evolution is given by the [[Liouville's theorem (Hamiltonian)|Liouville equation]] (classical mechanics) or the [[von Neumann equation]] (quantum mechanics). These equations are simply derived by the application of the mechanical equation of motion separately to each virtual system contained in the ensemble, with the probability of the virtual system being conserved over time as it evolves from state to state.
+
+One special class of ensemble is those ensembles that do not evolve over time. These ensembles are known as ''equilibrium ensembles'' and their condition is known as ''statistical equilibrium''. Statistical equilibrium occurs if, for each state in the ensemble, the ensemble also contains all of its future and past states with probabilities equal to the probability of being in that state.{{NoteTag|Statistical equilibrium should not be confused with ''[[mechanical equilibrium]]''. The latter occurs when a mechanical system has completely ceased to evolve even on a microscopic scale, due to being in a state with a perfect balancing of forces. Statistical equilibrium generally involves states that are very far from mechanical equilibrium.}} The study of equilibrium ensembles of isolated systems is the focus of statistical thermodynamics. Non-equilibrium statistical mechanics addresses the more general case of ensembles that change over time, and/or ensembles of non-isolated systems.
+
+== Statistical thermodynamics ==
+The primary goal of statistical thermodynamics (also known as equilibrium statistical mechanics) is to derive the [[classical thermodynamics]] of materials in terms of the properties of their constituent particles and the interactions between them. In other words, statistical thermodynamics provides a connection between the macroscopic properties of materials in [[thermodynamic equilibrium]], and the microscopic behaviours and motions occurring inside the material.
+
+Whereas statistical mechanics proper involves dynamics, here the attention is focussed on ''statistical equilibrium'' (steady state). Statistical equilibrium does not mean that the particles have stopped moving ([[mechanical equilibrium]]), rather, only that the ensemble is not evolving.
+
+=== Fundamental postulate ===
+A [[sufficient condition|sufficient]] (but not necessary) condition for statistical equilibrium with an isolated system is that the probability distribution is a function only of conserved properties (total energy, total particle numbers, etc.).<ref name="gibbs" />
+There are many different equilibrium ensembles that can be considered, and only some of them correspond to thermodynamics.<ref name="gibbs" /> Additional postulates are necessary to motivate why the ensemble for a given system should have one form or another.
+
+A common approach found in many textbooks is to take the ''equal a priori probability postulate''.<ref name="tolman"/> This postulate states that
+: ''For an isolated system with an exactly known energy and exactly known composition, the system can be found with ''equal probability'' in any [[microstate (statistical mechanics)|microstate]] consistent with that knowledge.''
+The equal a priori probability postulate therefore provides a motivation for the [[microcanonical ensemble]] described below. There are various arguments in favour of the equal a priori probability postulate:
+* [[Ergodic hypothesis]]: An ergodic system is one that evolves over time to explore "all accessible" states: all those with the same energy and composition. In an ergodic system, the microcanonical ensemble is the only possible equilibrium ensemble with fixed energy. This approach has limited applicability, since most systems are not ergodic.
+* [[Principle of indifference]]: In the absence of any further information, we can only assign equal probabilities to each compatible situation.
+* [[Maximum entropy thermodynamics|Maximum information entropy]]: A more elaborate version of the principle of indifference states that the correct ensemble is the ensemble that is compatible with the known information and that has the largest [[Gibbs entropy]] ([[information entropy]]).<ref>{{cite journal | last = Jaynes | first = E.| author-link = Edwin Thompson Jaynes | title = Information Theory and Statistical Mechanics | doi = 10.1103/PhysRev.106.620 | journal = Physical Review | volume = 106 | issue = 4 | pages = 620–630 | year = 1957 |bibcode = 1957PhRv..106..620J }}</ref>
+Other fundamental postulates for statistical mechanics have also been proposed.<ref name="uffink"/>
+
+===Three thermodynamic ensembles===
+{{main|Microcanonical ensemble|Canonical ensemble|Grand canonical ensemble}}
+
+There are three equilibrium ensembles with a simple form that can be defined for any [[isolated system]] bounded inside a finite volume.<ref name="gibbs"/> These are the most often discussed ensembles in statistical thermodynamics. In the macroscopic limit (defined below) they all correspond to classical thermodynamics.
+; [[Microcanonical ensemble]]
+: describes a system with a precisely given energy and fixed composition (precise number of particles). The microcanonical ensemble contains with equal probability each possible state that is consistent with that energy and composition.
+; [[Canonical ensemble]]
+: describes a system of fixed composition that is in [[thermal equilibrium]]{{NoteTag|The transitive thermal equilibrium (as in, "X is thermal equilibrium with Y") used here means that the ensemble for the first system is not perturbed when the system is allowed to weakly interact with the second system.}} with a [[heat bath]] of a precise [[thermodynamic temperature|temperature]]. The canonical ensemble contains states of varying energy but identical composition; the different states in the ensemble are accorded different probabilities depending on their total energy.
+; [[Grand canonical ensemble]]
+: describes a system with non-fixed composition (uncertain particle numbers) that is in thermal and chemical equilibrium with a thermodynamic reservoir. The reservoir has a precise temperature, and precise [[chemical potential]]s for various types of particle. The grand canonical ensemble contains states of varying energy and varying numbers of particles; the different states in the ensemble are accorded different probabilities depending on their total energy and total particle numbers.
+
+For systems containing many particles (the [[thermodynamic limit]]), all three of the ensembles listed above tend to give identical behaviour. It is then simply a matter of mathematical convenience which ensemble is used.<ref name="Reif">{{cite book | last = Reif | first = F. | title = Fundamentals of Statistical and Thermal Physics | publisher = McGraw–Hill | year = 1965 | isbn = 9780070518001 | page = [https://archive.org/details/fundamentalsofst00fred/page/227 227] | url-access = registration | url = https://archive.org/details/fundamentalsofst00fred/page/227 }}</ref> The Gibbs theorem about equivalence of ensembles<ref>{{cite journal |doi=10.1007/s10955-015-1212-2|title=Equivalence and Nonequivalence of Ensembles: Thermodynamic, Macrostate, and Measure Levels|journal=Journal of Statistical Physics|volume=159|issue=5|pages=987–1016|year=2015|last1=Touchette|first1=Hugo|arxiv=1403.6608|bibcode=2015JSP...159..987T|s2cid=118534661}}</ref> was developed into the theory of [[concentration of measure]] phenomenon,<ref>{{cite book |doi=10.1090/surv/089|title=The Concentration of Measure Phenomenon|volume=89|series=Mathematical Surveys and Monographs|year=2005|isbn=9780821837924|last1=Ledoux|first1=Michel}}.</ref> which has applications in many areas of science, from functional analysis to methods of [[artificial intelligence]] and [[big data]] technology.<ref>{{cite journal |doi=10.1098/rsta.2017.0237|pmc=5869543|title=Blessing of dimensionality: Mathematical foundations of the statistical physics of data|journal=Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences|volume=376|issue=2118|pages=20170237|year=2018|last1=Gorban|first1=A. N.|last2=Tyukin|first2=I. Y.|pmid=29555807|arxiv=1801.03421|bibcode=2018RSPTA.37670237G}}</ref>
+
+Important cases where the thermodynamic ensembles ''do not'' give identical results include:
+* Microscopic systems.
+* Large systems at a phase transition.
+* Large systems with long-range interactions.
+In these cases the correct thermodynamic ensemble must be chosen as there are observable differences between these ensembles not just in the size of fluctuations, but also in average quantities such as the distribution of particles. The correct ensemble is that which corresponds to the way the system has been prepared and characterized—in other words, the ensemble that reflects the knowledge about that system.<ref name="tolman" />
+
+:{| class="wikitable sortable"
+|+
+|-
+! rowspan="2"|
+! colspan="3"| Thermodynamic ensembles<ref name="gibbs" />
+|-
+! [[Microcanonical ensemble|Microcanonical]]
+! [[Canonical ensemble|Canonical]]
+! [[Grand canonical ensemble|Grand canonical]]
+|-
+! Fixed variables
+| <center> <math>E, N, V</math> </center>
+| <center> <math>T, N, V</math> </center>
+| <center> <math>T, \mu, V</math> </center>
+|-
+! Microscopic features
+| <div class="plainlist">
+*<center> Number of [[Microstate (statistical mechanics)|microstates]] </center>
+*<center> <math>W</math> </center>
+</div>
+| <div class="plainlist">
+*<center> [[Canonical partition function]] </center>
+*<center> <math>Z = \sum_k e^{- E_k / k_B T}</math> </center>
+</div>
+| <div class="plainlist">
+*<center> [[Grand partition function]] </center>
+*<center> <math>\mathcal Z = \sum_k e^{ -(E_k - \mu N_k) /k_B T}</math> </center>
+</div>
+|-
+! Macroscopic function
+| <div class="plainlist">
+*<center> [[Boltzmann entropy]] </center>
+*<center> <math>S = k_B \log W</math> </center>
+</div>
+| <div class="plainlist">
+*<center> [[Helmholtz free energy]] </center>
+*<center> <math>F = - k_B T \log Z</math> </center>
+</div>
+| <div class="plainlist">
+*<center> [[Grand potential]] </center>
+*<center> <math>\Omega =- k_B T \log \mathcal Z </math> </center>
+</div>
+|-
+|}
+
+=== Calculation methods ===
+Once the characteristic state function for an ensemble has been calculated for a given system, that system is 'solved' (macroscopic observables can be extracted from the characteristic state function). Calculating the characteristic state function of a thermodynamic ensemble is not necessarily a simple task, however, since it involves considering every possible state of the system. While some hypothetical systems have been exactly solved, the most general (and realistic) case is too complex for an exact solution. Various approaches exist to approximate the true ensemble and allow calculation of average quantities.
+
+====Exact====
+There are some cases which allow exact solutions.
+
+* For very small microscopic systems, the ensembles can be directly computed by simply enumerating over all possible states of the system (using exact diagonalization in quantum mechanics, or integral over all phase space in classical mechanics).
+* Some large systems consist of many separable microscopic systems, and each of the subsystems can be analysed independently. Notably, idealized gases of non-interacting particles have this property, allowing exact derivations of [[Maxwell–Boltzmann statistics]], [[Fermi–Dirac statistics]], and [[Bose–Einstein statistics]].<ref name="tolman"/>
+* A few large systems with interaction have been solved. By the use of subtle mathematical techniques, exact solutions have been found for a few [[toy model]]s.<ref>{{cite book | isbn = 9780120831807 | title = Exactly solved models in statistical mechanics | last1 = Baxter | first1 = Rodney J. | year = 1982 | publisher = Academic Press Inc. }}</ref> Some examples include the [[Bethe ansatz]], [[square-lattice Ising model]] in zero field, [[hard hexagon model]].
+
+====Monte Carlo====
+{{main|Monte Carlo method}}
+
+One approximate approach that is particularly well suited to computers is the [[Monte Carlo method]], which examines just a few of the possible states of the system, with the states chosen randomly (with a fair weight). As long as these states form a representative sample of the whole set of states of the system, the approximate characteristic function is obtained. As more and more random samples are included, the errors are reduced to an arbitrarily low level.
+
+* The [[Metropolis–Hastings algorithm]] is a classic Monte Carlo method which was initially used to sample the canonical ensemble.
+* [[Path integral Monte Carlo]], also used to sample the canonical ensemble.
+
+==== Other ====
+* For rarefied non-ideal gases, approaches such as the [[cluster expansion]] use [[perturbation theory]] to include the effect of weak interactions, leading to a [[virial expansion]].<ref name="balescu" />
+* For dense fluids, another approximate approach is based on reduced distribution functions, in particular the [[radial distribution function]].<ref name="balescu"/>
+* [[Molecular dynamics]] computer simulations can be used to calculate [[microcanonical ensemble]] averages, in ergodic systems. With the inclusion of a connection to a stochastic heat bath, they can also model canonical and grand canonical conditions.
+* Mixed methods involving non-equilibrium statistical mechanical results (see below) may be useful.
+
+== Non-equilibrium statistical mechanics ==
+{{see also|Non-equilibrium thermodynamics}}
+
+There are many physical phenomena of interest that involve quasi-thermodynamic processes out of equilibrium, for example:
+* [[Thermal conduction|heat transport by the internal motions in a material]], driven by a temperature imbalance,
+* [[Electrical conduction|electric currents carried by the motion of charges in a conductor]], driven by a voltage imbalance,
+* spontaneous [[chemical reaction]]s driven by a decrease in free energy,
+* [[friction]], [[dissipation]], [[quantum decoherence]],
+* systems being pumped by external forces ([[optical pumping]], etc.),
+* and irreversible processes in general.
+All of these processes occur over time with characteristic rates, and these rates are of importance for engineering. The field of non-equilibrium statistical mechanics is concerned with understanding these non-equilibrium processes at the microscopic level. (Statistical thermodynamics can only be used to calculate the final result, after the external imbalances have been removed and the ensemble has settled back down to equilibrium.)
+
+In principle, non-equilibrium statistical mechanics could be mathematically exact: ensembles for an isolated system evolve over time according to deterministic equations such as [[Liouville's theorem (Hamiltonian)|Liouville's equation]] or its quantum equivalent, the [[von Neumann equation]]. These equations are the result of applying the mechanical equations of motion independently to each state in the ensemble. Unfortunately, these ensemble evolution equations inherit much of the complexity of the underlying mechanical motion, and so exact solutions are very difficult to obtain. Moreover, the ensemble evolution equations are fully reversible and do not destroy information (the ensemble's [[Gibbs entropy]] is preserved). In order to make headway in modelling irreversible processes, it is necessary to consider additional factors besides probability and reversible mechanics.
+
+Non-equilibrium mechanics is therefore an active area of theoretical research as the range of validity of these additional assumptions continues to be explored. A few approaches are described in the following subsections.
+
+=== Stochastic methods ===
+One approach to non-equilibrium statistical mechanics is to incorporate [[stochastic]] (random) behaviour into the system. Stochastic behaviour destroys information contained in the ensemble. While this is technically inaccurate (aside from [[Black hole information paradox|hypothetical situations involving black holes]], a system cannot in itself cause loss of information), the randomness is added to reflect that information of interest becomes converted over time into subtle correlations within the system, or to correlations between the system and environment. These correlations appear as [[Chaos theory|chaotic]] or [[pseudorandom]] influences on the variables of interest. By replacing these correlations with randomness proper, the calculations can be made much easier.
+
+{{unordered list
+|1 = ''[[Boltzmann transport equation]]'': An early form of stochastic mechanics appeared even before the term "statistical mechanics" had been coined, in studies of [[kinetic theory of gases|kinetic theory]]. [[James Clerk Maxwell]] had demonstrated that molecular collisions would lead to apparently chaotic motion inside a gas. [[Ludwig Boltzmann]] subsequently showed that, by taking this [[molecular chaos]] for granted as a complete randomization, the motions of particles in a gas would follow a simple [[Boltzmann transport equation]] that would rapidly restore a gas to an equilibrium state (see [[H-theorem]]).
+
+The Boltzmann transport equation and related approaches are important tools in non-equilibrium statistical mechanics due to their extreme simplicity. These approximations work well in systems where the "interesting" information is immediately (after just one collision) scrambled up into subtle correlations, which essentially restricts them to rarefied gases. The Boltzmann transport equation has been found to be very useful in simulations of electron transport in lightly doped [[semiconductor]]s (in [[transistor]]s), where the electrons are indeed analogous to a rarefied gas.
+
+A quantum technique related in theme is the [[random phase approximation]].
+
+|2 = ''[[BBGKY hierarchy]]'':
+In liquids and dense gases, it is not valid to immediately discard the correlations between particles after one collision. The [[BBGKY hierarchy]] (Bogoliubov–Born–Green–Kirkwood–Yvon hierarchy) gives a method for deriving Boltzmann-type equations but also extending them beyond the dilute gas case, to include correlations after a few collisions.
+
+|3 = ''[[Keldysh formalism]]'' (a.k.a. NEGF—non-equilibrium Green functions):
+A quantum approach to including stochastic dynamics is found in the Keldysh formalism. This approach is often used in electronic [[quantum transport]] calculations.
+
+|4 = Stochastic [[Liouville's theorem (Hamiltonian)|Liouville equation]].
+}}
+
+=== Near-equilibrium methods ===
+Another important class of non-equilibrium statistical mechanical models deals with systems that are only very slightly perturbed from equilibrium. With very small perturbations, the response can be analysed in [[linear response theory]]. A remarkable result, as formalized by the [[fluctuation–dissipation theorem]], is that the response of a system when near equilibrium is precisely related to the [[Statistical fluctuations|fluctuations]] that occur when the system is in total equilibrium. Essentially, a system that is slightly away from equilibrium—whether put there by external forces or by fluctuations—relaxes towards equilibrium in the same way, since the system cannot tell the difference or "know" how it came to be away from equilibrium.<ref name="balescu"/>{{rp|664}}
+
+This provides an indirect avenue for obtaining numbers such as [[Ohm's law|ohmic conductivity]] and [[thermal conductivity]] by extracting results from equilibrium statistical mechanics. Since equilibrium statistical mechanics is mathematically well defined and (in some cases) more amenable for calculations, the fluctuation–dissipation connection can be a convenient shortcut for calculations in near-equilibrium statistical mechanics.
+
+A few of the theoretical tools used to make this connection include:
+* [[Fluctuation–dissipation theorem]]
+* [[Onsager reciprocal relations]]
+* [[Green–Kubo relations]]
+* [[Ballistic conduction#Landauer-Büttiker formalism|Landauer–Büttiker formalism]]
+* [[Mori–Zwanzig formalism]]
+
+=== Hybrid methods ===
+An advanced approach uses a combination of stochastic methods and linear response theory. As an example, one approach to compute quantum coherence effects ([[weak localization]], [[conductance fluctuations]]) in the conductance of an electronic system is the use of the Green–Kubo relations, with the inclusion of stochastic [[dephasing]] by interactions between various electrons by use of the Keldysh method.<ref>{{Cite journal | last1 = Altshuler | first1 = B. L. | last2 = Aronov | first2 = A. G. | last3 = Khmelnitsky | first3 = D. E. | doi = 10.1088/0022-3719/15/36/018 | title = Effects of electron-electron collisions with small energy transfers on quantum localisation | journal = Journal of Physics C: Solid State Physics | volume = 15 | issue = 36 | pages = 7367 | year = 1982 |bibcode = 1982JPhC...15.7367A }}</ref><ref>{{Cite journal | last1 = Aleiner | first1 = I. | last2 = Blanter | first2 = Y. | doi = 10.1103/PhysRevB.65.115317 | title = Inelastic scattering time for conductance fluctuations | journal = Physical Review B | volume = 65 | issue = 11 | pages = 115317 | year = 2002 |arxiv = cond-mat/0105436 |bibcode = 2002PhRvB..65k5317A | s2cid = 67801325 | url = http://resolver.tudelft.nl/uuid:e7736134-6c36-47f4-803f-0fdee5074b5a }}</ref>
+
+==Applications outside thermodynamics==
+The ensemble formalism also can be used to analyze general mechanical systems with uncertainty in knowledge about the state of a system. Ensembles are also used in:
+* [[propagation of uncertainty]] over time,<ref name="gibbs"/>
+* [[regression analysis]] of gravitational [[orbit]]s,
+* [[ensemble forecasting]] of weather,
+* dynamics of [[neural networks]],
+* bounded-rational [[potential game]]s in game theory and economics.
+
+== History ==
+In 1738, Swiss physicist and mathematician [[Daniel Bernoulli]] published ''Hydrodynamica'' which laid the basis for the [[kinetic theory of gases]]. In this work, Bernoulli posited the argument, still used to this day, that gases consist of great numbers of molecules moving in all directions, that their impact on a surface causes the gas pressure that we feel, and that what we experience as [[heat]] is simply the kinetic energy of their motion.<ref name="uffink"/>
+
+In 1859, after reading a paper on the diffusion of molecules by [[Rudolf Clausius]], Scottish physicist [[James Clerk Maxwell]] formulated the [[Maxwell distribution]] of molecular velocities, which gave the proportion of molecules having a certain velocity in a specific range.<ref>See:
+* Maxwell, J.C. (1860) [https://books.google.com/books?id=-YU7AQAAMAAJ&pg=PA19#v=onepage&q&f=false "Illustrations of the dynamical theory of gases. Part I. On the motions and collisions of perfectly elastic spheres,"] ''Philosophical Magazine'', 4th series, '''19''' : 19–32. 
+* Maxwell, J.C. (1860) [https://books.google.com/books?id=DIc7AQAAMAAJ&pg=PA21#v=onepage&q&f=false "Illustrations of the dynamical theory of gases. Part II. On the process of diffusion of two or more kinds of moving particles among one another,"] ''Philosophical Magazine'', 4th series, '''20''' : 21–37.</ref> This was the first-ever statistical law in physics.<ref>{{cite book |last = Mahon |first = Basil |title=The Man Who Changed Everything – the Life of James Clerk Maxwell |location=Hoboken, NJ |publisher=Wiley |year=2003 |isbn=978-0-470-86171-4 |oclc=52358254}}</ref> Maxwell also gave the first mechanical argument that molecular collisions entail an equalization of temperatures and hence a tendency towards equilibrium.<ref>{{cite journal | last = Gyenis | first = Balazs | doi = 10.1016/j.shpsb.2017.01.001 | title = Maxwell and the normal distribution: A colored story of probability, independence, and tendency towards equilibrium | journal = Studies in History and Philosophy of Modern Physics | volume = 57 | pages = 53–65 | year = 2017| arxiv = 1702.01411 | bibcode = 2017SHPMP..57...53G | s2cid = 38272381 }}</ref> Five years later, in 1864, [[Ludwig Boltzmann]], a young student in Vienna, came across Maxwell's paper and spent much of his life developing the subject further.
+
+Statistical mechanics proper was initiated in the 1870s with the work of Boltzmann, much of which was collectively published in his 1896 ''Lectures on Gas Theory''.<ref>{{cite book |title = Statistical Thermodynamics and Stochastic Theory of Nonequilibrium Systems |editor1=Ebeling Werner|editor2=Sokolov Igor M.|publisher=World Scientific Press |volume=8 |last1=Ebeling |first1=Werner |last2=Sokolov |first2=Igor M. |year=2005 |isbn=978-90-277-1674-3 |pages=3–12 |url = https://books.google.com/books?id=KUjFHbid8A0C|bibcode=2005stst.book.....E |doi=10.1142/2012 |series = Series on Advances in Statistical Mechanics }} (section 1.2)</ref> Boltzmann's original papers on the statistical interpretation of thermodynamics, the [[H-theorem]], [[transport theory (statistical physics)|transport theory]], [[thermal equilibrium]], the [[equation of state]] of gases, and similar subjects, occupy about 2,000 pages in the proceedings of the Vienna Academy and other societies. Boltzmann introduced the concept of an equilibrium statistical ensemble and also investigated for the first time non-equilibrium statistical mechanics, with his [[H-theorem|''H''-theorem]].
+
+The term "statistical mechanics" was coined by the American mathematical physicist [[Josiah Willard Gibbs|J. Willard Gibbs]] in 1884.<ref>J. W. Gibbs, "On the Fundamental Formula of Statistical Mechanics, with Applications to Astronomy and Thermodynamics." Proceedings of the American Association for the Advancement of Science, '''33''', 57-58 (1884). Reproduced in ''The Scientific Papers of J. Willard Gibbs, Vol II'' (1906), [https://archive.org/stream/scientificpapers02gibbuoft#page/16/mode/2up pp.&nbsp;16].</ref>{{NoteTag|1 = According to Gibbs, the term "statistical", in the context of mechanics, i.e. statistical mechanics, was first used by the Scottish physicist [[James Clerk Maxwell]] in 1871. From: J. Clerk Maxwell, ''Theory of Heat'' (London, England: Longmans, Green, and Co., 1871), [https://books.google.com/books?id=DqAAAAAAMAAJ&pg=PA309 p.&nbsp;309]: "In dealing with masses of matter, while we do not perceive the individual molecules, we are compelled to adopt what I have described as the statistical method of calculation, and to abandon the strict dynamical method, in which we follow every motion by the calculus."}} "Probabilistic mechanics" might today seem a more appropriate term, but "statistical mechanics" is firmly entrenched.<ref>{{cite book |title = The enigma of probability and physics |last=Mayants |first=Lazar |year=1984 |publisher=Springer |isbn=978-90-277-1674-3 |page=174 |url = https://books.google.com/books?id=zmwEfXUdBJ8C&pg=PA174 }}</ref> Shortly before his death, Gibbs published in 1902 ''[[Elementary Principles in Statistical Mechanics]]'', a book which formalized statistical mechanics as a fully general approach to address all mechanical systems—macroscopic or microscopic, gaseous or non-gaseous.<ref name="gibbs" /> Gibbs' methods were initially derived in the framework [[classical mechanics]], however they were of such generality that they were found to adapt easily to the later [[quantum mechanics]], and still form the foundation of statistical mechanics to this day.<ref name="tolman" />
+
+== See also ==
+{{Div col}}
+{{Books-inline|Fundamentals of Statistical Mechanics}}
+* [[Thermodynamics]]: [[Non-equilibrium thermodynamics|non-equilibrium]], [[Chemical thermodynamics|chemical]]
+* [[Mechanics]]: [[Classical mechanics|classical]], [[Quantum mechanics|quantum]]
+* [[Probability]], [[Statistical ensemble (mathematical physics)|statistical ensemble]]
+* Numerical methods: [[Monte Carlo method]], [[molecular dynamics]]
+* [[Statistical physics]]
+* [[Quantum statistical mechanics]]
+* [[List of notable textbooks in statistical mechanics]]
+* [[List of publications in physics#Statistical mechanics|List of important publications in statistical mechanics]]
+{{Div col end}}
+
+== Notes ==
+{{NoteFoot}}
+
+== References ==
+{{Reflist
+|refs =
+<ref name="gibbs">{{cite book |last=Gibbs |first=Josiah Willard |author-link=Josiah Willard Gibbs |title=Elementary Principles in Statistical Mechanics |year=1902 |publisher=[[Charles Scribner's Sons]] |location=New York |title-link=Elementary Principles in Statistical Mechanics }}</ref>
+<ref name="tolman">{{cite book | last=Tolman |first=R. C. | author-link = Richard C. Tolman | year=1938 | title = The Principles of Statistical Mechanics | publisher=[[Dover Publications]] | isbn = 9780486638966 }}</ref>
+<ref name="balescu">{{cite book | isbn = 9780471046004 | title = Equilibrium and Non-Equilibrium Statistical Mechanics |last = Balescu |first = Radu | author-link = Radu Balescu | year = 1975 | publisher = John Wiley & Sons }}</ref>
+<ref name="uffink">J. Uffink, "[http://philsci-archive.pitt.edu/2691/1/UffinkFinal.pdf Compendium of the foundations of classical statistical physics.]" (2006)</ref>
+}}
+
+== External links ==
+{{Commons category|Statistical mechanics}}
+* [http://plato.stanford.edu/entries/statphys-statmech/ Philosophy of Statistical Mechanics] article by Lawrence Sklar for the [[Stanford Encyclopedia of Philosophy]].
+* [http://www.sklogwiki.org/ Sklogwiki - Thermodynamics, statistical mechanics, and the computer simulation of materials.] SklogWiki is particularly orientated towards liquids and soft condensed matter.
+* [https://web.archive.org/web/20060616002812/http://history.hyperjeff.net/statmech.html Statistical Thermodynamics] - Historical Timeline
+* [http://farside.ph.utexas.edu/teaching/sm1/statmech.pdf Thermodynamics and Statistical Mechanics] by Richard Fitzpatrick
+* [https://arxiv.org/abs/1107.0568 Lecture Notes in Statistical Mechanics and Mesoscopics] by Doron Cohen
+* {{YouTube |id = H1Zbp6__uNw&list=PLB72416C707D85AB0&index=1 |title = Videos of lecture series in statistical mechanics }} taught by [[Leonard Susskind]].
+* Vu-Quoc, L., [http://clesm.mae.ufl.edu/wiki.pub/index.php/Configuration_integral_%28statistical_mechanics%29 Configuration integral (statistical mechanics)], 2008. this wiki site is down; see [https://web.archive.org/web/20120428193950/http://clesm.mae.ufl.edu/wiki.pub/index.php/Configuration_integral_%28statistical_mechanics%29 this article in the web archive on 2012 April 28].
+
+{{-}}
+{{Statistical mechanics topics}}
+{{Physics-footer}}
+
+{{Authority control}}
+
+[[Category:Statistical mechanics]]
+[[Category:Subfields of physics]]
+[[Category:Thermodynamics]]

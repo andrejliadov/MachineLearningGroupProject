@@ -1,0 +1,37 @@
+{{Refimprove|date=April 2017}}
+
+In [[theoretical physics]], '''back-reaction''' (or '''backreaction''') is often necessary to calculate the self-consistent behaviour of a [[Elementary particle|particle]] or an object in an external field.
+
+==Intuitive definition==
+When a particle is considered to have no mass or to have an [[infinitesimal]] charge, this can be described as saying that we deal with a probe and that back-reaction is neglected. However, a real object also carries (in general) a mass and a charge itself. These properties imply that the model of the original environment needs to be modified to reach self-consistency. For example, a particle can be described as helping to curve the space in [[general relativity]]. Taking into account the constraints implied on the model by the particle's properties – the back-reaction – is one way of reaching a more accurate model than if those constraints are ignored.
+
+==Cosmology==
+In [[inhomogeneous cosmology]], in which structure formation is taken into account in a general-relativistic model of the Universe, the term "backreaction" is used for a measure of the non-commutativity of the averaging procedure
+:<math>G_{\mu\nu}(\overline{g_{\alpha\beta}}) \neq \overline{G_{\mu\nu}(g_{\alpha\beta})} = \frac{8\pi G}{c^4}\overline{T_{\mu\nu}}</math>
+(which comes from the non-linearity of Einstein field equations) and the dynamical evolution of spatial slices of space-time.<ref name="Buchert2008GRGreview" />
+{{As of|2017}}, the role of backreaction in possibly leading to an alternative to [[dark energy]] is an open question of debate among cosmologists.<ref name="Buchert11" /><ref name="Buchert11_CQGplus" />  The existence of a homogeneity length scale can be considered to be that at which the calculations with and without backreaction give the same results. {{As of|2017}}, the existence of such a scale needs experimental confirmation.<ref name="Buchert2008GRGreview" />
+
+==References==
+{{reflist|30em|refs=
+
+<ref name="Buchert2008GRGreview">{{cite journal | last = Buchert | first = Thomas | title = Dark Energy from structure: a status report | journal = [[General Relativity and Gravitation]] | volume = 40 | issue = 2–3| pages = 467–527 | year = 2008 | arxiv = 0707.2153 | bibcode = 2008GReGr..40..467B | doi = 10.1007/s10714-007-0554-8 }}</ref>
+
+<ref name="Buchert11">{{cite journal | last1 = Buchert |first1 = Thomas | last2 = Carfora |first2 = Mauro | last3 = Ellis |first3 = George F.R.  |last4 = Kolb | first4 = Edward W.  |last5 = MacCallum | first5 = Malcolm A.H.  |last6 = Ostrowski | first6 = Jan J.  |last7 = Räsänen |first7 = Syksy |last8 = Roukema |first8 = Boudewijn F.  |last9 = Andersson | first9 = Lars |last10 = Coley |first10 = Alan A.  |last11 = Wiltshire |first11 = David L.  | author-link3 = George F. R. Ellis | author-link4 = Edward Kolb | title = Is there proof that backreaction of inhomogeneities is irrelevant in cosmology?  | journal = [[Classical and Quantum Gravity]] | volume = 32 | issue = 21| pages = 215021 | date = 2015-10-13 | doi = 10.1088/0264-9381/32/21/215021 | arxiv = 1505.07800 |bibcode = 2015CQGra..32u5021B }}</ref>
+
+<ref name="Buchert11_CQGplus">{{cite web|title=The Universe is inhomogeneous. Does it matter? |last1=Buchert |first1=Thomas |last2=Carfora |first2=Mauro |last3=Ellis |first3=George F.R. |last4=Kolb |first4=Edward W. |last5=MacCallum |first5=Malcolm A.H. |last6=Ostrowski |first6=Jan J. |last7=Räsänen |first7=Syksy |last8=Roukema |first8=Boudewijn F. |last9=Andersson |first9=Lars |last10=Coley |first10=Alan A. |last11=Wiltshire |first11=David L. |author-link3=George F. R. Ellis |author-link4=Edward Kolb |work=CQG+ |publisher=[[Institute of Physics]] |date=2016-01-20 |url=http://cqgplus.com/2016/01/20/the-universe-is-inhomogeneous-does-it-matter/ |access-date=2016-01-21 |archive-url=https://www.webcitation.org/6egrqEkIx?url=http://cqgplus.com/2016/01/20/the-universe-is-inhomogeneous-does-it-matter/ |archive-date=2016-01-21 |url-status=live }}</ref>
+
+}}
+
+==External links==
+{{cite web
+|url=http://trenchesofdiscovery.blogspot.com.au/2015/07/cosmological-backreaction.html
+|title=The Trenches of Discovery: Cosmological Backreaction
+|author=Shaun Hotchkiss
+|date=1 July 2015
+|access-date=23 January 2016
+}}
+
+[[Category:Theoretical physics]]
+
+
+{{phys-stub}}

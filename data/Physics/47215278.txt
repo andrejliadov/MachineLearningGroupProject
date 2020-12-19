@@ -1,0 +1,164 @@
+{{short description|The entropy of a system attributable to electrons' probabilistic occupation of states}}
+'''Electronic entropy''' is the [[entropy]] of a system attributable to electrons' probabilistic occupation of states. This entropy can take a number of forms. The first form can be termed a [[density of states]] based entropy. The [[Fermi–Dirac statistics|Fermi–Dirac distribution]] implies that each eigenstate of a system, {{math|''i''}}, is occupied with a certain probability, {{math|''p''<sub>''i''</sub>}}. As the entropy is given by a sum over the probabilities of occupation of those states, there is an entropy associated with the occupation of the various electronic states. In most molecular systems, the energy spacing between the highest occupied molecular orbital and the lowest unoccupied molecular orbital is usually large, and thus the probabilities associated with the occupation of the excited states are small. Therefore, the electronic entropy in molecular systems can safely be neglected. Electronic entropy is thus most relevant for the thermodynamics of condensed phases, where the density of states at the [[Fermi level]] can be quite large, and the electronic entropy can thus contribute substantially to thermodynamic behavior.<ref name='Wolverton 1995'>{{cite journal
+ | last1 = Wolverton | first1 = Chris
+ | last2 = Zunger | first2 = Alex
+ | title = First-principles theory of short-range order, electronic excitations, and spin polarization in Ni-V and Pd-V alloys
+ | journal = Physical Review B
+ | volume = 52
+ | issue = 12
+ | pages = 8813–8828
+ | date = 15 September 1995
+ | doi = 10.1103/PhysRevB.52.8813| pmid = 9979872
+ | bibcode = 1995PhRvB..52.8813W
+ | url = https://zenodo.org/record/1233731
+ }}</ref><ref name=Nicholson1995>{{cite journal
+ | last1 = Nicholson | first1 = D. M. C.
+ | last2 = Stocks | first2 = G. M.
+ | last3 = Wang | first3 = Y.
+ | last4 = Shelton | first4 = W. A.
+ | last5 = Szotec | first5 = Z.
+ | last6 = Temmerman | first6 = W. M.
+ | title = Stationary nature of the density-functional free energy: Application to accelerated multiple-scattering calculations
+ | journal = Physical Review B
+ | volume = 50
+ | issue = 19
+ | pages = 14686
+ | date = 15 November 1994
+ | doi = 10.1103/PhysRevB.50.14686| pmid = 9975710
+ | bibcode = 1994PhRvB..5014686N}}</ref> A second form of electronic entropy can be attributed to the configurational entropy associated with localized electrons and holes.<ref name=Zhou2006>{{cite journal
+ | last1 = Zhou | first1 = Fei
+ | last2 = Maxisch | first2 = Thomas
+ | last3 = Ceder | first3 = Gerbrand
+ | title = Configurational Electronic Entropy and the Phase Diagram of Mixed-Valence Oxides: The Case of Li<sub>x</sub>FePO<sub>4</sub>
+ | journal = Physical Review Letters
+ | volume = 97
+ | issue = 15
+ | pages = 155704
+ | year = 2006
+ | doi = 10.1103/PhysRevLett.97.155704| pmid = 17155339
+ | arxiv = cond-mat/0612163| bibcode = 2006PhRvL..97o5704Z| s2cid = 119385806
+ }}</ref> This entropy is similar in form to the configurational entropy associated with the mixing of atoms on a lattice.
+
+Electronic entropy can substantially modify phase behavior, as in lithium ion battery electrodes,<ref name=Zhou2006 /> high temperature [[Superconductivity|superconductors]],<ref name=Schleger1994>{{cite journal
+ | last1 = Schleger | first1 = P.
+ | last2 = Hardy | first2 = W. N.
+ | last3 = Casalta | first3 = H.
+ | title = Model for the high-temperature oxygen-ordering thermodynamics in YBa<sub>2</sub>Cu<sub>3</sub>O<sub>6+x</sub>: Inclusion of electron spin and charge degrees of freedom
+ | journal = Physical Review B
+ | volume = 49
+ | issue = 1
+ | pages = 514
+ | date = 1 January 1994
+ | doi= 10.1103/PhysRevB.49.514| pmid = 10009312
+ | bibcode = 1994PhRvB..49..514S}}</ref><ref>{{cite journal 
+ | last1 = Tétot | first1 = R.
+ | last2 = Pagot | first2 = V.
+ | last3 = Picard | first3 = C.
+ | title = Thermodynamics of YBa<sub>2</sub>Cu<sub>3</sub>O<sub>6+x</sub>: Predictions of the asymmetric next-nearest-neighbor Ising model versus experimental data
+ | journal = Physical Review B
+ | volume = 59
+ | issue = 22
+ | pages = 14748
+ | date = 1 June 1999
+ | doi=10.1103/PhysRevB.59.14748| bibcode = 1999PhRvB..5914748T}}</ref> and some [[Perovskite (structure)|perovskites]].<ref>{{cite journal 
+ | last1 = Lankhorst | first1 = Martijn. H. R.
+ | last2 = Bouwmeester | first2 = H. J. M.
+ | last3 = Verweij | first3 = H.
+ | title = Importance of electronic band structure to nonstoichiometric behaviour of La<sub>0.8</sub>Sr<sub>0.2</sub>CoO<sub>3 − δ</sub>
+ | journal = Solid State Ionics
+ | volume = 96
+ | issue = 1–2
+ | pages = 21–27
+ | date = 2 March 1997
+ | doi=10.1016/S0167-2738(96)00620-0| url = https://research.utwente.nl/en/publications/importance-of-electronic-band-structure-to-nonstoichiometric-behaviour-of-la08sr02coo3(2c3e67aa-7e2f-4f80-bac9-f4fdb335f7c8).html
+ }}</ref> It is also the driving force for the coupling of heat and charge transport in [[Thermoelectric effect|thermoelectric materials]], via the [[Onsager reciprocal relations]].<ref name=KOM>{{cite book
+ | last1 = Balluffi | first1 = Robert W.
+ | last2 = Allen | first2 = Samuel M.
+ | last3 = Carter | first3 = W. Craig
+ | title = Kinetics of Materials
+ | publisher = [[John Wiley & Sons]]
+ | edition = 1st
+ | date = 2005
+ | location = 
+ | pages = 28
+ | doi = 10.1002/0471749311
+ | isbn = 9780471246893
+}}</ref>
+
+==From the density of states==
+
+===General Formulation===
+
+The entropy due to a set of states that can be either occupied with probability <math>p_i</math> or empty with probability <math>1-p_i</math> can be written as:
+:<math>S=-k_{\rm B}\sum_i n_i [ p_i \ln p_i + (1-p_i) \ln( 1 - p_i ) ] </math>,
+
+where {{math| ''k''<sub>B</sub>}} is [[Boltzmann constant]].
+
+For a continuously distributed set of states as a function of energy, such as the eigenstates in an [[electronic band structure]], the above sum can be written as an integral over the possible energy values, rather than a sum. Switching from summing over individual states to integrating over energy levels, the entropy can be written as:
+
+:<math>S=-k_{\rm B} \int n(E) \left [ p(E) \ln p(E) +(1- p(E)) \ln \left ( 1- p(E)\right )  \right ]dE </math>
+
+where {{math|''n''(''E'')}} is the [[density of states]] of the solid. The probability of occupation of each eigenstate is given by the Fermi function, {{math|''f''}}:
+
+:<math>p(E)=f=\frac{1}{e^{(E-E_{\rm F}) / k_{\rm B} T} + 1}</math>
+
+where {{math|''E''<sub>F</sub>}} is the [[Fermi energy]] and {{math|''T''}} is the absolute temperature. One can then re-write the entropy as:
+:<math>S=-k_{\rm B} \int n(E) \left [ f \ln f +(1- f) \ln \left ( 1- f \right )  \right ]dE </math>
+This is the general formulation of the density-of-states based electronic entropy.
+
+===Useful approximation===
+
+It is useful to recognize that the only states within ~{{math|{{plusmn}} ''k''<sub>B</sub>''T''}} of the Fermi level contribute significantly to the entropy. Other states are either fully occupied, {{math|<var>f</var> {{=}} 1}}, or completely unoccupied, {{math|<var>f</var> {{=}} 0}}. In either case, these states do not contribute to the entropy. If one assumes that the density of states is constant within {{math|{{plusmn}} ''k''<sub>B</sub>''T''}} of the Fermi level, one can derive that the [[electron heat capacity]], equal to:<ref>{{cite book
+ |last1= Ashcroft
+ |first1= Neil W.
+ |last2= Mermin
+ |first2= N. David
+ |title= Solid State Physics
+ |location= New York
+ |publisher= Holt, Reinhart and Winston
+ |date= 1976
+ |page= [https://archive.org/details/solidstatephysic00ashc/page/53 53-54]
+ |isbn= 0030839939
+ |url-access= registration
+ |url= https://archive.org/details/solidstatephysic00ashc/page/53
+ }}</ref>
+
+:<math>C_V=T\left(\frac{\partial S}{\partial T}\right)_{T,V}=\frac{\pi^2}{3} k_{\rm B}^2 T n(E_{\rm F})</math>
+
+where {{math|''n''(''E''<sub>F</sub>)}} is the density of states (number of levels per unit energy) at the Fermi level. Several other approximations can be made, but they all indicate that the electronic entropy should, to first order, be proportional to the temperature and the density of states at the Fermi level. As the density of states at the Fermi level varies widely between systems, this approximation is a reasonable heuristic for inferring when it may be necessary to include electronic entropy in the thermodynamic description of a system; only systems with large densities of states at the Fermi level should exhibit non-negligible electronic entropy (where large may be approximately defined as {{math|''n''(''E''<sub>F</sub>) ≥ (''k''{{su|b=B|p=2}}''T'')<sup>−1</sup>}}).
+
+== Application to different materials classes ==
+'''Insulators''' have zero density of states at the Fermi level due to their [[band gap]]s. Thus, the density of states-based electronic entropy is essentially zero in these systems.
+
+'''Metals''' have non-zero density of states at the Fermi level. Metals with free-electron-like band structures (e.g. alkali metals, alkaline earth metals, Cu, and Al) generally exhibit relatively low density of states at the Fermi level, and therefore exhibit fairly low electronic entropies. Transition metals, wherein the flat d-bands lie close to the Fermi level, generally exhibit much larger electronic entropies than the free-electron like metals.
+
+'''Oxides''' have particularly flat band structures and thus can exhibit large {{math|''n''(''E''<sub>F</sub>)}}, if the Fermi level intersects these bands. As most oxides are insulators, this is generally not the case. However, when oxides are metallic (i.e. the Fermi level lies within an unfilled, flat set of bands), oxides exhibit some of the largest electronic entropies of any material.
+
+'''Thermoelectric materials''' are specifically engineered to have large electronic entropies. The [[thermoelectric effect]] relies on charge carriers exhibiting large entropies, as the driving force to establish a gradient in electrical potential is driven by the entropy associated with the charge carriers. In the thermoelectric literature, the term ''band structure engineering'' refers to the manipulation of material structure and chemistry to achieve a high density of states near the Fermi level. More specifically, thermoelectric materials are intentionally doped to exhibit only partially filled bands at the Fermi level, resulting in high electronic entropies.<ref name=Pei2012>{{cite journal 
+ | last1 = Pei | first1 = Yanzhong
+ | last2 = Wang | first2 = Heng
+ | last3 = Snyder | first3 = G. J.
+ | title = Band Engineering of Thermoelectric Materials
+ | journal = Advanced Materials
+ | volume = 24
+ | issue = 46
+ | pages = 6125–6135
+ | date = 17 October 2012
+ | doi = 10.1002/adma.201202919| pmid = 23074043
+ }}</ref> Instead of engineering band filling, one may also engineer the shape of the band structure itself via introduction of nanostructures or quantum wells to the materials.<ref>{{cite journal|last1=Hicks|first1=L. D.|last2=Dresselhaus|first2=M. S.|title=Thermoelectric figure of merit of a one-dimensional conductor|journal=Physical Review B|date=15 June 1993|volume=47|issue=24|pages=16631–16634|doi=10.1103/PhysRevB.47.16631|pmid=10006109|bibcode=1993PhRvB..4716631H}}</ref><ref>{{cite journal|last1=Hicks|first1=L. D.|last2=Dresselhaus|first2=M. S.|title=Effect of quantum-well structures on the thermoelectric figure of merit|journal=Physical Review B|date=15 May 1993|volume=47|issue=19|pages=12727–12731|doi=10.1103/PhysRevB.47.12727|pmid=10005469|bibcode=1993PhRvB..4712727H}}</ref><ref>{{cite journal|last1=Hicks|first1=L. D.|last2=Harman|first2=T. C.|last3=Sun|first3=X.|last4=Dresselhaus|first4=M. S.|title=Experimental study of the effect of quantum-well structures on the thermoelectric figure of merit|journal=Physical Review B|date=15 April 1996|volume=53|issue=16|pages=R10493–R10496|doi=10.1103/PhysRevB.53.R10493|pmid=9982714|bibcode=1996PhRvB..5310493H}}</ref><ref>{{cite journal|last1=Dresselhaus|first1=M. S.|last2=Chen|first2=G.|last3=Tang|first3=M. Y.|last4=Yang|first4=R. G.|last5=Lee|first5=H.|last6=Wang|first6=D. Z.|last7=Ren|first7=Z. F.|last8=Fleurial|first8=J.-P.|last9=Gogna|first9=P.|title=New Directions for Low-Dimensional Thermoelectric Materials|journal=Advanced Materials|date=20 April 2007|volume=19|issue=8|pages=1043–1053|doi=10.1002/adma.200600527}}</ref>
+
+==Configurational electronic entropy==
+Configurational electronic entropy is usually observed in mixed-valence transition metal oxides, as the charges in these systems are both localized (the system is ionic), and capable of changing (due to the mixed valency). To a first approximation (i.e. assuming that the charges are distributed randomly), the molar configurational electronic entropy is given by:<ref name=Zhou2006 />
+:<math>S \approx n_\text{sites} \left [ x \ln  x + (1-x) \ln (1-x) \right ] </math>
+
+where {{math|''n''<sub>sites</sub>}} is the fraction of sites on which a localized electron/hole could reside (typically a transition metal site), and {{math|''x''}} is the concentration of localized electrons/holes. Of course, the localized charges are not distributed randomly, as the charges will interact electrostatically with one another, and so the above formula should only be regarded as an approximation to the configurational atomic entropy. More sophisticated approximations have been made in the literature.<ref name=Zhou2006 />
+
+==References==
+{{Reflist|35em}}
+
+{{Statistical mechanics topics}}
+
+[[Category:Concepts in physics]]
+[[Category:Statistical mechanics]]
+[[Category:Thermodynamics]]
+[[Category:Condensed matter physics]]

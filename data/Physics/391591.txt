@@ -1,0 +1,187 @@
+[[File:Refraction at interface.svg|thumb|Refraction at interface]]
+{{Use dmy dates|date=February 2013}}
+
+Many materials have a well-characterized [[refractive index]], but these indexes often depend strongly upon the [[frequency]] of light, causing [[Dispersion (optics)|optical dispersion]]. Standard refractive index measurements are taken at the "yellow doublet" [[Fraunhofer lines|sodium D line]], with a [[wavelength]] of 589 [[Nanometre|nanometer]]s.
+
+There are also weaker dependencies on [[temperature]], [[pressure]]/[[stress (physics)|stress]], etc., as well on precise material compositions (presence of [[dopant]]s, etc.); for many materials and typical conditions, however, these variations are at the percent level or less. Thus, it is especially important to cite the source for an index measurement if precision is required.
+
+In general, an index of refraction is a [[complex number]] with both a real and imaginary part, where the latter indicates the strength of absorption loss at a particular wavelength&mdash;thus, the imaginary part is sometimes called the [[refractive index#Dispersion|extinction coefficient]] <math>k</math>. Such losses become particularly significant, for example, in metals at short (e.g. visible) wavelengths, and must be included in any description of the [[refractive index]].
+
+[[File:RefractionReflextion.svg|thumb|center|650px|Refraction, critical angle and total internal reflection of light at the interface between two media.]]
+
+== List ==
+
+{| class="sortable wikitable"
+|+ '''Some representative refractive indices'''
+|- align=center
+!Name  of Material||λ (nm)||refractive index no. ''n''||Ref.
+|-
+|[[Vacuum]]|| || 1 (by definition) ||
+|-
+|[[Atmosphere of Earth|Air]] at [[Standard conditions for temperature and pressure|STP]]|| ||1.000273||
+|-
+! colspan="4" |Gases at 0&nbsp;°C and 1 atm
+|-
+|[[Earth's atmosphere|Air]]||589.29||1.000293||<ref name="ref1">{{cite book |first1= Alfred |last1=Zajac |last2= Hecht |first2=Eugene |title= Optics, Fourth Edit|publisher= Pearson Higher Education |date= 18 March 2003 |isbn= 978-0-321-18878-6}}</ref>
+|-
+|[[Carbon dioxide]]||589.29||1.001||<ref name="ref4">{{cite book |last= Morgan |first=Joseph |title= Introduction to Geometrical and Physical Optics |url= https://archive.org/details/introductiontoge0000morg |url-access= registration |publisher= McGraw-Hill Book Company, INC. |year= 1953}}</ref><ref name="ref3">{{cite book |last= Hodgman |first= Charles D. |title= Handbook of Chemistry and Physics |url= https://archive.org/details/handbookofchemis00hodg |url-access= registration |publisher= Chemical Rubber Publishing Co. |year= 1957}}</ref><ref name="ref5">{{cite book |first1= Frank L. |last1=Pedrotti |first2=Leno M. |last2=Pedrotti |first3=Leno S. |last3=Pedrotti |title= Introduction to Optics, Third Edition |publisher= Pearson Prentice Hall |page= 221 |year= 2007 |isbn= 978-0-13-149933-1 }}</ref>
+|-
+|[[Helium]]||589.29||1.000036||<ref name="ref1"/>
+|-
+|[[Hydrogen]]||589.29||1.000132||<ref name="ref1"/>
+|-
+! colspan="4" |Liquids at 20&nbsp;°C
+|-
+|[[Arsenic trisulfide]] and [[sulfur]] in [[methylene iodide]]|| ||1.9||<ref>[http://www.minsocam.org/ammin/AM40/AM40_398.pdf Meyrowitz, R, A compilation and classification of immersion media of high index of refraction, American Mineralogist 40: 398 (1955)]</ref>
+|-
+|[[Carbon disulfide]]||589.29||1.628||<ref name="ref1"/>
+|-
+|[[Benzene]]||589.29||1.501||<ref name="ref1"/>
+|-
+|[[Carbon tetrachloride]]||589.29||1.461||<ref name="ref1"/>
+|-
+|[[Silicone oil]] (nD{{Sup|25}})||589.29||1.393–1.403||<ref>{{cite web |title= Silicone Fluids: Stable and Inert Media |publisher= Gelest, Inc |date= 1998 |url= http://www.gelest.com/wp-content/uploads/Goods-PDF-brochures-inert_silicones_2013.pdf }}</ref>
+|-
+|[[Kerosene]]|| ||1.39||
+|-
+|[[Ethanol]] (ethyl alcohol)||589.29||1.361||<ref name="ref1"/>
+|-
+|[[Acetone]]|| ||1.36||
+|-
+|[[Water]]||589.29||1.333||<ref name="ref1"/>
+|-
+|10% [[Glucose]] solution in water||589.29||1.3477||<ref name="Lide">{{cite book |edition= 82nd |editor-last= Lide |editor-first= David R. Lide |title= CRC Handbook of Physics and Chemistry |publisher= The Chemical Rubber Company |location= Cleveland, OH |year= 2001 |isbn= 978-0-8493-0482-8}}</ref>
+|-
+|20% Glucose solution in water||589.29||1.3635||<ref name=Lide/>
+|-
+|60% Glucose solution in water||589.29||1.4394||<ref name=Lide/>
+|-
+! colspan="4" | Solids at room temperature
+|-
+
+|[[Silicon carbide]] (Moissanite; 6H form)|| 589.29||2.65||<ref name=ioffe>{{cite web| url = http://www.ioffe.ru/SVA/NSM/Semicond/SiC/optic.html| title = Silicon Carbide (SiC) - Optical properties| publisher = Ioffe Institute| accessdate = 2009-06-06}}</ref>
+|-
+|[[Titanium dioxide]] ([[rutile]] phase)||589.29||2.614||<ref>{{cite web |last= Polyanskiy |first= Mikhail N. |title= Optical constants of TiO<sub>2</sub> (Titanium dioxide) |work= Refractive Index Database |url= http://refractiveindex.info/?group=CRYSTALS&material=TiO2 }}</ref><ref>{{cite journal |last1= Shannon |first1= Robert D. |first2= Ruth C. |last2=Shannon |first3= Olaf |last3= Medenbach |first4= Reinhard X. |last4= Fischer |title= Refractive Index and Dispersion of Fluorides and Oxides |journal=  J. Phys. Chem. Ref. Data |volume= 31 |issue= 4 |pages= 931–970 |date= 25 Oct 2002 |url= https://www.nist.gov/data/PDFfiles/jpcrd623.pdf |doi=10.1063/1.1497384|bibcode= 2002JPCRD..31..931S }}</ref>
+|-
+|[[Diamond]]||589.29||2.417||<ref name="ref1"/>
+|-
+|[[Strontium titanate]]||589.29||2.41||<ref>{{Cite journal|url = http://engineering.case.edu/centers/sdle/sites/engineering.case.edu.centers.sdle/files/optical_properties_and_electronic_structure_of_oxi.pdf|title = Optical properties and electronic structure of oxidized and reduced single-crystal strontium titanate|last1 = Frye|first1 = Asa|date = 2003|journal = Zeitschrift für Metallkunde|volume = 94|issue = 3|pages = 226|accessdate = 11 July 2014|doi = 10.3139/146.030226|last2 = French|first2 = R. H.|last3 = Bonnell|first3 = D. A.|authorlink3=Dawn Bonnell}}</ref>
+|-
+|[[Tantalum Pentoxide]]||589.29||2.15||<ref>{{Cite journal|url = https://refractiveindex.info/?shelf=main&book=Ta2O5&page=Gao|title = Optical constants of Ta2O5 (Tantalum pentoxide)|last = Polyanskiy|first = Mikhail |date = 2018|journal = Refractive Index Database}}</ref>
+|-
+
+|-
+|[[Amber]]||589.29||1.55||<ref name="ref1"/>
+|-
+|[[Sodium chloride]]||589.29||1.544||<ref name="ref8">{{cite book |first= Raymond A. |last1=Serway |last2= Faughn |first2=Jerry S. |title= College Physics, 6th Edition |publisher= Brooks/Cole |page= 692 |year= 2003 |isbn= 978-0-03-035114-3}}</ref>
+|-
+|[[Fused silica]] (a pure form of [[glass]], also called fused quartz)||589.29||1.458||<ref name="ref1"/><ref>{{Cite journal|url = http://engineering.case.edu/centers/sdle/sites/engineering.case.edu.centers.sdle/files/optical_properties_and_london_dispersion_interacti.pdf|title = Optical properties and London dispersion interaction of amorphous and crystalline {SiO2} determined by vacuum ultraviolet spectroscopy and spectroscopic ellipsometry|last1 = Tan|first1 = G|date = 2005|journal = Physical Review B|volume = 72|issue = 20|pages = 205117|accessdate = 11 July 2014|doi = 10.1103/PhysRevB.72.205117|last2 = Lemon|first2 = M.|last3 = Jones|first3 = D.|last4 = French|first4 = R.|bibcode = 2005PhRvB..72t5117T }}</ref>
+|-
+
+! colspan="4" | Other materials
+|-
+|[[Liquid helium]]|| ||1.025||
+|-
+|[[Perfluorohexane]]  (Fluorinert FC-72)|| ||1.251|| <ref>{{cite web |url=http://multimedia.3m.com/mws/media/64892O/fluorinert-electronic-liquid-fc-72.pdf |title=Fluorinert Electronic Liquid FC-72 Product Information |accessdate=2017-05-01}}</ref>
+|-
+|[[Water]] ice|| ||1.31||
+|-
+|[[TFE/PDD]] (Teflon AF)|| ||1.315|| <ref name="Teflon_AF">{{cite web|url=http://www2.dupont.com/Teflon_Industrial/en_US/products/product_by_name/teflon_af/properties.html |title=Teflon AF |accessdate=2010-10-14}}</ref><ref>{{Cite journal|url = http://engineering.case.edu/centers/sdle/sites/engineering.case.edu.centers.sdle/files/optical_properties_of_teflon_r_af_amorphous_fluo.pdf|title = Optical properties of Teflon® {AF} amorphous fluoropolymers|last = Yang|first = Min K.|date = July 2008|journal = Journal of Micro/Nano Lithography|volume = 7|issue = 3|pages = 033010|accessdate = 11 July 2014|doi = 10.1117/1.2965541}}</ref>
+|-
+|[[Cryolite]]|| ||1.338||
+|-
+|Cytop|| ||1.34|| <ref name=Cytop>{{cite web |title= CYTOP Amorphous Fluoropolymer |publisher= AGCCE Chemicals Europe, Ltd. |url= http://www.agcce.eu.com/CYTOP/TechInfo.asp |accessdate= 2010-10-14 |url-status= dead |archiveurl= https://web.archive.org/web/20100824120507/http://www.agcce.eu.com/CYTOP/TechInfo.asp |archivedate= 24 August 2010 |df= dmy-all }}</ref>
+|-
+|[[Polytetrafluoroethylene]] (Teflon)|| ||1.35–1.38||<ref>{{Cite book|url = http://engineering.case.edu/centers/sdle/sites/engineering.case.edu.centers.sdle/files/optical_properties_of_materials_for_concentrator_p.pdf|title = Optical properties of materials for concentrator photovoltaic systems|last1 = French|first1 = Roger H.|date = 2009|journal = IEEE Photovoltaic Specialists Conference|pages = 000394|accessdate = 11 July 2014|doi = 10.1109/PVSC.2009.5411657|last2 = Rodriguez-Parada|first2 = J. M.|last3 = Yang|first3 = M. K.|last4 = Derryberry|first4 = R. A.|last5 = Lemon|first5 = M. F.|last6 = Brown|first6 = M. J.|last7 = Haeger|first7 = C. R.|last8 = Samuels|first8 = S. L.|last9 = Romano|first9 = E. C.|last10 = Richardson|first10 = R. E.|isbn = 978-1-4244-2949-3 |display-authors=3}}</ref>
+|-
+| [[Sugar]] solution, 25%|| ||1.3723||<ref name="refSugar">{{cite web |url=http://www.frederiksen.eu/fileadmin/user_upload/PDF/Export_Manuals/545920_AE_sugarsolution.pdf |title=Manual for Sugar Solution Prism |accessdate=2012-03-21 |date=2005-08-03 |publisher=A/S S. Frederiksen |archive-url=https://web.archive.org/web/20160303211159/http://www.frederiksen.eu/fileadmin/user_upload/PDF/Export_Manuals/545920_AE_sugarsolution.pdf |archive-date=3 March 2016 |url-status=dead }}</ref>
+|-
+|[[Cornea]] (human)|| ||1.373/1.380/1.401 || <ref>{{Cite journal |last1= Patel |first1= S |last2= Marshall |first2= J |last3=Fitzke |first3= FW 3rd. |title= Refractive index of the human corneal epithelium and stroma |journal= J Refract Surg. |volume= 11 |issue= 2 |pages= 100–105 |date= Mar–Apr 1995 |doi= 10.3928/1081-597X-19950301-09 |pmid= 7634138 }}</ref>
+|-
+|[[Lens (anatomy)|Lens]] (human)|| ||1.386–1.406||
+|-
+|[[Liver]] (human)||964||1.369|| <ref>{{Cite journal |last1= Giannios |first1= P |last2= et |first2= al |title= Visible to near-infrared refractive properties of freshly-excised human-liver tissues: marking hepatic malignancies |journal= Sci. Rep. |volume= 6 |pages= 27910 |doi= 10.1038/srep27910 |pmid= 27297034 |pmc= 4906272 |date= 2016 |bibcode= 2016NatSR...627910G }}</ref>
+|-
+|[[Intestinal mucosa]] (human)||964||1.329-1.338|| <ref>{{Cite journal |last1= Giannios |first1= P |first2= et |last2=al |title= Complex refractive index of normal and malignant human colorectal tissue |journal= J. Biophotonics |doi= 10.1002/jbio.201600001 |pmid= 27091794 |date= 2016 |volume=10 |issue= 2 |pages=303–310}}</ref>
+|-
+|Ethylene tetrafluoroethylene ([[ETFE]])|| ||1.403|| <ref>{{cite journal|title=A review of solid–fluid selection options for optical-based measurements in single-phase liquid, two-phase liquid–liquid and multiphase solid–liquid flows|authors=Wright, S.F., Zadrazil, I. & Markides, C.N.|journal=Experiments in Fluids |year=2017|volume=58 |issue=9|pages=108|bibcode=2017ExFl...58..108W|doi=10.1007/s00348-017-2386-y|doi-access=free}}</ref>
+|-
+|Sylgard 184 ([[polydimethylsiloxane]])|| ||1.4118|| <ref name="Sylgard184">{{cite web |url=http://www1.dowcorning.com/DataFiles/090007c8803bb6a1.pdf |title=184 Silicone Elastomer |publisher=Dow Corning |type=Product Information |accessdate=2012-12-11 }}{{Dead link|date=March 2020 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>
+|-
+| Sugar solution, 50%|| ||1.4200||<ref name="refSugar"/>
+|-
+|[[Polylactic acid]]|| ||1.46||<ref name="PLA Optical">{{cite book|title=Poly(Lactic Acid): Synthesis, Structures, Properties, Processing, and Applications; Chapter 8: Optical Properties|pages=97|doi=10.1002/9780470649848.ch8|chapter=Optical Properties|year=2010|last1=Gonçalves|first1=Carla M. B.|last2=Coutinho|first2=Joa˜o A. P.|last3=Marrucho|first3=Isabel M.|isbn=9780470649848}}</ref>
+|-
+|[[Pyrex]] (a [[borosilicate glass]])|| ||1.470||<ref name="ref2">{{cite web |url=http://www.matter.org.uk/schools/Content/Refraction/absolute.html |title=Absolute Refractive Index |work=Materials Teaching Educational Resources |publisher=MATTER Project |accessdate=2007-10-18 |author=University of Liverpool |url-status=dead |archiveurl=https://web.archive.org/web/20071012161040/http://matter.org.uk/schools/Content/Refraction/absolute.html |archivedate=12 October 2007 |df=dmy-all |author-link=University of Liverpool }}</ref>
+|-
+|[[Vegetable oil]]|| ||1.47||<ref>[https://hypertextbook.com/facts/2006/TingTingLuo.shtml Index Of Refraction Of Vegetable Oil], The Physics Factbook.</ref>
+|-
+|[[Glycerol]]|| ||1.4729||
+|-
+| Sugar solution, 75%|| ||1.4774||<ref name="refSugar"/>
+|-
+|[[Poly(methyl methacrylate)]] (PMMA)|| ||1.4893–1.4899||
+|-
+|[[Halite]] (rock salt)|| ||1.516||
+|-
+|[[Plate Glass]] (window glass)|| ||1.52||
+<ref name=seward>"High temperature glass melt property database for process modeling"; Eds.: Thomas P. Seward III and Terese Vascott; The American Ceramic Society, Westerville, Ohio, 2005, {{ISBN|1-57498-225-7}}</ref> 
+|-
+|[[Crown glass (optics)|Crown glass (pure)]]|| ||1.50–1.54||
+|-
+|PETg|| ||1.57||
+|-
+|[[Polyethylene terephthalate]] (PET)|| ||1.5750||
+|-
+|[[Polycarbonate]]|| 150 ||1.60||<ref>C. R. Garcia, J. Correa, D. Espalin, J. H. Barton, R. C. Rumpf, R. Wicker, V. Gonzalez, "[http://www.jpier.org/PIERL/pierl34/08.12070311.pdf 3D Printing of Anisotropic Metamaterials]," PIER Lett, Vol. 34, pp. 75-82, 2012.</ref>
+|-
+|[[Crown glass (optics)|Crown glass (impure)]]|| ||1.485–1.755||
+|-
+|[[Flint glass|Flint glass (pure)]]|| ||1.60–1.62||
+|-
+|[[Bromine]]|| ||1.661||
+|-
+|[[Flint glass|Flint glass (impure)]]|| ||1.523–1.925||
+|-
+|[[Sapphire]]|| ||1.762–1.778||
+|-
+|[[Boron nitride]] || ||2-2.14||<ref>{{cite web |url=http://www.bn.saint-gobain.com/uploadedFiles/SGbn/Documents/Solids/Combat-Solids-DS1.pdf |title=Combat Boron Nitride |publisher=Saint Gobain |accessdate=2016-06-12 |archive-url=https://web.archive.org/web/20150218230636/http://www.bn.saint-gobain.com/uploadedFiles/SGbn/Documents/Solids/Combat-Solids-DS1.pdf |archive-date=18 February 2015 |url-status=dead }}</ref>
+|-
+|[[Cubic zirconia]]|| ||2.15–2.18||<ref>{{Cite journal|url = http://engineering.case.edu/centers/sdle/sites/engineering.case.edu.centers.sdle/files/experimental_and_theoretical_determination_of_the_0.pdf|title = Experimental and theoretical determination of the electronic structure and optical properties of three phases of {ZrO2}|last1 = French|first1 = Roger H.|date = 1994|journal = Physical Review B|volume = 49|issue = 8|pages = 5133–5142|accessdate = 11 July 2014|doi = 10.1103/PhysRevB.49.5133|last2 = Glass|first2 = S.|last3 = Ohuchi|first3 = F.|last4 = Xu|first4 = Y.|last5 = Ching|first5 = W. |pmid = 10011463|display-authors=3|bibcode = 1994PhRvB..49.5133F }}</ref>
+|-
+|[[Potassium niobate]] (KNbO<sub>3</sub>)|| ||2.28||
+|-
+|[[Zinc oxide]]||390||2.4||
+|-
+|[[Cinnabar]] ([[mercury sulfide]])|| ||3.02|| Birefringent: n<sub>ω</sub> = 2.905 n<sub>ε</sub> = 3.256 <ref name=gemsoc-ri-dr>{{Cite web|url=https://www.gemsociety.org/article/table-refractive-index-double-refraction-gems/|title=Table of Refractive Indices and Double Refraction of Selected Gems - IGS|website=International Gem Society|language=en|access-date=2020-01-22}}</ref>
+|-
+|[[Silicon]] ||1200 - 8500 ||3.42–3.48||<ref>{{cite web|url=http://www.pmoptics.com/silicon.html |title=Silicon |publisher=Pmoptics.com |accessdate=2014-08-21}}</ref>
+|-
+|[[Gallium(III) phosphide]]|| ||3.5||
+|-
+|[[Gallium(III) arsenide]]|| ||3.927|| 
+|-
+|[[Germanium]]||3000 - 16000 ||4.05–4.01||<ref>{{cite web|url=http://www.pmoptics.com/germanium.html |title=Germanium |publisher=Pmoptics.com |accessdate=2014-08-21}}</ref>
+|}
+
+==See also==
+*[[Sellmeier equation]]
+*[[Corrective lens#Ophthalmic material property tables]]
+*[[Optical properties of water and ice]]
+
+==References==
+{{reflist}}
+
+== External links ==
+*[http://www.iapws.org/relguide/rindex.pdf International Association for the Properties of Water and Steam]
+*[http://www.ioffe.ru/SVA/NSM/nk/index.html Ioffe institute, Russian Federation] 
+*[http://www.crystran.co.uk/ Crystran, United Kingdom]
+*[http://www.astro.uni-jena.de/Laboratory/Database/jpdoc/f-dbase.html Jena University, Germany]
+*[http://hyperphysics.phy-astr.gsu.edu/hbase/tables/indrf.html#c1 Hyperphysics list of refractive indices]
+*[http://www.luxpop.com/ Luxpop: Index of refraction values and photonics calculations]
+*[https://web.archive.org/web/20100306165232/http://www.kayelaby.npl.co.uk/general_physics/2_5/2_5_8.html Kaye and Laby Online] Provided by the [[National Physical Laboratory, UK]]
+*[https://web.archive.org/web/20100704022225/http://macro.lsu.edu/HowTo/solvents/Refractive%20Index.htm List of Refractive Indices of Solvents]
+
+{{DEFAULTSORT:Refractive index}}
+[[Category:Physics-related lists]]
+[[Category:Optics]]

@@ -1,16 +1,15 @@
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 from sklearn.datasets import load_files
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import classification_report, accuracy_score
 from sklearn.svm import LinearSVC
 import nltk
 from nltk.stem.wordnet import WordNetLemmatizer
 
 #Read in the data
-DATA_DIR = "./MachineLearningGroupProject/MachineLearningGroupProject/data/"
+DATA_DIR = "./data/"
 data = load_files(DATA_DIR, encoding='utf-8', decode_error='replace')
 labels, counts = np.unique(data.target, return_counts=True)
 labels_str = np.array(data.target_names)[labels]

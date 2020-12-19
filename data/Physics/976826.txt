@@ -1,0 +1,53 @@
+{{Short description|Physical quantities taking on only discrete values}}
+{{for|the mathematical concept|discrete spectrum (Mathematics)}}
+[[File:Hydrogen spectrum.svg|240px|right|thumb|The discrete part of the emission spectrum of hydrogen]]
+
+[[File:Solar Spectrum.png|240px|right|thumb|Spectrum of sunlight above the atmosphere (yellow) and at sea level (red), revealing an absorption spectrum with a discrete part (such as the line due to {{chem|O|2}}) and a continuous part (such as the bands labeled {{chem|H|2|O}})]]
+
+A [[observable|physical quantity]] is said to have a '''discrete spectrum''' if it takes only distinct values, with gaps between one value and the next.
+
+The classical example of discrete spectrum (for which the term was first used) is the characteristic set of discrete [[spectral line]]s seen in the [[emission spectrum]] and [[absorption spectrum]] of isolated [[atom]]s of a [[chemical element]], which only absorb and emit light at particular [[wavelength]]s. The technique of [[spectroscopy]] is based on this phenomenon.
+
+Discrete spectra are contrasted with the [[Continuous spectrum|continuous spectra]] also seen in such experiments, for example in [[thermal emission]], in [[synchrotron radiation]], and many other light-producing phenomena.
+
+[[File:Oh No Girl Spectrogram.jpg|240px|right|thumb|[[Acoustic spectrogram]] of the words "Oh, no!" said by a young girl, showing how the discrete{{citation needed|date=February 2013}} spectrum of the sound (bright orange lines) changes with time (the horizontal axis)]]
+Discrete spectra are seen in many other phenomena, such as vibrating [[string (music)|string]]s, [[microwave]]s in a [[microwave cavity|metal cavity]], [[sound wave]]s in a [[pulsating star]], and [[resonance (particle physics)|resonances]] in high-energy [[particle physics]].
+
+The general phenomenon of discrete spectra in physical systems can be mathematically modeled with tools of [[functional analysis]], specifically by the [[decomposition of spectrum (functional analysis)|decomposition of the spectrum]] of a [[linear operator]] acting on a [[functional space]].
+
+==Origins of discrete spectra==
+
+=== Classical mechanics ===
+In [[classical mechanics]], discrete spectra are often associated to [[wave]]s and [[oscillation]]s in a bounded object or domain.  Mathematically they can be identified with the [[eigenvalue]]s of [[differential operator]]s that describe the evolution of some continuous variable (such as [[deformation (mechanics)|strain]] or [[pressure]]) as a function of time and/or space.
+
+Discrete spectra are also produced by some [[non-linear oscillator]]s where the relevant quantity has a non-[[sinusoid]]al [[waveform]].  Notable examples are the sound produced by the [[vocal chord]]s of mammals.<ref name=pulak>
+  Hannu Pulakka (2005), [https://aaltodoc.aalto.fi/bitstream/handle/123456789/982/urn007925.pdf Analysis of human voice production using inverse filtering, high-speed imaging, and electroglottography].  Master's thesis, Helsinki University of Technology.
+</ref><ref name=lind>
+  Björn Lindblom and Johan Sundberg (2007), ''The Human Voice in Speech and Singing''. in ''Springer Handbook of Acoustics'', pages 669-712. {{doi|10.1007/978-0-387-30425-0_16}} {{ISBN|978-0-387-30446-5}}
+</ref>{{rp|p.684}} and the [[stridulation]] organs of [[crickets]],<ref name=popov>
+  A. V. Popov, V. F. Shuvalov, A. M. Markovich (1976), ''The spectrum of the calling signals, phonotaxis, and the auditory system in the cricket Gryllus bimaculatus''. Neuroscience and Behavioral Physiology, volume 7, issue 1, pages 56-62 {{doi|10.1007/BF01148749}}
+</ref> whose spectrum shows a series of strong lines at frequencies that are integer multiples ([[harmonic]]s) of the [[fundamental frequency|oscillation frequency]].
+
+A related phenomenon is the appearance of strong harmonics when a sinusoidal signal (which has the ultimate "discrete spectrum", consisting of a single spectral line) is modified by a non-linear [[filter (signal processing)|filter]]; for example, when a [[pure tone]] is played through an overloaded [[amplifier]],<ref name=klip>Paul V. Klipsch (1969), [http://www.elpee.info/Documenten/KlipschVervorming.pdf ''Modulation distortion in loudspeakers''] {{Webarchive|url=https://web.archive.org/web/20160304025155/http://www.elpee.info/Documenten/KlipschVervorming.pdf |date=2016-03-04 }} Journal of the Audio Engineering Society.</ref> or when an intense [[monochromatic]] [[laser]] beam goes through a [[non-linear optics|non-linear medium]].<ref>
+  J. A. Armstrong, N. Bloembergen J. Ducuing, and P. S. Pershan (1962), [http://prola.aps.org/pdf/PR/v127/i6/p1918_1 Interactions between Light Waves in a Nonlinear Dielectric''].  Physical Review, volume 127, issue 6, pages 1918–1939. {{doi|10.1103/PhysRev.127.1918}}
+</ref>  In the latter case, if two arbitrary sinusoidal signals with frequencies ''f'' and ''g'' are processed together, the output signal will generally have spectral lines at frequencies |''mf'' + ''ng''| where ''m'' and ''n'' are any integers.
+
+=== Quantum mechanics ===
+{{main|Spectrum (functional analysis) #Point spectrum}}
+In [[quantum mechanics]], the discrete spectrum of an observable corresponds to the [[eigenvalue]]s of the [[operator (physics)|operator]] used to model that observable.  According to the [[functional analysis|mathematical theory of such operators]], its eigenvalues are a discrete set of [[isolated point]]s, which may be either [[finite set|finite]] or [[countable set|countable]].
+
+Discrete spectra are usually associated with systems that are [[bound state|bound]] in some sense (mathematically, confined to a [[compact space]]).  The [[position operator|position]] and [[momentum operator]]s have continuous spectra in an infinite domain, but a discrete (quantized) spectrum in a compact domain<ref name=LL>L. D. Landau, E. M. Lifshitz,  [https://archive.org/details/QuantumMechanics_104 Quantum Mechanics ( Volume 3 of A Course of Theoretical Physics ) Pergamon Press 1965]</ref>  and the same properties of spectra hold for [[angular momentum]], [[Hamiltonian (quantum mechanics)|Hamiltonians]] and other operators of  quantum  systems.<ref name= LL />
+
+The [[quantum harmonic oscillator]] and the [[hydrogen atom]] are examples of physical systems in which the Hamiltonian has a discrete spectrum. In the case of the hydrogen atom the spectrum has both a continuous and a discrete part, the continuous part representing the [[ionization]].
+
+== See also ==
+* [[Band structure]]
+* [[Discrete frequency domain]]
+* [[Decomposition of spectrum (functional analysis)]]
+* [[Essential spectrum]]
+
+==References==
+{{reflist}}
+
+[[Category:Spectroscopy]]
+[[Category:Concepts in physics]]

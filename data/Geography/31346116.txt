@@ -1,0 +1,28 @@
+{{refimprove|date=April 2011}}
+
+A '''geographical cluster''' is a localized [[:wikt:anomaly|anomaly]], usually an excess of something given the [[spatial distribution|distribution]] or variation of something else.<ref>{{cite web
+ |url=http://www.ccg.leeds.ac.uk/smart/gam/gam3.html 
+ |title=WayBackMachine capture of http://www.ccg.leeds.ac.uk/smart/gam/gam3.html 
+ |work=CCG GAM Web Pages 
+ |author=Ian Turton, Stan Openshaw 
+ |authorlink=Stan Openshaw 
+ |date=1998-02-25 
+ |accessdate=2011-04-19 
+ |url-status=unfit 
+ |archiveurl=https://web.archive.org/web/19991007040441/http://www.ccg.leeds.ac.uk/smart/gam/gam3.html 
+ |archivedate=October 7, 1999 
+}}</ref> Often it is considered as an [[incidence rate]] that is unusual in that there is more of some variable than might be expected. Examples would include: a local excess disease rate, a crime hot spot, areas of high unemployment, [[accident blackspot]]s, unusually high positive residuals from a model, high concentrations of flora or fauna, physical features or events like earthquake epicenters etc... {{Fact|date=July 2014}}
+
+Identifying these extreme regions may be useful in that there could be implicit geographical associations with other variables that can be identified and would be of interest. Pattern detection via the identification of such geographical clusters is a very simple and generic form of geographical analysis that has many applications in many different contexts. The emphasis is on localized clustering or patterning because this may well contain the most useful information.  {{Fact|date=July 2014}}
+
+A geographical cluster is different from a high concentration as it is generally second order, involving the factoring in of the distribution of something else. {{Fact|date=July 2014}}
+
+==Geographical cluster detection==
+Identifying geographical clusters can be an important stage in a geographical analysis. Mapping the locations of unusual concentrations may help identify causes of these. Some techniques include the Geographical Analysis Machine and Besag and Newell's cluster detection method.<ref>{{cite journal|last1=Fotheringham|first1=A. Stewart|last2=Zhan|first2=F. Benjamin|title=A Comparison Of Three Exploratory Methods for Cluster Detection in Spatial Point Patterns|journal=Geographical Analysis|date=September 3, 2010|volume=28|issue=3|pages=200–218|doi=10.1111/j.1538-4632.1996.tb00931.x}}</ref>
+
+== References ==
+{{reflist}}
+
+[[Category:Geography]]
+[[Category:Spatial data analysis]]
+[[Category:Cluster analysis]]

@@ -1,0 +1,27 @@
+{{orphan|date=January 2018}}
+'''3D Structure Change Detection''' is a type of [[Change detection (GIS)]] processes for [[GIS]] (geographical information systems).  It is a process that measures how the volume of a particular area have changed between two or more time periods.  A high-spatial resolution [[Digital elevation model | Digital elevation model (DEM)]] that provides accurate 4-d (space and time) structural information over area of interest is required to compute such changes.  In production, two or more [[Digital_elevation_model|DEMs]] that cover the same area are used to monitor topographic changes of area.  By comparing the [[Digital_elevation_model|DEMs]] made at different times, structure of terrain changes can be realized by the ground elevation difference from [[Digital_elevation_model|DEMs]].  Details, occurring time and accuracy of such changes are strongly relied on the resolution, quality of [[Digital_elevation_model|DEMs]].  In general, the problem of involves whether or not a change has occurred, or whether several changes have occurred.  Such structure changes detection has been widely used to assess urban growth, impact of natural disasters like earthquake, volcano and battle damage assessment.
+<ref>Henderson, J. Vernon and Venables, Anthony J. and Regan, Tanner and Samsonov, Ilia, ''[http://science.sciencemag.org/content/352/6288/946 Building functional cities]''</ref>
+<ref>''[https://volcanoes.usgs.gov/vhp/topographic_changes.html Digital Elevation Models (DEMs) map changes to a volcano's topography]''</ref>
+<ref>Aravindhan K. Krishnan, Srikanth Saripalli, et al., ''[https://asu.pure.elsevier.com/en/publications/3d-change-detection-using-low-cost-aerial-imagery 3D change detection using low cost aerial imagery]''</ref>
+
+== See also ==
+* [[Change detection (GIS)]]
+* [[Digital elevation model]]
+* [[Geographic information system]]
+
+== References ==
+
+{{Reflist}}
+
+==External links==
+*{{Official|1=https://www.spar3d.com/news/industry/make-3d-tech-profitable-scalable|name=How to Make 3D Tech More Profitable and Scalable}}
+*{{Official|1=https://www.youtube.com/watch?v=xc-mhJiygCI|name=City-Scale Change Detection in Cadastral 3D Models using Images}}
+*{{Official|1=https://link.springer.com/article/10.1007/s13369-016-2182-7|name=Areal Change Detection and 3D Modeling of Mine Lakes Using High-Resolution Unmanned Aerial Vehicle Images}}
+*{{Official|1=http://www.google.sr/patents/US8462992|name=Method of change detection for building models}}
+*{{Official|1=http://grindgis.com/data/lidar-data-50-applications|name=3D change detection using LiDAR}}
+
+[[Category:Geographic information systems]]
+[[Category:Topography techniques]]
+[[Category:Change detection]]
+
+{{Geography-stub}}

@@ -1,0 +1,1681 @@
+The '''history of [[Lorentz transformation]]s''' comprises the development of [[linear map|linear transformations]] forming the [[Lorentz group]] or [[Poincaré group]] preserving the [[Lorentz interval]] <math>-x_{0}^{2}+\cdots+x_{n}^{2}</math> and the [[Minkowski inner product]] <math>-x_{0}y_{0}+\cdots+x_{n}y_{n}</math>.
+
+In [[mathematics]], transformations equivalent to what was later known as Lorentz transformations in various dimensions were discussed in the 19th century in relation to the theory of [[quadratic form]]s, [[hyperbolic geometry]], [[Möbius geometry]], and [[Spherical wave transformation|sphere geometry]], which is connected to the fact that the group of [[hyperbolic motion|motions in hyperbolic space]], the [[Möbius group]] or [[projective special linear group]], and the [[Spherical wave transformation#Transformation by reciprocal directions|Laguerre group]] are [[Group isomorphism|isomorphic]] to the [[Lorentz group]].
+
+In [[physics]], Lorentz transformations became known at the beginning of the 20th century, when it was discovered that they exhibit the symmetry of [[Maxwell's equations]]. Subsequently, they became fundamental to all of physics, because they formed the basis of [[special relativity]] in which they exhibit the symmetry of [[Minkowski spacetime]], making the [[speed of light]] invariant between different inertial frames. They relate the spacetime coordinates of two arbitrary [[inertial frame of reference|inertial frames of reference]] with constant relative speed ''v''. In one frame, the position of an event is given by ''x,y,z'' and time ''t'', while in the other frame the same event has coordinates ''x′,y′,z′'' and ''t′''.
+
+== {{anchor|Lorgen}}Most general Lorentz transformations ==
+The general [[quadratic form]] ''q(x)'' with coefficients of a [[symmetric matrix]] '''A''', the associated [[bilinear form]] ''b(x,y)'', and the [[linear transformation]]s of ''q(x)'' and ''b(x,y)'' into ''q(x′)'' and ''b(x′,y′)'' using the [[transformation matrix]] '''g''', can be written as<ref>Bôcher (1907), chapter X</ref>
+
+{{NumBlk|:|<math>\begin{matrix}\begin{align}\begin{align}q=\sum_{0}^{n}A_{ij}x_{i}x_{j}=\mathbf{x}^{\mathrm{T}}\cdot\mathbf{A}\cdot\mathbf{x}\end{align}
+ & =q'=\mathbf{x}^{\mathrm{\prime T}}\cdot\mathbf{A}'\cdot\mathbf{x}'\\
+b=\sum_{0}^{n}A_{ij}x_{i}y_{j}=\mathbf{x}^{\mathrm{T}}\cdot\mathbf{A}\cdot\mathbf{y} & =b'=\mathbf{x}^{\mathrm{\prime T}}\cdot\mathbf{A}'\cdot\mathbf{y}'
+\end{align}
+\quad\left(A_{ij}=A_{ji}\right)\\
+\hline \left.\begin{align}x_{i}^{\prime} & =\sum_{j=0}^{n}g_{ij}x_{j}=\mathbf{g}\cdot\mathbf{x}\\
+x_{i} & =\sum_{j=0}^{n}g_{ij}^{(-1)}x_{j}^{\prime}=\mathbf{g}^{-1}\cdot\mathbf{x}'
+\end{align}
+\right|\mathbf{g}^{{\rm T}}\cdot\mathbf{A}\cdot\mathbf{g}=\mathbf{A}'
+\end{matrix}</math>|{{equationRef|Q1}}}}
+
+in which case ''n=1'' is the [[binary quadratic form]], ''n=2'' is the ternary quadratic form, ''n=3'' is the quaternary quadratic form.
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+The binary quadratic form was introduced by [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Gauss|Lagrange (1773) and Gauss (1798/1801)]], and the ternary quadratic form by [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Gauss2|Gauss (1798/1801)]].}}</p>
+
+The general Lorentz transformation follows from ({{equationNote|Q1}}) by setting '''A'''='''A′'''=diag(-1,1,...,1) and det '''g'''=±1. It forms an [[indefinite orthogonal group]] called the [[Lorentz group]] O(1,n), while the case det '''g'''=+1 forms the restricted [[Lorentz group]] SO(1,n). The quadratic form ''q(x)'' becomes the [[Lorentz interval]] in terms of an [[indefinite quadratic form]] of [[Minkowski space]] (being a special case of [[pseudo-Euclidean space]]), and the associated bilinear form ''b(x)'' becomes the [[Minkowski inner product]]:<ref name=ratcliffe>Ratcliffe (1994), 3.1 and Theorem 3.1.4 and Exercise 3.1</ref><ref>Naimark (1964), 2 in four dimensions</ref>
+
+{{NumBlk|:|<math>\begin{matrix}\begin{align}-x_{0}^{2}+\cdots+x_{n}^{2} & =-x_{0}^{\prime2}+\dots+x_{n}^{\prime2}\\
+-x_{0}y_{0}+\cdots+x_{n}y_{n} & =-x_{0}^{\prime}y_{0}^{\prime}+\cdots+x_{n}^{\prime}y_{n}^{\prime}
+\end{align}
+\\
+\hline \left.\begin{matrix}\mathbf{x}'=\mathbf{g}\cdot\mathbf{x}\\
+\downarrow\\
+\begin{align}x_{0}^{\prime} & =x_{0}g_{00}+x_{1}g_{01}+\dots+x_{n}g_{0n}\\
+x_{1}^{\prime} & =x_{0}g_{10}+x_{1}g_{11}+\dots+x_{n}g_{1n}\\
+ & \dots\\
+x_{n}^{\prime} & =x_{0}g_{n0}+x_{1}g_{n1}+\dots+x_{n}g_{nn}
+\end{align}
+\\
+\\
+\mathbf{x}=\mathbf{g}^{-1}\cdot\mathbf{x}'\\
+\downarrow\\
+\begin{align}x_{0} & =x_{0}^{\prime}g_{00}-x_{1}^{\prime}g_{10}-\dots-x_{n}^{\prime}g_{n0}\\
+x_{1} & =-x_{0}^{\prime}g_{01}+x_{1}^{\prime}g_{11}+\dots+x_{n}^{\prime}g_{n1}\\
+ & \dots\\
+x_{n} & =-x_{0}^{\prime}g_{0n}+x_{1}^{\prime}g_{1n}+\dots+x_{n}^{\prime}g_{nn}
+\end{align}
+\end{matrix}\right|\begin{matrix}\begin{align}\mathbf{A}\cdot\mathbf{g}^{\mathrm{T}}\cdot\mathbf{A} & =\mathbf{g}^{-1}\\
+\mathbf{g}^{{\rm T}}\cdot\mathbf{A}\cdot\mathbf{g} & =\mathbf{A}\\
+\mathbf{g}\cdot\mathbf{A}\cdot\mathbf{g}^{\mathrm{T}} & =\mathbf{A}\\
+\\
+\end{align}
+\\
+\begin{align}\sum_{i=1}^{n}g_{ij}g_{ik}-g_{0j}g_{0k} & =\left\{ \begin{align}-1\quad & (j=k=0)\\
+1\quad & (j=k>0)\\
+0\quad & (j\ne k)
+\end{align}
+\right.\\
+\sum_{j=1}^{n}g_{ij}g_{kj}-g_{i0}g_{k0} & =\left\{ \begin{align}-1\quad & (i=k=0)\\
+1\quad & (i=k>0)\\
+0\quad & (i\ne k)
+\end{align}
+\right.
+\end{align}
+\end{matrix}
+\end{matrix}</math>|{{equationRef|1a}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+Such general Lorentz transformations ({{equationNote|1a}}) for various dimensions were used by [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Gauss4|Gauss (1818)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Jacobi|Jacobi (1827, 1833)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Lebesgue|Lebesgue (1837)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Bour|Bour (1856)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Somov|Somov (1863)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Hill|Hill (1882)]] in order to simplify computations of [[elliptic function]]s and integrals.<ref>Musen (1970) pointed out the intimate connection of Hill's scalar development and Minkowski's pseudo-Euclidean 3D space.</ref><ref>Touma et al. (2009) showed the analogy between Gauss and Hill's equations and Lorentz transformations, see eq. 22-29.</ref> They were also used by [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Poincare|Poincaré (1881)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Cox|Cox (1881/82)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Picard|Picard (1882, 1884)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Killing|Killing (1885, 1893)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Gerard|Gérard (1892)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Hausdorff|Hausdorff (1899)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Woods2|Woods (1901, 1903)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Liebmann|Liebmann (1904/05)]] to describe [[hyperbolic motion]]s (i.e. rigid motions in the [[hyperbolic plane]] or [[hyperbolic space]]), which were expressed in terms of Weierstrass coordinates of the [[hyperboloid model]] satisfying the relation <math>-x_{0}^{2}+\cdots+x_{n}^{2}=-1</math> or in terms of the [[Cayley–Klein metric]] of [[projective geometry]] using the "absolute" form <math>-x_{0}^{2}+\cdots+x_{n}^{2}=0</math>.<ref>Müller (1910), p. 661, in particular footnote 247.</ref><ref>Sommerville (1911), p. 286, section K6.</ref> In addition, [[infinitesimal transformation]]s related to the [[Lie algebra]] of the group of hyperbolic motions were given in terms of Weierstrass coordinates <math>-x_{0}^{2}+\cdots+x_{n}^{2}=-1</math> by [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Killing3|Killing (1888-1897)]].}}</p>
+
+If <math>x_{i},\ x_{i}^{\prime}</math> in ({{equationNote|1a}}) are interpreted as [[homogeneous coordinates]], then the corresponding inhomogenous coordinates <math>u_{s},\ u_{s}^{\prime}</math> follow by
+
+:<math>\left[\frac{x_{0}}{x_{0}},\ \frac{x_{s}}{x_{0}}\right]=\left[1,\ u_{s}\right],\ \left[\frac{x_{0}^{\prime}}{x_{0}^{\prime}},\ \frac{x_{s}^{\prime}}{x_{0}^{\prime}}\right]=\left[1,\ u_{s}^{\prime}\right],\ (s=1,2\dots n)</math>
+
+so that the Lorentz transformation becomes a [[homography]] leaving invariant the equation of the [[unit sphere]], which [[John Lighton Synge]] called "the most general formula for the composition of velocities" in terms of special relativity (the transformation matrix '''g''' stays the same as in ({{equationNote|1a}})):<ref>Synge (1955), p. 129 for ''n''=3</ref>
+
+{{NumBlk|:|<math>\begin{matrix}\begin{matrix}-x_{0}^{2}+\cdots+x_{n}^{2}=-x_{0}^{\prime2}+\dots+x_{n}^{\prime2} & \rightarrow & \begin{align}-1+u_{1}^{2}+\cdots+u_{n}^{2} & ={\scriptstyle \frac{-1+u_{1}^{\prime2}+\cdots+u_{n}^{\prime2}}{\left(g_{00}+g_{01}u_{1}^{\prime}+\dots+g_{0n}u_{n}^{\prime}\right)^{2}}}\\
+{\scriptstyle \frac{-1+u_{1}^{2}+\cdots+u_{n}^{2}}{\left(g_{00}-g_{10}u_{1}-\dots-g_{n0}u_{n}\right)^{2}}} & =-1+u_{1}^{\prime2}+\cdots+u_{n}^{\prime2}
+\end{align}
+\\
+\hline -x_{0}^{2}+\cdots+x_{n}^{2}=-x_{0}^{\prime2}+\dots+x_{n}^{\prime2}=0 & \rightarrow & -1+u_{1}^{2}+\cdots+u_{n}^{2}=-1+u_{1}^{\prime2}+\cdots+u_{n}^{\prime2}=0
+\end{matrix}\\
+\hline \begin{align}u_{s}^{\prime} & =\frac{g_{s0}+g_{s1}u_{1}+\dots+g_{sn}u_{n}}{g_{00}+g_{01}u_{1}+\dots+g_{0n}u_{n}}\\
+\\
+u_{s} & =\frac{-g_{0s}+g_{1s}u_{1}^{\prime}+\dots+g_{ns}u_{n}^{\prime}}{g_{00}-g_{10}u_{1}^{\prime}-\dots-g_{n0}u_{n}^{\prime}}
+\end{align}
+\left|\begin{align}\sum_{i=1}^{n}g_{ij}g_{ik}-g_{0j}g_{0k} & =\left\{ \begin{align}-1\quad & (j=k=0)\\
+1\quad & (j=k>0)\\
+0\quad & (j\ne k)
+\end{align}
+\right.\\
+\sum_{j=1}^{n}g_{ij}g_{kj}-g_{i0}g_{k0} & =\left\{ \begin{align}-1\quad & (i=k=0)\\
+1\quad & (i=k>0)\\
+0\quad & (i\ne k)
+\end{align}
+\right.
+\end{align}
+\right.
+\end{matrix}</math>|{{equationRef|1b}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+Such Lorentz transformations for various dimensions were used by [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Gauss4|Gauss (1818)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Jacobi|Jacobi (1827–1833)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Lebesgue|Lebesgue (1837)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Bour|Bour (1856)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Somov|Somov (1863)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Hill|Hill (1882)]], [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Callandreau|Callandreau (1885)]] in order to simplify computations of elliptic functions and integrals, by [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Picard|Picard (1882-1884)]] in relation to [[Hermitian form|Hermitian quadratic form]]s, or by [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Woods2|Woods (1901, 1903)]] in terms of the [[Beltrami–Klein model]] of hyperbolic geometry. In addition, infinitesimal transformations in terms of the [[Lie algebra]] of the group of hyperbolic motions leaving invariant the unit sphere <math>-1+u_{1}^{\prime2}+\cdots+u_{n}^{\prime2}=0</math> were given by [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Lie3|Lie (1885-1893) and Werner (1889)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (general)#Killing3|Killing (1888-1897)]].}}</p>
+
+== {{anchor|Lorimag}}Lorentz transformation via imaginary orthogonal transformation ==
+By using the [[Imaginary unit|imaginary]] quantities <math>[\mathfrak{x}_{0},\ \mathfrak{x}'_{0}]=\left[ix_{0},\ ix_{0}^{\prime}\right]</math> in '''x''' as well as <math>[\mathfrak{g}_{0s},\ \mathfrak{g}_{s0}]=\left[ig_{0s},\ ig_{s0}\right]</math> ''(s=1,2...n)'' in '''g''', the Lorentz transformation ({{equationNote|1a}}) assumes the form of an [[orthogonal transformation]] of [[Euclidean space]] forming the [[orthogonal group]] O(n) if det '''g'''=±1 or the special orthogonal group SO(n) if det '''g'''=+1, the Lorentz interval becomes the [[Euclidean norm]], and the Minkowski inner product becomes the [[dot product]]:<ref>Laue (1921), pp. 79–80 for n=3</ref>
+
+{{NumBlk|:|<math>\begin{matrix}\begin{align}\mathfrak{x}_{0}^{2}+x_{1}^{2}+\cdots+x_{n}^{2} & =\mathfrak{x}_{0}^{\prime2}+x_{1}^{\prime2}+\dots+x_{n}^{\prime2}\\
+\mathfrak{x}_{0}\mathfrak{y}_{0}+x_{1}y_{1}+\cdots+x_{n}y_{n} & =\mathfrak{x}_{0}^{\prime}\mathfrak{y}_{0}^{\prime}+x_{1}^{\prime}y_{1}^{\prime}+\cdots+x_{n}^{\prime}y_{n}^{\prime}
+\end{align}
+\\
+\hline \begin{matrix}\mathbf{x}'=\mathbf{g}\cdot\mathbf{x}\\
+\mathbf{x}=\mathbf{\mathbf{g}^{-1}}\cdot\mathbf{x}'
+\end{matrix}\left|\begin{align}\sum_{i=0}^{n}g_{ij}g_{ik} & =\left\{ \begin{align}1\quad & (j=k)\\
+0\quad & (j\ne k)
+\end{align}
+\right.\\
+\sum_{j=0}^{n}g_{ij}g_{kj} & =\left\{ \begin{align}1\quad & (i=k)\\
+0\quad & (i\ne k)
+\end{align}
+\right.
+\end{align}
+\right.
+\end{matrix}</math>|{{equationRef|2a}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+The cases ''n=1,2,3,4'' of orthogonal transformations in terms of real coordinates were discussed by [[v:History of Topics in Special Relativity/Lorentz transformation (imaginary)#Euler|Euler (1771)]] and in ''n'' dimensions by [[v:History of Topics in Special Relativity/Lorentz transformation (imaginary)#Cauchy|Cauchy (1829)]]. The case in which one of these coordinates is imaginary and the other ones remain real was alluded to by [[v:History of Topics in Special Relativity/Lorentz transformation (imaginary)#Lie|Lie (1871)]] in terms of spheres with imaginary radius, while the interpretation of the imaginary coordinate as being related to the dimension of time as well as the explicit formulation of Lorentz transformations with ''n=3'' was given by [[v:History of Topics in Special Relativity/Lorentz transformation (imaginary)#Minkowski|Minkowski (1907)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (imaginary)#Sommerfeld|Sommerfeld (1909)]].}}</p>
+
+A well known example of this orthogonal transformation is spatial [[rotation]] in terms of [[trigonometric function]]s, which become Lorentz transformations by using an imaginary angle <math>\phi=i\eta</math>, so that trigonometric functions become equivalent to [[hyperbolic function]]s:
+
+{{NumBlk|:|<math>\begin{array}{c|c|cc}
+\mathfrak{x}_{0}^{2}+x_{1}^{2}+x_{2}^{2}=\mathfrak{x}_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2} & \left(ix_{0}\right){}^{2}+x_{1}^{2}+x_{2}^{2}=\left(ix_{0}^{\prime}\right)^{2}+x_{1}^{\prime2}+x_{2}^{\prime2} &  & -x_{0}^{2}+x_{1}^{2}+x_{2}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}\\
+\hline (1)\begin{align}\mathfrak{x}_{0}^{\prime} & =\mathfrak{x}_{0}\cos\phi-x_{1}\sin\phi\\
+x_{1}^{\prime} & =\mathfrak{x}_{0}\sin\phi+x_{1}\cos\phi\\
+x_{2}^{\prime} & =x_{2}\\
+\\
+\mathfrak{x}_{0} & =\mathfrak{x}_{0}^{\prime}\cos\phi+x_{1}^{\prime}\sin\phi\\
+x_{1} & =-\mathfrak{x}_{0}^{\prime}\sin\phi+x_{1}^{\prime}\cos\phi\\
+x_{2} & =x_{2}^{\prime}
+\end{align}
+ & (2)\begin{align}ix_{0}^{\prime} & =ix_{0}\cos i\eta-x_{1}\sin i\eta\\
+x_{1}^{\prime} & =ix_{0}\sin i\eta+x_{1}\cos i\eta\\
+x_{2}^{\prime} & =x_{2}\\
+\\
+ix_{0} & =ix_{0}^{\prime}\cos i\eta+x_{1}^{\prime}\sin i\eta\\
+x_{1} & =-ix_{0}^{\prime}\sin i\eta+x_{1}^{\prime}\cos i\eta\\
+x_{2} & =x_{2}^{\prime}
+\end{align}
+ & \rightarrow & \begin{align}x_{0}^{\prime} & =x_{0}\cosh\eta-x_{1}\sinh\eta\\
+x_{1}^{\prime} & =-x_{0}\sinh\eta+x_{1}\cosh\eta\\
+x_{2}^{\prime} & =x_{2}\\
+\\
+x_{0} & =x_{0}^{\prime}\cosh\eta+x_{1}^{\prime}\sinh\eta\\
+x_{1} & =x_{0}^{\prime}\sinh\eta+x_{1}^{\prime}\cosh\eta\\
+x_{2} & =x_{2}^{\prime}
+\end{align}
+\end{array}</math>|{{equationRef|2b}}}}
+
+or in exponential form using [[Euler's formula]] <math>e^{i\phi}=\cos\phi+i\sin\phi</math>:
+
+{{NumBlk|:|<math>\begin{array}{c|c|cc}
+\mathfrak{x}_{0}^{2}+x_{1}^{2}+x_{2}^{2}=\mathfrak{x}_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2} & \left(ix_{0}\right){}^{2}+x_{1}^{2}+x_{2}^{2}=\left(ix_{0}^{\prime}\right)^{2}+x_{1}^{\prime2}+x_{2}^{\prime2} &  & -x_{0}^{2}+x_{1}^{2}+x_{2}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}\\
+\hline (1)\begin{align}x_{1}^{\prime}+i\mathfrak{x}_{0}^{\prime} & =e^{-i\phi}\left(x_{1}+i\mathfrak{x}_{0}\right)\\
+x_{1}^{\prime}-i\mathfrak{x}_{0}^{\prime} & =e^{i\phi}\left(x_{1}-i\mathfrak{x}_{0}\right)\\
+x_{2}^{\prime} & =x_{2}\\
+\\
+x_{1}+i\mathfrak{x}_{0} & =e^{i\phi}\left(x_{1}^{\prime}+i\mathfrak{x}_{0}^{\prime}\right)\\
+x_{1}-i\mathfrak{x}_{0} & =e^{-i\phi}\left(x_{1}^{\prime}-i\mathfrak{x}_{0}^{\prime}\right)\\
+x_{2} & =x_{2}^{\prime}
+\end{align}
+ & (2)\begin{align}x_{1}^{\prime}+i\left(ix_{0}^{\prime}\right) & =e^{-i(i\eta)}\left(x_{1}+i\left(ix_{0}\right)\right)\\
+x_{1}^{\prime}-i\left(ix_{0}^{\prime}\right) & =e^{i(i\eta)}\left(x_{1}-i\left(ix_{0}\right)\right)\\
+x_{2}^{\prime} & =x_{2}\\
+\\
+x_{1}+i\left(ix_{0}\right) & =e^{i(i\eta)}\left(x_{1}^{\prime}+i\left(ix_{0}^{\prime}\right)\right)\\
+x_{1}-i\left(ix_{0}\right) & =e^{-i(i\eta)}\left(x_{1}^{\prime}-i\left(ix_{0}^{\prime}\right)\right)\\
+x_{2} & =x_{2}^{\prime}
+\end{align}
+ & \rightarrow & \begin{align}x_{1}^{\prime}-x_{0}^{\prime} & =e^{\eta}\left(x_{1}-x_{0}\right)\\
+x_{1}^{\prime}+x_{0}^{\prime} & =e^{-\eta}\left(x_{1}+x_{0}\right)\\
+x_{2}^{\prime} & =x_{2}\\
+\\
+x_{1}-x_{0} & =e^{-\eta}\left(x_{1}^{\prime}-x_{0}^{\prime}\right)\\
+x_{1}+x_{0} & =e^{\eta}\left(x_{1}^{\prime}+x_{0}^{\prime}\right)\\
+x_{2} & =x_{2}^{\prime}
+\end{align}
+\end{array}</math>|{{equationRef|2c}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+Defining <math>[\mathfrak{x}_{0},\ \mathfrak{x}'_{0},\ \phi]</math> as real, spatial rotation in the form ({{equationNote|2b}}-1) was introduced by [[v:History of Topics in Special Relativity/Lorentz transformation (imaginary)#Euler2|Euler (1771)]] and in the form ({{equationNote|2c}}-1) by [[v:History of Topics in Special Relativity/Lorentz transformation (imaginary)#Euler3|Wessel (1799)]]. The interpretation of ({{equationNote|2b}}) as Lorentz boost (i.e. Lorentz transformation ''without'' spatial rotation) in which <math>[\mathfrak{x}_{0},\ \mathfrak{x}'_{0},\ \phi]</math> correspond to the imaginary quantities <math>[ix_{0},\ ix'_{0},\ i\eta]</math> was given by [[v:History of Topics in Special Relativity/Lorentz transformation (imaginary)#Minkowski|Minkowski (1907)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (imaginary)#Sommerfeld|Sommerfeld (1909)]]. As shown in the next section using hyperbolic functions, ({{equationNote|2b}}) becomes ({{equationNote|3b}}) while ({{equationNote|2c}}) becomes ({{equationNote|3d}}).}}</p>
+
+== {{anchor|Lorhyp}}Lorentz transformation via hyperbolic functions ==
+
+The case of a Lorentz transformation without spatial rotation is called a [[Lorentz boost]]. The simplest case can be given, for instance, by setting ''n=1'' in ({{equationNote|1a}}):
+
+{{NumBlk|:|<math>\begin{matrix}-x_{0}^{2}+x_{1}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}\\
+\hline \left.\begin{align}\mathbf{x}' & =\begin{bmatrix}g_{00} & g_{01}\\
+g_{10} & g_{11}
+\end{bmatrix}\cdot\mathbf{x}\\
+\mathbf{x} & =\begin{bmatrix}g_{00} & -g_{10}\\
+-g_{01} & g_{11}
+\end{bmatrix}\cdot\mathbf{x}'
+\end{align}
+\right|\det\begin{bmatrix}g_{00} & g_{01}\\
+g_{10} & g_{11}
+\end{bmatrix}=1\\
+\hline \begin{align}x_{0}^{\prime} & =x_{0}g_{00}+x_{1}g_{01}\\
+x_{1}^{\prime} & =x_{0}g_{10}+x_{1}g_{11}\\
+\\
+x_{0} & =x_{0}^{\prime}g_{00}-x_{1}^{\prime}g_{10}\\
+x_{1} & =-x_{0}^{\prime}g_{01}+x_{1}^{\prime}g_{11}
+\end{align}
+\left|\begin{align}g_{01}^{2}-g_{00}^{2} & =-1\\
+g_{11}^{2}-g_{10}^{2} & =1\\
+g_{01}g_{11}-g_{00}g_{10} & =0\\
+g_{10}^{2}-g_{00}^{2} & =-1\\
+g_{11}^{2}-g_{01}^{2} & =1\\
+g_{10}g_{11}-g_{00}g_{01} & =0
+\end{align}
+\rightarrow\begin{align}g_{00}^{2} & =g_{11}^{2}\\
+g_{01}^{2} & =g_{10}^{2}
+\end{align}
+\right.
+\end{matrix}</math>|{{equationRef|3a}}}}
+
+which resembles precisely the relations of [[hyperbolic function]]s in terms of [[hyperbolic angle]] <math>\eta</math>. Thus by adding an unchanged <math>x_{2}</math>-axis, a Lorentz boost or [[hyperbolic rotation]] for ''n=2'' (being the same as a rotation around an imaginary angle <math>i\eta=\phi</math> in ({{equationNote|2b}}) or a [[Translation (geometry)|translation]] in the hyperbolic plane in terms of the hyperboloid model) is given by
+
+{{NumBlk|:|<math>\begin{matrix}-x_{0}^{2}+x_{1}^{2}+x_{2}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}\\
+\hline g_{00}=g_{11}=\cosh\eta,\ g_{01}=g_{10}=-\sinh\eta\\
+\hline \left.\begin{align}\mathbf{x}' & =\begin{bmatrix}\cosh\eta & -\sinh\eta\\
+-\sinh\eta & \cosh\eta
+\end{bmatrix}\cdot\mathbf{x}\\
+\mathbf{x} & =\begin{bmatrix}\cosh\eta & \sinh\eta\\
+\sinh\eta & \cosh\eta
+\end{bmatrix}\cdot\mathbf{x}'
+\end{align}
+\right|\det\begin{bmatrix}\cosh\eta & -\sinh\eta\\
+-\sinh\eta & \cosh\eta
+\end{bmatrix}=1\\
+\hline \left.\begin{align}x_{0}^{\prime} & =x_{0}\cosh\eta-x_{1}\sinh\eta\\
+x_{1}^{\prime} & =-x_{0}\sinh\eta+x_{1}\cosh\eta\\
+x_{2}^{\prime} & =x_{2}\\
+\\
+x_{0} & =x_{0}^{\prime}\cosh\eta+x_{1}^{\prime}\sinh\eta\\
+x_{1} & =x_{0}^{\prime}\sinh\eta+x_{1}^{\prime}\cosh\eta\\
+x_{2} & =x_{2}^{\prime}
+\end{align}
+\right|{\scriptstyle \begin{align}\sinh^{2}\eta-\cosh^{2}\eta & =-1 & (a)\\
+\cosh^{2}\eta-\sinh^{2}\eta & =1 & (b)\\
+\frac{\sinh\eta}{\cosh\eta} & =\tanh\eta & (c)\\
+\frac{1}{\sqrt{1-\tanh^{2}\eta}} & =\cosh\eta & (d)\\
+\frac{\tanh\eta}{\sqrt{1-\tanh^{2}\eta}} & =\sinh\eta & (e)\\
+\frac{\tanh q\pm\tanh\eta}{1\pm\tanh q\tanh\eta} & =\tanh\left(q\pm\eta\right) & (f)
+\end{align}
+}
+\end{matrix}</math>|{{equationRef|3b}}}}
+
+in which the rapidity can be composed of arbitrary many rapidities <math>\eta_{1},\eta_{2}\dots</math> as per the [[Hyperbolic functions#Sums of arguments|angle sum laws of hyperbolic sines and cosines]], so that one hyperbolic rotation can represent the sum of many other hyperbolic rotations, analogous to the relation between [[List of trigonometric identities#Angle sum and difference identities|angle sum laws of circular trigonometry]] and spatial rotations. Alternatively, the hyperbolic angle sum laws ''themselves'' can be interpreted as Lorentz boosts, as demonstrated by using the parameterization of the [[unit hyperbola]]:
+
+{{NumBlk|:|<math>\begin{matrix}-x_{0}^{2}+x_{1}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}=1\\
+\hline \left[\eta=\eta_{2}-\eta_{1}\right]\\
+{\scriptstyle \begin{align}\begin{bmatrix}x_{1}^{\prime} & x_{0}^{\prime}\\
+x_{0}^{\prime} & x_{1}^{\prime}
+\end{bmatrix} & =\begin{bmatrix}\cosh\eta_{1} & \sinh\eta_{1}\\
+\sinh\eta_{1} & \cosh\eta_{1}
+\end{bmatrix}=\begin{bmatrix}\cosh\left(\eta_{2}-\eta\right) & \sinh\left(\eta_{2}-\eta\right)\\
+\sinh\left(\eta_{2}-\eta\right) & \cosh\left(\eta_{2}-\eta\right)
+\end{bmatrix}=\begin{bmatrix}\cosh\eta & -\sinh\eta\\
+-\sinh\eta & \cosh\eta
+\end{bmatrix}\cdot\begin{bmatrix}\cosh\eta_{2} & \sinh\eta_{2}\\
+\sinh\eta_{2} & \cosh\eta_{2}
+\end{bmatrix}=\begin{bmatrix}\cosh\eta & -\sinh\eta\\
+-\sinh\eta & \cosh\eta
+\end{bmatrix}\cdot\begin{bmatrix}x_{1} & x_{0}\\
+x_{0} & x_{1}
+\end{bmatrix}\\
+\begin{bmatrix}x_{1} & x_{0}\\
+x_{0} & x_{1}
+\end{bmatrix} & =\begin{bmatrix}\cosh\eta_{2} & \sinh\eta_{2}\\
+\sinh\eta_{2} & \cosh\eta_{2}
+\end{bmatrix}=\begin{bmatrix}\cosh\left(\eta_{1}+\eta\right) & \sinh\left(\eta_{1}+\eta\right)\\
+\sinh\left(\eta_{1}+\eta\right) & \cosh\left(\eta_{1}+\eta\right)
+\end{bmatrix}=\begin{bmatrix}\cosh\eta & \sinh\eta\\
+\sinh\eta & \cosh\eta
+\end{bmatrix}\cdot\begin{bmatrix}\cosh\eta_{1} & \sinh\eta_{1}\\
+\sinh\eta_{1} & \cosh\eta_{1}
+\end{bmatrix}=\begin{bmatrix}\cosh\eta & \sinh\eta\\
+\sinh\eta & \cosh\eta
+\end{bmatrix}\cdot\begin{bmatrix}x_{1}^{\prime} & x_{0}^{\prime}\\
+x_{0}^{\prime} & x_{1}^{\prime}
+\end{bmatrix}
+\end{align}
+}\\
+\hline \begin{align}x_{0}^{\prime} & =\sinh\eta_{1} &  & =\sinh\left(\eta_{2}-\eta\right) &  & =\sinh\eta_{2}\cosh\eta-\cosh\eta_{2}\sinh\eta &  & =x_{0}\cosh\eta-x_{1}\sinh\eta\\
+x_{1}^{\prime} & =\cosh\eta_{1} &  & =\cosh\left(\eta_{2}-\eta\right) &  & =-\sinh\eta_{2}\sinh\eta+\cosh\eta_{2}\cosh\eta &  & =-x_{0}\sinh\eta+x_{1}\cosh\eta\\
+\\
+x_{0} & =\sinh\eta_{2} &  & =\sinh\left(\eta_{1}+\eta\right) &  & =\sinh\eta_{1}\cosh\eta+\cosh\eta_{1}\sinh\eta &  & =x_{0}^{\prime}\cosh\eta+x_{1}^{\prime}\sinh\eta\\
+x_{1} & =\cosh\eta_{2} &  & =\cosh\left(\eta_{1}+\eta\right) &  & =\sinh\eta_{1}\sinh\eta+\cosh\eta_{1}\cosh\eta &  & =x_{0}^{\prime}\sinh\eta+x_{1}^{\prime}\cosh\eta
+\end{align}
+\end{matrix}</math>|{{equationRef|3c}}}}
+
+Finally, Lorentz boost ({{equationNote|3b}}) assumes a simple form by using [[squeeze mapping]]s in analogy to Euler's formula in ({{equationNote|2c}}):<ref name=rind>Rindler (1969), p. 45</ref>
+
+{{NumBlk|:|<math>(1)\begin{matrix}-x_{0}^{2}+x_{1}^{2}+x_{2}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}\\
+\hline \begin{align}x_{1}^{\prime}-x_{0}^{\prime} & =e^{\eta}\left(x_{1}-x_{0}\right)\\
+x_{1}^{\prime}+x_{0}^{\prime} & =e^{-\eta}\left(x_{1}+x_{0}\right)\\
+x_{2}^{\prime} & =x_{2}\\
+\\
+x_{1}-x_{0} & =e^{-\eta}\left(x_{1}^{\prime}-x_{0}^{\prime}\right)\\
+x_{1}+x_{0} & =e^{\eta}\left(x_{1}^{\prime}+x_{0}^{\prime}\right)\\
+x_{2} & =x_{2}^{\prime}
+\end{align}
+\end{matrix}\left|{\scriptstyle \begin{align}X_{1} & =x_{1}+x_{0}\\
+X_{2} & =x_{2}\\
+X_{3} & =x_{1}-x_{0}\\
+\\
+a_{1} & =e^{-\eta}\\
+a_{2} & =1\\
+a_{3} & =e^{\eta}=a_{1}^{-1}
+\end{align}
+}(2)\begin{matrix}X_{2}^{\prime2}-X_{1}^{\prime}X_{3}^{\prime}=X_{2}^{2}-X_{1}X_{3}\\
+\hline \begin{align}X_{1}^{\prime} & =a_{1}X_{1}\\
+X_{2}^{\prime} & =a_{2}X_{2}\\
+X_{3}^{\prime} & =a_{3}X_{3}\\
+\\
+X_{1} & =a_{3}X_{1}^{\prime}\\
+X_{2} & =a_{2}X_{2}^{\prime}\\
+X_{3} & =a_{1}X_{3}^{\prime}
+\end{align}
+\\
+\left(a_{1}a_{3}-a_{2}^{2}=0\right)
+\end{matrix}\right.</math>|{{equationRef|3d}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+Hyperbolic relations (a,b) on the right of ({{equationNote|3b}}) were given by [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Riccati|Riccati (1757)]], relations (a,b,c,d,e,f) by [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Lambert|Lambert (1768–1770)]]. Lorentz transformations ({{equationNote|3b}}) were given by [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Laisant|Laisant (1874)]], [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Cox|Cox (1882)]], [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Lindemann|Lindemann (1890/91)]], [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Gerard|Gérard (1892)]], [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Killing2|Killing (1893, 1897/98)]], [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Whitehead|Whitehead (1897/98)]], [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Woods2|Woods (1903/05)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Liebmann|Liebmann (1904/05)]] in terms of Weierstrass coordinates of the [[hyperboloid model]]. Hyperbolic angle sum laws equivalent to Lorentz boost ({{equationNote|3c}}) were given by [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Riccati|Riccati (1757)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Lambert|Lambert (1768–1770)]], while the matrix representation was given by [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Glaisher|Glaisher (1878)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Gunther2|Günther (1880/81)]]. Lorentz transformations ({{equationNote|3d}}-1) were given by [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Lindemann|Lindemann (1890/91)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Herglotz1|Herglotz (1909)]], while formulas equivalent to ({{equationNote|3d}}-2) by [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Klein|Klein (1871)]].}}</p>
+
+In line with equation ({{equationNote|1b}}) one can use coordinates <math>[u_{1},\ u_{2},\ 1]=\left[\tfrac{x_{1}}{x_{0}},\ \tfrac{x_{2}}{x_{0}},\ \tfrac{x_{0}}{x_{0}}\right]</math> inside the [[unit circle]] <math>u_{1}^{2}+u_{2}^{2}=1</math>, thus the corresponding Lorentz transformations ({{equationNote|3b}}) obtain the form:
+
+{{NumBlk|:|<math>\begin{matrix}\begin{matrix}-x_{0}^{2}+x_{1}^{2}+x_{2}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2} & \rightarrow & \begin{align}-1+u_{1}^{2}+u_{2}^{2} & =\frac{-1+u_{1}^{\prime2}+u_{2}^{\prime2}}{\left(\cosh\eta+u_{1}^{\prime}\sinh\eta\right)^{2}}\\
+\frac{-1+u_{1}^{2}+u_{2}^{2}}{\left(\cosh\eta-u_{1}\sinh\eta\right)^{2}} & =-1+u_{1}^{\prime2}+u_{2}^{\prime2}
+\end{align}
+\\
+\hline -x_{0}^{2}+x_{1}^{2}+x_{2}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}=0 & \rightarrow & -1+u_{x}^{2}+u_{y}^{2}=-1+u_{x}^{\prime2}+u_{y}^{\prime2}=0
+\end{matrix}\\
+\hline {\scriptstyle \begin{align}\frac{\sinh\eta}{\cosh\eta} & =\tanh\eta=v\\
+\cosh\eta & =\frac{1}{\sqrt{1-\tanh^{2}\eta}}
+\end{align}
+}\left|\begin{align} & (a) &  & (b) &  & (c)\\
+u_{1}^{\prime} & =\frac{-\sinh\eta+u_{1}\cosh\eta}{\cosh\eta-u_{1}\sinh\eta} &  & =\frac{u_{1}-\tanh\eta}{1-u_{1}\tanh\eta} &  & =\frac{u_{1}-v}{1-u_{1}v}\\
+u_{2}^{\prime} & =\frac{u_{2}}{\cosh\eta-u_{1}\sinh\eta} &  & =\frac{u_{2}\sqrt{1-\tanh^{2}\eta}}{1-u_{1}\tanh\eta} &  & =\frac{u_{2}\sqrt{1-v^{2}}}{1-u_{1}v}\\
+\\
+u_{1} & =\frac{\sinh\eta+u_{1}^{\prime}\cosh\eta}{\cosh\eta+u_{1}^{\prime}\sinh\eta} &  & =\frac{u_{1}^{\prime}+\tanh\eta}{1+u_{1}^{\prime}\tanh\eta} &  & =\frac{u_{1}^{\prime}+v}{1+u_{1}^{\prime}v}\\
+u_{2} & =\frac{u_{2}^{\prime}}{\cosh\eta+u_{1}^{\prime}\sinh\eta} &  & =\frac{u_{2}^{\prime}\sqrt{1-\tanh^{2}\eta}}{1+u_{1}^{\prime}\tanh\eta} &  & =\frac{u_{2}^{\prime}\sqrt{1-v^{2}}}{1+u_{1}^{\prime}v}
+\end{align}
+\right.
+\end{matrix}</math>|{{equationRef|3e}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+These Lorentz transformations were given by [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Escherich|Escherich (1874)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Killing2|Killing (1898)]] (on the left), as well as [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Beltrami|Beltrami (1868)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Schur|Schur (1885/86, 1900/02)]] (on the right) in terms of [[Beltrami–Klein model|Beltrami coordinates]]<ref>Rosenfeld (1988), p. 231</ref> of hyperbolic geometry.}}</p>
+
+By using the scalar product of <math>\left[u_{1},u_{2}\right]</math>, the resulting Lorentz transformation can be seen as equivalent to the [[hyperbolic law of cosines]]:<ref name=pau>Pauli (1921), p. 561</ref><ref group=R name=var>Varićak (1912), p. 108</ref><ref name=barr>Barrett (2006), chapter 4, section 2</ref>
+
+{{NumBlk|:|<math>\begin{matrix} & \begin{matrix}u^{2}=u_{1}^{2}+u_{2}^{2}\\
+u'^{2}=u_{1}^{\prime2}+u_{2}^{\prime2}
+\end{matrix}\left|\begin{matrix}u_{1}=u\cos\alpha\\
+u_{2}=u\sin\alpha\\
+\\
+u_{1}^{\prime}=u'\cos\alpha'\\
+u_{2}^{\prime}=u'\sin\alpha'
+\end{matrix}\right|\begin{align}u\cos\alpha & =\frac{u'\cos\alpha'+v}{1+vu'\cos\alpha'}, & u'\cos\alpha' & =\frac{u\cos\alpha-v}{1-vu\cos\alpha}\\
+u\sin\alpha & =\frac{u'\sin\alpha'\sqrt{1-v^{2}}}{1+vu'\cos\alpha'}, & u'\sin\alpha' & =\frac{u\sin\alpha\sqrt{1-v^{2}}}{1-vu\cos\alpha}\\
+\tan\alpha & =\frac{u'\sin\alpha'\sqrt{1-v^{2}}}{u'\cos\alpha'+v}, & \tan\alpha' & =\frac{u\sin\alpha\sqrt{1-v^{2}}}{u\cos\alpha-v}
+\end{align}
+\\
+\Rightarrow & u=\frac{\sqrt{v^{2}+u^{\prime2}+2vu'\cos\alpha'-\left(vu'\sin\alpha'\right){}^{2}}}{1+vu'\cos\alpha'},\quad u'=\frac{\sqrt{-v^{2}-u^{2}+2vu\cos\alpha+\left(vu\sin\alpha\right){}^{2}}}{1-vu\cos\alpha}\\
+\Rightarrow & \frac{1}{\sqrt{1-u^{\prime2}}}=\frac{1}{\sqrt{1-v^{2}}}\frac{1}{\sqrt{1-u^{2}}}-\frac{v}{\sqrt{1-v^{2}}}\frac{u}{\sqrt{1-u^{2}}}\cos\alpha & (b)\\
+\Rightarrow & \frac{1}{\sqrt{1-\tanh^{2}\xi}}=\frac{1}{\sqrt{1-\tanh^{2}\eta}}\frac{1}{\sqrt{1-\tanh^{2}\zeta}}-\frac{\tanh\eta}{\sqrt{1-\tanh^{2}\eta}}\frac{\tanh\zeta}{\sqrt{1-\tanh^{2}\zeta}}\cos\alpha\\
+\Rightarrow & \cosh\xi=\cosh\eta\cosh\zeta-\sinh\eta\sinh\zeta\cos\alpha & (a)
+\end{matrix}</math>|{{equationRef|3f}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+The hyperbolic law of cosines (a) was given by [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Taurinus|Taurinus (1826) and Lobachevsky (1829/30)]] and others, while variant (b) was given by [[v:History of Topics in Special Relativity/Lorentz transformation (hyperbolic)#Schur|Schur (1900/02)]].}}</p>
+
+== {{anchor|Lorvel}}Lorentz transformation via velocity ==
+In the [[theory of relativity]], Lorentz transformations exhibit the symmetry of [[Minkowski spacetime]] by using a constant ''c'' as the [[speed of light]], and a parameter ''v'' as the relative [[velocity]] between two [[inertial reference frames]]. In particular, the hyperbolic angle <math>\eta</math> in ({{equationNote|3b}}) can be interpreted as the velocity related [[rapidity]] <math>\tanh\eta=\beta=v/c</math>, so that <math>\gamma=\cosh\eta</math> is the [[Lorentz factor]], <math>\beta\gamma=\sinh\eta</math> the [[proper velocity]], <math>u'=c\tanh q</math> the velocity of another object, <math>u=c\tanh(q+\eta)</math> the [[velocity-addition formula]], thus ({{equationNote|3b}}) becomes:
+
+{{NumBlk|:|<math>\begin{matrix}-x_{0}^{2}+x_{1}^{2}+x_{2}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}\\
+\hline \begin{align}x_{0}^{\prime} & =x_{0}\gamma-x_{1}\beta\gamma\\
+x_{1}^{\prime} & =-x_{0}\beta\gamma+x_{1}\gamma\\
+x_{2}^{\prime} & =x_{2}\\
+\\
+x_{0} & =x_{0}^{\prime}\gamma+x_{1}^{\prime}\beta\gamma\\
+x_{1} & =x_{0}^{\prime}\beta\gamma+x_{1}^{\prime}\gamma\\
+x_{2} & =x_{2}^{\prime}
+\end{align}
+\left|{\scriptstyle \begin{align}\beta^{2}\gamma^{2}-\gamma^{2} & =-1 & (a)\\
+\gamma^{2}-\beta^{2}\gamma^{2} & =1 & (b)\\
+\frac{\beta\gamma}{\gamma} & =\beta & (c)\\
+\frac{1}{\sqrt{1-\beta^{2}}} & =\gamma & (d)\\
+\frac{\beta}{\sqrt{1-\beta^{2}}} & =\beta\gamma & (e)\\
+\frac{u'+v}{1+\frac{u'v}{c^{2}}} & =u & (f)
+\end{align}
+}\right.
+\end{matrix}</math>|{{equationRef|4a}}}}
+
+Or in four dimensions and by setting <math>x_{0}=ct,\ x_{1}=x,\ x_{2}=y</math> and adding an unchanged ''z'' the familiar form follows, using <math>\sqrt{\tfrac{c+v}{c-v}}</math> as Doppler factor:
+
+{{NumBlk|:|<math>\begin{matrix}-c^{2}t^{2}+x^{2}+y^{2}+z^{2}=-c^{2}t^{\prime2}+x^{\prime2}+y^{\prime2}+z^{\prime2}\\
+\hline \left.\begin{align}t' & =\gamma\left(t-x\frac{v}{c^{2}}\right)\\
+x' & =\gamma(x-vt)\\
+y' & =y\\
+z' & =z
+\end{align}
+\right|\begin{align}t & =\gamma\left(t'+x\frac{v}{c^{2}}\right)\\
+x & =\gamma(x'+vt')\\
+y & =y'\\
+z & =z'
+\end{align}
+\end{matrix}\Rightarrow\begin{align}(ct'+x') & =(ct+x)\sqrt{\frac{c+v}{c-v}}\\
+(ct'-x') & =(ct-x)\sqrt{\frac{c-v}{c+v}}
+\end{align}
+</math>|{{equationRef|4b}}}}
+
+In physics, analogous transformations have been introduced by [[#Voigt|Voigt (1887)]] and by [[#Lorentz1|Lorentz (1892, 1895)]] who analyzed [[Maxwell's equations]], they were completed by [[#Larmor|Larmor (1897, 1900)]] and [[#Lorentz2|Lorentz (1899, 1904)]], and brought into their modern form by [[#Poincare3|Poincaré (1905)]] who gave the transformation the name of Lorentz.<ref>Miller (1981), chapter 1</ref> Eventually, [[#Einstein|Einstein (1905)]] showed in his development of [[special relativity]] that the transformations follow from the [[principle of relativity]] and constant light speed alone by modifying the traditional concepts of space and time, without requiring a [[Lorentz ether theory|mechanical aether]] in contradistinction to Lorentz and Poincaré.<ref>Miller (1981), chapter 4–7</ref> [[#Minkowski|Minkowski (1907–1908)]] used them to argue that space and time are inseparably connected as [[spacetime]]. [[#Minkowski|Minkowski (1907–1908)]] and [[#Varicak|Varićak (1910)]] showed the relation to imaginary and hyperbolic functions. Important contributions to the mathematical understanding of the Lorentz transformation were also made by other authors such as [[#Herglotz1|Herglotz (1909/10)]], [[#Ignatowski|Ignatowski (1910)]], [[#Noether|Noether (1910) and Klein (1910)]], [[#Borel|Borel (1913–14)]].
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+In pure mathematics, similar transformations have been used by [[v:History of Topics in Special Relativity/Lorentz transformation (velocity)#Lipschitz1|Lipschitz (1885/86)]].}}</p>
+
+Also Lorentz boosts for arbitrary directions in line with ({{equationNote|1a}}) can be given as:<ref>Møller (1952/55), Chapter II, § 18</ref>
+
+:<math>\mathbf{x}'=\begin{bmatrix}\gamma & -\gamma\beta n_{x} & -\gamma\beta n_{y} & -\gamma\beta n_{z}\\
+-\gamma\beta n_{x} & 1+(\gamma-1)n_{x}^{2} & (\gamma-1)n_{x}n_{y} & (\gamma-1)n_{x}n_{z}\\
+-\gamma\beta n_{y} & (\gamma-1)n_{y}n_{x} & 1+(\gamma-1)n_{y}^{2} & (\gamma-1)n_{y}n_{z}\\
+-\gamma\beta n_{z} & (\gamma-1)n_{z}n_{x} & (\gamma-1)n_{z}n_{y} & 1+(\gamma-1)n_{z}^{2}
+\end{bmatrix}\cdot\mathbf{x},\quad\left[\mathbf{n}=\frac{\mathbf{v}}{v}\right]</math>
+
+or in vector notation
+
+{{NumBlk|:|<math>\begin{align}t' & =\gamma\left(t-\frac{v\mathbf{n}\cdot\mathbf{r}}{c^{2}}\right)\\
+\mathbf{r}' & =\mathbf{r}+(\gamma-1)(\mathbf{r}\cdot\mathbf{n})\mathbf{n}-\gamma tv\mathbf{n}
+\end{align}
+</math>|{{equationRef|4c}}}}
+
+Such transformations were formulated by [[#Herglotz2|Herglotz (1911) and Silberstein (1911)]] and others.
+
+In line with equation ({{equationNote|1b}}), one can substitute <math>\left[\tfrac{u_{x}}{c},\ \tfrac{u_{y}}{c},\ 1\right]=\left[\tfrac{x}{ct},\ \tfrac{y}{ct},\ \tfrac{ct}{ct}\right]</math> in ({{equationNote|3b}}) or ({{equationNote|4a}}), producing the Lorentz transformation of velocities (or [[velocity addition formula]]) in analogy to Beltrami coordinates of ({{equationNote|3e}}):
+
+{{NumBlk|:|<math>\begin{matrix}\begin{matrix}-c^{2}t^{2}+x^{2}+y^{2}=-c^{2}t^{\prime2}+x^{\prime2}+y^{\prime2} & \rightarrow & \begin{align}-c^{2}+u_{x}^{2}+u_{y}^{2} & =\frac{-c^{2}+u_{x}^{\prime2}+u_{y}^{\prime2}}{\gamma^{2}\left(1+\frac{v}{c^{2}}u_{x}^{\prime}\right)^{2}}\\
+\frac{-c^{2}+u_{x}^{2}+u_{y}^{2}}{\gamma^{2}\left(1-\frac{v}{c^{2}}u_{x}\right)^{2}} & =-c^{2}+u_{x}^{\prime2}+u_{y}^{\prime2}
+\end{align}
+\\
+\hline -c^{2}t^{2}+x^{2}+y^{2}=-c^{2}t^{\prime2}+x^{\prime2}+y^{\prime2}=0 & \rightarrow & -c^{2}+u_{x}^{2}+u_{y}^{2}=-c^{2}+u_{x}^{\prime2}+u_{y}^{\prime2}=0
+\end{matrix}\\
+\hline {\scriptstyle \begin{align}\frac{\sinh\eta}{\cosh\eta} & =\tanh\eta=\frac{v}{c}\\
+\cosh\eta & =\frac{1}{\sqrt{1-\tanh^{2}\eta}}
+\end{align}
+}\left|\begin{align}u_{x}^{\prime} & =\frac{-c^{2}\sinh\eta+u_{x}c\cosh\eta}{c\cosh\eta-u_{x}\sinh\eta} &  & =\frac{u_{x}-c\tanh\eta}{1-\frac{u_{x}}{c}\tanh\eta} &  & =\frac{u_{x}-v}{1-\frac{v}{c^{2}}u{}_{x}}\\
+u_{y}^{\prime} & =\frac{cu_{y}}{c\cosh\eta-u_{x}\sinh\eta} &  & =\frac{u_{y}\sqrt{1-\tanh^{2}\eta}}{1-\frac{u_{x}}{c}\tanh\eta} &  & =\frac{u_{y}\sqrt{1-\frac{v^{2}}{c^{2}}}}{1-\frac{v}{c^{2}}u{}_{x}}\\
+\\
+u_{x} & =\frac{c^{2}\sinh\eta+u_{x}^{\prime}c\cosh\eta}{c\cosh\eta+u_{x}^{\prime}\sinh\eta} &  & =\frac{u_{x}^{\prime}+c\tanh\eta}{1+\frac{u_{x}^{\prime}}{c}\tanh\eta} &  & =\frac{u_{x}^{\prime}+v}{1+\frac{v}{c^{2}}u_{x}^{\prime}}\\
+u_{y} & =\frac{cy'}{c\cosh\eta+u_{x}^{\prime}\sinh\eta} &  & =\frac{u_{y}^{\prime}\sqrt{1-\tanh^{2}\eta}}{1+\frac{u_{x}^{\prime}}{c}\tanh\eta} &  & =\frac{u_{y}^{\prime}\sqrt{1-\frac{v^{2}}{c^{2}}}}{1+\frac{v}{c^{2}}u_{x}^{\prime}}
+\end{align}
+\right.
+\end{matrix}</math>|{{equationRef|4d}}}}
+
+or using trigonometric and hyperbolic identities it becomes the hyperbolic law of cosines in terms of ({{equationNote|3f}}):<ref name=pau /><ref group=R name=var /><ref name=barr />
+
+{{NumBlk|:|<math>\begin{matrix} & \begin{matrix}u^{2}=u_{x}^{2}+u_{y}^{2}\\
+u'^{2}=u_{x}^{\prime2}+u_{y}^{\prime2}
+\end{matrix}\left|\begin{matrix}u_{x}=u\cos\alpha\\
+u_{y}=u\sin\alpha\\
+\\
+u_{x}^{\prime}=u'\cos\alpha'\\
+u_{y}^{\prime}=u'\sin\alpha'
+\end{matrix}\right|\begin{align}u\cos\alpha & =\frac{u'\cos\alpha'+v}{1+\frac{v}{c^{2}}u'\cos\alpha'}, & u'\cos\alpha' & =\frac{u\cos\alpha-v}{1-\frac{v}{c^{2}}u\cos\alpha}\\
+u\sin\alpha & =\frac{u'\sin\alpha'\sqrt{1-\frac{v^{2}}{c^{2}}}}{1+\frac{v}{c^{2}}u'\cos\alpha'}, & u'\sin\alpha' & =\frac{u\sin\alpha\sqrt{1-\frac{v^{2}}{c^{2}}}}{1-\frac{v}{c^{2}}u\cos\alpha}\\
+\tan\alpha & =\frac{u'\sin\alpha'\sqrt{1-\frac{v^{2}}{c^{2}}}}{u'\cos\alpha'+v}, & \tan\alpha' & =\frac{u\sin\alpha\sqrt{1-\frac{v^{2}}{c^{2}}}}{u\cos\alpha-v}
+\end{align}
+\\
+\Rightarrow & u=\frac{\sqrt{v^{2}+u^{\prime2}+2vu'\cos\alpha'-\left(\frac{vu'\sin\alpha'}{c}\right){}^{2}}}{1+\frac{v}{c^{2}}u'\cos\alpha'},\quad u'=\frac{\sqrt{-v^{2}-u^{2}+2vu\cos\alpha+\left(\frac{vu\sin\alpha}{c}\right){}^{2}}}{1-\frac{v}{c^{2}}u\cos\alpha}\\
+\Rightarrow & \frac{1}{\sqrt{1-\frac{u^{\prime2}}{c^{2}}}}=\frac{1}{\sqrt{1-\frac{v^{2}}{c^{2}}}}\frac{1}{\sqrt{1-\frac{u^{2}}{c^{2}}}}-\frac{v/c}{\sqrt{1-\frac{v^{2}}{c^{2}}}}\frac{u/c}{\sqrt{1-\frac{u^{2}}{c^{2}}}}\cos\alpha\\
+\Rightarrow & \frac{1}{\sqrt{1-\tanh^{2}\xi}}=\frac{1}{\sqrt{1-\tanh^{2}\eta}}\frac{1}{\sqrt{1-\tanh^{2}\zeta}}-\frac{\tanh\eta}{\sqrt{1-\tanh^{2}\eta}}\frac{\tanh\zeta}{\sqrt{1-\tanh^{2}\zeta}}\cos\alpha\\
+\Rightarrow & \cosh\xi=\cosh\eta\cosh\zeta-\sinh\eta\sinh\zeta\cos\alpha
+\end{matrix}</math>|{{equationRef|4e}}}}
+
+and by further setting ''u=u′=c'' the relativistic [[aberration of light]] follows:<ref>Pauli (1921), pp. 562; 565–566</ref>
+
+{{NumBlk|:|<math>\begin{matrix}\cos\alpha=\frac{\cos\alpha'+\frac{v}{c}}{1+\frac{v}{c}\cos\alpha'},\ \sin\alpha=\frac{\sin\alpha'\sqrt{1-\frac{v^{2}}{c^{2}}}}{1+\frac{v}{c}\cos\alpha'},\ \tan\alpha=\frac{\sin\alpha'\sqrt{1-\frac{v^{2}}{c^{2}}}}{\cos\alpha'+\frac{v}{c}},\ \tan\frac{\alpha}{2}=\sqrt{\frac{c-v}{c+v}}\tan\frac{\alpha'}{2}\\
+\cos\alpha'=\frac{\cos\alpha-\frac{v}{c}}{1-\frac{v}{c}\cos\alpha},\ \sin\alpha'=\frac{\sin\alpha\sqrt{1-\frac{v^{2}}{c^{2}}}}{1-\frac{v}{c}\cos\alpha},\ \tan\alpha'=\frac{\sin\alpha\sqrt{1-\frac{v^{2}}{c^{2}}}}{\cos\alpha-\frac{v}{c}},\ \tan\frac{\alpha'}{2}=\sqrt{\frac{c+v}{c-v}}\tan\frac{\alpha}{2}
+\end{matrix}</math>|{{equationRef|4f}}}}
+
+The velocity addition formulas were given by [[#Einstein|Einstein (1905)]] and [[#Poincare3|Poincaré (1905/06)]], the aberration formula for cos(α) by [[#Einstein|Einstein (1905)]], while the relations to the spherical and hyperbolic law of cosines were given by [[#Sommerfeld|Sommerfeld (1909)]] and [[#Varicak|Varićak (1910)]]. 
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+These formulas resemble the equations of an [[ellipse]] of [[Orbital eccentricity|eccentricity]] ''v/c'', [[eccentric anomaly]] α' and [[true anomaly]] α, first geometrically formulated by [[v:History of Topics in Special Relativity/Lorentz transformation (velocity)#Euler|Kepler (1609)]] and explicitly written down by [[v:History of Topics in Special Relativity/Lorentz transformation (velocity)#Euler|Euler (1735, 1748), Lagrange (1770)]] and many others in relation to planetary motions.<ref name=plum>Plummer (1910), pp. 258-259: After deriving the relativistic expressions for the aberration angles φ' and φ, Plummer remarked on p. 259: ''Another geometrical representation is obtained by assimilating φ' to the eccentric and φ to the true anomaly in an ellipse whose eccentricity is v/U = sin β.''</ref><ref name=robin>Robinson (1990), chapter 3-4, analyzed the relation between "Kepler's formula" and the "physical velocity addition formula" in special relativity.</ref>}}</p>
+
+== {{anchor|Lorconf}}Lorentz transformation via conformal, spherical wave, and Laguerre transformation ==
+
+{{Main|Spherical wave transformation|Lie sphere geometry}}
+
+If one only requires the invariance of the light cone represented by the differential equation <math>-dx_{0}^{2}+\dots+dx_{n}^{2}=0</math>, which is the same as asking for the most general transformation that changes spheres into spheres, the Lorentz group can be extended by adding dilations represented by the factor λ. The result is the group Con(1,p) of spacetime [[conformal transformation]]s in terms of [[special conformal transformation]]s and inversions producing the relation
+
+:<math>-dx_{0}^{2}+\dots+dx_{n}^{2}=\lambda\left(-dx_{0}^{\prime2}+\dots+dx_{n}^{\prime2}\right)</math>.
+
+One can switch between two representations of this group by using an imaginary sphere radius coordinate ''x<sub>0</sub>=iR'' with the interval <math>dx_{0}^{2}+\dots+dx_{n}^{2}</math> related to conformal transformations, or by using a real radius coordinate ''x<sub>0</sub>=R'' with the interval <math>-dx_{0}^{2}+\dots+dx_{n}^{2}</math> related to spherical wave transformations in terms of [[contact transformation]]s preserving circles and spheres. It turns out that Con(1,3) is isomorphic to the [[special orthogonal group]] SO(2,4), and contains the Lorentz group SO(1,3) as a subgroup by setting λ=1. More generally, Con(q,p) is isomorphic to SO(q+1,p+1) and contains SO(q,p) as subgroup.<ref>Schottenloher (2008), section 2.2</ref> This implies that Con(0,p) is isomorphic to the Lorentz group of arbitrary dimensions SO(1,p+1). Consequently, the conformal group in the plane Con(0,2) – known as the group of [[Möbius transformation]]s – is isomorphic to the Lorentz group SO(1,3).<ref>Kastrup (2008), section 2.4.1</ref><ref>Schottenloher (2008), section 2.3</ref> This can be seen using tetracyclical coordinates satisfying the form <math>-x_{0}^{2}+x_{1}^{2}+x_{2}^{2}+x_{3}^{2}=0</math>.
+
+A special case of Lie's geometry of oriented spheres is the [[Spherical wave transformation#Transformation by reciprocal directions|Laguerre group]], transforming oriented planes and lines into each other. It's generated by the Laguerre inversion leaving invariant <math>x^{2}+y^{2}+z^{2}-R^{2}</math> with ''R'' as radius, thus the Laguerre group is isomorphic to the Lorentz group.<ref>Coolidge (1916), p. 370</ref><ref name="ReferenceA">Cartan & Fano (1915/55), sections 14–15</ref>
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+Both representations of Lie sphere geometry and conformal transformations were studied by [[v:History of Topics in Special Relativity/Lorentz transformation (conformal)#Lie|Lie (1871)]] and others. It was shown by [[v:History of Topics in Special Relativity/Lorentz transformation (conformal)#Bateman|Bateman & Cunningham (1909–1910)]], that the group Con(1,3) is the most general one leaving invariant the equations of Maxwell's electrodynamics. Tetracyclical coordinates were discussed by [[v:History of Topics in Special Relativity/Lorentz transformation (conformal)#Klein3|Pockels (1891), Klein (1893), Bôcher (1894)]]. The relation between Con(1,3) and the Lorentz group was noted by [[v:History of Topics in Special Relativity/Lorentz transformation (conformal)#Bateman|Bateman & Cunningham (1909–1910)]] and others.
+
+The Laguerre inversion was introduced by [[v:History of Topics in Special Relativity/Lorentz transformation (conformal)#Laguerre|Laguerre (1882)]] and discussed by [[v:History of Topics in Special Relativity/Lorentz transformation (conformal)#Darboux2|Darboux (1887)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (conformal)#Smith|Smith (1900)]]. A similar concept was studied by [[v:History of Topics in Special Relativity/Lorentz transformation (conformal)#Scheffers|Scheffers (1899)]] in terms of contact transformations. [[v:History of Topics in Special Relativity/Lorentz transformation (conformal)#Stephanos|Stephanos (1883)]] argued that Lie's geometry of oriented spheres in terms of contact transformations, as well as the special case of the transformations of oriented planes into each other (such as by Laguerre), provides a geometrical interpretation of Hamilton's [[biquaternion]]s. The [[group isomorphism]] between the Laguerre group and Lorentz group was pointed out by [[v:History of Topics in Special Relativity/Lorentz transformation (conformal)#Bateman|Bateman (1910), Cartan (1912, 1915/55), Poincaré (1912/21)]] and others.}}</p>
+
+== {{anchor|Lorcay}}Lorentz transformation via Cayley–Hermite transformation ==
+
+The general transformation ({{equationNote|Q1}}) of any quadratic form into itself can also be given using ''arbitrary'' parameters based on the [[Cayley transform]] ('''I'''-'''T''')<sup>−1</sup>·('''I'''+'''T'''), where '''I''' is the [[identity matrix]], '''T''' an arbitrary [[antisymmetric matrix]], and by adding '''A''' as symmetric matrix defining the quadratic form (there is no primed '''A' ''' because the coefficients are assumed to be the same on both sides):<ref>Hawkins (2013), pp. 210–214</ref><ref>Meyer (1899), p. 329</ref>
+
+{{NumBlk|:|<math>\begin{matrix}q=\mathbf{x}^{\mathrm{T}}\cdot\mathbf{A}\cdot\mathbf{x}=q'=\mathbf{x}^{\mathrm{\prime T}}\cdot\mathbf{A}\cdot\mathbf{x}'\\
+\hline \\
+\mathbf{x}=(\mathbf{I}-\mathbf{T}\cdot\mathbf{A})^{-1}\cdot(\mathbf{I}+\mathbf{T}\cdot\mathbf{A})\cdot\mathbf{x}'\\
+\text{or}\\
+\mathbf{x}=\mathbf{A}^{-1}\cdot(\mathbf{A}-\mathbf{T})\cdot(\mathbf{A}+\mathbf{T})^{-1}\cdot\mathbf{A}\cdot\mathbf{x}'
+\end{matrix}</math>|{{equationRef|Q2}}}}
+
+For instance, the choice '''A'''=diag(1,1,1) gives an orthogonal transformation which can be used to describe spatial rotations corresponding to the [[Euler–Rodrigues formula|Euler-Rodrigues parameter]]s ''[a,b,c,d]'' which can be interpreted as the coefficients of [[quaternion]]s. Setting ''d=1'', the equations have the form:
+
+{{NumBlk|:|<math>\begin{matrix}\mathbf{A}=\operatorname{diag}(1,1,1),\quad\mathbf{T}={\scriptstyle \begin{vmatrix}0 & a & -b\\
+-a & 0 & c\\
+b & -c & 0
+\end{vmatrix}}\\
+\hline x_{0}^{2}+x_{1}^{2}+x_{2}^{2}=x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}\\
+\hline \mathbf{x}'=\frac{1}{\kappa}\left[\begin{matrix}1-a^{2}-b^{2}+c^{2} & 2(bc-a) & 2(ac+b)\\
+2(bc+a) & 1-a^{2}+b^{2}-c^{2} & 2(ab-c)\\
+2(ac-b) & 2(ab+c) & 1+a^{2}-b^{2}-c^{2}
+\end{matrix}\right]\cdot\mathbf{x}\\
+\left(\kappa=1+a^{2}+b^{2}+c^{2}\right)
+\end{matrix}</math>|{{equationRef|Q3}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+After [[v:History of Topics in Special Relativity/Lorentz transformation (Cayley-Hermite)#Cayley|Cayley (1846)]] introduced transformations related to sums of positive squares, [[v:History of Topics in Special Relativity/Lorentz transformation (Cayley-Hermite)#Hermite|Hermite (1853/54, 1854)]] derived transformations for arbitrary quadratic forms, whose result was reformulated in terms of matrices ({{equationNote|Q2}}) by [[v:History of Topics in Special Relativity/Lorentz transformation (Cayley-Hermite)#Cayley|Cayley (1855a, 1855b)]]. The Euler-Rodrigues parameter were discovered by [[v:History of Topics in Special Relativity/Lorentz transformation (Cayley-Hermite)#Euler|Euler (1771) and Rodrigues (1840)]].}}</p>
+
+Also the Lorentz interval and the general Lorentz transformation in any dimension can be produced by the Cayley–Hermite formalism.<ref group=R>Borel (1914), pp. 39–41</ref><ref group=R>Brill (1925)</ref><ref>Klein (1928), § 2B</ref><ref>Lorente (2003), section 3.3</ref> For instance, Lorentz transformation ({{equationNote|1a}}) with ''n''=1 follows from ({{equationNote|Q2}}) with:
+
+{{NumBlk|:|<math>\begin{matrix}\mathbf{A}=\operatorname{diag}(-1,1),\quad\mathbf{T}={\scriptstyle \begin{vmatrix}0 & a\\
+-a & 0
+\end{vmatrix}}\\
+\hline -x_{0}^{2}+x_{1}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}\\
+\hline \mathbf{x}'=\frac{1}{1-a^{2}}\left[\begin{matrix}1+a^{2} & -2a\\
+-2a & 1+a^{2}
+\end{matrix}\right]\cdot\mathbf{x}
+\end{matrix}\Rightarrow\begin{matrix}-x_{0}^{2}+x_{1}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}\\
+\hline \left.\begin{align}x_{0} & =x_{0}^{\prime}\frac{1+\beta_{0}^{2}}{1-\beta_{0}^{2}}+x_{1}^{\prime}\frac{2\beta_{0}}{1-\beta_{0}^{2}} & = & \frac{x_{0}^{\prime}\left(1+\beta_{0}^{2}\right)+x_{1}^{\prime}2\beta_{0}}{1-\beta_{0}^{2}}\\
+x_{1} & =x_{0}^{\prime}\frac{2\beta_{0}}{1-\beta_{0}^{2}}+x_{1}^{\prime}\frac{1+\beta_{0}^{2}}{1-\beta_{0}^{2}} & = & \frac{x_{0}^{\prime}2\beta_{0}+x_{1}^{\prime}\left(1+\beta_{0}^{2}\right)}{1-\beta_{0}^{2}}\\
+\\
+x_{0}^{\prime} & =x_{0}\frac{1+\beta_{0}^{2}}{1-\beta_{0}^{2}}-x_{1}\frac{2\beta_{0}}{1-\beta_{0}^{2}} & = & \frac{x_{0}\left(1+\beta_{0}^{2}\right)-x_{1}2\beta_{0}}{1-\beta_{0}^{2}}\\
+x_{1}^{\prime} & =-x_{0}\frac{2\beta_{0}}{1-\beta_{0}^{2}}+x_{1}\frac{1+\beta_{0}^{2}}{1-\beta_{0}^{2}} & = & \frac{-x_{0}2\beta_{0}+x_{1}\left(1+\beta_{0}^{2}\right)}{1-\beta_{0}^{2}}
+\end{align}
+\right|{\scriptstyle \begin{align}\frac{2\beta_{0}}{1+\beta_{0}^{2}} & =\beta\\
+\frac{1+\beta_{0}^{2}}{1-\beta_{0}^{2}} & =\gamma\\
+\frac{2\beta_{0}}{1-\beta_{0}^{2}} & =\beta\gamma
+\end{align}
+}
+\end{matrix}</math>|{{equationRef|5a}}}}
+
+This becomes Lorentz boost ({{equationNote|4a}} or {{equationNote|4b}}) by setting <math>\tfrac{2a}{1+a^{2}}=\tfrac{v}{c}</math>, which is equivalent to the relation <math>\tfrac{2\beta_{0}}{1+\beta_{0}^{2}}=\tfrac{v}{c}</math> known from [[Loedel diagram]]s, thus ({{equationNote|5a}}) can be interpreted as a Lorentz boost from the viewpoint of a "median frame" in which two other inertial frames are moving with equal speed <math>\beta_0</math> in opposite directions.
+
+Furthermore, Lorentz transformation ({{equationNote|1a}}) with ''n''=2 is given by:
+
+{{NumBlk|:|<math>\begin{matrix}\mathbf{A}=\operatorname{diag}(-1,1,1),\quad\mathbf{T}={\scriptstyle \begin{vmatrix}0 & a & -b\\
+-a & 0 & c\\
+b & -c & 0
+\end{vmatrix}}\\
+\hline -x_{0}^{2}+x_{1}^{2}+x_{2}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}\\
+\hline \mathbf{x}'=\frac{1}{\kappa}\left[\begin{matrix}1+a^{2}+b^{2}+c^{2} & -2(bc-a) & -2(ac+b)\\
+2(bc+a) & 1+a^{2}-b^{2}-c^{2} & 2(ab-c)\\
+2(ac-b) & -2(ab-c) & 1-a^{2}+b^{2}-c^{2}
+\end{matrix}\right]\cdot\mathbf{x}\\
+\left(\kappa=1-a^{2}-b^{2}+c^{2}\right)
+\end{matrix}</math>|{{equationRef|5b}}}}
+
+or using ''n''=3:
+
+{{NumBlk|:|<math>\begin{matrix}\mathbf{A}=\operatorname{diag}(-1,1,1,1),\quad\mathbf{T}={\scriptstyle \begin{vmatrix}0 & a & -b & c\\
+-a & 0 & d & e\\
+b & -d & 0 & f\\
+-c & -e & -f & 0
+\end{vmatrix}}\\
+\hline -x_{0}^{2}+x_{1}^{2}+x_{2}^{2}+x_{3}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}+x_{3}^{\prime2}\\
+\hline \mathbf{x}'=\frac{1}{\kappa}\left[{\scriptstyle \begin{align} & 1+a^{2}+b^{2}+c^{2}+ &  & 2(-bd+a+ec+pf) &  & 2(-ad-b+fc-pe) &  & 2(pd+fb-ea+c)\\
+ & \quad d^{2}+e^{2}+f^{2}+p^{2} &  & 1+a^{2}-b^{2}-c^{2} &  & 2(-d-ab+pc-fe) &  & 2(fd+pb+ca-e)\\
+ & 2(bd+a-ec+pf) &  & \quad-d^{2}-e^{2}+f^{2}+p^{2} &  & 1-a^{2}+b^{2}-c^{2} &  & 2(-ed-cb+pa-f)\\
+ & 2(ad-b-fc-pe) &  & 2(d-ab-pc-fe) &  & \quad-d^{2}+e^{2}-f^{2}+p^{2} &  & 1-a^{2}-b^{2}+-c^{2}\\
+ & 2(pd-fb+ea+c) &  & 2(fd-pb+ca+e) &  & 2(-ed-cb-pa+f) &  & \quad+d^{2}-e^{2}-f^{2}+p^{2}
+\end{align}
+}\right]\cdot\mathbf{x}\\
+\left(\begin{align}\kappa & =1-a^{2}-b^{2}-c^{2}+d^{2}+e^{2}+f^{2}-p^{2}\\
+p & =af+be+cd
+\end{align}
+\right)
+\end{matrix}</math>|{{equationRef|5c}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+The transformation of a binary quadratic form of which Lorentz transformation ({{equationNote|5a}}) is a special case was given by [[v:History of Topics in Special Relativity/Lorentz transformation (Cayley-Hermite)#Hermite|Hermite (1854)]], equations containing Lorentz transformations ({{equationNote|5a}}, {{equationNote|5b}}, {{equationNote|5c}}) as special cases were given by [[v:History of Topics in Special Relativity/Lorentz transformation (Cayley-Hermite)#Cayley|Cayley (1855)]], Lorentz transformation ({{equationNote|5a}}) was given (up to a sign change) by [[v:History of Topics in Special Relativity/Lorentz transformation (Cayley-Hermite)#Laguerre|Laguerre (1882)]], [[v:History of Topics in Special Relativity/Lorentz transformation (Cayley-Hermite)#Darboux2|Darboux (1887)]], [[v:History of Topics in Special Relativity/Lorentz transformation (Cayley-Hermite)#Smith|Smith (1900)]] in relation to Laguerre geometry, and Lorentz transformation ({{equationNote|5b}}) was given by [[v:History of Topics in Special Relativity/Lorentz transformation (Cayley-Hermite)#Bachmann|Bachmann (1869)]]. In relativity, equations similar to ({{equationNote|5b}}, {{equationNote|5c}}) were first employed by [[v:History of Topics in Special Relativity/Lorentz transformation (Cayley-Hermite)#Borel|Borel (1913)]] to represent Lorentz transformations.}}</p>
+
+As described in equation ({{equationNote|3d}}), the Lorentz interval is closely connected to the alternative form <math>X_{2}^{2}-X_{1}X_{3}</math>,<ref name=k28 /> which in terms of the Cayley–Hermite parameters is invariant under the transformation:
+
+{{NumBlk|:|<math>\begin{matrix}X_{2}^{\prime2}-X_{1}^{\prime}X_{3}^{\prime}=X_{2}^{2}-X_{1}X_{3}\\
+\hline \mathbf{X}'=\frac{1}{\kappa}\left[\begin{matrix}(b+1)^{2} & -2(b+1)c & c^{2}\\
+a(b+1) & 1-ac-b^{2} & (b-1)c\\
+a^{2} & -2a(b-1) & (b-1)^{2}
+\end{matrix}\right]\cdot\mathbf{X}\\
+\left(\kappa=1+ac-b^{2}\right)
+\end{matrix}</math>|{{equationRef|5d}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+This transformation was given by [[v:History of Topics in Special Relativity/Lorentz transformation (Cayley-Hermite)#Cayley4|Cayley (1884)]], even though he didn't relate it to the Lorentz interval but rather to <math>x_{0}^{2}+x_{1}^{2}+x_{2}^{2}</math>.}}</p>
+
+== {{anchor|Lormoeb}}Lorentz transformation via Cayley–Klein parameters, Möbius and spin transformations ==
+
+The previously mentioned Euler-Rodrigues parameter ''a,b,c,d'' (i.e. Cayley-Hermite parameter in equation ({{equationNote|Q3}}) with ''d=1'') are closely related to Cayley–Klein parameter α,β,γ,δ in order to connect Möbius transformations <math>\tfrac{\alpha\zeta+\beta}{\gamma\zeta+\delta}</math> and rotations:<ref>Klein (1896/97), p. 12</ref>
+
+:<math>\begin{align}\alpha & =1+ib, & \beta & =-a+ic,\\
+\gamma & =a+ic, & \delta & =1-ib.
+\end{align}
+</math>
+
+thus ({{equationNote|Q3}}) becomes:
+
+{{NumBlk|:|<math>\begin{matrix}x_{0}^{2}+x_{1}^{2}+x_{2}^{2}=x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}\\
+\hline \mathbf{x}'=\frac{1}{\kappa}\left[\begin{matrix}\frac{1}{2}\left(\alpha^{2}-\beta^{2}-\gamma^{2}+\delta^{2}\right) & \beta\delta-\alpha\gamma & \frac{i}{2}\left(-\alpha^{2}+\beta^{2}-\gamma^{2}+\delta^{2}\right)\\
+\gamma\delta+\alpha\beta & \alpha\delta+\beta\gamma & i(\alpha\beta+\gamma\delta)\\
+-\frac{i}{2}\left(-\alpha^{2}-\beta^{2}+\gamma^{2}+\delta^{2}\right) & -i(\alpha\gamma+\beta\delta) & \frac{1}{2}\left(\alpha^{2}+\beta^{2}+\gamma^{2}+\delta^{2}\right)
+\end{matrix}\right]\cdot\mathbf{x}\\
+(\kappa=\alpha\delta-\beta\gamma)
+\end{matrix}</math>|{{equationRef|Q4}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+The Cayley-Klein parameter were introduced by [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Cayley2|Helmholtz (1866/67), Cayley (1879)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Klein|Klein (1884)]].}}</p>
+
+Also the Lorentz transformation can be expressed with variants of the Cayley–Klein parameters: One relates these parameters to a spin-matrix '''D''', the [[spin transformation]]s of variables <math>\xi',\eta',\bar{\xi}',\bar{\eta}'</math> (the overline denotes [[complex conjugate]]), and the [[Möbius transformation]] of <math>\zeta',\bar{\zeta}'</math>. When defined in terms of isometries of hyperbolic space (hyperbolic motions), the [[Hermitian matrix]] '''u''' associated with these Möbius transformations produces an invariant determinant <math>\det\mathbf{u}=x_{0}^{2}-x_{1}^{2}-x_{2}^{2}-x_{3}^{2}</math> identical to the Lorentz interval. Therefore, these transformations were described by [[John Lighton Synge]] as being a "factory for the mass production of Lorentz transformations".<ref name=synge /> It also turns out that the related [[spin group]] Spin(3, 1) or [[special linear group]] SL(2, C) acts as the [[Double cover (topology)|double cover]] of the Lorentz group (one Lorentz transformation corresponds to two spin transformations of different sign), while the [[Möbius group]] Con(0,2) or [[projective special linear group]] PSL(2, C) is isomorphic to both the Lorentz group and the group of isometries of hyperbolic space.
+
+In space, the Möbius/Spin/Lorentz transformations can be written as:<ref>Klein (1928), § 3A</ref><ref name=synge>Synge (1956), ch. IV, 11</ref><ref>Penrose & Rindler (1984), section 2.1</ref><ref name="Lorente 2003, section 4">Lorente (2003), section 4</ref>
+
+{{NumBlk|:|<math>\begin{matrix}\zeta=\frac{x_{1}+ix_{2}}{x_{0}-x_{3}}=\frac{x_{0}+x_{3}}{x_{1}-ix_{2}}\rightarrow\zeta'=\frac{\alpha\zeta+\beta}{\gamma\zeta+\delta}\left|\zeta'=\frac{\xi'}{\eta'}\rightarrow\begin{align}\xi' & =\alpha\xi+\beta\eta\\
+\eta' & =\gamma\xi+\delta\eta
+\end{align}
+\right.\\
+\hline \left.\begin{matrix}\mathbf{u}=\left(\begin{matrix}X_{1} & X_{2}\\
+X_{3} & X_{4}
+\end{matrix}\right)=\left(\begin{matrix}\bar{\xi}\xi & \xi\bar{\eta}\\
+\bar{\xi}\eta & \bar{\eta}\eta
+\end{matrix}\right)=\left(\begin{matrix}x_{0}+x_{3} & x_{1}-ix_{2}\\
+x_{1}+ix_{2} & x_{0}-x_{3}
+\end{matrix}\right)\\
+\det\mathbf{u}=x_{0}^{2}-x_{1}^{2}-x_{2}^{2}-x_{3}^{2}
+\end{matrix}\right|\begin{matrix}\mathbf{D}=\left(\begin{matrix}\alpha & \beta\\
+\gamma & \delta
+\end{matrix}\right)\\
+\begin{align}\det\boldsymbol{\mathbf{D}} & =1\end{align}
+\end{matrix}\\
+\hline \mathbf{u}'=\mathbf{D}\cdot\mathbf{u}\cdot\bar{\mathbf{D}}^{\mathrm{T}}=\begin{align}X_{1}^{\prime} & =X_{1}\alpha\bar{\alpha}+X_{2}\alpha\bar{\beta}+X_{3}\bar{\alpha}\beta+X_{4}\beta\bar{\beta}\\
+X_{2}^{\prime} & =X_{1}\bar{\alpha}\gamma+X_{2}\bar{\alpha}\delta+X_{3}\bar{\beta}\gamma+X_{4}\bar{\beta}\delta\\
+X_{3}^{\prime} & =X_{1}\alpha\bar{\gamma}+X_{2}\alpha\bar{\delta}+X_{3}\beta\bar{\gamma}+X_{4}\beta\bar{\delta}\\
+X_{4}^{\prime} & =X_{1}\gamma\bar{\gamma}+X_{2}\gamma\bar{\delta}+X_{3}\bar{\gamma}\delta+X_{4}\delta\bar{\delta}
+\end{align}
+\\
+\hline \begin{align}X_{3}^{\prime}X_{2}^{\prime}-X_{1}^{\prime}X_{4}^{\prime} & =X_{3}X_{2}-X_{1}X_{4}=0\\
+\det\mathbf{u}'=x_{0}^{\prime2}-x_{1}^{\prime2}-x_{2}^{\prime2}-x_{3}^{\prime2} & =\det\mathbf{u}=x_{0}^{2}-x_{1}^{2}-x_{2}^{2}-x_{3}^{2}
+\end{align}
+\end{matrix}</math>|{{equationRef|6a}}}}
+
+thus:<ref>Penrose & Rindler (1984), p. 17</ref>
+
+{{NumBlk|:|<math>\begin{matrix}-x_{0}^{2}+x_{1}^{2}+x_{2}^{2}+x_{3}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}+x_{3}^{\prime2}\\
+\hline \mathbf{x}'=\frac{1}{2}\left[{\scriptstyle \begin{align} & \alpha\bar{\alpha}+\beta\bar{\beta}+\gamma\bar{\gamma}+\delta\bar{\delta} &  & \alpha\bar{\beta}+\beta\bar{\alpha}+\gamma\bar{\delta}+\delta\bar{\gamma} &  & i(\alpha\bar{\beta}-\beta\bar{\alpha}+\gamma\bar{\delta}-\delta\bar{\gamma}) &  & \alpha\bar{\alpha}-\beta\bar{\beta}+\gamma\bar{\gamma}-\delta\bar{\delta}\\
+ & \alpha\bar{\gamma}+\gamma\bar{\alpha}+\beta\bar{\delta}+\delta\bar{\beta} &  & \alpha\bar{\delta}+\delta\bar{\alpha}+\beta\bar{\gamma}+\gamma\bar{\beta} &  & i(\alpha\bar{\delta}-\delta\bar{\alpha}+\gamma\bar{\beta}-\beta\bar{\gamma}) &  & \alpha\bar{\gamma}+\gamma\bar{\alpha}-\beta\bar{\delta}-\delta\bar{\beta}\\
+ & i(\gamma\bar{\alpha}-\alpha\bar{\gamma}+\delta\bar{\beta}-\beta\bar{\delta}) &  & i(\delta\bar{\alpha}-\alpha\bar{\delta}+\gamma\bar{\beta}-\beta\bar{\gamma}) &  & \alpha\bar{\delta}+\delta\bar{\alpha}-\beta\bar{\gamma}-\gamma\bar{\beta} &  & i(\gamma\bar{\alpha}-\alpha\bar{\gamma}+\beta\bar{\delta}-\delta\bar{\beta})\\
+ & \alpha\bar{\alpha}+\beta\bar{\beta}-\gamma\bar{\gamma}-\delta\bar{\delta} &  & \alpha\bar{\beta}+\beta\bar{\alpha}-\gamma\bar{\delta}-\delta\bar{\gamma} &  & i(\alpha\bar{\beta}-\beta\bar{\alpha}+\delta\bar{\gamma}-\gamma\bar{\delta}) &  & \alpha\bar{\alpha}-\beta\bar{\beta}-\gamma\bar{\gamma}+\delta\bar{\delta}
+\end{align}
+}\right]\cdot\mathbf{x}\\
+(\alpha\delta-\beta\gamma=1)
+\end{matrix}</math>|{{equationRef|6b}}}}
+
+or in line with equation ({{equationNote|1b}}) one can substitute <math>\left[u_{1},\ u_{2},\ u_{3},\ 1\right]=\left[\tfrac{x_{1}}{x_{0}},\ \tfrac{x_{2}}{x_{0}},\ \tfrac{x_{3}}{x_{0}},\ \tfrac{x_{0}}{x_{0}}\right]</math> so that the Möbius/Lorentz transformations become related to the unit sphere:
+
+{{NumBlk|:|<math>\begin{matrix}u_{1}^{2}+u_{2}^{2}+u_{3}^{2}=u_{1}^{\prime2}+u_{2}^{\prime2}+u_{3}^{\prime2}=1\\
+\hline \left.\begin{matrix}\zeta=\frac{u_{1}+iu_{2}}{1-u_{3}}=\frac{1+u_{3}}{u_{1}-iu_{2}}\\
+\zeta'=\frac{u_{1}^{\prime}+iu_{2}^{\prime}}{1-u_{3}^{\prime}}=\frac{1+u_{3}^{\prime}}{u_{1}^{\prime}-iu_{2}^{\prime}}
+\end{matrix}\right|\quad\zeta'=\frac{\alpha\zeta+\beta}{\gamma\zeta+\delta}
+\end{matrix}</math>|{{equationRef|6c}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+The general transformation '''u′''' in ({{equationNote|6a}}) was given by [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Cayley2|Cayley (1854)]], while the general relation between Möbius transformations and transformation '''u′''' leaving invariant the [[generalized circle]] was pointed out by [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Poincare2|Poincaré (1883)]] in relation to [[Kleinian group]]s. The adaptation to the Lorentz interval by which ({{equationNote|6a}}) becomes a Lorentz transformation was given by [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Klein2|Klein (1889-1893, 1896/97)]], [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Bianchi2|Bianchi (1893)]], [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Fricke|Fricke (1893, 1897)]]. Its reformulation as Lorentz transformation ({{equationNote|6b}}) was provided by [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Bianchi2|Bianchi (1893)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Fricke|Fricke (1893, 1897)]]. Lorentz transformation ({{equationNote|6c}}) was given by [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Klein2|Klein (1884)]] in relation to surfaces of second degree and the invariance of the unit sphere. In relativity, ({{equationNote|6a}}) was first employed by [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Herglotz1|Herglotz (1909/10)]].}}</p>
+
+In the plane, the transformations can be written as:<ref name=k28>Klein (1928), § 2A</ref><ref name="Lorente 2003, section 4"/>
+
+{{NumBlk|:|<math>\begin{matrix}\zeta=\frac{x_{1}}{x_{0}-x_{2}}=\frac{x_{0}+x_{2}}{x_{1}}\rightarrow\zeta'=\frac{\alpha\zeta+\beta}{\gamma\zeta+\delta}\left|\zeta'=\frac{\xi'}{\eta'}\rightarrow\begin{align}\xi' & =\alpha\xi+\beta\eta\\
+\eta' & =\gamma\xi+\delta\eta
+\end{align}
+\right.\\
+\hline \left.\begin{matrix}\mathbf{u}=\left(\begin{matrix}X_{1} & X_{2}\\
+X_{2} & X_{3}
+\end{matrix}\right)=\left(\begin{matrix}\xi^{2} & \xi\eta\\
+\xi\eta & \eta^{2}
+\end{matrix}\right)=\left(\begin{matrix}x_{0}+x_{2} & x_{1}\\
+x_{1} & x_{0}-x_{2}
+\end{matrix}\right)\\
+\det\mathbf{u}=x_{0}^{2}-x_{1}^{2}-x_{2}^{2}
+\end{matrix}\right|\begin{matrix}\mathbf{D}=\left(\begin{matrix}\alpha & \beta\\
+\gamma & \delta
+\end{matrix}\right)\\
+\begin{align}\det\boldsymbol{\mathbf{D}} & =1\end{align}
+\end{matrix}\\
+\hline \mathbf{u}'=\mathbf{D}\cdot\mathbf{u}\cdot\mathbf{D}^{\mathrm{T}}=\begin{align}X_{1}^{\prime} & =X_{1}\alpha^{2}+X_{2}2\alpha\beta+X_{3}\beta^{2}\\
+X_{2}^{\prime} & =X_{1}\alpha\gamma+X_{2}(\alpha\delta+\beta\gamma)+X_{3}\beta\delta\\
+X_{3}^{\prime} & =X_{1}\gamma^{2}+X_{2}2\gamma\delta+X_{3}\delta^{2}
+\end{align}
+\\
+\hline \begin{align}X_{2}^{\prime2}-X_{1}^{\prime}X_{3}^{\prime} & =X_{2}^{2}-X_{1}X_{3}=0\\
+\det\mathbf{u}'=x_{0}^{\prime2}-x_{1}^{\prime2}-x_{2}^{\prime2} & =\det\mathbf{u}=x_{0}^{2}-x_{1}^{2}-x_{2}^{2}
+\end{align}
+\end{matrix}</math>|{{equationRef|6d}}}}
+
+thus
+
+{{NumBlk|:|<math>\begin{matrix}-x_{0}^{2}+x_{1}^{2}+x_{2}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}\\
+\hline \mathbf{x}'=\left[\begin{matrix}\frac{1}{2}\left(\alpha^{2}+\beta^{2}+\gamma^{2}+\delta^{2}\right) & \alpha\beta+\gamma\delta & \frac{1}{2}\left(\alpha^{2}-\beta^{2}+\gamma^{2}-\delta^{2}\right)\\
+\alpha\gamma+\beta\delta & \alpha\delta+\beta\gamma & \alpha\gamma-\beta\delta\\
+\frac{1}{2}\left(\alpha^{2}+\beta^{2}-\gamma^{2}-\delta^{2}\right) & \alpha\beta-\gamma\delta & \frac{1}{2}\left(\alpha^{2}-\beta^{2}-\gamma^{2}+\delta^{2}\right)
+\end{matrix}\right]\cdot\mathbf{x}\\
+(\alpha\delta-\beta\gamma=1)
+\end{matrix}</math>|{{equationRef|6e}}}}
+
+which includes the special case <math>\beta=\gamma=0</math> implying <math>\delta=1/\alpha</math>, reducing the transformation to a Lorentz boost in 1+1 dimensions:
+
+{{NumBlk|:|<math>\begin{matrix}X_{1}X_{3}=X_{1}^{\prime}X_{3}^{\prime}\quad\Rightarrow\quad-x_{0}^{2}+x_{2}^{2}=-x_{0}^{\prime2}+x_{2}^{\prime2}\\
+\hline \begin{align}X_{1} & =\alpha^{2}X_{1}^{\prime}\\
+X_{2} & =X_{2}^{\prime}\\
+X_{3} & =\frac{1}{\alpha^{2}}X_{3}^{\prime}
+\end{align}
+\quad\Rightarrow\quad\begin{align}x_{0} & =\frac{x_{0}^{\prime}\left(\alpha^{4}+1\right)+x_{2}^{\prime}\left(\alpha^{4}-1\right)}{2\alpha^{2}}\\
+x_{1} & =x_{1}^{\prime}\\
+x_{2} & =\frac{x_{0}^{\prime}\left(\alpha^{4}-1\right)+x_{2}^{\prime}\left(\alpha^{4}+1\right)}{2\alpha^{2}}
+\end{align}
+\end{matrix}</math>|{{equationRef|6f}}}}
+
+Finally, by using the Lorentz interval related to a hyperboloid, the Möbius/Lorentz transformations can be written
+
+{{NumBlk|:|<math>\begin{matrix}-x_{0}^{2}+x_{1}^{2}+x_{2}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}=-1\\
+\hline \left.\begin{matrix}\zeta=\frac{x_{1}+ix_{2}}{x_{0}+1}=\frac{x_{0}-1}{x_{1}-ix_{2}}\\
+\zeta'=\frac{x_{1}^{\prime}+ix_{2}^{\prime}}{x_{0}^{\prime}+1}=\frac{x_{0}^{\prime}-1}{x_{1}^{\prime}-ix_{2}^{\prime}}
+\end{matrix}\right|\quad\zeta'=\frac{\alpha\zeta+\beta}{\gamma\zeta+\delta}
+\end{matrix}</math>|{{equationRef|6g}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+The general transformation '''u′''' and its invariant <math>X_{2}^{2}-X_{1}X_{3}</math> in ({{equationNote|6d}}) was already used by [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Gauss|Lagrange (1773) and Gauss (1798/1801)]] in the theory of integer binary quadratic forms. The invariant <math>X_{2}^{2}-X_{1}X_{3}</math> was also studied by [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Klein|Klein (1871)]] in connection to hyperbolic plane geometry (see equation ({{equationNote|3d}})), while the connection between '''u′''' and <math>X_{2}^{2}-X_{1}X_{3}</math> with the Möbius transformation was analyzed by [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Poincare2|Poincaré (1886)]] in relation to [[Fuchsian group]]s. The adaptation to the Lorentz interval by which ({{equationNote|6d}}) becomes a Lorentz transformation was given by [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Bianchi2|Bianchi (1888)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Fricke|Fricke (1891)]]. Lorentz Transformation ({{equationNote|6e}}) was stated by [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Gauss3|Gauss around 1800]] (posthumously published 1863), as well as [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Selling|Selling (1873)]], [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Bianchi2|Bianchi (1888)]], [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Fricke|Fricke (1891)]], [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Woods|Woods (1895)]] in relation to integer indefinite ternary quadratic forms. Lorentz transformation ({{equationNote|6f}}) was given by [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Bianchi1|Bianchi (1886, 1894)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Eisenhart|Eisenhart (1905)]]. Lorentz transformation ({{equationNote|6g}}) of the hyperboloid was stated by [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Poincare2|Poincaré (1881)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (Möbius)#Hausdorff|Hausdorff (1899)]].}}</p>
+
+== {{anchor|Lorqua}}Lorentz transformation via quaternions and hyperbolic numbers ==
+
+The Lorentz transformations can also be expressed in terms of [[biquaternion]]s: A Minkowskian quaternion (or minquat) ''q'' having one real part and one purely imaginary part is multiplied by biquaternion ''a'' applied as pre- and postfactor. Using an overline to denote quaternion conjugation and * for complex conjugation, its general form (on the left) and the corresponding boost (on the right) are as follows:<ref>Synge (1972), pp. 13, 19, 24</ref><ref>Girard (1984), pp. 28–29</ref>
+
+{{NumBlk|:|<math>\left.\begin{matrix}-x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}+x_{3}^{\prime2}=-x_{0}^{2}+x_{1}^{2}+x_{2}^{2}+x_{3}^{2}\\
+\hline q'=aq\bar{a}^{\ast}\\
+\hline \begin{align}q & =ix_{0}+x_{1}e_{1}+x_{2}e_{2}+x_{3}e_{3}\\
+q' & =ix_{0}^{\prime}+x_{1}^{\prime}e_{1}+x_{2}^{\prime}e_{2}+x_{3}^{\prime}e_{3}\\
+a & =\cos\chi+i\sin\chi=e^{i\chi}
+\end{align}
+\\
+\left(a\bar{a}=1,\ \chi=\text{imaginary}\right)
+\end{matrix}\right|\begin{matrix}\chi=\frac{1}{2}i\eta\\
+\downarrow\\
+\begin{align}x_{0}^{\prime} & =x_{0}\cosh\eta-x_{1}\sinh\eta\\
+x_{1}^{\prime} & =-x_{0}\sinh\eta+x_{1}\cosh\eta\\
+x_{2}^{\prime} & =x_{2},\quad x_{3}^{\prime}=x_{3}
+\end{align}
+\end{matrix}</math>|{{equationRef|7a}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+[[v:History of Topics in Special Relativity/Lorentz transformation (Quaternions)#Hamilton|Hamilton (1844/45)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (Quaternions)#Cayley3|Cayley (1845)]] derived the quaternion transformation <math>aqa^{-1}</math> for spatial rotations, and [[v:History of Topics in Special Relativity/Lorentz transformation (Quaternions)#Cayley3|Cayley (1854, 1855)]] gave the corresponding transformation <math>aqb</math> leaving invariant the sum of four squares <math>x_{0}^{2}+x_{1}^{2}+x_{2}^{2}+x_{2}^{2}</math>. [[v:History of Topics in Special Relativity/Lorentz transformation (Quaternions)#Cox2|Cox (1882/83)]] discussed the Lorentz interval in terms of Weierstrass coordinates <math>x_{0}^{2}-x_{1}^{2}-x_{2}^{2}-x_{2}^{2}=1</math> in the course of adapting [[William Kingdon Clifford]]'s biquaternions ''a+ωb'' to hyperbolic geometry by setting <math>\omega^{2}=-1</math> (alternatively, 1 gives elliptic and 0 parabolic geometry). [[v:History of Topics in Special Relativity/Lorentz transformation (Quaternions)#Stephanos|Stephanos (1883)]] related the imaginary part of [[William Rowan Hamilton]]'s biquaternions to the radius of spheres, and introduced a homography leaving invariant the equations of oriented spheres or oriented planes in terms of [[Lie sphere geometry]]. [[v:History of Topics in Special Relativity/Lorentz transformation (Quaternions)#Buchheim|Buchheim (1884/85)]] discussed the Cayley absolute <math>x_{0}^{2}-x_{1}^{2}-x_{2}^{2}-x_{2}^{2}=0</math> and adapted Clifford's biquaternions to hyperbolic geometry similar to Cox by using all three values of <math>\omega^{2}</math>. Eventually, the modern Lorentz transformation using biquaternions with <math>\omega^{2}=-1</math> as in hyperbolic geometry was given by [[v:History of Topics in Special Relativity/Lorentz transformation (Quaternions)#Noether|Noether (1910) and Klein (1910)]] as well as [[v:History of Topics in Special Relativity/Lorentz transformation (Quaternions)#Conway|Conway (1911) and Silberstein (1911)]].}}</p>
+
+Often connected with quaternionic systems is the [[hyperbolic number]] <math>\varepsilon^{2}=1</math>, which also allows to formulate the Lorentz transformations:<ref>Sobczyk (1995)</ref><ref>Fjelstad (1986)</ref>
+
+{{NumBlk|:|<math>\begin{align}w' & =we^{-\varepsilon\eta}\\
+ & =w(\cosh(-\eta)+\varepsilon\sinh(-\eta))\\
+\\
+w & =w'e^{\varepsilon\eta}\\
+ & =w'(\cosh\eta+\varepsilon\sinh\eta)
+\end{align}
+\rightarrow\begin{align}w & =x_{1}+\varepsilon x_{0}\\
+w' & =x_{1}^{\prime}+\varepsilon x_{0}^{\prime}
+\end{align}
+\rightarrow\begin{align}x_{0}^{\prime} & =x_{0}\cosh\eta-x_{1}\sinh\eta\\
+x_{1}^{\prime} & =-x_{0}\sinh\eta+x_{1}\cosh\eta\\
+\\
+x_{0} & =x_{0}^{\prime}\cosh\eta+x_{1}^{\prime}\sinh\eta\\
+x_{1} & =x_{0}^{\prime}\sinh\eta+x_{1}^{\prime}\cosh\eta
+\end{align}</math>|{{equationRef|7b}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+After the trigonometric expression <math>e^{ix}</math> ([[Euler's formula]]) was given by [[v:History of Topics in Special Relativity/Lorentz transformation (Quaternions)#Euler3|Euler (1748)]], and the hyperbolic analogue <math>e^{\varepsilon\eta}</math> as well as hyperbolic numbers by [[v:History of Topics in Special Relativity/Lorentz transformation (Quaternions)#Cockle|Cockle (1848)]] in the framework of [[tessarine]]s, it was shown by [[v:History of Topics in Special Relativity/Lorentz transformation (Quaternions)#Cox2|Cox (1882/83)]] that one can identify <math>ww^{\prime-1}=e^{\varepsilon\eta}</math> with associative quaternion multiplication. Here, <math>e^{\varepsilon\eta}</math> is the hyperbolic [[versor]] with <math>\varepsilon^{2}=1</math>, while -1 denotes the elliptic or 0 denotes the parabolic counterpart (not to be confused with the expression <math>\omega^{2}</math> in Clifford's biquaternions also used by Cox, in which -1 is hyperbolic). The hyperbolic versor was also discussed by [[v:History of Topics in Special Relativity/Lorentz transformation (Quaternions)#Macfarlane|Macfarlane (1892, 1894, 1900)]] in terms of [[hyperbolic quaternion]]s. The expression <math>\varepsilon^{2}=1</math> for hyperbolic motions (and -1 for elliptic, 0 for parabolic motions) also appear in "biquaternions" defined by [[v:History of Topics in Special Relativity/Lorentz transformation (Quaternions)#Vahlen|Vahlen (1901/02, 1905)]].}}</p>
+
+More extended forms of complex and (bi-)quaternionic systems in terms of [[Clifford algebra]] can also be used to express the Lorentz transformations. For instance, using a system ''a'' of Clifford numbers one can transform the following general quadratic form into itself, in which the individual values of <math>i_{1}^{2},i_{2}^{2},\dots</math> can be set to +1 or -1 at will, while the Lorentz interval follows if the sign of one <math>i^{2}</math> differs from all others.:<ref>Cartan & Study (1908), section 36</ref><ref>Rothe (1916), section 16</ref>
+
+{{NumBlk|:|<math>\begin{matrix}i_{1}^{2}x_{1}^{\prime2}+\cdots+i_{n}^{2}x_{n}^{\prime2}=i_{1}^{2}x_{1}^{2}+\cdots+i_{n}^{2}x_{n}^{2}\\
+\hline (1)\ x'=axa^{-1}\\
+(2)\ x'=\frac{ax+b}{\varepsilon^{2} bx+a}
+\end{matrix}</math>|{{equationRef|7c}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+The general definite form <math>x_{1}^{2}+\cdots+x_{n}^{2}</math> as well as the general indefinite form <math>x_{1}^{2}+\cdots+x_{p}^{2}-x_{p+1}^{2}-\cdots-x_{p+q}^{2}</math> and their invariance under transformation (1) was discussed by [[v:History of Topics in Special Relativity/Lorentz transformation (Quaternions)#Lipschitz2|Lipschitz (1885/86)]], while hyperbolic motions were discussed by [[v:History of Topics in Special Relativity/Lorentz transformation (Quaternions)#Vahlen|Vahlen (1901/02, 1905)]] by setting <math>\varepsilon^{2}=1</math> in transformation (2), while elliptic motions follow with -1 and parabolic motions with 0, all of which he also related to biquaternions.}}</p>
+
+== {{anchor|Lortrig}}Lorentz transformation via trigonometric functions ==
+
+The following general relation connects the speed of light and the relative velocity to hyperbolic and trigonometric functions, where <math>\eta</math> is the rapidity in ({{equationNote|3b}}), <math>\theta</math> is equivalent to the [[Gudermannian function]] <math>{\rm gd}(\eta)=2\arctan(e^{\eta})-\pi/2</math>, and <math>\vartheta</math> is equivalent to the Lobachevskian [[angle of parallelism]] <math>\Pi(\eta)=2\arctan(e^{-\eta})</math>:
+
+:<math>\frac{v}{c}=\tanh\eta=\sin\theta=\cos\vartheta</math>
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+This relation was first defined by [[v:History of Topics in Special Relativity/Lorentz transformation (trigonometric)#Varicak|Varićak (1910)]].}}</p>
+
+a) Using <math>\sin\theta=\tfrac{v}{c}</math> one obtains the relations <math>\sec\theta=\gamma</math> and <math>\tan\theta=\beta\gamma</math>, and the Lorentz boost takes the form:<ref name=maj>Majerník (1986), 536–538</ref>
+
+{{NumBlk|:|<math>\begin{matrix}-x_{0}^{2}+x_{1}^{2}+x_{2}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}\\
+\hline \left.\begin{align}x_{0}^{\prime} & =x_{0}\sec\theta-x_{1}\tan\theta &  & =\frac{x_{0}-x_{1}\sin\theta}{\cos\theta}\\
+x_{1}^{\prime} & =-x_{0}\tan\theta+x_{1}\sec\theta &  & =\frac{x_{0}\sin\theta-x_{1}}{\cos\theta}\\
+x_{2}^{\prime} & =x_{2}\\
+\\
+x_{0} & =x_{0}^{\prime}\sec\theta+x_{1}^{\prime}\tan\theta &  & =\frac{x_{0}^{\prime}+x_{1}^{\prime}\sin\theta}{\cos\theta}\\
+x_{1} & =x_{0}^{\prime}\tan\theta+x_{1}^{\prime}\sec\theta &  & =\frac{x_{0}^{\prime}\sin\theta+x_{1}^{\prime}}{\cos\theta}\\
+x_{2} & =x_{2}^{\prime}
+\end{align}
+\right|{\scriptstyle \begin{align}\tan^{2}\theta-\sec^{2}\theta & =-1\\
+\frac{\tan\theta}{\sec\theta} & =\sin\theta\\
+\frac{1}{\sqrt{1-\sin^{2}\theta}} & =\sec\theta\\
+\frac{\sin\theta}{\sqrt{1-\sin^{2}\theta}} & =\tan\theta
+\end{align}
+}
+\end{matrix}</math>|{{equationRef|8a}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+This Lorentz transformation was derived by [[v:History of Topics in Special Relativity/Lorentz transformation (trigonometric)#Bianchi1|Bianchi (1886)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (trigonometric)#Darboux1|Darboux (1891/94)]] while transforming pseudospherical surfaces, and by [[v:History of Topics in Special Relativity/Lorentz transformation (trigonometric)#Scheffers|Scheffers (1899)]] as a special case of [[contact transformation]] in the plane (Laguerre geometry). In special relativity, it was used by [[v:History of Topics in Special Relativity/Lorentz transformation (trigonometric)#Gruner|Gruner (1921)]] while developing [[Loedel diagram]]s, and by [[Vladimir Karapetoff]] in the 1920s.}}</p>
+
+b) Using <math>\cos\vartheta=\tfrac{v}{c}</math> one obtains the relations <math>\csc\vartheta=\gamma</math> and <math>\cot\vartheta=\beta\gamma</math>, and the Lorentz boost takes the form:<ref name=maj />
+
+{{NumBlk|:|<math>\begin{matrix}-x_{0}^{2}+x_{1}^{2}+x_{2}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}+x_{2}^{\prime2}\\
+\hline \left.\begin{align}x_{0}^{\prime} & =x_{0}\csc\vartheta-x_{1}\cot\vartheta &  & =\frac{x_{0}-x_{1}\cos\vartheta}{\sin\vartheta}\\
+x_{1}^{\prime} & =-x_{0}\cot\vartheta+x_{1}\csc\vartheta &  & =\frac{x_{0}\cos\vartheta-x_{1}}{\sin\vartheta}\\
+x_{2}^{\prime} & =x_{2}\\
+\\
+x_{0} & =x_{0}^{\prime}\csc\vartheta+x_{1}^{\prime}\cot\vartheta &  & =\frac{x_{0}^{\prime}+x_{1}^{\prime}\cos\vartheta}{\sin\vartheta}\\
+x_{1} & =x_{0}^{\prime}\cot\vartheta+x_{1}^{\prime}\csc\vartheta &  & =\frac{x_{0}^{\prime}\cos\vartheta+x_{1}^{\prime}}{\sin\vartheta}\\
+x_{2} & =x_{2}^{\prime}
+\end{align}
+\right|{\scriptstyle \begin{align}\cot^{2}\vartheta-\csc^{2}\vartheta & =-1\\
+\frac{\cot\vartheta}{\csc\vartheta} & =\cos\vartheta\\
+\frac{1}{\sqrt{1-\cos^{2}\vartheta}} & =\csc\vartheta\\
+\frac{\cos\vartheta}{\sqrt{1-\cos^{2}\vartheta}} & =\cot\vartheta
+\end{align}
+}
+\end{matrix}</math>|{{equationRef|8b}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+This Lorentz transformation was derived by [[v:History of Topics in Special Relativity/Lorentz transformation (trigonometric)#Eisenhart|Eisenhart (1905)]] while transforming pseudospherical surfaces. In special relativity it was first used by [[v:History of Topics in Special Relativity/Lorentz transformation (trigonometric)#Gruner|Gruner (1921)]] while developing [[Loedel diagram]]s.}}</p>
+
+== {{anchor|Lorsqu}}Lorentz transformation via squeeze mappings ==
+
+As already indicated in equations ({{equationNote|3d}}) in exponential form or ({{equationNote|6f}}) in terms of Cayley–Klein parameter, Lorentz boosts in terms of hyperbolic rotations can be expressed as [[squeeze mapping]]s. Using [[hyperbola#Hyperbola with equation y = A/x|asymptotic coordinates of a hyperbola]] (''u,v''), they have the general form (some authors alternatively add a factor of 2 or <math>\sqrt{2}</math>):<ref name=terng>Terng & Uhlenbeck (2000), p. 21</ref>
+
+{{NumBlk|:|<math>\begin{matrix}(1) & \begin{array}{c|c|c}
+u=x_{0}+x_{1} & 2u=x_{0}+x_{1} & \sqrt{2}u=x_{0}+x_{1}\\
+v=x_{0}-x_{1} & 2v=x_{0}-x_{1} & \sqrt{2}v=x_{0}-x_{1}\\
+u'=x_{0}^{\prime}+x_{1}^{\prime} & 2u'=x_{0}^{\prime}+x_{1}^{\prime} & \sqrt{2}u=x_{0}^{\prime}+x_{1}^{\prime}\\
+v'=x_{0}^{\prime}-x_{1}^{\prime} & 2v'=x_{0}^{\prime}-x_{1}^{\prime} & \sqrt{2}v=x_{0}^{\prime}-x_{1}^{\prime}
+\end{array}\\
+\hline (2) & (u',v')=\left(ku,\ \frac{1}{k}v\right)\Rightarrow u'v'=uv
+\end{matrix}</math>|{{equationRef|9a}}}}
+
+That this equation system indeed represents a Lorentz boost can be seen by plugging (1) into (2) and solving for the individual variables:
+
+{{NumBlk|:|<math>\begin{matrix}-x_{0}^{2}+x_{1}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}\\
+\hline \left.\begin{align}x_{0}^{\prime} & =\frac{1}{2}\left(k+\frac{1}{k}\right)x_{0}-\frac{1}{2}\left(k-\frac{1}{k}\right)x_{1} &  & =\frac{x_{0}\left(k^{2}+1\right)-x_{1}\left(k^{2}-1\right)}{2k}\\
+x_{1}^{\prime} & =-\frac{1}{2}\left(k-\frac{1}{k}\right)x_{0}+\frac{1}{2}\left(k+\frac{1}{k}\right)x_{1} &  & =\frac{-x_{0}\left(k^{2}-1\right)+x_{1}\left(k^{2}+1\right)}{2k}\\
+\\
+x_{0} & =\frac{1}{2}\left(k+\frac{1}{k}\right)x_{0}^{\prime}+\frac{1}{2}\left(k-\frac{1}{k}\right)x_{1}^{\prime} &  & =\frac{x_{0}^{\prime}\left(k^{2}+1\right)+x_{1}^{\prime}\left(k^{2}-1\right)}{2k}\\
+x_{1} & =\frac{1}{2}\left(k-\frac{1}{k}\right)x_{0}^{\prime}+\frac{1}{2}\left(k+\frac{1}{k}\right)x_{1}^{\prime} &  & =\frac{x_{0}^{\prime}\left(k^{2}-1\right)+x_{1}^{\prime}\left(k^{2}+1\right)}{2k}
+\end{align}
+\right|{\scriptstyle \begin{align}\frac{k^{2}-1}{k^{2}+1} & =\beta\\
+\frac{k^{2}+1}{2k} & =\gamma\\
+\frac{k^{2}-1}{2k} & =\beta\gamma
+\end{align}
+}
+\end{matrix}</math>|{{equationRef|9b}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+Lorentz transformation ({{equationNote|9a}}) of asymptotic coordinates have been used [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Laisant1|Laisant (1874)]], [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Gunther1|Günther (1880/81)]] in relation to elliptic trigonometry;
+by [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Lie2|Lie (1879-81)]], [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Bianchi1|Bianchi (1886, 1894)]], [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Darboux1|Darboux (1891/94)]], [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Eisenhart|Eisenhart (1905)]] as [[squeeze mapping#Lie transform|Lie transform]])<ref name=terng /> of [[pseudospherical surface]]s in terms of the [[Sine-Gordon equation]];
+by [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Lipschitz1|Lipschitz (1885/86)]] in transformation theory.
+From that, different forms of Lorentz transformation were derived: ({{equationNote|9b}}) by [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Lipschitz1|Lipschitz (1885/86)]], [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Bianchi1|Bianchi (1886, 1894)]], [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Eisenhart|Eisenhart (1905)]];
+trigonometric Lorentz boost ({{equationNote|8a}}) by [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Bianchi1|Bianchi (1886, 1894)]], [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Darboux1|Darboux (1891/94)]];
+trigonometric Lorentz boost ({{equationNote|8b}}) by [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Eisenhart|Eisenhart (1905)]].
+Lorentz boost ({{equationNote|9b}}) was rediscovered in the framework of special relativity by [[Hermann Bondi]] (1964)<ref>Bondi (1964), p. 118</ref> in terms of [[Bondi k-calculus]], by which ''k'' can be physically interpreted as Doppler factor. Since ({{equationNote|9b}}) is equivalent to ({{equationNote|6f}}) in terms of Cayley–Klein parameter by setting <math>k=\alpha^2</math>, it can be interpreted as the 1+1 dimensional special case of Lorentz Transformation ({{equationNote|6e}}) stated by [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Gauss3|Gauss around 1800]] (posthumously published 1863), [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Selling|Selling (1873)]], [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Bianchi2|Bianchi (1888)]], [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Fricke|Fricke (1891)]], [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Woods|Woods (1895)]].}}</p>
+
+Variables ''u, v'' in ({{equationNote|9a}}) can be rearranged to produce another form of squeeze mapping, resulting in Lorentz transformation ({{equationNote|5b}}) in terms of Cayley-Hermite parameter:
+
+{{NumBlk|:|<math>\begin{matrix}\begin{matrix}u=x_{0}+x_{1}\\
+v=x_{0}-x_{1}\\
+u'=x_{0}^{\prime}+x_{1}^{\prime}\\
+v'=x_{0}^{\prime}-x_{1}^{\prime}
+\end{matrix}\Rightarrow\begin{matrix}u_{1}=x_{1}-x_{1}^{\prime}\\
+v_{1}=x_{0}+x_{0}^{\prime}\\
+u_{2}=x_{1}+x_{1}^{\prime}\\
+v_{2}=x_{0}-x_{0}^{\prime}
+\end{matrix}\\
+\hline (u_{2},v_{2})=\left(au_{1},\ \frac{1}{a}v_{1}\right)\Rightarrow u_{2}v_{2}=u_{1}v_{1}\\
+(u',v')=\left(\frac{1+a}{1-a}u,\ \frac{1-a}{1+a}v\right)\Rightarrow u'v'=uv
+\end{matrix}\Rightarrow\begin{matrix}-x_{0}^{2}+x_{1}^{2}=-x_{0}^{\prime2}+x_{1}^{\prime2}\\
+\hline \begin{align}x_{0}^{\prime} & =x_{0}\frac{1+a^{2}}{1-a^{2}}-x_{1}\frac{2a}{1-a^{2}} &  & =\frac{x_{0}\left(1+a^{2}\right)-x_{1}2a}{1-a^{2}}\\
+x_{1}^{\prime} & =-x_{0}\frac{2a}{1-a^{2}}+x_{1}\frac{1+a^{2}}{1-a^{2}} &  & =\frac{-x_{0}2a+x_{1}\left(1+a^{2}\right)}{1-a^{2}}\\
+\\
+x_{0} & =x_{0}^{\prime}\frac{1+a^{2}}{1-a^{2}}+x_{1}^{\prime}\frac{2a}{1-a^{2}} &  & =\frac{x_{0}^{\prime}\left(1+a^{2}\right)+x_{1}^{\prime}2a}{1-a^{2}}\\
+x_{1} & =x_{0}^{\prime}\frac{2a}{1-a^{2}}+x_{1}^{\prime}\frac{1+a^{2}}{1-a^{2}} &  & =\frac{x_{0}^{\prime}2a+x_{1}^{\prime}\left(1+a^{2}\right)}{1-a^{2}}
+\end{align}
+\end{matrix}</math>|{{equationRef|9c}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+These Lorentz transformations were given (up to a sign change) by [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Laguerre|Laguerre (1882)]], [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Darboux2|Darboux (1887)]], [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Smith|Smith (1900)]] in relation to Laguerre geometry.}}</p>
+
+On the basis of factors ''k'' or ''a'', all previous Lorentz boosts ({{equationNote|3b}}, {{equationNote|4a}}, {{equationNote|8a}}, {{equationNote|8b}}) can be expressed as squeeze mappings as well:
+
+{{NumBlk|:|<math>\begin{array}{c|c|c|c|c|c}
+ &  & (3b) & (4a) & (8a) & (8b)\\
+\hline k & \frac{1+a}{1-a} & e^{\eta} & \sqrt{\tfrac{1+\beta}{1-\beta}} & \frac{1+\sin\theta}{\cos\theta} & \frac{1+\cos\vartheta}{\sin\vartheta}=\cot\frac{\vartheta}{2}\\
+\hline \frac{k-1}{k+1} & a & \tanh\frac{\eta}{2} & \frac{\gamma-1}{\beta\gamma} & \frac{1-\cos\theta}{\sin\theta}=\tan\frac{\theta}{2} & \frac{1-\sin\vartheta}{\cos\vartheta}\\
+\hline \frac{k^{2}-1}{k^{2}+1} & \frac{2a}{1+a^{2}} & \tanh\eta & \beta & \sin\theta & \cos\vartheta\\
+\hline \frac{k^{2}+1}{2k} & \frac{1+a^{2}}{1-a^{2}} & \cosh\eta & \gamma & \sec\theta & \csc\vartheta\\
+\hline \frac{k^{2}-1}{2k} & \frac{2a}{1-a^{2}} & \sinh\eta & \beta\gamma & \tan\theta & \cot\vartheta
+\end{array}</math>|{{equationRef|9d}}}}
+
+<p style="border:1px solid black">{{Wikiversity-inline|list=
+Squeeze mappings in terms of <math>\theta</math> were used by [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Darboux1|Darboux (1891/94)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Bianchi1|Bianchi (1894)]], in terms of <math>\eta</math> by [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Lindemann|Lindemann (1891)]] and [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Herglotz1|Herglotz (1909)]], in terms of <math>\vartheta</math> by [[v:History of Topics in Special Relativity/Lorentz transformation (squeeze)#Eisenhart|Eisenhart (1905)]], in terms of <math>\beta</math> by Bondi (1964).}}</p>
+
+==Electrodynamics and special relativity==
+
+=== {{anchor|Voigt}} Voigt (1887) ===
+
+[[Woldemar Voigt]] (1887)<ref group=R>Voigt (1887), p. 45</ref> developed a transformation in connection with the [[Doppler effect]] and an incompressible medium, being in modern notation:<ref>Miller (1981), 114–115</ref><ref name=pais>Pais (1982), Kap. 6b</ref>
+
+:<math>\begin{matrix}\text{original} & \text{modern}\\
+\hline \left.\begin{align}\xi_{1} & =x_{1}-\varkappa t\\
+\eta_{1} & =y_{1}q\\
+\zeta_{1} & =z_{1}q\\
+\tau & =t-\frac{\varkappa x_{1}}{\omega^{2}}\\
+q & =\sqrt{1-\frac{\varkappa^{2}}{\omega^{2}}}
+\end{align}
+\right| & \begin{align}x^{\prime} & =x-vt\\
+y^{\prime} & =\frac{y}{\gamma}\\
+z^{\prime} & =\frac{z}{\gamma}\\
+t^{\prime} & =t-\frac{vx}{c^{2}}\\
+\frac{1}{\gamma} & =\sqrt{1-\frac{v^{2}}{c^{2}}}
+\end{align}
+\end{matrix}</math>
+
+If the right-hand sides of his equations are multiplied by γ they are the modern Lorentz transformation ({{equationNote|4b}}). In Voigt's theory the speed of light is invariant, but his transformations mix up a relativistic boost together with a rescaling of space-time. Optical phenomena in free space are [[Scale invariance|scale]], [[Conformal map|conformal]] (using the factor λ discussed [[#Lorsph|above]]), and [[Lorentz covariance|Lorentz invariant]], so the combination is invariant too.<ref name=pais /> For instance, Lorentz transformations can be extended by using <math>l=\sqrt{\lambda}</math>:<ref group=R>Lorentz (1915/16), p. 197</ref>
+
+:<math>x^{\prime}=\gamma l\left(x-vt\right),\quad y^{\prime}=ly,\quad z^{\prime}=lz,\quad t^{\prime}=\gamma l\left(t-x\frac{v}{c^{2}}\right)</math>.
+
+''l''=1/γ gives the Voigt transformation, ''l''=1 the Lorentz transformation. But scale transformations are not a symmetry of all the laws of nature, only of electromagnetism, so these transformations cannot be used to formulate a [[principle of relativity]] in general. It was demonstrated by Poincaré and Einstein that one has to set ''l''=1 in order to make the above transformation symmetric and to form a group as required by the relativity principle, therefore the Lorentz transformation is the only viable choice.
+
+Voigt sent his 1887 paper to Lorentz in 1908,<ref>Voigt's transformations and the beginning of the relativistic revolution, Ricardo Heras, arXiv:1411.2559 [https://arxiv.org/abs/1411.2559]</ref> and that was acknowledged in 1909: {{Quote|In a paper "Über das Doppler'sche Princip", published in 1887 (Gött. Nachrichten, p. 41) and which to my regret has escaped my notice all these years, Voigt has applied to equations of the form (7) (§ 3 of this book) [namely <math>\Delta\Psi-\tfrac{1}{c^{2}}\tfrac{\partial^{2}\Psi}{\partial t^{2}}=0</math>] a transformation equivalent to the formulae (287) and (288) [namely <math>x^{\prime}=\gamma l\left(x-vt\right),\ y^{\prime}=ly,\ z^{\prime}=lz,\ t^{\prime}=\gamma l\left(t-\tfrac{v}{c^{2}}x\right)</math>]. The idea of the transformations used above (and in § 44) might therefore have been borrowed from Voigt and the proof that it does not alter the form of the equations for the ''free'' ether is contained in his paper.<ref group=R>Lorentz (1915/16), p. 198</ref>}}
+
+Also [[Hermann Minkowski]] said in 1908 that the transformations which play the main role in the principle of relativity were first examined by Voigt in 1887. Voigt responded in the same paper by saying that his theory was based on an elastic theory of light, not an electromagnetic one. However, he concluded that some results were actually the same.<ref group=R>Bucherer (1908), p. 762</ref>
+
+==={{anchor|Heaviside}} Heaviside (1888), Thomson (1889), Searle (1896)===
+
+In 1888, [[Oliver Heaviside]]<ref group=R>Heaviside (1888), p. 324</ref> investigated the properties of [[Relativistic electromagnetism|charges in motion]] according to Maxwell's electrodynamics. He calculated, among other things, anisotropies in the electric field of moving bodies represented by this formula:<ref>Brown (2003)</ref>
+
+:<math>\mathrm{E}=\left(\frac{q\mathrm{r}}{r^{2}}\right)\left(1-\frac{v^{2}\sin^{2}\theta}{c^{2}}\right)^{-3/2}</math>.
+
+Consequently, [[Joseph John Thomson]] (1889)<ref group=R>Thomson (1889), p. 12</ref> found a way to substantially simplify calculations concerning moving charges by using the following mathematical transformation (like other authors such as Lorentz or Larmor, also Thomson implicitly used the [[Galilean transformation]] ''z-vt'' in his equation<ref name=mil />):
+
+:<math>\begin{matrix}\text{original} & \text{modern}\\
+\hline \left.\begin{align}z & =\left\{ 1-\frac{\omega^{2}}{v^{2}}\right\} ^{\frac{1}{2}}z'\end{align}
+\right| & \begin{align}z^{\ast}=z-vt & =\frac{z'}{\gamma}\end{align}
+\end{matrix}</math>
+
+Thereby, [[inhomogeneous electromagnetic wave equation]]s are transformed into a [[Poisson equation]].<ref name=mil>Miller (1981), 98–99</ref> Eventually, [[George Frederick Charles Searle]]<ref group=R>Searle (1886), p. 333</ref> noted in (1896) that Heaviside's expression leads to a deformation of electric fields which he called "Heaviside-Ellipsoid" of [[axial ratio]]
+
+:<math>\begin{matrix}\text{original} & \text{modern}\\
+\hline \left.\begin{align} & \sqrt{\alpha}:1:1\\
+\alpha= & 1-\frac{u^{2}}{v^{2}}
+\end{align}
+\right| & \begin{align} & \frac{1}{\gamma}:1:1\\
+\frac{1}{\gamma^{2}} & =1-\frac{v^{2}}{c^{2}}
+\end{align}
+\end{matrix}</math><ref name=mil />
+
+=== {{anchor|Lorentz1}} Lorentz (1892, 1895) ===
+
+In order to explain the [[aberration of light]] and the result of the [[Fizeau experiment]] in accordance with [[Maxwell's equations]], Lorentz in 1892 developed a model ("[[Lorentz ether theory]]") in which the aether is completely motionless, and the speed of light in the aether is constant in all directions. In order to calculate the optics of moving bodies, Lorentz introduced the following quantities to transform from the aether system into a moving system (it's unknown whether he was influenced by Voigt, Heaviside, and Thomson)<ref group=R>Lorentz (1892a), p. 141</ref><ref name=milf>Miller (1982), 1.4 & 1.5</ref>
+
+:<math>\begin{matrix}\text{original} & \text{modern}\\
+\hline \left.\begin{align}\mathfrak{x} & =\frac{V}{\sqrt{V^{2}-p^{2}}}x\\
+t' & =t-\frac{\varepsilon}{V}\mathfrak{x}\\
+\varepsilon & =\frac{p}{\sqrt{V^{2}-p^{2}}}
+\end{align}
+\right| & \begin{align}x^{\prime} & =\gamma x^{\ast}=\gamma(x-vt)\\
+t^{\prime} & =t-\frac{\gamma^{2}vx^{\ast}}{c^{2}}=\gamma^{2}\left(t-\frac{vx}{c^{2}}\right)\\
+\gamma\frac{v}{c} & =\frac{v}{\sqrt{c^{2}-v^{2}}}
+\end{align}
+\end{matrix}</math>
+
+where ''x<sup>*</sup>'' is the [[Galilean transformation]] ''x-vt''. Except the additional γ in the time transformation, this is the complete Lorentz transformation ({{equationNote|4b}}).<ref name=milf /> While ''t'' is the "true" time for observers resting in the aether, ''t′'' is an auxiliary variable only for calculating processes for moving systems. It is also important that Lorentz and later also Larmor formulated this transformation in two steps. At first an implicit Galilean transformation, and later the expansion into the "fictitious" electromagnetic system with the aid of the Lorentz transformation. In order to explain the negative result of the [[Michelson–Morley experiment]], he (1892b)<ref group=R>Lorentz (1892b), p. 141</ref> introduced the additional hypothesis that also intermolecular forces are affected in a similar way and introduced [[length contraction]] in his theory (without proof as he admitted). The same hypothesis was already made by [[George FitzGerald]] in 1889 based on Heaviside's work. While length contraction was a real physical effect for Lorentz, he considered the time transformation only as a heuristic working hypothesis and a mathematical stipulation.
+
+In 1895, Lorentz further elaborated on his theory and introduced the "theorem of corresponding states". This theorem states that a moving observer (relative to the ether) in his "fictitious" field makes the same observations as a resting observers in his "real" field for velocities to first order in ''v/c''. Lorentz showed that the dimensions of electrostatic systems in the ether and a moving frame are connected by this transformation:<ref group=R>Lorentz (1895), p. 37</ref>
+
+:<math>\begin{matrix}\text{original} & \text{modern}\\
+\hline \left.\begin{align}x & =x^{\prime}\sqrt{1-\frac{\mathfrak{p}^{2}}{V^{2}}}\\
+y & =y^{\prime}\\
+z & =z^{\prime}\\
+t & =t^{\prime}
+\end{align}
+\right| & \begin{align}x^{\ast}=x-vt & =\frac{x^{\prime}}{\gamma}\\
+y & =y^{\prime}\\
+z & =z^{\prime}\\
+t & =t^{\prime}
+\end{align}
+\end{matrix}</math>
+
+For solving optical problems Lorentz used the following transformation, in which the modified time variable was called "local time" ({{lang-de|Ortszeit}}) by him:<ref group=R>Lorentz (1895), p. 49 for local time and p. 56 for spatial coordinates.</ref>
+
+:<math>\begin{matrix}\text{original} & \text{modern}\\
+\hline \left.\begin{align}x & =\mathrm{x}-\mathfrak{p}_{x}t\\
+y & =\mathrm{y}-\mathfrak{p}_{y}t\\
+z & =\mathrm{z}-\mathfrak{p}_{z}t\\
+t^{\prime} & =t-\frac{\mathfrak{p}_{x}}{V^{2}}x-\frac{\mathfrak{p}_{y}}{V^{2}}y-\frac{\mathfrak{p}_{z}}{V^{2}}z
+\end{align}
+\right| & \begin{align}x^{\prime} & =x-v_{x}t\\
+y^{\prime} & =y-v_{y}t\\
+z^{\prime} & =z-v_{z}t\\
+t^{\prime} & =t-\frac{v_{x}}{c^{2}}x'-\frac{v_{y}}{c^{2}}y'-\frac{v_{z}}{c^{2}}z'
+\end{align}
+\end{matrix}</math>
+
+With this concept Lorentz could explain the [[Doppler effect]], the [[aberration of light]], and the [[Fizeau experiment]].<ref>Janssen (1995), 3.1</ref>
+
+=== {{anchor|Larmor}} Larmor (1897, 1900) ===
+
+In 1897, Larmor extended the work of Lorentz and derived the following transformation<ref group=R>Larmor (1897), p. 229</ref>
+
+:<math>\begin{matrix}\text{original} & \text{modern}\\
+\hline \left.\begin{align}x_{1} & =x\varepsilon^{\frac{1}{2}}\\
+y_{1} & =y\\
+z_{1} & =z\\
+t^{\prime} & =t-vx/c^{2}\\
+dt_{1} & =dt^{\prime}\varepsilon^{-\frac{1}{2}}\\
+\varepsilon & =\left(1-v^{2}/c^{2}\right)^{-1}
+\end{align}
+\right| & \begin{align}x_{1} & =\gamma x^{\ast}=\gamma(x-vt)\\
+y_{1} & =y\\
+z_{1} & =z\\
+t^{\prime} & =t-\frac{vx^{\ast}}{c^{2}}=t-\frac{v(x-vt)}{c^{2}}\\
+dt_{1} & =\frac{dt^{\prime}}{\gamma}\\
+\gamma^{2} & =\frac{1}{1-\frac{v^{2}}{c^{2}}}
+\end{align}
+\end{matrix}</math>
+
+Larmor noted that if it is assumed that the constitution of molecules is electrical then the FitzGerald–Lorentz contraction is a consequence of this transformation, explaining the [[Michelson–Morley experiment]]. It's notable that Larmor was the first who recognized that some sort of [[time dilation]] is a consequence of this transformation as well, because "individual electrons describe corresponding parts of their orbits in times shorter for the [rest] system in the ratio 1/γ".<ref>Darrigol (2000), Chap. 8.5</ref><ref>Macrossan (1986)</ref> Larmor wrote his electrodynamical equations and transformations neglecting terms of higher order than ''(v/c)''<sup>2</sup> – when his 1897 paper was reprinted in 1929, Larmor added the following comment in which he described how they can be made valid to all orders of ''v/c'':<ref group=R>Larmor (1897/1929), p. 39</ref>
+
+{{Quote|Nothing need be neglected: the transformation is ''exact'' if ''v/c''<sup>2</sup> is replaced by ''εv/c''<sup>2</sup> in the equations and also in the change following from ''t'' to ''t′'', as is worked out in ''Aether and Matter'' (1900), p. 168, and as Lorentz found it to be in 1904, thereby stimulating the modern schemes of intrinsic relational relativity.}}
+
+In line with that comment, in his book Aether and Matter published in 1900, Larmor used a modified local time ''t″=t′-εvx′/c<sup>2</sup>'' instead of the 1897 expression ''t′=t-vx/c<sup>2</sup>'' by replacing ''v/c''<sup>2</sup> with ''εv/c''<sup>2</sup>, so that ''t″'' is now identical to the one given by Lorentz in 1892, which he combined with a Galilean transformation for the ''x′, y′, z′, t′'' coordinates:<ref group=R>Larmor (1900), p. 168</ref>
+
+:<math>\begin{matrix}\text{original} & \text{modern}\\
+\hline \left.\begin{align}x^{\prime} & =x-vt\\
+y^{\prime} & =y\\
+z^{\prime} & =z\\
+t^{\prime} & =t\\
+t^{\prime\prime} & =t^{\prime}-\varepsilon vx^{\prime}/c^{2}
+\end{align}
+\right| & \begin{align}x^{\prime} & =x-vt\\
+y^{\prime} & =y\\
+z^{\prime} & =z\\
+t^{\prime} & =t\\
+t^{\prime\prime}=t^{\prime}-\frac{\gamma^{2}vx^{\prime}}{c^{2}} & =\gamma^{2}\left(t-\frac{vx}{c^{2}}\right)
+\end{align}
+\end{matrix}</math>
+
+Larmor knew that the Michelson–Morley experiment was accurate enough to detect an effect of motion depending on the factor ''(v/c)''<sup>2</sup>, and so he sought the transformations which were "accurate to second order" (as he put it). Thus he wrote the final transformations (where ''x′=x-vt'' and ''t″'' as given above) as:<ref group=R>Larmor (1900), p. 174</ref>
+
+:<math>\begin{matrix}\text{original} & \text{modern}\\
+\hline \left.\begin{align}x_{1} & =\varepsilon^{\frac{1}{2}}x^{\prime}\\
+y_{1} & =y^{\prime}\\
+z_{1} & =z^{\prime}\\
+dt_{1} & =\varepsilon^{-\frac{1}{2}}dt^{\prime\prime}=\varepsilon^{-\frac{1}{2}}\left(dt^{\prime}-\frac{v}{c^{2}}\varepsilon dx^{\prime}\right)\\
+t_{1} & =\varepsilon^{-\frac{1}{2}}t^{\prime}-\frac{v}{c^{2}}\varepsilon^{\frac{1}{2}}x^{\prime}
+\end{align}
+\right| & \begin{align}x_{1} & =\gamma x^{\prime}=\gamma(x-vt)\\
+y_{1} & =y'=y\\
+z_{1} & =z'=z\\
+dt_{1} & =\frac{dt^{\prime\prime}}{\gamma}=\frac{1}{\gamma}\left(dt^{\prime}-\frac{\gamma^{2}vdx^{\prime}}{c^{2}}\right)=\gamma\left(dt-\frac{vdx}{c^{2}}\right)\\
+t_{1} & =\frac{t^{\prime}}{\gamma}-\frac{\gamma vx^{\prime}}{c^{2}}=\gamma\left(t-\frac{vx}{c^{2}}\right)
+\end{align}
+\end{matrix}</math>
+
+by which he arrived at the complete Lorentz transformation ({{equationNote|4b}}). Larmor showed that Maxwell's equations were invariant under this two-step transformation, "to second order in ''v/c''" – it was later shown by Lorentz (1904) and Poincaré (1905) that they are indeed invariant under this transformation to all orders in ''v/c''.
+
+Larmor gave credit to Lorentz in two papers published in 1904, in which he used the term "Lorentz transformation" for Lorentz's first order transformations of coordinates and field configurations:
+
+{{Quote|p. 583: [..] Lorentz's transformation for passing from the field of activity of a stationary electrodynamic material system to that of one moving with uniform velocity of translation through the aether.<br /> p. 585: [..] the Lorentz transformation has shown us what is not so immediately obvious [..]<ref group=R>Larmor (1904a), p. 583, 585</ref> <br /> p. 622: [..] the transformation first developed by Lorentz: namely, each point in space is to have its own origin from which time is measured, its "local time" in Lorentz's phraseology, and then the values of the electric and magnetic vectors [..] at all points in the aether between the molecules in the system at rest, are the same as those of the vectors [..] at the corresponding points in the convected system at the same local times.<ref group=R>Larmor (1904b), p. 622</ref>}}
+
+=== {{anchor|Lorentz2}} Lorentz (1899, 1904) ===
+
+Also Lorentz extended his theorem of corresponding states in 1899. First he wrote a transformation equivalent to the one from 1892 (again, ''x''* must be replaced by ''x-vt''):<ref group=R>Lorentz (1899), p. 429</ref>
+
+:<math>\begin{matrix}\text{original} & \text{modern}\\
+\hline \left.\begin{align}x^{\prime} & =\frac{V}{\sqrt{V^{2}-\mathfrak{p}_{x}^{2}}}x\\
+y^{\prime} & =y\\
+z^{\prime} & =z\\
+t^{\prime} & =t-\frac{\mathfrak{p}_{x}}{V^{2}-\mathfrak{p}_{x}^{2}}x
+\end{align}
+\right| & \begin{align}x^{\prime} & =\gamma x^{\ast}=\gamma(x-vt)\\
+y^{\prime} & =y\\
+z^{\prime} & =z\\
+t^{\prime} & =t-\frac{\gamma^{2}vx^{\ast}}{c^{2}}=\gamma^{2}\left(t-\frac{vx}{c^{2}}\right)
+\end{align}
+\end{matrix}</math>
+
+Then he introduced a factor ε of which he said he has no means of determining it, and modified his transformation as follows (where the above value of ''t′'' has to be inserted):<ref group=R>Lorentz (1899), p. 439</ref>
+
+:<math>\begin{matrix}\text{original} & \text{modern}\\
+\hline \left.\begin{align}x & =\frac{\varepsilon}{k}x^{\prime\prime}\\
+y & =\varepsilon y^{\prime\prime}\\
+z & =\varepsilon x^{\prime\prime}\\
+t^{\prime} & =k\varepsilon t^{\prime\prime}\\
+k & =\frac{V}{\sqrt{V^{2}-\mathfrak{p}_{x}^{2}}}
+\end{align}
+\right| & \begin{align}x^{\ast}=x-vt & =\frac{\varepsilon}{\gamma}x^{\prime\prime}\\
+y & =\varepsilon y^{\prime\prime}\\
+z & =\varepsilon z^{\prime\prime}\\
+t^{\prime}=\gamma^{2}\left(t-\frac{vx}{c^{2}}\right) & =\gamma\varepsilon t^{\prime\prime}\\
+\gamma & =\frac{1}{\sqrt{1-\frac{v^{2}}{c^{2}}}}
+\end{align}
+\end{matrix}</math>
+
+This is equivalent to the complete Lorentz transformation ({{equationNote|4b}}) when solved for ''x″'' and ''t″'' and with ε=1. Like Larmor, Lorentz noticed in 1899<ref group=R>Lorentz (1899), p. 442</ref> also some sort of time dilation effect in relation to the frequency of oscillating electrons ''"that in ''S'' the time of vibrations be ''kε'' times as great as in ''S<sub>0</sub>''"'', where ''S<sub>0</sub>'' is the aether frame.<ref>Jannsen (1995), Kap. 3.3</ref>
+
+In 1904 he rewrote the equations in the following form by setting ''l''=1/ε (again, ''x''* must be replaced by ''x-vt''):<ref group=R>Lorentz (1904), p. 812</ref>
+
+:<math>\begin{matrix}\text{original} & \text{modern}\\
+\hline \left.\begin{align}x^{\prime} & =klx\\
+y^{\prime} & =ly\\
+z^{\prime} & =lz\\
+t' & =\frac{l}{k}t-kl\frac{w}{c^{2}}x
+\end{align}
+\right| & \begin{align}x^{\prime} & =\gamma lx^{\ast}=\gamma l(x-vt)\\
+y^{\prime} & =ly\\
+z^{\prime} & =lz\\
+t^{\prime} & =\frac{lt}{\gamma}-\frac{\gamma lvx^{\ast}}{c^{2}}=\gamma l\left(t-\frac{vx}{c^{2}}\right)
+\end{align}
+\end{matrix}</math>
+
+Under the assumption that ''l=1'' when ''v''=0, he demonstrated that ''l=1'' must be the case at all velocities, therefore length contraction can only arise in the line of motion. So by setting the factor ''l'' to unity, Lorentz's transformations now assumed the same form as Larmor's and are now completed. Unlike Larmor, who restricted himself to show the covariance of Maxwell's equations to second order, Lorentz tried to widen its covariance to all orders in ''v/c''. He also derived the correct formulas for the velocity dependence of [[electromagnetic mass]], and concluded that the transformation formulas must apply to all forces of nature, not only electrical ones.<ref group=R>Lorentz (1904), p. 826</ref> However, he didn't achieve full covariance of the transformation equations for charge density and velocity.<ref>Miller (1981), Chap. 1.12.2</ref> When the 1904 paper was reprinted in 1913, Lorentz therefore added the following remark:<ref>Jannsen (1995), Chap. 3.5.6</ref>
+
+{{Quote|One will notice that in this work the transformation equations of Einstein’s Relativity Theory have not quite been attained. [..] On this circumstance depends the clumsiness of many of the further considerations in this work.}}
+
+Lorentz's 1904 transformation was cited and used by [[Alfred Bucherer]] in July 1904:<ref group=R>Bucherer, p. 129; Definition of s on p. 32</ref>
+
+:<math>x^{\prime}=\sqrt{s}x,\quad y^{\prime}=y,\quad z^{\prime}=z,\quad t'=\frac{t}{\sqrt{s}}-\sqrt{s}\frac{u}{v^{2}}x,\quad s=1-\frac{u^{2}}{v^{2}}</math>
+
+or by [[Wilhelm Wien]] in July 1904:<ref group=R>Wien (1904), p. 394</ref>
+
+:<math>x=kx',\quad y=y',\quad z=z',\quad t'=kt-\frac{v}{kc^{2}}x</math>
+
+or by [[Emil Cohn]] in November 1904 (setting the speed of light to unity):<ref group=R>Cohn (1904a), pp. 1296-1297</ref>
+
+:<math>x=\frac{x_{0}}{k},\quad y=y_{0},\quad z=z_{0},\quad t=kt_{0},\quad t_{1}=t_{0}-w\cdot r_{0},\quad k^{2}=\frac{1}{1-w^{2}}</math>
+
+or by [[Richard Gans]] in February 1905:<ref group=R>Gans (1905), p. 169</ref>
+
+:<math>x^{\prime}=kx,\quad y^{\prime}=y,\quad z^{\prime}=z,\quad t'=\frac{t}{k}-\frac{kwx}{c^{2}},\quad k^{2}=\frac{c^{2}}{c^{2}-w^{2}}</math>
+
+=== {{anchor|Poincare3}} Poincaré (1900, 1905) ===
+
+==== Local time ====
+
+Neither Lorentz or Larmor gave a clear physical interpretation of the origin of local time. However, [[Henri Poincaré]] in 1900 commented on the origin of Lorentz's "wonderful invention" of local time.<ref>Darrigol (2005), Kap. 4</ref> He remarked that it arose when clocks in a moving reference frame are synchronised by exchanging signals which are assumed to travel with the same speed <math>c</math> in both directions, which lead to what is nowadays called [[relativity of simultaneity]], although Poincaré's calculation does not involve length contraction or time dilation.<ref group=R>Poincaré (1900), pp. 272–273</ref> In order to synchronise the clocks here on Earth (the ''x*, t''* frame) a light signal from one clock (at the origin) is sent to another (at ''x''*), and is sent back. It's supposed that the Earth is moving with speed ''v'' in the ''x''-direction (= ''x''*-direction) in some rest system (''x, t'') (''i.e.'' the [[luminiferous aether]] system for Lorentz and Larmor). The time of flight outwards is
+
+:<math>\delta t_{a}=\frac{x^{\ast}}{\left(c-v\right)}</math>
+
+and the time of flight back is
+
+:<math>\delta t_{b}=\frac{x^{\ast}}{\left(c+v\right)}</math>.
+
+The elapsed time on the clock when the signal is returned is ''δt<sub>a</sub>+δt<sub>b</sub>'' and the time ''t*=(δt<sub>a</sub>+δt<sub>b</sub>)/2'' is ascribed to the moment when the light signal reached the distant clock. In the rest frame the time ''t=δt<sub>a</sub>'' is ascribed to that same instant. Some algebra gives the relation between the different time coordinates ascribed to the moment of reflection. Thus
+
+:<math>t^{\ast}=t-\frac{\gamma^{2}vx^{*}}{c^{2}}</math>
+
+identical to Lorentz (1892). By dropping the factor γ<sup>2</sup> under the assumption that <math>\tfrac{v^{2}}{c^{2}}\ll1</math>, Poincaré gave the result ''t*=t-vx*/c<sup>2</sup>'', which is the form used by Lorentz in 1895.
+
+Similar physical interpretations of local time were later given by [[Emil Cohn]] (1904)<ref group=R>Cohn (1904b), p. 1408</ref> and [[Max Abraham]] (1905).<ref group=R>Abraham (1905), § 42</ref>
+
+==== Lorentz transformation ====
+
+On June 5, 1905 (published June 9) Poincaré formulated transformation equations which are algebraically equivalent to those of Larmor and Lorentz and gave them the modern form ({{equationNote|4b}}):<ref group=R>Poincaré (1905), p. 1505</ref>
+
+:<math>\begin{align}x^{\prime} & =kl(x+\varepsilon t)\\
+y^{\prime} & =ly\\
+z^{\prime} & =lz\\
+t' & =kl(t+\varepsilon x)\\
+k & =\frac{1}{\sqrt{1-\varepsilon^{2}}}
+\end{align}
+</math>.
+
+Apparently Poincaré was unaware of Larmor's contributions, because he only mentioned Lorentz and therefore used for the first time the name "Lorentz transformation".<ref>Pais (1982), Chap. 6c</ref><ref>Katzir (2005), 280–288</ref> Poincaré set the speed of light to unity, pointed out the group characteristics of the transformation by setting ''l''=1, and modified/corrected Lorentz's derivation of the equations of electrodynamics in some details in order to fully satisfy the principle of relativity, ''i.e.'' making them fully Lorentz covariant.<ref>Miller (1981), Chap. 1.14</ref>
+
+In July 1905 (published in January 1906)<ref group=R>Poincaré (1905/06), pp. 129ff</ref> Poincaré showed in detail how the transformations and electrodynamic equations are a consequence of the [[principle of least action]]; he demonstrated in more detail the group characteristics of the transformation, which he called [[Lorentz group]], and he showed that the combination ''x<sup>2</sup>+y<sup>2</sup>+z<sup>2</sup>-t<sup>2</sup>'' is invariant. He noticed that the Lorentz transformation is merely a rotation in four-dimensional space about the origin by introducing <math>ct\sqrt{-1}</math> as a fourth imaginary coordinate, and he used an early form of [[four-vector]]s. He also formulated the velocity addition formula ({{equationNote|4d}}), which he had already derived in unpublished letters to Lorentz from May 1905:<ref group=R>Poincaré (1905/06), p. 144</ref>
+
+:<math>\xi'=\frac{\xi+\varepsilon}{1+\xi\varepsilon},\ \eta'=\frac{\eta}{k(1+\xi\varepsilon)}</math>.
+
+==={{anchor|Einstein}} Einstein (1905) – Special relativity===
+
+On June 30, 1905 (published September 1905) Einstein published what is now called [[special relativity]] and gave a new derivation of the transformation, which was based only on the principle on relativity and the principle of the constancy of the speed of light. While Lorentz considered "local time" to be a mathematical stipulation device for explaining the Michelson-Morley experiment, Einstein showed that the coordinates given by the Lorentz transformation were in fact the inertial coordinates of relatively moving frames of reference. For quantities of first order in ''v/c'' this was also done by Poincaré in 1900, while Einstein derived the complete transformation by this method. Unlike Lorentz and Poincaré who still distinguished between real time in the aether and apparent time for moving observers, Einstein showed that the transformations concern the nature of space and time.<ref>Miller (1981), Chap. 6</ref><ref>Pais (1982), Kap. 7</ref><ref>Darrigol (2005), Chap. 6</ref>
+
+The notation for this transformation is equivalent to Poincaré's of 1905 and ({{equationNote|4b}}), except that Einstein didn't set the speed of light to unity:<ref group=R>Einstein (1905), p. 902</ref>
+
+:<math>\begin{align}\tau & =\beta\left(t-\frac{v}{V^{2}}x\right)\\
+\xi & =\beta(x-vt)\\
+\eta & =y\\
+\zeta & =z\\
+\beta & =\frac{1}{\sqrt{1-\left(\frac{v}{V}\right)^{2}}}
+\end{align}
+</math>
+
+Einstein also defined the velocity addition formula ({{equationNote|4d}}, {{equationNote|4e}}):<ref group=R>Einstein (1905), § 5 and § 9</ref>
+
+:<math>\begin{matrix}x=\frac{w_{\xi}+v}{1+\frac{vw_{\xi}}{V^{2}}}t,\ y=\frac{\sqrt{1-\left(\frac{v}{V}\right)^{2}}}{1+\frac{vw_{\xi}}{V^{2}}}w_{\eta}t\\
+U^{2}=\left(\frac{dx}{dt}\right)^{2}+\left(\frac{dy}{dt}\right)^{2},\ w^{2}=w_{\xi}^{2}+w_{\eta}^{2},\ \alpha=\operatorname{arctg}\frac{w_{y}}{w_{x}}\\
+U=\frac{\sqrt{\left(v^{2}+w^{2}+2vw\cos\alpha\right)-\left(\frac{vw\sin\alpha}{V}\right)^{2}}}{1+\frac{vw\cos\alpha}{V^{2}}}
+\end{matrix}\left|\begin{matrix}\frac{u_{x}-v}{1-\frac{u_{x}v}{V^{2}}}=u_{\xi}\\
+\frac{u_{y}}{\beta\left(1-\frac{u_{x}v}{V^{2}}\right)}=u_{\eta}\\
+\frac{u_{z}}{\beta\left(1-\frac{u_{x}v}{V^{2}}\right)}=u_{\zeta}
+\end{matrix}\right.</math>
+
+and the light aberration formula ({{equationNote|4f}}):<ref group=R>Einstein (1905), § 7</ref>
+
+:<math>\cos\varphi'=\frac{\cos\varphi-\frac{v}{V}}{1-\frac{v}{V}\cos\varphi}</math>
+
+=== {{anchor|Minkowski}} Minkowski (1907–1908) – Spacetime ===
+
+The work on the principle of relativity by Lorentz, Einstein, [[Max Planck|Planck]], together with Poincaré's four-dimensional approach, were further elaborated and combined with the [[hyperboloid model]] by [[Hermann Minkowski]] in 1907 and 1908.<ref group=R>Minkowski (1907/15), pp. 927ff</ref><ref group=R>Minkowski (1907/08), pp. 53ff</ref> Minkowski particularly reformulated electrodynamics in a four-dimensional way ([[Minkowski spacetime]]).<ref>Walter (1999a)</ref> For instance, he wrote ''x, y, z, it'' in the form ''x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, x<sub>4</sub>''. By defining ψ as the angle of rotation around the ''z''-axis, the Lorentz transformation assumes a form (with ''c''=1) in agreement with ({{equationNote|2b}}):<ref group=R name=mink1>Minkowski (1907/08), p. 59</ref>
+
+:<math>\begin{align}x'_{1} & =x_{1}\\
+x'_{2} & =x_{2}\\
+x'_{3} & =x_{3}\cos i\psi+x_{4}\sin i\psi\\
+x'_{4} & =-x_{3}\sin i\psi+x_{4}\cos i\psi\\
+\cos i\psi & =\frac{1}{\sqrt{1-q^{2}}}
+\end{align}
+</math>
+
+Even though Minkowski used the imaginary number iψ, he for once<ref group=R name=mink1 /> directly used the [[tangens hyperbolicus]] in the equation for velocity
+
+:<math>-i\tan i\psi=\frac{e^{\psi}-e^{-\psi}}{e^{\psi}+e^{-\psi}}=q</math> with <math>\psi=\frac{1}{2}\ln\frac{1+q}{1-q}</math>.
+
+Minkowski's expression can also by written as ψ=atanh(q) and was later called [[rapidity]]. He also wrote the Lorentz transformation in matrix form equivalent to ({{equationNote|2a}}) (''n''=3):<ref group=R>Minkowski (1907/08), pp. 65–66, 81–82</ref>
+
+:<math>\begin{matrix}x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{2}=x_{1}^{\prime2}+x_{2}^{\prime2}+x_{3}^{\prime2}+x_{4}^{\prime2}\\
+\left(x_{1}^{\prime}=x',\ x_{2}^{\prime}=y',\ x_{3}^{\prime}=z',\ x_{4}^{\prime}=it'\right)\\
+-x^{2}-y^{2}-z^{2}+t^{2}=-x^{\prime2}-y^{\prime2}-z^{\prime2}+t^{\prime2}\\
+\hline x_{h}=\alpha_{h1}x_{1}^{\prime}+\alpha_{h2}x_{2}^{\prime}+\alpha_{h3}x_{3}^{\prime}+\alpha_{h4}x_{4}^{\prime}\\
+\mathrm{A}=\mathrm{\left|\begin{matrix}\alpha_{11}, & \alpha_{12}, & \alpha_{13}, & \alpha_{14}\\
+\alpha_{21}, & \alpha_{22}, & \alpha_{23}, & \alpha_{24}\\
+\alpha_{31}, & \alpha_{32}, & \alpha_{33}, & \alpha_{34}\\
+\alpha_{41}, & \alpha_{42}, & \alpha_{43}, & \alpha_{44}
+\end{matrix}\right|,\ \begin{align}\bar{\mathrm{A}}\mathrm{A} & =1\\
+\left(\det \mathrm{A}\right)^{2} & =1\\
+\det \mathrm{A} & =1\\
+\alpha_{44} & >0
+\end{align}
+}
+\end{matrix}</math>
+
+As a graphical representation of the Lorentz transformation he introduced the [[Minkowski diagram]], which became a standard tool in textbooks and research articles on relativity:<ref group=R>Minkowski (1908/09), p. 77</ref>
+
+[[File:Minkowski1.png|center|thumb|400px|Original spacetime diagram by Minkowski in 1908.]]
+
+==={{Anchor|Sommerfeld}} Sommerfeld (1909) – Spherical trigonometry===
+
+Using an imaginary rapidity such as Minkowski, [[Arnold Sommerfeld]] (1909) formulated a transformation equivalent to Lorentz boost ({{equationNote|3b}}), and the relativistic velocity addition ({{equationNote|4d}}) in terms of trigonometric functions and the [[spherical law of cosines]]:<ref group=R>Sommerfeld (1909), p. 826ff.</ref>
+
+:<math>\begin{matrix}\left.\begin{array}{lrl}
+x'= & x\ \cos\varphi+l\ \sin\varphi, & y'=y\\
+l'= & -x\ \sin\varphi+l\ \cos\varphi, & z'=z
+\end{array}\right\} \\
+\left(\operatorname{tg}\varphi=i\beta,\ \cos\varphi=\frac{1}{\sqrt{1-\beta^{2}}},\ \sin\varphi=\frac{i\beta}{\sqrt{1-\beta^{2}}}\right)\\
+\hline \beta=\frac{1}{i}\operatorname{tg}\left(\varphi_{1}+\varphi_{2}\right)=\frac{1}{i}\frac{\operatorname{tg}\varphi_{1}+\operatorname{tg}\varphi_{2}}{1-\operatorname{tg}\varphi_{1}\operatorname{tg}\varphi_{2}}=\frac{\beta_{1}+\beta_{2}}{1+\beta_{1}\beta_{2}}\\
+\cos\varphi=\cos\varphi_{1}\cos\varphi_{2}-\sin\varphi_{1}\sin\varphi_{2}\cos\alpha\\
+v^{2}=\frac{v_{1}^{2}+v_{2}^{2}+2v_{1}v_{2}\cos\alpha-\frac{1}{c^{2}}v_{1}^{2}v_{2}^{2}\sin^{2}\alpha}{\left(1+\frac{1}{c^{2}}v_{1}v_{2}\cos\alpha\right)^{2}}
+\end{matrix}</math>
+
+==={{anchor|Bateman}} Bateman and Cunningham (1909–1910) – Spherical wave transformation===
+
+In line with [[#Lie|Lie's (1871)]] research on the relation between sphere transformations with an imaginary radius coordinate and 4D conformal transformations, it was pointed out by [[Harry Bateman|Bateman]] and [[Ebenezer Cunningham|Cunningham]] (1909–1910), that by setting ''u=ict'' as the imaginary fourth coordinates one can produce spacetime conformal transformations. Not only the quadratic form <math>\lambda\left(dx^{2}+dy^{2}+dz^{2}+du^{2}\right)</math>, but also [[Maxwells equations]] are covariant with respect to these transformations, irrespective of the choice of λ. These variants of conformal or Lie sphere transformations were called [[spherical wave transformation]]s by Bateman.<ref group=R>Bateman (1909/10), pp. 223ff</ref><ref group=R>Cunningham (1909/10), pp. 77ff</ref> However, this covariance is restricted to certain areas such as electrodynamics, whereas the totality of natural laws in inertial frames is covariant under the [[Lorentz group]].<ref group=R>Klein (1910)</ref> In particular, by setting λ=1 the Lorentz group {{nowrap|SO(1,3)}} can be seen as a 10-parameter subgroup of the 15-parameter spacetime conformal group {{nowrap|Con(1,3)}}.
+
+Bateman (1910/12)<ref>Bateman (1910/12), pp. 358–359</ref> also alluded to the identity between the [[#Laguerre|Laguerre inversion]] and the Lorentz transformations. In general, the isomorphism between the Laguerre group and the Lorentz group was pointed out by [[Élie Cartan]] (1912, 1915/55),<ref name="ReferenceA"/><ref group=R>Cartan (1912), p. 23</ref> [[Henri Poincaré]] (1912/21)<ref group=R>Poincaré (1912/21), p. 145</ref> and others.
+
+=== {{anchor|Herglotz1}} Herglotz (1909/10) – Möbius transformation ===
+
+Following [[#Klein2|Klein (1889–1897) and Fricke & Klein (1897)]] concerning the Cayley absolute, hyperbolic motion and its transformation, [[Gustav Herglotz]] (1909/10) classified the one-parameter Lorentz transformations as loxodromic, hyperbolic, parabolic and elliptic. The general case (on the left) equivalent to Lorentz transformation ({{equationNote|6a}}) and the hyperbolic case (on the right) equivalent to Lorentz transformation ({{equationNote|3d}}) or squeeze mapping ({{equationNote|9d}}) are as follows:<ref group=R>Herglotz (1909/10), pp. 404-408</ref>
+
+:<math>\left.\begin{matrix}z_{1}^{2}+z_{2}^{2}+z_{3}^{2}-z_{4}^{2}=0\\
+z_{1}=x,\ z_{2}=y,\ z_{3}=z,\ z_{4}=t\\
+Z=\frac{z_{1}+iz_{2}}{z_{4}-z_{3}}=\frac{x+iy}{t-z},\ Z'=\frac{x'+iy'}{t'-z'}\\
+Z=\frac{\alpha Z'+\beta}{\gamma Z'+\delta}
+\end{matrix}\right|\begin{matrix}Z=Z'e^{\vartheta}\\
+\begin{align}x & =x', & t-z & =(t'-z')e^{\vartheta}\\
+y & =y', & t+z & =(t'+z')e^{-\vartheta}
+\end{align}
+\end{matrix}</math>
+
+==={{anchor|Varicak}} Varićak (1910) – Hyperbolic functions===
+
+Following [[#Sommerfeld|Sommerfeld (1909)]], hyperbolic functions were used by [[Vladimir Varićak]] in several papers starting from 1910, who represented the equations of special relativity on the basis of [[hyperbolic geometry]] in terms of Weierstrass coordinates. For instance, by setting ''l=ct'' and ''v/c=tanh(u)'' with ''u'' as rapidity he wrote the Lorentz transformation in agreement with ({{equationNote|3b}}):<ref group=R name=var1>Varićak (1910), p. 93</ref>
+
+:<math>\begin{align}l' & =-x\operatorname{sh}u+l\operatorname{ch}u,\\
+x' & =x\operatorname{ch}u-l\operatorname{sh}u,\\
+y' & =y,\quad z'=z,\\
+\operatorname{ch}u & =\frac{1}{\sqrt{1-\left(\frac{v}{c}\right)^{2}}}
+\end{align}
+</math>
+
+and showed the relation of rapidity to the [[Gudermannian function]] and the [[angle of parallelism]]:<ref group=R name=var1 />
+
+:<math>\frac{v}{c}=\operatorname{th}u=\operatorname{tg}\psi=\sin\operatorname{gd}(u)=\cos\Pi(u)</math>
+
+He also related the velocity addition to the [[hyperbolic law of cosines]]:<ref group=R>Varićak (1910), p. 94</ref>
+
+:<math>\begin{matrix}\operatorname{ch}{u}=\operatorname{ch}{u_{1}}\operatorname ch{u_{2}}+\operatorname{sh}{u_{1}}\operatorname{sh}{u_{2}}\cos\alpha\\
+\operatorname{ch}{u_{i}}=\frac{1}{\sqrt{1-\left(\frac{v_{i}}{c}\right)^{2}}},\ \operatorname{sh}{u_{i}}=\frac{v_{i}}{\sqrt{1-\left(\frac{v_{i}}{c}\right)^{2}}}\\
+v=\sqrt{v_{1}^{2}+v_{2}^{2}-\left(\frac{v_{1}v_{2}}{c}\right)^{2}}\ \left(a=\frac{\pi}{2}\right)
+\end{matrix}</math>
+
+Subsequently, other authors such as [[E. T. Whittaker]] (1910) or [[Alfred Robb]] (1911, who coined the name rapidity) used similar expressions, which are still used in modern textbooks.<ref name=rind />
+
+=== {{anchor|Ignatowski}} Ignatowski (1910) ===
+
+While earlier derivations and formulations of the Lorentz transformation relied from the outset on optics, electrodynamics, or the invariance of the speed of light, [[Vladimir Ignatowski]] (1910) showed that it is possible to use the principle of relativity (and related [[Group theory|group theoretical]] principles) alone, in order to derive the following transformation between two inertial frames:<ref group=R>Ignatowski (1910), pp. 973–974</ref><ref group=R>Ignatowski (1910/11), p. 13</ref>
+
+:<math>\begin{align}dx' & =p\ dx-pq\ dt\\
+dt' & =-pqn\ dx+p\ dt\\
+p & =\frac{1}{\sqrt{1-q^{2}n}}
+\end{align}
+</math>
+
+The variable ''n'' can be seen as a space-time constant whose value has to be determined by experiment or taken from a known physical law such as electrodynamics. For that purpose, Ignatowski used the above-mentioned Heaviside ellipsoid representing a contraction of electrostatic fields by ''x''/γ in the direction of motion. It can be seen that this is only consistent with Ignatowski's transformation when ''n=1/c''<sup>2</sup>, resulting in ''p''=γ and the Lorentz transformation ({{equationNote|4b}}). With ''n''=0, no length changes arise and the Galilean transformation follows. Ignatowski's method was further developed and improved by [[Philipp Frank]] and [[Hermann Rothe]] (1911, 1912),<ref group=R>Frank & Rothe (1911), pp. 825ff; (1912), p. 750ff.</ref> with various authors developing similar methods in subsequent years.<ref name=baccetti>Baccetti (2011), see references 1–25 therein.</ref>
+
+==={{anchor|Noether}} Noether (1910), Klein (1910) – Quaternions===
+
+[[Felix Klein]] (1908) described [[#Cayley3|Cayley's (1854)]] 4D quaternion multiplications as "Drehstreckungen" (orthogonal substitutions in terms of rotations leaving invariant a quadratic form up to a factor), and pointed out that the modern principle of relativity as provided by Minkowski is essentially only the consequent application of such Drehstreckungen, even though he didn't provide details.<ref group=R>Klein (1908), p. 165</ref>
+
+In an appendix to Klein's and Sommerfeld's "Theory of the top" (1910), [[Fritz Noether]] showed how to formulate hyperbolic rotations using biquaternions with <math>\omega=\sqrt{-1}</math>, which he also related to the speed of light by setting ω<sup>2</sup>=-''c''<sup>2</sup>. He concluded that this is the principal ingredient for a rational representation of the group of Lorentz transformations equivalent to ({{equationNote|7a}}):<ref group=R>Noether (1910), pp. 939–943</ref>
+
+:<math>\begin{matrix}V=\frac{Q_{1}vQ_{2}}{T_{1}T_{2}}\\
+\hline X^{2}+Y^{2}+Z^{2}+\omega^{2}S^{2}=x^{2}+y^{2}+z^{2}+\omega^{2}s^{2}\\
+\hline \begin{align}V & =Xi+Yj+Zk+\omega S\\
+v & =xi+yj+zk+\omega s\\
+Q_{1} & =(+Ai+Bj+Ck+D)+\omega(A'i+B'j+C'k+D')\\
+Q_{2} & =(-Ai-Bj-Ck+D)+\omega(A'i+B'j+C'k-D')\\
+T_{1}T_{2} & =T_{1}^{2}=T_{2}^{2}=A^{2}+B^{2}+C^{2}+D^{2}+\omega^{2}\left(A^{\prime2}+B^{\prime2}+C^{\prime2}+D^{\prime2}\right)
+\end{align}
+\end{matrix}</math>
+
+Besides citing quaternion related standard works such as [[#Cayley3|Cayley (1854)]], Noether referred to the entries in Klein's encyclopedia by [[Eduard Study]] (1899) and the French version by [[Élie Cartan]] (1908).<ref>Cartan & Study (1908), sections 35–36</ref> Cartan's version contains a description of Study's [[dual number]]s, Clifford's biquaternions (including the choice <math>\omega=\sqrt{-1}</math> for hyperbolic geometry), and Clifford algebra, with references to [[#Stephanos|Stephanos (1883)]], [[#Buchheim|Buchheim (1884/85)]], [[#Vahlen|Vahlen (1901/02)]] and others.
+
+Citing Noether, Klein himself published in August 1910 the following quaternion substitutions forming the group of Lorentz transformations:<ref group=R>Klein (1910), p. 300</ref>
+
+:<math>\begin{matrix}\begin{align} & \left(i_{1}x'+i_{2}y'+i_{3}z'+ict'\right)\\
+ & \quad-\left(i_{1}x_{0}+i_{2}y_{0}+i_{3}z_{0}+ict_{0}\right)
+\end{align}
+=\frac{\left[\begin{align} & \left(i_{1}(A+iA')+i_{2}(B+iB')+i_{3}(C+iC')+i_{4}(D+iD')\right)\\
+ & \quad\cdot\left(i_{1}x+i_{2}y+i_{3}z+ict\right)\\
+ & \quad\quad\cdot\left(i_{1}(A-iA')+i_{2}(B-iB')+i_{3}(C-iC')-(D-iD')\right)
+\end{align}
+\right]}{\left(A^{\prime2}+B^{\prime2}+C^{\prime2}+D^{\prime2}\right)-\left(A^{2}+B^{2}+C^{2}+D^{2}\right)}\\
+\hline \text{where}\\
+AA'+BB'+CC'+DD'=0\\
+A^{2}+B^{2}+C^{2}+D^{2}>A^{\prime2}+B^{\prime2}+C^{\prime2}+D^{\prime2}
+\end{matrix}</math>
+
+or in March 1911<ref group=R>Klein (1911), pp. 602ff.</ref>
+
+:<math>\begin{matrix}g'=\frac{pg\pi}{M}\\
+\hline \begin{align}g & =\sqrt{-1}ct+ix+jy+kz\\
+g' & =\sqrt{-1}ct'+ix'+jy'+kz'\\
+p & =(D+\sqrt{-1}D')+i(A+\sqrt{-1}A')+j(B+\sqrt{-1}B')+k(C+\sqrt{-1}C')\\
+\pi & =(D-\sqrt{-1}D')-i(A-\sqrt{-1}A')-j(B-\sqrt{-1}B')-k(C-\sqrt{-1}C')\\
+M & =\left(A^{2}+B^{2}+C^{2}+D^{2}\right)-\left(A^{\prime2}+B^{\prime2}+C^{\prime2}+D^{\prime2}\right)\\
+ & AA'+BB'+CC'+DD'=0\\
+ & A^{2}+B^{2}+C^{2}+D^{2}>A^{\prime2}+B^{\prime2}+C^{\prime2}+D^{\prime2}
+\end{align}
+\end{matrix}</math>
+
+==={{anchor|Conway}} Conway (1911), Silberstein (1911) – Quaternions===
+
+[[Arthur W. Conway]] in February 1911 explicitly formulated quaternionic Lorentz transformations of various electromagnetic quantities in terms of velocity λ:<ref group=R>Conway (1911), p. 8</ref>
+
+:<math>\begin{matrix}\begin{align}\mathtt{D} & =\mathbf{a}^{-1}\mathtt{D}'\mathbf{a}^{-1}\\
+\mathtt{\sigma} & =\mathbf{a}\mathtt{\sigma}'\mathbf{a}^{-1}
+\end{align}
+\\
+e=\mathbf{a}^{-1}e'\mathbf{a}^{-1}\\
+\hline a=\left(1-hc^{-1}\lambda\right)^{\frac{1}{2}}\left(1+c^{-2}\lambda^{2}\right)^{-\frac{1}{4}}
+\end{matrix}</math>
+
+Also [[Ludwik Silberstein]] in November 1911<ref group=R>Silberstein (1911/12), p. 793</ref> as well as in 1914,<ref>Silberstein (1914), p. 156</ref> formulated the Lorentz transformation in terms of velocity ''v'':
+
+:<math>\begin{matrix}q'=QqQ\\
+\hline \begin{align}q & =\mathbf{r}+l=xi+yj+zk+\iota ct\\
+q & '=\mathbf{r}'+l'=x'i+y'j+z'k+\iota ct'\\
+Q & =\frac{1}{\sqrt{2}}\left(\sqrt{1+\gamma}+\mathrm{u}\sqrt{1-\gamma}\right)\\
+ & =\cos\alpha+\mathrm{u}\sin\alpha=e^{\alpha\mathrm{u}}\\
+ & \left\{ \gamma=\left(1-v^{2}/c^{2}\right)^{-1/2},\ 2\alpha=\operatorname{arctg}\ \left(\iota\frac{v}{c}\right)\right\} 
+\end{align}
+\end{matrix}</math>
+
+Silberstein cites [[#Cayley3|Cayley (1854, 1855)]] and Study's encyclopedia entry (in the extended French version of Cartan in 1908), as well as the appendix of Klein's and Sommerfeld's book.
+
+==={{anchor|Herglotz2}} Herglotz (1911), Silberstein (1911) – Vector transformation===
+
+{{Further|Lorentz transformation#Vector transformations}}
+
+[[Gustav Herglotz]] (1911)<ref group=R>Herglotz (1911), p. 497</ref> showed how to formulate the transformation equivalent to ({{equationNote|4c}}) in order to allow for arbitrary velocities and coordinates '''v'''=''(v<sub>x</sub>, v<sub>y</sub>, v<sub>z</sub>)'' and '''r'''=''(x, y, z)'':
+
+:<math>\begin{matrix}\text{original} & \text{modern}\\
+\hline \left.\begin{align}x^{0} & =x+\alpha u(ux+vy+wz)-\beta ut\\
+y^{0} & =y+\alpha v(ux+vy+wz)-\beta vt\\
+z^{0} & =z+\alpha w(ux+vy+wz)-\beta wt\\
+t^{0} & =-\beta(ux+vy+wz)+\beta t\\
+ & \alpha=\frac{1}{\sqrt{1-s^{2}}\left(1+\sqrt{1-s^{2}}\right)},\ \beta=\frac{1}{\sqrt{1-s^{2}}}
+\end{align}
+\right| & \begin{align}x' & =x+\alpha v_{x}\left(v_{x}x+v_{y}y+v_{z}z\right)-\gamma v_{x}t\\
+y' & =y+\alpha v_{y}\left(v_{x}x+v_{y}y+v_{z}z\right)-\gamma v_{y}t\\
+z' & =z+\alpha v_{z}\left(v_{x}x+v_{y}y+v_{z}z\right)-\gamma v_{z}t\\
+t' & =-\gamma\left(v_{x}x+v_{y}y+v_{z}z\right)+\gamma t\\
+ & \alpha=\frac{\gamma^{2}}{\gamma+1},\ \gamma=\frac{1}{\sqrt{1-v^{2}}}
+\end{align}
+\end{matrix}</math>
+
+This was simplified using vector notation by [[Ludwik Silberstein]] (1911 on the left, 1914 on the right):<ref group=R>Silberstein (1911/12), p. 792; (1914), p. 123</ref>
+
+:<math>\begin{array}{c|c}
+\begin{align}\mathbf{r}' & =\mathbf{r}+(\gamma-1)(\mathbf{ru})\mathbf{u}+i\beta\gamma lu\\
+l' & =\gamma\left[l-i\beta(\mathbf{ru})\right]
+\end{align}
+ & \begin{align}\mathbf{r}' & =\mathbf{r}+\left[\frac{\gamma-1}{v^{2}}(\mathbf{vr})-\gamma t\right]\mathbf{v}\\
+t' & =\gamma\left[t-\frac{1}{c^{2}}(\mathbf{vr})\right]
+\end{align}
+\end{array}</math>
+
+Equivalent formulas were also given by [[Wolfgang Pauli]] (1921),<ref>Pauli (1921), p. 555</ref> with [[Erwin Madelung]] (1922) providing the matrix form<ref>Madelung (1921), p. 207</ref>
+
+:<math>\begin{array}{c|c|c|c|c}
+ & x & y & z & t\\
+\hline x' & 1-\frac{v_{x}^{2}}{v^{2}}\left(1-\frac{1}{\sqrt{1-\beta^{2}}}\right) & -\frac{v_{x}v_{y}}{v^{2}}\left(1-\frac{1}{\sqrt{1-\beta^{2}}}\right) & -\frac{v_{x}v_{z}}{v^{2}}\left(1-\frac{1}{\sqrt{1-\beta^{2}}}\right) & \frac{-v_{x}}{\sqrt{1-\beta^{2}}}\\
+y' & -\frac{v_{x}v_{y}}{v^{2}}\left(1-\frac{1}{\sqrt{1-\beta^{2}}}\right) & 1-\frac{v_{y}^{2}}{v^{2}}\left(1-\frac{1}{\sqrt{1-\beta^{2}}}\right) & -\frac{v_{y}v_{z}}{v^{2}}\left(1-\frac{1}{\sqrt{1-\beta^{2}}}\right) & \frac{-v_{y}}{\sqrt{1-\beta^{2}}}\\
+z' & -\frac{v_{x}v_{z}}{v^{2}}\left(1-\frac{1}{\sqrt{1-\beta^{2}}}\right) & -\frac{v_{y}v_{z}}{v^{2}}\left(1-\frac{1}{\sqrt{1-\beta^{2}}}\right) & 1-\frac{v_{z}^{2}}{v^{2}}\left(1-\frac{1}{\sqrt{1-\beta^{2}}}\right) & \frac{-v_{z}}{\sqrt{1-\beta^{2}}}\\
+t' & \frac{-v_{x}}{c^{2}\sqrt{1-\beta^{2}}} & \frac{-v_{y}}{c^{2}\sqrt{1-\beta^{2}}} & \frac{-v_{z}}{c^{2}\sqrt{1-\beta^{2}}} & \frac{1}{\sqrt{1-\beta^{2}}}
+\end{array}</math>
+
+These formulas were called "general Lorentz transformation without rotation" by [[Christian Møller]] (1952),<ref>Møller (1952/55), pp. 41–43</ref> who in addition gave an even more general Lorentz transformation in which the Cartesian axes have different orientations, using a [[Three-dimensional rotation operator|rotation operator]] <math>\mathfrak{D}</math>. In this case, '''v′'''=''(v′<sub>x</sub>, v′<sub>y</sub>, v′<sub>z</sub>)'' is not equal to -'''v'''=''(-v<sub>x</sub>, -v<sub>y</sub>, -v<sub>z</sub>)'', but the relation <math>\mathbf{v}'=-\mathfrak{D}\mathbf{v}</math> holds instead, with the result
+
+:<math>\begin{array}{c}
+\begin{align}\mathbf{x}' & =\mathfrak{D}^{-1}\mathbf{x}-\mathbf{v}'\left\{ \left(\gamma-1\right)(\mathbf{x\cdot v})/v^{2}-\gamma t\right\} \\
+t' & =\gamma\left(t-(\mathbf{v}\cdot\mathbf{x})/c^{2}\right)
+\end{align}
+\end{array}</math>
+
+==={{anchor|Borel}} Borel (1913–14) – Cayley–Hermite parameter===
+
+Borel (1913) started by demonstrating Euclidean motions using Euler-Rodrigues parameter in three dimensions, and [[#Cayley|Cayley's (1846)]] parameter in four dimensions. Then he demonstrated the connection to indefinite quadratic forms expressing hyperbolic motions and Lorentz transformations. In three dimensions equivalent to ({{equationNote|5b}}):<ref group=R>Borel (1913/14), p. 39</ref>
+
+:<math>\begin{matrix}x^{2}+y^{2}-z^{2}-1=0\\
+\hline {\scriptstyle \begin{align}\delta a & =\lambda^{2}+\mu^{2}+\nu^{2}-\rho^{2}, & \delta b & =2(\lambda\mu+\nu\rho), & \delta c & =-2(\lambda\nu+\mu\rho),\\
+\delta a' & =2(\lambda\mu-\nu\rho), & \delta b' & =-\lambda^{2}+\mu^{2}+\nu^{2}-\rho^{2}, & \delta c' & =2(\lambda\rho-\mu\nu),\\
+\delta a'' & =2(\lambda\nu-\mu\rho), & \delta b'' & =2(\lambda\rho+\mu\nu), & \delta c'' & =-\left(\lambda^{2}+\mu^{2}+\nu^{2}+\rho^{2}\right),
+\end{align}
+}\\
+\left(\delta=\lambda^{2}+\mu^{2}-\rho^{2}-\nu^{2}\right)\\
+\lambda=\nu=0\rightarrow\text{Hyperbolic rotation}
+\end{matrix}</math>
+
+In four dimensions equivalent to ({{equationNote|5c}}):<ref group=R>Borel (1913/14), p. 41</ref>
+
+:<math>\begin{matrix}F=\left(x_{1}-x_{2}\right)^{2}+\left(y_{1}-y_{2}\right)^{2}+\left(z_{1}-z_{2}\right)^{2}-\left(t_{1}-t_{2}\right)^{2}\\
+\hline {\scriptstyle \begin{align} & \left(\mu^{2}+\nu^{2}-\alpha^{2}\right)\cos\varphi+\left(\lambda^{2}-\beta^{2}-\gamma^{2}\right)\operatorname{ch}{\theta} &  & -(\alpha\beta+\lambda\mu)(\cos\varphi-\operatorname{ch}{\theta})-\nu\sin\varphi-\gamma\operatorname{sh}{\theta}\\
+ & -(\alpha\beta+\lambda\mu)(\cos\varphi-\operatorname{ch}{\theta})-\nu\sin\varphi+\gamma\operatorname{sh}{\theta} &  & \left(\mu^{2}+\nu^{2}-\beta^{2}\right)\cos\varphi+\left(\mu^{2}-\alpha^{2}-\gamma^{2}\right)\operatorname{ch}{\theta}\\
+ & -(\alpha\gamma+\lambda\nu)(\cos\varphi-\operatorname{ch}{\theta})+\mu\sin\varphi-\beta\operatorname{sh}{\theta} &  & -(\beta\mu+\mu\nu)(\cos\varphi-\operatorname{ch}{\theta})+\lambda\sin\varphi+\alpha\operatorname{sh}{\theta}\\
+ & (\gamma\mu-\beta\nu)(\cos\varphi-\operatorname{ch}{\theta})+\alpha\sin\varphi-\lambda\operatorname{sh}{\theta} &  & -(\alpha\nu-\lambda\gamma)(\cos\varphi-\operatorname{ch}{\theta})+\beta\sin\varphi-\mu\operatorname{sh}{\theta}\\
+\\
+ & \quad-(\alpha\gamma+\lambda\nu)(\cos\varphi-\operatorname{ch}{\theta})+\mu\sin\varphi+\beta\operatorname{sh}{\theta} &  & \quad(\beta\nu-\mu\nu)(\cos\varphi-\operatorname{ch}{\theta})+\alpha\sin\varphi-\lambda\operatorname{sh}{\theta}\\
+ & \quad-(\beta\mu+\mu\nu)(\cos\varphi-\operatorname{ch}{\theta})-\lambda\sin\varphi-\alpha\operatorname{sh}{\theta} &  & \quad(\lambda\gamma-\alpha\nu)(\cos\varphi-\operatorname{ch}{\theta})+\beta\sin\varphi-\mu\operatorname{sh}{\theta}\\
+ & \quad\left(\lambda^{2}+\mu^{2}-\gamma^{2}\right)\cos\varphi+\left(\nu^{2}-\alpha^{2}-\beta^{2}\right)\operatorname{ch}{\theta} &  & \quad(\alpha\mu-\beta\lambda)(\cos\varphi-\operatorname{ch}{\theta})+\gamma\sin\varphi-\nu\operatorname{sh}{\theta}\\
+ & \quad(\beta\gamma-\alpha\mu)(\cos\varphi-\operatorname{ch}{\theta})+\gamma\sin\varphi-\nu\operatorname{sh}{\theta} &  & \quad-\left(\alpha^{2}+\beta^{2}+\gamma^{2}\right)\cos\varphi+\left(\lambda^{2}+\mu^{2}+\nu^{2}\right)\operatorname{ch}{\theta}
+\end{align}
+}\\
+\left(\alpha^{2}+\beta^{2}+\gamma^{2}-\lambda^{2}-\mu^{2}-\nu^{2}=-1\right)
+\end{matrix}</math>
+
+==={{anchor|Gruner}} Gruner (1921) – Trigonometric Lorentz boosts===
+
+In order to simplify the graphical representation of Minkowski space, [[Paul Gruner]] (1921) (with the aid of Josef Sauter) developed what is now called [[Loedel diagram]]s, using the following relations:<ref group=R>Gruner (1921a),</ref>
+
+:<math>\begin{matrix}v=\alpha\cdot c;\quad\beta=\frac{1}{\sqrt{1-\alpha^{2}}}\\
+\sin\varphi=\alpha;\quad\beta=\frac{1}{\cos\varphi};\quad\alpha\beta=\tan\varphi\\
+\hline x'=\frac{x}{\cos\varphi}-t\cdot\tan\varphi,\quad t'=\frac{t}{\cos\varphi}-x\cdot\tan\varphi
+\end{matrix}</math>
+
+{{Equation box 1|border colour = black |background colour=white|equation=This is equivalent to Lorentz transformation ({{equationNote|8a}}) by the identity <math>\sec\varphi=\tfrac{1}{\cos\varphi}</math>}}
+
+In another paper Gruner used the alternative relations:<ref group=R>Gruner (1921b)</ref>
+
+:<math>\begin{matrix}\alpha=\frac{v}{c};\ \beta=\frac{1}{\sqrt{1-\alpha^{2}}};\\
+\cos\theta=\alpha=\frac{v}{c};\ \sin\theta=\frac{1}{\beta};\ \cot\theta=\alpha\cdot\beta\\
+\hline x'=\frac{x}{\sin\theta}-t\cdot\cot\theta,\quad t'=\frac{t}{\sin\theta}-x\cdot\cot\theta
+\end{matrix}</math>
+
+{{Equation box 1|border colour = black |background colour=white|equation=This is equivalent to Lorentz Lorentz boost ({{equationNote|8b}}) by the identity <math>\csc\theta=\tfrac{1}{\sin\theta}</math>.}}
+
+==Euler's gap==
+In pursuing the history in years before Lorentz enunciated his expressions, one looks to the essence of the concept. In mathematical terms, Lorentz transformations are [[squeeze mapping]]s, the linear transformations that turn a square into a rectangles of the same area. Before Euler, the squeezing was studied as [[Gregoire de Saint-Vincent|quadrature of the hyperbola]] and led to the [[hyperbolic sector|hyperbolic logarithm]]. In 1748 Euler issued his [[precalculus]] [[textbook]] where the number [[e (mathematical constant)|e]] is exploited for trigonometry in the [[unit circle]]. The first volume of [[Introduction to the Analysis of the Infinite]] had no diagrams, allowing teachers and students to draw their own illustrations.
+
+There is a gap in Euler's text where Lorentz transformations arise. A feature of [[natural logarithm]] is its interpretation as area in [[hyperbolic sector]]s. In relativity the classical concept of [[velocity]] is replaced with [[rapidity]], a [[hyperbolic angle]] concept built on hyperbolic sectors. A Lorentz transformation is a [[hyperbolic rotation]] which preserves differences of rapidity, just as the [[circular sector]] area is preserved with a circular rotation. Euler's gap is the lack of hyperbolic angle and [[hyperbolic function]]s, later developed by [[Johann H. Lambert]]. Euler described some [[transcendental function]]s: exponentiation and [[circular function]]s. He used the exponential series <math>\sum_0^{\infty} x^n /n! .</math> With the [[imaginary unit]] i<sup>2</sup> = – 1, and splitting the series into even and odd terms, he obtained
+:<math>e^{ix} = \sum_0^{\infty} (ix)^{2n}/(2n)! \ + \ \sum_0^{\infty} (ix)^{2n+1}/(2n + 1)! =</math>
+:<math>= \sum_0^{\infty} (-1)^n x^{2n} / 2n! + i \sum_0^{\infty} (-1)^n x^{2n+1}/(2n+1)! \ = \ \cos x + i \sin x .</math>
+This development misses the alternative:
+:<math>e^x = \cosh x + \sinh x</math> (even and odd terms), and
+:<math>e^{jx} = \cosh x + j \sinh x \quad (j^2 = +1) </math> which parametrizes the [[unit hyperbola]].
+Here Euler could have noted [[split-complex number]]s along with [[complex number]]s.
+
+For physics, one space dimension is insufficient. But to extend split-complex arithmetic to four dimensions leads to [[hyperbolic quaternion]]s, and opens the door to [[abstract algebra]]'s 
+[https://en.wikibooks.org/wiki/Abstract_Algebra/Hypercomplex_numbers hypercomplex numbers]. Reviewing the expressions of Lorentz and Einstein, one observes that the [[Lorentz factor]] is an [[algebraic function]] of velocity. For readers uncomfortable with transcendental functions cosh and sinh, algebraic functions may be more to their liking.
+
+== See also ==
+
+*[[History of special relativity]]
+
+==References==
+===Historical mathematical sources===
+{{Wikiversity-inline|History of Topics in Special Relativity/mathsource}}
+
+===Historical relativity sources===
+
+{{Reflist|3|group=R}}
+
+*{{Cite book | author=Abraham, M.| year=1905 | chapter=[[s:de:Elektromagnetische Theorie der Strahlung (1905)|§ 42. Die Lichtzeit in einem gleichförmig bewegten System]]|title= Theorie der Elektrizität: Elektromagnetische Theorie der Strahlung | publisher=Teubner | location=Leipzig}}
+*{{Cite journal|author=Bateman, Harry|year=1910|orig-year=1909|title=The Transformation of the Electrodynamical Equations |journal=Proceedings of the London Mathematical Society|volume=8|pages=223–264|doi=10.1112/plms/s2-8.1.223|title-link=s:en:The Transformation of the Electrodynamical Equations}}
+*{{Cite journal|author=Bateman, Harry|year=1912|orig-year=1910|title=Some geometrical theorems connected with Laplace's equation and the equation of wave motion |journal=American Journal of Mathematics|volume=34|issue=3|doi=10.2307/2370223|pages=325–360|url=https://archive.org/details/jstor-2370223|jstor=2370223}}
+*{{Cite book|author=Borel, Émile |year=1914|title=Introduction Geometrique à quelques Théories Physiques|location=Paris|url=http://ebooks.library.cornell.edu/cgi/t/text/text-idx?c=math;idno=04710001}}
+*{{Cite journal |author=Brill, J.|year=1925 |journal=Proceedings of the Cambridge Philosophical Society|title= Note on the Lorentz group|pages=630|volume=22|issue=5 |doi=10.1017/S030500410000949X|bibcode=1925PCPS...22..630B}}
+*{{Cite book |author=Bucherer, A. H. |year=1904 |title=Mathematische Einführung in die Elektronentheorie |publisher=Teubner |location=Leipzig |url=https://archive.org/details/mathematischeei02buchgoog}}
+*{{Citation |author=Bucherer, A. H. |year=1908 |title=Messungen an Becquerelstrahlen. Die experimentelle Bestätigung der Lorentz-Einsteinschen Theorie. (Measurements of Becquerel rays. The Experimental Confirmation of the Lorentz-Einstein Theory) |journal=Physikalische Zeitschrift |volume=9 |issue=22 |pages=758–762}}. For Minkowski's and Voigt's statements see p.&nbsp;762.
+*{{Cite journal|author=Cartan, Élie|year=1912|journal=Société de Mathématique the France – Comptes Rendus des Séances|title=Sur les groupes de transformation de contact et la Cinématique nouvelle|pages=23|url=https://archive.org/stream/bulletinsocit40soci#page/422/mode/2up}}
+*{{Citation |author=Cohn, Emil |year=1904a |title=Zur Elektrodynamik bewegter Systeme I |trans-title=[[s:Translation:On the Electrodynamics of Moving Systems I|On the Electrodynamics of Moving Systems I]] |journal= Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften |volume=1904/2 |issue=40 |pages =1294–1303|url=https://archive.org/details/sitzungsberichte1904deut}}
+*{{Citation |author=Cohn, Emil |year=1904b |title=Zur Elektrodynamik bewegter Systeme II |trans-title=[[s:Translation:On the Electrodynamics of Moving Systems II|On the Electrodynamics of Moving Systems II]] |journal= Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften |volume=1904/2 |issue=43 |pages =1404–1416|url=https://archive.org/details/sitzungsberichte1904deut}} 
+*{{Cite journal|author=Conway, A. W.|year=1911|title=On the application of quaternions to some recent developments of electrical theory|journal=Proceedings of the Royal Irish Academy, Section A|volume=29|pages=1–9|url= https://archive.org/download/proceedingsofro29roya}}
+*{{Cite journal|author=Cunningham, Ebenezer|year=1910|orig-year=1909|title=The principle of Relativity in Electrodynamics and an Extension Thereof|journal=Proceedings of the London Mathematical Society |volume=8|pages=77–98|doi=10.1112/plms/s2-8.1.77|title-link=s:en:The principle of Relativity in Electrodynamics and an Extension Thereof}}
+*{{Citation |author=Einstein, Albert |year=1905 |title=Zur Elektrodynamik bewegter Körper |journal=Annalen der Physik |volume=322 |issue=10 |pages=891–921 |url=http://www.physik.uni-augsburg.de/annalen/history/einstein-papers/1905_17_891-921.pdf |doi=10.1002/andp.19053221004|bibcode = 1905AnP...322..891E }}. See also: [http://www.fourmilab.ch/etexts/einstein/specrel/ English translation].
+*{{Cite journal|author1=Frank, Philipp |author2=Rothe, Hermann|year=1911|title=Über die Transformation der Raum-Zeitkoordinaten von ruhenden auf bewegte Systeme|journal=Annalen der Physik|volume=339|issue=5|pages=825–855|url=http://gallica.bnf.fr/ark:/12148/bpt6k15337j/f845.table|doi=10.1002/andp.19113390502|bibcode = 1911AnP...339..825F }}
+*{{Cite journal|author1=Frank, Philipp |author2=Rothe, Hermann|title=Zur Herleitung der Lorentztransformation|journal=Physikalische Zeitschrift|volume=13|year=1912|pages=750–753}}
+*{{Citation |author=Gans, Richard |year=1905 |title=H. A. Lorentz. Elektromagnetische Vorgänge |trans-title=[[s:Translation:H.A. Lorentz: Electromagnetic Phenomena|H.A. Lorentz: Electromagnetic Phenomena]] |journal= Beiblätter zu den Annalen der Physik |volume=29 |issue=4 |pages =168–170|url=https://archive.org/details/beibltterzudena18pockgoog}} 
+*{{cite journal|author1=Gruner, Paul |author2=Sauter, Josef |name-list-style=amp |title=Représentation géométrique élémentaire des formules de la théorie de la relativité|journal=Archives des sciences physiques et naturelles|series=5|volume=3|pages=295–296|year=1921a|url=http://gallica.bnf.fr/ark:/12148/bpt6k2991536/f295.image|trans-title=[[s:en:Translation:Elementary geometric representation of the formulas of the special theory of relativity|Elementary geometric representation of the formulas of the special theory of relativity]]}}
+*{{cite journal|author=Gruner, Paul|title=Eine elementare geometrische Darstellung der Transformationsformeln der speziellen Relativitätstheorie|journal=Physikalische Zeitschrift|volume=22|pages=384–385|year=1921b|trans-title=[[s:Translation:An elementary geometrical representation of the transformation formulas of the special theory of relativity|An elementary geometrical representation of the transformation formulas of the special theory of relativity]]}}
+*{{Citation |author=Heaviside, Oliver |year=1889 |title=On the Electromagnetic Effects due to the Motion of Electrification through a Dielectric |journal=Philosophical Magazine |series=5 |volume=27 |issue=167 |pages=324–339 |doi=10.1080/14786448908628362 |url=https://zenodo.org/record/1431195/files/article.pdf }}
+*{{Citation|author=Herglotz, Gustav|year=1910|orig-year=1909|title=Über den vom Standpunkt des Relativitätsprinzips aus als starr zu bezeichnenden Körper|trans-title=Wikisource translation: [[s:Translation:On bodies that are to be designated as "rigid"|On bodies that are to be designated as "rigid" from the standpoint of the relativity principle]]|journal=Annalen der Physik|volume=336|issue=2 |pages=393–415|doi=10.1002/andp.19103360208|bibcode = 1910AnP...336..393H}}
+*{{Cite journal|author=Herglotz, G.|year=1911|title=Über die Mechanik des deformierbaren Körpers vom Standpunkte der Relativitätstheorie|journal=Annalen der Physik|volume=341|issue=13|pages=493–533|doi=10.1002/andp.19113411303|url=http://gallica.bnf.fr/ark:/12148/bpt6k153397.image.f509|bibcode=1911AnP...341..493H}}; English translation by David Delphenich: [http://www.neo-classical-physics.info/uploads/3/0/6/5/3065888/herglotz_-_rel._cont._mech..pdf On the mechanics of deformable bodies from the standpoint of relativity theory].
+*{{Cite journal|author=Ignatowsky, W. v.|title=Einige allgemeine Bemerkungen über das Relativitätsprinzip|journal=Physikalische Zeitschrift|volume=11|year=1910|pages=972–976|title-link=s:de:Einige allgemeine Bemerkungen über das Relativitätsprinzip}}
+*{{Cite journal|author=Ignatowski, W. v.|title=Das Relativitätsprinzip|journal=Archiv der Mathematik und Physik|volume=18|year=1911|orig-year=1910|pages=17–40|title-link=s:de:Das Relativitätsprinzip (Ignatowski)}}
+*{{Cite journal|author=Ignatowski, W. v.|title=Eine Bemerkung zu meiner Arbeit: "Einige allgemeine Bemerkungen zum Relativitätsprinzip"|journal=Physikalische Zeitschrift|volume=12|year=1911|pages=779|title-link=s:de:Eine Bemerkung zu meiner Arbeit: "Einige allgemeine Bemerkungen zum Relativitätsprinzip"}}
+*{{Cite book|author=Klein, F.|editor=Hellinger, E.|year=1908|title=Elementarmethematik vom höheren Standpunkte aus. Teil I. Vorlesung gehalten während des Wintersemesters 1907-08|publisher=Teubner|location=Leipzig|url=https://archive.org/details/elementarmathem00kleigoog}}
+*{{Cite book|author=Klein, Felix|year=1921|orig-year=1910|journal=Gesammelte Mathematische Abhandlungen |title=Über die geometrischen Grundlagen der Lorentzgruppe|volume=1|pages=533–552|doi=10.1007/978-3-642-51960-4_31|title-link=s:de:Über die geometrischen Grundlagen der Lorentzgruppe|isbn=978-3-642-51898-0}}
+*{{Cite book|author=Klein, F. |author2=Sommerfeld A.|editor=Noether, Fr.|year=1910|title=Über die Theorie des Kreisels. Heft IV|location=Leipzig|publisher=Teuber|url=https://archive.org/details/fkleinundasommer019696mbp}}
+*{{Cite book|author=Klein, F.|editor=Hellinger, E.|year=1911|title=Elementarmethematik vom höheren Standpunkte aus. Teil I (Second Edition). Vorlesung gehalten während des Wintersemesters 1907-08|publisher=Teubner|location=Leipzig|hdl=2027/mdp.39015068187817}}
+*{{Citation |author=Larmor, Joseph |year=1897 |title=On a Dynamical Theory of the Electric and Luminiferous Medium, Part 3, Relations with material media |journal=Philosophical Transactions of the Royal Society |volume=190 |pages=205–300 |doi=10.1098/rsta.1897.0020|bibcode = 1897RSPTA.190..205L |title-link=s:Dynamical Theory of the Electric and Luminiferous Medium III |doi-access=free }}
+*{{Citation |author=Larmor, Joseph |year=1929 |orig-year=1897|title=Mathematical and Physical Papers: Volume II |chapter=On a Dynamical Theory of the Electric and Luminiferous Medium. Part 3: Relations with material media|pages=2–132|publisher=Cambridge University Press|isbn=978-1-107-53640-1}} (Reprint of Larmor (1897) with new annotations by Larmor.)
+*{{Citation |author=Larmor, Joseph |year=1900 |title=Aether and Matter |publisher=Cambridge University Press|title-link=s:Aether and Matter }}
+*{{Cite journal|author=Larmor, Joseph|title=On the intensity of the natural radiation from moving bodies and its mechanical reaction|journal=Philosophical Magazine|year=1904a|volume=7|issue=41|pages=[https://archive.org/details/londonedinburgh671904lond/page/578 578]–586|url=https://archive.org/details/londonedinburgh671904lond|doi=10.1080/14786440409463149}}
+*{{Cite journal|author=Larmor, Joseph|title=On the ascertained Absence of Effects of Motion through the Aether, in relation to the Constitution of Matter, and on the FitzGerald-Lorentz Hypothesis|journal=Philosophical Magazine|volume=7|issue=42|year=1904b|pages=621–625|doi=10.1080/14786440409463156|title-link=s:en:Absence of Effects of Motion through the Aether}}
+*{{Citation |author=Lorentz, Hendrik Antoon |year=1892a |title=La Théorie electromagnétique de Maxwell et son application aux corps mouvants |journal=Archives Néerlandaises des Sciences Exactes et Naturelles |volume=25 |pages=363–552 |url=https://archive.org/details/lathorielectrom00loregoog}}
+*{{Citation |last=Lorentz |first=Hendrik Antoon |year=1892b |title=De relatieve beweging van de aarde en den aether |trans-title=[[s:Translation:The Relative Motion of the Earth and the Aether|The Relative Motion of the Earth and the Aether]] |journal=Zittingsverlag Akad. V. Wet. |pages=74–79 |volume=1}}
+*{{Citation |author=Lorentz, Hendrik Antoon |year=1895 |title=Versuch einer Theorie der electrischen und optischen Erscheinungen in bewegten Körpern |trans-title=[[s:Translation:Attempt of a Theory of Electrical and Optical Phenomena in Moving Bodies|Attempt of a Theory of Electrical and Optical Phenomena in Moving Bodies]] |location=Leiden |publisher=E.J. Brill|title-link=s:de:Versuch einer Theorie der electrischen und optischen Erscheinungen in bewegten Körpern }}
+*{{Citation |author=Lorentz, Hendrik Antoon |year=1899 |title=Simplified Theory of Electrical and Optical Phenomena in Moving Systems |journal=Proceedings of the Royal Netherlands Academy of Arts and Sciences |volume=1 |pages=427–442|title-link=s:Simplified Theory of Electrical and Optical Phenomena in Moving Systems |bibcode=1898KNAB....1..427L }}
+*{{Citation |author=Lorentz, Hendrik Antoon |year=1904 |title=Electromagnetic phenomena in a system moving with any velocity smaller than that of light |journal=Proceedings of the Royal Netherlands Academy of Arts and Sciences |volume=6 |pages=809–831|title-link=s:Electromagnetic phenomena |bibcode=1903KNAB....6..809L }}
+*{{Citation |author=Lorentz, Hendrik Antoon |year=1916|orig-year=1915|title=The theory of electrons and its applications to the phenomena of light and radiant heat |url=https://archive.org/details/electronstheory00lorerich |place=Leipzig & Berlin |publisher=B.G. Teubner}}
+*{{Citation |doi=10.1002/andp.19153521505 |author=Minkowski, Hermann |orig-year=1907|year=1915 |title=Das Relativitätsprinzip |journal=Annalen der Physik |volume=352 |issue=15 |pages=927–938|bibcode = 1915AnP...352..927M |title-link=s:de:Das Relativitätsprinzip (Minkowski) }}
+*{{Citation |author=Minkowski, Hermann |year=1908 |orig-year=1907 |title=Die Grundgleichungen für die elektromagnetischen Vorgänge in bewegten Körpern |trans-title=[[s:Translation:The Fundamental Equations for Electromagnetic Processes in Moving Bodies|The Fundamental Equations for Electromagnetic Processes in Moving Bodies]] |journal=Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse |pages=53–111|title-link=s:Die Grundgleichungen für die elektromagnetischen Vorgänge in bewegten Körpern }}
+*{{Citation |author=Minkowski, Hermann |year=1909 |orig-year=1908 |title=Space and Time |journal=Physikalische Zeitschrift |volume=10 |pages=75–88|title-link=s:Space and Time }}
+*{{Cite journal|author=Müller, Hans Robert|author-link=Hans Robert Müller|year=1948|journal=Monatshefte für Mathematik und Physik|title=Zyklographische Betrachtung der Kinematik der speziellen Relativitätstheorie|volume=52|pages=337–353|url=http://www.digizeitschriften.de/dms/resolveppn/?PID=GDZPPN00246988X}}
+*{{Citation |author=Poincaré, Henri |year=1900 |title=La théorie de Lorentz et le principe de réaction |journal=Archives Néerlandaises des Sciences Exactes et Naturelles |volume=5 |pages=252–278|title-link=s:fr:La théorie de Lorentz et le principe de réaction }}. See also the [http://www.physicsinsights.org/poincare-1900.pdf English translation].
+*{{Citation |author=Poincaré, Henri |year=1906 |orig-year=1904 |chapter=[[s:The Principles of Mathematical Physics|The Principles of Mathematical Physics]] |title=Congress of arts and science, universal exposition, St. Louis, 1904 |volume=1 |pages=604–622 |publisher=Houghton, Mifflin and Company |location=Boston and New York}}
+*{{Citation |author=Poincaré, Henri |year=1905 |title=Sur la dynamique de l'électron |trans-title=[[s:Translation:On the Dynamics of the Electron (June)|On the Dynamics of the Electron]] |journal=Comptes Rendus |volume=140 |pages=1504–1508|title-link=s:fr:Sur la dynamique de l'électron (juin) }}
+*{{Citation |author=Poincaré, Henri |year=1906 |orig-year=1905 |title=Sur la dynamique de l'électron |trans-title=[[s:Translation:On the Dynamics of the Electron (July)|On the Dynamics of the Electron]] |journal=Rendiconti del Circolo Matematico di Palermo |volume=21 |pages=129–176 |doi=10.1007/BF03013466|bibcode=1906RCMP...21..129P |title-link=s:fr:Sur la dynamique de l'électron (juillet) |hdl=2027/uiug.30112063899089 |hdl-access=free }}
+*{{Cite journal|author=Poincaré, Henri|year=1921|orig-year=1912|title=Rapport sur les travaux de M. Cartan (fait à la Faculté des sciences de l'Université de Paris)|journal=Acta Mathematica|volume=38|issue=1|pages=137–145|doi=10.1007/bf02392064 |url=https://archive.org/stream/actamathematica38upps#page/n153/mode/2up|doi-access=free}} Written by Poincaré in 1912, printed in Acta Mathematica in 1914 though belatedly published in 1921.
+*{{Citation |author=Searle, George Frederick Charles |year=1897 |title=On the Steady Motion of an Electrified Ellipsoid |journal=Philosophical Magazine |series=5 |volume=44 |issue=269 |pages=329–341 |doi=10.1080/14786449708621072|title-link=s:On the Steady Motion of an Electrified Ellipsoid }}
+*{{Citation | author=Silberstein, L. | year=1912 | orig-year=1911|title=Quaternionic form of relativity| journal=The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science | volume =23 | issue=137|pages =790–809|url=https://archive.org/details/londonedinburg6231912lond | doi=10.1080/14786440508637276}}
+*{{Citation|author=Sommerfeld, A.|year=1909|title=Über die Zusammensetzung der Geschwindigkeiten in der Relativtheorie|trans-title=Wikisource translation: [[s:Translation:On the Composition of Velocities in the Theory of Relativity|On the Composition of Velocities in the Theory of Relativity]]|journal=Verh. Der DPG|volume=21|pages=577–582}}
+*{{Citation |author=Thomson, Joseph John |year=1889 |title=On the Magnetic Effects produced by Motion in the Electric Field |journal=Philosophical Magazine |volume=28 |series=5 |issue=170 |pages=1–14 |doi=10.1080/14786448908619821|title-link=s:On the Magnetic Effects produced by Motion in the Electric Field }}
+*{{Citation | author=Varićak, V. | year=1910 | title=[[s:de:Anwendung der Lobatschefskijschen Geometrie in der Relativtheorie|Anwendung der Lobatschefskijschen Geometrie in der Relativtheorie]] | journal = Physikalische Zeitschrift| volume =11| pages =93–6|trans-title=[[s:Translation:Application of Lobachevskian Geometry in the Theory of Relativity|Application of Lobachevskian Geometry in the Theory of Relativity]]}}
+*{{Citation | author=Varičak, V. | year=1912 | title=Über die nichteuklidische Interpretation der Relativtheorie |trans-title=[[s:Translation:On the Non-Euclidean Interpretation of the Theory of Relativity|On the Non-Euclidean Interpretation of the Theory of Relativity]] | journal=Jahresbericht der Deutschen Mathematiker-Vereinigung | volume =21 | pages =103–127| title-link=s:de:Über die nichteuklidische Interpretation der Relativtheorie }}
+*{{Citation |author=Voigt, Woldemar |year=1887 |title=Ueber das Doppler'sche Princip |trans-title=[[s:Translation:On the Principle of Doppler|On the Principle of Doppler]] |journal=Nachrichten von der Königl. Gesellschaft der Wissenschaften und der Georg-Augusts-Universität zu Göttingen |issue=2 |pages=41–51|title-link=s:de:Ueber das Doppler'sche Princip }}
+*{{Cite journal |last1=Wien |first1=Wilhelm |year=1904 |title=Zur Elektronentheorie |journal=[[Physikalische Zeitschrift]] |volume=5 |issue=14 |pages=393–395 |title-link=s:de:Zur Elektronentheorie }}
+
+===Secondary sources===
+
+{{Reflist|3}}
+
+*{{Cite journal|author1=Baccetti, Valentina |author2=Tate, Kyle |author3=Visser, Matt |year=2012|title=Inertial frames without the relativity principle|journal=Journal of High Energy Physics|volume=2012 |issue=5 |pages=119|doi=10.1007/JHEP05(2012)119 |arxiv=1112.1466|bibcode = 2012JHEP...05..119B }}
+*{{Cite book|author=Bachmann, P.|year=1898|title=Die Arithmetik der quadratischen Formen. Erste Abtheilung|location=Leipzig|url=https://gallica.bnf.fr/ark:/12148/bpt6k994828|publisher=B.G. Teubner}}
+*{{Cite book|author=Bachmann, P.|year=1923|title=Die Arithmetik der quadratischen Formen. Zweite Abtheilung|location=Leipzig|url=https://archive.org/details/arithdquadrachen02bachrich|publisher=B.G. Teubner}}
+*{{Cite journal|author=Barnett, J. H. |year=2004|journal=Mathematics Magazine|volume=77|issue=1|title=Enter, stage center: The early drama of the hyperbolic functions|pages=15–30|url=https://www.maa.org/sites/default/files/pdf/cms_upload/321922717729.pdf.bannered.pdf|doi=10.1080/0025570x.2004.11953223}}
+*Barrett, J.F. (2006), The hyperbolic theory of relativity, {{arxiv|1102.0462}}
+*{{Cite book|author=Bôcher, Maxim|year=1907|title=Introduction to higher algebra|chapter=Quadratic forms|publisher=Macmillan|location=New York|chapter-url=https://archive.org/details/cu31924002936536}}
+*{{Cite book|title=Relativity and Common Sense|last=Bondi|first=Hermann|publisher=Doubleday & Company|year=1964|location=New York|url=https://archive.org/details/RelativityCommonSense}}
+*{{Cite book|author=Bonola, R.|title=Non-Euclidean geometry: A critical and historical study of its development|year=1912|location=Chicago|publisher=Open Court|url=https://archive.org/details/noneuclideangeom00bono}}
+*{{Citation |author=Brown, Harvey R. |title= The origins of length contraction: I. The FitzGerald-Lorentz deformation hypothesis |journal=American Journal of Physics |year=2001 |volume=69 |issue=10 |pages=1044–1054 |url=http://philsci-archive.pitt.edu/archive/00000218/ |doi=10.1119/1.1379733|arxiv = gr-qc/0104032 |bibcode = 2001AmJPh..69.1044B}} See also "Michelson, FitzGerald and Lorentz: the origins of relativity revisited", [http://philsci-archive.pitt.edu/987/ Online].
+*{{Cite journal |author=Cartan, É. |author2=Study, E. |year=1908 |title=Nombres complexes|journal= Encyclopédie des Sciences Mathématiques Pures et Appliquées|volume=1.1|pages=328–468|url=http://gallica.bnf.fr/ark:/12148/bpt6k2440f/f173.image}}
+*{{Cite journal|author=Cartan, É. |author2=Fano, G.|year=1955|orig-year=1915|journal=Encyclopédie des Sciences Mathématiques Pures et Appliquées|volume=3.1|title=La théorie des groupes continus et la géométrie|pages=39–43|url=http://gallica.bnf.fr/ark:/12148/bpt6k29100t/f194.image}} (Only pages 1–21 were published in 1915, the entire article including pp.&nbsp;39–43 concerning the groups of Laguerre and Lorentz was posthumously published in 1955 in Cartan's collected papers, and was reprinted in the Encyclopédie in 1991.)
+*{{Cite book|author=Coolidge, Julian|author-link=Julian Coolidge|year=1916|title=A treatise on the circle and the sphere|publisher=Clarendon Press|location=Oxford|title-link=A Treatise on the Circle and the Sphere}}
+*{{Citation |author=Darrigol, Olivier |year=2000 |title=Electrodynamics from Ampère to Einstein |isbn=978-0-19-850594-5 |publisher=Oxford Univ. Press |location=Oxford |url-access=registration |url=https://archive.org/details/electrodynamicsf0000darr }}
+*{{Citation |author=Darrigol, Olivier |title=The Genesis of the theory of relativity |year=2005 |journal=Séminaire Poincaré |volume=1 |pages=1–22 |url=http://www.bourbaphy.fr/darrigol2.pdf |doi=10.1007/3-7643-7436-5_1|isbn=978-3-7643-7435-8 |bibcode=2006eins.book....1D }}
+*{{Cite book|author=Dickson, L.E.|year=1923|title=History of the theory of numbers, Volume III, Quadratic and higher forms|location=Washington|url=https://archive.org/details/historyoftheoryo03dickuoft|publisher=Washington Carnegie Institution of Washington}}
+*{{Cite journal |author=Fjelstad, P.|year=1986 |journal=American Journal of Physics |title= Extending special relativity via the perplex numbers|pages=416–422|volume=54|issue=5 |doi=10.1119/1.14605|bibcode=1986AmJPh..54..416g}}
+*{{Cite journal |author=Girard, P. R.|year=1984 |journal=European Journal of Physics |title= The quaternion group and modern physics|pages=25–32|volume=5|issue=1|doi=10.1088/0143-0807/5/1/007|bibcode=1984EJPh....5...25G}}
+*{{Cite journal|author=Gray, J.|title=Non-euclidean geometry—A re-interpretation|year=1979|journal=Historia Mathematica|volume=6|issue=3|pages=236–258|doi=10.1016/0315-0860(79)90124-1|doi-access=free}}
+*{{Cite book|author=Gray, J. |author2=Scott W.|year=1997|title=Trois suppléments sur la découverte des fonctions fuchsiennes|chapter=Introduction|pages=7–28|location=Berlin|chapter-url=http://scottwalter.free.fr/papers/3supintro.pdf|url=http://henripoincarepapers.univ-lorraine.fr/chp/hp-pdf/hp1997tsa.pdf }}
+*{{Cite book|author=Hawkins, Thomas|year=2013|title=The Mathematics of Frobenius in Context: A Journey Through 18th to 20th Century Mathematics|chapter=The Cayley–Hermite problem and matrix algebra|publisher=Springer|isbn=978-1461463337}}
+*{{Citation |author=Janssen, Michel |year=1995 |title=A Comparison between Lorentz's Ether Theory and Special Relativity in the Light of the Experiments of Trouton and Noble (Thesis) |url=http://www.mpiwg-berlin.mpg.de/litserv/diss/janssen_diss/}}
+*{{Cite journal|author=Kastrup, H. A.|title=On the advancements of conformal transformations and their associated symmetries in geometry and theoretical physics|journal=Annalen der Physik|volume=520|issue=9–10|year=2008|pages=631–690|arxiv=0808.2730|doi=10.1002/andp.200810324|bibcode = 2008AnP...520..631K }}
+*{{Citation |author=Katzir, Shaul |year=2005 |journal=Physics in Perspective |title=Poincaré's Relativistic Physics: Its Origins and Nature |pages=268–292 |volume=7 |doi=10.1007/s00016-004-0234-y |issue=3|bibcode = 2005PhP.....7..268K }}
+*{{Cite book|author=Klein, F.|year=1897|orig-year=1896|title=The Mathematical Theory of the Top|publisher=Scribner|location=New York|url=https://archive.org/details/mathematicaltheo00kleiuoft}}
+*{{Cite book|author1=Klein, Felix |author2=Blaschke, Wilhelm |year=1926|title=Vorlesungen über höhere Geometrie|publisher=Springer|location=Berlin|url=http://resolver.sub.uni-goettingen.de/purl?PPN373601816}}
+*{{Cite book|author=von Laue, M.|year=1921|title=Die Relativitätstheorie, Band 1|edition=fourth edition of "Das Relativitätsprinzip"|publisher=Vieweg|url=https://archive.org/details/dierelativitts01laueuoft}}; First edition 1911, second expanded edition 1913, third expanded edition 1919.
+*{{Cite journal |author=Lorente, M.|year=2003 |journal=Symmetries in Science |title= Representations of classical groups on the lattice and its application to the field theory on discrete space-time|pages=437–454|volume=VI |arxiv=hep-lat/0312042|bibcode=2003hep.lat..12042L}}
+*{{Citation |author=Macrossan, M. N. |year=1986 |journal=The British Journal for the Philosophy of Science |title=A Note on Relativity Before Einstein |pages=232–234 |volume=37 |issue=2 |url=http://espace.library.uq.edu.au/view/UQ:9560 |doi=10.1093/bjps/37.2.232|citeseerx=10.1.1.679.5898 }}
+*{{Cite book|author=Madelung, E.|title=Die mathematischen Hilfsmittel des Physikers|year=1922|publisher=Springer|location=Berlin|url=https://archive.org/details/diemathematisch00madegoog}}
+*{{Cite journal|author=Majerník, V.|year=1986|journal=American Journal of Physics|title=Representation of relativistic quantities by trigonometric functions|volume=54|issue=6|pages=536–538|doi=10.1119/1.14557}}
+*{{Cite journal |author=Meyer, W.F.|year=1899 |journal=Encyclopädie der Mathematischen Wissenschaften|title= Invariantentheorie|pages=322–455|volume=1.1 |url=http://resolver.sub.uni-goettingen.de/purl?PPN360504671}}
+*{{Citation |author=Miller, Arthur I. |year=1981 |title=Albert Einstein's special theory of relativity. Emergence (1905) and early interpretation (1905–1911) |place=Reading |publisher=Addison–Wesley |isbn=978-0-201-04679-3 |url-access=registration |url=https://archive.org/details/alberteinsteinss0000mill }}
+*{{Cite book|author=Møller, C.|title=The theory of relativity|year=1955|orig-year=1952|publisher=Oxford Clarendon Press|url=https://archive.org/details/theoryofrelativi029229mbp}}
+*{{Cite journal|author=Müller, Emil|author-link=Emil Müller (mathematician)|year=1910|journal=Encyclopädie der Mathematischen Wissenschaften|volume=3.1.1|title=Die verschiedenen Koordinatensysteme|pages=596–770|url=http://resolver.sub.uni-goettingen.de/purl?PPN360609635}}
+*{{Cite journal |author=Musen, P. |year=1970|title=A Discussion of Hill's Method of Secular Perturbations...|journal=Celestial Mechanics|volume=2|issue=1 |pages=41–59|bibcode=1970CeMec...2...41M|doi=10.1007/BF01230449|hdl=2060/19700018328|hdl-access=free}} 
+*{{Cite book|author=Naimark,M. A. |year=2014|orig-year=1964|title=Linear Representations of the Lorentz Group|location=Oxford|isbn=978-1483184982 }}
+*{{Cite journal|author=Pacheco, R.|year=2008|journal=Geometriae Dedicata|volume=146|issue=1|title=Bianchi–Bäcklund transforms and dressing actions, revisited.|pages=85–99|doi=10.1007/s10711-009-9427-5|arxiv=0808.4138}}
+*{{Citation |author=Pauli, Wolfgang|author-link=Wolfgang Pauli|year=1921 |journal=Encyclopädie der Mathematischen Wissenschaften|title= Die Relativitätstheorie|pages=539–776|volume=5|issue=2 |url=http://resolver.sub.uni-goettingen.de/purl?PPN360709672}} <br />In English: {{cite book|author=Pauli, W.|title=Theory of Relativity|journal=Fundamental Theories of Physics|volume=165|publisher=Dover Publications|year=1981|orig-year=1921|isbn=978-0-486-64152-2}}
+*{{Citation |author=Pais, Abraham |year=1982 |title= [[Subtle is the Lord: The Science and the Life of Albert Einstein]] |place = New York |publisher=Oxford University Press |isbn=978-0-19-520438-4}}
+*{{Citation |author=Penrose, R. |author2=Rindler W. |year=1984 |title=Spinors and Space-Time: Volume 1, Two-Spinor Calculus and Relativistic Fields |publisher=Cambridge University Press|isbn=978-0521337076}}
+*{{Citation |author=Plummer, H. C. |year=1910 |title=On the Theory of Aberration and the Principle of Relativity |journal=Monthly Notices of the Royal Astronomical Society|volume=70|pages=252–266|url=http://adsabs.harvard.edu/full/1910MNRAS..70..252P |doi=10.1093/mnras/70.3.252|doi-access=free |bibcode=1910MNRAS..70..252P}}
+*{{Cite book|author=Ratcliffe, J. G.|year=1994|title=Foundations of Hyperbolic Manifolds|chapter=Hyperbolic geometry|pages=[https://archive.org/details/foundationsofhyp0000ratc/page/56 56–104]|location=New York|isbn=978-0387943480|url=https://archive.org/details/foundationsofhyp0000ratc/page/56}}
+*{{Cite journal|author=Reynolds, W. F.|year=1993|title=Hyperbolic geometry on a hyperboloid|journal=The American Mathematical Monthly|volume=100|issue=5|pages=442–455|jstor=2324297|doi=10.1080/00029890.1993.11990430}}
+*{{Cite book|author=Rindler, W.|year=2013|orig-year=1969|title=Essential Relativity: Special, General, and Cosmological|publisher=Springer|isbn=978-1475711356}}
+*{{Cite book|author=Robinson, E.A.|year=1990|title=Einstein's relativity in metaphor and mathematics|publisher=Prentice Hall|isbn=9780132464970}}
+*{{Cite book|author=Rosenfeld, B.A.|year=1988|title=A History of Non-Euclidean Geometry: Evolution of the Concept of a Geometric Space|publisher=Springer|location=New York|isbn=978-1441986801}}
+*{{Cite journal|author=Rothe, H.|year=1916|journal=Encyclopädie der Mathematischen Wissenschaften|volume=3.1.1|title=Systeme geometrischer Analyse|pages=1282–1425|url=http://resolver.sub.uni-goettingen.de/purl?PPN360609767}}
+*{{Cite book|author=Schottenloher, M.|year=2008|title=A Mathematical Introduction to Conformal Field Theory|publisher=Springer|isbn=978-3540706908}}
+*{{Cite book|author=Silberstein, L.|year=1914|title=The Theory of Relativity|publisher=Macmillan|location=London|url=https://archive.org/details/theoryofrelativi00silbrich}}
+*{{Cite journal |author=Sobczyk, G.|year=1995 |journal=The College Mathematics Journal |title= The Hyperbolic Number Plane|pages=268–280|volume=26 |issue=4|doi=10.2307/2687027|jstor=2687027 }}
+*{{Cite book|author=Sommerville, D. M. L. Y. |year=1911|title=Bibliography of non-Euclidean geometry|location=London|url=https://archive.org/details/bibliographyofno00sommuoft|publisher=London Pub. by Harrison for the University of St. Andrews}}
+*{{Citation |author=Synge, J. L. |year=1956 |title=Relativity: The Special Theory |publisher=North Holland}}
+*{{Cite journal |author=Synge, J.L.|year=1972 |journal=Communications of the Dublin Institute for Advanced Studies |title= Quaternions, Lorentz transformations, and the Conway–Dirac–Eddington matrices|volume=21|url=http://repository.dias.ie/id/eprint/128}}
+*{{Cite journal|author=Terng, C. L.|author2=Uhlenbeck, K.|name-list-style=amp|year=2000|journal=Notices of AMS|volume=47|issue=1|title=Geometry of solitons|pages=17–25|url=https://www.ams.org/journals/notices/200001/fea-terng.pdf}}
+*{{Cite journal |author=Touma, J. R. |author2=Tremaine, S. |author3=Kazandjian, M. V. |name-list-style=amp |year=2009|title=Gauss's method for secular dynamics, softened|journal=Monthly Notices of the Royal Astronomical Society|volume=394|issue=2 |pages=1085–1108|arxiv=0811.2812|doi=10.1111/j.1365-2966.2009.14409.x}} 
+*{{Cite journal |author=Volk, O.|year=1976 |journal=Celestial mechanics |title= Miscellanea from the history of celestial mechanics|volume=14|issue=3|pages=365–382|url=http://adsabs.harvard.edu/full/1976CeMec..14..365V |doi=10.1007/bf01228523 |bibcode=1976CeMec..14..365V}}
+*{{Cite book |author=Walter, Scott A.|year=1999a |editor1=H. Goenner |editor2=J. Renn |editor3=J. Ritter |editor4=T. Sauer |chapter= Minkowski, mathematicians, and the mathematical theory of relativity |title=The Expanding Worlds of General Relativity|journal=Einstein Studies |volume=7 |pages=45–86 |location=Boston|publisher=Birkhäuser |chapter-url=http://scottwalter.free.fr/papers/1999-mmm-walter.html|isbn=978-0-8176-4060-6}}
+*{{Cite book|author=Walter, Scott A.|year=1999b|editor=J. Gray|chapter=The non-Euclidean style of Minkowskian relativity|title=The Symbolic Universe: Geometry and Physics|pages=91–127|location=Oxford|publisher=Oxford University Press|chapter-url=http://scottwalter.free.fr/papers/1999-symbuniv-walter.html}}
+*{{Cite book|author=Walter, Scott A.|chapter=Figures of light in the early history of relativity|title=Beyond Einstein|journal=Einstein Studies|volume=14|pages=3–50|editor=Rowe D. |editor2=Sauer T. |editor3=Walter S.|location=New York|publisher=Birkhäuser|year=2018|chapter-url=http://scottwalter.free.fr/papers/2018-be-walter.html|doi=10.1007/978-1-4939-7708-6_1|isbn=978-1-4939-7708-6}}
+
+== External links ==
+
+*Mathpages: [http://mathpages.com/rr/s1-04/1-04.htm 1.4 The Relativity of Light]
+
+{{DEFAULTSORT:Lorentz transformations}}
+[[Category:Equations]]
+[[Category:History of ideas]]
+[[Category:History of physics]]
+[[Category:Hendrik Lorentz]]
+[[Category:Historical treatment of quaternions]]

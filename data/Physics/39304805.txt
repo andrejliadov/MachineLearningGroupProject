@@ -1,0 +1,299 @@
+{{For|current versions of Maxwell's equations|Maxwell's equations}}
+{{electromagnetism}}
+
+[[File:James Clerk Maxwell.png|thumb|right|James Clerk Maxwell]]
+In the beginning of the 19th century, many experimental and theoretical works had been accomplished in the understanding of electromagnetics. In the 1780s, [[Coulomb's law]] of [[electrostatics]] had been established. In 1825, Ampère published his [[Ampère's law]]. [[Michael Faraday]] discovered the [[electromagnetic induction]] through his experiments and conceptually, he emphasized the ''lines of forces'' in this [[electromagnetic induction]]. In 1834, [[Lenz's law|Lenz]] solved the problem of the direction of the induction, and [[Franz Ernst Neumann|Neumann]] wrote down the equation to calculate the induced force by change of magnetic flux. However, these experimental results and rules were not well organized and sometimes confusing to scientists. A comprehensive summary of the electrodynamic principles was in urgent need at that time.
+
+This work was done by [[James C. Maxwell]] through a series of papers published from the 1850s through to the 1870s. In the 1850s, Maxwell was working at the [[University of Cambridge]] where he was impressed by Faraday's ''lines of forces'' concept. In 1856, he published his 1st paper in electromagnetism: ''On Faraday's Lines of Force''.<ref>{{cite journal
+| last       = Maxwell
+| first      = James C.
+| date       = 1855–56
+| title      = On Faraday's Lines of Force
+| journal    = Camb. Phil. Soc. Trans. 
+| volume     = 
+| issue      = 
+| pages      = 27–83
+| doi        = 
+}}</ref> 
+He tried to use the analogy of incompressable fluid flow to model the magnetic lines of forces. Later, Maxwell moved to [[King's College London]] where he actually came into regular contact with [[Faraday]]. From 1861-1862, Maxwell published a series of 4 papers under the title of ''[[On Physical Lines of Force]]''.<ref>{{cite wikisource|title=On Physical Lines of Force|last=|first=|year=|publisher=|page=|wspage=|scan=}}</ref>
+<ref>{{cite journal
+| last       = Maxwell
+| first      = James C.
+| date       = 1861
+| title      = On physical lines of force. Part 1. The theory of molecular vortices applied to magnetic phenomena
+| url        = 
+| journal    = Phil. Mag.
+| volume     = XXI
+| issue      = 
+| pages      = 161–175
+| doi        = 
+}}
+</ref> 
+<ref>{{cite journal
+| last       = Maxwell
+| first      = James C.
+| date       = 1861
+| title      = On physical lines of force. Part 2. The theory of electrical vortices applied to electric currents
+| url        = 
+| journal    = Phil. Mag.
+| volume     = XXI
+| issue      = 
+| pages      = 281–291
+| doi        = 
+}}
+</ref> 
+<ref>{{cite journal
+| last       = Maxwell
+| first      = James C.
+| date       = 1862
+| title      = On physical lines of force. Part 3. The theory of electrical vortices applied to statical electricity
+| url        = 
+| journal    = Phil. Mag.
+| volume     = XXIII
+| issue      = 
+| pages      = 12–24
+| doi        = 
+}}
+</ref> 
+<ref>{{cite journal
+| last       = Maxwell
+| first      = James C.
+| date       = 1862
+| title      = On physical lines of force. Part 4. The theory of electrical vortices applied to the action of magnetism on polarized light
+| url        = 
+| journal    = Phil. Mag.
+| volume     = XXIII
+| issue      = 
+| pages      = 85–95
+| doi        = 
+}}
+</ref> 
+In these papers, he used mechanical models, such as rotating vortex tubes, to model the electromagnetic field.  He also modeled the vacuum as a kind of insulating elastic medium to account for the stress of the magnetic lines of force given by Faraday. These works had already laid the basis of the formulation of the Maxwell's equations. Moreover, the 1862 paper already derived the [[speed of light]] ''c'' from the expression of the velocity of the electromagnetic wave in relation to the vacuum constants. The final form of Maxwell's equations was published in 1865 ''[[A Dynamical Theory of the Electromagnetic Field]]'',
+<ref>{{cite journal
+| last       = Maxwell
+| first      = James C.
+| date       = 1865
+| title      = A Dynamical Theory of the Electromagnetic Field
+| journal    = Philosophical Transactions of the Royal Society of London
+| volume     = 155
+| issue      = 
+| pages      = 459–512
+| doi        = 10.1098/rstl.1865.0008
+| s2cid = 186207827
+}}
+</ref>  in which the theory is formulated in strictly mathematical form. 
+In 1873, Maxwell published ''[[A Treatise on Electricity and Magnetism]]'' as a summary of his work on the electromagnetism. In summary, Maxwell's equations successfully unified theories of light and electromagnetism, which is one of the great unifications in physics.<ref>
+{{cite book
+ |last= Feynman
+ |first= Richard
+ |date=
+ |title=The Feynman Lectures on Physics, Vol. II
+ |url= https://www.feynmanlectures.caltech.edu/II_18.html
+ |location=
+ |publisher= 
+ |page= Chapter 18
+ |isbn=
+}}</ref>
+
+Later, [[Oliver Heaviside]] studied Maxwell's ''[[A Treatise on Electricity and Magnetism]]'' and employed [[vector calculus]] to synthesize Maxwell's over 20 equations into the four recognizable ones which modern physicists use. Maxwell's equations also inspired [[Albert Einstein]] in developing the [[Special relativity|theory of special relativity]].<ref>James Clerk Maxwell." Famous Scientists. famousscientists.org. 01 Jul. 2014. Web. 2/17/2020 
+<www.famousscientists.org/james-clerk-maxwell/>.</ref>
+
+The experimental proof of the Maxwell's equations was demonstrated by [[Heinrich Hertz]] in a series of experiments in the 1890s.<ref>
+{{cite book
+ |last= Hertz
+ |first= Heinrich
+ |date= 1893
+ |title=Electric waves
+ |location=
+ |publisher= Macmillan
+ |page= 
+ |isbn=
+}}</ref> 
+After that, the Maxwell's equations were fully accepted by scientists.
+
+==Relationships among electricity, magnetism, and the speed of light==
+
+The relationships amongst electricity, magnetism, and the speed of light can be summarized by the modern equation:
+:<math>c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}} \ .</math>
+The left-hand side is the speed of light and the right-hand side is a quantity related to the constants that appear in the equations governing electricity and magnetism. Although the right-hand side has units of velocity, it can be inferred from measurements of electric and magnetic forces, which involve no physical velocities. Therefore, establishing this relationship provided convincing evidence that light is an electromagnetic phenomenon.
+
+The discovery of this relationship started in 1855, when [[Wilhelm Eduard Weber]] and [[Rudolf Kohlrausch]] determined that there was a quantity related to electricity and magnetism, "the ratio of the absolute electromagnetic unit of charge to the absolute electrostatic unit of charge" (in modern language, the value <math>1/\sqrt{\mu_0 \varepsilon_0}</math>), and determined that it should have units of velocity. They then measured this ratio by an experiment which involved charging and discharging a [[Leyden jar]] and measuring the magnetic force from the discharge current, and found a value {{val|3.107|e=8|u=m/s}},<ref name=Keithley>[https://books.google.com/books?id=uwgNAtqSHuQC&pg=PA115 The story of electrical and magnetic measurements: from 500 B.C. to the 1940s, by Joseph F. Keithley, p115]</ref> remarkably close to the speed of light, which had recently been measured at {{val|3.14|e=8|u=m/s}} by [[Hippolyte Fizeau]] in 1848 and at {{val|2.98|e=8|ul=m/s}} by [[Léon Foucault]] in 1850.<ref name=Keithley/> However, Weber and Kohlrausch did not make the connection to the speed of light.<ref name=Keithley/> Towards the end of 1861 while working on part III of his paper ''[[On Physical Lines of Force]]'', Maxwell travelled from Scotland to London and looked up Weber and Kohlrausch's results. He converted them into a format which was compatible with his own writings, and in doing so he established the connection to the speed of light and concluded that light is a form of electromagnetic radiation.<ref>"The Dictionary of Scientific Biography", by Charles Coulston Gillispie</ref>
+
+==The term ''Maxwell's equations''==
+The four modern Maxwell's equations can be found individually throughout his 1861 paper, derived theoretically using a molecular vortex model of [[Michael Faraday]]'s "lines of force" and in conjunction with the experimental result of Weber and Kohlrausch. But it wasn't until 1884 that [[Oliver Heaviside]], concurrently with similar work by [[Josiah Willard Gibbs]] and [[Heinrich Hertz]], grouped the twenty equations together into a set of only four, via vector notation.<ref>Bruce J. Hunt (1991) [[The Maxwellians]]</ref> This group of four equations was known variously as the Hertz–Heaviside equations and the Maxwell–Hertz equations, but are now universally known as ''Maxwell's equations''.<ref>{{cite book|title=Oliver Heaviside: the life, work, and times of an electrical genius of the Victorian age|author=[[Paul J. Nahin]]|date=13 November 2002|publisher=JHU Press|isbn = 978-0-8018-6909-9|pages = 108–112}}</ref> Heaviside's equations, which are taught in textbooks and universities as Maxwell's equations are not exactly the same as the ones due to Maxwell, and, in fact, the latter are more easily forced into the mold of quantum physics.<ref>Terence W. Barrett (2008) ''The Topological Foundations of Electromagnetism'', [[World Scientific]]</ref> This very subtle and paradoxical sounding situation can perhaps be most easily understood in terms of the similar situation that exists with respect to Newton's second law of motion. In textbooks and in classrooms the law F = ma is attributed to Newton, but his second law was in fact F = p', where p' is the time derivative of the momentum p. This seems a trivial enough fact until you realize that F = p' remains true in the context of [[Special relativity]]. The equation F = p' is clearly visible in a glass case in the [[Wren Library]] of [[Trinity College, Cambridge]], where Newton's manuscript is open to the relevant page.
+
+Maxwell's contribution to science in producing these equations lies in the correction he made to [[Ampère's circuital law]] in his 1861 paper ''[[On Physical Lines of Force]]''. He added the [[displacement current]] term to Ampère's circuital law and this enabled him to derive the [[electromagnetic wave equation]] in his later 1865 paper ''[[A Dynamical Theory of the Electromagnetic Field]]'' and to demonstrate the fact that light is an [[electromagnetic wave]]. This fact was later confirmed experimentally by [[Heinrich Hertz]] in 1887. The physicist [[Richard Feynman]] predicted that, "From a long view of the history of mankind, seen from, say, ten thousand years from now, there can be little doubt that the most significant event of the 19th century will be judged as Maxwell's discovery of the laws of electrodynamics. The American Civil War will pale into provincial insignificance in comparison with this important scientific event of the same decade."<ref>Crease, Robert (2008) ''[https://books.google.com/books?id=IU04tZsVjXkC&lpg=PA133&dq=%22Civil%20War%20will%20pale%20into%20provincial%20insignificance%22&pg=PA133#v=onepage The Great Equations: Breakthroughs in Science from Pythagoras to Heisenberg]'', page 133</ref>
+
+The concept of fields was introduced by, among others, Faraday.  [[Albert Einstein]] wrote:
+{{quote|The precise formulation of the time-space laws was the work of Maxwell. Imagine his feelings when the differential equations he had formulated proved to him that electromagnetic fields spread in the form of polarized waves, and at the speed of light!  To few men in the world has such an experience been vouchsafed ... it took physicists some decades to grasp the full significance of Maxwell's discovery, so bold was the leap that his genius forced upon the conceptions of his fellow workers|(''Science'', May 24, 1940)}}
+
+Heaviside worked to eliminate the potentials ([[electric potential]] and [[magnetic vector potential|magnetic potential]]) that Maxwell had used as the central concepts in his equations;<ref name=nahin>but are now universally known as ''Maxwell's equations''. However, in 1940 Einstein referred to the equations as ''Maxwell's equations'' in "The Fundamentals of Theoretical Physics" published in the Washington periodical ''Science'', May 24, 1940.
+
+{{cite book
+ | title = Oliver Heaviside: the life, work, and times of an electrical genius of the Victorian age
+ | author = Paul J. Nahin
+ | author-link = Paul J. Nahin
+ | publisher = JHU Press
+ | isbn = 978-0-8018-6909-9
+ | pages = 108–112
+ | url = https://books.google.com/books?id=e9wEntQmA0IC&q=nahin+hertz-heaviside+maxwell-hertz&pg=PA111
+ | date = 2002-10-09
+}}</ref> this effort was somewhat controversial,<ref>
+{{cite journal
+ | journal = Electrical Engineer
+ | volume = 7
+ | author = Oliver J. Lodge
+ | title = Sketch of the Electrical Papers in Section A, at the Recent Bath Meeting of the British Association
+ | date = November 1888
+ | page = 535
+}}</ref> though it was understood by 1884 that the potentials must propagate at the speed of light like the fields, unlike the concept of instantaneous action-at-a-distance like the then conception of gravitational potential.<ref name=buchwald>
+{{cite book
+ | title = The creation of scientific effects: Heinrich Hertz and electric waves
+ | author = Jed Z. Buchwald
+ | publisher = University of Chicago Press
+ | isbn = 978-0-226-07888-5
+ | page = 194
+ | url = https://books.google.com/books?id=2bDEvvGT1EYC&q=maxwell+faraday+time-derivative+vector-potential&pg=PA194
+ | year = 1994
+}}</ref>
+
+==''On Physical Lines of Force''==
+{{Main|On Physical Lines of Force}}
+The four equations we use today appeared separately in Maxwell's 1861 paper, ''On Physical Lines of Force'':
+
+#Equation (56) in Maxwell's 1861 paper is [[Gauss's law for magnetism|∇ • '''B''' = 0]].
+#Equation (112) is [[Ampère's circuital law]], with Maxwell's addition of [[displacement current]]. This may be the most remarkable contribution of Maxwell's work, enabling him to derive the [[electromagnetic wave equation]] in his 1865 paper [[A Dynamical Theory of the Electromagnetic Field]], showing that light is an electromagnetic wave. This lent the equations their full significance with respect to understanding the nature of the phenomena he elucidated. (Kirchhoff derived the [[telegrapher's equations]] in 1857 without using [[displacement current]], but he did use Poisson's equation and the equation of continuity, which are the mathematical ingredients of the [[displacement current]]. Nevertheless, believing his equations to be applicable only inside an electric wire, he cannot be credited with the discovery that light is an electromagnetic wave).
+#Equation (115) is [[Gauss's law]].
+#Equation (54) expresses what [[Oliver Heaviside]] referred to as 'Faraday's law', which addresses the time-variant aspect of electromagnetic induction, but not the one induced by motion; Faraday's original flux law accounted for both.<ref>
+{{cite book
+ | title = Optical spectroscopies of electronic absorption
+ |author1=J. R. Lalanne |author2=F. Carmona |author3=L. Servant | publisher = World Scientific
+ | isbn = 978-981-02-3861-2
+ | page = 8
+ | url = https://books.google.com/books?id=7rWD-TdxKkMC&q=maxwell-faraday+derivative&pg=PA8
+ | date = November 1999
+}}</ref><ref>
+{{cite book
+ | title = Introduction to Electromagnetic Engineering
+ | author = Roger F. Harrington
+ | author-link= Roger F. Harrington
+ | publisher = Courier Dover Publications
+ | isbn = 978-0-486-43241-0
+ | pages = 49–56
+ | url = https://books.google.com/books?id=ZlC2EV8zvX8C&q=maxwell-faraday-equation+law-of-induction&pg=PR7
+ | date = 2003-10-17
+}}</ref> Maxwell deals with the motion-related aspect of electromagnetic induction, '''v''' × '''B''', in equation (77), which is the same as equation (D) in Maxwell's original equations as listed below. It is expressed today as the force law equation, '''F ''' = ''q''('''E''' + '''v''' × '''B'''), which sits adjacent to Maxwell's equations and bears the name [[Lorentz force]], even though Maxwell derived it when Lorentz was still a young boy.
+
+The difference between the '''B''' and the '''H''' vectors can be traced back to Maxwell's 1855 paper entitled ''On Faraday's Lines of Force'' which was read to the [[Cambridge Philosophical Society]]. The paper presented a simplified model of Faraday's work, and how the two phenomena were related. He reduced all of the current knowledge into a linked set of [[differential equation]]s.
+
+[[File:Molecular Vortex Model.svg|right|thumb|300px|Figure of Maxwell's molecular vortex model. For a uniform magnetic field, the field lines point outward from the display screen, as can be observed from the black dots in the middle of the hexagons. The vortex of each hexagonal molecule rotates counter-clockwise. The small green circles are clockwise rotating particles sandwiching between the molecular vortices.]]
+
+It is later clarified in his concept of a sea of molecular vortices that appears in his 1861 paper ''[[On Physical Lines of Force]]''. Within that context, '''H''' represented pure vorticity (spin), whereas '''B''' was a weighted vorticity that was weighted for the density of the vortex sea. Maxwell considered [[magnetic permeability]] ''µ'' to be a measure of the density of the vortex sea. Hence the relationship,
+
+#'''Magnetic induction current''' causes a magnetic current density '''B''' = μ '''H''' was essentially a rotational analogy to the linear electric current relationship,
+#'''Electric convection current''' '''J''' = ρ '''v''' where ρ is electric charge density. '''B''' was seen as a kind of magnetic current of vortices aligned in their axial planes, with '''H''' being the circumferential velocity of the vortices. With ''µ'' representing vortex density, it follows that the product of ''µ'' with vorticity '''H''' leads to the [[magnetic field]] denoted as '''B'''.
+
+The electric current equation can be viewed as a convective current of [[electric charge]] that involves linear motion. By analogy, the magnetic equation is an inductive current involving spin. There is no linear motion in the inductive current along the direction of the '''B''' vector. The magnetic inductive current represents lines of force. In particular, it represents lines of [[inverse-square law]] force.
+
+The extension of the above considerations confirms that where '''B''' is to '''H''', and where '''J''' is to ρ, then it necessarily follows from Gauss's law and from the equation of continuity of charge that '''E''' is to '''D'''. i.e. '''B''' parallels with '''E''', whereas '''H''' parallels with '''D'''.
+
+==''A Dynamical Theory of the Electromagnetic Field''==
+{{Main|A Dynamical Theory of the Electromagnetic Field}}
+
+In 1865 Maxwell published ''[[A Dynamical Theory of the Electromagnetic Field]]'' in which he showed that light was an electromagnetic phenomenon.
+Confusion over the term "Maxwell's equations" sometimes arises because it has been used for a set of eight equations that appeared in Part III of Maxwell's 1865 paper ''A Dynamical Theory of the Electromagnetic Field'', entitled "General Equations of the Electromagnetic Field",<ref>[http://upload.wikimedia.org/wikipedia/commons/1/19/A_Dynamical_Theory_of_the_Electromagnetic_Field.pdf page 480.]</ref> and this confusion is compounded by the writing of six of those eight equations as three separate equations (one for each of the Cartesian axes), resulting in twenty equations and twenty unknowns. (As noted above, this terminology is not common: Modern use of the term "Maxwell's equations" refer to the Heaviside restatements.)
+
+The eight original Maxwell's equations can be written in modern vector notation as follows:
+
+:{|class="wikitable" style="text-align: center;"
+|-
+!scope="col" width="250"|(A) The law of total currents
+|scope="col" width="250"|<math>\mathbf{J}_\mathrm{tot} = \mathbf{J} + \frac{\partial\mathbf{D}}{\partial t}</math>
+|-
+!(B) The equation of magnetic force
+|<math>\mu \mathbf{H} = \nabla \times \mathbf{A}</math>
+|-
+!(C) Ampère's circuital law
+|<math>\nabla \times \mathbf{H} = \mathbf{J}_\mathrm{tot}</math>
+|-
+!(D) Electromotive force created by convection, induction, and by static electricity. (This is in effect the [[Lorentz force]])
+|<math>\mathbf{E} = \mu \mathbf{v} \times \mathbf{H} - \frac{\partial\mathbf{A}}{\partial t}-\nabla \phi </math>
+|-
+!(E) The electric elasticity equation
+|<math>\mathbf{E} = \frac{1}{\varepsilon} \mathbf{D}</math>
+|-
+!(F) Ohm's law
+|<math>\mathbf{E} = \frac{1}{\sigma} \mathbf{J}</math>
+|-
+!(G) Gauss's law
+|<math>\nabla \cdot \mathbf{D} = \rho</math>
+|-
+!(H) Equation of continuity
+|<math>\nabla \cdot \mathbf{J} = -\frac{\partial\rho}{\partial t}</math>
+
+or
+
+<math>\nabla \cdot \mathbf{J}_\mathrm{tot} = 0</math>
+|-
+|}
+
+;Notation
+
+: '''H''' is the [[Effective magnetic field|magnetizing field]], which Maxwell called the ''magnetic intensity''.
+:'''J''' is the [[current density]] (with '''J'''<sub>tot</sub> being the total current including displacement current).<ref group="note">Here it is noted that a quite different quantity, the ''magnetic polarization'', μ<sub>0</sub>'''M''' by decision of an international [[IUPAP]] commission has been given the same name '''J'''. So for the electric current density, a name with small letters, '''j''' would be better. But even then the mathematicians would still use the large-letter name '''J''' for the corresponding current two-form (see below).</ref>
+: '''D''' is the [[electric displacement field|displacement field]] (called the ''electric displacement'' by Maxwell).
+: ρ is the [[free charge]] density (called the ''quantity of free electricity'' by Maxwell).
+: '''A''' is the [[magnetic vector potential|magnetic potential]] (called the ''angular impulse'' by Maxwell).
+: '''E''' is called the ''electromotive force'' by Maxwell. The term [[electromotive force]] is nowadays used for voltage, but it is clear from the context that Maxwell's meaning corresponded more to the modern term [[electric field]].
+: φ is the [[electric potential]] (which Maxwell also called ''electric potential'').
+: σ is the [[electrical conductivity]] (Maxwell called the inverse of conductivity the ''specific resistance'', what is now called the [[resistivity]]).
+
+Equation D, with the  μ'''v''' × '''H''' term, is effectively the [[Lorentz force]], similarly to equation (77) of his 1861 paper (see above).
+
+When Maxwell derives the [[electromagnetic wave equation]] in his 1865 paper, he uses equation D to cater for [[electromagnetic induction]] rather than [[Faraday's law of induction]] which is used in modern textbooks. (Faraday's law itself does not appear among his equations.) However, Maxwell drops the μ'''v''' × '''H''' term from equation D when he is deriving the [[electromagnetic wave equation]], as he considers the situation only from the rest frame.
+
+==''A Treatise on Electricity and Magnetism''==
+{{Main|A Treatise on Electricity and Magnetism}}
+{{Wikisourcelang|en|A Treatise on Electricity and Magnetism|''A Treatise on Electricity and Magnetism''}}
+
+In ''[[A Treatise on Electricity and Magnetism]]'', an 1873 [[treatise]] on [[electromagnetism]] written by [[James Clerk Maxwell]], eleven general equations of the electromagnetic field are listed and these include the eight that are listed in the 1865 paper.<ref>http://www.mathematik.tu-darmstadt.de/~bruhn/Original-MAXWELL.htm</ref>
+
+==Relativity==
+{{main|Maxwell's equations in curved spacetime}}
+{{see also|History of special relativity}}
+
+Maxwell's equations were an essential inspiration for Einstein's development of special relativity. Possibly the most important aspect was their denial of [[action at a distance|instantaneous action at a distance]]. Rather, according to them, forces are propagated at the velocity of light through the electromagnetic field.<ref name="Maxwell">{{cite book|last1=Flood|first1=Raymond|last2=McCartney|first2=Mark|last3=Whitaker|first3=Andrew|title=James Clerk Maxwell: Perspectives on his Life and Work|date=2014|publisher=Oxford University Press|location=Oxford|isbn=9780199664375|edition=1st}}</ref>{{rp|189}}
+
+Maxwell's original equations are based on the idea that light travels through a sea of molecular vortices known as the "[[luminiferous aether]]", and that the speed of light has to be respective to the reference frame of this aether. Measurements designed to measure the speed of the Earth through the aether conflicted with this notion, though.<ref group="note">Experiments like the [[Michelson–Morley experiment]] in 1887 showed that the "aether" moved at the same speed as Earth. While other experiments, such as measurements of the [[aberration of light]] from the [[star]]s, showed that the ether is moving relative to the Earth.</ref>
+
+A more theoretical approach was suggested by [[Hendrik Lorentz]] along with [[George FitzGerald]] and [[Joseph Larmor]]. Both Larmor (1897) and Lorentz (1899, 1904) derived the [[Lorentz transformation]] (so named by [[Henri Poincaré]]) as one under which Maxwell's equations were invariant. Poincaré (1900) analyzed the coordination of moving clocks by exchanging light signals. He also established the [[mathematical group]] property of the Lorentz transformation (Poincaré 1905). Sometimes this transformation is called the FitzGerald–Lorentz transformation or even the FitzGerald–Lorentz–Einstein transformation.
+
+[[Albert Einstein]] dismissed the notion of the aether as an unnecessary one, and he concluded that Maxwell's equations predicted the existence of a fixed speed of light, ''independent'' of the velocity of the observer. Hence, he used the Maxwell's equations as the starting point for his [[Special Theory of Relativity]]. In doing so, he established that the FitzGerald–Lorentz transformation is valid for all matter and space, and not just Maxwell's equations. Maxwell's equations played a key role in Einstein's groundbreaking scientific paper on [[special relativity]] (1905). For example, in the opening paragraph of his paper, he began his theory by noting that a description of an [[moving magnet and conductor problem|electric conductor moving with respect to a magnet]] must generate a consistent set of fields regardless of whether the force is calculated in the [[rest frame]] of the magnet or that of the conductor.<ref>
+{{cite web
+ |url=http://www.fourmilab.ch/etexts/einstein/specrel/www/
+ |title=On the Electrodynamics of Moving Bodies
+ |publisher=Fourmilab.ch
+ |date=
+ |accessdate=2008-10-19
+}}</ref>
+
+The [[general theory of relativity]] has also had a close relationship with Maxwell's equations. For example, [[Theodor Kaluza]] and [[Oskar Klein]] [[Kaluza–Klein theory|in the 1920s showed]] that Maxwell's equations could be derived by extending [[general relativity]] into five physical [[dimension]]s. This strategy of using additional dimensions to unify different forces remains an active area of research in [[physics]].
+
+==See also==
+
+* [[Classical electromagnetism and special relativity]]
+* [[History of electromagnetic theory]]
+* [[The Maxwellians]]
+
+==Notes==
+{{Reflist|group="note"|1}}
+
+==References==
+{{Reflist|2}}
+* Graham Turnbull [http://ethw.org/Maxwell's_Equations Maxwell's Equations] from [[Engineering and Technology History Wiki]]
+{{Physics-footer}}
+
+{{DEFAULTSORT:Maxwell's Equations}}
+[[Category:Electrodynamics]]
+[[Category:History of physics]]
+[[Category:Maxwell's equations|History]]

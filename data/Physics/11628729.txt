@@ -1,0 +1,20 @@
+The '''Berendsen thermostat'''<ref>{{cite journal | first=H. J. C. | last=Berendsen |author-link= Herman Berendsen | author2=Postma, J. P. M.| author3= van Gunsteren, W. F.| author4=DiNola, A.| author5= Haak, J. R. | journal=Journal of Chemical Physics | title=Molecular-Dynamics with Coupling to an External Bath | year=1984 | volume=81 | issue=8 | pages=3684–3690 | doi=10.1063/1.448118 |bibcode = 1984JChPh..81.3684B | hdl=11370/93b3d75f-03d3-4385-98b7-c5d1347f9bbc | url=https://pure.rug.nl/ws/files/64380902/1.448118.pdf }}</ref> is an algorithm to re-scale the velocities of particles in [[molecular dynamics]] simulations to control the simulation temperature.
+
+==Basic description==
+In this scheme, the system is weakly coupled to a [[heat bath]] with some temperature. The thermostat suppresses fluctuations of the [[kinetic energy]] of the system and therefore cannot produce trajectories consistent with the [[canonical ensemble]]. The temperature of the system is corrected such that the deviation exponentially decays with some time constant <math>\tau </math>.
+
+:<math>\frac{dT}{dt}=\frac{T_0-T}{\tau}</math>
+
+Though the thermostat does not generate a correct [[canonical ensemble]] (especially for small systems), for large systems on the order of hundreds or thousands of atoms/molecules, the approximation yields roughly correct results for most calculated properties.<ref>{{cite journal | first=T. | last=Morishita| journal=The Journal of Chemical Physics| title=Fluctuation formulas in molecular-dynamics simulations with the weak coupling heat bath | year=2000 | volume=113 | issue=8| pages=2976–2982| doi=10.1063/1.1287333 |bibcode = 2000JChPh.113.2976M }}</ref> The scheme is widely used due to the efficiency with which it relaxes a system to some target (bath) temperature. In many instances, systems are initially equilibrated using the Berendsen scheme, while properties are calculated using the widely known [[Nosé–Hoover thermostat]], which correctly generates trajectories consistent with a canonical ensemble. However, the Berendsen thermostat can result in the [[flying ice cube | flying ice cube effect]], an artifact which can be eliminated by using the more rigorous Bussi–Donadio–Parrinello<ref>{{Cite journal|last1=Bussi|first1=Giovanni|last2=Donadio|first2=Davide|last3=Parrinello|first3=Michele|date=2007-01-07|title=Canonical sampling through velocity rescaling|journal=The Journal of Chemical Physics|language=en|volume=126|issue=1|pages=014101|doi=10.1063/1.2408420|pmid=17212484|issn=0021-9606|arxiv=0803.4060|s2cid=23411901}}</ref> thermostat; for this reason, it has been recommended that usage of the Berendsen thermostat be discontinued in almost all cases except for replication of prior studies.<ref>{{cite journal | first=E. | last=Braun | author2=Moosavi, S. M.| author3= Smit, B.| journal=Journal of Chemical Theory and Computation | title=Anomalous Effects of Velocity Rescaling Algorithms: The Flying Ice Cube Effect Revisited | year=2018 | volume=14 | issue=10 | pages=5262–5272 | doi=10.1021/acs.jctc.8b00446| pmid=30075070 | arxiv=1805.02295 | s2cid=51910357 }}</ref>
+
+==See also==
+* [[Molecular mechanics]]
+* [[List of software for molecular mechanics modeling|Software for molecular mechanics modeling]]
+
+==References==
+<references/>
+
+[[Category:Molecular dynamics]]
+
+
+{{physics-stub}}

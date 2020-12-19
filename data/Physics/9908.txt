@@ -1,0 +1,572 @@
+{{about||the use of this in cosmology|Equation of state (cosmology)| the use of this concept in optimal control theory|Optimal control#General method}}
+{{short description|An equation describing the state of matter under a given set of physical conditions}}
+
+In [[physics]] and [[thermodynamics]], an '''equation of state''' is a [[thermodynamic equations|thermodynamic equation]] relating [[state variable]]s which describe the state of matter under a given set of physical conditions, such as [[pressure]], [[Volume (thermodynamics)|volume]], [[temperature]] ('''PVT'''), or [[internal energy]].<ref name="Perrot" >{{cite book | author=Perrot, Pierre | title=A to Z of Thermodynamics | publisher=Oxford University Press | year=1998 | isbn=978-0-19-856552-9}}</ref> Equations of state are useful in describing the properties of [[fluid]]s, mixtures of fluids, [[solid]]s, and the interior of [[star]]s.
+{{Thermodynamics|cTopic=[[Thermodynamic system|Systems]]}}
+
+==Overview==
+At present, there is no single equation of state that accurately predicts the properties of all substances under all conditions. An example of an equation of state correlates densities of gases and liquids to temperatures and pressures, known as the [[ideal gas law]], which is roughly accurate for weakly polar gases at low pressures and moderate temperatures. This equation becomes increasingly inaccurate at higher pressures and lower temperatures, and fails to predict condensation from a gas to a liquid.
+
+Another common use is in modeling the interior of stars, including [[neutron star]]s, dense matter ([[quark–gluon plasma]]s) and radiation fields. A related concept is the [[perfect fluid]] [[equation of state (cosmology)|equation of state used in cosmology]].
+
+Equations of state can also describe solids, including the transition of solids from one crystalline state to another.
+
+In a practical context, equations of state are instrumental for PVT calculations in [[process engineering]] problems, such as petroleum gas/liquid equilibrium calculations. A successful PVT model based on a fitted equation of state can be helpful to determine the state of the flow regime, the parameters for handling the [[reservoir fluids]], and pipe sizing.
+
+{{Anchor|lasers2016-01-29}}Measurements of equation-of-state parameters, especially at high pressures, can be made using lasers.<ref>{{cite journal|last1=Solem|first1=J. C.|last2=Veeser|first2=L.|year=1977|title=Exploratory laser-driven shock wave studies|journal=Los Alamos Scientific Laboratory Report LA-6997|volume=79|pages=14376|url=http://www.osti.gov/scitech/servlets/purl/5313279.pdf|bibcode=1977STIN...7914376S}}</ref><ref>{{cite journal|last1=Veeser|first1=L. R.|last2=Solem|first2=J. C.|year=1978|title=Studies of Laser-driven shock waves in aluminum|journal=Physical Review Letters|volume=40|issue=21|pages=1391|bibcode = 1978PhRvL..40.1391V |doi = 10.1103/PhysRevLett.40.1391 }}</ref><ref>{{cite journal|last1=Veeser|first1=L.|last2=Solem|first2=J. C.|last3=Lieber|first3=A.|year=1979|title=Impedance-match experiments using laser-driven shock waves|journal=Applied Physics Letters|volume=35|issue=10|pages=761|bibcode = 1979ApPhL..35..761V |doi = 10.1063/1.90961 }}</ref>
+
+== Historical ==
+
+=== Boyle's law (1662) ===
+[[Boyle's Law]] was perhaps the first expression of an equation of state.{{citation needed|date=July 2016}} In 1662, the Irish physicist and chemist [[Robert Boyle]] performed a series of experiments employing a J-shaped glass tube, which was sealed on one end. [[Mercury (element)|Mercury]] was added to the tube, trapping a fixed quantity of air in the short, sealed end of the tube. Then the volume of gas was measured as additional mercury was added to the tube. The pressure of the gas could be determined by the difference between the mercury level in the short end of the tube and that in the long, open end. Through these experiments, Boyle noted that the gas volume varied inversely with the pressure. In mathematical form, this can be stated as:
+
+:<math> pV = \mathrm{constant}.\,\!</math> <!--this V doesn't have to be molar volume-->
+
+The above relationship has also been attributed to [[Edme Mariotte]] and is sometimes referred to as Mariotte's law. However, Mariotte's work was not published until 1676.
+
+=== Charles's law or Law of Charles and Gay-Lussac (1787) ===
+In 1787 the French physicist [[Jacques Charles]] found that oxygen, nitrogen, hydrogen, carbon dioxide, and air expand to roughly the same extent over the same 80-kelvin interval. Later, in 1802, [[Joseph Louis Gay-Lussac]] published results of similar experiments, indicating a linear relationship between volume and temperature ([[Charles's Law]]):
+
+:<math>\frac{V_1}{T_1} = \frac{V_2}{T_2}.</math>
+
+=== Dalton's law of partial pressures (1801) ===
+[[Dalton's Law]] of partial pressure states that the pressure of a mixture of gases is equal to the sum of the pressures of all of the constituent gases alone.
+
+Mathematically, this can be represented for ''n'' species as:
+
+::<math>
+p_\text{total} = p_1+p_2+\cdots+p_n = p_\text{total} = \sum_{i=1}^n p_i.
+</math>
+
+=== The ideal gas law (1834) ===
+In 1834, [[Émile Clapeyron]] combined Boyle's Law and Charles' law into the first statement of the ''[[ideal gas law]]''. Initially, the law was formulated as ''pV<sub>m</sub>'' = ''R''(''T<sub>C</sub>'' + 267) (with temperature expressed in degrees Celsius), where ''R'' is the [[gas constant]]. However, later work revealed that the number should actually be closer to 273.2, and then the Celsius scale was defined with 0{{nbsp}}°C = 273.15{{nbsp}}K, giving:
+
+:<math>pV_m = R \left(T_C + 273.15\ {}^\circ\text{C}\right).</math>
+
+=== Van der Waals equation of state (1873) ===
+In 1873, [[J. D. van der Waals]] introduced the first [[van der Waals equation|equation of state]] derived by the assumption of a finite volume occupied by the constituent molecules.<ref name="van der Waals" >{{cite book |author1=van der Waals |author2=J. D. | title=On the Continuity of the Gaseous and Liquid States (doctoral dissertation) | publisher=Universiteit Leiden | year=1873}}</ref>  His new formula revolutionized the study of equations of state, and was most famously continued via the [[Redlich–Kwong equation of state]]<ref name=":1">{{Cite journal|last1=Redlich|first1=Otto.|last2=Kwong|first2=J. N. S.|date=1949-02-01|title=On the Thermodynamics of Solutions. V. An Equation of State. Fugacities of Gaseous Solutions.|journal=Chemical Reviews|volume=44|issue=1|pages=233–244|doi=10.1021/cr60137a013|pmid=18125401|issn=0009-2665}}</ref> and the [[#Soave modification of Redlich-Kwong|Soave modification of Redlich-Kwong]].<ref name="Soave modification of Redlich-Kwong">{{cite journal |last1=Soave |first1=Giorgio |title=Equilibrium constants from a modified Redlich-Kwong equation of state |journal=Chemical Engineering Science |date=1972 |volume=27 |issue=6 |pages=1197–1203 |doi=10.1016/0009-2509(72)80096-4 }}</ref>
+
+== General form of an equation of state ==
+For a given amount of substance contained in a system, the temperature, volume, and pressure are not independent quantities; they are connected by a relationship of the general form
+
+:<math>f(p, V, T) = 0</math>
+
+An equation used to model this relationship is called an equation of state. In the following sections major equations of state are described, and the variables used here are defined as follows. Any consistent set of units may be used, although [[International System of Units|SI]] units are preferred. [[Thermodynamic temperature|Absolute temperature]] refers to use of the [[Kelvin]] (K) or [[Rankine scale|Rankine]] (°R) temperature scales, with zero being absolute zero.
+
+:<math>\ p</math>, pressure (absolute)
+:<math>\ V</math>, volume
+:<math>\ n</math>, number of moles of a substance
+:<math>\ V_m</math>, <math>\frac{V}{n}</math>, '''[[molar volume]]''', the volume of 1 mole of gas or liquid
+:<math>\ T</math>, [[thermodynamic temperature|absolute temperature]]
+:<math>\ R</math>, [[gas constant|ideal gas constant]] ≈ 8.3144621{{nbsp}}J/mol·K
+:<math>\ p_c</math>, pressure at the critical point
+:<math>\ V_c</math>, molar volume at the critical point
+:<math>\ T_c</math>, absolute temperature at the critical point
+
+== Classical ideal gas law ==
+The classical [[ideal gas law]] may be written
+
+:<math>pV = nRT.</math>
+
+In the form shown above, the equation of state is thus
+
+:<math>f(p, V, T) = pV - nRT = 0</math>.
+
+If the [[Perfect gas|calorically perfect]] gas approximation is used, then the ideal gas law may also be expressed as follows
+
+:<math>p = \rho(\gamma - 1)e</math>
+
+where <math>\rho</math>  is the density, <math>\gamma = C_p/C_v</math> is the adiabatic index ([[heat capacity ratio|ratio of specific heats]]), <math>e = C_v T</math> is the internal energy per unit mass (the "specific internal energy"), <math>C_v</math> is the specific heat at constant volume, and <math>C_p</math> is the specific heat at constant pressure.
+
+== Quantum ideal gas law ==
+Since for atomic and molecular gases, the classical ideal gas law is well suited in most cases, let us describe the equation of state for elementary particles with mass <math>m</math> and spin <math>s</math> that takes into account of quantum effects. In the following, the upper sign will always correspond to [[Fermi-Dirac statistics]] and the lower sign to [[Bose-Einstein statistics]]. The equation of state of such gases with <math>N</math> particles occupying a volume <math>V</math> with temperature <math>T</math> and pressure <math>p</math> is given by<ref>Landau, L. D., Lifshitz, E. M. (1980). Statistical physics: Part I (Vol. 5). page 162-166.</ref>
+
+:<math>p= \frac{(2s+1)\sqrt{2m^3k_B^5T^5}}{3\pi^2\hbar^3}\int_0^\infty\frac{z^{3/2}\,\mathrm{d}z}{e^{z-\mu/(k_BT)}\pm 1}</math>
+
+where <math>k_B</math> is the [[Boltzmann constant]] and <math>\mu(T,N/V)</math> the [[chemical potential]] is given by the following implicit function
+
+:<math>\frac{N}{V}=\frac{(2s+1)(mk_BT)^{3/2}}{\sqrt 2\pi^2\hbar^3}\int_0^\infty\frac{z^{1/2}\,\mathrm{d}z}{e^{z-\mu/(k_BT)}\pm 1}.</math>
+
+In the limiting case where <math>e^{\mu/(k_BT)}\ll 1</math>, this equation of state will reduce to that of the classical ideal gas. It can be shown that the above equation of state in the limit <math>e^{\mu/(k_BT)}\ll 1</math> reduces to
+
+:<math>pV = Nk_BT\left[1\pm\frac{\pi^{3/2}}{2(2s+1)} \frac{N\hbar^3}{V(mk_BT)^{3/2}}+\cdots\right]</math>
+
+With a fixed number density <math>N/V</math>, decreasing the temperature causes in [[Fermi gas]], a increase in  the value for pressure from its classical value implying an effective repulsion between particles (this is an apparent repulsion due to quantum exchange effects not because of actual interactions between particles since in ideal gas, interactional forces are neglected) and in [[Bose gas]], a decrease in pressure from its classical value implying an effective attraction.
+
+== Cubic equations of state ==
+Cubic equations of state are called such because they can be rewritten as a [[cubic function]] of V<sub>m</sub>.
+
+=== Van der Waals equation of state ===
+The [[Van der Waals equation]] of state may be written:
+
+:<math>\left(p + \frac{a}{V_m^2}\right)\left(V_m - b\right) = RT</math>
+
+where <math>V_m</math> is [[molar volume]]. The substance-specific constants <math>a</math> and <math>b</math> can be calculated from the [[critical properties]] <math>p_c, T_c</math> and <math>V_c</math> (noting that <math>V_c</math> is the molar volume at the critical point) as:
+:<math>a = 3p_c\, V_c^2</math>
+:<math>b = \frac{V_c}{3}.</math>
+
+Also written as
+:<math>a = \frac{27(R\,T_c)^2}{64p_c}</math>
+:<math>b = \frac{R\,T_c}{8p_c}.</math>
+
+Proposed in 1873, the van der Waals equation of state was one of the first to perform markedly better than the ideal gas law. In this landmark equation <math>a</math> is called the attraction parameter and <math>b</math> the repulsion parameter or the effective molecular volume. While the equation is definitely superior to the ideal gas law and does predict the formation of a liquid phase, the agreement with experimental data is limited for conditions where the liquid forms. While the van der Waals equation is commonly referenced in text-books and papers for historical reasons, it is now obsolete. Other modern equations of only slightly greater complexity are much more accurate.
+
+The van der Waals equation may be considered as the ideal gas law, "improved" due to two independent reasons:
+# Molecules are thought as particles with volume, not material points. Thus <math>V_m</math> cannot be too little, less than some constant. So we get (<math>V_m - b</math>) instead of <math>V_m</math>.
+# While ideal gas molecules do not interact, we consider molecules attracting others within a distance of several molecules' radii. It makes no effect inside the material, but surface molecules are attracted into the material from the surface. We see this as diminishing of pressure on the outer shell (which is used in the ideal gas law), so we write (<math>p +</math> something) instead of <math>p</math>. To evaluate this ‘something’, let's examine an additional force acting on an element of gas surface. While the force acting on each surface molecule is ~<math>\rho</math>, the force acting on the whole element is ~<math>\rho^2</math>~<math>\frac{1}{V_m^2}</math>.
+
+With the reduced state variables, i.e. <math>V_r=V_m/V_c</math>, <math>P_r=P/P_c</math> and <math>T_r=T/T_c</math>, the reduced form of the Van der Waals equation can be formulated:
+
+:<math>\left(P_r + \frac{3}{V_r^2}\right)\left(3V_r - 1\right) = 8T_r</math>
+
+The benefit of this form is that for given <math>T_r</math> and <math>P_r</math>, the reduced volume of the liquid and gas can be calculated directly using [[Cubic formula#Cardano's method|Cardano's method]] for the reduced cubic form:
+
+:<math>V_r^3 - \left(\frac{1}{3} + \frac{8T_r}{3P_r}\right)V_r^2 + \frac{3V_r}{P_r} - \frac{1}{P_r} = 0</math>
+
+For <math>P_r<1</math> and <math>T_r<1</math>, the system is in a state of vapor–liquid equilibrium. The reduced cubic equation of state yields in that case 3 solutions. The largest and the lowest solution are the gas and liquid reduced volume.
+
+=== Redlich-Kwong equation of state<ref name=":1" />===
+:<math>\begin{align}
+  p &= \frac{R\,T}{V_m - b} - \frac{a}{\sqrt{T}\,V_m\left(V_m + b\right)} \\[3pt]
+  a &\approx 0.42748\frac{R^2\,T_c^\frac{5}{2}}{p_c} \\[3pt]
+  b &\approx 0.08664\frac{R\,T_c}{p_c}
+\end{align}</math>
+
+Introduced in 1949, the [[Redlich-Kwong equation of state]] was a considerable improvement over other equations of the time. It is still of interest primarily due to its relatively simple form. While superior to the van der Waals equation of state, it performs poorly with respect to the liquid phase and thus cannot be used for accurately calculating [[vapor–liquid equilibria]]. However, it can be used in conjunction with separate liquid-phase correlations for this purpose.
+
+The Redlich-Kwong equation is adequate for calculation of gas phase properties when the ratio of the pressure to the [[critical properties|critical pressure]] (reduced pressure) is less than about one-half of the ratio of the temperature to the [[critical properties|critical temperature]] (reduced temperature):
+
+:<math>\frac{p}{p_c} < \frac{T}{2T_c}.</math>
+
+=== Soave modification of Redlich-Kwong<ref name="Soave modification of Redlich-Kwong" />===
+:<math>p = \frac{R\,T}{V_m-b} - \frac{a\,\alpha}{V_m\left(V_m+b\right)}</math>
+
+:<math>a = \frac{0.42747\,R^2\,T_c^2}{P_c}</math>
+:<math>b = \frac{0.08664\,R\,T_c}{P_c}</math>
+:<math>\alpha = \left(1 + \left(0.48508 + 1.55171\,\omega - 0.15613\,\omega^2\right) \left(1-T_r^{\,0.5}\right)\right)^2</math>
+
+:<math>T_r = \frac{T}{T_c}</math>
+
+Where ω is the [[acentric factor]] for the species.
+
+This formulation for <math>\alpha</math> is due to Graboski and Daubert.  The original formulation from Soave is:
+
+:<math>\alpha = \left(1 + \left(0.480 + 1.574\,\omega - 0.176\,\omega^2\right) \left(1-T_r^{\,0.5}\right)\right)^2</math>
+
+for hydrogen:
+
+:<math>\alpha = 1.202 \exp\left(-0.30288\,T_r\right).</math>
+
+We can also write it in the polynomial form, with:
+
+:<math>A = \frac{a\,\alpha\,P}{R^2\,T^2}</math> 
+:<math>B = \frac{b\,P}{R\,T}</math>
+then we have:
+:<math>0 = Z^3-Z^2+Z\left(A-B-B^2\right)-AB \;</math>
+where <math>R</math> is the [[universal gas constant]] and Z=PV/(RT) is the [[compressibility factor]].
+
+In 1972 G. Soave<ref>{{Cite journal | doi=10.1016/0009-2509(72)80096-4|title = Equilibrium constants from a modified Redlich-Kwong equation of state| journal=Chemical Engineering Science| volume=27| issue=6| pages=1197–1203|year = 1972|last1 = Soave|first1 = Giorgio}}</ref> replaced the 1/{{radic|''T''}} term of the Redlich-Kwong equation with a function α(T,ω) involving the temperature and the [[acentric factor]] (the resulting equation is also known as the Soave-Redlich-Kwong equation of state; SRK EOS). The α function was devised to fit the vapor pressure data of hydrocarbons and the equation does fairly well for these materials.
+
+Note especially that this replacement changes the definition of ''a'' slightly, as the <math>T_c</math> is now to the second power.
+
+=== Volume translation of Peneloux et al. (1982) ===
+The SRK EOS may be written as
+:<math>p = \frac{R\,T}{V_{m,\text{SRK}} - b} - \frac{a}{V_{m,\text{SRK}} \left(V_{m,\text{SRK}} + b\right)}</math>
+
+where
+:<math>\begin{align}
+    a &= a_c\, \alpha \\
+  a_c &\approx 0.42747\frac{R^2\,T_c^2}{P_c} \\
+    b &\approx 0.08664\frac{R\,T_c}{P_c}
+\end{align}</math>
+
+where <math>\alpha</math> and other parts of the SRK EOS is defined in the SRK EOS section.
+
+A downside of the SRK EOS, and other cubic EOS, is that the liquid molar volume is significantly less accurate than the gas molar volume. Peneloux et alios (1982)<ref name="Peneloux1982">{{cite journal|last1=Peneloux|first1=A.|last2=Rauzy|first2=E.|last3=Freze|first3=R.|year=1982|title= A Consistent Correction for Redlich-Kwong-Soave Volumes|journal= Fluid Phase Equilibria|volume=8|issue=1982|pages=7–23|doi=10.1016/0378-3812(82)80002-2}}</ref> proposed a simple correction for this by introducing a volume translation
+
+:<math>V_{m,\text{SRK}} = V_m + c</math>
+
+where <math>c</math> is an additional fluid component parameter that translates the molar volume slightly. On the liquid branch of the EOS, a small change in molar volume corresponds to a large change in pressure. On the gas branch of the EOS, a small change in molar volume corresponds to a much smaller change in pressure than for the liquid branch. Thus, the perturbation of the molar gas volume is small. Unfortunately, there are two versions that occur in science and industry.
+
+In the first version only <math>V_{m,\text{SRK}}</math> is translated,<ref name="Soave1990">{{cite journal|last1=Soave|first1=G.|last2=Fermeglia|first2=M.|year=1990|title= On the Application of Cubic Equation of State to Synthetic High-Pressure VLE Measurements|journal= Fluid Phase Equilibria|volume=60|issue=1990|pages=261–271|doi=10.1016/0378-3812(90)85056-G}}</ref>
+<ref name="Zeberg2001">{{Cite book|last1=Zéberg-Mikkelsen|first1=C.K.|year=2001|title=Viscosity study of hydrocarbon fluids at reservoir conditions - modeling and measurements|journal=Ph.D. Thesis at the Technical University of Denmark. Department of Chemical Engineering|volume=June|issue=2001|pages=1–271|isbn=9788790142742}}</ref> and the EOS becomes
+
+:<math>p = \frac{R\,T}{V_m + c - b} - \frac{a}{\left(V_m + c\right) \left(V_m + c + b\right)}</math>
+
+In the second version both <math>V_{m,\text{SRK}}</math> and <math>b_\text{SRK}</math> are translated, or the translation of <math>V_{m,\text{SRK}}</math> is followed by a renaming of the composite parameter {{nowrap|b − c}}.<ref name="Pedersen1989">{{Cite book|last1=Pedersen|first1=K. S.|last2=Fredenslund|first2=Aa.|last3=Thomassen|first3=P.|year=1989|title=Properties of Oils and Natural Gases|journal=Book Published by Gulf Publishing Company, Houston|volume=1989|issue=1989|pages=1–252|isbn=9780872015883}}</ref> This gives
+
+:<math>\begin{align}
+  b_\text{SRK} &= b + c \quad \text{or} \quad b - c \curvearrowright b \\
+             p &= \frac{R\,T}{V_m - b} - \frac{a}{\left(V_m + c\right) \left(V_m + 2c + b\right)}
+\end{align}</math>
+
+The c-parameter of a fluid mixture is calculated by
+:<math>c = \sum_{i=1}^n z_i c_i</math>
+
+The c-parameter of the individual fluid components in a petroleum gas and oil can be estimated by the correlation
+
+:<math>c_i \approx 0.40768\ \frac{RT_{ci}}{P_{ci}} \left(0.29441 - Z_{\text{RA},i}\right) </math>
+
+where the Rackett compressibility factor <math>Z_{\text{RA},i}</math> can be estimated by
+
+:<math>Z_{\text{RA},i} \approx 0.29056 - 0.08775\ \omega_i</math>
+
+A nice feature with the volume translation method of Peneloux et al. (1982) is that it does not affect the vapor-liquid equilibrium calculations.<ref name="Knudsen1992">{{cite journal|last1=Knudsen|first1=K.|year=1992|title=Phase Equilibria and Transport of Multiphase Systems|journal=Ph.D. Thesis at the Technical University of Denmark. Department of Chemical Engineering|issue=1992}}</ref> This method of volume translation can also be applied to other cubic EOSs if the c-parameter correlation is adjusted to match the selected EOS.
+
+=== Peng–Robinson equation of state ===
+
+:<math>\begin{align}
+       p &= \frac{R\,T}{V_m - b} - \frac{a\,\alpha}{V_m^2 + 2bV_m - b^2} \\[3pt]
+       a &\approx 0.45724 \frac{R^2\,T_c^2}{p_c} \\[3pt]
+       b &\approx 0.07780 \frac{R\,T_c}{p_c} \\[3pt]
+  \alpha &= \left(1 + \kappa \left(1 - T_r^\frac{1}{2}\right)\right)^2 \\[3pt]
+  \kappa &\approx 0.37464 + 1.54226\,\omega - 0.26992\,\omega^2 \\[3pt]
+     T_r &= \frac{T}{T_c}
+\end{align}</math>
+
+In polynomial form:
+:<math>A = \frac{\alpha a p}{R^2\,T^2}</math>
+:<math>B = \frac{bp}{RT}</math>
+:<math>Z^3 - (1 - B)Z^2 + \left(A - 2B - 3B^2\right)Z - \left(AB - B^2 - B^3\right) = 0</math>
+
+where <math>\omega</math> is the [[acentric factor]] of the species, <math>R</math> is the [[universal gas constant]] and <math>Z = PV/nRT</math> is [[compressibility factor]].
+
+The Peng–Robinson equation of state (PR EOS) was developed in 1976 at The [[University of Alberta]] by [[Ding Yu Peng|Ding-Yu Peng]] and Donald Robinson in order to satisfy the following goals:<ref>{{cite journal | title = A New Two-Constant Equation of State | journal = Industrial and Engineering Chemistry: Fundamentals | volume = 15 | year = 1976 | pages = 59–64 |author1=Peng, D. Y. |author2=Robinson, D. B. | doi = 10.1021/i160057a011}}</ref>
+# The parameters should be expressible in terms of the [[critical properties]] and the [[acentric factor]].
+# The model should provide reasonable accuracy near the critical point, particularly for calculations of the [[compressibility factor]] and liquid density.
+# The mixing rules should not employ more than a single binary interaction parameter, which should be independent of temperature, pressure, and composition.
+# The equation should be applicable to all calculations of all fluid properties in natural gas processes.
+
+For the most part the Peng–Robinson equation exhibits performance similar to the Soave equation, although it is generally superior in predicting the liquid densities of many materials, especially nonpolar ones.<ref>{{cite journal | title = Essentials of Reservoir Engineering | volume = 1 | year = 2007 | pages = 151 | author = Pierre Donnez }}</ref> The [[departure function]]s of the Peng–Robinson equation are given on a separate article.
+
+The analytic values of its characteristic constants are:
+
+: <math>Z_c = \frac{1}{32} \left( 11 - 2\sqrt{7} \sinh(\frac{1}{3} \operatorname{asinh}(\frac{13}{7 \sqrt{7}})) \right) \approx 0.307401</math>
+: <math>b' = \frac{b}{V_{m,c}} = \frac{1}{3} \left( \sqrt{8} \sinh(\frac{1}{3} \operatorname{asinh}(\sqrt{8}) ) - 1 \right) \approx 0.253077 \approx \frac{0.07780}{Z_c} </math>
+: <math> \frac{P_c V_{m,c}^2}{a\,b'} = \frac{3}{8} \left( 1 + \cosh(\frac{1}{3} \operatorname{acosh}(3) ) \right) \approx 0.816619 \approx \frac{Z_c^2}{0.45724 \, b'} </math>
+
+==={{anchor|prsv}}Peng–Robinson-Stryjek-Vera equations of state===
+
+====PRSV1====
+A modification to the attraction term in the Peng–Robinson equation of state published by Stryjek and Vera in 1986 (PRSV) significantly improved the model's accuracy by introducing an adjustable pure component parameter and by modifying the polynomial fit of the [[acentric factor]].<ref name="PRSV1">{{cite journal | title = PRSV: An improved Peng–Robinson equation of state for pure compounds and mixtures | journal = The Canadian Journal of Chemical Engineering | volume = 64 | issue = 2 | year = 1986 | pages = 323–333 |author1=Stryjek, R. |author2=Vera, J. H. | doi = 10.1002/cjce.5450640224}}</ref>
+
+The modification is:
+:<math>\begin{align}
+    \kappa &= \kappa_0 + \kappa_1 \left(1 + T_r^\frac{1}{2}\right) \left(0.7 - T_r\right) \\
+  \kappa_0 &= 0.378893+1.4897153\,\omega - 0.17131848\,\omega^2 + 0.0196554\,\omega^3
+\end{align}</math>
+
+where <math>\,\kappa_1</math> is an adjustable pure component parameter.  Stryjek and Vera published pure component parameters for many compounds of industrial interest in their original journal article. At reduced temperatures above 0.7, they recommend to set <math>\,\kappa_1 = 0 </math> and simply use <math>\kappa = \kappa_0 </math>. For alcohols and water the value of <math>\,\kappa_1 </math> may be used up to the critical temperature and set to zero at higher temperatures.<ref name="PRSV1" />
+
+====PRSV2====
+A subsequent modification published in 1986 (PRSV2) further improved the model's accuracy by introducing two additional pure component parameters to the previous attraction term modification.<ref name="PRSV2">{{cite journal | title = PRSV2: A cubic equation of state for accurate vapor—liquid equilibria calculations | journal = The Canadian Journal of Chemical Engineering | volume = 64 | issue = 5 | year = 1986 | pages = 820–826 |author1=Stryjek, R. |author2=Vera, J. H. | doi = 10.1002/cjce.5450640516}}</ref>
+
+The modification is:
+:<math>\begin{align}
+    \kappa &= \kappa_0 + \left[\kappa_1 + \kappa_2\left(\kappa_3 - T_r\right)\left(1 - T_r^\frac{1}{2}\right)\right]\left(1 + T_r^\frac{1}{2}\right) \left(0.7 - T_r\right) \\
+  \kappa_0 &= 0.378893 + 1.4897153\,\omega - 0.17131848\,\omega^2 + 0.0196554\,\omega^3
+\end{align}</math>
+
+where <math>\,\kappa_1</math>, <math>\,\kappa_2</math>, and <math>\,\kappa_3</math> are adjustable pure component parameters.
+
+PRSV2 is particularly advantageous for [[vapor–liquid equilibrium|VLE]] calculations.  While PRSV1 does offer an advantage over the Peng–Robinson model for describing thermodynamic behavior, it is still not accurate enough, in general, for phase equilibrium calculations.<ref name="PRSV1" />  The highly non-linear behavior of phase-equilibrium calculation methods tends to amplify what would otherwise be acceptably small errors.  It is therefore recommended that PRSV2 be used for equilibrium calculations when applying these models to a design.  However, once the equilibrium state has been determined, the phase specific thermodynamic values at equilibrium may be determined by one of several simpler models with a reasonable degree of accuracy.<ref name="PRSV2" />
+
+One thing to note is that in the PRSV equation, the parameter fit is done in a particular temperature range which is usually below the critical temperature. Above the critical temperature, the PRSV alpha function tends to diverge and become arbitrarily large instead of tending towards 0. Because of this, alternate equations for alpha should be employed above the critical point. This is especially important for systems containing hydrogen which is often found at temperatures far above its critical point. Several alternate formulations have been proposed. Some well known ones are by Twu et all or by Mathias and Copeman.
+
+'''Peng,-Robinson-Babalola equation of state:  (PRB)'''
+
+Babalola [ ] modified the Peng–Robinson Equation of state as:
+
+<math>P =\left ( \frac{RT}{v-b} \right ) -\left [ \frac{(a_1P+a_2)\alpha}{v(v+b)+b(v-b)} \right ]</math>
+
+The attractive force parameter ‘a’, which was considered to be a constant with respect to pressure in Peng–Robinson EOS as well as in other EOS was modified by Babalola. The modification, in which parameter ‘a’ was treated as a variable with respect to pressure for multi component multi-phase high density reservoir systems was to improve accuracy in the prediction of properties of complex reservoir fluids for PVT modeling. The variation was represented with a linear equation:
+
+a = a<sub>1</sub>P + a<sub>2</sub>
+
+where a<sub>1</sub> and a<sub>2</sub> represent the slope and the intercept respectively of the straight line obtained when values of parameter ‘a’ are plotted against pressure.
+
+This modification increases the accuracy of Peng–Robinson equation of state for heavier fluids particularly at pressure ranges (>30MPa) and eliminates the need for tuning the equation of state before use thereby minimizing the cost of using the EOS in the oil industry.
+
+=== Elliott, Suresh, Donohue equation of state ===
+The Elliott, Suresh, and Donohue (ESD) equation of state was proposed in 1990.<ref name="ESD" >{{cite journal |author1=J. Richard, Jr. Elliott |author2=S. Jayaraman Suresh |author3=Marc D. Donohue | year=1990 | title=A Simple Equation of State for Nonspherical and Associating Molecules | journal=Ind. Eng. Chem. Res. |volume=29 | pages=1476–1485 | doi=10.1021/ie00103a057 | issue=7}}</ref> The equation seeks to correct a shortcoming in the Peng–Robinson EOS in that there was an inaccuracy in the van der Waals repulsive term. The EOS accounts for the effect of the shape of a non-polar molecule and can be extended to polymers with the addition of an extra term (not shown). The EOS itself was developed through modeling computer simulations and should capture the essential physics of the size, shape, and hydrogen bonding.
+
+:<math>\frac{p V_m}{RT}=Z=1 + Z^{\rm{rep}} + Z^{\rm{att}}</math>
+
+where:
+
+:<math>Z^{\rm{rep}} = \frac{4 c \eta}{1-1.9 \eta}</math>
+
+:<math>Z^{\rm{att}} = -\frac{z_m q \eta Y}{1+ k_1 \eta Y}</math>
+
+and
+
+:<math>c</math> is a "shape factor", with <math>c=1</math> for spherical molecules
+:For non-spherical molecules, the following relation is suggested:
+
+:<math>c=1+3.535\omega+0.533\omega^2</math> where <math>\omega</math> is the [[acentric factor]]
+
+:The reduced number density <math>\eta</math> is defined as <math>\eta=\frac{v^* n}{V}</math>
+where
+:<math>v^*</math> is the characteristic size parameter
+:<math>n</math> is the number of molecules
+:<math>V</math> is the volume of the container
+The characteristic size parameter is related to the shape parameter <math>c</math> through
+:<math>v^*=\frac{kT_c}{P_c}\Phi</math>
+where
+
+:<math>\Phi=\frac{0.0312+0.087(c-1)+0.008(c-1)^2}{1.000+2.455(c-1)+0.732(c-1)^2}</math> and <math>k</math> is [[Boltzmann's constant]].
+
+Noting the relationships between Boltzmann's constant and the [[Universal gas constant]], and observing that the number of molecules can be expressed in terms of [[Avogadro's number]] and the [[molar mass]], the reduced number density <math>\eta</math> can be expressed in terms of the molar volume as
+
+:<math>\eta=\frac{R T_c}{P_c}\Phi\frac{1}{V_m}.</math>
+
+The shape parameter <math>q</math> appearing in the Attraction term and the term <math>Y</math> are given by
+:<math>q=1+k_3(c-1)</math> (and is hence also equal to 1 for spherical molecules).
+
+:<math>Y=\exp\left(\frac{\epsilon}{kT}\right) - k_2</math>
+
+where <math>\epsilon</math> is the depth of the square-well potential and is given by
+
+:<math>\frac{\epsilon}{k} =\frac{1.000+0.945(c-1)+0.134(c-1)^2}{1.023+2.225(c-1)+0.478(c-1)^2}</math>
+
+:<math>z_m</math>, <math>k_1</math>, <math>k_2</math> and <math>k_3</math> are constants in the equation of state:
+:<math>z_m = 9.49</math> for spherical molecules (c=1)
+:<math>k_1 = 1.7745</math> for spherical molecules (c=1)
+:<math>k_2 = 1.0617</math> for spherical molecules (c=1)
+:<math>k_3 = 1.90476.</math>
+
+The model can be extended to associating components and mixtures of nonassociating components. Details are in the paper by J.R. Elliott, Jr. ''et al.'' (1990).<ref name="ESD"/>
+
+=== Cubic-Plus-Association ===
+The Cubic-Plus-Association (CPA) equation of state combines the Soave-Redlich-Kwong equation with an association term from Wertheim theory.<ref name=":0">{{cite journal|last1=Kontogeorgis|first1=Georgios M.|last2=Michelsen|first2=Michael L.|last3=Folas|first3=Georgios K.|last4=Derawi|first4=Samer|last5=von Solms|first5=Nicolas|last6=Stenby|first6=Erling H.|title=Ten Years with the CPA (Cubic-Plus-Association) Equation of State. Part 1. Pure Compounds and Self-Associating Systems|journal=Industrial and Engineering Chemistry Research|date=2006|volume=45|issue=14|pages=4855–4868|doi=10.1021/ie051305v}}</ref> The development of the equation began in 1995 as a research project that was funded by Shell, and in 1996 an article was published which presented the CPA equation of state.<ref name=":0" /><ref>{{cite journal|last1=Kontogeorgis|first1=Georgios M.|last2=Voutsas|first2=Epaminondas C.|last3=Yakoumis|first3=Iakovos V.|last4=Tassios|first4=Dimitrios P.|title=An Equation of State for Associating Fluids|journal=Industrial & Engineering Chemistry Research|date=1996|volume=35|issue=11|pages=4310–4318|doi=10.1021/ie9600203}}</ref>
+
+:<math>P = \frac{RT}{(V - b)} - \frac{a}{V (V + b)} + \frac{RT}{V} \rho \sum_{A} \left[ \frac{1}{X^A} - \frac{1}{2} \right] \frac{\partial X^A}{\partial \rho}</math>
+
+In the association term <math>X^A</math> is the mole fraction of molecules not bonded at site A.
+
+== Non-cubic equations of state ==
+
+=== Dieterici equation of state ===
+: <math>p(V - b) = RTe^{-\frac{a}{RTV}}</math>
+
+where ''a'' is associated with the interaction between molecules and ''b'' takes into account the finite size of the molecules, similar to the Van der Waals equation.
+
+The reduced coordinates are:
+: <math>T_c = \frac{a}{4Rb},\ p_c = \frac{a}{4b^2 e^2},\ V_c = 2b.</math>
+
+== Virial equations of state ==
+
+=== Virial equation of state ===
+{{main|Virial expansion}}
+:<math>\frac{pV_m}{RT} = A + \frac{B}{V_m} + \frac{C}{V_m^2} + \frac{D}{V_m^3} + \dots</math>
+
+Although usually not the most convenient equation of state, the virial equation is important because it can be derived directly from [[statistical mechanics]]. This equation is also called the [[Heike Kamerlingh Onnes|Kamerlingh Onnes]] equation. If appropriate assumptions are made about the mathematical form of intermolecular forces, theoretical expressions can be developed for each of the [[virial coefficient|coefficients]]. ''A'' is the first virial coefficient, which has a constant value of 1 and makes the statement that when volume is large, all fluids behave like ideal gases. The second virial coefficient ''B'' corresponds to interactions between pairs of molecules, ''C'' to triplets, and so on. Accuracy can be increased indefinitely by considering higher order terms.  The coefficients ''B'', ''C'', ''D'', etc. are functions of temperature only.
+
+One of the most accurate equations of state is that from Benedict-Webb-Rubin-Starling<ref>{{Cite book |title=Fluid Properties for Light Petroleum Systems |last=Starling |first=Kenneth E. |publisher=Gulf Publishing Company |year=1973 |page=270}}</ref> shown next. It was very close to a virial equation of state. If the exponential term in it is expanded to two Taylor terms, a virial equation can be derived:
+:<math>p=\rho RT + \left(B_0 RT-A_0 - \frac{C_0}{T^2} + \frac{D_0}{T^3} - \frac{E_0}{T^4}\right) \rho^2 + \left(bRT-a-\frac{d}{T} + \frac{c}{T^2}\right) \rho^3 + \alpha\left(a+\frac{d}{T}\right) \rho^6 </math>
+
+Note that in this virial equation, the fourth and fifth virial terms are zero. The second virial coefficient is monotonically decreasing as temperature is lowered. The third virial coefficient is monotonically increasing as temperature is lowered.
+
+=== The BWR equation of state ===
+{{main|Benedict–Webb–Rubin equation}}
+:<math>
+  p = \rho RT +
+      \left(B_0 RT - A_0 - \frac{C_0}{T^2} + \frac{D_0}{T^3} - \frac{E_0}{T^4}\right) \rho^2 +
+      \left(bRT - a - \frac{d}{T}\right) \rho^3 +
+      \alpha\left(a + \frac{d}{T}\right) \rho^6 +
+      \frac{c\rho^3}{T^2}\left(1 + \gamma\rho^2\right)\exp\left(-\gamma\rho^2\right)
+</math>
+
+where
+:''p'' is pressure
+:''ρ'' is molar density
+
+Values of the various parameters for 15 substances can be found in {{cite book |author=K.E. Starling |year=1973 |title=Fluid Properties for Light Petroleum Systems |publisher=[[Gulf Publishing Company]] }}
+
+=== Lee-Kesler equation of state ===
+The Lee-Kesler equation of state is based on the corresponding states principle, and is a modification of the BWR equation of state.<ref>{{Cite journal|last1=Lee|first1=Byung Ik|last2=Kesler|first2=Michael G.|date=1975|title=A generalized thermodynamic correlation based on three-parameter corresponding states|journal=AIChE Journal|language=fr|volume=21|issue=3|pages=510–527|doi=10.1002/aic.690210313|issn=1547-5905}}</ref>
+== SAFT equations of state ==
+[[Statistical associating fluid theory]] (SAFT) equations of state predict the effect of molecular size and shape and hydrogen bonding on fluid properties and phase behavior.  The SAFT equation of state was developed using [[Statistical mechanics|statistical mechanical]] methods (in particular [[perturbation theory]]) to describe the interactions between molecules in a system.<ref name="Chapman1988">{{cite journal|last1=Chapman|first1=Walter G.|title=Theory and Simulation of Associating Liquid Mixtures|journal=Doctoral Dissertation, Cornell University|date=1988|language=en }}</ref><ref name="ChapmanGubbins1988">{{cite journal|last1=Chapman|first1=Walter G.|last2=Jackson|first2=G.|last3=Gubbins|first3=K.E.|title=Phase equilibria of associating fluids: Chain molecules with multiple bonding sites|journal=Molecular Physics|date=11 July 1988|volume=65|pages=1057–1079|doi=10.1080/00268978800101601 |language=en }}</ref><ref name="ChapmanGubbins1989">{{cite journal|last1=Chapman|first1=Walter G.|last2=Gubbins|first2=K.E.|last3=Jackson|first3=G.|last4=Radosz|first4=M.|title=SAFT: Equation-of-state solution model for associating fluids|journal=Fluid Phase Equilibria|date=1 December 1989|volume=52|pages=31–38|doi=10.1016/0378-3812(89)80308-5|language=en|issn=0378-3812}}</ref> The idea of a SAFT equation of state was first proposed by [[Chapman]] et al. in 1988 and 1989.<ref name="Chapman1988" /><ref name="ChapmanGubbins1988" /><ref name="ChapmanGubbins1989" />  Many different versions of the SAFT equation of state have been proposed, but all use the same chain and association terms derived by Chapman.<ref name="Chapman1988" /><ref name="ChapmanGubbins1990">{{cite journal|last1=Chapman|first1=Walter G.|last2=Gubbins|first2=K.E.|last3=Jackson|first3=G.|last4=Radosz|first4=M.|title=New Reference Equation of State for Associating Liquids|journal=Ind. Eng. Chem. Res.|date=1 August 1990|volume=29|issue=8|pages=1709–1721|doi=10.1021/ie00104a021|language=en }}</ref><ref>{{Cite journal | doi=10.1063/1.473101|title = Statistical associating fluid theory for chain molecules with attractive potentials of variable range| journal=The Journal of Chemical Physics| volume=106| issue=10| pages=4168–4186|year = 1997|last1 = Gil-Villegas|first1 = Alejandro| last2=Galindo| first2=Amparo| last3=Whitehead| first3=Paul J.| last4=Mills| first4=Stuart J.| last5=Jackson| first5=George| last6=Burgess| first6=Andrew N.|bibcode = 1997JChPh.106.4168G}}</ref> SAFT equations of state represent molecules as chains of typically spherical particles that interact with one another through short range repulsion, long range attraction, and hydrogen bonding between specific sites.<ref name="ChapmanGubbins1989" /> One popular version of the SAFT equation of state includes the effect of chain length on the shielding of the dispersion interactions between molecules ([[PC-SAFT]]).<ref>{{Cite journal | doi=10.1021/ie0003887|title = Perturbed-Chain SAFT: An Equation of State Based on a Perturbation Theory for Chain Molecules| journal=Industrial & Engineering Chemistry Research| volume=40| issue=4| pages=1244–1260|year = 2001|last1 = Gross|first1 = Joachim| last2=Sadowski| first2=Gabriele}}</ref> In general, SAFT equations give more accurate results than traditional cubic equations of state, especially for systems containing liquids or solids.<ref>{{Cite journal | doi=10.1021/ie010954d|title = Application of the Perturbed-Chain SAFT Equation of State to Associating Systems| journal=Industrial & Engineering Chemistry Research| volume=41| issue=22| pages=5510–5515|year = 2002|last1 = Gross|first1 = Joachim| last2=Sadowski| first2=Gabriele}}</ref><ref>{{Cite journal | doi=10.1016/j.fluid.2014.08.035|title = A modified continuous flow apparatus for gas solubility measurements at high pressure and temperature with camera system| journal=Fluid Phase Equilibria| volume=382| pages=150–157|year = 2014|last1 = Saajanlehto|first1 = Meri| last2=Uusi-Kyyny| first2=Petri| last3=Alopaeus| first3=Ville}}</ref>
+
+== Multiparameter equations of state ==
+
+=== Helmholtz Function form ===
+Multiparameter equations of state (MEOS) can be used to represent pure fluids with high accuracy, in both the liquid and gaseous states. MEOS's represent the Helmholtz function of the fluid as the sum of ideal gas and residual terms. Both terms are explicit in reduced temperature and reduced density - thus:
+
+: <math>\frac{a(T, \rho)}{RT} = 
+  \frac{a^o(T, \rho) + a^r(T, \rho)}{RT} =
+  \alpha^o(\tau, \delta) + \alpha^r(\tau, \delta)
+</math>
+
+where:
+: <math>\tau = \frac{T_r}{T}, \delta = \frac{\rho}{\rho_r}</math>
+
+The reduced density and temperature are typically, though not always, the critical values for the pure fluid.
+
+Other thermodynamic functions can be derived from the MEOS by using appropriate derivatives of the Helmholtz function; hence, because integration of the MEOS is not required, there are few restrictions as to the functional form of the ideal or residual terms. Typical MEOS use upwards of 50 fluid specific parameters, but are able to represent the fluid's properties with high accuracy. MEOS are available currently for about 50 of the most common industrial fluids including refrigerants. Mixture models also exist.
+
+== Other equations of state of interest ==
+
+===Stiffened equation of state===
+
+When considering water under very high pressures, in situations such as [[Underwater explosion|underwater nuclear explosions]], [[Extracorporeal shock wave lithotripsy|sonic shock lithotripsy]], and [[sonoluminescence]], the stiffened equation of state is often used:
+
+:<math>p = \rho(\gamma - 1)e - \gamma p^0 \,</math>
+
+where <math>e</math> is the internal energy per unit mass, <math>\gamma</math> is an empirically determined constant typically taken to be about 6.1, and <math>p^0</math> is another constant, representing the molecular attraction between water molecules. The magnitude of the correction is about 2 gigapascals (20,000 atmospheres).
+
+The equation is stated in this form because the speed of sound in water is given by <math>c^2 = \gamma\left(p + p^0\right)/\rho</math>.
+
+Thus water behaves as though it is an ideal gas that is ''already'' under about 20,000 atmospheres (2&nbsp;GPa) pressure, and explains why water is commonly assumed to be incompressible: when the external pressure changes from 1 atmosphere to 2 atmospheres (100&nbsp;kPa to 200&nbsp;kPa), the water behaves as an ideal gas would when changing from 20,001 to 20,002 atmospheres (2000.1&nbsp;MPa to 2000.2&nbsp;MPa).
+
+This equation mispredicts the [[specific heat capacity]] of water but few simple alternatives are available for severely nonisentropic processes such as strong shocks.
+
+===Ultrarelativistic equation of state===
+
+An [[ultrarelativistic fluid]] has equation of state
+
+:<math>p = \rho_m c_s^2</math>
+
+where <math>p</math> is the pressure, <math>\rho_m</math> is the mass density, and <math>c_s</math> is the [[speed of sound]].
+
+===Ideal Bose equation of state===
+
+The equation of state for an ideal [[Bose gas]] is
+
+:<math>pV_m =
+  RT~\frac{\text{Li}_{\alpha+1}(z)}{\zeta(\alpha)}
+  \left(\frac{T}{T_c}\right)^\alpha
+</math>
+
+where α is an exponent specific to the system (e.g. in the absence of a potential field, α = 3/2), ''z'' is exp(''μ''/''kT'') where ''μ'' is the [[chemical potential]], Li is the [[polylogarithm]], ζ is the [[Riemann zeta function]], and ''T''<sub>''c''</sub> is the critical temperature at which a [[Bose–Einstein condensate]] begins to form.
+
+===Jones–Wilkins–Lee equation of state for explosives (JWL equation)===
+The '''equation of state from Jones–Wilkins–Lee''' is used to describe the detonation products of explosives.
+
+:<math>p = A \left( 1 - \frac{\omega}{R_1 V} \right) \exp(-R_1 V) + B \left( 1 - \frac{\omega}{R_2 V} \right) \exp\left(-R_2 V\right) + \frac{\omega e_0}{V}</math>
+
+The ratio <math> V = \rho_e / \rho </math> is defined by using <math> \rho_e </math> = density of the explosive (solid part) and <math> \rho </math> = density of the detonation products. The parameters <math> A </math>, <math> B </math>, <math> R_1 </math>, <math> R_2 </math> and <math> \omega </math> are given by several references.<ref name="Dobratz" >{{Cite journal |author1=B. M. Dobratz |author2=P. C. Crawford | year=1985 | title=LLNL Explosives Handbook: Properties of Chemical Explosives and Explosive Simulants|journal=Ucrl-52997 |url=https://ci.nii.ac.jp/naid/10012469501/|access-date = 31 August 2018}}</ref> In addition, the initial density (solid part) <math> \rho_0 </math>, speed of detonation <math> V_D </math>, Chapman–Jouguet pressure <math> P_{CJ} </math> and the chemical energy of the explosive <math> e_0 </math> are given in such references. These parameters are obtained by fitting the JWL-EOS to experimental results.  Typical parameters for some explosives are listed in the table below.
+{| class="wikitable centre"
+! scope=col | Material
+! scope=col | <math>\rho_0\,</math> (g/cm<sup>3</sup>)
+! scope=col | <math>v_D\,</math> (m/s)
+! scope=col | <math>p_{CJ}\,</math> (GPa)
+! scope=col | <math>A\,</math> (GPa)
+! scope=col | <math>B\,</math> (GPa)
+! scope=col | <math>R_1\,</math>
+! scope=col | <math>R_2\,</math>
+! scope=col | <math>\omega\,</math>
+! scope=col | <math>e_0\,</math> (GPa)
+|- 
+|[[Trinitrotoluene|TNT]] 
+| 1.630 
+| 6930 
+| 21.0 
+| 373.8 
+| 3.747 
+| 4.15 
+| 0.90 
+| 0.35 
+| 6.00 
+|-
+|[[Composition B]] 
+| 1.717 
+| 7980 
+| 29.5 
+| 524.2 
+| 7.678 
+| 4.20 
+| 1.10 
+| 0.35 
+| 8.50
+|-
+| [[Polymer-bonded explosive|PBX 9501]]<ref name=Wilkins>{{Citation|last=Wilkins|first=Mark L.|title=Computer Simulation of Dynamic Phenomena| publisher=Springer|year=1999|page=80|url=https://books.google.com/books?id=b3npCAAAQBAJ&pg=PA1|access-date = 31 August 2018 |isbn=9783662038857}}</ref>
+| 1.844
+| 
+| 36.3
+| 852.4
+| 18.02
+| 4.55
+| 1.3
+| 0.38
+| 10.2
+|}
+
+== Equations of state for solids and liquids ==
+Common abbreviations: <math>
+  \eta = \left(\frac{V}{V_0}\right)^\frac{1}{3}~,~~ K_0^\prime = \frac{dK_0}{dp}
+</math>
+* [[Tait equation]] for water and other liquids.  Several equations are referred to as the '''Tait equation'''.
+* [[Murnaghan equation of state]]
+:<math>p(V) = \frac{K_0}{K_0'} \left[\eta^{-3K_0'} - 1\right]</math>
+
+* [[Birch–Murnaghan equation of state]]
+:<math>
+  p(V) = \frac{3K_0}{2}
+         \left(\frac{1 - \eta^2}{\eta^7}\right)
+         \left\{1 + \frac{3}{4}\left(K_0' - 4\right)
+         \left(\frac{1 - \eta^2}{\eta^2}\right)\right\}
+</math>
+* '''Stacey-Brennan-Irvine equation of state'''<ref name="StaceyBrennan1981">{{Cite journal |url= https://espace.library.uq.edu.au/view/UQ:399907 |title= Finite strain theories and comparisons with seismological data |last1= Stacey |first1=F.D. |journal= Surveys in Geophysics |volume=4 |issue=3 |pages=189–232 |doi= 10.1007/BF01449185 |access-date= 31 August 2018 |last2= Brennan |first2= B. J. |last3= Irvine |first3= R.D. |year= 1981 |bibcode= 1981GeoSu...4..189S|s2cid= 129899060 }}</ref> (falsely often refer to Rose-Vinet equation of state)
+:<math>
+  p(V) = 3K_0\left(\frac{1 - \eta}{\eta^2}\right)\exp\left[\frac{3}{2}\left(K_0' - 1\right)(1 - \eta)\right]
+</math>
+* '''Modified Rydberg equation of state'''<ref>{{Cite book|title = "Equations of states and scaling rules for molecular solids under strong compression" in "Molecular systems under high pressure" ed. R. Pucci and G. Piccino |last= Holzapfel |first= W.B. |publisher= Elsevier |year= 1991 |location= North-Holland |pages= 61–68}}</ref><ref>{{Cite journal |title= Equations of state for solids under strong compression |last= Holzapfel |first= W.B. |date=1991 |journal= High Press. Res. |volume= 7 |pages= 290–293 |doi= 10.1080/08957959108245571|orig-year= 1991}}</ref><ref name="Holzapfel1996">{{Cite journal |title= Physics of solids under strong compression |last= Holzapfel |first= Wi.B. |journal= Rep. Prog. Phys. |volume=59 |pages=29–90 |doi= 10.1088/0034-4885/59/1/002 |issue=1 |year= 1996 |bibcode= 1996RPPh...59...29H |issn= 0034-4885}}</ref> (more reasonable form for strong compression)
+:<math>
+  p(V) = 3K_0\left(\frac{1 - \eta}{\eta^5}\right)\exp\left[\frac{3}{2}\left(K_0' - 3\right)(1 - \eta)\right]
+</math>
+* '''Adapted Polynomial equation of state'''<ref name="Holzapfel1998">{{Cite journal |title= Equation of state for solids under strong compression |last= Holzapfel |first= W.B. |journal= High Press. Res. |volume=16 |issue=2 |pages=81–126 |issn=0895-7959 |doi= 10.1080/08957959808200283 |year= 1998 |bibcode= 1998HPR....16...81H}}</ref>  (second order form = AP2, adapted for extreme compression)
+:<math>
+    p(V) = 3K_0\left(\frac{1 - \eta}{\eta^5}\right)\exp\left[c_0(1 - \eta)\right]\left\{1 + c_2\eta(1 - \eta)\right\}
+</math>
+: with 
+:<math>
+   c_0 = -\ln\left(\frac{3K_0}{p_\text{FG0}}\right)~,~~p_\text{FG0}
+       = a_0\left(\frac{Z}{V_0}\right)^\frac{5}{3} ~,~~ c_2
+       = \frac{3}{2}\left(K_0' - 3\right) - c_0
+</math>
+:where <math>a_0</math> = 0.02337 GPa.nm<sup>5</sup>. The total number of electrons <math>Z</math> in the initial volume <math>V_0</math> determines the [[Fermi gas]] pressure <math>p_\text{FG0}</math>, which provides for the correct behavior at extreme compression. So far there are no known "simple" solids that require higher order terms.
+* '''Adapted polynomial equation of state'''<ref name="Holzapfel1998"/>   (third order form = AP3)
+:<math>
+  p(V) = 3K_0\left(\frac{1 - \eta}{\eta^5}\right)\exp\left[c_0(1 - \eta)\right]\left\{1 + c_2\eta(1 - \eta) + c_3\eta(1 - \eta)^2\right\}
+</math>
+* [[Johnson–Holmquist damage model|Johnson–Holmquist equation of state]]
+:<math>
+   p(V) = \begin{cases}
+            k_1~\xi + k_2~\xi^2 + k_3~\xi^3 + \Delta p & \qquad \text{Compression} \\
+            k_1~\xi  & \qquad \text{Tension}
+          \end{cases}
+   ~;~~ \xi := \cfrac{V_0}{V}-1
+ </math>
+* [[Mie–Grüneisen equation of state]] (for a more detailed discussion see ref.<ref>{{cite book |last1=Holzapfel |first1=Wilfried B. |editor1-last=Katrusiak |editor1-first=A. |editor2-last=McMillan |editor2-first=P. |title=High-Pressure Crystallography |date=2004 |publisher=Kluver Academic |location=Dordrecht, Netherlands |doi= 10.1007/978-1-4020-2102-2_14 |isbn= 978-1-4020-1954-8 |pages=217–236 |chapter-url=https://physik.uni-paderborn.de/fileadmin/physik/Alumni/Holzapfel_LOP/ldv-238.pdf |accessdate=31 August 2018 |language=en |chapter=Equations of state and thermophysical properties of solids under pressure|volume=140 |series=NATO Science Series}}</ref>)
+:<math>
+   p(V) - p_0 = \frac{\Gamma}{V}\left(e - e_0\right)
+ </math>
+* [[Anton-Schmidt equation of state]]
+:<math>
+   p(V) = - \beta \left(\frac{V}{V_0}\right)^n \ln\left(\frac{V}{V_0}\right)
+ </math>
+:where <math>\beta = K_0 </math> is the bulk modulus at equilibrium volume <math> V_0 </math> and <math> n = -\frac{K'_0}{2} </math> typically about −2 is often related to the [[Grüneisen parameter]] by <math> n = -\frac{1}{6} - \gamma_G </math>
+
+== See also ==
+* [[Gas laws]]
+* [[Departure function]]
+* [[Table of thermodynamic equations]]
+* [[Real gas]]
+* [[Cluster Expansion]]
+
+==References==
+{{reflist}}
+
+== External links==
+*Elliott & Lira, (1999). ''Introductory Chemical Engineering Thermodynamics'', Prentice Hall.
+{{Topics in continuum mechanics}}
+{{States of matter}}
+{{Statistical mechanics topics}}
+
+[[Category:Concepts in physics]]
+[[Category:Engineering thermodynamics]]
+[[Category:Mechanical engineering]]
+[[Category:Fluid mechanics]]
+[[Category:Equations of state| ]]
+[[Category:Thermodynamic models]]

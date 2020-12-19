@@ -1,0 +1,67 @@
+[[File:Aerial Survey in Action.jpg|400px|thumb|right|An XCAM aerial survey camera externally mounted on a [[Cessna 172]] capturing photographs used in [[digital mapping]].]]
+[[Image:inview UAV medium.jpg|right|thumb|The InView [[unmanned aerial vehicle|UAV]] for use in aerial survey applications.]]
+[[File:Pteryx UAV - wiki.jpg|thumb|[[Pteryx UAV]], a civilian for [[aerial photography]] and photomapping with [[Gyro-stabilized camera systems|roll-stabilized]] camera head]]
+'''Aerial survey''' is a method of collecting [[geomatics]] or other [[image]]ry by using [[airplane]]s, [[helicopter]]s, [[unmanned aerial vehicle|UAV]]s, [[Balloon (aeronautics)|balloon]]s or other aerial methods. Typical types of data collected include [[aerial photography]], [[Lidar]], [[remote sensing]]  (using various visible and invisible bands of the [[electromagnetic spectrum]], such as [[infrared]], [[gamma ray|gamma]], or [[ultraviolet]]) and also geophysical data (such as [[aeromagnetic survey]]s and [[gravity]]. It can also refer to the chart or map made by analysing a region from the air. Aerial survey should be distinguished from [[satellite imagery]] technologies because of its better resolution, quality and [[Atmosphere of Earth|atmospheric]] conditions (which can negatively impact and obscure [[Earth observation satellite|satellite observation]]). Today, aerial survey is sometimes recognized as a synonym for aerophotogrammetry, part of [[photogrammetry]] where the [[camera]] is placed in the air. Measurements on aerial images are provided by [[Photogrammetry|photogrammetric]] technologies and methods.<ref>A. Sechin. Digital Photogrammetric Systems: Trends and Developments. GeoInformatics. #4, 2014, pp. 32-34.</ref>
+
+Aerial surveys can provide information on many things not visible from the ground.
+
+==Terms used in aerial survey==
+
+;exposure station or air station: the position of the [[Cardinal point (optics)#Principal planes and points|optical centre]] of the camera at the moment of exposure.
+;flying height:  the elevation of the exposure station above the datum (usually mean [[sea level]]).
+;[[altitude]]: the vertical distance of the aircraft above the [[Earth]]'s surface.
+;tilt: the angle between the aerial camera and the horizontal axis perpendicular to the [[Steady flight|line of flight]].
+;tip: the angle between the aerial camera and the line of flight.
+;principal point:  the point of intersection of the optical axis of the aerial camera with the [[Picture plane|photographical plane]].
+;isocentre:  the point on the aerial photograph in which the bisector of the angle of tilt meets the photograph.
+;[[nadir]] point: the image of the nadir, i.e. the point on the aerial photograph where a [[Plumb bob|plumbline]] dropped from the front nodal point pierces the photograph.
+;scale: ratio of the [[focal length]] of the camera objective and the distance of the exposure station from the ground.
+;[[azimuth]]: the clockwise horizontal angle measured about the ground [[nadir]] point from the ground survey [[North]] meridian in the plane of photograph.
+;[[orthomosaic]]: A high-resolution map created by orthophotos, usually via drones is termed as an orthomosaic. Ortho meaning a [[nadir]] image and mosaic meaning a collection of images.
+;[[Temporal Resolution]]:Time between observations.
+
+==Uses==
+Aerial surveys are used for:
+
+[[File:Wings for Science Fly Over Paranal.jpg|thumb|Aerial view of the [[Paranal Observatory]], created by the non-profit initiative [http://wingsforscience.com/ Wings for Science] which offers aerial support to public research organisations.<ref>{{cite news|title=Wings for Science Fly Over Paranal|url=http://www.eso.org/public/images/potw1328a/|accessdate=21 July 2013|newspaper=ESO Picture of the Week}}</ref> ]]
+
+*[[Archaeology]]
+* [[Wild fisheries|Fishery]] surveys
+* [[Geophysics]] in [[geophysical survey]]s
+*[[Hydrocarbon exploration]]
+*[https://percepto.co/who-uses-aerial-data-at-industrial-sites/ Industrial sites]
+* [[Surveying|Land survey]]
+* [[Mining]] and [[Mining engineering#Mineral exploration|mineral exploration]]
+* [[Wildlife observation#Monitoring programs|Monitoring wildlife]] and insect populations (called aerial [[census]] or [[Systematic reconnaissance flight|sampling]])
+* [[Environmental monitoring|Monitoring]] [[vegetation]] and [[groundcover|ground cover]]
+* [[Reconnaissance]]
+* [[Transport#Infrastructure|Transportation project]]s in conjunction with [[Surveying|ground survey]]s ([[Carriageway|roadway]], [[bridge]], [[Controlled-access highway|highway]])
+
+Aerial surveys use a measuring camera where the elements of its interior orientation are known, but with much larger [[focal length]] and [[Photographic film|film]] and specialized [[Camera lens|lens]]es.
+
+==Aerial survey sensors==
+In order to carry out an aerial survey, a sensor needs to be fixed to the interior or the exterior of the airborne platform with line-of-sight to the target it is [[Remote sensing|remotely sensing]]. With manned [[aircraft]], this is accomplished either through an aperture in the [[Skin (aeronautics)|skin]] of the aircraft or mounted externally on a wing [[strut]]. With [[unmanned aerial vehicle]]s (UAVs), the sensor is typically mounted under or inside.
+
+Aerial survey systems are typically operated with the following:
+* Flight navigation software, which directs the pilot to fly in the desired pattern for the survey.
+* [[Satellite navigation|GNSS]], a combination of [[Global Positioning System|GPS]] and [[inertial measurement unit]] (IMU) to provide position and orientation information for the data recorded.
+* [[Gyro-stabilized camera systems|Gyro-stabilized]] mount to counter the effects of aircraft roll, pitch and yaw.
+* Data storage unit to save the data that is recorded.
+
+==Examples of aerial survey sensors==
+* Vexcel UltraCam (Eagle, Falcon, Osprey, Condor)
+* [[Leica Camera|Leica]] ADS100
+* WaldoAir XCAM
+* RIEGL LMS-Q780
+* [[Trimble (company)|Trimble]] AX80
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://www.informatics.org/france/index.html GIS and remote sensing for archeology]
+*[https://www.pbs.org/wgbh/nova/ubar/tools PBS Nova—The Sky's Eyes: Remote Sensing in Archaeology]
+
+[[Category:Surveying]]
+[[Category:Methods in archaeology]]
+[[Category:Photogrammetry]]

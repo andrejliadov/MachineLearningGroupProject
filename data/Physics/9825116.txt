@@ -1,0 +1,250 @@
+{{broader|Diffraction}}
+
+Diffraction processes affecting [[wave]]s are amenable to [[Quantity|quantitative]] description and analysis. Such treatments are applied to a wave passing through one or more slits whose width is specified as a proportion of the [[wavelength]]. [[Numerical approximation]]s may be used, including the [[Fresnel approximation|Fresnel]] and [[Fraunhofer diffraction|Fraunhofer approximation]]s.
+
+[[File:One_wave_slit_diffraction_dirichlet_bw.gif|thumb|Diffraction of a scalar wave passing through a 1-wavelength-wide slit]] [[File:Four_waves_slit_diffraction_dirichlet_bw.gif|thumb|Diffraction of a scalar wave passing through a 4-wavelength-wide slit]]
+
+== General diffraction ==
+Because diffraction is the result of addition of all waves (of given wavelength) along all unobstructed paths, the usual procedure is to consider the contribution of an infinitesimally small neighborhood around a certain path (this contribution is usually called a [[wavelet]]) and then integrate over all paths (= add all wavelets) from the source to the detector (or given point on a screen). 
+
+Thus in order to determine the pattern produced by diffraction, the phase and the amplitude of each of the wavelets is calculated. That is, at each point in space we must determine the distance to each of the simple sources on the incoming wavefront. If the distance to each of the simple sources differs by an integer number of wavelengths, all the wavelets will be in phase, resulting in constructive interference. If the distance to each source is an integer plus one half of a wavelength, there will be complete destructive interference. Usually, it is sufficient to determine these minima and maxima to explain the observed diffraction effects.  
+
+The simplest descriptions of diffraction are those in which the situation can be reduced to a two-dimensional problem. For water waves, this is already the case, as water waves propagate only on the surface of the water. For light, we can often neglect one dimension if the diffracting object extends in that direction over a distance far greater than the wavelength. In the case of light shining through small circular holes we will have to take into account the full three-dimensional nature of the problem.
+
+Several qualitative observations can be made of diffraction in general:
+* The angular spacing of the features in the diffraction pattern is inversely proportional to the dimensions of the object causing the diffraction. In other words: the smaller the diffracting object, the wider the resulting diffraction pattern, and vice versa. (More precisely, this is true of the [[sine]]s of the angles.)
+* The diffraction angles are invariant under scaling; that is, they depend only on the ratio of the wavelength to the size of the diffracting object.
+* When the diffracting object has a periodic structure, for example in a diffraction grating, the features generally become sharper. The fourth figure, for example, shows a comparison of a [[Double-slit experiment|double-slit]] pattern with a pattern formed by five slits, both sets of slits having the same spacing between the center of one slit and the next.
+
+==Approximations==
+The problem of calculating what a diffracted wave looks like, is the problem of determining the phase of each of the simple sources on the incoming wave front. It is mathematically easier to consider the case of far-field or [[Fraunhofer diffraction]], where the point of observation is far from that of the diffracting obstruction, and as a result, involves less complex mathematics than the more general case of near-field or [[Fresnel diffraction]]. To make this statement more quantitative, consider a diffracting object at the origin that has a size <math>\ a</math>. For definiteness let us say we are diffracting light and we are interested in what the intensity looks like on a screen a distance <math>\ L</math> away from the object. At some point on the screen the path length to one side of the object is given by the Pythagorean theorem
+:<math>S =\sqrt{L^2+(x+a/2)^2}</math>{{Elucidate|date=August 2015}}
+If we now consider the situation where <math>\ L>>(x+a/2)</math>, the path length becomes
+:<math>S\approx\left(L+\frac{(x+a/2)^2}{2 L}\right)= L + \frac{x^2}{2L}+\frac{x a}{2L}+\frac{a^2}{8L}</math>
+This is the Fresnel approximation. To further simplify things: If the diffracting object is much smaller than the distance <math>\ L</math>, the last term will contribute much less than a wavelength to the path length, and will then not change the phase appreciably. That is <math>\frac{a^2}{L}<<\lambda</math>. The result is the Fraunhofer approximation, which is only valid very far away from the object 
+:<math>S \approx L + \frac{x^2}{2L}+\frac{x a}{2L}</math>
+Depending on the size of the diffraction object, the distance to the object and the wavelength of the wave, the Fresnel approximation, the Fraunhofer approximation or neither approximation may be valid. As the distance between the measured point of diffraction and the obstruction point increases, the diffraction patterns or results predicted converge towards those of Fraunhofer diffraction, which is more often observed in nature due to the extremely small wavelength of visible light.
+
+== Diffraction from an array of narrow slits==
+
+===A simple quantitative description===
+[[Image:TwoSlitInterference.svg|right|thumb|Diagram of a two slit diffraction problem, showing the angle to the first minimum, where a path length difference of a half wavelength causes destructive interference.]]
+
+Multiple-slit arrangements can be mathematically considered as multiple simple wave sources, if the slits are narrow enough. For light, a slit is an opening that is infinitely extended in one dimension, and this has the effect of reducing a wave problem in 3D-space to a simpler problem in 2D-space. 
+The simplest case is that of two narrow slits, spaced a distance <math>\ a</math> apart. To determine the maxima and minima in the amplitude we must determine the path difference to the first slit and to the second one. In the Fraunhofer approximation, with the observer far away from the slits, the difference in path length to the two slits can be seen from the image to be
+:<math>\ \Delta S={a} \sin \theta</math>
+Maxima in the intensity occur if this path length difference is an integer number of wavelengths.
+
+:{|
+|-
+|<math>\ {a} \sin \theta = n \lambda </math> || &nbsp;&nbsp;&nbsp;&nbsp; || rowspan=4 |
+:where
+:<math>\ n</math> is an [[integer]] that labels the ''order'' of each maximum,
+:<math>\ \lambda</math> is the wavelength,
+:<math>\ a</math> is the distance between the slits
+: and <math>\ \theta</math> is the angle at which constructive interference occurs.
+|-
+|
+|}
+
+The corresponding minima are at path differences of an integer number plus one half of the wavelength:
+:<math> {a} \sin \theta = \lambda (n+1/2) \,</math>.
+
+For an array of slits, positions of the minima and maxima are not changed, the ''fringes'' visible on a screen however do become sharper, as can be seen in the image. 
+[[Image:Diffraction2vs5.jpg|right|frame|2-slit and 5-slit diffraction of red laser light]]
+
+===Mathematical description===
+To calculate this intensity pattern, one needs to introduce some more sophisticated methods. The mathematical representation of a radial wave is given by
+
+:<math>\ E(r) = A \cos (k r - \omega t + \phi)/r</math>
+
+where <math>\ k=\frac{2 \pi}{\lambda}</math>, <math>\ \lambda</math> is the wavelength, <math>\ \omega</math> is frequency of the wave and <math>\ \phi</math> is the phase of the wave at the slits at time t=0. The wave at a screen some distance away from the plane of the slits is given by the sum of the waves emanating from each of the slits. 
+To make this problem a little easier, we introduce the complex wave <math>\ \Psi</math>, the real part of which is equal to <math>\ E</math>
+:<math>\ \Psi(r)=A e^{i (k r-\omega t +\phi)}/r</math>
+:<math>\ E(r)=Re(\Psi(r))</math>
+The absolute value of this function gives the wave amplitude, and the complex phase of the function corresponds to the phase of the wave. <math>\ \Psi</math> is referred to as the complex amplitude.
+With <math>\ N</math> slits, the total wave at point <math>\ x</math> on the screen is
+:<math>\Psi_{total}=A e^{i(-\omega t +\phi)}\sum_{n=0}^{N-1} \frac{e^{i k \sqrt{(x-n a)^2+L^2}}}{\sqrt{(x-n a)^2+L^2}}</math>.
+
+Since we are for the moment only interested in the amplitude and relative phase, we can ignore any overall phase factors that are not dependent on <math>\ x</math> or <math>\ n</math>. We approximate <math>\sqrt{(x-n a)^2+L^2}\approx L+ (x-na)^2/2L</math>. In the [[Fraunhofer limit]] we can neglect terms of order :<math>\frac{a^2}{2L}</math> in the exponential, and any terms involving <math>\ a/L</math>  or <math>\ x/L</math> in the denominator. The sum becomes
+:<math>\Psi=A \frac{e^{i\left( k (\frac{x^2}{2 L}+L)-\omega t +\phi\right)}}{L}\sum_{n=0}^{N-1} e^{-i k \frac{x n a}{L}}</math>
+
+The sum has the form of a [[Geometric progression|geometric sum]] and can be evaluated to give
+
+:<math>\Psi=A \frac{e^{i\left( k (\frac{x^2-(N-1)ax}{2 L}+L)-\omega t +\phi\right)}}{L} \frac {\sin\left(\frac{Nkax}{2L}\right)} {\sin\left(\frac{kax}{2L}\right)}</math>
+
+The intensity is given by the absolute value of the complex amplitude squared 
+:<math>I(x)=\Psi \Psi^*=|\Psi|^2=I_0\left( \frac{\sin\left(\frac{Nkax}{2L}\right)}{\sin\left(\frac{kax}{2L}\right)}\right)^2 </math>
+
+where <math>\Psi^*</math> denotes the [[complex conjugate]] of <math>\Psi</math>.
+
+==Quantitative analysis of single-slit diffraction==
+[[File:Wavelength=slitwidthblue3D.gif|thumb|Numerical approximation of diffraction pattern from a slit of width equal to wavelength of an incident plane wave in 3D blue visualization]]
+[[Image:Wave Diffraction 4Lambda Slit.png|right|thumb|300px|Numerical approximation of diffraction pattern from a slit of width four wavelengths with an incident plane wave. The main central beam, nulls, and phase reversals are apparent.]]
+[[Image:Single_Slit_Diffraction_(english).svg|right|thumb|300px|Graph and image of single-slit diffraction]]
+
+As an example, an exact equation can now be derived for the intensity of the diffraction pattern as a function of angle in the case of single-slit diffraction. 
+
+A mathematical representation of [[Huygens' principle]] can be used to start an equation.
+
+Consider a monochromatic complex plane wave <math>\Psi^\prime</math> of wavelength λ incident on a slit of width ''a''. 
+
+If the slit lies in the x&prime;-y&prime; plane, with its center at the origin, then it can be assumed that diffraction generates a complex wave ψ, traveling radially in the r direction away from the slit, and this is given by:
+
+:<math>\Psi = \int_{\mathrm{slit}} \frac{i}{r\lambda} \Psi^\prime e^{-ikr}\,d\mathrm{slit}</math>
+
+Let (x&prime;,y&prime;,0) be a point inside the slit over which it is being integrated. If  (x,0,z) is the location at which the intensity of the diffraction pattern is being computed, the slit extends from <math>x^\prime=-a/2</math>  to <math>+a/2\,</math>, and from <math>y'=-\infty</math> to <math>\infty</math>.
+
+The distance ''r'' from the slot is: 
+
+:<math>r = \sqrt{\left(x - x^\prime\right)^2 + y^{\prime2} + z^2}</math>
+
+:<math>r = z \left(1 + \frac{\left(x - x^\prime\right)^2 + y^{\prime2}}{z^2}\right)^\frac{1}{2}</math>
+
+Assuming [[Fraunhofer diffraction]] will result in the conclusion <math>z \gg \big|\left(x - x^\prime\right)\big|</math>.  In other words, the distance to the target is much larger than the diffraction width on the target.
+By the [[binomial expansion]] rule, ignoring terms quadratic and higher, the quantity on the right can be estimated to be:
+
+:<math>r \approx z \left( 1 + \frac{1}{2} \frac{\left(x - x^\prime \right)^2 + y^{\prime 2}}{z^2} \right)</math>
+
+:<math>r \approx z + \frac{\left(x - x^\prime\right)^2 + y^{\prime 2}}{2z}</math>
+
+It can be seen that 1/''r'' in front of the equation is non-oscillatory, i.e. its contribution to the magnitude of the intensity is small compared to our exponential factors.  Therefore, we will lose little accuracy by approximating it as ''1/z''.
+
+{|
+|-
+|<math>\Psi \,</math>
+|<math>= \frac{i \Psi^\prime}{z \lambda} \int_{-\frac{a}{2}}^{\frac{a}{2}}\int_{-\infty}^{\infty} e^{-ik\left[z+\frac{ \left(x - x^\prime \right)^2 + y^{\prime 2}}{2z}\right]} \,dy^\prime \,dx^\prime</math>
+|-
+|
+|<math>= \frac{i \Psi^\prime}{z \lambda} e^{-ikz} \int_{-\frac{a}{2}}^{\frac{a}{2}}e^{-ik\left[\frac{\left(x - x^\prime \right)^2}{2z}\right]} \,dx^\prime \int_{-\infty}^{\infty} e^{-ik\left[\frac{y^{\prime 2}}{2z}\right]} \,dy^\prime</math>
+|-
+|
+|<math>=\Psi^\prime \sqrt{\frac{i}{z\lambda}} e^\frac{-ikx^2}{2z} \int_{-\frac{a}{2}}^{\frac{a}{2}}e^\frac{ikxx^\prime}{z} e^\frac{-ikx^{\prime 2}}{2z} \,dx^\prime</math>
+|-
+|}
+
+To make things cleaner, a placeholder 'C' is used to denote constants in the equation.  It is important to keep in mind that C can contain imaginary numbers, thus the wave function will be complex. However, at the end, the ψ will be bracketed, which will eliminate any imaginary components.
+
+Now, in Fraunhofer diffraction, <math>kx^{\prime 2}/z</math> is small, so <math>e^\frac{-ikx^{\prime 2}}{2z} \approx 1</math> (note that <math>x^\prime</math> participates in this exponential and it is being integrated).
+
+In contrast the term <math>e^\frac{-ikx^2}{2z}</math> can be eliminated from the equation, since when bracketed it gives 1.
+:<math>\langle e^\frac{-ikx^2}{2z}|e^\frac{-ikx^2}{2z} \rangle=e^\frac{-ikx^2}{2z} (e^\frac{-ikx^2}{2z})^*=e^\frac{-ikx^2}{2z} e^\frac{+ikx^2}{2z}=e^0=1</math>
+
+(For the same reason we have also eliminated the term <math>e^{-ikz}</math>)
+
+Taking <math>C = \Psi^\prime \sqrt{\frac{i}{z\lambda}}</math> results in:
+
+{|
+|-
+|<math>\Psi\, </math>
+|<math>= C \int_{-\frac{a}{2}}^{\frac{a}{2}}e^\frac{ikxx^\prime}{z} \,dx^\prime</math>
+|-
+|
+|<math>=C \frac{\left(e^\frac{ikax}{2z} - e^\frac{-ikax}{2z}\right)}{\frac{ikx}{z}}</math>
+|}
+
+It can be noted through [[Euler's formula]] and its derivatives that <math>\sin x = \frac{e^{ix} - e^{-ix}}{2i}</math> and <math>\sin \theta = \frac{x}{z}</math>. 
+
+<math>\Psi = aC \frac{\sin\frac{ka\sin\theta}{2}}{\frac{ka\sin\theta}{2}} = aC \left[ \operatorname{sinc} \left( \frac{ka\sin\theta}{2} \right) \right]</math>
+
+where the (unnormalized) [[sinc function]] is defined by <math>\operatorname{sinc}(x) \ \stackrel{\mathrm{def}}{=}\  \frac{\operatorname{sin}(x)}{x}</math>.
+
+Now, substituting in <math>\frac{2\pi}{\lambda} = k</math>, the intensity (squared amplitude) <math>I</math> of the diffracted waves at an angle θ is given by:
+
+{|
+|-
+|<math>I(\theta)\, </math>
+|
+|<math>= I_0 {\left[ \operatorname{sinc} \left( \frac{\pi a}{\lambda} \sin \theta \right) \right] }^2 </math>
+|}
+
+==Quantitative analysis of ''N''-slit diffraction==
+[[Image:Laserdiffraction.jpg|right|frame|Double-slit diffraction of red laser light]]
+
+[[Image:Diffraction2vs5.jpg|right|frame|2-slit and 5-slit diffraction]]
+
+Let us again start with the mathematical representation of [[Huygens' principle]].
+
+:<math>\Psi = \int_{\mathrm{slit}} \frac{i}{r\lambda} \Psi^\prime e^{-ikr}\,d\mathrm{slit}</math>
+
+Consider <math>N</math> slits in the prime plane of equal size <math>a</math> and spacing <math>d</math> spread along the <math>x^\prime</math> axis.  As above, the distance <math>r</math> from slit 1 is:
+
+:<math>r = z \left(1 + \frac{\left(x - x^\prime\right)^2 + y^{\prime2}}{z^2}\right)^\frac{1}{2}</math>
+
+To generalize this to <math>N</math> slits, we make the observation that while <math>z</math> and <math>y</math> remain constant, <math>x^\prime</math> shifts by 
+
+:<math>x_{j=0 \cdots n-1}^{\prime} = x_0^\prime - j d </math>
+
+Thus 
+
+:<math>r_j = z \left(1 + \frac{\left(x - x^\prime - j d \right)^2 + y^{\prime2}}{z^2}\right)^\frac{1}{2}</math>
+
+and the sum of all <math>N</math> contributions to the wave function is:
+
+:<math>\Psi = \sum_{j=0}^{N-1} C \int_{-\frac{a}{2}}^{\frac{a}{2}} e^\frac{ikx\left(x^\prime - jd\right)}{z} e^\frac{-ik\left(x^\prime - jd\right)^2}{2z} \,dx^\prime</math>
+
+Again noting that <math>\frac{k\left(x^\prime -jd\right)^2}{z}</math> is small, so <math>e^\frac{-ik\left(x^\prime -jd\right)^2}{2z} \approx 1</math>, we have:
+
+{|
+|-
+|<math>\Psi\, </math>
+|<math>= C\sum_{j=0}^{N-1} \int_{-\frac{a}{2}}^{\frac{a}{2}} e^\frac{ikx\left(x^\prime - jd\right)}{z} \,dx^\prime</math>
+|-
+|
+|<math>= a C \sum_{j=0}^{N-1} \frac{\left(e^{\frac{ikax}{2z} - \frac{ijkxd}{z}}  - e^{\frac{-ikax}{2z}-\frac{ijkxd}{z}}\right)}{\frac{2ikax}{2z}}</math>
+|-
+|
+|<math>= a C \sum_{j=0}^{N-1} e^\frac{ijkxd}{z} \frac{\left(e^\frac{ikax}{2z} - e^\frac{-ikax}{2z}\right)}{\frac{2ikax}{2z}}</math>
+|-
+|
+|<math>= a C \frac{\sin\frac{ka\sin\theta}{2}}{\frac{ka\sin\theta}{2}} \sum_{j=0}^{N-1} e^{ijkd\sin\theta}</math>
+|}
+
+Now, we can use the following identity
+
+<math>\sum_{j=0}^{N-1} e^{x j} = \frac{1 - e^{Nx}}{1 - e^x}.</math>
+
+Substituting into our equation, we find:
+
+{|
+|-
+|<math>\Psi\, </math>
+|<math>= a C \frac{\sin\frac{ka\sin\theta}{2}}{\frac{ka\sin\theta}{2}}\left(\frac{1 - e^{iNkd\sin\theta}}{1 - e^{ikd\sin\theta}}\right)</math>
+|-
+|
+|<math>= a C \frac{\sin\frac{ka\sin\theta}{2}}{\frac{ka\sin\theta}{2}}\left(\frac{e^{-iNkd\frac{\sin\theta}{2}}-e^{iNkd\frac{\sin\theta}{2}}}{e^{-ikd\frac{\sin\theta}{2}}-e^{ikd\frac{\sin\theta}{2}}}\right)\left(\frac{e^{iNkd\frac{\sin\theta}{2}}}{e^{ikd\frac{\sin\theta}{2}}}\right)</math>
+|-
+|
+|<math>= a C \frac{\sin\frac{ka\sin\theta}{2}}{\frac{ka\sin\theta}{2}}\frac{\frac{e^{-iNkd \frac{\sin\theta}{2}} - e^{iNkd\frac{\sin\theta}{2}}}{2i}}{\frac{e^{-ikd\frac{\sin\theta}{2}} - e^{ikd\frac{\sin\theta}{2}}}{2i}} \left(e^{i(N-1)kd\frac{\sin\theta}{2}}\right)</math>
+|-
+|
+|<math>= a C \frac{\sin\left(\frac{ka\sin\theta}{2}\right)}{\frac{ka\sin\theta}{2}} \frac{\sin\left(\frac{Nkd\sin\theta}{2}\right)} {\sin\left(\frac{kd\sin\theta}{2}\right)}e^{i\left(N-1\right)kd\frac{\sin\theta}{2}} </math>
+|}
+
+We now make our <math>k</math> substitution as before and represent all non-oscillating constants by the <math>I_0</math> variable as in the 1-slit diffraction and bracket the result.  Remember that 
+
+:<math>\langle e^{ix} \Big| e^{ix}\rangle\ = e^0 = 1</math>
+
+This allows us to discard the tailing exponent and we have our answer:
+
+:<math>I\left(\theta\right) = I_0 \left[ \operatorname{sinc} \left( \frac{\pi a}{\lambda} \sin \theta \right) \right]^2 \cdot \left[\frac{\sin\left(\frac{N\pi d}{\lambda}\sin\theta\right)}{\sin\left(\frac{\pi d}{\lambda}\sin\theta\right)}\right]^2</math>
+
+==General case for far field==
+In the far field, where r is essentially constant, then the equation:
+
+:<math>\Psi = \int_{\mathrm{slit}} \frac{i}{r\lambda} \Psi^\prime e^{-ikr}\,d\mathrm{slit}</math>
+
+is equivalent to doing a [[fourier transform]] on the gaps in the barrier.<ref>J. M. Rodenburg, [http://www.rodenburg.org/theory/y1300.html The Fourier Transform]</ref>
+
+==See also==
+*[[Diffraction grating]]
+*[[Envelope (waves)]]
+*[[Fourier analysis]]
+*[[Radio telescopes]]
+
+==References==
+{{reflist}}
+
+[[Category:Concepts in physics]]
+[[Category:Diffraction|*]]
+[[Category:Wave mechanics]]

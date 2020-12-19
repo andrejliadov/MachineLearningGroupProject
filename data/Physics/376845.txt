@@ -1,0 +1,106 @@
+{{short description|Pair of electrons (or other fermions) bound together at low temperatures in a certain manner which is responsible for superconductivity as described in the BCS theory}}
+In [[condensed matter physics]], a '''Cooper pair''' or '''BCS pair''' ('''Bardeen–Cooper–Schrieffer pair''') is a pair of [[electrons]] (or other [[fermion]]s) bound together at [[low temperatures]] in a certain manner first described in 1956 by American physicist [[Leon Cooper]].<ref>
+{{cite journal
+| last = Cooper | first = Leon N.
+| title = Bound electron pairs in a degenerate Fermi gas
+| journal = [[Physical Review]]
+| volume = 104 | issue = 4 | pages = 1189–1190
+| year = 1956
+| doi = 10.1103/PhysRev.104.1189
+|bibcode = 1956PhRv..104.1189C | doi-access = free
+}}</ref> 
+
+==Cooper pair==
+Cooper showed that an arbitrarily small attraction between electrons in a [[metal]] can cause a paired state of electrons to have a lower energy than the [[Fermi energy]], which implies that the pair is bound. In conventional [[superconductors]], this attraction is due to the [[electron]]–[[phonon]] interaction. The Cooper pair state is responsible for superconductivity, as described in the [[BCS theory]] developed by [[John Bardeen]], [[Leon Cooper]], and [[John Schrieffer]] for which they shared the 1972 [[Nobel Prize]].<ref name="Hyperphysics">
+{{cite web
+| last = Nave | first = Carl R.
+| title = Cooper Pairs
+| work = [[Hyperphysics]]
+| publisher = Dept. of Physics and Astronomy, Georgia State Univ.
+| year = 2006
+| url = http://hyperphysics.phy-astr.gsu.edu/Hbase/solids/coop.html
+| accessdate = 2008-07-24
+}}</ref>
+
+Although Cooper pairing is a quantum effect, the reason for the pairing can be seen from a simplified classical explanation.<ref name="Hyperphysics"/><ref>
+{{cite journal
+|title=Spatial Structure of the Cooper Pair
+|last1=Kadin | first1=Alan M.
+|year=2005
+|doi=10.1007/s10948-006-0198-z
+|journal=Journal of Superconductivity and Novel Magnetism
+|volume=20
+|issue=4
+|pages=285–292
+|arxiv=cond-mat/0510279
+}}</ref> An electron in a [[metal]] normally behaves as a [[free particle]]. The electron is repelled from other electrons due to their negative [[charge (physics)|charge]], but it also attracts the positive [[ion]]s that make up the rigid lattice of the metal. This attraction distorts the ion lattice, moving the ions slightly toward the electron, increasing the positive charge density of the lattice in the vicinity. This positive charge can attract other electrons. At long distances, this attraction between electrons due to the displaced ions can overcome the electrons' repulsion due to their negative charge, and cause them to pair up. The rigorous quantum mechanical explanation shows that the effect is due to [[electron]]–[[phonon]] interactions, with the phonon being the collective motion of the positively-charged lattice.<ref>
+{{cite book
+| last = Fujita | first = Shigeji |author2=Ito, Kei |author3=Godoy, Salvador
+| title = Quantum Theory of Conducting Matter
+| url = https://archive.org/details/quantumtheorycon00fuji | url-access = limited | publisher = [[Springer Publishing]]
+| year = 2009
+| pages = [https://archive.org/details/quantumtheorycon00fuji/page/n34 15]–27
+| isbn = 978-0-387-88211-6
+}}</ref>
+
+The energy of the pairing interaction is quite weak, of the order of 10<sup>−3</sup>&nbsp;[[Electron volt|eV]], and thermal energy can easily break the pairs. So only at low temperatures, in metal and other substrates, are a significant number of the electrons in Cooper pairs.
+
+The electrons in a pair are not necessarily close together; because the interaction is long range, paired electrons may still be many hundreds of [[nanometre|nanometers]] apart. This distance is usually greater than the average interelectron distance so that many Cooper pairs can occupy the same space.<ref>
+{{cite book
+| last = Feynman | first = Richard P. |author2=Leighton, Robert |author3=Sands, Matthew
+| title = Lectures on Physics, Vol.3
+| url = https://archive.org/details/feynmanlectureso00feyn_396 | url-access = limited | publisher = [[Addison–Wesley]]
+| year = 1965
+| pages = [https://archive.org/details/feynmanlectureso00feyn_396/page/n238 21]–7, 8
+| isbn = 0-201-02118-8
+}}</ref> Electrons have [[Spin-½|spin-{{frac|1|2}}]], so they are [[fermion]]s, but the [[angular momentum coupling|total spin]] of a Cooper pair is integer (0 or 1) so it is a [[composite boson]]. This means the [[wave function]]s are symmetric under particle interchange.  Therefore, unlike electrons, multiple Cooper pairs are allowed to be in the same quantum state, which is responsible for the phenomenon of superconductivity.
+
+The BCS theory is also applicable to other fermion systems, such as [[helium-3]]. Indeed, Cooper pairing is responsible for the [[superfluidity]] of helium-3 at low temperatures. It has also been recently demonstrated that a Cooper pair can comprise two bosons.<ref>{{Cite web |url=http://www.optical-lattice.com/index.php?lattice-site=cooper-pairs |title=Cooper Pairs of Bosons |access-date=2009-09-01 |archive-url=https://web.archive.org/web/20151209184323/http://www.optical-lattice.com/index.php?lattice-site=cooper-pairs |archive-date=2015-12-09 |url-status=dead }}</ref> Here, the pairing is supported by [[Quantum entanglement|entanglement]] in an optical lattice.
+
+== Relationship to superconductivity ==
+The tendency for all the Cooper pairs in a body to "[[Bose–Einstein condensation|condense]]" into the same [[Ground state|ground quantum state]] is responsible for the peculiar properties of superconductivity.
+
+Cooper originally considered only the case of an isolated pair's formation in a metal. When one considers the more realistic state of many electronic pair formations, as is elucidated in the full BCS theory, one finds that the pairing opens a gap in the continuous spectrum of allowed energy states of the electrons, meaning that all excitations of the system must possess some minimum amount of energy. This ''gap to excitations'' leads to superconductivity, since small excitations such as scattering of electrons are forbidden.<ref>
+{{cite web
+| last = Nave
+| first = Carl R.
+| title = The BCS Theory of Superconductivity
+| work = [[Hyperphysics]]
+| publisher = Dept. of Physics and Astronomy, Georgia State Univ.
+| year = 2006
+| url = http://hyperphysics.phy-astr.gsu.edu/hbase/solids/bcs.html#c1
+| accessdate = 2008-07-24}}</ref>
+The gap appears due to many-body effects between electrons feeling the attraction.
+
+R. A. Ogg, Jr., was first to suggest that electrons might act as pairs coupled by lattice vibrations in the material.<ref>{{cite journal | last=Ogg | first=Richard A. | title=Bose-Einstein Condensation of Trapped Electron Pairs. Phase Separation and Superconductivity of Metal-Ammonia Solutions | journal=Physical Review | publisher=American Physical Society (APS) | volume=69 | issue=5–6 | date=1 February 1946 | issn=0031-899X | doi=10.1103/physrev.69.243 | pages=243–244}}</ref><ref>Poole Jr, Charles P, "Encyclopedic dictionary of condensed matter physics", (Academic Press, 2004), p. 576</ref> This was indicated by the [[isotope]] effect observed in superconductors. The isotope effect showed that materials with heavier ions (different [[isotope|nuclear isotopes]]) had lower superconducting transition temperatures. This can be explained by the theory of Cooper pairing: heavier ions are harder for the electrons to attract and move (how Cooper pairs are formed), which results in smaller binding energy for the pairs.
+
+The theory of Cooper pairs is quite general and does not depend on the specific electron-phonon interaction.  Condensed matter theorists have proposed pairing mechanisms based on other attractive interactions such as electron–[[exciton]] interactions or electron–[[plasmon]] interactions. Currently, none of these other pairing interactions has been observed in any material.
+
+An experiment to create a Cooper pair from positrons would make a great contribution to understanding the formation of an electron pair.
+
+It should be mentioned that Cooper pairing does not involve individual electrons pairing up to form "quasi-bosons". The paired states are energetically favored, and electrons go in and out of those states preferentially. This is a fine distinction that John Bardeen makes:
+
+:''"The idea of paired electrons, though not fully accurate, captures the sense of it." <ref>{{cite book | last=Bardeen | first=John | title=Cooperative Phenomena | url=https://archive.org/details/cooperativepheno00mott | url-access=limited | chapter=Electron-Phonon Interactions and Superconductivity | publisher=Springer Berlin Heidelberg |location=Berlin, Heidelberg | year=1973 | isbn=978-3-642-86005-8 | doi=10.1007/978-3-642-86003-4_6 |editor=H. Haken and M. Wagner |page=[https://archive.org/details/cooperativepheno00mott/page/n80 67]}}</ref>
+
+The mathematical description of the second-order coherence involved here is given by Yang.<ref>{{cite journal | last=Yang | first=C. N. | title=Concept of Off-Diagonal Long-Range Order and the Quantum Phases of Liquid He and of Superconductors | journal=Reviews of Modern Physics | publisher=American Physical Society (APS) | volume=34 | issue=4 | date=1 September 1962 | issn=0034-6861 | doi=10.1103/revmodphys.34.694 | pages=694–704 | bibcode=1962RvMP...34..694Y}}</ref>
+
+== See also ==
+* [[Color–flavor locking]]
+* [[Superinsulator]]
+* [[Lone pair]]
+* [[Electron pair]]
+
+== References ==
+{{reflist}}
+
+{{DEFAULTSORT:Cooper Pair}}
+[[Category:Superconductivity]]
+[[Category:Concepts in physics]]
+[[Category:Superconductors]]
+[[Category:Spintronics]]
+[[Category:Quantum phases]]
+[[Category:Charge carriers]]
+
+== Further reading ==
+* [[Michael Tinkham]], ''Introduction to Superconductivity'', {{ISBN|0-486-43503-2}}
+* Schmidt, Vadim Vasil'evich. The physics of superconductors: Introduction to fundamentals and applications. Springer Science & Business Media, 2013.

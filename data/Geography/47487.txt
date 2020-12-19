@@ -1,0 +1,171 @@
+{{short description|The angle between a reference plane and a point}}
+{{other uses}}
+[[File:Azimuth-Altitude schematic.svg|right|thumb|The azimuth is the angle formed between a reference direction (in this example north) and a [[sightline|line]] from the observer to a point of interest projected on the same plane as the reference direction orthogonal to the [[zenith]].]]
+{{Astrodynamics}}
+An '''azimuth''' ({{IPAc-en|audio=en-us-azimuth.ogg|ˈ|æ|z|ɪ|m|ə|θ}}; from Arabic اَلسُّمُوت ''as-sumūt'', 'the directions', the plural form of the Arabic noun السَّمْت ''as-samt'', meaning 'the direction') is an [[Angle#Measuring angles|angular measurement]] in a [[spherical coordinate system]]. The [[vector space|vector]] from an observer ([[origin (mathematics)|origin]]) to a point of interest is [[graphical projection|projected]] [[perpendicular]]ly onto a [[reference plane]]; the angle between the projected vector and a reference vector on the reference plane is called the azimuth.
+
+When used as a [[horizontal coordinate system|celestial coordinate]], the azimuth is the [[horizon]]tal direction of a [[star]] or other [[astronomical object]] in the [[sky]]. The star is the point of interest, the reference plane is the local area (e.g. a circular area 5&nbsp;km in radius at [[sea level]]) around an observer on [[planetary surface|Earth's surface]], and the reference vector points to [[true north]]. The azimuth is the angle between the north vector and the star's vector on the [[horizontal plane]].<ref>{{cite web |url=http://dictionary.reference.com/browse/azimuth |title=Azimuth |work=[[Dictionary.com]]}}</ref>
+
+Azimuth is usually measured in [[degree (angle)|degrees]] (°). The concept is used in [[navigation]], [[astrometry|astronomy]], [[engineering]], [[map]]ping, mining, and [[ballistics]].
+
+==Navigation==
+[[File:True North Mount Allen.fw.png|thumb|left|Azimuth Marker, Mount Allen ([[Sandstone Peak]]), Southern California, USA.]] In land navigation, azimuth is usually denoted [[alpha]], ''α'', and defined as a horizontal angle measured [[clockwise and counterclockwise|clockwise]] from a north base line or ''[[meridian (geography)|meridian]]''.<ref>U.S. Army, ''Map Reading and Land Navigation'', FM 21–26, Headquarters, Dept. of the Army, Washington, D.C. (7 May 1993), ch. 6, p. 2</ref><ref>U.S. Army, ''Map Reading and Land Navigation'', FM 21–26, Headquarters, Dept. of the Army, Washington, D.C. (28 March 1956), ch. 3, p. 63</ref> ''Azimuth'' has also been more generally defined as a horizontal angle measured clockwise from any fixed reference plane or easily established base direction line.<ref>U.S. Army, ch. 6 p. 2</ref><ref>U.S. Army, ''Advanced Map and Aerial Photograph Reading'', Headquarters, War Department, Washington, D.C. (17 September 1941), pp. 24–25</ref><ref>U.S. Army, ''Advanced Map and Aerial Photograph Reading'', Headquarters, War Department, Washington, D.C. (23 December 1944), p. 15</ref>
+
+Today, the reference plane for an azimuth is typically [[true north]], measured as a 0° azimuth, though other angular units ([[grad (angle)|grad]], [[Angular mil|mil]]) can be used. Moving clockwise on a 360 degree circle, east has azimuth 90°, south 180°, and west 270°. There are exceptions: some navigation systems use south as the reference vector. Any direction can be the reference vector, as long as it is clearly defined.
+
+Quite commonly, azimuths or compass bearings are stated in a system in which either north or south can be the zero, and the angle may be measured clockwise or anticlockwise from the zero. For example, a bearing might be described as "(from) south, (turn) thirty degrees (toward the) east" (the words in brackets are usually omitted), abbreviated "S30°E", which is the bearing 30 degrees in the eastward direction from south, i.e. the bearing 150 degrees clockwise from north. The reference direction, stated first, is always north or south, and the turning direction, stated last, is east or west. The directions are chosen so that the angle, stated between them, is positive, between zero and 90 degrees. If the bearing happens to be exactly in the direction of one of the [[cardinal point]]s, a different notation, e.g. "due east", is used instead.
+
+===True north-based azimuths===
+{| class="wikitable" style="background:transparent; border:none;"
+|+ From north
+|-
+| North || align="center" | 0°
+| rowspan="8" style="background:transparent; border:none;"|
+| South || align="center" | 180°
+|-
+| North-northeast || align="center" | 22.5°
+| South-southwest || align="center" | 202.5°
+|-
+| Northeast || align="center" | 45°
+| Southwest || align="center" | 225°
+|-
+| East-northeast || align="center" | 67.5°
+| West-southwest || align="center" | 247.5°
+|-
+| East || align="center" | 90°
+| West || align="center" | 270°
+|-
+| East-southeast || align="center" | 112.5°
+| West-northwest || align="center" | 292.5°
+|-
+| Southeast || align="center" | 135°
+| Northwest || align="center" | 315°
+|-
+| South-southeast || align="center" | 157.5°
+| North-northwest || align="center" | 337.5°
+|}
+
+==Cartographical azimuth==
+[[File:Brunton.JPG|thumb|right|A standard Brunton Geo [[compass]], commonly used by geologists and surveyors to measure azimuth]]
+The cartographical azimuth (in decimal degrees) can be calculated when the coordinates of 2 points are known in a flat plane ([[Spatial reference system|cartographical coordinates]]):
+
+:<math>\alpha = \frac{180}{\pi} \operatorname{atan2}(X_2 - X_1, Y_2 - Y_1)</math>
+
+Remark that the reference axes are swapped relative to the (counterclockwise) mathematical [[polar coordinate system]] and that the azimuth is clockwise relative to the north.
+This is the reason why the X and Y axis in the above formula are swapped.
+If the azimuth becomes negative, one can always add 360°.
+
+The formula in [[radian]]s would be slightly easier:
+:<math>\alpha = \operatorname{atan2}(X_2 - X_1, Y_2 - Y_1)</math>
+
+Note the swapped <math>(x, y)</math> in contrast to the normal <math>(y, x)</math> [[atan2]] input order.
+
+===Calculating coordinates===
+When the coordinates (''X''<sub>1</sub>, ''Y''<sub>1</sub>) of one point, the distance ''D'', and the azimuth ''α'' to another point (''X''<sub>2</sub>, ''Y''<sub>2</sub>) are known, one can calculate its coordinates:
+
+:<math>\begin{align}
+  X_2 &= X_1 + D \sin\alpha \\
+  Y_2 &= Y_1 + D \cos\alpha
+\end{align}</math>
+
+This is typically used in [[triangulation]] and azimuth identification (AzID), especially in [[radar]] applications.
+
+==Calculating azimuth==
+[[File:Bearing and azimuth along the geodesic.png|thumb|The azimuth between [[Cape Town]] and [[Melbourne]] along the [[geodesic]] (the shortest route) changes from 141° to 42°. [[Orthographic projection in cartography|Azimuthal orthographic projection]] and [[Miller cylindrical projection]].]]
+We are standing at latitude <math>\varphi_1</math>, longitude zero; we want to find the azimuth from our viewpoint to Point 2 at latitude <math>\varphi_2</math>, longitude ''L'' (positive eastward). We can get a fair approximation by assuming the Earth is a sphere, in which case the azimuth ''α'' is given by
+
+:<math>\tan\alpha = \frac{\sin L}{\cos\varphi_1 \tan\varphi_2 - \sin\varphi_1 \cos L}</math>
+
+A better approximation assumes the Earth is a slightly-squashed sphere (an ''[[oblate spheroid]]''); ''azimuth'' then has at least two very slightly different meanings. ''Normal-section azimuth'' is the angle measured at our viewpoint by a theodolite whose axis is perpendicular to the surface of the spheroid; ''geodetic azimuth'' is the angle between north and the ''geodesic''; that is, the shortest path on the surface of the spheroid from our viewpoint to Point 2. The difference is usually immeasurably small; if Point 2 is not more than 100&nbsp;km away, the difference will not exceed 0.03 arc second.
+
+Various websites will calculate geodetic azimuth; e.g., [http://www.ga.gov.au/geodesy/datums/vincenty_inverse.jsp GeoScience Australia site]. Formulas for calculating geodetic azimuth are linked in the [[Geographical distance#Ellipsoidal-surface formulae|distance article]].
+
+Normal-section azimuth is simpler to calculate; Bomford says Cunningham's formula is exact for any distance.{{citation needed|reason=No mention of (Guy) Bomford or Cunningham anywhere else on this page|date=September 2015}} If ''f'' is the flattening, and ''e'' the eccentricity, for the chosen spheroid (e.g., {{frac|{{val|298.257223563}}}} for [[World Geodetic System|WGS84]]) then
+
+: <math>\begin{align}
+         e^2 &= f(2 - f) \\
+     1 - e^2 &= (1 - f)^2 \\
+     \Lambda &= \left(1 - e^2\right) \frac{\tan\varphi_2}{\tan\varphi_1} + e^2
+       \sqrt{\frac{1 + \left(1 - e^2\right)\left(\tan\varphi_2\right)^2}
+                  {1 + \left(1 - e^2\right)\left(\tan\varphi_1\right)^2}} \\
+  \tan\alpha &= \frac{\sin L}{(\Lambda - \cos L)\sin\varphi_1}
+\end{align}</math>
+
+If ''φ''<sub>1</sub> = 0 then
+
+: <math>\tan\alpha = \frac{\sin L}{\left(1 - e^2\right)\tan\varphi_2}</math>
+
+To calculate the azimuth of the sun or a star given its declination and hour angle at our location, we modify the formula for a spherical earth. Replace ''φ''<sub>2</sub> with declination and longitude difference with hour angle, and change the sign (since the hour angle is positive westward instead of east).
+
+==Mapping==
+There is a wide variety of [[Map projection#Azimuthal .28projections onto a plane.29|azimuthal map projections]]. They all have the property that directions (the azimuths) from a central point are preserved. Some navigation systems use south as the reference plane. However, any direction can serve as the plane of reference, as long as it is clearly defined for everyone using that system.
+{|align=left
+|{{comparison_azimuthal_projections.svg|820px|}}
+|}
+{{clear}}
+
+==Astronomy==
+Used in celestial navigation, an ''azimuth'' is the direction of a celestial body from the observer.<ref>Rutstrum, Carl, The Wilderness Route Finder, University of Minnesota Press (2000), {{ISBN|0-8166-3661-3}}, p. 194</ref> In astronomy, an ''azimuth'' is sometimes referred to as a [[bearing (navigation)|bearing]]. In modern [[astronomy]] azimuth is nearly always measured from the north.
+(The article on [[Celestial coordinate system|coordinate systems]], for example, uses a convention measuring from the south.) In former times, it was common to refer to azimuth from the south, as it was then zero at the same time that the [[hour angle]] of a [[star]] was zero. This assumes, however, that the star [[culmination|(upper) culminates]] in the south, which is only true if the star's [[declination]] is less than (i.e. further south than) the observer's [[latitude]].
+
+==Other systems==
+
+===Right ascension===
+If, instead of measuring from and along the horizon, the angles are measured from and along the [[celestial equator]], the angles are called [[right ascension]] if referenced to the Vernal Equinox, or hour angle if referenced to the [[celestial meridian]].
+
+===Horizontal coordinate===
+In the [[horizontal coordinate system]], used in [[celestial navigation]] and [[satellite dish]] installation, azimuth is one of the two [[coordinate system|coordinates]]. The other is [[Altitude (astronomy)|altitude]], sometimes called elevation above the horizon. See also: [[Sat finder]].
+
+===Polar coordinate===
+In mathematics, the azimuth angle of a point in [[cylindrical coordinate system|cylindrical coordinates]] or [[spherical coordinate system|spherical coordinates]] is the anticlockwise [[angle]] between the positive ''x''-axis and the projection of the [[Vector (geometry)|vector]] onto the ''xy''-[[plane (mathematics)|plane]]. The angle is the same as an angle in [[polar coordinates]] of the component of the vector in the ''xy''-plane and is normally measured in [[radian]]s rather than degrees. As well as measuring the angle differently, in mathematical applications [[theta]], ''θ'', is very often used to represent the azimuth rather than the representation of symbol  [[phi (letter)|phi]] ''φ''.
+
+==Other uses of the word==
+For [[tape drive|magnetic tape drives]], ''azimuth'' refers to the angle between the tape head(s) and tape.
+
+In [[sound localization]] experiments and literature, the ''azimuth'' refers to the angle the sound source makes compared to the imaginary straight line that is drawn from within the head through the area between the eyes.
+
+An [[azimuth thruster]] in [[shipbuilding]] is a [[propeller]] that can be rotated horizontally.
+
+==Etymology of the word==
+The word azimuth is in all European languages today. It originates from medieval Arabic ''al-sumūt'', pronounced ''as-sumūt'' in Arabic, meaning "the directions" (plural of Arabic ''al-samt'' = "the direction"). The Arabic word entered late medieval Latin in an astronomy context and in particular in the use of the Arabic version of the [[astrolabe]] astronomy instrument. The word's first record in English is in the 1390s in ''[[Treatise on the Astrolabe]]'' by [[Geoffrey Chaucer]]. The first known record in any Western language is in Spanish in the 1270s in an astronomy book that was largely derived from Arabic sources, the ''[[Libros del saber de astronomía]]'' commissioned by [[King Alfonso X]] of Castile.<ref>"Azimuth" at [https://archive.org/stream/oed01arch#page/602/mode/1up ''New English Dictionary on Historical Principles'']; "azimut" at [http://www.cnrtl.fr/definition/azimut ''Centre National de Ressources Textuelles et Lexicales'']; "al-Samt" at [http://referenceworks.brillonline.com/entries/encyclopaedia-of-islam-2/al-samt-SIM_6591 ''Brill's Encyclopedia of Islam'']; "azimuth" at [http://englishwordsofarabicancestry.wordpress.com/#cite_note-39 EnglishWordsOfArabicAncestry.wordpress.com] {{webarchive |url=https://web.archive.org/web/20140102020035/http://englishwordsofarabicancestry.wordpress.com/#cite_note-39 |date=January 2, 2014 }}. In Arabic the written ''al-sumūt'' is always pronounced ''as-sumūt'' (see [[Sun and moon letters|pronunciation of "al-" in Arabic]]).</ref>
+
+==See also==
+{{Portal|Geography}}
+{{cols|colwidth=21em}}
+* [[Altitude (astronomy)]]
+* [[Azimuthal quantum number]]
+* [[Azimuthal equidistant projection]]
+* [[Bearing (navigation)]]
+* [[Clock position]]
+* [[Course (navigation)]]
+* [[Inclination]]
+* [[Longitude]]
+* [[Latitude]]
+* [[Magnetic declination]]
+* [[Panning (camera)]]
+* [[Relative bearing]]
+* [[Sextant]]
+* [[Solar azimuth angle]]
+* [[Sound localization|Sound Localization]]
+* [[Zenith]]
+{{colend}}
+
+==Notes==
+{{Reflist}}
+
+==References==
+* Rutstrum, Carl, ''The Wilderness Route Finder'', University of Minnesota Press (2000), {{ISBN|0-8166-3661-3}}
+* U.S. Army, ''Advanced Map and Aerial Photograph Reading'', FM 21–26, Headquarters, War Department, Washington, D.C. (17 September 1941)
+* U.S. Army, ''Advanced Map and Aerial Photograph Reading'', FM 21–26, Headquarters, War Department, Washington, D.C. (23 December 1944)
+* U.S. Army, ''Map Reading and Land Navigation'', FM 21–26, Headquarters, Dept. of the Army, Washington, D.C. (7 May 1993)
+
+==External links==
+{{Wiktionary|azimuth}}
+*{{Cite EB1911|wstitle=Azimuth |short=x}}
+*{{Cite Collier's|wstitle=Azimuth|year=1921 |short=x}}
+
+[[Category:Angle]]
+[[Category:Astronomy]]
+[[Category:Navigation]]
+[[Category:Surveying]]
+[[Category:Celestial coordinate system]]

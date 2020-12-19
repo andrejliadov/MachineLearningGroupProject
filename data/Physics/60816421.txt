@@ -1,0 +1,80 @@
+{{hatnote|This article is about the definitions of the SI units prior to the [[2019 redefinition of SI base units]]}}
+
+From 2005 to early 2019, the definitions of the [[SI base units]] were as follows:
+
+{| class="wikitable"
+|+ style="font-size:largerfont-weight:bold;"|SI base units
+!Name
+! style="text-align: center" | Symbol
+!Measure
+!Pre-2019 (2005) formal definition<ref name="sibro">{{SIbrochure8th}}</ref>
+!Historical&nbsp;origin / justification
+![[Dimensional analysis|Dimension<br>symbol]]
+|-
+|[[metre]]
+| style="text-align: center" | m
+|[[length]]
+|"The metre is the length of the path travelled by light in vacuum during a time interval of 1&nbsp;/&nbsp;{{val|299792458}} of a second."<br/>''17th CGPM (1983, Resolution 1, CR, 97)''
+|1&nbsp;/&nbsp;{{val|10000000}} of the distance from the [[Earth]]'s equator to the North Pole measured on the circumference through [[Paris]].
+|style="text-align:center" | L
+|-
+|[[kilogram]]
+| style="text-align: center" | kg
+|[[mass]]
+|"The kilogram is the unit of mass; it is equal to the mass of the international prototype of the kilogram."<br/>''3rd CGPM (1901, CR, 70)''
+|The mass of one [[litre]] of [[water]] at the temperature of melting ice. A litre is one thousandth of a cubic metre.
+|style="text-align:center" | M
+|-
+|[[second]]
+| style="text-align: center" | s
+|[[time]]
+|"The second is the duration of {{val|9192631770}} periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom."<br/>''13th CGPM (1967/68, Resolution 1; CR, 103)''<br />"This definition refers to a caesium atom at rest at a temperature of 0&nbsp;K."<br />''(Added by CIPM in 1997)''
+|The day is divided in 24 hours, each hour divided in 60 minutes, each minute divided in 60 seconds.<br/>A second is 1&nbsp;/&nbsp;(24&nbsp;×&nbsp;60&nbsp;×&nbsp;60) of the [[day]].
+|style="text-align:center" | T
+|-
+|[[ampere]]
+| style="text-align: center" | A
+|[[electric current]]
+|"The ampere is that constant current which, if maintained in two straight parallel conductors of infinite length, of negligible circular cross-section, and placed 1 metre apart in vacuum, would produce between these conductors a force equal to {{val|2|e=-7}} [[newton (unit)|newton]] per metre of length."<br/>''9th CGPM (1948)''
+|The original "International Ampere" was defined electrochemically as the current required to deposit 1.118 milligrams of silver per second from a solution of [[silver nitrate]]. Compared to the SI ampere, the difference is 0.015%.
+|style="text-align:center" | I
+|-
+|[[kelvin]]
+| style="text-align: center" | K
+|[[thermodynamic temperature]]
+|"The kelvin, unit of thermodynamic temperature, is the fraction 1&nbsp;/&nbsp;{{val|273.16}} of the thermodynamic temperature of the [[triple point]] of water."<br/>''13th CGPM (1967/68, Resolution 4; CR, 104)''<br />"This definition refers to water having the isotopic composition defined exactly by the following amount of substance ratios: {{nowrap|0.000 155 76}} mole of <sup>2</sup>H per mole of <sup>1</sup>H, {{nowrap|0.000 379 9}} mole of <sup>17</sup>O per mole of <sup>16</sup>O, and {{nowrap|0.002 005 2}} mole of <sup>18</sup>O per mole of <sup>16</sup>O."<br />''(Added by CIPM in 2005)''
+|The [[Celsius scale]]: the Kelvin scale uses the degree Celsius for its unit increment, but is a thermodynamic scale (0&nbsp;K is [[absolute zero]]).
+|style="text-align:center" | Θ
+|-
+|[[Mole (unit)|mole]]
+| style="text-align: center" | mol
+|[[amount of substance]]
+|"1. The mole is the amount of substance of a system which contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12; its symbol is 'mol'.<br />
+2. When the mole is used, the elementary entities must be specified and may be atoms, molecules, ions, electrons, other particles, or specified groups of such particles."<br/>''14th CGPM (1971, Resolution 3; CR, 78)''<br />"In this definition, it is understood that unbound atoms of carbon 12, at rest and in their ground state, are referred to."<br />''(Added by CIPM in 1980)''
+|[[Atomic weight]] or [[molecular weight]] divided by the [[molar mass constant]], 1&nbsp;g/mol.
+|style="text-align:center" | N
+|-
+|[[candela]]
+| style="text-align: center" | cd
+|[[luminous intensity]]
+|"The candela is the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency {{val|540|e=12}} hertz and that has a radiant intensity in that direction of 1&nbsp;/&nbsp;683 watt per [[steradian]]."<br/>''16th CGPM (1979, Resolution 3; CR, 100)''
+|The [[candlepower]], which is based on the light emitted from a burning candle of standard properties.
+|style="text-align:center" | J
+|-
+!Name
+!Symbol
+!Measure
+!Pre-2019 (2005) formal definition<ref name="sibro">{{SIbrochure8th}}</ref>
+!Historical&nbsp;origin / justification
+![[Dimensional analysis|Dimension<br>symbol]]
+|-
+|}
+
+== References ==
+{{reflist}}
+
+{{SI units}}
+
+[[Category:SI units]]
+
+{{physics-stub}}

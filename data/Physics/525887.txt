@@ -1,0 +1,417 @@
+{{short description|Describes the number of states per interval of energy at each energy level available to be occupied in a system}}
+{{condensed matter physics}}
+In  [[solid state physics]] and [[condensed matter physics]], the '''density of states''' ('''DOS''') of a system describes the proportion of states that are to be occupied by the system at each energy. The density of states is defined as <math> D(E) = N(E)/V </math>, where <math>N(E)\delta E</math> is the number of states in the system of volume <math>V</math> whose energies lie in the range <math>E+\delta E</math>. It is mathematically represented as a distribution by a [[probability density function]], and it is generally an average over the space and time domains of the various states occupied by the system. The density of states is directly related to the [[dispersion relation]]s of the properties of the system. High DOS at a specific energy level means that many states are available for occupation.
+
+Generally, the density of states of matter is continuous. In [[isolated system]]s however, such as atoms or molecules in the gas phase, the density distribution is [[Discrete distribution|discrete]], like a [[spectral density]]. Local variations, most often due to distortions of the original system, are often referred to as '''local densities of states''' (LDOSs).
+
+==Introduction==
+In quantum mechanical systems, waves, or wave-like particles, can occupy modes or states with wavelengths and propagation directions dictated by the system. For example, in some systems, the interatomic spacing and the atomic charge of a material might allow only electrons of certain wavelengths to exist. In other systems, the crystalline structure of a material might allow waves to propagate in one direction, while suppressing wave propagation in another direction. Often, only specific states are permitted. Thus, it can happen that many states are available for occupation at a specific energy level, while no states are available at other energy levels .
+
+Looking at the density of states of electrons at the band edge between the [[valence and conduction bands]] in a semiconductor, for an electron in the conduction band, an increase of the electron energy makes more states available for occupation. Alternatively, the density of state is discontinuous for an interval of energy, which means that no states are available for electrons to occupy within the band gap of the material. This condition also means that an electron at the conduction band edge must lose at least the band gap energy of the material in order to transition to another state in the valence band.
+
+This determines if the material is an [[Insulator (electricity)|insulator]] or a [[Electrical conductor|metal]] in the dimension of the propagation. The result of the number of states in a [[Electronic band structure|band]] is also useful for predicting the conduction properties. For example, in a one dimensional crystalline structure an odd number of [[electron]]s per atom results in a half-filled top band; here are free electrons at the [[Fermi level]] resulting in a metal. On the other hand, an even number of electrons exactly fills a whole number of bands, leaving the rest empty. If then the Fermi level lies in an occupied band gap between the highest occupied state and the lowest empty state, the material will be an insulator or [[semiconductor]].
+
+Depending on the quantum mechanical system, the density of states can be calculated for [[electron]]s, [[photon]]s, or [[phonon]]s, and can be given as a function of either energy or the [[wave vector]] ''k''. To convert between the DOS as a function of the energy and the DOS as a function of the wave vector, the system-specific energy dispersion relation between ''E'' and ''k'' must be known.
+
+In general, the topological properties of the system such as the band structure, have a major impact on the properties of the density of states. The most well-known systems, like [[neutronium]] in [[neutron star]]s and [[Free electron model|free electron gases in metals]] (examples of [[degenerate matter]] and a [[Fermi gas]]), have a 3-dimensional [[Euclidean topology]]. Less familiar systems, like [[two-dimensional electron gas]]es (2DEG) in [[graphite]] layers and the [[quantum Hall effect]] system in [[MOSFET]] type devices, have a 2-dimensional Euclidean topology. Even less familiar are [[carbon nanotubes]], the [[quantum wire]] and [[Luttinger liquid]] with their 1-dimensional topologies. Systems with 1D and 2D topologies are likely to become more common, assuming developments in [[nanotechnology]] and [[materials science]] proceed.
+
+==Definition==
+The density of states related to volume ''V'' and ''N'' countable energy levels is defined as:
+:<math> D(E) = \frac{1}{V} \, \sum _{i=1}^N \delta (E - E({\mathbf{k}}_i)). </math>
+Because the smallest allowed change of momentum <math>k</math> for a particle in a box of dimension <math>d</math> and length <math>L</math> is <math> (\Delta k)^d = (\tfrac{2\pi}{L})^d </math>, the volume-related density of states for continuous energy levels is obtained in the limit <math>L \to \infty</math> as
+:<math> D(E) := \int_{\mathbb{R}^d}{\frac{\mathrm{d}^d k}{(2\pi)^d}} \cdot \delta (E - E(\mathbf{k})),</math>
+Here, <math>d</math> is the spatial dimension of the considered system and <math>\mathbf{k}</math> the wave vector.
+
+For isotropic one-dimensional systems with parabolic energy dispersion, the density of states is<math>D_{1D}(E)=\tfrac{1}{\pi\hbar}(\tfrac{2m}{E})^{1/2}</math>. In two dimensions the density of states is a constant <math>D_{2D}=\tfrac{m}{\pi\hbar^2}</math>, while in three dimensions it becomes <math>D_{3D}(E)=\tfrac{m}{\pi^2\hbar^3}(2mE)^{1/2}</math>.
+
+Equivalently, the density of states can also be understood as the derivative of the microcanonical partition function <math> Z_m (E)</math> (that is, the total number of states with energy less than <math>E</math>) with respect to the energy:
+:<math> D(E) = \frac {1}{V} \cdot \frac{\mathrm{d} Z_m (E)}{\mathrm{d} E}</math>.
+
+The number of states with energy <math> E' </math> (degree of degeneracy) is given by:
+:<math> g\left(E'\right) = \lim _{\Delta E\to 0} \int _{E'}^{E' + \Delta E} D(E) \mathrm{d} E = \lim _{\Delta E\to 0} D\left(E'\right) \Delta E,</math>
+where the last equality only applies when the mean value theorem for integrals is valid.
+
+==Symmetry==
+[[File:Brillouin Zone (1st, FCC).svg|thumb|260px|First Brillouin zone of the [[Cubic crystal system|FCC lattice]], a [[truncated octahedron]], showing symmetry labels for high symmetry lines and points]]
+There is a large variety of systems and types of states for which DOS calculations can be done.
+
+Some condensed matter systems possess a [[Crystal structure|structural]] [[symmetry]] on the microscopic scale which can be exploited to simplify calculation of their densities of states. In spherically symmetric systems, the integrals of functions are one-dimensional because all variables in the calculation depend only on the radial parameter of the dispersion relation. [[Fluid]]s, [[glass]]es and [[amorphous solid]]s are examples of a symmetric system whose [[dispersion relations]] have a rotational symmetry.
+
+[[File:Dual Cube-Octahedron.svg|thumb|150px|left|Octahedron.]]
+Measurements on powders or polycrystalline samples require evaluation and calculation functions and integrals over the whole [[Domain of a function|domain]], most often a [[Brillouin zone]], of the dispersion relations of the system of interest. Sometimes the symmetry of the system is high, which causes the shape of the functions describing the dispersion relations of the system to appear many times over the whole domain of the dispersion relation. In such cases the effort to calculate the DOS can be reduced by a great amount when the calculation is limited to a reduced zone or [[fundamental domain]].<ref name=Harrison>
+{{cite book |author=Walter Ashley Harrison |title=Electronic Structure and the Properties of Solids |year= 1989 
+|publisher=Dover Publications |url=https://books.google.com/books?id=R2VqQgAACAAJ |isbn=978-0-486-66021-9 }}
+</ref> The Brillouin zone of the [[Cubic crystal system|face-centered cubic lattice]] (FCC) in the figure on the right has the 48-fold symmetry of the [[Point groups in three dimensions|point group]] ''O<sub>h</sub>'' with full [[Octahedral symmetry#Achiral octahedral symmetry|octahedral symmetry]]. This configuration means that the integration over the whole domain of the Brillouin zone can be reduced to a 48-th part of the whole Brillouin zone. As a [[Periodic table (crystal structure)|crystal structure periodic table]] shows, there are many elements with a FCC crystal structure, like [[diamond]], [[silicon]] and [[platinum]] and their Brillouin zones and dispersion relations have this 48-fold symmetry. Two other familiar crystal structures are the body-centered cubic lattice (BCC) and hexagonal closed packed structures (HCP) with cubic and hexagonal lattices, respectively. The BCC structure has the 24-fold [[Tetrahedral symmetry#Pyritohedral symmetry|pyritohedral symmetry]] of the point group ''T<sub>h</sub>''. The HCP structure has the 12-fold [[Dihedral symmetry in three dimensions#Examples|prismatic dihedral]] symmetry of the point group ''D<sub>3h</sub>''. A complete list of symmetry properties of a point group can be found in [[List of character tables for chemically important 3D point groups#Character tables|point group character tables]].
+
+In general it is easier to calculate a DOS when the symmetry of the system is higher and the number of topological dimensions of the dispersion relation is lower. The DOS of dispersion relations with rotational symmetry can often be calculated analytically. This result is fortunate, since many materials of practical interest, such as steel and silicon, have high symmetry.
+
+In [[anisotropic]] condensed matter systems such as a [[single crystal]] of a compound, the density of states could be different in one crystallographic direction than in another. These causes the anisotropic density of states to be more difficult to visualize, and might require methods such as calculating the DOS for particular points or directions only, or calculating the projected density of states (PDOS) to a particular crystal orientation.
+
+{{clear}}
+
+==''k''-space topologies==
+
+[[File:K-space.JPG|thumb|250px|right|Figure 1: Spherical surface in ''k''-space for electrons in three dimensions.]]
+
+The density of states is dependent upon the dimensional limits of the object itself. In a system described by three orthogonal parameters (3 Dimension), the units of DOS is Energy<sup>−1</sup>Volume<sup>−1</sup> , in a two dimensional system, the units of DOS is Energy<sup>−1</sup>Area<sup>−1</sup> , in a one dimensional system, the units of DOS is Energy<sup>−1</sup>Length<sup>−1</sup>. The referenced volume is the volume of ''k''-space; the space enclosed by the [[constant energy surface]] of the system derived through a [[dispersion relation]] that relates ''E'' to ''k''. An example of a 3-dimensional ''k''-space is given in Fig. 1. It can be seen that the dimensionality of the system confines the momentum of particles inside the system.
+
+===Density of wave vector states (sphere)===
+The calculation for DOS starts by counting the ''N'' allowed states at a certain ''k'' that are contained within {{nowrap|[''k'',  ''k + dk'']}} inside the volume of the system. This procedure is done by differentiating the whole k-space volume <math>\Omega_{n, k}</math> in n-dimensions at an arbitrary ''k'', with respect to ''k''. The volume, area or length in 3, 2 or 1-dimensional spherical ''k''-spaces are expressed by
+: <math>\Omega_n(k) = c_n k^n</math>
+
+for a n-dimensional ''k''-space with the topologically determined constants
+: <math>c_1 = 2,\  c_2 = \pi,\  c_3 = \frac{4 \pi}{3}</math>
+
+for linear, disk and spherical symmetrical shaped functions in 1, 2 and 3-dimensional Euclidean ''k''-spaces respectively.
+
+According to this scheme, the density of wave vector states ''N'' is, through differentiating <math>\Omega_{n,k}</math> with respect to ''k'', expressed by
+:<math>N_n(k) = \frac{{\rm d}\Omega_n(k)}{{\rm d}k} = n\; c_n\; k^{n - 1}</math>
+
+The 1, 2 and 3-dimensional density of wave vector states for a line, disk, or sphere are explicitly written as
+: <math>\begin{align}
+  N_1(k) &= 2 \\
+  N_2(k) &= 2 \pi k \\
+  N_3(k) &= 4 \pi k^2
+\end{align}</math>
+
+One state is large enough to contain particles having wavelength λ. The wavelength is related to ''k'' through the relationship.
+: <math>k = \frac{2\pi}{\lambda}</math>
+
+In a quantum system the length of λ will depend on a characteristic spacing of the system L that is confining the particles. Finally the density of states ''N'' is multiplied by a factor ''<math>s/V_k</math>'', where ''s'' is a constant degeneracy factor that accounts for internal degrees of freedom due to such physical phenomena as spin or polarization. If no such phenomenon is present then <math>s = 1</math>. ''V<sub>k</sub>'' is the volume in k-space whose wavevectors are smaller than the smallest possible wavevectors decided by the characteristic spacing of the system.
+
+===Density of energy states===
+To finish the calculation for DOS find the number of states per unit sample volume at an energy <math>E</math> inside an interval <math>[E, E+dE]</math>. The general form of DOS of a system is given as
+:<math>D_n\left(E\right) = \frac{{\rm d}\Omega_n(E)}{{\rm d}E}</math>
+The scheme sketched so far ''only'' applies to ''monotonically rising'' and ''spherically symmetric'' dispersion relations. In general the dispersion relation <math>E(k)</math> is not spherically symmetric and in many cases it isn't continuously rising either. To express ''D'' as a function of ''E'' the [[Inverse function|inverse of the dispersion relation]] <math>E(k)</math> has to be substituted into the expression of <math>\Omega_n(k)</math> as a function of ''k'' to get the expression of <math>\Omega_n(E)</math> as a function of the energy. If the dispersion relation is not spherically symmetric or continuously rising and can't be inverted easily then in most cases the DOS has to be calculated numerically. More detailed derivations are available.<ref>[http://britneyspears.ac/physics/dos/dos.htm Sample density of states calculation]</ref><ref>[http://ece-www.colorado.edu/~bart/book/book/chapter2/ch2_4.htm Another density of states calculation]</ref>
+
+==Dispersion relations==
+The dispersion relation for electrons in a solid is given by the [[electronic band structure]].
+ 
+The [[kinetic energy]] of a particle depends on the magnitude and direction of the [[wave vector]] ''k'', the properties of the particle and the environment in which the particle is moving. For example, the kinetic energy of an [[electron]] in a [[Fermi gas]] is given by
+: <math>E = E_0 + \frac{\left(\hbar k\right)^2}{2m} \ ,</math>
+
+where ''m'' is the [[Electron rest mass|electron mass]]. The dispersion relation is a spherically symmetric parabola and it is continuously rising so the DOS can be calculated easily.
+
+[[File:Monoatomic chain phonon dispersion.svg|thumb|300px|right|Figure 2: Monatomic chain phonon dispersion relation]]
+For longitudinal [[phonon]]s in a string of atoms the dispersion relation of the kinetic energy in a 1-dimensional ''k''-space, as shown in Figure 2, is given by
+:<math>E =  2 \hbar \omega_0 \left|\sin\left(\frac{ka}{2}\right)\right| </math>
+
+where <math>\omega_0 = \sqrt{k_{\rm F} / m}</math> is the oscillator frequency, <math>m</math> the mass of the atoms, <math>k_{\rm F}</math> the inter-atomic force constant and <math>a</math> inter-atomic spacing. For small values of <math>k \ll \pi / a </math> the dispersion relation is rather linear:
+:<math>E = \hbar \omega_0 ka </math>
+
+When <math>k \approx \pi / a </math> the energy is
+:<math>E = 2 \hbar \omega_0 \left|\cos\left(\frac{\pi - ka}{2}\right)\right|</math>
+
+With the transformation <math>q = k - \pi/a </math> and small <math>q</math> this relation can be transformed to 
+:<math>E = 2 \hbar \omega_0 \left[1 - \left(\frac{qa}{2}\right)^2\right] </math>
+
+===Isotropic dispersion relations===
+The two examples mentioned here can be expressed like
+:<math>E = E_0 + c_k k^p</math>
+
+This expression is a kind of [[dispersion relation]] because it interrelates two wave properties and it is [[isotropy|isotropic]] because only the length and not the direction of the wave vector appears in the expression. The magnitude of the wave vector is related to the energy as:
+:<math>k = \left(\frac{E - E_0}{c_k}\right)^\frac{1}{p} \ ,</math>
+
+Accordingly, the volume of n-dimensional ''k''-space containing wave vectors smaller than ''k'' is:
+:<math>\Omega_n(k) = c_n k^n</math>
+
+Substitution of the isotropic energy relation gives the volume of occupied states
+:<math>\Omega_n(E) = \frac{c_n}{{c_k}^\frac{n}{p}}\left(E - E_0\right)^\frac{n}{p}\ ,</math>
+
+Differentiating this volume with respect to the energy gives an expression for the DOS of the isotropic dispersion relation
+:<math>D_n\left(E\right) = \frac {d}{dE}\Omega_n(E) = \frac{n c_n}{p {c_k}^\frac{n}{p}} \left(E - E_0\right)^{\frac{n}{p} - 1} </math>
+
+===Parabolic dispersion===
+[[File:Free-electron DOS.svg|thumb|300px|right|Figure 3: Free-electron DOS in 3-dimensional k-space]]
+In the case of a parabolic dispersion relation (''p'' = 2), such as applies to free electrons in a Fermi gas, the resulting density of states, <math>D_n\left(E\right)</math>, for electrons in a n-dimensional systems is
+
+:<math>\begin{align}
+  D_1\left(E\right) &= \frac{1}{\sqrt{c_k \left(E - E_0\right)}} \\
+  D_2\left(E\right) &= \frac{\pi}{c_k} \\
+  D_3\left(E\right) &= 2 \pi \sqrt{\frac{E - E_0}{c_k^3}} \ .
+\end{align}</math>
+
+for <math>E > E_0</math>, with <math>D(E) = 0</math> for <math>E < E_0</math>.
+
+In 1-dimensional systems the DOS diverges at the bottom of the band as <math>E</math> drops to <math>E_0</math>. In 2-dimensional systems the DOS turns out to be independent of <math>E</math>. Finally for 3-dimensional systems the DOS rises as the square root of the energy.<ref name=Kittel>{{cite book |title=[[Introduction to Solid State Physics]] |author=Charles Kittel |page=Equation (37), p. 216 |edition=7th |publisher=Wiley |year=1996 |isbn=978-0-471-11181-8 |nopp=true}}</ref>
+
+Including the prefactor ''<math>s/V_k</math>'', the expression for the 3D DOS is
+:<math>N(E) = \frac {V}{2\pi^2} \left(\frac{2m}{\hbar^2}\right)^\frac{3}{2}\sqrt{E - E_0}</math>,
+
+where <math>V</math> is the total volume, and <math>N(E-E_0)</math> includes the 2-fold spin degeneracy.
+
+===Linear dispersion===
+In the case of a linear relation (''p'' = 1), such as applies to [[photon]]s, [[acoustic phonon]]s, or to some special kinds of electronic bands in a solid, the DOS in 1, 2 and 3 dimensional systems is related to the energy as:
+
+:<math>\begin{align}
+  D_1\left(E\right) &= \frac{1}{c_k} \\
+  D_2\left(E\right) &= \frac{2 \pi}{c_k^2}\left(E - E_0\right) \\
+  D_3\left(E\right) &= \frac{4 \pi}{c_k^3}\left(E - E_0\right)^2
+\end{align}</math>
+
+==Distribution functions==
+{{main|Kinetic theory of solids}}
+The density of states plays an important role in the [[kinetic theory of solids]]. The product of the density of states and the [[Distribution function (physics)|probability distribution function]] is the number of occupied states per unit volume at a given energy for a system in thermal equilibrium. This value is widely used to investigate various physical properties of matter. The following are examples, using two common distribution functions, of how applying a distribution function to the density of states can give rise to physical properties.
+
+[[File:Fermi-Dirac product with Density of States.svg|thumb|300px|right|Figure 4: The {{colorbox|#5e81B5}}{{nbsp}}Fermi-Dirac probability distribution, {{colorbox|#e19c24}}{{nbsp}}density of states, and {{colorbox|#8FB131}}{{nbsp}}their product for a semiconductor. The lower green lobe depicts ''hole'' energy, and thus uses <math>f(-x)</math> as the distribution function.]]
+
+[[Fermi–Dirac statistics]]: The Fermi–Dirac probability distribution function, Fig. 4, is used to find the probability that a fermion occupies a specific quantum state in a system at thermal equilibrium. [[Fermion]]s are particles which obey the [[Pauli exclusion principle]] (e.g. electrons, protons, neutrons). The distribution function can be written as
+: <math>f_{\mathrm{FD}}(E) = \frac{1}{\exp\left(\frac{E - \mu}{k_\mathrm{B} T}\right) + 1}</math>.
+
+<math>\mu</math> is the [[chemical potential]] (also denoted as E<sub>F</sub> and called the [[Fermi level]] when ''T''=0), <math>k_\mathrm{B}</math> is the Boltzmann constant, and <math>T</math> is temperature. Fig. 4 illustrates how the product of the Fermi-Dirac distribution function and the three-dimensional density of states for a semiconductor can give insight to physical properties such as carrier concentration and Energy band gaps.
+
+[[Bose–Einstein statistics]]: The Bose–Einstein probability distribution function is used to find the probability that a boson occupies a specific quantum state in a system at thermal equilibrium. [[Boson]]s are particles which do not obey the Pauli exclusion principle (e.g. phonons and photons). The distribution function can be written as
+:<math>f_{\mathrm{BE}}(E) = \frac{1}{\exp\left(\frac{E - \mu}{k_{\rm B} T}\right) - 1}</math>
+
+From these two distributions it is possible to calculate properties such as the [[internal energy]] <math>U</math>, the number of particles <math>N</math>, [[specific heat capacity]] <math>C</math>, and [[thermal conductivity]] <math>k</math>. The relationships between these properties and the product of the density of states and the probability distribution, denoting the density of states by <math>g(E)</math> instead of <math>D(E)</math>, are given by
+:<math>\begin{align}
+  U &= \int E\, f(E)\, g(E)\,{\rm d}E \\
+  N &= \int f(E)\, g(E)\,{\rm d}E \\
+  C &= \frac{\partial}{\partial T} \int E\, f(E)\, g(E) \,{\rm d}E \\
+  k &= \frac{1}{d}\frac{\partial}{\partial T} \int E f(E)\, g(E)\, \nu(E)\, \Lambda(E)\,{\rm d}E
+\end{align}</math>
+
+<math>d</math> is dimensionality, <math>\nu</math> is sound velocity and <math>\Lambda</math> is [[mean free path]].
+
+==Applications==
+The density of states appears in many areas of physics, and helps to explain a number of quantum mechanical phenomena.
+
+===Quantization===
+<!-- Deleted image removed: [[File:DOS multdim.jpg|thumb|300px|Figure 3: Density of states for electrons in bulk semiconductors (3D; in blue), quantum wells (2D; red), quantum wires (1D; green) and quantum dots (0D; black).]] -->
+Calculating the density of states for small structures shows that the distribution of electrons changes as dimensionality is reduced. For [[quantum wires]], the DOS for certain energies actually becomes higher than the DOS for bulk semiconductors, and for [[quantum dots]] the electrons become quantized to certain energies.
+
+===Photonic crystals===
+The photon density of states can be manipulated by using periodic structures with length scales on the order of the wavelength of light. Some structures can completely inhibit the propagation of light of certain colors (energies), creating a photonic band gap: the DOS is zero for those photon energies. Other structures can inhibit the propagation of light only in certain directions to create mirrors, waveguides, and cavities. Such periodic structures are known as [[photonic crystals]].<ref>
+{{cite journal
+| title = Inhibited Spontaneous Emission in Solid-State Physics and Electronics
+| author1 =Yablonovitch, E.
+| journal = Phys. Rev. Lett.
+| volume = 58
+| issue = 20
+| pages = 2059–2062
+| year = 1987
+| doi = 10.1103/PhysRevLett.58.2059
+| pmid =10034639
+| bibcode =1987PhRvL..58.2059Y
+| doi-access = free
+}}</ref><ref>
+{{cite journal
+| title = Quantum electrodynamics near a photonic band gap: Photon bound states and dressed atom
+| author1 =John, Sajeev | author2=Wang, Jian
+| journal = Phys. Rev. Lett.
+| volume = 64
+| issue = 20
+| pages = 2418–2421
+| year = 1990
+| doi = 10.1103/PhysRevLett.64.2418
+| pmid =10041707 | bibcode =1990PhRvL..64.2418J }}</ref><ref>
+{{cite journal
+| title = Controlling the dynamics of spontaneous emission from quantum dots by photonic crystals
+| author1 = Lodahl, P. | author2 = van Driel, A. F. | author3 = Nikolaev, I.
+| journal = Nature
+| volume = 430
+| issue = 1
+| pages = 654–657
+| year = 2004
+| doi = 10.1038/nature02772
+| pmid = 15295594 | bibcode = 2004Natur.430..654L | hdl = 1874/16698 | s2cid = 4334567 }}</ref><ref>
+{{cite journal
+| title = Simultaneous Inhibition and Redistribution of Spontaneous Light Emission in Photonic Crystals
+| author1 = Fujita, Masayuki | author2 = Takahashi, Shigeki | author3 = Tanaka, Yoshinori | author4 = Asano, Takashi | author5 = Noda, Susumu
+| journal = Science
+| volume = 308
+| issue = 5726
+| pages = 1296–1298
+| year = 2005
+| doi = 10.1126/science.1110417
+| pmid = 15919989 | bibcode = 2005Sci...308.1296F | s2cid = 30116866 }}</ref> In nanostructured media the concept of [[local density of states]] (LDOS) is often more relevant than that of DOS, as the DOS varies considerably from point to point.
+
+==Computational calculation ==
+Interesting systems are in general complex, for instance compounds, biomolecules, polymers, etc. Because of the complexity of these systems the analytical calculation of the density of states is in most of the cases impossible. Computer simulations offer a set of algorithms to evaluate the density of states with a high accuracy. One of these algorithms is called the [[Wang and Landau algorithm]].<ref>
+{{cite journal
+| title = Efficient, Multiple-Range Random Walk Algorithm to Calculate the Density of States
+| author1 =Wang, Fugao | author2=Landau, D. P.
+| journal = Phys. Rev. Lett.
+| volume = 86
+| issue = 10
+| pages = 2050–2053
+| year = 2001
+| pmid = 11289852
+| doi = 10.1103/PhysRevLett.86.2050
+| bibcode = 2001PhRvL..86.2050W
+| arxiv = cond-mat/0011174
+| s2cid =2941153 }}</ref>
+
+Within the Wang and Landau scheme any previous knowledge of the density of states is required. One proceeds as follows: the cost function (for example the energy) of the system is discretized. Each time the bin ''i'' is reached one updates
+a histogram for the density of states, <math>g(i)</math>, by
+
+:<math> g(i) \rightarrow  g(i) + f</math>
+
+where ''f'' is called the modification factor. As soon as each bin in the histogram is visited a certain number of times
+(10-15), the modification factor is reduced by some criterion, for instance,
+
+:<math> f_{n+1} \rightarrow \frac{1}{2} f_{n}</math>
+
+where ''n'' denotes the ''n''-th update step. The simulation finishes when the modification factor is less than a certain threshold, for instance <math>f_n < 10^{-8} </math>.
+
+The Wang and Landau algorithm has some advantages over other common algorithms such as [[multicanonical ensemble|multicanonical simulations]] and [[parallel tempering]]. For example, the density of states is obtained as the main product of the simulation. Additionally, Wang and Landau simulations are completely independent of the temperature. This feature allows to compute the density of states of systems with very rough energy landscape such as proteins.<ref name="ojeda">{{cite journal |author1=Ojeda, P. |author2=Garcia, M. |title=Electric Field-Driven Disruption of a Native beta-Sheet Protein Conformation and Generation of a Helix-Structure  |journal=Biophysical Journal |volume=99 |issue=2 |pages=595–599 |year=2010 |doi= 10.1016/j.bpj.2010.04.040 |pmid=20643079|bibcode = 2010BpJ....99..595O |pmc=2905109}}</ref>
+
+Mathematically the density of states is formulated in terms of a tower of covering maps.<ref>
+{{cite journal
+| title = Density of states in spectral geometry of states in spectral geometry
+| author = Adachi T. and [[Toshikazu Sunada|Sunada. T]] 
+| journal = Comment. Math. Helvetici
+|  volume = 68
+|  pages = 480–493
+|date= 1993
+| doi = 10.1007/BF02565831 
+| s2cid = 120828817 
+}}</ref>
+
+==Local density of states==
+An important feature of the definition of the DOS is that it can be extended to any system. One of its properties are the translationally invariability which means that the density of the states is [[homogeneous]] and it's the same at each point of the system. But this is just a particular case and the LDOS gives a wider description with a [[heterogeneous]] density of states through the system.
+
+===Concept===
+'''Local density of states''' (LDOS) describes a space-resolved density of states. In materials science, for example, this term is useful when interpreting the data from a [[scanning tunneling microscope]] (STM), since this method is capable of imaging electron densities of states with atomic resolution. According to crystal structure, this quantity can be predicted by computational methods, as for example with [[density functional theory]].
+
+=== A general definition ===
+In a local density of states the contribution of each state is weighted by the density of its wave function at the point. <math>N(E)</math> becomes <math>n(E,x)</math>
+
+:<math>n(E,x)=\sum_n |\phi_n(x)|^2\delta(E-\varepsilon_n)</math>
+
+the factor of <math>|\phi_n(x)|^2</math> means that each state contributes more in the regions where the density is high. An average over <math>x</math> of this expression will restore the usual formula for a DOS. The LDOS is useful in inhomogeneous systems, where <math>n(E,x)</math> contains more information than <math>n(E)</math> alone.
+
+For a one-dimensional system with a wall, the sine waves give
+
+:<math>n_{1D}(E,x)=\frac{2}{\pi\hbar}\sqrt{\frac{2m}{E}}\sin^2{kx}</math>
+
+where <math>k=\sqrt{2mE}/\hbar</math>.
+
+In a three-dimensional system with <math>x>0</math> the expression is
+
+:<math>n_{3D}(E,x)=\left(1-\frac{\sin{2kx}}{2kx}\right)n_{3D}(E)</math>
+
+In fact, we can generalise the local density of states further to
+
+:<math>n(E,x,x')=\sum_n\phi_n(x)\phi^*_n(x')\delta(E-\varepsilon_n)</math>
+
+this is called the ''spectral function'' and it's a function with each wave function separately in its own variable. In more advanced theory it is connected with the Green's functions and provides a compact representation of some results such as [[Absorption (electromagnetic radiation)|optical absorption]].
+
+[[File:Omen ldos v3.gif|thumb|300px|right|Space resolved local density of states. A sequence of images with varying gate bias in a nanowire MOSFET at drain bias Vd=0.6V. Notice the confined energy levels as they move with increasing gate bias.]]
+
+===Solid state devices===
+LDOS can be used to gain profit into a solid-state device. For example, the figure on the right illustrates LDOS of a [[transistor]] as it turns on and off in a ballistic simulation. The LDOS has clear boundary in the source and drain, that corresponds to the location of band edge. In the channel, the DOS is increasing as gate voltage increase and potential barrier goes down.
+
+===Optics and photonics===
+In [[optics]] and [[photonics]], the concept of local density of states refers to the states that can be occupied by a photon. For light it is usually measured by fluorescence methods, near-field scanning methods or by cathodoluminescence techniques. For different photonic structures, the LDOS have different behaviors and they are controlling spontaneous emission in different ways. In photonic crystals, the near-zero LDOS are expected and they cause inhibition in the spontaneous emission.<ref>
+{{cite journal
+| title = Density of states in spectral geometry of states in spectral geometry
+| author1 = Sprik, R.| author2 = van Tiggelen, B. A.| author3 = Lagendijk, A.
+| journal = Europhys. Lett.
+|  volume = 35 
+|  issue = 4
+|  pages = 265–270
+| date = 1996
+| doi = 10.1209/epl/i1996-00564-y
+| url = http://dare.uva.nl/personal/pure/en/publications/optical-emission-in-periodic-dielectrics(abed9e3f-eb7e-48a2-af57-d3f0a09ce5a8).html}}</ref>
+The LDOS are still in photonic crystals but now they are in the cavity. In this case, the LDOS can be much more enhanced and they are proportional with Purcell enhancements of the spontaneous emission.<ref>
+{{cite journal
+| title = Controlling the Spontaneous Emission Rate of Single Quantum Dots in a Two-Dimensional Photonic Crystal
+| author1 = Englund, Dirk| author2 = Fattal, David| author3 = Waks, Edo| author4 = Solomon, Glenn| author5 = Zhang, Bingyang| author6 = Nakaoka, Toshihiro| author7 = Arakawa, Yasuhiko| author8 = Yamamoto, Yoshihisa| author9 = Vuckovic, Jelena
+| journal = Phys. Rev. Lett.
+|  volume = 95 
+|  issue = 1
+|  pages = 013904
+| date = 2005
+| doi = 10.1103/PhysRevLett.95.013904
+| pmid = 16090618| arxiv = quant-ph/0501091| bibcode = 2005PhRvL..95a3904E| s2cid = 9049385}}</ref><ref>
+{{cite journal
+| title = Fast Purcell-enhanced single photon source in 1,550-nm telecom band from a resonant quantum dot-cavity coupling
+| author1 = Birowosuto, M.| author2 = Sumikura, H.| author3 = Matsuo, S.| author4 = Notomi, M.
+| journal = Sci. Rep.
+|  volume = 2
+|  issue = 1
+|  pages = 321
+| date = 2012
+| doi = 10.1038/srep00321
+| pmid = 22432053| pmc = 3307054| arxiv = 1203.6171| bibcode = 2012NatSR...2E.321B| doi-access = free
+}}</ref>
+Similar LDOS enhancement is also expected in plasmonic cavity.<ref>
+{{cite journal
+| title = Single Quantum Dot Coupled to a Scanning Optical Antenna: A Tunable Superemitter
+| author1 = Farahani, J. N.| author2 = Pohl, D. W.| author3 = Eisler, H.-J.| author4 = Hecht, B.
+| journal = Phys. Rev. Lett.
+|  volume = 95
+|  issue = 1
+|  pages = 017402
+| date = 2005
+| doi = 10.1103/PhysRevLett.95.017402
+| pmid = 16090656| bibcode = 2005PhRvL..95a7402F}}</ref>
+However, in disordered photonic nanostructures, the LDOS behave differently. They fluctuate spatially with their statistics are proportional to the scattering strength of the structures.<ref>
+{{cite journal
+| title = Observation of Spatial Fluctuations of the Local Density of States in Random Photonic Media
+| author1 = Birowosuto, M.| author2 = Skipetrov, S.| author3 = Vos, W.| author4 = Mosk, A.
+| journal = Phys. Rev. Lett.
+|  volume = 105
+|  issue = 1
+|  pages = 013904
+| date = 2010
+| doi = 10.1103/PhysRevLett.105.013904
+| pmid = 20867448| arxiv = 1002.3186
+| bibcode = 2010PhRvL.105a3904B| s2cid = 25044558}}</ref>
+In addition, the relationship with the [[mean free path]] of the scattering is trivial as the LDOS can be still strongly influenced by the short details of strong disorders in the form of a strong Purcell enhancement of the emission.<ref>
+{{cite journal
+| title = Long-Tail Statistics of the Purcell Factor in Disordered Media Driven by Near-Field Interactions
+| author1 = Sapienza, R.| author2 = Bondareff, P.| author3 = Pierrat, R.| author4 = Habert, B.| author5 = Carminati, R.| author6 = van Hulst, N. F.
+| journal = Phys. Rev. Lett.
+|  volume = 106
+|  issue = 16
+|  pages = 163902
+| date = 2011
+| doi = 10.1103/PhysRevLett.106.163902
+| pmid = 21599367| bibcode = 2011PhRvL.106p3902S}}</ref>
+and finally, for the plasmonic disorder, this effect is much stronger for LDOS fluctuations as it can be observed as a strong near-field localization.<ref>
+{{cite journal
+| title = Long-Tail Statistics of the Purcell Factor in Disordered Media Driven by Near-Field Interactions
+| author1 = Krachmalnicoff, V.| author2 = Castanié, E.| author3 = De Wilde, Y.| author4 = Carminati, R.
+| journal = Phys. Rev. Lett.
+|  volume = 105
+|  issue = 18
+|  pages = 183901
+| date = 2010
+| doi = 10.1103/PhysRevLett.105.183901
+| pmid = 21231105| arxiv = 1007.3691
+| s2cid = 15590513}}</ref>
+
+==See also==
+{{columns-list|colwidth=22em|
+* [[Effective mass (solid-state physics)]]
+* [[Band structure]]
+* [[k·p perturbation theory]]
+* [[Semiconductor]]
+* [[Electrical conduction]]
+* [[Valence band]]
+* [[Kronig–Penney model]]
+* [[Tight-binding model]]
+* [[Muffin-tin approximation]]
+* [[Britney Spears' Guide to Semiconductor Physics]]
+}}
+
+==References==
+{{Reflist|2}}
+
+==Further reading==
+*Chen, Gang. Nanoscale Energy Transport and Conversion. New York: Oxford, 2005
+*Streetman, Ben G. and Sanjay Banerjee. Solid State Electronic Devices. Upper Saddle River, NJ: Prentice Hall, 2000.
+*Muller, Richard S. and Theodore I. Kamins. Device Electronics for Integrated Circuits. New York: John Wiley and Sons, 2003.
+*Kittel, Charles and Herbert Kroemer. Thermal Physics. New York: W.H. Freeman and Company, 1980
+*Sze, Simon M. Physics of Semiconductor Devices. New York: John Wiley and Sons, 1981
+
+==External links==
+* [http://nanohub.org/resources/5784 Online lecture:ECE 606 Lecture 8: Density of States] by M. Alam
+* [https://web.archive.org/web/20121208070536/http://sapienzalab.org/scientists-shed-light-on-glowing-materials/ Scientists shed light on glowing materials] How to measure the Photonic LDOS
+
+{{DEFAULTSORT:Density Of States}}
+[[Category:Statistical mechanics]]
+[[Category:Concepts in physics]]
+[[Category:Electronic band structures]]

@@ -1,0 +1,35 @@
+{{spacetime}}
+In [[physics]], a '''covariance group''' is a [[group (mathematics)|group]] of [[Coordinate system#Transformations|coordinate transformations]] between [[Frame of reference|frames of reference]] (see for example Ryckman (2005)<ref>Ryckman 2005, p. 22.</ref>). A frame of reference provides a set of coordinates for an observer moving with that frame to make measurements and define physical quantities. The [[covariance principle]] states the [[laws of physics]] should transform from one frame to another covariantly, that is, according to a [[Group representation|representation]] of the covariance group.
+
+[[Special relativity]] considers observers in [[Inertial frame of reference|inertial frames]], and the covariance group consists of [[Rotation group SO(3)|rotations]], [[Lorentz transformation|velocity boosts]], and the [[Parity (physics)|parity transformation]]. It is denoted as [[Generalized orthogonal group|O(1,3)]] and is often referred to as [[Lorentz group]].
+
+For example, the [[Maxwell equation#Covariant formulation of Maxwell.27s equations|Maxwell equation]] with sources,
+
+:<math>\partial_\mu F^{\mu\nu}=4\pi j^\nu\,,</math>
+
+transforms as a [[four-vector]], that is, under the [[Representations of the Lorentz group#Common reps|(1/2,1/2)]] representation of the O(1,3) group.
+
+The [[Dirac equation#Covariant form and relativistic invariance|Dirac equation]],
+
+:<math>(i\gamma^\mu\partial_\mu-m)\psi=0\,,</math>
+
+transforms as a [[bispinor]], that is, under the (1/2,0)⊕(0,1/2) representation of the O(1,3) group.
+
+The covariance principle, unlike the [[Principle of relativity|relativity principle]], does not imply that the equations are [[Invariant (physics)|invariant]] under transformations from the covariance group. In practice the equations for [[Electromagnetic force|electromagnetic]] and [[strong interaction|strong]] interactions ''are'' invariant, while the [[weak interaction]] is not invariant under the parity transformation. For example, the Maxwell equation ''is'' invariant, while the corresponding equation for the [[Standard model (basic details)#The Gauge Field Lagrangian|weak field]] explicitly contains [[Standard model (basic details)#The charged and neutral current couplings|left currents]] and thus is not invariant under the parity transformation.
+
+In [[general relativity]] the covariance group consists of all arbitrary ([[invertible]] and [[Differentiable function|differentiable]]) coordinate transformations.
+
+== See also ==
+
+*[[Manifestly covariant]]
+*[[Relativistic wave equations]]
+*[[Representation theory of the Lorentz group]]
+
+== Notes ==
+
+{{reflist|2}}
+
+== References ==
+* Thomas Ryckman, The Reign of Relativity: Philosophy in Physics 1915-1925, Oxford University Press US, 2005, {{ISBN|0-19-517717-7}}, {{ISBN|978-0-19-517717-6}}
+
+[[Category:Concepts in physics]]

@@ -1,0 +1,82 @@
+[[File:Radiotelemetrywirelineextensometer.jpg|thumb|A radio telemetry wireline extensometer monitoring slope deformation.]]
+'''Deformation monitoring''' (also referred to as '''deformation survey''') is the systematic measurement and tracking of the alteration in the shape or dimensions of an object as a result of [[Stress (mechanics)|stress]]es induced by applied loads. Deformation monitoring is a major component of logging measured values that may be used to for further computation, deformation analysis, [[predictive maintenance]] and alarming.<ref>Literature, Edited by J.F.A Moore (1992). ''Monitoring Building Structures''. Blackie and Son Ltd. {{ISBN|0-216-93141-X}}, USA and Canada {{ISBN|0-442-31333-0}}</ref>
+
+Deformation monitoring is primarily related to the field of applied [[surveying]], but may be also related to civil engineering, mechanical engineering, construction, and geology. The measuring devices used for deformation monitoring depend on the application, the chosen method, and the preferred measurement interval.
+
+== Measuring devices ==
+[[Image:Freeport Mine Indonesia Total Station.JPG|thumb|A standard geodetic monitoring instrument in the Freeport open pit mine, Indonesia]]
+[[Image:Jiangyin Bridge.JPG|thumb|GNSS reference station antenna for structural monitoring of the Jiangying Bridge]]
+Measuring devices (or sensors) can be sorted in two main groups, geodetic and geotechnical sensors. Both measuring devices can be seamlessly combined in modern deformation monitoring. 
+*'''Geodetic measuring''' devices measure georeferenced (relative to established locations outside the monitoring area) displacements or movements in one, two or three dimensions. It includes the use of instruments such as [[total station]]s, [[Dumpy level|levels]], [[Interferometric synthetic aperture radar|InSAR]],<ref>{{Cite journal|last=Dai|first=Keren|last2=Li|first2=Zhenhong|last3=Tomás|first3=Roberto|last4=Liu|first4=Guoxiang|last5=Yu|first5=Bing|last6=Wang|first6=Xiaowen|last7=Cheng|first7=Haiqin|last8=Chen|first8=Jiajun|last9=Stockamp|first9=Julia|date=December 2016|title=Monitoring activity at the Daguangbao mega-landslide (China) using Sentinel-1 TOPS time series interferometry|journal=Remote Sensing of Environment|volume=186|pages=501–513|doi=10.1016/j.rse.2016.09.009|issn=0034-4257|doi-access=free}}</ref> and [[GNSS|global navigation satellite system receivers]].
+*'''Geotechnical measuring''' devices measure displacements or movements and related environmental effects or conditions without external georeferencing. It includes the use of instruments such as [[extensometer]]s,<ref>{{Cite journal|last=Pardo|first=Juan Manuel|last2=Lozano|first2=Antonio|last3=Herrera|first3=Gerardo|last4=Mulas|first4=Joaquín|last5=Rodríguez|first5=Ángel|date=2013-09-15|title=Instrumental monitoring of the subsidence due to groundwater withdrawal in the city of Murcia (Spain)|journal=Environmental Earth Sciences|language=en|volume=70|issue=5|pages=1957–1963|doi=10.1007/s12665-013-2710-7|issn=1866-6280}}</ref> [[piezometer]]s, [[pressuremeter]]s, [[rain gauge]]s, [[thermometer]]s, [[barometer]]s, [[Inclinometer|tilt meter]]s,<ref>{{Cite journal|last=Díaz|first=E.|last2=Robles|first2=P.|last3=Tomás|first3=R.|date=October 2018|title=Multitechnical approach for damage assessment and reinforcement of buildings located on subsiding areas: Study case of a 7-story RC building in Murcia (SE Spain)|journal=Engineering Structures|volume=173|pages=744–757|doi=10.1016/j.engstruct.2018.07.031|issn=0141-0296}}</ref> [[accelerometer]]s, [[seismometer]]s etc.
+
+== Application ==
+Deformation monitoring can be required for the following applications:
+*[[Dam]]s<ref>{{Cite journal|last=Tomás|first=R.|last2=Cano|first2=M.|last3=García-Barba|first3=J.|last4=Vicente|first4=F.|last5=Herrera|first5=G.|last6=Lopez-Sanchez|first6=J.M.|last7=Mallorquí|first7=J.J.|date=May 2013|title=Monitoring an earthfill dam using differential SAR interferometry: La Pedrera dam, Alicante, Spain|journal=Engineering Geology|volume=157|pages=21–32|doi=10.1016/j.enggeo.2013.01.022|issn=0013-7952}}</ref>
+*Roads
+*Tunnels
+*Bridges and Viaducts
+*High-rise and historical buildings<ref>{{Cite journal|last=Tomás|first=Roberto|last2=García-Barba|first2=Javier|last3=Cano|first3=Miguel|last4=Sanabria|first4=Margarita P|last5=Ivorra|first5=Salvador|last6=Duro|first6=Javier|last7=Herrera|first7=Gerardo|date=November 2012|title=Subsidence damage assessment of a Gothic church using differential interferometry and field data|journal=Structural Health Monitoring|volume=11|issue=6|pages=751–762|doi=10.1177/1475921712451953|issn=1475-9217|hdl=10045/55037|hdl-access=free}}</ref>
+*Foundations
+*Construction sites
+*Mining<ref>{{Cite journal|last=Herrera|first=G.|last2=Álvarez Fernández|first2=M.I.|last3=Tomás|first3=R.|last4=González-Nicieza|first4=C.|last5=López-Sánchez|first5=J.M.|last6=Álvarez Vigil|first6=A.E.|date=September 2012|title=Forensic analysis of buildings affected by mining subsidence based on Differential Interferometry (Part III)|journal=Engineering Failure Analysis|volume=24|pages=67–76|doi=10.1016/j.engfailanal.2012.03.003|issn=1350-6307}}</ref>
+*[[Landslide]] areas<ref>{{Cite journal|last=Dai|first=Keren|last2=Li|first2=Zhenhong|last3=Tomás|first3=Roberto|last4=Liu|first4=Guoxiang|last5=Yu|first5=Bing|last6=Wang|first6=Xiaowen|last7=Cheng|first7=Haiqin|last8=Chen|first8=Jiajun|last9=Stockamp|first9=Julia|date=December 2016|title=Monitoring activity at the Daguangbao mega-landslide (China) using Sentinel-1 TOPS time series interferometry|journal=Remote Sensing of Environment|volume=186|pages=501–513|doi=10.1016/j.rse.2016.09.009|issn=0034-4257|doi-access=free}}</ref>
+*[[Volcanology|Volcanoes]]
+*Settlement areas
+*Earthquake areas
+
+== Methods ==
+Deformation monitoring can be manual or automatic. '''Manual deformation monitoring''' is the operation of sensors or instruments by hand or manual downloading of collected data from deformation monitoring instruments. '''Automatic deformation monitoring''' operation of a group of software and hardware elements for deformation monitoring that, once set up, does not require human input to function.
+
+Note that deformation analysis and interpretation of the data collected by the monitoring system is not included in this definition.
+
+Automated deformation monitoring requires instruments to communicate with a base station. Communication methods used include:
+*Transmission cable ([[RS-232]], [[RS-485]], [[fiber optics]])
+*Local area network ([[Local area network|LAN]]) 
+*Wireless LAN ([[Wireless LAN|WLAN]]) 
+*Mobile communication ([[GSM]], [[GPRS]], [[UMTS]])
+*[[WiMax]]
+
+== Regularity and scheduling ==
+
+The monitoring regularity and time interval of the measurements must be considered depending on the application and object to be monitored. Objects can undergo both rapid, high frequency movement and slow, gradual movement. For example, a bridge might oscillates with a period of a few seconds due to the influence of traffic and wind and also be shifting gradually due to tectonic changes.
+
+*'''Regularity''': ranges from a days, weeks or years for manual monitoring and continuous for automatic monitoring systems.
+*'''Measurement interval''': ranges from fractions of a second to hours.
+
+== Deformation analysis ==
+Deformation analysis is concerned with determining if a measured displacement is significant enough to warrant a response. Deformation data must be checked for [[statistical significance]], and then checked against specified limits, and reviewed to see if movements below specified limits imply potential risks.
+
+The software acquires data from sensors, computes meaningful values from the measurements, records results, and can notify responsible persons should threshold value be exceeded. However, a human operator must make considered decisions on the appropriate response to the movement, e.g. independent verification though on-site inspections, re-active controls such as structural repairs and emergency responses such as shut down processes, containment processes and site evacuation.
+
+== See also ==
+* [[Surveying|Deformation Survey]]
+* [[Engineering geology#Methods and reporting|Engineering Geology]]
+* [[Slope stability]]
+* [[Structural health monitoring]]
+
+== References ==
+<references/>
+:* Literature, B. Glisic and D. Inaudi (2008). ''Fibre Optic Methods for Structural Health Monitoring''. Wiley. {{ISBN|978-0-470-06142-8}}
+:* Literature, John Dunnicliff (1988,1993). ''Geotechnical Instrumentation For Monitoring Field Performance''. Wiley. {{ISBN|0-471-00546-0}}
+
+== Further reading ==
+{{Advert|section|date=September 2013}}
+*[http://amerisurv.com/emag/2011/vol8no9/index.html  American Surveyor, Elevated Monitoring (page 6-12)]
+* {{Cite journal|last1=Bozzano |first1=Francesca |last2=Cipriani |first2=Ivan |last3=Mazzanti |first3=Paolo |last4=Prestininzi |first4=Alberto |title=Displacement patterns of a landslide affected by human activities: Insights from ground-based InSAR monitoring |doi=10.1007/s11069-011-9840-6 |journal=[[Natural Hazards (journal)|Natural Hazards]] |volume=59 |issue=3 |pages=1377 |year=2011 }}
+*[http://www.canarysystems.com/pdfs/canary_pp22.pdf  North Americas Largest Copper Mine, Automated Mine Monitoring Integrated System]
+* [https://web.archive.org/web/20080530000256/http://www.groundprobe.com/docs/NealHarries_JanFeb08Bulletin.pdf The use of Slope Stability Radar (SSR) in managing Slope Instability Hazards, AusIMM Bulletin, January/February 2008]
+* [http://cedb.asce.org/cgi/WWWdisplay.cgi?161269 Applications and Limitations of Automated Motorized Total Stations by Douglas S. Roy, P.E., M.ASCE and Pierre Gouvin, A.M.ASCE]
+* [http://www.amerisurv.com/PDF/TheAmericanSurveyor_Speed-StructuralMonitoring_October2007.pdf The American Surveyor (Oct 2007) - 24/7 Structural Monitoring]
+* [http://www.leica-geosystems.com/common/shared/downloads/inc/downloader.asp?id=9519 Monitoring of Open Pit Mines using Combined GNSS Satellite Receivers and Robotic Total Stations]
+* [http://trl.trimble.com/docushare/dsweb/Get/Document-400065/WhitePaper_4D_Control_Software-Tunnels_and_Monitoring_English.pdf Engineering Solutions with Trimble 4D Control, Trimble Survey Controller, Trimble S8 Total Station White Paper, Trimble 2007]
+* [http://www.leica-geosystems.com/common/shared/downloads/inc/downloader.asp?id=6372 Advances in RTK and Post Processed Monitoring with Single Frequency GPS]
+* [http://www.iv2004.ethz.ch/programm/Session/S_08_IV2004.pdf Nachweis von Turmbewegungen mit einem Multisensorsystem]
+* [https://web.archive.org/web/20071215172953/http://sc.gpsworld.com/gpssc/article/articleDetail.jsp?id=308346 Monitoring Hong Kong's Bridges Real-Time Kinematic Spans The Gap]
+* [https://web.archive.org/web/20080530000256/http://rincon.gps.caltech.edu/FIG10sym/pdf/Session%20III_Paper%202.pdf FIG 2001 - Modern Monitoring System Software Development]
+
+{{Geotechnical engineering}}
+
+[[Category:Surveying|*]]
+[[Category:In situ geotechnical investigations]]
+[[Category:Deformation (mechanics)]]

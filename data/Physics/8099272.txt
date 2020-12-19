@@ -1,0 +1,32 @@
+{{More references|date=October 2012}}
+The '''acoustic contrast factor''' is a number used to describe the relationship between the [[density|densities]] and the [[Sound speed|sound velocities]] (or, equivalently because of the form of the expression, the densities and [[compressibility|compressibilities]]) of two media. It is most often used in the context of [[biomedical]] [[Medical ultrasonography|ultrasonic imaging]] techniques using [[acoustics|acoustic]] contrast agents and in the field of ultrasonic manipulation of particles (acoustophoresis) much smaller than the [[wavelength]] using ultrasonic standing waves. In the latter context, the acoustic contrast factor is the number which, depending on its sign, tells whether a given type of particle in a given medium will be attracted to the [[pressure]] [[Node (physics)|nodes]] or [[anti-node]]s.
+
+==Example - particle in a medium==
+[[File:Particle movement in an 1D ultrasonic standing wave field with half-wavelength resonance.png|thumb|The figure shows the cross-section of a straight, hard-walled (grey), water-filled channel (blue) with a one-dimensional standing ultrasonic half-wavelength pressure resonance (green curve). F<sub>rad</sub> is the radiation force on a small suspended particle. Particles that have a positive (red) contrast factor in water are moved to the pressure nodes, while particles with a negative (yellow) contrast factor in water are moved to the anti-pressure nodes.]]
+In an ultrasonic standing wave field, a small spherical particle (<math>a \ll \lambda</math>, where <math>a</math> is the particle radius, and <math>\lambda</math> is the wavelength) suspended in an inviscid fluid will move under the effect of an acoustic radiation force. The direction of its movement is governed by the physical properties of the particle and the surrounding medium, expressed in the form of an acoustophoretic contrast factor <math>\phi</math>. <ref>{{Cite journal|last=Bruus|first=Henrik|date=2012|title=Acoustofluidics 7: The acoustic radiation force on small particles|url=http://xlink.rsc.org/?DOI=c2lc21068a|journal=Lab on a Chip|language=en|volume=12|issue=6|pages=1014|doi=10.1039/c2lc21068a|pmid=22349937|issn=1473-0197}}</ref><ref name=":0">{{Cite journal|last1=Lenshof|first1=Andreas|last2=Laurell|first2=Thomas|date=2010|title=Continuous separation of cells and particles in microfluidic systems|url=http://xlink.rsc.org/?DOI=b915999c|journal=Chemical Society Reviews|language=en|volume=39|issue=3|pages=1203|doi=10.1039/b915999c|pmid=20179832|issn=0306-0012}}</ref> 
+
+Given the compressibilities <math>\beta_m</math> and <math>\beta_p</math> and densities <math>\rho_m</math> and <math>\rho_p</math> of the medium and particle, respectively, the acoustic contrast factor <math>\phi</math> can be expressed as:<ref name=":0" /> 
+
+:<math>
+\phi = {\frac{5\rho_p-2\rho_m}{2\rho_p+\rho_m}}-{\frac{\beta_p}{\beta_m}}
+</math>
+
+For a positive value of <math> \phi </math>, the particles will be attracted to the pressure nodes.
+
+For a negative value of <math> \phi </math>, the particles will be attracted to the pressure anti-nodes.
+
+==See also==
+* [[Acoustic impedance]]
+* [[Acoustic tweezers]]
+
+==References==
+{{reflist}}
+
+<!--==External links==
+-->
+
+{{DEFAULTSORT:Acoustic Contrast Factor}}
+[[Category:Acoustics]]
+
+
+{{acoustics-stub}}

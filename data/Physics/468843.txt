@@ -1,0 +1,381 @@
+{{short description|Wikipedia list article}}
+'''[[Moment of inertia]]''', denoted by {{mvar|I}}, measures the extent to which an object resists [[rotational acceleration]] about a [[Rotation around a fixed axis|particular axis]], and is the rotational analogue to [[mass]] (which determines an object's resistance to [[Linear acceleration|''linear'' acceleration]]). Mass moments of inertia have [[physical unit|units]] of [[dimensional analysis|dimension]] ML<sup>2</sup>([mass] × [length]<sup>2</sup>). It should not be confused with the [[second moment of area]], which is used in beam calculations. The mass moment of inertia is often also known as the '''rotational inertia''', and sometimes as the '''angular mass'''.
+
+For simple objects with geometric symmetry, one can often determine the moment of inertia in an exact [[closed-form expression]]. Typically this occurs when the [[mass density]] is constant, but in some cases the density can vary throughout the object as well. In general, it may not be straightforward to symbolically express the moment of inertia of shapes with more complicated mass distributions and lacking symmetry. When calculating moments of inertia, it is useful to remember that it is an additive function and exploit the [[parallel axis theorem|parallel axis]] and [[perpendicular axis theorem]]s.
+
+This article mainly considers symmetric mass distributions, with constant density throughout the object, and the axis of rotation is taken to be through the [[center of mass]] unless otherwise specified.
+
+==Moments of inertia==
+
+Following are scalar moments of inertia. In general, the moment of inertia is a [[tensor]], see below.
+
+{|class="wikitable"
+|-
+! Description || Figure || Moment(s) of inertia
+|-
+| Point mass ''M'' at a distance ''r'' from the axis of rotation.
+
+A point mass does not have a moment of inertia around its own axis, but using the [[parallel axis theorem]] a moment of inertia around a distant axis of rotation is achieved.
+
+|align="center"|[[File:PointInertia.svg|frameless|upright]]
+| <math> I = M r^2</math>
+|-
+| Two point masses, ''m''<sub>1</sub> and ''m''<sub>2</sub>, with [[reduced mass]] ''μ'' and separated by a distance ''x'', about an axis passing through the center of mass of the system and perpendicular to the line joining the two particles.
+|align="center"|[[File:MOIaboutCOMaxis2.svg|frameless|upright]]
+|<math> I = \frac{ m_1 m_2 }{ m_1 \! + \! m_2 } x^2 = \mu x^2</math>
+|-
+| [[Rod (geometry)|Rod]] of length ''L'' and mass ''m'', rotating about its center.
+
+This expression assumes that the rod is an infinitely thin (but rigid) wire. This is a special case of the thin rectangular plate with axis of rotation at the center of the plate, with ''w'' = ''L'' and ''h'' = 0.
+
+| align="center"|[[File:moment of inertia rod center.svg|frameless|upright]]
+| <math>I_\mathrm{center} = \frac{1}{12} m L^2 \,\!</math>&nbsp;&nbsp;<ref name="serway"/>
+|-
+| [[Rod (geometry)|Rod]] of length ''L'' and mass ''m'', rotating about one end.
+
+This expression assumes that the rod is an infinitely thin (but rigid) wire. This is also a special case of the thin rectangular plate with axis of rotation at the end of the plate, with ''h'' = ''L'' and ''w'' = 0.
+
+| align="center"|[[File:moment of inertia rod end.svg|frameless|upright]]
+| <math>I_\mathrm{end} = \frac{1}{3} m L^2 \,\!</math>&nbsp;&nbsp;<ref name="serway"/>
+|-
+| Thin circular loop of radius ''r'' and mass ''m''.
+
+This is a special case of a [[torus]] for ''a'' = 0 (see below), as well as of a thick-walled cylindrical tube with open ends, with ''r''<sub>1</sub> = ''r''<sub>2</sub> and ''h'' = 0.
+
+| align="center"|[[File:moment of inertia hoop.svg|170px]]
+| <math>I_z = m r^2\!</math><br /><math>I_x = I_y = \frac{1}{2} m r^2 \,\!</math>
+|-
+| Thin, solid [[disk (mathematics)|disk]] of radius ''r'' and mass ''m''.
+
+This is a special case of the solid cylinder, with ''h'' = 0. That <math>I_x = I_y = \frac{I_z}{2}\,</math> is a consequence of the [[perpendicular axis theorem]].
+
+|align="center"| [[File:moment of inertia disc.svg|170px]]
+| <math>I_z = \frac{1}{2}m r^2\,\!</math><br /><math>I_x = I_y = \frac{1}{4} m r^2\,\!</math>
+|-
+| Uniform disk about an axis perpendicular to its edge.
+|
+| <math> I = \frac {3} {2}mr^2</math><ref>{{cite web |url=http://www.pas.rochester.edu/~ygao/phy141/Lecture15/sld010.htm |title=Physics 141 — Mechanics — Lecture 15 — Moment of Inertia |first=Yongli |last=Gao |at=Slide 10: Example: Moment of Inertia of Disk about Edge |access-date=2014-11-23 |url-status=dead |archive-url=https://web.archive.org/web/20150924065420/http://www.pas.rochester.edu/~ygao/phy141/Lecture15/sld010.htm |archive-date=2015-09-24 }}</ref>
+|-
+|Thin, uniform disk of radius ''r<sub>2</sub>'' and mass ''m'' with circular hole of radius ''r<sub>1</sub>'' about its center.
+|
+|<math>I=\frac{1}{2}m(r_1^2+r_2^2)</math>
+|-
+| Thin [[cylinder (geometry)|cylindrical]] shell with open ends, of radius ''r'' and mass ''m''.
+
+This expression assumes that the shell thickness is negligible. It is a special case of the thick-walled cylindrical tube for ''r''<sub>1</sub> = ''r''<sub>2</sub>.
+Also, a point mass ''m'' at the end of a rod of length ''r'' has this same moment of inertia and the value ''r'' is called the [[radius of gyration]].
+
+| align="center" | [[File:moment of inertia thin cylinder.png]]
+| <math>I \approx m r^2 \,\!</math>&nbsp;&nbsp;<ref name="serway">{{cite book
+|title=Physics for Scientists and Engineers
+|edition=2nd
+|author=Raymond A. Serway
+|page=[https://archive.org/details/physicsforscient02serw/page/202 202]
+|publisher=Saunders College Publishing
+|isbn=0-03-004534-7
+|year=1986
+|url=https://archive.org/details/physicsforscient02serw/page/202
+}}</ref>
+|-
+|Solid cylinder of radius ''r'', height ''h'' and mass ''m''.
+
+This is a special case of the thick-walled cylindrical tube, with ''r''<sub>1</sub> = 0. 
+| align="center" | [[File:moment of inertia solid cylinder.svg|170px]]
+|<math>I_z = \frac{1}{2} m r^2\,\!</math>&nbsp;&nbsp;<ref name="serway" /><br /><math>I_x = I_y = \frac{1}{12} m \left(3r^2+h^2\right)</math>
+|-
+| Thick-walled cylindrical tube with open ends, of inner radius ''r''<sub>1</sub>, outer radius ''r''<sub>2</sub>, length ''h'' and mass ''m''.
+| rowspan="2" align="center" | [[File:moment of inertia thick cylinder h.svg]]
+|<!-- Please read the discussion on the talk page and the cited source before changing the sign to a minus. -->
+<math>I_z = \frac{1}{2} m \left(r_2^2 + r_1^2\right) = m r_2^2 \left(1-t+\frac{t^2}{2}\right) </math>&nbsp;&nbsp;
+<ref name="serway" />
+<ref>[http://www.livephysics.com/problems-and-answers/classical-mechanics/find-moment-of-inertia-of-a-uniform-hollow-cylinder.html Classical Mechanics - Moment of inertia of a uniform hollow cylinder] {{webarchive|url=https://web.archive.org/web/20080207072800/http://www.livephysics.com/problems-and-answers/classical-mechanics/find-moment-of-inertia-of-a-uniform-hollow-cylinder.html |date=2008-02-07 }}. 
+LivePhysics.com. Retrieved on 2008-01-31.</ref>
+<br />
+where ''t'' = (''r<sub>2</sub> &minus; r<sub>1</sub>'')/''r<sub>2</sub>'' is a normalized thickness ratio;
+<br />
+<math>I_x = I_y = \frac{1}{12} m \left(3\left(r_2^2 + r_1^2\right)+h^2\right)</math>
+<br />
+The above formula is for the xy plane being at the middle of the cylinder. If the xy plane is at the base of the cylinder, then the following formula applies:
+<br />
+<math>I_x = I_y = \frac{1}{12} m \left(3\left(r_2^2 + r_1^2\right)+4h^2\right)</math>
+|-
+| With a density of ''ρ'' and the same geometry
+note: this is for an object with a constant density 
+|  <math>I_z = \frac{\pi\rho h}{2} \left(r_2^4 - r_1^4\right)</math><br /> 
+<math>I_x = I_y = \frac{\pi\rho h}{12} \left(3(r_2^4 - r_1^4)+h^2(r_2^2 - r_1^2)\right)</math>
+|-
+| Regular [[tetrahedron]] of side ''s'' and mass ''m''
+| align="center" | [[File:Tetraaxial.gif|170px]]
+| <math>I_\mathrm{solid} = \frac{1}{20} m s^2\,\!</math>
+<math>I_\mathrm{hollow} = \frac{1}{12} m s^2\,\!</math> <ref name="satterly" />
+|-
+| Regular [[octahedron]] of side ''s'' and mass ''m''
+| align="center" | [[File:Octahedral axis.gif|170px]]
+| <math>I_{x, \mathrm{hollow}}=I_{y, \mathrm{hollow}}=I_{z, \mathrm{hollow}} = \frac{1}{6} m s^2\,\!</math> <ref name="satterly">{{cite journal |last=Satterly |first=John |title=The Moments of Inertia of Some Polyhedra |jstor=3608345 |publisher= Mathematical Association |volume=42 |issue=339 |pages=11–13 |journal=The Mathematical Gazette  |doi=10.2307/3608345|year=1958 }}</ref><br /><math>I_{x, \mathrm{solid}} = I_{y, \mathrm{solid}} = I_{z, \mathrm{solid}} = \frac{1}{10}m s^2\,\!</math> <ref name="satterly" />
+|-
+| Regular [[dodecahedron]] of side ''s'' and mass ''m''
+| align="center" |
+| <math>I_{x, \mathrm{hollow}}=I_{y, \mathrm{hollow}}=I_{z, \mathrm{hollow}} = \frac{39\phi+28}{90}m s^2</math>
+<math>I_{x, \mathrm{solid}}=I_{y, \mathrm{solid}}=I_{z, \mathrm{solid}} = \frac{39\phi+28}{150}m s^2\,\!</math> (where <math>\phi=\frac{1+\sqrt{5}}{2}</math>) <ref name="satterly" />
+|-
+| Regular [[icosahedron]] of side ''s'' and mass ''m''
+| align="center" |
+| <math>I_{x, \mathrm{hollow}}=I_{y, \mathrm{hollow}}=I_{z, \mathrm{hollow}} = \frac{\phi^2}{6} m s^2 </math>
+<math>I_{x, \mathrm{solid}}=I_{y, \mathrm{solid}}=I_{z, \mathrm{solid}}  = \frac{\phi^2}{10} m s^2 \,\!</math> <ref name="satterly" />
+|-
+| Hollow [[sphere]] of radius ''r'' and mass ''m''.
+
+A hollow sphere can be taken to be made up of two stacks of infinitesimally thin, circular hoops, where the radius differs from 0 to ''r'' (or a single stack, where the radius differs from &minus;''r'' to ''r'').
+| align="center" | [[File:moment of inertia hollow sphere.svg|170px]]
+|<math>I = \frac{2}{3} m r^2\,\!</math>&nbsp;&nbsp;<ref name="serway" />
+|-
+| Solid sphere [[ball (mathematics)|(ball)]] of radius ''r'' and mass ''m''.
+
+A sphere can be taken to be made up of two stacks of infinitesimally thin, solid discs, where the radius differs from 0 to ''r'' (or a single stack, where the radius differs from &minus;''r'' to ''r'').
+
+| align="center" | [[File:moment of inertia solid sphere.svg|170px]]
+|<math>I = \frac{2}{5} m r^2\,\!</math>&nbsp;&nbsp;<ref name="serway" />
+|-
+| [[Sphere]] (shell) of radius ''r''<sub>2</sub> and mass ''m'', with centered spherical cavity of radius ''r''<sub>1</sub>.
+
+When the cavity radius ''r''<sub>1</sub> = 0, the object is a solid ball (above).
+
+When ''r''<sub>1</sub> = ''r''<sub>2</sub>, <math>\left(\frac{r_2^5 - r_1^5}{r_2^3 - r_1^3}\right)=\frac{5}{3}r_2^2</math>, and the object is a hollow sphere.
+| align="center" | [[File:Spherical shell moment of inertia.png|170px]]
+|<math>I = \frac{2}{5} m\left(\frac{r_2^5 - r_1^5}{r_2^3 - r_1^3}\right)\,\!</math>&nbsp;&nbsp;<ref name="serway" />
+|-
+| [[right angle|Right]] circular [[cone (geometry)|cone]] with radius ''r'', height ''h'' and mass ''m''
+| align="center" | [[File:moment of inertia cone.svg|120px]]
+|<math>I_z = \frac{3}{10} mr^2 \,\!</math>&nbsp;&nbsp;<ref name="beer">{{cite book
+|title=Vector Mechanics for Engineers, fourth ed.
+|author=Ferdinand P. Beer and E. Russell Johnston, Jr
+|page=911
+|publisher=McGraw-Hill
+|isbn=0-07-004389-2
+|year=1984
+}}</ref><br />
+About an axis passing through the tip:<br />
+<math>I_x = I_y = m \left(\frac{3}{20} r^2 + \frac{3}{5} h^2\right) \,\!</math>&nbsp;&nbsp;<ref name="beer" /><br />
+About an axis passing through the base:<br />
+<math>I_x = I_y = m \left(\frac{3}{20} r^2 + \frac{1}{10} h^2\right) \,\!</math><br />
+About an axis passing through the center of mass:<br />
+<math>I_x = I_y = m \left(\frac{3}{20} r^2 + \frac{3}{80} h^2\right) \,\!</math>
+|-
+| [[right angle|Right]] circular [[cone (geometry)|hollow cone]] with radius ''r'', height ''h'' and mass ''m''
+| align="center" | [[File:moment of inertia cone.svg|120px]]
+|<math>I_z = \frac{1}{2} mr^2 \,\!</math>&nbsp;&nbsp;<ref name="beer" /><br /><math>I_x = I_y = \frac{1}{4}m\left(r^2 + 2h^2\right) \,\!</math>&nbsp;&nbsp;<ref name="beer" />
+|-
+| [[Torus]] with minor radius ''a'', major radius ''b'' and mass ''m''.
+
+| align="center" | [[File:Torus cycles (labeled).png|frameless|260x260px]]
+| About an axis passing through the center and perpendicular to the diameter: <math>\frac{1}{4}m\left(4b^2 + 3a^2\right)</math>&nbsp;&nbsp;<ref name="weisstein_torus" /><br />About a diameter: <math>\frac{1}{8}m\left(5a^2 + 4b^2\right)</math>&nbsp;&nbsp;<ref name="weisstein_torus">{{cite web
+| url = http://scienceworld.wolfram.com/physics/MomentofInertiaRing.html
+| title = Moment of Inertia &mdash; Ring
+| author = [[Eric W. Weisstein]]
+| publisher = [[Wolfram Research]]
+| access-date = 2016-12-14
+}}</ref><br />
+|-
+| [[Ellipsoid]] (solid) of semiaxes ''a'', ''b'', and ''c'' with mass ''m''
+| [[File:Ellipsoid 321.png|170px]]
+|<math>I_a = \frac{1}{5} m\left(b^2+c^2\right)\,\!</math><br /><br /><math>I_b = \frac{1}{5} m \left(a^2+c^2\right)\,\!</math><br /><br /><math>I_c = \frac{1}{5} m \left(a^2+b^2\right)\,\!</math>
+|-
+| Thin rectangular plate of height ''h'', width ''w'' and mass ''m''<br />(Axis of rotation at the end of the plate)
+| align="center" | [[File:Recplaneoff.svg|170px]]
+|<math>I_e = \frac{1}{12} m \left(4h^2 + w^2\right)\,\!</math>
+|-
+| Thin rectangular plate of height ''h'', width ''w'' and mass ''m''<br />(Axis of rotation at the center)
+| align="center" | [[File:Recplane.svg|170px]]
+|<math>I_c = \frac{1}{12} m \left(h^2 + w^2\right)\,\!</math>&nbsp;&nbsp;<ref name="serway" />
+|-
+|Thin rectangular plate of radius ''r''{{Efn|Width perpendicular to the axis of rotation (side of plate); height (parallel to axis) is irrelevant.|name=|group=}} and mass ''m''
+(Axis of rotation along a side of the plate)
+|
+|<math>I=\frac{1}{3}mr^2</math>
+|-
+| Solid [[cuboid]] of height ''h'', width ''w'', and depth ''d'', and mass ''m''.
+
+For a similarly oriented [[cube (geometry)|cube]] with sides of length <math>s</math>, <math>I_\mathrm{CM} = \frac{1}{6}m s^2\,\!</math>
+| align="center" | [[File:moment of inertia solid rectangular prism.png]]
+|<math>I_h = \frac{1}{12} m \left(w^2+d^2\right)</math><br /><br /><math>I_w = \frac{1}{12} m \left(d^2+h^2\right)</math><br /><br /><math>I_d = \frac{1}{12} m \left(w^2+h^2\right)</math>
+|-
+| Solid [[cuboid]] of height ''D'', width ''W'', and length ''L'', and mass ''m'', rotating about the longest diagonal.
+
+For a cube with sides <math>s</math>, <math>I = \frac{1}{6} m s^2\,\!</math>.
+
+| align="center" | [[File:Moment of Inertia Cuboid.svg|140px]]
+|<math>I = \frac{1}{6}m \left(\frac{W^2D^2+D^2L^2+W^2L^2}{W^2+D^2+L^2}\right)</math>
+|-
+| Tilted solid [[cuboid]] of depth ''d'', width ''w'', and length ''l'', and mass ''m'', rotating about the vertical axis (axis y as seen in figure).
+
+For a cube with sides <math>s</math>, <math>I = \frac{1}{6} m s^2\,\!</math>.
+
+| align="center" | [[File:Tiltedcuboid.pdf|350x350px|Tilted cuboid|alt=]]
+|<math>I = \frac{m}{12} \left(l^2 \cos^2\beta + d^2 \sin^2\beta + w^2\right)</math><ref>A. Panagopoulos and G. Chalkiadakis. Moment of inertia of potentially tilted cuboids. Technical report, University of Southampton, 2015.</ref>
+|-
+| Triangle with vertices at the origin and at '''P''' and '''Q''', with mass ''m'', rotating about an axis perpendicular to the plane and passing through the origin.
+|
+|<math>I=\frac{1}{6}m(\mathbf{P}\cdot\mathbf{P}+\mathbf{P}\cdot\mathbf{Q}+\mathbf{Q}\cdot\mathbf{Q})</math>
+|-
+| Plane [[polygon]] with vertices '''P'''<sub>1</sub>, '''P'''<sub>2</sub>, '''P'''<sub>3</sub>, ..., '''P'''<sub>''N''</sub> and mass ''m'' uniformly distributed on its interior, rotating about an axis perpendicular to the plane and passing through the origin.
+| align="center" | [[File:Polygon Moment of Inertia.svg|130px]]
+|<math>I=m\left(\frac{\sum\limits_{n=1}^N\|\mathbf{P}_{n+1}\times\mathbf{P}_n\|\left(\left(\mathbf{P}_n\cdot\mathbf{P}_n\right)+\left(\mathbf{P}_{n}\cdot\mathbf{P}_{n+1}\right)+\left(\mathbf{P}_{n+1}\cdot\mathbf{P}_{n+1}\right)\right)}{6\sum\limits_{n=1}^{N}\|\mathbf{P}_{n+1}\times\mathbf{P}_n\|}\right)</math>
+|-
+| Plane [[regular polygon]] with ''n''-vertices and mass ''m'' uniformly distributed on its interior, rotating about an axis perpendicular to the plane and passing through its barycenter. ''R'' is the radius of the circumscribed circle.
+| align="center" |
+|<math>I=\frac{1}{2}mR^2\left(1 - \frac{2}{3}\sin^2\left(\tfrac{\pi}{n}\right)\right)</math>&nbsp;&nbsp;<ref name="six">{{cite book
+|title=Introduction to Classical Mechanics: With Problems and Solutions; first edition (8 January 2010)
+|author=David Morin
+|page=[https://archive.org/details/introductiontocl00mori/page/320 320]
+|publisher=Cambridge University Press
+|isbn=978-0521876223
+|year=2010
+|url=https://archive.org/details/introductiontocl00mori/page/320
+}}</ref>
+|-
+| An isosceles triangle of mass ''M'', vertex angle ''2β'' and common-side length ''L'' (axis through tip, perpendicular to plane)
+| align="center" |
+|<math>I=\frac{1}{2} mL^2 \left(1 - \frac{2}{3}\sin^2\left(\beta\right)\right)</math>&nbsp;&nbsp;<ref name="six" />
+|-
+| Infinite [[disk (mathematics)|disk]] with mass distributed in a [[Bivariate Gaussian distribution]] on two axes around the axis of rotation with mass-density as a function of the position vector <math>{\mathbf x}</math>
+
+:<math>\rho({\mathbf x}) = m\frac{\exp\left(-\frac 1 2 {\mathbf x}^\mathrm{T}{\boldsymbol\Sigma}^{-1}{\mathbf x}\right)}{\sqrt{(2\pi)^2|\boldsymbol\Sigma|}}
+</math>
+
+| align="center" | [[File:Gaussian 2D.png|130px]]
+| <math>I = m \cdot \operatorname{tr}({\boldsymbol\Sigma}) \,\!</math>
+|}
+<!-- There is no such thing as an illegal set of axes. They may be invalid for some purposes but the x, y and z may just be labels. The right-hand rule has no bearing here.
+the x-y-z axis for the solid cylinder does not follow the right-hand rule and is an illegal set of axis. -->
+<!--'force at centre of mass always subjects to transational motion. but force at axis ofrotation is not 100% giving rise to transational motion.' - Gibberish! Hopefully, someone can translate this into something meaningful (and get spelling correct).-->
+
+== List of 3D inertia tensors ==
+
+This list of [[Moment of inertia#Inertia tensor|moment of inertia tensors]] is given for [[Principal axis theorem|principal axes]] of each object.
+
+To obtain the scalar moments of inertia '''I''' above, the tensor moment of inertia '''I''' is projected along some axis defined by a [[unit vector]] '''n''' according to the formula:
+
+:<math>\mathbf{n}\cdot\mathbf{I}\cdot\mathbf{n}\equiv n_i I_{ij} n_j\,,</math>
+
+where the dots indicate [[tensor contraction]] and the [[Einstein summation convention]] is used. In the above table, '''n''' would be the unit [[Cartesian coordinate system#Representing a vector in the standard basis|Cartesian basis]] '''e'''<sub>''x''</sub>, '''e'''<sub>''y''</sub>, '''e'''<sub>''z''</sub> to obtain ''I<sub>x</sub>'', ''I<sub>y</sub>'', ''I<sub>z</sub>'' respectively.
+
+{|class="wikitable"
+|-
+! Description !! Figure !! Moment of inertia tensor
+|-
+| Solid [[sphere]] of radius ''r'' and mass ''m''
+|| [[File:moment of inertia solid sphere.svg|180px]]
+|| <math>
+I =
+\begin{bmatrix}
+  \frac{2}{5} m r^2 & 0 & 0 \\
+  0 & \frac{2}{5} m r^2 & 0 \\
+  0 & 0 & \frac{2}{5} m r^2
+\end{bmatrix}
+</math>
+|-
+|Hollow sphere of radius ''r'' and mass ''m''||[[File:moment of inertia hollow sphere.svg|180px]]||
+<math>
+I =
+\begin{bmatrix}
+  \frac{2}{3} m r^2 & 0 & 0 \\
+  0 & \frac{2}{3} m r^2 & 0 \\
+  0 & 0 & \frac{2}{3} m r^2
+\end{bmatrix}
+</math>
+|-
+| Solid [[ellipsoid]] of semi-axes ''a'', ''b'', ''c'' and mass ''m''
+|| [[File:Solid ellipsoid.svg|180px]]
+|| <math>
+I =
+\begin{bmatrix}
+  \frac{1}{5} m (b^2+c^2) & 0 & 0 \\
+  0 & \frac{1}{5} m (a^2+c^2) & 0 \\
+  0 & 0 & \frac{1}{5} m (a^2+b^2)
+\end{bmatrix}
+</math>
+|-
+| [[Right circular cone]] with radius ''r'', height ''h'' and mass ''m'', about the apex
+|| [[File:moment of inertia cone.svg|180px]]
+|| <math>
+I =
+\begin{bmatrix}
+  \frac{3}{5} m h^2 + \frac{3}{20} m r^2 & 0 & 0 \\
+  0 & \frac{3}{5} m h^2 + \frac{3}{20} m r^2 & 0 \\
+  0 & 0 & \frac{3}{10} m r^2
+\end{bmatrix}
+</math>
+|-
+| Solid cuboid of width ''w'', height ''h'', depth ''d'', and mass ''m''
+|| [[File:moment of inertia solid rectangular prism.png|180x|center]]
+|| <math>
+I =
+\begin{bmatrix}
+  \frac{1}{12} m (h^2 + d^2) & 0 & 0 \\
+  0 & \frac{1}{12} m (w^2 + d^2) & 0 \\
+  0 & 0 & \frac{1}{12} m (w^2 + h^2)
+\end{bmatrix}
+</math>
+|-
+|Slender rod along ''y''-axis of length ''l'' and mass ''m'' about end|| [[File:Moment of inertia rod end.svg|center]]||
+<math>
+I =
+\begin{bmatrix}
+  \frac{1}{3} m l^2 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & \frac{1}{3} m l^2
+\end{bmatrix}
+</math>
+|-
+|Slender rod along ''y''-axis of length ''l'' and mass ''m'' about center|| [[File:Moment of inertia rod center.svg|180px|center]]||
+<math>
+I =
+\begin{bmatrix}
+  \frac{1}{12} m l^2 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & \frac{1}{12} m l^2
+\end{bmatrix}
+</math>
+|-
+|Solid cylinder of radius ''r'', height ''h'' and mass ''m''|| [[File:Moment of inertia solid cylinder.svg|180px]]||
+<math>
+I =
+\begin{bmatrix}
+  \frac{1}{12} m (3r^2+h^2) & 0 & 0 \\
+  0 & \frac{1}{12} m (3r^2+h^2) & 0 \\
+  0 & 0 & \frac{1}{2} m r^2\end{bmatrix}
+</math>
+|-
+|Thick-walled cylindrical tube with open ends, of inner radius ''r''<sub>1</sub>, outer radius ''r''<sub>2</sub>, length ''h'' and mass ''m''|| [[File:Moment of inertia thick cylinder h.svg|180px]]||
+<math>
+I =
+\begin{bmatrix}
+  \frac{1}{12} m (3(r_2^2 + r_1^2)+h^2) & 0 & 0 \\
+  0 & \frac{1}{12} m (3(r_2^2 + r_1^2)+h^2) & 0 \\
+  0 & 0 & \frac{1}{2} m (r_2^2 + r_1^2)\end{bmatrix}
+</math>
+|-
+|}
+
+==See also==
+*[[Parallel axis theorem]]
+*[[Perpendicular axis theorem]]
+*[[List of second moments of area]]
+
+==Notes==
+{{notelist}}
+
+==References==
+<references/>
+
+==External links==
+*[http://number-none.com/blow/inertia/bb_inertia.doc The inertia tensor of a tetrahedron]
+*[http://www.miniphysics.com/uy1-calculation-of-moment-of-inertia-of-2.html Tutorial on deriving moment of inertia for common shapes]
+
+[[Category:Mechanics|Moment of inertia]]
+[[Category:Physics-related lists|Moments of inertia]]
+[[Category:Physical quantities]]
+[[Category:Rigid bodies]]
+[[Category:Tensors]]
+
+[[he:טנזור התמד#דוגמאות]]

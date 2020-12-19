@@ -1,0 +1,163 @@
+{{about|physics and chemistry|other fields|Degrees of freedom}}
+{{Refimprove|date=November 2009}}
+
+In [[physics]] and [[chemistry]], a '''degree of freedom''' is an independent physical [[parameter]] in the formal description of the state of a [[physical system]]. The set of all states of a system is known as the system's [[phase space]], and the degrees of freedom of the system are the [[dimension]]s of the phase space.
+
+The location of a particle in three-dimensional space requires three position coordinates. Similarly, the direction and speed at which a particle moves can be described in terms of three velocity components, each in reference to the three dimensions of space.  If the time evolution of the system is deterministic, where the state at one instant uniquely determines its past and future position and velocity as a function of time, such a system has six degrees of freedom.{{citation needed|date=November 2015}} If the motion of the particle is constrained to a lower number of dimensions – for example, the particle must move along a wire or on a fixed surface – then the system has fewer than six degrees of freedom. On the other hand, a system with an extended object that can rotate or vibrate can have more than six degrees of freedom.
+
+In [[classical mechanics]], the state of a [[point particle]] at any given time is often described with position and velocity coordinates in the [[Lagrangian mechanics|Lagrangian]] formalism, or with position and momentum coordinates in the [[Hamiltonian (quantum mechanics)|Hamiltonian]] formalism.
+
+In [[statistical mechanics]], a degree of freedom is a single [[scalar (physics)|scalar]] number describing the [[microstate (statistical mechanics)|microstate]] of a system.<ref name=":0">{{cite book |last=Reif |first=F. |title=Fundamentals of Statistical and Thermal Physics |year=2009 |publisher=Waveland Press, Inc. |location=Long Grove, IL |isbn=978-1-57766-612-7 |page=51}}</ref> The specification of all microstates of a system is a point in the system's [[phase space]].
+
+In the 3D [[ideal chain]] model in chemistry, two [[angle]]s are necessary to describe the orientation of each monomer.
+
+It is often useful to specify quadratic degrees of freedom. These are degrees of freedom that contribute in a quadratic function to the energy of the system.
+
+Depending on what one is counting, there are several different ways that degrees of freedom can be defined,
+each with a different value.<ref>https://chemistry.stackexchange.com/questions/83840/does-a-diatomic-gas-have-one-or-two-vibrational-degrees-of-freedom</ref>
+
+==Thermodynamic Degrees of Freedom for Gases==
+By the [[equipartition theorem]], internal energy per mole of gas equals c<sub>v</sub> T,
+where T is temperature in kelvins and the specific heat at constant volume is c<sub>v</sub> = (f)(R/2).
+R = 8.314 J/(K mol) is the universal gas constant, and "f" is the number of thermodynamic (quadratic) degrees of freedom,
+counting the number of ways in which energy can occur.
+
+Any atom or molecule has three degrees of freedom associated with translational motion (kinetic energy) of the [[center of mass]] with respect to the x, y, and z axes. These are the only degrees of freedom for [[noble gas]]es (helium, neon, argon, etc.), which do not form molecules. 
+
+A [[molecule]] (two or more joined atoms) can have rotational kinetic energy.
+A [[linear molecular geometry|linear molecule]], where all atoms lie along a single axis,
+such as any [[diatomic molecule]] and some other molecules like [[carbon dioxide]] (CO<sub>2</sub>),
+has two rotational degrees of freedom, because it can rotate about either of two axes perpendicular to the molecular axis.
+A nonlinear molecule, where the atoms do not lie along a single axis, like [[Properties of water|water]] (H<sub>2</sub>O), has three rotational degrees of freedom, because it can rotate around any of three perpendicular axes.
+In special cases, such as adsorbed large molecules, the rotational degrees of freedom can be limited to only one.<ref>{{cite journal|doi=10.1002/cphc.201200531|pmid=23047526|title=Stabilization of Large Adsorbates by Rotational Entropy: A Time-Resolved Variable-Temperature STM Study|journal=ChemPhysChem|volume=14|issue=1|pages=162–9|year=2013|last1=Waldmann|first1=Thomas|last2=Klein|first2=Jens|last3=Hoster|first3=Harry E.|last4=Behm|first4=R. Jürgen}}</ref>
+
+A molecule can also vibrate. A diatomic molecule has one [[molecular vibration]] mode, where the two atoms oscillate back and forth with the chemical bond between them acting as a spring. A molecule with {{mvar|N}} atoms has more complicated modes of [[molecular vibration]], with {{math|3''N'' − 5}} vibrational modes for a linear molecule and {{math|3''N'' − 6}} modes for a nonlinear molecule.<ref>[[Molecular vibration]]</ref>
+As specific examples, the linear CO<sub>2</sub> molecule has 4 modes of oscillation,<ref>For drawings, see http://www.colby.edu/chemistry/PChem/notes/NormalModesText.pdf</ref> and the nonlinear water molecule has 3 modes of oscillation<ref>For drawings, see https://sites.cns.utexas.edu/jones_ch431/normal-modes-vibration</ref>
+Each vibrational mode has two degrees of freedom for energy. One degree of freedom involves the [[kinetic energy]] of the moving atoms,
+and one degree of freedom involves the [[potential energy]] of the spring-like chemical bond(s).
+Therefore, the number of vibrational degrees of freedom for energy is {{math|2(3''N'' − 5)}} for a linear molecule and {{math|2(3''N'' − 6)}} modes for a nonlinear molecule.
+
+Both the rotational and vibrational modes are quantized, requiring a minimum temperature to be activated.<ref>Section 12-7 (pp. 376-379) of Sears and Salinger, 1975: Thermodynamics, Kinetic Theory, and Statistical Thermodynamics. Third edition. Addison-Wesley Publishing Co.</ref> The "[[rotational temperature]]" to activate the rotational degrees of freedom is less than 100 K for many gases. For N<sub>2</sub> and O<sub>2</sub>, it is less than 3 K.<ref>[[Rotational temperature]]</ref>
+The "[[vibrational temperature]]" necessary for substantial vibration is 3521 K for N<sub>2</sub> and 2156 K for O<sub>2</sub>.<ref>[[Vibrational temperature]]</ref> Typical atmospheric temperatures are not high enough to activate vibration in N<sub>2</sub> and O<sub>2</sub>, which comprise most of the atmosphere. (See the next figure.) However, the much less abundant [[greenhouse gas]]es keep the [[troposphere]] warm by absorbing [[infrared]] from the Earth's surface, which excites their vibrational modes.<ref>https://scied.ucar.edu/molecular-vibration-modes</ref>
+Much of this energy is reradiated back to the surface in the infrared through the "[[greenhouse effect]]."
+
+Because air is dominated by diatomic gases nitrogen and oxygen, 
+its molar internal energy is close to c<sub>v</sub> T = (5/2)RT, determined by the 5 degrees of freedom exhibited by diatomic gases.<ref>[[Equipartition theorem#Diatomic gases]]</ref>
+See the graph at right.
+[[File:Specific heat at constant volume for dry air vs T.png|thumb|Graph of the specific heat of dry air at constant volume, c<sub>v</sub>, as a function of temperature numerical values are taken from the table at Air - Specific Heat at Constant Pressure and Varying Temperature.<ref>https://www.engineeringtoolbox.com/air-specific-heat-capacity-d_705.html</ref> Those values have units of J/(K kg), so reference lines at plotted (5/2) R<sub>d</sub> and (7/2) R<sub>d</sub>, where R<sub>d</sub> = R/M<sub>d</sub> is the gas constant for dry air, R = 8.314 J/(K mol) is the universal gas constant, and M<sub>d</sub> =  28.965369 g/mol is the molar mass of dry air.<ref>Gatley, D. P., S. Herrmann, H.-J. Kretzshmar, 2008: A twenty-first century molar mass for dry air. HVAC&R Research, vol. 14, pp. 655-662.</ref>
+At T = 140, 160, 200, 220, 320, 340, 360, 380 K, c<subv</sub> = 718.4, 717.2, 716.3, 716.3, 719.2, 720.6, 722.3, 724.3 J/(K kg). Thus, for 140 K < T < 360 K, c<sub>v</sub> differs from (5/2) R<sub>d</sub> by less than 1%.]]
+For 140 K < T < 380 K, c<sub>v</sub> differs from (5/2) R<sub>d</sub> by less than 1%.
+Only at temperatures well above temperatures in the [[troposphere]] and [[stratosphere]] do some molecules have enough energy to activate the vibrational modes of N<sub>2</sub> and O<sub>2</sub>. The specific heat at constant volume, c<sub>v</sub>, increases slowly toward (7/2) R as temperature increases above T = 400 K, where c<sub>v</sub> is 1.3% above (5/2) R<sub>d</sub> = 717.5 J/(K kg).
+
+==Counting the Minimum Number of Coordinates to Specify a Position==
+
+One can also count degrees of freedom using the minimum number of coordinates required to specify a position. This is done as follows:
+# For a single particle we need 2 coordinates in a 2-D plane to specify its position and 3 coordinates in 3-D space. Thus its degree of freedom in a 3-D space is 3.
+# For a body consisting of 2 particles (ex. a diatomic molecule) in a 3-D space with constant distance between them (let's say d) we can show (below) its degrees of freedom to be 5.
+Let's say one particle in this body has coordinate {{math|(''x''<sub>1</sub>, ''y''<sub>1</sub>, ''z''<sub>1</sub>)}} and the other has coordinate {{math|(''x''<sub>2</sub>, ''y''<sub>2</sub>, ''z''<sub>2</sub>)}} with {{math| ''z''<sub>2</sub>}} unknown. Application of the formula for distance between two coordinates
+:<math>d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}</math>
+results in one equation with one unknown, in which we can solve for {{math|''z''<sub>2</sub>}}.
+One of {{math|''x''<sub>1</sub>}}, {{math|''x''<sub>2</sub>}}, {{math|''y''<sub>1</sub>}}, {{math|''y''<sub>2</sub>}}, {{math|''z''<sub>1</sub>}}, or {{math|''z''<sub>2</sub>}} can be unknown.
+
+Contrary to the classical [[equipartition theorem]], at room temperature, the vibrational motion of molecules typically makes negligible contributions to the [[heat capacity]]. This is because these degrees of freedom are ''frozen'' because the spacing between the energy [[eigenvalue]]s exceeds the energy corresponding to ambient [[temperature]]s ({{math|''k''<sub>B</sub>''T''}}). In the following table such degrees of freedom are disregarded because of their low effect on total energy. Then only the translational and rotational degrees of freedom contribute, in equal amounts, to the [[heat capacity ratio]].  This is why {{mvar|γ}}={{math|{{sfrac|5|3}}}} for [[monatomic]] gases and {{mvar|γ}}={{math|{{sfrac|7|5}}}} for [[diatomic]] gases at room temperature.
+
+However, at very high temperatures, on the order of the vibrational temperature (Θ<sub>vib</sub>), vibrational motion cannot be neglected.
+
+Vibrational temperatures are between 10<sup>3</sup> K and 10<sup>4</sup> K.<ref name=":0" />
+
+{| class="wikitable"
+|-
+!
+! [[Monatomic]]
+! [[Linear molecule]]s
+! [[molecular geometry|Non-linear molecules]]
+|-
+| Translation ({{mvar|x}}, {{mvar|y}}, and {{mvar|z}})
+| align="center" | 3
+| align="center" | 3
+| align="center" | 3
+|-
+| Rotation ({{mvar|x}}, {{mvar|y}}, and {{mvar|z}})
+| align="center" | 0
+| align="center" | 2
+| align="center" | 3
+|-
+| '''Total''' (disregarding Vibration at room temperatures)
+| align="center" | 3
+| align="center" | 5
+| align="center" | 6
+|-
+| Vibration
+| align="center" | 0
+| align="center" | {{math|3''N'' − 5}}
+| align="center" | {{math|3''N'' − 6}}
+|-
+| '''Total''' (including Vibration)
+| align="center" | '''3'''
+| align="center" | '''3''N'''''
+| align="center" | '''3''N'''''
+|}
+
+==Independent degrees of freedom==
+The set of degrees of freedom {{math|''X''<sub>1</sub>, ... , ''X''<sub>''N''</sub>}} of a system is independent if the energy associated with the set can be written in the following form:
+:<math>E = \sum_{i=1}^N E_i(X_i),</math>
+
+where {{mvar|E<sub>i</sub>}} is a function of the sole variable {{mvar|X<sub>i</sub>}}.
+
+example: if {{math|''X''<sub>1</sub>}} and {{math|''X''<sub>2</sub>}} are two degrees of freedom, and {{mvar|E}} is the associated energy:
+:* If <math>E = X_1^4 + X_2^4</math>, then the two degrees of freedom are independent.
+:* If <math>E = X_1^4 + X_1 X_2 + X_2^4</math>, then the two degrees of freedom are ''not'' independent. The term involving the product of {{math|''X''<sub>1</sub>}} and {{math|''X''<sub>2</sub>}} is a coupling term that describes an interaction between the two degrees of freedom.
+
+For {{mvar|i}} from 1 to {{mvar|N}}, the value of the {{mvar|i}}th degree of freedom {{mvar|X<sub>i</sub>}} is distributed according to the [[Boltzmann distribution]]. Its [[probability density function]] is the following:
+: <math>p_i(X_i) = \frac{e^{-\frac{E_i}{k_B T}}}{\int dX_i \, e^{-\frac{E_i}{k_B T}}}</math>,
+
+In this section, and throughout the article the brackets <math>\langle \rangle</math> denote the [[mean]] of the quantity they enclose.
+
+The [[internal energy]] of the system is the sum of the average energies associated with each of the degrees of freedom:
+:<math>\langle E \rangle = \sum_{i=1}^N \langle E_i \rangle.</math>
+
+==Quadratic degrees of freedom==
+A degree of freedom {{mvar|X<sub>i</sub>}} is quadratic if the energy terms associated with this degree of freedom can be written as
+:<math>E = \alpha_i\,\,X_i^2 + \beta_i \,\, X_i Y </math>,
+
+where {{mvar|Y}} is a [[linear combination]] of other quadratic degrees of freedom.
+
+example: if {{math|''X''<sub>1</sub>}} and {{math|''X''<sub>2</sub>}} are two degrees of freedom, and {{mvar|E}} is the associated energy:
+:* If <math>E = X_1^4 + X_1^3 X_2 + X_2^4</math>, then the two degrees of freedom are not independent and non-quadratic.
+:* If <math>E = X_1^4 + X_2^4</math>, then the two degrees of freedom are independent and non-quadratic.
+:* If <math>E = X_1^2 + X_1 X_2 + 2X_2^2</math>, then the two degrees of freedom are not independent but are quadratic.
+:* If <math>E = X_1^2 + 2X_2^2</math>, then the two degrees of freedom are independent and quadratic.
+
+For example, in [[Newtonian mechanics]], the [[Dynamics (mechanics)|dynamics]] of a system of quadratic degrees of freedom are controlled by a set of homogeneous [[linear differential equation]]s with [[constant coefficients]].
+
+===Quadratic and independent degree of freedom===
+{{math|''X''<sub>1</sub>, ... , ''X''<sub>''N''</sub>}} are quadratic and independent degrees of freedom if the energy associated with a microstate of the system they represent can be written as:
+:<math>E = \sum_{i=1}^N \alpha_i X_i^2</math>
+
+===Equipartition theorem===
+In the classical limit of [[statistical mechanics]], at [[thermodynamic equilibrium]], the [[internal energy]] of a system of {{mvar|N}} quadratic and independent degrees of freedom is:
+: <math>U = \langle E \rangle = N\,\frac{k_B T}{2}</math>
+
+Here, the [[mean]] energy associated with a degree of freedom is:
+:<math>\langle E_i \rangle = \int dX_i\,\,\alpha_i X_i^2\,\, p_i(X_i) = \frac{\int dX_i\,\,\alpha_i X_i^2\,\, e^{-\frac{\alpha_i X_i^2}{k_B T}}}{\int dX_i\,\, e^{-\frac{\alpha_i X_i^2}{k_B T}}} </math>
+:<math>\langle E_i \rangle = \frac{k_B T}{2}\frac{\int dx\,\,x^2\,\, e^{-\frac{x^2}{2}}}{\int dx\,\, e^{-\frac{x^2}{2}}} = \frac{k_B T}{2} </math>
+
+Since the degrees of freedom are independent, the [[internal energy]] of the system is equal to the sum of the [[mean]] energy associated with each degree of freedom, which demonstrates the result.
+
+==Generalizations==
+The description of a system's state as a [[point (geometry)|point]] in its phase space, although mathematically convenient, is thought to be fundamentally inaccurate. In [[quantum mechanics]], the motion degrees of freedom are superseded with the concept of [[wave function]], and [[operator (physics)|operators]] which correspond to other degrees of freedom have [[point spectrum|discrete spectra]]. For example, [[angular momentum operator#Spin, orbital, and total angular momentum|intrinsic angular momentum]] operator (which corresponds to the rotational freedom) for an [[electron]] or [[photon]] has only two [[eigenvalue]]s. This discreteness becomes apparent when [[action (physics)|action]] has an [[order of magnitude]] of the [[Planck constant]], and individual degrees of freedom can be distinguished.
+
+==References==
+{{reflist}}
+
+
+
+
+
+
+
+
+
+
+[[Category:Concepts in physics]]
+[[Category:Dimension]]

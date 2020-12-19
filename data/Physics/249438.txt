@@ -1,0 +1,165 @@
+{{short description|Variational principle for physical systems that minimizes the action of the system}}
+{{classical mechanics}}
+
+:''This article discusses the history of the principle of least action. For the application, please refer to [[action (physics)]].''
+The '''principle of least action''' – or, more accurately, the '''principle of stationary action''' – is a [[variational principle]] that, when applied to the [[action (physics)|action]] of a [[mechanics|mechanical]] system, can be used to obtain the [[equations of motion]] for that system. It was historically called "least" because its solution requires finding the path of motion in space that has the least value.<ref name=":0">Chapter 19 of Volume II, [[Richard Feynman|Feynman R]], [[Robert B. Leighton|Leighton R]], and [[Matthew Sands|Sands M.]] ''The Feynman Lectures on Physics ''. 3 volumes 1964, 1966. Library of Congress Catalog Card No. 63-20717. {{ISBN|0-201-02115-3}} (1970 paperback three-volume set); {{ISBN|0-201-50064-7}} (1989 commemorative hardcover three-volume set); {{ISBN|0-8053-9045-6}} (2006 the definitive edition (2nd printing); hardcover)</ref>
+
+The principle can be used to derive [[Newtonian mechanics|Newtonian]], [[Lagrangian mechanics|Lagrangian]] and [[Hamiltonian mechanics|Hamiltonian]] [[equations of motion]], and even [[general relativity]] (see [[Einstein–Hilbert action]]). In relativity, a different action must be minimized or maximized.
+
+The classical mechanics and electromagnetic expressions are a consequence of quantum mechanics. The stationary action method helped in the development of quantum mechanics.<ref>[[Richard Feynman]], ''[[The Character of Physical Law]]''.</ref> In 1933, the physicist [[Paul Dirac]] demonstrated how this principle can be used in quantum calculations by discerning the [[Path integral formulation#Quantum action principle|quantum mechanical underpinning]] of the principle in the [[Interference (wave propagation)#Quantum interference|quantum interference]] of amplitudes.<ref>{{cite journal |last=Dirac |first=Paul A. M. |authorlink=Paul Dirac |year=1933 |title=The Lagrangian in Quantum Mechanics |journal=Physikalische Zeitschrift der Sowjetunion |volume=3 |issue=1|pages=64–72 |url=http://www.hep.anl.gov/czachos/soysoy/Dirac33.pdf}}</ref> Subsequently [[Julian Schwinger]] and [[Richard Feynman]] independently applied this principle in quantum electrodynamics.<ref>R. Feynman, Quantum Mechanics and Path Integrals, McGraw-Hill (1965), {{ISBN|0070206503}}</ref><ref>J. S. Schwinger, Quantum Kinematics and Dynamics, W. A. Benjamin (1970), {{ISBN|0738203033}}</ref> 
+
+The principle remains central in [[modern physics]] and [[mathematics]], being applied in [[thermodynamics]],<ref>{{cite journal |doi=10.1016/j.aop.2008.04.007 |title=Thermodynamics based on the principle of least abbreviated action: Entropy production in a network of coupled oscillators |journal=Annals of Physics |volume=323 |issue=8 |pages=1844–58 |year=2008 |last1=García-Morales |first1=Vladimir |last2=Pellicer |first2=Julio |last3=Manzanares |first3=José A. |bibcode=2008AnPhy.323.1844G |arxiv=cond-mat/0602186 |s2cid=118464686 }}</ref> [[fluid mechanics]],<ref>http://www.scholarpedia.org/article/Principle_of_least_action</ref> the [[theory of relativity]], [[quantum mechanics]],<ref>{{cite journal |bibcode=1942PhDT.........5F |title=The Principle of Least Action in Quantum Mechanics |last1=Feynman |first1=Richard Phillips |year=1942 }}</ref> [[particle physics]], and [[string theory]]<ref>{{Cite web |url=http://www.damtp.cam.ac.uk/user/db275/LeastAction.pdf |title=Principle of Least Action – damtp |access-date=2016-07-18 |archive-url=https://web.archive.org/web/20151010195059/http://www.damtp.cam.ac.uk/user/db275/LeastAction.pdf |archive-date=2015-10-10 |url-status=dead }}</ref> and is a focus of modern mathematical investigation in [[Morse theory]]. [[Maupertuis' principle]] and [[Hamilton's principle]] exemplify the principle of stationary action.
+
+The action principle is preceded by earlier ideas in [[optics]]. In [[ancient Greece]], [[Euclid]] wrote in his ''Catoptrica'' that, for the path of light reflecting from a mirror, the [[angle of incidence (optics)|angle of incidence]] equals the [[angle of reflection]].<ref>{{cite journal| author-last=Helzberger |author-first=Max| title=Optics from Euclid to Huygens | journal= Applied Optics | volume=5| issue=9|year=1966|pages=1383–93|doi=10.1364/AO.5.001383|pmid=20057555|bibcode=1966ApOpt...5.1383H|quote = In ''Catoptrics'' the law of reflection is stated, namely that incoming and outgoing rays form the same angle with the surface normal." }}</ref> [[Hero of Alexandria]] later showed that this path was the shortest length and least time.<ref>{{cite book
+|last=Kline|first=Morris
+|title=Mathematical Thought from Ancient to Modern Times
+|url=https://archive.org/details/mathematicalthou0000unse|url-access=registration|publisher=Oxford University Press|location=New York
+|date=1972|pages= [https://archive.org/details/mathematicalthou0000unse/page/167 167]–68|isbn=0-19-501496-0}}</ref>
+
+Scholars often credit [[Pierre Louis Maupertuis]] for formulating the principle of least action because he wrote about it in 1744<ref name="mau44">P.L.M. de Maupertuis, ''[[s:fr:Accord de différentes loix de la nature qui avoient jusqu’ici paru incompatibles|Accord de différentes lois de la nature qui avaient jusqu'ici paru incompatibles.]]'' (1744) Mém. As. Sc. Paris p. 417. ([[s:Accord between different laws of Nature that seemed incompatible|English translation]])</ref> and 1746.<ref name="mau46">P.L.M. de Maupertuis, ''[[s:fr:Les loix du mouvement et du repos déduites d'un principe metaphysique|Le lois de mouvement et du repos, déduites d'un principe de métaphysique.]]'' (1746) Mém. Ac. Berlin, p. 267.([[s:Derivation of the laws of motion and equilibrium from a metaphysical principle|English translation]])</ref> However, [[Leonhard Euler]] discussed the principle in 1744,<ref name="eul44">Leonhard Euler, ''Methodus Inveniendi Lineas Curvas Maximi Minive Proprietate Gaudentes.'' (1744) Bousquet, Lausanne &amp; Geneva. 320 pages. Reprinted in ''Leonhardi Euleri Opera Omnia: Series I vol 24.'' (1952) C. Cartheodory (ed.) Orell Fuessli, Zurich. [http://math.dartmouth.edu/~euler/pages/E065.html Scanned copy of complete text] at ''[http://math.dartmouth.edu/~euler/ The Euler Archive]'', Dartmouth.</ref> and evidence shows that [[Gottfried Leibniz]] preceded both by 39 years.<ref name="oco03">J J O'Connor and E F Robertson, "[http://www-history.mcs.st-andrews.ac.uk/history/HistTopics/Forgery_2.html The Berlin Academy and forgery]", (2003), at ''[http://www-history.mcs.st-andrews.ac.uk/history/ The MacTutor History of Mathematics archive]''.</ref><ref name="ger98">Gerhardt CI. (1898) "Über die vier Briefe von Leibniz, die Samuel König in dem Appel au public, Leide MDCCLIII, veröffentlicht hat", ''Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften'', '''I''', 419–427.</ref><ref name="kab13">Kabitz W. (1913) "Über eine in Gotha aufgefundene Abschrift des von S. König in seinem Streite mit Maupertuis und der Akademie veröffentlichten, seinerzeit für unecht erklärten Leibnizbriefes", ''Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften'', '''II''', 632–638.</ref>
+
+==General statement==
+[[File:Least action principle.svg|250px|thumb|As the system evolves, '''q''' traces a path through [[configuration space (physics)|configuration space]] (only some are shown). The path taken by the system (red) has a stationary action (''δS'' = 0) under small changes in the configuration of the system (''δ'''''q''').<ref name=penrose>{{cite book |author=R. Penrose| title=[[The Road to Reality]]| publisher= Vintage books| year=2007 | page = 474|isbn=978-0-679-77631-4}}</ref>]]
+
+The starting point is the ''[[action (physics)|action]]'', denoted <math> \mathcal{S} </math> (calligraphic S), of a physical system. It is defined as the [[integral (mathematics)|integral]] of the [[Lagrangian mechanics|Lagrangian]] ''L'' between two instants of [[time in physics|time]] ''t''<sub>1</sub> and ''t''<sub>2</sub> – technically a [[functional (mathematics)|functional]] of the ''N'' [[generalized coordinates]] '''q''' = (''q''<sub>1</sub>, ''q''<sub>2</sub>, ... , ''q<sub>N</sub>'') which define the [[Configuration space (physics)|configuration]] of the system:
+
+:<math> \mathbf{q} : \mathbf{R} \to \mathbf{R}^N </math>
+:<math> \mathcal{S}[\mathbf{q}, t_1, t_2] 
+= \int_{t_1}^{t_2} L(\mathbf{q}(t),\mathbf{\dot{q}}(t), t) dt </math>
+
+where the dot denotes the [[time derivative]], and ''t'' is time.
+
+Mathematically the principle is<ref>Encyclopaedia of Physics (2nd Edition), R.G. Lerner, G.L. Trigg, VHC publishers, 1991, ISBN (Verlagsgesellschaft) 3-527-26954-1, ISBN (VHC Inc.) 0-89573-752-3</ref><ref name="Analytical Mechanics 2008">Analytical Mechanics, L.N. Hand, J.D. Finch, Cambridge University Press, 2008, {{ISBN|978-0-521-57572-0}}</ref>
+
+:<math> \delta \mathcal{S} = 0 ,</math>
+
+where ''δ'' (lowercase Greek [[Delta (letter)|delta]]) means a ''small'' change. In words this reads:<ref name=penrose/>
+
+:''The path taken by the system between times t<sub>1</sub> and t<sub>2</sub> and configurations q<sub>1</sub> and q<sub>2</sub> is the one for which the '''action''' is '''stationary (no change)''' to '''first order'''.''
+Stationary action is not always a minimum, despite the historical name of least action.<ref>{{cite encyclopedia |last1=Goodman |first1=Bernard |title=Action |date=1993|encyclopedia=McGraw-Hill Encyclopaedia of Physics |publisher=McGraw-Hill |location=New York |editor=Parker, S. P.|isbn=0-07-051400-3|page=22 |edition=2nd |url=https://archive.org/details/mcgrawhillencycl1993park/page/22/mode/2up}}</ref><ref name=":0" />{{rp|19-6}} It is a minimum principle for sufficiently short, finite segments in the path.<ref>{{cite encyclopedia |last1=Stehle |first1=Philip M. |title=Least-action principle |date=1993|encyclopedia=McGraw-Hill Encyclopaedia of Physics |publisher=McGraw-Hill |location=New York |editor=Parker, S. P.|isbn=0-07-051400-3|page=670 |edition=2nd |url=https://archive.org/details/mcgrawhillencycl1993park/page/670/mode/2up}}</ref>
+
+In applications the statement and definition of action are taken together:<ref>Classical Mechanics, T.W.B. Kibble, European Physics Series, McGraw-Hill (UK), 1973, {{ISBN|0-07-084018-0}}</ref>
+
+:<math> \delta \int_{t_1}^{t_2} L(\mathbf{q}, \mathbf{\dot{q}},t) dt = 0 .</math>
+
+The action and Lagrangian both contain the dynamics of the system for all times. The term "path" simply refers to a curve traced out by the system in terms of the coordinates in the [[Configuration space (physics)|configuration space]], i.e. the curve '''q'''(''t''), parameterized by time (see also [[parametric equation]] for this concept).
+
+==Origins, statements, and controversy==
+
+===Fermat===
+{{main article|Fermat's principle}}
+In the 1600s, [[Pierre de Fermat]] postulated that "''light travels between two given points along the path of shortest time''," which is known as the '''principle of least time''' or '''[[Fermat's principle]]'''.<ref name="Analytical Mechanics 2008"/>
+
+===Maupertuis===
+{{main article|Maupertuis principle}}
+Credit for the formulation of the '''principle of least action''' is commonly given to [[Pierre Louis Maupertuis]], who felt that "Nature is thrifty in all its actions", and applied the principle broadly:
+
+{{quote|The laws of movement and of rest deduced from this principle being precisely the same as those observed in nature, we can admire the application of it to all phenomena. The movement of animals, the vegetative growth of plants ... are only its consequences; and the spectacle of the universe becomes so much the grander, so much more beautiful, the worthier of its Author, when one knows that a small number of laws, most wisely established, suffice for all movements.|Pierre Louis Maupertuis<ref>Chris Davis. [http://www.idlex.freeserve.co.uk/idle/evolution/ref/leastact.html ''Idle theory''] {{webarchive|url=https://web.archive.org/web/20060615043538/http://www.idlex.freeserve.co.uk/idle/evolution/ref/leastact.html |date=2006-06-15 }} (1998)</ref>}}
+
+This notion of Maupertuis, although somewhat deterministic today, does capture much of the essence of mechanics.
+
+In application to physics, Maupertuis suggested that the quantity to be minimized was the product of the duration (time) of movement within a system by the "[[vis viva]]",
+
+{{Equation box 1
+|indent =:
+|title='''Maupertuis' principle'''
+|equation = <math>\delta \int 2T(t)  dt=0</math>
+|border=2
+|border colour = #0073CF
+|background colour=#F5FFFA}}
+
+which is the integral of twice what we now call the [[kinetic energy]] ''T'' of the system.
+
+===Euler===
+
+[[Leonhard Euler]] gave a formulation of the action principle in 1744, in very recognizable terms, in the ''Additamentum 2'' to his ''Methodus Inveniendi Lineas Curvas Maximi Minive Proprietate Gaudentes''. Beginning with the second paragraph:
+
+{{cquote|Let the mass of the projectile be ''M'', and let its speed be ''v'' while being moved over an infinitesimal distance ''ds''.   The body will have a momentum ''Mv'' that, when multiplied by the distance ''ds'', will give {{nowrap|''Mv'' ''ds''}}, the momentum of the body integrated over the distance ''ds''.  Now I assert that the curve thus described by the body to be the curve (from among all other curves connecting the same endpoints) that minimizes
+:<math>\int Mv\,ds</math>
+or, provided that ''M'' is constant along the path,
+:<math>M\int v\,ds</math>.|20px|20px|Leonhard Euler<ref name="eul44" /><ref>Euler, [[s:la:Methodus inveniendi/Additamentum II|Additamentum II]] ([http://math.dartmouth.edu/~euler/docs/originals/E065h external link]), ibid. ([https://en.wikisource.org/w/index.php?title=Translation:Methodus_inveniendi/Additamentum_II&oldid=6399338 English translation])</ref>}}
+
+As Euler states, ∫''Mv''d''s'' is the integral of the momentum over distance travelled, which, in modern notation, equals the abbreviated or [[reduced action]]
+
+{{Equation box 1
+|indent =:
+|title='''Euler's principle'''
+|equation = <math>\delta\int p\,dq=0</math>
+|border=2
+|border colour = #0073CF
+|background colour=#F5FFFA}}
+
+Thus, Euler made an equivalent and (apparently) independent statement of the variational principle in the same year as Maupertuis, albeit slightly later. Curiously, Euler did not claim any priority, as the following episode shows.
+
+===Disputed priority===
+
+Maupertuis' priority was disputed in 1751 by the mathematician [[Samuel König]], who claimed that it had been invented by [[Gottfried Leibniz]] in 1707. Although similar to many of Leibniz's arguments, the principle itself has not been documented in Leibniz's works. König himself showed a ''copy'' of a 1707 letter from Leibniz to [[Jacob Hermann (mathematician)|Jacob Hermann]] with the principle, but the ''original'' letter has been lost. In contentious proceedings, König was accused of forgery,<ref name="oco03" /> and even the [[Frederick the Great|King of Prussia]] entered the debate, defending Maupertuis (the head of his Academy), while [[Voltaire]] defended König.{{Citation needed|date=July 2017}}
+
+Euler, rather than claiming priority, was a staunch defender of Maupertuis, and Euler himself prosecuted König for forgery before the Berlin Academy on 13 April 1752.<ref name="oco03" /> The claims of forgery were re-examined 150 years later, and archival work by [[C.I. Gerhardt]] in 1898<ref name="ger98" /> and [[W. Kabitz]] in 1913<ref name="kab13" /> uncovered other copies of the letter, and three others cited by König, in the [[Bernoulli family|Bernoulli]] archives.
+
+==Further development==
+
+Euler continued to write on the topic; in his ''Réflexions sur quelques loix générales de la nature'' (1748), he called the quantity "effort". His expression corresponds to what we would now call [[potential energy]], so that his statement of least action in statics is equivalent to the principle that a system of bodies at rest will adopt a configuration that minimizes total potential energy.
+
+===Lagrange and Hamilton===
+{{main article|Hamilton's principle}}
+Much of the calculus of variations was stated by [[Joseph-Louis Lagrange]] in 1760<ref>{{cite book|editor=D. J. Struik|title=A Source Book in Mathematics, 1200–1800|publisher=MIT Press|location=Cambridge, Mass|year=1969}} pp. 406–413</ref><ref>{{cite book|last=Kline|first=Morris|title=Mathematical Thought from Ancient to Modern Times|url=https://archive.org/details/mathematicalthou0000unse|url-access=registration|publisher=Oxford University Press|location=New York|year=1972|isbn=0-19-501496-0}} pp. 582-589</ref> and he proceeded to apply this to problems in dynamics. In ''Mécanique analytique'' (1788) Lagrange derived the general [[Lagrangian equations of motion|equations of motion]] of a mechanical body.<ref>{{cite book|last=Lagrange|first=Joseph-Louis|title=Mécanique Analytique|year=1788}} p. 226</ref> [[William Rowan Hamilton]] in 1834 and 1835<ref>W. R. Hamilton, "On a General Method in Dynamics", ''Philosophical Transactions of the Royal Society'' [http://www.emis.de/classics/Hamilton/GenMeth.pdf Part I (1834) p.247-308]; [http://www.emis.de/classics/Hamilton/SecEssay.pdf Part II (1835) p. 95-144]. (''From the collection [http://www.emis.de/classics/Hamilton/ Sir William Rowan Hamilton (1805–1865): Mathematical Papers] edited by David R. Wilkins, School of Mathematics, Trinity College, Dublin 2, Ireland. (2000); also reviewed as [http://www.maths.tcd.ie/pub/HistMath/People/Hamilton/Dynamics/ On a General Method in Dynamics]'')</ref> applied the variational principle to the classical [[Lagrangian mechanics|Lagrangian]] [[function (mathematics)|function]]
+
+:<math>L=T-V</math>
+
+to obtain the [[Euler–Lagrange equations]] in their present form.
+
+===Jacobi and Morse===
+In 1842, [[Carl Gustav Jacobi]] tackled the problem of whether the variational principle always found minima as opposed to other [[stationary points]] (maxima or stationary [[saddle points]]); most of his work focused on [[geodesics]] on two-dimensional surfaces.<ref>G.C.J. Jacobi, ''Vorlesungen über Dynamik, gehalten an der Universität Königsberg im Wintersemester 1842–1843''. A. Clebsch (ed.) (1866); Reimer; Berlin. 290 pages, available online [http://math-doc.ujf-grenoble.fr/cgi-bin/oeitem?id=OE_JACOBI__8_1_0  Œuvres complètes volume '''8'''] {{Webarchive|url=https://web.archive.org/web/20071122083808/http://math-doc.ujf-grenoble.fr/cgi-bin/oeitem?id=OE_JACOBI__8_1_0 |date=2007-11-22 }} at [http://math-doc.ujf-grenoble.fr/OEUVRES/ Gallica-Math] {{Webarchive|url=https://web.archive.org/web/20081123234823/http://math-doc.ujf-grenoble.fr/OEUVRES/ |date=2008-11-23 }} from the [http://gallica.bnf.fr/ Gallica Bibliothèque nationale de France].</ref> The first clear general statements were given by [[Marston Morse]] in the 1920s and 1930s,<ref>Marston Morse (1934). "The Calculus of Variations in the Large", ''American Mathematical Society Colloquium Publication'' '''18'''; New York.</ref> leading to what is now known as [[Morse theory]]. For example, Morse showed that the number of [[conjugate points]] in a trajectory equalled the number of negative eigenvalues in the second variation of the Lagrangian.
+
+===Gauss and Hertz===
+Other extremal principles of [[classical mechanics]] have been formulated, such as [[Gauss's principle of least constraint]] and its corollary, [[Hertz's principle of least curvature]].
+
+==Disputes about possible teleological aspects==
+
+The mathematical equivalence of the [[differential equation|differential]] [[equations of motion]] and their [[integral equation|integral]]
+counterpart has important philosophical implications.  The differential equations are statements about quantities localized to a single point in space or single moment of time.  For example, [[Newton's laws of motion|Newton's second law]]
+
+:<math>\mathbf{F}=m\mathbf{a}</math>
+
+states that the ''instantaneous'' force '''F''' applied to a mass ''m'' produces an acceleration '''a''' at the same ''instant''.  By contrast, the action principle is not localized to a point; rather, it involves integrals over an interval of time and (for fields) an extended region of space.  Moreover, in the usual formulation of [[classical physics|classical]] action principles, the initial and final states of the system are fixed, e.g.,
+
+:''Given that the particle begins at position x<sub>1</sub> at time t<sub>1</sub> and ends at position x<sub>2</sub> at time t<sub>2</sub>, the physical trajectory that connects these two endpoints is an [[extremum]] of the action integral.''
+
+In particular, the fixing of the ''final'' state has been interpreted as giving the action principle a [[teleology|teleological character]] which has been controversial historically. However, according to W. Yourgrau and S. Mandelstam, ''the teleological approach... presupposes that the variational principles themselves have mathematical characteristics which they ''de facto'' do not possess''<ref name="Stöltzner1994">{{cite encyclopedia|last=Stöltzner|first=Michael|encyclopedia=Inside Versus Outside |editor1 = H. Atmanspacher | editor2 = G. J. Dalenoort |title = Action Principles and Teleology|series=Springer Series in Synergetics|year=1994|volume=63|location=Berlin|publisher=Springer|isbn=978-3-642-48649-4|pages=33–62 |doi=10.1007/978-3-642-48647-0_3}}</ref> In addition, some critics maintain this apparent [[teleology]] occurs because of the way in which the question was asked. By specifying some but not all aspects of both the initial and final conditions (the positions but not the velocities) we are making some inferences about the initial conditions from the final conditions, and it is this "backward" inference that can be seen as a teleological explanation. Teleology can also be overcome if we consider the classical description as a limiting case of the [[Quantum mechanics|quantum]] formalism of [[Path integral formulation|path integration]], in which stationary paths are obtained as a result of interference of amplitudes along all possible paths.<ref name=":0" />
+
+The short story ''[[Story of Your Life]]'' by the speculative fiction writer [[Ted Chiang]] contains visual depictions of [[Fermat's Principle]] along with a discussion of its teleological dimension. [[Keith Devlin]]'s ''The Math Instinct'' contains a chapter, "Elvis the Welsh Corgi Who Can Do Calculus" that discusses the calculus "embedded" in some animals as they solve the "least time" problem in actual situations.
+
+==See also==
+{{Div col|colwidth=}}
+* [[Action (physics)]]
+* [[Path integral formulation]]
+* [[Schwinger's quantum action principle]]
+* [[Path of least resistance]]
+* [[Analytical mechanics]]
+* [[Calculus of variations]]
+* [[Hamiltonian mechanics]]
+* [[Lagrangian mechanics]]
+* [[Occam's razor]]
+{{Div col end}}
+
+==Notes and references==
+{{reflist|30em}}
+
+==External links==
+{{wikiquote}}
+* [http://www.eftaylor.com/software/ActionApplets/LeastAction.html Interactive explanation of the principle of least action]
+* [http://www.eftaylor.com/software/ActionClockTicks/ Interactive applet to construct trajectories using principle of least action]
+*{{cite book |doi=10.1007/978-3-642-28583-7_9 |chapter=A Quantitative Measure, Mechanism and Attractor for Self-Organization in Networked Complex Systems |title=Self-Organizing Systems |volume=7166 |pages=90–5 |series=Lecture Notes in Computer Science |year=2012 |last1=Georgiev |first1=Georgi Yordanov |isbn=978-3-642-28582-0 |s2cid=377417 }}
+* {{Cite journal|title=The Least Action and the Metric of an Organized System |journal=Open Systems and Information Dynamics |volume=9 |issue=4 |pages=371–380 |arxiv=1004.3518 |last1=Georgiev |first1=Georgi |last2=Georgiev |first2=Iskren |year=2002 |doi=10.1023/a:1021858318296|s2cid=43644348 }}
+* {{Cite journal|title= Metaphysics of the Principle of Least Action|journal= Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics |volume=62  |pages=189–201 |arxiv=1511.03429| last1=Terekhovich|first1=Vladislav |year=2018 |doi=10.1016/j.shpsb.2017.09.004|bibcode= 2018SHPMP..62..189T |s2cid= 85528641 }}
+
+{{DEFAULTSORT:Principle Of Least Action}}
+[[Category:Concepts in physics]]
+[[Category:Calculus of variations]]
+[[Category:History of physics]]
+[[Category:Principles]]
+[[Category:Scientific laws]]
+
+[[de:Prinzip der kleinsten Wirkung]]
+[[sq:Principi i Hamiltonit]]

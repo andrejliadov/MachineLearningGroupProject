@@ -1,0 +1,87 @@
+A model of a charged [[membrane]] introduced by [[Paul Dirac]] in 1962. Dirac's original motivation was to explain the mass of the [[muon]] as an excitation of the ground state corresponding to an [[electron]]. Anticipating the birth of [[string theory]] by almost a decade, he was the first to introduce what is now called a type of [[Nambu–Goto action]] for membranes.
+
+In the '''Dirac membrane model''' the repulsive electromagnetic forces on the membrane are balanced by the contracting ones coming from the positive tension. In the case of the spherical membrane, classical equations of motion imply that the balance is met for the radius <math>0.75 r_e</math>, where <math> r_e </math> is the [[classical electron radius]]. Using Bohr–Sommerfeld quantisation condition for the Hamiltonian of the spherically symmetric membrane, Dirac finds the approximation of the mass corresponding to the first excitation as <math>53 m_e</math>, where <math>m_e</math> is the mass of the electron, which is about a quarter of the observed muon mass.
+
+== Action principle ==
+
+Dirac chose a non-standard way to formulate the action principle for the membrane. Because closed membranes in  <math>\mathbb{R}^3  </math> provide a natural split of space into the interior and the exterior there exists a special curvilinear system of coordinates  <math>x^{\mu} </math> in spacetime and a function  <math>f(x) </math> such that 
+ 
+-  <math>f(x)=0 </math> defines a membrane
+
+-  <math>f(x)>0 </math>,  <math>f(x)<0 </math> describe a region outside or inside the membrane
+ 
+Choosing  <math>x^1=f(x) </math> and   the following gauge <math>\sigma^0=x^0=:\tau </math>,  <math>\sigma^1=x^2 </math>,  <math>\sigma^2=x^3 </math>  
+where  <math>\sigma^{\alpha} </math>, ( <math>\alpha=0,1,2 </math>) is the internal parametrization of the membrane world-volume, the membrane action proposed by Dirac is
+
+:<math> S=S_{EM} +S_{membrane} </math>
+:<math> S_{EM}=-\frac{1}{16\pi}\int_{x^1>0} J g^{\mu\rho}g^{\nu\sigma}F_{\mu\nu}F_{\rho\sigma}d^4x, \ \ \ \ S_{mem.}= - \frac{\omega}{4\pi}\int_{x^1=0} M dx^0dx^2dx^3 </math>
+where the induced metric and the factors J and M are given by
+:<math> g_{\mu\nu}=\partial_{\mu}y^{\Lambda}\partial_{\nu}y_{\Lambda},\ \ \ \Lambda=0,1,2,3 </math>
+:<math>J=\sqrt{-\det g_{\mu\nu}}.\ \ \ M=J\sqrt{-g^{11}} </math>
+
+In the above <math>y^{\Lambda}</math> are rectilinear and orthogonal. The space-time signature used is  (+,-,-,-). Note that <math>S_{EM}</math> is just a usual action for the electromagnetic field in a curvilinear system while <math>S_{membrane}</math>is the integral over the membrane world-volume i.e. precisely the type of the action used later in string theory.
+
+== Equations of motion ==
+
+There are 3 equations of motion following from the variation with respect to <math>A_{\mu}</math> and <math>y^\Lambda </math>. They are:
+- variation w.r.t. <math>A_{\mu}</math> for <math>x_1>0</math> - this results in sourceless Maxwell equations 
+- variation w.r.t. <math>y^{\Lambda}</math> for <math>x_1>0</math> - this gives a consequence of Maxwell equations
+- variation w.r.t. <math>y^{\Lambda}</math> for <math>x_1=0</math>
+
+:<math> \frac{1}{2}F_{\alpha 1}F^{\alpha 1} = \omega J^{-1}(M g^{1\mu}/g^{11})_{,\mu} </math>
+
+The last equation has a geometric interpretation: the r.h.s. is proportional to the curvature of the membrane. For the spherically symmetric case we get
+
+:<math>
+\frac{e^2}{2\rho^4} =\omega\frac{d}{dt} \frac{\dot{\rho}}{\sqrt{1-\dot{\rho}^2}}+ \frac{2\omega}{\rho\sqrt{1-\dot{\rho}^2}}
+</math>
+
+Therefore, the balance condition <math>\dot{\rho}=0</math> implies  <math>a^3=e^2/4\omega</math> where <math>a</math> is the radius of the balanced membrane. The  total energy  for the spherical membrane with radius <math>\rho</math> is
+:<math> E(\rho)=e^2/2\rho + \beta \rho^2 </math>  
+and it is minimal in the equilibrium for <math>\beta=\omega</math>,  hence <math>E(a)=3e^2/4a  </math>. On the other hand, the total energy in the equilibrium should be <math>m_e</math> (in <math>c=1</math> units)
+and so we obtain <math>a=0.75r_e</math>.
+
+== Hamiltonian formulation ==
+
+Small oscillations about the equilibrium in the spherically symmetric case imply frequencies - <math>\sqrt{6}/a</math>. Therefore, going to quantum theory,  the energy of one quantum would be <math>h\nu = \sqrt{6}\hbar/a = 448m_e</math>.
+This is much more than the muon mass but the frequencies are by no means small so this approximation may not work properly. To get a better quantum theory one needs to work out the Hamiltonian of the system and solve the corresponding Schroedinger equation.
+
+For the Hamiltonian formulation Dirac introduces generalised momenta
+
+-  for <math>x^1>0</math>: <math>B^{\mu}</math> and  <math>w_R</math> - momenta conjugate to <math>A_{\mu}</math> and <math>y^R</math> respectively (<math>R=1,2,3</math>, coordinate choice <math>x^0=y^0</math>)
+
+- for <math>x^1=0</math>: <math>W_R</math> - momenta conjugate to <math>y^R</math>
+
+Then one notices the following constraints
+
+- for the Maxwell field 
+:<math> B^0=0, \ \ \ {B^r}_{,r}=0, \ \ \ w_R {y^R}_{,s} - B^r F_{rs}=0 </math>
+
+- for membrane momenta
+:<math> W_R {y^R}_{,2} = W_R {y^R}_{,3} =0, \ \ \  16\pi^2 W_RW_R = \omega^2 M^2c^{00}(c^{00}-1) </math>
+
+where <math>c^{ab}</math> - reciprocal of <math>g_{ab}</math>, <math>a,b=0,2,3</math>.
+
+These constraints need to be included when calculating the Hamiltonian, using the [[Dirac bracket]] method.  
+The result of this calculation is  the Hamiltonian of the form
+:<math> H=H_{EM}+H_s </math>
+:<math> H_s= \frac{1}{4\pi} \int \sqrt{16\pi^2 W_RW_R +\omega^2(g_{22}g_{33}-g_{23}^2)}dx^2dx^3 </math>
+where <math>H_{EM}</math> is the Hamiltonian for the electromagnetic field written in the curvilinear system.
+
+== Quantisation ==
+
+For spherically symmetric motion the Hamiltonian is 
+:<math> H = \sqrt{\eta^2+ \omega^2\rho^4} + e^2/2\rho, \ \ \ \{ \rho, \eta\}=1  </math>
+
+however the direct quantisation is not clear due to the square-root of the differential operator. To get any further Dirac considers the Bohr - Sommerfeld method:
+:<math> 2\pi \hbar n = 2 \int_{\rho_{min}}^{\rho_{max}} \eta d\rho  </math>
+and finds <math>E_1 \approx 53m_e</math> for <math>n=1</math>.
+
+==See also==
+* [[Brane]]
+
+== References ==
+P. A. M. Dirac, An Extensible Model of the Electron, Proc. Roy. Soc. A268, (1962) 57–67.
+
+[[Category:Concepts in physics]]
+[[Category:Electron]]

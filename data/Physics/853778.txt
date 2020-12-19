@@ -1,0 +1,156 @@
+{{Short description|Relation of wavelength/wavenumber as a function of a wave's frequency}}
+[[Image:Prism rainbow schema.png|frame|right|
+In a prism, [[Dispersion (optics)|dispersion]] causes different colors to [[refraction|refract]] at different angles, splitting white light into a rainbow of colors.]]
+
+In the [[physical science]]s and [[electrical engineering]], '''dispersion relations''' describe the effect of [[#Dispersion|dispersion]] on the properties of waves in a medium. A dispersion relation relates the [[wavelength]] or [[wavenumber]] of a wave to its [[frequency]]. Given the dispersion relation, one can calculate the [[phase velocity]] and [[group velocity]] of waves in the medium, as a function of frequency. In addition to the geometry-dependent and material-dependent dispersion relations, the overarching [[Kramers–Kronig relations]] describe the frequency dependence of [[wave propagation]] and [[attenuation]].
+
+Dispersion may be caused either by geometric boundary conditions ([[waveguide]]s, shallow water) or by interaction of the waves with the transmitting medium. [[Elementary particle]]s, considered as [[matter wave]]s, have a nontrivial dispersion relation even in the absence of geometric constraints and other media.
+
+In the presence of dispersion, wave velocity is no longer uniquely defined, giving rise to the distinction of [[phase velocity]] and [[group velocity]].
+
+==Dispersion==
+{{main|Dispersion (optics)|Dispersion (water waves)|Acoustic dispersion}}
+Dispersion occurs when pure plane waves of different wavelengths have different propagation velocities, so that a [[wave packet]] of mixed wavelengths tends to spread out in space. The speed of a plane wave, <math>v</math>, is a function of the wave's wavelength <math>\lambda</math>:
+
+:<math>v = v(\lambda).\,</math>
+
+The wave's speed, wavelength, and frequency, ''f'', are related by the identity
+
+:<math>v(\lambda) = \lambda\ f(\lambda).\,</math>
+
+The function <math> f(\lambda)</math> expresses the dispersion relation of the given medium. Dispersion relations are more commonly expressed in terms of the [[angular frequency]] <math>\omega=2\pi f</math> and [[wavenumber]] <math>k=2 \pi /\lambda</math>. Rewriting the relation above in these variables gives
+
+:<math>\omega(k)= v(k) \cdot k.\,</math>
+
+where we now view ''f'' as a function of ''k''. The use of ω(''k'') to describe the dispersion relation has become standard because both the [[phase velocity]] ω/''k'' and the [[group velocity]] dω/d''k'' have convenient representations via this function.
+
+The plane waves being considered can be described by
+
+:<math>A(x, t) = A_0e^{2 \pi i \frac{x - v t}{\lambda}}= A_0e^{i (k x - \omega t)},</math>
+
+where 
+:''A'' is the amplitude of the wave,
+:''A''<sub>0</sub> = ''A''(0,0),
+:''x'' is a position along the wave's direction of travel, and
+:''t'' is the time at which the wave is described.
+
+==Plane waves in vacuum==
+
+Plane waves in vacuum are the simplest case of wave propagation: no geometric constraint, no interaction with a transmitting medium.
+
+===Electromagnetic waves in a vacuum===
+
+For [[electromagnetic wave]]s in vacuum, the angular frequency is proportional to the wavenumber:
+
+:<math>\omega = c k.\,</math>
+
+This is a ''linear'' dispersion relation. In this case, the phase velocity and the group velocity are the same:
+
+:<math> v = \frac{\omega}{k} = \frac{d\omega}{d k} = c;</math>
+
+they are given by ''c'', the [[speed of light]] in vacuum, a frequency-independent constant.
+
+===De Broglie dispersion relations===
+
+[[Image:KEvsMOMENTUM.png|thumb|350px|right|The free-space dispersion plot of kinetic energy versus momentum, for many objects of everyday life]]
+
+Total energy, momentum, and mass of particles are connected through the [[Energy-momentum relation|relativistic dispersion relation]]:<ref>{{cite book| last=Taylor| title=Classical Mechanics| year=2005|publisher=University Science Books|page= 652| isbn=1-891389-22-X}}</ref>
+
+: <math>E^2 = (mc^2)^2 + (pc)^2,</math>
+
+which in the ultrarelativistic limit is
+
+: <math>E = pc</math>
+
+and in the nonrelativistic limit is
+
+: <math>E = m c^2 + \frac{p^2}{2m},</math>
+
+where <math>m</math> is the [[invariant mass]].  In the nonrelativistic limit, <math>mc^2</math> is a constant, and <math>p^2/(2m)</math> is the familiar kinetic energy expressed in terms of the momentum <math>p = mv</math>.
+
+The transition from [[Ultrarelativistic limit|ultrarelativistic]] to nonrelativistic behaviour shows up as a slope change from ''p'' to ''p''<sup>2</sup> as shown in the log–log dispersion plot of ''E'' vs. ''p''.
+
+Elementary particles, atomic nuclei, atoms, and even molecules behave in some contexts as matter waves. According to the [[de Broglie relations]], their [[kinetic energy]] ''E'' can be expressed as a frequency ''ω'', and their [[momentum]] ''p'' as a wavenumber ''k'', using the reduced [[Planck constant]] ''ħ'':
+
+: <math>E = \hbar\omega, \quad p = \hbar k.</math>
+
+Accordingly, angular frequency and wavenumber are connected through a dispersion relation, which in the nonrelativistic limit reads
+
+: <math>\omega = \frac{\hbar k^2}{2m}.</math>
+
+:{| class="toccolours collapsible collapsed" width="60%" style="text-align:left"
+! ''Animation:'' phase and group velocity of electrons
+|-
+| [[Image:deBroglie3.gif|frame|center]]
+This animation portrays the de Broglie phase and group velocities (in slow motion) of three free electrons traveling over a field 0.4 [[ångström]]s in width. The momentum per unit mass (proper velocity) of the middle electron is lightspeed, so that its group velocity is 0.707 ''c''. The top electron has twice the momentum, while the bottom electron has half.  Note that as the momentum increases, the phase velocity decreases down to ''c'', whereas the group velocity increases up to ''c'', until the wave packet and its phase maxima move together near the speed of light, whereas the wavelength continues to decrease without bound. Both transverse and longitudinal coherence widths (packet sizes) of such high energy electrons in the lab may be orders of magnitude larger than the ones shown here.
+|}
+
+==Frequency versus wavenumber==
+As mentioned above, when the focus in a medium is on refraction rather than absorption—that is, on the real part of the [[refractive index]]—it is common to refer to the functional dependence of angular frequency on wavenumber as the ''dispersion relation''. For particles, this translates to a knowledge of energy as a function of momentum.
+
+===Waves and optics===
+{{See|Dispersion (optics)}}
+The name "dispersion relation" originally comes from [[optics]]. It is possible to make the effective speed of light dependent on wavelength by making light pass through a material which has a non-constant [[index of refraction]], or by using light in a non-uniform medium such as a [[waveguide]]. In this case, the waveform will spread over time, such that a narrow pulse will become an extended pulse, i.e., be dispersed. In these materials, <math>\frac{\partial \omega}{\partial k}</math> is known as the [[group velocity]]<ref>{{cite book| author=F. A. Jenkins and H. E. White |date=1957|title=Fundamentals of optics| url=https://archive.org/details/fundamentalsofop00jenk | url-access=registration |publisher=McGraw-Hill|location=New York| page=[https://archive.org/details/fundamentalsofop00jenk/page/223 223]| isbn=0-07-032330-5}}</ref> and corresponds to the speed at which the peak of the pulse  propagates, a value different from the [[phase velocity]].<ref>{{cite book|author= R. A. Serway, C. J. Moses and C. A. Moyer |year=1989| title=Modern Physics| publisher=Saunders|location=Philadelphia|page= 118|isbn= 0-534-49340-8}}</ref>
+
+===Deep water waves===
+{{See|Dispersion (water waves)|Airy wave theory}}
+[[Image:Wave group.gif|frame|right|Frequency dispersion of surface gravity waves on deep water. The {{colorbull|red|square}} red square moves with the phase velocity, and the {{colorbull|limegreen|circle}} green dots propagate with the group velocity. In this deep-water case, the phase velocity is twice the group velocity. The {{colorbull|red|square}} red square traverses the figure in the time it takes the {{colorbull|limegreen|circle}} green dot to traverse half.]]
+
+The dispersion relation for deep [[ocean surface wave|water waves]] is often written as 
+
+: <math>\omega = \sqrt{gk},</math>
+
+where ''g'' is the acceleration due to gravity. Deep water, in this respect, is commonly denoted as the case where the water depth is larger than half the wavelength.<ref>{{cite book | title=Water wave mechanics for engineers and scientists | author=R. G. Dean and R. A. Dalrymple | year=1991 | series=Advanced Series on Ocean Engineering | volume=2 | publisher=World Scientific, Singapore | isbn=978-981-02-0420-4 }} See page 64–66.</ref> In this case the phase velocity is
+
+: <math>v_p = \frac{\omega}{k} = \sqrt{\frac{g}{k}},</math>
+
+and the group velocity is
+
+: <math>v_g = \frac{d\omega}{dk} = \frac{1}{2} v_p.</math>
+
+===Waves on a string===
+{{See|Vibrating string}}
+[[Image:Two-frequency beats of a non-dispersive transverse wave (animated).gif|frame|right|Two-frequency beats of a non-dispersive transverse wave. Since the wave is non-dispersive, {{colorbull|red|circle}} phase and {{colorbull|limegreen|circle}} group velocities are equal.]]
+
+For an ideal string, the dispersion relation can be written as
+
+: <math>\omega = k \sqrt{\frac{T}{\mu}},</math>
+
+where ''T'' is the tension force in the string, and ''μ'' is the string's mass per unit length. As for the case of electromagnetic waves in vacuum, ideal strings are thus a non-dispersive medium, i.e. the phase and group velocities are equal and independent (to first order) of vibration frequency.
+
+For a nonideal string, where stiffness is taken into account, the dispersion relation is written as
+
+: <math>\omega^2 = \frac{T}{\mu} k^2 + \alpha k^4,</math>
+
+where <math>\alpha</math> is a constant that depends on the string.
+
+===Solid state===
+In the study of solids, the study of the dispersion relation of electrons is of paramount importance. The periodicity of crystals means that many [[Fermi surface|levels of energy]] are possible for a given momentum and that some energies might not be available at any momentum. The collection of all possible energies and momenta is known as the [[band structure]] of a material. Properties of the band structure define whether the material is an [[Electrical insulation|insulator]], [[semiconductor]] or [[Conductor (material)|conductor]].
+
+===Phonons===
+{{further|Phonon#Dispersion relation}}Phonons are to sound waves in a solid what photons are to light: they are the quanta that carry it. The dispersion relation of [[phonon]]s is also non-trivial and important, being directly related to the acoustic and thermal properties of a material. For most systems, the phonons can be categorized into two main types: those whose bands become zero at the center of the [[Brillouin zone]] are called [[acoustic phonon]]s, since they correspond to classical sound in the limit of long wavelengths. The others are [[optical phonon]]s, since they can be excited by electromagnetic radiation.
+
+===Electron optics===
+With high-energy (e.g., {{convert|200|keV|abbr=on|disp=comma}}) electrons in a [[transmission electron microscope]], the energy dependence of higher-order [[Laue zone]] (HOLZ) lines in convergent beam [[electron diffraction]] (CBED) patterns allows one, in effect, to ''directly image'' cross-sections of a crystal's three-dimensional [[Brillouin zone|dispersion surface]].<ref>{{cite journal| author=P. M. Jones, G. M. Rackham and J. W. Steeds | year=1977|title= Higher order Laue zone effects in electron diffraction and their use in lattice parameter determination| journal=Proceedings of the Royal Society| volume=A 354
+| issue=1677| page=197| doi=10.1098/rspa.1977.0064| bibcode=1977RSPSA.354..197J| s2cid=98158162}}</ref> This [[Dynamical theory of diffraction|dynamical effect]] has found application in the precise measurement of lattice parameters, beam energy, and more recently for the electronics industry: lattice strain.
+
+== History ==
+[[Isaac Newton]] studied refraction in prisms but failed to recognize the material dependence of the dispersion relation, dismissing the work of another researcher whose measurement of a prism's dispersion did not match Newton's own.<ref>{{cite book |title=Never at Rest: A Biography of Isaac Newton |first=Richard S. |last=Westfall |edition=illustrated, revised |publisher=Cambridge University |date=1983 |isbn=9780521274357 |page=[https://archive.org/details/neveratrestbiogr00west/page/276 276] |url-access=registration |url=https://archive.org/details/neveratrestbiogr00west/page/276 }}</ref>
+
+Dispersion of waves on water was studied by [[Pierre-Simon Laplace]] in 1776.<ref>{{cite journal | author= A. D. D. Craik | year= 2004 | title= The origins of water wave theory | journal= Annual Review of Fluid Mechanics | volume= 36 | pages= 1–28 | doi=10.1146/annurev.fluid.36.050802.122118 |bibcode = 2004AnRFM..36....1C }}</ref>
+
+The universality of the [[Kramers–Kronig relations]] (1926–27) became apparent with subsequent papers on the dispersion relation's connection to causality in the [[scattering theory]] of all types of waves and particles.<ref>{{cite journal | doi = 10.1103/PhysRev.104.1760 | author = John S. Toll | year=1956|title=Causality and the dispersion relation: Logical foundations |journal =Phys. Rev.| volume=104| pages=1760–1770 |bibcode = 1956PhRv..104.1760T | issue = 6 }}</ref>
+
+==See also==
+*[[Ellipsometry]]
+*[[Ultrashort pulse]]
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://www.uni-ulm.de/fileadmin/website_uni_ulm/hrem/publications/2005/conference/2005-davos-cbed.pdf Poster on CBED simulations] to help visualize dispersion surfaces, by Andrey Chuvilin and Ute Kaiser
+*[http://www.fxsolver.com/browse/formulas/Angular+frequency+%28De+Broglie+dispersion+relation+in+nonrelativistic+limit%29 Angular frequency calculator]
+
+{{DEFAULTSORT:Dispersion Relation}}
+[[Category:Concepts in physics]]

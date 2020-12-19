@@ -1,0 +1,27 @@
+[[File:Atomic Fountain.jpg|thumb|Rubidium atomic fountain.]]
+An '''atomic fountain''' is a cloud of atoms that is tossed upwards in the Earth's gravitational field by [[lasers]].  If it were visible, it would resemble the water in a fountain.  While weightless in the toss, the atoms are measured to set the frequency of an [[atomic clock]].<ref name="nist-f1">https://www.nist.gov/public_affairs/releases/n99-22.cfm How the NIST-F1 Caesium Fountain Clock Works</ref>
+
+The primary motivation behind the development of the atomic fountain derives from the [[Ramsey interferometry#The Ramsey Method|Ramsey method]] of measuring the frequency of atomic transitions.<ref name="foot">{{cite book|author=C. J. Foot|title=Atomic Physics|year=2005|page=212}}</ref> In broad strokes, the Ramsey method involves exposing a cloud of atoms to a brief [[radiofrequency]] (rf) electromagnetic field; waiting a time ''T''; briefly exposing the cloud to the rf field again; and then measuring what fraction of the atoms in the cloud have transitioned.<ref name="foot" /> If the frequency of the rf field is identical to the atomic transition frequency, 100% of the atoms will have transitioned; if the frequency of the field differs slightly from the transition frequency, some of the atoms will not have transitioned.<ref name="foot" /> By repeatedly sending clouds of atoms through such an apparatus, the frequency of the field can be adjusted to match the atomic transition frequency.<ref>{{YouTube| z-jE7DXy1x0 | "NIST Launches a New U.S. Time Standard: NIST-F2 Atomic Clock" }}</ref>
+
+The precision of the Ramsey method can be increased by increasing the wait time ''T'' of the cloud.<ref name="foot" /> The use of an atomic fountain with a [[laser cooling|cooled]] atomic cloud allows for wait times on the order of one second, which is vastly greater than what can be achieved by performing the Ramsey method on a hot [[atomic beam]].<ref name="foot" /> This is one reason why [[NIST-F1]], a caesium fountain clock, can keep time more precisely than [[NIST-7]], a caesium beam clock.<ref name="nist-f1" />
+
+==History==
+
+The idea of the atomic fountain was first proposed in the 1950s by [[Jerrold Zacharias]].<ref name="Kasevich">{{cite journal|author=M. A. Kasevich|title=Atomic fountains and clocks|journal=Optics News|volume=15|issue=12|year=1989|pages=31&ndash;32|display-authors=etal}}</ref> Zacharias attempted to implement an atomic fountain using a thermal beam of atoms, under the assumption that the atoms at the low-velocity end of the [[Maxwell&ndash;Boltzmann distribution]] would be of sufficiently low energy to execute a reasonably sized parabolic trajectory.<ref name="chu">{{cite journal|author=S. Chu|title=The manipulation of neutral particles|url=https://www.nobelprize.org/nobel_prizes/physics/laureates/1997/chu-lecture.pdf||journal=Rev. Mod. Phys.|volume=70|pages=685&ndash;706|year=1998|bibcode = 1998RvMP...70..685C |doi = 10.1103/RevModPhys.70.685 }}</ref> However, the attempt was not successful because fast atoms in a thermal beam struck the low-velocity atoms and scattered them.<ref name="chu" />
+
+==References==
+{{reflist}}
+
+==Further reading==
+
+{{Empty section|date=August 2017}}
+
+==External links==
+
+[[Category:Atoms]]
+[[Category:Atomic physics]]
+[[Category:Atomic clocks]]
+[[Category:Nuclear technology]]
+
+
+{{physics-stub}}

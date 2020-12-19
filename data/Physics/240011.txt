@@ -1,0 +1,305 @@
+{{Use American English|date = March 2019}}
+{{Short description|Equivalence relation on waves with equal frequencies and waveforms}}
+In [[physics]], two wave sources are perfectly coherent if their [[frequency]] and [[waveform]] are identical and their [[phase difference]] is constant. Coherence is an ideal property of [[wave]]s that enables stationary (i.e. temporally and spatially constant) [[Interference (wave propagation)|interference]]. It contains several distinct concepts, which are limiting cases that never quite occur in reality but allow an understanding of the physics of waves, and has become a very important concept in quantum physics. More generally, '''coherence''' describes all properties of the [[correlation function|correlation]] between [[physical quantities]] of a single wave, or between several waves or wave packets.
+
+Interference is the addition, in the mathematical sense, of wave functions. A single wave can interfere with itself, but this is still an addition of two waves (see [[Young's interference experiment|Young's slits experiment]]). Constructive or destructive interferences are limit cases, and two waves always interfere, even if the result of the addition is complicated or not remarkable. When interfering, two waves can add together to create a wave of greater amplitude than either one ([[constructive interference]]) or subtract from each other to create a wave of lesser amplitude than either one ([[destructive interference]]), depending on their relative [[phase (waves)|phase]]. Two waves are said to be coherent if they have a constant relative phase. The amount of coherence can readily be measured by the [[interference visibility]], which looks at the size of the interference fringes relative to the input waves (as the phase offset is varied); a precise mathematical definition of the [[degree of coherence]] is given by means of correlation functions.
+
+Spatial coherence describes the correlation (or predictable relationship) between waves at different points in space, either lateral or longitudinal.<ref>{{cite book|last1=Hecht|title=Optics|date=1998|publisher=Addison Wesley Longman|isbn=978-0-201-83887-9|pages=554–574|edition=3rd}}</ref> Temporal coherence describes the correlation between waves observed at different moments in time. Both are observed in the [[Michelson–Morley experiment]] and [[Young's interference experiment]]. Once the fringes are obtained in the [[Michelson interferometer]], when one of the mirrors is moved away gradually, the time for the beam to travel increases and the fringes become dull and finally disappear, showing temporal coherence. Similarly, if in a [[double-slit experiment]], the space between the two slits is increased, the coherence dies gradually and finally the fringes disappear, showing spatial coherence.  In both cases, the fringe amplitude slowly disappears, as the path difference increases past the coherence length.
+
+==Introduction==
+Coherence was originally conceived in connection with [[Thomas Young (scientist)|Thomas Young]]'s [[double-slit experiment]] in [[optics]] but is now used in any field that involves waves, such as [[acoustics]], [[electrical engineering]], [[neuroscience]], and [[quantum mechanics]]. Coherence describes the statistical similarity of a field (electromagnetic field, quantum wave packet etc.) at two points in space or time.<ref>{{Cite book|title=Introduction to the theory of coherence and polarization of light|last=Emil.|first=Wolf|date=2007|publisher=Cambridge University Press|isbn=9780521822114|location=Cambridge|oclc=149011826}}</ref> The property of coherence is the basis for commercial applications such as [[holography]], the [[Sagnac interferometer|Sagnac]] [[gyroscope]], radio [[Phased array|antenna array]]s, [[optical coherence tomography]] and telescope interferometers ([[Interferometry#Astronomical optical interferometry|astronomical optical interferometers]] and [[radio telescope]]s).
+
+==Mathematical definition==
+
+A precise definition is given at [[degree of coherence]].
+
+The coherence function between two signals <math> x(t) </math> and <math> y(t) </math> is defined as<ref>Shin. K, Hammond. J.'' Fundamentals of signal processing for sound and vibration engineers''. John Wiley & Sons, 2008.</ref>
+
+:<math> \gamma_{xy}^{2}(f)=\frac{|S_{xy}(f)|^2}{S_{xx}(f)S_{yy}(f)}</math>
+
+where  <math> S_{xy}(f) </math> is the [[cross-spectral density]] of the signal and <math> S_{xx}(f) </math> and <math> S_{yy}(f) </math> are the power [[spectral density]] functions of <math> x(t) </math> and <math> y(t) </math>, respectively. The cross-spectral density and the power spectral density are defined as the [[Fourier transforms]] of the [[cross-correlation]] and the [[autocorrelation]] signals, respectively. For instance, if the signals are functions of time, the cross-correlation is a measure of the similarity of the two signals as a function of the time lag relative to each other and the autocorrelation is a measure of the similarity of each signal with itself in different instants of time. In this case the coherence is a function of frequency. Analogously, if <math> x(t) </math> and <math> y(t) </math> are functions of space, the cross-correlation measures the similarity of two signals in different points in space and the autocorrelations the similarity of the signal relative to itself for a certain separation distance.  In that case, coherence is a function of [[wavenumber]] (spatial frequency).
+
+The coherence varies in the interval <math> 0\leqslant \gamma_{xy}^{2}(f)\leqslant 1. </math>. If <math> \gamma_{xy}^{2}(f)=1 </math> it means that the signals are perfectly correlated or linearly related and if <math> \gamma_{xy}^{2}(f)=0 </math> they are totally uncorrelated. If a linear system is being measured, <math> x(t) </math> being the input and <math> y(t) </math> the output, the coherence function will be unitary all over the spectrum. However, if non-linearities are present in the system the coherence will vary in the limit given above.
+
+==Coherence and correlation==
+The coherence of two waves expresses how well correlated the waves are as quantified by the [[cross-correlation]] function.<ref name="winter">
+{{cite journal
+|author=Rolf G. Winter
+|author2=Aephraim M. Steinberg
+|year=2008
+|title=Coherence
+|url=http://accessscience.com/content/Coherence/146900
+|journal=AccessScience
+|publisher=[[McGraw-Hill]]
+|doi=10.1036/1097-8542.146900
+}}</ref><ref name="BornWolf">
+{{cite book
+|author=M.Born
+|author2=E. Wolf
+|year=1999
+|title=[[Principles of Optics]]
+|edition=7th
+|publisher=[[Cambridge University Press]]
+|isbn= 978-0-521-64222-4
+}}</ref><ref name="Loudon">
+{{cite book
+|author=Loudon, Rodney
+|year=2000
+|title=The Quantum Theory of Light
+|publisher=[[Oxford University Press]]
+|isbn=978-0-19-850177-0
+}}</ref><ref name="mandel">
+{{cite book
+|author=Leonard Mandel
+|author2=Emil Wolf
+|year=1995
+|title=Optical Coherence and Quantum Optics
+|publisher=[[Cambridge University Press]]
+|isbn=978-0-521-41711-2
+}}</ref><ref name="mar">
+{{cite book
+|author=Arvind Marathay
+|year=1982
+|title=Elements of Optical Coherence Theory
+|publisher=[[John Wiley & Sons]]
+|isbn=978-0-471-56789-9
+}}</ref> The cross-correlation quantifies the ability to predict the phase of the second wave by knowing the phase of the first. As an example, consider two waves perfectly correlated for all times. At any time, phase difference will be constant.{{clarify|reason=Correlation appears to be used in a sloppy way here. If they always change the same way, how can they exhibit destructive interference? Is correlation the expectation value of the product ⟨X Y⟩? This is not at all the ability to predict X from Y. In particular, a perfectly coherent 1/4 cycle phase difference will allow perfect prediction but yield zero correlation.|date=May 2015}} If, when combined, they exhibit perfect constructive interference, perfect destructive interference, or something in-between but with constant phase difference, then it follows that they are perfectly coherent. As will be discussed below, the second wave need not be a separate entity. It could be the first wave at a different time or position. In this case, the measure of correlation is the [[autocorrelation]] function (sometimes called '''self-coherence'''). Degree of correlation involves correlation functions.{{R|Hecht2002|page=545-550}}
+
+==Examples of wave-like states==
+These states are unified by the fact that their behavior is described by a [[wave equation]] or some generalization thereof.
+*Waves in a rope (up and down) or [[slinky]] (compression and expansion)
+*[[Surface waves]] in a liquid
+*[[Electromagnetic]] signals (fields) in [[transmission line]]s
+*[[Sound]]
+*[[Radio wave]]s and [[Microwaves]]
+*[[Light wave]]s ([[optics]])
+*[[Electron]]s, [[atom]]s and any other object (such as a baseball), as described by [[quantum physics]]
+
+In most of these systems, one can measure the wave directly. Consequently, its correlation with another wave can simply be calculated. However, in optics one cannot measure the [[electric field]] directly as it oscillates much faster than any detector's time resolution.<ref>
+{{cite journal
+ |last1=Peng |first1=J.-L.
+ |last2=Liu |first2=T.-A.
+ |last3=Shu |first3=R.-H.
+ |year=2008
+ |title=Optical frequency counter based on two mode-locked fiber laser combs
+ |journal=[[Applied Physics B]]
+ |volume=92 |issue=4 |pages=513
+ |bibcode=2008ApPhB..92..513P
+ |doi=10.1007/s00340-008-3111-6
+|s2cid=121675431
+ }}</ref> Instead, one measures the [[intensity (physics)|intensity]] of the light. Most of the concepts involving coherence which will be introduced below were developed in the field of optics and then used in other fields. Therefore, many of the standard measurements of coherence are indirect measurements, even in fields where the wave can be measured directly.
+
+==Temporal coherence==<!--Temporal coherence redirects here-->
+[[File:Single frequency correlation.svg|thumb|450px|Figure 1: The amplitude of a single frequency wave as a function of time ''t'' (red) and a copy of the same wave delayed by τ (blue). The coherence time of the wave is infinite since it is perfectly correlated with itself for all delays τ.<ref name="GerryKnight2005">{{cite book|author1=Christopher Gerry|author2=Peter Knight|title=Introductory Quantum Optics|year=2005|publisher=Cambridge University Press|isbn=978-0-521-52735-4}}</ref>{{rp|118}}]]
+[[File:phase drift.png|thumb|450px|right|Figure 2: The amplitude of a wave whose phase drifts significantly in time τ<sub>c</sub> as a function of time ''t'' (red) and a copy of the same wave delayed by 2τ<sub>c</sub>(green). At any particular time t the wave can interfere perfectly with its delayed copy. But, since half the time the red and green waves are in phase and half the time out of phase, when averaged over t any interference disappears at this delay.]]
+
+Temporal coherence is the measure of the average correlation between the value of a wave and itself delayed by τ, at any pair of times. Temporal coherence tells us how monochromatic a source is. In other words, it characterizes how well a wave can interfere with itself at a different time. The delay over which the phase or amplitude wanders by a significant amount (and hence the correlation decreases by significant amount) is defined as the [[coherence time]] ''τ<sub>c</sub>''. At a delay of τ=0 the degree of coherence is perfect, whereas it drops significantly as the delay passes ''τ=τ<sub>c</sub>''. The [[coherence length]] ''L<sub>c</sub>'' is defined as the distance the wave travels in time τ<sub>c</sub>.<ref name="Hecht2002">{{citation|last =Hecht |first=Eugene|title=Optics|year=2002| location=United States of America | publisher=Addison Wesley| edition= 4th| isbn=978-0-8053-8566-3 | language=English}}</ref>{{rp|560, 571–573}}
+
+One should be careful not to confuse the coherence time with the time duration of the signal, nor the coherence length with the coherence area (see below).
+
+===The relationship between coherence time and bandwidth===
+It can be shown that the larger the range of frequencies Δf a wave contains, the faster the wave decorrelates (and hence the smaller τ<sub>c</sub> is). Thus there is a tradeoff:{{R|Hecht2002|page=358-359, 560}}
+
+:<math>\tau_c \Delta f \gtrsim 1</math>.
+
+Formally, this follows from the [[convolution theorem]] in mathematics, which relates the [[Fourier transform]] of the power spectrum (the intensity of each frequency) to its [[autocorrelation]].{{R|Hecht2002|page=572}}
+
+
+===Examples of temporal coherence===
+We consider four examples of temporal coherence. 
+*A wave containing only a single frequency (monochromatic) is perfectly correlated with itself at all time delays, in accordance with the above relation. (See Figure 1)
+*Conversely, a wave whose phase drifts quickly will have a short coherence time. (See Figure 2)
+*Similarly, pulses ([[wave packet]]s) of waves, which naturally have a broad range of frequencies, also have a short coherence time since the amplitude of the wave changes quickly. (See Figure 3)
+*Finally, white light, which has a very broad range of frequencies, is a wave which varies quickly in both amplitude and phase. Since it consequently has a very short coherence time (just 10 periods or so), it is often called incoherent.
+
+Monochromatic sources are usually [[laser]]s; such high monochromaticity implies long coherence lengths (up to hundreds of meters). For example, a stabilized and monomode [[helium–neon laser]] can easily produce light with coherence lengths of 300 m.<ref name=saleh-teich>{{cite book|last=Saleh, Teich|title=Fundamentals of Photonics|publisher=Wiley}}</ref> Not all lasers are monochromatic, however (e.g. for a mode-locked [[Ti-sapphire laser]], Δλ ≈ 2&nbsp;nm - 70&nbsp;nm). LEDs are characterized by Δλ ≈ 50&nbsp;nm, and tungsten filament lights exhibit Δλ ≈ 600&nbsp;nm, so these sources have shorter coherence times than the most monochromatic lasers.
+
+[[Holography]] requires light with a long coherence time. In contrast, [[optical coherence tomography]], in its classical version, uses light with a short coherence time.
+
+===Measurement of temporal coherence===
+[[File:wave packets.png|thumb|400px|right|Figure 3: The amplitude of a wavepacket whose amplitude changes significantly in time τ<sub>c</sub> (red) and a copy of the same wave delayed by 2τ<sub>c</sub>(green) plotted as a function of time ''t''. At any particular time the red and green waves are uncorrelated; one oscillates while the other is constant and so there will be no interference at this delay. Another way of looking at this is the wavepackets are not overlapped in time and so at any particular time there is only one nonzero field so no interference can occur.]]
+[[File:interference finite coherence.png|thumb|390px|right|Figure 4: The time-averaged intensity (blue) detected at the output of an interferometer plotted as a function of delay τ for the example waves in Figures 2 and 3. As the delay is changed by half a period, the interference switches between constructive and destructive. The black lines indicate the interference envelope, which gives the [[degree of coherence]]. Although the waves in Figures 2 and 3 have different time durations, they have the same coherence time.]]
+
+In optics, temporal coherence is measured in an interferometer such as the [[Michelson interferometer]] or [[Mach–Zehnder interferometer]]. In these devices, a wave is combined with a copy of itself that is delayed by time τ. A detector measures the time-averaged [[intensity (physics)|intensity]] of the light exiting the interferometer. The resulting interference visibility (e.g. see Figure 4) gives the temporal coherence at delay τ. Since for most natural light sources, the coherence time is much shorter than the time resolution of any detector, the detector itself does the time averaging. Consider the example shown in Figure 3. At a fixed delay, here 2τ<sub>c</sub>, an infinitely fast detector would measure an intensity that fluctuates significantly over a time ''t'' equal to τ<sub>c</sub>. In this case, to find the temporal coherence at 2τ<sub>c</sub>, one would manually time-average the intensity.
+{{clear}}
+
+==Spatial coherence==<!--Spatial coherence redirects here-->
+In some systems, such as water waves or optics, wave-like states can extend over one or two dimensions. Spatial coherence describes the ability for two points in space, ''x<sub>1</sub>'' and ''x<sub>2</sub>'', in the extent of a wave to interfere, when averaged over time. More precisely, the spatial coherence is the [[cross-correlation]] between two points in a wave for all times. If a wave has only 1 value of amplitude over an infinite length, it is perfectly spatially coherent. The range of separation between the two points over which there is significant interference defines the diameter of the coherence area, ''A<sub>c</sub>''<ref>{{cite book|last1=Goodman|title=Statistical Optics|date=1985|publisher=Wiley-Interscience|isbn=978-0-471-01502-4|pages=210,221|edition=1st}}</ref>  (Coherence length, often a feature of a source, is usually an industrial term related to the coherence time of the source, not the coherence area in the medium.)  A<sub>c</sub> is the relevant type of coherence for the Young's double-slit interferometer. It is also used in optical imaging systems and particularly in various types of astronomy telescopes. Sometimes people also use "spatial coherence" to refer to the visibility when a wave-like state is combined with a spatially shifted copy of itself.
+
+===Examples===
+<gallery caption="Spatial coherence" perrow="5">
+File:spatial coherence infinite ex1.png|<small>Figure 5: A plane wave with an infinite [[coherence length]].</small>
+File:spatial coherence infinite ex2.png|<small>Figure 6: A wave with a varying profile (wavefront) and infinite coherence length.</small>
+File:spatial coherence finite.png|<small>Figure 7: A wave with a varying profile (wavefront) and finite coherence length.</small>
+File:spatial coherence pinhole.png|<small>Figure 8: A wave with finite coherence area is incident on a pinhole (small aperture). The wave will [[diffraction|diffract]] out of the pinhole. Far from the pinhole the emerging spherical wavefronts are approximately flat. The coherence area is now infinite while the coherence length is unchanged.</small>
+File:spatial coherence detector.png|<small>Figure 9: A wave with infinite coherence area is combined with a spatially shifted copy of itself. Some sections in the wave interfere constructively and some will interfere destructively. Averaging over these sections, a detector with length D will measure reduced [[interference visibility]]. For example, a misaligned [[Mach–Zehnder interferometer]] will do this.</small>
+</gallery>
+
+Consider a tungsten light-bulb filament. Different points in the filament emit light independently and have no fixed phase-relationship. In detail, at any point in time the profile of the emitted light is going to be distorted. The profile will change randomly over the coherence time <math>\tau_c</math>. Since for a white-light source such as a light-bulb <math>\tau_c</math> is small, the filament is considered a spatially incoherent source. In contrast, a radio [[Phased array|antenna array]], has large spatial coherence because antennas at opposite ends of the array emit with a fixed phase-relationship. Light waves produced by a laser often have high temporal and spatial coherence (though the degree of coherence depends strongly on the exact properties of the laser). Spatial coherence of laser beams also manifests itself as speckle patterns and diffraction fringes seen at the edges of shadow.
+
+Holography requires temporally and spatially coherent light. Its inventor, [[Dennis Gabor]], produced successful holograms more than ten years before lasers were invented. To produce coherent light he passed the monochromatic light from an emission line of a [[mercury-vapor lamp]] through a pinhole spatial filter.
+
+In February 2011 it was reported that [[helium]] atoms, cooled to near [[absolute zero]] / [[Bose–Einstein condensate]] state, can be made to flow and behave as a coherent beam as occurs in a laser.<ref>
+{{cite journal
+ |last1=Hodgman |first1=S. S.
+ |last2=Dall |first2=R. G.
+ |last3=Manning |first3=A. G.
+ |last4=Baldwin |first4=K. G. H.
+ |last5=Truscott |first5=A. G.
+ |year=2011
+ |title=Direct Measurement of Long-Range Third-Order Coherence in Bose-Einstein Condensates
+ |journal=[[Science (journal)|Science]]
+ |volume=331 |issue=6020 |pages=1046–1049
+ |bibcode=2011Sci...331.1046H
+ |doi=10.1126/science.1198481
+ |pmid=21350171
+|s2cid=5336898
+ }}</ref><ref>
+{{cite web
+ |last=Pincock |first=S.
+ |date=25 February 2011
+ |title=Cool laser makes atoms march in time
+ |url=http://www.abc.net.au/science/articles/2011/02/25/3149175.htm
+ |work=[[ABC Science]]
+ |publisher=[[ABC News Online]]
+ |accessdate=2011-03-02
+}}</ref>
+
+==Spectral coherence==
+[[File:Coherent superposition.svg|thumb|right|350px|Figure 10: Waves of different frequencies interfere to form a localized pulse if they are coherent.]]
+[[File:spectral coherence continuous.png|thumb|right|350px|Figure 11: Spectrally incoherent light interferes to form continuous light with a randomly varying phase and amplitude]]
+
+Waves of different frequencies (in light these are different colours) can interfere to form a pulse if they have a fixed relative phase-relationship (see [[Fourier transform]]). Conversely, if waves of different frequencies are not coherent, then, when combined, they create a wave that is continuous in time (e.g. white light or [[white noise]]). The temporal duration of the pulse <math>\Delta t</math> is limited by the spectral bandwidth of the light <math>\Delta f</math> according to:
+
+:<math>\Delta f\Delta t \ge 1</math>,
+
+which follows from the properties of the Fourier transform and results in [[Küpfmüller's uncertainty principle]] (for quantum particles it also results in the [[Heisenberg uncertainty principle]]).
+
+If the phase depends linearly on the frequency (i.e. <math>\theta (f) \propto f</math>) then the pulse will have the minimum time duration for its bandwidth (a ''transform-limited'' pulse), otherwise it is chirped (see [[Dispersion (optics)|dispersion]]).
+
+===Measurement of spectral coherence===
+Measurement of the spectral coherence of light requires a [[nonlinear optics|nonlinear]] optical interferometer, such as an intensity [[optical autocorrelation|optical correlator]], [[frequency-resolved optical gating]] (FROG), or [[spectral phase interferometry for direct electric-field reconstruction]] (SPIDER).
+{{clear}}
+
+==Polarization and coherence==
+Light also has a [[polarization (waves)|polarization]], which is the direction in which the electric field oscillates. Unpolarized light is composed of incoherent light waves with random polarization angles. The electric field of the unpolarized light wanders in every direction and changes in phase over the coherence time of the two light waves. An absorbing [[polarizer]] rotated to any angle will always transmit half the incident intensity when averaged over time.
+
+If the electric field wanders by a smaller amount the light will be partially polarized so that at some angle, the polarizer will transmit more than half the intensity. If a wave is combined with an orthogonally polarized copy of itself delayed by less than the coherence time, partially polarized light is created.
+
+The polarization of a light beam is represented by a vector in the [[Polarization (waves)#Parameterization|Poincaré sphere]]. For polarized light the end of the vector lies on the surface of the sphere, whereas the vector has zero length for unpolarized light. The vector for partially polarized light lies within the sphere
+
+==Applications==
+
+===Holography===
+Coherent superpositions of ''optical wave fields'' include [[holography]]. Holographic objects are used frequently in daily life in television and credit card security.
+
+===Non-optical wave fields===
+Further applications concern the coherent superposition of  ''non-optical wave fields''. In quantum mechanics for example one considers a probability field, which is related to the wave function <math>\psi (\mathbf r)</math> (interpretation: density of the probability amplitude). Here the applications concern, among others, the future technologies of [[quantum computing]] and the already available technology of [[quantum cryptography]]. Additionally the problems of the following subchapter are treated.
+
+===Modal Analysis===
+Coherence is used to check the quality of the transfer functions (FRFs) being measured. Low coherence can be caused by poor signal to noise ratio, and/or inadequate frequency resolution.
+
+==Quantum coherence==<!-- This section is linked from [[quantum entanglement]] -->
+{{further|Quantum decoherence}}
+{{Refimprove section|date=December 2015}}
+In [[quantum mechanics]], all objects have wave-like properties (see [[Matter wave|de Broglie wave]]s). For instance, in Young's [[double-slit experiment]] electrons can be used in the place of light waves. Each electron's wave-function goes through both slits, and hence has two separate split-beams that contribute to the intensity pattern on a screen. According to standard wave theory<ref name="French">
+{{cite book
+|author=A. P. French
+|year=2003
+|title=Vibrations and Waves
+|publisher=Norton
+|isbn=978-0-393-09936-2
+}}</ref> these two contributions give rise to an intensity pattern of bright bands due to constructive interference, interlaced with dark bands due to destructive interference, on a downstream screen. This ability to interfere and diffract is related to coherence (classical or quantum) of the waves produced at both slits. The association of an electron with a wave is unique to quantum theory.
+
+When the incident beam is represented by a quantum [[pure state]], the split beams downstream of the two slits are represented as a [[Quantum superposition|superposition]] of the pure states representing each split beam.<ref name="Feynman">
+{{cite book
+|author=Richard P. Feynman, Robert B. Leighton and Matthew Sands
+|year=1963
+|title=The Feynman Lectures on Physics
+|publisher=Addison-Wesley
+|volume=III
+|chapter=Quantum Behaviour
+}}</ref> The quantum description of imperfectly coherent paths is called a [[Mixed state (physics)|mixed state]]. A perfectly coherent state has a [[density matrix]] (also called the "statistical operator") that is a projection onto the pure coherent state and is equivalent to a wave function, while a mixed state is described by a classical probability distribution for the pure states that make up the mixture. 
+
+[[Macroscopic scale]] quantum coherence leads to novel phenomena, the so-called [[macroscopic quantum phenomena]]. For instance, the [[laser]], [[superconductivity]] and [[superfluidity]] are examples of highly coherent quantum systems whose effects are evident at the macroscopic scale. The macroscopic quantum coherence (off-diagonal long-range order, ODLRO)<ref>
+{{cite journal
+ |last1=Penrose |first1=O.
+ |last2=Onsager |first2=L.
+ |year=1956
+ |journal=Phys. Rev.
+ |volume=104 |issue=3
+ |pages=576–584
+ |title=Bose-Einstein Condensation and Liquid Helium
+ |doi=10.1103/physrev.104.576
+|bibcode=1956PhRv..104..576P}}</ref><ref>
+{{cite journal
+ |last1=Yang |first1=C.N.
+ |year=1962
+ |journal=Rev. Mod. Phys.
+ |volume=34 |issue=4
+ |pages=694–704
+ |title=Concept of Off-Diagonal Long-Range Order and the Quantum Phases of Liquid He and of Superconductors
+ |doi=10.1103/revmodphys.34.694
+|bibcode=1962RvMP...34..694Y}}</ref> for superfluidity, and laser light, is related to first-order (1-body) coherence/ODLRO, while superconductivity is related to second-order coherence/ODLRO. (For fermions, such as electrons, only even orders of coherence/ODLRO are possible.) For bosons, a [[Bose–Einstein condensate]] is an example of a system exhibiting macroscopic quantum coherence through a multiple occupied single-particle state. 
+
+The classical electromagnetic field exhibits macroscopic quantum coherence. The most obvious example is the carrier signal for radio and TV. They satisfy [[Roy J. Glauber|Glauber]]'s quantum description of coherence.
+
+Recently [[Martin Bodo Plenio|M. B. Plenio]] and co-workers constructed an operational formulation of quantum coherence as a resource theory. They introduced coherence monotones analogous to the entanglement monotones.<ref>
+{{cite journal
+ |last1=Baumgratz |first1=T.
+ |last2=Cramer |first2=M.
+ |last3=Plenio |first3=M.B.
+ |year=2014
+ |journal=Phys. Rev. Lett.
+ |volume=113 |issue=14
+ |pages=140401
+ |title=Quantifying Coherence |doi=10.1103/physrevlett.113.140401
+|pmid=25325620
+ |arxiv=1311.0275|bibcode=2014PhRvL.113n0401B|s2cid=45904642
+ }}</ref> Quantum coherence has been shown to be equivalent to [[quantum entanglement]]<ref>
+{{cite journal
+ |last1=Tan |first1=K.C.
+ |last2=Jeong |first2=H.
+ |year=2018
+ |journal=Phys. Rev. Lett.
+ |volume=121 |issue=22
+ |pages=220401
+ |title=Entanglement as the Symmetric Portion of Correlated Coherence | doi=10.1103/PhysRevLett.121.220401
+|pmid=30547638
+ |arxiv=1805.10750|bibcode=2018PhRvL.121v0401T
+ |s2cid=51690149
+ }}</ref> in the sense that coherence can be faithfully described as entanglement, and conversely that each entanglement measure corresponds to a coherence measure.
+
+==See also==
+{{div col}}
+* {{annotated link|Atomic coherence}}
+* {{annotated link|Coherence length}}
+* {{annotated link|Coherent states}}
+* {{annotated link|Laser linewidth}}
+* {{annotated link|Measurement in quantum mechanics}}
+* {{annotated link|Measurement problem}}
+* {{annotated link|Optical heterodyne detection}}
+* {{annotated link|Quantum biology}}
+* {{annotated link|Quantum Zeno effect}}
+* {{annotated link|Wave superposition}}
+{{div col end}}
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{cite web
+ |author=Dr. SkySkull
+ |title=Optics basics: Coherence
+ |url=http://skullsinthestars.com/2008/09/03/optics-basics-coherence/
+ |work=Skulls in the Stars
+|date=2008-09-03
+ }}
+
+{{Quantum mechanics topics}}
+
+{{DEFAULTSORT:Coherence (Physics)}}
+[[Category:Concepts in physics]]
+[[Category:Wave mechanics]]
+[[Category:Quantum mechanics]]
+[[Category:Radar signal processing]]

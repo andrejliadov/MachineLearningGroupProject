@@ -1,0 +1,249 @@
+{{short description|Probability of a given process occurring in a particle collision}}
+{{Redirect-distinguish|Scattering cross section|Radar cross-section{{!}}Radar scattering cross section}}
+
+In physics, the '''cross section''' is a measure of the probability that a specific process will take place when some kind of radiant excitation (e.g. a particle beam, sound wave, light, or an X-ray) intersects a localized phenomenon (e.g. a particle or density fluctuation). For example, the [[Rutherford scattering|Rutherford cross-section]] is a measure of probability that an [[alpha-particle]] will be deflected by a given angle during a collision with an [[atomic nucleus]]. Cross section is typically denoted {{math|''σ''}} ([[sigma]]) and is expressed in units of transverse area. In a way, it can be thought of as the size of the object that the excitation must hit in order for the process to occur, but more exactly, it is a parameter of a [[stochastic process]].
+
+In [[classical physics]], this probability often converges to a deterministic proportion of excitation energy involved in the process, so that, for example, with light scattering off of a particle, the '''cross section''' specifies the amount of optical power scattered from light of a given irradiance (power per area). It is important to note that although the cross section has the same units as area, the cross section may not necessarily correspond to the actual physical size of the target given by other forms of measurement. It is not uncommon for the actual cross-sectional area of a scattering object to be much larger or smaller than the cross section relative to some physical process. For example, [[plasmonic nanoparticles]] can have light scattering cross sections for particular frequencies that are much larger than their actual cross-sectional areas.
+
+When two discrete particles interact in classical physics, their mutual '''cross section''' is the area [[transversality (mathematics)|transverse]] to their relative motion within which they must meet in order to [[scattering|scatter]] from each other. If the particles are hard [[elasticity (physics)|inelastic]] [[sphere]]s that interact only upon contact, their scattering cross section is related to their geometric size. If the particles interact through some action-at-a-distance force, such as [[electromagnetism]] or [[gravity]], their scattering cross section is generally larger than their geometric size. 
+
+When a cross section is specified as the [[Differential_of_a_function|differential]] limit of a function of some final-state variable, such as particle angle or energy, it is called a '''differential cross section''' (see detailed discussion below). When a cross section is integrated over all scattering angles (and possibly other variables), it is called a '''total cross section''' or '''integrated total cross section'''. For example, in [[Rayleigh scattering]], the intensity scattered at the forward and backward angles is greater than the intensity scattered sideways, so the forward differential scattering cross section is greater than the perpendicular differential cross section, and by adding all of the infinitesimal cross sections over the whole range of angles with integral calculus, we can find the total cross section.
+
+Scattering cross sections may be defined in [[nuclear physics|nuclear]], [[atomic physics|atomic]], and [[particle physics]] for collisions of accelerated beams of one type of particle with targets (either stationary or moving) of a second type of particle. The probability for any given reaction to occur is in proportion to its cross section. Thus, specifying the cross section for a given reaction is a proxy for stating the probability that a given scattering process will occur.
+
+The measured [[reaction rate]] of a given process depends strongly on experimental variables such as the density of the target material, the intensity of the beam, the detection efficiency of the apparatus, or the angle setting of the detection apparatus. However, these quantities can be factored away, allowing measurement of the underlying two-particle collisional cross section.
+
+Differential and total scattering cross sections are among the most important measurable quantities in [[nuclear physics|nuclear]], [[atomic physics|atomic]], and [[particle physics]].
+
+==Collision among gas particles==
+[[File:CrossSectionFig1.svg|thumb|upright=1.5|'''Figure 1.''' In a gas of particles of individual diameter {{math|2''r''}}, the cross section {{math|''σ''}}, for collisions is related to the particle number density {{math|''n''}}, and mean free path between collisions {{math|''λ''}}.]]
+
+In a [[gas]] of finite-sized particles there are collisions among particles that depend on their cross-sectional size. The average distance that a particle travels between collisions depends on the density of gas particles. These quantities are related by
+:<math>\sigma = \frac{1}{n \lambda},</math>
+
+where
+:{{math|''σ''}} is the cross section of a two-particle collision ([[SI]] units: m<sup>2</sup>),
+:{{math|''λ''}} is the [[mean free path]] between collisions (SI units: m),
+:{{math|''n''}} is the [[number density]] of the target particles (SI units: m<sup>−3</sup>).
+
+If the particles in the gas can be treated as hard spheres of radius {{math|''r''}} that interact by direct contact, as illustrated in Figure 1, then the effective cross section for the collision of a pair is
+:<math>\sigma = \pi \left(2r\right)^2</math>
+
+If the particles in the gas interact by a force with a larger range than their physical size, then the cross section is a larger effective area that may depend on a variety of variables such as the energy of the particles.
+
+Cross sections can be computed for atomic collisions but also are used in the subatomic realm. For example, in [[nuclear physics]] a "gas" of low-energy [[neutron]]s collides with nuclei in a reactor or other nuclear device, with a [[neutron cross section|cross section that is energy-dependent]] and hence also with well-defined [[mean free path]] between collisions.
+
+==Attenuation of a beam of particles==
+{{see also|Attenuation}}
+If a beam of particles enters a thin layer of material of thickness {{math|d''z''}}, the [[flux]] {{math|''Φ''}} of the beam will decrease by {{math|d''Φ''}} according to
+:<math>\frac{\mathrm d \Phi}{\mathrm d z} = -n \sigma \Phi,</math>
+
+where {{math|''σ''}} is the total cross section of ''all'' events, including [[scattering]], [[absorption (electromagnetic radiation)|absorption]], or transformation to another species. The number density of scattering centers is designated by {{math|''n''}}. Solving this equation exhibits the exponential attenuation of the beam intensity:
+:<math>\Phi = \Phi_0 e^{-n \sigma z},</math>
+
+where {{math|''Φ''<sub>0</sub>}} is the initial flux, and {{math|''z''}} is the total thickness of the material. For light, this is called the [[Beer–Lambert law]].
+
+==Differential cross section==
+
+Consider a [[classical mechanics|classical]] measurement where a single particle is scattered off a single stationary target particle. Conventionally, a [[spherical coordinate system]] is used, with the target placed at the origin and the {{math|''z''}} axis of this coordinate system aligned with the incident beam. The angle {{math|''θ''}} is the '''scattering angle''', measured between the incident beam and the scattered beam, and the {{math|''φ''}} is the [[azimuthal angle]].
+:[[File:Differential cross section.svg|none|600px]]
+
+The [[impact parameter]] {{math|''b''}} is the perpendicular offset of the trajectory of the incoming particle, and the outgoing particle emerges at an angle {{math|''θ''}}. For a given interaction ([[Coulomb's law|Coulombic]], [[magnetism|magnetic]], [[gravitation]]al, contact, etc.), the impact parameter and the scattering angle have a definite one-to-one functional dependence on each other. Generally the impact parameter can neither be controlled nor measured from event to event and is assumed to take all possible values when averaging over many scattering events. The differential size of the cross section is the area element in the plane of the impact parameter, i.e. {{math|d''σ'' {{=}} ''b'' d''φ'' d''b''}}. The differential angular range of the scattered particle at angle {{math|''θ''}} is the solid angle element {{math|d''Ω'' {{=}} sin ''θ'' d''θ'' d''φ''}}. The differential cross section is the quotient of these quantities, {{math|{{sfrac|d''σ''|d''Ω''}}}}.
+
+It is a function of the scattering angle (and therefore also the impact parameter), plus other observables such as the momentum of the incoming particle. The differential cross section is always taken to be positive, even though larger impact parameters generally produce less deflection. In cylindrically symmetric situations (about the beam axis), the [[azimuthal angle]] {{math|''φ''}} is not changed by the scattering process, and the differential cross section can be written as
+:<math> \frac{\mathrm{d} \sigma}{\mathrm{d}(\cos \theta)} =\int_0^{2\pi} \frac{\mathrm{d} \sigma}{\mathrm{d} \Omega} \,\mathrm{d}\varphi </math>.
+
+In situations where the scattering process is not azimuthally symmetric, such as when the beam or target particles possess magnetic moments oriented perpendicular to the beam axis, the differential cross section must also be expressed as a function of the azimuthal angle.
+
+For scattering of particles of incident flux {{math|''F''<sub>inc</sub>}} off a stationary target consisting of many particles, the differential cross section {{math|{{sfrac|d''σ''|d''Ω''}}}} at an angle {{math|(''θ'',''φ'')}} is related to the flux of scattered particle detection {{math|''F''<sub>out</sub>(''θ'',''φ'')}} in particles per unit time by
+:<math>\frac{\mathrm d \sigma}{\mathrm d \Omega}(\theta,\varphi) = \frac{1}{n t \Delta\Omega} \frac{F_\text{out}(\theta,\varphi)}{F_\text{inc}}.</math>
+
+Here {{math|Δ''Ω''}} is the finite angular size of the detector (SI unit: [[steradian|sr]]), {{math|''n''}} is the [[number density]] of the target particles (SI units: m<sup>−3</sup>), and {{math|''t''}} is the thickness of the stationary target (SI units: m). This formula assumes that the target is thin enough that each beam particle will interact with at most one target particle.
+
+The total cross section {{math|''σ''}} may be recovered by integrating the differential cross section {{math|{{sfrac|d''σ''|d''Ω''}}}} over the full [[solid angle]] ({{math|4π}} steradians):
+:<math>\sigma = \oint_{4\pi} \frac{\mathrm d \sigma}{\mathrm d \Omega} \, \mathrm d \Omega = \int_0^{2\pi} \int_0^\pi \frac{\mathrm d \sigma}{\mathrm d \Omega} \sin \theta \, \mathrm d \theta \, \mathrm d \varphi.</math>
+
+It is common to omit the “differential” [[qualifier]] when the type of cross section can be inferred from context. In this case, {{math|''σ''}} may be referred to as the ''integral cross section'' or ''total cross section''. The latter term may be confusing in contexts where multiple events are involved, since “total” can also refer to the sum of cross sections over all events.
+
+The differential cross section is extremely useful quantity in many fields of physics, as measuring it can reveal a great amount of information about the internal structure of the target particles. For example, the differential cross section of [[Rutherford scattering]] provided strong evidence for the existence of the atomic nucleus.
+
+Instead of the solid angle, the [[momentum transfer]] may be used as the independent variable of differential cross sections.
+
+Differential cross sections in inelastic scattering contain [[resonance (particle physics)|resonance peaks]] that indicate the creation of metastable states and contain information about their energy and lifetime.
+
+==Quantum scattering==
+In the [[Stationary state|time-independent]] formalism of [[Quantum mechanics|quantum]] scattering, the initial [[wave function]] (before scattering) is taken to be a plane wave with definite [[momentum]] {{math|''k''}}:
+:<math>\phi_-(\mathbf r) \;\stackrel{r \to \infty}{\longrightarrow}\; e^{i k z},</math>
+
+where {{math|''z''}} and {{math|''r''}} are the ''relative'' coordinates between the projectile and the target. The arrow indicates that this only describes the ''asymptotic behavior'' of the wave function when the projectile and target are too far apart for the interaction to have any effect.
+
+After scattering takes place it is expected that the wave function takes on the following asymptotic form:
+:<math>\phi_+(\mathbf r) \;\stackrel{r \to \infty}{\longrightarrow}\; f(\theta,\phi) \frac{e^{i k r}}{r},</math>
+
+where {{math|''f''}} is some function of the angular coordinates known as the [[scattering amplitude]]. This general form is valid for any short-ranged, energy-conserving interaction. It is not true for long-ranged interactions, so there are additional complications when dealing with electromagnetic interactions.
+
+The full wave function of the system behaves asymptotically as the sum
+:<math>\phi(\mathbf r) \;\stackrel{r \to \infty}{\longrightarrow}\; \phi_-(\mathbf r) + \phi_+(\mathbf r).</math>
+
+The differential cross section is related to the scattering amplitude:
+:<math>\frac{\mathrm d \sigma}{\mathrm d \Omega}(\theta, \phi) = \bigl|f(\theta, \phi)\bigr|^2.</math>
+
+This has the simple interpretation as the probability density for finding the scattered projectile at a given angle.
+
+A cross section is therefore a measure of the effective surface area seen by the impinging particles, and as such is expressed in units of area. The cross section of two [[Elementary particle|particles]] (i.e. observed when the two particles are [[Collision|colliding]] with each other) is a measure of the interaction event between the two particles. The cross section is proportional to the probability that an interaction will occur; for example in a simple scattering experiment the number of particles scattered per unit of time (current of scattered particles {{math|''I''<sub>r</sub>}}) depends only on the number of incident particles per unit of time (current of incident particles {{math|''I''<sub>i</sub>}}), the characteristics of target (for example the number of particles per unit of surface {{math|''N''}}), and the type of interaction. For {{math|''Nσ'' ≪ 1}} we have
+:<math>\begin{align}
+I_\text{r} &= I_\text{i}N\sigma, \\
+\sigma &= \frac{I_\text{r}}{I_\text{i}} \frac{1}{N} \\
+&= \text{probability of interaction} \times \frac{1}{N}.
+\end{align}</math>
+
+===Relation to the S-matrix===
+If the [[reduced mass]]es and [[Momentum|momenta]] of the colliding system are {{math|''m<sub>i</sub>''}}, {{math|'''p'''<sub>''i''</sub>}} and {{math|''m<sub>f</sub>''}}, {{math|'''p'''<sub>''f''</sub>}} before and after the collision respectively, the differential cross section is given by{{clarify|reason=This section is an uncontextualized leap. We have jumped, without announcement, from the Schrödinger PDE for a wave in a potential to the language of QFT for two particles colliding.|date=September 2016}}
+:<math>\frac{\mathrm d\sigma}{\mathrm d\Omega} = \left(2\pi\right)^4 m_i m_f \frac{p_f}{p_i} \bigl|T_{fi}\bigr|^2,</math>
+
+where the on-shell {{math|''T''}} matrix is defined by
+:<math>S_{fi} = \delta_{fi} - 2\pi i \delta\left(E_f - E_i\right) \delta\left(\mathbf{p}_i - \mathbf{p}_f\right) T_{fi}</math>
+
+in terms of the [[S-matrix]]. Here {{math|''δ''}} is the [[Dirac delta function]]. The computation of the S-matrix is the main goal of the [[scattering theory]].
+
+==Units==
+Although the [[SI unit]] of total cross sections is [[square meter|m<sup>2</sup>]], smaller units are usually used in practice.
+
+In nuclear and particle physics, the conventional unit is the barn [[Barn (unit)|b]], where 1&nbsp;b = 10<sup>−28</sup>&nbsp;m<sup>2</sup> = 100&nbsp;[[Femtometre|fm]]<sup>2</sup>.<ref>{{SIbrochure8th|pages=127–28}}</ref> Smaller [[Metric prefix|prefixed]] units such as [[Milli-|mb]] and [[Micro-|μb]] are also widely used. Correspondingly, the differential cross section can be measured in units such as mb/sr.
+
+When the scattered radiation is visible light, it is conventional to measure the path length in [[centimetre]]s. To avoid the need for conversion factors, the scattering cross section is expressed in cm<sup>2</sup>, and the number concentration in cm<sup>−3</sup>. The measurement of the scattering of visible light is known as [[nephelometry]], and is effective for particles of 2–50&nbsp;[[micrometre|µm]] in diameter: as such, it is widely used in [[meteorology]] and in the measurement of [[atmospheric pollution]].
+
+The scattering of [[X-ray]]s can also be described in terms of scattering cross sections, in which case the square [[ångström]] is a convenient unit: 1&nbsp;Å<sup>2</sup> = 10<sup>−20</sup>&nbsp;m<sup>2</sup> = {{val|10000|u=[[picometre|pm]]<sup>2</sup>}} = 10<sup>8</sup>&nbsp;b. The sum of the scattering, photoelectric, and pair-production cross-sections (in barns) is charted as the "atomic attenuation coefficient" (narrow-beam), in barns.<ref>Nondestructive Testing Handbook Volume 4 Radiographic Testing, ASNT, 2002, chapter 22.</ref>
+
+==Scattering of light==
+
+For light, as in other settings, the scattering cross section for particles is generally different from the [[Cross section (geometry)|geometrical cross section]] of the particle, and it depends upon the [[wavelength]] of light and the [[permittivity]], shape, and size of the particle. The total amount of scattering in a sparse medium is proportional to the product of the scattering cross section and the number of particles present.
+
+In the interaction of light with particles, many processes occur, each with their own cross sections, including [[Absorption cross section|absorption]], [[scattering]], and [[photoluminescence]]. The sum of the absorption and scattering cross sections is sometimes referred to as the attenuation or extinction cross section.
+:<math>\sigma = \sigma_\text{a} + \sigma_\text{s} + \sigma_\text{l}.</math>
+The total extinction cross section is related to the attenuation of the light intensity through the [[Beer–Lambert law]], which says that attenuation is proportional to particle concentration:
+:<math>A_\lambda = C l \sigma,</math>
+where {{math|''A<sub>λ</sub>''}} is the attenuation at a given [[wavelength]] {{math|''λ''}}, {{math|''C''}} is the particle concentration as a number density, and {{math|''l''}} is the [[Distance|path length]]. The absorbance of the radiation is the [[logarithm]] ([[Common logarithm|decadic]] or, more usually, [[Natural logarithm|natural]]) of the reciprocal of the [[transmittance]] {{mathcal|T}}:<ref name="Bajpai">{{Cite book|title=Biological instrumentation and methodology|last=Bajpai, P. K.|date=2008|publisher=S. Chand & Company Ltd|isbn=9788121926331|edition= Revised 2nd|location=Ram Nagar, New Delhi|oclc=943495167}}</ref>
+:<math>A_\lambda = -\log \mathcal{T}.</math>
+
+Combining the scattering and absorption cross sections in this manner is often necessitated by the inability to distinguish them experimentally, and much research effort has been put into developing models that allow them to be distinguished, the Kubelka-Munk theory being one of the most important in this area.
+
+===Scattering of light on extended bodies===
+
+In the context of scattering light on extended bodies, the scattering cross section, {{math|''σ''<sub>scat</sub>}}, describes the likelihood of light being scattered by a macroscopic particle. In general, the scattering cross section is different from the [[cross section (geometry)|geometrical cross section]] of a particle, as it depends upon the wavelength of light and the [[permittivity]] in addition to the shape and size of the particle. The total amount of scattering in a sparse medium is determined by the product of the scattering cross section and the number of particles present. In terms of area, the ''total cross section'' ({{math|''σ''}}) is the sum of the cross sections due to [[absorption cross section|absorption]], scattering, and [[luminescence]]:
+:<math>\sigma = \sigma_\text{a} + \sigma_\text{s} + \sigma_\text{l}.</math>
+
+The total cross section is related to the [[absorbance]] of the light intensity through the [[Beer–Lambert law]], which says that absorbance is proportional to concentration: {{math|''A<sub>λ</sub>'' {{=}} ''Clσ''}}, where {{math|''A<sub>λ</sub>''}} is the absorbance at a given [[wavelength]] {{math|''λ''}}, {{math|''C''}} is the concentration as a [[number density]], and {{math|''l''}} is the [[Distance|path length]]. The extinction or [[absorbance]] of the radiation is the [[logarithm]] ([[decadic logarithm|decadic]] or, more usually, [[natural logarithm|natural]]) of the reciprocal of the [[transmittance]] {{mathcal|T}}:<ref name="Bajpai" />
+:<math>A_\lambda = - \log \mathcal{T}.</math>
+
+====Relation to physical size====
+There is no simple relationship between the scattering cross section and the physical size of the particles, as the scattering cross section depends on the wavelength of radiation used. This can be seen when looking at a halo surrounding the moon on a decently foggy evening: Red light photons experience a larger cross sectional area of water droplets than photons of higher energy do.  The halo around the moon thus has a perimeter of red light due to lower energy photons being scattering further from the center of the moon. Photons from the rest of the visible spectrum are left within the center of the halo and perceived as white light.
+
+===Meteorological range===
+The scattering cross section is related to the [[visibility|meteorological range]] {{math|''L''<sub>V</sub>}}:
+:<math>L_\text{V} = \frac{3.9}{C \sigma_\text{scat}}.</math>
+
+The quantity {{math|''Cσ''<sub>scat</sub>}} is sometimes denoted {{math|''b''<sub>scat</sub>}}, the scattering coefficient per unit length.<ref>{{GoldBookRef|title=Scattering cross section, {{math|''σ''<sub>scat</sub>}}|file=S05490}}</ref>
+
+==Examples==
+
+===Example 1: elastic collision of two hard spheres===
+The [[elastic collision]] of two hard spheres is an instructive example that demonstrates the sense of calling this quantity a cross section. {{math|''R''}} and {{math|''r''}} are respectively the radii of the scattering center and scattered sphere.
+The total cross section is
+:<math>\sigma_\text{tot} = \pi \left(r + R\right)^2.</math>
+
+So in this case the total scattering cross section is equal to the area of the circle (with radius {{math|''r'' + ''R''}}) within which the center of mass of the incoming sphere has to arrive for it to be deflected, and outside which it passes by the stationary scattering center.
+
+===Example 2: scattering light from a 2D circular mirror===
+
+Another example illustrates the details of the calculation of a simple [[light]] scattering model obtained by a reduction of the dimension. For simplicity, we will consider the scattering of a beam of light on a plane treated as a uniform density of parallel rays and within the framework of [[geometrical optics]] from a circle with radius {{math|''r''}} with a perfectly reflecting boundary. Its three-dimensional equivalent is therefore the more difficult problem of a laser or flashlight light scattering from the mirror sphere, for example, from the mechanical bearing ball.<ref>
+{{cite journal
+|doi= 10.1016/j.optcom.2003.08.019
+|title=More on patterns in Mie scattering
+|year=2003
+|author=M. Xu, R. R. Alfano
+|journal=Optics Communications
+|volume=226
+|issue= 1–6
+|pages=1–5
+|bibcode = 2003OptCo.226....1X}}
+</ref> The unit of cross section in one dimension is the unit of length, for example 1&nbsp;m. Let {{math|''α''}} be the angle between the [[ray (optics)|light ray]] and the [[radius]] joining the reflection point of the light ray with the center point of the circle mirror. Then the increase of the length element perpendicular to the light beam is expressed by this angle as
+:<math>\mathrm dx = r \cos \alpha \,\mathrm d \alpha,</math>
+the reflection angle of this ray with respect to the incoming ray is then {{math|2''α''}}, and the scattering angle is
+:<math>\theta = \pi - 2 \alpha.</math>
+The energy or the number of photons reflected from the light beam with the intensity or density of photons {{math|''I''}} on the length {{math|d''x''}} is
+:<math>I \,\mathrm d \sigma = I \,\mathrm dx(x) = I r \cos \alpha \,\mathrm d \alpha = I \frac{r}{2} \sin \left(\frac{\theta}{2}\right) \,\mathrm d \theta = I \frac{\mathrm d \sigma}{\mathrm d \theta} \,\mathrm d \theta.</math>
+The differential cross section is therefore ({{math|d''Ω'' {{=}} d''θ''}})
+:<math>\frac{\mathrm d \sigma}{\mathrm d \theta} = \frac{r}{2} \sin \left(\frac{\theta}{2}\right).</math>
+As it is seen from the behaviour of the [[sine]] function, this quantity has the maximum for the backward scattering ({{math|''θ'' {{=}} π}}; the light is reflected perpendicularly and returns), and the zero minimum for the scattering from the edge of the circle directly forward ({{math|''θ'' {{=}} 0}}). It confirms the intuitive expectations that the mirror circle acts like a diverging [[lens (optics)|lens]], and a thin beam is more diluted the closer it is from the edge defined with respect to the incoming direction. The total cross section can be obtained by summing (integrating) the differential section of the entire range of angles:
+:<math>\sigma = \int_0^{2 \pi} \frac{\mathrm d \sigma}{\mathrm d \theta} \,\mathrm d \theta = \int_0^{2 \pi} \frac{r}{2} \sin \left(\frac{\theta}{2}\right) \,\mathrm d \theta = \left. -r \cos \left(\frac{\theta}{2}\right) \right|_0^{2 \pi} = 2 r,</math>
+so it is equal as much as the circular mirror is totally screening the two-dimensional space for the beam of light. In three dimensions for the mirror ball with the radius {{math|''r''}} it is therefore equal {{math|''σ'' {{=}} π''r''<sup>2</sup>}}.
+
+===Example 3: scattering light from a 3D spherical mirror===
+We can now use the result from the Example 2 to calculate the differential cross section for the light scattering from the perfectly reflecting sphere in three dimensions. Let us denote now the radius of the sphere as {{math|''a''}}. Let us parameterize the plane perpendicular to the incoming light beam by the cylindrical coordinates {{math|''r''}} and {{math|''φ''}}. In any plane of the incoming and the reflected ray we can write now from the previous example:
+:<math>\begin{align}
+r &= a \sin \alpha,\\
+\mathrm dr &= a \cos \alpha \,\mathrm d \alpha,
+\end{align}</math>
+while the impact area element is
+:<math> \mathrm d \sigma = \mathrm d r(r) \times r \,\mathrm d \varphi = \frac{a^2}{2} \sin \left(\frac{\theta}{2}\right) \cos \left(\frac{\theta}{2}\right) \,\mathrm d \theta \,\mathrm d \varphi.</math>
+Using the relation for the solid angle in the spherical coordinates:
+:<math>\mathrm d\Omega = \sin \theta \,\mathrm d \theta \,\mathrm d \varphi</math>
+and the trigonometric identity
+:<math>\sin \theta = 2 \sin \left(\frac{\theta}{2}\right) \cos \left(\frac{\theta}{2}\right),</math>
+we obtain
+:<math>\frac{\mathrm d \sigma}{\mathrm d \Omega} = \frac{a^2}{4},</math>
+while the total cross section as we expected is
+:<math>\sigma = \oint_{4 \pi} \frac{\mathrm d \sigma}{\mathrm d \Omega} \,\mathrm d \Omega = \pi a^2.</math>
+As one can see, it also agrees with the result from the Example 1 if the photon is assumed to be a rigid sphere of zero radius.
+
+==See also==
+{{Div col|colwidth=22em}}
+*[[Cross section (geometry)]]
+*[[Flow velocity]]
+*[[Luminosity (scattering theory)]]
+*[[Linear attenuation coefficient]]
+*[[Mass attenuation coefficient]]
+*[[Neutron cross section]]
+*[[Nuclear cross section]]
+*[[Partial wave analysis]]
+*[[Particle detector]]
+*[[Radar cross-section]]
+*[[Rutherford scattering]]
+*[[Scattering amplitude]]
+{{Div col end}}
+
+==References==
+{{More footnotes|date=December 2009}}
+{{Reflist}}
+
+===General references===
+{{Refbegin}}
+*J. D. Bjorken, S. D. Drell, ''Relativistic Quantum Mechanics'', 1964
+*P. Roman, ''Introduction to Quantum Theory'', 1969
+*W. Greiner, J. Reinhardt, ''Quantum Electrodynamics'', 1994
+*R. G. Newton. ''Scattering Theory of Waves and Particles''. McGraw Hill, 1966.
+*{{cite book |author=R. C. Fernow|title=Introduction to Experimental Particle Physics|year=1989|publisher=Cambridge University Press|isbn=978-0-521-379-403|url=https://books.google.com/books?id=WNhMzhm0SscC&q=Rate+and+cross+section+particle+physics&pg=PA80}}
+{{Refend}}
+
+==External links==
+*[http://hyperphysics.phy-astr.gsu.edu/Hbase/nuclear/nucrea.html#c3 Nuclear Cross Section]
+*[http://hyperphysics.phy-astr.gsu.edu/Hbase/nuclear/crosec.html#c1 Scattering Cross Section]
+*[https://www-nds.iaea.org/ IAEA - Nuclear Data Services]
+*[https://www.nndc.bnl.gov/ BNL - National Nuclear Data Center]
+*[http://pdg.lbl.gov/ Particle Data Group - The Review of Particle Physics]
+*[https://goldbook.iupac.org/html/R/R05169.html IUPAC Goldbook - Definition: Reaction Cross Section]
+*[https://goldbook.iupac.org/html/C/C01161.html IUPAC Goldbook - Definition: Collision Cross Section]
+*[https://web.archive.org/web/20181002070852/http://www.cross-section-plotter.com/ ShimPlotWell cross section plotter for nuclear data]
+
+[[Category:Atomic physics]]
+[[Category:Concepts in physics]]
+[[Category:Dimensional analysis]]
+[[Category:Experimental particle physics]]
+[[Category:Measurement]]
+[[Category:Nuclear physics]]
+[[Category:Particle physics]]
+[[Category:Scattering theory]]
+[[Category:Scattering, absorption and radiative transfer (optics)]]
+[[Category:Scattering]]
+[[Category:Spectroscopy]]

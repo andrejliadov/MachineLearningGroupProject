@@ -1,0 +1,150 @@
+{{more citations needed|date=August 2016}}
+[[File:UTC hue4map ATA.png|thumb|260px|Map of approximate time zones on the continent of Antarctica. Stations could use time zones not matching the map.
+{|
+| style="background:#f00; width:20px;"| || [[UTC+00:00]]
+|-
+| style="background:#0ff;"| || [[UTC+03:00]]
+<!--- where is UTC+5 for Antarctica/Mawson Mawson station --->
+|-
+| style="background:#FF8000;" | || [[UTC+06:00]]
+|-
+| style="background:#ff0;"| || [[UTC+07:00]]
+|-
+| style="background:#04B404;" | || [[UTC+08:00]]
+|-
+| style="background:#013ADF;" | || [[UTC+10:00]]
+|-
+| style="background:#F78181;" | || [[UTC+12:00]]
+|-
+| style="background:#F8E0E0;" | || [[UTC+13:00]]
+|-
+| style="background:#DBA901;" | || [[UTC−06:00]]
+|-
+| style="background:#01A9DB;" | || [[UTC−03:00]]
+|}
+]]
+
+[[Antarctica]] sits on every [[Meridian (geography)|line of longitude]], due to the [[South Pole]] being situated on the continent. Theoretically, Antarctica would be located in all time zones; however, areas south of the [[Antarctic Circle]] experience extreme day-night cycles near the times of the June and December [[solstice]]s, making it difficult to determine which time zone would be appropriate. For practical purposes time zones are usually based on [[Territorial claims in Antarctica|territorial claims]]; however, many stations use the time of the country they are owned by or the time zone of their supply base (e.g. [[McMurdo Station]] and [[Amundsen–Scott South Pole Station]] use [[Time in New Zealand|New Zealand time]] due to their main supply base being [[Christchurch]], New Zealand).<ref name=DST>{{cite web|url=http://www.timegenie.com/country.time/aq |title=Local Time → Antarctica @ Time Genie |publisher=Timegenie.com |accessdate=2013-07-24}}</ref> Nearby stations can have different time zones, due to their belonging to different countries. Many areas have no time zone since nothing is decided and there are not even any temporary settlements that have any clocks. They are simply labeled with [[UTC|UTC time]].<ref name=NZTime>{{cite web|url=http://www.timeanddate.com/worldclock/city.html?n=468 |title=Current local time in Antarctica – South Pole |publisher=Timeanddate.com |date=2013-04-07 |accessdate=2013-07-24}}</ref>{{failed verification|date=May 2020}}
+
+==TZ database==
+The file [[zone.tab]] of the [[tz database]] contains the following zones, columns marked with * contain data from the file zone.tab. Only permanently inhabited stations are tracked by the tz database staff. Some summer only stations with different time might exist.
+{| class="wikitable"
+|-
+! style="width:20px;"| &nbsp;
+! Country code*
+! Coordinates*
+! Zone name*
+! Comment*
+! [[UTC offset]] <br>standard time
+! [[Daylight saving time|DST]]
+! Area covered
+|-
+| style="background:#01A9DB;" |
+| {{Tz/zone.tab cols wikitable|Antarctica/Palmer}}
+| {{Tz/utc offset link|Antarctica/Palmer}}
+| {{no}}
+| [[Palmer Land]]
+|-
+| style="background:#01A9DB;" |
+| {{Tz/zone.tab cols wikitable|Antarctica/Rothera}}
+| {{Tz/utc offset link|Antarctica/Rothera}}
+| {{no}}
+| [[Graham Land]]
+|-
+| style="background:#f00;" |
+| {{Tz/zone.tab cols wikitable|Antarctica/Troll}}
+| {{Tz/utc offset link|Antarctica/Troll}}<ref>[http://www.npolar.no/no/om-oss/norsk-polarinstitutt-i-sor/troll.html Forskingsstasjonen Troll] (Norwegian Polar Institute) (The Norwegian text under the webcamera says "The time zone where Troll is located, UTC+0, is 1 hours behind Norwegian time". Contacts with the Norwegian Polar Institute has revealed that they use UTC+2 (Norwegian DST) during the dark winter, for communication simplicity, since no airplanes fly anyway then)</ref>
+| {{yes|Doubly so}}
+| [[Queen Maud Land]]
+|-
+| style="background:#0ff;"|
+| {{Tz/zone.tab cols wikitable|Antarctica/Syowa}}
+| {{Tz/utc offset link|Antarctica/Syowa}}
+| {{no}}
+| [[Queen Maud Land]], [[Enderby Land]]
+|-
+| style="background:#FF8000;" |
+| {{Tz/zone.tab cols wikitable|Antarctica/Mawson}}
+| {{Tz/utc offset link|Antarctica/Mawson}}
+| {{no}}
+| [[Mac. Robertson Land]]
+|-
+| style="background:#ff0;"|
+| {{Tz/zone.tab cols wikitable|Antarctica/Vostok}}
+| {{Tz/utc offset link|Antarctica/Vostok}}
+| {{no}}
+| [[Antarctica|Inland Antarctica]], [[Queen Maud Land]]
+|-
+| style="background:#ff0;"|
+| {{Tz/zone.tab cols wikitable|Antarctica/Davis}}
+| {{Tz/utc offset link|Antarctica/Davis}}
+| {{no}}
+| [[Wilkes Land]]
+|-
+| style="background:#04B404;" |
+| {{Tz/zone.tab cols wikitable|Antarctica/Casey}}
+| {{Tz/utc offset link|Antarctica/Casey}}
+| {{no}}
+| [[Wilkes Land]]
+|-
+| style="background:#013ADF;" |
+| {{Tz/zone.tab cols wikitable|Antarctica/DumontDUrville}}
+| {{Tz/utc offset link|Antarctica/DumontDUrville}}
+| {{no}}
+| [[Adélie Land]], [[Victoria Land]]
+|-
+| style="background:#F78181;" |
+| {{Tz/zone.tab cols wikitable|Antarctica/Macquarie}}
+| {{Tz/utc offset link|Antarctica/Macquarie}}
+| {{yes}}
+| [[Macquarie Island]]
+|-
+| style="background:#F78181;" |
+| {{Tz/zone.tab cols wikitable|Antarctica/McMurdo}}
+| {{Tz/utc offset link|Antarctica/McMurdo}}
+| {{yes}}
+| [[Ross Dependency]]
+|-
+| style="background:#F78181;" |
+| {{Tz/zone.tab cols wikitable|Antarctica/South_Pole}}
+| {{Tz/utc offset link|Antarctica/South_Pole}}
+| {{yes}}
+| [[South Pole]]
+|}
+The coordinates are latitude and longitude, and for each there are 2 or 3 digits for degrees, 2 digits for minutes and for some 2 digits for seconds.
+
+{{Location map+ |Antarctica |width=500 |float=left
+|caption=Locations of the reference bases (<small>Not shown: '''Macquarie (+10)''' on [[Macquarie Island]]</small>)
+ |places=
+{{Location map~ |Antarctica |lat=-64.8|long=-64.1|position=right|label=<small>'''Palmer (-3)'''</small>|label_size=100|marksize=7}}
+{{Location map~ |Antarctica |lat=-67.6|long=-68.1|position=right|label=<small>'''Rothera (-3)'''</small>|label_size=100|marksize=7}}
+{{Location map~ |Antarctica |lat=-78.4|long=106.9|position=right|label=<small>'''Vostok (+6)'''</small>|label_size=100|marksize=7}}
+{{Location map~ |Antarctica |lat=-69.0|long=39.6|position=right|label=<small>'''Syowa (+3)'''</small>|label_size=100|marksize=7}}
+{{Location map~ |Antarctica |lat=-67.6|long=62.9|position=right|label=<small>'''Mawson (+5)'''</small>|label_size=100|marksize=7}}
+{{Location map~ |Antarctica |lat=-68.6|long=77.9|position=right|label=<small>'''Davis (+7)'''</small>|label_size=100|marksize=7}}
+{{Location map~ |Antarctica |lat=-66.3|long=110.5|position=right|label=<small>'''Casey (+8)'''</small>|label_size=100|marksize=7}}
+{{Location map~ |Antarctica |lat=-66.7|long=140.0|position=right|label=<small>'''Dumont-d'Urville (+10)'''</small>|label_size=100|marksize=7}}
+{{Location map~ |Antarctica |lat=-77.8|long=166.6|position=right|label=<small>'''McMurdo (+12)'''</small>|label_size=100|marksize=7}}
+{{Location map~ |Antarctica |lat=-90|long=0|position=right|label=<small>'''South Pole (+12)'''</small>|label_size=100|marksize=7}}
+{{Location map~ |Antarctica |lat=-72.0|long=2.5|position=right|label=<small>'''Troll (0)'''</small>|label_size=100|marksize=7}}
+}}
+{{clear}}
+
+==Daylight saving time==
+For the most part, [[daylight saving time]] (DST) is not observed in Antarctica because 95 percent of the continent is located south of the [[Antarctic Circle]] and the [[midnight sun]] phenomenon renders the use of DST unnecessary, and it would further complicate communication with the claimant countries in the northern hemisphere.
+
+However, a few regions such as the [[Ross Dependency]] and, formerly, [[Palmer Land]], observe the time and use of DST of the countries they are supplied from, [[Time in New Zealand|New Zealand]] and [[Time in Chile|Chile]], respectively.<ref name="DST"/> The areas have DST during the southern summer, when there is the northern winter, including January.
+
+==References==
+{{reflist}}
+
+==External links==
+* [http://www.statoids.com/uaq.html Claims]
+* [http://www.vb-tech.co.za/Antartica/ Day-Night Cycle]
+
+{{Antarctica}}
+
+[[Category:Time in Antarctica| ]]
+[[Category:Antarctica]]
+[[Category:Antarctic culture]]
+[[Category:Time zones|Antarctica]]

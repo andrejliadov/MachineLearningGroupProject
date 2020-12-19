@@ -1,0 +1,233 @@
+{{short description|Online digital archive for preprints of scientific papers}}
+{{Use mdy dates|date=May 2016}}
+{{lowercase title}}
+{{Infobox website
+|name           = arXiv
+|logo           = ArXiv web.svg
+|url            = {{URL|https://arxiv.org/}}
+|commercial     = No
+|type           = Science
+|language       = English
+|owner          = [[Cornell University]]
+|author         = [[Paul Ginsparg]]
+|oclc           = 228652809
+|issn           = 2331-8422
+|current_status = Online
+|launch_date = {{start date and age|1991|8|14}}
+}}
+
+'''arXiv''' (pronounced "[[archive]]"—the X represents the [[Chi (letter)|Greek letter chi]] [χ])<ref name="Steele">{{cite web |url=http://ezramagazine.cornell.edu/FALL12/CoverStorySidebar2.html |title=Library-managed 'arXiv' spreads scientific advances rapidly and worldwide |work=Ezra |date=Fall 2012 |page=9 |archive-url=https://web.archive.org/web/20150111003819/http://ezramagazine.cornell.edu/FALL12/CoverStorySidebar2.html |archive-date=January 11, 2015 |url-status=live |first=Bill |last=Steele |publisher=Cornell University |location=Ithaca, New York |volume=V |issue=1 |oclc=263846378 |quote=Pronounce it 'archive'. The X represents the Greek letter [[Chi (letter)|chi]] {{bracket|{{nnbsp}}χ{{nnbsp}}}}.}}</ref> is an [[open-access repository]] of electronic [[preprint]]s (known as [[e-prints]]) approved for posting after moderation, but not [[Scholarly peer review|peer review]]. It consists of [[scientific papers]] in the fields of [[mathematics]], [[physics]], [[astronomy]], [[electrical engineering]], [[computer science]], [[quantitative biology]], [[statistics]], [[mathematical finance]] and [[economics]], which can be accessed online. In many fields of mathematics and physics, almost all scientific papers are [[self-archiving|self-archived]] on the arXiv repository before publication in a peer-reviewed journal. Begun on August 14, 1991, arXiv.org passed the half-million-article milestone on October 3, 2008,<ref>{{cite arXiv|last=Ginsparg|first=Paul |eprint=1108.2700 |title=It was twenty years ago today&nbsp;...|class= cs.DL|date=2011 }}</ref><ref>{{cite web|url=http://news.library.cornell.edu/content/online-scientific-repository-hits-milestone |title=Online Scientific Repository Hits Milestone: With 500,000 Articles, arXiv Established as Vital Library Resource |publisher=News.library.cornell.edu |date=October 3, 2008 |accessdate=July 21, 2013}}</ref> and had hit a million by the end of 2014.<ref>{{citation|title=One Million Preprints and Counting: A conversation with arXiv founder Paul Ginsparg |journal=[[The Scientist (magazine)|The Scientist]] |first=Tracy|last=Vence |date=December 29, 2014 |url=http://www.the-scientist.com/?articles.view/articleNo/41677/title/Q-A--One-Million-Preprints-and-Counting}}</ref><ref name="dddmag2015" /> By October 2016, the submission rate had grown to more than 10,000 per month.<ref name="dddmag2015" /><ref>{{cite web|url=https://arxiv.org/show_monthly_submissions |title=arXiv monthly submission rate statistics |publisher=Arxiv.org |accessdate=November 5, 2017}}</ref>
+
+== History ==
+[[File:ArXiv 1994.png|thumb|A screenshot of the arXiv taken in 1994,<ref>{{cite web|url=http://www.cs.cornell.edu/~ginsparg/physics/blurb/fig3.gif|format=GIF|title=Image|website=Cs.cornell.edu|accessdate=9 March 2019}}</ref> using the browser [[Mosaic (web browser)|NCSA Mosaic]]. At the time, [[Form (HTML)|HTML forms]] were a new technology.]]
+
+arXiv was made possible by the compact [[TeX]] file format, which allowed scientific papers to be easily transmitted over the [[Internet]] and rendered [[client-side]].<ref>{{cite journal |last1=O'Connell|first1=Heath|title=Physicists Thriving with Paperless Publishing |url=https://core.ac.uk/download/pdf/11876491.pdf |journal=High Energy Physics Libraries Webzine|volume=6|issue=6|pages=3|year=2002 |arxiv=physics/0007040 |bibcode=2000physics...7040O}}</ref> Around 1990, [[Joanne Cohn]] began emailing [[physics]] preprints to colleagues as TeX files, but the number of papers being sent soon filled mailboxes to capacity. [[Paul Ginsparg]] recognized the need for central storage, and in August 1991 he created a central [[Disciplinary repository|repository]] mailbox stored at the [[Los Alamos National Laboratory]] (LANL) which could be accessed from any computer. Additional modes of access were soon added: [[FTP]] in 1991, [[Gopher (protocol)|Gopher]] in 1992, and the [[World Wide Web]] in 1993.<ref name="dddmag2015" /><ref>{{cite web|last=Ginsparg|first=Paul|date=October 1, 2008|title=The global-village pioneers|url=https://physicsworld.com/a/the-global-village-pioneers/|access-date=October 10, 2020|work=[[Physics World]]}}</ref> The term [[e-print]] was quickly adopted to describe the articles.
+
+It began as a physics archive, called the [[LANL]] preprint archive, but soon expanded to include astronomy, mathematics, computer science, quantitative biology and, most recently, statistics. Its original [[domain name]] was {{mono|xxx.lanl.gov}}. Due to LANL's lack of interest in the rapidly expanding technology, in 2001 Ginsparg changed institutions to [[Cornell University]] and changed the name of the repository to {{mono|arXiv.org}}.<ref>{{cite journal
+ | last = Butler | first = Declan
+ | s2cid = 1527860
+ | title = Los Alamos Loses Physics Archive as Preprint Pioneer Heads East
+ | journal = Nature
+ | date = July 5, 2001
+ | pages = 3–4
+ | volume = 412 | issue = 6842
+ | url=http://www.nature.com/nature/debates/e-access/Articles/ginsparg.html
+ | doi = 10.1038/35083708
+ | pmid = 11452262
+ | bibcode = 2001Natur.412....3B
+ | doi-access = free
+ }}</ref> It is now hosted principally by Cornell, with five [[mirror website|mirrors]] around the world.<ref>{{cite web|title=arXiv mirror sites|url=https://arxiv.org/servers.html|publisher=arXiv|accessdate=April 6, 2020| archive-url= https://web.archive.org/web/20200316205130/http://arxiv.org/help/mirrors| archive-date= March 16, 2020 | url-status= live}}</ref>
+
+Its existence was one of the precipitating factors that led to the current movement in [[scientific publishing]] known as [[open access (publishing)|open access]]. [[Mathematician]]s and scientists regularly upload their papers to arXiv.org for worldwide access<ref>{{cite news |first=James |last=Glanz |title=The World of Science Becomes a Global Village; Archive Opens a New Realm of Research |url=https://www.nytimes.com/2001/05/01/science/world-science-becomes-global-village-archive-opens-new-realm-research.html |newspaper=[[The New York Times]] |date=May 1, 2001 }}</ref> and sometimes for reviews before they are published in [[peer review|peer-reviewed]] [[academic journal|journals]]. Ginsparg was awarded a [[MacArthur Fellowship]] in 2002 for his establishment of arXiv.<ref>{{cite web|author=Bill Steele|date=23 September 2002|title=Cornell professor Paul Ginsparg, science communication rebel, named a MacArthur Foundation fellow; three other alumni also receive 'genius award' fellowships|url=http://www.news.cornell.edu/releases/sept02/ginsparg-MacArthur.ws.html}}</ref>
+
+The annual budget for arXiv was approximately $826,000 for 2013 to 2017, funded jointly by Cornell University Library, the [[Simons Foundation]] (in both gift and challenge grant forms) and annual fee income from member institutions.<ref>{{cite web|url=https://confluence.cornell.edu/download/attachments/127116484/arXiv+Business+Model.pdf |title=CORNELL UNIVERSITY LIBRARY ARXIV FINANCIAL PROJECTIONS FOR 2013-2017 |date=March 28, 2012 |website=Confluence.cornell.edu |accessdate=2017-02-26}}</ref>  This model arose in 2010, when Cornell sought to broaden the financial funding of the project by asking institutions to make annual voluntary contributions based on the amount of download usage by each institution. Each member institution pledges a five-year funding commitment to support arXiv. Based on institutional usage ranking, the annual fees are set in four tiers from $1,000 to $4,400. Cornell's goal is to raise at least $504,000 per year through membership fees generated by approximately 220 institutions.<ref>{{Cite web|url=https://confluence.cornell.edu/pages/viewpage.action?pageId=340900096|title=arXiv Member Institutions (2018) - arXiv public wiki - Dashboard|website=confluence.cornell.edu|access-date=2018-04-01}}</ref>
+
+In September 2011, Cornell University Library took overall administrative and financial responsibility for arXiv's operation and development.  Ginsparg was quoted in the ''[[Chronicle of Higher Education]]'' as saying it "was supposed to be a three-hour tour, not a life sentence".<ref name="CHE 2011">{{cite news | url=http://chronicle.com/blogs/wiredcampus/the-first-free-research-sharing-site-arxiv-turns-20/32778 | title=The First Free Research-Sharing Site, arXiv, Turns 20 With an Uncertain Future | work=Chronicle of Higher Education | date=August 10, 2011 | accessdate=August 12, 2011 | author=Fischman, Joah}}</ref>  However, Ginsparg remains on the arXiv's Scientific Advisory Board and its Physics Advisory Committee.<ref>{{Cite web|title=arXiv Scientific Advisory Board {{!}} arXiv e-print repository|url=https://arxiv.org/about/people/scientific_ad_board|access-date=2020-10-10|website=arxiv.org}}</ref><ref>{{Cite web|title=About the Physics Archive {{!}} arXiv e-print repository|url=https://arxiv.org/help/physics|access-date=2020-10-10|website=arxiv.org}}</ref>
+
+== Moderation process and endorsement ==
+Although arXiv is not [[peer review]]ed, a collection of moderators for each area review the [[Electronic submission|submissions]]; they may recategorize any that are deemed off-topic,<ref name="mckinney">{{citation|last=McKinney|first=Michelle|title=arXiv.org|journal=Reference Reviews|volume=25|issue=7|year=2011|pages=35–36|doi=10.1108/09504121111168622}}</ref> or reject submissions that are not scientific papers, or sometimes for undisclosed reasons.<ref name=Merali/> The lists of moderators for many sections of arXiv are publicly available,<ref>[https://arxiv.org/corr/subjectclasses Computing Research Repository Subject Areas and Moderators]; [http://front.math.ucdavis.edu/categories/math Mathematics categories]; [https://arxiv.org/new/stat.html Statistics archive]; [https://arxiv.org/new/q-bio.html Quantitative Biology archive]; [https://arxiv.org/new/physics.html Physics archive]</ref> but moderators for most of the physics sections remain unlisted.
+
+Additionally, an "endorsement" system was introduced in 2004 as part of an effort to ensure content is relevant and of interest to current research in the specified disciplines.<ref>{{citation|title=As we may read|last=Ginsparg|first=Paul|year=2006|journal=Journal of Neuroscience|volume=26|issue=38|pages=9606–9608|doi=10.1523/JNEUROSCI.3161-06.2006|pmid=16988030|pmc=6674456}}</ref>  Under the system, for categories that use it, an author must be endorsed by an established arXiv author before being allowed to submit papers to those categories. Endorsers are not asked to review the paper for errors, but to check whether the paper is appropriate for the intended subject area.<ref name="mckinney" /> New authors from recognized academic institutions generally receive automatic endorsement, which in practice means that they do not need to deal with the endorsement system at all.  However, the endorsement system has attracted criticism for allegedly restricting scientific inquiry.<ref>{{citation|journal=International Journal of Theoretical Physics|date=July 2005|volume=44|issue=7|pages=691–692|title=Preface to the Proceedings of Quantum Structures 2002|first1=Richard|last1=Greechie|first2=Sylvia|last2=Pulmannova|first3=Karl|last3=Svozil|s2cid=121442106|doi=10.1007/s10773-005-7053-z|quote=The new endorsement system may contribute to an effective barrier, a digital divide|bibcode = 2005IJTP...44..691G }}</ref><ref>{{cite journal |last1=Josephson |first1=Brian |title=Vital resource should be open to all physicists |journal=Nature |date=23 February 2005 |volume=433 |issue=7028 |page=800 |doi=10.1038/433800a |pmid=15729314 |url=https://www.nature.com/articles/433800a |accessdate=12 August 2020|doi-access=free }}</ref>
+
+A majority of the [[e-print]]s are also submitted to [[scientific journal|journals]] for publication, but some work, including some very influential papers, remain purely as e-prints and are never published in a peer-reviewed journal.  A well-known example of the latter is an outline of a proof of [[Thurston's geometrization conjecture]], including the [[Poincaré conjecture]] as a particular case, uploaded by [[Grigori Perelman]] in November 2002.<ref>{{cite arXiv|author=Perelman, Grisha|title=The entropy formula for the Ricci flow and its geometric applications|eprint = math.DG/0211159|date=November 11, 2002}}</ref> Perelman appears content to forgo the traditional peer-reviewed journal process, stating: "If anybody is interested in my way of solving the problem, it's all there {{bracket|on the arXiv}}{{spnd}}let them go and read about it".<ref>{{cite newspaper |first1=Nadejda |last1=Lobastova |first2=Michael |last2=Hirst |url=http://www.smh.com.au/news/world/maths-genius-living-in-poverty/2006/08/20/1156012411120.html |title=Maths genius living in poverty |newspaper=[[Sydney Morning Herald]] |date=August 21, 2006}}</ref> Despite this non-traditional method of publication, other mathematicians recognized this work by offering the [[Fields Medal]] and [[Millennium Prize Problems|Clay Mathematics Millennium Prizes]] to Perelman, both of which he refused.<ref>{{citation|url=https://www.washingtonpost.com/wp-dyn/content/article/2010/07/01/AR2010070106247.html|title=Russian mathematician wins $1 million prize, but he appears to be happy with $0|newspaper=Washington Post|date=July 2, 2010|first=Marc|last=Kaufman}}</ref>
+
+== Submission formats ==
+
+Papers can be submitted in any of several formats, including [[LaTeX]], and [[PDF]] printed from a [[word processor]] other than TeX or LaTeX. The [[Electronic submission|submission]] is rejected by the arXiv software if generating the final [[PDF]] file fails, if any image file is too large, or if the total size of the submission is too large.  arXiv now allows one to store and modify an incomplete submission, and only finalize the submission when ready. The time stamp on the article is set when the submission is finalized.
+
+== Access ==
+The standard access route is through the arXiv.org website or one of several mirrors. Several other interfaces and access routes have also been created by other un-associated organisations.
+
+These include the [[University of California, Davis]]'s ''front'', a [[web portal]] that offers additional search functions and a more self-explanatory interface for arXiv.org, and is referred to by some mathematicians as (the) Front.<ref>{{cite web|url=http://front.math.ucdavis.edu/ |title=Front for the arXiv |publisher=Front.math.ucdavis.edu |date=September 10, 2007 |accessdate=July 21, 2013}}</ref> A similar function used to be offered by eprintweb.org, launched in September 2006 by the [[Institute of Physics]], and was switched off on June 30, 2014. [[Carnegie Mellon University|Carnegie Mellon]] provides Table<sup>arXiv</sup>,<ref>{{cite web|url=http://boston.lti.cs.cmu.edu/eager/arxiv/ |title=Table<sup>arXiv</sup>  |accessdate=September 15, 2015}}</ref> a search engine for tables extracted from arXiv publications.  [[Google Scholar]] and [[Microsoft Academic]] can also be used to search for items in arXiv.<ref>{{cite web|author=Andy Stevens (andy.stevens@iop.org) |url=http://eprintweb.org |title=eprintweb |publisher=eprintweb |accessdate=July 21, 2013}}</ref>
+
+Metadata for arXiv is made available through [[OAI-PMH]], the standard for [[open access repositories]].<ref>{{cite web|accessdate=2020-04-25|title=Open Archives Initiative (OAI) |url=https://arxiv.org/help/oa/index|website=arxiv.org}}</ref> Content is therefore indexed in all major consumers of such data, such as [[BASE (search engine)|BASE]], [[COnnecting REpositories|CORE]] and [[Unpaywall]]. As of 2020, the Unpaywall dump links over 500,000 arxiv URLs as the [[open access]] version of a work found in [[CrossRef]] data from the publishers, making arXiv a top 10 global host of [[green open access]].
+
+Finally, researchers can select sub-fields and receive daily e-mailings or [[RSS feed]]s of all submissions in them.
+
+== Copyright status of files ==
+Files on arXiv can have a number of different copyright statuses:<ref>{{cite web|url=https://arxiv.org/help/license |title=arXiv License Information |publisher=Arxiv.org |accessdate=July 21, 2013}}</ref>
+#Some are [[public domain]], in which case they will have a statement saying so.
+#Some are available under either the [[Creative Commons]] 4.0 [[Creative Commons licenses|Attribution-ShareAlike license]] or the Creative Commons 4.0 [[Creative Commons licenses|Attribution-Noncommercial-ShareAlike license]].
+#Some are copyright to the publisher, but the author has the right to distribute them and has given arXiv a non-exclusive irrevocable license to distribute them.
+#Most are copyright to the author, and arXiv has only a non-exclusive irrevocable license to distribute them.
+
+== Controversy ==
+While arXiv does contain some dubious e-prints, such as those claiming to refute famous theorems or proving famous conjectures such as [[Fermat's Last Theorem]] using only high-school mathematics, a 2002 article which appeared in ''[[Notices of the American Mathematical Society]]'' described those as "surprisingly rare".<ref>{{cite journal
+ | last = Jackson | first = Allyn
+ | title = From Preprints to E-prints: The Rise of Electronic Preprint Servers in Mathematics
+ | journal = Notices of the American Mathematical Society
+ | volume = 49
+ | issue = 1
+ | date = 2002
+ | pages = 23–32
+ | url = http://www.ams.org/notices/200201/fea-preprints.pdf
+ }}</ref> arXiv generally re-classifies these works, e.g. in "General mathematics", rather than deleting them;<ref>{{cite web|url=http://front.math.ucdavis.edu/ifaq#7.1 |title=Front: (In)frequently asked questions |publisher=Front.math.ucdavis.edu |accessdate=July 21, 2013}}</ref> however, some authors have voiced concern over the lack of transparency in the arXiv screening process.<ref name=Merali>{{cite journal |url=http://www.nature.com/news/arxiv-rejections-lead-to-spat-over-screening-process-1.19267 |title=ArXiv rejections lead to spat over screening process |first1=Zeeya |last1=Merali |s2cid=189061969 |date=29 January 2016 |journal=[[Nature (journal)|Nature]] |access-date=December 14, 2017 |doi=10.1038/nature.2016.19267 }}</ref>
+
+== See also ==
+* [[List of academic preprint servers]]
+* [[List of academic databases and search engines]]
+* [[List of academic journals by preprint policy]]
+
+==Notes==
+{{Reflist|refs=
+<ref name="dddmag2015">{{cite news | title=In the News: Open Access Journals | author=Staff | date=January 13, 2015 | work=[[Drug Discovery & Development]] | url=http://www.dddmag.com/articles/2015/01/news-open-access-journals }}</ref>
+}}
+
+== References ==
+{{Refbegin}}
+* {{cite journal
+ | last = Butler | first = Declan
+ | s2cid = 4374168
+ | date = 2003
+ | title = Biologists Join Physics Preprint Club
+ | journal = [[Nature (journal)|Nature]]
+ | volume = 425 | issue = 6958 | page = 548
+ | doi = 10.1038/425548b
+ | pmid = 14534551
+|bibcode = 2003Natur.425..548B | doi-access = free
+ }}
+* {{cite journal
+ | last = Choi | first = Charles Q.
+ | date = 2003
+ | title = Biology's New Online Archive
+ | journal = [[The Scientist (magazine)|The Scientist]]
+ | url = http://www.biomedcentral.com/news/20030930/03/
+ }}
+* {{cite journal
+ | last = Giles | first = Jim
+ | s2cid = 29003994
+ | date = 2003
+ | title = Preprint Server Seeks Way to Halt Plagiarists
+ | journal = [[Nature (journal)|Nature]]
+ | volume = 426 | issue = 6962  | page = 7
+ | pmid = 14603280
+ | doi = 10.1038/426007a
+| bibcode = 2003Natur.426Q...7G
+ | doi-access = free
+ }}
+* {{cite journal
+ | last = Ginsparg
+ | first = Paul
+ | date = 1997
+ | title = Winners and Losers in the Global Research Village
+ | url = https://www.cs.cornell.edu/~ginsparg/physics/blurb/pg96unesco.html
+ | journal = The Serials Librarian
+ | volume = 30
+ | issue = 3–4
+ | pages = 83–95
+ | doi = 10.1300/J123v30n03_13
+ | doi-access = free
+ }}
+* {{cite journal
+ | last = Halpern | first = Joseph Y.
+ | date = 1998
+ | title = A Computing Research Repository
+ | journal = [[D-Lib Magazine]]
+ | volume = 4 | issue = 11 | doi = 10.1045/november98-halpern
+| doi-access = free}}
+* {{cite journal
+ | last = Halpern | first =  Joseph Y.
+ | s2cid = 5453868
+ | date = 2000
+ | title = CoRR: A Computing Research Repository
+ | journal = [[Journal of Computer Documentation]]
+ | volume = 24 | issue = 2 | pages = 41–48
+ | arxiv = cs.DL/0005003
+ | doi=10.1145/337271.337274
+ | bibcode = 2000cs........5003H
+ }}
+* {{cite journal
+ | last = Luce | first = Richard E.
+ | date = 2001
+ | title = E-Prints Intersect the Digital Library: Inside the Los Alamos arXiv
+ | url = http://www.istl.org/01-winter/article3.html
+ | journal = Issues in Science and Technology Librarianship
+ | issue = 29
+ | doi =10.5062/F44B2Z95
+}}
+* {{cite journal
+ |last=McKiernan 
+ |first=Gerry 
+ |date=2000 
+ |title=arXiv.org: The Los Alamos National Laboratory E-Print Server 
+ |url=http://www.public.iastate.edu/~gerrymck/arXiv.org.pdf 
+ |journal=[[International Journal on Grey Literature]] 
+ |volume=1 
+ |issue=3 
+ |pages=127–138 
+ |doi=10.1108/14666180010345564 
+ |url-status=dead 
+ |archive-url=https://web.archive.org/web/20050505044157/http://www.public.iastate.edu/~gerrymck/arXiv.org.pdf 
+ |archive-date=May 5, 2005 
+}}
+* {{cite journal
+ | last = Pinfield | first = Stephen
+ | date = 2001
+ | title = How Do Physicists Use an E-Print Archive? Implications for Institutional E-Print Services
+ | journal = [[D-Lib Magazine]]
+ | volume = 7 | issue = 12 | doi =  10.1045/december2001-pinfield
+ | doi-access = free
+ }}
+* {{cite journal
+ | last = Quigley | first = Brian
+ | date = 2000
+ | title = Physics Databases and the Los Alamos e-Print Archive
+ | url = http://www.allbusiness.com/technology/internet-search-engines/1149636-1.html
+ | journal = [[EContent]]
+ | volume = 23 | issue = 5 | pages = 22–26
+ }}
+* {{cite journal
+ | last = Taubes | first = Gary
+ | date = 1993
+ | title = Publication by Electronic Mail Takes Physics by Storm
+ | journal = [[Science (journal)|Science]]
+ | volume = 259 | issue = 5099 | pages = 1246–1248
+ | bibcode = 1993Sci...259.1246T
+ | doi = 10.1126/science.259.5099.1246
+ | pmid = 17732237
+ }}
+* {{cite arXiv
+ | last = Warner | first = Simeon
+ | date = 2001
+ | title = Open Archives Initiative Protocol Development and Implementation at arXiv
+| eprint = cs/0101027
+}}
+* {{cite journal
+ | date = 2004
+ | title = What Is q-bio?
+ | journal = Open Access Now
+ }}
+{{Refend}}
+
+== External links ==
+{{Commons category|ArXiv.org}}
+* {{official website|https://arxiv.org}}
+{{Cornell}}
+
+[[Category:Eprint archives]]
+[[Category:Open-access archives]]
+[[Category:Open science]]
+[[Category:Physics websites]]
+[[Category:American digital libraries]]
+[[Category:Internet properties established in 1991]]
+[[Category:1991 establishments in New Mexico]]

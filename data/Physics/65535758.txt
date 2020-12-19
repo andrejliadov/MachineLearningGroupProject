@@ -1,0 +1,142 @@
+'''Mechanothermodynamics (MTD)''' is a section of [[physics]] created at the junction of [[mechanics]] and [[thermodynamics]].<ref name="MTD-2">Sosnovskiy, L. A., Sherbakov, S. S. Mechanothermodynamics. – Springer, 2016. – 155 p.</ref><ref name="Behavior">Sosnovskiy, L. A., Sherbakov, S. S. Mechanothermodynamical System and Its Behavior // Continuum Mechanics and Thermodynamics. – 2012. – № 24. – Р. 239–256.</ref><ref name="MTD-1">Sosnovskiy, L. А., Sherbakov, S. S. Principles of Mechanothermodynamics. – Gomel : BelSUT, 2013. – 150 p. (in Russian).</ref><ref name="Competitors">Sosnovskiy, L. A. Mechanothermodynamics (about combining great competitors: 1850-2015) // Mechanics of machines, mechanisms and materials. – 2016. – № 4 (37). – P. 19–41. (in Russian).</ref><ref name="Entropy">Sosnovskiy, L. A., Sherbakov, S. S. Mechanothermodynamic Entropy and Analysis of Damage State of Complex Systems // Entropy. – 2016. – Mode of Access : http://www.mdpi.com/1099-4300/18/7/268/htm. – Date of Access : 20.07.2016.</ref>, in which [[Irreversible process|irreversible]] [[Phase transformation|transformations]] of [[State of matter|states]] and consequently, the properties and functions of mechanothermodynamic systems (MTD-systems) under the influence of forces (fields) of different nature – mechanical, thermodynamic, etc. The MTD-system is a thermodynamic medium with discrete volumes of solid moving and deformable bodies (objects, elements, particles, etc.) distributed in it. Bodies can interact both with each other and with the environment.
+
+== Etymology ==
+The term mechanothermodynamics is composed of two English words: mechanics and thermodynamics. Proposed in.<ref name="Risk">Sosnovskiy, L. A. L-risk (mechanothermodynamics of irreversible damages). – Gomel : BelSUT, 2004. – 317 p. (in Russian).</ref>
+
+== History ==
+Each scientific discipline has its own subject for study. Figure 1 shows a simplified diagram of the development of some sections of mechanics: from simple to complex. The history of the development of the indicated in Figure 1 and other sections of mechanics is described in the literature (see, for example<ref name="Competitors"/><ref name="Innovations">Sosnovskiy, L. A., Sherbakov, S. S. On the possibility of constructing mechanothermodynamics // Science and innovations. – 2008. – № 2 (60). – P. 24–29. (in Russian).</ref><ref name="Surprises">Sosnovskiy, L. A., Sherbakov, S. S. Surprises of Tribo-Fatigue. – Magic Book, 2009. – 200 p.</ref><ref>Buchwald, Jed Z. and Robert Fox, eds. The Oxford Handbook of the History of Physics. 2014. – 976 p.</ref><ref>Timoshenko, S. P. History of the Science of Strength of Materials. 2nd ed. – M. : URSS, 2006. – 536 p. (in Russian).</ref><ref>Dowson, Duncan. History of Tribology. – John Wiley & Sons, 1999. – 768 p.</ref><ref>Suresh, S. Fatigue of Materials. – Cambridge University Press, 2004.</ref>).
+
+[[File:Mtd_r_1.jpg|thumb|<div style="text-align: center;">Figure 1 – Simplified hierarchical structure of some objects studied in mechanics: from simple to complex</div>|alt=]]
+
+Attempts to combine mechanics and thermodynamics were unsuccessful for a long time. This is due not so much to the complexity of the problem as to the cardinal differences in the methodology of these two branches of physics.<ref name="Kondepudi">Kondepudi, D., Prigogine, I. Modern Thermodynamics (From Heat Engines to Dissipative Structures). – John Wiley & Sons, 1998. – 486 p.</ref><ref name="Taylor">John R. Taylor. Classical Mechanics. 2005. – 786 p.</ref> So, if thermodynamic processes are irreversible, then the laws of dynamics, on the contrary, are reversible. This means, for example, that thermodynamics poses and solves the problem of describing the evolution of systems from the past to the future, and in the equations of mechanics, replacing the sign (–''t'') by (+''t'') gives the same result, i.e. mechanics does not distinguish between past and future.<ref>Nicolis, G., Prigogine, I. Exploring Complexity (An Introduction). – New York : Freeman & Company, 2003.</ref> That is why from the standpoint of mechanics it is not possible to develop a theory of the evolution of the material world,<ref name="Taylor"/> while from the standpoint of thermodynamics it is formulated in its most general form: the [[entropy]] of the [[Universe]] tends to a maximum.<ref>Clausis, R. Mechanical Theory of Heat. – London : John van Voorst, 1867.</ref> On the other hand, mechanics can quantitatively describe the laws governing the motion of any bodies, while in thermodynamics such problems are not even posed.
+
+Since the concept of irreversibility in thermodynamics turned out to be fundamental,<ref>Peter V. Coveney. The Second Law of Thermodynamics: Entropy, Irreversibility and Dynamics // Nature. – 1988. – Vol. 333. – P. 409–415.</ref> it had to be developed in mechanics.<ref>Handbook of Damage Mechanics. – Springer, 2015.</ref><ref name="MIUP">Sosnovskiy, L. A. Mechanics of wear-fatigue damage. – Gomel : BelSUT, 2007. – 434 p. (in Russian).</ref><ref>Kachanov, L. M. Introduction to continuum damage mechanics. – Springer, 1986. – 135 p.</ref><ref>Rabotnov, Yu. N.  Elements of Hereditary Solid Mechanics. – Moscow : Mir Publishers, 1980. – 387 p.</ref> In [[tribo-fatigue]],<ref name="MTS">Sherbakov, S. S., Sosnovskiy, L. A. Mechanics of tribo-fatigue systems. – Minsk : BSU, 2010. – 407 р. (in Russian).</ref><ref name="Chinese">摩擦疲劳学 磨损 – 疲劳损伤及其预测. L. A. 索斯洛夫斯基著, 高万振译 – 中国矿业大学出版社, 2013. – 324 p. (in Chinese).</ref><ref name="Lectures">Sosnovskiy, L. А., Zhuravkov, М. А., Sherbakov, S. S. Fundamental and applied tasks of Tribo-Fatigue: lectures. – Minsk : BSU, 2010. – 488 p. (in Russian).</ref> created at the junction of [[tribology]] and [[fatigue strength]], the concept of irreversible damage (ω<sub>Σ</sub>) of tribo-fatigue systems and their elements is proposed. Thus, with the simultaneous action of contact (during friction) and cyclic volumetric (tensile-compression, bending, torsion, etc.) loads, complex wear-fatigue damages are formed, the evolution of which leads to the achievement of the system (or its elements) of various limiting states (fatigue breakage, wear limit, critical density of chipping pits, etc.). By analogy with thermodynamics, the concept of tribo-fatigue entropy is proposed in tribo-fatigue.<ref name="Academy">Sosnovskiy, L. A. On one type of entropy as a measure of energy absorption spent on damage production in a mechanothermodynamic system // Reports of the National Academy of Sciences of Belarus. – 2007. – V. 51. – № 6. – P. 100–104. (in Russian).</ref> But if the thermodynamic entropy ''S''<sub>''TD''</sub> is a characteristic of energy dissipation,<ref name="Kondepudi"/> then the tribo-fatigue entropy ''S''<sub>''TF''</sub> (ω<sub>Σ</sub>(''U''<sup>''eff''</sup>)), on the contrary, is a characteristic of energy absorption (''U''<sub>Σ</sub><sup>''eff''</sup>).<ref name="Academy"/> And MTD-entropy is formed<ref name="Entropy"/><ref name="Branch">Sosnovskiy, L. A., Sherbakov, S. S. On the Development of Mechanothermodynamics as a New Branch of Physics // Entropy. – 2019. – №21. – С.1–49.</ref> as a combination of two components: ''S''<sub>''MTD''</sub>(''S''<sub>''TD''</sub>, ''S''<sub>''TF''</sub>).
+
+Thus, tribo-fatigue became a methodological intermediary between mechanics and thermodynamics (Figure 2), which led to the creation of a new branch of physics. And directly the unification of mechanics and thermodynamics is interpreted in Figure 2 as unrealizable, and therefore the weak connection between them is shown by vertical lines, which are formed by points.<ref name="MTD-2"/><ref name="Competitors"/><ref name="Branch"/>
+
+[[File:mtd_r_2-0.jpg|thumb|<div style="text-align: center;">Figure 2 – Mechanothermodynamics as a branch of Physics</div>|alt=]]
+
+== Principles of mechanothermodynamics ==
+To date, four principles of MTD have been formulated,<ref name="MTD-2"/><ref name="MTD-1"/><ref name="Competitors"/> and their analysis and development have yielded a number of interdisciplinary and transdisciplinary results.<ref name="MTD-2"/><ref name="Behavior"/><ref name="MTD-1"/><ref name="Competitors"/><ref name="Entropy"/><ref name="Innovations"/><ref name="Surprises"/><ref name="Risk"/><ref name="Branch"/> Some of them are described below.
+
+'''The first principle of MTD:''' the damageability of everything that exists has no conceivable boundaries: ω<sub>Σ</sub>(''U''<sup>''eff''</sup>)→∞.<ref name="MTD-2"/><ref name="MTD-1"/> This principle states that for the evolution of any system, a unidirectional process of its irreversible damage (ω<sub>Σ</sub>) and, ultimately, decomposition into infinitely small particles is inevitable. In essence, this is tantamount to the idea that damageability is a fundamental property and an obligatory function of all systems, including living and intelligent systems<ref name="Behavior"/><ref name="Competitors"/><ref name="Evolution">Sosnovskiy, L. А., Sherbakov, S. S., Lazarevich, А. А. Fundamentals of the theory of the evolution of inorganic and organic systems, the number of living and reasonable // National philosophy in a global world : proc. of the First Belarusian Congress of Philosophy, Minsk, Oct. 18–20, 2017. – Minsk : Belarusian science, 2018. – P. 155–178. (in Russian).</ref>
+
+'''The second principle of MTD:''' the fluxes of effective energy ''U''<sub>ω</sub><sup>''eff''</sup> (entropy ''S''<sub>''i''</sub>), caused by sources of different nature, are non-additive and interact with each other in time.<ref name="MTD-2"/><ref name="Branch"/><ref>Frolov, K. V., Makhutov, N. A., Sosnovskiy, L. A. Theory of interaction of irreversible damage // Proceedings of the V International Symposium on Tribo-Fatigue (ISTF 2005) / Ed. by A. P. Khomenko. – Irkutsk–Bratsk, 2005. – P. 10–28. (in Russian).</ref><ref>Zhuravkov, M. A., Sherbakov, S. S., Makhutov, N. A., Sosnovskiy, L. A. On the methodology of phenomenological analysis in mechanics  // Theoretical and Applied Mechanics. – 2014. – V. 31. – P. 3–10. (in Russian).</ref> The principle indicates the driving force and the main reason for the emergence and development of the internal damageability of the MTD-system – these are dialectic Λ-interactions of the effective energy components in the absorbing medium. Such interaction functions should take three classes of values (Λ>1, Λ<1, Λ=1) in order to reflect not only unity and struggle, but also the direction of the processes of physical hardening (Λ<1)–softening (Λ>1) in the system. Since hardening is always finite, while the intensity of softening can be infinitely high, the interaction of such processes inevitably leads the MTD-system to critical and limiting damage states<ref name="MTD-2"/><ref name="Entropy"/><ref name="Branch"/>
+
+'''The third principle of MTD:''' the development of processes of irreversible damage is possible and is realized with a certain probability ''P''>0, when a finite region with a nonzero level of effective energy (internal entropy) appears in the MTD-system – a dangerous volume ''V''<sub>''P''γ</sub>(''U''<sub>ω</sub><sup>''eff''</sup>(''S''<sub>''i''</sub>))>0.<ref name="Behavior"/><ref name="Competitors"/><ref name="Branch"/> If ''V''<sub>''P''γ</sub>=0, the MTD-system is stable and its damageability evolution is impossible.
+
+This principle makes it possible to establish the absolute value of the scale (dimensions) of the damage space of the MTD-system. In the general case, many different dangerous volumes are found in it, since their number is due to many loads of a different nature (mechanical, thermodynamic, electrochemical, etc.) and, consequently, many and different criteria for the transition to a dangerous state.<ref name="MTS"/><ref name="Branch"/> Separate dangerous volumes can have different sizes and, being combined, interact with each other when loads and / or time changes.<ref name="MIUP"/> The scale of damage to the MTD-system fully characterizes the danger (or risk) of its functioning.<ref name="Risk"/> Achievement of the critical value of the dangerous volume can generate a flow of nonstationarities in the system, for example, vibration, beatings, the [[troppy effect]].<ref>Sosnovskiy, L. A., Sherbakov, S. S. Vibro-Impact in Rolling Contact // Journal of Sound and Vibration. – 2007. – № 308. – P. 489–503.</ref><ref>Sosnovskiy, L. A.,  Sherbakov, S. S. Troppy Phenomenon (CM104). – Proceedings of 7th International Conference on Contact Mechanics and Wear of Rail / Wheel Systems (Brisbane, Australia, Sept. 24–27, 2006). – Brisbane. – 2006. – V. 1. – P. 115–125.</ref>
+
+'''The fourth principle of MTD:''' motion generates information in the MTD-system if its damage index is nonzero (ω<sub>''j''</sub>>0); information turns out to be positive (+Δ''I'') when the system is strengthened, or negative (–Δ''I'') when it is weakened. The relationship between movement, damage and information is given by reciprocity relations.<ref name="Surprises"/><ref>Sosnovskiy, L. A. On one method of constructing the relationship of movement, information and damage in a mechanothermodynamic system // Mechanics of machines, mechanisms and materials. – 2011. – № 4 (17). – P. 87–90. (in Russian).</ref><ref name="Dialectics">Sosnovskiy, L. A. Tribo-Fatigue: the dialectics of life. – Ed. 2nd. – Gomel : BelSUT, 1999. – 116 p. (in Russian).</ref>
+
+This principle establishes that the sources of information in [[Nature]] are [[matter]] and its various damages during movement.<ref name="Dialectics"/> External forces and internal interactions are the causes of movement and damage to material bodies and any systems that consist of them. Their long-term action determines the corresponding accumulation of information. An abrupt growth of information is possible at critical points of development, when the amount of accumulated information becomes critical. Any leap of information means a change in its quality.<ref name="Evolution"/>
+
+== Evolution of systems ==
+Based on the first and second principles of MTD, the evolution of systems is described in two ways: either traditionally, using the concept of entropy, or in terms of damage states.<ref name="Evolution"/>
+
+The entropy approach to describing the evolution of systems leads to the law of increasing entropy, written in the simplest analytical form<ref name="Competitors"/><ref name="Entropy"/>
+
+[[File:Mtd_f_1.jpg|400px|center|thumb|]]
+
+Here, the subscript (''TD'') means thermodynamic, the subscript (''TF'') means tribo-fatigue entropy, and the subscript (''MTD'') means mechanothermodynamic entropy.
+
+Analysis of the evolution of systems in accordance with the law of increasing entropy is shown in Figure 3.
+
+[[File:Mtd_r_2.jpg|thumb|<div style="text-align: center;">Figure 3 – Evolution of thermodynamic (''S''<sub>''TD''</sub>) or mechanothermodynamic (''S''<sub>''TD''</sub> ↔ ''S''<sub>''TF''</sub>) state of the system (''А''<sub>1</sub>, ''А''<sub>2</sub>): a – oscillatory and asymptotic converging processes; b – oscillatory and asymptotic divergent processes</div>|alt=]]
+
+According to Figure 3, thermodynamic (''S''<sub>''TD''</sub>) entropy tends to a maximum – for both converging (divergence div''F''(•)<0) and diverging (div''F''(•)>0) processes of motion of points (''A''<sub>1</sub>, ''A''<sub>2</sub>) of the system. And mechanothermodynamic entropy (''S''<sub>''MTD''</sub>) does not have such a pattern (other things being the same), since it obeys the law of increase.
+
+Taking the first principle of MTD for the analysis of evolution, the law of a steady increase in the damageability of systems is written in the following form
+
+[[File:Mtd_f_2.jpg|300px|center|thumb|]]
+
+The law states that the evolution of any system is characterized and inevitable by a sequential process of its irreversible damage (ω<sub>Σ</sub>) and, ultimately, decomposition into an infinitely large number of small (determined by size ''d''<sub>ω</sub><sup>*</sup>) components (fragments, atoms, elementary particles, etc.). In essence, this is tantamount to the recognition of the thesis about the endlessness of evolution, if we take into account that the products of the decay of any system become the building material for new systems. Thus, regardless of the conditions and characteristics of the existence of specific systems, the source (beginning) and the end of them are the same – this is matter. Therefore, matter is one past, present and future of everything. In other words, our Universe is indestructible, since it is material and evolves in terms of damage. This corresponds to the philosophical notion that matter and motion are eternal, and the MTD notion that damageability is a fundamental property and an obligatory function of any systems and objects that make up them.
+
+The complex of irreversible damage (ω<sub>Σ</sub>) is determined by the effective (absorbed in the system) energy (''U''<sub>Σ</sub><sup>''eff''</sup>) due to loads of any nature:
+
+[[File:Mtd_f_3.jpg|400px|center|thumb|]]
+
+Here, the indices ''n'' and τ indicate normal and shear mechanical loads, ''T'' and ''Ch'' – for thermal and electrochemical loads that generate the corresponding energy flows, and ''U''<sub>0</sub> is the activation energy of a given substance.<ref>Zhurkov, S. N. Dilaton mechanism of solid strength  // Physics of strength and plasticity. – L.: Nauka, 1986. – P. 5–11. (in Russian).</ref> The value of ''U''<sub>0</sub> approximately coincides with the heat of sublimation for metals and crystals with ionic bonds, as well as the energy of thermal destruction for polymers<ref>Gabar, I. G. Thermoactivation analysis of the destruction of OCK- and GCK-metals and the concept of the relationship between the parameters of the fatigue curve // Strength of materials. – 1989. – № 11. – P. 61–64. (in Russian).</ref>
+
+Thus, the complex of irreversible damage ω<sub>Σ</sub> is considered as having an energy content.
+
+A quantitative analysis of the damageability of systems is given in Table 1.<ref name="Behavior"/><ref name="Competitors"/><ref name="Evolution"/>
+
+[[File:Mtd_t_1.jpg|400px|center|thumb|]]
+
+As can be seen, in quantitative terms, the analysis of changes in the states of systems by damage is more informative than, for example, the study of their energy or entropy states, since any damage is real, while the material carriers of energy or entropy are unknown or completely absent.<ref>Feynman, R. Feynman’s Lectures on Physics. – Moscow : Mir, 1963 (in Russian).</ref> However, the use of the fundamental concepts of energy and entropy is very effective in science, since they underlie many physical laws, for example, universal conservation laws. In this regard, the analysis of the energy and entropy states of systems turns out to be undoubtedly fruitful.
+
+== Λ-interactions ==
+The interaction rule of irreversible damage caused by loads of different nature is written as follows
+
+[[File:Mtd_f_4.jpg|400px|center|thumb|]]
+
+Similarly, the rule for the interaction of entropy components
+
+[[File:Mtd_f_5.jpg|300px|center|thumb|]]
+
+The methods for determining the parameters Λ are described, for example, in.<ref name="MTD-1"/><ref name="Branch"/>
+
+These rules allow solving problems of analysis and synthesis, for example, damage in an MTD-system. Analysis: the whole (ω<sub>Σ</sub>) is broken down into discrete measures of damage, the study of which is useful under appropriate operating conditions. Synthesis: knowing the individual measures of damage, an assessment of the complex (ω<sub>Σ</sub>) damage of the MTD-system is given. Synthesis is more important than analysis: who knows the whole, he knows everything (Aristotle). Thus, it is established that for Λ>1 the system spontaneously softens, for Λ<1 the system spontaneously strengthens, and for Λ=1 it turns out to be stable. Knowledge of these conditions opens the way to managing the reliability of an MTD-system under certain operating conditions.<ref name="Competitors"/><ref name="Branch"/>
+
+== Combined spatial stress state ==
+The design diagram of the simplest MTD-system is shown in Figure 4.
+
+[[File:Mtd_r_3.jpg|thumb|<div style="text-align: center;">Figure 4 – Scheme of the elementary MTD-system</div>|alt=]]
+
+The mechanical and mathematical model of the combined stress state has the form
+
+[[File:Mtd_f_6.jpg|250px|center|thumb|]]
+
+where σ<sub>''ij''</sub><sup>(''V'')</sup>=σ<sub>''ij''</sub>(''M'', ''N'', ''Q''), and the indices ''V'', ''W'' and ''T'' correspond to volumetric, contact and thermodynamic loads; ''M'', ''N'', ''Q'' – internal moments, longitudinal and transverse forces (see Figure 4).
+
+The model makes it possible to analyze not only the level (σ<sub>''ij''</sub>) of the combined stress state in the MTD-system, but also the influence of any of the acting loads on the change in the stress state of its elements (such as, for example, direct and back effects in tribo-fatigue <ref name="MTS"/><ref name="Chinese"/><ref name="Lectures"/>).
+
+== Condition of volumetric damage ==
+In accordance with the third principle of MTD, the mechanical-mathematical model of volumetric damage has the form
+
+[[File:Mtd_f_7.jpg|400px|center|thumb|]]
+
+If ''V''<sub>''P''γ</sub> = 0, the damage evolution of the object is impossible. Here ''V''<sub>''P''γ</sub> < ''V'' is the absolute value (measure) of the spatial damage of the MTD-system (''V'' is its working (geometric) volume). Calculation methods and classification of dangerous volumes (''V''<sub>''P''γ</sub>) for typical material objects (deformable solids) in various conditions have been developed (see, for example<ref name="MTS"/><ref name="Branch"/>).
+
+In the general case, a set of {''V''<sub>''P''γ</sub>} dangerous volumes is found in the system, since their number is due to many loads of a different nature (mechanical, thermodynamic, electrochemical, etc.) and, consequently, many and different criteria for the transition to a dangerous state. Individual dangerous volumes can be of any size and, being combined, dialectically interact with each other when the loads and / or time change. In this regard, the patterns of evolution of organic and inorganic systems can be studied at the appropriate scale levels.
+
+A particular example of the implementation of multiple damageability of a deformable system is given in Figure 5: a number of dangerous volumes are visualized on the graphs.
+
+[[File:Mtd_r_4.jpg|thumb|<div style="text-align: center;">Figure 5 – Sections of dangerous volumes ''V''<sub>''ij''</sub> in the roller / shaft system</div>|alt=]]
+
+== Multi-criteria limiting state ==
+In accordance with the third principle of MTD, the physical and mathematical model of the multicriteria limiting state in terms of relative damage has the form
+
+[[File:Mtd_f_8.jpg|400px|center|thumb|]]
+
+Based on this model, a particular formula was obtained for the temperature dependence of the limiting stresses
+
+[[File:Mtd_f_9.jpg|400px|center|thumb|]]
+
+Three criteria of condition are summarized here: ''T'', σ<sub>''u''</sub>, σ<sub>−1</sub>. Experimental verification of this formula was made based on the results of more than 600 tests and is given in Figure 6.
+
+[[File:Mtd_r_5.jpg|thumb|<div style="text-align: center;">Figure 6 – Experimentally substantiated MTD-function of critical damageability (tensile strength, endurance limits) states for metals and polymers (indicated by points of different configuration)</div>|alt=]]
+
+A feature of the predictive equation is that the temperature dependence of ultimate stresses is adequately described by a single equation in the temperature range from 3K to 0.8''T''<sub>''S''</sub>, where ''T''<sub>''S''</sub> is the melting point (in Figure 6). According to this equation, the ultimate stress increases in proportion to the complex parameter ''C''<sub>''T''</sub>, depending on the test conditions for samples of different sizes (from 0.5 to 16 mm in Figure 6).
+
+Intervals I, II, III, IV correspond to the properties of low-strength, strong, high-strength and ultra-high-strength materials and their states.
+
+== Comprehensive calculation of MTD-systems ==
+The calculation scheme for MTD-systems is shown in Figure 7. According to this figure, when designing MTD-systems, it is taken into account: design and technology (''V''<sub>''P''γ</sub>/''V''<sub>0</sub>, ''S''<sub>''P''γ</sub>/''S''<sub>0</sub>, Θ<sub>''tech''</sub>/Θ<sub>''n''</sub>), materials and time (''m''<sub>''j''</sub>, ''j''=1, 2,…, ''t''), damage (from contact load ω<sub>τ</sub>, from cyclic load ω<sub>σ</sub>, from thermal load ω<sub>''T''</sub>, from electrochemical load ω<sub>''ch''</sub>), conditions of damage interaction (Λ<sub>σ/τ</sub>, Λ<sub>''T''\''M''</sub>, ''D''<sub>σ,τ,''T''</sub>).
+
+[[File:Mtd_r_6.jpg|thumb|<div style="text-align: center;">Figure 7 – Main channels of MTD-system resource management</div>|alt=]]
+
+In the literature (see below) you can find a detailed description of the above, as well as many other results of research in the field of MTD.
+
+== Relationship with related scientific and technical disciplines ==
+Several scientific and technical disciplines shown in the Figure 8, on the one hand, the sources of mechanothermodynamics, its scientific basis. On the other hand, particular solutions of mechanothermodynamics are obtained and can effectively use related disciplines. Specific examples are given in the specified literature.<ref name="Branch"/><ref name="Behavior"/><ref name="MTD-2"/><ref name="Competitors"/> Mutual enrichment is a modern trend in the development of sciences.
+
+[[File:Mtd_r_7.jpg|thumb|<div style="text-align: center;">Figure 8 – Dialectic Λ-interactions</div>|alt=]]
+
+== References ==
+{{Reflist}}
+
+[[Category:Mechanics]]
+[[Category:Subfields of physics]]
+[[Category:Thermodynamics]]

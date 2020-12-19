@@ -1,0 +1,81 @@
+{{short description|A theoretical electronic band structure model in which the potential is periodic and weak}}
+{{Electronic structure methods}}
+The '''empty lattice approximation''' is a theoretical [[electronic band structure]] model in which the potential is ''periodic'' and ''weak'' (close to constant). One may also consider an empty{{clarify|is there actually some lattice that is "empty"?|date=November 2014}} irregular lattice, in which the potential is not even periodic.<ref>Physics  Lecture Notes. P.Dirac, Feynman,R.,1968. Internet, Amazon,25.03.2014.</ref> The empty lattice approximation describes a number of properties of energy dispersion relations of non-interacting [[Free electron model|free electrons]] that move through a [[crystal structure|crystal lattice]]. The energy of the electrons in the "empty lattice" is the same as the energy of free electrons. The model is useful because it clearly illustrates a number of the sometimes very complex features of energy dispersion relations in solids which are fundamental to all electronic band structures.
+__TOC__
+
+==Scattering and periodicity==
+[[Image:1D-Empty-Lattice-Approximation.svg|thumb|400px|Free electron bands in a one dimensional lattice]]
+The periodic potential of the lattice in this free electron model must be weak because otherwise the electrons wouldn't be free. The strength of the scattering mainly depends on the geometry and topology of the system. Topologically defined parameters, like [[Scattering cross-section|scattering]] [[Cross section (physics)|cross sections]], depend on the magnitude of the potential and the size of the [[potential well]]. For 1-, 2- and 3-dimensional spaces potential wells do always scatter waves, no matter how small their potentials are, what their signs are or how limited their sizes are. For a particle in a one-dimensional lattice, like the [[Kronig–Penney model]], it is possible to calculate the band structure analytically by substituting the values for the potential, the lattice spacing and the size of potential well.<ref name=Kittel>
+{{cite book |author=C. Kittel |title=[[Introduction to Solid State Physics]] |year= 1953–1976 |publisher=Wiley & Sons |isbn=978-0-471-49024-1 }}
+</ref> For two and three-dimensional problems it is more difficult to calculate a band structure based on a similar model with a few parameters accurately. Nevertheless, the properties of the band structure can easily be approximated in most regions by [[Perturbation theory (quantum mechanics)|perturbation methods]].
+
+In theory the lattice is infinitely large, so a weak periodic scattering potential will eventually be strong enough to reflect the wave. The scattering process results in the well known [[Bragg's law|Bragg reflections]] of electrons by the periodic potential of the [[crystal structure]]. This is the origin of the periodicity of the dispersion relation and the division of [[Reciprocal lattice|k-space]] in Brillouin zones. The periodic energy dispersion relation is expressed
+as:
+:<math>E_n(\mathbf{k}) = \frac{\hbar^2 (\mathbf{k} + \mathbf{G}_n)^2}{2m}</math>
+
+The <math>\mathbf{G}_n</math> are the [[reciprocal lattice]] vectors to which the bands{{clarify|date=November 2014}} <math>E_n(\mathbf{k})</math> belong.
+
+The figure on the right shows the dispersion relation for three periods in reciprocal space of a one-dimensional lattice with lattice cells of length ''a''.
+{{clear}}
+
+==The energy bands and the density of states==
+In a one-dimensional lattice the number of reciprocal lattice vectors <math>\mathbf{G}_n</math> that determine the bands in an energy interval is limited to two when the energy rises. In two and three dimensional lattices the number of reciprocal lattice vectors that determine the free electron bands <math>E_n(\mathbf{k})</math> increases more rapidly when the length of the wave vector increases and the energy rises. This is because the number of reciprocal lattice vectors <math>\mathbf{G}_n</math> that lie in an interval <math>[\mathbf{k},\mathbf{k} + d\mathbf{k}]</math> increases. The [[density of states]] in an energy interval <math>[E,E + dE]</math> depends on the number of states in an interval  <math>[\mathbf{k},\mathbf{k} + d\mathbf{k}]</math> in reciprocal space and the slope of the dispersion relation <math>E_n(\mathbf{k})</math>.
+
+[[Image:Free-electron DOS.svg|thumb|300px|right|Figure 3: Free-electron DOS in 3-dimensional k-space]]
+Though the lattice cells are not spherically symmetric, the dispersion relation still has spherical symmetry from the point of view of a fixed central point in a reciprocal lattice cell if the dispersion relation is extended outside the central Brillouin zone. The [[density of states#Parabolic dispersion|density of states]] in a three-dimensional lattice will be the same as in the case of the absence of a lattice. For the three-dimensional case the density of states <math>D_3\left(E\right)</math> is;
+
+:<math>D_3\left(E\right) = 2 \pi \sqrt{\frac{E-E_0}{c_k^3}} \ .</math>
+
+In three-dimensional space the Brillouin zone boundaries are planes. The dispersion relations show conics of the free-electron energy dispersion parabolas for all possible reciprocal lattice vectors. This results in a very complicated set intersecting of curves when the dispersion relations are calculated because there is a large number of possible angles between evaluation trajectories, first and higher order Brillouin zone boundaries and dispersion parabola intersection cones.
+
+==Second, third and higher Brillouin zones==
+[[Image:Brillouin Zone (1st, FCC).svg|thumb|300px|right|FCC Brillouin zone]]
+"Free electrons" that move through the lattice of a solid with wave vectors <math>\mathbf{k}</math> far outside the first Brillouin zone are still reflected back into the first Brillouin zone. See the [[#External links|external links]] section for sites with examples and figures.
+
+==The nearly free electron model==
+{{main|Nearly free electron model}}
+In most [[Metal|simple metals]], like [[aluminium]], the [[screening effect]] strongly reduces the electric field of the ions in the solid. The electrostatic potential is expressed as
+
+:<math>V(r) = \frac{Z e}{r} e^{-q r}</math>
+
+where ''Z'' is the [[atomic number]], ''e'' is the elementary unit charge, ''r'' is the distance to the nucleus of the embedded ion and ''q'' is a screening parameter that determines the range of the potential. The [[Fourier transform]], <math>U_{\mathbf{G}}</math>, of the lattice potential, <math>V(\mathbf{r})</math>, is expressed as
+
+:<math>U_{\mathbf{G}} =  \frac{4 \pi Z e}{q^2 + G^2}</math>
+
+When the values of the off-diagonal elements <math>U_{\mathbf{G}}</math> between the reciprocal lattice vectors in the Hamiltonian almost go to zero. As a result, the magnitude of the band gap <math>2|U_{\mathbf{G}}|</math> collapses and the empty lattice approximation is obtained.
+
+==The electron bands of common metal crystals==
+
+Apart from a few exotic exceptions, [[metal]]s crystallize in three kinds of crystal structures: the BCC and FCC [[cubic crystal system|cubic crystal structures]] and the [[hexagonal crystal system|hexagonal]] close-packed [[close-packing of spheres#fcc and hcp lattices|HCP]] crystal structure. 
+<gallery>
+Image:Cubic-body-centered.svg|Body-centered cubic (I)
+Image:Cubic-face-centered.svg|Face-centered cubic (F)
+Image:Hexagonal close packed.svg|Hexagonal close-packed
+</gallery>
+
+{{multiple image
+|align    = left
+|image1   = Empty-Lattice-Approximation-BCC-bands.svg
+|caption1 = Free electron bands in a BCC crystal structure
+|width1   = 180
+|image2   = Empty-Lattice-Approximation-FCC-bands.svg
+|caption2 = Free electron bands in a FCC crystal structure
+|width2   = 180
+|image3   = Empty-Lattice-Approximation-HCP-bands.svg
+|caption3 = Free electron bands in a HCP crystal structure
+|width3   = 300
+}}
+
+{{clear}}
+
+==References==
+{{reflist}}
+
+==External links==
+{{commons category|Dispersion relations of electrons}}
+*[http://www2.sjsu.edu/faculty/watkins/brillouin.htm Brillouin Zone simple lattice diagrams by Thayer Watkins]
+*[http://phycomp.technion.ac.il/~nika/brillouin_zones.html Brillouin Zone 3d lattice diagrams by Technion.]
+*[http://www.doitpoms.ac.uk/tlplib/brillouin_zones/index.php DoITPoMS Teaching and Learning Package- "Brillouin Zones"]
+
+[[Category:Concepts in physics]]
+[[Category:Electronic band structures]]

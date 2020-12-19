@@ -1,0 +1,126 @@
+[[File:CB Base Station.jpg|thumb|250px|A 1980s consumer-grade [[citizens' band radio]] (CB) base station]]
+
+'''Base station''' (or '''base radio station''') is – according to the [[International Telecommunication Union]]'s (ITU) [[ITU Radio Regulations|Radio Regulations]] (RR)<ref>ITU Radio Regulations, Section IV. Radio Stations and Systems – Article 1.71, definition: "base station / base radio station"</ref> – a "[[land station]] in the [[land mobile service]]."
+
+The term is used in the context of [[mobile telephony]], [[wireless computer networking]] and other [[wireless communications]] and in [[land surveying]]. In surveying, it is a [[GPS receiver]] at a known position, while in wireless communications it is a [[transceiver]] connecting a number of other devices to one another and/or to a wider area.
+In mobile telephony, it provides the connection between [[mobile phone]]s and the wider [[telephone network]]. In a [[computer network]], it is a transceiver acting as a [[switch (computing)|switch]] for [[computer]]s in the network, possibly connecting them to a/another [[local area network]] and/or the [[Internet]]. In traditional wireless communications, it can refer to the hub of a [[dispatch (logistics)|dispatch]] fleet such as a [[taxi]] or [[delivery (commerce)|delivery]] fleet, the base of a [[TETRA]] network as used by [[government]] and [[emergency services]] or a [[Citizen’s band radio|CB]] [[radio shack|shack]].
+
+== Land surveying ==
+
+In the context of external land surveying, a base station is a [[GPS]] receiver at an accurately-known fixed location which is used to derive correction information for nearby portable GPS receivers.  This correction data allows [[radio propagation|propagation]] and other effects to be corrected out of the position data obtained by the mobile stations, which gives greatly increased location precision and accuracy over the results obtained by uncorrected GPS receivers.
+
+== Computer networking ==
+
+{{see also|Wireless access point}}
+In the area of wireless computer networking, a base station is a radio receiver/transmitter that serves as the hub of the local wireless network, and may also be the gateway between a wired network and the wireless network. It typically consists of a low-power transmitter and [[wireless router]].
+
+== Wireless communications ==
+
+In [[radio]] communications, a base station is a [[wireless]] communications station installed at a fixed location and used to communicate as part of one of the following:
+
+* a [[Push to talk|push-to-talk]] [[two-way radio]] system, or;
+* a [[Radiotelephone|wireless telephone]] system such as [[Mobile phone|cellular]] [[CDMA]] or [[GSM]] [[cell site]].
+* [[Terrestrial Trunked Radio]]
+
+Base stations use [[RF power amplifier]]s ([[radio-frequency]] power amplifiers) to transmit and receive signals. The most common RF power amplifiers are [[metal–oxide–semiconductor field-effect transistor]]s (MOSFETs), particularly [[LDMOS]] ([[power MOSFET]]) RF amplifiers.<ref name="Baliga71">{{cite book |last1=Baliga |first1=Bantval Jayant |author1-link=B. Jayant Baliga |title=Silicon RF Power MOSFETS |date=2005 |publisher=[[World Scientific]] |isbn=9789812561213 |page=71 |url=https://books.google.com/books?id=StJpDQAAQBAJ&pg=PA71}}</ref><ref name="Asif">{{cite book |last1=Asif |first1=Saad |title=5G Mobile Communications: Concepts and Technologies |date=2018 |publisher=[[CRC Press]] |isbn=9780429881343 |page=134 |url=https://books.google.com/books?id=yg1mDwAAQBAJ&pg=PT134}}</ref><ref name="ST-Mobile">{{cite web |title=Mobile & Wideband Comms |url=https://www.st.com/en/radio-frequency-transistors/mobile-wideband-comms.html |website=[[ST Microelectronics]] |accessdate=4 December 2019}}</ref> RF LDMOS amplifiers replaced RF [[bipolar transistor]] amplifiers in most base stations during the 1990s,<ref name="Baliga71"/> leading to the [[wireless revolution]].<ref>{{cite book |last1=Baliga |first1=Bantval Jayant |author1-link=B. Jayant Baliga |title=Silicon RF Power MOSFETS |date=2005 |publisher=[[World Scientific]] |isbn=9789812561213 |url=https://books.google.com/books?id=StJpDQAAQBAJ}}</ref>
+
+=== Two-way radio ===
+
+==== Professional ====
+
+In professional two-way radio systems, a base station is used to maintain contact with a [[Dispatch (logistics)|dispatch]] fleet of [[Walkie talkie|hand-held]] or [[Mobile radio|mobile]] radios, and/or to activate one-way paging receivers. The base station is one end of a communications link. The other end is a movable vehicle-mounted radio or walkie-talkie.<ref>"Evaluating Regional Alternatives: Systems Design Considerations," ''Planning Emergency Medical Communications: Volume 2, Local/Regional Level Planning Guide'', (Washington, D.C.: National Highway Traffic Safety Administration, US Department of Transportation, 1995) pp. 39–43.</ref> Examples of base station uses in two-way radio include the dispatch of [[tow truck]]s and [[taxicab]]s.
+
+[[File:Base station 2 channel block diagram.svg|left|thumb|500px|Basic base station elements used in a remote-controlled installation. [[Selective calling]] options such as CTCSS are optional.]]Professional base station radios are often one channel. In lightly used base stations, a multi-channel unit may be employed.<ref>Block diagram is from: "Figure 2: Two Channel VHF Base Station," ''Planning Emergency Medical Communications: Volume 2, Local/Regional Level Planning Guide'', (Washington, D.C.: National Highway Traffic Safety Administration, US Department of Transportation, 1995) pp. 42.</ref> In heavily used systems, the capability for additional channels, where needed, is accomplished by installing an additional base station for each channel. Each base station appears as a single channel on the dispatch center control console. In a properly designed dispatch center with several staff members, this allows each dispatcher to communicate simultaneously, independently of one another, on a different channel as necessary. For example, a taxi company dispatch center may have one base station on a high-rise building in [[Boston, Massachusetts|Boston]] and another on a different channel in [[Providence, Rhode Island|Providence]]. Each taxi dispatcher could communicate with taxis in either Boston or Providence by selecting the respective base station on his or her console.<ref>Base stations in land mobile systems are often located at remote sites such as hilltops or water towers. Some are controlled from two or more locations. For example, a base station used to communicate with taxis may be connected to remote control consoles at both a taxi company office and an answering service for after-hours calls. The taxi company and answering service may be miles apart. Single channel base stations reduce confusion by eliminating the possibility that the wrong channel may be selected.</ref>
+
+In dispatching centers it is common for eight or more radio base stations to be connected to a single dispatching console. Dispatching personnel can tell which channel a message is being received on by a combination of local protocol, unit identifiers, volume settings, and busy indicator lights. A typical console has two speakers identified as ''select'' and ''unselect''. Audio from a primary selected channel is routed to the select speaker and to a headset. Each channel has a busy light which flashes when someone talks on the associated channel.<ref>To read more about multi-channel consoles, look at the service manual for a relatively simple console: ''8-Channel Remote Console, 120, 220, 240 V AC or 12 V DC T16167 AM or BM'', 68-81021E80, (Schaumburg, Illinois: Motorola, Inc. 1980.) This is a relatively simple analog console compared to large, enterprise-level Centracom-series units.</ref>
+
+Base stations can be local controlled or remote controlled. Local controlled base stations are operated by front panel controls on the base station cabinet. Remote control base stations can be operated over tone- or [[4-20 mA#Two-way radio use|DC-remote]] circuits. The dispatch point console and remote base station are connected by leased private line telephone circuits, (sometimes called ''RTO circuit''s), a [[Digital Signal 1|DS-1]], or radio links.<ref>The term ''RTO circuit'' is legacy jargon and comes from Bell System billing terminology. RTO circuits refer to analog radio remote control and radio broadcast leased telephone circuits.</ref> The consoles multiplex transmit commands onto remote control circuits. Some system configurations require duplex, or four wire, audio paths from the base station to the console. Others require only a two-wire or half duplex link.<ref>For a brief discussion of remote controlled base stations, see: "Evaluating Regional Alternatives: Systems Design Considerations," ''Planning Emergency Medical Communications: Volume 2, Local/Regional Level Planning Guide'', (Washington, D.C.: National Highway Traffic Safety Administration, US Department of Transportation, 1995) pp. 39–41. Tone remote controls are described in this section.</ref>
+
+[[File:Base station antenna network.svg|right|thumb|230px|The diagram shows a [[band-pass filter]] used to reduce the base station [[Receiver (radio)|receiver's]] exposure to unwanted signals. It also reduces the transmission of undesired signals. The [[Circulator|isolator]] is a one-way device which reduces the ease of signals from nearby transmitters going up the antenna line and into the base station [[transmitter]]. This prevents the unwanted mixing of signals inside the base station transmitter which can generate interference.]] Interference could be defined as receiving any signal other than from a radio in your own system. To avoid interference from users on the same channel, or interference from nearby strong signals on another channel, professional base stations use a combination of:<ref>Block diagram is from: "Figure 8: Bandpass Cavity/Isolator Location," ''Planning Emergency Medical Communications: Volume 2, Local/Regional Level Planning Guide'', (Washington, D.C.: National Highway Traffic Safety Administration, US Department of Transportation, 1995) pp. 57.</ref><ref>Bulleted items condensed from, "EMS Communications," "System Coordination," and "Site Engineering," in ''Planning Emergency Medical Communications: Volume 2, Local/Regional Level Planning Guide'', (Washington, D.C.: National Highway Traffic Safety Administration, US Department of Transportation, 1995) pp. 10–19, 55–58.</ref>
+* minimum receiver specifications and filtering.<ref>For an example of receiver specifications, see, "Table 9-3," ''800 MHz Trunked Radio Request for Proposals: Public Safety Projects Office,'' (Oklahoma City, Oklahoma: Oklahoma City Municipal Facilities Authority, 2000, pp. 181.</ref><ref>A list of types of filtering used to prevent interference between equipment at the same site is included in "6.2.4 Electromagnetic Compatibility Studies," ''800 MHz Trunked Radio Request for Proposals: Public Safety Projects Office,'' (Oklahoma City, Oklahoma: Oklahoma City Municipal Facilities Authority, 2000, pp. 119.</ref><ref>More detail of interference reduction equipment is provided in, "9.1.2 Base Station/Mobile Relay, 800 MHz," ''800 MHz Trunked Radio Request for Proposals: Public Safety Projects Office,'' (Oklahoma City, Oklahoma: Oklahoma City Municipal Facilities Authority, 2000, pp. 165–168.</ref>
+* analysis of other frequencies in use nearby.
+* in the US, coordination of shared frequencies by coordinating agencies.<ref>For example, US federal government systems are coordinated and licensed by the [[National Telecommunications and Information Administration]]. [[Business band|Business/Industrial Pool]] licenses are coordinated by the Personal Communications Industry Association (PCIA) and licensed by the Federal Communications Commission.</ref>
+* locating equipment so that terrain blocks interfering signals.
+* use of directional antennas to reduce unwanted signals.
+
+Base stations are sometimes called ''control'' or ''fixed'' stations in US [[Federal Communications Commission]] licensing. These terms are defined in regulations inside Part 90 of the commissions regulations. In US licensing jargon, types of base stations include:
+* A '''fixed''' station is a base station used in a system intended only to communicate with other base stations. A ''fixed'' station can also be radio link used to operate a distant base station by remote control. (No mobile or hand-held radios are involved in the system.)
+* A '''control''' station is a base station used in a system with a repeater where the base station is used to communicate through the repeater.
+* A '''temporary base''' is a base station used in one location for less than a year.
+* A '''[[Radio repeater|repeater]]''' is a type of base station that extends the range of hand-held and mobile radios.
+
+==== Amateur and hobbyist use ====
+
+In [[amateur radio]], a base station also communicates with [[mobile rig]]s but for hobby or family communications. Amateur systems sometimes serve as dispatch radio systems during disasters, search and rescue mobilizations, or other emergencies.
+
+An [[Australia]]n [[UHF CB]] base station is another example of part of a system used for hobby or family communications.
+
+=== Wireless telephone ===
+
+[[Radiotelephone|Wireless telephone]] differ from two-way radios in that:
+
+* wireless telephones are circuit switched: the communications paths are set up by dialing at the start of a call and the path remains in place until one of the callers hangs up.
+* wireless telephones communicate with other telephones usually over the [[public switched telephone network]].
+
+A wireless telephone base station communicates with a mobile or hand-held phone. For example, in a wireless telephone system, the signals from one or more mobile telephones in an area are received at a nearby base station, which then connects the call to the land-line network. Other equipment is involved depending on the system architecture. Mobile telephone provider networks, such as European GSM networks, may involve [[multiplexing|carrier]], [[microwave radio]], and [[Telephone exchange|switching facilities]] to connect the call. In the case of a portable phone such as a US cordless phone, the connection is directly connected to a wired land line.
+
+=== Emissions issues ===
+[[File:GaffneySC-CellTower.jpg|thumb|A cell tower near Thicketty, South Carolina.]]
+While low levels of radio-frequency power are usually considered to have negligible effects on health, national and local regulations restrict the design of base stations to limit exposure to [[electromagnetic field]]s. Technical measures to limit exposure include restricting the radio frequency power emitted by the station, elevating the antenna above ground level, changes to the [[antenna (radio)|antenna]] pattern, and barriers to foot or road traffic.  For typical base stations, significant electromagnetic energy is only emitted at the antenna, not along the length of the antenna tower.<ref>{{Cite book|author=Warren PM|title=IEEE C95.1-2005 "IEEE Standard for Safety Levels with Respect to Human Exposure to Radio Frequency Electromagnetic Fields, 3 kHz to 300 GHz" Sources: US Department of Health; The World Health Organization|publisher=IEEE |year=2006}}</ref>
+
+Because mobile phones and their base stations are two-way radios, they produce radio-frequency ([[Radio frequency|RF]]) radiation in order to communicate, exposing people near them to [[RF radiation]] giving concerns about [[mobile phone radiation and health]]. Hand-held mobile telephones are relatively low power so the RF radiation exposures from them are generally low.
+
+The [[World Health Organization]] has concluded that "there is no convincing scientific evidence that the weak RF signals from base stations and wireless networks cause adverse health effects."<ref>{{cite web |url=https://www.who.int/peh-emf/publications/facts/fs304/en/ |title=Electromagnetic fields and public health: Base stations and wireless technologies |work=World Health Organisation |accessdate=2014-09-08}}.</ref>
+
+The consensus of the scientific community is that the power from these mobile phone base station antennas is too low to produce health hazards as long as people are kept away from direct access to the antennas. However, current international exposure guidelines ([[ICNIRP]]) are based largely on the ''thermal'' effects of base station emissions, NOT considering the [[Non-thermal microwave effect|''non-thermal'' effects]] harmless.
+
+=== Emergency power===
+[[Fuel cell]] [[backup power]] systems are added to critical base stations or [[cell site]]s to provide emergency power.<ref>[http://fr.chfca.ca/itoolkit.asp?pg=BALLARD_07132009 Ballard fuel cells to power telecom backup power units for motorola] {{webarchive|url=https://web.archive.org/web/20110706172302/http://fr.chfca.ca/itoolkit.asp?pg=BALLARD_07132009 |date=2011-07-06 }}</ref><ref>[http://cleantech.com/news/3674/india-telecom-get-fuel-cells India telecoms to get fuel cell power] {{webarchive |url=https://web.archive.org/web/20101126130543/http://cleantech.com/news/3674/india-telecom-get-fuel-cells |date=November 26, 2010 }}</ref>
+
+== Media ==
+
+<gallery>
+Image:GaffneySC-CellTower.jpg|A cell tower near [[Thicketty, South Carolina]].
+Image:BaseStationsBlorg.jpg|Two [[mobile phone base station|GSM mobile phone base station]] towers disguised as [[trees]] in [[Dublin]], [[Ireland]].
+Image:PalmCellTower.jpg|A base station disguised as a [[palm tree]] in [[Tucson]], [[Arizona]].
+Image:base station mexico-city.JPG|Close-up of a base station  antenna in [[Mexico City]], [[Mexico]]. There are three antennas: each serves a 120-degree segment of the horizon. The microwave dish links the site with the telephone network.
+Image:iden.JPG|A professional rack-mount [[Integrated Digital Enhanced Network|iDEN]] Base Radio at a Cell Site.
+Image:Trunked 5ch central control.svg|[[Trunked radio system|Trunked systems]] have groups of base stations configured as [[Radio repeater|repeaters]]. The center blocks with frequencies in this trunked [[block diagram]] each represent a base station.
+File:136 to 174 MHz base station antennas.jpg|136–174&nbsp;MHz US professional base station antenna examples.
+File:WiMAX equipment.jpg|[[WiMAX]] base station equipment with a [[sector antenna]] and [[wireless modem]] on top
+</gallery>
+
+== See also ==
+
+* [[Base transceiver station]]
+* [[Mobile switching center]]
+* [[Macrocell]]
+* [[Microcell]]
+* [[Picocell]]
+* [[Femtocell]]
+* [[Access point base station]]
+* [[Cell site]]
+* [[Cellular repeater]]
+* [[Mobile phone]]
+* [[Mobile phone radiation and health]]
+* [[Portable phone]]
+* [[Signal strength]]
+* [[Audio level compression]]
+* [[OpenBTS]]
+* [[Bandstacked]]
+
+== References ==
+{{reflist|2}}
+
+== External links ==
+{{Commons category|Mobile phone base stations}}
+* [http://www.osha.gov/SLTC/radiofrequencyradiation/ Occupational Safety and Health Admin. Non-Ionizing Radiation Exposure Guidelines.]<!--link working as of 6/21/2007-->
+{{Radio station ITU}}
+{{Two-way radio}}
+{{Telecommunications}}
+
+{{DEFAULTSORT:Base Station}}
+[[Category:Surveying]]
+[[Category:Wireless networking]]
+[[Category:Telecommunications infrastructure]]
+[[Category:Radio stations and systems ITU]]

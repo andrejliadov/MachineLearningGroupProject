@@ -1,0 +1,327 @@
+{{pp|small=yes}}
+{{distinguish|text=[[refraction]], the change in direction of a wave passing from one medium to another}}
+{{short description|Phenomenon of the motion of waves}}
+[[File:Laser Interference.JPG|thumb|A [[Airy disk|diffraction pattern]] of a red [[laser]] beam projected onto a plate after passing through a small circular [[aperture]] in another plate]]
+
+'''Diffraction''' refers to various phenomena that occur when a [[wave]] encounters an obstacle or opening. It is defined as the bending of waves around  the corners of an obstacle or through an [[aperture]] into the region of [[Umbra, penumbra and antumbra|geometrical shadow]] of the obstacle/aperture. The diffracting object or aperture effectively becomes a secondary source of the [[Wave propagation|propagating]] wave. Italian scientist [[Francesco Maria Grimaldi]] coined the word ''diffraction'' and was the first to record accurate observations of the phenomenon in 1660.<ref>Francesco Maria Grimaldi, ''Physico mathesis de lumine, coloribus, et iride, aliisque annexis libri duo'' (Bologna ("Bonomia"), Italy: Vittorio Bonati, 1665), [https://books.google.com/books?id=FzYVAAAAQAAJ&pg=PA2#v=onepage&q&f=false page 2] {{webarchive|url=https://web.archive.org/web/20161201153749/https://books.google.com/books?id=FzYVAAAAQAAJ&pg=PA2|date=2016-12-01}}:  <blockquote>''Original'' :  Nobis alius quartus modus illuxit, quem nunc proponimus, vocamusque; diffractionem, quia advertimus lumen aliquando diffringi, hoc est partes eius multiplici dissectione separatas per idem tamen medium in diversa ulterius procedere, eo modo, quem mox declarabimus.</blockquote>  <blockquote>''Translation'' :  It has illuminated for us another, fourth way, which we now make known and call "diffraction" [i.e., shattering], because we sometimes observe light break up; that is, that parts of the compound [i.e., the beam of light], separated by division, advance farther through the medium but in different [directions], as we will soon show.</blockquote></ref><ref>Cajori, Florian [https://archive.org/details/ahistoryphysics00cajogoog/page/n102 <!-- pg=88 quote=Florian Cajori history of physics. --> "A History of Physics in its Elementary Branches, including the evolution of physical laboratories."] {{webarchive|url=https://web.archive.org/web/20161201075614/https://books.google.com/books?id=KZ4C-1CRtYQC&ots=c_YpkkbTpT&dq=Florian%20Cajori%20history%20of%20physics&pg=PA88|date=2016-12-01}} MacMillan Company, New York 1899</ref>
+
+[[File:Single Slit Diffraction.svg|thumb|upright=1.2|Infinitely many points (three shown) along length ''d'' project phase contributions from the [[wavefront]], producing a continuously varying intensity ''θ'' on the registering plate.]]
+
+In [[classical physics]], the diffraction phenomenon is described by the [[Huygens–Fresnel principle]] that treats each point in a propagating [[wavefront]] as a collection of individual spherical [[wavelet]]s.<ref>Wireless Communications: Principles and Practice, Prentice Hall communications engineering and emerging technologies series, T. S. Rappaport, Prentice Hall, 2002 pg 126</ref> The characteristic bending pattern is most pronounced when a wave from a [[Coherence (physics)|coherent]] source (such as a laser) encounters a slit/aperture that is comparable in size to its [[wavelength]], as shown in the inserted image. This is due to the addition, or [[Interference (wave propagation)|interference]], of different points on the wavefront (or, equivalently, each wavelet) that travel by paths of different lengths to the registering surface. However, if there are multiple, [[diffraction grating|closely spaced openings]], a complex pattern of varying intensity can result.
+
+These effects also occur when a light wave travels through a medium with a varying [[refractive index]], or when a [[Sound|sound wave]] travels through a medium with varying [[acoustic impedance]] – all waves diffract, including [[gravitational wave]]s{{Citation needed|date=September 2019}}, [[Wind wave|water waves]], and other [[electromagnetic radiation|electromagnetic waves]] such as [[X-ray]]s and [[radio waves]]. Furthermore, [[quantum mechanics]] also demonstrates that matter possesses [[Matter wave|wave-like properties]], and hence, undergoes diffraction (which is measurable at subatomic to molecular levels).<ref>{{Cite journal|last1=Juffmann|first1=Thomas|last2=Milic|first2=Adriana|last3=Müllneritsch|first3=Michael|last4=Asenbaum|first4=Peter|last5=Tsukernik|first5=Alexander|last6=Tüxen|first6=Jens|last7=Mayor|first7=Marcel|last8=Cheshnovsky|first8=Ori|last9=Arndt|first9=Markus|date=2012-03-25|title=Real-time single-molecule imaging of quantum interference|journal=Nature Nanotechnology|volume=7|issue=5|pages=297–300|doi=10.1038/nnano.2012.34|issn=1748-3395|pmid=22447163|arxiv=1402.1867|bibcode=2012NatNa...7..297J|s2cid=5918772}}</ref>
+
+[[Superposition principle#Wave diffraction vs. wave interference|Diffraction and interference]] are closely related and are nearly – if not exactly – identical in meaning. [[Richard Feynman]] observes that "diffraction" tends to be used when referring to many wave sources, and "interference" when only a few are considered.<ref>{{Cite web|url=http://www.feynmanlectures.caltech.edu/I_30.html|title=The Feynman Lectures on Physics Vol. I Ch. 30: Diffraction|website=www.feynmanlectures.caltech.edu|access-date=2019-04-25}}</ref>
+
+==History==
+[[Image:Young Diffraction.png|right|thumb|Thomas Young's sketch of two-slit diffraction for water waves, which he presented to the Royal Society in 1803.]]
+
+The effects of diffraction of light were first carefully observed and characterized by [[Francesco Maria Grimaldi]], who also coined the term ''diffraction'', from the Latin ''diffringere'', 'to break into pieces', referring to light breaking up into different directions. The results of Grimaldi's observations were published posthumously in 1665.<ref>Francesco Maria Grimaldi, ''Physico-mathesis de lumine, coloribus, et iride, aliisque adnexis …'' [The physical mathematics of light, color, and the rainbow, and other things appended …] (Bologna ("Bonomia"), (Italy): Vittorio Bonati, 1665), [https://books.google.com/books?id=FzYVAAAAQAAJ&pg=PA1#v=onepage&q&f=false pp. 1–11] {{webarchive|url=https://web.archive.org/web/20161201074612/https://books.google.com/books?id=FzYVAAAAQAAJ&pg=PA1 |date=2016-12-01 }}:  ''"Propositio I.  Lumen propagatur seu diffunditur non solum directe, refracte, ac reflexe, sed etiam alio quodam quarto modo, diffracte."'' (Proposition 1.  Light propagates or spreads not only in a straight line, by refraction, and by reflection, but also by a somewhat different fourth way: by diffraction.)  On p. 187, Grimaldi also discusses the interference of light from two sources:  ''"Propositio XXII.  Lumen aliquando per sui communicationem reddit obscuriorem superficiem corporis aliunde, ac prius illustratam."''  (Proposition 22.  Sometimes light, as a result of its transmission, renders dark a body's surface, [which had been] previously  illuminated by another [source].)</ref><ref>{{cite book|title = Memoires pour l'histoire des sciences et des beaux arts|author = Jean Louis Aubert|publisher = Impr. de S. A. S.; Chez E. Ganeau| location = Paris|year = 1760|pages = [https://archive.org/details/memoirespourlhi146aubegoog/page/n151 149]|url = https://archive.org/details/memoirespourlhi146aubegoog|quote = grimaldi diffraction 0-1800.}}</ref><ref>{{cite book|title = A Treatise on Optics|author = Sir David Brewster|year = 1831|publisher = Longman, Rees, Orme, Brown & Green and John Taylor|location = London|pages = [https://archive.org/details/atreatiseonopti00brewgoog/page/n113 95]|url = https://archive.org/details/atreatiseonopti00brewgoog}}</ref> [[Isaac Newton]] studied these effects and attributed them to ''inflexion'' of light rays. [[James Gregory (astronomer and mathematician)|James Gregory]] (1638–1675) observed the diffraction patterns caused by a bird feather, which was effectively the first [[diffraction grating]] to be discovered.<ref>Letter from James Gregory to John Collins, dated 13 May 1673.  Reprinted in:  ''Correspondence of Scientific Men of the Seventeenth Century …'', ed. Stephen Jordan Rigaud (Oxford, England: [[Oxford University Press]], 1841), vol. 2, pp. 251–255, especially [https://books.google.com/books?id=0h45L_66bcYC&pg=PA254 p. 254] {{webarchive|url=https://web.archive.org/web/20161201061930/https://books.google.com/books?id=0h45L_66bcYC&pg=PA254 |date=2016-12-01 }}.</ref> [[Thomas Young (scientist)|Thomas Young]] performed a [[Young's Double Slit Interferometer|celebrated experiment]] in 1803 demonstrating interference from two closely spaced slits.<ref>{{Cite journal|author = Thomas Young|date = 1804-01-01|url = https://books.google.com/books?id=7AZGAAAAMAAJ&pg=PA1|title=The Bakerian Lecture: Experiments and calculations relative to physical optics|journal=[[Philosophical Transactions of the Royal Society of London]]|volume = 94|pages = 1–16|doi = 10.1098/rstl.1804.0001|bibcode = 1804RSPT...94....1Y|s2cid = 110408369}}.  (Note: This lecture was presented before the Royal Society on 24 November 1803.)</ref> Explaining his results by interference of the waves emanating from the two different slits, he deduced that light must propagate as waves. [[Augustin-Jean Fresnel]] did more definitive studies and calculations of diffraction, made public in 1816<ref>Fresnel, Augustin-Jean (1816), "Mémoire sur la diffraction de la lumière" ("Memoir on the diffraction of light"), ''Annales de Chimie et de Physique'', vol.&nbsp;1, pp.&nbsp;239–81 (March 1816); reprinted as "Deuxième Mémoire…" ("Second Memoir…") in ''Oeuvres complètes d'Augustin Fresnel'', vol.&nbsp;1 (Paris: Imprimerie Impériale, 1866), [https://books.google.com/books?id=1l0_AAAAcAAJ&pg=PA89 pp.&nbsp;89–122]. (Revision of the [https://books.google.com/books?id=1l0_AAAAcAAJ&pg=PA9 "First&nbsp;Memoir"] submitted on 15&nbsp;October 1815.)</ref> and 1818,<ref>Fresnel, Augustin-Jean (1818), "Mémoire sur la diffraction de la lumière" ("Memoir on the diffraction of light"), deposited 29&nbsp;July 1818, "crowned" 15&nbsp;March 1819, published in ''Mémoires de l'Académie Royale des Sciences de l'Institut de France'', vol.&nbsp;{{serif|V}} (for 1821 & 1822, printed 1826), [https://books.google.com/books?id=zNo-AQAAMAAJ&pg=PA339 pp.&nbsp;339–475]; reprinted in ''Oeuvres complètes d'Augustin Fresnel'', vol.&nbsp;1 (Paris: Imprimerie Impériale, 1866), [https://books.google.com/books?id=1l0_AAAAcAAJ&pg=PA247 pp.&nbsp;247–364]; partly translated as [https://archive.org/details/wavetheoryofligh00crewrich/page/80 "Fresnel's prize memoir on the diffraction of light"], in H.{{nnbsp}}Crew (ed.), ''The Wave Theory of Light: Memoirs by Huygens, Young and Fresnel'', American Book Company, 1900, pp.&nbsp;81–144. (First published, as extracts only, in ''Annales de Chimie et de Physique'', vol.&nbsp;11 (1819), pp.&nbsp;[https://books.google.com/books?id=SSRQAAAAcAAJ&pg=PA246 246–96], [https://books.google.com/books?id=SSRQAAAAcAAJ&pg=PA337 337–78].)</ref> and thereby gave great support to the wave theory of light that had been advanced by [[Christiaan Huygens]]<ref>Christiaan Huygens, [https://archive.org/details/bub_gb_X9PKaZlChggC ''Traité de la lumiere'' …] {{webarchive|url=https://web.archive.org/web/20160616191659/https://books.google.com/books?id=X9PKaZlChggC&pg=PP5 |date=2016-06-16 }} (Leiden, Netherlands: Pieter van der Aa, 1690), Chapter 1. From [https://archive.org/details/bub_gb_X9PKaZlChggC/page/n94 p. 15] {{webarchive|url=https://web.archive.org/web/20161201064555/https://books.google.com/books?id=X9PKaZlChggC&pg=PA15 |date=2016-12-01 }}:  ''"J'ay donc monstré de quelle façon l'on peut concevoir que la lumiere s'etend successivement par des ondes spheriques, … "'' (I have thus shown in what manner one can imagine that light propagates successively by spherical waves, … )  (Note:  Huygens published his ''[[Treatise on Light|Traité]]'' in 1690; however, in the preface to his book, Huygens states that in 1678 he first communicated his book to the French Royal Academy of Sciences.)</ref> and reinvigorated by Young, against Newton's particle theory.
+
+==Mechanism==
+[[Image:Single-slit-diffraction-ripple-tank.jpg|thumb|left|Photograph of single-slit diffraction in a circular [[ripple tank]]]]
+
+In [[classical physics]] diffraction arises because of the way in which waves propagate; this is described by the [[Huygens–Fresnel principle]] and the [[superposition principle|principle of superposition of waves]]. The propagation of a wave can be visualized by considering every particle of the transmitted medium on a wavefront as a point source for a secondary [[wave equation#Spherical waves|spherical wave]]. The wave displacement at any subsequent point is the sum of these secondary waves. When waves are added together, their sum is determined by the relative phases as well as the amplitudes of the individual waves so that the summed amplitude of the waves can have any value between zero and the sum of the individual amplitudes.  Hence, diffraction patterns usually have a series of maxima and minima.
+
+In the modern quantum mechanical understanding of light propagation through a slit (or slits) every photon has what is known as a [[wavefunction]] which describes its path from the emitter through the slit to the screen.  The wavefunction — the path the photon will take — is determined by the physical surroundings such as slit geometry, screen distance and initial conditions when the photon is created.  In important experiments (A low-intensity double-slit experiment was first performed by G. I. Taylor in 1909, see [[double-slit experiment]]) the existence of the photon's wavefunction was demonstrated.  In the quantum approach the diffraction pattern is created by the distribution of paths, the observation of light and dark bands is the presence or absence of photons in these areas (no interference!).  The quantum approach has some striking similarities to the [[Huygens-Fresnel principle]]; in that principle the light becomes a series of individually distributed light sources across the slit which is similar to the limited number of paths (or wave functions) available for the photons to travel through the slit.
+
+There are various analytical models which allow the diffracted field to be calculated, including the [[Kirchhoff's diffraction formula|Kirchhoff-Fresnel diffraction equation]] which is derived from the [[wave equation]],<ref>Baker, B.B. & Copson, E.T. (1939), ''The Mathematical Theory of Huygens' Principle'', Oxford, pp.{{nnbsp}}36–40.</ref> the [[Fraunhofer diffraction]] approximation of the Kirchhoff equation which applies to the [[near and far field#Far field|far field]] and the [[Fresnel diffraction]] approximation  which applies to the [[near and far field#Near field|near field]].  Most configurations cannot be solved analytically, but can yield numerical solutions through [[finite element]] and [[boundary element]] methods.
+
+It is possible to obtain a qualitative understanding of many diffraction phenomena by considering how the relative phases of the individual secondary wave sources vary, and in particular, the conditions in which the phase difference equals half a cycle in which case waves will cancel one another out.
+
+The simplest descriptions of diffraction are those in which the situation can be reduced to a two-dimensional problem. For water waves, this is already the case; water waves propagate only on the surface of the water. For light, we can often neglect one direction if the diffracting object extends in that direction over a distance far greater than the wavelength. In the case of light shining through small circular holes we will have to take into account the full three-dimensional nature of the problem.
+
+<gallery mode=packed>
+File:Square diffraction.jpg|Computer generated intensity pattern formed on a screen by diffraction from a square aperture.
+File:Two-Slit Diffraction.png|Generation of an interference pattern from two-slit diffraction.
+File:Doubleslit.gif|Computational model of an interference pattern from two-slit diffraction.
+File:Optical diffraction pattern ( laser), (analogous to X-ray crystallography).JPG|Optical diffraction pattern ( laser), (analogous to X-ray crystallography)
+File:Diffraction pattern in spiderweb.JPG|Colors seen in a [[spider web]] are partially due to diffraction, according to some analyses.<ref>{{cite web|url = http://www.itp.uni-hannover.de/%7Ezawischa/ITP/spiderweb.html|title = Optical effects on spider webs|author = Dietrich Zawischa|accessdate = 2007-09-21}}</ref>
+</gallery>
+
+==Examples==
+[[File:Wave diffraction at the Blue Lagoon, Abereiddy.jpg|thumb|Circular waves generated by diffraction from the narrow entrance of a flooded coastal quarry]]
+[[File:Solar glory at the steam from hot spring.jpg|A [[glory (optical phenomenon)|solar glory]] on [[steam]] from [[hot spring]]s. A glory is an optical phenomenon produced by light [[backscatter]]ed (a combination of diffraction, [[reflection (physics)|reflection]] and [[refraction]]) towards its source by a cloud of uniformly sized water droplets.|thumb]]
+
+The effects of diffraction are often seen in everyday life. The most striking examples of diffraction are those that involve light; for example, the closely spaced tracks on a CD or DVD act as a [[diffraction grating]] to form the familiar rainbow pattern seen when looking at a disc. This principle can be extended to engineer a grating with a structure such that it will produce any diffraction pattern desired; the [[holography|hologram]] on a credit card is an example. [[Atmospheric diffraction|Diffraction in the atmosphere]] by small particles can cause a bright ring to be visible around a bright light source  like the sun or the moon. A shadow of a solid object, using light from a compact source, shows small fringes near its edges. The [[speckle pattern]] which is observed when laser light falls on an optically rough surface is also a diffraction phenomenon.  When [[deli meat]] appears to be [[iridescent]], that is diffraction off the meat fibers.<ref>{{cite web|last=Arumugam|first=Nadia|title=Food Explainer: Why Is Some Deli Meat Iridescent?|url=http://www.slate.com/blogs/browbeat/2013/09/09/iridescent_deli_meat_why_some_sliced_ham_and_beef_shine_with_rainbow_colors.html|work=Slate|publisher=[[The Slate Group]]|accessdate=9 September 2013|url-status=live|archiveurl=https://web.archive.org/web/20130910021203/http://www.slate.com/blogs/browbeat/2013/09/09/iridescent_deli_meat_why_some_sliced_ham_and_beef_shine_with_rainbow_colors.html|archivedate=10 September 2013}}</ref> All these effects are a consequence of the fact that light propagates as a [[wave]].
+
+Diffraction can occur with any kind of wave. Ocean waves diffract around [[jetty|jetties]] and other obstacles. Sound waves can diffract around objects, which is why one can still hear someone calling even when hiding behind a tree.<ref>
+{{cite book
+|title = Dynamic fields and waves of physics
+|author = Andrew Norton
+|publisher = CRC Press
+|year = 2000
+|isbn = 978-0-7503-0719-2
+|page = 102
+|url = https://books.google.com/books?id=XRRMxjr24pwC&pg=PA102
+}}</ref>
+Diffraction can also be a concern in some technical applications; it sets a [[Diffraction-limited system|fundamental limit]] to the resolution of a camera, telescope, or microscope.
+
+Other examples of diffraction are considered below.
+
+===Single-slit diffraction===
+{{Main|Diffraction formalism}}
+ 
+[[Image:Wave Diffraction 4Lambda Slit.png|right|thumb|Numerical approximation of diffraction pattern from a slit of width four wavelengths with an incident plane wave. The main central beam, nulls, and phase reversals are apparent.]]
+[[Image:Single Slit Diffraction (english).svg|right|thumb|Graph and image of single-slit diffraction.]]
+
+A long slit of infinitesimal width which is illuminated by light diffracts the light into a series of circular waves and the wavefront which emerges from the slit is a cylindrical wave of uniform intensity, in accordance with [[Huygens–Fresnel principle]].
+
+A slit that is wider than a wavelength produces interference effects in the space downstream of the slit.  These can be explained by assuming that the slit behaves as though it has a large number of point sources spaced evenly across the width of the slit. The analysis of this system is simplified if we consider light of a single wavelength. If the incident light is [[Coherence (physics)#Examples of spatial coherence|coherent]], these sources all have the same phase.  Light incident at a given point in the space downstream of the slit is made up of contributions from each of these point sources and if the relative phases of these contributions vary by 2π or more, we may expect to find minima and maxima in the diffracted light. Such phase differences are caused by differences in the path lengths over which contributing rays reach the point from the slit.
+
+We can find the angle at which a first minimum is obtained in the diffracted light by the following reasoning. The light from a source located at the top edge of the slit interferes destructively with a source located at the middle of the slit, when the path difference between them is equal to ''λ''/2. Similarly, the source just below the top of the slit will interfere destructively with the source located just below the middle of the slit at the same angle. We can continue this reasoning along the entire height of the slit to conclude that the condition for destructive interference for the entire slit is the same as the condition for destructive interference between two narrow slits a distance apart that is half the width of the slit. The path difference is approximately <math>\frac{d \sin(\theta)}{2}</math> so that the minimum intensity occurs at an angle ''θ''<sub>min</sub> given by
+
+:<math>d\,\sin\theta_\text{min} = \lambda</math>
+where
+* ''d'' is the width of the slit,
+* <math>\theta_\text{min}</math> is the angle of incidence at which the minimum intensity occurs, and
+* <math>\lambda</math> is the wavelength of the light
+
+A similar argument can be used to show that if we imagine the slit to be divided into four, six, eight parts, etc., minima are obtained at angles ''θ''<sub>''n''</sub> given by
+:<math>d\,\sin\theta_{n} = n\lambda</math>
+where
+* ''n'' is an integer other than zero.
+
+There is no such simple argument to enable us to find the maxima of the diffraction pattern. The [[diffraction formalism#Quantitative analysis of single-slit diffraction|intensity profile]] can be calculated using the [[Fraunhofer diffraction]] equation as
+:<math>I(\theta) = I_0 \,\operatorname{sinc}^2 \left( \frac{d \pi}{\lambda} \sin\theta \right)</math>
+where
+* <math>I(\theta)</math> is the intensity at a given angle,
+* <math>I_0</math> is the intensity at the central maximum (<math>\theta=0</math>), which is also a normalization factor of the intensity profile that can be determined by an integration from <math>\theta=-\frac{\pi}{2}</math> to <math>\theta=\frac{\pi}{2}</math> and conservation of energy.
+*<math>\operatorname{sinc} (x) = 
+\begin{cases}
+\frac{\sin x}{x},&x\neq 0\\
+1,&x=0
+\end{cases}</math> is the [[unnormalized sinc function]].
+
+This analysis applies only to the [[far field]] ([[Fraunhofer diffraction]]), that is, at a distance much larger than the width of the slit.
+
+From the [[diffraction formalism#Quantitative analysis of single-slit diffraction|intensity profile]] above, if <math>d \ll \lambda</math>, the intensity will have little dependency on <math>\theta</math>, hence the wavefront emerging from the slit would resemble a cylindrical wave with azimuthal symmetry; If <math>d \gg \lambda</math>, only <math>\theta \approx 0</math> would have appreciable intensity, hence the wavefront emerging from the slit would resemble that of [[geometrical optics]].
+
+When the incident angle <math>\theta_\text{i}</math> of the light onto the slit is non-zero (which causes a change in the [[Optical path length|path length]]), the intensity profile in the Fraunhofer regime (i.e. far field) becomes:
+:<math>I(\theta) = I_0 \,\operatorname{sinc}^2 \left[ \frac{d \pi}{\lambda} (\sin\theta \pm \sin\theta_i)\right]</math>
+The choice of plus/minus sign depends on the definition of the incident angle <math>\theta_\text{i}</math>.[[File:Diffraction2vs5.jpg|right|thumb|2-slit (top) and 5-slit diffraction of red laser light]]
+[[File:Diffraction-red laser-diffraction grating PNr°0126.jpg|thumb|left|Diffraction of a red laser using a diffraction grating.]]
+[[File:Diffraction 150 slits.jpg|right|thumb|A diffraction pattern of a 633 nm laser through a grid of 150 slits]]
+
+===Diffraction grating===
+{{Main|Diffraction grating}}
+
+A diffraction grating is an optical component with a regular pattern. The form of the light diffracted by a grating depends on the structure of the elements and the number of elements present, but all gratings have intensity maxima at angles θ<sub>m</sub> which are given by the grating equation
+
+:<math> d \left( \sin{\theta_m} \pm \sin{\theta_i} \right) = m \lambda.</math>
+where
+* θ<sub>i</sub> is the angle at which the light is incident,
+* ''d'' is the separation of grating elements, and
+* ''m'' is an integer which can be positive or negative.
+
+The light diffracted by a grating is found by summing the light diffracted from each of the elements, and is essentially a [[convolution]] of diffraction and interference patterns.
+
+The figure shows the light diffracted by 2-element and 5-element gratings where the grating spacings are the same; it can be seen that the maxima are in the same position, but the detailed structures of the intensities are different.
+
+[[Image:Airy-pattern.svg|thumb|A computer-generated image of an '''Airy disk'''.]]
+
+[[Image:Airy2.gif|thumb| Computer generated light diffraction pattern from a circular aperture of diameter 0.5&nbsp;micrometre at a wavelength of 0.6&nbsp;micrometre (red-light) at distances of 0.1&nbsp;cm – 1&nbsp;cm in steps of 0.1&nbsp;cm. One can see the image moving from the Fresnel region into the Fraunhofer region where the
+Airy pattern is seen.]]
+
+===Circular aperture===
+{{Main|Airy disk}}
+
+The far-field diffraction of a plane wave incident on a circular aperture is often referred to as the [[Airy Disk]].  The [[Airy disk#Mathematical details|variation]] in intensity with angle is given by
+
+:<math>I(\theta) = I_0 \left ( \frac{2 J_1(ka \sin \theta)}{ka \sin \theta} \right )^2</math>,
+
+where ''a'' is the radius of the circular aperture, ''k'' is equal to 2π/λ and J<sub>1</sub> is a [[Bessel function]].  The smaller the aperture, the larger the spot size at a given distance, and the greater the divergence of the diffracted beams.
+
+===General aperture===
+The wave that emerges from a point source has amplitude <math>\psi</math> at location r that is given by the solution of the [[frequency domain]] [[wave equation]] for a point source (The [[Helmholtz Equation]]),
+
+:<math>\nabla^2 \psi + k^2 \psi = \delta(\mathbf r)</math>
+
+where <math> \delta(\mathbf r)</math> is the 3-dimensional delta function.  The delta function has only radial dependence, so the [[Laplace operator]] (a.k.a. scalar Laplacian) in the [[spherical coordinate system]] simplifies to (see [[del in cylindrical and spherical coordinates]])
+
+:<math>\nabla ^2\psi= \frac{1}{r} \frac {\partial ^2}{\partial r^2} (r \psi) </math>
+
+By direct substitution, the solution to this equation can be readily shown to be the scalar [[Green's function]], which in the [[spherical coordinate system]] (and using the physics time convention <math>e^{-i \omega t}</math>) is:
+
+:<math>\psi(r) = \frac{e^{ikr}}{4 \pi r}</math>
+
+This solution assumes that the delta function source is located at the origin.  If the source is located at an arbitrary source point, denoted by the vector <math>\mathbf r'</math> and the field point is located at the point <math>\mathbf r</math>, then we may represent the scalar [[Green's function]] (for arbitrary source location) as:
+
+:<math>\psi(\mathbf r | \mathbf r') = \frac{e^{ik | \mathbf r - \mathbf r' | }}{4 \pi | \mathbf r - \mathbf r' |}</math>
+
+Therefore, if an electric field, E<sub>inc</sub>(''x'',''y'') is incident on the aperture, the field produced by this aperture distribution is given by the [[surface integral]]:
+
+:<math>\Psi(r)\propto \iint\limits_\mathrm{aperture} E_\mathrm{inc}(x',y')~ \frac{e^{ik | \mathbf r - \mathbf r'|}}{4 \pi | \mathbf r - \mathbf r' |} \,dx'\, dy',</math>
+
+[[Image:Fraunhofer.svg|upright=1.4|thumb|On the calculation of Fraunhofer region fields]]
+where the source point in the aperture is given by the vector
+
+:<math>\mathbf{r}' = x' \mathbf{\hat{x}} + y' \mathbf{\hat{y}}</math>
+
+In the far field, wherein the parallel rays approximation can be employed, the Green's function,
+
+:<math>\psi(\mathbf r | \mathbf r') = \frac{e^{ik | \mathbf r - \mathbf r' |} }{4 \pi | \mathbf r - \mathbf r' |}</math>
+
+simplifies to
+
+:<math> \psi(\mathbf{r} | \mathbf{r}') = \frac{e^{ik r}}{4 \pi r} e^{-ik ( \mathbf{r}' \cdot \mathbf{\hat{r}})}</math>
+
+as can be seen in the figure to the right (click to enlarge).
+
+The expression for the far-zone (Fraunhofer region) field becomes
+
+:<math>\Psi(r)\propto \frac{e^{ik r}}{4 \pi r} \iint\limits_\mathrm{aperture} E_\mathrm{inc}(x',y') e^{-ik  ( \mathbf{r}' \cdot \mathbf{\hat{r}} ) } \, dx' \,dy',</math>
+
+Now, since
+
+:<math>\mathbf{r}' = x' \mathbf{\hat{x}} + y' \mathbf{\hat{y}}</math>
+
+and
+
+:<math>\mathbf{\hat{r}} =  \sin \theta \cos \phi \mathbf{\hat{x}} + \sin \theta ~ \sin \phi ~ \mathbf{\hat{y}} +  \cos \theta \mathbf{\hat{z}}</math>
+
+the expression for the Fraunhofer region field from a planar aperture now becomes,
+
+:<math>\Psi(r)\propto \frac{e^{ik r}}{4 \pi r} \iint\limits_\mathrm{aperture} E_\mathrm{inc}(x',y') e^{-ik \sin \theta (\cos \phi x' + \sin \phi y')} \, dx'\, dy'</math>
+
+Letting,
+
+:<math>k_x = k \sin \theta \cos \phi \,\!</math>
+
+and
+
+:<math>k_y = k \sin \theta \sin \phi \,\!</math>
+
+the Fraunhofer region field of the planar aperture assumes the form of a [[Fourier transform]]
+
+:<math>\Psi(r)\propto \frac{e^{ik r}}{4 \pi r} \iint\limits_\mathrm{aperture} E_\mathrm{inc}(x',y') e^{-i (k_x  x' + k_y  y') } \,dx'\, dy',</math>
+
+In the far-field / Fraunhofer region, this becomes the spatial [[Fourier transform]] of the aperture distribution.  Huygens' principle when applied to an aperture simply says that the [[far-field diffraction pattern]] is the spatial Fourier transform of the aperture shape, and this is a direct by-product of using the parallel-rays approximation, which is identical to doing a plane wave decomposition of the aperture plane fields (see [[Fourier optics]]).
+
+===Propagation of a laser beam===
+The way in which the beam profile of a [[laser|laser beam]] changes as it propagates is determined by diffraction. When the entire emitted beam has a planar, spatially [[Coherence (physics)|coherent]] wave front, it approximates [[Gaussian beam]] profile and has the lowest divergence for a given diameter. The smaller the output beam, the quicker it diverges. It is possible to reduce the divergence of a laser beam by first expanding it with one [[convex lens]], and then collimating it with a second convex lens whose focal point is coincident with that of the first lens. The resulting beam has a larger diameter, and hence a lower divergence. Divergence of a laser beam may be reduced below the diffraction of a Gaussian beam or even reversed to convergence if the refractive index of the propagation media increases with the light intensity.<ref>{{cite journal|last1=Chiao|first1=R. Y.|last2=Garmire|first2=E.|last3=Townes|first3=C. H.|title=Self-Trapping of Optical Beams|journal=Physical Review Letters|date=1964|volume=13|issue=15|pages=479–482|url=http://journals.aps.org/prl/pdf/10.1103/PhysRevLett.13.479|bibcode = 1964PhRvL..13..479C |doi = 10.1103/PhysRevLett.13.479 }}</ref> This may result in a [[self-focusing]] effect.
+
+When the wave front of the emitted beam has perturbations, only the transverse coherence length (where the wave front perturbation is less than 1/4 of the wavelength) should be considered as a Gaussian beam diameter when determining the divergence of the laser beam. If the transverse coherence length in the vertical direction is higher than in horizontal, the laser beam divergence will be lower in the vertical direction than in the horizontal.
+
+===Diffraction-limited imaging===
+{{Main|Diffraction-limited system}}
+
+[[Image:zboo lucky image 1pc.png|frame|The Airy disk around each of the stars from the 2.56 m telescope aperture can be seen in this ''[[lucky imaging|lucky image]]'' of the [[binary star]] [[zeta Boötis]].]]
+
+The ability of an imaging system to resolve detail is ultimately limited by [[diffraction-limited|diffraction]].  This is because a plane wave incident on a circular lens or mirror is diffracted as described above. The light is not focused to a point but forms an [[Airy disk]] having a central spot in the focal plane whose radius (as measured to the first null) is
+
+:<math> \Delta x = 1.22 \lambda N  </math>
+
+where λ is the wavelength of the light and ''N'' is the [[f-number]] (focal length ''f'' divided by aperture diameter D) of the imaging optics; this is strictly accurate for N≫1 ([[paraxial]] case).  In object space, the corresponding [[angular resolution]] is
+
+:<math>  \theta \approx  \sin \theta = 1.22 \frac{\lambda}{D},\, </math>
+
+where ''D'' is the diameter of the [[entrance pupil]] of the imaging lens (e.g., of a telescope's main mirror).
+
+Two point sources will each produce an Airy pattern – see the photo of a binary star.  As the point sources move closer together, the patterns will start to overlap, and ultimately they will merge to form a single pattern, in which case the two point sources cannot be resolved in the image.  The [[Rayleigh criterion]] specifies that two point sources are considered "resolved" if the separation of the two images is at least the radius of the Airy disk, i.e. if the first minimum of one coincides with the maximum of the other.
+
+Thus, the larger the aperture of the lens compared to the wavelength, the finer the resolution of an imaging system. This is one reason astronomical telescopes require large objectives, and why [[Objective (optics)#Microscope|microscope objective]]s require a large [[numerical aperture]] (large aperture diameter compared to working distance) in order to obtain the highest possible resolution.
+
+===Speckle patterns===
+{{Main|Speckle Pattern}}
+The [[speckle pattern]] which is seen when using a laser pointer is another diffraction phenomenon. It is a result of the superposition of many waves with different phases, which are produced when a laser beam illuminates a rough surface.  They add together to give a resultant wave whose amplitude, and therefore intensity, varies randomly.
+
+===Babinet's principle===
+{{Main|Babinet's principle}}
+[[Babinet's principle]] is a useful theorem stating that the diffraction pattern from an opaque body is identical to that from a hole of the same size and shape, but with differing intensities. This means that the interference conditions of a single obstruction would be the same as that of a single slit.
+
+==Patterns==
+[[File:Diffraction on elliptic aperture with fft.png|thumb|The upper half of this image shows a diffraction pattern of He-Ne laser beam on an elliptic aperture. The lower half is its 2D Fourier transform approximately reconstructing the shape of the aperture.]]
+Several qualitative observations can be made of diffraction in general:
+* The angular spacing of the features in the diffraction pattern is inversely proportional to the dimensions of the object causing the diffraction. In other words: The smaller the diffracting object, the 'wider' the resulting diffraction pattern, and vice versa. (More precisely, this is true of the [[sine]]s of the angles.)
+* The diffraction angles are invariant under scaling; that is, they depend only on the ratio of the wavelength to the size of the diffracting object.
+* When the diffracting object has a periodic structure, for example in a diffraction grating, the features generally become sharper. The third figure, for example, shows a comparison of a [[Double-slit experiment|double-slit]] pattern with a pattern formed by five slits, both sets of slits having the same spacing, between the center of one slit and the next.
+
+==Particle diffraction==
+{{see also|neutron diffraction|electron diffraction}}
+According to quantum theory every particle exhibits wave properties. In particular, massive particles can interfere with themselves and therefore diffract. Diffraction of electrons and neutrons stood as one of the powerful arguments in favor of quantum mechanics. The wavelength associated with a particle is the [[de Broglie wavelength]]
+
+:<math>\lambda=\frac{h}{p} \,</math>
+
+where ''h'' is [[Planck's constant]] and ''p'' is the [[momentum]] of the particle (mass × velocity for slow-moving particles).
+
+For most macroscopic objects, this wavelength is so short that it is not meaningful to assign a wavelength to them.  A sodium atom traveling at about 30,000&nbsp;m/s would have a De Broglie wavelength of about 50 pico meters.
+
+Because the wavelength for even the smallest of macroscopic objects is extremely small, diffraction of matter waves is only visible for small particles, like electrons, neutrons, atoms and small molecules. The short wavelength of these matter waves makes them ideally suited to study the atomic crystal structure of solids and large molecules like proteins.
+
+Relatively larger molecules like [[buckyball]]s were also shown to diffract.<ref>{{cite journal|journal=Physical Review Letters|title=Matter–Wave Interferometer for Large Molecules|last=Brezger|first=B.|author2=Hackermüller, L.|author3=Uttenthaler, S.|author4=Petschinka, J.|author5=Arndt, M.|author6=Zeilinger, A.|volume=88|issue=10|pages=100404|date=February 2002|doi=10.1103/PhysRevLett.88.100404|url=http://homepage.univie.ac.at/Lucia.Hackermueller/unsereArtikel/Brezger2002a.pdf|format=reprint|accessdate=2007-04-30|pmid=11909334|bibcode=2002PhRvL..88j0404B|arxiv=quant-ph/0202158|s2cid=19793304|url-status=live|archiveurl=https://web.archive.org/web/20070813092642/http://homepage.univie.ac.at/Lucia.Hackermueller/unsereArtikel/Brezger2002a.pdf|archivedate=2007-08-13}}</ref>
+
+==Bragg diffraction==
+[[Image:X-ray diffraction pattern 3clpro.jpg|thumb|Following [[Bragg's law]], each dot (or ''reflection'') in this diffraction pattern forms from the constructive interference of X-rays passing through a crystal. The data can be used to determine the crystal's atomic structure.]]
+{{details|Bragg diffraction}}
+Diffraction from a three-dimensional periodic structure such as atoms in a crystal is called [[Bragg diffraction]].
+It is similar to what occurs when waves are scattered from a [[diffraction grating]]. Bragg diffraction is a consequence of interference between waves reflecting from different crystal planes.
+The condition of constructive interference is given by ''Bragg's law'':
+
+:<math> m \lambda = 2 d \sin \theta \,</math>
+where
+:λ is the wavelength,
+:''d'' is the distance between crystal planes,
+:θ is the angle of the diffracted wave.
+:and ''m'' is an integer known as the ''order'' of the diffracted beam.
+
+Bragg diffraction may be carried out using either electromagnetic radiation of very short wavelength like [[X-ray crystallography|X-rays]] or matter waves like [[Neutron diffraction|neutrons]] (and [[electron diffraction|electrons]]) whose wavelength is on the order of (or much smaller than) the atomic spacing.<ref>John M. Cowley (1975) ''Diffraction physics'' (North-Holland, Amsterdam) {{ISBN|0-444-10791-6}}</ref> The pattern produced gives information of the separations of crystallographic planes ''d'', allowing one to deduce the crystal structure.  Diffraction contrast, in [[electron microscope]]s and [[diffraction topography|x-topography devices]] in particular, is also a powerful tool for examining individual defects and local strain fields in crystals.
+
+==Coherence==
+{{main|Coherence (physics)}}
+
+The description of diffraction relies on the interference of waves emanating from the same source taking different paths to the same point on a screen. In this description, the difference in phase between waves that took different paths is only dependent on the effective path length. This does not take into account the fact that waves that arrive at the screen at the same time were emitted by the source at different times. The initial phase with which the source emits waves can change over time in an unpredictable way. This means that waves emitted by the source at times that are too far apart can no longer form a constant interference pattern since the relation between their phases is no longer time independent.<ref name=Halliday>{{citation|last1=Halliday|first1=David|last2=Resnick|first2=Robert|last3=Walker|first3=Jerl|title=Fundamental of Physics|publisher=John Wiley and Sons, Inc.|location=USA|edition=7th|isbn=978-0-471-23231-5|year=2005|url-access=registration|url=https://archive.org/details/isbn_0471216437}}</ref>{{rp|919}}
+
+The length over which the phase in a beam of light is correlated, is called the [[coherence length]]. In order for interference to occur, the path length difference must be smaller than the coherence length. This is sometimes referred to as spectral coherence, as it is related to the presence of different frequency components in the wave. In the case of light emitted by an [[Energy level|atomic transition]], the coherence length is related to the lifetime of the excited state from which the atom made its transition.<ref name="Fowles1975">{{cite book|author=Grant R. Fowles|title=Introduction to Modern Optics|year=1975|publisher=Courier Corporation|isbn=978-0-486-65957-2}}</ref>{{rp|71–74}}<ref name="Hecht2002">{{citation|last =Hecht |first=Eugene|title=Optics|year=2002| location=United States of America | publisher=Addison Wesley| edition= 4th| isbn=978-0-8053-8566-3 | language=English}}</ref>{{rp|314–316}}
+
+If waves are emitted from an extended source, this can lead to incoherence in the transversal direction. When looking at a cross section of a beam of light, the length over which the phase is correlated is called the transverse coherence length. In the case of Young's double slit experiment, this would mean that if the transverse coherence length is smaller than the spacing between the two slits, the resulting pattern on a screen would look like two single slit diffraction patterns.<ref name="Fowles1975"/>{{rp|74–79}}
+
+In the case of particles like electrons, neutrons, and atoms, the coherence length is related to the spatial extent of the wave function that describes the particle.<ref name="IchimiyaCohen2004">{{cite book|author1=Ayahiko Ichimiya|author2=Philip I. Cohen|title=Reflection High-Energy Electron Diffraction|url=https://books.google.com/books?id=AUVbPerNxTcC|date=13 December 2004|publisher=Cambridge University Press|isbn=978-0-521-45373-8|url-status=live|archiveurl=https://web.archive.org/web/20170716041343/https://books.google.com/books?id=AUVbPerNxTcC|archivedate=16 July 2017}}</ref>{{rp|107}}
+
+== Applications ==
+
+=== Diffraction before destruction ===
+A new way to image single biological particles has emerged over the last few years, utilising the bright X-rays generated by [[Free-electron laser|X-ray free electron lasers]]. These femtosecond-duration pulses will allow for the (potential) imaging of single biological macromolecules. Due to these short pulses, radiation damage can be outrun, and diffraction patterns of single biological macromolecules will be able to be obtained.<ref>{{Cite journal|last=Neutze|first=Richard|last2=Wouts|first2=Remco|last3=van der Spoel|first3=David|last4=Weckert|first4=Edgar|last5=Hajdu|first5=Janos|date=August 2000|title=Potential for biomolecular imaging with femtosecond X-ray pulses|url=https://www.nature.com/articles/35021099|journal=Nature|language=en|volume=406|issue=6797|pages=752–757|doi=10.1038/35021099|issn=1476-4687}}</ref><ref>{{Cite journal|last=Chapman|first=Henry N.|last2=Caleman|first2=Carl|last3=Timneanu|first3=Nicusor|date=2014-07-17|title=Diffraction before destruction|url=https://royalsocietypublishing.org/doi/10.1098/rstb.2013.0313|journal=Philosophical Transactions of the Royal Society B: Biological Sciences|volume=369|issue=1647|pages=20130313|doi=10.1098/rstb.2013.0313|pmc=4052855|pmid=24914146}}</ref>
+
+==See also==
+{{div col|colwidth=22em}}
+* [[Angle-sensitive pixel]]
+* [[Atmospheric diffraction]]
+* [[Bragg diffraction]]
+* [[Brocken spectre]]
+* [[Cloud iridescence]]
+* [[Coherent diffraction imaging]]
+* [[Diffraction formalism]]
+* [[Diffraction limit]]
+* [[Diffraction spike]]
+* [[Diffraction vs. interference]]
+* [[Diffractometer]]
+* [[Dynamical theory of diffraction]]
+* [[Electron diffraction]]
+* [[Fraunhofer diffraction]]
+* [[Fresnel diffraction]]
+* [[Fresnel imager]]
+* [[Fresnel number]]
+* [[Fresnel zone]]
+* [[Neutron diffraction]]
+* [[Prism (optics)|Prism]]
+* [[Powder diffraction]]
+* [[Refraction]]
+* [[Schaefer–Bergmann diffraction]]
+* [[Thinned array curse]]
+* [[X-ray scattering techniques]]
+{{div col end}}
+
+==References==
+{{reflist|30em}}
+
+==External links==
+{{commons|Diffraction}}
+* {{cite web |title=Scattering and diffraction |url=https://www.xtal.iqfr.csic.es/Cristalografia/parte_05-en.html |website=Crystallography |publisher=[[International Union of Crystallography]]}}
+
+{{Wikibooks|Nanotechnology|Nano-optics}}
+
+{{Authority control}}
+
+[[Category:Diffraction| ]]
+[[Category:Concepts in physics]]

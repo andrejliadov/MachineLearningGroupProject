@@ -1,0 +1,738 @@
+This is a list of [[physical quantity|physical quantities]].
+
+The first table lists the [[Base quantity|base quantities]] used in the [[International System of Units]] to define the physical dimension of physical quantities for [[dimensional analysis]]. The second table lists the derived physical quantities. Derived quantities can be mentioned in terms of the base quantities.
+
+Note that neither the names nor the symbols used for the physical quantities are international standards. Some quantities are known as several different names such as the magnetic ''B-field'' which known as the ''magnetic flux density'', the ''magnetic induction'' or simply as the ''magnetic field'' depending on the context. Similarly, surface tension can be denoted by either ''σ'', ''γ'' or ''T''. The table usually lists only one name and symbol.
+
+The final column lists some special properties that some of the quantities have, such as their scaling behavior (i.e. whether the quantity is [[intensive and extensive properties|intensive or extensive]]), their transformation properties (i.e. whether the quantity is a [[scalar (mathematics)|scalar]], [[Euclidean vector|vector]] or [[tensor]]), and whether the quantity is conserved.
+
+{| class="wikitable" style="1" cellspacing="0" cellpadding="3" style="width:100%;text-align:left"
+|-
+! style="width:20ex" | Base quantity
+! style="width: 5ex" | Symbol
+! style="min-width:20ex" class="unsortable"| Description
+! style="width:30ex" class="unsortable"| [[SI base unit]]
+! style="width:15ex" class="unsortable"| [[Dimensional analysis|Dimension]]
+! style="width:25ex" class="unsortable"| Comments
+|-style="width:30ex" class="unsortable"| formular
+|[[Length]]
+| style="text-align: center" | ''l''
+|The one-dimensional extent of an object
+|[[metre]] (m)
+| style="text-align: center" | '''L'''
+| extensive
+|-
+|[[Mass]]
+| style="text-align: center" | ''m''
+|A measure of resistance to acceleration
+|[[kilogram]] (kg)
+| style="text-align: center" | '''M'''
+|[[Intensive and extensive properties#Extensive properties|extensive]], scalar
+|-
+|[[Time]]
+| style="text-align: center" | ''t''
+|The duration of an event
+|[[second]] (s)
+| style="text-align: center" | '''T'''
+|scalar
+|-
+|[[Electric Current]]
+| style="text-align: center" | ''I''
+|Rate of flow of ''electrical'' charge per unit time
+|[[ampere]] (A)
+| style="text-align: center" | '''I'''
+|extensive
+|-
+|[[Temperature]]
+| style="text-align: center" | ''T''
+|Average [[kinetic energy]] per [[degrees of freedom (physics and chemistry)|degree of freedom]] of a system
+|[[kelvin]] (K)
+| style="text-align: center" | '''Θ'''
+|[[Intensive and extensive properties#Intensive properties|intensive]], scalar
+|-
+|[[Amount of substance]]
+| style="text-align: center" | ''n''
+|The quantity proportional to the number of particles in a sample, with the [[Avogadro constant]] as the proportionality constant
+|[[mole (unit)|mole]] (mol)
+| style="text-align: center" | '''N'''
+|extensive, scalar
+|-
+|[[Luminous intensity]]
+| style="text-align: center" | ''I''<sub>v</sub>
+|Wavelength-weighted power of emitted light per unit solid angle
+|[[candela]] (cd)
+| style="text-align: center" | '''J'''
+|scalar 
+|-
+|}
+
+
+{{Expand list|date=May 2014}}
+{| class="wikitable sortable" style="width:100%;min-width:95ex;text-align:left" cellspacing="0" cellpadding="3" border="1" align="center"
+|-
+! style="width:18ex" | [[SI derived quantity|Derived quantity]]
+! style="width: 5ex" | Symbol
+! style="min-width:20ex" class="unsortable" | Description
+! style="width:30ex" class="unsortable" | [[SI derived unit]]
+! style="width:15ex" class="unsortable" | [[Dimensional analysis|Dimension]]
+! style="width:25ex" class="unsortable" | Comments
+|-
+|[[Absement]]
+| style="text-align: center" | ''A''
+|Measure of sustained displacement: the first integral with respect to time of displacement
+| m⋅s
+| style="text-align: center" | '''L''' '''T'''
+|vector
+|-
+|[[Absorbed dose rate]]
+|
+|[[Absorbed dose]] received per unit of time
+|Gy/s
+| style="text-align: center" | '''L'''<sup>2</sup> '''T'''<sup>−3</sup>
+|
+|-
+|[[Acceleration]]
+| style="text-align: center" | {{vec|{{math|''a''}}}}
+|Rate of change of velocity per unit time: the second time derivative of position
+| m/s<sup>2</sup>
+| style="text-align: center" | '''L''' '''T'''<sup>−2</sup>
+|vector
+|-
+|[[Angular acceleration]]
+| style="text-align: center" | ''ω''<sub>a</sub>
+|Change in angular velocity per unit time
+| rad/s<sup>2</sup>
+| style="text-align: center" | '''T'''<sup>−2</sup>
+|
+|-
+|[[Angular momentum]]
+| style="text-align: center" | ''L''
+|Measure of the extent and direction an object rotates about a reference point
+| kg⋅m<sup>2</sup>/s
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−1</sup>
+|conserved, bivector
+|-
+|[[Angular velocity]]
+| style="text-align: center" | ''ω''
+|The angle incremented in a plane by a segment connecting an object and a reference point per unit time
+| rad/s
+| style="text-align: center" | '''T'''<sup>−1</sup>
+|bivector
+|-
+|[[Area]]
+| style="text-align: center" | ''A''
+|Extent of a surface
+| m<sup>2</sup>
+| style="text-align: center" | '''L'''<sup>2</sup>
+|extensive, bivector or scalar
+|-
+|[[Area density]]
+| style="text-align: center" | ''ρ''<sub>A</sub>
+|Mass per unit area
+| kg⋅m<sup>−2</sup>
+| style="text-align: center" | '''M''' '''L'''<sup>−2</sup>
+|intensive
+|-
+|[[Capacitance]]
+| style="text-align: center" | ''C''
+|Stored charge per unit electric potential
+| [[farad]] (F = C/V)
+| style="text-align: center" | '''M'''<sup>−1</sup> '''L'''<sup>−2</sup> '''T'''<sup>4</sup> '''I'''<sup>2</sup>
+|scalar
+|-
+|[[Catalytic activity concentration]]
+|
+|Change in [[reaction rate]] due to presence of a [[catalyst]] per unit volume of the system
+| kat⋅m<sup>−3</sup>
+| style="text-align: center" | '''L'''<sup>−3</sup> '''T'''<sup>−1</sup> '''N'''
+|intensive
+|-
+|[[Chemical potential]]
+| style="text-align: center" | ''μ''
+|Energy per unit change in amount of substance
+| J/mol
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−2</sup> '''N'''<sup>−1</sup>
+|intensive
+|-
+|[[Crackle (physics)|Crackle]]
+| style="text-align: center" | {{vec|{{math|''c''}}}}
+|Change of jounce per unit time: the fifth time derivative of position
+| m/s<sup>5</sup>
+| style="text-align: center" | '''L''' '''T'''<sup>−5</sup>
+|vector
+|-
+|[[Current density]]
+| style="text-align: center" | {{math|{{vec|''J ''}}}}
+|Electric current per unit cross-section area
+| A/m<sup>2</sup>
+| style="text-align: center" | '''L'''<sup>−2</sup> '''I'''
+|conserved, intensive, vector
+|-
+|[[Dose equivalent]]
+| style="text-align: center" | ''H''
+|Received radiation adjusted for the effect on biological tissue
+| [[sievert]] (Sv = m<sup>2</sup>/s<sup>2</sup>)
+| style="text-align: center" | '''L'''<sup>2</sup> '''T'''<sup>−2</sup>
+|intensive
+|-
+|[[Dynamic viscosity]]
+| style="text-align: center" |{{math|''v''}}
+|Measure for the resistance of an incompressible fluid to stress
+| Pa⋅s
+| style="text-align: center" | '''M''' '''L'''<sup>−1</sup> '''T'''<sup>−1</sup>
+|intensive
+|-
+|[[Electric charge]]
+| style="text-align: center" | ''Q''
+|The force per unit electric field strength
+| [[coulomb]] (C = A⋅s)
+| style="text-align: center" | '''T''' '''I'''
+|extensive, conserved
+|-
+|[[Electric charge density]]
+| style="text-align: center" | ''ρ<sub>Q</sub>''
+|Electric charge per unit volume
+| C/m<sup>3</sup>
+| style="text-align: center" | '''L'''<sup>−3</sup> '''T''' '''I'''
+|intensive
+|-
+|[[Electric displacement field]]
+| style="text-align: center" | {{math|{{vec|''D''}}}}
+|Strength of the electric displacement
+| C/m<sup>2</sup>
+| style="text-align: center" | '''L'''<sup>−2</sup> '''T''' '''I'''
+|vector field
+|-
+|[[Electric field strength]]
+| style="text-align: center" | {{math|{{vec|''E''}}}}
+|Strength of the electric field
+| V/m
+| style="text-align: center" | '''M'''  '''L''' '''T'''<sup>−3</sup> '''I'''<sup>−1</sup> 
+|[[vector field]]
+|-
+|[[Electrical conductance]]
+| style="text-align: center" | ''G''
+|Measure for how easily current flows through a material
+| [[siemens (unit)|siemens]] (S = Ω<sup>−1</sup>)
+| style="text-align: center" | '''M'''<sup>−1</sup> '''L'''<sup>−2</sup> '''T'''<sup>3</sup> '''I'''<sup>2</sup>
+|scalar
+|-
+|[[Electrical conductivity]]
+| style="text-align: center" | ''[[σ]]''
+|Measure of a material's ability to conduct an electric current
+| S/m
+| style="text-align: center" | '''M'''<sup>−1</sup> '''L'''<sup>−3</sup> '''T'''<sup>3</sup> '''I'''<sup>2</sup>
+|scalar
+|-
+|[[Electric potential]]
+| style="text-align: center" | ''φ''
+|Energy required to move a unit charge through an electric field from a reference point
+| [[volt]] (V = J/C)
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−3</sup> '''I'''<sup>−1</sup>
+|extensive, scalar
+|-
+|[[Electrical resistance]]
+| style="text-align: center" | ''R''
+|Electric potential per unit electric current
+| [[Ohm (unit)|ohm]] (Ω = V/A)
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−3</sup> '''I'''<sup>−2</sup>
+|extensive, scalar, assumes linearity
+|-
+|[[Electrical resistivity]]
+| style="text-align: center" | ''ρ''<sub>e</sub>
+|Bulk property equivalent of electrical resistance
+| [[ohm]]-[[metre]] (Ω⋅m)
+| style="text-align: center" | '''M''' '''L'''<sup>3</sup> '''T'''<sup>−3</sup> '''I'''<sup>−2</sup>
+|extensive, scalar, conserved
+|-
+|[[Energy]]
+| style="text-align: center" | ''E''
+|Energy 
+| J
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−2</sup>
+|
+|-
+|[[Energy density]]
+| style="text-align: center" | ''ρ''<sub>E</sub>
+|Energy per unit volume
+| J⋅m<sup>−3</sup>
+| style="text-align: center" | '''M''' '''L'''<sup>−1</sup> '''T'''<sup>−2</sup>
+|intensive
+|-
+|[[Entropy]]
+| style="text-align: center" | ''S''
+|Logarithmic measure of the number of available states of a system
+| J/K
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−2</sup> '''Θ'''<sup>−1</sup>
+|extensive, scalar
+|-
+|[[Force]]
+| style="text-align: center" | {{vec|{{math|''F''}}}}
+|Transfer of momentum per unit time
+| [[newton (unit)|newton]] (N = kg⋅m⋅s<sup>−2</sup>)
+| style="text-align: center" | '''M''' '''L''' '''T'''<sup>−2</sup>
+|extensive, vector
+|-
+|[[Frequency]]
+| style="text-align: center" | ''f''
+|Number of (periodic) occurrences per unit time
+| [[hertz]] (Hz = s<sup>−1</sup>)
+| style="text-align: center" | '''T'''<sup>−1</sup>
+|scalar
+|-
+|[[Half-life]]
+| style="text-align: center" | ''t''<sub>1/2</sub>
+|Time for a quantity to decay to half its initial value
+| s
+| style="text-align: center" | '''T'''
+|
+|-
+|[[Heat]]
+| style="text-align: center" | ''Q''
+|[[Thermal energy]]
+| [[joule]] (J)
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−2</sup>
+|
+|-
+|[[Heat capacity]]
+| style="text-align: center" | ''C<sub>p</sub>''
+|Energy per unit temperature change
+| J/K
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−2</sup> '''Θ'''<sup>−1</sup>
+|extensive
+|-
+|[[Heat flux|Heat flux density]]
+| style="text-align: center" | ''ϕ<sub>Q</sub>''
+|Heat flow per unit time per unit surface area
+| W/m<sup>2</sup>
+| style="text-align: center" | '''M''' '''T'''<sup>−3</sup>
+|
+|-
+|[[Illuminance]]
+| style="text-align: center" | ''E''<sub>v</sub>
+|Luminous flux per unit surface area
+| [[lux]] (lx = cd⋅sr/m<sup>2</sup>)
+| style="text-align: center" | '''L'''<sup>−2</sup> '''J'''
+|
+|-
+|[[Electrical impedance|Impedance]]
+| style="text-align: center" | ''Z''
+|Resistance to an alternating current of a given frequency, including effect on phase
+| [[Ohm (unit)|ohm]] (Ω)
+| style="text-align: center" |  '''M''' '''L'''<sup>2</sup> '''T'''<sup>−3</sup> '''I'''<sup>−2</sup>
+|complex scalar
+|-
+|[[Impulse (physics)|Impulse]]
+| style="text-align: center" | ''J''
+|Transferred momentum
+| [[newton-second]] (N⋅s = kg⋅m/s)
+| style="text-align: center" | '''M''' '''L''' '''T'''<sup>−1</sup>
+|vector
+|-
+|[[Inductance]]
+| style="text-align: center" | ''L''
+|Magnetic flux generated per unit current through a circuit
+| [[henry (unit)|henry]] (H)
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−2</sup> '''I'''<sup>−2</sup>
+|scalar
+|-
+|[[Irradiance]]
+| style="text-align: center" | ''E''
+|Electromagnetic radiation power per unit surface area
+| W/m<sup>2</sup>
+| style="text-align: center" | '''M''' '''T'''<sup>−3</sup>
+|intensive
+|-
+|[[Intensity (physics)|Intensity]]
+| style="text-align: center" | ''I''
+|Power per unit cross sectional area
+| W/m<sup>2</sup>
+| style="text-align: center" | '''M''' '''T'''<sup>−3</sup>
+|intensive
+|-
+|[[Jerk (physics)|Jerk]]
+| style="text-align: center" | {{vec|{{math|''j''}}}}
+|Change of acceleration per unit time: the third time derivative of position
+| m/s<sup>3</sup>
+| style="text-align: center" | '''L''' '''T'''<sup>−3</sup>
+|vector
+|-
+|[[Jounce]] (or ''snap'')
+| style="text-align: center" | {{vec|{{math|''s''}}}}
+|Change of jerk per unit time: the fourth time derivative of position
+| m/s<sup>4</sup>
+| style="text-align: center" | '''L''' '''T'''<sup>−4</sup>
+|vector
+|-
+|[[Linear density]]
+| style="text-align: center" | ''ρ''<sub>l</sub>
+|Mass per unit length
+| kg⋅m<sup>−1</sup>
+| style="text-align: center" | '''M''' '''L'''<sup>−1</sup>
+|
+|-
+|[[Luminous flux]] (or ''luminous power'')
+| style="text-align: center" | ''F''
+|Perceived power of a light source
+| [[Lumen (unit)|lumen]] (lm = cd⋅sr)
+| style="text-align: center" | '''J'''
+|
+|-
+|[[Mach number]] (or ''mach'')
+| style="text-align: center" | ''M''
+|Ratio of flow velocity to the local speed of sound
+| [[unitless]]
+| style="text-align: center" | '''1'''
+|
+|-
+|[[Magnetic field strength]]
+| style="text-align: center" | ''H''
+|Strength of a magnetic field
+| A/m
+| style="text-align: center" | '''L'''<sup>−1</sup> '''I'''
+|vector field
+|-
+|[[Magnetic flux]]
+| style="text-align: center" | ''Φ''
+|Measure of [[magnetism]], taking account of the strength and the extent of a [[magnetic field]]
+| [[Weber (unit)|weber]] (Wb)
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−2</sup> '''I'''<sup>−1</sup>
+|scalar
+|-
+|[[Magnetic flux density]]
+| style="text-align: center" | ''B''
+|Measure for the strength of the magnetic field
+| [[Tesla (unit)|tesla]] (T = Wb/m<sup>2</sup>)
+| style="text-align: center" | '''M''' '''T'''<sup>−2</sup> '''I'''<sup>−1</sup>
+|pseudovector field
+|-
+|[[Magnetization]]
+| style="text-align: center" | ''M''
+|Amount of magnetic moment per unit volume
+| A/m
+| style="text-align: center" | '''L'''<sup>−1</sup> '''I'''
+|vector field
+|-
+|[[Mass fraction (chemistry)|Mass fraction]]
+| style="text-align: center" | ''x''
+|Mass of a substance as a fraction of the total mass
+| kg/kg
+| style="text-align: center" | '''1'''
+|intensive
+|-
+|[[Density|(Mass) Density]] (or ''volume density'')
+| style="text-align: center" | ''ρ''
+|Mass per unit volume
+| kg/m<sup>3</sup>
+| style="text-align: center" | '''M''' '''L'''<sup>−3</sup>
+|intensive
+|-
+|[[Mean lifetime]]
+| style="text-align: center" | ''[[τ]]''
+|Average time for a particle of a substance to decay
+| s
+| style="text-align: center" | '''T'''
+|intensive
+|-
+|[[Molar concentration]]
+| style="text-align: center" | ''C''
+|Amount of substance per unit volume
+| mol⋅m<sup>−3</sup>
+| style="text-align: center" | '''L'''<sup>−3</sup> '''N'''
+|intensive
+|-
+|[[Molar energy]]
+|
+|Amount of energy present in a system per unit amount of substance
+| J/mol
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−2</sup> '''N'''<sup>−1</sup>
+|intensive
+|-
+|[[Molar entropy]]
+|
+|Entropy per unit amount of substance
+| J/(K⋅mol)
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−2</sup> '''Θ'''<sup>−1</sup> '''N'''<sup>−1</sup>
+|intensive
+|-
+|[[Molar heat capacity]]
+| style="text-align: center" | ''c''
+|Heat capacity of a material per unit amount of substance
+| J/(K⋅mol)
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−2</sup> '''Θ'''<sup>−1</sup> '''N'''<sup>−1</sup>
+|intensive
+|-
+|[[Moment of inertia]]
+| style="text-align: center" | ''I''
+|Inertia of an object with respect to angular acceleration
+| kg⋅m<sup>2</sup>
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup>
+|extensive, tensor, scalar
+|-
+|[[Momentum]]
+| style="text-align: center" | {{vec|{{math|''p''}}}}
+|Product of an object's mass and velocity
+| kg⋅m/s
+| style="text-align: center" | '''M''' '''L''' '''T'''<sup>−1</sup>
+|vector, extensive
+|-
+|[[Permeability (electromagnetism)|Permeability]]
+| style="text-align: center" | ''μ<sub>s</sub>''
+|Measure for how the magnetization of material is affected by the application of an external magnetic field
+| H/m
+| style="text-align: center" | '''M''' '''L''' '''T'''<sup>−2</sup> '''I'''<sup>−2</sup>
+|intensive
+|-
+|[[Permittivity]]
+| style="text-align: center" | ''ε<sub>s</sub>''
+|Measure for how the polarization of a material is affected by the application of an external electric field
+| F/m
+| style="text-align: center" | '''M'''<sup>−1</sup> '''L'''<sup>−3</sup> '''T'''<sup>4</sup> '''I'''<sup>2</sup>
+|intensive
+|-
+|[[Plane angle]]
+| style="text-align: center" | ''θ''
+|Ratio of circular [[Arc (geometry)|arc]] length to radius
+| [[radian]] (rad)
+| style="text-align: center" | '''1'''
+|
+|-
+|[[Power (physics)|Power]]
+| style="text-align: center" | ''P''
+|Rate of transfer of energy per unit time
+| [[watt]] (W)
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−3</sup>
+|extensive, scalar
+|-
+|[[Pressure]]
+| style="text-align: center" | ''p''
+|Force per unit area
+| [[pascal (unit)|pascal]] (Pa = N/m<sup>2</sup>)
+| style="text-align: center" | '''M''' '''L'''<sup>−1</sup> '''T'''<sup>−2</sup>
+|intensive, scalar
+|-
+|[[Pop (motion)|Pop]]
+| style="text-align: center" | {{vec|{{math|''p''}}}}
+|Rate of change of crackle per unit time: the sixth time derivative of position
+| m/s<sup>6</sup>
+| style="text-align: center" | '''L''' '''T'''<sup>−6</sup>
+|vector
+|-
+|[[Activity (radioactivity)|(Radioactive) Activity]]
+| style="text-align: center" | ''A''
+|Number of particles decaying per unit time
+| [[becquerel]] (Bq = Hz)
+| style="text-align: center" | '''T'''<sup>−1</sup>
+|extensive, scalar
+|-
+|[[absorbed dose|(Radioactive) Dose]]
+| style="text-align: center" | ''D''
+|Ionizing radiation energy absorbed by biological tissue per unit mass
+| [[gray (unit)|gray]] (Gy = m<sup>2</sup>/s<sup>2</sup>)
+| style="text-align: center" | '''L'''<sup>2</sup> '''T'''<sup>−2</sup>
+|
+|-
+|[[Radiance]]
+| style="text-align: center" | ''L''
+|Power of emitted electromagnetic radiation per unit solid angle per emitting source area
+| W/(m<sup>2</sup>⋅sr)
+| style="text-align: center" | '''M''' '''T'''<sup>−3</sup>
+|
+|-
+|[[Radiant intensity]]
+| style="text-align: center" | ''I''
+|Power of emitted electromagnetic radiation per unit solid angle
+| W/sr
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−3</sup>
+|scalar
+|-
+|[[Reaction rate]]
+| style="text-align: center" | ''r''
+|Rate of a chemical reaction for unit time
+| mol/(m<sup>3</sup>⋅s)
+| style="text-align: center" | '''N''' '''L'''<sup>−3</sup> '''T'''<sup>−1</sup>
+|intensive, scalar
+|-
+|[[Refractive index]]
+| style="text-align: center" | ''n''
+|Factor by which the [[phase velocity]] of light is reduced in a medium
+| unitless
+| style="text-align: center" | '''1'''
+|intensive, scalar
+|-
+|[[Magnetic reluctance|Reluctance]]
+| style="text-align: center" | <math>\mathcal{R}</math>
+| resistance to the flow of magnetic flux
+| H<sup>−1</sup>
+| style="text-align: center" | '''M'''<sup>−1</sup> '''L'''<sup>−2</sup> '''T'''<sup>2</sup> '''I'''<sup>2</sup>
+| scalar
+|-
+|[[Solid angle]]
+| style="text-align: center" | ''Ω''
+|Ratio of area on a sphere to its radius squared
+| [[steradian]] (sr)
+| style="text-align: center" | '''1'''
+|
+|-
+|[[Specific energy]]
+|
+|Energy density per unit mass
+| J⋅kg<sup>−1</sup>
+| style="text-align: center" | '''L'''<sup>2</sup> '''T'''<sup>−2</sup>
+|intensive
+|-
+|[[Specific heat capacity]]
+| style="text-align: center" | ''c''
+|Heat capacity per unit mass
+| J/(K⋅kg)
+| style="text-align: center" | '''L'''<sup>2</sup> '''T'''<sup>−2</sup> '''Θ'''<sup>−1</sup>
+|intensive
+|-
+|[[Specific volume]]
+| style="text-align: center" | ''v''
+|Volume per unit mass (reciprocal of density)
+| m<sup>3</sup>⋅kg<sup>−1</sup>
+| style="text-align: center" | '''M'''<sup>−1</sup> '''L'''<sup>3</sup>
+|intensive
+|-
+|[[Spin (physics)|Spin]]
+| style="text-align: center" | ''S''
+|Quantum-mechanically defined [[angular momentum]] of a particle
+| kg⋅m<sup>2</sup>⋅s<sup>−1</sup>
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−1</sup>
+|
+|-
+|[[Deformation (mechanics)#Strain|Strain]]
+| style="text-align: center" | ''ε''
+|Extension per unit length
+|unitless
+| style="text-align: center" | '''1'''
+|
+|- 
+|[[Stress (physics)|Stress]]
+| style="text-align: center" | ''σ''
+|Force per unit oriented surface area
+| Pa
+| style="text-align: center" | '''M''' '''L'''<sup>−1</sup> '''T'''<sup>−2</sup>
+|order 2 tensor
+|-
+|[[Surface tension]]
+| style="text-align: center" | ''γ''
+|Energy change per unit change in surface area
+| N/m or J/m<sup>2</sup>
+| style="text-align: center" | '''M''' '''T'''<sup>−2</sup>
+|
+|-
+|[[Temperature gradient]]
+| style="text-align: center" | ''<math>\nabla T</math>''
+| steepest rate of temperature change at a particular location
+| K/m
+| style="text-align: center" | '''Θ L'''<sup>−1</sup>
+| vector
+|-
+|Thermal conductance
+| style="text-align: center" |
+| Measure for the ease with which an object conducts heat
+| W/K
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−3</sup> '''Θ'''<sup>−1</sup>
+|extensive
+|-
+|[[Thermal conductivity]]
+| style="text-align: center" | ''λ''
+|Measure for the ease with which a material conducts heat
+| W/(m⋅K)
+| style="text-align: center" | '''M''' '''L''' '''T'''<sup>−3</sup> '''Θ'''<sup>−1</sup>
+|intensive
+|-
+|Thermal resistance
+| style="text-align: center" | ''R''
+| Measure for the ease with which an object resists conduction of heat
+| K/W
+| style="text-align: center" | '''M'''<sup>−1</sup> '''L'''<sup>−2</sup> '''T'''<sup>3</sup> '''Θ'''
+|extensive
+|-
+|Thermal resistivity
+| style="text-align: center" | ''R<sub>λ</sub>''
+| Measure for the ease with which a material resists conduction of heat
+| K⋅m/W
+| style="text-align: center" | '''M'''<sup>−1</sup> '''L'''<sup>−1</sup> '''T'''<sup>3</sup> '''Θ'''
+|intensive
+|-
+|[[Torque]] 
+| style="text-align: center" | ''τ''
+|Product of a force and the perpendicular distance of the force from the point about which it is exerted
+| [[newton-metre]] (N⋅m)
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−2</sup>
+|bivector (or pseudovector in 3D)
+|-
+|[[Velocity]]
+| style="text-align: center" | {{vec|{{math|''v''}}}}
+|Moved distance per unit time: the first time derivative of position
+| m/s
+| style="text-align: center" | '''L''' '''T'''<sup>−1</sup>
+|vector
+|-
+|[[Volume]]
+| style="text-align: center" | ''V''
+|Three dimensional extent of an object
+| m<sup>3</sup>
+| style="text-align: center" | '''L'''<sup>3</sup>
+|extensive, scalar
+|-
+|[[Volumetric flow rate]]
+| style="text-align: center" | ''Q''
+|Rate of change of volume with respect to time
+| m<sup>3</sup>⋅s<sup>−1</sup> 
+| style="text-align: center" | '''L'''<sup>3</sup> '''T'''<sup>−1</sup>
+|extensive, scalar
+|-
+|[[Wavelength]]
+| style="text-align: center" | ''λ''
+|Perpendicular distance between repeating units of a wave
+| m
+| style="text-align: center" | '''L'''
+|
+|-
+|[[Wavenumber]]
+| style="text-align: center" | ''k''
+|Repetency or spatial frequency: the number of cycles per unit distance
+| m<sup>−1</sup>
+| style="text-align: center" | '''L'''<sup>−1</sup>
+|scalar
+|-
+|[[Wavevector]]
+| style="text-align: center" | {{math|{{vec|''k''}}}}
+|Repetency or spatial frequency vector: the number of cycles per unit distance
+| m<sup>−1</sup>
+| style="text-align: center" | '''L'''<sup>−1</sup>
+|vector
+|-
+|[[Weight]]
+| style="text-align: center" | ''w''
+|Gravitational force on an object
+| [[newton (unit)|newton]] (N = kg⋅m/s<sup>2</sup>)
+| style="text-align: center" | '''M''' '''L''' '''T'''<sup>−2</sup>
+|vector
+|-
+|[[Mechanical work|Work]]
+| style="text-align: center" | ''W''
+|Transferred energy
+| [[joule]] (J)
+| style="text-align: center" | '''M''' '''L'''<sup>2</sup> '''T'''<sup>−2</sup>
+|scalar
+
+|-
+|[[Young's modulus]]
+| style="text-align: center" | ''E''
+|Ratio of stress to strain
+| [[pascal (unit)|pascal]] (Pa = N/m<sup>2</sup>)
+| style="text-align: center" | '''M''' '''L'''<sup>−1</sup> '''T'''<sup>−2</sup>
+|scalar; assumes isotropic linear material
+|-
+|}
+
+==See also==
+* [[Radiant exposure#SI radiometry units|List of radiometry units]]
+
+[[Category:Physics-related lists|Physical quantities]]
+[[Category:Physical quantities|*]]

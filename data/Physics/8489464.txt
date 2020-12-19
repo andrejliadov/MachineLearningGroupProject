@@ -1,0 +1,36 @@
+{{refimprove|date=July 2009}}
+
+The '''331&nbsp;model''' in [[particle physics]] is an extension of the [[electroweak]] [[gauge symmetry]] which offers an explanation of why there must be three [[Generation (particle physics)|families]] of [[quarks]] and [[leptons]]. The name “331” comes from the full gauge symmetry group <math>SU(3)_C \times SU(3)_L \times U(1)_X\,</math>.
+
+==Details==
+The '''331&nbsp;model''' in [[particle physics]] is an extension of the [[electroweak]] [[gauge symmetry]] from <math>SU(2)_W \times U(1)_Y</math> to <math>\,SU(3)_L \times U(1)_X\,</math> with <math>SU(2)_W \subset SU(3)_W</math>.
+
+In the 331&nbsp;model, hypercharge is given by
+:<math>Y = \beta\,T_8 + I\,X</math>
+
+and electric charge is given by
+:<math>Q = \frac{Y + T_3}{2}</math>
+
+where <math>T_3</math> and <math>T_8</math> are the [[Gell-Mann matrices]] of SU(3){{sub|L}} and <math>\beta</math> and <math>I</math> are parameters of the model.{{dubious|date=June 2019|T₃ and T₈ are used as scalars in scalar formulas, but are described as “Gell-Mann matrices” in the text. Suspect that they are coefs for linear combination of λ₃ and λ₈.}}
+
+==Motivation==
+The '''331&nbsp;model''' offers an explanation of why there must be three [[Generation (particle physics)|families]] of [[quarks]] and [[leptons]]. One curious feature of the [[Standard Model]] is that the [[gauge anomalies]] independently exactly cancel for each of the three known quark-lepton families. The Standard Model thus offers no explanation of why there are three families, or indeed why there is more than one family.
+
+The idea behind the 331&nbsp;model is to extend the standard model such that all three families are required for anomaly cancellation. More specifically, in this model the three families transform differently under an extended gauge group. The perfect cancellation of the anomalies within each family is ruined, but the anomalies of the extended gauge group cancel when all three families are present. The cancellation will persist for 6, 9, ... families, so having only the three families observed in nature is the least possible matter content.
+
+Such a construction necessarily requires the addition of further gauge bosons and chiral fermions, which then provide testable predictions of the model in the form of elementary particles. These particles could be found experimentally at masses above the [[electroweak scale]], which is on the order of 100&nbsp;GeV. The minimal 331&nbsp;model predicts singly and doubly charged spin-one bosons, [[bilepton]]s, which could show up in electron-electron scattering when it is studied at TeV energy scales and may also be produced in multi-TeV proton–proton scattering at the [[Large Hadron Collider]].
+
+==See also==
+*[[Physics beyond the Standard Model]]
+
+==References==
+*{{Cite journal |last=Frampton |first=P.H |authorlink=Paul Frampton |title=Chiral dilepton model and the flavor question |url=http://ccdb4fs.kek.jp/cgi-bin/img_index?199207358 |journal=[[Physical Review Letters]] |volume=69 |issue=20 |pages=2889–2891 |year=1992 |doi=10.1103/PhysRevLett.69.2889 |pmid=10046667 |bibcode=1992PhRvL..69.2889F}}{{Dead link|date=April 2019 |bot=InternetArchiveBot |fix-attempted=yes}}
+
+*{{cite journal |last1=Pisano |first1=F. |last2=Pleitez | first2=V. |title=An SU(3) × U(1) model for electroweak interactions |year=1992 |doi=10.1103/PhysRevD.46.410 |journal=Physical Review D |volume=46 |issue=1 |pages=410–417 |pmid=10014771 |arxiv=hep-ph/9206242 |bibcode = 1992PhRvD..46..410P|s2cid=116855787 }}
+
+*{{cite journal |last1=Foot |first1=R. |last2=Hernandez |first2=O.F. |last3=Pisano |first3=F. |last4=Pleitez |first4=V. |title=Lepton masses in an SU(3)<sub>L</sub> × U(1)<sub>N</sub> gauge model |year=1993 |doi=10.1103/PhysRevD.47.4158 |journal=Physical Review D |volume=47 |issue=9 |pages=4158–4161 |pmid=10016045 |arxiv=hep-ph/9207264 |bibcode=1993PhRvD..47.4158F|s2cid=10314356 }}
+
+[[Category:Particle physics]]
+
+
+{{Particle-stub}}

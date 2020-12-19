@@ -1,0 +1,470 @@
+{{About|the Fresnel equations describing reflection and refraction of light at uniform planar interfaces|the diffraction of light through an aperture|Fresnel diffraction|the thin lens and mirror technology|Fresnel lens}}
+{{Short description|equations of light transmission and reflection}}
+
+[[File:Partial transmittance.gif|right|thumb|250px|Partial transmission and reflection of a pulse travelling from a low to a high refractive index medium.]]
+{{multiple image
+ | caption_align=center
+ | header_align=center
+ | align = right
+ | total_width = 400
+ | image1 = Hospital_corridor_2.jpg
+ | image2 = Sea_and_Sun_(cropped)_2.jpg
+ | footer = At near-grazing incidence, media interfaces appear mirror-like especially due to reflection of the ''s'' polarization, despite being poor reflectors at normal incidence. [[Polarized sunglasses]] block the ''s'' polarization, greatly reducing glare from horizontal surfaces.}}
+
+The '''Fresnel equations''' (or '''Fresnel coefficients''') describe the reflection and transmission of [[light]] (or [[electromagnetic radiation]] in general) when incident on an interface between different optical [[medium (optics)|media]]. They were deduced by [[Augustin-Jean Fresnel]] ({{IPAc-en|f|r|eɪ|ˈ|n|ɛ|l}}) who was the first to understand that light is a [[transverse wave]], even though no one realized that the "vibrations" of the wave were electric and magnetic fields. For the first time, [[Polarization (waves)|polarization]] could be understood quantitatively, as Fresnel's equations correctly predicted the differing behaviour of waves of the ''s'' and ''p'' polarizations incident upon a material interface.
+
+==Overview==
+When light strikes the interface between a medium with [[refractive index]] ''n''<sub>1</sub> and a second medium with refractive index ''n''<sub>2</sub>, both [[reflection (physics)|reflection]] and [[refraction]] of the light may occur. The Fresnel equations describe the ratios of the reflected and transmitted waves' electric fields to the incident wave's electric field (the waves' magnetic fields can also be related using similar coefficients). Since these are complex ratios,  they describe not only the relative amplitude, but [[Reflection phase shift|phase shift]]s between the waves.
+
+The equations assume the interface between the media is flat and that the media are homogeneous and [[isotropy|isotropic]].<ref>Born & Wolf, 1970, p.{{hsp}}38.</ref> The incident light is assumed to be a [[plane wave]], which is sufficient to solve any problem since any incident light field can be decomposed into plane waves and polarizations.
+
+===S and P polarizations===
+{{main|Plane of incidence}}
+[[File:Plane of incidence.svg|thumb|425x425px|The plane of incidence is defined by the incoming radiation's propagation vector and the normal vector of the surface.]]
+There are two sets of Fresnel coefficients for two different linear [[polarization (waves)|polarization]]  components of the incident wave. Since any [[Polarization (waves)#Polarization state|polarization state]] can be resolved into a combination of two orthogonal linear polarizations, this is sufficient for any problem. Likewise, [[Polarization (waves)#Unpolarized and partially polarized light|unpolarized]] (or "randomly polarized") light has an equal amount of power in each of two linear polarizations.
+
+The s polarization refers to polarization of a wave's electric field ''normal'' to the plane of incidence (the {{mvar|z}} direction in the derivation below); then the magnetic field is ''in'' the plane of incidence. The p polarization refers to polarization of the electric field ''in'' the plane of incidence (the {{mvar|xy}} plane in the derivation below); then the magnetic field is ''normal'' to the plane of incidence.
+
+Although the reflectivity and transmission are dependent on polarization,  at normal incidence (''θ''&nbsp;=&nbsp;0) there is no distinction between them so all polarization states are governed by a single set of Fresnel coefficients (and another special case is mentioned [[#Equal refractive indices|below]] in which that is true).
+
+==Power (intensity) reflection and transmission coefficients==
+[[File:Fresnel1.svg|right|thumb|300px|Variables used in the Fresnel equations]]
+[[File:Fresnel power air-to-glass.svg|thumb|right|Power coefficients: air to glass]]
+[[File:Fresnel power glass-to-air.svg|thumb|right|Power coefficients: glass to air]]
+In the diagram on the right, an incident [[plane wave]] in the direction of the ray '''IO''' strikes the interface between two media of refractive indices ''n''<sub>1</sub> and ''n''<sub>2</sub> at point '''O'''. Part of the wave is reflected in the direction  '''OR''', and part refracted in the direction '''OT'''. The angles that the incident, reflected and refracted rays make to the [[surface normal|normal]] of the interface are given as ''θ''<sub>i</sub>, ''θ''<sub>r</sub> and ''θ''<sub>t</sub>, respectively.
+
+The relationship between these angles is given by the [[law of reflection]]:
+:<math>\theta_\mathrm{i} = \theta_\mathrm{r},</math>
+
+and [[Snell's law]]:
+:<math>n_1 \sin \theta_\mathrm{i} = n_2 \sin \theta_\mathrm{t}.</math>
+
+The behavior of light striking the interface is solved by considering the electric and magnetic fields that constitute an [[electromagnetic wave]], and the laws of [[Maxwell's equations|electromagnetism]], as shown [[#Theory|below]]. The ratio of waves' electric field (or magnetic field) amplitudes are obtained, but in practice one is more often interested in formulae which determine ''power'' coefficients, since power (or [[irradiance]]) is what can be directly measured at optical frequencies. The power of a wave is generally proportional to the square of the electric (or magnetic) field amplitude.
+
+We call the fraction of the incident [[Power (physics)|power]] that is reflected from the interface the [[reflectance]] (or "reflectivity", or "power reflection coefficient") ''R'', and the fraction that is refracted into the second medium is called the transmittance (or "transmissivity", or "power transmission coefficient") ''T''{{tsp}}. Note that these are what would be measured right ''at'' each side of an interface and do not account for attenuation of a wave in an absorbing medium ''following'' transmission or reflection.<ref>Hecht, 1987, p.{{hsp}}100.</ref>
+
+The [[reflectance]] for [[s-polarized light]] is
+<!--  EDIT WITH CARE! THERE ARE DIFFERENT FORMS OF THE EQUATIONS, AND WHAT IS HERE MAY NOT MATCH *YOUR* BOOK, AND YET MAY BE CORRECT  -->
+:<math>
+  R_\mathrm{s} = \left|\frac{Z_2 \cos \theta_\mathrm{i} - Z_1 \cos \theta_\mathrm{t}}{Z_2 \cos \theta_\mathrm{i} + Z_1 \cos \theta_\mathrm{t}}\right|^2,
+</math>
+
+while the [[reflectance]] for [[p-polarized light]] is
+<!--  EDIT WITH CARE! THERE ARE DIFFERENT FORMS OF THE EQUATIONS, AND WHAT IS HERE MAY NOT MATCH *YOUR* BOOK, AND YET MAY BE CORRECT  -->
+:<math>
+  R_\mathrm{p} = \left|\frac{Z_2 \cos \theta_\mathrm{t} - Z_1 \cos \theta_\mathrm{i}}{Z_2 \cos \theta_\mathrm{t} + Z_1 \cos \theta_\mathrm{i}}\right|^2,
+</math>
+
+where {{math|''Z''<sub>1</sub>}} and {{math|''Z''<sub>2</sub>}} are the [[wave impedance]]s of media 1 and 2, respectively.
+
+We assume that the media are non-magnetic (i.e., ''μ''<sub>1</sub> = ''μ''<sub>2</sub> = [[permeability of free space|''μ''<sub>0</sub>]]), which is typically a good approximation at optical frequencies (and for transparent media at other frequencies).<ref>{{Cite book | doi=10.1081/E-EOE|title = Encyclopedia of Optical Engineering|year = 2011|isbn = 978-0-8247-0940-2|last1 = Driggers|first1 = Ronald G.| last2=Hoffman| first2=Craig| last3=Driggers| first3=Ronald}}</ref> Then the wave impedances are determined solely by the refractive indices ''n''<sub>1</sub> and ''n''<sub>2</sub>:
+:<math>Z_i = \frac{Z_0}{n_i}\,,</math>
+where {{math|''Z''<sub>0</sub>}} is the [[impedance of free space]] and {{mvar|i}}{{nnbsp}}={{nnbsp}}1,{{hsp}}2. Making this substitution, we obtain equations using the refractive indices:
+:<math>
+  R_\mathrm{s} = \left|\frac{n_1 \cos \theta_\mathrm{i} - n_2 \cos \theta_\mathrm{t}}{n_1 \cos \theta_\mathrm{i} + n_2 \cos \theta_\mathrm{t}}\right|^2
+               = \left|\frac
+                         {n_1 \cos \theta_{\mathrm{i}} - n_2 \sqrt{1 - \left(\frac{n_1}{n_2} \sin \theta_{\mathrm{i}}\right)^2}}
+                         {n_1 \cos \theta_{\mathrm{i}} + n_2 \sqrt{1 - \left(\frac{n_1}{n_2} \sin \theta_{\mathrm{i}}\right)^2}}
+                 \right|^2\!,
+</math>
+:<math>
+  R_\mathrm{p} = \left|\frac{n_1 \cos \theta_\mathrm{t} - n_2 \cos \theta_\mathrm{i}}{n_1 \cos \theta_\mathrm{t} + n_2 \cos \theta_\mathrm{i}}\right|^2
+               = \left|\frac
+                         {n_1 \sqrt{1 - \left(\frac{n_1}{n_2} \sin \theta_\mathrm{i}\right)^2} - n_2 \cos \theta_\mathrm{i}}
+                         {n_1 \sqrt{1 - \left(\frac{n_1}{n_2} \sin \theta_\mathrm{i}\right)^2} + n_2 \cos \theta_\mathrm{i}}
+                 \right|^2\!.
+</math>
+
+The second form of each equation is derived from the first by eliminating ''θ''<sub>t</sub> using [[Snell's law]] and [[trigonometric identity|trigonometric identities]].
+
+As a consequence of [[conservation of energy]], one can find the transmitted power (or more correctly, [[irradiance]]: power per unit area) simply as the portion of the incident power that isn't reflected:{{hsp}}<ref>Hecht, 1987, p.{{hsp}}102.</ref>
+:<math>T_\mathrm{s} = 1 - R_\mathrm{s}</math>
+
+and
+:<math>T_\mathrm{p} = 1 - R_\mathrm{p}</math>
+
+Note that all such intensities are measured in terms of a wave's irradiance in the direction normal to the interface; this is also what is measured in typical experiments. That number could be obtained from irradiances ''in the direction of an incident or reflected wave'' (given by the magnitude of a wave's [[Poynting vector]]) multiplied by cos{{nnbsp}}''θ'' for a wave at an angle ''θ'' to the normal direction (or equivalently, taking the dot product of the Poynting vector with the unit vector normal to the interface). This complication can be ignored in the case of the reflection coefficient, since cos{{nnbsp}}''θ''<sub>i</sub>&nbsp;=&nbsp;cos{{nnbsp}}''θ''<sub>r</sub>, so that the ratio of reflected to incident irradiance in the wave's direction is the same as in the direction normal to the interface.
+
+Although these relationships describe the basic physics, in many practical applications one is concerned with "natural light" that can be described as unpolarized. That means that there is an equal amount of power in the ''s'' and ''p'' polarizations, so that the ''effective'' reflectivity of the material is just the average of the two reflectivities:
+:<math>R_\mathrm{eff} = \frac{1}{2}\left(R_\mathrm{s} + R_\mathrm{p}\right).</math>
+
+For low-precision applications involving unpolarized light, such as [[computer graphics]], rather than rigorously computing the effective reflection coefficient for each angle, [[Schlick's approximation]] is often used.
+
+===Special cases===
+====Normal incidence====
+For the case of [[normal incidence]], <math> \theta_\mathrm{i} = \theta_\mathrm{t} = 0</math>, and there is no distinction between s and p polarization.  Thus, the reflectance simplifies to
+:<math>
+R = \left|\frac{n_1  - n_2 }{n_1 + n_2 }\right|^2
+</math>.
+
+For common glass (''n''<sub>2</sub> ≈ 1.5) surrounded by air (''n''<sub>1</sub>{{nnbsp}}={{nnbsp}}1), the power reflectance at normal incidence can be seen to be about 4%, or 8% accounting for both sides of a glass pane.
+
+====Brewster's angle====
+{{main|Brewster's angle}}
+At a dielectric interface from  {{math|''n''<sub>1</sub>}} to {{math|''n''<sub>2</sub>}}, there is a particular angle of incidence at which {{math|''R''<sub>p</sub>}} goes to zero and a p-polarised incident wave is purely refracted. This angle is known as [[Brewster's angle]], and is around 56° for ''n''<sub>1</sub>{{nnbsp}}={{nnbsp}}1 and ''n''<sub>2</sub>{{nnbsp}}={{nnbsp}}1.5 (typical glass).
+
+====Total internal reflection====
+{{main|Total internal reflection}}
+When light travelling in a denser medium strikes the surface of a less dense medium (i.e., {{math|1=''n''<sub>1</sub> &gt; ''n''<sub>2</sub>}}), beyond a particular incidence angle known as the ''critical angle'', all light is reflected and {{math|1=''R''<sub>s</sub> = ''R''<sub>p</sub> = 1}}. This phenomenon, known as [[total internal reflection]], occurs at incidence angles for which Snell's law predicts that the sine of the angle of refraction would exceed unity (whereas in fact sin{{nnbsp}}''θ''&nbsp;≤&nbsp;1 for all real ''θ''). For glass with ''n''{{nnbsp}}={{nnbsp}}1.5 surrounded by air, the critical angle is approximately 41°.
+
+==Complex amplitude reflection and transmission coefficients{{anchor|Field}}==
+The above equations relating powers (which could be measured with a [[photometer]] for instance) are derived from the Fresnel equations which solve the physical problem in terms of [[electromagnetic field]] [[complex amplitude]]s, i.e., considering [[phase (waves)|phase]] in addition to power (which is important in [[multipath propagation]] for instance). Those underlying equations supply generally [[complex-valued]] ratios of those EM fields and may take several different forms, depending on formalisms used. The complex amplitude coefficients are usually represented by lower case ''r'' and ''t'' (whereas the power coefficients are capitalized).
+[[File:Fresnel amplitudes air-to-glass.svg|thumb|right|Amplitude coefficients: air to glass]]
+[[File:Fresnel amplitudes glass-to-air.svg|thumb|right|Amplitude coefficients: glass to air]]
+
+In the following, the reflection coefficient {{math|''r''}} is the ratio of the reflected wave's electric field complex amplitude to that of the incident wave. The transmission coefficient {{math|''t''}} is the ratio of the transmitted wave's electric field complex amplitude to that of the incident wave. We require separate formulae for the ''s'' and ''p'' polarizations. In each case we assume an incident plane wave at an [[Angle of incidence (optics)|angle of incidence]]  <math> \theta_\mathrm{i}</math> on a plane interface, reflected at an angle <math> \theta_\mathrm{r}</math>, and with a transmitted wave at an angle <math> \theta_\mathrm{t}</math>,  corresponding to the above figure. Note that in the cases of an interface into an absorbing material (where ''n'' is complex) or total internal reflection, the angle of transmission might not evaluate to a real number.
+
+We consider the sign of a wave's electric field in relation to a wave's direction. Consequently, for ''p'' polarization at normal incidence, the positive direction of electric field for an incident wave (to the left) is ''opposite'' that of a reflected wave (also to its left); for ''s'' polarization both are the same (upward).<ref group=Note>Some authors use the opposite sign convention for {{math|''r''<sub>p</sub>}}, so that {{math|''r''<sub>p</sub>}} is positive when the incoming and reflected magnetic fields are anti-parallel, and negative when they are parallel. This latter convention has the convenient advantage that the s and p sign conventions are the same at normal incidence. However, either convention, when used consistently, gives the right answers.</ref>
+
+Using these conventions,<ref name=Sernelius>Lecture notes by Bo Sernelius, [http://www.ifm.liu.se/courses/TFYY67/ main site], see especially [http://www.ifm.liu.se/courses/TFYY67/Lect12.pdf Lecture 12].</ref><ref name="Born 1970">Born & Wolf, 1970, p.{{hsp}}40, eqs.{{tsp}}(20),{{hsp}}(21).</ref>
+<!--  EDIT WITH CARE! ARBITRARY SIGN CONVENTIONS ARE USED IN DERIVING THESE EQUATIONS. IN PARTICULAR, PLEASE DON'T CHANGE THE SIGN OF r_\text{p} JUST BECAUSE YOUR FAVORITE TEXTBOOK USES A DIFFERENT SIGN CONVENTION FROM THE ONE DEFINED IN THIS ARTICLE AND ITS REFERENCES. -->
+:<math>\begin{align}
+  r_\text{s} &= \frac{  n_1 \cos \theta_\text{i} - n_2 \cos \theta_\text{t}}{n_1 \cos \theta_\text{i} + n_2 \cos \theta_\text{t}}, \\[3pt]
+  t_\text{s} &= \frac{2 n_1 \cos \theta_\text{i}}                           {n_1 \cos \theta_\text{i} + n_2 \cos \theta_\text{t}}, \\[3pt] 
+  r_\text{p} &= \frac{  n_2 \cos \theta_\text{i} - n_1 \cos \theta_\text{t}}{n_2 \cos \theta_\text{i} + n_1 \cos \theta_\text{t}}, \\[3pt]
+  t_\text{p} &= \frac{2 n_1 \cos \theta_\text{i}}                           {n_2 \cos \theta_\text{i} + n_1 \cos \theta_\text{t}}.
+\end{align}</math>
+<!--  EDIT WITH CARE! ARBITRARY SIGN CONVENTIONS ARE USED IN DERIVING THESE EQUATIONS. DIFFERENT BOOKS USE DIFFERENT CONVENTIONS.  -->
+
+One can see that {{math|1=''t''<sub>s</sub> = ''r''<sub>s</sub> + 1}}<ref>Hecht, 2002, p.{{hsp}}116, eqs.{{tsp}}(4.49),{{hsp}}(4.50).</ref> and {{math|{{sfrac|''n''<sub>2</sub>|''n''<sub>1</sub>}}''t''<sub>p</sub>{{=}}''r''<sub>p</sub>+1}}. One can write similar equations applying to the ratio of magnetic fields of the waves, but these are usually not required.
+
+Because the reflected and incident waves propagate in the same medium and make the same angle with the normal to the surface, the power reflection coefficient R is just the squared magnitude of ''r'':{{hsp}}<ref>Hecht, 2002, p.{{hsp}}120, eq.{{hsp}}(4.56).</ref>
+:<math>R = |r|^2.</math>
+
+On the other hand, calculation of the power transmission coefficient {{mvar|T}} is less straightforward, since the light travels in different directions in the two media. What's more, the wave impedances in the two media differ; power is only proportional to the square of the amplitude when the media's impedances are the same (as they are for the reflected wave). This results in:<ref>Hecht, 2002, p.{{hsp}}120, eq.{{hsp}}(4.57).</ref>
+:<math>T = \frac{n_2 \cos \theta_\text{t}}{n_1 \cos \theta_\text{i}} |t|^2.</math>
+
+The factor of {{math|''n''<sub>2</sub>/''n''<sub>1</sub>}} is the reciprocal of the ratio of the media's [[wave impedance]]s (since we assume ''μ''{{nnbsp}}={{nnbsp}}''μ''<sub>0</sub>). The factor of {{math|cos(''θ''<sub>t</sub>)/cos(''θ''<sub>i</sub>)}} is from expressing power ''in the direction'' normal to the interface, for both the incident and transmitted waves.
+
+In the case of [[total internal reflection]] where the power transmission {{mvar|T}} is zero, {{mvar|t}} nevertheless describes the electric field (including its phase) just beyond the interface. This is an [[evanescent field]] which does not propagate as a wave (thus {{mvar|T}}{{nnbsp}}={{nnbsp}}0) but has nonzero values very close to the interface. The phase shift of the reflected wave on total internal reflection can similarly be obtained from the [[Argument (complex analysis)|phase angles]] of {{math|''r''<sub>p</sub>}} and {{math|''r''<sub>s</sub>}} (whose magnitudes are unity). These phase shifts are different for  ''s'' and ''p'' waves, which is the well-known principle by which total internal reflection is used to effect [[Fresnel rhomb|polarization transformations]].
+
+===Alternative forms===
+
+In the above formula for {{math|''r''<sub>s</sub>{{px2}}}}, if we put <math>n_2=n_1\sin\theta_\text{i}/\sin\theta_\text{t}</math> (Snell's law) and multiply the numerator and denominator by {{math|{{sfrac|1|''n''<sub>1</sub>}}{{tsp}}sin{{tsp}}''θ''<sub>t</sub>{{px2}}}}, we&nbsp;obtain{{hsp}}<ref>Fresnel, 1866, p.{{hsp}}773.</ref><ref>Hecht, 2002, p.{{hsp}}115, eq.{{hsp}}(4.42).</ref>
+
+:<math>r_\text{s}=-\frac{\sin(\theta_\text{i}-\theta_\text{t})}{\sin(\theta_\text{i}+\theta_\text{t})}.</math>
+
+If we do likewise with the formula for {{math|''r''<sub>p</sub>{{px2}}}}, the result is easily shown to be equivalent to{{hsp}}<ref>Fresnel, 1866, p.{{hsp}}757.</ref><ref>Hecht, 2002, p.{{hsp}}115, eq.{{hsp}}(4.43).</ref>
+
+:<math>r_\text{p}=\frac{\tan(\theta_\text{i}-\theta_\text{t})}{\tan(\theta_\text{i}+\theta_\text{t})}.
+</math><!-- DON'T BE THE NEXT PERSON WHO WRONGLY CHANGES THE SIGN OF THIS EXPRESSION JUST BECAUSE SOME TEXTBOOK USES A DIFFERENT CONVENTION FROM THE ONE USED ***CONSISTENTLY*** IN THIS ARTICLE! -->
+
+These formulas{{hsp}}<ref>E. Verdet, in Fresnel, 1866, p.{{hsp}}789n.</ref><ref>Born & Wolf, 1970, p.{{hsp}}40, eqs.{{hsp}}(21a).</ref><ref>Jenkins & White, 1976, p.{{hsp}}524, eqs.{{hsp}}(25a).</ref> are known respectively as ''Fresnel's sine law'' and ''Fresnel's tangent law''.<ref>Whittaker, 1910, p.{{hsp}}134; Darrigol, 2012, p.{{px2}}213.</ref> Although at normal incidence these expressions reduce to 0/0, one can see that they yield the correct results in the [[Limit (mathematics)|limit]] as{{px2}} {{math|''θ''<sub>i</sub> → 0}}.
+
+==Multiple surfaces==
+When light makes multiple reflections between two or more parallel surfaces, the multiple beams of light generally [[Interference (wave propagation)|interfere]] with one another, resulting in net transmission and reflection amplitudes that depend on the light's wavelength. The interference, however, is seen only when the surfaces are at distances comparable to or smaller than the light's [[coherence length]], which for ordinary white light is few micrometers; it can be much larger for light from a [[laser]].
+
+An example of interference between reflections is the [[iridescence|iridescent]] colours seen in a [[soap bubble]] or in thin oil films on water. Applications include [[Fabry–Pérot interferometer]]s, [[antireflection coating]]s, and [[optical filter]]s. A quantitative analysis of these effects is based on the Fresnel equations, but with additional calculations to account for interference.
+
+The [[transfer-matrix method (optics)|transfer-matrix method]], or the recursive Rouard method{{hsp}}<ref>{{cite book |first=O. S. |last=Heavens |title=Optical Properties of Thin Films |publisher=Academic Press |date=1955}} chapt. 4.</ref> can be used to solve multiple-surface problems.
+
+==History==
+{{further|Augustin-Jean Fresnel}}
+
+In 1808, [[Étienne-Louis Malus]] discovered that when a ray of light was reflected off a non-metallic surface at the appropriate angle, it behaved like ''one'' of the two rays emerging from a [[birefringence|doubly-refractive]] calcite crystal.<ref>Darrigol, 2012, pp.{{tsp}}191–2.</ref> He later coined the term ''polarization'' to describe this behavior.&nbsp; In 1815, the dependence of the polarizing angle on the refractive index was determined experimentally by [[David Brewster]].<ref name=brewster-1815b>D. Brewster, [http://rstl.royalsocietypublishing.org/content/105/125.full.pdf "On the laws which regulate the polarisation of light by reflexion from transparent bodies"], ''Philosophical Transactions of the Royal Society'', vol.{{tsp}}105, pp.{{tsp}}125–59, read 16&nbsp;March 1815.</ref> But the ''reason'' for that dependence was such a deep mystery that in late 1817, [[Thomas Young (scientist)|Thomas&nbsp;Young]] was moved to write:
+{{quote|{{bracket|T}}he great difficulty of all, which is to assign a sufficient reason for the reflection or nonreflection of a polarised ray, will probably long remain, to mortify the vanity of an ambitious philosophy, completely unresolved by any theory.<ref>T. Young, "Chromatics" (written Sep.–{{hsp}}Oct.{{px2}}1817), ''Supplement to the Fourth, Fifth, and Sixth Editions of the Encyclopædia Britannica'', vol.{{tsp}}3 (first half, issued February 1818), pp.{{tsp}}141–63, [https://archive.org/stream/gri_33125011196801#page/n264/mode/1up concluding sentence].</ref>}}
+In 1821, however, [[Augustin-Jean Fresnel]] derived results equivalent to his sine and tangent laws (above), by modeling light waves as [[S-wave|transverse elastic waves]] with vibrations perpendicular to what had previously been called the [[plane of polarization]]. Fresnel promptly confirmed by experiment that the equations correctly predicted the direction of polarization of the reflected beam when the incident beam was polarized at 45° to the plane of incidence, for light incident from air onto glass or water; in particular, the equations gave the correct polarization at Brewster's angle.<ref>Buchwald, 1989, pp.{{tsp}}390–91; Fresnel, 1866, pp.{{tsp}}646–8.</ref> The experimental confirmation was reported in a "postscript" to the work in which Fresnel first revealed his theory that light waves, including "unpolarized" waves, were ''purely'' transverse.<ref name=fresnel-1821a>A. Fresnel, "Note sur le calcul des teintes que la polarisation développe dans les lames cristallisées" et&nbsp;seq., ''Annales de Chimie et de Physique'', vol.{{nbsp}}17, pp.{{nbsp}}102–11 (May 1821), 167–96 (June 1821), 312–15 ("Postscript", July 1821); reprinted in Fresnel, 1866, pp.{{nbsp}}609–48; translated as "On the calculation of the hues that polarization develops in crystalline plates (&{{nbsp}}postscript)", {{Zenodo|4058004}} / {{doi|10.5281/zenodo.4058004}}, 2020.</ref>
+
+Details of Fresnel's derivation, including the modern forms of the sine law and tangent law, were given later, in a memoir read to the [[French Academy of Sciences]] in January 1823.<ref name=fresnel-1823a>A. Fresnel, "Mémoire sur la loi des modifications que la réflexion imprime à la lumière polarisée" ("Memoir on the law of the modifications that reflection impresses on polarized light"), read 7&nbsp;January 1823; reprinted in Fresnel, 1866, pp.{{tsp}}767–99 (full text, published 1831), pp.{{tsp}}753–62 (extract, published 1823). See especially pp.{{tsp}}773 (sine law), 757 (tangent law), 760–61 and 792–6 (angles of total internal reflection for given phase differences).</ref> That derivation combined conservation of energy with continuity of the ''tangential'' vibration at the interface, but failed to allow for any condition on the ''normal'' component of vibration.<ref>Buchwald, 1989, pp.{{tsp}}391–3; Whittaker, 1910, pp.{{tsp}}133–5.</ref> The first derivation from ''electromagnetic'' principles was given by [[Hendrik Lorentz]] in 1875.<ref>Buchwald, 1989, p.{{hsp}}392.</ref>
+
+In the same memoir of January 1823,<ref name=fresnel-1823a /> Fresnel found that for angles of incidence greater than the critical angle, his formulas for the reflection coefficients ({{math|''r''<sub>s</sub>}} and {{math|''r''<sub>p</sub>}}) gave complex values with unit magnitudes. Noting that the magnitude, as usual, represented the ratio of peak amplitudes, he guessed that the [[argument (complex analysis)|argument]] represented the phase shift, and verified the hypothesis experimentally.<ref>Lloyd, 1834, pp.{{tsp}}369–70; Buchwald, 1989, pp.{{tsp}}393–4,{{tsp}}453; Fresnel, 1866, pp.{{tsp}}781–96.</ref> The verification involved
+* calculating the angle of incidence that would introduce a total phase difference of 90° between the s and p components, for various numbers of total internal reflections at that angle (generally there were two solutions),
+* subjecting light to that number of total internal reflections at that angle of incidence, with an initial linear polarization at 45° to the plane of incidence, and
+* checking that the final polarization was [[circular polarization|circular]].<ref>Fresnel, 1866, pp.{{tsp}}760–61,{{tsp}}792–6; Whewell, 1857, p.{{hsp}}359.</ref>
+Thus he finally had a quantitative theory for what we now call the ''Fresnel rhomb'' — a device that he had been using in experiments, in one form or another, since 1817 (see ''[[Fresnel rhomb#History|Fresnel rhomb{{hsp}} §{{tsp}}History]]'').
+
+The success of the complex reflection coefficient inspired [[James MacCullagh]] and [[Augustin-Louis Cauchy]], beginning in 1836, to analyze reflection from metals by using the Fresnel equations with a [[refractive index#Complex refractive index|complex refractive index]].<ref>Whittaker, 1910, pp.{{tsp}}177–9.</ref>
+
+Four weeks before he presented his completed theory of total internal reflection and the rhomb, Fresnel submitted a memoir{{hsp}}<ref name=fresnel-1822z>A. Fresnel, "Mémoire sur la double réfraction que les rayons lumineux éprouvent en traversant les aiguilles de cristal de roche suivant les directions parallèles à l'axe" ("Memoir on the double refraction that light rays undergo in traversing the needles of rock crystal {{bracket|quartz}} in directions parallel to the axis"), signed & submitted 9&nbsp;December 1822; reprinted in Fresnel, 1866, pp.{{tsp}}731–51 (full text, published 1825), pp.{{tsp}}719–29 (extract, published 1823). On the publication dates, see also Buchwald, 1989, p.{{hsp}}462, ref.{{tsp}}1822b.</ref> in which he introduced the needed terms ''[[linear polarization]]'', ''[[circular polarization]]'', and ''[[elliptical polarization]]'',<ref>Buchwald, 1989, pp.{{tsp}}230–31; Fresnel, 1866, p.{{hsp}}744.</ref> and in which he explained [[optical rotation]] as a species of [[birefringence]]: linearly-polarized light can be resolved into two circularly-polarized components rotating in opposite directions, and if these propagate at different speeds, the phase difference between them — hence the orientation of their linearly-polarized resultant — will vary continuously with distance.<ref>Buchwald, 1989, p.{{hsp}}442; Fresnel, 1866, pp.{{tsp}}737–9,{{tsp}}749.&nbsp; Cf.&nbsp;Whewell, 1857, pp.{{tsp}}356–8; Jenkins & White, 1976, pp.{{tsp}}589–90.</ref>
+
+Thus Fresnel's interpretation of the complex values of his reflection coefficients marked the confluence of several streams of his research and, arguably, the essential completion of his reconstruction of physical optics on the transverse-wave hypothesis (see ''[[Augustin-Jean Fresnel]]'').
+
+== Theory ==
+
+Here we systematically derive the above relations from electromagnetic premises.
+
+=== Material parameters ===
+
+In order to compute meaningful Fresnel coefficients, we must assume that the medium is (approximately) [[linearity|linear]] and [[homogeneity (physics)|homogeneous]]. If the medium is also [[isotropy|isotropic]], the four field vectors{{px2}} {{math|'''E''',{{nnbsp}}'''B''',{{nnbsp}}'''D''',{{nnbsp}}'''H'''}}{{tsp}} are [[Constitutive equation#Electromagnetism|related]] by
+:{{math|'''D'''{{tsp}}{{=}}{{tsp}}''ϵ'''''E'''}}
+:{{math|'''B'''{{tsp}}{{=}}{{tsp}}''μ'''''H'''}}{{nnbsp}},
+where ''ϵ'' and ''μ'' are scalars, known respectively as the (electric) ''[[permittivity]]'' and the (magnetic) ''[[permeability (electromagnetism)|permeability]]'' of the medium. For a vacuum, these have the values ''ϵ''<sub>0</sub> and ''μ''<sub>0</sub>, respectively. Hence we define the ''relative'' permittivity (or [[dielectric constant]]) {{math|''ϵ''<sub>rel</sub>{{nnbsp}}{{=}}{{nnbsp}}''ϵ''/''ϵ''<sub>0</sub>}}{{hsp}}, and the ''relative'' permeability {{math|''μ''<sub>rel</sub>{{nnbsp}}{{=}}{{nnbsp}}''μ''/''μ''<sub>0</sub>}}.
+
+In optics it is common to assume that the medium is non-magnetic, so that ''μ''<sub>rel</sub>{{nnbsp}}={{nnbsp}}1. For [[ferromagnetic]] materials at radio/microwave frequencies, larger values of ''μ''<sub>rel</sub> must be taken into account. But, for optically transparent media, and for all other materials at optical frequencies (except possible [[metamaterial]]s), ''μ''<sub>rel</sub> is indeed very close to 1; that is, ''μ''{{nnbsp}}≈{{nnbsp}}''μ''<sub>0</sub>.
+
+In optics, one usually knows the [[refractive index]] ''n'' of the medium, which is the ratio of the speed of light in a vacuum ({{mvar|c}}) to the speed of light in the medium. In the analysis of partial reflection and transmission, one is also interested in the electromagnetic [[wave impedance]] {{mvar|Z}}, which is the ratio of the amplitude of {{math|'''E'''}} to the amplitude of {{math|'''H'''}}. It is therefore desirable to express ''n'' and {{mvar|Z}} in terms of ''ϵ'' and ''μ'', and thence to relate {{mvar|Z}} to ''n''. The last-mentioned relation, however, will make it convenient to derive the reflection coefficients in terms of the wave ''admittance'' {{mvar|Y}}, which is the reciprocal of the wave impedance {{mvar|Z}}.
+
+In the case of ''uniform [[plane wave|plane]] [[sine wave|sinusoidal]]'' waves, the wave impedance or admittance is known as the ''intrinsic'' impedance or admittance of the medium. This case is the one for which the Fresnel coefficients are to be derived.
+
+=== Electromagnetic plane waves ===
+
+In a uniform plane sinusoidal [[electromagnetic radiation|electromagnetic wave]], the [[electric field]] {{math|'''E'''}} has the form
+{{NumBlk|:|<math>\mathbf{E_k}e^{i(\mathbf{k\cdot r}-\omega t)},</math>|{{EquationRef|1}}}}
+where {{math|'''E<sub>k</sub>'''}} is the (constant) complex amplitude vector,&nbsp; {{math|''i''}} is the [[imaginary unit]],&nbsp; {{math|'''k'''}} is the [[wave vector]] (whose magnitude {{mvar|k}} is the angular [[wavenumber]]),&nbsp; {{math|'''r'''}} is the [[position (vector)|position vector]],&nbsp; ''ω'' is the [[angular frequency]],&nbsp; {{math|''t''}} is time, and it is understood that the ''real part'' of the expression is the physical field.<ref group=Note>The above form ({{EquationNote|1}}) is typically used by physicists. [[electrical engineering|Electrical engineers]] typically prefer the form{{hsp}} {{math|'''E<sub>k</sub>'''{{hsp}}''e''<sup>''j''(''ωt''−'''k⋅r''')</sup>;}} that is, they not only use {{math|''j''}} instead of {{math|''i''}} for the imaginary unit, but also change the sign of the exponent, with the result that the whole expression is replaced by its [[complex conjugate]], leaving the real part unchanged {{bracket|Cf.&nbsp;(e.g.) Collin, 1966, p.{{hsp}}41, eq.{{px2}}(2.81)}}. The electrical engineers' form and the formulas derived therefrom may be converted to the physicists' convention by substituting {{math|''−i''}} for {{math|''j''}}.</ref>&nbsp; The value of the expression is unchanged if the position {{math|'''r'''}} varies in a direction normal to {{math|'''k'''}}; hence {{math|'''k'''}} ''is normal to the wavefronts''.
+
+To advance the [[phase (waves)|phase]] by the angle ''ϕ'', we replace {{math|''ωt''}} by {{math|''ωt+ϕ''}}{{tsp}} (that is, we replace {{math|''−ωt''}} by {{math|''−ωt−ϕ''}}),{{tsp}} with the result that the (complex) field is multiplied by {{math|''e<sup>−iϕ</sup>''}}. So a phase ''advance'' is equivalent to multiplication by a complex constant with a ''negative'' [[argument (complex analysis)|argument]]. This becomes more obvious when the field ({{EquationNote|1}}) is factored as{{px2}} {{math|'''E<sub>k</sub>'''{{hsp}}''e''<sup>''i'''''k⋅r'''</sup>''e''<sup>''−iωt''</sup>,}}{{tsp}} where the last factor contains the time-dependence. That factor also implies that differentiation w.r.t.&nbsp;time corresponds to multiplication by {{math|''−iω''}}.{{hsp}}<ref group=Note>In the electrical engineering convention, the time-dependent factor is {{math|''e{{px2}}<sup>jωt</sup>'',}} so that a phase advance corresponds to multiplication by a complex constant with a ''positive'' argument, and differentiation w.r.t.&nbsp;time corresponds to multiplication by {{math|''+jω''}}. This article, however, uses the physics convention, whose time-dependent factor is {{math|''e<sup>−iωt</sup>''}}. Although the imaginary unit does not appear explicitly in the results given here, the time-dependent factor affects the interpretation of any results that turn out to be complex.</ref>
+
+If ''ℓ'' is the component of {{math|'''r'''}} in the direction of {{math|'''k'''{{tsp}},}} the field ({{EquationNote|1}}) can be written{{px2}} {{math|'''E<sub>k</sub>'''{{hsp}}''e''<sup>''i''(''kℓ−ωt'')</sup>}}.&nbsp; If the argument of {{math|''e''<sup>''i''(⋯)</sup>}} is to be constant,&nbsp; ''ℓ''&nbsp;must increase at the velocity{{px2}} <math>\omega/k\,,\,</math> known as the ''[[phase velocity]]''{{hsp}} {{math|(''v''<sub>p</sub>)}}. This in turn is equal to{{px2}} <math>c/n</math>. Solving for {{mvar|k}} gives
+{{NumBlk|:|<math>k=n\omega/c\,</math>.|{{EquationRef|2}}}}
+
+As usual, we drop the time-dependent factor {{math|''e<sup>−iωt</sup>''}} which is understood to multiply every complex field quantity. The electric field for a uniform plane sine wave will then be represented by the location-dependent ''[[phasor]]''
+{{NumBlk|:|<math>\mathbf{E_k}e^{i\mathbf{k\cdot r}}</math>.|{{EquationRef|3}}}}
+For fields of that form, [[Faraday's law of induction|Faraday's law]] and the [[Ampère's circuital law|Maxwell-Ampère law]] respectively reduce to{{hsp}}<ref name=berry-jeffrey-2007>Compare M.V. Berry and M.R. Jeffrey, [https://michaelberryphysics.files.wordpress.com/2013/07/berry400.pdf "Conical diffraction: Hamilton's diabolical point at the heart of crystal optics"], in E.&nbsp;Wolf&nbsp;(ed.), ''Progress in Optics'', vol.{{tsp}}50, Amsterdam: Elsevier, 2007, pp.{{tsp}}13–50, at p.{{hsp}}18, eq.{{px2}}(2.2).</ref>
+:<math>\begin{align}
+  \omega\mathbf{B} &=  \mathbf{k}\times\mathbf{E}\\
+  \omega\mathbf{D} &= -\mathbf{k}\times\mathbf{H}\,.
+\end{align}</math>
+
+Putting{{tsp}} {{math|'''B'''{{tsp}}{{=}}{{tsp}}''μ'''''H'''}}{{tsp}} and{{tsp}} {{math|'''D'''{{tsp}}{{=}}{{tsp}}''ϵ'''''E'''{{px2}},}}{{px2}} as above, we can eliminate {{math|'''B'''}} and {{math|'''D'''}} to obtain equations in only {{math|'''E'''}} and {{math|'''H'''}}:
+:<math>\begin{align}
+  \omega\mu\mathbf{H} &=  \mathbf{k}\times\mathbf{E}\\
+  \omega\epsilon\mathbf{E} &= -\mathbf{k}\times\mathbf{H}\,.
+\end{align}</math>
+If the material parameters ''ϵ'' and ''μ'' are real (as in a lossless dielectric), these equations show that {{math|'''k'''{{hsp}},{{tsp}}'''E'''{{hsp}},{{tsp}}'''H'''}}{{tsp}} form a ''right-handed orthogonal triad'', so that the same equations apply to the magnitudes of the respective vectors. Taking the magnitude equations and substituting from ({{EquationNote|2}}), we obtain
+:<math>\begin{align}
+  \mu cH &= nE\\
+  \epsilon cE &= nH\,,
+\end{align}</math>
+where {{mvar|H}} and {{mvar|E}} are the magnitudes of {{math|'''H'''}} and {{math|'''E'''}}.{{tsp}} Multiplying the last two equations gives
+{{NumBlk|:|<math>n = c\,\sqrt{\mu\epsilon}\,.</math>|{{EquationRef|4}}}}
+Dividing (or cross-multiplying) the same two equations gives{{tsp}} {{math|''H{{tsp}}{{=}}{{tsp}}YE''{{px2}},}}{{px2}} where
+{{NumBlk|:|<math>Y = \sqrt{\epsilon/\mu}\,</math>.|{{EquationRef|5}}}}
+This is the ''intrinsic admittance''.
+
+From ({{EquationNote|4}}) we obtain the phase velocity{{px2}} <math>c/n=1\big/\!\sqrt{\mu\epsilon\,}</math>.{{tsp}} For a vacuum this reduces to{{px2}} <math>c=1\big/\!\sqrt{\mu_0\epsilon_0}</math>.{{tsp}} Dividing the second result by the first gives
+:<math>n=\sqrt{\mu_{\text{rel}}\epsilon_{\text{rel}}}\,</math>.
+For a ''non-magnetic'' medium (the usual case), this becomes <math>n=\sqrt{\epsilon_{\text{rel}}}</math>.
+
+{{larger|(}}Taking the reciprocal of ({{EquationNote|5}}), we find that the intrinsic ''impedance'' is <math>Z=\sqrt{\mu/\epsilon}</math>.&nbsp; In a vacuum this takes the value <math>Z_0=\sqrt{\mu_0/\epsilon_0}\,\approx 377\,\Omega\,,</math>{{px2}} known as the [[impedance of free space]]. By division, <math>Z/Z_0=\sqrt{\mu_{\text{rel}}/\epsilon_{\text{rel}}}</math>.{{tsp}} For a ''non-magnetic'' medium, this becomes <math>Z=Z_0\big/\!\sqrt{\epsilon_{\text{rel}}}=Z_0/n.</math>{{larger|)}}
+
+=== The wave vectors ===
+
+[[File:Wave vectors n1 to n2.svg|thumb|305px|Incident, reflected, and transmitted wave vectors ({{math|'''k'''<sub>''i''</sub>{{px2}}, '''k'''<sub>''r''</sub>{{px2}},}} and {{math|'''k'''<sub>''t''</sub>{{hsp}}}}), for incidence from a medium with refractive index {{math|''n''<sub>1</sub>}} to a medium with refractive index {{math|''n''<sub>2</sub>}}. The red arrows are perpendicular to the wave vectors.]]
+
+In Cartesian coordinates {{math|(''x'',{{hsp}}''y'',{{px2}}''z'')}}, let the region{{px2}} {{math|''y''{{tsp}}<{{tsp}}0}}{{px2}} have refractive index {{math|''n''<sub>1</sub>{{hsp}},}} intrinsic admittance {{math|''Y''<sub>1</sub>{{hsp}},}} etc., and let the region{{px2}} {{math|''y''{{tsp}}>{{tsp}}0}}{{px2}} have refractive index {{math|''n''<sub>2</sub>{{hsp}},}} intrinsic admittance {{math|''Y''<sub>2</sub>{{hsp}},}} etc. Then the {{math|''xz''}} plane is the interface, and the {{math|''y''}} axis is normal to the interface (see diagram). Let {{math|'''i'''}} and {{math|'''j'''}} (in bold [[roman type]]) be the unit vectors in the {{math|''x''}} and {{math|''y''}} directions, respectively. Let the plane of incidence be the {{math|''xy''}} plane (the plane of the page), with the angle of incidence {{math|''θ''<sub>i</sub>}} measured from {{math|'''j'''}} towards {{math|'''i'''}}. Let the angle of refraction, measured in the same sense, be {{math|''θ''<sub>t</sub>{{tsp}},}} where the subscript {{math|''t''}} stands for ''transmitted'' (reserving  {{math|''r''}} for ''reflected'').
+
+In the absence of [[Doppler effect|Doppler shifts]], ''ω'' does not change on reflection or refraction. Hence, by ({{EquationNote|2}}), the magnitude of the wave vector is proportional to the refractive index.
+
+So, for a given ''ω'', if we ''redefine'' {{mvar|k}} as the magnitude of the wave vector in the ''reference'' medium (for which {{math|''n''{{tsp}}{{=}}{{px2}}1}}), then the wave vector has magnitude {{math|''n''<sub>1</sub>''k''}} in the first medium (region{{px2}} {{math|''y''{{tsp}}<{{tsp}}0}}{{px2}} in the diagram) and magnitude {{math|''n''<sub>2</sub>''k''}} in the second medium. From the magnitudes and the geometry, we find that the wave vectors are
+:<math>\begin{align}
+  \mathbf{k}_\text{i} &= n_1 k(\mathbf{i}\sin\theta_\text{i} + \mathbf{j}\cos\theta_\text{i})\\[.5ex]
+  \mathbf{k}_\text{r} &= n_1 k(\mathbf{i}\sin\theta_\text{i} - \mathbf{j}\cos\theta_\text{i})\\[.5ex]
+  \mathbf{k}_\text{t} &= n_2 k(\mathbf{i}\sin\theta_\text{t} + \mathbf{j}\cos\theta_\text{t})\\
+          &= k(\mathbf{i}\,n_1\sin\theta_\text{i} + \mathbf{j}\,n_2\cos\theta_\text{t})\,,
+\end{align}</math>
+where the last step uses Snell's law. The corresponding dot products in the phasor form ({{EquationNote|3}}) are
+{{NumBlk|:|<math>\begin{align}
+  \mathbf{k}_\text{i}\mathbf{\cdot r} &= n_1 k(x\sin\theta_\text{i} + y\cos\theta_\text{i})\\
+  \mathbf{k}_\text{r}\mathbf{\cdot r} &= n_1 k(x\sin\theta_\text{i} - y\cos\theta_\text{i})\\
+  \mathbf{k}_\text{t}\mathbf{\cdot r} &= k(n_1 x\sin\theta_\text{i} + n_2 y\cos\theta_\text{t})\,.
+\end{align}</math>|{{EquationRef|6}}}}
+Hence:
+{{NumBlk|:|At&nbsp; <math>y=0\,,~~~\mathbf{k}_\text{i}\mathbf{\cdot r}=\mathbf{k}_\text{r}\mathbf{\cdot r}=\mathbf{k}_\text{t}\mathbf{\cdot r}=n_1 kx\sin\theta_\text{i}\,</math>.|{{EquationRef|7}}}}
+
+=== The ''s'' components ===
+
+For the ''s'' polarization, the {{math|'''E'''}} field is parallel to the {{math|''z''}} axis and may therefore be described by its component in the {{math|''z''}}&nbsp;direction. Let the reflection and transmission coefficients be {{math|''r''<sub>s</sub>}} and {{math|''t''<sub>s</sub>{{hsp}},}} respectively. Then, if the incident {{math|'''E'''}} field is taken to have unit amplitude, the phasor form ({{EquationNote|3}}) of its {{math|''z''}}&nbsp;component is
+{{NumBlk|:|<math>E_\text{i}=e^{i\mathbf{k}_\text{i}\mathbf{\cdot r}},</math>|{{EquationRef|8}}}}
+and the reflected and transmitted fields, in the same form, are
+{{NumBlk|:|<math>\begin{align}
+  E_\text{r} &= r_{s\,} e^{i\mathbf{k}_\text{r}\mathbf{\cdot r}}\\
+  E_\text{t} &= t_{s\,} e^{i\mathbf{k}_\text{t}\mathbf{\cdot r}}.
+\end{align}</math>|{{EquationRef|9}}}}
+
+Under the sign convention used in this article, a positive reflection or transmission coefficient is one that preserves the direction of the ''transverse'' field, meaning (in this context) the field normal to the plane of incidence. For the ''s'' polarization, that means the {{math|'''E'''}} field. If the incident, reflected, and transmitted {{math|'''E'''}} fields (in the above equations) are in the {{math|''z''}}&nbsp;direction ("out of the page"), then the respective {{math|'''H'''}} fields are in the directions of the red arrows, since{{tsp}} {{math|'''k'''{{hsp}},{{tsp}}'''E'''{{hsp}},{{tsp}}'''H'''}}{{tsp}} form a right-handed orthogonal triad. The {{math|'''H'''}} fields may therefore be described by their components in the directions of those arrows, denoted by{{tsp}} {{math|''H''<sub>i</sub>{{hsp}},{{tsp}}''H''<sub>r</sub>{{px2}},{{tsp}}''H''<sub>t</sub>{{hsp}}}}.&nbsp; Then, since{{tsp}} {{math|''H{{tsp}}{{=}}{{tsp}}YE''{{px2}},}}
+{{NumBlk|:|<math>\begin{align}
+  H_\text{i} &=\, Y_1 e^{i\mathbf{k}_\text{i}\mathbf{\cdot r}}\\
+  H_\text{r} &=\, Y_1 r_{s\,} e^{i\mathbf{k}_\text{r}\mathbf{\cdot r}}\\
+  H_\text{t} &=\, Y_2 t_{s\,} e^{i\mathbf{k}_\text{t}\mathbf{\cdot r}}.
+\end{align}</math>|{{EquationRef|10}}}}
+
+At the interface, by the usual [[interface conditions for electromagnetic fields]], the tangential components of the {{math|'''E'''}} and {{math|'''H'''}} fields must be continuous; that is,
+{{NumBlk|:|<math>\left.\begin{align}
+  E_\text{i} + E_\text{r} &= E_\text{t}\\
+  H_\text{i}\cos\theta_\text{i} - H_\text{r}\cos\theta_\text{i} &= H_\text{t}\cos\theta_\text{t}
+\end{align}~~\right\}~~~\text{at}~~ y=0\,</math>.|{{EquationRef|11}}}}
+When we substitute from equations ({{EquationNote|8}}) to ({{EquationNote|10}}) and then from ({{EquationNote|7}}), the exponential factors cancel out, so that the interface conditions reduce to the simultaneous equations
+{{NumBlk|:|<math>\begin{align}
+  1 + r_\text{s} &=\, t_\text{s}\\
+  Y_1\cos\theta_\text{i} - Y_1 r_\text{s}\cos\theta_\text{i} &=\, Y_2 t_\text{s}\cos\theta_\text{t} \,,
+\end{align}</math>|{{EquationRef|12}}}}
+which are easily solved for {{math|''r''<sub>s</sub>}} and {{math|''t''<sub>s</sub>{{px2}},}} yielding
+{{NumBlk|:|<math>r_\text{s}=\frac{Y_1\cos\theta_\text{i}-Y_2\cos\theta_\text{t}}{Y_1\cos\theta_\text{i}+Y_2\cos\theta_\text{t}}</math>|{{EquationRef|13}}}}
+and
+{{NumBlk|:|<math>t_\text{s}=\frac{2Y_1\cos\theta_\text{i}}{Y_1\cos\theta_\text{i}+Y_2\cos\theta_\text{t}}\,</math>.|{{EquationRef|14}}}}
+At ''normal incidence''{{px2}} {{math|(''θ<sub>i</sub>{{tsp}}{{=}} θ<sub>t</sub>{{tsp}}{{=}}'' 0),}} indicated by an additional subscript 0, these results become
+{{NumBlk|:|<math>r_\text{s0}=\frac{Y_1-Y_2}{Y_1+Y_2}</math>|{{EquationRef|15}}}}
+and
+{{NumBlk|:|<math>t_\text{s0}=\frac{2Y_1}{Y_1+Y_2}\,</math>.|{{EquationRef|16}}}}
+At ''grazing incidence''{{px2}} {{math|(''θ''<sub>i</sub>{{tsp}}→ 90°)}}, we have{{tsp}} {{math|cos{{tsp}}''θ''<sub>i</sub>{{tsp}}→ 0{{px2}},}} hence{{tsp}} {{math|''r''<sub>s</sub>{{tsp}}→{{tsp}}−1}}{{tsp}} and{{tsp}} {{math|''t''<sub>s</sub>{{tsp}}→ 0}}.
+
+=== The ''p'' components ===
+
+For the ''p'' polarization, the incident, reflected, and transmitted {{math|'''E'''}} fields are parallel to the red arrows and may therefore be described by their components in the directions of those arrows. Let those components be{{tsp}} {{math|''E''<sub>i</sub>{{hsp}},{{tsp}}''E''<sub>r</sub>{{px2}},{{tsp}}''E''<sub>t</sub>{{hsp}}}} (redefining the symbols for the new context). Let the reflection and transmission coefficients be {{math|''r''<sub>p</sub>}} and {{math|''t''<sub>p</sub>}}. Then, if the incident {{math|'''E'''}} field is taken to have unit amplitude, we have
+{{NumBlk|:|<math>\begin{align}
+  E_\text{i} &=         e^{i\mathbf{k}_\text{i}\mathbf{\cdot r}}\\
+  E_\text{r} &= r_{p\,} e^{i\mathbf{k}_\text{r}\mathbf{\cdot r}}\\
+  E_\text{t} &= t_{p\,} e^{i\mathbf{k}_\text{t}\mathbf{\cdot r}}.
+\end{align}</math>|{{EquationRef|17}}}}
+If the {{math|'''E'''}} fields are in the directions of the red arrows, then, in order for{{tsp}} {{math|'''k'''{{hsp}},{{tsp}}'''E'''{{hsp}},{{tsp}}'''H'''}}{{tsp}} to form a right-handed orthogonal triad, the respective {{math|'''H'''}} fields must be in the {{math|''−z''}}&nbsp;direction ("into the page") and may therefore be described by their components in that direction. This is consistent with the adopted sign convention, namely that a positive reflection or transmission coefficient is one that preserves the direction of the transverse field {{larger|(}}the {{math|'''H'''}} field in the case of the ''p'' polarization{{larger|)}}. The agreement of the ''other'' field with the red arrows reveals an alternative definition of the sign convention: that a positive reflection or transmission coefficient is one for which the field vector in the plane of incidence points towards the same medium before and after reflection or transmission.<ref>This agrees with Born & Wolf, 1970, p.{{hsp}}38, Fig.{{hsp}}1.10.</ref>
+
+So, for the incident, reflected, and transmitted {{math|'''H'''}} fields, let the respective components in the {{math|''−z''}}&nbsp;direction be{{tsp}} {{math|''H''<sub>i</sub>{{hsp}},{{tsp}}''H''<sub>r</sub>{{px2}},{{tsp}}''H''<sub>t</sub>{{hsp}}}}.&nbsp; Then, since{{tsp}} {{math|''H{{tsp}}{{=}}{{tsp}}YE''{{px2}},}}
+{{NumBlk|:|<math>\begin{align}
+  H_\text{i} &=\, Y_1 e^{i\mathbf{k}_\text{i}\mathbf{\cdot r}}\\
+  H_\text{r} &=\, Y_1 r_{p\,} e^{i\mathbf{k}_\text{r}\mathbf{\cdot r}}\\
+  H_\text{t} &=\, Y_2 t_{p\,} e^{i\mathbf{k}_\text{t}\mathbf{\cdot r}}.
+\end{align}</math>|{{EquationRef|18}}}}
+
+At the interface, the tangential components of the {{math|'''E'''}} and {{math|'''H'''}} fields must be continuous; that is,
+{{NumBlk|:|<math>\left.\begin{align}
+  E_\text{i}\cos\theta_\text{i} - E_\text{r}\cos\theta_\text{i} &= E_\text{t}\cos\theta_\text{t}\\
+  H_\text{i} + H_\text{r} &= H_\text{t}
+\end{align}~~\right\}~~~\text{at}~~ y=0\,</math>.|{{EquationRef|19}}}}
+When we substitute from equations ({{EquationNote|17}}) and ({{EquationNote|18}}) and then from ({{EquationNote|7}}), the exponential factors again cancel out, so that the interface conditions reduce to
+{{NumBlk|:|<math>\begin{align}
+  \cos\theta_\text{i} - r_\text{p}\cos\theta_\text{i} &=\, t_\text{p}\cos\theta_\text{t}\\
+  Y_1 + Y_1 r_\text{p} &=\, Y_2 t_\text{p} \,.
+\end{align}</math>|{{EquationRef|20}}}}
+Solving for {{math|''r''<sub>p</sub>}} and {{math|''t''<sub>p</sub>{{px2}},}} we find
+{{NumBlk|:|<math>r_\text{p}=\frac{Y_2\cos\theta_\text{i}-Y_1\cos\theta_\text{t}}{Y_2\cos\theta_\text{i}+Y_1\cos\theta_\text{t}}</math>|{{EquationRef|21}}}}
+and
+{{NumBlk|:|<math>t_\text{p}=\frac{2Y_1\cos\theta_\text{i}}{Y_2\cos\theta_\text{i}+Y_1\cos\theta_\text{t}}\,</math>.|{{EquationRef|22}}}}
+At ''normal incidence''{{px2}} {{math|(''θ<sub>i</sub>{{tsp}}{{=}} θ<sub>t</sub>{{tsp}}{{=}}'' 0),}} indicated by an additional subscript 0, these results become
+{{NumBlk|:|<math>r_\text{p0}=\frac{Y_2-Y_1}{Y_2+Y_1}</math>|{{EquationRef|23}}}}
+and
+{{NumBlk|:|<math>t_\text{p0}=\frac{2Y_1}{Y_2+Y_1}\,</math>.|{{EquationRef|24}}}}
+At ''grazing incidence''{{px2}} {{math|(''θ''<sub>i</sub>{{tsp}}→ 90°)}}, we again have{{tsp}} {{math|cos{{tsp}}''θ''<sub>i</sub>{{tsp}}→ 0{{px2}},}} hence{{tsp}} {{math|''r''<sub>p</sub>{{tsp}}→{{tsp}}−1}}{{tsp}} and{{tsp}} {{math|''t''<sub>p</sub>{{tsp}}→ 0}}.
+
+Comparing ({{EquationNote|23}}) and ({{EquationNote|24}}) with ({{EquationNote|15}}) and ({{EquationNote|16}}), we see that at ''normal'' incidence, under the adopted sign convention, the transmission coefficients for the two polarizations are equal, whereas the reflection coefficients have equal magnitudes but opposite signs. While this clash of signs is a disadvantage of the convention, the attendant advantage is that the signs agree at ''grazing'' incidence.
+
+=== Power ratios (reflectivity and transmissivity) ===
+
+The ''[[Poynting vector]]'' for a wave is a vector whose component in any direction is the ''[[irradiance]]'' (power per unit area) of that wave on a surface perpendicular to that direction. For a plane sinusoidal wave the Poynting vector is{{px2}} {{math|{{sfrac|2}}{{px2}}Re{{mset|'''E'''{{tsp}}×{{tsp}}'''H<sup>∗</sup>'''}},}} where {{math|'''E'''}} and {{math|'''H'''}} are due ''only'' to the wave in question, and the asterisk denotes complex conjugation. Inside a lossless dielectric (the usual case), {{math|'''E'''}} and {{math|'''H'''}} are in phase, and at right angles to each other and to the wave vector {{math|'''k'''}}{{hsp}}; so, for s polarization, using the {{mvar|z}} and {{mvar|xy}} components of {{math|'''E'''}} and {{math|'''H'''}}  respectively (or for p polarization, using the {{mvar|xy}} and {{mvar|-z}} components of {{math|'''E'''}} and {{math|'''H'''}}), the [[irradiance]] in the direction of {{math|'''k'''}} is given simply by {{math|''EH''/2{{hsp}},}}{{px2}} which is{{px2}} {{math|{{frac|''E''<sup>2</sup>|''2Z''}}}}{{tsp}} in a medium of intrinsic impedance {{math|''Z''{{nnbsp}}{{=}}{{nnbsp}}1/''Y''}}. To compute the irradiance in the direction normal to the interface, as we shall require in the definition of the power transmission coefficient, we could use only the {{mvar|x}} component (rather than the full {{mvar|xy}} component) of {{math|'''H'''}} or {{math|'''E'''}} or, equivalently, simply multiply {{math|''EH''/2}} by the proper geometric factor, obtaining {{math|{{big|(}}{{frac|''E''<sup>2</sup>|''2Z''}}{{hsp}}{{big|)}}{{nnbsp}}cos{{nnbsp}}''θ''}}.
+
+From equations ({{EquationNote|13}}) and ({{EquationNote|21}}), taking squared magnitudes, we find that the ''[[reflectivity]]'' (ratio of reflected power to incident power) is
+{{NumBlk|:|<math>R_\text{s}=\left|\frac{Y_1\cos\theta_\text{i}-Y_2\cos\theta_\text{t}}{Y_1\cos\theta_\text{i}+Y_2\cos\theta_\text{t}}\right|^2</math>|{{EquationRef|25}}}}
+for the s polarization, and
+{{NumBlk|:|<math>R_\text{p}=\left|\frac{Y_2\cos\theta_\text{i}-Y_1\cos\theta_\text{t}}{Y_2\cos\theta_\text{i}+Y_1\cos\theta_\text{t}}\right|^2</math>|{{EquationRef|26}}}}
+for the p polarization. Note that when comparing the powers of two such waves in the same medium and with the same {{tsp}}cos{{tsp}}''θ'', the impedance and geometric factors mentioned above are identical and cancel out. But in computing the power ''transmission'' (below), these factors must be taken into account.
+
+The simplest way to obtain the power transmission coefficient (''[[transmittance|transmissivity]]'', the ratio of transmitted power to incident power ''in the direction normal to the interface'', i.e. the {{mvar|y}} direction) is to use {{math|''R''{{nnbsp}}+{{nnbsp}}''T''{{nnbsp}}{{=}}{{nnbsp}}1}}{{px2}} (conservation of energy). In this way we find
+{{NumBlk|:|<math>T_\text{s}
+=1-R_\text{s}
+=\,\frac{4\,\text{Re}\{ Y_1 Y_2\cos\theta_\text{i}\cos\theta_\text{t}\}}{\left|Y_1\cos\theta_\text{i}+Y_2\cos\theta_\text{t}\right|^2}</math>|{{EquationRef|25T}}}}
+for the s polarization, and
+{{NumBlk|:|<math>T_\text{p}
+=1-R_\text{p}
+=\,\frac{4\,\text{Re}\{Y_1 Y_2\cos\theta_\text{i}\cos\theta_\text{t}\}}{\left|Y_2\cos\theta_\text{i}+Y_1\cos\theta_\text{t}\right|^2}</math>|{{EquationRef|26T}}}}
+for the p polarization.
+
+In the case of an interface between two lossless media (for which ϵ and μ are ''real'' and positive), one can obtain these results directly using the squared magnitudes of the amplitude transmission coefficients that we found earlier in equations ({{EquationNote|14}}) and ({{EquationNote|22}}). But, for given amplitude (as noted above), the component of the Poynting vector in the {{mvar|y}} direction is proportional to the geometric factor {{math|cos{{nnbsp}}''θ''{{px2}}}} and inversely proportional to the wave impedance {{mvar|Z}}. Applying these corrections to each wave, we obtain two ratios multiplying the square of the amplitude transmission coefficient:
+{{NumBlk|:|<math>T_\text{s}
+=\left(\frac{2Y_1\cos\theta_\text{i}}{Y_1\cos\theta_\text{i}+Y_2\cos\theta_\text{t}}\right)^2\frac{\,Y_2\,}{Y_1}\,\frac{\cos\theta_\text{t}}{\cos\theta_\text{i}}
+=\frac{4Y_1 Y_2\cos\theta_\text{i}\cos\theta_\text{t}}{\left(Y_1\cos\theta_\text{i}+Y_2\cos\theta_\text{t}\right)^2}</math>|{{EquationRef|27}}}}
+for the s polarization, and
+{{NumBlk|:|<math>T_\text{p}
+=\left(\frac{2Y_1\cos\theta_\text{i}}{Y_2\cos\theta_\text{i}+Y_1\cos\theta_\text{t}}\right)^2\frac{\,Y_2\,}{Y_1}\,\frac{\cos\theta_\text{t}}{\cos\theta_\text{i}}
+=\frac{4Y_1 Y_2\cos\theta_\text{i}\cos\theta_\text{t}}{\left(Y_2\cos\theta_\text{i}+Y_1\cos\theta_\text{t}\right)^2}</math>|{{EquationRef|28}}}}
+for the p polarization. The last two equations apply only to lossless dielectrics, and only at incidence angles smaller than the critical angle (beyond which, of course, {{math|''T''{{nnbsp}}{{=}}{{nnbsp}}0}}{{hsp}}).
+
+=== Equal refractive indices ===
+
+From equations ({{EquationNote|4}}) and ({{EquationNote|5}}), we see that two dissimilar media will have the same refractive index, but different admittances, if the ratio of their permeabilities is the inverse of the ratio of their permittivities. In that unusual situation we have{{tsp}} {{math|''θ''<sub>t</sub>{{tsp}}{{=}} ''θ''<sub>i</sub>}}{{px2}} (that is, the transmitted ray is undeviated), so that the cosines in equations ({{EquationNote|13}}), ({{EquationNote|14}}), ({{EquationNote|21}}), ({{EquationNote|22}}), and ({{EquationNote|25}}) to ({{EquationNote|28}}) cancel out, and all the reflection and transmission ratios become independent of the angle of incidence; in other words, the ratios for normal incidence become applicable to all angles of incidence.<ref>{{cite journal |first1=C.L. |last1=Giles |first2=W.J. |last2=Wild |title=Fresnel Reflection and Transmission at a Planar Boundary from Media of Equal Refractive Indices |journal=Applied Physics Letters |volume=40 |pages=210–212 |year=1982|issue=3 |doi=10.1063/1.93043 }}</ref> When extended to spherical reflection or scattering, this results in the Kerker effect for [[Mie scattering]].
+
+=== Non-magnetic media ===
+
+Since the Fresnel equations were developed for optics, they are usually given for non-magnetic materials. Dividing ({{EquationNote|4}}) by ({{EquationNote|5}})) yields
+:<math>Y=\frac{n}{\,c\mu\,}</math>.
+For non-magnetic media we can substitute the [[vacuum permeability]] ''μ''<sub>0</sub> for ''μ'', so that
+:<math>Y_1=\frac{n_1}{\,c\mu_0} ~~;~~~ Y_2=\frac{n_2}{\,c\mu_0}\,</math>;
+that is, the admittances are simply proportional to the corresponding refractive indices. When we make these substitutions in equations ({{EquationNote|13}}) to ({{EquationNote|16}}) and equations ({{EquationNote|21}}) to ({{EquationNote|26}}), the factor ''cμ''<sub>0</sub> cancels out. For the amplitude coefficients we obtain:<ref name=Sernelius /><ref name="Born 1970"/>
+
+{{NumBlk|:|<math>r_\text{s}=\frac{n_1\cos\theta_\text{i}-n_2\cos\theta_\text{t}}{n_1\cos\theta_\text{i}+n_2\cos\theta_\text{t}}</math>|{{EquationRef|29}}}}
+{{NumBlk|:|<math>t_\text{s}=\frac{2n_1\cos\theta_\text{i}}{n_1\cos\theta_\text{i}+n_2\cos\theta_\text{t}}\,</math>|{{EquationRef|30}}}}
+
+{{NumBlk|:|<math>r_\text{p}=\frac{n_2\cos\theta_\text{i}-n_1\cos\theta_\text{t}}{n_2\cos\theta_\text{i}+n_1\cos\theta_\text{t}}</math>|{{EquationRef|31}}}}<!-- PLEASE DON'T CHANGE THE SIGN OF THIS EXPRESSION JUST BECAUSE YOUR FAVORITE TEXTBOOK USES A DIFFERENT SIGN CONVENTION FROM THE ONE DEFINED IN THIS ARTICLE AND ITS REFERENCES. -->
+{{NumBlk|:|<math>t_\text{p}=\frac{2n_1\cos\theta_\text{i}}{n_2\cos\theta_\text{i}+n_1\cos\theta_\text{t}}\,</math>.|{{EquationRef|32}}}}
+
+For the case of normal incidence these reduce to:
+
+{{NumBlk|:|<math>r_\text{s0}=\frac{n_1-n_2}{n_1+n_2}</math>|{{EquationRef|33}}}}
+{{NumBlk|:|<math>t_\text{s0}=\frac{2n_1}{n_1+n_2}</math>|{{EquationRef|34}}}}
+
+{{NumBlk|:|<math>r_\text{p0}=\frac{n_2-n_1}{n_2+n_1}</math>|{{EquationRef|35}}}}
+{{NumBlk|:|<math>t_\text{p0}=\frac{2n_1}{n_2+n_1}\,</math>.|{{EquationRef|36}}}}
+
+The power reflection coefficients become:
+{{NumBlk|:|<math>R_\text{s}=\left|\frac{n_1\cos\theta_\text{i}-n_2\cos\theta_\text{t}}{n_1\cos\theta_\text{i}+n_2\cos\theta_\text{t}}\right|^2</math>|{{EquationRef|37}}}}
+{{NumBlk|:|<math>R_\text{p}=\left|\frac{n_2\cos\theta_\text{i}-n_1\cos\theta_\text{t}}{n_2\cos\theta_\text{i}+n_1\cos\theta_\text{t}}\right|^2</math>.|{{EquationRef|38}}}}
+The power transmissions can then be found from {{math|''T''{{nnbsp}}{{=}}{{nnbsp}}1{{nnbsp}}-{{nnbsp}}''R''}}.
+
+=== Brewster's angle ===
+
+For equal permeabilities (e.g., non-magnetic media), if {{math|''θ''<sub>i</sub>}} and {{math|''θ''<sub>t</sub>}} are ''[[complementary angles|complementary]]'', we can substitute{{px2}} {{math|sin{{tsp}}''θ''<sub>t</sub>}}{{px2}} for{{px2}} {{math|cos{{tsp}}''θ''<sub>i</sub>{{px2}},}} and{{px2}} {{math|sin{{tsp}}''θ''<sub>i</sub>}}{{px2}} for{{px2}} {{math|cos{{tsp}}''θ''<sub>t</sub>{{px2}},}} so that the numerator in equation ({{EquationNote|31}}) becomes{{px2}} {{math|''n''<sub>2</sub>{{px2}}sin{{tsp}}''θ''<sub>t</sub>{{tsp}}− ''n''<sub>1</sub>{{px2}}sin{{tsp}}''θ''<sub>i</sub>{{px2}},}}{{tsp}} which is zero (by Snell's law). Hence{{tsp}} {{math|''r''<sub>p</sub>{{tsp}}{{=}} 0}}{{tsp}} and only the s-polarized component is reflected. This is what happens at the [[Brewster angle]]. Substituting{{px2}} {{math|cos{{tsp}}''θ''<sub>i</sub>}}{{px2}} for{{px2}} {{math|sin{{tsp}}''θ''<sub>t</sub>}}{{px2}} in Snell's law, we readily obtain
+{{NumBlk|:|<math>\theta_\text{i}=\arctan(n_2/n_1)</math>|{{EquationRef|39}}}}
+for Brewster's angle.
+
+=== Equal permittivities ===
+
+Although it is not encountered in practice, the equations can also apply to the case of two media with a common permittivity but different refractive indices due to different permeabilities. From equations ({{EquationNote|4}}) and ({{EquationNote|5}}), if ''ϵ'' is fixed instead of ''μ'', then {{mvar|Y}} becomes ''inversely'' proportional to {{mvar|n}}, with the result that the subscripts 1 and 2 in equations ({{EquationNote|29}}) to ({{EquationNote|38}}) are interchanged (due to the additional step of multiplying the numerator and denominator by {{math|''n''<sub>1</sub>''n''<sub>2</sub>}}). Hence, in ({{EquationNote|29}}) and ({{EquationNote|31}}), the expressions for {{math|''r''<sub>s</sub>}} and {{math|''r''<sub>p</sub>}} in terms of refractive indices will be interchanged, so that Brewster's angle ({{EquationNote|39}}) will give{{tsp}} {{math|''r''<sub>s</sub>{{tsp}}{{=}} 0}}{{tsp}} instead of{{tsp}} {{math|''r''<sub>p</sub>{{tsp}}{{=}} 0{{px2}},}}{{px2}} and any beam reflected at that angle will be p-polarized instead of s-polarized.<ref>More general Brewster angles, for which the angles of incidence and refraction are not necessarily complementary, are discussed in C.L.&nbsp;Giles and W.J.&nbsp;Wild, [http://clgiles.ist.psu.edu/pubs/brewster-magnetic.pdf "Brewster angles for magnetic media"], ''International Journal of Infrared and Millimeter Waves'', vol.{{tsp}}6, no.{{px2}}3 (March 1985), pp.{{tsp}}187–97.</ref> Similarly, Fresnel's sine law will apply to the p polarization instead of the s polarization, and his tangent law to the s polarization instead of the p polarization.
+
+This switch of polarizations has an analog in the old mechanical theory of light waves (see ''[[#History|§{{nnbsp}}History]]'', above). One could predict reflection coefficients that agreed with observation by supposing (like Fresnel) that different refractive indices were due to different ''densities'' and that the vibrations were ''normal'' to what was then called the [[plane of polarization]], or by supposing (like [[James MacCullagh|MacCullagh]] and [[Franz Ernst Neumann|Neumann]]) that different refractive indices were due to different ''elasticities'' and that the vibrations were ''parallel'' to that plane.<ref>Whittaker, 1910, pp.{{tsp}}133,{{tsp}}148–9; Darrigol, 2012, pp.{{tsp}}212,{{tsp}}229–31.</ref> Thus the condition of equal permittivities and unequal permeabilities, although not realistic, is of some historical interest.
+
+==See also==
+*[[Jones calculus]]
+*[[Polarization mixing]]
+*[[Index-matching material]]
+*[[Field and power quantities]]
+*[[Fresnel rhomb]], Fresnel's apparatus to produce circularly polarised light
+*[[Specular reflection]]
+*[[Schlick's approximation]]
+*[[Snell's window]]
+*[[X-ray reflectivity]]
+*[[Plane of incidence]]
+*[[Reflections of signals on conducting lines]]
+
+==Notes==
+{{reflist|group=Note}}
+
+==References==
+{{reflist}}
+
+==Sources==
+* M. Born and E. Wolf, 1970, ''[[Principles of Optics]]'', 4th&nbsp;Ed., Oxford: Pergamon Press.
+* J.Z. Buchwald, 1989, ''The Rise of the Wave Theory of Light: Optical Theory and Experiment in the Early Nineteenth Century'', University of Chicago Press, {{ISBN|0-226-07886-8}}.
+* R.E. Collin, 1966, ''Foundations for Microwave Engineering'', Tokyo: McGraw-Hill.
+* O. Darrigol, 2012, ''A History of Optics: From Greek Antiquity to the Nineteenth Century'', Oxford, {{ISBN|978-0-19-964437-7}}.
+* A. Fresnel, 1866{{hsp}} (ed.{{tsp}} H. de Senarmont, E.&nbsp;Verdet, and L.&nbsp;Fresnel), ''Oeuvres complètes d'Augustin Fresnel'', Paris: Imprimerie Impériale (3&nbsp;vols., 1866–70), [https://books.google.com/books?id=1l0_AAAAcAAJ vol.{{tsp}}1&nbsp;(1866)].
+* E. Hecht, 1987, ''Optics'', 2nd Ed., Addison Wesley, {{ISBN|0-201-11609-X}}.
+* E. Hecht, 2002, ''Optics'', 4th Ed., Addison Wesley, {{ISBN|0-321-18878-0}}.
+* F.A. Jenkins and H.E. White, 1976, ''Fundamentals of Optics'', 4th&nbsp;Ed., New&nbsp;York: McGraw-Hill, {{ISBN|0-07-032330-5}}.
+* H. Lloyd, 1834, [https://books.google.com/books?id=mtU4AAAAMAAJ&pg=PA295 "Report on the progress and present state of physical optics"], ''Report of the Fourth Meeting of the British Association for the Advancement of Science'' (held at Edinburgh in 1834), London: J.&nbsp;Murray, 1835, pp.{{tsp}}295–413.
+* W. Whewell, 1857, ''History of the Inductive Sciences: From the Earliest to the Present Time'', 3rd&nbsp;Ed., London: J.W.&nbsp;Parker &amp; Son, [https://archive.org/details/bub_gb_cBSrVEkaR8EC vol.{{tsp}}2].
+* [[E. T. Whittaker]], 1910, [[A History of the Theories of Aether and Electricity|''A History of the Theories of Aether and Electricity: From the Age of Descartes to the Close of the Nineteenth Century'']], London: Longmans, Green, &amp; Co.
+
+==Further reading==
+{{further cleanup|date=October 2014}}
+*{{cite book |title=The Cambridge Handbook of Physics Formulas |url=https://archive.org/details/cambridgehandboo0000woan |url-access=registration |first=G. |last=Woan |publisher=Cambridge University Press |date=2010 |isbn=978-0-521-57507-2}}
+*{{cite book|title=Introduction to Electrodynamics|edition=4th|chapter=Chapter 9.3: Electromagnetic Waves in Matter|first=David J.|last=Griffiths|publisher=Cambridge University Press|date=2017|isbn=978-1-108-42041-9}}
+*{{cite book |title=Light and Matter: Electromagnetism, Optics, Spectroscopy and Lasers |first=Y. B. |last=Band |publisher=John Wiley & Sons |date=2010 |isbn=978-0-471-89931-0}}
+*{{cite book |title=The Light Fantastic – Introduction to Classic and Quantum Optics |first=I. R. |last=Kenyon |publisher=Oxford University Press |date=2008 |isbn=978-0-19-856646-5 |url-access=registration |url=https://archive.org/details/lightfantasticmo0000keny }}
+*''Encyclopaedia of Physics (2nd Edition)'', R.G. Lerner, G.L. Trigg, VHC publishers, 1991, ISBN (Verlagsgesellschaft) 3-527-26954-1, ISBN (VHC Inc.) 0-89573-752-3
+*''McGraw Hill Encyclopaedia of Physics (2nd Edition)'', C.B. Parker, 1994, {{ISBN|0-07-051400-3}}
+
+== External links ==
+*[http://scienceworld.wolfram.com/physics/FresnelEquations.html Fresnel Equations] – Wolfram.
+*[http://www.fxsolver.com/solve/share/0E2w3XC71x0z_Wu9eQ7SPw==/ Fresnel equations calculator]
+*[http://people.csail.mit.edu/jaffer/FreeSnell FreeSnell] – Free software computes the optical properties of multilayer materials.
+*[http://thinfilm.hansteen.net/ Thinfilm] – Web interface for calculating optical properties of thin films and multilayer materials (reflection & transmission coefficients, ellipsometric parameters Psi & Delta).
+*[http://www.calctool.org/CALC/phys/optics/reflec_refrac Simple web interface for calculating single-interface reflection and refraction angles and strengths].
+*[http://wm.eecs.umich.edu/webMathematica/eecs434/f08/ideliz/final.jsp Reflection and transmittance for two dielectrics]{{dead link|date=October 2017 |bot=InternetArchiveBot |fix-attempted=yes }} – Mathematica interactive webpage that shows the relations between index of refraction and reflection.
+*[http://www.jedsoft.org/physics/notes/multilayer.pdf A self-contained first-principles derivation] of the transmission and reflection probabilities from a multilayer with complex indices of refraction.
+
+{{Portal bar|Physics}}
+
+[[Category:Light]]
+[[Category:Geometrical optics]]
+[[Category:Physical optics]]
+[[Category:Polarization (waves)]]
+[[Category:Equations of physics]]
+[[Category:History of physics]]

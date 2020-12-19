@@ -1,0 +1,258 @@
+{{short description|Scientific law regarding conservation of a physical property}}
+{{About|conservation in physics|the legal aspects of environmental conservation|Environmental law|and|Conservation movement|other uses|Conservation (disambiguation)}}
+In [[physics]], a '''conservation law''' states that a particular measurable property of an isolated [[physical system]] does not change as the system evolves over time. Exact conservation laws include [[conservation of energy]], [[conservation of linear momentum]], [[conservation of angular momentum]], and [[conservation of electric charge]]. There are also many approximate conservation laws, which apply to such quantities as [[conservation of mass|mass]], [[Parity (physics)|parity]], [[lepton number]], [[baryon number]], [[strangeness]], [[hypercharge]], etc.  These quantities are conserved in certain classes of physics processes, but not in all.
+
+A local conservation law is usually expressed mathematically as a [[continuity equation]], a [[partial differential equation]] which gives a relation between the amount of the quantity and the "transport" of that quantity.    It states that the amount of the conserved quantity at a point or within a volume can only change by the amount of the quantity which flows in or out of the volume.
+
+From [[Noether's theorem]], each conservation law is associated with a [[symmetry (physics)|symmetry]] in the underlying physics.
+
+==Conservation laws as fundamental laws of nature==
+
+Conservation laws are fundamental to our understanding of the physical world, in that they describe which processes can or cannot occur in nature.  For example, the conservation law of energy states that the total quantity of energy in an isolated system does not change, though it may change form.  In general, the total quantity of the property governed by that law remains unchanged during physical processes.  With respect to classical physics, conservation laws include conservation of energy, mass (or matter), linear momentum, angular momentum, and electric charge.  With respect to particle physics, particles cannot be created or destroyed except in pairs, where one is ordinary and the other is an antiparticle.  With respect to symmetries and invariance principles, three special conservation laws have been described, associated with inversion or reversal of space, time, and charge.
+
+Conservation laws are considered to be fundamental laws of nature, with broad application in physics, as well as in other fields such as chemistry, biology, geology, and engineering.
+
+Most conservation laws are exact, or absolute, in the sense that they apply to all possible processes.  Some conservation laws are partial, in that they hold for some processes but not for others.
+
+One particularly important result concerning conservation laws is [[Noether's theorem]], which states that there is a one-to-one correspondence between each one of them and a differentiable [[symmetry (physics)|symmetry]] of nature.  For example, the conservation of energy follows from the time-invariance of physical systems, and the conservation of angular momentum arises from the fact that physical systems behave the same regardless of how they are oriented in space.
+
+==Exact laws==
+A partial listing of physical conservation equations [[Symmetry (physics)#Conservation laws and symmetry|due to symmetry]] that are said to be '''exact laws''', or more precisely ''have never been proven to be violated:''
+{| class="wikitable sortable"
+|-
+! Conservation Law !!  colspan="2" | Respective Noether symmetry [[Invariant (physics)|invariance]]!! colspan="2" | Number of dimensions
+|-
+| [[Conservation of mass-energy]]
+|| [[Time-invariant system|Time-translation invariance]] 
+| rowspan="4" | [[Lorentz covariance|Lorentz invariance]] [[Lorentz symmetry|symmetry]]
+|| 1 
+|| translation along time axis
+|-
+| [[Conservation of linear momentum]]
+|| [[Translation symmetry|Space-translation invariance]]
+|| 3 
+|| translation along ''x'',''y'',''z'' directions
+|-
+| [[Conservation of angular momentum]]
+|| [[Rotational symmetry|Rotation invariance]]
+|| 3 
+|| rotation about ''x'',''y'',''z'' axes
+|-
+| Conservation of CM (center-of-momentum) velocity
+|| [[Lorentz covariance|Lorentz-boost invariance]]
+|| 3
+|| Lorentz-boost along ''x'',''y'',''z'' directions
+|-
+| [[charge conservation|Conservation of electric charge]]
+| colspan="2" | [[Gauge invariance]]
+|| 1⊗4 
+|| scalar field (1D) in 4D spacetime (''x'',''y'',''z''&nbsp;+ time&nbsp;evolution)
+|-
+| Conservation of [[color charge]]
+| colspan="2" | [[SU(3)]] [[Gauge invariance]]
+|| 3 
+|| ''r'',''g'',''b''
+|-
+| Conservation of [[weak isospin]]
+| colspan="2" | [[SU(2)]]<SUB>L</SUB> [[Gauge invariance]]
+|| 1 
+|| weak charge
+|-
+| [[Probability current|Conservation of probability]]
+| colspan="2" | Probability invariance<ref>{{cite web|url=http://physics.stackexchange.com/questions/63706/the-gauge-invariance-of-the-probability-current|title=The gauge-invariance of the probability current|website=Physics Stack Exchange|accessdate=4 May 2018|url-status=live|archiveurl=https://web.archive.org/web/20170818010029/https://physics.stackexchange.com/questions/63706/the-gauge-invariance-of-the-probability-current|archivedate=18 August 2017}}</ref>
+|| 1&nbsp;⊗&nbsp;4 
+|| total probability always&nbsp;=&nbsp;1 in whole ''x'',''y'',''z'' space, during time evolution
+|}
+
+==Approximate laws==
+
+There are also '''approximate''' conservation laws.  These are approximately true in particular situations, such as low speeds, short time scales, or certain interactions.
+
+* [[Mechanical energy#Conservation of mechanical energy|Conservation of mechanical energy]]
+* [[Conservation of mass|Conservation of rest mass]]
+* Conservation of [[baryon number]] (See [[chiral anomaly]] and [[sphaleron]])
+* Conservation of [[lepton number]] (In the [[Standard Model]])
+* Conservation of [[flavor (particle physics)|flavor]] (violated by the [[weak interaction]])
+* Conservation of [[parity (physics)|parity]]
+* Invariance under [[charge conjugation]]
+* Invariance under [[T-symmetry|time reversal]]
+* [[CP symmetry]], the combination of charge conjugation and parity (equivalent to time reversal if CPT holds)
+
+==Global and local conservation laws==
+The total amount of some conserved quantity in the universe could remain unchanged if an equal amount were to appear at one point ''A'' and simultaneously disappear from another separate point ''B''.  For example, an amount of energy could appear on Earth without changing the total amount in the Universe if the same amount of energy were to disappear from a remote region of the Universe.  This weak form of "global" conservation is really not a conservation law because it is not [[Lorentz invariant]], so phenomena like the above do not occur in nature.<ref name="Aitchison">{{cite book
+ |last1       = Aitchison
+ |first1      = Ian J. R.
+ |last2       = Hey
+ |first2      = Anthony J.G.
+ |title       = Gauge Theories in Particle Physics: A Practical Introduction: From Relativistic Quantum Mechanics to QED, Fourth Edition, Vol. 1
+ |publisher   = CRC Press
+ |date        = 2012
+ |pages       = 43
+ |url         = https://books.google.com/books?id=-v6sPfuyUt8C&q=%22global+conservation%22+%22local+conservation%22&pg=PA43
+ |isbn        = 978-1466512993
+ |url-status     = live
+ |archiveurl  = https://web.archive.org/web/20180504190417/https://books.google.com/books?id=-v6sPfuyUt8C&pg=PA43&dq=%22global+conservation%22+%22local+conservation%22
+ |archivedate = 2018-05-04
+}}</ref><ref name="Will">{{cite book
+ |last1       = Will
+ |first1      = Clifford M.
+ |title       = Theory and Experiment in Gravitational Physics
+ |publisher   = Cambridge Univ. Press
+ |date        = 1993
+ |pages       = 105
+ |url         = https://books.google.com/books?id=BhnUITA7sDIC&q=%22global+conservation%22+%22local+conservation%22+law&pg=PA105
+ |isbn        = 978-0521439732
+ |url-status     = live
+ |archiveurl  = https://web.archive.org/web/20170220012119/https://books.google.com/books?id=BhnUITA7sDIC&pg=PA105&dq=%22global+conservation%22+%22local+conservation%22+law
+ |archivedate = 2017-02-20
+}}</ref>  Due to [[special relativity]], if the appearance of the energy at ''A'' and disappearance of the energy at ''B'' are simultaneous in one [[inertial reference frame]], they will not be simultaneous in other inertial reference frames moving with respect to the first.  In a moving frame one will occur before the other; either the energy at ''A'' will appear ''before'' or ''after'' the energy at ''B'' disappears.  In both cases, during the interval energy will not be conserved.  
+
+A stronger form of conservation law requires that, for the amount of a conserved quantity at a point to change, there must be a flow, or ''flux'' of the quantity into or out of the point.  For example, the amount of [[electric charge]] at a point is never found to change without an [[electric current]] into or out of the point that carries the difference in charge.  Since it only involves continuous ''[[principle of locality|local]]'' changes, this stronger type of conservation law is [[Lorentz invariant]]; a quantity conserved in one reference frame is conserved in all moving reference frames.<ref name="Aitchison" /><ref name="Will"/>  This is called a ''local conservation'' law.<ref name="Aitchison" /><ref name="Will"/>  Local conservation also implies global conservation; that the total amount of the conserved quantity in the Universe remains constant.  All of the conservation laws listed above are local conservation laws. A local conservation law is expressed mathematically by a ''[[continuity equation]]'', which states that the change in the quantity in a volume is equal to the total net  "flux" of the quantity through the surface of the volume.  The following sections discuss continuity equations in general.
+
+==Differential forms==
+{{see also|conservation form|continuity equation}}
+In continuum mechanics, the most general form of an exact conservation law is given by a [[continuity equation]]. For example, conservation of electric charge ''q'' is
+:<math>\frac{\partial \rho}{\partial t} = - \nabla \cdot \mathbf{j} \,</math>
+
+where ∇⋅ is the [[divergence]] operator, ''ρ'' is the density of ''q'' (amount per unit volume), '''j''' is the flux of ''q'' (amount crossing a unit area in unit time), and ''t'' is time.
+
+If we assume that the motion '''u''' of the charge is a continuous function of position and time, then
+:<math> \mathbf{j} = \rho \mathbf{u} </math>
+:<math>\frac{\partial \rho}{\partial t} = - \nabla \cdot (\rho \mathbf{u}) \,.</math>
+
+In one space dimension this can be put into the form of a homogeneous first-order [[nonlinear partial differential equation|quasilinear]] [[hyperbolic equation]]:<ref name="To24">see Toro, p.43</ref>
+
+:<math> y_t + A(y) y_x = 0 </math>
+
+where the dependent variable ''y'' is called the ''density'' of a ''conserved quantity'', and ''A(y)'' is called the ''[[current jacobian]]'', and the [[Notation for differentiation#Partial derivatives|subscript notation for partial derivatives]] has been employed. The more general inhomogeneous case:
+
+:<math> y_t + A(y) y_x = s </math>
+
+is not a conservation equation but the general kind of [[balance equation]] describing a [[dissipative system]]. The dependent variable ''y'' is called a ''nonconserved quantity'', and the inhomogeneous term ''s(y,x,t)'' is the-''[[Divergence|source]]'', or [[dissipation]]. For example, balance equations of this kind are the momentum and energy [[Navier-Stokes equations]], or the [[entropy#Entropy balance equation for open systems|entropy balance]] for a general [[isolated system]].
+
+In the '''one-dimensional space''' a conservation equation is a first-order [[nonlinear partial differential equation|quasilinear]] [[hyperbolic equation]] that can be put into the ''advection'' form:
+
+:<math> y_t + a(y) y_x = 0 </math>
+
+where the dependent variable ''y(x,t)'' is called the density of the ''conserved'' (scalar) quantity (c.q.(d.) = conserved quantity (density)), and ''a(y)'' is called the '''current coefficient''', usually corresponding to the [[partial derivative]] in the conserved quantity of a [[current density]] (c.d.) of the conserved quantity ''j(y)'':<ref name="To24" />
+
+:<math> a(y) = j_y (y)</math>
+
+In this case since the [[chain rule]] applies:
+
+:<math> j_x= j_y (y) y_x = a(y) y_x </math>
+
+the conservation equation can be put into the current density form:
+
+:<math> y_t + j_x (y)= 0 </math>
+
+In a '''space with more than one dimension''' the former definition can be extended to an equation that can be put into the form:
+
+:<math> y_t + \mathbf a(y) \cdot \nabla y = 0 </math>
+
+where the ''conserved quantity'' is ''y('''r''',t)'', ''<math>\cdot</math>'' denotes the [[scalar product]], ''∇'' is the [[nabla symbol|nabla]] operator, here indicating a [[gradient]], and ''a(y)'' is a vector of current coefficients, analogously corresponding to the [[divergence]] of a vector c.d. associated to the c.q. '''j'''(y):
+
+:<math> y_t + \nabla \cdot \mathbf  j(y) = 0 </math>
+
+This is the case for the [[continuity equation]]:
+
+:<math> \rho_t + \nabla \cdot (\rho \mathbf u) = 0 </math>
+
+Here the conserved quantity is the [[mass]], with [[density]] ''ρ''('''r''',t) and current density  ''ρ'''''u''', identical to the [[momentum conservation|momentum density]], while '''u'''('''r''',t) is the [[flow velocity]].
+
+In the '''general case''' a conservation equation can be also a system of this kind of equations (a [[vector equation]]) in the form:<ref name="To24" />
+
+:<math> \mathbf y_t + \mathbf A(\mathbf y) \cdot \nabla \mathbf y = \mathbf 0 </math>
+
+where '''y''' is called the ''conserved'' ('''vector''') quantity, ∇ y is its [[gradient]], '''0''' is the [[zero vector]], and '''A(y)''' is called the [[Jacobian matrix and determinant|Jacobian]] of the current density. In fact as in the former scalar case, also in the vector case '''A(y)''' usually corresponding to the Jacobian of a [[current density matrix]] '''J(y)''':
+
+:<math> \mathbf A( \mathbf y) = \mathbf J_{\mathbf y} (\mathbf y)</math>
+
+and the conservation equation can be put into the form:
+
+:<math> \mathbf y_t + \nabla \cdot \mathbf J (\mathbf y)= \mathbf 0 </math>
+
+For example, this the case for Euler equations (fluid dynamics). In the simple incompressible case they are:
+
+:<math>
+\begin{align}
+\nabla\cdot \mathbf u=0\\[1.2ex]
+{\partial \mathbf u \over\partial t}+ \mathbf u \cdot
+\nabla \mathbf u + \nabla s =\mathbf{0},
+\end{align}
+</math>
+
+where:
+*'''''u''''' is the [[flow velocity]] [[Vector (geometric)|vector]], with components in a N-dimensional space ''u<sub>1</sub>'', ''u<sub>2</sub>'' ... ''u<sub>N</sub>'',
+*''s'' is the specific [[pressure]] (pressure per unit [[density]]) giving the [[Linear differential equation|source term]],
+
+{{see also|Euler equations (fluid dynamics)}}
+
+It can be shown that the conserved (vector) quantity and the c.d. matrix for these equations are respectively:
+
+:<math>
+{\mathbf y}=\begin{pmatrix}1 \\  \mathbf u \end{pmatrix}; \qquad
+{\mathbf J}=\begin{pmatrix}\mathbf u\\ \mathbf u \otimes \mathbf u + s \mathbf I\end{pmatrix};\qquad
+</math>
+
+where ''<math>\otimes</math>'' denotes the [[outer product]].
+
+==Integral and weak forms==
+Conservation equations can be also expressed in integral form: the advantage of the latter is substantially that it requires less smoothness of the solution, which paves the way to [[weak formulation|weak form]], extending the class of admissible solutions to include discontinuous solutions.<ref name="ToroInt">see Toro, p.62-63</ref> By integrating in any space-time domain the current density form in 1-D space:
+
+:<math> y_t + j_x (y)= 0 </math>
+
+and by using [[Green's theorem]], the integral form is:
+
+:<math> \int_{- \infty}^\infty y \, dx + \int_0^\infty j (y) \, dt = 0 </math>
+
+In a similar fashion, for the scalar multidimensional space, the integral form is:
+
+:<math> \oint [y \, d^N r + j (y) \, dt] = 0 </math>
+
+where the line integration is performed along the boundary of the domain, in an anticlock-wise manner.<ref name="ToroInt" />
+
+Moreover, by defining a [[test function]] ''φ''('''r''',''t'') continuously differentiable both in time and space with compact support, the [[weak formulation|weak form]] can be obtained pivoting on the [[initial condition]]. In 1-D space it is:
+
+: <math> \int_0^\infty \int_{-\infty}^\infty \phi_t y + \phi_x j(y) \,dx \,dt = - \int_{-\infty}^\infty \phi(x,0) y(x,0) \, dx </math>
+
+Note that in the weak form all the partial derivatives of the density and current density have been passed on to the test function, which with the former hypothesis is sufficiently smooth to admit these derivatives.<ref name="ToroInt" />
+
+==See also==
+* [[Invariant (physics)]]
+* [[Conservative system]]
+* [[Conserved quantity]]
+** Some kinds of [[helicity (disambiguation)|helicity]] are conserved in dissipationless limit: [[hydrodynamical helicity]], [[magnetic helicity]], [[cross-helicity]].
+* [[Stress–energy tensor|Conservation law]] of the [[Stress–energy tensor]]
+* [[Riemann invariant]]
+* [[Philosophy of physics]]
+* [[Totalitarian principle]]
+* [[Convection–diffusion equation]]
+
+===Examples and applications===
+*[[Advection]]
+*[[Mass conservation]], or [[Continuity equation]]
+*[[Charge conservation]]
+*[[Euler equations (fluid dynamics)]]
+*inviscid [[Burgers equation]]
+*[[Kinematic wave]]
+*[[Conservation of energy]]
+*[[Traffic flow]]
+
+==Notes==
+<references/>
+
+==References==
+*Philipson, Schuster, ''Modeling by Nonlinear Differential Equations: Dissipative and Conservative Processes'', World Scientific Publishing Company 2009.
+*[[Victor J. Stenger]], 2000. ''Timeless Reality: Symmetry, Simplicity, and Multiple Universes''. Buffalo NY: Prometheus Books. Chpt. 12 is a gentle introduction to symmetry, invariance, and conservation laws.
+*{{cite book | ref=Toro| first=E.F. | last=Toro | title=Riemann Solvers and Numerical Methods for Fluid Dynamics | publisher=Springer-Verlag | year=1999 | isbn=978-3-540-65966-2|chapter=Chapter 2. Notions on Hyperbolic PDEs}}
+*E. Godlewski and P.A. Raviart, Hyperbolic systems of conservation laws, Ellipses, 1991.
+
+==External links==
+* [http://www.lightandmatter.com/lm Conservation Laws] — Ch. 11-15 in an online textbook
+
+[[Category:Symmetry]]
+[[Category:Conservation laws| ]]
+[[Category:Concepts in physics]]
+[[Category:Physical systems]]
+[[Category:Scientific laws]]

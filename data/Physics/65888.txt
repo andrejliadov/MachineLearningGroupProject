@@ -1,0 +1,301 @@
+{{distinguish|Magnetic inductance}}
+{{pp-semi-indef}}
+[[File:Electromagnetic_induction_-_solenoid_to_loop_-_animation.gif|thumb|upright=1.2|Alternating electric current flows through the solenoid on the left, producing a changing magnetic field. This field causes, by electromagnetic induction, an electric current to flow in the wire loop on the right.]]
+'''Electromagnetic''' or '''magnetic induction''' is the production of an [[electromotive force]] across an [[electrical conductor]] in a changing [[magnetic field]].
+
+[[Michael Faraday]] is generally credited with the discovery of induction in 1831, and [[James Clerk Maxwell]] mathematically described it as [[Faraday's law of induction]]. [[Lenz's law]] describes the direction of the induced field. Faraday's law was later generalized to become the Maxwell–Faraday equation, one of the four [[Maxwell's equations|Maxwell equations]] in his theory of [[electromagnetism]].
+
+Electromagnetic induction has found many applications, including electrical components such as [[inductor]]s and [[transformer]]s, and devices such as [[electric motor]]s and [[electric generator|generator]]s.
+
+{{Toclimit|3}}
+
+==History==
+[[Image:Induction experiment.png|thumb|upright=1.2|Faraday's experiment showing induction between coils of wire: The liquid battery ''(right)'' provides a current that flows through the small coil ''(A)'', creating a magnetic field. When the coils are stationary, no current is induced. But when the small coil is moved in or out of the large coil ''(B)'', the magnetic flux through the large coil changes, inducing a current which is detected by the galvanometer ''(G)''.<ref>
+{{cite book|last=Poyser|first=A. W.|url=https://archive.org/details/bub_gb_JzBAAAAAYAAJ|title=Magnetism and Electricity: A Manual for Students in Advanced Classes|publisher=[[Longmans|Longmans, Green, & Co.]]|year=1892|location=London and New York|page=[https://archive.org/details/bub_gb_JzBAAAAAYAAJ/page/n298 285]}}</ref>|alt=]]
+[[File:Faraday emf experiment.svg|thumb|upright=1.2|A diagram of Faraday's iron ring apparatus. Change in the magnetic flux of the left coil induces a current in the right coil.<ref name="Giancoli">{{cite book|last=Giancoli|first=Douglas C.|url=https://archive.org/details/physicsprinciple00gian|title=Physics: Principles with Applications|year=1998|edition=Fifth|pages=[https://archive.org/details/physicsprinciple00gian/page/623 623–624]|url-access=registration}}</ref>|alt=]]Electromagnetic induction was discovered by [[Michael Faraday]], published in 1831.<ref>{{cite book|last=Ulaby|first=Fawwaz|title=Fundamentals of applied electromagnetics|edition=5th|year=2007|url=https://www.amazon.com/exec/obidos/tg/detail/-/0132413264/ref=ord_cart_shr?%5Fencoding=UTF8&m=ATVPDKIKX0DER&v=glance|publisher=Pearson:Prentice Hall|isbn=978-0-13-241326-8|page=255}}</ref><ref>{{cite web|url=http://www.nas.edu/history/members/henry.html|title=Joseph Henry|access-date=2006-11-30|work=Distinguished Members Gallery, National Academy of Sciences|url-status=dead|archive-url=https://web.archive.org/web/20131213121232/http://www.nas.edu/history/members/henry.html|archive-date=2013-12-13}}</ref> It was discovered independently by [[Joseph Henry]] in 1832.<ref>{{cite web|last=Errede|first=Steven|year=2007|title=A Brief History of The Development of Classical Electrodynamics
+|url=http://web.hep.uiuc.edu/home/serrede/P435/Lecture_Notes/A_Brief_History_of_Electromagnetism.pdf}}</ref><ref>{{cite encyclopedia|encyclopedia=Smithsonian Institution Archives|title=Electromagnetism|url=http://siarchives.si.edu/history/exhibits/henry/electromagnetism}}</ref>
+
+In Faraday's first experimental demonstration (August 29, 1831), he wrapped two wires around opposite sides of an iron ring or "[[torus]]" (an arrangement similar to a modern [[toroidal transformer]]).{{citation needed|date=August 2016}} Based on his understanding of electromagnets, he expected that, when current started to flow in one wire, a sort of wave would travel through the ring and cause some electrical effect on the opposite side. He plugged one wire into a [[galvanometer]], and watched it as he connected the other wire to a battery. He saw a transient current, which he called a "wave of electricity", when he connected the wire to the battery and another when he disconnected it.<ref>''Michael Faraday'', by L. Pearce Williams, p. 182–3</ref> This induction was due to the change in [[magnetic flux]] that occurred when the battery was connected and disconnected.<ref name="Giancoli" /> Within two months, Faraday found several other manifestations of electromagnetic induction. For example, he saw transient currents when he quickly slid a bar magnet in and out of a coil of wires, and he generated a steady ([[direct current|DC]]) current by rotating a copper disk near the bar magnet with a sliding electrical lead ("[[Faraday's disk]]").<ref>''Michael Faraday'', by L. Pearce Williams, p. 191–5</ref>
+
+Faraday explained electromagnetic induction using a concept he called [[lines of force]]. However, scientists at the time widely rejected his theoretical ideas, mainly because they were not formulated mathematically.<ref name=Williams510>''Michael Faraday'', by L. Pearce Williams, p. 510</ref> An exception was [[James Clerk Maxwell]], who used Faraday's ideas as the basis of his quantitative electromagnetic theory.<ref name=Williams510/><ref>Maxwell, James Clerk (1904), ''A Treatise on Electricity and Magnetism'', Vol. II, Third Edition. Oxford University Press, pp. 178–9 and 189.</ref><ref name="IEEUK">[http://www.theiet.org/about/libarc/archives/biographies/faraday.cfm "Archives Biographies: Michael Faraday", The Institution of Engineering and Technology.]</ref> In Maxwell's model, the time varying aspect of electromagnetic induction is expressed as a differential equation, which [[Oliver Heaviside]] referred to as Faraday's law even though it is slightly different from Faraday's original formulation and does not describe motional EMF. Heaviside's version (see [[#Maxwell–Faraday equation|Maxwell–Faraday equation below]]) is the form recognized today in the group of equations known as [[Maxwell's equations]].
+
+In 1834 [[Heinrich Lenz]] formulated the law named after him to describe the "flux through the circuit". [[Lenz's law]] gives the direction of the induced EMF and current resulting from electromagnetic induction.
+
+==Theory==
+
+===Faraday's law of induction and Lenz's law===
+{{main|Faraday's law of induction}}
+[[File:Solenoid-1.png|right|thumb|upright=1.3|A solenoid]]
+[[File:VFPt_Solenoid_correct2.svg|right|thumb|upright=1.3|The longitudinal cross section of a solenoid with a constant electrical current running through it. The magnetic field lines are indicated, with their direction shown by arrows. The magnetic flux corresponds to the 'density of field lines'. The magnetic flux is thus densest in the middle of the solenoid, and weakest outside of it.]]
+
+Faraday's law of induction makes use of the [[magnetic flux]] Φ<sub>B</sub> through a region of space enclosed by a wire loop. The magnetic flux is defined by a [[surface integral]]:<ref>
+{{cite book
+ |last=Good |first=R. H.
+ |year=1999
+ |title=Classical Electromagnetism
+ |page=107
+ |publisher=[[Saunders College Publishing]]
+ |isbn=0-03-022353-9
+}}</ref>
+::<math> \Phi_\mathrm{B} = \int\limits_{\Sigma} \mathbf{B} \cdot d \mathbf{A}\ , </math>
+where ''d'''''A''' is an element of the surface Σ enclosed by the wire loop, '''B''' is the magnetic field. The [[dot product]] '''B'''·''d'''''A''' corresponds to an infinitesimal amount of magnetic flux. In more visual terms, the magnetic flux through the wire loop is proportional to the number of [[field line|magnetic flux lines]] that pass through the loop.
+
+When the flux through the surface changes, [[Faraday's law of induction]] says that the wire loop acquires an [[electromotive force]] (EMF).{{refn|group=note|The EMF is the voltage that would be measured by cutting the wire to create an [[Electric circuit|open circuit]], and attaching a [[voltmeter]] to the leads. Mathematically, <math>\mathcal{E}</math> is defined as the energy available from a unit charge that has traveled once around the wire loop.<ref name=Feynman>
+{{cite book
+ |last1=Feynman |first1=R. P.
+ |last2=Leighton |first2=R. B.
+ |last3=Sands |first3=M. L.
+ |year=2006
+ |title=The Feynman Lectures on Physics, Volume 2
+ |url=https://books.google.com/books?id=zUt7AAAACAAJ&q=intitle:Feynman+intitle:Lectures+intitle:on+intitle:Physics
+ |page=17{{hyphen}}2
+ |publisher=[[Pearson Education|Pearson]]/[[Addison-Wesley]]
+ |isbn=0-8053-9049-9 
+}}</ref><ref name=Griffiths2>
+{{cite book
+ |last=Griffiths
+ |first=D. J.
+ |year=1999
+ |title=Introduction to Electrodynamics
+ |url=https://archive.org/details/introductiontoel00grif_0/page/301
+ |edition=3rd
+ |pages=[https://archive.org/details/introductiontoel00grif_0/page/301 301–303]
+ |publisher=[[Prentice Hall]]
+ |isbn=0-13-805326-X
+ }}</ref><ref>
+{{cite book
+ |last1=Tipler |first1=P. A.
+ |last2=Mosca |first2=G.
+ |year=2003
+ |title=Physics for Scientists and Engineers
+ |page=795
+ |edition=5th
+ |url=https://books.google.com/books?id=R2Nuh3Ux1AwC&pg=PA795
+ |publisher=[[W.H. Freeman]]
+ |isbn=978-0716708100
+}}</ref>}} The most widespread version of this law states that the induced electromotive force in any closed circuit is equal to the [[time derivative|rate of change]] of the [[magnetic flux]] enclosed by the circuit:<ref name="Jordan & Balmain (1968)">
+{{cite book
+ |last1=Jordan |first1=E.
+ |last2=Balmain |first2=K. G.
+ |year=1968
+ |title=Electromagnetic Waves and Radiating Systems
+ |url=https://archive.org/details/electromagneticw00jord_157 |url-access=limited |page=[https://archive.org/details/electromagneticw00jord_157/page/n113 100]
+ |edition=2nd
+ |publisher=[[Prentice-Hall]]
+}}</ref><ref name="Hayt (1989)">
+{{cite book
+ |last=Hayt
+ |first=W.
+ |year=1989
+ |title=Engineering Electromagnetics
+ |page=[https://archive.org/details/engineeringelect5thhayt/page/312 312]
+ |edition=5th
+ |publisher=[[McGraw-Hill]]
+ |isbn=0-07-027406-1
+ |url=https://archive.org/details/engineeringelect5thhayt/page/312
+ }}</ref>
+:<math>\mathcal{E} = -{{d\Phi_\mathrm{B}} \over dt} \ </math>,
+where <math>\mathcal{E}</math> is the EMF and Φ<sub>B</sub> is the [[magnetic flux]]. The direction of the electromotive force is given by [[Lenz's law]] which states that an induced current will flow in the direction that will oppose the change which produced it.<ref>
+{{cite book
+ |last=Schmitt |first=R.
+ |year=2002
+ |title=Electromagnetics Explained
+ |publisher=Newnes |url=https://archive.org/details/electromagnetics0000schm
+ |url-access=registration |page=[https://archive.org/details/electromagnetics0000schm/page/75 75]
+ |isbn=9780750674034
+}}</ref> This is due to the negative sign in the previous equation. To increase the generated EMF, a common approach is to exploit [[flux linkage]] by creating a tightly wound [[inductor|coil of wire]], composed of ''N'' identical turns, each with the same magnetic flux going through them. The resulting EMF is then ''N'' times that of one single wire.<ref>
+{{cite book
+ |last1=Whelan |first1=P. M.
+ |last2=Hodgeson |first2=M. J.
+ |year=1978
+ |title=Essential Principles of Physics
+ |edition=2nd
+ |publisher=[[John Murray (publishing house)|John Murray]]
+ |isbn=0-7195-3382-1
+}}</ref><ref>
+{{cite web
+ |last=Nave |first=C. R.
+ |title=Faraday's Law
+ |url=http://hyperphysics.phy-astr.gsu.edu/hbase/electric/farlaw.html
+ |work=[[HyperPhysics]]
+ |publisher=[[Georgia State University]]
+ |access-date=2011-08-29
+}}</ref>
+:<math> \mathcal{E} = -N {{d\Phi_\mathrm{B}} \over dt} </math>
+
+Generating an EMF through a variation of the magnetic flux through the surface of a wire loop can be achieved in several ways:
+# the magnetic field '''B''' changes (e.g. an alternating magnetic field, or moving a wire loop towards a bar magnet where the B field is stronger),
+# the wire loop is deformed and the surface Σ changes,
+# the orientation of the surface ''d'''''A''' changes (e.g. spinning a wire loop into a fixed magnetic field),
+# any combination of the above
+
+===Maxwell–Faraday equation===
+{{See also|Faraday's law of induction#Maxwell–Faraday equation}}
+In general, the relation between the EMF <math> \mathcal{E}</math> in a wire loop encircling a surface &Sigma;, and the electric field '''E''' in the wire is given by
+:<math> \mathcal{E} = \oint_{\partial \Sigma} \mathbf{E} \cdot d\boldsymbol{\ell} </math>
+where ''d'''''ℓ''' is an element of contour of the surface &Sigma;, combining this with the definition of flux
+:<math> \Phi_\mathrm{B} = \int\limits_{\Sigma} \mathbf{B} \cdot d \mathbf{A}\ , </math>
+
+we can write the integral form of the Maxwell–Faraday equation
+:<math> \oint_{\partial \Sigma} \mathbf{E} \cdot d\boldsymbol{\ell} = -\frac{d}{d t} { \int_{\Sigma} \mathbf{B} \cdot d\mathbf{A}} </math>
+
+It is one of the four [[Maxwell's equations]], and therefore plays a fundamental role in the theory of [[classical electromagnetism]].
+
+===Faraday's law and relativity===
+Faraday's law describes two different phenomena: the ''motional EMF'' generated by a magnetic force on a moving wire (see [[Lorentz force#Force on a current-carrying wire|Lorentz force]]), and the ''transformer EMF'' this is generated by an electric force due to a changing magnetic field (due to the differential form of the [[#Maxwell–Faraday equation|Maxwell–Faraday equation]]). [[James Clerk Maxwell]] drew attention to the separate physical phenomena in 1861.<ref>
+{{cite journal
+ |last=Maxwell |first=J. C.
+ |year=1861
+ |title=On physical lines of force
+ |journal = [[Philosophical Magazine]]
+ |volume=90 |pages=11–23
+ |doi=10.1080/1478643100365918
+|doi-broken-date=2020-11-02
+ }}</ref><ref name=Griffiths1>
+{{cite book
+ |last=Griffiths
+ |first=D. J.
+ |year=1999
+ |title=Introduction to Electrodynamics
+ |url=https://archive.org/details/introductiontoel00grif_0/page/301
+ |edition=3rd
+ |pages=[https://archive.org/details/introductiontoel00grif_0/page/301 301–303]
+ |publisher=[[Prentice Hall]]
+ |isbn=0-13-805326-X
+ }} Note that the law relating flux to EMF, which this article calls "Faraday's law", is referred to by Griffiths as the "universal flux rule". He uses the term "Faraday's law" to refer to what this article calls the "Maxwell–Faraday equation".</ref> This is believed to be a unique example in physics of where such a fundamental law is invoked to explain two such different phenomena.<ref name=Feynman2>"The flux rule" is the terminology that Feynman uses to refer to the law relating magnetic flux to EMF. {{cite book
+ |last1=Feynman |first1=R. P.
+ |last2=Leighton |first2=R. B.
+ |last3= Sands |first3=M. L.
+ |year=2006
+ |title=The Feynman Lectures on Physics, Volume II
+ |page=17{{hyphen}}2
+ |publisher=[[Pearson Education|Pearson]]/[[Addison-Wesley]]
+ |url=https://books.google.com/books?id=zUt7AAAACAAJ&q=intitle:Feynman+intitle:Lectures+intitle:on+intitle:Physics
+ |isbn=0-8053-9049-9
+}}</ref>
+
+[[Albert Einstein]] noticed that the two situations both corresponded to a relative movement between a conductor and a magnet, and the outcome was unaffected by which one was moving. This was one of the principal paths that led him to develop [[special relativity]].<ref>
+{{cite journal
+ |last=Einstein |first=A.
+ |year=1905
+ |title=Zur Elektrodynamik bewegter Körper
+ |journal=[[Annalen der Physik]]
+ |volume=17 |issue=10 |pages=891–921
+ |bibcode=1905AnP...322..891E
+ |doi=10.1002/andp.19053221004
+ |url=http://sedici.unlp.edu.ar/bitstream/handle/10915/2786/Documento_completo__.pdf?sequence=1
+ }}<br />
+:Translated in {{cite book
+ |last=Einstein |first=A.
+ |others=Jeffery, G.B.; Perret, W. (transl.)
+ |year=1923
+ |chapter=On the Electrodynamics of Moving Bodies
+ |chapter-url=http://www.fourmilab.ch/etexts/einstein/specrel/specrel.pdf
+ |title=The Principle of Relativity
+ |publisher=[[Methuen and Company]]
+ |location=London
+}}</ref>
+
+==Applications==
+The principles of electromagnetic induction are applied in many devices and systems, including:
+{{columns-list|colwidth=22em|
+* [[Current clamp]]
+* [[Electric generator]]s
+* [[Electromagnetic forming]]
+* [[Graphics tablet]]
+* [[Hall effect]] meters
+* [[Induction cooking]]
+* [[Induction motor]]s
+* [[Induction sealing]]
+* [[Induction welding]]
+* [[Inductive charging]]
+* [[Inductor]]s
+* [[Magnetic flow meter]]s
+* [[Mechanically powered flashlight]]
+* [[Pickup (music technology)|Pickups]]
+* [[Rowland ring]]
+* [[Transcranial magnetic stimulation]]
+* [[Transformer]]s
+* [[Wireless energy transfer]]
+}}
+
+===Electrical generator===
+[[Image:Spindle.PNG|thumb|upright=1.3|Rectangular wire loop rotating at angular velocity ω in radially outward pointing magnetic field '''B''' of fixed magnitude. The circuit is completed by brushes making sliding contact with top and bottom discs, which have conducting rims. This is a simplified version of the ''drum generator''.]]
+{{Main|Electric generator}}
+The EMF generated by Faraday's law of induction due to relative movement of a circuit and a magnetic field is the phenomenon underlying [[electrical generator]]s. When a [[magnet|permanent magnet]] is moved relative to a conductor, or vice versa, an electromotive force is created. If the wire is connected through an [[electrical load]], current will flow, and thus [[electrical energy]] is generated, converting the mechanical energy of motion to electrical energy. For example, the ''drum generator'' is based upon the figure to the bottom-right. A different implementation of this idea is the [[Homopolar generator|Faraday's disc]], shown in simplified form on the right.
+
+In the Faraday's disc example, the disc is rotated in a uniform magnetic field perpendicular to the disc, causing a current to flow in the radial arm due to the Lorentz force. Mechanical work is necessary to drive this current. When the generated current flows through the conducting rim, a magnetic field is generated by this current through [[Ampère's circuital law]] (labelled "induced B" in the figure). The rim thus becomes an [[electromagnet]] that resists rotation of the disc (an example of [[Lenz's law]]). On the far side of the figure, the return current flows from the rotating arm through the far side of the rim to the bottom brush. The B-field induced by this return current opposes the applied B-field, tending to ''decrease'' the flux through that side of the circuit, opposing the ''increase'' in flux due to rotation. On the near side of the figure, the return current flows from the rotating arm through the near side of the rim to the bottom brush. The induced B-field ''increases'' the flux on this side of the circuit, opposing the ''decrease'' in flux due to r the rotation. The energy required to keep the disc moving, despite this reactive force, is exactly equal to the electrical energy generated (plus energy wasted due to [[friction]], [[Joule heating]], and other inefficiencies). This behavior is common to all generators converting [[mechanical energy]] to electrical energy.
+
+===Electrical transformer===
+{{Main|Transformer}}
+When the electric current in a loop of wire changes, the changing current creates a changing magnetic field. A second wire in reach of this magnetic field will experience this change in magnetic field as a change in its coupled magnetic flux, ''d'' Φ<sub>B</sub> / ''d t''. Therefore, an electromotive force is set up in the second loop called the induced EMF or transformer EMF. If the two ends of this loop are connected through an electrical load, current will flow.
+
+====Current clamp====
+[[File:Current Clamp.jpg|thumb|upright|A current clamp]]
+{{Main|Current clamp}}
+
+A current clamp is a type of transformer with a split core which can be spread apart and clipped onto a wire or coil to either measure the current in it or, in reverse, to induce a voltage. Unlike conventional instruments the clamp does not make electrical contact with the conductor or require it to be disconnected during attachment of the clamp.
+
+===Magnetic flow meter===
+{{Main|Magnetic flow meter}}
+Faraday's law is used for measuring the flow of electrically conductive liquids and slurries. Such instruments are called magnetic flow meters. The induced voltage ℇ generated in the magnetic field ''B'' due to a conductive liquid moving at velocity ''v'' is thus given by:
+
+:<math>\mathcal{E}= - B \ell v,</math>
+
+where ℓ is the distance between electrodes in the magnetic flow meter.
+
+==Eddy currents==
+{{main|Eddy current}}
+Electrical conductors moving through a steady magnetic field, or stationary conductors within a changing magnetic field, will have circular currents induced within them by induction, called [[eddy current]]s.  Eddy currents flow in closed loops in planes perpendicular to the magnetic field. They have useful applications in [[eddy current brake]]s and induction heating systems. However eddy currents induced in the metal [[magnetic core]]s of transformers and AC motors and generators are undesirable since they dissipate energy (called [[core losses]]) as heat in the resistance of the metal. Cores for these devices use a number of methods to reduce eddy currents:   
+* Cores of low frequency alternating current electromagnets and transformers, instead of being solid metal, are often made of stacks of metal sheets, called ''laminations'', separated by nonconductive coatings. These thin plates reduce the undesirable parasitic eddy currents, as described below.
+* Inductors and transformers used at higher frequencies often have magnetic cores made of nonconductive magnetic materials such as [[ferrite (magnet)|ferrite]] or iron powder held together with a resin binder.
+
+===Electromagnet laminations===
+[[File:Hawkins Electrical Guide - Figure 292 - Eddy currents in a solid armature.jpg|thumb|upright=0.9|left]]
+Eddy currents occur when a solid metallic mass is rotated in a magnetic field, because the outer portion of the metal cuts more [[magnetic lines of force]] than the inner portion; hence the induced electromotive force is not uniform; this tends to cause electric currents between the points of greatest and least potential. Eddy currents consume a considerable amount of energy and often cause a harmful rise in temperature.<ref name="Imagesand"><cite>Images and reference text are from the public domain book: [[Hawkins Electrical Guide]], Volume 1, Chapter 19: Theory of the Armature, pp. 270–273, Copyright 1917 by Theo. Audel & Co., Printed in the United States</cite></ref>
+{{clear}}
+[[File:Hawkins Electrical Guide - Figure 293 - Armature core with a few laminations showing effect on eddy currents.jpg|thumb|upright=0.9|left]]
+Only five laminations or plates are shown in this example, so as to show the subdivision of the eddy currents. In practical use, the number of laminations or punchings ranges from 40 to 66 per inch (16 to 26 per centimetre), and brings the eddy current loss down to about one percent. While the plates can be separated by insulation, the voltage is so low that the natural rust/oxide coating of the plates is enough to prevent current flow across the laminations.<ref name="Imagesand" />
+{{clear}}
+[[File:Small DC Motor pole laminations and overview.jpg|thumb|upright=0.9|left]]
+This is a rotor approximately 20&nbsp;mm in diameter from a DC motor used in a {{nowrap|CD player.}} Note the laminations of the electromagnet pole pieces, used to limit parasitic inductive losses.
+{{clear}}
+
+===Parasitic induction within conductors===
+[[File:Hawkins Electrical Guide - Figure 291 - Formation of eddy currents in a solid bar inductor.jpg|thumb|upright=0.9|left]]
+In this illustration, a solid copper bar conductor on a rotating armature is just passing under the tip of the pole piece N of the field magnet. Note the uneven distribution of the lines of force across the copper bar. The magnetic field is more concentrated and thus stronger on the left edge of the copper bar (a,b) while the field is weaker on the right edge (c,d). Since the two edges of the bar move with the same velocity, this difference in field strength across the bar creates whorls or current eddies within the copper bar.<ref name="Imagesand"/>
+
+High current power-frequency devices, such as electric motors, generators and transformers, use multiple small conductors in parallel to break up the eddy flows that can form within large solid conductors. The same principle is applied to transformers used at higher than power frequency, for example, those used in [[switch mode power supply|switch-mode power supplies]] and the [[intermediate frequency]] coupling transformers of radio receivers.
+{{clear}}
+
+==See also==
+{{Wikipedia books|Maxwell's equations}}{{electromagnetism|cTopic=Electrodynamics}}
+* [[Alternator]]
+* [[Crosstalk]]
+* [[Faraday paradox]]
+* [[Inductance]]
+* [[Moving magnet and conductor problem]]
+{{clear}}
+
+== References ==
+
+===Notes===
+{{reflist|group=note}}
+
+===References===
+{{reflist|30em}}
+
+==Further reading==
+* [https://archive.org/details/atreatiseonelec04maxwgoog <!-- quote=intitle:a intitle:treatise intitle:on intitle:electricity intitle:an intitle:magnetism. --> Maxwell, James Clerk (1881), ''A treatise on electricity and magnetism, Vol. II'', Chapter III, §530, p.&nbsp;178.] Oxford, UK: Clarendon Press. {{ISBN|0-486-60637-6}}.
+
+==External links==
+* [https://web.archive.org/web/20120617020014/http://usna.edu/Users/physics/tank/Public/FaradaysLaw.pdf Tankersley and Mosca: ''Introducing Faraday's law'']
+* [http://www.phy.hk/wiki/englishhtm/Induction.htm A free java simulation on motional EMF]
+
+{{Authority control}}
+
+{{DEFAULTSORT:Electromagnetic Induction}}
+[[Category:Electrodynamics]]
+[[Category:Concepts in physics]]
+[[Category:Michael Faraday]]
+[[Category:Maxwell's equations]]
