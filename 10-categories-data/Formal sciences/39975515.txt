@@ -1,0 +1,13 @@
+{{see also|Demonic non-determinism}}
+
+In [[computer science]], '''angelic non-determinism''' is the execution of a [[non-deterministic program]] where all choices that are made favor [[Abort (computing)|termination]] of the program.
+
+==References==
+{{cite journal |last1=Wirsing |first1=M. |last2=Broy |first2=M. |title=On the algebraic specification of nondeterministic programming languages |journal=Caap '81 |volume=112 |date=5 March 1981 |pages=162–179 |doi=10.1007/3-540-10828-9_61 |publisher=Springer, Berlin, Heidelberg |language=en|series=Lecture Notes in Computer Science |isbn=978-3-540-10828-3 }}
+
+{{cite journal |last1=Bodik |first1=Rastislav |last2=Chandra |first2=Satish |last3=Galenson |first3=Joel |last4=Kimelman |first4=Doug |last5=Tung |first5=Nicholas |last6=Barman |first6=Shaon |last7=Rodarmor |first7=Casey |title=Programming with Angelic Nondeterminism |journal=SIGPLAN Notices |date=2010 |volume=45 |issue=1 |pages=339–352 |doi=10.1145/1707801.1706339 |issn=0362-1340}}
+
+[[Category:Theoretical computer science]]
+
+
+{{comp-sci-theory-stub}}

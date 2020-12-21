@@ -1,0 +1,222 @@
+{{Short description|Model in topological quantum mechanics
+}}
+{{Use American English|date=January 2019}}
+
+The '''AKLT model''' is an extension of the one-dimensional [[quantum mechanics|quantum]] [[Heisenberg model (quantum)|Heisenberg spin model]]. The proposal and exact solution of this model by [[Ian Affleck|Affleck]], [[Elliott H. Lieb|Lieb]], Kennedy and Tasaki<ref name="Affleck:1987" /> provided crucial insight into the physics of the spin-1 Heisenberg chain.<ref>{{cite journal | last1 = Haldane | first1 = F. D. M. | year = 1983 | title =  Nonlinear Field Theory of Large-Spin Heisenberg Antiferromagnets: Semiclassically Quantized Solitons of the One-Dimensional Easy-Axis Néel State| journal = Phys. Rev. Lett. | volume = 50 | issue = 15| page = 1153 | doi=10.1103/physrevlett.50.1153 | bibcode=1983PhRvL..50.1153H| doi-access = free }}</ref><ref>{{cite journal | last1 = Haldane | first1 = F. D. M. | year = 1983 | title =  Continuum dynamics of the 1-D Heisenberg antiferromagnet: Identification with the O(3) nonlinear sigma model| doi = 10.1016/0375-9601(83)90631-x | journal = Phys. Lett. A | volume = 93 | issue = 9| page = 464 |bibcode = 1983PhLA...93..464H }}</ref><ref>{{cite journal | last1 = Affleck | first1 = I. | last2 = Haldane | first2 = F. D. M. | year = 1987 | title =  Critical theory of quantum spin chains| journal = Phys. Rev. B | volume = 36 | issue = 10| page = 5291 | doi=10.1103/physrevb.36.5291|bibcode = 1987PhRvB..36.5291A | pmid = 9942166 }}</ref><ref>{{cite journal | last1 = Affleck | first1 = I. | year = 1989 | title =  Quantum spin chains and the Haldane gap| journal = J. Phys.: Condens. Matter | volume = 1 | issue = 19| page = 3047 | doi=10.1088/0953-8984/1/19/001|bibcode = 1989JPCM....1.3047A }}</ref> It has also served as a useful example for such concepts as valence bond solid order, [[symmetry-protected topological order]]<ref>{{cite journal | last1 = Gu | first1 = Zheng-Cheng | last2 = Wen | first2 = Xiao-Gang | year = 2009 | title = Tensor-Entanglement-Filtering Renormalization Approach and Symmetry-Protected Topological Order | arxiv = 0903.1069 | journal = Phys. Rev. B | volume = 80 | issue = 15| page = 155131 | doi=10.1103/physrevb.80.155131|bibcode = 2009PhRvB..80o5131G | s2cid = 15114579 }}</ref><ref name="Pollmann:2012" /><ref>{{cite journal | last1 = Chen | first1 = Xie | last2 = Gu | first2 = Zheng-Cheng | last3 = Wen | first3 = Xiao-Gang | year = 2011 | title = Classification of Gapped Symmetric Phases in 1D Spin Systems | arxiv = 1008.3745 | journal = Phys. Rev. B | volume = 83 | issue = 3| page = 035107 | doi=10.1103/physrevb.83.035107 | bibcode=2011PhRvB..83c5107C| s2cid = 9139955 }}</ref><ref>{{cite journal | last1 = Chen | first1 = Xie | last2 = Liu | first2 = Zheng-Xin | last3 = Wen | first3 = Xiao-Gang | year = 2011 | title = 2D symmetry-protected topological orders and their protected gapless edge excitations | arxiv = 1106.4752 | journal = Phys. Rev. B | volume = 84 | issue = 23| page = 235141 | doi=10.1103/physrevb.84.235141 | bibcode=2011PhRvB..84w5141C| s2cid = 55330505 }}</ref> and matrix product state wavefunctions.
+
+== Background ==
+
+A major motivation for the AKLT model was the [[Majumdar–Ghosh model|Majumdar–Ghosh chain]]. Because two out of every set of three neighboring spins in a Majumdar–Ghosh ground state are paired into a singlet, or valence bond, the three spins together can never be found to be in a spin 3/2 state. In fact, the Majumdar–Ghosh Hamiltonian is nothing but the sum of all projectors of three neighboring spins onto a 3/2 state.
+
+The main insight of the AKLT paper was that this construction could be generalized to obtain exactly solvable models for spin sizes other than 1/2. Just as one end of a valence bond is a spin 1/2, the ends of two valence bonds can be combined into a spin 1, three into a spin 3/2, etc.
+
+== Definition ==
+
+Affleck et al. were interested in constructing a one-dimensional state with a valence bond between every pair of sites. Because this leads to two spin 1/2s for every site, the result must be the wavefunction of a spin 1 system.
+
+For every adjacent pair of the spin 1s, two of the four constituent spin 1/2s are stuck in a total spin zero state. Therefore, each pair of spin 1s is forbidden from being in a combined spin 2 state. By writing this condition as a sum of projectors, AKLT arrived at the following Hamiltonian
+
+: <math> \hat H = \sum_j \vec{S}_j \cdot \vec{S}_{j+1} + \frac{1}{3} (\vec{S}_j \cdot \vec{S}_{j+1})^2 </math>
+
+where the <math display="inline">\vec{S_i}</math> are spin-1 operators. 
+
+This Hamiltonian is similar to the spin 1, one-dimensional [[quantum mechanics|quantum]] [[Heisenberg model (quantum)|Heisenberg spin model]] but has an additional "biquadratic" spin interaction term.
+
+== Ground state ==
+
+By construction, the ground state of the AKLT Hamiltonian is the valence bond solid with a single valence bond connecting every neighboring pair of sites. Pictorially, this may be represented as
+
+[[File:AKLT GroundState.png]]
+
+Here the solid points represent spin 1/2s which are put into singlet states. The lines connecting the spin 1/2s are the valence bonds indicating the pattern of singlets. The ovals are projection operators which "tie" together two spin 1/2s  into a single spin 1, projecting out the spin 0 or singlet subspace and keeping only the spin 1 or triplet subspace. The symbols "+", "0" and "−" label the standard spin 1 basis states (eigenstates of the <math>S^z</math> operator).<ref name="Schollwoeck:2011" />
+
+===Spin 1/2 edge states===
+
+For the case of spins arranged in a ring (periodic boundary conditions) the AKLT construction yields a unique ground state. But for the case of an open chain, the first and 
+last spin 1 have only a single neighbor, leaving one of their constituent spin 1/2s unpaired. As a result, the ends of the chain behave like free spin 1/2 moments even though 
+the system consists of spin 1s only.
+
+The spin 1/2 edge states of the AKLT chain can be observed in a few different ways. For short chains, the edge states mix into a singlet or a triplet giving either a unique ground state or a three-fold multiplet of ground states. For longer chains, the edge states decouple exponentially quickly as a function of chain length leading to a ground state manifold that is four-fold degenerate.<ref name="Kennedy:1990" /> By using a numerical method such as [[DMRG]] to measure the local magnetization along the chain, it is also possible to see the edge states directly and to show that they can be removed by placing actual spin 1/2s at the ends.<ref name="White:1993" /> It has even proved possible to detect the spin 1/2 edge states in measurements of a quasi-1D magnetic compound containing a small amount of impurities whose role is to break the chains into finite segments.<ref name="Hagiwara:1990" />
+
+===Matrix product state representation===
+
+The simplicity of the AKLT ground state allows it to be represented in compact form as a [[matrix product state]].
+This is a wavefunction of the form
+
+: <math>|\Psi\rangle = \sum_{\{s\}} \operatorname{Tr}[A^{s_1} A^{s_2} \ldots A^{s_N}] |s_1 s_2 \ldots s_N\rangle.</math>
+
+Here the As are a set of three matrices labeled by <math>s_j</math> and the trace comes from assuming periodic boundary conditions.
+
+The AKLT ground state wavefunction corresponds to the choice:<ref name="Schollwoeck:2011" />
+
+: <math>A^{+} = +\sqrt{\tfrac{2}{3}}\ \sigma^{+} </math>
+
+: <math>A^{0} = -\sqrt{\tfrac{1}{3}}\ \sigma^{z}</math>
+
+: <math>A^{-} = -\sqrt{\tfrac{2}{3}}\ \sigma^{-}</math>
+
+where <math>\sigma</math> is a [[Pauli matrix]].
+
+== Generalizations and extensions ==
+
+The AKLT model has been solved on lattices of higher dimension,<ref name="Affleck:1987"/><ref name="Wei:2011"/> even in [[quasicrystals]] .{{citation needed|date=March 2013}}  The model has also been constructed for higher Lie algebras including [[SU(n)|SU(''n'')]],<ref name="Greiter:2007a"/><ref name="Greiter:2007b"/> [[SO(n)|SO(''n'')]],<ref name="Tu:2008"/> [[Sp(n)]] <ref name="Schuricht:2008"/> and extended to the [[Quantum group|quantum groups]] SUq(''n'').<ref name="SantosParaan2012"/>
+
+== References ==
+{{Reflist|refs=
+<ref name="Pollmann:2012">
+{{cite journal
+ |last1=Pollmann |first1=F.
+ |last2=Berg |first2=E.
+ |last3=Turner |first3=Ari M.
+ |last4=Oshikawa |first4=Masaki
+ |year=2012
+ |title=Symmetry protection of topological phases in one-dimensional quantum spin systems
+ |journal=Phys. Rev. B
+ |volume=85 |issue=7 |pages=075125
+ |doi=10.1103/PhysRevB.85.075125
+ |bibcode = 2012PhRvB..85g5125P |arxiv = 0909.4059 |s2cid=53135907
+ |url=https://pure.uva.nl/ws/files/1587115/128856_symmetry.pdf}}</ref>
+<ref name="Affleck:1987">
+{{cite journal
+ |last1=Affleck |first1=Ian
+ |last2=Kennedy |first2=Tom
+ |last3=Lieb |first3=Elliott H.
+ |last4=Tasaki |first4=Hal
+ |year=1987
+ |title=Rigorous results on valence-bond ground states in antiferromagnets
+ |journal=[[Physical Review Letters]]
+ |volume=59 |issue=7 |pages=799–802
+ |bibcode=1987PhRvL..59..799A
+ |doi=10.1103/PhysRevLett.59.799
+ |pmid=10035874
+}}</ref>
+<ref name="Schollwoeck:2011">
+{{cite journal
+ |last1=Schollwöck |first1=Ulrich
+ |year=2011
+ |title=The density-matrix renormalization group in the age of matrix product states
+ |journal=[[Annals of Physics]]
+ |volume=326 |issue=1
+ |pages=96–192
+ |arxiv=1008.3477
+ |bibcode=2011AnPhy.326...96S
+ |doi=10.1016/j.aop.2010.09.012
+|s2cid=118735367
+ }}</ref>
+<ref name="Kennedy:1990">
+{{cite journal
+ |last1=Kennedy |first1=Tom
+ |year=1990
+ |title=Exact diagonalisations of open spin-1 chains
+ |journal=J. Phys. Condens. Matter
+ |volume=2 |issue=26 |pages=5737–5745
+ |doi=10.1088/0953-8984/2/26/010
+|bibcode = 1990JPCM....2.5737K }}</ref>
+<ref name="White:1993">
+{{cite journal
+ |last1=White |first1=Steven
+ |last2=Huse |first2=David
+ |year=1993
+ |title=Numerical renormalization-group study of low-lying eigenstates of the antiferromagnetic S=1 Heisenberg chain
+ |journal=Phys. Rev. B
+ |volume=48 |issue=6 |pages=3844–3852
+ |doi=10.1103/PhysRevB.48.3844
+|pmid=10008834
+ |bibcode = 1993PhRvB..48.3844W }}</ref>
+<ref name="Hagiwara:1990">
+{{cite journal
+ |last1=Hagiwara |first1=M.
+ |last2=Katsumata |first2=K.
+ |last3=Affleck |first3=Ian
+ |last4=Halperin |first4=B.I.
+ |last5=Renard |first5=J.P.
+ |year=1990
+ |title=Observation of S=1/2 degrees of freedom in an S=1 linear-chain Heisenberg antiferromagnet
+ |journal=Phys. Rev. Lett.
+ |volume=65 |issue=25 |pages=3181–3184
+ |doi=10.1103/PhysRevLett.65.3181
+ |bibcode = 1990PhRvL..65.3181H |pmid=10042802}}</ref>
+<ref name="Wei:2011">
+{{cite journal
+ |last1=Wei |first1=T.-C.
+ |last2=Affleck |first2=I.
+ |last3=Raussendorf |first3=R.
+ |year=2012
+ |title=Affleck-Kennedy-Lieb-Tasaki State on a Honeycomb Lattice is a Universal Quantum Computational Resource
+ |journal=Phys. Rev. Lett.
+ |volume=106 |issue=7 |pages=070501
+ |doi=10.1103/PhysRevLett.106.070501
+ |arxiv = 1009.2840 |bibcode = 2011PhRvL.106g0501W |pmid=21405505}}</ref>
+
+<ref name="SantosParaan2012">
+{{cite journal
+|last1=Santos|first1=R. A.
+|last2=Paraan|first2=F. N. C.
+|last3=Korepin|first3=V. E.
+|last4=Klümper|first4=A.
+|title=Entanglement spectra of the q-deformed Affleck–Kennedy–Lieb–Tasaki model and matrix product states
+|journal=EPL
+|volume=98
+|issue=3
+|year=2012
+|pages=37005
+|issn=0295-5075
+|doi=10.1209/0295-5075/98/37005|arxiv = 1112.0517 |bibcode = 2012EL.....9837005S |s2cid=119733552
+}}</ref>
+
+<ref name="Greiter:2007a">
+{{cite journal
+ |last1=Greiter |first1=Martin
+ |last2=Rachel |first2=Stephan
+ |last3=Schuricht |first3=Dirk
+ |year=2007
+ |title=Exact results for SU(3) spin chains: Trimer states, valence bond solids, and their parent Hamiltonians
+ |journal=Phys. Rev. B
+ |volume=75 |issue=6 |pages=060401(R)
+ |doi=10.1103/PhysRevB.75.060401
+|arxiv = cond-mat/0701354 |bibcode = 2007PhRvB..75f0401G |s2cid=119373252
+ }}</ref>
+
+<ref name="Greiter:2007b">
+{{cite journal
+ |last1=Greiter |first1=Martin
+ |last2=Rachel |first2=Stephan
+ |year=2007
+ |title=Valence bond solids for SU(n) spin chains: Exact models, spinon confinement, and the Haldane gap
+ |journal=Phys. Rev. B
+ |volume=75 |issue=18 |pages=184441
+ |doi=10.1103/PhysRevB.75.184441
+|arxiv = cond-mat/0702443 |bibcode = 2007PhRvB..75r4441G |s2cid=55917580
+ }}</ref>
+
+<ref name="Tu:2008">
+{{cite journal
+ |last1=Tu |first1=Hong-Hao
+ |last2=Zhang |first2=Guang-Ming
+ |last3=Xiang |first3=Tao
+ |year=2008
+ |title=Class of exactly solvable SO(n) symmetric spin chains with matrix product ground states
+ |journal=Phys. Rev. B
+ |volume=78 |issue=9 |pages=094404
+ |doi=10.1103/PhysRevB.78.094404
+|arxiv = 0806.1839 |bibcode = 2008PhRvB..78i4404T |s2cid=119200687
+ }}</ref>
+
+<ref name="Schuricht:2008">
+{{cite journal
+ |last1=Schuricht |first1=Dirk
+ |last2=Rachel |first2=Stephan
+ |year=2008
+ |title=Valence bond solid states with symplectic symmetry
+ |journal=Phys. Rev. B
+ |volume=78 |issue=1 |pages=014430
+ |doi=10.1103/PhysRevB.78.014430
+|arxiv = 0805.3918 |bibcode = 2008PhRvB..78a4430S |s2cid=118429445
+ }}</ref>
+
+}}
+
+[[Category:Spin models]]
+[[Category:Statistical mechanics]]
+[[Category:Quantum magnetism]]
+[[Category:Lattice models]]

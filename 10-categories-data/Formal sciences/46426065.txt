@@ -1,0 +1,887 @@
+{{short description|The study of inference and truth}}
+{{About|the systematic study of the form of arguments|other uses}}
+{{Redirect|Logician|the school of Chinese philosophy|School of Names|the thoroughbred|Logician (horse)}}
+{{Use dmy dates|date=September 2020}}
+{{Philosophy sidebar}}
+
+'''Logic''' (from [[Ancient Greek|Greek]]: {{lang-grc|[[wikt:λογική|λογική]]|label=none|lit=possessed of [[reason]], [[intellectual]], [[dialectical]], [[argument]]ative|translit=logikḗ}})<ref>[[Henry Liddell|Liddell, Henry George]], and [[Robert Scott (philologist)|Robert Scott]]. 1940. "[http://www.perseus.tufts.edu/hopper/text?doc=LSJ+logiko%2Fs&fromdoc=Perseus%3Atext%3A1999.04.0057 Logikos]." ''[[A Greek–English Lexicon]]'', edited by [[Henry Stuart Jones|H. S. Jones]] with R. McKenzie. Oxford: [[Oxford University Press|Clarendon Press]]. – via [[Perseus Project]]. Retrieved 9 May 2020.</ref><ref>Harper, Douglas. 2020 [2001]. "[https://www.etymonline.com/word/logic logic (n.)]." ''[[Online Etymology Dictionary]]''. Retrieved 9 May 2020.</ref><ref group="lower-roman">Also related to {{Wikt-lang|en|λόγος}} (''logos''), "word, thought, idea, argument, account, reason, or principle." (Liddell and Scott, 1999).</ref> is the systematic study of valid [[rule of inference|rules of inference]], i.e. the relations that lead to the acceptance of one proposition (the [[consequent|conclusion]]) on the basis of a set of other propositions ([[premise]]s). More broadly, logic is the analysis and appraisal of [[argument]]s.<ref name="Gensler-01">{{Cite book |last=Gensler |first=Harry J. |title=Introduction to logic |date=2017 |publisher=Routledge |isbn=9781138910591 |edition=3rd |location=New York |page=1 |chapter=Chapter 1: Introduction |doi=10.4324/9781315693361 |oclc=957680480 |orig-year=2002}}</ref>
+
+There is no universal agreement as to the exact definition and boundaries of logic, hence the issue still remains one of the main subjects of research and debates in the field of [[philosophy of logic]] (see {{slink||Rival conceptions}}).<ref>{{Cite book|last=Quine|first=Willard Van Orman|title=Philosophy of Logic|date=1986|publisher=Harvard University Press|isbn=0674665635|edition=2nd|location=Cambridge, MA.|pages=1–14, 61–75|jstor=j.ctvk12scx|oclc=12664089|author-link=Willard Van Orman Quine|orig-year=1970}}</ref><ref>{{Cite book|last=McGinn|first=Colin|title=Logical Properties: Identity, Existence, Predication, Necessity, Truth|date=2000|publisher=Clarendon Press|isbn=9780199241811|location=Oxford|doi=10.1093/0199241813.001.0001|oclc=44502365|author-link=Colin McGinn}}{{Page needed|date=December 2019}}</ref><ref>{{Cite journal |last=McKeon |first=Matthew |date=2003 |title=Colin McGinn. Logical properties: identity, existence, predication, necessity, truth. Clarendon Press, Oxford 2000, vi + 114 pp. |url=https://www.cambridge.org/core/product/identifier/S107989860000473X/type/journal_article |journal=Bulletin of Symbolic Logic |language=en |volume=9 |issue=1 |pages=39–42 |doi=10.1017/S107989860000473X |issn=1079-8986}}</ref> However, it has traditionally included the classification of arguments; the systematic exposition of the [[logical form]]s; the [[Validity (logic)|validity]] and [[soundness]] of [[deductive reasoning]]; the [[Strong induction|strength]] of [[inductive reasoning]]; the study of [[formal proof]]s and [[inference]] (including [[paradox]]es and [[fallacies]]); and the study of [[syntax]] and [[semantics]].
+
+A good argument not only possesses validity and soundness (or strength, in induction), but it also avoids [[Circular reasoning|circular dependencies]], is clearly stated, relevant, and [[Consistency|consistent]]; otherwise it is useless for reasoning and persuasion, and is classified as a [[fallacy]].<ref name="Gensler-04">{{Cite book|last=Gensler|first=Harry J.|title=Introduction to Logic|date=2017|publisher=Routledge|isbn=9781138910591|edition=3rd|location=New York|at=Ch. 4|chapter=Fallacies and Argumentation|doi=10.4324/9781315693361|oclc=957680480|orig-year=2002}}</ref>
+
+In ordinary discourse, inferences may be signified by words such as ''therefore'', ''thus'', ''hence'', ''ergo'', and so on.
+
+Historically, logic has been studied in [[philosophy]] (since ancient times) and [[mathematics]] (since the mid-19th century).  More recently, logic has been studied in [[cognitive science]], which draws on [[computer science]], [[linguistics]], philosophy and [[psychology]], among other disciplines. A '''logician''' is any person, often a philosopher or mathematician, whose topic of scholarly study is logic.
+
+== Types of logic ==
+{{Quote box
+| quote = Upon this first, and in one sense this sole, rule of reason, that in order to learn you must desire to learn, and in so desiring not be satisfied with what you already incline to capably think, there follows one corollary which itself deserves to be inscribed upon every wall of the city of philosophy: Do not block the way of inquiry.
+| source = [[Charles Sanders Peirce]], ''First Rule of Logic''
+| align = left
+| width = 7&nbsp;cm
+}}
+
+
+=== Philosophical logic ===
+''[[Philosophical logic]]'' is an area of philosophy. It's a set of methods used to solve philosophical problems and a fundamental tool for the advancement of [[metaphilosophy]].
+
+=== Informal logic ===
+''[[Informal logic]]'' is the study of [[natural language]] [[argument]]s. The study of [[fallacies]] is an important branch of informal logic. Since much informal argument is not strictly speaking deductive, on some conceptions of logic, informal logic is not logic at all. (See {{slink||Rival conceptions}}.)
+
+=== Formal logic ===
+''[[Formal system|Formal logic]]'' is the study of [[inference]] with purely formal content. An inference possesses a ''purely formal and explicit content'' (i.e. it can be expressed as a particular application of a wholly abstract rule) such as, a rule that is not about any particular thing or property. In many definitions of logic, [[logical consequence]] and inference with purely formal content are the same.
+
+Examples of formal logic include (1) traditional [[syllogistic logic]] (a.k.a. term logic) and (2) modern [[symbolic Logic]]:
+
+* ''Syllogistic logic'' can be found in the works of [[Aristotle]], making it the earliest known formal study and studies [[Syllogism#Types|types of syllogism]]. Modern formal logic follows and expands on Aristotle.<ref name="The Basic Works" /><ref>{{Cite web|title=syllogistic {{!}} Definition, History, & Facts|url=https://www.britannica.com/topic/syllogistic|website=Encyclopedia Britannica|language=en|access-date=2020-05-27}}</ref>
+* ''Symbolic logic'' is the study of symbolic abstractions that capture the formal features of logical inference,<ref name="Principia" /><ref name="Hamilton" /> often divided into two main branches: [[propositional logic]] and [[predicate logic]].
+
+=== Mathematical logic ===
+''[[Mathematical logic]]'' is an extension of symbolic logic into other areas, in particular to the study of [[model theory]], [[proof theory]], [[set theory]], and [[computability theory]].<ref>{{Cite book|last=Hinman, Peter G.|url=https://www.worldcat.org/oclc/958798526|title=Fundamentals of mathematical logic|date=2005|publisher=A K Peters|isbn=978-1-315-27553-6|location=Wellesley, Mass.|oclc=958798526}}</ref><ref name="scribd.com">{{Cite web|title=Supplement #3: Notes on Logic {{!}} Logic {{!}} Argument {{!}} Free 30-day Trial|url=https://www.scribd.com/document/408297103/Notes-in-Logic|website=Scribd|language=en|access-date=2020-05-27}}</ref>
+
+== Concepts ==
+[[File:Argument terminology used in logic (en).svg|thumb|400px|right|[[Argument]] terminology used in logic]]The concepts of [[logical form]] and [[argument]] are central to logic.
+
+An argument is constructed by applying one of the forms of the different types of [[logical reasoning]]: [[Deductive reasoning|deductive]], [[Inductive reasoning|inductive]], and [[Abductive reasoning|abductive]]. In deduction, the ''[[Validity (logic)|validity]]'' of an argument is determined solely by its logical form, not its content, whereas the ''[[soundness]]'' requires both validity and that all the given premises are actually true.<ref name=":0">{{Cite web|title=Validity and Soundness|url=https://www.iep.utm.edu/val-snd/|website=The Internet Encyclopedia of Philosophy|issn=2161-0002|url-status=live|archive-url=https://web.archive.org/web/20180527093407/http://www.iep.utm.edu/val-snd/|archive-date=27 May 2018|access-date=9 May 2020}}</ref>
+
+Completeness, consistency, decidability, and expressivity, are further fundamental concepts in logic. The categorization of the [[Formal system|logical systems]] and of their properties has led to the emergence of a [[metatheory]] of logic known as [[metalogic]].<ref>{{Citation|last=Ewald|first=William|title=The Emergence of First-Order Logic|date=2019|url=https://plato.stanford.edu/archives/spr2019/entries/logic-firstorder-emergence/|encyclopedia=The Stanford Encyclopedia of Philosophy|editor-last=Zalta|editor-first=Edward N.|edition=Spring 2019|publisher=Metaphysics Research Lab, Stanford University|access-date=2020-01-17}}</ref> However, agreement on what ''logic'' actually is has remained elusive, although the field of [[universal logic]] has studied the common structure of logics.
+
+===Logical form===
+{{main|Logical form}}
+Logic is generally considered '''formal''' when it analyzes and represents the ''form'' of any [[Validity (logic)|valid argument]] type. The form of an argument is displayed by representing its sentences in the formal grammar and symbolism of a logical language to make its content usable in formal inference. Simply put, to formalize simply means to translate English sentences into the language of logic.
+
+This is called showing the ''logical form'' of the argument. It is necessary because indicative sentences of ordinary language show a considerable variety of form and complexity that makes their use in inference impractical. It requires, first, ignoring those grammatical features irrelevant to logic (such as gender and declension, if the argument is in Latin), replacing conjunctions irrelevant to logic (e.g. "but") with [[logical conjunction]]s like "and" and replacing ambiguous, or alternative logical expressions ("any", "every", etc.) with expressions of a standard type (e.g. "all", or the [[universal quantifier]] ∀).
+
+Second, certain parts of the sentence must be replaced with schematic letters. Thus, for example, the expression "all Ps are Qs" shows the logical form common to the sentences "all men are mortals", "all cats are carnivores", "all Greeks are philosophers", and so on.  The schema can further be condensed into the [[formula]] ''A(P,Q)'', where the letter ''A'' indicates the judgement 'all – are –'.
+
+The importance of form was recognised from ancient times. Aristotle uses variable letters to represent valid inferences in ''[[Prior Analytics]]'', leading [[Jan Łukasiewicz]] to say that the introduction of variables was "one of Aristotle's greatest inventions".<ref name="Aristotle" /> According to the followers of Aristotle (such as [[Ammonius Saccas|Ammonius]]), only the logical principles stated in schematic terms belong to logic, not those given in concrete terms. The concrete terms 'man', 'mortal', etc., are analogous to the substitution values of the schematic placeholders ''P'', ''Q'', ''R'', which were called the 'matter' ([[Ancient Greek|Greek]]: {{Lang-el|{{wikt-lang|en|ὕλη}}|translit={{wikt-lang|en|hyle}}|label=none}}) of the inference.
+
+There is a big difference between the kinds of formulas seen in traditional term logic and the [[predicate calculus]] that is the fundamental advance of modern logic. The formula ''A(P,Q)'' (all Ps are Qs) of traditional logic corresponds to the more complex formula <math>\forall x (P(x) \rightarrow Q(x))</math> in predicate logic, involving the logical connectives for [[universal quantification]] and [[material conditional|implication]] rather than just the predicate letter ''A'' and using variable arguments <math>P(x)</math> where traditional logic uses just the term letter ''P''.  With the complexity comes power, and the advent of the predicate calculus inaugurated revolutionary growth of the subject.{{Citation needed|date=May 2020}}<ref>{{Cite book|last=Mclean|first=Jaden|title=Logic Design|last2=Hurley|first2=Carmen|publisher=EDTECH|year=2019|isbn=9781839473197|location=|pages=9}}</ref>
+
+=== Semantics ===
+{{main|Semantics of logic}}
+
+The validity of an argument depends upon the meaning, or ''semantics'', of the sentences that make it up.
+
+Aristotle's six ''[[Organon]]'', especially ''[[De Interpretatione]]'', gives a cursory outline of semantics which the [[scholastic logic]]ians, particularly in the thirteenth and fourteenth century, developed into a complex and sophisticated theory, called ''[[supposition theory]]''. This showed how the truth of simple sentences, expressed schematically, depend on how the terms 'supposit', or stand for, certain extra-linguistic items. For example, in part II of his [[Sum of Logic|''Summa Logicae'']], [[William of Ockham]] presents a comprehensive account of the necessary and sufficient conditions for the [[truth]] of simple sentences, in order to show which arguments are valid and which are not.  Thus "every A is B' is true if and only if there is something for which 'A' stands, and there is nothing for which 'A' stands, for which 'B' does not also stand."<ref>[[William of Ockham]], ''[[Sum of Logic|Summa Logicae]]'' II, c.4
+
+(Translated by: Freddoso, A., and H. Schuurman. 1998. ''Ockam's Theory of Propositions''. St. Augustine's Press. p. 96.)</ref>
+
+Early modern logic defined semantics purely as a relation between ideas. [[Antoine Arnauld]] in the ''[[Port-Royal Logic|Port Royal-Logic]]'',<ref>Buroker, Jill. 2014. "[https://plato.stanford.edu/entries/port-royal-logic/ Port Royal Logic]." ''[[Stanford Encyclopedia of Philosophy]]''. Retrieved 10 May 2020.</ref><ref>Martin, John N. "[https://www.iep.utm.edu/portroyl/ The Port Royal Logic]." ''[[Internet Encyclopedia of Philosophy]]''. {{ISSN|2161-0002}}. Retrieved 10 May 2020.</ref> says that after conceiving things by our ideas, we compare these ideas, and, finding that some belong together and some do not, we unite or separate them. This is called ''affirming'' or ''denying'', and in general ''judging''.<ref>[[Antoine Arnauld|Arnauld, Antoine]], and [[Pierre Nicole]]. 1662. ''[[Port-Royal Logic|Logic; or, The Art of Thinking]]'' II.3.</ref> Thus truth and falsity are no more than the agreement or disagreement of ideas. This suggests obvious difficulties, leading [[John Locke|Locke]] to distinguish between 'real' truth, when our ideas have 'real existence' and 'imaginary' or 'verbal' truth, where ideas like harpies or centaurs exist only in the mind.<ref>[[John Locke|Locke, John]]. 1690. ''[[An Essay Concerning Human Understanding]]'' IV.5, 1-8.</ref> This view, known as ''[[psychologism]]'', was taken to the extreme in the nineteenth century, and is generally held by modern logicians to signify a low point in the decline of logic before the twentieth century.
+
+Modern [[semantics]] is in some ways closer to the medieval view, in rejecting such psychological truth-conditions. However, the introduction of [[quantifier (logic)|quantification]], needed to solve the [[problem of multiple generality]], rendered impossible the kind of subject-predicate analysis that underlies medieval semantics. The main modern approach is ''model-theoretic semantics'', based on [[Alfred Tarski]]'s ''[[semantic theory of truth]]''. The approach assumes that the meaning of the various parts of the propositions are given by the possible ways we can give a recursively specified group of [[interpretation function]]s from them to some predefined [[domain of discourse]]: an interpretation of [[first-order predicate logic]] is given by a mapping from terms to a universe of [[individual]]s, and a mapping from propositions to the truth values "true" and "false".  Model-theoretic semantics is one of the fundamental concepts of [[model theory]]. Modern semantics also admits rival approaches, such as the [[proof-theoretic semantics]] that associates the meaning of propositions with the roles that they can play in inferences, an approach that ultimately derives from the work of [[Gerhard Gentzen]] on [[structural proof theory]] and is heavily influenced by [[Ludwig Wittgenstein]]'s later philosophy, especially his [[aphorism]] "[[Philosophical Investigations|meaning is use]]."
+
+===Inference===
+''Inference'' is not to be confused with ''[[Implicature|implication]]''. An ''implication'' is a sentence of the form 'If p then q', and can be true or false. The [[stoic logic]]ian [[Philo the Dialectician|Philo of Megara]] was the first to define the truth conditions of such an ''implication'': false only when the antecedent p is true and the consequent q is false, in all other cases true. An ''inference'', on the other hand, consists of two separately asserted propositions of the form 'p therefore q'. An inference is not true or false, but valid or invalid. However, there is a connection between implication and inference, as follows: if the implication 'if p then q' is ''true'', the inference 'p therefore q' is ''valid''. This was given an apparently paradoxical formulation by Philo, who said that the implication 'if it is day, it is night' is true only at night, so the inference 'it is day, therefore it is night' is valid in the night, but not in the day.
+
+The theory of inference (or '[[Logical consequence|''consequences'']]') was systematically developed in medieval times by logicians such as [[William of Ockham]] and [[Walter Burley]]. It is uniquely medieval, though it has its origins in Aristotle's [[Topics (Aristotle)|''Topica'']] and [[Boethius]]' ''De Syllogismis hypotheticis.'' Many terms in logic, for this reason, are in Latin. For instance, the rule that licenses the move from the implication 'if p then q' plus the assertion of its antecedent p, to the assertion of the consequent q, is known as {{Lang-la|[[modus ponens]]|label=none}} ('mode of positing')—from {{Lang-la|posito antecedente ponitur consequens}}. The Latin formulations of many other rules such as {{Lang-la|[[Principle of explosion|ex falso quodlibet]]|label=none}} ('from falsehood, anything [follows]'), and ''[[reductio ad absurdum]]'' ('reduction to absurdity'; i.e. to disprove by showing the consequence as absurd), also date from this period.
+
+However, the ''theory of consequences'', or the so-called [[hypothetical syllogism|''hypothetical'' syllogism]], was never fully integrated into the theory of the ''categorical'' syllogism. This was partly because of the resistance to reducing the categorical judgment 'every s is p' to the so-called hypothetical judgment 'if anything is s, it is p'. The first was thought to imply 'some s is p', the latter was not, and as late as 1911 in the [[Encyclopædia Britannica]] article on "Logic", we find the Oxford logician T. H. Case arguing against Sigwart's and Brentano's modern analysis of the universal proposition.
+
+===Logical systems===
+{{main|Formal system}}
+A formal system is an [[organization]] of terms used for the analysis of deduction. A logical system is essentially a way of mechanically listing all the logical truths of some part of logic by means of the application of recursive rules—i.e., rules that can be repeatedly applied to their own output. This is done by identifying by purely formal criteria certain axioms and certain purely formal rules of inference from which [[Theorem|theorems]] can be derived from axioms together with earlier theorems.<ref>{{Cite web|title=Logic - Logical systems|url=https://www.britannica.com/topic/logic|website=Encyclopedia Britannica|language=en|access-date=2020-05-27}}</ref> It consists of an alphabet, a language over the alphabet to construct sentences, and a rule for deriving sentences. Among the important properties that [[logical system]]s can have are:
+*[[Consistency]]: no theorem of the system contradicts another.<ref name="Bergmann, Merrie 2009" />
+*[[Validity (logic)|Validity]]: the system's rules of proof never allow a false inference from true premises.
+*[[Completeness (logic)|Completeness]]: if a formula is true, it can be proven, i.e. is a ''theorem'' of the system.
+*[[Soundness]]: if any formula is a theorem of the system, it is true. This is the converse of completeness. (Note that in a distinct philosophical use of the term, an argument is sound when it is both valid and its premises are true.)<ref name=":0" />
+*[[Expressive power (computer science)|Expressivity]]: what concepts can be expressed in the system.
+
+Some logical systems do not have all these properties. As an example, [[Kurt Gödel]]'s [[Gödel's incompleteness theorems|incompleteness theorems]] show that sufficiently complex formal systems of arithmetic cannot be consistent and complete;<ref name="Hamilton" /> however, [[first-order predicate]] logics not extended by specific [[axiom]]s to be arithmetic formal systems with equality can be complete and consistent.<ref name="Introduction to Mathematical Logic" />
+
+===Logic and rationality===
+{{main|Logic and rationality}}
+{{confusing|section|date=May 2016}}
+As the study of argument is of clear importance to the reasons that we hold things to be true, logic is of essential importance to [[rationality]]. Here we have defined logic to be "the systematic study of the form of arguments;" the reasoning behind argument is of several sorts, but only some of these arguments fall under the aegis of logic proper.
+
+[[Deductive reasoning]] concerns the [[logical consequence]] of given premises and is the form of reasoning most closely connected to logic. On a narrow conception of logic (see below) logic concerns just deductive reasoning, although such a narrow conception controversially excludes most of what is called informal logic from the discipline.
+
+There are other forms of reasoning that are rational but that are generally not taken to be part of logic. These include [[inductive reasoning]], which covers forms of inference that move from collections of particular judgements to universal judgements, and [[abductive reasoning]],<ref name="abduction" group="lower-roman">On [[abductive reasoning]], see:
+
+* Magnani, L. 2001. ''Abduction, Reason, and Science: Processes of Discovery and Explanation''. New York: [[Kluwer Academic/Plenum Publishers|Kluwer Academic Plenum Publishers]]. xvii. {{isbn|0-306-46514-0}}.
+* Josephson, John R., and Susan G. Josephson. 1994. ''Abductive Inference: Computation, Philosophy, Technology''. New York: Cambridge University Press. viii. {{isbn|0-521-43461-0}}.
+* Bunt, H. and W. Black. 2000. ''Abduction, Belief and Context in Dialogue: Studies in Computational Pragmatics'', (''Natural Language Processing'' 1). Amsterdam: [[John Benjamins Publishing Company|John Benjamins]]. vi.  {{isbn|90-272-4983-0|1-55619-794-2}}.</ref> which is a form of inference that goes from observation to a hypothesis that accounts for the reliable data (''observation'') and seeks to explain relevant evidence. American philosopher [[Charles Sanders Peirce]] (1839–1914) first introduced the term as ''guessing''.<ref name="guess">Bergman, Mats, and Saami Paavola, eds. "[http://www.commens.org/dictionary/term/abduction Abduction]" and "[http://www.commens.org/dictionary/term/retroduction Retroduction]." ''The Commens Dictionary: Peirce's Terms in His Own Words'' (new ed.) Retrieved 10 May 2020. {{Webarchive|url=https://web.archive.org/web/20140826115846/http://www.commens.org/dictionary/term/retroduction|date=26 August 2014}}. Retrieved 10 May 2020.
+</ref> Peirce said that to ''abduce'' a hypothetical explanation <math>a</math> from an observed surprising circumstance <math>b</math> is to surmise that <math>a</math> may be true because then <math>b</math> would be a matter of course.<ref name="HL">[[Charles Sanders Peirce|Peirce, Charles Sanders]]. 1903. "Lectures on Pragmatism." Pp. 14–212 in ''Collected Papers of Charles Sanders Peirce'' 5. [http://www.textlog.de/7664-2.html paras. 188–89].</ref> Thus, to abduce <math>a</math> from <math>b</math> involves determining that <math>a</math> is [[Necessity and sufficiency|sufficient (or nearly sufficient), but not necessary]], for <math>b</math>.<ref>[[Charles Sanders Peirce|Peirce, Charles Sanders]]. 1901. "On the Logic of Drawing History from Ancient Documents Especially from Testimonies." Pp. 164–231 in ''Collected Papers of Charles Sanders Peirce'' 7. para. 219.</ref><ref>[[Charles Sanders Peirce|Peirce, Charles Sanders]]. 1906. "[https://web.archive.org/web/20070905164710/http://www.existentialgraphs.com/peirceoneg/prolegomena.htm Prolegomena to an Apology for Pragmaticism]. ''[[The Monist]]'' 16(4):492–546. {{Doi|10.5840/monist190616436}}.</ref><ref>[[Charles Sanders Peirce|Peirce, Charles Sanders]]. 1913. "A Letter to F.A. Woods." ''Collected Papers of Charles Sanders Peirce'' 8. paras 385–88.</ref>
+
+While inductive and abductive inference are not part of logic proper, the methodology of logic has been applied to them with some degree of success.  For example, the notion of deductive validity (where an inference is deductively valid [[if and only if]] there is no possible situation in which all the premises are true but the conclusion false) exists in an analogy to the notion of inductive validity, or "strength", where an inference is inductively strong if and only if its premises give some degree of probability to its conclusion.  Whereas the notion of deductive validity can be rigorously stated for systems of formal logic in terms of the well-understood notions of [[semantics]], inductive validity requires us to define a reliable generalization of some set of observations. The task of providing this definition may be approached in various ways, some less formal than others; some of these definitions may use logical association [[rule induction]], while others may use [[mathematical model]]s of probability such as [[decision tree]]s.
+
+===Rival conceptions===
+{{Main|Conceptions of logic}}
+Logic arose (see below) from a concern with correctness of [[argumentation]]. Modern logicians usually wish to ensure that logic studies just those arguments that arise from appropriately general forms of inference. For example, Thomas Hofweber writes in the ''[[Stanford Encyclopedia of Philosophy]]'' that logic "does not, however, cover good reasoning as a whole. That is the job of the theory of [[rationality]]. Rather it deals with inferences whose validity can be traced back to the formal features of the representations that are involved in that inference, be they linguistic, mental, or other representations."<ref name="stanford-logic-onthology" />
+
+The idea that logic treats special forms of argument, deductive argument, rather than argument in general, has a history in logic that dates back at least to [[logicism]] in mathematics (19th and 20th centuries) and the advent of the influence of mathematical logic on philosophy. A consequence of taking logic to treat special kinds of argument is that it leads to identification of special kinds of truth, the logical truths (with logic equivalently being the study of logical truth), and excludes many of the original objects of study of logic that are treated as informal logic. [[Robert Brandom]] has argued against the idea that logic is the study of a special kind of logical truth, arguing that instead one can talk of the logic of [[material inference]] (in the terminology of [[Wilfred Sellars]]), with logic making explicit the commitments that were originally implicit in informal inference.<ref name="brandom-2000" />{{page needed|date=September 2016}}
+
+==History==
+{{Main|History of logic}}
+[[File:Aristotle Altemps Inv8575.jpg|thumb|150px|[[Aristotle]], 384–322&nbsp;BCE.]]
+Logic comes from the Greek word ''logos'', originally meaning "the word" or "what is spoken", but coming to mean "thought" or "reason". In the Western World, logic was first developed by [[Aristotle]], who called the subject 'analytics'.<ref name="achievement" /> [[Aristotelian logic]] became widely accepted in science and mathematics and remained in wide use in the West until the early 19th century.<ref name="mtu" /> Aristotle's system of logic was responsible for the introduction of [[hypothetical syllogism]],<ref name="google" /> [[Temporal logic|temporal]] [[modal logic]],<ref name="google1" /><ref name="google2" /> and [[Inductive reasoning|inductive logic]],<ref name="google3" /> as well as influential vocabulary such as [[terminology|terms]], [[predicable]]s, [[syllogism]]s and [[proposition]]s. There was also the rival [[Stoic logic]].
+
+In [[Europe]] during the later medieval period, major efforts were made to show that Aristotle's ideas were compatible with [[Christianity|Christian]] faith. During the [[High Middle Ages]], logic became a main focus of philosophers, who would engage in critical logical analyses of philosophical arguments, often using variations of the methodology of [[scholasticism]]. In 1323, [[William of Ockham]]'s influential ''[[Sum of Logic|Summa Logicae]]'' was released. By the 18th century, the structured approach to arguments had degenerated and fallen out of favour, as depicted in [[Ludvig Holberg|Holberg]]'s satirical play ''[[Erasmus Montanus]]''.
+The [[Logic in China|Chinese logical]] philosopher [[Gongsun Long]] ({{nowrap|c. 325–250 BCE}}) proposed the paradox "One and one cannot become two, since neither becomes two."<ref name="scribd.com"/><ref group="lower-roman">The four [[Catuṣkoṭi]] logical divisions are formally very close to the four opposed propositions of the Greek ''[[tetralemma]]'', which in turn are analogous to the four [[truth value]]s of modern [[relevance logic]].
+
+([[cf.]] [[Nuel Belnap|Belnap, Nuel.]] 1977. "A useful four-valued logic." In ''Modern Uses of Multiple-Valued Logic'', edited by Dunn and Eppstein. Boston: Reidel;
+
+Jayatilleke, K. N.. 1967. "The Logic of Four Alternatives." In ''Philosophy East and West''. [[University of Hawaii Press]].)</ref> In China, the tradition of scholarly investigation into logic, however, was repressed by the [[Qin dynasty]] following the legalist philosophy of [[Han Feizi]].
+
+In India, the [[Anviksiki]] school of logic was founded by [[Medhātithi]] (c. 6th century BCE).<ref>Vidyabhusana, S. C. 1971. ''A History of Indian Logic: Ancient, Mediaeval, and Modern Schools''. pp. 17–21.</ref> Innovations in the scholastic school, called [[Nyaya]], continued from ancient times into the early 18th century with the [[Navya-Nyāya]] school. By the 16th century, it developed theories resembling modern logic, such as [[Gottlob Frege]]'s "distinction between sense and reference of proper names" and his "definition of number", as well as the theory of "restrictive conditions for universals" anticipating some of the developments in modern [[set theory]].<ref group="lower-roman">Chakrabarti, Kisor Kumar. 1976. "Some Comparisons Between Frege's Logic and Navya-Nyaya Logic." ''[[Philosophy and Phenomenological Research]]'' 36(4):554–63. {{Doi|10.2307/2106873}} {{JSTOR|2106873}}.
+
+"This paper consists of three parts. The first part deals with Frege's distinction between sense and reference of proper names and a similar distinction in Navya-Nyaya logic. In the second part we have compared Frege's definition of number to the Navya-Nyaya definition of number. In the third part we have shown how the study of the so-called 'restrictive conditions for universals' in Navya-Nyaya logic anticipated some of the developments of modern set theory."</ref> Since 1824, Indian logic attracted the attention of many Western scholars, and has had an influence on important 19th-century logicians such as [[Charles Babbage]], [[Augustus De Morgan]], and [[George Boole]].<ref name="Indian logic: a reader" /> In the 20th century, Western philosophers like [[Stanislaw Schayer]] and Klaus Glashoff have explored Indian logic more extensively.
+
+The [[Syllogism|syllogistic]] logic developed by Aristotle predominated in the West until the mid-19th century, when interest in the [[foundations of mathematics]] stimulated the development of symbolic logic (now called [[mathematical logic]]). In 1854, George Boole published ''[[The Laws of Thought]]'',<ref>[[George Boole|Boole, George]]. 1854. ''[[The Laws of Thought|An Investigation of the Laws of Thought on Which are Founded the Mathematical Theories of Logic and Probabilities]].''</ref> introducing symbolic logic and the principles of what is now known as [[Boolean logic]]. In 1879, Gottlob Frege published ''[[Begriffsschrift]]'', which inaugurated modern logic with the invention of [[Quantification (logic)|quantifier]] notation, reconciling the Aristotelian and Stoic logics in a broader system, and solving such problems for which Aristotelian logic was impotent, such as the [[problem of multiple generality]]. From 1910 to 1913, [[Alfred North Whitehead]] and [[Bertrand Russell]] published ''[[Principia Mathematica]]''<ref name="Principia" /> on the foundations of mathematics, attempting to derive mathematical truths from [[axiom]]s and [[inference rule]]s in symbolic logic. In 1931, [[Gödel]] raised serious problems with the foundationalist program and logic ceased to focus on such issues.
+
+The development of logic since Frege, Russell, and Wittgenstein had a profound influence on the practice of philosophy and the perceived nature of philosophical problems (see [[analytic philosophy]]) and [[philosophy of mathematics]]. Logic, especially sentential logic, is implemented in computer [[Digital electronics|logic circuits]] and is fundamental to [[computer science]]. Logic is commonly taught by university philosophy, sociology, advertising and literature departments, often as a compulsory discipline.
+
+=={{vanchor|Types}}==
+===Syllogistic logic===
+{{main|Aristotelian logic}}
+[[File:Johannesmagistris-square.jpg|thumb|A depiction from the 15th century of the [[square of opposition]], which expresses the fundamental dualities of syllogistic.]]
+
+The ''[[Organon]]'' was [[Aristotle]]'s body of work on logic, with the ''[[Prior Analytics]]'' constituting the first explicit work in formal logic, introducing the syllogistic.<ref name="Aristotle" /> The parts of syllogistic logic, also known by the name [[term logic]], are the analysis of the judgements into propositions consisting of two terms that are related by one of a fixed number of relations, and the expression of inferences by means of [[syllogism]]s that consist of two propositions sharing a common term as premise, and a conclusion that is a proposition involving the two unrelated terms from the premises.
+
+Aristotle's work was regarded in classical times and from medieval times in Europe and the Middle East as the very picture of a fully worked out system. However, it was not alone: the [[Stoics]] proposed a system of [[propositional logic]] that was studied by medieval logicians. Also, the [[problem of multiple generality]] was recognized in medieval times. Nonetheless, problems with syllogistic logic were not seen as being in need of revolutionary solutions.
+
+Today, some academics claim that Aristotle's system is generally seen as having little more than historical value (though there is some current interest in extending term logics), regarded as made obsolete by the advent of propositional logic and the [[predicate calculus]]. Others use Aristotle in [[argumentation theory]] to help develop and critically question [[argumentation scheme]]s that are used in [[artificial intelligence]] and [[legal]] arguments.
+
+===Propositional logic===
+{{main|Propositional calculus}}
+A propositional calculus or logic (also a sentential calculus) is a formal system in which formulae representing propositions can be formed by combining [[atomic propositions]] using [[logical connectives]], and in which a system of formal proof rules establishes certain formulae as "theorems".  An example of a theorem of propositional logic is <math>A \rightarrow B \rightarrow A</math>, which says that if A holds, then B implies A.{{Citation needed|date=May 2020}}
+
+===Predicate logic===
+[[File:BS-12-Begriffsschrift Quantifier1-svg.svg|thumb|[[Gottlob Frege]]'s ''[[Begriffschrift]]'' introduced the notion of quantifier in a graphical notation, which here represents the judgement that <math>\forall x. F(x)</math> is true.]]
+{{main|Predicate logic}}
+Predicate logic is the generic term for symbolic formal systems such as [[first-order logic]], [[second-order logic]], [[many-sorted logic]], and [[infinitary logic]].  It provides an account of [[Quantifier (logic)|quantifiers]] general enough to express a wide set of arguments occurring in natural language. For example, [[Bertrand Russell]]'s famous [[barber paradox]], "there is a man who shaves all and only men who do not shave themselves" can be formalised by the sentence <math>(\exists x ) (\text{man}(x) \wedge (\forall y) (\text{man}(y) \rightarrow (\text{shaves}(x, y)  \leftrightarrow \neg \text{shaves}(y, y))))</math>, using the non-logical predicate <math>\text{man}(x)</math> to indicate that ''x'' is a man, and the non-logical relation <math>\text{shaves}(x, y)</math> to indicate that ''x'' shaves ''y''; all other symbols of the formulae are logical, expressing the universal and existential [[quantifier (logic)|quantifiers]], [[logical conjunction|conjunction]], [[Material conditional|implication]], [[negation]] and [[biconditional]].
+
+Whilst Aristotelian syllogistic logic specifies a small number of forms that the relevant part of the involved judgements may take, predicate logic allows sentences to be analysed into subject and argument in several additional ways—allowing predicate logic to solve the [[problem of multiple generality]] that had perplexed medieval logicians.
+
+The development of predicate logic is usually attributed to [[Gottlob Frege]], who is also credited as one of the founders of [[analytic philosophy]], but the formulation of predicate logic most often used today is the first-order logic presented in [[Principles of Mathematical Logic]] by [[David Hilbert]] and [[Wilhelm Ackermann]] in 1928. The analytical generality of predicate logic allowed the formalization of mathematics, drove the investigation of [[set theory]], and allowed the development of [[Alfred Tarski]]'s approach to [[model theory]]. It provides the foundation of modern [[mathematical logic]].
+
+Frege's original system of predicate logic was second-order, rather than first-order. [[Second-order logic]] is most prominently defended (against the criticism of [[Willard Van Orman Quine]] and others) by [[George Boolos]] and [[Stewart Shapiro]].
+
+===Modal logic===
+{{main|Modal logic}}
+In languages, [[Linguistic modality|modality]] deals with the phenomenon that sub-parts of a sentence may have their semantics modified by special verbs or modal particles. For example, "''We go to the games''" can be modified to give "''We should go to the games''", and "''We can go to the games''" and perhaps "''We will go to the games''". More abstractly, we might say that modality affects the circumstances in which we take an assertion to be satisfied. Confusing modality is known as the [[modal fallacy]].
+
+[[Aristotle]]'s logic is in large parts concerned with the theory of non-modalized logic. Although, there are passages in his work, such as the famous [[problem of future contingents|sea-battle argument]] in ''[[De Interpretatione]]'' § 9, that are now seen as anticipations of modal logic and its connection with [[potentiality]] and time, the earliest formal system of modal logic was developed by [[Avicenna]], who ultimately developed a theory of "[[Temporal logic|temporally]] [[Modal logic|modalized]]" syllogistic.<ref name="Britannica">{{Cite web|title=History of logic: Arabic logic|url=http://www.britannica.com/ebc/article-65928|archive-url=https://web.archive.org/web/20071012144108/http://www.britannica.com/ebc/article-65928|url-status=dead|archive-date=2007-10-12|website=[[Encyclopædia Britannica]]}}</ref>
+
+While the study of necessity and possibility remained important to philosophers, little logical innovation happened until the landmark investigations of [[C. I. Lewis]] in 1918, who formulated a family of rival axiomatizations of the [[Alethic modality|alethic modalities]]. His work unleashed a torrent of new work on the topic, expanding the kinds of modality treated to include [[deontic logic]] and [[epistemic logic]].  The seminal work of [[Arthur Prior]] applied the same formal language to treat [[temporal logic]] and paved the way for the marriage of the two subjects. [[Saul Kripke]] discovered (contemporaneously with rivals) his theory of [[Kripke semantics|frame semantics]], which revolutionized the formal technology available to modal logicians and gave a new [[graph theory|graph-theoretic]] way of looking at modality that has driven many applications in [[computational linguistics]] and [[computer science]], such as [[dynamic logic (modal logic)|dynamic logic]].
+
+===Informal reasoning and dialectic===
+{{main|Informal logic|Dialogical logic|Logic and dialectic}}
+The motivation for the study of logic in ancient times was clear: it is so that one may learn to distinguish good arguments from bad arguments, and so become more effective in argument and oratory, and perhaps also to become a better person. Half of the works of Aristotle's [[Organon]] treat inference as it occurs in an informal setting, side by side with the development of the syllogistic, and in the Aristotelian school, these informal works on logic were seen as complementary to Aristotle's treatment of [[rhetoric]].
+
+This ancient motivation is still alive, although it no longer takes centre stage in the picture of logic; typically [[dialectic]]al logic forms the heart of a course in [[critical thinking]], a compulsory course at many universities.  Dialectic has been linked to logic since ancient times, but it has not been until recent decades that European and American logicians have attempted to provide mathematical foundations for logic and dialectic by formalising dialectical logic. [[Dialectical logic]] is also the name given to the special treatment of dialectic in [[Hegel]]ian and [[Marx]]ist thought.  There have been pre-formal treatises on argument and dialectic, from authors such as [[Stephen Toulmin]] (''The Uses of Argument''), [[Nicholas Rescher]] (''Dialectics''),<ref>{{Cite journal |last=Rescher |first=Nicholas |date=1978 |title=Dialectics: A Controversy-Oriented Approach to the Theory of Knowledge |url=http://ojs.uwindsor.ca/ojs/leddy/index.php/informal_logic/article/view/2809 |journal=Informal Logic |volume=1 |issue=#3|doi=10.22329/il.v1i3.2809 }}</ref><ref>{{Cite journal |last=Hetherington |first=Stephen |date=2006 |title=Nicholas Rescher: Philosophical Dialectics |url=https://ndpr.nd.edu/news/25075-philosophical-dialectics-an-essay-on-metaphilosophy/ |journal=Notre Dame Philosophical Reviews |issue=2006.07.16}}</ref><ref>{{Cite book |last=Rescher |first=Nicholas |url=https://books.google.com/books?id=T65moyMMioYC |title=Reason, Method, and Value: A Reader on the Philosophy of Nicholas Rescher |date=2009 |publisher=Ontos Verlag |isbn=978-3-11-032905-6 |editor-last=Jacquette, Dale}}</ref> and van Eemeren and Grootendorst ([[Pragma-dialectics]]). Theories of [[defeasible reasoning]] can provide a foundation for the formalisation of dialectical logic and dialectic itself can be formalised as moves in a game, where an advocate for the truth of a proposition and an opponent argue. Such games can provide a formal [[game semantics]] for many logics.
+
+[[Argumentation theory]] is the study and research of informal logic, fallacies, and critical questions as they relate to every day and practical situations. Specific types of dialogue can be analyzed and questioned to reveal premises, conclusions, and fallacies. Argumentation theory is now applied in [[artificial intelligence]] and [[law]].
+
+===Mathematical logic===
+{{main|Mathematical logic}}
+Mathematical logic comprises two distinct areas of research: the first is the application of the techniques of formal logic to mathematics and mathematical reasoning, and the second, in the other direction, the application of mathematical techniques to the representation and analysis of formal logic.<ref name="Introduction to Elementary Mathematical Logic" />
+
+The earliest use of mathematics and [[geometry]] in relation to logic and philosophy goes back to the ancient Greeks such as [[Euclid]], [[Plato]], and [[Aristotle]].<ref name="The Cambridge Companion to Aristotle" /> Many other ancient and medieval philosophers applied mathematical ideas and methods to their philosophical claims.<ref name="Prior Analytics" />
+
+One of the boldest attempts to apply logic to mathematics was the [[logicism]] pioneered by philosopher-logicians such as [[Gottlob Frege]] and [[Bertrand Russell]]. Mathematical theories were supposed to be logical [[tautology (logic)|tautologies]], and the programme was to show this by means of a reduction of mathematics to logic.<ref name="Principia" /> The various attempts to carry this out met with failure, from the crippling of Frege's project in his ''Grundgesetze'' by [[Russell's paradox]], to the defeat of [[Hilbert's program]] by [[Gödel's incompleteness theorem]]s.
+
+Both the statement of Hilbert's program and its refutation by Gödel depended upon their work establishing the second area of mathematical logic, the application of mathematics to logic in the form of [[proof theory]].<ref name="Introduction to Mathematical Logic5" /> Despite the negative nature of the incompleteness theorems, [[Gödel's completeness theorem]], a result in [[model theory]] and another application of mathematics to logic, can be understood as showing how close logicism came to being true: every rigorously defined mathematical theory can be exactly captured by a first-order logical theory; Frege's [[proof calculus]] is enough to ''describe'' the whole of mathematics, though not ''equivalent'' to it.
+
+If proof theory and model theory have been the foundation of mathematical logic, they have been but two of the four pillars of the subject.<ref>Barwise (1982) divides the subject of mathematical logic into model theory, proof theory, set theory and recursion theory.</ref> [[Set theory]] originated in the study of the infinite by [[Georg Cantor]], and it has been the source of many of the most challenging and important issues in mathematical logic, from [[Cantor's theorem]], through the status of the [[Axiom of Choice]] and the question of the independence of the [[continuum hypothesis]], to the modern debate on [[large cardinal]] axioms.
+
+[[Recursion theory]] captures the idea of computation in logical and [[arithmetic]] terms; its most classical achievements are the undecidability of the [[Entscheidungsproblem]] by [[Alan Turing]], and his presentation of the [[Church–Turing thesis]].<ref name="Theory of computation: formal languages, automata, and complexity" /> Today recursion theory is mostly concerned with the more refined problem of [[complexity class]]es—when is a problem efficiently solvable?—and the classification of [[Turing degree|degrees of unsolvability]].<ref name="Theory of computation: formal languages, automata, and complexity6" />
+
+===Philosophical logic===
+{{main|Philosophical logic}}
+[[Philosophical logic]] deals with formal descriptions of ordinary, non-specialist [[Natural language|("natural") language]], that is strictly only about the arguments within philosophy's other branches. Most philosophers assume that the bulk of everyday<!--was: "normal" proper--> reasoning can be captured in logic if a method or methods to translate ordinary language into that logic can be found. Philosophical logic is essentially a continuation of the traditional discipline called "logic" before the invention of mathematical logic. Philosophical logic has a much greater concern with the connection between natural language and logic. As a result, philosophical logicians have contributed a great deal to the development of non-standard logics (e.g. [[free logic]]s, [[tense logic]]s) as well as various extensions of [[classical logic]] (e.g. [[modal logic]]s) and non-standard semantics for such logics (e.g. [[Saul Kripke|Kripke]]'s [[supervaluationism]] in the semantics of logic).
+
+Logic and the philosophy of language are closely related. Philosophy of language has to do with the study of how our language engages and interacts with our thinking. Logic has an immediate impact on other areas of study. Studying logic and the relationship between logic and ordinary speech can help a person better structure his own arguments and critique the arguments of others. Many popular arguments are filled with errors because so many people are untrained in logic and unaware of how to formulate an argument correctly.<ref>{{Citation |last=Goldman |first=Alvin I. |title=Epistemology and Cognition |url=https://books.google.com/books?id=9XwhBw2jMqMC&pg=PA293 |page=293 |year=1986 |publisher=Harvard University Press |isbn=978-0-674-25896-9 |quote=untrained subjects are prone to commit various sorts of fallacies and mistakes}}</ref><ref>{{Citation |title=Intelligence, Mind, and Reasoning: Structure and Development |url=https://books.google.com/books?id=HkukZOU2pzIC&pg=PA194 |volume=106 |page=194 |year=1994 |editor-last=Demetriou |editor-first=A. |series=Advances in Psychology |publisher=Elsevier |isbn=978-0-08-086760-1 |editor2-last=Efklides |editor2-first=A.}}</ref>
+
+===Computational logic===
+{{main|Computational logic|Logic in computer science}}
+[[File:Register transfer level - example toggler.svg|right|thumb|300px
+|A simple toggling circuit is expressed using a logic gate and a synchronous register.]]
+Logic cut to the heart of computer science as it emerged as a discipline: [[Alan Turing]]'s work on the ''[[Entscheidungsproblem]]'' followed from [[Kurt Gödel]]'s work on the [[incompleteness theorems]]. The notion of the general purpose computer that came from this work was of fundamental importance to the designers of the computer machinery in the 1940s.
+
+In the 1950s and 1960s, researchers predicted that when human knowledge could be expressed using logic with [[mathematical notation]], it would be possible to create a machine that mimics the problem-solving skills of a human being. This was more difficult than expected because of the complexity of human reasoning. In the summer of 1956, [[John McCarthy (computer scientist)|John McCarthy]], [[Marvin Minsky]], [[Claude Shannon]] and [[Nathaniel Rochester (computer scientist)|Nathan Rochester]] organized a conference on the subject of what they called "[[artificial intelligence]]" (a term coined by McCarthy for the occasion). Newell and Simon proudly presented the group with the [[Logic Theorist]] and were somewhat surprised when the program received a lukewarm reception.
+
+In [[logic programming]], a program consists of a set of axioms and rules. Logic programming systems such as [[Prolog]] compute the consequences of the axioms and rules in order to answer a query.
+
+Today, logic is extensively applied in the field of artificial intelligence, and this field provide a rich source of problems in formal and informal logic. [[Argumentation theory]] is one good example of how logic is being applied to artificial intelligence. The [[ACM Computing Classification System]] in particular regards:
+* Section F.3 on "Logics and meanings of programs" and F.4 on "Mathematical logic and formal languages" as part of the theory of computer science: this work covers [[formal semantics of programming languages]], as well as work of [[formal methods]] such as [[Hoare logic]];
+* [[Boolean logic]] as fundamental to computer hardware: particularly, the system's section B.2 on "[[Arithmetic and logic structures]]", relating to operatives [[logical conjunction|AND]], [[negation|NOT]], and [[logical disjunction|OR]];
+* Many fundamental logical formalisms are essential to section I.2 on artificial intelligence, for example [[modal logic]] and [[default logic]] in [[Knowledge representation formalisms and methods]], [[Horn clause]]s in logic programming, and [[description logic]].
+
+Furthermore, computers can be used as tools for logicians. For example, in symbolic logic and mathematical logic, proofs by humans can be computer-assisted. Using [[automated theorem proving]], the machines can find and check proofs, as well as work with proofs too lengthy to write out by hand.
+
+===Non-classical logic===
+{{Main|Non-classical logic}}
+The logics discussed above are all "[[Principle of bivalence|bivalent]]" or "two-valued"; that is, they are most naturally understood as dividing propositions into true and false propositions. [[Non-classical logic]]s are those systems that reject various rules of [[Classical logic]].
+
+Hegel developed his own [[Hegelian dialectic|dialectic logic]] that extended [[Immanuel Kant|Kant]]'s transcendental logic but also brought it back to ground by assuring us that "neither in heaven nor in earth, neither in the world of mind nor of nature, is there anywhere such an abstract 'either–or' as the understanding maintains. Whatever exists is concrete, with difference and opposition in itself".<ref name="philosophical" />
+
+In 1910, [[Nicolai A. Vasiliev]] extended the law of excluded middle and the law of contradiction and proposed the law of excluded fourth and logic tolerant to contradiction.<ref name="Brenner2008" /> In the early 20th century [[Jan Łukasiewicz]] investigated the extension of the traditional true/false values to include a third value, "possible" (or an indeterminate, a hypothesis) so inventing [[ternary logic]], the first [[multi-valued logic]] in the Western tradition.<ref>{{Citation |last=Zegarelli |first=Mark |title=Logic For Dummies |url=https://books.google.com/books?id=xm0-0Rs2GVoC&pg=PA30 |page=30 |year=2010 |publisher=John Wiley & Sons |isbn=978-1-118-05307-2}}</ref> 
+A minor modification of the ternary logic was later introduced in a sibling ternary logic model proposed by [[Stephen Cole Kleene]]. Kleene's system differs from the Łukasiewicz's logic with respect to an outcome of the implication. The former assumes that the operator of [[material conditional|implication]] between two hypotheses produces a hypothesis.
+
+Logics such as [[fuzzy logic]] have since been devised with an infinite number of "degrees of truth", represented by a [[real number]] between 0 and 1.<ref name="stanford" />
+
+[[Intuitionistic logic]] was proposed by [[L.E.J. Brouwer]] as the correct logic for reasoning about mathematics, based upon his rejection of the [[law of the excluded middle]] as part of his [[intuitionism]]. Brouwer rejected formalization in mathematics, but his student [[Arend Heyting]] studied intuitionistic logic formally, as did [[Gerhard Gentzen]]. Intuitionistic logic is of great interest to computer scientists, as it is a [[constructive logic]] and sees many applications, such as extracting verified programs from proofs and influencing the design of [[programming language]]s through the [[formulae-as-types correspondence]].
+
+[[Modal logic]] is not truth conditional, and so it has often been proposed as a non-classical logic. However, modal logic is normally formalized with the principle of the excluded middle, and its [[relational semantics]] is bivalent, so this inclusion is disputable.
+
+==Controversies==
+==="Is Logic Empirical?"===
+{{details|Is Logic Empirical?}}
+What is the [[Epistemology|epistemological]] status of the [[Classical logic|laws of logic]]? What sort of argument is appropriate for criticizing purported principles of logic? In an influential paper entitled "[[Is Logic Empirical?]]"<ref name="Is Logic Empirical?" /> [[Hilary Putnam]], building on a suggestion of [[W. V. Quine]], argued that in general the facts of propositional logic have a similar epistemological status as facts about the physical universe, for example as the laws of [[mechanics]] or of [[general relativity]], and in particular that what physicists have learned about quantum mechanics provides a compelling case for abandoning certain familiar principles of classical logic: if we want to be [[philosophical realism|realists]] about the physical phenomena described by quantum theory, then we should abandon the [[principle of distributivity]], substituting for classical logic the [[quantum logic]] proposed by [[Garrett Birkhoff]] and [[John von Neumann]].<ref name="The Logic of Quantum Mechanics" />
+
+Another paper of the same name by [[Michael Dummett]] argues that Putnam's desire for realism mandates the law of distributivity.<ref name="Truth and Other Enigmas" /> Distributivity of logic is essential for the realist's understanding of how propositions are true of the world in just the same way as he has argued the principle of bivalence is. In this way, the question, "Is Logic Empirical?" can be seen to lead naturally into the fundamental controversy in [[metaphysics]] on [[realism versus anti-realism]].
+
+===Implication: strict or material===
+{{main|Paradoxes of material implication}}
+The notion of implication formalized in classical logic does not comfortably translate into natural language by means of "if&nbsp;... then&nbsp;...", due to a number of problems called the [[paradoxes of material implication]].
+
+The first class of paradoxes involves counterfactuals, such as ''If the moon is made of green cheese, then 2+2=5'', which are puzzling because natural language does not support the [[principle of explosion]]. Eliminating this class of paradoxes was the reason for [[C. I. Lewis]]'s formulation of [[strict implication]], which eventually led to more radically revisionist logics such as [[relevance logic]].
+
+The second class of paradoxes involves redundant premises, falsely suggesting that we know the succedent because of the antecedent: thus "if that man gets elected, granny will die" is materially true since granny is mortal, regardless of the man's election prospects. Such sentences violate the [[Gricean maxim]] of relevance, and can be modelled by logics that reject the principle of [[monotonicity of entailment]], such as relevance logic.
+
+===Tolerating the impossible===
+{{main|Paraconsistent logic}}
+[[Georg Wilhelm Friedrich Hegel]] was deeply critical of any simplified notion of the [[law of non-contradiction]]. It was based on [[Gottfried Wilhelm Leibniz]]'s idea that this law of logic also requires a sufficient ground to specify from what point of view (or time) one says that something cannot contradict itself. A building, for example, both moves and does not move; the ground for the first is our solar system and for the second the earth. In Hegelian dialectic, the law of non-contradiction, of identity, itself relies upon difference and so is not independently assertable.
+
+Closely related to questions arising from the paradoxes of implication comes the suggestion that logic ought to tolerate [[inconsistency]]. [[Relevance logic]] and [[paraconsistent logic]] are the most important approaches here, though the concerns are different: a key consequence of [[classical logic]] and some of its rivals, such as [[intuitionistic logic]], is that they respect the [[principle of explosion]], which means that the logic collapses if it is capable of deriving a contradiction. [[Graham Priest]], the main proponent of [[dialetheism]], has argued for paraconsistency on the grounds that there are in fact, true contradictions.<ref name="stanford7" />{{clarify|this is a provocative statement that deserves an inline example or Wikipedia explanation of some sort|date=October 2016}}
+
+===Rejection of logical truth===
+The philosophical vein of various kinds of skepticism contains many kinds of doubt and rejection of the various bases on which logic rests, such as the idea of logical form, correct inference, or meaning, typically leading to the conclusion that there are no [[logical truth]]s. This is in contrast with the usual views in [[philosophical skepticism]], where logic directs skeptical enquiry to doubt received wisdoms, as in the work of [[Sextus Empiricus]].
+
+[[Friedrich Nietzsche]] provides a strong example of the rejection of the usual basis of logic: his radical rejection of idealization led him to reject truth as a "...&nbsp;mobile army of metaphors, metonyms, and anthropomorphisms—in short&nbsp;... metaphors which are worn out and without sensuous power; coins which have lost their pictures and now matter only as metal, no longer as coins".<ref name="nietzsche" /> His rejection of truth did not lead him to reject the idea of either inference or logic completely, but rather suggested that "logic [came] into existence in man's head [out] of illogic, whose realm originally must have been immense. Innumerable beings who made inferences in a way different from ours perished".<ref name="nietzsche8" /> Thus there is the idea that logical inference has a use as a tool for human survival, but that its existence does not support the existence of truth, nor does it have a reality beyond the instrumental: "Logic, too, also rests on assumptions that do not correspond to anything in the real world".<ref name="nietzsche9" />
+
+This position held by Nietzsche however, has come under extreme scrutiny for several reasons. Some philosophers, such as [[Jürgen Habermas]], claim his position is self-refuting—and accuse Nietzsche of not even having a coherent perspective, let alone a theory of knowledge.<ref name="nietzsche10" /> [[György Lukács|Georg Lukács]], in his book ''The Destruction of Reason'', asserts that, "Were we to study Nietzsche's statements in this area from a logico-philosophical angle, we would be confronted by a dizzy chaos of the most lurid assertions, arbitrary and violently incompatible."<ref name="marxists" /> [[Bertrand Russell]] described Nietzsche's irrational claims with "He is fond of expressing himself paradoxically and with a view to shocking conventional readers" in his book ''A History of Western Philosophy''.<ref>{{Citation |last=Russell |first=Bertrand |title=A History of Western Philosophy And Its Connection with Political and Social Circumstances from the Earliest Times to the Present Day |url=http://www.ntslibrary.com/PDF%20Books/History%20of%20Western%20Philosophy.pdf/ |page=762|year=1945 |archive-url=https://web.archive.org/web/20140528221822/http://www.ntslibrary.com/PDF%20Books/History%20of%20Western%20Philosophy.pdf |publisher=Simon and Schuster |archive-date=28 May 2014 |url-status=dead}}</ref>
+
+==See also==
+{{Portal|Philosophy}}
+{{Wikipedia books}}
+{{Columns-list|
+* {{annotated link|Argument}}
+* {{annotated link|Argumentation theory}}
+* {{annotated link|Critical thinking}}
+* {{annotated link|Digital electronics}} (also known as ''[[digital logic]]'' or [[logic gate]]s)
+* {{annotated link|Fallacies}}
+* {{annotated link|List of fallacies}}
+* {{annotated link|List of logicians}}
+* {{annotated link|List of logic journals}}
+* {{annotated link|List of logic symbols}}
+* {{annotated link|Logic puzzle}}
+* {{annotated link|Mathematics}}
+** {{annotated link|List of mathematics articles}}
+** {{annotated link|Outline of mathematics}}
+* {{annotated link|Metalogic}}
+* {{annotated link|Outline of logic}}
+* {{annotated link|Philosophy}}
+** {{annotated link|List of philosophy topics}}
+** {{annotated link|Outline of philosophy}}
+* {{annotated link|Logos}}
+* {{annotated link|Logical reasoning}}
+* {{annotated link|Reason}}
+* {{annotated link|Truth}}
+* {{annotated link|Vector logic}}
+}}
+
+==References==
+
+=== Notes ===
+{{Reflist|group=lower-roman}}
+
+=== Citations ===
+{{Reflist|30em|refs=
+<ref name="achievement">E.g., Kline (1972, p. 53) wrote "A major achievement of Aristotle was the founding of the science of logic".</ref>
+<!--
+<ref name="Advances in Argumentation Theory and Research">{{Cite book |title=Advances in Argumentation Theory and Research |publisher=[[Southern Illinois University Press]] |year=1983 |isbn=978-0-8093-1050-0 |editor-last=Cox |editor-first=J. Robert |editor-last2=Willard |editor-first2=Charles Arthur |editor-link2=Charles Arthur Willard}}</ref>-->
+
+<!-- <ref name="argumentative">"possessed of reason, intellectual, dialectical, argumentative", also related to [[wikt:λόγος|λόγος]] (''logos''), "word, thought, idea, argument, account, reason, or principle" (Liddell & Scott 1999; Online Etymology Dictionary 2001).</ref> -->
+
+<ref name="Aristotle">{{Cite book |last=Łukasiewicz |first=Jan |title=Aristotle's syllogistic from the standpoint of modern formal logic |publisher=Oxford University Press |year=1957 |isbn=978-0-19-824144-7 |edition=2nd |page=7 |author-link=Jan Łukasiewicz}}</ref>
+
+<!--ref name="Aristotle">{{Cite web |url=http://www.britannica.com/EBchecked/topic/346217/history-of-logic/65920/Aristotle |title=Aristotle |website=[[Encyclopædia Britannica]]}}</ref-->
+
+<ref name="Bergmann, Merrie 2009">{{Cite book |last1=Bergmann |first1=Merrie |title=The Logic Book |last2=Moor |first2=James |last3=Nelson |first3=Jack |publisher=McGraw-Hill |year=2009 |isbn=978-0-07-353563-0 |edition=Fifth |location=New York, NY}}</ref>
+
+<ref name="brandom-2000">{{Cite book |last=Brandom |first=Robert |title=Articulating Reasons |publisher=Harvard University Press |year=2000 |isbn=978-0-674-00158-9 |location=Cambridge, MA}}</ref>
+
+<ref name="Brenner2008">{{Cite book |last=Joseph E. Brenner |url=https://books.google.com/books?id=Jnj5E6C9UwsC&pg=PA28 |title=Logic in Reality |date=3 August 2008 |publisher=Springer |isbn=978-1-4020-8374-7 |pages=28–30 |access-date=9 April 2012}}</ref>
+
+<!--<ref name="Chakrabarti">{{Cite journal |last=Kisor Kumar Chakrabarti |date=June 1976 |title=Some Comparisons Between Frege's Logic and Navya-Nyaya Logic |journal=Philosophy and Phenomenological Research |volume=36 |issue=4 |pages=554–563 |doi=10.2307/2106873 |jstor=2106873 |quote=This paper consists of three parts. The first part deals with Frege's distinction between sense and reference of proper names and a similar distinction in Navya-Nyaya logic. In the second part we have compared Frege's definition of number to the Navya-Nyaya definition of number. In the third part we have shown how the study of the so-called 'restrictive conditions for universals' in Navya-Nyaya logic anticipated some of the developments of modern set theory.}}</ref> -->
+
+<ref name="google">Jonathan Lear (1986). "''[https://books.google.com/books?id=lXI7AAAAIAAJ&pg=PA34&dq&hl=en#v=onepage&q=&f=false Aristotle and Logical Theory]''". [[Cambridge University Press]]. p. 34. {{isbn|0-521-31178-0}}</ref>
+
+<ref name="google1">Simo Knuuttila (1981). "''[https://books.google.com/books?id=iCCUF_OtA8AC&pg=PA71&dq&hl=en#v=onepage&q=&f=false Reforging the great chain of being: studies of the history of modal theories]''". Springer Science & Business. p. 71. {{isbn|90-277-1125-9}}</ref>
+
+<ref name="google2">Michael Fisher, Dov M. Gabbay, Lluís Vila (2005). "''[https://books.google.com/books?id=Ajsvo6jWNhgC&pg=PA119&dq&hl=en#v=onepage&q=&f=false Handbook of temporal reasoning in artificial intelligence]''".  Elsevier. p. 119. {{isbn|0-444-51493-7}}</ref>
+
+<ref name="google3">Harold Joseph Berman (1983). "''[https://books.google.com/books?id=9-8fIBVgCQYC&pg=PA133&dq&hl=en#v=onepage&q=&f=false Law and revolution: the formation of the Western legal tradition]''". [[Harvard University Press]]. p. 133. {{isbn|0-674-51776-8}}</ref>
+
+<!-- Unused citation <ref name="google4">Peter Thomas Geach (1980). "''[https://books.google.com/books?id=XCUrx6WGgrwC&pg=PA316&dq&hl=en#v=onepage&q=&f=false Logic Matters]''". [[University of California Press]]. p. 316. {{isbn|0-520-03847-9}}</ref> -->
+
+<ref name="Hamilton">For a more modern treatment, see {{Cite book |last=Hamilton |first=A.G. |url=https://archive.org/details/logicformathemat0000hami |title=Logic for Mathematicians |publisher=Cambridge University Press |year=1980 |isbn=978-0-521-29291-7 |url-access=registration}}</ref>
+
+<ref name="Indian logic: a reader">{{Cite book |last=Jonardon Ganeri |title=Indian logic: a reader |publisher=[[Routledge]] |year=2001 |isbn=978-0-7007-1306-6 |pages=vii, 5, 7}}</ref>
+
+<ref name="Introduction to Elementary Mathematical Logic">{{Cite book |last=Stolyar |first=Abram A. |title=Introduction to Elementary Mathematical Logic |publisher=Dover Publications |year=1983 |isbn=978-0-486-64561-2 |page=3}}</ref>
+
+<ref name="Introduction to Mathematical Logic">{{Cite book |last=Mendelson |first=Elliott |title=Introduction to Mathematical Logic |publisher=Van Nostrand |year=1964 |isbn=978-0-412-80830-2 |chapter=Quantification Theory: Completeness Theorems}}</ref>
+
+<ref name="Introduction to Mathematical Logic5">{{Cite book |last=Mendelson |first=Elliott |title=Introduction to Mathematical Logic |publisher=Wadsworth & Brooks/Cole Advanced Books & Software |year=1964 |location=Monterey, Calif. |chapter=Formal Number Theory: Gödel's Incompleteness Theorem |oclc=13580200}}</ref>
+
+<ref name="Is Logic Empirical?">{{Cite journal |last=Putnam |first=H. |author-link=Hilary Putnam |year=1969 |title=Is Logic Empirical? |journal=Boston Studies in the Philosophy of Science |volume=5|pages=216–241 |doi=10.1007/978-94-010-3381-7_5 |isbn=978-94-010-3383-1 }}</ref>
+
+<ref name="marxists">{{Cite web |url=http://www.marxists.org/archive/lukacs/works/destruction-reason/ch03.htm |title=The Destruction of Reason by Georg Lukács 1952 |last=Georg Lukács |publisher=Marxists.org |access-date=2013-06-16}}</ref>
+
+<ref name="mtu">"[http://chemistry.mtu.edu/%7Epcharles/SCIHISTORY/aristotle.html Aristotle] {{Webarchive|url=https://web.archive.org/web/20100607132121/http://chemistry.mtu.edu/%7Epcharles/SCIHISTORY/aristotle.html |date=7 June 2010 }}", MTU Department of Chemistry.</ref>
+
+<ref name="nietzsche">Nietzsche, 1873, [[On Truth and Lies in a Nonmoral Sense]].</ref>
+
+<ref name="nietzsche10">Babette Babich, Habermas, Nietzsche, and Critical Theory</ref>
+
+<ref name="nietzsche8">Nietzsche, 1882, ''[[The Gay Science]]''.</ref>
+
+<ref name="nietzsche9">Nietzsche, 1878, ''[[Human, All Too Human]]''</ref>
+
+<ref name="philosophical">{{Cite book |last=Hegel |first=G.W.F |title=Philosophy of Mind |title-link=Philosophy of Mind |publisher=Clarendon Press |others=trans. [[William Wallace (Scottish philosopher)|William Wallace]] |year=1971 |isbn=978-0-19-875014-7 |series=Encyclopedia of the Philosophical Sciences |location=Oxford |page=[https://archive.org/details/hegelsphilosophy00hege/page/174 174] |author-link=Georg Wilhelm Friedrich Hegel |orig-year=1817}}</ref>
+
+<ref name="Principia">{{Cite book |last1=Whitehead |first1=Alfred North |title=Principia Mathematica to *56 |title-link=Principia Mathematica |last2=Russell |first2=Bertrand |publisher=[[Cambridge University Press]] |year=1967 |isbn=978-0-521-62606-4 |author-link=Alfred North Whitehead |author-link2=Bertrand Russell}}</ref>
+
+<ref name="Prior Analytics">{{Cite book |last=Aristotle |title=Prior Analytics |publisher=Hackett Publishing Co. |year=1989 |isbn=978-0-87220-064-7 |page=115 |author-link=Aristotle}}</ref>
+
+<!-- <ref name="propositions">The four Catuṣkoṭi logical divisions are formally very close to the four opposed propositions of the Greek [[tetralemma]], which in turn are analogous to the four [[truth value]]s of modern [[relevance logic]] Cf. Belnap (1977); Jayatilleke, K.N., (1967, The logic of four alternatives, in ''Philosophy East and West'', University of Hawaii Press).</ref> -->
+
+<ref name="stanford-logic-onthology">{{Cite book |last=Hofweber |first=T. |title=Stanford Encyclopedia of Philosophy |year=2004 |editor-last=Zalta |editor-first=Edward N |editor-link=Edward N. Zalta |chapter=Logic and Ontology |chapter-url=http://plato.stanford.edu/entries/logic-ontology}}</ref>
+
+<ref name="stanford">{{Cite book |last=Hájek |first=Petr |title=Stanford Encyclopedia of Philosophy |title-link=Stanford Encyclopedia of Philosophy |year=2006 |editor-last=Zalta |editor-first=Edward N. |editor-link=Edward N. Zalta |chapter=Fuzzy Logic |author-link=Petr Hájek |chapter-url=http://plato.stanford.edu/entries/logic-fuzzy/}}</ref>
+
+<ref name="stanford7">{{Cite book |last=Priest |first=Graham |title=Stanford Encyclopedia of Philosophy |title-link=Stanford Encyclopedia of Philosophy |year=2008 |editor-last=Zalta |editor-first=Edward N. |editor-link=Edward N. Zalta |chapter=Dialetheism |author-link=Graham Priest |chapter-url=http://plato.stanford.edu/entries/dialetheism}}</ref>
+
+<ref name="The Basic Works">{{Cite book |last=Aristotle |title=The Basic Works |publisher=Modern Library |year=2001 |isbn=978-0-375-75799-0 |editor-last=Mckeon |editor-first=Richard |chapter=[[Posterior Analytics]] |author-link=Aristotle}}</ref>
+
+<ref name="The Cambridge Companion to Aristotle">{{Cite book |last=Barnes |first=Jonathan |title=The Cambridge Companion to Aristotle |publisher=Cambridge University Press |year=1995 |isbn=978-0-521-42294-9 |page=27}}</ref>
+
+<ref name="The Logic of Quantum Mechanics">{{Cite journal |last1=Birkhoff |first1=G. |last2=von Neumann |first2=J. |author-link2=John von Neumann |year=1936 |title=The Logic of Quantum Mechanics |journal=[[Annals of Mathematics]] |volume=37 |issue=4 |pages=823–843 |doi=10.2307/1968621 |jstor=1968621 |authorlink1=Garrett Birkhoff}}</ref>
+
+<ref name="Theory of computation: formal languages, automata, and complexity">{{Cite book |last=Brookshear |first=J. Glenn |title=Theory of computation: formal languages, automata, and complexity |publisher=Benjamin/Cummings Pub. Co. |year=1989 |isbn=978-0-8053-0143-4 |location=Redwood City, Calif. |chapter=Computability: Foundations of Recursive Function Theory}}</ref>
+
+<ref name="Theory of computation: formal languages, automata, and complexity6">{{Cite book |last=Brookshear |first=J. Glenn |title=Theory of computation: formal languages, automata, and complexity |publisher=Benjamin/Cummings Pub. Co. |year=1989 |isbn=978-0-8053-0143-4 |location=Redwood City, Calif. |chapter=Complexity}}</ref>
+
+<ref name="Truth and Other Enigmas">{{Cite book |last=Dummett |first=M. |title=Truth and Other Enigmas |year=1978 |isbn=978-0-674-91076-8 |chapter=Is Logic Empirical? |author-link=Michael Dummett}}</ref>
+}}
+
+===Bibliography===
+{{Refbegin}}
+* [[Jon Barwise|Barwise, J.]] (1982). ''Handbook of Mathematical Logic''.  Elsevier.  {{isbn|978-0-08-093364-1}}.
+* [[Nuel Belnap|Belnap, N.]] (1977). "A useful four-valued logic".  In Dunn & Eppstein, ''Modern uses of multiple-valued logic''.  Reidel: Boston.
+* [[Józef Maria Bocheński|Bocheński, J.M.]] (1959).  ''A précis of [[mathematical logic]]''.  Translated from the French and German editions by Otto Bird.  D. Reidel, Dordrecht, South Holland.
+* [[Józef Maria Bocheński|Bocheński, J.M.]] (1970).  ''A history of [[formal logic]]''.  2nd Edition.  Translated and edited from the German edition by Ivo Thomas.  Chelsea Publishing, New York.
+* {{Cite book |last=Brookshear |first=J. Glenn |title=Theory of computation: formal languages, automata, and complexity |publisher=Benjamin/Cummings Pub. Co. |year=1989 |isbn=978-0-8053-0143-4 |location=Redwood City, Calif.}}
+* Cohen, R.S, and Wartofsky, M.W. (1974). ''Logical and Epistemological Studies in Contemporary Physics''. Boston Studies in the Philosophy of Science. D. Reidel Publishing Company: Dordrecht, Netherlands.  {{isbn|90-277-0377-9}}.
+* Finkelstein, D. (1969). "Matter, Space, and Logic". in R.S. Cohen and M.W. Wartofsky (eds. 1974).
+* [[Dov Gabbay|Gabbay, D.M.]], and Guenthner, F. (eds., 2001–2005). ''Handbook of Philosophical Logic''. 13 vols., 2nd edition. Kluwer Publishers: Dordrecht.
+* [[Susan Haack|Haack, Susan]] (1996).'' Deviant Logic, Fuzzy Logic:  Beyond the Formalism'', University of Chicago Press.
+* {{Cite web |url=http://www.etymonline.com/index.php?term=logic |title=Logic |last=Harper |first=Robert |year=2001 |website=[[Online Etymology Dictionary]] |access-date=8 May 2009}}
+* [[David Hilbert|Hilbert, D.]], and [[Wilhelm Ackermann|Ackermann, W]], (1928). ''Grundzüge der theoretischen Logik'' (''[[Principles of Mathematical Logic]]''). Springer-Verlag. {{OCLC|2085765}}
+* [[Wilfred Hodges|Hodges, W.]] (2001). ''Logic.  An introduction to Elementary Logic'', Penguin Books.
+* Hofweber, T. (2004), [http://plato.stanford.edu/entries/logic-ontology/ Logic and Ontology]. ''[[Stanford Encyclopedia of Philosophy]]''. [[Edward N. Zalta]] (ed.).
+* Hughes, R.I.G. (1993, ed.). ''A Philosophical Companion to First-Order Logic''. Hackett Publishing.
+* {{Cite book |last=Kline |first=Morris |title=Mathematical Thought From Ancient to Modern Times |publisher=Oxford University Press |year=1972 |isbn=978-0-19-506135-2}}
+* [[William Kneale (logician)|Kneale, William]], and Kneale, Martha, (1962). ''The Development of Logic''. Oxford University Press, London, UK.
+* {{Cite web |url=http://www.perseus.tufts.edu/cgi-bin/ptext?doc=Perseus%3Atext%3A1999.04.0057%3Aentry%3D%2363716 |title=Logikos |last1=Liddell |first1=Henry George |authorlink=Henry Liddell |last2=Scott |first2=Robert |authorlink2=Robert Scott (philologist) |website=[[A Greek-English Lexicon]] |publisher=[[Perseus Project]] |access-date=8 May 2009}}
+* [[Elliott Mendelson|Mendelson, Elliott]], (1964). ''Introduction to Mathematical Logic''. Wadsworth & Brooks/Cole Advanced Books & Software: Monterey, Calif. {{OCLC| 13580200}}
+* [[Barry Smith (ontologist)|Smith, B.]] (1989). "Logic and the Sachverhalt". ''The Monist'' 72(1): 52–69.
+* [[Alfred North Whitehead|Whitehead, Alfred North]] and [[Bertrand Russell]] (1910). ''[[Principia Mathematica]]''. Cambridge University Press: Cambridge, England. {{OCLC|1041146}}
+{{Refend}}
+
+==External links==
+{{Sister project links|Logic}}
+{{Library resources box}}
+* {{PhilPapers|category|logic-and-philosophy-of-logic}}
+* {{InPho|taxonomy|2245}}
+* {{cite IEP |url-id=category/s-l-m/logic/ |title=Logic}}
+* {{springer|title=Logical calculus|id=p/l060690}}
+* [https://docs.google.com/document/d/1DhtRAPcMwJmiQnbdmFcHWaOddQ7kuqqDnWp2LZcGlnY/edit?usp=sharing An Outline for Verbal Logic]
+* Introductions and tutorials
+** {{cite web|url=http://www.galilean-library.org/manuscript.php?postid=43782|archive-url=https://web.archive.org/web/20080403145334/http://www.galilean-library.org/manuscript.php?postid=43782|url-status=dead|archive-date=2008-04-03|title=An Introduction to Philosophical Logic, by Paul Newall}} aimed at beginners.
+** [http://www.fecundity.com/logic/ forall x: an introduction to formal logic], by [[P.D. Magnus]], covers sentential and quantified logic.
+** [https://web.archive.org/web/20080521095350/http://www.filozofia.uw.edu.pl/kpaprzycka/Publ/xLogicSelfTaught.html Logic Self-Taught: A Workbook] (originally prepared for on-line logic instruction).
+*** [[Nicholas Rescher]]. (1964). ''Introduction to Logic'', St. Martin's Press.
+* Essays
+** [https://web.archive.org/web/20061015094223/http://durendal.org:8080/lcsl/ "Symbolic Logic"] and [https://www.gutenberg.org/ebooks/4763 "The Game of Logic"], [[Lewis Carroll]], 1896.
+** [http://etext.lib.virginia.edu/DicHist/analytic/anaVII.html Math & Logic: The history of formal mathematical, logical, linguistic and methodological ideas.] In ''The Dictionary of the History of Ideas.''
+* Online Tools
+** [https://web.archive.org/web/20150515000453/http://www.thefirstscience.org/syllogistic-machine Interactive Syllogistic Machine] A web-based syllogistic machine for exploring fallacies, figures, terms, and modes of syllogisms.
+** [http://somerby.net/mack/logic/  A Logic Calculator] A web-based application for evaluating simple statements in symbolic logic.
+* Reference material
+** [http://www.earlham.edu/~peters/courses/log/transtip.htm Translation Tips], by Peter Suber, for translating from English into logical notation.
+** [http://www.ontology.co/history-of-logic.htm Ontology and History of Logic. An Introduction] with an annotated bibliography.
+* Reading lists
+** The [http://www.ucl.ac.uk/philosophy/LPSG/ London Philosophy Study Guide] offers many suggestions on what to read, depending on the student's familiarity with the subject:
+*** [http://www.ucl.ac.uk/philosophy/LPSG/L&M.htm Logic & Metaphysics]
+*** [http://www.ucl.ac.uk/philosophy/LPSG/SetTheory.htm Set Theory and Further Logic]
+*** [http://www.ucl.ac.uk/philosophy/LPSG/MathLogic.htm Mathematical Logic]
+* {{librivox book | title=Categories | author=ARISTOTLE}}
+
+{{Logic}}
+{{Philosophy topics}}
+{{Authority control}}
+
+[[Category:Logic| ]]
+[[Category:Abstraction]]
+[[Category:Critical thinking]]
+[[Category:Formal sciences]]
+[[Category:History of education]]
+[[Category:History of ideas]]
+[[Category:History of logic]]
+[[Category:History of mathematics]]
+[[Category:History of philosophy]]
+[[Category:History of science]]
+[[Category:Mind]]
+[[Category:Philosophical logic]]
+[[Category:Philosophy]]
+[[Category:Philosophy of logic]]
+[[Category:Reasoning]]
+[[Category:Thought]]{{short description|The study of inference and truth}}
+{{About|the systematic study of the form of arguments|other uses}}
+{{Redirect|Logician|the school of Chinese philosophy|School of Names|the thoroughbred|Logician (horse)}}
+{{Use dmy dates|date=September 2020}}
+{{Philosophy sidebar}}
+
+'''Logic''' (from [[Ancient Greek|Greek]]: {{lang-grc|[[wikt:λογική|λογική]]|label=none|lit=possessed of [[reason]], [[intellectual]], [[dialectical]], [[argument]]ative|translit=logikḗ}})<ref>[[Henry Liddell|Liddell, Henry George]], and [[Robert Scott (philologist)|Robert Scott]]. 1940. "[http://www.perseus.tufts.edu/hopper/text?doc=LSJ+logiko%2Fs&fromdoc=Perseus%3Atext%3A1999.04.0057 Logikos]." ''[[A Greek–English Lexicon]]'', edited by [[Henry Stuart Jones|H. S. Jones]] with R. McKenzie. Oxford: [[Oxford University Press|Clarendon Press]]. – via [[Perseus Project]]. Retrieved 9 May 2020.</ref><ref>Harper, Douglas. 2020 [2001]. "[https://www.etymonline.com/word/logic logic (n.)]." ''[[Online Etymology Dictionary]]''. Retrieved 9 May 2020.</ref><ref group="lower-roman">Also related to {{Wikt-lang|en|λόγος}} (''logos''), "word, thought, idea, argument, account, reason, or principle." (Liddell and Scott, 1999).</ref> is the systematic study of valid [[rule of inference|rules of inference]], i.e. the relations that lead to the acceptance of one proposition (the [[consequent|conclusion]]) on the basis of a set of other propositions ([[premise]]s). More broadly, logic is the analysis and appraisal of [[argument]]s.<ref name="Gensler-01">{{Cite book |last=Gensler |first=Harry J. |title=Introduction to logic |date=2017 |publisher=Routledge |isbn=9781138910591 |edition=3rd |location=New York |page=1 |chapter=Chapter 1: Introduction |doi=10.4324/9781315693361 |oclc=957680480 |orig-year=2002}}</ref>
+
+There is no universal agreement as to the exact definition and boundaries of logic, hence the issue still remains one of the main subjects of research and debates in the field of [[philosophy of logic]] (see {{slink||Rival conceptions}}).<ref>{{Cite book|last=Quine|first=Willard Van Orman|title=Philosophy of Logic|date=1986|publisher=Harvard University Press|isbn=0674665635|edition=2nd|location=Cambridge, MA.|pages=1–14, 61–75|jstor=j.ctvk12scx|oclc=12664089|author-link=Willard Van Orman Quine|orig-year=1970}}</ref><ref>{{Cite book|last=McGinn|first=Colin|title=Logical Properties: Identity, Existence, Predication, Necessity, Truth|date=2000|publisher=Clarendon Press|isbn=9780199241811|location=Oxford|doi=10.1093/0199241813.001.0001|oclc=44502365|author-link=Colin McGinn}}{{Page needed|date=December 2019}}</ref><ref>{{Cite journal |last=McKeon |first=Matthew |date=2003 |title=Colin McGinn. Logical properties: identity, existence, predication, necessity, truth. Clarendon Press, Oxford 2000, vi + 114 pp. |url=https://www.cambridge.org/core/product/identifier/S107989860000473X/type/journal_article |journal=Bulletin of Symbolic Logic |language=en |volume=9 |issue=1 |pages=39–42 |doi=10.1017/S107989860000473X |issn=1079-8986}}</ref> However, it has traditionally included the classification of arguments; the systematic exposition of the [[logical form]]s; the [[Validity (logic)|validity]] and [[soundness]] of [[deductive reasoning]]; the [[Strong induction|strength]] of [[inductive reasoning]]; the study of [[formal proof]]s and [[inference]] (including [[paradox]]es and [[fallacies]]); and the study of [[syntax]] and [[semantics]].
+
+A good argument not only possesses validity and soundness (or strength, in induction), but it also avoids [[Circular reasoning|circular dependencies]], is clearly stated, relevant, and [[Consistency|consistent]]; otherwise it is useless for reasoning and persuasion, and is classified as a [[fallacy]].<ref name="Gensler-04">{{Cite book|last=Gensler|first=Harry J.|title=Introduction to Logic|date=2017|publisher=Routledge|isbn=9781138910591|edition=3rd|location=New York|at=Ch. 4|chapter=Fallacies and Argumentation|doi=10.4324/9781315693361|oclc=957680480|orig-year=2002}}</ref>
+
+In ordinary discourse, inferences may be signified by words such as ''therefore'', ''thus'', ''hence'', ''ergo'', and so on.
+
+Historically, logic has been studied in [[philosophy]] (since ancient times) and [[mathematics]] (since the mid-19th century).  More recently, logic has been studied in [[cognitive science]], which draws on [[computer science]], [[linguistics]], philosophy and [[psychology]], among other disciplines. A '''logician''' is any person, often a philosopher or mathematician, whose topic of scholarly study is logic.
+
+== Types of logic ==
+{{Quote box
+| quote = Upon this first, and in one sense this sole, rule of reason, that in order to learn you must desire to learn, and in so desiring not be satisfied with what you already incline to capably think, there follows one corollary which itself deserves to be inscribed upon every wall of the city of philosophy: Do not block the way of inquiry.
+| source = [[Charles Sanders Peirce]], ''First Rule of Logic''
+| align = left
+| width = 7&nbsp;cm
+}}
+
+
+=== Philosophical logic ===
+''[[Philosophical logic]]'' is an area of philosophy. It's a set of methods used to solve philosophical problems and a fundamental tool for the advancement of [[metaphilosophy]].
+
+=== Informal logic ===
+''[[Informal logic]]'' is the study of [[natural language]] [[argument]]s. The study of [[fallacies]] is an important branch of informal logic. Since much informal argument is not strictly speaking deductive, on some conceptions of logic, informal logic is not logic at all. (See {{slink||Rival conceptions}}.)
+
+=== Formal logic ===
+''[[Formal system|Formal logic]]'' is the study of [[inference]] with purely formal content. An inference possesses a ''purely formal and explicit content'' (i.e. it can be expressed as a particular application of a wholly abstract rule) such as, a rule that is not about any particular thing or property. In many definitions of logic, [[logical consequence]] and inference with purely formal content are the same.
+
+Examples of formal logic include (1) traditional [[syllogistic logic]] (a.k.a. term logic) and (2) modern [[symbolic Logic]]:
+
+* ''Syllogistic logic'' can be found in the works of [[Aristotle]], making it the earliest known formal study and studies [[Syllogism#Types|types of syllogism]]. Modern formal logic follows and expands on Aristotle.<ref name="The Basic Works" /><ref>{{Cite web|title=syllogistic {{!}} Definition, History, & Facts|url=https://www.britannica.com/topic/syllogistic|website=Encyclopedia Britannica|language=en|access-date=2020-05-27}}</ref>
+* ''Symbolic logic'' is the study of symbolic abstractions that capture the formal features of logical inference,<ref name="Principia" /><ref name="Hamilton" /> often divided into two main branches: [[propositional logic]] and [[predicate logic]].
+
+=== Mathematical logic ===
+''[[Mathematical logic]]'' is an extension of symbolic logic into other areas, in particular to the study of [[model theory]], [[proof theory]], [[set theory]], and [[computability theory]].<ref>{{Cite book|last=Hinman, Peter G.|url=https://www.worldcat.org/oclc/958798526|title=Fundamentals of mathematical logic|date=2005|publisher=A K Peters|isbn=978-1-315-27553-6|location=Wellesley, Mass.|oclc=958798526}}</ref><ref name="scribd.com">{{Cite web|title=Supplement #3: Notes on Logic {{!}} Logic {{!}} Argument {{!}} Free 30-day Trial|url=https://www.scribd.com/document/408297103/Notes-in-Logic|website=Scribd|language=en|access-date=2020-05-27}}</ref>
+
+== Concepts ==
+[[File:Argument terminology used in logic (en).svg|thumb|400px|right|[[Argument]] terminology used in logic]]The concepts of [[logical form]] and [[argument]] are central to logic.
+
+An argument is constructed by applying one of the forms of the different types of [[logical reasoning]]: [[Deductive reasoning|deductive]], [[Inductive reasoning|inductive]], and [[Abductive reasoning|abductive]]. In deduction, the ''[[Validity (logic)|validity]]'' of an argument is determined solely by its logical form, not its content, whereas the ''[[soundness]]'' requires both validity and that all the given premises are actually true.<ref name=":0">{{Cite web|title=Validity and Soundness|url=https://www.iep.utm.edu/val-snd/|website=The Internet Encyclopedia of Philosophy|issn=2161-0002|url-status=live|archive-url=https://web.archive.org/web/20180527093407/http://www.iep.utm.edu/val-snd/|archive-date=27 May 2018|access-date=9 May 2020}}</ref>
+
+Completeness, consistency, decidability, and expressivity, are further fundamental concepts in logic. The categorization of the [[Formal system|logical systems]] and of their properties has led to the emergence of a [[metatheory]] of logic known as [[metalogic]].<ref>{{Citation|last=Ewald|first=William|title=The Emergence of First-Order Logic|date=2019|url=https://plato.stanford.edu/archives/spr2019/entries/logic-firstorder-emergence/|encyclopedia=The Stanford Encyclopedia of Philosophy|editor-last=Zalta|editor-first=Edward N.|edition=Spring 2019|publisher=Metaphysics Research Lab, Stanford University|access-date=2020-01-17}}</ref> However, agreement on what ''logic'' actually is has remained elusive, although the field of [[universal logic]] has studied the common structure of logics.
+
+===Logical form===
+{{main|Logical form}}
+Logic is generally considered '''formal''' when it analyzes and represents the ''form'' of any [[Validity (logic)|valid argument]] type. The form of an argument is displayed by representing its sentences in the formal grammar and symbolism of a logical language to make its content usable in formal inference. Simply put, to formalize simply means to translate English sentences into the language of logic.
+
+This is called showing the ''logical form'' of the argument. It is necessary because indicative sentences of ordinary language show a considerable variety of form and complexity that makes their use in inference impractical. It requires, first, ignoring those grammatical features irrelevant to logic (such as gender and declension, if the argument is in Latin), replacing conjunctions irrelevant to logic (e.g. "but") with [[logical conjunction]]s like "and" and replacing ambiguous, or alternative logical expressions ("any", "every", etc.) with expressions of a standard type (e.g. "all", or the [[universal quantifier]] ∀).
+
+Second, certain parts of the sentence must be replaced with schematic letters. Thus, for example, the expression "all Ps are Qs" shows the logical form common to the sentences "all men are mortals", "all cats are carnivores", "all Greeks are philosophers", and so on.  The schema can further be condensed into the [[formula]] ''A(P,Q)'', where the letter ''A'' indicates the judgement 'all – are –'.
+
+The importance of form was recognised from ancient times. Aristotle uses variable letters to represent valid inferences in ''[[Prior Analytics]]'', leading [[Jan Łukasiewicz]] to say that the introduction of variables was "one of Aristotle's greatest inventions".<ref name="Aristotle" /> According to the followers of Aristotle (such as [[Ammonius Saccas|Ammonius]]), only the logical principles stated in schematic terms belong to logic, not those given in concrete terms. The concrete terms 'man', 'mortal', etc., are analogous to the substitution values of the schematic placeholders ''P'', ''Q'', ''R'', which were called the 'matter' ([[Ancient Greek|Greek]]: {{Lang-el|{{wikt-lang|en|ὕλη}}|translit={{wikt-lang|en|hyle}}|label=none}}) of the inference.
+
+There is a big difference between the kinds of formulas seen in traditional term logic and the [[predicate calculus]] that is the fundamental advance of modern logic. The formula ''A(P,Q)'' (all Ps are Qs) of traditional logic corresponds to the more complex formula <math>\forall x (P(x) \rightarrow Q(x))</math> in predicate logic, involving the logical connectives for [[universal quantification]] and [[material conditional|implication]] rather than just the predicate letter ''A'' and using variable arguments <math>P(x)</math> where traditional logic uses just the term letter ''P''.  With the complexity comes power, and the advent of the predicate calculus inaugurated revolutionary growth of the subject.{{Citation needed|date=May 2020}}<ref>{{Cite book|last=Mclean|first=Jaden|title=Logic Design|last2=Hurley|first2=Carmen|publisher=EDTECH|year=2019|isbn=9781839473197|location=|pages=9}}</ref>
+
+=== Semantics ===
+{{main|Semantics of logic}}
+
+The validity of an argument depends upon the meaning, or ''semantics'', of the sentences that make it up.
+
+Aristotle's six ''[[Organon]]'', especially ''[[De Interpretatione]]'', gives a cursory outline of semantics which the [[scholastic logic]]ians, particularly in the thirteenth and fourteenth century, developed into a complex and sophisticated theory, called ''[[supposition theory]]''. This showed how the truth of simple sentences, expressed schematically, depend on how the terms 'supposit', or stand for, certain extra-linguistic items. For example, in part II of his [[Sum of Logic|''Summa Logicae'']], [[William of Ockham]] presents a comprehensive account of the necessary and sufficient conditions for the [[truth]] of simple sentences, in order to show which arguments are valid and which are not.  Thus "every A is B' is true if and only if there is something for which 'A' stands, and there is nothing for which 'A' stands, for which 'B' does not also stand."<ref>[[William of Ockham]], ''[[Sum of Logic|Summa Logicae]]'' II, c.4
+
+(Translated by: Freddoso, A., and H. Schuurman. 1998. ''Ockam's Theory of Propositions''. St. Augustine's Press. p. 96.)</ref>
+
+Early modern logic defined semantics purely as a relation between ideas. [[Antoine Arnauld]] in the ''[[Port-Royal Logic|Port Royal-Logic]]'',<ref>Buroker, Jill. 2014. "[https://plato.stanford.edu/entries/port-royal-logic/ Port Royal Logic]." ''[[Stanford Encyclopedia of Philosophy]]''. Retrieved 10 May 2020.</ref><ref>Martin, John N. "[https://www.iep.utm.edu/portroyl/ The Port Royal Logic]." ''[[Internet Encyclopedia of Philosophy]]''. {{ISSN|2161-0002}}. Retrieved 10 May 2020.</ref> says that after conceiving things by our ideas, we compare these ideas, and, finding that some belong together and some do not, we unite or separate them. This is called ''affirming'' or ''denying'', and in general ''judging''.<ref>[[Antoine Arnauld|Arnauld, Antoine]], and [[Pierre Nicole]]. 1662. ''[[Port-Royal Logic|Logic; or, The Art of Thinking]]'' II.3.</ref> Thus truth and falsity are no more than the agreement or disagreement of ideas. This suggests obvious difficulties, leading [[John Locke|Locke]] to distinguish between 'real' truth, when our ideas have 'real existence' and 'imaginary' or 'verbal' truth, where ideas like harpies or centaurs exist only in the mind.<ref>[[John Locke|Locke, John]]. 1690. ''[[An Essay Concerning Human Understanding]]'' IV.5, 1-8.</ref> This view, known as ''[[psychologism]]'', was taken to the extreme in the nineteenth century, and is generally held by modern logicians to signify a low point in the decline of logic before the twentieth century.
+
+Modern [[semantics]] is in some ways closer to the medieval view, in rejecting such psychological truth-conditions. However, the introduction of [[quantifier (logic)|quantification]], needed to solve the [[problem of multiple generality]], rendered impossible the kind of subject-predicate analysis that underlies medieval semantics. The main modern approach is ''model-theoretic semantics'', based on [[Alfred Tarski]]'s ''[[semantic theory of truth]]''. The approach assumes that the meaning of the various parts of the propositions are given by the possible ways we can give a recursively specified group of [[interpretation function]]s from them to some predefined [[domain of discourse]]: an interpretation of [[first-order predicate logic]] is given by a mapping from terms to a universe of [[individual]]s, and a mapping from propositions to the truth values "true" and "false".  Model-theoretic semantics is one of the fundamental concepts of [[model theory]]. Modern semantics also admits rival approaches, such as the [[proof-theoretic semantics]] that associates the meaning of propositions with the roles that they can play in inferences, an approach that ultimately derives from the work of [[Gerhard Gentzen]] on [[structural proof theory]] and is heavily influenced by [[Ludwig Wittgenstein]]'s later philosophy, especially his [[aphorism]] "[[Philosophical Investigations|meaning is use]]."
+
+===Inference===
+''Inference'' is not to be confused with ''[[Implicature|implication]]''. An ''implication'' is a sentence of the form 'If p then q', and can be true or false. The [[stoic logic]]ian [[Philo the Dialectician|Philo of Megara]] was the first to define the truth conditions of such an ''implication'': false only when the antecedent p is true and the consequent q is false, in all other cases true. An ''inference'', on the other hand, consists of two separately asserted propositions of the form 'p therefore q'. An inference is not true or false, but valid or invalid. However, there is a connection between implication and inference, as follows: if the implication 'if p then q' is ''true'', the inference 'p therefore q' is ''valid''. This was given an apparently paradoxical formulation by Philo, who said that the implication 'if it is day, it is night' is true only at night, so the inference 'it is day, therefore it is night' is valid in the night, but not in the day.
+
+The theory of inference (or '[[Logical consequence|''consequences'']]') was systematically developed in medieval times by logicians such as [[William of Ockham]] and [[Walter Burley]]. It is uniquely medieval, though it has its origins in Aristotle's [[Topics (Aristotle)|''Topica'']] and [[Boethius]]' ''De Syllogismis hypotheticis.'' Many terms in logic, for this reason, are in Latin. For instance, the rule that licenses the move from the implication 'if p then q' plus the assertion of its antecedent p, to the assertion of the consequent q, is known as {{Lang-la|[[modus ponens]]|label=none}} ('mode of positing')—from {{Lang-la|posito antecedente ponitur consequens}}. The Latin formulations of many other rules such as {{Lang-la|[[Principle of explosion|ex falso quodlibet]]|label=none}} ('from falsehood, anything [follows]'), and ''[[reductio ad absurdum]]'' ('reduction to absurdity'; i.e. to disprove by showing the consequence as absurd), also date from this period.
+
+However, the ''theory of consequences'', or the so-called [[hypothetical syllogism|''hypothetical'' syllogism]], was never fully integrated into the theory of the ''categorical'' syllogism. This was partly because of the resistance to reducing the categorical judgment 'every s is p' to the so-called hypothetical judgment 'if anything is s, it is p'. The first was thought to imply 'some s is p', the latter was not, and as late as 1911 in the [[Encyclopædia Britannica]] article on "Logic", we find the Oxford logician T. H. Case arguing against Sigwart's and Brentano's modern analysis of the universal proposition.
+
+===Logical systems===
+{{main|Formal system}}
+A formal system is an [[organization]] of terms used for the analysis of deduction. A logical system is essentially a way of mechanically listing all the logical truths of some part of logic by means of the application of recursive rules—i.e., rules that can be repeatedly applied to their own output. This is done by identifying by purely formal criteria certain axioms and certain purely formal rules of inference from which [[Theorem|theorems]] can be derived from axioms together with earlier theorems.<ref>{{Cite web|title=Logic - Logical systems|url=https://www.britannica.com/topic/logic|website=Encyclopedia Britannica|language=en|access-date=2020-05-27}}</ref> It consists of an alphabet, a language over the alphabet to construct sentences, and a rule for deriving sentences. Among the important properties that [[logical system]]s can have are:
+*[[Consistency]]: no theorem of the system contradicts another.<ref name="Bergmann, Merrie 2009" />
+*[[Validity (logic)|Validity]]: the system's rules of proof never allow a false inference from true premises.
+*[[Completeness (logic)|Completeness]]: if a formula is true, it can be proven, i.e. is a ''theorem'' of the system.
+*[[Soundness]]: if any formula is a theorem of the system, it is true. This is the converse of completeness. (Note that in a distinct philosophical use of the term, an argument is sound when it is both valid and its premises are true.)<ref name=":0" />
+*[[Expressive power (computer science)|Expressivity]]: what concepts can be expressed in the system.
+
+Some logical systems do not have all these properties. As an example, [[Kurt Gödel]]'s [[Gödel's incompleteness theorems|incompleteness theorems]] show that sufficiently complex formal systems of arithmetic cannot be consistent and complete;<ref name="Hamilton" /> however, [[first-order predicate]] logics not extended by specific [[axiom]]s to be arithmetic formal systems with equality can be complete and consistent.<ref name="Introduction to Mathematical Logic" />
+
+===Logic and rationality===
+{{main|Logic and rationality}}
+{{confusing|section|date=May 2016}}
+As the study of argument is of clear importance to the reasons that we hold things to be true, logic is of essential importance to [[rationality]]. Here we have defined logic to be "the systematic study of the form of arguments;" the reasoning behind argument is of several sorts, but only some of these arguments fall under the aegis of logic proper.
+
+[[Deductive reasoning]] concerns the [[logical consequence]] of given premises and is the form of reasoning most closely connected to logic. On a narrow conception of logic (see below) logic concerns just deductive reasoning, although such a narrow conception controversially excludes most of what is called informal logic from the discipline.
+
+There are other forms of reasoning that are rational but that are generally not taken to be part of logic. These include [[inductive reasoning]], which covers forms of inference that move from collections of particular judgements to universal judgements, and [[abductive reasoning]],<ref name="abduction" group="lower-roman">On [[abductive reasoning]], see:
+
+* Magnani, L. 2001. ''Abduction, Reason, and Science: Processes of Discovery and Explanation''. New York: [[Kluwer Academic/Plenum Publishers|Kluwer Academic Plenum Publishers]]. xvii. {{isbn|0-306-46514-0}}.
+* Josephson, John R., and Susan G. Josephson. 1994. ''Abductive Inference: Computation, Philosophy, Technology''. New York: Cambridge University Press. viii. {{isbn|0-521-43461-0}}.
+* Bunt, H. and W. Black. 2000. ''Abduction, Belief and Context in Dialogue: Studies in Computational Pragmatics'', (''Natural Language Processing'' 1). Amsterdam: [[John Benjamins Publishing Company|John Benjamins]]. vi.  {{isbn|90-272-4983-0|1-55619-794-2}}.</ref> which is a form of inference that goes from observation to a hypothesis that accounts for the reliable data (''observation'') and seeks to explain relevant evidence. American philosopher [[Charles Sanders Peirce]] (1839–1914) first introduced the term as ''guessing''.<ref name="guess">Bergman, Mats, and Saami Paavola, eds. "[http://www.commens.org/dictionary/term/abduction Abduction]" and "[http://www.commens.org/dictionary/term/retroduction Retroduction]." ''The Commens Dictionary: Peirce's Terms in His Own Words'' (new ed.) Retrieved 10 May 2020. {{Webarchive|url=https://web.archive.org/web/20140826115846/http://www.commens.org/dictionary/term/retroduction|date=26 August 2014}}. Retrieved 10 May 2020.
+</ref> Peirce said that to ''abduce'' a hypothetical explanation <math>a</math> from an observed surprising circumstance <math>b</math> is to surmise that <math>a</math> may be true because then <math>b</math> would be a matter of course.<ref name="HL">[[Charles Sanders Peirce|Peirce, Charles Sanders]]. 1903. "Lectures on Pragmatism." Pp. 14–212 in ''Collected Papers of Charles Sanders Peirce'' 5. [http://www.textlog.de/7664-2.html paras. 188–89].</ref> Thus, to abduce <math>a</math> from <math>b</math> involves determining that <math>a</math> is [[Necessity and sufficiency|sufficient (or nearly sufficient), but not necessary]], for <math>b</math>.<ref>[[Charles Sanders Peirce|Peirce, Charles Sanders]]. 1901. "On the Logic of Drawing History from Ancient Documents Especially from Testimonies." Pp. 164–231 in ''Collected Papers of Charles Sanders Peirce'' 7. para. 219.</ref><ref>[[Charles Sanders Peirce|Peirce, Charles Sanders]]. 1906. "[https://web.archive.org/web/20070905164710/http://www.existentialgraphs.com/peirceoneg/prolegomena.htm Prolegomena to an Apology for Pragmaticism]. ''[[The Monist]]'' 16(4):492–546. {{Doi|10.5840/monist190616436}}.</ref><ref>[[Charles Sanders Peirce|Peirce, Charles Sanders]]. 1913. "A Letter to F.A. Woods." ''Collected Papers of Charles Sanders Peirce'' 8. paras 385–88.</ref>
+
+While inductive and abductive inference are not part of logic proper, the methodology of logic has been applied to them with some degree of success.  For example, the notion of deductive validity (where an inference is deductively valid [[if and only if]] there is no possible situation in which all the premises are true but the conclusion false) exists in an analogy to the notion of inductive validity, or "strength", where an inference is inductively strong if and only if its premises give some degree of probability to its conclusion.  Whereas the notion of deductive validity can be rigorously stated for systems of formal logic in terms of the well-understood notions of [[semantics]], inductive validity requires us to define a reliable generalization of some set of observations. The task of providing this definition may be approached in various ways, some less formal than others; some of these definitions may use logical association [[rule induction]], while others may use [[mathematical model]]s of probability such as [[decision tree]]s.
+
+===Rival conceptions===
+{{Main|Conceptions of logic}}
+Logic arose (see below) from a concern with correctness of [[argumentation]]. Modern logicians usually wish to ensure that logic studies just those arguments that arise from appropriately general forms of inference. For example, Thomas Hofweber writes in the ''[[Stanford Encyclopedia of Philosophy]]'' that logic "does not, however, cover good reasoning as a whole. That is the job of the theory of [[rationality]]. Rather it deals with inferences whose validity can be traced back to the formal features of the representations that are involved in that inference, be they linguistic, mental, or other representations."<ref name="stanford-logic-onthology" />
+
+The idea that logic treats special forms of argument, deductive argument, rather than argument in general, has a history in logic that dates back at least to [[logicism]] in mathematics (19th and 20th centuries) and the advent of the influence of mathematical logic on philosophy. A consequence of taking logic to treat special kinds of argument is that it leads to identification of special kinds of truth, the logical truths (with logic equivalently being the study of logical truth), and excludes many of the original objects of study of logic that are treated as informal logic. [[Robert Brandom]] has argued against the idea that logic is the study of a special kind of logical truth, arguing that instead one can talk of the logic of [[material inference]] (in the terminology of [[Wilfred Sellars]]), with logic making explicit the commitments that were originally implicit in informal inference.<ref name="brandom-2000" />{{page needed|date=September 2016}}
+
+==History==
+{{Main|History of logic}}
+[[File:Aristotle Altemps Inv8575.jpg|thumb|150px|[[Aristotle]], 384–322&nbsp;BCE.]]
+Logic comes from the Greek word ''logos'', originally meaning "the word" or "what is spoken", but coming to mean "thought" or "reason". In the Western World, logic was first developed by [[Aristotle]], who called the subject 'analytics'.<ref name="achievement" /> [[Aristotelian logic]] became widely accepted in science and mathematics and remained in wide use in the West until the early 19th century.<ref name="mtu" /> Aristotle's system of logic was responsible for the introduction of [[hypothetical syllogism]],<ref name="google" /> [[Temporal logic|temporal]] [[modal logic]],<ref name="google1" /><ref name="google2" /> and [[Inductive reasoning|inductive logic]],<ref name="google3" /> as well as influential vocabulary such as [[terminology|terms]], [[predicable]]s, [[syllogism]]s and [[proposition]]s. There was also the rival [[Stoic logic]].
+
+In [[Europe]] during the later medieval period, major efforts were made to show that Aristotle's ideas were compatible with [[Christianity|Christian]] faith. During the [[High Middle Ages]], logic became a main focus of philosophers, who would engage in critical logical analyses of philosophical arguments, often using variations of the methodology of [[scholasticism]]. In 1323, [[William of Ockham]]'s influential ''[[Sum of Logic|Summa Logicae]]'' was released. By the 18th century, the structured approach to arguments had degenerated and fallen out of favour, as depicted in [[Ludvig Holberg|Holberg]]'s satirical play ''[[Erasmus Montanus]]''.
+The [[Logic in China|Chinese logical]] philosopher [[Gongsun Long]] ({{nowrap|c. 325–250 BCE}}) proposed the paradox "One and one cannot become two, since neither becomes two."<ref name="scribd.com"/><ref group="lower-roman">The four [[Catuṣkoṭi]] logical divisions are formally very close to the four opposed propositions of the Greek ''[[tetralemma]]'', which in turn are analogous to the four [[truth value]]s of modern [[relevance logic]].
+
+([[cf.]] [[Nuel Belnap|Belnap, Nuel.]] 1977. "A useful four-valued logic." In ''Modern Uses of Multiple-Valued Logic'', edited by Dunn and Eppstein. Boston: Reidel;
+
+Jayatilleke, K. N.. 1967. "The Logic of Four Alternatives." In ''Philosophy East and West''. [[University of Hawaii Press]].)</ref> In China, the tradition of scholarly investigation into logic, however, was repressed by the [[Qin dynasty]] following the legalist philosophy of [[Han Feizi]].
+
+In India, the [[Anviksiki]] school of logic was founded by [[Medhātithi]] (c. 6th century BCE).<ref>Vidyabhusana, S. C. 1971. ''A History of Indian Logic: Ancient, Mediaeval, and Modern Schools''. pp. 17–21.</ref> Innovations in the scholastic school, called [[Nyaya]], continued from ancient times into the early 18th century with the [[Navya-Nyāya]] school. By the 16th century, it developed theories resembling modern logic, such as [[Gottlob Frege]]'s "distinction between sense and reference of proper names" and his "definition of number", as well as the theory of "restrictive conditions for universals" anticipating some of the developments in modern [[set theory]].<ref group="lower-roman">Chakrabarti, Kisor Kumar. 1976. "Some Comparisons Between Frege's Logic and Navya-Nyaya Logic." ''[[Philosophy and Phenomenological Research]]'' 36(4):554–63. {{Doi|10.2307/2106873}} {{JSTOR|2106873}}.
+
+"This paper consists of three parts. The first part deals with Frege's distinction between sense and reference of proper names and a similar distinction in Navya-Nyaya logic. In the second part we have compared Frege's definition of number to the Navya-Nyaya definition of number. In the third part we have shown how the study of the so-called 'restrictive conditions for universals' in Navya-Nyaya logic anticipated some of the developments of modern set theory."</ref> Since 1824, Indian logic attracted the attention of many Western scholars, and has had an influence on important 19th-century logicians such as [[Charles Babbage]], [[Augustus De Morgan]], and [[George Boole]].<ref name="Indian logic: a reader" /> In the 20th century, Western philosophers like [[Stanislaw Schayer]] and Klaus Glashoff have explored Indian logic more extensively.
+
+The [[Syllogism|syllogistic]] logic developed by Aristotle predominated in the West until the mid-19th century, when interest in the [[foundations of mathematics]] stimulated the development of symbolic logic (now called [[mathematical logic]]). In 1854, George Boole published ''[[The Laws of Thought]]'',<ref>[[George Boole|Boole, George]]. 1854. ''[[The Laws of Thought|An Investigation of the Laws of Thought on Which are Founded the Mathematical Theories of Logic and Probabilities]].''</ref> introducing symbolic logic and the principles of what is now known as [[Boolean logic]]. In 1879, Gottlob Frege published ''[[Begriffsschrift]]'', which inaugurated modern logic with the invention of [[Quantification (logic)|quantifier]] notation, reconciling the Aristotelian and Stoic logics in a broader system, and solving such problems for which Aristotelian logic was impotent, such as the [[problem of multiple generality]]. From 1910 to 1913, [[Alfred North Whitehead]] and [[Bertrand Russell]] published ''[[Principia Mathematica]]''<ref name="Principia" /> on the foundations of mathematics, attempting to derive mathematical truths from [[axiom]]s and [[inference rule]]s in symbolic logic. In 1931, [[Gödel]] raised serious problems with the foundationalist program and logic ceased to focus on such issues.
+
+The development of logic since Frege, Russell, and Wittgenstein had a profound influence on the practice of philosophy and the perceived nature of philosophical problems (see [[analytic philosophy]]) and [[philosophy of mathematics]]. Logic, especially sentential logic, is implemented in computer [[Digital electronics|logic circuits]] and is fundamental to [[computer science]]. Logic is commonly taught by university philosophy, sociology, advertising and literature departments, often as a compulsory discipline.
+
+=={{vanchor|Types}}==
+===Syllogistic logic===
+{{main|Aristotelian logic}}
+[[File:Johannesmagistris-square.jpg|thumb|A depiction from the 15th century of the [[square of opposition]], which expresses the fundamental dualities of syllogistic.]]
+
+The ''[[Organon]]'' was [[Aristotle]]'s body of work on logic, with the ''[[Prior Analytics]]'' constituting the first explicit work in formal logic, introducing the syllogistic.<ref name="Aristotle" /> The parts of syllogistic logic, also known by the name [[term logic]], are the analysis of the judgements into propositions consisting of two terms that are related by one of a fixed number of relations, and the expression of inferences by means of [[syllogism]]s that consist of two propositions sharing a common term as premise, and a conclusion that is a proposition involving the two unrelated terms from the premises.
+
+Aristotle's work was regarded in classical times and from medieval times in Europe and the Middle East as the very picture of a fully worked out system. However, it was not alone: the [[Stoics]] proposed a system of [[propositional logic]] that was studied by medieval logicians. Also, the [[problem of multiple generality]] was recognized in medieval times. Nonetheless, problems with syllogistic logic were not seen as being in need of revolutionary solutions.
+
+Today, some academics claim that Aristotle's system is generally seen as having little more than historical value (though there is some current interest in extending term logics), regarded as made obsolete by the advent of propositional logic and the [[predicate calculus]]. Others use Aristotle in [[argumentation theory]] to help develop and critically question [[argumentation scheme]]s that are used in [[artificial intelligence]] and [[legal]] arguments.
+
+===Propositional logic===
+{{main|Propositional calculus}}
+A propositional calculus or logic (also a sentential calculus) is a formal system in which formulae representing propositions can be formed by combining [[atomic propositions]] using [[logical connectives]], and in which a system of formal proof rules establishes certain formulae as "theorems".  An example of a theorem of propositional logic is <math>A \rightarrow B \rightarrow A</math>, which says that if A holds, then B implies A.{{Citation needed|date=May 2020}}
+
+===Predicate logic===
+[[File:BS-12-Begriffsschrift Quantifier1-svg.svg|thumb|[[Gottlob Frege]]'s ''[[Begriffschrift]]'' introduced the notion of quantifier in a graphical notation, which here represents the judgement that <math>\forall x. F(x)</math> is true.]]
+{{main|Predicate logic}}
+Predicate logic is the generic term for symbolic formal systems such as [[first-order logic]], [[second-order logic]], [[many-sorted logic]], and [[infinitary logic]].  It provides an account of [[Quantifier (logic)|quantifiers]] general enough to express a wide set of arguments occurring in natural language. For example, [[Bertrand Russell]]'s famous [[barber paradox]], "there is a man who shaves all and only men who do not shave themselves" can be formalised by the sentence <math>(\exists x ) (\text{man}(x) \wedge (\forall y) (\text{man}(y) \rightarrow (\text{shaves}(x, y)  \leftrightarrow \neg \text{shaves}(y, y))))</math>, using the non-logical predicate <math>\text{man}(x)</math> to indicate that ''x'' is a man, and the non-logical relation <math>\text{shaves}(x, y)</math> to indicate that ''x'' shaves ''y''; all other symbols of the formulae are logical, expressing the universal and existential [[quantifier (logic)|quantifiers]], [[logical conjunction|conjunction]], [[Material conditional|implication]], [[negation]] and [[biconditional]].
+
+Whilst Aristotelian syllogistic logic specifies a small number of forms that the relevant part of the involved judgements may take, predicate logic allows sentences to be analysed into subject and argument in several additional ways—allowing predicate logic to solve the [[problem of multiple generality]] that had perplexed medieval logicians.
+
+The development of predicate logic is usually attributed to [[Gottlob Frege]], who is also credited as one of the founders of [[analytic philosophy]], but the formulation of predicate logic most often used today is the first-order logic presented in [[Principles of Mathematical Logic]] by [[David Hilbert]] and [[Wilhelm Ackermann]] in 1928. The analytical generality of predicate logic allowed the formalization of mathematics, drove the investigation of [[set theory]], and allowed the development of [[Alfred Tarski]]'s approach to [[model theory]]. It provides the foundation of modern [[mathematical logic]].
+
+Frege's original system of predicate logic was second-order, rather than first-order. [[Second-order logic]] is most prominently defended (against the criticism of [[Willard Van Orman Quine]] and others) by [[George Boolos]] and [[Stewart Shapiro]].
+
+===Modal logic===
+{{main|Modal logic}}
+In languages, [[Linguistic modality|modality]] deals with the phenomenon that sub-parts of a sentence may have their semantics modified by special verbs or modal particles. For example, "''We go to the games''" can be modified to give "''We should go to the games''", and "''We can go to the games''" and perhaps "''We will go to the games''". More abstractly, we might say that modality affects the circumstances in which we take an assertion to be satisfied. Confusing modality is known as the [[modal fallacy]].
+
+[[Aristotle]]'s logic is in large parts concerned with the theory of non-modalized logic. Although, there are passages in his work, such as the famous [[problem of future contingents|sea-battle argument]] in ''[[De Interpretatione]]'' § 9, that are now seen as anticipations of modal logic and its connection with [[potentiality]] and time, the earliest formal system of modal logic was developed by [[Avicenna]], who ultimately developed a theory of "[[Temporal logic|temporally]] [[Modal logic|modalized]]" syllogistic.<ref name="Britannica">{{Cite web|title=History of logic: Arabic logic|url=http://www.britannica.com/ebc/article-65928|archive-url=https://web.archive.org/web/20071012144108/http://www.britannica.com/ebc/article-65928|url-status=dead|archive-date=2007-10-12|website=[[Encyclopædia Britannica]]}}</ref>
+
+While the study of necessity and possibility remained important to philosophers, little logical innovation happened until the landmark investigations of [[C. I. Lewis]] in 1918, who formulated a family of rival axiomatizations of the [[Alethic modality|alethic modalities]]. His work unleashed a torrent of new work on the topic, expanding the kinds of modality treated to include [[deontic logic]] and [[epistemic logic]].  The seminal work of [[Arthur Prior]] applied the same formal language to treat [[temporal logic]] and paved the way for the marriage of the two subjects. [[Saul Kripke]] discovered (contemporaneously with rivals) his theory of [[Kripke semantics|frame semantics]], which revolutionized the formal technology available to modal logicians and gave a new [[graph theory|graph-theoretic]] way of looking at modality that has driven many applications in [[computational linguistics]] and [[computer science]], such as [[dynamic logic (modal logic)|dynamic logic]].
+
+===Informal reasoning and dialectic===
+{{main|Informal logic|Dialogical logic|Logic and dialectic}}
+The motivation for the study of logic in ancient times was clear: it is so that one may learn to distinguish good arguments from bad arguments, and so become more effective in argument and oratory, and perhaps also to become a better person. Half of the works of Aristotle's [[Organon]] treat inference as it occurs in an informal setting, side by side with the development of the syllogistic, and in the Aristotelian school, these informal works on logic were seen as complementary to Aristotle's treatment of [[rhetoric]].
+
+This ancient motivation is still alive, although it no longer takes centre stage in the picture of logic; typically [[dialectic]]al logic forms the heart of a course in [[critical thinking]], a compulsory course at many universities.  Dialectic has been linked to logic since ancient times, but it has not been until recent decades that European and American logicians have attempted to provide mathematical foundations for logic and dialectic by formalising dialectical logic. [[Dialectical logic]] is also the name given to the special treatment of dialectic in [[Hegel]]ian and [[Marx]]ist thought.  There have been pre-formal treatises on argument and dialectic, from authors such as [[Stephen Toulmin]] (''The Uses of Argument''), [[Nicholas Rescher]] (''Dialectics''),<ref>{{Cite journal |last=Rescher |first=Nicholas |date=1978 |title=Dialectics: A Controversy-Oriented Approach to the Theory of Knowledge |url=http://ojs.uwindsor.ca/ojs/leddy/index.php/informal_logic/article/view/2809 |journal=Informal Logic |volume=1 |issue=#3|doi=10.22329/il.v1i3.2809 }}</ref><ref>{{Cite journal |last=Hetherington |first=Stephen |date=2006 |title=Nicholas Rescher: Philosophical Dialectics |url=https://ndpr.nd.edu/news/25075-philosophical-dialectics-an-essay-on-metaphilosophy/ |journal=Notre Dame Philosophical Reviews |issue=2006.07.16}}</ref><ref>{{Cite book |last=Rescher |first=Nicholas |url=https://books.google.com/books?id=T65moyMMioYC |title=Reason, Method, and Value: A Reader on the Philosophy of Nicholas Rescher |date=2009 |publisher=Ontos Verlag |isbn=978-3-11-032905-6 |editor-last=Jacquette, Dale}}</ref> and van Eemeren and Grootendorst ([[Pragma-dialectics]]). Theories of [[defeasible reasoning]] can provide a foundation for the formalisation of dialectical logic and dialectic itself can be formalised as moves in a game, where an advocate for the truth of a proposition and an opponent argue. Such games can provide a formal [[game semantics]] for many logics.
+
+[[Argumentation theory]] is the study and research of informal logic, fallacies, and critical questions as they relate to every day and practical situations. Specific types of dialogue can be analyzed and questioned to reveal premises, conclusions, and fallacies. Argumentation theory is now applied in [[artificial intelligence]] and [[law]].
+
+===Mathematical logic===
+{{main|Mathematical logic}}
+Mathematical logic comprises two distinct areas of research: the first is the application of the techniques of formal logic to mathematics and mathematical reasoning, and the second, in the other direction, the application of mathematical techniques to the representation and analysis of formal logic.<ref name="Introduction to Elementary Mathematical Logic" />
+
+The earliest use of mathematics and [[geometry]] in relation to logic and philosophy goes back to the ancient Greeks such as [[Euclid]], [[Plato]], and [[Aristotle]].<ref name="The Cambridge Companion to Aristotle" /> Many other ancient and medieval philosophers applied mathematical ideas and methods to their philosophical claims.<ref name="Prior Analytics" />
+
+One of the boldest attempts to apply logic to mathematics was the [[logicism]] pioneered by philosopher-logicians such as [[Gottlob Frege]] and [[Bertrand Russell]]. Mathematical theories were supposed to be logical [[tautology (logic)|tautologies]], and the programme was to show this by means of a reduction of mathematics to logic.<ref name="Principia" /> The various attempts to carry this out met with failure, from the crippling of Frege's project in his ''Grundgesetze'' by [[Russell's paradox]], to the defeat of [[Hilbert's program]] by [[Gödel's incompleteness theorem]]s.
+
+Both the statement of Hilbert's program and its refutation by Gödel depended upon their work establishing the second area of mathematical logic, the application of mathematics to logic in the form of [[proof theory]].<ref name="Introduction to Mathematical Logic5" /> Despite the negative nature of the incompleteness theorems, [[Gödel's completeness theorem]], a result in [[model theory]] and another application of mathematics to logic, can be understood as showing how close logicism came to being true: every rigorously defined mathematical theory can be exactly captured by a first-order logical theory; Frege's [[proof calculus]] is enough to ''describe'' the whole of mathematics, though not ''equivalent'' to it.
+
+If proof theory and model theory have been the foundation of mathematical logic, they have been but two of the four pillars of the subject.<ref>Barwise (1982) divides the subject of mathematical logic into model theory, proof theory, set theory and recursion theory.</ref> [[Set theory]] originated in the study of the infinite by [[Georg Cantor]], and it has been the source of many of the most challenging and important issues in mathematical logic, from [[Cantor's theorem]], through the status of the [[Axiom of Choice]] and the question of the independence of the [[continuum hypothesis]], to the modern debate on [[large cardinal]] axioms.
+
+[[Recursion theory]] captures the idea of computation in logical and [[arithmetic]] terms; its most classical achievements are the undecidability of the [[Entscheidungsproblem]] by [[Alan Turing]], and his presentation of the [[Church–Turing thesis]].<ref name="Theory of computation: formal languages, automata, and complexity" /> Today recursion theory is mostly concerned with the more refined problem of [[complexity class]]es—when is a problem efficiently solvable?—and the classification of [[Turing degree|degrees of unsolvability]].<ref name="Theory of computation: formal languages, automata, and complexity6" />
+
+===Philosophical logic===
+{{main|Philosophical logic}}
+[[Philosophical logic]] deals with formal descriptions of ordinary, non-specialist [[Natural language|("natural") language]], that is strictly only about the arguments within philosophy's other branches. Most philosophers assume that the bulk of everyday<!--was: "normal" proper--> reasoning can be captured in logic if a method or methods to translate ordinary language into that logic can be found. Philosophical logic is essentially a continuation of the traditional discipline called "logic" before the invention of mathematical logic. Philosophical logic has a much greater concern with the connection between natural language and logic. As a result, philosophical logicians have contributed a great deal to the development of non-standard logics (e.g. [[free logic]]s, [[tense logic]]s) as well as various extensions of [[classical logic]] (e.g. [[modal logic]]s) and non-standard semantics for such logics (e.g. [[Saul Kripke|Kripke]]'s [[supervaluationism]] in the semantics of logic).
+
+Logic and the philosophy of language are closely related. Philosophy of language has to do with the study of how our language engages and interacts with our thinking. Logic has an immediate impact on other areas of study. Studying logic and the relationship between logic and ordinary speech can help a person better structure his own arguments and critique the arguments of others. Many popular arguments are filled with errors because so many people are untrained in logic and unaware of how to formulate an argument correctly.<ref>{{Citation |last=Goldman |first=Alvin I. |title=Epistemology and Cognition |url=https://books.google.com/books?id=9XwhBw2jMqMC&pg=PA293 |page=293 |year=1986 |publisher=Harvard University Press |isbn=978-0-674-25896-9 |quote=untrained subjects are prone to commit various sorts of fallacies and mistakes}}</ref><ref>{{Citation |title=Intelligence, Mind, and Reasoning: Structure and Development |url=https://books.google.com/books?id=HkukZOU2pzIC&pg=PA194 |volume=106 |page=194 |year=1994 |editor-last=Demetriou |editor-first=A. |series=Advances in Psychology |publisher=Elsevier |isbn=978-0-08-086760-1 |editor2-last=Efklides |editor2-first=A.}}</ref>
+
+===Computational logic===
+{{main|Computational logic|Logic in computer science}}
+[[File:Register transfer level - example toggler.svg|right|thumb|300px
+|A simple toggling circuit is expressed using a logic gate and a synchronous register.]]
+Logic cut to the heart of computer science as it emerged as a discipline: [[Alan Turing]]'s work on the ''[[Entscheidungsproblem]]'' followed from [[Kurt Gödel]]'s work on the [[incompleteness theorems]]. The notion of the general purpose computer that came from this work was of fundamental importance to the designers of the computer machinery in the 1940s.
+
+In the 1950s and 1960s, researchers predicted that when human knowledge could be expressed using logic with [[mathematical notation]], it would be possible to create a machine that mimics the problem-solving skills of a human being. This was more difficult than expected because of the complexity of human reasoning. In the summer of 1956, [[John McCarthy (computer scientist)|John McCarthy]], [[Marvin Minsky]], [[Claude Shannon]] and [[Nathaniel Rochester (computer scientist)|Nathan Rochester]] organized a conference on the subject of what they called "[[artificial intelligence]]" (a term coined by McCarthy for the occasion). Newell and Simon proudly presented the group with the [[Logic Theorist]] and were somewhat surprised when the program received a lukewarm reception.
+
+In [[logic programming]], a program consists of a set of axioms and rules. Logic programming systems such as [[Prolog]] compute the consequences of the axioms and rules in order to answer a query.
+
+Today, logic is extensively applied in the field of artificial intelligence, and this field provide a rich source of problems in formal and informal logic. [[Argumentation theory]] is one good example of how logic is being applied to artificial intelligence. The [[ACM Computing Classification System]] in particular regards:
+* Section F.3 on "Logics and meanings of programs" and F.4 on "Mathematical logic and formal languages" as part of the theory of computer science: this work covers [[formal semantics of programming languages]], as well as work of [[formal methods]] such as [[Hoare logic]];
+* [[Boolean logic]] as fundamental to computer hardware: particularly, the system's section B.2 on "[[Arithmetic and logic structures]]", relating to operatives [[logical conjunction|AND]], [[negation|NOT]], and [[logical disjunction|OR]];
+* Many fundamental logical formalisms are essential to section I.2 on artificial intelligence, for example [[modal logic]] and [[default logic]] in [[Knowledge representation formalisms and methods]], [[Horn clause]]s in logic programming, and [[description logic]].
+
+Furthermore, computers can be used as tools for logicians. For example, in symbolic logic and mathematical logic, proofs by humans can be computer-assisted. Using [[automated theorem proving]], the machines can find and check proofs, as well as work with proofs too lengthy to write out by hand.
+
+===Non-classical logic===
+{{Main|Non-classical logic}}
+The logics discussed above are all "[[Principle of bivalence|bivalent]]" or "two-valued"; that is, they are most naturally understood as dividing propositions into true and false propositions. [[Non-classical logic]]s are those systems that reject various rules of [[Classical logic]].
+
+Hegel developed his own [[Hegelian dialectic|dialectic logic]] that extended [[Immanuel Kant|Kant]]'s transcendental logic but also brought it back to ground by assuring us that "neither in heaven nor in earth, neither in the world of mind nor of nature, is there anywhere such an abstract 'either–or' as the understanding maintains. Whatever exists is concrete, with difference and opposition in itself".<ref name="philosophical" />
+
+In 1910, [[Nicolai A. Vasiliev]] extended the law of excluded middle and the law of contradiction and proposed the law of excluded fourth and logic tolerant to contradiction.<ref name="Brenner2008" /> In the early 20th century [[Jan Łukasiewicz]] investigated the extension of the traditional true/false values to include a third value, "possible" (or an indeterminate, a hypothesis) so inventing [[ternary logic]], the first [[multi-valued logic]] in the Western tradition.<ref>{{Citation |last=Zegarelli |first=Mark |title=Logic For Dummies |url=https://books.google.com/books?id=xm0-0Rs2GVoC&pg=PA30 |page=30 |year=2010 |publisher=John Wiley & Sons |isbn=978-1-118-05307-2}}</ref> 
+A minor modification of the ternary logic was later introduced in a sibling ternary logic model proposed by [[Stephen Cole Kleene]]. Kleene's system differs from the Łukasiewicz's logic with respect to an outcome of the implication. The former assumes that the operator of [[material conditional|implication]] between two hypotheses produces a hypothesis.
+
+Logics such as [[fuzzy logic]] have since been devised with an infinite number of "degrees of truth", represented by a [[real number]] between 0 and 1.<ref name="stanford" />
+
+[[Intuitionistic logic]] was proposed by [[L.E.J. Brouwer]] as the correct logic for reasoning about mathematics, based upon his rejection of the [[law of the excluded middle]] as part of his [[intuitionism]]. Brouwer rejected formalization in mathematics, but his student [[Arend Heyting]] studied intuitionistic logic formally, as did [[Gerhard Gentzen]]. Intuitionistic logic is of great interest to computer scientists, as it is a [[constructive logic]] and sees many applications, such as extracting verified programs from proofs and influencing the design of [[programming language]]s through the [[formulae-as-types correspondence]].
+
+[[Modal logic]] is not truth conditional, and so it has often been proposed as a non-classical logic. However, modal logic is normally formalized with the principle of the excluded middle, and its [[relational semantics]] is bivalent, so this inclusion is disputable.
+
+==Controversies==
+==="Is Logic Empirical?"===
+{{details|Is Logic Empirical?}}
+What is the [[Epistemology|epistemological]] status of the [[Classical logic|laws of logic]]? What sort of argument is appropriate for criticizing purported principles of logic? In an influential paper entitled "[[Is Logic Empirical?]]"<ref name="Is Logic Empirical?" /> [[Hilary Putnam]], building on a suggestion of [[W. V. Quine]], argued that in general the facts of propositional logic have a similar epistemological status as facts about the physical universe, for example as the laws of [[mechanics]] or of [[general relativity]], and in particular that what physicists have learned about quantum mechanics provides a compelling case for abandoning certain familiar principles of classical logic: if we want to be [[philosophical realism|realists]] about the physical phenomena described by quantum theory, then we should abandon the [[principle of distributivity]], substituting for classical logic the [[quantum logic]] proposed by [[Garrett Birkhoff]] and [[John von Neumann]].<ref name="The Logic of Quantum Mechanics" />
+
+Another paper of the same name by [[Michael Dummett]] argues that Putnam's desire for realism mandates the law of distributivity.<ref name="Truth and Other Enigmas" /> Distributivity of logic is essential for the realist's understanding of how propositions are true of the world in just the same way as he has argued the principle of bivalence is. In this way, the question, "Is Logic Empirical?" can be seen to lead naturally into the fundamental controversy in [[metaphysics]] on [[realism versus anti-realism]].
+
+===Implication: strict or material===
+{{main|Paradoxes of material implication}}
+The notion of implication formalized in classical logic does not comfortably translate into natural language by means of "if&nbsp;... then&nbsp;...", due to a number of problems called the [[paradoxes of material implication]].
+
+The first class of paradoxes involves counterfactuals, such as ''If the moon is made of green cheese, then 2+2=5'', which are puzzling because natural language does not support the [[principle of explosion]]. Eliminating this class of paradoxes was the reason for [[C. I. Lewis]]'s formulation of [[strict implication]], which eventually led to more radically revisionist logics such as [[relevance logic]].
+
+The second class of paradoxes involves redundant premises, falsely suggesting that we know the succedent because of the antecedent: thus "if that man gets elected, granny will die" is materially true since granny is mortal, regardless of the man's election prospects. Such sentences violate the [[Gricean maxim]] of relevance, and can be modelled by logics that reject the principle of [[monotonicity of entailment]], such as relevance logic.
+
+===Tolerating the impossible===
+{{main|Paraconsistent logic}}
+[[Georg Wilhelm Friedrich Hegel]] was deeply critical of any simplified notion of the [[law of non-contradiction]]. It was based on [[Gottfried Wilhelm Leibniz]]'s idea that this law of logic also requires a sufficient ground to specify from what point of view (or time) one says that something cannot contradict itself. A building, for example, both moves and does not move; the ground for the first is our solar system and for the second the earth. In Hegelian dialectic, the law of non-contradiction, of identity, itself relies upon difference and so is not independently assertable.
+
+Closely related to questions arising from the paradoxes of implication comes the suggestion that logic ought to tolerate [[inconsistency]]. [[Relevance logic]] and [[paraconsistent logic]] are the most important approaches here, though the concerns are different: a key consequence of [[classical logic]] and some of its rivals, such as [[intuitionistic logic]], is that they respect the [[principle of explosion]], which means that the logic collapses if it is capable of deriving a contradiction. [[Graham Priest]], the main proponent of [[dialetheism]], has argued for paraconsistency on the grounds that there are in fact, true contradictions.<ref name="stanford7" />{{clarify|this is a provocative statement that deserves an inline example or Wikipedia explanation of some sort|date=October 2016}}
+
+===Rejection of logical truth===
+The philosophical vein of various kinds of skepticism contains many kinds of doubt and rejection of the various bases on which logic rests, such as the idea of logical form, correct inference, or meaning, typically leading to the conclusion that there are no [[logical truth]]s. This is in contrast with the usual views in [[philosophical skepticism]], where logic directs skeptical enquiry to doubt received wisdoms, as in the work of [[Sextus Empiricus]].
+
+[[Friedrich Nietzsche]] provides a strong example of the rejection of the usual basis of logic: his radical rejection of idealization led him to reject truth as a "...&nbsp;mobile army of metaphors, metonyms, and anthropomorphisms—in short&nbsp;... metaphors which are worn out and without sensuous power; coins which have lost their pictures and now matter only as metal, no longer as coins".<ref name="nietzsche" /> His rejection of truth did not lead him to reject the idea of either inference or logic completely, but rather suggested that "logic [came] into existence in man's head [out] of illogic, whose realm originally must have been immense. Innumerable beings who made inferences in a way different from ours perished".<ref name="nietzsche8" /> Thus there is the idea that logical inference has a use as a tool for human survival, but that its existence does not support the existence of truth, nor does it have a reality beyond the instrumental: "Logic, too, also rests on assumptions that do not correspond to anything in the real world".<ref name="nietzsche9" />
+
+This position held by Nietzsche however, has come under extreme scrutiny for several reasons. Some philosophers, such as [[Jürgen Habermas]], claim his position is self-refuting—and accuse Nietzsche of not even having a coherent perspective, let alone a theory of knowledge.<ref name="nietzsche10" /> [[György Lukács|Georg Lukács]], in his book ''The Destruction of Reason'', asserts that, "Were we to study Nietzsche's statements in this area from a logico-philosophical angle, we would be confronted by a dizzy chaos of the most lurid assertions, arbitrary and violently incompatible."<ref name="marxists" /> [[Bertrand Russell]] described Nietzsche's irrational claims with "He is fond of expressing himself paradoxically and with a view to shocking conventional readers" in his book ''A History of Western Philosophy''.<ref>{{Citation |last=Russell |first=Bertrand |title=A History of Western Philosophy And Its Connection with Political and Social Circumstances from the Earliest Times to the Present Day |url=http://www.ntslibrary.com/PDF%20Books/History%20of%20Western%20Philosophy.pdf/ |page=762|year=1945 |archive-url=https://web.archive.org/web/20140528221822/http://www.ntslibrary.com/PDF%20Books/History%20of%20Western%20Philosophy.pdf |publisher=Simon and Schuster |archive-date=28 May 2014 |url-status=dead}}</ref>
+
+==See also==
+{{Portal|Philosophy}}
+{{Wikipedia books}}
+{{Columns-list|
+* {{annotated link|Argument}}
+* {{annotated link|Argumentation theory}}
+* {{annotated link|Critical thinking}}
+* {{annotated link|Digital electronics}} (also known as ''[[digital logic]]'' or [[logic gate]]s)
+* {{annotated link|Fallacies}}
+* {{annotated link|List of fallacies}}
+* {{annotated link|List of logicians}}
+* {{annotated link|List of logic journals}}
+* {{annotated link|List of logic symbols}}
+* {{annotated link|Logic puzzle}}
+* {{annotated link|Mathematics}}
+** {{annotated link|List of mathematics articles}}
+** {{annotated link|Outline of mathematics}}
+* {{annotated link|Metalogic}}
+* {{annotated link|Outline of logic}}
+* {{annotated link|Philosophy}}
+** {{annotated link|List of philosophy topics}}
+** {{annotated link|Outline of philosophy}}
+* {{annotated link|Logos}}
+* {{annotated link|Logical reasoning}}
+* {{annotated link|Reason}}
+* {{annotated link|Truth}}
+* {{annotated link|Vector logic}}
+}}
+
+==References==
+
+=== Notes ===
+{{Reflist|group=lower-roman}}
+
+=== Citations ===
+{{Reflist|30em|refs=
+<ref name="achievement">E.g., Kline (1972, p. 53) wrote "A major achievement of Aristotle was the founding of the science of logic".</ref>
+<!--
+<ref name="Advances in Argumentation Theory and Research">{{Cite book |title=Advances in Argumentation Theory and Research |publisher=[[Southern Illinois University Press]] |year=1983 |isbn=978-0-8093-1050-0 |editor-last=Cox |editor-first=J. Robert |editor-last2=Willard |editor-first2=Charles Arthur |editor-link2=Charles Arthur Willard}}</ref>-->
+
+<!-- <ref name="argumentative">"possessed of reason, intellectual, dialectical, argumentative", also related to [[wikt:λόγος|λόγος]] (''logos''), "word, thought, idea, argument, account, reason, or principle" (Liddell & Scott 1999; Online Etymology Dictionary 2001).</ref> -->
+
+<ref name="Aristotle">{{Cite book |last=Łukasiewicz |first=Jan |title=Aristotle's syllogistic from the standpoint of modern formal logic |publisher=Oxford University Press |year=1957 |isbn=978-0-19-824144-7 |edition=2nd |page=7 |author-link=Jan Łukasiewicz}}</ref>
+
+<!--ref name="Aristotle">{{Cite web |url=http://www.britannica.com/EBchecked/topic/346217/history-of-logic/65920/Aristotle |title=Aristotle |website=[[Encyclopædia Britannica]]}}</ref-->
+
+<ref name="Bergmann, Merrie 2009">{{Cite book |last1=Bergmann |first1=Merrie |title=The Logic Book |last2=Moor |first2=James |last3=Nelson |first3=Jack |publisher=McGraw-Hill |year=2009 |isbn=978-0-07-353563-0 |edition=Fifth |location=New York, NY}}</ref>
+
+<ref name="brandom-2000">{{Cite book |last=Brandom |first=Robert |title=Articulating Reasons |publisher=Harvard University Press |year=2000 |isbn=978-0-674-00158-9 |location=Cambridge, MA}}</ref>
+
+<ref name="Brenner2008">{{Cite book |last=Joseph E. Brenner |url=https://books.google.com/books?id=Jnj5E6C9UwsC&pg=PA28 |title=Logic in Reality |date=3 August 2008 |publisher=Springer |isbn=978-1-4020-8374-7 |pages=28–30 |access-date=9 April 2012}}</ref>
+
+<!--<ref name="Chakrabarti">{{Cite journal |last=Kisor Kumar Chakrabarti |date=June 1976 |title=Some Comparisons Between Frege's Logic and Navya-Nyaya Logic |journal=Philosophy and Phenomenological Research |volume=36 |issue=4 |pages=554–563 |doi=10.2307/2106873 |jstor=2106873 |quote=This paper consists of three parts. The first part deals with Frege's distinction between sense and reference of proper names and a similar distinction in Navya-Nyaya logic. In the second part we have compared Frege's definition of number to the Navya-Nyaya definition of number. In the third part we have shown how the study of the so-called 'restrictive conditions for universals' in Navya-Nyaya logic anticipated some of the developments of modern set theory.}}</ref> -->
+
+<ref name="google">Jonathan Lear (1986). "''[https://books.google.com/books?id=lXI7AAAAIAAJ&pg=PA34&dq&hl=en#v=onepage&q=&f=false Aristotle and Logical Theory]''". [[Cambridge University Press]]. p. 34. {{isbn|0-521-31178-0}}</ref>
+
+<ref name="google1">Simo Knuuttila (1981). "''[https://books.google.com/books?id=iCCUF_OtA8AC&pg=PA71&dq&hl=en#v=onepage&q=&f=false Reforging the great chain of being: studies of the history of modal theories]''". Springer Science & Business. p. 71. {{isbn|90-277-1125-9}}</ref>
+
+<ref name="google2">Michael Fisher, Dov M. Gabbay, Lluís Vila (2005). "''[https://books.google.com/books?id=Ajsvo6jWNhgC&pg=PA119&dq&hl=en#v=onepage&q=&f=false Handbook of temporal reasoning in artificial intelligence]''".  Elsevier. p. 119. {{isbn|0-444-51493-7}}</ref>
+
+<ref name="google3">Harold Joseph Berman (1983). "''[https://books.google.com/books?id=9-8fIBVgCQYC&pg=PA133&dq&hl=en#v=onepage&q=&f=false Law and revolution: the formation of the Western legal tradition]''". [[Harvard University Press]]. p. 133. {{isbn|0-674-51776-8}}</ref>
+
+<!-- Unused citation <ref name="google4">Peter Thomas Geach (1980). "''[https://books.google.com/books?id=XCUrx6WGgrwC&pg=PA316&dq&hl=en#v=onepage&q=&f=false Logic Matters]''". [[University of California Press]]. p. 316. {{isbn|0-520-03847-9}}</ref> -->
+
+<ref name="Hamilton">For a more modern treatment, see {{Cite book |last=Hamilton |first=A.G. |url=https://archive.org/details/logicformathemat0000hami |title=Logic for Mathematicians |publisher=Cambridge University Press |year=1980 |isbn=978-0-521-29291-7 |url-access=registration}}</ref>
+
+<ref name="Indian logic: a reader">{{Cite book |last=Jonardon Ganeri |title=Indian logic: a reader |publisher=[[Routledge]] |year=2001 |isbn=978-0-7007-1306-6 |pages=vii, 5, 7}}</ref>
+
+<ref name="Introduction to Elementary Mathematical Logic">{{Cite book |last=Stolyar |first=Abram A. |title=Introduction to Elementary Mathematical Logic |publisher=Dover Publications |year=1983 |isbn=978-0-486-64561-2 |page=3}}</ref>
+
+<ref name="Introduction to Mathematical Logic">{{Cite book |last=Mendelson |first=Elliott |title=Introduction to Mathematical Logic |publisher=Van Nostrand |year=1964 |isbn=978-0-412-80830-2 |chapter=Quantification Theory: Completeness Theorems}}</ref>
+
+<ref name="Introduction to Mathematical Logic5">{{Cite book |last=Mendelson |first=Elliott |title=Introduction to Mathematical Logic |publisher=Wadsworth & Brooks/Cole Advanced Books & Software |year=1964 |location=Monterey, Calif. |chapter=Formal Number Theory: Gödel's Incompleteness Theorem |oclc=13580200}}</ref>
+
+<ref name="Is Logic Empirical?">{{Cite journal |last=Putnam |first=H. |author-link=Hilary Putnam |year=1969 |title=Is Logic Empirical? |journal=Boston Studies in the Philosophy of Science |volume=5|pages=216–241 |doi=10.1007/978-94-010-3381-7_5 |isbn=978-94-010-3383-1 }}</ref>
+
+<ref name="marxists">{{Cite web |url=http://www.marxists.org/archive/lukacs/works/destruction-reason/ch03.htm |title=The Destruction of Reason by Georg Lukács 1952 |last=Georg Lukács |publisher=Marxists.org |access-date=2013-06-16}}</ref>
+
+<ref name="mtu">"[http://chemistry.mtu.edu/%7Epcharles/SCIHISTORY/aristotle.html Aristotle] {{Webarchive|url=https://web.archive.org/web/20100607132121/http://chemistry.mtu.edu/%7Epcharles/SCIHISTORY/aristotle.html |date=7 June 2010 }}", MTU Department of Chemistry.</ref>
+
+<ref name="nietzsche">Nietzsche, 1873, [[On Truth and Lies in a Nonmoral Sense]].</ref>
+
+<ref name="nietzsche10">Babette Babich, Habermas, Nietzsche, and Critical Theory</ref>
+
+<ref name="nietzsche8">Nietzsche, 1882, ''[[The Gay Science]]''.</ref>
+
+<ref name="nietzsche9">Nietzsche, 1878, ''[[Human, All Too Human]]''</ref>
+
+<ref name="philosophical">{{Cite book |last=Hegel |first=G.W.F |title=Philosophy of Mind |title-link=Philosophy of Mind |publisher=Clarendon Press |others=trans. [[William Wallace (Scottish philosopher)|William Wallace]] |year=1971 |isbn=978-0-19-875014-7 |series=Encyclopedia of the Philosophical Sciences |location=Oxford |page=[https://archive.org/details/hegelsphilosophy00hege/page/174 174] |author-link=Georg Wilhelm Friedrich Hegel |orig-year=1817}}</ref>
+
+<ref name="Principia">{{Cite book |last1=Whitehead |first1=Alfred North |title=Principia Mathematica to *56 |title-link=Principia Mathematica |last2=Russell |first2=Bertrand |publisher=[[Cambridge University Press]] |year=1967 |isbn=978-0-521-62606-4 |author-link=Alfred North Whitehead |author-link2=Bertrand Russell}}</ref>
+
+<ref name="Prior Analytics">{{Cite book |last=Aristotle |title=Prior Analytics |publisher=Hackett Publishing Co. |year=1989 |isbn=978-0-87220-064-7 |page=115 |author-link=Aristotle}}</ref>
+
+<!-- <ref name="propositions">The four Catuṣkoṭi logical divisions are formally very close to the four opposed propositions of the Greek [[tetralemma]], which in turn are analogous to the four [[truth value]]s of modern [[relevance logic]] Cf. Belnap (1977); Jayatilleke, K.N., (1967, The logic of four alternatives, in ''Philosophy East and West'', University of Hawaii Press).</ref> -->
+
+<ref name="stanford-logic-onthology">{{Cite book |last=Hofweber |first=T. |title=Stanford Encyclopedia of Philosophy |year=2004 |editor-last=Zalta |editor-first=Edward N |editor-link=Edward N. Zalta |chapter=Logic and Ontology |chapter-url=http://plato.stanford.edu/entries/logic-ontology}}</ref>
+
+<ref name="stanford">{{Cite book |last=Hájek |first=Petr |title=Stanford Encyclopedia of Philosophy |title-link=Stanford Encyclopedia of Philosophy |year=2006 |editor-last=Zalta |editor-first=Edward N. |editor-link=Edward N. Zalta |chapter=Fuzzy Logic |author-link=Petr Hájek |chapter-url=http://plato.stanford.edu/entries/logic-fuzzy/}}</ref>
+
+<ref name="stanford7">{{Cite book |last=Priest |first=Graham |title=Stanford Encyclopedia of Philosophy |title-link=Stanford Encyclopedia of Philosophy |year=2008 |editor-last=Zalta |editor-first=Edward N. |editor-link=Edward N. Zalta |chapter=Dialetheism |author-link=Graham Priest |chapter-url=http://plato.stanford.edu/entries/dialetheism}}</ref>
+
+<ref name="The Basic Works">{{Cite book |last=Aristotle |title=The Basic Works |publisher=Modern Library |year=2001 |isbn=978-0-375-75799-0 |editor-last=Mckeon |editor-first=Richard |chapter=[[Posterior Analytics]] |author-link=Aristotle}}</ref>
+
+<ref name="The Cambridge Companion to Aristotle">{{Cite book |last=Barnes |first=Jonathan |title=The Cambridge Companion to Aristotle |publisher=Cambridge University Press |year=1995 |isbn=978-0-521-42294-9 |page=27}}</ref>
+
+<ref name="The Logic of Quantum Mechanics">{{Cite journal |last1=Birkhoff |first1=G. |last2=von Neumann |first2=J. |author-link2=John von Neumann |year=1936 |title=The Logic of Quantum Mechanics |journal=[[Annals of Mathematics]] |volume=37 |issue=4 |pages=823–843 |doi=10.2307/1968621 |jstor=1968621 |authorlink1=Garrett Birkhoff}}</ref>
+
+<ref name="Theory of computation: formal languages, automata, and complexity">{{Cite book |last=Brookshear |first=J. Glenn |title=Theory of computation: formal languages, automata, and complexity |publisher=Benjamin/Cummings Pub. Co. |year=1989 |isbn=978-0-8053-0143-4 |location=Redwood City, Calif. |chapter=Computability: Foundations of Recursive Function Theory}}</ref>
+
+<ref name="Theory of computation: formal languages, automata, and complexity6">{{Cite book |last=Brookshear |first=J. Glenn |title=Theory of computation: formal languages, automata, and complexity |publisher=Benjamin/Cummings Pub. Co. |year=1989 |isbn=978-0-8053-0143-4 |location=Redwood City, Calif. |chapter=Complexity}}</ref>
+
+<ref name="Truth and Other Enigmas">{{Cite book |last=Dummett |first=M. |title=Truth and Other Enigmas |year=1978 |isbn=978-0-674-91076-8 |chapter=Is Logic Empirical? |author-link=Michael Dummett}}</ref>
+}}
+
+===Bibliography===
+{{Refbegin}}
+* [[Jon Barwise|Barwise, J.]] (1982). ''Handbook of Mathematical Logic''.  Elsevier.  {{isbn|978-0-08-093364-1}}.
+* [[Nuel Belnap|Belnap, N.]] (1977). "A useful four-valued logic".  In Dunn & Eppstein, ''Modern uses of multiple-valued logic''.  Reidel: Boston.
+* [[Józef Maria Bocheński|Bocheński, J.M.]] (1959).  ''A précis of [[mathematical logic]]''.  Translated from the French and German editions by Otto Bird.  D. Reidel, Dordrecht, South Holland.
+* [[Józef Maria Bocheński|Bocheński, J.M.]] (1970).  ''A history of [[formal logic]]''.  2nd Edition.  Translated and edited from the German edition by Ivo Thomas.  Chelsea Publishing, New York.
+* {{Cite book |last=Brookshear |first=J. Glenn |title=Theory of computation: formal languages, automata, and complexity |publisher=Benjamin/Cummings Pub. Co. |year=1989 |isbn=978-0-8053-0143-4 |location=Redwood City, Calif.}}
+* Cohen, R.S, and Wartofsky, M.W. (1974). ''Logical and Epistemological Studies in Contemporary Physics''. Boston Studies in the Philosophy of Science. D. Reidel Publishing Company: Dordrecht, Netherlands.  {{isbn|90-277-0377-9}}.
+* Finkelstein, D. (1969). "Matter, Space, and Logic". in R.S. Cohen and M.W. Wartofsky (eds. 1974).
+* [[Dov Gabbay|Gabbay, D.M.]], and Guenthner, F. (eds., 2001–2005). ''Handbook of Philosophical Logic''. 13 vols., 2nd edition. Kluwer Publishers: Dordrecht.
+* [[Susan Haack|Haack, Susan]] (1996).'' Deviant Logic, Fuzzy Logic:  Beyond the Formalism'', University of Chicago Press.
+* {{Cite web |url=http://www.etymonline.com/index.php?term=logic |title=Logic |last=Harper |first=Robert |year=2001 |website=[[Online Etymology Dictionary]] |access-date=8 May 2009}}
+* [[David Hilbert|Hilbert, D.]], and [[Wilhelm Ackermann|Ackermann, W]], (1928). ''Grundzüge der theoretischen Logik'' (''[[Principles of Mathematical Logic]]''). Springer-Verlag. {{OCLC|2085765}}
+* [[Wilfred Hodges|Hodges, W.]] (2001). ''Logic.  An introduction to Elementary Logic'', Penguin Books.
+* Hofweber, T. (2004), [http://plato.stanford.edu/entries/logic-ontology/ Logic and Ontology]. ''[[Stanford Encyclopedia of Philosophy]]''. [[Edward N. Zalta]] (ed.).
+* Hughes, R.I.G. (1993, ed.). ''A Philosophical Companion to First-Order Logic''. Hackett Publishing.
+* {{Cite book |last=Kline |first=Morris |title=Mathematical Thought From Ancient to Modern Times |publisher=Oxford University Press |year=1972 |isbn=978-0-19-506135-2}}
+* [[William Kneale (logician)|Kneale, William]], and Kneale, Martha, (1962). ''The Development of Logic''. Oxford University Press, London, UK.
+* {{Cite web |url=http://www.perseus.tufts.edu/cgi-bin/ptext?doc=Perseus%3Atext%3A1999.04.0057%3Aentry%3D%2363716 |title=Logikos |last1=Liddell |first1=Henry George |authorlink=Henry Liddell |last2=Scott |first2=Robert |authorlink2=Robert Scott (philologist) |website=[[A Greek-English Lexicon]] |publisher=[[Perseus Project]] |access-date=8 May 2009}}
+* [[Elliott Mendelson|Mendelson, Elliott]], (1964). ''Introduction to Mathematical Logic''. Wadsworth & Brooks/Cole Advanced Books & Software: Monterey, Calif. {{OCLC| 13580200}}
+* [[Barry Smith (ontologist)|Smith, B.]] (1989). "Logic and the Sachverhalt". ''The Monist'' 72(1): 52–69.
+* [[Alfred North Whitehead|Whitehead, Alfred North]] and [[Bertrand Russell]] (1910). ''[[Principia Mathematica]]''. Cambridge University Press: Cambridge, England. {{OCLC|1041146}}
+{{Refend}}
+
+==External links==
+{{Sister project links|Logic}}
+{{Library resources box}}
+* {{PhilPapers|category|logic-and-philosophy-of-logic}}
+* {{InPho|taxonomy|2245}}
+* {{cite IEP |url-id=category/s-l-m/logic/ |title=Logic}}
+* {{springer|title=Logical calculus|id=p/l060690}}
+* [https://docs.google.com/document/d/1DhtRAPcMwJmiQnbdmFcHWaOddQ7kuqqDnWp2LZcGlnY/edit?usp=sharing An Outline for Verbal Logic]
+* Introductions and tutorials
+** {{cite web|url=http://www.galilean-library.org/manuscript.php?postid=43782|archive-url=https://web.archive.org/web/20080403145334/http://www.galilean-library.org/manuscript.php?postid=43782|url-status=dead|archive-date=2008-04-03|title=An Introduction to Philosophical Logic, by Paul Newall}} aimed at beginners.
+** [http://www.fecundity.com/logic/ forall x: an introduction to formal logic], by [[P.D. Magnus]], covers sentential and quantified logic.
+** [https://web.archive.org/web/20080521095350/http://www.filozofia.uw.edu.pl/kpaprzycka/Publ/xLogicSelfTaught.html Logic Self-Taught: A Workbook] (originally prepared for on-line logic instruction).
+*** [[Nicholas Rescher]]. (1964). ''Introduction to Logic'', St. Martin's Press.
+* Essays
+** [https://web.archive.org/web/20061015094223/http://durendal.org:8080/lcsl/ "Symbolic Logic"] and [https://www.gutenberg.org/ebooks/4763 "The Game of Logic"], [[Lewis Carroll]], 1896.
+** [http://etext.lib.virginia.edu/DicHist/analytic/anaVII.html Math & Logic: The history of formal mathematical, logical, linguistic and methodological ideas.] In ''The Dictionary of the History of Ideas.''
+* Online Tools
+** [https://web.archive.org/web/20150515000453/http://www.thefirstscience.org/syllogistic-machine Interactive Syllogistic Machine] A web-based syllogistic machine for exploring fallacies, figures, terms, and modes of syllogisms.
+** [http://somerby.net/mack/logic/  A Logic Calculator] A web-based application for evaluating simple statements in symbolic logic.
+* Reference material
+** [http://www.earlham.edu/~peters/courses/log/transtip.htm Translation Tips], by Peter Suber, for translating from English into logical notation.
+** [http://www.ontology.co/history-of-logic.htm Ontology and History of Logic. An Introduction] with an annotated bibliography.
+* Reading lists
+** The [http://www.ucl.ac.uk/philosophy/LPSG/ London Philosophy Study Guide] offers many suggestions on what to read, depending on the student's familiarity with the subject:
+*** [http://www.ucl.ac.uk/philosophy/LPSG/L&M.htm Logic & Metaphysics]
+*** [http://www.ucl.ac.uk/philosophy/LPSG/SetTheory.htm Set Theory and Further Logic]
+*** [http://www.ucl.ac.uk/philosophy/LPSG/MathLogic.htm Mathematical Logic]
+* {{librivox book | title=Categories | author=ARISTOTLE}}
+
+{{Logic}}
+{{Philosophy topics}}
+{{Authority control}}
+
+[[Category:Logic| ]]
+[[Category:Abstraction]]
+[[Category:Critical thinking]]
+[[Category:Formal sciences]]
+[[Category:History of education]]
+[[Category:History of ideas]]
+[[Category:History of logic]]
+[[Category:History of mathematics]]
+[[Category:History of philosophy]]
+[[Category:History of science]]
+[[Category:Mind]]
+[[Category:Philosophical logic]]
+[[Category:Philosophy]]
+[[Category:Philosophy of logic]]
+[[Category:Reasoning]]
+[[Category:Thought]]

@@ -1,0 +1,112 @@
+{{More footnotes|date=October 2010}} 
+In [[credibility theory]], a branch of study in [[actuarial science]], the '''Bühlmann model''' is a [[random effects model]] (or "variance components model" or [[hierarchical linear model]]) used in to determine the appropriate [[Insurance premium|premium]] for a group of insurance contracts. The model is named after Hans Bühlmann who first published a description in 1967.<ref>{{cite journal | last = Bühlmann | first = Hans | year = 1967 | title = Experience rating and credibility | url = http://www.casact.org/library/astin/vol4no3/199.pdf | publisher = ASTIN Bulletin | volume = 4 | issue = 3 | pages = 99&ndash;207}}</ref>
+
+==Model description==
+
+Consider ''i'' risks which generate random losses for which historical data of ''m'' recent claims are available (indexed by ''j''). A premium for the ''i''th risk is to be determined based on the expected value of claims. A linear estimator which minimizes the mean square error is sought. Write
+
+* ''X''<sub>ij</sub> for the ''j''-th claim on the ''i''-th risk (we assume that all claims for ''i''-th risk are [[independent and identically distributed]])
+* <math>\scriptstyle \bar{X}_i=\frac{1}{m}\sum_{j=1}^{m}X_{ij}</math> for the average value.
+* <math>\Theta_i</math> - the parameter for the distribution of the i-th risk
+* <math>m(\vartheta)= \operatorname E\left [ X_{ij} |\Theta_i = \vartheta\right ]</math>
+* <math>\Pi=\operatorname E(m(\vartheta)|X_{i1},X_{i2},...X_{im})</math> - premium for the i-th risk
+* <math>\mu = \operatorname E(m(\vartheta))</math>
+* <math>s^2(\vartheta)=\operatorname{Var}\left [ X_{ij} |\Theta_i = \vartheta\right ]</math>
+* <math>\sigma^2=\operatorname E\left [ s^2(\vartheta) \right ]</math>
+* <math>v^2=\operatorname{Var}\left [ m(\vartheta) \right ]</math>
+
+Note: <math>m(\vartheta)</math> and <math>s^2(\vartheta)</math> are functions of random parameter <math>\vartheta</math>
+
+The Bühlmann model is the solution for the problem: 
+:<math>\underset{a_{i0},a_{i1},...,a_{im}}{\operatorname{arg\,min}} \operatorname E\left [  \left ( a_{i0}+\sum_{j=1}^{m}a_{ij}X_{ij}-\Pi \right)^2\right ]</math>
+
+where <math>a_{i0}+\sum_{j=1}^{m}a_{ij}X_{ij}</math> is the estimator of premium <math>\Pi</math> and [[arg min]] represents the parameter values which minimize the expression.
+
+==Model solution==
+
+The solution for the problem is:
+
+:<math>Z\bar{X}_i+(1-Z)\mu</math>
+
+where: 
+ 
+:<math>Z=\frac{1}{1+\frac{\sigma^2}{v^2m}}</math>
+
+We can give this result the interpretation, that Z part of the premium is based on the information that we have about the specific risk, and (1-Z) part is based on the information that we have about the whole population.
+
+===Proof===
+The following proof is slightly different from the one in the original paper. It is also more general, because it considers all linear estimators, while original proof considers only estimators based on average claim.<ref>Proof can be found on this site: {{cite web |first=Hanspeter |last=Schmidli |title=Lecture notes on Risk Theory |publisher=Institute of Mathematics, University of Cologne |url=http://www.math.ku.dk/~schmidli/rt.pdf |archive-date=August 11, 2013 |archive-url=https://web.archive.org/web/20130811041617/http://www.math.ku.dk/~schmidli/rt.pdf }}</ref>
+
+:'''Lemma.''' The problem can be stated alternatively as:
+::<math>f=\mathbb E\left [  \left ( a_{i0}+\sum_{j=1}^{m}a_{ij}X_{ij}-m(\vartheta)\right )^2\right ]\to \min</math>
+
+Proof:
+
+:<math>\begin{align}
+\mathbb E\left [  \left ( a_{i0}+\sum_{j=1}^{m}a_{ij}X_{ij}-m(\vartheta)\right )^2\right ] &=\mathbb E\left [  \left ( a_{i0}+\sum_{j=1}^{m}a_{ij}X_{ij}-\Pi\right )^2\right ]+\mathbb E\left [  \left ( m(\vartheta)-\Pi\right )^2\right ]+2\mathbb{E} \left [  \left ( a_{i0}+\sum_{j=1}^{m}a_{ij}X_{ij}-\Pi\right ) \left ( m(\vartheta)-\Pi\right )\right ] \\
+&=\mathbb E\left [  \left ( a_{i0}+\sum_{j=1}^{m}a_{ij}X_{ij}-\Pi\right )^2\right ]+\mathbb E\left [  \left ( m(\vartheta)-\Pi\right )^2\right ]
+\end{align}</math>
+
+The last equation follows from the fact that
+
+:<math>\begin{align}
+\mathbb E\left [\left ( a_{i0}+\sum_{j=1}^{m}a_{ij}X_{ij}-\Pi\right ) \left ( m(\vartheta)-\Pi\right )\right ] &= \mathbb E_{\Theta}\left[\mathbb{E}_X\left. \left [  \left ( a_{i0}+\sum_{j=1}^{m}a_{ij}X_{ij}-\Pi\right ) ( m(\vartheta)-\Pi) \right |  X_{i1},\ldots ,X_{im}\right ]\right ] \\
+&=\mathbb E_{\Theta}\left[\left ( a_{i0}+\sum_{j=1}^{m}a_{ij}X_{ij}-\Pi\right )\left [  \mathbb E_X\left [( m(\vartheta)-\Pi) |  X_{i1},\ldots ,X_{im}\right ]\right ] \right]\\
+&=0
+\end{align}</math>
+
+We are using here the law of total expectation and the fact, that <math>\Pi=\mathbb E [m(\vartheta)|X_{i1},\ldots, X_{im}].</math>
+
+In our previous equation, we decompose minimized function in the sum of two expressions. The second expression does not depend on parameters used in minimization. Therefore, minimizing the function is the same as minimizing the first part of the sum.
+
+Let us find critical points of the function
+
+:<math>\frac{1}{2}\frac{\partial f}{\partial a_{01}}=\mathbb E\left [a_{i0}+\sum_{j=1}^{m}a_{ij}X_{ij}-m(\vartheta)\right ]=a_{i0}+\sum_{j=1}^{m}a_{ij}\mathbb E(X_{ij})-\mathbb E(m(\vartheta))=a_{i0}+\left (\sum_{j=1}^{m}a_{ij}-1  \right )\mu</math>
+
+:<math>a_{i0}=\left (1- \sum_{j=1}^{m}a_{ij}  \right )\mu</math>
+
+For <math>k\neq 0</math> we have:
+
+:<math>\frac{1}{2}\frac{\partial f}{\partial a_{ik}}=\mathbb E\left [ X_{ik}\left ( a_{i0} +\sum_{j=1}^{m}a_{ij}X_{ij}-m(\vartheta)\right ) \right ]=\mathbb E\left [ X_{ik} \right ]a_{i0}+\sum_{j=1, j\neq k}^{m}a_{ij}\mathbb E[X_{ik}X_{ij}]+a_{ik}\mathbb E[X^2_{ik}]-\mathbb E[X_{ik}m(\vartheta)]=0</math>
+
+We can simplify  derivative, noting that:
+
+:<math>\begin{align}
+\mathbb E[X_{ij}X_{ik}] & =\mathbb E \left [\mathbb E [X_{ij}X_{ik}|\vartheta] \right ]=\mathbb E[\text{cov}(X_{ij}X_{ik}|\vartheta)+\mathbb E(X_{ij}|\vartheta)\mathbb E(X_{ik}|\vartheta)]=\mathbb E[(m(\vartheta))^2]=v^2+\mu^2 \\
+\mathbb E[X^2_{ik}] &= \mathbb E \left [\mathbb E[X^2_{ik}|\vartheta] \right ]=\mathbb E[s^2(\vartheta)+(m(\vartheta))^2]=\sigma^2+v^2+\mu^2 \\
+\mathbb E[X_{ik}m(\vartheta)] & =\mathbb E[\mathbb E[X_{ik}m(\vartheta)|\Theta_i]=\mathbb E[(m(\vartheta))^2]=v^2+\mu^2
+\end{align}</math>
+
+Taking above equations and inserting into derivative, we have:
+
+:<math>\frac{1}{2}\frac{\partial f}{\partial a_{ik}}=\left ( 1-\sum_{j=1}^{m}a_{ij} \right )\mu^2+\sum_{j=1,j\neq k}^{m}a_{ij}(v^2+\mu^2)+a_{ik}(\sigma^2+v^2+\mu^2)-(v^2+\mu^2)=a_{ik}\sigma^2-\left ( 1-\sum_{j=1}^{m}a_{ij} \right )v^2=0</math>
+
+:<math>\sigma^2a_{ik}=v^2\left (1-\sum_{j=1}^{m} a_{ij}\right)</math>
+
+Right side doesn't depend on ''k''. Therefore, all <math>a_{ik}</math> are constant
+
+:<math>a_{i1}= \cdots =a_{im}=\frac{v^2}{\sigma^2+mv^2}</math>
+
+From the solution for <math>a_{i0}</math> we have
+
+:<math>a_{i0}=(1-ma_{ik})\mu=\left ( 1-\frac{mv^2}{\sigma^2+mv^2} \right )\mu</math>
+
+Finally, the best estimator is
+
+:<math>a_{i0}+\sum_{j=1}^{m}a_{ij}X_{ij}=\frac{mv^2}{\sigma^2+mv^2}\bar{X_i}+\left ( 1-\frac{mv^2}{\sigma^2+mv^2} \right )\mu=Z\bar{X_i}+(1-Z)\mu</math>
+
+== References ==
+=== Citations ===
+{{Reflist}}
+
+=== Sources ===
+{{refbegin}}
+* {{cite journal | last1 = Frees | first1 = E.W. | last2 = Young | first2 = V.R. | last3 = Luo | first3 = Y. | year = 1999 | title = A longitudinal data analysis interpretation of credibility models | journal = Insurance: Mathematics and Economics | volume = 24 | issue = 3 | pages = 229–247 | doi = 10.1016/S0167-6687(98)00055-9 }}
+{{refend}}
+
+{{-}}
+{{Stochastic processes}}
+
+{{DEFAULTSORT:Buhlmann Model}}
+[[Category:Actuarial science]]
+[[Category:Analysis of variance]]

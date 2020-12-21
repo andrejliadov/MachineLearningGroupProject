@@ -36,4 +36,42 @@ The "four functions theorem" was independently generalized to 2''k'' functions i
 
 {{DEFAULTSORT:Ahlswede-Daykin inequality}}
 [[Category:Inequalities]]
+[[Category:Statistical mechanics]]{{short description|Correlation-type inequality for four functions on a finite distributive lattice}}
+A fundamental tool in [[statistical mechanics]] and [[Combinatorics#Probabilistic_combinatorics|probabilistic combinatorics]] (especially [[random graph]]s and the [[probabilistic method]]), the '''Ahlswede–Daykin inequality'''  {{harv|Ahlswede|Daykin|1978}}, also known as the '''four functions theorem''' (or '''inequality'''), 
+is a [[correlation]]-type inequality for four functions on a finite [[distributive lattice]].
+
+It states that if <math>f_1,f_2,f_3,f_4</math> are nonnegative functions on a finite distributive lattice such that
+
+:<math>f_1(x)f_2(y)\le f_3(x\vee y)f_4(x\wedge y)</math>
+
+for all ''x'', ''y'' in the lattice, then 
+
+:<math>f_1(X)f_2(Y)\le f_3(X\vee Y)f_4(X\wedge Y)</math>
+
+for all subsets ''X'', ''Y'' of the lattice, where
+
+:<math>f(X) = \sum_{x\in X}f(x)</math>
+
+and
+
+:<math>X\vee Y = \{x\vee y\mid x\in X, y\in Y\}</math>
+:<math>X\wedge Y = \{x\wedge y\mid x\in X, y\in Y\}.</math>
+
+The Ahlswede–Daykin inequality can be used to provide a short proof of both the [[Holley inequality]] and the [[FKG inequality]]. It also implies the [[Fishburn–Shepp inequality]].
+
+For a proof, see the original article {{harv|Ahlswede|Daykin|1978}} or {{harv|Alon|Spencer|2000}}.
+
+==Generalizations==
+
+The "four functions theorem" was independently generalized to 2''k'' functions in {{harv|Aharoni|Keich|1996}} and {{harv|Rinott|Saks|1991}}.
+
+==References==
+*{{Citation | last1=Ahlswede | first1=Rudolf | last2=Daykin | first2=David E. | title=An inequality for the weights of two families of sets, their unions and intersections | doi=10.1007/BF00536201 | mr=0491189 | year=1978 | journal=Probability Theory and Related Fields | issn=0178-8051 | volume=43 | issue=3 | pages=183–185| citeseerx=10.1.1.380.8629 | s2cid=120659862 }}
+*{{Citation|last1=Alon|first1=N.|last2=Spencer|first2=J. H.|title=The probabilistic method. Second edition. With an appendix on the life and work of Paul Erdős.|publisher=Wiley-Interscience, New York|year=2000|isbn=978-0-471-37046-8 |mr=1885388}}
+*{{eom|title=Ahlswede–Daykin inequality|authorlink=Peter Fishburn|first=P.C. |last=Fishburn}}
+*{{Citation | last1=Aharoni | first1=Ron | last2=Keich | first2=Uri | title= A Generalization of the Ahlswede Daykin Inequality | doi=10.1016/0012-365X(94)00294-S | year=1996| journal=Discrete Mathematics | volume=152 | issue=1–3 | pages=1–12}}
+*{{Citation | last1=Rinott| first1=Yosef | last2=Saks | first2=Michael | title= Correlation inequalities and a conjecture for permanents | doi=10.1007/BF01202353 | year=1991| journal=Combinatorica | volume=13 | issue=3 | pages=269–277| s2cid=206791629 }}
+
+{{DEFAULTSORT:Ahlswede-Daykin inequality}}
+[[Category:Inequalities]]
 [[Category:Statistical mechanics]]

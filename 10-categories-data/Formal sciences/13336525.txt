@@ -1,0 +1,125 @@
+{{cleanup|reason=Intro, reference-section, and categories needs improvement|date=November 2013}}
+'''Work system''' has been used loosely in many areas. This article concerns its use in understanding IT-reliant systems in organizations. A notable use of the term occurred in 1977 in the first volume of MIS Quarterly in two articles by Bostrom and Heinen (1977). Later Sumner and Ryan (1994) used it to explain problems in the adoption of CASE ([[computer-aided software engineering]]). A number of [[socio-technical systems]] researchers such as Trist and Mumford also used the term occasionally, but seemed not to define it in detail. In contrast, the work system approach defines work system carefully and uses it as a basic analytical concept.
+
+A work system is a system in which human participants and/or machines perform work (processes and activities) using information, technology, and other resources to produce products/services for internal or external customers. Typical business organizations contain work systems that procure materials from suppliers, produce products, deliver products to customers, find customers, create financial reports, hire employees, coordinate work across departments, and perform many other functions.
+
+The work system concept is like a common denominator for many of the types of systems that operate within or across organizations. Operational information systems, service systems, projects, supply chains, and ecommerce web sites can all be viewed as special cases of work systems. 
+* An [[information system]] is a work system whose processes and activities are devoted to processing information.
+* A [[service system]] is a work system that produces services for its customers.
+* A [[project]] is a work system designed to produce a product and then go out of existence.
+* A [[supply chain]] is an interorganizational work system devoted to procuring materials and other inputs required to produce a firm's products.
+* An [[ecommerce]] web site can be viewed as a work system in which a buyer uses a seller's web site to obtain product information and perform purchase transactions.
+The relationship between work systems in general and the special cases implies that the same basic concepts apply to all of the special cases, which also have their own specialized vocabulary. In turn, this implies that much of the body of knowledge for the current information systems discipline can be organized around a work system core.
+
+Specific information systems exist to support (other) work systems. Many different degrees of overlap are possible between an information system and a work system that it supports. For example, an information system might provide information for a non-overlapping work system, as happens when a commercial marketing survey provides information to a firm's marketing managers In other cases, an information system may be an integral part of a work system, as happens in highly automated manufacturing and in ecommerce web sites. In these situations, participants in the work system are also participants in the information system, the work system cannot operate properly without the information system, and the information system has little significance outside of the work system.
+
+== Work system framework ==
+
+The work system approach for understanding systems includes both a static view of a current (or proposed) system in operation and a dynamic view of how a system evolves over time through planned change and unplanned adaptations. The static view is summarized by the work system framework, which identifies the basic elements for understanding and evaluating a work system. An easily recognized triangular representation of the work system framework has appeared in Alter (2002, 2003, 2008, 2013) and elsewhere. The work system itself consists of four elements: the processes and activities, participants, information, and technologies. Five other elements must be included in even a rudimentary understanding of a work system's operation, context, and significance. Those elements are the products/services produced, customers, environment, infrastructure, and strategies. Customers may also be participants in a work system, as happens when a doctor examines a patient. This framework is prescriptive enough to be useful in describing the system being studied, identifying problems and opportunities, describing possible changes, and tracing how those changes might affect other parts of the work system.
+
+The definitions of the 9 elements of the work system framework are as follows:
+
+'''Processes and activities''' include everything that happens within the work system. The term processes and activities is used instead of the term business process because many work systems do not contain highly structured business processes involving a prescribed sequence of steps, each of which is triggered in a pre-defined manner. Such processes are sometimes described as “artful processes” whose sequence and content “depend on the skills, experience, and judgment of the primary actors.” (Hill et al., 2006)  In effect, business process is but one of a number of different perspectives for analyzing the activities within a work system. Other perspectives with their own valuable concepts and terminology include decision-making, communication, coordination, control, and information processing.
+
+'''Participants''' are people who perform the work. Some may use computers and IT extensively, whereas others may use little or no technology. When analyzing a work system the more encompassing role of work system participant is more important than the more limited role of technology user (whether or not particular participants happen to be technology users). In work systems that are viewed as service systems, it is especially important to identify activities in which customers are participants.
+
+'''Information''' includes codified and non-codified information used and created as participants perform their work. Information may or may not be computerized. Data not related to the work system is not directly relevant, making the distinction between data and information secondary when describing or analyzing a work system.  Knowledge can be viewed as a special case of information.
+
+'''Technologies''' include tools (such as cell phones, projectors, spreadsheet software, and automobiles) and techniques (such as management by objectives, optimization, and remote tracking) that work system participants use while doing their work.
+
+'''Products/services''' are the combination of physical things, information, and services that the work system produces for its customers' benefit and use. This may include physical products, information products, services, intangibles such as enjoyment and peace of mind, and social products such as arrangements, agreements, and organizations. The term "products/services” is used because the distinction between products and services in marketing and service science (Chesbrough and Spohrer, 2006) is not important for understanding work systems even though product-like vs. service-like is the basis of a series of design dimensions for characterizing and designing the things that a work system produces (Alter, 2012).
+
+'''Customers''' are people who receive direct benefit from products/services the work system produces. Since work systems exist to produce products/services for their customers, an analysis of a work system should consider who the customers are, what they want, and how they use whatever the work system produces. Customers may include external customers who receive an enterprise's products/services and internal customers who are employed by the enterprise, such as customers of a payroll work system. Customers of a work system often are  participants in the work system (e.g., patients in a medical exam, students in an educational setting, and clients in a consulting engagement).
+
+'''Environment''' includes the organizational, cultural, competitive, technical, and regulatory environment within which the work system operates. These factors affect system performance even though the system does not rely on them directly in order to operate. The organization's general norms of behavior are part of its culture, whereas more specific behavioral norms and expectations about specific activities within the work system are considered part of its processes and activities.
+
+'''Infrastructure''' includes human, informational, and technical resources that the work system relies on even though these resources exist and are managed outside of it and are shared with other work systems. Technical infrastructure includes computer networks, programming languages, and other technologies shared by other work systems and often hidden or invisible to work system participants. From an organizational viewpoint such as that expressed in Star and Bowker (2002) rather than a purely technical viewpoint, infrastructure includes human infrastructure, informational infrastructure, and technical infrastructure, all of which can be essential to a work system's operation and therefore should be considered in any analysis of a work system.
+
+'''Strategies''' include the strategies of the work system and of the department(s) and enterprise(s) within which the work system exists. Strategies at the department and enterprise level may help in explaining why the work system operates as it does and whether it is operating properly.
+
+== Work system life cycle model ==
+
+The dynamic view of a work system starts with the work system life cycle (WSLC) model, which shows how a work system may evolve through multiple iterations of four phases: operation and maintenance, initiation, development, and implementation. The names of the phases were chosen to describe both computerized and non-computerized systems, and to apply regardless of whether application software is acquired, built from scratch, or not used at all. The terms development and implementation have business-oriented meanings that are consistent with Markus and Mao's (2004) distinction between system development and system implementation.
+
+This model encompasses both planned and unplanned change. Planned change occurs through a full iteration encompassing the four phases, i.e., starting with an operation and maintenance phase, flowing through initiation, development, and implementation, and arriving at a new operation and maintenance phase. Unplanned change occurs through fixes, adaptations, and experimentation that can occur within any phase. The phases include the following activities:
+
+=== Operation and maintenance ===
+* Operation of the work system and monitoring of its performance
+* Maintenance of the work system (which often includes at least part of information systems that support it) by identifying small flaws and eliminating or minimizing them through fixes, adaptations, or workarounds.
+* On-going improvement of processes and activities through analysis, experimentation, and adaptation
+
+=== Initiation ===
+* Vision for the new or revised work system
+* Operational goals
+* Allocation of resources and clarification of time frames
+* Economic, organizational, and technical feasibility of planned changes
+
+=== Development ===
+* Detailed requirements for the new or revised work system (including requirements for information systems that support it)
+* As necessary, creation, acquisition, configuration, and modification of procedures, documentation, training material, software and hardware
+* Debugging and testing of hardware, software, and documentation
+
+=== Implementation ===
+* Implementation approach and plan (pilot? phased? big bang?)
+* Change management efforts about rationale and positive or negative impacts of changes
+* Training on details of the new or revised information system and work system
+* Conversion to the new or revised work system
+* Acceptance testing
+
+As an example of the iterative nature of a work system's life cycle, consider the sales system in a software start-up. The first sales system is the CEO selling directly. At some point the CEO can't do it alone, several salespeople are hired and trained, and marketing materials are produced that can be used by someone less expert than the CEO. As the firm grows, the sales system becomes regionalized and an initial version of sales tracking software is developed and used. Later, the firm changes its sales system again to accommodate needs to track and control a larger salesforce and predict sales several quarters in advance. A subsequent iteration might involve the acquisition and configuration of CRM software. The first version of the work system starts with an initiation phase. Each subsequent iteration involves deciding that the current sales system is insufficient; initiating a project that may or may not involve significant changes in software; developing the resources such as procedures, training materials, and software that are needed to support the new version of the work system; and finally, implementing the new work system.
+
+The pictorial representation of the work system life cycle model places the four phases at the vertices of rectangle. Forward and backward arrows between each successive pair of phases indicate the planned sequence of the phases and allow the possibility of returning to a previous phase if necessary. To encompass both planned and unplanned change, each phase has an inward facing arrow to denote unanticipated opportunities and unanticipated adaptations, thereby recognizing the importance of diffusion of innovation, experimentation, adaptation, emergent change, and path dependence.
+
+The work system life cycle model is iterative and includes both planned and unplanned change. It is fundamentally different from the frequently cited [[Systems Development Life Cycle]] (SDLC), which actually describes projects that attempt to produce software or produce changes in a work system. Current versions of the SDLC may contain iterations but they are basically iterations within a project. More important, the system in the SDLC is a basically a technical artifact that is being programmed. In contrast, the system in the WSLC is a work system that evolves over time through multiple iterations. That evolution occurs through a combination of defined projects and incremental changes resulting from small adaptations and experimentation. In contrast with control-oriented versions of the SDLC, the WSLC treats unplanned changes as part of a work system's natural evolution.
+
+== Work system method ==
+
+The work system method (Alter, 2002; 2006; 2013) is a method that business professionals (and/or IT professionals) can use for understanding and analyzing a work system at whatever level of depth is appropriate for their particular concerns. It has evolved iteratively starting in around 1997. At each stage, the then current version was tested by evaluating the areas of success and the difficulties experienced by MBA and EMBA students trying to use it for a practical purpose. A version called “work-centered analysis” that was presented in a textbook has been used by a number of universities as part of the basic explanation of systems in organizations, to help students focus on business issues, and to help student teams communicate. Ramiller (2002) reports on using a version of the work system framework within a method for “animating” the idea of business process within an undergraduate class. In a research setting, Petrie (2004) used the work system framework as a basic analytical tool in a Ph.D. thesis examining 13 ecommerce web sites. Petkov and Petkova (2006) demonstrated the usefulness of the work system framework by comparing grades of students who did and did not learn about the framework before trying to interpret the same ERP case study. More recent evidence of the practical value of a work system approach is from Truex et al. (2010, 2011), which summarized results from 75 and later 300 management briefings produced by employed MBA students based on a work system analysis template. These briefings contained the kind of analysis that would be discussed in the initiation phase of the WSLC, as decisions were being made about which projects to pursue and how to proceed.
+
+Results from analyses of real world systems by typical employed MBA and EMBA students indicate that a systems analysis method for business professionals must be much more prescriptive than [[soft systems methodology]] (Checkland, 1999).  While not a straitjacket, it must be at least somewhat procedural and must provide vocabulary and analysis concepts while at the same time encouraging the user to perform the analysis at whatever level of detail is appropriate for the task at hand. The latest version of the work system method is organized around a general problem-solving outline that includes:
+
+* Identify the problem or opportunity
+* Identify the work system that has that problem or opportunity (plus relevant constraints and other considerations)
+* Use the work system framework to summarize the work system
+* Gather relevant data.
+* Analyze using design characteristics, measures of performance, and work system principles.
+* Identify possibilities for improvement.
+* Decide what to recommend
+* Justify the recommendation using relevant metrics and work system principles.
+
+In contrast to systems analysis and design methods for IT professionals who need to produce a rigorous, totally consistent definition of a computerized system, the work system method:
+
+* encourages the user to decide how deep to go
+* makes explicit use of the work system framework and work system life cycle model
+* makes explicit use of work system principles.
+* makes explicit use of characteristics and metrics for the work system and its elements.
+* includes work system participants as part of the system (not just users of the software)
+* includes codified and non-codified information
+* includes IT and non-IT technologies.
+* suggests that recommendations specify which work system improvements rely on IS changes, which recommended work system changes don't rely on IS changes, and which recommended IS changes won't affect the work system's operational form.
+
+== References ==
+* Alter, S.  (2002) "[http://cais.aisnet.org/articles/default.asp?vol=9&art=6 The Work System Method for Understanding Information Systems and Information Systems Research]," ''Communications of the Association for Information Systems'' 9(9), Sept., pp.&nbsp;90–104, 
+* Alter, S.  (2003) "[https://web.archive.org/web/20061007165938/http://cais.aisnet.org/articles/default.asp?vol=12&art=23 18 Reasons Why IT-Reliant Work Systems Should Replace ‘The IT Artifact’ as the Core Subject Matter of the IS Field]," ''Communications of the Association for Information Systems'', 12(23), Oct., pp.&nbsp;365–394, 
+* Alter, S. (2006) ''The Work System Method: Connecting People, Processes, and IT for Business Results,'' Larkspur, CA: Work System Press.
+* Alter, S. (2012) "Challenges for Service Science," ''Journal of Information Technology Theory and Application'', Vol. 13, Issue 2, No. 3, 2012, pp.&nbsp;22 –37.  
+* Alter, S. (2013) "Work System Theory: Overview of Core Concepts, Extensions, and Challenges for the Future," ''Journal of the Association for Information Systems'', 14(2), pp.&nbsp;72–121.
+* Bostrom, R.P. and J.S. Heinen, (1977) "MIS Problems and Failures: A Socio-Technical Perspective.  PART I: The Causes." ''MIS Quarterly'', 1(3), December, pp.&nbsp;17–32.
+* Bostrom, R. P. and J. S. Heinen, (1977) "MIS Problems and Failures: A Socio-Technical Perspective.  PART II: The Application of Socio-Technical Theory." ''MIS Quarterly'', 1(4), December, pp.&nbsp;11–28.
+* [[Peter Checkland|Checkland, P.]] (1999) ''Systems Thinking, Systems Practice (Includes a 30-year retrospective)'', Chichester, UK: John Wiley & Sons.
+* Chesbrough, H., and J. Spohrer (2006) "A Research Manifesto for Services Science," ''Communications of the ACM'' (49)7, 35–40.
+* Hill, C., R. Yates, C. Jones, and S. L. Kogan, (2006) "Beyond predictable workflows: Enhancing productivity in artful business processes," ''IBM Systems Journal'', 45(4), pp.&nbsp;663–682.
+* Markus, M.L. and J.Y. Mao (2004) "Participations of the in Development and Implementation – Updating an Old, Tired Concept for Today’s IS Contexts," ''Journal of the Association for Information Systems'', Dec., pp.&nbsp;514–544.
+* Petrie, D.E. (2004) ''Understanding the Impact of Technological Discontinuities on Information Systems Management: The Case of Business-to-Business Electronic Commerce'', Ph.D. Thesis, Claremont Graduate University.
+* [[Neil Ramiller|Ramiller, N.]] (2002)  "[http://iaim.aisnet.org/jier/V3N2/ Animating the Concept of Business Process in the Core Course in Information Systems]," ''Journal of Informatics Education and Research,'' 3(2), pp.&nbsp;53–71. 
+* Star,  S. L. and Bowker, G. C. (2002) "How to Infrastructure," in  L. Lievrouw and S. Livingstone (Eds.), ''Handbook of the new media.'' London: SAGE, 151-162.
+* Sumner, M. and T. Ryan (1994). "The Impact of CASE: Can it achieve critical success factors?" ''Journal of Systems Management'', 45(6), p.&nbsp;16, 6 pages.
+* Truex, D., Alter, S., and Long, C. (2010) "Systems Analysis for Everyone Else: Empowering Business Professionals through a Systems Analysis Method that Fits their Needs," ''Proceedings of 18th European Conference on Information Systems'', Pretoria, South Africa.
+* Truex., D., Lakew, N., Alter, S., and Sarkar, S. (2011) "Extending a Systems Analysis Method for Business Professionals," ''European Design Science Symposium, Leixlip, Ireland, Oct. 2011''
+
+[[Category:Information systems]]
+[[Category:Management systems]]
+[[Category:Systems analysis]]
+[[Category:Systems science]]
+[[Category:Systems theory]]
+[[Category:Systems thinking]]

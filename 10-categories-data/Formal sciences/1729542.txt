@@ -1,0 +1,183 @@
+{{Other uses}}
+{{Short description|Structure in biology and artificial intelligence}}
+{{Use mdy dates|date = January 2019}}
+[[File:Neural network example.svg|thumb|right|Simplified view of a [[Feedforward neural network|feedforward]] artificial neural network]]
+
+A '''neural network''' is a network or circuit of [[neuron]]s, or in a modern sense, an [[artificial neural network]], composed of [[artificial neuron]]s or nodes.<ref>{{cite journal |first=J. J. |last=Hopfield |title=Neural networks and physical systems with emergent collective computational abilities |journal=Proc. Natl. Acad. Sci. U.S.A. |volume=79 |issue= 8|pages=2554–2558 |year=1982 |doi=10.1073/pnas.79.8.2554 |pmc=346238 |pmid=6953413|bibcode=1982PNAS...79.2554H }}</ref> Thus a neural network is either a [[biological neural network]], made up of real biological neurons, or an artificial neural network, for solving [[artificial intelligence]] (AI) problems. The connections of the biological neuron are modeled as weights. A positive weight reflects an excitatory connection, while negative values mean inhibitory connections. All inputs are modified by a weight and summed. This activity is referred to as a linear combination. Finally, an activation function controls the [[amplitude]] of the output. For example, an acceptable range of output is usually between 0 and 1, or it could be −1 and 1.
+
+These artificial networks may be used for [[predictive modeling]], adaptive control and applications where they can be trained via a dataset. Self-learning resulting from experience can occur within networks, which can derive conclusions from a complex and seemingly unrelated set of information.<ref>{{cite web|url=https://www.gartner.com/it-glossary/neural-net-or-neural-network|title=Neural Net or Neural Network - Gartner IT Glossary|website=www.gartner.com}}</ref>
+
+== Overview ==
+A [[biological neural network]] is composed of a groups of chemically connected or functionally associated neurons. A single neuron may be connected to many other neurons and the total number of neurons and connections in a network may be extensive. Connections, called [[synapse]]s, are usually formed from [[axon]]s to [[dendrite]]s, though [[dendrodendritic synapse]]s<ref>Arbib, p.666</ref> and other connections are possible. Apart from the electrical signaling, there are other forms of signaling that arise from [[neurotransmitter]] diffusion.
+
+Artificial intelligence, cognitive modeling, and neural networks are information processing paradigms inspired by the way biological neural systems process data. [[Artificial intelligence]] and [[cognitive modeling]] try to simulate some properties of biological neural networks. In the [[artificial intelligence]] field, artificial neural networks have been applied successfully to [[speech recognition]], [[image analysis]] and [[adaptive control]], in order to construct [[software agents]] (in [[Video game|computer and video games]]) or [[autonomous robot]]s.
+
+Historically, digital computers evolved from the [[von Neumann model]], and operate via the execution of explicit instructions via access to memory by a number of processors. On the other hand, the origins of neural networks are based on efforts to model information processing in biological systems. Unlike the von Neumann model, neural network computing does not separate memory and processing.
+
+Neural network theory has served both to better identify how the neurons in the brain function and to provide the basis for efforts to create artificial intelligence.
+
+== History ==
+The preliminary theoretical base for contemporary neural networks was independently proposed by [[Alexander Bain]]<ref name="Bain 1873">{{cite book|last=Bain|title=Mind and Body: The Theories of Their Relation|year=1873|publisher=D. Appleton and Company|location=New York}}</ref> (1873) and [[William James]]<ref name="James 1890">{{cite book|last=James|title=The Principles of Psychology|url=https://archive.org/details/principlespsych01jamegoog|year=1890|publisher=H. Holt and Company|location=New York}}</ref> (1890). In their work, both thoughts and body activity resulted from interactions among neurons within the brain.
+
+[[File:Forest of synthetic pyramidal dendrites grown using Cajal's laws of neuronal branching.png|thumb|[[Computer simulation]] of the branching architecture of the [[dendrite]]s of [[pyramidal neuron]]s.<ref>{{cite journal |last=Cuntz |first=Hermann |doi= 10.1371/image.pcbi.v06.i08 |title= PLoS Computational Biology Issue Image &#124; Vol. 6(8) August 2010 |journal= PLOS Computational Biology |volume= 6 |issue= 8 |pages= ev06.i08 |year= 2010 }}</ref>]]
+For Bain,<ref name="Bain 1873"/> every activity led to the firing of a certain set of neurons. When activities were repeated, the connections between those neurons strengthened. According to his theory, this repetition was what led to the formation of memory. The general scientific community at the time was skeptical of Bain's<ref name="Bain 1873"/> theory because it required what appeared to be an inordinate number of neural connections within the brain. It is now apparent that the brain is exceedingly complex and that the same brain “wiring” can handle multiple problems and inputs.
+
+James's<ref name="James 1890"/> theory was similar to Bain's,<ref name="Bain 1873"/> however, he suggested that memories and actions resulted from electrical currents flowing among the neurons in the brain. His model, by focusing on the flow of electrical currents, did not require individual neural connections for each memory or action.
+
+[[Charles Scott Sherrington|C. S. Sherrington]]<ref>{{cite journal|last=Sherrington|first=C.S.|title=Experiments in Examination of the Peripheral Distribution of the Fibers of the Posterior Roots of Some Spinal Nerves|journal=Proceedings of the Royal Society of London|volume=190|pages=45–186|doi=10.1098/rstb.1898.0002|year=1898}}</ref> (1898) conducted experiments to test James's theory. He ran electrical currents down the spinal cords of rats. However, instead of demonstrating an increase in electrical current as projected by James, Sherrington found that the electrical current strength decreased as the testing continued over time. Importantly, this work led to the discovery of the concept of [[habituation]]. 
+   
+[[Warren McCulloch|McCulloch]] and [[Walter Pitts|Pitts]]<ref>{{cite journal |last= McCulloch |first=Warren |author2= Walter Pitts |title= A Logical Calculus of Ideas Immanent in Nervous Activity |journal= Bulletin of Mathematical Biophysics |year=1943 |volume=5 |pages= 115–133 |doi= 10.1007/BF02478259 |issue=4}}</ref>  (1943) created a computational model for neural networks based on mathematics and algorithms. They called this model [[threshold logic]]. The model paved the way for neural network research to split into two distinct approaches. One approach focused on biological processes in the brain and the other focused on the application of neural networks to artificial intelligence.
+
+In the late 1940s psychologist [[Donald Hebb]]<ref>{{cite book|last=Hebb|first=Donald|title=The Organization of Behavior|url=https://archive.org/details/in.ernet.dli.2015.226341|year=1949|publisher=Wiley|location=New York}}</ref>  created a hypothesis of learning based on the mechanism of neural plasticity that is now known as [[Hebbian learning]]. Hebbian learning is considered to be a 'typical' [[unsupervised learning]] rule and its later variants were early models for [[long term potentiation]]. These ideas started being applied to computational models in 1948 with [[unorganized machine|Turing's B-type machines]].
+
+Farley and Clark<ref>{{cite journal |last= Farley |first=B. |author2= W.A. Clark |title= Simulation of Self-Organizing Systems by Digital Computer |journal= IRE Transactions on Information Theory |year=1954 |volume=4 |pages= 76–84 |doi= 10.1109/TIT.1954.1057468 |issue=4 }}</ref> (1954) first used computational machines, then called calculators, to simulate a Hebbian network at MIT. Other neural network computational machines were created by Rochester, Holland, Habit, and Duda<ref>{{cite journal |last= Rochester |first=N. |author2= J.H. Holland, L.H. Habit and W.L. Duda|title=Tests on a cell assembly theory of the action of the brain, using a large digital computer|journal=IRE Transactions on Information Theory |year=1956 |volume=2 |pages= 80–93 |doi= 10.1109/TIT.1956.1056810 |issue=3 }}</ref> (1956).
+
+[[Frank Rosenblatt|Rosenblatt]]<ref>{{cite journal|last=Rosenblatt|first=F.|title=The Perceptron: A Probalistic Model For Information Storage And Organization In The Brain|journal=Psychological Review|year=1958|volume=65|pages=386–408|doi=10.1037/h0042519|pmid=13602029|issue=6|citeseerx=10.1.1.588.3775}}</ref> (1958) created the [[perceptron]], an algorithm for pattern recognition based on a two-layer learning computer network using simple addition and subtraction. With mathematical notation, Rosenblatt also described circuitry not in the basic perceptron, such as the [[exclusive-or]] circuit, a circuit whose mathematical computation could not be processed until after the [[backpropagation]] algorithm was created by Werbos<ref name="Werbos 1975">{{cite book|last=Werbos|first=P.J.|title=Beyond Regression: New Tools for Prediction and Analysis in the Behavioral Sciences|year=1975}}</ref> (1975).
+
+Neural network research stagnated after the publication of machine learning research by [[Marvin Minsky]] and [[Seymour Papert]]<ref>{{cite book |last=Minsky |first=M. |title=An Introduction to Computational Geometry |year=1969 |publisher= MIT Press|isbn=978-0-262-63022-1 |author2= S. Papert }}</ref> (1969). They discovered two key issues with the computational machines that processed neural networks. The first issue was that single-layer neural networks were incapable of processing the exclusive-or circuit. The second significant issue was that computers were not sophisticated enough to effectively handle the long run time required by large neural networks. Neural network research slowed until computers achieved greater processing power. Also key in later advances was the [[backpropagation]] algorithm which effectively solved the exclusive-or problem (Werbos 1975).<ref name="Werbos 1975"/>
+
+The [[connectionism|parallel distributed processing]] of the mid-1980s became popular under the name [[connectionism]]. The text by Rumelhart and McClelland<ref>{{cite book |last=Rumelhart |first=D.E. |title= Parallel Distributed Processing: Explorations in the Microstructure of Cognition |url=https://archive.org/details/paralleldistribu00rume |url-access=registration |year=1986 |publisher= MIT Press |location= Cambridge |author2= James McClelland }}</ref> (1986) provided a full exposition on the use of connectionism in computers to simulate neural processes.
+
+Neural networks, as used in artificial intelligence, have traditionally been viewed as simplified models of [[neural processing]] in the brain, even though the relation between this model and brain biological architecture is debated, as it is not clear to what degree artificial neural networks mirror brain function.<ref>{{Cite web |last= Russell|first= Ingrid |title= Neural Networks Module |url= http://uhaweb.hartford.edu/compsci/neural-networks-definition.html|access-date= 2012|archive-date=29 May 2014| archive-url=https://web.archive.org/web/20140529155320/http://uhaweb.hartford.edu/compsci/neural-networks-definition.html}}</ref>
+
+==Artificial intelligence==
+{{Main|Artificial neural network}}
+A ''neural network'' (NN), in the case of artificial neurons called ''artificial neural network'' (ANN) or ''simulated neural network'' (SNN), is an interconnected group of natural or [[artificial neuron]]s that uses a [[mathematical model|mathematical or computational model]] for [[information processing]] based on a [[connectionism|connectionistic]] approach to [[computation]]. In most cases an ANN is an [[adaptive system]] that changes its structure based on external or internal information that flows through the network.
+
+In more practical terms neural networks are [[non-linear]] [[statistical]] [[data modeling]] or [[decision making]] tools. They can be used to model complex relationships between inputs and outputs or to [[Pattern recognition|find patterns]] in data.
+
+An [[artificial neural network]] involves a network of simple processing elements ([[artificial neuron]]s) which can exhibit complex global behavior, determined by the connections between the processing elements and element parameters. Artificial neurons were first proposed in 1943 by [[Warren Sturgis McCulloch|Warren McCulloch]], a neurophysiologist, and [[Walter Pitts]], a logician, who first collaborated at the [[University of Chicago]].<ref>{{cite journal |last=McCulloch |first=Warren |last2=Pitts |first2=Walter |title=A Logical Calculus of Ideas Immanent in Nervous Activity |year=1943 |journal=Bulletin of Mathematical Biophysics |volume=5 |issue=4 |pages=115–133 |doi=10.1007/BF02478259 }}</ref>
+
+One classical type of artificial neural network is the [[recurrent neural network|recurrent]] [[Hopfield network]].
+
+The concept of a neural network appears to have first been proposed by [[Alan Turing]] in his 1948 paper ''Intelligent Machinery'' in which he called them "B-type unorganised machines".<ref>{{cite book |title=The Essential Turing |editor-first=B. Jack |editor-last=Copeland |publisher=Oxford University Press |year=2004 |isbn=978-0-19-825080-7 |page=403 }}</ref>
+
+The utility of artificial neural network models lies in the fact that they can be used to infer a function from observations and also to use it. Unsupervised neural networks can also be used to learn representations of the input that capture the salient characteristics of the input distribution, e.g., see the [[Boltzmann machine]] (1983), and more recently, [[deep learning]] algorithms, which can implicitly learn the distribution function of the observed data. Learning in neural networks is particularly useful in applications where the complexity of the data or task makes the design of such functions by hand impractical.
+
+==Applications==
+Neural networks can be used in different fields. The tasks to which artificial neural networks are applied tend to fall within the following broad categories:
+*[[Function approximation]], or [[regression analysis]], including [[time series prediction]] and modeling.
+*[[Statistical classification|Classification]], including [[Pattern recognition|pattern]] and sequence recognition, [[novelty detection]] and sequential decision making.
+*[[Data processing]], including filtering, clustering, [[blind signal separation]] and [[data compression|compression]].
+
+Application areas of ANNs include [[nonlinear system identification]]<ref name="SAB1">{{cite book |last=Billings |first=S. A. |title=Nonlinear System Identification: NARMAX Methods in the Time, Frequency, and Spatio-Temporal Domains |publisher=Wiley |year=2013 |isbn=978-1-119-94359-4 }}</ref> and control (vehicle control, process control), game-playing and decision making (backgammon, chess, racing), pattern recognition (radar systems, [[Facial recognition system|face identification]], object recognition), sequence recognition (gesture, speech, [[handwritten text recognition]]), medical diagnosis, financial applications, [[data mining]] (or knowledge discovery in databases, "KDD"), visualization and [[e-mail spam]] filtering. For example, it is possible to create a semantic profile of user's interests emerging from pictures trained for object recognition.<ref>{{cite journal| url=https://www.researchgate.net/publication/328964756 | doi=10.3233/978-1-61499-894-5-179 | last1=Wieczorek | first1=Szymon| last2=Filipiak | first2=Dominik | last3=Filipowska | first3=Agata| title=Semantic Image-Based Profiling of Users' Interests with Neural Networks| journal=Studies on the Semantic Web | volume=36 | issue=Emerging Topics in Semantic Technologies | year=2018}}</ref>
+
+==Neuroscience==
+Theoretical and [[computational neuroscience]] is the field concerned with the analysis and computational modeling of biological neural systems.
+Since neural systems are intimately related to cognitive processes and behaviour, the field is closely related to cognitive and behavioural modeling.
+
+The aim of the field is to create models of biological neural systems in order to understand how biological systems work. To gain this understanding, neuroscientists strive to make a link between observed biological processes (data), biologically plausible mechanisms for neural processing and learning ([[biological neural network]] models) and theory (statistical learning theory and [[information theory]]).
+
+===Types of models===
+Many models are used; defined at different levels of abstraction, and modeling different aspects of neural systems. They range from models of the short-term behaviour of [[biological neuron models|individual neurons]], through models of the dynamics of neural circuitry arising from interactions between individual neurons, to models of behaviour arising from abstract neural modules that represent complete subsystems. These include models of the long-term and short-term plasticity of neural systems and its relation to learning and memory, from the individual neuron to the system level.
+
+=== Connectivity ===
+{{See also|Brain connectivity estimators}}
+In August 2020 scientists reported that bi-directional connections, or added appropriate feedback connections, can accelerate and improve communication between and in modular [[Neural circuit|neural networks]] of the brain's [[cerebral cortex]] and lower the threshold for their successful communication. They showed that adding feedback connections between a resonance pair can support successful propagation of a single pulse packet throughout the entire network.<ref>{{cite news |title=Neuroscientists demonstrate how to improve communication between different regions of the brain |url=https://medicalxpress.com/news/2020-08-neuroscientists-regions-brain.html |access-date=6 September 2020 |work=medicalxpress.com |language=en}}</ref><ref>{{cite journal |last1=Rezaei |first1=Hedyeh |last2=Aertsen |first2=Ad |last3=Kumar |first3=Arvind |last4=Valizadeh |first4=Alireza |title=Facilitating the propagation of spiking activity in feedforward networks by including feedback |journal=PLOS Computational Biology |date=10 August 2020 |volume=16 |issue=8 |pages=e1008033 |doi=10.1371/journal.pcbi.1008033 |pmid=32776924 |s2cid=221100528 |language=en |issn=1553-7358}} [[File:CC-BY icon.svg|50px]]  Text and images are available under a [https://creativecommons.org/licenses/by/4.0/  Creative Commons Attribution 4.0 International License].</ref>
+
+==Criticism==
+A common criticism of neural networks, particularly in robotics, is that they require a large diversity of training samples for real-world operation. This is not surprising, since any learning machine needs sufficient representative examples in order to capture the underlying structure that allows it to generalize to new cases. Dean Pomerleau, in his research presented in the paper "Knowledge-based Training of Artificial Neural Networks for Autonomous Robot Driving," uses a neural network to train a robotic vehicle to drive on multiple types of roads (single lane, multi-lane, dirt, etc.). A large amount of his research is devoted to (1) extrapolating multiple training scenarios from a single training experience, and (2) preserving past training diversity so that the system does not become overtrained (if, for example, it is presented with a series of right turns—it should not learn to always turn right). These issues are common in neural networks that must decide from amongst a wide variety of responses, but can be dealt with in several ways, for example by randomly shuffling the training examples, by using a numerical optimization algorithm that does not take too large steps when changing the network connections following an example, or by grouping examples in so-called mini-batches.
+
+[[A. K. Dewdney]], a former ''[[Scientific American]]'' columnist, wrote in 1997, "Although neural nets do solve a few toy problems, their powers of computation are so limited that I am surprised anyone takes them seriously as a general problem-solving tool" (Dewdney, p.&nbsp;82).
+
+Arguments for Dewdney's position are that to implement large and effective software neural networks, much processing and storage resources need to be committed. While the brain has hardware tailored to the task of processing signals through a graph of neurons, simulating even a most simplified form on Von Neumann technology may compel a neural network designer to fill many millions of [[database]] rows for its connections—which can consume vast amounts of computer [[Random-access memory|memory]] and [[Hard drive|hard disk]] space. Furthermore, the designer of neural network systems will often need to simulate the transmission of signals through many of these connections and their associated neurons—which must often be matched with incredible amounts of [[CPU]] processing power and time. While neural networks often yield ''effective'' programs, they too often do so at the cost of ''efficiency'' (they tend to consume considerable amounts of time and money).
+
+Arguments against Dewdney's position are that neural nets have been successfully used to solve many complex and diverse tasks, such as autonomously flying aircraft.<ref>{{cite web|url=http://www.nasa.gov/centers/dryden/news/NewsReleases/2003/03-49.html|title=Dryden Flight Research Center - News Room: News Releases: NASA NEURAL NETWORK PROJECT PASSES MILESTONE|first=NASA|last=Administrator|date=5 June 2013|website=NASA}}</ref>
+
+Technology writer [[Roger Bridgman]] commented on Dewdney's statements about neural nets: 
+<blockquote>Neural networks, for instance, are in the dock not only because they have been hyped to high heaven, (what hasn't?) but also because you could create a successful net without understanding how it worked: the bunch of numbers that captures its behaviour would in all probability be "an opaque, unreadable table...valueless as a scientific resource".
+
+In spite of his emphatic declaration that science is not technology, Dewdney seems here to pillory neural nets as bad science when most of those devising them are just trying to be good engineers. An unreadable table that a useful machine could read would still be well worth having.<ref>{{Cite web |url=http://members.fortunecity.com/templarseries/popper.html |title=Roger Bridgman's defence of neural networks |access-date=August 1, 2006 |archive-url=https://web.archive.org/web/20120319163352/http://members.fortunecity.com/templarseries/popper.html |archive-date=March 19, 2012 |url-status=dead }}</ref>
+</blockquote>
+Although it is true that analyzing what has been learned by an artificial neural network is difficult, it is much easier to do so than to analyze what has been learned by a biological neural network. Moreover, recent emphasis on the explainability of AI has contributed towards the development of methods, notably those based on attention mechanisms, for visualizing and explaining learned neural networks. Furthermore, researchers involved in exploring learning algorithms for neural networks are gradually uncovering generic principles that allow a learning machine to be successful. For example, Bengio and LeCun (2007) wrote an article regarding local vs non-local learning, as well as shallow vs deep architecture.<ref>{{cite web|url=http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/4|title=Scaling Learning Algorithms towards {AI} - LISA - Publications - Aigaion 2.0|website=www.iro.umontreal.ca}}</ref>
+
+Some other criticisms came from believers of hybrid models (combining neural networks and [[symbolic artificial intelligence|symbolic]] approaches). They advocate the intermix of these two approaches and believe that hybrid models can better capture the mechanisms of the human mind (Sun and Bookman, 1990).{{full citation needed|date=April 2019}}
+
+==Recent improvements==
+While initially research had been concerned mostly with the electrical characteristics of neurons, a particularly important part of the investigation in recent years has been the exploration of the role of [[neuromodulators]] such as [[dopamine]], [[acetylcholine]], and [[serotonin]] on behaviour and learning.
+
+[[Biophysics|Biophysical]] models, such as [[BCM theory]], have been important in understanding mechanisms for [[synaptic plasticity]], and have had applications in both computer science and neuroscience. Research is ongoing in understanding the computational algorithms used in the brain, with some recent biological evidence for [[radial basis networks]] and [[neural backpropagation]] as mechanisms for processing data.
+
+Computational devices have been created in CMOS for both biophysical simulation and [[neuromorphic computing]]. More recent efforts show promise for creating [[nanodevice]]s for very large scale [[principal component]]s analyses and [[convolution]].<ref>{{cite journal |last=Yang |first=J. J. |last2=Pickett |first2=M. D. |last3=Li |first3=X. M. |last4=Ohlberg |first4=D. A. A. |last5=Stewart |first5=D. R. |last6=Williams |first6=R. S. |display-authors=1 |title=Memristive switching mechanism for metal/oxide/metal nanodevices |journal=[[Nature Nanotechnology|Nat. Nanotechnol.]] |year=2008 |volume=3 |issue= 7|pages=429–433 |doi=10.1038/nnano.2008.160 |pmid=18654568 }}</ref> If successful, these efforts could usher in a new era of [[neural computing]] that is a step beyond digital computing,<ref>{{cite journal |last=Strukov |first=D. B. |last2=Snider |first2=G. S. |last3=Stewart |first3=D. R. |last4=Williams |first4=R. S. |display-authors=1 |title=The missing memristor found |journal=Nature |year=2008 |volume=453 |issue= 7191|pages=80–83 |doi=10.1038/nature06932 |pmid=18451858 |bibcode=2008Natur.453...80S }}</ref> because it depends on [[learning]] rather than [[programming language|programming]] and because it is fundamentally [[Analog signal|analog]] rather than [[Digital data|digital]] even though the first instantiations may in fact be with CMOS digital devices.
+
+Between 2009 and 2012, the [[recurrent neural network]]s and deep [[feedforward neural network]]s developed in the research group of [[Jürgen Schmidhuber]] at the [[IDSIA|Swiss AI Lab IDSIA]] have won eight international competitions in [[pattern recognition]] and [[machine learning]].<ref>{{cite web |url=http://www.kurzweilai.net/how-bio-inspired-deep-learning-keeps-winning-competitions |title=2012 Kurzweil AI Interview with Jürgen Schmidhuber on the eight competitions won by his Deep Learning team 2009–2012 |access-date=December 10, 2012 |archive-url=https://web.archive.org/web/20180831075249/http://www.kurzweilai.net/how-bio-inspired-deep-learning-keeps-winning-competitions |archive-date=August 31, 2018 |url-status=dead }}</ref> For example, multi-dimensional [[long short term memory]] (LSTM)<ref>{{cite book |last=Graves |first=Alex |last2=Schmidhuber |first2=Jürgen |chapter=Offline Handwriting Recognition with Multidimensional Recurrent Neural Networks |editor-last=Bengio |editor-first=Yoshua |editor2-last=Schuurmans |editor2-first=Dale |editor3-last=Lafferty |editor3-first=John |editor4-last=Williams |editor4-first=Chris K. I. |editor5-last=Culotta |editor5-first=Aron |title=Advances in Neural Information Processing Systems 21 (NIPS'21) |publisher=Neural Information Processing Systems (NIPS) Foundation |year=2008 |pages=545–552 |chapter-url=http://papers.nips.cc/paper/3449-offline-handwriting-recognition-with-multidimensional-recurrent-neural-networks }}</ref><ref>{{cite journal |first=A. |last=Graves |first2=M. |last2=Liwicki |first3=S. |last3=Fernandez |first4=R. |last4=Bertolami |first5=H. |last5=Bunke |first6=J. |last6=Schmidhuber |title=A Novel Connectionist System for Improved Unconstrained Handwriting Recognition |journal=IEEE Transactions on Pattern Analysis and Machine Intelligence |volume=31 |issue=5 |year=2009 |pages=855–868 |doi=10.1109/TPAMI.2008.137 |pmid=19299860 |citeseerx=10.1.1.139.4502 }}</ref> won three competitions in connected handwriting recognition at the 2009 International Conference on Document Analysis and Recognition (ICDAR), without any prior knowledge about the three different languages to be learned.
+
+Variants of the [[back-propagation]] algorithm as well as unsupervised methods by [[Geoff Hinton]] and colleagues at the [[University of Toronto]] can be used to train deep, highly nonlinear neural architectures,<ref>{{cite journal
+ |doi=10.1162/neco.2006.18.7.1527
+ |last1=Hinton |first1=G. E. |author-link1=Geoffrey Hinton
+ |last2=Osindero |first2=S.
+ |last3=Teh |first3=Y. 
+ |year=2006
+ |title=A fast learning algorithm for deep belief nets
+ |journal=[[Neural Computation (journal)|Neural Computation]]
+ |volume=18 
+ |issue=7 |pages=1527–1554 
+ |url=http://www.cs.toronto.edu/~hinton/absps/fastnc.pdf 
+ |pmid=16764513
+|citeseerx=10.1.1.76.1541 }}</ref> similar to the 1980 [[Neocognitron]] by [[Kunihiko Fukushima]],<ref>{{cite journal |first=K. |last=Fukushima |title=Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position |journal=Biological Cybernetics |volume=36 |issue=4 |pages=93–202 |year=1980 |doi=10.1007/BF00344251 |pmid=7370364 }}</ref> and the "standard architecture of vision",<ref>{{cite journal |first=M. |last=Riesenhuber |author-link2=Tomaso Poggio |first2=T. |last2=Poggio |title=Hierarchical models of object recognition in cortex |journal=[[Nature Neuroscience]] |year=1999 |volume=2 |issue= 11|pages=1019–1025 |doi=10.1038/14819 |pmid=10526343 }}</ref> inspired by the simple and complex cells identified by [[David H. Hubel]] and [[Torsten Wiesel]] in the primary [[visual cortex]].
+
+Radial basis function and wavelet networks have also been introduced. These can be shown to offer best approximation properties and have been applied in [[nonlinear system identification]] and classification applications.<ref name="SAB1" />
+
+[[Deep learning]] feedforward networks alternate [[convolution]]al layers and max-pooling layers, topped by several pure classification layers. Fast [[GPU]]-based implementations of this approach have won several pattern recognition contests, including the IJCNN 2011 Traffic Sign Recognition Competition<ref>D. C. Ciresan, U. Meier, J. Masci, J. Schmidhuber. [https://people.lu.usi.ch/mascij/data/papers/2012_nn_traffic.pdf Multi-Column Deep Neural Network for Traffic Sign Classification]. Neural Networks, 2012.</ref> and the  ISBI 2012 Segmentation of Neuronal Structures in Electron Microscopy Stacks challenge.<ref>D. Ciresan, A. Giusti, L. Gambardella, J. Schmidhuber. [https://papers.nips.cc/paper/4741-deep-neural-networks-segment-neuronal-membranes-in-electron-microscopy-images.pdf Deep Neural Networks Segment Neuronal Membranes in Electron Microscopy Images]. In Advances in Neural Information Processing Systems (NIPS 2012), Lake Tahoe, 2012.</ref> Such neural networks also were the first artificial pattern recognizers to achieve human-competitive or even superhuman performance<ref>D. C. Ciresan, U. Meier, [[Jürgen Schmidhuber|J. Schmidhuber]]. Multi-column Deep Neural Networks for Image Classification. IEEE Conf. on Computer Vision and Pattern Recognition CVPR 2012.</ref> on benchmarks such as traffic sign recognition (IJCNN 2012), or the MNIST handwritten digits problem of [[Yann LeCun]] and colleagues at [[NYU]].
+
+==See also==
+{{columns-list|colwidth=22em|
+*[[ADALINE]]
+*[[Adaptive resonance theory]]
+*[[Biological cybernetics]]
+*[[Biologically inspired computing]]
+*[[Cerebellar model articulation controller]]
+*[[Cognitive architecture]]
+*[[Cognitive science]]
+*[[Connectomics]]
+*[[Cultured neuronal networks]]
+*[[Deep learning]]
+*[[Deep Image Prior]]
+*[[Digital morphogenesis]]
+*[[Efficiently updatable neural network]]
+*[[Exclusive or]]
+*[[Evolutionary algorithm]]
+*[[Genetic algorithm]]
+*[[Gene expression programming]]
+*[[Generative adversarial network]]
+*[[Group method of data handling]]
+*[[Habituation]]
+*[[In situ adaptive tabulation]]
+*[[Memristor]]
+*[[Multilinear subspace learning]]
+*[[Neural network software]]
+*[[Nonlinear system identification]]
+*[[Parallel constraint satisfaction processes]]
+*[[Parallel distributed processing]]
+*[[Predictive analytics]]
+*[[Radial basis function network]]
+*[[Self-organizing map]]
+*[[Simulated reality]]
+*[[Support vector machine]]
+*[[Tensor product network]]
+*[[Time delay neural network]]
+}}
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+{{Spoken Wikipedia|En-Neural_network.ogg|date=2011-11-27}}
+* [http://www.dkriesel.com/en/science/neural_networks A Brief Introduction to Neural Networks (D. Kriesel)] - Illustrated, bilingual manuscript about artificial neural networks; Topics so far: Perceptrons, Backpropagation, Radial Basis Functions, Recurrent Neural Networks, Self Organizing Maps, Hopfield Networks.
+*[http://www.msm.cam.ac.uk/phase-trans/abstracts/neural.review.html Review of Neural Networks in Materials Science]
+*[https://web.archive.org/web/20090318133122/http://www.gc.ssr.upm.es/inves/neural/ann1/anntutorial.html Artificial Neural Networks Tutorial in three languages (Univ. Politécnica de Madrid)]
+*[https://web.archive.org/web/20091216110504/http://www.doc.ic.ac.uk/~nd/surprise_96/journal/vol4/cs11/report.html Another introduction to ANN]
+*[https://www.youtube.com/watch?v=AyzOUbkUf3M Next Generation of Neural Networks] - Google Tech Talks
+*[http://www.msm.cam.ac.uk/phase-trans/2009/performance.html Performance of Neural Networks]
+*[http://www.msm.cam.ac.uk/phase-trans/2009/review_Bhadeshia_SADM.pdf Neural Networks and Information]
+*{{cite web |first=Grant |last=Sanderson |title=But what ''is'' a Neural Network? |work=[[3Blue1Brown]] |date=October 5, 2017 |url=https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi |via=[[YouTube]] }}
+
+{{DEFAULTSORT:Neural Network}}
+[[Category:Computational neuroscience]]
+[[Category:Neural networks| ]]
+[[Category:Network architecture]]
+[[Category:Networks]]
+[[Category:Econometrics]]
+[[Category:Information, knowledge, and uncertainty]]
+[[Category:Artificial intelligence]]
+[[Category:Emerging technologies]]

@@ -1,0 +1,88 @@
+In [[graph theory]], a graph is said to be a '''pseudorandom graph''' if it obeys certain properties that [[random graphs]] obey [[with high probability]]. There is no concrete definition of graph pseudorandomness, but there are many reasonable characterizations of pseudorandomness one can consider.
+
+Pseudorandom properties were first formally considered by Andrew Thomason in 1987.<ref name=th>{{cite journal |last1=Thomason |first1=Andrew |title=Pseudo-random graphs |journal=Annals of Discrete Math |date=1987 |volume=33 |pages=307–331 |url=https://www.sciencedirect.com/science/article/pii/S0304020808730639}}</ref><ref name=ks>{{cite journal |last1=Krivelevich |first1=Michael |last2=Sudakov |first2=Benny |title=Pseudo-random Graphs |journal=More Sets, Graphs and Numbers |date=2006 |volume=15 |pages=199–262 |url=https://people.math.ethz.ch/~sudakovb/pseudo-random-survey.pdf|doi=10.1007/978-3-540-32439-3_10 |isbn=978-3-540-32377-8 |series=Bolyai Society Mathematical Studies }}</ref> He defined a condition called "jumbledness": a graph <math>G=(V,E)</math> is said to be <math>(p,\alpha)</math>-''jumbled'' for real <math>p</math> and <math>\alpha</math> with <math>0<p<1\leq \alpha</math> if
+
+:<math>\left|e(U)-p\binom{|U|}{2}\right|\leq \alpha|U|</math>
+
+for every subset <math>U</math> of the vertex set <math>V</math>, where <math>e(U)</math> is the number of edges among <math>U</math> (equivalently, the number of edges in the subgraph [[induced subgraph|induced]] by the vertex set <math>U</math>). It can be shown that the [[Erdős–Rényi model|Erdős–Rényi]] random graph <math>G(n,p)</math> is [[almost surely]] <math>(p,O(\sqrt{np}))</math>-jumbled.{{r|ks|p=6}} However, graphs with less uniformly distributed edges, for example a graph on <math>2n</math> vertices consisting of an <math>n</math>-vertex [[complete graph]] and <math>n</math> completely independent vertices, are not <math>(p,\alpha)</math>-jumbled for any small <math>\alpha</math>, making jumbledness a reasonable quantifier for "random-like" properties of a graph's edge distribution.
+
+== Connection to local conditions ==
+
+Thomason showed that the "jumbled" condition is implied by a simpler-to-check condition, only depending on the codegree of two vertices and not every subset of the vertex set of the graph. Letting <math>\operatorname{codeg}(u,v)</math> be the number of common neighbors of two vertices <math>u</math> and <math>v</math>, Thomason showed that, given a graph <math>G</math> on <math>n</math> vertices with minimum degree <math>np</math>, if <math>\operatorname{codeg}(u,v)\leq np^2+\ell</math> for every <math>u</math> and <math>v</math>, then <math>G</math> is <math> \left( p,\sqrt{(p+\ell)n}\,\right) </math>-jumbled.{{r|ks|p=7}} This result shows how to check the jumbledness condition algorithmically in [[polynomial time]] in the number of vertices, and can be used to show pseudorandomness of specific graphs.{{r|ks|p=7}}
+
+==Chung–Graham–Wilson theorem==
+
+In the spirit of the conditions considered by Thomason and their alternately global and local nature, several weaker conditions were considered by Chung, Graham, and Wilson in 1989:<ref name=cgw>{{cite journal |last1=Chung |first1=F. R. K. |last2=Graham |first2=R. L. |last3=Wilson |first3=R. M. |title=Quasi-Random Graphs |journal=Combinatorica |date=1989 |volume=9 |issue=4 |pages=345–362 |url=http://www.math.ucsd.edu/~fan/wp/quasirandom1.pdf|doi=10.1007/BF02125347 }}</ref> a graph <math>G</math> on <math>n</math> vertices with edge density <math>p</math> and some <math>\varepsilon>0</math> can satisfy each of these conditions if
+
+* '''Discrepancy''': for any subsets <math>X,Y</math> of the vertex set <math>V=V(G)</math>, the number of edges between <math>X</math> and <math>Y</math> is within <math>\varepsilon n^2</math> of <math>p|X||Y|</math>.
+* '''Discrepancy on individual sets''': for any subset <math>X</math> of <math>V</math>, the number of edges among <math>X</math> is within <math>\varepsilon n^2</math> of <math>p\binom{|X|}{2}</math>.
+* '''Subgraph counting''': for every graph <math>H</math>, the number of labeled copies of <math>H</math> among the subgraphs of <math>G</math> is within <math>\varepsilon n^{v(H)}</math> of <math>p^{e(H)}n^{v(H)}</math>.
+* '''4-cycle counting''': the number of labeled <math>4</math>-cycles among the subgraphs of <math>G</math> is within <math>\varepsilon n^4</math> of <math>p^4n^4</math>.
+* '''Codegree''': letting <math>\operatorname{codeg}(u,v)</math> be the number of common neighbors of two vertices <math>u</math> and <math>v</math>,
+
+:<math>\sum_{u,v\in V}\big|\operatorname{codeg}(u,v)-p^2 n\big|\leq \varepsilon n^3.</math>
+
+* '''Eigenvalue bounding''': If <math>\lambda_1\geq \lambda_2\geq \cdots \geq \lambda_n</math> are the eigenvalues of the [[adjacency matrix]] of <math>G</math>, then <math>\lambda_1</math> is within <math>\varepsilon n</math> of <math>pn</math> and <math>\max\left(\left|\lambda_2\right|,\left|\lambda_n\right|\right)\leq \varepsilon n</math>.
+
+These conditions may all be stated in terms of a sequence of graphs <math>\{G_n\}</math> where <math>G_n</math> is on <math>n</math> vertices with <math>(p+o(1))\binom{n}{2}</math> edges. For example, the 4-cycle counting condition becomes that the number of copies of any graph <math>H</math> in <math>G_n</math> is <math>\left(p^{e(H)}+o(1)\right)e^{v(H)}</math> as <math>n\to\infty</math>, and the discrepancy condition becomes that <math>\left|e(X,Y)-p|X||Y|\right|=o(n^2)</math>, using [[little-o notation]].
+
+A pivotal result about graph pseudorandomness is the Chung–Graham–Wilson theorem, which states that many of the above conditions are equivalent, up to polynomial changes in <math>\varepsilon</math>{{r|cgw}}. It is considered particularly surprising{{r|ks|p=9}} that the weak condition of having the "correct" 4-cycle density implies the other seemingly much stronger pseudorandomness conditions.
+
+Some implications in the Chung–Graham–Wilson theorem are clear by the definitions of the conditions: the discrepancy on individual sets condition is simply the special case of the discrepancy condition for <math>Y=X</math>, and 4-cycle counting is a special case of subgraph counting. In addition, the graph counting lemma, a straightforward generalization of the [[Graph removal lemma#Proof of the graph removal lemma|triangle counting lemma]], implies that the discrepancy condition implies subgraph counting.
+
+The fact that 4-cycle counting implies the codegree condition can be proven by a technique similar to the second-moment method. Firstly, the sum of codegrees can be upper-bounded:
+
+:<math>\sum_{u,v\in G} \operatorname{codeg}(u,v)=\sum_{x\in G} \deg(x)^2\ge n\left(\frac{2e(G)}{n}\right)^2=\left(p^2+o(1)\right)n^3.</math>
+
+Given 4-cycles, the sum of squares of codegrees is bounded:
+
+: <math>\sum_{u,v} \operatorname{codeg}(u,v)^2=\text{Number of labeled copies of }C_4 + o(n^4)\le \left(p^4+o(1)\right)n^4.</math>
+
+Therefore, the [[Cauchy–Schwarz inequality]] gives
+
+:<math>\sum_{u,v\in G}|\operatorname{codeg}(u,v)-p^2n|\le n\left(\sum_{u,v\in G} \left(\operatorname{codeg}(u,v)-p^2n\right)^2\right)^{1/2},</math>
+
+which can be expanded out using our bounds on the first and second moments of <math>\operatorname{codeg}</math> to give the desired bound. A proof that the codegree condition implies the discrepancy condition can be done by a similar, albeit trickier, computation involving the Cauchy–Schwarz inequality.
+
+The eigenvalue condition and the 4-cycle condition can be related by noting that the number of labeled 4-cycles in <math>G</math> is, up to <math>o(1)</math> stemming from degenerate 4-cycles, <math>\operatorname{tr}\left(A_G^4\right)</math>, where <math>A_G</math> is the adjacency matrix of <math>G</math>. The two conditions can then be shown to be equivalent by invocation of the [[Min-max theorem|Courant–Fischer theorem]].{{r|cgw}}
+
+==Connections to graph regularity==
+
+The concept of graphs that act like random graphs connects strongly to the concept of graph regularity used in the [[Szemerédi regularity lemma]]. For <math>\varepsilon>0</math>, a pair of vertex sets <math>X,Y</math> is called '''<math>\varepsilon</math>-regular''', if for all subsets <math>A\subset X,B\subset Y</math> satisfying <math>|A|\geq\varepsilon|X|,|B|\geq\varepsilon|Y|</math>, it holds that
+
+:<math>\left| d(X,Y) - d(A,B) \right| \le \varepsilon,</math>
+
+where <math>d(X,Y)</math> denotes the ''edge density'' between <math>X</math> and <math>Y</math>: the number of edges between <math>X</math> and <math>Y</math> divided by <math>|X||Y|</math>. This condition implies a bipartite analogue of the discrepancy condition, and essentially states that the edges between <math>A</math> and <math>B</math> behave in a "random-like" fashion. In addition, it was shown by [[Miklós Simonovits]] and [[Vera T. Sós]] in 1991 that a graph satisfies the above weak pseudorandomness conditions used in the Chung–Graham–Wilson theorem if and only if it possesses a Szemerédi partition where nearly all densities are close to the edge density of the whole graph.<ref>{{cite journal |last1=Simonovits |first1=Miklós |last2=Sós |first2=Vera |title=Szemerédi's partition and quasirandomness |journal=Random Structures and Algorithms |date=1991 |volume=2 |pages=1–10|doi=10.1002/rsa.3240020102 }}</ref>
+
+==Sparse pseudorandomness==
+
+===Chung–Graham–Wilson theorem analogues===
+
+The Chung–Graham–Wilson theorem, specifically the implication of subgraph counting from discrepancy, does not follow for sequences of graphs with edge density approaching <math>0</math>, or, for example, the common case of <math>d</math>-[[regular graph|regular]] graphs on <math>n</math> vertices as <math>n\to\infty</math>. The following sparse analogues of the discrepancy and eigenvalue bounding conditions are commonly considered:
+
+* '''Sparse discrepancy''': for any subsets <math>X,Y</math> of the vertex set <math>V=V(G)</math>, the number of edges between <math>X</math> and <math>Y</math> is within <math>\varepsilon dn</math> of <math>\frac{d}{n}|X||Y|</math>.
+* '''Sparse eigenvalue bounding''': If <math>\lambda_1\geq \lambda_2\geq \cdots \geq \lambda_n</math> are the eigenvalues of the [[adjacency matrix]] of <math>G</math>, then <math>\max\left(\left|\lambda_2\right|,\left|\lambda_n\right|\right)\leq \varepsilon d</math>.
+
+It is generally true that this eigenvalue condition implies the corresponding discrepancy condition, but the reverse is not true: the disjoint union of a random large <math>d</math>-regular graph and a <math>d+1</math>-vertex complete graph has two eigenvalues of exactly <math>d</math> but is likely to satisfy the discrepancy property. However, as proven by David Conlon and Yufei Zhao in 2017, slight variants of the discrepancy and eigenvalue conditions for <math>d</math>-regular [[Cayley graph]]s are equivalent up to linear scaling in <math>\varepsilon</math>.<ref>{{cite journal |last1=Conlon |first1=David |last2=Zhao |first2=Yufei |title=Quasirandom Cayley graphs |journal=Discrete Analysis |date=2017 |volume=6 |arxiv=1603.03025 |doi=10.19086/da.1294 }}</ref> One direction of this follows from the [[expander mixing lemma]], while the other requires the assumption that the graph is a Cayley graph and uses the [[Grothendieck inequality]].
+
+===Consequences of eigenvalue bounding===
+
+A <math>d</math>-regular graph <math>G</math> on <math>n</math> vertices is called an ''<math>(n,d,\lambda)</math>-graph'' if, letting the eigenvalues of the adjacency matrix of <math>G</math> be <math>d=\lambda_1\geq \lambda_2\geq \cdots \geq \lambda_n</math>, <math>\max\left(\left|\lambda_2\right|,\left|\lambda_n\right|\right)\leq \lambda</math>. The [[Ramanujan graph#Extremality of Ramanujan graphs|Alon-Boppana bound]] gives that <math>\max\left(\left|\lambda_2\right|,\left|\lambda_n\right|\right)\geq 2\sqrt{d-1}-o(1)</math> (where the <math>o(1)</math> term is as <math>n\to\infty</math>), and Joel Friedman proved that a random <math>d</math>-regular graph on <math>n</math> vertices is <math>(n,d,\lambda)</math> for <math>\lambda=2\sqrt{d-1}+o(1)</math>.<ref>{{Cite journal|last=Friedman|first=Joel|date=2003|title=Relative expanders or weakly relatively Ramanujan graphs|journal=Duke Math. J.|volume=118|issue=1|pages=19–35|mr=1978881|doi=10.1215/S0012-7094-03-11812-8}}</ref> In this sense, how much <math>\lambda</math> exceeds <math>2\sqrt{d-1}</math> is a general measure of the non-randomness of a graph. There are graphs with <math>\lambda\leq 2\sqrt{d-1}</math>, which are termed [[Ramanujan graphs]]. They have been studied extensively and there are a number of open problems relating to their existence and commonness.
+
+Given an <math>(n,d,\lambda)</math> graph for small <math>\lambda</math>, many standard graph-theoretic quantities can be bounded to near what one would expect from a random graph. In particular, the size of <math>\lambda</math> has a direct effect on subset edge density discrepancies via the expander mixing lemma. Other examples are as follows, letting <math>G</math> be an <math>(n,d,\lambda)</math> graph:
+
+* If <math>d\leq \frac{n}{2}</math>, the [[K-vertex-connected graph|vertex-connectivity]] <math>\kappa(G)</math> of <math>G</math> satisfies <math>\kappa(G)\geq d-\frac{36\lambda^2}{d}.</math><ref>{{cite journal |last1=Krivelevich |first1=Michael |last2=Sudakov |first2=Benny |last3=Vu |first3=Van H. |last4=Wormald |first4=Nicholas C. |title=Random regular graphs of high degree |journal=Random Structures and Algorithms |date=2001 |volume=18 |issue=4 |pages=346–363 |doi=10.1002/rsa.1013 }}</ref>
+* If <math>\lambda\leq d-2</math>, <math>G</math> is <math>d</math> [[K-edge-connected graph|edge-connected]]. If <math>n</math> is even, <math>G</math> contains a perfect matching.{{r|ks|p=32}}
+* The [[maximum cut]] of <math>G</math> is at most <math>\frac{n(d+\lambda)}{4}</math>.{{r|ks|p=33}}
+* The largest [[independent set (graph theory)|independent subset]] of a subset <math>U\subset V(G)</math> in <math>G</math> is of size at least <math>\frac{n}{2(d-\lambda)}\ln\left(\frac{|U|(d-\lambda)}{n(\lambda+1)}+1\right).</math><ref name=aks>{{cite journal |last1=Alon |first1=Noga |last2=Krivelevich |first2=Michael |last3=Sudakov |first3=Benny |title=List coloring of random and pseudorandom graphs |journal=Combinatorica |date=1999 |volume=19 |issue=4 |pages=453–472|doi=10.1007/s004939970001 }}</ref>
+* The [[chromatic number]] of <math>G</math> is at most <math>\frac{6(d-\lambda)}{\ln\left(\frac{d+1}{\lambda+1}\right)}.</math>{{r|aks}}
+
+===Connections to the Green–Tao theorem===
+
+Pseudorandom graphs factor prominently in the proof of the [[Green–Tao theorem]]. The theorem is proven by transferring [[Szemerédi's theorem]], the statement that a set of positive integers with positive [[natural density]] contains arbitrarily long arithmetic progressions, to the sparse setting (as the primes have natural density <math>0</math> in the integers). The transference to sparse sets requires that the sets behave pseudorandomly, in the sense that corresponding graphs and hypergraphs have the correct subgraph densities for some fixed set of small (hyper)subgraphs.<ref>{{cite journal | arxiv=1403.2957 | title=The Green–Tao theorem: an exposition | first1=David | last1=Conlon | author1link=David Conlon | first2=Jacob | last2=Fox | author2link=Jacob Fox | first3=Yufei | last3=Zhao | mr=3285854 | journal=EMS Surveys in Mathematical Sciences | year=2014 | doi=10.4171/EMSS/6 | volume=1 | issue=2 | pages=249–282 | ref=harv}}</ref> It is then shown that a suitable superset of the prime numbers, called pseudoprimes, in which the primes are dense obeys these pseudorandomness conditions, completing the proof.
+
+==References==
+{{Reflist}}
+
+[[Category:Mathematics]]
+[[Category:Graph theory]]

@@ -1,0 +1,186 @@
+{{short description|Field that uses computers and mathematical models to analyze and solve scientific problems}}
+'''Computational science''', also known as '''scientific computing''' or '''scientific computation''' ('''SC'''), is a rapidly growing field that uses advanced [[computing]] capabilities to understand and solve complex problems. It is an area of science which spans many disciplines, but at its core, it involves the development of models and simulations to understand natural systems.
+*  [[Algorithm]]s ([[Numerical analysis|numerical]] and non-numerical): [[mathematical model]]s, [[computational model]]s, and [[computer simulation]]s developed to solve [[science]] (e.g., [[Computational biology|biological]], [[Computational physics|physical]], and [[Computational sociology|social]]), [[engineering]], and [[humanities]] problems
+* [[Computer hardware]] that develops and optimizes the advanced system [[Computer hardware|hardware]], [[firmware]], [[Computer network|networking]], and [[data management]] components needed to solve computationally demanding problems
+* The computing infrastructure that supports both the science and engineering problem solving and the developmental computer and information science 
+In practical use, it is typically the application of [[computer simulation]] and other forms of [[computation]] from [[numerical analysis]] and [[theoretical computer science]] to solve problems in various scientific disciplines. The field is different from theory and laboratory experiment which are the traditional forms of science and [[engineering]]. The scientific computing approach is to gain understanding, mainly through the analysis of mathematical models implemented on [[computer]]s. Scientists and engineers develop [[computer programs]], [[application software]], that model systems being studied and run these programs with various sets of input parameters. The essence of computational science is the application of numerical algorithms<ref>Nonweiler T. R., 1986. Computational Mathematics: An Introduction to Numerical Approximation, John Wiley and Sons</ref> and/or [[computational mathematics]]. In some cases, these models require massive amounts of calculations (usually [[floating-point]]) and are often executed on [[supercomputer]]s or [[distributed computing]] platforms.
+
+== The computational scientist ==
+[[File:Ways to study a system.png|thumb|Ways to study a system]]
+The term [[computational scientist]] is used to describe someone skilled in scientific computing. This person is usually a scientist, an engineer or an applied mathematician who applies [[high-performance computing]] in different ways to advance the state-of-the-art in their respective applied disciplines in physics, chemistry or engineering.
+
+Computational science is now commonly considered a third mode of [[science]], complementing and adding to [[experimentation]]/[[observation]] and [[theory]] (see image on the right).<ref>[http://www.siam.org/students/resources/report.php Graduate Education for Computational Science and Engineering].Siam.org, [[Society for Industrial and Applied Mathematics]] (SIAM) website; accessed Feb 2013.</ref> Here, we define a [[system]] as a potential source of data,<ref>{{Cite book|title=Theory of Modeling and Simulation|last=Siegler|first=Bernard|year=1976}}</ref> an [[experiment]] as a process of extracting data from a system by exerting it through its inputs<ref>{{Cite book|title=Continuous System Modelling|last=Cellier|first=François|year=1990}}</ref> and a [[Computer model|model]] (''M'') for a system (''S'') and an experiment (''E'') as anything to which E can be applied in order to answer questions about S.<ref>{{Cite book|title=Models,Minds, Machines|last=Minski|first=Marvin|year=1965}}</ref>  A computational scientist should be capable of:
+* recognizing '''complex problems'''
+* adequately '''conceptualise''' the system containing these problems
+* design a framework of algorithms suitable for studying this system: the '''simulation'''
+* choose a suitable '''computing infrastructure''' ([[parallel computing]]/[[grid computing]]/[[supercomputer]]s)
+* hereby, maximising the '''computational power''' of the simulation
+* assessing to what level the output of the simulation resembles the systems: the model is '''validated'''
+* adjust the conceptualisation of the system accordingly
+* repeat cycle until a suitable level of validation is obtained: the computational scientists trusts that the simulation generates adequately realistic results for the system, under the studied conditions
+In fact, substantial effort in computational sciences has been devoted to the development of algorithms, the efficient implementation in programming languages, and validation of computational results. A collection of problems and solutions in computational science can be found in Steeb, Hardy, Hardy and Stoop (2004).<ref>Steeb W.-H., Hardy Y., Hardy A. and Stoop R., 2004. Problems and Solutions in Scientific Computing with C++ and Java Simulations, World Scientific Publishing. {{ISBN|981-256-112-9}}</ref>
+
+Philosophers of science addressed the question to what degree computational science qualifies as science, among them Humphreys<ref>Humphreys, Paul. ''Extending ourselves: Computational science, empiricism, and scientific method.'' Oxford University Press, 2004.</ref> and Gelfert.<ref>Gelfert, Axel. 2016. ''How to do science with models: A philosophical primer.'' Cham: Springer.</ref> They address the general question of epistemology: how do we gain insight from such computational science approaches. Tolk<ref>Tolk, Andreas. "[https://books.google.com/books?hl=en&lr=&id=t3H0BwAAQBAJ&oi=fnd&pg=PA87&ots=Q3eyC8ytJO&sig=md19qkjAZIYgSGUAMywX5nMojD0#v=onepage&q&f=false Learning Something Right from Models That Are Wrong: Epistemology of Simulation]." In ''Concepts and Methodologies for Modeling and Simulation,'' edited by L. Yilmaz, pp. 87-106, Cham: Springer International Publishing, 2015.</ref> uses these insights to show the epistemological constraints of computer-based simulation research. As computational science uses mathematical models representing the underlying theory in executable form, in essence, they apply modeling (theory building) and simulation (implementation and execution). While simulation and computational science are our most sophisticated way to express our knowledge and understanding, they also come with all constraints and limits already known for computational solutions.
+
+== Applications of computational science ==
+Problem domains for computational science/scientific computing include:
+
+=== Predictive computational science ===
+Predictive computational science is a scientific discipline concerned with the formulation, calibration, numerical solution and validation of mathematical models designed to predict specific aspects of physical events, given initial and boundary conditions and a set of characterizing parameters and associated uncertainties.<ref>Oden, J.T., Babuška, I. and Faghihi, D., 2017. Predictive computational science: Computer predictions in the presence of uncertainty. Encyclopedia of Computational Mechanics. Second Edition, pp. 1-26.</ref> In typical cases, the predictive statement is formulated in terms of probabilities.  For example, given a mechanical component and a periodic loading condition, “the probability is (say) 90% that the number of cycles at failure (Nf) will be in the interval N1<Nf<N2”.<ref>Szabó B, Actis R and Rusk D.  Validation of notch sensitivity factors. Journal of Verification, Validation and Uncertainty Quantification.  4 011004, 2019</ref>
+
+=== Urban complex systems ===
+In 2015, over half the world's population live in cities. By the middle of the 21st century, it is estimated that 75% of the world's population will be [[Urban area|urban]]. This urban growth is focused in the urban populations of developing countries where city dwellers will more than double, increasing from 2.5 billion in 2009 to almost 5.2 billion in 2050. Cities are massive complex systems created by humans, made up of humans and governed by humans. Trying to predict, understand and somehow shape the development of cities in the future requires complex thinking, and requires computational models and simulations to help mitigate challenges and possible disasters. The focus of research in urban complex systems is, through modeling and simulation, to build a greater understanding of city dynamics and help prepare for the coming [[Urbanization|urbanisation]].
+
+=== Computational finance ===
+{{main|Computational finance}}
+In today's [[financial market]]s huge volumes of interdependent assets are traded by a large number of interacting market participants in different locations and time zones. Their behavior is of unprecedented complexity and the characterization and measurement of the risk inherent to these highly diverse set of instruments is typically based on complicated [[Mathematical model|mathematical]] and [[computational model]]s. Solving these models exactly in closed form, even at a single instrument level, is typically not possible, and therefore we have to look for efficient [[numerical algorithm]]s. This has become even more urgent and complex recently, as the credit crisis has clearly demonstrated the role of cascading effects going from single instruments through portfolios of single institutions to even the interconnected trading network. Understanding this requires a multi-scale and holistic approach where interdependent risk factors such as market, credit and liquidity risk are modelled simultaneously and at different interconnected scales.
+
+=== Computational biology ===
+{{main|Computational biology}}
+Exciting new developments in [[biotechnology]] are now revolutionizing biology and [[biomedical research]]. Examples of these techniques are [[DNA sequencing|high-throughput sequencing]], high-throughput [[Real-time polymerase chain reaction|quantitative PCR]], intra-cellular imaging, [[In situ hybridization|in-situ hybridization]] of gene expression, three-dimensional imaging techniques like [[Light sheet fluorescence microscopy|Light Sheet Fluorescence Microscopy]] and [[Optical projection tomography|Optical Projection]], (micro)-[[CT scan|Computer Tomography]]. Given the massive amounts of complicated data that is generated by these techniques, their meaningful interpretation, and even their storage, form major challenges calling for new approaches. Going beyond current bioinformatics approaches, computational biology needs to develop new methods to discover meaningful patterns in these large data sets. Model-based reconstruction of [[Gene regulatory network|gene networks]] can be used to organize the gene expression data in a systematic way and to guide future data collection. A major challenge here is to understand how gene regulation is controlling fundamental biological processes like [[Biomineralization|biomineralisation]] and [[embryogenesis]]. The sub-processes like [[gene regulation]], [[Organic compound|organic molecules]] interacting with the mineral deposition process, [[Cell (biology)|cellular processes]], [[physiology]] and other processes at the tissue and environmental levels are linked. Rather than being directed by a central control mechanism, biomineralisation and embryogenesis can be viewed as an emergent behavior resulting from a complex system in which several sub-processes on very different [[Temporal scales|temporal]] and [[spatial scale]]s (ranging from nanometer and nanoseconds to meters and years) are connected into a multi-scale system. One of the few available options to understand such systems is by developing a [[Multiscale modeling|multi-scale model]] of the system.
+
+=== Complex systems theory ===
+{{main|Complex systems}}
+Using [[information theory]], [[Non-equilibrium thermodynamics|non-equilibrium dynamics]] and explicit simulations computational systems theory tries to uncover the true nature of [[complex adaptive system]]s.
+
+=== Computational science in engineering ===
+{{main|Computational engineering}}
+
+Computational science and engineering (CSE) is a relatively new discipline that deals with the development and application of computational models and simulations, often coupled with [[high-performance computing]], to solve complex physical problems arising in engineering analysis and design (computational engineering) as well as natural phenomena (computational science). CSE has been described as the "third mode of discovery" (next to theory and experimentation).<ref>{{Cite web |url=http://www.cseprograms.gatech.edu/sites/default/files/CSEHandbook-Students-v11.pdf |title=Computational Science and Engineering Program: Graduate Student Handbook |website=cseprograms.gatech.edu |date=September 2009 |access-date=2017-08-26 |archive-url=https://web.archive.org/web/20141014001918/http://www.cseprograms.gatech.edu/sites/default/files/CSEHandbook-Students-v11.pdf |archive-date=2014-10-14 |url-status=dead }}</ref> In many fields, computer simulation is integral and therefore essential to business and research. Computer simulation provides the capability to enter fields that are either inaccessible to traditional experimentation or where carrying out traditional empirical inquiries is prohibitively expensive. CSE should neither be confused with pure [[computer science]], nor with [[computer engineering]], although a wide domain in the former is used in CSE (e.g., certain algorithms, data structures, parallel programming, high performance computing) and some problems in the latter can be modeled and solved with CSE methods (as an application area).
+
+==Methods and algorithms==
+Algorithms and mathematical methods used in computational science are varied. Commonly applied methods include:
+
+{{div col|colwidth=20em}}
+* [[Computer algebra]],<ref>Von Zur Gathen, J., & Gerhard, J. (2013). Modern computer algebra. Cambridge University Press.</ref><ref>Geddes, K. O., Czapor, S. R., & Labahn, G. (1992). Algorithms for computer algebra. Springer Science & Business Media.</ref><ref>Albrecht, R. (2012). Computer algebra: symbolic and algebraic computation (Vol. 4). Springer Science & Business Media.</ref><ref>Mignotte, M. (2012). Mathematics for computer algebra. Springer Science & Business Media.</ref> including symbolic computation in fields such as statistics, equation solving, algebra, calculus, geometry, linear algebra, tensor analysis (multilinear algebra), optimization
+* [[Numerical analysis]],<ref name="stoer">Stoer, J., & Bulirsch, R. (2013). Introduction to numerical analysis. Springer Science & Business Media.</ref><ref name="conte">Conte, S. D., & De Boor, C. (2017). Elementary numerical analysis: an algorithmic approach. [[Society for Industrial and Applied Mathematics]].</ref><ref name="green">Greenspan, D. (2018). Numerical Analysis. CRC Press.</ref><ref name="linz">Linz, P. (2019). Theoretical numerical analysis. Courier Dover Publications.</ref> including [[Computing]] derivatives by [[finite difference]]s
+** Application of [[Taylor series]] as convergent and asymptotic series
+** [[Computing]] derivatives by [[Automatic differentiation]] (AD)
+** [[Finite element method]] for solving PDEs<ref name="bs">Brenner, S., & Scott, R. (2007). The mathematical theory of finite element methods (Vol. 15). Springer Science & Business Media.</ref><ref name="or">Oden, J. T., & Reddy, J. N. (2012). An introduction to the mathematical theory of finite elements. Courier Corporation.</ref>
+** High order difference approximations via [[Taylor series]] and [[Richardson extrapolation]]
+** [[Methods of integration]]<ref>Davis, P. J., & Rabinowitz, P. (2007). Methods of numerical integration. Courier Corporation.</ref> on a uniform [[Mesh (mathematics)|mesh]]: [[rectangle rule]] (also called ''midpoint rule''), [[trapezoid rule]], [[Simpson's rule]]
+** [[Runge–Kutta methods]] for solving ordinary differential equations
+** [[Newton's method]]<ref>Peter Deuflhard, Newton Methods for Nonlinear Problems. Affine Invariance and Adaptive Algorithms, Second printed edition. Series Computational Mathematics 35, Springer (2006)</ref>
+* [[Discrete Fourier transform]]
+* [[Monte Carlo method]]s<ref>Hammersley, J. (2013). Monte carlo methods. Springer Science & Business Media.</ref><ref>Kalos, M. H., & Whitlock, P. A. (2009). Monte carlo methods. John Wiley & Sons.</ref>
+* [[Numerical linear algebra]],<ref>Demmel, J. W. (1997). Applied numerical linear algebra. [[Society for Industrial and Applied Mathematics|SIAM]].</ref><ref>Ciarlet, P. G., Miara, B., & Thomas, J. M. (1989). Introduction to numerical linear algebra and optimization. Cambridge University Press.</ref><ref>Trefethen, Lloyd; Bau III, David (1997). Numerical Linear Algebra (1st ed.). Philadelphia: [[Society for Industrial and Applied Mathematics|SIAM]].</ref> including decompositions and [[eigenvalue algorithm]]s
+* [[Linear programming]]<ref>Vanderbei, R. J. (2015). Linear programming. Heidelberg: Springer.</ref><ref>Gass, S. I. (2003). Linear programming: methods and applications. Courier Corporation.</ref>
+* [[Branch and cut]]
+* [[Branch and bound]]
+* [[Molecular dynamics]], [[Car–Parrinello molecular dynamics]]
+* [[Space mapping]]
+* [[Time stepping]] methods for dynamical systems
+{{div col end}}
+
+Both historically and today, [[Fortran]] remains popular for most applications of scientific computing.<ref name="ars">{{cite web |url=https://arstechnica.com/science/2014/05/scientific-computings-future-can-any-coding-language-top-a-1950s-behemoth/ |title=Scientific computing's future: Can any coding language top a 1950s behemoth? |last=Phillips |first=Lee |work=[[Ars Technica]] |date=2014-05-07 |accessdate=2016-03-08 }}</ref><ref name="princeton">{{cite web |url=http://press.princeton.edu/landau_firstCourse/FortranCD/AllFort.pdf |title=A First Course in Scientific Computing |last=Landau |first=Rubin |publisher=Princeton University |date=2014-05-07 |accessdate=2016-03-08 }}</ref> Other [[programming language]]s and [[computer algebra systems]] commonly used for the more mathematical aspects of scientific computing applications include [[GNU Octave]], [[Haskell (programming language)|Haskell]],<ref name="ars" /> [[Julia (programming language)|Julia]],<ref name="ars" /> [[Maple (software)|Maple]],<ref name="princeton" /> [[Mathematica]],<ref>[http://www.scientific-computing.com/products/review_details.php?review_id=17 Mathematica 6] Scientific Computing World, May 2007</ref><ref>Maeder, R. E. (1991). Programming in mathematica. Addison-Wesley Longman Publishing Co., Inc..</ref><ref>Stephen Wolfram. (1999). The MATHEMATICA® book, version 4. [[Cambridge University Press]].</ref><ref>Shaw, W. T., & Tigg, J. (1993). Applied Mathematica: getting started, getting it done. Addison-Wesley Longman Publishing Co., Inc..</ref><ref>Marasco, A., & Romano, A. (2001). Scientific Computing with Mathematica: Mathematical Problems for Ordinary Differential Equations; with a CD-ROM. [[Springer Science & Business Media]].</ref> [[MATLAB]],<ref>Quarteroni, A., Saleri, F., & Gervasio, P. (2006). Scientific computing with MATLAB and Octave. Berlin: Springer.</ref><ref name="gh">Gander, W., & Hrebicek, J. (Eds.). (2011). Solving problems in scientific computing using Maple and Matlab®. [[Springer Science & Business Media]].</ref><ref name="bf">Barnes, B., & Fulford, G. R. (2011). Mathematical modelling with case studies: a differential equations approach using Maple and MATLAB. Chapman and Hall/CRC.</ref> [[Python (programming language)|Python]] (with third-party [[SciPy]] library<ref>Jones, E., Oliphant, T., & Peterson, P. (2001). SciPy: Open source scientific tools for Python.</ref><ref>Bressert, E. (2012). SciPy and NumPy: an overview for developers. " O'Reilly Media, Inc.".</ref><ref>Blanco-Silva, F. J. (2013). Learning SciPy for numerical and scientific computing. Packt Publishing Ltd.</ref>), [[Perl]] (with third-party [[Perl Data Language|PDL]] library),{{Citation needed|date=December 2008}} [[R (programming language)|R]],<ref>Ihaka, R., & Gentleman, R. (1996). R: a language for data analysis and graphics. Journal of computational and graphical statistics, 5(3), 299-314.</ref> [[Scilab]],<ref>Bunks, C., Chancelier, J. P., Delebecque, F., Goursat, M., Nikoukhah, R., & Steer, S. (2012). Engineering and scientific computing with Scilab. [[Springer Science & Business Media]].</ref><ref>Thanki, R. M., & Kothari, A. M. (2019). Digital image processing using SCILAB. Springer International Publishing.</ref> and [[TK Solver]]. The more computationally intensive aspects of scientific computing will often use some variation of [[C (programming language)|C]] or [[Fortran]] and optimized algebra libraries such as [[BLAS]] or [[LAPACK]]. In addition, [[parallel computing]] is heavily used in scientific computing to achieve solutions of large problems in a reasonable amount of time. In this framework, the problem is either divided over many cores on a single CPU node (such as with [[OpenMP]]), divided over many CPU nodes networked together (such as with [[Message Passing Interface|MPI]]), or is run on one or more [[Graphics processing unit|GPUs]] (typically using either [[CUDA]] or [[OpenCL]]).
+
+Computational science application programs often model real-world changing conditions, such as weather, airflow around a plane, automobile body distortions in a crash, the motion of stars in a galaxy, an explosive device, etc. Such programs might create a 'logical mesh' in computer memory where each item corresponds to an area in space and contains information about that space relevant to the model. For example, in [[Numerical weather prediction|weather models]], each item might be a square kilometer; with land elevation, current wind direction, humidity, temperature, pressure, etc. The program would calculate the likely next state based on the current state, in simulated time steps, solving differential equations that describe how the system operates; and then repeat the process to calculate the next state.
+
+==Conferences and journals==
+
+In the year 2001, the [http://www.iccs-meeting.org/ ''International Conference on Computational Science (ICCS)''] was first organised. Since then it has been organised yearly. ICCS is an '''A-rank''' conference in CORE classification.
+
+The international [https://www.journals.elsevier.com/journal-of-computational-science ''Journal of Computational Science''] published its first issue in May 2010.<ref>{{Cite journal|last1=Sloot|first1=Peter|last2=Coveney|first2=Peter|last3=Dongarra|first3=Jack|title=Redirecting|journal=Journal of Computational Science|volume=1|issue=1|pages=3–4|doi=10.1016/j.jocs.2010.04.003|year=2010}}</ref><ref>{{Cite journal|last1=Seidel|first1=Edward|last2=Wing|first2=Jeannette M.|title=Redirecting|journal=Journal of Computational Science|volume=1|issue=1|pages=1–2|doi=10.1016/j.jocs.2010.04.004|year=2010}}</ref><ref>{{Cite journal|last=Sloot|first=Peter M.A.|title=Computational science: A kaleidoscopic view into science|journal=Journal of Computational Science|volume=1|issue=4|pages=189|doi=10.1016/j.jocs.2010.11.001|year=2010}}</ref> A new initiative was launched in 2012, the ''Journal of Open Research Software.''<ref>[http://openresearchsoftware.metajnl.com/ The Journal of Open Research Software] ; announced at software.ac.uk/blog/2012-03-23-announcing-journal-open-research-software-software-metajournal</ref>
+In 2015, [[ReScience C]]<ref>{{cite journal |last1=Rougier |first1=Nicolas P. |last2=Hinsen |first2=Konrad |last3=Alexandre |first3=Frédéric |last4=Arildsen |first4=Thomas |last5=Barba |first5=Lorena A. |last6=Benureau |first6=Fabien C.Y. |last7=Brown |first7=C. Titus |last8=Buyl |first8=Pierre de |last9=Caglayan |first9=Ozan |last10=Davison |first10=Andrew P. |last11=Delsuc |first11=Marc-André |last12=Detorakis |first12=Georgios |last13=Diem |first13=Alexandra K. |last14=Drix |first14=Damien |last15=Enel |first15=Pierre |last16=Girard |first16=Benoît |last17=Guest |first17=Olivia |last18=Hall |first18=Matt G. |last19=Henriques |first19=Rafael N. |last20=Hinaut |first20=Xavier |last21=Jaron |first21=Kamil S. |last22=Khamassi |first22=Mehdi |last23=Klein |first23=Almar |last24=Manninen |first24=Tiina |last25=Marchesi |first25=Pietro |last26=McGlinn |first26=Daniel |last27=Metzner |first27=Christoph |last28=Petchey |first28=Owen |last29=Plesser |first29=Hans Ekkehard |last30=Poisot |first30=Timothée |last31=Ram |first31=Karthik |last32=Ram |first32=Yoav |last33=Roesch |first33=Etienne |last34=Rossant |first34=Cyrille |last35=Rostami |first35=Vahid |last36=Shifman |first36=Aaron |last37=Stachelek |first37=Joseph |last38=Stimberg |first38=Marcel |last39=Stollmeier |first39=Frank |last40=Vaggi |first40=Federico |last41=Viejo |first41=Guillaume |last42=Vitay |first42=Julien |last43=Vostinar |first43=Anya E. |last44=Yurchak |first44=Roman |last45=Zito |first45=Tiziano |title=Sustainable computational science: the ReScience initiative |journal=PeerJ Comput Sci |date=December 2017 |volume=3 |at=e142 |doi=10.7717/peerj-cs.142 |arxiv=1707.04393 |bibcode=2017arXiv170704393R |s2cid=7392801 }}</ref> dedicated to the replication of computational results has been started on [[GitHub]].
+
+==Education==
+At some institutions, a specialization in scientific computation can be earned as a "minor" within another program (which may be at varying levels). However, there are increasingly many [[Bachelor's degree|bachelor's]], [[Master's degree|master's]] and [[doctoral degree|doctoral]] programs in computational science. The joint degree programme [http://www.uva.nl/en/shared-content/subsites/graduate-school-of-sciences/en/masters/computational-science/computational-science.html?origin=5BOaRAofTjCccATraJp2XA master program computational science] at the [[University of Amsterdam]] and the [[Vrije Universiteit Amsterdam|Vrije Universiteit]] in computational science was first offered in 2004. In this programme, students:
+* learn to build computational models from real-life observations;
+* develop skills in turning these models into computational structures and in performing large-scale simulations;
+* learn theory that will give a firm basis for the analysis of complex systems;
+* learn to analyse the results of simulations in a virtual laboratory using advanced numerical algorithms.
+
+[[George Mason University]] was one of the early pioneers first offering a multidisciplinary doctorate Ph.D program in Computational Sciences and Informatics in 1992 that focused on a number of specialty areas including [[bioinformatics]], [[computational chemistry]], earth systems and global changes, [[computational mathematics]], [[computational physics]], space sciences, and [[computational statistics]]
+
+School of Computational and Integrative Sciences, [[Jawaharlal Nehru University]] (erstwhile School of Information Technology<ref>{{Cite web | url=https://www.jnu.ac.in/scis |title = SCIS &#124; Welcome to Jawaharlal Nehru University}}</ref>) also offers a vibrant master's science program for computational science with two specialities namely- [[Computational Biology]] and [[Complex Systems]].<ref>{{Cite web | url=https://www.jnu.ac.in/content/scis-program-study | title=SCIS: Program of Study &#124; Welcome to Jawaharlal Nehru University}}</ref>
+
+==Related fields==
+{{div col|colwidth=15em}}
+* [[Bioinformatics]]
+* [[Car–Parrinello molecular dynamics]]
+* [[Cheminformatics]]
+* [[Chemometrics]]
+* [[Computational archaeology]]
+* [[Computational astrophysics]]
+* [[Computational biology]]
+* [[Computational chemistry]]
+* [[Computational materials science]]
+* [[Computational economics]]
+* [[Computational electromagnetics]]
+* [[Computational engineering]]
+* [[Computational finance]]
+* [[Computational fluid dynamics]]
+* [[Computational forensics]]
+* [[Computational geophysics]]
+* [[Computational history]]
+* [[Computational informatics]]
+* [[Computational intelligence]]
+* [[Computational law]]
+* [[Computational linguistics]]
+* [[Computational mathematics]]
+* [[Computational mechanics]]
+* [[Computational neuroscience]]
+* [[Computational particle physics]]
+* [[Computational physics]]
+* [[Computational sociology]]
+* [[Computational statistics]]
+* [[Computational sustainability]]
+* [[Computer algebra]]
+* [[Computer simulation]]
+* [[Financial modeling]]
+* [[Geographic information system]] (GIS)
+* [[High-performance computing]]
+* [[Machine learning]]
+* [[Network theory|Network analysis]]
+* [[Neuroinformatics]]
+* [[Numerical linear algebra]]
+* [[Numerical weather prediction]]
+* [[Pattern recognition]]
+* [[Scientific visualization]]
+* [[Simulation]]
+
+{{div col end}}
+
+==See also==
+{{portal|Science|Mathematics}}
+* [https://plato.stanford.edu/entries/simulations-science/ Computer simulations in science]
+* [[Computational science and engineering]]
+* [[Comparison of computer algebra systems]]
+* [[List of software for molecular mechanics modeling|List of molecular modeling software]]
+* [[List of numerical analysis software]]
+* [[List of statistical packages]]
+* [[Timeline of scientific computing]]
+* [[Simulated reality]]
+* [[Extensions for Scientific Computation]] (XSC)
+
+==References==
+{{reflist|20em}}
+
+==Additional sources==
+* E. Gallopoulos and A. Sameh, "CSE: Content and Product". IEEE Computational Science and Engineering Magazine, 4(2):39–43 (1997)
+* G. Hager and G. Wellein, Introduction to High Performance Computing for Scientists and Engineers, [[Chapman and Hall]] (2010)
+* A.K. Hartmann, [https://web.archive.org/web/20090211113048/http://worldscibooks.com/physics/6988.html Practical Guide to Computer Simulations], [[World Scientific]] (2009)
+* Journal [https://web.archive.org/web/20120224073451/http://www.man.poznan.pl/cmst/ Computational Methods in Science and Technology] (open access), [[Polish Academy of Sciences]]
+* Journal [http://iopscience.iop.org/1749-4699/ Computational Science and Discovery], [[Institute of Physics]]
+* R.H. Landau, C.C. Bordeianu, and M. Jose Paez, [https://books.google.com/books?id=gtlaWucfu3YC&printsec=frontcover#v=onepage&q&f=false A Survey of Computational Physics: Introductory Computational Science], [[Princeton University Press]] (2008)
+
+==External links==
+{{Wikiversity|Scientific computing}}
+{{Commons category}}
+*[https://web.archive.org/web/20120221163722/http://www2.fz-juelich.de/nic/ John von Neumann-Institut for Computing (NIC) at Juelich (Germany)]
+*[http://www.nccs.gov The National Center for Computational Science at Oak Ridge National Laboratory]
+*[http://cmasc.gmu.edu/ Center for Simulation and Modeling at George Mason University]
+*[https://web.archive.org/web/20100528022316/http://www.capital.edu/21424/Computational-Studies/7111/ Educational Materials for Undergraduate Computational Studies]
+*[http://www.deixismagazine.org/ Computational Science at the National Laboratories]
+*[http://www.udem.edu.co/index.php/departamento-de-ciencias-basicas-programas-de-pregrado/computacion-cientifica Bachelor in Computational Science, University of Medellin, Colombia, South America]
+*[http://www.sos.mcmaster.ca Simulation Optimization Systems (SOS) Research Laboratory, McMaster University, Hamilton, ON]
+*[https://cos.gmu.edu/cds/phd-in-computational-sciences-and-informatics/ Computational Sciences and Informatics, Ph.D Program, George Mason University]
+
+{{DEFAULTSORT:Computational Science}}
+
+{{Differentiable computing}}
+
+[[Category:Computational science| ]]
+[[Category:Computer science]]
+[[Category:Applied mathematics]]
+[[Category:Computational fields of study]]

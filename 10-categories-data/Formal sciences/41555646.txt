@@ -1,0 +1,37 @@
+{{Use American English|date = April 2019}}
+{{Short description|solution of a linear homogeneous state equation}}
+{{Orphan|date=January 2014}}
+{{more footnotes|date=January 2014}}
+
+The '''state-transition equation''' is defined as the solution of the linear homogeneous state equation. The linear time-invariant state equation given by
+:<math>\frac {dx(t)}{dt}=Ax(t)+Bu(t)+Ew(t), </math>
+with state vector ''x'', control vector ''u'', vector ''w'' of additive disturbances, and fixed matrices ''A'', ''B'', and ''E'', can be solved by using either the classical method of solving linear [[differential equations]] or the [[Laplace transform]] method. The Laplace transform solution is presented in the following equations.
+The Laplace transform of the above equation yields 
+:<math>sX(s)-x(0)=AX(s)+BU(s)+EW(s) </math>
+where x(0) denotes '''initial-state vector''' evaluated at <math>t=0</math> . Solving for <math>X(s)</math> gives
+:<math>X(s)=(sI-A)^{-1} x(0) + (sI-A)^{-1}[BU(s)+EW(s)]. </math>
+So, the state-transition equation can be obtained by taking inverse Laplace transform as 
+:<math>x(t)=L^{-1}[(sI-A)^{-1}] x(0) + L^{-1} {(sI-A)^{-1} [BU(s) + EW(s)]}= \phi(t)x(0)+\int_{0}^{t} \phi(t-\tau)[Bu(\tau)+Ew(\tau)]dt .</math>
+
+The state-transition equation as derived above is useful only when the initial time is defined to be at <math>t=0</math> . In the study of [[control system]]s, specially discrete-data control systems, it is often desirable to break up a state-transition process into a sequence of transitions, so a more flexible initial time must be chosen. Let the initial time be represented by <math>t_0</math> and the corresponding initial state by <math>x(t_0)</math>, and assume that the input <math> u(t)</math> and the disturbance <math> w(t)</math> are applied at t≥0. 
+Starting with the above equation by setting <math> t=t_0,</math> and solving for <math>x(0)</math>, we get 
+:<math> x(0)= \phi (-t_0)x(t_0)-\phi(-t_0)\int_{0}^{t_0}\phi(t_0 - \tau)[Bu(\tau)+Ew(\tau)]d\tau.</math>
+Once the state-transition equation is determined, the output vector can be expressed as a function of the initial state.
+
+==See also==
+* [[Control theory]]
+* [[Control engineering]]
+* [[Automatic control]]
+*[[Feedback]]
+*[[Process control]]
+*[[PID loop]]
+
+==External links==
+* [http://www.mathworks.com/products/control/ Control System Toolbox] for design and analysis of control systems.
+* http://web.mit.edu/2.14/www/Handouts/StateSpaceResponse.pdf
+* [[Wikibooks:Control Systems/State-Space Equations]]
+* http://planning.cs.uiuc.edu/node411.html
+
+
+{{DEFAULTSORT:Automatic Control}}
+[[Category:Control theory]]

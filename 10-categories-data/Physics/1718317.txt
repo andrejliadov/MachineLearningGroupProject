@@ -1,0 +1,101 @@
+{{Short description|symmetry condition in special relativity}}
+In [[electromagnetism]], the '''Lorenz gauge condition''' or '''Lorenz gauge''' (sometimes mistakenly called the Lorentz gauge) is a partial [[gauge fixing]] of the [[electromagnetic four-potential|electromagnetic vector potential]]. The condition is that <math>\partial_\mu A^\mu=0.</math> This does not completely determine the gauge: one can still make a gauge transformation <math>A^\mu\to A^\mu+\partial^\mu f,</math> where <math>f</math> is a [[harmonic function|harmonic]] scalar function (that is, a [[scalar function]] satisfying <math>\partial_\mu\partial^\mu f=0,</math> the equation of a [[scalar field theory|massless scalar field]]).
+
+The Lorenz condition is used to eliminate the redundant spin-0 component in the {{nowrap|(1/2, 1/2)}} [[representation theory of the Lorentz group]]. It is equally used for massive spin-1 fields where the concept of gauge transformations does not apply at all.
+
+The Lorenz condition is named after [[Ludvig Lorenz]]. It is a [[Lorentz invariant]] condition, and is frequently called the "Lorentz condition" because of confusion with [[Hendrik Lorentz]], after whom Lorentz covariance is named.<ref>{{Citation|last1 = Jackson|first1 = J.D.|author1-link = John David Jackson (physicist)|last2 = Okun|first2 = L.B.|author2-link = Lev Okun|title = Historical roots of gauge invariance|journal = [[Reviews of Modern Physics]]|volume = 73|issue = 3|pages = 663–680|year = 2001|doi = 10.1103/RevModPhys.73.663|arxiv = hep-ph/0012061|bibcode = 2001RvMP...73..663J|s2cid = 8285663}}</ref>
+
+==Description==
+In [[electromagnetism]], the Lorenz condition is generally [[Scientific method|used]] in [[calculation]]s of [[Time-variant system|time-dependent]] [[electromagnetic field]]s through [[retarded potential]]s.<ref name=mcdonald>{{Citation |first1=Kirk T. |last1=McDonald|title=The relation between expressions for time-dependent electromagnetic fields given by Jefimenko and by Panofsky and Phillips |journal=[[American Journal of Physics]] |volume=65 |issue=11 |pages=1074–1076 |year=1997 |doi=10.1119/1.18723 |bibcode = 1997AmJPh..65.1074M|url=http://www.physics.princeton.edu/~mcdonald/examples/jefimenko.pdf |citeseerx=10.1.1.299.9838}}</ref> The condition is
+
+:<math>\partial_\mu A^\mu \equiv A^\mu{}_{,\mu} = 0,</math>
+
+where <math>A^\mu</math> is the [[four-potential]], the comma denotes a [[partial differentiation]] and the repeated index indicates that the [[Einstein summation convention]] is being used. The condition has the advantage of being [[Lorentz invariant]]. It still leaves substantial gauge degrees of freedom.
+
+In ordinary vector notation and [[SI]] units, the condition is
+
+:<math>\nabla\cdot{\mathbf{A}} + \frac{1}{c^2}\frac{\partial\varphi}{\partial t} = 0,</math>
+
+where <math>\mathbf{A}</math> is the [[magnetic vector potential]] and <math> \varphi</math> is the [[electric potential]];<ref>{{cite book|last=Jackson|first=John David|title=Classical Electrodynamics|edition=3rd|pages=240|publisher=John Wiley & Sons|isbn=978-0-471-30932-1|year=1999|title-link=Classical Electrodynamics (book)}}</ref><ref>{{Cite book|url=https://books.google.com/books?id=v2ck__wFOBEC|title=Quantum Theory of Near-Field Electrodynamics|last=Keller|first=Ole|date=2012-02-02|publisher=Springer Science & Business Media|isbn=9783642174100|pages=19|language=en|bibcode=2011qtnf.book.....K}}</ref> see also [[gauge fixing]].
+
+In [[Gaussian units]] the condition is
+
+:<math>\nabla\cdot{\mathbf{A}} + \frac{1}{c}\frac{\partial\varphi}{\partial t} = 0.</math><ref>{{cite book |last=Gbur |first=Gregory J. |author-link=Greg Gbur |title=Mathematical Methods for Optical Physics and Engineering |year=2011|pages=59|publisher=Cambridge University Press|isbn=978-0-521-51610-5|bibcode=2011mmop.book.....G}}</ref><ref>{{Cite book|url=https://books.google.com/books?id=L7w7UpecbKYC|title=The Quantum Theory of Radiation|last=Heitler|first=Walter|date=1954|publisher=Courier Corporation|isbn=9780486645582|pages=3|language=en|author-link=Walter Heitler}}</ref>
+
+A quick justification of the Lorenz gauge can be found using [[Maxwell's equations]] and the relation between the magnetic vector potential and the magnetic field:
+
+:<math>\nabla \times \mathbf{E} = -\frac{\partial\mathbf{B}}{\partial t} = - \frac{\partial (\nabla \times \mathbf{A})}{\partial t}</math>
+
+Therefore,
+
+:<math>\nabla \times \left(\mathbf{E} + \frac{\partial\mathbf{A}}{\partial t}\right) = 0.</math>
+
+Since the curl is zero, that means there is a scalar function <math>\varphi</math> such that 
+
+:<math>-\nabla\varphi = \mathbf{E} + \frac{\partial\mathbf{A}}{\partial t}.</math>
+
+This gives the well known equation for the electric field, 
+
+:<math>\mathbf{E} = -\nabla \varphi - \frac{\partial\mathbf{A}}{\partial t}.</math>
+
+This result can be plugged into the Ampère–Maxwell equation,
+
+:<math>\begin{align}
+  \nabla \times \mathbf{B} &= \mu_0\mathbf{J} + \frac{1}{c^2}\frac{\partial\mathbf{E}}{\partial t} \\
+  \nabla \times \left(\nabla \times \mathbf{A}\right) &= \\
+  \Rightarrow
+  \nabla\left(\nabla \cdot \mathbf{A}\right) - \nabla^2\mathbf{A} &= \mu_0\mathbf{J} - \frac{1}{c^2}\frac{\partial (\nabla\varphi)}{\partial t} - \frac{1}{c^2}\frac{\partial^2 \mathbf{A}}{\partial t^2}. \\
+\end{align}</math>
+
+This leaves,
+
+:<math>\nabla\left(\nabla \cdot \mathbf{A} + \frac{1}{c^2}\frac{\partial\varphi}{\partial t}\right) = \mu_0\mathbf{J} - \frac{1}{c^2}\frac{\partial^2 \mathbf{A}}{\partial t^2} + \nabla^2\mathbf{A}.</math>
+
+To have Lorentz invariance, the time derivatives and spatial derivatives must be treated equally (i.e. of the same order). Therefore, it is convenient to choose the Lorenz gauge condition, which gives the result
+
+:<math>\Box\mathbf{A} = \left[\nabla^2 - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\right]\mathbf{A} = -\mu_0\mathbf{J}.</math>
+
+A similar procedure with a focus on the electric scalar potential and making the same gauge choice will yield
+
+:<math>\Box\varphi = \left[\nabla^2 - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\right] \varphi = - \frac{1}{\epsilon_0}\rho .</math>
+
+These are simpler and more symmetric forms of the inhomogeneous [[Maxwell's equations]]. Note that the [[Coulomb gauge]] also fixes the problem of Lorentz invariance, but leaves a coupling term with first-order derivatives.
+
+Here 
+
+:<math>c = \frac{1}{\sqrt{\epsilon_0\mu_0}}</math> 
+
+is the vacuum velocity of light, and <math>\Box</math> is the [[d'Alembertian]] operator. These equations are not only valid under vacuum conditions, but also in polarized media,<ref>For example, see {{cite arxiv |eprint=hep-th/0310036|title=Riemann-Silberstein representation of the complete Maxwell equations set|last1=Cheremisin|first1=M. V.|last2=Okun|first2=L. B.|year=2003}}</ref> if <math>\rho</math> and <math>\vec{J}</math> are source density and circulation density, respectively, of the electromagnetic induction fields <math>\vec{E}</math> and <math>\vec{B}</math> calculated as usual from <math>\varphi</math> and <math>\vec{A}</math> by the equations 
+
+:<math>\mathbf{E} = -\nabla\varphi - \frac{\partial \mathbf{A}}{\partial t}</math>
+:<math>\mathbf{B} = \nabla\times \mathbf{A}</math>
+
+The explicit solutions for <math> \varphi</math> and <math>\mathbf{A}</math> – unique, if all quantities vanish sufficiently fast at infinity – are known as [[retarded potential]]s.
+
+==History==
+When originally published, Lorenz's work was not received well by [[James Clerk Maxwell|Maxwell]]. Maxwell had eliminated the Coulomb electrostatic force from his derivation of the [[electromagnetic wave equation]] since he was working in what would nowadays be termed the [[Coulomb gauge]]. The Lorenz gauge hence contradicted Maxwell's original derivation of the EM wave equation by introducing a retardation effect to the Coulomb force and bringing it inside the EM wave equation alongside the time varying [[electric field]], which was introduced in Lorenz's paper "On the identity of the vibrations of light with electrical currents". Lorenz's work was the first [[symmetry|symmetrizing]] shortening of Maxwell's equations after Maxwell himself published his 1865 paper. In 1888, retarded potentials came into general use after [[Heinrich Rudolf Hertz]]'s experiments on [[electromagnetic wave]]s. In 1895, a further boost to the theory of retarded potentials came after [[J. J. Thomson]]'s interpretation of data for [[electron]]s (after which investigation into [[electrical phenomena]] changed from time-dependent [[electric charge]] and [[electric current]] distributions over to moving [[point charge]]s).<ref name="mcdonald"/>
+
+==See also==
+* [[Gauge fixing]]
+
+==References==
+{{reflist}}
+
+==External links and further reading==
+;General
+* {{cite web |last=Weisstein |first=E. W. |url=http://scienceworld.wolfram.com/physics/LorenzGauge.html |title=Lorenz Gauge |publisher=[[Wolfram Research]]}}
+
+;Further reading
+* {{cite journal |last=Lorenz |first=L. |year=1867 |title=On the Identity of the Vibrations of Light with Electrical Currents |journal=[[Philosophical Magazine]] |series=Series 4 |volume=34 |issue=230 |pages=287–301}}
+* {{cite journal |last=van Bladel |first=J. |year=1991 |title=Lorenz or Lorentz? |journal=[[IEEE Antennas and Propagation Magazine]] |volume=33 |issue=2 |page=69 |doi=10.1109/MAP.1991.5672647|s2cid=21922455 }}
+**See also {{cite journal |last1=Bladel |first1=J. |year=1991 |title=Lorenz or Lorentz? [Addendum] |journal=[[IEEE Antennas and Propagation Magazine]] |volume=33 |issue=4 |pages=56 |bibcode=1991IAPM...33...56B |doi=10.1109/MAP.1991.5672657}}
+* {{cite book |last=Becker |first=R. |year=1982 |title=Electromagnetic Fields and Interactions |at=Chapter 3 |publisher=[[Dover Publications]]}}
+* {{cite book |last=O'Rahilly |first=A. |year=1938 |title=Electromagnetics |at=Chapter 6 |publisher=[[Longmans, Green and Co]]}}
+
+;History
+*{{cite journal |last1=Nevels |first1=R. |last2=Shin |first2=Chang-Seok |year=2001 |title=Lorenz, Lorentz, and the gauge |journal=[[IEEE Antennas and Propagation Magazine]] |volume=43 |issue=3 |pages=70–71|bibcode=2001IAPM...43...70N |doi=10.1109/74.934904 |citeseerx=<!--10.1.1.205.7418 -->}}
+* {{cite book |last=Whittaker |first=E. T.|author-link=E. T. Whittaker |year=1989 |title=[[A History of the Theories of Aether and Electricity]] |volume=1–2 |publisher=[[Dover Publications]] |page=268}}
+
+{{DEFAULTSORT:Lorenz Gauge Condition}}
+[[Category:Electromagnetism]]
+[[Category:Concepts in physics]]

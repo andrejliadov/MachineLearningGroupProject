@@ -1,0 +1,75 @@
+In [[information theory]], the '''bar product''' of two [[linear code]]s ''C''<sub>2</sub>&nbsp;⊆&nbsp;''C''<sub>1</sub> is defined as
+
+:<math>C_1 \mid C_2 = \{ (c_1\mid c_1+c_2) : c_1 \in C_1, c_2 \in C_2 \}, </math>
+
+where (''a''&nbsp;|&nbsp;''b'') denotes the concatenation of ''a'' and ''b''. If the [[code word]]s in ''C''<sub>1</sub> are of length ''n'', then the code words in ''C''<sub>1</sub>&nbsp;|&nbsp;''C''<sub>2</sub> are of length 2''n''.
+
+The bar product is an especially convenient way of expressing the [[Reed–Muller code|Reed–Muller]] RM&thinsp;(''d'',&nbsp;''r'') code in terms of the Reed–Muller codes RM&thinsp;(''d''&thinsp;&minus;&thinsp;1,&nbsp;''r'') and RM&thinsp;(''d''&thinsp;&minus;&thinsp;1,&nbsp;''r''&thinsp;&minus;&thinsp;1).
+
+The bar product is also referred to as the |&nbsp;'''''u'''''&nbsp;|&nbsp;'''''u'''''+'''''v'''''&nbsp;| construction<ref>{{cite book | author=F.J. MacWilliams | authorlink=Jessie MacWilliams |author2=N.J.A. Sloane | title=The Theory of Error-Correcting Codes | url=https://archive.org/details/theoryoferrorcor0000macw | url-access=registration | publisher=North-Holland | year=1977 | isbn=0-444-85193-3 | page=[https://archive.org/details/theoryoferrorcor0000macw/page/76 76] }}</ref>
+or ('''''u'''''&nbsp;|&nbsp;'''''u'''''&nbsp;+&nbsp;'''''v''''') construction.<ref>{{cite book | author=J.H. van Lint | title=Introduction to Coding Theory | edition=2nd | publisher=[[Springer-Verlag]] | series=[[Graduate Texts in Mathematics|GTM]] | volume=86 | year=1992 | isbn=3-540-54894-7 | page=[https://archive.org/details/introductiontoco0000lint/page/47 47] | url=https://archive.org/details/introductiontoco0000lint/page/47 }}</ref>
+
+==Properties==
+
+===Rank===
+The [[dimension (vector space)|rank]] of the bar product is the sum of the two ranks:
+
+:<math>\operatorname{rank}(C_1\mid C_2) = \operatorname{rank}(C_1) + \operatorname{rank}(C_2)\,</math>
+
+====Proof====
+Let <math> \{ x_1, \ldots , x_k \} </math> be a basis for <math>C_1</math> and let <math>\{ y_1, \ldots , y_l \} </math> be a basis for <math>C_2</math>. Then the set
+
+<math>\{ (x_i\mid x_i) \mid 1\leq i \leq k \} \cup \{ (0\mid y_j) \mid 1\leq j \leq l \} </math>
+
+is a basis for the bar product <math>C_1\mid C_2</math>.
+
+===Hamming weight===
+The [[Hamming weight]] ''w'' of the bar product is the lesser of (a) twice the weight of ''C''<sub>1</sub>, and (b) the weight of ''C''<sub>2</sub>:
+
+:<math>w(C_1\mid C_2) = \min \{ 2w(C_1) , w(C_2) \}. \,</math>
+
+====Proof====
+For all <math>c_1 \in C_1</math>,
+
+:<math>(c_1\mid c_1 + 0 ) \in C_1\mid C_2</math>
+
+which has weight <math>2w(c_1)</math>. Equally
+
+:<math> (0\mid c_2) \in C_1\mid C_2</math>
+
+for all <math>c_2 \in C_2 </math> and has weight <math>w(c_2)</math>. So minimising over <math>c_1 \in C_1, c_2 \in C_2</math> we have
+
+:<math>w(C_1\mid C_2) \leq \min \{ 2w(C_1) , w(C_2) \} </math>
+
+Now let <math>c_1 \in C_1</math> and <math>c_2 \in C_2</math>, not both zero. If <math>c_2\not=0</math> then:
+
+: <math>
+\begin{align}
+w(c_1\mid c_1+c_2) &= w(c_1) + w(c_1 + c_2) \\
+& \geq w(c_1 + c_1 + c_2) \\
+& = w(c_2) \\
+& \geq w(C_2)
+\end{align}
+</math>
+
+If <math>c_2=0</math> then
+
+: <math>\begin{align}
+w(c_1\mid c_1+c_2) & = 2w(c_1) \\
+& \geq 2w(C_1)
+\end{align}
+</math>
+
+so 
+
+:<math>w(C_1\mid C_2) \geq \min \{ 2w(C_1) , w(C_2) \} </math>
+
+==See also==
+* [[Reed–Muller code]]
+
+==References==
+<references />
+
+{{DEFAULTSORT:Bar Product (Coding Theory)}}
+[[Category:Information theory]]
+[[Category:Coding theory]]

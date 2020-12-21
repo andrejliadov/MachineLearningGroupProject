@@ -1,0 +1,28 @@
+{{short description|Base set of symbols with which a language is formed}}
+In [[formal language theory]], a [[String (computer science)|string]] is defined as a [[finite sequence]] of members of an underlying base [[Set (mathematics)|set]]; this set is called the '''alphabet''' of a string or collection of strings.<ref name=aho>{{cite book |last1=Aho |first1=Alfred V. |authorlink1=Alfred Aho |last2=Sethi |first2=Ravi |authorlink2=Ravi Sethi |last3=Ullman |first3=Jeffrey D. |authorlink3=Jeffrey Ullman |date=1985 |title=Compilers: Principles, Techniques, and Tools |edition=March 1988 reprint |publisher=Addison-Wesley |isbn=0-201-10088-6 |page=[https://archive.org/details/compilersprincip00ahoa/page/92 92] |quote=The term ''alphabet'' or ''character class'' denotes any finite set of symbols. |url-access=registration |url=https://archive.org/details/compilersprincip00ahoa/page/92 }}</ref><ref name=ebbinghaus>{{cite book |last1=Ebbinghaus |first1=H.-D. |last2=Flum |first2=J. |last3=Thomas |first3=W. |date=1994 |title=Mathematical Logic |edition=2nd |publisher=[[Springer Science+Business Media|Springer]] |location=[[New York City|New York]] |isbn=0-387-94258-0 |page=11 |quote=By an ''alphabet'' <math>\mathcal{A}</math> we mean a nonempty set of ''symbols''. |url=https://www.springer.com/mathematics/book/978-0-387-94258-2}}</ref> The members of the set are called ''[[symbol (programming)|symbols]]'', and are typically thought of as representing letters, characters, or digits.<ref name=aho/><ref name=ebbinghaus/> For example, a common alphabet is {0,1}, the '''binary alphabet''', and a [[binary string]] is a string drawn from the alphabet {0,1}. An infinite [[Infinite sequence#Infinite sequences in theoretical computer science|sequence]] of letters may be constructed from elements of an alphabet as well.
+
+==Notation==
+If ''L'' is a formal language, i.e. a (possibly infinite) set of finite-length strings, the '''alphabet of ''L''''' is the set of all symbols that may occur in any string in ''L''.
+For example, if ''L'' is the set of all [[Identifier#In computer languages|variable identifiers]] in the programming language  [[C (programming language)|C]], ''L''’s alphabet is the set { a, b, c, ..., x, y, z, A, B, C, ..., X, Y, Z, 0, 1, 2, ..., 7, 8, 9, _ }.
+
+Given an alphabet <math>\Sigma</math>, the set of all strings of length <math>n</math> over the alphabet <math>\Sigma</math> is indicated by <math>\Sigma^n</math>. The set <math display="inline">\bigcup_{i \in \mathbb{N}} \Sigma^i</math> of all finite strings (regardless of their length) is indicated by the [[Kleene star]] operator as <math>\Sigma^*</math>, and is also called the Kleene closure of <math>\Sigma</math>. The notation <math>\Sigma^\omega</math> indicates the set of all infinite sequences over the alphabet <math>\Sigma</math>, and <math>\Sigma^\infty</math> indicates the set <math>\Sigma^\ast \cup \Sigma^\omega</math> of all finite or infinite sequences.
+
+For example, using the binary alphabet {0,1}, the strings ε, 0, 1, 00, 01, 10, 11, 000, etc. are all in the Kleene closure of the alphabet (where ε represents the [[empty string]]).
+
+==Applications==
+Alphabets are important in the use of [[formal languages]], [[Automata theory|automata]] and [[semiautomaton|semiautomata]].  In most cases, for defining instances of automata, such as [[deterministic finite automaton|deterministic finite automata]] (DFAs), it is required to specify an alphabet from which the input strings for the automaton are built. In these applications, an alphabet is usually required to be a [[finite set]], but is not otherwise restricted.
+
+When using automata, [[regular expression]]s, or [[formal grammar]]s as part of string-processing [[algorithm]]s, the alphabet may be assumed to be the [[character set]] of the text to be processed by these algorithms, or a subset of allowable characters from the character set.
+
+==See also==
+*[[Combinatorics on words]]
+
+==References==
+{{Reflist}}
+
+==Literature==
+* John E. Hopcroft and Jeffrey D. Ullman, ''[[Introduction to Automata Theory, Languages, and Computation]]'', Addison-Wesley Publishing, Reading Massachusetts, 1979. {{ISBN|0-201-02988-X}}.
+
+{{DEFAULTSORT:Alphabet (formal languages)}}
+[[Category:Formal languages]]
+[[Category:Combinatorics on words]]

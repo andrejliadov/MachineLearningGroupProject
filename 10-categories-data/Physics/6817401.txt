@@ -1,0 +1,36 @@
+{{General relativity sidebar}}
+
+In [[general relativity]], an '''absolute horizon''' is a boundary in [[spacetime]], defined with respect to the external universe, inside which events cannot affect an external observer. Light emitted inside the horizon can never reach the observer, and anything that passes through the horizon from the observer's side is never seen again by the observer.  An absolute horizon is thought of as the boundary of a [[black hole]].
+
+In the context of black holes, the absolute horizon is almost exclusively referred to as an [[event horizon]], though this is often used as a more general term for all types of [[Horizon (general relativity)|horizons]]. The absolute horizon is just one type of horizon. For example, important distinctions{{which|date=March 2017}} must be made between absolute horizons and [[apparent horizon]]s; the notion of a horizon in general relativity is subtle, and depends on fine distinctions.
+
+==Definition==
+An absolute horizon is only defined in an [[asymptotically flat spacetime]] – a spacetime which approaches flat space as one moves far away from any massive bodies. Examples of asymptotically flat spacetimes include [[Schwarzschild metric|Schwarzschild]] and [[Kerr metric|Kerr]] black holes. The [[FRW universe]] – which is believed to be a good model for our universe – is generally ''not'' asymptotically flat. Nonetheless, we can think of an isolated object in an FRW universe as being ''nearly'' an isolated object in an asymptotically flat universe.
+
+The particular feature of asymptotic flatness which is needed is a notion of "[[future null infinity]]". This is the set of points which are approached asymptotically by [[Minkowski space#Causal structure|null ray]]s ([[light ray]]s, for example) which can escape to infinity. This is the technical meaning of "external universe". These points are only defined in an asymptotically flat universe. An absolute horizon is defined as the [[Boundary (topology)|boundary]] of a region from which null rays cannot escape to future null infinity.<ref>{{cite book | title=[[The large scale structure of space-time]] | first1=S. W. |last1=Hawking | author1-link=Stephen Hawking |first2=G. F. R. |last2=Ellis |author2-link=George F. R. Ellis |name-list-style=amp | publisher=[[Cambridge University Press]] | date=1975}}</ref><ref>{{cite book | author=Wald, Robert M. | title=General Relativity | url=https://archive.org/details/generalrelativit0000wald | url-access=registration | location=Chicago | publisher=[[University of Chicago Press]] | date = 1984}}
+</ref><ref>{{cite book | author=Thorne, Kip S. | author2=Misner, Charles | author3=Wheeler, John | title=Gravitation | publisher=[[W. H. Freeman and Company]] | date=1973}}</ref>
+
+==Nature of the absolute horizon==
+The definition of an absolute horizon is sometimes referred to as ''[[teleological]]'', meaning that it cannot be known where the absolute horizon is without knowing the entire evolution of the universe, including the future.  This is both an advantage and a disadvantage.  The advantage is that this notion of a horizon is very geometrical, and does not depend on the observer, unlike [[apparent horizon]]s, for example.  The disadvantage is that it requires the full history (all the way into the future) of the spacetime to be known.  In the case of [[numerical relativity]], where a spacetime is simply being evolved into the future, only a finite portion of the spacetime can be known.
+
+==See also==
+*[[Cauchy horizon]]
+*[[Cosmological horizon]]
+*[[Ergosphere]]
+*[[Killing horizon]]
+*[[Naked singularity]]
+*[[Particle horizon]]
+*[[Photon sphere]]
+*[[Reissner–Nordström solution]]
+*[[Schwarzschild metric]]
+
+==References==
+{{Reflist}}
+
+==Further reading==
+*{{cite book | title=Black Holes and Time Warps | url=https://archive.org/details/blackholestimewa0000thor | url-access=registration | author=Kip Thorne | publisher=[[W. W. Norton]] | date=1994}}  This is a popular book, aimed at the lay reader, containing good discussion of horizons and black holes.
+
+==External links==
+
+[[Category:Astrophysics]]
+[[Category:General relativity]]

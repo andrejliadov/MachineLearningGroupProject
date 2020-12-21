@@ -1,0 +1,378 @@
+{{Distinguish|Philosophy of dialogue}}
+'''Dialogical logic''' (also known as the '''logic of dialogues''') was conceived as a pragmatic approach to the [[semantics of logic]] that resorts to concepts of [[game theory]] such as "winning a play" and that of "winning strategy".
+
+Since dialogical logic was the first approach to the semantics of logic using notions stemming from game theory, game theoretical semantics (GTS) and dialogical logic are often conflated under the term ''[[game semantics]]''. However, as discussed below, though GTS and dialogical logic are both rooted in a game-theoretical perspective, in fact, they have quite different philosophical and logical background.
+
+Nowadays it has been extended to a general framework for the study of meaning, knowledge, and inference constituted during interaction. The new developments include cooperative dialogues and dialogues deploying a fully interpreted language (''dialogues with content'').
+
+== Origins and further developments ==
+The philosopher and mathematician [[Paul Lorenzen]] ([[University of Erlangen–Nuremberg|Erlangen-Nürnberg-Universität]]) was the first to introduce a semantics of games for logic in the late 1950s. Lorenzen called this semantics 'dialogische Logik', or dialogic logic. Later, it was developed extensively by his pupil [[Kuno Lorenz]] (Erlangen-Nürnberg Universität, then Saarland). [[Jaakko Hintikka]] ([[Helsinki]], [[Boston]]) developed a little later to Lorenzen a model-theoretical approach known as GTS.
+
+Since then, a significant number of different game semantics have been studied in logic. Since 1993, {{ill|Shahid Rahman|fr}} and his collaborators have developed dialogical logic within a general framework aimed at the study of the logical and philosophical issues related to [[logical pluralism]]. More precisely, by 1995 a kind of revival of dialogical logic was generated that opened new and unexpected possibilities for logical and philosophical research. The philosophical development of dialogical logic continued especially in the fields of [[argumentation theory]], legal reasoning, [[computer science]], [[applied linguistics]], and [[artificial intelligence]].
+
+The new results in dialogical logic began on one side, with the works of [[Jean-Yves Girard]] in [[linear logic]] and interaction; on the other, with the study of the interface of logic, mathematical [[game theory]] and argumentation, [[argumentation framework]]s and [[defeasible reasoning]], by researchers such as [[Samson Abramsky]], [[Johan van Benthem (logician)|Johan van Benthem]], [[Andreas Blass]], Nicolas Clerbout, [[Frans H. van Eemeren]], Mathieu Fontaine, [[Dov Gabbay]], [[Rob Grootendorst]], [[Giorgi Japaridze]], Laurent Keiff, Erik Krabbe, Alain Leconte, Rodrigo Lopez-Orellana, Sébasten Magnier, Mathieu Marion, Zoe McConaughey, Henry Prakken, Juan Redmond, Helge Rückert, Gabriel Sandu, Giovanni Sartor, [[Douglas N. Walton]], and [[John Woods (logician)|John Woods]] among others, who have contributed to place dialogical interaction and games at the center of a new perspective of logic, where logic is defined as an instrument of dynamic inference.
+
+Four research programs address the interface of meaning, knowledge, and logic in the context of dialogues, games, or more generally interaction:
+
+# The constructivist approach of Paul Lorenzen and Kuno Lorenz, who sought to overcome the limitations of operative logic by providing dialogical foundations to it. The [[Method of analytic tableaux|method of semantic tableaux]] for classical and [[intuitionistic logic]] as introduced by [[Evert W. Beth]] (1955){{Full citation needed|date=April 2020}} could thus be identified as a method for the notation of winning strategies of particular dialogue games (Lorenzen/Lorenz 1978, Lorenz 1981, Felscher 1986).{{Full citation needed|date=April 2020}} This, as mentioned above has been extended by Shahid Rahman and collaborators to a general framework for the study of classical and non-classical logics. Rahman and his team of Lille, in order to develop dialogues with content, enriched the dialogical framework with fully interpreted languages (as implemented within [[Per Martin-Löf]]'s [[constructive type theory]]).
+# The game-theoretical approach of [[Jaakko Hintikka]], called GTS. This approach shares the game-theoretical tenets of dialogical logic for [[logical constant]]s; but turns to standard [[model theory]] when the analysis process reaches the level of elementary statements. At this level standard truth-functional formal semantics comes into play. Whereas in the ''formal plays'' of dialogical logic P will loose both plays on an elementary proposition, namely the play where the thesis states this proposition and the play where he states its negation; in GTS one of both will be won by the defender. A subsequent development was launched by [[Johan van Benthem (logician)|Johan van Benthem]] (and his group in Amsterdam) in his book ''Logic in Games'', which combines the game-theoretical approaches with [[Epistemic modal logic|epistemic logic]].
+# The [[argumentation theory]] approach of [[Else M. Barth]] and Erik Krabbe (1982),{{Full citation needed|date=April 2020}} who sought to link dialogical logic with the informal logic or critical reasoning originated by the seminal work of [[Chaim Perelman]] (Perelman/Olbrechts-Tyteca 1958),{{Full citation needed|date=April 2020}} [[Stephen Toulmin]] (1958),{{Full citation needed|date=April 2020}} [[Arne Næss]] (1966){{Full citation needed|date=April 2020}} and [[Charles Leonard Hamblin]] (1970){{Full citation needed|date=April 2020}} and developed further by Ralph Johnson (1999),{{Full citation needed|date=April 2020}} Douglas N. Walton (1984),{{Full citation needed|date=April 2020}} John Woods (1988){{Full citation needed|date=April 2020}} and associates. Further developments include the [[argumentation framework]] of P.D. Dung and others, the [[defeasible reasoning]] approach of Henry Prakken and Giovanni Sartor, and [[pragma-dialectics]] by Frans H. van Eemeren and Rob Grootendorst.
+# The [[ludics]] approach, initiated by Jean-Yves Girard, which provides an overall theory of [[proof theory|proof-theoretical]] meaning based on interactive computation.
+
+According to the dialogical perspective, knowledge, meaning, and truth are conceived as a result of social interaction, where normativity is not understood as a type of pragmatic operator acting on a propositional nucleus destined to express knowledge and meaning, but on the contrary: the type of normativity that emerges from the social interaction associated with knowledge and meaning is constitutive of these notions. In other words, according to the conception of the dialogical framework, the intertwining of the right to ask for reasons, on the one hand, and the obligation to give them, on the other, provides the roots of knowledge, meaning and truth.<ref group="note">This formulation can be seen as linking the perspective of [[Robert Brandom]] with that of the logic of dialogue. See Mathieu Marion (2009).{{Full citation needed|date=April 2020}} For a discussion about what they have in common and what distinguishes both approaches, see {{harvtxt|Rahman|McConaughey|Klev|Clerbout|2018}}.</ref>
+
+== Local and global meaning ==
+As hinted by its name, this framework studies dialogues, but it also takes the form of dialogues. In a dialogue, two parties (players) argue on a thesis (a certain statement that is the subject of the whole argument) and follow certain fixed rules in their argument. The player who states the thesis is the Proponent, called '''P''', and his rival, the player who challenges the thesis, is the Opponent, called '''O'''. In challenging the Proponent's thesis, the Opponent is requiring of the Proponent that he defends his statement.
+
+The interaction between the two players '''P''' and '''O''' is spelled out by challenges and defences, implementing [[Robert Brandom]]'s take on meaning as a game of giving and asking for reasons. Actions in a dialogue are called moves; they are often understood as speech-acts involving declarative utterances (''assertions'') and interrogative utterances (''requests''). The rules for dialogues thus never deal with expressions isolated from the act of uttering them.
+
+The rules in the dialogical framework are divided into two kinds of rules'': particle rules'' and ''structural rules''. Whereas the first determine ''local meaning'', the second determine ''global meaning''.
+
+Local meaning explains the meaning of an expression, independently of the rules setting the development of a dialogue. Global meaning sets the meaning of an expression in the context of some specific form of developing a dialogue.
+
+More precisely:
+
+* Particle rules (''Partikelregeln''), or rules for logical constants, determine the legal moves in a play and regulate interaction by establishing the relevant moves constituting ''challenges'': moves that are an appropriate attack to a previous move (a statement) and thus require that the challenged player play the appropriate defence to the attack. If the challenged player defends his statement, he has answered the challenge.
+* Structural rules (''Rahmenregeln'') on the other hand determine the general course of a dialogue game, such as how a game is initiated, how to play it, how it ends, and so on. The point of these rules is not so much to spell out the meaning of the logical constants by specifying how to act in an appropriate way (this is the role of the particle rules); it is rather to specify according to what structure interactions will take place. It is one thing to determine the meaning of the logical constants as a set of appropriate challenges and defences, it is another to define whose turn it is to play and when a player is allowed to play a move.
+
+In the most basic case, the particle rules set the local meaning of the logical constants of first-order classical and intuitionistic logic. More precisely the local meaning is set by the following distribution of choices:
+
+* If the defender '''X''' states "A or B", the challenger '''Y''' has the right to ask him to choose between A and B.
+* If the defender '''X''' states "A and B", the challenger '''Y''' has the right to choose between asking the defender to state A or to state B.
+* If the defender '''X''' states that "if A then B", the challenger '''Y''' has the right to ask for B by granting herself (the challenger) A.
+* If the defender '''X''' states "no-A", then the challenger '''Y''' has the right to state A (and then she has the obligation to defend this assertion).
+* If the defender '''X''' states for "all the x's it is the case that A[x]", the challenger '''Y''' has the right to choose a singular term t and ask the defender to substitute this term for the free variables in A[x].
+* If the defender '''X''' states "there is at least one x, for which it is the case that A[x]", the challenger '''Y''' has the right to ask him to choose a singular term and substitute this term for the free variables in A[x].
+
+The next section furnishes a brief overview of the rules for intuitionist logic and classical logic. For a complete formal formulation see {{harvtxt|Clerbout|2014}}, {{harvtxt|Rahman|McConaughey|Klev|Clerbout|2018}}, {{harvtxt|Rahman|Keiff|2005}}.
+
+== The rules of the dialogical framework ==
+
+=== The local meaning of the logical constants ===
+
+* '''X''' A ∨ B &nbsp;(A or B)
+
+Challenge: '''Y''' ?
+
+Defense: '''X''' A/'''X''' B
+
+(Defender has the choice to defend A or to defend B)
+
+* '''X''' A ∧ B &nbsp;(A and B)
+
+Challenge: '''Y''' ?L (for left)
+
+Defense '''X''' A
+
+Ataque: '''Y''' ?R (for right)
+
+Defense '''X''' B
+
+(Challenger has the choice to ask for A or to ask for B)
+
+* '''X''' A⊃B &nbsp;(If A then B)
+
+Challenge: '''Y''' A
+
+Defense: '''X''' B
+
+(Challenger has the right to ask for A by conceding herself A)
+
+* '''X''' ~A &nbsp;(No A)
+
+Challenge: '''Y''' A
+
+Defense: (No defense is possible)
+
+* '''X''' ∀xA[x] &nbsp;(All x are A)
+
+Challenge: '''Y''' ?t
+
+Defense: '''X''' A[x/t]
+
+(The challenger chooses)
+
+* '''X''' ∃xA[x] &nbsp;(At least one x is A)
+
+Challenge: '''Y''' ?
+
+Defense: '''X''' A[x/t]
+
+(The defender chooses)
+
+=== Structural rules: global meaning ===
+
+==== RS 1 (Launching a dialogue or play) ====
+Any play (dialogue)  starts with the Proponent '''P''' stating a thesis (labelled move 0) and the Opponent O bringing forward some initial statement (if any).<ref group="note">Here the term ''play'' is a synonym of ''dialogue'' in order to stress the fact that ''play'' is the fundamental notion of the dialogical framework.</ref> The first move of '''O''', labelled with 1, is an attack to the thesis of the dialogue.
+
+Each subsequent move consists of one of the two interlocutors, bringing forward in turn either an attack against a previous statement of the opponent, or a defense of a previous attack of the antagonist.
+
+==== RS 2i (Intuitionist rule) ====
+'''X''' can attack any statement brought forward by '''Y''', so far as the particle rules and the remaining structural rules allow it, or respond only to the '''''last non-answered''''' challenge of the other player.
+
+''Note: This last clause is known as the'' Last Duty First''condition, and makes dialogical games suitable for intuitionistic logic (hence this rule's name).''<ref group="note">Challenges that are not have been responded yet are called ''open''. In this setting, an attack on a negation will always remain open, since, according to its local meaning-rule, there is no defense to an attack on a negation. However, there is a variant of the rule for local meaning, where the defence consists in stating ''falsum'' '''⊥'''. In the dialogical framework, the player who states ''falsum'' declares that he/she is giving up.</ref>
+
+==== RS 2c (Classical rule) ====
+'''X''' can attack any statement brought forward by '''Y''', so far as the particle rules and the remaining structural rules allow it, or defend himself against any attack of '''Y''' (so far as the particle rules and the remaining structural rules allow it,)
+
+==== RS 3 (Finiteness of plays) ====
+
+===== ''Intuitionist rule'' =====
+'''O''' can attack the same statement at most once.
+
+'''P''' can attack the same statement some finite number of times.
+
+===== ''Classic rule'' =====
+'''O''' can attack the same statement or defend himself against an attack at most once.
+
+'''P''' can an attack the same statement some finite number of times. The same restriction also holds for '''P''''s defences.<ref group="note">Notice that since according to the intuitionistic rule RS2i, players can only defend the last open attack, no restriction on defences are necessary. {{harvtxt|Felscher|1985}} and {{harvtxt|Piecha|2015}} after him, did not restrict the number of attacks. This triggers infinite plays.  Restrictions on the number of attacks and defences are known as ''repetitionranks''. The most through study of repetition ranks has been developed by {{harvtxt|Clerbout|2014}}.</ref>
+
+==== RS 4 (Formal rule) ====
+'''P''' can state an elementary proposition only if '''O''' has stated it before.
+
+'''O''' always has the right to state elementary propositions (so far the rules of logical constants and other structural rules allow it).
+
+Elementary propositions (in a formal dialogue) cannot be attacked.<ref group="note">A useful variant allows '''O''' to challenge elementary propositions. '''P''' defends against the attack with the indication ''sic n'', i.e.,<nowiki>''you already stated this proposition in your move n''</nowiki>. Marion called this variant the  ''Socratic rule''; see Marion/Rückert (2015).{{Full citation needed|date=April 2020}}</ref>
+
+'''RS5 (Winning and end of a play''')
+
+The play ends when it is a player's turn to make a move but that player has no available move left. That player loses, the other player wins.
+
+=== Validity and valid inferences ===
+The notion of a winning a play is not enough to render the notion of inference or of logical validity.
+
+In the following example, the thesis is of course not valid. However, '''P''' wins because '''O''' made the wrong choice. In fact, '''O''' loses the play since the structural rules do not allow her to challenge twice the same move.
+{| class="wikitable"
+!
+!O
+!P
+!
+|-
+|
+|
+|A ∧ (A⊃A)
+|0.
+|-
+|1.
+|?D [0]
+|A⊃A
+|2.
+|-
+|3.
+|A [2]
+|A
+|4.
+|}
+In move 0 ''P'' states the thesis. In move 2, ''O'' challenges the thesis by asking ''P'' to state the right component of the conjunction – the notation "[n]" indicates the number of the challenged move. In move 3 ''O'' challenges the 'implication by granting the antecedent. ''P'' responds to this challenge by stating the consequentn the just granted proposition A, and, since there are no other possible moves for '''O''', '''P''' wins.
+
+There is obviously another play, where '''O''' wins, namely, asking for the left side of the conjunction.
+
+Dually a valid thesis can be lost because '''P''' this time, makes the wrong choice. In the following example '''P''' loses the play (played according to the intuitionistic rules) by choosing the left side of the disjunction A ∨(A⊃A), since the intuitionistic rule SR 2i prevents him to come back and revise his choice:
+{| class="wikitable"
+!
+!O
+!P
+!
+|-
+|
+|
+|(A ∧ B) ∨ (A⊃A)
+|0.
+|-
+|1.
+|?∨ [0]
+|A ∧ B
+|2.
+|-
+|3.
+|?G [2]
+|...
+|
+|}
+Hence, winning a play does not ensure validity. In order to cast the notion of validity within the dialogical framework we need to define what a winning strategy is. In fact, there are several ways to do it. For the sake of a simple presentation we will yield a variation of {{harvtxt|Felscher|1985}}, however; different to his approach, we will not transform dialogues into tableaux but keep the distinction between play (a dialogue) and the tree of plays constituting a winning strategy.
+
+==== Winning strategy ====
+
+* A player '''X''' has a winning strategy if for every move made by the other player '''Y''', player '''X''' can make another move, such that each resulting play is eventually won by '''X'''.
+
+In dialogical logic validity is defined in relation to winning strategies for the proponent '''P'''.
+
+* A proposition is valid if '''P''' has a winning strategy for a thesis stating this proposition
+* A ''winning strategy for'' '''P''' ''for'' a thesis ''A'' is a tree '''''S''''' the branches of which are plays won by '''P''', where the nodes are those moves, such that
+
+# '''''S''''' has the move '''P''' ''A'' as root node (with depth 0),
+# if the node is an '''O'''-move (i.e. if the depth of a node is odd), then it has exactly one successor node (which is a '''P'''-move),
+# if the node is a '''P'''-move (i.e. if the depth of a node is even), then it has as many successor nodes as there are possible moves for '''O''' at this position.
+
+Branches are introduced by '''O''''s choices such as when she challenges a conjunction or when she defends a disjunction.
+
+===== Finite winning strategies =====
+Winning strategies for quantifier-free formulas are always finite trees, whereas winning strategies for first-order formulas can, in general, be trees of countably infinitely many finite branches (each branch is a play).
+
+For example, if one player states some universal quantifier, then each choice of the adversary triggers a different play. In the following example the thesis is an existential that triggers infinite branches, each of them constituted by a choice of '''P''':
+{| class="wikitable"
+!0.
+!
+!'''P'''∃x(A(x)⊃∀y A(y))
+!
+!
+!
+|-
+|1.
+|
+|'''O''' ?∃
+|
+|
+|
+|-
+|2.
+|'''P'''A(t<sub>1</sub>)⊃∀y A(y)
+|'''P''' A(t<sub>2</sub>)⊃∀y A(y)
+|'''P'''A(t<sub>3</sub>)⊃∀y A(y)
+|'''P'''A(t<sub>4</sub>)⊃∀y A(y)
+|...
+|}
+Infinite winning strategies for '''P''' can be avoided by introducing some restriction grounded on the following rationale
+
+* Because of the formal rule, '''O''''s optimal move is to always choose a new term when she has the chance to choose, that is, when she challenges a universal or when she defends an existential.
+* On the contrary '''P''', who will do his best to force O to state the elementary proposition she asked '''P''' for, will copy '''O''''s choices for a term (if '''O''''s provided already such a term) , when he challenges a universal of '''O''' or defends an existential.
+
+These lead to the following restrictions:
+
+# If the depth of a node ''n'' is even such that '''P''' stated a universal at ''n'', and if among the possible choice for '''O''' she can choose a new term, then this move counts as the only immediate successor node of ''n''.
+# If the depth of a node ''n''is odd such that '''O''' stated an existential at ''n'', and if among the possible choices for '''O''' she can choose a new term, then this move counts as the only immediate successor node of ''m,'' i.e. the node where '''P''' launched the attack on ''n''.<ref>For example:
+* {{cite book | last=Clerbout | first=N. | title=La sémantique dialogique. Notions fondamentales et éléments de metathéorie | series=Cahiers de Logique et d'Epistemologie | volume=21 | publisher=College Publications | location=London | date=2014 | isbn=978-1-84890-153-7 |ref=harv}}
+* {{cite journal |last1=Piecha |first1=T. |last2=Muhammad |first2=I. |title=Dialogical Logic |journal=The Internet Encyclopedia of Philosophy |url=https://www.iep.utm.edu/dial-log/}}
+* {{cite book | last1=Rahman | first1=S. | last2=Klev | first2=A. | last3=McConaughey | first3=Z. | last4=Clerbout | first4=N. | title=Immanent Reasoning or Equality in Action. A Plaidoyer for the Play level. | publisher=Springer | location=Dordrecht | date=2018 }}</ref>
+# If it is '''P''' who has the choice, then only one of the plays triggered by the choice will be kept.
+
+The rules for local and global meaning plus the notion of winning strategy mentioned above set the dialogical conception of classical and intuitionistic logic.
+
+Herewith an example of a winning strategy for a thesis valid in classical logic and non-valid in intuitionistic logic
+{| class="wikitable"
+!
+!
+|-
+|0.
+|'''P'''∃x(A(x)⊃∀y A(y)) ('''P''' sets the thesis)
+|-
+|1.
+|'''O''' ?∃ ('''O''' challenges the thesis)
+|-
+|2.
+|'''P''' A(t<sub>1</sub>)⊃∀y A(y) ('''P''' chooses "t<sub>1</sub>")
+|-
+|3.
+|'''O''' A(t<sub>1</sub>) ('''O''' challenges the implication by granting the antecedent)
+|-
+|4.
+|'''P''' ∀y A(x) ('''P''' answers by stating the consequent)
+|-
+|5.
+|'''O''' ?t<sub>2</sub> ('''O''' challenges the universal by choosing the new singular term "t<sub>2</sub>")
+|-
+|6.
+|'''P''' A(t<sub>2</sub>)⊃∀y A(y) ('''P''' cames back to his response to the challenge launched in move 1 chooses to defend the existential this time with the term "t<sub>2</sub>")
+|-
+|7
+|'''O''' A(t<sub>2</sub>) ('''O''' challenges the implication by granting the antecedent)
+|-
+|8
+|'''P''' A(t<sub>2</sub>) ('''P''' <nowiki>''uses''</nowiki>the last move of the Opponent to respond to the challenge upon the universal in move 5)
+|}
+'''P''' has a winning strategy since the SR 2c allows him to defend twice the challenge on the existential. This further allows him to defend himself in move 8 against the challenge launched by the Opponent in move 5.
+
+Defending twice is not allowed by the intuitionistic rule SR 2i and accordingly, there is no winning strategy for '''P''':
+{| class="wikitable"
+!
+!
+|-
+|0.
+|'''P'''∃x(A(x)⊃∀y A(y)) ('''P''' sets the thesis)
+|-
+|1.
+|'''O''' ?∃ ('''O''' challenges the thesis)
+|-
+|2.
+|'''P''' A(t<sub>1</sub>)⊃∀y A(y) ('''P''' chooses "t<sub>1</sub>")
+|-
+|3.
+|'''O''' A(t<sub>1</sub>) ('''O''' challenges the implication by granting the antecedent)
+|-
+|4.
+|'''P''' ∀y A(x) ('''P''' answers by stating the consequent
+)
+|-
+|5.
+|'''O''' ?t<sub>2</sub> ('''O''' challenges the universal by choosing the new singular term "t<sub>2</sub>")
+|}
+
+== Further developments ==
+Shahid Rahman (first at [[Universität des Saarlandes]], then at [[Université de Lille]])<ref>{{cite web |url=https://univ-lille3.academia.edu/ShahidRahman/CurriculumVitae |title=Shahid Rahman Curriculum Vitae |access-date=17 June 2019 |first=Shahid |last=Rahman |date=2018 |language=en}}</ref> and collaborators in Saarbrücken and Lille developed dialogical logic in a general framework for the historic and the systematic study of several forms of inferences and non-classical logics such as [[free logic]],<ref>For example:
+* {{cite journal |last1=Rahman |first1=S. |last2=Fishmann |first2=M. |last3=Rückert |first3=H. |title=On Dialogues and Ontology. The Dialogical Approach to Free Logic |date=1997 |journal=Logique et Analyse |volume=160 |pages=357–374}}
+* {{cite journal |last=Rahman |first=S. |title=Hugh MacColl's Ontological Domains |date=2010 |journal=Kairos. Revista de Filosofía y Ciencia |volume=1 |pages=7–24}}
+* {{cite journal |last1=Rahman |first1=S. |last2=Fontaine |first2=M. |title=Towards a Semantics for the Artifactual Theory of Fiction and Beyond |date=2014 |journal=Synthese |volume=191 |issue=3 |pages=499–516|doi=10.1007/s11229-013-0287-z |url=https://halshs.archives-ouvertes.fr/halshs-01216164/file/preprint-Artifact-20-APRIL-2013.pdf }}</ref> (normal and non-normal) [[modal logic]],<ref>{{cite journal |last1=Rahman |first1=S. |last2=Rückert |first2=H. |title=Dialogische Modallogik (für T, B, S4, und S5) |date=1999 |journal=Logique et Analyse |volume=42 |issue=167/168 |pages=243–282 |jstor=44084659 }}</ref> [[hybrid logic]],<ref>{{cite journal |last1=Rahman |first1=S. |last2=Damien |first2=L. |last3=Gorisse |first3=M.H. |title=La dialogique temporelle ou Patrick Blackburn par lui même |date=2004 |journal=Philosophia Scientiae |volume=8 |issue=2 |pages=39–59}}</ref> first-order modal logic,<ref>{{cite journal |last1=Rahman |first1=S. |last2=Clerbout |first2=N. |last3=Gorisse |first3=M.H. |title=Context Sensitivity in Jain Philosophy. A Dialogical Study of Siddharsigani's Commentary on the Handbook of Logic |date=2011 |journal=Journal of Philosophical Logic |volume=40 |issue=5 |pages=633–662|doi=10.1007/s10992-010-9164-0 |hdl=1854/LU-4264208 |url=https://biblio.ugent.be/publication/4264208 }}</ref> [[paraconsistent logic]],<ref>For example:
+* {{cite journal |last1=Rahman |first1=S. |last2=Carnielli |first2=W. |last3=Rückert |first3=H. |title=The Dialogical Approach to Paraconsistency |date=2001 |journal=Synthese |volume=125 |issue=1–2 |pages=201–232|doi=10.1023/A:1005294523930 }}
+* {{cite book | last=Rahman | first=S. | chapter=On Frege's Nightmare. A Combination of Intuitionistic, Free and Paraconsistent Logics | editor-last=Wansing | editor-first=H. | title=Essays on Non-Classical Logic | publisher=World Scientific | location=New Jersey, London, Singapore, Hong Kong | pages=61–85 | date=2001 }}
+* {{cite journal |last1=Barrio |first1=E. |last2=Clerbout |first2=N. |last3=Rahman |first3=S. |title=Introducing Consistency in a Dialogical Framework for Paraconsistent Logic |date=2018 |journal=Logic Journal of the IGPL  |doi=10.1093/jigpal/jzy069}}</ref> [[linear logic]], [[relevance logic]],<ref>{{cite book | last=Rahman | first=S. | chapter=Negation in the Logic of First Degree Entailment and Tonk. A Dialogical Study | editor1-last=Rahman. | editor1-first=S. | editor2-last=Primiero. | editor2-first=G. | editor3-last=Marion | editor3-first=M. | title=(Anti)Realism. The Realism-Realism Debate in the Age of Alternative Logics | publisher=Springer | location=Dordrecht | pages=175–202 | date=2012 }}</ref> [[connexive logic]],<ref>{{cite journal |last1=Rahman |first1=S. |last2=Rückert |first2=H. |title=Dialogical Connexive Logic |date=2001 |journal= Synthese |volume=125 |issue=1–2 |pages=105–139|doi=10.1023/A:1010351931769 }}</ref> [[belief revision]],<ref>{{cite book | last1=Rahman | first1=S. | last2=Fiutek | first2=V. | last3=Rückert | first3=H. | chapter=A Dialogical Semantics for Bonanno's System of Belief Revision | editor-last=Bour | editor-first=P. | title=Constructions | publisher=College Publications | location=London | pages=315–334 | date=2010 }}</ref> [[argumentation theory]] and legal reasoning.
+
+Most of these developments are a result of studying the semantic and epistemological consequences of modifying the structural rules and/or of the logical constants. In fact, they show how to implement the ''dialogical conception of the structural rules for inference'', such as ''weakening'' and ''contraction''.<ref group="note">This has been also studied in the context of cooperative dialogues for the search of structural rules; see Keiff (2007).{{Full citation needed|date=April 2020}} These results seems to have been unnoticed in {{harvtxt|Dutilh-Novaes|French|2018}}.</ref>
+
+Further publications show how to develop ''material dialogues'' (i.e., dialogues based on fully interpreted languages) that than dialogues restricted to [[Validity (logic)|logical validity]].<ref group="note">These publications respond to old and new criticism to dialogic logic such as the ones of {{harvtxt|Dutilh-Novaes|2015}} and {{harvtxt|Hodges|2001}}.</ref> This new approach to dialogues with content, called ''immanent reasoning'',<ref>For example:
+* {{cite journal |last1=Rahman |first1=S. |last2=Jovanovic |first2=R. |last3=Clerbout |first3=N. |title=The Dialogical Take on Martin-Löf's Proof of the Axiom of Choice |date=2015 |journal=South American Journal of Logic |volume=1 |issue=1 |pages=179–208}}
+* {{cite journal |last1=Rahman |first1=S. |last2=Redmond |first2=J. |title=Armonía Dialógica. Tonk, Teoría Constructiva de Tipos y Reglas para Jugadores Anónimos |date=2016 |journal=Theoria |volume=31 |issue=1 |pages=27–53|doi=10.1387/theoria.13949 |doi-access=free }}
+* {{cite book | last1=Rahman | first1=S. | last2=Klev | first2=A. | last3=McConaughey | first3=Z. | last4=Clerbout | first4=N. | title=Immanent Reasoning and the Dialogical Approach to Constructive Type Theory. A Plaidoyer for the Play level | publisher=Springer | location=Dordrecht | date=2018 }}</ref> is one of the results of the dialogical perspective on [[Per Martin-Löf]]'s [[constructive type theory]]. Among the most prominent results of ''immanent reasoning'' are: the elucidation of the role of dialectics in [[Term logic|Aristotle's theory of syllogism]],<ref>{{cite journal |last1=Crubellier |first1=M. |last2=Marion |first2=M. |last3=McConaughey |first3=Z. |last4=Rahman |first4=S. |title=Dialectic, The Dictum de Omni and Ecthesis |date=2019 |journal=History and Philosophy of Logic |volume=40 |issue=3 |pages=207–233 |doi=10.1080/01445340.2019.1586623 |url=https://halshs.archives-ouvertes.fr/halshs-01652027/document}}</ref> the reconstruction of logic and argumentation within the Arabic tradition,<ref>{{cite journal |last1=Rahman |first1=S. |last2=Granström |first2=J. |last3=Salloum |first3=Z. |title=Ibn Sina's Approach to equality and unity |date=2014 |journal=Cambridge Journal for Arabic Sciences and Philosophy |volume=4 |issue=2 |pages=297–307|doi=10.1017/S0957423914000046 |url=https://halshs.archives-ouvertes.fr/halshs-01216178/file/ibnsinaOfficeWord1OCT-3.pdf }}</ref> and the formulation of ''cooperative dialogues'' for legal reasoning<ref>{{cite book | last=Rahman | first=S. | chapter=On Hypothetical Judgements and Leibniz's Notion of Conditional Right | editor1-last=Armgardt. | editor1-first=M. | editor2-last=Canivez. | editor2-first=P. | editor3-last=Chassagnard-Pinet. | editor3-first=S. | title=Past and Present Interactions in Legal Reasoning and Logic | volume=7 | publisher=Springer | location=Cham | pages=109–168 | date=2015 }}</ref> and more generally for reasoning by parallelism and analogy.<ref>{{cite journal |last1=Rahman |first1=S. |last2=Muhammad |first2=I. |title=Unfolding parallel reasoning in islamic jurisprudence. Epistemic and Dialectical Meaning within Abū Isḥāq al-Shīrāzī's System of Co-Relational Inferences of the Occasioning Factor |date=2018 |journal=Cambridge Journal of Arabic Sciences and Philosophy |volume=28 |pages=67–132|doi=10.1017/S0957423917000091 }}</ref>
+
+==Notes==
+{{reflist|group="note"}}
+
+== References ==
+{{reflist}}
+
+== Further reading ==
+
+=== Books ===
+{{refbegin|colwidth=30em}}
+* {{cite book | last1=Aho | first1=T. | last2=Pietarinen | first2=A-V. | title=Truth and Games. Essays in honour of Gabriel Sandu | publisher=Societas Philosophica Fennica | location=Helsinki | date=2007 | isbn=978-951-9264-57-8 | ref=harv}}
+* {{cite book | last=van Benthem | first=J. | title=Logic in Games | publisher=The MIT Press | location=Cambridge, Massachusetts | date=2006 | isbn=978-0-262-01990-3 | ref=harv}}
+* {{cite book | last1=Allen | first1=L. | last2=Sandu | first2=G. | last3=Sevenster | first3=M. | title=Independence-Friendly Logic. A Game-Theoretic Approach | publisher=Cambridge University Press | location=Cambridge | date=2011 | ref=harv}}
+* {{cite book | editor1-last=van Benthem | editor1-first=J. | editor2-last=Heinzmann | editor2-first=G. | editor3-last=Rebuschi | editor3-first=M. | editor4-last=Visser | editor4-first=H. | title=The Age of Alternative Logics | publisher=Springer | location=Cambridge | date=2006 | isbn=978-1-40-20-5011-4 | ref=harv}}
+* {{cite book | editor1-last=Dégremont | editor1-first=C. | editor2-last=Keiff | editor2-first=L. | editor3-last=Rückert | editor3-first=H. | title=Dialogues, Logics and Other Strange Things. Essays in Honour of Shahid Rahman | publisher=College Publications | location=London | date=2008 | isbn=978-1-904987-13-0 | ref=harv}}
+* {{cite book | last1=van Eemeren | first1=F.H. | last2=Grootendorst | first2=R. | title=A systematic theory of argumentation: The pragma-dialectical approach | publisher=Cambridge University Press | location=Cambridge | date=2004 | ref=harv}}
+* {{cite book | last1=Rahman | first1=S. | last2=Rückert | first2=H. | title=New Perspectives in Dialogical Logic | series=Synthese | volume=127 | publisher=Springer | date=2001 | ref=harv}}
+* {{cite book | editor1-last=Rahman | editor1-first=S. | editor2-last=Clerbout | editor2-first=N. | title=Linking Games and Constructive Type Theory: Dialogical Strategies, CTT-Demonstrations and the Axiom of Choice | publisher=Springer-Briefs | location=Cham | date=2015 | isbn=978-3-319-19063-1 | ref=harv}}
+* {{cite book | last1=Rahman | first1=S. | last2=Iqbal | first2=M. | last3=Soufi | first3=Y. | title=Inferences by Parallel Reasoning in Islamic Jurisprudence. al-Shīrāzī's Insights into the Dialectical Constitution of Meaning and Knowledge | publisher=Springer | location=Cham | date=2019 | isbn=978-3-030-22381-6 | ref=harv}}
+* {{cite book | last1=Rahman | first1=S. | last2=McConaughey | first2=Z. | last3=Klev | first3=A. | last4=Clerbout | first4=N. | title=Immanent Reasoning or Equality in Action. A Plaidoyer for the Play level | publisher=Springer | location=Cham | date=2018 | isbn=978-3-319-91148-9 | ref=harv}}
+* {{cite book | last1=Rahman | first1=S. | last2=Zidani | first2=F. | last3=Redmond | first3=J. | last4=Kadoum | first4=Y. | title=The dialogical approach to intuitionistic, classical and basic modal logic. Including a brief introduction to the dialogical take on Constructive Type Theory | publisher=Dar Al Farabi | location=Beirut | date=2019 | language = ar | isbn=978-614-432-513-1 | ref=harv}}
+* {{cite book | last1=Redmond | first1=J. | last2=Fontaine | first2=M. | title=How to Play Dialogues. An Introduction to Dialogical Logic | series=Dialogues | volume=1 | publisher=College Publications | location=London | date=2011 | isbn=978-1-84890-046-2 | ref=harv}}
+* {{cite book | last=Woods | first=J. | title=Argument: The Logic of the Fallacies | publisher=McGraw-Hill | location=Toronto and New York | date=1982 | isbn=0-07-548026-3 | url-access=registration | url=https://archive.org/details/argumentlogicoff0000wood | ref=harv}}
+* {{cite book | last=Woods | first=J. | title=The Death of Argument: Fallacies in Agent-Based Reasoning | publisher=Kluwer | location=Dordrecht and Boston | date=2004 | isbn=1-4020-2663-3 | ref=harv}}
+* {{cite book | last1=Woods | first1=J. | last2=Gabbay | first2=Dov M. | title=The Reach of Abduction: Insight and Trial | series=A Practical Logic of Cognitive Systems | volume=2 | publisher=ELSEVIER B.V. | location=Amsterdam | date=2005 | isbn=978-0-08-046092-5 | ref=harv}}
+{{refend}}
+
+=== Articles ===
+{{refbegin|colwidth=30em}}
+* {{cite journal |last1=Abramsky |first1=S. |last2=Jagadeesan |first2=R. |title=Games and full completeness for multiplicative linear logic |date=1994 |journal=The Journal of Symbolic Logic |volume=59 |issue=2 |pages=543–574 |issn=1943-5886 |doi=10.2307/2275407 |jstor=2275407 |arxiv=1311.6057 |ref=harv}}
+* {{cite journal |last=Blass |first=A. |s2cid=15223576 |title=A game semantics for linear logic |date=1992 |journal=Annals of Pure and Applied Logic |volume=56 |pages=151–166 |issn=0168-0072 |doi=10.1093/jigpal/5.4.487|ref=harv}}
+* {{cite journal |last=Dutilh-Novaes |first=C. |title=A Dialogical, Multiagent Account of the Normativity of Logic |date=2015 |journal=Dialectica |volume=69 |issue=4 |pages=587–609 |issn=1746-8361 |doi=10.1111/1746-8361.12118 |ref=harv}}
+* {{cite journal |last1=Dutilh-Novaes |first1=C. |last2=French |first2=R. |title=Paradoxes and structural rules from a dialogical perspective |date=2018 |journal=Philosophical Issues |volume=28 |issue=1 |pages=129–158 |issn=1758-2237|doi=10.1111/phis.12119 |doi-access=free |ref=harv}}
+* {{cite journal |last=Felscher |first=W. |title=Dialogues as a Foundation for Intuitionistic Logic |date=1985 |journal=Annals of Pure and Applied Logic |volume=28 |pages=217–254 |issn=0168-0072|doi=10.1016/0168-0072(85)90016-8 |ref=harv}}
+* {{cite journal |last=Felscher |first=W. |title=Dialogues as a Foundation for Intuitionistic Logic |date=2002 |editor1-first=Dov M. |editor1-last=Gabbay |editor2-first=F. |editor2-last=Guenthner |journal=Handbook of Philosophical Logic |volume=5 |publisher=Kluwer |pages=115–145 |issn=0168-0072|ref=harv}}
+* {{cite journal |last=Girard |first=J-Y. |title=Locus solum: from the rules of logic to the logic of rules |date=2001 |journal=Mathematical Structures in Computer Science |volume=11 |issue=1 |pages=301–506 |issn=1469-8072 |url=http://girard.perso.math.cnrs.fr/0.pdf|doi=10.1017/S096012950100336X |ref=harv}}
+* {{cite journal |last=Hodges |first=W. |title=Dialogue foundations: A sceptical look |date=2001 |journal=Aristotelian Society Supplementary |volume=75 |issue=1 |pages=17–32|doi=10.1111/1467-8349.00076 |ref=harv}}
+* {{cite journal |last=Japaridze |first=G. |title=Introduction to computability logic |date=2003 |journal=Annals of Pure and Applied Logic |volume=123 |issue=1–3 |pages=1–99|doi=10.1016/S0168-0072(03)00023-X |ref=harv}}
+* {{cite journal |last=Krabbe |first=E. |title=Formal Systems of Dialogue Rules |date=1985 |journal=Synthese |volume=63 |issue=3 |pages=295–328|doi=10.1007/BF00485598 |ref=harv}}
+* {{cite journal |last=Krabbe |first=E. |title=A Theory of Modal Dialectics |date=1986 |journal=Journal of Philosophical Logic |volume=15 |issue=2 |pages=191–217|doi=10.1007/BF00305491 |ref=harv}}
+* {{cite journal |last=Krabbe |first=E. |title=Dialogue Foundations: Dialogue Logic Revisited |date=2001 |journal=Supplement to the Proceedings of the Aristotelian Society |volume=75 |pages=33–49|doi=10.1111/1467-8349.00077 |ref=harv}}
+* {{cite journal |last=Lorenz |first=K. |title=Basic Objectives of Dialogue Logic in Historical Perspective |date=2001 |journal=Synthese |volume=127 |issue=1–2 |pages=225–263|doi=10.1023/A:1010367416884 |ref=harv}}
+* {{cite journal |last=Marion |first=M. |editor3-first=Tero |editor3-last=Tulenheimo |editor2-first=Ahti-Veikko |editor2-last=Pietarinen |editor1-first=Ondrej |editor1-last=Majer |title=Why Play Logical Games? |date=2006 |journal=Unifying Logic, Language, and Philosophy |volume=15 |pages=3–26 |doi=10.1007/978-1-4020-9374-6|isbn=978-1-4020-9373-9 |ref=harv}}
+* {{cite journal |last=Marion |first=M. |title=Aristotle on universal quantification: a study from the perspective of game semantics |date=2015 |journal=History and Philosophy of Logic |volume=37 |issue=3 |pages=201–229|doi=10.1080/01445340.2015.1089043 |ref=harv}}
+* {{cite journal |last=Piecha |first=T. |title=Dialogical Logic |date=2015 |journal=The Internet Encyclopedia of Philosophy |url=https://www.iep.utm.edu/dial-log/ |ref=harv}}
+* {{cite journal |last1=Rahman |first1=S. |last2=Keiff |first2=L. |title=On how to be a dialogician |date=2005 |journal=Logic, Thought and Action |pages=359–408 |doi=10.1007/1-4020-3167-X_17 |isbn=1-4020-2616-1 |ref=harv}}
+* {{cite journal |last1=Rahman |first1=S. |last2=Tulenheimo |first2=T. |title=From Games to Dialogues and Back: Towards a General Frame for Validity |date=2009 |journal=Games: Unifying Logic, Language and Philosophy |publisher=Springer |pages=153–208 |doi=10.1007/978-1-4020-9374-6_8 |ref=harv}}
+{{refend}}
+
+{{Authority control}}
+
+[[Category:Logic]]
+[[Category:Philosophy]]

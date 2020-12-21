@@ -1,0 +1,69 @@
+{{Merge to|Statistical mechanics|date=September 2020}}
+{{More citations needed|date=December 2009}}
+'''Statistical physics''' is a branch of [[physics]] that uses methods of [[probability theory]] and [[statistics]], and particularly the [[Mathematics|mathematical]] tools for dealing with large populations and approximations, in solving physical problems. It can describe a wide variety of fields with an inherently [[stochastic]] nature. Its applications include many problems in the fields of physics, [[biology]], [[chemistry]], [[neuroscience]], and even some social sciences, such as [[sociology]]<ref>{{Cite journal|last1=Raducha|first1=Tomasz|last2=Gubiec|first2=Tomasz|date=April 2017|title=Coevolving complex networks in the model of social interactions|journal=Physica A: Statistical Mechanics and Its Applications|volume=471|pages=427–435|doi=10.1016/j.physa.2016.12.079|issn=0378-4371|arxiv=1606.03130|bibcode=2017PhyA..471..427R}}</ref> and [[linguistics]].<ref>{{Cite journal|last1=Raducha|first1=Tomasz|last2=Gubiec|first2=Tomasz|date=2018-04-27|title=Predicting language diversity with complex networks|journal=PLOS ONE|volume=13|issue=4|pages=e0196593|doi=10.1371/journal.pone.0196593|issn=1932-6203|pmc=5922521|pmid=29702699|bibcode=2018PLoSO..1396593R|arxiv=1704.08359}}</ref> Its main purpose is to clarify the properties of matter in aggregate, in terms of physical laws governing atomic motion.<ref>{{cite book|title = Introduction to Statistical Physics |last = Huang |first = Kerson |publisher= CRC Press| isbn = 978-1-4200-7902-9 |page=15 |edition = 2nd|date = 2009-09-21 }}</ref>
+
+[[Statistical mechanics]] develops the [[Phenomenology (particle physics)|phenomenological]] results of [[thermodynamics]] from a probabilistic examination of the underlying microscopic systems. Historically, one of the first topics in physics where statistical methods were applied was the field of [[classical mechanics]], which is concerned with the motion of particles or objects when subjected to a force.
+
+==Statistical mechanics==
+{{main|Statistical mechanics}}
+{{Statistical mechanics}}
+
+[[Statistical mechanics]] provides a framework for relating the microscopic properties of individual atoms and molecules to the macroscopic or bulk properties of materials that can be observed in everyday life, therefore explaining [[thermodynamics]] as a natural result of statistics, [[classical mechanics]], and [[quantum mechanics]] at the microscopic level.  Because of this history, statistical physics is often considered synonymous with statistical mechanics or [[statistical thermodynamics]].<ref group=note>This article presents a broader sense of the definition of statistical physics.</ref>
+
+One of the most important equations in statistical mechanics (akin to <math>F=ma</math> in [[Newton's laws of motion|Newtonian mechanics]], or the [[Schroedinger equation|Schrödinger equation]] in quantum mechanics) is the definition of the [[Partition function (statistical mechanics)|partition function]] <math>Z</math>, which is essentially a weighted sum of all possible states <math>q</math> available to a system.
+
+: <math>Z = \sum_q \mathrm{e}^{-\frac{E(q)}{k_BT}}</math>
+
+where <math>k_B</math> is the [[Boltzmann constant]], <math>T</math> is [[temperature]] and  <math>E(q)</math> is [[energy]] of state  <math>q</math>. Furthermore, the probability of a given state, <math>q</math>, occurring is given by
+
+: <math>P(q) = \frac{ {\mathrm{e}^{-\frac{E(q)}{k_BT}}}}{Z}</math>
+
+Here we see that very-high-energy states have little probability of occurring, a result that is consistent with intuition.
+
+A statistical approach can work well in classical systems when the number of [[degrees of freedom (physics and chemistry)|degrees of freedom]] (and so the number of variables) is so large that the exact solution is not possible, or not really useful. Statistical mechanics can also describe work in [[non-linear dynamics]], [[chaos theory]], [[thermal physics]], [[fluid dynamics]] (particularly at high [[Knudsen number]]s), or [[plasma physics]].
+
+===Quantum statistical mechanics===
+[[Quantum statistical mechanics]] is [[statistical mechanics]] applied to [[quantum mechanics|quantum mechanical systems]]. In quantum mechanics a [[statistical ensemble (mathematical physics)|statistical ensemble]] (probability distribution over possible [[quantum state]]s) is described by a [[density matrix|density operator]] ''S'', which is a non-negative, [[self-adjoint]], [[trace-class]] operator of trace 1 on the [[Hilbert space]] ''H'' describing the quantum system.  This can be shown under various [[mathematical formulation of quantum mechanics|mathematical formalisms for quantum mechanics]].  One such formalism is provided by [[quantum logic]].
+
+==Monte Carlo method==
+{{main|Monte Carlo method in statistical physics}}
+
+Although some problems in statistical physics can be solved analytically using approximations and expansions, most current research utilizes the large processing power of modern computers to simulate or approximate solutions. A common approach to statistical problems is to use a [[Monte Carlo simulation]] to yield insight into the properties of a [[complex system]]. Monte Carlo methods are important in [[computational physics]], [[physical chemistry]], and related  fields, and have diverse applications including [[medical physics]], where they are used to model radiation transport for radiation dosimetry calculations.<ref>{{cite journal | doi = 10.1088/0031-9155/59/4/R151 | pmid=24486639 | volume=59 | issue=4 | title=GPU-based high-performance computing for radiation therapy | journal=Physics in Medicine and Biology | pages=R151–R182|bibcode = 2014PMB....59R.151J | year=2014 | last1=Jia | first1=Xun | last2=Ziegenhein | first2=Peter | last3=Jiang | first3=Steve B | pmc=4003902 }}</ref><ref>{{cite journal | doi = 10.1088/0031-9155/59/6/R183 | volume=59 | issue=6 | title=Advances in kilovoltage x-ray beam dosimetry | journal=Physics in Medicine and Biology | pages=R183–R231|bibcode = 2014PMB....59R.183H | pmid=24584183 | date=Mar 2014| last1=Hill | first1=R | last2=Healy | first2=B | last3=Holloway | first3=L | last4=Kuncic | first4=Z | last5=Thwaites | first5=D | last6=Baldock | first6=C | s2cid=18082594 | url=https://semanticscholar.org/paper/fb231c3d9ade811d793b85623fd32c6ea126d5ff }}</ref><ref>{{cite journal | doi = 10.1088/0031-9155/51/13/R17 | pmid=16790908 | volume=51 | issue=13 | title=Fifty years of Monte Carlo simulations for medical physics | journal=Physics in Medicine and Biology | pages=R287–R301|bibcode = 2006PMB....51R.287R | year=2006 | last1=Rogers | first1=D W O | s2cid=12066026 | url=https://semanticscholar.org/paper/b6d08efc5f0818a01dc60637a4a6f8115482483e }}</ref>
+
+==Scientists and universities==
+A significant contribution (at different times) in development of statistical physics was given by [[Satyendra Nath Bose]], [[James Clerk Maxwell]], [[Ludwig Boltzmann]], [[J. Willard Gibbs]], [[Marian Smoluchowski]], [[Albert Einstein]], [[Enrico Fermi]], [[Richard Feynman]], [[Lev Landau]], [[Vladimir Fock]], [[Werner Heisenberg]], [[Nikolay Bogolyubov]], [[Benjamin Widom]], [[Lars Onsager]],  and others. Statistical physics is studied in the nuclear center at [[Los Alamos National Laboratory|Los Alamos]]. Also, Pentagon has organized a large department for the study of [[turbulence]] at [[Princeton University]]. Work in this area is also being conducted by [[Saclay]] (Paris), [[Max Planck Society|Max Planck Institute]], [[AMOLF|Netherlands Institute for Atomic and Molecular Physics]] and other research centers.
+
+==Achievements==
+Statistical physics allowed us to explain and quantitatively describe [[superconductivity]], [[superfluidity]], [[turbulence]], collective phenomena in [[solid]]s and [[plasma (physics)|plasma]], and the structural features of [[liquid]]. It underlies the modern [[astrophysics]]. It is statistical physics that helped us to create such intensively developing study of [[liquid crystals]] and to construct a theory of [[phase transition]] and [[critical phenomena]]. Many experimental studies of matter are entirely based on the statistical description of a system. These include the scattering of cold [[neutron]]s, [[X-ray]], [[Visible radiation|visible light]], and more.
+Statistical physics plays a major role in Physics of Solid State Physics, Materials Science, Nuclear Physics, Astrophysics, Chemistry, Biology and Medicine (e.g. study of the spread of infectious diseases), Information Theory and Technique but also in those areas of technology owing to their development in the evolution of Modern Physics. It still has important applications in theoretical sciences such as Sociology and Linguistics and is useful for researchers in higher education, corporate governance, and industry.
+
+==See also==
+{{cols}}
+* [[Statistical field theory]]
+* [[Mean sojourn time]]
+* [[Dynamics of Markovian particles]]
+* [[Complex network]]
+* [[Mathematical physics]]
+* [[Combinatorics and physics]]
+{{colend}}
+
+==Notes==
+{{Reflist|group=note}}
+
+==References==
+{{Reflist}}
+
+==Further reading==
+*Fundamentals of Statistical and Thermal Physics by Frederick Reif
+*[https://www.worldscientific.com/worldscibooks/10.1142/8709 BASICS OF STATISTICAL PHYSICS: Second Edition] 
+by Harald J W Müller-Kirsten (University of Kaiserslautern, Germany)
+*Statistical Physics and other resources by [https://jfi.uchicago.edu/~leop/ Leo P Kadanoff]
+*[http://librarum.org/book/815/1 Statistical Physics - Statics, Dynamics and Renormalization] by Leo P Kadanoff
+*[http://www.arxiv.org/pdf/physics/9803005v1.pdf History and outlook of statistical physics] by Dieter Flamm
+
+{{Physics-footer}}
+
+{{DEFAULTSORT:Statistical Physics}}
+<!--Categories-->
+[[Category:Statistical physics| ]]
+[[Category:Formal sciences]]

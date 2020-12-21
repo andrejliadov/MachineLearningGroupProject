@@ -1,0 +1,125 @@
+<!-- Deleted image removed: [[File:Gps tracking geofence.png|thumb|Geofences in GPS tracking software]] -->
+[[File:GeoFence.jpg|thumb|Two geofences defined in a GPS application]]
+A '''geofence''' is a [[Virtuality|virtual]] [[perimeter]] for a real-world [[geographic area]].<ref name=":0">{{Cite encyclopedia|url=http://whatis.techtarget.com/definition/geofencing|title=What is geo-fencing (geofencing)?|language=en-US|date=December 2016|encyclopedia=WhatIs.com|publisher=TechTarget|location=Newton, Massachusetts|accessdate=26 Jan 2020|last=Rouse|first=Margaret}}</ref>  A geo-fence could be dynamically generated—as in a radius around a point location, or a geo-fence can be a predefined set of boundaries (such as school zones or neighborhood boundaries).
+
+The use of a geofence is called '''geofencing''', and one example of usage involves a [[location awareness|location-aware]] device of a [[location-based service]] (LBS) user entering or exiting a geo-fence. This activity could trigger an alert to the device's user as well as messaging to the geo-fence operator.  This info, which could contain the location of the device, could be sent to a [[mobile telephone]] or an email account.
+
+==Applications==
+Geofencing, used with [[Parental controls|child location]] services, can notify parents if a child leaves a designated area.<ref>{{cite book|url=https://www.google.com/books/edition/Location_Systems/kCvjD_5p5XYC?hl=en&gbpv=1&dq=isbn%3A9781598295818&pg=PA88&printsec=frontcover|title=Location Systems: An Introduction to the Technology Behind Location Awareness|last=De Lara|first=Eyal|author2=Anthony LaMarca|author3=Mahadev Satyanarayanan|publisher=Morgan & Claypool Publishers|year=2008|isbn=978-1-59829-581-8|series=Synthesis Lectures on Mobile and Pervasive Computing, Lecture #4|page=88|url-access=limited|via=Google Books}}</ref>
+
+Geofencing used with [[locationized firearms]] can restrict those firearms to fire only in locations where their firing is permitted, thereby making them unable to be used elsewhere.  
+
+Geofencing is critical to [[telematics]].  It allows users of the system to draw zones around places of work, customer's sites and secure areas. These geo-fences when crossed by an equipped vehicle or person can trigger a warning to the user or operator via SMS or email.
+
+In some companies, geofencing is used by the [[Human resource management|human resource]] department to monitor employees working in special locations especially those doing field works. Using a geofencing tool, an employee is allowed to log his or her attendance using a GPS-enabled device when within a designated  perimeter.
+
+Other applications include sending an alert if a vehicle is stolen,<ref>{{cite news|url=http://www.motorcycle-usa.com/2/2304/Motorcycle-Article/Motorcycle-Tracker-Updates-Every-15-Seconds.aspx|title=Motorcycle Tracker Updates Every 15 Seconds|date=23 January 2009|work=Motorcycle USA|accessdate=2009-01-26|url-status=dead|archive-url=https://web.archive.org/web/20090131093939/http://www.motorcycle-usa.com/2/2304/Motorcycle-Article/Motorcycle-Tracker-Updates-Every-15-Seconds.aspx|archive-date=January 31, 2009|quote=Courtesy True Tracker Pro}}</ref> and notifying rangers when wildlife stray into farmland.<ref>{{cite news|url=http://www.cbsnews.com/stories/2008/10/11/tech/main4515365.shtml|title=Kenya's elephants send text messages to rangers|date=October 11, 2008|access-date=26 Jan 2020|publisher=CBS News|agency=Associated Press}} </ref>
+
+Geo-fence can be used for location based messaging for tourist safety and communication.<ref>{{cite web|url=http://ugoround.com/white_papers/UgoRound-White-Paper-Location-based-messaging-for-Tourists.pdf|title=Location Based Messaging for Tourist Safety and Communication|date=July 2017|publisher=UgoRound Australia Pty Ltd|accessdate=26 Jan 2020}}</ref>
+
+Geofencing, in a security strategy model, provides security to wireless local area networks. This is done by using predefined borders (e.g., an office space with borders established by positioning technology attached to a specially programmed server). The office space becomes an authorized location for designated users and wireless mobile devices.<ref>Hamid Jahankhani, A G Hessami, Feng Hsu: Global security, safety, and sustainability : 5th international conference, ICGS3 2009, London, UK, September 1-2, 2009 : proceedings. {{ISBN|978-3-642-04061-0}}</ref>{{Page needed|date=January 2020}}
+
+In 2015, US Senator [[Charles Schumer]] proposed a law requiring drone manufacturers to build geofencing constraints into [[unmanned aerial vehicle]] navigation systems that would override the commands of the unsophisticated operator, preventing the device from flying into protected [[airspace]].<ref>{{cite news |title=Todd Humphreys: Don't Overregulate Drones |url=http://alcalde.texasexes.org/2015/03/todd-humphreys-dont-overregulate-drones/ |work=Alcalde |date=18 March 2015 |accessdate=2015-04-05 }}</ref><ref>{{cite web
+|url=http://www.schumer.senate.gov/newsroom/press-releases/schumer-proposes-new-law-designed-to-virtually-eliminate-chance-of-drones-crashing-into-planes-geo-fencing-amendment-would-require-software-on-every-drone-that-would-prohibit-flying-near-airports-and-sensitive-areas-the-technology-worksall-thats-needed-is-a-law
+|last=Schumer
+|first=Charles
+|title=Schumer proposes law
+|date=19 August 2015
+|accessdate=15 December 2015}}</ref>
+
+Applications of Geofencing extend to Advertising & Marketing. Geofencing solution providers allow marketers and advertisers to precisely choose the exact geo-location that their ads show up on. Geofencing uses different types of targeting to identify geo-location such as zip codes, street addresses, GPS coordinates using latitude and longitude, as well as IP targeting.
+
+Geofencing enables competitive marketing tactics for advertisers and marketers to grab the attention of in-market shoppers in their competitive store location, large scale events such as concerts, sports events, conferences, etc. in stadiums, convention centers, malls, outlets, parks, neighborhoods. For example: at a concert, a digital ad relating to the performer or an affiliated company could be sent to only those people in the venue.
+
+For example, a local auto-dealership builds a virtual boundary within a few square miles from its dealership's location to target car buyers within the same neighborhood. This way they limit their ad spending on prospects who are more likely to purchase in order to get a better ROI. Using tracking technologies to identify devices where the ads were shown, geofencing solution providers are able to provide walk-in attribution for their advertising. This means that using a geofencing solution, companies can now track the customers who walked into the showroom after seeing the ad. This level of attribution provides better visibility and analytics for marketers to spend their advertising budget wisely.
+
+A local service business may only be interested in (a) likely clients (b) within a service region or catchment basin. Broadcasting or advertising more extensively brings irrelevant responses and wastes energy, time, money, and opportunity. Electronic advertising can identify and target only desired market objects (people).
+
+==See also==
+*[[Assisted GPS]] (A-GPS)
+*[[Automotive navigation system]]
+*[[Cell Broadcast]]
+*[[Geomessaging]]
+*[[Geotagging]]
+*[[GPS drawing]] 
+*[[GPS tracking]]
+*''[[Ingress (video game)|Ingress]]''
+*[[Microtargeting]]
+*[[Point in polygon]]
+*[[Point of interest]]
+*[[Geomarketing]]
+*[[Social media use in politics]]
+
+==References==
+{{reflist}}
+
+==Further reading==
+*De Lara, Eyal; Anthony LaMarca, Mahadev Satyanarayanan (2008). ''Location Systems: An Introduction to the Technology Behind Location Awareness.'' Morgan & Claypool Publishers. p. 88. {{ISBN|978-1-59829-581-8}}.
+*Anthony C. Ijeh, Allan J. Brimicombe, David S. Preston, Chris O. Imafidon (2009) "Geofencing in a Security Strategy Model." In ''Global Safety and Sustainability: 5th International Conference Proceedings''. Jahankhani, H.; Hessami, A.G.; Hsu, F. (Eds.) p.104-111 © Springer-Verlag Berlin Heidelberg 2009. {{ISBN|978-3-642-04061-0}}
+
+[[Category:Global Positioning System]]
+[[Category:Regions]]
+[[Category:Geographical technology]]
+[[Category:Geographic position]]<!-- Deleted image removed: [[File:Gps tracking geofence.png|thumb|Geofences in GPS tracking software]] -->
+[[File:GeoFence.jpg|thumb|Two geofences defined in a GPS application]]
+A '''geofence''' is a [[Virtuality|virtual]] [[perimeter]] for a real-world [[geographic area]].<ref name=":0">{{Cite encyclopedia|url=http://whatis.techtarget.com/definition/geofencing|title=What is geo-fencing (geofencing)?|language=en-US|date=December 2016|encyclopedia=WhatIs.com|publisher=TechTarget|location=Newton, Massachusetts|accessdate=26 Jan 2020|last=Rouse|first=Margaret}}</ref>  A geo-fence could be dynamically generated—as in a radius around a point location, or a geo-fence can be a predefined set of boundaries (such as school zones or neighborhood boundaries).
+
+The use of a geofence is called '''geofencing''', and one example of usage involves a [[location awareness|location-aware]] device of a [[location-based service]] (LBS) user entering or exiting a geo-fence. This activity could trigger an alert to the device's user as well as messaging to the geo-fence operator.  This info, which could contain the location of the device, could be sent to a [[mobile telephone]] or an email account.
+
+==Applications==
+Geofencing, used with [[Parental controls|child location]] services, can notify parents if a child leaves a designated area.<ref>{{cite book|url=https://www.google.com/books/edition/Location_Systems/kCvjD_5p5XYC?hl=en&gbpv=1&dq=isbn%3A9781598295818&pg=PA88&printsec=frontcover|title=Location Systems: An Introduction to the Technology Behind Location Awareness|last=De Lara|first=Eyal|author2=Anthony LaMarca|author3=Mahadev Satyanarayanan|publisher=Morgan & Claypool Publishers|year=2008|isbn=978-1-59829-581-8|series=Synthesis Lectures on Mobile and Pervasive Computing, Lecture #4|page=88|url-access=limited|via=Google Books}}</ref>
+
+Geofencing used with [[locationized firearms]] can restrict those firearms to fire only in locations where their firing is permitted, thereby making them unable to be used elsewhere.  
+
+Geofencing is critical to [[telematics]].  It allows users of the system to draw zones around places of work, customer's sites and secure areas. These geo-fences when crossed by an equipped vehicle or person can trigger a warning to the user or operator via SMS or email.
+
+In some companies, geofencing is used by the [[Human resource management|human resource]] department to monitor employees working in special locations especially those doing field works. Using a geofencing tool, an employee is allowed to log his or her attendance using a GPS-enabled device when within a designated  perimeter.
+
+Other applications include sending an alert if a vehicle is stolen,<ref>{{cite news|url=http://www.motorcycle-usa.com/2/2304/Motorcycle-Article/Motorcycle-Tracker-Updates-Every-15-Seconds.aspx|title=Motorcycle Tracker Updates Every 15 Seconds|date=23 January 2009|work=Motorcycle USA|accessdate=2009-01-26|url-status=dead|archive-url=https://web.archive.org/web/20090131093939/http://www.motorcycle-usa.com/2/2304/Motorcycle-Article/Motorcycle-Tracker-Updates-Every-15-Seconds.aspx|archive-date=January 31, 2009|quote=Courtesy True Tracker Pro}}</ref> and notifying rangers when wildlife stray into farmland.<ref>{{cite news|url=http://www.cbsnews.com/stories/2008/10/11/tech/main4515365.shtml|title=Kenya's elephants send text messages to rangers|date=October 11, 2008|access-date=26 Jan 2020|publisher=CBS News|agency=Associated Press}} </ref>
+
+Geo-fence can be used for location based messaging for tourist safety and communication.<ref>{{cite web|url=http://ugoround.com/white_papers/UgoRound-White-Paper-Location-based-messaging-for-Tourists.pdf|title=Location Based Messaging for Tourist Safety and Communication|date=July 2017|publisher=UgoRound Australia Pty Ltd|accessdate=26 Jan 2020}}</ref>
+
+Geofencing, in a security strategy model, provides security to wireless local area networks. This is done by using predefined borders (e.g., an office space with borders established by positioning technology attached to a specially programmed server). The office space becomes an authorized location for designated users and wireless mobile devices.<ref>Hamid Jahankhani, A G Hessami, Feng Hsu: Global security, safety, and sustainability : 5th international conference, ICGS3 2009, London, UK, September 1-2, 2009 : proceedings. {{ISBN|978-3-642-04061-0}}</ref>{{Page needed|date=January 2020}}
+
+In 2015, US Senator [[Charles Schumer]] proposed a law requiring drone manufacturers to build geofencing constraints into [[unmanned aerial vehicle]] navigation systems that would override the commands of the unsophisticated operator, preventing the device from flying into protected [[airspace]].<ref>{{cite news |title=Todd Humphreys: Don't Overregulate Drones |url=http://alcalde.texasexes.org/2015/03/todd-humphreys-dont-overregulate-drones/ |work=Alcalde |date=18 March 2015 |accessdate=2015-04-05 }}</ref><ref>{{cite web
+|url=http://www.schumer.senate.gov/newsroom/press-releases/schumer-proposes-new-law-designed-to-virtually-eliminate-chance-of-drones-crashing-into-planes-geo-fencing-amendment-would-require-software-on-every-drone-that-would-prohibit-flying-near-airports-and-sensitive-areas-the-technology-worksall-thats-needed-is-a-law
+|last=Schumer
+|first=Charles
+|title=Schumer proposes law
+|date=19 August 2015
+|accessdate=15 December 2015}}</ref>
+
+Applications of Geofencing extend to Advertising & Marketing. Geofencing solution providers allow marketers and advertisers to precisely choose the exact geo-location that their ads show up on. Geofencing uses different types of targeting to identify geo-location such as zip codes, street addresses, GPS coordinates using latitude and longitude, as well as IP targeting.
+
+Geofencing enables competitive marketing tactics for advertisers and marketers to grab the attention of in-market shoppers in their competitive store location, large scale events such as concerts, sports events, conferences, etc. in stadiums, convention centers, malls, outlets, parks, neighborhoods. For example: at a concert, a digital ad relating to the performer or an affiliated company could be sent to only those people in the venue.
+
+For example, a local auto-dealership builds a virtual boundary within a few square miles from its dealership's location to target car buyers within the same neighborhood. This way they limit their ad spending on prospects who are more likely to purchase in order to get a better ROI. Using tracking technologies to identify devices where the ads were shown, geofencing solution providers are able to provide walk-in attribution for their advertising. This means that using a geofencing solution, companies can now track the customers who walked into the showroom after seeing the ad. This level of attribution provides better visibility and analytics for marketers to spend their advertising budget wisely.
+
+A local service business may only be interested in (a) likely clients (b) within a service region or catchment basin. Broadcasting or advertising more extensively brings irrelevant responses and wastes energy, time, money, and opportunity. Electronic advertising can identify and target only desired market objects (people).
+
+==See also==
+*[[Assisted GPS]] (A-GPS)
+*[[Automotive navigation system]]
+*[[Cell Broadcast]]
+*[[Geomessaging]]
+*[[Geotagging]]
+*[[GPS drawing]] 
+*[[GPS tracking]]
+*''[[Ingress (video game)|Ingress]]''
+*[[Microtargeting]]
+*[[Point in polygon]]
+*[[Point of interest]]
+*[[Geomarketing]]
+*[[Social media use in politics]]
+
+==References==
+{{reflist}}
+
+==Further reading==
+*De Lara, Eyal; Anthony LaMarca, Mahadev Satyanarayanan (2008). ''Location Systems: An Introduction to the Technology Behind Location Awareness.'' Morgan & Claypool Publishers. p. 88. {{ISBN|978-1-59829-581-8}}.
+*Anthony C. Ijeh, Allan J. Brimicombe, David S. Preston, Chris O. Imafidon (2009) "Geofencing in a Security Strategy Model." In ''Global Safety and Sustainability: 5th International Conference Proceedings''. Jahankhani, H.; Hessami, A.G.; Hsu, F. (Eds.) p.104-111 © Springer-Verlag Berlin Heidelberg 2009. {{ISBN|978-3-642-04061-0}}
+
+[[Category:Global Positioning System]]
+[[Category:Regions]]
+[[Category:Geographical technology]]
+[[Category:Geographic position]]

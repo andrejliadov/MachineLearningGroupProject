@@ -1,0 +1,28 @@
+{{refimprove|date=March 2010}}
+
+In [[theoretical computer science]], '''Arden's rule''', also known as '''Arden's lemma''', is a mathematical statement about a certain form of [[language equation]]s.
+
+==Background==
+A [[formal language|(formal) language]] is simply a set of strings. Such sets can be specified by means of some [[language equation]], which in turn is based on operations on languages. Language equations are mathematical statements that resemble numerical equations, but the variables assume values of formal languages rather than numbers. Among the most common operations on two languages ''A'' and ''B'' are the [[set union]] ''A'' ∪ ''B'', and their [[Concatenation#Concatenation_of_sets_of_strings|concatenation]] ''A''⋅''B''. Finally, as an operation taking a single [[operand]], the set ''A''<sup>*</sup> denotes the [[Kleene star]] of the language ''A''.
+
+==Statement of Arden's rule==
+Arden's rule states that the set ''A''<sup>*</sup>⋅''B'' is the smallest language that is a solution for ''X'' in the [[linear equation]] ''X'' = ''A''⋅''X'' ∪ ''B'' where ''X'', ''A'', ''B'' are sets of strings. Moreover, if the set ''A'' does not contain the empty word, then this solution is unique.<ref name="Arden's Rule">{{cite web|url=http://www.encyclopedia.com/doc/1O11-Ardensrule.html|title=Arden's Rule|last=Daintith|first=John|year=2004|accessdate=10 March 2010| archive-url= https://web.archive.org/web/20100213122543/http://www.encyclopedia.com/doc/1O11-Ardensrule.html| archive-date= 13 February 2010 | url-status= live}}</ref><ref name="Sutner">{{cite web|url=https://www.cs.cmu.edu/~cdm/pdf/KleeneAlg.pdf |title=Algebra of Regular Languages |last=Sutner |first=Klaus |accessdate=15 Feb 2011 |url-status=dead |archive-url=https://web.archive.org/web/20110708171054/https://www.cs.cmu.edu/~cdm/pdf/KleeneAlg.pdf |archive-date=2011-07-08 }}</ref>
+
+Equivalently, the set ''B''⋅''A''<sup>*</sup> is the smallest language that is a solution for ''X'' in ''X'' = ''X''⋅''A'' ∪ ''B''.
+
+==Application==
+Arden's rule can be used to help convert some finite automatons to regular expressions, as in [[Kleene's algorithm]].
+
+==See also==
+* [[Regular expression]]
+* [[Nondeterministic finite automaton]]
+
+==Notes==
+{{reflist}}
+
+==References==
+* Arden, D. N. (1960). Delayed logic and finite state machines, ''Theory of Computing Machine Design'', pp. 1-35, University of Michigan Press, Ann Arbor, Michigan, USA.
+* {{cite book | contribution-url=https://ieeexplore.ieee.org/document/5397289 | author=Dean N. Arden | contribution=Delayed Logic and Finite State Machines | title=Proc. 2nd Ann. Symp. on Switching Circuit Theory and Logical Design (SWCT), Detroit/MI | date=Oct 1961 }} (open-access abstract)
+* John E. Hopcroft and Jeffrey D. Ullman, ''[[Introduction to Automata Theory, Languages, and Computation]]'', Addison-Wesley Publishing, Reading Massachusetts, 1979. {{ISBN|0-201-02988-X}}. Chapter 2: Finite Automata and Regular Expressions, p.54.
+
+[[Category:Formal languages]]

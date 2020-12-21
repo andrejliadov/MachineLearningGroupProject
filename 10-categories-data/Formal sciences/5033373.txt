@@ -1,0 +1,120 @@
+'''Action selection''' is a way of characterizing the most basic problem of intelligent systems: what to do next. In [[artificial intelligence]] and computational [[cognitive science]], "the action selection problem" is typically associated with [[intelligent agents]] and [[animat]]s—artificial systems that exhibit complex behaviour in an [[agent environment]]. The term is also sometimes used in [[ethology]] or animal behavior.
+
+One problem for understanding action selection is determining the level of abstraction used for specifying an "act". At the most basic level of abstraction, an atomic act could be anything from ''contracting a muscle cell'' to ''provoking a war''. Typically for any one action-selection mechanism, the set of possible actions is predefined and fixed.
+
+Most researchers working in this field place high demands on their agents: 
+* The acting [[Intelligent agent|agent]] typically must select its action in [[agent environment|dynamic]] and [[agent environment|unpredictable]] environments. 
+* The agents typically act in [[Real-time computing|real time]]; therefore they must make decisions in a timely fashion.
+* The agents are normally created to perform several different tasks. These tasks may conflict for resource allocation (e.g. can the agent put out a fire and deliver a cup of coffee at the same time?)
+* The environment the agents operate in may include [[humans]], who may make things more difficult for the agent (either intentionally or by attempting to assist.) 
+* The agents themselves are often intended to [[computer model|model]] animals or humans, and animal/human [[behaviour]] is quite complicated.
+
+For these reasons action selection is not trivial and attracts a good deal of research.
+
+== Characteristics of the action selection problem ==
+
+The main problem for action selection is [[complexity]]. Since all [[computation]] takes both time and space (in memory), agents cannot possibly consider every option available to them at every instant in time. Consequently, they must be [[bias]]ed, and constrain their search in some way. For AI, the question of action selection is ''what is the best way to constrain this search''? For biology and ethology, the question is ''how do various types of animals constrain their search? Do all animals use the same approaches? Why do they use the ones they do?''
+
+One fundamental question about action selection is whether it is really a problem at all for an agent, or whether it is just a description of an [[emergence|emergent]] property of an intelligent agent's behavior. However, if we consider how we are going to build an intelligent agent, then it becomes apparent there must be ''some'' mechanism for action selection. This mechanism may be highly distributed (as in the case of distributed organisms such as [[social insect]] colonies or [[slime mold]]) or it may be a special-purpose module.
+
+The action selection mechanism (ASM) determines not only the agent's actions in terms of impact on the world, but also directs its perceptual [[attention]], and updates its [[memory]]. These [[egocentric]] sorts of actions may in turn result in modifying the agent's basic behavioural capacities, particularly in that updating memory implies some form of [[machine learning]] is possible. Ideally, action selection itself should also be able to learn and adapt, but there are many problems of [[combinatorics|combinatorial complexity]] and computational [[tractable problem|tractability]] that may require restricting the search space for learning.
+
+In AI, an ASM is also sometimes either referred to as an [[agent architecture]] or thought of as a substantial part of one.
+
+== AI mechanisms ==
+
+Generally, artificial action selection mechanisms can be divided into several categories: [[automated planning and scheduling|symbol-based systems]] sometimes known as classical planning, [[distributed systems|distributed solutions]], and reactive or [[reactive planning|dynamic planning]]. Some approaches do not fall neatly into any one of these categories. Others are really more about providing [[scientific model]]s than practical AI control; these last are described further in the next section.
+
+=== Symbolic approaches ===
+{{main|Automated planning and scheduling}}
+Early in the [[history of artificial intelligence]], it was assumed that the best way for an agent to choose what to do next would be to compute a [[Logical argument|probably optimal]] plan, and then execute that plan. This led to the [[physical symbol system]] hypothesis, that a physical agent that can manipulate symbols is [[sufficient|necessary and sufficient]] for intelligence. Many [[software agents]] still use this approach for action selection. It normally requires describing all sensor readings, the world, all of ones actions and all of one's goals in some form of [[predicate logic]]. Critics of this approach complain that it is too slow for real-time planning and that, despite the proofs, it is still unlikely to produce optimal plans because reducing descriptions of reality to logic is a process prone to errors.
+
+[[Satisficing]] is a decision-making strategy that attempts to meet criteria for adequacy, rather than identify an optimal solution. A satisficing strategy may often, in fact, be (near) optimal if the costs of the decision-making process itself, such as the cost of obtaining complete information, are considered in the outcome calculus.
+
+'''Goal driven architectures''' – In these [[symbol]]ic architectures, the agent's behaviour is typically described by a set of goals. Each goal can be achieved by a process or an activity, which is described by a prescripted plan. The agent must just decide which process to carry on to accomplish a given goal. The plan can expand to subgoals, which makes the process slightly recursive. Technically, more or less, the plans exploits condition-rules. These architectures are [[reactive planning|reactive]] or hybrid. Classical examples of goal driven architectures are implementable refinements of [[BDI software agent|belief-desire-intention]] architecture like [http://www.marcush.net/IRS/irs_downloads.html JAM] or [https://web.archive.org/web/20060522224109/http://urtax.ms.mff.cuni.cz/ive/public/about.php IVE].
+
+=== Distributed approaches ===
+
+In contrast to the symbolic approach, distributed systems of action selection actually have no one "box" in the agent which decides the next action. At least in their idealized form, distributed systems have many [[Module (programming)|modules]] running in parallel and determining the best action based on local expertise. In these idealized systems, overall coherence is expected to emerge somehow, possibly through careful design of the interacting components. This approach is often inspired by [[artificial neural networks]] research. In practice, there is almost always ''some'' centralised system determining which module is "the most active" or has the most salience. There is evidence real biological brains also have such [[Executive system|executive decision systems]] which evaluate which of the competing systems deserves the most [[attention]], or more properly, has its desired actions [[disinhibited]].
+* {{visible anchor|ASMO}} is an attention-based architecture developed by Rony Novianto.<ref>Samsonovich, A. V. "[http://www.academia.edu/download/45304651/Attention_in_the_ASMO_Cognitive_Architec20160503-28982-1rw8kao.pdf Attention in the ASMO cognitive architecture]." Biologically Inspired Cognitive Architectures (2010): 98.</ref> It orchestrates a diversity of modular distributed processes that can use their own representations and techniques to perceive the environment, process information, plan actions and propose actions to perform.
+*Various types of [[Winner-take-all in action selection|winner-take-all]] architectures, in which the single selected action takes full control of the motor system
+* '''Spreading activation''' including [[Maes Nets (ANA)]]
+* '''Extended Rosenblatt & Payton''' is a spreading activation architecture developed by Toby Tyrrell in 1993. The agent's behaviour is stored in the form of a hierarchical [[connectionist|connectionism]] network, which Tyrrell named free-flow hierarchy. Recently exploited for example by [http://vrlab.epfl.ch/Publications/pdf/Sevin_Thalmann_CGI_05.pdf de Sevin & Thalmann] (2005) or [https://web.archive.org/web/20110717210629/http://cyber.felk.cvut.cz/gerstner/eth/download/dpdk2.pdf Kadleček] (2001).
+* '''[[Behavior based AI]]''', was a response to the slow speed of robots using symbolic action selection techniques. In this form, separate modules respond to different stimuli and generate their own responses. In the original form, the [[subsumption architecture]], these consisted of different layers which could monitor and suppress each other's inputs and outputs.
+* '''[[Creatures (artificial life program)|Creatures]]''' are virtual pets from a computer game driven by three-layered [[artificial neural network|neural network]], which is adaptive. Their mechanism is reactive since the network at every time step determines the task that has to be performed by the pet. The network is described well in the paper of [http://www.cp.eng.chula.ac.th/~vishnu/gameResearch/AI/creatures.pdf Grand et al.] (1997) and in [http://www.double.co.nz/creatures/ The Creatures Developer Resources]. See also the [http://creatureswiki.net/ Creatures Wiki].
+
+=== Dynamic planning approaches ===
+
+Because purely distributed systems are difficult to construct, many researchers have turned to using explicit hard-coded plans to determine the priorities of their system.
+
+Dynamic or [[reactive planning]] methods compute just one next action in every instant based on the current context and pre-scripted plans. In contrast to classical planning methods, reactive or dynamic approaches do not suffer [[combinatorial explosion]]. On the other hand, they are sometimes seen as too rigid to be considered [[Artificial general intelligence|strong AI]], since the plans are coded in advance. At the same time, natural intelligence can be rigid in some contexts although it is fluid and able to adapt in others.
+
+Example dynamic planning mechanisms include:
+* '''[[Finite state machine|Finite-state machines]]''' These are [[reactive planning|reactive]] architectures used mostly for computer game agents, in particular for first-person shooters [[Computer game bot|bots]], or for virtual movie actors. Typically, the state-machines are hierarchical. For concrete game examples, see [http://www.gamasutra.com/gdc2005/features/20050311/isla_pfv.htm Halo 2 bots paper] by Damian Isla (2005) or [http://www.kbs.twi.tudelft.nl/Publications/MSc/2001-VanWaveren-MSc.html the Master's Thesis about Quake III bots] by Jan Paul van Waveren (2001). For a movie example, see [[Softimage]].
+* Other '''structured reactive plans''' tend to look a little more like conventional plans, often with ways to represent [[hierarchical]] and [[sequential]] structure. Some, such as PRS's 'acts', have support for [[partial plan]]s.<ref>{{cite web|url=http://www.ai.sri.com/~prs/|title=PRS-CL: A Procedural Reasoning System|author=Karen L. Myers|work=[[Artificial Intelligence Center]]|publisher=[[SRI International]]|accessdate=2013-06-13}}</ref> Many agent architectures from the mid-1990s included such plans as a "middle layer" that provided organization for low-level [[behavior based AI|behavior modules]] while being directed by a higher level real-time planner. Despite this supposed [[interoperability]] with automated planners, most structured reactive plans are hand coded (Bryson 2001, ch. 3). Examples of structured reactive plans include [[James Firby]]'s [http://people.cs.uchicago.edu/~firby/raps/ RAP] System and the [[Nils Nilsson (researcher)|Nils Nilsson]]'s [https://ai.stanford.edu/users/nilsson/trweb/tr.html Teleo-reactive plans]. PRS, RAPs & TRP are no longer developed or supported. One still-active (as of 2006) descendant of this approach is the Parallel-rooted Ordered Slip-stack Hierarchical (or [http://www.cs.bath.ac.uk/~jjb/web/posh.html POSH]) action selection system, which is a part of Joanna Bryson's Behaviour Oriented Design.
+
+Sometimes to attempt to address the perceived inflexibility of dynamic planning, hybrid techniques are used. In these, a more conventional AI planning system searches for new plans when the agent has spare time, and updates the dynamic plan library when it finds good solutions. The important aspect of any such system is that when the agent needs to select an action, some solution exists that can be used immediately (see further [[anytime algorithm]]).
+
+=== Others ===
+* [http://CogniTeam.com CogniTAO] is a decision making engine it based on [[Belief–desire–intention software model|BDI]] (belief-desire-intention), it includes built in teamwork capabilities.
+* [[Soar (cognitive architecture)|Soar]] is a [[symbol]]ic [[cognitive architecture]]. It is based on condition-action rules known as [[Production system (computer science)|productions]]. Programmers can use the Soar development toolkit for building both reactive and planning agents, or any compromise between these two extremes.
+* '''[http://www.ai-center.com/projects/excalibur/index.html Excalibur]''' was a research project led by Alexander Nareyek featuring any-time planning agents for computer games. The architecture is based on structural [[constraint satisfaction]], which is an advanced [[artificial intelligence]] technique.
+* [[ACT-R]] is similar to Soar. It includes a [[Bayesian inference|Bayesian]] learning system to help prioritize the productions.
+* ABL/Hap
+* '''[[Fuzzy control system|Fuzzy architectures]]''' The [[fuzzy logic|Fuzzy approach]] in action selection produces more smooth behaviour than can be produced by architectures exploiting boolean condition-action rules (like Soar or POSH). These architectures are mostly [[reactive planning|reactive]] and [[symbol]]ic.
+
+== Theories of action selection in nature ==
+
+Many dynamic models of artificial action selection were originally inspired by research in [[ethology]]. In particular, [[Konrad Lorenz]] and [[Nikolaas Tinbergen]] provided the idea of an [[innate releasing mechanism]] to explain instinctive behaviors ([[fixed action pattern]]s). Influenced by the ideas of [[William McDougall (psychologist)|William McDougall]], Lorenz developed this into a "[[psychohydraulic]]" model of the [[motivation]] of behavior. In ethology, these ideas were influential in the 1960s, but they are now regarded as outdated because of their use of an [[energy flow (ecology)|energy flow]] metaphor; the [[nervous system]] and the control of behavior are now normally treated as involving information transmission rather than energy flow. Dynamic plans and neural networks are more similar to information transmission, while spreading activation is more similar to the diffuse control of emotional / hormonal systems.
+
+[[Stan Franklin]] has proposed that '''action selection''' is the right perspective to take in understanding the role and evolution of [[mind]].  See his page on [http://www.msci.memphis.edu/~franklin/paradigm.html the action selection paradigm].
+
+=== AI models of neural action selection ===
+
+Some researchers create elaborate models of neural action selection. See for example:
+* The [https://web.archive.org/web/20070628062431/http://ccnlab.colorado.edu/mambo/ Computational Cognitive Neuroscience Lab] (CU Boulder).
+* The [http://www.abrg.group.shef.ac.uk/ Adaptive Behaviour Research Group] (Sheffield).
+
+== See also ==
+
+*[[Action description language]]
+*[[Utility system]]
+*[[Expert system]]
+*[[Game artificial intelligence]]
+*[[Inference engine]]
+*[[Intelligent agent]]
+*[[OPS5]]
+*[[Production system (computer science)|Production system]]
+*[[Rete algorithm]]
+*[[Reinforcement learning]]
+*[[Robot intelligence]]
+
+== References ==
+{{reflist}}
+
+==Further reading==
+* Bratman, M.: Intention, plans, and practical reason. Cambridge, Mass: Harvard University Press (1987)
+* Brom, C., Lukavský, J., Šerý, O., Poch, T., Šafrata, P.: [https://archive.today/20070803004108/http://urtax.ms.mff.cuni.cz/ive Affordances and level-of-detail AI for virtual humans]. In: Proceedings of Game Set and Match 2, Delft (2006)
+* Bryson, J.: [ftp://publications.ai.mit.edu/ai-publications/2002/AITR-2002-003.pdf Intelligence by Design: Principles of Modularity and Coordination for Engineering Complex Adaptive Agents]. PhD thesis, [http://publications.csail.mit.edu/ai/ Massachusetts Institute of Technology] (2001)
+* Champandard, A. J.: [https://books.google.com/books?id=ZpuR8GnBSGcC&printsec=frontcover&dq=%22AI+Game+Development:+Synthetic+Creatures+with+learning+and+Reactive+Behaviors%22&hl=en&sa=X&ved=0ahUKEwijnMji0-niAhUCD60KHVicBAQQ6AEIKjAA#v=onepage&q=%22action%20selection%22&f=false AI Game Development: Synthetic Creatures with learning and Reactive Behaviors]. New Riders, USA (2003)
+* Grand, S., Cliff, D., Malhotra, A.: [https://www.researchgate.net/profile/Dave_Cliff/publication/220794226_Creatures_Artificial_Life_Autonomous_Software_Agents_for_Home_Entertainment/links/00463514cc5d6b6550000000/Creatures-Artificial-Life-Autonomous-Software-Agents-for-Home-Entertainment.pdf Creatures: Artificial life autonomous software-agents for home entertainment]. In: Johnson, W. L. (eds.): Proceedings of the First International Conference on Autonomous Agents. ACM press (1997) 22-29
+* Huber, M. J.: [http://www.marcush.net/IRS/irs_downloads.html JAM: A BDI-theoretic mobile agent architecture]. In: Proceedings of the Third International Conference on Autonomous Agents (Agents'99). Seattle (1999) 236-243
+* Isla, D.: [http://www.gamasutra.com/gdc2005/features/20050311/isla_pfv.htm Handling complexity in Halo 2]. In: Gamastura online, 03/11 (2005)
+* Maes, P.: [https://dl.acm.org/citation.cfm?id=122367 The agent network architecture (ANA)]. In: SIGART Bulletin, 2 (4), pages 115–120 (1991)
+* Nareyek, A. [http://www.ai-center.com/projects/excalibur/index.html Excalibur project]
+* Reynolds, C. W. [https://www.researchgate.net/profile/Craig_Reynolds2/publication/2797343_Flocks_Herds_and_Schools_A_Distributed_Behavioral_Model/links/0fcfd5095a869204df000000.pdf Flocks, Herds, and Schools: A Distributed Behavioral Model]. In: Computer Graphics, 21(4) (SIGGRAPH '87 Conference Proceedings) (1987) 25-34.
+* de Sevin, E. Thalmann, D.:[http://edesevin.free.fr/recherche/articles/CGI2005.pdf A motivational Model of Action Selection for Virtual Humans]. In: Computer Graphics International (CGI), IEEE Computer SocietyPress, New York (2005) 
+* Tyrrell, T.: [https://www.cs.cmu.edu/afs/cs.cmu.edu/project/oz/ftp/Tyrell/as.1.ps.Z Computational Mechanisms for Action Selection]. Ph.D. Dissertation. Centre for Cognitive Science, University of Edinburgh (1993)
+* van Waveren, J. M. P.: The Quake III Arena Bot. Master thesis. Faculty ITS, University of Technology Delft (2001)
+* Wooldridge, M. [https://books.google.com/books?hl=en&lr=&id=X3ZQ7yeDn2IC&oi=fnd&pg=PR13&dq=%22An+Introduction+to+MultiAgent+Systems%22&ots=WGnesp5rd4&sig=i1cSEOIEr1tWPdZrPsET366nPD0#v=onepage&q=%22action%20selection%22&f=false An Introduction to MultiAgent Systems]. John Wiley & Sons (2002)
+
+==External links==
+*The University of Memphis: [http://www.msci.memphis.edu/~classweb/comp7990/fall2002/action.htm Agents by action selection]
+*Michael Wooldridge: [https://web.archive.org/web/20051202035140/http://www.csc.liv.ac.uk/~mjw/pubs/mas99.pdf Introduction to agents and their action selection mechanisms] 
+*Cyril Brom: [http://ksvi.mff.cuni.cz/~brom/teaching.html#umelebytosti Slides on a course on action selection of artificial beings]
+* [https://web.archive.org/web/20060507174634/http://sitemaker.umich.edu/soar Soar project]. University of Michigan.
+* [https://archive.today/20071030065012/http://publishing.royalsoc.ac.uk/natural-action Modelling natural action selection], a special issue published by [[The Royal Society]] - [[Philosophical Transactions of the Royal Society]]
+
+[[Category:Artificial intelligence]]
+[[Category:Motor control]]
+[[Category:Motor cognition]]

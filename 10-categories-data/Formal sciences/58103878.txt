@@ -1,0 +1,38 @@
+{{short description|Mathematical theorem used in numerical analysis}}
+In [[numerical analysis]], the '''Peano kernel theorem''' is a general result on error bounds for a wide class of numerical approximations (such as [[numerical quadrature|numerical quadratures]]), defined in terms of [[linear functionals]]. It is attributed to [[Giuseppe Peano]].<ref name="Ridgway Scott 2011">{{Cite book|title=Numerical analysis|url=https://archive.org/details/numericalanalysi00lrsc|url-access=limited|last=Ridgway Scott|first=L.|date=2011|publisher=Princeton University Press|isbn=9780691146867|location=Princeton, N.J.|pages=[https://archive.org/details/numericalanalysi00lrsc/page/n225 209]|oclc=679940621}}</ref>
+
+== Statement ==
+Let  <math>\mathcal{V}[a,b]</math> be the space of all [[differentiable function]]s <math>f</math> defined for <math>x \in (a,b)</math> that are of [[bounded variation]] on <math>[a,b]</math>, and let <math>L</math> be a [[linear functional]] on <math>\mathcal{V}[a,b]</math>. Assume that <math>f</math> is <math display="inline">\nu+1</math> times [[continuously differentiable]] and that <math>L</math> ''annihilates'' all polynomials of degree <math>\leq \nu</math>, i.e.<math display="block">Lp=0,\qquad \forall p\in\mathbb{P}_\nu[x].</math>Suppose further that for any [[bivariate function]] <math>g(x,\theta)</math> with <math>g(x,\cdot),\,g(\cdot,\theta)\in C^{\nu+1}[a,b]</math>, the following is valid:<math display="block">L\int_a^bg(x,\theta)\,d\theta=\int_a^bLg(x,\theta)\,d\theta,</math>and define the '''Peano kernel''' of <math>L</math> as<math display="block">k(\theta)=L[(x-\theta)^\nu_+],\qquad\theta\in[a,b],</math>introducing notation<math display="block">(x-\theta)^\nu_+ = \begin{cases} (x-\theta)^\nu, & x\geq\theta, \\ 0, & x\leq\theta. \end{cases}</math>The ''Peano kernel theorem'' then states that <math display="block">Lf=\frac{1}{\nu!}\int_a^bk(\theta)f^{(\nu+1)}(\theta)\,d\theta,</math>provided <math>k\in\mathcal{V}[a,b]</math>.<ref name="Ridgway Scott 2011" /><ref name="Iserles 2009">{{Cite book|title=A first course in the numerical analysis of differential equations|url=https://archive.org/details/firstcoursenumer00aise|url-access=limited|last=Iserles|first=Arieh|date=2009|publisher=Cambridge University Press|isbn=9780521734905|edition=2nd|location=Cambridge|pages=[https://archive.org/details/firstcoursenumer00aise/page/n464 443]–444|oclc=277275036}}</ref>
+
+=== Bounds ===
+Several bounds on the value of <math>Lf</math> follow from this result:<math display="block">\begin{align}
+|Lf|&\leq\frac{1}{\nu!}\|k\|_1\|f^{(\nu+1)}\|_\infty\\[5pt]
+|Lf|&\leq\frac{1}{\nu!}\|k\|_\infty\|f^{(\nu+1)}\|_1\\[5pt]
+|Lf|&\leq\frac{1}{\nu!}\|k\|_2\|f^{(\nu+1)}\|_2
+\end{align}</math>
+
+where <math>\|\cdot\|_1</math>, <math>\|\cdot\|_2</math> and <math>\|\cdot\|_\infty</math>are the [[Taxicab norm|taxicab]], [[Euclidean distance|Euclidean]] and [[Maximum norm|maximum]] [[Norm (mathematics)|norms]] respectively.<ref name="Iserles 2009" />
+
+== Application ==
+In practice, the main application of the Peano kernel theorem is to bound the error of an approximation that is exact for all <math>f\in\mathbb{P}_\nu</math>. The theorem above follows from the [[Taylor polynomial]] for <math>f</math> with integral remainder:
+
+: <math>
+\begin{align}
+f(x)=f(a) + {} & (x-a)f'(a) + \frac{(x-a)^2}{2}f''(a)+\cdots \\[6pt]
+& \cdots+\frac{(x-a)^\nu}{\nu!}f^\nu(a)+
+\frac{1}{\nu!}\int_a^x(x-a)^\nu f^{(\nu+1)}(\theta)\,d\theta,
+\end{align}
+</math>
+
+defining <math>L(f)</math> as the error of the approximation, using the [[Linear map|linearity]] of <math>L</math> together with exactness for <math>f\in\mathbb{P}_\nu</math> to annihilate all but the final term on the right-hand side, and using the <math>(\cdot)_+</math> notation to remove the <math>x</math>-dependence from the integral limits.<ref>{{Cite web|url=http://www.damtp.cam.ac.uk/user/examples/D3Ll.pdf|title=Numerical Analysis|last=Iserles|first=Arieh|date=1997|access-date=2018-08-09}}</ref>
+
+== See also ==
+
+* [[Divided differences]]
+
+== References ==
+<!-- Inline citations added to your article will automatically display here. See https://en.wikipedia.org/wiki/WP:REFB for instructions on how to add citations. -->
+{{reflist}}
+
+[[Category:Numerical analysis]]
+[[Category:Mathematics]]

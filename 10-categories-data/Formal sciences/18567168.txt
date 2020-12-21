@@ -1,0 +1,243 @@
+{{short description|Sub-field of computer science}}
+{{about|the scientific discipline of computer graphics|a broader overview|Computer graphics|other uses|Computer graphics (disambiguation)}}
+
+[[File:utah teapot simple 2.png|thumb|A modern rendering of the [[Utah teapot]], an iconic model in 3D computer graphics created by [[Martin Newell (computer scientist)|Martin Newell]] in 1975]]
+
+'''Computer graphics''' is a sub-field of [[computer science]] which studies methods for digitally synthesizing and manipulating visual content.  Although the term often refers to the study of [[3D computer graphics|three-dimensional computer graphics]], it also encompasses [[2D computer graphics|two-dimensional graphics]] and [[image processing]].
+
+== Overview ==
+Computer graphics studies the manipulation of visual and geometric information using computational techniques.  It focuses on the ''mathematical'' and ''computational'' foundations of image generation and processing rather than purely [[aesthetic]] issues.  Computer graphics is often differentiated from the field of [[visualization (graphic)|visualization]], although the two fields have many similarities.
+
+Connected studies include:
+* [[Applied mathematics]]
+* [[Computational geometry]]
+* [[Computational topology]]
+* [[Computer vision]]
+* [[Image processing]]
+* [[Information visualization]]
+* [[Scientific visualization]]
+
+Applications of computer graphics include:
+*[[Print design]]
+*[[Digital art]]
+*[[Special effect]]s
+*[[Video game]]s
+*[[Visual effects]]
+
+== History ==
+{{See also|History of computer animation|Computer graphics#History}}
+
+There are several international conferences and journals where the most significant results in computer graphics are published. Among them are the [[SIGGRAPH]] and [[Eurographics]] conferences and the [[Association for Computing Machinery]] (ACM) Transactions on Graphics journal. The joint Eurographics and [[ACM SIGGRAPH]] symposium series features the major venues for the more specialized sub-fields: Symposium on Geometry Processing,<ref>{{cite web |url = http://www.geometryprocessing.org |title = geometryprocessing.org |website = geometryprocessing.org |access-date=2014-05-01 }}</ref> Symposium on Rendering, Symposium on Computer Animation,<ref>[http://www.eg.org/events ] {{webarchive |url = https://web.archive.org/web/20070314004027/http://www.eg.org/events |date = March 14, 2007 }}</ref> and High Performance Graphics.<ref>{{cite web |url = http://www.highperformancegraphics.org |title = High Performance Graphics |website = highperformancegraphics.org }}</ref> 
+
+As in the rest of computer science, conference publications in computer graphics are generally more significant than journal publications (and subsequently have lower acceptance rates).<ref name="cra memo">{{cite web |url = http://www.cra.org/reports/tenure_review.html |title=Best Practices Memo |website = Cra.org |access-date=2014-05-01 |archive-url = https://web.archive.org/web/20140502002308/http://www.cra.org/reports/tenure_review.html |archive-date=2014-05-02 |url-status=dead }}</ref><ref name="ernst note">{{cite web |url = http://people.csail.mit.edu/mernst/advice/conferences-vs-journals.html |title=Choosing a venue: conference or journal? |website = People.csail.mit.edu |access-date=2014-05-01}}</ref><ref name="graphics acceptance rates">{{cite web |url = http://vrlab.epfl.ch/~ulicny/statistics/ |title = Graphics/vision publications acceptance rates statistics |website = vrlab.epfl.ch |access-date=2014-05-01 }}</ref><ref>An extensive history of computer graphics can be found at [http://accad.osu.edu/~waynec/history/lessons.html this page] {{webarchive |url = https://web.archive.org/web/20070405172134/http://accad.osu.edu/~waynec/history/lessons.html |date=April 5, 2007 }}.</ref>
+
+== Subfields ==
+A broad classification of major subfields in computer graphics might be:
+# [[Geometry]]: ways to represent and process surfaces
+# [[Animation]]: ways to represent and manipulate motion
+# [[Rendering (computer graphics)|Rendering]]: [[algorithm]]s to reproduce light transport
+# [[Digital imaging|Imaging]]: image acquisition or image editing
+
+=== Geometry ===
+[[File:Stanford bunny qem.png|thumb|Successive approximations of a surface computed using quadric error metrics]]
+
+The subfield of geometry studies the representation of three-dimensional objects in a discrete digital setting.  Because the appearance of an object depends largely on its exterior, [[boundary representation]]s are most commonly used.  Two dimensional [[Surface (topology)|surface]]s are a good representation for most objects, though they may be non-[[manifold]].  Since surfaces are not finite, discrete digital approximations are used. [[polygon mesh|Polygonal meshes]] (and to a lesser extent [[subdivision surfaces]]) are by far the most common representation, although point-based representations have become more popular recently (see for instance the Symposium on Point-Based Graphics).<ref>{{cite web |url = http://graphics.ethz.ch/events/pbg/07/ |title=Point Based Graphics 2007 - PBG07 |website = Graphics.ethz.ch |access-date=2014-05-01}}</ref> These representations are ''Lagrangian,'' meaning the spatial locations of the samples are independent.  Recently, ''Eulerian'' surface descriptions (i.e., where spatial samples are fixed) such as [[level set]]s have been developed into a useful representation for deforming surfaces which undergo many topological changes (with [[fluids]] being the most notable example).<ref name="stanford fedkiw">{{cite web |url = http://graphics.stanford.edu/~fedkiw/ |title = Ron Fedkiw |website = graphics.stanford.edu |access-date=2014-05-01 }}</ref>
+
+; Geometry Subfields
+* [[Implicit surface]] modeling – an older subfield which examines the use of algebraic surfaces, [[constructive solid geometry]], etc., for surface representation.
+* Digital geometry processing – [[3d scanning|surface reconstruction]], simplification, fairing, mesh repair, [[mesh parameterization|parameterization]], remeshing, [[mesh generation]], surface compression, and surface editing all fall under this heading.<ref name="caltech multires dgp">[http://www.multires.caltech.edu/pubs/DGPCourse/ ] {{webarchive |url = https://web.archive.org/web/20070214021951/http://www.multires.caltech.edu/pubs/DGPCourse/ |date=February 14, 2007 }}</ref><ref name="uiuc graphics dgp">[http://graphics.cs.uiuc.edu/~garland/class/geometry/ CS 598: Digital Geometry Processing (Fall 2004)<!-- Bot generated title -->] {{webarchive|url=https://archive.is/20041025104252/http://graphics.cs.uiuc.edu/~garland/class/geometry/ |date=2004-10-25 }}</ref><ref name="ubc sheffa dgp">{{cite web|url=http://www.cs.ubc.ca/~sheffa/dgp/ |title=Digital Geometry Processing |website = cs.ubc.ca |access-date=2014-05-01}}</ref>
+* Discrete differential geometry – a nascent field which defines geometric quantities for the discrete surfaces used in computer graphics.<ref name="columbia ddg">{{cite web |url = http://ddg.cs.columbia.edu/ |title=Discrete Differential Geometry |website = ddg.cs.columbia.edu |access-date=2014-05-01}}</ref>
+* Point-based graphics – a recent field which focuses on points as the fundamental representation of surfaces.
+* [[Subdivision surfaces]]
+* Out-of-core mesh processing – another recent field which focuses on mesh datasets that do not fit in main memory.
+
+=== Animation ===
+The subfield of animation studies descriptions for surfaces (and other phenomena) that move or deform over time.  Historically, most work in this field has focused on parametric and data-driven models, but recently [[physical simulation]] has become more popular as computers have become more powerful computationally.
+
+; Subfields
+* [[Motion capture|Performance capture]]
+* Character animation
+* Physical simulation (e.g. [[cloth modeling]],  animation of [[fluid dynamics]], etc.)
+
+=== Rendering ===
+[[File:Cornellbox pathtracing irradiancecaching.png|thumb|Indirect diffuse scattering simulated using [[path tracing]] and [[irradiance]] [[Cache (computing)|caching]].]]
+
+Rendering generates images from a model.  Rendering may simulate [[light transport theory|light transport]] to create realistic images or it may create images that have a particular artistic style in [[non-photorealistic rendering]].  The two basic operations in realistic rendering are transport (how much light passes from one place to another) and scattering (how surfaces interact with light).  See [[Rendering (computer graphics)]] for more information.
+
+; Transport
+[[light transport theory|Transport]] describes how illumination in a scene gets from one place to another. [[visibility (geometry)|Visibility]] is a major component of light transport.
+
+; Scattering
+Models of ''scattering'' and ''shading'' are used to describe the appearance of a surface.  In graphics these problems are often studied within the context of rendering since they can substantially affect the design of [[rendering algorithm]]s.  Shading can be broken down into two orthogonal issues, which are often studied independently:
+# '''scattering''' – how light interacts with the surface ''at a given point''
+# '''shading''' – how material properties vary across the surface
+
+The former problem refers to [[scattering]], i.e., the relationship between incoming and outgoing illumination at a given point.  Descriptions of scattering are usually given in terms of a [[bidirectional scattering distribution function]] or BSDF.  The latter issue addresses how different types of scattering are distributed across the surface (i.e., which scattering function applies where).  Descriptions of this kind are typically expressed with a program called a [[shader]].  (Note that there is some confusion since the word "shader" is sometimes used for programs that describe local ''geometric'' variation.)
+
+;Other subfields
+* [[Non-photorealistic rendering]]
+* [[Physically based rendering]] – concerned with generating images according to the laws of [[geometric optics]]
+* [[Real-time rendering]] – focuses on rendering for interactive applications, typically using specialized hardware like [[graphics processing unit|GPUs]]
+* [[Relighting]] – recent area concerned with quickly re-rendering scenes
+<!-- PLEASE RESPECT ALPHABETICAL ORDER-->
+
+== Notable researchers ==
+{{div col |colwidth = 22em }}
+* Arthur Appel
+* James Arvo
+* [[Brian A. Barsky]]
+* [[Jim Blinn]]
+* [[Jack E. Bresenham]]
+* [[Loren Carpenter]]
+* [[Edwin Catmull]]
+* [[James H. Clark]]
+* [[Robert L. Cook]]
+* [[Franklin C. Crow]]
+* [[Paul Debevec]]
+* [[David C. Evans]]
+* [[Ronald Fedkiw|Ron Fedkiw]]
+* [[Steven K. Feiner]]
+* [[James D. Foley]]
+* [[David Forsyth (computer scientist)|David Forsyth]]
+* [[Henry Fuchs]]
+* [[Andrew Glassner]]
+* [[Henri Gouraud (computer scientist)]]
+* [[Donald P. Greenberg]]
+* [[Eric Haines]]
+* R. A. Hall
+* [[Pat Hanrahan]]
+* John Hughes
+* [[Jim Kajiya]]
+* [[Takeo Kanade]]
+* [[Kenneth Knowlton]]
+* [[Marc Levoy]]
+* [[Martin Newell (computer scientist)]]
+* [[James F. O'Brien|James O'Brien]]
+* [[Ken Perlin]]
+* [[Matt Pharr]]
+* [[Bui Tuong Phong]]
+* [[Przemyslaw Prusinkiewicz]]
+* [[William Reeves (animator)|William Reeves]]
+* David F. Rogers
+* [[Holly Rushmeier]]
+* [[Peter Shirley]]
+* [[James Sethian]]
+* [[Ivan Sutherland]]
+* [[Demetri Terzopoulos]]
+* Kenneth Torrance
+* [[Greg Turk]]
+* [[Andries van Dam]]
+* [[Henrik Wann Jensen]]
+* [[Gregory Ward]]
+* [[John Warnock]]
+* [[J. Turner Whitted]]
+* [[Lance Williams (graphics researcher)|Lance Williams]]
+{{div col end}}
+
+== See also ==
+{{div col|colwidth=22em}}
+* [[Computer facial animation]]
+* [[Computer science]]
+* [[Computer science and engineering]]
+* [[Computer graphics]]
+* [[Digital geometry]]
+* [[Digital image editing]]
+* [[Geometry processing]]
+* [[Painter's algorithm]]
+* [[Stanford Bunny]]
+* [[Utah Teapot]]
+{{div col end}}
+
+== References ==
+{{Reflist}}
+
+== Further reading ==
+* [[James D. Foley|Foley]] ''et al''. ''[[Computer Graphics: Principles and Practice]]''.
+* Shirley. ''Fundamentals of Computer Graphics''.
+* Watt. ''3D Computer Graphics''.
+
+== External links ==
+{{Wiktionary|computer graphics}}
+{{Commons category|Computer graphics}}
+* [https://web.archive.org/web/20070405172134/http://accad.osu.edu/~waynec/history/lessons.html A Critical History of Computer Graphics and Animation]
+* [https://web.archive.org/web/20070302154206/http://hem.passagen.se/des/hocg/hocg_1960.htm ''History of Computer Graphics'' series of articles]
+
+=== University groups ===
+*[http://gruvi.cs.sfu.ca/ Computer Graphics Usability and Visualization Group] at [[Simon Fraser University]]
+*[https://web.archive.org/web/20190424134841/http://www.cs.hku.hk/GraphicsGroup/ Computer Graphics Group] at [[The University of Hong Kong]]
+*[https://web.archive.org/web/20111205121054/http://www.bath.ac.uk/media/ Media Technology Research Centre] at the [[University of Bath]]
+*[http://www.cs.berkeley.edu/b-cam/ Berkeley Computer Animation and Modeling Group]
+*[http://graphics.berkeley.edu/ Berkeley Computer Graphics]
+*[https://web.archive.org/web/20070225063956/http://www.cs.bris.ac.uk/Research/Graphics/ Bristol University Computer Graphics Group]
+*[https://www.cs.columbia.edu/cg C²G² at Columbia University]
+*[http://cvit.iiit.ac.in Center for Visual Information Technology], [[IIIT Hyderabad]]
+*[http://www.multires.caltech.edu/ Caltech Multi-Res Modeling Group]
+*[http://graphics.cs.cmu.edu/ Carnegie Mellon Graphics Lab]
+*[https://www.cs.technion.ac.il/~cggc Center for Graphics and Geometric Computing at Technion Israel Institute of Technology, Haifa, Israel]
+*[https://web.archive.org/web/20070610184922/http://www.mpi-inf.mpg.de/departments/d4/ Computer Graphics Department] at [[Max-Planck-Institut fur Informatik]]
+*[https://web.archive.org/web/20170914034849/http://computer-graphics.be/ Computer Graphics Department at Haute Ecole Albert Jacquard]
+*[http://graphics.cs.brown.edu/ Computer Graphics Group at Brown]
+*[http://www.rwth-graphics.de Computer Graphics Group] at [[RWTH Aachen University]]
+*[http://gvi.seas.harvard.edu Computer Graphics at Harvard]
+*[https://web.archive.org/web/20170923050320/http://graphics.usc.edu/cgit/index.php Computer Graphics and Immersive Technologies Laboratory] at USC
+*[http://gl.ict.usc.edu/ Graphics Lab] of [[Institute for Creative Technologies]] at [[University of Southern California|USC]]
+*[https://web.archive.org/web/20070708173122/http://cg.kaist.ac.kr/ Computer Graphics Laboratory] at [[Korea Advanced Institute of Science and Technology]] (KAIST)
+*[http://www.tecgraf.puc-rio.br Computer Graphics Group] at [[PUC-Rio]]
+*[http://cg.cs.uni-bonn.de/ Computer Graphics Group] at [[University of Bonn]]
+*[http://www.cs.virginia.edu/~gfx Computer Graphics Group] at [[University of Virginia]]
+*[http://nis-lab.is.s.u-tokyo.ac.jp/index-e.html Computer Graphics Laboratory] at [[University of Tokyo]]
+*[http://www.cs.utexas.edu/users/graphics/ Computer Graphics Laboratory] at [[UT Austin]]
+*[http://graphics.ethz.ch/ Computer Graphics Laboratory] at [[ETH Zurich]]
+*[http://www.cs.rice.edu/~jwarren/graphics.html Computer Graphics / Geometric Design Group] at [[Rice University|Rice]]
+*[https://www.cs.columbia.edu/graphics/top.html Computer Graphics and User Interfaces Lab] at [[Columbia University]]
+*[http://hpcg.purdue.edu/ High Performance Computer Graphics Lab] at [[Purdue University]]
+*[http://www.cs.purdue.edu/cgvlab/ Computer Graphics and Visualization Lab] at [[Purdue University]]
+*[http://www.cs.utah.edu/graphics/ Computer Graphics and Visualization Lab] at [[University of Utah]]
+*[http://www.cs.wisc.edu/graphics/GraphicsWeb/index.html Computer Graphics and Visualization Lab] at [[University of Wisconsin]]
+*[http://www.graphics.cornell.edu/ Cornell University Program of Computer Graphics]
+*[http://www.dgp.toronto.edu/ Dynamic Graphics Project at University of Toronto]
+*[http://www.geometrie.tuwien.ac.at/ig/ Geometric Modeling and Industrial Geometry Group] at [[Technische Universitat Wien]]
+*[http://www.cg.tuwien.ac.at/research/ The Institute of Computer Graphics and Algorithms] at [[Technische Universitat Wien]]
+*[http://www.cs.unc.edu/Research/ProjectIndex/GraphicsImage.html Graphics and Image Analysis at UNC]
+*[http://graphics.unizar.es/ Graphics and Imaging Lab] at [[Universidad de Zaragoza]]
+*[http://gggj.ujaen.es/ Graphics and Geomatics Group] at [[Universidad de Jaén]]
+*[https://web.archive.org/web/20070427212320/http://cg.cs.tsinghua.edu.cn/ Graphics and Geometric Computing Group] at [[Tsinghua University]]
+*[https://web.archive.org/web/20010201203100/http://graphics.cs.uiuc.edu/ Graphics@Illinois]
+*[http://grail.cs.washington.edu/ GRAIL] at [[University of Washington]]
+*[https://web.archive.org/web/20061219013441/http://www-gravir.imag.fr/ GRAVIR at iMAGIS]
+*[http://www.cs.umd.edu/gvil GVIL] at [[University of Maryland, College Park]]
+*[http://www.gvu.gatech.edu/ GVU Center] at [[Georgia Tech]]
+*[http://graphics.cs.ucdavis.edu/ IDAV Visualization and Graphics Research Group] at [[UC Davis]]
+*[http://imagine.uniandes.edu.co IMAGINE Research Group] at [[University of Los Andes (Colombia)|Universidad de los Andes]], Bogotá, Colombia
+*[http://www.cs.ubc.ca/labs/imager/ Imager Laboratory] at [[University of British Columbia]]
+*[http://groups.csail.mit.edu/graphics/ MIT Computer Graphics Group]
+*[http://www.mrl.nyu.edu/ MRL] at [[NYU]]
+*[http://www.cs.princeton.edu/gfx/ Princeton Graphics and Geometry Group]
+*[http://graphics.stanford.edu/ Stanford Computer Graphics Laboratory]
+*[http://graphics.ucsd.edu/ UCSD Computer Graphics Laboratory]
+*[http://www.virvig.eu/ ViRVIG] at [[Polytechnic University of Catalonia]]
+*[http://vision-research.vanderbilt.edu/ Vision Research Center] at [[Vanderbilt University|Vanderbilt]]
+*[http://www.inigraphics.net/ INI-GraphicsNet international network]
+*[http://www.vrvis.at/ VRVis Research Center]
+
+=== Industry ===
+Industrial labs doing "blue sky" graphics research include:
+*[https://web.archive.org/web/20080325152156/http://www.adobe.com/technology/graphics/ Adobe Advanced Technology Labs]
+*[http://www.merl.com/ MERL]
+*[http://research.microsoft.com/graphics/ Microsoft Research – Graphics]
+*[http://research.nvidia.com/ Nvidia Research]
+
+Major film studios notable for graphics research include:
+*[http://www.ilm.com/ ILM]
+*[http://www.dreamworksanimation.com/ PDI/Dreamworks Animation]
+*[https://web.archive.org/web/20070302102640/http://www.pixar.com/companyinfo/research/ Pixar]
+
+{{-}}
+{{Visualization}}
+{{Computer graphics}}
+{{Computer science}}
+
+{{Authority control}}
+
+[[Category:Computer graphics|+]]
+[[Category:Computer science]]

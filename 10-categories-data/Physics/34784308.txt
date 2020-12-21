@@ -1,0 +1,52 @@
+{{Infobox software
+| name = BigDFT
+| logo = 
+| screenshot = 
+| caption = 
+| author = 
+| developer = [[Commissariat à l'énergie atomique]], [[Basel University]]
+| released = 
+| latest release version = 1.8.3
+| latest release date = 
+| language = [[Fortran]]
+| genre = 
+| license = [[GNU GPL]] v2
+| website = {{URL|bigdft.org}}
+}}
+
+'''BigDFT''' is a [[free software|free]] [[Software package (installation)|software package]] for [[physicist]]s and [[chemist]]s, distributed under the [[GNU General Public License]], whose main program allows the total [[energy]], [[Current density|charge density]], and [[Electron configuration|electronic structure]] of systems made of [[electron]]s and [[Atomic nucleus|nuclei]] ([[molecules]] and periodic/crystalline [[solid]]s) to be calculated within [[density functional theory]] (DFT), using [[pseudopotential]]s, and a [[wavelet]] basis.<ref name="Genovese Neelov Goedecker Deutsch p=014109">{{cite journal | last=Genovese | first=Luigi | last2=Neelov | first2=Alexey | last3=Goedecker | first3=Stefan | last4=Deutsch | first4=Thierry | last5=Ghasemi | first5=Seyed Alireza | last6=Willand | first6=Alexander | last7=Caliste | first7=Damien | last8=Zilberberg | first8=Oded | last9=Rayson | first9=Mark | last10=Bergman | first10=Anders | last11=Schneider | first11=Reinhold | title=Daubechies wavelets as a basis set for density functional pseudopotential calculations | journal=The Journal of Chemical Physics | volume=129 | issue=1 | date=2008-07-07 | issn=0021-9606 | doi=10.1063/1.2949547 | pmid=18624472 | arxiv=0804.2583 | bibcode=2008JChPh.129a4109G | page=014109}}</ref>
+
+==Overview==
+BigDFT implements [[density functional theory]] (DFT) by solving the [[Kohn–Sham equations]] describing the electrons in a material, expanded in a [[Daubechies wavelet]] basis set and using a self-consistent direct minimization or Davidson diagonalisation methods to determine the energy minimum. Computational efficiency is achieved through the use of fast short convolutions 
+and [[pseudopotential]]s to describe core electrons. In addition to total energy, forces and stresses are also calculated so that geometry optimizations and ab initio molecular dynamics may be carried out.
+
+The Daubechies wavelet basis sets are an orthogonal systematic basis set as plane wave basis set but has the great advantage to allow adapted mesh with different levels of resolutions (see [[multi-resolution analysis]]). Interpolating scaling functions are used also to solve the [[Poisson's equation]]<ref>{{cite journal | last=Genovese | first=Luigi | last2=Deutsch | first2=Thierry | last3=Neelov | first3=Alexey | last4=Goedecker | first4=Stefan | last5=Beylkin | first5=Gregory | title=Efficient solution of Poisson's equation with free boundary conditions | journal=The Journal of Chemical Physics | publisher=AIP Publishing | volume=125 | issue=7 | date=2006-08-21 | issn=0021-9606 | doi=10.1063/1.2335442 | pmid=16942320 | page=074105|arxiv=cond-mat/0605371| bibcode=2006JChPh.125g4105G }}</ref><ref>{{cite journal | last=Genovese | first=Luigi | last2=Deutsch | first2=Thierry | last3=Goedecker | first3=Stefan | title=Efficient and accurate three-dimensional Poisson solver for surface problems | journal=The Journal of Chemical Physics | publisher=AIP Publishing | volume=127 | issue=5 | date=2007-08-07 | issn=0021-9606 | doi=10.1063/1.2754685 | pmid=17688354 | arxiv=cond-mat/0703677 | bibcode=2007JChPh.127e4704G | page=054704}}</ref> with different [[boundary condition]]s as isolated or surface systems.
+
+BigDFT was among the first massively parallel density functional theory codes which benefited from [[graphics processing units]] (GPU)<ref>{{cite journal|url=http://inac.cea.fr/L_Sim/Publications/2009/Genovese-Ospici-GPU-2009.pdf|title=Density Functional Theory calculation on many-cores hybrid CPU-GPU architectures in hybrid architecture|author=L. Genovese, M. Ospici, T. Deutsch, J.-F. Méhaut, A. Neelov, S. Goedecker|arxiv=0904.1543|journal=Journal of Chemical Physics|volume=131 034103|issue=3|pages=034103| year=2009|doi=10.1063/1.3166140|pmid=19624177}}</ref> using [[CUDA]] and then [[OpenCL]] languages.
+
+Because the Daubechies wavelets have a compact support, the Hamiltonian application can be done locally<ref>{{cite journal | last=Mohr | first=Stephan | last2=Ratcliff | first2=Laura E. | last3=Boulanger | first3=Paul | last4=Genovese | first4=Luigi | last5=Caliste | first5=Damien | last6=Deutsch | first6=Thierry | last7=Goedecker | first7=Stefan | title=Daubechies wavelets for linear scaling density functional theory | journal=The Journal of Chemical Physics | publisher=AIP Publishing | volume=140 | issue=20 | date=2014-05-28 | issn=0021-9606 | doi=10.1063/1.4871876 | pmid=24880269 | arxiv=1401.7441 | bibcode=2014JChPh.140t4110M | page=204110}}</ref> which permits to have a [[Ab_initio_quantum_chemistry_methods#Linear_scaling_approaches | linear scaling]] in function of the number of atoms instead of a cubic scaling for traditional DFT software.
+
+==See also==
+
+{{Portal|Free and open-source software}}
+
+* [[List of quantum chemistry and solid state physics software]]
+
+==References==
+<references/>
+
+==External links==
+* {{Official website|http://bigdft.org/ |name=BigDFT web site}}
+
+{{Chemistry software}}
+<!---  Physics software is a sub-category --->
+
+{{DEFAULTSORT:BigDFT}}
+<!-- Categories -->
+[[Category:Computational chemistry software]]
+[[Category:Computational physics]]
+[[Category:Density functional theory software]]
+[[Category:Free physics software]]
+
+{{Physics-stub}}
+{{Science-software-stub}}

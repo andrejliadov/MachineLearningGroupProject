@@ -1,0 +1,44 @@
+'''Adaptive sampling''' is a technique used in computational [[molecular biology]] to efficiently simulate [[protein folding]].
+
+==Background==
+Proteins spend a large portion – nearly 96% in some cases<ref name="10.1016/j.sbi.2011.12.001"/> – of their [[protein folding|folding]] time "waiting" in various [[thermodynamic free energy]] minima. Consequently, a straightforward simulation of this process would spend a great deal of computation to this state, with the transitions between the states – the aspects of protein folding of greater scientific interest – taking place only rarely.<ref name="Simulation FAQ"/> Adaptive sampling exploits this property to simulate the protein's [[phase space]] in between these states. Using adaptive sampling, molecular simulations that previously would have taken decades can be performed in a matter of weeks.<ref name="10.1016/j.sbi.2010.10.006"/>
+
+==Theory==
+If a protein folds through the [[metastable state]]s A -> B -> C, researchers can calculate the length of the transition time between A and C by simulating the A -> B transition and the B -> C transition. The protein may fold through alternative routes which may overlap in part with the A -> B -> C pathway. Decomposing the problem in this manner is efficient because each step can be simulated in parallel.<ref name="10.1016/j.sbi.2010.10.006"/>
+
+==Applications==
+Adaptive sampling is used by the [[Folding@home]] distributed computing project in combination with [[Hidden Markov model|Markov state models]].<ref name="Simulation FAQ"/><ref name="10.1016/j.sbi.2010.10.006"/>
+
+==Disadvantages==
+While adaptive sampling is useful for short simulations, longer trajectories may be more helpful for certain types of biochemical problems.<ref name="10.1145/1364782.1364802"/><ref name="10.1146/annurev-biophys-042910-155245"/>
+
+==See also==
+* [[Folding@home]]
+* [[Hidden Markov model]]
+* [[Computational biology]]
+* [[Molecular biology]]
+
+==References==
+{{reflist
+| colwidth = 30em
+| refs =
+
+<ref name="10.1016/j.sbi.2011.12.001">{{cite journal | author = Robert B Best | title = Atomistic molecular simulations of protein folding | journal = Current Opinion in Structural Biology | year = 2012 | type = review | volume = 22 | issue = 1 | pages = 52–61 | doi = 10.1016/j.sbi.2011.12.001 | pmid = 22257762}}</ref>
+
+<ref name="Simulation FAQ">{{cite web |url=http://folding.stanford.edu/English/FAQ-Simulation |title=Folding@home Simulation FAQ |author1=TJ Lane |author2=Gregory Bowman |author3=Robert McGibbon |author4=Christian Schwantes |author5=Vijay Pande |author6=Bruce Borden |work=Folding@home |publisher=[[Stanford University]] |date=September 10, 2012 |access-date=September 10, 2012 |archive-url=https://www.webcitation.org/6AqqrNstM?url=http://folding.stanford.edu/English/FAQ-Simulation |archive-date=2012-09-21 |url-status=dead }}</ref>
+
+<ref name="10.1016/j.sbi.2010.10.006">{{cite journal |author1=G. Bowman |author2=V. Volez |author3=V. S. Pande | title = Taming the complexity of protein folding | journal = Current Opinion in Structural Biology | year = 2011 | volume = 21 | issue = 1 | pages = 4–11 | doi = 10.1016/j.sbi.2010.10.006 | pmc = 3042729 | pmid = 21081274}}</ref>
+
+<ref name="10.1145/1364782.1364802">{{cite journal | author = David E. Shaw |author2=Martin M. Deneroff |author3=Ron O. Dror |author4=Jeffrey S. Kuskin |author5=Richard H. Larson |author6=John K. Salmon |author7=Cliff Young |author8=Brannon Batson |author9=Kevin J. Bowers |author10=Jack C. Chao |author11=Michael P. Eastwood |author12=Joseph Gagliardo |author13=J. P. Grossman |author14=C. Richard Ho |author15=Douglas J. Ierardi, Ist | title = Anton, A Special-Purpose Machine for Molecular Dynamics Simulation | journal = Communications of the ACM | volume = 51 | issue = 7 | pages = 91–97 | year = 2008 | doi = 10.1145/1364782.1364802 |doi-access=free }}</ref>
+
+<ref name="10.1146/annurev-biophys-042910-155245">{{cite journal | title = Biomolecular Simulation: A Computational Microscope for Molecular Biology |author1=Ron O. Dror |author2=Robert M. Dirks |author3=J.P. Grossman |author4=Huafeng Xu |author5=David E. Shaw | journal = [[Annual Review of Biophysics]] | year = 2012 | volume = 41 | pages = 429–52 | doi = 10.1146/annurev-biophys-042910-155245 |pmid=22577825 }}</ref>
+
+}}
+
+[[Category:Molecular modelling]]
+[[Category:Simulation software]]
+[[Category:Computational biology]]
+[[Category:Mathematical and theoretical biology]]
+[[Category:Bioinformatics]]
+[[Category:Computational chemistry]]
+[[Category:Hidden Markov models]]

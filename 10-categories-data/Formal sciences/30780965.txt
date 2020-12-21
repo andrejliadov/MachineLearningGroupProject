@@ -1,0 +1,47 @@
+In computer programming, '''bidirectional transformations (bx)''' are programs in which a single piece of code can be run in several ways, such that the same data are sometimes considered as input, and sometimes as output. For example, a bx run in the forward direction might transform input I into output O, while the same bx run backward would take as input versions of I and O and produce a new version of I as its output.
+
+[[Model transformation#Unidirectional versus bidirectional|Bidirectional model transformations]] are an important special case in which a model is input to such a program.
+
+Some bidirectional languages are [[Bijection|''bijective'']]. The bijectivity of a language is a severe restriction of its bidirectionality,<ref name="nate-foster">{{Cite web |url=http://grace.gsdlab.org/images/e/e2/Nate-short.pdf |title=Archived copy |access-date=2011-02-07 |archive-url=https://web.archive.org/web/20110726133528/http://grace.gsdlab.org/images/e/e2/Nate-short.pdf |archive-date=2011-07-26 |url-status=dead }}</ref> because a bijective language is merely relating two different ways to present the very same information.
+
+More general is a lens language, in which there is a distinguished forward direction ("get") that takes a concrete input to an abstract output, discarding some information in the process: the concrete state includes all the information that is in the abstract state, and usually some more. The backward direction ("put") takes a concrete state and an abstract state and computes a new concrete state. Lenses are required to obey certain conditions to ensure sensible behaviour.
+
+The most general case is that of symmetric bidirectional transformations. Here the two states that are related typically share some information, but each also includes some information that is not included in the other.
+
+== Usage ==
+
+Bidirectional transformations can be used to:
+
+* Maintain the consistency of several sources of information<ref name="grace-report">http://www.cs.cornell.edu/~jnfoster/papers/grace-report.pdf</ref>
+* Provide an 'abstract view' to easily manipulate data and write them back to their source
+
+== Vocabulary ==
+
+A bidirectional program which obeys certain round-trip laws{{Vague|date=May 2020}} is called a '''''lens'''''.
+
+== Examples of implementations ==
+
+* [[Boomerang (programming language)|Boomerang]] is a programming language which allows writing lenses to process text data formats bidirectionally
+* [[Augeas (software)|Augeas]] is a configuration management library whose lens language is inspired by the Boomerang project
+* ''biXid'' is a programming language for processing XML data bidirectionally<ref name="bixid">{{Cite web |url=http://arbre.is.s.u-tokyo.ac.jp/~hahosoya/papers/bixid.pdf |title=Archived copy |access-date=2011-02-07 |archive-url=https://web.archive.org/web/20070702195028/http://arbre.is.s.u-tokyo.ac.jp/~hahosoya/papers/bixid.pdf |archive-date=2007-07-02 |url-status=dead }}</ref>
+* ''XSugar'' allows translation from XML to non-XML formats<ref name="xsugar">http://www.brics.dk/xsugar/</ref>
+
+== See also ==
+* [[Bidirectionalization]]
+* [[Reverse computation]]
+* [[Transformation language]]
+
+== References ==
+
+{{reflist}}
+
+== External links ==
+* {{Webarchive|url=https://web.archive.org/web/20141012223700/http://grace.gsdlab.org/index.php?title=Main_Page|date=12 October 2014|title=GRACE International Meeting on Bidirectional Transformations}}
+* [http://bx-community.wikidot.com/ Bidirectional Transformations: The Bx Wiki]
+* Pacheco, Hugo, and Alcino Cunha. "[https://repositorium.sdum.uminho.pt/bitstream/1822/24674/1/icmt12-1.pdf Multifocal: A strategic bidirectional transformation language for XML schemas]." International Conference on Theory and Practice of Model Transformations. Springer, Berlin, Heidelberg, 2012.
+
+[[Category:Computer science]]
+[[Category:Mathematical relations]]
+
+
+{{compu-prog-stub}}

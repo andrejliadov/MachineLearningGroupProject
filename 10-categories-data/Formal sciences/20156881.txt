@@ -1,0 +1,41 @@
+{{technical|date=June 2015}}
+[[File:Bode sensitivity integral block diagram.png|thumb|Block diagram of feedback control of a dynamical process.]]
+'''Bode's sensitivity integral''', discovered by [[Hendrik Wade Bode]], is a formula that quantifies some of the limitations in [[feedback]] control of linear parameter invariant systems. Let ''L'' be the loop [[transfer function]] and ''S'' be the sensitivity function. 
+
+In the diagram, P is a dynamical process that has a transfer function P(s).  The controller, C, has the transfer function C(s).  The controller attempts to cause the process output, y, to track the reference input, r.  Disturbances, d, and measurement noise, n, may cause undesired deviations of the output.  Loop gain is defined by L(s) = C(s)P(s).
+
+The following holds:
+
+:<math>\int_0^\infty \ln |S(j \omega)| d \omega = \int_0^\infty \ln \left| \frac{1}{1+L(j \omega)} \right| d \omega = \pi \sum Re(p_k) - \frac{\pi}{2} \lim_{s\rightarrow\infty} s L(s)</math>
+
+where <math>p_k</math> are the [[Pole (complex analysis)|poles]] of ''L'' in the right half plane (unstable poles).
+
+If ''L'' has at least two more poles than [[Zero (complex analysis)|zeros]], and has no poles in the right half plane (is stable), the equation simplifies to:
+
+:<math>\int_0^\infty \ln |S(j \omega)| d \omega = 0</math>
+
+This equality shows that if sensitivity to disturbance is suppressed at some frequency range, it is necessarily increased at some other range. This has been called the "waterbed effect."<ref>[http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-245-multivariable-control-systems-spring-2004/lecture-notes/lec5_6245_2004.pdf Megretski: The Waterbed Effect. MIT OCW, 2004]</ref>
+
+==References==
+{{reflist}}
+
+==Further reading==
+* Karl Johan Åström and Richard M. Murray. ''Feedback Systems: An Introduction for Scientists and Engineers''. Chapter 11 - Frequency Domain Design. Princeton University Press, 2008.  http://www.cds.caltech.edu/~murray/amwiki/Frequency_Domain_Design
+*{{Cite journal|last=Stein|first=G.|date=2003|title=Respect the unstable|journal=IEEE Control Systems Magazine|volume=23|issue=4|pages=12–25|doi=10.1109/MCS.2003.1213600|issn=1066-033X}}
+*{{Cite journal|last=Costa-Castelló|first=Ramon|last2=Dormido|first2=Sebastián|date=2015|title=An interactive tool to introduce the waterbed effect|journal=IFAC-PapersOnLine|volume=48|issue=29|pages=259–264|doi=10.1016/j.ifacol.2015.11.246|issn=2405-8963|doi-access=free}}
+
+== External links ==
+
+* [https://sites.google.com/site/ramoncostacastello/waterbedITOOL WaterbedITOOL] -  Interactive software tool to analyze, learn/teach the Waterbed effect in linear control systems.
+* [https://www.youtube.com/watch?v=9Lhu31X94V4 Gunter Stein’s Bode Lecture] on fundamental limitations on the achievable sensitivity function expressed by Bode's integral.
+* [https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20180001190.pdf Use of Bode's Integral Theorem (circa 1945)] - NASA publication.
+
+== See also ==
+
+* [[Bode plot]]
+* [[Sensitivity (control systems)]]
+{{DEFAULTSORT:Bode's Sensitivity Integral}}
+[[Category:Control theory]]
+
+
+{{science-stub}}

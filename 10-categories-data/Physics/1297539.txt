@@ -1,0 +1,151 @@
+{{short description|Particle that, in some sense, is not bound by an external force, or equivalently not in a region where its potential energy varies}}
+In [[physics]], a '''free particle''' is a particle that, in some sense, is not bound by an external force, or equivalently not in a region where its potential energy varies. In classical physics, this means the particle is present in a "field-free" space. In quantum mechanics, it means a region of uniform potential, usually set to zero in the region of interest since potential can be arbitrarily set to zero at any point (or surface in three dimensions) in space.
+
+==Classical free particle==
+
+The classical free particle is characterized by a fixed [[velocity]] '''v'''. The [[momentum]] is given by
+
+:<math>\mathbf{p}=m\mathbf{v}</math>
+
+and the [[kinetic energy]] (equal to total energy) by
+
+:<math>E=\frac{1}{2}mv^2=\frac{p^2}{2m}</math>
+
+where ''m'' is the mass of the particle and '''v''' is the vector velocity of the particle.
+
+==Quantum free particle==
+
+[[File:Propagation of a de broglie wave.svg|290px|right|thumb|Propagation of [[matter wave|de Broglie waves]] in 1d - real part of the [[complex number|complex]] amplitude is blue, imaginary part is green. The probability (shown as the colour [[opacity (optics)|opacity]]) of finding the particle at a given point ''x'' is spread out like a waveform, there is no definite position of the particle. As the amplitude increases above zero the [[curvature]] decreases, so the decreases again, and vice versa - the result is an alternating amplitude: a wave. Top: [[Plane wave]]. Bottom: [[Wave packet]].]]
+
+===Mathematical description===
+
+{{main|Schrödinger equation|Matter wave}}
+
+A free particle with mass <math>m</math> in non-relativistic quantum mechanics is described by the free [[Schrödinger equation]]:
+
+:<math> - \frac{\hbar^2}{2m} \nabla^2 \ \psi(\mathbf{r}, t) = i\hbar\frac{\partial}{\partial t} \psi (\mathbf{r}, t) </math>
+
+where ψ is the [[wavefunction]] of the particle at position '''r''' and time ''t''. The solution for a particle with momentum '''p''' or [[wave vector]] '''k''', at [[angular frequency]] ω or energy ''E'', is given by the [[complex number|complex]] [[plane wave]]:
+
+:<math> \psi(\mathbf{r}, t) = Ae^{i(\mathbf{k}\cdot\mathbf{r}-\omega t)} = Ae^{i(\mathbf{p}\cdot\mathbf{r}-E t)/\hbar} </math>
+
+with [[amplitude]] ''A'' and restricted to: 
+
+a) if the particle has mass <math>m</math>: <math>\omega = \frac{\hbar k^2}{2m}  </math> (or equivalent <math>E = \frac{p^2}{2m}  </math>). 
+
+b) if the particle is a massless particle: <math>\omega=kc</math>. 
+
+The eigenvalue spectrum is infinitely degenerate since for each eigenvalue ''E>0'', there corresponds an infinite number of eigenfunctions corresponding to different directions of <math>\mathbf{p}</math>. 
+
+The [[De Broglie relations]]: <math> \mathbf{p} = \hbar \mathbf{k}, \quad E = \hbar \omega</math> apply. Since the potential energy is (stated to be) zero, the total energy ''E'' is equal to the kinetic energy, which has the same form as in classical physics: 
+
+:<math> E = T \,\rightarrow \,\frac{\hbar^2 k^2}{2m} =\hbar \omega </math>
+
+As for ''all'' quantum particles free ''or'' bound, the [[Heisenberg uncertainty principle]]s <math> \Delta p_x \Delta x \geq \frac{\hbar}{2}</math> apply. It is clear that since the plane wave has definite momentum (definite energy), the probability of finding the particle's location is uniform and negligible all over the space. In other words, the wave function is not normalizable in a Euclidean space, ''these stationary can not correspond to physical realizable states''. <ref>{{Cite web|last=|first=|date=|title=Lecture 9|url=http://www.physics.udel.edu/~msafrono/424-2011/Lecture%209final.pdf|url-status=live|archive-url=|archive-date=|access-date=|website=}}</ref>
+
+===Measurement and calculations===
+
+The integral of the [[probability density function]]
+
+:<math> \rho(\mathbf{r},t) = \psi^*(\mathbf{r},t)\psi(\mathbf{r},t) = |\psi(\mathbf{r},t)|^2</math>
+
+where * denotes [[complex conjugate]], over all space is the probability of finding the particle in all space, which must be unity if the particle exists:
+
+:<math> \int_\mathrm{all\,space} |\psi(\mathbf{r},t)|^2 d^3 \mathbf{r}=1</math>
+
+This is the normalization condition for the wave function. The wavefunction is not normalizable for a plane wave, but is for a [[wavepacket]]. 
+
+{{Clear}}
+ {{multiple image
+   | align = center
+   | direction = horizontal
+   | footer    = Interpretation of wave function for one spin-0 particle in one dimension. The wavefunctions shown are continuous, finite, single-valued and normalized. The colour opacity (%) of the particles corresponds to the probability density (which can measure in %) of finding the particle at the points on the x-axis.
+   | image1    = Quantum mechanics travelling wavefunctions.svg
+   | caption1  = Increasing amounts of wavepacket localization, meaning the particle becomes more localized.
+   | width1     = 400
+   | image2    = Perfect localization.svg
+   | caption2  = In the limit ''ħ'' → 0, the particle's position and momentum become known exactly.
+   | width2     = 200
+  }}
+{{Clear}}
+
+===Fourier decomposition===
+The free particle wave function may be represented by a superposition of ''momentum'' eigenfunctions, with coefficients given by the [[Fourier transform]] of the initial wavefunction:<ref>{{harvnb|Hall|2013}} Section 4.1</ref>
+
+:<math> \psi(\mathbf{r}, t) =\frac{1}{(\sqrt{2\pi})^3} \int_\mathrm{all \, \textbf{k} \, space}  \hat \psi_0 (\mathbf{k})e^{i(\mathbf{k}\cdot\mathbf{r}-\omega t)} d^3 \mathbf{k} </math>
+
+where the integral is over all '''k'''-space and <math> \omega = \omega(\mathbf{k}) = \frac{\hbar \mathbf{k}^2}{2m}</math> (to ensure that the wave packet is a solution of the free particle Schrödinger equation). Here <math>\psi_0</math> is the value of the wave function at time 0 and <math>\hat\psi_0</math> is the Fourier transform of <math>\psi_0</math>. (The Fourier transform <math>\hat\psi_0(\mathbf k)</math> is essentially the [[Wave_function#Momentum-space_wave_functions|momentum wave function]] of the position wave function <math>\psi_0(\mathbf r)</math>, but written as a function of <math>\mathbf k</math> rather than <math>\mathbf p=\hbar\mathbf k</math>.)
+
+The expectation value of the momentum '''p''' for the complex plane wave is
+
+:<math> \langle\mathbf{p}\rangle=\left\langle \psi \left|-i\hbar\nabla\right|\psi\right\rangle = \hbar\mathbf{k} </math>,
+
+and for the general wave packet it is
+
+:<math> \langle\mathbf{p}\rangle = \int_\mathrm{all\,space} \psi^*(\mathbf{r},t)(-i\hbar\nabla)\psi(\mathbf{r},t) d^3 \mathbf{r} = \int_\mathrm{all \, \textbf{k} \, space} \hbar \mathbf{k} |\hat\psi_0(\mathbf{k})|^2  d^3 \mathbf{k} </math>.
+
+The expectation value of the energy E is 
+
+:<math> \langle E\rangle=\left\langle \psi \left|- \frac{\hbar^2}{2m} \nabla^2 \right|\psi\right\rangle = \int_\mathrm{all\,space} \psi^*(\mathbf{r},t)\left(- \frac{\hbar^2}{2m} \nabla^2 \right)\psi(\mathbf{r},t) d^3 \mathbf{r} </math>.
+
+===Group velocity and phase velocity===
+[[File:Wave_packet_propagation.png|thumb|right|Propagation of a wave packet, with the motion of a single peak shaded in purple. The peaks move at the phase velocity while the overall packet moves at the group velocity.]]
+The [[phase velocity]] is defined to be the speed at which a plane wave solution propagates, namely
+
+:<math> v_p=\frac{\omega}{k}=\frac{\hbar k}{2m} = \frac{p}{2m} </math>.
+
+Note that <math>\frac{p}{2m}</math> is ''not'' the speed of a classical particle with momentum <math>p</math>; rather, it is half of the classical velocity.
+
+Meanwhile, suppose that the initial wave function <math>\psi_0</math> is a [[wave packet]] whose Fourier transform <math>\hat\psi_0</math> is concentrated near a particular wave vector <math>\mathbf k</math>. Then the [[group velocity]] of the plane wave is defined as
+
+:<math> v_g= \nabla\omega(\mathbf k)=\frac{\hbar\mathbf k}{m}=\frac{\mathbf p}{m}</math>,
+
+which agrees with the formula for the classical velocity of the particle. The group velocity is the (approximate) speed at which the whole wave packet propagates, while the phase velocity is the speed at which the individual peaks in the wave packet move.<ref>{{harvnb|Hall|2013}} Sections 4.3 and 4.4</ref> The figure illustrates this phenomenon, with the individual peaks within the wave packet propagating at half the speed of the overall packet.
+
+===Spread of the wave packet===
+The notion of group velocity is based on a linear approximation to the dispersion relation <math>\omega(k)</math> near a particular value of <math>k</math>.<ref>{{harvnb|Hall|2013}} Equation 4.24</ref> In this approximation, the amplitude of the wave packet moves at a velocity equal to the group velocity ''without changing shape''. This result is an approximation that fails to capture certain interesting aspects of the evolution a free quantum particle. Notably, the width of the wave packet, as measured by the uncertainty in the position, grows linearly in time for large times. This phenomenon is called the [[Wave_packet#Gaussian_wave_packets_in_quantum_mechanics|spread of the wave packet]] for a free particle.
+
+Specifically, it is not difficult to compute an exact formula for the uncertainty <math>\Delta_{\psi(t)}X</math> as a function of time, where <math>X</math> is the position operator. Working in one spatial dimension for simplicity, we have:<ref>{{harvnb|Hall|2013}} Proposition 4.10</ref>
+:<math>(\Delta_{\psi(t)}X)^2=\frac{t^2}{m^2}(\Delta_{\psi_0}P)^2+\frac{2t}{m}\left(\left\langle \frac{XP+PX}{2}\right\rangle_{\psi_0}-\left\langle X\right\rangle_{\psi_0} \left\langle P\right\rangle_{\psi_0} \right)+(\Delta_{\psi_0}X)^2</math>,
+where <math>\psi_0</math> is the time-zero wave function. The expression in parentheses in the second term on the right-hand side is the quantum covariance of <math>X</math> and <math>P</math>.
+
+Thus, for large positive times, the uncertainty in <math>X</math> grows linearly, with the coefficient of <math>t</math> equal to <math>(\Delta_{\psi_0}P)/m</math>. If the momentum of the initial wave function <math>\psi_0</math> is highly localized, the wave packet will spread slowly and the group-velocity approximation will remain good for a long time. Intuitively, this result says that if the initial wave function has a very sharply defined momentum, then the particle has a sharply defined velocity and will (to good approximation) propagate at this velocity for a long time.
+
+==Relativistic quantum free particle==
+
+{{main|Quantum field theory}}
+
+There are a number of equations describing relativistic particles: see [[relativistic wave equations]].
+
+==See also==
+
+* [[Wave packet]]
+* [[Group velocity]]
+* [[Particle in a box]]
+* [[Finite square well]]
+* [[Delta potential]]
+
+==References==
+
+* ''Quantum Mechanics'', E. Abers, Pearson Ed., Addison Wesley, Prentice Hall Inc, 2004, {{ISBN|978-0-13-146100-0}}
+* ''Quantum Physics of Atoms, Molecules, Solids, Nuclei, and Particles (2nd Edition)'', R. Eisberg, R. Resnick, John Wiley & Sons, 1985, {{ISBN|978-0-471-87373-0}}
+* ''Stationary States'', A. Holden, College Physics Monographs (USA), Oxford University Press, 1971, {{ISBN|0-19-851121-3}}
+*{{citation|first=Brian C.|last=Hall|title=Quantum Theory for Mathematicians|series=Graduate Texts in Mathematics|volume=267 |publisher=Springer|year=2013| isbn=978-1461471158}}
+* ''Quantum Mechanics Demystified'', D. McMahon, Mc Graw Hill (USA), 2006, {{ISBN|0-07-145546 9}}
+* ''Elementary Quantum Mechanics'', N.F. Mott, Wykeham Science, Wykeham Press (Taylor & Francis Group), 1972, {{ISBN|0-85109-270-5}}
+* ''Quantum mechanics'', E. Zaarur, Y. Peleg, R. Pnini, Schaum's Outlines, Mc Graw Hill (USA), 1998, {{ISBN|007-0540187}}
+
+;Specific
+<references />
+
+==Further reading==
+
+* ''The New Quantum Universe'', T.Hey, P.Walters, Cambridge University Press, 2009, {{ISBN|978-0-521-56457-1}}.
+* ''Quantum Field Theory'', D. McMahon, Mc Graw Hill (USA), 2008, {{ISBN|978-0-07-154382-8}}
+* ''Quantum mechanics'', E. Zaarur, Y. Peleg, R. Pnini, Schaum's Easy Outlines Crash Course, Mc Graw Hill (USA), 2006, {{ISBN|978-007-145533-6}}
+
+{{DEFAULTSORT:Free Particle}}
+[[Category:Concepts in physics]]
+[[Category:Classical mechanics]]
+[[Category:Quantum mechanics]]
+[[Category:Quantum models]]

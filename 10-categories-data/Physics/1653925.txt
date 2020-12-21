@@ -1,0 +1,83 @@
+{{Portal maintenance status|date=June 2018|subpages=keep|maintainer1=}}
+{{portal description}}
+<small>{{Portals browsebar}}</small>
+<!-- This portal was created using subs:box portal skeleton| topic=Physics| -->
+{{/Tabs}}
+<div style="width:100%">
+__NOTOC__
+{{/box-header|<big>''The Physics Portal''</big>|noedit=yes|}}
+[[File:Stylised atom with three Bohr model orbits and stylised nucleus.svg|left|107px]]
+{{Transclude lead excerpt| Physics | paragraphs= | files=1}}
+<div style="float:right">'''[[Physics|Read more...]]'''</div>
+{{Purge link portals2}} <!-- This is the show new selections clickable link -->
+{{Box-footer}}</div>
+<div class="portal-column-left"> <!-- Switch to one column on narrow screens -->
+{{/box-header|[[File:Cscr-featured.png|19px]] Featured article {{#if: {{{Purge|}}}{{{purge|}}} | {{{Purge|}}}{{{purge|}}} |- {{purge|<small>{{color|darkblue|''show another''}}</small>}}}}}}
+{{/Featured articles}}
+{{Box-footer}}
+
+{{Random portal component|max=12|header=Did you know {{#if: {{{Purge|}}}{{{purge|}}} | {{{Purge|}}}{{{purge|}}} |- {{purge|<small>{{color|darkblue|''show different entries''}}</small>}}}}|footer=More did you know facts|subpage=Did you know}}
+
+{{Random portal component|max=25|header=Selected image {{#if: {{{Purge|}}}{{{purge|}}} | {{{Purge|}}}{{{purge|}}} |- {{purge|<small>{{color|darkblue|''show another''}}</small>}}}}|footer={{-}}More selected images...|subpage=Selected images}}
+
+{{/box-header|Related portals|Portal:Physics/Related portals|}}
+{{/Related portals}}
+{{Box-footer}}
+</div>
+</div>
+<div class="portal-column-right"> <!-- Switch to one column on narrow screens -->
+{{/box-header|[[File:Symbol support vote.svg|19px]] Good article {{#if: {{{Purge|}}}{{{purge|}}} | {{{Purge|}}}{{{purge|}}} |- {{purge|<small>{{color|darkblue|''show another''}}</small>}}}}}}
+{{/Good articles}}
+{{Box-footer}}
+
+{{/box-header|{{CURRENTMONTHNAME}} anniversaries|Portal:Physics/Anniversaries/{{CURRENTMONTHNAME}}|}}
+{{/Anniversaries/{{CURRENTMONTHNAME}}}}
+{{Box-footer|[[Portal:Physics/Anniversaries|More anniversaries]]}}
+
+{{Portal:Physics/box-header|Categories|Portal:Physics/Categories|}}
+{{Portal:Physics/Categories}}
+{{Box-footer|[[:Category:Physics|All physics categories]]}}
+</div>
+
+<div style="width:100%">
+{{/box-header|General images}}
+<div style="text-align: center;"><small>'''The following are images from various physics-related articles on Wikipedia.'''</small></div>
+{{Transclude files as random slideshow
+| History of physics
+| Modern physics
+| Condensed matter physics
+}}
+{{Box-footer}} 
+
+{{/box-header|More recognized content|Portal:Physics/Recognized content|}}
+{{/Recognized content}}
+{{Box-footer}}
+
+{{Portal:Physics/box-header|Physics topics|Portal:Physics/Topics|}}
+{{Portal:Physics/Topics}}
+{{Box-footer|}}
+
+{{/box-header|Associated Wikimedia|noedit=yes|}}
+{{Wikimedia for portals | species=no}}
+{{Box-footer}}
+<!-- Commented out for now. No news available at this time, Wikinews is slow.
+{{/box-header|{{PAGENAME}} in the news||noedit=yes}}
+{{Transclude selected current events|{{PAGENAME}}|max=4}}
+{{Box-footer}}
+-->
+{{/box-header|Sources}}
+{{notelist}}
+{{reflist}}
+{{Box-footer}}
+
+{{/box-header|Portals on Wikipedia}}
+{{Portal navbar no header2}}
+{{Box-footer}}
+</div>
+
+{{purgepage}}
+
+[[Category:Physics|*]]
+[[Category:Physical science portals|Physics]]
+
+{{featured portal|FPOCyear=2007}}

@@ -1,0 +1,140 @@
+{{Refimprove|date=December 2009}}
+In [[physics]] and [[probability theory]], '''mean-field theory''' (aka '''MFT''' or rarely '''self-consistent field theory''') studies the behavior of high-dimensional random ([[stochastic]]) models by studying a simpler model that approximates the original by averaging over degrees of freedom. Such models consider many individual components that interact with each other. In MFT, the effect of all the other individuals on any given individual is approximated by a single averaged effect, thus reducing a [[many-body problem]] to a [[one-body problem]].
+
+The main idea of MFT is to replace all interactions to any one body with an average or effective interaction, sometimes called a ''molecular field''.<ref>{{cite book |title=Principles of condensed matter physics |last1=Chaikin |first1=P. M. |last2=Lubensky |first2=T. C. |publisher=Cambridge University Press |year=2007 |isbn=978-0-521-79450-3 |edition=4th print |location=Cambridge}}</ref> This reduces any many-body problem into an effective one-body problem. The ease of solving MFT problems means that some insight into the behavior of the system can be obtained at a lower computational cost.
+
+MFT has since been applied to a wide range of fields outside of physics, including [[statistical inference]], [[graphical models]], [[neuroscience]],<ref>{{cite journal |last1=Parr |first1=Thomas |last2=Sajid |first2=Noor |last3=Friston |first3=Karl |title=Modules or Mean-Fields? |journal=Entropy |date=2020 |volume=22 |issue=552 |page=552 |doi=10.3390/e22050552 |bibcode=2020Entrp..22..552P |url=https://res.mdpi.com/d_attachment/entropy/entropy-22-00552/article_deploy/entropy-22-00552.pdf |accessdate=22 May 2020}}</ref> [[artificial intelligence]], [[epidemic model]]s,<ref>{{Cite book |url=http://www.cs.toronto.edu/~marbach/ENS/leboudec.pdf |title=Fourth International Conference on the Quantitative Evaluation of Systems (QEST 2007) |last1=Boudec |first1=J. Y. L. |last2=McDonald |first2=D. |last3=Mundinger |first3=J. |year=2007 |isbn=978-0-7695-2883-0 |pages=3 |chapter=A Generic Mean Field Convergence Result for Systems of Interacting Objects |doi=10.1109/QEST.2007.8 |citeseerx=10.1.1.110.2612|s2cid=15007784 }}</ref> [[queueing theory]],<ref>{{Cite journal |last1=Baccelli |first1=F. |last2=Karpelevich |first2=F. I. |last3=Kelbert |first3=M. Y. |last4=Puhalskii |first4=A. A. |last5=Rybko |first5=A. N. |last6=Suhov |first6=Y. M. |year=1992 |title=A mean-field limit for a class of queueing networks |journal=Journal of Statistical Physics |volume=66 |issue=3–4 |pages=803 |bibcode=1992JSP....66..803B |doi=10.1007/BF01055703 |s2cid=120840517 }}</ref> [[Network performance|computer-network performance]] and [[mean-field game theory|game theory]],<ref>{{Cite journal |last1=Lasry |first1=J. M. |last2=Lions |first2=P. L. |author-link2=Pierre-Louis Lions |year=2007 |title=Mean field games |journal=Japanese Journal of Mathematics |volume=2 |pages=229–260 |doi=10.1007/s11537-007-0657-8 |s2cid=1963678 |url=https://basepub.dauphine.fr//bitstream/123456789/2263/1/Cahier_Chaire_2.pdf}}</ref> as in the [[quantal response equilibrium]].
+
+== Origins ==
+The ideas first appeared in physics ([[statistical mechanics]]) in the work of [[Pierre Curie]]<ref>{{Cite journal | last1 = Kadanoff | first1 = L. P. | author-link1 = Leo Kadanoff| title = More is the Same; Phase Transitions and Mean Field Theories | doi = 10.1007/s10955-009-9814-1 | journal = Journal of Statistical Physics | volume = 137 | issue = 5–6 | pages = 777–797 | year = 2009 | arxiv = 0906.0653|bibcode = 2009JSP...137..777K | s2cid = 9074428 }}</ref> and [[Pierre Weiss]] to describe [[phase transitions]].<ref>{{cite journal | title = L'hypothèse du champ moléculaire et la propriété ferromagnétique | first = Pierre | last = Weiss | author-link = Pierre Weiss | journal = J. Phys. Theor. Appl. | volume = 6 | issue = 1 | year= 1907 | pages= 661–690 | doi = 10.1051/jphystap:019070060066100 | url = http://hal.archives-ouvertes.fr/jpa-00241247/en }}</ref> MFT has been used in the [[Bragg–Williams approximation]], models on [[Bethe lattice]], [[Landau theory]], [[Pierre–Weiss approximation]], [[Flory–Huggins solution theory]], and [[Scheutjens–Fleer theory]].
+
+[[Many-body system|Systems]] with many (sometimes infinite) degrees of freedom are generally hard to solve exactly or compute in closed, analytic form, except for some simple cases (e.g. certain Gaussian [[random-field]] theories, the 1D [[Ising model]]). Often combinatorial problems arise that make things like computing the [[Partition function (mathematics)|partition function]] of a system difficult. MFT is an approximation method that often makes the original solvable and open to calculation. Sometimes, MFT gives very accurate approximations.
+
+In [[classical field theory|field theory]], the Hamiltonian may be expanded in terms of the magnitude of fluctuations around the mean of the field. In this context, MFT can be viewed as the "zeroth-order" expansion of the Hamiltonian in fluctuations.  Physically, this means that an MFT system has no fluctuations, but this coincides with the idea that one is replacing all interactions with a "mean field".
+
+Quite often, MFT provides a convenient launch point to studying higher-order fluctuations. For example, when computing the [[Partition function (statistical mechanics)|partition function]], studying the [[combinatorics]] of the interaction terms in the [[Hamiltonian mechanics|Hamiltonian]] can sometimes at best produce [[Perturbation theory|perturbative]] results or [[Feynman diagram]]s that correct the mean-field approximation.
+
+== Validity ==
+In general, dimensionality plays a strong role in determining whether a mean-field approach will work for any particular problem. There is sometimes a [[critical dimension]], above which MFT is valid and below which it is not. 
+
+Heuristically, many interactions are replaced in MFT by one effective interaction. So if the field or particle exhibits many random interactions in the original system, they tend to cancel each other out, so the mean effective interaction and MFT will be more accurate. This is true in cases of high dimensionality, when the Hamiltonian includes long-range forces, or when the particles are extended (e.g. polymers). The [[Ginzburg criterion]] is the formal expression of how fluctuations render MFT a poor approximation, often depending upon the number of spatial dimensions in the system of interest.
+
+==Formal approach (Hamiltonian)==
+The formal basis for mean-field theory is the [[Helmholtz free energy#Bogoliubov inequality|Bogoliubov inequality]]. This inequality states that the [[thermodynamic free energy|free energy]] of a system with Hamiltonian
+
+: <math>\mathcal{H} = \mathcal{H}_0 + \Delta \mathcal{H}</math>
+
+has the following upper bound:
+
+: <math>F \leq F_0 \ \stackrel{\mathrm{def}}{=}\  \langle \mathcal{H} \rangle_0 - T S_0,</math>
+
+where <math>S_0</math> is the [[entropy]], and <math>F</math> and <math>F_0</math> are [[Helmholtz free energy|Helmholtz free energies]]. The average is taken over the equilibrium [[Statistical ensemble (mathematical physics)|ensemble]] of the reference system with Hamiltonian <math>\mathcal{H}_0</math>. In the special case that the reference Hamiltonian is that of a non-interacting system and can thus be written as
+
+: <math>\mathcal{H}_0 = \sum_{i=1}^N h_i(\xi_i),</math>
+
+where <math>\xi_i</math> are the [[degrees of freedom (physics and chemistry)|degrees of freedom]] of the individual components of our statistical system (atoms, spins and so forth), one can consider sharpening the upper bound by minimizing the right side of the inequality. The minimizing reference system is then the "best" approximation to the true system using non-correlated degrees of freedom and is known as the '''mean-field approximation'''.
+
+For the most common case that the target Hamiltonian contains only pairwise interactions, i.e.,
+
+: <math>\mathcal{H} = \sum_{(i,j) \in \mathcal{P}} V_{i,j}(\xi_i, \xi_j),</math>
+
+where <math>\mathcal{P}</math> is the set of pairs that interact, the minimizing procedure can be carried out formally. Define <math>\operatorname{Tr}_i f(\xi_i)</math> as the generalized sum of the observable <math>f</math> over the degrees of freedom of the single component (sum for discrete variables, integrals for continuous ones). The approximating free energy is given by
+:<math>\begin{align}
+ F_0 &= \operatorname{Tr}_{1,2,\ldots,N} \mathcal{H}(\xi_1, \xi_2, \ldots, \xi_N) P^{(N)}_0(\xi_1, \xi_2, \ldots, \xi_N) \\
+     &+ kT \,\operatorname{Tr}_{1,2,\ldots,N} P^{(N)}_0(\xi_1, \xi_2, \ldots, \xi_N) \log P^{(N)}_0(\xi_1, \xi_2, \ldots,\xi_N),
+\end{align}</math>
+
+where <math>P^{(N)}_0(\xi_1, \xi_2, \dots, \xi_N)</math> is the probability to find the reference system in the state specified by the variables <math>(\xi_1, \xi_2, \dots, \xi_N)</math>. This probability is given by the normalized [[Boltzmann factor]]
+: <math>\begin{align}
+  P^{(N)}_0(\xi_1, \xi_2, \ldots, \xi_N)
+    &= \frac{1}{Z^{(N)}_0} e^{-\beta \mathcal{H}_0(\xi_1, \xi_2, \ldots, \xi_N)} \\
+    &= \prod_{i=1}^N \frac{1}{Z_0} e^{-\beta h_i(\xi_i)} \ \stackrel{\mathrm{def}}{=}\  \prod_{i=1}^N P^{(i)}_0(\xi_i),
+\end{align}</math>
+
+where <math>Z_0</math> is the [[Partition function (statistical mechanics)|partition function]]. Thus
+:<math>\begin{align}
+  F_0 &= \sum_{(i,j) \in \mathcal{P}} \operatorname{Tr}_{i,j} V_{i,j}(\xi_i, \xi_j) P^{(i)}_0(\xi_i) P^{(j)}_0(\xi_j) \\
+      &+ kT \sum_{i=1}^N \operatorname{Tr}_i P^{(i)}_0(\xi_i) \log P^{(i)}_0(\xi_i).
+\end{align}</math>
+
+In order to minimize, we take the derivative with respect to the single-degree-of-freedom probabilities <math>P^{(i)}_0</math> using a [[Lagrange multiplier]] to ensure proper normalization. The end result is the set of self-consistency equations
+: <math>P^{(i)}_0(\xi_i) = \frac{1}{Z_0} e^{-\beta h_i^{MF}(\xi_i)},\quad i = 1, 2, \ldots, N,</math>
+
+where the mean field is given by
+: <math>h_i^\text{MF}(\xi_i) = \sum_{\{j \mid (i,j) \in \mathcal{P}\}} \operatorname{Tr}_j V_{i,j}(\xi_i, \xi_j) P^{(j)}_0(\xi_j).</math>
+
+==Applications==
+Mean-field theory can be applied to a number of physical systems so as to study phenomena such as [[phase transitions]].<ref name=Stanley>
+{{cite book
+ |title=Introduction to Phase Transitions and Critical Phenomena
+ |first=H. E. |last=Stanley
+ |publisher=Oxford University Press
+ |chapter=Mean Field Theory of Magnetic Phase Transitions
+ |isbn=0-19-505316-8
+ |year=1971
+}}</ref>
+
+===Ising model===
+Consider the [[Ising model]] on a <math>d</math>-dimensional lattice. The Hamiltonian is given by
+: <math>H = -J \sum_{\langle i, j \rangle} s_i s_j - h \sum_i s_i,</math>
+where the <math>\sum_{\langle i, j \rangle}</math> indicates summation over the pair of nearest neighbors <math>\langle i, j \rangle</math>, and <math>s_i, s_j = \pm 1</math> are neighboring Ising spins.
+
+Let us transform our spin variable by introducing the fluctuation from its mean value <math>m_i \equiv \langle s_i \rangle</math>. We may rewrite the Hamiltonian as
+: <math>H = -J \sum_{\langle i, j \rangle} (m_i + \delta s_i) (m_j + \delta s_j) - h \sum_i s_i,</math>
+
+where we define <math>\delta s_i \equiv s_i - m_i</math>; this is the ''fluctuation'' of the spin.
+
+If we expand the right side, we obtain one term that is entirely dependent on the mean values of the spins and independent of the spin configurations. This is the trivial term, which does not affect the statistical properties of the system. The next term is the one involving the product of the mean value of the spin and the fluctuation value. Finally, the last term involves a product of two fluctuation values.
+
+The mean-field approximation consists of neglecting this second-order fluctuation term:
+: <math>H \approx H^\text{MF} \equiv -J \sum_{\langle i, j \rangle} (m_i m_j + m_i \delta s_j + m_j \delta s_i) - h \sum_i s_i.</math>
+
+These fluctuations are enhanced at low dimensions, making MFT a better approximation for high dimensions.
+
+Again, the summand can be reexpanded. In addition, we expect that the mean value of each spin is site-independent, since the Ising chain is translationally invariant. This yields
+
+: <math>H^\text{MF} = -J \sum_{\langle i, j \rangle} \big(m^2 + 2m(s_i - m)\big) - h \sum_i s_i.</math>
+
+The summation over neighboring spins can be rewritten as <math>\sum_{\langle i, j \rangle} = \frac{1}{2} \sum_i \sum_{j \in nn(i)}</math>, where <math>nn(i)</math> means "nearest neighbor of <math>i</math>", and the <math>1/2</math> prefactor avoids double counting, since each bond participates in two spins. Simplifying leads to the final expression
+
+: <math>H^\text{MF} = \frac{J m^2 N z}{2} - \underbrace{(h + m J z)}_{h^\text{eff.}} \sum_i s_i,</math>
+
+where <math>z</math> is the [[coordination number]]. At this point, the Ising Hamiltonian has been ''decoupled'' into a sum of one-body Hamiltonians with an ''effective mean field'' <math>h^\text{eff.} = h + J z m</math>, which is the sum of the external field <math>h</math> and of the ''mean field'' induced by the neighboring spins. It is worth noting that this mean field directly depends on the number of nearest neighbors and thus on the dimension of the system (for instance, for a hypercubic lattice of dimension <math>d</math>, <math>z = 2 d</math>).
+
+Substituting this Hamiltonian into the partition function and solving the effective 1D problem, we obtain
+
+: <math> Z = e^{-\frac{\beta J m^2 Nz}{2}} \left[2 \cosh\left(\frac{h + m J z}{k_\text{B} T}\right)\right]^N,</math>
+
+where <math>N</math> is the number of lattice sites. This is a closed and exact expression for the partition function of the system. We may obtain the free energy of the system and calculate [[critical exponent]]s. In particular, we can obtain the magnetization <math>m</math> as a function of <math>h^\text{eff.}</math>.
+
+We thus have two equations between <math>m</math> and <math>h^\text{eff.}</math>, allowing us to determine <math>m</math> as a function of temperature. This leads to the following observation:
+* For temperatures greater than a certain value <math>T_\text{c}</math>, the only solution is <math>m = 0</math>. The system is paramagnetic.
+* For <math>T < T_\text{c}</math>, there are two non-zero solutions: <math>m = \pm m_0</math>. The system is ferromagnetic.
+
+<math>T_\text{c}</math> is given by the following relation: <math>T_\text{c} = \frac{J z}{k_B}</math>.
+
+This shows that MFT can account for the ferromagnetic phase transition.
+
+===Application to other systems===
+Similarly, MFT can be applied to other types of Hamiltonian as in the following cases:
+* To study the metal–[[superconductor]] transition. In this case, the analog of the magnetization is the superconducting gap <math>\Delta</math>.
+* The molecular field of a [[liquid crystal]] that emerges when the [[Laplacian]] of the director field is non-zero.
+* To determine the optimal [[amino acid]] [[side chain]] packing given a fixed [[tertiary structure|protein backbone]] in [[protein structure prediction]] (see [[Self-consistent mean field (biology)]]).
+* To determine the [[elasticity (physics)|elastic properties]] of a composite material.
+
+==Extension to time-dependent mean fields==
+{{Main|Dynamical mean-field theory}}
+
+In mean-field theory, the mean field appearing in the single-site problem is a scalar or vectorial time-independent quantity. However, this need not always be the case: in a variant of mean-field theory called [[dynamical mean-field theory]] (DMFT), the mean field becomes a time-dependent quantity. For instance, DMFT can be applied to the [[Hubbard model]] to study the metal–Mott-insulator transition.
+
+==See also==
+* [[Dynamical mean-field theory]]
+* [[Mean-field game theory]]
+* [[Generalized epidemic mean-field model]]
+
+==References==
+{{Reflist}}
+
+{{DEFAULTSORT:Mean Field Theory}}
+[[Category:Statistical mechanics]]
+[[Category:Concepts in physics]]

@@ -1,0 +1,75 @@
+{{Multiple issues|
+{{Underlinked|date=September 2020}}
+{{Orphan|date=September 2020}}
+}}
+
+In statistics, [[Expectation–maximization algorithm|EM (expectation maximization)]] algorithm handles latent variables, while [[Mixture model#Gaussian mixture model|GMM]] is the Gaussian mixture model.
+
+== Background ==
+In the picture below, are shown the red blood cell hemoglobin concentration and the red blood cell volume data of two groups of people, the Anemia group and the Control Group (i.e. the group of people without Anemia). As expected, people with Anemia have lower red blood cell volume and lower red blood cell hemoglobin concentration than those without Anemia.
+[[File:Labeled GMM.png|thumb|GMM model with labels]]
+<math>x</math> is a random vector such as <math>x:=\big(\text{red blood cell volume}, \text{red blood cell hemoglobin concentration}\big)</math>, and from medical studies [cite source] it is known that <math>x</math> are normally distributed in each group, i.e. <math>x \sim \mathcal N(\mu, \Sigma)</math>.
+
+<math>z</math> is denoted as the group where <math>x</math> belongs, with <math>z_i = 0</math> when <math>x_i</math> belongs to Anemia Group and <math>z_i=1</math> when <math>x_i</math> belongs to Control Group. Also <math>z \sim \operatorname{Categorical}(k, \phi)</math> where <math>k=2</math>, <math>\phi_j \geq 0,</math> and <math>\sum_{j=1}^k\phi_j=1</math>. See [[Categorical distribution]].
+
+The following procedure can be used to estimate <math>\phi, \mu , \Sigma</math>.
+
+A maximum likelihood estimation can be applied:
+
+: <math>\ell(\phi,\mu,\Sigma)=\sum_{i=1}^m \log (p(x^{(i)};\phi,\mu,\Sigma))
+=\sum_{i=1}^m \log \sum_{z^{(i)}=1}^k p\left(x^{(i)} \mid z^{(i)} ; \mu, \Sigma\right) p(z^{(i)} ; \phi)
+</math>
+
+As the <math>z_i</math> for each <math>x_i</math> are known, the log likelihood function can be simplified as below:
+
+: <math>\ell(\phi, \mu, \Sigma)=\sum_{i=1}^{m} \log p\left(x^{(i)} \mid z^{(i)} ; \mu, \Sigma\right)+\log p\left(z^{(i)} ; \phi\right)</math>
+
+Now the likelihood function can be maximized by making partial derivative over <math>\mu, \Sigma, \phi</math>, obtaining:
+
+: <math>\phi_{j} =\frac{1}{m} \sum_{i=1}^m 1\{z^{(i)}=j\}</math>
+
+: <math>\mu_j =\frac{\sum_{i=1}^m 1\{z^{(i)}=j\} x^{(i)}}{\sum_{i=1}^{m} 1\left\{z^{(i)}=j\right\}}</math>
+
+: <math>\Sigma_j =\frac{\sum_{i=1}^m 1\{z^{(i)}=j\} (x^{(i)}-\mu_j)(x^{(i)}-\mu_j)^T}{\sum_{i=1}^m 1\{z^{(i)}=j\}}</math><ref name="Stanford CS229 Notes">{{cite web |last1=Ng |first1=Andrew |title=CS229 Lecture notes |url=http://cs229.stanford.edu/notes/cs229-notes8.pdf}}</ref>
+
+If <math>z_i</math> is known, the estimation of the parameters results to be quite simple with maximum likelihood estimation. But if <math>z_i</math> is unknown it is much more complicated.<ref name="Machine Learning —Expectation-Maximization Algorithm (EM)">{{cite web |last1=Hui |first1=Jonathan |title=Machine Learning —Expectation-Maximization Algorithm (EM) |url=https://medium.com/@jonathan_hui/machine-learning-expectation-maximization-algorithm-em-2e954cb76959 |website=Medium |language=en |date=13 October 2019}}</ref>
+[[File:Unlabeled GMM.png|thumb|GMM without labels]]
+
+Being <math>z</math> a latent variable (i.e. not observed), with unlabelled scenario, the Expectation Maximization Algorithm is needed to estimate <math>z</math> as well as other parameters. Generally, this problem is set as a GMM since the data in each group is normally distributed.
+<ref name="Multivariate normal distribution">{{cite web |last1=Tong |first1=Y. L. |title=Multivariate normal distribution |url=https://en.wikipedia.org/wiki/Multivariate_normal_distribution |website=Wikipedia |language=en |date=2 July 2020}}</ref>{{Circular reference|date=July 2020}}
+
+In machine learning, the latent variable <math>z</math> is considered as a latent pattern lying under the data, which the observer is not able to see very directly.  <math>x_i</math> is the known data, while <math>\phi, \mu, \Sigma</math> are the parameter of the model. With the EM algorithm, some underlying pattern <math>z</math> in the data <math>x_i</math> can be found, along with the estimation of the parameters. The wide application of this circumstance in machine learning is what makes EM algorithm so important.<ref name="Inference using EM algorithm">{{cite web |last1=Misra |first1=Rishabh |title=Inference using EM algorithm |url=https://towardsdatascience.com/inference-using-em-algorithm-d71cccb647bc |website=Medium |language=en |date=7 June 2020}}</ref>
+
+== EM algorithm in GMM ==
+The EM algorithm consists of two steps: the E-step and the M-step. Firstly, the model parameters and the <math>z^{(i)}</math> can be randomly initialized. In the E-step, the algorithm tries to guess the value of <math>z^{(i)}</math> based on the parameters, while in the M-step, the algorithm updates the value of the model parameters based on the guess of <math>z^{(i)}</math>of the E-step. These two steps are repeated until convergence is reached.
+
+The algorithm in GMM is:
+
+Repeat until convergence:
+
+    1. (E-step) For each <math>i, j</math>, set
+
+    <math>w_{j}^{(i)}:=p\left(z^{(i)}=j | x^{(i)} ; \phi, \mu, \Sigma\right)</math>
+
+    2. (M-step) Update the parameters
+    <math>\phi_{j} :=\frac{1}{m} \sum_{i=1}^{m} w_{j}^{(i)}</math>
+       <math>\mu_{j} :=\frac{\sum_{i=1}^{m} w_{j}^{(i)} x^{(i)}}{\sum_{i=1}^{m} w_{j}^{(i)}}</math>
+       <math>\Sigma_{j} :=\frac{\sum_{i=1}^{m} w_{j}^{(i)}\left(x^{(i)}-\mu_{j}\right)\left(x^{(i)}-\mu_{j}\right)^{T}}{\sum_{i=1}^{m} w_{j}^{(i)}}</math>
+
+<ref name="Stanford CS229 Notes">{{cite web |last1=Ng |first1=Andrew |title=CS229 Lecture notes |url=http://cs229.stanford.edu/notes/cs229-notes8.pdf}}</ref>
+
+With Bayes Rule, the following result is obtained by the E-step:
+
+<math>p\left(z^{(i)}=j | x^{(i)} ; \phi, \mu, \Sigma\right)=\frac{p\left(x^{(i)} | z^{(i)}=j ; \mu, \Sigma\right) p\left(z^{(i)}=j ; \phi\right)}{\sum_{l=1}^{k} p\left(x^{(i)} | z^{(i)}=l ; \mu, \Sigma\right) p\left(z^{(i)}=l ; \phi\right)}</math>
+
+According to GMM setting, these following formulas are obtained:
+<math>p\left(x^{(i)} | z^{(i)}=j ; \mu, \Sigma\right)=\frac{1}{(2 \pi)^{n / 2}\left|\Sigma_{j}\right|^{1 / 2}} \exp \left(-\frac{1}{2}\left(x^{(i)}-\mu_{j}\right)^{T} \Sigma_{j}^{-1}\left(x^{(i)}-\mu_{j}\right)\right)</math>
+<math>p\left(z^{(i)}=j ; \phi\right)=\phi_j</math>
+
+In this way, a switch between the E-step and the M-step is possible, according to the randomly initialized parameters.
+
+== References ==
+{{Reflist}}
+
+[[Category:Machine learning]]
+[[Category:Statistics]]

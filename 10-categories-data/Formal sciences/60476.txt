@@ -1,0 +1,228 @@
+In [[computer science]], '''augmented Backus–Naur form''' ('''ABNF''') is a [[metalanguage]] based on [[Backus–Naur form]] (BNF), but consisting of its own syntax and derivation rules. The motive principle for ABNF is to describe a [[formal system]] of a language to be used as a bidirectional [[communications protocol]]. It is defined by [https://tools.ietf.org/html/std68 ''Internet Standard 68''] ("STD 68", type case sic), which {{as of|2010|12|lc=on}} is {{IETF RFC|5234}}, and it often serves as the definition language for [[IETF]] communication protocols.<ref name="Internet Standards">{{cite web
+|url= http://www.rfc-editor.org/rfcxx00.html
+|title= Official Internet Protocol Standards
+|accessdate= 2010-02-21
+|date= 2010-02-21
+|publisher= RFC Editor
+| archiveurl= https://web.archive.org/web/20100209035909/http://www.rfc-editor.org/rfcxx00.html| archivedate= 9 February 2010 | url-status= live}}
+</ref><ref name="STD 68">
+{{cite web
+|url= ftp://ftp.rfc-editor.org/in-notes/std/std68.txt
+|title= Augmented BNF for Syntax Specifications: ABNF
+|accessdate= 2010-02-21
+|last= Crocker
+|first= D.
+|author2= Overell, P.
+|date=January 2008
+|format= plain text
+|work= 
+|publisher= RFC Editor
+|pages= 16
+}}
+</ref>
+
+{{IETF RFC|5234}} supersedes {{IETF RFC|4234}} (which superseded {{IETF RFC|2234}} and {{IETF RFC|733}}).<ref name="RFC Index">
+{{cite web
+|url= http://www.rfc-editor.org/rfc-index2.html
+|title= RFC Index
+|accessdate= 2010-02-21
+|date= 2010-02-19
+|publisher= RFC Editor
+| archiveurl= https://web.archive.org/web/20100209041834/http://www.rfc-editor.org/rfc-index2.html| archivedate= 9 February 2010 | url-status= live}}
+</ref> RFC 7405 updates it, adding a syntax for specifying case-sensitive string literals.
+
+==Overview==
+
+An ABNF specification is a set of derivation rules, written as
+
+ rule = definition ; comment CR LF
+
+where rule is a [[case sensitivity|case-insensitive]] [[nonterminal]], the definition consists of sequences of symbols that define the rule, a comment for documentation, and ending with a carriage return and line feed.
+
+Rule names are case-insensitive: <code><rulename></code>, <code><Rulename></code>, <code><RULENAME></code>, and <code><rUlENamE></code> all refer to the same rule. Rule names consist of a letter followed by letters, numbers, and hyphens.
+
+Angle brackets (<code><</code>, <code>></code>) are not required around rule names (as they are in BNF). However, they may be used to delimit a rule name when used in prose to discern a rule name.
+
+==Terminal values==
+
+[[Terminal symbol|Terminals]] are specified by one or more numeric characters.
+
+Numeric characters may be specified as the percent sign <code>%</code>, followed by the base (<code>b</code> = binary, <code>d</code> = decimal, and <code>x</code> = hexadecimal), followed by the value, or concatenation of values (indicated by <code>.</code>). For example, a carriage return is specified by <code>%d13</code> in decimal or <code>%x0D</code> in hexadecimal. A carriage return followed by a line feed may be specified with concatenation as <code>%d13.10</code>.
+
+Literal text is specified through the use of a string enclosed in quotation marks (<code>"</code>). These strings are case-insensitive, and the character set used is (US-)ASCII. Therefore, the string <code>"abc"</code> will match “abc”, “Abc”, “aBc”, “abC”, “ABc”, “AbC”, “aBC”, and “ABC”. RFC 7405 added a syntax for case-sensitive strings: <code>%s"aBc"</code> will only match "aBc". Prior to that, a case-sensitive string could only be specified by listing the individual characters: to match “aBc”, the definition would be <code>%d97.66.99</code>. A string can also be explicitly specified as case-insensitive with a <code>%i</code> prefix.
+
+==Operators==
+
+===White space===
+White space is used to separate elements of a definition; for space to be recognized as a delimiter, it must be explicitly included. The explicit reference for a single whitespace character is <code>WSP</code> (linear white space), and <code>LWSP</code> is for zero or more whitespace characters with newlines permitted. The <code>LWSP</code> definition in RFC5234 is controversial<ref name="RFC5234 Errata">[http://www.rfc-editor.org/errata_search.php?rfc=5234&eid=3096 RFC Errata 3096].</ref> because at least one whitespace character is needed to form a delimiter between two fields.
+
+Definitions are left-aligned. When multiple lines are required (for readability), continuation lines are indented by whitespace.
+
+===Comment===
+<code>; comment</code>
+
+A semicolon (<code>;</code>) starts a comment that continues to the end of the line.
+
+===Concatenation===
+<code>Rule1 Rule2</code>
+
+A rule may be defined by listing a sequence of rule names.
+
+To match the string “aba”, the following rules could be used:
+* {{code|1=fu = %x61	; a|2=abnf}}
+* {{code|1=bar = %x62	; b|2=abnf}}
+* {{code|1=mumble = fu bar fu|2=abnf}}
+
+===Alternative===
+<code>Rule1 / Rule2</code>
+
+A rule may be defined by a list of alternative rules separated by a [[Solidus (punctuation)|solidus]] (<code>/</code>).
+
+To accept the rule ''fu'' or the rule ''bar'', the following rule could be constructed:
+* {{code|1=fubar = fu / bar|2=abnf}}
+
+===Incremental alternatives===
+<code>Rule1 =/ Rule2</code>
+
+Additional alternatives may be added to a rule through the use of <code>=/</code> between the rule name and the definition.
+
+The rule
+* {{code|1=ruleset = alt1 / alt2 / alt3 / alt4 / alt5|2=abnf}}
+is equivalent to 
+* {{code|1=ruleset = alt1 / alt2|2=abnf}}
+* {{code|1=ruleset =/ alt3|2=abnf}}
+* {{code|1=ruleset =/ alt4 / alt5|2=abnf}}
+
+===Value range===
+<code>%c##-##</code>
+
+A range of numeric values may be specified through the use of a hyphen (<code>-</code>).
+
+The rule
+* {{code|1=OCTAL = "0" / "1" / "2" / "3" / "4" / "5" / "6" / "7"|2=abnf}}
+is equivalent to
+* {{code|1=OCTAL = %x30-37|2=abnf}}
+
+===Sequence group===
+<code>(Rule1 Rule2)</code>
+
+Elements may be placed in parentheses to group rules in a definition.
+
+To match “elem fubar snafu” or “elem tarfu snafu”, the following rule could be constructed:
+* {{code|1=group = elem (fubar / tarfu) snafu|2=abnf}}
+
+To match “elem fubar” or “tarfu snafu”, the following rules could be constructed:
+* {{code|1=group = elem fubar / tarfu snafu|2=abnf}}
+* {{code|1=group = (elem fubar) / (tarfu snafu)|2=abnf}}
+
+===Variable repetition===
+<code>n*nRule</code>
+
+To indicate repetition of an element, the form <code>&lt;a&gt;*&lt;b&gt;element</code> is used. The optional <code>&lt;a&gt;</code> gives the minimal number of elements to be included (with the default of 0). The optional <code>&lt;b&gt;</code> gives the maximal number of elements to be included (with the default of infinity).
+
+Use <code>*element</code> for zero or more elements, <code>*1element</code> for zero or one element, <code>1*element</code> for one or more elements, and <code>2*3element</code> for two or three elements, cf. [[regular expression]]s <code>e*</code>, <code>e?</code>, <code>e+</code> and <code>e{2,3}</code>.
+
+===Specific repetition===
+<code>nRule</code>
+
+To indicate an explicit number of elements, the form <code>&lt;a&gt;element</code> is used and is equivalent to <code>&lt;a&gt;*&lt;a&gt;element</code>.
+
+Use <code>2DIGIT</code> to get two numeric digits, and <code>3DIGIT</code> to get three numeric digits. (<code>DIGIT</code> is defined below under "[[#Core rules|Core rules]]". Also see ''zip-code'' in the example below.)
+
+===Optional sequence===
+<code>[Rule]</code>
+
+To indicate an optional element, the following constructions are equivalent:
+* {{code|1=[fubar snafu]|2=abnf}}
+* {{code|1=*1(fubar snafu)|2=abnf}}
+* {{code|1=0*1(fubar snafu)|2=abnf}}
+
+===Operator precedence===
+The following operators have the given precedence from tightest binding to loosest binding:
+#Strings, names formation
+#Comment
+#Value range
+#Repetition
+#Grouping, optional
+#Concatenation
+#Alternative
+
+Use of the alternative operator with concatenation may be confusing, and it is recommended that grouping be used to make explicit concatenation groups.
+
+===Core rules===
+The core rules are defined in the ABNF standard.
+{|class="wikitable"
+|- style="background-color: #efefef;"
+!Rule!!Formal definition!!Meaning
+|-
+|ALPHA	||%x41-5A / %x61-7A		||Upper- and lower-case ASCII letters (A–Z, a–z)
+|-
+|DIGIT 	||%x30-39			||Decimal digits (0–9)
+|-
+|HEXDIG	||DIGIT / "A" / "B" / "C" / "D" / "E" / "F"	||Hexadecimal digits (0–9, A–F, a-f)
+|-
+|DQUOTE 	||%x22				||Double quote
+|-
+|SP		||%x20				||Space
+|-
+|HTAB		||%x09				||Horizontal tab
+|-
+|WSP		||SP / HTAB			||Space and horizontal tab
+|-
+|LWSP		||*(WSP / CRLF WSP)	||Linear white space (past newline)
+|-
+|VCHAR	||%x21-7E			||Visible (printing) characters
+|-
+|CHAR	||%x01-7F			||Any ASCII character, excluding NUL
+|-
+|OCTET	||%x00-FF			||8 bits of data
+|-
+|CTL 		||%x00-1F / %x7F		||Controls
+|-
+|CR		||%x0D				||Carriage return
+|-
+|LF		||%x0A				||Linefeed
+|-
+|CRLF		||CR LF			||Internet-standard newline
+|-
+|BIT		||"0" / "1"			||Binary digit
+|-
+|}
+
+==Example==
+The postal address example given in the augmented Backus–Naur form (ABNF) page may be specified as follows:
+<syntaxhighlight lang=abnf>
+postal-address   = name-part street zip-part
+
+name-part        = *(personal-part SP) last-name [SP suffix] CRLF
+name-part        =/ personal-part CRLF
+
+personal-part    = first-name / (initial ".")
+first-name       = *ALPHA
+initial          = ALPHA
+last-name        = *ALPHA
+suffix           = ("Jr." / "Sr." / 1*("I" / "V" / "X"))
+
+street           = [apt SP] house-num SP street-name CRLF
+apt              = 1*4DIGIT
+house-num        = 1*8(DIGIT / ALPHA)
+street-name      = 1*VCHAR
+
+zip-part         = town-name "," SP state 1*2SP zip-code CRLF
+town-name        = 1*(ALPHA / SP)
+state            = 2ALPHA
+zip-code         = 5DIGIT ["-" 4DIGIT]
+</syntaxhighlight>
+
+==Pitfalls==
+
+[http://www.ietf.org/rfc/rfc5234.txt RFC 5234] adds a warning in conjunction to the definition of LWSP as follows: 
+{{quote|Use of this linear-white-space rule permits lines containing only white space that are no longer legal in mail headers and have caused interoperability problems in other contexts. Do not use when defining mail headers and use with caution in other contexts.}}
+
+==References==
+{{reflist}}
+
+{{metasyntax}}
+{{DEFAULTSORT:Augmented Backus-Naur Form}}
+[[Category:Formal languages]]
+[[Category:Metalanguages]]

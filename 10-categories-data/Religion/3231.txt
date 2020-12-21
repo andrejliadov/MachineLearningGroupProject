@@ -1,0 +1,69 @@
+The '''Absolute Infinite''' (''symbol'': Ω) is an extension of the idea of [[infinity]] proposed by [[mathematician]] [[Georg Cantor]].
+
+It can be thought of as a number which is bigger than any conceivable or inconceivable quantity, either finite or [[transfinite number|transfinite]].
+
+Cantor linked the Absolute Infinite with [[God]],<ref>§3.2, {{cite journal
+ | author=Ignacio Jané
+ | title=The role of the absolute infinite in Cantor's conception of set
+ | journal=Erkenntnis
+ | volume=42 | issue=3 |date=May 1995 | pages=375–402 | doi=10.1007/BF01129011 | quote=Cantor (1) took the absolute to be a manifestation of God [...] When the absolute is first introduced in Grundlagen, it is linked to God: "the true infinite or absolute, which is in God, admits no kind of determination" (Cantor 1883b, p. 175) This is not an incidental remark, for Cantor is very explicit and insistent about the relation between the absolute and God.}}</ref> and believed that it had various [[mathematical]] properties, including the [[reflection principle]]: every property of the Absolute Infinite is also held by some smaller object.<ref>''Infinity: New Research and Frontiers'' by Michael Heller and W. Hugh Woodin (2011), [https://books.google.com/books?id=PVNbIGS37wMC&lpg=PP1&pg=PA11#v=onepage&q&f=false p. 11].</ref>
+
+== Cantor's view ==
+Cantor said:
+
+{{quote|The actual infinite was distinguished by three relations: first, as it is realized in the supreme perfection, in the completely independent, extraworldly existence, in Deo, where I call it absolute infinite or simply absolute; second to the extent that it is represented in the dependent, creatural world; third as it can be conceived in abstracto in thought as a mathematical magnitude, number or ordertype. In the latter two relations, where it obviously reveals itself as limited and capable for further proliferation and hence familiar to the finite, I call it ''[[Transfinite number|Transfinitum]]'' and strongly contrast it with the absolute.<ref>https://www.uni-siegen.de/fb6/phima/lehre/phima10/quellentexte/handout-phima-teil4b.pdf<br/>Translated quote from German: {{quote|Es wurde das Aktual-Unendliche (A-U.) nach drei Beziehungen unterschieden: erstens, sofern es in der höchsten Vollkommenheit, im völlig unabhängigen außerweltlichen Sein, in Deo realisiert ist, wo ich es Absolut Unendliches oder kurzweg Absolutes nenne; zweitens, sofern es in der abhängigen, kreatürlichen Welt vertreten ist; drittens, sofern es als mathematische Größe, Zahl oder Ordnungstypus vom Denken in abstracto aufgefaßt werden kann. In den beiden letzten Beziehungen, wo es offenbar als beschränktes, noch weiterer Vermehrung fähiges und insofern dem Endlichen verwandtes A.-U. sich darstellt, nenne ich es ''Transfinitum'' und setze es dem Absoluten strengstens entgegen.}}[Ca-a, p. 378].</ref>}}
+
+Cantor also mentioned the idea in his letters to [[Richard Dedekind]] (text in square brackets not present in original):{{refn|''Gesammelte Abhandlungen'',<ref>''Gesammelte Abhandlungen mathematischen und philosophischen Inhalts'', Georg Cantor, ed. Ernst Zermelo, with biography by Adolf Fraenkel; orig. pub. Berlin: Verlag von Julius Springer, 1932; reprinted Hildesheim: Georg Olms, 1962, and Berlin: Springer-Verlag, 1980, {{ISBN|3-540-09849-6}}.</ref> Georg Cantor, ed. Ernst Zermelo, Hildesheim: Georg Olms Verlagsbuchhandlung, 1962, pp. 443–447; translated into English in ''From Frege to Gödel: A Source Book in Mathematical Logic, 1879-1931'', ed. Jean van Heijenoort, Cambridge, Massachusetts: Harvard University Press, 1967, pp. 113–117.  These references both purport to be a letter from Cantor to Dedekind, dated July 28, 1899.  However, as [[Ivor Grattan-Guinness]] has discovered,<ref>[https://eudml.org/doc/146637 The Rediscovery of the Cantor-Dedekind Correspondence], I. Grattan-Guinness, ''Jahresbericht der Deutschen Mathematiker-Vereinigung'' '''76''' (1974/75), pp. 104–139, at p. 126 ff.</ref> this is in fact an amalgamation by Cantor's editor, [[Ernst Zermelo]], of two letters from Cantor to Dedekind, the first dated July 28 and the second dated August 3.|name=GesammelteAbhandlungen}}
+
+{{quotation|
+A [[cardinal number|multiplicity]] is called [[well-ordered]] if it fulfills the condition that every sub-multiplicity has a first [[element (mathematics)|element]]; such a multiplicity I call for short a "sequence".<br />
+<br />
+...<br />
+<br />
+Now I envisage the system of all [ordinal] numbers and denote it ''Ω''.<br />
+<br />
+...<br />
+<br />
+The system ''Ω'' in its natural ordering according to magnitude is a "sequence".<br />
+Now let us adjoin 0 as an additional element to this sequence, and place it, obviously, in the first position; then we obtain a sequence ''Ω′'':<br />
+<br />
+0, 1, 2, 3, ... &omega;<sub>0</sub>, &omega;<sub>0</sub>+1, ..., &gamma;, ...
+<br />
+of which one can readily convince oneself that every number γ occurring in it is the type [i.e., order-type] of the sequence of all its preceding elements (including 0).  (The sequence ''Ω'' has this property first for ω<sub>0</sub>+1. [ω<sub>0</sub>+1 should be ω<sub>0</sub>.])<br />
+<br />
+Now ''Ω&prime;'' (and therefore also ''Ω'') cannot be a consistent multiplicity. For if ''Ω&prime;'' were consistent, then as a well-ordered set, a number ''δ'' would correspond to it which would be greater than all numbers of the system ''Ω''; the number ''δ'', however, also belongs to the system ''Ω'', because it comprises all numbers. Thus ''δ'' would be greater than ''δ'', which is a contradiction. Therefore:<br />
+<br />
+''The system Ω of all [ordinal] numbers is an inconsistent, absolutely infinite multiplicity.''}}
+
+== The Burali-Forti paradox ==
+{{main|Burali-Forti paradox}}
+The idea that the collection of all ordinal numbers cannot logically exist seems [[paradoxical]] to many. This is related to [[Burali-Forti paradox|Cesare Burali-Forti's "paradox"]] which states that there can be no greatest [[ordinal number]]. All of these problems can be traced back to the idea that, for every property that can be logically defined, there exists a set of all objects that have that property. However, as in Cantor's argument (above), this idea leads to difficulties.
+
+More generally, as noted by [[A. W. Moore (philosopher)|A. W. Moore]], there can be no end to the process of [[set (mathematics)|set]] formation, and thus no such thing as the ''totality of all sets'', or the ''set hierarchy''.  Any such totality would itself have to be a set, thus lying somewhere within the [[cumulative hierarchy|hierarchy]] and thus failing to contain every set.
+
+A standard solution to this problem is found in [[Zermelo set theory|Zermelo's set theory]], which does not allow the unrestricted formation of sets from arbitrary properties. Rather, we may form the set of all objects that have a given property ''and lie in some given set'' (Zermelo's [[Axiom schema of specification|Axiom of Separation]]). This allows for the formation of sets based on properties, in a limited sense, while (hopefully) preserving the consistency of the theory.
+
+While this solves the logical problem, one could argue that the philosophical problem remains. It seems natural that a set of individuals ought to exist, so long as the individuals exist. Indeed, [[naive set theory]] might be said to be based on this notion. Although Zermelo's fix allows a [[Class (set theory)|class]] to describe arbitrary (possibly "large") entities, these predicates of the [[meta-language]] may have no formal existence (i.e., as a set) within the theory. For example, the class of all sets would be a [[proper class]]. This is philosophically unsatisfying to some and has motivated additional work in [[set theory]] and other methods of formalizing the foundations of mathematics such as [[New Foundations#How NF.28U.29 avoids the set-theoretic paradoxes|New Foundations]] by [[Willard Van Orman Quine]].
+
+== See also ==
+* [[Actual infinity]]
+* [[Limitation of size]]
+* [[Monadology]]
+* [[Reflection principle]]
+* [[The Ultimate (philosophy)]]
+
+== Notes ==
+{{Reflist}}
+
+== Bibliography ==
+* [https://doi.org/10.1007%2FBF01129011 ''The role of the absolute infinite in Cantor's conception of set'']
+* ''Infinity and the Mind'', [[Rudy Rucker]], Princeton, New Jersey: Princeton University Press, 1995, {{ISBN|0-691-00172-3}}; orig. pub. Boston: Birkhäuser, 1982, {{ISBN|3-7643-3034-1}}.
+* ''The Infinite'', A. W. Moore, London, New York: Routledge, 1990, {{ISBN|0-415-03307-1}}.
+* [https://www.jstor.org/stable/3327397 Set Theory, Skolem's Paradox and the ''Tractatus''], A. W. Moore, ''Analysis'' '''45''', #1 (January 1985), pp.&nbsp;13–20.
+
+{{Infinity}}
+
+[[Category:Philosophy of mathematics]]
+[[Category:Infinity]]
+[[Category:Superlatives in religion]]
+[[Category:Conceptions of God]]

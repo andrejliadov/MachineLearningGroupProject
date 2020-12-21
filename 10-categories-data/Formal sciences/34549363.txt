@@ -1,0 +1,361 @@
+{{Use dmy dates|date=April 2020}}
+{{Use Oxford spelling|date=April 2020}}
+'''Critical code studies''' ('''CCS''') is an emerging academic subfield, related to [[software studies]],{{sfn|Manovich|2013|p=42}} [[digital humanities]],{{sfn|Eyman|2015|p=58}} [[cultural studies]], [[computer science]], [[human–computer interface]], and the [[do-it-yourself]] [[maker culture]]. Its primary focus is on the cultural significance of [[computer code]], without excluding or focusing solely upon the code's functional purpose. According to Mark C. Marino, it {{quote|is an approach that applies critical hermeneutics to the interpretation of computer code, program architecture, and documentation within a socio-historical context. CCS holds that lines of code are not value-neutral and can be analyzed using the theoretical approaches applied to other semiotic systems in addition to particular interpretive methods developed particularly for the discussions of programs.{{sfn|Marino|2006}}}}
+
+As introduced by Marino, critical code studies was initially a method by which scholars "can read and explicate code the way we might explicate a work of literature",{{sfn|Marino|2006}} but the concept also draws upon{{citation needed|date=April 2020}} [[Espen Aarseth]]'s conception of a cybertext as a "mechanical device for the production and consumption of verbal signs",{{sfn|Aarseth|1997|p=21}} arguing that in order to understand a digital artifact we must also understand the constraints and capabilities of the authoring tools used by the creator of the artifact, as well as the memory storage and interface required for the user to experience the digital artifact.
+
+Evidence that critical code studies has gained momentum since 2006 include{{original research inline|date=April 2020}} an article by Matthew Kirschenbaum in ''[[The Chronicle of Higher Education]]'',<ref>{{cite news |last=Kirschenbaum |first=Matthew |date=23 January 2009 |title=Where Computer Science and Cultural Studies Collide |url=http://chronicle.com/article/Where-Computer-Science/14806/ |url-access=subscription |work=The Chronicle of Higher Education |access-date=6 April 2020}}</ref> CCS sessions at the [[Modern Language Association]] in 2011 that were "packed" with attendees,<ref>{{cite news |last=Howard |first=Jennifer |date=9 January 2011 |title=Hard Times Sharpen the MLA's Lens on Labor and the Humanities |url=http://chronicle.com/article/Hard-Times-Sharpen-the-MLAs/125905/ |work=The Chronicle of Higher Education |access-date=6 April 2020}}</ref> several academic conferences devoted wholly to critical code studies, and a book devoted to the explication of a single line of computer code, titled ''10 PRINT CHR$(205.5+RND(1));&nbsp;: GOTO 10''.{{sfn|Montfort|Baudoin|Bell|Bogost|2013}}
+
+== See also ==
+{{Portal|Society|Technology}}
+* [[Critical legal studies]]
+* [[Critical theory]]
+* [[Hermeneutics]]
+
+== References ==
+=== Footnotes ===
+{{reflist|22em}}
+
+=== Bibliography ===
+{{refbegin|35em|indent=yes}}
+: {{cite book
+|last=Aarseth
+|first=Espen
+|author-link=Espen Aarseth
+|year=1997
+|title=Cybertext: Perspectives on Ergodic Literature
+|location=Baltimore, Maryland
+|publisher=Johns Hopkins University Press
+|isbn=978-0-8018-5579-5
+|ref=harv
+}}
+: {{cite book
+|last=Eyman
+|first=Douglas
+|year=2015
+|title=Digital Rhetoric: Theory, Method, Practice
+|location=Ann Arbor, Michigan
+|publisher=University of Michigan Press
+|doi=10.2307/j.ctv65swm2
+|doi-access=free
+|isbn=978-0-472-90011-4
+|ref=harv
+}}
+: {{cite book
+|last=Manovich
+|first=Lev
+|author-link=Lev Manovich
+|year=2013
+|title=Software Takes Command
+|url=https://issuu.com/bloomsburypublishing/docs/9781623566722_web
+|location=New York
+|publisher=Bloomsbury Academic
+|isbn=978-1-62356-672-2
+|access-date=6 April 2020
+|ref=harv
+}}
+: {{cite journal
+|last=Marino
+|first=Mark C.
+|year=2006
+|title=Critical Code Studies
+|url=https://electronicbookreview.com/essay/critical-code-studies/
+|journal=Electronic Book Review
+|issn=1553-1139
+|access-date=6 April 2020
+|ref=harv
+}}
+: {{cite book
+|last1=Montfort
+|first1=Nick
+|author1-link=Nick Montfort
+|last2=Baudoin
+|first2=Patsy
+|last3=Bell
+|first3=John
+|last4=Bogost
+|first4=Ian
+|author4-link=Ian Bogost
+|last5=Douglass
+|first5=Jeremy
+|last6=Marino
+|first6=Mark C.
+|last7=Mateas
+|first7=Michael
+|last8=Reas
+|first8=Casey
+|author8-link=Casey Reas
+|last9=Sample
+|first9=Mark
+|last10=Vawter
+|first10=Noah
+|year=2013
+|title=10 PRINT CHR$(205.5+RND(1));&nbsp;: GOTO 10
+|url=https://mitpress.mit.edu/books/10-print-chr2055rnd1-goto-10
+|location=Cambridge, Massachusetts
+|publisher=MIT Press
+|isbn=978-0-262-01846-3
+|access-date=30 November 2018
+|ref=harv
+}}
+{{refend}}
+
+== Further reading ==
+{{refbegin|35em|indent=yes}}
+: {{cite book
+|last=Berry
+|first=David M.
+|year=2008
+|title=Copy, Rip, Burn: The Politics of Copyleft and Open Source
+|url=https://archive.org/details/copyripburnpolit0000berr
+|url-access=registration
+|location=London
+|publisher=Pluto Press
+|doi=10.2307/j.ctt183q67g
+|isbn=978-1-84964-455-6
+}}
+: {{cite book
+|last=Berry
+|first=David M.
+|author-mask={{long dash}}
+|year=2011
+|title=The Philosophy of Software: Code and Mediation in the Digital Age
+|location=Basingstoke, England
+|publisher=Palgrave Macmillan
+|doi=10.1057/9780230306479
+|isbn=978-0-230-24418-4
+}}
+: {{cite thesis
+|last=Black
+|first=Maurice J.
+|year=2002
+|title=The Art of Code
+|type=PhD dissertation
+|location=Philadelphia
+|publisher=University of Pennsylvania
+|oclc=244972113
+|id={{ProQuest|305507258}}
+}}
+: {{cite book
+|last1=Chopra
+|first1=Samir
+|last2=Dexter
+|first2=Scott D.
+|year=2008
+|title=Decoding Liberation: The Promise of Free and Open Source Software
+|location=New York
+|publisher=Routledge
+|doi=10.4324/9780203942147
+|isbn=978-0-203-94214-7
+}}
+: {{cite journal
+|last=Chun
+|first=Wendy Hui Kyong
+|author-link=Wendy Hui Kyong Chun
+|year=2008
+|title=On 'Sourcery,' or Code as Fetish
+|url=https://repository.library.brown.edu/studio/item/bdr:405433/
+|journal=Configurations
+|volume=16
+|issue=3
+|pages=299–324
+|doi=10.1353/con.0.0064
+|issn=1080-6520
+|access-date=5 April 2020
+}}
+: {{cite book
+|last=Chun
+|first=Wendy Hui Kyong
+|author-link=Wendy Hui Kyong Chun
+|author-mask={{long dash}}
+|year=2011
+|title=Programmed Visions: Software and Memory
+|location=Cambridge, Massachusetts
+|publisher=MIT Press
+|isbn=978-0-262-01542-4
+}}
+: {{cite book
+|last=Fuller
+|first=Matthew
+|author-link=Matthew Fuller (author)
+|year=2003
+|title=Behind the Blip: Essays on the Culture of Software
+|location=New York
+|publisher=Autonomedia
+|isbn=978-1-57027-139-7
+}}
+: {{cite book
+|year=2008
+|editor-last=Fuller
+|editor-first=Matthew
+|editor-link=Matthew Fuller (author)
+|editor-mask={{long dash}}
+|title=Software Studies: A Lexicon
+|location=Cambridge, Massachusetts
+|publisher=MIT Press
+|isbn=978-0-262-06274-9
+}}
+: {{cite journal
+|last=Hayles
+|first=N. Katherine
+|s2cid=16194046
+|author-link=N. Katherine Hayles
+|year=2004
+|title=Print Is Flat, Code Is Deep: The Importance of Media-Specific Analysis
+|url=http://www.cws.illinois.edu/IPRHDigitalLiteracies/Hayles.pdf
+|journal=Poetics Today
+|volume=25
+|issue=1
+|pages=67–90
+|doi=10.1215/03335372-25-1-67
+|issn=1527-5507
+|access-date=5 April 2020
+}}
+: {{cite book
+|last=Heim
+|first=Michael
+|author-link=Michael R. Heim
+|year=1987
+|title=Electric Language: A Philosophical Study of Word Processing
+|url=https://archive.org/details/electriclanguage00heim
+|url-access=registration
+|location=New Haven, Connecticut
+|publisher=Yale University Press
+|isbn=978-0-300-03835-4
+}}
+: {{cite journal
+|last=Kirschenbaum
+|first=Matthew G.
+|year=2004
+|title=Extreme Inscription: Towards a Grammatology of the Hard Drive
+|url=http://observatory.constantvzw.org/books/vol13_2_06.pdf
+|journal=TEXT Technology
+|issue=2
+|pages=91–125
+|issn=1053-900X
+|access-date=5 April 2020
+}}
+: {{cite book
+|last=Kirschenbaum
+|first=Matthew G.
+|author-mask={{long dash}}
+|year=2008
+|title=Mechanisms: New Media and the Forensic Imagination
+|location=Cambridge, Massachusetts
+|publisher=MIT Press
+|isbn=978-0-262-11311-3
+}}
+: {{cite book
+|last1=Kitchin
+|first1=Rob
+|author1-link=Rob Kitchin
+|last2=Dodge
+|first2=Martin
+|year=2011
+|title=Code/Space: Software and Everyday Life
+|location=Cambridge, Massachusetts
+|publisher=MIT Press
+|isbn=978-0-262-04248-2
+}}
+: {{cite book
+|last=Kittler
+|first=Friedrich A.
+|author-link=Friedrich Kittler
+|year=1997
+|editor-last=Johnston
+|editor-first=John
+|title=Literature, Media, Information Systems: Essays
+|location=Amsterdam
+|publisher=Overseas Publishers Association
+|isbn=978-90-5701-071-2
+}}
+: {{cite book
+|last=Kittler
+|first=Friedrich A.
+|author-link=Friedrich Kittler
+|author-mask={{long dash}}
+|year=1999
+|title=Gramophone, Film, Typewriter
+|translator1-last=Winthrop-Young
+|translator1-first=Geoffrey
+|translator2-last=Wutz
+|translator2-first=Michael
+|location=Stanford, California
+|publisher=Stanford University Press
+|isbn=978-0-8047-3232-1
+}}
+: {{cite web
+|last=Mackenzie
+|first=Adrian
+|year=2003
+|title=The Problem of Computer Code: Leviathan or Common Power
+|url=https://www.lancaster.ac.uk/staff/mackenza/papers/code-leviathan.pdf
+|location=Lancaster, England
+|publisher=Lancaster University
+|access-date=6 April 2020
+}}
+: {{cite book
+|last=Mackenzie
+|first=Adrian
+|author-mask={{long dash}}
+|year=2006
+|title=Cutting Code: Software and Sociality
+|journal=Internet Research Annual
+|series=Digital Formations
+|volume=30
+|location=Oxford
+|publisher=Peter Lang
+|isbn=978-0-8204-7823-4
+|issn=1526-3169
+}}
+: {{cite book
+|last=Manovich
+|first=Lev
+|author-link=Lev Manovich
+|year=2001
+|title=The Language of New Media
+|location=Cambridge, Massachusetts
+|publisher=MIT Press
+|isbn=978-0-262-13374-6
+}}
+: {{cite web
+|last1=Manovich
+|first1=Lev
+|author1-link=Lev Manovich
+|last2=Douglass
+|first2=Jeremy
+|year=2009
+|title=Visualizing Temporal Patterns in Visual Media
+|url=http://softwarestudies.com/cultural_analytics/visualizing_temporal_patterns.pdf
+|access-date=10 October 2009
+}}
+: {{cite book
+|last1=Montfort
+|first1=Nick
+|author1-link=Nick Montfort
+|last2=Bogost
+|first2=Ian
+|author2-link=Ian Bogost
+|year=2009
+|title=Racing the Beam: The Atari Video Computer System
+|title-link=Racing the Beam
+|location=Cambridge, Massachusetts
+|publisher=MIT Press
+|isbn=978-0-262-01257-7
+}}
+: {{cite book
+|last=Wardrip-Fruin
+|first=Noah
+|author-link=Noah Wardrip-Fruin
+|year=2009
+|title=Expressive Processing: Digital Fictions, Computer Games, and Software Studies
+|title-link=Expressive Processing
+|location=Cambridge, Massachusetts
+|publisher=MIT Press
+|isbn=978-0-262-01343-7
+}}
+{{refend}}
+
+[[Category:Computer science]]
+[[Category:Cultural studies]]
+[[Category:Technology in society]]

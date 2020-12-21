@@ -1,0 +1,41 @@
+{{About|formal decision models|other uses|Appraisal (disambiguation)}}
+{{Multiple issues|
+{{refimprove|date=March 2013}}
+{{no footnotes|date=March 2013}}
+{{context|date=October 2010}}
+}}
+
+A '''[[Decision making|decision]] method''' is a formal ([[axiom]]atic) system, starting with a '''decision model''', that contains at least one [[action axiom]]. An action is of the form "IF <this> is true, THEN do <that>". An action axiom tests a condition (antecedent) and, if the condition has been met, then (consequent) it suggests (mandates) an action: from knowledge to action. A decision model may also be a network of connected decisions, information and knowledge that represents a decision-making approach that can be used repeatedly (such as one developed using the [[Decision Model and Notation]] standard).
+
+Excepting very simple situations, successful action axioms are used in an iterative manner. For example, for decision analysis, the sole action axiom occurs in the Evaluation stage of a four-step cycle: Formulate, Evaluate, Interpret/Appraise, Refine.
+
+Decision models are used to model a decision being made once as well as to model a repeatable decision-making approach that will be used over and over again.
+
+==Formulation==
+[[Formulation]] is the first and often most challenging stage in using formal decision methods (and in [[decision analysis]] in particular). The objective of the formulation stage is to develop a formal model of the given decision. This may be represented as a network of decision-making elements, as a [[decision tree]] or in other ways depending on the specific situation. The formulation may be conceptual or may include all the necessary decision logic ([[business rules]]) required to define the decision-making.
+
+==Evaluation==
+[[Evaluation]] is the second and most [[algorithm]]ic stage in using formal decision methods. For a decision being made once, the objective of the evaluation stage is to produce a formal recommendation (and its associated sensitivities) from a formal model of the decision situation. For a repeatable decision evaluation occurs each time the decision is made by applying the decision model that has been developed.
+
+==Appraisal==
+Appraisal is the third and most insightful stage in using formal decision methods. The objective of the appraisal stage is for the decision maker to develop insight into the decision and determine a clear course of action. Much of the insight developed in this stage results from exploring the implications of the formal decision model developed during the formulation stage (i.e., from mining the model). Central to these implications is the formal recommendation for action calculated during the evaluation stage. Other implications include various forms of [[Sensitivity analysis|Sensitivity]] of the recommendation to various components of the decision model. Insight may also result from discussion of the key aspects of the reasoning that led to the formal decision model (i.e., by justifying the model). Possible actions following the appraisal stage include implementing the recommended course of action, revising the formal model and reevaluating it, or abandoning the analysis and doing something else.
+
+Justifying a decision model entails exploring and explaining the reasoning that led to the formulation of particular aspects of the decision model.
+
+Mining a decision model entails extracting information (e.g., sensitivity, [[value of prediction]], and [[value of revelation]]) from a given decision model.
+
+==Refinement==
+Refinement is the fourth and most critical stage in using formal decision methods. The refinement stage responds to the insights obtained during the Appraisal stage. Effective refinement activities include opportunities to test possible decision model changes to see their implications and suggest better ways to modify the decision model.
+
+==See also==
+* [[Decision engineering]]
+* [[Decision-making models]]
+* [[Decision Model and Notation]]
+* [[Decision support]]
+* [[Decision theory]]
+* [[Enterprise decision management]]
+
+==References==
+*Holtzman, S. 1989. Intelligent Decision Systems. Addison-Wesley.
+
+[[Category:Decision theory]]

@@ -1,0 +1,49 @@
+{{Infobox toy
+|name       = 20Q
+| image      = 20Q red (Radica) front.jpg
+| caption = A red 20Q by Radica
+|othernames =
+|type       = [[Electronic game]]<br />[[Online game]]<br />[[App Store (iOS)|iOS iPad App]]<br />customized knowledgebases
+|inventor   = Robin Burgener [https://www.theglobeandmail.com/technology/science/is-it-animal-vegetable-or-artificial-intelligence/article18161750/]
+|country    = United States
+|company    = [[Radica]] (2003 - 2011)<br />[[Techno Source]] (2011-2015)<br />[[Uncle Milton Industries]] (2015–2017)<br />Irwin Toys (2017-present)
+|from       = 1988
+|to         = present
+|materials  = [[AI|Artificial Intelligence]]
+|slogan     =
+|website    = http://www.20q.net
+}}
+
+'''20Q''' is a computerized game of [[twenty questions]] that began as a test in [[artificial intelligence]] (AI).  It was invented by Robin Burgener in 1988.<ref name=goddard>{{cite web|last1=Burgener |first1=Robin |title=Engineering Colloqium: 20Q The Neural Network Mind Reader |url=http://ecolloq.gsfc.nasa.gov/archive/2006-Spring/announce.burgener.html |publisher=Goddard Space Flight Center |url-status=live |archiveurl=https://web.archive.org/web/20130216091945/http://ecolloq.gsfc.nasa.gov/archive/2006-Spring/announce.burgener.html |archivedate=2013-02-16 }}</ref> The game was made handheld by [[Radica]] in 2003, but was discontinued in 2011 because [[Techno Source]] took the license for 20Q handheld devices.{{Citation needed|date=July 2016}}
+
+The game 20Q is based on the [[Twenty Questions|spoken parlor game]] known as twenty questions, and is both a website<ref>{{Cite web |url=http://www.20q.net/ |title=Official 20Q Website |access-date=2005-02-27 |archive-url=https://web.archive.org/web/20051130020334/http://20q.net/ |archive-date=2005-11-30 |url-status=dead }}</ref> and a handheld device. 20Q asks the player to think of something and will then try to guess what they are thinking of with twenty yes-or-no questions. If it fails to guess in 20 questions, it will ask an additional 5 questions. If it fails to guess even with 25 (or 30) questions, the player is declared the winner. Sometimes the first guess of the object can be asked at question 14.
+
+==Principle and history==
+The principle is that the player thinks of something and the 20Q artificial intelligence asks a series of  questions before guessing what the player is thinking. This artificial intelligence learns on its own with the information relayed back to the players who interact with it, and is not programmed. The player can answer these questions with: ''Yes'', ''No'', ''Unknown'', and ''Sometimes.'' The experiment is based on the classic word game of Twenty Questions, and on the computer game "Animals," popular in the early 1970s, which used a somewhat simpler method to guess an animal.<ref>with information from: LiCalzi O'Connell, Pamela. "Vegetables And Minerals On The Radar" The New York Times. March 27, 2003; Burgener, Robin, computer architect, inventor.</ref>
+
+The 20Q AI uses an [[artificial neural network]] to pick the questions and to guess.<ref name=goddard/><ref>[http://stage.20q.net/flat/rbqanda.html Official 20Q Q&A]</ref> After the player has answered the twenty questions posed (sometimes fewer), 20Q makes a guess. If it is incorrect, it asks more questions, then guesses again. It makes guesses based on what it has learned; it is not programmed with information or what the inventor thinks. Answers to any question are based on players’ interpretations of the questions asked. Newer editions were made for different categories, such as music 20Q which has the player think of a song, and Harry Potter 20Q, which has the player think of something from the world of the [[Harry Potter]] series.
+
+The 20Q AI can draw its own conclusions on how to interpret the information. It can be described as more of a [[folk taxonomy]] than a [[Taxonomy (general)|taxonomy]]. Its knowledge develops with every game played. In this regard, the online version of the 20Q AI can be inaccurate because it gathers its answers from what people ''think'' rather than from what people ''know''. Limitations of taxonomy are often overcome by the AI itself because it can learn and adapt. For example, if the player was thinking of a "Horse" and answered "No" to the question "Is it an animal?," the AI will, nevertheless, guess correctly, despite being told that a horse is not an animal.
+
+Patent applications in the US and Europe were submitted in 2005.<ref>{{Cite patent|US|102,105|application}} [http://www.google.com/patents?id=W5iZAAAAEBAJ&dq=Artificial+neural+network+guessing+method+and+game] and {{Cite patent|EP|1710735}}</ref>
+
+In August 2014, 20Q.net Inc., with Brashworks Studios, developed and released an iOS iPad version available at the Apple [[iTunes]] store.
+
+==Handheld device==
+The built Artificial Neural Network is not resource intensive either to store or to compute, thus it could be embedded in small, less powerful devices. Currently, there is a [[handheld console|handheld]] version of the AI. The device contains a small portion of the original 20Q website knowledge base; unlike the online versions of the game, the handheld version does not have the ability to learn.
+
+The 20Q artificial intelligence is different from less flexible, and extremely large, expert systems. Its modularity, adaptability, and scalability means that it can be applied to other, more complex devices, for more complex uses.
+
+==Game show==
+{{main|20Q (game show)}}
+On June 13, 2009, [[Game Show Network|GSN]] began a TV version of the game, hosted by [[Cat Deeley]], with [[Hal Sparks]] as the voice of the computer.
+
+==References==
+<references/>
+
+==External links==
+*[https://web.archive.org/web/20051130020334/http://20q.net/ Official 20Q Website]
+
+[[Category:Artificial intelligence]]
+[[Category:Guessing games]]
+[[Category:Computer-related introductions in 1988]]

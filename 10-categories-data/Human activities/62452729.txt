@@ -1,0 +1,194 @@
+'''3D food printing''' is the process of manufacturing food products using a variety of additive manufacturing techniques. Most commonly, food grade syringes hold the printing material, which is then deposited through a food grade nozzle layer by layer. The most advanced 3D food printers have pre-loaded recipes on board and also allow the user to remotely design their food on their computers, phones or some [[Internet of things|IoT]] device. The food can be customized in shape, color, texture, flavor or nutrition, which makes it very useful in various fields such as space exploration and healthcare.<ref name=":9" />
+
+== History ==
+[[File:Fab@Home Model 1 (2006).jpg|thumb|Fab@Home |227x227px]]
+[[File:Maker Faire 2008 San Mateo 206.JPG|thumb|225x225px|CandyFab]]
+{| class="wikitable"
+|+
+!Year
+!Company/Group Name
+!Description
+|-
+|'''2006'''
+|Cornell University
+|[[Fab@Home]], a project led by a group of students, was the first multi-material 3D printer to print food materials such as chocolate, cookie dough and cheese.<ref>{{Citation|title=Fab@Home|date=2019-11-24|url=https://en.wikipedia.org/w/index.php?title=Fab@Home&oldid=927708192|work=Wikipedia|language=en|access-date=2020-01-10}}</ref>
+|-
+|'''2006-2009'''
+|Evil Mad Scientist Laboratories
+|CandyFab was able to print large sugar sculptures by using hot air to selectively melt and fuse sugar grains together.<ref name=":0" />
+|-
+|'''2012'''
+|Choc Edge
+|pp.<ref>{{Cite web|url=https://3dprint.com/85806/choc-creator-2-0-plus/|title=Chocolate Lovers Rejoice: Choc Edge Unveils the Choc Creator 2.0 Plus 3D Printer|date=2015-07-30|website=3DPrint.com {{!}} The Voice of 3D Printing / Additive Manufacturing|language=en-US|access-date=2020-01-10}}</ref>
+|-
+|'''2012-2015'''
+|biozoon GmbH
+|PERFORMANCE was a project focused on printing easy to chew and easy to swallow food for seniors.<ref>{{Cite web|url=https://www.rtds-group.com/portfolio-item/performance/|title=PERFORMANCE – RTDS Group|language=en-GB|access-date=2020-01-10}}</ref>
+|-
+|'''2013'''
+|Modern Meadow
+|In vitro meat was printed for the first time using a bioprinter.<ref>{{Citation|title=Cultured meat|date=2020-01-02|url=https://en.wikipedia.org/w/index.php?title=Cultured_meat&oldid=933682916|work=Wikipedia|language=en|access-date=2020-01-10}}</ref>
+|-
+|'''2014'''
+|3D Systems & Hershey's
+|A chocolate printer that prints various shapes, sizes, and geometries using milk, dark and white chocolate was introduced.<ref>{{Cite web|url=https://www.entrepreneur.com/article/241596|title=CocoJet: 3-D Printing and Hershey's Chocolate, Together at Last|last=Shandrow|first=Kim Lachance|date=2015-01-07|website=Entrepreneur|language=en|access-date=2020-01-10}}</ref>
+|-
+|'''2014'''
+|Natural Machines
+|Foodini, a commercially available printer, was introduced. This printer is able to print a wide range of ingredients and comes with an application that allows users to remotely create designs.<ref name=":9" />
+|-
+|'''2015'''
+|TNO & Barilla
+|A pasta printer and an annual competition for the best pasta design are introduced.<ref>{{Cite web|url=https://www.tno.nl/en/tno-insights/articles/this-is-how-it-s-done-3d-food-printing/|title=This is how it's done: 3D food printing|website=TNO|language=en|access-date=2020-01-10}}</ref>
+|-
+|'''2018'''
+|Novameat
+|The first meat-free steak made from vegetables that mimics meat texture was printed.<ref name=":11" />
+|}
+
+== General principles ==
+There are three general areas that impact precise and accurate food printing: materials/ingredients (viscosity, powder size), process parameters (nozzle diameter, printing speed, printing distance), and post-processing methods (baking, microwaving, frying).<ref>Liu, Z., Zhang, M., Bhandari, B., & Wang, Y. (2017). 3D printing: Printing precision and application in food sector. ''Trends in Food Science & Technology'', ''69'', 83-94.</ref>
+
+=== Materials and ingredients ===
+[[File:3D Printed Chocolate.jpg|alt=|thumb|296x296px|3D Printed Chocolate]]
+The type of food available to print is limited by the printing technique.<ref name=":1">Sun, J., Peng, Z., Zhou, W., Fuh, J. Y., Hong, G. S., & Chiu, A. (2015). A review on 3D printing for customized food fabrication. ''Procedia Manufacturing'', ''1'', 308-319.</ref> For an overview of these printing techniques, please see the section ''Printing Techniques'' below:
+
+====Extrusion-based printing ingredients====
+
+Common ingredients used in extrusion based printing are inherently soft enough to extrude from a syringe/printhead and possess a high enough [[viscosity]] to retain a shape.<ref name=":2">Cohen, D. L., Lipton, J. I., Cutler, M., Coulter, D., Vesco, A., & Lipson, H. (2009, August). Hydrocolloid printing: a novel platform for customized food production. In ''Solid Freeform Fabrication Symposium'' (pp. 807-818). Austin, TX.</ref> In certain cases, powdered ingredients (protein, sugar, etc.) are added to increase viscosity, e.g. adding flour to water creates a paste that can be printed.<ref name=":9" /> Inherently soft materials include:<ref>Liu, Z., Zhang, M., Bhandari, B., & Yang, C. (2018). Impact of rheological properties of mashed potatoes on 3D printing. ''Journal of Food Engineering'', ''220'', 76-82.</ref>
+
+* [[purée]]
+* jelly
+* frosting
+* cheese
+* mashed potatoes
+
+Certain ingredients that are solid can be used by melting and then extruding the ingredient, e.g. chocolate.<ref name=":3" />
+
+====Selective laser sintering and binder jetting ingredients====
+
+Powdered ingredients:<ref name=":4" />
+
+*sugar 
+*chocolate powder
+*protein powder
+
+====Inkjet printing ingredients====
+
+Ingredients with low [[viscosity]] are used for surface filling:<ref name=":5" /><ref name=":6" />
+
+* sauces (pizza, hot sauce, mustard, ketchup, etc.)
+* colored food ink
+
+=== Printing techniques ===
+
+====Extrusion-based printing====
+[[File:Impressora 3D.jpg|thumb|335x335px|Computer Render of Extrusion Based Printing with Multi-Material printing]]
+Although there are different approaches to extrusion based printing, these approaches follow the same basic procedures. The platform on which food is printed consists of a standard 3-axis stage with a computer controlled extrusion head. This extrusion head pushes food materials through a nozzle typically by way of compressed air or squeezing. The nozzles can vary with respect to what type of food is being extruded or the desired printing speed<ref>Mantihal, S., Prakash, S., Godoi, F. C., & Bhandari, B. (2017). Optimization of chocolate 3D printing by correlating thermal and flow properties with 3D structure modeling. ''Innovative Food Science & Emerging Technologies'', ''44'', 21–29. doi: 10.1016/j.ifset.2017.09.012</ref> (typically the smaller the nozzle the longer the food printing will take). As the food is printed, the extrusion head moves along the 3-axis stage printing the desired food. Some printed food requires additional processing such as baking or frying before consumption.
+
+Extrusion based food printers can be purchased for household use, are typically compact in size, and have a low maintenance cost. Comparatively, extrusion based printing provides the user with more material choices. However, these food materials are usually soft, and as a result, makes printing complex food structures difficult. In addition, long fabrication times and deformations due to temperature fluctuations with additional baking or frying require further research and development to overcome.
+
+====Hot-melt and room temperature====
+In Hot-melt extrusion, the extrusion head heats the food material slightly above the material's melting point. The melted material is then extruded from the head and then solidifies soon thereafter. This allows the material to be easily manipulated into the desired form or model. Foods such as chocolate are used in this technique because of its ability to melt and solidify quickly.<ref name=":3">Hao, L., Mellor, S., Seaman, O., Henderson, J., Sewell, N., & Sloan, M. (2010). Material characterization and process development for chocolate additive layer manufacturing. ''Virtual and Physical Prototyping'', ''5''(2), 57-64.</ref>
+
+Other food materials do not inherently require a heating element in order to be printed. Food materials such as jelly, frosting, puree, and similar food materials with appropriate viscosity can be printed at room temperature without prior melting.
+
+====Selective laser sintering====
+[[File:SelectiveLaserSintering.svg|thumb|451x451px|Selective Laser Sintering Process]]
+In [[selective laser sintering]], powdered food materials are heated by and bonded together forming a solid structure. This process is completed by bonding the powdered material layer by layer with a laser as the heat source. After a layer is completed with the desired areas bonded, it is then covered by a new unbonded layer of powder. Certain parts of this new unbonded layer are heated by the laser in order to bond it with the structure. This process continues in a vertical upwards manner until the desired food model is constructed. After construction, unbonded material can then be recycled and used to print another food model.
+
+Selective laser sintering enables the construction of complex shapes and models and the ability to create different food textures. It is limited by the range of suitable food materials, namely powdered ingredients.<ref name=":0">CandyFab (2007). The CandyFab project. Available at <nowiki>http://wiki</nowiki>. candyfab.org/Main_Page. Accessed Dec 2019</ref> Due to this limitation, selective laser sintering has been used primarily for creating sweets/candies.
+
+====Binder jetting====
+[[File:BinderJetting.svg|thumb|274x274px|Binder Jetting Process]]
+Similarly to selective laser sintering, binder jetting uses powdered food materials to create a model layer by layer. Instead of using heat to bond the materials together, a liquid binder is used. After bonding the desired areas of a layer, a new layer of powder is then spread over the bonded layer covering it. Certain parts of this new layer are then bonded to the previous layer. The process is repeated until the desired food model is constructed.
+
+As with selective laser sintering, binder jetting enables the construction of complex shapes and models and the ability to create different food textures.<ref name=":4">Southerland, D., Walters, P., & Huson, D. (2011, January). Edible 3D printing. In ''NIP & Digital Fabrication Conference'' (Vol. 2011, No. 2, pp. 819-822). Society for Imaging Science and Technology.</ref> Likewise, it is also limited by the range of suitable food materials, namely powdered ingredients.
+
+====Inkjet printing====
+Inkjet printing is used for surface filling or image decoration.<ref name=":5">Foodjet (2012). Foodjet. Available at: <nowiki>http://foodjet.nl/</nowiki>. Accessed Dec 2019</ref> By utilizing gravity, edible food ink is dropped onto the surface of the food, typically a cookie, cake, or other candy. This is a non-contact method, hence the printhead does not touch the food protecting the food from contamination during image filling. The ink droplets may consist of a broad range of colors allowing users to create unique and individualized food images.<ref name=":6">Pallottino, F., Hakola, L., Costa, C., Antonucci, F., Figorilli, S., Seisto, A., & Menesatti, P. (2016). Printing on food or food printing: a review. ''Food and Bioprocess Technology'', ''9''(5), 725-733.</ref> An issue with inkjet printing is the food materials being incompatible with the ink resulting in no image or high image distortion.<ref>Vancauwenberghe, V., Katalagarianakis, L., Wang, Z., Meerts, M., Hertog, M., Verboven, P., ... & Nicolaï, B. (2017). Pectin based food-ink formulations for 3-D printing of customizable porous food simulants. ''Innovative food science & emerging technologies'', ''42'', 138-150.</ref> Inkjet printers can be purchased for household or commercial use, and industrial printers are suitable for mass production.
+
+==== Multi-printhead and multi-material ====
+In multi-printhead and [[Multi-material 3D printing|multi-material printing]], multiple ingredients are printed at the same time or in succession.<ref name=":7">Lipton, J., Arnold, D., Nigl, F., Lopez, N., Cohen, D. L., Norén, N., & Lipson, H. (2010, August). Multi-material food printing with complex internal structure suitable for conventional post-processing. In ''Solid Freeform Fabrication Symposium'' (pp. 809-815).</ref> There are different ways to support multi-material printing. In one instance, multiple printheads are used to print multiple materials/ingredients, as this can speed up production, efficiency, and lead to interesting design patterns.<ref name=":5" /> In another instance, there is one printhead, and when a different ingredient is required, the printer exchanges the material being printed.<ref>Foodini (2014). Foodini. Available at https://www.naturalmachines.com/foodini Accessed Dec 2019</ref> Multiple materials/ingredients equates to a more diverse range of meals available to print, a broader nutritional range, and is quite common for food printers.<ref name=":1" />
+
+=== Post-processing ===
+In the post-processing phase, printed food may require additional steps before consumption. This includes processing activities such as baking, frying, cleaning, etc. This phase can be one of the most critical to 3D printed food, as the printed food needs to be safe for consumption. An additional concern in post processing is the deformation of the printed food due to the strain of these additional processes. Current methods involve trial and error. That is, combining food additives with the materials/ingredients to  improve the integrity of complex structures and to ensure the printed structure retains its shape.<ref name=":7" /> Additives such as [[transglutaminase]]<ref name=":7" /> and [[:de:Hydrokolloide|hydrocolloids]]<ref name=":2" /> have been added to ingredients in order to help retain the printed shape while printing and after cooking.
+
+Additionally, recent research has produced a [https://www.youtube.com/watch?v=iBpolaB4DqA visual simulation] for baking breads, cookies, pancakes and similar materials that consist of dough or batter (mixtures of water, flour, eggs, fat, sugar and leavening agents).<ref>Ding, M., Han, X., Wang, S., Gast, T. F., & Teran, J. M. (2019). A thermomechanical material point method for baking and cooking. ''ACM Transactions on Graphics (TOG)'', ''38''(6), 192.</ref> By adjusting certain parameters in the simulation, it shows the realistic effect that baking will have on the food.  With further research and development, a visual simulation of 3D printed foods being cooked could predict what is vulnerable to deformation.
+
+== Applications ==
+
+=== Personal nutrition ===
+Personalized dietary requirements for an individual's nutritional needs has been linked to the prevention of diseases.<ref>Sarwar, M. H., Sarwar, M. F., Khalid, M. T., & Sarwar, M. (2015). Effects of eating the balance food and diet to protect human health and prevent diseases. ''American Journal of Circuits, Systems and Signal Processing'', ''1''(3), 99-104.
+
+Chicago</ref> As such, eating nutritious food is paramount to living a healthy life. 3D printed food can provide the control necessary to put a custom amount of protein, sugar, vitamins, and minerals into the foods we consume.<ref>Severini, C., & Derossi, A. (2016). Could the 3D printing technology be a useful strategy to obtain customized nutrition?. ''Journal of clinical gastroenterology'', ''50''(2), 175-178.</ref>
+
+Another area in customized food, is elderly nutrition. The elderly sometimes cannot swallow foods, and as such require a softer pallet.<ref>Kimura, Y., Ogawa, H., Yoshihara, A., Yamaga, T., Takiguchi, T., Wada, T., ... & Fujisawa, M. (2013). Evaluation of chewing ability and its relationship with activities of daily living, depression, cognitive status and food intake in the community‐dwelling elderly. ''Geriatrics & gerontology international'', ''13''(3), 718-725.</ref> However, these foods are often unappealing causing some individuals not to eat what their bodies' nutritional needs require.<ref>Miura, H., Miura, K., Mizugai, H., Arai, Y., Umenai, T., & Isogai, E. (2000). Chewing ability and quality of life among the elderly residing in a rural community in Japan. ''Journal of oral rehabilitation'', ''27''(8), 731-734.</ref> 3D printed food can provide a soft and aesthetically pleasing food in which the elderly can consume their bodies' dietary requirements.<ref>Serizawa, R., Shitara, M., Gong, J., Makino, M., Kabir, M. H., & Furukawa, H. (2014, March). 3D jet printer of edible gels for food creation. In ''Behavior and Mechanics of Multifunctional Materials and Composites 2014'' (Vol. 9058, p. 90580A). International Society for Optics and Photonics.</ref>
+
+In October 2019, startup company ''Nourished'' 3D prints personalized nutritional gummies from 28 different vitamins. Individuals take a survey, then based on their answers, a personalized nutritional gummy is printed for that individual.<ref>{{Cite web|url=https://www.foodnavigator.com/Article/2019/10/17/Nourished-launches-3D-printed-personalised-nutrition-gummies|title=Start-up launches made-to-order 3D gummies: 'If anything should be personalised, it should be our health'|last=Souther|first=Flora|date=24 October 2019|website=Food Navigator|url-status=live|archive-url=|archive-date=|access-date=}}</ref>
+
+=== Sustainability and solution for hunger ===
+[[File:Cricket diagram 2.png|thumb|316x316px|The cost of raising 1kg of cricket meat compared to 1kg of cow meat]]
+As the world's population continues to grow, experts believe that current food supplies will not be able to supply the population.<ref>Alexandratos, N. (2005). Countries with rapid population growth and resource constraints: issues of food, agriculture, and development. ''Population and development Review'', ''31''(2), 237-258.</ref> Thus, a sustainable food source is critical. Studies have shown that [[entomophagy]], the consumption of insects, has the potential to sustain a growing population.<ref name=":10">Van Huis, A. (2013). Potential of insects as food and feed in assuring food security. ''Annual review of entomology'', ''58'', 563-583.</ref> Insects such as crickets require less feed, less water, and provide around the same amount of protein that chickens, cows, and pigs do.<ref name=":10" /> Crickets can be ground into a [[Cricket flour|protein flour]]. In one study,<ref>Soares, S., & Forkes, A. (2014). Insects Au gratin-an investigation into the experiences of developing a 3D printer that uses insect protein based flour as a building medium for the production of sustainable food. In ''DS 78: Proceedings of the 16th International conference on Engineering and Product Design Education (E&PDE14), Design Education and Human Technology Relations, University of Twente, The Netherlands, 04-05.09. 2014'' (pp. 426-431).</ref> researchers provide an overview of the process of 3D printing insect flour into foods that do not resemble insects; thus, keeping the nutritional value of the insect intact.
+
+=== Space exploration ===
+As humans begin venturing into space for a longer time, the nutritional requirements for maintaining crew health is critical.<ref>Smith, S. M., Zwart, S. R., Block, G., Rice, B. L., & Davis-Street, J. E. (2005). The nutritional status of astronauts is altered after long-term space flight aboard the International Space Station. ''The Journal of nutrition'', ''135''(3), 437-443.</ref> Currently [[NASA]] is exploring ways of integrating 3D printing food into space in order to sustain the crew's dietary requirements.<ref>Leach, N. (2014). 3D printing in space. ''Architectural Design'', ''84''(6), 108-113.Chicago</ref> The vision is to 3D print powdered food layers that have a shelf life of 30 years instead of using traditional freeze dried food that have a shelf life of 5 years.<ref>{{Cite web|url=https://www.space.com/21308-3d-printing-nasa-space-food.html|title=How 3D Printers Could Reinvent NASA Space Food|last=Gannon 2013-05-24T21:32:51Z|first=Megan|website=Space.com|language=en|access-date=2020-01-10}}</ref> In addition to dietary requirements, 3D printing food in space could provide a morale boost, as the astronauts would be able to design custom meals that are aesthetically pleasing.<ref>Sun, J., Peng, Z., Yan, L., Fuh, J. Y., & Hong, G. S. (2015). 3D food printing—An innovative way of mass customization in food fabrication. ''International Journal of Bioprinting'', ''1''(1), 27-38.</ref>
+
+In September 2019, Russian cosmonauts, along with Israeli startup Aleph Farms, grew meat from cow cells, then 3D printed the cells into steaks.<ref>{{Cite web|url=https://www.businessinsider.com/meat-grown-in-space-with-3d-printer-2019-10|title=Astronauts just printed meat in space for the first time — and it could change the way we grow food on Earth|last=Bendix|first=Aria|website=Business Insider|access-date=2020-01-10}}</ref>
+
+=== Meat bioprinting ===
+Livestock farming is one of the top contributors to deforestation, land degradation, water pollution and desertification. Among other reasons, this has led to the new promising technology of meat bioprinting. One alternative to livestock farming is cultured meat, also known as lab-grown meat. [[Cultured meat]] is produced by taking a small biopsy from animals, extracting the [[myosatellite cell]]s and adding growth serum to multiply the cells. The resulting product is then used as a material for bioprinting meat. The post-processing phase, among other steps, includes adding flavour, vitamins and iron to the product. Yet another alternative is printing a [[meat analogue]]. [[Novameat]], a Spanish startup has been able to print a plant-based steak and mimic the texture and appearance of real meat.<ref name=":11">{{Cite web|url=https://www.3dnatives.com/en/3d-printed-meat-040620194/|title=3D printed meat, is the future of meat meatless?|date=2019-06-04|website=3Dnatives|language=en-US|access-date=2020-01-09}}</ref>
+
+=== Creative food design ===
+[[File:Menjar elaborat per Foodini.jpg|thumb|Chef storytelling: Alvar Aalto Vase]]
+Food presentation and food appearance customization for individuals is a big trend in the food industry. So far food customization and creative designs have required hand-made skills, which results in low production rate and high cost. 3D food printing can overcome this problem by providing the necessary tools for creative food design even for home users.<ref name=":1" /> 3D food printing has enabled some intricate designs which cannot be accomplished with traditional food manufacturing. Brand logos, text, signatures, pictures can now be printed on some food products like pastries and coffee. Complex geometric shapes have also been printed, mainly using sugar. With 3D printing, chefs can now turn their visual inspirations into signature culinary creations. Another benefit is being able to print nutritious meals in shapes that appeal to children.<ref name=":9" />
+
+=== Reduced food waste ===
+Worldwide, one third of the total food produced for consumption, around 1.6 billion tons per year, goes to waste. [[Food waste]] happens during processing, distribution and consumption. 3D food printing is a very promising way of reducing food waste during the phase of consumption, by utilizing food products like meat off-cuts, distorted fruits and vegetables, sea food by-products and perishables. These products can be processed in a suitable form for printing.<ref name=":12">{{Cite book|url=https://books.google.com/?id=SQl2DwAAQBAJ&pg=PA373&lpg=PA373&dq=Chapter+13+-+Future+Outlook+of+3D+Food+Printing#v=onepage&q=Chapter%2013%20-%20Future%20Outlook%20of%203D%20Food%20Printing&f=false|title=Fundamentals of 3D Food Printing and Applications|last=Godoi|first=Fernanda C.|last2=Bhandari|first2=Bhesh R.|last3=Prakash|first3=Sangeeta|last4=Zhang|first4=Min|date=2018-11-02|publisher=Academic Press|isbn=978-0-12-814565-4|language=en}}</ref> Upprinting Food, a Dutch startup, has been blending and combining different ingredients from food waste to create purees which are then used as materials for 3D printing.<ref>{{Cite web|url=https://www.3dnatives.com/en/3d-printed-snacks-210220195/|title=Food waste converted into delicious 3D printed snacks|date=2019-02-21|website=3Dnatives|language=en-US|access-date=2020-01-09}}</ref> Chefs are also creating different dishes from leftover food using 3D food printers.<ref>{{Cite web|url=https://www.waste360.com/food-waste/3d-printer-helps-chefs-get-creative-while-cutting-food-waste|title=3D Printer Helps Chefs Get Creative While Cutting Food Waste|date=2020-01-08|website=Waste360|language=en|access-date=2020-01-09}}</ref>
+
+== Challenges ==
+
+=== Structure ===
+Unlike traditionally prepared food, the variety of food that can be manufactured using 3D printing is limited by the physical characteristics of the materials. Food materials are generally much softer than the weakest plastic used in 3D printing, making the printed structures very fragile.<ref name=":8">{{Cite web|url=https://www.fabbaloo.com/blog/2014/1/8/the-six-challenges-of-3d-food-printing.html|title=The Six Challenges of 3D Food Printing|website=Fabbaloo|language=en-US|access-date=2019-12-11}}</ref> So far, most studies use trial and error as an approach to overcoming this challenge, but scientists are working on developing new methods that are able to predict the behavior of different materials during the printing process. These methods are developed by analyzing the [[Rheology|rheological]] properties of the materials and their relation to the printing stability.<ref>{{Cite journal|last=Zhu|first=Sicong|last2=Stieger|first2=Markus A.|last3=van der Goot|first3=Atze Jan|last4=Schutyser|first4=Maarten A. I.|date=2019-12-01|title=Extrusion-based 3D printing of food pastes: Correlating rheological properties with printing behaviour|journal=Innovative Food Science & Emerging Technologies|language=en|volume=58|pages=102214|doi=10.1016/j.ifset.2019.102214|issn=1466-8564|doi-access=free}}</ref>
+
+=== Design ===
+When designing a 3D model for a food product, the physical and geometrical limitations of the printing materials should be taken into account. This makes the designing process a very complex task and so far there is no available software that accounts for that. Building such software is also a complex task due to the vast variety of food materials.<ref name=":8" /> Considering that personal users who incorporate 3D food printing in their kitchens represent a significant part of the overall users, the design of the software interface adds to the complexity. The interface of such software should be simple and have high [[usability]] while still providing enough features and customization options for the user without causing cognitive overload.<ref name=":12" />
+
+=== Speed ===
+The current speed of 3D printing food could be sufficient for home use, but the process is very slow  for mass production.<ref>{{Cite web|url=https://all3dp.com/1/3d-printed-food-3d-printing-food/|title=3D Printed Food: A Culinary Guide to 3D Printing Food|website=All3DP|language=en|access-date=2019-12-11}}</ref> Simple designs take 1 to 2 minutes, detailed designs take 3 to 7 minutes, and more intricate designs take even longer.<ref name=":9">{{Cite web|url=https://3dfoodprinting.us/wp-content/uploads/2019/04/The-Ultimate-Guide-to-3D-Food-Printing041419.pdf|title=The Ultimate Guide to 3D Food Printing|last=Kakuk|first=Collette|date=2019|website=3dfoodprinting.us|url-status=live|archive-url=|archive-date=|access-date=}}</ref> The speed of printing food is tightly correlated to the rheological properties of the materials. Research shows that high printing speed results in low fidelity samples due to the dragging effect, while very low speed causes instability in material deposition.<ref name=":12" />
+
+In order for 3D food printing to find its way to the food industry, the printing speed needs improvement or the cost of such technology should be affordable enough for companies to operate several printers.<ref>{{Cite web|url=https://3dfoodprintingconference.com/wp-content/uploads/2017/07/Nesli-Sozer-3D-Food-Printing-Conference_Sozer28062017.pdf|title=3D food printing: A Disruptive Food Manufacturing Technology|last=Sözer|first=Venlo Nesli|date=28 June 2017|website=3dfoodprintingconference|url-status=live|archive-url=|archive-date=|access-date=}}</ref>
+
+=== Multi-material printing ===
+The color, flavor and texture of food are of crucial importance when fabricating an edible product, thus in most cases it is required that a food printer supports multi-material printing. The current available 3D food printers are limited to using a few different materials due to the challenge of developing multiple extruder capabilities. This limits the variety of food products that can be 3D printed, leaving out complex dishes that require a lot of different materials.<ref name=":8" />
+
+=== Safety ===
+When 3D printing food, the safety is very crucial. A food printer must ensure safety along the entire path taken by the food material.<ref name=":8" /> Due to the possibility of food getting stuck somewhere along the path, bacteria accumulation is a major concern. Microbial stability is a crucial parameter of the quality of the printed food, thus it needs to be addressed both during the design of the printer and during the printing process.<ref name=":12" /> On the other hand, the materials that come into contact with the food may not be as significant of a concern since high quality printers use stainless steel and BPA-free materials.<ref name=":9" />
+
+=== Copyright ===
+Existing food products in the market such as chocolates in various shapes could easily be scanned and the obtained 3D models could be used to replicate those products. These 3D models could then be disseminated via Internet leading to copyright infringement. There are laws regulating copyright issues but it is not clear whether they will be sufficient to cover all aspects of a field like 3D food printing.<ref>{{Cite web|url=https://www.dlg.org/fileadmin/downloads/food/Expertenwissen/Lebensmitteltechnologie/e_2017_4_Expertenwissen_3_D_Druck.pdf|title=3D Food printing: What options the new technology offers|last=Vogt|first=Sebastian|date=2017|website=DLG|url-status=live|archive-url=|archive-date=|access-date=}}</ref>
+
+== See also ==
+{{div col|colwidth=20em}}
+* [[3D printing|3D Printing]]
+* [[Multi-material 3D printing]]
+* [[3D bioprinting]]
+* [[3D scanning|3D Scanning]]
+* [[3D modeling|3D Modelling]]
+* [[Fused filament fabrication|Fused Deposition Modeling (FDM)]]
+* [[selective laser sintering|Selective Laser Sintering]]
+* [[Inkjet printing|Inkjet Printing]]
+* [[Internet of things|IoT]]
+* [[Fab@Home]]
+* [[Transglutaminase]]
+* [[:de:Hydrokolloide|Hydrocolloids]]
+* [[Viscosity]]
+* [[Entomophagy]]
+
+{{div col end}}
+
+== References ==
+<references />
+
+[[Category:3D printing]]
+[[Category:Food preparation]]

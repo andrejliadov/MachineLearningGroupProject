@@ -1,0 +1,94 @@
+{{multiple issues|
+{{refimprove|date=June 2012}}
+{{technical|date=June 2012}}
+}}
+
+In [[decision theory]], the '''expected value of perfect information (EVPI)''' is the price that one would be willing to pay in order to gain access to [[perfect information]].<ref>Douglas Hubbard "How to Measure Anything: Finding the Value of Intangibles in Business" pg. 46, John Wiley & Sons, 2007</ref> A common discipline that uses the EVPI concept is [[health economics]]. In that context and when looking at a decision of whether to adopt a new treatment technology, there is always some degree of [[uncertainty]] surrounding the decision, because there is always a chance that the decision turns out to be wrong. The expected value of perfect information analysis tries to measure the [[Expected value|expected]] cost of that uncertainty, which “can be interpreted as the expected value of perfect information (EVPI), since perfect information can eliminate the possibility of making the wrong decision” at least from a theoretical perspective.<ref name="Claxton-et-al-2002">{{cite journal|last1=Claxton|first1=K.|last2=Sculpher|first2=M.|last3=Drummond|first3=M.|date=2002|title=A rational framework for decision making by the National Institute for Clinical Excellence (NICE)|journal=Lancet|volume=360|issue=9334|pages=711–715|language=English|url=http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(02)09832-X/abstract|accessdate=November 20, 2015|doi=10.1016/S0140-6736(02)09832-X|pmid=12241891}}</ref>
+
+== Equation ==
+The problem is modeled with a [[payoff matrix]] ''R<sub>ij</sub>'' in which the row index ''i'' describes a choice that must be made by the player, while the column index ''j'' describes a random variable that the player does not yet have knowledge of, that has probability ''p<sub>j</sub>'' of being in state ''j''. If the player is to choose ''i'' without knowing the value of ''j'', the best choice is the one that maximizes the [[expected monetary value]]:
+:<math> \mbox{EMV} = \max_i \sum_j  p_j R_{ij} </math>
+where
+:<math> \sum_j  p_j R_{ij}</math>
+is the expected payoff for action ''i'' i.e. the [[expected value|expectation]] value, and
+:<math> \mbox{EMV} = \max_i </math>
+is choosing the maximum of these expectations for all available actions.
+On the other hand, with perfect knowledge of ''j'', the player may choose a value of ''i'' that optimizes the expectation for that specific ''j''. Therefore, the expected value given perfect information is
+:<math> \mbox{EV}|\mbox{PI} = \sum_j  p_j (\max_i R_{ij}), </math>
+where <math>p_j</math> is the probability that the system is in state ''j'', and <math>R_{ij}</math> is the pay-off if one follows action ''i'' while the system is in state ''j''.
+Here <math>(\max_i R_{ij}), </math> indicates the best choice of action ''i'' for each state ''j''.
+
+The expected value of perfect information is the difference between these two quantities,
+:<math> \mbox{EVPI} = \mbox{EV}|\mbox{PI} - \mbox{EMV}. </math>
+This difference describes, in expectation, how much larger a value the player can hope to obtain by knowing ''j'' and picking the best ''i'' for that ''j'', as compared to picking a value of ''i'' before ''j'' is known.  Since EV|PI is necessarily greater than or equal to EMV, EVPI is always non-negative.
+
+EVPI provides a criterion by which to judge ordinary imperfectly informed forecasters. EVPI can be used to reject costly proposals: if one is offered knowledge for a price larger than EVPI, it would be better to refuse the offer. However, it is less helpful when deciding whether to accept a forecasting offer, because one needs to know the quality of the information one is acquiring.
+
+==Example==
+Setup:
+
+Suppose you were going to make an investment into only one of three investment vehicles: stock, mutual fund, or certificate of deposit (CD).  Further suppose, that the market has a 50% chance of increasing, a 30% chance of staying even, and a 20% chance of decreasing.  If the market increases the stock investment will earn $1500 and the mutual fund will earn $900.  If the market stays even the stock investment will earn $300 and the mutual fund will earn $600.  If the market decreases the stock investment will lose $800 and the mutual fund will lose $200.  The certificate of deposit will earn $500 independent of the market's fluctuation.
+
+Question:
+
+What is the expected value of perfect information?
+
+Solution:
+
+Here the payoff matrix is:
+
+:<math>R = \begin{bmatrix} 1500 & 300 & -800 \\ 900 & 600 & -200 \\ 500 & 500 & 500 \end{bmatrix}</math>
+
+The probability vector is:
+
+:<math>p = \begin{bmatrix} 0.5 \\ 0.3 \\ 0.2 \end{bmatrix}</math>
+
+Expectation for each vehicle (<math>Rp</math>):
+
+:<math> \mbox{Exp}_\text{stock} = 0.5 \times1500 + 0.3\times300 + 0.2\times(-800) = 680</math>
+:<math> \mbox{Exp}_\text{mutual fund} = 0.5\times900 + 0.3\times600 + 0.2\times(-200) = 590</math>
+:<math> \mbox{Exp}_\text{certificate of deposit} = 0.5\times500 + 0.3\times500 + 0.2\times500 = 500</math>
+
+The maximum of these expectations is the stock vehicle.  Not knowing which direction the market will go (only knowing the probability of the directions), we expect to make the most money with the stock vehicle.
+
+Thus,
+
+:<math>\mbox{EMV} = 680</math>
+
+On the other hand, consider if we did know ahead of time which way the market would turn.  Given the knowledge of the direction of the market we would (potentially) make a different investment vehicle decision.
+
+Expectation for maximizing profit given the state of the market:
+
+:<math> \mbox{EV}|\mbox{PI} = 0.5\times1500 + 0.3\times600 + 0.2\times500 = 1030</math>
+
+That is, given each market direction, we choose the investment vehicle that maximizes the profit.
+
+Hence,
+
+:<math> \mbox{EVPI} = \mbox{EV}|\mbox{PI} - \mbox{EMV} = 1030 - 680 = 350. </math>
+
+Conclusion:
+
+Knowing the direction the market will go (i.e. having perfect information) is worth $350.
+
+Discussion:
+
+If someone was selling information that guaranteed the accurate prediction of the future market direction, we would want to purchase this information only if the price was less than $350.  If the price was greater than $350 we would not purchase the information, if the price was less than $350 we would purchase the information.  If the price was exactly $350, then our decision is futile.
+
+Suppose the price for the information was $349.99 and we purchased it.  Then we would expect to make 1030 - 349.99 = 680.01 > 680.  Therefore, by purchasing the information we were able to make $0.01 more than if we didn't purchase the information.
+
+Suppose the price for the information was $350.01 and we purchased it.  Then we would expect to make 1030 - 350.01 = 679.99 < 680.  Therefore, by purchasing the information we lost $0.01 when compared to not having purchased the information.
+
+Suppose the price for the information was $350.00 and we purchased it.  Then we would expect to make 1030 - 350.00 = 680.00 = 680.  Therefore, by purchasing the information we did not gain nor lose any money by deciding to purchase this information when compared to not purchasing the information.
+
+Note: As a practical example, there is a cost to using money to purchase items (time value of money), which must be considered as well.
+
+==See also==
+*[[Expected value of sample information]]
+*[[Expected value of including uncertainty]]
+
+==References==
+{{reflist}}
+
+[[Category:Decision theory]]
+[[Category:Game theory]]

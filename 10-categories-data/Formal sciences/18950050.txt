@@ -1,0 +1,128 @@
+{{short description|system where only the inputs and outputs can be viewed, and not its implementation}}
+{{about|the abstract concept of black box systems|black boxes in aircraft|Flight recorder|other uses}}
+{{Black-box}}
+{{Use dmy dates|date=November 2013}}
+In science, computing, and engineering, a '''black box''' is a device, system or object which can be viewed in terms of its inputs and outputs (or [[Transfer function|transfer characteristics]]), without any knowledge of its internal workings. Its implementation is "opaque" (black). Almost anything might be referred to as a black box: a [[transistor]], an [[engine]], an [[algorithm]], the [[human brain]], an institution or government.
+
+To analyse something modeled as an [[open system (systems theory)|open system]], with a typical "black box approach", only  the behavior of the stimulus/response will be accounted for, to infer the (unknown) ''box''. The usual representation of this ''black box system''  is a [[data flow diagram]] centered in the box.
+
+The opposite of a black box is a system where the inner components or logic are available for inspection, which is most commonly referred to as a [[white box (software engineering)|white box]] (sometimes also known as a "clear box" or a "glass box"<ref>{{cite arxiv|last1=Holzinger|first1=Andreas|last2=Plass|first2=Markus|last3=Holzinger|first3=Katharina|last4=Crisan|first4=Gloria Cerasela|last5=Pintea|first5=Camelia-M.|last6=Palade|first6=Vasile|date=2017-08-03|title=A glass-box interactive machine learning approach for solving NP-hard problems with the human-in-the-loop|eprint=1708.01104|class=cs.AI}}</ref>).
+
+==History==
+[[File:Blackbox3D-withGraphs.png|thumb|right|500px|A black box model can be used to describe the outputs of systems]]
+The modern meaning of the term "black box" seems to have entered the English language around 1945. In electronic [[circuit theory]] the process of [[network synthesis]] from [[transfer function]]s, which led to electronic circuits being regarded as "black boxes" characterized by their response to signals applied to their [[Port (circuit theory)|ports]], can be traced to [[Wilhelm Cauer]] who published his ideas in their most developed form in 1941.<ref>Cauer, Wilhelm; ''Theorie der linearen Wechselstromschaltungen'', '''Vol.I''', Akademische Verlags-Gesellschaft Becker und Erler, Leipzig, 1941.</ref> Although Cauer did not himself use the term, others who followed him certainly did describe the method as black-box analysis.<ref>Cauer, Emil; Mathis, Wolfgang; and Pauli, Rainer; "Life and Work of Wilhelm Cauer (1900&nbsp;– 1945)", ''Proceedings of the Fourteenth International Symposium of Mathematical Theory of Networks and Systems (MTNS2000)'', p4, Perpignan, June, 2000. [http://www.cs.princeton.edu/courses/archive/fall03/cs323/links/cauer.pdf Retrieved online] 19 September 2008.</ref> [[Vitold Belevitch]]<ref>Belevitch, Vitold; "Summary of the history of circuit theory", ''Proceedings of the IRE'', '''vol 50''', Iss 5, pp. 848-855, May 1962.</ref> puts the concept of black-boxes even earlier, attributing the explicit use of [[two-port network]]s as black boxes to [[Franz Breisig]] in 1921 and argues that 2-terminal components were implicitly treated as black-boxes before that.
+
+In [[cybernetics]], a full treatment was given by [[Ross Ashby]] in 1956.<ref name="ash56">Ashby, W. Ross; ''An introduction to cybernetics'', London: Chapman & Hall, 1956, chapter 6: ''The black box'', pp. 86{{ndash}}117.</ref> A black box was described by [[Norbert Wiener]] in 1961 as an unknown system that was to be identified using the techniques of [[system identification]].<ref>Wiener, Norbert; ''Cybernetics: or the Control and Communication in the Animal and the Machine'', MIT Press, 1961, {{ISBN|0-262-73009-X}}, page xi</ref>  He saw the first step in [[Self organization#Self-organization in cybernetics|self-organization]] as being to be able to copy the output behavior of a black box. Many other engineers, scientists and epistemologists, such as [[Mario Bunge]],<ref name="Bunge63"/>  used and perfected the black box theory in the 1960s.
+
+==System theory==
+[[File:OpenSystemRepresentation.svg|thumb|252px|The ''[[Open system (systems theory)|open system theory]]'' is the foundation of ''black box theory''. Both have focus on input and output flows, representing exchanges with the surroundings.]]
+In [[systems theory]], the ''black box'' is an abstraction representing a class of concrete [[Open system (systems theory)|open system]] which can be viewed solely in terms of its ''stimuli inputs'' and ''output reactions'':
+{{Quotation|The constitution and structure of the box are altogether irrelevant to the approach under consideration, which is purely external or phenomenological. In other words, only the behavior of the system will be accounted for.|[[Mario Bunge]]<ref name="Bunge63">Bunge, Mario; "A general black-box theory", Philosophy of Science, Vol. 30, No. 4, 1963, pp. 346-358. [https://www.jstor.org/pss/186066 jstor/186066]</ref>}}
+
+The understanding of a ''black box'' is based on the "explanatory principle", the [[hypothesis]] of a [[causal relation]] between the ''input'' and the ''output''. This principle states that ''input'' and ''output'' are distinct, that the system has observable (and relatable) inputs and outputs and that the system is black to the observer (non-openable).<ref name="gla09">Glanville, Ranulph; "Black Boxes", Cybernetics and Human Knowing, 2009, pp. 153-167.</ref>
+=== Recording of observed states ===
+An observer makes observations over time. All observations of inputs and outputs of a ''black box'' can be written in a table, in which, at each of a sequence of times, the states of the ''box’s'' various parts, input and output, are recorded. Thus, using an example from [[William Ross Ashby|Ashby]], examining a box that has fallen from a [[flying saucer]] might lead to this protocol:<ref name="ash56" />
+{| class="wikitable"
+!Time
+!States of input and output
+|-
+|11:18
+|I did nothing—the Box emitted a steady hum at 240&nbsp;Hz.
+|-
+|11:19
+|I pushed over the switch marked K: the note rose to 480&nbsp;Hz and remained steady.
+|-
+|11:20
+|I accidentally pushed the button marked “!”—the Box increased in temperature by 20&nbsp;°C.
+|-
+|11:21
+|Etc.
+|}Thus every system, fundamentally, is investigated by the collection of a long protocol, drawn out in time, showing the sequence of input and output states. From this there follows the fundamental deduction that all knowledge obtainable from a Black Box (of given input and output) is such as can be obtained by re-coding the protocol (the ''observation table''); all that, and nothing more.<ref name="ash56" />
+
+If the observer also controls input, the investigation turns into an [[experiment]] (illustration), and hypotheses about [[Causality|cause and effect]] can be tested directly.
+
+When the experimenter is also motivated to control the box, there is an active feedback in the box/observer relation, promoting what in [[Control system|control theory]] is called a [[Feed forward (control)|feed forward]] architecture.
+
+===Modeling ===
+{{Expand section|date=June 2019}}
+The ''modeling process'' is the construction of a predictive [[mathematical model]], using existing historic data (observation table).
+
+=== Testing the black box model===
+{{Expand section|date=June 2019}}
+A developed ''black box model'' is a validated model when ''[[black-box testing]]'' methods<ref name="BS7925">See for ex. the British standard BS 7925-2 (Software component testing), or its 2001 work draft,<br />BCS SIGIST (British Computer Society Specialist Interest Group in Software Testing), "Standard for Software Component Testing", Working Draft 3.4, 27 April 2001 [http://www.testingstandards.co.uk/bs_7925-2.htm webpage].</ref> ensures that it is, based solely on [[Observation#Observation in science|observable]] elements.
+
+With backtesting, out of time data is always used when testing the black box model. Data has to be written down before it is pulled for black box inputs.
+
+==Other theories==
+[[File:Hidrograma.png|thumb|252px|The observed [[hydrograph]] is a graphic of the response of a [[Drainage basin|watershed]] (a blackbox) with its [[Surface runoff|runoff]] (red) to an input of rainfall (blue).]]''Black box theories'' are things defined only in terms of their function.<ref>[http://www.answers.com/topic/black-box-theory Definition from Answers.com]</ref><ref>[http://www.highbeam.com/doc/1O98-blackboxtheory.html definition from highbeam]{{dead link|date=February 2019|bot=medic}}{{cbignore|bot=medic}}</ref> The term ''black box theory'' is applied to any field, [[philosophy]] and [[science]] or otherwise where some inquiry or definition is made into the relations between the appearance of something (exterior/outside), i.e. here specifically the thing's black box state, related to its  characteristics and behaviour within (interior/inner).<ref>[http://www.new-science-theory.com/isaac-newton.html Black box theory applied briefly to Isaac Newton]</ref><ref>{{cite journal | pmid = 374288 | volume=9 | issue=2 | title=What's inside the black box: a case study of allocative politics in the Hill-Burton program | journal=Int J Health Serv | pages=313–39 | last1 = Feshbach | first1 = D | doi=10.2190/ltd9-c9c7-x1lf-pmnm| year=1979 | s2cid=10957919 }}</ref>
+
+Specifically, the inquiry is focused upon a thing that has no immediately apparent characteristics and therefore has only factors for consideration held within itself hidden from immediate observation. The observer is assumed ignorant in the first instance as the majority of available [[data]] is held in an inner situation away from [[wikt:facile|facile]] investigations. The ''black box'' element of the definition is shown as being characterised by a system where observable elements enter a perhaps imaginary box with a set of different outputs emerging which are also observable.<ref>[https://www.jstor.org/pss/186066 Physics dept, Temple University, Philadelphia]</ref>
+
+=== Adoption in humanities ===
+In [[Humanities|humanities disciplines]] such as [[philosophy of mind]] and [[behaviorism]], one of the uses of black box theory is to describe and understand [[psychological]] factors in fields such as marketing when applied to an analysis of [[consumer behaviour]].<ref>[http://www.marcbowles.com/courses/adv_dip/module12/chapter4/amc12_ch4_two.htm Institute for working futures] {{webarchive |url=https://web.archive.org/web/20120626014001/http://www.marcbowles.com/courses/adv_dip/module12/chapter4/amc12_ch4_two.htm |date=26 June 2012 }} part of Advanced Diploma in Logistics and Management. Retrieved 11/09/2011</ref><ref>[https://books.google.com/books?id=8qlKaIq0AccC&printsec=frontcover#v=onepage&q&f=false Black-box theory used to understand Consumer behaviour] Marketing By Richard L. Sandhusen. Retrieved 11/09/2011</ref><ref>[http://designshack.co.uk/articles/business-articles/using-the-black-box-model-to-design-better-websites/ designing of websites] Retrieved 11/09/2011</ref>
+
+=== Black box theory ===
+{{Expand section|date=June 2019}}
+''Black Box theory'' is even wider in application than professional studies:
+
+{{Quotation|The child who tries to open a door has to manipulate the handle (the input) so as to produce the desired movement at the latch (the output); and he has to learn how to control the one by the other without being able to see the internal mechanism that links them. In our daily lives we are confronted at every turn with systems whose internal mechanisms are not fully open to inspection, and which must be treated by the methods appropriate to the Black Box.|Ashby<ref name="ash56" />}}
+
+{{Quotation|(...) This simple rule proved very effective and is an illustration of how the Black Box principle in cybernetics can be used to control situations that, if gone into deeply, may seem very complex. <br>A further example of the Black Box principle is the treatment of mental patients. The human brain is certainly a Black Box, and while a great deal of neurological research is going on to understand the mechanism of the brain, progress in treatment is also being made by observing patients' responses to stimuli.|Duckworth, Gear and Lockett<ref>WE Duckworth, AE Gear and AG Lockett (1977), "A Guide to Operational Research". {{DOI|10.1007/978-94-011-6910-3}}</ref>}}
+
+==Applications==
+[[File:Blackbox3D-obs.png|thumb|252px|When the observer (an [[Multi-agent system|agent]]) can also do some stimulus (input), the relation with the black box is not only an observation, but an [[experiment]].]]
+
+=== Computing and mathematics ===
+
+*In [[computer programming]] and [[software engineering]], ''[[black box testing]]'' is used to check that the output of a program is as expected, given certain inputs.<ref>Beizer, Boris; ''Black-Box Testing: Techniques for Functional Testing of Software and Systems'', 1995, {{ISBN|0-471-12094-4}}</ref> The term "black box" is used because the actual program being executed is not examined.
+* In [[computing]] in general, a ''black box program'' is one where the user cannot see the inner workings (perhaps because it is a [[closed source]] program) or one which has no side effects and the function of which need not be examined, a routine suitable for re-use.
+* Also in [[computing]], a black box refers to a piece of equipment provided by a vendor, for the purpose of using that vendor's product. It is often the case that the vendor maintains and supports this equipment, and the company receiving the black box typically is hands-off.
+*In [[mathematical model]]ing, a limiting case.
+
+=== Science and technology ===
+
+*In [[neural network]]ing or [[heuristic algorithm]]s (computer terms generally used to describe 'learning' computers or 'AI simulations'), a black box is used to describe the constantly changing section of the program environment which cannot easily be tested by the programmers. This is also called a [[White box (software engineering)|white box]] in the context that the program code can be seen, but the code is so complex that it is functionally equivalent to a black box.
+* In [[physics]], a black box is a system whose internal structure is unknown, or need not be considered for a particular purpose.
+*In [[cryptography]] to capture the notion of knowledge obtained by an algorithm through the execution of a [[cryptographic protocol]] such as a [[zero-knowledge proof]] protocol. If the output of an algorithm when interacting with the protocol matches that of a simulator given some inputs, it 'need not know' anything more than those inputs.
+
+=== Other applications ===
+
+*In [[philosophy]] and [[psychology]], the school of [[behaviorism]] sees the human mind as a black box;<ref name="FriSil06">"Mind as a Black Box: The Behaviorist Approach", pp. 85-88, in Friedenberg, Jay; and Silverman, Gordon; ''Cognitive Science: An Introduction to the Study of Mind'', Sage Publications, 2006.</ref> see ''[[#Other theories|other theories]]''.
+
+== See also ==
+{{Div col}}
+* [[Black box group]]
+<!-- * [[Black box theory]] -->
+* [[Blackboxing]]
+* [[Flight recorder]]
+* [[Grey box model]]
+* [[Hysteresis]]
+* ''Open system'': 
+** [[Open system (systems theory)|in (general) Systems theory]]
+** [[Thermodynamic system#Open system|in Thermodynamics]]
+** [[Feed forward (control)#Overview|in Control theory]] 
+* [[Multi-agent system]]
+* [[Prediction]]/[[Retrodiction]]
+* Related theories
+** [[Oracle machine]]
+** [[Pattern recognition]]
+** [[Systems theory]]
+** [[Signal processing]]
+* [[System identification]]
+* [[Stimulus–response model]]
+{{Div col end}}
+
+==References==
+{{reflist}}
+
+{{Authority control}}
+
+[[Category:Cybernetics]]
+[[Category:Systems theory]]
+[[Category:Metatheory of science]]
+[[Category:Systems science]]
+[[Category:Metaphors referring to objects]]
+[[Category:Software design patterns]]
+[[Category:Programming principles]]
+
+[[vi:Hộp đen]]

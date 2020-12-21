@@ -1,0 +1,12 @@
+'''Base calling''' is the process of assigning [[nucleobase]]s to [[chromatogram]] peaks or electrical current changes resulting from nucleotides passing through a nanopore. One computer program for accomplishing this job is [[Phred base calling|Phred base-calling]], which is a widely used basecalling software program by both academic and commercial [[DNA sequencing]] laboratories because of its high base calling accuracy.<ref>Richterich P. (1998): Estimation of errors in "raw" DNA sequences: a validation study. Genome Res. 8(3):251–259. {{PMID|9521928}}</ref>
+
+Base callers for Nanopore sequencing use neural networks trained on current signals obtained from real sequencing data. <ref>Wick RR (2019): Performance of neural network basecalling tools for Oxford Nanopore sequencing. Genome Biology. 20(129).</ref>
+ 
+== Base calling accuracy ==
+Base calling can be assessed by two metrics, read accuracy and consensus accuracy. Read accuracy refers to how accurate the called base is to a known reference. Consensus accuracy refers to how accurate a consensus sequence is compared to overlapping reads from the same genetic locus. <ref>Wick RR (2019): Performance of neural network basecalling tools for Oxford Nanopore sequencing. Genome Biology. 20(129).</ref>
+
+== References ==
+{{reflist}}
+
+[[Category:Molecular biology]]
+[[Category:Bioinformatics]]

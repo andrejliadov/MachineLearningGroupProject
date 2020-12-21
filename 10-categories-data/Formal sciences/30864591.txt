@@ -1,0 +1,52 @@
+A '''Networked Control System''' ('''NCS''') is a [[control system]] wherein the control loops are closed through a communication [[computer network|network]]. The defining feature of an NCS is that control and feedback signals are exchanged among the system's components in the form of information packages through a network.
+
+== Overview ==
+The functionality of a typical NCS is established by the use of four basic elements: 
+# [[Sensors]], to acquire information,
+# [[Controller (control theory)|Controllers]], to provide decision and commands,
+# [[Actuators]], to perform the control commands and
+# [[Telecommunication network|Communication network]], to enable exchange of information.
+
+The most important feature of an NCS is that it connects cyberspace to physical space enabling the execution of several tasks from long distance. In addition, NCSs eliminate unnecessary wiring reducing the complexity and the overall cost in designing and implementing the control systems. They can also be easily modified or upgraded by adding sensors, actuators, and controllers to them with relatively low cost and no major change in their structure. Furthermore, featuring efficient sharing of data between their controllers, NCSs are able to easily fuse global information to make intelligent decisions over large physical spaces. 
+                                                                                     
+Their potential applications are numerous and cover a wide range of industries, such as space and terrestrial exploration, access in hazardous environments, factory automation, remote diagnostics and troubleshooting, experimental facilities, domestic robots, aircraft, automobiles, manufacturing plant monitoring, nursing homes and tele-operations. While the potential applications of NCSs are numerous, the proven applications are few, and the real opportunity in the area of NCSs is in developing real-world applications that realize the area's potential.
+
+===Types of communication networks===
+* [[Fieldbus]]es, e.g. CAN, LON etc.
+* IP/[[Ethernet]]
+* Wireless networks, e.g. [[Bluetooth]] or [[ZigBee|ZigBee or Zwave]]. The term [[Wireless Networked Control System]] (WNCS) is often used in this connection.
+
+===Problems and solutions===
+[[File:ISpace.jpg|320px|thumb|right|iSpace concept]]
+Advent and development of the Internet combined with the advantages provided by NCS attracted the interest of researchers around the globe. Along with the advantages, several challenges also emerged giving rise to many important research topics. New control strategies, kinematics of the actuators in the systems, reliability and security of communications, bandwidth allocation, development of data communication protocols, corresponding [[Fault detection and isolation|fault detection]] and [[fault tolerant]] control strategies, real-time information collection and efficient processing of sensors data are some of the relative topics studied in depth.
+
+The insertion of the communication network in the feedback [[control loop]] makes the analysis and design of an NCS complex, since it imposes additional time delays in control loops or possibility of packages loss. Depending on the application, time-delays could impose severe degradation on the system performance.
+
+To alleviate the time-delay effect, Y. Tipsuwan and M-Y. Chow, in ADAC Lab at North Carolina State University, proposed the [[Gain Scheduler Middleware]] (GSM) methodology and applied it in iSpace. S. Munir and W.J. Book (Georgia Institute of Technology) used a [[Smith predictor]], a [[Kalman filter]] and an energy regulator to perform teleoperation through the Internet.<ref>[http://www.adac.ncsu.edu/ ADAC Lab]</ref><ref>[http://www.adac.ncsu.edu/iSpace1/home.html iSpace]</ref>
+
+K.C. Lee, S. Lee and H.H. Lee used a [[genetic algorithm]] to design a controller used in a NCS. Many other researchers provided solutions using concepts from several control areas such as robust control, optimal [[stochastic control]], model predictive control, fuzzy logic etc.
+
+Moreover, a most critical and important issue surrounding the design of distributed NCSs with the successively increasing complexity is to meet the requirements on system reliability and dependability, while guaranteeing a high system performance over a wide operating range. This makes network based fault detection and diagnosis techniques, which are essential to monitor the system performance,  receive more and more attention.
+
+===References===
+{{reflist}}
+
+== Further reading ==
+* D. Hristu-Varsakelis and W. S. Levine (Ed.): Handbook of Networked and Embedded Control Systems, 2005. {{ISBN|0-8176-3239-5}}.
+* {{cite journal | last1 = Hespanha | first1 = J. P. | last2 = Naghshtabrizi | first2 = P. | last3 = Xu | first3 = Y. | year = 2007 | title =  A Survey of Recent Results in Networked Control Systems| journal = Proceedings of the IEEE | volume = 95 | issue = 1| pages = 138–162 | doi = 10.1109/JPROC.2006.887288 | citeseerx = 10.1.1.112.3798 | s2cid = 5660618 }}
+* {{cite journal | last1 = Quevedo | first1 = D. E. | last2 = Nesic | first2 = D. | year = 2012 | title = Robust stability of packetized predictive control of nonlinear systems with disturbances and Markovian packet losses | doi = 10.1016/j.automatica.2012.05.046 | journal = Automatica | volume = 48 | issue = 8| pages = 1803–1811 | url = https://eprints.qut.edu.au/200288/1/10_0742_04_MS.pdf }}
+* {{cite journal | last1 = Pin | first1 = G. | last2 = Parisini | first2 = T. | year = 2011 | title = Networked Predictive Control of Uncertain Constrained Nonlinear Systems: Recursive Feasibility and Input-to-State Stability Analysis | doi = 10.1109/TAC.2010.2051091 | journal = IEEE Transactions on Automatic Control | volume = 56 | issue = 1| pages = 72–87 | hdl = 10044/1/15547 | s2cid = 14365396 | hdl-access = free }}
+* S. Tatikonda, Control under communication constraints, MIT Ph.D dissertation, 2000. http://dspace.mit.edu/bitstream/1721.1/16755/1/48245028.pdf
+* O. Imer, Optimal estimation and control under communication network constraints, UIUC Ph.D. dissertation, 2005. http://decision.csl.uiuc.edu/~imer/phdsmallfont.pdf{{Dead link|date=April 2020 |bot=InternetArchiveBot |fix-attempted=yes }}
+* Y. Q. Wang, H. Ye and G. Z. Wang. Fault detection of NCS based on eigendecomposition, adaptive evaluation and adaptive threshold. ''International Journal of Control'', vol. 80, no. 12, pp.&nbsp;1903–1911, 2007.
+* M. Mesbahi and M. Egerstedt. Graph Theoretic Methods in Multiagent Networks, Princeton University Press, 2010. {{ISBN|978-1-4008-3535-5}}. https://sites.google.com/site/mesbahiegerstedt/home
+* {{cite journal | last1 = Martins | first1 = N. C. | last2 = Dahleh | first2 = M. A. | last3 = Elia | first3 = N. | year = 2006 | title = Feedback stabilization of uncertain systems in the presence of a direct link | journal = IEEE Transactions on Automatic Control | volume = 51 | issue = 3| pages = 438–447 | doi=10.1109/tac.2006.871940| s2cid = 620399 }}
+* {{cite journal | last1 = Mahajan | first1 = A. | last2 = Martins | first2 = N. C. | last3 = Rotkowitz | first3 = M. C. | last4 = Yuksel | first4 = S. | title = Information structures in optimal decentralized control | journal = Proceedings of the IEEE Conference on Decision and Control | volume = 2012 | pages = 1291–1306 }}
+* {{cite journal | last1 = Dong | first1 = J. | last2 = Kim | first2 = J. | year = 2012 | title = Markov-chain-based Output Feedback Method for Stabilization of Networked Control Systems with Random Time Delays and Packet Losses | journal = International Journal of Control, Automation, and Systems | volume = 10 | issue = 5| pages = 1013–1022 | doi=10.1007/s12555-012-0519-x| s2cid = 16994214 }}
+
+==External links==
+*[http://www.adac.ncsu.edu/ Advanced Diagnosis Automation and Control Lab (NCSU)]
+*[https://web.archive.org/web/20180315050920/http://feednetback.eu/ Co-design Framework to Integrate Communication, Control, Computation and Energy Management in Networked Control Systems (FeedNetback Project)]
+
+[[Category:Control theory|*]]
+[[Category:Control engineering]]

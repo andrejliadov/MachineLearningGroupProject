@@ -1,0 +1,138 @@
+{{short description|Term in probability theory}}
+{{DISPLAYTITLE:(''a'',''b'',0) class of distributions}}
+In [[probability theory]], the distribution of a [[discrete random variable]] ''N'' whose values are nonnegative integers is said to be a member of the '''(''a'', ''b'', 0) class of distributions''' if its [[probability mass function]] obeys
+
+: <math>\frac{p_k}{p_{k-1}} = a + \frac{b}{k}, \qquad k = 1, 2, 3, \dots</math>
+
+where <math>p_k = P(N = k)</math> (provided <math>a</math> and <math>b</math> exist and are real).
+
+There are only three discrete distributions that satisfy the full form of this relationship: the [[Poisson distribution|Poisson]], [[Binomial distribution|binomial]] and [[Negative binomial distribution|negative binomial]] distributions. These are also the three discrete distributions among the six members of the [[natural exponential family#Quadratic variance functions|natural exponential family with quadratic variance functions]] (NEF–QVF). 
+
+More general distributions can be defined by fixing some initial values of ''p<sub>j</sub>'' and applying the recursion to define subsequent values. This can be of use in fitting distributions to empirical data. However, some further well-known distributions are available if the recursion above need only hold for a restricted range of values of ''k'':<ref name="Schmidt"/> for example the [[logarithmic distribution]] and the discrete [[Uniform distribution (discrete)|uniform distribution]].
+
+The (''a'', ''b'', 0) class of distributions has important applications in [[actuarial science]] in the context of loss models.<ref name=Klugman/>
+
+== Properties ==
+Sundt<ref name=Sundt/> proved that only the [[binomial distribution]], the [[Poisson distribution]] and the [[negative binomial distribution]] belong to this class of distributions, with each distribution being represented by a different sign of&nbsp;''a''. Furthermore, it was shown by Fackler<ref name=Fackler/> that there is a universal formula for all three distributions, called the '''(united) Panjer distribution'''.
+
+The more usual parameters of these distributions are determined by both ''a'' and&nbsp;''b''. The properties of these distributions in relation to the present class of distributions are summarised in the following table. Note that <math>W_N(x)\,</math> denotes the [[probability generating function]].
+
+{| class="wikitable" 
+!   class="hintergrundfarbe6"  |Distribution
+!   class="hintergrundfarbe6"  |<math> P[N=k]\, </math>
+!   class="hintergrundfarbe6"  |<math> a\, </math>
+!   class="hintergrundfarbe6"  |<math> b \,</math>
+!   class="hintergrundfarbe6"  |<math> p_0\, </math>
+!   class="hintergrundfarbe6"  |<math> W_N(x)\, </math>
+!   class="hintergrundfarbe6"  |<math> E[N]\, </math>
+!   class="hintergrundfarbe6"  |<math> Var(N)\, </math>
+|-
+|[[Binomial distribution|Binomial]]
+|<math> \binom{n}{k} p^k (1-p)^{n-k} </math>
+|<math> \frac{-p}{1-p} </math>
+|<math> \frac{p(n+1)}{1-p} </math>
+|<math> (1-p)^n\, </math>
+|<math> (px+(1-p))^{n} \,</math>
+|<math> np\, </math>
+|<math> np(1-p) \,</math>
+|-
+|[[Poisson distribution|Poisson]]
+|<math> e^{-\lambda}\frac{ \lambda^k}{k!}\, </math>
+|<math> 0\, </math>
+|<math> \lambda \,</math>
+|<math> e^{- \lambda}\, </math>
+|<math> e^{\lambda(x-1)} \,</math>
+|<math> \lambda\, </math>
+|<math> \lambda \,</math>
+|-
+|[[Negative binomial distribution|Negative binomial]]
+|<math> \frac{\Gamma(r+k)}{k!\,\Gamma(r)}\,p^r\,(1-p)^k \,</math>
+|<math> 1-p\, </math>
+|<math> (1-p)(r-1)\, </math>
+|<math> p^r \,</math>
+|<math> \left( \frac{p}{1 - x(1-p)}\right) ^r \,</math>
+|<math> \frac{r(1-p)}{p} \, </math>
+|<math> \frac{r(1-p)}{p^2} \,</math>
+|-
+|Panjer distribution
+|<math> \left( 1+\frac{\lambda}{\alpha} \right)^{-\alpha} \frac{\lambda^k}{k!} \prod_{i=0}^{k-1}\frac{\alpha+i}{\alpha+\lambda} \,</math>
+|<math> \frac{\lambda}{\alpha+\lambda}\, </math>
+|<math> \frac{(\alpha-1)\lambda}{\alpha+\lambda}\, </math>
+|<math> \left( 1+\frac{\lambda}{\alpha} \right)^{-\alpha} \,</math>
+|<math> \left( 1-\frac{\lambda}{\alpha}(x-1)\right)^{-\alpha} \,</math>
+|<math> \lambda \, </math>
+|<math> \lambda \left( 1 + \frac{\lambda}{\alpha} \right) \,</math>
+|-
+|}
+
+Note that the Panjer distribution reduces to the Poisson distribution in the limit case <math>\alpha \rightarrow \pm\infty</math>; it coincides with the negative binomial distribution for positive, finite real numbers <math>\alpha\in \mathbb{R}_{>0}</math>, and it equals the binomial distribution for negative integers <math> -\alpha \in \mathbb{Z}</math>.
+
+== Plotting ==
+An easy way to quickly determine whether a given sample was taken from a distribution from the (''a'',''b'',0) class is by graphing the ratio of two consecutive observed data (multiplied by a constant) against the ''x''-axis.
+
+By multiplying both sides of the recursive formula by <math>k</math>, you get
+
+: <math>k \, \frac{p_k}{p_{k-1}} = ak + b,</math>
+
+which shows that the left side is obviously a linear function of <math>k</math>. When using a sample of <math>n</math> data, an approximation of the <math>p_k</math>'s need to be done. If <math>n_k</math> represents the number of observations having the value <math>k</math>, then <math>\hat{p}_k = \frac{n_k}{n}</math> is an [[Estimator bias|unbiased]] estimator of the true <math>p_k</math>.
+
+Therefore, if a linear trend is seen, then it can be assumed that the data is taken from an (''a'',''b'',0) distribution. Moreover, the [[slope]] of the function would be the parameter <math>a</math>, while the ordinate at the origin would be <math>b</math>.
+
+==See also==
+*[[Panjer recursion]]
+== References ==
+{{Reflist|refs=
+<ref name="Schmidt">{{cite journal
+ |first1=Klaus Th. 
+ |last1=Hess 
+ |first2=Anett 
+ |last2=Liewald 
+ |first3=Klaus D. 
+ |last3=Schmidt 
+ |year=2002 
+ |title=An extension of Panjer's recursion 
+ |journal=ASTIN Bulletin 
+ |volume=32 
+ |issue=2 
+ |pages=283–297 
+ |url=http://www.casact.org/library/astin/vol32no2/283.pdf 
+ |doi=10.2143/AST.32.2.1030 
+ |archiveurl=https://www.webcitation.org/5hg38Pbjx?url=http://www.casact.org/library/astin/vol32no2/283.pdf 
+ |archivedate=2009-06-20 
+ |url-status=live 
+ |accessdate=2009-06-18 
+}}</ref>
+<ref name=Klugman>{{cite book
+ | last1 = Klugman | first1 = Stuart | author2-link = Harry Panjer | last2 = Panjer | first2 = Harry | last3 = Gordon | first3 = Willmot
+ | year = 2004
+ | title = Loss Models: From Data to Decisions
+ | edition = 2nd
+ | location = New Jersey
+ | publisher = Wiley
+ | series = Series in Probability and Statistics
+ | isbn = 978-0-471-21577-6
+ }}</ref>
+<ref name=Sundt>{{cite journal
+ | first1 = Bjørn | last1 = Sundt | first2 = William S. | last2 = Jewell
+ | title = Further results on recursive evaluation of compound distributions
+ | journal = ASTIN Bulletin
+ | volume = 12
+ | issue = 1
+ | year = 1981
+ | pages = 27–39
+ | url = http://www.casact.org/library/astin/vol12no1/27.pdf
+ | doi = 10.1017/S0515036100006802 }}</ref>
+<ref name=Fackler>{{cite journal
+ | first1 = Michael | last1 = Fackler 
+ | title = Panjer class united - one formula for the Poisson, Binomial and Negative Binomial distribution
+ | journal = ASTIN Colloquium
+ | year = 2009
+ | publisher = [[International Actuarial Association]]
+ | url = https://www.actuaries.org/ASTIN/Colloquia/Helsinki/Papers/S7_13_Fackler.pdf
+ }}</ref>}}
+
+{{DEFAULTSORT:A,b,0 class of distributions}}
+{{ProbDistributions|families}}
+[[Category:Discrete distributions]]
+[[Category:Systems of probability distributions]]
+[[Category:Actuarial science]]

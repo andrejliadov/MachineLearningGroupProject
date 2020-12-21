@@ -1,0 +1,68 @@
+[[File:Longslit spectroscopy example.png|thumb|upright=1.3|Observation through a long slit allows simultaneously taking spectrographs of all parts of the objects which fall onto the slit. When observing spectral lines, different [[Doppler effect|Doppler shifts]] can be observed along a given spectral line, leading to velocity profiles of the object along the slit.]]
+
+In [[astronomy]], '''long-slit spectroscopy''' involves observing a [[Astronomical object|celestial object]] using a [[spectrograph]] in which the entrance aperture is an elongated, narrow slit. Light entering the slit is then [[refraction|refracted]] using a [[Prism (optics)|prism]], [[diffraction grating]], or [[grism]]. The dispersed light is typically recorded on a [[Charge-coupled device|charge-coupled device]] detector.<ref>
+{{Cite web
+  | last = Sloan
+  | first = Gregory C.
+  | title = Long-slit spectroscopy
+  | date = December 20, 2007
+  | url = http://isc.astro.cornell.edu/~sloan/research/longslit.html
+  | format = Website
+  | accessdate = August 7, 2011
+}}</ref> 
+
+==Velocity profiles==
+[[File:Nebula velocity profiles.jpg|thumb|upright=1.3|Typical velocity profiles of several nebulae observed using long-slit spectroscopy.]]
+This technique can be used to observe the [[rotation curve]] of a galaxy, as those stars moving towards the observer are [[blueshift|blue-shifted]], while stars moving away are [[redshift|red-shifted]].<ref>{{Cite web
+  | last = Vogt
+  | first = Nicole
+  | title = Example: Galaxy Rotation Curve
+  | url = http://www.astro.cornell.edu/academics/courses/astro2201/rotcurve.htm
+  | format = Website
+  | accessdate = August 7, 2011
+  }}</ref>
+
+Long-slit spectroscopy can also be used to observe the expansion of [[optical depth|optically-thin]] nebulae. When the spectrographic slit extends over the diameter of a nebula, the lines of the velocity profile meet at the edges. In the middle of the nebula, the line splits in two, since one component is redshifted and one is blueshifted. The blueshifted component will appear brighter as it is on the "near side" of the nebula, and is as such subject to a smaller degree of [[attenuation]] as the light coming from the far side of the nebula. The tapered edges of the velocity profile stem from the fact that the material at the edge of the nebula is moving perpendicular to the line of sight and so its line of sight velocity will be zero relative to the rest of the nebula.<ref>{{Cite book
+  | last = Böhm-Vitense
+  | first = Erika
+  | title = Introduction to Stellar Astrophysics
+  | publisher = [[Cambridge University Press]]
+  | series = 
+  | volume = 3
+  | edition = 
+  | date = January 31, 1992
+  | location = 
+  | pages = 192
+  | isbn =978-0-521-34871-3
+  | jfm =
+  }}</ref>
+
+Several effects can contribute to the transverse broadening of the velocity profile. Individual stars themselves rotate as they orbit, so the side approaching will be blueshifted and the side moving away will be redshifted. Stars also have random (as well as [[orbit]]al) motion around the galaxy, meaning any individual star may depart significantly from the rest relative to its neighbours in the rotation curve. In [[Spiral galaxy|spiral galaxies]] this random motion is small compared to the [[Orbital eccentricity|low-eccentricity]] orbital motion, but this is not true for an [[elliptical galaxy]]. Molecular-scale [[Doppler broadening]] will also contribute.
+
+==Advantages==
+Long-slit spectroscopy can ameliorate problems with [[Contrast (vision)|contrast]] when observing structures near a very [[Luminosity#In astronomy|luminous]] source. The structure in question can be observed through a slit, thus [[Occultation|occulting]] the luminous source and allowing a greater [[signal-to-noise ratio]]. An example of this application would be the observation of the [[kinematics]] of [[Herbig–Haro object|Herbig-Haro objects]] around their parent star.<ref>{{Cite web
+  | title = Observing the Bipolar Jet Phase
+  | publisher = Jetset
+  | url = http://www.jetsets.org/bipolarjet.html
+  | accessdate = August 8, 2011
+  | archive-url = https://archive.is/20110926010325/http://www.jetsets.org/bipolarjet.html
+  | archive-date = September 26, 2011
+  | url-status = dead
+  }}</ref>
+
+==See also==
+* [[Single slit#Single-slit diffraction|Diffraction]]
+* [[Galaxy]]
+* [[Spectroscopy]]
+
+==References==
+{{reflist}}
+
+==External links==
+* [https://web.archive.org/web/20120328162601/http://robfatland.net/MainSequence/StellarNucleosynthesis.html Instructions for making a crude long-slit spectrograph]
+
+[[Category:Concepts in physics]]
+[[Category:Diffraction]]
+[[Category:Observational astronomy]]
+[[Category:Optics]]
+[[Category:Astronomical spectroscopy]]

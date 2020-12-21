@@ -1,0 +1,66 @@
+{{About|computation using reaction–diffusion systems|computation using single molecules as active elements|Molecular scale electronics|and|Molecular logic gate}}
+
+A '''chemical computer''', also called a '''reaction-diffusion computer''', '''Belousov–Zhabotinsky''' ('''BZ''') '''computer''', or '''gooware computer''', is an [[unconventional computing|unconventional computer]] based on a semi-solid chemical "soup" where data are represented by varying concentrations of chemicals.<ref name="ijirt.org">{{cite web|url=http://www.ijirt.org/paperpublished/IJIRT101166_PAPER.pdf |title=Archived copy |accessdate=2015-06-14 |url-status=dead |archiveurl=https://web.archive.org/web/20150615085700/http://www.ijirt.org/paperpublished/IJIRT101166_PAPER.pdf |archivedate=2015-06-15 }}</ref> The computations are performed by naturally occurring [[chemical reaction]]s.
+
+==Background==
+Originally chemical reactions were seen as a simple move towards a stable equilibrium which was not very promising for computation. This was changed by a discovery made by [[Boris Pavlovich Belousov|Boris Belousov]], a [[Soviet Union|Soviet]] scientist, in the 1950s. He created a [[chemical reaction]] between different salts and acids that swing back and forth between being yellow and clear because the concentration of the different components changes up and down in a cyclic way. At the time this was considered impossible because it seemed to go against the [[second law of thermodynamics]], which says that in a closed system the [[entropy]] will only increase over time, causing the components in the mixture to distribute themselves till equilibrium is gained and making any changes in the concentration impossible. But modern theoretical analyses shows sufficiently complicated reactions can indeed comprise wave phenomena without breaking the laws of nature.<ref name="ijirt.org"/><ref>{{cite web|url=http://nautil.us/issue/21/information/moores-law-is-about-to-get-weird|title=Moore's Law Is About to Get Weird|work=Nautilus}}</ref> (A convincing directly visible demonstration was achieved by [[Anatol Zhabotinsky]] with the [[Belousov–Zhabotinsky reaction]] showing spiraling colored waves.)
+
+The wave properties of the [[Belousov–Zhabotinsky reaction|BZ]] reaction means it can move information in the same way as all other waves. This still leaves the need for computation, performed by conventional microchips using the [[binary code]] transmitting and changing ones and zeros through a complicated system of [[logic gate]]s. To perform any conceivable computation it is sufficient to have [[NAND logic|NAND gates]]. (A NAND gate has two bits input. Its output is 0 if both bits are 1, otherwise it's 1). In the chemical computer version logic gates are implemented by concentration waves blocking or amplifying each other in different ways.
+
+==Current research==
+In 1989 it was demonstrated how light-sensitive chemical reactions could perform [[image processing]].<ref>{{cite journal
+ |author1=L. Kuhnert |author2=K. I. Agladze |author3=V. I. Krinsky | year = 1989
+ | title = Image processing using light-sensitive chemical waves
+ | journal = Nature
+ | volume = 337 | issue = 6204| pages = 244–247
+ | doi = 10.1038/337244a0
+}}</ref> This led to an upsurge in the field of chemical computing.
+[[Andrew Adamatzky]] at the [[University of the West of England]] has demonstrated simple logic gates using [[reaction–diffusion]] processes.<ref>{{cite journal
+ |author1=Adamatzky, Andrew   |author2=De Lacy Costello, Benjamin
+ | year = 2002
+ | title = Experimental logical gates in a reaction-diffusion medium: The XOR gate and beyond
+ | journal = [[Physical Review E]] 
+ | volume = 66  | issue = 4  | page = 046112 
+ | doi =  10.1103/PhysRevE.66.046112
+ }}</ref> Furthermore, he has theoretically shown how a hypothetical "2<sup>+</sup> medium" modelled as a [[cellular automaton]] can perform computation.<ref>{{cite journal
+ | author =  Andrew I. Adamatzky
+ | year = 1997
+ | title = Information-processing capabilities of chemical reaction-diffusion systems. 1. Belousov-Zhabotinsky media in hydrogel matrices and on solid supports
+ | journal = [[Advanced Materials for Optics and Electronics]]
+ | volume = 7 | issue = 5 | pages = 263–272
+ | doi =10.1002/(SICI)1099-0712(199709)7:5<263::AID-AMO317>3.0.CO;2-Y
+ }}</ref>  Adamatzky was inspired by a theoretical article on [[Billiard-ball computer|computation by using balls on a billiard table]] to transfer this principle to the BZ-chemicals and replace the billiard balls with waves: if two waves meet in the solution, they create a third wave which is registered as a 1. He has tested the theory in practice and is working to produce some thousand chemical versions of logic gates to create a chemical pocket calculator.{{Citation needed|date=February 2007}}
+One of the problems with the present version of this technology is the speed of the waves; they only spread at a rate of a few millimeters per minute. According to Adamatzky, this problem can be eliminated by placing the gates very close to each other, to make sure the signals are transferred quickly. Another possibility could be new chemical reactions where waves propagate much faster.
+
+In 2014, a chemical computing system was developed by an international team headed by the [[Swiss Federal Laboratories for Materials Science and Technology]] (Empa). The chemical computer used surface tension calculations derived from the [[Marangoni effect]] using an acidic gel to find the most efficient route between points A and B, outpacing a conventional [[satellite navigation]] system attempting to calculate the same route.<ref name="engineering.com">{{cite web|url=http://www.engineering.com/DesignerEdge/DesignerEdgeArticles/ArticleID/8806/Chemical-GPS-Outpreforms-Satellite-Navigation-System.aspx|title=Chemical GPS Outpreforms Satellite Navigation System  > ENGINEERING.com|work=engineering.com}}</ref><ref name="gizmag.com">{{cite web|url=http://www.gizmag.com/chemical-gps/34446/|title=Empa invents chemical computer faster than a satnav|work=gizmag.com}}</ref>
+
+In 2015, [[Stanford University]] graduate students created a computer using magnetic fields and water droplets infused with magnetic [[nanoparticles]], illustrating some of the basic principles behind a chemical computer.<ref>{{cite web|url=http://www.extremetech.com/extreme/208086-stanford-has-created-a-water-droplet-computer|title=Stanford has created a water-droplet computer - ExtremeTech|work=ExtremeTech}}</ref><ref>{{cite web|url=http://www.zmescience.com/science/physics/water-droplet-computer-0534534/|title=This computer clocks uses water droplets, manipulating information and matter at the same time|work=ZME Science}}</ref>
+
+In 2015, [[University of Washington]] students created a programming language for chemical reactions (originally developed for [[DNA]] analysis).<ref>{{cite web|url=http://www.geekwire.com/2013/programming-language-dna/|title=Chemical computer: Researchers develop programming language to control DNA molecules|author=Taylor Soper|work=GeekWire}}</ref><ref>{{cite web|url=http://www.washington.edu/news/2013/09/30/uw-engineers-invent-programming-language-to-build-synthetic-dna/|title=UW engineers invent programming language to build synthetic DNA|work=washington.edu}}</ref>
+
+In 2020, [[University of Glasgow]] researchers created a chemical computer using 3D-printed parts and magnetic stirrers in order to control the oscillations of BZ medium. In doing so, they were able to compute binary logic gates, and perform pattern recognition.<ref>{{cite web|url=https://www.nature.com/articles/s41467-020-15190-3|title=A programmable chemical computer with memory and pattern recognition|work=Nature Communications}}</ref>
+
+==See also==
+*[[Molecular logic gate]]
+*[[Computer]]
+*[[Quantum computing]]
+*[[DNA computing]]
+*[[Biocomputer|Biocomputing]]
+*[[Organic computing]]
+*[[Fluidics]]
+*[[Water integrator]]
+*[[History of computing hardware]]
+*[[TOP500]]
+*[[Biochemistry]]
+*[[Fluid dynamics]]
+
+==References==
+{{reflist|30em}}
+*[http://www.newscientisttech.com/article/mg18524921.000.html "Introducing the glooper computer" - New Scientist article by Duncan Graham-Rowe] (Restricted access)
+*[http://www.rsc.org/chemistryworld/News/2007/January/24010701.asp]
+
+[[Category:Theoretical computer science]]
+[[Category:Quantum computing]]
+[[Category:Theoretical chemistry]]
+[[Category:Classes of computers]]
+[[Category:Emerging technologies]]

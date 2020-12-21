@@ -1,0 +1,36 @@
+{{short description|4-component vector data type in computer science}}
+{{distinguish|four-vector}}
+In [[computer science]], a '''4D vector''' is a 4-component [[Vector (mathematics)|vector]] [[data type]]. Uses include [[homogeneous coordinates]] for [[3-dimensional space]] in [[computer graphics]], and ''red green blue alpha'' ([[RGBA]]) values for [[bitmap]] images with a color and [[alpha channel]] (as such they are widely used in computer graphics). They may also represent [[quaternion]]s (useful for rotations) although the algebra they define is different.
+
+== Computer hardware support ==
+<!-- Todo: some earlier workstations must have had similar vector engines. -->
+Some [[microprocessor]]s have hardware support for 4D vectors with instructions dealing with 4 [[SIMD lane|lane]] ''single instruction, multiple data'' ([[SIMD]]) instructions, usually with a [[128-bit]] data path and [[32-bit floating point]] fields.<ref>{{cite web|title=intel SSE intrinsics|url=https://software.intel.com/sites/landingpage/IntrinsicsGuide/#techs=SSE}}</ref>
+
+Specific instructions (e.g., 4 element [[dot product]]) may facilitate the use of one 128-bit register to represent a 4D vector. For example, in chronological order: [[Hitachi SH4]], [[PowerPC]] VMX128 extension,<ref>{{cite web|title=Putting It All Together: Anatomy of the XBox 360 Game Console (see VMX128 dot product)|url=https://www.cis.upenn.edu/~milom/cis371-Spring11/lectures/15_xbox.pdf}}</ref> and Intel [[x86]] SSE4.<ref>{{cite web|title=intel SSE4 dot product|url=https://software.intel.com/en-us/node/583111}}</ref>
+
+Some 4-element vector engines (e.g., the [[PS2 vector unit]]s) went further with the ability to broadcast components as multiply sources, and [[cross product]] support.<ref>{{cite web|title=VU0 user manual|url=https://www.dropbox.com/s/e3lsv80kb1jb6sh/VU0E.PDF}}</ref><ref>{{cite web|title=feasibility study on using the playstation 2 for scientific computing|url=http://gamehacking.org/faqs/VPUThesis.pdf}}</ref>  Earlier generations of [[graphics processing unit]] (GPU) shader pipelines used ''[[very long instruction word]]'' (VLIW) [[instruction set]]s tailored for similar operations.
+
+== Software support ==
+SIMD use for 4D vectors can be conveniently wrapped in a ''[[vector maths library]]'' (commonly implemented in [[C (programming language)|C]] or [[C++]])<ref>{{cite web|title=sce vectormath|url=https://github.com/erwincoumans/sce_vectormath}}</ref><ref>{{cite web|title=GLM (vector maths library)|url=http://glm.g-truc.net/0.9.7/index.html}}</ref><ref>{{cite web|title=Microsoft DirectX Maths|url=https://msdn.microsoft.com/en-us/library/windows/desktop/ee415652(v=vs.85).aspx}}</ref> 
+commonly used in [[video game development]], along with [[4×4 matrix]] support. These are distinct from more general [[linear algebra libraries]] in other domains focussing on [[Matrix (mathematics)|matrices]] of arbitrary size. Such libraries sometimes support 3D vectors padded to 4D or loading 3D data into 4D registers, with arithmetic mapped efficiently to SIMD operations by per platform [[intrinsic function]] implementations. There is choice between [[AOS and SOA]] approaches given the availability of 4 element registers, versus SIMD instructions that are usually tailored toward homogenous data.
+
+[[Shading language]]s for [[graphics processing unit]] (GPU) programming usually have a 4D datatypes (along with 2D, 3D) with x-y-z-w accessors including ''[[Permutation|permutes]]'' or ''swizzle'' access, e.g., allowing easy swapping of RGBA or ARGB formats, accessing two 2D vectors packed into one 4D vector, etc.<ref>{{cite web|title=GLSL data types & swizzling|url=https://www.opengl.org/wiki/Data_Type_(GLSL)#Swizzling}}</ref> Modern GPUs have since moved to scalar [[single instruction, multiple threads]] (SIMT) pipelines (for more efficiency in ''[[general-purpose computing on graphics processing units]]'' (GPGPU)) but still support this programming model.<ref>{{cite web|title=AMD graphics core next|url=http://www.anandtech.com/show/4455/amds-graphics-core-next-preview-amd-architects-for-compute/4}}</ref>
+
+== See also ==
+* [[Euclidean space]]
+* [[Four-dimensional space]]
+* [[Quaternion]]
+* [[Dimension]]
+* [[RGBA color space]]
+* [[Tesseract]]
+* [[4×4 matrix]]
+
+==References==
+{{Reflist|30em}}
+
+{{DEFAULTSORT:4D Vector}}
+[[Category:Mathematical structures]]
+[[Category:Vectors (mathematics and physics)]]
+[[Category:Computer science]]
+[[Category:Computer hardware]]
+[[Category:Data types]]

@@ -6,4 +6,12 @@ The '''Arbitrary-Lagrangian-Eulerian General Research Applications''' ('''ALEGRA
 
 [[Category:Computational physics]]
 [[Category:Physics software]]
+[[Category:Sandia National Laboratories]]{{one source|date=March 2018}}
+The '''Arbitrary-Lagrangian-Eulerian General Research Applications''' ('''ALEGRA''') code is a next-generation large-deformation [[Shock (mechanics)|shock physics]] code created by researchers at [[Sandia National Laboratory]].  This code uses an "Arbitrary Lagrangian-Eulerian" (ALE) formulation on an unstructured mesh, allowing one to designate whether material should flow through a stationary mesh (pure [[Eulerian method|Eulerian]]), whether the mesh should move with the material (pure Lagrangian), or whether the mesh should be allowed to move independently of the material motion (arbitrary).  The arbitrary formulation permits a simulation to proceed in Lagrangian fashion until the mesh becomes too highly distorted. Points in the most deformed regions of the mesh are then repositioned to reduce the distortion to acceptable levels.  This reduces the overall computational expense of a purely Lagrangian approach while being more accurate than the traditional Eulerian method.
+
+==External links==
+* [http://www.cs.sandia.gov/ALEGRA/Alegra_Home.html]
+
+[[Category:Computational physics]]
+[[Category:Physics software]]
 [[Category:Sandia National Laboratories]]

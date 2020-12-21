@@ -1,0 +1,18 @@
+{{Unreferenced|date=September 2010}}
+
+'''Aircraft-specific energy''' is a form of [[specific energy]] applied to aircraft and missile [[trajectory]] analysis. It represents the combined [[kinetic energy|kinetic]] and potential energy of the vehicle at any given time. It is the total energy of the vehicle (relative to the Earth's surface) per unit weight of the vehicle and being independent of the mass of the vehicle provides a powerful tool for the design of optimal trajectories. Aircraft-specific energy is very similar to [[specific orbital energy]] except that it is expressed as a positive quantity.  A zero value of aircraft-specific energy represents an aircraft at rest on the Earth's surface, and increases as speed and altitude increases. Orbital specific energy is zero at infinite altitude and decreases as one approaches the surface of the earth.  As with other forms of specific energy, aircraft-specific energy is an [[intensive property]] and is represented in units of length since it is independent of the mass of the vehicle.
+
+==Applications==
+The field of [[trajectory optimization]] has made use of the concept since the 1950s in the form of energy analysis.  In this approach, the specific energy is defined as one of the dynamic states of the problem and is the slowest varying state. All other states such as altitude and flight path angle are approximated as infinitely fast compared to the specific energy dynamics. This assumption allow the solution of optimal trajectories in a relatively simple form.
+
+The specific energy is computed by the total energy (as defined above relative the Earth's surface) divided by the mass of the vehicle. It is a key element in performance of aircraft and rockets. For a rocket flying vertically (in a vacuum), it is the [[apogee]] that the rocket would obtain. It is used extensively in [[Energy–maneuverability theory]] that is used to determine the optimal paths for aircraft in [[dogfight]]s.
+
+==References==
+{{Reflist}}
+
+{{DEFAULTSORT:Aircraft Specific Energy}}
+[[Category:Aerodynamics]]
+
+
+{{physics-stub}}
+{{aviation-stub}}

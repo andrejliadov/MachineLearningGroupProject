@@ -1,0 +1,128 @@
+{{for|the ice hockey term|Analytics (ice hockey)}}
+'''Analytics''' is the systematic computational analysis of data or statistics.<ref>{{Cite web|url=https://www.lexico.com/en/definition/analytics|title=Oxford definition of analytics}}</ref> It is used for the discovery, interpretation, and communication of meaningful patterns in [[data]]. It also entails applying data patterns towards effective decision making. It can be valuable in areas rich with recorded information; analytics relies on the simultaneous application of [[statistics]], [[computer programming]] and [[operations research]] to quantify performance.
+
+Organizations may apply analytics to business data to describe, predict, and improve business performance. Specifically, areas within analytics include [[predictive analytics]], [[prescriptive analytics]], [[enterprise decision management]], descriptive analytics, cognitive analytics, Big Data Analytics, retail analytics, supply chain analytics, store assortment and [[stock-keeping unit]] optimization, marketing optimization and [[marketing mix modeling]], [[web analytics]], call analytics, [[speech analytics]], sales force sizing and optimization, price and promotion modeling, predictive science, graph analytics, credit [[risk analysis (business)|risk analysis]], and [[fraud detection|fraud analytics]]. Since analytics can require extensive computation (see [[big data]]), the algorithms and software used for analytics harness the most current methods in computer science, statistics, and mathematics.<ref>{{cite journal|last=Kohavi, Rothleder and Simoudis|title=Emerging Trends in Business Analytics|journal=Communications of the ACM|year=2002|volume=45|issue=8|pages=45–48|doi=10.1145/545151.545177|citeseerx=10.1.1.13.3005|s2cid=15938729}}</ref>
+[[File:English Wikipedia's traffic by browser family.png|thumb|Traffic analysis of English Wikipedia itself|alt=|440x440px]]
+
+== Analytics vs. analysis ==
+
+{{Confusing section|reason=it is still not clear what the difference between analytics and analysis is|small=no|date=March 2018}}
+
+Analysis is focused on understanding the past; what happened and why it happened. Analytics focuses on why it happened and what will happen in the future.<ref>{{Cite web|url=https://www.eetimes.com/author.asp?section_id=36&doc_id=1332172|title=Analysis vs. Analytics: Past vs. Future}}</ref>
+
+[[Data analysis|Data analytics]] is a [[academic discipline|multidisciplinary]] field. There is extensive use of computer skills, mathematics, statistics, the use of descriptive techniques and predictive models to gain valuable knowledge from data through analytics.{{citation needed|date=March 2018}}. The insights from data are used to recommend action or to guide decision making rooted in the business context. Thus, analytics is not so much concerned with individual analyses or analysis steps, but with the entire [[methodology]]{{according to whom|date=March 2018}}. There is a pronounced tendency to use the term ''analytics'' in business settings e.g. [[text analytics]] vs. the more generic [[text mining]] to emphasize this broader perspective. {{Citation needed|date=October 2013}} There is an increasing use of the term ''advanced analytics'', typically used to describe the technical aspects of analytics, especially in the emerging fields such as the use of [[machine learning]] techniques like [[neural networks]], decision tree, logistic regression, linear to multiple [[regression analysis]], classification to do [[predictive modeling]].<ref name="forbes">{{cite web|url=https://www.forbes.com/sites/yasamankazemi/2019/01/29/ai-big-data-advanced-analytics-in-the-supply-chain/#13da8727244f|title=AI, Big Data & Advanced Analytics In The Supply Chain|work=[[Forbes.com]]|accessdate=2020-04-16}}</ref> It also includes [[unsupervised learning|Unsupervised Machine learning techniques]] like [[cluster analysis]], [[principal component analysis|Principal Component Analysis]], segmentation profile analysis and association analysis.<ref name="myers">{{cite book|title=Data Management and Statistical Analysis Techniques|author=Ronin Myers|date=19 May 2019|isbn=9781839473395|url=https://books.google.com/books?id=z-PEDwAAQBAJ&q=%22Unsupervised+Machine+learning%22+techniques+like+%22cluster+analysis%22%2C+%22Principal+Component+Analysis%22%2C+%22segmentation+profile+analysis%22+and+%22association+analysis%22&pg=PA119|accessdate=2020-04-16}}</ref>
+
+== Applications ==
+
+=== Marketing optimization ===
+Marketing has evolved from a creative process into a highly data-driven process. Marketing organizations use analytics to determine the outcomes of campaigns or efforts and to guide decisions for investment and consumer targeting. Demographic studies, customer segmentation, conjoint analysis and other techniques allow marketers to use large amounts of consumer purchase, survey and panel data to understand and communicate marketing strategy.
+
+Marketing analytics consists of both qualitative and quantitative, structured and unstructured data used to drive strategic decisions in relation to brand and revenue outcomes. The process involves predictive modelling, marketing experimentation, automation and real-time sales communications. The data enables companies to make predictions and alter strategic execution to maximize performance results.
+
+[[Web analytics]] allows marketers to collect session-level information about interactions on a website using an operation called [[sessionization]]. [[Google Analytics]] is an example of a popular free analytics tool that marketers use for this purpose. Those interactions provide [[web analytics]] information systems with the information necessary to track the referrer, search keywords, identify IP address, and track activities of the visitor. With this information, a marketer can improve marketing campaigns, website creative content, and information architecture.
+
+Analysis techniques frequently used in marketing include marketing mix modeling, pricing and promotion analyses, sales force optimization and customer analytics e.g.: segmentation. Web analytics and optimization of web sites and online campaigns now frequently work hand in hand with the more traditional marketing analysis techniques. A focus on digital media has slightly changed the vocabulary so that ''marketing mix modeling'' is commonly referred to as ''attribution modeling'' in the digital or [[marketing mix modeling]] context.
+
+These tools and techniques support both strategic marketing decisions (such as how much overall to spend on marketing, how to allocate budgets across a portfolio of brands and the marketing mix) and more tactical campaign support, in terms of targeting the best potential customer with the optimal message in the most cost effective medium at the ideal time.
+
+=== People analytics ===
+People Analytics is using behavioral data to understand how people work and change how companies are managed.<ref>{{Cite news|url=http://professional.mit.edu/programs/short-programs/people-analytics|title=People Analytics: Transforming Management with Behavioral Data|last=lukem|date=2016-11-04|work=Programs for Professionals {{!}} MIT Professional Education|access-date=2018-04-03|language=en}}</ref>
+
+People analytics is also known as workforce analytics, HR analytics, talent analytics, people insights, talent insights, colleague insights, human capital analytics, and HRIS analytics. HR analytics is the application of analytics to help companies manage [[human resources]].<ref>{{cite document|url= http://www.eng.tau.ac.il/~bengal/Chalutz_ROI.pdf|title= An ROI-based review of HR analytics: practical implementation tools|author= Chalutz Ben-Gal, Hila |publisher= Personnel Review, Vol. 48 No. 6, pp. 1429-1448|year=2019}}</ref> Additionally, HR analytics has become a strategic tool in analyzing and forecasting Human related trends in the changing labor markets, using Career Analytics tools.<ref>{{cite document|url= http://www.eng.tau.ac.il/~bengal/Chalutz_Career_Analytics.pdf|title=Career Analytics: data-driven analysis of turnover and career paths in knowledge intensive firms: Google, Facebook and others.|author=Sela, A., Chalutz Ben-Gal, Hila|publisher= In 2018 IEEE International Conference on the Science of Electrical Engineering in Israel (ICSEE). IEEE.|year=2018}}</ref> The aim is to discern which employees to hire, which to reward or promote, what responsibilities to assign, and similar human resource problems.<ref>{{cite web|url=https://www.coursera.org/learn/wharton-people-analytics|title=People analytics - University of Pennsylvania|publisher=Coursera}}</ref> HR analytics is becoming increasingly important to understand what kind of behavioral profiles would succeed and fail. For example, an analysis may find that individuals that fit a certain type of profile are those most likely to succeed at a particular role, making them the best employees to hire.
+
+It has been suggested that People Analytics is a separate discipline to HR analytics, representing a greater focus on business issues rather than administrative processes,<ref>{{Cite news|url=https://www.hrexaminer.com/people-analytics-mit-july-24-2017/|title=People Analytics: MIT July 24, 2017|date=2017-08-02|work=HR Examiner|access-date=2018-04-03|language=en}}</ref> and that People Analytics may not really belong within Human Resources in organizations.<ref>{{Cite news|url=https://www.forbes.com/sites/joshbersin/2015/02/01/geeks-arrive-in-hr-people-analytics-is-here/|title=The Geeks Arrive In HR: People Analytics Is Here|last=Bersin|first=Josh|work=Forbes|access-date=2018-04-03|language=en}}</ref>  However, experts disagree on this, with many arguing that  Human Resources will need to develop People Analytics as a key part of a more capable and strategic business function in the changing world of work brought on by automation.<ref>{{Cite web|url=https://www.mckinsey.com/business-functions/organization/our-insights/the-ceos-guide-to-competing-through-hr|title=The CEO's guide to competing through HR|access-date=2020-07-24|language=en}}</ref>  Instead of moving People Analytics outside HR, some experts argue that it belongs in HR, albeit enabled by a new breed of HR professional who is more data-driven and business savvy.<ref>{{Cite news|url=https://www.chieflearningofficer.com/2018/04/23/its-time-for-hr-3-0/|title=It's Time for HR 3.0|last=McNulty|first=Keith|work=Talent Economy|access-date=2020-07-24|language=en}}</ref>
+
+=== Portfolio analytics ===
+A common application of business analytics is [[portfolio analysis]]. In this, a [[bank]] or lending agency has a collection of accounts of varying [[Value (economics)|value]] and [[risk]]. The accounts may differ by the social status (wealthy, middle-class, poor, etc.) of the holder, the geographical location, its net value, and many other factors. The lender must balance the return on the [[loan]] with the risk of default for each loan. The question is then how to evaluate the portfolio as a whole.
+
+The least risk loan may be to the very wealthy, but there are a very limited number of wealthy people. On the other hand, there are many poor that can be lent to, but at greater risk. Some balance must be struck that maximizes return and minimizes risk. The analytics solution may combine [[time series]] analysis with many other issues in order to make decisions on when to lend money to these different borrower segments, or decisions on the interest rate charged to members of a portfolio segment to cover any losses among members in that segment.
+
+=== Risk analytics ===
+
+Predictive models in the banking industry are developed to bring certainty across the risk scores for individual customers. [[Credit score]]s are built to predict individual's delinquency behavior and widely used to evaluate the credit worthiness of each applicant. Furthermore, risk analyses are carried out in the scientific world and the insurance industry. It is also extensively used in financial institutions like Online Payment Gateway companies to analyse if a transaction was genuine or fraud. For this purpose they use the transaction history of the customer. This is more commonly used in Credit Card purchase, when there is a sudden spike in the customer transaction volume the customer gets a call of confirmation if the transaction was initiated by him/her. This helps in reducing loss due to such circumstances.
+
+=== Digital analytics ===
+Digital analytics is a set of business and technical activities that define, create, collect, verify or transform digital data into reporting, research, analyses, recommendations, optimizations, predictions, and automations.<ref>Phillips, Judah "Building a Digital Analytics Organization" Financial Times Press, 2013, pp 7–8.</ref> This also includes the SEO ([[search engine optimization]]) where the keyword search is tracked and that data is used for marketing purposes. Even banner ads and clicks come under digital analytics. A growing number of brands and marketing firms rely on digital analytics for their digital marketing assignments, where MROI (Marketing Return on Investment) is an important [[Performance indicator|key performance indicator]] (KPI).
+
+=== Security analytics ===
+Security analytics refers to information technology (IT) to gather security events to understand and analyze events that pose the greatest risk.<ref>{{cite web|title=Security analytics shores up hope for breach detection|url=http://enterpriseinnovation.net/article/security-analytics-shores-hope-breach-detection-192448485|publisher=Enterprise Innovation|accessdate=April 27, 2015|archive-url=https://web.archive.org/web/20190212184120/https://www.enterpriseinnovation.net/article/security-analytics-shores-hope-breach-detection-192448485|archive-date=February 12, 2019|url-status=dead}}</ref> Products in this area include [[security information and event management]] and user behavior analytics.
+
+=== Software analytics ===
+{{main|Software analytics}}
+Software analytics is the process of collecting information about the way a piece of [[software]] is used and produced.
+
+== Challenges ==
+In the industry of commercial analytics software, an emphasis has emerged on solving the challenges of analyzing massive, complex data sets, often when such data is in a constant state of change. Such data sets are commonly referred to as [[big data]]. Whereas once the problems posed by big data were only found in the scientific community, today big data is a problem for many businesses that operate transactional systems online and, as a result, amass large volumes of data quickly.<ref>{{cite web|last=Naone|first=Erica|title=The New Big Data|url=http://www.technologyreview.com/computing/38397/|publisher=Technology Review, MIT|accessdate=August 22, 2011}}</ref>
+
+The analysis of [[unstructured data]] types is another challenge getting attention in the industry. Unstructured data differs from [[structured data]] in that its format varies widely and cannot be stored in traditional relational databases without significant effort at data transformation.<ref>{{cite book|last1=Inmon|first1=Bill|last2=Nesavich|first2=Anthony|title=Tapping Into Unstructured Data|year=2007|publisher=Prentice-Hall|isbn=978-0-13-236029-6}}</ref> Sources of unstructured data, such as email, the contents of word processor documents, PDFs, geospatial data, etc., are rapidly becoming a relevant source of [[business intelligence]] for businesses, governments and universities.<ref>{{cite web|last=Wise|first=Lyndsay|title=Data Analysis and Unstructured Data|url=http://www.dashboardinsight.com/articles/business-performance-management/data-analysis-and-unstructured-data.aspx|publisher=Dashboard Insight|accessdate=February 14, 2011|archive-url=https://web.archive.org/web/20140105045015/http://www.dashboardinsight.com/articles/business-performance-management/data-analysis-and-unstructured-data.aspx|archive-date=January 5, 2014|url-status=dead}}</ref> For example, in Britain the discovery that one company was illegally selling fraudulent doctor's notes in order to assist people in defrauding employers and insurance companies,<ref>{{cite news|title=Fake doctors' sick notes for Sale for £25, NHS fraud squad warns|url=https://www.telegraph.co.uk/news/uknews/2626120/Fake-doctors-sick-notes-for-sale-on-web-for-25-NHS-fraud-squad-warns.html|newspaper=The Telegraph|date=26 August 2008|accessdate=16 September 2011|location=London}}</ref> is an opportunity for insurance firms to increase the vigilance of their unstructured data analysis. The McKinsey Global Institute estimates that big data analysis could save the American health care system $300 billion per year and the European public sector €250 billion.<ref>{{cite news|title=Big Data: The next frontier for innovation, competition and productivity as reported in Building with Big Data|url=http://www.economist.com/node/18741392|accessdate=May 26, 2011 | work=The Economist|date=May 26, 2011| archiveurl= https://web.archive.org/web/20110603031738/http://www.economist.com/node/18741392| archivedate= 3 June 2011 | url-status= live}}</ref>
+
+These challenges are the current inspiration for much of the innovation in modern analytics information systems, giving birth to relatively new machine analysis concepts such as [[complex event processing]], full text search and analysis, and even new ideas in presentation.<ref>{{cite web|last=Ortega|first=Dan|title=Mobility: Fueling a Brainier Business Intelligence|url=http://www.itbusinessedge.com/cm/community/features/guestopinions/blog/mobility-fueling-a-brainier-business-intelligence/?cs=47491|archive-url=https://web.archive.org/web/20110705061921/http://www.itbusinessedge.com/cm/community/features/guestopinions/blog/mobility-fueling-a-brainier-business-intelligence/?cs=47491|url-status=dead|archive-date=July 5, 2011|publisher=IT Business Edge|accessdate=June 21, 2011}}</ref> One such innovation is the introduction of grid-like architecture in machine analysis, allowing increases in the speed of [[massively parallel]] processing by distributing the workload to many computers all with equal access to the complete data set.<ref>{{cite web|last=Khambadkone |first=Krish |title=Are You Ready for Big Data? |url=http://www.infogain.com/company/perspective-big-data.jsp |archive-url=https://web.archive.org/web/20110314031712/http://www.infogain.com/company/perspective-big-data.jsp |url-status=dead |archive-date=March 14, 2011 |publisher=InfoGain |accessdate=February 10, 2011 }}</ref>
+
+Analytics is increasingly used in [[education]], particularly at the district and government office levels. However, the complexity of student performance measures presents challenges when educators try to understand and use analytics to discern patterns in student performance, predict graduation likelihood, improve chances of student success, etc. For example, in a study involving districts known for strong data use, 48% of teachers had difficulty posing questions prompted by data, 36% did not comprehend given data, and 52% incorrectly interpreted data.<ref>U.S. Department of Education Office of Planning, Evaluation and Policy Development (2009). ''Implementing data-informed decision making in schools: Teacher access, supports and use.'' United States Department of Education (ERIC Document Reproduction Service No. ED504191)</ref> To combat this, some analytics tools for educators adhere to an [[over-the-counter data]] format (embedding labels, supplemental documentation, and a help system, and making key package/display and content decisions) to improve educators' understanding and use of the analytics being displayed.<ref>Rankin, J. (2013, March 28). [https://sas.elluminate.com/site/external/recording/playback/link/table/dropin?sid=2008350&suid=D.4DF60C7117D5A77FE3AED546909ED2 How data Systems & reports can either fight or propagate the data analysis error epidemic, and how educator leaders can help.] ''Presentation conducted from Technology Information Center for Administrative Leadership (TICAL) School Leadership Summit.''</ref>
+
+One more emerging challenge is dynamic regulatory needs. For example, in the banking industry, Basel III and future capital adequacy needs are likely to make even smaller banks adopt internal risk models. In such cases, cloud computing and open source programming language [[R (programming language)|R]] can help smaller banks to adopt risk analytics and support branch level monitoring by applying predictive analytics.{{citation needed|date=November 2012}}
+
+== Risks ==
+{{original research|date=March 2015}}
+The main risk for the people is discrimination like [[price discrimination]] or [[statistical discrimination (economics)|statistical discrimination]].  [https://blogs.scientificamerican.com/roots-of-unity/review-weapons-of-math-destruction/ See Scientific American book review of "Weapons of math destruction"]
+
+There is also the risk that a developer could profit from the ideas or work done by users, like this example:
+Users could write new ideas in a note taking app, which could then be sent as a custom event, and the developers could profit from those ideas. This can happen because the ownership of content is usually unclear in the law.<ref>{{cite web|url=http://www.techrepublic.com/blog/10-things/10-reasons-why-i-avoid-social-networking-services/|title=10 reasons why I avoid social networking services|author=Alan Norton|date=9 July 2012|work=TechRepublic|accessdate=4 January 2016}}</ref>
+
+If a user's identity is not protected, there are more risks; for example, the risk that private information about users is made public on the internet.
+
+In the extreme, there is the risk that governments could gather too much private information, now that the governments are giving themselves more powers to access citizens' information. {{Further|Telecommunications data retention}}
+
+== See also ==
+{{columns-list|colwidth=20em|
+*[[Analysis]]
+*[[Analytic applications]]
+*[[Architectural analytics]]
+*[[Behavioral analytics]]
+*[[Business analytics]]
+*[[Business intelligence]]
+*[[Cloud analytics]]
+*[[Complex event processing]]
+*[[Continuous analytics]]
+*[[Cultural analytics]]
+*[[Customer analytics]]
+*[[Dashboard]]
+*[[Data mining]]
+*[[Data presentation architecture]]
+*[[Embedded analytics]]
+*[[Learning analytics]]
+*[[List of software engineering topics]]
+*[[Mobile Location Analytics]]
+*[[News analytics]]
+*[[Online analytical processing]]
+*[[Online video analytics]]
+*[[Operational reporting]]
+*[[Operations research]]
+*[[Prediction]]
+*[[Predictive analytics]]
+*[[Predictive engineering analytics]]
+*[[Prescriptive analytics]]
+*[[Semantic analytics]]
+*[[Smart grid]]
+*[[Social analytics]]
+*[[Software analytics]]
+*[[Speech analytics]]
+*[[Statistics]]
+*[[User behavior analytics]]
+*[[Visual analytics]]
+*[[Web analytics]]
+*[[Win–loss analytics]]
+}}
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{Wiktionary-inline}}
+
+[[Category:Analytics| ]]
+[[Category:Financial data analysis]]
+[[Category:Formal sciences]]
+[[Category:Business terms]]
+[[Category:Business intelligence]]
+[[Category:Big data]]

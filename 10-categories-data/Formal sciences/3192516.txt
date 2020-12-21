@@ -1,0 +1,122 @@
+The '''ACM Computing Classification System''' ('''CCS''') is a subject classification system for [[computing]] devised by the [[Association for Computing Machinery]] (ACM). The system is comparable to the [[Mathematics Subject Classification]] (MSC) in scope, aims, and structure, being used by the various ACM journals to organise subjects by area.
+
+=={{anchor|CRCS 1964|CCS 1982|CCS 1983|CCS 1987|CCS 1991|CCS 1998|CCS 2012}}History==
+The system has gone through seven revisions, the first version being published in 1964, and revised versions appearing in 1982, 1983, 1987, 1991, 1998, and the now current version in 2012.
+
+==Structure==
+The ACM Computing Classification System, version 2012, has a revolutionary change in some areas, for example, in "Software" that now is called "Software and its engineering" which has three main subjects:
+* Software organization and properties. This subject addresses properties of the software itself. 
+* Software notations and tools. This subject covers programming languages and other tools for writing programs.
+* Software creation and management. This subject covers human activities including software management.
+
+It is hierarchically structured in four levels. Thus, for example, one branch of the hierarchy contains:
+: Computing methodologies
+:: [[Artificial intelligence]]
+::: [[Knowledge representation and reasoning]]
+:::: [[Ontology engineering]]
+
+==See also==
+*[[Mathematics Subject Classification]] (MSC)
+*[[Physics and Astronomy Classification Scheme]] (PACS)
+* [[arXiv]], a preprint server that uses a somewhat different subdivision of topics in its computer science subject areas but also allows papers to be classified using the ACM system
+*[[PhySH]] (Physics Subject Headings)
+
+==References==
+* {{citation
+| last = Coulter | first = Neal
+| doi = 10.1145/265563.265579
+| issue = 12
+| journal = Communications of the ACM
+| location = New York, NY, USA
+| pages = 111–112
+| publisher = ACM
+| title = ACM's computing classification system reflects changing times
+| volume = 40
+| year = 1997}}.
+* {{citation
+| last1 = Coulter | first1 = Neal (chair)
+| last2 = French | first2 = James
+| last3 = Glinert | first3 = Ephraim
+| last4 = Horton | first4 = Thomas
+| last5 = Mead | first5 = Nancy
+| last6 = Ralston | first6 = Anthony
+| last7 = Rada | first7 = Roy
+| last8 = Rodkin | first8 = Craig
+| last9 = Rous | first9 = Bernard
+| last10 = Tucker | first10 = Allen
+| last11 = Wegner | first11 = Peter
+| last12 = Weiss | first12 = Eric
+| last13 = Wierzbicki | first13 = Carol
+| journal = Computing Reviews
+| location = New York, NY, USA
+| publisher = ACM
+| date = January 21, 1998
+| pages = 1–5
+| title = Computing Classification System 1998: Current Status and Future Maintenance Report of the CCS Update Committee
+| url = http://www.acm.org/about/class/ccsup.pdf}}.
+* {{citation
+| last1 = Mirkin | first1 = Boris
+| last2 = Nascimento | first2 = Susana
+| last3 = Pereira | first3 = Luis Moniz
+| contribution = Representing a Computer Science Research Organization on the ACM Computing Classification System
+| editor1-last = Eklund | editor1-first = Peter
+| editor2-last = Haemmerlé | editor2-first = Ollivier
+| pages = 57–65
+| publisher = RWTH Aachen University
+| series = CEUR Workshop Proceedings
+| title = Supplementary Proceedings of the 16th International Conference on Conceptual Structures (ICCS-2008)
+| url = http://ftp.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-354/p19.pdf
+| volume = 354
+| year = 2008}}.
+
+==External links==
+* [http://www.acm.org/about-acm/class/ ACM Computing Classification System] is the homepage of the system, including links to four complete versions of the system, for 1964 [http://www.acm.org/about/class/cr64], 1991 [http://www.acm.org/about/class/class91-toc], 1998 [http://www.acm.org/about/class/ccs98-html], and the current 2012 version [http://www.acm.org/about/class/2012].
+* The [https://arxiv.org/corr/home ACM Computing Research Repository] uses a [https://arxiv.org/corr/subjectclasses classification scheme] that is much coarser than the ACM subject classification, and does not cover all areas of CS, but is intended to better cover active areas of research. In addition, papers in this repository are 
+classified according to the ACM subject classification.
+
+
+{{comp-sci-stub}}
+
+{{navbox
+| name = ACM Computing Classification System
+| title = ACM Computing Classification System
+| image =
+| above = The 2012 version of the ACM classification has the following main categories.
+| group1 = General and reference
+| group2 = Hardware
+| group3 = Computer systems organization 
+| group4 = Networks
+| group5 = Software and its engineering
+| group6 = Theory of computation
+| group7 = Mathematics of computing
+| group8 = Information systems
+| group9 = Security and privacy
+| group10 = Human-centered computing
+| group11 = Computing methodologies
+| group12 = Applied computing
+| group13 = Social and professional topics
+| group14 = Proper nouns: people, technologies and companies
+| list1 = Document types • Cross-computing tools and techniques
+| list2 = Printed circuit boards • Communication hardware, interfaces and storage • Integrated circuits • Very large scale integration design • Power and energy • Electronic design automation • Hardware validation • Hardware test • Robustness • Emerging technologies
+| list3 = Architectures • Embedded and cyber-physical systems • Real-time systems • Dependable and fault-tolerant systems and networks
+| list4 = Network architectures • Network protocols • Network components • Network algorithms • Network performance evaluation • Network properties • Network services • Network types
+| list5 = Software organization and properties • Software notations and tools • Software creation and management
+| list6 = Models of computation • Formal languages and automata theory • Computational complexity and cryptography • Logic • Design and analysis of algorithms • Randomness, geometry and discrete structures • Theory and algorithms for application domains • Semantics and reasoning
+| list7 = Discrete mathematics • Probability and statistics • Mathematical software • Information theory • Mathematical analysis • Continuous mathematics
+| list8 = Data management systems • Information storage systems • Information systems applications • World Wide Web • Information retrieval
+| list9 = Cryptography • Formal methods and theory of security • Security services • Intrusion/anomaly detection and malware mitigation • Security in hardware • Systems security • Network security • Database and storage security • Software and application security • Human and societal aspects of security and privacy
+| list10 = Human–computer interaction • Interaction design • Collaborative and social computing • Ubiquitous and mobile computing • Visualization • Accessibility
+| list11 = Symbolic and algebraic manipulation • Parallel computing methodologies • Artificial intelligence • Machine learning • Modeling and simulation • Computer graphics • Distributed computing methodologies • Concurrent computing methodologies
+| list12 = Electronic commerce • Enterprise computing • Physical sciences and engineering • Life and medical sciences • Law, social and behavioral sciences • Computer forensics • Arts and humanities • Computers in other domains • Operations research • Education • Document management and text processing
+| list13 = Professional topics • Computing/technology policy • User characteristics
+| list14 = Companies • Organizations • People in computing • Technologies}}
+{{Computer science}}
+
+
+{{DEFAULTSORT:Acm Computing Classification System}}
+[[Category:Association for Computing Machinery|*Computing Classification System]]
+[[Category:Classification systems]]
+[[Category:Computer science literature]]
+[[Category:1964 in computing]]
+[[Category:Computer-related introductions in 1964]]
+[[Category:Association for Computing Machinery publications|Computing Classification System]]

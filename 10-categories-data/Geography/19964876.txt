@@ -1,0 +1,54 @@
+{{short description|Compiling data to create a visual image}}
+'''Digital mapping''' (also called digital [[cartography]]) is the process by which a collection of data is compiled and formatted into a virtual image. The primary function of this technology is to produce [[map]]s that give accurate representations of a particular area, detailing major road arteries and other points of interest. The technology also allows the calculation of distances from one place to another.
+
+Although digital mapping can be found in a variety of computer applications the main use of these maps is with the [[Global Positioning System]], or [[GPS]] satellite network, used in standard [[automotive navigation system]]s.
+
+==History==
+
+===From paper to paperless===
+The roots of digital mapping lie within traditional paper maps such as the [[Thomas Guide]] and [[Geographers' A–Z Street Atlas]]. Paper maps provide basic landscapes similar to digitized road maps, yet are often cumbersome, cover only a designated area, and lack many specific details such as road blocks. In addition, there is no way to “update” a paper map except to obtain a new version. On the other hand, digital maps, in many cases, can be updated through synchronization with updates from company servers.
+
+===Expanded capabilities===
+Early digital maps had the same basic functionality as paper maps—that is, they provided a “virtual view” of roads generally outlined by the terrain encompassing the surrounding area. However, as digital maps have grown with the expansion of GPS technology in the past decade, live traffic updates,<ref name = "Live Traffic Updates">"Navigation device assisting road traffic congestion management." FreshPatents.com. 9 March 2007. http://www.freshpatents.com/Navigation-device-assisting-road-traffic-congestion-management-dt20080925ptan20080234921.php {{Webarchive|url=https://web.archive.org/web/20140606234246/http://www.freshpatents.com/Navigation-device-assisting-road-traffic-congestion-management-dt20080925ptan20080234921.php |date=2014-06-06 }}. 12 Oct. 2008.</ref> points of interest and service locations have been added to enhance digital maps to be more “user conscious."<ref name = "EET">Husby, Jonathon. "In-car navigation matures beyond ‘Point A to Point B’." Electronic Engineering Times. 28 Jan. 2008. http://www.automotivedesignline.com {{Webarchive|url=https://web.archive.org/web/20110930125539/http://www.automotivedesignline.com/ |date=2011-09-30 }}. 12 Oct. 2008.</ref> Traditional “virtual views” are now only part of digital mapping. In many cases, users can choose between virtual maps, satellite (aerial views), and hybrid (a combination of virtual map and aerial views) views. With the ability to update and expand digital mapping devices, newly constructed roads and places can be added to appear on maps.{{citation needed|date=September 2018}} Three-dimensional maps of landscapes can be generated using [[3D scanner]]s or [[3D reconstruction]] software.<ref>Remondino, Fabio. "[https://www.mdpi.com/2072-4292/3/6/1104htm Heritage recording and 3D modeling with photogrammetry and 3D scanning]." Remote Sensing 3.6 (2011): 1104-1138.</ref>
+
+==Data collection==
+Digital maps heavily rely upon a vast amount of data collected over time. Most of the information that comprise digital maps is the culmination of [[satellite imagery]] as well as street level information. Maps must be updated frequently to provide users with the most accurate reflection of a location. While there is a wide spectrum on companies that specialize in digital mapping, the basic premise is that digital maps will accurately portray roads as they actually appear to give "life-like experiences." <ref name = "Tele Atlas">"City Maps" Tele Atlas BV. 2008. http://www.teleatlas.com/OurProducts/MapEnhancementProducts/CityMaps/index.htm {{Webarchive|url=https://web.archive.org/web/20110927125716/http://www.teleatlas.com/OurProducts/MapEnhancementProducts/CityMaps/index.htm |date=2011-09-27 }}. 12 Oct. 2008.</ref>
+
+==Functionality and Use==
+
+===Computer applications===
+Proprietary and non-proprietary computer programs and applications provide imagery and street-level map data for much of the world.
+
+===Scientific applications===
+The development of mobile computing  ([[PDAs]], [[tablet computer|tablet PCs]], [[laptops]], etc.) has recently (since about 2000) spurred the use of digital mapping in the sciences and  [[applied science]]s. {{as of|2009}}, science fields that use digital mapping technology include [[geology]] (see [[Digital geologic mapping]]), [[engineering]], [[architecture]],  [[land surveying]], [[mining]], [[forestry]],  [[Environmental science|environmental]], and [[archaeology]].
+
+===GPS navigation systems===
+The principal use by which digital mapping has grown in the past decade has been its connection to [[Global Positioning System]] ([[GPS]]) technology.<ref name = "GPS">"United States Updates Global Positioning System Technology." America.gov. 3 Feb. 2006. http://www.america.gov/st/washfile-english/2006/February/20060203125928lcnirellep0.5061609.html. 12 Oct. 2008.</ref> GPS is the foundation behind digital mapping navigation systems.
+
+==== How it works ====
+
+The coordinates and position as well as [[atomic time]] obtained by a [[Earth|terrestrial]] GPS receiver from GPS satellites [[orbiting]] [[Earth]] interact together to provide the digital mapping programming with points of origin in addition to the destination points needed to calculate distance. This information is then analyzed and compiled to create a map that provides the easiest and most efficient way to reach a destination.
+:More technically speaking, the device operates in the following manner:<ref name = "U.S. G.P.S.">"How Does GPS Work?" Smithsonian Institution. 1998. http://www.nasm.si.edu/exhibitions/gps/work.html {{Webarchive|url=https://web.archive.org/web/20081109045235/http://www.nasm.si.edu/exhibitions/gps/work.html |date=2008-11-09 }}. 12 Oct. 2008.</ref>
+# GPS receivers collect data from at least four GPS satellites orbiting the Earth, calculating position in [[Three-dimensional space|three dimensions]].
+# The GPS receiver then utilizes position to provide [[GPS coordinates]], or exact points of latitudinal and longitudinal direction from GPS satellites.
+# The points, or coordinates, output an accurate range between approximately "10-20 meters" of the actual location.
+# The beginning point, entered via GPS coordinates, and the ending point, (address or coordinates) input by the user, are then entered into the digital mapping software.
+# The mapping software outputs a real-time visual representation of the route. The map then moves along the path of the driver.
+# If the driver drifts from the designated route, the navigation system will use the current coordinates to recalculate a route to the destination location.
+
+==See also==
+*[[Cartography]]
+*[[Digital elevation model]]
+*[[Geographic information systems]]
+*[[Digital architecture]]
+*[[Digital geologic mapping]]
+*[[Simultaneous localization and mapping]]
+*[[Sound map]]
+
+==References==
+<references/>
+
+{{Earth}}
+
+[[Category:Geographical technology]]
+[[Category:Map types]]

@@ -1,0 +1,101 @@
+In [[computer science]], specifically in [[algorithm]]s related to [[pathfinding]], a [[heuristic function]] is said to be '''admissible''' if it never overestimates the cost of reaching the goal, i.e. the cost it estimates to reach the goal is not higher than the lowest possible cost from the current point in the path.<ref>{{cite book
+ | author = Russell, S.J.|author2= Norvig, P.
+ | year = 2002
+ | title = Artificial Intelligence: A Modern Approach
+ | publisher = Prentice Hall
+ | isbn = 0-13-790395-2
+|title-link= Artificial Intelligence: A Modern Approach
+ }}</ref>
+
+== Search algorithms ==
+An admissible heuristic is used to estimate the cost of reaching the goal state in an [[informed search algorithm]]. In order for a heuristic
+to be admissible to the search problem, the estimated cost must always be lower than or equal to the actual cost of reaching the goal state. 
+The search algorithm uses the admissible heuristic to find an estimated 
+optimal path to the goal state from the current node. 
+For example, in [[A* search]] the evaluation function (where 
+<math>n</math> is the current node) is:
+
+<math>f(n) = g(n) + h(n)</math>
+
+where
+:<math>f(n)</math> = the evaluation function.
+:<math>g(n)</math> = the cost from the start node to the current node
+:<math>h(n)</math> = estimated cost from current node to goal.
+
+<math>h(n)</math> is calculated using the heuristic 
+function. With a non-admissible heuristic, the A* algorithm could 
+overlook the optimal solution to a search problem due to an 
+overestimation in <math>f(n)</math>.
+
+==Formulation==
+
+: <math>n</math> is a node
+: <math>h</math> is a heuristic
+: <math>h(n)</math> is cost indicated by <math>h</math> to reach a goal from <math>n</math>
+: <math>h^*(n)</math> is the optimal cost to reach a goal from <math>n</math>
+
+: <math>h(n)</math> is admissible if, <math>\forall n</math>
+
+:: <math>h(n) \leq h^*(n)</math>
+
+==Construction==
+An admissible heuristic can be derived from a [[Relaxation (approximation)|relaxed]]
+version of the problem, or by information from pattern databases that store exact solutions to subproblems of the problem, or by using [[Inductive transfer|inductive learning]] methods.
+
+==Examples==
+Two different examples of admissible heuristics apply to the [[fifteen puzzle]] problem:
+* [[Hamming distance]]
+* [[Manhattan distance]]
+
+The [[Hamming distance]] is the total number of misplaced tiles. It is clear that this heuristic is admissible since the total number of moves to order the tiles correctly is at least the number of misplaced tiles (each tile not in place must be moved at least once). The cost (number of moves) to the goal (an ordered puzzle) is at least the [[Hamming distance]] of the puzzle.
+
+The Manhattan distance of a puzzle is defined as:
+
+:<math>h(n)=\sum_\text{all tiles} \mathit{distance}(\text{tile, correct position})</math>
+
+Consider the puzzle below in which the player wishes to move each tile such that the numbers are ordered. The Manhattan distance is an admissible heuristic in this case because every tile will have to be moved at least the number of spots in between itself and its correct position.<ref name="Korf,2000">{{cite conference |mode=cs2 |first=Richard E. |last=Korf |url=https://www.aaai.org/Papers/AAAI/2000/AAAI00-212.pdf |doi=10.1007/3-540-44914-0_3 |title=Recent progress in the design and analysis of admissible heuristic functions |editor-first=Berthe Y. |editor-last=Choueiry |editor-first2=Toby |editor-last2=Walsh |book-title=Abstraction, Reformulation, and Approximation: 4th International Symposium, SARA 2000 Horseshoe Bay, USA, July 26-29, 2000 Proceedings |pages=45–55 |publisher=Springer |year=2000 |isbn=978-3-540-67839-7 |access-date=2010-04-26 |volume=1864}}</ref>
+{| class="wikitable" style="text-align:right"
+|-
+| 4<sub>3</sub>|| 6<sub>1</sub>|| 3<sub>0</sub>|| 8<sub>1</sub>
+|-
+| 7<sub>2</sub>|| 12<sub>3</sub>|| 9<sub>3</sub>|| 14<sub>4</sub>
+|-
+| 15<sub>3</sub>|| 13<sub>2</sub>|| 1<sub>4</sub>|| 5<sub>4</sub>
+|-
+| 2<sub>4</sub>|| 10<sub>1</sub>|| 11<sub>1</sub>|| 
+|}
+The subscripts show the Manhattan distance for each tile. The total Manhattan distance for the shown puzzle is:
+:<math>h(n)=3+1+0+1+2+3+3+4+3+2+4+4+4+1+1=36</math>
+
+==Optimality Guarantee==
+If an admissible heuristic is used in an algorithm that, per iteration progresses only the one path that has lowest total expected cost of several candidate paths and terminates the moment any path reaches the goal accepting that path as shortest (for example in [[A* search algorithm]]), then this algorithm will terminate on the shortest path. To see why, simply consider that any path that the algorithm terminates on was only progressed because it's total expected cost was lowest of the candidates. For an admissible heuristic, none of the candidates overestimate their costs so their true costs can only be greater to or equal to that of the accepted path. Finally, the total expected cost is the true cost for a path that reaches goal because the only admissible heuristic on reaching goal is zero.
+
+As an example<ref>{{Cite web |url=https://stackoverflow.com/questions/23970588/why-do-admissable-heuristics-guarantee-optimality |title=Why do admissable &#91;sic&#93; heuristics guarantee optimality? |website=Stack Overflow |access-date=2018-12-11 |department=algorithm}}</ref> of why admissibility can guarantee optimality, let's say we have costs as follows:(the cost above/below a node is the heuristic, the cost at an edge is the actual cost)
+
+  0     10   0   100   0
+ START ----  O  ----- GOAL
+  |                   |
+ 0|                   |100
+  |                   | 
+  O ------- O  ------ O
+ 100   1    100   1   100
+
+So clearly we'd start off visiting the top middle node, since the expected total cost, i.e. <math>f(n)</math>, is <math>10 + 0 = 10</math>. Then the goal would be a candidate, with <math>f(n)</math> equal to <math>10+100+0=110</math>. Then we'd clearly pick the bottom nodes one after the other, followed by the updated goal, since they all have <math>f(n)</math> lower than the <math>f(n)</math> of the current goal, i.e. their <math>f(n)</math> is <math>100, 101, 102, 102</math>. So even though the goal was a candidate, we couldn't pick it because there were still better paths out there. This way, an admissible heuristic can ensure optimality.
+
+However, note that although an admissible heuristic can guarantee final optimality, it's not necessarily efficient.
+
+==Notes==
+While all [[consistent heuristic]]s are admissible, not all admissible heuristics are consistent.
+
+For tree search problems, if an admissible heuristic is used, the [[A* search algorithm]] will never return a suboptimal goal node.
+
+==References==
+{{reflist}}
+
+==See also==
+*[[Consistent heuristic]]
+*[[Heuristic function]]
+* [[Search algorithm]]
+
+[[Category:Heuristics]]
+[[Category:Artificial intelligence]]

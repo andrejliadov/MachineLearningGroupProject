@@ -1,0 +1,183 @@
+<includeonly>{{#ifeq:{{lc:{{{disp|}}}}}|number
+	|{{#switch:{{lc:{{{2|}}}}}
+		|auc={{#expr:{{#if:{{{1|}}}|{{{1}}}|0}}-753}}
+		|puc={{#expr:-752-{{#if:{{{1|}}}|{{{1}}}|0}}}}
+		|bc|bce={{#expr:753-{{#if:{{{1|}}}|{{{1}}}|0}}}}
+		|{{#expr:753+{{#if:{{{1|}}}|{{{1}}}|0}}}}
+	}}
+	|{{auc/data/doublet
+		|{{#ifeq:{{lc:{{{main|}}}}}|greg|equals-year|year}}={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &lt; 1
+			|{{#switch:{{lc:{{{2|}}}}}
+				|auc|puc={{#if:{{{1|}}}|{{#expr:1-{{{1}}}}}|1}}
+				|bc|bce={{#expr:753+{{#if:{{{1|}}}|{{#expr:1-{{{1}}}}}|1}}}}
+				|{{#ifexpr:{{#if:{{{1|}}}|{{#expr:1-{{{1}}}}}|1}} &gt; 753
+					|{{#expr:-752-{{{1|}}}}}
+					|{{#expr:753+{{#if:{{{1|}}}|{{{1}}}|0}}}}
+				}}
+			}}
+			|{{#switch:{{lc:{{{2|}}}}}
+				|auc|puc={{#if:{{{1|}}}|{{{1}}}|0}}
+				|bc|bce={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &gt; 753
+					|{{#expr:{{{1}}}-753}}
+					|{{#expr:754-{{#if:{{{1|}}}|{{{1}}}|0}}}}
+				}}
+				|{{#expr:753+{{#if:{{{1|}}}|{{{1}}}|0}}}}
+			}}
+		}}|{{#ifeq:{{lc:{{{main|}}}}}|greg|equals-era|era}}={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &lt; 1
+			|{{#switch:{{lc:{{{2|}}}}}
+				|auc=puc
+				|puc=auc
+				|bc|bce=auc
+				|{{#ifexpr:{{#if:{{{1|}}}|{{#expr:1-{{{1}}}}}|1}} &gt; 753
+					|puc
+					|auc
+				}}
+			}}
+			|{{#switch:{{lc:{{{2|}}}}}
+				|auc=auc
+				|puc=puc
+				|bc|bce={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &gt; 753
+					|puc
+					|auc
+				}}
+				|auc
+			}}
+		}}|{{#ifeq:{{lc:{{{main|}}}}}|greg|year|equals-year}}={{#switch:{{lc:{{{2|}}}}}
+			|auc={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &lt; 1
+				|{{#expr:754-{{#if:{{{1|}}}|{{{1}}}|0}}}}
+				|{{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &gt; 753
+					|{{#expr:{{{1}}}-753}}
+					|{{#expr:754-{{#if:{{{1|}}}|{{{1}}}|0}}}}
+				}}
+			}}|puc={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &lt; 1
+				|{{#ifexpr:{{#if:{{{1|}}}|{{#expr:1-{{{1}}}}}|1}} &gt; 753
+					|{{#expr:-752-{{{1|}}}}}
+					|{{#expr:753+{{#if:{{{1|}}}|{{{1}}}|0}}}}
+				}}|{{#expr:{{{1}}}+753}}
+			}}|{{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &lt; 1
+					|{{#if:{{{1|}}}|{{#expr:1-{{{1}}}}}|1}}
+					|{{#if:{{{1|}}}|{{{1}}}|0}}}}
+		}}|{{#ifeq:{{lc:{{{main|}}}}}|greg|era|equals-era}}={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &lt; 1
+			|{{#switch:{{lc:{{{2|}}}}}
+				|auc=bce
+				|puc={{#ifexpr:{{#if:{{{1|}}}|{{#expr:1-{{{1}}}}}|1}} &gt; 753
+					|ce
+					|bce
+				}}
+				|bce=ce
+				|bc=ad
+				|ad=bc
+				|bce
+			}}
+			|{{#switch:{{lc:{{{2|}}}}}
+				|auc={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &gt; 753
+					|ce
+					|bce
+				}}
+				|puc=bce
+				|bce=bce
+				|bc=bc
+				|ad=ad
+				|ce
+			}}
+		}}
+		|abbr={{{abbr|}}}
+		|disp={{{disp|}}}
+		|alinks={{{alinks|}}}
+		|{{#ifeq:{{lc:{{{main|}}}}}|greg|equals-page|page}}={{{auc-page|}}}
+		|{{#ifeq:{{lc:{{{main|}}}}}|greg|page|equals-page}}={{#if:{{{greg-page|}}}|{{{greg-page}}}|{{{page|}}}}}
+		|{{#ifeq:{{lc:{{{main|}}}}}|greg|flip|equals-flip}}={{#switch:{{lc:{{{flip|}}}}}|greg|all=on|off}}
+		|{{#ifeq:{{lc:{{{main|}}}}}|greg|equals-flip|flip}}={{#switch:{{lc:{{{flip|}}}}}|auc|all=on|off}}
+	}}
+}}</includeonly><noinclude>{{documentation}}</noinclude><includeonly>{{#ifeq:{{lc:{{{disp|}}}}}|number
+	|{{#switch:{{lc:{{{2|}}}}}
+		|auc={{#expr:{{#if:{{{1|}}}|{{{1}}}|0}}-753}}
+		|puc={{#expr:-752-{{#if:{{{1|}}}|{{{1}}}|0}}}}
+		|bc|bce={{#expr:753-{{#if:{{{1|}}}|{{{1}}}|0}}}}
+		|{{#expr:753+{{#if:{{{1|}}}|{{{1}}}|0}}}}
+	}}
+	|{{auc/data/doublet
+		|{{#ifeq:{{lc:{{{main|}}}}}|greg|equals-year|year}}={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &lt; 1
+			|{{#switch:{{lc:{{{2|}}}}}
+				|auc|puc={{#if:{{{1|}}}|{{#expr:1-{{{1}}}}}|1}}
+				|bc|bce={{#expr:753+{{#if:{{{1|}}}|{{#expr:1-{{{1}}}}}|1}}}}
+				|{{#ifexpr:{{#if:{{{1|}}}|{{#expr:1-{{{1}}}}}|1}} &gt; 753
+					|{{#expr:-752-{{{1|}}}}}
+					|{{#expr:753+{{#if:{{{1|}}}|{{{1}}}|0}}}}
+				}}
+			}}
+			|{{#switch:{{lc:{{{2|}}}}}
+				|auc|puc={{#if:{{{1|}}}|{{{1}}}|0}}
+				|bc|bce={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &gt; 753
+					|{{#expr:{{{1}}}-753}}
+					|{{#expr:754-{{#if:{{{1|}}}|{{{1}}}|0}}}}
+				}}
+				|{{#expr:753+{{#if:{{{1|}}}|{{{1}}}|0}}}}
+			}}
+		}}|{{#ifeq:{{lc:{{{main|}}}}}|greg|equals-era|era}}={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &lt; 1
+			|{{#switch:{{lc:{{{2|}}}}}
+				|auc=puc
+				|puc=auc
+				|bc|bce=auc
+				|{{#ifexpr:{{#if:{{{1|}}}|{{#expr:1-{{{1}}}}}|1}} &gt; 753
+					|puc
+					|auc
+				}}
+			}}
+			|{{#switch:{{lc:{{{2|}}}}}
+				|auc=auc
+				|puc=puc
+				|bc|bce={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &gt; 753
+					|puc
+					|auc
+				}}
+				|auc
+			}}
+		}}|{{#ifeq:{{lc:{{{main|}}}}}|greg|year|equals-year}}={{#switch:{{lc:{{{2|}}}}}
+			|auc={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &lt; 1
+				|{{#expr:754-{{#if:{{{1|}}}|{{{1}}}|0}}}}
+				|{{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &gt; 753
+					|{{#expr:{{{1}}}-753}}
+					|{{#expr:754-{{#if:{{{1|}}}|{{{1}}}|0}}}}
+				}}
+			}}|puc={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &lt; 1
+				|{{#ifexpr:{{#if:{{{1|}}}|{{#expr:1-{{{1}}}}}|1}} &gt; 753
+					|{{#expr:-752-{{{1|}}}}}
+					|{{#expr:753+{{#if:{{{1|}}}|{{{1}}}|0}}}}
+				}}|{{#expr:{{{1}}}+753}}
+			}}|{{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &lt; 1
+					|{{#if:{{{1|}}}|{{#expr:1-{{{1}}}}}|1}}
+					|{{#if:{{{1|}}}|{{{1}}}|0}}}}
+		}}|{{#ifeq:{{lc:{{{main|}}}}}|greg|era|equals-era}}={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &lt; 1
+			|{{#switch:{{lc:{{{2|}}}}}
+				|auc=bce
+				|puc={{#ifexpr:{{#if:{{{1|}}}|{{#expr:1-{{{1}}}}}|1}} &gt; 753
+					|ce
+					|bce
+				}}
+				|bce=ce
+				|bc=ad
+				|ad=bc
+				|bce
+			}}
+			|{{#switch:{{lc:{{{2|}}}}}
+				|auc={{#ifexpr:{{#if:{{{1|}}}|{{{1}}}|0}} &gt; 753
+					|ce
+					|bce
+				}}
+				|puc=bce
+				|bce=bce
+				|bc=bc
+				|ad=ad
+				|ce
+			}}
+		}}
+		|abbr={{{abbr|}}}
+		|disp={{{disp|}}}
+		|alinks={{{alinks|}}}
+		|{{#ifeq:{{lc:{{{main|}}}}}|greg|equals-page|page}}={{{auc-page|}}}
+		|{{#ifeq:{{lc:{{{main|}}}}}|greg|page|equals-page}}={{#if:{{{greg-page|}}}|{{{greg-page}}}|{{{page|}}}}}
+		|{{#ifeq:{{lc:{{{main|}}}}}|greg|flip|equals-flip}}={{#switch:{{lc:{{{flip|}}}}}|greg|all=on|off}}
+		|{{#ifeq:{{lc:{{{main|}}}}}|greg|equals-flip|flip}}={{#switch:{{lc:{{{flip|}}}}}|auc|all=on|off}}
+	}}
+}}</includeonly><noinclude>{{documentation}}</noinclude>

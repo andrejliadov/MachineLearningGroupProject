@@ -1,0 +1,99 @@
+{{saved_book
+ |title=Computer Networking
+ |subtitle=
+ |cover-image=
+ |cover-color=
+}}
+
+== Computer Networking ==
+;Networking
+:[[Computer network]]
+:[[Local area network]]
+:[[Campus network|Campus (area) network]]
+<!-- Put "area" in parenthesis to keep consistency with the other sizes of networks -->
+:[[Metropolitan area network]]
+:[[Wide area network]]
+:[[Hotspot (Wi-Fi)|Wi-Fi Hotspot]]
+<!-- Better readible when "Wi-Fi" is in front of "hotspot" -->
+;OSI Model
+:[[OSI model]]
+:[[Internet protocol suite]]
+:[[Physical layer]]
+:[[Media access control]]
+:[[Logical link control]]
+:[[Data link layer]]
+:[[Network layer]]
+:[[Transport layer]]
+:[[Session layer]]
+:[[Presentation layer]]
+:[[Application layer]]
+;Physical Cabling
+:[[Twisted pair]]
+:[[Optical fiber]]
+:[[Optical fiber connector]]
+;IEEE 802.1
+:[[IEEE 802.1D]]
+:[[Link Layer Discovery Protocol]]
+:[[Cisco Discovery Protocol]]
+:[[Spanning Tree Protocol]]
+:[[IEEE P802.1p]]
+:[[IEEE 802.1Q]]
+:[[IEEE 802.1X]]
+;IEEE 802.3
+:[[Ethernet]]
+:[[Link aggregation]]
+:[[Power over Ethernet]]
+:[[Gigabit Ethernet]]
+:[[2.5GBASE-T and 5GBASE-T]]
+:[[10 Gigabit Ethernet]]
+:[[25 Gigabit Ethernet]]
+:[[100 Gigabit Ethernet]]
+;Internet Protocol
+:[[Internet Protocol]]
+:[[IP address]]
+:[[IPv4]]
+:[[IPv4 address exhaustion]]
+:[[IPv6]]
+:[[Internet Control Message Protocol]]
+:[[Internet Control Message Protocol version 6]]
+:[[Dynamic Host Configuration Protocol]]
+:[[DHCPv6]]
+:[[Network address translation]]
+:[[IPv6 rapid deployment]]
+:[[NAT64]]
+;Standards
+:[[User Datagram Protocol]]
+:[[Transmission Control Protocol]]
+:[[Simple Network Management Protocol]]
+:[[Lightweight Directory Access Protocol]]
+;Routing
+:[[Routing]]
+:[[Static routing]]
+:[[Link-state routing protocol]]
+::[[Open Shortest Path First]]
+::[[IS-IS]]
+:[[Distance-vector routing protocol]]
+::[[Routing Information Protocol]]
+::[[Enhanced Interior Gateway Routing Protocol]]
+:[[Path vector routing protocol]]
+::[[Border Gateway Protocol]]
+;Multicast Routing
+:[[Multicast]]
+:[[IP multicast]]
+:[[Internet Group Management Protocol]]
+:[[Protocol Independent Multicast]]
+;Email
+:[[Simple Mail Transfer Protocol]]
+:[[Post Office Protocol]]
+:[[Internet Message Access Protocol]]
+'''Email Server Software'''
+:[[Postfix (software)]]
+:[[Dovecot (software)]]
+:[[Microsoft Exchange Server]]
+;Web
+:[[Hypertext Transfer Protocol]]
+:[[HTTP/2]]
+:[[SPDY]]
+:[[QUIC]]
+[[Category:Wikipedia books on computing]]
+[[Category:Wikipedia books on computer science|Computer Networking]]

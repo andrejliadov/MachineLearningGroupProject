@@ -1,0 +1,54 @@
+{{See also|Classification scheme (linguistics)|Classification scheme (metadata)}}
+A '''classification scheme''' is the product of arranging things into kinds of things (classes) or into ''groups'' of classes.
+
+In the abstract, the resulting structures are a crucial aspect of [[metadata]],  often represented as a hierarchical structure and accompanied by descriptive information of the classes or groups. Such a classification scheme is intended to be used for an arrangement or division of individual objects into the classes or groups, and the classes or groups are based on characteristics which the objects (members) have in common.
+
+In [[linguistics]], [[subordinate]] concepts are described as [[hyponym]]s of their respective superordinates; typically, a hyponym is 'a kind of' its superordinate.<ref>Keith Allan (2002, p. 260), Natural language Semantics, Blackwell Publishers Ltd, Oxford, {{ISBN|0-631-19296-4}}.</ref>
+
+The [[ISO/IEC 11179]] metadata registry standard uses classification schemes as a way to classify administered items, such as [[data element]]s, in a [[metadata registry]].
+
+Some quality criteria for classification schemes are:
+* Whether different kinds are grouped together. In other words, whether it is a grouping system or a pure classification system. In case of grouping, a subset (subgroup) does not have (inherit) all the characteristics of the superset, which makes that the knowledge and requirements about the superset are not applicable for the members of the subset.
+* Whether the classes have overlaps.
+* Whether subordinates (may) have multiple superordinates. Some classification schemes allow that a kind of thing has more than one superordinate others don't. Multiple supertypes for one subtype implies that the subordinate has the combined characteristics of all its superordinates. This is called multiple inheritance (of characteristics from multiple superordinates to their subordinates).
+* Whether the criteria for belonging to a class or group are well defined.
+* Whether the kinds of relations between the concepts are made explicit and well defined.
+* Whether subtype-supertype relations are distinguished from composition relations (part-whole relations) and from object-role relations.
+
+==Benefits of using classification schemes==
+Using one or more classification schemes for the classification of a collection of objects has many benefits.  Some of these include:
+* It allows a user to find an individual object quickly on the basis of its kind or group.
+* It makes it easier to detect duplicate objects.
+* It conveys [[semantics]] (meaning) of an object from the definition of its kind, which meaning is not conveyed by the name of the individual object or its way of spelling.
+* Knowledge and requirements about a kind of thing can be applied to other objects of that kind.
+
+==Kinds of classification schemes==
+The following are examples of different kinds of classification schemes.  This list is in approximate order from informal to more formal:
+* [[thesaurus]] - a collection of categorized concepts, denoted by words or phrases, that are related to each other by narrower term, wider term and related term relations.
+* [[Taxonomy (general)|taxonomy]] - a formal list of concepts, denoted by controlled words or phrases, arranged from abstract to specific, related by subtype-supertype relations or by superset-subset relations.
+* [[data model]] - an arrangement of concepts (entity types), denoted by words or phrases, that have various kinds of relationships. Typically, but not necessarily, representing requirements and capabilities for a specific scope (application area).
+* [[network (mathematics)]] - an arrangement of objects in a random graph.
+* [[Ontology (computer science)|ontology]] - an arrangement of concepts that are related by various well defined kinds of relations. The arrangement can be visualized in a [[directed acyclic graph]].
+
+One example of a classification scheme for [[data element]]s is a [[representation term]].
+
+==See also==
+* [[ISO/IEC 11179]]
+* [[Metadata]]
+* [[Ontology (computer science)]]
+* [[Simple Knowledge Organisation System]]
+* [[Representation class]]
+* [[Representation term]]
+* [[Semantic spectrum]]
+
+== References ==
+{{reflist}}
+
+==External links==
+* [http://standards.iso.org/ittf/PubliclyAvailableStandards/c035345_ISO_IEC_11179-2_2005(E).zip ISO/IEC 11179-2:2005 Metadata registries (MDR) - Part 2: Classification]
+* [http://metadata-standards.org/metadata-stds/Document-library/Meeting-reports/SC32WG2/2002-05-Seoul/WG2-SEL-018%20ISO-IEC-11179-2%20presentation-to-open-forum.ppt Nancy Lawler's presentation on Classification Schemes]
+
+[[Category:Metadata]]
+[[Category:Metadata registry]]
+[[Category:ISO/IEC 11179]]
+[[Category:Classification systems]]

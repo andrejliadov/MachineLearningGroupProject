@@ -1,0 +1,152 @@
+{{short description|A necessary condition for optimality associated with dynamic programming}}
+{{More footnotes|date=April 2018}}
+
+A '''Bellman equation''', named after [[Richard E. Bellman]], is a [[necessary condition]] for optimality associated with the mathematical [[Optimization (mathematics)|optimization]] method known as [[dynamic programming]].<ref>{{cite book |first=Avinash K. |last=Dixit |title=Optimization in Economic Theory |publisher=Oxford University Press |edition=2nd |year=1990 |isbn=0-19-877211-4 |page=164 |url=https://books.google.com/books?id=dHrsHz0VocUC&pg=PA164 }}</ref> It writes the "value" of a decision problem at a certain point in time in terms of the payoff from some initial choices and the "value" of the remaining decision problem that results from those initial choices.{{Citation needed|date=September 2017}} This breaks a dynamic optimization problem into a [[sequence]] of simpler subproblems, as [[Bellman equation#Bellman's principle of optimality|Bellman's “principle of optimality”]] prescribes.<ref>{{cite book |first=Donald E. |last=Kirk |title=Optimal Control Theory: An Introduction |publisher=Prentice-Hall |year=1970 |isbn=0-13-638098-0 |page=55 |url=https://books.google.com/books?id=fCh2SAtWIdwC&pg=PA55 }}</ref>
+
+The Bellman equation was first applied to engineering [[control theory]] and to other topics in applied mathematics, and subsequently became an important tool in [[economic theory]]; though the basic concepts of dynamic programming are prefigured in [[John von Neumann]] and [[Oskar Morgenstern]]'s ''[[Theory of Games and Economic Behavior]]'' and [[Abraham Wald]]'s ''[[sequential analysis]]''.{{Citation needed|date=September 2017}}
+
+Almost any problem that can be solved using [[optimal control theory]] can also be solved by analyzing the appropriate Bellman equation.{{Why|date=September 2017}}{{Explain|date=September 2017}} However, the term 'Bellman equation' usually refers to the dynamic programming equation associated with [[discrete-time]] optimization problems.<ref>{{harvnb|Kirk|1970|p=[https://books.google.com/books?id=fCh2SAtWIdwC&pg=PA70 70]}}</ref> In continuous-time optimization problems, the analogous equation is a [[partial differential equation]] that is called the [[Hamilton–Jacobi–Bellman equation]].<ref>{{cite book |first1=Morton I. |last1=Kamien |author-link=Morton Kamien |first2=Nancy L. |last2=Schwartz |title=Dynamic Optimization: The Calculus of Variations and Optimal Control in Economics and Management |location=Amsterdam |publisher=Elsevier |edition=Second |year=1991 |isbn=0-444-01609-0 |page=261 |url=https://books.google.com/books?id=liLCAgAAQBAJ&pg=PA261 }}</ref><ref>{{harvnb|Kirk|1970|p=[https://books.google.com/books?id=fCh2SAtWIdwC&pg=PA88 88]}}</ref>
+
+== Analytical concepts in dynamic programming ==
+To understand the Bellman equation, several underlying concepts must be understood. First, any optimization problem has some objective: minimizing travel time, minimizing cost, maximizing profits, maximizing utility, etc. The mathematical function that describes this objective is called the ''[[Loss function|objective function]]''.
+
+Dynamic programming breaks a multi-period planning problem into simpler steps at different points in time. Therefore, it requires keeping track of how the decision situation is evolving over time. The information about the current situation that is needed to make a correct decision is called the "state".<ref name=BellmanDP>{{cite book |last=Bellman |first=R.E. |orig-year=1957 |title=Dynamic Programming |year=2003 |publisher=Dover |isbn=0-486-42809-5}}</ref><ref name=dreyfus>{{cite journal |first=S. |last=Dreyfus |year=2002 |title=Richard Bellman on the birth of dynamic programming |journal=Operations Research |volume=50 |issue=1 |pages=48–51 |doi=10.1287/opre.50.1.48.17791|doi-access=free }}</ref> For example, to decide how much to consume and spend at each point in time, people would need to know (among other things) their initial wealth. Therefore, wealth <math>(W)</math> would be one of their ''[[state variable]]s'', but there would probably be others.
+
+The variables chosen at any given point in time are often called the ''[[control variable (programming)|control variables]]''. For instance, given their current wealth, people might decide how much to consume now. Choosing the control variables now may be equivalent to choosing the next state; more generally, the next state is affected by other factors in addition to the current control. For example, in the simplest case, today's wealth (the state) and consumption (the control) might exactly determine tomorrow's wealth (the new state), though typically other factors will affect tomorrow's wealth too.
+
+The dynamic programming approach describes the optimal plan by finding a rule that tells what the controls should be, given any possible value of the state. For example, if consumption (''c'') depends ''only'' on wealth (''W''), we would seek a rule  <math>c(W)</math> that gives consumption as a function of wealth. Such a rule, determining the controls as a function of the states, is called a ''policy function'' (See Bellman, 1957, Ch. III.2).<ref name=BellmanDP />
+
+Finally, by definition, the optimal decision rule is the one that achieves the best possible value of the objective. For example, if someone chooses consumption, given wealth, in order to maximize happiness (assuming happiness ''H'' can be represented by a mathematical function, such as a [[utility]] function and is something defined by wealth), then each level of wealth will be associated with some highest possible level of happiness, <math>H(W)</math>. The best possible value of the objective, written as a function of the state, is called the ''value function''.
+
+Bellman showed that a dynamic [[Optimization (mathematics)|optimization]] problem in [[discrete time]] can be stated in a [[recursion|recursive]], step-by-step form known as [[backward induction]] by writing down the relationship between the value function in one period and the value function in the next period. The relationship between these two value functions is called the "Bellman equation". In this approach, the optimal policy in the last time period is specified in advance as a function of the state variable's value at that time, and the resulting optimal value of the objective function is thus expressed in terms of that value of the state variable. Next, the next-to-last period's optimization involves maximizing the sum of that period's period-specific objective function and the optimal value of the future objective function, giving that period's optimal policy contingent upon the value of the state variable as of the next-to-last period decision.{{clarify |date=January 2020 |reason=comment from reader: the last two sentences are too long and ambiguous/confusing}} This logic continues recursively back in time, until the first period decision rule is derived, as a function of the initial state variable value, by optimizing the sum of the first-period-specific objective function and the value of the second period's value function, which gives the value for all the future periods. Thus, each period's decision is made by explicitly acknowledging that all future decisions will be optimally made.
+
+== Derivation ==
+
+=== A dynamic decision problem ===
+Let the state at time <math>t</math> be <math>x_t</math>. For a decision that begins at time 0, we take as given the initial state <math>x_0</math>. At any time, the set of possible actions depends on the current state; we can write this as <math> a_{t} \in \Gamma (x_t)</math>, where the action <math>a_t</math> represents one or more control variables. We also assume that the state changes from <math>x</math> to a new state <math>T(x,a)</math> when action <math>a</math> is taken, and that the current payoff from taking action <math>a</math> in state <math>x</math> is <math>F(x,a)</math>. Finally, we assume impatience, represented by a [[discount factor]] <math>0<\beta<1</math>.
+
+Under these assumptions, an infinite-horizon decision problem takes the following form:
+
+:<math> V(x_0) \; = \; \max_{ \left \{ a_{t} \right \}_{t=0}^{\infty} }  \sum_{t=0}^{\infty} \beta^t F(x_t,a_{t}), </math>
+
+subject to the constraints
+
+:<math> a_{t} \in \Gamma (x_t), \; x_{t+1}=T(x_t,a_t), \; \forall t = 0, 1, 2, \dots </math>
+
+Notice that we have defined notation <math>V(x_0)</math> to denote the optimal value that can be obtained by maximizing this objective function subject to the assumed constraints. This function is the ''value function''. It is a function of the initial state variable <math>x_0</math>, since the best value obtainable depends on the initial situation.
+
+=== Bellman's principle of optimality ===
+The dynamic programming method breaks this decision problem into smaller subproblems. Bellman's ''principle of optimality'' describes how to do this:<blockquote>Principle of Optimality: An optimal policy has the property that whatever the initial state and initial decision are, the remaining decisions must constitute an optimal policy with regard to the state resulting from the first decision. (See Bellman, 1957, Chap. III.3.)<ref name=BellmanDP /><ref name=dreyfus /><ref name=BellmanTheory>{{cite journal |first=R |last=Bellman |pmc=1063639 |title=On the Theory of Dynamic Programming |journal=Proc Natl Acad Sci U S A |date=August 1952 |volume=38 |issue=8 |pages=716–9 |pmid=16589166 |doi=10.1073/pnas.38.8.716}}</ref></blockquote>
+In computer science, a problem that can be broken apart like this is said to have [[optimal substructure]]. In the context of dynamic [[game theory]], this principle is analogous to the concept of [[subgame perfect equilibrium]], although what constitutes an optimal policy in this case is conditioned on the decision-maker's opponents choosing similarly optimal policies from their points of view.
+
+As suggested by the ''principle of optimality'', we will consider the first decision separately, setting aside all future decisions (we will start afresh from time 1 with the new state <math>x_1 </math>). Collecting the future decisions in brackets on the right, the above infinite-horizon decision problem is equivalent to:{{Clarify|date=September 2017}}
+
+:<math> \max_{ a_0 } \left \{ F(x_0,a_0)
++ \beta  \left[ \max_{ \left \{ a_{t} \right \}_{t=1}^{\infty} }
+\sum_{t=1}^{\infty} \beta^{t-1} F(x_t,a_{t}):
+a_{t} \in \Gamma (x_t), \; x_{t+1}=T(x_t,a_t), \; \forall t \geq 1 \right] \right \}</math>
+
+subject to the constraints
+
+:<math> a_0 \in \Gamma (x_0), \; x_1=T(x_0,a_0). </math>
+
+Here we are choosing <math>a_0</math>, knowing that our choice will cause the time 1 state to be <math>x_1=T(x_0,a_0)</math>. That new state will then affect the decision problem from time 1 on. The whole future decision problem appears inside the square brackets on the right.{{Clarify|date=September 2017}}{{Explain|date=September 2017}}
+
+=== The Bellman equation ===
+So far it seems we have only made the problem uglier by separating today's decision from future decisions. But we can simplify by noticing that what is inside the square brackets on the right is ''the value'' of the time 1 decision problem, starting from state <math>x_1=T(x_0,a_0)</math>.
+
+Therefore, we can rewrite the problem as a [[Recursion|recursive]] definition of the value function:
+
+:<math>V(x_0) = \max_{ a_0 } \{ F(x_0,a_0) + \beta V(x_1) \} </math>, subject to the constraints: <math> a_0 \in \Gamma (x_0), \; x_1=T(x_0,a_0). </math>
+
+This is the Bellman equation. It can be simplified even further if we drop time subscripts and plug in the value of the next state:
+
+:<math>V(x) = \max_{a \in \Gamma (x) } \{ F(x,a) + \beta V(T(x,a)) \}.</math>
+
+The Bellman equation is classified as a [[functional equation]], because solving it means finding the unknown function ''V'', which is the ''value function''. Recall that the value function describes the best possible value of the objective, as a function of the state ''x''. By calculating the value function, we will also find the function ''a''(''x'') that describes the optimal action as a function of the state; this is called the ''policy function''.
+
+=== In a stochastic problem ===
+{{See also|Markov decision process}}
+
+In the deterministic setting, other techniques besides dynamic programming can be used to tackle the above [[optimal control]] problem. However, the Bellman Equation is often the most convenient method of solving ''stochastic'' optimal control problems.
+
+For a specific example from economics, consider an infinitely-lived consumer with initial wealth endowment <math>{\color{Red}a_0}</math> at period <math>0</math>. He has an instantaneous [[utility function]] <math>u(c)</math> where <math>c</math> denotes consumption and discounts the next period utility at a rate of <math>0< \beta<1 </math>. Assume that what is not consumed in period <math>t</math> carries over to the next period with interest rate <math>r</math>. Then the consumer's utility maximization problem is to choose a consumption plan <math>\{{\color{OliveGreen}c_t}\}</math> that solves
+
+:<math>\max \sum_{t=0} ^{\infty} \beta^t u ({\color{OliveGreen}c_t})</math>
+
+subject to
+
+:<math>{\color{Red}a_{t+1}} = (1 + r) ({\color{Red}a_t} - {\color{OliveGreen}c_t}), \; {\color{OliveGreen}c_t} \geq 0,</math>
+
+and
+
+:<math>\lim_{t \rightarrow \infty} {\color{Red}a_t} \geq 0.</math>
+
+The first constraint is the capital accumulation/law of motion specified by the problem, while the second constraint is a [[Transversality (mathematics)|transversality condition]] that the consumer does not carry debt at the end of his life. The Bellman equation is
+
+:<math>V(a) = \max_{ 0 \leq c \leq a } \{ u(c) + \beta V((1+r) (a - c)) \},</math>
+
+Alternatively, one can treat the sequence problem directly using, for example, the [[Hamiltonian (control theory)|Hamiltonian equations]].
+
+Now, if the interest rate varies from period to period, the consumer is faced with a stochastic optimization problem. Let the interest ''r'' follow a [[Markov process]] with probability transition function <math>Q(r, d\mu_r)</math> where <math>d\mu_r</math> denotes the [[probability measure]] governing the distribution of interest rate next period if current interest rate is <math>r</math>. In this model the consumer decides his current period consumption after the current period interest rate is announced.
+
+Rather than simply choosing a single sequence <math>\{{\color{OliveGreen}c_t}\}</math>, the consumer now must choose a sequence <math>\{{\color{OliveGreen}c_t}\}</math> for each possible realization of a <math>\{r_t\}</math> in such a way that his lifetime expected utility is maximized:
+
+:<math>\max_{ \left \{ c_{t} \right \}_{t=0}^{\infty} } \mathbb{E}\bigg( \sum_{t=0} ^{\infty} \beta^t u ({\color{OliveGreen}c_t})   \bigg).</math>
+
+The expectation <math>\mathbb{E}</math> is taken with respect to the appropriate probability measure given by ''Q'' on the sequences of ''r'' 's. Because ''r'' is governed by a Markov process, dynamic programming simplifies the problem significantly. Then the Bellman equation is simply:
+
+:<math>V(a, r) =  \max_{ 0 \leq c \leq a } \{ u(c) + \beta \int V((1+r) (a - c), r') Q(r, d\mu_r) \} .</math>
+
+Under some reasonable assumption, the resulting optimal policy function ''g''(''a'',''r'') is [[measurable]].
+
+For a general stochastic sequential optimization problem with Markovian shocks and where the agent is faced with his decision ''[[ex-post]]'', the Bellman equation takes a very similar form
+
+:<math>V(x, z) = \max_{c \in \Gamma(x,z)} \{F(x, c, z) + \beta \int V( T(x,c), z') d\mu_z(z')\}. </math>
+
+== Solution methods ==
+* The [[method of undetermined coefficients]], also known as 'guess and verify', can be used to solve some infinite-horizon, [[Autonomous system (mathematics)|autonomous]] Bellman equations.<ref>{{cite book |first1=Lars |last1=Ljungqvist |first2=Thomas J. |last2=Sargent |title=Recursive Macroeconomic Theory |publisher=MIT Press |year=2004 |edition=2nd |pages=[https://archive.org/details/recursivemacroec02edljun/page/88 88]–90 |isbn=0-262-12274-X |url=https://archive.org/details/recursivemacroec02edljun |url-access=registration }}</ref>
+* The Bellman equation can be solved by [[backwards induction]], either [[Closed-form expression|analytically]] in a few special cases, or [[numerical analysis|numerically]] on a computer. Numerical backwards induction is applicable to a wide variety of problems, but may be infeasible when there are many state variables, due to the [[curse of dimensionality]]. Approximate dynamic programming has been introduced by [[Dimitri Bertsekas|D. P. Bertsekas]] and [[John Tsitsiklis|J. N. Tsitsiklis]] with the use of [[artificial neural network]]s ([[multilayer perceptron]]s) for approximating the Bellman function.<ref name="NeuroDynProg">{{cite book |first1=Dimitri P. |last1=Bertsekas |first2=John N. |last2=Tsitsiklis |title=Neuro-dynamic Programming |year=1996 |publisher=Athena Scientific |isbn=978-1-886529-10-6}}</ref> This is an effective mitigation strategy for reducing the impact of dimensionality by replacing the memorization of the complete function mapping for the whole space domain with the memorization of the sole neural network parameters. In particular, for continuous-time systems, an approximate dynamic programming approach that combines both policy iterations with neural networks was introduced.<ref name="CTHJB">{{cite journal |first1=Murad |last1=Abu-Khalaf |first2=Frank L.|last2=Lewis |title=Nearly optimal control laws for nonlinear systems with saturating actuators using a neural network HJB approach|year=2005 |journal=Automatica |volume=41 | issue=5 | pages=779-791|doi=10.1016/j.automatica.2004.11.034}}</ref> In discrete-time, an approach to solve the HJB equation combining value iterations and neural networks was introduced.<ref name="DTHJB">{{cite journal |first1=Asma |last1=Al-Tamimi|first2=Frank L.|last2=Lewis |first3=Murad |last3=Abu-Khalaf |title=Discrete-Time Nonlinear HJB Solution Using Approximate Dynamic Programming: Convergence Proof|year=2008 |journal=IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics) |volume= 38| issue=4 | pages=943-949 |doi= 10.1109/TSMCB.2008.926614}}</ref>
+* By calculating the first-order conditions associated with the Bellman equation, and then using the [[envelope theorem]] to eliminate the derivatives of the value function, it is possible to obtain a system of [[difference equation]]s or [[differential equation]]s called the '[[Euler–Lagrange equation|Euler equation]]s'.<ref>{{cite book |first=Jianjun |last=Miao |title=Economic Dynamics in Discrete Time |publisher=MIT Press |year=2014 |page=134 |isbn=978-0-262-32560-8 |url=https://books.google.com/books?id=dh2EBAAAQBAJ&pg=PA134 }}</ref> Standard techniques for the solution of difference or differential equations can then be used to calculate the dynamics of the state variables and the control variables of the optimization problem.
+
+== Applications in economics ==
+The first known application of a Bellman equation in economics is due to [[Martin Beckmann]] and [[Richard Muth]].<ref>{{cite journal |first1=Martin |last1=Beckmann |first2=Richard |last2=Muth |year=1954 |title=On the Solution to the 'Fundamental Equation' of inventory theory |journal=Cowles Commission Discussion Paper 2116 |url=http://cowles.yale.edu/sites/default/files/files/pub/cdp/e-2116.pdf }}</ref> Martin Beckmann also wrote extensively on consumption theory using the Bellman equation in 1959. His work influenced [[Edmund S. Phelps]], among others.
+
+A celebrated economic application of a Bellman equation is [[Robert C. Merton]]'s seminal 1973 article on the [[ICAPM|intertemporal capital asset pricing model]].<ref>{{cite journal |first=Robert C. |last=Merton |year=1973 |title=An Intertemporal Capital Asset Pricing Model |journal=[[Econometrica]] |volume=41 |issue=5 |pages=867–887 |doi=10.2307/1913811 |jstor=1913811 }}</ref> (See also [[Merton's portfolio problem]]).The solution to Merton's theoretical model, one in which investors chose between income today and future income or capital gains, is a form of Bellman's equation. Because economic applications of dynamic programming usually result in a Bellman equation that is a [[difference equation]], economists refer to dynamic programming as a "recursive method" and a subfield of [[recursive economics]] is now recognized within economics.
+
+[[Nancy Stokey]], [[Robert E. Lucas]], and [[Edward Prescott]] describe stochastic and nonstochastic dynamic programming in considerable detail, and develop theorems for the existence of solutions to problems meeting certain conditions. They also describe many examples of modeling theoretical problems in economics using recursive methods.<ref>{{cite book |first1=Nancy |last1=Stokey |first2=Robert E. |last2=Lucas |first3=Edward |last3=Prescott |year=1989 |title=Recursive Methods in Economic Dynamics |publisher=Harvard University Press |isbn=0-674-75096-9 }}</ref> This book led to dynamic programming being employed to solve a wide range of theoretical problems in economics, including optimal [[economic growth]], [[resource extraction]], [[principal–agent problem]]s, [[public finance]], business [[investment]], [[asset pricing]], [[factor of production|factor]] supply, and [[industrial organization]]. [[Lars Ljungqvist]] and [[Thomas Sargent]] apply dynamic programming to study a variety of theoretical questions in [[monetary policy]], [[fiscal policy]], [[taxation]], [[economic growth]], [[search theory]], and [[labor economics]].<ref>{{cite book |first1=Lars |last1=Ljungqvist |first2=Thomas |last2=Sargent |year=2012 |title=Recursive Macroeconomic Theory |publisher=MIT Press |edition=3rd |isbn=978-0-262-01874-6 }}</ref> [[Avinash Dixit]] and [[Robert Pindyck]] showed the value of the method for thinking about [[capital budgeting]].<ref>{{cite book |first1=Avinash |last1=Dixit |first2=Robert |last2=Pindyck |year=1994 |title=Investment Under Uncertainty |publisher=Princeton University Press |isbn=0-691-03410-9 |url-access=registration |url=https://archive.org/details/investmentunderu00dixi_0 }}</ref> Anderson adapted the technique to business valuation, including privately held businesses.<ref>{{cite book |last=Anderson |first=Patrick L. |title=Business Economics & Finance |publisher=CRC Press |year=2004 |chapter=Ch. 10 |isbn=1-58488-348-0}}
+<br/>{{cite journal |last=Anderson |first=Patrick L. |author-mask=1 |title=The Value of Private Businesses in the United States |journal=Business Economics |year=2009 |volume=44 |issue=2 |pages=87–108 |doi=10.1057/be.2009.4|s2cid=154743445 }}
+<br/>{{cite book |last=Anderson |first=Patrick L. |author-mask=1 |title=Economics of Business Valuation |publisher=Stanford University Press |year=2013 |isbn=9780804758307}} [http://www.sup.org/book.cgi?id=11400 Stanford Press] {{Webarchive|url=https://web.archive.org/web/20130808132733/http://www.sup.org/book.cgi?id=11400 |date=2013-08-08 }}</ref>
+
+Using dynamic programming to solve concrete problems is complicated by informational difficulties, such as choosing the unobservable discount rate. There are also computational issues, the main one being the [[curse of dimensionality]] arising from the vast number of possible actions and potential state variables that must be considered before an optimal strategy can be selected. For an extensive discussion of computational issues, see Miranda and Fackler,<ref>{{cite book |first1=Mario J. |last1=Miranda |first2=Paul L. |last2=Fackler |title=Applied Computational Economics and Finance |url=https://archive.org/details/appliedcomputati0000mira |url-access=registration |date=2004 |publisher=MIT Press |isbn=978-0-262-29175-0 }}</ref> and Meyn 2007.<ref>{{cite book |first=Sean |last=Meyn |title=Control Techniques for Complex Networks |url=https://books.google.com/books?id=0OdSX2BZ4WIC |year=2008 |publisher=Cambridge University Press |isbn=978-0-521-88441-9}}  Appendix contains abridged [http://decision.csl.uiuc.edu/~meyn/pages/book.html Meyn & Tweedie] {{webarchive|url=https://web.archive.org/web/20071012194420/http://decision.csl.uiuc.edu/~meyn/pages/book.html |date=2007-10-12 }}.</ref>
+
+== Example ==
+In [[Markov decision process]]es, a Bellman equation is a [[recursion]] for expected rewards. For example, the expected reward for being in a particular state ''s'' and following some fixed policy <math>\pi</math> has the Bellman equation:
+
+:<math> V^\pi(s)= R(s,\pi(s)) + \gamma \sum_{s'} P(s'|s,\pi(s)) V^\pi(s').\ </math>
+
+This equation describes the expected reward for taking the action prescribed by some policy <math>\pi</math>.
+
+The equation for the optimal policy is referred to as the ''Bellman optimality equation'':
+
+:<math> V^{\pi*}(s)=  \max_a \{ {R(s,a) + \gamma \sum_{s'} P(s'|s,a) V^{\pi*}(s')} \}.\ </math>
+
+where <math>{\pi*}</math> is the optimal policy and <math>V^{\pi*}</math> refers to the value function of the optimal policy. The equation above describes the reward for taking the action giving the highest expected return.
+
+== See also ==
+* {{annotated link|Bellman pseudospectral method}}
+* {{annotated link|Dynamic programming}}
+* {{annotated link|Hamilton–Jacobi–Bellman equation}}
+* {{annotated link|Markov decision process}}
+* {{annotated link|Optimal control|Optimal control theory}}
+* {{annotated link|Optimal substructure}}
+* {{annotated link|Recursive competitive equilibrium}}
+* {{annotated link|Stochastic dynamic programming}}
+
+== References ==
+{{Reflist|30em}}
+
+{{DEFAULTSORT:Bellman Equation}}
+[[Category:Equations]]
+[[Category:Dynamic programming]]
+[[Category:Control theory]]

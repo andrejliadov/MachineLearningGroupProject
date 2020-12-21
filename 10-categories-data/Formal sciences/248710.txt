@@ -1,0 +1,160 @@
+{{Information theory}}
+
+In [[information theory]], the '''asymptotic equipartition property''' ('''AEP''') is a general property of the output samples of a [[stochastic process|stochastic source]]. It is fundamental to the concept of [[typical set]] used in theories of [[data compression]].
+
+Roughly speaking, the theorem states that although there are many series of results that may be produced by a random process, the one actually produced is most probably from a loosely defined set of outcomes that all have approximately the same chance of being the one actually realized. (This is a consequence of the [[law of large numbers]] and [[ergodic theory]].) Although there are individual outcomes which have a higher probability than any outcome in this set, the vast number of outcomes in the set almost guarantees that the outcome will come from the set. One way of intuitively understanding the property is through [[Cramér's large deviation theorem]], which states that the probability of a large deviation from mean decays exponentially with the number of samples. Such results are studied in [[large deviations theory]]; intuitively, it is the large deviations that would violate equipartition, but these are unlikely.
+
+In the field of [[Pseudorandom number generator|pseudorandom number generation]], a candidate generator of undetermined quality whose output sequence lies too far outside the typical set by some statistical criteria is rejected as insufficiently random. Thus, although the typical set is loosely defined, practical notions arise concerning ''sufficient'' typicality.
+
+== Definition ==
+Given a discrete-time stationary ergodic stochastic process <math>X</math> on the [[probability space]] <math>(\Omega, B, p)</math>, the asymptotic equipartition property is an assertion that
+
+:<math>-\frac{1}{n} \log p(X_1, X_2, \dots, X_n) \to H(X) \quad \text{ as } \quad n\to\infty</math>
+
+where <math>H(X)</math> or simply <math>H</math> denotes the [[entropy rate]] of <math>X</math>, which must exist for all discrete-time [[stationary process]]es including the ergodic ones. The asymptotic equipartition property is proved for finite-valued (i.e. <math>|\Omega| < \infty</math>) stationary ergodic stochastic processes in the [[#AEP for discrete-time finite-valued stationary ergodic sources|Shannon–McMillan–Breiman theorem]] using the ergodic theory and for any [[independent identically distributed random variables|i.i.d.]] sources directly using the law of large numbers in both the discrete-valued case (where <math>H</math> is simply the [[entropy]] of a symbol) and the continuous-valued case (where ''H'' is the differential entropy instead). The definition of the asymptotic equipartition property can also be extended for certain classes of continuous-time stochastic processes for which a typical set exists for long enough observation time. The convergence is proven [[almost sure]] in all cases.
+
+== Discrete-time i.i.d. sources ==
+Given <math>X</math> is an [[independent identically distributed random variables|i.i.d.]] source which may take values in the alphabet <math>\mathcal{X}</math>, its [[time series]] <math>X_1,\ldots,X_n</math> is i.i.d. with [[entropy]] <math>H(X)</math>. The weak [[law of large numbers]] gives the asymptotic equipartition property with [[convergence in probability]],
+
+:<math>\lim_{n\to\infty}\Pr\left[\left|-\frac{1}{n} \log p(X_1, X_2, \ldots, X_n) - H(X)\right|> \epsilon\right]=0 \qquad \forall \epsilon>0.</math>
+
+since the entropy is equal to the expectation of 
+:<math>-\frac{1}{n} \log p(X_1, X_2, \ldots , X_n).</math>{{sfnp|Cover|Thomas|1991|p=51}}
+
+The strong law of large numbers asserts the stronger almost sure convergence,
+
+:<math>\Pr\left[\lim_{n\to\infty} - \frac{1}{n} \log p(X_1, X_2,\ldots, X_n) = H(X)\right]=1.</math>
+
+== Discrete-time finite-valued stationary ergodic sources ==
+Consider a finite-valued sample space <math>\Omega</math>, i.e. <math>|\Omega| < \infty</math>, for the discrete-time [[stationary ergodic process]] <math>X:=\{X_n\}</math> defined on the [[probability space]] <math>(\Omega, B, p)</math>. The asymptotic equipartition property for such stochastic source is known as the '''Shannon–McMillan–Breiman theorem''', due to [[Claude Shannon]], [[Brockway McMillan]], and [[Leo Breiman]].
+
+
+:{| class="toccolours collapsible collapsed" width="80%" style="text-align:left"
+!Proof (sketch) {{sfnp|Algoet|Cover|1988}}
+|-
+|
+* Let ''x'' denote some measurable set <math>x=X(A)</math> for some <math>A \in B</math>
+* Parameterize the joint probability by ''n'' and ''x'' as 
+::<math>j(n,x):=p\left(x_0^{n-1} \right).</math>
+* Parameterize the conditional probability by ''i'', ''k'' and ''x'' as 
+::<math>c(i,k,x) := p \left (x_i\mid x_{i-k}^{i-1} \right).</math>
+* Take the limit of the conditional probability as ''k'' → ∞ and denote it as 
+::<math>c(i,x):=p \left(x_i\mid x_{-\infty}^{i-1} \right ).</math>
+* Argue the two notions of entropy rate 
+::<math>\lim_{n\to\infty} \mathrm{E}[-\log j(n,X)]\quad \text{and} \quad \lim_{n\to\infty} \mathrm{E}[-\log c(n,n,X)]</math> 
+:exist and are equal for any stationary process including the stationary ergodic process ''X''. Denote it as ''H''.
+* Argue that both 
+::<math>\begin{align}
+c(i,k,X) &:= \left \{p \left(X_i\mid X_{i-k}^{i-1} \right ) \right \} \\
+c(i,X) &:= \left \{p \left (X_i\mid X_{-\infty}^{i-1} \right ) \right \}
+\end{align}</math> 
+:where ''i'' is the time index, are stationary ergodic processes, whose sample means converge [[almost surely]] to some values denoted by <math>H^k</math> and <math>H^{\infty}</math> respectively.
+* Define the ''k''-th order Markov approximation to the probability <math>a(n,k,x)</math> as
+::<math>a(n,k,x):=p \left(X_0^{k-1} \right)\prod_{i=k}^{n-1}p \left (X_i\mid X_{i-k}^{i-1} \right )=j(k,x)\prod_{i=k}^{n-1} c(i,k,x)</math>
+* Argue that <math>a(n,k,X(\Omega))</math> is finite from the finite-value assumption.
+* Express <math>-\frac1n\log a(n,k,X)</math> in terms of the sample mean of <math>c(i,k,X)</math> and show that it converges almost surely to ''H<sup>k</sup>''
+* Define the probability measure
+::<math>a(n,x):=p \left (x_0^{n-1}\mid x_{-\infty}^{-1} \right ).</math>
+* Express <math>-\frac1n\log a(n,X)</math> in terms of the sample mean of <math>c(i,X)</math> and show that it converges almost surely to ''H<sup>∞</sup>''.
+* Argue that <math>H^k\searrow H</math> as ''k'' → ∞ using the stationarity of the process.
+* Argue that ''H'' = ''H<sup>∞</sup>'' using the [[Lévy's martingale convergence theorem]] and the finite-value assumption.
+* Show that 
+::<math>\mathrm{E}\left[\frac{a(n,k,X)}{j(n,X)}\right]=a(n, k,X(\Omega))</math> 
+:which is finite as argued before.
+* Show that 
+::<math>\mathrm{E}\left[\frac{j(n,X)}{a(n,X)}\right]=1</math> 
+:by conditioning on the infinite past <math>X_{-\infty}^{-1}</math> and iterating the expectation.
+* Show that 
+::<math>\forall \alpha\in\mathbb{R} \ : \ \Pr\left[\frac{a(n,k,X)}{j(n,X)}\geq \alpha \right]\leq \frac{a(n, k,X(\Omega))}{\alpha}</math> 
+:using the [[Markov's inequality]] and the expectation derived previously.
+* Similarly, show that 
+::<math>\forall \alpha\in\mathbb{R} \ : \ \Pr\left[\frac{j(n,X)}{a(n,X)}\geq \alpha \right]\leq \frac{1}{\alpha},</math>
+:which is equivalent to 
+::<math>\forall \alpha\in\mathbb{R} \ : \ \Pr\left[\frac1n\log\frac{j(n,X)}{a(n,X)}\geq \frac{1}{n}\log\alpha \right]\leq \frac{1}{\alpha}.</math>
+* Show that limsup of 
+::<math>\frac1n \log \frac{a(n,k,X)}{j(n,X)} \quad \text{and} \quad \frac{1}{n} \log\frac{j(n,X)}{a(n,X)}</math> 
+:are non-positive almost surely by setting α = ''n''<sup>β</sup> for any β > 1 and applying the [[Borel–Cantelli lemma]].
+* Show that liminf and limsup of 
+::<math>-\frac{1}{n} \log j(n,X)</math> 
+:are lower and upper bounded almost surely by ''H<sup>∞</sup>'' and ''H<sup>k</sup>'' respectively by breaking up the logarithms in the previous result.
+* Complete the proof by pointing out that the upper and lower bounds are shown previously to approach ''H'' as ''k'' → ∞.
+|}
+
+== Non-stationary discrete-time source producing independent symbols ==
+The assumptions of stationarity/ergodicity/identical distribution of random variables is not essential for the asymptotic equipartition property to hold. Indeed, as is quite clear intuitively, the asymptotic equipartition property requires only some form of the law of large numbers to hold, which is fairly general. However, the expression needs to be suitably generalized, and the conditions need to be formulated precisely.
+
+We assume that the source is producing independent symbols, with possibly different output statistics at each instant. We assume that the statistics of the process are known completely, that is, the marginal distribution of the process seen at each time instant is known. The joint distribution is just the product of marginals. Then, under the condition (which can be relaxed) that <math>\mathrm{Var}[\log p(X_i)]<M</math> for all ''i'', for some ''M'' > 0, the following holds (AEP):
+
+:<math>\lim_{n\to\infty}\Pr\left[\,\left|-\frac{1}{n} \log p(X_1, X_2, \ldots, X_n) - \overline{H}_n(X)\right|< \epsilon\right]=1\qquad \forall \epsilon>0</math>
+where 
+:<math>\overline{H}_n(X)=\frac{1}{n}H(X_1,X_2,\ldots,X_n)</math>
+
+:{| class="toccolours collapsible collapsed" width="80%" style="text-align:left"
+!Proof
+|-
+|The proof follows from a simple application of [[Markov's inequality]] (applied to second moment of <math>\log(p(X_i))</math>.
+
+:<math>\begin{align}
+\Pr \left[\left|-\frac{1}{n} \log p(X_1, X_2,\ldots, X_n) -\overline{H}(X)\right|> \epsilon\right] &\leq \frac{1}{n^2 \epsilon^2} \mathrm{Var} \left [\sum_{i=1}^n \left(\log(p(X_i) \right)^2 \right ]\\
+&\leq \frac{M}{n \epsilon^2} \to 0 \text{ as } n\to \infty
+\end{align}</math>
+
+It is obvious that the proof holds if any moment <math>\mathrm{E} \left [|\log p(X_i)|^r \right ]</math> is uniformly bounded for ''r'' > 1 (again by [[Markov's inequality]] applied to ''r''-th moment). <math>\Box{}</math>
+
+Even this condition is not necessary, but given a non-stationary random process, it should not be difficult to test whether the asymptotic equipartition property holds using the above method.
+|}
+
+=== Applications ===
+The asymptotic equipartition property for non-stationary discrete-time independent process leads us to (among other results) the [[source coding theorem]] for non-stationary source (with independent output symbols) and [[noisy-channel coding theorem]] for non-stationary memoryless channels.
+
+== Continuous-time stationary ergodic sources ==
+Discrete-time functions can be interpolated to continuous-time functions. If such interpolation ''f'' is [[measurable]], we may define the continuous-time stationary process accordingly as <math>\tilde{X}:=f\circ X</math>. If the asymptotic equipartition property holds for the discrete-time process, as in the i.i.d. or finite-valued stationary ergodic cases shown above, it automatically holds for the continuous-time stationary process derived from it by some measurable interpolation. i.e.
+:<math>-\frac{1}{n} \log p(\tilde{X}_0^\tau) \to H(X)</math>
+where ''n'' corresponds to the degree of freedom in time {{math|''τ''}}. {{math|''nH''(''X'')/''τ''}} and {{math|''H''(''X'')}} are the entropy per unit time and per degree of freedom respectively, defined by [[Claude E. Shannon|Shannon]].
+
+An important class of such continuous-time stationary process is the bandlimited stationary ergodic process with the sample space being a subset of the continuous <math>\mathcal{L}_2</math> functions. The asymptotic equipartition property holds if the process is white, in which case the time samples are i.i.d., or there exists ''T'' > 1/2''W'', where ''W'' is the [[Bandwidth (signal processing)|nominal bandwidth]], such that the ''T''-spaced time samples take values in a finite set, in which case we have the discrete-time finite-valued stationary ergodic process.
+
+Any [[time-invariant]] operations also preserves the asymptotic equipartition property, stationarity and ergodicity and we may easily turn a stationary process to non-stationary without losing the asymptotic equipartition property by nulling out a finite number of time samples in the process.
+
+==Category theory==
+A [[category theoretic]] definition for the equipartition property is given by [[Gromov]].<ref>Misha Gromov, (2012) "[https://www.ihes.fr/~gromov/wp-content/uploads/2018/08/structre-serch-entropy-july5-2012.pdf In a Search for a Structure, Part 1: On Entropy]". ''(See page 5, where the equipartition property is called the 'Bernoulli approximation theorem'.)''</ref> Given a sequence of [[Product (category theory)|Cartesian powers]] <math>P^N=P\times \cdots \times P</math> of a measure space ''P'', this sequence admits an ''asymptotically equivalent'' sequence ''H<sub>N</sub>'' of homogeneous measure spaces (''i.e.'' all sets have the same measure; all morphisms are invariant under the group of automorphisms, and thus factor as a morphism to the [[terminal object]]) .
+
+The above requires a definition of ''asymptotic equivalence''. This is given in terms of a distance function, giving how much an [[injective correspondence]] differs from an [[isomorphism]].  An injective correspondence <math>\pi: P\to Q</math> is a [[partially defined map]] that is a [[bijection]]; that is, it is a bijection between a subset <math>P'\subset P</math> and <math>Q'\subset Q</math>.  Then define
+
+:<math>|P-Q|_\pi = |P\smallsetminus P'| + |Q\smallsetminus Q'|</math>
+where |''S''| denotes the measure of a set ''S''.  In what follows, the measure of ''P'' and ''Q'' are taken to be 1, so that the measure spaces are probability spaces. This distance <math>|P-Q|_\pi</math> is commonly known as the [[earth mover's distance]] or [[Wasserstein metric]].
+
+Similarly, define
+:<math>|\log P:Q|_\pi = \frac{\sup_{p\in P^{'}}|\log p - \log \pi(p)|}{\log \min \left(|\operatorname{set}(P')|,|\operatorname{set}(Q')|\right)}</math>
+
+with <math>|\operatorname{set}(P)|</math> taken to be the counting measure on ''P''.  Thus, this definition requires that ''P'' be a finite measure space.  Finally, let
+:<math>\text{dist}_\pi(P,Q) = |P-Q|_\pi +|\log P:Q|_\pi</math>
+
+A sequence of injective correspondences <math>\pi_N:P_N\to Q_N</math> are then '''asymptotically equivalent''' when
+
+:<math>\text{dist}_{\pi_N}(P_N,Q_N) \to 0 \quad\text{ as }\quad N\to\infty</math>
+
+Given a homogenous space sequence ''H<sub>N</sub>'' that is asymptotically equivalent to ''P<sup>N</sup>'', the entropy ''H''(''P'') of ''P'' may be taken as
+
+:<math>H(P)=\lim_{N\to\infty}\frac{1}{N} |\operatorname{set}(H_N)|</math>
+
+==See also==
+* [[Cramér's large deviation theorem]]
+* [[Source coding theorem]]
+* [[Noisy-channel coding theorem]]
+
+==Notes==
+{{reflist}}
+
+==References==
+=== Journal articles ===
+* Claude E. Shannon. "[[A Mathematical Theory of Communication]]". ''Bell System Technical Journal'', July/October 1948.
+* {{cite journal |last=Algoet |first=Paul H. |last2=Cover |first2=Thomas M. |title=A Sandwich Proof of the Shannon-McMillan-Breiman Theorem |url=http://www-isl.stanford.edu/~cover/papers/paper83.pdf |journal=The Annals of Probability |volume=16 |issue=2 |pages=899–909 |year=1988}}
+* Sergio Verdu and Te Sun Han. "The Role of the Asymptotic Equipartition Property in Noiseless Source Coding."  ''IEEE Transactions on Information Theory'', '''43'''(3): 847–857, 1997.
+
+=== Textbooks ===
+* {{cite book |last=Cover|first=Thomas M. |last2=Thomas |first2=Joy A. |title=Elements of Information Theory |edition=first |publisher=Wiley |location=Hoboken, New Jersey |isbn=978-0-471-24195-9|year=1991 }}
+* {{cite book |last=MacKay|first=David J.C. |author-link=David J. C. MacKay|url=http://www.inference.phy.cam.ac.uk/mackay/itila/book.html|title=Information Theory, Inference, and Learning Algorithms|publisher=Cambridge University Press|year=2003|isbn=0-521-64298-1}}
+
+[[Category:Information theory]]
+[[Category:Theorems in statistics]]

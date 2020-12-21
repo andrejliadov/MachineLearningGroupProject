@@ -1,0 +1,211 @@
+{{Redirect|Nonlinear dynamics|the journal|Nonlinear Dynamics (journal)}}
+{{Complex systems}}
+{{About|"nonlinearity" in mathematics, physics and other sciences|video and film editing|Non-linear editing system|other uses|Nonlinearity (disambiguation)}}
+In [[mathematics]] and [[science]], a '''nonlinear system''' is a [[system]] in which the change of the output is not [[proportionality (mathematics)|proportional]] to the change of the input.<ref>{{Cite news|url=https://news.mit.edu/2010/explained-linear-0226|title=Explained: Linear and nonlinear systems|work=MIT News|access-date=2018-06-30}}</ref><ref>{{Cite web|url=https://www.birmingham.ac.uk/research/activity/mathematics/applied-maths/nonlinear-systems.aspx|title=Nonlinear systems, Applied Mathematics - University of Birmingham|website=www.birmingham.ac.uk|language=en-gb|access-date=2018-06-30}}</ref> Nonlinear problems are of interest to [[engineer]]s, [[biologist]]s,<ref>{{Citation|date=2007|pages=181–276|publisher=Springer Berlin Heidelberg|language=en|doi=10.1007/978-3-540-34153-6_7|isbn=9783540341529|title = The Nonlinear Universe|series = The Frontiers Collection|chapter = Nonlinear Biology}}</ref><ref>{{cite journal|last1=Korenberg|first1=Michael J.|last2=Hunter|first2=Ian W.|date=March 1996|title=The identification of nonlinear biological systems: Volterra kernel approaches|journal=Annals of Biomedical Engineering|language=en|volume=24|issue=2|pages=250–268|doi=10.1007/bf02667354|pmid=8678357|s2cid=20643206|issn=0090-6964}}</ref><ref>{{cite journal|last1=Mosconi|first1=Francesco|last2=Julou|first2=Thomas|last3=Desprat|first3=Nicolas|last4=Sinha|first4=Deepak Kumar|last5=Allemand|first5=Jean-François|last6=Vincent Croquette|last7=Bensimon|first7=David|date=2008|title=Some nonlinear challenges in biology|url=http://stacks.iop.org/0951-7715/21/i=8/a=T03|journal=Nonlinearity|language=en|volume=21|issue=8|pages=T131|doi=10.1088/0951-7715/21/8/T03|issn=0951-7715|bibcode=2008Nonli..21..131M}}</ref> [[physicist]]s,<ref>{{cite journal|last1=Gintautas|first1=V.|title=Resonant forcing of nonlinear systems of differential equations|journal=Chaos|date=2008|volume=18|issue=3|pages=033118|doi=10.1063/1.2964200|pmid=19045456|arxiv=0803.2252|bibcode=2008Chaos..18c3118G|s2cid=18345817}}</ref><ref>{{cite journal|last1=Stephenson|first1=C.|last2=et.|first2=al.|title=Topological properties of a self-assembled electrical network via ab initio calculation|journal=Sci. Rep.|volume=7|pages=41621|date=2017|doi=10.1038/srep41621|pmid=28155863|pmc=5290745|bibcode=2017NatSR...741621S}}</ref> [[mathematician]]s, and many other [[scientist]]s because most systems are inherently nonlinear in nature.<ref>{{cite book|last1=de Canete|first1=Javier, Cipriano Galindo, and Inmaculada Garcia-Moral|title=System Engineering and Automation: An Interactive Educational Approach|date=2011|publisher=Springer|location=Berlin|isbn=978-3642202292|page=46|url=https://books.google.com/books?id=h8rCQYXGGY8C&q=most+systems+are+inherently+nonlinear+in+nature&pg=PA46|access-date=20 January 2018}}</ref> Nonlinear [[dynamical system]]s, describing changes in variables over time, may appear chaotic, unpredictable, or counterintuitive, contrasting with much simpler [[linear system]]s.
+
+Typically, the behavior of a nonlinear system is described in mathematics by a '''nonlinear system of equations''', which is a set of simultaneous [[equation]]s in which the unknowns (or the unknown functions in the case of [[differential equation]]s) appear as variables of a [[polynomial]] of degree higher than one or in the argument of a [[function (mathematics)|function]] which is not a polynomial of degree one.
+In other words, in a nonlinear system of equations, the equation(s) to be solved cannot be written as a [[linear combination]] of the unknown [[variable (mathematics)|variables]] or [[function (mathematics)|functions]] that appear in them. Systems can be defined as nonlinear, regardless of whether known linear functions appear in the equations. In particular, a differential equation is ''linear'' if it is linear in terms of the unknown function and its derivatives, even if nonlinear in terms of the other variables appearing in it.
+
+As nonlinear dynamical equations are difficult to solve, nonlinear systems are commonly approximated by linear equations ([[linearization]]). This works well up to some accuracy and some range for the input values, but some interesting phenomena such as [[soliton]]s, [[chaos theory|chaos]],<ref>[http://ocw.mit.edu/OcwWeb/Earth--Atmospheric--and-Planetary-Sciences/12-006JFall-2006/CourseHome/index.htm Nonlinear Dynamics I: Chaos] {{webarchive|url=https://web.archive.org/web/20080212045134/http://ocw.mit.edu/OcwWeb/Earth--Atmospheric--and-Planetary-Sciences/12-006JFall-2006/CourseHome/index.htm |date=2008-02-12}} at [http://ocw.mit.edu/OcwWeb/index.htm MIT's OpenCourseWare]</ref> and [[mathematical singularity|singularities]] are hidden by linearization. It follows that some aspects of the dynamic behavior of a nonlinear system can appear to be counterintuitive, unpredictable or even chaotic. Although such chaotic behavior may resemble [[randomness|random]] behavior, it is in fact not random. For example, some aspects of the weather are seen to be chaotic, where simple changes in one part of the system produce complex effects throughout. This nonlinearity is one of the reasons why accurate long-term forecasts are impossible with current technology.
+
+Some authors use the term '''nonlinear science''' for the study of nonlinear systems. This term is disputed by others:
+
+{{quote|Using a term like nonlinear science is like referring to the bulk of zoology as the study of [[negation|non]]-elephant animals.|[[Stanislaw Ulam]]<ref>{{cite journal|last1=Campbell|first1=David K.|title=Nonlinear physics: Fresh breather|journal=Nature|date=25 November 2004|volume=432|issue=7016|pages=455–456|doi=10.1038/432455a|pmid=15565139|url=https://zenodo.org/record/1134179|language=en|issn=0028-0836|bibcode=2004Natur.432..455C|s2cid=4403332}}</ref>}}
+
+==Definition==
+In [[mathematics]], a [[linear map]] (or ''linear function'') <math>f(x)</math> is one which satisfies both of the following properties:
+*Additivity or [[superposition principle]]: <math>\textstyle f(x + y) = f(x) + f(y);</math>
+*Homogeneity: <math>\textstyle f(\alpha x) = \alpha f(x).</math>
+
+Additivity implies homogeneity for any [[rational number|rational]] ''α'', and, for [[continuous function]]s, for any [[real number|real]] ''α''. For a [[complex number|complex]] ''α'', homogeneity does not follow from additivity. For example, an [[antilinear map]] is additive but not homogeneous. The conditions of additivity and homogeneity are often combined in the superposition principle
+:<math>f(\alpha x + \beta y) = \alpha f(x) + \beta f(y)</math>
+
+An equation written as
+:<math>f(x) = C</math>
+
+is called '''linear''' if <math>f(x)</math> is a linear map (as defined above) and '''nonlinear''' otherwise. The equation is called ''homogeneous'' if <math>C = 0</math>.
+
+The definition <math>f(x) = C</math> is very general in that <math>x</math> can be any sensible mathematical object (number, vector, function, etc.), and the function <math>f(x)</math> can literally be any [[map (mathematics)|mapping]], including integration or differentiation with associated constraints (such as [[boundary values]]). If <math>f(x)</math> contains [[derivative|differentiation]] with respect to <math>x</math>, the result will be a [[differential equation]].
+
+==Nonlinear algebraic equations==
+{{Main|Algebraic equation|System of polynomial equations}}
+Nonlinear [[algebraic equation]]s, which are also called ''[[polynomial equation]]s'', are defined by equating [[polynomial]]s (of degree greater than one) to zero. For example,
+:<math>x^2 + x - 1 = 0\,.</math>
+
+For a single polynomial equation, [[root-finding algorithm]]s can be used to find solutions to the equation (i.e., sets of values for the variables that satisfy the equation). However, systems of algebraic equations are more complicated; their study is one motivation for the field of [[algebraic geometry]], a difficult branch of modern mathematics. It is even difficult to decide whether a given algebraic system has complex solutions (see [[Hilbert's Nullstellensatz]]). Nevertheless, in the case of the systems with a finite number of complex solutions, these [[systems of polynomial equations]] are now well understood and efficient methods exist for solving them.<ref>{{cite journal |last1= Lazard |first1= D. |title= Thirty years of Polynomial System Solving, and now? |doi= 10.1016/j.jsc.2008.03.004 |journal= Journal of Symbolic Computation |volume= 44 |issue= 3 |pages= 222–231 |year= 2009 }}</ref>
+
+==Nonlinear recurrence relations==
+A nonlinear [[recurrence relation]] defines successive terms of a [[sequence]] as a nonlinear function of preceding terms. Examples of nonlinear recurrence relations are the [[logistic map]] and the relations that define the various [[Hofstadter sequence]]s. Nonlinear discrete models that represent a wide class of nonlinear recurrence relationships include the NARMAX (Nonlinear Autoregressive Moving Average with eXogenous inputs) model and the related [[nonlinear system identification]] and analysis procedures.<ref name="SAB1">Billings S.A. "Nonlinear System Identification: NARMAX Methods in the Time, Frequency, and Spatio-Temporal Domains". Wiley, 2013</ref> These approaches can be used to study a wide class of complex nonlinear behaviors in the time, frequency, and spatio-temporal domains.
+
+==Nonlinear differential equations==
+A [[simultaneous equations|system]] of [[differential equation]]s is said to be nonlinear if it is not a [[linear system]]. Problems involving nonlinear differential equations are extremely diverse, and methods of solution or analysis are problem dependent. Examples of nonlinear differential equations are the [[Navier–Stokes equations]] in fluid dynamics and the [[Lotka–Volterra equation]]s in biology.
+
+One of the greatest difficulties of nonlinear problems is that it is not generally possible to combine known solutions into new solutions. In linear problems, for example, a family of [[linearly independent]] solutions can be used to construct general solutions through the [[superposition principle]]. A good example of this is one-dimensional heat transport with [[Dirichlet boundary conditions]], the solution of which can be written as a time-dependent linear combination of sinusoids of differing frequencies; this makes solutions very flexible. It is often possible to find several very specific solutions to nonlinear equations, however the lack of a superposition principle prevents the construction of new solutions.
+
+===Ordinary differential equations===
+First order [[ordinary differential equation]]s are often exactly solvable by [[separation of variables]], especially for autonomous equations. For example, the nonlinear equation
+:<math>\frac{d u}{d x} = -u^2</math>
+
+has <math>u=\frac{1}{x+C}</math> as a general solution (and also ''u'' = 0 as a particular solution, corresponding to the limit of the general solution when ''C'' tends to infinity). The equation is nonlinear because it may be written as
+:<math>\frac{du}{d x} + u^2=0</math>
+
+and the left-hand side of the equation is not a linear function of ''u'' and its derivatives. Note that if the ''u''<sup>2</sup> term were replaced with ''u'', the problem would be linear (the [[exponential decay]] problem).
+
+Second and higher order ordinary differential equations (more generally, systems of nonlinear equations) rarely yield [[closed-form expression|closed-form]] solutions, though implicit solutions and solutions involving [[nonelementary integral]]s are encountered.
+
+Common methods for the qualitative analysis of nonlinear ordinary differential equations include:
+
+*Examination of any [[conserved quantities]], especially in [[Hamiltonian system]]s
+*Examination of dissipative quantities (see [[Lyapunov function]]) analogous to conserved quantities
+*Linearization via [[Taylor expansion]]
+*Change of variables into something easier to study
+*[[Bifurcation theory]]
+*[[Perturbation theory|Perturbation]] methods (can be applied to algebraic equations too)
+
+===Partial differential equations===
+{{main|Nonlinear partial differential equation}}
+{{See also|List of nonlinear partial differential equations}}
+The most common basic approach to studying nonlinear [[partial differential equation]]s is to change the variables (or otherwise transform the problem) so that the resulting problem is simpler (possibly even linear). Sometimes, the equation may be transformed into one or more [[ordinary differential equation]]s, as seen in [[separation of variables]], which is always useful whether or not the resulting ordinary differential equation(s) is solvable.
+
+Another common (though less mathematical) tactic, often seen in fluid and heat mechanics, is to use [[scale analysis (mathematics)|scale analysis]] to simplify a general, natural equation in a certain specific [[boundary value problem]]. For example, the (very) nonlinear [[Navier-Stokes equations]] can be simplified into one linear partial differential equation in the case of transient, laminar, one dimensional flow in a circular pipe; the scale analysis provides conditions under which the flow is laminar and one dimensional and also yields the simplified equation.
+
+Other methods include examining the [[method of characteristics|characteristics]] and using the methods outlined above for ordinary differential equations.
+
+===Pendula===
+{{Main|Pendulum (mathematics)}}
+
+[[File:PendulumLayout.svg|thumb|Illustration of a pendulum|right|200px]]
+[[File:PendulumLinearizations.png|thumb|Linearizations of a pendulum|right|200px]]
+
+A classic, extensively studied nonlinear problem is the dynamics of a [[pendulum (mathematics)|pendulum]] under the influence of [[gravity]]. Using [[Lagrangian mechanics]], it may be shown<ref>[http://www.damtp.cam.ac.uk/user/tong/dynamics.html David Tong: Lectures on Classical Dynamics]</ref> that the motion of a pendulum can be described by the [[dimensionless]] nonlinear equation
+:<math>\frac{d^2 \theta}{d t^2} + \sin(\theta) = 0</math>
+
+where gravity points "downwards" and <math>\theta</math> is the angle the pendulum forms with its rest position, as shown in the figure at right. One approach to "solving" this equation is to use <math>d\theta/dt</math> as an [[integrating factor]], which would eventually yield
+:<math>\int{\frac{d \theta}{\sqrt{C_0 + 2 \cos(\theta)}}} = t + C_1</math>
+
+which is an implicit solution involving an [[elliptic integral]]. This "solution" generally does not have many uses because most of the nature of the solution is hidden in the [[nonelementary integral]] (nonelementary unless <math>C_0 = 2</math>).
+
+Another way to approach the problem is to linearize any nonlinearities (the sine function term in this case) at the various points of interest through [[Taylor expansion]]s. For example, the linearization at <math>\theta = 0</math>, called the small angle approximation, is
+:<math>\frac{d^2 \theta}{d t^2} + \theta = 0</math>
+
+since <math>\sin(\theta) \approx \theta</math> for <math>\theta \approx 0</math>. This is a [[simple harmonic oscillator]] corresponding to oscillations of the pendulum near the bottom of its path. Another linearization would be at <math>\theta = \pi</math>, corresponding to the pendulum being straight up:
+:<math>\frac{d^2 \theta}{d t^2} + \pi - \theta = 0</math>
+
+since <math>\sin(\theta) \approx \pi - \theta</math> for <math>\theta \approx \pi</math>. The solution to this problem involves [[hyperbolic sinusoid]]s, and note that unlike the small angle approximation, this approximation is unstable, meaning that <math>|\theta|</math> will usually grow without limit, though bounded solutions are possible. This corresponds to the difficulty of balancing a pendulum upright, it is literally an unstable state.
+
+One more interesting linearization is possible around <math>\theta = \pi/2</math>, around which <math>\sin(\theta) \approx 1</math>:
+:<math>\frac{d^2 \theta}{d t^2} + 1 = 0.</math>
+
+This corresponds to a free fall problem. A very useful qualitative picture of the pendulum's dynamics may be obtained by piecing together such linearizations, as seen in the figure at right. Other techniques may be used to find (exact) [[phase portrait]]s and approximate periods.
+
+==Types of nonlinear dynamic behaviors==
+*[[Amplitude death]] – any oscillations present in the system cease due to some kind of interaction with other system or feedback by the same system
+*[[Chaos theory|Chaos]] – values of a system cannot be predicted indefinitely far into the future, and fluctuations are [[aperiodic]]
+*[[Multistability]] – the presence of two or more stable states
+*[[Soliton]]s – self-reinforcing solitary waves
+*[[Limit cycle|Limit cycles]] – asymptotic periodic orbits to which destabilized fixed points are attracted.
+*[[Self-oscillation|Self-oscillations]] - feedback oscillations taking place in open dissipative physical systems.
+
+==Examples of nonlinear equations==
+{{Div col|colwidth=25em}}
+*[[Algebraic Riccati equation]]
+*[[Ball and beam]] system
+*[[Bellman equation]] for optimal policy
+*[[Boltzmann equation]]
+*[[Colebrook equation]]
+*[[General relativity]]
+*[[Ginzburg–Landau theory]]
+*[[Ishimori equation]]
+*[[Kadomtsev–Petviashvili equation]]
+*[[Korteweg–de Vries equation]]
+*[[Landau–Lifshitz–Gilbert equation]]
+*[[Liénard equation]]
+*[[Navier–Stokes equations]] of [[fluid dynamics]]
+*[[Nonlinear optics]]
+*[[Nonlinear Schrödinger equation]]
+*[[Power-flow study]]
+*[[Richards equation]] for unsaturated water flow
+*[[Self-balancing unicycle]]
+*[[Sine-Gordon equation]]
+*[[Van der Pol oscillator]]
+*[[Vlasov equation]]
+{{Div col end}}
+
+==See also==
+*[[Aleksandr Mikhailovich Lyapunov]]
+*[[Dynamical system]]
+*[[Feedback]]
+*[[Initial condition]]
+*[[Interaction]]
+*[[Linear system]]
+*[[Mode coupling]]
+*[[Vector soliton]]
+*[[Volterra series]]
+
+==References==
+{{Reflist|35em}}
+
+==Further reading==
+{{Refbegin|35em}}
+*{{cite book
+| author= [[Diederich Hinrichsen]] and Anthony J. Pritchard
+| year= 2005
+| title= Mathematical Systems Theory I - Modelling, State Space Analysis, Stability and Robustness
+| publisher= Springer Verlag
+| isbn=9783540441250
+}}
+*{{cite book
+| last1= Jordan
+| first1= D. W.
+| last2= Smith
+| first2= P.
+| year= 2007
+| edition= fourth
+| title= Nonlinear Ordinary Differential Equations
+| publisher= Oxford University Press
+| isbn= 978-0-19-920824-1
+}}
+*{{cite book
+| last= Khalil
+| first= Hassan K.
+| year= 2001
+| title= Nonlinear Systems
+| publisher= Prentice Hall
+| isbn= 978-0-13-067389-3
+}}
+*{{cite book
+| last= Kreyszig
+| first= Erwin
+| author-link= Erwin Kreyszig
+| year= 1998
+| title= Advanced Engineering Mathematics
+| url= https://archive.org/details/advancedengineer0008krey
+| url-access= registration
+| publisher= Wiley
+| isbn= 978-0-471-15496-9
+}}
+*{{cite book
+| last= Sontag
+| first= Eduardo
+| author-link= Eduardo D. Sontag
+| year= 1998
+| title= Mathematical Control Theory: Deterministic Finite Dimensional Systems. Second Edition
+| publisher= Springer
+| isbn= 978-0-387-98489-6
+}}
+{{Refend}}
+
+==External links==
+*[http://www.dodccrp.org/ Command and Control Research Program (CCRP)]
+*[http://necsi.edu/guide/concepts/linearnonlinear.html New England Complex Systems Institute: Concepts in Complex Systems]
+*[http://ocw.mit.edu/courses/mathematics/18-353j-nonlinear-dynamics-i-chaos-fall-2012/ Nonlinear Dynamics I: Chaos] at [http://ocw.mit.edu/OcwWeb/index.htm MIT's OpenCourseWare]
+*[http://www.hedengren.net/research/models.htm Nonlinear Model Library]{{snd}} (in [[MATLAB]]) a Database of Physical Systems
+*[http://cnls.lanl.gov/ The Center for Nonlinear Studies at Los Alamos National Laboratory]
+
+{{Systems science}}
+{{Differential equations topics}}
+{{Authority control}}
+
+[[Category:Nonlinear systems| ]]
+[[Category:Dynamical systems]]
+[[Category:Concepts in physics]]

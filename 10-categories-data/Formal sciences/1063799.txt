@@ -1,0 +1,90 @@
+{{About|mathematical logic in the context of category theory|Aristotle's system of logic|term logic}}
+__NOTOC__
+'''Categorical logic''' is the branch of [[mathematics]] in which tools and concepts from [[category theory]] are applied to the study of [[mathematical logic]]. It is also notable for its connections to [[theoretical computer science]]. In broad terms, categorical logic represents both syntax and semantics by a [[category (mathematics)|category]], and an [[Interpretation (logic)|interpretation]] by a [[functor]].  The categorical framework provides a rich conceptual background for logical and [[type theory|type-theoretic]] constructions. The subject has been recognisable in these terms since around 1970.
+
+== Overview ==
+
+There are three important<!--to computer science --> themes in the categorical approach to logic:
+;Categorical semantics: Categorical logic introduces the notion of ''structure valued in a category'' C with the classical [[model theory|model theoretic]] notion of a structure appearing in the particular case where C is the [[Category of sets|category of sets and functions]]. This notion has proven useful when the set-theoretic notion of a model lacks generality and/or is inconvenient. [[R.A.G. Seely]]'s modeling of various [[impredicative]] theories, such as [[system F]] is an example of the usefulness of categorical semantics.
+
+:It was found that the connectives of pre-categorical logic were more clearly understood using the concept of adjoint functor, and that the quantifiers were also best understood using adjoint functors.<ref>Lawvere, Quantifiers and Sheaves</ref>
+
+;Internal languages: This can be seen as a formalization and generalization of proof by [[diagram chasing]]. One defines a suitable internal language naming relevant constituents of a category, and then applies categorical semantics to turn assertions in a logic over the internal language into corresponding categorical statements. This has been most successful in the theory of [[topos]]es, where the internal language of a topos together with the semantics of intuitionistic higher-order logic in a topos enables one to reason about the objects and morphisms of a topos "as if they were sets and functions".{{Citation needed|reason=if this is an actual quote, who said it?|date=July 2015}} This has been successful in dealing with toposes that have "sets" with properties incompatible with classical logic. A prime example is [[Dana Scott]]'s model of [[untyped lambda calculus]] in terms of objects that retract onto their own function space. Another is the Moggi–Hyland model of [[system F]] by an internal [[full subcategory]] of the [[effective topos]] of [[Martin Hyland]].
+;Term-model constructions: In many cases, the categorical semantics of a logic provide a basis for establishing a correspondence between [[Theory (mathematical logic)|theories]] in the logic and instances of an appropriate kind of category. A classic example is the correspondence between theories of [[beta reduction|βη]]-[[equational logic]] over [[simply typed lambda calculus]] and [[Cartesian closed category|Cartesian closed categories]]. Categories arising from theories via term-model constructions can usually be characterized up to [[Equivalence of categories|equivalence]] by a suitable [[universal property]]. This has enabled proofs of [[Metalogic|meta-theoretical]] properties of some logics by means of an appropriate [[:Category:monoidal categories|categorical algebra]]<!--no good article-->. For instance, [[Peter J. Freyd|Freyd]] gave a proof of the existence and disjunction properties of [[intuitionistic logic]] this way.
+
+==See also==
+* [[History of topos theory]]
+{{Portal|Philosophy}}
+
+== Notes ==
+{{reflist}}
+
+==References==
+;Books
+*{{cite book 
+|last1=Abramsky
+|first1=Samson
+|last2=Gabbay
+|first2=Dov
+|title=Handbook of Logic in Computer Science: Logic and algebraic methods
+|publisher=Oxford University Press
+|location=Oxford
+|year=2001
+|isbn=0-19-853781-6
+|ref=harv}}
+
+*{{cite book
+|last=Gabbay
+|first=Dov
+|title=Handbook of the History of Logic: Sets and extensions in the twentieth century
+|publisher=Elsevier
+|location=Oxford
+|year=2012
+|isbn=978-0-444-51621-3
+|ref=harv}}
+
+*{{cite book
+|last1=Kent
+|first1=Allen
+|last2=Williams
+|first2=James G.
+|title=Encyclopedia of Computer Science and Technology
+|publisher=Marcel Dekker Inc.
+|location=New York
+|year=1990
+|isbn=0-8247-2272-8
+|ref=harv}}
+
+* [[Michael Barr (mathematician)|Barr, M.]] and [[Charles Wells (mathematician)|Wells, C.]] (1990), ''Category Theory for Computing Science''. [[Hemel Hempstead]], UK.
+* [[Joachim Lambek|Lambek, J.]] and [[P.J. Scott|Scott, P.J.]] (1986), ''Introduction to Higher Order Categorical Logic''. Cambridge University Press, Cambridge, UK.
+* [[Francis William Lawvere|Lawvere, F.W.]], and [[Robert Rosebrugh|Rosebrugh, R.]] (2003), ''Sets for Mathematics''. Cambridge University Press, Cambridge, UK.
+* [[Francis William Lawvere|Lawvere, F.W.]] (2000), and [[Stephen H. Schanuel|Schanuel, S.H.]], ''Conceptual Mathematics: A First Introduction to Categories''. Cambridge University Press, Cambridge, UK, 1997. Reprinted with corrections, 2000.
+
+'''Seminal papers'''
+*  [[Francis William Lawvere|Lawvere, F.W.]], ''Functorial Semantics of Algebraic Theories''. In ''Proceedings of the National Academy of Sciences'' 50, No. 5 (November 1963), 869-872.
+*  [[Francis William Lawvere|Lawvere, F.W.]], ''Elementary Theory of the Category of Sets''. ''In Proceedings of the National Academy of Sciences 52'', No. 6 (December 1964), 1506-1511.
+*  [[Francis William Lawvere|Lawvere, F.W.]], ''Quantifiers and Sheaves''. In ''Proceedings of the International Congress on Mathematics (Nice 1970)'', Gauthier-Villars (1971) 329-334.
+
+== Further reading ==
+* [[Michael Makkai]] and Gonzalo E. Reyes, 1977, ''First order categorical logic'', Springer-Verlag.
+* [[Joachim Lambek|Lambek, J.]] and Scott, P. J., 1986. ''Introduction to [[higher-order logic|Higher Order]] Categorical Logic''. Fairly accessible introduction, but somewhat dated. The categorical approach to higher-order logics over polymorphic and dependent types was developed largely after this book was published.
+*{{cite book
+  | first = Bart
+  | last = Jacobs
+  | title = Categorical Logic and Type Theory
+  | year = 1999
+  | publisher = North Holland, Elsevier
+  | isbn =  0-444-50170-3
+  | series = Studies in Logic and the Foundations of Mathematics 141
+  | url = https://www.cs.ru.nl/B.Jacobs/CLT/bookinfo.html }} A comprehensive monograph written by a computer scientist; it covers both first-order and higher-order logics, and also polymorphic and dependent types. The focus is on [[fibred category]] as universal tool in categorical logic, which is necessary in dealing with polymorphic and dependent types.
+
+* [[John Lane Bell]] (2005) ''The Development of Categorical Logic''. Handbook of Philosophical Logic, Volume 12. Springer. Version available [http://publish.uwo.ca/~jbell/catlogprime.pdf online] at [http://publish.uwo.ca/~jbell/ John Bell's homepage.]
+* Jean-Pierre Marquis and Gonzalo E. Reyes (2012). ''The History of Categorical Logic 1963–1977''. Handbook of the History of Logic: Sets and Extensions in the Twentieth Century, Volume 6, D. M. Gabbay, A. Kanamori & J. Woods, eds., North-Holland, pp.&nbsp;689–800. A preliminary version is available at [http://www.webdepot.umontreal.ca/Usagers/marquisj/MonDepotPublic/HistofCatLog.pdf].
+
+==External links==
+* [http://www.andrew.cmu.edu/user/awodey/catlog/ Categorical Logic] lecture notes by [[Steve Awodey]]
+* [http://www.math.harvard.edu/~lurie/278x.html Categorical Logic (278x)] lecture notes by [[Jacob Lurie]]
+
+[[Category:Categorical logic| ]]
+[[Category:Systems of formal logic]]
+[[Category:Theoretical computer science]]

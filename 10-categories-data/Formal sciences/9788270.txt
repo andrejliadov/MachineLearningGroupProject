@@ -1,0 +1,119 @@
+{{short description|Taxonomic AI processes}}
+{{essay-like|date=March 2018}}
+'''Automated species identification''' is a method of making the expertise of [[Taxonomy (biology)|taxonomists]] available to ecologists, [[parataxonomy|parataxonomists]] and others via digital technology and [[artificial intelligence]]. Today, most automated identification systems rely on images depicting the species for the identification.<ref>{{Cite journal|last1=Wäldchen|first1=Jana|last2=Mäder|first2=Patrick|date=November 2018|editor-last=Cooper|editor-first=Natalie|title=Machine learning for image based species identification|journal=Methods in Ecology and Evolution|volume=9|issue=11|pages=2216–2225|doi=10.1111/2041-210X.13075}}</ref> Based on precisely identified images of a species, a [[Classifier system|classifier]] is trained. Once exposed to a sufficient amount of training data, this classifier can then identify the trained species on previously unseen images. Accurate species identification is the basis for all aspects of taxonomic research and is an essential component of workflows in biological research.
+
+== Introduction ==
+The '''automated identification''' of biological objects such as [[insects]] (individuals) and/or groups (e.g., [[species]], guilds, characters) has been a dream among [[systematics|systematists]] for centuries. The goal of some of the first [[multivariate statistics|multivariate]] [[biometric]] methods was to address the perennial problem of [[group discrimination]] and inter-group characterization. Despite much preliminary work in the 1950s and '60s, progress in designing and implementing practical systems for fully automated object biological [[identification (biology)|identification]] has proven frustratingly slow. As recently as 2004 [[Daniel Janzen|Dan Janzen]] 
+<ref>{{cite journal
+|last1=Janzen 
+|first1=Daniel H. 
+|authorlink1=Daniel H. Janzen
+|date=March 22, 2004
+|title=Now is the time.
+|journal=Philosophical Transactions of the Royal Society of London
+|series=B 
+|volume=359
+|issue=1444 
+|pages=731–732
+|doi=10.1098/rstb.2003.1444
+|pmc=1693358
+|pmid=15253359
+}}</ref>
+updated the dream for a new audience:
+
+<blockquote>The spaceship lands. He steps out. He points it around. It says ‘friendly–unfriendly—edible–poisonous—safe– dangerous—living–inanimate’. On the next sweep it says ‘''Quercus oleoides—Homo sapiens—Spondias mombin—Solanum nigrum—Crotalus durissus—Morpho peleides''—serpentine’. This has been in my head since reading science fiction in ninth grade half a century ago.{{clarify|reason=how is this relevant?|date=January 2017}}</blockquote>
+
+== The species identification problem ==
+[[File:Daisy GTK+-Linu interface DFE.png|thumb|340px|'''DFE''' - the graphical interface of the [[Digital Automated Identification SYstem (DAISY)|Daisy]] system. The image is the wing of a biting midge ''[[Culicoides]]'' sp., some species of which are vectors of [[Bluetongue]]. Others may also be vectors of [[Schmallenberg virus]] an emerging disease of livestock, especially sheep.
+<br />
+(Credit: [[Mark A. O'Neill]])
+]]
+
+Janzen's preferred solution to this classic problem involved building machines to identify species from their [[DNA]]. His predicted budget and proposed research team is “US$1 million and five bright people.” However, recent developments in computer architectures, as well as innovations in software design, have placed the tools needed to realize Janzen's vision in the hands of the [[systematics]] and [[computer science]] community not in several years hence, but now; and not just for creating [[DNA barcode]]s, but also for identification based on [[digital images]].
+
+A seminal survey published in 2004,<ref>{{cite journal
+|last1=Gaston 
+|first1=Kevin J. 
+|authorlink1=Kevin J. Gaston
+|last2=O'Neill
+|first2=Mark A.
+|authorlink2=Mark A. O'Neill
+|date=March 22, 2004
+|title=Automated species recognition: why not?
+|journal=Philosophical Transactions of the Royal Society of London
+|series=B 
+|volume=359
+|issue=1444 
+|pages=655–667
+|doi=10.1098/rstb.2003.1442
+|pmid=15253351
+|pmc=1693351
+}}</ref> studies why automated species identification had not become widely employed at this time and whether it would be a realistic option for the future. The authors found that "a small but growing number of studies sought to develop automated species identification systems based on morphological characters". An overview of 20 studies analyzing species’ structures, such as cells, pollen, wings, and genitalia, shows identification success rates between 40% and 100% on training sets with 1 to 72 species. However, they also identified four fundamental problems with these systems: (1) training sets—were too small (5-10 specimens per species) and their extension especially for rare species may be difficult, (2) errors in identification—are not sufficiently studied to handle them and to find systematics, (3) scaling—studies consider only small numbers of species (<200 species), and (4) novel species — systems are restricted to the species they have been trained for and will classify any novel observation as one of the known species.
+
+A survey published in 2017<ref>{{Cite journal|last1=Wäldchen|first1=Jana|last2=Mäder|first2=Patrick|date=2017-01-07|title=Plant Species Identification Using Computer Vision Techniques: A Systematic Literature Review|journal=Archives of Computational Methods in Engineering|volume=25|issue=2|pages=507–543|doi=10.1007/s11831-016-9206-z|pmid=29962832|pmc=6003396|issn=1134-3060}}</ref> systematically compares and discusses progress and findings towards automated plant species identification within the last decade (2005–2015). 120 primary studies have been published in high-quality venues within this time, mainly by authors with computer science background. These studies propose a wealth of [[computer vision]] approaches, i.e., [[Feature (computer vision)|features]] reducing the high-dimensionality of the pixel-based image data while preserving the characteristic information as well as classification methods.  The vast majority of these studies analyzes [[Leaf|leaves]] for identification, while only 13 studies propose methods for [[flower]]-based identification. The reasons being that leaves can easier be collected and imaged and are available for most of the year. Proposed [[Feature (computer vision)|features]] capture generic object characteristic, i.e., [[shape]], texture, and [[color]] as well as leaf-specific characteristics, i.e., [[Leaf#Venation|venation]] and margin. The majority of studies still used datasets for evaluation that contained no more than 250 [[species]]. However, there is progress in this regard, one study uses a dataset with >2k<ref>{{Cite journal|last1=Joly|first1=Alexis|last2=Goëau|first2=Hervé|last3=Bonnet|first3=Pierre|last4=Bakić|first4=Vera|last5=Barbe|first5=Julien|last6=Selmi|first6=Souheil|last7=Yahiaoui|first7=Itheri|last8=Carré|first8=Jennifer|last9=Mouysset|first9=Elise|date=2014-09-01|title=Interactive plant identification based on social image data|journal=Ecological Informatics|series=Special Issue on Multimedia in Ecology and Environment|volume=23|pages=22–34|doi=10.1016/j.ecoinf.2013.07.006|url=http://agritrop.cirad.fr/574241/}}</ref> and another with >20k<ref>{{Cite journal|last1=Wu|first1=Huisi|last2=Wang|first2=Lei|last3=Zhang|first3=Feng|last4=Wen|first4=Zhenkun|date=2015-08-01|title=Automatic Leaf Recognition from a Big Hierarchical Image Database|journal=International Journal of Intelligent Systems|volume=30|issue=8|pages=871–886|doi=10.1002/int.21729|s2cid=12917626|issn=1098-111X}}</ref> [[species]].
+
+These developments could not have come at a better time. As the [[Alpha taxonomy|taxonomic]] community already knows, the world is running out of specialists who can identify the very [[biodiversity]] whose preservation has become a global concern. In commenting on this problem in [[palaeontology]] as long ago as 1993, [[Roger Kaesler]] <ref>
+{{cite journal
+|last=Kaesler
+|first=Roger L
+|authorlink=Roger Kaesler
+|title=A window of opportunity: peering into a new century of palaeontology
+|journal=Journal of Paleontology
+|volume=67
+|issue=3
+|pages=329–333
+|year=1993
+|jstor=1306022
+|doi=10.1017/S0022336000036805
+}}
+</ref> recognized:
+
+<blockquote>“… we are running out of systematic palaeontologists who have anything approaching synoptic knowledge of a major group of organisms … Palaeontologists of the next century are unlikely to have the luxury of dealing at length with taxonomic problems … Palaeontology will have to sustain its level of excitement without the aid of systematists, who have contributed so much to its success.”</blockquote>This expertise deficiency cuts as deeply into those commercial industries that rely on accurate identifications (e.g., [[agriculture]], [[biostratigraphy]]) as it does into a wide range of pure and applied research programmes (e.g., [[Conservation biology|conservation]], biological [[oceanography]], [[climatology]], [[ecology]]). It is also commonly, though informally, acknowledged that the technical, taxonomic literature of all organismal groups is littered with examples of inconsistent and incorrect identifications. This is due to a variety of factors, including taxonomists being insufficiently trained and skilled in making identifications (e.g., using different rules-of-thumb in recognizing the boundaries between similar groups), insufficiently detailed original group descriptions and/or illustrations, inadequate access to current monographs and well-curated collections and, of course, taxonomists having different opinions regarding group concepts. Peer review only weeds out the most obvious errors of commission or omission in this area, and then only when an author provides adequate representations (e.g., illustrations, recordings, and gene sequences) of the specimens in question.
+
+[[Systematics]] too has much to gain, both practically and theoretically, from the further development and use of automated identification systems. It is now widely recognized that the days of systematics as a field populated by mildly eccentric individuals pursuing knowledge in splendid isolation from funding priorities and economic imperatives are rapidly drawing to a close.{{citation needed|date=December 2010}} In order to attract both personnel and resources, systematics must transform itself into a “large, coordinated, international scientific enterprise” <ref>{{cite journal
+|last1=Wheeler
+|first1=Quentin D.
+|authorlink=Quentin Wheeler
+|year=2003
+|title=Transforming taxonomy
+|publisher=The Systematist
+|number=22
+|pages=3–5
+|url=http://www.systass.org/newsletter/newsletter1203.pdf
+}}</ref> 
+Many have identified use of the [[Internet]]— especially via the [[World Wide Web]] — as the medium through which this transformation can be made. While establishment of a virtual, [[GenBank]]-like system for accessing [[morphology (biology)|morphological]] data, audio clips, video files and so forth would be a significant step in the right direction, improved access to observational information and/or text-based descriptions alone will not address either the [[taxonomic impediment]] or low identification reproducibility issues successfully. Instead, the inevitable subjectivity associated with making critical decisions on the basis of qualitative criteria must be reduced or, at the very least, embedded within a more formally analytic context.
+
+[[File:sphinxGels.png|thumb|340px|[[SDS-PAGE|SDS]] protein gel images of sphinx moth caterpillars. It can be used in a similar way to [[DNA fingerprinting]] ]]
+
+Properly designed, flexible, and robust, automated identification systems, organized around distributed computing architectures and referenced to authoritatively identified collections of training set data (e.g., images, and [[gene sequence]]s) can, in principle, provide all systematists with access to the electronic data archives and the necessary analytic tools to handle routine identifications of common taxa. Properly designed systems can also recognize when their algorithms cannot make a reliable identification and refer that image to a specialist (whose address can be accessed from another database). Such systems can also include elements of artificial intelligence and so improve their performance the more they are used. Most tantalizingly, once morphological (or molecular) models of a species have been developed and demonstrated to be accurate, these models can be queried to determine which aspects of the observed patterns of variation and variation limits are being used to achieve the identification, thus opening the way for the discovery of new and (potentially) more reliable taxonomic characters.
+
+
+
+* [[iNaturalist]] is a global citizen science project and social network of naturalists that incorporates both human and automatic identification of plants, animals, and other living creatures via browser or mobile apps.<ref name="iNatCompVis">{{cite web|url=https://www.inaturalist.org/pages/computer_vision_demo|title=iNaturalist Computer Vision Explorations|last=|first=|date=2017-07-27|website=iNaturalist.org|access-date=2017-08-12}}</ref>
+* [[Pl@ntNet]] is a global citizen science project which provides an app and a website for plant identification through photographs, based on machine-learning
+* [http://leafsnap.com/ Leaf Snap] is an iOS app developed by the [[Smithsonian Institution]] that uses visual recognition software to identify North American tree species from photographs of leaves.
+* [http://bot.flowerchecker.com/ FlowerChecker bot] is a Facebook [[Chatterbot]] that uses visual recognition software to identify plant species from photographs. The bot uses plant a database collected by [http://www.flowerchecker.com/ FlowerChecker app] for mobile phones.
+* [[Google Photos]] can automatically identify various species in photographs.<ref>{{Cite web | url=http://bgr.com/2015/06/04/google-photos-image-recognition-dogs-cats-animals/ | title=How Google Photos tells the difference between dogs, cats, bears, and any other animal in your photos| date=2015-06-04}}</ref>
+* [https://Plant.id  Plant.id] is a web application which uses neural network trained on photos from [http://www.flowerchecker.com/ FlowerChecker app]<ref>[https://www.youtube.com/watch?v=LU0VwSlrSfI MLMU.cz - FlowerChecker: Exciting journey of one ML startup – O. Veselý & J. Řihák - YouTube<!-- Bot generated title -->]</ref><ref>{{Cite web | url=https://tyinternety.cz/startupy/tvurci-flowercheckeru-spousteji-shazam-pro-kytky-plant-id-stavi-na-ai-a-ma-velke-plany/ | title=Tvůrci FlowerCheckeru spouštějí Shazam pro kytky. Plant.id staví na AI}}</ref>
+*[https://floraincognita.com Flora Incognita] is an app developed as part of a research project and  uses a cascade of convolutional neural networks to identify plants based on images and location data. <ref>{{Cite web | url=https://floraincognita.com/project |title= The Flora Incognita approach}}</ref>
+
+==See also==
+*[[Multi-access key]]
+
+== References cited ==
+{{reflist}}
+
+== External links ==
+Here are some links to the home pages of species identification systems. The '''SPIDA''' and '''[[Digital Automated Identification SYstem (DAISY)|DAISY]]''' system are essentially generic and capable of classifying any image material presented. The '''ABIS''' and '''DrawWing''' system are restricted to insects with membranous wings as they operate by matching a specific set of characters based on wing venation.
+* [http://research.amnh.org/invertzoo/spida/common/index.htm The SPIDA system]
+* [https://web.archive.org/web/20070302185826/http://www.informatik.uni-bonn.de/projects/ABIS/ ABIS]
+* [http://www.tumblingdice.co.uk/daisy DAISY]
+* [http://drawwing.org DrawWing]
+* [http://leafsnap.com/ LeafSnap]
+* [http://identify.plantnet-project.org/ Pl@ntNet]
+
+[[Category:Species]]
+[[Category:Automatic identification and data capture]]
+[[Category:Comparative anatomy]]
+[[Category:Bioinformatics]]
+[[Category:Applications of computer vision]]

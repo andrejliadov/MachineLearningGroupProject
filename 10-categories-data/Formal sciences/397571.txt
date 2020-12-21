@@ -1,0 +1,202 @@
+{{refimprove|date=February 2017}}
+In [[theoretical computer science]] a '''bisimulation''' is a [[binary relation]] between [[state transition system]]s, associating systems that behave in the same way in the sense that one system simulates the other and vice versa.
+
+Intuitively two systems are '''bisimilar''' if they match each other's moves. In this sense, each of the systems cannot be distinguished from the other by an observer.
+
+== Formal definition ==
+Given a [[state transition system|labelled state transition system]] (<math>S</math>, <math>\Lambda</math>, &rarr;), where <math>S</math> is a set of states, <math>\Lambda</math> is a set of labels and &rarr; is a set of labelled transitions (i.e., a subset of <math>S</math> &times; <math>\Lambda</math> &times; <math>S</math>), a ''bisimulation'' [[Relation (mathematics)|relation]] is a [[binary relation]] <math>R</math> over <math>S</math> (i.e., <math>R</math> &sube; <math>S</math> &times; <math>S</math>) such that both <math>R</math> and its [[converse relation|converse]] <math>R^T</math> are [[simulation preorder|simulation]]s.
+
+Equivalently <math>R</math> is a bisimulation if for every pair of elements <math>p, q</math> in <math>S</math> with <math>(p,q)</math> in <math>R</math>, for all &alpha; in <math>\Lambda</math>:
+
+for all <math>p'</math> in <math>S</math>,
+
+::<math> 
+p \overset{\alpha}{\rightarrow} p'
+  </math>
+
+:implies that there is a <math>q'</math> in <math>S</math> such that
+
+::<math> 
+q \overset{\alpha}{\rightarrow} q'
+  </math>
+
+:and <math>(p',q') \in R</math>;
+
+and, symmetrically, for all <math>q'</math> in <math>S</math>
+
+::<math>
+q \overset{\alpha}{\rightarrow} q' 
+  </math>
+
+:implies that there is a <math>p'</math> in <math>S</math> such that
+
+::<math>
+p \overset{\alpha}{\rightarrow} p'
+  </math>
+
+:and <math>(p',q') \in R</math>.
+
+Given two states <math>p</math> and <math>q</math> in <math>S</math>, <math>p</math> is '''bisimilar''' to <math>q</math>, written <math>p \, \sim \, q</math>, if there is a bisimulation <math>R</math> such that <math>(p, q)</math> is in <math>R</math>.
+
+The bisimilarity relation <math> \, \sim \, </math> is an [[equivalence relation]]. Furthermore, it is the largest bisimulation relation over a given transition system.
+
+Note that it is not always the case that if <math>p</math> simulates <math>q</math> and <math>q</math> simulates <math>p</math> then they are bisimilar. For <math>p</math> and <math>q</math> to be bisimilar, the simulation between <math>p</math> and <math>q</math> must be the [[converse relation|converse]] of the simulation between <math>q</math> and <math>p</math>. Counter-example (in [[Calculus of Communicating Systems|CCS]], describing a coffee machine) : <math>M=p.\overline{c}.M+p.\overline{t}.M+p.(\overline{c}.M+\overline{t}.M)</math> and <math>M'=p.(\overline{c}.M'+\overline{t}.M')</math> simulate each other but are not bisimilar.
+
+== Alternative definitions ==
+
+=== Relational definition ===
+Bisimulation can be defined in terms of [[composition of relations]] as follows.
+
+Given a [[state transition system|labelled state transition system]] <math>(S, \Lambda, \rightarrow)</math>, a ''bisimulation'' [[Relation (mathematics)|relation]] is a [[binary relation]] <math>R</math> over <math>S</math> (i.e., <math>R</math> &sube; <math>S</math> &times; <math>S</math>) such that <math>\forall\alpha\in\Lambda</math>
+
+::<math>R\ ;\ \overset{\alpha}{\rightarrow}\quad {\subseteq}\quad \overset{\alpha}{\rightarrow}\ ;\ R</math>
+:and
+::<math>R^{-1}\ ;\ \overset{\alpha}{\rightarrow}\quad {\subseteq}\quad \overset{\alpha}{\rightarrow}\ ;\ R^{-1}</math>
+
+From the monotonicity and continuity of relation composition, it follows immediately that the set of the bisimulations is closed under unions (joins in the poset of relations), and a simple algebraic calculation shows that the relation of bisimilarity—the join of all bisimulations—is an equivalence relation. This definition, and the associated treatment of bisimilarity, can be interpreted in any involutive [[quantale]].
+
+=== Fixpoint definition ===
+
+Bisimilarity can also be defined in [[Order theory|order theoretical]] fashion, in terms of [[Knaster&ndash;Tarski theorem|fixpoint theory]], more precisely as the greatest fixed point of a certain function defined below.
+
+Given a [[state transition system|labelled state transition system]] (<math>S</math>, &Lambda;, &rarr;), define <math>F:\mathcal{P}(S \times S) \to \mathcal{P}(S \times S)</math> to be a function from binary relations over <math>S</math> to binary relations over <math>S</math>, as follows:
+
+Let <math>R</math> be any binary relation over <math>S</math>. <math>F(R)</math> is defined to be the set of all pairs <math>(p,q)</math> in <math>S</math> &times; <math>S</math> such that:
+
+:<math>
+\forall \alpha \in \Lambda. \, \forall p' \in S. \,
+p \overset{\alpha}{\rightarrow} p' \, \Rightarrow \, 
+\exists q' \in S. \, q \overset{\alpha}{\rightarrow} q' \,\textrm{ and }\, (p',q') \in R
+</math>
+
+and
+
+:<math>
+\forall \alpha \in \Lambda. \, \forall q' \in S. \,
+q \overset{\alpha}{\rightarrow} q' \, \Rightarrow \, 
+\exists p' \in S. \, p \overset{\alpha}{\rightarrow} p' \,\textrm{ and }\, (p',q') \in R
+</math>
+
+Bisimilarity is then defined to be the [[greatest fixed point]] of <math>F</math>.
+
+=== Game theoretical definition ===
+Bisimulation can also be thought of in terms of a game between two players:  attacker and defender.
+
+"Attacker" goes first and may choose any valid transition, <math>\alpha</math>, from <math>(p,q)</math>. I.e.:
+
+<math> 
+(p,q) \overset{\alpha}{\rightarrow} (p',q)
+  </math>
+or 
+<math> 
+(p,q) \overset{\alpha}{\rightarrow} (p,q')
+  </math>
+
+The "Defender" must then attempt to match that transition, <math>\alpha</math> from either <math>(p',q)</math> or <math>(p,q')</math> depending on the attacker's move.
+I.e., they must find an  <math>\alpha</math> such that:
+
+<math> 
+(p',q) \overset{\alpha}{\rightarrow} (p',q')
+  </math>
+or 
+<math> 
+(p,q') \overset{\alpha}{\rightarrow} (p',q')
+ </math>
+
+Attacker and defender continue to take alternating turns until:
+
+* The defender is unable to find any valid transitions to match the attacker's move.  In this case the attacker wins.
+* The game reaches states <math>(p,q)</math> that are both 'dead' (i.e., there are no transitions from either state) In this case the defender wins
+* The game goes on forever, in which case the defender wins.
+* The game reaches states <math>(p,q)</math>, which have already been visited.  This is equivalent to an infinite play and counts as a win for the defender.
+
+By the above definition the system is a bisimulation if and only if there exists a winning strategy for the defender.
+
+=== Coalgebraic definition ===
+
+A bisimulation for state transition systems is a special case of [[F-coalgebra|coalgebraic]] bisimulation for the type of covariant powerset [[functor]].
+Note that every state transition system <math>(S, \Lambda, \rightarrow)</math> is [[Bijection|bijectively]] a function <math>\xi_{\rightarrow} </math> from <math>S</math> to the [[Power set|powerset]] of <math>S</math> indexed by <math>\Lambda</math> written as <math>\mathcal{P}(\Lambda \times S)</math>, defined by
+::<math> p \mapsto \{ (\alpha, q) \in \Lambda \times S : p \overset{\alpha}{\rightarrow} q \}.</math>
+
+Let <math>\pi_i \colon S \times S \to S</math> be <math>i</math>-th [[Product (category theory)|projection]] mapping
+<math>(p, q)</math> to <math>p</math> and <math>q</math> respectively for <math>i = 1, 2</math>; and
+<math>\mathcal{P}(\Lambda \times \pi_1)</math> the forward image of <math>\pi_1</math> defined by dropping the third component
+::<math> P \mapsto \{ (\alpha, p) \in \Lambda \times S : \exists q . (\alpha, p, q) \in P \}</math>
+where <math>P</math> is a subset of <math>\Lambda \times S \times S</math>. Similarly for <math>\mathcal{P}(\Lambda \times \pi_2)</math>.
+
+Using the above notations, a relation <math>R \subseteq S \times S </math> is a '''bisimulation''' on a transition system <math>(S, \Lambda, \rightarrow)</math> if and only if there exists a transition system <math>\gamma \colon R \to \mathcal{P}(\Lambda \times R)</math> on the relation <math>R</math> such that the [[Commutative diagram|diagram]]
+
+[[Image:Coalgebraic bisimulation.svg|frameless|upright=1.5]]
+
+commutes, i.e. for <math>i = 1, 2</math>, the equations
+:: <math> \xi_\rightarrow \circ \pi_i = \mathcal{P}(\Lambda \times \pi_i) \circ \gamma </math>
+hold
+where <math>\xi_{\rightarrow}</math> is the functional representation of <math>(S, \Lambda, \rightarrow)</math>.
+
+== Variants of bisimulation ==
+In special contexts the notion of bisimulation is sometimes refined by adding additional requirements or constraints. An example is that of [[stutter bisimulation]], in which one transition of one system may be matched with multiple transitions of the other, provided that the intermediate states are equivalent to the starting state ("stutters").<ref>{{cite book |last1=Baier |first1=Christel|author1-link= Christel Baier |last2=Katoen |first2=Joost-Pieter|author2-link=Joost-Pieter Katoen |title=Principles of Model Checking |date=2008 |publisher=MIT Press |isbn=978-0-262-02649-9 |page=527}}</ref>
+
+A different variant applies if the state transition system includes a notion of ''silent'' (or ''internal'') action, often denoted with <math>\tau</math>, i.e. actions that are not visible by external observers, then bisimulation can be relaxed to be ''weak bisimulation'', in which if two states <math>p</math> and <math>q</math> are bisimilar and there is some number of internal actions leading from <math>p</math> to some state <math>p'</math> then there must exist state <math>q'</math> such that there is some number (possibly zero) of internal actions leading from <math>q</math> to <math>q'</math>. A relation <math>\mathcal{R}</math> on processes is a weak bisimulation if the following holds (with <math>\mathcal{S} \in \{ \mathcal{R}, \mathcal{R}^{-1} \}</math>, and <math>a,\tau</math> being an observable and mute transition respectively):
+
+<math>\forall p, q. \quad (p,q) \in \mathcal{S} \Rightarrow p \stackrel{\tau}{\rightarrow} p' \Rightarrow \exists q' . \quad q \stackrel{\tau^\ast}{\rightarrow} q' \wedge (p',q') \in \mathcal{S} </math>
+
+<math>\forall p, q. \quad (p,q) \in \mathcal{S} \Rightarrow p \stackrel{a}{\rightarrow} p' \Rightarrow \exists q' . \quad q \stackrel{\tau^\ast a \tau^\ast}{\rightarrow} q' \wedge (p',q') \in \mathcal{S} </math>
+
+This is closely related to bisimulation [[Up to#Computer science|up to]] a relation.
+
+Typically, if the [[state transition system]] gives the [[operational semantics]] of a [[programming language]], then the precise definition of bisimulation will be specific to the restrictions of the programming language. Therefore, in general, there may be more than one kind of bisimulation, (bisimilarity resp.) relationship depending on the context.
+
+== Bisimulation and modal logic ==
+
+Since [[Kripke semantics|Kripke models]] are a special case of (labelled) state transition systems, bisimulation is also a topic in [[modal logic]]. In fact, modal logic is the fragment of [[first-order logic]] invariant under bisimulation ([[Johan van Benthem (logician)|van Benthem's theorem]]).
+
+== Algorithm ==
+Checking that two finite transition systems are bisimilar can be done in polynomial time.{{sfnp|Baier|Katoen|2008|loc=Cor. 7.45, p. 486}}
+
+== See also ==
+* [[Simulation preorder]]
+* [[Congruence relation]]
+* [[Probabilistic bisimulation]]
+
+== References ==
+{{Reflist}}
+
+==Further reading==
+* {{Cite conference
+ | first = David
+ | last = Park
+ | year = 1981
+ | title = Concurrency and Automata on Infinite Sequences
+ | conference = Proceedings of the 5th GI-Conference, Karlsruhe
+ | booktitle = Theoretical Computer Science
+ | series = [[Lecture Notes in Computer Science]]
+ | editor = Deussen, Peter
+ | pages = 167–183
+ | volume = 104
+ | publisher = [[Springer-Verlag]]
+ | isbn = 978-3-540-10576-3
+ | doi = 10.1007/BFb0017309
+}}
+* {{Cite book
+ | last = Milner
+ | first = Robin
+ | title = Communication and Concurrency
+ | year = 1989
+ | publisher = [[Prentice Hall]]
+ | isbn = 0-13-114984-9
+ }}
+* Davide Sangiorgi. (2011). ''Introduction to Bisimulation and Coinduction''. Cambridge University Press. {{ISBN|9781107003637}}
+
+==External links==
+
+=== Software tools ===
+* [[CADP]]: [http://cadp.inria.fr tools to minimize and compare finite-state systems according to various bisimulations]
+* [[mCRL2]]: tools to minimize and compare finite-state systems according to various bisimulations
+* [http://www.brics.dk/bisim/ The Bisimulation Game Game]
+
+{{Authority control}}
+
+[[Category:Theoretical computer science]]
+[[Category:Formal methods]]
+[[Category:Logic in computer science]]
+[[Category:Transition systems]]

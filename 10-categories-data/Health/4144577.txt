@@ -1,0 +1,194 @@
+[[File:All Causes world map - DALY - WHO2004.svg|thumb|upright=1.25|Disability-adjusted life years out of 100,000 lost due to any cause in 2004.<ref>{{Cite web |url=https://www.who.int/healthinfo/global_burden_disease/estimates_country/en/index.html |title=WHO Disease and injury country estimates |year=2009 |work=World Health Organization |accessdate=Nov 11, 2009 |url-status=live |archive-url=https://web.archive.org/web/20091111101009/http://www.who.int/healthinfo/global_burden_disease/estimates_country/en/index.html |archive-date=2009-11-11 }}</ref>{{refbegin|2}}
+{{legend|#b3b3b3|no data}}
+{{legend|#ffff65|fewer than 9,250}}
+{{legend|#fff200|9,250–16,000}}
+{{legend|#ffdc00|16,000–22,750}}
+{{legend|#ffc600|22,750–29,500}}
+{{legend|#ffb000|29,500–36,250}}
+{{legend|#ff9a00|36,250–43,000}}
+{{legend|#ff8400|43,000–49,750}}
+{{legend|#ff6e00|49,750–56,500}}
+{{legend|#ff5800|56,500–63,250}}
+{{legend|#ff4200|63,250–70,000}}
+{{legend|#ff2c00|70,000–80,000}}
+{{legend|#cb0000|more than 80,000}}
+{{refend}}]]
+The '''disability-adjusted life year''' ('''DALY''') is a measure of overall [[disease burden]], expressed as the number of years lost due to ill-health, disability or early death. It was developed in the 1990s as a way of comparing the overall health and life expectancy of different countries.
+
+The DALY is becoming increasingly common in the field of [[public health]] and [[Health Impact Assessment|health impact assessment]] (HIA). It not only includes the potential years of life lost due to premature [[death]], but also includes equivalent years of 'healthy' life lost by virtue of being in states of poor health or [[disability]]. In so doing, [[death|mortality]] and [[morbidity]] are combined into a single, common metric.<ref name=":0">{{Cite web|url=https://www.who.int/healthinfo/global_burden_disease/metrics_daly/en/|title=WHO {{!}} Metrics: Disability-Adjusted Life Year (DALY)|website=WHO|access-date=2020-01-02}}</ref> 
+
+== Calculation ==
+[[File:DALY disability affected life year infographic.svg|center|750px|adjusted life year]]
+The disability-adjusted life year is a societal measure of the [[Disease burden|disease or disability burden]] in populations. DALYs are calculated by combining measures of [[life expectancy]] as well as the adjusted quality of life during a burdensome disease or disability for a population. DALYs are related to the [[quality-adjusted life year]] (QALY) measure; however, QALYs only measure the benefit with and without medical intervention and therefore do not measure the total burden. Also, QALYs tend to be an individual measure, and not a societal measure.
+
+Traditionally, health liabilities were expressed using one measure, the [[Years of potential life lost|years of life lost]] (YLL) due to dying early. A medical condition that did not result in dying younger than expected was not counted. The burden of living with a disease or disability is measured by the [[years lost due to disability]] (YLD) component, sometimes also known as years lost due to disease or years lived with disability/disease.<ref name=":0" />
+
+DALYs are calculated by taking the sum of these two components:<ref>{{Cite journal | first = Arie  | last = Havelaar | title = Methodological choices for calculating the disease burden and cost-of-illness of foodborne zoonoses in European countries | publisher = [[Med-Vet-Net]] | date = August 2007 | url = http://www.medvetnet.org/pdf/Reports/Report_07-002.pdf | accessdate = 2008-04-05|archive-url=https://web.archive.org/web/20090121024116/http://www.medvetnet.org/pdf/Reports/Report_07-002.pdf|archive-date=21 January 2009}}</ref>
+:'''DALY = YLL + YLD'''
+
+The DALY relies on an acceptance that the most appropriate measure of the effects of chronic illness is time, both time lost due to premature death and time spent disabled by disease. One DALY, therefore, is equal to one year of healthy life lost.
+
+How much a medical condition affects a person is called the ''disability weight'' (DW). This is determined by disease or disability and does not vary with age. Tables have been created of thousands of diseases and disabilities, ranging from Alzheimer's disease to loss of finger, with the disability weight meant to indicate the level of disability that results from the specific condition.
+
+{| class=wikitable style="{{float right}}"
+|+ Examples of disability weight
+|-
+! Condition !! DW 2004<ref>{{Cite web|title=GLOBAL BURDEN OF DISEASE 2004 UPDATE: DISABILITY WEIGHTS FOR DISEASES AND CONDITIONS|url=https://www.who.int/healthinfo/global_burden_disease/GBD2004_DisabilityWeights.pdf|publisher=World Health Organization|year=2004|accessdate=Jul 25, 2016|url-status=live|archive-url=https://web.archive.org/web/20161130175359/http://www.who.int/healthinfo/global_burden_disease/GBD2004_DisabilityWeights.pdf|archive-date=2016-11-30}}</ref> !! DW 2010{{sfn|WHO|2013}}
+|-
+| Alzheimer's and other dementias || 0.666 || 0.666
+|-
+| Blindness || 0.594 || 0.195
+|-
+| Schizophrenia || 0.528 || 0.576
+|-
+| AIDS, not on [[Management of HIV/AIDS|ART]] || 0.505 || 0.547
+|-
+| Burns 20%-60% of body || 0.441 || 0.438
+|-
+| Fractured femur || 0.372 || 0.308
+|-
+| Moderate depression episode || 0.350 || 0.406
+|-
+| Amputation of foot || 0.300 || 0.021-0.1674
+|-
+| Deafness || 0.229 || 0.167-0.281
+|-
+| Infertility || 0.180 || 0.026-0.056
+|-
+| Amputation of finger || 0.102 || 0.030
+|-
+| Lower back pain || 0.061 || 0.0322-0.0374
+|}
+
+Examples of the disability weight are shown on the right. Some of these are "short term", and the long-term weights may be different.
+
+The most noticeable change between the 2004 and 2010 figures for disability weights above are for blindness as it was considered the weights are a measure of health rather than well-being (or welfare) and a blind person is not considered to be ill. "In the {{abbr |GBD| Global Burden of Disease }} terminology, the term disability is used broadly to refer to departures from optimal health in any of the important domains of health."{{sfn|WHO|2013|p=15}}
+
+At the population level, the disease burden as measured by DALYs is calculated by adding YLL to YLD. YLL uses the life expectancy at the time of death.<ref>{{Cite journal|last=Martinez|first=Ramon|last2=Soliz|first2=Patricia|last3=Caixeta|first3=Roberta|last4=Ordunez|first4=Pedro|date=9 January 2019|title=Reflection on modern methods: years of life lost due to premature mortality—a versatile and comprehensive measure for monitoring non-communicable disease mortality|journal=International Journal of Epidemiology|language=en|doi=10.1093/ije/dyy254|pmid=30629192|doi-access=free}}</ref> YLD is determined by the number of years disabled weighted by level of disability caused by a disability or disease using the formula:
+:'''YLD = I x DW x L'''
+In this formula, I = number of incident cases in the population, DW = disability weight of specific condition, and L = average duration of the case until remission or death (years). There is also a prevalence (as opposed to incidence) based calculation for YLD. Number of years lost due to premature death is calculated by 
+:'''YLL = N x L''' 
+where N = number of deaths due to condition, L = standard life expectancy at age of death.<ref name=":0" />
+Note that life expectancies are not the same at different ages. For example, in Paleolithic era, life expectancy at birth was 33 years, but life expectancy at the age of 15 was an additional 39 years (total 54).<ref>{{Cite journal | doi = 10.1002/1520-6505(2000)9:4<156::AID-EVAN5>3.0.CO;2-7 | title = A theory of human life history evolution: Diet, intelligence, and longevity | journal = Evolutionary Anthropology: Issues, News, and Reviews | volume = 9 | issue = 4 | pages = 156–185 | year = 2000 | last1 = Kaplan | first1 = Hillard | last2 = Hill | first2 = Kim | last3 = Lancaster | first3 = Jane | last4 = Hurtado | first4 = A. Magdalena }}</ref>
+
+Historically [[Japan]]ese [[life expectancy]] statistics have been used as the standard for measuring premature death, as the Japanese have the longest life expectancies.<ref name="menken">{{cite journal |vauthors=Menken M, Munsat TL, Toole JF |title=The global burden of disease study: implications for neurology |journal=Arch. Neurol. |volume=57 |issue=3 |pages=418–20 |date=March 2000 |pmid=10714674 |doi=10.1001/archneur.57.3.418 |citeseerx=10.1.1.660.4176 }}</ref> Other approaches have since emerged, include using national life tables for YLL calculations, or using the reference life table derived by the GBD study.<ref name="brechtd">{{cite journal |vauthors=Devleesschauwer B, McDonald SA, Speybroeck N, Wyper GM | title=Valuing the years of life lost due to COVID-19: the differences and pitfalls |journal=International Journal of Public Health  |date=March 2020|pages=1-2 |pmid=32691080 |doi=10.1007/s00038-020-01430-2|doi-access=free }}</ref>
+
+=== Age weighting ===
+[[File:Disability Adjusted Life Year Weight Plot.svg|thumb|right|
+Some studies use DALYs calculated to place greater value on a year lived as a young adult. This formula produces average values around age 10 and age 55, a peak around age 25, and lowest values among very young children and very old people.<ref>{{cite journal|last=Murray|first=Christopher J|title=Quantifying the burden of disease: the technical basis for disability-adjusted life years|journal=Bulletin of the World Health Organization|date=1994|pmc=2486718|pmid=8062401|volume=72|issue=3|pages=429–45}}</ref>]]
+
+A crucial distinction among DALY studies has been the use of "age-weighting", in which the value of each year of life depends on age; however, the [[World Health Organization]] has abandoned age weighting and time discounting in DALYs since 2010.<ref name="auto">{{Cite web|title=WHO methods and data sources for global burden of disease estimates 2000–2011|url=https://www.who.int/healthinfo/statistics/GlobalDALYmethods_2000_2011.pdf|publisher=World Health Organization|year=2013|accessdate=Jul 27, 2016|ref={{SfnRef|WHO|2013}}|url-status=live|archive-url=https://web.archive.org/web/20160909074653/http://www.who.int/healthinfo/statistics/GlobalDALYmethods_2000_2011.pdf|archive-date=2016-09-09}}</ref>
+
+There are two components to this differential accounting of time: age-weighting and time-discounting. Age-weighting is based on the theory of human capital. Commonly, years lived as a young adult are valued more highly than years spent as a young child or older adult, as these are years of peak productivity. Age-weighting receives considerable criticism for valuing young adults at the expense of children and the old. Some criticize, while others rationalize, this as reflecting society's interest in [[productivity]] and receiving a return on its investment in raising children. This age-weighting system means that somebody disabled at 30 years of age, for ten years, would be measured as having a higher loss of DALYs (a greater burden of disease), than somebody disabled by the same disease or injury at the age of 70 for ten years.
+
+This age-weighting function is by no means a universal methodology in {{abbr |HALY| health-adjusted life years }} studies, but is common when using DALYs. Cost-effectiveness studies using {{abbr |QALYs| quality-adjusted life years }}, for example, do not discount time at different ages differently.<ref name="ReferenceA" /> This age-weighting function applies only to the calculation of DALYs lost due to disability. Years lost to premature death are determined from the age at death and life expectancy.
+
+The [[Global Burden of Disease Study]] (GBD) 2001–2002 counted disability adjusted life years equally for all ages, but the GBD 1990 and GBD 2004 studies used the formula<ref>{{Cite web|url=https://www.who.int/healthinfo/global_burden_disease/daly_disability_weight/en/|title=WHO {{!}} Disability weights, discounting and age weighting of DALYs|website=WHO|access-date=2020-01-02}}</ref>
+
+<math>W=0.1658 Y e^{-0.04Y}</math><ref>{{cite book |chapter-url=https://www.who.int/quantifying_ehimpacts/publications/en/9241546204chap3.pdf |chapter=3 The Global Burden of Disease concept |first1=A. |last1=Prüss-Üstün |first2=C. |last2=Mathers |first3=C. |last3=Corvalán |first4=A. |last4=Woodward |title=Introduction and methods: Assessing the environmental burden of disease at national and local levels |publisher=World Health Organization |year=2003 |isbn=978-9241546201 |url=https://www.who.int/quantifying_ehimpacts/publications/9241546204/en/ |series=Environmental burden of disease |volume=1 |url-status=live |archive-url=https://web.archive.org/web/20140201192841/http://www.who.int/quantifying_ehimpacts/publications/9241546204/en/ |archive-date=2014-02-01 }}</ref> where <math>Y</math> is the age at which the year is lived and <math>W</math> is the value assigned to it relative to an average value of 1.
+
+In these studies, future years were also [[discounted]] at a 3% rate to account for future health care losses. [[Time discounting]], which is separate from the age-weighting function, describes preferences in time as used in economic models.<ref>{{cite book|last1=Kramer|first1=Alexander|last2=Hossain|first2=Mobarak|last3=Kraas|first3=Frauke|title=Health in megacities and urban areas|date=2011|publisher=Physica-Verlag|location=Heidelberg|isbn=978-3-7908-2732-3}}</ref>
+
+The effects of the interplay between life expectancy and years lost, discounting, and social weighting are complex, depending on the severity and duration of illness. For example, the parameters used in the GBD 1990 study generally give greater weight to deaths at any year prior to age 39 than afterward, with the death of a newborn weighted at 33 DALYs and the death of someone aged 5–20 weighted at approximately 36 DALYs.<ref>{{cite journal |vauthors=Mathers CD, Ezzati M, Lopez AD |title=Measuring the burden of neglected tropical diseases: the global burden of disease framework |journal=PLoS Negl Trop Dis |volume=1 |issue=2 |pages=e114 |year=2007 |pmid=18060077 |pmc=2100367 |doi=10.1371/journal.pntd.0000114 }} {{open access}}</ref>
+
+As a result of numerous discussions, by 2010 the [[World Health Organization]] had abandoned the ideas of age weighting and time discounting.<ref name="auto" /> They had also substituted the idea of [[prevalence]] for ''incidence'' (when a condition started) because this is what surveys measure.
+
+== Economic applications ==
+The methodology is not an economic measure. It measures how much healthy life is lost. It does not assign a monetary value to any person or condition, and it does not measure how much productive work or money is lost as a result of death and disease.
+However, HALYs, including DALYs and QALYs, are especially useful in guiding the allocation of health resources as they provide a common numerator, allowing for the expression of utility in terms of dollar/DALY, or dollar/QALY.<ref name="ReferenceA">{{cite journal|last1=Gold|first1=MR|last2=Stevenson|first2=D|last3=Fryback|first3=DG|title=HALYS and QALYS and DALYS, oh my: similarities and differences in summary measures of population health|journal=Annual Review of Public Health|date=2002|volume=23|pages=115–34|pmid=11910057|doi=10.1146/annurev.publhealth.23.100901.140513|doi-access=free}}</ref> For example, in Gambia, provision of the [[pneumococcal conjugate vaccine]] costs $670 per DALY saved.<ref>{{cite journal|last1=Kim|first1=SY|last2=Lee|first2=G|last3=Goldie|first3=SJ|title=Economic evaluation of pneumococcal conjugate vaccination in The Gambia.|journal=BMC Infectious Diseases|date=Sep 3, 2010|volume=10|pages=260|pmid=20815900|doi=10.1186/1471-2334-10-260|pmc=2944347}} {{open access}}</ref> This number can then be compared to other treatments for other diseases, to determine whether investing resources in preventing or treating a different disease would be more efficient in terms of overall health.
+
+== Examples ==
+
+Schizophrenia has a 0.53 weighting and a broken femur a 0.37 weighting in the latest WHO weightings.<ref>{{cite web |url=https://www.who.int/healthinfo/global_burden_disease/GBD2004_DisabilityWeights.pdf |title=Global burden of disease 2004 update: disability weights for diseases and conditions |accessdate=2016-07-25 |url-status=live |archive-url=https://web.archive.org/web/20161130175359/http://www.who.int/healthinfo/global_burden_disease/GBD2004_DisabilityWeights.pdf |archive-date=2016-11-30 }}</ref>
+
+=== Australia ===
+[[Cancer]] (25.1/1,000), cardiovascular (23.8/1,000), mental problems (17.6/1,000), neurological (15.7/1,000), chronic respiratory (9.4/1,000) and diabetes (7.2/1,000) are the main causes of good years of expected life lost to disease or premature death.<ref>{{Cite journal |first= Kerry |last=Chant |title= The Health of the People of New South Wales (summary report) |publisher= Chief Health Officer, [[Government of New South Wales]] |date= November 2008 |url= http://mhcs.health.nsw.gov.au/pubs/2008/pdf/chorep_summary_08.pdf |accessdate= 2009-01-17 |url-status= dead |archive-url=https://web.archive.org/web/20090121024116/http://mhcs.health.nsw.gov.au/pubs/2008/pdf/chorep_summary_08.pdf |archive-date= 2009-01-21 }}</ref> Despite this, Australia has one of the [[List of countries by life expectancy|longest life expectancies in the world]].
+
+=== Africa ===
+These illustrate the problematic diseases and outbreaks occurring in 2013 in Zimbabwe, shown to have the greatest impact on health disability were typhoid, anthrax, malaria, common diarrhea, and dysentery.<ref>{{Cite journal | first = Ministry of Health and Child Welfare | last = Zimbabwe | title = Zimbabwe Weekly Epidemiological Bulletin | publisher = World Health Organization, [[Government of Zimbabwe]] | date = December 2013 | url =https://www.who.int/hac/crises/zwe/sitreps/zimbabwe_epi_27january2013.pdf?ua=1 | format = PDF | accessdate = 2014-02-24 | url-status = live | archive-url = https://web.archive.org/web/20140228073147/http://www.who.int/hac/crises/zwe/sitreps/zimbabwe_epi_27january2013.pdf?ua=1 | archive-date = 2014-02-28 }}</ref>
+
+=== PTSD rates ===
+
+[[Posttraumatic stress disorder]] (PTSD) DALY estimates from 2004 for the world's 25 most populous countries give Asian/Pacific countries and the United States as the places where PTSD impact is most concentrated (as shown [[Posttraumatic stress disorder#Epidemiology|here]]).
+
+===Noise-induced hearing loss===
+
+The disability-adjusted life years attributable to hearing impairment for noise-exposed U.S. workers across all industries was calculated to be 2.53 healthy years lost annually per 1,000 noise-exposed workers. Workers in the mining and construction sectors lost 3.45 and 3.09 healthy years per 1,000 workers, respectively. Overall, 66% of the sample worked in the manufacturing sector and represented 70% of healthy years lost by all workers.<ref>{{Cite journal|last1=Masterson |first1=EA |last2=Bushnell |first2=PT |last3=Themann |first3=CL |last4=Morata |first4=TC |title=Hearing Impairment Among Noise-Exposed Workers — United States, 2003–2012|journal=MMWR Morb Mortal Wkly Rep |year=2016 |volume=65 |issue=15 |pages=389–394 |doi=10.15585/mmwr.mm6515a2 |pmid=27101435 |doi-access=free }}</ref>
+
+== History and usage ==
+Originally developed by [[Harvard University]] for the [[World Bank]] in 1990, the [[World Health Organization]] subsequently adopted the method in 1996 as part of the Ad hoc Committee on Health Research "Investing in Health Research & Development" report. The DALY was first conceptualized by [[Christopher J. L. Murray]] and Lopez in work carried out with the [[World Health Organization]] and the [[World Bank]] known as the [[Global Burden of Disease Study]], which was published in 1990.{{citation needed|date=October 2016}} It is now a key measure employed by the [[United Nations]] [[World Health Organization]] in such publications as its ''Global Burden of Disease''.<ref>{{cite web|url=https://www.who.int/healthinfo/global_burden_disease/en/|title=Global Health Estimates|website=World Health Organization|url-status=live|archive-url=https://web.archive.org/web/20150831140920/http://www.who.int/healthinfo/global_burden_disease/en/|archive-date=2015-08-31}}</ref>
+
+The DALY was also used in the 1993 [[World Development Report]].<ref>{{cite book |title=World Development Report 1993: Investing in Health |year=1993 |publisher=[[Oxford University Press]] |url=https://openknowledge.worldbank.org/handle/10986/5976 |author=[[World Bank]] |url-status=live |archive-url=https://web.archive.org/web/20161127012848/https://openknowledge.worldbank.org/handle/10986/5976 |archive-date=2016-11-27 }}</ref>{{rp|x}}
+
+== Criticism ==
+Both [[DALY]]s and [[QALY]]s are forms of [[HALY]]s, health-adjusted life years.
+
+Although some have criticized DALYs as essentially an economic measure of human [[productive capacity]] for the affected individual,<ref>{{cite journal |vauthors=Thacker SB, Stroup DF, Carande-Kulis V, Marks JS, Roy K, Gerberding JL |title=Measuring the public's health |journal=Public Health Rep |volume=121 |issue=1 |pages=14–22 |year=2006 |pmid=16416694 |pmc=1497799 |doi= 10.1177/003335490612100107}}</ref>{{irrelevant citation|date=July 2016|reason=doesn't criticize DALYs for this reason}} this is not so. DALYs do have an age-weighting function that has been rationalized based on the economic productivity of persons at that age, but health-related [[quality of life]] measures are used to determine the disability weights, which range from 0 to 1 (no disability to 100% disabled) for all disease. These weights are based not on a person's ability to work, but rather on the effects of the disability on the person's life in general. This is why mental illness is one of the leading diseases as measured by global burden of disease studies, with depression accounting for 51.84 million DALYs. Perinatal conditions, which affect infants with a very low age-weight function, are the leading cause of lost DALYs at 90.48 million. Measles is fifteenth at 23.11 million.<ref name="ReferenceA" /><ref>{{cite book|last1=Kramer|first1=Alexander, Md. Mobarak Hossain Khan, Frauke Kraas|title=Health in megacities and urban areas|date=2011|publisher=Physica-Verlag|location=Heidelberg|isbn=978-3-7908-2732-3}}</ref><ref>{{cite journal|pmid=8062401 | volume=72 | issue=3 | title=Quantifying the burden of disease: the technical basis for disability-adjusted life years | year=1994 | pages=429–445 | pmc=2486718 | journal=Bull World Health Organ | author=Murray CJ}}</ref>
+
+Some commentators have expressed doubt over whether the disease burden surveys (such as [[EQ-5D]]) fully capture the [[mentalism (discrimination)|impacts of mental illness]], due to factors including [[Ceiling effect (statistics)|ceiling effects]].<ref>{{cite journal|url=http://www.valueinhealthjournal.com/article/S1098-3015(11)01415-X/abstract|title=How Valid and Responsive Are Generic Health Status Measures, such as EQ-5D and SF-36, in Schizophrenia? A Systematic Review|first1=Diana|last1=Papaioannou|first2=John|last2=Brazier|first3=Glenys|last3=Parry|date=1 September 2011|journal=Value in Health|volume=14|issue=6|pages=907–920|accessdate=4 May 2018|doi=10.1016/j.jval.2011.04.006|pmid=21914513|pmc=3179985}}</ref><ref>{{cite journal|url=http://bjp.rcpsych.org/content/197/5/348.full.pdf|title=Is the EQ–5D fit for purpose in mental health?|first=John|last=Brazier|journal=The British Journal of Psychiatry|url-status=live|archive-url=https://web.archive.org/web/20160108072339/http://bjp.rcpsych.org/content/197/5/348.full.pdf |archive-date=2016-01-08}}</ref><ref>{{cite journal|url=http://bjp.rcpsych.org/content/197/5/386.full|title=Quality of life of people with schizophrenia, bipolar disorder and other psychotic disorders|first1=Samuli I.|last1=Saarni|first2=Satu|last2=Viertiö|first3=Jonna|last3=Perälä|first4=Seppo|last4=Koskinen|first5=Jouko|last5=Lönnqvist|first6=Jaana|last6=Suvisaari|journal=The British Journal of Psychiatry|url-status=live|archive-url=https://web.archive.org/web/20160129130549/http://bjp.rcpsych.org/content/197/5/386.full |archive-date=2016-01-29}}</ref>
+
+According to Pliskin et al., the QALY model requires [[utility]] independent, [[risk neutral]], and constant proportional tradeoff behaviour.<ref name=Pliskin1980>{{cite journal |pages=206–24 |doi=10.1287/opre.28.1.206 |jstor=172147 |title=Utility Functions for Life Years and Health Status |year=1980 |last1=Pliskin |first1=J. S. |last2=Shepard |first2=D. S. |last3=Weinstein |first3=M. C. |journal=Operations Research |volume=28|issue=1 }}</ref> Because of these theoretical assumptions, the meaning and usefulness of the QALY is debated.<ref name=autogenerated1>{{cite journal |doi=10.1186/1477-7525-1-80 |year=2003 |last1=Prieto |first1=Luis |last2=Sacristán |first2=José A |journal=Health and Quality of Life Outcomes |volume=1 |pages=80 |pmid=14687421 |title=Problems and solutions in calculating quality-adjusted life years (QALYs) |pmc=317370}} {{open access}}</ref><ref>{{cite journal |doi=10.1177/0272989X07309642 |title=Comparing the Incomparable? A Systematic Review of Competing Techniques for Converting Descriptive Measures of Health Status into QALY-Weights |year=2007 |last1=Mortimer |first1=D. |last2=Segal |first2=L. |journal=Medical Decision Making |volume=28 |pages=66–89 |pmid=18263562 |issue=1}}</ref> Perfect health is difficult, if not impossible, to define. Some argue that there are health states worse than being dead, and that therefore there should be negative values possible on the health spectrum (indeed, some health economists have incorporated negative values into calculations). Determining the level of health depends on measures that some argue place disproportionate importance on physical pain or disability over mental health.<ref>{{cite journal |last=Dolan |first=P. |title=Developing methods that really do value the 'Q' in the QALY |journal=Health Economics, Policy and Law |volume=3 |issue=1 |pages=69–77 |year=January 2008 |doi=10.1017/S1744133107004355 |pmid=18634633 |url=http://pauldolan.co.uk/wp-content/uploads/2011/07/developing-the-methods-that-really-do-value.pdf }}</ref>
+
+The method of ranking interventions on grounds of their cost per QALY gained ratio (or [[Incremental cost-effectiveness ratio|ICER]]) is controversial because it implies a quasi-[[utilitarian]] calculus to determine who will or will not receive treatment.<ref>{{citation | first = Michael | last = Schlander | title = Measures of efficiency in healthcare: QALMs about QALYs? | publisher = Institute for Innovation & Valuation in Health Care | date = 2010-05-23 | url = http://www.michaelschlander.com/pnp/publications_en/Schlander-QALMs-about-QALYs-2010.pdf | accessdate = 2010-05-23 | archive-url = https://web.archive.org/web/20110714084029/http://www.michaelschlander.com/pnp/publications_en/Schlander-QALMs-about-QALYs-2010.pdf | archive-date = 2011-07-14 | url-status = dead }}</ref> However, its supporters argue that since health care resources are inevitably limited, this method enables them to be allocated in the way that is approximately optimal for society, including most patients. Another concern is that it does not take into account equity issues such as the overall distribution of health states – particularly since younger, healthier cohorts have many times more QALYs than older or sicker individuals. As a result, QALY analysis may undervalue treatments which benefit
+the elderly or others with a lower life expectancy. Also, many would argue that all else being equal, patients with more severe illness should be prioritised over patients with less severe illness if both would get the same absolute increase in utility.<ref>{{cite journal |doi=10.1002/(SICI)1099-1050(199902)8:1<25::AID-HEC398>3.0.CO;2-H |title=Incorporating societal concerns for fairness in numerical valuations of health programmes |year=1999 |last1=Nord |first1=Erik |last2=Pinto |first2=Jose Luis |last3=Richardson |first3=Jeff |last4=Menzel |first4=Paul |last5=Ubel |first5=Peter |journal=Health Economics |volume=8 |pages=25–39 |pmid=10082141 |issue=1}}</ref> 
+
+As early as 1989, [[Graham Loomes|Loomes]] and McKenzie recommended that research be conducted concerning the validity of QALYs.<ref name=Loomes1989>{{cite journal|last1=Loomes|first1=Graham|last2=McKenzie|first2=Lynda|title=The use of QALYs in health care decision making|journal=Social Science & Medicine|volume=28|issue=4| year=1989|pages=299–308|issn=02779536| doi=10.1016/0277-9536(89)90030-0|pmid=2649989}}</ref> In 2010, with funding from the [[European Commission]], the European Consortium in Healthcare Outcomes and Cost-Benefit Research (ECHOUTCOME) began a major study on QALYs as used in [[health technology assessment]].<ref name=ECHOUTCOMEhome>{{cite web|url=http://www.echoutcome.eu|title=ECHOUTCOME: European Consortium in Healthcare Outcomes and Cost-Benefit Research|archive-url=https://web.archive.org/web/20161008010513/http://echoutcome.eu/|archive-date=2016-10-08 |url-status=dead }}</ref> [[Ariel Beresniak]], the study's lead author, was quoted as saying that it was the "largest-ever study specifically dedicated to testing the assumptions of the QALY".<ref name=Holmes2013>{{cite journal |last=Holmes |first=David |title=Report triggers quibbles over QALYs, a staple of health metrics |journal=Nature Medicine |volume=19 |issue=3 |pages=248 |date=March 2013 |pmid=23467219 |doi=10.1038/nm0313-248 }}</ref> In January 2013, at its final conference, ECHOUTCOME released preliminary results of its study which surveyed 1361 people "from academia" in Belgium, France, Italy and the UK.<ref name=Holmes2013/><ref name=BBC>{{cite news |last=Dreaper |first=Jane |title=Researchers claim NHS drug decisions 'are flawed' |newspaper=BBC News |date=24 January 2013 |url=https://www.bbc.co.uk/news/health-21170445|access-date=2017-05-30}}</ref><ref name=Beresniak2015>{{cite journal|last1=Beresniak|first1=Ariel|last2=Medina-Lara|first2=Antonieta|last3=Auray|first3=Jean Paul|last4=De Wever|first4=Alain|last5=Praet|first5=Jean-Claude|last6=Tarricone|first6=Rosanna|last7=Torbica|first7=Aleksandra|last8=Dupont|first8=Danielle|last9=Lamure|first9=Michel|last10=Duru|first10=Gerard|title=Validation of the Underlying Assumptions of the Quality-Adjusted Life-Years Outcome: Results from the ECHOUTCOME European Project|journal=PharmacoEconomics|volume=33|issue=1|year=2015|pages=61–69|issn=1170-7690|doi=10.1007/s40273-014-0216-0|pmid=25230587}}</ref> The researchers asked the subjects to respond to 14 questions concerning their preferences for various health states and durations of those states (e.g., 15 years limping versus 5 years in a wheelchair).<ref name=Beresniak2015/> They concluded that "preferences expressed by the respondents were not consistent with the QALY theoretical assumptions" that quality of life can be measured in consistent intervals, that life-years and quality of life are independent of each other, that people are neutral about risk, and that willingness to gain or lose life-years is constant over time.<ref name=Beresniak2015/> ECHOUTCOME also released "European Guidelines for Cost-Effectiveness Assessments of Health Technologies", which recommended not using QALYs in healthcare decision making.<ref name=ECHOUTCOMEguidelines>{{cite web|url=http://echoutcome.eu/images/Echoutcome__Leaflet_Guidelines___final.pdf|title=European Guidelines for Cost-Effectiveness Assessments of Health Technologies|author=European Consortium in Healthcare Outcomes and Cost-Benefit Research (ECHOUTCOME)|archive-url=https://web.archive.org/web/20150814070546/http://echoutcome.eu/images/Echoutcome__Leaflet_Guidelines___final.pdf|archive-date=2015-08-14 |url-status=dead }}</ref> Instead, the guidelines recommended that cost-effectiveness analyses focus on "costs per relevant clinical outcome".<ref name=Holmes2013/><ref name=ECHOUTCOMEguidelines/>
+
+In response to the ECHOUTCOME study, representatives of the National Institute for Health and Care Excellence, the [[Scottish Medicines Consortium]], and the [[Organisation for Economic Co-operation and Development]] made the following points. First, QALYs are better than alternative measures.<ref name=Holmes2013/><ref name=BBC/> Second, the study was "limited".<ref name=Holmes2013/><ref name=BBC/> Third, problems with QALYs were already widely acknowledged.<ref name=BBC/> Fourth, the researchers did not take budgetary constraints into consideration.<ref name=BBC/> Fifth, the UK's National Institute for Health and Care Excellence uses QALYs that are based on 3395 interviews with residents of the UK, as opposed to residents of several European countries.<ref name=Holmes2013/> Finally, people who call for the elimination of QALYs may have "[[Conflict of interest|vested interests]]".<ref name=Holmes2013/>
+
+== See also ==
+{{div col|colwidth=30em}}
+
+* [[Ableism]]
+* [[Bhutan GNH Index]]
+* [[Broad measures of economic progress]]
+* [[Disease burden]]
+* [[Economics]]
+* [[Full cost accounting]]
+* [[Green national product]]
+* [[Green gross domestic product]] (Green GDP)
+* [[Gender-related Development Index]]
+* [[Genuine Progress Indicator]] (GPI)
+* [[Global burden of disease]]
+* [[Global Peace Index]]
+* [[Gross National Happiness]]
+* [[Gross National Well-being]] (GNW)
+* [[Happiness economics]]
+* [[Happy Planet Index]] (HPI)
+* [[Human Development Index]] (HDI)
+* [[ISEW]] (Index of sustainable economic welfare)
+* [[Institute for Health Metrics and Evaluation]] (IHME)
+* [[Progress (history)]]
+* [[Progressive utilization theory]]
+* [[Legatum Prosperity Index]]
+* [[Leisure satisfaction]]
+* [[Living planet index]]
+* [[Millennium Development Goals]] (MDGs)
+* [[Money-rich, time-poor]]
+* [[Post-materialism]]
+* [[Psychometrics]]
+* [[Subjective life satisfaction]]
+* [[Where-to-be-born Index]]
+* [[Wikiprogress]]
+* [[World Values Survey]] (WVS)
+* [[World Happiness Report]]
+*[[Quality-adjusted life year]] (QALY)
+*[[Pharmacoeconomics]]
+*[[Healthy Life Years]]
+*[[Happiness economics]]
+*[[Seven Ages of Man]]
+
+{{div col end}}
+
+== References ==
+{{reflist|30em}}
+
+== External links ==
+*[https://www.who.int/healthinfo/global_burden_disease/metrics_daly/en/index.html WHO Definition]
+
+{{Effective altruism}}
+{{Health care quality}}
+
+[[Category:Global health]]
+[[Category:Health economics]]
+[[Category:World Health Organization]]

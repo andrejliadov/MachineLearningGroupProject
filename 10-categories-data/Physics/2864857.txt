@@ -1,0 +1,181 @@
+In [[physics]], the '''Fermi–Pasta–Ulam–Tsingou problem''' or formerly the '''Fermi–Pasta–Ulam problem''' was the apparent [[physical paradox|paradox]] in [[chaos theory]] that many complicated enough physical systems exhibited almost exactly [[Frequency|periodic]] behavior – called '''Fermi–Pasta–Ulam–Tsingou recurrence''' (or '''Fermi–Pasta–Ulam recurrence''') – instead of the expected [[ergodic theory|ergodic]] behavior. This came as a surprise, as Fermi, certainly, expected the system to [[thermalize]] in a fairly short time. That is, it was expected for all [[vibrational mode]]s to eventually appear with equal strength, as per the [[equipartition theorem]], or, more generally, the [[ergodic hypothesis]]. Yet here was a system that appeared to evade the ergodic hypothesis. Although the recurrence is easily observed, it eventually became apparent that over much, much longer time periods, the system does eventually thermalize. Multiple competing theories have been proposed to explain the behavior of the system, and it remains a topic of active research.
+
+The original intent was to find a physics problem worthy of numerical simulation on the then-new [[MANIAC]] computer. Fermi felt that thermalization would pose such a challenge. As such, it represents one of the earliest uses of digital computers in mathematical research; simultaneously, the unexpected results launched the study of [[nonlinear system]]s.
+
+==The FPUT experiment==
+
+[[File:Fermi–Pasta–Ulam–Tsingou recurrence preview.gif|right|thumb|If there is no nonlinearity (purple), all the amplitude in a mode will stay in that mode. If a quadratic nonlinearity is introduced in the elastic chain, energy can spread among all the mode, but if you wait long enough (two minutes, in this animation), you will see all the amplitude coming back in the original mode.]]
+
+In the summer of 1953 [[Enrico Fermi]], [[John Pasta]], [[Stanislaw Ulam]], and [[Mary Tsingou]] conducted numerical experiments (i.e. computer simulations) of a vibrating string that included a non-linear term (quadratic in one test, cubic in another, and a piecewise linear approximation to a cubic in a third).  They found that the behavior of the system was quite different from what intuition would have led them to expect.  Fermi thought that after many iterations, the system would exhibit [[thermalization]], an [[ergodic]] behavior in which the influence of the initial modes of vibration fade and the system becomes more or less random with [[equipartition theorem|all modes excited more or less equally]].  Instead, the system exhibited a very complicated [[quasi-periodic]] behavior.  They published their results in a [[Los Alamos National Laboratory|Los Alamos]] technical report in 1955.  ([[Enrico Fermi]] died in 1954, and so this technical report was published after Fermi's death.)
+
+The FPUT experiment was important both in showing the complexity of nonlinear system behavior and the value of computer simulation in analyzing systems.
+
+===Name change===
+The original paper names Fermi, Pasta, and Ulam as authors (although Fermi died before the report was written) with an acknowledgement to Tsingou for her work in programming the [[MANIAC]] simulations. [[Mary Tsingou]]'s contributions to the FPUT problem were largely ignored by the community until {{harvs|txt|last=Dauxois|first=Thierry|year=2008}} published additional information regarding the development and called for the problem to be renamed to grant her attribution as well.
+
+==The FPUT lattice system==
+Fermi, Pasta, Ulam, and Tsingou simulated the vibrating string by solving the following discrete system of nearest-neighbor coupled oscillators. We follow the explanation as given in [[Richard Palais]]'s article. Let there be ''N'' oscillators representing a string of length <math>\ell</math> with equilibrium positions <math>p_j = jh,\ j = 0, \dots, N - 1</math>, where <math>h = \ell/(N - 1)</math> is the lattice spacing. Then the position of the ''j''-th oscillator as a function of time is <math>X_j(t) = p_j + x_j(t)</math>, so that <math>x_j(t)</math> gives the displacement from equilibrium. FPUT used the following equations of motion:
+
+: <math>m\ddot{x}_j = k(x_{j+1} + x_{j-1} - 2x_j)[1 + \alpha(x_{j+1} - x_{j-1})].</math>
+
+(Note: this equation is not equivalent to the classical one given in the French version of the article.)
+
+This is just [[Newton's laws of motion|Newton's second law]] for the ''j''-th particle. The first factor <math>k(x_{j+1} + x_{j-1} - 2x_j)</math> is just the usual [[Hooke's law]] form for the force. The factor with <math>\alpha</math> is the nonlinear force. We can rewrite this in terms of continuum quantities by defining <math>c = \sqrt{\kappa/\rho}</math> to be the wave speed, where <math>\kappa = k/h</math> is the [[Young's modulus]] for the string, and <math>\rho = m/h^3</math> is the density:
+
+: <math>\ddot{x}_j = \frac{c^2}{h^2} (x_{j+1} + x_{j-1} - 2x_j)[1 + \alpha(x_{j+1} - x_{j-1})].</math>
+
+==Connection to the KdV equation==
+The continuum limit of the governing equations for the string (with the quadratic force term) is the [[Korteweg–de Vries equation]] (KdV equation.)  The discovery of this relationship and of the [[soliton]] solutions of the KdV equation by [[Martin David Kruskal]] and [[Norman Zabusky]] in 1965 was an important step forward in nonlinear system research. We reproduce below a derivation of this limit, which is rather tricky, as found in Palais's article. Beginning from the "continuum form" of the lattice equations above, we first define ''u''(''x'', ''t'') to be the displacement of the string at position ''x'' and time ''t''. We'll then want a correspondence so that <math>u(p_j, t)</math> is <math>x_j(t)</math>.
+
+: <math>\ddot{x}_j = \frac{c^2}{h^2} (x_{j+1} + x_{j-1} - 2x_j)[1 + \alpha(x_{j+1} - x_{j-1})].</math>
+
+We can use [[Taylor's theorem]] to rewrite the second factor for small <math>h</math> (subscripts of ''u'' denote partial derivatives):
+
+: <math>\begin{align}
+ \left(\frac{x_{j+1} + x_{j-1}-2x_j}{h^2}\right) &= \frac{u(x + h, t) + u(x - h, t) - 2u(x, t)}{h^2} \\
+ &= u_{xx}(x, t) + \left(\frac{h^2}{12}\right)u_{xxxx}(x, t) + O(h^4).
+\end{align}</math>
+
+Similarly, the second term in the third factor is
+
+: <math>\alpha(x_{j+1} - x_{j-1}) = 2\alpha hu_x(x, t) + \left(\frac{\alpha h^3}3\right) u_{xxx}(x, t) + O(h^5).</math>
+
+Thus, the FPUT system is
+
+: <math>\frac{1}{c^2} u_{tt} - u_{xx} = (2\alpha h) u_x u_{xx} + \left(\frac{h^2}{12}\right) u_{xxxx} + O(\alpha h^2, h^4).</math>
+
+If one were to keep terms up to ''O''(''h'') only and assume that <math>2\alpha h</math> approaches a limit, the resulting equation is one which develops [[shock wave|shocks]], which is not observed. Thus one keeps the ''O''(''h''<sup>2</sup>) term as well:
+
+: <math>\frac{1}{c^2} u_{tt} - u_{xx} = (2\alpha h) u_x u_{xx} + \left(\frac{h^2}{12}\right) u_{xxxx}.</math>
+
+We now make the following substitutions, motivated by the decomposition of traveling-wave solutions (of the ordinary [[wave equation]], to which this reduces when <math>\alpha, h</math> vanish) into left- and right-moving waves, so that we only consider a right-moving wave. Let <math>\xi = x - ct,\ \tau = (\alpha h)ct,\ y(\xi, \tau) = u(x, t)</math>. Under this change of coordinates, the equation becomes
+
+: <math>y_{\xi\tau} - \left(\frac{\alpha h}{2}\right) y_{\tau\tau} = -y_\xi y_{\xi\xi} - \left(\frac{h}{24\alpha}\right) y_{\xi\xi\xi\xi}.</math>
+
+To take the continuum limit, assume that <math>\alpha/h</math> tends to a constant, and <math>\alpha, h</math> tend to zero. If we take <math>\delta = \lim_{h \to 0} \sqrt{h/(24\alpha)}</math>, then
+
+: <math>y_{\xi\tau} = -y_\xi y_{\xi\xi} - \delta^2 y_{\xi\xi\xi\xi}.</math>
+
+Taking <math>v = y_\xi</math> results in the KdV equation:
+
+: <math>v_\tau + v v_\xi + \delta^2 v_{\xi\xi\xi} = 0.</math>
+
+Zabusky and Kruskal argued that it was the fact that soliton solutions of the KdV equation can pass through one another without affecting the asymptotic shapes that explained the quasi-periodicity of the waves in the FPUT experiment. In short, thermalization could not occur because of a certain "soliton symmetry" in the system, which broke ergodicity.
+
+A similar set of manipulations (and approximations) lead to the [[Toda lattice]], which is also famous for being a [[completely integrable system]]. It, too, has [[soliton]] solutions, the [[Lax pair]]s, and so also can be used to argue for the lack of [[ergodicity]] in the FPUT model.<ref>Benettin, G., Christodoulidi, H., and Ponno, A. (2013). ''The Fermi–Pasta–Ulam Problem and Its Underlying Integrable Dynamics''. Journal of Statistical Physics, 1–18</ref><ref>Casetti, L., Cerruti-Sola, M., Pettini, M., and Cohen, E. G. D. (1997). The Fermi–Pasta–Ulam problem revisited: stochasticity thresholds in nonlinear Hamiltonian systems. Physical Review E, 55(6), 6566.</ref>
+
+== Routes to thermalization==
+In 1966, Izrailev and [[Boris Chirikov|Chirikov]] proposed that the system will thermalize, if a sufficient amount of initial energy is provided.<ref>Izrailev, F. M., and Chirikov, B. V. (1966, July). ''Statistical properties of a nonlinear string.'' Soviet Physics Doklady (Vol. 11, No. 1, pp. 30–32).</ref> The idea here is that the non-linearity changes the [[dispersion relation]], allowing [[resonant interaction]]s to take place that will bleed energy from one mode to another. A review of such models can be found in Livi ''et al''.<ref>Livi, R., Pettini, M., Ruffo, S., Sparpaglione, M., and Vulpiani, A. (1985). ''Equipartition threshold in nonlinear large Hamiltonian systems: The Fermi–Pasta–Ulam model''. Physical Review A, '''31'''(2), 1039.</ref> Yet, in 1970, [[Joseph Ford (physicist)|Ford]] and Lunsford insist that mixing can be observed even with arbitrarily small initial energies.<ref>Ford, J., and Lunsford, G. H. (1970). ''Stochastic behavior of resonant nearly linear oscillator systems in the limit of zero nonlinear coupling.'' Physical Review A, '''1'''(1), 59</ref> There is a long and complex history of approaches to the problem, see Dauxois (2008) for a (partial) survey.<ref>Dauxois, T.; Ruffo, S. (2008) Scholarpedia</ref>
+
+Recent work by Onorato ''et al.'' demonstrates a very interesting route to thermalization.<ref>Miguel Onorato, Lara Vozella, Davide Proment, Yuri V. Lvov, (2015) ''[https://arxiv.org/pdf/1402.1603.pdf A route to thermalization in the α-Fermi–Pasta–Ulam system]'' ArXiv 1402.1603</ref> Rewriting the FPUT model in terms of [[normal mode]]s, the non-linear term expresses itself as a three-mode interaction (using the language of [[statistical mechanics]], this could be called a "three-[[phonon]] interaction".) It is, however, not a [[resonant interaction]],<ref>A resonant interaction is one where all of the wave-vectors add/subtract to zero, modulo the [[Brillouin zone]], as well as the corresponding frequencies obtained from the [[dispersion relation]]. Since they sum to zero, there is no preferred vector basis for the corresponding vector space, and so all amplitudes can be re-arranged freely. In effect, this places all modes into the same ergodic component, where they can mix "instantly". In the [[S-matrix]] and/or Feynman formalism, this is equivalent to the statement of conservation of energy/momentum: the sum of the energy/momentum for incoming states must equal that of the outgoing states. Unless this holds, states cannot interact.</ref> and is thus not able to spread energy from one mode to another; it can only generate the FPUT recurrence. The three-phonon interaction cannot thermalize the system.
+
+A key insight, however, is that these modes are combinations of "free" and "bound" modes. That is, higher harmonics are "bound" to the fundamental, much in the same way that the higher harmonics in solutions to the KdV equation are bound to the fundamental. They do not have any dynamics of their own, and are instead [[phase-locked]] to the fundamental. Thermalization, if present, can only be among the free modes.
+
+To obtain the free modes, a [[canonical transformation]] can be applied that removes all modes that are not free (that do not engage in resonant interactions). Doing so for the FPUT system results in oscillator modes that have a four-wave interaction (the three-wave interaction has been removed). These quartets do interact resonantly, ''i.e.'' do [[mixing (mathematics)|mix]] together four modes at a time. Oddly, though, when the FPUT chain has only 16, 32 or 64 nodes in it, these quartets are isolated from one-another. Any given mode belongs to only one quartet, and energy cannot bleed from one quartet to another. Continuing on to higher orders of interaction, there is a six-wave interaction that is resonant; furthermore, every mode participates in at least two different six-wave interactions. In other words, all of the modes become interconnected, and energy will transfer between all of the different modes.
+
+The three-wave interaction is of strength <math>1/\alpha</math> (the same <math>\alpha</math> as in prior sections, above). The four-wave interaction is of strength <math>1/\alpha^2</math> and the six-wave interaction is of strength <math>1/\alpha^4</math>. Based on general principles from correlation of interactions (stemming from the [[BBGKY hierarchy]]) one expects the thermalization time to run as the square of the interaction. Thus, the original FPUT lattice (of size 16, 32 or 64) will eventually thermalize, on a time scale of order <math>1/\alpha^8</math>: clearly, this becomes a very long time for weak interactions <math>\alpha \ll 1</math>; meanwhile, the FPUT recurrence will appear to run unabated.  This particular result holds for these particular lattice sizes; the resonant four-wave or six-wave interactions for different lattice sizes may or may not mix together modes (because the [[Brillouin zone]]s are of a different size, and so the combinatorics of which [[wave-vector]]s can sum to zero is altered.) Generic procedures for obtaining canonical transformations that linearize away the bound modes remain a topic of active research.
+
+==References==
+<references/>
+
+== Further reading==
+* {{cite journal
+ |last1=Dauxois |first1=Thierry
+ |year=2008
+ |title=Fermi, Pasta, Ulam, and a mysterious lady
+ |journal=[[Physics Today]]
+ |volume=6 |issue=1 |pages=55–57
+ |arxiv=0801.1590
+ |bibcode=2008PhT....61a..55D
+ |doi=10.1063/1.2835154
+ |s2cid=118607235
+}}
+* {{cite document
+ |last1=Fermi |first1=E.|author1-link=Enrico Fermi
+ |last2=Pasta |first2=J.|author2-link=John Pasta
+ |last3=Ulam |first3=S.|author3-link=Stanislaw Ulam
+ |year=1955
+ |title=Studies of Nonlinear Problems
+ |url=http://www.physics.utah.edu/~detar/phys6720/handouts/fpu/FermiCollectedPapers1965.pdf
+ |series=Document LA-1940
+ |publisher=Los Alamos National Laboratory
+}}
+* {{cite journal
+ |last1=Zabusky |first1=N. J.|author1-link=Norman Zabusky
+ |last2=Kruskal |first2=M. D.|author2-link=Martin David Kruskal
+ |year=1965
+ |title=Interactions of solitons in a collisionless plasma and the recurrence of initial states
+ |journal=[[Physical Review Letters]]
+ |volume=15 |issue=6 |pages=240–243
+ |bibcode=1965PhRvL..15..240Z
+ |doi=10.1103/PhysRevLett.15.240
+|doi-access=free}}
+* {{cite journal
+ |last1=Palais |first1=R. |author1-link=Richard Palais
+ |year=1997
+ |title=The Symmetries of Solitons
+ |url=http://www.ams.org/journals/bull/1997-34-04/S0273-0979-97-00732-5/S0273-0979-97-00732-5.pdf
+ |journal=[[Bulletin of the American Mathematical Society]]
+ |volume=34 |issue=4 |pages=339–403
+ |arxiv=dg-ga/9708004
+ |doi=10.1090/S0273-0979-97-00732-5
+ |mr=1462745
+|s2cid=14550937 }}
+* {{cite journal
+ |last1=Dauxois |first1=T.
+ |last2=Ruffo |first2=S.
+ |year=2008
+ |title=Fermi–Pasta–Ulam nonlinear lattice oscillations
+ |url=http://www.scholarpedia.org/article/Fermi-Pasta-Ulam_nonlinear_lattice_oscillations
+ |journal=[[Scholarpedia]]
+ |volume=3 |issue=8 |pages=5538
+ |bibcode=2008SchpJ...3.5538D
+ |doi=10.4249/scholarpedia.5538
+|doi-access=free
+ }}
+*{{cite book
+ |editor1-last=Gallavotti |editor1-first=G. |editor1-link=Giovanni Gallavotti
+ |year=2008
+ |title=The Fermi–Pasta–Ulam Problem: A Status Report
+ |series=[[Lecture Notes in Physics]]
+ |volume=728
+ |publisher=[[Springer Science+Business Media|Springer]]
+ |isbn=978-3-540-72994-5
+}}
+* {{cite journal
+ |last1=Porter |first1=M. A.
+ |last2=Zabusky |first2=N. J.|author2-link=Norman Zabusky
+ |last3=Hu |first3=B.
+ |last4=Campbell |first4=D. K.
+ |year=2009
+ |title=Fermi, Pasta, Ulam and the Birth of Experimental Mathematics
+ |url=http://people.maths.ox.ac.uk/porterm/papers/fpupop_final.pdf
+ |journal=[[American Scientist]]
+ |volume=97 |issue=3 |pages=214–221
+ |doi=10.1511/2009.78.214
+}}
+* {{cite journal
+ |last1=Onorato |first1=M.
+ |last2=Vozella |first2=L.
+ |last3=Proment |first3=D.
+ |last4=Lvov |first4=Y.
+ |date=2015
+ |title=Route to thermalization in the α-Fermi–Pasta–Ulam system 
+ |url=http://www.pnas.org/content/pnas/112/14/4208.full.pdf
+ |journal=[[Proceedings of the National Academy of Sciences of the United States of America]]
+ |volume=112 |issue=14 |pages=4208–4213
+ |arxiv=1402.1603
+ |bibcode=2015PNAS..112.4208O
+ |doi=10.1073/pnas.1404397112
+|pmc=4394280 |pmid=25805822}}
+
+== External links ==
+* {{cite web|url=https://stemblab.github.io/fermi-pasta-ulam/|title= Fermi Pasta Ulam: the paradox that launched scientific computing}}
+
+{{Chaos theory}}
+
+{{DEFAULTSORT:Fermi-Pasta-Ulam-Tsingou problem}}
+[[Category:Nonlinear systems]]
+[[Category:Ergodic theory]]
+[[Category:History of physics]]
+[[Category:Computational physics]]

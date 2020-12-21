@@ -1,0 +1,75 @@
+An '''attribute grammar''' is a formal way to define [[Attribute (computing)|attributes]] for the productions of a [[formal grammar]], associating these attributes with values. The evaluation occurs in the nodes of the [[abstract syntax tree]], when the language is processed by some [[parser]] or [[compiler]].
+
+The attributes are divided into two groups: ''synthesized'' attributes and ''inherited'' attributes. The synthesized attributes are the result of the attribute evaluation rules, and may also use the values of the inherited attributes. The inherited attributes are passed down from parent nodes.
+
+In some approaches, synthesized attributes are used to pass semantic information up the parse tree, while inherited attributes help pass semantic information down and across it. For instance, when constructing a language translation tool, such as a compiler, it may be used to assign semantic values to syntax constructions. Also, it is possible to validate semantic checks associated with a grammar, representing the rules of a language not explicitly imparted by the syntax definition.
+
+Attribute grammars can also be used to translate the syntax tree directly into code for some specific machine, or into some [[intermediate language]].
+
+One strength of attribute grammars is that they can transport information from anywhere in the abstract syntax tree to anywhere else, in a controlled and formal way.{{Citation needed|date=February 2007}}
+
+==History==
+Attribute grammars were invented by [[Donald Knuth]] and [[Peter Wegner]].<ref name="genesis">D. E. Knuth: [http://www.cs.miami.edu/home/odelia/teaching/csc419_spring17/syllabus/Knuth_AttributeHistory.pdf The genesis of attribute grammars]. ''Proceedings of the international conference on Attribute grammars and their applications'' (1990), LNCS, [https://doi.org/10.1007%2F3-540-53101-7 vol. 461], 1–12.</ref> While Donald Knuth is credited for the overall concept, Peter Wegner invented inherited attributes during a conversation with Knuth. Some embryonic ideas trace back<ref name="genesis"/> to the work of Edgar T. "Ned" Irons,<ref>http://zzcad.com/ned.htm</ref> the author of [[IMP (programming language)|IMP]].
+
+==Example==
+The following is a simple [[context-free grammar]] which can describe a language made up of multiplication and addition of integers.
+
+  '''Expr''' &rarr; '''Expr''' + '''Term'''
+  '''Expr''' &rarr; '''Term'''
+  '''Term''' &rarr; '''Term''' * '''Factor'''
+  '''Term''' &rarr; '''Factor'''
+  '''Factor''' &rarr; "(" '''Expr''' ")"
+  '''Factor''' &rarr; ''integer''
+
+The following attribute grammar can be used to calculate the result of an expression written in the grammar. Note that this grammar only uses synthesized values, and is therefore an [[S-attributed grammar]].
+  '''Expr<sub>1</sub>''' &rarr; '''Expr<sub>2</sub>''' + '''Term''' [ '''Expr<sub>1</sub>'''.value = '''Expr<sub>2</sub>'''.value + '''Term'''.value ]
+  '''Expr''' &rarr; '''Term''' [ '''Expr'''.value = '''Term'''.value ]
+  '''Term<sub>1</sub>''' &rarr; '''Term<sub>2</sub>''' * '''Factor''' [ '''Term<sub>1</sub>'''.value = '''Term<sub>2</sub>'''.value * '''Factor'''.value ]
+  '''Term''' &rarr; '''Factor''' [ '''Term'''.value = '''Factor'''.value ]
+  '''Factor''' &rarr; "(" '''Expr''' ")" [ '''Factor'''.value =  '''Expr'''.value ]
+  '''Factor''' &rarr; ''integer'' [ '''Factor'''.value = strToInt(''integer''.str) ]
+
+==Synthesized attributes==
+A synthesized attribute is computed from the values of attributes of the children. Since the values of the children must be computed first, this is an example of bottom-up propagation. To formally define a synthesized attribute, let <math>G= \langle V_n,V_t,P,S \rangle</math> be a formal grammar, where
+
+* <math>V_n</math> is the set of non terminal symbols
+* <math>V_t</math> is the set of terminal symbols
+* <math>P</math> is the set of [[Formal grammar#The syntax of grammars|productions]]
+* <math>S</math> is the distinguished, or start, symbol
+
+Then, given a string of nonterminal symbols <math>A</math> and an attribute name <math>a</math>, <math>A.a</math> is a synthesized attribute if all three of these conditions are met:
+
+* <math>A \rightarrow \alpha \in P</math> (i.e. <math>A \rightarrow \alpha</math> is one of the rules in the grammar)
+*<math>\alpha = \alpha_1 \ldots \alpha_n, \forall i, 1 \leq i \leq n: \alpha_i \in (V_n \cup V_t)</math> (i.e. every symbol in the body of the rule is either nonterminal or terminal)
+*<math>A.a = f(\alpha_{j_1}.a_1, \ldots ,\alpha_{j_m}.a_m)</math>, where <math>\{\alpha_{j_1}, \ldots ,\alpha_{j_m}\} \subseteq \{\alpha_1, \ldots ,\alpha_n\}</math> (i.e. the value of the attribute is a function <math>f</math> applied to some values from the symbols in the body of the rule)
+
+==Inherited attributes==
+An ''inherited attribute'' at a node in parse tree is defined using the attribute values at the parent or siblings. Inherited attributes are convenient for expressing the dependence of a programming language construct on the context in which it appears. For example, we can use an inherited attribute to keep track of whether an identifier appears on the left or the right side of an assignment in order to decide whether the address or the value of the identifier is needed. In contrast to synthesized attributes, inherited attributes can take values from parent and/or siblings. As in the following production,
+
+: S → ABC
+
+where A can get values from S, B, and C. B can take values from S, A, and C. Likewise, C can take values from S, A, and B.
+
+==Special types of attribute grammars==
+* [[L-attributed grammar]]: ''inherited attributes'' can be evaluated in one left-to-right traversal of the abstract syntax tree
+* [[LR-attributed grammar]]: an L-attributed grammar whose ''inherited attributes'' can also be evaluated in [[bottom-up parsing]].
+* [[ECLR-attributed grammar]]: a subset of LR-attributed grammars where equivalence classes can be used to optimize the evaluation of inherited attributes.
+* [[S-attributed grammar]]: a simple type of attribute grammar, using only ''synthesized attributes'', but no ''inherited attributes''
+
+==See also==
+* [[Affix grammar]]
+* [[Van Wijngaarden grammar]]
+* [[Syntax-directed translation]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://www.haskell.org/haskellwiki/The_Monad.Reader/Issue4/Why_Attribute_Grammars_Matter Why Attribute Grammars Matter], The Monad Reader, Issue 4, July 5, 2005. (This article narrates on how the formalism of attribute grammars brings [[aspect-oriented programming]] to [[functional programming]] by helping writing [[catamorphism]]s [[compositionality|compositional]]ly. It refers to the [http://www.cs.uu.nl/wiki/bin/view/HUT/AttributeGrammarSystem Utrecht University Attribute Grammar] system as the implementation used in the examples.)
+* [http://www.haskell.org/haskellwiki/Attribute_grammar Attribute grammar] in relation to [[Haskell (programming language)|Haskell]] and [[functional programming]].
+* ''[https://www.csee.umbc.edu/courses/331/fall16/01/resources/papers/Knuth67AG.pdf Semantics of context-free languages]'', by [[Donald Knuth|Don Knuth]], is the original paper introducing attributed grammars
+* Jukka Paakki: [https://www.csee.umbc.edu/courses/graduate/631/Fall2002/p196-paakki.pdf Attribute grammar paradigms—a high-level methodology in language implementation]. ''ACM Computing Surveys'' '''27''':2 (June 1995), 196–255.
+
+[[Category:Formal languages]]
+[[Category:Compiler construction]]
+[[Category:Parsing]]

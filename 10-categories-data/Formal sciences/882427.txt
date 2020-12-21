@@ -1,0 +1,362 @@
+'''Categorial grammar''' is a term used for a family of formalisms in [[natural language]] [[syntax]] motivated by the principle of [[compositionality]] and organized according to the view that syntactic constituents should generally combine as [[Function (mathematics)|function]]s or according to a function-argument relationship. Most versions of categorial grammar analyze sentence structure in terms of constituencies (as opposed to dependencies) and are therefore [[phrase structure grammar]]s (as opposed to [[dependency grammar]]s).
+
+==Basics==
+A categorial grammar consists of two parts: a lexicon, which assigns a set of types (also called categories) to each basic symbol, and some [[type inference]] rules, which determine how the type of a string of symbols follows from the types of the constituent symbols.  It has the advantage that the type inference rules can be fixed once and for all, so that the specification of a particular language grammar is entirely determined by the lexicon.
+
+A categorial grammar shares some features with the [[simply typed lambda calculus]].
+Whereas the [[lambda calculus]] has only one function type <math>A \rightarrow B</math>,
+a categorial grammar typically has two function types, one type which is applied on the left,
+and one on the right. For example, a simple categorial grammar might have two function types <math>B/A\,\!</math> and <math>A\backslash B</math>.
+The first, <math>B/A\,\!</math>, is the type of a phrase that results in a phrase of type
+<math>B\,\!</math> when followed (on the right) by a phrase of type <math>A\,\!</math>.
+The second, <math>A\backslash B\,\!</math>, is the type of a phrase that results
+in a phrase of type <math>B\,\!</math> when preceded (on the left) by a phrase of type 
+<math>A\,\!</math>.  
+
+The notation is based upon algebra. A fraction when multiplied by (i.e. concatenated with) its denominator yields its numerator. As concatenation is not [[commutative]], it makes a difference whether the denominator occurs to the left or right. The concatenation must be on the same side as the denominator for it to cancel out.
+
+The first and simplest kind of categorial grammar is called a basic categorial grammar, or sometimes an AB-grammar (after [[Ajdukiewicz]] and [[Yehoshua Bar-Hillel|Bar-Hillel]] ).
+Given a set of primitive types <math>\text{Prim}\,\!</math>, let 
+<math>\text{Tp}(\text{Prim})\,\!</math> be the set of types constructed from primitive types.  In the basic case, this is the least set such that <math>\text{Prim}\subseteq \text{Tp}(\text{Prim})</math>
+and if <math>X, Y\in \text{Tp}(\text{Prim})</math>
+then <math>(X/Y), (Y\backslash X) \in \text{Tp}(\text{Prim})</math>.
+Think of these as purely formal expressions freely generated from the primitive types; any semantics will be added later.  Some authors assume a fixed infinite set of primitive types used by all grammars, but by making the primitive types part of the grammar, the whole construction is kept finite.
+
+A basic categorial grammar is a tuple <math>(\Sigma, \text{Prim}, S, \triangleleft)</math>
+where <math>\Sigma\,\!</math> is a finite set of symbols,
+<math>\text{Prim}\,\!</math> is a finite set of primitive types, and <math>S \in \text{Tp}(\text{Prim})</math>.
+
+The relation <math>\triangleleft</math> is the lexicon, which relates types to symbols <math>(\triangleleft) \subseteq \text{Tp}(\text{Prim}) \times \Sigma</math>.
+Since the lexicon is finite, it can be specified by listing a set of pairs like <math>TYPE\triangleleft\text{symbol}</math>.
+
+Such a grammar for English might have three basic types <math>(N,NP, \text{ and } S)\,\!</math>, assigning [[count noun]]s the type <math>N\,\!</math>, complete noun phrases the type
+<math>NP\,\!</math>, and sentences the type <math>S\,\!</math>.
+Then an [[adjective]] could have the type <math>N/N\,\!</math>, because if it is followed by a noun then the whole phrase is a noun. 
+Similarly, a [[determiner (linguistics)|determiner]] has the type <math>NP/N\,\!</math>,
+because it forms a complete noun phrase when followed by a noun.
+Intransitive [[verb]]s have the type <math>NP\backslash S</math>, and transitive verbs the type <math>(NP\backslash S)/NP</math>.
+Then a string of words is a sentence if it has overall type <math>S\,\!</math>.
+
+For example, take the string "the bad boy made that mess".  Now "the" and "that" are determiners, "boy" and "mess" are nouns, "bad" is an adjective, and "made" is a transitive verb, so the lexicon is
+{<math>NP/N\triangleleft\text{the}</math>,
+<math>NP/N\triangleleft\text{that}</math>,
+<math>N\triangleleft\text{boy}</math>,
+<math>N\triangleleft\text{mess}</math>,
+<math>N/N\triangleleft\text{bad}</math>,
+<math>(NP\backslash S)/NP\triangleleft\text{made}</math>}.
+
+and the sequence of types in the string is
+
+<math>
+{\text{the}\atop {NP/N,}}
+{\text{bad}\atop {N/N,}}
+{\text{boy}\atop {N,}}
+{\text{made}\atop {(NP\backslash S)/NP,}}
+{\text{that}\atop {NP/N,}}
+{\text{mess}\atop {N}}
+</math>
+
+now find functions and appropriate arguments and reduce them according to the two [[inference rule]]s
+<math> X\leftarrow X/Y,\; Y</math> and
+<math> X\leftarrow Y,\; Y\backslash X</math>:
+
+<math>.\qquad NP/N,\; N/N,\; N,\; (NP\backslash S)/NP,\; \underbrace{NP/N,\; N}</math><br>
+<math>.\qquad NP/N,\; N/N,\; N,\; \underbrace{(NP\backslash S)/NP, \quad NP}</math><br>
+<math>.\qquad NP/N,\; \underbrace{N/N,\; N}, \qquad (NP\backslash S)</math><br>
+<math>.\qquad \underbrace{NP/N,\; \quad N},\; \qquad (NP\backslash S)</math><br>
+<math>.\qquad \qquad\underbrace{NP,\; \qquad (NP\backslash S)}</math><br>
+<math>.\qquad \qquad\qquad\quad\;\;\; S</math>
+
+The fact that the result is <math>S\,\!</math> means that the string is a sentence, while the sequence of reductions shows that it must be parsed as ((the (bad boy)) (made (that mess))).
+
+Categorial grammars of this form (having only function application rules) are equivalent in generative capacity to [[context-free grammar]]s and are thus often considered inadequate for theories of natural language syntax. Unlike CFGs, categorial grammars are [[lexicalized]], meaning that only a small number of (mostly language-independent) rules are employed, and all other syntactic phenomena derive from the lexical entries of specific words.
+
+Another appealing aspect of categorial grammars is that it is often easy to assign them a compositional semantics, by first assigning [[interpretation type]]s to all the basic categories, and then associating all the [[derived category|derived categories]] with appropriate [[Function (mathematics)|function]] types. The interpretation of any constituent is then simply the value of a function at an argument. With some modifications to handle [[intensionality]] and [[Quantification (linguistics)|quantification]], this approach can be used to cover a wide variety of semantic phenomena.
+
+==Lambek calculus==
+
+A Lambek grammar is an elaboration of this idea that has a
+concatenation operator for types, and several other inference rules.
+Mati Pentus has shown that these still have the generative capacity of
+context-free grammars.
+
+For the Lambek calculus, there is a type concatenation
+operator <math>\star\,\!</math>, so
+that <math>\text{Prim}\subseteq \text{Tp}(\text{Prim})</math>
+and if <math>X, Y\in \text{Tp}(\text{Prim})</math>
+then <math>(X/Y), (X\backslash Y), (X\star Y)\in \text{Tp}(\text{Prim})</math>.
+
+The Lambek calculus consists of several deduction rules, which specify
+how type inclusion assertions can be derived.  In the following
+rules, upper case roman letters stand for types, upper case Greek
+letters stand for sequences of types.  A sequent of the form
+<math> X \leftarrow \Gamma </math>
+can be read: a string is of type <math>X\,\!</math> if it consists of the concatenation
+of strings of each of the types in <math>\Gamma\,\!</math>.  If a type is
+interpreted as a set of strings, then the
+<math>\leftarrow</math> may be interpreted as <math>\supseteq\,\!</math>,
+that is, "includes as a subset". 
+A horizontal line means that the inclusion above the line
+implies the one below the line.
+
+The process is begun by the Axiom rule, which has no antecedents and
+just says that any type includes itself.
+
+<math>
+(Axiom)\quad
+{{}\over X \leftarrow X}
+</math>
+
+The Cut rule says that inclusions can be composed.
+
+<math>
+(Cut) \quad
+{Z \leftarrow \Delta X \Delta' \qquad X \leftarrow \Gamma
+   \over
+ Z \leftarrow \Delta \Gamma \Delta'}
+</math>
+
+The other rules come in pairs, one pair for each type construction
+operator, each pair consisting of one rule for the operator in the
+target, one in the source, of the arrow.
+The name of a rule consists of the operator and an arrow, with the
+operator on the side of the arrow on which it occurs in the conclusion.
+
+{| class="wikitable"
+|-
+!Target
+!Source
+|-
+|<math>
+(\backslash \leftarrow) \quad
+{Y\leftarrow X \Gamma
+   \over
+ X\backslash Y\leftarrow\Gamma}
+</math>
+|<math>
+(\leftarrow \backslash) \quad
+{Z \leftarrow \Delta Y \Delta' \qquad X\leftarrow\Gamma
+   \over
+ Z \leftarrow \Delta \Gamma(X\backslash Y) \Delta'}
+</math>
+|-
+|<math>
+(/\leftarrow) \quad
+{Y\leftarrow \Gamma X
+  \over
+Y/X\leftarrow\Gamma}
+</math>
+|<math>
+(\leftarrow/) \quad
+{Z\leftarrow \Delta Y \Delta' \qquad X\leftarrow\Gamma 
+  \over
+ Z\leftarrow \Delta (Y/X)\Gamma \Delta'}
+</math>
+|-
+|<math>
+(\star\leftarrow) \quad {X\leftarrow \Gamma \qquad Y \leftarrow \Gamma'
+  \over
+X \star Y \leftarrow \Gamma\Gamma'}
+</math>
+|<math>
+(\leftarrow\star) \quad {Z\leftarrow \Delta X Y \Delta'
+   \over
+Z\leftarrow \Delta (X \star Y) \Delta'}
+</math>
+|}
+
+For an example, here is a derivation of "type raising", which says that
+<math>(B/A)\backslash B \leftarrow A</math>.  The names of rules and the substitutions used are to the right.
+
+<math> 
+\dfrac {\dfrac{}{B \leftarrow B} \qquad \dfrac{}{A \leftarrow A} }
+       {\dfrac {B \leftarrow (B/A), \;\; A} 
+               {(B/A)\backslash B \leftarrow A} }
+\qquad
+\begin{matrix}
+  \mbox{(Axioms)}\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad{ }\\
+  {(\leftarrow/)\,\,[Z=Y=B,X=A,\Gamma=(A),\Delta=\Delta'=()]}\\
+  {(\backslash\leftarrow)\,\,[Y=B,X=(B/A),\Gamma=(A)]}\qquad\qquad\qquad{ }\\
+\end{matrix}
+</math>
+
+===Relation to context-free grammars===
+
+Recall that a [[context-free grammar]] is a 4-tuple:
+
+<math>G = (V,\, \Sigma,\, ::=,\, S)</math>
+where
+
+1. <math>V\, </math> is a finite set of ''non-terminals'' or ''variables''.
+
+2. <math>\Sigma\,</math> is a finite set of ''terminal symbols''.
+
+3. <math>::=\,</math> is a finite set of [[Production rule (formal languages)|production rules]], that is, a finite relation
+<math>(::=)\subseteq V \times (V \cup \Sigma)^*</math>.
+
+4. <math>S\,</math> is the start variable.
+
+From the point of view of categorial grammars, a context-free grammar
+can be seen as a calculus with a set of special purpose axioms for
+each language, but with no type construction operators and no
+inference rules except Cut.
+
+Specifically, given a context-free grammar as above, define a categorial
+grammar 
+<math>(\text{Prim},\, \Sigma,\, \triangleleft,\, S)</math>
+where  <math>\text{Prim}=V\cup\Sigma</math>,
+and   <math>\text{Tp}(\text{Prim})=\text{Prim}\,\!</math>. 
+Let there be an axiom
+<math>{x \leftarrow x}</math> for every symbol 
+<math>x \in V\cup\Sigma</math>,
+an axiom <math>{X \leftarrow \Gamma}</math> 
+for every production rule <math>X ::= \Gamma\,\!</math>,
+a lexicon entry <math>{s \triangleleft s}</math> for every terminal symbol 
+<math>s \in \Sigma</math>,
+and Cut for the only rule.
+This categorial grammar generates the same language as the given CFG.
+
+Of course, this is not a basic categorial grammar, since it has
+special axioms that depend upon the language; i.e. it is not lexicalized.
+Also, it makes no use at all of non-primitive types.
+
+To show that any context-free language can be generated by
+a basic categorial grammar, recall that 
+any context-free language can be generated by a context-free grammar
+in [[Greibach normal form]].
+
+The grammar is in Greibach normal form if every production rule is
+of the form
+<math> A ::= s A_0 \ldots A_{N-1}</math>,
+where capital letters are variables, <math>s \in \Sigma</math>,
+and <math>N\ge 0</math>,
+that is, the right side of the production is a single terminal symbol
+followed by zero or more (non-terminal) variables.
+
+Now given a CFG in Greibach normal form,
+define a basic categorial grammar with a primitive type
+for each non-terminal variable
+<math>\text{Prim}=V\,\!</math>,
+and with an entry in the lexicon 
+<math> A/A_{N-1}/ \ldots /A_0 \triangleleft s </math>,
+for each production rule
+<math> A ::= s A_0 \ldots A_{N-1}</math>.
+It is fairly easy to see that this basic categorial grammar
+generates the same language as the original CFG.
+Note that the lexicon of this grammar will generally
+assign multiple types to each symbol.
+
+The same construction works for Lambek grammars, since
+they are an extension of basic categorial grammars.
+It is necessary to verify that the extra inference rules
+do not change the generated language.  This can be done
+and shows that every context-free language is generated
+by some Lambek grammar.
+
+To show the converse, that every language generated by a
+Lambek grammar is context-free, is much more difficult.
+It was an open problem for nearly thirty years, from
+the early 1960s until about 1991 when it was proven
+by Pentus.
+
+The basic idea is, given a Lambek grammar,
+<math>(\text{Prim},\, \Sigma,\, \triangleleft,\, S)</math>
+construct a context-free grammar
+<math>(V,\, \Sigma,\, ::=,\, S)</math>
+with the same set of terminal symbols, the
+same start symbol, with variables some (not all) types
+<math>V\subset \text{Tp}(\text{Prim})\,\!</math>,
+and with a production rule
+<math>T::=\text{s}\,\!</math>
+for each entry
+<math>T\triangleleft\text{s}</math>
+in the lexicon,
+and production rules <math>T::=\Gamma\,\!</math>
+for certain sequents <math>T\leftarrow\Gamma</math>
+that are derivable in the Lambek calculus.
+
+Of course, there are infinitely many types
+and infinitely many derivable sequents, so in
+order to make a finite grammar it is necessary
+put a bound on the size of the types and sequents
+that are needed.  The heart of Pentus's proof
+is to show that there is such a finite bound.
+
+===Notation===
+The notation in this field is not standardized.  The notations used in
+formal language theory, logic, category theory, and linguistics, conflict
+with each other.  In logic, arrows point to the more general from the more particular,
+that is, to the conclusion from the hypotheses.  In this article,
+this convention is followed, i.e. the target of the arrow is the more general (inclusive) type.
+
+In logic, arrows usually point left to right.  In this article this convention is
+reversed for consistency with the notation of context-free grammars, where the
+single non-terminal symbol is always on the left.  We use the symbol <math>::=</math>
+in a production rule as in [[Backus-Naur form]].  Some authors use an arrow, which
+unfortunately may point in either direction, depending on whether the grammar is
+thought of as generating or recognizing the language.
+
+Some authors on categorial grammars write <math>B\backslash A</math> instead of
+<math>A\backslash B</math>.  The convention used here follows Lambek and algebra.
+
+==Historical notes==
+The basic ideas of categorial grammar date from work by [[Kazimierz Ajdukiewicz]] (in 1935) and [[Yehoshua Bar-Hillel]] (in 1953). In 1958, [[Joachim Lambek]] introduced a [[Lambek Calculus|syntactic calculus]] that formalized the function [[type constructors]] along with various rules for the combination of functions. This calculus is a forerunner of
+[[linear logic]] in that it is a [[substructural logic]]. [[Montague grammar]] uses an ad hoc syntactic system for English that is based on the principles of categorial grammar. Although [[Richard Montague|Montague's]] work is sometimes regarded as syntactically uninteresting, it helped to bolster interest in categorial grammar by associating it with a highly successful formal treatment of natural language [[semantics]]. More recent work in categorial grammar has focused on the improvement of syntactic coverage. One formalism which has received considerable attention in recent years is [[Mark Steedman|Steedman]] and [[Anna Szabolcsi|Szabolcsi]]'s [[combinatory categorial grammar]] which builds on [[combinatory logic]] invented by [[Moses Schönfinkel]] and [[Haskell Curry]].
+
+There are a number of related formalisms of this kind in linguistics, such as [[type logical grammar]] and [[abstract categorial grammar]].
+
+==Some definitions==
+;Derivation: A derivation is a binary tree that encodes a proof.
+;Parse tree: A parse tree displays a derivation, showing the syntactic structure of a sentence.
+;Functor and argument: In a right (left) function application, the node of the type A\B (B/A) is called the functor, and the node of the type A is called an argument.
+;Functor–argument structure{{what| where's the definition?|date=July 2015}}
+
+==Refinements of categorial grammar==
+A variety of changes to categorial grammar have been proposed to improve syntactic coverage. Some of the most common ones are listed below.
+
+===Features and subcategories===
+Most systems of categorial grammar subdivide categories. The most common way to do this is by tagging them with [[grammatical feature|features]], such as [[Grammatical person|person]], [[Grammatical gender|gender]], [[Grammatical number|number]], and [[Grammatical tense|tense]]. Sometimes only atomic categories are tagged in this way. In Montague grammar, it is traditional to subdivide function categories using a multiple slash convention, so ''A/B'' and ''A//B'' would be two distinct categories of left-applying functions, that took the same arguments but could be distinguished between by other functions taking them as arguments.
+
+===Function composition===
+Rules of function composition are included in many categorial grammars. An example of such a rule would be one that allowed the concatenation of a constituent of type ''A/B'' with one of type ''B/C'' to produce a new constituent of type ''A/C''. The semantics of such a rule would simply involve the composition of the functions involved. Function composition is important in categorial accounts of [[logical conjunction|conjunction]] and extraction, especially as they relate to phenomena like [[right node raising]]. The introduction of function composition into a categorial grammar leads to many kinds of derivational ambiguity that are vacuous in the sense that they do not correspond to [[semantic ambiguity|semantic ambiguities]].
+
+===Conjunction===
+Many categorial grammars include a typical conjunction rule, of the general form ''X CONJ X → X'', where ''X'' is a category. Conjunction can generally be applied to nonstandard constituents resulting from type raising or function composition..
+
+===Discontinuity===
+The grammar is extended to handle linguistic phenomena such as discontinuous idioms, gapping and extraction.
+
+==See also==
+*[[Combinatory categorial grammar]]
+*[[Noncommutative logic]]
+*[[Pregroup Grammar]]
+*[[Link grammar]]
+
+==References==
+*{{citation |last1=Curry|first1=Haskell B.|author1-link=Haskell Curry |first2=Richard |last2= Feys|year=1958 | title= Combinatory Logic |volume= 1 |publisher=North-Holland}}
+*{{citation |last1=Jacobson|first1= Pauline|author1-link=Pauline Jacobson |title=Towards a variable-free semantics. |journal=Linguistics and Philosophy|volume=22|issue= 2|year=1999 |pages=117–184|doi= 10.1023/A:1005464228727|s2cid= 60578091}}
+*{{citation |last1=Lambek |first1=Joachim|author1-link=Joachim Lambek|year=1958 |title=The mathematics of sentence structure |journal=[[American Mathematical Monthly|Amer. Math. Monthly]]|volume= 65 |issue=3|pages=154–170|citeseerx=10.1.1.538.885|doi=10.1080/00029890.1958.11989160}}
+*{{citation |last1=Pentus |first1= Mati |year=1997 |title=Lambek Calculus and Formal Grammars| publisher= Amer. Math. Soc. Transl.|url=http://158.250.33.126/~pentus/ftp/papers/ams.pdf}}
+*{{citation |last1=Steedman|first1=Mark |author1-link=Mark Steedman|year=1987 |title=Combinatory grammars and parasitic gaps |journal=Natural Language and Linguistic Theory |volume=5|issue=3 |pages=403–439|doi=10.1007/bf00134555|s2cid=170899264 }}
+*{{citation |last1=Steedman|first1= Mark |author1-link=Mark Steedman|year=1996 |title=Surface Structure and Interpretation|publisher=[[The MIT Press]]}}
+*{{citation |last1=Steedman|first1=Mark |author1-link=Mark Steedman |year=2000 | title=The Syntactic Process |publisher=[[The MIT Press]]}}
+*{{cite book |last1=Szabolcsi|first1=Anna|year=1989|chapter=Bound variables in syntax (are there any?)|title=Semantics and Contextual Expression| editor1-last=Bartsch|editor2-last=van Benthem|editor3= van Emde Boas|publisher= Foris |pages=294–318|chapter-url=https://philpapers.org/archive/SZABVI.pdf}}
+*{{cite book |last1=Szabolcsi |first1=Anna |year=1992 |chapter=Combinatory grammar and projection from the lexicon|title=Lexical Matters|journal=CSLI Lecture Notes|volume=24|editor1=Sag|editor2= Szabolcsi |location=Stanford |publisher=CSLI Publications |pages= 241–269|chapter-url=http://www.u.tsukuba.ac.jp/~kubota.yusuke.fn/lsa/szabolcsi92.pdf}}
+*{{citation |last1=Szabolcsi |first1=Anna |year=2003 |chapter=Binding on the fly: Cross-sentential anaphora in variable-free semantics|title=Resource Sensitivity in Binding and Anaphora|volume=80 |editor1= Kruijff |editor2=Oehrle |publisher=Kluwer |pages=215–229|doi=10.1007/978-94-010-0037-6_8|series=Studies in Linguistics and Philosophy |isbn=978-1-4020-1692-9 |citeseerx=10.1.1.205.3142 }}
+*{{citation |last1=Morril |first1=Glyn |year=1995 |title=Discontinuity in categorial grammar |journal=Linguistics and Philosophy |volume=18 |issue=2 |pages=175–219|doi=10.1007/bf00985216|s2cid=62533943 }}
+
+==Further reading==
+* Michael Moortgat, ''Categorial Type Logics'', Chapter 2 in J. van Benthem and A. ter Meulen (eds.) ''Handbook of Logic and Language''. Elsevier, 1997, {{ISBN|0-262-22053-9}}
+* Wojciech Buszkowski, ''Mathematical linguistics and proof theory'', Chapter 12 in J. van Benthem and A. ter Meulen (eds.) ''Handbook of Logic and Language''. Elsevier, 1997, {{ISBN|0-262-22053-9}}
+* {{cite book|author=Gerhard Jäger|title=Anaphora and Type Logical Grammar|year=2005|publisher=Springer|isbn=978-1-4020-3904-1}}
+* {{cite book|author=Glyn Morrill|title=Categorial Grammar: Logical Syntax, Semantics, and Processing|year=2010|publisher=Oxford University Press|isbn=978-0-19-958986-9}}
+* {{cite book|author1=Richard Moot|author2=Christian Retore|title=The Logic of Categorial Grammars: A Deductive Account of Natural Language Syntax and Semantics|year=2012|publisher=Springer Verlag|isbn=978-3-642-31554-1}}
+
+==External links==
+* [http://eom.springer.de/g/g044770.htm Grammar, categorial] at Springer [[Encyclopaedia of Mathematics]]
+* http://plato.stanford.edu/entries/typelogical-grammar/
+
+[[Category:Grammar frameworks]]
+[[Category:Formal languages]]
+[[Category:Computational linguistics]]
+[[Category:Type theory]]

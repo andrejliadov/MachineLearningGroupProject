@@ -1,0 +1,61 @@
+In [[probability theory]] and [[information theory]], '''adjusted mutual information''', a variation of [[mutual information]] may be used for comparing [[Cluster_Analysis|clusterings]].<ref name="vinh-icml09">{{Cite book | last1 = Vinh | first1 = N. X. | last2 = Epps | first2 = J. | last3 = Bailey | first3 = J. | doi = 10.1145/1553374.1553511 | chapter = Information theoretic measures for clusterings comparison | title = Proceedings of the 26th Annual International Conference on Machine Learning - ICML '09 | pages = 1 | year = 2009 | isbn = 9781605585161 }}</ref> It corrects the effect of agreement solely due to chance between clusterings, similar to the way the [[adjusted rand index]] corrects the [[Rand index]]. It is closely related to [[variation of information]]:<ref>{{Cite journal | last1 = Meila | first1 = M. | title = Comparing clusterings—an information based distance | doi = 10.1016/j.jmva.2006.11.013 | journal = Journal of Multivariate Analysis | volume = 98 | issue = 5 | pages = 873–895 | year = 2007 }}</ref> when a similar adjustment is made to the VI index, it becomes equivalent to the AMI.<ref name="vinh-icml09" /> The adjusted measure however is no longer metrical.<ref name="vinh-jmlr10">{{Citation
+ | title = Information Theoretic Measures for Clusterings Comparison: Variants, Properties, Normalization and Correction for Chance
+ | journal = The Journal of Machine Learning Research
+ | pages = 2837–54 | volume = 11 | issue = oct | year = 2010
+ | last1 = Vinh | first1 = Nguyen Xuan | last2 = Epps | first2 = Julien | last3 = Bailey | first3 = James
+ | url=http://jmlr.csail.mit.edu/papers/volume11/vinh10a/vinh10a.pdf}}</ref>
+
+==Mutual information of two partitions==
+Given a set ''S'' of ''N'' elements <math>S=\{s_1, s_2,\ldots s_N\}</math>, consider two [[partition of a set|partitions]] of ''S'', namely <math>U=\{U_1, U_2,\ldots, U_R\}</math> with ''R'' clusters, and <math>V=\{V_1, V_2,\ldots, V_C\}</math> with ''C'' clusters.  It is presumed here that the partitions are so-called ''hard clusters;'' the partitions are pairwise disjoint:
+:<math>U_i\cap U_j = \varnothing = V_i\cap V_j</math>
+for all <math>i\ne j</math>, and complete:
+:<math>\cup_{i=1}^RU_i=\cup_{j=1}^C V_j=S</math>
+The [[mutual information]] of cluster overlap between ''U'' and ''V'' can be summarized in the form of an ''R''x''C'' [[contingency table]] <math>M=[n_{ij}]^{i=1 \ldots R}_{j=1 \ldots C}</math>, where <math>n_{ij}</math> denotes the number of objects that are common to clusters <math>U_i</math> and <math>V_j</math>.  That is,
+
+:<math>n_{ij}=\left|U_i\cap V_j\right|</math>
+
+Suppose an object is picked at random from ''S''; the probability that the object falls into cluster <math>U_i</math> is:
+:<math>P_U(i)=\frac{|U_i|}{N}</math>
+The [[Entropy_(information_theory)|entropy]] associated with the partitioning ''U'' is:
+:<math>H(U)=-\sum_{i=1}^R P_U(i)\log P_U(i)</math>
+''H(U)'' is non-negative and takes the value 0 only when there is no uncertainty determining an object's cluster membership, ''i.e.'', when there is only one cluster. Similarly, the entropy of the clustering ''V'' can be calculated as:
+:<math>H(V)=-\sum_{j=1}^C P_V(j)\log P_V(j) </math>
+where <math>P_V(j)={|V_j|}/{N}</math>. The [[mutual information]] (MI) between two partitions:
+:<math>MI(U,V)=\sum_{i=1}^R \sum_{j=1}^C P_{UV}(i,j)\log \frac{P_{UV}(i,j)}{P_U(i)P_V(j)}</math>
+where <math>P_{UV}(i,j)</math> denotes the probability that a point belongs to both the cluster <math>U_i</math> in ''U'' and cluster <math>V_j</math> in ''V'':
+:<math>P_{UV}(i,j)=\frac{|U_i \cap V_j|}{N}</math>
+MI is a non-negative quantity upper bounded by the entropies ''H''(''U'') and ''H''(''V''). It quantifies the information shared by the two clusterings and thus can be employed as a clustering [[similarity measure]].
+
+==Adjustment for chance==
+Like the [[Rand index]], the baseline value of mutual information between two random clusterings does not take on a constant value, and tends to be larger when the two partitions have a larger number of clusters (with a fixed number of set elements ''N'').
+By adopting a [[Hypergeometric distribution|hypergeometric]] model of randomness, it can be shown that the expected mutual information between two random clusterings is:
+:<math>\begin{align} E\{MI(U,V)\} = &
+\sum_{i=1}^R \sum_{j=1}^C 
+\sum_{n_{ij}=(a_i+b_j-N)^+}^{\min(a_i, b_j)} 
+\frac{n_{ij}}{N} 
+\log \left( \frac{ N\cdot n_{ij}}{a_i b_j}\right) \times \\
+& \frac{a_i!b_j!(N-a_i)!(N-b_j)!}
+{N!n_{ij}!(a_i-n_{ij})!(b_j-n_{ij})!(N-a_i-b_j+n_{ij})!} \\
+\end{align}</math>
+where <math>(a_i+b_j-N)^+</math>
+denotes <math>\max(1,a_i+b_j-N)</math>.  The variables <math>a_i</math> and <math>b_j</math> are partial sums of the contingency table; that is,
+:<math>a_i=\sum_{j=1}^Cn_{ij}</math>
+and
+:<math>b_j=\sum_{i=1}^Rn_{ij}</math>
+
+The adjusted measure<ref name="vinh-icml09"/> for the mutual information may then be defined to be:
+:<math> AMI(U,V)= \frac{MI(U,V)-E\{MI(U,V)\}} {\max{\{H(U),H(V)\}}-E\{MI(U,V)\}}
+</math>.
+
+The AMI takes a value of 1 when the two partitions are identical and 0 when the MI between two partitions equals the value expected due to chance alone.
+
+==References==
+<references />
+
+==External links==
+*  [http://sites.google.com/site/vinhnguyenx/softwares Matlab code for computing the adjusted mutual information]
+* [https://github.com/defleury/adjusted_mutual_information R code for fast and parallel calculation of adjusted mutual information]
+* [https://scikit-learn.org/stable/modules/generated/sklearn.metrics.adjusted_mutual_info_score.html Python code for computing the adjusted mutual information]
+
+[[Category:Information theory]]
+[[Category:Clustering criteria]]

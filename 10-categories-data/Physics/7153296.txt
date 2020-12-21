@@ -1,0 +1,700 @@
+{{Unreferenced|date=November 2019}}
+This is a list of common physical constants and variables, and their notations. Note that '''bold text''' indicates that the quantity is a [[Vector (geometry)|vector]].
+
+==Latin characters==
+
+{| class="wikitable"
+|-
+! Symbol
+! Meaning
+! SI unit of measure
+|-
+| style="text-align: center" |<math>\mathbf{A}</math>
+| [[magnetic vector potential]]
+| [[tesla (unit)|tesla]] [[meter]] (T⋅m)
+|-
+|rowspan=3 style="text-align: center" | <math>A</math>
+| [[area]]
+| [[square meters]] (m<sup>2</sup>)
+|-
+| [[amplitude]]
+| [[meter]]
+|-
+| [[atomic mass number]]
+| unitless
+|-
+| style="text-align: center" |<math>\mathbf{a}</math>
+| [[acceleration]]
+| [[meters]] per [[second]] squared (m/s<sup>2</sup>)
+|-
+| style="text-align: center" |<math>\mathbf{B}</math>
+| [[Magnetic field density|magnetic flux density]] <br> also called the magnetic field density or magnetic induction
+| [[tesla (unit)|tesla]] (T), or equivalently, <br>[[weber (unit)|weber]] per [[square meter]] (Wb/m<sup>2</sup>)
+|-
+|rowspan=3 style="text-align: center" | <math>C</math>
+| [[capacitance]]
+| [[farad]] (F)
+|-
+| [[heat capacity]]
+| [[joule]] per [[kelvin]] (J⋅K<sup>−1</sup>)
+|-
+| [[constant of integration]]
+| varied depending on context
+|-
+|rowspan=4 style="text-align: center" | <math>c</math>
+| [[speed of light]] (in [[vacuum]])
+| 299,792,458 [[meter]] per second (m/s)
+|-
+| [[speed of sound]]
+| 340.29 [[meter]] per second (m/s)
+|-
+| [[specific heat capacity]]
+| [[joule]] per [[kilogram]] per [[kelvin]] (J⋅kg<sup>−1</sup>⋅K<sup>−1</sup>)
+|-
+| viscous [[damping]] coefficient
+| [[kilogram]] per second (kg/s)
+|-
+| style="text-align: center" |<math>\mathbf{D}</math>
+| [[electric displacement field]] <br> also called the electric flux density
+| [[coulomb]] per [[square meter]] (C/m<sup>2</sup>)
+|-
+| style="text-align: center" |<math>D</math>
+| [[density]]
+| [[kilogram]]s per [[cubic meter]] (kg/m<sup>3</sup>)
+|-
+|rowspan=5 style="text-align: center" |<math>d</math>
+| [[distance]]
+| [[meter]] (m)
+|-
+| [[Relative direction|direction]]
+| unitless
+|-
+| impact parameter
+| [[meter]] (m)
+|-
+| [[diameter]]
+| [[meter]] (m)
+|-
+| [[Differential (infinitesimal)|differential]] (e.g. <math>dx</math>)
+| varied depending on context
+|-
+| style="text-align: center" |<math>d\mathbf{A}</math>
+| [[differential (mathematics)|differential]] vector element of surface area ''A'',  with [[infinitesimal]]ly small magnitude and direction [[Surface normal|normal]] to surface ''S''
+| [[square meter]] (m<sup>2</sup>)
+|-
+| style="text-align: center" |<math>dV</math>
+| differential element of volume ''V'' enclosed by surface ''S''
+| [[cubic meter]] (m<sup>3</sup>)
+|-
+| style="text-align: center" |<math>\mathbf{E}</math>
+| [[electric field]]
+| [[newton (unit)|newton]] per [[coulomb]] (N⋅C<sup>−1</sup>), or equivalently, [[volt]] per [[meter]] (V⋅m<sup>−1</sup>)
+|-
+| rowspan=2 style="text-align: center" | <math>E</math>
+| [[energy]]
+| [[joule]] (J)
+|-
+|[[Young's modulus|Young's Modulus]]
+|[[Pascal (unit)|pascal]] (Pa) or [[Newton (unit)|newton]] per [[Square metre|square meter]] (N/m<sup>2</sup>)
+|-
+| rowspan=4 style="text-align: center" | <math>e</math>
+| [[eccentricity (orbit)|eccentricity]]
+| unitless
+|-
+| [[e (mathematical constant)|2.71828...]] (base of the [[natural logarithm]])
+|unitless
+|-
+| [[electron]]
+| unitless
+|-
+| [[elementary charge]]
+| [[coulomb]] (C)
+|-
+| style="text-align: center" |<math>\mathbf{F}</math>
+| [[force]]
+| [[newton (unit)|newton]] (N)
+|-
+| style="text-align: center" |<math>F</math>
+| [[Faraday constant]]
+| coulombs per [[mole (unit)|mole]] (C⋅mol<sup>−1</sup>)
+|-
+|rowspan=3 style="text-align: center" | <math>f</math>
+| [[frequency]]
+| [[hertz]] (Hz)
+|-
+| [[Function (mathematics)|function]]
+|
+|-
+| [[friction]]
+| [[newton (unit)|newton]] (N)
+|-
+|rowspan=2 style="text-align: center" |<math>G</math>
+| [[electrical resistance and conductance|electrical conductance]]
+| [[Siemens (unit)|siemens]] (S)
+|-
+| [[gravitational constant]]
+| [[newton (unit)|newton]] [[meter]] squared per [[kilogram]] squared (N⋅m<sup>2</sup>/kg<sup>2</sup>)
+|-
+| style="text-align: center" | <math>g</math>
+| [[standard gravity|acceleration due to gravity]]
+| [[meters]] per [[second]] squared (m/s<sup>2</sup>), or equivalently, [[newton (unit)|newtons]] per [[kilogram]] (N/kg)
+|-
+| style="text-align: center" |<math>\mathbf{H}</math>
+| [[magnetic field|magnetic field strength]]
+| [[ampere]] per [[meter]] (A/m)
+|-
+| style="text-align: center" |<math>H</math>
+| [[Hamiltonian mechanics|Hamiltonian]]
+| [[joule]] (J)
+|-
+| rowspan=2 style="text-align: center" | <math>h</math>
+| [[height]]
+| [[meter]] (m)
+|-
+| [[Planck constant]]
+| [[joule]] second (J⋅s)
+|-
+| style="text-align: center" |<math>\hbar</math>
+| [[reduced Planck constant]]
+| [[joule]] second (J⋅s)
+|-
+|rowspan=5 style="text-align: center" |<math>I</math>
+| [[Action (physics)|action]]
+| [[joule]] second (J⋅s)
+|-
+| [[intensity (physics)|intensity]]
+| [[watt]] per [[square meter]] (W/m<sup>2</sup>)
+|-
+| [[sound intensity]]
+| watt per [[square meter]] (W/m<sup>2</sup>)
+|-
+| [[electric current|electrical/conventional current]]
+| ampere (A)
+|-
+| [[moment of inertia]]
+| [[kilogram]] [[meter]] squared (kg⋅m<sup>2</sup>)
+|-
+|rowspan=2 style="text-align: center" |<math>i</math>
+| [[Irradiance|intensity]]
+| watt per [[square meter]] (W/m<sup>2</sup>)
+|-
+| [[imaginary unit]]
+| unitless
+|-
+|style="text-align: center" |<math>\mathbf{\hat{i}}</math>
+| Cartesian x-axis basis unit vector
+| unitless
+|-
+|rowspan=2 style="text-align: center" |<math>\mathbf{J}</math>
+| [[current density]]
+| ampere per [[square meter]] (A/m<sup>2</sup>)
+|-
+| [[Impulse (physics)|impulse]]
+| [[kilogram]] [[meter]] per second (kg⋅m/s)
+|-
+| style="text-align: center" |<math>\mathbf{j}</math>
+| [[Jerk (physics)|jerk]]
+| [[metre|meters]] per [[second]] cubed (m/s<sup>3</sup>)
+|-
+| style="text-align: center" |<math>j</math>
+| [[imaginary unit]] (electrical)
+| unitless
+|-
+| style="text-align: center" |<math>\mathbf{\hat{j}}</math>
+| Cartesian y-axis basis unit vector
+| unitless
+|-
+| style="text-align: center" |<math>K</math>
+| [[kinetic energy]]
+| [[joule]] (J)
+|-
+|rowspan=3 style="text-align: center" |<math>k</math>
+| [[Boltzmann constant]]
+| [[joule]] per kelvin (J/K)
+|-
+|[[wavenumber]], [[wave vector]]
+| [[radians]] per [[meter]] (m<sup>−1</sup>)
+|-
+| [[stiffness]]
+| newtons per meter (N⋅m<sup>−1</sup>)
+|-
+| style="text-align: center" |<math>\mathbf{\hat{k}}</math>
+| Cartesian z-axis basis unit vector
+| unitless
+|-
+|rowspan=4 style="text-align: center" |<math>L</math>
+| [[inductance]]
+| [[henry (unit)|henry]] (H)
+|-
+| [[luminosity]]
+| watt (W)
+|-
+| [[angular momentum]]
+| newton [[meter]] second (N⋅m⋅s or kg⋅m<sup>2</sup>⋅s<sup>−1</sup>)
+|-
+| [[Lagrangian Mechanics|Lagrangian]]
+| joule (J)
+|-
+| style="text-align: center" | <math>l</math>
+| [[length]]
+| [[meter]] (m)
+|-
+| style="text-align: center" | ''ℓ''
+| [[azimuthal quantum number]]
+| unitless
+|-
+|rowspan=2 style="text-align: center" |<math>M</math>
+| [[magnetization]]
+| amperes per [[meter]] (A/m)
+|-
+| [[moment (physics)|moment of force]] <br> often simply called moment or torque
+| [[newton (unit)|newton]] [[meter]] (N⋅m)
+|-
+| style="text-align: center" |<math>m</math>
+| [[mass]]
+| [[kilogram]] (kg)
+|-
+|rowspan=2 style="text-align: center" |<math>N</math>
+| normal vector
+| unit varies depending on context
+|-
+| [[atomic number]]
+| unitless
+|-
+|rowspan=3 style="text-align: center" |<math>n</math>
+| [[refractive index]]
+| unitless
+|-
+| [[principal quantum number]]
+| unitless
+|-
+| [[amount of substance]]
+| [[mole (unit)|mole]]
+|-
+| rowspan=2 style="text-align: center" |<math>P</math>
+| [[Power (physics)|power]]
+| [[watt]] (W)
+|-
+|[[probability]]
+|unitless
+|-
+| style="text-align: center" |<math>\mathbf{p}</math>
+| [[momentum]]
+| [[kilogram]] [[meter]] per second (kg⋅m/s)
+|-
+| style="text-align: center" |<math>p</math>
+| [[pressure]]
+| pascal (Pa)
+|-
+|rowspan=2 style="text-align: center" |<math>Q</math>
+| [[electric charge]]
+| coulomb (C)
+|-
+| [[Heat]]
+| [[joule]] (J)
+|-
+| style="text-align: center" |<math>q</math>
+| [[electric charge]]
+| [[coulomb]] (C)
+|-
+|rowspan=4 style="text-align: center" |<math>R</math>
+| [[electrical resistance]]
+| [[ohm]] (Ω)
+|-
+| [[Ricci tensor]]
+| reciprocal square [[meter]] (m<sup>−2</sup>)
+|-
+| [[radiancy]]
+| [[meter]] per [[second]] 
+|-
+| [[gas constant]]
+| [[joule]] per [[mole (unit)|mole]] per kelvin (J⋅mol<sup>−1</sup>⋅K<sup>−1</sup>)
+|-
+|style="text-align: center" |<math>\mathbf{r}</math>
+| [[Position vector|radius vector (position)]]
+| [[meter]] (m)
+|-
+|style="text-align: center" |<math>r</math>
+| radius or distance
+| [[meter]] (m)
+|-
+|rowspan=3 style="text-align: center" | <math>S</math>
+| [[surface area]]
+| m<sup>2</sup>
+|-
+| [[entropy]]
+| [[joule]] per kelvin (J/K)
+|-
+| [[Action (physics)|action]]
+| [[joule]] second (J⋅s)
+|-
+| style="text-align: center" |<math>\mathbf{s}</math>
+| [[displacement (vector)|displacement]]
+| [[meter]] (m)
+|-
+| style="text-align: center" |<math>s</math>
+| arc length
+| [[meter]] (m)
+|-
+|rowspan=2 style="text-align: center" |<math>T</math>
+| [[period (physics)|period]]
+| second (s)
+|-
+| [[temperature]]
+| kelvin (K) or Celsius (C)
+|-
+| style="text-align: center" |<math>t</math>
+| [[time]]
+| second (s)
+|-
+| style="text-align: center" |<math>\mathbf{U}</math>
+| [[four-velocity]]
+| [[meter]] per second (m/s)
+|-
+|rowspan=2 style="text-align: center" |<math>U</math>
+| [[potential energy]]
+| [[joule]] (J)
+|-
+| [[internal energy]]
+| [[joule]] (J)
+|-
+|rowspan=2 style="text-align: center" |<math>u</math>
+| [[relativistic mass]]
+| [[kilogram]] (kg)
+|-
+| [[energy density]]
+| [[joule]] per [[cubic meter]] (J/m<sup>3</sup>) or [[joule]] per [[kilogram]] (J/kg) depending on the context
+|-
+|rowspan=3 style="text-align: center" |<math>V</math>
+| [[voltage]] <br> also called electric potential difference
+| volt (V)
+|-
+| [[volume]]
+| [[cubic meter]] (m<sup>3</sup>)
+|-
+| [[shear force]]
+|
+|-
+| style="text-align: center" |<math>\mathbf{v}</math>
+| [[velocity]]
+| [[meter]] per second (m/s)
+|-
+|rowspan=2 style="text-align: center" | <math>W</math>
+| [[weight]]
+| [[newton (unit)|newton]] (N)
+|-
+| [[mechanical work]]
+| [[joule]] (J)
+|-
+| style="text-align: center" | <math>w</math>
+| [[width]]
+| [[meter]] (m)
+|-
+|rowspan=2 style="text-align: center" | <math>\mathbf{x}</math>
+| [[position (vector)|position vector]]
+| meter (m)
+|-
+| [[displacement (vector)|displacement]]
+| [[meter]] (m)
+|-
+| style="text-align: center" | <math>x</math>
+| a generic [[Variable (mathematics)|unknown]]
+| varied depending on context
+|-
+| style="text-align: center" | <math>Z</math>
+| [[electrical impedance]]
+| ohm (Ω)
+|}
+
+==Greek characters==
+
+{| class="wikitable"
+|-
+! [[Symbol]]
+! Name
+! Meaning
+! SI unit of measure
+|-
+|rowspan=3 style="text-align: center" |<math>\alpha</math>
+|rowspan=3 style="text-align: center" |[[alpha (letter)|alpha]]
+| [[alpha particle]]
+| 
+|-
+| [[angular acceleration]]
+| radian per second squared (rad/s<sup>2</sup>)
+|-
+| [[fine-structure constant]]
+| unitless
+|-
+|rowspan=2 style="text-align: center" |<math>\beta</math>
+|rowspan=2 style="text-align: center" |[[Beta (letter)|beta]]
+| velocity in terms of the speed of light [[Speed of light|c]]
+| unitless
+|-
+| [[beta particle]]
+|
+|-
+|rowspan=5 style="text-align: center" |<math>\gamma</math>
+|rowspan=5 style="text-align: center" | [[gamma]]
+| [[Lorentz factor]]
+| unitless
+|-
+| [[photon]]
+|
+|-
+| [[gamma ray]]
+|
+|-
+| [[shear strain]]
+|
+|-
+| [[heat capacity ratio]]
+| unitless
+|-
+|rowspan=2 style="text-align: center" |<math>\Delta</math>
+|rowspan=4 style="text-align: center" | [[Delta (letter)|delta]]
+| [[Derivative#Differentiation and the derivative|change in a variable]] (e.g. <math>\Delta x</math>)
+| unitless
+|-
+| [[Laplace operator]]
+| per [[square metre|square meter]] (m<sup>−2</sup>)
+|-
+|rowspan=2 style="text-align: center" | <math>\delta</math>
+| [[displacement (vector)|displacement]] (usually small)
+| meter (m)
+|-
+| [[Dirac delta function]]
+|
+|-
+|rowspan=2 style="text-align: center" |<math>\epsilon</math>
+|rowspan=2 style="text-align: center" | [[epsilon (letter)|epsilon]]
+| [[permittivity]]
+| farad per [[meter]] (F/m)
+|-
+| [[strain (materials science)|strain]]
+| unitless
+|-
+|style="text-align: center" |<math>\varepsilon_0</math>
+|style="text-align: center" |epsilon nought 
+| [[Vacuum permittivity|vacuum permittivity constant]]
+| farad per meter (F/m)
+|-
+| style="text-align: center" | <math>\zeta</math>
+| style="text-align: center" | [[zeta]]
+| [[damping ratio]]
+| unitless
+|-
+|rowspan=3 style="text-align: center" |<math>\eta</math>
+|rowspan=3 style="text-align: center" | [[Eta (letter)|eta]]
+| [[Energy conversion efficiency|energy efficiency]]
+| unitless
+|-
+| [[dynamic viscosity|(dynamic) viscosity]] (also <math>\mu</math>)
+| pascal second (Pa⋅s)
+|-
+| [[Jerk (physics)|jerk]]
+| meter per second cubed (m/s<sup>3</sup>)
+|-
+| style="text-align: center" |<math>\theta</math>
+| style="text-align: center" | [[theta (letter)|theta]]
+| [[angular displacement]]
+| [[radian]] (rad)
+|-
+| style="text-align: center" |<math>\Kappa</math>
+| style="text-align: center" | [[kappa (letter)|kappa]]
+| [[torsion coefficient]] <br> also called torsion constant
+| [[newton (unit)|newton]] [[meter]] per radian (N⋅m/rad)
+|-
+|style="text-align: center" |<math>\Lambda</math>
+|rowspan=4 style="text-align: center" | [[lambda]]
+| [[cosmological constant]]
+| per second squared (s<sup>−2</sup>)
+|-
+| rowspan="3" style="text-align: center" |<math>\lambda</math>
+| [[wavelength]]
+| [[meter]] (m)
+|-
+| linear [[charge density]]
+| coulomb per meter (C/m)
+|-
+| [[eigenvalue]]
+| non-zero [[Euclidean vector|vector]]
+|-
+| rowspan="6" style="text-align: center" |<math>\mathbf{\mu}</math>
+| rowspan="6" style="text-align: center" |[[Mu (letter)|mu]]
+|[[magnetic moment]]
+| ampere [[square meter]] (A⋅m<sup>2</sup>)
+|-
+| [[coefficient of friction]]
+| unitless
+|-
+| [[dynamic viscosity|(dynamic) viscosity]] (also <math>\eta</math>)
+| pascal second (Pa⋅s)
+|-
+| [[permeability (electromagnetism)]]
+| henry per [[meter]] (H/m)
+|-
+| [[reduced mass]]
+| kilogram (kg)
+|-
+| [[Standard gravitational parameter|gravitational parameter]]
+|
+|-
+|style="text-align: center" |<math>\mathbf{\mu}_0</math>
+|style="text-align: center" |mu nought
+| [[Vacuum permeability|vacuum permeability constant or magnetic constant]]
+| henry per meter (H/m)
+|-
+|rowspan=3 style="text-align: center" |<math>\nu</math>
+|rowspan=3 style="text-align: center" | [[Nu (letter)|nu]]
+| [[frequency]]
+| [[hertz]] (Hz)
+|-
+| [[kinematic viscosity]]
+| [[meter]]s squared per second (m<sup>2</sup>/s)
+|-
+| [[neutrino]]
+|
+|-
+| style="text-align: center" | <math>\pi</math>
+| style="text-align: center" | [[Pi (letter)|pi]]
+| [[pi|3.14159...]] ([[irrational number]])
+| unitless
+|-
+|rowspan=3 style="text-align: center" |<math> \rho </math>
+|rowspan=3 style="text-align: center" | [[Rho (letter)|rho]]
+| [[density|mass density]] <br> usually simply called density
+| [[kilogram]] per [[cubic meter]] (kg/m<sup>3</sup>)
+|-
+| volume [[charge density]]
+| [[coulomb]] per [[cubic meter]] (C/m<sup>3</sup>)
+|-
+| [[resistivity]]
+| ohm [[meter]] (Ω⋅m)
+|-
+| style="text-align: center" | <math>\Sigma</math>
+| style="text-align: center" | [[sigma]]
+| [[summation]] operator
+|
+|-
+| rowspan=4 style="text-align: center" | <math>\sigma</math>
+| rowspan=4 style="text-align: center" |[[sigma]]
+| area [[charge density]]
+| coulomb per square meter (C/m<sup>2</sup>)
+|-
+| [[electrical conductivity]]
+| [[Siemens (unit)|siemens]] per [[meter]] (S/m)
+|-
+| [[stress (physics)|normal stress]]
+| [[Pascal (unit)|pascal]] (Pa)
+|-
+| scattering [[cross section (physics)|cross section]]
+| [[Barn (unit)|barn]] (10^-28 m^2)
+|-
+|rowspan=4 style="text-align: center" |<math>\tau</math>
+|rowspan=4 style="text-align: center" | [[tau]]
+| [[torque]]
+| [[newton meter]] (N⋅m)
+|-
+|[[shear stress]]
+|[[Pascal (unit)|pascal]] ([[Pascal (unit)|Pa]]) 
+|-
+| [[time constant]]
+| second (s)
+|-
+| [[tau|6.28318...]] ([[pi|2π]])
+| unitless
+|-
+|rowspan=2 style="text-align: center" |<math>\Phi</math>
+|rowspan=4 style="text-align: center" | [[Phi (letter)|phi]]
+| [[field strength]]
+| unit varies depending on context
+|-
+| [[magnetic flux]]
+| [[weber (unit)|weber]] (Wb)
+|-
+|rowspan=2 style="text-align: center" | <math>\phi</math>
+| [[electric potential]]
+| [[volt]] (V)
+|-
+| [[Higgs field]] [[work function]]
+|
+|-
+| style="text-align: center" |<math>\Psi</math>
+| style="text-align: center" | [[Psi (letter)|psi]]
+| [[wave function]]
+| m<sup>−3/2</sup>
+|- 
+|style="text-align: center" |<math>\Omega</math>
+|rowspan=2 style="text-align: center" |[[omega]]
+| electric resistance
+| [[ohm]]
+|-
+| style="text-align: center" | <math>\omega</math>
+| [[angular frequency]]
+| [[radian]] per second (rad/s)
+|-
+|}
+
+==Other characters==
+
+{| class = wikitable
+|-
+! Symbol
+! Name
+! Meaning
+! SI unit of measure
+|-
+| style="text-align: center" |<math>\nabla\cdot</math>
+| style="text-align: center" | [[nabla symbol|nabla]] dot
+| the [[divergence]] [[Operator (physics)|operator]] <br> often pronounced "del dot"
+| per [[meter]] (m<sup>−1</sup>)
+|-
+| style="text-align: center" |operator<math>\nabla\times</math>
+| style="text-align: center" | [[nabla symbol|nabla]] cross
+|the [[Curl (mathematics)|curl]] operator <br> often pronounced "del cross"
+|per [[meter]] (m<sup>−1</sup>)                                                              
+|-
+| style="text-align: center" | area<math>\nabla</math>
+| style="text-align: center" | [[Nabla symbol|nabla]]
+| [[delta (letter)|delta]] ([[differential operator]])
+|
+|- the area of a shape
+| style="text-align: center" | <math>\partial</math>
+| [[∂|"der", "dow", "die", "partial" or simply "d"]]
+|[[partial derivative]] (e.g. <math>\partial y/\partial x</math>)
+|
+|-
+| style="text-align: center" | <math>\Box</math>
+| style="text-align: center" | [[D'Alembert operator]]
+| <math>\nabla^2-\partial_t^2</math>
+|
+|-
+| style="text-align: center" | <math>\langle \, \, \rangle</math>
+|rowspan=2 style="text-align: center" | [[angle brackets]]
+| average
+sometimes over [[Maxwell–Boltzmann distribution]] 
+|
+|-
+| style="text-align: center" | <math>\langle \  | \ \rangle</math>
+| [[Dirac notation]]
+|
+|-
+
+|}
+
+==See also==
+* [[List of letters used in mathematics and science]]
+* [[List of mathematical symbols]]
+* [[Latin letters used in mathematics]]
+* [[Greek letters used in mathematics, science, and engineering]]
+* [[Physical constant]]
+* [[Physical quantity]]
+* [[International System of Units]]
+* [[ISO 31]]
+
+==References==
+{{Reflist}}
+
+{{DEFAULTSORT:List Of Common Physics Notations}}
+[[Category:Physics-related lists|Common Physics Abbreviations]]

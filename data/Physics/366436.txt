@@ -67,4 +67,73 @@ Note the equivalence between the two kinds of transformations: the coordinates o
 
 [[Category:Systems theory]]
 [[Category:Mathematical terminology]]
+[[Category:Concepts in physics]]{{short description|Distinction between meanings of Euclidean space transformations}}
+{{For|the concept of "passive transformation" in grammar|active voice|passive voice}}
+
+[[File:PassiveActive.JPG|thumb|310px|In the active transformation (left), a point moves from position P to P' by rotating clockwise by an angle θ about the origin of the coordinate system. In the passive transformation (right), point P does not move, while the coordinate system rotates counterclockwise by an angle θ about its origin. The coordinates of P' in the active case (that is, relative to the original coordinate system) are the same as the coordinates of P relative to the rotated coordinate system.]]
+
+In [[analytic geometry]], spatial transformations in the 3-dimensional Euclidean space <math>\R^3</math> are distinguished into '''active''' or '''alibi transformations''', and '''passive''' or '''alias transformations'''. An '''active transformation'''<ref>[http://mathworld.wolfram.com/AlibiTransformation.html Weisstein, Eric W. "Alibi Transformation." From MathWorld--A Wolfram Web Resource.]</ref> is a [[Transformation (mathematics)|transformation]] which actually changes the physical position (alibi, elsewhere) of a point, or [[rigid body]], which can be defined in the absence of a [[coordinate system]]; whereas a '''passive transformation'''<ref>[http://mathworld.wolfram.com/AliasTransformation.html Weisstein, Eric W. "Alias Transformation." From MathWorld--A Wolfram Web Resource.]</ref> is merely a change in the coordinate system in which the object is described (alias, other name) (change of coordinate map, or [[change of basis]]). By ''transformation'', [[mathematician]]s usually refer to active transformations, while [[physicist]]s and [[engineer]]s could mean either. Both types of transformation can be represented by a combination of a [[Translation (geometry)|translation]] and a [[linear transformation]].
+
+Put differently, a ''passive'' transformation refers to description of the ''same'' object in two different coordinate systems.<ref name= Davidson>
+{{cite book |title=Robots and screw theory: applications of kinematics and statics to robotics 
+|author=Joseph K. Davidson, Kenneth Henderson Hunt 
+|chapter=§4.4.1 The active interpretation and the active transformation |page=74 ''ff'' |chapter-url=https://books.google.com/books?id=OQq67Tr7D0cC&pg=PA74 
+|isbn=0-19-856245-4 |year=2004 |publisher=Oxford University Press}}
+</ref>
+On the other hand, an ''active transformation'' is a transformation of one or more objects with respect to the same coordinate system. For instance, active transformations are useful to describe successive positions of a rigid body. On the other hand, passive transformations may be useful in human motion analysis to observe the motion of the [[tibia]] relative to the [[femur]], that is, its motion relative to a (''local'') coordinate system which moves together with the femur, rather than a (''global'') coordinate system which is fixed to the floor.<ref name = Davidson/>
+
+== Example ==
+[[File:Alias and alibi rotations.png|thumb|upright=1.8|Rotation considered as a passive (''alias'') or active (''alibi'') transformation]]
+[[File:Alias and alibi transformations 1 en.png|thumb|upright=1.8|Translation and rotation as passive (''alias'') or active (''alibi'') transformations]]
+As an example, let the vector <math>\mathbf{v}=(v_1,v_2)\in \R^2</math>, be a vector in the plane.  A rotation of the vector through an angle θ in counterclockwise direction is given by the [[rotation matrix]]:
+:<math>R=
+\begin{pmatrix}
+ \cos \theta & -\sin \theta\\
+ \sin \theta &  \cos \theta
+\end{pmatrix},
+</math>
+which can be viewed either as an ''active transformation'' or a ''passive transformation'' (where the above matrix will be inverted), as described below.
+
+==Spatial transformations in the Euclidean space <math>\R^3</math>==
+In general a spatial transformation <math>T\colon\R^3\to \R^3</math> may consist of a translation and a linear transformation. In the following, the translation will be omitted, and the linear transformation will be represented by a 3×3-matrix <math>T</math>.
+
+===Active transformation===
+As an active transformation, <math>T</math> transforms the initial vector <math>\mathbf{v}=(v_x,v_y,v_z)</math> into a new vector <math>\mathbf{v}'=(v'_x,v'_y,v'_z)=T\mathbf{v}=T(v_x,v_y,v_z)</math>.
+
+If one views <math>\{\mathbf{e}'_x=T(1,0,0),\ \mathbf{e}'_y=T(0,1,0),\ \mathbf{e}'_z=T(0,0,1)\}</math> as a new basis, then the coordinates of the new vector <math>\mathbf{v}'=v_x\mathbf{e}'_x+v_y\mathbf{e}'_y+v_z\mathbf{e}'_z</math> in the new basis are the same as those of <math>\mathbf{v}=v_x\mathbf{e}_x+v_y\mathbf{e}_y+v_z\mathbf{e}_z</math> in the original basis. Note that active transformations make sense even as a linear transformation into a different vector space. It makes sense to write the new vector in the unprimed basis (as above) only when the transformation is from the space into itself.
+
+=== Passive transformation ===
+On the other hand, when one views <math>T</math> as a passive transformation, the initial vector <math>\mathbf{v}=(v_x,v_y,v_z)</math> is left unchanged, while the coordinate system and its basis vectors are transformed in the opposite direction, that is, with the inverse transformation <math>T^{-1}</math>.
+<ref name=Amidror>
+{{cite book |isbn=978-1-4020-5457-0 |year=2007 |publisher=Springer |title=The theory of the Moiré phenomenon: Aperiodic layers |first=Isaac|last=Amidror
+|chapter-url=https://books.google.com/books?id=Z_QRomE5g3QC&pg=PT361 |chapter=Appendix D: Remark D.12 |page=346 }}
+</ref> This gives a new coordinate system XYZ with basis vectors:
+:<math>\mathbf{e}_X=T^{-1}(1,0,0),\ \mathbf{e}_Y=T^{-1}(0,1,0),\ \mathbf{e}_Z=T^{-1}(0,0,1)</math>
+
+The new coordinates <math>(v_X,v_Y,v_Z)</math> of <math>\mathbf{v}</math> with respect to the new coordinate system XYZ are given by: 
+:<math>\mathbf{v}=(v_x,v_y,v_z)=v_Xe_X+v_Ye_Y+v_Ze_Z=T^{-1}(v_X,v_Y,v_Z)</math>.
+
+From this equation one sees that the new coordinates are given by
+:<math>(v_X,v_Y,v_Z)=T(v_x,v_y,v_z)</math>.
+
+As a passive transformation <math>T</math> transforms the old coordinates into the new ones.
+
+Note the equivalence between the two kinds of transformations: the coordinates of the new point in the active transformation and the new coordinates of the point in the passive transformation are the same, namely
+:<math>(v_X,v_Y,v_Z)=(v'_x,v'_y,v'_z)</math>.
+
+==See also==
+* [[Change of basis]]
+* [[Covariance and contravariance of vectors]]
+* [[Rotation of axes]]
+* [[Translation of axes]]
+
+==References==
+<references/>
+* [[Dirk Struik]] (1953) ''Lectures on Analytic and Projective Geometry'', page 84, [[Addison-Wesley]].
+
+==External links==
+* [https://web.archive.org/web/20110511051125/https://profiles.google.com/114134834346472219368/posts/AWqcUGXVjcs/Consider-an-equilateral-triangle-in-a-plane-whose UI ambiguity]
+
+[[Category:Systems theory]]
+[[Category:Mathematical terminology]]
 [[Category:Concepts in physics]]

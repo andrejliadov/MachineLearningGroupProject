@@ -1,0 +1,78 @@
+'''Algorithm engineering''' focuses on the design, analysis, implementation, optimization, profiling and experimental evaluation of computer [[algorithms]], bridging the gap between algorithm theory and practical applications of algorithms in [[software engineering]].<ref name="AE">"Algorithm Engineering", Camil Demetrescu, Irene Finocchi, [[Giuseppe Francesco Italiano|Giuseppe F. Italiano]], web: [http://www.dis.uniroma1.it/~demetres/docs/ae.pdf http://www.dis.uniroma1.it/~demetres/docs/ae.pdf]</ref>
+It is a general methodology for algorithmic research.<ref name="AEDef">"Algorithm Engineering – An Attempt at a Definition", [[Peter Sanders (computer scientist)|Peter Sanders]], web: [http://algo2.iti.kit.edu/documents/definition.pdf http://algo2.iti.kit.edu/documents/definition.pdf]</ref>
+
+==Origins==
+
+In 1995, a report from an [[National Science Foundation|NSF]]-sponsored workshop "with the purpose of assessing the current goals and directions of the Theory of Computing (TOC) community" identified the slow speed of adoption of theoretical insights by practitioners as an important issue and suggested measures to
+* reduce the uncertainty by practitioners whether a certain theoretical breakthrough will translate into practical gains in their field of work, and
+* tackle the lack of ready-to-use algorithm libraries, which provide stable, bug-free and well-tested implementations for algorithmic problems and expose an easy-to-use interface for library consumers.<ref name="EOTCS">"Emerging Opportunities for Theoretical Computer Science", Aho, Johnson, Karp, Kosaraju, McGeoch, Papadimitriou, web: [http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.55.9160 http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.55.9160]</ref>
+<!-- Scientists have encountered a widening gap between theoretical insights and their application in software engineering disciplines. While algorithm theory provides the mathematical foundation to discover ..., it often does not meet the practical requirements of software engineering. -->
+ 
+But also, promising algorithmic approaches have been neglected due to difficulties in mathematical analysis.<ref name="AEDef"/>
+<!-- Algorithm engineering was mentioned as one of the approaches to speed up adoption .... -->
+
+The term "algorithm engineering" was first used with specificity in 1997, with the first Workshop on Algorithm Engineering (WAE97), organized by [[Giuseppe Francesco Italiano|Giuseppe F. Italiano]].<ref>[http://www.dsi.unive.it/~wae97 Workshop on Algorithm Engineering]</ref>
+
+==Difference from algorithm theory==
+ 
+Algorithm engineering does not intend to replace or compete with algorithm theory, but tries to enrich, refine and reinforce its formal approaches with [[experimental algorithmics]] (also called empirical algorithmics).
+
+This way it can provide new insights into the efficiency and performance of algorithms in cases where
+* the algorithm at hand is less amenable to algorithm theoretic analysis,
+* formal analysis pessimistically suggests bounds which are unlikely to appear on inputs of practical interest,
+* the algorithm relies on the intricacies of modern hardware architectures like data locality, branch prediction, instruction stalls, instruction latencies which the machine model used in Algorithm Theory is unable to capture in the required detail,
+* the crossover between competing algorithms with different constant costs and asymptotic behaviors needs to be determined.<ref name="AE"/><ref name="TDEA">"Towards a Discipline of Experimental Algorithmics", Bernard M. E. Moret, web: [http://infoscience.epfl.ch/record/97865/files/dimacs_algorithmics.pdf http://infoscience.epfl.ch/record/97865/files/dimacs_algorithmics.pdf]</ref>
+
+==Methodology==
+
+Some researchers describe algorithm engineering's methodology as a cycle consisting of algorithm design, analysis, implementation and experimental evaluation, joined by further aspects like machine models or realistic inputs.
+They argue that equating algorithm engineering with [[experimental algorithmics]] is too limited, because viewing design and analysis, implementation and experimentation as separate activities ignores the crucial feedback loop between those elements of algorithm engineering.<ref name="AEDef"/>
+
+===Realistic models and real inputs===
+
+While specific applications are outside the methodology of algorithm engineering, they play an important role in shaping realistic models of the problem and the underlying machine, and supply real inputs and other design parameters for experiments.<ref name="AEDef"/>
+
+===Design===
+Compared to algorithm theory, which usually focuses on the asymptotic behavior of algorithms, algorithm engineers need to keep further requirements in mind: Simplicity of the algorithm, implementability in programming languages on real hardware, and allowing code reuse.
+Additionally, constant factors of algorithms have such a considerable impact on real-world inputs that sometimes an algorithm with worse asymptotic behavior performs better in practice due to lower constant factors.
+
+===Analysis===
+Some problems can be solved with heuristics and randomized algorithms in a simpler and more efficient fashion than with deterministic algorithms. Unfortunately, this makes even simple randomized algorithms ''difficult to analyze because there are subtle dependencies to be taken into account''.<ref name="AEDef"/>
+
+===Implementation===
+Huge semantic gaps between theoretical insights, formulated algorithms, programming languages and hardware pose a challenge to efficient implementations of even simple algorithms, because small implementation details can have rippling effects on execution behavior.
+The only reliable way to compare several implementations of an algorithm is to spend an considerable amount of time on tuning and profiling, running those algorithms on multiple architectures, and looking at the generated machine code.<ref name="AEDef"/>
+
+===Experiments===
+See: [[Experimental algorithmics]]
+
+===Application engineering===
+Implementations of algorithms used for experiments differ in significant ways from code usable in applications.
+While the former prioritizes fast prototyping, performance and instrumentation for measurements during experiments, the latter requires ''thorough testing, maintainability, simplicity, and tuning for particular classes of inputs''.<ref name="AEDef"/>
+
+===Algorithm libraries===
+Stable, well-tested algorithm libraries like [[Library of Efficient Data types and Algorithms|LEDA]] play an important role in technology transfer by speeding up the adoption of new algorithms in applications. 
+Such libraries reduce the required investment and risk for practitioners, because it removes the burden of understanding and implementing the results of academic research.
+
+==Conferences==
+Two main conferences on Algorithm Engineering are organized annually, namely:
+* Symposium on Experimental Algorithms (SEA), established in 1997 (formerly known as WEA).
+* SIAM Meeting on Algorithm Engineering and Experiments (ALENEX), established in 1999.
+
+The 1997 Workshop on Algorithm Engineering (WAE'97) was held in Venice (Italy) on September 11–13, 1997. The Third International Workshop on Algorithm Engineering (WAE'99) was held in London, UK in July 1999.<ref>
+   ''Algorithm engineering: 3rd International Workshop'',
+   Jeffrey Scott Vitter, Christos D. Zaroliagis, 1999, web:
+   [https://books.google.com/books?id=UZHUQFy8cWsC&printsec=frontcover BGoogle-sC].
+</ref>
+The first Workshop on Algorithm Engineering and Experimentation (ALENEX99) was held in Baltimore, Maryland on January 15–16, 1999.<ref name="jhu">
+   "Workshop on Algorithm Engineering and Experiments"
+   (overview), JHU.edu, 1999, web:
+   [http://www.cs.jhu.edu/Conferences/ALENEX99/ JHU-ALENEX99].
+</ref> It was sponsored by [[DIMACS]], the [[Center for Discrete Mathematics and Theoretical Computer Science]] (at [[Rutgers University]]), with additional support from [[SIGACT]], the ACM Special Interest Group on Algorithms and Computation Theory, and SIAM, the [[Society for Industrial and Applied Mathematics]].<ref name=jhu/>
+
+==References==
+{{Reflist}}
+
+{{DEFAULTSORT:Algorithm Engineering}}
+[[Category:Algorithms]]
+[[Category:Theoretical computer science]]

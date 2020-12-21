@@ -1,0 +1,154 @@
+{| style="float:right"
+| [[File:Brzozowski derivative.gif|thumb|100px|Brzozowski derivative (on red background) of a dictionary string set with respect to "''con''"]]
+|}
+In [[theoretical computer science]], in particular in [[formal language theory]], the '''Brzozowski derivative''' ''u''<sup>−1</sup>''S'' of a [[set (mathematics)|set]] ''S'' of strings and a [[string (computer science)|string]] ''u'' is defined as the set of all strings obtainable from a string in ''S'' by cutting off a [[prefix (computer science)|prefixing]] ''u'', formally: ''u''<sup>−1</sup>''S'' = { ''v'' ∈ Σ<sup>*</sup>: ''uv'' ∈ ''S'' }, cf. picture.
+It was introduced under various different names since the late 1950s.<ref>{{cite journal | url=https://dl.acm.org/doi/10.1145/320924.320930 | author=George N. Raney | title=Sequential functions | journal=Journal of the ACM | volume=5 | number=2 | pages=177&ndash;180 | date=Apr 1958 }}</ref><ref>{{cite journal | url=http://www.cse.chalmers.se/~coquand/AUTOMATA/rs.pdf | author=Dana Scott and Michael Rabin | title=Finite Automata and Their Decision Problems | journal=IBM Journal of Research and Development | volume=3 | number=2 | pages=114&ndash;125 | date=Apr 1959 }}</ref><ref>{{cite book | url=https://ieeexplore.ieee.org/abstract/document/5397288 | doi=10.1109/FOCS.1961.26 | author=C.C. Elgot and J.D. Rutledge | contribution=Operations on finite automata | editor=Robert S. Ledley | title=Proc. AIEE 2nd Ann. Symp. on Switching, Circuit Theory, and Logical Design (SWCT), Detroit | publisher= | series= | volume= | pages=129&ndash;132 | date=Oct 1961 }}</ref>
+Today it is named after the computer scientist [[Janusz Brzozowski (computer scientist)|Janusz Brzozowski]] who investigated their properties and gave an [[algorithm]] to compute the derivative of a generalized [[regular expression]].<ref>{{cite journal| author=Janusz A. Brzozowski| title=Derivatives of Regular Expressions| journal=J ACM| year=1964| volume=11| issue=4| pages=481–494| doi=10.1145/321239.321249}}</ref>
+
+==Definition==
+
+Even though originally studied for regular expressions, the definition applies to arbitrary formal languages.
+Given any [[formal language]] ''S'' over an alphabet ''Σ'' and any string ''u'' ∈ Σ<sup>*</sup>, the derivative of ''S'' with respect to ''u'' is defined as:<ref>{{cite journal| author=Janusz A. Brzozowski| title=Derivatives of Regular Expressions| journal=J ACM| year=1964| volume=11| issue=4| pages=481–494| doi=10.1145/321239.321249}}</ref>
+
+:''u''<sup>−1</sup>''S'' = { ''v'' ∈ Σ<sup>*</sup>: ''uv'' ∈ ''S'' }
+
+An equivalent way of stating this is, for all ''u'',''v'' ∈ Σ<sup>*</sup>:
+
+:''v'' ∈ ''u''<sup>−1</sup>''S'' [[iff]] ''uv'' ∈ ''S''
+
+which provides some intuition for the notation. 
+
+From the definition, for all ''u'',''v'',''w'' ∈ Σ<sup>*</sup>:
+
+:''v'' ∈ ''(uw)''<sup>−1</sup>''S'' iff ''uwv'' ∈ ''S'' iff ''wv'' ∈ ''u''<sup>−1</sup>''S'' iff ''v'' ∈ ''w''<sup>−1</sup>(''u''<sup>−1</sup>''S'')
+
+so ''(uw)''<sup>−1</sup>''S'' = ''w''<sup>−1</sup>(''u''<sup>−1</sup>''S'').
+
+The derivative with respect to an arbitrary string reduces to successive derivatives over the symbols of that string because, for ''a''∈ Σ, ''u''∈ Σ<sup>*</sup>:
+:{|
+|-
+| align=right | (''ua'')<sup>−1</sup>''S'' || = ''a''<sup>−1</sup>(''u''<sup>−1</sup>''S'') || &nbsp; &nbsp; &nbsp; 
+|-
+| align=right | ε<sup>−1</sup>''S'' || = ''S''
+|}
+
+A language ''L''⊆ Σ<sup>*</sup> is called ''nullable'' if it contains the empty string, that is, ''ε'' ∈ ''L''. Each language ''S'' is uniquely determined by nullability of its derivatives:
+
+:''w'' ∈ ''S''  iff  ''ε'' ∈  ''w''<sup>−1</sup>''S''
+
+A language can be viewed as a (potentially infinite) boolean-labelled [[tree (automata theory)|tree]] (see also [[tree (set theory)]] and [[infinite-tree automaton]]). Each possible string ''w'' ∈ Σ<sup>*</sup> denotes a position in the tree, with binary label ''true'' when ''w'' ∈ ''S'' and ''false'' when ''w'' ∉ ''S''.  In this interpretation, the derivative with respect to a symbol ''a'' corresponds to computing the subtree obtained by following the edge ''a''. Decomposing tree into the root and the subtrees ''a''<sup>−1</sup>''S'' corresponds to the following equality, which holds for every formal language ''S''⊆ Σ<sup>*</sup>:
+
+:''S'' = ({ε}∩''S'') ∪ ⋃<sub>''a''∈Σ</sub> ''a''(''a''<sup>−1</sup>''S'').
+
+==Derivatives of generalized regular expressions==
+
+When a language is given by a regular expression, the concept of derivatives leads to an algorithm for deciding whether a given word belongs to the regular expression.
+
+Given a finite [[alphabet]] ''A'' of symbols,<ref>Brzozowski (1964), p.481, required ''A'' to consist of the 2<sup>''n''</sup> combinations of ''n'' [[bit]]s, for some ''n''.</ref> a '''generalized regular expression''' denotes a possibly infinite set of finite-length strings of symbols from ''A''. It may be built of:
+* ∅ (denoting the empty set of strings),
+* ε (denoting the singleton set containing just the empty string),
+* a symbol ''a'' from ''A'' (denoting the singleton set containing the single-symbol string ''a''),
+* ''R''∨''S'' (where ''R'' and ''S'' are, in turn, generalized regular expressions; denoting their set's union),
+* ''R''∧''S'' (denoting the intersection of ''R'' 's and ''S'' 's set),
+* ¬''R'' (denoting the complement of ''R'' 's set with respect to the set of all strings of symbols from ''A''),
+* ''RS'' (denoting the set of all possible concatenations of strings from ''R'' 's and ''S'' 's set),
+* ''R''<sup>*</sup> (denoting the set of ''n''-fold repetitions of strings from ''R'' 's set, for any ''n''≥0, including the empty string).
+In an ordinary regular expression, neither ∧ nor ¬ is allowed.
+The string set denoted by a generalized regular expression ''R'' is called its '''language''', denoted as ''L''(''R'').
+
+===Computation===
+
+For any given generalized regular expression ''R'' and any string ''u'', the derivative ''u''<sup>−1</sup>''R'' is again a generalized regular expression.<ref>Brzozowski (1964), p.483, Theorem 4.1</ref>
+It may be computed recursively as follows.<ref>Brzozowski (1964), p.483, Theorem 3.2</ref>
+
+{|
+|-
+| align=right | (''ua'')<sup>−1</sup>''R'' || = ''a''<sup>−1</sup>(''u''<sup>−1</sup>''R'') || &nbsp; &nbsp; &nbsp; for a symbol ''a'' and a string ''u''
+|-
+| align=right | ε<sup>−1</sup>''R'' || = ''R''
+|}
+
+Using the previous two rules, the derivative with respect to an arbitrary string is explained by the derivative with respect to a single-symbol string ''a''.
+The latter can be computed as follows:<ref>Brzozowski (1964), p.483, Theorem 3.1</ref>
+
+{|
+|-
+| align=right | ''a''<sup>−1</sup>''a'' || = ε
+|-
+| align=right | ''a''<sup>−1</sup>''b'' || = ∅ || for each symbol ''b''≠''a''
+|-
+| align=right | ''a''<sup>−1</sup>ε || = ∅
+|-
+| align=right | ''a''<sup>−1</sup>∅ || = ∅
+|-
+| align=right | ''a''<sup>−1</sup>(''R''<sup>*</sup>) || = (''a''<sup>−1</sup>''R)R''<sup>*</sup> 
+|-
+| align=right | ''a''<sup>−1</sup>(''RS'') || = (''a''<sup>−1</sup>''R'')''S'' ∨ ν(''R'')''a''<sup>−1</sup>''S''
+|-
+| align=right | ''a''<sup>−1</sup>(''R''∧''S'') || = (''a''<sup>−1</sup>''R'') ∧ (''a''<sup>−1</sup>''S'')
+|-
+| align=right | ''a''<sup>−1</sup>(''R''∨''S'') || = (''a''<sup>−1</sup>''R'') ∨ (''a''<sup>−1</sup>''S'')
+|-
+| align=right | ''a''<sup>−1</sup>(¬''R'') || = ¬(''a''<sup>−1</sup>''R'')
+|}
+
+Here, ν(''R'') is an auxiliary function yielding a generalized regular expression that evaluates to the empty string ε if ''R'' 's language contains ε, and otherwise evaluates to ∅. This function can be computed by the following rules:<ref>Brzozowski (1964), p.482, Definition 3.2</ref>
+
+{|
+|-
+| align=right | ν(''a'') || = ∅ || for any symbol ''a''
+|-
+| align=right | ν(ε) || = ε
+|-
+| align=right | ν(∅) || = ∅
+|-
+| align=right | ν(''R''<sup>*</sup>) || = ε
+|-
+| align=right | ν(''RS'') || = ν(''R'') ∧ ν(''S'')
+|-
+| align=right | ν(''R'' ∧ ''S'') || = ν(''R'') ∧ ν(''S'')
+|-
+| align=right | ν(''R'' ∨ ''S'') || = ν(''R'') ∨ ν(''S'')
+|-
+| align=right | ν(¬''R'') || = ε || if ν(''R'') = ∅
+|-
+| align=right | ν(¬''R'') || = ∅ || if ν(''R'') = ε
+|}
+
+===Properties===
+
+A string ''u'' is a member of the string set denoted by a generalized regular expression ''R'' if and only if ε is a member of the string set denoted by the derivative ''u''<sup>−1</sup>''R''.<ref>Brzozowski (1964), p.483, Theorem 4.2</ref>
+
+Considering all the derivatives of a fixed generalized regular expression ''R'' results in only finitely many different languages. If their number is denoted by ''d''<sub>''R''</sub>, all these languages can be obtained as derivatives of ''R'' with respect to string of length below ''d''<sub>''R''</sub>.<ref>Brzozowski (1964), p.484, Theorem 4.3</ref> Furthermore, there is a complete deterministic finite automaton with ''d''<sub>''R''</sub> states which recognises the regular language given by ''R'', as laid out by the [[Myhill–Nerode theorem]].
+
+==Derivatives of context-free languages==
+
+Derivatives are also effectively computable for recursively defined equations with regular expression operators, which are equivalent to [[context-free grammar]]s. This insight was used to derive parsing algorithms for context-free languages.<ref>{{cite conference
+| author1=Matthew Might
+| author2=David Darais
+| author3=Daniel Spiewak
+| title=Parsing with derivatives: a functional pearl
+| conference=Proceeding of the 16th ACM SIGPLAN international conference on Functional Programming (ICFP)
+| year=2011
+| pages=189-195
+| doi=10.1145/2034773.2034801}}</ref>
+Implementation of such algorithms have shown to have cubic complexity,<ref>{{cite conference
+| author1=Michael D. Adams
+| author2=Celeste Hollenbeck
+| author3=Matthew Might
+| title=On the complexity and performance of parsing with derivatives
+| conference=Proceedings of the 37th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)
+| year=2016
+| pages=224-236
+| doi=10.1145/2908080.2908128| doi-access=free
+}}</ref>
+corresponding to the complexity of [[Earley parser]] on general context-free grammars.
+
+==See also==
+
+* [[Quotient of a formal language]]
+
+==References==
+{{reflist}}
+
+[[Category:Formal languages]]

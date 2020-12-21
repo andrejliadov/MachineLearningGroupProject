@@ -1,0 +1,29 @@
+{{Context|date=May 2011}}
+The '''Axilrod–Teller potential''' is a three-body [[potential]] that results from a third-order perturbation correction to the attractive [[van der Waals force|London dispersion interactions]] (instantaneous induced dipole-induced dipole)
+
+:<math>
+V_{ijk}= E_{0} \left[
+\frac{1 + 3 \cos\gamma_{i} \cos\gamma_{j} \cos\gamma_{k}}{\left( r_{ij} r_{jk} r_{ik} \right)^3}
+\right]
+</math>
+
+where <math>r_{ij}</math> is the distance between atoms <math>i</math> and <math>j</math>, and <math>\gamma_{i}</math> is the angle between the vectors
+<math>\mathbf{r}_{ij}</math> and <math>\mathbf{r}_{ik}</math>.  The coefficient <math>E_{0}</math>  is positive and of the order <math>V\alpha^{3}</math>, where <math>V</math> is the ionization energy and <math>\alpha</math> is the mean atomic polarizability; the exact value of <math>E_{0}</math> depends on the magnitudes of the dipole matrix elements and on the energies of the <math>p</math> orbitals.
+
+==References==
+*{{cite journal
+ |last1=Axilrod |first1=B. M.
+ |last2=Teller |first2=E.
+ |year=1943
+ |title=Interaction of the van der Waals Type Between Three Atoms
+ |journal=[[Journal of Chemical Physics]]
+ |volume=11 |issue=6 |pages=299
+ |doi=10.1063/1.1723844
+|bibcode = 1943JChPh..11..299A }}
+
+{{DEFAULTSORT:Axilrod-Teller potential}}
+[[Category:Chemical bonding]]
+[[Category:Potentials]]
+
+{{physics-stub}}
+{{chemistry-stub}}

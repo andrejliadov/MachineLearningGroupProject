@@ -1,0 +1,121 @@
+'''Fitch's paradox of knowability''' is one of the fundamental puzzles of [[epistemic logic]]. It provides a challenge to the ''knowability thesis'', which states that every truth is, in principle, knowable. The [[paradox]] is that this assumption implies the ''omniscience principle'', which asserts that every truth is known. Essentially, Fitch's paradox asserts that the existence of an unknown truth is unknowable. So if all truths were knowable, it would follow that all truths are in fact known.
+
+The paradox is of concern for [[verificationist]] or [[anti-realist]] accounts of truth, for which the ''knowability thesis'' is very plausible,<ref>{{Cite web|url=http://philpapers.org/rec/MLLETO|title=Epistemic theories of truth: The justifiability paradox investigated|date=1996|last=Müller|first=Vincent C. W|author2=Stein, Christian}}</ref> but the omniscience principle is very implausible.
+
+The paradox appeared as a minor [[theorem]] in a 1963 paper by [[Frederic Brenton Fitch|Frederic Fitch]], "A Logical Analysis of Some Value Concepts". Other than the knowability thesis, his proof makes only modest assumptions on the [[modal operator|modal]] nature of [[knowledge]] and of [[subjunctive possibility|possibility]]. He also generalised the proof to different modalities. It resurfaced in 1979 when [[W. D. Hart]] wrote that Fitch's proof was an "unjustly neglected logical gem".
+
+== Proof ==
+Suppose ''p'' is a sentence that is an ''unknown truth''; that is, the sentence ''p'' is true, but it is not ''known'' that ''p'' is true.  In such a case, the sentence "the sentence ''p'' is an unknown truth" is true; and, if all truths are knowable, it should be possible to know that "''p'' is an unknown truth". But this isn't possible, because as soon as we know "''p'' is an unknown truth", we know that ''p'' is true, rendering ''p'' no longer an ''unknown'' truth, so the statement "''p'' is an unknown truth" becomes a falsity.  Hence, the statement "''p'' is an unknown truth" cannot be both known and true at the same time.  Therefore, if all truths are knowable, the set of "all truths" must not include any of the form "''something'' is an unknown truth"; thus there must be no unknown truths, and thus all truths must be known.
+
+This can be formalised with [[modal logic]]. '''K''' and '''L''' will stand for ''known'' and ''possible'', respectively. Thus '''LK''' means ''possibly known'', in other words, ''knowable''. The modality rules used are:
+
+{|
+|- 
+|(A)
+| '''K'''''p'' → ''p'' || – knowledge [[material conditional|implies]] truth.
+|-
+|(B)|| '''K'''(''p'' & ''q'') → ('''K'''''p'' & '''K'''''q'') || – knowing a [[logical conjunction|conjunction]] implies knowing each conjunct.
+|-
+|(C)|| ''p'' → '''LK'''''p'' || – all truths are knowable.
+|-
+|(D)|| from ¬''p'', deduce ¬'''L'''''p'' || – if ''p'' can be proven false without assumptions, then ''p'' is impossible (which is similar to the [[rule of necessitation]]: if ''p'' can be proven true without assumptions, then ''p'' is [[logical truth|necessarily true]]).
+|}
+
+The proof proceeds:
+
+{|
+|- 
+|1. Suppose '''K'''(''p'' & ¬'''K'''''p'') 
+|- 
+|2. '''K'''''p'' & '''K'''¬'''K'''''p'' || from line 1 by rule (B)
+|-
+|3. '''K'''''p'' || from line 2 by [[conjunction elimination]]
+|-
+|4. '''K'''¬'''K'''''p'' || from line 2 by conjunction elimination
+|-
+|5. ¬'''K'''''p'' || from line 4 by rule (A)
+|- 
+|6. ¬'''K'''(''p'' & ¬'''K'''''p'') || from lines 3 and 5 by [[reductio ad absurdum]], discharging assumption 1
+|- 
+|7. ¬'''LK'''(''p'' & ¬'''K'''''p'') || from line 6 by rule (D)
+|- 
+|8. Suppose ''p'' & ¬'''K'''''p'' 
+|- 
+|9. '''LK'''(''p'' & ¬'''K'''''p'') || from line 8 by rule (C)
+|- 
+|10. ¬(''p'' & ¬'''K'''''p'') || from lines 7 and 9 by reductio ad absurdum, discharging assumption 8.
+|-
+|11. ''p'' → '''K'''''p'' || from line 10 by a classical [[tautology (logic)|tautology]]
+|}
+
+The last line states that if ''p'' is true then it is known. Since nothing else about ''p'' was assumed, it means that every truth is known.
+
+=== Generalisations ===
+The proof uses minimal assumptions about the nature of '''K''' and '''L''', so other modalities can be substituted for "known". Joe Salerno gives the example of "caused by God": rule (C) becomes that every true fact ''could have been'' caused by God, and the conclusion is that every true fact ''was'' caused by God. Rule (A) can also be weakened to include modalities that don't imply truth. For instance instead of "known" we could have the [[doxastic logic|doxastic]] modality "believed by a rational person" (represented by '''B'''). Rule (A) is replaced with:
+
+{|
+|- 
+|(E)
+| '''B'''''p'' → '''BB'''''p'' || – rational belief is transparent; if ''p'' is rationally believed, then it is rationally believed that ''p'' is rationally believed.
+|-
+|(F)|| ¬('''B'''''p'' & '''B'''¬''p'') || – rational beliefs are consistent
+|}
+
+This time the proof proceeds:
+
+{|
+|- 
+|1. Suppose '''B'''(''p'' & ¬'''B'''''p'') 
+|- 
+|2. '''B'''''p'' & '''B'''¬'''B'''''p'' || from line 1 by rule (B)
+|-
+|3. '''B'''''p'' || from line 2 by conjunction elimination
+|-
+|4. '''BB'''''p'' || from line 3 by rule (E)
+|-
+|5. '''B'''¬'''B'''''p'' || from line 2 by conjunction elimination
+|-
+|6. '''BB'''''p'' & '''B'''¬'''B'''''p'' || from lines 4 and 5 by [[conjunction introduction]]
+|-
+|7. ¬('''BB'''''p'' & '''B'''¬'''B'''''p'') || by rule (F)
+|-
+|8. ¬'''B'''(''p'' & ¬'''B'''''p'') || from lines 6 and 7 by [[reductio ad absurdum]], discharging assumption 1
+|}
+
+The last line matches line 6 in the previous proof, and the remainder goes as before. So if any true sentence could possibly be believed by a rational person, then that sentence is believed by one or more rational persons.
+
+Some anti-realists advocate the use of [[intuitionistic logic]]; however, except for the last line, which moves from ''there are no unknown truths'' to ''all truths are known'', the proof is, in fact, intuitionistically valid.
+
+== The knowability thesis ==
+Rule (C) is generally held to be at fault rather than any of the other logical principles employed. It may be contended that this rule does not faithfully translate the idea that all truths are knowable, and that rule (C) should not apply unrestrictedly. Kvanvig contends that this represents an illicit substitution into a modal context.
+
+[[Gödel's Theorem]] proves that in any recursively axiomatized system sufficient to derive mathematics (e.g. Peano Arithmetic), there are statements which are undecidable. In that context, it is difficult to state that "all truths are knowable" since some potential truths are uncertain.
+
+However, jettisoning the knowability thesis does not necessarily solve the paradox, since one can substitute a weaker version of the knowability thesis called (C').
+{|
+| (C')|| ∃''x''((''x'' & ¬'''K'''''x'') & '''LK'''''x'') & '''LK'''((''x'' & ¬'''K'''''x'') & '''LK'''''x'') || – There is an unknown, but knowable truth, and it is knowable that it is an unknown, but knowable truth.
+|}
+The same argument shows that (C') results in contradiction, indicating that any knowable truth is either known, or it unknowable that it is an unknown yet knowable truth; conversely, it states that if a truth is unknown, then it is unknowable, or it is unknowable that it is knowable yet unknown.
+
+== See also ==
+* [[Moore's paradox]]
+
+==Notes==
+{{Reflist}}
+
+== References ==
+* Frederick Fitch, "[https://www.jstor.org/pss/2271594 A Logical Analysis of Some Value Concepts]". [[Journal of Symbolic Logic]] Vol. 28, No. 2 (Jun., 1963), pp.&nbsp;135–142
+* W. D. Hart. "The Epistemology of Abstract Objects", Proceedings of the Aristotelian Society, suppl. vol. 53, 1979, pp.&nbsp;153–65.
+* Johnathan Kvanvig. [https://books.google.com/books?id=nhRZqgREEQMC The Knowability Paradox]. Oxford University Press, 2006.
+* Joe Salerno, ed. [http://knowability.googlepages.com/home New essays on the knowability paradox]. Oxford University Press, 2009.
+
+== External links ==
+*{{cite SEP |url-id=fitch-paradox |title=Fitch's Paradox of Knowability}}
+*{{PhilPapers|category|knowability|Knowability}}
+*{{InPho|idea|998}}
+
+{{Paradoxes}}
+
+{{DEFAULTSORT:Fitch's Paradox Of Knowability}}
+[[Category:Philosophical paradoxes]]
+[[Category:Epistemology]]

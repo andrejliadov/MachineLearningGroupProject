@@ -1,0 +1,91 @@
+{{Portal maintenance status|subpages=checked|date=June 2018}}<!--
+-->{{portal description}}
+__NOEDITSECTION__ __NOTOC__
+<!-- The following table style defines the portal colours and border elements, it is closed at the end of the page. If you change the colours here, please update the corresponding colours on the Tabs element and in the box-header. -->
+{| width="100%" cellpadding="5" cellspacing="5" style="background:#EEF7FF; border-style:solid; border-width:1px; border-color: #000;"
+| style="vertical-align:top;padding: 0; margin:0;" |
+<div style="float:right; width:100%">
+{{Box-header colour|<big>The Sports Portal</big>}}
+{{Transclude lead excerpt | {{PAGENAME}} | paragraphs=1-2 | files=1}}
+<div class="hlist noprint" style="text-align:center; margin-right:10px; margin-bottom:4px; font-weight:bold;">
+* [[Portal:Current events/Sports|Current sports events]]
+* [[Outline of sports|Outline]]
+* [[:Category:Indexes of sports topics|Indexes]]
+* [[Wikipedia:WikiProject Sports|WikiProject Sports]]
+</div>
+{{Sport
+|titlestyle=border:1px solid #BFA2A9;font-size:100%;background:#D88297;font-family:sans-serif;
+|belowstyle=border:1px solid #BFA2A9;font-size:100%;background:#D88297;font-family:sans-serif;
+}}{{Box-footer}}</div><!--
+
+This is the show new selections clickable link
+--><div style="text-align:center; margin:-7px; padding-bottom:12px;">{{Purge link portals}}</div><!--
+
+This is the left column. --><div class="portal-column-left"><!-- Switch to one column on narrow screens -->
+{{Box-header colour|Selected articles}}
+{{Transclude list item excerpts as random slideshow | paragraphs=1-2 | files=1 | limit=15 | more=
+| Portal:Sports/Recognized content
+}}
+{{Box-footer}}<!--
+
+-->{{Box-header colour|Selected pictures}}
+{{/Selected picture}}
+{{Box-footer}}<!--
+
+-->{{Box-header colour|Did you know...}}
+{{Transclude random subpage|max=23|subpage=Did you know|more=More trivia}}
+{{Box-footer}}
+</div><!-- The is the end of the left column
+
+
+This is the right column --><div class="portal-column-right">
+{{Box-header colour|Selected athlete}}
+{{Transclude random subpage|max=24|subpage=Selected biography}}
+{{Box-footer}}<!--
+
+-->{{Box-header colour|Selected team}}
+{{Transclude random subpage|max=20|subpage=Selected group}}
+{{Box-footer}}<!--
+
+-->{{Box-header colour|In this month}}
+{{/Selected anniversaries/{{CURRENTMONTHNAME}}}}	
+<div style="text-align:right;margin-right:10px;margin-bottom:4px;">'''[[Portal:Sports/Selected anniversaries|Archive]]'''</div>	
+{{Box-footer}}<!--
+
+-->{{Box-header colour|Selected quote}}
+{{Transclude random subpage|max=20|subpage=Selected quote}}
+{{Box-footer}}
+</div><!-- This is the end of the right column and
+
+the beginning of the bottom section
+
+-->{{Box-header colour|Related portals}}
+{{related portals2|Olympics|Games|American football|College football|Association football|Women's association football|Baseball|Chess|Climbing|Cricket|Ice hockey|Martial arts|Formula One|Sport of athletics|Tennis|Volleyball}}
+{{Box-footer}}<!--
+
+-->{{Box-header colour | Subcategories}}
+{{/Categories}}
+{{Box-footer}}<!--
+
+-->{{Box-header colour|Things you can do}}
+{{/To Do}}
+{{Box-footer}}<!--
+
+-->{{Box-header colour|Associated Wikimedia}}
+{{Wikimedia for portals | species=no | voy=no}}
+{{Box-footer}}<!--
+
+This is the end of the Portal content
+
+-->{{Center|
+{{Portal navbar no header2}}{{purge page}}
+{{featured portal|FPOCyear=2013}}
+}}<!--
+
+-->
+|}<!-- This is the end of the portal background box, it closes the style defined at the very beginning of the page --><noinclude>
+[[Category:Sports and games portals| ]]
+[[Category:Sports portal| ]]
+[[Category:Redirect targets of redirected portals with existing subpages]]
+[[Category:Sports|*]]
+</noinclude>

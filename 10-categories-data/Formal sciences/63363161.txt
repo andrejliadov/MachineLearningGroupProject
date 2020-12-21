@@ -1,0 +1,40 @@
+{{Orphan|date=March 2020}}
+
+The '''MgNet'''<ref name=":1">{{Cite journal|last=He|first=Juncai|last2=Xu|first2=Jinchao|date=July 2019|title=MgNet: A unified framework of multigrid and convolutional neural network|journal=Science China Mathematics|language=en|volume=62|issue=7|pages=1331–1354|doi=10.1007/s11425-019-9547-2|issn=1674-7283|arxiv=1901.10415|bibcode=2019arXiv190110415H}}</ref> is an abstract and unified mathematical framework which simultaneously recovers some [[residual neural network]] (ResNet)<ref name=":3">{{Cite journal|last=Sun|first=Jian|last2=Ren|first2=Shaoqing|last3=Zhang|first3=Xiangyu|last4=He|first4=Kaiming|date=2015-12-10|title=Deep Residual Learning for Image Recognition|url=https://archive.org/details/arxiv-1512.03385|arxiv=1512.03385v1|bibcode=2015arXiv151203385H|language=en}}</ref><ref name=":2">{{Cite journal|last=Sun|first=Jian|last2=Ren|first2=Shaoqing|last3=Zhang|first3=Xiangyu|last4=He|first4=Kaiming|date=2016-03-16|title=Identity Mappings in Deep Residual Networks|url=https://archive.org/details/arxiv-1603.05027|arxiv=1603.05027v3|language=en}}</ref> type [[convolutional neural network]]s (CNNs) and multigrid methods<ref name=":4">{{Cite journal|last=Xu|first=Jinchao.|date=1992-12-01|title=Iterative Methods by Space Decomposition and Subspace Correction|journal=SIAM Review|volume=34|issue=4|pages=581–613|doi=10.1137/1034116|issn=0036-1445}}</ref><ref name=":0">{{Cite journal|last=Zikatanov|first=Ludmil|last2=Xu|first2=Jinchao|date=May 2017|title=Algebraic multigrid methods *|url=https://www.cambridge.org/core/journals/acta-numerica/article/algebraic-multigrid-methods/8FFBCDA39DB9631667396C9CD1F223BF|journal=Acta Numerica|language=en|volume=26|pages=591–721|doi=10.1017/S0962492917000083|issn=0962-4929|arxiv=1611.01917}}</ref> for solving discretized [[partial differential equation]]s (PDEs). As a CNN model, MgNet can be obtained by making some very minor modifications of a classic geometric multigrid method. Actually, connections between ResNet and classical multigrid methods were acknowledged in the original paper of ResNet<ref name=":3" /> from the viewpoint how residuals are applied in both methods. MgNet<ref name=":1" /> makes such a connection more direct and clear, and it makes it possible to directly obtain a class of efficient CNN models by simply making some very minor modification of a typical multigrid cycle but keeping the identically same algorithm structure.
+
+== Main structure and connections with ResNet ==
+One core concept in MgNet, motivated by our research in algebraic multigrid methods,<ref name=":0" /> is the distinction between the so-called data and feature spaces (that are dual to each other). Based on this new concept, MgNet and a further research ({{cite arXiv|eprint=1911.10428v1|authors=Juncai He; Yuyan Chen; Jinchao Xu|title=Constrained Linear Data-feature Mapping for Image Classification|date=2019|class=eess.IV}}) proposes the constrained data-feature mapping model in every grid as
+
+<math>A \ast u=f,</math>
+
+where <math>f</math> belongs to the data space and <math>u</math> belongs to the feature space such that
+
+<math>u \ge 0</math>.
+
+The feature extraction process can then be obtained through an iterative procedure for solving the above system in each grids. For example, if the single step residual correction scheme is applied for the above system, it becomes
+
+<math>u^{i} = u^{i-1} + \sigma \circ B^{i} \ast \sigma(f^{} - A\ast u^{i-1}), \quad i = 1:\nu,</math>
+
+with <math>u \approx u^{\nu}</math>.
+
+If the residual of the above iterative <math>r^i = f - A\ast u^i</math>is further considered, it becomes
+
+<math>r^{i} = r^{i-1} - A\ast \sigma \circ B^i\ast\sigma(r^{i-1}), \quad i=1:\nu.</math>
+
+This is almost the exact basic block scheme in Pre-act ResNet,<ref name=":2" /> which has the form
+
+<math>r^{i} = r^{i-1} - A^i \ast \sigma \circ B^i\ast\sigma(r^{i-1}), \quad i=1:\nu.</math>
+
+The next figure shows the pseudocode of MgNet:
+[[File:MgNet_Framework.png|alt=|500x500px|center]]
+
+One thing important to note is that the special MgNet Algorithm 1 is identical to a multigrid cycle<ref name=":4" /><ref name=":0" /> if the boxed nonlinear operations are removed in the algorithm.
+
+== Summary ==
+By revealing such a direct connection between CNN and multigrid method, this opens up a new door to the design and study of deep learning models from a more mathematical viewpoint and in particular the rich mathematical techniques developed for multigrid method can be applied in the study of [[deep learning]].
+
+==References==
+{{Reflist}}
+
+[[Category:Mathematics]]
+[[Category:Neural networks]]

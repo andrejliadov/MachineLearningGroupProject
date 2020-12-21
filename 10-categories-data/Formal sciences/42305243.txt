@@ -1,0 +1,25 @@
+'''Age at Risk''' ('''[[AaR]]''') is a time-based [[risk measure]] designed to measure [[longevity risk]] in actuarial models.
+
+AaR represents certain [[quantile]] for a given probability distribution, so is similar to '''[[Value at Risk]]'''<ref>{{cite book|last=Jorion|first=Philippe|title=Value at risk : the new benchmark for managing financial risk|year=2007|publisher=McGraw-Hill|location=New York [u.a.]|isbn=978-0-07-146495-6|edition=3.}}</ref>  ('''[[Value at risk|VaR]]''').
+But, AaR measures risk amount as time (time until an adverse event) rather than value (loss amount).
+
+Age at Risk is a special case of '''[[Time at Risk]]''' ('''[[TaR]]'''). 
+When TaR is applied to a household's financial planning rather than corporate finance,
+TaR in this case is referred to as AaR.
+
+In fact, TaR is an expanded idea from AaR which is originated by [[actuary|actuaries]].
+In actuaries's view, [[loss model]] and [[survival model]] are identical, so they could naturally transform VaR into time-based measure.
+Survival model is actively used in life insurance modeling, but the application is not limited to this area. Anything that has lifespan can be a subject of survival model; for example, durability of products, default of bonds, bankruptcy of companies etc.
+AaR had been used in models that include a person's lifetime as a random variable, and it was naturally expanded to TaR as actuaries generalized subjects of models.
+
+== Definition ==
+Mathematical definition of AaR is same as [[Value at risk#Mathematical definition|that of VaR]].<ref>{{cite book|last=Embrechts|first=Alexander J. McNeil, Rüdiger Frey, Paul|title=Quantitative risk management : concepts, techniques and tools|year=2005|publisher=Princeton University Press|location=Princeton, N.J.|isbn=978-0-691-12255-7}}</ref>
+
+However, value-based random variable is replaced with time-based one (age), and given time-horizon is replaced with given finance structure of a household.
+
+== References ==
+{{Reflist}}
+
+[[Category:Actuarial science]]
+
+{{economics-stub}}

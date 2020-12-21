@@ -1,0 +1,303 @@
+[[Image:Antimatroid.svg|thumb|360px|Three views of an antimatroid: an inclusion ordering on its family of feasible sets, a formal language, and the corresponding path poset.]]
+In [[mathematics]], an '''antimatroid''' is a [[formal system]] that describes processes in which a [[set (mathematics)|set]] is built up by including elements one at a time, and in which an element, once available for inclusion, remains available until it is included. Antimatroids are commonly [[Cryptomorphism|axiomatized in two equivalent ways]], either as a [[set system]] modeling the possible states of such a process, or as a [[formal language]] modeling the different sequences in which elements may be included.
+[[Robert P. Dilworth|Dilworth]] (1940) was the first to study antimatroids, using yet another axiomatization based on [[lattice (order)|lattice theory]], and they have been frequently rediscovered in other contexts;<ref>Two early references are {{harvtxt|Edelman|1980}} and {{harvtxt|Jamison|1980}}; Jamison was the first to use the term "antimatroid". {{harvtxt|Monjardet|1985}} surveys the history of rediscovery of antimatroids.</ref> see Korte et al. (1991) for a comprehensive survey of antimatroid theory with many additional references.
+
+The axioms defining antimatroids as set systems are very similar to those of [[matroid]]s, but whereas matroids are defined by an ''[[Matroid#Independent sets, bases, and circuits|exchange axiom]]'' (e.g., the ''basis exchange'', or ''independent set exchange'' axioms), antimatroids are defined instead by an ''[[#Convex geometries|anti-exchange axiom]]'', from which their name derives.
+Antimatroids can be viewed as a special case of [[greedoid]]s and of [[semimodular lattice]]s, and as a generalization of [[partial order]]s and of [[distributive lattice]]s. 
+Antimatroids are equivalent, by [[complement (set theory)|complementation]], to '''[[#Convex geometries|convex geometries]]''', a combinatorial abstraction of [[convex set]]s in [[geometry]].
+
+Antimatroids have been applied to model precedence constraints in [[Job shop scheduling|scheduling problems]], potential event sequences in simulations, task planning in [[artificial intelligence]], and the states of knowledge of human learners.
+
+== Definitions ==
+An antimatroid can be defined as a finite family ''F'' of sets, called ''feasible sets'', with the following two properties:
+* The [[Union (set theory)|union]] of any two feasible sets is also feasible. That is, ''F'' is [[Closure (mathematics)|closed]] under unions.
+* If ''S'' is a nonempty feasible set, then there exists some ''x'' in ''S'' such that ''S'' \ {''x''} (the set formed by removing ''x'' from ''S'') is also feasible. That is, ''F'' is an [[accessible set system]].
+
+Antimatroids also have an equivalent definition as a [[formal language]], that is, as a set of [[String (computer science)|strings]] defined from a finite alphabet of [[symbol]]s. A language ''L'' defining an antimatroid must satisfy the following properties:
+* Every symbol of the alphabet occurs in at least one word of ''L''.
+* Each word of ''L'' contains at most one copy of any symbol.
+* Every [[Prefix (computer science)|prefix]] of a string in ''L'' is also in ''L''.
+* If ''s'' and ''t'' are strings in ''L'', and ''s'' contains at least one symbol that is not in ''t'', then there is a symbol ''x'' in ''s'' such that ''tx'' is another string in ''L''.
+
+If ''L'' is an antimatroid defined as a formal language, then the sets of symbols in strings of ''L'' form an accessible union-closed set system. In the other direction, if ''F'' is an accessible union-closed set system, and ''L'' is the language of strings ''s'' with the property that the set of symbols in each prefix of ''s'' is feasible, then ''L'' defines an antimatroid. Thus, these two definitions lead to mathematically equivalent classes of objects.<ref>Korte et al., Theorem 1.4.</ref>
+
+==Examples==
+[[Image:Convex shelling.svg|thumb|300px|A shelling sequence of a planar point set. The line segments show edges of the [[convex hull]]s after some of the points have been removed.]]
+
+*A ''chain antimatroid'' has as its formal language the prefixes of a single word, and as its feasible sets the sets of symbols in these prefixes. For instance the chain antimatroid defined by the word "abcd" has as its formal language the strings {ε, "a", "ab", "abc", "abcd"} and as its feasible sets the sets Ø, {a}, {a,b}, {a,b,c}, and {a,b,c,d}.<ref name="Gordon (1997)"/>
+*A ''poset antimatroid'' has as its feasible sets the [[lower set]]s of a finite [[partially ordered set]]. By [[Birkhoff's representation theorem]] for distributive lattices, the feasible sets in a poset antimatroid (ordered by set inclusion) form a distributive lattice, and any distributive lattice can be formed in this way. Thus, antimatroids can be seen as generalizations of distributive lattices. A chain antimatroid is the special case of a poset antimatroid for a [[total order]].<ref name="Gordon (1997)"/>
+*A ''shelling sequence'' of a finite set ''U'' of points in the [[Euclidean plane]] or a higher-dimensional [[Euclidean space]] is an ordering on the points such that, for each point ''p'', there is a [[Line (geometry)|line]] (in the Euclidean plane, or a [[hyperplane]] in a Euclidean space) that separates ''p'' from all later points in the sequence. Equivalently, ''p'' must be a vertex of the [[convex hull]] of it and all later points. The partial shelling sequences of a point set form an antimatroid, called a ''shelling antimatroid''. The feasible sets of the shelling antimatroid are the [[Intersection (set theory)|intersection]]s of ''U'' with the [[complement (set theory)|complement]] of a convex set.<ref name="Gordon (1997)"/> Every antimatroid is isomorphic to a shelling antimatroid of points in a sufficiently high-dimensional space.{{sfnp|Kashiwabara|Nakamura|Okamoto|2005}}
+*A ''[[perfect elimination ordering]]'' of a [[chordal graph]] is an ordering of its vertices such that, for each vertex ''v'', the neighbors of ''v'' that occur later than ''v'' in the ordering form a [[clique (graph theory)|clique]]. The prefixes of perfect elimination orderings of a chordal graph form an antimatroid.<ref name="Gordon (1997)">Gordon (1997) describes several results related to antimatroids of this type, but these antimatroids were mentioned earlier e.g. by Korte et al. Chandran et al. (2003) use the connection to antimatroids as part of an algorithm for efficiently listing all perfect elimination orderings of a given chordal graph.</ref> Antimatroids also describe some other kinds of vertex removal orderings in graphs, such as the dismantling orders of [[cop-win graph]]s.
+
+==Paths and basic words==
+In the set theoretic axiomatization of an antimatroid there are certain special sets called ''paths'' that determine the whole antimatroid, in the sense that the sets of the antimatroid are exactly the unions of paths. If ''S'' is any feasible set of the antimatroid, an element ''x'' that can be removed from ''S'' to form another feasible set is called an ''endpoint'' of ''S'', and a feasible set that has only one endpoint is called a ''path'' of the antimatroid. The family of paths can be partially ordered by set inclusion, forming the ''path poset'' of the antimatroid.
+
+For every feasible set ''S'' in the antimatroid, and every element ''x'' of ''S'', one may find a path subset of ''S'' for which ''x'' is an endpoint: to do so, remove one at a time elements other than ''x'' until no such removal leaves a feasible subset. Therefore, each feasible set in an antimatroid is the union of its path subsets. If ''S'' is not a path, each subset in this union is a [[proper subset]] of ''S''. But, if ''S'' is itself a path with endpoint ''x'', each proper subset of ''S'' that belongs to the antimatroid excludes ''x''. Therefore, the paths of an antimatroid are exactly the sets that do not equal the unions of their proper subsets in the antimatroid. Equivalently, a given family of sets ''P'' forms the set of paths of an antimatroid if and only if, for each ''S'' in ''P'', the union of subsets of ''S'' in ''P'' has one fewer element than ''S'' itself. If so, ''F'' itself is the family of unions of subsets of ''P''.
+
+In the formal language formalization of an antimatroid we may also identify a subset of words that determine the whole language, the ''basic words''.
+The longest strings in ''L'' are called ''basic words''; each basic word forms a permutation of the whole alphabet. For instance, the basic words of a poset antimatroid are the [[linear extension]]s of the given partial order. If ''B'' is the set of basic words, ''L'' can be defined from ''B'' as the set of prefixes of words in ''B''. It is often convenient to define antimatroids from basic words in this way, but it is not straightforward to write an axiomatic definition of antimatroids in terms of their basic words.
+
+==Convex geometries==
+{{See also|Convex set|Convex geometry|Closure operator}}
+If ''F'' is the set system defining an antimatroid, with ''U'' equal to the union of the sets in ''F'', then the family of sets
+:<math>G = \{U\setminus S\mid S\in F\}</math>
+[[Complement (set theory)|complementary]] to the sets in ''F'' is sometimes called a '''convex geometry''' and the sets in ''G'' are called '''convex sets'''. For instance, in a shelling antimatroid, the convex sets are intersections of ''U'' with convex subsets of the Euclidean space into which ''U'' is embedded.
+
+Complementarily to the properties of set systems that define antimatroids, the set system defining a convex geometry should be closed under intersections, and for any set ''S'' in ''G'' that is not equal to ''U'' there must be an element ''x'' not in ''S'' that can be added to ''S'' to form another set in ''G''.
+
+A convex geometry can also be defined in terms of a [[closure operator]] τ that maps any subset of ''U'' to its minimal closed superset. To be a closure operator, τ should have the following properties:
+* τ(∅) = ∅: the closure of the [[empty set]] is empty.
+* Any set ''S'' is a subset of τ(''S'').
+* If ''S'' is a subset of ''T'', then τ(''S'') must be a subset of τ(''T'').
+* For any set ''S'', τ(''S'') = τ(τ(''S'')).
+The family of closed sets resulting from a closure operation of this type is necessarily closed under intersections. The closure operators that define convex geometries also satisfy an additional '''anti-exchange axiom''':
+*If ''y'' ≠ ''z'', and neither one belongs to τ(''S''), but ''z'' belongs to τ(''S'' ∪ {''y''}), then ''y'' does not belong to τ(''S'' ∪ {''z''}).
+A closure operation satisfying this axiom is called an '''anti-exchange closure'''. If ''S'' is a closed set in an anti-exchange closure, then the anti-exchange axiom determines a partial order on the elements not belonging to ''S'', where ''x'' ≤ ''y'' in the partial order when ''x'' belongs to τ(''S'' ∪ {''y''}). If ''x'' is a minimal element of this partial order, then ''S'' ∪ {''x''} is closed. That is, the family of closed sets of an anti-exchange closure has the property that for any set other than the universal set there is an element ''x'' that can be added to it to produce another closed set. This property is complementary to the accessibility property of antimatroids, and the fact that intersections of closed sets are closed is complementary to the property that unions of feasible sets in an antimatroid are feasible. Therefore, the complements of the closed sets of any anti-exchange closure form an antimatroid.<ref>Korte et al., Theorem 1.1.</ref>
+
+The [[undirected graph]]s in which the convex sets (subsets of vertices that contain all [[shortest path]]s between vertices in the subset) form a convex geometry are exactly the [[Ptolemaic graph]]s.{{sfnp|Farber|Jamison|1986}}
+
+==Join-distributive lattices==
+Any two sets in an antimatroid have a unique [[least upper bound]] (their union) and a unique [[greatest lower bound]] (the union of the sets in the antimatroid that are contained in both of them). Therefore, the sets of an antimatroid, [[partial order|partially ordered]] by set inclusion, form a [[Lattice (order)|lattice]]. Various important features of an antimatroid can be interpreted in lattice-theoretic terms; for instance the paths of an antimatroid are the [[Lattice (order)#Important lattice-theoretic notions|join-irreducible]] elements of the corresponding lattice, and the basic words of the antimatroid correspond to [[maximal chain]]s in the lattice. The lattices that arise from antimatroids in this way generalize the finite [[distributive lattice]]s, and can be characterized in several different ways.
+
+*The description originally considered by {{harvtxt|Dilworth|1940}} concerns [[Lattice (order)#Important lattice-theoretic notions|meet-irreducible]] elements of the lattice. For each element ''x'' of an antimatroid, there exists a unique maximal feasible set ''S<sub>x</sub>'' that does not contain ''x'' (''S<sub>x</sub>'' is the union of all feasible sets not containing ''x''). ''S<sub>x</sub>'' is meet-irreducible, meaning that it is not the meet of any two larger lattice elements: any larger feasible set, and any intersection of larger feasible sets, contains ''x'' and so does not equal ''S<sub>x</sub>''. Any element of any lattice can be decomposed as a meet of meet-irreducible sets, often in multiple ways, but in the lattice corresponding to an antimatroid each element ''T'' has a unique minimal family of meet-irreducible sets ''S<sub>x</sub>'' whose meet is ''T''; this family consists of the sets ''S<sub>x</sub>'' such that ''T''&nbsp;∪&nbsp;{''x''} belongs to the antimatroid. That is, the lattice has ''unique meet-irreducible decompositions''.
+*A second characterization concerns the ''intervals'' in the lattice, the sublattices defined by a pair of lattice elements ''x''&nbsp;≤&nbsp;''y'' and consisting of all lattice elements ''z'' with ''x''&nbsp;≤&nbsp;''z''&nbsp;≤&nbsp;''y''. An interval is [[Atom (order theory)|atomistic]] if every element in it is the join of atoms (the minimal elements above the bottom element ''x''), and it is [[Boolean algebra (structure)|Boolean]] if it is isomorphic to the lattice of [[power set|all subsets]] of a finite set. For an antimatroid, every interval that is atomistic is also boolean.
+*Thirdly, the lattices arising from antimatroids are [[semimodular lattice]]s, lattices that satisfy the [[Semimodular lattice|''upper semimodular law'']] that for any two elements ''x'' and ''y'', if ''y'' covers ''x''&nbsp;∧&nbsp;''y'' then ''x''&nbsp;∨&nbsp;''y'' covers ''x''. Translating this condition into the sets of an antimatroid, if a set ''Y'' has only one element not belonging to ''X'' then that one element may be added to ''X'' to form another set in the antimatroid. Additionally, the lattice of an antimatroid has the ''meet-semidistributive property'': for all lattice elements ''x'', ''y'', and ''z'', if ''x''&nbsp;∧&nbsp;''y'' and ''x''&nbsp;∧&nbsp;''z'' are both equal then they also equal ''x''&nbsp;∧&nbsp;(''y''&nbsp;∨&nbsp;''z''). A semimodular and meet-semidistributive lattice is called a ''join-distributive lattice''.
+
+These three characterizations are equivalent: any lattice with unique meet-irreducible decompositions has boolean atomistic intervals and is join-distributive, any lattice with boolean atomistic intervals has unique meet-irreducible decompositions and is join-distributive, and any join-distributive lattice has unique meet-irreducible decompositions and boolean atomistic intervals.<ref>{{harvtxt|Adaricheva|Gorbunov|Tumanov|2003}}, Theorems 1.7 and 1.9; {{harvtxt|Armstrong|2007}}, Theorem 2.7.</ref> Thus, we may refer to a lattice with any of these three properties as join-distributive. Any antimatroid gives rise to a finite join-distributive lattice, and any finite join-distributive lattice comes from an antimatroid in this way.<ref>{{harvtxt|Edelman|1980}}, Theorem 3.3; {{harvtxt|Armstrong|2007}}, Theorem 2.8.</ref> Another equivalent characterization of finite join-distributive lattices is that they are [[graded poset|graded]] (any two maximal chains have the same length), and the length of a maximal chain equals the number of meet-irreducible elements of the lattice.<ref>{{harvtxt|Monjardet|1985}} credits a dual form of this characterization to several papers from the 1960s by S. P. Avann.</ref> The antimatroid representing a finite join-distributive lattice can be recovered from the lattice: the elements of the antimatroid can be taken to be the meet-irreducible elements of the lattice, and the feasible set corresponding to any element ''x'' of the lattice consists of the set of meet-irreducible elements ''y'' such that ''y'' is not greater than or equal to ''x'' in the lattice.
+
+This representation of any finite join-distributive lattice as an accessible family of sets closed under unions (that is, as an antimatroid) may be viewed as an analogue of [[Birkhoff's representation theorem]] under which any finite distributive lattice has a representation as a family of sets closed under unions and intersections.
+
+==Supersolvable antimatroids==
+Motivated by a problem of defining partial orders on the elements of a [[Coxeter group]], {{harvtxt|Armstrong|2007}} studied antimatroids which are also supersolvable lattices. A supersolvable antimatroid is defined by a [[Total order|totally ordered]] collection of elements, and a [[family of sets]] of these elements. The family must include the empty set. Additionally, it must have the property that if two sets ''A'' and ''B'' belong to the family, the [[set-theoretic difference]] ''B''&nbsp;\&nbsp;''A'' is nonempty, and ''x'' is the smallest element of ''B''&nbsp;\&nbsp;''A'', then ''A''&nbsp;∪&nbsp;{''x''} also belongs to the family. As Armstrong observes, any family of sets of this type forms an antimatroid. Armstrong also provides a lattice-theoretic characterization of the antimatroids that this construction can form.
+
+==Join operation and convex dimension==
+If ''A'' and ''B'' are two antimatroids, both described as a family of sets, and if the maximal sets in ''A'' and ''B'' are equal, we can form another antimatroid, the ''join'' of ''A'' and ''B'', as follows:
+
+:<math>A\vee B = \{ S\cup T \mid S\in A \wedge T\in B \}.</math>
+
+This is a different operation than the join considered in the lattice-theoretic characterizations of antimatroids: it combines two antimatroids to form another antimatroid, rather than combining two sets in an antimatroid to form another set.
+The family of all antimatroids that have a given maximal set forms a [[semilattice]] with this join operation.
+
+Joins are closely related to a closure operation that maps formal languages to antimatroids, where the closure of a language ''L'' is the intersection of all antimatroids containing ''L'' as a sublanguage. This closure has as its feasible sets the unions of prefixes of strings in ''L''. In terms of this closure operation, the join is the closure of the union of the languages of ''A'' and ''B''.
+
+Every antimatroid can be represented as a join of a family of chain antimatroids, or equivalently as the closure of a set of basic words; the ''convex dimension'' of an antimatroid ''A'' is the minimum number of chain antimatroids (or equivalently the minimum number of basic words) in such a representation. If ''F'' is a family of chain antimatroids whose basic words all belong to ''A'', then ''F'' generates ''A'' if and only if the feasible sets of ''F'' include all paths of ''A''. The paths of ''A'' belonging to a single chain antimatroid must form a [[chain (order theory)|chain]] in the path poset of ''A'', so the convex dimension of an antimatroid equals the minimum number of chains needed to cover the path poset, which by [[Dilworth's theorem]] equals the width of the path poset.<ref>{{harvtxt|Edelman|Saks|1988}}; Korte et al., Theorem 6.9.</ref>
+
+If one has a representation of an antimatroid as the closure of a set of ''d'' basic words, then this representation can be used to map the feasible sets of the antimatroid into ''d''-dimensional Euclidean space: assign one coordinate per basic word ''w'', and make the coordinate value of a feasible set ''S'' be the length of the longest prefix of ''w'' that is a subset of ''S''. With this embedding, ''S'' is a subset of ''T'' if and only if the coordinates for ''S'' are all less than or equal to the corresponding coordinates of ''T''. Therefore, the [[order dimension]] of the inclusion ordering of the feasible sets is at most equal to the convex dimension of the antimatroid.<ref>Korte et al., Corollary 6.10.</ref> However, in general these two dimensions may be very different: there exist antimatroids with order dimension three but with arbitrarily large convex dimension.
+
+==Enumeration==
+The number of possible antimatroids on a set of elements grows rapidly with the number of elements in the set. For sets of one, two, three, etc. elements, the number of distinct antimatroids is
+:1, 3, 22, 485, 59386, 133059751, ... {{OEIS|id=A119770}}.
+
+==Applications==
+Both the precedence and release time constraints in the standard [[notation for theoretic scheduling problems]] may be modeled by antimatroids. {{harvtxt|Boyd|Faigle|1990}} use antimatroids to generalize a [[greedy algorithm]] of [[Eugene Lawler]] for optimally solving single-processor scheduling problems with precedence constraints in which the goal is to minimize the maximum penalty incurred by the late scheduling of a task.
+
+{{harvtxt|Glasserman|Yao|1994}} use antimatroids to model the ordering of events in [[discrete event simulation]] systems.
+
+{{harvtxt|Parmar|2003}} uses antimatroids to model progress towards a goal in [[artificial intelligence]] [[Automated planning and scheduling|planning]] problems.
+
+In [[Optimality Theory]], grammars are logically equivalent to antimatroids ({{harvtxt|Merchant|Riggle|2016}}).
+
+In [[mathematical psychology]], antimatroids have been used to describe [[knowledge space|feasible states of knowledge]] of a human learner. Each element of the antimatroid represents a concept that is to be understood by the learner, or a class of problems that he or she might be able to solve correctly, and the sets of elements that form the antimatroid represent possible sets of concepts that could be understood by a single person. The axioms defining an antimatroid may be phrased informally as stating that learning one concept can never prevent the learner from learning another concept, and that any feasible state of knowledge can be reached by learning a single concept at a time. The task of a knowledge assessment system is to infer the set of concepts known by a given learner by analyzing his or her responses to a small and well-chosen set of problems. In this context antimatroids have also been called "learning spaces" and "well-graded knowledge spaces".<ref>{{harvtxt|Doignon|Falmagne|1999}}.</ref>
+
+==Notes==
+{{reflist|2}}
+
+==References==
+{{refbegin|2}}
+*{{citation
+ | last1 = Adaricheva | first1 = K. V.
+ | last2 = Gorbunov | first2 = V. A.
+ | last3 = Tumanov | first3 = V. I.
+ | doi = 10.1016/S0001-8708(02)00011-7
+ | issue = 1
+ | journal = Advances in Mathematics
+ | pages = 1–49
+ | title = Join-semidistributive lattices and convex geometries
+ | volume = 173
+ | year = 2003}}.
+*{{citation
+ | last = Armstrong | first = Drew
+ | title = The sorting order on a Coxeter group
+ | year = 2007
+ | arxiv = 0712.1047| bibcode = 2007arXiv0712.1047A}}.
+*{{citation
+ | last1 = Birkhoff | first1 = Garrett | author1-link = Garrett Birkhoff
+ | last2 = Bennett | first2 = M. K.
+ | doi = 10.1007/BF00333128
+ | issue = 3
+ | journal = [[Order (journal)|Order]]
+ | pages = 223–242
+ | title = The convexity lattice of a poset
+ | volume = 2
+ | year = 1985| doi-broken-date = 2020-11-11
+ | url = https://link.springer.com/article/10.1007/BF00333128 }}.
+* {{Citation|last1=Björner|first1=Anders|last2=Ziegler|first2=Günter M.|authorlink2=Günter M. Ziegler|authorlink1=Anders Björner|chapter=Introduction to greedoids|series=Encyclopedia of Mathematics and its Applications|volume=40|editor-last=White|editor-first=Neil|publisher=Cambridge University Press|location=Cambridge|year=1992|isbn=0-521-38165-7|pages=[https://archive.org/details/matroidapplicati0000unse/page/284 284–357]|doi=10.1017/CBO9780511662041.009|ref=harv|mr=1165537|title=Matroid Applications|chapter-url=https://archive.org/details/matroidapplicati0000unse/page/284}}
+*{{citation
+ | last1 = Boyd | first1 = E. Andrew
+ | last2 = Faigle | first2 = Ulrich
+ | doi = 10.1016/0166-218X(90)90002-T
+ | issue = 3
+ | journal = Discrete Applied Mathematics
+ | pages = 197–205
+ | title = An algorithmic characterization of antimatroids
+ | volume = 28
+ | year = 1990| hdl = 1911/101636
+ }}.
+*{{citation
+ |last1=Chandran 
+ |first1=L. S. 
+ |last2=Ibarra 
+ |first2=L. 
+ |last3=Ruskey 
+ |first3=F. |author3-link= Frank Ruskey
+ |last4=Sawada 
+ |first4=J. 
+ |doi=10.1016/S0304-3975(03)00221-4 
+ |journal=Theoretical Computer Science 
+ |pages=303–317 
+ |title=Generating and characterizing the perfect elimination orderings of a chordal graph 
+ |url=http://skeeter.socs.uoguelph.ca/~sawada/papers/chordal.pdf
+ |volume=307 
+ |year=2003 
+ |issue=2 
+}}
+*{{citation
+ | last = Dilworth | first = Robert P. | author-link = Robert P. Dilworth
+ | doi = 10.2307/1968857
+ | journal = [[Annals of Mathematics]]
+ | pages = 771–777
+ | issue = 4
+ | title = Lattices with unique irreducible decompositions
+ | volume = 41
+ | year = 1940
+ | jstor = 1968857}}.
+*{{citation
+ | last1 = Doignon
+ | first1 = Jean-Paul
+ | last2 = Falmagne
+ | first2 = Jean-Claude
+ | authorlink2 = Jean-Claude Falmagne
+ | title = Knowledge Spaces
+ | year = 1999
+ | publisher = Springer-Verlag
+ | isbn = 3-540-64501-2}}.
+*{{citation
+ | last = Edelman | first = Paul H.
+ | doi = 10.1007/BF02482912
+ | issue = 1
+ | journal = Algebra Universalis
+ | pages = 290–299
+ | title = Meet-distributive lattices and the anti-exchange closure
+ | volume = 10
+ | year = 1980| s2cid = 120403229
+ }}.
+*{{citation
+ | last1 = Edelman | first1 = Paul H.
+ | last2 = Saks | first2 = Michael E. | author2-link = Michael Saks (mathematician)
+ | doi = 10.1007/BF00143895
+ | issue = 1
+ | journal = [[Order (journal)|Order]]
+ | pages = 23–32
+ | title = Combinatorial representation and convex dimension of convex geometries
+ | volume = 5
+ | year = 1988| s2cid = 119826035
+ }}.
+*{{citation
+ | last1 = Farber | first1 = Martin
+ | last2 = Jamison | first2 = Robert E.
+ | doi = 10.1137/0607049
+ | issue = 3
+ | journal =  SIAM Journal on Algebraic and Discrete Methods
+ | mr = 844046
+ | pages = 433–444
+ | title = Convexity in graphs and hypergraphs
+ | volume = 7
+ | year = 1986| hdl = 10338.dmlcz/127659
+ }}.
+*{{citation
+ | last1 = Glasserman | first1 = Paul
+ | last2 = Yao | first2 = David D.
+ | isbn = 978-0-471-58041-6
+ | publisher = Wiley Interscience
+ | series = Wiley Series in Probability and Statistics
+ | title = Monotone Structure in Discrete Event Systems
+ | year = 1994}}.
+*{{citation
+ | last = Gordon | first = Gary
+ | issue = 1
+ | journal = [[Electronic Journal of Combinatorics]]
+ | page = Research Paper 13
+ | title = A β invariant for greedoids and antimatroids
+ | volume = 4
+ | year = 1997
+ | mr = 1445628| doi = 10.37236/1298
+ }}.
+*{{citation
+ | last = Jamison | first = Robert
+ | contribution = Copoints in antimatroids
+ | series = Congressus Numerantium
+ | pages = 535–544
+ | title = Proceedings of the Eleventh Southeastern Conference on Combinatorics, Graph Theory and Computing (Florida Atlantic Univ., Boca Raton, Fla., 1980), Vol. II
+ | volume = 29
+ | year = 1980
+ | mr = 608454}}.
+*{{citation
+ | last1 = Kashiwabara | first1 = Kenji
+ | last2 = Nakamura | first2 = Masataka
+ | last3 = Okamoto | first3 = Yoshio
+ | doi = 10.1016/j.comgeo.2004.05.001
+ | issue = 2
+ | journal = Computational Geometry
+ | mr = 2107032
+ | pages = 129–144
+ | title = The affine representation theorem for abstract convex geometries
+ | volume = 30
+ | year = 2005| citeseerx = 10.1.1.14.4965
+ }}.
+*{{citation
+ | last1 = Korte | first1 = Bernhard| author1-link = Bernhard Korte
+ | last2 = Lovász | first2 = László | author2-link = László Lovász
+ | last3 = Schrader | first3 = Rainer
+ | isbn = 3-540-18190-3
+ | pages = 19–43
+ | publisher = Springer-Verlag
+ | title = Greedoids
+ | year = 1991}}.
+
+*{{citation
+ | last1 = Merchant | first1 = Nazarre
+ | last2 = Riggle | first2 = Jason
+ | pages = 241–269
+ | volume = 34
+ | title = OT grammars, beyond partial orders: ERC sets and antimatroids
+ | url = http://roa.rutgers.edu/article/view/1226
+ | doi = 10.1007/s11049-015-9297-5
+ | journal = Nat Lang Linguist Theory
+ | year = 2016| s2cid = 170567540
+ }}.
+
+*{{citation
+ | last = Monjardet | first = Bernard
+ | doi = 10.1007/BF00582748
+ | issue = 4
+ | journal = [[Order (journal)|Order]]
+ | pages = 415–417
+ | title = A use for frequently rediscovering a concept
+ | volume = 1
+ | year = 1985| s2cid = 119378521
+ }}.
+*{{citation
+ | last = Parmar | first = Aarati
+ | contribution = Some Mathematical Structures Underlying Efficient Planning
+ | title = AAAI Spring Symposium on Logical Formalization of Commonsense Reasoning
+ | url = http://www-formal.stanford.edu/aarati/papers/SS603AParmar.pdf
+ | year = 2003}}.
+{{refend}}
+
+[[Category:Algebraic combinatorics]]
+[[Category:Lattice theory]]
+[[Category:Convex geometry]]
+[[Category:Formal languages]]
+[[Category:Set families]]
+[[Category:Matroid theory]]
+[[Category:Discrete mathematics]]

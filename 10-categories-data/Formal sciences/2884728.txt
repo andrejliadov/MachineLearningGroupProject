@@ -1,0 +1,115 @@
+'''Automated reasoning''' is an area of [[computer science]] (involves [[knowledge representation and reasoning]]) and [[metalogic]] dedicated to understanding different aspects of [[reasoning]]. The study of automated reasoning helps produce [[computer programs]] that allow computers to reason completely, or nearly completely, automatically. Although automated reasoning is considered a sub-field of [[artificial intelligence]], it also has connections with [[theoretical computer science]] and [[philosophy]].
+
+The most developed subareas of automated reasoning are [[automated theorem proving]] (and the less automated but more pragmatic subfield of [[interactive theorem proving]]) and [[automated proof checking]] (viewed as guaranteed correct reasoning under fixed assumptions).{{citation needed|date=October 2019}} Extensive work has also been done in reasoning by [[analogy]] using [[Inductive reasoning|induction]] and [[Abductive reasoning|abduction]].<ref>Defourneaux, Gilles, and Nicolas Peltier. "[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.81.501&rep=rep1&type=pdf Analogy and abduction in automated deduction]." IJCAI (1). 1997.</ref>
+
+Other important topics include reasoning under [[uncertainty]] and [[Non-monotonic logic|non-monotonic]] reasoning. An important part of the uncertainty field is that of argumentation, where further constraints of minimality and consistency are applied on top of the more standard automated deduction. John Pollock's OSCAR system<ref>[[John L. Pollock]]</ref> is an example of an automated argumentation system that is more specific than being just an automated theorem prover.
+
+Tools and techniques of automated reasoning include the classical logics<!-- [[Classical logic]]? --> and calculi, [[fuzzy logic]], [[Bayesian inference]], reasoning with [[Principle of maximum entropy|maximal entropy]] and many less formal ''ad hoc'' techniques.
+
+==Early years==
+The development of [[formal logic]] played a big role in the field of automated reasoning, which itself led to the development of [[artificial intelligence]]. A [[formal proof]] is a proof in which every logical inference has been checked back to the fundamental [[axioms]] of mathematics. All the intermediate logical steps are supplied, without exception. No appeal is made to intuition, even if the translation from intuition to logic is routine. Thus, a formal proof is less intuitive and less susceptible to logical errors.<ref>C. Hales, Thomas [http://www.ams.org/notices/200811/tx081101370p.pdf "Formal Proof"], University of Pittsburgh. Retrieved on 2010-10-19</ref>
+
+Some consider the Cornell Summer meeting of 1957, which brought together many logicians and computer scientists, as the origin of automated reasoning, or [[automated deduction]].<ref name="cornell">[http://www.cs.cornell.edu/info/projects/nuprl/Intro/AutoDeduction/autoded.html "Automated Deduction (AD)"], ''[The Nature of PRL Project]''. Retrieved on 2010-10-19</ref> Others say that it began before that with the 1955 [[Logic Theorist]] program of Newell, Shaw and Simon, or with Martin Davis’ 1954 implementation of [[Presburger arithmetic|Presburger's decision procedure]] (which proved that the sum of two even numbers is even).<ref>{{cite book | author=Martin Davis | contribution=The Prehistory and Early History of Automated Deduction | pages=1&ndash;28 | url=https://www.springer.com/gp/book/9783642819544 | isbn=978-3-642-81954-4 | editor1=Jörg Siekmann | editor2= G. Wrightson | title=Automation of Reasoning (1) &mdash; Classical Papers on Computational Logic 1957&ndash;1966 | location=Heidelberg | publisher=Springer |  year=1983 }} Here: p.15</ref>
+
+Automated reasoning, although a significant and popular area of research, went through an "[[AI winter]]" in the eighties and early nineties. The field subsequently revived, however. For example, in 2005, [[Microsoft]] started using [[Software verification|verification technology]] in many of their internal projects and is planning to include a logical specification and checking language in their 2012 version of Visual C.<ref name="cornell" />
+
+==Significant contributions==
+'''[[Principia Mathematica]]''' was a milestone work in [[formal logic]] written by [[Alfred North Whitehead]] and [[Bertrand Russell]]. Principia Mathematica - also meaning [[Principles of Mathematics]] - was written with a purpose to derive all or some of the [[mathematical expression]]s, in terms of [[symbolic logic]]. Principia Mathematica was initially published in three volumes in 1910, 1912 and 1913.<ref>[http://plato.stanford.edu/entries/principia-mathematica/ "Principia Mathematica"], at [[Stanford University]]. Retrieved 2010-10-19</ref>
+
+'''[[Logic Theorist]]''' (LT) was the first ever program developed in 1956 by [[Allen Newell]], [[Cliff Shaw]] and [[Herbert A. Simon]] to "mimic human reasoning" in proving theorems and was demonstrated on fifty-two theorems from chapter two of Principia Mathematica, proving thirty-eight of them.<ref>[http://www.cs.swarthmore.edu/~eroberts/cs91/projects/ethics-of-ai/sec1_2.html "The Logic Theorist and its Children"]. Retrieved 2010-10-18</ref> In addition to proving the theorems, the program found a proof for one of the theorems that was more elegant than the one provided by Whitehead and Russell. After an unsuccessful attempt at publishing their results, Newell, Shaw, and Herbert reported in their publication in 1958, ''The Next Advance in Operation Research'':
+
+::''"There are now in the world machines that think, that learn and that create. Moreover, their ability to do these things is going to increase rapidly until (in a visible future) the range of problems they can handle will be co- extensive with the range to which the human mind has been applied."<ref>Shankar, Natarajan ''[http://www.csl.sri.com/~shankar/ Little Engines of Proof]'', Computer Science Laboratory, [[SRI International]]. Retrieved 2010-10-19</ref> ''
+
+'''Examples of Formal Proofs'''
+
+:{| class="wikitable"
+|-
+! Year !! Theorem !! Proof System !! Formalizer !! Traditional Proof
+|-
+| 1986 || [[Incompleteness theorem#First incompleteness theorem|First Incompleteness]]|| [[Boyer-Moore theorem prover|Boyer-Moore]] || Shankar<ref name="Shankar1994">{{Citation | last=Shankar | first=N. | title=Metamathematics, Machines, and Gödel's Proof | publisher=Cambridge University Press | place=Cambridge, UK | year=1994 | url=https://books.google.com/books?id=JmEXH9TllNcC | isbn=9780521585330 }}</ref> || [[Gödel]]
+|-
+| 1990 || [[Quadratic Reciprocity]] || [[Boyer-Moore theorem prover|Boyer-Moore]] || Russinoff<ref name="Russinoff1992">{{Citation | last=Russinoff | first=David M. | title=A Mechanical Proof of Quadratic Reciprocity | journal=J. Autom. Reason. | volume=8 | issue=1 | pages=3–21 | year=1992 | doi=10.1007/BF00263446 }}</ref> || [[Gotthold Eisenstein|Eisenstein]]
+|-
+| 1996 || [[Fundamental theorem of calculus|Fundamental- of Calculus]] || [[HOL Light]] || Harrison || Henstock
+|-
+| 2000 || [[Fundamental theorem of algebra|Fundamental- of Algebra]] || [[Mizar system|Mizar]] || Milewski || Brynski
+|-
+| 2000 || [[Fundamental theorem of algebra|Fundamental- of Algebra]] || [[Coq]] || Geuvers et al. || Kneser
+|-
+| 2004 || [[Four color theorem|Four Color]] || [[Coq]] || Gonthier || [[Neil Robertson (mathematician)|Robertson]] et al.
+|-
+| 2004 || [[Prime number theorem|Prime Number]] || [[Isabelle (proof assistant)|Isabelle]] || Avigad et al. || [[Atle Selberg|Selberg]]-[[Paul Erdős|Erdős]]
+|-
+| 2005 || [[Jordan curve theorem|Jordan Curve]] || [[HOL Light]] || Hales || Thomassen
+|-
+| 2005 || [[Brouwer fixed-point theorem|Brouwer Fixed Point]] || [[HOL Light]] || Harrison || Kuhn
+|-
+| 2006 || [[Kepler conjecture#A formal proof|Flyspeck 1]] || [[Isabelle (proof assistant)|Isabelle]] || Bauer- Nipkow || Hales
+|-
+| 2007 || [[Cauchy residue theorem|Cauchy Residue]] || [[HOL Light]] || Harrison || Classical
+|-
+| 2008 || [[Prime number theorem|Prime Number]] || [[HOL Light]] || Harrison || Analytic proof
+|-
+| 2012 || [[Feit-Thompson theorem|Feit-Thompson]] || [[Coq]] || Gonthier et al.<ref name="Gonthier2013">{{Citation | last1=Gonthier | first1=G. | last2=Asperti | first2=A. | display-authors=1 | chapter=A Machine-Checked Proof of the Odd Order Theorem | editor-last1=Blazy | editor-first1=S. | editor-last2=Paulin-Mohring | editor-first2=C. | editor-last3=Pichardie | editor-first3=D. | title=Interactive Theorem Proving | pages=163–179 | year=2013 | series=Lecture Notes in Computer Science | volume=7998 | doi=10.1007/978-3-642-39634-2_14 | isbn=978-3-642-39633-5 | chapter-url=http://www.cs.unibo.it/~asperti/PAPERS/odd_order.pdf }}</ref> || Bender, Glauberman and Peterfalvi
+|-
+| 2016 || [[Boolean Pythagorean triples problem]] || Formalized as [[Boolean satisfiability problem|SAT]] || Heule et al.<ref name="Heule2016">{{Cite book |arxiv = 1605.00723|doi = 10.1007/978-3-319-40970-2_15|chapter = Solving and Verifying the Boolean Pythagorean Triples Problem via Cube-and-Conquer|title = Theory and Applications of Satisfiability Testing – SAT 2016|volume = 9710|pages = 228–245|series = Lecture Notes in Computer Science|year = 2016|last1 = Heule|first1 = Marijn J. H.|last2 = Kullmann|first2 = Oliver|last3 = Marek|first3 = Victor W.|isbn = 978-3-319-40969-6}}</ref> || None
+|}
+
+==Proof systems==
+;Boyer-Moore Theorem Prover (NQTHM)
+:The design of [[Nqthm|NQTHM]] was influenced by John McCarthy and Woody Bledsoe. Started in 1971 at Edinburgh, Scotland, this was a fully automatic theorem prover built using Pure [[Lisp (programming language)|Lisp]]. The main aspects of NQTHM were:
+:# the use of Lisp as a working logic.
+:# the reliance on a principle of definition for total recursive functions.
+:# the extensive use of rewriting and "symbolic evaluation".
+:# an induction heuristic based the failure of symbolic evaluation.<ref>''[http://www.cs.utexas.edu/~moore/best-ideas/nqthm/index.html The Boyer- Moore Theorem Prover]''. Retrieved on 2010-10-23</ref>
+
+;HOL Light
+:Written in [[OCaml]], [[HOL Light]] is designed to have a simple and clean logical foundation and an uncluttered implementation. It is essentially another proof assistant for classical higher order logic.<ref>Harrison, John ''[http://www.cl.cam.ac.uk/~jrh13/slides/tphols-18aug09/slides.pdf HOL Light: an overview]''. Retrieved 2010-10-23</ref>
+
+;Coq
+:Developed in France, [[Coq]] is another automated proof assistant, which can automatically extract executable programs from specifications, as either Objective CAML or [[Haskell (programming language)|Haskell]] source code. Properties, programs and proofs are formalized in the same language called the Calculus of Inductive Constructions (CIC).<ref>''[http://coq.inria.fr/a-short-introduction-to-coq Introduction to Coq]''. Retrieved 2010-10-23</ref>
+
+==Applications==
+
+Automated reasoning has been most commonly used to build automated theorem provers. Oftentimes, however, theorem provers require some human guidance to be effective and so more generally qualify as [[proof assistant]]s. In some cases such provers have come up with new approaches to proving a theorem. [[Logic Theorist]] is a good example of this. The program came up with a proof for one of the theorems in [[Principia Mathematica]] that was more efficient (requiring fewer steps) than the proof provided by Whitehead and Russell. Automated reasoning programs are being applied to solve a growing number of problems in formal logic, mathematics and computer science, [[logic programming]], software and hardware verification, [[circuit design]], and many others. The [[Automated theorem proving|TPTP]] (Sutcliffe and Suttner 1998) is a library of such problems that is updated on a regular basis. There is also a competition among automated theorem provers held regularly at the [[Conference on Automated Deduction|CADE]] conference (Pelletier, Sutcliffe and Suttner 2002); the problems for the competition are selected from the TPTP library.<ref name="Stanford Encyclopedia">''[http://plato.stanford.edu/entries/reasoning-automated/ Automated Reasoning]'', [[Stanford Encyclopedia]]. Retrieved 2010-10-10</ref>
+
+==See also==
+* [[Automated machine learning]] (AutoML)
+* [[Automated theorem proving]]
+* [[Reasoning system]]
+* [[Semantic reasoner]]
+* [[Program analysis (computer science)]]
+* [[Applications of artificial intelligence]]
+* [[Outline of artificial intelligence]]
+*[[Casuistry]] • [[Case-based reasoning]]
+*[[Abductive reasoning]]
+*[[Inference engine]]
+* [[Commonsense reasoning]]
+
+===Conferences and workshops===
+* [[International Joint Conference on Automated Reasoning]] (IJCAR)
+* [[Conference on Automated Deduction]] (CADE)
+* [[International Conference on Automated Reasoning with Analytic Tableaux and Related Methods]]
+
+===Journals===
+* ''[[Journal of Automated Reasoning]]''
+
+===Communities===
+* [[Association for Automated Reasoning]] (AAR)
+
+==References==
+<references/>
+
+==External links==
+* [https://web.archive.org/web/20090310081227/http://www.csc.liv.ac.uk/~konev/iwil2008/ International Workshop on the Implementation of Logics]
+* [https://web.archive.org/web/20100206221517/http://www.eprover.org/EVENTS/es_series.html Workshop Series on Empirically Successful Topics in Automated Reasoning]
+
+{{Computer science}}
+{{computable knowledge}}
+
+{{DEFAULTSORT:Automated Reasoning}}
+[[Category:Automated reasoning| ]]
+[[Category:Theoretical computer science]]
+[[Category:Automated theorem proving]]
+[[Category:Artificial intelligence]]
+[[Category:Logic in computer science]]

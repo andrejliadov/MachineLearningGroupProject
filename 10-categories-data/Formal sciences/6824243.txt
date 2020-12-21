@@ -1,0 +1,3760 @@
+The following tables compare general and technical information for a number of [[statistical analysis]] packages.
+
+==General information==
+{| class="wikitable sortable" style="font-size: 85%; text-align: center; width: auto;"
+|-
+! style="width:12em" | Product
+! [[Software developer|Developer]]
+! class="unsortable"|Latest version
+! [[Open source]]
+! [[Software license]]
+! [[User interface|Interface]]
+! Written in
+! Scripting languages
+|-
+! {{Rh}} | [[ADaMSoft]]
+| Marco Scarno
+| {{release date|2015|4|27|df=yes}}
+| {{yes}}
+| [[GNU GPL]]
+| [[Command-line interface|CLI]], [[Graphical user interface|GUI]]
+| [[Java (programming language)|Java]]
+|
+|-
+! {{Rh}} |[[Alteryx]]
+|Alteryx Inc.
+|2019.2 (June 2019)
+|{{No}}
+|[[Proprietary software|Proprietary]]
+|[[Graphical user interface|GUI]], Python SDK, js SDK
+|C#, C++, Python, R, js
+|R, Python
+|-
+! {{Rh}} | [[Analyse-it]]
+| Analyse-it
+|
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]]
+| C#, C++, Fortran
+|
+|-
+! {{Rh}} | [[ASReml]]
+| VSN International
+| {{release date|2014|3|26|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command-line interface|CLI]]
+|
+|
+|-
+! {{Rh}} | [[BMDP]]
+| Statistical Solutions
+|
+| {{no}}
+| [[Proprietary software|Proprietary]]
+|
+|
+|
+|-
+! {{Rh}} | [[Dataplot]]
+| Alan Heckert
+| {{release date|2013|df=yes}}
+| {{yes}}
+| [[Public domain]]
+| [[Command-line interface|CLI]], [[Graphical user interface|GUI]]
+| Fortran
+|
+|-
+! {{Rh}} | [[ELKI]]
+| [[Ludwig Maximilian University of Munich]]
+| 0.7.5 ({{release date|2019|2|15|df=yes}})
+| {{yes}}
+| [[Affero General Public License|AGPL]]
+| [[Command-line interface|CLI]], [[Graphical user interface|GUI]]
+| [[Java (programming language)|Java]]
+| [[Shell (computing)]]
+|-
+! {{Rh}} | [[Epi Info]]
+| Centers for Disease Control and Prevention
+| {{release date|2016|6|27|df=yes}}
+| {{yes}}
+| [[Public domain]]
+| [[Command-line interface|CLI]], [[Graphical user interface|GUI]]
+| [[C Sharp (programming language)|Microsoft C#]]
+|
+|-
+! {{Rh}} | [[EViews]]
+| IHS Markit
+| 12 (10 November 2020)
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command-line interface|CLI]], [[Graphical user interface|GUI]]
+|
+|
+|-
+! {{Rh}} | [[GAUSS (software)|GAUSS]]
+| Aptech Systems
+| {{release date|2019|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command line interface|CLI]], [[Graphical user interface|GUI]]
+| C, C++
+|
+|-
+! {{Rh}} | [[GenStat]]
+| VSN International
+| {{release date|2015|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command-line interface|CLI]], [[Graphical user interface|GUI]]
+|
+|
+|-
+! {{Rh}} | [[GraphPad Prism]]
+| GraphPad Software, Inc.
+| {{release date|2009|2|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]]
+|
+|
+|-
+! {{Rh}} | [[gretl]]
+| The gretl Team
+| 2020d ({{release date|2020|08|06|df=yes}})
+| {{yes}}
+| [[GNU General Public License|GNU GPL]]
+| [[Command-line interface|CLI]], [[Graphical user interface|GUI]]
+| C
+| hansl
+|-
+| {{Rh}} | [[Julia (programming language)|Julia]]
+| Jeff Bezanson et al.
+| 1.5.3 ({{release date|2020|11|09|df=yes}})
+| {{yes}}
+| MIT/[[GNU General Public License|GNU GPL]]
+| [[Command-line interface|CLI]] ([[Graphical user interface|GUI]] IDEs available)
+| Julia, C and more
+| Julia, Python
+|-
+| {{Rh}} class="table-rh" |[[JASP]]
+| JASP team
+| 0.13.1 ({{release date|2019|7|16|df=yes}})
+| {{yes}}
+|[[GNU General Public License|GNU GPL]]
+|[[Graphical user interface|GUI]]
+| C++
+|
+|-
+! {{Rh}} | [[JMP (statistical software)|JMP]]
+| [[SAS Institute]]
+| 15.0 ({{release date|2019|6|df=yes}})
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]], [[Command-line interface|CLI]]
+|
+| JSL (JMP Scripting Language)
+|-
+! {{Rh}} | [[LIMDEP]]
+| Econometric Software, Inc., William Greene
+| {{release date|2012|5|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command-line interface|CLI]], [[Graphical user interface|GUI]]
+| Fortran, C++
+|
+|-
+! {{Rh}} | [[Maple (software)|Maple]]
+| Maplesoft
+|{{Latest stable software release/Maple}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command-line interface|CLI]], [[Graphical user interface|GUI]]
+|
+|
+|-
+! {{Rh}} | [[Mathematica]]
+| Wolfram Research
+|{{Latest stable software release/Mathematica}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command-line interface|CLI]], [[Graphical user interface|GUI]]
+| C, Mathematica
+|Wolfram Language
+|-
+! {{Rh}} | [[MATLAB]]
+| MathWorks
+|  R2018b ({{release date|2018|9|12|df=yes}})
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command-line interface|CLI]], [[Graphical user interface|GUI]]
+| [[C++]], Java, MATLAB
+|
+|-
+! {{Rh}} | [[MaxStat|MaxStat Pro]]
+| MaxStat Software
+| Pro 3.6
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]]
+| VB.net, C++, C#
+|
+|-
+! {{Rh}} | [[MedCalc]]
+| MedCalc Software bvba
+| {{release date|2019|5|7|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]]
+|
+|
+|-
+! {{Rh}} | [[Minitab]]
+| Minitab Inc.
+| {{release date|2017|6|7|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command-line interface|CLI]], [[Graphical user interface|GUI]]
+|
+|
+|-
+! {{Rh}} | [[NCSS Statistical Software|NCSS]]
+| NCSS, LLC
+| {{release date|2015|2|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]]
+|
+|
+|-
+! {{Rh}} | [[NLOGIT]]
+| Econometric Software, Inc., William Greene
+| {{release date|2012|5|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command-line interface|CLI]], [[Graphical user interface|GUI]]
+| Fortran,C++
+|
+|-
+! {{Rh}} | [[NMath Stats]]
+| CenterSpace Software
+| {{release date|2009|11|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command-line interface|CLI]]
+|
+|
+|-
+! {{Rh}} | [[OpenEpi]]
+| A. Dean, K. Sullivan, M. Soe
+| {{release date|2014|09|22|df=yes}}
+| {{Yes}}
+| [[GNU General Public License|GNU GPL]]
+| [[Graphical user interface|GUI]]
+| JavaScript, HTML
+|
+|-
+! {{Rh}} | [[Orange (software)|Orange]]
+| Bioinformatics Laboratory, Faculty of Computer and Information Science, [[University of Ljubljana]]
+| {{release date|2016|01|10|df=yes}}
+| {{Yes}}
+| [[GNU General Public License|GNU GPL]]
+| [[Graphical user interface|GUI]]/Python
+| Python, Cython
+| Python
+|-
+! {{Rh}} | [[Origin (data analysis software)|Origin]]
+| OriginLab
+| 3.23.0 ({{release date|2019|9|5|df=yes}})
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]]
+| C++
+| LabTalk
+|-
+! {{Rh}} | [[Ox programming language]]
+| OxMetrics, J.A. Doornik
+| {{release date|2011|8|df=yes}}
+| {{No}}
+| [[Proprietary software|Proprietary]]
+| [[Command-line interface|CLI]]
+|
+|
+|-
+! {{Rh}} | [[OxMetrics]]
+| OxMetrics, J.A. Doornik
+| {{release date|2011|8|df=yes}}
+| {{No}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|CLI/GUI]]
+|
+|
+|-
+! {{Rh}} | [[Primer-E Primer|Primer]]
+| PRIMER-e
+| January 2015
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]]
+|
+|
+|-
+! {{Rh}} | [[PSPP]]
+| [[GNU Project]]
+| 1.2.0 ({{release date|2018|11|06|df=yes}})<ref>{{Cite web|url=https://savannah.gnu.org/forum/forum.php?forum_id=9283|title=PSPP – News: PSPP 1.2.0 has been released. [Savannah]|last=preserved.|first=Copyright 2018 Free Software Foundation, Inc. Verbatim copying and distribution of this entire article is permitted in any medium, provided this notice is|website=savannah.gnu.org|language=en|access-date=2019-01-19}}</ref>
+| {{yes}}
+| [[GNU General Public License|GNU GPL]]
+| [[Command-line interface|CLI]], [[Graphical user interface|GUI]]
+| C
+| [[Perl]] (by [[PSPP-Perl]]<ref>{{cite web | url=http://search.cpan.org/~pdonelan/PSPP-Perl/ | title=Patrick Donelan / PSPP-Perl – search.cpan.org | accessdate=2011-10-05}}</ref>)
+|-
+! {{Rh}} | [[R programming language|R]]
+| R Foundation
+| 4.0.0 ({{release date|2020|04|24|df=yes}})
+| {{yes}}
+| [[GNU General Public License|GNU GPL]]
+| [[Command line interface|CLI]], [[Graphical user interface|GUI]]<ref>R is mainly a command line program but the Windows distribution comes with a GUI component called RGui. {{Cite web |url=http://www.partek.com/ |title=Archived copy |access-date=2018-09-17 |archive-url=https://www.webcitation.org/5ElLwqoZN?url=http://www.partek.com/ |archive-date=2006-03-30 |url-status=bot: unknown }}</ref>
+| C, Fortran, R<ref>{{cite web | author="Wrathematics"|url=http://librestats.com/2011/08/27/how-much-of-r-is-written-in-r/ | title=How Much of R Is Written in R | date=27 August 2011|accessdate=2011-12-01|publisher=librestats}}</ref>
+| [[R (programming language)|R language]], [[Python (programming language)|Python]] (by [[RPy]]), [[Perl]] (by Statistics::R module)
+|-
+! {{Rh}} | [[RKWard]]
+| RKWard community
+| 0.7.1 ({{release date|2020|01|26|df=yes}}) <ref>{{cite web | author=[https://rkward.kde.org/User:Tfry Tfry] |url=https://rkward.kde.org | title=RKWard 0.7.1 | date=23 January 2020|accessdate=2020-03-03|publisher=RKWard News}}</ref>
+| {{yes}}
+| [[GNU General Public License|GNU GPL]]
+| [[Command line interface|CLI]], [[Graphical user interface|GUI]]
+| C++, ECMAScript
+| [[R (programming language)|R language]], [[Python (programming language)|Python]] (by [[RPy]]), [[Perl]] (by Statistics::R module)
+|-
+! {{Rh}} | [[Revolution Analytics]]
+| Norman Nie
+| {{release date|2007|df=yes}}
+| {{yes}}
+| [[Proprietary software|Proprietary]]
+| [[Command line interface|CLI]], [[Graphical user interface|GUI]]
+| 
+| 
+|-
+! {{Rh}} | [[RATS (statistical package)|RATS]]
+| Estima
+| {{release date|2010|10|1|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command line interface|CLI]], [[Graphical user interface|GUI]]
+|
+|
+|-
+! {{Rh}} | [[ROOT]]
+| ROOT Analysis Framework
+| 6.18.04 (11 September 2019)
+| {{yes}}
+| [[GNU General Public License|GNU GPL]]
+| [[Graphical user interface|GUI]]
+| C++
+| C++, Python
+|-
+! {{Rh}} | [[SageMath]]
+| >100 developers worldwide
+| {{Latest stable software release/SageMath}}
+| {{Yes}}
+| [[GNU GPL]]
+| [[Command line interface|CLI]] & [[Graphical user interface|GUI]]
+| Python, Cython
+| Python
+|-
+| {{Rh}} | [[Salstat]]
+| Alan J. Salmoni, Mark Livingstone
+| {{release date|2014|05|16|df=yes}}
+| {{Yes}}
+| [[GNU GPL]]
+| [[Command line interface|CLI]] & [[Graphical user interface|GUI]]
+| [[Python (programming language)|Python]], [[NumPy]], [[SciPy]]
+| Python
+|-
+! {{Rh}} | [[SAS System|SAS]]
+| [[SAS Institute]]
+| 9.4M7 ({{release date|2020|08|df=yes}}), <br>Viya 3.5 ({{release date|2020|6|df=yes}})<br/>
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command line interface|CLI]]  & [[Graphical user interface|GUI]]
+| C
+|[[SAS language]], CAS Language (CASL), APIs for [[R (programming language)|R language]], [[Python (programming language)|Python]], [[Lua (programming language)|Lua]], [[Java (programming language)|Java]] 
+|-
+! {{Rh}} | [[SciPy]]
+| [[Enthought]]
+| 1.5.3 ({{release date|2020|10|17|df=yes}})
+| {{yes}}
+| [[BSD license|BSD]]
+| [[Command line interface|CLI]]
+| [[Python (programming language)|Python]], [[C (programming language)|C]], [[Fortran]]
+| Python
+|-
+! {{Rh}} | [[SHAZAM (software)|SHAZAM]]
+| SHAZAM Analytics Ltd
+| 11.1.4 ({{release date|2015|4|df=yes}})
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command line interface|CLI]], [[Graphical user interface|GUI]]
+| FORTRAN, C++, C
+|
+|-
+! {{Rh}} | [[Sigmaxl|SigmaXL]]
+| SigmaXL Inc.
+| {{release date|2020|9|15|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]]
+|
+|
+|-
+! {{Rh}} | [[SOCR]]
+| [[UCLA]] and [[University of Michigan]]
+| 3.0 ({{release date|2015|5|10|df=yes}})
+| {{yes}}
+| [[LGPL]]
+| [[Graphical user interface|GUI]]
+| Java
+|
+|-
+! {{Rh}} | [[SOFA Statistics]]
+| Grant Paton-Simpson
+| 1.5.3 ({{release date|2019|10|20|df=yes}})
+| {{yes}}
+| [[Affero General Public License|AGPL]]
+| [[Graphical user interface|GUI]]
+| Python
+| Python
+|-
+! {{Rh}} | [[SPlus]]
+| Insightful Inc.
+| {{release date|2010|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command line interface|CLI]]
+|
+|
+|-
+! {{Rh}} | [[SPSS]]
+| [[IBM]]
+| 24.0 ({{release date|2016|03|15|df=yes}})
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command line interface|CLI]], [[Graphical user interface|GUI]]
+| Java
+| R, Python, SaxBasic
+|-
+! {{Rh}} | [[Stata]]
+| [[StataCorp LLC]]
+| {{release date|2019|6|26|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command line interface|CLI]], [[Graphical user interface|GUI]]
+| [[C (programming language)|C]]
+| ado, Mata
+|-
+! {{Rh}} | [[StatCrunch]]
+| [[Pearson Education]]
+| {{release date|2017|7|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]]
+| 
+| 
+|-
+! {{Rh}} | [[Statgraphics]]
+| Statpoint Technologies Incorporated
+| {{release date|2014|9|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]]
+| C++
+|
+|-
+! {{Rh}} | [[Statistica]]
+| Tibco Software
+| 13.5 ({{release date|2018|10|df=yes}})
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]]
+| C++
+|R, Statistica Visual Basic (SVB)
+|-
+! {{Rh}} | [[StatPlus]]
+| AnalystSoft
+| 7.0 ({{release date|2019|10|df=yes}})
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]]
+|
+|
+|-
+! {{Rh}} | [[Statsmodels]]
+| Statsmodels Developers
+| 0.9.0 ({{release date|2018|5|12|df=yes}})
+| {{yes}}
+| [[BSD license|BSD]]
+| [[Command line interface|CLI]]
+| [[Python (programming language)|Python]], [[C (programming language)|C]]
+| Python
+|-
+! {{Rh}} | [[SYSTAT (statistics)|SYSTAT]]
+| Systat Software Inc.
+| {{release date|2007|2|21|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command line interface|CLI]], [[Graphical user interface|GUI]]
+|
+|
+|-
+! {{Rh}} | [[TSP (econometrics software)|TSP]]
+| TSP International
+| {{release date|2009|9|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Command-line interface|CLI]]
+| Fortran
+|
+|-
+! {{Rh}} | [[UNISTAT]]
+| Unistat Ltd
+| {{release date|2011|4|8|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]], [[Microsoft Excel|Excel]]
+|
+|
+|-
+! {{Rh}} | [[Winpepi]]
+| J. H. Abramson
+| {{release date|2008|6|df=yes}}
+| {{No}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]]
+|
+|
+|-
+! {{Rh}} | [[World Programming System|WPS Analytics]]
+| [[World Programming]]
+| {{release date|2018|3|df=yes}}
+| {{No}}
+| [[Proprietary software|Proprietary]]
+| [[Command-line interface|CLI]], [[Graphical user interface|GUI]]
+| C, Assembler
+| [[Python (programming language)|Python]], [[R (programming language)|R]], [[SAS language|SAS]] and [[SQL]] languages
+|-
+! {{Rh}} | [[WINdows KwikStat|WINKS]]
+| TexaSoft
+| {{release date|2013|8|df=yes}}
+| {{No}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]]
+| Fortran, Visual Basic
+| 
+|-
+! {{Rh}} | [[XploRe]]
+| MD*Tech
+| {{release date|2006|df=yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+| [[Graphical user interface|GUI]]
+|
+|
+|- class="sortbottom"
+! style="width:12em" | Product
+! Developer
+! class="unsortable"|Latest version
+! [[Open source]]
+! [[Software license]]
+! Interface
+! Written in
+! Scripting languages
+|}
+
+==Operating system support==
+
+{| class="wikitable sortable" style="font-size: 85%; text-align: center; width: auto;"
+|-
+! style="width:12em" | Product
+! [[Microsoft Windows|Windows]]
+! [[Mac OS]]
+! [[Linux]]
+! [[Berkeley Software Distribution|BSD]]
+! [[Unix]]
+| [[Software as a service|Cloud]]
+|-
+! {{Rh}} | [[ADaMSoft]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} |[[Alteryx]]
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+|-
+! {{Rh}} | [[Analyse-it]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[BMDP]]
+| {{yes}}
+|
+|
+|
+|
+| {{no}}
+|-
+! {{Rh}} | [[Dataplot]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[ELKI]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[Epi Info]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[EViews]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[GAUSS (software)|GAUSS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[GraphPad Prism]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[gretl]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[JASP]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes | browser}}
+|-
+! {{Rh}} | [[Julia (programming language)|Julia]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[JMP (statistical software)|JMP]]
+| {{yes}}
+| {{yes}}
+| {{Terminated}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[LIMDEP]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[Maple (software)|Maple]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[MATLAB]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[Mathematica]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[MaxStat|MaxStat Pro]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[MedCalc]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}<ref>{{cite web |url=https://www.scistat.com/manual/whatisscistat.com.php|title=SciStat.com description|publisher=MedCalc Software Ltd|access-date=2 June 2020 }}</ref>
+|-
+! {{Rh}} | [[Minitab]]
+| {{yes}}
+| {{Terminated}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[NCSS Statistical Software|NCSS]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[NLOGIT]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+
+|-
+! {{Rh}} | [[NMath Stats]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[OpenEpi]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[Orange (software)|Orange]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[Origin (data analysis software)|Origin]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[Primer-E Primer|Primer]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[PSPP]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[R Commander]]
+| {{yes}}<ref name="UsingR">Using [[R programming language|R]] as platform {{Cite web |url=http://rkward.sourceforge.net/ |title=Archived copy |access-date=2007-02-03 |archive-url=https://www.webcitation.org/5gbmX1GNH?url=http://rkward.sourceforge.net/ |archive-date=2009-05-08 |url-status=bot: unknown }}</ref>
+| {{yes}}<ref name="UsingR"/>
+| {{yes}}<ref name="UsingR"/>
+| {{yes}}<ref name="UsingR"/>
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[R programming language|R]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[RATS (statistical package)|RATS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[RKWard]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[ROOT]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[SageMath]]
+| {{Partial}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+|-
+| {{Rh}} | [[Salstat]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{no}}
+|-
+! {{Rh}} | [[SAS System|SAS]]
+| {{yes}}
+| {{Terminated}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SciPy]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[SHAZAM (software)|SHAZAM]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[Sigmaxl|SigmaXL]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[SOCR]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[SOFA Statistics]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[SPlus]]
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[SPSS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Stata]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[StatCrunch]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Statgraphics]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[Statistica]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[StatPlus]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[Statsmodels]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[SYSTAT (statistics)|SYSTAT]]
+| {{yes}}
+| {{Terminated}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[TSP (econometrics software)|TSP]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[UNISTAT]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[The Unscrambler]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[Winpepi]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[World Programming System|WPS Analytics]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[WINKS]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[XploRe]]
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|- class="sortbottom"
+! style="width:12em" | Product
+! [[Microsoft Windows|Windows]]
+! [[Mac OS]]
+! [[Linux]]
+! [[Berkeley Software Distribution|BSD]]
+! [[Unix]]
+| [[Software as a service|SaaS]]
+|}
+
+==ANOVA==
+Support for various [[ANOVA]] methods
+{| class="wikitable sortable" style="font-size: 85%; text-align: center; width: auto;"
+|-
+! style="width:12em" | Product
+! One-way
+! Two-way
+! [[MANOVA]]
+! [[General linear model|GLM]]
+! [[Mixed model]]
+! [[Post-hoc analysis|Post-hoc]]
+! [[Latin squares]]
+|-
+! {{Rh}} | [[ADaMSoft]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} |[[Alteryx]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+! {{Rh}} | [[Analyse-it]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[BMDP]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+|-
+! {{Rh}} | [[Epi Info]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[EViews]]
+| {{yes}}
+|
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[GAUSS (software)|GAUSS]]
+|
+| {{no}}
+| {{no}}
+| {{no}}
+|
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[GenStat]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[GraphPad Prism]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{Yes}}
+| {{Yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[gretl]]
+|{{yes}}
+|
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[JASP]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+!
+!
+!
+!
+|-
+! {{Rh}} | [[Julia (programming language)|Julia]] with packages<ref>{{Citation|last=Bauer|first=Nicholas|title=Analysis of Variance for Julia, the old-fashioned way.: BioTurboNick/SimpleANOVA.jl|date=2019-11-06|url=https://github.com/BioTurboNick/SimpleANOVA.jl|access-date=2019-11-15}}</ref><ref>{{Citation|last=Pabst|first=Marc|title=Provides a Simple Way to Calculate ANOVAs From Fitted Linear Models.: marcpabst/ANOVA.jl|date=2019-11-03|url=https://github.com/marcpabst/ANOVA.jl|access-date=2019-11-15}}</ref>
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+|-
+! {{Rh}} | [[JMP (statistical software)|JMP]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[LIMDEP]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[Maple (software)|Maple]]
+| {{yes}}<ref>[http://www.maplesoft.com/support/help/Maple/view.aspx?path=Statistics%2fOneWayANOVA OneWayANOVA] Maple documentation</ref>
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}<ref>[https://www.maplesoft.com/support/help/Maple/view.aspx?path=MOLS Mutually orthogonal Latin squares] Maple documentation</ref>
+|-
+! {{Rh}} | [[Mathematica]]
+| {{yes}}
+| {{yes}}
+| {{no}}<ref>https://mathematica.stackexchange.com/questions/121555/does-mathematica-have-built-in-support-for-multivariate-regression/173607#173607</ref>
+| {{yes}}
+|
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[MATLAB|MATLAB+Statistics Toolbox ]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[MaxStat|MaxStat Pro]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[MedCalc]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[Minitab]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[NCSS Statistical Software|NCSS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[NLOGIT]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+
+|-
+! {{Rh}} | [[NMath Stats]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[Orange (software)|Orange]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[Origin (data analysis software)|Origin]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[PSPP]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[R programming language|R]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[R Commander]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SageMath]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|
+|-
+! {{Rh}} | [[Salstat]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[SAS System|SAS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SciPy]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[SHAZAM (software)|SHAZAM]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+| {{Rh}} | [[Sigmaxl|SigmaXL]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|
+|
+| {{no}}
+|-
+! {{Rh}} | [[SOCR]]
+| {{yes}}
+| {{yes}}
+| {{No}}
+| {{No}}
+|
+| {{Yes}}
+| {{Yes}}
+|-
+! {{Rh}} | [[SOFA Statistics]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[SPlus]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SPSS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Stata]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[StatCrunch]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[Statgraphics]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Statistica]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[StatPlus]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Statsmodels]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[SYSTAT (statistics)|SYSTAT]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[TSP (econometrics software)|TSP]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[UNISTAT]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[The Unscrambler]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[WINKS]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[Winpepi]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[World Programming System|WPS Analytics]]
+| {{yes}} 
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|- class="sortbottom"
+! style="width:12em" | Product
+! One-way
+! Two-way
+! [[MANOVA]]
+! [[General linear model|GLM]]
+! [[Mixed model]]
+! [[Post-hoc analysis|Post-hoc]]
+! [[Latin squares]]
+|}
+
+==Regression==
+Support for various [[Regression analysis|regression]] methods.
+
+{| class="wikitable sortable" style="font-size: 85%; text-align: center; width: auto;"
+|-
+! style="width:12em" | Product
+! [[Ordinary least squares|OLS]]
+! [[Weighted least squares|WLS]]
+! [[Two-stage least squares|2SLS]]
+! [[Nonlinear least squares|NLLS]]
+! [[Logistic regression|Logistic]]
+! [[Generalized linear models|GLM]]
+! [[Least absolute deviation|LAD]]
+! [[Stepwise regression|Stepwise]]
+! [[Quantile regression|Quantile]]
+! [[Probit model|Probit]]
+! [[Cox regression|Cox]]
+! [[Poisson regression|Poisson]]
+! [[Multiple linear regression|MLR]]
+|-
+! {{Rh}} | [[ADaMSoft]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[Alteryx]]
+| {{Yes}}
+| {{Yes}}
+| 
+| 
+| {{Yes}}
+| {{Yes}}
+| 
+| {{yes}}
+| 
+| {{Yes}}
+|
+|
+|
+|-
+! {{Rh}} | [[Analyse-it]]
+| {{yes}}
+|
+| 
+|
+| {{yes}}
+|
+|
+| 
+|
+|
+|
+|
+| {{yes}}
+|-
+! {{Rh}} | [[BMDP]]
+| {{yes}}
+|
+|
+|
+| {{yes}}
+|
+|
+| {{yes}}
+|
+|
+| {{yes}}
+|
+|
+|-
+! {{Rh}} | [[Epi Info]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|
+| {{yes}}
+|
+|
+|-
+! {{Rh}} | [[EViews]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[GAUSS (software)|GAUSS]]
+|{{Yes}}
+|
+|
+|
+|{{Yes}}
+|{{Yes}}
+| {{no}}
+|
+| {{no}}
+|
+|
+|{{Yes}}
+|
+|-
+! {{Rh}} | [[GenStat]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[GraphPad Prism]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|  
+| {{no}}
+| {{yes}}
+|-
+! {{Rh}} | [[gretl]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+|
+|-
+! {{Rh}} | [[JMP (statistical software)|JMP]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| In JMP Pro
+| {{yes}}
+| In JMP Pro
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[LIMDEP]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Maple (software)|Maple]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}<ref>[http://www.maplesoft.com/support/help/Maple/view.aspx?path=Statistics%2fNonlinearFit NonlinearFit] Maple documentation</ref>
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+|-
+! {{Rh}} | [[Mathematica]]
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}<ref>[http://reference.wolfram.com/mathematica/ref/LogitModelFit.html LogitModelFit] Mathematica documentation</ref>
+| {{yes}}<ref>[http://reference.wolfram.com/mathematica/ref/GeneralizedLinearModelFit.html GeneralizedLinearModelFit] Mathematica documentation</ref>
+| {{yes}}<ref>[http://reference.wolfram.com/mathematica/ref/NormFunction.html NormFunction] Mathematica documentation</ref>
+|
+| {{yes}}
+| {{yes}}<ref>[http://reference.wolfram.com/mathematica/ref/ProbitModelFit.html ProbitModelFit] Mathematica documentation</ref>
+| {{yes}}<ref>[http://reference.wolfram.com/mathematica/ref/CoxModelFit.html CoxModelFit] Mathematica documentation</ref>
+| {{yes}}
+| {{yes}}<ref>[http://reference.wolfram.com/mathematica/ref/LinearModelFit.html LinearModelFit] Mathematica documentation</ref>
+|-
+! {{Rh}} | [[MATLAB|MATLAB+Statistics Toolbox ]]
+| {{yes}}
+| {{yes}}
+| {{yes}}<ref name="LeastSquaresFitting">[http://www.mathworks.com/help/curvefit/least-squares-fitting.html LeastSquaresFitting] MATLAB documentation</ref>
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[MaxStat|MaxStat Pro]]
+| {{yes}}
+| {{yes}}
+| 
+| {{yes}}
+| {{yes}}
+| 
+| 
+| 
+|
+| 
+| 
+|
+| {{yes}}
+|-
+! {{Rh}} | [[MedCalc]]
+| {{yes}}
+| {{yes}}
+| 
+| {{yes}}
+| {{yes}}
+| 
+| 
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+|-
+! {{Rh}} | [[Minitab]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|
+|
+|
+|
+|-
+! {{Rh}} | [[NCSS Statistical Software|NCSS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[NLOGIT]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[NMath Stats]]
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+|
+|
+|
+|
+|
+|
+|
+|
+| {{yes}}
+|-
+! {{Rh}} | [[Orange (software)|Orange]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+|-
+! {{Rh}} | [[Origin (data analysis software)|Origin]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|-
+! {{Rh}} | [[PSPP]]
+| {{yes}}
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[R programming language|R]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[R Commander]]
+| {{yes}}
+|
+|
+|
+|
+| {{yes}}
+|
+|
+| {{no}}
+|
+|
+|
+|
+|-
+! {{Rh}} | [[RATS (statistical package)|RATS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SageMath]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+|
+|-
+! {{Rh}} | [[Salstat]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[SAS System|SAS]]
+| {{yes}}
+| {{yes}}
+|{{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SciPy]]
+| {{yes}}
+| via "[[statsmodels]]"
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| via "statsmodels"
+| {{no}}
+| via "statsmodels"
+| {{no}}
+|-
+! {{Rh}} | [[SHAZAM (software)|SHAZAM]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Sigmaxl|SigmaXL]]
+| {{yes}}
+|
+|
+|
+| {{yes}}
+|
+|
+|
+|
+|
+|
+|
+| {{yes}}
+|-
+! {{Rh}} | [[SOCR]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[SPlus]]
+| {{yes}}
+|
+|
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|
+|
+|
+|
+|-
+! {{Rh}} | [[SPSS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-{{yes}}
+! {{Rh}} | [[Stata]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[StatCrunch]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+|-
+! {{Rh}} | [[Statgraphics]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Statistica]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[StatPlus]]
+|{{yes}}
+|{{yes}}
+|{{yes}}
+|{{yes}}
+|{{yes}}
+|{{yes}}
+|{{no}}
+|{{yes}}
+|
+|{{yes}}
+|{{yes}}
+|{{no}}
+|{{yes}}
+|-
+! {{Rh}} | [[Statsmodels]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SYSTAT (statistics)|SYSTAT]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|
+|
+|
+|
+|-
+! {{Rh}} | [[TSP (econometrics software)|TSP]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[UNISTAT]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|
+| {{yes}}
+|
+| {{yes}}
+|
+|-
+! {{Rh}} | [[The Unscrambler]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[WINKS]]
+| {{yes}}
+|
+|
+|
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+|
+| 
+|
+| 
+| {{yes}}
+|-
+! {{Rh}} | [[Winpepi]]
+| {{yes}}
+|
+|
+|
+| {{yes}}
+|
+|
+|
+|
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[World Programming System|WPS Analytics]]
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|- class="sortbottom"
+! style="width:12em" | Product
+! [[Ordinary least squares|OLS]]
+! [[Weighted least squares|WLS]]
+! [[Two-stage least squares|2SLS]]
+! [[Nonlinear least squares|NLLS]]
+! [[Logistic regression|Logistic]]
+! [[Generalized linear models|GLM]]
+! [[Least absolute deviation|LAD]]
+! [[Stepwise regression|Stepwise]]
+! [[Quantile regression|Quantile]]
+! [[Probit model|Probit]]
+! [[Cox regression|Cox]]
+! [[Poisson regression|Poisson]]
+! [[Multiple linear regression|MLR]]
+|}
+
+==Time series analysis==
+Support for various [[time series analysis]] methods.
+
+{| class="wikitable sortable" style="font-size: 85%; text-align: center; width: auto;"
+|-
+! style="width:12em" | Product
+! [[ARIMA]]
+! [[GARCH]]
+! [[Unit root test]]
+! [[Cointegration test]]
+! [[Vector autoregression|VAR]]
+! [[Multivariate GARCH]]
+|-
+! {{Rh}} | [[Alteryx]]
+| {{yes}}
+| {{no}}
+| 
+| 
+| 
+| 
+|-
+! {{Rh}} | [[Analyse-it]]
+|
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[EViews]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[GAUSS (software)|GAUSS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[GraphPad Prism]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{Rh}} | [[gretl]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}<ref>[http://ricardo.ecn.wfu.edu/gretl/cgi-bin/current_fnfiles/unzipped/MGARCH.gfn MGARCH] Gretl package repository</ref>
+|-
+! {{Rh}} | [[JMP (statistical software)|JMP]]
+| {{yes}}
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[LIMDEP]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[Mathematica]]
+| {{yes}}<ref>[http://reference.wolfram.com/mathematica/ref/ARIMAProcess.html ARIMAProcess] Mathematica documentation</ref>
+| {{yes}}
+| {{yes}}<ref>[http://reference.wolfram.com/mathematica/ref/UnitRootTest.html UnitRootTest] Mathematica documentation</ref>
+| {{yes}}
+| {{yes}}<ref>[http://reference.wolfram.com/mathematica/ref/ARProcess.html ARProcess] Mathematica documentation</ref>
+| {{yes}}<ref>[http://reference.wolfram.com/mathematica/ref/GARCHProcess.html GARCHProcess] Mathematica documentation</ref>
+|-
+! {{Rh}} | [[MATLAB|MATLAB+Econometrics Toolbox ]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+|-
+! {{Rh}} | [[MaxStat|MaxStat Pro]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[MedCalc]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{Rh}} | [[Minitab]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{Rh}} | [[NCSS Statistical Software|NCSS]]
+| {{yes}}
+| 
+|
+|
+|
+|
+|-
+! {{Rh}} | [[NLOGIT]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[NMath Stats]]
+|
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[Orange (software)|Orange]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[Origin (data analysis software)|Origin]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[PSPP]]
+|
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[R programming language|R]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[R Commander]]
+|
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[RATS (statistical package)|RATS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SageMath]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Salstat]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{Rh}} | [[SAS System|SAS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SciPy]]
+| via "[[statsmodels]]"
+| {{no}}
+| via "statsmodels"
+| {{no}}
+| via "statsmodels"
+| {{no}}
+|-
+! {{Rh}} | [[SHAZAM (software)|SHAZAM]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[SOCR]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{Rh}} | [[Stata]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Statgraphics]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{Rh}} | [[Statistica]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{Rh}} | [[StatPlus]]
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{Rh}} | [[SPlus]]
+|
+| {{yes}}
+|
+|
+| {{yes}}
+|
+|-
+! {{Rh}} | [[SPSS]]
+| {{yes}}
+| {{yes}}
+|
+|
+|
+|
+|-
+! {{Rh}} | [[Statsmodels]]
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[SYSTAT (statistics)|SYSTAT]]
+| {{yes}}
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[TSP (econometrics software)|TSP]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{Rh}} | [[UNISTAT]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{Rh}} | [[WINKS]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{Rh}} | [[Winpepi]]
+|
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[World Programming System|WPS Analytics]]
+| {{yes}}
+|
+| {{yes}}
+|
+|
+|
+|- class="sortbottom"
+! Product
+! [[ARIMA]]
+! [[GARCH]]
+! [[Unit root test]]
+! [[Cointegration test]]
+! [[Vector autoregression|VAR]]
+! [[Multivariate GARCH]]
+|}
+
+==Charts and diagrams==
+Support for various [[statistical]] [[charts]] and [[diagrams]].
+{| class="wikitable sortable" style="font-size: 85%; text-align: center; width: auto;"
+|-
+! style="width:12em" | Chart
+! [[Bar chart]]
+! [[Box plot]]
+! [[Correlogram]]
+! [[Histogram]]
+! [[Line chart]]
+! [[Scatterplot]]
+|-
+! {{Rh}} | [[ADaMSoft]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Alteryx]]
+| {{yes}}
+| {{yes}}
+| 
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Analyse-it]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[BMDP]]
+|
+|
+|
+| {{yes}}
+|
+| {{yes}}
+|-
+! {{Rh}} | [[ELKI]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Epi Info]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[EViews]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[GAUSS (software)|GAUSS]]
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[GenStat]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[GraphPad Prism]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[gretl]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[JMP (statistical software)|JMP]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[LIMDEP]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Maple (software)|Maple]]
+| {{yes}}<ref>[http://www.maplesoft.com/support/help/Maple/view.aspx?path=Statistics/BarChart&term=BarChart BarChart] Maple documentation</ref>
+| {{yes}}<ref>[http://www.maplesoft.com/support/help/Maple/view.aspx?path=Statistics/BoxPlot&term=BoxPlot BoxPlot] Maple documentation</ref>
+| {{yes}}<ref>[http://www.maplesoft.com/support/help/Maple/view.aspx?path=Statistics/GridPlot GridPlot] Maple documentation</ref>
+| {{yes}}<ref>[http://www.maplesoft.com/support/help/Maple/view.aspx?path=Statistics%2fHistogram Histogram] Maple documentation</ref>
+| {{yes}}<ref>[http://www.maplesoft.com/support/help/Maple/view.aspx?path=Statistics/LineChart&term=LineChart LineChart] Maple documentation</ref>
+| {{yes}}<ref>[http://www.maplesoft.com/support/help/Maple/view.aspx?path=Statistics/ScatterPlot&term=Scatterplot Scatterplot] Maple documentation</ref>
+|-
+! {{Rh}} | [[Mathematica]]
+| {{yes}}<ref>[http://reference.wolfram.com/mathematica/BarCharts/ref/BarChart.html BarChart] Mathematica documentation</ref>
+| {{yes}}<ref>[http://reference.wolfram.com/mathematica/ref/BoxWhiskerChart.html BoxWhiskerChart] Mathematica documentation</ref>
+| {{yes}}<ref>[https://resources.wolframcloud.com/FunctionRepository/resources/Correlogram Correlogram] Mathematica Resource Function</ref>
+| {{yes}}<ref>[http://reference.wolfram.com/mathematica/Histograms/ref/Histogram.html Histogram] Mathematica documentation</ref>
+| {{yes}}<ref>[http://reference.wolfram.com/mathematica/ref/ListLinePlot.html ListLinePlot] Mathematica documentation</ref>
+| {{yes}}<ref>[http://reference.wolfram.com/mathematica/ref/ListPlot.html ListPlot] Mathematica documentation</ref><ref>[http://reference.wolfram.com/mathematica/ref/ListPointPlot3D.html ListPointPlot3D] Mathematica documentation</ref>
+|-
+! {{Rh}} | [[MATLAB|MATLAB+Statistics Toolbox ]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[MaxStat|MaxStat Pro]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[MedCalc]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Minitab]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[NCSS Statistical Software|NCSS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[NLOGIT]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[NMath Stats]]
+|
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[Orange (software)|Orange]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Origin (data analysis software)|Origin]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[PSPP]]
+|
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[R programming language|R]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[R Commander]]
+|
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[RATS (statistical package)|RATS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SageMath]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SAS System|SAS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SciPy]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SHAZAM (software)|SHAZAM]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Sigmaxl|SigmaXL]]
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SOCR]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SOFA Statistics]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SPlus]]
+|
+|
+|
+|
+|
+|
+|-
+! {{Rh}} | [[SPSS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Stata]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[StatCrunch]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Statgraphics]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Statistica]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[StatPlus]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Statsmodels]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[SYSTAT (statistics)|SYSTAT]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[TSP (econometrics software)|TSP]]
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[UNISTAT]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[The Unscrambler]]
+| {{yes}}
+|
+|
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[WINKS]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[Winpepi]]
+|
+|
+|
+|
+| {{yes}}
+| {{yes}}
+|-
+! {{Rh}} | [[World Programming System|WPS Analytics]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|}
+
+==Other abilities==
+
+{| class="wikitable" style="font-size: 85%"
+|-
+! rowspan="2" | Product
+! rowspan="2" | [[software|s/w]]<br />type<br /><ref group="Note" name="note3">S = Standalone executive; St = Standalone executive, primitive textual (DOS or terminal) interface; A = Access Add-in; X = Excel Plug-In; C = Cloud (SaaS)</ref>
+! colspan="2" | Descriptive statistics
+
+! colspan="2" | Nonparametric statistics
+! rowspan="2" | Quality<br />control
+! rowspan="2" | Survival<br />analysis
+! &nbsp;
+! &nbsp;
+! colspan="2" | Data processing
+|-
+|style="text-align: center"| Base<br />stat.<ref group="Note" name="BasStat">Base Statistics (such as t-test, f-test, etc.)</ref>
+|style="text-align: center"| Normality<br />tests<ref group="Note" name="NormTests">Normality Tests, data exploring</ref>
+|style="text-align: center"| CTA<ref group="Note" name="ConTabAnal">Contingency Tables Analysis</ref>
+|style="text-align: center"| Nonparametric<br />comparison, <small>ANOVA</small>
+|style="text-align: center"| Cluster<br />analysis
+|style="text-align: center"| Discriminant<br />analysis
+|style="text-align: center"| BDP<ref group="Note" name="BaseData">Base Data Processing, f.ex. sorting</ref>
+|style="text-align: center"| Ext.<ref group="Note" name="ReferenceC">Extended (data sampling, transformation)</ref>
+|-
+! [[ADaMSoft]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|-}}
+| {{yes|-}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[Alteryx]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[Analyse-it]]
+| X
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[BMDP]]
+|
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|
+|
+|-
+! [[Epi Info]]
+| S
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[GAUSS (software)|Gauss]]
+| St
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[GenStat]]
+| St
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[GraphPad Prism]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+|-
+! [[Gretl]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[JMP (statistical software)|JMP]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[LIMDEP]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|-}}
+| {{no|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+![[Maple (software)|Maple]]
+| S
+| {{yes|+}}
+| {{yes|+}}<ref>[http://www.maplesoft.com/support/help/Maple/view.aspx?path=Statistics%2fShapiroWilkWTest ShapiroWilkWTest] Maple documentation</ref>
+| 
+| 
+| {{yes|+}}<ref>[http://www.maplesoft.com/support/help/Maple/view.aspx?path=ProcessControl&term=processcontrol ProcessControl] Maple documentation</ref>
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[Mathematica]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}<ref>[http://reference.wolfram.com/mathematica/guide/SurvivalAnalysis.html SurvivalAnalysis] Mathematica documentation</ref>
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[MATLAB|MATLAB+Statistics Toolbox ]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[MaxStat|MaxStat Pro]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| 
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[MedCalc]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[Minitab]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[NCSS Statistical Software|NCSS]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[NLOGIT]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|-}}
+| {{no|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[NMath Stats]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+|-
+! [[OpenEpi]]
+| S
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+|-
+! [[Orange (software)|Orange]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[Origin (data analysis software)|Origin]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[PSPP]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! [[R (programming language)|R]]
+| St
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[RATS (statistical package)|RATS]]
+| 
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[SAS (software)|SAS]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[SciPy]]
+| St
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[SHAZAM (software)|SHAZAM]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[Sigmaxl|SigmaXL]]
+| X
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|
+|
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[SOCR]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[SOFA Statistics]]
+| S
+|
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+|-
+! [[Stata]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[StatCrunch]]
+| C
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[Statgraphics]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[Statistica]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[StatPlus]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[SPlus]]
+| St
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[SPSS]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[Statsmodels]]
+| St
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[SYSTAT (statistics)|SYSTAT]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[TSP (econometrics software)|TSP]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[UNISTAT]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[The Unscrambler]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+|
+| {{yes|+}}
+|
+|
+| {{yes|+}}
+| {{yes|+}}
+|
+|
+|-
+! [[WINKS]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|
+|
+| {{yes|+}}
+| {{yes|+}}
+|-
+! [[Winpepi]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{yes|+}}
+| {{yes|+}}
+| {{no|-}}
+| {{no|-}}
+| {{no|-}}
+|-
+! [[World Programming System|WPS Analytics]]
+| S
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+| {{yes|+}}
+|-
+! rowspan="2" | Product
+! rowspan="2" | [[software|s/w]]<br />type<br /><ref group="Note" name=note3/>
+! colspan="2" | Descriptive statistics
+! colspan="2" | Nonparametric statistics
+! rowspan="2" | Quality<br />control
+! rowspan="2" | Survival<br />analysis
+! &nbsp;
+! &nbsp;
+! colspan="2" | Data processing
+|-
+|style="text-align: center"| Base<br />stat.<ref group="Note" name=BasStat/>
+|style="text-align: center"| Normality<br />tests<ref group="Note" name=NormTests/>
+|style="text-align: center"| CTA<ref group="Note" name=ConTabAnal/>
+|style="text-align: center"| Nonparametric<br />comparison, <small>ANOVA</small>
+|style="text-align: center"| Cluster<br />analysis
+|style="text-align: center"| Discriminant<br />analysis
+|style="text-align: center"| BDP<ref group="Note" name=BaseData/>
+|style="text-align: center"| Ext.<ref group="Note" name="ReferenceC"/>
+|}
+
+==See also==
+* [[Comparison of computer algebra systems]]
+* [[Comparison of deep learning software]]
+* [[Comparison of numerical analysis software]]
+* [[Comparison of survey software]]
+* [[Comparison of Gaussian process software]]
+* [[List of scientific journals in statistics]]
+* [[List of statistical packages]]
+
+== Footnotes ==
+{{reflist|group=Note}}
+
+==References==
+{{Reflist|2}}
+
+== Further reading ==
+
+* {{Cite journal |first=B. D. |last=McCullough | title=Econometric software reliability: EViews, LIMDEP, SHAZAM and TSP |journal=[[Journal of Applied Econometrics]] |year=1999 |volume=14 |issue=2 |pages=191–202 |doi=10.1002/(SICI)1099-1255(199903/04)14:2<191::AID-JAE524>3.0.CO;2-K }}
+* {{cite journal |last=McCullough |first=B. D. |first2=H. D. |last2=Vinod |year=1999 |title=The Numerical Reliability of Econometric Software |journal=[[Journal of Economic Literature]] |volume=37 |issue=2 |pages=633–665 |jstor=2565215 |citeseerx=10.1.1.136.9939 }}
+* {{cite book |first=Marius |last=Ooms |chapter=Trends in Applied Econometrics Software Development 1985–2008: An Analysis of ''Journal of Applied Econometrics'' Research Articles, Software Reviews, Data and Code |title=Palgrave Handbook of Econometrics |volume=Volume 2: Applied Econometrics |publisher=Palgrave Macmillan |year=2009 |isbn=978-1-4039-1800-0 |pages=1321–1348 }}
+* {{Cite book |first=Charles G. |last=Renfro |title=Computational Econometrics: Its Impact on the Development of Quantitative Economics |publisher=IOS Press |year= 2004 |isbn=1-58603-426-X |url=https://books.google.com/books?id=CZg42jo02CEC }}
+* {{cite journal |title=A Short Preview of Free Statistical Software Packages for Teaching Statistics to Industrial Technology Majors |first=Xiaoping |last=Zhu |first2=Ognjen |last2=Kuljaca |journal=Journal of Industrial Technology |volume=21 |issue=2 |year=2005 |url=http://www.nait.org/jit/Articles/zhu031105.pdf |archive-date=October 25, 2005 |archive-url=https://web.archive.org/web/20051025165844/http://nait.org/jit/Articles/zhu031105.pdf }}
+
+{{Statistical software}}
+
+[[Category:Comparisons of mathematical software|Statistical packages]]
+[[Category:Statistical software| ]]
+[[Category:Statistics-related lists]]
+[[Category:Mathematical and quantitative methods (economics)]]

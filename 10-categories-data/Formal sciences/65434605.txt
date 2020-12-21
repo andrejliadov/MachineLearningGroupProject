@@ -1,0 +1,28 @@
+In [[artificial intelligence]] (AI), particularly [[machine learning]] (ML), '''ablation''' is the removal of a component of an AI system. An '''ablation study''' studies the performance of an AI system by removing certain components, to understand the contribution of the component to the overall system. The term is by analogy with biology (removal of components of an organism), and, continuing the analogy, is particularly used in the analysis of [[artificial neural net]]s, by analogy with [[ablative brain surgery]].<ref>{{cite journal|first1=Richard|last1=Meyes|first2=Melanie|last2=Lu|first3=Constantin Waubert|last3=de Puiseau|first4=Tobias|last4=Meisen|title=Ablation Studies in Artificial Neural Networks|arxiv=1901.08644|url=https://arxiv.org/abs/1901.08644v2|date=2019-01-24}}</ref> Ablation studies require that the system exhibit [[graceful degradation]]: that they continue to function even when certain components are missing or degraded.{{sfn|Newell|1975}}
+
+==History==
+The term is credited to [[Allen Newell]],{{sfn|Cohen|Howe|1988|p=40|loc=Ablation and substitution studies.}} who used it in his 1974 tutorial on [[speech recognition]], published in {{harvtxt|Newell|1975}}. The term is by analogy with [[ablation]] in biology. The motivation was that, while individual components are engineered, the contribution of an individual component to the overall system performance is not clear; removing components allows this analysis.{{sfn|Newell|1975}}
+
+==References==
+{{reflist}}
+{{refbegin}}
+* {{cite conference
+|last=Newell |first=Allen |author-link=Allen Newell
+|year=1975
+|title=A Tutorial on Speech Understanding Systems
+|conference=In Speech Recognition: Invited Papers Presented at the 1974 IEEE Symposium
+|editor=D. Raj Reddy
+|editor-link=Raj Reddy
+|page=[{{GBurl|eJac7g7YfZIC|pg=PA43}} 43]
+|location=New York
+|publisher=Academic
+}}
+* {{cite journal|first1=Paul R.|last1=Cohen|first2=Adele E.|last2=Howe|title=How Evaluation Guides AI Research: The Message Still Counts More than the Medium|url=https://www.aaai.org/ojs/index.php/aimagazine/article/view/952|journal=AI Magazine|date=1988-12-15|issn=2371-9621|pages=35–43|volume=9|issue=4|doi=10.1609/aimag.v9i4.952}}
+{{refend}}
+
+{{compu-ai-stub}}
+
+[[Category:Artificial intelligence]]
+[[Category:Artificial neural networks]]
+[[Category:Causality]]
+[[Category:Machine learning]]

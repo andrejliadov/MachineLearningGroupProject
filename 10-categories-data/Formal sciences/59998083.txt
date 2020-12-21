@@ -1,0 +1,55 @@
+
+
+The '''priority heuristic''' is a simple, lexicographic decision strategy that correctly predicts classic violations of [[expected utility theory]] such as the [[Allais paradox]], the four-fold pattern, the certainty effect, the possibility effect, or intransitivities.<ref name="Brandstätter">Brandstätter, E., Gigerenzer, G., & Hertwig, R. (2006). The priority heuristic: Making choices without trade-offs. Psychological Review, 113, 409–432.</ref> 
+
+The heuristic maps onto Rubinstein’s three-step-model, according to which people first check dominance and stop if it is present, otherwise they check for dissimilarity.<ref name="Rubinstein">Rubinstein, A. (1988). Similarity and decision making under risk (Is there a utility resolution to the Allais-paradox?). Journal of Economic Theory, 46, 145–153.</ref> To highlight Rubinstein’s model consider the following choice problem:
+
+'''I:''' 50% chance to win 2,000<br>
+:50% chance to win nothing
+
+'''II:''' 52% chance to win 1,000<br>
+:48% chance to win nothing
+
+Dominance is absent, and while chances are similar monetary outcomes are not. Rubinstein’s model predicts that people check for dissimilarity and consequently choose Gamble I. Unfortunately, dissimilarity checks are often not decisive, and Rubinstein suggested that people, proceed to a third step that he left unspecified. The priority heuristic elaborates on Rubinstein’s framework by specifying this Step 3.
+
+== Priority heuristic ==
+For illustrative purposes consider a choice between two simple gambles of the type “a chance ''c'' of winning monetary amount ''x''; a chance (100 - ''c'') of winning amount ''y''.” A choice between two such gambles contains four reasons for choosing: the maximum gain, the minimum gain, and their respective chances; because chances are complementary, three reasons remain: the minimum gain, the chance of the minimum gain, and the maximum gain.
+
+For choices between gambles in which all outcomes are positive or 0, the priority heuristic consists of the following three steps (for all other choices see Brandstätter et al. 2006):
+
+'''Priority rule:''' Go through reasons in the order of minimum gain, chance of minimum gain, and maximum gain.
+
+'''Stopping rule:''' Stop examination if the minimum gains differ by 1/10 (or more) of the maximum gain; otherwise, stop examination if chances differ by 10% (or more).
+
+'''Decision rule:''' Choose the gamble with the more attractive gain (chance). The term “attractive” refers to the gamble with the higher (minimum or maximum) gain and to the lower chance of the minimum gain.
+
+== Examples ==
+Consider the following two choice problems, which were developed to support [[prospect theory]], not the priority heuristic.<ref name="Kahneman">Kahneman, D., & Tversky, A. (1979). Prospect theory: An analysis of decision under risk. Econometrica, 47, 263–291.</ref>
+
+'''Problem 1'''<br>
+'''A:''' 80% chance to win 4,000<br>
+:20% chance to win nothing
+'''B:''' 100% chance to win 3,000
+
+Most people chose B (80%). The priority heuristic starts by comparing the minimum gains of the Gambles A (0) and B (3,000). The difference is 3,000, which is larger than 400 (10% of the maximum gain), examination is stopped; and the heuristic predicts that people prefer the sure gain B, which is in fact the majority choice.<sup>A</sup>
+
+'''Problem 2'''<br>
+'''C:''' 45% chance to win 6,000<br>
+:55% chance to win nothing
+'''D:''' 90% chance to win 3,000 <br>
+:10% chance to win nothing
+
+Most people (86%) chose Gamble D. The priority heuristic starts by comparing the minimum gains (0 and 0). Because they do not differ, the probabilities (.45 and .90 or their logical complements .55 and .10) are compared. This difference is larger than 10%, examination stops and people are correctly predicted to choose D because of its higher probability of winning.
+
+== Empirical support and limitations ==
+The priority heuristic correctly predicted the majority choice in all (one-stage) gambles in Kahneman and Tversky (1979). Across four different data sets with a total of 260 problems, the heuristic predicted the majority choice better than (a) cumulative prospect theory, (b) two other modifications of expected utility theory, and (c) ten well-known heuristics (such as minimax or equal-weight) did.<ref name="Brandstätter" /> However, the priority heuristic fails to predict many simple decisions (that are typically not tested in experiments)<ref>Rieger, M. & Wang, M. (2008). What is behind the Priority Heuristic? – A mathematical analysis and comment on Brandstätter, Gigerenzer and Hertwig. Psychological Review, 115, 1, 274-280.</ref> and has no free parameters (which means that it cannot explain heterogeneity of decisions between subjects), which triggered criticism,<ref name="Birnbaum">Birnbaum, M. H. (2008). Evaluation of the priority heuristic as a descriptive model of risky decision making: Comment on Brandstaätter, Gigerenzer, and Hertwig (2006). Psychological Review, 115, 253–262.</ref><ref name="Johnson">Johnson, E. J., Schulte-Mecklenbeck, M., & Willemsen, M. C. (2008). Process models deserve process data: A comment on Brandstätter, Gigerenzer, and Hertwig (2006). Psychological Review, 115, 263–273.</ref>
+and countercriticism.<ref name="Brandstätter2">Brandstätter, E., Gigerenzer, G., & Hertwig, R. (2008). Risky choice with heuristics: Reply to Birnbaum (2008), Johnson, Schulte-Mecklenbeck, and Willemsen (2008), and Rieger and Wang (2008). Psychological Review, 115, 281–289.</ref><ref name="Brandstätter3">Brandstätter, E., & Gussmack, M. (2013). The cognitive processes underlying risky choice. Journal of Behavioral Decision Making, 26, 185–197.</ref><ref name="Su">Su, Y., Rao, L. L., Sun, H. Y., Du, X. L., Li, X., & Li, S. (2013). Is making a risky choice based on a weighting and adding process? An eye-tracking investigation. Journal of Experimental Psychology: Learning, Memory, and Cognition, 39, 1765–1780.</ref>
+
+== References ==
+<references />
+
+== External links ==
+* http://library.mpib-berlin.mpg.de/ft/eb/EB_Priority_2006.pdf
+
+[[Category:Mathematics]]
+[[Category:Heuristics]]

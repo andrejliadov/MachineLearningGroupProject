@@ -1,0 +1,21 @@
+'''Algorithmic transparency''' is the principle that the factors that influence the decisions made by [[algorithms]] should be visible, or transparent, to the people who use, regulate, and are affected by systems that employ those algorithms. Although the phrase was coined in 2016 by Nicholas Diakopoulos and Michael Koliska about the role of algorithms in deciding the content of digital journalism services,<ref>Nicholas Diakopoulos & Michael Koliska (2016): Algorithmic Transparency in the News Media, Digital Journalism, {{DOI|10.1080/21670811.2016.1208053}}</ref> the underlying principle dates back to the 1970s and the rise of automated systems for scoring consumer credit.
+
+The phrases "algorithmic transparency" and "algorithmic accountability"<ref>{{cite journal|last1=Diakopoulos|first1=Nicholas|title=Algorithmic Accountability: Journalistic Investigation of Computational Power Structures.|journal=Digital Journalism|date=2015|volume=3|issue=3|page=398-415}}</ref> are sometimes used interchangeably – especially since they were coined by the same people – but they have subtly different meanings. Specifically, "algorithmic transparency" states that the inputs to the algorithm and the algorithm's use itself must be known, but they need not be fair.  "Algorithmic accountability" implies that the organizations that use algorithms must be accountable for the decisions made by those algorithms, even though the decisions are being made by a machine, and not by a human being.<ref name="Dickey">{{cite news|last1=Dickey|first1=Megan Rose|title=Algorithmic Accountability|url=https://techcrunch.com/2017/04/30/algorithmic-accountability/|accessdate=4 September 2017|work=TechCrunch|date=30 April 2017}}</ref>
+
+Current research around algorithmic transparency interested in both societal effects of accessing remote services running algorithms.<ref>{{cite web|title=Workshop on Data and Algorithmic Transparency|url=http://datworkshop.org/|accessdate=4 January 2017|date=2015}}</ref>, as well as mathematical and computer science approaches that can be used to achieve algorithmic transparency<ref>{{cite web|title=Fairness, Accountability, and Transparency in Machine Learning|url=http://www.fatml.org/|accessdate=29 May 2017|date=2015}}</ref> In the United States, the [[Federal Trade Commission]]'s Bureau of Consumer Protection studies how algorithms are used by consumers by conducting its own research on algorithmic transparency and by funding external research.<ref name="Noyes">{{cite news|last1=Noyes|first1=Katherine|title=The FTC is worried about algorithmic transparency, and you should be too|url=http://www.pcworld.com/article/2908372/the-ftc-is-worried-about-algorithmic-transparency-and-you-should-be-too.html|accessdate=4 September 2017|work=PCWorld|date=9 April 2015|language=en}}</ref> In the [[European Union]], the data protection laws that came into effect in May 2018 include a "right to explanation" of decisions made by algorithms, though it is unclear what this means.<ref>{{cite journal |title=False Testimony |journal=Nature |date=31 May 2018 |volume=557 |issue=7707 |page=612}}</ref>
+
+==See also==
+* [[Black box]]
+* [[Explainable AI]]
+* [[Regulation of algorithms]]
+* [[Reverse engineering]]
+* [[Right to explanation]]
+
+== References ==
+<!-- Inline citations added to your article will automatically display here. See https://en.wikipedia.org/wiki/WP:REFB for instructions on how to add citations. -->
+{{reflist}}
+
+[[Category:Accountability]]
+[[Category:Algorithms]]
+[[Category:Mathematical logic]]
+[[Category:Theoretical computer science]]

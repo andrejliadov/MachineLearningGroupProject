@@ -1,0 +1,487 @@
+'''Tau functions''' are an important ingredient in the modern theory of [[integrable system]]s, and have numerous applications in a variety of other domains. Before being named as such, they were effectively introduced by ''Ryogo Hirota'' <ref> R. Hirota, "Reduction of soliton equations in bilinear form", ''Physica D, Nonlinear Phenomena'' '''18''' , 161-170 (1986)</ref> in his ''direct method'' approach to integrable systems, based on expressing them in an equivalent bilinear form. The term ''Tau function'', or ''<math> \tau </math>-function'', was first used systematically by [[Mikio Sato|Mikio Sato]]<ref name="Sato"> M. Sato, "Soliton equations as dynamical systems on infinite dimensional Grassmann manifolds", ''Kokyuroku, RIMS, Kyoto Univ.'', 30–46 (1981).</ref> and his students <ref name="DJKM1"> E. Date, M. Jimbo, M. Kashiwara and T. Miwa,  "Operator approach to the Kadomtsev-Petviashvili equation III". ''J. Phys. Soc. Jap.''  '''50''' (11): 3806–3812 (1981). {{doi|10.1143/JPSJ.50.3806}}.</ref> <ref name="DJKM2"> M. Jimbo and T. Miwa,  "Solitons and infinite-dimensional Lie algebras", ''Publ. Res. Inst. Math. Sci.'', '''19'''(3):943–1001 (1983).</ref> in the specific context of the [[Kadomtsev–Petviashvili equation |Kadomtsev–Petviashvili (or KP) equation]], and related integrable hierarchies. It is a central ingredient in the theory of [[solitons]]. Tau functions also appear as matrix model partition functions in the spectral theory of [[Random matrix|Random Matrices]], and may also serve as [[generating function]]s, in the sense of [[combinatorics]] and [[enumerative geometry]], especially in relation to [[moduli spaces]] of Riemann surfaces, and enumeration of branched coverings, or so-called [[ELSV formula|Hurwitz numbers]].
+
+
+==Definition of <math>\tau</math>-functions==
+There are two notions of <math>\tau </math>-functions, both introduced by the [[Mikio Sato |Sato]] school. The first is that of ''[[Isomonodromic deformation |isomonodromic]] <math>\tau </math>-functions'' 
+<ref name="JMU"> M. Jimbo, T.  Miwa,  and K.  Ueno, "Monodromy Preserving Deformation of Linear Ordinary Differential Equations with Rational Coefficients I", ''Physica D,''  '''2''', 306–352 (1981) </ref>. The second is  ''<math>\tau </math>-functions of the [[Mikio Sato |Sato]]-[[Graeme Segal|Segal]]-Wilson type'' <ref name="Sato"/> <ref name="SW"> G. Segal, G, Wilson, G., "Loop groups and equations of KdV type", ''Inst. Hautes Etudes Sci. Publ. Math.'', '''6''' (61), 5–65 (1985)</ref> for integrable hierarchies, such as the KP hierarchy, which are parametrized by linear operators satisfying [[isospectral]] deformation equations of [[Peter Lax | Lax]] type.
+ 
+A <math> \tau </math>-function of  [[isospectral]] type is a solution of the Hirota bilinear equations,
+from which the linear operator undergoing isospectral evolution can be uniquely reconstructed. Geometrically, in  the [[Mikio Sato|Sato]]<ref name="Sato"/> and [[Graeme Segal|Segal]]-Wilson <ref name="SW"/> sense, it is the value of the determinant of a [[Fredholm integral operator]], interpreted as the orthogonal projection of an element of a suitably defined (infinite dimensional) [[Grassmann manifold]] onto the ''origin'', as that element evolves under the linear exponential action of a maximal abelian subgroup of the general linear group. It typically arises as a [[Partition function (statistical mechanics)|partition function]], in the sense of [[statistical mechanics]], many-body [[quantum mechanics]] or [[quantum field theory]], as the underlying measure undergoes a linear exponential deformation.
+
+==Hirota bilinear residue relation for KP <math>\tau</math>-functions==
+
+A KP ([[Kadomtsev–Petviashvili equation |Kadomtsev–Petviashvili]]) <math>\tau</math>-function  <math>\tau(\mathbf{t})</math> 
+is a function of an infinite number of KP flow variables <math>\mathbf{t}=(t_1, t_2, \dots)</math> that satisfies the
+following bilinear formal residue equation
+{{NumBlk|::| <math> \mathrm{res}_{z=0}\left(e^{\sum_{i=1}^\infty (\delta t_i)z^i} \tau({\bf t} - [z^{-1}])\tau({\bf s} + [z^{-1}])\right)dz  \equiv 0, </math>|{{EquationRef|1}}}}
+identically in the <math> \delta t_j </math> variables, where <math>\mathrm{res}_{z=0}</math> is the 
+<math>z^{-1}</math> coefficient in the formal Laurent expansion resulting from expanding all factors as Laurent series' in <math>z</math>, and
+
+:: <math> {\bf s} := {\bf t} + (\delta t_1, \delta t_2, \cdots  ), \quad [z^{-1}] := (z^{-1}, \tfrac{z^{-2}}{2}, \cdots \tfrac{z^{-j}}{j}, \cdots).  </math>
+
+==Kadomtsev-Petviashvili equation==
+
+If  <math>\tau(t_1, t_2, t_3, \dots\dots) </math> is a KP <math>\tau </math>  function satisfying  
+the Hirota residue equation ({{EquationNote|1}})  and we identify the first three flow variables as
+::<math>t_1 =x, \quad t_2=y,\quad t_3 =t,\quad </math> 
+it follows that the function
+::<math>u(x,y,t):=2\frac{\partial^2}{\partial x^2}\log\left(\tau(x,y,t, t_4,\dots)\right) </math>
+satisfies the <math>2+1</math> dimensional nonlinear partial differential equation
+{{NumBlk|::| <math>3u_{yy}=\left(4u_t-6uu_x-u_{xxx}\right)_x, </math> |{{EquationRef|2}}}}
+known as the [[Kadomtsev–Petviashvili equation|''Kadomtsev-Petviashvili'' (KP)  ''equation'']], which plays a prominent role in plasma physics and in shallow water ocean waves. 
+
+Taking further logarithmic derivatives of <math>\tau(t_1, t_2, t_3, \dots\dots)</math> gives an infinite sequence of functions that  satisfy further systems of nonlinear autonomous PDE's, each involving partial derivatives of finite order with respect to a finite number of the KP flow parameters <math>{\bf t} =(t_1, t_2, \dots )</math>.  These are collectively known as the ''KP hierarchy''.
+
+== Formal Baker-Akhiezer function and the KP hierarchy ==
+
+If we define the (formal) Baker-Akhiezer function <math>\Psi(z, \mathbf{t})</math>
+by Sato's formula
+:: <math>
+\Psi(z, \mathbf{t}) :=
+e^{\sum_{i=1}^\infty t_i z^i} 
+\frac{\tau(\mathbf{t} - [z^{-1}])}{\tau(\mathbf{t})}
+</math>
+and expand it as a formal series in the powers of the variable <math>z</math>
+::<math>
+\Psi(z, \mathbf{t}) = e^{\sum_{i=1}^\infty t_i z^i} 
+( 1 + \sum_{j=1}^\infty w_j(\mathbf{t}) z^{-j}), </math>
+this satisfies an infinite sequence of compatible evolution equations
+{{NumBlk|::| <math>
+\frac{\partial \Psi }{\partial t_i} =  \mathcal{D}_i \Psi ,  \quad i,j, = 1,2 , \dots,
+</math>|{{EquationRef|3}}}}
+where <math> \mathcal{D}_i</math> is a linear ordinary differential operator of degree <math>i</math> 
+in the variable <math>x:= t_1</math>, with coefficients that are functions of the flow variables 
+<math> \mathbf{t}=(t_1, t_2, \dots)</math>, defined as follows
+::<math>
+\mathcal{D}_i := \big(\mathcal{L}^i\big)_+
+</math>
+where <math>\mathcal{L}</math> is the formal pseudo-differential operator
+:: <math>
+\mathcal{L} = \partial + \sum_{j=1}^\infty  u_j(\mathbf{t}) \partial^{-j}
+= \mathcal{W} \circ\partial \circ{\mathcal{W}}^{-1}
+</math>
+with <math> \partial := \frac{\partial}{\partial x} </math>,
+where
+:: <math>
+\mathcal{W} := 1 +\sum_{j=1}^\infty w_j(\mathbf{t}) \partial^{-j}
+</math>
+is the ''wave operator'' and <math>\big(\mathcal{L}^i\big)_+</math>
+denotes the projection to the part of <math>\mathcal{L}^i</math> containing
+purely non-negative powers of <math> \partial </math>; i.e. to the differential operator part of
+<math>{\mathcal{L}}^i</math> .
+
+The pseudodifferential operator <math>\mathcal{L}</math> satisfies the infinite system of isospectral deformation equations
+{{NumBlk|::| <math>
+\frac{\partial\mathcal{L} }{\partial t_i} = [\mathcal{D}_i, \mathcal{L} ], \quad i, = 1,2 , \dots
+</math>|{{EquationRef|4}}}}
+and the compatibility conditions for both the system  ({{EquationNote|3}}) and 
+({{EquationNote|4}}) are
+::<math>
+\frac{\partial\mathcal{D}_i}{\partial t_j} - \frac{\partial\mathcal{D}_j}{\partial t_i}  + [\mathcal{D}_i, \mathcal{D}_j]=0,  \quad i,j, = 1,2 , \dots
+</math>
+
+This is a compatible  infinite system of nonlinear partial differential equations,
+known as the ''KP (Kadomtsev-Petviashvili) hierarchy'',  for the functions
+<math>\{u_j(\mathbf{t})\}_{j\in \mathbf{N}}</math>, with respect to the set 
+<math>\mathbf{t}=(t_1, t_2, \dots)</math> of independent variables, each of which contains 
+only a finite number of <math>u_j</math>'s, and derivatives only with respect to the three independent variables  <math>(x, t_i, t_j)</math>. The first nontrivial case of these
+is the [[Kadomtsev-Petviashvili equation]] ({{EquationNote|2}}). 
+
+Thus, every KP <math>\tau</math> function provides a solution, at least in the formal sense,
+of this infinite system of nonlinear partial differential equations
+
+==Fuchsian isomonodromic systems: Isomonodromic <math> \tau </math>-functions==
+
+Consider the [[overdetermined system]] of first order matrix partial differential equations
+{{NumBlk|::| <math>{\partial \Psi \over \partial z}- \sum_{i=1}^n {N_i \over z - \alpha_i} \Psi=0, \quad </math>|{{EquationRef|5}}}}
+{{NumBlk|::| <math> {\partial \Psi \over \partial \alpha_i}+ {N_i \over z - \alpha_i} \Psi=0  </math> |{{EquationRef|6}}}}
+where <math> \{N_i\}_{i=1, \dots , n}</math> are a set of <math>n</math> <math>r\times r</math> traceless matrices, 
+<math>\{\alpha_i\}_{i=1, \dots , n}</math> a set of <math>n</math> complex parameters and <math>z</math> a complex variable, and <math>\Psi(z, \alpha_1, \dots , \alpha_m)</math> is an invertible <math>r \times r</math> matrix valued function of <math>z</math> and <math>\{\alpha_i\}_{i=1, \dots , n}</math>.
+These are the necessary and sufficient conditions for the based [[monodromy]] representation of the fundamental group
+<math>\pi_0({\bf P}^1\backslash\{\alpha_i\}_{i=1, \dots , n})</math> of the Riemann sphere punctured at
+the points <math>\{\alpha_i\}_{i=1, \dots , n}</math>   corresponding to the rational covariant derivative operator <math>{\partial  \over \partial z}- \sum_{i=1}^n {N_i \over z - \alpha_i}</math> to
+be independent of the parameters <math>\{\alpha_i\}_{i=1, \dots , n}</math>; i.e. that changes in these parameters induce an [[isomonodromic deformation]]. The compatibility conditions for this system are the [[Schlesinger equations]]
+:<ref name="JMU"/>
+:<math> {\partial N_i \over \partial \alpha_j} = {[N_i, N_j] \over \alpha_i-\alpha_j} \quad \text{ for } i \neq j,</math>
+:<math>{\partial N_i \over \partial \alpha_i} = - \sum_{1\le j \le n, j\neq i}{[N_i, N_j] \over \alpha_i-\alpha_j}. </math> 
+
+Defining the <math>n</math> functions
+:<math> H_i = \frac{1}{2} \sum_{1\le j \le n, j\neq i}{{\rm Tr}(N_i N_j) \over \alpha_i-\alpha_j}, \quad i=1, \dots ,n, </math> 
+the [[Isomonodromic deformation|Schlesinger equations]] imply that the differential form
+:<math>\omega := \sum_{i=1}^n H_i d\alpha_i</math>
+on the space of parameters is closed:
+:<math>d\omega = 0</math>
+and hence, locally exact. Therefore, at least locally, there exists a function 
+<math>\tau(\alpha_1, \dots, \alpha_n)</math>
+of the parameters, defined within a multiplicative constant, such that
+:<math>\omega = d\mathrm{ln}\tau </math>
+The function <math>\tau(\alpha_1, \dots, \alpha_n)</math> is called the ''isomonodromic <math>\tau</math>-function''
+associated to the fundamental solution <math>\Psi</math> of the system ({{EquationNote|5}}), ({{EquationNote|6}}).
+For non-Fuchsian systems, with higher order poles, the ''generalized'' monodromy data include ''[[Stokes parameters]]'' and ''connection matrices'', and there are further [[isomonodromic deformation]] parameters associated with the local asymptotics, but the ''isomonodromic <math> \tau </math>-functions'' may be defined in a similar way, using differentials on the extended parameter space.<ref name="JMU"/>
+
+==Fermionic VEV (vacuum expectation value) representations==
+
+The fermionic Fock space <math>\mathcal{F}</math>, is a semi-infinite exterior product space 
+
+::<math>\mathcal{F} = \Lambda^{\infty/2}\mathcal{H} = \oplus_{n\in \mathbf{Z}}\mathcal{F}_n </math>
+defined on a (separable) Hilbert space <math>\mathcal{H} </math> with basis elements 
+<math>\{e_i\}_{i\in \mathbf{Z}}\}</math> and dual basis elements 
+<math>\{e^i\}_{i\in \mathbf{Z}}\}</math> for <math>\mathcal{H}^* </math>.
+
+The free fermionic creation and annihilation operators 
+<math>\{\psi_j, \psi^{\dagger}_j\}_{j \in \mathbf{Z}}</math> act as endomorphisms on
+<math>\mathcal{F}</math> via exterior and interior multiplication by the basis elements
+
+:: <math>\psi_i := e_i \wedge, \quad \psi^\dagger_i := i_{e^i}, \quad i \in \mathbf{Z},</math>
+and satisfy the canonical anti-commutation relations
+
+::<math> [\psi_i,\psi_k]_+ = [\psi^\dagger_i,\psi^\dagger_k]_+= 0, \quad  [\psi_i,\psi^\dagger_k]_+= \delta_{ij}.</math>
+
+These generate the standard fermionic representation of the Clifford algebra 
+on the direct sum <math>\mathcal{H} +\mathcal{H}^* </math>,
+corresponding to the scalar product 
+
+::<math>Q(u + \mu, w + \nu) := \nu(a) + \mu(v), \quad u,v \in \mathcal{H},\ \mu, \nu \in \mathcal{H}^* </math>
+
+with the Fock space <math>\mathcal{F}</math> as irreducible module.
+Denote the  vacuum state, in the zero fermionic charge sector <math>\mathcal{F}_0</math>, as 
+
+:: <math>|0\rangle := e_{-1}\wedge e_{-2} \wedge \cdots</math>,
+
+which corresponds to the [[Dirac sea|''Dirac sea'']] of states along the real integer lattice in
+which all negative integer locations are occupied and all non-negative ones are empty. 
+
+This is annihilated by the following operators
+
+::<math> \psi_{-j}|0 \rangle = 0, \quad \psi^{\dagger}_{j-1}|0 \rangle = 0, \quad j=0, 1, \dots </math>
+
+The dual fermionic Fock space vacuum state, denoted <math>\langle 0 |</math>, is annihilated by the adjoint operators, acting to the left
+
+::<math> \langle 0| \psi^\dagger_{-j} = 0, \quad  \langle 0 | \psi_{j-1}|0 = 0, \quad j=0, 1, \dots </math>
+
+[[Normal ordering|Normal ordering]] <math>: L_1, \cdots L_m:</math> of a product of 
+linear operators (i.e., finite or infinite linear combinations of creation and annihilation operators) is defined  so that its vacuum expectation value (VEV) vanishes
+::<math> \langle 0 |: L_1, \cdots L_m:|0 \rangle =0 . </math>
+In particular, for a product <math>L_1 L_2</math> of a pair <math>(L_1, L_2)</math>
+of linear operators
+
+::<math> :L_1 L_2: = L_1 L_2 - \langle 0 | L_1 L_2|0 \rangle . </math>
+
+The ''fermionic charge'' operator <math> C </math> is defined as
+
+::<math> C = \sum_{i\in \mathbf{Z}} :\psi_i \psi^\dagger_i : </math>
+
+The subspace <math>\mathcal{F}_n \subset \mathcal{F}</math> is the eigenspace of <math> C</math>
+consisting of all eigenvectors with eigenvalue <math>n</math>
+
+:: <math> C | v; n\rangle = n | v; n\rangle, \quad \forall | v; n\rangle \in \mathcal{F}_n  </math>.
+
+
+The standard orthonormal basis <math>\{|\lambda\rangle\}</math> for the zero fermionic charge sector <math>\mathcal{F}_0</math> is labelled  by integer [[partitions]]
+<math> \lambda = (\lambda_1, \dots, \lambda_{\ell(\lambda)})</math>,
+where <math>\lambda_1\ge \cdots \ge \lambda_{\ell(\lambda)}</math>
+is a weakly decreasing sequence of <math>\ell(\lambda)</math> positive integers, which can equivalently be represented by a [[Young diagram]], as depicted here for the partition 
+<math>(5, 4, 1)</math>.
+
+:[[Image:Young diagram for 541 partition.svg|thumb|center|150px|Young diagram of the partition (5, 4, 1)]]
+
+An alternative notation for a partition <math>\lambda</math> consists of the 
+[[Ferdinand Georg Frobenius|Frobenius]] indices
+<math>(\alpha_1, \dots \alpha_r | \beta_1, \dots \beta _r)</math>, where <math>\alpha_i</math>
+denotes the ''arm length''; i.e. the number <math>\lambda_i -i</math> of boxes in the Young diagram to the right of the <math>i</math>'th diagonal box, <math>\beta_i</math> denotes the ''leg length'', i.e. the number of boxes in the Young diagram below the <math>i</math>'th diagonal box,  for <math>i=1, \dots, r</math>, where <math>r</math> is the ''Frobenius rank'', which is the number of diagonal elements.
+
+The basis element <math>|\lambda\rangle</math> is then given by acting on the vacuum with a product
+of <math>r</math> pairs of creation and annihilation operators, labelled by the Frobenius indices
+
+:: <math> |\lambda\rangle = (-1)^{\sum_{j=1}^r \beta_j} 
+\prod_{k=1}^r \big(\psi_{\alpha_k} \psi^\dagger_{-\beta_k-1}\big)| 0 \rangle. </math>
+
+The integers <math>\{\alpha_i\}_{i=1, \dots, r}</math> indicate, relative to the Dirac sea,
+the occupied non-negative sites on the integer lattice while 
+<math>\{-\beta_i-1\}_{i=1, \dots, r}</math> indicate the unoccupied negative integer sites.
+The corresponding diagram, consisting of infinitely many occupied and unoccupied sites on the integer lattice  that are a finite perturbation of the Dirac sea are referred to as a ''Maya diagram''.<ref name="Sato"/>
+
+The case of the null (emptyset) partition <math>|\emptyset\rangle = |0 \rangle</math>
+gives the vacuum state, and the dual basis <math>\langle \mu|\}</math> is defined by
+
+:: <math>\langle \mu|\lambda\rangle = \delta_{\lambda, \mu} </math>
+
+Then any KP <math>\tau</math>-function can be expressed as a sum
+
+::<math>\tau_w(\mathbf{t}) = \sum_{\lambda} \pi_\lambda(w) s_\lambda(\mathbf{t})</math>
+
+where <math>\mathbf{t} = (t_1, t_2, \dots, \dots)</math> are the KP flow variables,
+<math>s_\lambda(\mathbf{t})</math> is the [[Schur polynomial|Schur function]] 
+corresponding to the partition <math>\lambda</math>, viewed as a function of the normalized power sum variables
+
+::<math> t_i := [\mathbf{x}]_i := \tfrac{1}{i} \sum_{a=1}^n x_a^i \quad i = 1,2 , \dots </math>
+
+in terms of an auxiliary (finite or infinite) sequence of variables 
+<math>\mathbf{x}:=(x_1, \dots, x_N)</math> and the constant coefficients 
+<math>\pi_\lambda(w)</math> may be viewed as the [[Plucker coordinates]] of an 
+element <math>w\in \mathrm{Gr}_{\mathcal{H}_+}(\mathcal{H}) </math> 
+of the infinite dimensional Grassmannian consisting of the orbit, under the action of 
+the general linear group <math>\mathrm{Gl}(\mathcal{H})</math>, of the subspace 
+<math>\mathcal{H}_+ = \mathrm{span}\{e_{-i}\}_{i \in \mathbf{N}} \subset \mathcal{H} </math> 
+of the  Hilbert space <math>\mathcal{H}</math>.
+
+This corresponds, under the ''Bose-Fermi correspondence'', to a [[Exterior algebra|decomposable]] element
+
+::<math> |\tau_w\rangle = \sum_{\lambda} \pi_{\lambda}(w) |\lambda \rangle </math>
+
+of the Fock space <math>\mathcal{F}_0</math> which, up to projectivization is the image
+of the Grassmannian element <math>w\in \mathrm{Gr}_{\mathcal{H}_+}(\mathcal{H}) </math> under the 
+[[Plucker coordinates|Plucker map]]
+
+::<math> \mathcal{Pl}: \mathrm{span}(w_1, w_2, \dots ) 
+\longrightarrow [w_1 \wedge w_2 \wedge \cdots ] </math>
+
+where  <math>(w_1, w_2, \dots )</math> is a basis for the subspace  
+<math>w\subset \mathcal{H}</math> and <math>[ \cdots]</math> denotes projectivization of
+an element of <math>\mathcal{F}</math>.
+
+The Plucker coordinates <math>\{\pi_\lambda(w)\}</math> satisfy an infinite set of bilinear
+relations, the [[Plucker relations]], which are equivalent to the 
+Hirota bilinear residue relation ({{EquationNote|1}}).
+
+If <math> w = g(\mathcal{H}_+)</math> for a group element <math> g \in \mathrm{Gl}(\mathcal{H})</math>
+with fermionic representation <math>\hat{g}</math>, then  the <math>\tau</math>-function
+<math>\tau_w(\mathbf{t})</math> can be expressed as the fermionic vacuum state expectation value (VEV):
+
+::<math>\tau_w(\mathbf{t}) = \langle 0 | \hat{\gamma}_+(\mathbf{t}) \hat{g} | 0 \rangle,   </math>
+
+where
+
+::<math>\Gamma_+ =\{\hat{\gamma}_+(\mathbf{t}) = e^{\sum_{i=1}^\infty t_i J_i}\} 
+\subset \mathrm{Gl}(\mathcal{H}) </math>
+
+is the abelian subgroup  of <math>\mathrm{Gl}(\mathcal{H})</math> that generates the KP flows, and
+
+::<math> J_i := \sum_{j\in \mathbf{Z}} \psi_j \psi^\dagger_{j+i}, \quad i=1,2 \dots </math>
+
+are the ""current"" components.
+
+== Multisoliton solutions==
+
+If we choose <math>3N</math> complex constants
+<math>\{\alpha_k, \beta_k, \gamma_k\}_{k=1, \dots, N}</math>
+with <math>\alpha_k, \beta_k</math>'s all distinct, <math>\gamma_k \ne 0</math>, and define the functions
+::<math>
+ y_k({\bf t}) := e^{\sum_{i=1}^\infty t_i \alpha_k^i} +\gamma_k e^{\sum_{i=1}^\infty t_i \beta_k^i} \quad k=1,\dots, N,
+</math>
+we arrive at the Wronskian determinant formula
+:<math>
+\tau^{(N)}_{\vec\alpha, \vec\beta, \vec\gamma}({\bf t}):=
+\begin{vmatrix}
+ y_1({\bf t})& y_2({\bf t}) &\cdots& y_N({\bf t})\\
+ y_1'({\bf t})& y_2'({\bf t}) &\cdots& y_N'({\bf t})\\
+\vdots & \vdots &\ddots &\vdots\\ 
+ y_1^{(N-1)}({\bf t})& y_2^{(N-1)}({\bf t}) &\cdots& y_N^{(N-1)}({\bf t})\\
+ \end{vmatrix}.
+</math>
+which gives the general [[Solitons|<math>N</math>-soliton]] solution.<ref name="DJKM1"/><ref name="DJKM2"/>
+
+== Theta function solutions associated to algebraic curves==
+
+Let  <math>X</math> be a compact  Riemann surface  of genus <math>g</math> and fix a canonical homology basis <math>a_1, \dots, a_g, b_1, \dots, b_g</math>
+of <math>H_1(X,\mathbf{Z})</math> with intersection numbers 
+::<math>
+a_i \circ a_j = b_i \circ b_j =0, \quad  a_i\circ b_j =\delta_{ij},\quad 1\leq i,j \leq g.
+</math>
+Let <math>\{\omega_i\}_{i=1, \dots, g}</math> be a basis for the space <math>H^1(X)</math> of [[Differential of the first kind|holomorphic differentials]]  satisfying  the standard normalization conditions
+::<math>
+\oint_{a_i} \omega_j =\delta_{ij}, \quad \oint_{b_j }\omega_j = B_{ij},
+</math>
+
+where <math>B</math> is the ''[[Schottky problem|Riemann matrix]]''  of periods. 
+The matrix <math>B</math> belongs to the ''Siegel upper half space'' 
+::<math>
+\mathbf{S}_g=\left\{B \in \mathrm{Mat}_{g\times g}(\mathbf{C})\ \colon\  B^T = B,\ \text{Im}(B) 
+\text{ is positive definite}\right\}.
+</math>
+
+The  [[Theta function|Riemann <math>\theta</math> function]] on <math>\mathbf{C}^g</math> corresponding to the [[Period mapping|period matrix]] <math>B</math> is defined to be
+::<math>
+\theta(Z | B) := \sum_{N\in \Z^g} e^{i\pi (N, B N) + 2i\pi (N, Z)}.
+</math>
+
+Choose a point <math>p_\infty \in X</math>, a local parameter <math>\zeta</math> in a neighbourhood of <math>p_{\infty}</math> with <math>\zeta(p_\infty)=0</math> and 
+a positive [[Divisor|divisor]] of degree <math>g</math> 
+::<math>
+\mathcal{D}:= \sum_{i=1}^g p_i,\quad p_i \in X.
+</math>
+For any positive integer <math>k\in \mathbf{N}^+</math> let <math>\Omega_k</math> be the unique [[Differential of the first kind|meromorphic differential]]  of the second kind characterized by the following conditions:
+
+- The only singularity of <math>\Omega_k</math> is a pole of order <math>k+1</math> at <math>p=p_\infty</math> with vanishing residue.
+
+- The expansion of <math>\Omega_k</math> around <math>p=p_{\infty}</math> is
+::
+<math>\Omega_k = d(\zeta^{-k} ) + \sum_{j=1}^\infty Q_{ij} \zeta^j d\zeta</math>.
+
+- <math>\Omega_k</math> is normalized to have vanishing <math>a</math>-cycles:
+::<math>
+\oint_{a_i }\Omega_j =0.
+</math>
+
+Denote by <math>\mathbf{U}_k \in \mathbf{C}^g</math> the vector of <math>b</math>-cycles of <math>\Omega_k</math>:
+::
+<math>
+(\mathbf{U}_k)_j := \oint_{b_j} \Omega_k.
+</math>
+
+Denote the image of <math>{\mathcal D}</math> under the [[Abel–Jacobi map|Abel]] map 
+<math>\mathcal{A} : \mathcal{S}^g(X) \to \mathbf{C}^g </math>  
+::
+<math>
+\mathbf{E} := \mathcal{A}(\mathcal{D}) \in \C^g,  \quad \mathbf{E}_j 
+= \mathcal{A}_j (\mathcal{D}) := \sum_{j=1}^g \int_{p_0}^{p_i}\omega_j
+</math>
+with arbitrary base point <math>p_0</math>. 
+
+Then the following is a KP <math>\tau</math>-function:
+::
+<math>
+\tau_{(X, \mathcal{D}, p_\infty, \zeta)}(\mathbf{t}):= e^{-{1\over 2} \sum_{ij} Q_{ij}t _i t_j}
+\theta\left(\mathbf{E} +\sum_{k=1}^\infty t_k \mathbf{U}_k \Big|B\right).
+</math>
+
+==Matrix model partition functions as KP <math>\tau</math>-functions==
+
+Let  <math>d\mu_0(M)</math> be the Lebesgue measure on the <math>N^2</math> dimensional space <math>{\mathbf H}^{N\times N}</math> of <math>N\times N</math> complex Hermitian matrices.
+Let <math>\rho(M)</math> be a conjugation invariant integrable density function
+::<math>
+\rho(U M U^{\dagger}) = \rho(M), \quad U\in U(N).
+</math>
+Define a deformation family of measures
+::<math>
+d\mu_{N,\rho}(\mathbf{t}) := e^{\text{ Tr }(\sum_{i=1}^\infty t_i M^i)} \rho(M) d\mu_0 (M)
+</math>
+for small <math>\mathbf{t}= (t_1, t_2, \cdots)</math> and let
+::<math>
+\tau_{N,\rho}({\bf t}):= \int_{{\mathbf H}^{N\times N} }d\mu_{N,\rho}({\bf t}).
+</math>
+be the [[Partition function (statistical mechanics)|partition function]] for this 
+[[Random matrix|random matrix model]]<ref> M.L. Mehta, "Random Matrices",  3rd ed.,
+vol. 142 of ''Pure and Applied Mathematics'', Elsevier, Academic Press, {{ISBN|9780120884094}} (2004).</ref>.
+Then <math>\tau_{N,\rho}(\mathbf{t})</math> satisfies the bilinear Hirota residue equation ({{EquationNote|1}}), and hence is a <math>\tau</math>-function of the KP hierarchy.<ref> S. Kharchev, A. Marshakov, A. Mironov, A. Orlov, A. Zabrodin, "Matrix models among integrable theories: 
+Forced hierarchies and operator formalism", ''Nucl. Phys. '' '''B366''', 569-601 (1991).</ref>
+
+==<math>\tau</math>-functions of hypergeometric type. Generating function for Hurwitz numbers==
+
+Let <math>\{r_i\}_{i\in \mathbf{Z}}</math> be a (doubly) infinite sequence of complex numbers.
+For any integer partition <math> \lambda = (\lambda_1, \dots, \lambda_{\ell(\lambda)})</math>
+define the ''content product'' coefficient
+::<math>
+r_{\lambda} := \prod_{(i,j)\in \lambda} r_{j-i}
+</math>
+where the product is over all pairs <math>(i,j)</math> of positive integers that
+correspond to boxes of the Young diagram of the partition  <math> \lambda </math>,
+viewed as positions of matrix elements of the corresponding 
+<math>\ell(\lambda) \times \lambda_1</math> matrix.
+Then, for every pair of infinite sequences <math> \mathbf{t} = (t_1, t_2, \dots )</math>
+and  <math> \mathbf{s} = (s_1, s_2, \dots )</math> of complex vaiables, viewed
+as  (normalized) power  sums  <math> \mathbf{t} = [\mathbf{x}], \ \mathbf{s} = [\mathbf{y}]</math>
+of the infinite sequence of auxiliary variables  <math> \mathbf{x} = (x_1, x_2, \dots )</math> and
+<math> \mathbf{y} = (y_1, xy2, \dots )</math>, defined  by
+::<math>
+t_j := \tfrac{1}{j}\sum_{a=1}^\infty x_a^j, \quad s_j := \tfrac{1}{j} \sum_{j=1}^\infty y_a^j,
+</math>
+the function
+::<math>
+\tau^r(\mathbf{t},\mathbf{s}) := \sum_{\lambda}r_\lambda s_\lambda(\mathbf{t})s_\lambda(\mathbf{s})
+</math>
+is a ''double'' KP <math>\tau</math>-function,  both in the <math> \mathbf{t}</math>
+and the <math> \mathbf{s}</math> variables, known as a <math>\tau</math> function of ''hypergeometric type''.<ref> A. Yu. Orlov, "Hypergeometric functions as infinite-soliton 
+<math>\tau</math>-functions",  ''Theor. Math. Phys.,'' '''146'''(2), 183-206 (2006)</ref>
+
+In particular, choosing
+::<math>
+r_j = r^{\beta}_j := e^{j\beta}
+</math>
+for some small parameter <math>\beta</math>, denoting the corresponding content product coefficient as <math> r_\lambda^\beta</math>
+and setting <math>\mathbf{s} = (1, 0, \dots)=: \mathbf{t}_0</math>, the resulting 
+<math> \tau </math>-function can be equivalently expanded as
+{{NumBlk|::|<math>
+\tau^{r^\beta}(\mathbf{t},\mathbf{t}_0)
+= \sum_{\lambda}\sum_{d=0}^\infty \frac{\beta^d}{d!} H_d(\lambda)p_\lambda(\mathbf{t}),
+</math>|{{EquationRef|7}}}}
+where <math>H_d(\lambda)</math> are the ''simple Hurwitz numbers'', which are 
+<math> \frac{1}{n!}</math> times the number of ways in which an element 
+<math>k_\lambda \in \mathcal{S}_{n}</math> of the symmetric group <math>\mathcal{S}_{n}</math> in <math>n=|\lambda|</math> elements, with cycle lengths 
+equal to the parts of the partition <math>\lambda</math>, can be factorized as a product of <math>d</math> <math>2</math>-cycles
+::<math>
+h_\lambda = (a_1 b_1)\dots (a_d b_d),
+</math>
+and
+::<math>
+p_{\lambda}(\mathbf{t}) = \prod_{i=1}^{\ell(\lambda)} p_{\lambda_i}(\mathbf{t}),
+\text{ with }
+p_i(\mathbf{t}) := \sum_{a=1}^\infty x^i_a = i t_i
+</math>
+is the power sum symmetric function. Equation ({{EquationNote|7}}) thus shows that
+the (formal) KP hypergeometric <math>\tau</math>-function corresponding to the content
+product coefficients <math> r_\lambda^\beta</math> is a generating
+function, in the combinatorial sense, for simple Hurwitz numbers.
+<ref> R. Pandharipande, "The Toda equations and the Gromov–Witten theory of the Riemann sphere",
+'' Lett. Math. Phys.]] '''53''', 59-74 (2000).</ref>
+<ref> A. Okounkov, "Toda equations for Hurwitz numbers",  
+''Math. Res. Lett.'' '''7''', 447-453 (2000).</ref>
+
+==References==
+<references />
+*{{Citation
+| last=Dickey
+| first= L.A.
+| title=Soliton Equations and Hamiltonian Systems
+| year=2003
+| journal=vol. 26 of Advanced Series in Mathematical Physics. World Scientific Publishing Co., Inc., River Edge, NJ, 2nd ed.
+}}
+*{{Citation
+| last1=Harnad
+| first1= J.
+| authorlink1=John Harnad
+| last2=Balogh
+| first2= F.
+| title=Tau functions and Their Applications
+| year=2020
+| journal=Cambridge Monographs on Mathematical Physics, Cambridge University Press, Cambridge, U.K.
+}}
+*{{Citation
+| last=Hirota
+| first= R.
+| title=The Direct Method in Soliton Theory 
+| year=2004
+| journal=Cambridge University Press, Cambridge , U.K.
+}}
+
+*{{Citation
+| last1=Jimbo
+| first1= M.
+| authorlink1=Michio Jimbo
+| last2=Miwa
+| first2= T.
+| authorlink2=Tetsuji Miwa
+| title=Solitons: Differential Equations, Symmetries and Infinite Dimensional Algebras
+| year=1999
+| series = Cambridge Tracts in Mathematics
+| journal=Cambridge University Press, Cambridge , U.K.
+| volume= 135
+
+}}
+
+*{{Citation
+| last=Kodama
+| first= Y.
+| title=KP Solitons and the Grassmannians: Combinatorics and Geometry of Two-Dimensional Wave Patterns
+| year=2017
+| journal=Cambridge University Press, Cambridge , U.K.
+| series = Springer Briefs in Mathematical Physics
+| volume = Springer Nature
+}}
+
+[[Category:Mathematics]]
+[[Category:Mathematical physics]]
+[[Category:Integrable systems]]
+[[Category:Special functions]]
+[[Category:Generating functions]]
+[[Category:Partition functions]]

@@ -1,0 +1,98 @@
+<!-- This portal was created using {{subst:Basic portal start page}}  -->
+{{Portal maintenance status|date=June 2018|subpages=keep}}
+{{Portal description}}
+{{pp-semi-protected|small=yes}}
+{{pp-move-indef}}
+{{Portals browsebar}}
+<div style="padding:5px; background:white; border:1px solid lightgrey;">
+<div style="clear:both; width:100%">
+{{/box-header|<big>The Biography Portal</big>}}
+{{/Intro}}
+{{Box-footer}}
+{{Purge link portals}}
+</div><!--
+
+--><div class="portal-column-left">
+{{/box-header|Selected biographies {{#if: {{{Purge|}}}{{{purge|}}} | {{{Purge|}}}{{{purge|}}} |– {{purge|<small>{{color|darkblue|''show different entries''}}</small>}}}}}}
+{{Transclude list item excerpts as random slideshow | paragraphs=1-2 | files=1 | limit=15
+| Portal:Biography/Recognized content
+| section = Featured articles
+}}
+{{Box-footer}}
+<!--CONDITIONAL DID YOU KNOW? SECTION - ONLY SHOWS UP WHEN THERE ARE ENTRIES TO DISPLAY-->
+{{Transclude selected recent additions | %sactor%s | %sartist%s | %sathlete%s | biograph | %sBishop%s | %sdiplomat%s | %seducator%s | %sengineer%s | %sperson to%s | %sGovernor%s | %sleader%s | %smusician%s | %sPope%s | %sPresident%s | %sscientist%s | %sSir%s | %swriter%s | months=24 | header={{/box-header|Did you know... {{#if: {{{Purge|}}}{{{purge|}}} | {{{Purge|}}}{{{purge|}}} |- {{purge|<small>{{color|darkblue|''show different entries''}}</small>}}}}}}|max=12}}
+<!--END OF DID YOU KNOW? SECTION-->
+{{/box-header|General images}}
+<div style="text-align: center;"><small>'''The following are images from various biography-related articles on Wikipedia.'''</small></div>
+{{Transclude files as random slideshow
+| Biography
+| Autobiography
+|
+}}
+{{Box-footer}}
+
+{{/box-header| Need help?}}
+Do you have a question about Wikipedia biographical content that you can't find the answer to?
+
+Consider asking it at the [[Wikipedia:Reference desk|Wikipedia reference desk]].
+{{Box-footer}}
+{{#ifexist: Wikipedia:WikiProject {{PAGENAME}}
+ | {{/box-header| Get involved}}
+For editor resources and to collaborate with other editors on improving Wikipedia's {{PAGENAME}}-related articles, see [[Wikipedia:WikiProject {{PAGENAME}}|WikiProject {{PAGENAME}}]].
+{{Box-footer}}
+ |
+}}<!-- END OF ifexist -->
+</div><!--
+
+
+--><div class="portal-column-right">
+{{/box-header|Selected portrait}}
+{{/Selected picture}}
+{{Box-footer}}
+
+{{/box-header|On this day – {{CURRENTMONTHNAME}} {{CURRENTDAY}}|Portal:Biography/Selected anniversaries/{{CURRENTMONTHNAME}} {{CURRENTDAY}}|}}
+{{Portal:Biography/Selected anniversaries/{{CURRENTMONTHNAME}} {{CURRENTDAY}}}}
+{{/box-footer|[[{{CURRENTMONTHNAME}} {{CURRENTDAY}}|More of today's anniversaries...]]}}
+<!--CONDITIONAL NEWS SECTION - ONLY SHOWS UP WHEN THERE IS NEWS TO DISPLAY -->
+{{/News}}
+<!--END OF NEWS SECTION-->
+{{/box-header|Quote of the week|Portal:Biography/Quote/week {{CURRENTWEEK}}|}}
+{{Portal:Biography/Quote/week {{CURRENTWEEK}}}}
+{{/box-footer|[[Portal:Biography/Quote|Archive]] – [[q:Main_Page|More from Wikiquote]]}}
+
+{{/box-header|''Related portals''|Portal:Biography/Related portals|}}
+{{Portal:Biography/Related portals}}
+{{/box-footer|}}
+</div><!--
+
+
+--><div style="clear:both; width:100%">
+{{/box-header|Categories}}
+[[File:C Puzzle.png|43px|right|Category puzzle]]
+<center><small>Select [►] to view subcategories</small></center>
+{{div col|colwidth=15em}}
+{{#tag:categorytree|Biography (genre)}}
+{{div col end}}
+
+{{div col|colwidth=15em}}
+{{#tag:categorytree|People}}
+{{div col end}}
+{{Box-footer}}
+
+{{/box-header|Recognized content|Portal:Biography/Recognized content}}
+{{Portal:Biography/Recognized content}}
+{{Box-footer}}
+
+{{/box-header|Associated Wikimedia}}
+{{Wikimedia for portals | species=no | voy=no}}
+{{Box-footer}}
+{{Portal navbar no header2}}
+{{purge page}}
+{{reflist|group=note}}
+</div>
+</div>
+{{featured portal|FPOCyear=2006}}
+__NOTOC__ __NOEDITSECTION__
+
+[[Category:Biography portal|!]]
+[[Category:Biography (genre)]]

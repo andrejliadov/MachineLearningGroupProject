@@ -1,0 +1,156 @@
+{{Use dmy dates|date=July 2013}}
+A '''complex adaptive system''' is a [[Systems theory|system]] that is ''[[complex system|complex]]'' in that it is a [[Dynamic network analysis|dynamic network of interactions]], but the behavior of the ensemble may not be predictable according to the behavior of the components. It is ''[[adaptive]]'' in that the individual and [[collective behavior]] mutate and [[self-organizing|self-organize]] corresponding to the change-initiating micro-event or collection of events.<ref name=CAS-T-01/><ref name=CAS-T-02/><ref name="Miller, John H., and Scott E. Page">{{Cite book|last=Miller, John H., and Scott E. Page|title=Complex adaptive systems : an introduction to computational models of social life|date=2007-01-01|publisher=Princeton University Press|isbn=9781400835522|oclc=760073369}}</ref> It is a "complex macroscopic collection" of relatively "similar and partially connected micro-structures" formed in order to [[Adaptive system|adapt]] to the changing environment and increase their survivability as a [[macrostructure (sociology)|macro-structure]].<ref name=CAS-T-01/><ref name=CAS-T-02/><ref name=CAS-T-12/> The Complex Adaptive Systems approach builds on [[replicator dynamics]].<ref>{{cite journal |last1=Foster |first1=John  |date=2006 |title=Why is economics not a complex systems science? |url=https://espace.library.uq.edu.au/view/UQ:9953/econ_dp_336_04.pdf |journal=Journal of Economic Issues |volume=40 |issue=4 |pages=1069–1091 |doi=10.1080/00213624.2006.11506975 |s2cid=17486106 |access-date=2020-01-18 }}</ref>
+
+The study of complex adaptive systems, a subset of [[nonlinear dynamical system]]s,<ref name="Lansing 2003 pp. 183–204">{{cite journal | last=Lansing | first=J. Stephen | title=Complex Adaptive Systems | journal=Annual Review of Anthropology | publisher=Annual Reviews | volume=32 | issue=1 | year=2003 | issn=0084-6570 | doi=10.1146/annurev.anthro.32.061002.093440 | pages=183–204}}</ref> is interdisciplinary matter that attempts to blend insights from the natural and social sciences to develop system-level models and insights that allow for [[heterogeneous agents]], [[phase transition]], and [[emergent behavior]].<ref>{{Cite news|url=http://www.slate.com/articles/technology/bitwise/2016/01/a_crude_look_at_the_whole_looks_at_complexity_theory_which_wants_to_understand.html|title=The Theory of Everything and Then Some|last=Auerbach|first=David|date=2016-01-19|work=Slate|access-date=2017-03-07|language=en-US|issn=1091-2339}}</ref> 
+
+== Overview ==
+The term ''complex adaptive systems'', or ''[[complexity science]]'', is often used to describe the loosely organized academic field that has grown up around the study of such systems.  Complexity science is not a single theory&mdash;it encompasses more than one theoretical framework and is interdisciplinary, seeking the answers to some fundamental questions about [[life|living]], adaptable, changeable systems. Complex adaptive systems may adopt hard or softer approaches.<ref>{{cite journal |last1=Yolles |first1=Maurice |title=The complexity continuum, Part 1: hard and soft theories |journal=Kybernetes |date=2018 |volume=48 |issue=6 |pages=1330–1354 |doi=10.1108/K-06-2018-0337}}</ref> Hard theories use formal language that is precise, tend to see agents as having tangible properties, and usually see objects in a behavioral system that can be manipulated in some way. Softer theories use natural language and narratives that may be imprecise, and agents are subjects having both tangible and intangible properties. Examples of hard complexity theories include Complex Adaptive Systems (CAS) and [[Viability_theory|Viability Theory]], and a class of softer theory is [[Viable_system_theory|Viable System Theory]]. Many of the propositional consideration made in hard theory are also of relevance to softer theory. From here on, interest will now center on CAS.
+
+The study of CAS focuses on complex, emergent and macroscopic properties of the system.<ref name="CAS-T-12" /><ref name="CAS-T-11" /><ref name="CAS-T-13" /> [[John Henry Holland|John H. Holland]] said that CAS "are systems that have a large numbers of components, often called agents, that interact and adapt or learn".<ref>{{cite journal|year=2006|title=Studying Complex Adaptive Systems|journal=Journal of Systems Science and Complexity|volume=19|issue=1|pages=1–8|doi=10.1007/s11424-006-0001-z|author=Holland John H|hdl=2027.42/41486|s2cid=27398208|url=https://deepblue.lib.umich.edu/bitstream/2027.42/41486/1/11424_2006_Article_1.pdf}}</ref>
+
+Typical examples of complex adaptive systems include: climate; cities; firms; markets; governments; industries; ecosystems; social networks; power grids; animal swarms; traffic flows; [[social insect]] (e.g. [[ant]]) colonies;<ref name=AFC-NA-21/> the [[brain]] and the [[immune system]]; and the [[cell (biology)|cell]] and the developing [[embryo]]. Human social group-based endeavors, such as [[political party|political parties]], [[community|communities]], [[geopolitical]] [[organisations|organizations]], [[war]], and [[terrorist network analysis|terrorist networks]] are also considered CAS.<ref name=AFC-NA-21/><ref name=GT-33/><ref name=CAS-T-19>{{cite web|first=Samuel|last=Solvit|title=Dimensions of War: Understanding War as a Complex Adaptive System|url=http://dimensionsofwar.com/|publisher=L'Harmattan|year=2012|accessdate=25 August 2013}}</ref> The [[internet]] and [[cyberspace]]—composed, collaborated, and managed by a complex mix of [[human–computer interaction]]s, is also regarded as a complex adaptive system.<ref name=CAS-T-16/><ref name=CAS-T-17/><ref name=CAS-T-18/> CAS can be hierarchical, but more often exhibit aspects of "self-organization".<ref>{{Cite book|title=Hidden order: how adaptation builds complexity|last=Holland, John H. (John Henry)|date=1996|publisher=Addison-Wesley|isbn=0201442302|oclc=970420200}}</ref>
+
+=== General properties ===
+What distinguishes a CAS from a pure [[multi-agent system]] (MAS) is the focus on top-level properties and features like [[self-similarity]], [[complexity]], [[emergence]] and [[self-organization]]. A MAS is defined as a system composed of multiple interacting agents; whereas in CAS, the agents as well as the system are adaptive and the system is [[self-similar]]. A CAS is a complex, self-similar collectivity of interacting, adaptive agents.  Complex Adaptive Systems are characterized by a high degree of [[adaptive capacity]], giving them resilience in the face of [[wikt:perturbation|perturbation]].
+
+Other important properties are adaptation (or [[homeostasis]]), communication, cooperation, specialization, spatial and temporal organization, and reproduction. They can be found on all levels: cells specialize,  adapt and reproduce themselves just like larger organisms do. Communication and cooperation take place on all levels, from the agent to the system level. The forces driving [[co-operation]] between agents in such a system, in some cases, can be analyzed with [[game theory]].
+
+=== Characteristics ===
+
+Some of the most important characteristics of complex systems are:<ref>[[Paul Cilliers]] (1998) ''Complexity and Postmodernism: Understanding Complex Systems''</ref>
+
+* The number of elements is sufficiently large that conventional descriptions (e.g. a system of [[differential equation]]s) are not only impractical, but cease to assist in understanding the system. Moreover, the elements interact dynamically, and the interactions can be physical or involve the exchange of information
+* Such interactions are rich, i.e. any element or sub-system in the system is affected by and affects several other elements or sub-systems
+* The interactions are [[non-linear]]: small changes in inputs, physical interactions or stimuli can cause large effects or very significant changes in outputs
+* Interactions are primarily but not exclusively with immediate neighbours and the nature of the influence is modulated
+* Any interaction can feed back onto itself directly or after a number of intervening stages. Such feedback can vary in quality.  This is known as ''recurrency''
+* The overall behavior of the system of elements is not predicted by the behavior of the individual elements 
+* Such systems may be open and it may be difficult or impossible to define system boundaries
+* Complex systems operate under [[Non-equilibrium thermodynamics|far from equilibrium]] conditions. There has to be a constant flow of energy to maintain the organization of the system
+* Complex systems have a history. They evolve and their past is co-responsible for their present behaviour
+* Elements in the system may be ignorant of the behaviour of the system as a whole, responding only to the information or physical stimuli available to them locally
+
+[[Robert Axelrod]] & [[Michael D. Cohen (academic)|Michael D. Cohen]]<ref>[[Robert Axelrod]] & [[Michael D. Cohen (academic)|Michael D. Cohen]], ''Harnessing Complexity''. [[Basic Books]], 2001</ref> identify a series of key terms from a modeling perspective:
+* '''Strategy''', a conditional action pattern that indicates what to do in which circumstances
+* '''Artifact''', a material resource that has definite location and can respond to the action of agents
+* '''Agent''', a collection of properties, strategies & capabilities for interacting with artifacts & other agents
+* '''Population''', a collection of agents, or, in some situations, collections of strategies
+* '''System''', a larger collection, including one or more populations of agents and possibly also artifacts
+* '''Type''', all the agents (or strategies) in a population that have some characteristic in common
+* '''Variety''', the diversity of types within a population or system
+* '''Interaction pattern''', the recurring regularities of contact among types within a system
+* '''Space (physical)''', location in geographical space & time of agents and artifacts
+* '''Space (conceptual)''', "location" in a set of categories structured so that "nearby" agents will tend to interact
+* '''Selection''', processes that lead to an increase or decrease in the frequency of various types of agent or strategies
+* '''Success criteria''' or '''performance measures''', a "score" used by an agent or designer in attributing credit in the selection of relatively successful (or unsuccessful) strategies or agents
+
+Turner and Baker<ref>Turner, J. R., & Baker, R. (2020). Just doing the do: A case study testing creativity and innovative processes as complex adaptive systems. New Horizons in Adult Education and Human Resource Development, 32(2). https://doi.org/10.1002/nha3.20283</ref> synthesized the characteristics of complex adaptive systems from the literature and tested these characteristics in the context of creativity and innovation. Each of these eight characteristics had been shown to be present in the creativity and innovative processes:
+* '''Path dependent:''' Systems tend to be sensitive to their initial conditions. The same force might affect systems differently.<ref>{{cite journal | last1 = Lindberg | first1 = C. | last2 = Schneider | first2 = M. | year = 2013 | title = Combating infections at Maine Medical Center: Insights into complexity-informed leadership from positive deviance | journal = Leadership | volume = 9 | issue = 2| pages = 229–253 | doi = 10.1177/1742715012468784 | s2cid = 144225216 }}</ref>
+* '''Systems have a history:''' The future behavior of a system depends on its initial starting point and subsequent history.<ref>{{cite journal | last1 = Boal | first1 = K. B. | last2 = Schultz | first2 = P. L. | year = 2007 | title = Storytelling, time, and evolution: The role of strategic leadership in complex adaptive systems | journal = The Leadership Quarterly | volume = 18 | issue = 4| pages = 411–428 | doi = 10.1016/j.leaqua.2007.04.008 }}</ref>
+* '''Non-linearity:''' React disproportionately to environmental perturbations. Outcomes differ from those of simple systems.<ref>{{cite journal | last1 = Lindberg | first1 = C. | last2 = Schneider | first2 = M. | year = 2013 | title = Combating infections at Maine Medical Center: Insights into complexity-informed leadership from positive deviance | journal = Leadership | volume = 9 | issue = 2| pages = 229–253 | doi = 10.1177/1742715012468784 | s2cid = 144225216 }}</ref> <ref>{{cite journal | last1 = Luoma | first1 = M | year = 2006 | title = A play of four arenas - How complexity can serve management development | journal = Management Learning | volume = 37 | pages = 101–123 | doi = 10.1177/1350507606058136 | s2cid = 14435060 }}</ref>
+* '''Emergence:''' Each system's internal dynamics affect its ability to change in a manner that might be quite different from other systems.<ref>{{cite journal | last1 = Lindberg | first1 = C. | last2 = Schneider | first2 = M. | year = 2013 | title = Combating infections at Maine Medical Center: Insights into complexity-informed leadership from positive deviance | journal = Leadership | volume = 9 | issue = 2| pages = 229–253 | doi = 10.1177/1742715012468784 | s2cid = 144225216 }}</ref>
+* '''Irreducible:''' Irreversible process transformations cannot be reduced back to its original state.<ref>{{cite journal | last1 = Borzillo | first1 = S. | last2 = Kaminska-Labbe | first2 = R. | year = 2011 | title = Unravelling the dynamics of knowledge creation in communities of practice through complexity theory lenses | journal = Knowledge Management Research & Practice | volume = 9 | issue = 4| pages = 353–366 | doi = 10.1057/kmrp.2011.13 | s2cid = 62134156 }}</ref>
+* '''Adaptive/Adaptability:''' Systems that are simultaneously ordered and disordered are more adaptable and resilient.<ref>{{cite journal | last1 = Lindberg | first1 = C. | last2 = Schneider | first2 = M. | year = 2013 | title = Combating infections at Maine Medical Center: Insights into complexity-informed leadership from positive deviance | journal = Leadership | volume = 9 | issue = 2| pages = 229–253 | doi = 10.1177/1742715012468784 | s2cid = 144225216 }}</ref>
+* '''Operates between order and chaos:''' Adaptive tension emerges from the energy differential between the system and its environment.<ref>{{cite journal | last1 = Borzillo | first1 = S. | last2 = Kaminska-Labbe | first2 = R. | year = 2011 | title = Unravelling the dynamics of knowledge creation in communities of practice through complexity theory lenses | journal = Knowledge Management Research & Practice | volume = 9 | issue = 4| pages = 353–366 | doi = 10.1057/kmrp.2011.13 | s2cid = 62134156 }}</ref>
+* '''Self-organizing:''' Systems are composed of interdependency, interactions of its parts, and diversity in the system. <ref>{{cite journal | last1 = Lindberg | first1 = C. | last2 = Schneider | first2 = M. | year = 2013 | title = Combating infections at Maine Medical Center: Insights into complexity-informed leadership from positive deviance | journal = Leadership | volume = 9 | issue = 2| pages = 229–253 | doi = 10.1177/1742715012468784 | s2cid = 144225216 }}</ref>
+
+== Modeling and simulation ==
+CAS are occasionally modeled by means of [[agent-based model]]s and [[complex network]]-based models.<ref>Muaz A. K. Niazi, Towards A Novel Unified Framework for Developing Formal, Network and Validated Agent-Based Simulation Models of Complex Adaptive Systems [https://dspace.stir.ac.uk/handle/1893/3365 PhD Thesis]</ref> Agent-based models are developed by means of various methods and tools primarily by means of first identifying the different agents inside the model.<ref>John H. Miller & Scott E. Page, Complex Adaptive Systems: An Introduction to Computational Models of Social Life, Princeton University Press [http://press.princeton.edu/titles/8429.html Book page]</ref> Another method of developing models for CAS involves developing complex network models by means of using interaction data of various CAS components.<ref>Melanie Mitchell, Complexity A Guided Tour, Oxford University Press, [http://www.oup.com/us/catalog/general/subject/LifeSciences/~~/dmlldz11c2EmY2k9OTc4MDE5NTEyNDQxNQ== Book page]</ref>
+
+In 2013 [[SpringerOpen|SpringerOpen/BioMed Central]] has launched an online open-access journal on the topic of ''complex adaptive systems modeling'' (CASM).<ref>Springer ''[https://casmodeling.springeropen.com/ Complex Adaptive Systems Modeling Journal]'' (CASM)</ref>
+
+== Evolution of complexity ==
+[[File:Evolution of complexity.svg|thumb|300px|Passive versus active trends in the evolution of complexity. CAS at the beginning of the processes are colored red. Changes in the number of systems are shown by the height of the bars, with each set of graphs moving up in a time series.]]
+
+{{Main|Evolution of biological complexity}}
+
+Living organisms are complex adaptive systems. Although complexity is hard to quantify in biology, [[evolution]] has produced some remarkably complex organisms.<ref>{{cite journal |author=Adami C |title=What is complexity? |journal=BioEssays |volume=24 |issue=12 |pages=1085–94 |year=2002 |pmid=12447974 |doi=10.1002/bies.10192}}</ref> This observation has led to the common misconception of evolution being progressive and leading towards what are viewed as "higher organisms".<ref>{{cite journal |author=McShea D |title=Complexity and evolution: What everybody knows |journal=Biology and Philosophy |volume=6 |issue=3 |pages=303–24 |year=1991 |doi=10.1007/BF00132234|s2cid=53459994 }}</ref>
+
+If this were generally true, evolution would possess an active trend towards complexity. As shown below, in this type of process the value of the most common amount of complexity would increase over time.<ref name=Carroll>{{cite journal |author=Carroll SB |title=Chance and necessity: the evolution of morphological complexity and diversity |journal=Nature |volume=409 |issue=6823 |pages=1102–9 |year=2001 |pmid=11234024 |doi=10.1038/35059227|bibcode = 2001Natur.409.1102C |s2cid=4319886 }}</ref> Indeed, some [[artificial life]] simulations have suggested that the generation of CAS is an inescapable feature of evolution.<ref>{{cite journal |vauthors=Furusawa C, Kaneko K |title=Origin of complexity in multicellular organisms |journal=Phys. Rev. Lett. |volume=84 |issue=26 Pt 1 |pages=6130–3 |year=2000 |pmid=10991141 |doi=10.1103/PhysRevLett.84.6130 |bibcode=2000PhRvL..84.6130F|arxiv = nlin/0009008 |s2cid=13985096 }}</ref><ref>{{cite journal |vauthors=Adami C, Ofria C, Collier TC |title=Evolution of biological complexity |journal=Proc. Natl. Acad. Sci. U.S.A. |volume=97 |issue=9 |pages=4463–8 |year=2000 |pmid=10781045 |doi=10.1073/pnas.97.9.4463 |pmc=18257|arxiv = physics/0005074 |bibcode = 2000PNAS...97.4463A }}</ref>
+
+However, the idea of a general trend towards complexity in evolution can also be explained through a passive process.<ref name=Carroll/> This involves an increase in [[variance]] but the most common value, the [[mode (statistics)|mode]], does not change. Thus, the maximum level of complexity increases over time, but only as an indirect product of there being more organisms in total. This type of random process is also called a bounded [[random walk]].
+
+In this hypothesis, the apparent trend towards more complex organisms is an illusion resulting from concentrating on the small number of large, very complex organisms that inhabit the [[Skewness|right-hand tail]] of the complexity distribution and ignoring simpler and much more common organisms. This passive model emphasizes that the overwhelming majority of species are [[microorganism|microscopic]] [[prokaryote]]s,<ref>{{cite journal |author=Oren A |title=Prokaryote diversity and taxonomy: current status and future challenges |pmc=1693353 |journal=Philos. Trans. R. Soc. Lond. B Biol. Sci. |volume=359 |issue=1444 |pages=623–38 |year=2004 |pmid=15253349 |doi=10.1098/rstb.2003.1458}}</ref> which comprise about half the world's [[Biomass (ecology)|biomass]]<ref>{{cite journal |vauthors=Whitman W, Coleman D, Wiebe W | title = Prokaryotes: the unseen majority | journal = Proc Natl Acad Sci USA | volume = 95 | issue = 12 | pages = 6578–83 | year = 1998 |pmid = 9618454 | doi = 10.1073/pnas.95.12.6578 | pmc = 33863|bibcode = 1998PNAS...95.6578W }}</ref> and constitute the vast majority of Earth's biodiversity.<ref>{{cite journal |vauthors=Schloss P, Handelsman J |title=Status of the microbial census  |pmc=539005 |journal=Microbiol Mol Biol Rev |volume=68 |issue=4 |pages=686–91 |year=2004 |pmid=15590780 |doi=10.1128/MMBR.68.4.686-691.2004}}</ref> Therefore, simple life remains dominant on Earth, and complex life appears more diverse only because of [[sampling bias]].
+
+If there is a lack of an overall trend towards complexity in biology, this would not preclude the existence of forces driving systems towards complexity in a subset of cases. These minor trends would be balanced by other evolutionary pressures that drive systems towards less complex states.
+
+== See also ==
+{{Portal|Systems science}}
+{{div col|colwidth=30em}}
+* [[Artificial life]]
+* [[Chaos theory]]
+* [[Cognitive science]]
+* [[Command and Control Research Program]]
+* [[Complex system]]
+* [[Computational economics]]
+* [[Computational sociology]]
+* [[Dual-phase evolution]]
+* [[Enterprise systems engineering]]
+* [[Generative sciences]]
+* [[Open system (systems theory)]]
+* [[Santa Fe Institute]]
+* [[Simulated reality]]
+* [[Sociology and complexity science]]
+* [[Wicked problem|Super wicked problem]]
+* [[Swarm Development Group]]
+* [[Universal Darwinism]]
+{{div col end}}
+
+==References==
+{{Reflist|2|refs=
+<ref name=CAS-T-01>{{cite web |url=http://tejas.iimb.ac.in/articles/12.php|title=Insights from Complexity Theory: Understanding Organisations better |publisher= by Assoc. Prof. Amit Gupta, Student contributor - S. Anish, IIM Bangalore|accessdate=1 June 2012 }}</ref>
+
+<ref name=CAS-T-02>{{cite journal |title=Ten Principles of Complexity & Enabling Infrastructures |publisher= by Professor Eve Mitleton-Kelly, Director Complexity Research Programme, London School of Economics |citeseerx = 10.1.1.98.3514}}</ref>
+
+<ref name=CAS-T-11>{{cite journal|title=A Complex Adaptive Organization Under the Lens of the LIFE Model:The Case of Wikipedia|website=Egosnet.org|url=https://otago.academia.edu/JeanBaptisteFaucher/Papers/489796/A_Complex_Adaptive_Organization_Under_the_Lens_of_the_LIFE_Model_The_Case_of_Wikipedia|accessdate=25 August 2012|last1=Faucher|first1=Jean-Baptiste}}</ref>
+
+<ref name=CAS-T-12>{{cite web|title=Evolutionary Psychology, Complex Systems, and Social Theory|url=http://web.eecs.utk.edu/~mclennan/papers/EPCSST.pdf|work=Bruce MacLennan, Department of Electrical Engineering & Computer Science, University of Tennessee, Knoxville|publisher=eecs.utk.edu|accessdate=25 August 2012}}</ref>
+
+<ref name=CAS-T-13>{{cite web|title=Complex Adaptive Systems as a Model for Evaluating Organisational : Change Caused by the Introduction of Health Information Systems|url=http://www.uow.edu.au/~kd21/uploads/Diment-complexity.pdf|work=Kieren Diment, Ping Yu, Karin Garrety, Health Informatics Research Lab, Faculty of Informatics, University of Wollongong, School of Management, University of Wollongong, NSW|publisher=uow.edu.au|accessdate=25 August 2012|url-status=dead|archive-url=https://web.archive.org/web/20120905170544/http://www.uow.edu.au/~kd21/uploads/Diment-complexity.pdf|archive-date=5 September 2012|df=dmy-all}}</ref>
+
+<ref name=CAS-T-16>{{cite web|title=The Internet Analyzed as a Complex Adaptive System|url=http://spacecollective.org/aloksubbarao/5730/The-Internet-Analyzed-as-a-Complex-Adaptive-System|accessdate=25 August 2012}}</ref>
+
+<ref name=CAS-T-17>{{cite web|title=Cyberspace: The Ultimate Complex Adaptive System|url=http://www.dodccrp.org/files/IC2J_v4n2_03_Phister.pdf|publisher=The International C2 Journal
+|accessdate=25 August 2012}} by Paul W. Phister Jr</ref>
+
+<ref name=CAS-T-18>{{cite web|title=Complex Adaptive Systems|url=http://web.mit.edu/esd.83/www/notebook/Complex%20Adaptive%20Systems.pdf|publisher=mit.edu|year=2001|accessdate=25 August 2012}} by Serena Chan, Research Seminar in Engineering Systems</ref>
+
+<ref name=AFC-NA-21>[[Steven Strogatz]], [[Duncan J. Watts]] and [[Albert-László Barabási]] {{cite web |title =  explaining synchronicity ''(at 6:08)'', network theory, self-adaptation mechanism of complex systems, Six Degrees of separation, Small world phenomenon, events are never isolated as they depend upon each other ''(at 27:07)'' in the BBC / Discovery Documentary |work = BBC / Discovery  |url=http://topdocumentaryfilms.com/six-degrees-of-separation/|accessdate=11 June 2012}} "Unfolding the science behind the idea of six degrees of separation"</ref>
+
+<ref name=GT-33>{{cite web|title=Toward a Complex Adaptive Intelligence Community The Wiki and the Blog|url=https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/csi-studies/studies/vol49no3/html_files/Wik_and_%20Blog_7.htm|work=D. Calvin Andrus|publisher=cia.gov|accessdate=25 August 2012}}</ref>
+
+}}
+
+== Literature ==
+{{refbegin|2}}
+*{{cite journal |vauthors=Ahmed E, Elgazzar AS, Hegazi AS |title=An overview of complex adaptive systems |journal=Mansoura J. Math |volume=32 |pages=6059 |date=28 June 2005 |bibcode=2005nlin......6059A |id=arXiv:nlin/0506059v1 [nlin.AO] |arxiv=nlin/0506059}}
+*{{Cite journal |vauthors=Bullock S, Cliff D |title=Complexity and Emergent Behaviour in ICT Systems |publisher=Hewlett-Packard Labs |year=2004 |url=http://www.hpl.hp.com/techreports/2004/HPL-2004-187.html |id=HP-2004-187}}; commissioned as a [https://web.archive.org/web/20090207162407/http://www.foresight.gov.uk/OurWork/CompletedProjects/IIS/Docs/ComplexityandEmergentBehaviour.asp report] by the UK government's [http://www.foresight.gov.uk/ Foresight Programme].
+* Dooley, K., ''Complexity in Social Science'' glossary a research training project of the European Commission.
+*{{cite book |author1=Edwin E. Olson |author2=Glenda H. Eoyang |title=Facilitating Organization Change |publisher=Jossey-Bass |location=San Francisco |year=2001 |isbn=0-7879-5330-X }}
+*{{cite book |author=Gell-Mann, Murray |title=The quark and the jaguar: adventures in the simple and the complex |publisher=W.H. Freeman |location=San Francisco |year=1994 |isbn=0-7167-2581-9 }}
+*{{cite book |author=Holland, John H. |title=Adaptation in natural and artificial systems: an introductory analysis with applications to biology, control, and artificial intelligence |url=https://archive.org/details/adaptationinnatu00holl |url-access=registration |publisher=MIT Press |location=Cambridge, Massachusetts |year=1992 |isbn=0-262-58111-6 }}
+*{{cite book |author=Holland, John H. |title=Emergence: from chaos to order |publisher=Perseus Books |location=Reading, Mass |year=1999 |isbn=0-7382-0142-1 }}
+*{{cite book |author=Solvit, Samuel |title=Dimensions of War: Understanding War as a Complex Adaptive System |publisher=L'Harmattan |location=Paris, France |year=2012 |isbn=978-2-296-99721-9 }}
+*{{cite book |author=Kelly, Kevin |title=Out of control: the new biology of machines, social systems and the economic world |publisher=Addison-Wesley |location=Boston |year=1994 |isbn=0-201-48340-8 |url=https://archive.org/details/outofcontrolnewb00kell |format=Full text available online |author-link=Kevin Kelly (editor) |url-access=registration }}
+* {{Not a typo|Pharaoh}}, M.C. (online). [http://homepage.ntlworld.com/m.pharoah/ Looking to systems theory for a reductive explanation of phenomenal experience and evolutionary foundations for higher order thought] Retrieved 15 January 2008.
+* Hobbs, George & Scheepers, Rens (2010),"Agility in Information Systems: Enabling Capabilities for the IT Function," ''Pacific Asia Journal of the Association for Information Systems'': Vol. 2: Iss. 4, Article 2. [http://aisel.aisnet.org/pajais/vol2/iss4/2 Link]
+*{{cite book |author=Sidney Dekker|author-link=Sidney Dekker|title=Drift into Failure: From Hunting Broken Components to Understanding Complex Systems|date=2011|publisher=CRC Press}}
+
+{{refend}}
+
+==External links==
+{{commons category|Complex adaptive systems}}
+*[http://www.cas-group.net/ Complex Adaptive Systems Group] loosely coupled group of scientists and software engineers interested in complex adaptive systems
+*[https://web.archive.org/web/20081227035120/http://www.dnawales.co.uk/ DNA Wales Research Group] Current Research in Organisational change CAS/CES related news and free research data. Also linked to the Business Doctor & BBC documentary series
+*[http://pespmc1.vub.ac.be/CAS.html A description] of complex adaptive systems on the Principia Cybernetica Web.
+* [http://bactra.org/notebooks/complexity.html Quick reference] single-page description of the 'world' of complexity and related ideas hosted by the Center for the Study of Complex Systems at the University of Michigan.
+*[https://web.archive.org/web/20080723135438/http://www.complexsystems.net.au/ Complex systems research network]
+* [https://web.archive.org/web/20090105183805/http://www.openabm.org/site/ The Open Agent-Based Modeling Consortium]
+*[https://www.youtube.com/watch?v=jS0zj_dYeBE TEDxRotterdam - Igor Nikolic - Complex adaptive systems], and [https://www.youtube.com/watch?v=AB85AFzqtOY The emergence of universal consciousness: Brendan Hughes at TEDxPretoria ]. Talks discussing various practical examples of complex adaptive systems, including Wikipedia, star galaxies, genetic mutation, and other examples
+
+{{Systems}}
+
+{{DEFAULTSORT:Complex Adaptive System}}
+[[Category:Complex systems theory]]
+[[Category:Systems science]]
+[[Category:Organizational theory|*]]

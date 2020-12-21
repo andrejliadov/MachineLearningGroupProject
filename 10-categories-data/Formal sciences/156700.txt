@@ -1,0 +1,120 @@
+[[Image:Communications men.jpg|thumb|220px|Old telephone wires are a challenging communications channel for modern digital communications.]]
+
+A '''communication channel''' refers either to a physical [[transmission medium]] such as a wire, or to a [[connection-oriented communication|logical connection]] over a [[multiplexing|multiplexed]] medium such as a radio channel in [[telecommunication]]s and [[computer network]]ing. A channel is used to [[information transfer|convey]] an [[information]] signal, for example a digital [[bit stream]], from one or several ''[[sender]]s'' (or transmitters) to one or several ''[[receiver (information theory)|receivers]]''. A channel has a certain capacity for transmitting information, often measured by its [[Bandwidth (signal processing)|bandwidth]] in [[Hertz|Hz]] or its [[Data signaling rate|data rate]] in [[bit rate|bits per second]].
+
+Communicating data from one location to another requires some form of pathway or medium. These pathways, called communication channels, use two types of media: [[network cable|cable]] (twisted-pair wire, cable, and fiber-optic cable) and [[Broadcasting|broadcast]] (microwave, satellite, radio, and infrared). Cable or wire line media use physical wires of cables to transmit data and information. Twisted-pair wire and coaxial cables are made of copper, and fiber-optic cable is made of glass.
+
+In [[information theory]], a channel refers to a theoretical ''channel model'' with certain error characteristics. In this more general view, a [[Data storage device|storage device]] is also a kind of channel, which can be sent to (written) and received from (reading).
+
+==Examples==
+Examples of communications channels include:
+
+# A connection between initiating and terminating nodes of a [[telecommunication circuit|circuit]].
+# A single path provided by a [[transmission medium]] via either
+#* physical separation, such as by multipair [[Electrical cable|cable]] or
+#* electrical separation, such as by [[Frequency-division multiplexing|frequency-division]] or [[time-division multiplexing]].
+# A path for conveying electrical or electromagnetic signals, usually distinguished from other parallel paths.
+#* A [[data storage device|storage]] which can communicate a message over time as well as space
+#* The portion of a storage medium, such as a [[Track (disk drive)|track]] or band, that is accessible to a given reading or writing station or head.
+#* A buffer from which messages can be 'put' and 'got'. See [[Actor model and process calculi]] for discussion on the use of channels.
+# In a [[communications system]], the physical or logical link that connects a [[data]] source to a data sink.
+# A specific [[radio frequency]], pair or band of frequencies, usually named with a letter, number, or codeword, and often allocated by international agreement.<br />Examples:
+#* [[Marine VHF radio]] uses some 88 channels in the VHF band for two-way FM voice communication. Channel 16, for example, is 156.800&nbsp;MHz. In the US, seven additional channels, WX1 - WX7, are allocated for weather broadcasts.
+#* [[Television channels]] such as North American TV Channel 2 = 55.25&nbsp;MHz, Channel 13 = 211.25&nbsp;MHz. Each channel is 6&nbsp;MHz wide.  This was based on the bandwidth required by older [[analog television]] signals.  Since 2006 television broadcasting has switched to digital modulation ([[digital television]]) which uses [[image compression]] to transmit a television signal in a much smaller bandwidth, so each of these "physical channels" has been divided into multiple  "[[virtual channel]]s" each carrying a DTV channel.
+#* [[Wi-Fi]] uses 13 channels from 2412&nbsp;MHz to 2484&nbsp;MHz in 5&nbsp;MHz steps, in the [[ISM band]]s.
+#* The radio channel between an [[amateur radio repeater]] and a ham uses two frequencies often 600&nbsp;kHz (0.6&nbsp;MHz) apart. For example, a repeater that transmits on 146.94&nbsp;MHz typically listens for a ham transmitting on 146.34&nbsp;MHz.
+
+All of these communications channels share the property that they transfer information. The information is carried through the channel by a [[Signalling (telecommunication)|signal]].
+
+==Channel models==
+A channel can be modelled physically by trying to calculate the physical processes which modify the transmitted signal. For example, in wireless communications, the channel can be modelled by calculating the reflection of every object in the environment. A sequence of random numbers might also be added to simulate external interference and/or electronic noise in the receiver.
+
+Statistically, a communication channel is usually modelled as a triple consisting of an input alphabet, an output alphabet, and for each pair ''(i, o)'' of input and output elements a transition probability ''p(i, o)''. Semantically, the transition probability is the probability that the [[symbol]] ''o'' is received given that ''i'' was transmitted over the channel.
+
+Statistical and physical modelling can be combined. For example, in wireless communications the channel is often modelled by a random attenuation (known as [[fading]]) of the transmitted signal, followed by additive noise. The attenuation term is a simplification of the underlying physical processes and captures the change in signal power over the course of the transmission. The noise in the model captures external interference and/or electronic noise in the receiver. If the attenuation term is complex it also describes the relative time a signal takes to get through the channel. The statistics of the random attenuation are decided by previous measurements or physical simulations.
+
+Channel models may be continuous channel models in that there is no limit to how precisely their values may be defined.
+
+Communication channels are also studied in a discrete-alphabet setting. This corresponds to abstracting a real-world communication system in which the analog → digital and digital → analog blocks are out of the control of the designer. The mathematical model consists of a transition probability that specifies an output distribution for each possible sequence of channel inputs. In [[information theory]], it is common to start with memoryless channels in which the output probability distribution only depends on the current channel input.
+
+A channel model may either be digital (quantified, e.g. binary) or analog.
+{{Repetition|date=February 2012}}
+
+===Digital channel models===
+In a digital channel model, the transmitted message is modelled as a [[Digital signal (electronics)|digital signal]] at a certain [[protocol layer]]. Underlying protocol layers, such as the physical layer transmission technique, is replaced by a simplified model. The model may reflect channel performance measures such as [[bit rate]], [[bit error]]s, [[latency (engineering)|latency]]/[[Network delay|delay]], [[delay jitter]], etc. Examples of digital channel models are:
+* [[Binary symmetric channel]] (BSC), a discrete memoryless channel with a certain [[bit error probability]]
+* Binary [[Error burst|bursty bit error]] channel model, a channel "with memory"
+* [[Binary erasure channel]] (BEC), a discrete channel with a certain bit error detection (erasure) probability
+* [[Packet erasure channel]], where packets are lost with a certain [[packet loss]] probability or [[packet error rate]]
+* [[Arbitrarily varying channel]] (AVC), where the behavior and state of the channel can change randomly
+* [[Z-channel (information theory)]] (binary asymmetric channel), where each 0 bit is transmitted correctly, but each 1 bit has probability p of being transmitted incorrectly as a 0.
+
+===Analog channel models===
+In an analog channel model, the transmitted message is modelled as an [[analog signal]]. The model can be a linear or non-linear, [[Continuous signal|time-continuous]] or [[Discrete signal|time-discrete]] (sampled), [[memorylessness|memoryless]] or dynamic (resulting in [[burst error]]s), time-invariant or [[time-variant system|time-variant]] (also resulting in burst errors), [[baseband]], [[passband]] (RF signal model), real-valued or complex-valued signal model. The model may reflect the following channel impairments:
+* [[Electronic noise|Noise]] model, for example
+** [[Additive white Gaussian noise]] (AWGN) channel, a linear continuous memoryless model
+** [[Phase noise]] model
+* [[Interference (communication)|Interference]] model, for example [[cross-talk]] ([[co-channel interference]]) and [[intersymbol interference]] (ISI)
+* [[Distortion]] model, for example a non-linear channel model causing [[intermodulation distortion]] (IMD)
+* [[Frequency response]] model, including [[attenuation]] and [[phase-shift]]
+* [[Group delay]] model
+* Modelling of underlying [[physical layer]] [[Transmission (telecommunications)|transmission]] techniques, for example a complex-valued [[equivalent baseband model]] of [[modulation]] and [[frequency response]]
+* [[Radio frequency propagation model]], for example
+** [[Log-distance path loss model]]
+** [[Fading]] model, for example [[Rayleigh fading]], [[Ricean fading]], log-normal shadow fading and frequency selective (dispersive) fading
+** [[Doppler shift]] model, which combined with fading results in a [[time-variant system]]
+** [[Ray tracing (physics)|Ray tracing]] models, which attempt to model the signal propagation and distortions for specified transmitter-receiver geometries, terrain types, and antennas
+** [[Mobility model]]s, which also causes a [[time-variant system]]
+
+==Types==
+* [[Digital signal (electronics)|Digital]] ([[Discrete signal|discrete]]) or [[Analog signal|analog]] ([[Continuous signal|continuous]]) channel
+* [[Transmission medium]], for example a [[fibre channel]]
+* [[Multiplexing|Multiplexed channel]]
+* Computer network [[Virtual connection|virtual channel]]
+* [[Simplex communication]], [[duplex communication]] or [[half duplex communication]] channel
+* [[Return channel]]
+* [[Uplink]] or [[downlink]] ([[Upstream (networking)|upstream]] or [[downstream (networking)|downstream]] channel)
+* [[Channel (broadcasting)|Broadcast channel]], [[unicasting|unicast channel]] or [[multicasting|multicast channel]]
+
+==Channel performance measures==
+These are examples of commonly used channel capacity and performance measures:
+* [[Spectral bandwidth]] in Hertz
+* [[Symbol rate]] in baud, pulses/s or symbols/s
+* [[Digital bandwidth]] bit/s measures: [[gross bit rate]] (signalling rate), [[net bit rate]] (information rate), [[channel capacity]], and [[maximum throughput]]
+* [[Channel utilization]]
+* [[Link spectral efficiency]]
+* [[Signal-to-noise ratio]] measures: [[signal-to-interference ratio]], [[Eb/No]], [[carrier-to-interference ratio]] in [[decibel]]
+* [[Bit-error rate]] (BER), [[packet-error rate]] (PER)
+* [[Latency (engineering)|Latency]] in [[second]]s: [[propagation time]], [[transmission time]] 
+* [[Delay jitter]]
+
+==Multi-terminal channels, with application to cellular systems==
+{{Confusing section|date=March 2010}}
+:''See also [[network topology]]''
+In networks, as opposed to [[point-to-point (network topology)|point-to-point]] communication, the communication media is shared between multiple nodes (terminals). Depending on the type of communication, different terminals can cooperate or interfere on each other. In general, any complex multi-terminal network can be considered as a combination of simplified multi-terminal channels. The following channels are the principal multi-terminal channels which was first introduced in the field of information theory{{Citation needed|date=March 2010}}:
+* A [[point-to-multipoint communication|point-to-multipoint channel]], also known as broadcasting medium (not to be confused with broadcasting channel): In this channel, a single sender transmits multiple messages to different destination nodes. All wireless channels except radio links can be considered as broadcasting media, but may not always provide broadcasting service. The [[downlink]] of a cellular system can be considered as a point-to-multipoint channel, if only one cell is considered and inter-cell co-channel interference is neglected. However, the communication service of a phone call is unicasting.
+* [[Multiple access]] channel: In this channel, multiple senders transmit multiple possible different messages over a shared physical medium to one or several destination nodes. This requires a [[channel access]] scheme, including a [[media access control]] (MAC) protocol combined with a [[multiplexing]] scheme. This channel model has applications in the [[uplink]] of the cellular networks.
+* [[Relay channel]]: In this channel, one or several intermediate nodes (called relay, [[repeater]] or [[gap filler]] nodes) cooperate with a sender to send the message to an ultimate destination node. Relay nodes are considered as a possible add-on in the upcoming cellular standards like [[3GPP Long Term Evolution]] (LTE).
+* [[Interference channel]]: In this channel, two different senders transmit their data to different destination nodes. Hence, the different senders can have a possible cross-talk or co-channel interference on the signal of each other. The inter-cell interference in the cellular wireless communications is an example of the interference channel. In spread spectrum systems like 3G, interference also occur inside the cell if non-orthogonal codes are used.
+* A [[unicasting]] channel is a channel that provides a unicasting service, i.e. that sends data addressed to one specific user. An established phone call is an example.
+* A [[broadcast]]ing channel is a channel that provides a broadcasting service, i.e. that sends data addressed to all users in the network. Cellular network examples are the [[paging]] service as well as the [[Multimedia Broadcast Multicast Service]].
+* A [[multicasting]] channel is a channel where data is addressed to a group of subscribing users. LTE examples are the Physical Multicast Channel (PMCH) and MBSFN (Multicast Broadcast Single Frequency Network).
+
+From the above 4 basic multi-terminal channels, multiple access channel is the only one whose capacity region is known. Even for the special case of the Gaussian scenario, the capacity region of the other 3 channels except the broadcast channel is unknown in general.
+
+==See also==
+* [[Channel capacity]]
+* [[Channel access method]]
+* [[Traffic generation model]]
+
+==References==
+
+* [[C. E. Shannon]], [[A mathematical theory of communication]], ''[[Bell System Technical Journal]]'', vol. 27, pp.&nbsp;379–423 and 623–656, (July and October, 1948)
+* Amin Shokrollahi, [http://www.ics.uci.edu/~welling/teaching/ICS279/LPCD.pdf ''LDPC Codes: An Introduction'']
+
+{{Telecommunications}}
+
+{{DEFAULTSORT:Channel (Communications)}}
+[[Category:Information theory]]
+[[Category:Telecommunication theory]]
+[[Category:Television terminology]]

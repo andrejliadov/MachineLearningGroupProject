@@ -1,0 +1,25 @@
+[[File:Coderateblock.png|400px|thumb|right|Different code rates ([[Hamming code]]).]]
+
+In [[telecommunication]] and [[information theory]], the '''code rate''' (or '''information rate'''<ref>Huffman, W. Cary, and Pless, Vera, ''Fundamentals of Error-Correcting Codes'', Cambridge, 2003.</ref>) of a [[forward error correction]] code is the proportion of the data-stream that is useful (non-redundant). That is, if the code rate is <math>k/n</math> for every <math>k</math> bits of useful information, the coder generates a total of <math>n</math> bits of data, of which <math>n-k</math> are redundant. 
+
+If <math>R</math> is the [[gross bitrate]] or [[data signalling rate]] (inclusive of redundant error coding), the [[net bitrate]] (the useful bit rate exclusive of error-correction codes) is <math>\leq R \cdot k/n</math>. 
+
+For example: The code rate of a [[convolutional code]] will typically be <math>1/2</math>, <math>2/3</math>, <math>3/4</math>, <math>5/6</math>, <math>7/8</math>, etc., corresponding to one redundant bit inserted after every single, second, third, etc., bit. The code rate of the [[octet (computing)|octet]] oriented [[Reed Solomon]] [[block code]] denoted RS(204,188) is 188/204, meaning that <math>204 - 188 = 16</math> redundant octets (or bytes) are added to each block of 188 octets of useful information. 
+
+A few error correction codes do not have a fixed code rate—[[rateless erasure code]]s.
+
+Note that [[bit/s]] is a more widespread unit of measurement for the [[information rate]], implying that it is synonymous with ''net bit rate'' or ''useful bit rate'' exclusive of error-correction codes.
+
+==See also==
+* [[Information rate]]
+* [[Source information rate]] (Entropy rate)
+* [[Puncturing]]
+
+==References==
+{{reflist}}
+
+[[Category:Information theory]]
+[[Category:Rates]]
+
+
+{{Comp-sci-stub}}

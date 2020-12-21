@@ -1,0 +1,100 @@
+{{About|the systems theory concept|the linear algebra concept|System of linear equations|the algebraic geometry concept|Linear system of divisors|the tactical formation|Line (formation)}}
+{{Unreferenced|date=December 2009}}
+In [[systems theory]], a '''linear system''' is a [[mathematical model]] of a [[system]] based on the use of a [[linear operator]].
+Linear systems typically exhibit features and properties that are much simpler than the [[nonlinear]] case.
+As a mathematical abstraction or idealization, linear systems find important applications in [[automatic control]] theory, [[signal processing]], and [[telecommunications]]. For example, the propagation medium for wireless communication systems can often be
+modeled by linear systems.
+
+==Definition==
+A general [[deterministic system (mathematics)|deterministic system]] can be described by an operator, {{nowrap|{{math|''H''}},}} that maps an input, {{nowrap|{{math|''x''(''t'')}},}} as a function of {{mvar|t}} to an output, {{nowrap|{{math|''y''(''t'')}},}} a type of [[Black box (systems)|black box]] description.  Linear systems satisfy the property of [[Superposition principle|superposition]]. Given two valid inputs 
+:<math>x_1(t)</math>
+:<math>x_2(t)</math>
+as well as their respective outputs
+:<math>y_1(t) = H \left \{ x_1(t) \right \} </math>
+:<math>y_2(t) = H \left \{ x_2(t) \right \} </math>
+then a linear system must satisfy
+:<math>\alpha y_1(t) + \beta y_2(t) = H \left \{ \alpha x_1(t) + \beta x_2(t) \right \} </math>
+for any [[scalar (mathematics)|scalar]] values {{mvar|α}} and {{nowrap|{{mvar|β}}.}}
+<!-- Insert picture depicting the superposition and scaling properties -->
+
+The system is then defined by the equation {{nowrap|{{math|1=''H''(''x''(''t'')) = ''y''(''t'')}},}} where {{math|''y''(''t'')}} is some arbitrary function of time, and {{math|''x''(''t'')}} is the system state.  Given {{math|''y''(''t'')}} and {{nowrap|{{math|''H''}},}} the system can be solved for {{nowrap|{{math|''x''(''t'')}}.}}  For example, a [[simple harmonic oscillator]] obeys the differential equation:
+:<math>m \frac{d^2(x)}{dt^2} = -kx</math>.
+
+If
+:<math>H(x(t)) = m \frac{d^2(x(t))}{dt^2} + kx(t)</math>,
+then {{math|''H''}} is a linear operator.  Letting {{nowrap|{{math|1=''y''(''t'') = 0}},}} we can rewrite the differential equation as {{nowrap|{{math|1=''H''(''x''(''t'')) = ''y''(''t'')}},}} which shows that a simple harmonic oscillator is a linear system.
+
+The behavior of the resulting system subjected to a complex input can be described as a sum of responses to simpler inputs.  In nonlinear systems, there is no such relation.  
+This mathematical property makes the solution of modelling equations simpler than many nonlinear systems.
+For [[time-invariant system|time-invariant]] systems this is the basis of the [[impulse response]] or the [[frequency response]] methods (see [[LTI system theory]]), which describe a general input function {{math|''x''(''t'')}} in terms of [[unit impulse]]s or [[frequency component]]s.  
+
+Typical [[differential equation]]s of linear [[time-invariant system|time-invariant]] systems are well adapted to analysis using the [[Laplace transform]] in the [[continuous function|continuous]] case, and the [[Z-transform]] in the [[discrete mathematics|discrete]] case (especially in computer implementations).
+
+Another perspective is that solutions to linear systems comprise a system of [[function (mathematics)|function]]s which act like [[vector (geometric)|vector]]s in the geometric sense.
+
+A common use of linear models is to describe a nonlinear system by [[linearization]].  This is usually done for mathematical convenience.
+
+==Time-varying impulse response==
+The '''time-varying impulse response''' {{math|''h''(''t''<sub>2</sub>, ''t''<sub>1</sub>)}} of a linear system is defined as the response of the system at time ''t'' = ''t''<sub>2</sub> to a single [[impulse function|impulse]] applied at time {{nowrap|{{math|1=''t'' = ''t''<sub>1</sub>}}.}}  In other words, if the input {{math|''x''(''t'')}} to a linear system is 
+
+:<math>x(t) = \delta(t - t_1)</math>
+
+where {{math|δ(''t'')}} represents the [[Dirac delta function]], and the corresponding response {{math|''y''(''t'')}} of the system is
+
+:<math>y(t) |_{t=t_2} = h(t_2, t_1)</math>
+
+then the function {{math|''h''(''t''<sub>2</sub>, ''t''<sub>1</sub>)}} is the time-varying impulse response of the system. Since the system cannot respond before the input is applied the following '''causality condition''' must be satisfied:
+
+:<math> h(t_2, t_1) = 0, t_2 < t_1</math>
+
+==The convolution integral==
+
+The output of any general continuous-time linear system is related to the input by an integral which may be written over a doubly infinite range because of the causality condition:
+
+:<math> y(t) = \int_{-\infty}^{t}  h(t,t') x(t')dt' = \int_{-\infty}^{\infty}  h(t,t') x(t') dt' </math>
+
+If the properties of the system do not depend on the time at which it is operated then it is said to be '''time-invariant''' and {{mvar|h}} is a function only of the time difference {{math|1=''τ'' = ''t'' − ''t' ''}} which is zero for {{math|''τ'' < 0}} (namely {{math|''t'' < ''t' ''}}). By redefinition of {{mvar|h}} it is then possible to write the input-output relation equivalently in any of the ways,
+
+:<math> y(t) = \int_{-\infty}^{t}  h(t-t') x(t') dt' = \int_{-\infty}^{\infty}  h(t-t') x(t') dt' = \int_{-\infty}^{\infty}  h(\tau) x(t-\tau) d \tau  = \int_{0}^{\infty}  h(\tau) x(t-\tau) d \tau </math>
+
+Linear time-invariant systems are most commonly characterized by the Laplace transform of the impulse response function called  the ''transfer function'' which is:
+
+:<math>H(s) =\int_0^\infty  h(t) e^{-st}\, dt.</math>
+
+In applications this is usually a rational algebraic function of {{mvar|s}}. Because {{math|''h''(''t'')}} is zero for negative {{mvar|t}}, the integral may  equally be written over the doubly infinite range and putting {{math|1=''s'' = ''iω''}} follows the formula for the ''frequency response function'':
+
+:<math> H(i\omega) = \int_{-\infty}^{\infty}  h(t) e^{-i\omega t} dt </math>
+
+==Discrete time systems==
+The output of any discrete time linear system is related to the input by the time-varying convolution sum:
+
+:<math> y[n] = \sum_{m =-\infty}^{n} { h[n,m] x[m] }  = \sum_{m =-\infty}^{\infty} { h[n,m] x[m] }</math>
+
+or equivalently for a time-invariant system on redefining h(),
+
+:<math> y[n] = \sum_{k =0}^{\infty} { h[k] x[n-k] } = \sum_{k =-\infty}^{\infty} { h[k] x[n-k] }</math>
+
+where
+
+:<math> k = n-m \, </math>
+
+represents the lag time between the stimulus at time ''m'' and the response at time ''n''.
+
+==See also==
+*[[Linear system of divisors]] in [[algebraic geometry]]
+*[[Shift invariant system]]
+*[[Linear time-invariant system]]
+*[[Nonlinear system]]
+*[[System analysis]]
+*[[System of linear equations]]
+
+{{DEFAULTSORT:Linear System}}
+[[Category:Systems theory]]
+[[Category:Dynamical systems]]
+[[Category:Mathematical modeling]]
+[[Category:Concepts in physics]]
+
+==Notes==
+{{Reflist}}
+
+==References==

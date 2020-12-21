@@ -1,0 +1,109 @@
+{{short description|Formal grammar}}
+{{Multiple issues|section=|
+{{Lead too short|date=February 2018}}
+{{Context|date=February 2018}}
+{{Use dmy dates|date=October 2020}}
+}}
+An '''adaptive grammar''' is a [[formal grammar]] that explicitly provides mechanisms within the [[Formal system|formalism]] to allow its own [[Production rule (formal languages)|production rules]] to be manipulated.
+
+==Overview==
+John N. Shutt defines adaptive grammar as a grammatical formalism that allows rule sets (aka sets of production rules) to be explicitly manipulated within a grammar. Types of manipulation include rule addition, deletion, and modification.<ref>{{cite web |last1=Shutt |first1=John N. |title=What is an Adaptive Grammar? |url=http://web.cs.wpi.edu/~jshutt/adapt/adapt.html |accessdate=6 February 2019}}</ref>
+
+===Early history===
+The first description of grammar adaptivity (though not under that name) in the literature is generally<ref name="Christiansen1990">Christiansen, Henning, "A [https://pdfs.semanticscholar.org/1d4a/e919601b166856d5f7c35d080f99d38c9546.pdf Survey of Adaptable Grammars]," ''ACM SIGPLAN Notices'', Vol. 25 No. 11, pp. 35-44, Nov. 1990.</ref><ref name="Shutt1993">Shutt, John N., ''[http://digitalcommons.wpi.edu/cgi/viewcontent.cgi?article=1220&context=computerscience-pubs Recursive Adaptable Grammars]'', Master’s Thesis, Worcester Polytechnic Institute, 1993. (16 December 2003 emended revision.)</ref><ref name="Jackson2006">Jackson, Quinn Tyler, ''[http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.403.8977 Adapting to Babel: Adaptivity and Context-Sensitivity in Parsing]'', Ibis Publications, Plymouth, Massachusetts, March 2006.</ref> taken to be in a paper by Alfonso Caracciolo di Forino published in 1963.<ref name="Caracciolo1963">Caracciolo di Forino, Alfonso, "[http://dl.acm.org/citation.cfm?id=367584 Some Remarks on the Syntax of Symbolic Programming Languages]," ''Communications of the ACM'', Vol. 6, No. 8., pp. 456-460, August 1963.</ref> The next generally accepted reference to an adaptive formalism (''extensible context-free grammars'') came from Wegbreit in 1970<ref name="Wegbreit">Wegbreit, Ben, ''[http://www.dtic.mil/get-tr-doc/pdf?AD=AD0715332 Studies in Extensible Programming Languages]'', ESD-TR-70-297, Harvard University, Cambridge, Massachusetts, May 1970.  In book form, Garland Publishing, Inc., New York, 1980.</ref> in the study of [[extensible programming]] languages, followed by the ''dynamic syntax'' of Hanford and Jones in 1973.<ref name="Hanford&Jones">Hanford, K.V. & Jones, C.B., "[http://www.sciencedirect.com/science/article/pii/0066413873900037 Dynamic Syntax: A Concept for the Definition of the Syntax of Programming Languages]," ''Annual Review in Automatic Programming 7'', Pergamon Press, Oxford, pp. 115-142, 1973.</ref>
+
+===Collaborative efforts===
+Until fairly recently, much of the research into the [[formal system|formal]] properties of adaptive grammars was uncoordinated between researchers, only first being summarized by Henning Christiansen in 1990<ref name="Christiansen1990"/> in response to a paper in ''ACM [[SIGPLAN]] Notices'' by Boris Burshteyn.<ref name="Burshteyn1990a">Burshteyn, Boris. "[https://dl.acm.org/citation.cfm?id=382639 On the Modification of the Formal Grammar at Parse Time]", ''ACM SIGPLAN Notices'', Vol. 25 No. 5, pp. 117-123, May 1990.</ref> The Department of Engineering at the [[University of São Paulo]] has its [http://lta.poli.usp.br/ Adaptive Languages and Techniques Laboratory], specifically focusing on research and practice in adaptive technologies and theory. The LTA also maintains a page naming researchers in the field.<ref>[http://www.pcs.usp.br/~lta/union/index.php?cp=4&categoria=28 http://www.pcs.usp.br/~lta/union/index.php?cp=4&categoria=28] {{dead link|date=April 2017|bot=medic}}{{cbignore|bot=medic}}</ref>
+
+===Terminology and taxonomy===
+<!--Note: Because this sub-field of formal grammar theory and practice is highly specialized and still in somewhat of a state of flux (particularly in its use of terms), this article makes extensive use of citations.-->
+
+While early efforts made reference to ''dynamic syntax''<ref name="Hanford&Jones"/> and ''extensible'',<ref name="Wegbreit"/> ''modifiable'',<ref name="Burshteyn1990b">Burshteyn, Boris, "[https://dl.acm.org/citation.cfm?id=122196 Generation and Recognition of Formal Languages by Modifiable Grammars]," ''ACM SIGPLAN Notices'', Vol. 25 No. 12, pp. 45-53, December 1990.</ref> ''dynamic'',<ref name="Boullier1994">Boullier, Pierre, "[https://hal.inria.fr/inria-00074352/document Dynamic Grammars and Semantic Analysis]," INRIA Research Report No. 2322, August 1994.</ref> and ''adaptable''<ref name="Christiansen1990"/><ref>John Shutt originally called his Recursive Adaptive Grammars by the name Recursive ''Adaptable'' Grammars, and notes his change to ''adaptive'' at this URL: [http://web.cs.wpi.edu/~jshutt/thesis/top.html John Shutt's MS Thesis].</ref> grammars, more recent usage has tended towards the use of the term ''adaptive'' (or some variant such as ''adaptativa'',<ref name="Iwai2000">Iwai, Margarete Keiko, ''Um formalismo gramatical adaptativo para linguagens dependentes de contexto'', Doctoral thesis, Department of Engineering, University of São Paulo, Brazil, January 2000.</ref><ref name="Bravo2004">Bravo, César, ''[http://www.teses.usp.br/teses/disponiveis/3/3141/tde-31032005-134438/publico/CESARPARIENTE.pdf Grámmaticas Livres de Contexto Adaptativas com verificação de aparência]'', Doctoral thesis, Department of Electrical Engineering, University of São Paulo, January 2004.</ref> depending on the publication language of the literature).<ref name="Shutt1993"/> Iwai refers to her formalism as ''adaptive grammars'',<ref name="Iwai2000"/> but this specific use of simply ''adaptive grammars'' is not typically currently used in the literature without name qualification. Moreover, no standardization or categorization efforts have been undertaken between various researchers, although several have made efforts in this direction.<ref name="Shutt1993"/><ref name="Jackson2006"/>
+
+====The Shutt classification (and extensions)====
+Shutt categorizes adaptive grammar models into two main categories:<ref name="Shutt1993"/><ref name="Shutt2001b">Shutt, John N., "Imperative Adaptive Grammars" Web page dated 28 March 2001, at the URL: http://web.cs.wpi.edu/~jshutt/adapt/imperative.html</ref>
+
+* ''[[Imperative programming|Imperative]] adaptive grammars'' vary their rules based on a global [[State (computer science)|state]] changing over the ''time'' of the [[generative grammar|generation]] of a [[formal language|language]].
+* ''[[Declarative programming|Declarative]] adaptive grammars'' vary their rules only over the ''space'' of the generation of a language (i.e., position in the syntax tree of the generated string).
+
+Jackson refines Shutt's taxonomy, referring to changes over time as [[global variable|global]] and changes over space as [[local variable|local]], and adding a hybrid ''time-space'' category:<ref name="Jackson2006"/>
+
+* ''Time-space adaptive grammars'' (''hybrids'') vary their rules over either the ''time'' or the ''space'' (or both) of the generation of a language (and local and global operations are explicitly differentiated by the notation for such changes).
+
+==Adaptive formalisms in the literature==
+Adaptive formalisms may be divided into two main categories: full grammar formalisms (adaptive grammars), and adaptive machines, upon which some grammar formalisms have been based.
+
+===Adaptive grammar formalisms===
+The following is a list (by no means complete) of grammar formalisms that, by Shutt's definition above, are considered to be (or have been classified by their own inventors as being) adaptive grammars. They are listed in their historical order of first mention in the literature.
+
+====Extensible context-free grammars (Wegbreit)====
+Described in Wegbreit's doctoral dissertation in 1970,<ref name="Wegbreit"/> an extensible context-free grammar consists of a [[context-free grammar]] whose rule set is modified according to instructions output by a [[finite state transducer]] when reading the terminal prefix during a leftmost derivation.  Thus, the rule set varies over position in the generated string, but this variation ignores the hierarchical structure of the syntax tree.  Extensible context-free grammars were classified by Shutt as ''imperative''.<ref name="Shutt1993"/>
+
+====Christiansen grammars (Christiansen)====
+First introduced in 1985 as ''Generative Grammars''<ref name="Christiansen1985">Christiansen, Henning, "Syntax, Semantics, and Implementation Strategies for Programming Languages with Powerful Abstraction Mechanisms," ''Proceedings of the 18th Hawaii International Conference on System Sciences'', Vol. 2, pp. 57-66, 1985.</ref> and later more elaborated upon,<ref name="Christiansen1988">Christiansen, Henning, "[http://akira.ruc.dk/~henning/publications/SSofExtLang1988.pdf The Syntax and Semantics of Extensible Languages]," ''Datalogiske skrifter 14'', Roskilde University, 1988.</ref> Christiansen grammars (apparently dubbed so by Shutt, possibly due to conflict with Chomsky generative grammars) are an adaptive extension of [[attribute grammar]]s. Christiansen grammars were classified by Shutt as ''declarative''.<ref name="Shutt1993"/>
+
+The redoubling language <math>L = \{ww | w \mbox{ is a letter}\}</math> is demonstrated as follows:<ref name="Christiansen1988"/>
+
+ <program↓''G''>       →   <dcl↓''G''↑''w''> <body↓{''w-rule''}>
+
+ where ''w-rule''  =
+ <body↓''G''’>         →   ''w''
+
+ <dcl↓''G''↑''ch''•''w''>     →   <char↓''G''↑''ch''> <dcl↓''G''↑''w''>
+ <dcl↓G↑<>>       →   <ε>
+ <char↓G↑a>       →   a
+<!--:(Note on notation: TBD.)-->
+
+====Bottom-up modifiable grammars, top-down modifiable grammars, and USSA (Burshteyn)====
+First introduced in May 1990<ref name="Burshteyn1990a"/> and later expanded upon in December 1990,<ref name="Burshteyn1990b"/> ''modifiable grammars'' explicitly provide a mechanism for the addition and deletion of rules during a parse. In response to the ''ACM SIGPLAN Notices'' responses, Burshteyn later modified his formalism and introduced his adaptive ''Universal Syntax and Semantics Analyzer'' (USSA) in 1992.<ref name="Burshteyn1992">Burshteyn, Boris, "[http://dl.acm.org/citation.cfm?id=130724 USSA–Universal Syntax and Semantics Analyzer]," ''ACM SIGPLAN Notices'', Vol. 27 No. 1, pp. 42-60, January 1992.</ref> These formalisms were classified by Shutt as ''imperative''.<ref name="Shutt1993"/>
+
+====Recursive adaptive grammars (Shutt)====
+Introduced in 1993, Recursive Adaptive Grammars (RAGs) were an attempt to introduce a [[Turing completeness|Turing powerful]] formalism that maintained much of the elegance of [[context-free]] grammars.<ref name="Shutt1993"/> Shutt self-classifies RAGs as being a ''declarative'' formalism.
+
+====Dynamic grammars (Boullier)====
+Boullier's ''dynamic grammars'', introduced in 1994,<ref name="Boullier1994"/> appear to be the first adaptive grammar family of grammars to rigorously introduce the notion of a time continuum of a parse as part of the notation of the grammar formalism itself.<ref name="Jackson2006"/> Dynamic grammars are a sequence of grammars, with each grammar ''G<sub>i</sub>'' differing in some way from other grammars in the sequence, over time. Boullier's main paper on dynamic grammars also defines a dynamic parser, the machine that effects a parse against these grammars, and shows examples of how his formalism can handle such things as [[type checking]], [[Extensible programming language|extensible languages]], [[Polymorphism (computer science)|polymorphism]], and other constructs typically considered to be in the semantic domain of programming language translation.
+
+====Adaptive grammars (Iwai)====
+The work of Iwai in 2000<ref name="Iwai2000"/> takes the adaptive automata of Neto<ref name="Neto1994">Neto, João Jose, "Adaptive Automata for Context-Sensitive Languages," ''ACM SIGPLAN Notices'', Vol. 29 No. 9, pp. 115-124, September 1994.</ref> further by applying adaptive automata to [[context-sensitive grammar]]s. Iwai's adaptive grammars (note the qualifier by name) allow for three operations during a parse: ? query (similar in some respects to a [[syntactic predicate]], but tied to inspection of rules from which modifications are chosen), + addition, and - deletion (which it shares with its predecessor adaptive automata).
+
+====§-calculus (Jackson)====
+Introduced in 2000<ref name="Jackson2000a">Jackson, Quinn Tyler, "[https://www.researchgate.net/profile/Quinn_Jackson/publication/2497744_Adaptive_Predicates_in_Natural_Language_Parsing/links/0fcfd50c9e2125678e000000.pdf Adaptive Predicates in Natural Language Parsing]," ''Perfection'', Vol. 1 No. 4, April 2000.</ref> and most fully discussed in 2006,<ref name="Jackson2006"/> the §-Calculus (§ here pronounced ''meta-ess'') allows for the explicit addition, deletion, and modification of productions within a grammar, as well as providing for [[syntactic predicate]]s. This formalism is self-classified by its creator as both ''imperative'' and ''adaptive'', or, more specifically, as a ''time-space'' adaptive grammar formalism, and was further classified by others as being an [[analytic grammar|analytic]] formalism.<ref name="Bravo2004"/><ref name="Okhotin2004">Okhotin, Alexander, ''Boolean Grammars: Expressive Power and Algorithms'', Doctoral thesis, School of Computing, Queens University, Kingston, Ontario, August 2004.</ref>
+
+The redoubling language <math>L = \{ww | w \in \{a,b\}^+\}</math> is demonstrated as follows:
+
+ grammar ww {
+  S ::= #phi(A.X<-"") R;
+  R ::= $C('[ab]') #phi(A.X<-A.X C) #phi(N<=A.X) N | R;
+ };
+
+(Note on notation: In the above example, the ''#phi(...)'' statements identify the points in the production ''R'' that modify the grammar explicitly. ''#phi(A.X<-A.X C)'' represents a ''global'' modification (over time) and the ''#phi(N<=A.X)'' statement identifies a ''local'' modification (over space). The ''#phi(A.X<-"")'' statement in the ''S'' production effectively declares a global production called ''A.X'' by placing the [[empty string]] into that production before its reference by ''R''.)
+
+====Adaptive devices (Neto & Pistori)====
+First described by Neto in 2001,<ref name="Neto2001">Neto, João Jose, "[ftp://nozdr.ru/biblio/kolxo3/Cs/CsLn/Implementation%20and%20Application%20of%20Automata,%206%20conf.,%20CIAA%202001(LNCS2494,%20Springer,%202002)(ISBN%203540004009)(298s).pdf#page=243 Adaptive Rule-Driven Devices: General Formulation and Case Study]{{Dead link|date=December 2018 |bot=InternetArchiveBot |fix-attempted=yes }}," B. W. Watson, D. Wood (Eds.): [[Conference on Implementation and Application of Automata|''Implementation and Application of Automata 6th International Conference'', CIAA 2001]], ''Lecture Notes in Computer Science'', Vol. 2494, Pretoria, South Africa, Springer-Verlag, pp. 234–250, 23–25 July 2001.</ref> adaptive devices were later enhanced and expanded upon by Pistori in 2003.<ref name="Pistori2003">Pistori, Hemerson, ''[http://www.gpec.ucdb.br/pistori/disciplinas/ml/arquivos/apresentacao_tese.pdf Tecnologia Adaptativa em Engenharia de Computação: Estado da Arte e Aplicações]'', Doctoral thesis, Department of Electrical Engineering, University of São Paulo, 2003.</ref>
+
+====Adapser (Carmi)====
+In 2002,<ref>Carmi, Adam, "[https://research.ibm.com/haifa/info/ple/papers/AdapserPaper.pdf Adapser: An LALR(1) Adaptive Parser]{{Dead link|date=October 2018 |bot=InternetArchiveBot |fix-attempted=yes }}," ''The Israeli Workshop on Programming Languages & Development Environments,''  Haifa, Israel, 1 July 2002.</ref> Adam Carmi introduced an [[LALR parser|LALR(1)]]-based adaptive grammar formalism known as ''Adapser''. Specifics of the formalism do not appear to have been released.
+
+====Adaptive CFGs with appearance checking (Bravo)====
+In 2004,<ref name="Bravo2004"/> César Bravo introduced the notion of merging the concept of ''appearance checking''<ref name="Salomaa1973">Salomaa, Arto, ''Formal Languages'', Academic Press, 1973.</ref> with ''adaptive context-free grammars'', a restricted form of Iwai's adaptive grammars,<ref name="Iwai2000"/> showing these new grammars, called ''Adaptive CFGs with Appearance Checking'' to be [[Turing complete|Turing powerful]].
+
+===Adaptive machine formalisms===
+The formalisms listed below, while not grammar formalisms, either serve as the basis of full grammar formalisms, or are included here because they are adaptive in nature. They are listed in their historical order of first mention in the literature.
+
+;Self-modifying finite state automata (Shutt & Rubinstein)
+:Introduced in 1994 by Shutt and Rubinstein,<ref name="Shutt&Rubinstein">Shutt, John & Rubinstein, Roy, "[http://digitalcommons.wpi.edu/cgi/viewcontent.cgi?article=1184&context=computerscience-pubs Self-Modifying Finite Automata]," in B. Pehrson and I. Simon, editors, ''Technology and Foundations: Information Processing '94 Vol. I: Proceedings of 13th IFIP World Computer Congress'', Amsterdam: North-Holland, pp. 493-498, 1994.</ref> Self-Modifying Finite State Automata (SMFAs) are shown to be, in a restricted form, [[Turing complete|Turing powerful]].
+
+;Adaptive automata (Neto)
+:In 1994,<ref name="Neto1994"/> Neto introduced the machine he called a ''structured pushdown automaton'', the core of adaptive automata theory as pursued by Iwai,<ref name="Iwai2000"/> Pistori,<ref name="Pistori2003"/> Bravo<ref name="Bravo2004"/> and others. This formalism allows for the operations of ''inspection'' (similar to [[syntactic predicate]]s, as noted above relating to Iwai's adaptive grammars), ''addition'', and ''deletion'' of rules.
+
+==See also==
+* [[Adaptive algorithm]]
+* [[Artificial grammar learning]]
+* [[Grammar induction]]
+* [[:Category:Extensible syntax programming languages]]
+
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:Adaptive Grammar}}
+[[Category:Formal languages]]

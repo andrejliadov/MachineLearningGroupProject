@@ -1,0 +1,741 @@
+{{short description|Statement relating differentiable symmetries to conserved quantities}}
+{{About|Emmy Noether's first theorem, which derives conserved quantities from symmetries|}}
+{{Use American English|date=March 2019}}
+
+[[File:Noether theorem 1st page.png|thumb| First page of [[Emmy Noether]]'s article "Invariante Variationsprobleme" (1918), where she proved her theorem.]]
+{{calculus|expanded=specialized}}
+
+'''Noether's theorem''' or '''Noether's first theorem''' states that every [[Differentiable function|differentiable]] [[Symmetry in physics|symmetry]] of the [[action (physics)|action]] of a physical system has a corresponding [[conservation law]].<ref>This is sometimes referred to as Noether's {{em|first}} theorem, see [[Noether's second theorem]].</ref> The theorem was proven by mathematician [[Emmy Noether]] in 1915 and published in 1918,<ref>{{cite journal | last= Noether |first=E. | year = 1918 | title = Invariante Variationsprobleme | journal = Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen |series=Mathematisch-Physikalische Klasse | volume = 1918 | pages = 235–257 |url= https://eudml.org/doc/59024}}</ref> after a special case was proven by [[Eugène Cosserat|E. Cosserat]] and [[François Cosserat|F. Cosserat]] in 1909.<ref>{{cite book |last1=Cosserat |first1=E. |last2=Cosserat |first2=F. |year = 1909 | title = Théorie des corps déformables | publisher = Hermann | place = Paris | url = http://ebooks.library.cornell.edu/cgi/t/text/text-idx?c=math;idno=06420001}}</ref> The action of a physical system is the [[time integral|integral over time]] of a [[Lagrangian mechanics|Lagrangian]] function (which may be an [[integral over space]] of a [[Lagrangian (field theory)|Lagrangian density function]]), from which the system's behavior can be determined by the [[principle of least action]]. This theorem only applies to continuous and smooth symmetries over [[physical space]].
+
+Noether's theorem is used in [[theoretical physics]] and the [[calculus of variations]]. A generalization of the formulations on [[constants of motion]] in Lagrangian and [[Hamiltonian mechanics]] (developed in 1788 and 1833, respectively), it does not apply to systems that cannot be modeled with a Lagrangian alone (e.g., systems with a [[Lagrangian mechanics#Extensions to include non-conservative forces|Rayleigh dissipation function]]). In particular, [[dissipative]] systems with [[Continuous symmetry|continuous symmetries]] need not have a corresponding conservation law.
+
+==Basic illustrations and background==
+{{unreferenced section|date=June 2016}}
+As an illustration, if a physical system behaves the same regardless of how it is oriented in space, its [[Lagrangian mechanics|Lagrangian]] is symmetric under continuous rotations: from this symmetry, Noether's theorem dictates that the [[angular momentum]] of the system be conserved, as a consequence of its laws of motion. The physical system itself need not be symmetric; a jagged asteroid tumbling in space conserves angular momentum despite its asymmetry. It is the laws of its motion that are symmetric.
+
+As another example, if a physical process exhibits  the same outcomes regardless of place or time, then its Lagrangian is symmetric under continuous translations in space and time respectively: by Noether's theorem, these symmetries account for the [[conservation law]]s of [[momentum|linear momentum]] and [[energy]] within this system, respectively.
+
+Noether's theorem is important, both because of the insight it gives into conservation laws, and also as a practical calculational tool. It allows investigators to determine the conserved quantities (invariants) from the observed symmetries of a physical system. Conversely, it allows researchers to consider whole classes of hypothetical Lagrangians with given invariants, to describe a physical system. As an illustration, suppose that a physical theory is proposed which conserves a quantity ''X''. A researcher can calculate the types of Lagrangians that conserve ''X'' through a continuous symmetry.  Due to Noether's theorem, the properties of these Lagrangians provide further criteria to understand the implications and judge the fitness of the new theory.
+
+There are numerous versions of Noether's theorem, with varying degrees of generality. There are natural quantum counterparts of this theorem, expressed in  the [[Ward–Takahashi identity|Ward–Takahashi identities]]. Generalizations of Noether's theorem to [[superspace]]s also exist.{{citation needed|date=December 2017}}
+
+== Informal statement of the theorem ==
+All fine technical points aside, Noether's theorem can be stated informally
+
+{{quote|If a system has a continuous symmetry property, then there are corresponding quantities whose values are conserved in time.<ref>{{cite book |author=Thompson, W.J. |title=Angular Momentum: an illustrated guide to rotational symmetries for physical systems |publisher=Wiley |year=1994 |isbn=0-471-55264-X |volume=1 |page=5 |url=https://books.google.com/books?id=O25fXV4z0B0C&pg=PA5}}</ref>}}
+
+A more sophisticated version of the theorem involving fields states that:
+
+{{quote|To every differentiable [[Symmetry in physics|symmetry]] generated by local actions there corresponds a [[conserved current]].}}
+
+The word "symmetry" in the above statement refers more precisely to the [[covariant transformation|covariance]] of the form that a physical law takes with respect to a one-dimensional [[Lie group]] of transformations satisfying certain technical criteria. The [[conservation law]] of a [[physical quantity]] is usually expressed as a [[continuity equation]].
+
+The formal proof of the theorem utilizes the condition of invariance to derive an expression for a current associated with a conserved physical quantity. In modern (since c. 1980<ref>The term "Noether charge" occurs in Seligman, ''Group theory and its applications in physics, 1980: Latin American School of Physics, Mexico City'', American Institute of Physics, 1981. It comes enters wider use during the 1980s, e.g. by G. Takeda in: Errol Gotsman, Gerald Tauber (eds.) ''From SU(3) to Gravity: Festschrift in Honor of Yuval Ne'eman'', 1985, p. 196.</ref>) terminology, the  conserved quantity is called the ''Noether charge'', while the flow carrying that charge is called the ''Noether current''. The Noether current is defined [[up to]] a [[solenoidal]] (divergenceless) vector field.
+
+In the context of gravitation, [[Felix Klein]]'s statement of Noether's theorem for action ''I'' stipulates for the invariants:<ref>Nina Byers (1998) [http://cwp.library.ucla.edu/articles/noether.asg/noether.html "E. Noether's Discovery of the Deep Connection Between Symmetries and Conservation Laws"]. In Proceedings of a Symposium on the Heritage of Emmy Noether, held on 2–4 December 1996, at the Bar-Ilan University, Israel, Appendix B.</ref> 
+{{quote|If an integral I is invariant under a continuous group ''G''<sub>''ρ''</sub> with ''ρ'' parameters, then ''ρ'' linearly independent combinations of the Lagrangian expressions are divergences.}}
+
+==Brief illustration and overview of the concept==
+[[File:Noether theorem scheme.png|thumb|upright=2|Plot illustrating Noether's theorem for a coordinate-wise symmetry.]]
+The main idea behind Noether's theorem is most easily illustrated by a system with one coordinate <math>q</math> and a continuous symmetry <math> \varphi: q \mapsto q + \delta q </math> (gray arrows on the diagram). Consider any trajectory <math>q(t)</math> (bold on the diagram) that satisfies the system's [[Euler-Lagrange equation|laws of motion]]. That is, the [[Action (physics)|action]] <math>S</math> governing this system is [[stationary point|stationary]] on this trajectory, i.e. does not change under any local [[Calculus of variations|variation]] of the trajectory. In particular it would not change under a variation that applies the symmetry flow <math>\varphi</math> on a time segment [{{math|''t''<sub>0</sub>, ''t''<sub>1</sub>}}] and is motionless outside that segment. To keep the trajectory continuous, we use "buffering" periods of small time <math>\tau</math> to transition between the segments gradually.
+
+The total change in the action <math>S</math> now comprises changes brought by every interval in play. Parts, where variation itself vanishes, bring no <math>\Delta S</math>. The middle part doesn't change the action either, because its transformation <math>\varphi</math> is a symmetry and thus preserves the Lagrangian <math>L</math> and the action <math display="inline"> S=\int L </math>. The only remaining parts are the "buffering" pieces. Roughly speaking, they contribute mostly through their "slanting" <math>\dot{q}\rightarrow \dot{q}\pm \delta q / \tau</math>.
+
+That changes the Lagrangian by <math>\Delta L \approx \bigl(\partial L/\partial \dot{q}\bigr)\Delta \dot{q} </math>, which integrates to
+
+:<math>\Delta S =\int \Delta L \approx \int \frac{\partial L}{\partial \dot{q}}\Delta \dot{q} \approx \int \frac{\partial L}{\partial \dot{q}}\Bigl(\pm \frac{\delta q}{\tau}\Bigr) \approx \ \pm\frac{\partial L}{\partial \dot{q}} \delta q = \pm\frac{\partial L}{\partial \dot{q}} \varphi </math>.
+
+These last terms, evaluated around the endpoints <math>t_0</math> and <math>t_1</math>, should cancel each other in order to make the total change in the action <math>\Delta S</math> be zero, as would be expected if the trajectory is a solution. That is
+
+:<math>\Bigl(\frac{\partial L}{\partial \dot{q}} \varphi\Bigr)(t_0) = \Bigl(\frac{\partial L}{\partial \dot{q}} \varphi\Bigr)(t_1)</math>,
+
+meaning the quantity <math>\bigl(\partial L /\partial \dot{q}\bigr)\varphi</math> is conserved, which is the conclusion of Noether's theorem. For instance if pure translations <math>\varphi=const\ </math> are the symmetry, then the conserved quantity becomes just <math>\bigl(\partial L/\partial \dot{q}\bigr) =p</math>, the canonical momentum.
+
+More general cases follow the same idea: 
+:When more coordinates <math>q_r</math> undergo a symmetry transformation <math>q_r\mapsto q_r+\varphi_r</math>, their effects add up by linearity to a conserved quantity <math>\sum_r \bigl(\partial L/\partial \dot{q}_r\bigr)\varphi_r</math>.
+
+:When there are time transformations <math>t\mapsto t+T</math>, they cause the "buffering" segments to contribute the two following terms to <math>\Delta S</math>:
+:<math>\Delta S\approx \pm \Bigl(TL+\int \frac{\partial L}{\partial \dot{q}_r}\Delta \dot{q}_r\Bigr)\approx \pm T \Bigl(L-\frac{\partial L}{\partial \dot{q}_r}\dot{q}_r\Bigr)</math>,
+
+::first term being due to stretching in temporal dimension of the "buffering" segment (that changes the size of the domain of integration), and the second is due to its "slanting" just as in the exemplar case. Together they add a summand <math>T \Bigl(L-\sum_r \bigl(\partial L/\partial \dot{q}_r\bigr)\dot{q}_r\Bigr)</math> to the conserved quantity.
+:Finally, when instead of a trajectory <math>q(t)</math> entire fields <math>\psi(q_r,t)</math> are considered, the argument replaces 
+* the interval <math>[t_0,t_1]</math> with a bounded region <math>U</math> of the <math>(q_r,t)</math>-domain, 
+* the endpoints <math>t_0</math> and <math>t_1</math> with the boundary <math>\partial U</math> of the region, 
+* and its contribution to <math>\Delta S</math> is interpreted as a flux of a [[conserved current]] <math>j_r</math>, that is built in a way analogous to the prior definition of a conserved quantity.
+
+:Now, the zero contribution of the "buffering" <math>\partial U</math> to <math>\Delta S</math> is interpreted as vanishing of the total flux of the current <math>j_r</math> through the <math>\partial U</math>. That is the sense in which it is conserved: how much is "flowing" in, just as much is "flowing" out.
+
+==Historical context==
+{{main|Constant of motion|conservation law|conserved current}}
+
+A [[conservation law]] states that some quantity ''X'' in the mathematical description of a system's evolution remains constant throughout its motion – it is an [[Invariant (physics)|invariant]].   Mathematically, the rate of change of ''X'' (its [[derivative]] with respect to [[time]]) is zero,
+
+:<math>\frac{dX}{dt} = \dot{X} = 0 ~.</math>
+
+Such quantities are said to be conserved; they are often called [[constant of motion|constants of motion]] (although motion ''per se'' need not be involved, just evolution in time). For example, if the energy of a system is conserved, its energy is invariant at all times, which imposes a constraint on the system's motion and may help in solving for it. Aside from insights that such constants of motion give into the nature of a system, they are a useful calculational tool; for example, an approximate solution can be corrected by finding the nearest state that satisfies the suitable conservation laws.
+
+The earliest constants of motion discovered were [[momentum]] and [[energy]], which were proposed in the 17th century by [[René Descartes]] and [[Gottfried Leibniz]] on the basis of [[collision]] experiments, and refined by subsequent researchers. [[Isaac Newton]] was the first to enunciate the conservation of momentum in its modern form, and showed that it was a consequence of [[Newton's laws of motion|Newton's third law]]. According to [[general relativity]], the conservation laws of linear momentum, energy and angular momentum are only exactly true globally when expressed in terms of the  sum of the [[stress–energy tensor]] (non-gravitational stress–energy) and the [[Stress–energy–momentum pseudotensor#Landau–Lifshitz pseudotensor|Landau–Lifshitz stress–energy–momentum pseudotensor]] (gravitational stress–energy). The local conservation of non-gravitational linear momentum and energy in a free-falling reference frame is expressed by the vanishing of the covariant [[divergence]] of the [[stress–energy tensor]]. Another important conserved quantity, discovered in studies of the [[celestial mechanics]] of astronomical bodies, is the [[Laplace–Runge–Lenz vector]].
+
+In the late 18th and early 19th centuries, physicists developed more systematic methods for discovering invariants. A major advance came in 1788 with the development of [[Lagrangian mechanics]], which is related to the [[principle of least action]]. In this approach, the state of the system can be described by any type of [[generalized coordinate]]s '''q'''; the laws of motion need not be expressed in a [[Cartesian coordinate system]], as was customary in Newtonian mechanics. The [[action (physics)|action]] is defined as the time integral ''I'' of a function known as the [[Lagrangian mechanics|Lagrangian]]&nbsp;''L''
+
+:<math>I = \int L(\mathbf{q}, \dot{\mathbf{q}}, t) \, dt ~,</math>
+
+where the dot over '''q''' signifies the rate of change of the coordinates '''q''',
+
+:<math>\dot{\mathbf{q}} = \frac{d\mathbf{q}}{dt} ~.</math>
+
+[[Hamilton's principle]] states that the physical path '''q'''(''t'')—the one actually taken by the system—is a path for which infinitesimal variations in that path cause no change in ''I'', at least up to first order. This principle results in the [[Euler–Lagrange equation]]s,
+
+:<math>\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{\mathbf{q}}} \right) = \frac{\partial L}{\partial \mathbf{q}}   ~.</math>
+
+Thus, if one of the coordinates, say ''q<sub>k</sub>'', does not appear in the Lagrangian, the right-hand side of the equation is zero, and the left-hand side requires that
+
+:<math>\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_k} \right) = \frac{dp_k}{dt} = 0~,</math>
+
+where the momentum
+
+:<math> p_k = \frac{\partial L}{\partial \dot{q}_k} </math>
+
+is conserved throughout the motion (on the physical path).
+
+Thus, the absence of the '''ignorable''' coordinate ''q<sub>k</sub>'' from the Lagrangian implies that the Lagrangian is unaffected by changes or transformations of ''q<sub>k</sub>''; the Lagrangian is invariant, and is said to exhibit a [[symmetry in physics|symmetry]] under such transformations. This is the seed idea generalized in Noether's theorem.
+
+Several alternative methods for finding conserved quantities were developed in the 19th century, especially by [[William Rowan Hamilton]]. For example, he developed a theory of [[canonical transformation]]s which allowed changing coordinates so that some coordinates disappeared from the Lagrangian, as above, resulting in conserved canonical momenta. Another approach, and perhaps the most efficient for finding conserved quantities, is the [[Hamilton–Jacobi equation]].
+
+==Mathematical expression==
+{{see also|Perturbation theory}}
+
+===Simple form using perturbations===
+
+The essence of Noether's theorem is generalizing the ignorable coordinates outlined.{{clarify|date=October 2020 |reason= }}
+
+One can assume that the Lagrangian ''L'' defined above is invariant under small perturbations (warpings) of the time variable ''t'' and the [[generalized coordinate]]s '''q'''. One may write
+
+:<math>t \rightarrow t^{\prime} = t + \delta t</math>
+:<math>\mathbf{q} \rightarrow \mathbf{q}^{\prime} = \mathbf{q} + \delta \mathbf{q} ~,</math>
+
+where the perturbations ''δt'' and ''δ'''''q''' are both small, but variable. For generality, assume there are (say) ''N'' such [[symmetry transformations]] of the action, i.e. transformations leaving the action unchanged; labelled by an index ''r''&nbsp;=&nbsp;1,&nbsp;2,&nbsp;3,&nbsp;...,&nbsp;''N''.
+
+Then the resultant perturbation can be written as a linear sum of the individual types of perturbations,
+:<math>\delta t = \sum_r \varepsilon_r T_r </math>
+:<math>\delta \mathbf{q} = \sum_r \varepsilon_r \mathbf{Q}_r ~, </math>
+where ''ε''<sub>''r''</sub> are [[infinitesimal]] parameter coefficients corresponding to each: 
+*[[Lie group#The exponential map|generator]] ''T<sub>r</sub>'' of [[time evolution]], and
+*[[Lie group#The exponential map|generator]] '''Q'''<sub>''r''</sub> of the generalized coordinates.
+For translations, '''Q'''<sub>''r''</sub> is a constant with units of [[length]]; for rotations, it is an expression linear in the components of '''q''', and the parameters make up an [[angle]].
+
+Using these definitions, [[Emmy Noether|Noether]] showed that the ''N'' quantities
+
+:<math>\left(\frac{\partial L}{\partial \dot{\mathbf{q}}} \cdot \dot{\mathbf{q}} - L \right) T_r - \frac{\partial L}{\partial \dot{\mathbf{q}}} \cdot \mathbf{Q}_r</math>
+
+(which have the [[dimensional analysis|dimensions]] of [energy]·[time] + [momentum]·[length] = [action]) are conserved ([[constants of motion]]).
+
+==== Examples ====
+
+=====Time invariance=====
+
+For illustration, consider a Lagrangian that does not depend on time, i.e., that is invariant (symmetric) under changes ''t'' → ''t'' + δ''t'', without any change in the coordinates '''q'''. In this case, ''N''&nbsp;=&nbsp;1, ''T''&nbsp;=&nbsp;1 and '''Q'''&nbsp;=&nbsp;0; the corresponding conserved quantity is the total [[energy]] ''H''<ref name="energy" >{{harvnb|Lanczos|1970|pp=401–403}}</ref>
+
+:<math>H = \frac{\partial L}{\partial \dot{\mathbf{q}}} \cdot \dot{\mathbf{q}} - L. </math>
+
+=====Translational invariance=====
+
+Consider a Lagrangian which does not depend on an ("ignorable", as above)  coordinate ''q''<sub>''k''</sub>; so  it is invariant (symmetric) under changes ''q''<sub>''k''</sub> → ''q''<sub>''k''</sub> + ''δq''<sub>''k''</sub>. In that case, ''N''&nbsp;=&nbsp;1, ''T''&nbsp;=&nbsp;0, and ''Q''<sub>''k''</sub>&nbsp;=&nbsp;1; the conserved quantity is the corresponding linear [[momentum]] ''p''<sub>''k''</sub><ref name="momentum" >{{harvnb|Lanczos|1970|pp=403–404}}</ref>
+
+:<math>p_k = \frac{\partial L}{\partial \dot{q_k}}.</math>
+
+In [[special relativity|special]] and [[general relativity]], these apparently separate conservation laws are aspects of a single conservation law, that of the [[stress–energy tensor]],<ref name="stress–energy_tensor" >{{harvnb|Goldstein|1980|pp=592–593}}</ref> that is derived in the next section.
+
+=====Rotational invariance=====
+
+The conservation of the [[angular momentum]] '''L''' = '''r''' × '''p''' is  analogous to its linear momentum counterpart.<ref name="angular_momentum" >{{harvnb|Lanczos|1970|pp=404–405}}</ref> It is assumed that the symmetry of the Lagrangian is rotational, i.e., that the Lagrangian does not depend on the absolute orientation of the physical system in space. For concreteness, assume that the Lagrangian does not change under small rotations of an angle ''δθ'' about an axis '''n'''; such a rotation transforms the [[Cartesian coordinate system|Cartesian coordinates]] by the equation
+
+:<math>\mathbf{r} \rightarrow \mathbf{r} + \delta\theta \, \mathbf{n} \times \mathbf{r}.</math>
+
+Since time is not being transformed, ''T''=0. Taking ''δθ'' as the ''ε'' parameter and the Cartesian coordinates '''r''' as the generalized coordinates '''q''', the corresponding '''Q''' variables are given by
+
+:<math>\mathbf{Q} = \mathbf{n} \times \mathbf{r}.</math>
+
+Then Noether's theorem states that the following quantity is conserved,
+:<math>
+\frac{\partial L}{\partial \dot{\mathbf{q}}} \cdot \mathbf{Q}_{r} = 
+\mathbf{p} \cdot \left( \mathbf{n} \times \mathbf{r} \right) = 
+\mathbf{n} \cdot \left( \mathbf{r} \times \mathbf{p} \right) = 
+\mathbf{n} \cdot \mathbf{L}.
+</math>
+
+In other words, the component of the angular momentum '''L''' along the '''n''' axis is conserved.
+
+If '''n''' is arbitrary, i.e., if the system is insensitive to any rotation, then every component of '''L''' is conserved; in short, [[angular momentum]] is conserved.
+
+===Field theory version===
+Although useful in its own right, the version of Noether's theorem just given is a special case of the general version derived in 1915. To give the flavor of the general theorem, a version of Noether's theorem for continuous fields in four-dimensional [[space–time]] is now given. Since field theory problems are more common in modern physics than [[mechanics]] problems, this field theory version is the most commonly used (or most often implemented) version of Noether's theorem.
+
+Let there be a set of differentiable [[Field (physics)|fields]] <math>\varphi</math> defined over all space and time; for example, the temperature <math>T(\mathbf{x}, t)</math> would be representative of such a field, being a number defined at every place and time. The [[principle of least action]] can be applied to such fields, but the action is now an integral over space and time
+
+:<math>\mathcal{S} = \int \mathcal{L} \left(\varphi, \partial_\mu \varphi, x^\mu \right) \, d^4 x</math>
+
+(the theorem can be further generalized to the case where the Lagrangian depends on up to the ''n''<sup>th</sup> derivative, and can also be formulated using [[jet bundle]]s).
+
+A continuous transformation of the fields <math>\varphi</math> can be written infinitesimally as
+
+:<math>\varphi \mapsto \varphi + \varepsilon \Psi,</math>
+
+where <math>\Psi</math> is in general a function that may depend on both <math>x^\mu</math> and <math>\varphi</math>. The condition for <math>\Psi</math> to generate a physical symmetry is that the action <math>\mathcal{S}</math> is left invariant. This will certainly be true if the Lagrangian density <math>\mathcal{L}</math> is left invariant, but it will also be true if the Lagrangian changes by a divergence,
+
+:<math>\mathcal{L} \mapsto \mathcal{L} + \varepsilon \partial_\mu \Lambda^\mu,</math>
+
+since the integral of a divergence becomes a boundary term according to the [[divergence theorem]]. A system described by a given action might have multiple independent symmetries of this type, indexed by <math>r = 1, 2, \ldots, N,</math> so the most general symmetry transformation would be written as
+
+:<math>\varphi \mapsto \varphi + \varepsilon_r \Psi_r,</math>
+
+with the consequence
+
+:<math>\mathcal{L} \mapsto \mathcal{L} + \varepsilon_r \partial_\mu \Lambda^\mu_r.</math>
+
+For such systems, Noether's theorem states that there are <math>N</math> conserved [[conserved current|current densities]]
+
+:<math>
+j^\nu_r = \Lambda^\nu_r - \frac{\partial \mathcal{L}}{\partial \varphi_{,\nu}} \cdot \Psi_r
+</math>
+
+(where the dot product is understood to contract the ''field'' indices, not the <math>\nu</math> index or <math>r</math> index).
+
+In such cases, the [[conservation law]] is expressed in a four-dimensional way
+
+:<math>\partial_\nu j^\nu = 0,</math>
+
+which expresses the idea that the amount of a conserved quantity within a sphere cannot change unless some of it flows out of the sphere. For example, [[electric charge]] is conserved; the amount of charge within a sphere cannot change unless some of the charge leaves the sphere.
+
+For illustration, consider a physical system of fields that behaves the same under translations in time and space, as considered above; in other words, <math>L \left(\boldsymbol\varphi, \partial_\mu{\boldsymbol\varphi}, x^\mu \right)</math> is constant in its third argument. In that case, ''N''&nbsp;=&nbsp;4, one for each dimension of space and time. An infinitesimal translation in space, <math>x^\mu \mapsto x^\mu + \varepsilon_r \delta^\mu_r</math> (with <math>\delta</math> denoting the [[Kronecker delta]]), affects the fields as <math>\varphi(x^\mu) \mapsto \varphi(x^\mu - \varepsilon_r \delta^\mu_r)</math>: that is, relabelling the coordinates is equivalent to leaving the coordinates in place while translating the field itself, which in turn is equivalent to transforming the field by replacing its value at each point <math>x^\mu</math> with the value at the point <math>x^\mu - \varepsilon X^\mu</math> "behind" it which would be mapped onto <math>x^\mu</math> by the infinitesimal displacement under consideration. Since this is infinitesimal, we may write this transformation as
+
+:<math>\Psi_r = -\delta^\mu_r \partial_\mu \varphi.</math>
+
+The Lagrangian density transforms in the same way, <math>\mathcal{L}(x^\mu) \mapsto \mathcal{L}(x^\mu - \varepsilon_r \delta^\mu_r)</math>, so
+
+:<math>\Lambda^\mu_r = -\delta^\mu_r \mathcal{L}</math>
+
+and thus Noether's theorem corresponds to the conservation law for the [[stress–energy tensor]] ''T''<sub>''μ''</sub><sup>''ν''</sup>,<ref name="stress–energy_tensor" /> where we have used <math>\mu</math> in place of <math>r</math>. To wit, by using the expression given earlier, and collecting the four conserved currents (one for each <math>\mu</math>) into a tensor <math>T</math>, Noether's theorem gives
+
+:<math>
+T_\mu{}^\nu = -\delta^\nu_\mu \mathcal{L} + \delta^\sigma_\mu \partial_\sigma \varphi \frac{\partial \mathcal{L}}{\partial \varphi_{,\nu}} = \left(\frac{\partial \mathcal{L}}{\partial \varphi_{,\nu}}\right) \cdot \varphi_{,\mu} - \delta^\nu_\mu \mathcal{L}
+</math>
+
+with
+
+:<math>T_\mu{}^\nu{}_{,\nu} = 0</math>
+
+(we relabelled <math>\mu</math> as <math>\sigma</math> at an intermediate step to avoid conflict). (However, the <math>T</math> obtained in this way may differ from the symmetric tensor used as the source term in general relativity; see [[Stress–energy tensor#Canonical stress.E2.80.93energy tensor|Canonical stress–energy tensor]].)
+
+The conservation of [[electric charge]], by contrast, can be derived by considering ''Ψ'' linear in the fields ''φ'' rather than in the derivatives.<ref name="charge">{{harvnb|Goldstein|1980|pp=593–594}}</ref> In [[quantum mechanics]], the [[probability amplitude]] ''ψ''('''x''') of finding a particle at a point '''x''' is a complex field ''φ'', because it ascribes a [[complex number]] to every point in space and time. The probability amplitude itself is physically unmeasurable; only the probability ''p'' = |''ψ''|<sup>2</sup> can be inferred  from a set of  measurements. Therefore, the system is invariant under transformations of the ''ψ'' field and its [[complex conjugate]] field ''ψ''<sup>*</sup> that leave |''ψ''|<sup>2</sup> unchanged, such as
+
+:<math>\psi \rightarrow e^{i\theta} \psi \ ,\ \psi^{*} \rightarrow e^{-i\theta} \psi^{*}~,</math>
+
+a complex rotation. In the limit when the phase ''θ'' becomes infinitesimally small, ''δθ'', it may be taken as the parameter ''ε'', while the ''Ψ'' are equal to ''iψ'' and −''iψ''*, respectively. A specific example is the [[Klein–Gordon equation]], the [[special relativity|relativistically correct]] version of the [[Schrödinger equation]] for [[spin (physics)|spinless]] particles, which has the Lagrangian density
+
+:<math>L = \psi_{,\nu} \psi^{*}_{,\mu} \eta^{\nu \mu} + m^2 \psi \psi^{*}.</math>
+
+In this case, Noether's theorem states that the conserved (∂&nbsp;⋅&nbsp;''j''&nbsp;=&nbsp;0) current equals
+
+:<math>j^\nu = i \left( \frac{\partial \psi}{\partial x^\mu} \psi^{*} - \frac{\partial \psi^{*}}{\partial x^\mu} \psi \right) \eta^{\nu \mu}~,</math>
+
+which, when multiplied by the charge on that species of particle, equals the electric current density due to that type of particle. This "gauge invariance" was first noted by [[Hermann Weyl]], and is one of the prototype [[gauge symmetry|gauge symmetries]] of physics.
+
+== Derivations ==
+
+===One independent variable===
+Consider the simplest case, a system with one independent variable, time. Suppose the dependent variables '''q''' are such that the action integral
+
+{{block indent|<math>I = \int_{t_1}^{t_2} L [\mathbf{q} [t], \dot{\mathbf{q}} [t], t] \, dt </math>}}
+
+is invariant under brief infinitesimal variations in the dependent variables. In other words, they satisfy the [[Euler–Lagrange equation]]s
+
+:<math>\frac{d}{dt} \frac{\partial L}{\partial \dot{\mathbf{q}}} [t] = \frac{\partial L}{\partial \mathbf{q}} [t].</math>
+
+And suppose that the integral is invariant under a continuous symmetry. Mathematically such a symmetry is represented as a [[flow (mathematics)|flow]], '''φ''', which acts on the variables as follows
+
+:<math>t \rightarrow t' = t + \varepsilon T </math>
+:<math>\mathbf{q} [t] \rightarrow \mathbf{q}' [t'] = \varphi [\mathbf{q} [t], \varepsilon] = \varphi [\mathbf{q} [t' - \varepsilon T], \varepsilon]</math>
+
+where ''ε'' is a real variable indicating the amount of flow, and ''T'' is a real constant (which could be zero) indicating how much the flow shifts time.
+
+:<math>
+\dot{\mathbf{q}} [t] \rightarrow \dot{\mathbf{q}}' [t'] = \frac{d}{dt} \varphi [\mathbf{q} [t], \varepsilon] = \frac{\partial \varphi}{\partial \mathbf{q}} [\mathbf{q} [t' - \varepsilon T], \varepsilon] \dot{\mathbf{q}} [t' - \varepsilon T]
+.</math>
+
+The action integral flows to
+
+:<math>
+\begin{align}
+I' [\varepsilon] & = \int_{t_1 + \varepsilon T}^{t_2 + \varepsilon T} L [\mathbf{q}'[t'], \dot{\mathbf{q}}' [t'], t'] \, dt' \\[6pt]
+& = \int_{t_1 + \varepsilon T}^{t_2 + \varepsilon T} L [\varphi [\mathbf{q} [t' - \varepsilon T], \varepsilon], \frac{\partial \varphi}{\partial \mathbf{q}} [\mathbf{q} [t' - \varepsilon T], \varepsilon] \dot{\mathbf{q}} [t' - \varepsilon T], t'] \, dt'
+\end{align}
+</math>
+
+which may be regarded as a function of ''ε''. Calculating the derivative at ''ε''' = 0 and using [[Leibniz's rule (derivatives and integrals)|Leibniz's rule]], we get
+
+:<math>
+\begin{align}
+0 = {} & \frac{d I'}{d \varepsilon} [0] = L [\mathbf{q} [t_2], \dot{\mathbf{q}} [t_2], t_2] T - L [\mathbf{q} [t_1], \dot{\mathbf{q}} [t_1], t_1] T \\[6pt]
+& {} + \int_{t_1}^{t_2} \frac{\partial L}{\partial \mathbf{q}} \left( - \frac{\partial \varphi}{\partial \mathbf{q}} \dot{\mathbf{q}} T + \frac{\partial \varphi}{\partial \varepsilon} \right) + \frac{\partial L}{\partial \dot{\mathbf{q}}} \left( - \frac{\partial^2 \varphi}{(\partial \mathbf{q})^2} {\dot{\mathbf{q}}}^2 T + \frac{\partial^2 \varphi}{\partial \varepsilon \partial \mathbf{q}} \dot{\mathbf{q}} -
+\frac{\partial \varphi}{\partial \mathbf{q}} \ddot{\mathbf{q}} T \right) \, dt.
+\end{align}
+</math>
+
+Notice that the Euler–Lagrange equations imply
+
+:<math>
+\begin{align}
+\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial \varphi}{\partial \mathbf{q}} \dot{\mathbf{q}} T \right) 
+& = \left( \frac{d}{dt} \frac{\partial L}{\partial \dot{\mathbf{q}}} \right) \frac{\partial \varphi}{\partial \mathbf{q}} \dot{\mathbf{q}} T + \frac{\partial L}{\partial \dot{\mathbf{q}}} \left( \frac{d}{dt} \frac{\partial \varphi}{\partial \mathbf{q}} \right) \dot{\mathbf{q}} T + \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial \varphi}{\partial \mathbf{q}} \ddot{\mathbf{q}} \, T \\[6pt]
+& = \frac{\partial L}{\partial \mathbf{q}} \frac{\partial \varphi}{\partial \mathbf{q}} \dot{\mathbf{q}} T + \frac{\partial L}{\partial \dot{\mathbf{q}}} \left( \frac{\partial^2 \varphi}{(\partial \mathbf{q})^2} \dot{\mathbf{q}} \right) \dot{\mathbf{q}} T + \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial \varphi}{\partial \mathbf{q}} \ddot{\mathbf{q}} \, T.
+\end{align}
+</math>
+
+Substituting this into the previous equation, one gets
+
+:<math>
+\begin{align}
+0 = {} & \frac{d I'}{d \varepsilon} [0] \\[6pt]
+= {} & L [\mathbf{q} [t_2], \dot{\mathbf{q}} [t_2], t_2] T - L [\mathbf{q} [t_1], \dot{\mathbf{q}} [t_1], t_1] T - \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial \varphi}{\partial \mathbf{q}} \dot{\mathbf{q}} [t_2] T + \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial \varphi}{\partial \mathbf{q}} \dot{\mathbf{q}} [t_1] T \\[6pt]
+& {} + \int_{t_1}^{t_2} \frac{\partial L}{\partial \mathbf{q}} \frac{\partial \varphi}{\partial \varepsilon} + \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial^2 \varphi}{\partial \varepsilon \partial \mathbf{q}} \dot{\mathbf{q}} \, dt.
+\end{align}
+</math>
+
+Again using the Euler–Lagrange equations we get
+
+:<math>
+\frac{d}{d t} \left( \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial \varphi}{\partial \varepsilon} \right) 
+= \left( \frac{d}{d t} \frac{\partial L}{\partial \dot{\mathbf{q}}} \right) \frac{\partial \varphi}{\partial \varepsilon} + \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial^2 \varphi}{\partial \varepsilon \partial \mathbf{q}} \dot{\mathbf{q}}
+= \frac{\partial L}{\partial \mathbf{q}} \frac{\partial \varphi}{\partial \varepsilon} + \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial^2 \varphi}{\partial \varepsilon \partial \mathbf{q}} \dot{\mathbf{q}}.
+</math>
+
+Substituting this into the previous equation, one gets
+
+:<math>
+\begin{align}
+0 = {} & L [\mathbf{q} [t_2], \dot{\mathbf{q}} [t_2], t_2] T - L [\mathbf{q} [t_1], \dot{\mathbf{q}} [t_1], t_1] T - \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial \varphi}{\partial \mathbf{q}} \dot{\mathbf{q}} [t_2] T + \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial \varphi}{\partial \mathbf{q}} \dot{\mathbf{q}} [t_1] T \\[6pt]
+& {} + \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial \varphi}{\partial \varepsilon} [t_2] - \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial \varphi}{\partial \varepsilon} [t_1].
+\end{align}
+</math>
+
+From which one can see that
+
+:<math>\left( \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial \varphi}{\partial \mathbf{q}} \dot{\mathbf{q}} - L \right) T - \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial \varphi}{\partial \varepsilon}</math>
+
+is a constant of the motion, i.e., it is a conserved quantity. Since φ['''q''', 0] = '''q''', we get <math>\frac{\partial \varphi}{\partial \mathbf{q}} = 1</math> and so the conserved quantity simplifies to
+
+:<math>\left( \frac{\partial L}{\partial \dot{\mathbf{q}}} \dot{\mathbf{q}} - L \right) T - \frac{\partial L}{\partial \dot{\mathbf{q}}} \frac{\partial \varphi}{\partial \varepsilon}.</math>
+
+To avoid excessive complication of the formulas, this derivation assumed that the flow does not change as time passes. The same result can be obtained in the more general case.
+
+===Field-theoretic derivation===
+Noether's theorem may also be derived for tensor fields ''φ''<sup>''A''</sup> where the index ''A'' ranges over the various components of the various tensor fields. These field quantities are functions defined over a four-dimensional space whose points are labeled by coordinates ''x''<sup>μ</sup> where the index ''μ'' ranges over time (''μ''&nbsp;=&nbsp;0) and three spatial dimensions (''μ''&nbsp;=&nbsp;1,&nbsp;2,&nbsp;3). These four coordinates are the independent variables; and the values of the fields at each event are the dependent variables. Under an infinitesimal transformation, the variation in the coordinates is written
+
+:<math>x^\mu \rightarrow \xi^\mu = x^\mu + \delta x^\mu </math>
+
+whereas the transformation of the field variables is expressed as
+
+:<math>\varphi^A \rightarrow \alpha^A (\xi^\mu) = \varphi^A (x^\mu) + \delta \varphi^A (x^\mu)\,.</math>
+
+By this definition, the field variations ''δφ''<sup>''A''</sup> result from two factors: intrinsic changes in the field themselves and changes in coordinates, since the transformed field ''α''<sup>''A''</sup> depends on the transformed coordinates ξ<sup>μ</sup>. To isolate the intrinsic changes, the field variation at a single point ''x''<sup>μ</sup> may be defined
+
+:<math>\alpha^A (x^\mu) = \varphi^A (x^\mu) + \bar{\delta} \varphi^A (x^\mu)\,.</math>
+
+If the coordinates are changed, the boundary of the region of space–time over which the Lagrangian is being integrated also changes; the original boundary and its transformed version are denoted as Ω and Ω’, respectively.
+
+Noether's theorem begins with the assumption that a specific transformation of the coordinates and field variables does not change the [[action (physics)|action]], which is defined as the integral of the Lagrangian density over the given region of spacetime. Expressed mathematically, this assumption may be written as
+
+:<math>\int_{\Omega^{\prime}} L \left( \alpha^A, {\alpha^A}_{,\nu}, \xi^{\mu} \right) d^{4}\xi - \int_{\Omega} L \left( \varphi^A, {\varphi^A}_{,\nu}, x^{\mu} \right) d^{4}x = 0</math>
+
+where the comma subscript indicates a partial derivative with respect to the coordinate(s) that follows the comma, e.g.
+
+:<math>{\varphi^A}_{,\sigma} = \frac{\partial \varphi^A}{\partial x^{\sigma}}\,.</math>
+
+Since ξ is a dummy variable of integration, and since the change in the boundary Ω is infinitesimal by assumption, the two integrals may be combined using the four-dimensional version of the [[divergence theorem]] into the following form
+
+:<math>
+\int_{\Omega} \left\{ 
+\left[ L \left( \alpha^A, {\alpha^A}_{,\nu}, x^\mu \right) - 
+L \left( \varphi^A, {\varphi^A}_{,\nu}, x^\mu \right) \right]
++ \frac{\partial}{\partial x^\sigma} \left[ L \left( \varphi^A, {\varphi^A}_{,\nu}, x^\mu \right) \delta x^\sigma \right]
+\right\} d^4 x = 0
+\,.</math>
+
+The difference in Lagrangians can be written to first-order in the infinitesimal variations as
+
+:<math>
+\left[ L \left( \alpha^A, {\alpha^A}_{,\nu}, x^\mu \right) - 
+L \left( \varphi^A, {\varphi^A}_{,\nu}, x^\mu \right) \right] = 
+\frac{\partial L}{\partial \varphi^A} \bar{\delta} \varphi^A + 
+\frac{\partial L}{\partial {\varphi^A}_{,\sigma}} \bar{\delta} {\varphi^A}_{,\sigma}
+\,.</math>
+
+However, because the variations are defined at the same point as described above, the variation and the derivative can be done in reverse order; they [[commutativity|commute]]
+
+:<math>
+\bar{\delta} {\varphi^A}_{,\sigma} = 
+\bar{\delta} \frac{\partial \varphi^A}{\partial x^\sigma} = 
+\frac{\partial}{\partial x^\sigma} ( \bar{\delta} \varphi^A)
+\,.</math>
+
+Using the Euler–Lagrange field equations
+
+:<math>
+\frac{\partial}{\partial x^\sigma} \left( \frac{\partial L}{\partial {\varphi^A}_{,\sigma}} \right) =
+\frac{\partial L}{\partial \varphi^A}
+</math>
+
+the difference in Lagrangians can be written neatly as
+
+:<math>
+\begin{align}
+& \left[ L \left( \alpha^A, {\alpha^A}_{,\nu}, x^\mu \right) - 
+L \left( \varphi^A, {\varphi^A}_{,\nu}, x^{\mu} \right) \right] \\[4pt]
+= {} & \frac{\partial}{\partial x^\sigma} \left( \frac{\partial L}{\partial {\varphi^A}_{,\sigma}} \right) \bar{\delta} \varphi^A + 
+\frac{\partial L}{\partial {\varphi^A}_{,\sigma}} \bar{\delta} {\varphi^A}_{,\sigma}
+= \frac{\partial}{\partial x^\sigma} 
+\left( \frac{\partial L}{\partial {\varphi^A}_{,\sigma}} \bar{\delta} \varphi^A \right).
+\end{align}
+</math>
+
+Thus, the change in the action can be written as
+
+:<math>
+\int_\Omega \frac{\partial}{\partial x^\sigma} 
+\left\{ \frac{\partial L}{\partial {\varphi^A}_{,\sigma}} \bar{\delta} \varphi^A + 
+L \left( \varphi^A, {\varphi^A}_{,\nu}, x^\mu \right) \delta x^\sigma
+\right\} d^{4}x = 0
+\,.</math>
+
+Since this holds for any region Ω, the integrand must be zero
+
+:<math>
+\frac{\partial}{\partial x^\sigma} 
+\left\{ \frac{\partial L}{\partial {\varphi^A}_{,\sigma}} \bar{\delta} \varphi^A + 
+L \left( \varphi^A, {\varphi^A}_{,\nu}, x^\mu \right) \delta x^\sigma
+\right\} = 0
+\,.</math>
+
+For any combination of the various [[symmetry in physics|symmetry]] transformations, the perturbation can be written
+
+:<math>\delta x^{\mu} = \varepsilon X^\mu</math>
+:<math>\delta \varphi^A = \varepsilon \Psi^A = \bar{\delta} \varphi^A + \varepsilon \mathcal{L}_X \varphi^A</math>
+
+where <math>\mathcal{L}_X \varphi^A</math> is the [[Lie derivative]] of φ<sup>''A''</sup> in the ''X''<sup>''μ''</sup> direction. When ''φ''<sup>''A''</sup> is a scalar or <math>{X^\mu}_{,\nu} = 0 </math>,
+
+:<math>\mathcal{L}_X \varphi^A = \frac{\partial \varphi^A}{\partial x^{\mu}} X^\mu\,.</math>
+
+These equations imply that the field variation taken at one point equals
+
+:<math>\bar{\delta} \varphi^A = \varepsilon \Psi^A - \varepsilon \mathcal{L}_X \varphi^A\,.</math>
+
+Differentiating the above divergence with respect to ''ε'' at ''ε''&nbsp;=&nbsp;0 and changing the sign yields the conservation law
+
+:<math>\frac{\partial }{\partial x^\sigma} j^\sigma = 0</math>
+
+where the conserved current equals
+
+:<math>
+j^\sigma = 
+\left[\frac{\partial L}{\partial {\varphi^A}_{,\sigma}} \mathcal{L}_X \varphi^A - L \, X^\sigma\right]
+- \left(\frac{\partial L}{\partial {\varphi^A}_{,\sigma}} \right) \Psi^A\,.
+</math>
+
+===Manifold/fiber bundle derivation===
+Suppose we have an ''n''-dimensional oriented [[Riemannian manifold]], ''M'' and a target manifold ''T''. Let <math>\mathcal{C}</math> be the [[Configuration space (physics)|configuration space]] of [[smooth function]]s from ''M'' to ''T''. (More generally, we can have smooth sections of a [[fiber bundle]] over ''M''.)
+
+Examples of this ''M'' in physics include:
+* In [[classical mechanics]], in the [[Hamiltonian mechanics|Hamiltonian]] formulation, ''M'' is the one-dimensional manifold <math>\mathbb{R}</math>, representing time and the target space is the [[cotangent bundle]] of [[space]] of generalized positions.
+* In [[field (physics)|field theory]], ''M'' is the [[spacetime]] manifold and the target space is the set of values the fields can take at any given point. For example, if there are ''m'' [[real number|real]]-valued [[scalar field]]s, <math>\varphi_1,\ldots,\varphi_m</math>, then the target manifold is <math>\mathbb{R}^{m}</math>. If the field is a real vector field, then the target manifold is [[isomorphic]] to <math>\mathbb{R}^{3}</math>.
+
+Now suppose there is a [[functional (mathematics)|functional]]
+
+:<math>\mathcal{S}:\mathcal{C}\rightarrow \mathbb{R},</math>
+
+called the [[Action (physics)|action]]. (It takes values into <math>\mathbb{R}</math>, rather than <math>\mathbb{C}</math>; this is for physical reasons, and is unimportant for this proof.)
+
+To get to the usual version of Noether's theorem, we need additional restrictions on the [[Action (physics)|action]]. We assume <math>\mathcal{S}[\varphi]</math> is the [[integral]] over ''M'' of a function
+
+:<math>\mathcal{L}(\varphi,\partial_\mu\varphi,x)</math>
+
+called the [[Lagrangian (field theory)|Lagrangian density]], depending on ''φ'', its [[derivative]] and the position. In other words, for ''φ'' in <math>\mathcal{C}</math>
+
+:<math> \mathcal{S}[\varphi]\,=\,\int_M \mathcal{L}[\varphi(x),\partial_\mu\varphi(x),x] \, d^{n}x.</math>
+
+Suppose we are given [[boundary condition]]s, i.e., a specification of the value of ''φ'' at the [[Boundary (topology)|boundary]] if ''M'' is [[Compact space|compact]], or some limit on ''φ'' as ''x'' approaches ∞. Then the [[subspace topology|subspace]] of <math>\mathcal{C}</math> consisting of functions ''φ'' such that all [[functional derivative]]s of <math>\mathcal{S}</math> at ''φ'' are zero, that is:
+
+:<math>\frac{\delta \mathcal{S}[\varphi]}{\delta \varphi(x)}\approx 0</math>
+
+and that ''φ'' satisfies the given boundary conditions, is the subspace of [[on shell]] solutions. (See [[principle of stationary action]])
+
+Now, suppose we have an [[infinitesimal transformation]] on <math>\mathcal{C}</math>, generated by a [[functional (mathematics)|functional]] [[derivation (abstract algebra)|derivation]], ''Q'' such that
+
+:<math>Q \left[ \int_N \mathcal{L} \, \mathrm{d}^n x \right] \approx \int_{\partial N} f^\mu [\varphi(x),\partial\varphi,\partial\partial\varphi,\ldots] \, ds_\mu </math>
+
+for all compact submanifolds ''N'' or in other words,
+
+:<math>Q[\mathcal{L}(x)]\approx\partial_\mu f^\mu(x)</math>
+
+for all ''x'', where we set
+
+:<math>\mathcal{L}(x)=\mathcal{L}[\varphi(x), \partial_\mu \varphi(x),x].</math>
+
+If this holds [[on shell]] and [[off shell]], we say ''Q'' generates an off-shell symmetry. If this only holds [[on shell]], we say ''Q'' generates an on-shell symmetry. Then, we say ''Q'' is a generator of a [[one-parameter group|one parameter]] [[symmetry]] [[Lie group]].
+
+Now, for any ''N'', because of the [[Euler–Lagrange]] theorem, [[on shell]] (and only on-shell), we have
+
+:<math>
+\begin{align}
+Q\left[\int_N \mathcal{L} \, \mathrm{d}^nx \right]
+& =\int_N \left[\frac{\partial\mathcal{L}}{\partial\varphi} - \partial_\mu \frac{\partial\mathcal{L}}{\partial(\partial_\mu\varphi)} \right]Q[\varphi] \, \mathrm{d}^nx + \int_{\partial N} \frac{\partial\mathcal{L}}{\partial(\partial_\mu\varphi)}Q[\varphi] \, \mathrm{d}s_\mu \\
+& \approx\int_{\partial N} f^\mu \, \mathrm{d}s_\mu.
+\end{align}
+</math>
+
+Since this is true for any ''N'', we have
+
+:<math>\partial_\mu\left[\frac{\partial\mathcal{L}}{\partial(\partial_\mu\varphi)}Q[\varphi]-f^\mu\right]\approx 0.</math>
+
+But this is the [[continuity equation]] for the current <math>J^\mu</math> defined by:<ref name=Peskin>{{cite book |title=An Introduction to Quantum Field Theory |url=https://books.google.com/books?id=i35LALN0GosC&q=weinberg+%22symmetry+%22&pg=PA689 |page=18 |author1=Michael E. Peskin |author2=Daniel V. Schroeder |publisher=Basic Books |isbn=0-201-50397-2 |year=1995 }}</ref>
+
+:<math>J^\mu\,=\,\frac{\partial\mathcal{L}}{\partial(\partial_\mu\varphi)}Q[\varphi]-f^\mu,</math>
+
+which is called the '''Noether current''' associated with the [[symmetry]]. The continuity equation tells us that if we [[Integral|integrate]] this current over a [[space-like]] slice, we get a [[Conservation law|conserved quantity]] called the Noether charge (provided, of course, if ''M'' is noncompact, the currents fall off sufficiently fast at infinity).
+
+=== Comments ===
+Noether's theorem is an [[on shell]] theorem: it relies on use of the equations of motion—the classical path. It reflects the relation between the boundary conditions and the variational principle. Assuming no boundary terms in the action, Noether's theorem implies that
+
+<math>\int_{\partial N} J^\mu ds_{\mu} \approx 0.</math>
+
+The quantum analogs of Noether's theorem involving expectation values, e.g. <math>\left\langle\int d^{4}x~\partial \cdot \textbf{J} \right\rangle = 0</math>, probing [[off shell]] quantities as well are the [[Ward–Takahashi identity|Ward–Takahashi identities]].
+
+=== Generalization to Lie algebras ===
+Suppose we have two symmetry derivations ''Q''<sub>1</sub> and ''Q''<sub>2</sub>. Then, [''Q''<sub>1</sub>,&nbsp;''Q''<sub>2</sub>] is also a symmetry derivation. Let's see this explicitly. Let's say
+
+{{block indent|<math>Q_1[\mathcal{L}]\approx\partial_\mu f_1^\mu</math>}}
+
+and
+
+{{block indent|<math>Q_2[\mathcal{L}]\approx\partial_\mu f_2^\mu</math>}}
+
+Then,
+
+:<math>[Q_1,Q_2][\mathcal{L}]=Q_1[Q_2[\mathcal{L}]]-Q_2[Q_1[\mathcal{L}]]\approx\partial_\mu f_{12}^\mu</math>
+
+where ''f''<sub>12</sub>&nbsp;=&nbsp;''Q''<sub>1</sub>[''f''<sub>2</sub><sup>''μ''</sup>]&nbsp;−&nbsp;''Q''<sub>2</sub>[''f''<sub>1</sub><sup>''μ''</sup>]. So,
+
+:<math>j_{12}^\mu=\left(\frac{\partial}{\partial (\partial_\mu\varphi)}\mathcal{L}\right)(Q_1[Q_2[\varphi]]-Q_2[Q_1[\varphi]])-f_{12}^\mu.</math>
+
+This shows we can extend Noether's theorem to larger Lie algebras in a natural way.
+
+=== Generalization of the proof ===
+This applies to ''any'' local symmetry derivation ''Q'' satisfying ''QS''&nbsp;≈&nbsp;0, and also to more general local functional differentiable actions, including ones where the Lagrangian depends on higher derivatives of the fields. Let ''ε'' be any arbitrary smooth function of the spacetime (or time) manifold such that the closure of its support is disjoint from the boundary. ''ε''&nbsp;is a [[test function]]. Then, because of the variational principle (which does ''not'' apply to the boundary, by the way), the derivation distribution q generated by ''q''[''ε''][Φ(''x'')] = ''ε''(''x'')''Q''[Φ(''x'')] satisfies ''q''[''ε''][''S'']&nbsp;≈&nbsp;0 for every&nbsp;''ε'', or more compactly, ''q''(''x'')[''S'']&nbsp;≈ 0&nbsp;for all ''x'' not on the boundary (but remember that ''q''(''x'') is a shorthand for a derivation ''distribution'', not a derivation parametrized by ''x'' in general). This is the generalization of Noether's theorem.
+
+To see how the generalization is related to the version given above, assume that the action is the spacetime integral of a Lagrangian that only depends on φ and its first derivatives. Also, assume
+
+:<math>Q[\mathcal{L}]\approx\partial_\mu f^\mu</math>
+
+Then,
+
+:<math>
+\begin{align}
+q[\varepsilon][\mathcal{S}] & = \int q[\varepsilon][\mathcal{L}] d^{n} x  \\[6pt]
+& = \int \left\{ \left(\frac{\partial}{\partial \varphi}\mathcal{L}\right) \varepsilon Q[\varphi]+ \left[\frac{\partial}{\partial (\partial_\mu \varphi)}\mathcal{L}\right]\partial_\mu(\varepsilon Q[\varphi]) \right\} d^{n} x \\[6pt]
+& = \int \left\{ \varepsilon Q[\mathcal{L}] + \partial_{\mu}\varepsilon \left[\frac{\partial}{\partial \left( \partial_\mu \varphi\right)} \mathcal{L} \right] Q[\varphi] \right\} \, d^{n} x \\[6pt]
+& \approx \int \varepsilon \partial_\mu \left\{f^\mu-\left[\frac{\partial}{\partial (\partial_\mu\varphi)}\mathcal{L}\right]Q[\varphi]\right\} \, d^{n} x
+\end{align}
+</math>
+
+for all <math>\varepsilon</math>.
+
+More generally, if the Lagrangian depends on higher derivatives, then
+
+:<math>
+\begin{align}
+\partial_\mu\left[f^\mu-\left[\frac{\partial}{\partial (\partial_\mu\varphi)} \mathcal{L} \right] \right. & \left. Q[\varphi] - 2\left[\frac{\partial}{\partial (\partial_\mu \partial_\nu \varphi)}\mathcal{L}\right]\partial_\nu Q[\varphi] \right. \\[6pt]
+& \left. {} + \partial_\nu\left[\left[\frac{\partial}{\partial (\partial_\mu \partial_\nu \varphi)}\mathcal{L}\right] Q[\varphi]\right]-\,\cdots\right]\approx 0.
+\end{align}
+</math>
+
+== Examples ==
+
+=== Example 1: Conservation of energy ===
+Looking at the specific case of a Newtonian particle of mass ''m'', coordinate ''x'', moving under the influence of a potential ''V'', coordinatized by time ''t''. The [[Action (physics)|action]], ''S'', is:
+
+:<math>
+\begin{align}
+\mathcal{S}[x] & = \int L[x(t),\dot{x}(t)] \, dt \\
+& = \int \left(\frac m 2 \sum_{i=1}^3\dot{x}_i^2-V(x(t))\right) \, dt.
+\end{align}
+</math>
+
+The first term in the brackets is the [[kinetic energy]] of the particle, whilst the second is its [[potential energy]]. Consider the generator of [[time translation]]s ''Q'' = ''d/dt''. In other words, <math>Q[x(t)]=\dot{x}(t)</math>. The coordinate ''x'' has an explicit dependence on time, whilst ''V'' does not; consequently:
+
+:<math>Q[L]=m \sum_i\dot{x}_i\ddot{x}_i-\sum_i\frac{\partial V(x)}{\partial x_i}\dot{x}_i = \frac{d}{dt}\left[\frac{m}{2}\sum_i\dot{x}_i^2-V(x)\right]</math>
+
+so we can set
+
+:<math>L=\frac{m}{2} \sum_i\dot{x}_i^2-V(x).</math>
+
+Then,
+
+:<math>
+\begin{align}
+j & = \sum_{i=1}^3\frac{\partial L}{\partial \dot{x}_i}Q[x_i]-L \\
+& = m \sum_i\dot{x}_i^2 -\left[\frac{m}{2}\sum_i\dot{x}_i^2 -V(x)\right] \\
+& = \frac{m}{2}\sum_i\dot{x}_i^2+V(x).
+\end{align}
+</math>
+
+The right hand side is the energy, and Noether's theorem states that <math>\dot{j}=0</math> (i.e. the principle of conservation of energy is a consequence of invariance under time translations).
+
+More generally, if the Lagrangian does not depend explicitly on time, the quantity
+
+:<math>\sum_{i=1}^3 \frac{\partial L}{\partial \dot{x}_i}\dot{x_i}-L</math>
+
+(called the [[Hamiltonian mechanics|Hamiltonian]]) is conserved.
+
+=== Example 2: Conservation of center of momentum ===
+Still considering 1-dimensional time, let
+
+:<math>
+\begin{align}
+\mathcal{S}[\vec{x}] & = \int \mathcal{L}[\vec{x}(t),\dot{\vec{x}}(t)]  dt \\[6pt]
+& = \int \left [\sum^N_{\alpha=1} \frac{m_\alpha}{2}(\dot{\vec{x}}_\alpha)^2 -\sum_{\alpha<\beta} V_{\alpha\beta}(\vec{x}_\beta-\vec{x}_\alpha)\right] dt,
+\end{align}
+</math>
+
+or <math>N</math> Newtonian particles where the potential only depends pairwise upon the relative displacement.
+
+For <math>\vec{Q}</math>, consider the generator of Galilean transformations (i.e. a change in the frame of reference). In other words,
+
+:<math>Q_i[x^j_\alpha(t)]=t \delta^j_i. </math>
+
+And
+
+:<math>
+\begin{align}
+Q_i[\mathcal{L}] & = \sum_\alpha m_\alpha \dot{x}_\alpha^i-\sum_{\alpha<\beta}\partial_i V_{\alpha\beta}(\vec{x}_\beta-\vec{x}_\alpha)(t-t) \\
+& = \sum_\alpha m_\alpha \dot{x}_\alpha^i.
+\end{align}
+</math>
+
+This has the form of <math>\frac{d}{dt}\sum_\alpha m_\alpha x^i_\alpha</math> so we can set
+
+:<math>\vec{f}=\sum_\alpha m_\alpha \vec{x}_\alpha.</math>
+
+Then,
+
+:<math>
+\begin{align}
+\vec{j} & =\sum_\alpha \left(\frac{\partial}{\partial \dot{\vec{x}}_\alpha} \mathcal{L}\right)\cdot\vec{Q}[\vec{x}_\alpha]-\vec{f} \\[6pt]
+& =\sum_\alpha (m_\alpha \dot{\vec{x}}_\alpha t-m_\alpha \vec{x}_\alpha) \\[6pt]
+& =\vec{P}t-M\vec{x}_{CM}
+\end{align}
+</math>
+
+where <math>\vec{P}</math> is the total momentum, ''M'' is the total mass and <math>\vec{x}_{CM}</math> is the center of mass. Noether's theorem states:
+
+:<math>\dot{\vec{j}} = 0 \Rightarrow {\vec{P}}-M \dot{\vec{x}}_{CM} = 0.</math>
+
+=== Example 3: Conformal transformation ===
+
+Both examples 1 and 2 are over a 1-dimensional manifold (time). An example involving spacetime is a [[conformal transformation]] of a massless real scalar field with a [[Quartic interaction|quartic potential]] in (3&nbsp;+&nbsp;1)-[[Minkowski spacetime]].
+
+:<math>
+\begin{align}
+\mathcal{S}[\varphi] & =\int \mathcal{L}[\varphi (x),\partial_\mu \varphi (x)] d^{4}x \\[6pt]
+& =\int \left( \frac{1}{2}\partial^\mu \varphi \partial_\mu \varphi -\lambda \varphi^4\right ) d^{4}x
+\end{align}
+</math>
+
+For ''Q'', consider the generator of a spacetime rescaling. In other words,
+
+:<math>Q[\varphi(x)]=x^\mu\partial_\mu \varphi(x)+\varphi(x). </math>
+
+The second term on the right hand side is due to the "conformal weight" of <math>\varphi</math>. And
+
+:<math>Q[\mathcal{L}]=\partial^\mu\varphi\left(\partial_\mu\varphi+x^\nu\partial_\mu\partial_\nu\varphi+\partial_\mu\varphi\right)-4\lambda\varphi^3\left(x^\mu\partial_\mu\varphi+\varphi\right).</math>
+
+This has the form of
+
+:<math>\partial_\mu\left[\frac{1}{2}x^\mu\partial^\nu\varphi\partial_\nu\varphi-\lambda x^\mu \varphi^4 \right] = \partial_\mu\left(x^\mu\mathcal{L}\right)</math>
+
+(where we have performed a change of dummy indices) so set
+
+:<math>f^\mu=x^\mu\mathcal{L}.</math>
+
+Then
+
+:<math>
+\begin{align}
+j^\mu & =\left[\frac{\partial}{\partial
+(\partial_\mu\varphi)}\mathcal{L}\right]Q[\varphi]-f^\mu \\[6pt]
+& =\partial^\mu\varphi\left(x^\nu\partial_\nu\varphi+\varphi\right)-x^\mu\left( \frac 1 2 \partial^\nu\varphi\partial_\nu\varphi-\lambda\varphi^4\right).
+\end{align}
+</math>
+
+Noether's theorem states that <math>\partial_\mu j^\mu = 0 </math> (as one may explicitly check by substituting the Euler–Lagrange equations into the left hand side).
+
+If one tries to find the [[Ward–Takahashi identity|Ward–Takahashi]] analog of this equation, one runs into a problem because of [[anomaly (physics)|anomalies]].
+
+== Applications ==
+Application of Noether's theorem allows physicists to gain powerful insights into any general theory in physics, by just analyzing the various transformations that would make the form of the laws involved invariant. For example:
+
+* the invariance of physical systems with respect to spatial [[translation (physics)|translation]] (in other words, that the laws of physics do not vary with locations in space) gives the law of conservation of [[linear momentum]];
+* invariance with respect to [[rotation]] gives the law of conservation of [[angular momentum]];
+* invariance with respect to [[time]] translation gives the well-known [[law of conservation of energy]]
+
+In [[quantum field theory]], the analog to Noether's theorem, the [[Ward–Takahashi identity]], yields further conservation laws, such as the conservation of [[electric charge]] from the invariance with respect to a change in the [[phase factor]] of the [[Complex number|complex]] field of the charged particle and the associated [[gauge invariance|gauge]] of the [[electric potential]] and [[vector potential]].
+
+The Noether charge is also used in calculating the [[entropy]] of [[stationary black hole]]s.<ref>{{cite journal |author1=Vivek Iyer |author2=Wald |doi=10.1103/PhysRevD.52.4430 |journal=[[Physical Review D]]  |title=A comparison of Noether charge and Euclidean methods for Computing the Entropy of Stationary Black Holes |volume=52 |issue=8 |pages=4430–9 |year=1995 |pmid=10019667 |arxiv=gr-qc/9503052|bibcode = 1995PhRvD..52.4430I |s2cid=2588285 }}</ref>
+
+==See also==
+{{Portal|Mathematics|Physics}}
+* [[Conservation law]]
+*[[Charge (physics)]]
+*[[Gauge symmetry]]
+*[[Gauge symmetry (mathematics)]]
+*[[Invariant (physics)]]
+*[[Goldstone boson]]
+*[[Symmetry in physics]]
+
+== Notes ==
+{{reflist|37em}}
+
+==References==
+*{{cite book| isbn=978-3-319-59694-5 |last1=Badin|first1=Gualtiero|last2=Crisciani|first2=Fulvio| title=Variational Formulation of Fluid and Geophysical Fluid Dynamics - Mechanics, Symmetries and Conservation Laws - | publisher=Springer| year=2018 | pages=218 | doi= 10.1007/978-3-319-59695-2|s2cid=125902566}}
+*{{cite book |last=Goldstein |first=Herbert |author-link=Herbert Goldstein |year=1980 |title= [[Classical Mechanics (textbook)|Classical Mechanics]] |edition=2nd |publisher=Addison-Wesley |location=Reading, MA |isbn= 0-201-02918-9 |pages=588–596}}
+* {{cite journal |last1=Johnson |first1=Tristan |title=Noether's Theorem: Symmetry and Conservation |journal=Honors Theses |date=2016 |url=https://digitalworks.union.edu/theses/163/ |access-date=28 August 2020 |publisher=[[Union College]]}}
+*{{Cite book | last = Kosmann-Schwarzbach | first = Yvette | author-link = Yvette Kosmann-Schwarzbach | title = The Noether theorems: Invariance and conservation laws in the twentieth century | publisher = [[Springer Science+Business Media|Springer-Verlag]] | series = Sources and Studies in the History of Mathematics and Physical Sciences | year = 2010 | isbn = 978-0-387-87867-6}} [http://www.math.cornell.edu/~templier/junior/The-Noether-theorems.pdf Online copy].
+*{{cite book | author-link= Cornelius Lanczos |last=Lanczos |first=C. | year = 1970 | title = The Variational Principles of Mechanics | edition = 4th | publisher = Dover Publications | location = New York | isbn = 0-486-65067-7 | pages = 401–5}}
+* {{cite journal |last1=Moser |first1=Seth |title=Understanding Noether's Theorem by Visualizing the Lagrangian |journal=Physics Capstone Projects |date=21 April 2020 |pages=1–12 |url=https://digitalcommons.usu.edu/phys_capstoneproject/86/ |access-date=28 August 2020}}
+*{{Cite book | last = Olver | first = Peter |author-link=Peter J. Olver | title = Applications of Lie groups to differential equations | publisher = [[Springer Science+Business Media|Springer-Verlag]] | edition = 2nd | series = [[Graduate Texts in Mathematics]] | volume = 107 | year = 1993 | isbn = 0-387-95000-1 }}
+*{{Cite book | last = Sardanashvily | first = G. | author-link=Gennadi Sardanashvily | title = Noether's Theorems. Applications in Mechanics and Field Theory | publisher = [[Springer Science+Business Media|Springer-Verlag]] | year = 2016 | isbn = 978-94-6239-171-0 }}
+
+==External links==
+* {{cite journal  |author1=Emmy Noether  |year=1918  |title=Invariante Variationsprobleme  |language=German  |url=http://de.wikisource.org/wiki/Invariante_Variationsprobleme }}
+:* {{cite journal  |author1=Emmy Noether |author2=Mort Tavel (translator)  |year=1971  |title=Invariant Variation Problems  |journal=Transport Theory and Statistical Physics  |volume=1 |issue=3 |pages=186–207  |arxiv=physics/0503066  |doi=10.1080/00411457108231446 |bibcode = 1971TTSP....1..186N |s2cid=119019843 }} (Original in ''Gott. Nachr.'' 1918:235–257)
+*{{cite arXiv |eprint=physics/9807044 |first=Nina |last=Byers|title=E. Noether's Discovery of the Deep Connection Between Symmetries and Conservation Laws |year=1998}}
+* {{cite web |last1=Baez |first1=John  |authorlink1=John Baez |title=Noether's Theorem in a Nutshell |url=http://math.ucr.edu/home/baez/noether.html |website=math.ucr.edu |access-date=28 August 2020 |date=2002}}
+*{{cite journal |author1=Vladimir Cuesta |author2=Merced Montesinos |author3=José David Vergara |title=Gauge invariance of the action principle for gauge systems with noncanonical symplectic structures  |journal=Physical Review D |volume=76 |pages=025025 |year=2007 |issue=2 |doi=10.1103/PhysRevD.76.025025 |bibcode = 2007PhRvD..76b5025C }}
+*{{cite journal |author1=Hanca, J. |author2=Tulejab, S. |author3=Hancova, M. |title=Symmetries and conservation laws: Consequences of Noether's theorem |journal=American Journal of Physics |volume=72 |issue=4 |pages=428–35 |year=2004 |doi=  10.1119/1.1591764|url=http://www.eftaylor.com/pub/symmetry.html|bibcode = 2004AmJPh..72..428H }}
+* {{cite arXiv |last1=Leone |first1=Raphaël |title=On the wonderfulness of Noether's theorems, 100 years later, and Routh reduction |date=11 April 2018|class=physics.hist-ph |eprint=1804.01714 }}
+*[http://www.mathpages.com/home/kmath564/kmath564.htm Noether's Theorem] at MathPages.<!-- Previously a referenced note; reference is lost, but we can assume this is still a valid citation -->
+*{{cite journal |author1=Merced Montesinos |author2=Ernesto Flores |journal=Revista Mexicana de Física |title=Symmetric energy–momentum tensor in Maxwell, Yang–Mills, and Proca theories obtained using only Noether's theorem |volume=52 |pages=29–36 |year=2006 |issue=1 |url=http://rmf.smf.mx/pdf/rmf/52/1/52_1_29.pdf |arxiv=hep-th/0602190 |bibcode=2006RMxF...52...29M}}
+* {{cite book | last1 = Neuenschwander | first1 = Dwight E. | title = Emmy Noether's Wonderful Theorem | publisher = Johns Hopkins University Press | year = 2010 | isbn = 978-0-8018-9694-1}}
+* {{cite arXiv |last1=Quigg |first1=Chris |title=Colloquium: A Century of Noether's Theorem |date=9 July 2019|class=physics.hist-ph |eprint=1902.01989 }}
+*{{cite journal|author1=Sardanashvily|journal=[[International Journal of Geometric Methods in Modern Physics]]|title=Gauge conservation laws in a general setting. Superpotential |volume=6 |pages=1047–1056 |year=2009 |arxiv=0906.1732|bibcode = 2009arXiv0906.1732S|doi=10.1142/S0219887809003862|issue=6 }}
+* Google Tech Talk, (June 16, 2010) {{YouTube|1_MpQG2xXVo|''Emmy Noether and The Fabric of Reality''}}
+
+<!-- Categories -->
+[[Category:Articles containing proofs]]
+[[Category:Calculus of variations]]
+[[Category:Conservation laws]]
+[[Category:Concepts in physics]]
+[[Category:Partial differential equations]]
+[[Category:Physics theorems]]
+[[Category:Quantum field theory]]
+[[Category:Symmetry]]
+[[Category:Theoretical physics]]

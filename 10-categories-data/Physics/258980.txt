@@ -1,0 +1,36 @@
+{{Use American English|date=January 2019}}
+{{Use mdy dates|date=January 2019}}
+{{Short description|Statistical mechanics hypothesis that all microstates are equiprobable for a given energy}}
+{{Technical|date=September 2016}}
+[[File:Ergodic hypothesis w reflecting rays.jpg|thumb|The question of ergodicity in a perfectly collisionless [[ideal gas]] with [[specular reflection]]s.]]
+[[Image:Fruit fly trap.jpg|150px|thumb|This device can trap fruit flies, but if it trapped atoms when placed in gas that already uniformly fills the available [[phase space]], then both [[Liouville's theorem (Hamiltonian)|Liouville's theorem]] and the [[Perpetual_motion#Classification|second law of thermodynamics]] would be violated.]]
+In [[physics]] and [[thermodynamics]], the '''ergodic hypothesis'''<ref>Originally due to L. Boltzmann. See part 2 of {{cite book|title=Vorlesungen über Gastheorie|year= 1898 |location=Leipzig|publisher=J. A. Barth|url=https://archive.org/details/vorlesungenberg02boltgoog |oclc=01712811}} ('Ergoden' on p.89 in the 1923 reprint.) It was used to prove equipartition of energy in the kinetic theory of gases</ref> says that, over long periods of time, the time spent by a system in some region of the [[phase space]] of [[Microstate (statistical mechanics)|microstates]] with the same energy is proportional to the volume of this region, i.e., that all accessible microstates are [[equiprobable]] over a long period of time.
+
+[[Liouville's theorem (Hamiltonian)|Liouville's theorem]] states that, for [[Hamiltonian dynamics|Hamiltonian]] systems, the local density of microstates following a particle path through phase space is constant as viewed by an observer moving with the ensemble (i.e., the [[Material derivative|convective time derivative]] is zero). Thus, if the microstates are [[Uniform distribution (continuous)|uniformly distributed]] in [[phase space]] initially, they will remain so at all times. But Liouville's theorem does ''not'' imply that the ergodic hypothesis holds for all Hamiltonian systems.
+
+The ergodic hypothesis is often assumed in the [[statistical analysis]] of [[computational physics]]. The analyst would assume that the [[average]] of a process parameter over [[time]] and the average over the [[statistical ensemble]] are the same. This assumption—that it is as good to simulate a system over a long time as it is to make many independent realizations of the same system—is not always correct. (See, for example, the [[Fermi–Pasta–Ulam–Tsingou problem|Fermi–Pasta–Ulam–Tsingou experiment]] of 1953.)
+
+Assumption of the ergodic hypothesis allows proof that certain types of perpetual motion machines of the [[Perpetual motion#Classification|second kind]] are impossible.
+
+Systems that are ergodic are said to have the property of [[ergodicity]]; a broad range of systems in [[geometry]], [[physics]] and [[stochastic process|stochastic probability theory]] are ergodic. Ergodic systems are studied in [[ergodic theory]].
+
+==Phenomenology==
+In macroscopic systems, the timescales over which a system can truly explore the entirety of its own [[phase space]] can be sufficiently large that the thermodynamic equilibrium state exhibits some form of '''ergodicity breaking'''. A common example is that of spontaneous magnetisation in [[ferromagnetic]] systems, whereby below the [[Curie temperature]] the system preferentially adopts a non-zero magnetisation even though the ergodic hypothesis would imply that no net magnetisation should exist by virtue of the system exploring all states whose time-averaged magnetisation should be zero. The fact that macroscopic systems often violate the literal form of the ergodic hypothesis is an example of [[spontaneous symmetry breaking]].
+
+However, complex disordered systems such as a [[spin glass]] show an even more complicated form of ergodicity breaking where the properties of the thermodynamic equilibrium state seen in practice are much more difficult to predict purely by symmetry arguments. Also conventional glasses (e.g. window glasses) violate ergodicity in a complicated manner. In practice this means that on sufficiently short time scales (e.g. those of parts of seconds, minutes, or a few hours) the systems may behave as ''solids'', i.e. with a positive shear modulus, but on extremely long scales, e.g. over millennia or eons, as ''liquids'', or with two or more time scales and ''plateaux''  in between.<ref>The introduction of the practical aspect of ergodicity breaking by introducing a "non-ergodicity time scale" is due to {{cite journal|first= R. G. |last=Palmer |title=Broken ergodicity |journal= Advances in Physics |volume =31|issue=6 |page= 669 |year=1982|bibcode = 1982AdPhy..31..669P |doi = 10.1080/00018738200101438 }}. Also related to these time-scale phenomena are the properties of [[ageing]] and the Mode-Coupling theory of {{cite book|first=W.|last= Götze|title=Dynamics of Glass Forming Liquids|publisher= Oxford Univ. Press|year=2008}}</ref>
+
+==See also==
+* [[Ergodic process]]
+* [[Ergodic theory]], a branch of mathematics concerned with a more general formulation of ergodicity
+* [[Ergodicity]]
+* [[Loschmidt's paradox]]
+* [[Poincaré recurrence theorem]]
+
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:Ergodic Hypothesis}}
+[[Category:Ergodic theory]]
+[[Category:Statistical mechanics]]
+[[Category:Philosophy of thermal and statistical physics]]
+[[Category:Concepts in physics]]

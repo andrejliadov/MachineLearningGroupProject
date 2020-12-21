@@ -1,0 +1,31 @@
+{{Use American English|date = March 2019}}
+{{Short description|Duration a communication channel's impulse response is effectively constant}}
+In [[communications system]]s, a [[communication channel]] may change with time. '''Coherence time''' is the time duration over which the channel impulse response is considered to be not varying. Such channel variation is much more significant in [[wireless]] communications systems, due to [[Doppler effect]]s.
+
+==Simple model==
+In a simple model, a signal <math>x(t)</math> transmitted at time <math>t_1</math> will be received as{{citation needed|date=December 2017}}
+:<math>y_{t_1}(t) = x(t-t_1)*h_{t_1}(t),</math>
+where <math>h_{t_1}(t)</math> is the channel impulse response (CIR) at time <math>t_1</math>. A signal transmitted at time <math>t_2</math> will be received as 
+:<math>y_{t_2}(t) = x(t-t_2)*h_{t_2}(t).</math>
+Now, if <math>h_{t_1}(t) - h_{t_2}(t)</math> is relatively small, the channel may be considered constant within the interval <math>t_1</math> to <math>t_2</math>.
+
+Coherence time (<math>T_c</math>) will therefore be given by
+:<math>T_c = t_2 - t_1.</math>
+
+==Relation with Doppler frequency==
+Coherence time <math>T_c</math> is the time domain dual of Doppler spread and is used to characterize the time varying nature of the frequency dispersiveness of the channel in the time domain. The Maximum Doppler spread and coherence time are inversely proportional to one another. That is,
+:<math>T_c\approx\frac{1}{f_m}</math>
+where <math>(f_m)</math> is the maximum Doppler spread or, maximum Doppler frequency or, maximum [[Doppler effect|Doppler shift]] given by <math>f_m=\frac{v}{c}f_c</math> with <math>f_c</math> being the center frequency of the emitter.
+
+Coherence time is actually a statistical measure of the time duration over which the channel [[impulse response]] is essentially invariant, and quantifies the similarity of the channel response at different times. In other words, coherence time is the time duration over which two received signals have a strong potential for amplitude correlation. If the reciprocal bandwidth of the [[baseband signal]] is greater than the coherence time of the channel, then the channel will change during the transmission of the baseband message, thus causing distortion at the receiver. If the coherence time is defined as the time over which the [[Correlation function|time correlation]] function is above 0.5, then the coherence time is approximately,
+:<math>T_c\approx\frac{9}{16\pi f_m}</math>
+
+In practice, the first approximation of coherence time suggests a time duration during which a [[Rayleigh fading]] signal may fluctuate wildly, and the second approximation is often too restrictive. A popular rule of thumb for modern [[digital communications]] is to define the coherence time as the [[geometric mean]] of the two approximate values, also known as [[Clarke's model]]; from the maximum Doppler frequency <math>f_m</math> we can obtain 50% coherence time <ref name="shankar2002">P. Mohana Shankar, ''Introduction to Wireless Systems'', John Wiley & Sons, 2002</ref><ref name="rappaport2002">T.S. Rappaport, ''Wireless Communications'', Prentice Hall, 2002</ref>
+:<math>T_c=\sqrt{\frac{9}{16\pi f_m^2}}</math>
+Usually, we use the following relation<ref name="rappaport2002"/>
+:<math>T_c=\sqrt{\frac{9}{16\pi}}\frac{1}{f_m}\simeq\frac{0.423}{f_m}</math>
+
+==References==
+<references/>
+
+[[Category:Communication]]

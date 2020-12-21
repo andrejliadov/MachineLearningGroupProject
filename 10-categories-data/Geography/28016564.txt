@@ -1,0 +1,38 @@
+The '''two-step floating catchment area (2SFCA) method''' is a method for combining a number of related types of information into a single, immediately meaningful, index that allows comparisons to be made across different locations. Its importance lies in the improvement over considering the individual sources of information separately, where none on its own provides an adequate summary.
+
+==Background==
+
+The two-step floating catchment area (2SFCA) method is a special case of a [[gravity model]] of [[Spatial analysis#Spatial interaction|spatial interaction]] that was developed to measure spatial accessibility to [[primary care physician]]s.<ref>Luo and Wang 2003a</ref><ref name="LWb">Luo and Wang 2003b</ref> 2SFCA can also be used to measure other accessibility such as accessibility to jobs, to [[cancer care]] facilities, etc. It was inspired by the spatial decomposition idea first proposed by Radke and Mu (2000).
+
+The 2SFCA method not only has most of the advantages of a gravity model, but is also intuitive to interpret, as it uses essentially a special form of physician-to-population ratio. It is easy to implement in a [[Geographic information system|GIS]] environment.<ref name="LWb" /><ref>Wang and Luo, 2005</ref><ref>Wang, 2006: 80-95</ref> In essence, the 2SFCA method measures spatial accessibility as a ratio of primary-care physicians to population, combining two steps:
+#it first assesses “physician availability” at the physicians' (supply) locations as the ratio of physicians to their surrounding population (i.e., within a threshold travel time from the physicians)
+#it sums up the ratios (i.e., physician availability derived in the first step) around (i.e., within the same threshold travel time from) each residential (demand) location.
+
+It has been recently enhanced by considering [[distance decay]] within catchments<ref>Luo and Qi, 2009</ref> and called the enhanced two-step floating catchment area (E2SFCA) method.
+
+Furthermore, the use of capping certain services according to nearby population size, can improve the accuracy when analyzing across areas of different environments<ref>McGrail and Humphreys, 2009</ref> (i.e. rural and urban).
+
+The method has been applied to other related public health issues, such as access to healthy food retailers<ref>Chen, 2017</ref>.
+
+==See also==
+*[[Primary care service area]]
+*[[Gravity model of migration]]
+
+==Notes==
+{{reflist}}
+
+==References==
+* Luo, W., Wang, F., 2003a. Spatial accessibility to primary care and physician shortage area designation: a case study in Illinois with GIS approaches. In: Skinner, R., Khan, O. (Eds.), ''Geographic Information Systems and Health Applications''. Idea Group Publishing, Hershey, PA, pp.&nbsp;260–278.
+* {{cite journal | last1 = Luo | first1 = W. | last2 = Wang | first2 = F. | year = 2003b | title = Measures of spatial accessibility to health care in a GIS environment: synthesis and a case study in the Chicago region | url = http://www.niu.edu/landform/papers/Luo_Wang2003.pdf | journal = Environment and Planning B: Planning and Design | volume = 30 | issue = 6| pages = 865–884 | doi = 10.1068/b29120 }}
+* {{cite journal | last1 = Luo | first1 = W. | last2 = Qi | first2 = Y. | year = 2009 | title = An enhanced two-step floating catchment area (E2SFCA) method for measuring spatial accessibility to primary care physicians | url = http://www.niu.edu/landform/papers/JHAP741_e2sfca.pdf | journal = Health & Place | volume = 15 | issue = 4| pages = 1100–1107 | doi = 10.1016/j.healthplace.2009.06.002 | pmid = 19576837 }}
+* {{cite journal | last1 = Radke | first1 = J. | last2 = Mu | first2 = L. | year = 2000 | title = Spatial decomposition, modeling and mapping service regions to predict access to social programs | journal = Geographic Information Sciences | volume = 6 | issue = 2| pages = 105–112 | doi=10.1080/10824000009480538}}
+* {{cite journal | last1 = Wang | first1 = F. | last2 = Luo | first2 = W. | year = 2005 | title = Assessing spatial and nonspatial factors for healthcare access: towards an integrated approach to defining health professional shortage areas | url = http://www.niu.edu/landform/papers/Wang_Luo2005.pdf | journal = Health and Place | volume = 11 | issue = 2| pages = 131–146 | doi=10.1016/j.healthplace.2004.02.003| pmid = 15629681 }}
+*Wang, F. 2006. Quantitative Methods and Applications in GIS. London: CRC Press. {{ISBN|0-8493-2795-4}}
+* {{cite journal | last1 = McGrail | first1 = Matthew R. | last2 = Humphreys | first2 = John S. | year = 2009 | title = Measuring spatial accessibility to primary care in rural areas: Improving the effectiveness of the two-step floating catchment area method | journal = Applied Geography | volume = 29 | issue = 4| pages = 533–541 | doi = 10.1016/j.apgeog.2008.12.003 }}
+* {{cite journal | last1 = Chen | first1 = X. | year = 2017 | title = Take the edge off: A hybrid geographic food access measure | journal = Applied Geography | volume = 87 | pages = 149–159 | doi = 10.1016/j.apgeog.2017.07.013 }}
+
+{{DEFAULTSORT:Two-Step Floating Catchment Area Method}}
+[[Category:Geography]]
+[[Category:Spatial data analysis]]
+[[Category:Accessibility]]
+[[Category:Urban studies and planning terminology]]

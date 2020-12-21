@@ -1,0 +1,210 @@
+{{About|pattern recognition as a branch of engineering|the cognitive process|Pattern recognition (psychology)|other uses}}
+{{More citations needed|date=May 2019}}
+
+'''Pattern recognition''' is the automated recognition of [[pattern]]s and regularities in [[data]]. It has applications in statistical [[data analysis]], [[signal processing]], [[image analysis]], [[information retrieval]], [[bioinformatics]], [[data compression]], [[computer graphics]] and [[machine learning]]. Pattern recognition has its origins in statistics and engineering; some modern approaches to pattern recognition include the use of [[machine learning]], due to the increased availability of [[big data]] and a new abundance of [[processing power]]. However, these activities can be viewed as two facets of the same field of application, and together they have undergone substantial development over the past few decades. A modern definition of pattern recognition is:
+
+{{quote
+|The field of pattern recognition is concerned with the automatic discovery of regularities in data through the use of computer algorithms and with the use of these regularities to take actions such as classifying the data into different categories.<ref name="Bishop2006">
+{{cite book |first=Christopher M. |last=Bishop |year=2006 |title=Pattern Recognition and Machine Learning |publisher=Springer}}</ref>}}
+
+Pattern recognition systems are in many cases trained from labeled "training" data, but when no [[labeled data]] are available other algorithms can be used to discover previously unknown patterns. [[Data mining|KDD]] and data mining have a larger focus on unsupervised methods and stronger connection to business use. Pattern recognition focuses more on the signal and also takes acquisition and [[Signal Processing]] into consideration. It originated in [[engineering]], and the term is popular in the context of [[computer vision]]: a leading computer vision conference is named [[Conference on Computer Vision and Pattern Recognition]].
+
+In [[machine learning]], pattern recognition is the assignment of a label to a given input value. In statistics, [[Linear discriminant analysis|discriminant analysis]] was introduced for this same purpose in 1936. An example of pattern recognition is [[classification (machine learning)|classification]], which attempts to assign each input value to one of a given set of ''classes'' (for example, determine whether a given email is "spam" or "non-spam"). However, pattern recognition is a more general problem that encompasses other types of output as well. Other examples are [[regression analysis|regression]], which assigns a [[real number|real-valued]] output to each input;<ref>{{Cite journal|last=Howard|first=W.R.|date=2007-02-20|title=Pattern Recognition and Machine Learning|journal=Kybernetes|volume=36|issue=2|pages=275|doi=10.1108/03684920710743466|issn=0368-492X}}</ref> [[sequence labeling]], which assigns a class to each member of a sequence of values<ref>{{Cite web|url=https://pubweb.eng.utah.edu/~cs6961/slides/seq-labeling1.4ps.pdf|title=Sequence Labeling|website=utah.edu|access-date=2018-11-06|archive-date=2018-11-06|archive-url=https://web.archive.org/web/20181106171837/https://pubweb.eng.utah.edu/~cs6961/slides/seq-labeling1.4ps.pdf|url-status=live}}</ref> (for example, [[part of speech tagging]], which assigns a [[part of speech]] to each word in an input sentence); and [[parsing]], which assigns a [[parse tree]] to an input sentence, describing the [[syntactic structure]] of the sentence.<ref>{{Cite book|title=Mathematical logic, p. 34|last=Ian.|first=Chiswell|date=2007|publisher=Oxford University Press|isbn=9780199215621|oclc=799802313}}</ref>
+
+Pattern recognition algorithms generally aim to provide a reasonable answer for all possible inputs and to perform "most likely" matching of the inputs, taking into account their statistical variation. This is opposed to ''[[pattern matching]]'' algorithms, which look for exact matches in the input with pre-existing patterns. A common example of a pattern-matching algorithm is [[regular expression]] matching, which looks for patterns of a given sort in textual data and is included in the search capabilities of many [[text editor]]s and [[word processor]]s.
+
+==Overview==
+Pattern recognition is generally categorized according to the type of learning procedure used to generate the output value. ''[[Supervised learning]]'' assumes that a set of ''training data'' (the ''[[training set]]'') has been provided, consisting of a set of instances that have been properly labeled by hand with the correct output. A learning procedure then generates a ''model'' that attempts to meet two sometimes conflicting objectives: Perform as well as possible on the training data, and generalize as well as possible to new data (usually, this means being as simple as possible, for some technical definition of "simple", in accordance with [[Occam's Razor]], discussed below). [[Unsupervised learning]], on the other hand, assumes training data that has not been hand-labeled, and attempts to find inherent patterns in the data that can then be used to determine the correct output value for new data instances.<ref>{{Cite journal| author= Carvalko, J.R., Preston K. | year=1972 |title= On Determining Optimum Simple Golay Marking Transforms for Binary Image Processing | journal= IEEE Transactions on Computers  | volume=21 | issue=12 | pages=1430–33  | doi = 10.1109/T-C.1972.223519| s2cid=21050445 }}.</ref> A combination of the two that has recently been explored is [[semi-supervised learning]], which uses a combination of labeled and unlabeled data (typically a small set of labeled data combined with a large amount of unlabeled data). Note that in cases of unsupervised learning, there may be no training data at all to speak of; in other words, the data to be labeled ''is'' the training data.
+
+Note that sometimes different terms are used to describe the corresponding supervised and unsupervised learning procedures for the same type of output. For example, the unsupervised equivalent of classification is normally known as ''[[data clustering|clustering]]'', based on the common perception of the task as involving no training data to speak of, and of grouping the input data into ''clusters'' based on some inherent [[similarity measure]] (e.g. the [[distance]] between instances, considered as vectors in a multi-dimensional [[vector space]]), rather than assigning each input instance into one of a set of pre-defined classes. In some fields, the terminology is different: For example, in [[community ecology]], the term "classification" is used to refer to what is commonly known as "clustering".
+
+The piece of input data for which an output value is generated is formally termed an ''instance''. The instance is formally described by a [[feature vector|vector]] of ''features'', which together constitute a description of all known characteristics of the instance. (These feature vectors can be seen as defining points in an appropriate [[space (mathematics)|multidimensional space]], and methods for manipulating vectors in [[vector space]]s can be correspondingly applied to them, such as computing the [[dot product]] or the angle between two vectors.) Typically, features are either [[categorical data|categorical]] (also known as [[nominal data|nominal]], i.e., consisting of one of a set of unordered items, such as a gender of "male" or "female", or a blood type of "A", "B", "AB" or "O"), [[ordinal data|ordinal]] (consisting of one of a set of ordered items, e.g., "large", "medium" or "small"), [[integer|integer-valued]] (e.g., a count of the number of occurrences of a particular word in an email) or [[real number|real-valued]] (e.g., a measurement of blood pressure). Often, categorical and ordinal data are grouped together; likewise for integer-valued and real-valued data. Furthermore, many algorithms work only in terms of categorical data and require that real-valued or integer-valued data be ''discretized'' into groups (e.g., less than 5, between 5 and 10, or greater than 10).
+
+===Probabilistic classifiers===
+{{Main|Probabilistic classifier}}
+Many common pattern recognition algorithms are ''probabilistic'' in nature, in that they use [[statistical inference]] to find the best label for a given instance. Unlike other algorithms, which simply output a "best" label, often probabilistic algorithms also output a [[probability]] of the instance being described by the given label. In addition, many probabilistic algorithms output a list of the ''N''-best labels with associated probabilities, for some value of ''N'', instead of simply a single best label. When the number of possible labels is fairly small (e.g., in the case of [[classification (machine learning)|classification]]), ''N'' may be set so that the probability of all possible labels is output. Probabilistic algorithms have many advantages over non-probabilistic algorithms:
+*They output a confidence value associated with their choice. (Note that some other algorithms may also output confidence values, but in general, only for probabilistic algorithms is this value mathematically grounded in [[probability theory]]. Non-probabilistic confidence values can in general not be given any specific meaning, and only used to compare against other confidence values output by the same algorithm.)
+*Correspondingly, they can ''abstain'' when the confidence of choosing any particular output is too low.
+*Because of the probabilities output, probabilistic pattern-recognition algorithms can be more effectively incorporated into larger machine-learning tasks, in a way that partially or completely avoids the problem of ''error propagation''.
+
+===Number of important feature variables===
+[[Feature selection]] algorithms attempt to directly prune out redundant or irrelevant features. A general introduction to [[feature selection]] which summarizes approaches and challenges, has been given.<ref>Isabelle Guyon Clopinet, André Elisseeff (2003). ''An Introduction to Variable and Feature Selection''. The Journal of Machine Learning Research, Vol. 3, 1157-1182. [http://www-vis.lbl.gov/~romano/mlgroup/papers/guyon03a.pdf Link] {{Webarchive|url=https://web.archive.org/web/20160304035940/http://www-vis.lbl.gov/~romano/mlgroup/papers/guyon03a.pdf |date=2016-03-04 }}</ref> The complexity of feature-selection is, because of its non-monotonous character, an [[optimization problem]] where given a total of <math>n</math> features the [[powerset]] consisting of all <math>2^n-1</math> subsets of features need to be explored. The [[Branch and bound|Branch-and-Bound algorithm]]<ref>
+{{Cite journal|author1=Iman Foroutan |author2=Jack Sklansky | year=1987 |
+title=Feature Selection for Automatic Classification of Non-Gaussian Data | journal=IEEE Transactions on Systems, Man and Cybernetics | volume=17 | pages=187&ndash;198 | doi = 10.1109/TSMC.1987.4309029 | issue=2
+|s2cid=9871395 }}.</ref> does reduce this complexity but is intractable for medium to large values of the number of available features <math>n</math>. For a large-scale comparison of feature-selection algorithms see 
+.<ref>
+{{Cite journal|author1=Mineichi Kudo |author2=Jack Sklansky | year=2000 |
+title=Comparison of algorithms that select features for pattern classifiers | journal=[[Pattern Recognition (journal)|Pattern Recognition]] | volume=33 | pages=25&ndash;41 | doi = 10.1016/S0031-3203(99)00041-2 | issue=1|citeseerx=10.1.1.55.1718 }}.</ref>
+
+Techniques to transform the raw feature vectors ('''feature extraction''') are sometimes used prior to application of the pattern-matching algorithm. For example, [[feature extraction]] algorithms attempt to reduce a large-dimensionality feature vector into a smaller-dimensionality vector that is easier to work with and encodes less redundancy, using mathematical techniques such as [[principal components analysis]] (PCA). The distinction between '''feature selection''' and '''feature extraction''' is that the resulting features after feature extraction has taken place are of a different sort than the original features and may not easily be interpretable, while the features left after feature selection are simply a subset of the original features.
+
+==Problem statement==
+Formally, the problem of pattern recognition can be stated as follows: Given an unknown function <math>g:\mathcal{X}\rightarrow\mathcal{Y}</math> (the ''ground truth'') that maps input instances <math>\boldsymbol{x} \in \mathcal{X}</math> to output labels <math>y \in \mathcal{Y}</math>, along with training data <math>\mathbf{D} = \{(\boldsymbol{x}_1,y_1),\dots,(\boldsymbol{x}_n, y_n)\}</math> assumed to represent accurate examples of the mapping, produce a function <math>h:\mathcal{X}\rightarrow\mathcal{Y}</math> that approximates as closely as possible the correct mapping <math>g</math>. (For example, if the problem is filtering spam, then <math>\boldsymbol{x}_i</math> is some representation of an email and <math>y</math> is either "spam" or "non-spam"). In order for this to be a well-defined problem, "approximates as closely as possible" needs to be defined rigorously. In [[decision theory]], this is defined by specifying a [[loss function]] or cost function that assigns a specific value to "loss" resulting from producing an incorrect label. The goal then is to minimize the [[expected value|expected]] loss, with the expectation taken over the [[probability distribution]] of <math>\mathcal{X}</math>. In practice, neither the distribution of <math>\mathcal{X}</math> nor the ground truth function <math>g:\mathcal{X}\rightarrow\mathcal{Y}</math> are known exactly, but can be computed only empirically by collecting a large number of samples of <math>\mathcal{X}</math> and hand-labeling them using the correct value of <math>\mathcal{Y}</math> (a time-consuming process, which is typically the limiting factor in the amount of data of this sort that can be collected). The particular loss function depends on the type of label being predicted. For example, in the case of [[classification (machine learning)|classification]], the simple [[zero-one loss function]] is often sufficient. This corresponds simply to assigning a loss of 1 to any incorrect labeling and implies that the optimal classifier minimizes the [[Bayes error rate|error rate]] on independent test data (i.e. counting up the fraction of instances that the learned function <math>h:\mathcal{X}\rightarrow\mathcal{Y}</math> labels wrongly, which is equivalent to maximizing the number of correctly classified instances). The goal of the learning procedure is then to minimize the error rate (maximize the [[correctness (computer science)|correctness]]) on a "typical" test set.
+
+For a probabilistic pattern recognizer, the problem is instead to estimate the probability of each possible output label given a particular input instance, i.e., to estimate a function of the form
+:<math>p({\rm label}|\boldsymbol{x},\boldsymbol\theta) = f\left(\boldsymbol{x};\boldsymbol{\theta}\right)</math>
+where the [[feature vector]] input is <math>\boldsymbol{x}</math>, and the function ''f'' is typically parameterized by some parameters <math>\boldsymbol{\theta}</math>.<ref>For [[linear discriminant analysis]] the parameter vector <math>\boldsymbol\theta</math> consists of the two mean vectors <math>\boldsymbol\mu_1</math> and <math>\boldsymbol\mu_2</math> and the common [[covariance matrix]] <math>\boldsymbol\Sigma</math>.</ref> In a [[discriminative model|discriminative]] approach to the problem, ''f'' is estimated directly. In a [[generative model|generative]] approach, however, the inverse probability <math>p({\boldsymbol{x}|\rm label})</math> is instead estimated and combined with the [[prior probability]] <math>p({\rm label}|\boldsymbol\theta)</math> using [[Bayes' rule]], as follows:
+:<math>p({\rm label}|\boldsymbol{x},\boldsymbol\theta) = \frac{p({\boldsymbol{x}|\rm label,\boldsymbol\theta}) p({\rm label|\boldsymbol\theta})}{\sum_{L \in \text{all labels}} p(\boldsymbol{x}|L) p(L|\boldsymbol\theta)}.</math>
+
+When the labels are [[continuous distribution|continuously distributed]] (e.g., in [[regression analysis]]), the denominator involves [[integral|integration]] rather than summation:
+
+:<math>p({\rm label}|\boldsymbol{x},\boldsymbol\theta) = \frac{p({\boldsymbol{x}|\rm label,\boldsymbol\theta}) p({\rm label|\boldsymbol\theta})}{\int_{L \in \text{all labels}} p(\boldsymbol{x}|L) p(L|\boldsymbol\theta) \operatorname{d}L}.</math>
+
+The value of <math>\boldsymbol\theta</math> is typically learned using [[maximum a posteriori]] (MAP) estimation. This finds the best value that simultaneously meets two conflicting objects: To perform as well as possible on the training data (smallest [[Bayes error rate|error-rate]]) and to find the simplest possible model. Essentially, this combines [[maximum likelihood]] estimation with a [[regularization (mathematics)|regularization]] procedure that favors simpler models over more complex models. In a [[Bayesian inference|Bayesian]] context, the regularization procedure can be viewed as placing a [[prior probability]] <math>p(\boldsymbol\theta)</math> on different values of <math>\boldsymbol\theta</math>. Mathematically:
+
+:<math>\boldsymbol\theta^* = \arg \max_{\boldsymbol\theta} p(\boldsymbol\theta|\mathbf{D})</math>
+
+where <math>\boldsymbol\theta^*</math> is the value used for <math>\boldsymbol\theta</math> in the subsequent evaluation procedure, and <math>p(\boldsymbol\theta|\mathbf{D})</math>, the [[posterior probability]] of <math>\boldsymbol\theta</math>, is given by
+
+:<math>p(\boldsymbol\theta|\mathbf{D}) = \left[\prod_{i=1}^n p(y_i|\boldsymbol{x}_i,\boldsymbol\theta) \right] p(\boldsymbol\theta).</math>
+
+In the [[Bayesian statistics|Bayesian]] approach to this problem, instead of choosing a single parameter vector <math>\boldsymbol{\theta}^*</math>, the probability of a given label for a new instance <math>\boldsymbol{x}</math> is computed by integrating over all possible values of <math>\boldsymbol\theta</math>, weighted according to the posterior probability:
+
+:<math>p({\rm label}|\boldsymbol{x}) = \int p({\rm label}|\boldsymbol{x},\boldsymbol\theta)p(\boldsymbol{\theta}|\mathbf{D}) \operatorname{d}\boldsymbol{\theta}.</math>
+
+===Frequentist or Bayesian approach to pattern recognition===
+The first pattern classifier – the linear discriminant presented by [[Fisher discriminant analysis|Fisher]] – was developed in the [[Frequentist inference|frequentist]] tradition. The frequentist approach entails that the model parameters are considered unknown, but objective. The parameters are then computed (estimated) from the collected data. For the linear discriminant, these parameters are precisely the mean vectors and the [[covariance matrix]]. Also the probability of each class <math>p({\rm label}|\boldsymbol\theta)</math> is estimated from the collected dataset. Note that the usage of '[[Bayes rule]]' in a pattern classifier does not make the classification approach Bayesian.
+
+[[Bayesian inference|Bayesian statistics]] has its origin in Greek philosophy where a distinction was already made between the '[[A priori and a posteriori|a priori]]' and the '[[A priori and a posteriori|a posteriori]]' knowledge. Later [[A priori and a posteriori#Immanuel Kant|Kant]] defined his distinction between what is a priori known – before observation – and the empirical knowledge gained from observations. In a Bayesian pattern classifier, the class probabilities <math>p({\rm label}|\boldsymbol\theta)</math> can be chosen by the user, which are then a priori. Moreover, experience quantified as a priori parameter values can be weighted with empirical observations – using e.g., the [[Beta distribution|Beta-]] ([[Conjugate prior distribution|conjugate prior]]) and [[Dirichlet distribution|Dirichlet-distributions]]. The Bayesian approach facilitates a seamless intermixing between expert knowledge in the form of subjective probabilities, and objective observations.
+
+Probabilistic pattern classifiers can be used according to a frequentist or a Bayesian approach.
+
+==Uses==
+[[File:800px-Cool Kids of Death Off Festival p 146-face selected.jpg|thumb|200px|[[Face recognition|The face was automatically detected]] by special software.]]
+Within medical science, pattern recognition is the basis for [[computer-aided diagnosis]] (CAD) systems. CAD describes a procedure that supports the doctor's interpretations and findings.
+Other typical applications of pattern recognition techniques are automatic [[speech recognition]], [[speaker identification]], [[document classification|classification of text into several categories]] (e.g., spam/non-spam email messages), the [[handwriting recognition|automatic recognition of handwriting]] on postal envelopes, automatic [[image recognition|recognition of images]] of human faces, or handwriting image extraction from medical forms.<ref>{{cite journal|last=Milewski|first=Robert|author2=Govindaraju, Venu|title=Binarization and cleanup of handwritten text from carbon copy medical form images|journal=Pattern Recognition|date=31 March 2008|volume=41|issue=4|pages=1308–1315|doi=10.1016/j.patcog.2007.08.018|url=http://dl.acm.org/citation.cfm?id=1324656|access-date=26 October 2011|archive-date=10 September 2020|archive-url=https://web.archive.org/web/20200910174840/https://dl.acm.org/doi/10.1016/j.patcog.2007.08.018|url-status=live}}</ref><ref>{{cite journal
+  |last=Sarangi|first=Susanta |author2=Sahidullah, Md |author3=Saha, Goutam
+  |title=Optimization of data-driven filterbank for automatic speaker verification
+  |journal=Digital Signal Processing |date=September 2020 |volume=104 
+  |page=102795 |doi= 10.1016/j.dsp.2020.102795|arxiv=2007.10729|s2cid=220665533 }}</ref> The last two examples form the subtopic [[image analysis]] of pattern recognition that deals with digital images as input to pattern recognition systems.<ref name=duda2001>{{cite book|author=[[Richard O. Duda]], [[Peter E. Hart]], [[David G. Stork]]|year=2001|title=Pattern classification|edition=2nd|publisher=Wiley, New York|isbn=978-0-471-05669-0|url=https://books.google.com/books?id=Br33IRC3PkQC|access-date=2019-11-26|archive-date=2020-08-19|archive-url=https://web.archive.org/web/20200819004737/https://books.google.com/books?id=Br33IRC3PkQC|url-status=live}}</ref><ref>R. Brunelli, ''Template Matching Techniques in Computer Vision: Theory and Practice'', Wiley, {{ISBN|978-0-470-51706-2}}, 2009</ref>
+
+Optical character recognition is a classic example of the application of a pattern classifier, see [http://cmp.felk.cvut.cz/cmp/software/stprtool/examples/ocr_system.gif OCR-example]. The method of signing one's name was captured with stylus and overlay starting in 1990.{{citation needed|date=January 2011}} The strokes, speed, relative min, relative max, acceleration and pressure is used to uniquely identify and confirm identity. Banks were first offered this technology, but were content to collect from the FDIC for any bank fraud and did not want to inconvenience customers.{{citation needed|date=January 2011}}
+
+Pattern recognition has many real-world applications in image processing, some examples include:
+* identification and authentication: e.g., [[license plate recognition]],<ref>[http://anpr-tutorial.com/ THE AUTOMATIC NUMBER PLATE RECOGNITION TUTORIAL] {{Webarchive|url=https://web.archive.org/web/20060820175245/http://www.anpr-tutorial.com/ |date=2006-08-20 }} http://anpr-tutorial.com/ {{Webarchive|url=https://web.archive.org/web/20060820175245/http://www.anpr-tutorial.com/ |date=2006-08-20 }}</ref> fingerprint analysis, [[face detection]]/verification;,<ref>[https://www.cs.cmu.edu/afs/cs.cmu.edu/usr/mitchell/ftp/faces.html Neural Networks for Face Recognition] {{Webarchive|url=https://web.archive.org/web/20160304065030/http://www.cs.cmu.edu/afs/cs.cmu.edu/usr/mitchell/ftp/faces.html |date=2016-03-04 }} Companion to Chapter 4 of the textbook Machine Learning.</ref> and voice-based authentication.<ref>{{cite journal|last=Poddar|first=Arnab|author2=Sahidullah, Md|author3=Saha, Goutam|title=Speaker Verification with Short Utterances: A Review of Challenges, Trends and Opportunities|journal=IET Biometrics|date=March 2018|volume=7|issue=2|pages=91–101|doi=10.1049/iet-bmt.2017.0065|url=https://ieeexplore.ieee.org/document/8302747|access-date=2019-08-27|archive-date=2019-09-03|archive-url=https://web.archive.org/web/20190903174139/https://ieeexplore.ieee.org/document/8302747/|url-status=live}}</ref>
+* medical diagnosis: e.g., screening for cervical cancer (Papnet),<ref>[http://health-asia.org/papnet-for-cervical-screening/ PAPNET For Cervical Screening] {{webarchive|url=https://archive.today/20120708211332/http://health-asia.org/papnet-for-cervical-screening/ |date=2012-07-08 }}</ref> breast tumors or heart sounds;
+* defence: various navigation and guidance systems, target recognition systems, shape recognition technology etc.
+* mobility: [[Advanced driver-assistance systems|advanced driver assistance systems]], [[Self-driving car|autonomous vehicle technology]], etc.<ref>{{Cite web|url=https://saemobilus.sae.org/content/2018-01-0035|title=Development of an Autonomous Vehicle Control&nbsp;Strategy Using a Single Camera and Deep Neural Networks (2018-01-0035 Technical Paper)- SAE Mobilus|website=saemobilus.sae.org|language=en|access-date=2019-09-06|archive-date=2019-09-06|archive-url=https://web.archive.org/web/20190906084436/https://saemobilus.sae.org/content/2018-01-0035|url-status=live}}</ref><ref>{{Cite journal|last1=Gerdes|first1=J. Christian|last2=Kegelman|first2=John C.|last3=Kapania|first3=Nitin R.|last4=Brown|first4=Matthew|last5=Spielberg|first5=Nathan A.|date=2019-03-27|title=Neural network vehicle models for high-performance automated driving|journal=Science Robotics|language=en|volume=4|issue=28|pages=eaaw1975|doi=10.1126/scirobotics.aaw1975|pmid=33137751|s2cid=89616974|issn=2470-9476}}</ref><ref>{{Cite web|url=https://www.theengineer.co.uk/ai-autonomous-cars/|title=How AI is paving the way for fully autonomous cars|last=Pickering|first=Chris|date=2017-08-15|website=The Engineer|language=en-UK|access-date=2019-09-06|archive-date=2019-09-06|archive-url=https://web.archive.org/web/20190906084433/https://www.theengineer.co.uk/ai-autonomous-cars/|url-status=live}}</ref><ref>{{Cite journal|last1=Ray|first1=Baishakhi|last2=Jana|first2=Suman|last3=Pei|first3=Kexin|last4=Tian|first4=Yuchi|date=2017-08-28|title=DeepTest: Automated Testing of Deep-Neural-Network-driven Autonomous Cars|language=en|arxiv=1708.08559|bibcode=2017arXiv170808559T}}</ref><ref>{{Cite journal|last1=Sinha|first1=P. K.|last2=Hadjiiski|first2=L. M.|last3=Mutib|first3=K.|date=1993-04-01|title=Neural Networks in Autonomous Vehicle Control|journal=IFAC Proceedings Volumes|series=1st IFAC International Workshop on Intelligent Autonomous Vehicles, Hampshire, UK, 18–21 April|volume=26|issue=1|pages=335–340|doi=10.1016/S1474-6670(17)49322-0|issn=1474-6670}}</ref>
+
+In psychology, [[pattern recognition (psychology)|pattern recognition]] (making sense of and identifying objects) is closely related to perception, which explains how the sensory inputs humans receive are made meaningful. Pattern recognition can be thought of in two different ways: the first being template matching and the second being feature detection. A template is a pattern used to produce items of the same proportions. The template-matching hypothesis suggests that incoming stimuli are compared with templates in the long-term memory. If there is a match, the stimulus is identified. Feature detection models, such as the Pandemonium system for classifying letters (Selfridge, 1959), suggest that the stimuli are broken down into their component parts for identification. For example, a capital E has three horizontal lines and one vertical line.<ref>{{cite web |url=http://www.s-cool.co.uk/a-level/psychology/attention/revise-it/pattern-recognition |title=A-level Psychology Attention Revision - Pattern recognition &#124; S-cool, the revision website |publisher=S-cool.co.uk |accessdate=2012-09-17 |archive-date=2013-06-22 |archive-url=https://web.archive.org/web/20130622023719/http://www.s-cool.co.uk/a-level/psychology/attention/revise-it/pattern-recognition |url-status=live }}</ref>
+
+==Algorithms==
+Algorithms for pattern recognition depend on the type of label output, on whether learning is supervised or unsupervised, and on whether the algorithm is statistical or non-statistical in nature. Statistical algorithms can further be categorized as [[generative model|generative]] or [[discriminative model|discriminative]].
+
+{{cleanup list|date=May 2014}}
+
+===[[Classification]] methods (methods predicting [[categorical data|categorical]] labels)===
+{{Main|Statistical classification}}
+Parametric:<ref>Assuming known distributional shape of feature distributions per class, such as the [[Gaussian distribution|Gaussian]] shape.</ref>
+*[[Linear discriminant analysis]]
+*[[Quadratic classifier|Quadratic discriminant analysis]]
+*[[Maximum entropy classifier]] (aka [[logistic regression]], [[multinomial logistic regression]]): Note that logistic regression is an algorithm for classification, despite its name. (The name comes from the fact that logistic regression uses an extension of a linear regression model to model the probability of an input being in a particular class.)
+Nonparametric:<ref>No distributional assumption regarding shape of feature distributions per class.</ref>
+*[[Decision tree]]s, [[decision list]]s
+*[[Variable kernel density estimation#Use for statistical classification|Kernel estimation]] and [[K-nearest-neighbor]] algorithms
+*[[Naive Bayes classifier]]
+*[[Neural network]]s (multi-layer perceptrons)
+*[[Perceptron]]s
+*[[Support vector machine]]s
+*[[Gene expression programming]]
+
+===[[Cluster analysis|Clustering]] methods (methods for classifying and predicting [[categorical data|categorical]] labels)===
+{{Main|Cluster analysis}}
+*Categorical [[mixture model]]s
+*[[Hierarchical clustering]] (agglomerative or divisive)
+*[[K-means clustering]]
+*[[Correlation clustering]]<!-- not an algorithm -->
+*[[Kernel principal component analysis]] (Kernel PCA)<!-- but not PCA? -->
+
+===[[Ensemble learning]] algorithms (supervised [[meta-algorithm]]s for combining multiple learning algorithms together)===
+{{Main|Ensemble learning}}
+*[[Boosting (meta-algorithm)]]
+*[[Bootstrap aggregating]] ("bagging")
+*[[Ensemble averaging]]
+*[[Mixture of experts]], [[hierarchical mixture of experts]]
+
+===General methods for predicting arbitrarily-structured (sets of) labels===
+*[[Bayesian network]]s
+*[[Markov random field]]s
+
+===[[Multilinear subspace learning]] algorithms (predicting labels of multidimensional data using [[tensor]] representations)===
+Unsupervised:
+*[[Multilinear principal component analysis]] (MPCA)
+
+===Real-valued [[sequence labeling]] methods (predicting sequences of [[real number|real-valued]] labels)===
+{{Main|sequence labeling}}
+*[[Kalman filter]]s
+*[[Particle filter]]s
+
+===[[Regression analysis|Regression]] methods (predicting [[real number|real-valued]] labels)===
+{{Main|Regression analysis}}
+*[[Gaussian process regression]] (kriging)
+*[[Linear regression]] and extensions
+*[[Independent component analysis]] (ICA)
+*[[Principal components analysis]] (PCA)
+
+===[[Sequence labeling]] methods (predicting sequences of [[categorical data|categorical]] labels)===
+*[[Conditional random field]]s (CRFs)
+*[[Hidden Markov model]]s (HMMs)
+*[[Maximum entropy Markov model]]s (MEMMs)
+*[[Recurrent neural networks]] (RNNs)
+*[[Hidden Markov model]]s (HMMs)
+*[[Dynamic time warping]] (DTW)
+
+==See also==
+{{Div col|colwidth=30em}}
+* [[Adaptive resonance theory]]
+* [[Black box]]
+* [[Cache language model]]
+* [[Compound-term processing]]
+* [[Computer-aided diagnosis]]
+* [[Data mining]]
+* [[Deep Learning]]
+* [[Information theory]]
+* [[List of numerical analysis software]]
+* [[List of numerical libraries]]
+* [[Multilinear subspace learning]]
+* [[Neocognitron]]
+* [[Perception]]
+* [[Perceptual learning]]
+* [[Predictive analytics]]
+* [[Prior knowledge for pattern recognition]]
+* [[Sequence mining]]
+* [[Template matching]]
+* [[Contextual image classification]]
+* [[List of datasets for machine learning research]]
+{{div col end}}
+
+==References==
+{{FOLDOC}}
+{{reflist}}
+
+==Further reading==
+*{{cite book|last=Fukunaga|first=Keinosuke|title=Introduction to Statistical Pattern Recognition|url=https://archive.org/details/introductiontost1990fuku|url-access=registration|edition=2nd|year=1990|publisher=Academic Press|location=Boston|isbn=978-0-12-269851-4}}
+*{{cite book|last1=Hornegger|first1=Joachim|last2=Paulus|first2=Dietrich W. R.|title=Applied Pattern Recognition: A Practical Introduction to Image and Speech Processing in C++|edition=2nd|year=1999|publisher=Morgan Kaufmann Publishers|location=San Francisco|isbn=978-3-528-15558-2}}
+*{{cite book|last=Schuermann|first=Juergen|title=Pattern Classification: A Unified View of Statistical and Neural Approaches|year=1996|publisher=Wiley|location=New York|isbn=978-0-471-13534-0}}
+*{{cite book|editor=Godfried T. Toussaint|title=Computational Morphology|year=1988|publisher=North-Holland Publishing Company|location=Amsterdam|url=https://books.google.com/books?id=ObOjBQAAQBAJ|isbn=9781483296722}}
+*{{cite book|last1=Kulikowski|first1=Casimir A.|last2=Weiss|first2=Sholom M.|title=Computer Systems That Learn: Classification and Prediction Methods from Statistics, Neural Nets, Machine Learning, and Expert Systems|series=Machine Learning|year=1991|publisher=Morgan Kaufmann Publishers|location=San Francisco|isbn=978-1-55860-065-2}}
+*{{cite book|last1=Duda|first1=Richard O.|last2=Hart|first2=Peter E.|last3=Stork|first3=David G.|title=Pattern Classification|edition=2nd|year=2000|publisher=Wiley-Interscience|isbn=978-0471056690|url=https://books.google.com/books?id=Br33IRC3PkQC}}
+*{{cite journal|last1=Jain|first1=Anil.K.|last2=Duin|first2=Robert.P.W.|last3=Mao|first3=Jianchang|title=Statistical pattern recognition: a review|year=2000|journal=IEEE Transactions on Pattern Analysis and Machine Intelligence | volume=22 | pages=4&ndash;37 | doi = 10.1109/34.824819 | issue=1|citeseerx=10.1.1.123.8151}}
+*[https://web.archive.org/web/20140911114525/http://egmont-petersen.nl/classifiers.htm An introductory tutorial to classifiers (introducing the basic terms, with numeric example)]
+
+==External links==
+* [http://www.iapr.org The International Association for Pattern Recognition]
+* [http://cgm.cs.mcgill.ca/~godfried/teaching/pr-web.html List of Pattern Recognition web sites]
+* [http://www.jprr.org Journal of Pattern Recognition Research]
+* [https://web.archive.org/web/20120302040520/http://www.docentes.unal.edu.co/morozcoa/docs/pr.php Pattern Recognition Info]
+* [http://www.sciencedirect.com/science/journal/00313203 Pattern Recognition] (Journal of the Pattern Recognition Society)
+* [http://www.worldscinet.com/ijprai/mkt/archive.shtml International Journal of Pattern Recognition and Artificial Intelligence]
+* [http://www.inderscience.com/ijapr International Journal of Applied Pattern Recognition]
+* [https://web.archive.org/web/20150215163124/http://www.openpr.org.cn/ Open Pattern Recognition Project], intended to be an open source platform for sharing algorithms of pattern recognition
+* [https://www.academia.edu/31957815/Improved_Pattern_Matching_Applied_to_Surface_Mounting_Devices_Components_Localization_on_Automated_Optical_Inspection Improved Fast Pattern Matching] Improved Fast Pattern Matching
+
+{{Differentiable computing}}
+
+{{Authority control}}
+
+[[Category:Pattern recognition| ]]
+[[Category:Machine learning]]
+[[Category:Formal sciences]]
+[[Category:Computational fields of study]]

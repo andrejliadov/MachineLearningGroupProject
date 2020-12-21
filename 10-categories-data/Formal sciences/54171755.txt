@@ -1,0 +1,577 @@
+In [[mathematics]] and [[theoretical computer science]], '''analysis of Boolean functions''' is the study of real-valued functions on <math>\{0,1\}^n</math> or <math>\{-1,1\}^n</math> (such functions are sometimes known as [[pseudo-Boolean function]]s) from a spectral perspective.<ref name="ODonnell14">{{cite book |last=O'Donnell|first=Ryan|date=2014|title=Analysis of Boolean functions|publisher=Cambridge University Press|isbn=978-1-107-03832-5}}</ref> The functions studied are often, but not always, Boolean-valued, making them [[Boolean function]]s. The area has found many applications in [[combinatorics]], [[social choice theory]], [[random graph]]s, and theoretical computer science, especially in [[hardness of approximation]], [[property testing]], and [[probably approximately correct learning|PAC learning]].
+
+==Basic concepts==
+We will mostly consider functions defined on the domain <math>\{-1,1\}^n</math>. Sometimes it is more convenient to work with the domain <math>\{0,1\}^n</math> instead. If <math>f</math> is defined on <math>\{-1,1\}^n</math>, then the corresponding function defined on <math>\{0,1\}^n</math> is
+
+:<math>f_{01}(x_1,\ldots,x_n) = f((-1)^{x_1},\ldots,(-1)^{x_n}).</math>
+
+Similarly, for us a Boolean function is a <math>\{-1,1\}</math>-valued function, though often it is more convenient to consider <math>\{0,1\}</math>-valued functions instead.
+
+===Fourier expansion===
+Every real-valued function <math>f\colon \{-1,1\}^n \to \mathbb{R}</math> has a unique expansion as a multilinear polynomial:
+
+:<math> f(x) = \sum_{S \subseteq [n]} \hat{f}(S) \chi_S(x), \quad \chi_S(x) = \prod_{i \in S} x_i. </math>
+
+This is the [[Hadamard transform]] of the function <math>f</math>, which is the [[Fourier transform]] in the [[group (mathematics)|group]] <math>\mathbb{Z}_2^n</math>. The coefficients <math>\hat{f}(S)</math> are known as ''Fourier coefficients'', and the entire sum is known as the ''Fourier expansion'' of <math>f</math>. The functions <math>\chi_S</math> are known as ''Fourier characters'', and they form an orthonormal basis for the space of all functions over <math>\{-1,1\}^n</math>, with respect to the inner product <math>\langle f,g \rangle = 2^{-n} \sum_{x \in \{-1,1\}^n} f(x) g(x)</math>.
+
+The Fourier coefficients can be calculated using an inner product:
+
+:<math> \hat{f}(S) = \langle f, \chi_S \rangle. </math>
+
+In particular, this shows that <math>\hat{f}(\emptyset) = \operatorname{E}[f]</math>, where the [[expected value]] is taken with respect to the [[Discrete uniform distribution|uniform distribution]] over <math>\{-1,1\}^n</math>. Parseval's identity states that
+
+:<math> \|f\|^2 = \operatorname{E}[f^2] = \sum_S \hat{f}(S)^2. </math>
+
+If we skip <math>S = \emptyset</math>, then we get the variance of <math>f</math>:
+
+:<math> \operatorname{Var}[f] = \sum_{S \neq \emptyset} \hat{f}(S)^2. </math>
+
+=== Fourier degree and Fourier levels ===
+The ''degree'' of a function <math>f\colon \{-1,1\}^n \to \mathbb{R}</math> is the maximum <math>d</math> such that <math>\hat{f}(S) \neq 0</math> for some set <math>S</math> of size <math>d</math>. In other words, the degree of <math>f</math> is its degree as a multilinear polynomial.
+
+It is convenient to decompose the Fourier expansion into ''levels'': the Fourier coefficient <math>\hat{f}(S)</math> is on level <math>|S|</math>.
+
+The ''degree <math>d</math>'' part of <math>f</math> is
+
+:<math> f^{=d} = \sum_{|S| = d} \hat{f}(S) \chi_S. </math>
+
+It is obtained from <math>f</math> by zeroing out all Fourier coefficients not on level <math>d</math>.
+
+We similarly define <math>f^{>d},f^{<d},f^{\geq d},f^{\leq d}</math>.
+
+===Influence===
+The <math>i</math>'th influence of a function <math>f\colon \{-1,1\}^n \to \mathbb{R}</math> can be defined in two equivalent ways:
+
+: <math>
+\begin{align}
+& \operatorname{Inf}_i[f] = \operatorname{E}\left[ \left(\frac{f - f^{\oplus i}}{2} \right)^2 \right] = \sum_{S \ni i} \hat{f}(S)^2, \\[5pt]
+& f^{\oplus i}(x_1,\ldots,x_n) = f(x_1,\ldots,x_{i-1},-x_i,x_{i+1},\ldots,x_n).
+\end{align}
+</math>
+
+If <math>f</math> is Boolean then <math>\operatorname{Inf}_i[f]</math> is the probability that flipping the <math>i</math>'th coordinate flips the value of the function:
+
+:<math>\operatorname{Inf}_i[f] = \Pr[f(x) \neq f^{\oplus i}(x)]. </math>
+
+If <math>\operatorname{Inf}_i[f] = 0</math> then <math>f</math> doesn't depend on the <math>i</math>'th coordinate.
+
+The ''total influence'' of <math>f</math> is the sum of all of its influences:
+
+:<math>\operatorname{Inf}[f] = \sum_{i=1}^n \operatorname{Inf}_i[f] = \sum_S |S| \hat{f}(S)^2. </math>
+
+The total influence of a Boolean function is also the ''average sensitivity'' of the function. The ''sensitivity'' of a Boolean function <math>f</math> at a given point is the number of coordinates <math>i</math> such that if we flip the <math>i</math>'th coordinate, the value of the function changes. The average value of this quantity is exactly the total influence.
+
+The total influence can also be defined using the [[Discrete Laplace operator#Graph Laplacians|discrete Laplacian]] of the [[Hamming graph]], suitably normalized:  <math>\operatorname{Inf}[f] = \langle f,Lf \rangle</math>.
+
+A generalized form of influence is the <math>\rho</math>-stable influence, defined by:
+:<math>\operatorname{Inf}_i^{(\rho)}[f]
+=
+\operatorname{Stab}_\rho[\operatorname{D}_i f]
+=
+\sum_{S\ni i}\rho^{|S|-1}\hat f(S)^2.</math>
+The corresponding total influences is
+:<math>\operatorname{I}^{(\rho)}[f]
+= \frac{d}{d\rho}\operatorname{Stab}_\rho[f]
+=
+\sum_{S}|S|\rho^{|S|-1}\hat f(S)^2.</math>
+One can prove that a function <math>f:\{-1,1\}^n\to\{-1,1\}</math> has at most “constantly” many
+“stably-influential” coordinates:
+<math>|\{i\in[n] : \operatorname{Inf}_i^{(1-\delta)}[f]\ge\epsilon\}| \le \frac{1}{\delta\epsilon}.</math>
+
+===Noise stability===
+Given <math>-1 \leq \rho \leq 1</math>, we say that two random vectors <math>x,y \in \{-1,1\}^n</math> are ''<math>\rho</math>-correlated'' if the marginal distributions of <math>x,y</math> are uniform, and <math>\operatorname{E}[x_iy_i] = \rho</math>. Concretely, we can generate a pair of <math>\rho</math>-correlated random variables by first choosing <math>x,z \in \{-1,1\}^n</math> uniformly at random, and then choosing <math>y</math> according to one of the following two equivalent rules, applied independently to each coordinate:
+
+:<math> y_i = \begin{cases} x_i & \text{w.p. } \rho, \\ z_i & \text{w.p. } 1-\rho. \end{cases} \quad \text{or} \quad y_i = \begin{cases} x_i & \text{w.p. } \frac{1+\rho}{2}, \\ -x_i & \text{w.p. } \frac{1-\rho}{2}. \end{cases} </math>
+
+We denote this distribution by <math> y \sim N_\rho(x) </math>.
+
+The ''noise stability'' of a function <math>f\colon \{-1,1\}^n \to \mathbb{R}</math> at <math>\rho</math> can be defined in two equivalent ways:
+
+:<math> \operatorname{Stab}_\rho[f] = \operatorname{E}_{x; y \sim N_\rho(x)}[f(x) f(y)] = \sum_{S \subseteq [n]} \rho^{|S|} \hat{f}(S)^2. </math>
+
+For <math>0 \leq \delta \leq 1</math>, the ''noise sensitivity'' of <math>f</math> at <math>\delta</math> is
+
+:<math> \operatorname{NS}_\delta[f] = \frac{1}{2} - \frac{1}{2} \operatorname{Stab}_{1-2\delta}[f]. </math>
+
+If <math>f</math> is Boolean, then this is the probability that the value of <math>f</math> changes if we flip each coordinate with probability <math>\delta</math>, independently.
+
+===Noise operator===
+The ''noise operator'' <math>T_\rho</math> is an operator taking a function <math>f\colon \{-1,1\}^n \to \mathbb{R}</math> and returning another function <math>T_\rho f\colon \{-1,1\}^n \to \mathbb{R}</math> given by
+
+:<math> (T_\rho f)(x) = \operatorname{E}_{y \sim N_\rho(x)}[f(y)] = \sum_{S \subseteq [n]} \rho^{|S|} \hat{f}(S) \chi_S. </math>
+
+When <math>\rho > 0</math>, the noise operator can also be defined using a [[continuous-time Markov chain]] in which each bit is flipped independently with rate 1. The operator <math>T_\rho</math> corresponds to running this Markov chain for <math>\frac{1}{2}\log\frac{1}{\rho}</math> steps starting at <math>x</math>, and taking the average value of <math>f</math> at the final state. This Markov chain is generated by the Laplacian of the Hamming graph, and this relates total influence to the noise operator.
+
+Noise stability can be defined in terms of the noise operator: <math> \operatorname{Stab}_\rho[f] = \langle f, T_\rho f \rangle </math>.
+
+===Hypercontractivity===
+For <math>1 \leq q < \infty</math>, the [[Lp space#Lp spaces|<math>L_q</math>-norm]] of a function <math>f\colon \{-1,1\}^n \to \mathbb{R}</math> is defined by
+
+:<math> \|f\|_q = \sqrt[q]{\operatorname{E}[|f|^q]}. </math>
+
+We also define <math>\|f\|_\infty = \max_{x \in \{-1,1\}^n} |f(x)|.</math>
+
+The hypercontractivity theorem states that for any <math>q > 2</math> and <math>q' = 1/(1-1/q)</math>,
+
+:<math> \|T_\rho f\|_q \leq \|f\|_2 \quad \text{and} \quad \|T_\rho f\|_2 \leq \|f\|_{q'}. </math>
+
+Hypercontractivity is closely related to the [[logarithmic Sobolev inequalities]] of [[functional analysis]].<ref>{{cite journal|last1=Diaconis|first1=Persi|last2=Saloff-Coste|first2=Laurent|date=1996|title=Logarithmic Sobolev inequalities for finite Markov chains|journal= [[Annals of Applied Probability]] |volume=6|number=3|pages=695–750|doi=10.1214/aoap/1034968224|doi-access=free}}</ref>
+
+A similar result for <math>q < 2</math> is known as ''reverse hypercontractivity''.<ref>{{cite journal|last1=Mossel|first1=Elchanan|last2=Oleszkiewicz|first2=Krzysztof|last3=Sen|first3=Arnab|date=2013|title=On reverse hypercontractivity|journal=GAFA|volume=23|number=3|pages=1062–1097|doi=10.1007/s00039-013-0229-4|arxiv=1108.1210|s2cid=15933352}}</ref>
+
+===''p''-Biased analysis===
+
+In many situations the input to the function is not uniformly distributed over <math>\{-1,1\}^n</math>, but instead has a bias toward <math>-1</math> or <math>1</math>. In these situations it is customary to consider functions over the domain <math>\{0,1\}^n</math>. For <math>0 < p < 1</math>, the ''p''-biased measure <math>\mu_p</math> is given by
+
+:<math> \mu_p(x) = p^{\sum_i x_i} (1-p)^{\sum_i (1-x_i)}. </math>
+
+This measure can be generated by choosing each coordinate independently to be 1 with probability <math>p</math> and 0 with probability <math>1-p</math>.
+
+The classical Fourier characters are no longer orthogonal with respect to this measure. Instead, we use the following characters:
+
+:<math> \omega_S(x) = \left(\sqrt{\frac{p}{1-p}}\right)^{|\{i \in S : x_i = 0\}|} \left(-\sqrt{\frac{1-p}{p}}\right)^{|\{i \in S : x_i = 1\}|}. </math>
+
+The ''p''-biased Fourier expansion of <math>f</math> is the expansion of <math>f</math> as a linear combination of ''p''-biased characters:
+
+:<math> f = \sum_{S \subseteq [n]} \hat{f}(S) \omega_S. </math>
+
+We can extend the definitions of influence and the noise operator to the ''p''-biased setting by using their spectral definitions.
+
+====Influence====
+The <math>i</math>'s influence is given by
+
+:<math> \operatorname{Inf}_i[f] = \sum_{S \ni i} \hat{f}(S)^2 = p(1-p) \operatorname{E}[(f-f^{\oplus i})^2]. </math>
+
+The total influence is the sum of the individual influences:
+
+:<math>\operatorname{Inf}[f] = \sum_{i=1}^n \operatorname{Inf}_i[f]
+= \sum_{S} |S| \hat{f}(S)^2
+.</math>
+
+====Noise operator====
+A pair of <math>\rho</math>-correlated random variables can be obtained by choosing <math>x,z \sim \mu_p</math> independently and <math>y \sim N_\rho(x)</math>, where <math>N_\rho</math> is given by
+
+:<math> y_i = \begin{cases} x_i & \text{w.p. } \rho, \\ z_i & \text{w.p. } 1-\rho. \end{cases} </math>
+
+The noise operator is then given by
+
+:<math> (T_\rho f)(x) = \sum_{S \subseteq [n]} \rho^{|S|} \hat{f}(S) \omega_S(x) = \operatorname{E}_{y \sim N_\rho(x)} [f(y)]. </math>
+
+Using this we can define the noise stability and the noise sensitivity, as before.
+
+====Russo–Margulis formula====
+The Russo–Margulis formula (also called the Margulis–Russo formula<ref name="ODonnell14" />) states that for monotone Boolean functions <math>f\colon \{0,1\}^n \to \{0,1\}</math>,
+
+:<math> \frac{d}{dp} \operatorname{E}_{x \sim \mu_p} [f(x)] = \frac{\operatorname{Inf}[f]}{p(1-p)} = \sum_{i=1}^n \Pr[f \neq f^{\oplus i}]. </math>
+
+Both the influence and the probabilities are taken with respect to <math>\mu_p</math>, and on the right-hand side we have the average sensitivity of <math>f</math>. If we think of <math>f</math> as a property, then the formula states that as <math>p</math> varies, the derivative of the probability that <math>f</math> occurs at <math>p</math> equals the average sensitivity at <math>p</math>.
+
+The Russo–Margulis formula is key for proving sharp threshold theorems such as [[#Friedgut's sharp threshold theorem|Friedgut's]].
+
+===Gaussian space===
+One of the deepest results in the area, the [[#Invariance principle|invariance principle]], connects the distribution of functions on the Boolean cube <math>\{-1,1\}^n</math> to their distribution on ''Gaussian space'', which is the space <math>\mathbb{R}^n</math> endowed with the standard <math>n</math>-dimensional [[Gaussian measure]].
+
+Many of the basic concepts of Fourier analysis on the Boolean cube have counterparts in Gaussian space:
+
+* The counterpart of the Fourier expansion in Gaussian space is the Hermite expansion, which is an expansion to an infinite sum (converging in <math>L^2</math>) of multivariate [[Hermite polynomials]].
+* The counterpart of total influence or average sensitivity for the indicator function of a set is Gaussian surface area, which is the Minkowski content of the boundary of the set.
+* The counterpart of the noise operator is the [[Ornstein–Uhlenbeck process|Ornstein–Uhlenbeck operator]] (related to the [[Mehler kernel|Mehler transform]]), given by <math>(U_\rho f)(x) = \operatorname{E}_{z \sim N(0,1)}[f(\rho x + \sqrt{1-\rho^2}z)]</math>, or alternatively by <math>(U_\rho f)(x) = \operatorname{E}[f(y)]</math>, where <math>x,y</math> is a pair of <math>\rho</math>-correlated standard Gaussians.
+* Hypercontractivity holds (with appropriate parameters) in Gaussian space as well.
+
+Gaussian space is more symmetric than the Boolean cube (for example, it is rotation invariant), and supports continuous arguments which may be harder to get through in the discrete setting of the Boolean cube. The invariance principle links the two settings, and allows deducing results on the Boolean cube from results on Gaussian space.
+
+==Basic results==
+===Friedgut–Kalai–Naor theorem===
+If <math>f\colon \{-1,1\}^n \to \{-1,1\}</math> has degree at most 1, then <math>f</math> is either constant, equal to a coordinate, or equal to the negation of a coordinate. In particular, <math>f</math> is a ''dictatorship'': a function depending on at most one coordinate.
+
+The Friedgut–Kalai–Naor theorem,<ref>{{cite journal |last1=Friedgut |first1=Ehud |last2=Kalai |first2=Gil |last3=Naor |first3=Assaf |date=2002 |title=Boolean functions whose Fourier transform is concentrated on the first two levels |journal= [[Advances in Applied Mathematics]] |volume=29 |issue=3 |pages=427–437 |doi=10.1016/S0196-8858(02)00024-6}}</ref> also known as the ''FKN theorem'', states that if <math>f</math> ''almost'' has degree 1 then it is ''close'' to a dictatorship. Quantitatively, if <math>f\colon \{-1,1\}^n \to \{-1,1\}</math> and <math>\|f^{>1}\|^2 < \varepsilon</math>, then <math>f</math> is <math>O(\varepsilon)</math>-close to a dictatorship, that is, <math>\|f - g\|^2 = O(\varepsilon)</math> for some Boolean dictatorship <math>g</math>, or equivalently, <math>\Pr[f \neq g] = O(\varepsilon)</math> for some Boolean dictatorship <math>g</math>.
+
+Similarly, a Boolean function of degree at most <math>d</math> depends on at most <math>C_{W}2^{d}</math> coordinates, making it a ''junta'' (a function depending on a constant number of coordinates), where <math>C_{W}</math> is an absolute constant equal to at least 1.5, and at most 4.41, as shown by Wellens. The Kindler–Safra theorem<ref>{{cite thesis |last=Kindler |first=Guy |date=2002 |title=Property testing, PCP, and juntas |chapter=16 |publisher=Tel Aviv University}}</ref> generalizes the Friedgut–Kalai–Naor theorem to this setting. It states that if <math>f\colon \{-1,1\}^n \to \{-1,1\}</math> satisfies <math>\|f^{>d}\|^2 < \varepsilon</math> then <math>f</math> is <math>O(\varepsilon)</math>-close to a Boolean function of degree at most <math>d</math>.
+
+===Kahn–Kalai–Linial theorem===
+The Poincaré inequality for the Boolean cube (which follows from formulas appearing above) states that for a function <math>f\colon \{-1,1\}^n \to \mathbb{R}</math>,
+
+:<math>\operatorname{Var}[f] \leq \operatorname{Inf}[f] \leq \deg f \cdot \operatorname{Var}[f]. </math>
+
+This implies that <math>\max_i \operatorname{Inf}_i[f] \geq \frac{\operatorname{Var}[f]}{n}</math>.
+
+The Kahn–Kalai–Linial theorem,<ref>{{cite conference |title=The influence of variables on Boolean functions. |last1=Kahn |first1=Jeff |last2=Kalai |first2=Gil |last3=Linial |first3=Nati |date=1988 |publisher=IEEE |book-title=Proc. 29th Symp. on Foundations of Computer Science |pages=68–80 |location=White Plains |conference=SFCS'88 |doi=10.1109/SFCS.1988.21923 }}</ref> also known as the ''KKL theorem'', states that if <math>f</math> is Boolean then <math>\max_i \operatorname{Inf}_i[f] = \Omega\left(\frac{\log n}{n}\right)</math>.
+
+The bound given by the Kahn–Kalai–Linial theorem is tight, and is achieved by the ''Tribes'' function of Ben-Or and Linial:<ref>{{cite conference |title=Collective coin flipping, robust voting schemes and minima of Banzhaf values |last1=Ben-Or |first1=Michael |last2=Linial |first2=Nathan |date=1985 |publisher=IEEE |book-title=Proc. 26th Symp. on Foundations of Computer Science |pages=408–416 |location=Portland, Oregon |conference=SFCS'85 |doi=10.1109/SFCS.1985.15}}</ref>
+
+:<math> (x_{1,1} \land \cdots \land x_{1,w}) \lor \cdots \lor (x_{2^w,1} \land \cdots \land x_{2^w,w}). </math>
+
+The Kahn–Kalai–Linial theorem was one of the first results in the area, and was the one introducing hypercontractivity into the context of Boolean functions.
+
+===Friedgut's junta theorem===
+If <math>f\colon \{-1,1\}^n \to \{-1,1\}</math> is an <math>M</math>-junta (a function depending on at most <math>M</math> coordinates) then <math>\operatorname{Inf}[f] \leq M</math> according to the Poincaré inequality.
+
+Friedgut's theorem<ref>{{cite journal |last=Friedgut |first=Ehud |date=1998 |title=Boolean functions with low average sensitivity depend on few coordinates |journal=Combinatorica |volume=18 |issue=1 |pages=474–483 |doi=10.1007/PL00009809|citeseerx=10.1.1.7.5597 |s2cid=15534278 }}</ref> is a converse to this result. It states that for any <math>\varepsilon > 0</math>, the function <math>f</math> is <math>\varepsilon</math>-close to a Boolean junta depending on <math>\exp (\operatorname{Inf}[f]/\varepsilon)</math> coordinates.
+
+Combined with the Russo–Margulis lemma, Friedgut's junta theorem implies that for every <math>p</math>, every monotone function is close to a junta with respect to <math>\mu_q</math> for some <math>q \approx p</math>.
+
+===Invariance principle===
+The invariance principle<ref>{{cite journal |last1=Mossel |first1=Elchanan |last2=O'Donnell |first2=Ryan |last3=Oleszkiewicz |first3=Krzysztof |date=2010 |title=Noise stability of functions with low influences: Invariance and optimality |journal= [[Annals of Mathematics]] |volume=171 |issue=1 |pages=295–341 |doi=10.4007/annals.2010.171.295|arxiv=math/0503503 }}</ref> generalizes the [[Berry–Esseen theorem]] to non-linear functions.
+
+The Berry–Esseen theorem states (among else) that if <math>f = \sum_{i=1}^n c_i x_i</math> and no <math>c_i</math> is too large compared to the rest, then the distribution of <math>f</math> over <math>\{-1,1\}^n</math> is close to a normal distribution with the same mean and variance.
+
+The invariance principle (in a special case) informally states that if <math>f</math> is a multilinear polynomial of bounded degree over <math>x_1,\ldots,x_n</math> and all influences of <math>f</math> are small, then the distribution of <math>f</math> under the uniform measure over <math>\{-1,1\}^n</math> is close to its distribution in Gaussian space.
+
+More formally, let <math>\psi</math> be a univariate [[Lipschitz continuity|Lipschitz function]], let <math>f = \sum_{S \subseteq [n]} \hat{f}(S) \chi_S</math>, let <math>k=\deg f</math>, and let
+<math> \varepsilon = \max_i \sum_{S \ni i} \hat{f}(S)^2</math>. Suppose that <math>\sum_{S \neq \emptyset} \hat{f}(S)^2 \leq 1</math>. Then
+
+:<math> \left| \operatorname{E}_{x \sim \{-1,1\}^n} [\psi(f(x))] - \operatorname{E}_{g \sim N(0,I)} [\psi(f(g))] \right| = O(k9^k \varepsilon). </math>
+
+By choosing appropriate <math>\psi</math>, this implies that the distributions of <math>f</math> under both measures are close in [[Cumulative distribution function|CDF distance]], which is given by <math>\sup_t |\Pr[f(x)<t] - \Pr[f(g)<t]|</math>.
+
+The invariance principle was the key ingredient in the original proof of the [[#Majority is Stablest|''Majority is Stablest'' theorem]].
+
+==Some applications==
+===Linearity testing===
+A Boolean function <math>f\colon \{-1,1\}^n \to \{-1,1\}</math> is ''linear'' if it satisfies <math>f(xy) = f(x)f(y)</math>, where <math>xy = (x_1y_1,\ldots,x_ny_n)</math>. It is not hard to show that the Boolean linear functions are exactly the characters <math>\chi_S</math>.
+
+In [[property testing]] we want to test whether a given function is linear. It is natural to try the following test: choose <math>x,y \in \{-1,1\}^n</math> uniformly at random, and check that <math>f(xy) = f(x)f(y)</math>. If <math>f</math> is linear then it always passes the test. Blum, Luby and Rubinfeld<ref>{{cite journal |last1=Blum |first1=Manuel |last2=Luby |first2=Michael |last3=Rubinfeld |first3=Ronitt |date=1993 |title=Self-testing/correcting with applications to numerical problems |journal=J. Comput. Syst. Sci. |volume=47 |number=3 |pages=549–595 |doi=10.1016/0022-0000(93)90044-W}}</ref> showed that if the test passes with probability <math>1-\varepsilon</math> then <math>f</math> is <math>O(\varepsilon)</math>-close to a Fourier character. Their proof was combinatorial.
+
+Bellare et al.<ref>{{cite conference |last1=Bellare |first1=Mihir |last2=Coppersmith |first2=Don |last3=Håstad |first3=Johan |last4=Kiwi |first4=Marcos |last5=Sudan |first5=Madhu |date=1995 |title= Linearity testing in characteristic two |booktitle = Proc. 36th Symp. on Foundations of Computer Science |conference=FOCS'95}}</ref> gave an extremely simple Fourier-analytic proof, that also shows that if the test succeeds with probability <math>1/2 + \varepsilon</math>, then <math>f</math> is correlated with a Fourier character. Their proof relies on the following formula for the success probability of the test:
+
+:<math> \frac{1}{2} + \frac{1}{2} \sum_{S \subseteq [n]} \hat{f}(S)^3. </math>
+
+===Arrow's theorem===
+[[Arrow's impossibility theorem]] states that for three and more candidates, the only unanimous voting rule for which there is always a [[Condorcet criterion|Condorcet winner]] is a dictatorship.
+
+The usual proof of Arrow's theorem is combinatorial. Kalai<ref>{{cite journal |last=Kalai |first=Gil |date=2002 |title=A Fourier-theoretic perspective on the Condorcet paradox and Arrow's theorem |journal=Adv. Appl. Math. |volume=29 |number=3 |pages=412–426 |doi=10.1016/S0196-8858(02)00023-4|url=http://ratio.huji.ac.il/sites/default/files/publications/dp280.pdf }}</ref> gave an alternative proof of this result in the case of three candidates using Fourier analysis. If <math>f\colon \{-1,1\}^n \to \{-1,1\}</math> is the rule that assigns a winner among two candidates given their relative orders in the votes, then the probability that there is a Condorcet winner given a uniformly random vote is <math>\frac{3}{4} - \frac{3}{4} \operatorname{Stab}_{-1/3}[f]</math>, from which the theorem easily follows.
+
+The [[#Friedgut–Kalai–Naor theorem|FKN theorem]] implies that if <math>f</math> is a rule for which there is almost always a Condorcet winner, then <math>f</math> is close to a dictatorship.
+
+===Sharp thresholds===
+A classical result in the theory of [[random graph]]s states that the probability that a <math>G(n,p)</math> random graph is connected tends to <math>e^{-e^{-c}}</math> if <math>p \sim \frac{\log n + c}{n}</math>. This is an example of a ''sharp threshold'': the width of the "threshold window", which is <math>O(1/n)</math>, is asymptotically smaller than the threshold itself, which is roughly <math>\frac{\log n}{n}</math>. In contrast, the probability that a <math>G(n,p)</math> graph contains a triangle tends to <math>e^{-c^3/6}</math> when <math>p \sim \frac{c}{n}</math>. Here both the threshold window and the threshold itself are <math>\Theta(1/n)</math>, and so this is a ''coarse threshold''.
+
+Friedgut's sharp threshold theorem<ref>{{cite journal |last=Friedgut |first=Ehud |date=1999 |title=Sharp thresholds of graph properties and the k-SAT problem |journal=J. Am. Math. Soc. |volume=12 |issue=4 |pages=1017–1054 |doi=10.1090/S0894-0347-99-00305-7|doi-access=free }}</ref> states, roughly speaking, that a monotone graph property (a graph property is a property which doesn't depend on the names of the vertices) has a sharp threshold unless it is correlated with the appearance of small subgraphs. This theorem has been widely applied to analyze random graphs and [[percolation]].
+
+On a related note, the [[#Kahn–Kalai–Linial theorem|KKL theorem]] implies that the width of threshold window is always at most <math>O(1/\log n)</math>.<ref>{{cite journal |last1=Friedgut |first1=Ehud |last2=Kalai |first2=Gil |date=1996 |title=Every monotone graph property has a sharp threshold |journal= Proc. Am. Math. Soc. |volume=124 |issue=10 |pages=2993–3002 |doi=10.1090/S0002-9939-96-03732-X|doi-access=free }}</ref>
+
+===Majority is stablest===
+Let <math>\operatorname{Maj}_n\colon \{-1,1\}^n \to \{-1,1\}</math> denote the majority function on <math>n</math> coordinates. Sheppard's formula gives the asymptotic noise stability of majority:
+
+:<math> \operatorname{Stab}_\rho[\operatorname{Maj}_n] \longrightarrow 1 - \frac{2}{\pi} \arccos \rho. </math>
+
+This is related to the probability that if we choose <math>x \in \{-1,1\}^n</math> uniformly at random and form <math>y \in \{-1,1\}^n</math> by flipping each bit of <math>x</math> with probability <math>\frac{1-\rho}{2}</math>, then the majority stays the same:
+:<math> \operatorname{Stab}_\rho[\operatorname{Maj}_n] = 2\Pr[\operatorname{Maj}_n(x) = \operatorname{Maj}_n(y)]-1</math>.
+
+There are Boolean functions with larger noise stability. For example, a dictatorship <math>x_i</math> has noise stability <math>\rho</math>.
+
+The Majority is Stablest theorem states, informally, then the only functions having noise stability larger than majority have influential coordinates. Formally, for every <math>\varepsilon > 0</math> there exists <math>\tau > 0</math> such that if <math>f\colon \{-1,1\}^n \to \{-1,1\}</math> has expectation zero and <math>\max_i \operatorname{Inf}_i[f] \leq \tau</math>, then <math>\operatorname{Stab}_\rho[f] \leq 1 - \frac{2}{\pi} \arccos \rho + \varepsilon</math>.
+
+The first proof of this theorem used the [[#Invariance principle|invariance principle]] in conjunction with an isoperimetric theorem of Borell in Gaussian space; since then more direct proofs were devised.{{Citation needed|reason=It's not clear where interested readers would go to read about this.|date=June 2020}}
+
+Majority is Stablest implies that the [[Semidefinite programming#Example 3 .28Goemans-Williamson MAX CUT approximation algorithm.29|Goemans–Williamson approximation algorithm]] for [[Maximum cut|MAX-CUT]] is optimal, assuming the [[unique games conjecture]]. This implication, due to Khot et al.,<ref>{{citation
+ | author1-link = Subhash Khot
+ | last1 = Khot | first1 = Subhash
+ | last2 = Kindler | first2 = Guy
+ | last3 = Mossel | first3 = Elchanan
+ | last4 = O'Donnell | first4 = Ryan
+ | doi = 10.1137/S0097539705447372
+ | issue = 1
+ | journal = [[SIAM Journal on Computing]]
+ | pages = 319–357
+ | title = Optimal inapproximability results for MAX-CUT and other two-variable CSPs?
+ | url = http://www.cs.cornell.edu/~abrahao/tdg/papers/KKMO-maxcut.pdf
+ | volume = 37
+ | year = 2007
+| citeseerx = 10.1.1.130.8886 }}</ref> was the impetus behind proving the theorem.
+
+==References==
+{{reflist}}
+
+[[Category:Boolean algebra]]
+[[Category:Mathematical optimization]]
+[[Category:Mathematics]]
+[[Category:Theoretical computer science]]In [[mathematics]] and [[theoretical computer science]], '''analysis of Boolean functions''' is the study of real-valued functions on <math>\{0,1\}^n</math> or <math>\{-1,1\}^n</math> (such functions are sometimes known as [[pseudo-Boolean function]]s) from a spectral perspective.<ref name="ODonnell14">{{cite book |last=O'Donnell|first=Ryan|date=2014|title=Analysis of Boolean functions|publisher=Cambridge University Press|isbn=978-1-107-03832-5}}</ref> The functions studied are often, but not always, Boolean-valued, making them [[Boolean function]]s. The area has found many applications in [[combinatorics]], [[social choice theory]], [[random graph]]s, and theoretical computer science, especially in [[hardness of approximation]], [[property testing]], and [[probably approximately correct learning|PAC learning]].
+
+==Basic concepts==
+We will mostly consider functions defined on the domain <math>\{-1,1\}^n</math>. Sometimes it is more convenient to work with the domain <math>\{0,1\}^n</math> instead. If <math>f</math> is defined on <math>\{-1,1\}^n</math>, then the corresponding function defined on <math>\{0,1\}^n</math> is
+
+:<math>f_{01}(x_1,\ldots,x_n) = f((-1)^{x_1},\ldots,(-1)^{x_n}).</math>
+
+Similarly, for us a Boolean function is a <math>\{-1,1\}</math>-valued function, though often it is more convenient to consider <math>\{0,1\}</math>-valued functions instead.
+
+===Fourier expansion===
+Every real-valued function <math>f\colon \{-1,1\}^n \to \mathbb{R}</math> has a unique expansion as a multilinear polynomial:
+
+:<math> f(x) = \sum_{S \subseteq [n]} \hat{f}(S) \chi_S(x), \quad \chi_S(x) = \prod_{i \in S} x_i. </math>
+
+This is the [[Hadamard transform]] of the function <math>f</math>, which is the [[Fourier transform]] in the [[group (mathematics)|group]] <math>\mathbb{Z}_2^n</math>. The coefficients <math>\hat{f}(S)</math> are known as ''Fourier coefficients'', and the entire sum is known as the ''Fourier expansion'' of <math>f</math>. The functions <math>\chi_S</math> are known as ''Fourier characters'', and they form an orthonormal basis for the space of all functions over <math>\{-1,1\}^n</math>, with respect to the inner product <math>\langle f,g \rangle = 2^{-n} \sum_{x \in \{-1,1\}^n} f(x) g(x)</math>.
+
+The Fourier coefficients can be calculated using an inner product:
+
+:<math> \hat{f}(S) = \langle f, \chi_S \rangle. </math>
+
+In particular, this shows that <math>\hat{f}(\emptyset) = \operatorname{E}[f]</math>, where the [[expected value]] is taken with respect to the [[Discrete uniform distribution|uniform distribution]] over <math>\{-1,1\}^n</math>. Parseval's identity states that
+
+:<math> \|f\|^2 = \operatorname{E}[f^2] = \sum_S \hat{f}(S)^2. </math>
+
+If we skip <math>S = \emptyset</math>, then we get the variance of <math>f</math>:
+
+:<math> \operatorname{Var}[f] = \sum_{S \neq \emptyset} \hat{f}(S)^2. </math>
+
+=== Fourier degree and Fourier levels ===
+The ''degree'' of a function <math>f\colon \{-1,1\}^n \to \mathbb{R}</math> is the maximum <math>d</math> such that <math>\hat{f}(S) \neq 0</math> for some set <math>S</math> of size <math>d</math>. In other words, the degree of <math>f</math> is its degree as a multilinear polynomial.
+
+It is convenient to decompose the Fourier expansion into ''levels'': the Fourier coefficient <math>\hat{f}(S)</math> is on level <math>|S|</math>.
+
+The ''degree <math>d</math>'' part of <math>f</math> is
+
+:<math> f^{=d} = \sum_{|S| = d} \hat{f}(S) \chi_S. </math>
+
+It is obtained from <math>f</math> by zeroing out all Fourier coefficients not on level <math>d</math>.
+
+We similarly define <math>f^{>d},f^{<d},f^{\geq d},f^{\leq d}</math>.
+
+===Influence===
+The <math>i</math>'th influence of a function <math>f\colon \{-1,1\}^n \to \mathbb{R}</math> can be defined in two equivalent ways:
+
+: <math>
+\begin{align}
+& \operatorname{Inf}_i[f] = \operatorname{E}\left[ \left(\frac{f - f^{\oplus i}}{2} \right)^2 \right] = \sum_{S \ni i} \hat{f}(S)^2, \\[5pt]
+& f^{\oplus i}(x_1,\ldots,x_n) = f(x_1,\ldots,x_{i-1},-x_i,x_{i+1},\ldots,x_n).
+\end{align}
+</math>
+
+If <math>f</math> is Boolean then <math>\operatorname{Inf}_i[f]</math> is the probability that flipping the <math>i</math>'th coordinate flips the value of the function:
+
+:<math>\operatorname{Inf}_i[f] = \Pr[f(x) \neq f^{\oplus i}(x)]. </math>
+
+If <math>\operatorname{Inf}_i[f] = 0</math> then <math>f</math> doesn't depend on the <math>i</math>'th coordinate.
+
+The ''total influence'' of <math>f</math> is the sum of all of its influences:
+
+:<math>\operatorname{Inf}[f] = \sum_{i=1}^n \operatorname{Inf}_i[f] = \sum_S |S| \hat{f}(S)^2. </math>
+
+The total influence of a Boolean function is also the ''average sensitivity'' of the function. The ''sensitivity'' of a Boolean function <math>f</math> at a given point is the number of coordinates <math>i</math> such that if we flip the <math>i</math>'th coordinate, the value of the function changes. The average value of this quantity is exactly the total influence.
+
+The total influence can also be defined using the [[Discrete Laplace operator#Graph Laplacians|discrete Laplacian]] of the [[Hamming graph]], suitably normalized:  <math>\operatorname{Inf}[f] = \langle f,Lf \rangle</math>.
+
+A generalized form of influence is the <math>\rho</math>-stable influence, defined by:
+:<math>\operatorname{Inf}_i^{(\rho)}[f]
+=
+\operatorname{Stab}_\rho[\operatorname{D}_i f]
+=
+\sum_{S\ni i}\rho^{|S|-1}\hat f(S)^2.</math>
+The corresponding total influences is
+:<math>\operatorname{I}^{(\rho)}[f]
+= \frac{d}{d\rho}\operatorname{Stab}_\rho[f]
+=
+\sum_{S}|S|\rho^{|S|-1}\hat f(S)^2.</math>
+One can prove that a function <math>f:\{-1,1\}^n\to\{-1,1\}</math> has at most “constantly” many
+“stably-influential” coordinates:
+<math>|\{i\in[n] : \operatorname{Inf}_i^{(1-\delta)}[f]\ge\epsilon\}| \le \frac{1}{\delta\epsilon}.</math>
+
+===Noise stability===
+Given <math>-1 \leq \rho \leq 1</math>, we say that two random vectors <math>x,y \in \{-1,1\}^n</math> are ''<math>\rho</math>-correlated'' if the marginal distributions of <math>x,y</math> are uniform, and <math>\operatorname{E}[x_iy_i] = \rho</math>. Concretely, we can generate a pair of <math>\rho</math>-correlated random variables by first choosing <math>x,z \in \{-1,1\}^n</math> uniformly at random, and then choosing <math>y</math> according to one of the following two equivalent rules, applied independently to each coordinate:
+
+:<math> y_i = \begin{cases} x_i & \text{w.p. } \rho, \\ z_i & \text{w.p. } 1-\rho. \end{cases} \quad \text{or} \quad y_i = \begin{cases} x_i & \text{w.p. } \frac{1+\rho}{2}, \\ -x_i & \text{w.p. } \frac{1-\rho}{2}. \end{cases} </math>
+
+We denote this distribution by <math> y \sim N_\rho(x) </math>.
+
+The ''noise stability'' of a function <math>f\colon \{-1,1\}^n \to \mathbb{R}</math> at <math>\rho</math> can be defined in two equivalent ways:
+
+:<math> \operatorname{Stab}_\rho[f] = \operatorname{E}_{x; y \sim N_\rho(x)}[f(x) f(y)] = \sum_{S \subseteq [n]} \rho^{|S|} \hat{f}(S)^2. </math>
+
+For <math>0 \leq \delta \leq 1</math>, the ''noise sensitivity'' of <math>f</math> at <math>\delta</math> is
+
+:<math> \operatorname{NS}_\delta[f] = \frac{1}{2} - \frac{1}{2} \operatorname{Stab}_{1-2\delta}[f]. </math>
+
+If <math>f</math> is Boolean, then this is the probability that the value of <math>f</math> changes if we flip each coordinate with probability <math>\delta</math>, independently.
+
+===Noise operator===
+The ''noise operator'' <math>T_\rho</math> is an operator taking a function <math>f\colon \{-1,1\}^n \to \mathbb{R}</math> and returning another function <math>T_\rho f\colon \{-1,1\}^n \to \mathbb{R}</math> given by
+
+:<math> (T_\rho f)(x) = \operatorname{E}_{y \sim N_\rho(x)}[f(y)] = \sum_{S \subseteq [n]} \rho^{|S|} \hat{f}(S) \chi_S. </math>
+
+When <math>\rho > 0</math>, the noise operator can also be defined using a [[continuous-time Markov chain]] in which each bit is flipped independently with rate 1. The operator <math>T_\rho</math> corresponds to running this Markov chain for <math>\frac{1}{2}\log\frac{1}{\rho}</math> steps starting at <math>x</math>, and taking the average value of <math>f</math> at the final state. This Markov chain is generated by the Laplacian of the Hamming graph, and this relates total influence to the noise operator.
+
+Noise stability can be defined in terms of the noise operator: <math> \operatorname{Stab}_\rho[f] = \langle f, T_\rho f \rangle </math>.
+
+===Hypercontractivity===
+For <math>1 \leq q < \infty</math>, the [[Lp space#Lp spaces|<math>L_q</math>-norm]] of a function <math>f\colon \{-1,1\}^n \to \mathbb{R}</math> is defined by
+
+:<math> \|f\|_q = \sqrt[q]{\operatorname{E}[|f|^q]}. </math>
+
+We also define <math>\|f\|_\infty = \max_{x \in \{-1,1\}^n} |f(x)|.</math>
+
+The hypercontractivity theorem states that for any <math>q > 2</math> and <math>q' = 1/(1-1/q)</math>,
+
+:<math> \|T_\rho f\|_q \leq \|f\|_2 \quad \text{and} \quad \|T_\rho f\|_2 \leq \|f\|_{q'}. </math>
+
+Hypercontractivity is closely related to the [[logarithmic Sobolev inequalities]] of [[functional analysis]].<ref>{{cite journal|last1=Diaconis|first1=Persi|last2=Saloff-Coste|first2=Laurent|date=1996|title=Logarithmic Sobolev inequalities for finite Markov chains|journal= [[Annals of Applied Probability]] |volume=6|number=3|pages=695–750|doi=10.1214/aoap/1034968224|doi-access=free}}</ref>
+
+A similar result for <math>q < 2</math> is known as ''reverse hypercontractivity''.<ref>{{cite journal|last1=Mossel|first1=Elchanan|last2=Oleszkiewicz|first2=Krzysztof|last3=Sen|first3=Arnab|date=2013|title=On reverse hypercontractivity|journal=GAFA|volume=23|number=3|pages=1062–1097|doi=10.1007/s00039-013-0229-4|arxiv=1108.1210|s2cid=15933352}}</ref>
+
+===''p''-Biased analysis===
+
+In many situations the input to the function is not uniformly distributed over <math>\{-1,1\}^n</math>, but instead has a bias toward <math>-1</math> or <math>1</math>. In these situations it is customary to consider functions over the domain <math>\{0,1\}^n</math>. For <math>0 < p < 1</math>, the ''p''-biased measure <math>\mu_p</math> is given by
+
+:<math> \mu_p(x) = p^{\sum_i x_i} (1-p)^{\sum_i (1-x_i)}. </math>
+
+This measure can be generated by choosing each coordinate independently to be 1 with probability <math>p</math> and 0 with probability <math>1-p</math>.
+
+The classical Fourier characters are no longer orthogonal with respect to this measure. Instead, we use the following characters:
+
+:<math> \omega_S(x) = \left(\sqrt{\frac{p}{1-p}}\right)^{|\{i \in S : x_i = 0\}|} \left(-\sqrt{\frac{1-p}{p}}\right)^{|\{i \in S : x_i = 1\}|}. </math>
+
+The ''p''-biased Fourier expansion of <math>f</math> is the expansion of <math>f</math> as a linear combination of ''p''-biased characters:
+
+:<math> f = \sum_{S \subseteq [n]} \hat{f}(S) \omega_S. </math>
+
+We can extend the definitions of influence and the noise operator to the ''p''-biased setting by using their spectral definitions.
+
+====Influence====
+The <math>i</math>'s influence is given by
+
+:<math> \operatorname{Inf}_i[f] = \sum_{S \ni i} \hat{f}(S)^2 = p(1-p) \operatorname{E}[(f-f^{\oplus i})^2]. </math>
+
+The total influence is the sum of the individual influences:
+
+:<math>\operatorname{Inf}[f] = \sum_{i=1}^n \operatorname{Inf}_i[f]
+= \sum_{S} |S| \hat{f}(S)^2
+.</math>
+
+====Noise operator====
+A pair of <math>\rho</math>-correlated random variables can be obtained by choosing <math>x,z \sim \mu_p</math> independently and <math>y \sim N_\rho(x)</math>, where <math>N_\rho</math> is given by
+
+:<math> y_i = \begin{cases} x_i & \text{w.p. } \rho, \\ z_i & \text{w.p. } 1-\rho. \end{cases} </math>
+
+The noise operator is then given by
+
+:<math> (T_\rho f)(x) = \sum_{S \subseteq [n]} \rho^{|S|} \hat{f}(S) \omega_S(x) = \operatorname{E}_{y \sim N_\rho(x)} [f(y)]. </math>
+
+Using this we can define the noise stability and the noise sensitivity, as before.
+
+====Russo–Margulis formula====
+The Russo–Margulis formula (also called the Margulis–Russo formula<ref name="ODonnell14" />) states that for monotone Boolean functions <math>f\colon \{0,1\}^n \to \{0,1\}</math>,
+
+:<math> \frac{d}{dp} \operatorname{E}_{x \sim \mu_p} [f(x)] = \frac{\operatorname{Inf}[f]}{p(1-p)} = \sum_{i=1}^n \Pr[f \neq f^{\oplus i}]. </math>
+
+Both the influence and the probabilities are taken with respect to <math>\mu_p</math>, and on the right-hand side we have the average sensitivity of <math>f</math>. If we think of <math>f</math> as a property, then the formula states that as <math>p</math> varies, the derivative of the probability that <math>f</math> occurs at <math>p</math> equals the average sensitivity at <math>p</math>.
+
+The Russo–Margulis formula is key for proving sharp threshold theorems such as [[#Friedgut's sharp threshold theorem|Friedgut's]].
+
+===Gaussian space===
+One of the deepest results in the area, the [[#Invariance principle|invariance principle]], connects the distribution of functions on the Boolean cube <math>\{-1,1\}^n</math> to their distribution on ''Gaussian space'', which is the space <math>\mathbb{R}^n</math> endowed with the standard <math>n</math>-dimensional [[Gaussian measure]].
+
+Many of the basic concepts of Fourier analysis on the Boolean cube have counterparts in Gaussian space:
+
+* The counterpart of the Fourier expansion in Gaussian space is the Hermite expansion, which is an expansion to an infinite sum (converging in <math>L^2</math>) of multivariate [[Hermite polynomials]].
+* The counterpart of total influence or average sensitivity for the indicator function of a set is Gaussian surface area, which is the Minkowski content of the boundary of the set.
+* The counterpart of the noise operator is the [[Ornstein–Uhlenbeck process|Ornstein–Uhlenbeck operator]] (related to the [[Mehler kernel|Mehler transform]]), given by <math>(U_\rho f)(x) = \operatorname{E}_{z \sim N(0,1)}[f(\rho x + \sqrt{1-\rho^2}z)]</math>, or alternatively by <math>(U_\rho f)(x) = \operatorname{E}[f(y)]</math>, where <math>x,y</math> is a pair of <math>\rho</math>-correlated standard Gaussians.
+* Hypercontractivity holds (with appropriate parameters) in Gaussian space as well.
+
+Gaussian space is more symmetric than the Boolean cube (for example, it is rotation invariant), and supports continuous arguments which may be harder to get through in the discrete setting of the Boolean cube. The invariance principle links the two settings, and allows deducing results on the Boolean cube from results on Gaussian space.
+
+==Basic results==
+===Friedgut–Kalai–Naor theorem===
+If <math>f\colon \{-1,1\}^n \to \{-1,1\}</math> has degree at most 1, then <math>f</math> is either constant, equal to a coordinate, or equal to the negation of a coordinate. In particular, <math>f</math> is a ''dictatorship'': a function depending on at most one coordinate.
+
+The Friedgut–Kalai–Naor theorem,<ref>{{cite journal |last1=Friedgut |first1=Ehud |last2=Kalai |first2=Gil |last3=Naor |first3=Assaf |date=2002 |title=Boolean functions whose Fourier transform is concentrated on the first two levels |journal= [[Advances in Applied Mathematics]] |volume=29 |issue=3 |pages=427–437 |doi=10.1016/S0196-8858(02)00024-6}}</ref> also known as the ''FKN theorem'', states that if <math>f</math> ''almost'' has degree 1 then it is ''close'' to a dictatorship. Quantitatively, if <math>f\colon \{-1,1\}^n \to \{-1,1\}</math> and <math>\|f^{>1}\|^2 < \varepsilon</math>, then <math>f</math> is <math>O(\varepsilon)</math>-close to a dictatorship, that is, <math>\|f - g\|^2 = O(\varepsilon)</math> for some Boolean dictatorship <math>g</math>, or equivalently, <math>\Pr[f \neq g] = O(\varepsilon)</math> for some Boolean dictatorship <math>g</math>.
+
+Similarly, a Boolean function of degree at most <math>d</math> depends on at most <math>C_{W}2^{d}</math> coordinates, making it a ''junta'' (a function depending on a constant number of coordinates), where <math>C_{W}</math> is an absolute constant equal to at least 1.5, and at most 4.41, as shown by Wellens. The Kindler–Safra theorem<ref>{{cite thesis |last=Kindler |first=Guy |date=2002 |title=Property testing, PCP, and juntas |chapter=16 |publisher=Tel Aviv University}}</ref> generalizes the Friedgut–Kalai–Naor theorem to this setting. It states that if <math>f\colon \{-1,1\}^n \to \{-1,1\}</math> satisfies <math>\|f^{>d}\|^2 < \varepsilon</math> then <math>f</math> is <math>O(\varepsilon)</math>-close to a Boolean function of degree at most <math>d</math>.
+
+===Kahn–Kalai–Linial theorem===
+The Poincaré inequality for the Boolean cube (which follows from formulas appearing above) states that for a function <math>f\colon \{-1,1\}^n \to \mathbb{R}</math>,
+
+:<math>\operatorname{Var}[f] \leq \operatorname{Inf}[f] \leq \deg f \cdot \operatorname{Var}[f]. </math>
+
+This implies that <math>\max_i \operatorname{Inf}_i[f] \geq \frac{\operatorname{Var}[f]}{n}</math>.
+
+The Kahn–Kalai–Linial theorem,<ref>{{cite conference |title=The influence of variables on Boolean functions. |last1=Kahn |first1=Jeff |last2=Kalai |first2=Gil |last3=Linial |first3=Nati |date=1988 |publisher=IEEE |book-title=Proc. 29th Symp. on Foundations of Computer Science |pages=68–80 |location=White Plains |conference=SFCS'88 |doi=10.1109/SFCS.1988.21923 }}</ref> also known as the ''KKL theorem'', states that if <math>f</math> is Boolean then <math>\max_i \operatorname{Inf}_i[f] = \Omega\left(\frac{\log n}{n}\right)</math>.
+
+The bound given by the Kahn–Kalai–Linial theorem is tight, and is achieved by the ''Tribes'' function of Ben-Or and Linial:<ref>{{cite conference |title=Collective coin flipping, robust voting schemes and minima of Banzhaf values |last1=Ben-Or |first1=Michael |last2=Linial |first2=Nathan |date=1985 |publisher=IEEE |book-title=Proc. 26th Symp. on Foundations of Computer Science |pages=408–416 |location=Portland, Oregon |conference=SFCS'85 |doi=10.1109/SFCS.1985.15}}</ref>
+
+:<math> (x_{1,1} \land \cdots \land x_{1,w}) \lor \cdots \lor (x_{2^w,1} \land \cdots \land x_{2^w,w}). </math>
+
+The Kahn–Kalai–Linial theorem was one of the first results in the area, and was the one introducing hypercontractivity into the context of Boolean functions.
+
+===Friedgut's junta theorem===
+If <math>f\colon \{-1,1\}^n \to \{-1,1\}</math> is an <math>M</math>-junta (a function depending on at most <math>M</math> coordinates) then <math>\operatorname{Inf}[f] \leq M</math> according to the Poincaré inequality.
+
+Friedgut's theorem<ref>{{cite journal |last=Friedgut |first=Ehud |date=1998 |title=Boolean functions with low average sensitivity depend on few coordinates |journal=Combinatorica |volume=18 |issue=1 |pages=474–483 |doi=10.1007/PL00009809|citeseerx=10.1.1.7.5597 |s2cid=15534278 }}</ref> is a converse to this result. It states that for any <math>\varepsilon > 0</math>, the function <math>f</math> is <math>\varepsilon</math>-close to a Boolean junta depending on <math>\exp (\operatorname{Inf}[f]/\varepsilon)</math> coordinates.
+
+Combined with the Russo–Margulis lemma, Friedgut's junta theorem implies that for every <math>p</math>, every monotone function is close to a junta with respect to <math>\mu_q</math> for some <math>q \approx p</math>.
+
+===Invariance principle===
+The invariance principle<ref>{{cite journal |last1=Mossel |first1=Elchanan |last2=O'Donnell |first2=Ryan |last3=Oleszkiewicz |first3=Krzysztof |date=2010 |title=Noise stability of functions with low influences: Invariance and optimality |journal= [[Annals of Mathematics]] |volume=171 |issue=1 |pages=295–341 |doi=10.4007/annals.2010.171.295|arxiv=math/0503503 }}</ref> generalizes the [[Berry–Esseen theorem]] to non-linear functions.
+
+The Berry–Esseen theorem states (among else) that if <math>f = \sum_{i=1}^n c_i x_i</math> and no <math>c_i</math> is too large compared to the rest, then the distribution of <math>f</math> over <math>\{-1,1\}^n</math> is close to a normal distribution with the same mean and variance.
+
+The invariance principle (in a special case) informally states that if <math>f</math> is a multilinear polynomial of bounded degree over <math>x_1,\ldots,x_n</math> and all influences of <math>f</math> are small, then the distribution of <math>f</math> under the uniform measure over <math>\{-1,1\}^n</math> is close to its distribution in Gaussian space.
+
+More formally, let <math>\psi</math> be a univariate [[Lipschitz continuity|Lipschitz function]], let <math>f = \sum_{S \subseteq [n]} \hat{f}(S) \chi_S</math>, let <math>k=\deg f</math>, and let
+<math> \varepsilon = \max_i \sum_{S \ni i} \hat{f}(S)^2</math>. Suppose that <math>\sum_{S \neq \emptyset} \hat{f}(S)^2 \leq 1</math>. Then
+
+:<math> \left| \operatorname{E}_{x \sim \{-1,1\}^n} [\psi(f(x))] - \operatorname{E}_{g \sim N(0,I)} [\psi(f(g))] \right| = O(k9^k \varepsilon). </math>
+
+By choosing appropriate <math>\psi</math>, this implies that the distributions of <math>f</math> under both measures are close in [[Cumulative distribution function|CDF distance]], which is given by <math>\sup_t |\Pr[f(x)<t] - \Pr[f(g)<t]|</math>.
+
+The invariance principle was the key ingredient in the original proof of the [[#Majority is Stablest|''Majority is Stablest'' theorem]].
+
+==Some applications==
+===Linearity testing===
+A Boolean function <math>f\colon \{-1,1\}^n \to \{-1,1\}</math> is ''linear'' if it satisfies <math>f(xy) = f(x)f(y)</math>, where <math>xy = (x_1y_1,\ldots,x_ny_n)</math>. It is not hard to show that the Boolean linear functions are exactly the characters <math>\chi_S</math>.
+
+In [[property testing]] we want to test whether a given function is linear. It is natural to try the following test: choose <math>x,y \in \{-1,1\}^n</math> uniformly at random, and check that <math>f(xy) = f(x)f(y)</math>. If <math>f</math> is linear then it always passes the test. Blum, Luby and Rubinfeld<ref>{{cite journal |last1=Blum |first1=Manuel |last2=Luby |first2=Michael |last3=Rubinfeld |first3=Ronitt |date=1993 |title=Self-testing/correcting with applications to numerical problems |journal=J. Comput. Syst. Sci. |volume=47 |number=3 |pages=549–595 |doi=10.1016/0022-0000(93)90044-W}}</ref> showed that if the test passes with probability <math>1-\varepsilon</math> then <math>f</math> is <math>O(\varepsilon)</math>-close to a Fourier character. Their proof was combinatorial.
+
+Bellare et al.<ref>{{cite conference |last1=Bellare |first1=Mihir |last2=Coppersmith |first2=Don |last3=Håstad |first3=Johan |last4=Kiwi |first4=Marcos |last5=Sudan |first5=Madhu |date=1995 |title= Linearity testing in characteristic two |booktitle = Proc. 36th Symp. on Foundations of Computer Science |conference=FOCS'95}}</ref> gave an extremely simple Fourier-analytic proof, that also shows that if the test succeeds with probability <math>1/2 + \varepsilon</math>, then <math>f</math> is correlated with a Fourier character. Their proof relies on the following formula for the success probability of the test:
+
+:<math> \frac{1}{2} + \frac{1}{2} \sum_{S \subseteq [n]} \hat{f}(S)^3. </math>
+
+===Arrow's theorem===
+[[Arrow's impossibility theorem]] states that for three and more candidates, the only unanimous voting rule for which there is always a [[Condorcet criterion|Condorcet winner]] is a dictatorship.
+
+The usual proof of Arrow's theorem is combinatorial. Kalai<ref>{{cite journal |last=Kalai |first=Gil |date=2002 |title=A Fourier-theoretic perspective on the Condorcet paradox and Arrow's theorem |journal=Adv. Appl. Math. |volume=29 |number=3 |pages=412–426 |doi=10.1016/S0196-8858(02)00023-4|url=http://ratio.huji.ac.il/sites/default/files/publications/dp280.pdf }}</ref> gave an alternative proof of this result in the case of three candidates using Fourier analysis. If <math>f\colon \{-1,1\}^n \to \{-1,1\}</math> is the rule that assigns a winner among two candidates given their relative orders in the votes, then the probability that there is a Condorcet winner given a uniformly random vote is <math>\frac{3}{4} - \frac{3}{4} \operatorname{Stab}_{-1/3}[f]</math>, from which the theorem easily follows.
+
+The [[#Friedgut–Kalai–Naor theorem|FKN theorem]] implies that if <math>f</math> is a rule for which there is almost always a Condorcet winner, then <math>f</math> is close to a dictatorship.
+
+===Sharp thresholds===
+A classical result in the theory of [[random graph]]s states that the probability that a <math>G(n,p)</math> random graph is connected tends to <math>e^{-e^{-c}}</math> if <math>p \sim \frac{\log n + c}{n}</math>. This is an example of a ''sharp threshold'': the width of the "threshold window", which is <math>O(1/n)</math>, is asymptotically smaller than the threshold itself, which is roughly <math>\frac{\log n}{n}</math>. In contrast, the probability that a <math>G(n,p)</math> graph contains a triangle tends to <math>e^{-c^3/6}</math> when <math>p \sim \frac{c}{n}</math>. Here both the threshold window and the threshold itself are <math>\Theta(1/n)</math>, and so this is a ''coarse threshold''.
+
+Friedgut's sharp threshold theorem<ref>{{cite journal |last=Friedgut |first=Ehud |date=1999 |title=Sharp thresholds of graph properties and the k-SAT problem |journal=J. Am. Math. Soc. |volume=12 |issue=4 |pages=1017–1054 |doi=10.1090/S0894-0347-99-00305-7|doi-access=free }}</ref> states, roughly speaking, that a monotone graph property (a graph property is a property which doesn't depend on the names of the vertices) has a sharp threshold unless it is correlated with the appearance of small subgraphs. This theorem has been widely applied to analyze random graphs and [[percolation]].
+
+On a related note, the [[#Kahn–Kalai–Linial theorem|KKL theorem]] implies that the width of threshold window is always at most <math>O(1/\log n)</math>.<ref>{{cite journal |last1=Friedgut |first1=Ehud |last2=Kalai |first2=Gil |date=1996 |title=Every monotone graph property has a sharp threshold |journal= Proc. Am. Math. Soc. |volume=124 |issue=10 |pages=2993–3002 |doi=10.1090/S0002-9939-96-03732-X|doi-access=free }}</ref>
+
+===Majority is stablest===
+Let <math>\operatorname{Maj}_n\colon \{-1,1\}^n \to \{-1,1\}</math> denote the majority function on <math>n</math> coordinates. Sheppard's formula gives the asymptotic noise stability of majority:
+
+:<math> \operatorname{Stab}_\rho[\operatorname{Maj}_n] \longrightarrow 1 - \frac{2}{\pi} \arccos \rho. </math>
+
+This is related to the probability that if we choose <math>x \in \{-1,1\}^n</math> uniformly at random and form <math>y \in \{-1,1\}^n</math> by flipping each bit of <math>x</math> with probability <math>\frac{1-\rho}{2}</math>, then the majority stays the same:
+:<math> \operatorname{Stab}_\rho[\operatorname{Maj}_n] = 2\Pr[\operatorname{Maj}_n(x) = \operatorname{Maj}_n(y)]-1</math>.
+
+There are Boolean functions with larger noise stability. For example, a dictatorship <math>x_i</math> has noise stability <math>\rho</math>.
+
+The Majority is Stablest theorem states, informally, then the only functions having noise stability larger than majority have influential coordinates. Formally, for every <math>\varepsilon > 0</math> there exists <math>\tau > 0</math> such that if <math>f\colon \{-1,1\}^n \to \{-1,1\}</math> has expectation zero and <math>\max_i \operatorname{Inf}_i[f] \leq \tau</math>, then <math>\operatorname{Stab}_\rho[f] \leq 1 - \frac{2}{\pi} \arccos \rho + \varepsilon</math>.
+
+The first proof of this theorem used the [[#Invariance principle|invariance principle]] in conjunction with an isoperimetric theorem of Borell in Gaussian space; since then more direct proofs were devised.{{Citation needed|reason=It's not clear where interested readers would go to read about this.|date=June 2020}}
+
+Majority is Stablest implies that the [[Semidefinite programming#Example 3 .28Goemans-Williamson MAX CUT approximation algorithm.29|Goemans–Williamson approximation algorithm]] for [[Maximum cut|MAX-CUT]] is optimal, assuming the [[unique games conjecture]]. This implication, due to Khot et al.,<ref>{{citation
+ | author1-link = Subhash Khot
+ | last1 = Khot | first1 = Subhash
+ | last2 = Kindler | first2 = Guy
+ | last3 = Mossel | first3 = Elchanan
+ | last4 = O'Donnell | first4 = Ryan
+ | doi = 10.1137/S0097539705447372
+ | issue = 1
+ | journal = [[SIAM Journal on Computing]]
+ | pages = 319–357
+ | title = Optimal inapproximability results for MAX-CUT and other two-variable CSPs?
+ | url = http://www.cs.cornell.edu/~abrahao/tdg/papers/KKMO-maxcut.pdf
+ | volume = 37
+ | year = 2007
+| citeseerx = 10.1.1.130.8886 }}</ref> was the impetus behind proving the theorem.
+
+==References==
+{{reflist}}
+
+[[Category:Boolean algebra]]
+[[Category:Mathematical optimization]]
+[[Category:Mathematics]]
+[[Category:Theoretical computer science]]

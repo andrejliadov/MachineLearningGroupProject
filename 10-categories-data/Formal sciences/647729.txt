@@ -1,0 +1,172 @@
+In [[computer science]], an '''ambiguous grammar''' is a [[context-free grammar]] for which there exists a [[string (computer science)|string]] that can have more than one [[leftmost derivation]] or [[parse tree]],<ref name="Levelt2008">{{cite book|author=Willem J. M. Levelt|title=An Introduction to the Theory of Formal Languages and Automata|url=https://books.google.com/books?id=tFvtwGYNe7kC&printsec=frontcover#v=onepage&q=%22leftmost%20derivation%22%20%22ambiguous%22&f=false|year=2008|publisher=John Benjamins Publishing|isbn=90-272-3250-4}}</ref> while an '''unambiguous grammar''' is a context-free grammar for which every valid string has a unique leftmost derivation or parse tree. Many languages admit both ambiguous and unambiguous grammars, while some languages admit only ambiguous grammars. Any non-empty language admits an ambiguous grammar by taking an unambiguous grammar and introducing a duplicate rule or synonym (the only language without ambiguous grammars is the empty language). A language that only admits ambiguous grammars is called an [[#Inherently ambiguous languages|inherently ambiguous language]], and there are inherently ambiguous [[context-free language]]s. [[Deterministic context-free grammar]]s are always unambiguous, and are an important subclass of unambiguous grammars; there are non-deterministic unambiguous grammars, however.
+
+For computer [[programming language]]s, the reference grammar is often ambiguous, due to issues such as the [[#Dangling else|dangling else]] problem. If present, these ambiguities are generally resolved by adding precedence rules or other [[context-sensitive grammar|context-sensitive]] parsing rules, so the overall phrase grammar is unambiguous.{{citation needed|date=January 2018}} Some parsing algorithms (such as ([[Earley parser|Earley]]<ref>{{cite journal|last1=Scott|first1=Elizabeth|title=SPPF-Style Parsing From Earley Recognizers|journal=Electronic Notes in Theoretical Computer Science|date=April 1, 2008|volume=203|issue=2|pages=53–67|doi=10.1016/j.entcs.2008.03.044|doi-access=free}}</ref> or [[Generalized LR parser|GLR]] parsers) can generate sets of parse trees (or "parse forests") from strings that are [[syntactic ambiguity|syntactically ambiguous]].<ref>Tomita, Masaru. "[http://anthology.aclweb.org/J/J87/J87-1004.pdf An efficient augmented-context-free parsing algorithm]." Computational linguistics 13.1-2 (1987): 31-46.</ref>
+
+==Examples==
+
+===Trivial language===
+The simplest example is the following ambiguous grammar for the trivial language, which consists of only the empty string:
+:A → A | ε
+…meaning that a production can either be itself again, or the empty string. Thus the empty string has leftmost derivations of length 1, 2, 3, and indeed of any length, depending on how many times the rule A → A is used.
+
+This language also has the unambiguous grammar, consisting of a single [[Production rule (formal languages)|production rule]]:
+:A → ε
+…meaning that the unique production can only produce the empty string, which is the unique string in the language.
+
+In the same way, any grammar for a non-empty language can be made ambiguous by adding duplicates.
+
+===Unary string===
+The [[regular language]] of unary strings of a given character, say <code>'a'</code> (the regular expression <code>a*</code>), has the unambiguous grammar:
+:A → aA | ε
+…but also has the ambiguous grammar:
+:A → aA | Aa | ε
+These correspond to producing a [[right-associative]] tree (for the unambiguous grammar) or allowing both left- and right- association. This is elaborated below.
+
+===Addition and subtraction===
+The [[context free grammar]]
+:A → A + A | A − A | a
+is ambiguous since there are two leftmost derivations for the string a + a + a:
+
+{| border="0"
+|-----
+| &nbsp;&nbsp;&nbsp;&nbsp; || A || → A + A
+| &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+| A || → A + A
+|-----
+| &nbsp;&nbsp;&nbsp;&nbsp; ||  || → a + A
+| &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+| || → A + A + A (First A is replaced by A+A. Replacement of the second A would yield a similar derivation)
+|-----
+| &nbsp;&nbsp;&nbsp;&nbsp; ||  || → a + A + A
+| &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+| || → a + A + A
+|-----
+| &nbsp;&nbsp;&nbsp;&nbsp; ||  || → a + a + A
+| &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+| || → a + a + A
+|-----
+| &nbsp;&nbsp;&nbsp;&nbsp; ||  || → a + a + a
+| &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+| || → a + a + a
+|}
+
+As another example, the grammar is ambiguous since there are two [[parse tree]]s for the string a + a &minus; a:
+:[[Image:Leftmostderivations jaredwf.svg|Leftmostderivations jaredwf.svg|400px]]
+
+The language that it generates, however, is not inherently ambiguous; the following is a non-ambiguous grammar generating the same language:
+:A → A + a | A − a | a
+
+===Dangling else===
+{{main|Dangling else}}
+A common example of ambiguity in computer programming languages is the [[dangling else]] problem. In many languages, the <code>else</code> in an [[Conditional (computer programming)#If–then(–else)|If–then(–else)]] statement is optional, which results in [[nested conditional]]s having multiple ways of being recognized in terms of the context-free grammar.
+
+Concretely, in many languages one may write conditionals in two valid forms: the if-then form, and the if-then-else form – in effect, making the else clause optional:<ref group=note>The following example uses [[Pascal (programming language)|Pascal]] syntax</ref>
+
+In a grammar containing the rules
+
+ Statement → '''if''' Condition '''then''' Statement |
+             '''if''' Condition '''then''' Statement '''else''' Statement |
+             ...
+ Condition → ...
+
+some ambiguous phrase structures can appear. The expression
+ '''if''' a '''then''' '''if''' b '''then''' s '''else''' s2
+can be parsed as either
+ '''if''' a '''then''' '''begin''' '''if''' b '''then''' s '''end''' '''else''' s2
+or as
+ '''if''' a '''then''' '''begin''' '''if''' b '''then''' s '''else''' s2 '''end'''
+depending on whether the <code>else</code> is associated with the first <code>if</code> or second <code>if</code>.
+
+This is resolved in various ways in different languages. Sometimes the grammar is modified so that it is unambiguous, such as by requiring an <code>endif</code> statement or making <code>else</code> mandatory. In other cases the grammar is left ambiguous, but the ambiguity is resolved by making the overall phrase grammar context-sensitive, such as by associating an <code>else</code> with the nearest <code>if</code>. In this latter case the grammar is unambiguous, but the context-free grammar is ambiguous.{{clarify|reason=There is no such thing as an 'overall phrase grammar'. The 'nearest-if' rule can possibly be implemented by using a slightly modified, but still context-free grammar.|date=January 2017}}
+
+===An unambiguous grammar with multiple derivations===
+The existence of multiple derivations of the same string does not suffice to indicate that the grammar is ambiguous; only multiple ''leftmost'' derivations (or, equivalently, multiple parse trees) indicate ambiguity.
+
+For example, the simple grammar
+ S → A + A
+ A → 0 | 1
+is an unambiguous grammar for the language { 0+0, 0+1, 1+0, 1+1 }. While each of these four strings has only one leftmost derivation, it has two different derivations, for example
+ S [[Context-free grammar#Rule application|⇒]] A + A ⇒ 0 + A ⇒ 0 + 0
+and
+ S ⇒ A + A ⇒ A + 0 ⇒ 0 + 0
+Only the former derivation is a leftmost one.
+
+==Recognizing ambiguous grammars==
+The [[decision problem]] of whether an arbitrary grammar is ambiguous is [[Undecidable problem|undecidable]] because it can be shown that it is equivalent to the [[Post correspondence problem]].<ref>{{cite book |last1=Hopcroft |first1=John |authorlink1=John Hopcroft |last2=Motwani |first2=Rajeev |authorlink2=Rajeev Motwani |last3=Ullman |first3=Jeffrey |authorlink3=Jeffrey Ullman |title=[[Introduction to automata theory, languages, and computation]] |edition=2nd |date=2001 |publisher=Addison-Wesley |isbn = 0-201-44124-1 | at = Theorem 9.20, pp. 405–406}}</ref> At least, there are tools implementing some [[semi-decidable|semi-decision procedure]] for detecting ambiguity of context-free grammars.<ref>{{cite conference | last1 = Axelsson | first1 = Roland | last2 = Heljanko | first2 = Keijo | last3 = Lange | first3 = Martin | year = 2008 | title = Analyzing Context-Free Grammars Using an Incremental SAT Solver | book-title = Proceedings of the 35th [[International Colloquium on Automata, Languages and Programming]] (ICALP'08), Reykjavik, Iceland | series = [[Lecture Notes in Computer Science]] | volume = 5126 | pages = 410–422 | publisher = Springer-Verlag | doi = 10.1007/978-3-540-70583-3_34 | url = http://www.tcs.hut.fi/~kepa/publications/AxelssonHeljankoLange-ICALP08.pdf }}</ref>
+
+The efficiency of context-free grammar parsing is determined by the automaton that accepts it. [[Deterministic context-free grammar]]s are accepted by [[deterministic pushdown automata]] and can be parsed in linear time, for example by the [[LR parser]].<ref>{{Cite journal | last1 = Knuth | first1 = D. E. | authorlink = Donald Knuth | title = On the translation of languages from left to right | doi = 10.1016/S0019-9958(65)90426-2 | journal = Information and Control | volume = 8 | issue = 6 | pages = 607–639 | date = July 1965 | url = http://www.cs.dartmouth.edu/~mckeeman/cs48/mxcom/doc/knuth65.pdf | accessdate = 29 May 2011 | ref = harv | archive-url = https://web.archive.org/web/20120315152151/http://www.cs.dartmouth.edu/~mckeeman/cs48/mxcom/doc/knuth65.pdf | archive-date = 15 March 2012 | url-status = dead }}</ref> This is a subset of the [[context-free grammars]] which are accepted by the [[pushdown automaton]] and can be parsed in polynomial time, for example by the [[CYK algorithm]]. Unambiguous context-free grammars can be nondeterministic.
+
+For example, the language of even-length [[palindrome]]s on the alphabet of 0 and 1 has the unambiguous context-free grammar S → 0S0 | 1S1 | ε.  An arbitrary string of this language cannot be parsed without reading all its letters first which means that a pushdown automaton has to try alternative state transitions to accommodate for the different possible lengths of a semi-parsed string.<ref>{{cite book |last1=Hopcroft |first1=John |authorlink1=John Hopcroft |last2=Motwani |first2=Rajeev |authorlink2=Rajeev Motwani |last3=Ullman |first3=Jeffrey |authorlink3=Jeffrey Ullman |title=[[Introduction to automata theory, languages, and computation]] |edition=2nd |date=2001 |publisher=Addison-Wesley |isbn = 0-201-44124-1 |pages=249–253}}</ref> Nevertheless, removing grammar ambiguity may produce a deterministic context-free grammar and thus allow for more efficient parsing. Compiler generators such as [[YACC]] include features for resolving some kinds of ambiguity, such as by using the precedence and associativity constraints.
+
+==Inherently ambiguous languages==
+The existence of inherently ambiguous languages was proven with [[Parikh's theorem]] in 1961 by [[Rohit Jivanlal Parikh|Rohit Parikh]] in an MIT research report.<ref>{{cite book | last = Parikh | first = Rohit | title = Language-generating devices | publisher = Quarterly Progress Report, Research Laboratory of Electronics, MIT | date = January 1961}}</ref>
+
+While some context-free languages (the set of strings that can be generated by a grammar) have both ambiguous and unambiguous grammars, there exist context-free languages for which no unambiguous context-free grammar can exist. An example of an inherently ambiguous language is the union of <math>\{a^n b^m c^m d^n | n, m > 0\}</math> with <math>\{a^n b^n c^m d^m | n, m > 0\}</math>. This set is context-free, since the union of two context-free languages is always context-free. But {{harvtxt|Hopcroft|Ullman|1979}} give a proof that there is no way to unambiguously parse strings in the (non-context-free) common subset <math>\{a^n b^n c^n d^n | n > 0\}</math>.<ref>p.99-103, Sect.4.7</ref>
+
+==See also==
+*[[GLR parser]], a type of parser for ambiguous and nondeterministic grammars
+*[[Chart parser]], another type of parser for ambiguous grammars
+*[[Syntactic ambiguity]]
+
+==References==
+<references/>
+
+*{{cite journal
+  | last = Gross | first = Maurice
+  | title = Inherent ambiguity of minimal linear grammars
+  | journal = Information and Control
+  | publisher = Information and Control
+  | volume = 7
+  | issue = 3
+  | pages = 366–368
+  | date = September 1964
+  | doi = 10.1016/S0019-9958(64)90422-X
+| doi-access = free
+  }}
+*{{cite book
+  | last = Michael | first = Harrison | authorlink = Michael A. Harrison
+  | title = Introduction to Formal Language Theory
+  | publisher = Addison-Wesley
+  | year = 1978
+  | isbn = 0201029553
+}}
+*{{cite book
+  | last1 = Hopcroft
+  | first1 = John E.
+  | last2 = Ullman
+  | first2 = Jeffrey D.
+  | title = Introduction to Automata Theory, Languages, and Computation
+  | url = https://archive.org/details/introductiontoau00hopc
+  | url-access = registration
+  | publisher = Addison-Wesley
+  | edition = 1st
+  | year = 1979
+  | ref = harv
+}}
+*{{cite book
+  | last1 = Hopcroft
+  | first1 = John
+  | last2 = Motwani
+  | first2 = Rajeev
+  | last3 = Ullman
+  | first3 = Jeffrey
+  | title = Introduction to Automata Theory, Languages and Computation
+  | url = https://archive.org/details/introductiontoau00john_537
+  | url-access = limited
+  | edition = 2nd
+  | publisher = Addison Wesley
+  | pages = [https://archive.org/details/introductiontoau00john_537/page/n232 217]
+  | year = 2001
+  | ref = harv
+}}
+* {{cite journal |last1=Brabrand |first1=Claus |last2=Giegerich |first2=Robert |last3=Møller |first3=Anders |date=March 2010 |title=Analyzing Ambiguity of Context-Free Grammars  |journal=Science of Computer Programming |volume=75 |issue=3 |pages=176–191 |publisher=Elsevier |doi=10.1016/j.scico.2009.11.002 |ref=harv|citeseerx=10.1.1.86.3118 }}
+
+==Notes==
+{{reflist|group=note}}
+
+==External links==
+*[http://www.brics.dk/grammar dk.brics.grammar] - a grammar ambiguity analyzer.
+*[https://web.archive.org/web/20110719055512/http://www2.tcs.ifi.lmu.de/~mlange/cfganalyzer/index.html CFGAnalyzer] - tool for analyzing context-free grammars with respect to language universality, ambiguity, and similar properties.
+
+[[Category:Formal languages]]
+[[Category:Ambiguity]]

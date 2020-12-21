@@ -1,0 +1,99 @@
+'''Adaptive control''' is the control method used by a controller which must adapt to a controlled system with parameters which vary, or are initially uncertain.  For example, as an aircraft flies, its mass will slowly decrease as a result of fuel consumption;  a control law is needed that adapts itself to such changing conditions.  Adaptive control is different from [[robust control]] in that it does not need ''a priori'' information about the bounds on these uncertain or time-varying parameters; robust control guarantees that if the changes are within given bounds the control law need not be changed, while adaptive control is concerned with control law changing itself.
+
+==Parameter estimation==
+The foundation of adaptive control is [[parameter estimation]], which is a branch of [[system identification]].  Common methods of estimation include [[recursive least squares]] and [[gradient descent]]. Both of these methods provide update laws which are used to modify estimates in real time (i.e., as the system operates).  [[Lyapunov stability]] is used to derive these update laws and show convergence criteria (typically persistent excitation; relaxation of this condition are studied in Concurrent Learning adaptive control).   [[Projection (mathematics)|Projection]] and normalization are commonly used to improve the robustness of estimation algorithms.
+
+==Classification of adaptive control techniques==
+In general, one should distinguish between:
+
+# Feedforward adaptive control
+# Feedback adaptive control
+
+as well as between
+# Direct methods
+# Indirect methods
+# Hybrid methods
+
+Direct methods are ones wherein the estimated parameters are those directly used in the adaptive controller.  In contrast, indirect methods are those in which the estimated parameters are used to calculate required controller parameters.<ref>{{cite book|last=Astrom|first=Karl|title=adaptive control|year=2008|publisher=Dover|pages=25–26}}</ref> Hybrid methods rely on both estimation of parameters and direct modification of the control law.
+
+[[Image:MRAC.svg|thumb|320px|MRAC]]
+[[Image:MIAC.svg|thumb|320px|MIAC]]
+
+There are several broad categories of feedback adaptive control (classification can vary):
+
+* Dual adaptive controllers – based on [[dual control theory]]
+** Optimal dual controllers – difficult to design
+** Suboptimal dual controllers
+* Nondual adaptive controllers
+** Adaptive pole placement
+** Extremum-seeking controllers
+** [[Iterative learning control]]
+** [[Gain scheduling]]
+** Model reference adaptive controllers (MRACs) – incorporate a ''reference model'' defining desired closed [[loop performance]] 
+*** Gradient optimization MRACs – use local rule for adjusting params when performance differs from reference. Ex.: "MIT rule".
+*** Stability optimized MRACs
+** Model identification adaptive controllers (MIACs) – perform [[system identification]] while the system is running
+*** Cautious adaptive controllers – use current SI to modify control law, allowing for SI uncertainty
+*** Certainty equivalent adaptive controllers – take current SI to be the true system, assume no uncertainty
+**** Nonparametric adaptive controllers
+**** Parametric adaptive controllers
+***** Explicit parameter adaptive controllers
+***** Implicit parameter adaptive controllers
+** [[Multiple models]] – Use large number of models, which are distributed in the region of uncertainty, and based on the responses of the plant and the models. One model is chosen at every instant, which is closest to the plant according to some metric.<ref>{{cite journal|last1=Narendra|last2=Han|first1=Kumpati S.|first2=Zhuo|title=adaptive control Using Collective Information Obtained from Multiple Models|journal=International Federation of Automatic Control|date=August 2011|volume=18|issue=1|pages=362–367|doi=10.3182/20110828-6-IT-1002.02237}}</ref>
+
+[[File:AdaptiveControl.png|thumb|320x320px|Adaptive control with Multiple Models]]
+
+Some special topics in adaptive control can be introduced as well:
+
+# Adaptive control based on discrete-time process identification
+# Adaptive control based on the model reference control technique<ref name="Lavretsky">{{cite book|last1=Lavretsky|first1=Eugene|last2=Wise|first2=Kevin|title=Robust adaptive control|url=https://archive.org/details/robustadaptiveco00lavr|url-access=limited|date=2013|publisher=Springer London|pages=[https://archive.org/details/robustadaptiveco00lavr/page/n328 317]–353}}</ref>
+# Adaptive control based on continuous-time process models
+# Adaptive control of multivariable processes <ref>{{cite journal|last1=Tao|first1=Gang|title=Multivariable adaptive control: A survey|journal=Automatica|date=2014|volume=50|issue=11|pages=2737–2764|doi=10.1016/j.automatica.2014.10.015}}</ref>
+# Adaptive control of nonlinear processes
+# Concurrent learning adaptive control, which relaxes the condition on persistent excitation for parameter convergence for a class of systems <ref name="chowdhary1">{{cite journal |last1= Chowdhary |first1= Girish |last2= Johnson |first2= Eric |date= 2011 |title= Theory and flight-test validation of a concurrent learning adaptive controller|journal= Journal of Guidance, Control and Dynamics|volume= 34 |issue=2 |pages=592–607|doi= 10.2514/1.46866 }}</ref><ref name="chowdhary2">{{cite journal |last1= Chowdhary |first1= Girish |last2= Muehlegg |first2= Maximillian |last3= Johnson |first3= Eric |date= 2014 |title= Exponential parameter and tracking error convergence guarantees for adaptive controllers without persistency of excitation|journal= International Journal of Control |volume= 87 |issue=8 |pages=1583–1603|doi= 10.2514/1.46866 }}</ref>
+In recent times, adaptive control has been merged with intelligent techniques such as fuzzy and neural networks to bring forth new concepts such as fuzzy adaptive control.
+
+==Applications==
+When designing adaptive control systems, special consideration is necessary of [[wikt:convergence|convergence]] and [[Robustness (computer science)|robustness]] issues.  [[Lyapunov stability]] is typically used to derive control adaptation laws and show .
+
+:
+
+* Self-tuning of subsequently fixed linear controllers during the implementation phase for one operating point;
+* Self-tuning of subsequently fixed robust controllers during the implementation phase for whole range of operating points;
+* Self-tuning of fixed controllers on request if the process behaviour changes due to ageing, drift, wear, etc.;
+* Adaptive control of linear controllers for nonlinear or time-varying processes;
+* Adaptive control or self-tuning control of nonlinear controllers for nonlinear processes;
+* Adaptive control or self-tuning control of multivariable controllers for multivariable processes (MIMO systems);
+
+Usually these methods adapt the controllers to both the process statics and dynamics. In special cases the adaptation can be limited to the static behavior alone, leading to adaptive control based on characteristic curves for the steady-states or to extremum value control, optimizing the steady state. Hence, there are several ways to apply adaptive control algorithms.
+
+A particularly successful application of adaptive control has been adaptive flight control.<ref>{{Cite book | doi=10.1007/978-90-481-9707-1_50|chapter = Robust and Adaptive Control Methods for Aerial Vehicles|title = Handbook of Unmanned Aerial Vehicles| pages=675–710|year = 2015|last1 = Lavretsky|first1 = Eugene| isbn=978-90-481-9706-4}}</ref><ref>{{Cite book | doi=10.1007/978-90-481-9707-1_61|chapter = Adaptive Control of Unmanned Aerial Vehicles: Theory and Flight Tests|title = Handbook of Unmanned Aerial Vehicles| pages=613–673|year = 2015|last1 = Kannan|first1 = Suresh K.| last2=Chowdhary| first2=Girish Vinayak| last3=Johnson| first3=Eric N.| isbn=978-90-481-9706-4}}</ref> This body of work has focused on guaranteeing stability of a model reference adaptive control scheme using Lyapunov arguments. Several successful flight-test demonstrations have been conducted, including fault tolerant adaptive control.<ref>{{cite journal|last1=Chowdhary|first1=Girish|last2=Johnson|first2=Eric N|last3=Chandramohan|first3=Rajeev|last4=Kimbrell|first4=Scott M|last5=Calise|first5=Anthony|title=Guidance and control of airplanes under actuator failures and severe structural damage|journal=Journal of Guidance Control and Dynamics|date=2013|volume=36|issue=4|pages=1093–1104|doi=10.2514/1.58028}}</ref>
+
+== See also==
+*[[Nonlinear control]]
+*[[Intelligent control]]
+*[[Lyapunov optimization]]
+
+==References==
+{{Reflist}}
+
+==Further reading==
+*B. Egardt, Stability of Adaptive Controllers. New York: Springer-Verlag, 1979.
+*I. D. Landau, Adaptive Control: The Model Reference Approach. New York: Marcel Dekker, 1979.
+*P. A. Ioannou and J. Sun, Robust Adaptive Control. Upper Saddle River, NJ: Prentice-Hall, 1996.
+*K. S. Narendra and A. M. Annaswamy, Stable Adaptive Systems. Englewood Cliffs, NJ: Prentice Hall, 1989; Dover Publications, 2004.
+*S. Sastry and M. Bodson, Adaptive Control: Stability, Convergence and Robustness. Prentice Hall, 1989.
+*K. J. Astrom and B. Wittenmark, Adaptive Control. Reading, MA: Addison-Wesley, 1995.
+*I. D. Landau, R. Lozano, and M. M’Saad, Adaptive Control. New York, NY: Springer-Verlag, 1998.
+*G. Tao, Adaptive Control Design and Analysis. Hoboken, NJ: Wiley-Interscience, 2003.
+*P. A. Ioannou and B. Fidan, Adaptive Control Tutorial. SIAM, 2006.
+*G. C. Goodwin and K. S. Sin, Adaptive Filtering Prediction and Control. Englewood Cliffs, NJ: Prentice-Hall, 1984.
+*M. Krstic, I. Kanellakopoulos, and P. V. Kokotovic, Nonlinear and Adaptive Control Design. Wiley Interscience, 1995.
+*P. A. Ioannou and P. V. Kokotovic, Adaptive Systems with Reduced Models. Springer Verlag, 1983.
+
+==External links==
+* [http://www.ece.utah.edu/~bodson/acscr/ Shankar Sastry and Marc Bodson, Adaptive Control: Stability, Convergence, and Robustness, Prentice-Hall, 1989-1994 (book)]
+* [https://web.archive.org/web/20120218223836/http://www.pages.drexel.edu/~kws23/tutorials/MRAC/MRAC.html K. Sevcik: Tutorial on Model Reference Adaptive Control (Drexel University)]
+* [https://www.dropbox.com/sh/gnx898j6xl0x33r/AABKvpjX4HYi03S2efz9n32Ya?dl=0: Tutorial on Concurrent Learning Model Reference Adaptive Control G. Chowdhary (slides, relevant papers, and matlab code)]
+
+[[Category:Control theory]]

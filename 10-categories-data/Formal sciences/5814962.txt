@@ -1,0 +1,48 @@
+{{multiple issues|
+{{Unreferenced|date=December 2009}}
+{{cleanup|reason=context and notation are not defined|date=June 2016}}
+{{technical|date=June 2016}}
+}}
+In mathematics, the '''angle condition''' is a constraint that is satisfied by the locus of points in the [[s-plane]] on which [[closed-loop pole]]s of a system reside.  In combination with the [[magnitude condition]], these two mathematical expressions fully determine the [[root locus]].
+
+Let the characteristic equation of a system be <math>1+\textbf{G}(s)=0</math>, where <math>\textbf{G}(s)=\frac{\textbf{P}(s)}{\textbf{Q}(s)}</math>.  Rewriting the equation in [[polar form]] is useful.
+
+: <math>e^{j2\pi}+\textbf{G}(s)=0 </math>
+
+: <math>\textbf{G}(s)=-1=e^{j(\pi+2k\pi)}</math>
+
+where <math>k=0,1,2,\ldots</math> are the only solutions to this equation.  Rewriting <math>\textbf{G}(s)</math> in [[factorization|factored form]],
+
+: <math>\textbf{G}(s)=\frac{\textbf{P}(s)}{\textbf{Q}(s)}=K\frac{(s-a_1)(s-a_2) \cdots (s-a_n)}{(s-b_1)(s-b_2)\cdots(s-b_m)},</math>
+
+and representing each factor <math>(s-a_p)</math> and <math>(s-b_q)</math> by their [[vector (geometric)|vector]] equivalents, <math>A_pe^{j\theta_p}</math> and <math>B_qe^{j\varphi_q}</math>, respectively, <math>\textbf{G}(s)</math> may be rewritten.
+
+: <math>\textbf{G}(s)=K\frac{A_1 A_2 \cdots A_ne^{j(\theta_1+\theta_2+\cdots+\theta_n)}}{B_1 B_2 \cdots B_m e^{j(\varphi_1+\varphi_2+\cdots+\varphi_m)}}</math>
+
+Simplifying the characteristic equation, 
+
+: <math>
+\begin{align}
+e^{j(\pi+2k\pi)} & = K\frac{A_1 A_2 \cdots A_ne^{j(\theta_1+\theta_2+\cdots+\theta_n)}}{B_1 B_2 \cdots B_m e^{j(\varphi_1+\varphi_2+\cdots+\varphi_m)}} \\[6pt]
+& = K\frac{A_1 A_2 \cdots A_n}{B_1 B_2 \cdots B_m}e^{j(\theta_1+\theta_2+\cdots+\theta_n-(\varphi_1+\varphi_2+\cdots+\varphi_m))},
+\end{align}
+</math>
+
+from which we derive the angle condition:
+
+: <math>\pi+2k\pi=\theta_1+\theta_2+\cdots+\theta_n-(\varphi_1+\varphi_2+\cdots+\varphi_m) </math>
+
+for <math>k=0,1,2,\ldots</math>, 
+
+: <math>\theta_1,\theta_2, \ldots, \theta_n </math>
+
+are the angles of zeros 1 to ''n'', and
+
+: <math>\varphi_1,\varphi_2, \ldots, \varphi_m </math>
+
+are the angles of poles 1 to ''m''.
+
+The [[magnitude condition]] is derived similarly.
+
+{{DEFAULTSORT:Angle Condition}}
+[[Category:Control theory]]

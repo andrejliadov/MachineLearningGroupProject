@@ -1,0 +1,110 @@
+{{Software development process}}
+This is a list of approaches, styles, and philosophies in software development. It also contains [[programming paradigm|programming paradigms]], [[software development methodology|software development methodologies]], [[software development process|software development processes]], and single practices, principles and laws.
+
+==Software development philosophies==
+
+Large-scale programming styles:
+* [[Behavior-driven development]]
+* [[Design-driven development]]
+* [[Domain-driven design]]
+* [[Secure by design]]
+* [[Test-driven development]]
+** [[Acceptance test–driven development]]
+** [[Continuous test-driven development]]
+** [[Specification by example]]
+
+Specification-related paradigms:
+* [[Iterative and incremental development]]
+* [[Waterfall model]]
+* [[Formal methods]]
+
+Comprehensive systems:
+* [[Agile software development]]
+** [[Lean software development]]
+* [[Lightweight methodology]]
+** [[Adaptive software development]]
+** [[Extreme programming]]
+** [[Feature-driven development]]
+** [[ICONIX]]
+* [[Kanban (development)]]
+* [[Cowboy coding]] (a non-system)
+
+Rules of thumb:
+* [[KISS principle]]
+* [[Minimalism (computing)]]
+* [[Open–closed principle]]
+* [[Release early, release often]]
+* [[Robustness principle]]
+* [[Rule of least power]]
+* [[There's more than one way to do it]]
+* [[Unix philosophy]]
+* [[Worse is better]]
+* [[You aren't gonna need it]] (YAGNI)
+* [[Don't repeat yourself]] (DRY)
+* [[SOLID (object-oriented design)]]
+* [[Single source of truth]] (SSOT)
+* [[Single version of the truth]] (SVOT)
+
+Other:
+* [[The Cathedral and the Bazaar]] - book comparing top-down vs. bottom-up open-source software
+* Davis 201 Principles of Software Development<ref>{{Cite book|last=Davis, Alan Mark.|title=201 principles of software development|date=1995|publisher=McGraw-Hill|isbn=0-07-015840-1|location=New York|oclc=31814837}}</ref>
+* Where's the Theory for Software Engineering?<ref>{{Cite journal|last1=Johnson|first1=Pontus|last2=Ekstedt|first2=Mathias|last3=Jacobson|first3=Ivar|date=2012|title=Where's the Theory for Software Engineering?|journal=IEEE Software|volume=29|issue=5|pages=96|doi=10.1109/MS.2012.127|s2cid=38239662|issn=0740-7459}}</ref>
+* The Philosophy of Computer Science<ref>{{Citation|last1=Turner|first1=Raymond|title=The Philosophy of Computer Science|date=2020|url=https://plato.stanford.edu/archives/spr2020/entries/computer-science/|encyclopedia=The Stanford Encyclopedia of Philosophy|editor-last=Zalta|editor-first=Edward N.|edition=Spring 2020|publisher=Metaphysics Research Lab, Stanford University|access-date=2020-09-01|last2=Angius|first2=Nicola}}</ref>
+* ''Don't Make Me Think'' (Principles of intuitive navigation and information design)<ref>{{Cite book|last=Krug, Steve|title=Don't make me think, revisited : a common sense approach to Web usability|others=Bayle, Elisabeth,, Straiger, Aren,, Matcho, Mark|year=2014|isbn=978-0-321-96551-6|edition=Third|location=[San Francisco, California]|oclc=859556499}}</ref>
+
+== Programming paradigms ==
+* [[Agent-oriented programming]]
+* [[Aspect-oriented programming]] (AOP)
+* [[Component-based software engineering]]
+* [[Functional programming]] (FP)
+* [[Literate programming]]
+* [[Logic programming]]
+* [[Modular programming]]
+* [[Object-oriented programming]] (OOP)
+* [[Reactive programming]]
+
+== Software development methodologies ==
+* [[Agile Unified Process]] (AUP)
+* [[Constructionist design methodology]] (CDM)
+* [[Dynamic systems development method]] (DSDM)
+* [[Extreme programming]] (XP)
+* [[Iterative and incremental development]]
+* [[Kanban (development)|Kanban]]
+* [[Lean software development]]
+* [[OpenUP|Open Unified Process]]
+* [[Pair programming]]
+* [[Rapid application development]] (RAD)
+* [[IBM Rational Unified Process|Rational Unified Process]] (RUP)
+* [[Scrum (development)|Scrum]]
+* [[Structured systems analysis and design method]] (SSADM)
+* [[Unified Process]] (UP)
+
+== Software development processes ==
+* [[Active-Admin-driven development]] (AADD)
+* [[Behavior-driven development]] (BDD)
+* [[Bug-driven development]] (BgDD)
+* [[Configuration-driven development]] (CDD)
+* [[Design-driven development]] (D3)
+* [[Domain-driven design]] (DDD)
+* [[Feature-driven development]] (FDD)
+* [[Test-driven development]] (TDD)
+* [[User-centered design]] (UCD) ([[User-Driven Development]] (UDD))
+* [[Value-driven design]] (VDD)
+
+== See also ==
+* [[Anti-pattern]]
+* [[Design pattern (computer science)|Design pattern]]
+* [[Programming paradigm]]
+* [[Software development methodology]]
+* [[Software development process]]
+
+== References ==
+{{Reflist}}
+* ''[[Don't Make Me Think]]'' (book by [[Steve Krug]] about [[human computer interaction]] and [[web usability]])
+
+{{Software engineering}}
+
+[[Category:Software development philosophies| ]]
+[[Category:Software development process]]
+[[Category:Software engineering]]
+[[Category:Methodology]]

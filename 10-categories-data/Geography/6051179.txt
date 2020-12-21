@@ -1,0 +1,5432 @@
+{{bots|deny=AWB}}
+[[File:2017a.png|350px|thumb|World map showing time zones from the [[tz database]] version 2017a]]
+This is a list of time zones from release {{Tz/version}} of the [[tz database]].<ref>{{cite web
+| url=https://data.iana.org/time-zones/releases/
+| title=Time Zone Database
+| date=2017-02-28
+| publisher=[[IANA]]
+| accessdate=2019-08-05}}</ref>
+
+==Legend==
+
+UTC offsets (columns 6 and 7) are positive  east of UTC and negative west of UTC. The ''UTC DST offset'' is different from the ''UTC offset'' for zones where [[daylight saving time]] is observed (see individual time zone pages for details).  The UTC offsets are for the current or upcoming rules, and may have been different in the past.
+
+The "Status" field means:
+* Canonical - The primary, preferred zone name.
+* Alias - An alternative name, which may fit better within a particular country.
+* Deprecated - An older style name, left in the tz database for backwards compatibility, which should generally not be used.
+
+== List ==
+<!--
+*******************************
+NOTE TO EDITORS: This table shows the information from the source documents. Please send any corrections to the tz mailing list (<tz@iana.org>) rather than editing here. Notes can be made in the last (Notes) column for any non-link row (i.e. where that column is empty). Any other changes may get lost the next time the table is updated from the IANA source.  When updating from tz, it will be necessary to retain the disambiguations in the 3rd column wikilinks, and the lack of wikilinking on some of them, since some of the non-standard legacy zone names are either redlinks or link to the wrong articles otherwise.
+*******************************
+-->
+{| class="wikitable sortable"
+! [[ISO 3166 2-character country code|Country code]]
+! [[ISO 6709|Latitude, longitude ±DDMM(SS)±DDDMM(SS)]]
+! TZ database name
+! Portion of country covered
+! Status
+! UTC offset ±hh:mm
+! UTC DST offset ±hh:mm
+! Notes
+<!-- Each paragraph should look like the following 3 lines once a solution to the transclusion performance is found. Another version is [[Template:Tz/zone.tab cols wiki6]].
+|-
+| {{Tz/zone.tab cols linked|Antarctica/South_Pole}}
+|
+-->
+|-|-
+| [[ISO_3166-2:CI|CI]]
+| +0519−00402
+| [[UTC±00:00|Africa/Abidjan]]
+| 
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| 
+|-
+| [[ISO_3166-2:GH|GH]]
+| +0533−00013
+| [[UTC±00:00|Africa/Accra]]
+| 
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| 
+|-
+| [[ISO_3166-2:ET|ET]]
+| +0902+03842
+| [[East Africa Time|Africa/Addis_Ababa]]
+| 
+| Alias
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[East Africa Time|Africa/Nairobi]]
+|-
+| [[ISO_3166-2:DZ|DZ]]
+| +3647+00303
+| [[Central European Time|Africa/Algiers]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+01:00|+01:00]]
+| 
+|-
+| [[ISO_3166-2:ER|ER]]
+| +1520+03853
+| [[East Africa Time|Africa/Asmara]]
+| 
+| Alias
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[East Africa Time|Africa/Nairobi]]
+|-
+| 
+| 
+| [[Africa/Asmera]]
+|
+| Deprecated
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[East Africa Time|Africa/Nairobi]]
+|-
+| [[ISO_3166-2:ML|ML]]
+| +1239−00800
+| [[UTC±00:00|Africa/Bamako]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Africa/Abidjan]]
+|-
+| [[ISO_3166-2:CF|CF]]
+| +0422+01835
+| [[West Africa Time|Africa/Bangui]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Africa/Lagos]]
+|-
+| [[ISO_3166-2:GM|GM]]
+| +1328−01639
+| [[Greenwich Mean Time|Africa/Banjul]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Africa/Abidjan]]
+|-
+| [[ISO_3166-2:GW|GW]]
+| +1151−01535
+| [[GMT|Africa/Bissau]]
+| 
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| 
+|-
+| [[ISO_3166-1:MW|MW]]
+| −1547+03500
+| [[Africa/Maputo|Africa/Blantyre]]
+| 
+| Alias
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Africa/Maputo]]
+|-
+| [[ISO_3166-1:CG|CG]]
+| −0416+01517
+| [[Africa/Lagos|Africa/Brazzaville]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Africa/Lagos]]
+|-
+| [[ISO_3166-1:BI|BI]]
+| −0323+02922
+| [[Africa/Maputo|Africa/Bujumbura]]
+| 
+| Alias
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Africa/Maputo]]
+|-
+| [[ISO_3166-1:EG|EG]]
+| +3003+03115
+| [[Africa/Cairo]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:MA|MA]]
+| +3339−00735
+| [[Africa/Casablanca]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC±00:00|+00:00]]
+| 
+|-
+| [[ISO_3166-1:ES|ES]]
+| +3553−00519
+| [[Africa/Ceuta]]
+| Ceuta, Melilla
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:GN|GN]]
+| +0931−01343
+| [[Africa/Abidjan|Africa/Conakry]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Africa/Abidjan]]
+|-
+| [[ISO_3166-1:SN|SN]]
+| +1440−01726
+| [[Africa/Abidjan|Africa/Dakar]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Africa/Abidjan]]
+|-
+| [[ISO_3166-1:TZ|TZ]]
+| −0648+03917
+| [[Africa/Nairobi|Africa/Dar_es_Salaam]]
+| 
+| Alias
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[East Africa Time|Africa/Nairobi]]
+|-
+| [[ISO_3166-1:DJ|DJ]]
+| +1136+04309
+| [[Africa/Nairobi|Africa/Djibouti]]
+| 
+| Alias
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[East Africa Time|Africa/Nairobi]]
+|-
+| [[ISO_3166-1:CM|CM]]
+| +0403+00942
+| [[Africa/Lagos|Africa/Douala]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Africa/Lagos]]
+|-
+| [[ISO_3166-1:EH|EH]]
+| +2709−01312
+| [[Africa/El_Aaiun]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC±00:00|+00:00]]
+| 
+|-
+| [[ISO_3166-1:SL|SL]]
+| +0830−01315
+| [[Africa/Abidjan|Africa/Freetown]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Africa/Abidjan]]
+|-
+| [[ISO_3166-1:BW|BW]]
+| −2439+02555
+| [[Africa/Maputo|Africa/Gaborone]]
+| 
+| Alias
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Africa/Maputo]]
+|-
+| [[ISO_3166-1:ZW|ZW]]
+| −1750+03103
+| [[Africa/Maputo|Africa/Harare]]
+| 
+| Alias
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Africa/Maputo]]
+|-
+| [[ISO_3166-1:ZA|ZA]]
+| −2615+02800
+| [[Africa/Johannesburg]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:SS|SS]]
+| +0451+03137
+| [[Africa/Juba]]
+| 
+| Canonical
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:UG|UG]]
+| +0019+03225
+| [[Africa/Nairobi|Africa/Kampala]]
+| 
+| Alias
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[East Africa Time|Africa/Nairobi]]
+|-
+| [[ISO_3166-1:SD|SD]]
+| +1536+03232
+| [[Africa/Khartoum]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:RW|RW]]
+| −0157+03004
+| [[Africa/Maputo|Africa/Kigali]]
+| 
+| Alias
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Africa/Maputo]]
+|-
+| [[ISO_3166-1:CD|CD]]
+| −0418+01518
+| [[Africa/Lagos|Africa/Kinshasa]]
+| Dem. Rep. of Congo (west)
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Africa/Lagos]]
+|-
+| [[ISO_3166-1:NG|NG]]
+| +0627+00324
+| [[Africa/Lagos]]
+| West Africa Time
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+01:00|+01:00]]
+| 
+|-
+| [[ISO_3166-1:GA|GA]]
+| +0023+00927
+| [[Africa/Lagos|Africa/Libreville]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Africa/Lagos]]
+|-
+| [[ISO_3166-1:TG|TG]]
+| +0608+00113
+| [[Africa/Abidjan|Africa/Lome]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Africa/Abidjan]]
+|-
+| [[ISO_3166-1:AO|AO]]
+| −0848+01314
+| [[Africa/Lagos|Africa/Luanda]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Africa/Lagos]]
+|-
+| [[ISO_3166-1:CD|CD]]
+| −1140+02728
+| [[Africa/Maputo|Africa/Lubumbashi]]
+| Dem. Rep. of Congo (east)
+| Alias
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Africa/Maputo]]
+|-
+| [[ISO_3166-1:ZM|ZM]]
+| −1525+02817
+| [[Africa/Maputo|Africa/Lusaka]]
+| 
+| Alias
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Africa/Maputo]]
+|-
+| [[ISO_3166-1:GQ|GQ]]
+| +0345+00847
+| [[Africa/Lagos|Africa/Malabo]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Africa/Lagos]]
+|-
+| [[ISO_3166-1:MZ|MZ]]
+| −2558+03235
+| [[Africa/Maputo]]
+| Central Africa Time
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:LS|LS]]
+| −2928+02730
+| [[Africa/Johannesburg|Africa/Maseru]]
+| 
+| Alias
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Africa/Johannesburg]]
+|-
+| [[ISO_3166-1:SZ|SZ]]
+| −2618+03106
+| [[Africa/Johannesburg|Africa/Mbabane]]
+| 
+| Alias
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Africa/Johannesburg]]
+|-
+| [[ISO_3166-1:SO|SO]]
+| +0204+04522
+| [[Africa/Nairobi|Africa/Mogadishu]]
+| 
+| Alias
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[East Africa Time|Africa/Nairobi]]
+|-
+| [[ISO_3166-1:LR|LR]]
+| +0618−01047
+| [[Africa/Monrovia]]
+| 
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| 
+|-
+| [[ISO_3166-1:KE|KE]]
+| −0117+03649
+| [[East Africa Time|Africa/Nairobi]]
+| 
+| Canonical
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:TD|TD]]
+| +1207+01503
+| [[Africa/Ndjamena]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+01:00|+01:00]]
+| 
+|-
+| [[ISO_3166-1:NE|NE]]
+| +1331+00207
+| [[Africa/Lagos|Africa/Niamey]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Africa/Lagos]]
+|-
+| [[ISO_3166-1:MR|MR]]
+| +1806−01557
+| [[Africa/Abidjan|Africa/Nouakchott]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Africa/Abidjan]]
+|-
+| [[ISO_3166-1:BF|BF]]
+| +1222−00131
+| [[Africa/Abidjan|Africa/Ouagadougou]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Africa/Abidjan]]
+|-
+| [[ISO_3166-1:BJ|BJ]]
+| +0629+00237
+| [[Africa/Lagos|Africa/Porto-Novo]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Africa/Lagos]]
+|-
+| [[ISO_3166-1:ST|ST]]
+| +0020+00644
+| [[Africa/Abidjan|Africa/Sao_Tome]]
+| 
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| 
+|-
+| 
+| 
+| [[Africa/Abidjan|Africa/Timbuktu]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Africa/Abidjan]]
+|-
+| [[ISO_3166-1:LY|LY]]
+| +3254+01311
+| [[Africa/Tripoli]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:TN|TN]]
+| +3648+01011
+| [[Africa/Tunis]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+01:00|+01:00]]
+| 
+|-
+| [[ISO_3166-1:NA|NA]]
+| −2234+01706
+| [[Africa/Windhoek]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +515248−1763929
+| [[America/Adak]]
+| Aleutian Islands
+| Canonical
+| [[UTC−10:00|−10:00]]
+| [[UTC−09:00|−09:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +611305−1495401
+| [[America/Anchorage]]
+| Alaska (most areas)
+| Canonical
+| [[UTC−09:00|−09:00]]
+| [[UTC−08:00|−08:00]]
+| 
+|-
+| [[ISO_3166-1:AI|AI]]
+| +1812−06304
+| [[America/Port_of_Spain|America/Anguilla]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Port_of_Spain]]
+|-
+| [[ISO_3166-1:AG|AG]]
+| +1703−06148
+| [[America/Port_of_Spain|America/Antigua]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Port_of_Spain]]
+|-
+| [[ISO_3166-1:BR|BR]]
+| −0712−04812
+| [[America/Araguaina]]
+| Tocantins
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:AR|AR]]
+| −3436−05827
+| [[America/Argentina/Buenos_Aires]]
+| Buenos Aires (BA, CF)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:AR|AR]]
+| −2828−06547
+| [[America/Argentina/Catamarca]]
+| Catamarca (CT); Chubut (CH)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| 
+| 
+| [[America/Argentina/Catamarca|America/Argentina/ComodRivadavia]]
+| 
+| Deprecated
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| Link to [[America/Argentina/Catamarca]]
+|-
+| [[ISO_3166-1:AR|AR]]
+| −3124−06411
+| [[America/Argentina/Cordoba]]
+| Argentina (most areas: CB, CC, CN, ER, FM, MN, SE, SF)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:AR|AR]]
+| −2411−06518
+| [[America/Argentina/Jujuy]]
+| Jujuy (JY)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:AR|AR]]
+| −2926−06651
+| [[America/Argentina/La_Rioja]]
+| La Rioja (LR)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:AR|AR]]
+| −3253−06849
+| [[America/Argentina/Mendoza]]
+| Mendoza (MZ)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:AR|AR]]
+| −5138−06913
+| [[America/Argentina/Rio_Gallegos]]
+| Santa Cruz (SC)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:AR|AR]]
+| −2447−06525
+| [[America/Argentina/Salta]]
+| Salta (SA, LP, NQ, RN)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:AR|AR]]
+| −3132−06831
+| [[America/Argentina/San_Juan]]
+| San Juan (SJ)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:AR|AR]]
+| −3319−06621
+| [[America/Argentina/San_Luis]]
+| San Luis (SL)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:AR|AR]]
+| −2649−06513
+| [[America/Argentina/Tucuman]]
+| Tucumán (TM)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:AR|AR]]
+| −5448−06818
+| [[America/Argentina/Ushuaia]]
+| Tierra del Fuego (TF)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:AW|AW]]
+| +1230−06958
+| [[America/Curacao|America/Aruba]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Curacao]]
+|-
+| [[ISO_3166-1:PY|PY]]
+| −2516−05740
+| [[America/Asuncion]]
+| 
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +484531−0913718
+| [[America/Atikokan]]
+| EST - ON (Atikokan); NU (Coral H)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| 
+| 
+| [[America/Adak|America/Atka]]
+| 
+| Deprecated
+| [[UTC−10:00|−10:00]]
+| [[UTC−09:00|−09:00]]
+| Link to [[America/Adak]]
+|-
+| [[ISO_3166-1:BR|BR]]
+| −1259−03831
+| [[America/Bahia]]
+| Bahia
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:MX|MX]]
+| +2048−10515
+| [[America/Bahia_Banderas]]
+| Central Time - Bahía de Banderas
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:BB|BB]]
+| +1306−05937
+| [[America/Barbados]]
+| 
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:BR|BR]]
+| −0127−04829
+| [[America/Belem]]
+| Pará (east); Amapá
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:BZ|BZ]]
+| +1730−08812
+| [[America/Belize]]
+| 
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +5125−05707
+| [[America/Blanc-Sablon]]
+| AST - QC (Lower North Shore)
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:BR|BR]]
+| +0249−06040
+| [[America/Boa_Vista]]
+| Roraima
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:CO|CO]]
+| +0436−07405
+| [[America/Bogota]]
+| 
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +433649−1161209
+| [[America/Boise]]
+| Mountain - ID (south); OR (east)
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| 
+| 
+| [[America/Argentina/Buenos_Aires|America/Buenos_Aires]]
+| 
+| Deprecated
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| Link to [[America/Argentina/Buenos_Aires]]
+|-
+| [[ISO_3166-1:CA|CA]]
+| +690650−1050310
+| [[America/Cambridge_Bay]]
+| Mountain - NU (west)
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| [[ISO_3166-1:BR|BR]]
+| −2027−05437
+| [[America/Campo_Grande]]
+| Mato Grosso do Sul
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:MX|MX]]
+| +2105−08646
+| [[America/Cancun]]
+| Eastern Standard Time - Quintana Roo
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:VE|VE]]
+| +1030−06656
+| [[America/Caracas]]
+| 
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| 
+| 
+| [[America/Argentina/Catamarca|America/Catamarca]]
+| 
+| Deprecated
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| Link to [[America/Argentina/Catamarca]]
+|-
+| [[ISO_3166-1:GF|GF]]
+| +0456−05220
+| [[America/Cayenne]]
+| 
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:KY|KY]]
+| +1918−08123
+| [[America/Panama|America/Cayman]]
+| 
+| Alias
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| Link to [[America/Panama]]
+|-
+| [[ISO_3166-1:US|US]]
+| +415100−0873900
+| [[America/Chicago]]
+| Central (most areas)
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:MX|MX]]
+| +2838−10605
+| [[America/Chihuahua]]
+| Mountain Time - Chihuahua (most areas)
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| 
+| 
+| [[America/Atikokan|America/Coral_Harbour]]
+| 
+| Deprecated
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| Link to [[America/Atikokan]]
+|-
+| 
+| 
+| [[America/Argentina/Cordoba|America/Cordoba]]
+| 
+| Deprecated
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| Link to [[America/Argentina/Cordoba]]
+|-
+| [[ISO_3166-1:CR|CR]]
+| +0956−08405
+| [[America/Costa_Rica]]
+| 
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +4906−11631
+| [[America/Creston]]
+| MST - BC (Creston)
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−07:00|−07:00]]
+| 
+|-
+| [[ISO_3166-1:BR|BR]]
+| −1535−05605
+| [[America/Cuiaba]]
+| Mato Grosso
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:CW|CW]]
+| +1211−06900
+| [[America/Curacao]]
+| 
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:GL|GL]]
+| +7646−01840
+| [[America/Danmarkshavn]]
+| National Park (east coast)
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +6404−13925
+| [[America/Dawson]]
+| MST - Yukon (west)
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−07:00|−07:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +5946−12014
+| [[America/Dawson_Creek]]
+| MST - BC (Dawson Cr, Ft St John)
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−07:00|−07:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +394421−1045903
+| [[America/Denver]]
+| Mountain (most areas)
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +421953−0830245
+| [[America/Detroit]]
+| Eastern - MI (most areas)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:DM|DM]]
+| +1518−06124
+| [[America/Port_of_Spain|America/Dominica]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Port_of_Spain]]
+|-
+| [[ISO_3166-1:CA|CA]]
+| +5333−11328
+| [[America/Edmonton]]
+| Mountain - AB; BC (E); SK (W)
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| [[ISO_3166-1:BR|BR]]
+| −0640−06952
+| [[America/Eirunepe]]
+| Amazonas (west)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:SV|SV]]
+| +1342−08912
+| [[America/El_Salvador]]
+| 
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| 
+| 
+| [[America/Tijuana|America/Ensenada]]
+| 
+| Deprecated
+| [[UTC−08:00|−08:00]]
+| [[UTC−07:00|−07:00]]
+| Link to [[America/Tijuana]]
+|-
+| [[ISO_3166-1:CA|CA]]
+| +5848−12242
+| [[America/Fort_Nelson]]
+| MST - BC (Ft Nelson)
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−07:00|−07:00]]
+| 
+|-
+| 
+| 
+| [[America/Indiana/Indianapolis|America/Fort_Wayne]]
+| 
+| Deprecated
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Indiana/Indianapolis]]
+|-
+| [[ISO_3166-1:BR|BR]]
+| −0343−03830
+| [[America/Fortaleza]]
+| Brazil (northeast: MA, PI, CE, RN, PB)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +4612−05957
+| [[America/Glace_Bay]]
+| Atlantic - NS (Cape Breton)
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| 
+| 
+| [[America/Godthab]]
+| 
+| Deprecated
+| [[UTC−03:00|−03:00]]
+| [[UTC−02:00|−02:00]]
+| Link to [[America/Nuuk]]
+|-
+| [[ISO_3166-1:CA|CA]]
+| +5320−06025
+| [[America/Goose_Bay]]
+| Atlantic - Labrador (most areas)
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:TC|TC]]
+| +2128−07108
+| [[America/Grand_Turk]]
+| 
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:GD|GD]]
+| +1203−06145
+| [[America/Port_of_Spain|America/Grenada]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Port_of_Spain]]
+|-
+| [[ISO_3166-1:GP|GP]]
+| +1614−06132
+| [[America/Port_of_Spain|America/Guadeloupe]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Port_of_Spain]]
+|-
+| [[ISO_3166-1:GT|GT]]
+| +1438−09031
+| [[America/Guatemala]]
+| 
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| [[ISO_3166-1:EC|EC]]
+| −0210−07950
+| [[America/Guayaquil]]
+| Ecuador (mainland)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:GY|GY]]
+| +0648−05810
+| [[America/Guyana]]
+| 
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +4439−06336
+| [[America/Halifax]]
+| Atlantic - NS (most areas); PE
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:CU|CU]]
+| +2308−08222
+| [[America/Havana]]
+| 
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:MX|MX]]
+| +2904−11058
+| [[America/Hermosillo]]
+| Mountain Standard Time - Sonora
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−07:00|−07:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +394606−0860929
+| [[Time in Indiana|America/Indiana/Indianapolis]]
+| Eastern - IN (most areas)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +411745−0863730
+| [[Time in Indiana|America/Indiana/Knox]]
+| Central - IN (Starke)
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +382232−0862041
+| [[Time in Indiana|America/Indiana/Marengo]]
+| Eastern - IN (Crawford)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +382931−0871643
+| [[Time in Indiana|America/Indiana/Petersburg]]
+| Eastern - IN (Pike)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +375711−0864541
+| [[Time in Indiana|America/Indiana/Tell_City]]
+| Central - IN (Perry)
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +384452−0850402
+| [[Time in Indiana|America/Indiana/Vevay]]
+| Eastern - IN (Switzerland)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +384038−0873143
+| [[Time in Indiana|America/Indiana/Vincennes]]
+| Eastern - IN (Da, Du, K, Mn)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +410305−0863611
+| [[Time in Indiana|America/Indiana/Winamac]]
+| Eastern - IN (Pulaski)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| 
+| 
+| [[America/Indiana/Indianapolis|America/Indianapolis]]
+| 
+| Deprecated
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Indiana/Indianapolis]]
+|-
+| [[ISO_3166-1:CA|CA]]
+| +682059−1334300
+| [[America/Inuvik]]
+| Mountain - NT (west)
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +6344−06828
+| [[America/Iqaluit]]
+| Eastern - NU (most east areas)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:JM|JM]]
+| +175805−0764736
+| [[America/Jamaica]]
+| 
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| 
+| 
+| [[America/Argentina/Jujuy|America/Jujuy]]
+| 
+| Deprecated
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| Link to [[America/Argentina/Jujuy]]
+|-
+| [[ISO_3166-1:US|US]]
+| +581807−1342511
+| [[America/Juneau]]
+| Alaska - Juneau area
+| Canonical
+| [[UTC−09:00|−09:00]]
+| [[UTC−08:00|−08:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +381515−0854534
+| [[Time in Kentucky|America/Kentucky/Louisville]]
+| Eastern - KY (Louisville area)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +364947−0845057
+| [[Time in Kentucky|America/Kentucky/Monticello]]
+| Eastern - KY (Wayne)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| 
+| 
+| [[America/Indiana/Knox|America/Knox_IN]]
+| 
+| Deprecated
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| Link to [[America/Indiana/Knox]]
+|-
+| [[ISO_3166-1:BQ|BQ]]
+| +120903−0681636
+| [[America/Curacao|America/Kralendijk]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Curacao]]
+|-
+| [[ISO_3166-1:BO|BO]]
+| −1630−06809
+| [[America/La_Paz]]
+| 
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:PE|PE]]
+| −1203−07703
+| [[America/Lima]]
+| 
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +340308−1181434
+| [[America/Los_Angeles]]
+| Pacific
+| Canonical
+| [[UTC−08:00|−08:00]]
+| [[UTC−07:00|−07:00]]
+| 
+|-
+| 
+| 
+| [[America/Kentucky/Louisville|America/Louisville]]
+| 
+| Deprecated
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Kentucky/Louisville]]
+|-
+| [[ISO_3166-1:SX|SX]]
+| +180305−0630250
+| [[America/Curacao|America/Lower_Princes]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Curacao]]
+|-
+| [[ISO_3166-1:BR|BR]]
+| −0940−03543
+| [[America/Maceio]]
+| Alagoas, Sergipe
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:NI|NI]]
+| +1209−08617
+| [[America/Managua]]
+| 
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| [[ISO_3166-1:BR|BR]]
+| −0308−06001
+| [[America/Manaus]]
+| Amazonas (east)
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:MF|MF]]
+| +1804−06305
+| [[America/Port_of_Spain|America/Marigot]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Port_of_Spain]]
+|-
+| [[ISO_3166-1:MQ|MQ]]
+| +1436−06105
+| [[America/Martinique]]
+| 
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:MX|MX]]
+| +2550−09730
+| [[America/Matamoros]]
+| Central Time US - Coahuila, Nuevo León, Tamaulipas (US border)
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:MX|MX]]
+| +2313−10625
+| [[America/Mazatlan]]
+| Mountain Time - Baja California Sur, Nayarit, Sinaloa
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| 
+| 
+| [[America/Argentina/Mendoza|America/Mendoza]]
+| 
+| Deprecated
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| Link to [[America/Argentina/Mendoza]]
+|-
+| [[ISO_3166-1:US|US]]
+| +450628−0873651
+| [[America/Menominee]]
+| Central - MI (Wisconsin border)
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:MX|MX]]
+| +2058−08937
+| [[America/Merida]]
+| Central Time - Campeche, Yucatán
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +550737−1313435
+| [[America/Metlakatla]]
+| Alaska - Annette Island
+| Canonical
+| [[UTC−09:00|−09:00]]
+| [[UTC−08:00|−08:00]]
+| 
+|-
+| [[ISO_3166-1:MX|MX]]
+| +1924−09909
+| [[America/Mexico_City]]
+| Central Time
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:PM|PM]]
+| +4703−05620
+| [[America/Miquelon]]
+| 
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−02:00|−02:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +4606−06447
+| [[America/Moncton]]
+| Atlantic - New Brunswick
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:MX|MX]]
+| +2540−10019
+| [[America/Monterrey]]
+| Central Time - Durango; Coahuila, Nuevo León, Tamaulipas (most areas)
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:UY|UY]]
+| −345433−0561245
+| [[America/Montevideo]]
+| 
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| 
+| 
+| [[America/Toronto|America/Montreal]]
+| 
+| Deprecated
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Toronto]]
+|-
+| [[ISO_3166-1:MS|MS]]
+| +1643−06213
+| [[America/Port_of_Spain|America/Montserrat]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Port_of_Spain]]
+|-
+| [[ISO_3166-1:BS|BS]]
+| +2505−07721
+| [[America/Nassau]]
+| 
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +404251−0740023
+| [[America/New_York]]
+| Eastern (most areas)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +4901−08816
+| [[America/Nipigon]]
+| Eastern - ON, QC (no DST 1967-73)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +643004−1652423
+| [[America/Nome]]
+| Alaska (west)
+| Canonical
+| [[UTC−09:00|−09:00]]
+| [[UTC−08:00|−08:00]]
+| 
+|-
+| [[ISO_3166-1:BR|BR]]
+| −0351−03225
+| [[America/Noronha]]
+| Atlantic islands
+| Canonical
+| [[UTC−02:00|−02:00]]
+| [[UTC−02:00|−02:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +471551−1014640
+| [[America/North_Dakota/Beulah]]
+| Central - ND (Mercer)
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +470659−1011757
+| [[America/North_Dakota/Center]]
+| Central - ND (Oliver)
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +465042−1012439
+| [[America/North_Dakota/New_Salem]]
+| Central - ND (Morton rural)
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:GL|GL]]
+| +6411−05144
+| [[America/Nuuk]]
+| Greenland (most areas)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−02:00|−02:00]]
+| 
+|-
+| [[ISO_3166-1:MX|MX]]
+| +2934−10425
+| [[America/Ojinaga]]
+| Mountain Time US - Chihuahua (US border)
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| [[ISO_3166-1:PA|PA]]
+| +0858−07932
+| [[America/Panama]]
+| 
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +6608−06544
+| [[America/Pangnirtung]]
+| Eastern - NU (Pangnirtung)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:SR|SR]]
+| +0550−05510
+| [[America/Paramaribo]]
+| 
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +332654−1120424
+| [[America/Phoenix]]
+| MST - Arizona (except Navajo)
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−07:00|−07:00]]
+| 
+|-
+| [[ISO_3166-1:HT|HT]]
+| +1832−07220
+| [[America/Port-au-Prince]]
+| 
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:TT|TT]]
+| +1039−06131
+| [[America/Port_of_Spain]]
+| 
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| 
+| 
+| [[America/Rio_Branco|America/Porto_Acre]]
+| 
+| Deprecated
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| Link to [[America/Rio_Branco]]
+|-
+| [[ISO_3166-1:BR|BR]]
+| −0846−06354
+| [[America/Porto_Velho]]
+| Rondônia
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:PR|PR]]
+| +182806−0660622
+| [[America/Puerto_Rico]]
+| 
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:CL|CL]]
+| −5309−07055
+| [[America/Punta_Arenas]]
+| Region of Magallanes
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| [[Magallanes Region]]
+|-
+| [[ISO_3166-1:CA|CA]]
+| +4843−09434
+| [[America/Rainy_River]]
+| Central - ON (Rainy R, Ft Frances)
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +624900−0920459
+| [[America/Rankin_Inlet]]
+| Central - NU (central)
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:BR|BR]]
+| −0803−03454
+| [[America/Recife]]
+| Pernambuco
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +5024−10439
+| [[America/Regina]]
+| CST - SK (most areas)
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +744144−0944945
+| [[America/Resolute]]
+| Central - NU (Resolute)
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:BR|BR]]
+| −0958−06748
+| [[America/Rio_Branco]]
+| Acre
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| 
+| 
+| [[America/Argentina/Cordoba|America/Rosario]]
+| 
+| Deprecated
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| Link to [[America/Argentina/Cordoba]]
+|-
+| 
+| 
+| [[America/Tijuana|America/Santa_Isabel]]
+| 
+| Deprecated
+| [[UTC−08:00|−08:00]]
+| [[UTC−07:00|−07:00]]
+| Link to [[America/Tijuana]]
+|-
+| [[ISO_3166-1:BR|BR]]
+| −0226−05452
+| [[America/Santarem]]
+| Pará (west)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:CL|CL]]
+| −3327−07040
+| [[America/Santiago]]
+| Chile (most areas)
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:DO|DO]]
+| +1828−06954
+| [[America/Santo_Domingo]]
+| 
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:BR|BR]]
+| −2332−04637
+| [[America/Sao_Paulo]]
+| Brazil (southeast: GO, DF, MG, ES, RJ, SP, PR, SC, RS)
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:GL|GL]]
+| +7029−02158
+| [[America/Scoresbysund]]
+| Scoresbysund/Ittoqqortoormiit
+| Canonical
+| [[UTC−01:00|−01:00]]
+| [[UTC±00:00|+00:00]]
+| 
+|-
+| 
+| 
+| [[America/Denver|America/Shiprock]]
+| 
+| Deprecated
+| [[UTC−07:00|−07:00]]
+| [[UTC−06:00|−06:00]]
+| Link to [[America/Denver]]
+|-
+| [[ISO_3166-1:US|US]]
+| +571035−1351807
+| [[America/Sitka]]
+| Alaska - Sitka area
+| Canonical
+| [[UTC−09:00|−09:00]]
+| [[UTC−08:00|−08:00]]
+| 
+|-
+| [[ISO_3166-1:BL|BL]]
+| +1753−06251
+| [[America/Port_of_Spain|America/St_Barthelemy]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Port_of_Spain]]
+|-
+| [[ISO_3166-1:CA|CA]]
+| +4734−05243
+| [[America/St_Johns]]
+| Newfoundland; Labrador (southeast)
+| Canonical
+| [[UTC−03:30|−03:30]]
+| [[UTC−02:30|−02:30]]
+| 
+|-
+| [[ISO_3166-1:KN|KN]]
+| +1718−06243
+| [[America/Port_of_Spain|America/St_Kitts]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Port_of_Spain]]
+|-
+| [[ISO_3166-1:LC|LC]]
+| +1401−06100
+| [[America/Port_of_Spain|America/St_Lucia]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Port_of_Spain]]
+|-
+| [[ISO_3166-1:VI|VI]]
+| +1821−06456
+| [[America/Port_of_Spain|America/St_Thomas]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Port_of_Spain]]
+|-
+| [[ISO_3166-1:VC|VC]]
+| +1309−06114
+| [[America/Port_of_Spain|America/St_Vincent]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Port_of_Spain]]
+|-
+| [[ISO_3166-1:CA|CA]]
+| +5017−10750
+| [[America/Swift_Current]]
+| CST - SK (midwest)
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| [[ISO_3166-1:HN|HN]]
+| +1406−08713
+| [[America/Tegucigalpa]]
+| 
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| [[ISO_3166-1:GL|GL]]
+| +7634−06847
+| [[America/Thule]]
+| Thule/Pituffik
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +4823−08915
+| [[America/Thunder_Bay]]
+| Eastern - ON (Thunder Bay)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:MX|MX]]
+| +3232−11701
+| [[America/Tijuana]]
+| Pacific Time US - Baja California
+| Canonical
+| [[UTC−08:00|−08:00]]
+| [[UTC−07:00|−07:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +4339−07923
+| [[America/Toronto]]
+| Eastern - ON, QC (most areas)
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| 
+|-
+| [[ISO_3166-1:VG|VG]]
+| +1827−06437
+| [[America/Port_of_Spain|America/Tortola]]
+| 
+| Alias
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Port_of_Spain]]
+|-
+| [[ISO_3166-1:CA|CA]]
+| +4916−12307
+| [[America/Vancouver]]
+| Pacific - BC (most areas)
+| Canonical
+| [[UTC−08:00|−08:00]]
+| [[UTC−07:00|−07:00]]
+| 
+|-
+| 
+| 
+| [[America/Port_of_Spain|America/Virgin]]
+| 
+| Deprecated
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Port_of_Spain]]
+|-
+| [[ISO_3166-1:CA|CA]]
+| +6043−13503
+| [[America/Whitehorse]]
+| MST - Yukon (east)
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−07:00|−07:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +4953−09709
+| [[America/Winnipeg]]
+| Central - ON (west); Manitoba
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +593249−1394338
+| [[America/Yakutat]]
+| Alaska - Yakutat
+| Canonical
+| [[UTC−09:00|−09:00]]
+| [[UTC−08:00|−08:00]]
+| 
+|-
+| [[ISO_3166-1:CA|CA]]
+| +6227−11421
+| [[America/Yellowknife]]
+| Mountain - NT (central)
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| [[ISO_3166-1:AQ|AQ]]
+| −6617+11031
+| [[Antarctica/Casey]]
+| Casey
+| Canonical
+| [[UTC+11:00|+11:00]]
+| [[UTC+11:00|+11:00]]
+| 
+|-
+| [[ISO_3166-1:AQ|AQ]]
+| −6835+07758
+| [[Antarctica/Davis]]
+| Davis
+| Canonical
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| 
+|-
+| [[ISO_3166-1:AQ|AQ]]
+| −6640+14001
+| [[Antarctica/DumontDUrville]]
+| Dumont-d'Urville
+| Canonical
+| [[UTC+10:00|+10:00]]
+| [[UTC+10:00|+10:00]]
+| 
+|-
+| [[ISO_3166-1:AU|AU]]
+| −5430+15857
+| [[Antarctica/Macquarie]]
+| Macquarie Island
+| Canonical
+| [[UTC+10:00|+10:00]]
+| [[UTC+11:00|+11:00]]
+| 
+|-
+| [[ISO_3166-1:AQ|AQ]]
+| −6736+06253
+| [[Antarctica/Mawson]]
+| Mawson
+| Canonical
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| 
+|-
+| [[ISO_3166-1:AQ|AQ]]
+| −7750+16636
+| [[Pacific/Auckland|Antarctica/McMurdo]]
+| New Zealand time - McMurdo, South Pole
+| Alias
+| [[UTC+12:00|+12:00]]
+| [[UTC+13:00|+13:00]]
+| Link to [[Pacific/Auckland]]
+|-
+| [[ISO_3166-1:AQ|AQ]]
+| −6448−06406
+| [[Antarctica/Palmer]]
+| Palmer
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| [[Magallanes and Chilean Antarctica Region|Chilean Antarctica Region]]
+|-
+| [[ISO_3166-1:AQ|AQ]]
+| −6734−06808
+| [[Antarctica/Rothera]]
+| Rothera
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| 
+| 
+| [[Pacific/Auckland|Antarctica/South_Pole]]
+| 
+| Deprecated
+| [[UTC+12:00|+12:00]]
+| [[UTC+13:00|+13:00]]
+| Link to [[Pacific/Auckland]]
+|-
+| [[ISO_3166-1:AQ|AQ]]
+| −690022+0393524
+| [[Antarctica/Syowa]]
+| Syowa
+| Canonical
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:AQ|AQ]]
+| −720041+0023206
+| [[Antarctica/Troll]]
+| Troll
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC+02:00|+02:00]]
+| Previously used [[UTC+01:00|+01:00]] for a brief period between standard and daylight time.<ref>{{cite web|url=https://www.timeanddate.com/time/zone/antarctica/troll|title=Time Zone & Clock Changes in Troll Station, Antarctica|website=www.timeanddate.com|accessdate=2019-08-05}}</ref>
+|-
+| [[ISO_3166-1:AQ|AQ]]
+| −7824+10654
+| [[Antarctica/Vostok]]
+| Vostok
+| Canonical
+| [[UTC+06:00|+06:00]]
+| [[UTC+06:00|+06:00]]
+| 
+|-
+| [[ISO_3166-1:SJ|SJ]]
+| +7800+01600
+| [[Europe/Oslo|Arctic/Longyearbyen]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Europe/Oslo]]
+|-
+| [[ISO_3166-1:YE|YE]]
+| +1245+04512
+| [[Asia/Riyadh|Asia/Aden]]
+| 
+| Alias
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[Asia/Riyadh]]
+|-
+| [[ISO_3166-1:KZ|KZ]]
+| +4315+07657
+| [[Asia/Almaty]]
+| Kazakhstan (most areas)
+| Canonical
+| [[UTC+06:00|+06:00]]
+| [[UTC+06:00|+06:00]]
+| 
+|-
+| [[ISO_3166-1:JO|JO]]
+| +3157+03556
+| [[Asia/Amman]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +6445+17729
+| [[Asia/Anadyr]]
+| MSK+09 - Bering Sea
+| Canonical
+| [[UTC+12:00|+12:00]]
+| [[UTC+12:00|+12:00]]
+| 
+|-
+| [[ISO_3166-1:KZ|KZ]]
+| +4431+05016
+| [[Asia/Aqtau]]
+| Mangghystaū/Mankistau
+| Canonical
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| 
+|-
+| [[ISO_3166-1:KZ|KZ]]
+| +5017+05710
+| [[Asia/Aqtobe]]
+| Aqtöbe/Aktobe
+| Canonical
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| 
+|-
+| [[ISO_3166-1:TM|TM]]
+| +3757+05823
+| [[Asia/Ashgabat]]
+| 
+| Canonical
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| 
+|-
+| 
+| 
+| [[Asia/Ashgabat|Asia/Ashkhabad]]
+| 
+| Deprecated
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| Link to [[Asia/Ashgabat]]
+|-
+| [[ISO_3166-1:KZ|KZ]]
+| +4707+05156
+| [[Asia/Atyrau]]
+| Atyraū/Atirau/Gur'yev
+| Canonical
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| 
+|-
+| [[ISO_3166-1:IQ|IQ]]
+| +3321+04425
+| [[Asia/Baghdad]]
+| 
+| Canonical
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:BH|BH]]
+| +2623+05035
+| [[Asia/Qatar|Asia/Bahrain]]
+| 
+| Alias
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[Asia/Qatar]]
+|-
+| [[ISO_3166-1:AZ|AZ]]
+| +4023+04951
+| [[Asia/Baku]]
+| 
+| Canonical
+| [[UTC+04:00|+04:00]]
+| [[UTC+04:00|+04:00]]
+| 
+|-
+| [[ISO_3166-1:TH|TH]]
+| +1345+10031
+| [[Asia/Bangkok]]
+| Indochina (most areas)
+| Canonical
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5322+08345
+| [[Asia/Barnaul]]
+| MSK+04 - Altai
+| Canonical
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| 
+|-
+| [[ISO_3166-1:LB|LB]]
+| +3353+03530
+| [[Asia/Beirut]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:KG|KG]]
+| +4254+07436
+| [[Asia/Bishkek]]
+| 
+| Canonical
+| [[UTC+06:00|+06:00]]
+| [[UTC+06:00|+06:00]]
+| 
+|-
+| [[ISO_3166-1:BN|BN]]
+| +0456+11455
+| [[Asia/Brunei]]
+| 
+| Canonical
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| 
+|-
+| 
+| 
+| [[Asia/Kolkata|Asia/Calcutta]]
+| 
+| Deprecated
+| [[UTC+05:30|+05:30]]
+| [[UTC+05:30|+05:30]]
+| Link to [[Asia/Kolkata]]
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5203+11328
+| [[Asia/Chita]]
+| MSK+06 - Zabaykalsky
+| Canonical
+| [[UTC+09:00|+09:00]]
+| [[UTC+09:00|+09:00]]
+| 
+|-
+| [[ISO_3166-1:MN|MN]]
+| +4804+11430
+| [[Asia/Choibalsan]]
+| Dornod, Sükhbaatar
+| Canonical
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| 
+|-
+| 
+| 
+| [[Asia/Shanghai|Asia/Chongqing]]
+| 
+| Deprecated
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| Link to [[Asia/Shanghai]]
+|-
+| 
+| 
+| [[Asia/Shanghai|Asia/Chungking]]
+| 
+| Deprecated
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| Link to [[Asia/Shanghai]]
+|-
+| [[ISO_3166-1:LK|LK]]
+| +0656+07951
+| [[Asia/Colombo]]
+| 
+| Canonical
+| [[UTC+05:30|+05:30]]
+| [[UTC+05:30|+05:30]]
+| 
+|-
+| 
+| 
+| [[Asia/Dhaka|Asia/Dacca]]
+| 
+| Deprecated
+| [[UTC+06:00|+06:00]]
+| [[UTC+06:00|+06:00]]
+| Link to [[Asia/Dhaka]]
+|-
+| [[ISO_3166-1:SY|SY]]
+| +3330+03618
+| [[Asia/Damascus]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:BD|BD]]
+| +2343+09025
+| [[Asia/Dhaka]]
+| 
+| Canonical
+| [[UTC+06:00|+06:00]]
+| [[UTC+06:00|+06:00]]
+| 
+|-
+| [[ISO_3166-1:TL|TL]]
+| −0833+12535
+| [[Asia/Dili]]
+| 
+| Canonical
+| [[UTC+09:00|+09:00]]
+| [[UTC+09:00|+09:00]]
+| 
+|-
+| [[ISO_3166-1:AE|AE]]
+| +2518+05518
+| [[Asia/Dubai]]
+| 
+| Canonical
+| [[UTC+04:00|+04:00]]
+| [[UTC+04:00|+04:00]]
+| 
+|-
+| [[ISO_3166-1:TJ|TJ]]
+| +3835+06848
+| [[Asia/Dushanbe]]
+| 
+| Canonical
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| 
+|-
+| [[ISO_3166-1:CY|CY]]
+| +3507+03357
+| [[Asia/Famagusta]]
+| Northern Cyprus
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:PS|PS]]
+| +3130+03428
+| [[Asia/Gaza]]
+| Gaza Strip
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| 
+| 
+| [[Asia/Shanghai|Asia/Harbin]]
+| 
+| Deprecated
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| Link to [[Asia/Shanghai]]
+|-
+| [[ISO_3166-1:PS|PS]]
+| +313200+0350542
+| [[Asia/Hebron]]
+| West Bank
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:VN|VN]]
+| +1045+10640
+| [[Asia/Ho_Chi_Minh]]
+| Vietnam (south)
+| Canonical
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| 
+|-
+| [[ISO_3166-1:HK|HK]]
+| +2217+11409
+| [[Asia/Hong_Kong]]
+| 
+| Canonical
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| 
+|-
+| [[ISO_3166-1:MN|MN]]
+| +4801+09139
+| [[Asia/Hovd]]
+| Bayan-Ölgii, Govi-Altai, Hovd, Uvs, Zavkhan
+| Canonical
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5216+10420
+| [[Asia/Irkutsk]]
+| MSK+05 - Irkutsk, Buryatia
+| Canonical
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| 
+|-
+| [[ISO_3166-1:TR|TR]]
+| +4101+02858
+| [[Europe/Istanbul|Asia/Istanbul]]
+| 
+| Alias
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[Europe/Istanbul]]
+|-
+| [[ISO_3166-1:ID|ID]]
+| −0610+10648
+| [[Asia/Jakarta]]
+| Java, Sumatra
+| Canonical
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| 
+|-
+| [[ISO_3166-1:ID|ID]]
+| −0232+14042
+| [[Asia/Jayapura]]
+| New Guinea (West Papua / Irian Jaya); Malukus/Moluccas
+| Canonical
+| [[UTC+09:00|+09:00]]
+| [[UTC+09:00|+09:00]]
+| 
+|-
+| [[ISO_3166-1:IL|IL]]
+| +314650+0351326
+| [[Asia/Jerusalem]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:AF|AF]]
+| +3431+06912
+| [[Asia/Kabul]]
+| 
+| Canonical
+| [[UTC+04:30|+04:30]]
+| [[UTC+04:30|+04:30]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5301+15839
+| [[Asia/Kamchatka]]
+| MSK+09 - Kamchatka
+| Canonical
+| [[UTC+12:00|+12:00]]
+| [[UTC+12:00|+12:00]]
+| 
+|-
+| [[ISO_3166-1:PK|PK]]
+| +2452+06703
+| [[Asia/Karachi]]
+| 
+| Canonical
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| 
+|-
+| 
+| 
+| [[Asia/Urumqi|Asia/Kashgar]]
+| 
+| Deprecated
+| [[UTC+06:00|+06:00]]
+| [[UTC+06:00|+06:00]]
+| Link to [[Asia/Urumqi]]{{refn|group=note|The [[Asia/Kashgar]] entry in the [[tz database]] reflected the use of [[Xinjiang Time]] by part of the local population. Consider using [[Asia/Shanghai]] for Beijing Time if that is preferred.}}
+|-
+| [[ISO_3166-1:NP|NP]]
+| +2743+08519
+| [[Asia/Kathmandu]]
+| 
+| Canonical
+| [[UTC+05:45|+05:45]]
+| [[UTC+05:45|+05:45]]
+| 
+|-
+| 
+| 
+| [[Asia/Kathmandu|Asia/Katmandu]]
+| 
+| Deprecated
+| [[UTC+05:45|+05:45]]
+| [[UTC+05:45|+05:45]]
+| Link to [[Asia/Kathmandu]]
+|-
+| [[ISO_3166-1:RU|RU]]
+| +623923+1353314
+| [[Asia/Khandyga]]
+| MSK+06 - Tomponsky, Ust-Maysky
+| Canonical
+| [[UTC+09:00|+09:00]]
+| [[UTC+09:00|+09:00]]
+| 
+|-
+| [[ISO_3166-1:IN|IN]]
+| +2232+08822
+| [[Asia/Kolkata]]
+| 
+| Canonical
+| [[UTC+05:30|+05:30]]
+| [[UTC+05:30|+05:30]]
+| Note: Different zones in history, see [[Time in India]].
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5601+09250
+| [[Asia/Krasnoyarsk]]
+| MSK+04 - Krasnoyarsk area
+| Canonical
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| 
+|-
+| [[ISO_3166-1:MY|MY]]
+| +0310+10142
+| [[Asia/Kuala_Lumpur]]
+| Malaysia (peninsula)
+| Canonical
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| 
+|-
+| [[ISO_3166-1:MY|MY]]
+| +0133+11020
+| [[Asia/Kuching]]
+| Sabah, Sarawak
+| Canonical
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| 
+|-
+| [[ISO_3166-1:KW|KW]]
+| +2920+04759
+| [[Asia/Riyadh|Asia/Kuwait]]
+| 
+| Alias
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[Asia/Riyadh]]
+|-
+| 
+| 
+| [[Asia/Macau|Asia/Macao]]
+| 
+| Deprecated
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| Link to [[Asia/Macau]]
+|-
+| [[ISO_3166-1:MO|MO]]
+| +221150+1133230
+| [[Asia/Macau]]
+| 
+| Canonical
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5934+15048
+| [[Asia/Magadan]]
+| MSK+08 - Magadan
+| Canonical
+| [[UTC+11:00|+11:00]]
+| [[UTC+11:00|+11:00]]
+| 
+|-
+| [[ISO_3166-1:ID|ID]]
+| −0507+11924
+| [[Asia/Makassar]]
+| Borneo (east, south); Sulawesi/Celebes, Bali, Nusa Tengarra; Timor (west)
+| Canonical
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| 
+|-
+| [[ISO_3166-1:PH|PH]]
+| +1435+12100
+| [[Asia/Manila]]
+| 
+| Canonical
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| 
+|-
+| [[ISO_3166-1:OM|OM]]
+| +2336+05835
+| [[Asia/Dubai|Asia/Muscat]]
+| 
+| Alias
+| [[UTC+04:00|+04:00]]
+| [[UTC+04:00|+04:00]]
+| Link to [[Asia/Dubai]]
+|-
+| [[ISO_3166-1:CY|CY]]
+| +3510+03322
+| [[Asia/Nicosia]]
+| Cyprus (most areas)
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5345+08707
+| [[Asia/Novokuznetsk]]
+| MSK+04 - Kemerovo
+| Canonical
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5502+08255
+| [[Asia/Novosibirsk]]
+| MSK+04 - Novosibirsk
+| Canonical
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5500+07324
+| [[Asia/Omsk]]
+| MSK+03 - Omsk
+| Canonical
+| [[UTC+06:00|+06:00]]
+| [[UTC+06:00|+06:00]]
+| 
+|-
+| [[ISO_3166-1:KZ|KZ]]
+| +5113+05121
+| [[Asia/Oral]]
+| West Kazakhstan
+| Canonical
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| 
+|-
+| [[ISO_3166-1:KH|KH]]
+| +1133+10455
+| [[Asia/Bangkok|Asia/Phnom_Penh]]
+| 
+| Alias
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| Link to [[Asia/Bangkok]]
+|-
+| [[ISO_3166-1:ID|ID]]
+| −0002+10920
+| [[Asia/Pontianak]]
+| Borneo (west, central)
+| Canonical
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| 
+|-
+| [[ISO_3166-1:KP|KP]]
+| +3901+12545
+| [[Asia/Pyongyang]]
+| 
+| Canonical
+| [[UTC+09:00|+09:00]]
+| [[UTC+09:00|+09:00]]
+| 
+|-
+| [[ISO_3166-1:QA|QA]]
+| +2517+05132
+| [[Asia/Qatar]]
+| 
+| Canonical
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:KZ|KZ]]
+| +5312+06337
+| [[Asia/Qostanay]]
+| Qostanay/Kostanay/Kustanay
+| Canonical
+| [[UTC+06:00|+06:00]]
+| [[UTC+06:00|+06:00]]
+| 
+|-
+| [[ISO_3166-1:KZ|KZ]]
+| +4448+06528
+| [[Asia/Qyzylorda]]
+| Qyzylorda/Kyzylorda/Kzyl-Orda
+| Canonical
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| 
+|-
+| 
+| 
+| [[Asia/Rangoon]]
+| 
+| Deprecated
+| [[UTC+06:30|+06:30]]
+| [[UTC+06:30|+06:30]]
+| Link to [[Asia/Yangon]]
+|-
+| [[ISO_3166-1:SA|SA]]
+| +2438+04643
+| [[Asia/Riyadh]]
+| 
+| Canonical
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| 
+| 
+| [[Asia/Ho_Chi_Minh|Asia/Saigon]]
+| 
+| Deprecated
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| Link to [[Asia/Ho_Chi_Minh]]
+|-
+| [[ISO_3166-1:RU|RU]]
+| +4658+14242
+| [[Asia/Sakhalin]]
+| MSK+08 - Sakhalin Island
+| Canonical
+| [[UTC+11:00|+11:00]]
+| [[UTC+11:00|+11:00]]
+| 
+|-
+| [[ISO_3166-1:UZ|UZ]]
+| +3940+06648
+| [[Asia/Samarkand]]
+| Uzbekistan (west)
+| Canonical
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| 
+|-
+| [[ISO_3166-1:KR|KR]]
+| +3733+12658
+| [[Asia/Seoul]]
+| 
+| Canonical
+| [[UTC+09:00|+09:00]]
+| [[UTC+09:00|+09:00]]
+| 
+|-
+| [[ISO_3166-1:CN|CN]]
+| +3114+12128
+| [[Asia/Shanghai]]
+| Beijing Time
+| Canonical
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| 
+|-
+| [[ISO_3166-1:SG|SG]]
+| +0117+10351
+| [[Asia/Singapore]]
+| 
+| Canonical
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +6728+15343
+| [[Asia/Srednekolymsk]]
+| MSK+08 - Sakha (E); North Kuril Is
+| Canonical
+| [[UTC+11:00|+11:00]]
+| [[UTC+11:00|+11:00]]
+| 
+|-
+| [[ISO_3166-1:TW|TW]]
+| +2503+12130
+| [[Asia/Taipei]]
+| 
+| Canonical
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| 
+|-
+| [[ISO_3166-1:UZ|UZ]]
+| +4120+06918
+| [[Asia/Tashkent]]
+| Uzbekistan (east)
+| Canonical
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| 
+|-
+| [[ISO_3166-1:GE|GE]]
+| +4143+04449
+| [[Asia/Tbilisi]]
+| 
+| Canonical
+| [[UTC+04:00|+04:00]]
+| [[UTC+04:00|+04:00]]
+| 
+|-
+| [[ISO_3166-1:IR|IR]]
+| +3540+05126
+| [[Asia/Tehran]]
+| 
+| Canonical
+| [[UTC+03:30|+03:30]]
+| [[UTC+04:30|+04:30]]
+| 
+|-
+| 
+| 
+| [[Asia/Jerusalem|Asia/Tel_Aviv]]
+| 
+| Deprecated
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[Asia/Jerusalem]]
+|-
+| 
+| 
+| [[Asia/Thimphu|Asia/Thimbu]]
+| 
+| Deprecated
+| [[UTC+06:00|+06:00]]
+| [[UTC+06:00|+06:00]]
+| Link to [[Asia/Thimphu]]
+|-
+| [[ISO_3166-1:BT|BT]]
+| +2728+08939
+| [[Asia/Thimphu]]
+| 
+| Canonical
+| [[UTC+06:00|+06:00]]
+| [[UTC+06:00|+06:00]]
+| 
+|-
+| [[ISO_3166-1:JP|JP]]
+| +353916+1394441
+| [[Asia/Tokyo]]
+| 
+| Canonical
+| [[UTC+09:00|+09:00]]
+| [[UTC+09:00|+09:00]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5630+08458
+| [[Asia/Tomsk]]
+| MSK+04 - Tomsk
+| Canonical
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| 
+|-
+| 
+| 
+| [[Asia/Makassar|Asia/Ujung_Pandang]]
+| 
+| Deprecated
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| Link to [[Asia/Makassar]]
+|-
+| [[ISO_3166-1:MN|MN]]
+| +4755+10653
+| [[Asia/Ulaanbaatar]]
+| Mongolia (most areas)
+| Canonical
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| 
+|-
+| 
+| 
+| [[Asia/Ulaanbaatar|Asia/Ulan_Bator]]
+| 
+| Deprecated
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| Link to [[Asia/Ulaanbaatar]]
+|-
+| [[ISO_3166-1:CN|CN]]
+| +4348+08735
+| [[Asia/Urumqi]]
+| Xinjiang Time
+| Canonical
+| [[UTC+06:00|+06:00]]
+| [[UTC+06:00|+06:00]]
+| The [[Asia/Urumqi]] entry in the [[tz database]] reflected the use of [[Xinjiang Time]] by part of the local population. Consider using [[Asia/Shanghai]] for Beijing Time if that is preferred.
+|-
+| [[ISO_3166-1:RU|RU]]
+| +643337+1431336
+| [[Asia/Ust-Nera]]
+| MSK+07 - Oymyakonsky
+| Canonical
+| [[UTC+10:00|+10:00]]
+| [[UTC+10:00|+10:00]]
+| 
+|-
+| [[ISO_3166-1:LA|LA]]
+| +1758+10236
+| [[Asia/Bangkok|Asia/Vientiane]]
+| 
+| Alias
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| Link to [[Asia/Bangkok]]
+|-
+| [[ISO_3166-1:RU|RU]]
+| +4310+13156
+| [[Asia/Vladivostok]]
+| MSK+07 - Amur River
+| Canonical
+| [[UTC+10:00|+10:00]]
+| [[UTC+10:00|+10:00]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +6200+12940
+| [[Asia/Yakutsk]]
+| MSK+06 - Lena River
+| Canonical
+| [[UTC+09:00|+09:00]]
+| [[UTC+09:00|+09:00]]
+| 
+|-
+| [[ISO_3166-1:MM|MM]]
+| +1647+09610
+| [[Asia/Yangon]]
+| 
+| Canonical
+| [[UTC+06:30|+06:30]]
+| [[UTC+06:30|+06:30]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5651+06036
+| [[Asia/Yekaterinburg]]
+| MSK+02 - Urals
+| Canonical
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| 
+|-
+| [[ISO_3166-1:AM|AM]]
+| +4011+04430
+| [[Asia/Yerevan]]
+| 
+| Canonical
+| [[UTC+04:00|+04:00]]
+| [[UTC+04:00|+04:00]]
+| 
+|-
+| [[ISO_3166-1:PT|PT]]
+| +3744−02540
+| [[Atlantic/Azores]]
+| Azores
+| Canonical
+| [[UTC−01:00|−01:00]]
+| [[UTC±00:00|+00:00]]
+| 
+|-
+| [[ISO_3166-1:BM|BM]]
+| +3217−06446
+| [[Atlantic/Bermuda]]
+| 
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| [[ISO_3166-1:ES|ES]]
+| +2806−01524
+| [[Atlantic/Canary]]
+| Canary Islands
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC+01:00|+01:00]]
+| 
+|-
+| [[ISO_3166-1:CV|CV]]
+| +1455−02331
+| [[Atlantic/Cape_Verde]]
+| 
+| Canonical
+| [[UTC−01:00|−01:00]]
+| [[UTC−01:00|−01:00]]
+| 
+|-
+| 
+| 
+| [[Atlantic/Faroe|Atlantic/Faeroe]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Atlantic/Faroe]]
+|-
+| [[ISO_3166-1:FO|FO]]
+| +6201−00646
+| [[Atlantic/Faroe]]
+| 
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC+01:00|+01:00]]
+| 
+|-
+| 
+| 
+| [[Europe/Oslo|Atlantic/Jan_Mayen]]
+| 
+| Deprecated
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Europe/Oslo]]
+|-
+| [[ISO_3166-1:PT|PT]]
+| +3238−01654
+| [[Atlantic/Madeira]]
+| Madeira Islands
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC+01:00|+01:00]]
+| 
+|-
+| [[ISO_3166-1:IS|IS]]
+| +6409−02151
+| [[Atlantic/Reykjavik]]
+| 
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| 
+|-
+| [[ISO_3166-1:GS|GS]]
+| −5416−03632
+| [[Atlantic/South_Georgia]]
+| 
+| Canonical
+| [[UTC−02:00|−02:00]]
+| [[UTC−02:00|−02:00]]
+| 
+|-
+| [[ISO_3166-1:SH|SH]]
+| −1555−00542
+| [[Africa/Abidjan|Atlantic/St_Helena]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Africa/Abidjan]]
+|-
+| [[ISO_3166-1:FK|FK]]
+| −5142−05751
+| [[Atlantic/Stanley]]
+| 
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| 
+|-
+| 
+| 
+| [[Australia/Sydney|Australia/ACT]]
+| 
+| Deprecated
+| [[UTC+10:00|+10:00]]
+| [[UTC+11:00|+11:00]]
+| Link to [[Australia/Sydney]]
+|-
+| [[ISO_3166-1:AU|AU]]
+| −3455+13835
+| [[Australia/Adelaide]]
+| South Australia
+| Canonical
+| [[UTC+09:30|+09:30]]
+| [[UTC+10:30|+10:30]]
+| 
+|-
+| [[ISO_3166-1:AU|AU]]
+| −2728+15302
+| [[Australia/Brisbane]]
+| Queensland (most areas)
+| Canonical
+| [[UTC+10:00|+10:00]]
+| [[UTC+10:00|+10:00]]
+| 
+|-
+| [[ISO_3166-1:AU|AU]]
+| −3157+14127
+| [[Australia/Broken_Hill]]
+| New South Wales (Yancowinna)
+| Canonical
+| [[UTC+09:30|+09:30]]
+| [[UTC+10:30|+10:30]]
+| 
+|-
+| 
+| 
+| [[Australia/Sydney|Australia/Canberra]]
+| 
+| Deprecated
+| [[UTC+10:00|+10:00]]
+| [[UTC+11:00|+11:00]]
+| Link to [[Australia/Sydney]]
+|-
+| [[ISO_3166-1:AU|AU]]
+| −3956+14352
+| [[Australia/Currie]]
+| Tasmania (King Island)
+| Canonical
+| [[UTC+10:00|+10:00]]
+| [[UTC+11:00|+11:00]]
+| 
+|-
+| [[ISO_3166-1:AU|AU]]
+| −1228+13050
+| [[Australia/Darwin]]
+| Northern Territory
+| Canonical
+| [[UTC+09:30|+09:30]]
+| [[UTC+09:30|+09:30]]
+| 
+|-
+| [[ISO_3166-1:AU|AU]]
+| −3143+12852
+| [[Australia/Eucla]]
+| Western Australia (Eucla)
+| Canonical
+| [[UTC+08:45|+08:45]]
+| [[UTC+08:45|+08:45]]
+| 
+|-
+| [[ISO_3166-1:AU|AU]]
+| −4253+14719
+| [[Australia/Hobart]]
+| Tasmania (most areas)
+| Canonical
+| [[UTC+10:00|+10:00]]
+| [[UTC+11:00|+11:00]]
+| 
+|-
+| 
+| 
+| [[Australia/Lord_Howe|Australia/LHI]]
+| 
+| Deprecated
+| [[UTC+10:30|+10:30]]
+| [[UTC+11:00|+11:00]]
+| Link to [[Australia/Lord_Howe]]
+|-
+| [[ISO_3166-1:AU|AU]]
+| −2016+14900
+| [[Australia/Lindeman]]
+| Queensland (Whitsunday Islands)
+| Canonical
+| [[UTC+10:00|+10:00]]
+| [[UTC+10:00|+10:00]]
+| 
+|-
+| [[ISO_3166-1:AU|AU]]
+| −3133+15905
+| [[Australia/Lord_Howe]]
+| Lord Howe Island
+| Canonical
+| [[UTC+10:30|+10:30]]
+| [[UTC+11:00|+11:00]]
+| This is the only time zone in the world that uses 30-minute DST transitions.
+|-
+| [[ISO_3166-1:AU|AU]]
+| −3749+14458
+| [[Australia/Melbourne]]
+| Victoria
+| Canonical
+| [[UTC+10:00|+10:00]]
+| [[UTC+11:00|+11:00]]
+| 
+|-
+| 
+| 
+| [[Australia/Darwin|Australia/North]]
+| 
+| Deprecated
+| [[UTC+09:30|+09:30]]
+| [[UTC+09:30|+09:30]]
+| Link to [[Australia/Darwin]]
+|-
+| 
+| 
+| [[Australia/Sydney|Australia/NSW]]
+| 
+| Deprecated
+| [[UTC+10:00|+10:00]]
+| [[UTC+11:00|+11:00]]
+| Link to [[Australia/Sydney]]
+|-
+| [[ISO_3166-1:AU|AU]]
+| −3157+11551
+| [[Australia/Perth]]
+| Western Australia (most areas)
+| Canonical
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| 
+|-
+| 
+| 
+| [[Australia/Brisbane|Australia/Queensland]]
+| 
+| Deprecated
+| [[UTC+10:00|+10:00]]
+| [[UTC+10:00|+10:00]]
+| Link to [[Australia/Brisbane]]
+|-
+| 
+| 
+| [[Australia/Adelaide|Australia/South]]
+| 
+| Deprecated
+| [[UTC+09:30|+09:30]]
+| [[UTC+10:30|+10:30]]
+| Link to [[Australia/Adelaide]]
+|-
+| [[ISO_3166-1:AU|AU]]
+| −3352+15113
+| [[Australia/Sydney]]
+| New South Wales (most areas)
+| Canonical
+| [[UTC+10:00|+10:00]]
+| [[UTC+11:00|+11:00]]
+| 
+|-
+| 
+| 
+| [[Australia/Hobart|Australia/Tasmania]]
+| 
+| Deprecated
+| [[UTC+10:00|+10:00]]
+| [[UTC+11:00|+11:00]]
+| Link to [[Australia/Hobart]]
+|-
+| 
+| 
+| [[Australia/Melbourne|Australia/Victoria]]
+| 
+| Deprecated
+| [[UTC+10:00|+10:00]]
+| [[UTC+11:00|+11:00]]
+| Link to [[Australia/Melbourne]]
+|-
+| 
+| 
+| [[Australia/Perth|Australia/West]]
+| 
+| Deprecated
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| Link to [[Australia/Perth]]
+|-
+| 
+| 
+| [[Australia/Broken_Hill|Australia/Yancowinna]]
+| 
+| Deprecated
+| [[UTC+09:30|+09:30]]
+| [[UTC+10:30|+10:30]]
+| Link to [[Australia/Broken_Hill]]
+|-
+| 
+| 
+| [[America/Rio_Branco|Brazil/Acre]]
+| 
+| Deprecated
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| Link to [[America/Rio_Branco]]
+|-
+| 
+| 
+| [[America/Noronha|Brazil/DeNoronha]]
+| 
+| Deprecated
+| [[UTC−02:00|−02:00]]
+| [[UTC−02:00|−02:00]]
+| Link to [[America/Noronha]]
+|-
+| 
+| 
+| [[America/Sao_Paulo|Brazil/East]]
+| 
+| Deprecated
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| Link to [[America/Sao_Paulo]]
+|-
+| 
+| 
+| [[America/Manaus|Brazil/West]]
+| 
+| Deprecated
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Manaus]]
+|-
+| 
+| 
+| [[America/Halifax|Canada/Atlantic]]
+| 
+| Deprecated
+| [[UTC−04:00|−04:00]]
+| [[UTC−03:00|−03:00]]
+| Link to [[America/Halifax]]
+|-
+| 
+| 
+| [[America/Winnipeg|Canada/Central]]
+| 
+| Deprecated
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| Link to [[America/Winnipeg]]
+|-
+| 
+| 
+| [[America/Toronto|Canada/Eastern]]
+| 
+| Deprecated
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Toronto]]
+|-
+| 
+| 
+| [[America/Edmonton|Canada/Mountain]]
+| 
+| Deprecated
+| [[UTC−07:00|−07:00]]
+| [[UTC−06:00|−06:00]]
+| Link to [[America/Edmonton]]
+|-
+| 
+| 
+| [[America/St_Johns|Canada/Newfoundland]]
+| 
+| Deprecated
+| [[UTC−03:30|−03:30]]
+| [[UTC−02:30|−02:30]]
+| Link to [[America/St_Johns]]
+|-
+| 
+| 
+| [[America/Vancouver|Canada/Pacific]]
+| 
+| Deprecated
+| [[UTC−08:00|−08:00]]
+| [[UTC−07:00|−07:00]]
+| Link to [[America/Vancouver]]
+|-
+| 
+| 
+| [[America/Regina|Canada/Saskatchewan]]
+| 
+| Deprecated
+| [[UTC−06:00|−06:00]]
+| [[UTC−06:00|−06:00]]
+| Link to [[America/Regina]]
+|-
+| 
+| 
+| [[America/Whitehorse|Canada/Yukon]]
+| 
+| Deprecated
+| [[UTC−07:00|−07:00]]
+| [[UTC−07:00|−07:00]]
+| Link to [[America/Whitehorse]]
+|-
+| 
+| 
+| [[Central European Time|CET]]
+| 
+| Deprecated
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| Choose a zone that ''observes'' CET, such as [[Europe/Paris]].
+|-
+| 
+| 
+| [[America/Santiago|Chile/Continental]]
+| 
+| Deprecated
+| [[UTC−04:00|−04:00]]
+| [[UTC−03:00|−03:00]]
+| Link to [[America/Santiago]]
+|-
+| 
+| 
+| [[Pacific/Easter|Chile/EasterIsland]]
+| 
+| Deprecated
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| Link to [[Pacific/Easter]]
+|-
+| 
+| 
+| [[CST6CDT]]
+| 
+| Deprecated
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| Choose a zone that ''observes'' CST with United States daylight saving time rules, such as [[America/Chicago]].
+|-
+| 
+| 
+| [[America/Havana|Cuba]]
+| 
+| Deprecated
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Havana]]
+|-
+| 
+| 
+| [[Eastern European Time|EET]]
+| 
+| Deprecated
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| Choose a zone that ''observes'' EET, such as [[Europe/Sofia]].
+|-
+| 
+| 
+| [[Africa/Cairo|Egypt]]
+| 
+| Deprecated
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Africa/Cairo]]
+|-
+| 
+| 
+| [[Europe/Dublin|Eire]]
+| 
+| Deprecated
+| [[UTC+01:00|+01:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Europe/Dublin]]
+|-
+| 
+| 
+| [[Eastern Standard Time (North America)|EST]]
+| 
+| Deprecated
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| Choose a zone that currently ''observes'' EST without daylight saving time, such as [[America/Cancun]].
+|-
+| 
+| 
+| [[EST5EDT]]
+| 
+| Deprecated
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| Choose a zone that ''observes'' EST with United States daylight saving time rules, such as [[America/New_York]].
+|-
+| 
+| 
+| [[Coordinated Universal Time|Etc/GMT]]
+| 
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| 
+|-
+| 
+| 
+| [[Coordinated Universal Time|Etc/GMT+0]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/GMT]]
+|-
+| 
+| 
+| [[UTC−01:00|Etc/GMT+1]]
+| 
+| Canonical
+| [[UTC−01:00|−01:00]]
+| [[UTC−01:00|−01:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC−10:00|Etc/GMT+10]]
+| 
+| Canonical
+| [[UTC−10:00|−10:00]]
+| [[UTC−10:00|−10:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC−11:00|Etc/GMT+11]]
+| 
+| Canonical
+| [[UTC−11:00|−11:00]]
+| [[UTC−11:00|−11:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC−12:00|Etc/GMT+12]]
+| 
+| Canonical
+| [[UTC−12:00|−12:00]]
+| [[UTC−12:00|−12:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC−02:00|Etc/GMT+2]]
+| 
+| Canonical
+| [[UTC−02:00|−02:00]]
+| [[UTC−02:00|−02:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC−03:00|Etc/GMT+3]]
+| 
+| Canonical
+| [[UTC−03:00|−03:00]]
+| [[UTC−03:00|−03:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC−04:00|Etc/GMT+4]]
+| 
+| Canonical
+| [[UTC−04:00|−04:00]]
+| [[UTC−04:00|−04:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC−05:00|Etc/GMT+5]]
+| 
+| Canonical
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC−06:00|Etc/GMT+6]]
+| 
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−06:00|−06:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC−07:00|Etc/GMT+7]]
+| 
+| Canonical
+| [[UTC−07:00|−07:00]]
+| [[UTC−07:00|−07:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC−08:00|Etc/GMT+8]]
+| 
+| Canonical
+| [[UTC−08:00|−08:00]]
+| [[UTC−08:00|−08:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC−09:00|Etc/GMT+9]]
+| 
+| Canonical
+| [[UTC−09:00|−09:00]]
+| [[UTC−09:00|−09:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[Coordinated Universal Time|Etc/GMT-0]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/GMT]]
+|-
+| 
+| 
+| [[UTC+01:00|Etc/GMT-1]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+01:00|+01:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC+10:00|Etc/GMT-10]]
+| 
+| Canonical
+| [[UTC+10:00|+10:00]]
+| [[UTC+10:00|+10:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC+11:00|Etc/GMT-11]]
+| 
+| Canonical
+| [[UTC+11:00|+11:00]]
+| [[UTC+11:00|+11:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC+12:00|Etc/GMT-12]]
+| 
+| Canonical
+| [[UTC+12:00|+12:00]]
+| [[UTC+12:00|+12:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC+13:00|Etc/GMT-13]]
+| 
+| Canonical
+| [[UTC+13:00|+13:00]]
+| [[UTC+13:00|+13:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC+14:00|Etc/GMT-14]]
+| 
+| Canonical
+| [[UTC+14:00|+14:00]]
+| [[UTC+14:00|+14:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC+02:00|Etc/GMT-2]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC+03:00|Etc/GMT-3]]
+| 
+| Canonical
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC+04:00|Etc/GMT-4]]
+| 
+| Canonical
+| [[UTC+04:00|+04:00]]
+| [[UTC+04:00|+04:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC+05:00|Etc/GMT-5]]
+| 
+| Canonical
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC+06:00|Etc/GMT-6]]
+| 
+| Canonical
+| [[UTC+06:00|+06:00]]
+| [[UTC+06:00|+06:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC+07:00|Etc/GMT-7]]
+| 
+| Canonical
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC+08:00|Etc/GMT-8]]
+| 
+| Canonical
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[UTC+09:00|Etc/GMT-9]]
+| 
+| Canonical
+| [[UTC+09:00|+09:00]]
+| [[UTC+09:00|+09:00]]
+| Sign is intentionally inverted. See the [[Tz database#Area|Etc area description]].
+|-
+| 
+| 
+| [[Coordinated Universal Time|Etc/GMT0]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/GMT]]
+|-
+| 
+| 
+| [[Coordinated Universal Time|Etc/Greenwich]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/GMT]]
+|-
+| 
+| 
+| [[Coordinated Universal Time|Etc/UCT]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/UTC]]
+|-
+| 
+| 
+| [[Coordinated Universal Time|Etc/Universal]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/UTC]]
+|-
+| 
+| 
+| [[Coordinated Universal Time|Etc/UTC]]
+| 
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| 
+|-
+| 
+| 
+| [[Coordinated Universal Time|Etc/Zulu]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/UTC]]
+|-
+| [[ISO_3166-1:NL|NL]]
+| +5222+00454
+| [[Europe/Amsterdam]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:AD|AD]]
+| +4230+00131
+| [[Europe/Andorra]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +4621+04803
+| [[Europe/Astrakhan]]
+| MSK+01 - Astrakhan
+| Canonical
+| [[UTC+04:00|+04:00]]
+| [[UTC+04:00|+04:00]]
+| 
+|-
+| [[ISO_3166-1:GR|GR]]
+| +3758+02343
+| [[Europe/Athens]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| 
+| 
+| [[Europe/London|Europe/Belfast]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Europe/London]]
+|-
+| [[ISO_3166-1:RS|RS]]
+| +4450+02030
+| [[Europe/Belgrade]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:DE|DE]]
+| +5230+01322
+| [[Europe/Berlin]]
+| Germany (most areas)
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| In 1945, the Trizone did not follow Berlin's switch to DST, see [[Time in Germany]]
+|-
+| [[ISO_3166-1:SK|SK]]
+| +4809+01707
+| [[Europe/Prague|Europe/Bratislava]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Europe/Prague]]
+|-
+| [[ISO_3166-1:BE|BE]]
+| +5050+00420
+| [[Europe/Brussels]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:RO|RO]]
+| +4426+02606
+| [[Europe/Bucharest]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:HU|HU]]
+| +4730+01905
+| [[Europe/Budapest]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:DE|DE]]
+| +4742+00841
+| [[Europe/Zurich|Europe/Busingen]]
+| Busingen
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Europe/Zurich]]
+|-
+| [[ISO_3166-1:MD|MD]]
+| +4700+02850
+| [[Europe/Chisinau]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:DK|DK]]
+| +5540+01235
+| [[Europe/Copenhagen]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:IE|IE]]
+| +5320−00615
+| [[Europe/Dublin]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC±00:00|+00:00]]
+| 
+|-
+| [[ISO_3166-1:GI|GI]]
+| +3608−00521
+| [[Europe/Gibraltar]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:GG|GG]]
+| +492717−0023210
+| [[Europe/London|Europe/Guernsey]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Europe/London]]
+|-
+| [[ISO_3166-1:FI|FI]]
+| +6010+02458
+| [[Europe/Helsinki]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:IM|IM]]
+| +5409−00428
+| [[Europe/London|Europe/Isle_of_Man]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Europe/London]]
+|-
+| [[ISO_3166-1:TR|TR]]
+| +4101+02858
+| [[Europe/Istanbul]]
+| 
+| Canonical
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:JE|JE]]
+| +491101−0020624
+| [[Europe/London|Europe/Jersey]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Europe/London]]
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5443+02030
+| [[Europe/Kaliningrad]]
+| MSK-01 - Kaliningrad
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:UA|UA]]
+| +5026+03031
+| [[Europe/Kiev]]
+| Ukraine (most areas)
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5836+04939
+| [[Europe/Kirov]]
+| MSK+00 - Kirov
+| Canonical
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:PT|PT]]
+| +3843−00908
+| [[Europe/Lisbon]]
+| Portugal (mainland)
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC+01:00|+01:00]]
+| 
+|-
+| [[ISO_3166-1:SI|SI]]
+| +4603+01431
+| [[Europe/Belgrade|Europe/Ljubljana]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Europe/Belgrade]]
+|-
+| [[ISO_3166-1:GB|GB]]
+| +513030−0000731
+| [[Europe/London]]
+| 
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC+01:00|+01:00]]
+| 
+|-
+| [[ISO_3166-1:LU|LU]]
+| +4936+00609
+| [[Europe/Luxembourg]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:ES|ES]]
+| +4024−00341
+| [[Europe/Madrid]]
+| Spain (mainland)
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:MT|MT]]
+| +3554+01431
+| [[Europe/Malta]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:AX|AX]]
+| +6006+01957
+| [[Europe/Helsinki|Europe/Mariehamn]]
+| 
+| Alias
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[Europe/Helsinki]]
+|-
+| [[ISO_3166-1:BY|BY]]
+| +5354+02734
+| [[Europe/Minsk]]
+| 
+| Canonical
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:MC|MC]]
+| +4342+00723
+| [[Europe/Monaco]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +554521+0373704
+| [[Europe/Moscow]]
+| MSK+00 - Moscow area
+| Canonical
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:CY|CY]]
+| +3510+03322
+| [[Asia/Nicosia|Europe/Nicosia]]
+| 
+| Alias
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[Asia/Nicosia]]
+|-
+| [[ISO_3166-1:NO|NO]]
+| +5955+01045
+| [[Europe/Oslo]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:FR|FR]]
+| +4852+00220
+| [[Europe/Paris]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:ME|ME]]
+| +4226+01916
+| [[Europe/Belgrade|Europe/Podgorica]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Europe/Belgrade]]
+|-
+| [[ISO_3166-1:CZ|CZ]]
+| +5005+01426
+| [[Europe/Prague]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:LV|LV]]
+| +5657+02406
+| [[Europe/Riga]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:IT|IT]]
+| +4154+01229
+| [[Europe/Rome]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5312+05009
+| [[Europe/Samara]]
+| MSK+01 - Samara, Udmurtia
+| Canonical
+| [[UTC+04:00|+04:00]]
+| [[UTC+04:00|+04:00]]
+| 
+|-
+| [[ISO_3166-1:SM|SM]]
+| +4355+01228
+| [[Europe/Rome|Europe/San_Marino]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Europe/Rome]]
+|-
+| [[ISO_3166-1:BA|BA]]
+| +4352+01825
+| [[Europe/Belgrade|Europe/Sarajevo]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Europe/Belgrade]]
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5134+04602
+| [[Europe/Saratov]]
+| MSK+01 - Saratov
+| Canonical
+| [[UTC+04:00|+04:00]]
+| [[UTC+04:00|+04:00]]
+| 
+|-
+| [[ISO_3166-1:UA|UA]]
+| +4457+03406
+| [[Europe/Simferopol]]
+| Crimea
+| Canonical
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Disputed - Reflects data in the TZDB.{{refn|group=note|The [[Europe/Simferopol]] entry in the [[tz database]] includes the disputed 2014 transition from Ukraine Time to Moscow Time related to the [[Annexation of Crimea by the Russian Federation]].  Consider using [[Kyiv Time|Europe/Kiev]] for Ukraine Time if you disagree with this position.}}
+|-
+| [[ISO_3166-1:MK|MK]]
+| +4159+02126
+| [[Europe/Belgrade|Europe/Skopje]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Europe/Belgrade]]
+|-
+| [[ISO_3166-1:BG|BG]]
+| +4241+02319
+| [[Europe/Sofia]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:SE|SE]]
+| +5920+01803
+| [[Europe/Stockholm]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:EE|EE]]
+| +5925+02445
+| [[Europe/Tallinn]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:AL|AL]]
+| +4120+01950
+| [[Europe/Tirane]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| 
+| 
+| [[Europe/Chisinau|Europe/Tiraspol]]
+| 
+| Deprecated
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[Europe/Chisinau]]
+|-
+| [[ISO_3166-1:RU|RU]]
+| +5420+04824
+| [[Europe/Ulyanovsk]]
+| MSK+01 - Ulyanovsk
+| Canonical
+| [[UTC+04:00|+04:00]]
+| [[UTC+04:00|+04:00]]
+| 
+|-
+| [[ISO_3166-1:UA|UA]]
+| +4837+02218
+| [[Europe/Uzhgorod]]
+| Transcarpathia
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:LI|LI]]
+| +4709+00931
+| [[Europe/Zurich|Europe/Vaduz]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Europe/Zurich]]
+|-
+| [[ISO_3166-1:VA|VA]]
+| +415408+0122711
+| [[Europe/Rome|Europe/Vatican]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Europe/Rome]]
+|-
+| [[ISO_3166-1:AT|AT]]
+| +4813+01620
+| [[Europe/Vienna]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:LT|LT]]
+| +5441+02519
+| [[Europe/Vilnius]]
+| 
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:RU|RU]]
+| +4844+04425
+| [[Europe/Volgograd]]
+| MSK+01 - Volgograd
+| Canonical
+| [[UTC+04:00|+04:00]]
+| [[UTC+04:00|+04:00]]
+| 
+|-
+| [[ISO_3166-1:PL|PL]]
+| +5215+02100
+| [[Europe/Warsaw]]
+| 
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| [[ISO_3166-1:HR|HR]]
+| +4548+01558
+| [[Europe/Belgrade|Europe/Zagreb]]
+| 
+| Alias
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Europe/Belgrade]]
+|-
+| [[ISO_3166-1:UA|UA]]
+| +4750+03510
+| [[Europe/Zaporozhye]]
+| Zaporozhye and east Lugansk
+| Canonical
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| 
+|-
+| [[ISO_3166-1:CH|CH]]
+| +4723+00832
+| [[Europe/Zurich]]
+| Swiss time
+| Canonical
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| 
+|-
+| 
+| 
+| [[Default_(computer_science)|Factory]]
+| 
+| Canonical
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| 
+|-
+| 
+| 
+| [[Europe/London|GB]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Europe/London]]
+|-
+| 
+| 
+| [[Europe/London|GB-Eire]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Europe/London]]
+|-
+| 
+| 
+| [[Coordinated Universal Time|GMT]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/GMT]]
+|-
+| 
+| 
+| [[Coordinated Universal Time|GMT+0]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/GMT]]
+|-
+| 
+| 
+| [[Coordinated Universal Time|GMT-0]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/GMT]]
+|-
+| 
+| 
+| [[Coordinated Universal Time|GMT0]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/GMT]]
+|-
+| 
+| 
+| [[Coordinated Universal Time|Greenwich]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/GMT]]
+|-
+| 
+| 
+| [[Asia/Hong_Kong|Hongkong]]
+| 
+| Deprecated
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| Link to [[Asia/Hong_Kong]]
+|-
+| 
+| 
+| [[Hawaiian Standard Time|HST]]
+| 
+| Deprecated
+| [[UTC−10:00|−10:00]]
+| [[UTC−10:00|−10:00]]
+| Choose a zone that currently ''observes'' HST without daylight saving time, such as [[Pacific/Honolulu]].
+|-
+| 
+| 
+| [[Atlantic/Reykjavik|Iceland]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Atlantic/Reykjavik]]
+|-
+| [[ISO_3166-1:MG|MG]]
+| −1855+04731
+| [[Africa/Nairobi|Indian/Antananarivo]]
+| 
+| Alias
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[East Africa Time|Africa/Nairobi]]
+|-
+| [[ISO_3166-1:IO|IO]]
+| −0720+07225
+| [[Indian/Chagos]]
+| 
+| Canonical
+| [[UTC+06:00|+06:00]]
+| [[UTC+06:00|+06:00]]
+| 
+|-
+| [[ISO_3166-1:CX|CX]]
+| −1025+10543
+| [[Indian/Christmas]]
+| 
+| Canonical
+| [[UTC+07:00|+07:00]]
+| [[UTC+07:00|+07:00]]
+| 
+|-
+| [[ISO_3166-1:CC|CC]]
+| −1210+09655
+| [[Indian/Cocos]]
+| 
+| Canonical
+| [[UTC+06:30|+06:30]]
+| [[UTC+06:30|+06:30]]
+| 
+|-
+| [[ISO_3166-1:KM|KM]]
+| −1141+04316
+| [[Africa/Nairobi|Indian/Comoro]]
+| 
+| Alias
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[East Africa Time|Africa/Nairobi]]
+|-
+| [[ISO_3166-1:TF|TF]]
+| −492110+0701303
+| [[Indian/Kerguelen]]
+| Kerguelen, St Paul Island, Amsterdam Island
+| Canonical
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| 
+|-
+| [[ISO_3166-1:SC|SC]]
+| −0440+05528
+| [[Indian/Mahe]]
+| 
+| Canonical
+| [[UTC+04:00|+04:00]]
+| [[UTC+04:00|+04:00]]
+| 
+|-
+| [[ISO_3166-1:MV|MV]]
+| +0410+07330
+| [[Indian/Maldives]]
+| 
+| Canonical
+| [[UTC+05:00|+05:00]]
+| [[UTC+05:00|+05:00]]
+| 
+|-
+| [[ISO_3166-1:MU|MU]]
+| −2010+05730
+| [[Indian/Mauritius]]
+| 
+| Canonical
+| [[UTC+04:00|+04:00]]
+| [[UTC+04:00|+04:00]]
+| 
+|-
+| [[ISO_3166-1:YT|YT]]
+| −1247+04514
+| [[Africa/Nairobi|Indian/Mayotte]]
+| 
+| Alias
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[East Africa Time|Africa/Nairobi]]
+|-
+| [[ISO_3166-1:RE|RE]]
+| −2052+05528
+| [[Indian/Reunion]]
+| Réunion, Crozet, Scattered Islands
+| Canonical
+| [[UTC+04:00|+04:00]]
+| [[UTC+04:00|+04:00]]
+| 
+|-
+| 
+| 
+| [[Asia/Tehran|Iran]]
+| 
+| Deprecated
+| [[UTC+03:30|+03:30]]
+| [[UTC+04:30|+04:30]]
+| Link to [[Asia/Tehran]]
+|-
+| 
+| 
+| [[Asia/Jerusalem|Israel]]
+| 
+| Deprecated
+| [[UTC+02:00|+02:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[Asia/Jerusalem]]
+|-
+| 
+| 
+| [[America/Jamaica|Jamaica]]
+| 
+| Deprecated
+| [[UTC−05:00|−05:00]]
+| [[UTC−05:00|−05:00]]
+| Link to [[America/Jamaica]]
+|-
+| 
+| 
+| [[Asia/Tokyo|Japan]]
+| 
+| Deprecated
+| [[UTC+09:00|+09:00]]
+| [[UTC+09:00|+09:00]]
+| Link to [[Asia/Tokyo]]
+|-
+| 
+| 
+| [[Pacific/Kwajalein|Kwajalein]]
+| 
+| Deprecated
+| [[UTC+12:00|+12:00]]
+| [[UTC+12:00|+12:00]]
+| Link to [[Pacific/Kwajalein]]
+|-
+| 
+| 
+| [[Africa/Tripoli|Libya]]
+| 
+| Deprecated
+| [[UTC+02:00|+02:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Africa/Tripoli]]
+|-
+| 
+| 
+| [[Central European Time|MET]]
+| 
+| Deprecated
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| Choose a zone that ''observes'' MET (sames as CET), such as [[Europe/Paris]].
+|-
+| 
+| 
+| [[America/Tijuana|Mexico/BajaNorte]]
+| 
+| Deprecated
+| [[UTC−08:00|−08:00]]
+| [[UTC−07:00|−07:00]]
+| Link to [[America/Tijuana]]
+|-
+| 
+| 
+| [[America/Mazatlan|Mexico/BajaSur]]
+| 
+| Deprecated
+| [[UTC−07:00|−07:00]]
+| [[UTC−06:00|−06:00]]
+| Link to [[America/Mazatlan]]
+|-
+| 
+| 
+| [[America/Mexico_City|Mexico/General]]
+| 
+| Deprecated
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| Link to [[America/Mexico_City]]
+|-
+| 
+| 
+| [[Mountain Standard Time|MST]]
+| 
+| Deprecated
+| [[UTC−07:00|−07:00]]
+| [[UTC−07:00|−07:00]]
+| Choose a zone that currently ''observes'' MST without daylight saving time, such as [[America/Phoenix]].
+|-
+| 
+| 
+| [[MST7MDT]]
+| 
+| Deprecated
+| [[UTC−07:00|−07:00]]
+| [[UTC−06:00|−06:00]]
+| Choose a zone that ''observes'' MST with United States daylight saving time rules, such as [[America/Denver]].
+|-
+| 
+| 
+| [[America/Denver|Navajo]]
+| 
+| Deprecated
+| [[UTC−07:00|−07:00]]
+| [[UTC−06:00|−06:00]]
+| Link to [[America/Denver]]
+|-
+| 
+| 
+| [[Pacific/Auckland|NZ]]
+| 
+| Deprecated
+| [[UTC+12:00|+12:00]]
+| [[UTC+13:00|+13:00]]
+| Link to [[Pacific/Auckland]]
+|-
+| 
+| 
+| [[Pacific/Chatham|NZ-CHAT]]
+| 
+| Deprecated
+| [[UTC+12:45|+12:45]]
+| [[UTC+13:45|+13:45]]
+| Link to [[Pacific/Chatham]]
+|-
+| [[ISO_3166-1:WS|WS]]
+| −1350−17144
+| [[Pacific/Apia]]
+| 
+| Canonical
+| [[UTC+13:00|+13:00]]
+| [[UTC+14:00|+14:00]]
+| 
+|-
+| [[ISO_3166-1:NZ|NZ]]
+| −3652+17446
+| [[Pacific/Auckland]]
+| New Zealand time
+| Canonical
+| [[UTC+12:00|+12:00]]
+| [[UTC+13:00|+13:00]]
+| 
+|-
+| [[ISO_3166-1:PG|PG]]
+| −0613+15534
+| [[Pacific/Bougainville]]
+| Bougainville
+| Canonical
+| [[UTC+11:00|+11:00]]
+| [[UTC+11:00|+11:00]]
+| 
+|-
+| [[ISO_3166-1:NZ|NZ]]
+| −4357−17633
+| [[Pacific/Chatham]]
+| Chatham Islands
+| Canonical
+| [[UTC+12:45|+12:45]]
+| [[UTC+13:45|+13:45]]
+| 
+|-
+| [[ISO_3166-1:FM|FM]]
+| +0725+15147
+| [[Pacific/Chuuk]]
+| Chuuk/Truk, Yap
+| Canonical
+| [[UTC+10:00|+10:00]]
+| [[UTC+10:00|+10:00]]
+| 
+|-
+| [[ISO_3166-1:CL|CL]]
+| −2709−10926
+| [[Pacific/Easter]]
+| Easter Island
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| 
+|-
+| [[ISO_3166-1:VU|VU]]
+| −1740+16825
+| [[Pacific/Efate]]
+| 
+| Canonical
+| [[UTC+11:00|+11:00]]
+| [[UTC+11:00|+11:00]]
+| 
+|-
+| [[ISO_3166-1:KI|KI]]
+| −0308−17105
+| [[Pacific/Enderbury]]
+| Phoenix Islands
+| Canonical
+| [[UTC+13:00|+13:00]]
+| [[UTC+13:00|+13:00]]
+| 
+|-
+| [[ISO_3166-1:TK|TK]]
+| −0922−17114
+| [[Pacific/Fakaofo]]
+| 
+| Canonical
+| [[UTC+13:00|+13:00]]
+| [[UTC+13:00|+13:00]]
+| 
+|-
+| [[ISO_3166-1:FJ|FJ]]
+| −1808+17825
+| [[Pacific/Fiji]]
+| 
+| Canonical
+| [[UTC+12:00|+12:00]]
+| [[UTC+13:00|+13:00]]
+| 
+|-
+| [[ISO_3166-1:TV|TV]]
+| −0831+17913
+| [[Pacific/Funafuti]]
+| 
+| Canonical
+| [[UTC+12:00|+12:00]]
+| [[UTC+12:00|+12:00]]
+| 
+|-
+| [[ISO_3166-1:EC|EC]]
+| −0054−08936
+| [[Pacific/Galapagos]]
+| Galápagos Islands
+| Canonical
+| [[UTC−06:00|−06:00]]
+| [[UTC−06:00|−06:00]]
+| 
+|-
+| [[ISO_3166-1:PF|PF]]
+| −2308−13457
+| [[Pacific/Gambier]]
+| Gambier Islands
+| Canonical
+| [[UTC−09:00|−09:00]]
+| [[UTC−09:00|−09:00]]
+| 
+|-
+| [[ISO_3166-1:SB|SB]]
+| −0932+16012
+| [[Pacific/Guadalcanal]]
+| 
+| Canonical
+| [[UTC+11:00|+11:00]]
+| [[UTC+11:00|+11:00]]
+| 
+|-
+| [[ISO_3166-1:GU|GU]]
+| +1328+14445
+| [[Pacific/Guam]]
+| 
+| Canonical
+| [[UTC+10:00|+10:00]]
+| [[UTC+10:00|+10:00]]
+| 
+|-
+| [[ISO_3166-1:US|US]]
+| +211825−1575130
+| [[Pacific/Honolulu]]
+| Hawaii
+| Canonical
+| [[UTC−10:00|−10:00]]
+| [[UTC−10:00|−10:00]]
+| 
+|-
+| 
+| 
+| [[Pacific/Honolulu|Pacific/Johnston]]
+| 
+| Deprecated
+| [[UTC−10:00|−10:00]]
+| [[UTC−10:00|−10:00]]
+| Link to [[Pacific/Honolulu]]
+|-
+| [[ISO_3166-1:KI|KI]]
+| +0152−15720
+| [[Pacific/Kiritimati]]
+| Line Islands
+| Canonical
+| [[UTC+14:00|+14:00]]
+| [[UTC+14:00|+14:00]]
+| 
+|-
+| [[ISO_3166-1:FM|FM]]
+| +0519+16259
+| [[Pacific/Kosrae]]
+| Kosrae
+| Canonical
+| [[UTC+11:00|+11:00]]
+| [[UTC+11:00|+11:00]]
+| 
+|-
+| [[ISO_3166-1:MH|MH]]
+| +0905+16720
+| [[Pacific/Kwajalein]]
+| Kwajalein
+| Canonical
+| [[UTC+12:00|+12:00]]
+| [[UTC+12:00|+12:00]]
+| 
+|-
+| [[ISO_3166-1:MH|MH]]
+| +0709+17112
+| [[Pacific/Majuro]]
+| Marshall Islands (most areas)
+| Canonical
+| [[UTC+12:00|+12:00]]
+| [[UTC+12:00|+12:00]]
+| 
+|-
+| [[ISO_3166-1:PF|PF]]
+| −0900−13930
+| [[Pacific/Marquesas]]
+| Marquesas Islands
+| Canonical
+| [[UTC−09:30|−09:30]]
+| [[UTC−09:30|−09:30]]
+| 
+|-
+| [[ISO_3166-1:UM|UM]]
+| +2813−17722
+| [[Pacific/Pago_Pago|Pacific/Midway]]
+| Midway Islands
+| Alias
+| [[UTC−11:00|−11:00]]
+| [[UTC−11:00|−11:00]]
+| Link to [[Pacific/Pago_Pago]]
+|-
+| [[ISO_3166-1:NR|NR]]
+| −0031+16655
+| [[Pacific/Nauru]]
+| 
+| Canonical
+| [[UTC+12:00|+12:00]]
+| [[UTC+12:00|+12:00]]
+| 
+|-
+| [[ISO_3166-1:NU|NU]]
+| −1901−16955
+| [[Pacific/Niue]]
+| 
+| Canonical
+| [[UTC−11:00|−11:00]]
+| [[UTC−11:00|−11:00]]
+| 
+|-
+| [[ISO_3166-1:NF|NF]]
+| −2903+16758
+| [[Pacific/Norfolk]]
+| 
+| Canonical
+| [[UTC+11:00|+11:00]]
+| [[UTC+12:00|+12:00]]
+| 
+|-
+| [[ISO_3166-1:NC|NC]]
+| −2216+16627
+| [[Pacific/Noumea]]
+| 
+| Canonical
+| [[UTC+11:00|+11:00]]
+| [[UTC+11:00|+11:00]]
+| 
+|-
+| [[ISO_3166-1:AS|AS]]
+| −1416−17042
+| [[Pacific/Pago_Pago]]
+| Samoa, Midway
+| Canonical
+| [[UTC−11:00|−11:00]]
+| [[UTC−11:00|−11:00]]
+| 
+|-
+| [[ISO_3166-1:PW|PW]]
+| +0720+13429
+| [[Pacific/Palau]]
+| 
+| Canonical
+| [[UTC+09:00|+09:00]]
+| [[UTC+09:00|+09:00]]
+| 
+|-
+| [[ISO_3166-1:PN|PN]]
+| −2504−13005
+| [[Pacific/Pitcairn]]
+| 
+| Canonical
+| [[UTC−08:00|−08:00]]
+| [[UTC−08:00|−08:00]]
+| 
+|-
+| [[ISO_3166-1:FM|FM]]
+| +0658+15813
+| [[Pacific/Pohnpei]]
+| Pohnpei/Ponape
+| Canonical
+| [[UTC+11:00|+11:00]]
+| [[UTC+11:00|+11:00]]
+| 
+|-
+| 
+| 
+| [[Pacific/Pohnpei|Pacific/Ponape]]
+| 
+| Deprecated
+| [[UTC+11:00|+11:00]]
+| [[UTC+11:00|+11:00]]
+| Link to [[Pacific/Pohnpei]]
+|-
+| [[ISO_3166-1:PG|PG]]
+| −0930+14710
+| [[Pacific/Port_Moresby]]
+| Papua New Guinea (most areas)
+| Canonical
+| [[UTC+10:00|+10:00]]
+| [[UTC+10:00|+10:00]]
+| 
+|-
+| [[ISO_3166-1:CK|CK]]
+| −2114−15946
+| [[Pacific/Rarotonga]]
+| 
+| Canonical
+| [[UTC−10:00|−10:00]]
+| [[UTC−10:00|−10:00]]
+| 
+|-
+| [[ISO_3166-1:MP|MP]]
+| +1512+14545
+| [[Pacific/Guam|Pacific/Saipan]]
+| 
+| Alias
+| [[UTC+10:00|+10:00]]
+| [[UTC+10:00|+10:00]]
+| Link to [[Pacific/Guam]]
+|-
+| 
+| 
+| [[Pacific/Pago_Pago|Pacific/Samoa]]
+| 
+| Deprecated
+| [[UTC−11:00|−11:00]]
+| [[UTC−11:00|−11:00]]
+| Link to [[Pacific/Pago_Pago]]
+|-
+| [[ISO_3166-1:PF|PF]]
+| −1732−14934
+| [[Pacific/Tahiti]]
+| Society Islands
+| Canonical
+| [[UTC−10:00|−10:00]]
+| [[UTC−10:00|−10:00]]
+| 
+|-
+| [[ISO_3166-1:KI|KI]]
+| +0125+17300
+| [[Pacific/Tarawa]]
+| Gilbert Islands
+| Canonical
+| [[UTC+12:00|+12:00]]
+| [[UTC+12:00|+12:00]]
+| 
+|-
+| [[ISO_3166-1:TO|TO]]
+| −2110−17510
+| [[Pacific/Tongatapu]]
+| 
+| Canonical
+| [[UTC+13:00|+13:00]]
+| [[UTC+13:00|+13:00]]
+| 
+|-
+| 
+| 
+| [[Pacific/Chuuk|Pacific/Truk]]
+| 
+| Deprecated
+| [[UTC+10:00|+10:00]]
+| [[UTC+10:00|+10:00]]
+| Link to [[Pacific/Chuuk]]
+|-
+| [[ISO_3166-1:UM|UM]]
+| +1917+16637
+| [[Pacific/Wake]]
+| Wake Island
+| Canonical
+| [[UTC+12:00|+12:00]]
+| [[UTC+12:00|+12:00]]
+| 
+|-
+| [[ISO_3166-1:WF|WF]]
+| −1318−17610
+| [[Pacific/Wallis]]
+| 
+| Canonical
+| [[UTC+12:00|+12:00]]
+| [[UTC+12:00|+12:00]]
+| 
+|-
+| 
+| 
+| [[Pacific/Chuuk|Pacific/Yap]]
+| 
+| Deprecated
+| [[UTC+10:00|+10:00]]
+| [[UTC+10:00|+10:00]]
+| Link to [[Pacific/Chuuk]]
+|-
+| 
+| 
+| [[Europe/Warsaw|Poland]]
+| 
+| Deprecated
+| [[UTC+01:00|+01:00]]
+| [[UTC+02:00|+02:00]]
+| Link to [[Europe/Warsaw]]
+|-
+| 
+| 
+| [[Europe/Lisbon|Portugal]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC+01:00|+01:00]]
+| Link to [[Europe/Lisbon]]
+|-
+| 
+| 
+| [[Asia/Shanghai|PRC]]
+| 
+| Deprecated
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| Link to [[Asia/Shanghai]]
+|-
+| 
+| 
+| [[PST8PDT]]
+| 
+| Deprecated
+| [[UTC−08:00|−08:00]]
+| [[UTC−07:00|−07:00]]
+| Choose a zone that ''observes'' PST with United States daylight saving time rules, such as [[America/Los_Angeles]].
+|-
+| 
+| 
+| [[Asia/Taipei|ROC]]
+| 
+| Deprecated
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| Link to [[Asia/Taipei]]
+|-
+| 
+| 
+| [[Time in South Korea|ROK]]
+| 
+| Deprecated
+| [[UTC+09:00|+09:00]]
+| [[UTC+09:00|+09:00]]
+| Link to [[Asia/Seoul]]
+|-
+| 
+| 
+| [[Asia/Singapore|Singapore]]
+| 
+| Deprecated
+| [[UTC+08:00|+08:00]]
+| [[UTC+08:00|+08:00]]
+| Link to [[Asia/Singapore]]
+|-
+| 
+| 
+| [[Time_in_Turkey|Turkey]]
+| 
+| Deprecated
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[Europe/Istanbul]]
+|-
+| 
+| 
+| [[Coordinated Universal Time|UCT]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/UTC]]
+|-
+| 
+| 
+| [[Coordinated Universal Time|Universal]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/UTC]]
+|-
+| 
+| 
+| [[America/Anchorage|US/Alaska]]
+| 
+| Deprecated
+| [[UTC−09:00|−09:00]]
+| [[UTC−08:00|−08:00]]
+| Link to [[America/Anchorage]]
+|-
+| 
+| 
+| [[America/Adak|US/Aleutian]]
+| 
+| Deprecated
+| [[UTC−10:00|−10:00]]
+| [[UTC−09:00|−09:00]]
+| Link to [[America/Adak]]
+|-
+| 
+| 
+| [[Time in Arizona|US/Arizona]]
+| 
+| Deprecated
+| [[UTC−07:00|−07:00]]
+| [[UTC−07:00|−07:00]]
+| Link to [[America/Phoenix]]
+|-
+| 
+| 
+| [[Central_Time_Zone|US/Central]]
+| 
+| Deprecated
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| Link to [[America/Chicago]]
+|-
+| 
+| 
+| [[Time in Indiana|US/East-Indiana]]
+| 
+| Deprecated
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Indiana/Indianapolis]]
+|-
+| 
+| 
+| [[Time in New_York|US/Eastern]]
+| 
+| Deprecated
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/New_York]]
+|-
+| 
+| 
+| [[Time in Hawaii|US/Hawaii]]
+| 
+| Deprecated
+| [[UTC−10:00|−10:00]]
+| [[UTC−10:00|−10:00]]
+| Link to [[Pacific/Honolulu]]
+|-
+| 
+| 
+| [[Time_in_Indiana|US/Indiana-Starke]]
+| 
+| Deprecated
+| [[UTC−06:00|−06:00]]
+| [[UTC−05:00|−05:00]]
+| Link to [[America/Indiana/Knox]]
+|-
+| 
+| 
+| [[Time in Michigan|US/Michigan]]
+| 
+| Deprecated
+| [[UTC−05:00|−05:00]]
+| [[UTC−04:00|−04:00]]
+| Link to [[America/Detroit]]
+|-
+| 
+| 
+| [[Mountain Time Zone|US/Mountain]]
+| 
+| Deprecated
+| [[UTC−07:00|−07:00]]
+| [[UTC−06:00|−06:00]]
+| Link to [[America/Denver]]
+|-
+| 
+| 
+| [[Pacific_Time_Zone|US/Pacific]]
+| 
+| Deprecated
+| [[UTC−08:00|−08:00]]
+| [[UTC−07:00|−07:00]]
+| Link to [[America/Los_Angeles]]
+|-
+| 
+| 
+| [[Time in Samoa|US/Samoa]]
+| 
+| Deprecated
+| [[UTC−11:00|−11:00]]
+| [[UTC−11:00|−11:00]]
+| Link to [[Pacific/Pago_Pago]]
+|-
+| 
+| 
+| [[Coordinated Universal Time|UTC]]
+| 
+| Alias
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/UTC]]
+|-
+| 
+| 
+| [[Moscow Time|W-SU]]
+| 
+| Deprecated
+| [[UTC+03:00|+03:00]]
+| [[UTC+03:00|+03:00]]
+| Link to [[Europe/Moscow]]
+|-
+| 
+| 
+| [[Western European Time|WET]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC+01:00|+01:00]]
+| Choose a zone that ''observes'' WET, such as [[Europe/Lisbon]].
+|-
+| 
+| 
+| [[Coordinated Universal Time|Zulu]]
+| 
+| Deprecated
+| [[UTC±00:00|+00:00]]
+| [[UTC±00:00|+00:00]]
+| Link to [[Coordinated Universal Time|Etc/UTC]]
+|}
+
+
+{| class="wikitable sortable"
+|+Number of zones / links by region
+!Region
+!Zones
+!Links
+!'''Total'''
+|-
+| Africa||20||34||54
+|-
+| America||130||37||167
+|-
+| Antarctica||10||2||12
+|-
+| Asia||77||22||99
+|-
+| Atlantic||9||3||12
+|-
+| Australia||12||11||23
+|-
+| Europe||46||17||63
+|-
+| Indian||8||3||11
+|-
+| Pacific||36||7||43
+|-
+| Etc||28||7||35
+|-
+| Other||12||63||75
+|-
+| '''Total'''||'''388'''||'''206'''||'''594'''
+|}
+
+== Notes ==
+{{reflist|group=note}}
+
+== References ==
+{{Reflist}}
+
+==Further reading==
+* For a complete and accurate history of each time zone, refer to the data and commentary in the TZ database itself.
+
+{{UTC time offsets}}
+
+[[Category:Tz database| ]]
+[[Category:Time zones|*]]

@@ -1,0 +1,79 @@
+''This article will use the [[Einstein summation convention]].''
+
+The theory of [[general relativity]] required the adaptation of existing theories of physical, electromagnetic, and quantum effects to account for non-Euclidean geometries. These '''physical theories modified by general relativity''' are described below.
+
+==Classical mechanics and special relativity==
+Classical mechanics and special relativity are lumped together here because special relativity is in many ways intermediate between general relativity and classical mechanics, and shares many attributes with classical mechanics.
+
+In the following discussion, the [[mathematics of general relativity]] is used heavily. Also, under the [[principle of minimal coupling]], the physical equations of special relativity can be turned into their general relativity counterparts by replacing the Minkowski metric (''η<sub>ab</sub>'') with the relevant metric of spacetime (''g<sub>ab</sub>'') and by replacing any partial derivatives with covariant derivatives. In the discussions that follow, the change of metrics is implied.
+
+===Inertia===
+Inertial motion is motion free of all [[force]]s. In Newtonian mechanics, the force ''F'' acting on a particle with mass ''m'' is given by [[Newton's second law]], <math>F=m \ddot{r}</math>, where the acceleration is given by the second derivative of position ''r'' with respect to time ''t'' . Zero force means that inertial motion is just motion with zero acceleration:
+
+:<math>\frac{\mathrm{d}^2 r}{\mathrm{d}t^2}=0</math>
+
+The idea is the same in special relativity. Using [[Cartesian coordinate system|Cartesian coordinates]], inertial motion is described mathematically as:
+
+:<math>\frac{\mathrm{d}^2 x^a}{\mathrm{d}\tau^2} = 0</math>
+
+where ''<math>x^a</math>'' is the position coordinate and ''τ'' is [[proper time]]. (In Newtonian mechanics, ''τ ≡ t'', the coordinate time).
+
+In both Newtonian mechanics and special relativity, space and then spacetime are assumed to be flat, and we can construct a global Cartesian coordinate system. In general relativity, these restrictions on the shape of spacetime and on the coordinate system to be used are lost. Therefore, a different definition of inertial motion is required. In relativity, inertial motion occurs along timelike or null [[geodesic]]s as parameterized by proper time. This is expressed mathematically by the [[geodesic equation]]:
+:<math>\frac{\mathrm{d}^2 x^a}{\mathrm{d}\tau^2} + \Gamma^a_{bc} \, \frac{\mathrm{d} x^b}{\mathrm{d}\tau} \,\frac{\mathrm{d} x^c}{\mathrm{d}\tau} = 0</math>
+where <math>\Gamma^a_{bc}</math> is a [[Christoffel symbol]]. Since general relativity describes four-dimensional spacetime, this represents four equations, with each one describing the second derivative of a coordinate with respect to proper time. In the case of flat space in Cartesian coordinates, we have <math>\Gamma^a_{bc}=0</math>, so this equation reduces to the special relativity form.
+
+===Gravitation===
+For gravitation, the relationship between Newton's theory of [[gravity]] and general relativity is governed by the [[correspondence principle]]: General relativity must produce the same results as gravity does for the cases where Newtonian physics has been shown to be accurate.
+
+Around a spherically symmetric object, the Newtonian theory of gravity predicts that objects will be physically accelerated towards the center on the object by the rule
+
+:<math>\mathbf{\ddot r} = GM \mathbf{\hat{r}}/r^2</math>
+
+where ''G'' is Newton's [[Gravitational constant]], ''M'' is the mass of the gravitating object, ''r'' is the distance to the gravitation object, and <math>\mathbf{\hat{r}}</math> is a unit vector identifying the direction to the massive object.
+
+In the [[weak-field approximation]] of general relativity, an identical coordinate acceleration must exist. For the Schwarzschild solution (which is the simplest possible spacetime surrounding a massive object), the same acceleration as that which (in Newtonian physics) is created by gravity is obtained when a constant of integration is set equal to ''2MG/c<sup>2</sup>''). For more information, see [[Deriving the Schwarzschild solution]].
+
+===Transition from Newtonian mechanics to general relativity===
+{{main|Newtonian foundation of general relativity}}
+
+Some of the basic concepts of general relativity can be outlined outside the [[Special relativity|relativistic]] domain. In particular, the idea that mass/energy generates [[curvature]] in [[Spacetime|space]] and that curvature affects the motion of masses can be illustrated in a [[Newtonian mechanics|Newtonian]] setting.
+
+General relativity generalizes the [[geodesic equation]] and the [[Einstein field equation|field equation]] to the relativistic realm in which trajectories in space are replaced with [[Fermi–Walker transport]] along [[world line]]s in [[spacetime]]. The equations are also generalized to more complicated curvatures.
+
+===Transition from special relativity to general relativity===
+{{main|Theoretical motivation for general relativity}}
+
+The basic structure of general relativity, including the [[geodesic equation]] and [[Einstein field equation]], can be obtained from [[special relativity]] by examining the [[kinetics (physics)|kinetics]] and [[dynamics (mechanics)|dynamics]] of a particle in a [[circular orbit]] about the earth. In terms of [[Symmetry in physics|symmetry]], the transition involves replacing [[global Lorentz covariance]] with [[local Lorentz covariance]].
+
+===Conservation of energy–momentum===
+In classical mechanics, conservation laws for energy and momentum are handled separately in the two principles of [[conservation of energy]] and [[Momentum#Conservation|conservation of momentum]]. With the advent of [[special relativity]], these two conservation principles were united through the concept of [[mass-energy equivalence]].
+
+Mathematically, the general relativity statement of energy–momentum conservation is:
+
+:<math>{T_a}^b{}_{; b} = {T_a}^b{}_{,b} + {\Gamma^b}_{cb} \, {T_a}^c - {\Gamma^c}_{ab} \, {T_c}^b = 0</math>
+
+where <math>{T_a}^b</math> is the [[stress–energy tensor]], the comma indicates a partial derivative and the semicolon indicates a [[covariant derivative]]. The terms involving the Christoffel symbols are absent in the special relativity statement of energy–momentum conservation.
+
+Unlike classical mechanics and special relativity, it is not usually possible to unambiguously define the total energy and momentum in general relativity, so the tensorial conservation laws are ''local'' statements only (see [[ADM energy]], though). This often causes confusion in time-dependent spacetimes which apparently do not conserve energy, although the local law is always satisfied. Exact formulation of energy–momentum conservation on an arbitrary geometry requires use of a non-unique [[stress-energy–momentum pseudotensor]].
+
+==Electromagnetism==
+{{main|Maxwell's equations in curved spacetime}}
+
+General relativity modifies the description of [[Electromagnetism|electromagnetic phenomena]] by employing a new version of [[Maxwell's equations]]. These differ from the [[Formulation of Maxwell's equations in special relativity|special relativity form]] in that the Christoffel symbols make their presence in the equations via the covariant derivative.
+
+The source equations of [[Classical electromagnetism|electrodynamics]] in curved spacetime are (in [[cgs units]])
+
+:<math> F^{\,ab}{}_{;b} = {4\pi \over c }\,J^{\,a}</math>
+
+where ''F<sup>ab</sup>'' is the [[electromagnetic field tensor]] representing the electromagnetic field and ''J<sup>a</sup>'' is a [[four-current]] representing the sources of the electromagnetic field.
+
+The source-free equations are the same as their special relativity counterparts.
+
+The effect of an [[electromagnetic field]] on a charged object is then modified to
+:<math> P^{\, a} {}_{\, ;\tau} = (q/m)\,F^{\,ab}P_b</math>,
+
+where ''q'' is the charge on the object, ''m'' is the rest mass of the object and ''P<sup> a</sup>'' is the [[four-momentum]] of the charged object. Maxwell's equations in flat spacetime are recovered in rectangular coordinates by reverting the covariant derivatives to partial derivatives. For Maxwell's equations in flat spacetime in curvilinear coordinates see [http://www.uic.edu/classes/eecs/eecs520/textbook/node2.html]
+or [http://scienceworld.wolfram.com/physics/MaxwellEquations.html]
+
+[[Category:Physics-related lists]]
+[[Category:General relativity]]

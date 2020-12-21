@@ -13,8 +13,9 @@ from pprint import pprint
 import math
 
 # os.rmdir("data")
-os.mkdir("data")
-CATEGORIES = ["Physics", "Culture", "Geography"]
+folder_name = "10-categories-data"
+os.mkdir(folder_name)
+CATEGORIES = ["Physics", "Culture", "Geography", "Health", "History", "Human activities", "Formal sciences", "People", "Philosophy", "Religion"]
 # CATEGORIES = ["Physics"]
 
 S = requests.Session()
@@ -36,14 +37,14 @@ def get_category_data(category, num, top_level_category):
     R = S.get(url=URL, params=params)
     data = R.json()
 
-    if not os.path.isdir("data/" + top_level_category):
-        os.mkdir("data/" + category)
+    if not os.path.isdir(folder_name + "/" + top_level_category):
+        os.mkdir(folder_name + "/" + category)
 
     pages = data['query']['categorymembers']
     pprint(pages)
 
     for page in pages:
-        if not os.path.isfile("data/" + top_level_category + "/" + str(page["pageid"])):
+        if not os.path.isfile(folder_name + "/" + top_level_category + "/" + str(page["pageid"])):
 
             page_params = {
                 "action": "parse",
@@ -55,7 +56,7 @@ def get_category_data(category, num, top_level_category):
             page_request = S.get(url=URL, params=page_params)
             page_data = page_request.json()
 
-            file = open("data/" + top_level_category + "/"+ str(page["pageid"]) + ".txt", "a")
+            file = open(folder_name + "/" + top_level_category + "/"+ str(page["pageid"]) + ".txt", "a")
             for line in page_data['parse']['wikitext']:
                 file.write(page_data['parse']['wikitext'][line])
             file.close()

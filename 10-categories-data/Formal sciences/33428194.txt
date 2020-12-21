@@ -1,0 +1,12 @@
+A '''partially observable system''' is one in which the entire state of the system is not fully visible to an external [[sensor]].  In a partially observable system the observer may utilise a memory system in order to add information to the observer's understanding of the system.<ref>[[Peter Norvig]], [[Sebastian Thrun]]. [[Udacity]]: [https://www.udacity.com/wiki/cs271/unit1_notes Introduction to Artificial Intelligence]</ref>
+
+An example of a partially observable system would be a [[card game]] in which some of the cards are discarded into a pile face down.  In this case the observer is only able to view their own cards and potentially those of the dealer.  They are not able to view the face-down (used) cards, nor the cards which will be dealt at some stage in the future.  A memory system can be used to remember the previously dealt cards that are now on the used pile. This adds to the total sum of knowledge that the observer can use to make decisions.
+
+In contrast, a fully observable system would be that of [[chess]].  In chess (apart from the 'who is moving next' state, and minor subtleties such as whether a side has castled, which may not be clear) the full state of the system is observable at any point in time.
+
+Partially observable is a term used in a variety of mathematical settings, including that of Artificial Intelligence and [[Partially observable Markov decision process]]es.
+
+==References==
+{{reflist}}
+
+[[Category:Systems science]]

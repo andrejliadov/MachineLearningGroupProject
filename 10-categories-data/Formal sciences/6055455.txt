@@ -1,0 +1,30 @@
+{{inline|date=July 2013}}
+'''Bandwidth extension''' of [[Signal (electrical engineering)|signal]] is defined as the deliberate process of expanding the frequency range ([[Bandwidth (signal processing)|bandwidth]]) of a signal in which it contains an appreciable and useful content, and/or the frequency range in which its effects are such. Its significant advancement in recent years has led to the technology being adopted commercially in several areas including [[Psychoacoustics|psychacoustic]] bass enhancement of small [[loudspeaker]]s and the high frequency enhancement of coded speech and audio. 
+
+Bandwidth extension has been used in both speech and audio compression applications. The algorithms used in [[G.729.1]] and [[Spectral Band Replication]] (SBR) are two of many examples of bandwidth extension algorithms currently in use. In these methods, the low band of the spectrum is encoded using an existing codec, whereas the high band is coarsely parameterized using fewer parameters. Many of these bandwidth extension algorithms make use of the correlation between the low band and the high band in order to predict the wider band signal from extracted lower-band features. Others encode the high band using very few bits. This is often sufficient since the ear is less sensitive to distortions in the high band compared to the low band. 
+
+== Bass enhancement of small loudspeakers ==
+Most often small loudspeakers are physically incapable of reproducing low frequency material. Using a psycho-acoustical phenomenon like the [[missing fundamental]], perception of low frequencies can be greatly increased. By generating harmonics of lower frequencies and removing the lower frequencies themselves the suggestion is created that these frequencies are still remaining in the signal. This process is usually applied through external equipment or embedded in the speaker system using a digital signal processor. 
+
+High frequency response can also be enhanced through generation of harmonics. Instead of mapping frequencies inside the reproducible region of the speaker, the speaker itself is used to generate frequencies outside the normal reproducible region. By boosting high frequencies and overdriving the speaker or amplifier slightly, higher harmonics can be generated.
+
+== Bandwidth extension of speech in telephone systems ==
+Telephone speech signals are usually very degraded in quality. Part of this degradation is due to the limited bandwidth used in the telephone systems. In most systems frequencies lower than 250&nbsp;Hz are cut and bandwidth only extends to frequencies of 4 or 8&nbsp;kHz. Using filtering and waveshaping low and high frequency response can be extended.
+
+By low pass filtering the lowest octave and half-wave rectifying a waveform is created with a fundamental half of the original frequency. Due to the discontinuity in the waveform low pass filtering is needed to filter all harmonics. Using such a [[subharmonic synthesizer]] the essential frequency band between 125 - 250&nbsp;Hz is recreated, adding weight to the signal.
+
+To extend the high frequency bandwidth, we can isolate the top octave using high pass filtering and then generating harmonics of this. The generation of harmonics can be done through a simple full wave rectification, which is computationally cheap and not amplitude-dependent. As an alternative [[single-sideband modulation]] can be used, giving precise control over the number and amplitude of the harmonics. In theory envelope estimation can be used to extract the original high frequency envelope and regenerating high frequencies using a noise source. The sparse information available in the small bandwidth will probably be too limited to extract a proper envelope.
+
+== Bandwidth extension of audio ==
+[[Spectral band replication]] (SBR) is a new technique that has gained popularity as an “add-on” to popular [[perceptual audio coding|perceptual audio codecs]] such as MP-3 and the [[Advanced Audio Coding]] (AAC). New audio coders consisting of a marriage between SBR and the conventional audio coders have been formed, namely the [[MP3Pro]] and [[AAC+]]. In these algorithms, the lower spectrum is encoded using either MP-3 or AAC, whereas the high band is encoded using SBR. The key to the SBR algorithm is the information used to describe the high frequency portion of the signal. The primary design goal of this algorithm is to reconstruct the high band [[spectrum]] without introducing any [[aliasing]] artifacts and to provide good spectral and time resolution. A 64-band complex-valued polyphase [[filterbank]] is used at the analysis portion. At the encoder, the filterbank is used to obtain energy samples of the original input signal's high band. These energy samples are then used as reference values for the envelope adjustment scheme used at the decoder.
+
+==References==
+* https://web.archive.org/web/20190319032514/http://www.dse.nl/~rmaarts/
+* R.M. Aarts, Erik Larsen and O. Ouweltjes (2003), "A unified approach to low- and high-frequency bandwidth extension", Convention paper 5921 presented at the [[Audio Engineering Society]] 115th Convention 2003, Oct. 10--13, New York, USA
+* V. Berisha and A. Spanias "Wideband Speech Recovery Using Psychoacoustic Criteria" ''EURASIP Journal on Audio, Speech, and Music Processing'', 2007 
+* V. Berisha and A. Spanias "A Scalable Bandwidth Extension Algorithm", Proceedings of IEEE [[International Conference on Acoustics, Speech and Signal Processing]], 2007. Vol. 4, Pages: 601-604, April 2007
+* A. McCree, T. Unno, A. Anandakumar, A. Bernard, and E. Paksoy, "An embedded adaptive multi-rate wideband speech coder", in ''Proc. IEEE Int. Conf. Acoust., Speech Signal Processing'', vol. 2, May 2001, pp. 761-764.
+* P. Jax and P. Vary, "Enhancement of band-limited speech signals", in ''Proc. of Aachen Symposium on Signal Theory'', September 2001, pp. 331-336.
+* M. Nilsson and W. Kleijn, "Avoiding over-estimation in bandwidth extension of telephony speech", in ''Proc. IEEE Int. Conf. Acoust., Speech Signal Processing'', vol. 2, May 2001, pp. 869-872.
+
+[[Category:Information theory]]

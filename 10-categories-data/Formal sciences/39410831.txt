@@ -1,0 +1,23 @@
+The '''LSE approach to econometrics''', named for the [[London School of Economics]], involves viewing econometric models as ''reductions'' from some unknown data generation process (DGP). A complex DGP is typically modelled as the starting point and this complexity allows information in the data from the real world but absent in the theory to be drawn upon.  The complexity is then reduced by the econometrician by a series of restrictions which are tested.
+
+One particular functional form, the [[error-correction model]], is often arrived at when modelling time series. [[Denis Sargan]] and [[David Forbes Hendry]] (with his general-to-specific modeling) were key figures in the development of the approach and the one way the approach has been extended is through the work on integrated and cointegrated systems by [[Robert F. Engle]], [[Clive Granger]], and [[Søren Johansen]]. Another commonly used functional form is [[distributed lag]] or [[Autoregressive model|autoregressive distributed lag]].
+
+David F. Hendry is considered to be the principal architect of the LSE approach. The methodology is often referred to as general-to-specific modelling, "Gets modeling" or "Hendry's methodology".
+
+The software package [[OxMetrics]] implements this process via the [[PcGive]] module ''Autometrics''
+
+In the 1970s, when the LSE approach was in its infancy, [[Edward E. Leamer]] was an early critic of model discovery methodologies.{{cn|date=September 2014}}
+
+The approach evolved to include: multiple reduction path searches, indicator saturation, COMFAC testing, and cointegrated vector autoregressive structures.
+
+Economists often associated{{weasel-inline|date=September 2014}} with "Hendry's methodology" include Clive Granger, Robert F. Engle, Søren Johansen, [[Grayham Mizon]], [[Jennifer Castle (economist)|Jennifer Castle]], [[Hans M. Krolzig]], [[Neil Ericsson]], and [[Jurgen Doornik]].
+
+==References==
+* {{cite book |last=Favero |first=Carlo A. |title=Applied Macroeconometrics |url={{Google books |plainurl=yes |id=PBToVOKpyL4C |page=132 }} |location=New York |publisher=Oxford University Press |year=2001 |isbn=978-0-19-829685-0 |pages=132–161 }}
+* {{cite journal |last=Davis |first=G. C. |year=2005 |title=Clarifying the 'puzzle' between the Textbook and LSE approaches to econometrics: A comment on Cook's Kuhnian perspective on econometric modelling |journal=[[Journal of Economic Methodology]] |volume=12 |issue=1 |pages=93–115 |doi=10.1080/1350178042000330913 }}
+* {{cite journal |last=Gilbert |first=Christopher L. |year=1989 |title=LSE and the British approach to time series econometrics |journal=Oxford Economic Papers |volume=41 |issue=1 |pages=108–128 |jstor=2663185 |doi=10.1093/oxfordjournals.oep.a041887 }}
+* {{cite journal |last=Juselius |first=Katarina |year=1999 |title=Models and Relations in Economics and Econometrics |journal=[[Journal of Economic Methodology]] |volume=6 |issue=2 |pages=259–290 |doi=10.1080/13501789900000017 |url=https://curis.ku.dk/ws/files/32246196/9913.pdf }}
+
+[[Category:Econometrics]]
+
+{{econometrics-stub}}

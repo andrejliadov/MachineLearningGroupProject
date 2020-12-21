@@ -1,0 +1,128 @@
+{{Use Indian English|date=June 2017}}
+{{Use dmy dates|date=December 2020}}
+{{Infobox
+|name    = GPS-aided GEO augmented navigation
+|header1   = GEO augmented navigation system
+|label2  = 
+|data2   = 
+|label3=Type
+|data3=Regional [[satellite-based augmentation system]]
+|label4  = Developers
+|data4=[[Indian Space Research Organisation]], <br>[[Raytheon]], <br>[[Airports Authority of India]]
+|label5  = Accuracy
+|data5   = 1.5-metre in the horizontal,<br>2.5-metre in the vertical
+|label6=Launched 
+|data6=2001
+|label7=Orbital radius
+|data7=26,600 km (approx)
+|label8=Max operational life
+|data8=15 years
+|label9=Fully operational by
+|data9=2013–14<ref name="toi">{{Citation|title=Soon, safety in the sky as GPS-aided Gagan set to take off|work=The Times of India|url=http://articles.timesofindia.indiatimes.com/2012-01-23/india/30654769_1_satellite-navigation-system-gsat-10-gagan}}</ref>
+|label10=Project cost
+|data10={{INRConvert|7.74|b}}
+|website=http://www.isro.gov.in/applications/satellite-navigation-programme
+}}The '''GPS-aided GEO augmented navigation''' ('''GAGAN''') is an implementation of a regional [[satellite-based augmentation system]] (SBAS) by the [[Government of India]].<ref>{{Cite web|url=https://timesofindia.indiatimes.com/blogs/mindfly/ensuring-safety-and-reliabity-through-indigenous-satellite-navigation-system-gagan/|title=Ensuring safety and reliabity through indigenous satellite navigation system GAGAN|date=2019-01-12|website=Times of India Blog|language=en-US|access-date=2019-05-07}}</ref> It is a system to improve the accuracy of a [[Global navigation satellite system|GNSS receiver]] by providing reference signals.<ref name="ASM">{{cite web |url=http://www.asmmag.com/news/india-approves-gagan-system |title=India Approves Gagan System |date=15 September 2008 |work=Magazine article |publisher=Asian Surveying and Mapping |accessdate=2009-05-05 |url-status=dead |archiveurl=https://web.archive.org/web/20090519215721/http://www.asmmag.com/news/india-approves-gagan-system |archivedate=19 May 2009}}</ref> The [[Airports Authority of India|AAI]]'s efforts towards implementation of operational SBAS can be viewed as the first step towards introduction of modern [[Communication, navigation and surveillance]]/[[Air Traffic Management]] system over Indian airspace.<ref name="mycoordinates.org">[http://www.mycoordinates.org/gagan-update-arjunsingh-mar-06.php GAGAN Update Dr. Arjin Singh, Additional GM, Directorate of Global Navigation System, Airport Authority of India] {{webarchive|url=https://web.archive.org/web/20080828035632/http://www.mycoordinates.org/gagan-update-arjunsingh-mar-06.php |date=28 August 2008 }}</ref>
+
+The project has established 15 Indian reference stations, 3 Indian navigation land uplink stations, 3 Indian mission control centers, and installation of all associated software and communication links.<ref>http://www.thehindu.com/news/national/kerala/gagan-system-ready-for-operations/article5565700.ece</ref> It will be able to help pilots to navigate in the Indian airspace by an accuracy of 3 m. This will be helpful for landing aircraft in marginal weather and difficult approaches like [[Mangalore Airport (India)|Mangalore]] and [[Kushok Bakula Rimpochhe Airport|Leh]] airports.
+
+==Implementation==
+The {{INRConvert|7.74|b|0}} project was created in three phases through 2008 by the [[Airports Authority of India|Airport Authority of India]] with the help of the [[Indian Space Research Organisation]]'s (ISRO) technology and space support.<ref name=Isro>{{cite news|title=Satellite Navigation – GAGAN|url=http://www.isro.org/scripts/futureprogramme.aspx#Satellite|accessdate=13 June 2012|newspaper=ISRO website}}</ref> The goal is to provide navigation system for all phases of flight over the Indian airspace and in the adjoining area. It is applicable to safety-to-life operations, and meets the performance requirements of international civil aviation regulatory bodies.
+
+The space component became available after the launch of the GAGAN payload on the GSAT-8 communication satellite, which was successfully launched. This payload was also part of the GSAT-4 satellite that was lost when the geosynchronous satellite launch vehicle (GSLV) failed during launch in April 2010. A final system acceptance test was conducted during June 2012 followed by system certification during July 2013.<ref name=Isro/>
+
+== Technology ==
+
+To begin implementing a satellite-based augmentation system over the Indian airspace, [[Wide Area Augmentation System]] ([[Wide Area Augmentation System|WAAS]]) codes for L1 frequency and L5 frequency were obtained from the [[United States Air Force]] and [[United States|U.S]] [[United States Department of Defense|Department of Defense]] in November 2001 and March 2005.<ref name="mycoordinates.org" /> The system will use eight reference stations located in [[Delhi]], [[Guwahati]], [[Kolkata]], [[Ahmedabad]], [[Thiruvananthapuram]], [[Bangalore]], [[Jammu]] and [[Port Blair]], and a master control center at [[Bangalore]]. US defense contractor [[Raytheon]] has stated they will bid to build the system.<ref>[http://www.india-defence.com/reports-3966 Raytheon to bid for geosynchronous augmented navigation system (GAGAN) Project]</ref>
+
+== Technology demonstration ==
+
+A national plan for satellite navigation including implementation of technology demonstration system (TDS) over the Indian air space as a proof of concept had been prepared jointly by Airports Authority of India (AAI) and ISRO. TDS was successfully completed during 2007 by installing eight Indian Reference Stations (INRESs) at eight Indian airports and linked to the Master Control Center (MCC) located near Bangalore. Preliminary system acceptance testing has been successfully completed in December 2010.<ref name=Isro/> The [[ground segment]] for GAGAN, which has been put up by the Raytheon, has 15 reference stations scattered across the country. Two mission control centres, along with associated uplink stations, have been set up at [[Kundalahalli]] in Bangalore. One more control centre and uplink station are to come up at Delhi. As a part of the programme, a network of 18 total electron content (TEC) monitoring stations were installed at various locations in India to study and analyse the behaviour of the ionosphere over the Indian region.
+
+GAGAN's TDS signal in space provides a three-metre accuracy as against the requirement of 7.6 metres. Flight inspection of GAGAN signal is being carried out at [[Kozhikode]], [[Hyderabad, India|Hyderabad]], [[Nagpur]] and [[Bangalore]] airports and the results have been satisfactory so far.
+
+=== Study of Ionosphere ===
+One essential component of the GAGAN project is the study of the ionospheric behaviour over the Indian region. This has been specially taken up in view of the uncertain nature of the behaviour of the ionosphere in the region. The study will lead to the optimisation of the algorithms for the ionospheric corrections in the region.
+
+To study the ionospheric behaviour more effectively over entire Indian airspace, Indian universities and R&D labs, which are involved in the development of regional based ionotropic model for GAGAN, have suggested nine more TEC stations.<ref name="mycoordinates.org"/>
+
+== Technology Integration ==
+
+GAGAN is now in operational phase and is compatible with other SBAS systems such as the [[wide-area augmentation system]] (WAAS), the [[European Geostationary Navigation Overlay Service]] (EGNOS) and the [[Multi-functional Satellite Augmentation System]] (MSAS) and will provide seamless air navigation service across regional boundaries.<ref>{{Cite web|url=https://gssc.esa.int/navipedia/index.php/GAGAN|title=GAGAN - Navipedia|website=gssc.esa.int|access-date=2019-08-22}}</ref> While the ground segment consists of eight reference stations and a master control center, which will have sub systems such as data communication network, [[SBAS]] correction and verification system, operations and maintenance system, performance monitoring display and payload simulator, Indian land uplinking stations will have dish antenna assembly. The space segment will consist of one geo-navigation transponder.
+
+== Effective flight-management system ==
+
+A flight-management system based on GAGAN will then be poised to save operators time and money by managing climb, descent and engine performance profiles. The FMS will improve the efficiency and flexibility by increasing the use of operator-preferred trajectories.
+It will improve airport and airspace access in all weather conditions, and the ability to meet the environmental and obstacle clearance constraints. It will also enhance reliability and reduce delays by defining more precise terminal area procedures that feature parallel routes and environmentally optimised airspace corridors.
+
+* GAGAN will increase safety by using a three-dimensional approach operation with course guidance to the runway, which will reduce the risk of controlled flight into terrain i.e., an accident whereby an airworthy aircraft, under pilot control, inadvertently flies into terrain, an obstacle, or water.
+* GAGAN will also offer high position accuracies over a wide geographical area like the Indian airspace. These positions accuracies will be simultaneously available to 80 civilian and more than 200 non-civilian airports and airfields and will facilitate an increase in the number of airports to 500 as planned. These position accuracies can be further enhanced with ground-based, augmentation system.
+
+== Developments ==
+
+The first GAGAN transmitter was integrated into the [[GSAT-4]] [[geostationary orbit|geostationary]] satellite, and had a goal of being operational in 2008.<ref>[http://www.india-defence.com/reports/2239 ISRO, Raytheon complete tests for GAGAN satellite navigational system.] {{webarchive|url=https://web.archive.org/web/20061205075702/http://www.india-defence.com/reports/2239 |date=5 December 2006 }} India Defense Website. 20 June 2006.</ref><ref>K.N. Suryanarayana Rao and S. Pal. [http://www.aiaa.org/indiaus2004/Sat-navigation.pdf The Indian SBAS System – GAGAN] {{webarchive|url=https://web.archive.org/web/20061202180019/http://www.aiaa.org/indiaus2004/Sat-navigation.pdf |date=2 December 2006 }}. Abstract from the India-United States Conference on Space Science, Applications, and Commerce. June 2004.</ref> Following a series of delays, GSAT-4 was launched on 15 April 2010, however it failed to reach orbit after the third stage of the [[Geosynchronous Satellite Launch Vehicle]] Mk.II that was carrying it malfunctioned.<ref name="GSAT-4 failure">{{cite web|url=http://www.thehindu.com/news/article398070.ece|title=India's indigenous GSLV D3 rocket fails in mission|last=Subramanian|first=T. S.|date=15 April 2010|work=The Hindu|accessdate=15 April 2010}}</ref>
+
+In 2009, Raytheon had won an 82 million dollar contract. It was mainly dedicated to modernise Indian air navigation system.<ref name="GovCon"/> The vice president of Command & Control Systems, Raytheon Network Centric Systems, Andy Zogg commented:
+
+<blockquote>GAGAN will be the world's most advanced air navigation system and further reinforces India's leadership in the forefront of air navigation. GAGAN will greatly improve safety, reduce congestion and enhance communications to meet India's growing air traffic management needs<ref name="GovCon">{{cite news|title=Raytheon Wins $82M Air Navigation Contract From India|url=http://www.govconwire.com/2009/07/raytheon-wins-82m-air-navigation-contract-from-india/|accessdate=29 September 2012|newspaper=GovCon Wire}}</ref></blockquote>
+
+In 2012, the [[DRDO|Defence Research and Development Organisation]] received a "miniaturised version" of the device with all the features from [[global positioning systems]] (GPS) and [[global navigation satellite systems]] (GNSS). The module weighing just 17&nbsp;gm, can be used in multiple platforms ranging from aircraft (e.g. winged or rotor-craft) to small boats, ships. Reportedly, it can also assist "survey applications". It is a cost-efficient device and can be of "tremendous" civilian use. The navigation output is composed of GPS, GLONASS and GPS+GLONASS position, speed and time data. According to a statement released by the DRDO, G3oM is a state-of-the-art technology receiver, integrating Indian GAGAN as well as both global positioning system and GLONASS systems.<ref name=DC/>
+
+According to Deccan chronicle:
+<blockquote>[[G. Satheesh Reddy]], associate director of the city-based Research Centre Imarat, said the product is bringing about a quantum leap in the area of GNSS technology and has paved the way for highly miniaturised GNSS systems for the future.<ref name=DC>[http://www.deccanchronicle.com/channels/nation/south/17-gm-device-guide-missiles-968 17-gm device to guide missiles] {{webarchive|url=https://web.archive.org/web/20120905014057/http://www.deccanchronicle.com/channels/nation/south/17-gm-device-guide-missiles-968 |date=5 September 2012 }} Deccan Chronicle.</ref></blockquote>
+
+On 30 December 2012, the Directorate General of Civil Aviation (DGCA), India provisionally certified the GPS-aided geo-augmented navigation (GAGAN) system to RNP0.1 (Required Navigation Performance, 0.1 Nautical Mile) service level. The certification enabled aircraft fitted with SBAS equipment to use GAGAN signal in space for navigation purposes.<ref>{{cite web | url=http://www.isro.org/pressrelease/scripts/pressreleasein.aspx?Jan03_2014 | title=GAGAN System Certified for RNP0.1 Operations | date=3 January 2014 | accessdate=3 January 2014 | archive-url=https://web.archive.org/web/20140104094243/http://www.isro.org/pressrelease/scripts/pressreleasein.aspx?Jan03_2014 | archive-date=4 January 2014 | url-status=dead }}</ref>
+
+===Satellites===
+
+'''GSAT-8''' is an Indian geostationary satellites, which was successfully launched using [[Ariane 5]] on 21 May 2011 and is positioned in geosynchronous orbit at 55 degrees E longitude.
+
+'''GSAT-10''' is envisaged to augment the growing need of Ku and C-band transponders and carries 12 Ku Band, 12 C Band and 12 Extended C Band transponders and a GAGAN payload. The spacecraft employs the standard I-3K structure with power handling capability of around 6&nbsp;kW with a lift off mass of 3400&nbsp;kg. GSAT-10 was successfully launched by [[Ariane 5]] on 29 September 2012.<ref name=Isro/>
+
+'''GSAT-15''' carries 24 Ku band transponders with India coverage beam and a GAGAN payload. was successfully launched on 10 November 2015, 21:34:07 UTC, completing the constellation.
+
+===Indian regional navigation satellite system (NAVIC)===
+{{main|Indian Regional Navigation Satellite System}}
+The Indian government has stated that it intends to use the experience of creating the GAGAN system to enable the creation of an autonomous regional navigation system called the '''I'''ndian '''R'''egional '''N'''avigation '''S'''atellite '''S'''ystem [[IRNSS]], operationally known as '''NavIC''' (acronym for '''Nav'''igation with '''I'''ndian '''C'''onstellation).<ref>[http://www.isro.org/newsletters/spaceindia/aprsep2006/Satnavindustry.htm SATNAV Industry Meet 2006] {{webarchive|url=https://web.archive.org/web/20070331145825/http://www.isro.org/newsletters/spaceindia/aprsep2006/Satnavindustry.htm |date=31 March 2007 }}. ISRO Space India Newsletter. April – September 2006 Issue.</ref>
+
+IRNSS-1
+Indian regional navigational satellite system (IRNSS)-1, the first of the seven satellites of the [[IRNSS]] constellation, carries a navigation payload and a C-band ranging transponder. The spacecraft employs an optimised I-1K structure with a power handling capability of around 1660W and a lift off mass of 1425&nbsp;kg, and is designed for a nominal mission life of 10 years. The first satellite of IRNSS constellation was launched onboard PSLV (C22) on 1 July 2012. While the full constellation was planned to be realised during 2014 time frame, launch of subsequent satellites got delayed.{{citation needed|date=November 2017}}
+
+Currently all 7 satellites are in orbit but in 2017 it was announced that all three&nbsp;[[rubidium]]&nbsp;[[atomic clock]]s&nbsp;on board&nbsp;[[IRNSS-1A]]&nbsp;had failed, mirroring similar failures in the&nbsp;[[Galileo (satellite navigation)|Galileo]] constellation. The first failure occurred in July 2016, following which two other clocks also failed. This rendered the satellite somewhat redundant and required replacement. Although the satellite still performs other functions, the data is coarse, and thus cannot be used for accurate measurements.&nbsp;ISRO plans to replace it with IRNSS-1H in July or August 2017.
+
+Two more clocks in the navigational system had started showing signs of abnormality, thereby taking the total number of failed clocks to five.
+
+As a precaution to extend the operational life of navigation satellite, ISRO is running only one rubidium atomic clock instead of two in the remaining six satellites.&nbsp;Each satellite has three clocks, therefore a total of 27 clocks for all satellites in the system (including standby satellites). The clocks of both IRNSS and GALILEO were supplied by SpectraTime. ISRO replaced the atomic clocks in two standby NavIC satellites.&nbsp;The setback comes at a time when IRNSS is yet to start commercial operations.
+
+== Applications ==
+
+Karnataka Forest Department has used GAGAN to build a new, accurate and publicly available satellite based database of its forestlands. This is a followup to the Supreme Court directive to states to update and put up their respective forest maps. The geospatial database of forestlands pilot has used data from the Cartosat-2 satellite. The maps are meant to rid authorities of ambiguities related to forest boundaries and give clarity to forest administrators, revenue officials as also the public, according to R.K. Srivastava, chief conservator of forests (headquarters).<ref>[http://www.thehindu.com/news/national/andhra-pradesh/gagan-kicks-off-new-forest-database/article7118060.ece?w=city GAGAN kicks off new forest database]. The Hindu. Retrieved on 2015-04-21.</ref>
+
+The Indian National Centre for Ocean Information Services (INCOIS) along with AAI has launched a new satellite-based GEMINI(Gagan Enabled Mariner's Instrument for Navigation and Information) system that will alert deep-sea fishermen of upcoming disasters.The GEMINI app on the cellphone decodes the signals from GEMINI device and alerts the user on imminent threats like cyclones, high waves, strong winds along with PFZ and search and rescue mission.
+
+Various Indian manufactured missiles including the [[BrahMos]] will use GAGAN for guidance.<ref>http://www.newindianexpress.com/states/karnataka/Desi-G3OM-Makes-BrahMos-Smarter/2014/07/09/article2320976.ece</ref>
+
+== See also ==
+* [[Global Positioning System]]
+* [[GNSS Augmentation]]
+* [[Wide Area Augmentation System]]
+* [[Multi-functional Satellite Augmentation System|Multi-functional satellite augmentation system (MSAS)]]
+
+== References ==
+{{reflist}}
+
+==Further reading==
+*[http://pib.nic.in/newsite/erelease.aspx?relid=71321 Rs.378 crore aid for GPS-aided navigation system]
+
+==External links==
+*[http://www.isro.gov.in/applications/satellite-navigation-programme ISRO Satellite Navigation Programme]
+
+{{Indian space programme}}
+{{Satellite navigation systems}}
+
+{{DEFAULTSORT:Gps Aided Geo Augmented Navigation}}
+[[Category:Global Positioning System]]
+[[Category:Navigation]]
+[[Category:Navigational equipment]]
+[[Category:Geographical technology]]
+[[Category:Aids to navigation]]

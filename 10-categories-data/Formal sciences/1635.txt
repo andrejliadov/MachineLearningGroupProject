@@ -1,0 +1,344 @@
+{{short description|Measure of algorithmic complexity}}
+[[Image:Mandelpart2 red.png|right|thumb|upright=1.4|This image illustrates part of the [[Mandelbrot set]] [[fractal]]. Simply storing the 24-bit color of each pixel in this image would require 1.61 million bytes, but a small computer program can reproduce these 1.61 million bytes using the definition of the Mandelbrot set and the coordinates of the corners of the image. Thus, the Kolmogorov complexity of the raw file encoding this bitmap is much less than 1.61 million bytes in any pragmatic model of computation.]]
+
+In [[algorithmic information theory]] (a subfield of [[computer science]] and [[mathematics]]), the '''Kolmogorov complexity''' of an object, such as a piece of text, is the length of a shortest [[computer program]] (in a predetermined [[programming language]]) that produces the object as output. It is a measure of the [[computation]]al resources needed to specify the object, and is also known as '''algorithmic complexity''', '''Solomonoff–Kolmogorov–Chaitin complexity''', '''program-size complexity''', '''descriptive complexity''', or '''algorithmic entropy'''. It is named after [[Andrey Kolmogorov]], who first published on the subject in 1963.<ref>{{cite journal|author-link=Andrey Kolmogorov|first=Andrey|last=Kolmogorov|year=1963|title=On Tables of Random Numbers| journal=Sankhyā Ser. A.|volume=25|pages=369–375|mr=178484}}</ref><ref>{{cite journal|author-link=Andrey Kolmogorov|first=Andrey|last=Kolmogorov|year=1998|title=On Tables of Random Numbers| journal=Theoretical Computer Science|volume=207|issue=2|pages=387–395|doi=10.1016/S0304-3975(98)00075-9 |mr=1643414}}</ref>
+
+The notion of Kolmogorov complexity can be used to state and [[Proof of impossibility|prove impossibility]] results akin to [[Cantor's diagonal argument]], [[Gödel's incompleteness theorem]], and [[halting problem|Turing's halting problem]].
+In particular, no program ''P'' computing a [[lower bound]] for each text's Kolmogorov complexity can return a value essentially larger than ''P''<nowiki>'</nowiki>s own length (see section {{slink||Chaitin's incompleteness theorem}}); hence no single program can compute the exact Kolmogorov complexity for infinitely many texts.
+
+==Definition==
+Consider the following two [[string (computer science)|strings]] of 32 lowercase letters and digits:
+
+:  <code>abababababababababababababababab</code> , and
+:  <code>4c1j5b2p0cv4w1x8rx2y39umgw5q85s7</code>
+
+The first string has a short English-language description, namely "<code>write ab 16 times</code>", which consists of '''17''' characters. The second one has no obvious simple description (using the same character set) other than writing down the string itself, i.e., "<code>write 4c1j5b2p0cv4w1x8rx2y39umgw5q85s7</code>" which has '''38''' characters. Hence the operation of writing the first string can be said to have "less complexity" than writing the second.
+
+More formally, the [[complexity]] of a string is the length of the shortest possible description of the string in some fixed [[Turing complete|universal]] description language (the sensitivity of complexity relative to the choice of description language is discussed below). It can be shown that the Kolmogorov complexity of any string cannot be more than a few bytes larger than the length of the string itself. Strings like the ''abab'' example above, whose Kolmogorov complexity is small relative to the string's size, are not considered to be complex.
+
+The Kolmogorov complexity can be defined for any mathematical object, but for simplicity the scope of this article is restricted to strings. We must first specify a description language for strings.  Such a description language can be based on any computer programming language, such as [[Lisp programming language|Lisp]], [[Pascal (programming language)|Pascal]], or [[Java (programming language)|Java]].  If '''P''' is a program which outputs a string ''x'', then '''P''' is a description of ''x''. The length of the description is just the length of '''P''' as a character string, multiplied by the number of bits in a character (e.g., 7 for [[ASCII]]).
+
+We could, alternatively, choose an encoding for [[Turing machine]]s, where an ''encoding'' is a function which associates to each Turing Machine '''M''' a bitstring <'''M'''>. If '''M''' is a Turing Machine which, on input ''w'', outputs string ''x'', then the concatenated string <'''M'''> ''w'' is a description of ''x''. For theoretical analysis, this approach is more suited for constructing detailed formal proofs and is generally preferred in the research literature. In this article, an informal approach is discussed.
+
+Any string ''s'' has at least one description. For example, the second string above is output by the program:
+
+ '''function''' GenerateString2()
+     '''return''' "4c1j5b2p0cv4w1x8rx2y39umgw5q85s7"
+
+whereas the first string is output by the (much shorter) pseudo-code:
+
+ '''function''' GenerateString1()
+     '''return''' "ab" × 16
+
+If a description ''d''(''s'') of a string ''s'' is of minimal length (i.e., using the fewest bits), it is called a '''minimal description''' of ''s'', and the length of ''d''(''s'') (i.e. the number of bits in the minimal description) is the '''Kolmogorov complexity''' of ''s'', written ''K''(''s''). Symbolically,
+
+:''K''(''s'') = |''d''(''s'')|.
+
+The length of the shortest description will depend on the choice of description language; but the effect of changing languages is bounded (a result called the ''invariance theorem'').
+
+==Invariance theorem==
+
+===Informal treatment===
+There are some description languages which are optimal, in the following sense: given any description of an object in a description language, said description may be used in the optimal description language with a constant overhead. The constant depends only on the languages involved, not on the description of the object, nor the object being described.
+
+Here is an example of an optimal description language. A description will have two parts:
+
+* The first part describes another description language.
+* The second part is a description of the object in that language.
+
+In more technical terms, the first part of a description is a computer program, with the second part being the input to that computer program which produces the object as output.
+
+'''The invariance theorem follows:''' Given any description language ''L'', the optimal description language is at least as efficient as ''L'', with some constant overhead.
+
+'''Proof:''' Any description ''D'' in ''L'' can be converted into a description in the optimal language by first describing ''L'' as a computer program ''P'' (part 1), and then using the original description ''D'' as input to that program (part 2). The
+total length of this new description ''D&prime;'' is (approximately):
+
+:|''D&prime;''| = |''P''| + |''D''|
+
+The length of ''P'' is a constant that doesn't depend on ''D''. So, there is at most a constant overhead, regardless of the object described. Therefore, the optimal language is universal [[up to]] this additive constant.
+
+===A more formal treatment===
+'''Theorem''': If ''K''<sub>1</sub> and ''K''<sub>2</sub> are the complexity functions relative to [[Turing complete]] description languages ''L''<sub>1</sub> and ''L''<sub>2</sub>, then there is a constant ''c''&nbsp;– which depends only on the languages ''L''<sub>1</sub> and ''L''<sub>2</sub> chosen&nbsp;– such that
+
+:∀''s''.  −''c'' ≤ ''K''<sub>1</sub>(''s'') − ''K''<sub>2</sub>(''s'') ≤ ''c''.
+
+'''Proof''': By symmetry, it suffices to prove that there is some constant ''c'' such that for all strings ''s''
+
+:''K''<sub>1</sub>(''s'') ≤ ''K''<sub>2</sub>(''s'') + ''c''.
+
+Now, suppose there is a program in the language ''L''<sub>1</sub> which acts as an [[interpreter (computing)|interpreter]] for ''L''<sub>2</sub>:
+
+ '''function''' InterpretLanguage('''string''' ''p'')
+
+where ''p'' is a program in ''L''<sub>2</sub>. The interpreter is characterized by the following property:
+
+: Running <code>InterpretLanguage</code> on input ''p'' returns the result of running ''p''.
+
+Thus, if '''P''' is a program in ''L''<sub>2</sub> which is a minimal description of ''s'', then <code>InterpretLanguage</code>('''P''') returns the string ''s''. The length of this description of ''s'' is the sum of
+
+# The length of the program <code>InterpretLanguage</code>, which we can take to be the constant ''c''.
+# The length of '''P''' which by definition is ''K''<sub>2</sub>(''s'').
+
+This proves the desired upper bound.
+
+==History and context==
+[[Algorithmic information theory]] is the area of computer science that studies Kolmogorov complexity and other complexity measures on strings (or other [[data structure]]s).
+
+The concept and theory of Kolmogorov Complexity is based on a crucial theorem first discovered by [[Ray Solomonoff]], who published it in 1960, describing it in "A Preliminary Report on a General Theory of Inductive Inference"<ref>{{cite report |author-link=Ray Solomonoff | last=Solomonoff |first= Ray | url=http://world.std.com/~rjs/rayfeb60.pdf | title=A Preliminary Report on a General Theory of Inductive Inference | work = Report V-131 | date= February 4, 1960|id=[http://world.std.com/~rjs/z138.pdf Revision] published November 1960}}</ref> as part of his invention of [[algorithmic probability]]. He gave a more complete description in his 1964 publications, "A Formal Theory of Inductive Inference," Part 1 and Part 2 in ''Information and Control''.<ref>{{cite journal
+| doi=10.1016/S0019-9958(64)90223-2
+| last=Solomonoff
+| first= Ray
+| title=A Formal Theory of Inductive Inference Part I
+| journal = Information and Control
+| url=http://world.std.com/~rjs/1964pt1.pdf
+| volume=7
+| issue= 1
+| pages= 1–22
+| date=March 1964
+}}</ref><ref>{{cite journal
+| doi=10.1016/S0019-9958(64)90131-7
+| last=Solomonoff
+|first= Ray
+| title=A Formal Theory of Inductive Inference Part II
+| journal = Information and Control
+| url=http://world.std.com/~rjs/1964pt2.pdf
+|volume=7
+|issue= 2
+|pages= 224–254
+|date=June 1964
+}}</ref>
+
+Andrey Kolmogorov later [[multiple discovery|independently published]] this theorem in ''Problems Inform. Transmission''<ref>{{cite journal|volume=1 |issue=1 |year=1965 |pages=1–7 |title=Three Approaches to the Quantitative Definition of Information |url=http://www.ece.umd.edu/~abarg/ppi/contents/1-65-abstracts.html#1-65.2 |journal=Problems Inform. Transmission |first=A.N. |last=Kolmogorov |url-status=dead |archive-url=https://web.archive.org/web/20110928032821/http://www.ece.umd.edu/~abarg/ppi/contents/1-65-abstracts.html |archive-date=September 28, 2011 }}</ref> in 1965. [[Gregory Chaitin]] also presents this theorem in ''J. ACM''&nbsp;– Chaitin's paper was submitted October 1966 and revised in December 1968, and cites both Solomonoff's and Kolmogorov's papers.<ref>{{cite journal | last1 = Chaitin | first1 = Gregory J. | title = On the Simplicity and Speed of Programs for Computing Infinite Sets of Natural Numbers| journal = Journal of the ACM | volume = 16 | pages = 407–422| year = 1969 | doi = 10.1145/321526.321530 | issue = 3| citeseerx = 10.1.1.15.3821 }}</ref>
+
+The theorem says that, among algorithms that decode strings from their descriptions (codes), there exists an optimal one. This algorithm, for all strings, allows codes as short as allowed by any other algorithm up to an additive constant that depends on the algorithms, but not on the strings themselves. Solomonoff used this algorithm and the code lengths it allows to define a "universal probability" of a string on which inductive inference of the subsequent digits of the string can be based. Kolmogorov used this theorem to define several functions of strings, including complexity, randomness, and information.
+
+When Kolmogorov became aware of Solomonoff's work, he acknowledged Solomonoff's priority.<ref>{{cite journal | last1=Kolmogorov | first1=A. | title=Logical basis for information theory and probability theory | journal=IEEE Transactions on Information Theory | volume=14|issue=5 | pages=662–664 | year=1968 | doi =10.1109/TIT.1968.1054210 }}</ref> For several years, Solomonoff's work was better known in the Soviet Union than in the Western World. The general consensus in the scientific community, however, was to associate this type of complexity with Kolmogorov, who was concerned with randomness of a sequence, while Algorithmic Probability became associated with Solomonoff, who focused on prediction using his invention of the universal prior probability distribution. The broader area encompassing descriptional complexity and probability is often called Kolmogorov complexity. The computer scientist Ming Li considers this an example of the [[Matthew effect (sociology)|Matthew effect]]: "…to everyone who has more will be given…"<ref>{{Cite book |doi=10.1007/978-0-387-49820-1_1 |chapter=Preliminaries |title=An Introduction to Kolmogorov Complexity and its Applications |url=https://archive.org/details/introductiontoko00limi_695 |url-access=limited |pages=[https://archive.org/details/introductiontoko00limi_695/page/n23 1]–99 |series=Texts in Computer Science |year=2008 |last1=Li |first1=Ming |last2=Vitányi |first2=Paul |isbn=978-0-387-33998-6 }}</ref>
+
+There are several other variants of Kolmogorov complexity or algorithmic information. The most widely used one is based on [[self-delimiting program]]s, and is mainly due to [[Leonid Levin]] (1974).
+
+An axiomatic approach to Kolmogorov complexity based on [[Blum axioms]] (Blum 1967) was introduced by Mark Burgin in the paper presented for publication by Andrey Kolmogorov.<ref name=Burgin1982>Burgin, M. (1982), "Generalized Kolmogorov complexity and duality in theory of computations", ''Notices of the Russian Academy of Sciences'', v.25, No. 3, pp.&nbsp;19–23.</ref>
+
+==Basic results==
+In the following discussion, let ''K''(''s'') be the complexity of the string ''s''.
+
+It is not hard to see that the minimal description of a string cannot be too much larger than the string itself&nbsp;— the program <code>GenerateString2</code> above that outputs ''s'' is a fixed amount larger than ''s''.
+
+'''Theorem''': There is a constant ''c'' such that
+
+:∀''s''. ''K''(''s'') ≤ |''s''| + ''c''.
+
+===Uncomputability of Kolmogorov complexity===
+
+==== A naive attempt at a program to compute ''K'' ====
+
+At first glance it might seem trivial to write a program which can compute ''K''(''s'') for any ''s'', such as the following:
+
+ '''function''' KolmogorovComplexity('''string''' s)
+     '''for''' i = 1 '''to''' infinity:
+         '''for each''' string p '''of''' length exactly i
+             '''if''' isValidProgram(p) '''and''' evaluate(p) == s
+                 '''return''' i
+
+This program iterates through all possible programs (by iterating through all possible strings and only considering those which are valid programs), starting with the shortest. Each program is executed to find the result produced by that program, comparing it to the input ''s''. If the result matches the length of the program is returned.
+
+However this will not work because some of the programs ''p'' tested will not terminate, e.g. if they contain infinite loops. There is no way to avoid all of these programs by testing them in some way before executing them due to the non-computability of the [[halting problem]].
+
+What is more, no program at all can compute the function ''K'', be it ever so sophisticated. This is proven in the following.
+
+==== Formal proof of uncomputability of ''K''====
+
+'''Theorem''': There exist strings of arbitrarily large Kolmogorov complexity. Formally: for each ''n'' ∈ ℕ, there is a string ''s'' with ''K''(''s'') ≥ ''n''.<ref group="note">However, an ''s'' with ''K''(''s'') = ''n'' need not exist for every ''n''. For example, if ''n'' is not a multiple of 7 bits, no [[ASCII]] program can have a length of exactly ''n'' bits.</ref>
+
+'''Proof:''' Otherwise all of the infinitely many possible finite strings could be generated by the finitely many<ref group="note">There are 1 + 2 + 2<sup>2</sup> + 2<sup>3</sup> + ... + 2<sup>''n''</sup> = 2<sup>''n''+1</sup> − 1 different program texts of length up to ''n'' bits; cf. [[geometric series]]. If program lengths are to be multiples of 7 bits, even fewer program texts exist.</ref> programs with a complexity below ''n'' bits.
+
+'''Theorem''':  ''K'' is not a [[computable function]]. In other words, there is no program which takes any string ''s'' as input and produces the integer ''K''(''s'') as output.
+
+The following [[indirect proof|indirect '''proof''']] uses a simple [[Pascal (programming language)|Pascal]]-like language to denote programs; for sake of proof simplicity assume its description (i.e. an [[interpreter (computing)|interpreter]]) to have a length of {{val|1400000}} bits.
+Assume for contradiction there is a program
+
+ '''function''' KolmogorovComplexity('''string''' s)
+
+which takes as input a string ''s'' and returns ''K''(''s''). All programs are of finite length so, for sake of proof simplicity, assume it to be {{val|7000000000}} bits.
+Now, consider the following program of length {{val|1288}} bits:
+
+ '''function''' GenerateComplexString()
+     '''for''' i = 1 '''to''' infinity:
+         '''for each''' string s '''of''' length exactly i
+             '''if''' KolmogorovComplexity(s) ≥ 8000000000
+                 '''return''' s
+
+Using <code>KolmogorovComplexity</code> as a subroutine, the program tries every string, starting with the shortest, until it returns a string with Kolmogorov complexity at least {{val|8000000000}} bits,<ref group="note">By the previous theorem, such a string exists, hence the <code>for</code> loop will eventually terminate.</ref> i.e. a string that cannot be produced by any program shorter than {{val|8000000000}} bits. However, the overall length of the above program that produced ''s'' is only {{val|7001401288}} bits,<ref group=note>including the language interpreter and the subroutine code for <code>KolmogorovComplexity</code></ref> which is a contradiction. (If the code of <code>KolmogorovComplexity</code> is shorter, the contradiction remains. If it is longer, the constant used in <code>GenerateComplexString</code> can always be changed appropriately.)<ref group=note>If <code>KolmogorovComplexity</code> has length ''n'' bits, the constant ''m'' used in <code>GenerateComplexString</code> needs to be adapted to satisfy {{nobreak|''n'' + {{val|1400000}} + {{val|1218}} + 7·log<sub>10</sub>(''m'') < ''m''}}, which is always possible since ''m'' grows faster than log<sub>10</sub>(''m'').</ref>
+
+The above proof uses a contradiction similar to that of the [[Berry paradox]]: "<sub>{{color|#8080ff|1}}</sub>The <sub>{{color|#8080ff|2}}</sub>smallest <sub>{{color|#8080ff|3}}</sub>positive <sub>{{color|#8080ff|4}}</sub>integer <sub>{{color|#8080ff|5}}</sub>that <sub>{{color|#8080ff|6}}</sub>cannot <sub>{{color|#8080ff|7}}</sub>be <sub>{{color|#8080ff|8}}</sub>defined <sub>{{color|#8080ff|9}}</sub>in <sub>{{color|#8080ff|10}}</sub>fewer <sub>{{color|#8080ff|11}}</sub>than <sub>{{color|#8080ff|12}}</sub>twenty <sub>{{color|#8080ff|13}}</sub>English <sub>{{color|#8080ff|14}}</sub>words". It is also possible to show the non-computability of ''K'' by reduction from the non-computability of the halting problem ''H'', since ''K'' and ''H'' are [[turing degree#Turing equivalence|Turing-equivalent]].<ref>Stated without proof in: [http://www.daimi.au.dk/~bromille/DC05/Kolmogorov.pdf "Course notes for Data Compression - Kolmogorov complexity"] {{Webarchive|url=https://web.archive.org/web/20090909132048/http://www.daimi.au.dk/~bromille/DC05/Kolmogorov.pdf |date=2009-09-09 }}, 2005, P. B. Miltersen, p.7</ref>
+
+There is a corollary, humorously called the "[[full employment theorem]]" in the programming language community, stating that there is no perfect size-optimizing compiler.
+
+===Chain rule for Kolmogorov complexity===
+{{Main| Chain rule for Kolmogorov complexity}}
+The chain rule<ref>{{cite news
+  | first = A.
+  | last = Zvonkin
+  |author2=L. Levin
+  | title = The complexity of finite objects and the development of the concepts of information and randomness by means of the theory of algorithms.
+  | journal = Russian Mathematical Surveys
+  | volume = 25
+  | number = 6
+  | pages = 83–124
+  | year = 1970
+  | url = http://alexander.shen.free.fr/library/Zvonkin_Levin_70.pdf}}</ref> for Kolmogorov complexity states that
+
+:''K''(''X'',''Y'') ≤ ''K''(''X'') + ''K''(''Y''|''X'') + ''O''(log(''K''(''X'',''Y''))).
+
+It states that the shortest program that reproduces ''X'' and ''Y'' is [[Big-O notation|no more]] than a logarithmic term larger than a program to reproduce ''X'' and a program to reproduce ''Y'' given ''X''. Using this statement, one can define [[Mutual information#Absolute mutual information|an analogue of mutual information for Kolmogorov complexity]].
+
+==Compression==
+It is straightforward to compute upper bounds for ''K''(''s'')&nbsp;– simply [[data compression|compress]] the string ''s'' with some method, implement the corresponding decompressor in the chosen language, concatenate the decompressor to the compressed string, and measure the length of the resulting string&nbsp;– concretely, the size of a [[self-extracting archive]] in the given language.
+
+A string ''s'' is compressible by a number ''c'' if it has a description whose length does not exceed |''s''| − ''c'' bits. This is equivalent to saying that ''K''(''s'') ≤ |''s''| − ''c''.  Otherwise, ''s'' is incompressible by ''c''. A string incompressible by 1 is said to be simply ''incompressible''&nbsp;– by the [[pigeonhole principle]], which applies because every compressed string maps to only one uncompressed string, [[incompressible string]]s must exist, since there are 2<sup>''n''</sup> bit strings of length ''n'', but only 2<sup>''n''</sup> − 1 shorter strings, that is, strings of length less than ''n'', (i.e. with length 0, 1, ..., ''n&nbsp;−&nbsp;1).<ref group=note>As there are {{nobr|1=''N''<sub>''L''</sub> = 2<sup>''L''</sup>}} strings of length ''L'', the number of strings of lengths {{nowrap|1=''L'' = 0, 1, …, ''n'' − 1}} is {{nobr|''N''<sub>0</sub> + ''N''<sub>1</sub> + … + ''N''<sub>''n''−1</sub>}} = {{nobr|2<sup>0</sup> + 2<sup>1</sup> + … + 2<sup>''n''−1</sup>}}, which is a finite [[geometric series]] with sum {{nobr|2<sup>0</sup> + 2<sup>1</sup> + … + 2<sup>''n''−1</sup>}} = {{nobr|1 = 2<sup>0</sup> × (1 − 2<sup>''n''</sup>) / (1 − 2) = 2<sup>''n''</sup> − 1}}</ref>
+
+For the same reason, most strings are complex in the sense that they cannot be significantly compressed&nbsp;– their ''K''(''s'') is not much smaller than |''s''|, the length of ''s'' in bits. To make this precise, fix a value of ''n''. There are 2<sup>''n''</sup> bitstrings of length ''n''. The [[Uniform distribution (discrete)|uniform]] [[probability]] distribution on the space of these bitstrings assigns exactly equal weight 2<sup>−''n''</sup> to each string of length ''n''.
+
+'''Theorem''': With the uniform probability distribution on the space of bitstrings of length ''n'', the probability that a string is incompressible by ''c'' is at least 1 − 2<sup>−''c''+1</sup> + 2<sup>−''n''</sup>.
+
+To prove the theorem, note that the number of descriptions of length not exceeding ''n'' − ''c'' is given by the geometric series:
+
+: 1 + 2 + 2<sup>2</sup> + … + 2<sup>''n'' − ''c''</sup> = 2<sup>''n''−''c''+1</sup> − 1.
+
+There remain at least
+
+: 2<sup>''n''</sup> − 2<sup>''n''−''c''+1</sup> + 1
+
+bitstrings of length ''n'' that are incompressible by ''c''.  To determine the probability, divide by 2<sup>''n''</sup>.
+
+==Chaitin's incompleteness theorem==
+[[File:Kolmogorov complexity and computable lower bounds svg.svg|thumb|right|600px|Kolmogorov complexity {{color|#ff0000|''K''(''s'')}}, and two computable lower bound functions <code>{{color|#00e000|prog1(s)}}</code>, <code>{{color|#0000ff|prog2(s)}}</code>. The horizontal axis ([[logarithmic scale]]) enumerates all [[string (computer science)|strings]] ''s'', ordered by length; the vertical axis ([[linear scale]]) measures Kolmogorov complexity in [[bit]]s. Most strings are incompressible, i.e. their Kolmogorov complexity exceeds their length by a constant amount. 9 compressible strings are shown in the picture, appearing as almost vertical slopes. Due to Chaitin's incompleteness theorem (1974), the output of any program computing a lower bound of the Kolmogorov complexity cannot exceed some fixed limit, which is independent of the input string ''s''.]]
+By the above theorem ({{slink||Compression}}), most strings are complex in the sense that they cannot be described in any significantly "compressed" way. However, it turns out that the fact that a specific string is complex cannot be formally proven, if the complexity of the string is above a certain threshold. The precise formalization is as follows. First, fix a particular [[axiomatic system]] '''S''' for the [[natural number]]s. The axiomatic system has to be powerful enough so that, to certain assertions  '''A''' about complexity of strings, one can associate a formula '''F'''<sub>'''A'''</sub> in '''S'''. This association must have the following property:
+
+If '''F'''<sub>'''A'''</sub> is provable from the axioms of '''S''', then the corresponding assertion '''A''' must be true. This "formalization" can be achieved based on a [[Gödel numbering]].
+
+'''Theorem''': There exists a constant ''L'' (which only depends on '''S''' and on the choice of description language) such that there does not exist a string ''s'' for which the statement
+
+:''K''(''s'') ≥  ''L'' &nbsp;  &nbsp;  &nbsp; (as formalized in '''S''')
+
+can be proven within '''S'''.<ref>{{cite journal | url=http://www.cas.mcmaster.ca/~sancheg/EE_UCU2006_thesis/biblio/Information-theoretic%20limitations%20of%20Formal%20Systems%20(acm74).pdf | author=Gregory J. Chaitin | title=Information-theoretic limitations of formal systems | journal=Journal of the ACM | volume=21 | number=3 | pages=403&ndash;434 | date=Jul 1974 | doi=10.1145/321832.321839 }}</ref>{{rp|Thm.4.1b}}
+
+'''Proof''': The proof of this result is modeled on a self-referential construction used in [[Berry's paradox]].
+
+We can find an effective enumeration of all the formal proofs in '''S''' by some procedure
+
+ '''function''' NthProof('''int''' ''n'')
+
+which takes as input ''n'' and outputs some proof. This function enumerates all proofs. Some of these are proofs for formulas we do not care about here, since every possible proof in the language of '''S''' is produced for some ''n''. Some of these are complexity formulas of the form ''K''(''s'')&nbsp;≥&nbsp;''n'' where ''s'' and ''n'' are constants in the language of '''S'''. There is a procedure
+
+ '''function''' NthProofProvesComplexityFormula('''int''' ''n'')
+
+which determines whether the ''n''th proof actually proves a complexity formula ''K''(''s'')&nbsp;≥&nbsp;''L''. The strings ''s'', and the integer ''L'' in turn, are computable by procedure:
+
+ '''function''' StringNthProof('''int''' ''n'')
+
+ '''function''' ComplexityLowerBoundNthProof('''int''' ''n'')
+
+Consider the following procedure:
+
+ '''function''' GenerateProvablyComplexString('''int''' ''n'')
+     '''for''' i = 1 to infinity:
+         '''if''' NthProofProvesComplexityFormula(i) '''and''' ComplexityLowerBoundNthProof(i) ≥ ''n''
+             '''return''' StringNthProof(''i'')
+
+Given an ''n'', this procedure tries every proof until it finds a string and a proof in the [[formal system]] '''S''' of the formula ''K''(''s'')&nbsp;≥&nbsp;''L'' for some ''L''&nbsp;≥&nbsp;''n''; if no such proof exists, it loops forever.
+
+Finally, consider the program consisting of all these procedure definitions, and a main call:
+
+ GenerateProvablyComplexString(''n''<sub>0</sub>)
+
+where the constant ''n''<sub>0</sub> will be determined later on. The overall program length can be expressed as ''U''+log<sub>2</sub>(''n''<sub>0</sub>), where ''U'' is some constant and log<sub>2</sub>(''n''<sub>0</sub>) represents the length of the integer value ''n''<sub>0</sub>, under the reasonable assumption that it is encoded in binary digits.
+Now consider the function ''f'':[[Interval (mathematics)|[2,∞)]]→[1,∞), defined by ''f''(''x'') = ''x'' &minus; log<sub>2</sub>(''x''). It is [[strictly increasing]] on its domain, and hence has an inverse ''f''<sup>−1</sup>:[1,∞)→[2,∞).
+
+Define ''n''<sub>0</sub> = ''f''<sup>−1</sup>(''U'')+1.
+
+Then no proof of the form "''K''(''s'')≥''L''" with ''L''≥''n''<sub>0</sub> can be obtained in '''S''', as can be seen by an [[indirect argument]]:
+If <code>ComplexityLowerBoundNthProof(i)</code> could return a value ≥''n''<sub>0</sub>, then the loop inside <code>GenerateProvablyComplexString</code> would eventually terminate, and that procedure would return a string ''s'' such that
+{| style="border: 1px solid darkgray;"
+|-
+| || ''K''(''s'')
+|-
+| ≥ || ''n''<sub>0</sub> || &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; || by construction of <code>GenerateProvablyComplexString</code>
+|-
+| > || ''U''+log<sub>2</sub>(''n''<sub>0</sub>) || || since ''n''<sub>0</sub> > ''f''<sup>−1</sup>(''U'') implies ''n''<sub>0</sub> &minus; log<sub>2</sub>(''n''<sub>0</sub>) = ''f''(''n''<sub>0</sub>) > ''U''
+|-
+| ≥ || ''K''(''s'') || || since ''s'' was described by the program with that length
+|}
+This is a contradiction, [[Q.E.D.]]
+
+As a consequence, the above program, with the chosen value of ''n''<sub>0</sub>, must loop forever.
+
+Similar ideas are used to prove the properties of [[Chaitin's constant]].
+
+==Minimum message length==
+{{Main|Minimum message length}}
+The minimum message length principle of statistical and inductive inference and machine learning was developed by [[Chris Wallace (computer scientist)|C.S. Wallace]] and D.M. Boulton in 1968. MML is [[Bayesian probability|Bayesian]] (i.e. it incorporates prior beliefs) and information-theoretic. It has the desirable properties of statistical invariance (i.e. the inference transforms with a re-parametrisation, such as from polar coordinates to Cartesian coordinates), statistical consistency (i.e. even for very hard problems, MML will converge to any underlying model) and efficiency (i.e. the MML model will converge to any true underlying model about as quickly as is possible). C.S. Wallace and D.L. Dowe (1999) showed a formal connection between MML and algorithmic information theory (or Kolmogorov complexity).<ref>{{cite journal |citeseerx=10.1.1.17.321 |title=Minimum Message Length and Kolmogorov Complexity |journal=Computer Journal |volume=42 |issue=4 |pages=270–283 |year=1999 |last1=Wallace |first1=C. S. |last2=Dowe |first2=D. L. |doi=10.1093/comjnl/42.4.270 }}</ref>
+
+==Kolmogorov randomness==
+{{See also|Algorithmic randomness}}
+''Kolmogorov randomness'' defines a string (usually of [[bit]]s) as being [[randomness|random]] if and only if any [[computer program]] that can produce that string is at least as long as the string itself.  To make this precise, a universal computer (or [[universal Turing machine]]) must be specified, so that "program" means a program for this universal machine. A random string in this sense is "incompressible" in that it is impossible to "compress" the string into a program that is shorter than the string itself.  A [[counting argument]] is used to show that for any universal computer, there is at least one algorithmically random string of each length.  Whether any particular string is random, however, depends on the specific universal computer that is chosen. This is because a universal computer can have a particular string hard-coded in itself, and a program running on this universal computer can then simply refer to this hard-coded string using a short sequence of bits (i.e. much shorter than the string itself).
+
+This definition can be extended to define a notion of randomness for ''infinite'' sequences from a finite alphabet. These [[algorithmically random sequence]]s can be defined in three equivalent ways. One way uses an effective analogue of [[measure theory]]; another uses effective [[Martingale (probability theory)|martingales]].  The third way defines an infinite sequence to be random if the prefix-free Kolmogorov complexity of its initial segments grows quickly enough&nbsp;— there must be a constant ''c'' such that the complexity of an initial segment of length ''n'' is always at least ''n''−''c''.  This definition, unlike the definition of randomness for a finite string, is not affected by which universal machine is used to define prefix-free Kolmogorov complexity.<ref>{{cite journal |doi=10.1016/s0019-9958(66)80018-9 |title=The definition of random sequences |journal=Information and Control |volume=9 |issue=6 |pages=602–619 |year=1966 |last=Martin-Löf |first=Per |doi-access=free |url=https://www.sciencedirect.com/science/article/pii/S0019995866800189 }}</ref>
+
+==Relation to entropy==
+For dynamical systems, entropy rate and algorithmic complexity of the trajectories are related by a theorem of Brudno, that the equality <math>K(x;T) =  h(T)</math> holds for almost all <math>x</math>.<ref>{{cite journal |first1=Stefano|last1=Galatolo |first2=Mathieu|last2=Hoyrup |first3=Cristóbal|last3=Rojas |title=Effective symbolic dynamics, random points, statistical behavior, complexity and entropy | journal=Information and Computation | volume=208 | pages=23–41 | year=2010| url=http://www.loria.fr/~hoyrup/random_ergodic.pdf | doi=10.1016/j.ic.2009.05.001}}</ref>
+
+It can be shown<ref>{{cite arxiv |author=Alexei Kaltchenko |title=Algorithms for Estimating Information Distance with Application to Bioinformatics and Linguistics  |year=2004 |eprint=cs.CC/0404039}}</ref> that for the output of [[Markov information source]]s, Kolmogorov complexity is related to the [[Entropy (information theory)|entropy]] of the information source. More precisely, the Kolmogorov complexity of the output of a Markov information source, normalized by the length of the output, converges almost surely (as the length of the output goes to infinity) to the [[Entropy (information theory)|entropy]] of the source.
+
+==Conditional versions==
+{{expand section|date=July 2014}}
+The conditional Kolmogorov complexity of two strings <math>K(x|y)</math> is, roughly speaking, defined as the Kolmogorov complexity of ''x'' given ''y'' as an auxiliary input to the procedure.<ref name="Rissanen2007">{{cite book|author=Jorma Rissanen|title=Information and Complexity in Statistical Modeling|url=https://archive.org/details/informationcompl00riss_364|url-access=limited|year=2007|publisher=Springer S |isbn=978-0-387-68812-1|page=[https://archive.org/details/informationcompl00riss_364/page/n59 53]}}</ref><ref>{{cite book|author1=Ming Li|author2=Paul M.B. Vitányi|title=An Introduction to Kolmogorov Complexity and Its Applications|url=https://archive.org/details/introductiontoko00limi_695|url-access=limited|year=2009|publisher=Springer |isbn=978-0-387-49820-1|pages=[https://archive.org/details/introductiontoko00limi_695/page/n127 105]–106}}</ref>
+
+There is also a length-conditional complexity <math>K(x|L(x))</math>, which is the complexity of ''x'' given the length of ''x'' as known/input.<ref>{{cite book|author1=Ming Li|author2=Paul M.B. Vitányi|title=An Introduction to Kolmogorov Complexity and Its Applications|url=https://archive.org/details/introductiontoko00limi_695|url-access=limited|year=2009|publisher=Springer  |isbn=978-0-387-49820-1|page=[https://archive.org/details/introductiontoko00limi_695/page/n141 119]}}</ref><ref>{{cite journal |doi=10.1016/j.tcs.2013.07.009 |title=Conditional Kolmogorov complexity and universal probability |journal=Theoretical Computer Science |volume=501 |pages=93–100 |year=2013 |last1=Vitányi |first1=Paul M.B. |url=https://ir.cwi.nl/pub/26818 |arxiv=1206.0983 }}</ref>
+
+==See also==
+* [[List of important publications in theoretical computer science#Algorithmic information theory|Important publications in algorithmic information theory]]
+* [[Berry paradox]]
+* [[Code golf]]
+* [[Data compression]]
+* [[Demoscene]], a computer art discipline whose certain branches are centered around the creation of smallest programs that achieve certain effects
+* [[Descriptive complexity theory]]
+* [[Grammar induction]]
+* [[Inductive inference]]
+* [[Kolmogorov structure function]]
+* [[Levenshtein distance]]
+* [[Solomonoff's theory of inductive inference]]
+
+==Notes==
+{{Reflist|group=note}}
+
+==References==
+{{Reflist|30em}}
+
+==Further reading==
+* {{cite journal | author-link=Manuel Blum|last=Blum | title=On the size of machines | journal=Information and Control |first= M. | volume=11 | issue=3 | page=257 | year=1967 | doi = 10.1016/S0019-9958(67)90546-3 | doi-access=free }}
+* {{cite journal |first=A. |last=Brudno |title=Entropy and the complexity of the trajectories of a dynamical system |journal=Transactions of the Moscow Mathematical Society |volume=2 |pages=127–151 |year=1983 }}
+* {{cite book |last=Cover |first=Thomas M. |last2=Thomas |first2=Joy A. |title=Elements of information theory |publisher=Wiley-Interscience |edition=2nd |year=2006 |isbn=0-471-24195-4 }}
+* {{cite book |last=Lajos |first=Rónyai |last2=Gábor |first2=Ivanyos |last3=Réka |first3=Szabó |title=Algoritmusok |publisher=TypoTeX  |year=1999 |isbn=963-279-014-6 }}
+* {{cite book |last=Li |first=Ming  |last2=Vitányi |first2=Paul|title=An Introduction to Kolmogorov Complexity and Its Applications|publisher=Springer |year=1997 |isbn= 978-0387339986 }}
+* {{cite book |first=Manin |last=Yu |title=A Course in Mathematical Logic |publisher=Springer-Verlag |year=1977 |isbn=978-0-7204-2844-5 |url-access=registration |url=https://archive.org/details/courseinmathemat0000bell }}
+* {{cite book |first=Michael |last=Sipser |title=Introduction to the Theory of Computation |url=https://archive.org/details/introductiontoth00sips |url-access=registration |publisher=PWS |year=1997 |isbn=0-534-95097-3 }}
+
+==External links==
+* [https://web.archive.org/web/20180321163508/http://kolmogorov.com/ The Legacy of Andrei Nikolaevich Kolmogorov]
+* [https://web.archive.org/web/20150215210504/http://www.cs.umaine.edu/~chaitin/ Chaitin's online publications]
+* [http://www.idsia.ch/~juergen/ray.html Solomonoff's IDSIA page]
+* [http://www.idsia.ch/~juergen/kolmogorov.html Generalizations of algorithmic information] by [[Juergen Schmidhuber|J. Schmidhuber]]
+* {{cite web  |title=Review of Li Vitányi 1997  |url=http://homepages.cwi.nl/~paulv/kolmogorov.html}}
+* {{cite web |first=John |last=Tromp |url=https://tromp.github.io/cl/cl.html |title=John's Lambda Calculus and Combinatory Logic Playground}} Tromp's lambda calculus computer model offers a concrete definition of K()]
+* Universal AI based on Kolmogorov Complexity {{isbn|3-540-22139-5}} by [[Marcus Hutter|M. Hutter]]:  {{isbn|3-540-22139-5}}
+* [http://www.csse.monash.edu.au/~dld David Dowe]'s [http://www.csse.monash.edu.au/~dld/MML.html Minimum Message Length (MML)] and [http://www.csse.monash.edu.au/~dld/Occam.html Occam's razor] pages.
+* {{cite book |first=P. |last=Grunwald |first2=M.A. |last2=Pitt |editor-first=I. J. |editor-last=Myung |title=Advances in Minimum Description Length: Theory and Applications |publisher=MIT Press |year=2005 |isbn=0-262-07262-9 }}
+
+{{Compression Methods}}
+
+{{DEFAULTSORT:Kolmogorov Complexity}}
+[[Category:Algorithmic information theory|*]]
+[[Category:Information theory|*]]
+[[Category:Computability theory]]
+[[Category:Descriptive complexity]]
+[[Category:Measures of complexity]]

@@ -1,0 +1,102 @@
+{{About|perturbation theory as a general mathematical method|perturbation theory applied specifically to quantum mechanics|Perturbation theory (quantum mechanics)}}
+{{refimprove|date=February 2017}}
+{{Differential equations}}
+
+In [[mathematics]] and [[physics]], '''perturbation theory''' comprises mathematical methods for finding an [[approximation theory|approximate solution]] to a problem, by starting from the exact [[solution (equation)|solution]] of a related, simpler problem. A critical feature of the technique is a middle step that breaks the problem into "solvable" and "perturbative" parts.<ref name="General Perturbations">{{cite book |isbn= 978-145378-1470|title=Modern Astrodynamics |author=William E. Wiesel |location=Ohio |publisher=Aphelion Press| year=2010 |page=107}}</ref> Perturbation theory is widely used when the problem at hand does not have a known exact solution, but can be expressed as a "small" change to a known solvable problem. Perturbation theory is used in a wide range of fields, and reaches its most sophisticated and advanced forms in quantum field theory. [[Perturbation theory (quantum mechanics)|Perturbation theory for quantum mechanics]] imparts the first step on this path. The field in general remains actively and heavily researched across multiple disciplines.
+
+== Terminology ==
+Perturbation theory develops an expression for the desired solution in terms of a [[formal power series]] in some "small" parameter – known as a '''perturbation series''' – that quantifies the deviation from the exactly solvable problem. The leading term in this power series is the solution of the exactly solvable problem, while further terms describe the deviation in the solution, due to the deviation from the initial problem. Formally, we have for the approximation to the full solution {{mvar|A}}, a series in the small parameter (here called {{mvar|ε}}), like the following:
+
+:<math> A= A_0 + \varepsilon^1 A_1 + \varepsilon^2 A_2 + \cdots</math>
+
+In this example, {{math|''A''<sub>0</sub>}} would be the known solution to the exactly solvable initial problem and {{math|''A''<sub>1</sub>, ''A''<sub>2</sub>, ...}} represent the '''first-order''', '''second-order''' and '''higher-order terms''', which may be found iteratively by a mechanistic procedure. For small {{mvar|ε}} these higher-order terms in the series generally (but not always!) become successively smaller.
+
+An approximate "perturbative solution" is obtained by truncating the series, often by keeping only the first few terms, and expressing the final solution as a sum of the initial (exact) solution and the "first-order" perturbative correction
+:<math>A \approx A_0 + \varepsilon A_1~.</math>
+
+==Prototypical example==
+The earliest use of what would now be called ''perturbation theory'' was to deal with the otherwise unsolvable mathematical problems of [[celestial mechanics]]: for example the [[orbit of the Moon]], which moves noticeably differently from a simple [[Kepler's laws of planetary motion|Keplerian ellipse]] because of the competing gravitation of the Earth and the [[Sun]].<ref>[https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.70.589 Martin C. Gutzwiller, "Moon-Earth-Sun: The oldest three-body problem", Rev. Mod. Phys. 70, 589 – Published 1 April 1998]</ref>
+
+Perturbation methods start with a simplified form of the original problem, which is ''simple enough'' to be solved exactly. In [[celestial mechanics]], this is usually a [[Kepler's laws of planetary motion|Keplerian ellipse]]. Under [[Newton's law of universal gravitation|Newtonian gravity]], an ellipse is exactly correct when there are only two gravitating bodies (say, the Earth and the [[Moon]]) but not quite correct when there are [[three-body problem|three or more objects]] (say, the Earth, [[Moon]], [[Sun]], and the rest of the [[solar system]]) and not quite correct when the gravitational interaction is stated using formulations from [[general relativity]].
+
+==Perturbative expansion==
+Keeping the above example in mind, one follows a general recipe to obtain the perturbation series. The '''perturbative expansion''' is created by adding successive corrections to the simplified problem. The corrections are obtained by forcing consistency between the unperturbed solution, and the equations describing the system in full. Write <math>D</math> for this collection of equations; that is, let the symbol <math>D</math> stand in for the problem to be solved. Quite often, these are differential equations, thus, the letter "D".
+
+The process is generally mechanical, if laborious. One begins by writing the equations <math>D</math> so that they split into two parts: some collection of equations <math>D_0</math> which can be solved exactly, and some additional remaining part <math>\varepsilon D_1</math> for some small <math>\varepsilon \ll 1</math>. The solution <math>A_0</math> (to <math>D_0</math>) is known, and one seeks the general solution <math>A</math> to <math>D = D_0 + \varepsilon D_1</math>. 
+
+One proceeds by "turning the crank" or "plugging and chugging": insert the approximation <math>A\approx A_0+\varepsilon A_1</math> into <math>\varepsilon D_1</math>. This results in an equation for <math>A_1</math>, which, in the general case, can be written in closed form as a sum over integrals over <math>A_0</math>.  Thus, one has obtained the ''first-order correction'' <math>A_1</math> and thus <math>A\approx A_0+\varepsilon A_1</math> is a good approximation to <math>A</math>. It is a good approximation, precisely because the parts that were ignored were of size <math>\varepsilon^2</math>. The process can then be repeated, to obtain corrections <math>A_2</math>, and so on. 
+
+In practice, this process rapidly explodes into a profusion of terms, which become extremely hard to manage by hand. [[Isaac Newton]] is reported to have said, regarding the problem of the [[Moon]]'s orbit, that ''"It causeth my head to ache."''<ref>{{Citation | last1=Cropper | first1=William H. | title=Great Physicists: The Life and Times of Leading Physicists from Galileo to Hawking | publisher=[[Oxford University Press]] | isbn=978-0-19-517324-6 | year=2004 | page=34}}.</ref> This unmanageability has forced perturbation theory to develop into a high art of managing and writing out these higher order terms. One of the fundamental breakthroughs for controlling the expansion are the [[Feynman diagram]]s, which allow perturbation series to be written down diagrammatically.
+
+==Examples==
+Perturbation theory has been used in a large number of different settings in physics and applied mathematics.  Examples of the "collection of equations" <math>D</math> include [[algebraic equation]]s,<ref>[http://math.unm.edu/~lromero/2013/class_notes/poly.pdf L. A. Romero, "Perturbation theory for polynomials", Lecture Notes, University of New Mexico (2013)]
+</ref>
+[[differential equation]]s (e.g., the [[equations of motion]]<ref>
+[https://www.physik.uni-muenchen.de/lehre/vorlesungen/sose_11/T1_Theoretische_Mechanik/vorlesung/anharmonic-perturbation.pdf Sergei Winitzki, "Perturbation theory for anharmonic oscillations", Lecture notes, LMU (2006)]</ref>
+and commonly [[wave equation]]s), [[thermodynamic free energy]] in [[statistical mechanics]], radiative transfer,<ref>
+[https://www.researchgate.net/publication/222659054_Radiative_perturbation_theory_A_review Michael A. Box, "Radiative perturbation theory: a review", Environmental Modelling & Software 17 (2002) 95–106]
+</ref>
+and [[Hamiltonian (quantum mechanics)|Hamiltonian operators]] in [[quantum mechanics]].
+
+Examples of the kinds of solutions that are found perturbatively include the solution of the equation (''e.g.'', the [[trajectory]] of a particle), the [[average|statistical average]] of some physical quantity (''e.g.'', average magnetization), the [[ground state]] energy of a quantum mechanical problem.
+
+Examples of exactly solvable problems that can be used as starting points include [[linear equation]]s, including linear equations of motion ([[harmonic oscillator]], [[linear wave equation]]), statistical or quantum-mechanical systems of non-interacting particles (or in general, Hamiltonians or free energies containing only terms quadratic in all degrees of freedom).
+
+Examples of systems that can be solved with perturbations include systems with nonlinear contributions to the equations of motion, [[interaction]]s between particles, terms of higher powers in the Hamiltonian/free energy.
+
+For physical problems involving interactions between particles, the terms of the perturbation series may be displayed (and manipulated) using [[Feynman diagram]]s.
+
+==History==
+Perturbation theory was first devised to solve [[Three-body problem|otherwise intractable problems]] in the calculation of the motions of planets in the solar system. For instance, [[Newton's law of universal gravitation]] explained the gravitation between two astronomical bodies, but when a third body is added, the problem was, "How does each body pull on each?" Newton's equation only allowed the mass of two bodies to be analyzed. The gradually increasing accuracy of [[astrometry|astronomical observations]] led to incremental demands in the accuracy of solutions to Newton's gravitational equations, which led several notable 18th and 19th&nbsp;century mathematicians, such as [[Lagrange]] and [[Laplace]], to extend and generalize the methods of perturbation theory. 
+
+These well-developed perturbation methods were adopted and adapted to solve new problems arising during the development of [[quantum mechanics]] in 20th&nbsp;century atomic and subatomic physics. [[Paul Dirac]] developed quantum perturbation theory in 1927 to evaluate when a particle would be emitted in radioactive elements. This was later named [[Fermi's golden rule]].<ref>{{cite book|last1=Bransden|first1=B. H.|last2=Joachain|first2=C. J.|title=Quantum Mechanics|edition=2nd|year=1999|isbn=978-0582356917|page=443}}</ref><ref>{{cite journal | last = Dirac | first = P.A.M. | author-link = Paul Dirac | title = The Quantum Theory of Emission and Absorption of Radiation | journal = [[Proceedings of the Royal Society A]] | volume = 114 | pages = 243–265 | date=1 March 1927| issue = 767 | doi = 10.1098/rspa.1927.0039 | jstor=94746|bibcode = 1927RSPSA.114..243D | doi-access = free }} See equations (24) and (32).</ref> Perturbation theory in quantum mechanics is fairly accessible, as the quantum notation allows expressions to be written in fairly compact form, thus making them easier to comprehend. This resulted in an explosion of applications, ranging from the [[Zeeman effect]] to the [[hyperfine splitting]] in the [[hydrogen atom]].
+
+Despite the simpler notation, perturbation theory applied to [[quantum field theory]] still easily gets out of hand. [[Richard Feynman]] developed the celebrated [[Feynman diagram]]s by observing that many terms repeat in a regular fashion. These terms can be replaced by dots, lines, squiggles and similar marks, each standing for a term, a denominator, an integral, and so on; thus complex integrals can be written as simple diagrams, with absolutely no ambiguity as to what they mean. The one-to-one correspondence between the diagrams, and specific integrals is what gives them their power. Although originally developed for quantum field theory, it turns out the diagrammatic technique is broadly applicable to all perturbative series (although, perhaps, not always so useful).
+
+In the second half of the 20th century, as [[chaos theory]] developed, it became clear that unperturbed systems were in general [[completely integrable system]]s, while the perturbed systems were not. This promptly lead to the study of "nearly integrable systems", of which the [[KAM torus]] is the canonical example. At the same time, it was also discovered that many (rather special) [[non-linear system]]s, which were previously approachable only through perturbation theory, are in fact completely integrable. This discovery was quite dramatic, as it allowed exact solutions to be given. This, in turn, helped clarify the meaning of the perturbative series, as one could now compare the results of the series to the exact solutions.
+
+The improved understanding of [[dynamical system]]s coming from chaos theory helped shed light on what was termed the '''small denominator problem''' or '''small divisor problem'''. It was observed in the 19th century (by [[Henri Poincaré|Poincaré]], and perhaps earlier), that sometimes 2nd and higher order terms in the perturbative series have "small denominators". That is, they have the general form <math>\psi_n V\phi_m / (\omega_n -\omega_m)</math> where <math>\psi_n</math>, <math>V</math> and <math>\phi_m</math> are some complicated expressions pertinent to the problem to be solved, and <math>\omega_n</math> and <math>\omega_m</math> are real numbers; very often they are the [[energy]] of [[normal mode]]s. The small divisor problem arises when the difference <math>\omega_n -\omega_m</math> is small, causing the perturbative correction to blow up, becoming as large or maybe larger than the zeroth order term. This situation signals a breakdown of perturbation theory: it stops working at this point, and cannot be expanded or summed any further. In formal terms, the perturbative series is a [[asymptotic series]]: a useful approximation for a few terms, but ultimately inexact. The breakthrough from chaos theory was an explanation of why this happened: the small divisors occur whenever perturbation theory is applied to a chaotic system. The one signals the presence of the other.
+
+===Beginnings in the study of planetary motion===
+Since the planets are very remote from each other, and since their mass is small as compared to the mass of the Sun, the gravitational forces between the planets can be neglected, and the planetary motion is considered, to a first approximation, as taking place along Kepler's orbits, which are defined by the equations of the [[two-body problem]], the two bodies being the planet and the Sun.<ref name="EoM">Perturbation theory. N. N. Bogolyubov, jr. (originator), Encyclopedia of Mathematics. URL: http://www.encyclopediaofmath.org/index.php?title=Perturbation_theory&oldid=11676</ref>
+
+Since astronomic data came to be known with much greater accuracy, it became necessary to consider how the motion of a planet around the Sun is affected by other planets. This was the origin of the [[three-body problem]]; thus, in studying the system Moon–Earth–Sun the mass ratio between the Moon and the Earth was chosen as the small parameter. [[Lagrange]] and [[Laplace]] were the first to advance the view that the constants which describe the motion of a planet around the Sun are  "perturbed", as it were, by the motion of other planets and vary as a function of time; hence the name "perturbation theory".<ref name="EoM" />
+
+Perturbation theory was investigated by the classical scholars—[[Laplace]], [[Siméon Denis Poisson|Poisson]], [[Gauss]]—as a result of which the computations could be performed with a very high accuracy. [[Discovery of Neptune|The discovery of the planet Neptune]] in 1848 by [[Urbain Le Verrier]], based on the deviations in motion of the planet [[Uranus]] (he sent the coordinates to [[Johann Gottfried Galle]] who successfully observed Neptune through his telescope), represented a triumph of perturbation theory.<ref name="EoM" />
+
+==Perturbation orders==
+The standard exposition of perturbation theory is given in terms of the order to which the perturbation is carried out: first-order perturbation theory or second-order perturbation theory, and whether the perturbed states are degenerate, which requires [[singular perturbation]]. In the singular case extra care must be taken, and the theory is slightly more elaborate.
+
+==In chemistry==
+Many of the [[ab initio quantum chemistry methods]] use perturbation theory directly or are closely related methods. Implicit perturbation theory<ref>{{cite journal | doi = 10.1021/ja00428a004 | title = Theory of the Chemical Bond | year = 1976 | last1 = King | first1 = Matcha | journal = JACS | volume = 98 | issue = 12 | pages = 3415–3420 }}</ref> works with the complete Hamiltonian from the very beginning and never specifies a perturbation operator as such. [[Møller&ndash;Plesset perturbation theory]] uses the difference between the [[Hartree&ndash;Fock]] Hamiltonian and the exact non-relativistic Hamiltonian as the perturbation. The zero-order energy is the sum of orbital energies. The first-order energy is the Hartree&ndash;Fock energy and electron correlation is included at second-order or higher. Calculations to second, third or fourth order are very common and the code is included in most [[Computational chemistry#Software packages|ab initio quantum chemistry programs]]. A related but more accurate method is the [[coupled cluster]] method.
+
+==See also==
+* [[Cosmological perturbation theory]]
+* [[Deformation (mathematics)]]
+* [[Dynamic nuclear polarisation]]
+* [[Eigenvalue perturbation]]
+* [[Homotopy perturbation method]]
+* [[Interval FEM]]
+* [[Lyapunov stability]]
+* [[Order of approximation]]
+* [[Perturbation theory (quantum mechanics)]]
+* [[Structural stability]]
+
+== References ==
+{{reflist|25em}}
+
+== External links ==
+* {{cite web |url=http://www.cims.nyu.edu/~eve2/reg_pert.pdf |title=Introduction to regular perturbation theory |author-link=Eric Vanden-Eijnden |first=Eric |last=van den Eijnden}}
+
+* {{cite web |url=http://www.scholarpedia.org/article/Multiple_Scale_Analysis |title=Perturbation method of multiple scales}}
+
+* Alternative approach to quantum perturbation theory {{cite journal |doi=10.1140/epjd/e2011-20654-5 |title=Alternative analysis to perturbation theory in quantum mechanics |journal=The European Physical Journal D |volume=66 |year=2012 |last1=Martínez-Carranza |first1=J. |last2=Soto-Eguibar |first2=F. |last3=Moya-Cessa |first3=H. |page=22 |arxiv=1110.0723 |bibcode=2012EPJD...66...22M|s2cid=117362666 }}
+
+{{DEFAULTSORT:Perturbation theory}}
+[[Category:Perturbation theory| ]]
+[[Category:Concepts in physics]]
+[[Category:Functional analysis]]
+[[Category:Ordinary differential equations]]
+[[Category:Mathematical physics]]
+[[Category:Computational chemistry]]
+[[Category:Asymptotic analysis]]

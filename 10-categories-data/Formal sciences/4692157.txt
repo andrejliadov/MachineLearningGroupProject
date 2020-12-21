@@ -1,0 +1,126 @@
+The '''Bird–Meertens formalism''' ('''BMF''') is a [[calculation|calculus]] for [[program derivation|deriving programs]] from [[program specification|specification]]s (in a [[functional programming|functional-programming]] setting) by a process of equational reasoning. It was devised by [[Richard Bird (computer scientist)|Richard Bird]] and [[Lambert Meertens]] as part of their work within [[IFIP Working Group 2.1]].
+
+It is sometimes referred to in publications as BMF, as a nod to [[Backus–Naur form]]. Facetiously it is also referred to as ''Squiggol'', as a nod to [[ALGOL]], which was also in the remit of WG 2.1, and because of the "squiggly" symbols it uses. A less-used variant name, but actually the first one suggested, is ''SQUIGOL''.
+
+== Basic examples and notations ==
+
+[[Map (higher-order function)|Map]] is a well-known second-order function that applies a given function to every element of a list; in BMF, it is written <math>*</math>:
+
+:<math>f*[e_1,\dots,e_n] =  [f\ e_1,\dots,f\ e_n].</math>
+
+Likewise, [[Fold (higher-order function)|reduce]] is a function that collapses a list into a single value by [[Iterated binary operation|repeated application of a binary operator]]. It is written / in BMF.
+Taking <math>\oplus</math> as a suitable binary operator with neutral element ''e'', we have
+
+:<math>\oplus / [e_1,\dots,e_n] =  e \oplus e_1 \oplus \dots \oplus e_n.</math>
+
+Using those two operators and the primitives <math>+</math> (as the usual addition), and <math>+\!\!\!+</math> (for list concatenation), we can easily express the sum of all elements of a list, and the [[flatten (higher-order function)|flatten]] function, as <math>{\rm sum} = + /</math> and <math>{\rm flatten} = +\!\!\!+ /</math>, in
+[[Tacit programming|point-free style]]. We have:
+
+:<math>{\rm sum}\ [e_1,\dots,e_n] = + / [e_1,\dots,e_n] =  0 +  e_1 + \dots+ e_n = \sum_k e_k.</math>
+:<math>{\rm flatten}\  [l_1,\dots,l_n] =+\!\!\!+ / [l_1,\dots,l_n] =  [\,] +\!\!\!+\;  l_1 +\!\!\!+ \dots+\!\!\!+\; l_n = \text{ the concatenation of all lists } l_k.</math>
+
+[[File:Max seg sums svg.svg|thumb|450px|Derivation of [[Kadane's algorithm]]
+{| class="wikitable collapsible collapsed"
+! Example instances of used laws
+|-
+| [[File:Bird map promotion svg.svg|thumb|400px|Map promotion law]]
+|-
+| [[File:Bird foldl promotion svg.svg|thumb|400px|Fold promotion law]]
+|-
+| [[File:Bird horner rule 6789 svg.svg|thumb|400px|Generalized Horner's rule]]
+|-
+| [[File:Bird scan lemma 6789 svg.svg|thumb|400px|Scan lemma]]
+|-
+| [[File:Bird fold scan fusion 6789 svg.svg|thumb|400px|Fold-scan fusion law]]
+|}
+]]
+Similarly, writing <math>\cdot</math> for [[functional composition]] and <math>\land</math> for [[Logical conjunction|conjunction]], it is easy to write a function testing that all elements of a list satisfy a predicate ''p'', simply as <math>{\rm all}\ p = (\land /)\cdot(p*)</math>:
+
+:<math>
+\begin{align}
+{\rm all}\ p\ [e_1,\dots,e_n] 
+&= (\land /)\cdot(p*)\ [e_1,\dots,e_n] 
+\\&= \land /(p* [e_1,\dots,e_n])
+\\&= \land /[p\ e_1,\dots,p\ e_n]
+\\&= p\ e_1\land \dots \land p\ e_n
+\\&= \forall k\ . \ p\ e_k.
+\end{align}</math>
+
+Bird (1989) transforms inefficient easy-to-understand expressions ("specifications") into efficient involved expressions ("programs") by algebraic manipulation. For example, the specification "<math>\mathrm{max} \cdot \mathrm{map} \; \mathrm{sum} \cdot \mathrm{segs}</math>" is an almost literal translation of "maximum segment sum algorithm",<ref>Where <math>\mathrm{max}</math>, <math>\mathrm{sum}</math>, and <math>\mathrm{segs}</math> returns the largest value, the sum, and the list of all segments (i.e. sublists) of a given list.</ref> but running that functional program on a list of size <math>n</math> will take time <math>\mathcal{O}(n^3)</math> in general. From this, Bird computes an equivalent functional program that runs in time <math>\mathcal{O}(n)</math>, and is in fact a functional version of [[Kadane's algorithm]].
+
+The derivation is shown in the picture, with computational complexities<ref>Each expression in a line denotes an executable functional program to compute the maximum segment sum.</ref> given in blue, and law applications indicated in red.
+Example instances of the laws can be opened by clicking on ''[show]''; they use lists of integer numbers, addition, minus, and multiplication. The notation in Bird's paper differs from that used above: <math>\mathrm{map}</math>, <math>\mathrm{concat}</math>, and <math>\mathrm{foldl}</math> correspond to <math>*</math>, <math>\mathrm{flatten}</math>, and a generalized version of <math>/</math> above, respectively, while <math>\mathrm{inits}</math> and <math>\mathrm{tails}</math> compute a list of all [[prefix (computer science)|prefixes]] and [[suffix (computer science)|suffixes]] of its arguments, respectively. As above, function composition is denoted by "<math>\cdot</math>", which has lowest [[binding precedence]]. In the example instances, lists are colored by nesting depth; in some cases, new operations are defined ad hoc (grey boxes).
+
+==The homomorphism lemma and its applications to parallel implementations ==
+
+A function ''h'' on lists is a list [[homomorphism]] if there exists an associative binary operator <math>\oplus</math> and neutral element  <math>e</math> such that the following holds:
+
+:<math>
+\begin{align}
+&h\ [\,] &&=\ e \\
+&h\ (l +\!\!\!+\; m) &&=\ h\ l \oplus h\ m. 
+\end{align}
+</math>
+
+The ''homomorphism lemma'' states that ''h'' is a homomorphism if and only if there exists an operator <math>\oplus</math> and a function ''f'' such that <math>h = (\oplus/)\cdot(f*)</math>.
+
+A point of great interest for this lemma is its application to the derivation of highly [[parallel computing|parallel]] implementations of computations. Indeed, it is trivial to see that <math>f*</math> has a highly parallel implementation, and so does <math>\oplus/</math> — most obviously as a binary tree. Thus for any list homomorphism ''h'', there exists a parallel implementation. That implementation cuts the list into chunks, which are assigned to different computers; each computes the result on its own chunk. It is those results that transit on the network and are finally combined into one. In any application where the list is enormous and the result is a very simple type – say an integer – the benefits of parallelisation are considerable. This is the basis of the [[map-reduce]] approach.
+
+== See also ==
+
+* [[Catamorphism]]
+* [[Anamorphism]]
+* [[Paramorphism]]
+* [[Hylomorphism (computer science)|Hylomorphism]]
+
+== References ==
+{{commons category|Bird-Meertens formalism}}
+{{Reflist}}
+* {{cite book
+| author = Lambert Meertens
+| author-link = Lambert Meertens
+| year = 1986
+| chapter=Algorithmics: Towards programming as a mathematical activity.
+| chapter-url=https://ir.cwi.nl/pub/2686
+| editor=J.W. de Bakker |editor2=M. Hazewinkel |editor3=J.K. Lenstra
+| title= Mathematics and Computer Science, CWI Monographs Volume 1
+| pages=289–334
+| publisher=North-Holland
+}}
+* {{cite news
+| author = Lambert Meertens
+| author-link = Lambert Meertens
+| author2 = Richard Bird
+| author2-link = Richard Bird (computer scientist)
+| year = 1987
+| title = Two Exercises Found in a Book on Algorithmics
+| publisher = North-Holland
+| url=http://ftp.kestrel.edu/home/people/meertens/publications/papers/Two_exercises_found_in_a_book_on_Algorithmics.pdf
+}}
+* {{cite journal 
+| url=http://comjnl.oxfordjournals.org/content/32/2/122.full.pdf 
+| author=Richard S. Bird 
+| title=Algebraic Identities for Program Calculation 
+| journal=The Computer Journal 
+| volume=32 
+| number=2 
+| pages=122–126 
+| year=1989
+| doi=10.1093/comjnl/32.2.122
+}}
+* {{cite book
+| author = Richard Bird
+| author-link = Richard Bird (computer scientist)
+|author2=Oege de Moor
+| year = 1997
+| title = Algebra of Programming, International Series in Computing Science, Vol. 100
+| publisher = Prentice Hall
+| isbn = 0-13-507245-X
+}}
+
+*{{Cite conference| pages = 489–492| last = Cole| first = Murray| title = Parallel Programming, List Homomorphisms and the Maximum Segment Sum Problem| booktitle = Parallel Computing: Trends and Applications, PARCO 1993, Grenoble, France| date = 1993 | url = http://homepages.inf.ed.ac.uk/mic/Pubs/segmentsum.ps.gz}}
+
+{{DEFAULTSORT:Bird-Meertens Formalism}}
+[[Category:Functional languages]]
+[[Category:Theoretical computer science]]
+[[Category:Program derivation]]

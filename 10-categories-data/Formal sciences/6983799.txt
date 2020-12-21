@@ -1,0 +1,93 @@
+{{Infobox programming language
+| name                   = AgentSheets
+| title                  =
+| logo                   = <!-- Image name is enough -->
+| logo caption           = rule based visual programming
+| screenshot             = Agentsheets IDE.jpg <!-- Image name is enough -->
+| screenshot caption     = AgentSheets Tool
+| paradigm               = [[Object-oriented programming|object-oriented]], [[educational programming language|educational]], Conversational Programming
+| family                 =
+| released               = {{Start date and age|1991}}
+| designer               = [[Alexander Repenning]]
+| developer              =
+| latest release version = 4.0
+| latest release date    = {{Start date and age|2014|05|19|df=yes/no}}
+| latest preview version =
+| latest preview date    = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| typing                 =
+| scope                  =
+| implementations        =
+| dialects               =
+| influenced by          = [[Lisp (programming language)|Lisp]], [[Logo (programming language)|Logo]], [[Smalltalk]]
+| influenced             = [[Etoys (programming language)|Etoys]], [[Scratch (programming language)|Scratch]]
+| programming language   =
+| platform               = [[JVM]]
+| operating system       =
+| license                = proprietary
+| file ext               =
+| fileformat             =
+| website                = {{url|www.agentsheets.com}}
+}}
+'''AgentSheets''' was the first modern block-based programming language for kids. The idea of AgentSheets was to overcome syntactic challenges found in common text-based programming languages by using drag and drop mechanisms conceptualizing commands such as conditions and actions as editable blocks that could be composed into programs. AgentSheets is used to create media-rich projects such as games and interactive simulations. The main building blocks of AgentSheets are agents which are interactive objects programmed through rules. Using conditions agents can sense the user input including mouse, keyboard and in some versions even speech recognition and web page content. Using actions agents can move, produce sounds, open web pages, and compute formulae. 
+
+AgentSheets initially was considered a [[Cyberlearning]]<ref>[https://www.nsf.gov/pubs/2008/nsf08204/nsf08204.pdf Cyberlearning defined by the National Science Foundation]</ref> tool to teach students programming and related information technology skills through game design.
+
+AgentSheets is supported by a middle and high school curriculum called Scalable Game Design aligned with the ISTE [[National Educational Technology Standards]] (NETS). The mission of this project is to reinvent computer science in public schools by motivating & educating all students including women and underrepresented communities to learn about computer science through game design starting at the middle school level. Through this curriculum students build increasingly sophisticated games and, as part of this process, learn about computational concepts at the level of computational thinking that are relevant to game design as well as to computational science. The curriculum is made available through the Scalable Game Design Wiki.<ref>[http://scalablegamedesign.cs.colorado.edu/wiki/ Scalable Game Design Wiki] {{webarchive |url=https://web.archive.org/web/20110826185550/http://scalablegamedesign.cs.colorado.edu/wiki/ |date=August 26, 2011 }}</ref> Research investigating motivational aspects of computer science education in public schools is currently exploring the introduction of game design in representative regions of the USA including technology hubs, inner city, rural and remote/tribal areas. Previous research has already found that game design with AgentSheets is universally accessible across gender as well as ethnicity and is not limited to students interested in playing video games.<ref>[http://scalablegamedesign.cs.colorado.edu/wiki/Publications publications related to the Scalable Game Design project] {{webarchive |url=https://web.archive.org/web/20090415191232/http://scalablegamedesign.cs.colorado.edu/wiki/Publications |date=April 15, 2009 }}</ref>
+
+The results<ref>{{cite web|url=http://scalablegamedesign.cs.colorado.edu/gamewiki/images/2/27/Scalable_Game_Design_Results.pdf |title=Scalable Game Design Results  |accessdate=2010-02-21 |url-status=dead |archiveurl=https://web.archive.org/web/20100610162935/http://scalablegamedesign.cs.colorado.edu/gamewiki/images/2/27/Scalable_Game_Design_Results.pdf |archivedate=2010-06-10 |df= }}</ref> of the NSF ITEST program supported research investigating motivational and educational aspects of introducing computer science at the middle school level are extremely positive in terms of motivational levels, number of participants and participation of women and underrepresented communities. The participation is extremely high because most middle schools participating in the study have made Scalable Game Design a module that is part of existing required courses (e.g., computer power with keyboarding and power point). Many of the middle schools instruct all of their students in scalable game design reaching in some schools over 900 students per year, per school. Of the well over 1000 students participating in the project in the first semester over 52% were girls. Of the girls 85% enjoyed the scalable game design course and 78% would like to take another game design course.
+
+== Design ==
+
+The built-in [[drag-and-drop]] language is accessible enough that students without programming background can make their own simple [[Frogger]]-like game, and publish it on the Web, in their first session. At the same time, AgentSheets is powerful enough to make sophisticated [[The Sims]]-like games with [[artificial intelligence]]. To transition from visual programming to more traditional programming students can render their games into [[Java (programming language)|Java]] source code.
+
+Similar to a spreadsheet, an agentsheet is a computational grid. Unlike spreadsheets, this grid does not just contain numbers and strings but so called agents. These agents are represented by pictures, can be animated, make sounds, react to mouse/keyboard interactions, can read web pages, can speak and even recognize speech commands (Mac). This grid is well suited to build [[computational science]] applications modeling complex scientific phenomena with up to tens of thousands of agents. The grid is useful to build agent-based simulations including cellular automata or diffusion-based models. These models are used in a wide variety of applications. How does a mudslide work? When does a bridge collapse? How fragile are ecosystems? This ability to support game as well as computational science applications with the inclusion of scientific visualizations makes AgentSheets a unique [[computational thinking]] tool that is used computer science and [[STEM fields|STEM]] education.
+
+== How AgentSheets is used ==
+[[Image:AS-projects.jpg|thumb|right]]
+AgentSheets is used in a number of contexts worldwide:
+
+*Middle school students create [[food webs|food web]] simulations to explore the complexity of [[Ecologies|ecological systems]]
+*Middle school computer clubs students build computer games ranging from simple arcade classic such as [[Frogger]] to sophisticated AI-based games such as [[The sims|The Sims]].
+*High school students use AgentSheets as story telling and simulation tool of historical events such as the [[César Chávez]] grape boycott<ref>{{Cite web |url=http://l3d.cs.colorado.edu/systems/agentsheets/New-Vista/grape-boycott/ |title=grape boycott project with simulation |access-date=2008-10-01 |archive-url=https://web.archive.org/web/20080514015755/http://l3d.cs.colorado.edu/systems/agentsheets/New-Vista/grape-boycott/ |archive-date=2008-05-14 |url-status=dead }}</ref>
+*High school students simulate [[Predator-prey interaction|predator prey]] worlds and analyzed data created with spreadsheets and plots
+*After school science programs show students how to build their own science simulations ranging from forest fire simulations to the spreading of viruses.
+*High school students use AgentSheets as introduction to programming tool<ref>[http://triplets.cs.memphis.edu/index.php?page=project An example GK-12 NSF program using AgentSheets: the Memphis Tri-P-LETS project] {{webarchive |url=https://web.archive.org/web/20060902133023/http://triplets.cs.memphis.edu/index.php?page=project |date=September 2, 2006 }}</ref>
+*Graduate and undergraduate courses on educational game design use AgentSheets to prototype, playtest, refine, and publish simple educational games<ref>[http://www.cs.colorado.edu/~ralex/courses/gamelet2006/gamelets/Space%20Invaders/index.html sample games called gamelets]</ref>
+* Research exploring Artificial intelligence and collaborative agents, e.g., [[Antiobjects]]
+
+== History ==
+The original goal of this research was to explore new models of computational thinking. The first prototype of AgentSheets ran in 1989 at the [[University of Colorado at Boulder|University of Colorado]], [[NCAR]],  [[Connection Machine|Connection Machine 2]]. The Connection Machine is a highly parallel computer with up to 65,536 CPUs. Realizing how hard it was to program the Connection Machine the insight that "CPU cycles will always be ultimately cheaper than cognitive cycles" led to the exploration of several new [[programming paradigm]]s:
+* '''Agent-Based Graphical Rewrite Rules''': (1991) Behavior such as a train following train tracks can be specified through before/after rules. These rules can be created by [[programming by example]]. The user would tell the system to watch the train; the user would move the train on train track one step and stop recording; the system would create the rule allowing trains to follow train tracks. Agent-Based Graphical Rewrite Rules were later also used in the [[Stagecast Creator|KidSim/Cocoa/Creator]] kid programming tool.
+* '''Semantical Rewrite Rules''': (1994) It became clear that Agent-Based Graphical Rewrite Rules used in AgentSheets91 and KidSim/Cocoa/Creator were not powerful enough for a number of applications that need more general patterns. For instance, it was simple to create a rule to make a train follow a straight segment of track but the number of rules quickly exploded when trying to have trains follow all combinations of turns and intersections. Semantic rewrite rules could interpret rules topologically. With a single rule a user could create a complete train that follows train track behavior.
+* '''Programming by Analogous Examples''': (1995) New behavior can be created through analogies. For instance the behavior of a car can be described as analogy to trains. A car moves on a road like a train on a train track. A challenge to this approach is conceptual exception handling. Analogies are often either incomplete or too general. This requires that users can refine programs produced by Programming by Analogous Examples.
+* '''Tactile Programming''': (1996) AgentSheets becomes the world's first drag and drop educational programming environment. Drag and drop interfaces can be used to compose syntactically correct programs. In Visual AgenTalk (VAT), a rule-based visual programming language, users create rules by dragging and dropping conditions and actions from palettes.  The tactile aspect of Visual AgenTalk allows users to perceive through drag and drop what programs do. By dragging and dropping conditions, actions, rules and even methods onto agents they see the consequence of invoking program fragment without having to write a test program. Similar drag and drop programming can later be found in the [[Etoys (programming language)|Etoys]] language (part of [[Squeak]]), in [[Alice (software)|Alice]] and in [[Scratch programming language|Scratch]].
+* '''AgentSheets Inc.''': (1996) With the support of the National Science Foundation AgentSheets has become a commercial product. The programming model has been extended, more interaction modalities have been added (e.g., speech recognition (Mac)), scientific visualization has been refined (e.g., 3D real time plotting (Mac)), and AgentSheets has been localized (e.g., Japanese and Greek).
+* '''Scalable Game Design''': (2008) A game design based free curriculum covering computational thinking ideas from elementary to graduate school based on AgentSheets. The mission of Scalable Game Design is to: Reinventing computer science in public schools by motivating & educating all students including women and underrepresented communities to learn about computer science through game design starting at the middle school level. The project is funded by the National Science Foundation.
+* '''Conversational Programming''': (2010) AgentSheets 3 is the world first programming environment supporting computational thinking by providing information about the meaning of the program. Unlike visual programming approaches, which only help with syntactic challenges, such as avoiding missing semicolons, Conversational Programming helps with the semantics, that is the meaning of your program. Is this condition true right now? Would this rule fire? Why does that rule fail? A conversational programming agent will tell all this and more in a non intrusive kind of way.
+
+==See also==
+* [[Web based simulation]] (WBS)
+
+==References==
+<references/>
+
+== External links ==
+* {{official website|http://www.agentsheets.com}}
+* [http://sgd.cs.colorado.edu Scalable Game Design Curriculum using AgentSheets]
+* [http://edutechwiki.unige.ch/en/AgentSheets Educational use of AgentSheets in the Edutech Wiki]
+
+{{DEFAULTSORT:Agentsheets}}
+[[Category:Agent-based programming languages]]
+[[Category:Artificial intelligence]]
+[[Category:Object-oriented programming languages]]
+[[Category:Video game development software]]
+[[Category:Simulation software]]
+[[Category:Educational programming languages]]
+[[Category:Visual programming languages]]
+[[Category:Java (programming language)]]
+[[Category:Concurrent programming languages]]
+[[Category:Class-based programming languages]]
+[[Category:JVM programming languages]]
+[[Category:Cross-platform software]]
+[[Category:Pedagogic integrated development environments]]
+[[Category:Software for children]]

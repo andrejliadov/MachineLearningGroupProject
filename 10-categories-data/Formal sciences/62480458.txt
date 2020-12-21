@@ -1,0 +1,191 @@
+'''Sidorenko's conjecture''' is an important [[conjecture]] in the field of [[graph theory]], posed by [[Alexander Sidorenko(mathematician)|Alexander Sidorenko]] in 1986. Roughly speaking, the conjecture states that for any [[bipartite graph]] <math>H</math> and [[graph (discrete mathematics)|graph]] <math>G</math> on <math>n</math> vertices with average degree <math>pn</math>, there are at least <math>p^{|E(H)|} n^{|V(H)|}</math> labeled copies of <math>H</math> in <math>G</math>, up to a small error term. Formally, it provides an intuitive inequality about [[graph homomorphism]] densities in [[graphon|graphons]]. The conjectured inequality can be interpreted as a statement that the density of copies of <math>H</math> in a graph is asymptotically minimized by a random graph, as one would expect a <math>p^{|E(H)|}</math> fraction of possible subgraphs to be a copy of <math>H</math> if each edge exists with probability <math>p</math>.
+
+==Statement==
+
+Let <math>H</math> be a graph. Then <math>H</math> is said to have '''Sidorenko's property''' if, for all [[Graphon | graphons]] <math>W</math>, the inequality
+: <math>t(H,W)\geq t(K_2,W)^{|E(H)|}</math>
+is true, where <math>t(H,W)</math> is the [[homomorphism density]] of <math>H</math> in <math>W</math>.
+
+Sidorenko's conjecture (1986) states that every bipartite graph has Sidorenko's property.<ref>{{citation
+ | last = Sidorenko | first = Alexander
+ | doi = 10.1007/BF02988307
+ | issue = 2-4
+ | journal = Graphs and Combinatorics
+ | pages = 201–204
+ | title = A correlation inequality for bipartite graphs
+ | volume = 9
+ | year = 1993}}</ref>
+
+If <math>W</math> is a graph <math>G</math>, this means that the probability of a uniform random mapping from <math>V(H)</math> to <math>V(G)</math> being a homomorphism is at least the product over each edge in <math>H</math> of the probability of that edge being mapped to an edge in <math>G</math>. This roughly means that a randomly chosen graph with fixed number of vertices and average degree has the minimum number of labeled copies of <math>H</math>. This is not a surprising conjecture because the right hand side of the inequality is the probability of the mapping being a homomorphism if each edge map is independent. So one should expect the two sides to be at least of the same order. The natural extension to graphons would follow from the fact that every graphon is the [[limit point]] of some sequence of graphs.
+
+The requirement that <math>H</math> is bipartite to have Sidorenko's property is necessary — if <math>W</math> is a bipartite graph, then <math>t(K_3,W)=0</math> since <math>W</math> is triangle-free. But <math>t(K_2,W)</math> is twice the number of edges in <math>W</math>, so Sidorenko's property does not hold for <math>K_3</math>. A similar argument shows that no graph with an odd cycle has Sidorenko's property. Since a graph is bipartite if and only if it has no odd cycles, this implies that the only possible graphs that can have Sidorenko's property are bipartite graphs.
+
+===Equivalent formulation===
+
+Sidorenko's property is equivalent to the following reformulation:
+: For all graphs <math>G</math>, if <math>G</math> has <math>n</math> vertices and an average degree of <math>pn</math>, then <math>t(H,G)\geq p^{|E(H)|}</math>.
+
+This is equivalent because the number of homomorphisms from <math>K_2</math> to <math>G</math> is twice the number of edges in <math>G</math>, and the inequality only needs to be checked when <math>W</math> is a graph as previously mentioned.
+
+In this formulation, since the number of non-injective homomorphisms from <math>H</math> to <math>G</math> is at most a constant times <math>n^{|V(H)|-1}</math>, Sidorenko's property would imply that there are at least <math>(p^{|E(H)|}-o(1))n^{|V(H)|}</math> labeled copies of <math>H</math> in <math>G</math>.
+
+==Examples==
+
+As previously noted, to prove Sidorenko's property it suffices to demonstrate the inequality for all graphs <math>G</math>. Throughout this section, <math>G</math> is a graph on <math>n</math> vertices with average degree <math>pn</math>. The quantity <math>\operatorname{hom}(H,G)</math> refers to the number of homomorphisms from <math>H</math> to <math>G</math>. This quantity is the same as <math>n^{|V(H)|}t(H,G)</math>.
+
+Elementary proofs of Sidorenko's property for some graphs follow from the [[Cauchy–Schwarz inequality]] or [[Hölder's inequality]]. Others can be done by using [[spectral graph theory]], especially noting the observation that the number of closed paths of length <math>\ell</math> from vertex <math>i</math> to vertex <math>j</math> in <math>G</math> is the component in the <math>i</math>th row and <math>j</math>th column of the matrix <math>A^\ell</math>, where <math>A</math> is the [[adjacency matrix]] of <math>G</math>.
+
+===Cauchy–Schwarz: The 4-cycle ''C''<sub>4</sub>===
+
+By fixing two vertices <math>u</math> and <math>v</math> of <math>G</math>, each copy of <math>C_4</math> that have <math>u</math> and <math>v</math> on opposite ends can be identified by choosing two (not necessarily distinct) common neighbors of <math>u</math> and <math>v</math>. Letting <math>\operatorname{codeg}(u,v)</math> denote the ''codegree'' of <math>u</math> and <math>v</math> (i.e. the number of common neighbors), this implies
+: <math>\operatorname{hom}(C_4,G)=\sum_{u,v\in V(G)}\operatorname{codeg}(u,v)^2\geq\frac{1}{n^2}\left(\sum_{u,v\in V(G)}\operatorname{codeg}(u,v)\right)^2</math>
+by the Cauchy–Schwarz inequality. The sum has now become a count of all pairs of vertices and their common neighbors, which is the same as the count of all vertices and pairs of their neighbors. So
+: <math>\operatorname{hom}(C_4,G)\geq\frac{1}{n^2}\left(\sum_{x\in V(G)}\deg(x)^2\right)^2\geq\frac{1}{n^2}\left(\frac{1}{n}\left(\sum_{x\in V(G)} \deg(x) \right)^2\right)^2=\frac{1}{n^2}\left(\frac{1}{n}(n\cdot pn)^2\right)^2=p^4n^4</math>
+by Cauchy–Schwarz again. So
+: <math>t(C_4,G)=\frac{\operatorname{hom}(C_4,G)}{n^4}\geq p^4</math>
+as desired.
+
+===Spectral graph theory: The 2''k''-cycle ''C''<sub>2''k''</sub>===
+
+Although the Cauchy–Schwarz approach for <math>C_4</math> is elegant and elementary, it does not immediately generalize to all even cycles. However, one can apply spectral graph theory to prove that all even cycles have Sidorenko's property. Note that odd cycles are not accounted for in Sidorenko's conjecture because they are not bipartite.
+
+Using the observation about closed paths, it follows that <math>\operatorname{hom}(C_{2k},G)</math> is the sum of the diagonal entries in <math>A^{2k}</math>. This is equal to the [[trace (linear algebra)|trace]] of <math>A^{2k}</math>, which in turn is equal to the sum of the <math>2k</math>th powers of the [[eigenvalues and eigenvectors|eigenvalues]] of <math>A</math>. If <math>\lambda_1\geq\lambda_2\geq\dots\geq\lambda_n</math> are the eigenvalues of <math>A</math>, then the [[min-max theorem]] implies that
+: <math>\lambda_1\geq\frac{\mathbf{1}^\intercal A\mathbf{1}}{\mathbf{1}^\intercal\mathbf{1}}=\frac{1}{n} \sum_{x\in V(G)}\deg(x)=pn,</math>
+where <math>\mathbf{1}</math> is the vector with <math>n</math> components, all of which are <math>1</math>. But then
+: <math>\operatorname{hom}(C_{2k},G)=\sum_{i=1}^n\lambda_i^{2k}\geq\lambda_1^{2k}\geq p^{2k}n^{2k}</math>
+because the eigenvalues of a [[symmetric matrix|real symmetric matrix]] are real. So
+: <math>t(C_{2k},G)=\frac{\operatorname{hom}(C_{2k},G)}{n^{2k}}\geq p^{2k}</math>
+as desired.
+
+===Entropy: Paths of length 3===
+
+J.L. Xiang Li and [[Balázs Szegedy]] (2011) introduced the idea of using [[entropy (information theory)|entropy]] to prove some cases of Sidorenko's conjecture. Szegedy (2015) later applied the ideas further to prove that an even wider class of bipartite graphs have Sidorenko's property.<ref>{{citation
+ | last = Szegedy | first = Balázs | authorlink = Balázs Szegedy
+ | arxiv = 1406.6738
+ | title = An information theoretic approach to Sidorenko's conjecture
+ | year = 2015}}</ref> While Szegedy's proof wound up being abstract and technical, [[Timothy Gowers|Tim Gowers]] and Jason Long reduced the argument to a simpler one for specific cases such as paths of length <math>3</math>.<ref>{{cite web |last1=Gowers |first1=Tim |title=Entropy and Sidorenko’s conjecture — after Szegedy |url=https://gowers.wordpress.com/2015/11/18/entropy-and-sidorenkos-conjecture-after-szegedy/ |website=Gowers's Weblog |accessdate=1 December 2019}}</ref> In essence, the proof chooses a nice [[probability distribution]] of choosing the vertices in the path and applies [[Jensen's inequality]] (i.e. convexity) to deduce the inequality.
+
+==Partial results==
+
+Here is a list of some bipartite graphs <math>H</math> which have been shown to have Sidorenko's property. Let <math>H</math> have bipartition <math>A\sqcup B</math>.
+
+* [[Path (graph theory)|Paths]] have Sidorenko's property, as shown by Mulholland and Smith in 1959 (before Sidorenko formulated the conjecture).<ref>{{citation
+ | last1 = Mulholland | first1 = H.P.
+ | last2 = Smith | first2 = Cedric | author2-link = Cedric Smith (statistician)
+ | doi = 10.1080/00029890.1959.11989387
+ | issue = 66
+ | journal = American Mathematical Monthly
+ | pages = 673-683
+ | title = An inequality arising in genetical theory
+ | year = 1959}}</ref>
+* [[Tree (graph theory)|Trees]] have Sidorenko's property, generalizing paths. This was shown by Sidorenko in a 1991 paper.<ref>{{citation
+ | last = Sidorenko | first = Alexander
+ | doi = 10.1515/dma.1992.2.5.489
+ | issue = 3
+ | journal = Diskretnaya Matematika
+ | pages = 50–65
+ | title = Inequalities for functionals generated by bipartite graphs
+ | year = 1991}}</ref>
+* [[Cycle (graph theory)|Cycles of even length]] have Sidorenko's property as previously shown. Sidorenko also demonstrated this in his 1991 paper.
+* [[Complete bipartite graph]]s have Sidorenko's property. This was also shown in Sidorenko's 1991 paper.
+* Bipartite graphs with <math>\min\{|A|,|B|\}\leq4</math> have Sidorenko's property. This was also shown in Sidorenko's 1991 paper.
+* [[Hypercube graph]]s (generalizations of <math>Q_3</math>) have Sidorenko's property, as shown by Hatami in 2008.<ref>{{citation
+ | last = Hatami | first = Hamed
+ | arxiv = 0806.0047
+ | issue = 175
+ | journal = Israel Journal of Mathematics
+ | pages = 125–150
+ | title = Graph norms and Sidorenko's conjecture
+ | year = 2010}}</ref>
+** More generally, norming graphs (as introduced by Hatami) have Sidorenko's property.
+* If there is a vertex in <math>A</math> that is neighbors with every vertex in <math>B</math> (or vice versa), then <math>H</math> has Sidorenko's property as shown by Conlon, Fox, and Sudakov in 2010.<ref>{{citation
+ | last1 = Conlon | first1 = David | author1-link = David Conlon
+ | last2 = Fox | first2 = Jacob | author2-link = Jacob Fox
+ | last3 = Sudakov | first3 = Benny | author3-link = Benny Sudakov
+ | arxiv = 1004.4236
+ | issue = 20
+ | journal = Geometric and Functional Analysis
+ | pages = 1354-1366
+ | title = An approximate version of Sidorenko’s conjecture
+ | year = 2010}}</ref> This proof used the [[dependent random choice]] method.
+* For all bipartite graphs <math>H</math>, there is some positive integer <math>p</math> such that the ''<math>p</math>-blow-up'' of <math>B</math> has Sidorenko's property. Here, the <math>p</math>-blow-up of <math>H</math> is formed by replacing each vertex in <math>B</math> with <math>p</math> copies of itself, each connected with its original neighbors in <math>A</math>. This was shown by Conlon and Lee in 2018.<ref>{{citation
+ | last1 = Conlon | first1 = David | author1-link = David Conlon
+ | last2 = Lee | first2 = Joonkyung
+ | arxiv = 1809.01259
+ | title = Sidorenko's conjecture for blow-ups
+ | year = 2018}}</ref>
+* Some recursive approaches have been attempted, which take a collection of graphs that have Sidorenko's property to create a new graph that has Sidorenko's property. The main progress in this manner was done by Sidorenko in his 1991 paper, Li and Szegedy in 2011<ref>{{citation
+ | last1 = Li | first1 = J.L. Xiang
+ | last2 = Szegedy | first2 = Balázs | author2-link = Balázs Szegedy
+ | arxiv = 1107.1153
+ | title = On the logarithimic calculus and Sidorenko's conjecture
+ | year = 2011}}</ref>, and Kim, Lee, and Lee in 2013<ref>{{citation
+ | last1 = Kim | first1 = Jeong Han | author1-link = Jeong Han Kim
+ | last2 = Lee | first2 = Choongbum | 
+ | last3 = Lee | first3 = Joonkyung
+ | arxiv = 1310.4383
+ | title = Two Approaches to Sidorenko's Conjecture
+ | year = 2013}}</ref>.
+** Li and Szegedy's paper also used entropy methods to prove the property for a class of graphs called "reflection trees."
+** Kim, Lee, and Lee's paper extended this idea to a class of graphs with a tree-like substructure called "tree-arrangeable graphs."
+
+However, there are graphs for which Sidorenko's conjecture is still open. An example is the "Möbius strip" graph <math>K_{5,5}\setminus C_{10}</math>, formed by removing a <math>10</math>-cycle from the complete bipartite graph with parts of size <math>5</math>.
+
+[[László Lovász]] proved a local version of Sidorenko's conjecture, i.e. for graphs that are "close" to random graphs in a sense of cut norm.<ref>{{citation
+ | last1 = Lovász | first1 = László | authorlink = László Lovász
+ | arxiv = 1004.3026
+ | title = Subgraph densities in signed graphons and the local Sidorenko conjecture
+ | year = 2010}}</ref>
+
+==Forcing conjecture==
+
+A sequence of graphs <math>\{G_n\}_{n=1}^{\infty}</math> is called ''quasi-random with density <math>p</math>'' for some density <math>0<p<1</math> if for every graph <math>H</math>,
+: <math>t(H,G_n)=(1+o(1))p^{|E(H)|}.</math>
+The sequence of graphs would thus have properties of the [[Erdős–Rényi model|Erdős–Rényi random graph]] <math>G(n,p)</math>.
+
+If the edge density <math>t(K_2,G_n)</math> is fixed at <math>(1+o(1))p</math>, then the condition implies that the sequence of graphs is near the equality case in Sidorenko's property for every graph <math>H</math>.
+
+From Chung, Graham, and Wilson's 1989 paper about quasi-random graphs, it suffices for the <math>C_4</math> count to match what would be expected of a random graph (i.e. the condition holds for <math>H=C_4</math>).<ref>{{citation
+ | last1 = Chung | first1 = Fan | author1-link = Fan Chung
+ | last2 = Graham | first2 = Ronald | author2-link = Ronald Graham
+ | last3 = Wilson | first3 = Richard | author3-link = R. M. Wilson
+ | doi = 10.1007/BF02125347
+ | issue = 4
+ | journal = Combinatorica
+ | pages = 345–362
+ | title = Quasi-random graphs
+ | volume = 9
+ | year = 1989}}</ref> The paper also asks which graphs <math>H</math> have this property besides <math>C_4</math>. Such graphs are called ''forcing graphs'' as their count controls the quasi-randomness of a sequence of graphs.
+
+The forcing conjecture states the following:
+: A graph <math>H</math> is forcing if and only if it is bipartite and not a tree.
+It is straightforward to see that if <math>H</math> is forcing, then it is bipartite and not a tree. Some examples of forcing graphs are even cycles (shown by Chung, Graham, and Wilson). Skokan and Thoma showed that all complete bipartite graphs that are not trees are forcing.<ref>{{citation
+ | last1 = Skokan | first1 = Jozef
+ | last2 = Thoma | first2 = Lubos
+ | doi = 10.1007/s00373-004-0556-1
+ | issue = 2
+ | journal = Graphs and Combinatorics
+ | pages = 255–262
+ | title = Bipartite Subgraphs and Quasi-Randomness
+ | volume = 20
+ | year = 2004}}</ref>
+
+Sidorenko's conjecture follows from the forcing conjecture. Furthermore, the forcing conjecture would show that graphs that are close to equality in Sidorenko's property must satisfy quasi-randomness conditions.<ref>{{citation
+ | last1 = Conlon | first1 = David | author1-link = David Conlon
+ | last2 = Fox | first2 = Jacob | author2-link = Jacob Fox
+ | last3 = Sudakov | first3 = Benny | author3-link = Benny Sudakov
+ | arxiv = 1004.4236
+ | issue = 20
+ | journal = Geometric and Functional Analysis
+ | pages = 1354–1366
+ | title = An approximate version of Sidorenko’s conjecture
+ | year = 2010}}</ref>
+
+== References ==
+<!-- Inline citations added to your article will automatically display here. See en.wikipedia.org/wiki/WP:REFB for instructions on how to add citations. -->
+{{reflist}}
+
+
+
+[[Category:Graph theory]]
+[[Category:Mathematics]]

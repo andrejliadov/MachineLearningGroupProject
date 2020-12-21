@@ -1,0 +1,88 @@
+{{distinguish|mortality rate|#Infection fatality rate{{!}}infection fatality rate}}
+{{short description|Proportion of patients who die of a particular medical condition out of all who have this condition within a given time frame}}
+
+In [[epidemiology]], a '''case fatality rate''' ('''CFR''') – sometimes called '''case fatality risk''' or '''case-fatality ratio''' – is the proportion of deaths from a certain disease compared to the total number of people diagnosed with the disease for a particular period. A CFR is conventionally expressed as a percentage and represents a measure of disease severity.<ref>{{Britannica|2059316|Case fatality rate|Rebecca A. Harrington}}</ref> CFRs are most often used for diseases with discrete, limited-time courses, such as outbreaks of acute infections.  A CFR can only be considered final when all the cases have been resolved (either died or recovered). The preliminary CFR, for example, during an outbreak with a high daily increase and long resolution time would be substantially lower than the final CFR.
+
+==Terminology==
+The ''[[mortality rate]]''  –  often confused with the CFR  –  is a measure of the relative number of deaths (either in general, or due to a specific cause) within the entire population per unit of time.<ref>For example, a [[diabetes]] mortality rate of 5 per 1,000 or 500 per 100,000 characterizes the observation of 50 deaths due to diabetes in a population of 10,000 in a given year. (See Harrington, ''[[Op. cit.]]''.)</ref> A CFR, in contrast, is the number of dead among the number of diagnosed cases only.<ref>{{Cite web|url=https://www.elsevier.com/__data/assets/pdf_file/0010/977698/Coronavirus-novel-coronavirus-COVID-19-infection_2020-03-25.pdf|title=Coronavirus: novel coronavirus (COVID-19) infection|date=2020-03-25|website=Elsevier|url-status=dead|archive-url=https://web.archive.org/web/20200327171140/https://www.elsevier.com/__data/assets/pdf_file/0010/977698/Coronavirus-novel-coronavirus-COVID-19-infection_2020-03-25.pdf|archive-date=2020-03-27|access-date=2020-03-27}}</ref>
+
+Sometimes the term ''case fatality ratio'' is used interchangeably with ''case fatality rate'', but they are not the same. A case fatality ratio is a comparison between two different case fatality rates, expressed as a ratio. It is used to compare the severity of different diseases or to assess the impact of interventions.<ref>{{Cite web|url=https://wiki.ecdc.europa.eu/fem/Pages/Attack%20rates%20and%20case%20fatality.aspx|title=Attack rates and case fatality|last=Bosman|first=Arnold|date=2014-05-28|website=Field Epidemiology Manual Wiki|publisher=[[ECDC]]|url-status=live|archive-url=https://web.archive.org/web/20200325165805/https://wiki.ecdc.europa.eu/fem/Pages/Attack%20rates%20and%20case%20fatality.aspx|archive-date=2020-03-25|access-date=2020-03-25}}</ref>
+
+From a mathematical point of view, CFRs, which take values between 0 and 1 (or 0% and 100%, ''i.e.'', nothing and unity), are actually a measure of [[risk]]  (''case fatality risk'') – that is, they are a [[incidence proportions|proportion of incidence]], although they don't reflect a [[incidence (epidemiology)|disease's incidence]]. They are neither [[rate (mathematics)|rate]]s, [[incidence rate]]s, nor [[ratio]]s (none of which are limited to the range 0–1). They do not take into account time from disease onset to death.<ref>Entry “Case fatality rate” in Last, John M. (2001), ''A Dictionary of Epidemiology'', 4th edition; [[Oxford University Press]], p. 24. {{ISBN?}}</ref><ref>Hennekens, Charles H. and Julie E. Buring (1987), ''Epidemiology in Medicine'', [[Little, Brown and Company]], p. 63. {{ISBN?}}</ref>
+
+==Infection fatality rate==
+Like the case fatality rate, the term '''infection fatality rate''' (IFR) also applies to [[infectious disease]] outbreaks, but represents the proportion of deaths among all infected individuals, including all [[asymptomatic]] and undiagnosed subjects. It is closely related to the CFR, but attempts to additionally account for inapparent infections among healthy people.<ref>{{cite web |title=Infection fatality rate |url=https://flexikon.doccheck.com/de/Infection_fatality_rate |publisher=DocCheck Medical Services GmbH |access-date=25 March 2020}}</ref> The  IFR differs from the CFR in that it aims to estimate the fatality rate in both sick and healthy infected: the detected disease (cases) and those with an undetected disease (asymptomatic and not tested group).<ref>{{cite web |title=Global Covid-19 Case Fatality Rates |url=https://www.cebm.net/global-covid-19-case-fatality-rates/ |publisher=Centre for Evidence-Based Medicine |access-date=25 March 2020}}</ref> (Individuals who are infected, but show no symptoms, are said to have [[Subclinical infection|"unapparent", "silent" or "subclinical"]] infections and may inadvertently infect others.) By definition, the IFR cannot exceed the CFR, because the former adds asymptomatic cases to its denominator.
+
+==Example calculation==
+If 100 people in a community are diagnosed with the same disease, and 9 of them subsequently die from the effects of the disease, the CFR would be 9%. If some of the cases have not yet resolved (neither died nor fully recovered) at the time of analysis, a later analysis might take into account additional deaths and arrive at a higher estimate of the CFR, if the unresolved cases were included as recovered in the earlier analysis. Alternatively, it might later be established that a higher number of people were infected with the pathogen, resulting in an IFR lower than the CFR.
+
+==Real-world examples==
+{{Main|List of human disease case fatality rates}}
+<!-- Examples are referenced in article linked above. -->
+
+The following examples show some CFRs for diseases in the real world:
+
+*The CFR for the [[1918 flu pandemic|Spanish (1918) flu]] was <2.5%,<ref name="taubenberger2006" /> but about 0.1% for the [[Influenza A virus subtype H2N2#Asian flu|Asian (1956–58)]] and [[Influenza A virus subtype H3N2#Hong Kong Flu (1968–1969)|Hong Kong (1968–69) flu]]s,<ref name="li2008">{{Cite journal
+|last=Li
+|first=F C K
+|author2=B C K Choi|author3=T Sly|author4=A W P Pak
+|s2cid=34200426
+|date=June 2008
+|title=Finding the real case-fatality rate of H5N1 avian influenza
+|journal=Journal of Epidemiology and Community Health
+|volume=62
+|issue=6
+|pages=555–559
+|doi=10.1136/jech.2007.064030
+|issn=0143-005X
+|url=http://jech.bmj.com/cgi/content/abstract/62/6/555
+|access-date=2009-04-29
+|pmid=18477756}}</ref> and <0.1% for other influenza pandemics.<ref name="taubenberger2006">{{Cite journal 
+ |last=Taubenberger 
+ |first=Jeffery K. 
+ |author2=David M. Morens 
+ |date=January 2006 
+ |title=1918 influenza: the mother of all pandemics 
+ |journal=Emerging Infectious Diseases 
+ |volume=12 
+ |issue=1 
+ |publisher=Coordinating Center for Infectious Diseases, Centers for Disease Control and Prevention 
+ |doi=10.3201/eid1201.050979 
+ |url=https://www.cdc.gov/ncidod/EID/vol12no01/05-0979.htm 
+ |access-date=2009-04-17 
+ |pmid=16494711 
+ |pmc=3291398 
+ |pages=15–22 
+ |url-status=dead 
+ |archiveurl=https://www.webcitation.org/5kCUlGdKu?url=http://www.cdc.gov/ncidod/EID/vol12no01/05-0979.htm 
+ |archivedate=2009-10-01 
+ }}</ref>
+* Estimating an accurate CFR for [[COVID-19]] is impossible, due to issues with underascertainment of cases as the pandemic is ongoing; this has led to widely variable estimates, ranging from less than 0.1% to 25%.<ref>{{cite web |author=World Health Organization |url=https://www.who.int/news-room/commentaries/detail/estimating-mortality-from-covid-19 |title=Estimating mortality from COVID-19: Scientific Brief |date=2020-08-04 |accessdate=2020-12-16}}</ref> A meta analysis found the median IFR to be 0.27% (corrected 0.23%), with the lowest IFR in countries with the lowest total numbers of cases, and the highest in countries with the highest number of cases.<ref>{{cite report |author=John P A Ioannidis |url=https://www.who.int/bulletin/online_first/BLT.20.265892.pdf |title=Infection fatality rate of COVID-19 inferred from seroprevalence data |date=2020-10-14 |accessdate=2020-12-16 |publisher=[[World Health Organization]]}}</ref>
+*[[Legionnaires' disease]] has a CFR of about 15%.
+*[[Yellow fever]] has a CFR of about 3–7.5%.
+*[[Bubonic plague]] has the best prognosis of the three main variants of plague, but if left untreated, has a CFR >60%.
+*[[Ebola virus disease|Ebola virus]] is among the deadliest viruses, with a CFR as high as 90%.
+*[[Naegleriasis]] (also known as primary amoebic meningoencephalitis), caused by the unicellular ''[[Naegleria fowleri]]'', nearly always results in death, with a CFR >99%.
+*[[Rabies]] virus is almost invariably fatal if left untreated, and so has a CFR approaching 100%; however, patients generally respond well to prompt [[post-exposure prophylaxis]].
+*[[Prion diseases]] are progressive and always fatal, regardless of treatment.
+
+==See also==
+{{Portal|Medicine}}
+*[[List of human disease case fatality rates]]
+*{{annotated link|Mortality rate}}
+*{{annotated link|Pandemic severity index}}
+
+==References and notes==
+{{Reflist}}
+
+==External links==
+*[https://web.archive.org/web/20051228190215/http://www.ktl.fi/publications/monica/carpfish/appendd/cfdef.htm Definitions of case fatality for coronary events in the WHO MONICA Project]
+*[https://web.archive.org/web/20090501034534/http://www.agoravox.com/article.php3?id_article=9820 Swine flu: what do CFR, virulence and mortality rate mean?]
+
+{{Death}}
+{{Medical research studies}}
+
+[[Category:Epidemiology]]
+[[Category:Rates]]
+[[Category:Articles containing video clips]]
+[[Category:Death]]

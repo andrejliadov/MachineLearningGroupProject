@@ -1,0 +1,304 @@
+{{short description|Principle of least time}}
+{{anchor|Fig1}}[[File:Fermat Snellius.svg|thumb|'''Fig.{{nnbsp}}1''':{{big|&nbsp;}}Fermat's principle in the case of refraction of light at a flat surface between (say) air and water. Given an object-point ''A'' in the air, and an observation point ''B'' in the water, the refraction point ''P'' is that which minimizes the time taken by the light to travel the path ''APB''. If we seek the required value of ''x'', we find that the angles ''&alpha;'' and ''&beta;'' satisfy [[Snell's&nbsp;law]].]]
+
+'''Fermat's principle''', also known as the '''principle of least time''', is the link between [[geometrical optics|ray&nbsp;optics]] and [[physical optics|wave&nbsp;optics]]. In its original "strong" form,<ref>Cf. [[#BW|Born & Wolf, 1970]], p.{{nnbsp}}740.</ref> Fermat's principle states that the path taken by [[Line (geometry)#Ray|a ray]] between two given points is the path that can be traversed in the least time. In order to be true in all cases, this statement must be weakened by replacing the "least" time with a time that is "[[stationary point|stationary]]" with respect to variations of the path &mdash; so that a deviation in the path causes, at most, a ''second-order'' change in the traversal time. To put it loosely, a ray path is surrounded by close paths that can be traversed in ''very'' close times. It [[#A ray as a signal path (line of sight)|can be shown]] that this technical definition corresponds to more intuitive notions of a ray, such as a line of sight or the path of a narrow beam.
+<!-- Fermat's principle can be expressed in the forms of [[Maupertuis's principle|Maupertuis's]] and [[Hamilton's principle]]s in [[classical mechanics]]. -->
+
+First proposed by the French mathematician [[Pierre de Fermat]] in 1662, as a means of explaining the [[Snell's law|ordinary law of refraction]] of light (Fig.{{nnbsp}}1), Fermat's principle was initially controversial because it seemed to ascribe knowledge and intent to nature. Not until the 19th century was it understood that nature's ability to test alternative paths is merely a fundamental property of waves.<ref>Cf.{{tsp}} [[#Young1809|Young, 1809]], p.{{nnbsp}}342; [[#SecMem|Fresnel, 1827, tr.&nbsp;Hobson]], {{nowrap|pp.{{tsp}}294–6,{{tsp}}310–11}}; [[#deWitte|De Witte, 1959]], p.{{nnbsp}}293n.</ref> If points ''A'' and ''B'' are given, a [[wavefront]] expanding from ''A'' sweeps all possible ray paths radiating from ''A'', whether they pass through ''B'' or not. If the wavefront reaches point ''B'', it sweeps not only the ''ray'' path(s) from ''A'' to ''B'', but also an infinitude of nearby paths with the same endpoints. Fermat's principle describes any ray that happens to reach point&nbsp;''B''; there is no implication that the ray "knew" the quickest path or "intended" to take that path.
+
+{{anchor|Fig2}}[[File:Fermat-Huygens principle.svg|thumb|320px|'''Fig.{{nnbsp}}2''':{{big|&nbsp;}}Two points {{mvar|P}} and {{mvar|P&prime;}} on a path from ''A'' to ''B''. For the purposes of Fermat's principle, the propagation time from {{mvar|P}} to {{mvar|P&prime;}} is taken as for a point-source at {{mvar|P}}, not (e.g.) for an arbitrary wavefront ''W'' passing through {{mvar|P}}. The surface ''&Sigma;''{{hsp}} (with unit normal '''n̂''' at {{mvar|P&prime;}}) is the locus of points that a disturbance at {{mvar|P}} can reach in the same time that it takes to reach {{mvar|P&prime;}}; in other words, ''&Sigma;'' is the secondary wavefront with radius {{mvar|PP&prime;}}. (The medium is ''not'' assumed to be homogeneous or [[isotropy|isotropic]].)]]
+
+For the purpose of comparing traversal times, the time from one point to the next nominated point is taken as if the first point were a ''point-source''.<ref>[[#deWitte|De Witte (1959)]] invokes the point-source condition at the outset (p.{{nnbsp}}294, col.{{nnbsp}}1).</ref> Without this condition, the traversal time would be ambiguous; for example, if the propagation time from {{mvar|P}} to {{mvar|P&prime;}} were reckoned from an arbitrary wavefront ''W'' containing {{mvar|P}}{{hsp}} (Fig.{{nnbsp}}2), that time could be made arbitrarily small by suitably angling the wavefront.
+
+Treating a point on the path as a source is the minimum requirement of [[Huygens' principle]], and is part of the [[#Derivation|explanation]] of Fermat's principle. But it [[#Equivalence to Huygens' construction|can also be shown]] that the geometric ''construction'' by which [[Christiaan Huygens|Huygens]] tried to apply his own principle (as distinct from the principle itself) is simply an invocation of Fermat's principle.<ref>[[#deWitte|De Witte (1959)]] gives a proof based on [[calculus of variations]]. The present article offers a [[#Equivalence to Huygens' construction|simpler explanation]].</ref> Hence all the conclusions that Huygens drew from that construction &mdash; including, without limitation, the laws of rectilinear propagation of light, ordinary reflection, ordinary refraction, and the extraordinary refraction of "[[Iceland spar|Iceland crystal]]" (calcite) &mdash; are also consequences of Fermat's principle.
+
+{{vpad|1=1ex|clear=left}}
+
+== Derivation ==
+
+=== Sufficient conditions ===
+
+Let us suppose that:
+:(1)&nbsp; A disturbance propagates sequentially through a [[transmission medium|medium]] (a&nbsp;vacuum or some material, not necessarily homogeneous or [[isotropy|isotropic]]), without [[action at a distance]];
+
+:(2)&nbsp; During propagation, the influence of the disturbance at any intermediate point ''P'' upon surrounding points has a non-zero angular spread (as if ''P'' were a source), so that a disturbance originating at any point ''A'' arrives at any other point ''B'' via an infinitude of paths, by which ''B'' receives an infinitude of delayed versions of the disturbance at ''A'';<ref group=Note>Assumption (2) almost follows from (1) because: (a)&nbsp;to the extent that the disturbance at the intermediate point ''P'' can be represented by a [[scalar (physics)|scalar]], its influence is omnidirectional; (b)&nbsp;to the extent that it can be represented by a [[Euclidean vector|vector]] in the supposed direction of propagation (as in a [[longitudinal wave]]), it has a non-zero component in a range of neighboring directions; and (c)&nbsp;to the extent that it can be represented by a vector ''across'' the supposed direction of propagation (as in a [[transverse wave]]), it has a non-zero component ''across'' a range of neighboring directions. Thus there are infinitely many paths from ''A'' to ''B'' because there are infinitely many paths radiating from every intermediate point ''P''.</ref> and
+
+:(3)&nbsp; These delayed versions of the disturbance will reinforce each other at ''B'' if they are synchronized within some tolerance.
+
+Then the various propagation paths from ''A'' to ''B'' will help each other if their traversal times agree within the said tolerance. For a small tolerance (in the limiting case), the permissible range of variations of the path is maximized if the path is such that its traversal time is ''stationary'' with respect to the variations, so that a variation of the path causes at most a ''second-order'' change in the traversal time.{{r|lipsons}}
+
+The most obvious example of a stationarity in traversal time is a (local or global) minimum &mdash; that is, a path of ''least'' time, as in the "strong" form of Fermat's principle. But that condition is not essential to the argument.<ref group=Note>If a ray is reflected off a sufficiently concave surface, the point of reflection is such that the total traversal time is a local maximum, ''provided'' that the paths to and from the point of reflection, considered separately, are required to be possible ray paths. But Fermat's principle imposes no such restriction; and without that restriction it is always possible to vary the overall path so as to increase its traversal time. Thus the stationary traversal time of the ray path is never a local maximum (cf.&nbsp;[[#BW|Born & Wolf, 1970]], p.{{nnbsp}}129n). But, as the case of the concave reflector shows, neither is it necessarily a local minimum. Hence it is ''not'' necessarily an extremum. We must therefore be content to call it a stationarity.</ref>
+
+Having established that a path of stationary traversal time is reinforced by a maximally wide corridor of neighboring paths, we still need to explain how this reinforcement corresponds to intuitive notions of a ray. But, for brevity in the explanations, let us first ''define'' a ray path as a path of stationary traversal time.
+
+=== A ray as a signal path (line of sight) ===
+
+If the corridor of paths reinforcing a ray path from ''A'' to ''B'' is substantially obstructed, this will significantly alter the disturbance reaching ''B'' from ''A'' &mdash; unlike a similar-sized obstruction ''outside'' any such corridor, blocking paths that do not reinforce each other. The former obstruction will significantly disrupt the signal reaching ''B'' from ''A'', while the latter will not; thus the ray path marks a ''signal'' path. If the signal is visible light, the former obstruction will significantly affect the appearance of an object at ''A'' as seen by an observer at ''B'', while the latter will not; so the ray path marks a ''line of sight''.
+
+In optical experiments, a line of sight is routinely assumed to be a ray path.<ref>See (e.g.) [[#ToL|Huygens, 1690, tr.&nbsp;Thompson]], pp.{{nnbsp}}47,{{px2}}55,{{px2}}58,{{px2}}60,{{px2}}{{nowrap|82–6}}; [[#Opticks|Newton, 1730]], pp.{{nnbsp}}8,{{px2}}18,{{px2}}137,{{px2}}143,{{px2}}166,{{px2}}173.</ref>
+
+=== A ray as an energy path (beam) ===
+
+[[File:Concave lens.jpg|thumb|320px|'''Fig.{{nnbsp}}3''':{{big|&nbsp;}}An experiment demonstrating refraction (and partial reflection) of ''rays'' &mdash; approximated by, or contained in, narrow beams]]
+
+If the corridor of paths reinforcing a ray path from ''A'' to ''B'' is substantially obstructed, this will significantly affect the ''energy''<ref group=Note>More precisely, the [[energy flux density]].</ref> reaching ''B'' from ''A'' &mdash; unlike a similar-sized obstruction outside any such corridor. Thus the ray path marks an ''energy'' path &mdash; as does a beam.
+
+Suppose that a wavefront expanding from point ''A'' passes point ''P'', which lies on a ray path from point ''A'' to point ''B''. By definition, all points on the wavefront have the same propagation time from ''A''. Now let the wavefront be blocked except for a window, centered on ''P'', and small enough to lie within the corridor of paths that reinforce the ray path from ''A'' to ''B''. Then all points on the unobstructed portion of the wavefront will have, nearly enough, equal propagation times to ''B'', but ''not'' to points in other directions, so that ''B'' will be in the direction of peak intensity of the beam admitted through the window.<ref>This is the essence of the argument given by Fresnel ([[#SecMem|1827, tr.&nbsp;Hobson]], {{nowrap|pp.{{tsp}}310–11}}).</ref> So the ray path marks the beam. And in optical experiments, a beam is routinely considered as a collection of rays or (if it is narrow) as an approximation to a ray (Fig.{{nnbsp}}3).<ref>See (e.g.) [[#Opticks|Newton, 1730]], p.{{nnbsp}}55; [[#ToL|Huygens, 1690, tr.&nbsp;Thompson]], pp.{{nnbsp}}40–41,{{tsp}}56.</ref>
+
+=== Analogies ===
+
+According to the "strong" form of Fermat's principle, the problem of finding the path of a light ray from point ''A'' in a medium of faster propagation, to point ''B'' in a medium of slower propagation ([[#Fig1|Fig.{{nnbsp}}1]]), is analogous to the problem faced by a [[lifeguard]] in deciding where to enter the water in order to reach a drowning swimmer as soon as possible, given that the lifeguard can run faster than (s)he can swim.{{r|feynman-1988-51}} But that analogy falls short of ''explaining'' the behavior of the light, because the lifeguard can think about the problem (even if only for an instant) whereas the light presumably cannot. The discovery that ants are capable of similar calculations{{r|zyga-2013}} does not bridge the gap between the animate and the inanimate.
+
+In contrast, the above assumptions (1) to (3) hold for any wavelike disturbance and explain Fermat's principle in purely [[mechanical philosophy|mechanistic]] terms, without any imputation of knowledge or purpose.
+
+The principle applies to waves in general, including (e.g.) sound waves in fluids and elastic waves in solids.<ref>[[#deWitte|De Witte, 1959]], p.{{nnbsp}}294.</ref> In a modified form, it even works for [[matter&nbsp;wave]]s: in [[quantum mechanics]], the [[classical limit|classical path]] of a particle is obtainable by applying Fermat's principle to the associated wave &mdash; except that, because the frequency may vary with the path, the stationarity is in the [[phase&nbsp;shift]] (or number of cycles) and not necessarily in the time.{{r|ogborn-taylor-2005|vanHouten-beenakker-1995-272}}
+
+Fermat's principle is most familiar, however, in the case of visible [[light]]: it is the link between [[geometrical optics]], which describes certain optical phenomena in terms of ''rays'', and the [[wave theory of light]], which explains the same phenomena on the hypothesis that light consists of ''waves''.
+
+== Equivalence to Huygens' construction ==
+
+[[File:Huygens-construction-two-iterations.svg|thumb|280px|'''Fig.{{nnbsp}}4''':{{big|&nbsp;}}Two iterations of Huygens' construction. In the first iteration, the later wavefront {{mvar|W&prime;}} is derived from the earlier wavefront {{mvar|W}} by taking the envelope of all the secondary wavefronts (gray arcs) expanding in a given time from all the points (e.g., {{mvar|P}}) on {{mvar|W}}. The arrows show the ray directions.]]
+
+In this article we distinguish between Huygens' ''principle'', which states that every point crossed by a traveling wave becomes the source of a secondary wave, and Huygens' ''construction'', which is described below.
+
+Let the surface {{mvar|W}} be a wavefront at time {{mvar|t}}, and let the surface {{mvar|W&prime;}} be the same wavefront at the later time{{hsp}} {{mvar|t{{hsp}}+{{hsp}}&Delta;t}}{{hsp}} (Fig.{{nnbsp}}4). Let {{mvar|P}} be a general point on {{mvar|W}}. Then, according to Huygens' construction,<ref>[[#ToL|Huygens, 1690, tr.&nbsp;Thompson]], pp.{{nnbsp}}19,{{px2}}50–51,{{px2}}63–65,{{px2}}68,{{px2}}75.</ref>
+:(a)&nbsp; {{mvar|W&prime;}} is the ''[[envelope (mathematics)|envelope]]'' (common tangent surface), on the forward side of {{mvar|W}}, of all the secondary wavefronts each of which would expand in time {{mvar|&Delta;t}} from a point on {{mvar|W}}, and
+:(b)&nbsp; if the secondary wavefront expanding from point {{mvar|P}} in time {{mvar|&Delta;t}} touches the surface {{mvar|W&prime;}} at point {{mvar|P&prime;}}, then ''{{mvar|P}} and {{mvar|P&prime;}} lie on a ray''.
+The construction may be repeated in order to find successive positions of the primary wavefront, and successive points on the ray.
+
+The ray direction given by this construction is the radial direction of the secondary wavefront,<ref>[[#SecMem|Fresnel, 1827, tr.&nbsp;Hobson]], p.{{nnbsp}}309.</ref> and may differ from the normal of the secondary wavefront (cf.&nbsp;[[#Fig2|Fig.{{nnbsp}}2]]), and therefore from the normal of the primary wavefront at the point of tangency. Hence the ray ''velocity'', in magnitude and direction, is the radial velocity of an infinitesimal secondary wavefront, and is generally a function of location and direction.<ref name="De Witte, 1959">[[#deWitte|De Witte, 1959]], p.{{nnbsp}}294, col.{{nnbsp}}2.</ref>
+
+Now let {{mvar|Q}} be a point on {{mvar|W}} close to {{mvar|P}}, and let {{mvar|Q&prime;}} be a point on {{mvar|W&prime;}} close to {{mvar|P&prime;}}. Then, by the construction,
+:(i)&nbsp; the time taken for a secondary wavefront from {{mvar|P}} to reach {{mvar|Q&prime;}} has at most a second-order dependence on the displacement {{mvar|P&prime;Q&prime;}}, and
+:(ii)&nbsp; the time taken for a secondary wavefront to reach {{mvar|P&prime;}} from {{mvar|Q}} has at most a second-order dependence on the displacement {{mvar|PQ}}.
+By (i), the ray path is a path of stationary traversal time from {{mvar|P}} to {{mvar|W&prime;}};<ref>Cf. [[#SecMem|Fresnel, 1827, tr.&nbsp;Hobson]], p.{{nnbsp}}305.</ref> and by (ii), it is a path of stationary traversal time from a point on {{mvar|W}} to {{mvar|P&prime;}}.<ref>Cf. [[#SecMem|Fresnel, 1827, tr.&nbsp;Hobson]], p.{{nnbsp}}296.</ref>
+
+So Huygens' construction implicitly defines a ray path as ''a&nbsp;path of stationary traversal time between successive positions of a wavefront'', the time being reckoned from a ''point-source'' on the earlier wavefront.<ref group=Note>If the time were reckoned from the earlier wavefront as a whole, that time would everywhere be exactly {{mvar|&Delta;t}}, and it would be meaningless to speak of a "stationary" or "least" time.<br/>The "stationary" time will be the ''least'' time provided that the secondary wavefronts are more convex than the primary wavefronts (as in Fig.{{nnbsp}}4). That proviso, however, does not always hold. For example, if the primary wavefront, within the range of a secondary wavefront, converges to a focus and starts diverging again, the secondary wavefront will touch the later primary wavefront from the outside instead of the inside. To allow for such complexities, we must be content to say "stationary" time rather than "least" time.{{tsp}} Cf.&nbsp;[[#BW|Born & Wolf, 1970]], pp.{{nnbsp}}128–9 (meaning of "regular neighbourhood").</ref> This conclusion remains valid if the secondary wavefronts are reflected or refracted by surfaces of discontinuity in the properties of the medium, provided that the comparison is restricted to the affect paths and the affected portions of the wavefronts.<ref group=Note>Moreover, using Huygens' construction to determine the law of reflection or refraction is a matter of seeking the path of stationary traversal time between two particular wavefronts; cf. [[#SecMem|Fresnel, 1827, tr.&nbsp;Hobson]], p.{{nnbsp}}305–6.</ref>
+
+Fermat's principle, however, is conventionally expressed in ''point-to-point'' terms, not wavefront-to-wavefront terms. Accordingly, let us modify the example by supposing that the wavefront which becomes surface {{mvar|W}} at time {{mvar|t}}, and which becomes surface {{mvar|W&prime;}} at the later time {{mvar|t{{hsp}}+{{hsp}}&Delta;t}}, is emitted from point {{mvar|A}} at time&nbsp;{{math|0}}. Let {{mvar|P}} be a point on {{mvar|W}} (as before), and {{mvar|B}} a point on {{mvar|W&prime;}}. And let {{mvar|A,W,{{hsp}}W&prime;,}} and {{mvar|B}} be given, so that the problem is to find {{mvar|P}}.
+
+If {{mvar|P}} satisfies Huygens' construction, so that the secondary wavefront from {{mvar|P}} is tangential to {{mvar|W&prime;}} at {{mvar|B}}, then {{mvar|PB}} is a path of stationary traversal time from {{mvar|W}} to {{mvar|B}}. Adding the fixed time from {{mvar|A}} to {{mvar|W}}, we find that {{mvar|APB}} is the path of stationary traversal time from {{mvar|A}} to {{mvar|B}} (possibly with a restricted domain of comparison, as noted above), in accordance with Fermat's principle. The argument works just as well in the converse direction, provided that {{mvar|W&prime;}} has a well-defined tangent plane at {{mvar|B}}. Thus Huygens' construction and Fermat's principle are geometrically equivalent.<ref>[[#deWitte|De Witte (1959)]] gives a more sophisticated proof of the same result, using [[calculus of variations]].</ref><ref group=Note>In Huygens' construction, the choice of the envelope of secondary wavefronts on the ''forward'' side of {{mvar|W}} &mdash; that is, the rejection of "backward" or "retrograde" secondary waves &mdash; is also explained by Fermat's principle. For example, in [[#Fig2|Fig.{{nnbsp}}2]], the traversal time of the path {{mvar|APP&prime;P}} (where the last leg "doubles back") is ''not'' stationary with respect to variation of {{mvar|P&prime;}}, but is maximally sensitive to movement of {{mvar|P&prime;}} along the leg {{mvar|PP&prime;}}.</ref>
+
+Through this equivalence, Fermat's principle sustains Huygens' construction and thence all the conclusions that Huygens was able to draw from that construction. In short, "The laws of geometrical optics may be derived from Fermat's principle".<ref>The quote is from [[#BW|Born & Wolf, 1970]], p.{{nnbsp}}740.</ref> With the exception of the Fermat-Huygens principle itself, these laws are special cases in the sense that they depend on further assumptions about the media. Two of them are mentioned under the next heading.
+
+== Special cases ==
+
+=== Isotropic media: Rays normal to wavefronts ===
+
+In an isotropic medium, because the propagation speed is independent of direction, the secondary wavefronts that expand from points on a primary wavefront in a given ''infinitesimal'' time are spherical,<ref name="De Witte, 1959" /> so that their radii are normal to their common tangent surface at the points of tangency. But their radii mark the ray directions, and their common tangent surface is a general wavefront. Thus the rays are normal (orthogonal) to the wavefronts.<ref>[[#deWitte|De Witte, 1959]], p.{{nnbsp}}295, col.{{nnbsp}}1.</ref>
+
+Because much of the teaching of optics concentrates on isotropic media, treating anisotropic media as an optional topic, the assumption that the rays are normal to the wavefronts can become so pervasive that even Fermat's principle is explained under that assumption,<ref>This occurs in [[#BW|Born & Wolf, 1970]], pp.{{nnbsp}}128–30, and persists in later editions.</ref> although in fact Fermat's principle is more general.
+
+=== Homogeneous media: Rectilinear propagation ===
+
+In a homogeneous medium (also called a ''uniform'' medium), all the secondary wavefronts that expand from a given primary wavefront {{mvar|W}} in a given time {{mvar|&Delta;t}} are [[congruence (geometry)|congruent]] and similarly oriented, so that their envelope {{mvar|W&prime;}} may be considered as the envelope of a ''single'' secondary wavefront which preserves its orientation while its center (source) moves over {{mvar|W}}. If {{mvar|P}} is its center while {{mvar|P&prime;}} is its point of tangency with {{mvar|W&prime;}}, then {{mvar|P&prime;}} moves parallel to {{mvar|P}}, so that the plane tangential to {{mvar|W&prime;}} at {{mvar|P&prime;}} is parallel to the plane tangential to {{mvar|W}} at {{mvar|P}}. Let another (congruent and similarly orientated) secondary wavefront be centered on {{mvar|P&prime;}}, moving with {{mvar|P}}, and let it meet its envelope {{mvar|W&Prime;}} at point {{mvar|P&Prime;}}. Then, by the same reasoning, the plane tangential to {{mvar|W&Prime;}} at {{mvar|P&Prime;}} is parallel to the other two planes. Hence, due to the congruence and similar orientations, the ray directions {{mvar|PP&prime;}} and {{mvar|P&prime;P&Prime;}} are the same (but not necessarily normal to the wavefronts, since the secondary wavefronts are not necessarily spherical). This construction can be repeated any number of times, giving a straight ray of any length. Thus a homogeneous medium admits rectilinear rays.<ref>[[#deWitte|De Witte, 1959]] (p.{{nnbsp}}295, col.{{nnbsp}}1 and Figure&nbsp;2), states the result and condenses the explanation into one diagram.</ref>
+
+== Modern version ==
+
+=== Formulation in terms of refractive index ===
+
+Let a path {{math|&Gamma;}} extend from point {{mvar|A}} to point {{mvar|B}}. Let {{mvar|s}} be the arc length measured along the path from {{mvar|A}}, and let {{mvar|t}} be the time taken to traverse that arc length at the ray speed <math>v_{\mathrm{r}}</math> (that is, at the radial speed of the local secondary wavefront, for each location and direction on the path). Then the traversal time of the entire path {{math|&Gamma;}} is
+{{NumBlk|:|<math>T = \int_A^B\!dt
+                 \,= \int_A^B\frac{ds}{\,v_{\mathrm{r}}\,}</math>|1}}
+(where {{mvar|A}} and {{mvar|B}} simply denote the endpoints and are not to be construed as values of {{mvar|t}} or {{mvar|s}}). The condition for {{math|&Gamma;}} to be a ''ray'' path is that the first-order change in {{mvar|T}} due to a change in {{math|&Gamma;}} is zero; that is,
+:<math>\delta T =\, \delta\int_A^B\frac{ds}{\,v_{\mathrm{r}}\,} \,=\, 0\,</math>.
+
+Now let us define the ''optical length'' of a given path (''[[optical path length]]'', ''OPL'') as the distance traversed by a ray in a homogeneous isotropic reference medium (e.g., a vacuum) in the same time that it takes to traverse the given path at the local ray velocity.<ref>[[#BW|Born & Wolf, 1970]], p.{{nnbsp}}115.</ref> Then, if {{mvar|c}} denotes the propagation speed in the reference medium (e.g., the speed of light in a vacuum), the optical length of a path traversed in time {{mvar|dt}}{{hsp}} is{{px2}} {{mvar|dS {{=}} c{{tsp}}dt}},{{px2}} and the optical length of a path traversed in time {{mvar|T}}{{hsp}} is{{px2}} {{mvar|S {{=}} cT}}.{{tsp}} So, multiplying equation&nbsp;'''(1)''' through by {{mvar|c{{hsp}}}}, we obtain
+:<math>S \,= \int_A^B\!dS \,= \int_A^B\frac{\,c\,}{v_{\mathrm{r}}}\,ds
+         \,= \int_A^B\!n_{\mathrm{r}}\,ds\,,</math>
+where <math>\,n_{\mathrm{r}}=c/v_{\mathrm{r}}\,</math> is the ''ray index'' &mdash; that is, the [[refractive index]] calculated on the ''ray'' velocity instead of the usual [[phase velocity]] (wave-normal velocity).<ref>[[#BW|Born & Wolf, 1970]], p.{{nnbsp}}669, eq.{{nnbsp}}(13).</ref> For an infinitesimal path, we have{{tsp}} <math>dS=n_{\mathrm{r}\,}ds\,,\,</math> indicating that the optical length is the physical length multiplied by the ray index: the OPL is a notional ''geometric'' quantity, from which time has been factored out. In terms of OPL, the condition for {{math|&Gamma;}} to be a ray path (Fermat's principle) becomes
+{{NumBlk|:|<math>\delta S =\, \delta\int_A^B\!n_{\mathrm{r}}\,ds
+                        \,=\, 0\,</math>.|2}}
+This has the form of [[Maupertuis's principle]] in [[classical mechanics]] (for a single particle), with the ray index in optics taking the role of momentum or velocity in mechanics.<ref>Cf. [[#Chaves16|Chaves, 2016]], p.{{nnbsp}}673.</ref>
+
+In an isotropic medium, for which the ray velocity is also the phase velocity,<ref group=Note>The ray direction is the direction of constructive interference, which is the direction of the [[group velocity]]. However, the "ray velocity" is defined not as the group velocity, but as the phase velocity measured in that direction, so that "the phase velocity is the projection of the ray velocity on to the direction of the wave normal"&nbsp;(the quote is from [[#BW|Born & Wolf, 1970]], p.{{nnbsp}}669). In an isotropic medium, by symmetry, the directions of the ray and phase velocities are the same, so that the "projection" reduces to an identity. To put it another way: in an isotropic medium, since the ray and phase velocities have the same direction (by symmetry), and since both velocities follow the phase (by definition), they must also have the same magnitude.</ref> we may substitute the usual refractive index {{mvar|n}} for&nbsp;{{math|''n''<sub>r</sub>}}.{{nnbsp}}<ref>Cf. [[#BW|Born & Wolf, 1970]], p.{{nnbsp}}740, eq.{{nnbsp}}(10a).</ref>{{r|veselago-2002-1099}}
+
+=== Relation to Hamilton's principle ===
+
+If {{mvar|x,y,z}} are Cartesian coordinates and an overdot denotes differentiation with respect to {{mvar|s{{hsp}}}}, Fermat's principle '''(2)''' may be written<ref>Cf. [[#Chaves16|Chaves, 2016]], pp.{{nnbsp}}568–9.</ref>
+:<math>\begin{align}
+ \delta S
+ &=\,\delta\int_A^B\!n_{\mathrm{r}}\,\sqrt{dx^2+dy^2+dz^2}\\
+ &=\,\delta\int_A^B\!n_{\mathrm{r}}\,\sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2}~ds
+ \,=\,0\,.
+ \end{align}</math>
+In the case of an isotropic medium, we may replace {{math|''n''<sub>r</sub>}} with the normal refractive index{{hsp}} {{math|''n''(''x,y,z'')}}, which is simply a [[scalar field]]. If we then define the ''optical [[Lagrangian mechanics|Lagrangian]]''<ref>[[#Chaves16|Chaves, 2016]], p.{{nnbsp}}581.</ref> as
+:<math>L(x,y,z,\dot{x},\dot{y},\dot{z})
+    \,=\, n(x,y,z)\,\sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2}\,,</math>
+Fermat's principle becomes<ref>[[#Chaves16|Chaves, 2016]], p.{{nnbsp}}569.</ref>
+:<math>\delta S
+    =\, \delta\int_A^B\!L(x,y,z,\dot{x},\dot{y},\dot{z})\,ds\,=\,0\,</math>.
+If the direction of propagation is always such that we can use {{mvar|z}} instead of {{mvar|s}} as the parameter of the path (and the overdot to denote differentiation w.r.t.&nbsp;{{mvar|z}} instead of {{mvar|s}}), the optical Lagrangian can instead be written<ref>Cf. [[#Chaves16|Chaves, 2016]], p.{{nnbsp}}577.</ref>
+:<math>L\big(x(z),y(z),\dot{x}(z),\dot{y}(z),z\big)
+    = n(x,y,z)\,\sqrt{1+\dot{x}^2+\dot{y}^2}\,,</math>
+so that Fermat's principle becomes
+:<math>\delta S =\, \delta\int_A^B\!
+    L\big(x(z),y(z),\dot{x}(z),\dot{y}(z),z\big)\,dz\,=\,0\,</math>.
+This has the form of [[Hamilton's principle]] in classical mechanics, except that the time dimension is missing: the third spatial coordinate in optics takes the role of time in mechanics.<ref>Cf.{{tsp}} [[#BW|Born & Wolf, 1970]], pp.{{nnbsp}}734–5,{{px2}}741; [[#Chaves16|Chaves, 2016]], p.{{nnbsp}}669.</ref> The optical Lagrangian is the function which, when integrated w.r.t.&nbsp;the parameter of the path, yields the OPL; it is the foundation of [[Hamiltonian optics|Lagrangian and Hamiltonian optics]].<ref>[[#Chaves16|Chaves, 2016]], ch.{{nnbsp}}14.</ref>
+
+== History ==
+
+=== Fermat vs. the Cartesians ===
+
+[[File:Pierre de Fermat (F. Poilly).jpg|thumb|Pierre de Fermat {{nowrap|(1607{{r|katscher-2016}}{{hsp}}–1665)}}]]
+
+If a ray follows a straight line, it obviously takes the path of least ''length''. [[Hero of Alexandria]], in his ''[[Catoptrics]]'' (1st century CE), showed that the ordinary [[specular reflection|law of reflection]] off a plane surface follows from the premise that the total ''length'' of the ray path is a minimum.<ref>[[#Sabra81|Sabra, 1981]], pp.{{nnbsp}}69–71. As the author notes, the law of reflection itself is found in Proposition&nbsp;{{serif|XIX}} of [[Euclid's Optics|Euclid's ''Optics'']].</ref> In 1657, [[Pierre de Fermat]] received from [[Marin Cureau de la Chambre]] a copy of newly published treatise, in which La&nbsp;Chambre noted Hero's principle and complained that it did not work for refraction.<ref>[[#Sabra81|Sabra, 1981]], pp.{{nnbsp}}137–9; [[#Darr12|Darrigol, 2012]], p.{{nnbsp}}48.</ref>
+
+Fermat replied that refraction might be brought into the same framework by supposing that light took the path of least ''resistance'', and that different media offered different resistances. His eventual solution, described in a letter to La&nbsp;Chambre dated 1&nbsp;January 1662, construed "resistance" as inversely proportional to speed, so that light took the path of least ''time''. That premise yielded the [[Snell's law|ordinary law of refraction]], provided that light traveled more slowly in the optically denser medium.<ref>[[#Sabra81|Sabra, 1981]], pp.{{nnbsp}}139,{{px2}}143–7; [[#Darr12|Darrigol, 2012]], pp.{{nnbsp}}48–9 (where, in footnote&nbsp;21, "Descartes to..." obviously should be "Fermat to...").</ref><ref group=Note>[[Ibn al-Haytham]], writing in [[Cairo]] in the 2nd decade of the 11th century, also believed that light took the path of least resistance and that denser media offered more resistance, but he retained a more conventional notion of "resistance". If this notion was to explain refraction, it required the resistance to vary with direction in a manner that was hard to reconcile with reflection. Meanwhile [[Ibn Sahl (mathematician)|Ibn&nbsp;Sahl]] had already arrived at the correct law of refraction by a different method; but his law was not propagated&nbsp;([[#Mihas06|Mihas, 2006]], pp.{{nnbsp}}761–5; [[#Darr12|Darrigol, 2012]], pp.{{nnbsp}}20–21,{{px2}}41).<br/>The problem solved by Fermat is mathematically equivalent to the following: given two points in different media with different densities, minimize the ''density-weighted'' length of the path between the two points. In [[Leuven|Louvain]], in 1634 (by which time [[Willebrord Snellius]] had rediscovered Ibn Sahl's law, and Descartes had derived it but not yet published it), the [[Society of Jesus|Jesuit]] professor Wilhelm Boelmans gave a correct solution to this problem, and set its proof as an exercise for his Jesuit students&nbsp;([[#Zigg80|Ziggelaar, 1980]]).</ref>
+
+Fermat's solution was a landmark in that it unified the then-known laws of geometrical optics under a ''[[variational principle]]'' or ''[[action (physics)|action principle]]'', setting the precedent for the [[principle of least action]] in classical mechanics and the corresponding principles in other fields (see ''[[History of variational principles in physics]]'').<ref>[[#Chaves16|Chaves, 2016]], chapters 14,{{tsp}}19.</ref> It was the more notable because it used the method of ''[[adequality]]'', which may be understood in retrospect as finding the point where the slope of an infinitesimally short [[chord (geometry)|chord]] is zero,<ref>[[#Sabra81|Sabra, 1981]], pp.{{nnbsp}}144–5.</ref> without the intermediate step of finding a general expression for the slope (the [[derivative]]).
+
+It was also immediately controversial. The ordinary law of refraction was at that time attributed to [[René Descartes]] (d.{{nnbsp}}1650), who had tried to explain it by supposing that light was a force that propagated ''instantaneously'', or that light was analogous to a tennis ball that traveled ''faster'' in the denser medium,{{r|schuster-2000-261}}<ref>[[#Darr12|Darrigol, 2012]], pp.{{nnbsp}}41–2.</ref> either premise being inconsistent with Fermat's.&nbsp; Descartes' most prominent defender, [[Claude Clerselier]], criticized Fermat for apparently ascribing knowledge and intent to nature, and for failing to explain why nature should prefer to economize on time rather than distance. Clerselier wrote in part:
+<blockquote>
+1. The principle that you take as the basis of your demonstration, namely that nature always acts in the shortest and simplest ways, is merely a moral principle and not a physical one; it is not, and cannot be, the cause of any effect in nature.... For otherwise we would attribute knowledge to nature; but here, by "nature", we understand only this order and this law established in the world as it is, which acts without foresight, without choice, and by a necessary determination.
+
+2. This same principle would make nature irresolute... For I ask you... when a ray of light must pass from a point in a rare medium to a point in a dense one, is there not reason for nature to hesitate if, by your principle, it must choose the straight line as soon as the bent one, since if the latter proves shorter in time, the former is shorter and simpler in length? Who will decide and who will pronounce?{{nnbsp}}{{r|clerselier-1662}}
+</blockquote>
+
+Fermat, being unaware of the mechanistic foundations of his own principle, was not well placed to defend it, except as a purely geometric and [[kinematics|kinematic]] proposition.{{r|smith-1959-651n|fermat-1662-clerselier}}&nbsp; The [[wave theory of light]], first proposed by [[Robert Hooke]] in the year of Fermat's death,<ref>[[#Darr12|Darrigol, 2012]], p.{{nnbsp}}53.</ref> and rapidly improved by [[Ignace-Gaston Pardies]]<ref>[[#Darr12|Darrigol, 2012]], pp.{{nnbsp}}60–64.</ref> and (especially) [[Christiaan Huygens]],<ref>[[#Darr12|Darrigol, 2012]], pp.{{nnbsp}}64–71; [[#ToL|Huygens, 1690, tr.&nbsp;Thompson]].</ref> contained the necessary foundations; but the recognition of this fact was surprisingly slow.
+
+=== Huygens's oversight ===
+
+[[File:Christiaan-huygens4.jpg|left|thumb|Christiaan Huygens {{nowrap|(1629–1695)}}]]
+
+Huygens repeatedly referred to the envelope of his secondary wavefronts as the ''termination'' of the movement,<ref>[[#ToL|Huygens, 1690, tr.&nbsp;Thompson]], pp.{{nnbsp}}20,{{hsp}}24,{{hsp}}37,{{hsp}}51,{{hsp}}80,{{hsp}}108,{{hsp}}119,{{hsp}}122 (with various inflections of the word).</ref> meaning that the later wavefront was the outer boundary that the disturbance could reach in a given time,<ref>[[#ToL|Huygens, 1690, tr.&nbsp;Thompson]], top of p.{{nnbsp}}20.</ref> which was therefore the minimum time in which each point on the later wavefront could be reached. But he did not argue that the ''direction'' of minimum time was that from the secondary source to the point of tangency; instead, he deduced the ray direction from the extent of the common tangent surface corresponding to a given extent of the initial wavefront.<ref>Cf.{{tsp}} [[#ToL|Huygens, 1690, tr.&nbsp;Thompson]], {{nowrap|pp.{{tsp}}19–21,{{px2}}63–5}}.</ref> His only endorsement of Fermat's principle was limited in scope: having derived the law of ordinary refraction, for which the rays are normal to the wavefronts,<ref>[[#ToL|Huygens, 1690, tr.&nbsp;Thompson]], pp.{{nnbsp}}34–9.</ref> Huygens gave a geometric proof that a ray refracted according to this law takes the path of least time.<ref>[[#ToL|Huygens, 1690, tr.&nbsp;Thompson]], pp.{{nnbsp}}42–5.</ref> He would hardly have thought this necessary if he had known that the principle of least time followed ''directly'' from the same common-tangent construction by which he had deduced not only the law of ordinary refraction, but also the laws of rectilinear propagation and ordinary reflection (which were also known to follow from Fermat's principle), and a previously unknown law of [[birefringence|extraordinary refraction]] &mdash; the last by means of secondary wavefronts that were [[spheroid]]al rather than spherical, with the result that the rays were generally oblique to the wavefronts. It was as if Huygens had not noticed that his construction implied Fermat's principle, and even as if he thought he had found an exception to that principle. Manuscript evidence cited by Alan E.{{tsp}}Shapiro tends to confirm that Huygens believed the principle of least time to be invalid "in [[birefringence|double refraction]], where the rays are not normal to the wave fronts".<ref>[[#Shapiro73|Shapiro, 1973]], p.{{nnbsp}}229, note&nbsp;294 (Shapiro's words), citing Huygens' ''Oeuvres Complètes'', vol.{{nnbsp}}13 (ed.&nbsp;[[Diederik Korteweg|D.J.{{nnbsp}}Korteweg]], 1916), [https://www.dbnl.org/tekst/huyg003oeuv13_01/huyg003oeuv13_01_0053.php Quatrième Complément à la ''Dioptrique''], at p.{{nnbsp}}834, "Parte&nbsp;2<sup>da</sup>..." (in Latin, with annotations in French).</ref><ref group=Note>In the last chapter of his ''[[#ToL|Treatise]]'', Huygens determined the required shapes of image-forming surfaces, working from the premise that all parts of the wavefront must travel from the object point to the image point in ''equal'' times, and treating the rays as normal to the wavefronts. But he did not mention Fermat in this context.</ref>
+
+Shapiro further reports that the only three authorities who accepted "Huygens' principle" in the 17th and 18th centuries, namely [[Philippe de La Hire]], [[Denis Papin]], and [[Gottfried Wilhelm Leibniz]], did so because it accounted for the extraordinary refraction of "[[Iceland spar|Iceland crystal]]" (calcite) in the same manner as the previously known laws of geometrical optics.<ref>[[#Shapiro73|Shapiro, 1973]], pp.{{nnbsp}}245–6,{{tsp}}252.</ref> But, for the time being, the corresponding extension of Fermat's principle went unnoticed.
+
+=== Laplace, Young, Fresnel, and Lorentz ===
+
+[[File:Laplace, Pierre-Simon, marquis de.jpg|thumb|Pierre-Simon Laplace {{nowrap|(1749–1827)}}]]
+
+On 30 January 1809,{{r|laplace-1809}} [[Pierre-Simon Laplace]], reporting on the work of his protégé [[Étienne-Louis Malus]], claimed that the extraordinary refraction of calcite could be explained under the corpuscular theory of light with the aid of [[Maupertuis's principle]] of least action: that the integral of speed with respect to distance was a minimum. The corpuscular speed that satisfied this principle was proportional to the reciprocal of the ray speed given by the radius of Huygens' spheroid. Laplace continued:
+<blockquote>
+According to Huygens, the velocity of the extraordinary ray, in the crystal, is simply expressed by the radius of the spheroid; consequently his hypothesis ''does not agree'' with the principle of the least action: but ''it is remarkable'' that it agrees with the principle of Fermat, which is, that light passes, from a given point without the crystal, to a given point within it, in the least possible time; for it is easy to see that this principle coincides with that of the least action, if we invert the expression of the velocity.<ref>Translated by [[#Young1809|Young (1809)]], p.{{nnbsp}}341; Young's italics.</ref>
+</blockquote>
+
+[[File:Thomas Young (scientist).jpg|left|thumb|Thomas Young {{nowrap|(1773–1829)}}]]
+
+Laplace's report was the subject of a wide-ranging rebuttal by [[Thomas Young (scientist)|Thomas Young]], who wrote in part:
+<blockquote>
+The principle of Fermat, although it was assumed by that mathematician on hypothetical, or even imaginary grounds, is in fact a fundamental law with respect to undulatory motion, and is {{sic|explicitly}} the basis of every determination in the Huygenian theory...&nbsp; Mr.&nbsp;Laplace seems to be unacquainted with this most essential principle of one of the two theories which he compares; for he says, that "it is remarkable," that the Huygenian law of extraordinary refraction agrees with the principle of Fermat; which he would scarcely have observed, if he had been aware that the law was an immediate consequence of the principle.<ref>[[#Young1809|Young, 1809]], p.{{nnbsp}}342.</ref>
+</blockquote>
+In fact Laplace ''was'' aware that Fermat's principle follows from Huygens' construction in the case of refraction from an isotropic medium to an anisotropic one; a geometric proof was contained in the long version of Laplace's report, printed in 1810.<ref>On the proof, see [[#Darr12|Darrigol, 2012]], p.{{nnbsp}}190. On the date of the reading (misprinted as 1808 in early sources), see [[#Fra74|Frankel, 1974]], p.{{nnbsp}}234n. The full text (with the misprint) is "Mémoire sur les mouvements de la lumière dans les milieux diaphanes", ''Mémoires de l'Académie des Sciences'', 1st&nbsp;Series, vol.{{nnbsp}}{{serif|X}} (1810), reprinted in ''Oeuvres complètes de Laplace'', vol.{{nnbsp}}12 (Paris, Gauthier-Villars et fils, 1898), [https://archive.org/stream/oeuvrescomplte12lapluoft/#page/267 pp.{{nnbsp}}267–298]. An intermediate version, including the proof but not the appended "Note", appeared as "Sur le mouvement de la lumière dans les milieux diaphanes", ''Mémoires de Physique et de Chimie de la Société d'Arcueil'', vol.{{nnbsp}}2 (1809), [https://books.google.com/books?id=hnJKAAAAYAAJ&pg=PA111 pp.{{nnbsp}}111–142] & [https://books.google.com/books?id=hnJKAAAAYAAJ&pg=PA495 Plate&nbsp;1] (after p.{{nnbsp}}494).</ref>
+
+Young's claim was more general than Laplace's, and likewise upheld Fermat's principle even in the case of extraordinary refraction, in which the rays are generally ''not&nbsp;perpendicular'' to the wavefronts. Unfortunately, however, the omitted middle sentence of the quoted paragraph by Young began "The motion of every undulation must necessarily be in a direction ''perpendicular'' to its surface..." (emphasis added), and was therefore bound to sow confusion rather than clarity.
+
+[[File:Augustin Fresnel.jpg|thumb|Augustin-Jean Fresnel {{nowrap|(1788–1827)}}]]
+
+No such confusion subsists in [[Augustin-Jean Fresnel]]'s "Second Memoir" on double refraction ([[#SecMem|Fresnel,&nbsp;1827]]), which addresses Fermat's principle in several places (without naming Fermat), proceeding from the special case in which rays are normal to wavefronts, to the general case in which rays are paths of least time or stationary time. (In the following summary, page numbers refer to [[#SecMem|Alfred W.{{tsp}}Hobson's translation]].)
+* For refraction of a plane wave at parallel incidence on one face of an anisotropic crystalline wedge (pp.{{nnbsp}}291–2), in order to find the "first ray arrived" at an observation point beyond the other face of the wedge, it suffices to treat the rays outside the crystal as normal to the wavefronts, and within the crystal to consider only the parallel wavefronts (whatever the ray direction). So in this case, Fresnel does not attempt to trace the complete ray path.<ref group=Note>In the translation, some lines and symbols are missing from the diagram; the corrected diagram may be found in Fresnel's ''Oeuvres Complètes'', vol.{{nnbsp}}2, [https://books.google.com/books?id=g6tzUG7JmoQC&pg=PA547 p.{{nnbsp}}547].</ref>
+
+* Next, Fresnel considers a ray refracted from a point-source ''M'' inside a crystal, through a point ''A'' on the surface, to an observation point ''B'' outside (pp.{{nnbsp}}294–6). The surface passing through ''B'' and given by the "locus of the disturbances which arrive first" is, according to Huygens' construction, normal to "the ray ''AB'' of swiftest arrival". But this construction requires knowledge of the "surface of the wave" (that is, the secondary wavefront) within the crystal.
+
+* Then he considers a plane wavefront propagating in a medium with non-spherical secondary wavefronts, oriented so that the ray path given by Huygens' construction &mdash; from the source of the secondary wavefront to its point of tangency with the subsequent primary wavefront &mdash; is ''not'' normal to the primary wavefronts (p.{{nnbsp}}296). He shows that this path is nevertheless "the path of quickest arrival of the disturbance" from the earlier primary wavefront to the point of tangency.
+
+* In a later heading (p.{{nnbsp}}305) he declares that "The construction of Huygens, which determines the path of swiftest arrival," is applicable to secondary wavefronts of any shape. He then notes that when we apply Huygens' construction to refraction into a crystal with a two-sheeted secondary wavefront, and draw the lines from the two points of tangency to the center of the secondary wavefront, "we shall have the directions of the two paths of swiftest arrival, and consequently of the ordinary and of the extraordinary ray."
+
+* Under the heading "Definition of the word ''Ray''" (p.{{nnbsp}}309), he concludes that this term must be applied to the line which joins the center of the secondary wave to a point on its surface, whatever the inclination of this line to the surface.
+
+* As a "new consideration" (pp.{{nnbsp}}310–11), he notes that if a plane wavefront is passed through a small hole centered on point ''E'', then the direction ''ED'' of maximum intensity of the resulting beam will be that in which the secondary wave starting from ''E'' will "arrive there the first", and the secondary wavefronts from opposite sides of the hole (equidistant from ''E'') will "arrive at ''D'' in the same time" as each other. This direction is ''not'' assumed to be normal to any wavefront.
+Thus Fresnel showed, even for anisotropic media, that the ray path given by Huygens' construction is the path of least time between successive positions of a plane or diverging wavefront, that the ray velocities are the radii of the secondary "wave surface" after unit time, and that a stationary traversal time accounts for the direction of maximum intensity of a beam. However, establishing the general equivalence between Huygens' construction and Fermat's principle would have required further consideration of Fermat's principle in point-to-point terms.
+
+[[Hendrik Lorentz]], in a paper written in 1886 and republished in 1907,{{r|lorentz-1907}} deduced the principle of least time in point-to-point form from Huygens' construction. But the essence of his argument was somewhat obscured by an apparent dependence on [[Luminiferous aether|aether]] and [[Aether drag hypothesis|aether drag]].
+
+Lorentz's work was cited in 1959 by Adriaan J.&nbsp;de Witte, who then offered his own argument, which "although in essence the same, is believed to be more cogent and more general." De&nbsp;Witte's treatment is more original than that description might suggest, although limited to two dimensions; it uses [[calculus of variations]] to show that Huygens' construction and Fermat's principle lead to the same [[differential equation]] for the ray path, and that in the case of Fermat's principle, the converse holds. De&nbsp;Witte also noted that "The matter seems to have escaped treatment in textbooks."<ref>[[#deWitte|De Witte, 1959]], esp. pp.{{nnbsp}}293n,{{nnbsp}}298.</ref>
+
+== See also ==
+
+{{columns-list|colwidth=15em|
+* [[Action (physics)]]
+* [[Adequality]]
+* [[Augustin-Jean Fresnel]]
+* [[Birefringence]]
+* [[Calculus of variations]]
+* [[Eikonal equation]]
+* [[Fermat's and energy variation principles in field theory]]
+* [[Geodesic]]
+* [[Hamilton's principle]]
+* [[Huygens' principle]]
+* [[Path integral formulation]]
+* [[Pierre de Fermat]]
+* [[Principle of least action]]
+* [[Snell's law]]
+* [[Thomas Young (scientist)]]
+}}
+
+==Notes==
+
+{{Reflist|30em|group=Note}}
+
+== References ==
+
+{{Reflist|30em|refs=
+
+<ref name=vanHouten-beenakker-1995-272>H. van Houten and C.W.J.&nbsp;Beenakker, 1995, [http://lorentz.leidenuniv.nl/beenakkr/mesoscopics/fulltext/172_108_Burstein.pdf "Principles of solid state electron optics"],{{tsp}} in{{tsp}} E.&nbsp;Burstein and C.&nbsp;Weisbuch (eds.), ''Confined Electrons and Photons: New Physics and Applications'' (NATO ASI Series; Series&nbsp;B: Physics, vol.{{nnbsp}}340), Boston, MA: Springer, {{ISBN|978-1-4615-1963-8}}, {{nowrap|pp.{{tsp}}269–303}}, {{doi|10.1007/978-1-4615-1963-8_9}}, at {{nowrap|pp.{{tsp}}272–3}}.</ref>
+
+<ref name=clerselier-1662>Clerselier to Fermat (in&nbsp;French), 6&nbsp;May 1662,{{tsp}} in{{tsp}} P.{{nnbsp}}Tannery and C.{{nnbsp}}Henry (eds.), ''Œuvres de Fermat'', vol.{{nnbsp}}2 (Paris: Gauthier-Villars et fils, 1894), [https://archive.org/stream/oeuvresdefermat02ferm/#page/464 pp.{{nnbsp}}464–72].</ref>
+
+<ref name=fermat-1662-clerselier>Fermat to Clerselier (in&nbsp;French), 21&nbsp;May 1662,{{tsp}} in{{tsp}} P.{{nnbsp}}Tannery and C.{{nnbsp}}Henry (eds.), ''Œuvres de Fermat'', vol.{{nnbsp}}2 (Paris: Gauthier-Villars et fils, 1894), [https://archive.org/stream/oeuvresdefermat02ferm/#page/482 pp.{{nnbsp}}482–4].</ref>
+
+<ref name=feynman-1988-51>R.P. Feynman, 1985 (seventh printing, 1988), ''QED: The Strange Theory of Light and Matter'', Princeton University Press, {{ISBN|0-691-02417-0}}, {{nowrap|pp.{{tsp}}51–2}}.</ref>
+
+<ref name=katscher-2016>{{citation | author=F. Katscher | title=When Was Pierre de Fermat Born? | work=Convergence | date=May 2016 | url=https://www.maa.org/press/periodicals/convergence/when-was-pierre-de-fermat-born | access-date=22 August 2019}}.</ref>
+
+<ref name=laplace-1809>P.-S. Laplace (read 30 January 1809), [https://books.google.com/books?id=r9tVi_X2DwoC&pg=PA107 "Sur la loi de la réfraction extraordinaire de la lumière dans les cristaux diaphanes"], ''Journal de Physique, de Chimie et d'Histoire Naturelle'', {{nowrap|'''68''': 107–11}} (for January 1809).</ref>
+
+<ref name=lipsons>A. Lipson, S.G.&nbsp;Lipson, and H.&nbsp;Lipson, 2011, ''Optical Physics'', 4th&nbsp;Ed., Cambridge University Press, {{ISBN|978-0-521-49345-1}}, p.{{nnbsp}}36. (''Note:'' Where the authors imply that light propagating along the axis of a graded-index fiber takes the path of ''maximum'' time, they neglect the possibility of further lengthening the time by taking non-ray detours, e.g. by doubling back.)</ref>
+
+<ref name=lorentz-1907>H.A. Lorentz, 1907, ''Abhandlungen über Theoretische Physik'', [https://archive.org/details/abhandlungenber00loregoog vol.{{nnbsp}}1], Berlin: Teubner, ch.{{nnbsp}}14, ss.{{nnbsp}}12,{{hsp}}13, and ch.{{nnbsp}}16, s.{{nnbsp}}18; translated as "H.A. Lorentz on the equivalence of Huygens' construction and Fermat's principle", {{doi|10.5281/zenodo.3835134}}, 2020.</ref>
+
+<ref name=ogborn-taylor-2005>J. Ogborn and E.F.&nbsp;Taylor (January 2005), [http://www.eftaylor.com/pub/QMtoNewtonsLaws.pdf "Quantum physics explains Newton's laws of motion"], ''Physics Education'', {{nowrap|'''40''' (1): 26–34}}, {{doi|10.1088/0031-9120/40/1/001}}.</ref>
+
+<ref name=schuster-2000-261> J.A.{{tsp}}Schuster, 2000, "Descartes ''opticien'': The construction of the law of refraction and the manufacture of its physical rationales, 1618–29",{{tsp}} in{{tsp}} S.&nbsp;Gaukroger, J.A.{{nnbsp}}Schuster, and J.&nbsp;Sutton (eds.), ''Descartes' Natural Philosophy'', London: Routledge, pp.{{nnbsp}}258–312, at {{nowrap|pp.{{tsp}}261,{{tsp}}264–5}}.</ref>
+
+<ref name=smith-1959-651n>D.E. Smith, 1959, ''A Source Book in Mathematics'', vol.{{nnbsp}}3 (McGraw-Hill, 1929), reprinted Dover, 1959, p.{{nnbsp}}651n.</ref>
+
+<ref name=veselago-2002-1099>Cf.{{tsp}} V.G. Veselago (October 2002), "Formulating Fermat's principle for light traveling in negative refraction materials", ''Physics-Uspekhi'', {{nowrap|'''45''' (10): 1097–9}}, {{doi|10.1070/PU2002v045n10ABEH001223}}, at p.{{nnbsp}}1099.</ref>
+
+<ref name=zyga-2013>{{citation | author=L. Zyga | title=Ants follow Fermat's principle of least time | work=Phys.org | date=1 April 2013 | url=http://phys.org/news/2013-04-ants-fermat-principle.html | access-date=9 August 2019}}.</ref>
+
+}}
+
+== Bibliography ==
+
+* {{anchor|BW}}M. Born and E. Wolf, 1970, ''[[Principles of Optics]]'', 4th&nbsp;Ed., Oxford: Pergamon Press.
+* {{anchor|Chaves16}}J. Chaves, 2016, ''Introduction to Nonimaging Optics'', 2nd&nbsp;Ed., Boca Raton, FL: [[CRC Press]], {{ISBN|978-1-4822-0674-6}}.
+* {{anchor|Darr12}}O. Darrigol, 2012, ''A History of Optics: From Greek Antiquity to the Nineteenth Century'', Oxford, {{ISBN|978-0-19-964437-7}}.
+* {{anchor|deWitte}}A.J. de Witte, 1959, "Equivalence of Huygens' principle and Fermat's principle in ray geometry", ''American Journal of Physics'', vol.{{nnbsp}}27, no.{{nnbsp}}5 (May 1959), pp.{{nnbsp}}293–301, {{doi|10.1119/1.1934839}}.&nbsp; ''Erratum'': In Fig.{{nnbsp}}7(b), each instance of "ray" should be "normal" (noted in vol.{{nnbsp}}27, no.{{nnbsp}}6, p.{{nnbsp}}387).
+* {{anchor|Fra74}}E. Frankel, 1974, "The search for a corpuscular theory of double refraction: Malus, Laplace and the {{sic|price}} competition of 1808", ''Centaurus'', vol.{{nnbsp}}18, no.{{nnbsp}}3 (September 1974), pp.{{nnbsp}}223–245, {{doi|10.1111/j.1600-0498.1974.tb00298.x}}.
+* {{anchor|SecMem}}A. Fresnel, 1827, "Mémoire sur la double réfraction", ''Mémoires de l'Académie Royale des Sciences de l'Institut de France'', vol.{{nnbsp}}{{serif|VII}} (for 1824, printed 1827), [https://archive.org/details/mmoiresdelacad07memo/page/44 pp.{{nnbsp}}45–176]; reprinted as "''Second'' mémoire..." in ''Oeuvres complètes d'Augustin Fresnel'', vol.{{nnbsp}}2 (Paris: Imprimerie Impériale, 1868), [https://books.google.com/books?id=g6tzUG7JmoQC&pg=PA479 pp.{{nnbsp}}479–596]; translated by A.W.&nbsp;Hobson as [https://archive.org/details/scientificmemoir05memo/page/238 "Memoir on double refraction"], in R.{{nnbsp}}Taylor (ed.), ''Scientific Memoirs'', vol.{{nnbsp}}{{serif|V}} (London: Taylor & Francis, 1852), pp.{{nnbsp}}238–333. (Cited page numbers are from the translation.)
+* {{anchor|ToL}}C. Huygens, 1690, ''Traité de la Lumière'' (Leiden: Van der Aa), translated by S.P.&nbsp;Thompson as ''[http://www.gutenberg.org/ebooks/14725 Treatise on Light]'', University of Chicago Press, 1912; Project Gutenberg, 2005. (Cited page numbers match the 1912 edition and the Gutenberg HTML edition.)
+* {{anchor|Mihas06}}P. Mihas, 2006, [https://www.researchgate.net/publication/225754858_Developing_Ideas_of_Refraction_Lenses_and_Rainbow_Through_the_Use_of_Historical_Resources "Developing ideas of refraction, lenses and rainbow through the use of historical resources"], ''Science & Education'', vol.{{nnbsp}}17, no.{{nnbsp}}7 (August&nbsp;{{Not a typo|2008}}), pp.{{nnbsp}}751–777 (online 6&nbsp;September 2006), {{doi|10.1007/s11191-006-9044-8}}.
+* {{anchor|Opticks}}I. Newton, 1730, [http://www.gutenberg.org/ebooks/33504 ''Opticks: or, a Treatise of the Reflections, Refractions, Inflections, and Colours of Light''], 4th&nbsp;Ed. (London: William Innys, 1730; Project Gutenberg, 2010); republished with Foreword by A.&nbsp;Einstein and Introduction by E.T.&nbsp;Whittaker (London: George Bell &amp; Sons, 1931); reprinted with additional Preface by I.B.&nbsp;Cohen and Analytical Table of Contents by D.H.D.&nbsp;Roller,&nbsp; Mineola, NY: Dover, 1952, 1979 (with revised preface), 2012. (Cited page numbers match the Gutenberg HTML edition and the Dover editions.)
+* {{anchor|Sabra81}}A.I. Sabra, 1981, ''Theories of Light: From Descartes to Newton'' (London: Oldbourne Book Co., 1967), reprinted Cambridge University Press, 1981, {{ISBN|0-521-28436-8}}.
+* {{anchor|Shapiro73}}A.E. Shapiro, 1973, "Kinematic optics: A study of the wave theory of light in the seventeenth century", ''Archive for History of Exact Sciences'', vol.{{nnbsp}}11, no.{{nnbsp}}2/3 (June 1973), pp.{{nnbsp}}134–266, {{doi|10.1007/BF00343533}}.
+* {{anchor|Young1809}}T. Young, 1809, [https://books.google.com/books?id=oLTiNeIM5IEC&pg=PA337 Article{{tsp}}{{serif|X}}] in the ''Quarterly Review'', vol.{{nnbsp}}2, no.{{nnbsp}}4 (November&nbsp;1809), {{nowrap|pp.{{tsp}}337–48}}.
+* {{anchor|Zigg80}}A. Ziggelaar, 1980, "The sine law of refraction derived from the principle of Fermat &mdash; prior to Fermat? The theses of Wilhelm Boelmans S.J. in 1634", ''Centaurus'', vol.{{nnbsp}}24, no.{{nnbsp}}1 (September&nbsp;1980), pp.{{nnbsp}}246–62, {{doi|10.1111/j.1600-0498.1980.tb00377.x}}.
+
+{{vpad|1=1ex}}
+
+== Further reading ==
+
+* {{citation | author=A. Bhatia | title=To save drowning people, ask yourself 'What would light do?' | work=Nautilus | date=26 March 2014 | url=http://nautil.us/blog/to-save-drowning-people-ask-yourself-what-would-light-do | access-date=7 August 2019}}.
+* [[Jed Buchwald|J.Z. Buchwald]], 1989, ''The Rise of the Wave Theory of Light: Optical Theory and Experiment in the Early Nineteenth Century'', University of Chicago Press, {{ISBN|0-226-07886-8}}, especially {{nowrap|pp.{{tsp}}36–40}}.
+* {{citation | author1 = M.G. Katz | author1-link = Mikhail Katz | author2 = D.M. Schaps | author3 = S. Shnider | author3-link = Steve Shnider | title = Almost Equal: the method of adequality from Diophantus to Fermat and beyond | journal = [[Perspectives on Science]] | volume = 21 | issue = 3 | year = 2013 | pages = 283–324 | doi = 10.1162/POSC_a_00101 | arxiv = 1210.7750 | bibcode = 2012arXiv1210.7750K}}.
+* [[Michael Sean Mahoney|M.S. Mahoney]] (1994), ''The Mathematical Career of Pierre de Fermat, 1601–1665'',{{tsp}} 2nd&nbsp;Ed., Princeton University Press, {{ISBN|0-691-03666-7}}.
+* R. Marqués; [[Ferran Martin|F. Martín]]; M. Sorolla, 2008 (reprinted 2013), ''Metamaterials with Negative Parameters: Theory, Design, and Microwave Applications'', Hoboken, NJ: Wiley, {{ISBN|978-0-471-74582-2}}.<!-- § 1.5, eq.(1.23) -->
+* [[John Pendry|J.B. Pendry]] and [[David R. Smith|D.R.&nbsp;Smith]] (2004), [https://physicstoday.scitation.org/doi/pdf/10.1063/1.1784272 "Reversing Light With Negative Refraction"], ''Physics Today'', {{nowrap|'''57''' (6): 37–43}}, {{doi|10.1063/1.1784272}}.
+
+{{vpad|1=1ex}}
+
+{{Portal bar|Physics|History of science}}
+
+{{Authority control}}
+{{Use dmy dates|date=August 2019}}
+[[Category:Physical phenomena]]
+[[Category:Waves]]
+[[Category:Optics]]
+[[Category:Optical phenomena]]
+[[Category:Physical optics]]
+[[Category:Geometrical optics]]
+[[Category:Calculus of variations]]
+[[Category:Principles]]
+[[Category:History of physics]]

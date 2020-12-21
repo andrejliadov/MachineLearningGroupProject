@@ -1,0 +1,38 @@
+{{Orphan|date=July 2015}}
+
+'''Air transport network''' or air transportation network (ATN) is an example of [[transport network]]s and [[spatial network]]s. The nodes of the network are the airports and the links represent direct flight routes between two airports.<ref name="Bart">{{cite journal | last1 = Barthelemy | first1 = M. | year = 2011 | title = Spatial Networks | arxiv = 1010.0302| journal = Physics Reports | volume = 499 | issue = 1–3| pages = 1–101 | doi=10.1016/j.physrep.2010.11.002| bibcode = 2011PhR...499....1B}}</ref> Alternatively, cities can be considered as the nodes with links representing direct flight connection between them. Air transport networks can be defined worldwide as well as for one region or for one airline company; the scale of the network can be global or domestic.<ref name="Bart" />
+
+==Properties of air transport networks==
+The graph of an air transport network is spatial but not a  [[planar graph]]. The air transportation network is a [[complex network]] which has the properties of [[small-world networks]] and [[scale-free networks]].<ref name="Bart" /><ref name="Gui">{{cite journal | last1 = Guimera | first1 = R. | last2 = Mossa | first2 = S. | last3 = Turtschi | first3 = A. | last4 = Amaral | first4 = L. A. N. | year = 2005 | title = The world-wide air transportation network: Anomalous centrality, community structure, and cities' global roles | arxiv = cond-mat/0312535| journal = Proc. Natl. Acad. Sci. USA | volume = 102 | issue = 22| pages = 7794–7799 | doi=10.1073/pnas.0407994102 | pmid=15911778 | pmc=1142352| bibcode = 2005PNAS..102.7794G }}</ref><ref name="Gui2">{{cite journal | last1 = Guimera | first1 = R. | last2 = Amaral | first2 = L. A. N. | year = 2004 | title = Modeling the world-wide airport network | url = http://seeslab.info/media/filer_public/33/53/3353accf-b7af-4828-8ea1-61222e1b2dcb/guimera-2004-eurphysjb-38-381.pdf | journal = European Physical Journal B | volume = 38 | issue = 2| pages = 381–385 | bibcode = 2004EPJB...38..381G | doi = 10.1140/epjb/e2004-00131-0 }}</ref>  The [[degree distribution]] of the nodes displays a [[heavy-tailed]] distribution. The [[Hub (network science)|hubs]] of the network have large connectivities and long-distance connectivities at the same time.<ref name="Bart" />
+
+An anomalous property of the air transport networks is that nodes with relatively low degrees may have very high [[betweenness centrality]]. It is an important observation related to the [[robustness of complex networks]]. According to this finding the critical points of the system are not necessarily the hubs, but some other cities which uniquely provides routes to certain regions.<ref name="Bart" /><ref name="Gui"/><ref name="Lordan">{{cite journal | last1 = Lordan | first1 = O. | last2 = Sallan | first2 = J. M. | last3 = Simo | first3 = P. | last4 = Gonzales-Prieto | first4 = D. | year = 2014 | title = Robustness of the air transport network | journal = Transportation Research Part E: Logistics and Transportation Review | volume = 68 | pages = 155–163 | doi=10.1016/j.tre.2014.05.011}}</ref> For example, Alaska can be easily isolated from the other parts of the worldwide air transport network.<ref name="Lordan" />
+
+The worldwide air transport network defines communities. These communities are mainly determined by geographical factors. However, in some cases the borders of the communities are different from the borders of geographic regions. Such an example is the community of Europe and Asian Russia.<ref name="Bart" />
+
+==Examples for air transport networks==
+The worldwide air transportation network is represented by the database of [[International Air Transport Association]] (IATA).<ref name="Bart" /><ref name="Barrat">{{cite journal | last1 = Barrat | first1 = A. | last2 = Barthelemy | first2 = M. | last3 = Pastor-Satorras | first3 = R. | last4 = Vespignani | first4 = A. | year = 2004 | title = The architecture of complex weighted networks | journal = Proc. Natl. Acad. Sci. | volume = 101 | issue = 11| pages = 3747–3752 | doi=10.1073/pnas.0400087101 | pmid=15007165 | pmc=374315| arxiv = cond-mat/0311416 | bibcode = 2004PNAS..101.3747B }}</ref> The worldwide air transportation network is a [[critical infrastructure]] with high impact on mobility, trade and economy.<ref name="Gui"/><ref name="Gui2"/><ref name="Lordan" />
+
+Another examples are the air transport systems of a country or a country's own air transport company. It is particularly important, because the quality of the airports and national airlines are also the measures of the state of development of the country.<ref name="Gui"/><ref name="Lordan" />
+
+==Application of air transport networks==
+Modeling air transport networks aims airline companies to organize their routes in a cost-efficient way and therefore maximize their profits. Air transport network models are also the tool to investigate system robustness. They help to determine weaknesses of the system in case of various kinds of disruptions.<ref name="Lordan" /><ref name="Hu">X. Hu and E. Di Paolo "A Genetic Algorithm Based on Complex Networks Theory for the Management
+of Airline Route Networks", Studies in Computational Intelligence (SCI) 129, 495–505 (2008) (http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.434.8417&rep=rep1&type=pdf#page=495).</ref> Once weaknesses are determined, a substitute node which can support all or part of the traffic load can be identified through the alternative strength for the pair.<ref>{{Cite journal|last=Wang|first=Junwei|last2=Zhou|first2=Yaoming|last3=Huang|first3=George Q.|date=2019-06-01|title=Alternative pair in the airport network|url=http://www.sciencedirect.com/science/article/pii/S0965856418316173|journal=Transportation Research Part A: Policy and Practice|language=en|volume=124|pages=408–418|doi=10.1016/j.tra.2019.04.010|issn=0965-8564}}</ref>   
+
+An alternative application is modeling human disease networks. Air transport network is used by millions of people every day, therefore it plays key role in the spread of some infections, such as influenza or [[SARS]]. In this sense air transport network is a transmitter similar to [[sexual network]]s, which is liable for the spread of AIDS and other sexually transmitted diseases.<ref name="Gui"/><ref name="Gui2"/>
+
+==See also==
+* [[Flow network]]
+* [[Geometric graph]]
+* [[Air transportation in the United States]]
+* [[Global shipping network]]
+
+== References ==
+
+{{Reflist}}
+
+== External links ==
+* [http://www.flightradar24.com/data/airports/ Airport database over world airports]
+* [http://www.airfarewatchdog.com/pages/3799645/airline-routes-official-airline-route-maps/ Official Airline Route Maps]
+
+[[Category:Networks]]
+[[Category:Aviation]]

@@ -306,4 +306,157 @@ Computational solid state physics, for example, uses [[density functional theory
 
 [[Category:Computational physics| ]]
 [[Category:Computational fields of study]]
-[[Category:Subfields of physics]]
+[[Category:Subfields of physics]]{{Short description|Numerical simulations of physical problems via computers}}
+{{About|computational science applied in physics|theories comparing the universe to a computer|digital physics|the study of the fundamental physical limits of computers|physics of computation}}{{Use American English|date=January 2019}}{{Computational physics}}
+'''Computational physics''' is the study and implementation of [[numerical analysis]] to solve problems in [[physics]] for which a [[Scientific theory|quantitative theory]] already exists.<ref name=ThijssenBook/> Historically, computational physics was the first application of modern computers in science, and is now a subset of [[computational science]].
+
+It is sometimes regarded as a subdiscipline (or offshoot) of [[theoretical physics]], but others consider it an intermediate branch between theoretical and [[experimental physics]] - an area of study which supplements both theory and experiment.<ref name=ComPhysPy/>
+
+== Overview ==
+[[File:Computational_physics_diagram.svg|thumb|A representation of the multidisciplinary nature of computational physics both as an overlap of physics, applied mathematics, and computer science and as a bridge among them.<ref name=SurveyCompSci/>]]
+In physics, different [[theory|theories]] based on mathematical models provide very precise predictions on how systems behave. Unfortunately, it is often the case that solving the mathematical model for a particular system in order to produce a useful prediction is not feasible. This can occur, for instance, when the solution does not have a [[closed-form expression]], or is too complicated. In such cases, numerical approximations are required. Computational physics is the subject that deals with these numerical approximations: the approximation of the solution is written as a finite (and typically large) number of simple mathematical operations ([[algorithm]]), and a computer is used to perform these operations and compute an approximated solution and respective [[approximation error|error]].<ref name=ThijssenBook/>
+
+===Status in physics===
+There is a debate about the status of computation within the scientific method.<ref name=ercolessi>[http://www.fisica.uniud.it/~ercolessi/md/md/ A molecular dynamics primer] {{Webarchive|url=https://web.archive.org/web/20150111014856/http://www.fisica.uniud.it/~ercolessi/md/md/ |date=2015-01-11 }}, Furio Ercolessi, [[University of Udine]], Italy. [http://www.fisica.uniud.it/~ercolessi/md/md.pdf Article PDF] {{Webarchive|url=https://web.archive.org/web/20150924013419/http://www.fisica.uniud.it/~ercolessi/md/md.pdf |date=2015-09-24 }}.</ref>
+
+Sometimes it is regarded as more akin to theoretical physics; some others regard computer simulation as "[[computer experiment]]s",<ref name=ercolessi/> yet still others consider it an intermediate or different branch between theoretical and [[experimental physics]], a third way that supplements theory and experiment. While computers can be used in experiments for the measurement and recording (and storage) of data, this clearly does not constitute a computational approach.
+
+==Challenges in computational physics==
+
+Computational physics problems are in general very difficult to solve exactly. This is due to several (mathematical) reasons: lack of algebraic and/or analytic solubility, [[complexity]], and chaos. 
+
+For example, - even apparently simple problems, such as calculating the [[wavefunction]] of an electron orbiting an atom in a strong [[electric field]] ([[Stark effect]]), may require great effort to formulate a practical algorithm (if one can be found); other cruder or brute-force techniques, such as [[graphical method]]s or [[root finding]], may be required. On the more advanced side, mathematical [[perturbation theory]] is also sometimes used (a working is shown for this particular example [[Perturbation theory#Example of degenerate perturbation theory – Stark effect in resonant rotating wave|here]]).
+
+In addition, the [[computational cost]] and [[computational complexity theory|computational complexity]] for [[many-body problem]]s (and their [[n-body problem|classical counterpart]]s) tend to grow quickly. A macroscopic system typically has a size of the order of <math>10^{23}</math> constituent particles, so it is somewhat of a problem. Solving quantum mechanical problems is generally of [[EXP|exponential order]] in the size of the system<ref>{{Cite journal|last=Feynman|first=Richard P.|author-link=Richard Feynman|date=1982|title=Simulating physics with computers|journal=International Journal of Theoretical Physics|language=en|volume=21|issue=6–7|pages=467–488|doi=10.1007/bf02650179|bibcode=1982IJTP...21..467F|s2cid=124545445|issn=0020-7748}} [https://web.archive.org/web/20170812065758/http://www.mrtc.mdh.se/~gdc/work/ARTICLES/2014/3-CiE-journal/Background/SimulatingPhysicsWithComputers.pdf Article PDF]</ref> and for classical N-body it is of order N-squared.
+
+Finally, many physical systems are inherently nonlinear at best, and at worst [[chaos theory|chaotic]]: this means it can be difficult to ensure any [[numerical error]]s do not grow to the point of rendering the 'solution' useless.<ref name=Sauer1997/>
+
+== Methods and algorithms ==
+Because computational physics uses a broad class of problems, it is generally divided amongst the different mathematical problems it numerically solves, or the methods it applies. Between them, one can consider:
+
+* [[Root-finding_algorithm|root finding]] (using e.g. [[Newton's_method|Newton-Raphson method]])
+* [[system of linear equations]] (using e.g. [[LU decomposition]])
+* [[ordinary differential equation]]s (using e.g. [[Runge–Kutta methods]])
+* [[integral|integration]] (using e.g. [[Romberg's_method|Romberg method]] and [[Monte Carlo integration]])
+* [[partial differential equation]]s (using e.g. [[finite difference]] method and [[Relaxation_(iterative_method)|relaxation]] method)
+* [[matrix eigenvalue problem]] (using e.g. [[Jacobi eigenvalue algorithm]] and [[power iteration]])
+
+All these methods (and several others) are used to calculate physical properties of the modeled systems.
+
+Computational physics also borrows a number of ideas from [[computational chemistry]] - for example, the density functional theory used by computational solid state physicists to calculate properties of solids is basically the same as that used by chemists to calculate the properties of molecules.
+
+Furthermore, computational physics encompasses the [[performance tuning|tuning]] of the [[self-tuning#Examples|software]]/[[:Category:Computer hardware tuning|hardware structure]] to solve the problems (as the problems usually can be very large, in [[high performance computing|processing power need]] or in [[high-throughput computing|memory requests]]).
+
+== Divisions ==
+
+It is possible to find a corresponding computational branch for every major field in physics, for example [[computational mechanics]] and [[computational electrodynamics]]. Computational mechanics consists of [[computational fluid dynamics]] (CFD), computational [[solid mechanics]] and computational [[contact mechanics]]. One subfield at the confluence between CFD and electromagnetic modelling is [[computational magnetohydrodynamics]]. The quantum many-body problem leads naturally to the large and rapidly growing field of [[computational chemistry]].
+
+Computational solid state physics is a very important division of computational physics dealing directly with material science.
+
+A field related to computational condensed matter is computational [[statistical mechanics]], which deals with the simulation of models and theories (such as [[percolation]] and [[spin model]]s) that are difficult to solve otherwise. Computational [[statistical physics]] makes heavy use of Monte Carlo-like methods. More broadly, (particularly through the use of [[agent based modeling]] and [[cellular automata]]) it also concerns itself with  (and finds application in, through the use of its techniques) in the social sciences, network theory, and mathematical models for the propagation of disease (most notably, the [[Compartmental models in epidemiology#SIR Model|SIR Model]]) and the [[wildfire modeling|spread of forest fires]].
+
+On the more esoteric side, [[numerical relativity]] is a (relatively) new field interested in finding numerical solutions to the field equations of general (and special) relativity, and [[computational particle physics]] deals with problems motivated by particle physics.
+
+[[Computational astrophysics]] is the application of these techniques and methods to astrophysical problems and phenomena.
+
+[[Computational biophysics]] is a branch of biophysics and computational biology itself, applying methods of computer science and physics to large complex biological problems.
+
+== Applications ==
+Due to the broad class of problems computational physics deals, it is an essential component of modern research in different areas of physics, namely: [[accelerator physics]], [[astrophysics]], [[fluid mechanics]] ([[computational fluid dynamics]]), [[lattice field theory]]/[[lattice gauge theory]] (especially [[lattice QCD|lattice quantum chromodynamics]]), [[plasma physics]] (see [[plasma modeling]]), simulating physical systems (using e.g. [[molecular dynamics]]), [[nuclear engineering computer codes]], [[protein structure prediction]], [[weather prediction]], [[solid state physics]], [[soft condensed matter]] physics, hypervelocity impact physics etc.
+
+Computational solid state physics, for example, uses [[density functional theory]] to calculate properties of solids, a method similar to that used by chemists to study molecules.  Other quantities of interest in solid state physics, such as the electronic band structure, magnetic properties and charge densities can be calculated by this and several methods, including the [[Luttinger-Kohn model|Luttinger-Kohn]]/[[k.p method]] and [[ab-initio]] methods.
+
+==See also==
+* [[Advanced Simulation Library]]
+* [[CECAM|CECAM - Centre européen de calcul atomique et moléculaire]]
+* [[DCOMP#DCOMP|Division of Computational Physics (DCOMP)]] of the [[American Physical Society]]
+* [[List of publications in physics#Computational physics|Important publications in computational physics]]
+* [[Mathematical physics|Mathematical]] and [[theoretical physics]]
+* [[Open Source Physics]], computational physics libraries and pedagogical tools
+* [[Timeline of computational physics]]
+* [[Car–Parrinello molecular dynamics]]
+
+==References==
+{{reflist|refs=
+<ref name=ThijssenBook>
+{{Cite book
+| title= Computational Physics
+| first=Jos
+| last=Thijssen
+| year=2007
+| publisher=[[Cambridge University Press]]
+| isbn=978-0521833462 }}
+</ref>
+<ref name=SurveyCompSci>
+{{Cite book
+| title=A survey of computational physics: introductory computational science
+| first1=Rubin H.
+| last1=Landau
+| first2=Jose
+| last2=Paez
+| first3=Cristian C.
+| last3=Bordeianu
+| year=2011
+| publisher=[[Princeton University Press]]
+| isbn=9780691131375
+| url=http://press.princeton.edu/titles/8704.html
+}}
+</ref>
+<ref name=ComPhysPy>
+{{Cite book
+| title=Computational Physics: Problem Solving with Python
+| first1=Rubin H.
+| last1=Landau
+| first2=Manuel J.
+| last2=Páez
+| first3=Cristian C.
+| last3=Bordeianu
+| year=2015
+| publisher=[[John Wiley & Sons]]
+| url=http://www.wiley.com/WileyCDA/WileyTitle/productCd-3527413154.html
+}}
+</ref>
+<ref name=Sauer1997>
+{{Cite journal 
+| doi=10.1103/PhysRevLett.79.59
+| title=How Long Do Numerical Chaotic Solutions Remain Valid?
+| journal=Physical Review Letters
+| volume=79
+| issue=1
+| pages=59–62
+|bibcode = 1997PhRvL..79...59S | year=1997
+| last1=Sauer
+| first1=Tim
+| last2=Grebogi
+| first2=Celso
+| last3=Yorke
+| first3=James A
+| s2cid=102493915
+}}
+</ref>
+}}
+
+== Further reading ==
+* A.K. Hartmann, [https://web.archive.org/web/20090211113048/http://worldscibooks.com/physics/6988.html Practical Guide to Computer Simulations], [[World Scientific]] (2009)
+* [http://www.worldscinet.com/ijmpc/ijmpc.shtml International Journal of Modern Physics C (IJMPC): Physics and Computers], [[World Scientific]]
+* [[Steven E. Koonin]], Computational Physics, [[Addison-Wesley]] (1986)
+* T. Pang, An Introduction to Computational Physics, [[Cambridge University Press]] (2010)
+* B. Stickler, E. Schachinger, Basic concepts in computational physics, [[Springer Verlag]] (2013). {{ISBN|9783319024349}}.
+* E. Winsberg, ''Science in the Age of Computer Simulation''. Chicago: [[University of Chicago Press]], 2010.
+
+==External links==
+{{Commonscat}}
+*[http://phycomp.technion.ac.il/~C20 C20 IUPAP Commission on Computational Physics]
+*[http://www.aps.org/units/dcomp/index.cfm American Physical Society: Division of Computational Physics]
+*[http://www.iop.org/activity/groups/subject/comp/index.html Institute of Physics: Computational Physics Group]
+*[https://web.archive.org/web/20150418013304/http://www.scidac.gov/physics/physics.html SciDAC: Scientific Discovery through Advanced Computing]
+*[http://www.compadre.org/OSP/ Open Source Physics]
+*[http://www.obacs.com SCINET Scientific Software Framework]
+
+{{Physics-footer}}
+{{Computational science}}
+{{Computer science}}
+{{authority control}}
+
+[[Category:Computational physics| ]]
+[[Category:Computational fields of study]]

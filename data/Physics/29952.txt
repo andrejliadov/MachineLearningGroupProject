@@ -520,4 +520,264 @@ The following titles are more technical:
 
 [[Category:Thermodynamics| ]]
 [[Category:Chemical engineering]]
-[[Category:Subfields of physics]]
+[[Category:Subfields of physics]]{{short description|Physics of heat, work, and temperature}}
+{{Use dmy dates|date=February 2016}}
+[[File:Carnot engine (hot body - working body - cold body).jpg|thumb|300px|right|Annotated color version of the original 1824 [[Carnot heat engine]] showing the hot body (boiler), working body (system, steam), and cold body (water), the letters labeled according to the stopping points in [[Carnot cycle]].]]
+{{Thermodynamics}}
+
+'''Thermodynamics''' is a branch of [[physics]] that deals with [[heat]], [[Work (thermodynamics)|work]], and [[temperature]], and their relation to [[energy]], [[radiation]], and physical properties of [[matter]]. The behavior of these quantities is governed by the four [[laws of thermodynamics]] which convey a quantitative description using measurable macroscopic [[physical quantity|physical quantities]], but may be explained in terms of [[microscopic]] constituents by [[statistical mechanics]]. Thermodynamics applies to a wide variety of topics in [[science]] and [[engineering]], especially [[physical chemistry]], [[chemical engineering]] and [[mechanical engineering]], but also in other complex fields such as [[meteorology]].
+
+Historically, thermodynamics developed out of a desire to increase the [[thermodynamic efficiency|efficiency]] of early [[steam engine]]s, particularly through the work of French physicist [[Nicolas Léonard Sadi Carnot]] (1824) who believed that engine efficiency was the key that could help France win the [[Napoleonic Wars]].<ref>{{cite book | last = Clausius | first = Rudolf | title = On the Motive Power of Heat, and on the Laws which can be deduced from it for the Theory of Heat | publisher = Poggendorff's Annalen der Physik, LXXIX (Dover Reprint) | year = 1850 | isbn = 978-0-486-59065-3}}</ref> Scots-Irish physicist [[William Thomson, 1st Baron Kelvin|Lord Kelvin]] was the first to formulate a concise definition of thermodynamics in 1854<ref name=kelvin1854>{{cite book
+|title=Mathematical and Physical Papers
+|author= William Thomson, LL.D. D.C.L., F.R.S.
+|location=London, Cambridge
+|year=1882
+|volume=1
+|page=232
+|publisher=C.J. Clay, M.A. & Son, Cambridge University Press
+|url=https://books.google.com/books?id=nWMSAAAAIAAJ&q=On+an+Absolute+Thermometric+Scale+Founded+on+Carnot%E2%80%99s+Theory&pg=PA100
+}}</ref> which stated, "Thermo-dynamics is the subject of the relation of heat to forces acting between contiguous parts of bodies, and the relation of heat to electrical agency."
+
+The initial application of thermodynamics to [[mechanical heat engine]]s was quickly extended to the study of chemical compounds and chemical reactions. [[Chemical thermodynamics]] studies the nature of the role of [[entropy]] in the process of [[chemical reaction]]s and has provided the bulk of expansion and knowledge of the field.<ref name="Gibbs 1876">{{cite book|author=Gibbs, Willard, J.|title=Transactions of the Connecticut Academy of Arts and Sciences|volume=III|pages=[https://archive.org/details/transactions03conn/page/108 108]–248, 343–524|year=1874–1878|url=https://archive.org/details/transactions03conn|publisher=New Haven}}</ref><ref name="Duhem 1886">Duhem, P.M.M. (1886). ''Le Potential Thermodynamique et ses Applications'', Hermann, Paris.</ref><ref name="Lewis Randall 1923">{{cite book | last1=Lewis | first1=Gilbert N. | last2=Randall | first2=Merle | title=Thermodynamics and the Free Energy of Chemical Substances | url=https://archive.org/details/thermodynamicsfr00gnle | publisher=McGraw-Hill Book Co. Inc. | year=1923}}</ref><ref name="Guggenheim 1933">Guggenheim, E.A. (1933). ''Modern Thermodynamics by the Methods of J.W. Gibbs'', Methuen, London.</ref><ref name="Guggenheim 1949/1967">Guggenheim, E.A. (1949/1967). ''Thermodynamics. An Advanced Treatment for Chemists and Physicists'', 1st edition 1949, 5th edition 1967, North-Holland, Amsterdam.</ref><ref>{{cite book | author=Ilya Prigogine, I. & Defay, R., translated by D.H. Everett| title=Chemical Thermodynamics | year=1954 | publisher=Longmans, Green & Co., London. Includes classical non-equilibrium thermodynamics.}}
+</ref><ref name=Fermi>{{cite book
+|title=Thermodynamics
+|author=Enrico Fermi
+|url=https://books.google.com/books?id=VEZ1ljsT3IwC&q=thermodynamics
+|isbn=978-0486603612
+|publisher=Courier Dover Publications
+|year=1956
+|page=ix
+|oclc=230763036}}</ref><ref name="Perrot" >{{cite book | author=Perrot, Pierre | title=A to Z of Thermodynamics | publisher=Oxford University Press | year=1998 | isbn=978-0-19-856552-9 | oclc=123283342}}</ref><ref>{{cite book | author=Clark, John, O.E.| title=The Essential Dictionary of Science | publisher=Barnes & Noble Books | year=2004 | isbn=978-0-7607-4616-5 | oclc=58732844}}</ref> Other formulations of thermodynamics emerged. [[Statistical thermodynamics]], or statistical mechanics, concerns itself with [[statistics|statistical]] predictions of the collective motion of particles from their microscopic behavior. In 1909, [[Constantin Carathéodory]] presented a purely mathematical approach in an [[axiomatic]] formulation, a description often referred to as ''geometrical thermodynamics''.
+
+==Introduction==
+A description of any thermodynamic system employs the four [[laws of thermodynamics]] that form an axiomatic basis. [[First law of thermodynamics|The first law]] specifies that energy can be exchanged between physical systems as [[heat]] and [[Mechanical work|work]].<ref>{{cite book | author=Van Ness, H.C. | title=Understanding Thermodynamics | publisher=Dover Publications, Inc. | year=1983 | orig-year=1969 | isbn=9780486632773 | oclc=8846081 | url-access=registration | url=https://archive.org/details/understandingthe00vann }}</ref> [[Second law of thermodynamics|The second law]] defines the existence of a quantity called [[entropy]], that describes the direction, thermodynamically, that a system can evolve and quantifies the state of order of a system and that can be used to quantify the useful work that can be extracted from the system.<ref>{{cite book | author=Dugdale, J.S. | title=Entropy and its Physical Meaning | publisher=Taylor and Francis | year=1998 | isbn=978-0-7484-0569-5 | oclc=36457809}}</ref>
+
+In thermodynamics, interactions between large ensembles of objects are studied and categorized. Central to this are the concepts of the thermodynamic ''[[System (thermodynamics)|system]]'' and its ''[[Surroundings (thermodynamics)|surroundings]]''. A system is composed of particles, whose average motions define its properties, and those properties are in turn related to one another through [[Equation of state|equations of state]]. Properties can be combined to express [[internal energy]] and [[thermodynamic potential]]s, which are useful for determining conditions for [[Dynamic equilibrium|equilibrium]] and [[spontaneous process]]es.
+
+With these tools, thermodynamics can be used to describe how systems respond to changes in their environment. This can be applied to a wide variety of topics in [[science]] and [[engineering]], such as [[engine]]s, [[phase transition]]s, [[chemical reaction]]s, [[transport phenomena]], and even [[black hole]]s. The results of thermodynamics are essential for other fields of [[physics]] and for [[chemistry]], [[chemical engineering]], [[corrosion engineering]], [[aerospace engineering]], [[mechanical engineering]], [[cell biology]], [[biomedical engineering]], [[materials science]], and [[economics]], to name a few.<ref>{{Cite book | last1=Smith | first1=J.M. | last2=Van Ness | first2=H.C. | last3=Abbott | first3=M.M. | title=Introduction to Chemical Engineering Thermodynamics | page=584 | year=2005 | isbn=978-0-07-310445-4 | oclc=56491111| bibcode=1950JChEd..27..584S | edition=7th }}</ref><ref>{{cite book | author=Haynie, Donald, T. | title=Biological Thermodynamics | publisher=Cambridge University Press | year=2001 | isbn=978-0-521-79549-4 | oclc=43993556}}</ref>
+
+This article is focused mainly on classical thermodynamics which primarily studies systems in [[thermodynamic equilibrium]]. [[Non-equilibrium thermodynamics]] is often treated as an extension of the classical treatment, but statistical mechanics has brought many advances to that field.
+
+[[File:Eight founding schools.png|400px|thumb|The [[thermodynamicist]]s representative of the original eight founding schools of thermodynamics. The schools with the most-lasting effect in founding the modern versions of thermodynamics are the Berlin school, particularly as established in [[Rudolf Clausius]]’s 1865 textbook ''The Mechanical Theory of Heat'', the Vienna school, with the [[statistical mechanics]] of [[Ludwig Boltzmann]], and the Gibbsian school at Yale University, American engineer [[Willard Gibbs]]' 1876 ''[[On the Equilibrium of Heterogeneous Substances]]'' launching [[chemical thermodynamics]].<ref name="autogenerated1">[http://www.eoht.info/page/Schools+of+thermodynamics Schools of thermodynamics] – EoHT.info.</ref>]]
+
+==History==
+The [[history of thermodynamics]] as a scientific discipline generally begins with [[Otto von Guericke]] who, in 1650, built and designed the world's first [[vacuum pump]] and demonstrated a [[vacuum]] using his [[Magdeburg hemispheres]]. Guericke was driven to make a vacuum in order to disprove [[Aristotle]]'s long-held supposition that 'nature abhors a vacuum'. Shortly after Guericke, the Anglo-Irish physicist and chemist [[Robert Boyle]] had learned of Guericke's designs and, in 1656, in coordination with English scientist [[Robert Hooke]], built an air pump.<ref>{{cite book | author=Partington, J.R. | title=A Short History of Chemistry | url=https://archive.org/details/shorthistoryofch0000part_q6h4 | url-access=registration | publisher=Dover | year=1989 | oclc=19353301| author-link=J. R. Partington }}</ref> Using this pump, Boyle and Hooke noticed a correlation between [[pressure]], [[temperature]], and [[Volume (thermodynamics)|volume]]. In time, [[Boyle's Law]] was formulated, which states that pressure and volume are [[inverse proportion|inversely proportional]]. Then, in 1679, based on these concepts, an associate of Boyle's named [[Denis Papin]] built a [[steam digester]], which was a closed vessel with a tightly fitting lid that confined steam until a high pressure was generated.
+
+Later designs implemented a steam release valve that kept the machine from exploding. By watching the valve rhythmically move up and down, Papin conceived of the idea of a [[piston]] and a cylinder engine. He did not, however, follow through with his design. Nevertheless, in 1697, based on Papin's designs, engineer [[Thomas Savery]] built the first engine, followed by [[Thomas Newcomen]] in 1712. Although these early engines were crude and inefficient, they attracted the attention of the leading scientists of the time.
+
+The fundamental concepts of [[heat capacity]] and [[latent heat]], which were necessary for the development of thermodynamics, were developed by Professor [[Joseph Black]] at the University of Glasgow, where [[James Watt]] was employed as an instrument maker. Black and Watt performed experiments together, but it was Watt who conceived the idea of the [[Watt steam engine#Separate condenser|external condenser]] which resulted in a large increase in [[steam engine]] efficiency.<ref>The Newcomen engine was improved from 1711 until Watt's work, making the efficiency comparison subject to qualification, but the increase from the 1865 version was on the order of 100%.</ref> Drawing on all the previous work led [[Nicolas Léonard Sadi Carnot|Sadi Carnot]], the "father of thermodynamics", to publish ''[[Reflections on the Motive Power of Fire]]'' (1824), a discourse on heat, power, energy and engine efficiency. The book outlined the basic energetic relations between the [[Carnot engine]], the [[Carnot cycle]], and '''motive power'''. It marked the start of thermodynamics as a modern science.<ref name="Perrot" />
+
+The first thermodynamic textbook was written in 1859 by [[William John Macquorn Rankine|William Rankine]], originally trained as a physicist and a civil and mechanical engineering professor at the [[University of Glasgow]].<ref>{{cite book |author1=Cengel, Yunus A. |author2=Boles, Michael A. | title=Thermodynamics – an Engineering Approach | publisher=McGraw-Hill | year=2005 | isbn=978-0-07-310768-4}}</ref> The first and second laws of thermodynamics emerged simultaneously in the 1850s, primarily out of the works of [[William John Macquorn Rankine|William Rankine]], [[Rudolf Clausius]], and [[William Thomson, 1st Baron Kelvin|William Thomson]] (Lord Kelvin).<ref name = "NKS note b">''[[A New Kind of Science]]'' [https://www.wolframscience.com/nks/notes-9-3--history-of-thermodynamics/ Note (b) for Irreversibility and the Second Law of Thermodynamics]</ref>
+
+The foundations of statistical thermodynamics were set out by physicists such as [[James Clerk Maxwell]], [[Ludwig Boltzmann]], [[Max Planck]], [[Rudolf Clausius]] and [[Josiah Willard Gibbs|J. Willard Gibbs]].
+
+During the years 1873–76 the American mathematical physicist [[Josiah Willard Gibbs]] published a series of three papers, the most famous being ''[[On the Equilibrium of Heterogeneous Substances]]'',<ref name="Gibbs 1876"/> in which he showed how [[thermodynamic processes]], including [[chemical reaction]]s, could be graphically analyzed, by studying the [[energy]], [[entropy]], [[Volume (thermodynamics)|volume]], [[temperature]] and [[pressure]] of the [[thermodynamic system]] in such a manner, one can determine if a process would occur spontaneously.<ref>{{cite book | author=Gibbs, Willard | title=The Scientific Papers of J. Willard Gibbs, Volume One: Thermodynamics | publisher=Ox Bow Press | year=1993 | isbn=978-0-918024-77-0 | oclc=27974820}}</ref> Also [[Pierre Duhem]] in the 19th century wrote about chemical thermodynamics.<ref name="Duhem 1886"/> During the early 20th century, chemists such as [[Gilbert N. Lewis]], [[Merle Randall]],<ref name="Lewis Randall 1923"/> and [[E. A. Guggenheim]]<ref name="Guggenheim 1933"/><ref name="Guggenheim 1949/1967"/> applied the mathematical methods of Gibbs to the analysis of chemical processes.
+
+==Etymology==
+<!-- the history of the term is rich, more needs to be added-->
+The etymology of ''thermodynamics'' has an intricate history.<ref name=eoht>{{cite web
+|url=http://www.eoht.info/page/Thermo-dynamics
+|title=Thermodynamics (etymology)
+|publisher=EoHT.info
+}}</ref> It was first spelled in a hyphenated form as an adjective (''thermo-dynamic'') and from 1854 to 1868 as the noun ''thermo-dynamics'' to represent the science of generalized heat engines.<ref name=eoht/>
+
+American [[Biophysics|biophysicist]] Donald Haynie claims that ''thermodynamics'' was coined in 1840 from the [[Greek language|Greek]] root [[wikt:θέρμη|θέρμη]] ''therme,'' meaning “heat”, and [[wikt:δύναμις|δύναμις]] ''dynamis,'' meaning “power”.<ref>{{cite book
+|title=Biological Thermodynamics
+|url=https://archive.org/details/biologicalthermo0000hayn
+|url-access=registration
+|edition=2
+|author=Donald T. Haynie
+|publisher=Cambridge University Press
+|year=2008
+|page=[https://archive.org/details/biologicalthermo0000hayn/page/26 26]
+}}</ref>
+
+Pierre Perrot claims that the term ''thermodynamics'' was coined by [[James Joule]] in 1858 to designate the science of relations between heat and power,<ref name="Perrot" /> however, Joule never used that term, but used instead the term ''perfect thermo-dynamic engine'' in reference to Thomson's 1849<ref name=kelvin1849/> phraseology.<ref name=eoht/>
+
+By 1858, ''thermo-dynamics'', as a functional term, was used in [[William Thomson, 1st Baron Kelvin|William Thomson]]'s paper "An Account of Carnot's Theory of the Motive Power of Heat."<ref name=kelvin1849>Kelvin, William T. (1849) "An Account of Carnot's Theory of the Motive Power of Heat – with Numerical Results Deduced from Regnault's Experiments on Steam." ''Transactions of the Edinburg Royal Society, XVI. January 2.''[http://visualiseur.bnf.fr/Visualiseur?Destination=Gallica&O=NUMM-95118 Scanned Copy]</ref>
+
+==Branches of thermodynamics==
+The study of thermodynamical systems has developed into several related branches, each using a different fundamental model as a theoretical or experimental basis, or applying the principles to varying types of systems.
+
+===Classical thermodynamics===
+Classical thermodynamics is the description of the states of thermodynamic systems at near-equilibrium, that uses macroscopic, measurable properties. It is used to model exchanges of energy, work and heat based on the [[laws of thermodynamics]]. The qualifier ''classical'' reflects the fact that it represents the first level of understanding of the subject as it developed in the 19th century and describes the changes of a system in terms of macroscopic empirical (large scale, and measurable) parameters. A microscopic interpretation of these concepts was later provided by the development of ''statistical mechanics''.
+
+===Statistical mechanics===
+[[Statistical mechanics]], also called statistical thermodynamics, emerged with the development of atomic and molecular theories in the late 19th century and early 20th century, and supplemented classical thermodynamics with an interpretation of the microscopic interactions between individual particles or quantum-mechanical states. This field relates the microscopic properties of individual atoms and molecules to the macroscopic, bulk properties of materials that can be observed on the human scale, thereby explaining classical thermodynamics as a natural result of statistics, classical mechanics, and [[Quantum mechanics|quantum theory]] at the microscopic level.<ref name= "NKS note b" />
+
+===Chemical thermodynamics===
+[[Chemical thermodynamics]] is the study of the interrelation of [[energy]] with [[chemical reactions]] or with a physical change of [[thermodynamic state|state]] within the confines of the [[laws of thermodynamics]].
+
+===Equilibrium thermodynamics===
+[[Equilibrium thermodynamics]] is the study of transfers of matter and energy in systems or bodies that, by agencies in their surroundings, can be driven from one state of thermodynamic equilibrium to another. The term 'thermodynamic equilibrium' indicates a state of balance, in which all macroscopic flows are zero; in the case of the simplest systems or bodies, their intensive properties are homogeneous, and their pressures are perpendicular to their boundaries. In an equilibrium state there are no unbalanced potentials, or driving forces, between macroscopically distinct parts of the system. A central aim in equilibrium thermodynamics is: given a system in a well-defined initial equilibrium state, and given its surroundings, and given its constitutive walls, to calculate what will be the final equilibrium state of the system after a specified thermodynamic operation has changed its walls or surroundings.
+
+[[Non-equilibrium thermodynamics]] is a branch of thermodynamics that deals with systems that are not in [[thermodynamic equilibrium]]. Most systems found in nature are not in thermodynamic equilibrium because they are not in stationary states, and are continuously and discontinuously subject to flux of matter and energy to and from other systems. The thermodynamic study of non-equilibrium systems requires more general concepts than are dealt with by equilibrium thermodynamics. Many natural systems still today remain beyond the scope of currently known macroscopic thermodynamic methods.
+
+==Laws of thermodynamics==
+{{Main|Laws of thermodynamics}}
+Thermodynamics is principally based on a set of four laws which are universally valid when applied to systems that fall within the constraints implied by each. In the various theoretical descriptions of thermodynamics these laws may be expressed in seemingly differing forms, but the most prominent formulations are the following.
+
+===Zeroth Law===
+The [[zeroth law of thermodynamics]] states: ''If two systems are each in thermal equilibrium with a third, they are also in thermal equilibrium with each other.''
+
+This statement implies that thermal equilibrium is an [[equivalence relation]] on the set of [[thermodynamic system]]s under consideration. Systems are said to be in equilibrium if the small, random exchanges between them (e.g. [[Brownian motion]]) do not lead to a net change in energy. This law is tacitly assumed in every measurement of temperature. Thus, if one seeks to decide whether two bodies are at the same [[temperature]], it is not necessary to bring them into contact and measure any changes of their observable properties in time.<ref>Moran, Michael J. and Howard N. Shapiro, 2008. ''Fundamentals of Engineering Thermodynamics''. 6th ed. Wiley and Sons: 16.</ref> The law provides an empirical definition of temperature, and justification for the construction of practical thermometers.
+
+The zeroth law was not initially recognized as a separate law of thermodynamics, as its basis in thermodynamical equilibrium was implied in the other laws. The first, second, and third laws had been explicitly stated already, and found common acceptance in the physics community before the importance of the zeroth law for the definition of temperature was realized. As it was impractical to renumber the other laws, it was named the ''zeroth law''.
+
+===First Law===
+The [[first law of thermodynamics]] states: ''In a process without transfer of matter, the change in [[internal energy]],'' {{math|Δ''U''}}'', of a [[thermodynamic system]] is equal to the energy gained as heat,'' {{math|''Q''}}'', less the thermodynamic work,'' {{math|''W''}}'', done by the system on its surroundings.''<ref>Bailyn, M. (1994). ''A Survey of Thermodynamics'', American Institute of Physics, AIP Press, Woodbury NY, {{ISBN|0883187973}}, p. 79.</ref><ref group=nb>The sign convention (Q is heat supplied ''to'' the system as, W is work done ''by'' the system) is that of [[Rudolf Clausius]]. The opposite sign convention is customary in chemical thermodynamics.</ref>
+
+:<math>\Delta U = Q - W</math>.
+
+For processes that include transfer of matter, a further statement is needed: ''With due account of the respective fiducial reference states of the systems, when two systems, which may be of different chemical compositions, initially separated only by an impermeable wall, and otherwise isolated, are combined into a new system by the thermodynamic operation of removal of the wall, then''
+
+:<math>U_0 = U_1 + U_2</math>,
+
+''where'' {{math|''U''<sub>0</sub>}} ''denotes the internal energy of the combined system, and'' {{math|''U''<sub>1</sub>}} ''and'' {{math|''U''<sub>2</sub>}} ''denote the internal energies of the respective separated systems.''
+
+Adapted for thermodynamics, this law is an expression of the principle of [[conservation of energy]], which states that energy can be transformed (changed from one form to another), but cannot be created or destroyed.<ref>Callen, H.B. (1960/1985).''Thermodynamics and an Introduction to Thermostatistics'', second edition, John Wiley & Sons, Hoboken NY, {{ISBN|9780471862567}}, pp. 11–13.</ref>
+
+Internal energy is a principal property of the [[thermodynamic state]], while heat and work are modes of energy transfer by which a process may change this state. A change of internal energy of a system may be achieved by any combination of heat added or removed and work performed on or by the system. As a [[State function|function of state]], the internal energy does not depend on the manner, or on the path through intermediate steps, by which the system arrived at its state.
+
+===Second Law===
+A traditional version of the [[second law of thermodynamics]] states: ''Heat does not spontaneously flow from a colder body to a hotter.''<ref name= "NKS note b" />
+
+The second law is an observation of the fact that over time, inhomogeneities in temperature, pressure, and chemical potential tend to even out in a physical system that is isolated from the outside world. [[Entropy]] is a measure of how much this process has progressed. The entropy of an isolated system, that is internally constrained away from equilibrium, will increase when its internal constraints are removed, reaching a maximum value at thermodynamic equilibrium. Though several such have been proposed, there is known no general thermodynamic principle that guides the rates of changes in unconstrained systems that are far from thermodynamic equilibrium.
+
+In classical thermodynamics, the second law is a basic postulate applicable to any actual thermodynamic process; in statistical thermodynamics, the second law is a consequence of molecular chaos. There are many versions of the second law, but they all have the same effect, which is to express the phenomenon of [irreversibility] in nature.
+
+===Third Law===
+The [[third law of thermodynamics]] states: ''As the temperature of a system approaches absolute zero, all processes cease and the entropy of the system approaches a minimum value.''
+
+This law of thermodynamics is a statistical law of nature regarding entropy and the impossibility of reaching [[absolute zero]] of temperature. This law provides an absolute reference point for the determination of entropy. The entropy determined relative to this point is the absolute entropy. Alternate definitions include "the entropy of all systems and of all states of a system is smallest at absolute zero," or equivalently "it is impossible to reach the absolute zero of temperature by any finite number of processes".
+
+Absolute zero, at which all activity would stop if it were possible to achieve, is −273.15&nbsp;°C (degrees Celsius), or −459.67&nbsp;°F (degrees Fahrenheit), or 0 K (kelvin), or 0° R (degrees [[Rankine scale|Rankine]]).
+
+==System models==
+[[File:system boundary.svg|200px|thumb|right|A diagram of a generic thermodynamic system]]
+An important concept in thermodynamics is the [[thermodynamic system]], which is a precisely defined region of the universe under study. Everything in the universe except the system is called the [[Environment (systems)|''surroundings'']]. A system is separated from the remainder of the universe by a [[Boundary (thermodynamic)|''boundary'']] which may be a physical or notional, but serve to confine the system to a finite volume. Segments of the ''boundary'' are often described as ''walls''; they have respective defined 'permeabilities'. Transfers of energy as [[Work (thermodynamics)|work]], or as [[heat]], or of [[matter]], between the system and the surroundings, take place through the walls, according to their respective permeabilities.
+
+Matter or energy that pass across the boundary so as to effect a change in the internal energy of the system need to be accounted for in the energy balance equation. The volume contained by the walls can be the region surrounding a single atom resonating energy, such as [[Max Planck]] defined in 1900; it can be a body of steam or air in a [[steam engine]], such as [[Nicolas Léonard Sadi Carnot|Sadi Carnot]] defined in 1824. The system could also be just one [[nuclide]] (i.e. a system of [[quark]]s) as hypothesized in [[quantum thermodynamics]]. When a looser viewpoint is adopted, and the requirement of thermodynamic equilibrium is dropped, the system can be the body of a [[tropical cyclone]], such as [[Kerry Emanuel]] theorized in 1986 in the field of [[atmospheric thermodynamics]], or the [[event horizon]] of a [[black hole thermodynamics|black hole]].
+
+Boundaries are of four types: fixed, movable, real, and imaginary. For example, in an engine, a fixed boundary means the piston is locked at its position, within which a constant volume process might occur. If the piston is allowed to move that boundary is movable while the cylinder and cylinder head boundaries are fixed. For closed systems, boundaries are real while for open systems boundaries are often imaginary. In the case of a jet engine, a fixed imaginary boundary might be assumed at the intake of the engine, fixed boundaries along the surface of the case and a second fixed imaginary boundary across the exhaust nozzle.
+
+Generally, thermodynamics distinguishes three classes of systems, defined in terms of what is allowed to cross their boundaries:
+{{table of thermodynamic systems}}
+As time passes in an isolated system, internal differences of pressures, densities, and temperatures tend to even out. A system in which all equalizing processes have gone to completion is said to be in a [[state (thermodynamic)|state]] of [[thermodynamic equilibrium]].
+
+Once in thermodynamic equilibrium, a system's properties are, by definition, unchanging in time. Systems in equilibrium are much simpler and easier to understand than are systems which are not in equilibrium. Often, when analysing a dynamic thermodynamic process, the simplifying assumption is made that each intermediate state in the process is at equilibrium, producing thermodynamic processes which develop so slowly as to allow each intermediate step to be an equilibrium state and are said to be [[reversible process (thermodynamics)|reversible processes]].
+
+==States and processes==
+When a system is at equilibrium under a given set of conditions, it is said to be in a definite [[thermodynamic state]]. The state of the system can be described by a number of [[state function|state quantities]] that do not depend on the process by which the system arrived at its state. They are called [[intensive variable]]s or [[extensive variable]]s according to how they change when the size of the system changes. The properties of the system can be described by an [[equation of state]] which specifies the relationship between these variables. State may be thought of as the instantaneous quantitative description of a system with a set number of variables held constant.
+
+A [[thermodynamic process]] may be defined as the energetic evolution of a thermodynamic system proceeding from an initial state to a final state. It can be described by [[process function|process quantities]]. Typically, each thermodynamic process is distinguished from other processes in energetic character according to what parameters, such as temperature, pressure, or volume, etc., are held fixed; Furthermore, it is useful to group these processes into pairs, in which each variable held constant is one member of a [[conjugate variables (thermodynamics)|conjugate]] pair.
+
+Several commonly studied thermodynamic processes are:
+* [[Adiabatic process]]: occurs without loss or gain of energy by [[heat]]
+* [[Isenthalpic process]]: occurs at a constant [[enthalpy]]
+* [[Isentropic process]]: a reversible adiabatic process, occurs at a constant [[entropy]]
+* [[Isobaric process]]: occurs at constant [[pressure]]
+* [[Isochoric process]]: occurs at constant [[Volume (thermodynamics)|volume]] (also called isometric/isovolumetric)
+* [[Isothermal process]]: occurs at a constant [[temperature]]
+* [[steady state|Steady state process]]: occurs without a change in the [[internal energy]]
+
+== Instrumentation ==
+There are two types of [[thermodynamic instruments]], the '''meter''' and the '''reservoir'''. A thermodynamic meter is any device which measures any parameter of a [[thermodynamic system]]. In some cases, the thermodynamic parameter is actually defined in terms of an idealized measuring instrument. For example, the [[zeroth law of thermodynamics|zeroth law]] states that if two bodies are in thermal equilibrium with a third body, they are also in thermal equilibrium with each other. This principle, as noted by [[James Clerk Maxwell|James Maxwell]] in 1872, asserts that it is possible to measure temperature. An idealized [[thermometer]] is a sample of an ideal gas at constant pressure. From the [[ideal gas law]] ''pV=nRT'', the volume of such a sample can be used as an indicator of temperature; in this manner it defines temperature. Although pressure is defined mechanically, a pressure-measuring device, called a [[barometer]] may also be constructed from a sample of an ideal gas held at a constant temperature. A [[calorimeter]] is a device which is used to measure and define the internal energy of a system.
+
+A thermodynamic reservoir is a system which is so large that its state parameters are not appreciably altered when it is brought into contact with the system of interest. When the reservoir is brought into contact with the system, the system is brought into equilibrium with the reservoir. For example, a pressure reservoir is a system at a particular pressure, which imposes that pressure upon the system to which it is mechanically connected. The Earth's atmosphere is often used as a pressure reservoir. The ocean can act as temperature reservoir when used to cool power plants.
+
+== Conjugate variables ==
+{{Main|Conjugate variables (thermodynamics)|l1=Conjugate variables}}
+
+The central concept of thermodynamics is that of [[energy]], the ability to do [[Work (thermodynamics)|work]]. By the [[first law of thermodynamics|First Law]], the total energy of a system and its surroundings is conserved. Energy may be transferred into a system by heating, compression, or addition of matter, and extracted from a system by cooling, expansion, or extraction of matter. In [[mechanics]], for example, energy transfer equals the product of the force applied to a body and the resulting displacement.
+
+[[conjugate variables (thermodynamics)|Conjugate variables]] are pairs of thermodynamic concepts, with the first being akin to a "force" applied to some [[thermodynamic system]], the second being akin to the resulting "displacement," and the product of the two equaling the amount of energy transferred. The common conjugate variables are:
+* [[Pressure]]-[[Volume (thermodynamics)|volume]] (the [[Mechanics|mechanical]] parameters);
+* [[Temperature]]-[[entropy]] (thermal parameters);
+* [[Chemical potential]]-[[particle number]] (material parameters).
+
+== Potentials ==
+[[Thermodynamic potential]]s are different quantitative measures of the stored energy in a system. Potentials are used to measure the energy changes in systems as they evolve from an initial state to a final state. The potential used depends on the constraints of the system, such as constant temperature or pressure. For example, the Helmholtz and Gibbs energies are the energies available in a system to do useful work when the temperature and volume or the pressure and temperature are fixed, respectively.
+
+The five most well known potentials are:
+{{table of thermodynamic potentials}}
+
+where <math>T</math> is the [[thermodynamic temperature|temperature]], <math>S</math> the [[entropy]], <math>p</math> the [[pressure]], <math>V</math> the [[Volume (thermodynamics)|volume]], <math>\mu</math> the [[chemical potential]], <math>N</math> the number of particles in the system, and <math>i</math> is the count of particles types in the system.
+
+Thermodynamic potentials can be derived from the energy balance equation applied to a thermodynamic system. Other thermodynamic potentials can also be obtained through [[Legendre transformation]].
+
+== Applied fields ==
+{{columns-list|colwidth=22em|
+* [[Atmospheric thermodynamics]]
+* [[Biological thermodynamics]]
+* [[Black hole thermodynamics]]
+* [[Chemical thermodynamics]]
+* [[Classical thermodynamics]]
+* [[Thermodynamic equilibrium|Equilibrium thermodynamics]]
+* [[Industrial ecology]] (re: [[Exergy]])
+* [[Maximum entropy thermodynamics]]
+* [[Non-equilibrium thermodynamics]]
+* [[Philosophy of thermal and statistical physics]]
+* [[Psychrometrics]]
+* [[Quantum thermodynamics]]
+* [[Statistical thermodynamics]]
+* [[Thermoeconomics]]
+}}
+
+== See also ==
+{{portal|Physics}}
+* [[Thermodynamic process path]]
+
+===Lists and timelines===
+* [[List of important publications in physics#Thermodynamics|List of important publications in thermodynamics]]
+* [[List of textbooks in statistical mechanics|List of textbooks on thermodynamics and statistical mechanics]]
+* [[List of thermal conductivities]]
+* [[List of thermodynamic properties]]
+* [[Table of thermodynamic equations]]
+* [[Timeline of thermodynamics]]
+
+== Notes ==
+{{reflist|group=nb}}
+
+==References==
+{{Reflist|2}}
+
+==Further reading==
+* {{cite book|author1=Goldstein, Martin|author2=Inge F.|name-list-style=amp|title=The Refrigerator and the Universe|url=https://archive.org/details/refrigeratoruniv0000gold|url-access=registration|publisher=Harvard University Press|year=1993|isbn=978-0-674-75325-9|oclc=32826343}} A nontechnical introduction, good on historical and interpretive matters.
+* {{cite journal |last1=Kazakov |first1=Andrei |last2=Muzny |first2=Chris D. |last3=Chirico |first3=Robert D. |last4=Diky |first4=Vladimir V. |last5=Frenkel |first5=Michael |title=Web Thermo Tables – an On-Line Version of the TRC Thermodynamic Tables |journal=Journal of Research of the National Institute of Standards and Technology |volume=113 |issue=4 |year=2008 |pages=209–220 |issn=1044-677X |doi=10.6028/jres.113.016 |pmc=4651616 |pmid=27096122}}
+* {{cite book|author=Gibbs J.W.|title=The Collected Works of J. Willard Gibbs Thermodynamics.|publisher=Longmans, Green and Co.|year=1928|location=New York}} Vol. 1, pp. 55–349.
+* {{cite book|author=Guggenheim E.A.|title=Modern thermodynamics by the methods of Willard Gibbs|publisher=Methuen & co. ltd.|year=1933|location=London}}
+* {{cite book|author=Denbigh K.|title=The Principles of Chemical Equilibrium: With Applications in Chemistry and Chemical Engineering.|publisher=Cambridge University Press|year=1981|location=London}}
+* {{cite book|author=Stull, D.R., Westrum Jr., E.F. and Sinke, G.C.|title=The Chemical Thermodynamics of Organic Compounds.|publisher=John Wiley and Sons, Inc.|year=1969|location=London}}
+* {{cite book|author=Bazarov I.P.|title=Thermodynamics: Textbook.|publisher=Lan publishing house|year=2010|isbn=978-5-8114-1003-3|location=St. Petersburg|page=384}} 5th ed. (in Russian)
+* {{cite book|author=Bawendi Moungi G., Alberty Robert A. and Silbey Robert J.|title=Physical Chemistry|publisher=J. Wiley & Sons, Incorporated|year=2004}}
+* {{cite book|author=Alberty Robert A.|title=Thermodynamics of Biochemical Reactions|publisher=Wiley-Interscience|year=2003}}
+* {{cite book|author=Alberty Robert A.|title=Biochemical Thermodynamics: Applications of Mathematica|publisher=John Wiley & Sons, Inc.|year=2006|pmid=16878778|isbn=978-0-471-75798-6}}
+* {{cite book|author=Dill Ken A., Bromberg Sarina|title=Molecular Driving Forces: Statistical Thermodynamics in Biology, Chemistry, Physics, and Nanoscience |publisher=Garland Science|year=2011|isbn=978-0-8153-4430-8}}
+* {{cite book|author=M. Scott Shell|title=Thermodynamics and Statistical Mechanics: An Integrated Approach|publisher=Cambridge University Press|year=2015|isbn=978-1107656789}}
+* {{cite book|author=Douglas E. Barrick|title=Biomolecular Thermodynamics: From Theory to Applications|publisher=CRC Press|year=2018|isbn=978-1-4398-0019-5}}
+
+
+The following titles are more technical:
+* {{Cite book|title=Advanced Engineering Thermodynamics|last=Bejan|first=Adrian|publisher=Wiley|year=2016|isbn=978-1-119-05209-8|edition=4}}
+* {{cite book|author=Cengel, Yunus A., & Boles, Michael A.|title=Thermodynamics – an Engineering Approach|publisher=McGraw Hill|year=2002|isbn=978-0-07-238332-4|oclc=45791449|url-access=registration|url=https://archive.org/details/thermodynamicsen00ceng_0}}
+* {{cite book|author=Dunning-Davies, Jeremy|title=Concise Thermodynamics: Principles and Applications|publisher=Horwood Publishing|year=1997|isbn=978-1-8985-6315-0|oclc=36025958}}
+* {{cite book|author1=Kroemer, Herbert|author2=Kittel, Charles|name-list-style=amp|title=Thermal Physics|publisher=W.H. Freeman Company|year=1980|isbn=978-0-7167-1088-2|oclc=32932988}}
+
+== External links ==
+{{Wikibooks|Engineering Thermodynamics}}
+{{wikiquote|Thermodynamics}}
+* {{cite EB1911 |first=Hugh Longbourne |last=Callendar |wstitle=Thermodynamics |volume=26 |pages=808–814 |short=x}}
+* [http://tigger.uic.edu/~mansoori/Thermodynamic.Data.and.Property_html Thermodynamics Data & Property Calculation Websites]
+* [http://tigger.uic.edu/~mansoori/Thermodynamics.Educational.Sites_html Thermodynamics Educational Websites]
+* [http://scienceworld.wolfram.com/physics/topics/Thermodynamics.html Thermodynamics at ''ScienceWorld'']
+* [http://www.wiley.com/legacy/college/boyer/0470003790/reviews/thermo/thermo_intro.htm Biochemistry Thermodynamics]
+* [http://farside.ph.utexas.edu/teaching/sm1/lectures/lectures.html Thermodynamics and Statistical Mechanics]
+* [https://web.archive.org/web/20090430200028/http://www.ent.ohiou.edu/~thermo/ Engineering Thermodynamics – A Graphical Approach]
+* [http://farside.ph.utexas.edu/teaching/sm1/statmech.pdf Thermodynamics and Statistical Mechanics] by Richard Fitzpatrick
+
+{{Physics-footer}}
+{{HVAC}}
+
+[[Category:Thermodynamics| ]]
+[[Category:Chemical engineering]]

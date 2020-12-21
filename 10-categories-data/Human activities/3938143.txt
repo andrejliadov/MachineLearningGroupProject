@@ -1,0 +1,160 @@
+{{Portal maintenance status|date=June 2018|broken=no|notes=|subpages=keep}}{{Portal description}}<!-- This portal was created using subst:box portal skeleton  -->
+{{Portals browsebar}}
+{| width="100%" cellpadding="1" cellspacing="2" style="background:#f7f781; border:3px solid #E2725B; {{Round corners}}; padding: 10px; margin-bottom: 8px;"
+|-
+| width="55%" style="vertical-align:top;text-align:center;padding: 0; margin:0;" |
+<span style="font-size:36pt; font-weight: bold; font-family:Palatino Linotype, URW Palladio, Book Antiqua, serif;">[[File:Homebrew Beer.jpg|130px|Homebrew beer]] &nbsp;The Beer Portal &nbsp;[[File:Beer Keg BW (5269633856).jpg|130px|A beer keg]]</span>
+<br>
+|-
+|<div style="float:right; width:100%">
+{{/box-header|Introduction|Portal:Beer|}}
+[[File:Edouard Manet - At the Café - Google Art Project.jpg|thumb|left|''At the Café'' by [[Édouard Manet]], circa 1879]]
+{{shortcut|P:Beer}}
+
+<!--If you want to edit the text, please go to the article listed in {{Transclude lead excerpt}} or replace the {{Transclude lead excerpt}} tag with custom text (and move the text to the page /Intro)-->
+{{Transclude lead excerpt|Beer}}
+{{Box-footer|[[Beer|Read more...]]}}
+</div>
+{{Purge link portals}}
+<div class="portal-column-left"> <!-- Switch to one column on narrow screens -->
+{{Random portal component|max=25|header=''Selected article'' {{#if: {{{Purge|}}}{{{purge|}}} | {{{Purge|}}}{{{purge|}}} |- {{purge|<small>{{color|darkblue|''show another''}}</small>}}}}||subpage=Selected article}}
+<!---{{Random portal component|max=10|header=''Selected recipe''||subpage=Selected recipe}}
+{{Random portal component|max=10|header=''Selected ingredient''||subpage=Selected ingredient}}--->
+{{Random portal component|max=16|header=''Selected beer'' {{#if: {{{Purge|}}}{{{purge|}}} | {{{Purge|}}}{{{purge|}}} |- {{purge|<small>{{color|darkblue|''show another''}}</small>}}}}||subpage=Selected beer}}
+
+{{/box-header|''Selected biography'' {{#if: {{{Purge|}}}{{{purge|}}} | {{{Purge|}}}{{{purge|}}} |- {{purge|<small>{{color|darkblue|''show another''}}</small>}}}}}} 
+{{Transclude random excerpt 
+|1=Adolphus Busch
+|2=Michael Jackson (writer)
+|3=Frederick Miller
+|4=Joseph Schlitz
+|5=Frederick Pabst
+|6=Charlie Papazian
+|7=Arthur Guinness
+|8=Eberhard Anheuser
+|9=Karl Strauss
+|10=Sigi Friedmann
+|11=Josef Groll
+|12=Sister Doris Engelhard
+|13=John Molson
+|14=Susannah Oland
+|15=I. Patricia Henry
+|16=Anton Dreher
+|17=Charlene de Carvalho-Heineken
+|18=Santiago Graf
+|19=Freddy Heineken
+|20=Apiwe Nxusani-Mawela
+|21=Christina Nyman
+|22=Dirck Pesser
+|23=Regina Wauters
+|24=Rosa Merckx
+|25=Sara Barton
+|26=Pierre Celis
+|27=Samuel Brain
+|28=James Eadie
+|29=An de Ryck
+|30=William McEwan
+|31=John Young (brewer)
+|32=Peter Austin (brewer)
+|33=Michael Thomas Bass (1760–1827)
+|34=Michael Thomas Bass
+|35=Cecil Ernest Wells Charrington
+|36=James Boag I
+|37=Paddy Fitzgerald
+|38=W. H. Clark (brewer)
+|39=Morton Coutts
+|40=John Primrose (brewer)
+|41=Terry McCashin
+|42=Mads Langaard
+|43=Waldemar Stoud Platou
+|44=Amund Ringnes (brewery owner, 1840)
+|45=Søren Anton van der Aa Kühle
+|46=J. C. Jacobsen
+|47=Philip Heyman
+|48=Carl Jacobsen
+|49=Carol Stoudt
+|50=Henry Weinhard
+|51=August Anheuser Busch Sr.
+|52=Jim Patton (brewer)
+|53=David Yuengling
+|54=Frank X. Schwab
+|55=Gottlieb Heileman
+|56=William Knapman
+| paragraphs=1-2 | files=1 | fileargs=left| more= | errors= |list=List of selected biographies}}
+{{Box-footer}} 
+
+{{/box-header|''Beer lists''|Portal:Beer/Beer lists|}}
+{{/Beer lists}}
+{{Box-footer}}
+
+{{Random portal component|max=6|header=''Selected quote'' {{#if: {{{Purge|}}}{{{purge|}}} | {{{Purge|}}}{{{purge|}}} |- {{purge|<small>{{color|darkblue|''show another''}}</small>}}}}||subpage=Selected quote}}
+</div>
+
+<div class="portal-column-right"> <!-- Switch to one column on narrow screens -->
+<!---{{/box-header|''News''|Portal:Beer/News|}}
+{{/News}}
+{{Box-footer|[[/News_archive|Archive]]}}--->
+{{Random portal component|max=37|header=''Selected brewery'' {{#if: {{{Purge|}}}{{{purge|}}} | {{{Purge|}}}{{{purge|}}} |- {{purge|<small>{{color|darkblue|''show another''}}</small>}}}}||subpage=Selected brewery}}
+{{Random portal component|max=36|header=''Selected image'' {{#if: {{{Purge|}}}{{{purge|}}} | {{{Purge|}}}{{{purge|}}} |- {{purge|<small>{{color|darkblue|''show another''}}</small>}}}}|subpage=Selected picture}}
+{{/box-header|''General images''}}
+<div style="text-align: center;"><small>'''The following are images from various beer- and brewing-related articles on Wikipedia.'''</small></div>
+{{Transclude files as random slideshow
+| History of beer
+| Brewing
+| Craft brewery and microbrewery
+}}
+{{Box-footer}} 
+<!---{{Random portal component|max=30|header=''Did you know...''||subpage=Did you know|}}--->
+</div>
+
+<div class="portal-column-right"> <!-- Switch to one column on narrow screens -->
+<!-- Commented out. Content has been moved to [[Portal:Beer/WPBeer]] 
+{{/box-header|''Related WikiProjects''|Portal:Beer/WikiProjects|}}
+{{/WikiProjects}}
+{{Box-footer}}
+--> 
+</div>
+
+<div style="float:right; width:100%">
+{{/box-header|''Beer topics''|Portal:Beer/Beer topics|}}
+{{/Beer topics}}
+{{Box-footer}}
+
+{{/box-header|''Categories''|Portal:Beer/Categories|}}
+{{/Categories}}
+{{Box-footer}}
+</div>
+
+<div class="portal-column-left"> <!-- Switch to one column on narrow screens -->
+{{/box-header|''Related portals''|Portal:Beer/Related portals|}}
+{{/Related portals}}
+{{Box-footer}}
+</div>
+
+<div class="portal-column-right"> <!-- Switch to one column on narrow screens -->
+{{/box-header|''Things you can do''|Portal:Beer/Things you can do|}}
+{{/Things you can do}}
+{{Box-footer}}
+</div>
+
+{{/box-header|''WikiProjects''|Portal:Beer/WPBeer|}}
+{{/WPBeer}}
+{{Box-footer}}
+
+{{/box-header|''Associated Wikimedia''|noedit=yes|}}
+{{Wikimedia for portals | species=no | voy=no}}
+{{Box-footer}}
+
+{{/box-header|''Sources''|noedit=yes|}}
+{{reflist}}
+{{Box-footer}}
+
+{{Portal navbar no header2}}
+{{Purgepage}}
+</div>
+
+__NOTOC__ __NOEDITSECTION__
+[[Category:Beer portal| ]]
+[[Category:Beer|ρ]]
+[[Category:Beverage portals]]
+[[Category:Brewing| ]]

@@ -1,0 +1,65 @@
+[[Image:Biochip.jpg|thumb|Hundreds of gel drops are visible on the biochip.]]
+
+In [[molecular biology]], '''biochips''' are essentially miniaturized laboratories that can perform hundreds or thousands of simultaneous biochemical reactions. Biochips enable researchers to quickly screen large numbers of biological analytes for a variety of purposes, from disease diagnosis to detection of [[bioterrorism]] agents. '''Digital microfluidic biochips'''<ref>{{Cite web|url=http://people.ee.duke.edu/~krish/a16-su.pdf|title=High-Level Synthesis of Digital Microfluidic Biochips|publisher=Duke University}}</ref> have become one of the most promising technologies in many biomedical fields. In a digital microfluidic biochip, a group of (adjacent) cells in the microfluidic array can be configured to work as storage, functional operations, as well as for transporting fluid droplets dynamically.
+
+==History==
+The development started with early work on the underlying [[sensor]] technology. One of the first portable, chemistry-based sensors was the [[glass of electrode|glass pH electrode]], invented in 1922 by Hughes.<ref>W. S. Hughes, "The potential difference between glass and electrolytes in contact with water," ''J. Am. Chem. Soc.'' 44, pp.&nbsp;2860–2866, 1922</ref>  The basic concept of using exchange sites to create permselective membranes was used to develop other ion sensors in subsequent years. For example, a K<sup>+</sup> sensor was produced by incorporating [[valinomycin]] into a thin membrane.<ref>J. S. Schultz and R. F. Taylor in ''Handbook of Chemical and Biological Sensors'', J. S. Schultz and R. F. Taylor, eds., ch. Introduction to Chemical and Biological Sensors, pp.&nbsp;1–10, Institute of Physics Publishing, Philadelphia, 1996</ref>
+
+In 1953, [[James D. Watson|Watson]] and [[Francis Crick|Crick]] announced their discovery of the now familiar [[double helix]] structure of [[DNA]] molecules and set the stage for [[genetics]] research that continues to the present day.<ref name=Nelson>D. L. Nelson and M. M. Cox, ''Lehninger Principles of Biochemistry'', Worth Publishers, New York, 2000</ref> The development of [[sequencing]] techniques in 1977 by [[Walter Gilbert|Gilbert]]<ref>A. M. Maxam and W. Gilbert, "A new method for sequencing DNA," ''Proc. Natl. Acad. Sci.'' 74, pp.&nbsp;560–564, 1977</ref> and [[Frederick Sanger|Sanger]]<ref>F. Sanger, S. Nicklen, and A. R. Coulson, "DNA sequencing with chainterminating inhibitors," ''Proc. Natl. Acad. Sci.'' 74, pp.&nbsp;5463–5467, 1977</ref> (working separately) enabled researchers to directly read the genetic codes that provide instructions for [[protein biosynthesis|protein synthesis]]. This research showed how [[hybridisation (molecular biology)|hybridization]] of complementary single [[oligonucleotide]] strands could be used as a basis for DNA sensing. Two additional developments enabled the technology used in modern DNA-based. First, in 1983 [[Kary Mullis]] invented the [[polymerase chain reaction]] (PCR) technique,<ref name=Nelson/> a method for amplifying DNA concentrations. This discovery made possible the detection of extremely small quantities of DNA in samples. Secondly in 1986 Hood and co-workers devised a method to label DNA molecules with [[fluorescent tag]]s instead of radiolabels,<ref>L. M. Smith, J. Z. Sanders, R. J. Kaiser, P. Hughes, C. Dodd, C. R. Connell, C. Heiner, S. B. H. Kent, and L. E. Hood, "Fluorescence detection in automated DNA sequence analysis," ''Nature'' 321, pp.&nbsp;61–67, 1986</ref> thus enabling hybridization experiments to be observed optically.
+
+[[image:Biochip platform.jpg|thumb|right|300px|Figure 1. Biochips are a platform that require, in addition to microarray technology, transduction and signal processing
+technologies to output the results of sensing experiments.]]
+Figure 1 shows the make up of a typical biochip platform. The actual sensing component (or "chip") is just one piece of a complete analysis system. [[Transducer|Transduction]] must be done to translate the actual sensing event (DNA binding, [[redox|oxidation/reduction]], ''etc.'') into a format understandable by a computer ([[voltage]], light intensity, mass, ''etc.''), which then enables additional analysis and processing to produce a final, [[human-readable]] output. The multiple technologies needed to make a successful biochip&mdash;from sensing chemistry, to [[microarray]]ing, to signal processing&mdash;require a true multidisciplinary approach, making the barrier to entry steep. One of the first commercial biochips was introduced by [[Affymetrix]]. Their "GeneChip" products contain thousands of individual DNA sensors for use in sensing defects, or single nucleotide polymorphisms (SNPs), in genes such as [[p53]] (a tumor suppressor) and [[BRCA1]] and [[BRCA2]] (related to breast cancer).<ref>P. Fortina, D. Graves, C. Stoeckert, Jr., S. McKenzie, and S. Surrey in ''Biochip Technology'', J. Cheng and L. J. Kricka, eds., ch. Technology Options and Applications of DNA Microarrays, pp.&nbsp;185–216, Harwood Academic Publishers, Philadelphia, 2001</ref> The chips are produced by using [[microlithography]] techniques traditionally used to fabricate [[integrated circuit]]s (see below).
+
+==Microarray fabrication==
+[[File:Sarfus.DNABiochip.jpg|thumb|300px|3D [[Sarfus]] image of a DNA biochip]]
+The microarray&mdash;the dense, two-dimensional grid of biosensors&mdash;is the critical component of a biochip platform. Typically, the sensors are deposited on a flat substrate, which may either be passive (''e.g.'' silicon or glass) or active, the latter
+consisting of integrated electronics or [[microtechnology|micromechanical]] devices that perform or assist signal transduction. [[Surface chemistry]] is used to [[covalent bond|covalently bind]] the sensor molecules to the substrate medium. The fabrication of microarrays is non-trivial and is a major economic and technological hurdle that may
+ultimately decide the success of future biochip platforms. The primary manufacturing challenge is the process of placing each sensor at a specific position (typically on a [[Cartesian coordinate system|Cartesian]] grid) on the substrate. Various means exist to achieve the placement, but typically robotic micro-pipetting<ref>M. Schena, D. Shalon, R. W. Davis, and P. O. Brown, "Quantitative monitoring of gene expression patterns with a complementary DNA microarray," ''Science'' 270, pp.&nbsp;467–470, 1995</ref> or micro-printing<ref>G. MacBeath, A. N. Koehler, and S. L. Schreiber, "Printing small molecules as microarrays and detecting protein-ligand interactions en masse," ''J. Am. Chem. Soc.'' 121, pp.&nbsp;7967–7968, 1999</ref> systems are used to place tiny spots of sensor material on the chip surface. Because each sensor is unique, only a few spots can be placed at a time. The low-throughput nature of this
+process results in high manufacturing costs.
+
+Fodor and colleagues developed a unique fabrication process (later used by [[Affymetrix]]) in which a series of microlithography steps is used to [[Combinatorial chemistry|combinatorially synthesize]] hundreds of thousands of unique, single-stranded DNA sensors on a substrate one [[nucleotide]] at a time.<ref>S. P. Fodor, J. L. Read, M. C. Pirrung, L. Stryer, A. T. Lu, and D. Solas, "Light-directed, spatially addressable parallel chemical analysis," ''Science'' 251, pp.&nbsp;767–773, 1991</ref><ref>A. C. Pease, D. Solas, E. J. Sullivan, M. T. Cronin, C. P. Holmes, and S. P. Fodor, "Light-generated oligonucleotide arrays for rapid DNA sequence analysis," ''Proc. Natl. Acad. Sci.'' 91, pp.&nbsp;5022–5026, 1994</ref>  One lithography step is needed per base type; thus, a total of four steps is required per nucleotide level. Although this technique is very powerful in that many sensors can be created simultaneously, it is currently only feasible for creating short DNA strands (15&ndash;25 nucleotides). Reliability and cost factors limit the number of photolithography steps that can be done. Furthermore, light-directed combinatorial synthesis techniques are not currently possible for proteins or other sensing molecules.
+
+As noted above, most microarrays consist of a Cartesian grid of sensors. This approach is used chiefly to map or "encode" the coordinate of each sensor to its function. Sensors in these arrays typically use a universal signalling technique (''e.g.'' fluorescence), thus making coordinates their only identifying feature. These arrays must be made using a serial process (''i.e.'' requiring multiple, sequential steps) to ensure that each sensor is placed at the correct position.
+
+"Random" fabrication, in which the sensors are placed at arbitrary positions on the chip, is an alternative to the serial method. The tedious and expensive positioning process is
+not required, enabling the use of parallelized self-assembly techniques. In this approach, large batches of identical sensors can be produced; sensors from each batch are then combined and assembled into an array. A non-coordinate based encoding scheme must be used to identify each sensor. As the figure shows, such a design was first demonstrated (and later commercialized by Illumina) using functionalized beads placed randomly in the wells of an etched [[fiber optic]] cable.<ref>F. J. Steemers, J. A. Ferguson, and D. R. Walt, "Screening unlabeled DNA targets with randomly-ordered fiber-optic gene arrays," ''Nature Biotechnology'' 18, pp.&nbsp;91–94, 2000</ref><ref>K. L. Michael, L. C. Taylor, S. L. Schultz, and D. R. Walt, "Randomly ordered addressable high-density optical sensor arrays," ''Analytical Chemistry'' 70, pp.&nbsp;1242–1248, 1998</ref> Each bead was uniquely encoded with a fluorescent signature. However, this encoding scheme is limited in the number of unique dye combinations that can be used and successfully differentiated.
+
+==Protein biochip array and other microarray technologies==
+[[Microarray]]s are not limited to [[DNA]] analysis; [[protein microarray]]s, [[antibody microarray]], [[chemical compound microarray]] can also be produced using biochips.  Randox Laboratories Ltd. launched Evidence, the first protein Biochip Array Technology analyzer in 2003.  In protein Biochip Array Technology, the biochip replaces the [[ELISA]] plate or [[cuvette]] as the reaction platform.  The biochip is used to simultaneously analyze a panel of related tests in a single sample, producing a [[patient]] profile.  The patient profile can be used in disease screening, [[medical diagnosis|diagnosis]], monitoring disease progression or monitoring treatment.  Performing multiple analyses simultaneously, described as multiplexing, allows a significant reduction in processing time and the amount of patient sample required.  Biochip Array Technology is a novel application of a familiar methodology, using sandwich, competitive and antibody-capture [[immunoassay]]s. The difference from conventional immunoassays is that, the capture ligands are covalently attached to the surface of the biochip in an ordered array rather than in solution.
+
+In sandwich assays an enzyme-labelled antibody is used; in competitive assays an enzyme-labelled antigen is used.  On antibody-antigen binding a [[chemiluminescence]] reaction produces light.  Detection is by a [[charge-coupled device]] (CCD) camera.  The CCD camera is a sensitive and high-resolution sensor able to accurately detect and quantify very low levels of light.  The test regions are located using a grid pattern then the chemiluminescence signals are analysed by imaging software to rapidly and simultaneously quantify the individual analytes.
+
+Biochips are also used in the field of [[microphysiometry]] e.g. in skin-on-a-chip<ref>Alexander, F., Eggert, S., Wiest, J.: Skin-on-a-chip: Transepithelial electrical resistance and extracellular acidification measurements through an automated air-liquid interface, Genes, 2018, 9/2, 114; doi:10.3390/genes9020114</ref> applications.
+
+For details about other array technologies, see [[Antibody microarray]].
+
+==See also==
+{{Portal|Biology|Technology}}
+{{Colbegin}}
+* [[Chemical compound microarray]]
+* [[DNA microarray]]
+* [[Lab-on-a-chip]]
+* [[Magnetic immunoassay]]
+* [[Microphysiometry]]
+* [[Nanosensors]]
+* [[Organ-on-a-chip]]
+* [[Electrophysiology#Planar patch clamp|Planar Patch Clamp]]
+* [[Protein array]]
+* [[Sequencing]]
+* [[Single nucleotide polymorphism]]
+* [[Tissue microarray]]
+
+{{Colend}}
+
+==References==
+{{Reflist}}
+
+
+
+[[Category:Bioinformatics]]
+[[Category:Biotechnology]]
+[[Category:Molecular biology]]
+[[Category:Genomics]]
+[[Category:Proteomics]]
+[[Category:Microarrays]]

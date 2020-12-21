@@ -1,0 +1,41 @@
+{{distinguish|Moore's paradox}}
+The '''paradox of analysis''' (or '''Langford–Moore paradox''')<ref>Dale Jacquette, ''Meinongian Logic: The Semantics of Existence and Nonexistence'', Walter de Gruyter, 1996, p. 265.</ref> is a paradox that concerns how an [[analysis]] can be both correct and informative.  The problem was formulated by philosopher [[G. E. Moore]] in his book ''[[Principia Ethica]]'', and first named by [[Cooper Harold Langford|C. H. Langford]] in his article "The Notion of Analysis in Moore's Philosophy" (in ''The Philosophy of G. E. Moore'', edited by [[Paul Arthur Schilpp]], Northwestern University, 1942, pp. 319–342).
+
+==The paradox==
+A [[conceptual analysis]] is something like the definition of a word.  However, unlike a standard dictionary definition (which may list examples or talk about related terms as well), a completely correct analysis of a concept in terms of others seems like it should have exactly the same meaning as the original concept.  Thus, in order to be correct, the analysis should be able to be used in any context where the original concept is used, without changing the meaning of the discussion in context.  Conceptual analyses of this sort are a major goal of [[analytic philosophy]].
+
+However, if such an analysis is to be useful, it should be informative.  That is, it should tell us something we don't already know (or at least, something one can imagine someone might not already know).  But it seems that no conceptual analysis can both meet the requirement of correctness and of informativeness, on these understandings of the requirements.
+
+To see why, consider a potential simple analysis:
+
+:(1) For all x (any given member of a class or set), x is a brother if and only if x is a male sibling	
+
+One can say that (1) is correct because the expression "brother" represents the same concept as the expression "male sibling," and (1) seems to be informative because the two expressions are not identical.  And if (1) is truly correct, then "brother" and "male sibling" must be interchangeable:
+
+:(2) For all x, x is a brother if and only if x is a brother
+
+Yet (2) is not informative, so either (1) is not informative, or the two expressions used in (1) are not interchangeable (because they change an informative analysis into an uninformative one) so (1) is not actually correct.  In other words, if the analysis is correct and informative, then (1) and (2) must be essentially equal, but this is not true because (2) is not informative.  Therefore, it seems an analysis cannot be both correct and informative at the same time.
+
+==Proposed resolutions==
+One way to resolve this paradox is to redefine what is an analysis.  In explaining the paradox, a potential analysis is assumed to be a relation between concepts rather than the verbal expressions used to illustrate them.  If the verbal expression is part of the analysis, then we shouldn't expect complete [[salva veritate|intersubstitutivity]] even in cases of correct analyses.  However, this response seems to move the notion of analysis into mere linguistic definition, rather than doing interesting work with concepts.
+
+Another response is to [[bite the bullet]] and just say that correct analyses are uninformative — which then raises the question of what positive cognitive notion should be used instead of this one, if any.
+
+One further response would be to take [[Willard Van Orman Quine]]'s position and reject the notion of conceptual analysis altogether. This is a natural response to the rejection of the [[analytic–synthetic distinction]].
+
+== Notes ==
+{{reflist}}
+
+== References ==
+* "George Edward Moore (1873—1958)," by Aaron Preston, The Internet Encyclopedia of Philosophy, <http://www.iep.utm.edu/moore>.
+* "Definição", by Dirk Greimann, Compêndio em Linha de Filosofia Analítica, <https://web.archive.org/web/20150622064448/http://www.compendioemlinha.com/uploads/6/7/1/6/6716383/greimann-definicao.pdf>
+* "Analysis," by Michael Beaney, The Stanford Encyclopedia of Philosophy (Winter 2008 Edition), Edward N. Zalta (ed.), URL = <http://plato.stanford.edu/archives/win2008/entries/analysis/>.
+* "Analysis, Language, and Concepts: the Second Paradox of Analysis," by Filicia Ackerman, Philosophical Perspectives, Vol. 4, Action Theory and Philosophy of Mind (1990), pp.&nbsp;535–543
+
+{{Analytic philosophy}}
+{{Paradoxes}}
+
+[[Category:Analysis]]
+[[Category:Definition]]
+[[Category:Philosophical paradoxes]]
+[[Category:Analytic philosophy]]

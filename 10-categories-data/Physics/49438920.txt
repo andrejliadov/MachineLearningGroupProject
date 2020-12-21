@@ -1,0 +1,1388 @@
+{{short description|List of gravitational wave detections}}
+[[File:LIGO measurement of gravitational waves.svg|thumb|The first measurement of a gravitational wave event]]
+This is a list of observed/candidate [[gravitational wave]] events. Direct observation of gravitational waves,{{refn|group=n|Indirect evidence for gravitational waves was obtained by 1978 from observations of orbital decay in the [[Binary pulsar|neutron star binary]] [[PSR B1913+16]].<ref name=npp1993>{{cite web |title=The Nobel Prize in Physics 1993 |publisher=[[Nobel Foundation]] |url=https://www.nobelprize.org/prizes/physics/1993/press-release/ |quote=for the discovery of a new type of pulsar, a discovery that has opened up new possibilities for the study of gravitation |accessdate=2018-10-27}}</ref>}} which commenced with the detection of an event by [[LIGO]] in 2015, constitutes part of [[gravitational wave astronomy]]. LIGO has played a role in all subsequent detections to date, with [[Virgo interferometer|Virgo]] joining in August 2017.
+
+==Nomenclature==
+Gravitational wave events are named starting with the prefix GW, while observations that trigger an event alert but have not (yet) been confirmed are named starting with the prefix S.<ref>{{Cite web|url=https://gcn.gsfc.nasa.gov/lvc.html|title=GCN/LVC Notices|website=Goddard Space Flight Center|access-date=2019-11-11}}</ref> The next two digits indicate the year the event was observed, the middle two digits are the month of observation and the final two digits are the day of the month on which the event was observed. This is similar to the systematic naming for other kinds of astronomical event observations, such as those of [[gamma-ray burst]]s. Probable detections that are not confidently identified as gravitational wave events are designated LVT ("LIGO-Virgo trigger"). Known gravitational wave events come from the merger of two [[black holes]] (BH), two [[neutron stars]] (NS), or a black hole and a neutron star.<ref name="ARX-20181126">{{cite journal |author=Fragione, Giacomo |display-authors=et al. |title=Black Hole and Neutron Star Mergers in Galactic Nuclei |journal=Monthly Notices of the Royal Astronomical Society |volume=488 |issue=1 |pages=47–63 |arxiv=1811.10627 |doi=10.1093/mnras/stz1651 |bibcode=2019MNRAS.488...47F |year=2019 |s2cid=85459844 }}</ref><ref name="CNN-20190503">{{cite news |last=Strickland |first=Ashley |title=Scientists may have detected violent collision between neutron star, black hole |url=https://www.cnn.com/2019/05/02/world/gravitational-wave-neutron-star-black-hole-collisions-scn/index.html |date=3 May 2019 |work=[[CNN]] |accessdate=3 May 2019 }}</ref> Some objects are in the [[Stellar black hole#Mass gaps|mass gap]] between the largest predicted neutron star masses ([[Tolman–Oppenheimer–Volkoff limit]]) and the smallest known black holes.
+
+Observations are made in "runs", three of them so far, with maintenance and upgrades of the detectors made between runs. The first run, O1, ran from 12 September 2015 to 19 January 2016, with O2 from 30 November 2016 to 25 August 2017.<ref>{{Cite journal|last1=The LIGO Scientific Collaboration|last2=the Virgo Collaboration|last3=Abbott|first3=B. P.|last4=Abbott|first4=R.|last5=Abbott|first5=T. D.|last6=Abraham|first6=S.|last7=Acernese|first7=F.|last8=Ackley|first8=K.|last9=Adams|first9=C.|last10=Adhikari|first10=R. X.|last11=Adya|first11=V. B.|date=2019-09-04|title=GWTC-1: A Gravitational-Wave Transient Catalog of Compact Binary Mergers Observed by LIGO and Virgo during the First and Second Observing Runs|journal=Physical Review X|volume=9|issue=3|pages=031040|doi=10.1103/PhysRevX.9.031040|issn=2160-3308|arxiv=1811.12907|bibcode=2019PhRvX...9c1040A|s2cid=119366083}}</ref> O3 began on 1 April 2019; it is divided (so far) into O3a, from 1 April to 30 September 2019, and O3b, from 1 November 2019 to 27 March 2020.<ref>{{Cite web|url=https://twitter.com/ligo/status/1190283820228055041|title=Welcome to O3b!|last=LIGO|date=2019-11-01|website=@ligo|language=en|access-date=2019-11-11}}</ref> Suspension of observation during October 2019 was for instrument upgrades and fixes, and cessation in March 2020 was due to the [[COVID-19 pandemic]].<ref>{{Cite web|last=Burtnyk|first=Kimberly|date=2019-10-01|title=LIGO's Commissioning Break Commences|url=https://www.ligo.caltech.edu/news/ligo20191001|access-date=2020-07-01|website=LIGO Lab {{!}} Caltech}}</ref><ref name=":0" /><!-- why are the run durations just a few months?  with maintenance and upgrades requiring so much down time?  is this explained anywhere on Wikipedia? -->
+
+==List of gravitational wave events==
+{{multipleimage |direction=horizontal |align=center |header=Events from LIGO & Virgo |width= |image1=O1&O2.svg|caption1=<div align="center">O1 & O2/2015-2017 events</div> |width1=500 |image2=O3 Alerts.svg |caption2=<div align="center">O3/2019 Alerts</div> |width2=554 |footer= }}
+
+<center>'''List of binary merger events'''<ref name="Nov5"/><ref name="Nov30" /></center>
+{|class="wikitable sortable" style="min-width:100em; font-size:84%"
+!rowspan=2| GW event<br />and time ([[UTC]])<!-- DIFFERENT COLORS ARE USED FOR DIFFERENT OBSERVING RUNS -->{{refn|group=n|The detection date of a GW event is indicated by its designation; i.e., event GW150914 was detected on 2015-09-14.}}
+!rowspan=2| Date<br />published
+!rowspan=2| Location<br />area<ref group=n>The relatively large and distant area of the sky within which it is claimed to be possible to localize the source.</ref><br />([[square degree|deg<sup>2</sup>]])
+!rowspan=2| [[Distance measures (cosmology)#Luminosity distance|Luminosity<br />distance]]<br />([[Parsec|Mpc]])<ref group=n>1 Mpc is approximately 3.26 [[light year|Mly]].</ref>
+!rowspan=2| Energy<br /> radiated<br /> ([[speed of light|c]]<sup>2</sup>[[solar mass|M<sub>☉</sub>]])<br /><ref group=n>''c''<sup>2</sup>M<sub>☉</sub> is about {{convert|1.787e47|J|foe J erg cal BTU kWh|lk=on|disp=out|sigfig=2}}, or {{convert|1.787e47|J|tTNT|lk=on|disp=out|sigfig=2}}.</ref>
+!rowspan=2| [[Chirp mass]] (M<sub>☉</sub>)<br /><ref group="n">The [[chirp mass]] is the binary parameter most relevant to the evolution of the inspiral gravitational waveform, and thus is the mass that can be measured most accurately. It is related to, but less than, the [[geometric mean]] <math>(m_{geo})</math> of the binary masses, according to <math>m_{geo} \left(\frac{m_{geo}}{m_1 + m_2}\right)^{1/5}</math>, thus ranging from ~87% of <math>m_{geo}</math> when the masses are the same to ~78% when they differ by an order of magnitude.</ref>
+!rowspan=2| Effective spin{{refn|group=n|The [[dimensionless quantity|dimensionless]] effective inspiral spin parameter is:
+
+<math>\frac{m_1 a_1 cos \theta_{LS_1} + m_2 a_2 cos \theta_{LS_2}}{m_1 + m_2},</math><ref name = "50SM2017" />
+
+where <math>m</math> is the mass of a black hole, <math>a</math> is its [[black hole spin parameter|spin]], and <math>\theta_{LS}</math> is the angle between the orbital angular momentum and a merging black hole's spin (ranging from <math>0</math> when aligned to <math>\pi</math> when antialigned). It is the mass-weighted linear combination of the components of the black holes' spins aligned with the orbital axis<ref name = "50SM2017" /><ref name="Nov30" /> and has values ranging from −1 to 1 (the extremes correspond to situations with both black hole spins exactly antialigned and aligned, respectively, with orbital angular momentum).<ref name="Farr2017">{{cite journal|last1= Farr|first1=W. M.|last2= Stevenson|first2= S.|last3= Miller|first3=M. C.|last4= Mandel|first4= I.|last5=F arr|first5= B.|last6= Vecchio|first6= A.|title= Distinguishing spin-aligned and isotropic black hole populations with gravitational waves|journal= Nature|volume= 548|issue= 7667|year= 2017|pages= 426–429|doi= 10.1038/nature23453|pmid=28836595|arxiv= 1706.01385|bibcode=2017Natur.548..426F|s2cid=4411726}}</ref> This is the spin parameter most relevant to the evolution of the inspiral gravitational waveform, and it can be measured more accurately than those of the premerger BHs.<ref name="Vitale2017">{{cite journal|last1= Vitale|first1= S.|last2= Lynch|first2= R.|last3= Raymond|first3= V.|last4= Sturani|first4= R.|last5= Veitch|first5= J.|last6= Graff|first6= P.|title= Parameter estimation for heavy binary-black holes with networks of second-generation gravitational-wave detectors|journal= Physical Review D|volume= 95|issue= 6|pages= 064053|year= 2017|doi= 10.1103/PhysRevD.95.064053|hdl= 1721.1/109575|bibcode= 2017PhRvD..95f4053V|arxiv= 1611.01122|s2cid= 118511535}}</ref>}}
+! colspan=2| Primary
+! colspan=2| Secondary
+! colspan=3| Remnant
+! rowspan=2 style="min-width:15em"| Notes
+! rowspan=2 class=unsortable| Ref.
+|-
+!| Type
+!| Mass (M<sub>☉</sub>)
+!| Type
+!| Mass (M<sub>☉</sub>)
+!| Type
+!| Mass (M<sub>☉</sub>)
+!| [[Black hole spin parameter|Spin]]{{refn|group=n|Values of the dimensionless [[black hole spin parameter|spin parameter]] <math>a =</math> ''[[speed of light|c]][[angular momentum|J]]/[[gravitational constant|G]][[mass|M]]''<sup>2</sup> for a black hole range from zero to a maximum of one. The macroscopic properties of an isolated [[Rotating black hole|astrophysical (uncharged) black hole]] are fully determined by its mass and spin. Values for other objects can potentially exceed one. The largest value known for a neutron star is ≤ 0.4, and commonly used equations of state would limit that value to < 0.7.<ref name="PRL-171016" />}}
+|- 
+|BGCOLOR="#fff0f0"| [[GW150914]]<br />09:50:45
+|| 2016-02-11
+|| <center>{{val|179}}; mostly to the [[Southern Celestial Hemisphere|south]]</center>
+|| <center>{{val|430|150|170}}</center>
+|| <center>{{val|3.1|0.4|0.4}}</center>
+|| <center>{{val|28.6|1.6|1.5}}</center>
+|| <center>{{val|-0.01|0.12|0.13}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span><br>{{refn|group=n|Spin estimate is {{val|0.26|0.52|0.24}}.<ref name="Improved" />}}</center>
+|| <center>{{val|35.6|4.8|3.0}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span><br>{{refn|group=n|Spin estimate is {{val|0.32|0.54|0.29}}.<ref name="Improved" />}}</center>
+|| <center>{{val|30.6|3.0|4.4}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|63.1|3.3|3.0}}</center>
+|| <center>{{val|0.69|0.05|0.04}}</center>
+|| First [[Gravitational wave|GW]] detection;<br>first [[black hole merger|BH merger]] observed
+|| <ref name=PRL116-061102>{{cite journal |doi=10.1103/PhysRevLett.116.061102 |pmid= 26918975 |title= Observation of Gravitational Waves from a Binary Black Hole Merger |date= 11 February 2016 |first=B.P. |last=Abbott |display-authors=etal|collaboration=[[LIGO Scientific Collaboration]] and [[Virgo interferometer|Virgo Collaboration]] |journal= [[Physical Review Letters]] |volume=116 |issue=6 |pages=061102|bibcode= 2016PhRvL.116f1102A |arxiv=1602.03837}}</ref><ref name=PhysicsWorld-2016-02-11>{{cite news |url= http://physicsworld.com/cws/article/news/2016/feb/11/ligo-detects-first-ever-gravitational-waves-from-two-merging-black-holes |title= LIGO detects first ever gravitational waves – from two merging black holes |date= 11 February 2016 |author= Tushna Commissariat |publisher= Physics World }}</ref><ref name="Improved">{{Cite journal |title=An improved analysis of GW150914 using a fully spin-precessing waveform model |journal=Physical Review X |volume=6 |issue=4 |pages=041014 |author=The LIGO Scientific Collaboration and The Virgo Collaboration |date=3 June 2016|doi= 10.1103/PhysRevX.6.041014|arxiv=1606.01210|bibcode=2016PhRvX...6d1014A|s2cid=18217435 }}</ref>
+|-
+|BGCOLOR="#fff0f0"| {{ill|GW151012|fr}}<br />09∶54:43
+|| 2016-06-15
+|| <center>{{val|1555}}</center>
+|| <center>{{val|1060|540|480}}</center>
+|| <center>{{val|1.5|0.5|0.5}}</center>
+|| <center>{{val|15.2|2.0|1.1}}</center>
+|| <center>{{val|0.04|0.28|0.19}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|23.3|14.0|5.5}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|13.6|4.1|4.8}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|35.7|9.9|3.8}}</center>
+|| <center>{{val|0.67|0.13|0.11}}</center>
+|| Formerly candidate LVT151012;<br>accepted as astrophysical since February 2019
+|| <ref name=PRX2016>{{cite journal |doi=10.1103/PhysRevX.6.041015 |title= Binary Black Hole Mergers in the first Advanced LIGO Observing Run |journal= [[Physical Review X]] |date= 21 October 2016 |first=B.P. |last=Abbott |collaboration=[[LIGO Scientific Collaboration]] and [[Virgo interferometer|Virgo Collaboration]] |volume=6 |issue= 4 |pages=041015 |arxiv=1606.04856|bibcode=2016PhRvX...6d1015A |s2cid= 31926886 }}</ref><ref name="Nov30" /><ref name="Nov5">{{cite journal|doi=10.3847/1538-4357/ab0108|title=1-OGC: The first open gravitational-wave catalog of binary mergers from analysis of public Advanced LIGO data|date=25 February 2019|arxiv= 1811.01921|journal=[[Astrophysical Journal]]|volume=872|issue=2|pages=195|first=Alexander H.|last=Nitz|bibcode=2019ApJ...872..195N|s2cid=119389481}}</ref>
+|-
+|BGCOLOR="#fff0f0"| [[GW151226]]<br />03:38:53
+|| 2016-06-15
+|| <center>{{val|1033}}</center>
+|| <center>{{val|440|180|190}}</center>
+|| <center>{{val|1.0|0.1|0.2}}</center>
+|| <center>{{val|8.9|0.3|0.3}}</center>
+|| <center>{{val|0.18|0.20|0.12}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|13.7|8.8|3.2}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|7.7|2.2|2.6}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|20.5|6.4|1.5}}</center>
+|| <center>{{val|0.74|0.07|0.05}}</center>
+||
+|| <ref name=PRL116-241103>{{cite journal |doi=10.1103/PhysRevLett.116.241103 |pmid= 27367379 |title= GW151226: Observation of Gravitational Waves from a 22-Solar-Mass Binary Black Hole Coalescence |journal= [[Physical Review Letters]] |date= 15 June 2016 |first=B.P. |last=Abbott |collaboration=[[LIGO Scientific Collaboration]] and [[Virgo interferometer|Virgo Collaboration]] |volume=116 |issue=24 |pages=241103|bibcode= 2016PhRvL.116x1103A |arxiv=1606.04855}}</ref><ref name=APOD-2016-06-15>{{Cite APOD |title= GW151226: A Second Confirmed Source of Gravitational Radiation |date= 15 June 2016 |access-date= }}</ref>
+|-
+|BGCOLOR="#fffff0"| [[GW170104]]<br />10∶11:58
+|| 2017-06-01
+|| <center>{{val|924}}</center>
+|| <center>{{val|960|430|410}}</center>
+|| <center>{{val|2.2|0.5|0.5}}</center>
+|| <center>{{val|21.5|2.1|1.7}}</center>
+|| <center>{{val|-0.04|0.17|0.20}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|31.0|7.2|5.6}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|20.1|4.9|4.5}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|49.1|5.2|3.5}}</center>
+|| <center>{{val|0.66|0.08|0.10}}</center>
+|| 
+|| <ref name = "50SM2017">{{cite journal |doi=10.1103/PhysRevLett.118.221101 |pmid= 28621973 |title= GW170104: Observation of a 50-Solar-Mass Binary Black Hole Coalescence at Redshift 0.2 |journal= [[Physical Review Letters]] |date= 1 June 2017 |first=B.P. |last=Abbott |collaboration=[[LIGO Scientific Collaboration]] and [[Virgo interferometer|Virgo Collaboration]] |volume=118 |issue= 22 |pages=221101|arxiv = 1706.01812 |bibcode = 2017PhRvL.118v1101A |s2cid= 206291714 }}</ref><ref name="NYT-20170601">{{cite news |last=Overbye |first=Dennis |author-link=Dennis Overbye |title=Gravitational Waves Felt From Black-Hole Merger 3 Billion Light-Years Away |url=https://www.nytimes.com/2017/06/01/science/black-holes-collision-ligo-gravitational-waves.html |date=1 June 2017 |work=[[New York Times]] |accessdate=1 June 2017 }}</ref>
+|-
+|BGCOLOR="#fffff0"| [[GW170608]]<br />02:01:16
+|| 2017-11-16
+|| <center>{{val|396}}; to the [[Northern Celestial Hemisphere|north]]</center>
+|| <center>{{val|320|120|110}}</center>
+|| <center>{{val|0.9|0.0|0.1}}</center>
+|| <center>{{val|7.9|0.2|0.2}}</center>
+|| <center>{{val|0.03|0.19|0.07}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|10.9|5.3|1.7}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|7.6|1.3|2.1}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|17.8|3.2|0.7}}</center>
+|| <center>{{val|0.69|0.04|0.04}}</center>
+|| Smallest BH progenitor<br />masses to date
+|| <ref name="APJ">{{cite journal |collaboration=LIGO Scientific Collaboration and Virgo Collaboration |last1=Abbott |first1=B.P. |title=GW170608: Observation of a 19-solar-mass Binary Black Hole Coalescence|doi=10.3847/2041-8213/aa9f0c|arxiv=1711.05578|journal=[[The Astrophysical Journal Letters]]|volume=851|issue=2|pages=L35 |date=18 December 2017|bibcode=2017ApJ...851L..35A|s2cid=9030576 }}</ref>
+|-
+|BGCOLOR="#fffff0"| [[GW170729]]<br />18:56:29
+|| 2018-11-30
+|| <center>{{val|1033}}</center>
+|| <center>{{val|2750|1350|1320}}</center>
+|| <center>{{val|4.8|1.7|1.7}}</center>
+|| <center>{{val|35.7|6.5|4.7}}</center>
+|| <center>{{val|0.36|0.21|0.25}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|50.6|16.6|10.2}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|34.3|9.1|10.1}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|80.3|14.6|10.2}}</center>
+|| <center>{{val|0.81|0.07|0.13}}</center>
+|| Largest progenitor masses until GW190521
+|| <ref name="Nov30">{{cite journal|year=2019|arxiv= 1811.12907|collaboration=LIGO Scientific Collaboration and Virgo Collaboration |last1=Abbott |first1=B.P. |title= GWTC-1: A Gravitational-Wave Transient Catalog of Compact Binary Mergers Observed by LIGO and Virgo during the First and Second Observing Runs|journal= Physical Review X|volume= 9|issue= 3|pages= 031040|display-authors=etal|doi= 10.1103/PhysRevX.9.031040|bibcode= 2019PhRvX...9c1040A|s2cid= 119366083}}</ref>
+|-
+|BGCOLOR="#fffff0"| [[GW170809]]<br />08:28:21
+|| 2018-11-30
+|| <center>{{val|340}}; towards [[Cetus (constellation)|Cetus]]</center>
+|| <center>{{val|990|320|380}}</center>
+|| <center>{{val|2.7|0.6|0.6}}</center>
+|| <center>{{val|25.0|2.1|1.6}}</center>
+|| <center>{{val|0.07|0.16|0.16}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|35.2|8.3|6.0}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|23.8|5.2|5.1}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|56.4|5.2|3.7}}</center>
+|| <center>{{val|0.70|0.08|0.09}}</center>
+|| 
+|| <ref name="Nov30" />
+|-
+|BGCOLOR="#fffff0"| [[GW170814]]<br />10∶30:43
+|| 2017-09-27
+|| <center>{{val|87}}; towards [[Eridanus (constellation)|Eridanus]]</center>
+|| <center>{{val|580|160|210}}</center>
+|| <center>{{val|2.7|0.4|0.3}}</center>
+|| <center>{{val|24.2|1.4|1.1}}</center>
+|| <center>{{val|0.07|0.12|0.11}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|30.7|5.7|3.0}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|25.3|2.9|4.1}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|53.4|3.2|2.4}}</center>
+|| <center>{{val|0.72|0.07|0.05}}</center>
+|| First announced detection by<br />three [[gravitational wave observatory|observatories]]; first [[gravitational wave#Effects of passing|polarization]] measurement
+|| <ref name="PRL-20171006">{{cite journal |collaboration=LIGO Scientific Collaboration and Virgo Collaboration |last1=Abbott |first1=B.P. |title=GW170814: A three-detector observation of gravitational waves from a binary black hole coalescence |url=https://dcc.ligo.org/LIGO-P170814/public/main |journal=[[Phys. Rev. Lett.]] |volume=119 |issue=14 |pages=141101 |doi=10.1103/PhysRevLett.119.141101 |arxiv=1709.09660 |date= 2017-10-06|lay-url= http://ligo.org/detections/GW170814/press-release/pr-english.pdf |bibcode=2017PhRvL.119n1101A |pmid=29053306|s2cid=46829350 }}</ref><ref name="NYT-20170927">{{cite news |last=Overbye |first=Dennis |author-link=Dennis Overbye |title=New Gravitational Wave Detection From Colliding Black Holes |url=https://www.nytimes.com/2017/09/27/science/black-holes-collision-ligo-virgo.html |date=27 September 2017 |work =[[The New York Times]] |accessdate=28 September 2017 }}</ref>
+|-
+|BGCOLOR="#fffff0"| [[GW170817]]<br />12∶41:04
+|| 2017-10-16
+|| <center>{{val|16}}; [[NGC 4993]]</center>
+|| <center>{{val|40|10}}</center>
+|| <center>≥&nbsp;0.04</center>
+|| <center>{{val|1.186|0.001|0.001}}</center>
+|| <center>{{val|0.00|0.02|0.01}}</center>
+|bgcolor=AADDDD| <center>NS</center>
+|| <center>{{val|1.46|0.12|0.10}}</center>
+|bgcolor=AADDDD| <center>NS</center>
+|| <center>{{val|1.27|0.09|0.09}}</center>
+|bgcolor=AADDDD| <center>NS<br>{{refn|group=n|Based on a descending spin-down chirp observed in GW post-merger, a [[magnetar]] was produced that survived at least 5 seconds.<ref name="van Putten2019">{{cite journal |last1=van Putten |first1=Maurice H.P.M. |last2=Della Valle |first2=Massimo |title=Observational evidence for extended emission to GW170817 |journal=Monthly Notices of the Royal Astronomical Society: Letters |volume=482 |issue=1 |date=January 2019 |pages=L46–L49 |doi=10.1093/mnrasl/sly166 |doi-access=free |arxiv=1806.02165 |bibcode=2019MNRAS.482L..46V }}</ref>}}</center>
+|| <center>≤&nbsp;2.8{{refn|group=n|Besides the loss of mass due to GW emission that occurred during the merger, the event is thought to have ejected {{val|0.05|0.02|u=solar mass}} of material.<ref name="DroutPiro2017">{{cite journal|display-authors= 3|last1= Drout|first1=M. R.|last2= Piro|first2=A. L.|last3= Shappee|first3=B. J.|last4= Kilpatrick|first4=C. D.|title=Light curves of the neutron star merger GW170817/SSS17a: Implications for r-process nucleosynthesis|journal= Science|volume= 358|issue= 6370|date= 2017-10-16|pages= 1570–1574|doi= 10.1126/science.aaq0049|pmid= 29038375|doi-access= free|arxiv= 1710.05443|bibcode=2017Sci...358.1570D}}</ref>}}</center>
+|| <center>≤&nbsp;0.89</center>
+|| First [[Neutron star merger|NS merger]] observed in<br />GW; first detection of [[Electromagnetic radiation|EM]] counterpart ([[Gamma-ray burst|GRB]]&nbsp;170817A; [[Astronomical transient|AT]]&nbsp;2017gfo); nearest event to date
+|| <ref name="PRL-171016">{{cite journal|last1=Abbott |first1=B.P. |collaboration=[[LIGO Scientific Collaboration]] & [[Virgo interferometer|Virgo Collaboration]]|title= GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral|journal= Physical Review Letters|date= 16 October 2017|volume=119|issue= 16|pages=161101 |doi= 10.1103/PhysRevLett.119.161101|pmid=29099225 |arxiv=1710.05832|bibcode=2017PhRvL.119p1101A}}</ref><ref name="ApJ2017.10">{{cite journal
+ |last1=Abbott |first1=B.P. |display-authors = etal.
+ |collaboration=LIGO, Virgo and other collaborations
+ |title=Multi-messenger Observations of a Binary Neutron Star Merger
+ |journal=[[The Astrophysical Journal]] |date=October 2017 |volume=848 |issue=2 |page=L12
+ |doi=10.3847/2041-8213/aa91c9 |doi-access=free
+ |arxiv=1710.05833 
+ |url=https://dcc.ligo.org/public/0145/P1700294/007/ApJL-MMAP-171017.pdf|bibcode=2017ApJ...848L..12A}}</ref><ref name="SM-20171016">{{cite news |last=Cho |first=Adrian |title=Merging neutron stars generate gravitational waves and a celestial light show |url=http://www.sciencemag.org/news/2017/10/merging-neutron-stars-generate-gravitational-waves-and-celestial-light-show |date=16 October 2017 |work=[[Science (magazine)|Science]] |accessdate=16 October 2017 }}</ref>
+|-
+|BGCOLOR="#fffff0"| [[GW170818]]<br />02:25:09
+|| 2018-11-30
+|| <center>{{val|39}}; towards [[Pegasus (constellation)|Pegasus]]</center>
+|| <center>{{val|1020|430|360}}</center>
+|| <center>{{val|2.7|0.5|0.5}}</center>
+|| <center>{{val|26.7|2.1|1.7}}</center>
+|| <center>{{val|-0.09|0.18|0.21}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|35.5|7.5|4.7}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|26.8|4.3|5.2}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|59.8|4.8|3.8}}</center>
+|| <center>{{val|0.67|0.07|0.08}}</center>
+|| 
+|| <ref name="Nov30" />
+|-
+|BGCOLOR="#fffff0"| [[GW170823]]<br />13:13:58
+|| 2018-11-30
+|| <center>{{val|1651}}</center>
+|| <center>{{val|1850|840}}</center>
+|| <center>{{val|3.3|0.9|0.8}}</center>
+|| <center>{{val|29.3|4.2|3.2}}</center>
+|| <center>{{val|0.08|0.20|0.22}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|39.6|10.0|6.6}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|29.4|6.3|7.1}}</center>
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center>
+|| <center>{{val|65.6|9.4|6.6}}</center>
+|| <center>{{val|0.71|0.08|0.10}}</center>
+|| 
+|| <ref name="Nov30" />
+|- 
+|BGCOLOR="#f0fff0"| GW190408_181802 <br /> 2019-04-08
+|| 2020-10-27
+|| <center>140</center><!-- Localization -->
+|| <center>{{val|1580|400|590}}</center> <!-- Luminosity distance -->
+|| <!-- Energy Radiated -->
+|| <center>{{val|18.3|1.4|1.2}}</center> <!-- Chirp mass -->
+|| <center>{{val|-0.03|0.13|0.19}}</center><!-- Effective spin -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Primary type -->
+|| <center>{{val|24.5|5.1|3.4}}</center><!-- Primary mass -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Secondary type -->
+|| <center>{{val|18.3|3.2|3.5}}</center> <!-- Secondary mass -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Final type -->
+|| <center>{{val|41.0|3.8|2.7}}</center><!-- Final mass -->
+|| <center>{{val|0.67|0.06|0.07}}</center><!-- Final spin -->
+|| 
+|| <ref name="GWTC-2">{{cite journal 
+ |title=GWTC-2: Compact Binary Coalescences Observed by LIGO and Virgo During the First Half of the Third Observing Run
+ |date=27 April 2020 |arxiv=2010.14527 
+ |author1=The LIGO Scientific Collaboration 
+ |author2=the Virgo Collaboration 
+}}</ref>
+
+|- 
+|BGCOLOR="#f0fff0"| [[GW190412]]<br /> 2019-04-12<br />05:30:44
+|| 2020-04-17
+|| <center>156; towards [[Virgo (constellation)|Virgo]] or [[Boötes]]</center>
+|| <center>{{val|730|140|170}}</center> <!-- Luminosity distance -->
+|| <!-- Energy Radiated -->
+|| <center>{{val|13.3|0.4|0.3}}</center> <!-- Chirp mass -->
+|| <center>{{val|0.25|0.08|0.11}}</center><!-- Effective spin -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Primary type -->
+|| <center>{{val|29.7|5.0|5.3}}</center><!-- Primary mass -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Secondary type -->
+|| <center>{{val|8.4|1.8|1.0}}</center> <!-- Secondary mass -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Final type -->
+|| <center>{{val|37.0|4.1|3.9}}</center><!-- Final mass -->
+|| <center>{{val|0.67|0.05|0.07}}</center><!-- Final spin -->
+|| First possible observation of a merger of two black holes of very different masses
+|| <ref name="S190412m">{{cite web |title=Superevent info - S190412m |url=https://gracedb.ligo.org/superevents/S190412m/view/ |publisher=LIGO |accessdate=12 April 2019}}</ref><ref name="arxiv2004.08342">{{cite journal |title=GW190412: Observation of a Binary-Black-Hole Coalescence with Asymmetric Masses |date=17 April 2020 |arxiv=2004.08342 |author1=The LIGO Scientific Collaboration |author2=the Virgo Collaboration |last3=Abbott |first3=R. |last4=Abbott |first4=T. D. |last5=Abraham |first5=S. |last6=Acernese |first6=F. |last7=Ackley |first7=K. |last8=Adams |first8=C. |last9=Adhikari |first9=R. X. |last10=Adya |first10=V. B. |last11=Affeldt |first11=C. |last12=Agathos |first12=M. |last13=Agatsuma |first13=K. |last14=Aggarwal |first14=N. |last15=Aguiar |first15=O. D. |last16=Aich |first16=A. |last17=Aiello |first17=L. |last18=Ain |first18=A. |last19=Ajith |first19=P. |last20=Akcay |first20=S. |last21=Allen |first21=G. |last22=Allocca |first22=A. |last23=Altin |first23=P. A. |last24=Amato |first24=A. |last25=Anand |first25=S. |last26=Ananyeva |first26=A. |last27=Anderson |first27=S. B. |last28=Anderson |first28=W. G. |last29=Angelova |first29=S. V. |last30=Ansoldi |first30=S. |journal=Physical Review D |volume=102 |issue=4 |page=043015 |doi=10.1103/PhysRevD.102.043015 |s2cid=215814461 |display-authors=29 }}</ref>
+
+|- 
+|BGCOLOR="#f0fff0"| GW190413_052954 <br /> 2019-04-13
+|| 2020-10-27
+|| <center>1400</center><!-- Localization -->
+|| <center>{{val|4100|2410|1890}}</center> <!-- Luminosity distance -->
+|| <!-- Energy Radiated -->
+|| <center>{{val|24.0|5.4|3.7}}</center> <!-- Chirp mass -->
+|| <center>{{val|0.01|0.29|0.33}}</center><!-- Effective spin -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Primary type -->
+|| <center>{{val|33.4|12.4|7.4}}</center><!-- Primary mass -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Secondary type -->
+|| <center>{{val|23.4|6.7|6.3}}</center> <!-- Secondary mass -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Final type -->
+|| <center>{{val|54.3|12.4|8.4}}</center><!-- Final mass -->
+|| <center>{{val|0.69|0.12|0.13}}</center><!-- Final spin -->
+|| 
+|| <ref name="GWTC-2"/>
+
+|- 
+|BGCOLOR="#f0fff0"| GW190413_134308 <br /> 2019-04-13
+|| 2020-10-27
+|| <center>520</center><!-- Localization -->
+|| <center>{{val|5150|2440|2340}}</center> <!-- Luminosity distance -->
+|| <!-- Energy Radiated -->
+|| <center>{{val|31.9|7.3|4.6}}</center> <!-- Chirp mass -->
+|| <center>{{val|-0.01|0.24|0.28}}</center><!-- Effective spin -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Primary type -->
+|| <center>{{val|45.4|13.6|9.6}}</center><!-- Primary mass -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Secondary type -->
+|| <center>{{val|30.9|10.2|9.6}}</center> <!-- Secondary mass -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Final type -->
+|| <center>{{val|72.8|15.2|10.3}}</center><!-- Final mass -->
+|| <center>{{val|0.69|0.10|0.12}}</center><!-- Final spin -->
+|| 
+|| <ref name="GWTC-2"/>
+
+|- 
+|BGCOLOR="#f0fff0"| GW190421_213856 <br /> 2019-04-21
+|| 2020-10-27
+|| <center>1000</center><!-- Localization -->
+|| <center>{{val|3150|1370|1420}}</center> <!-- Luminosity distance -->
+|| <!-- Energy Radiated -->
+|| <center>{{val|30.7|5.5|6.6}}</center> <!-- Chirp mass -->
+|| <center>{{val|-0.05|0.23|0.26}}</center><!-- Effective spin -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Primary type -->
+|| <center>{{val|40.6|10.4|6.6}}</center><!-- Primary mass -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Secondary type -->
+|| <center>{{val|31.4|7.5|8.2}}</center> <!-- Secondary mass -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Final type -->
+|| <center>{{val|68.6|11.7|8.1}}</center><!-- Final mass -->
+|| <center>{{val|0.68|0.10|0.11}}</center><!-- Final spin -->
+|| 
+|| <ref name="GWTC-2"/>
+
+|- 
+|BGCOLOR="#f0fff0"| GW190424_180648 <br /> 2019-04-21
+|| 2020-10-27
+|| <center>26000</center><!-- Localization -->
+|| <center>{{val|2550|1560|1330}}</center> <!-- Luminosity distance -->
+|| <!-- Energy Radiated -->
+|| <center>{{val|30.3|5.7|4.2}}</center> <!-- Chirp mass -->
+|| <center>{{val|0.15|0.22|0.22}}</center><!-- Effective spin -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Primary type -->
+|| <center>{{val|39.5|10.9|6.9}}</center><!-- Primary mass -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Secondary type -->
+|| <center>{{val|31.0|7.4|7.3}}</center> <!-- Secondary mass -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Final type -->
+|| <center>{{val|67.1|12.5|9.2}}</center><!-- Final mass -->
+|| <center>{{val|0.75|0.08|0.09}}</center><!-- Final spin -->
+|| 
+|| <ref name="GWTC-2"/>
+
+|-
+|BGCOLOR="#f0fff0"| [[GW190425]]<br /> 2019-04-25<br />08:18:05
+|| 2020-01-06 
+|| <center>28; towards [[Hercules (constellation)|Hercules]]<ref name = "Pozanenko2019" /></center>
+|| <center>{{val|159|69|72}}</center>
+|| <!-- Energy Radiated -->
+|| <center>{{val|1.44|0.02|0.02}}</center> <!-- Chirp mass -->
+|| <center>{{val|0.012|0.01|0.01}}</center><!-- Effective spin -->
+|bgcolor=AADDDD| <center>NS</center> <!-- Primary type -->
+|| <center> 1.60 - 1.87</center><!-- Primary mass -->
+|bgcolor=AADDDD| <center>NS</center> <!-- Secondary type -->
+|| <center> 1.46 - 1.69 </center> <!-- Secondary mass -->
+|| <center>?</center> <!-- Final type -->
+|| <center><!-- Final mass -->
+|| <center><!-- Final spin -->
+|| Originally designated S190425z (z:26th trigger|UTC day), this trigger was detected by a single LIGO instrument (of three LVC stations), and is considered by some scientists to have been confirmed as a binary neutron star merger.<ref>{{cite news|url=http://www.astronomy.com/news/2020/01/gravitational-waves-reveal-a-second-neutron-star-collision|title=Gravitational waves reveal a second neutron star collision|date=8 January 2020}}</ref>
+
+It was published in 2020 that a [[Gamma-ray burst]] was detected ([[GRB 190425]]) ~0.5 seconds after the LIGO trigger, lasting 6 seconds and bearing similarities to GRB170817 (such as weakness [most power in sub-100 keV, or soft [[X-rays]]) bands], elevated energetic photon background levels [signal exceeding background by less than a factor of 2], and similar differences from other transients classified as short GRBs). Confidence was established for interpretation of a set of peaks through a control interval of only 2 days prior to the LIGO-Livingston trigger in [[INTEGRAL]] [[Electronic anticoincidence]],  could not be corroborated by other instruments and wasn't initially noted as a significant event. Non-detection in other instruments may be a consequence of an Earth-occulted source as the [[Fermi Gamma-ray Space Telescope|Fermi]] telescope attempted follow-up.<ref name = "Pozanenko2019">{{cite journal |doi= 10.1134/S032001081911007X | arxiv= 1912.13112| title= Наблюдение в гамма-диапазоне второго связанного со слиянием нейтронных звезд события LIGO/Virgo S190425z| year= 2019| last1= Позаненко| first1= А. С.| last2= Минаев| first2= П. Ю.| last3= Гребенев| first3= С. А.| last4= Человеков| first4= И. В.| journal= Письма В Астрономический Журнал: Астрономия И Космическая Астрофизика| volume= 45| issue= 11| pages= 768–786 |language=ru}}</ref>
+|| <ref name="S190425z">{{cite web |title=Superevent info - S190425z |url=https://gracedb.ligo.org/superevents/S190425z/view/ |publisher=LIGO |accessdate=25 April 2019}}</ref><ref name="arxiv2001.01761">{{cite journal |title=GW190425: Observation of a Compact Binary Coalescence with Total Mass ∼ 3.4 M<sub>☉</sub>|date=6 January 2020 |arxiv=2001.01761 |author1=The LIGO Scientific Collaboration |author2=the Virgo Collaboration |last3=Abbott |first3=R. |journal=The Astrophysical Journal |volume=892 |pages=L3 |doi=10.3847/2041-8213/ab75f5 |s2cid=210023687 |display-authors=2 }}</ref>
+|-
+|BGCOLOR="#f0fff0"| [[GW190521]]<br /> 2019-05-21<br />03:02:29
+|| 2020-09-02<!-- Date Published -->
+|| <center>765;<ref name="NASA-20190521" /> towards [[Coma Berenices]], [[Canes Venatici]], or [[Phoenix (constellation)|Phoenix]]</center>
+<!-- || <center></center>Location Area -->
+|| <center>{{val|5300|2400|2600}}</center><!-- Luminosity distance -->
+|| <center>{{val|7.6|2.2|1.9}}</center> <!-- Energy radiated -->
+|| <center>{{val|64|13|8}}</center> <!-- Chirp mass -->
+|| <center>{{val|0.08|0.27|0.36}}</center><!-- Effective inspiral spin -->
+|bgcolor=888888| <center><span style="color:white;">BH</span></center> <!-- Primary type -->
+|| <center>{{val|85|21|14}}</center><!-- Primary mass -->
+|bgcolor=888888| <center><span style="color:white;">BH</span></center> <!-- Secondary type -->
+|| <center>{{val|66|17|18}} </center> <!-- Secondary mass -->
+|bgcolor=888888| <center><span style="color:white;">BH</span></center> <!-- Final type -->
+|| <center>{{val|142|28|16}}</center><!-- Final mass -->
+|| <center>{{val|0.72|0.09|0.12}}</center><!-- Final spin -->
+|| Originally designated S190521g. Largest progenitor masses to date.
+||<ref name="PhysRevLett">{{cite journal |last=Abbott |first=R. |display-authors=etal|collaboration=[[LIGO Scientific Collaboration]] and [[Virgo interferometer|Virgo Collaboration]] |title=GW190521: A Binary Black Hole Merger with a Total Mass of 150 M ⊙ |journal=Physical Review Letters |date=2 September 2020 |volume=125 |issue=10 |pages=101102 |doi=10.1103/PhysRevLett.125.101102 |s2cid=221447506 |language=en|doi-access=free }}</ref><ref name="AstroJ">{{cite journal |last=Abbott |first=R. |display-authors=etal|collaboration=[[LIGO Scientific Collaboration]] and [[Virgo interferometer|Virgo Collaboration]] |title=Properties and Astrophysical Implications of the 150 M ⊙ Binary Black Hole Merger GW190521 |journal=The Astrophysical Journal |date=2 September 2020 |volume=900 |issue=1 |pages=L13 |doi=10.3847/2041-8213/aba493|s2cid=221447444 }}</ref>
+|-
+|BGCOLOR="#f0fff0"| [[GW190814]] 2019-08-14 21:11:18
+|| 2020-06-23 
+|| <center>18.5; towards [[Cetus]] or [[Sculptor (constellation)|Sculptor]]{{citation needed|date=June 2020}}</center>
+|| <center>{{val|241|41|45}}</center>
+|| <!-- Energy Radiated -->
+|| <center>{{val|6.09|0.06|0.06}}</center> <!-- Chirp mass -->
+|| <center>{{val|-0.002|0.06|0.061}}</center><!-- Effective spin -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Primary type -->
+|| <center> {{val|23.2|1.1|1.0}}</center><!-- Primary mass -->
+|| <center>?</center> <!-- Secondary type -->
+|| <center> {{val|2.59|0.08|0.09}} </center> <!-- Secondary mass -->
+|bgcolor="888888"| <center><span style="color:white;">BH</span></center> <!-- Final type -->
+|| <center> {{val|25.6|1.1|0.9}} <!-- Final mass -->
+|| <center> {{val|0.28|0.02|0.02}}<!-- Final spin -->
+|| No optical counterpart was discovered despite an extensive search of the probability region. The mass of the lighter component is estimated to be 2.6 times the mass of the Sun, placing it in the mass gap between neutron stars and black holes.<ref>{{cite news|url=https://news.psu.edu/story/623786/2020/06/23/research/black-hole-or-neutron-star|title=Black hole or neutron star?|date=June 23, 2020}}</ref>
+|| <ref name="S190814bv">{{cite web |title=Superevent info - S190814bv|url=https://gracedb.ligo.org/superevents/S190814bv/view/ |publisher=LIGO |accessdate=15 August 2019}}</ref><ref name="SA-20190816">{{cite news |last=Starr |first=Michelle|title=Early Reports Indicate We May Have Detected a Black Hole And Neutron Star Collision |url=https://www.sciencealert.com/we-might-have-just-caught-a-black-hole-in-the-act-of-eating-a-neutron-star |date=16 August 2019 |work=ScienceAlert.com |accessdate=16 August 2019 }}</ref><ref name="GZM-20190826">{{cite news |last=Mandelbum |first=Ryan F. |title=Mystery Deepens Around Newly Detected Ripples in Space-Time |url=https://gizmodo.com/mystery-deepens-around-newly-detected-ripples-in-space-1837581646 |date=26 August 2019 |work=[[Gizmodo]] |accessdate=26 August 2019 }}</ref><ref name="SA-20200211">{{cite news |last=Starr |first=Michelle |title=First Papers on The Black Hole-Neutron Star Merger Are In. Here's What We Didn't See |url=https://www.sciencealert.com/the-first-papers-are-in-following-up-the-black-hole-neutron-star-merger-here-s-what-they-found |date=11 February 2020 |work=ScienceAlert.com |accessdate=11 February 2020}}</ref><ref name="ARX-20200205">{{cite arxiv |author=Ackley, K. |display-authors=et al. |title=Observational constraints on the optical and near-infrared emission from the neutron star-black hole binary merger S190814bv |date=5 February 2020 |eprint=2002.01950v1 |class=astro-ph.SR }}</ref><br /><ref name="NYT-20200624">{{cite news |last=Overbye |first=Dennis |author-link=Dennis Overbye |title=A Black Hole's Lunch Provides a Treat for Astronomers - Scientists have discovered the heaviest known neutron star, or maybe the lightest known black hole: "Either way it breaks a record." |url=https://www.nytimes.com/2020/06/24/science/black-hole-ligo-gravitational.html |date=24 June 2020 |work=[[The New York Times]] |accessdate=24 June 2020 }}</ref><ref name="SA-20200624">{{cite news |last=Starr |first=Michelle |title=Astronomers Detect First-Ever Mystery Object in The 'Mass Gap' of Cosmic Collisions |url=https://www.sciencealert.com/gravitational-waves-may-have-just-given-us-a-black-hole-smaller-than-we-thought-possible |date=24 June 2020 |work=ScienceAlert.com |accessdate=24 June 2020 }}</ref><ref name="EA-20200623">{{cite news |author=[[University of Birmingham]] |title=Gravitational wave scientists grapple with the cosmic mystery of GW190814 |url=https://www.eurekalert.org/pub_releases/2020-06/uob-gws062320.php |date=23 June 2020 |work=[[EurekAlert!]] |accessdate=24 June 2020 }}</ref><ref name="AJL-20200623">{{cite journal |author=Abbott, R. |display-authors=et al. |title=GW190814: Gravitational Waves from the Coalescence of a 23 Solar Mass Black Hole with a 2.6 Solar Mass Compact Object |date=23 June 2020 |journal=[[The Astrophysical Journal Letters]]  |volume=896 |number=2 |pages=L44 |doi=10.3847/2041-8213/ab960f |doi-access=free }}</ref>
+|}
+
+[[File:Gravitational Wave Transient Catalog 1.png|950px|center|thumb|Gravitational Wave Transient Catalog 1. Credit:LIGO Scientific Collaboration and Virgo Collaboration/Georgia Tech/S. Ghonge & K. Jani]]
+<!---[[File:O1&O2.svg|thumb|O1 & O2 events from LIGO & Virgo]]--->
+
+== Candidate events and Marginal Detections ==
+=== Marginal detections from O1 and O2 ===
+In addition to well-constrained detections listed above, a number of low-significance detections of possible signals were made by LIGO and Virgo. Their characteristics are listed below:
+
+{|class="wikitable sortable" style="min-width:100em; font-size:80%"
+|+Marginal event detections
+!rowspan=2| candidate event
+!rowspan=2| <small>&nbsp;Detection<br />time ([[UTC]])</small><!-- DIFFERENT COLORS ARE USED FOR DIFFERENT OBSERVING RUNS -->
+!rowspan=2| <small>date published</small>
+!rowspan=2| <small>[[Distance measures (cosmology)#Luminosity distance|Luminosity<br />distance]]<br />([[Parsec|Mpc]])</small><ref group=n>1 Mpc is approximately 3.26 [[light year|Mly]].</ref>
+!rowspan=2| <small>Detector</small><br /><ref group=n>Which instruments observed the event. (H = LIGO Hanford, L=LIGO Livingston, V=Virgo)</ref>
+!rowspan=2| <small>False Alarm<br/> Rate (Yr)</small>
+!rowspan=2| Effective spin
+!colspan=2| Primary
+!colspan=2| Secondary
+!rowspan=2| <small>probability<br/>of<br/>terrestrial<br/>noise</small>
+!rowspan=2 style="min-width:15em"| Notes
+!rowspan=2 class=unsortable| Ref
+|-
+!| Type
+!| Mass (M<sub>☉</sub>)
+!| Type
+!| Mass (M<sub>☉</sub>)
+|-
+|BGCOLOR="#fff0f0"|150928 || 2015-09-28 10:49:00 || 2018-11-05 || || H,L || 0.042 || -0.70 ||bgcolor=AADDDD|<center>NS</center> ||2.53 ||bgcolor=AADDDD|<center>NS</center> ||1.02 ||bgcolor="#666666" data-sort-value=0.90|<span style="color:white;">~0.9</span> || ||<ref name="Nitz2019"/>
+|-
+|BGCOLOR="#fff0f0"|151011 || 2015-10-11 19:27:49 || 2019-10-11 || {{val|1560|1090|740}} || H,L || 0.12 || {{val|0.09|0.29|0.27}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|51|18|12}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|31|12}} ||bgcolor="#666666"|<span style="color:white;">0.92</span> || ||<ref name="Nitz2020">{{cite journal |last1=Nitz |first1=Alexander H. |last2=Dent |first2=Thomas |last3=Davies |first3=Gareth S. |last4=Kumar |first4=Sumit |last5=Capano |first5=Collin D. |last6=Harry |first6=Ian |last7=Mozzon |first7=Simone |last8=Nuttall |first8=Laura |last9=Lundgren |first9=Andrew |last10=Tápai |first10=Márton |title=2-OGC: Open Gravitational-wave Catalog of Binary Mergers from Analysis of Public Advanced LIGO and Virgo Data |journal=The Astrophysical Journal |date=12 March 2020 |volume=891 |issue=2 |pages=123 |doi=10.3847/1538-4357/ab733f |arxiv=1910.05331 |bibcode=2020ApJ...891..123N |s2cid=204403263 }}</ref>
+|-
+|BGCOLOR="#fff0f0"|151019 || 2015-10-19 00:23:16 || 2018-11-05 || || H,L || 0.060 || 0.11 ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || 14.93 ||bgcolor=AADDDD|<center>NS</center> || 1.27 ||bgcolor="#666666" data-sort-value=0.90|<span style="color:white;">~0.9</span> || ||<ref name="Nitz2019"/>
+|-
+|BGCOLOR="#fff0f0"|151205 || 2015-12-05 19:55:25 || 2019-10-11 || {{val|3000|2400|1600}} || H,L || 0.61 || {{val|0.14|0.40|0.38}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|67|28|17}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|42|16|19}} ||bgcolor="#bbbbbb"| 0.47 || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fff0f0"|151213 || 2015-12-13 00:12:20 || 2018-11-05 || || H,L || 0.309 || -0.79 ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || 11.12 ||bgcolor=EEBBBB| <center>Mass gap</center> || 3.30 ||bgcolor="#666666"|<span style="color:white;">0.953</span> || ||<ref name="Nitz2019"/>
+|-
+|BGCOLOR="#fff0f0"|151216A || 2015-12-16 09:24:16 || 2019-10-11 || {{val|1620|1140|910}} || H,L || 0.10 || {{val|0.51|0.21|0.57}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|41|15|17}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|14.4|7.0|6.3}} ||bgcolor="#777777"|<span style="color:white;">0.82</span> || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fff0f0"|151216B || 2015-12-16 18:49:30 || 2019-10-11 || {{val|500|280|250}} || H,L || 0.03 || {{val|-0.03|0.24|0.49}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|19.7|6.4|7.4}} ||bgcolor=EEBBBB| <center>Mass gap</center> || {{val|3.25|1.32|0.58}} ||bgcolor="#666666"|<span style="color:white;">0.93</span> || Smaller mass could be a neutron star ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fff0f0"|151217 || 2015-12-17 03:47:49 || 2019-10-11 || {{val|1000|660|440}} || H,L || 0.15 || {{val|0.70|0.15|0.50}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|46|13|26}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|8.2|5.1|1.7}} ||bgcolor="#888888"|<span style="color:white;">0.74</span> || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fff0f0"|151222 || 2015-12-22 05:28:26 || 2018-11-05 || || H,L || 0.075 || -0.74 ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || 6.86 ||bgcolor=EEBBBB| <center>Mass gap</center> || 3.26 ||bgcolor="#666666"|<span style="color:white;">0.988</span> || ||<ref name="Nitz2019"/>
+|-
+|BGCOLOR="#fff0f0"|151231 || 2015-12-31 00:40:30 || 2019-02-27 || || H,L || || || || || || ||bgcolor="#777777"|<span style="color:white;">0.85</span> || ||<ref name="Venumadhav2019">{{cite journal |last1=Venumadhav |first1=Tejaswi |last2=Zackay |first2=Barak |last3=Roulet |first3=Javier |last4=Dai |first4=Liang |last5=Zaldarriaga |first5=Matias |title=New search pipeline for compact binary mergers: Results for binary black holes in the first observing run of Advanced LIGO |journal=Physical Review D |date=24 July 2019 |volume=100 |issue=2 |pages=023011 |doi=10.1103/PhysRevD.100.023011 |arxiv=1902.10341 |bibcode=2019PhRvD.100b3011V |s2cid=84844069 }}</ref>
+|-
+|BGCOLOR="#fff0f0"|160103 || 2016-01-03 05:48:36 || 2018-11-05 || || H,L || 0.396 || 0.49 ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || 9.75 ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || 7.29 ||bgcolor="#666666"|<span style="color:white;">0.939</span> || ||<ref name="Nitz2019">{{cite journal |last1=Nitz |first1=Alexander H. |last2=Capano |first2=Collin |last3=Nielsen |first3=Alex B. |last4=Reyes |first4=Steven |last5=White |first5=Rebecca |last6=Brown |first6=Duncan A. |last7=Krishnan |first7=Badri |title=1-OGC: The First Open Gravitational-wave Catalog of Binary Mergers from Analysis of Public Advanced LIGO Data |journal=The Astrophysical Journal |date=25 February 2019 |volume=872 |issue=2 |pages=195 |doi=10.3847/1538-4357/ab0108 |arxiv=1811.01921 |bibcode=2019ApJ...872..195N |s2cid=119389481 }}</ref>
+|-
+|BGCOLOR="#fffff0"|170104 || 2017-01-04 21:58:40 || 2019-10-11 || {{val|4600|4300|3100}} || H,L || 0.03 || {{val|0.25|0.50|0.49}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|98|49|40}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|44|30|33}} ||bgcolor="#777777"|<span style="color:white;">0.88</span> || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fffff0"|170121 || 2017-01-21 21:25:36 || 2019-04-15 || || H,L || || {{val|-0.3|0.3}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|29|4|3}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || ||bgcolor="#ffffff"|<0.01 || ||<ref name="Venumadhav2019b">{{cite journal |last1=Venumadhav |first1=Tejaswi |last2=Zackay |first2=Barak |last3=Roulet |first3=Javier |last4=Dai |first4=Liang |last5=Zaldarriaga |first5=Matias |title=New Binary Black Hole Mergers in the Second Observing Run of Advanced LIGO and Advanced Virgo |journal=Physical Review D |year=2020 |volume=101 |issue=8 |page=083030 |doi=10.1103/PhysRevD.101.083030 |arxiv=1904.07214 |bibcode=2020PhRvD.101h3030V |s2cid=119188594 }}</ref>
+|-
+|BGCOLOR="#fffff0"|170123 || 2017-01-23 20:16:42 || 2019-10-11 || {{val|2800|2800|1600}} || H,L || 0.04 || {{val|-0.12|0.31|0.35}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|44|23|12}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|28|13}} ||bgcolor="#666666"|<span style="color:white;">0.92</span> || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fffff0"|170201 || 2017-02-01 11:03:12 || 2019-10-11 || {{val|1530|1360|770}} || H,L || 0.16 || {{val|0.44|0.28|0.54}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|48|13|23}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|13.1|8.6|3.7}} ||bgcolor="#888888"|<span style="color:white;">0.76</span> || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fffff0"|170202 || 2017-02-02 13:56:57 || 2019-10-11 || {{val|1220|980|640}} || H,L || 0.06 || {{val|-0.06|0.27|0.32}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|33|17|11}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|13.8|7.0|4.8}} ||bgcolor="#777777"|<span style="color:white;">0.87</span> || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fffff0"|170220 || 2017-02-20 11:36:24 || 2019-10-11 || {{val|3600|3700|2100}} || H,L || 0.05 || {{val|0.28|0.33|0.37}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|69|37|25}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|31|22|14}} ||bgcolor="#666666"|<span style="color:white;">0.90</span> || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fffff0"|170304 || 2017-03-04 16:37:53 || 2019-10-11 || {{val|2300|1600|1200}} || H,L || 2.5 || {{val|0.11|0.29|0.27}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|44.9|17.6|9.4}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|31.8|9.5|11.6}} ||bgcolor="#cccccc"|0.30 || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fffff0"|170402 || 2017-04-02 21:51:50 || 2019-10-21 || || H,L || || || || || || ||bgcolor="cccccc"|0.32 || ||<ref name="Zackay2019"/>
+|-
+|BGCOLOR="#fffff0"|170403 || 2017-04-03 23:06:11 || 2019-10-11 || {{val|2500|2100|1300}} || H,L || 0.07 || {{val|-0.20|0.35|0.37}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|53|23|13}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|35|13|15}} ||bgcolor="#666666"|<span style="color:white;">0.97</span> || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fffff0"|170425 || 2017-04-25 05:53:34 || 2019-10-11 || {{val|2600|2000|1300}} || H,L || 0.20 || {{val|-0.06|0.28|0.32}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|45|21|11}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|30|11}} ||bgcolor="#888888"|<span style="color:white;">0.79</span> || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fffff0"|170620 || 2017-06-20 01:14:02 || 2019-10-11 || {{val|1710|1300|850}} || H,L || 0.04 || {{val|0.05|0.25}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|29.4|13.2|6.8}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|17.9|5.4|5.5}} ||bgcolor="#666666"|<span style="color:white;">0.98</span> || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fffff0"|170629 || 2017-06-29 04:13:55 || 2019-10-11 || {{val|1880|1450|940}} || H,L || 0.06 || {{val|0.73|0.15|0.98}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|49|20|30}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|7.3|4.6|2.6}} ||bgcolor="#666666"|<span style="color:white;">0.98</span> || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fffff0"|170721 || 2017-07-21 05:55:13 || 2019-10-11 || {{val|1160|750|520}} || H,L || 0.04 || {{val|-0.06|0.25|0.29}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|31.7|9.3|6.1}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|21.4|5.3|5.6}} ||bgcolor="#666666"|<span style="color:white;">0.94</span> || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fffff0"|170727 || 2017-07-27 01:04:30 || 2019-10-11 || {{val|2200|1500|1100}} || H,L || 180 || {{val|-0.05|0.25|0.30}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|41.6|12.8|7.9}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|30.4|7.9|8.2}} ||bgcolor="ffffff"|0.006 || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fffff0"|170801 || 2017-08-01 23:28:19 || 2019-10-11 || {{val|1070|920|580}} || L,V || 0.04 || {{val|-0.09|0.25|0.24}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|23.9|12.6|6.6}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|12.4|4.7|4.0}} ||bgcolor="#666666"|<span style="color:white;">0.99</span> || ||<ref name="Nitz2020"/>
+|-
+|BGCOLOR="#fffff0"|170817A || 2017-08-17 03:02:46 || 2019-10-21 || || H,L,V || 11.5 || {{val|0.5|0.2}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|56|16|10}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|40|10|11}} ||bgcolor="#eeeeee"|0.14 || ||<ref name="Zackay2019">{{cite journal |last1=Zackay |first1=Barak |last2=Dai |first2=Liang |last3=Venumadhav |first3=Tejaswi |last4=Roulet |first4=Javier |last5=Zaldarriaga |first5=Matias |title=Detecting Gravitational Waves With Disparate Detector Responses: Two New Binary Black Hole Mergers |date=21 October 2019 |doi=10.1103/PhysRevD.101.083030 |arxiv=1910.09528 |s2cid=119188594 |language=en}}</ref>
+|-
+|BGCOLOR="#fffff0"|170818 || 2017-08-18 09:34:45 || 2019-10-11 || {{val|3100|1700|1900}} || H,V || 0.04 || {{val|0.06|0.48|0.45}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|55|59|28}} ||bgcolor="888888"| <center><span style="color:white;">BH</span></center> || {{val|23|43|15}} ||bgcolor="#666666"|<span style="color:white;">0.99</span> || ||<ref name="Nitz2020"/>
+|}
+
+=== Observation candidates from O3/2019 ===
+From&nbsp;observation run O3/2019 on, observations are published as [[Open Public Alert]]s to facilitate [[Multi-messenger astronomy|multi-messenger observations]] of events.<ref>{{cite web|url=https://gcn.gsfc.nasa.gov/gcn3_archive.html |title=Real-time alerts and circulars tracker |via=nasa.gov}}</ref><ref name= "LGS2018.10">{{cite web|url= https://www.ligo.org/scientists/GWEMalerts.php |title= Observing Plans and Public Alerts |date= October 2018 | website= www.ligo.org |publisher= LIGO Scientific Collaboration |access-date= 2018-10-28}}</ref><ref>{{cite web|url=https://wiki.gw-astronomy.org/pub/OpenLVEM/TownHallMeetings2018/what-is-an-opa.pdf |title=What constitutes an open, public alert? |last=Singer |first=Leo P. |date=16 March 2017 |publisher=LSC ([[LIGO Scientific Collaboration]]) |access-date=30 October 2018 |via=gw-astronomy.org}}</ref> Candidate event records can be directly accessed at the Gravitational Wave Candidate Event Database.<ref>{{cite web|url=https://gracedb.ligo.org/latest/ |title=GraceDB — Gravitational Wave Candidate Event Database |via=ligo.org}}</ref> On 1 April 2019, the start of the third observation run was announced with a circular published in the public alerts tracker.<ref>{{cite web|url=https://gcn.gsfc.nasa.gov/gcn3/24045.gcn3 |title=Real-time alerts and circulars tracker |via=nasa.gov}}</ref> The first O3/2019 binary black hole detection alert was broadcast on 8 April 2019. A significant percentage of O3 candidate events detected by LIGO are accompanied by corresponding triggers at Virgo. False alarm rates are mixed, with more than half of events assigned false alarm rates greater than 1 per 20 years, contingent on presence of glitches around signal, foreground electromagnetic instability, seismic activity, and operational status of any one of the three LIGO-Virgo instruments. For instance, events S190421ar and S190425z weren't detected by Virgo and LIGO's Hanford site, respectively.
+
+The LIGO/Virgo collaboration took a short break from observing during the month of October 2019 to improve performance and prepare for future plans, with no signals detected in that month as a result.<ref>{{cite web |title=LIGO Announces Commissioning Break |url=https://www.ligo.caltech.edu/news/ligo20190712 |website=LIGO Lab {{!}} Caltech |accessdate=7 November 2019}}</ref>
+
+The Kamioka Gravitational Wave Detector ([[KAGRA]]) in Japan became operational on 25 February 2020,<ref>{{Cite web|url=https://gwcenter.icrr.u-tokyo.ac.jp/en/archives/1381|title=KAGRA Gravitational-wave Telescope Starts Observation « KAGRA Large-scale Cryogenic Graviationai wave Telescope Project|language=ja|access-date=2020-02-27}}</ref> likely improving the detection and localization of future gravitational wave signals.<ref>{{Cite web|url=https://www.ligo.caltech.edu/news/ligo20191004|title=KAGRA to Join LIGO and Virgo in Hunt for Gravitational Waves|website=LIGO Lab {{!}} Caltech|access-date=2019-10-06}}</ref> However, KAGRA does not report their signals in real-time on GraceDB as LIGO and Virgo do, so the results of their observation run will likely not be published until the end of O3.
+
+The LIGO-Virgo collaboration ended the O3 run early on March 27, 2020 due to health concerns from the [[COVID-19 pandemic]].<ref name=":0">{{cite web |title=LIGO Suspends Third Observing Run (O3) |url=https://www.ligo.caltech.edu/news/ligo20200326 |website=LIGO Lab |publisher=Caltech |accessdate=20 April 2020}}</ref><ref>{{cite web |title=LIGO Laboratory's Response to COVID-19 |url=https://www.ligo.caltech.edu/news/ligo20200317 |website=LIGO Lab |publisher=Caltech |accessdate=24 March 2020}}</ref>
+
+<!---[[File:O3 Superevents.svg|thumb|O3 Superevents from LIGO & Virgo]]--->
+{| style="float:left" class="wikitable"|
+|+Candidate detections from O3
+|{{ #invoke:Chart | bar chart
+| height = 300
+| width = 600
+| stack = 1
+| group 1 =    1 :  0 :  0 :  0 :  0 :  2 :  0 :  0 :  1 :  0 : 1 : 0
+| group 2 =    0 :  0 :  0 :  0 :  1 :  3 :  0 :  0 :  1 :  0 : 0 : 0
+| group 3 =    3 :  7 :  2 :  5 :  2 :  2 :  0 :  3 :  4 :  3 : 4 : 2
+| group 4 =    0 :  0 :  0 :  1 :  0 :  2 :  0 :  0 :  0 :  1 : 0 : 1
+| group 5 =    1 :  1 :  0 :  1 :  0 :  0 :  0 :  0 :  0 :  1 : 0 : 0
+| group 6 =    1 :  2 :  0 :  0 :  4 :  1 :  0 :  6 :  4 :  4 : 0 : 2
+| group 7 =    0 :  0 :  0 :  0 :  0 :  0 :  0 :  0 :  0 :  1 : 0 : 0
+| group names = BNS mergers : NS-BH mergers : BBH mergers : mass gap : terrestrial&nbsp;noise : false&nbsp;positives : unidentified
+| colors = #aadddd : #b0c0c0 : #888888 : #eebbbb : #ffeebb : #ffdddd : #ffaaff
+| x legends = <small>19/04</small> : <small>19/05</small> : <small>19/06</small> : <small>19/07</small> : <small>19/08</small> : <small>19/09</small> : <small>19/10</small> : <small>19/11</small> : <small>19/12</small> : <small>20/01</small> : <small>20/02</small> : <small>20/03</small>
+}}
+|}
+{| style="float:right" class="wikitable"|
+|+O3 detections by distance
+|{{ #invoke:Chart | bar chart
+| height = 275
+| float = right
+| width = 550
+| y tick marks = 10
+| stack = 1
+| group 1 =    0 :  1 :  4 :  0 :  0 :  0 :  0
+| group 2 =    0 :  1 :  3 :  1 :  0 :  0 :  0
+| group 3 =    0 :  0 :  2 :  10 : 17 :  6 :  1
+| group 4 =    0 :  0 :  1 :  3 :  1 :  0 :  0
+| group names = BNS mergers : NS-BH mergers : BBH mergers : mass gap
+| colors = #aadddd : #b0c0c0 : #888888 : #eebbbb
+| x legends = <100 Mpc : 100-200 Mpc : 200-500 Mpc : 500-1000 Mpc : 1000-2000 Mpc : 2000-5000 Mpc : 5000+ Mpc
+}}
+|}
+{{clear}}
+<center>'''List of O3 event alerts'''<ref name="Nov5"/><ref name="Nov30" /></center>
+{|class="wikitable sortable" style="min-width:100em; font-size:80%"
+!rowspan=2| GW event
+!rowspan=2| <small>&nbsp;Detection<br />time ([[UTC]])</small><!-- DIFFERENT COLORS ARE USED FOR DIFFERENT OBSERVING RUNS -->
+<!--!rowspan=2| <small>Date<br />published</small> -->
+!rowspan=2| <small>Location<br />area</small><ref group=n>The area of the sky within which it was possible to localize the source.</ref><br />([[square degree|deg<sup>2</sup>]])
+!rowspan=2| <small>[[Distance measures (cosmology)#Luminosity distance|Luminosity<br />distance]]<br />([[Parsec|Mpc]])</small><ref group=n>1 Mpc is approximately 3.26 [[light year|Mly]].</ref>
+!rowspan=2| <small>Detector</small><br /><ref group=n>Which instruments observed the event. (H = LIGO Hanford, L=LIGO Livingston, V=Virgo)</ref>
+!rowspan=2| <small>False Alarm<br/> Rate (Hz)</small>
+! colspan=5| Classification
+<!--! colspan=2| Properties -->
+! rowspan=2 style="min-width:15em"| Notes
+! rowspan=2 class=unsortable| Ref
+|-
+!| <small>NS / NS</small><br /><ref group=n>Probability that both components have mass < 3 [[solar mass|M<sub>☉</sub>]]</ref>
+!| <small>NS / BH</small><br /><ref group=n>Probability that one component has mass < 3 [[solar mass|M<sub>☉</sub>]] and the other has mass > 5 [[solar mass|M<sub>☉</sub>]]</ref>
+!| <small>BH / BH</small><br /><ref group=n>Probability that both components have mass > 5 [[solar mass|M<sub>☉</sub>]]</ref>
+!| <small>Mass gap</small><br /><ref group=n>Probability that at least one component has a mass in the range 3-5 [[solar mass|M<sub>☉</sub>]], between those of known neutron stars and black holes, a range sometimes identified as the "lower" [[Stellar black hole#Mass gaps|mass gap]]</ref>
+!| <small>Terrestrial</small><br /><ref group=n>Probability that the source is terrestrial or non-cosmological (e.g. foreground noises and signals [e.g. "noise"] or a technical/systematic error ["glitch"])</ref>
+<!--!| <small>HasNS</small> -->
+<!--!| <small>HasRemnant</small> -->
+|-
+|| S190408an
+|BGCOLOR="#f0fff0"| 2019-04-08<br />18:18:02
+<!--|| 2019-04-08 -->
+|| <center>387; towards [[Pegasus (constellation)|Pegasus]] or [[Lacerta (constellation)|Lacerta]]</center>
+|| <center>{{val|1473|358}}</center>
+|| H,L,V
+|| {{sort|11273000000|2.8 10<sup>−18</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">{{sort|1.0|~1.0}}</span>
+|| 0.0
+|| 9.8e−12
+<!--|| 0.0 -->
+<!--|| 0.12 -->
+|| 
+|| <ref name="S190408an">{{cite web |title=Superevent info - S190408an |url=https://gracedb.ligo.org/superevents/S190408an/view/ |publisher=LIGO |accessdate=9 April 2019}}</ref><ref>[https://gracedb.ligo.org/apiweb/superevents/S190408an/files/S190408an-1-Preliminary.xml XML file with preliminary information]</ref>
+|-
+|| S190421ar
+|BGCOLOR="#f0fff0"| 2019-04-21<br />21:38:56
+<!--|| 2019-04-21 -->
+|| <center>1444</center>
+|| <center>{{val|1628|535}}</center>
+|| H,L
+|| {{sort|2.1285|1.5 10<sup>−8</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.967</span>
+|| 0.0
+|| 0.033
+<!--|| 0.0 -->
+<!--|| 0.0 -->
+|| Initially marked with 96% chance of having a terrestrial origin ["noise"], but later upgraded to 97% chance of being a binary black hole merger.
+|| <ref name="S190421ar">{{cite web |title=Superevent info - S190421ar |url=https://gracedb.ligo.org/superevents/S190421ar/view/ |publisher=LIGO |accessdate=8 July 2019}}</ref>
+
+|-
+|| S190426c
+|BGCOLOR="#f0fff0"| 2019-04-26<br />15:21:55
+<!--|| 2019-04-26 -->
+|| <center>1131</center>
+|| <center>{{val|377|100}}</center>
+|| H,L,V
+|| {{sort|1.6276|1.9 10<sup>−8</sup>}}
+|| 0.244
+|| 0.064
+|| 0.0
+|| 0.117
+|bgcolor="FFEEEE"| 0.575
+<!--|| 1.0 -->
+<!--|| 1.0 -->
+|| Initially marked with 49% chance of being binary neutron star merger, 13% neutron star-black hole merger, 24% mass gap merger.<br>Later marked with a 52% chance of NS-BH, 22% mass gap, 13% BNS, and 14% terrestrial, before being revised to the current solution
+|| <ref name="S190426c">{{cite web |title=Superevent info - S190426c |url=https://gracedb.ligo.org/superevents/S190426c/view/ |publisher=LIGO |accessdate=26 April 2019}}</ref><ref>{{cite journal|title=Gravitational waves hint at detection of black hole eating star|journal=Nature|volume=569|issue=7754|pages=15–16|date=26 April 2019|doi=10.1038/d41586-019-01377-2|pmid=31040413|last1=Castelvecchi|first1=Davide|bibcode=2019Natur.569...15C|doi-access=free}}</ref>
+<ref name="Lundquist">{{cite journal |author= Lundquist, M.J. |display-authors=etal |date=June 2019| title=Searches After Gravitational-waves Using ARizona Observatories (SAGUARO): System Overview and First Resultsfrom Advanced LIGO/Virgo's Third Observing Run |journal=The Astrophysical Journal |volume=881 |issue=2 |pages=L26 | arxiv=1906.06345 |doi=10.3847/2041-8213/ab32f2 |bibcode=2019ApJ...881L..26L |s2cid=189927965 }}</ref>
+|-
+||S190503bf
+|BGCOLOR="#f0fff0"| 2019-05-03<br />18:54:04
+<!--|| 2019-05-03 -->
+|| <center>448; towards [[Columba (constellation)|Columba]], [[Pictor]], or [[Puppis]]</center>
+|| <center>{{val|421|105}}</center>
+|| H,L,V
+|| {{sort|19.368|1.6 10<sup>−9</sup>}}
+|| 0.0
+|| 0.0047
+|bgcolor="888888"| <span style="color:white;">0.963</span>
+|| 0.032
+|| 0.00012
+<!--|| 0.0 -->
+<!--|| 0.0 -->
+|| 
+|| <ref name="S190503bf">{{cite web |title=Superevent info - S190503bf |url=https://gracedb.ligo.org/superevents/S190503bf/view/ |publisher=LIGO |accessdate=3 May 2019}}</ref>
+|-
+||S190510g
+|BGCOLOR="#f0fff0"| 2019-05-10<br />02:59:39
+<!--|| 2019-05-10 -->
+|| <center>1166; towards [[Columba (constellation)|Columba]] or [[Canis Major]]</center>
+|| <center>{{val|227|92}}</center>
+|| H,L,V
+|| {{sort|3.5872|8.8 10<sup>−9</sup>}}
+|| 0.42
+|| 0.0
+|| 0.0
+|| 0.0
+|bgcolor="FFEEEE"| 0.58
+<!--|| 1.0 -->
+<!--|| 1.0 -->
+|| Initially reported with a 2% chance of terrestrial origin ["noise"], later downgraded to ~58% terrestrial foreground probability ["noise"].
+|| <ref name="S190510g">{{cite web |title=Superevent info - S190510g |url=https://gracedb.ligo.org/superevents/S190510g/view/ |publisher=LIGO |accessdate=10 May 2019}}</ref>
+|-
+||S190512at
+|BGCOLOR="#f0fff0"| 2019-05-12<br />18:07:14
+<!--|| 2019-05-12 -->
+|| <center>252; towards [[Scorpius (constellation)|Scorpius]] or [[Ophiuchus]]</center>
+|| <center>{{val|1388|322}}</center>
+|| H,L,V
+|| {{sort|16.673|1.9 10<sup>−9</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.990</span>
+|| 0.0
+|| 0.010
+<!--|| 0.0 -->
+<!--|| 0.0 -->
+|| 
+|| <ref name="S190512at">{{cite web |title=Superevent info - S190512at |url=https://gracedb.ligo.org/superevents/S190512at/view/ |publisher=LIGO |accessdate=12 May 2019}}</ref>
+|-
+||S190513bm
+|BGCOLOR="#f0fff0"| 2019-05-13<br />20:54:28
+<!--|| 2019-05-13 -->
+|| <center>691; towards [[Sagittarius (constellation)|Sagittarius]], [[Capricornus (constellation)|Capricornus]], [[Perseus (constellation)|Perseus]], or [[Camelopardalis]]</center>
+|| <center>{{val|1987|501}}</center>
+|| H,L,V
+|| {{sort|84864|3.7 10<sup>−13</sup>}}
+|| 0.0
+|| 0.0052
+|bgcolor="888888"| <span style="color:white;">0.943</span>
+|| 0.052
+|| 6.0e−8
+<!--|| 0.0 -->
+<!--|| 0.0 -->
+|| 
+|| <ref name="S190513bm">{{cite web |title=Superevent info - S190513bm |url=https://gracedb.ligo.org/superevents/S190513bm/view/ |publisher=LIGO |accessdate=13 May 2019}}</ref>
+|-
+||S190517h
+|BGCOLOR="#f0fff0"| 2019-05-17<br />05:51:01
+<!--|| 2019-05-17 -->
+|| <center>939</center>
+|| <center>{{val|2950|1038}}</center>
+|| H,L,V
+|| {{sort|17471|1.8 10<sup>−12</sup>}}
+|| 0.0
+|| 0.00077
+|bgcolor="888888"| <span style="color:white;">0.983</span>
+|| 0.017
+|| 0.000043
+<!--|| 0.0 -->
+<!--|| 0.0 -->
+|| 
+|| <ref name="S190517h">{{cite web |title=Superevent info - S190517h |url=https://gracedb.ligo.org/superevents/S190517h/view/ |publisher=LIGO |accessdate=17 May 2019}}</ref>
+|-
+||S190519bj
+|BGCOLOR="#f0fff0"| 2019-05-19<br />15:35:44
+<!--|| 2019-05-19 -->
+|| <center>967</center>
+|| <center>{{val|3154|791}}</center>
+|| H,L,V
+|| {{sort|5.5578|5.7 10<sup>−9</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.956</span>
+|| 0.0
+|| 0.044
+<!--|| 0.0 -->
+<!--|| 0.0 -->
+|| 
+|| <ref name="S190519bj">{{cite web |title=Superevent info - S190519bj |url=https://gracedb.ligo.org/superevents/S190519bj/view/ |publisher=LIGO |accessdate=19 May 2019}}</ref>
+|-
+||S190521r
+|BGCOLOR="#f0fff0"| 2019-05-21<br />07:43:59
+<!--|| 2019-05-21 -->
+|| <center>488; towards [[Pegasus (constellation)|Pegasus]], [[Cygnus (constellation)|Cygnus]], [[Vulpecula]], [[Sagitta]], [[Hercules (constellation)|Hercules]], [[Ophiuchus]], or [[Scorpius]]</center>
+|| <center>{{val|1136|279}}</center>
+|| H,L
+|| {{sort|100.04|3.2 10<sup>−10</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.9993</span>
+|| 0.0
+|| 0.00067
+<!--|| 0.0 -->
+<!--|| 0.0 -->
+|| 
+|| <ref name="S190521r">{{cite web |title=Superevent info - S190521r |url=https://gracedb.ligo.org/superevents/S190521r/view/ |publisher=LIGO |accessdate=21 May 2019}}</ref>
+|-
+||S190602aq
+|BGCOLOR="#f0fff0"| 2019-06-02<br />17:59:27
+<!--|| 2019-06-02 -->
+|| <center>1172</center>
+|| <center>{{val|797|238}}</center>
+|| H,L,V
+|| {{sort|16.673|1.9 10<sup>−9</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.990</span>
+|| 0.0
+|| 0.0097
+<!--|| 0.0 -->
+<!--|| 0.0 -->
+|| 
+|| <ref name="S190602aq">{{cite web |title=Superevent info - S190602aq |url=https://gracedb.ligo.org/superevents/S190602aq/view/ |publisher=LIGO |accessdate=2 June 2019}}</ref>
+|-
+||S190630ag
+|BGCOLOR="#f0fff0"| 2019-06-30<br />18:52:05
+<!--|| 2019-06-30 -->
+|| <center>1483</center>
+|| <center>{{val|926|259}}</center>
+|| L,V
+|| {{sort|220770|1.4 10<sup>−13</sup>}}
+|| 0.0
+|| 0.0052
+|bgcolor="888888"| <span style="color:white;">0.943</span>
+|| 0.052
+|| 1.8e−7
+<!--|| 0.0 -->
+<!--|| 0.0 -->
+||
+|| <ref name="S190630ag">{{cite web |title=Superevent info - S190630ag |url=https://gracedb.ligo.org/superevents/S190630ag/view/ |publisher=LIGO |accessdate=30 June 2019}}</ref>
+|-
+||S190701ah
+|BGCOLOR="#f0fff0"| 2019-07-01 20:33:45
+<!--|| 2019-07-01 -->
+|| <center>49; towards [[Eridanus (constellation)|Eridanus]] or [[Cetus]]</center>
+|| <center>{{val|1849|446}}</center>
+|| H,L,V
+|| {{sort|1.6543|1.9 10<sup>−8</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.934</span>
+|| 0.0
+|| 0.066
+<!--|| 0.0 -->
+<!--|| 0.0 -->
+|| 
+|| <ref name="S190701ah">{{cite web |title=Superevent info - S190701ah |url=https://gracedb.ligo.org/superevents/S190701ah/view/ |publisher=LIGO |accessdate=1 July 2019}}</ref>
+|-
+||S190706ai
+|BGCOLOR="#f0fff0"| 2019-07-06 22:26:57
+<!--|| 2019-07-06 -->
+|| <center>826</center>
+|| <center>{{val|5263|1402}}</center>
+|| H,L,V
+|| {{sort|16.673|1.9 10<sup>−9</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.990</span>
+|| 0.0
+|| 0.010
+<!--|| 0.0 -->
+<!--|| 0.0 -->
+|| 
+|| <ref name="S190706ai">{{cite web |title=Superevent info - S190706ai |url=https://gracedb.ligo.org/superevents/S190706ai/view/ |publisher=LIGO |accessdate=8 July 2019}}</ref>
+|-
+||S190707q
+|BGCOLOR="#f0fff0"| 2019-07-07 09:33:44
+<!--|| 2019-07-07 -->
+|| <center>921</center>
+|| <center>{{val|781|211}}</center>
+|| H,L
+|| {{sort|6018.9|5.3 10<sup>−12</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.999989</span>
+|| 0.0
+|| 0.000011
+<!--|| 0.0 -->
+<!--|| 0.0 -->
+|| 
+|| <ref name="S190707q">{{cite web |title=Superevent info - S190707q |url=https://gracedb.ligo.org/superevents/S190707q/view/ |publisher=LIGO |accessdate=8 July 2019}}</ref>
+|-
+||S190718y
+|BGCOLOR="#f0fff0"| 2019-07-18 14:35:12
+<!--|| 2019-07-18 -->
+|| <center>7246</center>
+|| <center>{{val|227|165}}</center>
+|| H,L,V
+|| {{sort|0.86851|3.6 10<sup>−8</sup>}}
+|| 0.022
+|| 0.0
+|| 0.0
+|| 0.0
+|bgcolor="FFEEEE"| 0.979
+<!--|| 0.0 -->
+<!--|| 0.0 -->
+|| Estimated to have a 98% chance to be terrestrial noise, despite passing data quality checks.
+|| <ref name="S190718y">{{cite web |title=Superevent info - S190718y |url=https://gracedb.ligo.org/superevents/S190718y/view/ |publisher=LIGO |accessdate=18 July 2019}}</ref>
+|-
+||S190720a
+|BGCOLOR="#f0fff0"| 2019-07-20 00:08:53
+<!--|| 2019-07-20 -->
+|| <center>443; mostly towards [[Cygnus (constellation)|Cygnus]]</center>
+|| <center>{{val|869|283}}</center>
+|| H,L
+|| {{sort|8.3367|3.8 10<sup>−9</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.989</span>
+|| 0.0
+|| 0.011
+|| Initially reported with a 71% chance of being terrestrial "noise" [non-cosmological in origin], upgraded to 1% after preliminary Virgo detector signal path inconsistency found to be insignificant.
+|| <ref name="S190720a">{{cite web |title=Superevent info - S190720a |url=https://gracedb.ligo.org/superevents/S190720a/view/ |publisher=LIGO |accessdate=20 July 2019}}</ref>
+|-
+||S190727h
+|BGCOLOR="#f0fff0"| 2019-07-27 06:03:51
+<!--|| 2019-07-27 -->
+|| <center>151; towards [[Cassiopeia (constellation)|Cassiopeia]], [[Andromeda (constellation)|Andromeda]] or [[Carina (constellation)|Carina]]</center>
+|| <center>{{val|2839|655}}</center>
+|| H,L,V
+|| {{sort|229.92|1.4 10<sup>−10</sup>}}
+|| 0.0
+|| 0.0018
+|bgcolor="888888"| <span style="color:white;">0.922</span>
+|| 0.028
+|| 0.048
+|| 
+|| <ref name="S190727h">{{cite web |title=Superevent info - S190727h |url=https://gracedb.ligo.org/superevents/S190727h/view/ |publisher=LIGO |accessdate=13 August 2019}}</ref>
+|-
+||S190728q
+|BGCOLOR="#f0fff0"| 2019-07-28 06:45:27
+<!--|| 2019-07-28 -->
+|| <center>104; towards [[Delphinus]], [[Pegasus (constellation)|Pegasus]], or [[Equuleus]]</center>
+|| <center>{{val|874|171}}</center>
+|| H,L,V
+|| {{sort|1254100000000000|2.5 10<sup>−23</sup>}}
+|| 0.0
+|| 0.144
+|| 0.340
+|bgcolor=EEBBBB| 0.516
+|| 3.6e-13
+|| Updated from an initial estimate which gave 14.4% NS/BH, 34.0% BH/BH, 51.6% mass gap, and a later estimate which gave a virtually certain BH/BH merger.
+|| <ref name="S190728q">{{cite web |title=Superevent info - S190728q |url=https://gracedb.ligo.org/superevents/S190728q/view/ |publisher=LIGO |accessdate=13 August 2019}}</ref>
+|-
+||S190828j
+|BGCOLOR="#f0fff0"| 2019-08-28 06:34:05
+<!--|| 2019-08-28 -->
+|| <center>228; towards [[Hydra (constellation)|Hydra]], [[Pyxis]], [[Antlia]], [[Vela (constellation)|Vela]], [[Lacerta]], or [[Cygnus (constellation)|Cygnus]]</center>
+|| <center>{{val|1946|388}}</center>
+|| H,L,V
+|| {{sort|37395000000000|8.5 10<sup>−22</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">{{sort|1.0|~1.0}}</span>
+|| 0.0
+|| 3.8e-14
+|| 
+|| <ref name="S190818j">{{cite web |title=Superevent info - S190818j|url=https://gracedb.ligo.org/superevents/S190828j/view/ |publisher=LIGO |accessdate=28 August 2019}}</ref>
+|-
+||S190828l
+|BGCOLOR="#f0fff0"| 2019-08-28 06:55:09
+<!--|| 2019-08-28 -->
+|| <center>359; towards [[Pyxis]], [[Vela (constellation)|Vela]], [[Carina (constellation)|Carina]], or [[Musca]]</center>
+|| <center>{{val|1528|387}}</center>
+|| H,L,V
+|| {{sort|684.54|4.6 10<sup>−11</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.9996</span>
+|| 0.0
+|| 0.00041
+|| 
+|| <ref name="S190818l">{{cite web |title=Superevent info - S190818l|url=https://gracedb.ligo.org/superevents/S190828l/view/ |publisher=LIGO |accessdate=28 August 2019}}</ref>
+|-
+|| S190901ap
+|BGCOLOR="#f0fff0"| 2019-09-01<br />23:31:01
+<!--|| 2019-04-25 -->
+|| <center>14753</center>
+|| <center>{{val|241|79}}</center>
+|| L,V
+|| {{sort|4.5093|7.0 10<sup>−9</sup>}}
+|bgcolor=AADDDD| 0.861
+|| 0.0
+|| 0.0
+|| 0.0
+|| 0.139
+|| 
+|| <ref name="S190901ap">{{cite web |title=Superevent info - S190901ap |url=https://gracedb.ligo.org/superevents/S190901ap/view/ |publisher=LIGO |accessdate=6 September 2019}}</ref>
+|-
+|| S190910d
+|BGCOLOR="#f0fff0"| 2019-09-10<br />01:26:19
+<!--|| 2019-09-10 -->
+|| <center>2482</center>
+|| <center>{{val|632|186}}</center>
+|| H,L
+|| {{sort|8.5248|3.7 10<sup>−9</sup>}}
+|| 0.0
+|bgcolor=B0C0C0| 0.976
+|| 0.0
+|| 0.0
+|| 0.024
+||
+|| <ref name="S190910d">{{cite web |title=Superevent info - S190910d |url=https://gracedb.ligo.org/superevents/S190910d/view/ |publisher=LIGO |accessdate=10 September 2019}}</ref>
+|-
+|| S190910h
+|BGCOLOR="#f0fff0"| 2019-09-10<br />08:29:58
+<!--|| 2019-09-10 -->
+|| <center>24264</center>
+|| <center>{{val|230|88}}</center>
+|| L
+|| {{sort|0.88402|3.6 10<sup>−8</sup>}}
+|bgcolor=AADDDD| 0.612
+|| 0.0
+|| 0.0
+|| 0.0
+|| 0.388
+|| Detected by only the Livingston detector, resulting in a bad sky localization.
+|| <ref name="S190910h">{{cite web |title=Superevent info - S190910h |url=https://gracedb.ligo.org/superevents/S190910h/view/ |publisher=LIGO |accessdate=10 September 2019}}</ref>
+|-
+||S190915ak
+|BGCOLOR="#f0fff0"| 2019-09-15 23:57:25
+<!--|| 2019-09-15 -->
+|| <center>318; towards [[Coma Berenices]], [[Canes Venatici]], or [[Ursa Major]]</center>
+|| <center>{{val|1584|381}}</center>
+|| H,L,V
+|| {{sort|32.55|9.7 10<sup>−10</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.995</span>
+|| 0.0
+|| 0.0053
+|| 
+|| <ref name="S190915ak">{{cite web |title=Superevent info - S190915ak|url=https://gracedb.ligo.org/superevents/S190915ak/view/ |publisher=LIGO |accessdate=19 September 2019}}</ref>
+|-
+||S190923y
+|BGCOLOR="#f0fff0"| 2019-09-23 12:55:59
+<!--|| 2019-09-23 -->
+|| <center>2107</center>
+|| <center>{{val|438|133}}</center>
+|| H,L
+|| {{sort|0.66251|4.8 10<sup>−8</sup>}}
+|| 0.0
+|bgcolor=B0C0C0| 0.677
+|| 0.0
+|| 0.0
+|| 0.322
+||
+|| <ref name="S190923y">{{cite web |title=Superevent info - S190923y|url=https://gracedb.ligo.org/superevents/S190923y/view/ |publisher=LIGO |accessdate=24 September 2019}}</ref>
+|-
+||S190924h
+|BGCOLOR="#f0fff0"| 2019-09-24 02:18:46
+<!--|| 2019-09-24 -->
+|| <center>303; towards [[Hydra (constellation)|Hydra]] or [[Cancer (constellation)|Cancer]]</center>
+|| <center>{{val|548|112}}</center>
+|| H,L,V
+|| {{sort|35493000000|8.9 10<sup>−19</sup>}}
+|| 0.0
+|| 0.0
+|| 0.0
+|bgcolor=EEBBBB| {{sort|1.0|~1.0}}
+|| 4.7e-11
+|| The other component of the merger has a 29.7% chance of being a neutron star, and a 70.3% chance of being either a black hole, or another object in the mass gap.
+|| <ref name="S190924h">{{cite web |title=Superevent info - S190924h|url=https://gracedb.ligo.org/superevents/S190924h/view/ |publisher=LIGO |accessdate=24 September 2019}}</ref>
+|-
+||S190930s
+|BGCOLOR="#f0fff0"| 2019-09-30 13:35:41
+<!--|| 2019-09-30 -->
+|| <center>1748</center>
+|| <center>{{val|709|191}}</center>
+|| H,L
+|| {{sort|10.534|3.0 10<sup>−9</sup>}}
+|| 0.0
+|| 0.0
+|| 0.0
+|bgcolor=EEBBBB| 0.951
+|| 0.049
+|| The other component is either a black hole or another object in the mass gap.
+|| <ref name="S190930s">{{cite web |title=Superevent info - S190930s|url=https://gracedb.ligo.org/superevents/S190930s/view/ |publisher=LIGO |accessdate=30 September 2019}}</ref>
+|-
+||S190930t
+|BGCOLOR="#f0fff0"| 2019-09-30 14:34:07
+<!--|| 2019-09-30 -->
+|| <center>24220</center>
+|| <center>{{val|108|38}}</center>
+|| L
+|| {{sort|2.0536|1.5 10<sup>−8</sup>}}
+|| 0.0
+|bgcolor=B0C0C0| 0.743
+|| 0.0
+|| 0.0
+|| 0.257
+|| Detected by only the Livingston detector, resulting in a bad sky localization; last detection of the O3a run.
+|| <ref name="S190930t">{{cite web |title=Superevent info - S190930t|url=https://gracedb.ligo.org/superevents/S190930t/view/ |publisher=LIGO |accessdate=30 September 2019}}</ref>
+|-
+||S191105e
+|BGCOLOR="#f0fff0"| 2019-11-05 14:35:21
+<!--|| 2019-11-05 -->
+|| <center>643</center>
+|| <center>{{val|1183|281}}</center>
+|| H,L,V
+|| {{sort|1.3881|2.3 10<sup>−8</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.953</span>
+|| 0.0
+|| 0.047
+|| First detection of the O3b run.
+|| <ref name="S191105e">{{cite web |title=Superevent info - S191105e|url=https://gracedb.ligo.org/superevents/S191105e/view/ |publisher=LIGO |accessdate=5 November 2019}}</ref>
+|-
+||S191109d
+|BGCOLOR="#f0fff0"| 2019-11-09 01:07:17
+<!--|| 2019-11-09 -->
+|| <center>1487</center>
+|| <center>{{val|1810|604}}</center>
+|| H,L
+|| {{sort|206200|1.5 10<sup>−13</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.9999978</span>
+|| 0.0
+|| 0.0000022
+||
+|| <ref name="S191109d">{{cite web |title=Superevent info - S191109d|url=https://gracedb.ligo.org/superevents/S191109d/view/ |publisher=LIGO |accessdate=9 November 2019}}</ref>
+|-
+||S191129u
+|BGCOLOR="#f0fff0"| 2019-11-29 13:40:29
+<!--|| 2019-11-29 -->
+|| <center>852</center>
+|| <center>{{val|742|180}}</center>
+|| H,L
+|| {{sort|1195800000000000000000000000|2.7 10<sup>−35</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">{{sort|1.0|~1.0}}</span>
+|| 0.0
+|| 1.2e-27
+||
+|| <ref name="S191129u">{{cite web |title=Superevent info - S191129u|url=https://gracedb.ligo.org/superevents/S191129u/view/ |publisher=LIGO |accessdate=8 December 2019}}</ref>
+|-
+||S191204r
+|BGCOLOR="#f0fff0"| 2019-12-04 17:15:25
+<!--|| 2019-12-04 -->
+|| <center>103; towards [[Pictor]], [[Caelum]], or [[Eridanus (constellation)|Eridanus]]</center>
+|| <center>{{val|678|149}}</center>
+|| H,L,V
+|| {{sort|103240000000000000|3.1 10<sup>−25</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">{{sort|1.0|~1.0}}</span>
+|| 0.0
+|| 8.7e-18
+||
+|| <ref name="S191204r">{{cite web |title=Superevent info - S191204r|url=https://gracedb.ligo.org/superevents/S191204r/view/ |publisher=LIGO |accessdate=4 December 2019}}</ref>
+|-
+||S191205ah
+|BGCOLOR="#f0fff0"| 2019-12-05 21:52:08
+<!--|| 2019-12-05 -->
+|| <center>6378</center>
+|| <center>{{val|385|164}}</center>
+|| H,L,V
+|| {{sort|2.5383|1.2 10<sup>−8</sup>}}
+|| 0.0
+|bgcolor=B0C0C0| 0.932
+|| 0.0
+|| 0.0
+|| 0.068
+||
+|| <ref name="S191205ah">{{cite web |title=Superevent info - S191205ah|url=https://gracedb.ligo.org/superevents/S191205ah/view/ |publisher=LIGO |accessdate=5 December 2019}}</ref>
+|-
+||S191213g
+|BGCOLOR="#f0fff0"| 2019-12-13 04:34:08
+<!--|| 2019-12-13 -->
+|| <center>4480</center>
+|| <center>{{val|201|81}}</center>
+|| H,L,V
+|| {{sort|0.89310|3.5 10<sup>−8</sup>}}
+|bgcolor=AADDDD| 0.768
+|| 0.0
+|| 0.0
+|| 0.0
+|| 0.232
+||
+|| <ref name="S191213g">{{cite web |title=Superevent info - S191213g|url=https://gracedb.ligo.org/superevents/S191213g/view/ |publisher=LIGO |accessdate=14 December 2019}}</ref>
+|-
+||S191215w
+|BGCOLOR="#f0fff0"| 2019-12-15 22:30:52
+<!--|| 2019-12-15 -->
+|| <center>361; towards [[Canis Major]], [[Puppis]], [[Vela (constellation)|Vela]], [[Carina (constellation)|Carina]], [[Equuleus]], [[Pegasus (constellation)|Pegasus]], or [[Lacerta]]</center>
+|| <center>{{val|1770|455}}</center>
+|| H,L,V
+|| {{sort|31.485|1.0 10<sup>−9</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.997</span>
+|| 0.0
+|| 0.0028
+||
+|| <ref name="S191215w">{{cite web |title=Superevent info - S191215w|url=https://gracedb.ligo.org/superevents/S191215w/view/ |publisher=LIGO |accessdate=23 December 2019}}</ref>
+|-
+||S191216ap
+|BGCOLOR="#f0fff0"| 2019-12-16 21:33:38
+<!--|| 2019-12-16 -->
+|| <center>253; towards [[Capricornus]], [[Aquarius (constellation)|Aquarius]], [[Pegasus (constellation)|Pegasus]], [[Vulpecula]], or [[Cygnus (constellation)|Cygnus]]</center>
+|| <center>{{val|376|70}}</center>
+|| H,V
+|| {{sort|2803500000000000|1.1 10<sup>−23</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.9907</span>
+|| 0.0093
+|| 8.4e-16
+|| Initially reported to have a ~100% chance of having a component in the mass gap.
+|| <ref name="S191216ap">{{cite web |title=Superevent info - S191216ap|url=https://gracedb.ligo.org/superevents/S191216ap/view/ |publisher=LIGO |accessdate=25 December 2019}}</ref>
+|-
+||S191222n
+|BGCOLOR="#f0fff0"| 2019-12-22 03:35:37
+<!--|| 2019-12-22 -->
+|| <center>2324</center>
+|| <center>{{val|868|265}}</center>
+|| H,L
+|| {{sort|4906|6.5 10<sup>−12</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.999962</span>
+|| 0.0
+|| 0.000038
+||
+|| <ref name="S191222n">{{cite web |title=Superevent info - S191222n|url=https://gracedb.ligo.org/superevents/S191222n/view/ |publisher=LIGO |accessdate=22 December 2019}}</ref>
+|-
+||S200105ae
+|BGCOLOR="#f0fff0"| 2020-01-05 16:24:26
+<!--|| 2020-01-05 -->
+|| <center>7373</center>
+|| <center>{{val|283|74}}</center>
+|| L,V
+|| {{sort|0.0413|7.7 10<sup>−7</sup>}}
+|| 0.0
+|| 0.027
+|| 0.0
+|| 0.0
+|bgcolor="FFEEEE"| 0.973
+|| Estimated to have a 97% chance to be terrestrial noise, despite passing data quality checks.
+|| <ref name="S200105ae">{{cite web |title=Superevent info - S200105ae|url=https://gracedb.ligo.org/superevents/S200105ae/view/ |publisher=LIGO |accessdate=6 January 2020}}</ref>
+|-
+||S200112r
+|BGCOLOR="#f0fff0"| 2020-01-12 15:58:38
+<!--|| 2020-01-12 -->
+|| <center>4004</center>
+|| <center>{{val|1125|289}}</center>
+|| L,V
+|| {{sort|2469.9|1.3 10<sup>−11</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.99966</span>
+|| 0.0
+|| 0.00034
+||
+|| <ref name="S200112r">{{cite web |title=Superevent info - S200112r|url=https://gracedb.ligo.org/superevents/S200112r/view/ |publisher=LIGO |accessdate=12 January 2020}}</ref>
+|-
+||S200114f
+|BGCOLOR="#f0fff0"| 2020-01-14 02:08:18
+<!--|| 2020-01-14 -->
+|| <center>403; towards [[Gemini (constellation)|Gemini]], [[Orion (constellation)|Orion]], or [[Eridanus (constellation)|Eridanus]]</center>
+|| <center>?</center>
+|| H,L,V
+|| {{sort|25.838|1.2 10<sup>−9</sup>}}
+|BGCOLOR="#ffaaff"| 0.0
+|BGCOLOR="#ffaaff"| 0.0
+|BGCOLOR="#ffaaff"| 0.0
+|BGCOLOR="#ffaaff"| 0.0
+|BGCOLOR="#ffaaff"| {{sort|-1|?}}
+|| Unidentified gravitational wave "burst" lasting 0.014 seconds at a frequency of tens of Hertz.
+|| <ref name="S200114f">{{cite web |title=Superevent info - S200114f|url=https://gracedb.ligo.org/superevents/S200114f/view/ |publisher=LIGO |accessdate=14 January 2020}}</ref>
+|-
+||S200115j
+|BGCOLOR="#f0fff0"| 2020-01-15 04:23:09
+<!--|| 2020-01-15 -->
+|| <center>908</center>
+|| <center>{{val|331|97}}</center>
+|| H,L,V
+|| {{sort|1513|2.1 10<sup>−11</sup>}}
+|| 0.0
+|| 0.0
+|| 0.0
+|bgcolor=EEBBBB| 0.99971
+|| 0.00029
+|| The other component is a neutron star.
+|| <ref name="S200115j">{{cite web |title=Superevent info - S200115j|url=https://gracedb.ligo.org/superevents/S200115j/view/ |publisher=LIGO |accessdate=15 January 2020}}</ref>
+|-
+||S200128d
+|BGCOLOR="#f0fff0"| 2020-01-28 02:20:36
+<!--|| 2020-01-28 -->
+|| <center>2293</center>
+|| <center>{{val|3702|1265}}</center>
+|| H,L
+|| {{sort|1.9238|1.6 10<sup>−8</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.969</span>
+|| 0.0
+|| 0.031
+|| 
+|| <ref name="S200128d">{{cite web |title=Superevent info - S200128d|url=https://gracedb.ligo.org/superevents/S200128d/view/ |publisher=LIGO |accessdate=28 January 2020}}</ref>
+|-
+||S200129m
+|BGCOLOR="#f0fff0"| 2020-01-29 06:54:58
+<!--|| 2020-01-29 -->
+|| <center>41; towards [[Equuleus]], [[Delphinus]], or [[Vulpecula]]</center>
+|| <center>{{val|755|194}}</center>
+|| H,L,V
+|| {{sort|473130000000000000000000|6.7 10<sup>−32</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">{{sort|1.0|~1.0}}</span>
+|| 0.0
+|| 2.0e-24
+|| 
+|| <ref name="S200129m">{{cite web |title=Superevent info - S200129m|url=https://gracedb.ligo.org/superevents/S200129m/view/ |publisher=LIGO |accessdate=29 January 2020}}</ref>
+|-
+||S200208q
+|BGCOLOR="#f0fff0"| 2020-02-08 13:01:17
+<!--|| 2020-02-08 -->
+|| <center>26; towards [[Pyxis (Constellation)|Pyxis]] or [[Antlia]]</center>
+|| <center>{{val|2142|459}}</center>
+|| H,L,V
+|| {{sort|12.587|2.5 10<sup>−9</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.9936</span>
+|| 0.0
+|| 0.0066
+|| 
+|| <ref name="S200208q">{{cite web |title=Superevent info - S200208q|url=https://gracedb.ligo.org/superevents/S200208q/view/ |publisher=LIGO |accessdate=8 February 2020}}</ref>
+|-
+||S200213t
+|BGCOLOR="#f0fff0"| 2020-02-13 04:10:40
+<!--|| 2020-02-13 -->
+|| <center>2326</center>
+|| <center>{{val|201|80}}</center>
+|| H,L,V
+|| {{sort|1.7934|1.8 10<sup>−8</sup>}}
+|bgcolor=AADDDD| 0.629
+|| 0.0
+|| 0.0
+|| 0.0
+|| 0.371
+|| 
+|| <ref name="S200213t">{{cite web |title=Superevent info - S200213t|url=https://gracedb.ligo.org/superevents/S200213t/view/ |publisher=LIGO |accessdate=13 February 2020}}</ref>
+|-
+||S200219ac
+|BGCOLOR="#f0fff0"| 2020-02-19 09:44:15
+<!--|| 2020-02-19 -->
+|| <center>1251</center>
+|| <center>{{val|1510|405}}</center>
+|| H,L,V
+|| {{sort|2.3819|1.3 10<sup>−8</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.964</span>
+|| 0.0
+|| 0.036
+|| 
+|| <ref name="S200219ac">{{cite web |title=Superevent info - S200219ac|url=https://gracedb.ligo.org/superevents/S200219ac/view/ |publisher=LIGO |accessdate=19 February 2020}}</ref>
+|-
+||S200224ca
+|BGCOLOR="#f0fff0"| 2020-02-24 22:22:34
+<!--|| 2020-02-24 -->
+|| <center>71; towards [[Virgo (constellation)|Virgo]] or [[Crater (constellation)|Crater]]</center>
+|| <center>{{val|1585|331}}</center>
+|| H,L,V
+|| {{sort|1974.3|1.6 10<sup>−11</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.999966</span>
+|| 0.0
+|| 0.000034
+|| 
+|| <ref name="S200224ca">{{cite web |title=Superevent info - S200224ca|url=https://gracedb.ligo.org/superevents/S200224ca/view/ |publisher=LIGO |accessdate=25 February 2020}}</ref>
+|-
+||S200225q
+|BGCOLOR="#f0fff0"| 2020-02-25 06:04:21
+<!--|| 2020-02-25 -->
+|| <center>22; towards [[Ursa Minor]] or [[Cepheus (constellation)|Cepheus]]</center>
+|| <center>{{val|995|188}}</center>
+|| H,L
+|| {{sort|3.4497|9.2 10<sup>−9</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.957</span>
+|| 0.0
+|| 0.043
+|| 
+|| <ref name="S200225q">{{cite web |title=Superevent info - S200225q|url=https://gracedb.ligo.org/superevents/S200225q/view/ |publisher=LIGO |accessdate=26 February 2020}}</ref>
+|-
+||S200302c
+|BGCOLOR="#f0fff0"| 2020-03-02 01:58:11
+<!--|| 2020-03-02 -->
+|| <center>6704</center>
+|| <center>{{val|1737|500}}</center>
+|| H,V
+|| {{sort|3.3894|9.3 10<sup>−9</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">0.890</span>
+|| 0.0
+|| 0.110
+|| 
+|| <ref name="S200302c">{{cite web |title=Superevent info - S200302c|url=https://gracedb.ligo.org/superevents/S200302c/view/ |publisher=LIGO |accessdate=2 March 2020}}</ref>
+|-
+||S200311bg
+|BGCOLOR="#f0fff0"| 2020-03-11 11:58:53
+<!--|| 2020-03-11 -->
+|| <center>34; towards [[Cetus]]</center>
+|| <center>{{val|1115|175}}</center>
+|| H,L,V
+|| {{sort|354480000000000000|8.9 10<sup>−26</sup>}}
+|| 0.0
+|| 0.0
+|bgcolor="888888"| <span style="color:white;">{{sort|1.0|~1.0}}</span>
+|| 0.0
+|| 4.0e-17
+|| 
+|| <ref name="S200311bg">{{cite web |title=Superevent info - S200311bg|url=https://gracedb.ligo.org/superevents/S200311bg/view/ |publisher=LIGO |accessdate=11 March 2020}}</ref>
+|-
+||S200316bj
+|BGCOLOR="#f0fff0"| 2020-03-16 21:57:56
+<!--|| 2020-03-16 -->
+|| <center>1117</center>
+|| <center>{{val|1222|340}}</center>
+|| H,L,V
+|| {{sort|446.44|7.1 10<sup>−11</sup>}}
+|| 0.0
+|| 0.0
+|| 0.0
+|bgcolor=EEBBBB| 0.9957
+|| 0.0043
+|| The other component is a black hole.
+|| <ref name="S200316bj">{{cite web |title=Superevent info - S200316bj|url=https://gracedb.ligo.org/superevents/S200316bj/view/ |publisher=LIGO |accessdate=17 March 2020}}</ref>
+|}
+
+==See also==
+* [[GRB 150101B]], a weak gamma ray burst trigger observed prior to aLIGO O1 (beginning September 12, 2015), with claimed similarities to model-supported possible neutron star merger [[GW170817]]/[[GRB 170817A]]/[[AT2017gfo]].
+
+==Notes==
+{{reflist|group=n}}
+
+==References==
+{{reflist}}
+
+==External links==
+* {{cite web | url = http://ligo.org/detections.php | title = Detections | publisher = LIGO }}
+* {{youtube|gmmD72cFOU4|Video (3:10): LIGO Orrey (1 Dec 2018)}}
+{{Gravitational waves}}
+{{portal bar|Astronomy|Physics}}
+
+[[Category:Gravitational waves|*List]]
+[[Category:Physics-related lists|Gravitational waves]]
+[[Category:Astronomy-related lists|Gravitational waves]]
+[[Category:Observational astronomy]]
+[[Category:Binary systems]]

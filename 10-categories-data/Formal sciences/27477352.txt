@@ -1,0 +1,60 @@
+The '''Common Weakness Enumeration''' (CWE) is a category system for software weaknesses and vulnerabilities. It is sustained by a community project with the goals of understanding flaws in software and creating automated tools that can be used to identify, fix, and prevent those flaws.<ref>{{cite web |url=http://cwe.mitre.org/about/index.html |title=CWE - About CWE|publisher=at mitre.org}}</ref>  The project is sponsored by the [[National Cybersecurity FFRDC]], which is operated by [[Mitre Corporation|The MITRE Corporation]], with support from [[US-CERT]] and the [[National Cyber Security Division]] of the U.S. Department of Homeland Security.<ref>[https://nvd.nist.gov/vuln/categories National Vulnerabilities Database CWE Slice] at nist.gov</ref>
+
+Version 3.2 of the CWE standard was released in January 2019.<ref>{{cite web|url=https://cwe.mitre.org/news/index.html#jan032019_CWE_Version_3.2_Now_Available|title=CWE News|publisher=at mitre.org}}</ref>
+
+CWE has over 600 categories, including classes for buffer overflows, path/directory tree traversal errors, race conditions, [[cross-site scripting]], hard-coded passwords, and insecure random numbers.<ref name=samate>[https://samate.nist.gov/BF/Enlightenment/CWE.html The Bugs Framework (BF) / Common Weakness Enumeration (CWE)] at nist.gov</ref>
+
+== Examples ==
+* CWE category 121 is for stack-based buffer overflows.<ref>[http://cwe.mitre.org/data/definitions/121.html CWE-121: Stack-based Buffer Overflows]</ref>
+
+== CWE compatibility ==
+Common Weakness Enumeration (CWE) Compatibility program allows a service or a product to be reviewed and registered as officially "CWE-Compatible" and "CWE-Effective". The program assists organizations in selecting the right software tools and learning about possible weaknesses and their possible impact.
+
+In order to obtain CWE Compatible status a product or a service must meet 4 out of 6 requirements, shown below:
+
+{| class="wikitable"
+|-
+| '''CWE Searchable'''
+| users may search security elements using CWE identifiers
+|-
+| '''CWE Output'''
+| security elements presented to users includes, or allows users to obtain, associated CWE identifiers
+|-
+| '''Mapping Accuracy'''
+| security elements accurately link to the appropriate CWE identifiers
+|-
+| '''CWE Documentation'''
+| capability's documentation describes CWE, CWE compatibility, and how CWE-related functionality in the capability is used
+|-
+| '''CWE Coverage'''
+| for CWE-Compatibility and CWE-Effectiveness, the capability's documentation explicitly lists the CWE-IDs that the capability claims coverage and effectiveness against locating in software
+|-
+| '''CWE Test Results'''
+| for CWE-Effectiveness, test results from the capability showing the results of assessing software for the CWEs are posted on the CWE Web site
+|}
+
+There are 56 organizations as of September 2019 that develop and maintain products and services that achieved CWE Compatible status.<ref>{{cite web |url=https://cwe.mitre.org/compatible/compatible.html |title=CWE - CWE-Compatible Products and Services|publisher=at mitre.org}}</ref>
+
+== Research, critiques, and new developments ==
+Some researchers think that ambiguities in CWE can be avoided or reduced.<ref>Paul E. Black, Irena V. Bojanova, Yaacov Yesha, Yan Wu. 2015. [https://www.nist.gov/publications/towards-147periodic-table148-bugs Towards a “Periodic Table” of Bugs]</ref>
+
+== See also ==
+*[[Common Vulnerabilities and Exposures]] (CVE)
+*[[Common Vulnerability Scoring System]] (CVSS)
+*[[National Vulnerability Database]]
+
+== References==
+{{reflist}}
+
+==External links==
+* [http://www.omg.org/news/meetings/workshops/SWA_2007_Presentations/02-1_Martin_revised.pdf Certifying Applications for Known Security Weaknesses. The Common Weakness Enumeration (CWE) Effort] // 6 March 2007
+* {{cite web |url=http://homes.cerias.purdue.edu/~pmeunier/aboutme/classes_vulnerabilities.pdf |title=Classes of Vulnerabilities and Attacks |work=Wiley Handbook of Science and Technology for Homeland Security |others=comparison of different vulnerability Classifications |archive-url=https://web.archive.org/web/20160322061614/http://homes.cerias.purdue.edu/~pmeunier/aboutme/classes_vulnerabilities.pdf |archive-date=2016-03-22 |url-status=dead |df= }}
+
+{{MITRE security ontologies}}
+
+[[Category:Software anomalies]]
+[[Category:Computer standards]]
+[[Category:Computer network security]]
+[[Category:Web security exploits]]
+[[Category:Computer security organizations]]
+[[Category:Classification systems]]

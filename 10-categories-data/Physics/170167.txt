@@ -1,0 +1,273 @@
+{{distinguish|Maxwell–Boltzmann distribution}}
+{{Short description|Statistical distribution used in many-particle mechanics}}{{Use American English|date=January 2019}}{{Statistical mechanics|cTopic=[[Particle statistics|Particle Statistics]]}}
+[[Image:Maxwell-Boltzmann distribution 1.png|thumb|300px|Maxwell–Boltzmann statistics can be used to derive the [[Maxwell–Boltzmann distribution]] of particle speeds in an [[ideal gas]]. Shown: distribution of particle speed for 10<sup>6</sup> oxygen particles at  -100, 20 and 600&nbsp;°C.]]
+In [[statistical mechanics]], '''Maxwell–Boltzmann statistics''' describes the average distribution of non-interacting material particles over various energy states in [[thermal equilibrium]], and is applicable when the temperature is high enough or the particle density is low enough to render quantum effects negligible.
+
+The expected [[number of particles]] with energy <math>\varepsilon_i</math> for Maxwell–Boltzmann statistics is
+
+:<math>
+\langle N_i \rangle = \frac {g_i} {e^{(\varepsilon_i - \mu)/kT}} = \frac{N}{Z}\,g_i e^{-\varepsilon_i/kT},
+</math>
+where:
+*<math>\varepsilon_i</math> is the energy of the ''i''-th [[energy]] level,
+*<math>\langle N_i \rangle</math> is the average number of particles in the set of states with energy <math>\varepsilon_i</math>,
+*<math>g_i</math> is the [[Degenerate energy level|degeneracy]] of energy level ''i'', that is, the number of states with energy <math>\varepsilon_i</math> which may nevertheless be distinguished from each other by some other means,<ref group="nb">For example, two simple point particles may have the same energy, but different momentum vectors. They may be distinguished from each other on this basis, and the degeneracy will be the number of possible ways that they can be so distinguished.</ref>
+*μ is the [[chemical potential]],
+*''k'' is [[Boltzmann's constant]],
+*''T'' is absolute [[temperature]],
+*''N'' is the total number of particles:
+::<math>N = \sum_i N_i</math>,
+*''Z'' is the [[Partition function (statistical mechanics)|partition function]]:
+::<math>Z = \sum_i g_i e^{-\varepsilon_i/kT},</math>
+*''e''<sup>(...)</sup> is the [[exponential function]].
+
+Equivalently, the number of particles is sometimes expressed as
+
+:<math>
+\langle N_i \rangle = \frac {1} {e^{(\varepsilon_i - \mu)/kT}} = \frac{N}{Z}\,e^{-\varepsilon_i/kT},
+</math>
+
+where the index ''i'' now specifies a particular state rather than the set of all states with energy <math>\varepsilon_i</math>, and <math>Z = \sum_i e^{-\varepsilon_i/kT}</math>.
+
+==Applications==
+
+Maxwell–Boltzmann statistics may be used to derive the [[Maxwell–Boltzmann distribution]] (for an ideal gas of classical particles in a three-dimensional box). However, they apply to other situations as well. Maxwell–Boltzmann statistics can be used to extend that distribution to particles with a different [[energy–momentum relation]], such as relativistic particles ([[Maxwell–Jüttner distribution]]). In addition, hypothetical situations can be considered, such as particles in a box with different numbers of dimensions (four-dimensional, two-dimensional, etc.)
+
+==Limits of applicability==
+
+Maxwell–Boltzmann statistics are often described as the statistics of "distinguishable" classical particles. In other words, the configuration of particle ''A'' in state 1 and particle ''B'' in state 2 is different from the case in which particle ''B'' is in state 1 and particle ''A'' is in state 2. This assumption leads to the proper (Boltzmann) statistics of particles in the energy states, but yields non-physical results for the entropy, as embodied in the [[Gibbs paradox]].
+
+At the same time, there are no real particles which have the characteristics required by Maxwell–Boltzmann statistics. Indeed, the Gibbs paradox is resolved if we treat all particles of a certain type (e.g., electrons, protons, etc.) as indistinguishable, and this assumption can be justified in the context of quantum mechanics. Once this assumption is made, the particle statistics change.
+Quantum particles are either bosons (following instead [[Bose–Einstein statistics]]) or fermions (subject to the [[Pauli exclusion principle]], following instead [[Fermi–Dirac statistics]]). Both of these quantum statistics approach the Maxwell–Boltzmann statistics in the limit of high temperature and low particle density, without the need for any ad hoc assumptions. The Fermi–Dirac and Bose–Einstein statistics give the energy level occupation as:
+:<math>
+\langle N_i \rangle = \frac{g_i}{e^{(\varepsilon_i-\mu)/kT}\pm 1}.
+</math>
+It can be seen that the condition under which the Maxwell–Boltzmann statistics are valid is when
+:<math>e^{(\varepsilon_{\rm min}-\mu)/kT} \gg 1, </math>
+
+where <math>\varepsilon_{\rm min}</math> is the lowest (minimum) value of <math>\varepsilon_i</math>.
+
+* In the limit of low particle density, <math>
+\langle N_i \rangle = \frac{1}{e^{(\varepsilon_i-\mu)/k_{\rm B}T}\pm 1} \ll 1
+</math>, therefore <math>
+e^{(\varepsilon_i-\mu)/k_{\rm B}T} \pm 1 \gg 1
+</math> or equivalently <math>
+e^{(\varepsilon_i-\mu)/k_{\rm B}T} \gg 1
+</math>.
+* In the limit of high temperature, the particles are distributed over a large range of energy values, therefore the occupancy on each state is again very small, <math>
+\langle N_i \rangle = \frac{1}{e^{(\varepsilon_i-\mu)/k_{\rm B}T} \pm 1} \ll 1
+</math>. This again gives <math>
+e^{(\varepsilon_i-\mu)/k_{\rm B}T} \gg 1
+</math>.
+
+Maxwell–Boltzmann statistics are particularly useful for studying [[gas]]es that are not very dense. Note, however, that all of these statistics assume that the particles are non-interacting and have static energy states.
+
+== Derivations ==
+
+Maxwell–Boltzmann statistics can be derived in various [[statistical mechanics|statistical mechanical]] thermodynamic ensembles:<ref name="tolman">{{cite book | last=Tolman |first=R. C. | authorlink = Richard C. Tolman | year=1938 | title=The Principles of Statistical Mechanics | publisher=[[Dover Publications]] | isbn = 9780486638966}}</ref>
+* The [[grand canonical ensemble]], exactly.
+* The [[canonical ensemble]], but only in the thermodynamic limit.
+* The [[microcanonical ensemble]], exactly
+In each case it is necessary to assume that the particles are non-interacting, and that multiple particles can occupy the same state and do so independently.
+
+=== Derivation from microcanonical ensemble ===
+{{Technical|section|date=December 2013}}
+Suppose we have a container with a huge number of very small particles all with identical physical characteristics (such as mass, charge, etc.). Let's refer to this as the ''system''. Assume that though the particles have identical properties, they are distinguishable. For example, we might identify each particle by continually observing their trajectories, or by placing a marking on each one, e.g., drawing a different number on each one as is done with [[lottery]] balls.
+
+The particles are moving inside that container in all directions with great speed. Because the particles are speeding around, they possess some energy. The Maxwell–Boltzmann distribution is a mathematical function that describes about how many particles in the container have a certain energy. More precisely, the Maxwell–Boltzmann distribution gives the non-normalized probability that the state corresponding to a particular energy is occupied.
+
+In general, there may be many particles with the same amount of energy <math>\varepsilon</math>. Let the number of particles with the same energy <math>\varepsilon_1</math> be <math>N_1</math>, the number of particles possessing another energy <math>\varepsilon_2</math> be <math>N_2</math>, and so forth for all the possible energies <math>\{ \varepsilon_i\mid i=1,2,3,\ldots\}.</math> To describe this situation, we say that <math>N_i</math> is the ''occupation number'' of the ''energy level'' <math>i.</math> If we know all the occupation numbers <math>\{N_i \mid i=1,2,3,\ldots\},</math> then we know the total energy of the system. However, because we can distinguish between ''which'' particles are occupying each energy level, the set of occupation numbers <math> \{ N_i \mid i=1,2,3,\ldots\}</math> does not completely describe the state of the system. To completely describe the state of the system, or the ''microstate'', we must specify exactly which particles are in each energy level. Thus when we count the number of possible states of the system, we must count each and every microstate, and not just the possible sets of occupation numbers.
+
+To begin with, let's ignore the degeneracy problem: assume that there is only one way to put <math>N_i</math> particles into the energy level <math>i</math>&nbsp;. What follows next is a bit of combinatorial thinking which has little to do in accurately describing the reservoir of particles. For instance, let's say there is a total of <math>k</math> boxes labelled <math>a,b,\ldots,k</math>. With the concept of [[combination]], we could calculate how many ways to arrange <math>N</math> balls into respective ''l''-th box in which there would be <math>N_l</math> balls without an order. To begin with, we select <math>N_a</math> balls from a total of <math>N</math> balls, placing them in box <math>a</math>, and continuing on selection from the remaining until no ball is left outside. The total number of arrangements is
+
+:<math>
+\begin{align}
+W & = \frac{N!}{N_a!(N-N_a)!} \times \frac{(N-N_a)!}{N_b!(N-N_a-N_b)!} \times \frac{(N-N_a-N_b)!}{N_c!(N-N_a-N_b-N_c)!} \times \cdots \times \frac{(N-\cdots-N_\ell)!}{N_k!(N-\cdots-N_\ell-N_k)!} \\[8pt]
+& = \frac{N!}{N_a!N_b!N_c!\cdots N_k!(N-\cdots-N_\ell-N_k)!}
+\end{align}
+</math>
+
+and because not even a single ball is to be left outside the boxes (all balls should be put in boxes), which implies that the sum made of the terms <math>N_a, N_b, \ldots, N_k</math> must equal to <math>N</math>; thus the term <math>(N  - N_a - N_b - \cdots - N_k)!</math> in the relation above evaluates to 0! (0!&nbsp;=&nbsp;1), and we simplify the relation as
+
+:<math>
+W = N!\prod_{\ell=a,b,\ldots}^k \frac{1}{N_\ell!}
+</math>
+
+This is just the [[multinomial coefficient]], the number of ways of arranging ''N'' items into ''k'' boxes, the ''l''-th box holding ''N<sub>l</sub>'' items, ignoring the permutation of items in each box.
+
+Now going back to the degeneracy problem which characterizes the reservoir of particles. If the ''i''-th box has a "degeneracy" of <math>g_i</math>, that is, it has <math>g_i</math> "sub-boxes", such that any way of filling the ''i''-th box where the number in the sub-boxes is changed is a distinct way of filling the box, then the number of ways of filling the ''i''-th box must be increased by the number of ways of distributing the <math>N_i</math> objects in the <math>g_i</math> "sub-boxes". The number of ways of placing <math>N_i</math> distinguishable objects in <math>g_i</math> "sub-boxes" is <math>g_i^{N_i}</math> (the first object can go into any of the <math>g_i</math> boxes, the second object can also go into any of the <math>g_i</math> boxes, and so on). Thus the number of ways <math>W</math> that a total of <math>N</math> particles can be classified into energy levels according to their energies, while each level <math>i</math> having <math>g_i</math> distinct states such that the ''i''-th level accommodates <math>N_i</math> particles is:
+
+:<math>W=N!\prod_{i}\frac{g_i^{N_i}}{N_i!}</math>
+
+This is the form for ''W'' first derived by [[Ludwig Boltzmann|Boltzmann]]. Boltzmann's fundamental equation <math>S=k\,\ln W</math> relates the thermodynamic [[entropy]] ''S'' to the number of microstates ''W'', where ''k'' is the [[Boltzmann constant]]. It was pointed out by [[Josiah Willard Gibbs|Gibbs]] however, that the above expression for ''W'' does not yield an extensive entropy, and is therefore faulty. This problem is known as the [[Gibbs paradox]]. The problem is that the particles considered by the above equation are not [[Identical particles|indistinguishable]]. In other words, for two particles (''A'' and ''B'') in two energy sublevels the population represented by [A,B] is considered distinct from the population [B,A] while for indistinguishable particles, they are not. If we carry out the argument for indistinguishable particles, we are led to the [[Bose–Einstein statistics|Bose–Einstein]] expression for ''W'':
+
+:<math>W=\prod_i \frac{(N_i+g_i-1)!}{N_i!(g_i-1)!}</math>
+
+The Maxwell–Boltzmann distribution follows from this Bose–Einstein distribution for temperatures well above absolute zero, implying that <math>g_i\gg 1</math>. The Maxwell–Boltzmann distribution also requires low density, implying that <math>g_i\gg N_i</math>. Under these conditions, we may use [[Stirling's approximation]] for the factorial:
+
+:<math>
+N! \approx N^N e^{-N},
+</math>
+
+to write:
+
+:<math>W\approx\prod_i \frac{(N_i+g_i)^{N_i+g_i}}{N_i^{N_i}g_i^{g_i}}\approx\prod_i \frac{g_i^{N_i}(1+N_i/g_i)^{g_i}}{N_i^{N_i}}</math>
+
+Using the fact that <math>(1+N_i/g_i)^{g_i}\approx e^{N_i}</math> for <math>g_i\gg N_i</math> we can again use Stirling's approximation to write:
+
+:<math>W\approx\prod_i \frac{g_i^{N_i}}{N_i!}</math>
+
+This is essentially a division by ''N''! of Boltzmann's original expression for ''W'', and this correction is referred to as '''{{visible anchor|correct Boltzmann counting}}'''.
+
+We wish to find the <math>N_i</math> for which the function <math>W</math> is maximized, while considering the constraint that there is a fixed number of particles <math>\left(N=\textstyle\sum N_i\right)</math> and a fixed energy <math>\left(E=\textstyle\sum N_i \varepsilon_i\right)</math> in the container. The maxima of <math>W</math> and <math>\ln(W)</math> are achieved by the same values of <math>N_i</math> and, since it is easier to accomplish mathematically, we will maximize the latter function instead. We constrain our solution using [[Lagrange multipliers]] forming the function:
+
+:<math>
+f(N_1,N_2,\ldots,N_n)=\ln(W)+\alpha(N-\sum N_i)+\beta(E-\sum N_i \varepsilon_i)
+</math>
+
+:<math>
+\ln W=\ln\left[\prod\limits_{i=1}^{n}\frac{g_i^{N_i}}{N_i!}\right] \approx \sum_{i=1}^n\left(N_i\ln g_i-N_i\ln N_i + N_i\right)
+</math>
+
+Finally
+
+:<math>
+f(N_1,N_2,\ldots,N_n)=\alpha N +\beta E + \sum_{i=1}^n\left(N_i\ln g_i-N_i\ln N_i + N_i-(\alpha+\beta\varepsilon_i) N_i\right)
+</math>
+
+In order to maximize the expression above we apply [[Fermat's theorem (stationary points)]], according to which local extrema, if exist, must be at critical points (partial derivatives vanish):
+
+:<math>
+\frac{\partial f}{\partial N_i}=\ln g_i-\ln N_i -(\alpha+\beta\varepsilon_i) = 0
+</math>
+
+By solving the equations above (<math>i=1\ldots n</math>) we arrive to an expression for <math>N_i</math>:
+
+:<math>
+N_i = \frac{g_i}{e^{\alpha+\beta \varepsilon_i}} 
+</math>
+
+Substituting this expression for <math>N_i</math> into the equation for <math>\ln W</math> and assuming that <math>N\gg 1</math> yields:
+
+:<math>\ln W = (\alpha+1) N+\beta E\,</math>
+
+or, rearranging:
+
+:<math>E=\frac{\ln W}{\beta}-\frac{N}{\beta}-\frac{\alpha N}{\beta}</math>
+
+Boltzmann realized that this is just an expression of the [[Thermodynamic equations#Euler integrals|Euler-integrated fundamental equation of thermodynamics]]. Identifying ''E'' as the internal energy, the Euler-integrated fundamental equation states that :
+
+:<math>E=TS-PV+\mu N</math>
+
+where ''T'' is the [[temperature]], ''P'' is pressure, ''V'' is [[volume]], and μ is the [[chemical potential]]. Boltzmann's famous equation <math>S=k\,\ln W</math> is the realization that the entropy is proportional to <math>\ln W</math> with the constant of proportionality being [[Boltzmann's constant]]. Using the ideal gas equation of state (''PV''&nbsp;=&nbsp;''NkT''), It follows immediately that <math>\beta=1/kT</math> and <math>\alpha=-\mu/kT</math> so that the populations may now be written:
+
+:<math>
+N_i = \frac{g_i}{e^{(\varepsilon_i-\mu)/(kT)}} 
+</math>
+
+Note that the above formula is sometimes written:
+
+:<math>
+N_i = \frac{g_i}{e^{\varepsilon_i/kT}/z} 
+</math>
+
+where <math>z=\exp(\mu/kT)</math> is the absolute [[activity (chemistry)|activity]].
+
+Alternatively, we may use the fact that
+
+:<math>\sum_i N_i=N\,</math>
+
+to obtain the population numbers as
+
+:<math>
+N_i = N\frac{g_i e^{-\varepsilon_i/kT}}{Z} 
+</math>
+
+where ''Z'' is the [[Partition function (statistical mechanics)|partition function]] defined by:
+
+:<math>
+Z = \sum_i g_i e^{-\varepsilon_i/kT}
+</math>
+
+In an approximation where ''&epsilon;<sub>i</sub>'' is considered to be a continuous variable, the [[Thomas–Fermi approximation]] yields a continuous degeneracy g proportional to <math>\sqrt{\varepsilon}</math> so that:
+
+:<math>
+\frac{\sqrt{\varepsilon}\,e^{-\varepsilon/k T}}{\int_0^\infty\sqrt{\varepsilon}\,e^{-\varepsilon/k T}}
+</math>
+
+which is just the [[Maxwell–Boltzmann distribution]] for the energy.
+
+=== Derivation from canonical ensemble ===
+{{Technical|section|date=December 2013}}
+In the above discussion, the Boltzmann distribution function was obtained via directly analysing the multiplicities of a system. Alternatively, one can make use of the [[canonical ensemble]]. In a canonical ensemble, a system is in thermal contact with a reservoir.  While energy is free to flow between the system and the reservoir, the reservoir is thought to have infinitely large heat capacity as to maintain constant temperature, ''T'', for the combined system.
+
+In the present context, our system is assumed to have the energy levels <math>\varepsilon _i</math> with degeneracies <math>g_i</math>. As before, we would like to calculate the probability that our system has energy <math>\varepsilon_i</math>.
+
+If our system is in state <math>\; s_1</math>, then there would be a corresponding number of microstates available to the reservoir. Call this number <math>\; \Omega _ R (s_1)</math>. By assumption, the combined system (of the system we are interested in and the reservoir) is isolated, so all microstates are equally probable. Therefore, for instance, if <math> \; \Omega _ R (s_1) = 2 \; \Omega _ R (s_2) </math>, we can conclude that our system is twice as likely to be in state <math>\; s_1</math> than <math>\; s_2</math>. In general, if <math>\; P(s_i)</math> is the probability that our system is in state <math>\; s_i</math>,
+
+:<math>\frac{P(s_1)}{P(s_2)} = \frac{\Omega _ R (s_1)}{\Omega _ R (s_2)}.</math>
+
+Since the [[entropy]] of the reservoir <math>\; S_R = k \ln \Omega _R</math>, the above becomes
+
+:<math>\frac{P(s_1)}{P(s_2)} = \frac{ e^{S_R(s_1)/k} }{ e^{S_R(s_2)/k} } = e^{(S_R (s_1) - S_R (s_2))/k}.</math>
+
+Next we recall the thermodynamic identity (from the [[first law of thermodynamics]]):
+
+:<math>d S_R = \frac{1}{T} (d U_R + P \, d V_R - \mu \, d N_R).</math>
+
+In a canonical ensemble, there is no exchange of particles, so the <math>d N_R</math> term is zero. Similarly, <math>d V_R = 0.</math>  This gives
+
+:<math> S_R (s_1) - S_R (s_2) = \frac{1}{T} (U_R (s_1) - U_R (s_2)) = - \frac{1}{T} (E(s_1) - E(s_2)),</math>
+
+where <math>\; U_R (s_i) </math> and <math>\; E(s_i) </math> denote the energies of the reservoir and the system at <math>s_i</math>, respectively. For the second equality we have used the conservation of energy. Substituting into the first equation relating <math>P(s_1), \; P(s_2)</math>:
+
+:<math>
+\frac{P(s_1)}{P(s_2)} =  \frac{ e^{ - E(s_1) / kT } }{ e^{ - E(s_2) / kT} },
+</math>
+
+which implies, for any state ''s'' of the system
+
+:<math>
+P(s) = \frac{1}{Z} e^{- E(s) / kT},
+</math>
+
+where ''Z'' is an appropriately chosen "constant" to make total probability 1. (''Z'' is constant provided that the temperature ''T'' is invariant.)
+
+:<math>\; Z = \sum _s e^{- E(s) / kT}, </math>
+
+where the index ''s'' runs through all microstates of the system. ''Z'' is sometimes called the Boltzmann '''sum over states''' (or "Zustandssumme" in the original German). If we index the summation via the energy eigenvalues instead of all possible states, degeneracy must be taken into account. The probability of our system having energy <math>\varepsilon _i</math> is simply the sum of the probabilities of all corresponding microstates:
+
+:<math>P (\varepsilon _i) = \frac{1}{Z} g_i e^{- \varepsilon_i / kT}</math>
+
+where, with obvious modification,
+
+:<math>Z = \sum _j g_j  e^{- \varepsilon _j / kT},</math>
+
+this is the same result as before.
+
+Comments on this derivation:
+*Notice that in this formulation, the initial assumption "... ''suppose the system has total ''N'' particles''..." is dispensed with. Indeed, the number of particles possessed by the system plays no role in arriving at the distribution. Rather, how many particles would occupy states with energy <math>\varepsilon _i</math> follows as an easy consequence.
+*What has been presented above is essentially a derivation of the canonical partition function. As one can see by comparing the definitions, the Boltzmann sum over states is equal to the canonical partition function.
+*Exactly the same approach can be used to derive [[Fermi–Dirac statistics|Fermi–Dirac]] and [[Bose–Einstein statistics|Bose–Einstein]] statistics. However, there one would replace the canonical ensemble with the [[grand canonical ensemble]], since there is exchange of particles between the system and the reservoir. Also, the system one considers in those cases is a single particle ''state'', not a particle. (In the above discussion, we could have assumed our system to be a single atom.)
+
+==See also==
+*[[Bose–Einstein statistics]]
+*[[Fermi–Dirac statistics]]
+*[[Boltzmann factor]]
+
+==Notes==
+{{reflist|group=nb}}
+
+==References==
+{{reflist}}
+
+==Bibliography==
+*Carter, Ashley H., "Classical and Statistical Thermodynamics", Prentice–Hall, Inc., 2001, New Jersey.
+*[[Raj Pathria]], "Statistical Mechanics", Butterworth–Heinemann, 1996.
+
+{{Statistical mechanics topics}}
+
+{{DEFAULTSORT:Maxwell-Boltzmann Statistics}}
+[[Category:Maxwell–Boltzmann statistics| ]]
+[[Category:Concepts in physics]]
+[[Category:James Clerk Maxwell]]

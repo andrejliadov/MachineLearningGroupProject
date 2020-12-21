@@ -1,0 +1,381 @@
+{{main|Mathematical descriptions of the electromagnetic field}}
+{{Electromagnetism|Covariance}}
+The '''[[covariance and contravariance of vectors|covariant]] formulation of [[classical electromagnetism]]''' refers to ways of writing the laws of classical electromagnetism (in particular, [[Maxwell's equations]] and the [[Lorentz force]]) in a form that is manifestly invariant under [[Lorentz transformation]]s, in the formalism of [[special relativity]] using rectilinear [[inertial frame|inertial coordinate system]]s. These expressions both make it simple to prove that the laws of classical electromagnetism take the same form in any inertial coordinate system, and also provide a way to translate the fields and forces from one frame to another. However, this is not as general as [[Maxwell's equations in curved spacetime]] or non-rectilinear coordinate systems.
+
+This article uses the [[classical treatment of tensors]] and [[Einstein summation convention]] throughout and the [[Minkowski metric]] has the form diag(+1, −1, −1, −1). Where the equations are specified as holding in a vacuum, one could instead regard them as the formulation of Maxwell's equations in terms of ''total'' charge and current.
+
+For a more general overview of the relationships between classical electromagnetism and special relativity, including various conceptual implications of this picture, see [[Classical electromagnetism and special relativity]].
+
+==Covariant objects==
+
+===Preliminary four-vectors===
+{{Main|Lorentz covariance}}
+Lorentz tensors of the following kinds may be used in this article to describe bodies or particles:
+*[[Displacement (vector)|four-displacement]]:
+::<math>x^\alpha = (ct,\mathbf{x}) = (ct, x, y, z) \,.</math>
+*[[Four-velocity]]:
+::<math>u^\alpha = \gamma(c,\mathbf{u}) ,</math>
+:where ''γ''('''u''') is the [[Lorentz factor]] at the 3-velocity '''u'''.
+*[[Four-momentum]]:
+::<math>p^\alpha = ( E/c,\mathbf{p}) = m_0 u^{\alpha} \,</math>
+:where <math>\mathbf{p}</math> is 3-momentum, <math>E</math> is the [[total energy]], and <math>m_0</math> is [[rest mass]].
+*[[Four-gradient]]
+:<math>\partial^{\nu} = \frac{\partial}{\partial x_{\nu}} = \left( \frac{1}{c} \frac{\partial}{\partial t}, - \mathbf{\nabla} \right) \,,</math>
+*The [[d'Alembertian]] operator is denoted <math> {\partial}^2 </math>, <math>\partial^2 = \frac{1}{c^2} {\partial \over \partial t}{ \partial \over \partial t} - \nabla^2</math>.
+
+The signs in the following tensor analysis depend on the [[sign convention#Metric signature|convention]] used for the [[metric tensor]]. The convention used here is {{nowrap|(+ − − −)}}, corresponding to the [[Minkowski space#Standard basis|Minkowski metric tensor]]:
+:<math>\eta^{\mu \nu}=\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix}\,</math>
+
+===Electromagnetic tensor===
+{{Main|Electromagnetic tensor}}
+The electromagnetic tensor is the combination of the electric and magnetic fields into a covariant [[antisymmetric tensor]] whose entries are B-field quantities.
+<ref name=Vanderlinde>{{Citation
+  | last = Vanderlinde
+  | first = Jack
+  | title = classical electromagnetic theory
+  | publisher = Springer
+  | year = 2004
+  | pages = 313–328
+  | url = https://books.google.com/books?id=HWrMET9_VpUC&q=electromagnetic+field+tensor+vanderlinde&pg=PA316
+  | isbn = 9781402026997}}</ref>
+:<math>F_{\alpha \beta} = \left( \begin{matrix}
+0 &  E_x/c & E_y/c & E_z/c \\
+-E_x/c & 0 & -B_z & B_y \\
+-E_y/c  & B_z & 0 & -B_x \\
+-E_z/c & -B_y & B_x & 0
+\end{matrix} \right)\,</math>
+
+
+and the result of raising its indices is
+:<math>F^{\mu \nu} \, \stackrel{\mathrm{def}}{=} \, \eta^{\mu \alpha} \, F_{\alpha \beta} \, \eta^{\beta \nu} = \left( \begin{matrix}
+0 & -E_x/c & -E_y/c & -E_z/c \\
+E_x/c & 0 & -B_z & B_y \\
+E_y/c  & B_z & 0 & -B_x \\
+E_z/c & -B_y & B_x & 0
+\end{matrix} \right)\,.</math>
+
+where '''E''' is the [[electric field]], '''B''' the [[magnetic field]], and ''c'' the [[speed of light]].
+
+===Four-current===
+{{Main|Four-current}}
+The four-current is the contravariant four-vector which combines [[electric charge density]] ''ρ'' and [[electric current density]] '''j''':
+
+:<math>J^{\alpha} = ( c \rho, \mathbf{j} ) \,.</math>
+
+===Four-potential===
+{{Main|Four-potential}}
+The electromagnetic four-potential is a covariant four-vector containing the [[electric potential]] (also called the [[scalar potential]]) ''ϕ'' and [[magnetic vector potential]] (or [[vector potential]]) '''A''', as follows:
+:<math>A^{\alpha} = \left(\phi/c, \mathbf{A} \right)\,.</math>
+
+The differential of the electromagnetic potential is
+:<math>F_{\alpha \beta} = \partial_{\alpha} A_{\beta} - \partial_{\beta} A_{\alpha} \,.</math>
+
+In the language of [[differential forms]], which provides the generalisation to curved spacetimes, these are the components of a 1-form <math>A = A_{\alpha} dx^{\alpha}</math> and a 2-form <math>F = dA = \frac{1}{2} F_{\alpha \beta} dx^{\alpha} \wedge dx^{\beta}</math> respectively. Here, ''<math>d</math>'' is the [[exterior derivative]] and <math>\wedge</math> the [[wedge product]].
+
+===Electromagnetic stress–energy tensor===
+{{Main|Electromagnetic stress–energy tensor}}
+The electromagnetic stress–energy tensor can be interpreted as the flux density of the momentum four-vector, and is a contravariant symmetric tensor that is the contribution of the electromagnetic fields to the overall [[stress–energy tensor]]:
+:<math>T^{\alpha\beta} = \begin{pmatrix} \epsilon_{0}E^2/2 + B^2/2\mu_{0} & S_x/c & S_y/c & S_z/c \\ S_x/c & -\sigma_{xx} & -\sigma_{xy} & -\sigma_{xz} \\
+S_y/c & -\sigma_{yx} & -\sigma_{yy} & -\sigma_{yz} \\
+S_z/c & -\sigma_{zx} & -\sigma_{zy} & -\sigma_{zz} \end{pmatrix}\,,</math>
+
+where ''<math> \epsilon_0 </math>'' is the [[electric constant|electric permittivity of vacuum]], ''μ''<sub>0</sub> is the [[magnetic constant|magnetic permeability of vacuum]], the [[Poynting vector]] is
+
+:<math>\mathbf{S} = \frac{1}{\mu_{0}} \mathbf{E} \times \mathbf{B} </math>
+
+and the [[Maxwell stress tensor]] is given by
+
+:<math>\sigma_{ij} = \epsilon_{0}E_{i}E_{j} + \frac{1}{\mu_{0}}B_{i}B_{j} - 
+\left(\frac12\epsilon_{0}E^2 + \frac{1}{2\mu_{0}}B^2\right)\delta_{ij} \,.</math>
+
+The electromagnetic field tensor ''F'' constructs the electromagnetic stress–energy tensor ''T'' by the equation:
+:<math>T^{\alpha\beta} = \frac{1}{\mu_{0}} \left( \eta^{\alpha \nu}F_{\nu \gamma}F^{\gamma \beta} + \frac{1}{4}\eta^{\alpha\beta}F_{\gamma \nu}F^{\gamma \nu}\right)</math><ref>Classical Electrodynamics, Jackson, 3rd edition, page 609</ref>
+where ''η'' is the [[Minkowski metric]] tensor (with signature {{nowrap|(+ − − −)}}). Notice that we use the fact that
+:<math>\epsilon_{0} \mu_{0} c^2 = 1\,,</math>
+which is predicted by Maxwell's equations.
+
+== Maxwell's equations in vacuum ==
+{{Main|Maxwell's equations}}
+In vacuum (or for the microscopic equations, not including macroscopic material descriptions), Maxwell's equations can be written as two tensor equations.
+
+The two inhomogeneous Maxwell's equations, [[Gauss's Law]] and [[Ampère's circuital law|Ampère's law]] (with Maxwell's correction) combine into (with {{nowrap|(+ − − −)}} metric):<ref>Classical Electrodynamics by Jackson, 3rd Edition, Chapter 11 Special Theory of Relativity</ref>
+
+{{Equation box 1
+|indent=:
+|title='''[[Gauss's Law|Gauss]]&ndash;[[Ampère's circuital law|Ampère]] law'''
+|equation=<math>\partial_{\alpha}F^{\alpha\beta} = \mu_{0} J^{\beta} </math> 
+|cellpadding
+|border
+|border colour = #50C878
+|background colour = #ECFCF4}}
+
+while the homogeneous equations – [[Faraday's law of induction]] and [[Gauss's law for magnetism]] combine to form:
+
+{{Equation box 1
+|indent=:
+|title='''[[Gauss's law for magnetism|Gauss]]&ndash;[[Faraday's law of induction|Faraday]] law'''
+|equation=<math>\partial_{\alpha}(\tfrac{1}{2}\epsilon^{\alpha\beta\gamma\delta}F_{\gamma\delta}) = 0 </math>
+|cellpadding
+|border
+|border colour = #50C878
+|background colour = #ECFCF4}}
+
+where ''F''<sup>''αβ''</sup> is the [[electromagnetic tensor]], ''J''<sup>''α''</sup> is the [[four-current]], ''ε''<sup>''αβγδ''</sup> is the [[Levi-Civita symbol]], and the indices behave according to the [[Einstein summation convention]].
+
+Each of these tensor equations corresponds to four scalar equations, one for each value of ''β''. 
+
+Using the [[antisymmetric tensor]] notation and comma notation for the partial derivative (see [[Ricci calculus]]), the second equation can also be written more compactly as:
+
+:<math> F_{[\alpha \beta , \gamma]} = 0 .</math>
+
+In the absence of sources, Maxwell's equations reduce to:
+
+:<math>\partial^{\nu} \partial_{\nu}  F^{\alpha\beta} \,\ \stackrel{\mathrm{def}}{=}\ \, {\partial}^2 F^{\alpha\beta} \,\ \stackrel{\mathrm{def}}{=}\ {1 \over c^2 } { \partial^2 F^{\alpha\beta} \over {\partial t }^2   } - \nabla^2 F^{\alpha\beta}= 0 \,,</math>
+
+which is an [[electromagnetic wave equation]] in the field strength tensor.
+
+===Maxwell's equations in the Lorenz gauge===
+<!--Lorenz is the correct name (not Lorentz). Ludvig Lorenz ≠ Hendrik Lorentz -->
+{{Main|Lorenz gauge condition}}
+
+The [[Lorenz gauge condition]] is a Lorentz-invariant gauge condition. (This can be contrasted with other [[gauge fixing|gauge conditions]] such as the [[Coulomb gauge]], which if it holds in one [[inertial frame]] will generally not hold in any other.) It is expressed in terms of the four-potential as follows:
+
+:<math>\partial_{\alpha} A^{\alpha} = \partial^{\alpha} A_{\alpha}=0 \,.</math>
+
+In the Lorenz gauge, the microscopic Maxwell's equations can be written as:
+
+:<math>{\partial}^2 A^{\sigma} = \mu_{0} \, J^{\sigma}\,.</math>
+
+==Lorentz force==
+
+{{Main|Lorentz force}}
+
+===Charged particle===
+[[File:Lorentz force particle.svg|200px|thumb|[[Lorentz force]] '''f''' on a [[charged particle]] (of [[electric charge|charge]] ''q'') in motion (instantaneous velocity '''v'''). The [[electric field|'''E''' field]] and [[magnetic field|'''B''' field]] vary in space and time.]]
+
+Electromagnetic (EM) fields affect the motion of [[electric charge|electrically charged]] matter: due to the [[Lorentz force]]. In this way, EM fields can be [[Particle detector|detected]] (with applications in [[particle physics]], and natural occurrences such as in [[Aurora (astronomy)|aurorae]]). In relativistic form, the Lorentz force uses the field strength tensor as follows.<ref>The assumption is made that no forces other than those originating in '''E''' and '''B''' are present, that is, no [[gravitation]]al, [[weak force|weak]] or [[strong force|strong]] forces.</ref>
+
+Expressed in terms of [[coordinate time]] ''t'', it is:
+:<math> { d p_{\alpha} \over { d t } } =  q \, F_{\alpha \beta} \, \frac{d x^\beta}{d t} ,</math>
+
+where ''p''<sub>''α''</sub> is the four-momentum, ''q'' is the [[Electric charge|charge]], and ''x''<sup>''β''</sup> is the position.
+
+Expressed in frame-independent form, we have the four-force
+
+:<math> \frac{d p_{\alpha}}{d \tau} \, = q \, F_{\alpha \beta} \, u^\beta ,</math>
+
+where ''u''<sup>''β''</sup> is the four-velocity, and ''τ'' is the particle's [[proper time]], which is related to coordinate time by {{nowrap|1=''dt'' = ''γdτ''}}.
+
+===Charge continuum===
+[[File:Lorentz force continuum.svg|200px|thumb|Lorentz force per spatial volume '''f''' on a continuous [[charge distribution]] ([[charge density]] ρ) in motion.]]
+
+{{see also|continuum mechanics}}
+The density of force due to electromagnetism, whose spatial part is the Lorentz force, is given by 
+:<math>f_{\alpha} = F_{\alpha\beta}J^{\beta} .\!</math>
+
+and is related to the electromagnetic stress–energy tensor by
+:<math>f^{\alpha} = - {T^{\alpha\beta}}_{,\beta} \equiv  - \frac{\partial T^{\alpha\beta}}{\partial x^\beta}.</math>
+
+==Conservation laws==
+
+===Electric charge===
+
+The [[continuity equation]]:
+:<math>{J^{\alpha}}_{,\alpha} \, \stackrel{\mathrm{def}}{=} \,  \partial_{\alpha} J^{\alpha} \, = \, 0 \,.</math>
+expresses [[charge conservation]].
+
+===Electromagnetic energy–momentum===
+
+Using the Maxwell equations, one can see that the [[electromagnetic stress–energy tensor]] (defined above) satisfies the following differential equation, relating it to the electromagnetic tensor and the current four-vector
+:<math>{T^{\alpha\beta}}_{,\beta} + F^{\alpha\beta} J_{\beta} = 0</math>
+
+or
+:<math>\eta_{\alpha \nu} { T^{\nu \beta } }_{,\beta} + F_{\alpha \beta} J^{\beta} = 0,</math>
+
+which expresses the conservation of linear momentum and energy by electromagnetic interactions.
+
+==Covariant objects in matter==
+
+===Free and bound four-currents===
+
+In order to solve the equations of electromagnetism given here, it is necessary to add information about how to calculate the electric current, ''J''<sup>''ν''</sup> Frequently, it is convenient to separate the current into two parts, the free current and the bound current, which are modeled by different equations;
+
+:<math>J^{\nu} = {J^{\nu}}_{\text{free}} + {J^{\nu}}_{\text{bound}} \,,</math>
+
+where
+:<math>{J^{\nu}}_{\text{free}}=(c\rho_{\text{free}},\mathbf{J}_{\text{free}})=\left(c \nabla \cdot \mathbf{D}, - \ \frac{\partial \mathbf{D}}{\partial t}+\nabla\times\mathbf{H}\right) \,,</math>
+:<math>{J^{\nu}}_{\text{bound}}=(c\rho_{\text{bound}},\mathbf{J}_{\text{bound}})=\left(- \ c \nabla \cdot \mathbf{P}, \frac{\partial \mathbf{P}}{\partial t}+\nabla\times\mathbf{M}\right) \,.</math>
+
+[[Maxwell's equations#Maxwell's "macroscopic" equations|Maxwell's macroscopic equations]] have been used, in addition the definitions of the [[electric displacement]] '''D''' and the [[magnetic field|magnetic intensity]] '''H''':
+
+:<math>\mathbf{D} = \epsilon_0 \mathbf{E} + \mathbf{P},</math>
+:<math>\mathbf{H} = \frac{1}{\mu_{0}} \mathbf{B} - \mathbf{M} \,.</math>
+
+where '''M''' is the [[magnetization]] and '''P''' the [[electric polarization]].
+
+===Magnetization-polarization tensor===
+
+The bound current is derived from the '''P''' and '''M''' fields which form an antisymmetric contravariant magnetization-polarization tensor <ref name=Vanderlinde />
+:<math>
+  \mathcal{M}^{\mu \nu} =
+  \begin{pmatrix}
+   0     & P_xc & P_yc & P_zc \\
+   - P_xc & 0      &  - M_z   & M_y    \\
+   -  P_yc & M_z    & 0      & - M_x   \\
+   -  P_zc & - M_y   & M_x    & 0       
+  \end{pmatrix},
+</math>
+
+which determines the bound current
+:<math>{J^{\nu}}_{\text{bound}}=\partial_{\mu} \mathcal{M}^{\mu \nu} \,.</math>
+
+===Electric displacement tensor===
+
+If this is combined with ''F''<sup>μν</sup> we get the antisymmetric contravariant  electromagnetic displacement tensor which combines the '''D''' and '''H''' fields as follows:
+:<math>
+  \mathcal{D}^{\mu \nu} =
+  \begin{pmatrix}
+   0     & - D_xc & - D_yc & - D_zc \\
+   D_xc & 0      & - H_z   & H_y    \\
+   D_yc & H_z    & 0      & - H_x   \\
+   D_zc & - H_y   & H_x    & 0       
+  \end{pmatrix}.
+</math>
+
+The three field tensors are related by:
+
+:<math>\mathcal{D}^{\mu \nu} = \frac{1}{\mu_{0}} F^{\mu \nu} - \mathcal{M}^{\mu \nu} \,</math>
+
+which is equivalent to the definitions of the '''D''' and '''H''' fields given above.
+
+==Maxwell's equations in matter==
+
+The result is that [[Ampère's circuital law|Ampère's law]], 
+:<math>\mathbf{\nabla} \times \mathbf{H} = \mathbf{J}_{\text{free}} + \frac{\partial \mathbf{D}} {\partial t}</math>,
+and [[Gauss's law]], 
+:<math>\mathbf{\nabla} \cdot \mathbf{D} = \rho_{\text{free}}</math>,
+
+combine into one equation:
+
+{{Equation box 1
+|indent=:
+|title='''[[Gauss's Law|Gauss]]&ndash;[[Ampère's circuital law|Ampère]] law''' ''(matter)''
+|equation=<math>{J^{\nu}}_{\text{free}} = \partial_{\mu} \mathcal{D}^{\mu \nu} </math>
+|cellpadding
+|border
+|border colour = #0073CF
+|background colour=#F5FFFA}}
+
+The bound current and free current as defined above are automatically and separately conserved
+:<math>\partial_{\nu} {J^{\nu}}_{\text{bound}} = 0 \,</math>
+:<math>\partial_{\nu} {J^{\nu}}_{\text{free}} = 0 \,.</math>
+
+===Constitutive equations===
+
+{{main|Constitutive equation}}
+
+====Vacuum====
+
+In vacuum, the constitutive relations between the field tensor and displacement tensor are:
+
+:<math>\mu_0 \mathcal{D}^{\mu \nu} = \eta^{\mu \alpha} F_{\alpha \beta} \eta^{\beta \nu} \,.</math>
+
+Antisymmetry reduces these 16 equations to just six independent equations. Because it is usual to define ''F''<sup>''μν''</sup> by
+:<math>F^{\mu \nu} = \eta^{\mu \alpha} F_{\alpha \beta} \eta^{\beta \nu} ,</math>
+
+the constitutive equations may, in ''vacuum'', be combined with the Gauss–Ampère law to get:
+:<math>\partial_\beta F^{\alpha \beta} = \mu_0 J^{\alpha}. \!</math>
+
+The electromagnetic stress–energy tensor in terms of the displacement is:
+
+:<math>T_\alpha{}^\pi = F_{\alpha\beta} \mathcal{D}^{\pi\beta} - \frac{1}{4} \delta_\alpha^\pi F_{\mu\nu} \mathcal{D}^{\mu\nu} ,</math>
+
+where ''δ<sub>α</sub><sup>π</sup>'' is the [[Kronecker delta]]. When the upper index is lowered with ''η'', it becomes symmetric and is part of the source of the gravitational field.
+
+====Linear, nondispersive matter====
+
+Thus we have reduced the problem of modeling the current, ''J''<sup>''ν''</sup> to two (hopefully) easier problems &mdash; modeling the free current, ''J''<sup>''ν''</sup><sub>free</sub> and modeling the magnetization and polarization, <math> \mathcal{M}^{\mu\nu}</math>. For example, in the simplest materials at low frequencies, one has
+:<math>\mathbf{J}_{\text{free}} = \sigma \mathbf{E} \,</math>
+:<math>\mathbf{P} = \epsilon_0 \chi_e \mathbf{E} \,</math>
+:<math>\mathbf{M} = \chi_m \mathbf{H} \,</math>
+
+where one is in the instantaneously comoving inertial frame of the material, ''σ'' is its [[electrical conductivity]], ''χ''<sub>e</sub> is its [[electric susceptibility]], and ''χ''<sub>m</sub> is its [[magnetic susceptibility]].
+
+The constitutive relations between the <math>\mathcal{D}</math> and ''F'' tensors, proposed by [[Hermann Minkowski|Minkowski]] for a linear materials (that is, '''E''' is [[Proportionality (mathematics)|proportional]] to '''D''' and '''B''' proportional to '''H'''), are:<ref>{{cite book|title=Introduction to Electrodynamics|edition=3rd|author=D.J. Griffiths|publisher = Dorling Kindersley|year=2007|page=563|isbn=978-81-7758-293-2}}</ref>
+
+:<math>\mathcal{D}^{\mu\nu}u_\nu= c^2\epsilon F^{\mu\nu} u_\nu</math>
+:<math>{\star\mathcal{D}^{\mu\nu}}u_\nu= \frac{1}{\mu}{\star F^{\mu\nu}} u_\nu</math>
+
+where ''u'' is the four-velocity of material, ''ε'' and ''μ'' are respectively the proper [[permittivity]] and [[Permeability (electromagnetism)|permeability]] of the material (i.e. in rest frame of material), <math>\star</math> and denotes the [[Hodge dual]].
+
+==Lagrangian for classical electrodynamics==
+
+===Vacuum===
+The [[Lagrangian (field theory)|Lagrangian]] density for classical electrodynamics is composed by two components: a field component and a source component:
+:<math> \mathcal{L} \, = \, \mathcal{L}_{\mathrm{field}} + \mathcal{L}_{\mathrm{int}} = - \frac{1}{4 \mu_0} F^{\alpha \beta} F_{\alpha \beta} - A_{\alpha} J^{\alpha} \,.</math>
+
+In the interaction term, the four-current should be understood as an abbreviation of many terms expressing the electric currents of other charged fields in terms of their variables; the four-current is not itself a fundamental field.
+
+The [[Euler–Lagrange equation|Lagrange equations]] for the electromagnetic lagrangian density <math> \mathcal{L}(A_{\alpha},\partial_{\beta}A_{\alpha})\,</math> can be stated as follows:
+:<math> \partial_{\beta}\left[\frac{\partial \mathcal{L}}{\partial (\partial_{\beta}A_{\alpha})}\right]  - \frac{\partial \mathcal{L}}{\partial A_{\alpha}}=0 \,.</math>
+
+Noting 
+
+:<math>F^{\lambda \sigma} = F_{\mu \nu}\eta^{\mu\lambda}\eta^{\nu\sigma}</math>, 
+:<math>F_{\mu \nu}=\partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu}\,</math>and
+:<math>{\partial (\partial_{\mu} A_{\nu}) \over \partial(\partial_{\rho} A_{\sigma})} = \delta_{\mu}^{\rho} \delta_{\nu}^{\sigma}</math>
+the expression inside the square bracket is 
+:<math>\begin{align}\frac{\partial \mathcal{L}}{\partial (\partial_{\beta}A_{\alpha})} & = - \ \frac{1}{4 \mu_0}\ \frac{\partial (F_{\mu \nu}\eta^{\mu\lambda}\eta^{\nu\sigma}F_{\lambda \sigma})}{\partial (\partial_{\beta}A_{\alpha})} \\
+ & = - \ \frac{1}{4 \mu_0}\ \eta^{\mu\lambda}\eta^{\nu\sigma}
+\left(F_{\lambda\sigma}(\delta^{\beta}_{\mu}\delta^{\alpha}_{\nu} - \delta^{\beta}_{\nu}\delta^{\alpha}_{\mu})
++F_{\mu\nu}(\delta^{\beta}_{\lambda}\delta^{\alpha}_{\sigma} - \delta^{\beta}_{\sigma}\delta^{\alpha}_{\lambda})
+\right) \\
+ & = - \ \frac{F^{\beta\alpha}}{\mu_0}\,.
+\end{align}</math>
+
+The second term is
+:<math>\frac{\partial \mathcal{L}}{\partial A_{\alpha}}= - J^{\alpha} \,.</math>
+
+Therefore, the electromagnetic field's equations of motion are
+:<math> \frac{\partial F^{\beta\alpha}}{\partial x^{\beta}}=\mu_0 J^{\alpha} \,.</math>
+which is the Gauss-Ampere equation above.
+
+===Matter===
+
+Separating the free currents from the bound currents, another way to write the Lagrangian density is as follows:
+:<math> \mathcal{L} \, = \, - \frac{1}{4 \mu_0} F^{\alpha \beta} F_{\alpha \beta} - A_{\alpha} J^{\alpha}_{\text{free}} + \frac12 F_{\alpha \beta} \mathcal{M}^{\alpha \beta} \,.</math>
+
+Using Lagrange equation, the equations of motion for <math> \mathcal{D}^{\mu\nu}</math> can be derived.
+
+The equivalent expression in non-relativistic vector notation is
+:<math> \mathcal{L} \, = \, \frac12 \left(\epsilon_{0} E^2 - \frac{1}{\mu_{0}} B^2\right) - \phi \, \rho_{\text{free}} + \mathbf{A} \cdot \mathbf{J}_{\text{free}} + \mathbf{E} \cdot \mathbf{P} + \mathbf{B} \cdot \mathbf{M} \,.</math>
+
+==See also==
+
+* [[Covariant classical field theory]]
+* [[Electromagnetic tensor]]
+* [[Electromagnetic wave equation]]
+* [[Liénard–Wiechert potential]] for a charge in arbitrary motion
+* [[Moving magnet and conductor problem]]
+* [[Inhomogeneous electromagnetic wave equation]]
+* [[Proca action]]
+* [[Quantum electrodynamics]]
+* [[Relativistic electromagnetism]]
+* [[Stueckelberg action]]
+* [[Wheeler–Feynman absorber theory]]
+
+==Notes and references==
+{{reflist|2}}
+
+==Further reading==
+*{{cite book | author=Einstein, A. | title=Relativity: The Special and General Theory | location=New York | publisher=Crown | year=1961 | isbn=0-517-02961-8 | url-access=registration | url=https://archive.org/details/relativityspecia00eins_0 }}
+*{{cite book |author1=Misner, Charles |author2=Thorne, Kip S. |author3=Wheeler, John Archibald | title=Gravitation | location=San Francisco | publisher=W. H. Freeman | year=1973 | isbn=0-7167-0344-0}}
+*{{cite book |author1=Landau, L. D.  |author2=Lifshitz, E. M.| title=Classical Theory of Fields | location=Oxford | publisher=Pergamon | year=1975 | isbn=0-08-018176-7|edition=Fourth Revised English}}
+*{{cite book |author1=R. P. Feynman |author2=F. B. Moringo |author3=W. G. Wagner | title=Feynman Lectures on Gravitation |url=https://archive.org/details/feynmanlectureso0000feyn_g4q1 |url-access=registration | publisher=Addison-Wesley | year=1995 | isbn=0-201-62734-5}}
+
+{{Physics-footer}}
+{{tensors}}
+
+[[Category:Concepts in physics]]
+[[Category:Electromagnetism]]
+[[Category:Special relativity]]

@@ -3,13 +3,14 @@ import numpy as np
 from sklearn.datasets import load_files
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.metrics import classification_report, accuracy_score
 from sklearn.svm import LinearSVC
 import nltk
 from nltk.stem.wordnet import WordNetLemmatizer
 
 #Read in the data
-DATA_DIR = "./data/"
+DATA_DIR = "MachineLearningGroupProject/data/"
 data = load_files(DATA_DIR, encoding='utf-8', decode_error='replace')
 labels, counts = np.unique(data.target, return_counts=True)
 labels_str = np.array(data.target_names)[labels]
@@ -29,12 +30,14 @@ for i in range(0, len(data.data)):
 
 
 X_train, X_test, Y_train, Y_test = train_test_split(data.data, data.target)
-
+# print(X_test);
 vectoriser = CountVectorizer(ngram_range=(1, 2), token_pattern=r'\b\w+\b', min_df=1)
-vectoriser.fit(X_train)
+x_train_counts = vectoriser.fit_transform(X_train)
+tf_transformer = TfidfTransformer(use_idf=False).fit(x_train_counts)
+x_train_tf = tf_transformer.transform(x_train_counts)
 
 model = LinearSVC()
-model.fit(vectoriser.transform(X_train), Y_train)
+model.fit(x_train_tf, Y_train)
 
 y_pred = model.predict(vectoriser.transform(X_test))
 print(accuracy_score(Y_test, y_pred))

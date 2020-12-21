@@ -1,0 +1,582 @@
+{{more citations needed|date=January 2018}}
+{{Use dmy dates|date=August 2020}}
+[[Electric power system]]s consist of generation plants of different energy sources, transmission networks, and distribution lines. Each of these components can have environmental impacts at multiple stages of their development and use including in their construction, during the [[Electricity generation|generation of electricity]], and in their decommissioning and disposal. We can split these impacts into operational impacts (fuel sourcing, global atmospheric and localized pollution) and construction impacts (manufacturing, installation, decommissioning, and disposal). This page looks exclusively at the operational '''environmental impact of electricity generation'''. The page is organized by energy source and includes impacts such as water usage, emissions, local pollution, and wildlife displacement.
+
+More detailed information on electricity generation impacts for specific technologies and on other environmental impacts of electric power systems in general can be found under the [[:Category:Environmental impact of the energy industry]].
+
+==Water usage==
+Water usage is one of the most obvious environmental impacts of electricity generation. All thermal cycles (coal, natural gas, nuclear, geothermal, and biomass) use water as a cooling fluid to drive the [[thermodynamic cycle]]s that allow electricity to be extracted from heat energy. Other energy sources such as wind and solar use water for cleaning equipment, while hydroelectricity has water usage from evaporation from the reservoirs. The amount of water usage is often of great concern for electricity generating systems as populations increase and droughts become a concern. In addition, changes in water resources may impact the reliability of electricity generation.<ref name=":0">A Review of Operational Water Consumption and Withdrawal Factors for Electricity Generating Technologies. NREL Technical Report NREL/TP-6A20-50900. March 2011. By Jordan Macknick, Robin Newmark, Garvin Heath, and KC Hallett. https://www.nrel.gov/docs/fy11osti/50900.pdf</ref> The power sector in the United States withdraws more water than any other sector and is heavily dependent on available water resources. According to the [[U.S. Geological Survey]], in 2005, thermo-electric power generation water withdrawals accounted for 41 percent (201 Bgal/d) of all freshwater withdrawals. Nearly all of the water withdrawn for thermoelectric power was surface water used for once-through cooling at power plants. Withdrawals for [[irrigation]] and public supply in 2005 were 37% and 13% of all freshwater withdrawals respectively.<ref name=":1">Kenny, J.F.; Barber, N.L.; Hutson, S.S.; Linsey, K.S.; Lovelace, J.K.; Maupin, M.A. ''Estimated Use of Water in the United States in 2005''. U.S. Geological Survey Circular 1344. Reston, VA: USGS, 2009; p. 52. https://pubs.usgs.gov/circ/1344/</ref> Likely future trends in water consumption are covered here.<ref>AAAS Annual Meeting 17–21 February 2011, Washington DC. Sustainable or Not? Impacts and Uncertainties of Low-Carbon Energy Technologies on Water. Dr Evangelos Tzimas, European Commission, JRC Institute for Energy, Petten, Netherlands</ref>
+
+Discussions of water usage of electricity generation distinguish between water withdrawal and water consumption.<ref name=":0" /> According to the [[United States Geological Survey|USGS]], "withdrawal" is defined as the amount of water removed from the ground or diverted from a water source for use, while "consumption" refers to the amount of water that is evaporated, transpired, incorporated into products or crops, or otherwise removed from the immediate water environment.<ref name=":1" /> Both water withdrawal and consumption are important environmental impacts to evaluate.
+
+General numbers for fresh water usage of different power sources are shown below.
+
+{| class="wikitable"
+|-
+! &nbsp;
+! colspan="3" | Water Consumption (gal/MW-h)
+|-
+! Power source
+! Low case
+! Medium/average case
+! High case
+|-
+| [[Nuclear power]]
+| 100 (once-through cooling)
+| 270 once-through, 650 (tower and pond)    
+| 845 (cooling tower)
+|-
+| [[Coal]]
+| 58 <ref name="eskom1">{{cite web|title=Majuba Power Station|url=http://www.eskom.co.za/Whatweredoing/ElectricityGeneration/PowerStations/Pages/Majuba_Power_Station.aspx|accessdate=2 March 2015}}</ref>
+|500
+| 1,100 (cooling tower, generic combustion)
+|-
+| [[Natural gas]]
+| 100 (once-through cycle)
+|800 (steam-cycle, cooling towers)
+| 1,170 (steam-cycle with cooling towers)
+|-
+| [[Hydroelectricity]]
+|1,430
+|4,491
+|18,000
+|-
+| [[Solar thermal]]
+|53 (dry cooling)<ref name=":2">{{Cite book|title=Renewable and efficient electric power systems|last=Masters|first=Gilbert M|publisher=Wiley-Interscience|year=2004|location=Hoboken, N.J.}}</ref>
+|800<ref name=":2" />
+|1,060 (Trough)<ref name=":2" />
+|-
+| [[Geothermal]]
+| 1,800
+|
+| 4,000
+|-
+| [[Biomass]]
+| 300
+|
+| 480
+|-
+| Solar [[photovoltaic]]
+|0
+|26
+|33
+|-
+| [[Wind power]]
+| 0<ref name=":0" />
+| 0<ref name=":0" />
+| 1<ref name=":0" />
+|}
+
+Steam-cycle plants (nuclear, coal, NG, solar thermal) require a great deal of water for cooling, to remove the heat at the steam condensers. The amount of water needed relative to plant output will be reduced with increasing [[boiler]] temperatures. Coal- and gas-fired boilers can produce high steam temperatures and so are more efficient, and require less cooling water relative to output. Nuclear boilers are limited in steam temperature by material constraints, and solar is limited by concentration of the energy source.<!-- Needs some citation -->
+
+Thermal cycle plants near the ocean have the option of using [[seawater]]. Such a site will not have cooling towers and will be much less limited by environmental concerns of the discharge temperature since dumping heat will have very little effect on water temperatures. This will also not deplete the water available for other uses.  [[Nuclear power in Japan]] for instance, uses no cooling towers at all because all plants are located on the coast. If dry cooling systems are used, significant water from the water table will not be used. Other, more novel, cooling solutions exist, such as sewage cooling at the [[Palo Verde Nuclear Generating Station]].
+
+Hydroelectricity's main cause of water usage is both evaporation and seepage into the water table.
+
+Reference: [[Nuclear Energy Institute]] [http://www.nei.org/filefolder/water_consumption__npps_Nov_2007.pdf factsheet]{{dead link|date=September 2015}} using EPRI data and other sources.
+
+{| style="font-size:95%; text-align:right;" class="wikitable sortable"
+|+ '''Electricity industry (incl. gas & liquid fuels) value chain – water consumption,<ref name="WEF-Fall2008-CERA">{{cite journal|author1=World Economic Forum |author2=Cambridge Energy Research Associates |date=1 February 2009 |title=Thirsty Energy: Water and Energy in the 21st Century |url=http://www2.cera.com/docs/WEF_Fall2008_CERA.pdf |accessdate=1 November 2009 |url-status=dead |archiveurl=https://web.archive.org/web/20110708132727/http://www2.cera.com/docs/WEF_Fall2008_CERA.pdf |archivedate=8 July 2011 }}</ref> [[Life cycle assessment|LCA]] [[emission intensity]] & [[capacity factor]]'''
+|-
+! Feedstock/ fuel/ resource
+! Raw material production<br />L/MW·h<br />[L/GJ]
+! [[Ethanol fermentation|Fermentation]]/ [[Natural gas processing|processing]]/[[refining]]<br />L/MW·h<br />[L/GJ]
+! [[Electricity generation]]&nbsp;with [[Cooling tower|closed-loop cooling]]
+! Total water consumption<br />L/MW·h<ref name="WEF-Fall2008-CERA"/>
+! [[Carbon dioxide|CO<sub>2</sub>]] [[Carbon dioxide equivalent|-eq]]<br />kg/MW·h<sub>e</sub><br />
+! [[Sulfur dioxide|SO<sub>2</sub>]]<br />kg/MW·h<br />
+! [[Nitrogen oxide|NO<sub>x</sub>]]<br />kg/MW·h<br />
+! [[Hydrogen sulfide|H<sub>2</sub>S]]<br />kg/MW·h<br />
+! [[Particulate]]<br />kg/MW·h<br />
+! [[Cadmium|Cd]]<br />mg/MW·h<br />
+! [[Mercury (element)|Hg]]<br />mg/MW·h<br />
+! On-site accidents<br />deaths/TW·yr<br />
+! Average capacity factor<br />%
+|-
+| align=left|[[Petroleum|Traditional oil]]
+| {{Ntsh|18}}10.8–25.2<br />[3–7]
+| {{Ntsh|162}}90–234<br />[25–65]
+| {{Nts|1200}}~
+| {{Ntsh|001380}}1,300.8–1,459.2
+| {{Nts|893}}<ref name="IPCC">{{cite journal|first1=Ingvar B. |last1=Fridleifsson |first2=Ruggero |last2=Bertani |first3=Ernst |last3=Huenges |first4=John W. |last4=Lund |first5=Arni |last5=Ragnarsson |first6=Ladislaus |last6=Rybach |date=11 February 2008 |title=The possible role and contribution of geothermal energy to the mitigation of climate change |conference=IPCC Scoping Meeting on Renewable Energy Sources |editor=O. Hohmeyer and T. Trittin |location=Luebeck, Germany |pages=59–80 |url=http://www.eartheclipse.com/wp-content/uploads/2016/03/Fridleifsson_et_al_IPCC_Geothermal_paper_2008.pdf }}{{cbignore|bot=medic}}</ref>
+|
+|
+| {{Nts|814}}<ref name="utilization"/>
+|
+| {{Nts|43.3}}<ref name="ECN2006">Alsema, E.A.; Wild – Scholten, M.J. de; Fthenakis, V.M.
+''[http://www.ecn.nl/publicaties/PdfFetch.aspx?nr=ECN-RX--06-016 Environmental impacts of PV electricity generation – a critical comparison of energy supply options]'' [http://www.ecn.nl/publicaties/default.aspx?nr=ECN-RX--06-016 Abstract] ECN, September 2006; 7p.
+Presented at the 21st European Photovoltaic Solar Energy Conference and Exhibition, Dresden, Germany, 4–8 September 2006.</ref>
+| {{Nts|9}}<ref name="naturalgas">[http://www.naturalgas.org/environment/naturalgas.asp] {{webarchive|url=https://web.archive.org/web/20090503132200/http://www.naturalgas.org/environment/naturalgas.asp|date=3 May 2009}}</ref>
+|
+| {{Nts|60}}~<ref name="RERLWind"/>
+|-
+| align=left|[[Enhanced oil recovery]]
+| {{Ntsh|16290}}180-32,400<br />[50-9,000]
+| {{Ntsh|162}}90–234<br />[25–65]
+| {{Nts|1200}}~
+| {{Ntsh|17652}}1,470–33,834
+| {{Nts|893}}<ref name="IPCC"/>
+|
+|
+| {{Nts|814}}<ref name="utilization"/>
+|
+| {{Nts|43.3}}<ref name="ECN2006"/>
+| {{Nts|9}}<ref name="naturalgas"/>
+|
+| {{Nts|60}}~<ref name="RERLWind"/>
+|-
+| align=left|[[Oil sands]]
+| {{Ntsh|3366}}252-6,480*<br />[70-1,800*]
+| {{Ntsh|162}}90–234<br />[25–65]
+| {{Nts|1200}}~
+| {{Ntsh|4728}}1,542–7,914
+| {{Nts|893}}<ref name="IPCC"/>
+|
+|
+| {{Nts|814}}<ref name="utilization"/>
+|
+| {{Nts|43.3}}<ref name="ECN2006"/>
+| {{Nts|9}}<ref name="naturalgas"/>
+|
+| {{Nts|60}}~<ref name="RERLWind"/>
+|-
+| align=left|[[Biofuel]]s:<br />[[Maize|corn]]
+| {{Ntsh|196200}}32,400–360,000<br />[9,000–100,000]
+| {{Ntsh|174.6}}169.2–180<br />[[Ethanol]]:[47-50]
+| {{Nts|1200}}~
+| {{Ntsh|197574.6}}33,769.2–361,380
+| {{Nts|893}}~<ref name="IPCC"/>
+|
+|
+| {{Nts|814}}~<ref name="utilization"/>
+|
+| 
+| {{Nts|9}}~<ref name="naturalgas"/>
+|
+| {{Nts|52}}~<ref name="IPCC"/>
+|-
+| align=left|[[Biofuel]]s:<br />[[soybean]]
+| {{Ntsh|576000}}180,000–972,000<br />[50,000–270,000]
+| {{Nts|50.4}}<br />[[Biodiesel]]:[14]
+| {{Nts|1200}}~
+| {{Ntsh|577250.4}}181,250.4–973,250.4
+| {{Nts|893}}~<ref name="IPCC"/>
+|
+|
+| {{Nts|814}}~<ref name="utilization"/>
+|
+| 
+| {{Nts|9}}~<ref name="naturalgas"/>
+|
+| {{Nts|52}}~<ref name="IPCC"/>
+|-
+| align=left|[[Coal]]
+| {{Ntsh|145}}20–270<br />[5–70]
+| {{Ntsh|648}}[[Coal liquefaction|504–792<br />-to-liquids:[140-220]]]
+| {{Ntsh|1600}}200-2,000<ref name="eskom1"/>
+| {{Ntsh|1745}}Coal-to-liquids:N.C.<br />220-2,270
+| {{Ntsh|994}}B:863–941<br />Br:1175<ref name="ISA2008">
+{{cite journal | author=ISA, University of Sydney | year = 2006 | title = Life-cycle energy balance and greenhouse gas emissions of nuclear energy: A review |archiveurl=http://pandora.nla.gov.au/pan/66043/20061201-0000/www.dpmc.gov.au/umpner/docs/commissioned/ISA_report.pdf | archive-date = 1 December 2006 | url = http://www.isa.org.usyd.edu.au/publications/documents/ISA_Nuclear_Report.pdf | accessdate = 4 November 2009}}</ref>
+| {{Nts|4.71}}<ref name="utilization">{{Citation
+| last = Lund  | first = John W.
+| date =June 2007
+| title =Characteristics, Development and utilization of geothermal resources
+| periodical =Geo-Heat Centre Quarterly Bulletin
+| location =Klamath Falls, Oregon
+| publisher =Oregon Institute of Technology
+| volume =28
+| issue =2
+| pages = 1–9
+| url =http://geoheat.oit.edu/bulletin/bull28-2/art1.pdf
+| issn =0276-1084
+| accessdate =16 April 2009}}</ref>
+| {{Nts|1.95}}<ref name="utilization"/>
+| {{Nts|0}}<ref name="utilization"/>
+| {{Nts|1.01}}<ref name="utilization"/>
+| {{Ntsh|4.65}}H:3.1-<br />L:6.2<ref name="ECN2006"/>
+| {{Ntsh|20}}14-<br />61<ref name="naturalgas"/><ref name="4016e">[http://www.ene.gov.on.ca/envision/techdocs/4016e.htm Ministry of the Environment and Climate Change | Ontario.ca]</ref>
+| {{Nts|342}}<ref name="wna">{{cite web|url=http://www.world-nuclear.org/info/inf06.html|title=Safety of Nuclear Power Reactors}}</ref>
+| {{Ntsh|80}}70–90<ref name="RERLWind">{{cite web|url=http://www.ceere.org/rerl/about_wind/RERL_Fact_Sheet_2a_Capacity_Factor.pdf |title=Wind Power: Capacity Factor, Intermittency, and what happens when the wind doesn't blow? |accessdate=16 October 2008 |work=Renewable Energy Research Laboratory, University of Massachusetts Amherst |url-status=dead |archiveurl=https://web.archive.org/web/20081001205145/http://www.ceere.org/rerl/about_wind/RERL_Fact_Sheet_2a_Capacity_Factor.pdf |archivedate=1 October 2008 }}</ref>
+|-
+| align=left|[[Natural gas|Traditional gas]]
+| {{Ntsh|0}}Minimal
+| {{Nts|25.2}}<br />[7]
+| {{Nts|700}}
+| {{Nts|725.2}}
+| {{Nts|577}}:cc<ref name="ISA2008"/><br />(491–655)
+|
+|
+| {{Nts|550}}<ref name="utilization"/>
+|
+| {{Nts|0.2}}<ref name="ECN2006"/>
+| {{Ntsh|.2}}0.1-<br />0.6<ref name="4016e"/><!-- 1% of Coal -->
+| {{Nts|85}}<ref name="wna"/>
+| {{Nts|60}}~<ref name="RERLWind"/>
+|-
+| align=left|[[Natural gas]]:<br />[[shale gas]]
+| {{Ntsh|162}}129.6–194.4<br />[36–54]
+| {{Nts|25.2}}<br />[7]
+| {{Nts|700}}
+| {{Ntsh|887.2}}854.8–919.6
+| {{Nts|751}}:oc<ref name="ISA2008"/><br />(627–891)
+|
+|
+| {{Nts|550}}<ref name="utilization"/>
+|
+| {{Nts|0.2}}<ref name="ECN2006"/>
+| {{Ntsh|.2}}0.1-<br />0.6<ref name="4016e"/><!-- 1% of Coal -->
+| {{Nts|85}}<ref name="wna"/>
+| {{Nts|60}}~<ref name="RERLWind"/>
+|-
+| align=left|[[Uranium|U]] [[Nuclear power|nuclear]]
+| {{Ntsh|370}}170–570
+| {{Ntsh|0}}See:Raw Material
+| {{Nts|2700}}
+| {{Ntsh|3070}}2,870–3,270
+| {{Ntsh|62.5}}60–65 (10–130)<ref name="ISA2008"/>
+|
+|
+|
+|
+| {{Nts|0.5}}<ref name="ECN2006"/>
+|
+| {{Nts|8}}<ref name="wna"/>
+| {{Ntsh|89.4}}86.8<ref name='WANOProgress'>{{cite web|url=http://www.wano.org.uk/PerformanceIndicators/PI_Trifold/WANO15yrsProgress.pdf |title=15 Years of Progress |accessdate=20 October 2008 |year=2006 |work=World Association of Nuclear Operators |url-status=dead |archiveurl=https://web.archive.org/web/20090318230748/http://www.wano.org.uk/PerformanceIndicators/PI_Trifold/WANO15yrsProgress.pdf |archivedate=18 March 2009 }}</ref>-92<ref name="RERLWind"/>
+|-
+| align=left|[[Hydroelectricity|Hydroelectric]]
+|
+|
+| {{Nts|17000}}[[Evaporation|:Evap.Avg]]
+| {{Nts|17000}}
+| {{Nts|15}}<ref name="ISA2008"/>
+|
+|
+|
+|
+| {{Nts|0.03}}<ref name="ECN2006"/>
+|
+| {{Nts|883}}<ref name="wna"/>
+| {{Nts|42}}<ref name="IPCC"/>
+|-
+| align=left|[[Geothermal power]]
+|
+|
+| {{Ntsh|10}}Fresh:0–20<ref name="utilization"/><br />5,300
+| {{Ntsh|10}}Fresh:0–20<ref name="utilization"/><br />5,300
+| {{Ntsh|40}}T<sub>L</sub>0–1<ref name="IPCC"/><br />T<sub>H</sub>91–122
+| {{Nts|0.16}}<ref name="utilization"/>
+| {{Nts|0}}<ref name="utilization"/>
+| {{Nts|0.08}}<ref name="utilization"/>
+| {{Nts|0}}<ref name="utilization"/>
+|
+|
+|
+| {{Ntsh|82}}73-90+<ref name="IPCC"/>
+|-
+| align=left|[[Concentrating solar power|Conc. solar]]
+|
+|
+| {{Ntsh|3150}}2,800–3,500
+| {{Ntsh|3150}}2,800–3,500
+| {{Nts|40}}±15#
+|
+|
+|
+|
+|
+|
+|
+| {{Ntsh|64.55}}56.2–72.9<ref name="NRELSolar">{{cite web |url=http://www.nrel.gov/csp/pdfs/35060.pdf |title=Executive Summary: Assessment of Parabolic Trough and Power Tower Solar Technology Cost and Performance Forecasts |accessdate=16 October 2008 |date=October 2003 |work=National Renewable Energy Laboratory |url-status=dead |archiveurl=https://web.archive.org/web/20081006011035/http://www.nrel.gov/csp/pdfs/35060.pdf |archivedate=6 October 2008}}</ref>
+|-
+| align=left|[[Photovoltaics]]
+|
+|
+| {{Ntsh|0}}Minimal
+| {{Ntsh|0}}Minimal
+| {{Nts|106}}<ref name="ISA2008"/>
+|
+|
+|
+|
+| {{Ntsh|0.6}}0.3–0.9<ref name="ECN2006"/>
+|
+|
+| {{Ntsh|16.5}}14<ref name="IPCC"/>-19<ref name="THSolarVsWind">{{cite web|url=http://www.treehugger.com/files/2008/03/solar-versus-wind-power.php |title=Solar Versus Wind Power: Which Has The Most Stable Power Output? |accessdate=16 October 2008 |last=Laumer |first=John |date=June 2008 |work=Treehugger }}</ref>
+|-
+| align=left|[[Wind power]]
+|
+|
+| {{Ntsh|0}}Minimal
+| {{Ntsh|0}}Minimal
+| {{Nts|21}}<ref name="ISA2008"/>
+|
+|
+|
+|
+|
+|
+| {{Nts|271}}<ref>[http://www.wind-works.org/articles/BreathLife.html Wind Energy – Accidents & Safety] 1 May 2013 Paul Gipe "A Summary of Fatal Accidents in Wind Energy": Deaths per TWh of cumulative generation – 0.031</ref>
+| {{Ntsh|30.5}}21<ref name="IPCC"/>-40<ref name="THSolarVsWind"/><ref name='BWEAMyth'>{{cite web|url=http://www.bwea.com/pdf/ref_three.pdf |title=Blowing Away the Myths |accessdate=16 October 2008 |date=February 2005 |work=The British Wind Energy Association |url-status=dead |archiveurl=https://web.archive.org/web/20070710024744/http://www.bwea.com/pdf/ref_three.pdf |archivedate=10 July 2007 }}</ref>
+|-
+| align=left|[[Tidal power]] 
+|  
+| 
+| {{Ntsh|0}}Minimal
+| {{Nts|55,917.68}}<ref name="TID2020">{{cite journal |last1=Kaddoura |first1=Mohamad |last2=Tivander |first2=Johan |last3=Molander |first3=Sverker |title= life cycle assessment of electricity generation from an array of subsea tidal kite prototypes |journal=Energies |date=2020 |volume=13 |issue=2 |pages=456 |doi= 10.3390/en13020456 |doi-access=free }}</ref>
+| {{Nts|26.3}}<ref name="TID2020"/>
+| {{Nts|0.0622}}<ref name="TID2020"/>
+| {{Nts|0.159}}<ref name="TID2020"/>
+| 
+| {{Nts|0.032}}<ref name="TID2020"/>
+| 
+| 
+| 
+| {{Nts|46}}<ref name="TID2020"/>
+|- class="sortbottom"
+! Feedstock/ fuel/ resource
+! Raw material production<br />L/MW·h<br />[L/GJ]
+! Fermentation/ processing/refining<br />L/MW·h<br />[L/GJ]
+! Electricity generation&nbsp;with closed-loop cooling&nbsp;L/MW·h
+! Total water consumption<br />L/MW·h<ref name="WEF-Fall2008-CERA"/>
+! CO<sub>2</sub>-eq<br />kg/MW·h<sub>e</sub>
+! SO<sub>2</sub><br />kg/MW·h
+! NO<sub>x</sub><br />kg/MW·h
+! H<sub>2</sub>S<br />kg/MW·h
+! Particulate<br />kg/MW·h
+! Cd<br />mg/MW·h
+! Hg<br />mg/MW·h
+! Lethal on-site accidents<br />deaths/TW·yr
+! Average capacity factor<br />%
+|}Source(s): Adapted from US Department of Energy, Energy Demand on Water Resources. Report to Congress on the Interdependence of Energy and Water, December 2006 (except where noted).<br />*Cambridge Energy Research Associates (CERA) estimate. #Educated estimate.<br />Water Requirements for Existing and Emerging Thermoelectric Plant Technologies. US Department of Energy, National Energy Technology Laboratory, August 2008.<br />Note(s): 3.6 GJ = gigajoule(s) == 1 MW·h = megawatt-hour(s), thus 1 L/GJ = 3.6 L/MW·h. B&nbsp;=&nbsp;Black&nbsp;coal&nbsp;(supercritical)-(new&nbsp;subcritical), Br&nbsp;=&nbsp;Brown&nbsp;coal&nbsp;(new&nbsp;subcritical), H&nbsp;=&nbsp;Hard&nbsp;coal, L&nbsp;=&nbsp;Lignite, cc&nbsp;=&nbsp;combined&nbsp;cycle, oc&nbsp;=&nbsp;open&nbsp;cycle, T<sub>L</sub>&nbsp;=&nbsp;low-temperature/closed-circuit&nbsp;(geothermal&nbsp;doublet), T<sub>H</sub>&nbsp;=&nbsp;high-temperature/open-circuit.
+
+==Fossil fuels==
+{{more citations needed|date=January 2018|section}}
+
+{{Main|Fossil fuel}}
+{{See also|Environmental impact of the oil shale industry}}
+Most electricity today is generated by burning fossil fuels and producing [[steam]] which is then used to drive a [[steam turbine]] that, in turn, drives an [[electrical generator]].
+
+Such systems allow electricity to be generated where it is needed, since fossil fuels can readily be transported. They also take advantage of a large infrastructure designed to support consumer [[automobile]]s. The world's supply of fossil fuels is large, but finite. Exhaustion of low-cost fossil fuels will have significant consequences for energy sources as well as for the manufacture of [[plastic]]s and many other things. Various estimates have been calculated for exactly when it will be exhausted (see [[Peak oil]]). New sources of fossil fuels keep being discovered, although the rate of discovery is slowing while the difficulty of extraction simultaneously increases.
+
+More serious are concerns about the emissions that result from [[Flue-gas emissions from fossil-fuel combustion|fossil fuel burning]]. Fossil fuels constitute a significant repository of [[carbon]] buried deep underground. Burning them results in the conversion of this carbon to [[carbon dioxide]], which is then released into the atmosphere. The estimated CO2 emission from the world's electrical power industry is 10 billion tonnes yearly.<ref>{{Cite web | url=https://www.sciencedaily.com/releases/2007/11/071114163448.htm |title = Carbon Dioxide Emissions from Power Plants Rated Worldwide}}</ref> This results in an increase in the Earth's levels of atmospheric carbon dioxide, which enhances the [[greenhouse effect]] and contributes to [[global warming]]. The linkage between increased carbon dioxide and global warming is well accepted, though fossil-fuel producers vigorously contest these findings.
+
+Depending on the particular fossil fuel and the method of burning, other emissions may be produced as well.  [[Ozone]], sulfur dioxide, [[Nitrogen oxide|NO<sub>2</sub>]] and other gases are often released, as well as [[Atmospheric particulate matter|particulate matter]].<ref>{{Cite web|url=https://www.eia.gov/energyexplained/energy-and-the-environment/where-greenhouse-gases-come-from.php|title=Where greenhouse gases come from – U.S. Energy Information Administration (EIA)|website=www.eia.gov|access-date=2019-11-23}}</ref> Sulfur and nitrogen oxides contribute to [[smog]] and [[acid rain]]. In the past, plant owners addressed this problem by building very tall [[flue-gas stack]]s, so that the pollutants would be diluted in the atmosphere. While this helps reduce local contamination, it does not help at all with global issues.
+
+Fossil fuels, particularly [[coal]], also contain dilute [[radioactive]] material, and burning them in very large quantities releases this material into the environment, leading to low levels of local and global [[radioactive contamination]], the levels of which are, ironically, higher than a [[nuclear power station]] as their radioactive contaminants are controlled and stored.
+
+Coal also contains traces of toxic heavy elements such as [[Mercury (element)|mercury]], [[arsenic]] and others. Mercury vaporized in a power plant's [[boiler]] may stay suspended in the atmosphere and circulate around the world. While a substantial inventory of mercury exists in the environment, as other man-made emissions of mercury become better controlled, power plant emissions become a significant fraction of the remaining emissions. Power plant emissions of mercury in the United States are thought to be about 50 tons per year in 2003, and several hundred tons per year in [[Electric power industry in China|China]]. Power plant designers can fit equipment to power stations to reduce emissions.
+
+According to Environment Canada:
+<blockquote>"The electricity sector is unique among industrial sectors in its very large contribution to emissions associated with nearly all air issues. Electricity generation produces a large share of Canadian nitrogen oxides and sulfur dioxide emissions, which contribute to smog and acid rain and the formation of fine particulate matter. It is the largest uncontrolled industrial source of mercury emissions in Canada. Fossil fuel-fired electric power plants also emit carbon dioxide, which may contribute to climate change. In addition, the sector has significant impacts on water and habitat and species. In particular, hydro dams and transmission lines have significant effects on water and biodiversity."<ref>{{cite web|url=https://www.ec.gc.ca/energie-energy/default.asp?lang=En&n=C00AD28F-1|title=Electricity Generation |accessdate=23 March 2007}}</ref>
+</blockquote>
+
+Coal mining practices in the United States have also included [[surface mining|strip mining]] and [[mountaintop removal mining|removing mountain tops]]. Mill tailings are left out bare and have been leached into local rivers and resulted in most or all of the rivers in coal producing areas to run red year round with sulfuric acid that kills all life in the rivers.
+
+The efficiency of some of these systems can be improved by co-generation and geothermal ([[combined heat and power]]) methods. Process steam can be extracted from steam turbines. [[Waste heat]] produced by [[thermal]] generating stations can be used for space heating of nearby buildings. By combining electric power production and heating, less fuel is consumed, thereby reducing the environmental effects compared with separate heat and power systems.
+
+==Switching from fuels to electricity==
+Electric cars burn no petroleum, thereby shifting any environmental impact from the car user to the electric utility. In [[Energy in South Africa|South Africa an electric]] car, will be powered by coal generated electricity and harm the environment. In [[Electricity sector in Norway|Norway an electric]] car will be powered by hydroelectricity and be harmless. Electric cars by themselves are neither beneficial or harmful, it depends how your region generates electricity.
+
+Homeowners can get 90% efficiency using natural gas to heat their home. Heat pumps are very efficient and burn no natural gas, shifting the environmental impacts from homeowners to electric utilities. Switching from natural gas to electricity in Alberta Canada burns natural gas and coal at about a 40% efficiency to supply the heat pump. In Quebec Canada where electric resistance heating is common, the heat pump will use 70% less hydroelectricity. Heat pumps may be beneficial for the environment or not, it depends how your region generates electricity.
+
+==Nuclear power==
+{{more citations needed|date=January 2018|section}}
+[[Image:Onagawa Nuclear Power Plant.jpg|thumb|right|The [[Onagawa Nuclear Power Plant]] – a plant that cools by direct use of ocean water, not requiring a cooling tower]]
+{{Main|Environmental effects of nuclear power}}
+{{See also|Nuclear power debate}}
+Nuclear power plants do not burn fossil fuels and so do not directly emit carbon dioxide; because of the high energy yield of nuclear fuels, the carbon dioxide emitted during mining, enrichment, fabrication and transport of fuel is small when compared with the carbon dioxide emitted by fossil fuels of similar energy yield.
+
+A large nuclear power plant may reject waste heat to a natural body of water; this can result in undesirable increase of the water temperature with adverse effect on aquatic life.
+
+Emission of radioactivity from a nuclear plant is controlled by regulations. Abnormal operation may result in release of radioactive material on scales ranging from minor to severe, although these scenarios are very rare.
+
+Mining of uranium ore can disrupt the environment around the mine. Disposal of spent fuel is controversial, with many proposed long-term storage schemes under intense review and criticism. Diversion of fresh or spent fuel to weapons production presents a risk of [[nuclear proliferation]]. Finally, the structure of the reactor itself becomes radioactive and will require decades of storage before it can be economically dismantled and in turn disposed of as waste.
+
+==Renewable energy==
+Renewable power technologies can have significant environmental benefits. Unlike [[coal]] and [[natural gas]], they can generate electricity and fuels without releasing significant quantities of CO2 and other greenhouse gases that contribute to climate change, however the greenhouse gas savings from a number of [[biofuel]]s have been found to be much less than originally anticipated, as discussed in the article [[Indirect land use change impacts of biofuels]].
+
+Both solar and wind have been criticized from an aesthetic point of view.<ref>
+{{cite web
+|url=http://www.tvenergy.org/sources-windturbine.htm
+|title=Small Scale Wind Energy Factsheet
+|accessdate=19 September 2007
+|date=14 February 2007
+|publisher=Thames Valley Energy}}
+</ref> However, methods and opportunities exist to deploy these renewable technologies efficiently and unobtrusively: fixed solar collectors can double as [[noise barrier]]s along highways, and extensive roadway, parking lot, and roof-top area is currently available; [[photovoltaic cell|amorphous photovoltaic cells]] can also be used to tint windows and produce energy.<ref>
+{{cite web
+|url=http://energypriorities.com/entries/2006/05/xsunx_power_glass_bipv.php
+|title=Thin Film Could Soon Make Solar Glass and Facades a Practical Power Source
+|accessdate=19 September 2007
+|author=Denis Du Bois
+|date=22 May 2006
+|publisher=Energy Priorities}}
+</ref> Advocates of [[renewable energy]] also argue that current infrastructure is less aesthetically pleasing than alternatives, but sited further from the view of most critics.<ref>
+{{cite news
+|url=http://news.bbc.co.uk/1/hi/talking_point/3266673.stm
+|title=What is the worst eyesore in the UK?
+|accessdate=19 September 2007
+|quote=I really wish people wouldn't criticize wind farms. I would much rather have 12 hills full of wind turbines than 1 single nuclear power station. |work=BBC News | date=21 November 2003}}
+</ref>
+
+=== Hydroelectricity ===
+{{more citations needed|date=January 2018|section}}
+{{Main|Hydroelectricity#Advantages_and_disadvantages}}
+The major advantage of conventional [[hydroelectric]] [[dams]] with [[reservoirs]] is their ability to store potential power for later electrical production. The combination of a natural supply of energy and production on demand has made hydro power the largest source of renewable energy by far. Other advantages include longer life than fuel-fired generation, low operating costs, and the provision of facilities for water sports.  Some dams also operate as pumped-storage plants balancing supply and demand in the generation system. Overall, hydroelectric power can be less expensive than electricity generated from fossil fuels or nuclear energy, and areas with abundant hydroelectric power attract industry.
+
+However, in addition to the advantages above, there are several disadvantages to dams that create [[Environmental impacts of reservoirs|large reservoirs]].  These may include: dislocation of people living where the reservoirs are planned, release of [[Greenhouse gas#Life-cycle greenhouse-gas emissions of energy sources|significant amounts of carbon dioxide]] at construction and flooding of the reservoir, disruption of aquatic ecosystems and bird life, adverse impacts on the river environment, potential risks of sabotage and terrorism, and in rare cases catastrophic failure of the dam wall.
+
+Some dams only generate power and serve no other purpose, but in many places large reservoirs are needed for flood control and/or irrigation, adding a hydroelectric portion is a common way to pay for a new reservoir. Flood control protects life/property and irrigation supports increased agriculture. Without power turbines, the downstream river environment would improve in several ways, however dam and reservoir concerns would remain unchanged.
+
+[[Small hydro]] and [[Run-of-the-river hydroelectricity|run-of-the-river]] are two low impact alternatives to hydroelectric reservoirs, although they may produce [[Intermittent energy source|intermittent power]] due to a lack of stored water.
+
+====Tidal====
+{{further|Tidal power#Environmental concerns}}
+
+=====Tidal turbines=====
+
+Land constrictions such as straits or inlets can create high velocities at specific sites, which can be captured with the use of turbines. These turbines can be horizontal, vertical, open, or ducted and are typically placed near the bottom of the water column.
+
+The main environmental concern with tidal energy is associated with blade strike and entanglement of marine organisms as high speed water increases the risk of organisms being pushed near or through these devices. As with all offshore renewable energies, there is also a concern about how the creation of EMF and acoustic outputs may affect marine organisms. Because these devices are in the water, the acoustic output can be greater than those created with offshore wind energy. Depending on the frequency and amplitude of sound generated by the tidal energy devices, this acoustic output can have varying effects on marine mammals (particularly those who echo-locate to communicate and navigate in the marine environment such as dolphins and whales). Tidal energy removal can also cause environmental concerns such as degrading far-field water quality and disrupting [[sediment]] processes. Depending on the size of the project, these effects can range from small traces of sediment build up near the tidal device to severely affecting nearshore ecosystems and processes.<ref name="Tethys">{{cite web|title=Tethys|url=http://tethys.pnnl.gov/}}</ref>
+
+=====Tidal barrage=====
+
+[[Tidal barrage]]s are dams built across the entrance to a bay or estuary that captures potential tidal energy with turbines similar to a conventional hydrokinetic dam. Energy is collected while the height difference on either side of the dam is greatest, at low or high tide. A minimum height fluctuation of 5 meters is required to justify the construction, so only 40 locations worldwide have been identified as feasible.
+
+Installing a barrage may change the shoreline within the bay or [[estuary]], affecting a large ecosystem that depends on tidal flats. Inhibiting the flow of water in and out of the bay, there may also be less flushing of the bay or estuary, causing additional turbidity (suspended solids) and less saltwater, which may result in the death of fish that act as a vital food source to birds and mammals. Migrating fish may also be unable to access breeding streams, and may attempt to pass through the turbines. The same acoustic concerns apply to tidal barrages. Decreasing shipping accessibility can become a socio-economic issue, though locks can be added to allow slow passage. However, the barrage may improve the local economy by increasing land access as a bridge. Calmer waters may also allow better recreation in the bay or estuary.<ref name="Tethys"/>
+
+===Biomass===
+{{further|Biomass#Environmental impact}}
+
+Electrical power can be generated by burning anything which will combust. Some electrical power is generated by burning crops which are grown specifically for the purpose. Usually this is done by fermenting plant matter to produce [[ethanol]], which is then burned. This may also be done by allowing organic matter to decay, producing [[biogas]], which is then burned. Also, when burned, wood is a form of biomass fuel.
+
+Burning biomass produces many of the same emissions as burning fossil fuels. However, growing biomass captures carbon dioxide out of the air, so that the net contribution to global atmospheric carbon dioxide levels is small.
+
+The process of growing biomass is subject to the same environmental concerns as any kind of [[agriculture]]. It uses a large amount of land, and [[fertilizer]]s and [[pesticide]]s may be necessary for cost-effective growth. Biomass that is produced as a by-product of agriculture shows some promise, but most such biomass is currently being used, for plowing back into the soil as fertilizer if nothing else.
+
+===Wind power===<!-- This section is linked from [[Wind turbine]] -->
+{{Main|Environmental effects of wind power}}
+
+====Onshore wind====
+
+Wind power harnesses mechanical energy from the constant flow of air over the surface of the earth. Wind power stations generally consist of [[wind farm]]s, fields of [[wind turbine]]s in locations with relatively high winds. A primary publicity issue regarding wind turbines are their older predecessors, such as the [[Altamont Pass Wind Farm]] in California. These older, smaller, wind turbines are rather noisy and densely located, making them very unattractive to the local population. The downwind side of the turbine does disrupt local low-level winds. Modern large wind turbines have mitigated these concerns, and have become a commercially important energy source. Many homeowners in areas with high winds and expensive electricity set up small wind turbines to reduce their electric bills.
+
+A modern wind farm, when installed on agricultural land, has one of the lowest environmental impacts of all energy sources:<ref name=sustain>[http://www.sustainabilitycentre.com.au/WindPowersStrength.pdf Why Australia needs wind power] {{webarchive |url=https://web.archive.org/web/20070101080556/http://www.sustainabilitycentre.com.au/WindPowersStrength.pdf |date=1 January 2007 }}</ref>
+* It occupies less land area per kilowatt-hour (kWh) of electricity generated than any other renewable energy conversion system, and is compatible with grazing and crops.
+* It generates the energy used in its construction within just months of operation.
+* Greenhouse gas emissions and air pollution produced by its construction are small and declining. There are no emissions or pollution produced by its operation.
+* Modern wind turbines rotate so slowly (in terms of revolutions per minute) that they are rarely a hazard to birds.<ref name=sustain/>
+
+Landscape and heritage issues may be a significant issue for certain wind farms. However, when appropriate planning procedures are followed, the heritage and landscape risks should be minimal. Some people may still object to wind farms, perhaps on the grounds of aesthetics, but there is still the supportive opinions of the broader community and the need to address the threats posed by climate change.<ref>http://www.tai.org.au/documents/dp_fulltext/DP91.pdf {{Webarchive|url=https://web.archive.org/web/20120225091609/http://www.tai.org.au/documents/dp_fulltext/DP91.pdf |date=25 February 2012 }} Wind Farms
+The facts and the fallacies</ref>
+
+====Offshore wind====
+
+Offshore wind is similar to terrestrial wind technologies, as a large [[windmill]]-like turbine located in a fresh or saltwater environment. Wind causes the blades to rotate, which is then turned into [[electricity]] and connected to the grid with cables. The advantages of offshore wind are that winds are stronger and more consistent, allowing turbines of much larger size to be erected by vessels. The disadvantages are the difficulties of placing a structure in a dynamic ocean environment.<ref name="Tethys"/>
+
+The turbines are often scaled-up versions of existing land technologies. However, the foundations are unique to offshore wind and are listed below:
+
+=====Monopile foundation=====
+
+Monopile foundations are used in shallow depth applications (0–30 m) and consist of a pile being driven to varying depths into the seabed (10–40 m) depending on the soil conditions. The pile-driving construction process is an environmental concern as the noise produced is incredibly loud and propagates far in the water, even after mitigation strategies such as bubble shields, slow start, and acoustic cladding. The footprint is relatively small, but may still cause scouring or artificial reefs. Transmission lines also produce an electromagnetic field that may be harmful to some marine organisms.<ref name="Tethys"/>
+
+=====Tripod fixed bottom=====
+
+Tripod fixed bottom foundations are used in transitional depth applications (20–80 m) and consist of three legs connecting to a central shaft that supports the turbine base. Each leg has a pile driven into the seabed, though less depth is necessary because of the wide foundation. The environmental effects are a combination of those for monopile and gravity foundations.<ref name="Tethys"/>
+
+=====Gravity foundation=====
+
+Gravity foundations are used in shallow depth applications (0–30 m) and consist of a large and heavy base constructed of steel or concrete to rest on the seabed. The footprint is relatively large and may cause scouring, artificial reefs, or physical destruction of habitat upon introduction. Transmission lines also produce an electromagnetic field that may be harmful to some marine organisms.<ref name="Tethys"/>
+
+=====Gravity tripod=====
+
+Gravity tripod foundations are used in transitional depth applications (10–40 m) and consist of two heavy concrete structures connected by three legs, one structure sitting on the seabed while the other is above the water. As of 2013, no offshore windfarms are currently using this foundation. The environmental concerns are identical to those of gravity foundations, though the scouring effect may be less significant depending on the design.<ref name="Tethys"/>
+
+=====Floating structure=====
+
+Floating structure foundations are used in deep depth applications (40–900 m) and consist of a balanced floating structure moored to the seabed with fixed cables. The floating structure may be stabilized using buoyancy, the mooring lines, or a ballast. The mooring lines may cause minor scouring or a potential for collision. Transmission lines also produce an electromagnetic field that may be harmful to some marine organisms.<ref name="Tethys"/>
+
+'''Ecological Impact of Wind Energy'''
+
+One large environmental concern of wind turbines is the impact on wildlife. Wind turbines and their associated infrastructure – notably power lines and towers – are among the fastest-growing threats to birds and bats in the United States and Canada. Bird and bat deaths often occur when the animals collide with the turbine blades.<ref>{{Cite web|url=https://abcbirds.org/wind-energy-threatens-birds/|title=Understanding the Threat Wind Energy Poses to Birds|date=2017-04-08|website=American Bird Conservancy|language=en|access-date=2019-11-23}}</ref> They are also harmed by collisions and electrocutions with transmission lines. Even though siting of wind energy plants are thoroughly reviewed before construction, they can be a cause of habitat loss.
+
+There is also concern of how wind energy impacts weather and climate change. Although wind energy could have the least amount of contribution to climate change, compared to other electricity generators, it still has some room for improvement. Wind turbines can impact the weather of its close vicinity, affecting temperature and rainfall.<ref>{{Cite web|url=https://www.scientificamerican.com/article/wind-power-found-to-affect-local-climate/|title=Wind Power Found to Affect Local Climate|last=Conversation|first=Daniel Kirk-Davidoff,The|website=Scientific American|language=en|access-date=2019-11-23}}</ref> There are also studies suggesting that large scale wind farms could increase temperatures. Using wind turbines to meet 10 percent of global energy demand in 2100 could cause temperatures to rise by one degree Celsius in the regions on land where the wind farms are installed, including a smaller increase in areas beyond those regions.<ref>{{Cite web|url=http://news.mit.edu/2010/climate-wind-0312|title=Wind resistance|website=MIT News|access-date=2019-11-23}}</ref>
+
+===Geothermal power===
+{{Main|Geothermal power}}
+
+Geothermal energy is the heat of the Earth, which can be tapped into to produce electricity in power plants. Warm water produced from geothermal sources can be used for industry, agriculture, bathing and cleansing. Where underground steam sources can be tapped, the steam is used to run a steam turbine. Geothermal steam sources have a finite life as underground water is depleted. Arrangements that circulate surface water through rock formations to produce hot water or steam are, on a human-relevant time scale, renewable.
+
+While a geothermal power plant does not burn any fuel, it will still have emissions due to substances other than steam which come up from the geothermal wells. These may include [[hydrogen sulfide]], and carbon dioxide. Some geothermal steam sources entrain non-soluble minerals that must be removed from the steam before it is used for generation; this material must be properly disposed. Any (closed cycle) steam power plant requires cooling water for [[Condenser (heat transfer)|condenser]]s; diversion of cooling water from natural sources, and its increased temperature when returned to streams or lakes, may have a significant impact on local ecosystems.
+
+Removal of ground water and accelerated cooling of rock formations can cause earth tremors. Enhanced geothermal systems (EGS) fracture underground rock to produce more steam; such projects can cause earthquakes. Certain geothermal projects (such as one near Basel, Switzerland in 2006) have been suspended or canceled owing to objectionable seismicity induced by geothermal recovery.<ref name=Fairley10>Peter Fairley, ''Earthquakes Hinder Green Energy Plans'', ''IEEE Spectrum'',ISSN 0018-9235, Volume 48 No. 10 (North American edition), April 2011 pp. 14–16</ref> However, risks associated with "hydrofracturing induced seismicity are low compared to that of natural earthquakes, and can be reduced by careful management and monitoring" and "should not be regarded as an impediment to further development of the Hot Rock geothermal energy resource".<ref>{{cite web |url=http://www.ga.gov.au/image_cache/GA11478.pdf |title=Induced Seismicity and Geothermal Power Development in Australia |author=Geoscience Australia |publisher=Australian Government |url-status=dead |archiveurl=https://web.archive.org/web/20111011143551/http://www.ga.gov.au/image_cache/GA11478.pdf |archivedate=11 October 2011 |df=dmy-all }}</ref>
+
+===Solar power===
+{{Main|Solar power}}
+
+Currently solar photovoltaic power is used primarily in Germany and Spain where the governments offer financial incentives. In the U.S., Washington State also provides financial incentives. Photovoltaic power is also more common, as one might expect, in areas where sunlight is abundant.
+
+It works by converting the sun's radiation into direct current (DC) power by use of [[photovoltaic]] cells. This power can then be converted into the more common AC power and fed to the [[Electrical grid|power grid]].
+
+Solar photovoltaic power offers a viable alternative to fossils fuels for its cleanliness and supply, although at a high production cost. Future technology improvements are expected to bring this cost down to a more competitive range.
+
+Its negative impact on the environment lies in the creation of the solar cells which are made primarily of [[silica]] (from sand) and the extraction of silicon from silica may require the use of fossil fuels, although newer manufacturing processes have eliminated CO<sub>2</sub> production. Solar power carries an upfront cost to the environment via production, but offers clean energy throughout the lifespan of the solar cell.
+
+Large scale electricity generation using photovoltaic power requires a large amount of land, due to the low [[power density]] of photovoltaic power. Land use can be reduced by installing on buildings and other built up areas, though this reduces efficiency.
+
+===Concentrated solar power===
+{{Main|Concentrated solar power}}
+
+Also known as [[Solar thermal energy|solar thermal]], this technology uses various types of mirrors to concentrate sunlight and produce heat. This heat is used to generate electricity in a standard [[Rankine cycle]] turbine. Like most thermoelectric power generation, this consumes water. This can be a problem, as solar powerplants are most commonly located in a desert environment due to the need for sunlight and large amounts of land. Many concentrated solar systems also use exotic fluids to absorb and collect heat while remaining at low pressure. These fluids could be dangerous if spilled.<ref>{{cite news| url=http://articles.latimes.com/1999/feb/27/news/mn-12205 | work=Los Angeles Times | title=Storage Tank at Solar Power Plant in Desert Explodes; Immediate Area Is Evacuated | date=27 February 1999}}</ref>
+
+==Negawatt power==
+{{Main|Negawatt power}}
+
+Negawatt power refers to investment to reduce electricity consumption rather than investing to increase supply capacity. In this way investing in Negawatts can be considered as an alternative to a new power station and the costs and environmental concerns can be compared.
+
+Negawatt investment alternatives to reduce consumption by improving efficiency include:
+* Providing customers with energy efficient lamps – low environmental impact
+* Improved thermal insulation and airtightness for buildings – low environmental impact
+* Replacing older industrial plant – low environmental impact. Can have a positive impact due to reduced emissions.
+
+Negawatt investment alternatives to reduce peak electrical load by time shifting demand include:
+* [[Storage heater]]s – older systems had asbestos. Newer systems have low environmental impact.
+* [[Demand response]] control systems where the electricity board can control certain customer loads – minimal environmental impact
+* [[Thermal storage]] systems such as ice storage systems to make ice during the night and store it to use it for air conditioning during the day – minimal environmental impact
+* [[Pumped storage hydroelectricity]] – can have a significant environmental impact – see [[Hydroelectricity]]
+* other [[Grid energy storage]] technologies – impact varies
+
+Note that time shifting does not reduce total energy consumed or system efficiency; however, it can be used to avoid the need to build a new power station to cope with a peak load.
+
+==See also==
+{{Portal|Energy}}
+*[[Air pollution]]
+*[[Alta controversy]]
+*[[The Carbon Principles]]
+*[[Cost of electricity by source]] – includes environmental and health costs
+*[[EKOenergy]] – ecolabel for electricity managed by environmental NGOs
+*[[Environmental impact of the energy industry]]
+*[[Eugene Green Energy Standard]]
+*[[Flue-gas desulfurization]]
+*[[Flue-gas emissions from fossil-fuel combustion]]
+*[[Fossil-fuel power plant]]
+*[[Life-cycle greenhouse-gas emissions of energy sources]]
+*[[List of countries by electricity production from renewable source]]
+*[[List of energy storage projects]]
+*[[Nuclear power]]
+*[[Nuclear whistleblowers]]
+*[[Power stations]]
+*[[Scientific opinion on climate change]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://abc.net.au/4corners/special_eds/20050822/ Who's Afraid Of Nuclear Power?] – ABC Australia – 4 Corners – International Nuclear Energy Policy Histories, Trends & Debates
+
+{{Environmental effects of energy}}
+
+{{DEFAULTSORT:Environmental Concerns With Electricity Generation}}
+[[Category:Renewable energy policy]]
+[[Category:Landscape]]
+[[Category:Power stations]]
+[[Category:Environmental impact of the energy industry|Electricity generation]]

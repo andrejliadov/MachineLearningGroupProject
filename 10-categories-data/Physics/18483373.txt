@@ -1,0 +1,45 @@
+The '''Beard and Chuang model''' is a well known and leading theoretical force balance model used to derive the rotational cross-sections of [[raindrop]]s in their equilibrium state by employing [[Chebyshev polynomials]] in series.  
+[[File:Beard and Chuang drop model.png|thumb|Beard and Chuang model of raindrop]]
+
+The radius-vector of the raindrop's surface <math>r(\theta)</math> in vertical angular direction <math>\theta</math> is equal to
+
+<math>r(\theta)=a [ 1 + \sum c_n cos(n \theta) ] </math>,
+
+where shape coefficients <math>c_n \cdot 10^4</math> are defined for the raindrops with different equivolumetric diameter as in following table
+{| class="wikitable"
+|-
+! d(mm) !! n = 0 !! 1 !! 2 !! 3 !! 4 !! 5 !! 6 !! 7 !! 8 !! 9 !! 10
+|-
+| 2.0 || -131 || -120 ||  -376 ||  -96 ||  -4 ||  15 ||   5 ||   0 ||  -2 ||  0 ||  1  
+|-
+| 2.5 || -201 || -172 ||  -567 || -137 ||   3 ||  29 ||   8 ||  -2 ||  -4 ||  0 ||  1
+|-
+| 3.0 || -282 || -230 ||  -779 || -175 ||  21 ||  46 ||  11 ||  -6 ||  -7 ||  0 ||  3
+|-
+| 3.5 || -369 || -285 ||  -998 || -207 ||  48 ||  68 ||  13 || -13 || -10 ||  0 ||  5
+|-
+| 4.0 || -458 || -335 || -1211 || -227 ||  83 ||  89 ||  12 || -21 || -13 ||  1 ||  8
+|-
+| 4.5 || -549 || -377 || -1421 || -240 || 126 || 110 ||   9 || -31 || -16 ||  4 || 11
+|-
+| 5.0 || -644 || -416 || -1629 || -246 || 176 || 131 ||   2 || -44 || -18 ||  9 || 14
+|-
+| 5.5 || -742 || -454 || -1837 || -244 || 234 || 150 ||  -7 || -58 || -19 || 15 || 19
+|-
+| 6.0 || -840 || -480 || -2034 || -237 || 297 || 166 || -21 || -72 || -19 || 24 || 23
+|}
+
+== Applications ==
+
+The description of raindrop shape has some rather practical uses.  Understanding rain is particularly important with regard to the propagation of electromagnetic signals.  A portion of atmosphere that has rain in it, or a rain cell, has the characteristic of attenuating and [[Polarization (waves)|de-polarizing]] EM signals that pass through it.  The attenuation of such a signal is approximately proportional to the square of the frequency of the signal, and the de-polarization is proportional to the shape distribution of raindrops in the rain cell. 
+
+== References ==
+
+# K. V. Beard and C. Chuang. A new model for the equilibrium shape of raindrops. ''Journal of the Atmospheric Sciences'', '''44''':1509-1524, 1987.
+
+
+[[Category:Precipitation]]
+
+
+{{physics-stub}}
+{{climate-stub}}

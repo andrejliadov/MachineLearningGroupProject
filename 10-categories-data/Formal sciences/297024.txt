@@ -1,0 +1,182 @@
+{{short description|System of interconnected parts in which the failure of one or few parts can trigger the failure of others}}
+[[Image:Networkfailure.gif|thumb|right|An animation demonstrating how a single failure may result in other failures throughout a network.]]
+A '''cascading failure''' is a process in a system of [[interconnection|interconnected]] parts in which the failure of one or few parts can trigger the failure of other parts and so on. Such a failure may happen in many types of systems, including power transmission, computer networking, finance, transportation systems, organisms, the human body, and ecosystems.
+
+Cascading failures may occur when one part of the system fails. When this happens, other parts must then compensate for the failed component. This in turn overloads these nodes, causing them to fail as well, prompting additional nodes to fail one after another.
+
+== In power transmission ==
+
+Cascading failure is common in [[power grid]]s when one of the elements fails (completely or partially) and shifts its load to nearby elements in the system.  Those nearby elements are then pushed beyond their capacity so they become overloaded and shift their load onto other elements.  Cascading failure is a common effect seen in [[high voltage]] systems, where a [[single point of failure]] (SPF) on a fully loaded or slightly overloaded system results in a sudden spike across all nodes of the system. This surge current can induce the already overloaded nodes into failure, setting off more overloads and thereby taking down the entire system in a very short time.
+
+This failure process cascades through the elements of the system like a ripple on a pond and continues until substantially all of the elements in the system are compromised and/or the system becomes functionally disconnected from the source of its load. For example, under certain conditions a large power grid can collapse after the failure of a single transformer.
+
+Monitoring the operation of a system, in [[real-time computing|real-time]], and judicious disconnection of parts can help stop a cascade.  Another common technique is to calculate a safety margin for the system by computer simulation of possible failures, to establish safe operating levels below which none of the calculated scenarios is predicted to cause cascading failure, and to identify the parts of the network which are most likely to cause cascading failures.<ref name="chao">{{cite arXiv |last1=Zhai |first1=Chao |title=Modeling and Identification of Worst-Case Cascading Failures in Power Systems |eprint=1703.05232 |class=cs.SY |year=2017}}</ref>
+
+One of the primary problems with preventing electrical grid failures is that the speed of the control signal is no faster than the speed of the propagating power overload, i.e. since both the control signal and the electrical power are moving at the same speed, it is not possible to isolate the outage by sending a warning ahead to isolate the element.
+
+The question if power grid  failures are correlated have been studied in Daqing Li et al.<ref>{{Cite journal|last1=Daqing|first1=Li|last2=Yinan|first2=Jiang|last3=Rui|first3=Kang|last4=Havlin|first4=Shlomo|date=2014-06-20|title=Spatial correlation analysis of cascading failures: Congestions and Blackouts|journal=Scientific Reports|language=En|volume=4|issue=1|pages=5381|doi=10.1038/srep05381|pmid=24946927|pmc=4064325|issn=2045-2322|bibcode=2014NatSR...4E5381D}}</ref> as well as by Paul DH Hines et al.<ref>{{Cite journal|last1=Hines|first1=Paul D. H.|last2=Dobson|first2=Ian|last3=Rezaei|first3=Pooya|date=2016|title=Cascading Power Outages Propagate Locally in an Influence Graph that is not the Actual Grid Topology|arxiv=1508.01775|journal=IEEE Transactions on Power Systems|pages=1|doi=10.1109/TPWRS.2016.2578259|s2cid=2097502|issn=0885-8950}}</ref>
+
+=== Examples ===
+Cascading failure caused the following [[power outage]]s:
+* [[Northeast blackout of 1965|Blackout in Northeast America in 1965]]
+* [[1999 Southern Brazil blackout|Blackout in Southern Brazil in 1999]]
+* [[Northeast blackout of 2003|Blackout in Northeast America in 2003]]
+* [[2003 Italy blackout|Blackout in Italy in 2003]]
+* [[2003 London blackout|Blackout in London in 2003]]
+* [[2006 European blackout|European Blackout in 2006]]
+* [[2012 northern India power grid failure|Blackout in Northern India in 2012]]
+* [[2016 South Australian blackout|Blackout in South Australia in 2016]]
+* [[2019 Argentina, Paraguay and Uruguay blackout|Blackout in southeast South America in 2019]]
+
+== In computer networks ==
+
+Cascading failures can also occur in [[computer network]]s (such as the [[Internet]]) in which [[Network traffic control|network traffic]] is severely impaired or halted to or between larger sections of the network, caused by failing or disconnected hardware or software. In this context, the cascading failure is known by the term '''cascade failure'''. A cascade failure can affect large groups of people and systems.
+
+The cause of a cascade failure is usually the overloading of a single, crucial [[Router (computing)|router]] or node, which causes the node to go down, even briefly. It can also be caused by taking a node down for maintenance or upgrades. In either case, traffic is [[routing|routed]] to or through another (alternative) path. This alternative path, as a result, becomes overloaded, causing it to go down, and so on. It will also affect systems which depend on the node for regular operation.
+
+=== Symptoms ===
+
+The symptoms of a cascade failure include: [[packet loss]] and high network [[lag|latency]], not just to single systems, but to whole sections of a network or the internet. The high latency and packet loss is caused by the nodes that fail to operate due to [[congestion collapse]], which causes them to still be present in the network but without much or any useful communication going through them. As a result, routes can still be considered valid, without them actually providing communication.
+
+If enough routes go down because of a cascade failure, a complete section of the network or internet can become unreachable. Although undesired, this can help speed up the recovery from this failure as connections will time out, and other nodes will give up trying to establish connections to the section(s) that have become cut off, decreasing load on the involved nodes.
+
+A common occurrence during a cascade failure is a '''walking failure''', where sections go down, causing the next section to fail, after which the first section comes back up. This '''ripple''' can make several passes through the same sections or connecting nodes before stability is restored.
+
+=== History ===
+
+Cascade failures are a relatively recent development, with the massive increase in traffic and the high interconnectivity between systems and networks. The term was first applied in this context in the late 1990s by a Dutch IT professional and has slowly become a relatively common term for this kind of large-scale failure.{{Citation needed|date=January 2009}}
+
+=== Example ===
+
+Network failures typically start when a single network node fails. Initially, the traffic that would normally go through the node is stopped. Systems and users get errors about not being able to reach hosts. Usually, the redundant systems of an ISP respond very quickly, choosing another path through a different backbone. The routing path through this alternative route is longer, with more [[Hop (telecommunications)|hops]] and subsequently going through more systems that normally do not process the amount of traffic suddenly offered.
+
+This can cause one or more systems along the alternative route to go down, creating similar problems of their own.
+
+Also, related systems are affected in this case. As an example, [[Domain name system|DNS]] resolution might fail and what would normally cause systems to be interconnected, might break connections that are not even directly involved in the actual systems that went down. This, in turn, may cause seemingly unrelated nodes to develop problems, that can cause another cascade failure all on its own.
+
+In December 2012, a partial loss (40%) of [[Gmail]] service occurred globally, for 18 minutes. This loss of service was caused by a routine update of load balancing software which contained faulty logic—in this case, the error was caused by logic using an [https://arstechnica.com/information-technology/2012/12/why-gmail-went-down-google-misconfigured-chromes-sync-server/ inappropriate ''all'' instead of the more appropriate ''some''.] The cascading error was fixed by fully updating a single node in the network instead of partially updating all nodes at one time.
+
+== Cascading structural failure ==
+Certain load-bearing structures with discrete structural components can be subject to the "zipper effect", where the failure of a single structural member increases the load on adjacent members.  In the case of the [[Hyatt Regency walkway collapse]], a suspended walkway (which was already overstressed due to an error in construction) failed when a single vertical suspension rod failed, overloading the neighboring rods which failed sequentially (i.e. like a [[zipper]]). A bridge that can have such a failure is called fracture critical, and numerous bridge collapses have been caused by the failure of a single part. Properly designed structures use an adequate [[factor of safety]] and/or alternate load paths to prevent this type of mechanical cascade failure.<ref name="petroski">{{cite book| title=To Engineer Is Human: The Role of Failure in Structural Design| first=Henry| last=Petroski| year=1992| isbn=978-0-679-73416-1| publisher=Vintage| url-access=registration| url=https://archive.org/details/toengineerishuma00petr}}</ref>
+
+== Other examples ==
+
+=== Biology ===
+[[Biochemical cascade]]s exist in biology, where a small reaction can have system-wide implications. One negative example is [[ischemic cascade]], in which a small [[ischemia|ischemic]] attack releases [[toxin]]s which kill off far more cells than the initial damage, resulting in more toxins being released. Current research is to find a way to block this cascade in [[stroke]] patients to minimize the damage.
+
+In the study of extinction, sometimes the extinction of one species will cause many other extinctions to happen. Such a species is known as a [[keystone species]].
+
+=== Electronics ===
+Another example is the [[Cockcroft–Walton generator]], which can also experience cascade failures wherein one failed [[diode]] can result in all the diodes failing in a fraction of a second.
+
+Yet another example of this effect in a scientific experiment was the [[Implosion (mechanical process)|implosion]] in 2001 of several thousand fragile glass photomultiplier tubes used in the [[Super-Kamiokande]] experiment, where the shock wave caused by the failure of a single detector appears to have triggered the implosion of the other detectors in a chain reaction.
+
+=== Finance ===
+{{main|Systemic risk}} {{main|Cascades in financial networks}}
+In [[finance]], the risk of cascading failures of financial institutions is referred to as ''[[systemic risk]]:'' the failure of one financial institution may cause other financial institutions (its [[Counterparty|counterparties]]) to fail, cascading throughout the system.<ref name="HuangVodenska2013">{{cite journal|last1=Huang|first1=Xuqing|last2=Vodenska|first2=Irena|last3=Havlin|first3=Shlomo|last4=Stanley|first4=H. Eugene|title=Cascading Failures in Bi-partite Graphs: Model for Systemic Risk Propagation|journal=Scientific Reports|volume=3|pages=1219|year=2013|issn=2045-2322|doi=10.1038/srep01219|pmid=23386974|pmc=3564037|arxiv=1210.4973|bibcode=2013NatSR...3E1219H}}</ref>
+Institutions that are believed to pose systemic risk are deemed either "[[too big to fail]]" (TBTF) or "too interconnected to fail" (TICTF), depending on why they appear to pose a threat.
+
+Note however that systemic risk is not due to individual institutions per se, but due to the interconnections. For detailed models in economics and finance, see Elliott et al. (2014) and Acemoglu et al. (2015).<ref name="Acemoglu Ozdaglar Tahbaz-Salehi 2015 pp. 564–608">{{cite journal | last1=Acemoglu | first1=Daron | last2=Ozdaglar | first2=Asuman | last3=Tahbaz-Salehi | first3=Alireza | title=Systemic Risk and Stability in Financial Networks | journal=American Economic Review | publisher=American Economic Association | volume=105 | issue=2 | year=2015 | issn=0002-8282 | doi=10.1257/aer.20130456 | pages=564–608| hdl=1721.1/100979 | s2cid=7447939 | hdl-access=free }}</ref><ref name="Elliott Golub Jackson 2014 pp. 3115–3153">{{cite journal | last1=Elliott | first1=Matthew | last2=Golub | first2=Benjamin | last3=Jackson | first3=Matthew O. | title=Financial Networks and Contagion | journal=American Economic Review | publisher=American Economic Association | volume=104 | issue=10 | year=2014 | issn=0002-8282 | doi=10.1257/aer.104.10.3115 | pages=3115–3153| url=https://authors.library.caltech.edu/51737/1/aer.104.10.3115.pdf }}</ref>
+
+A related (though distinct) type of cascading failure in finance occurs in the stock market, exemplified by the [[2010 Flash Crash]].
+
+For a useful framework to study and predict the effect of cascading failures in finance see.<ref>{{cite journal|last1=Li|first1=W|last2=Kenett|first2=DY|last3=Yamasaki|first3=K|last4=Stanley|first4=HE|last5=Havlin|first5=S|title=Ranking the economic importance of countries and industries|journal=Journal of Network Theory in Finance|volume=3|pages=1–17|year=2017|issn=2055-7795|doi=10.21314/JNTF.2017.031|arxiv=1408.0443|s2cid=6729106}}</ref><ref name="HuangVodenska2013"/>
+A framework based on network theory and cascading failures that  provides useful  tools for policy makers and  for testing macroprudential dynamical stress has been developed.<ref>{{cite journal | title = Dynamical macroprudential stress testing using network theory | authors = S. Levy-Carciente, D.Y. Kenett, A. Avakian, H.E. Stanley, S. Havlin | journal = J. Banking & Finance | volume =  59| issue = 164| date = 2015}}</ref>
+
+== Interdependent cascading failures ==
+[[File:Interdependent_relationship_among_different_infrastructures.tif|thumb|right|Fig. 1: Illustration of the interdependent relationship among different infrastructures]]
+[[File:Schematic_demonstration_of_first-_and_second-order_percolation_transitions.tif|thumb|right|Fig. 2. Schematic demonstration of first- and second-order percolation transitions. In the second-order case, the giant component is continuously approaching zero at the percolation threshold p = <math>p_c</math>. In the first-order case, the giant component approaches zero discontinuously]]
+
+Diverse [[infrastructure]]s such as [[water supply]], [[transportation]], fuel and [[power station]]s are coupled together and depend on each other for functioning, see Fig. 1.  Owing to this coupling, interdependent networks are extremely sensitive to random failures, and in particular to [[Targeted threat|targeted attacks]], such that a failure of a small fraction of nodes in one network can trigger an iterative cascade of failures in several interdependent networks.<ref>{{cite web|title=Report of the Commission to Assess the Threat to the United States from Electromagnetic Pulse (EMP) Attack|url=http://empcommission.org/docs/A2473-EMP_Commission-7MB.pdf}}</ref><ref>{{Cite journal|last1=Rinaldi|first1=S.M.|last2=Peerenboom|first2=J.P.|last3=Kelly|first3=T.K.|date=2001|title=Identifying, understanding, and analyzing critical infrastructure interdependencies|journal= IEEE Control Systems Magazine|volume=21|issue=6|pages=11–25|doi=10.1109/37.969131}}</ref> [[Power outage|Electrical blackouts]] frequently result from a cascade of failures between interdependent networks, and the problem has been dramatically exemplified by the several large-scale blackouts that have occurred in recent years. Blackouts are a fascinating demonstration of the important role played by the dependencies between networks. For example, the [[2003 Italy blackout]] resulted in a widespread failure of the [[Rail transport|railway network]], [[Health system|health care systems]], and [[financial services]] and, in addition, severely influenced the [[telecommunication network]]s. The partial failure of the communication system in turn further impaired the [[electrical grid]] management system, thus producing a positive feedback on the power grid.<ref>{{cite journal|last=V. Rosato |first=Issacharoff, L., Tiriticco, F., Meloni, S., Porcellinis, S.D., & Setola, R. |title=Modelling interdependent infrastructures using interacting dynamical models |journal=International Journal of Critical Infrastructures |year=2008 |volume=4 |pages=63–79 |doi=10.1504/IJCIS.2008.016092 }}</ref> This example emphasizes how inter-dependence can significantly magnify the damage in an interacting network system. A framework to study the cascading failures between coupled networks  based on percolation theory was developed recently.<ref>{{cite journal|last=S. V. Buldyrev|first=R. Parshani, G. Paul, H. E. Stanley, S. Havlin|title=Catastrophic cascade of failures in interdependent networks|journal=Nature|year=2010|volume=464|pages=1025–8|doi=10.1038/nature08932|url=http://havlin.biu.ac.il/Publications.php?keyword=Catastrophic+cascade+of+failures+in+interdependent+networks&year=*&match=all|pmid=20393559|issue=7291
+|arxiv=1012.0206|bibcode=2010Natur.464.1025B|s2cid=1836955}}</ref> The cascading failures can lead to abrupt collapse compare to percolation in a single network where the breakdown of the network is continuous, see Fig. 2.
+Cascading failures in spatially embedded systems have been
+shown to lead to extreme vulnerability.<ref name="BashanBerezin2013">{{cite journal|last1=Bashan|first1=Amir|last2=Berezin|first2=Yehiel|last3=Buldyrev|first3=Sergey V.|last4=Havlin|first4=Shlomo|title=The extreme vulnerability of interdependent spatially embedded networks|journal=Nature Physics|year=2013|issn=1745-2473|doi=10.1038/nphys2727|volume=9|issue=10|pages=667–672|arxiv=1206.2062|bibcode=2013NatPh...9..667B|s2cid=12331944}}</ref> For the dynamic process of cascading failures see ref.<ref>{{Cite journal|last1=Zhou|first1=D.|last2=Bashan|first2=A.|last3=Cohen|first3=R.|last4=Berezin|first4=Y.|last5=Shnerb|first5=N.|last6=Havlin|first6=S.|date=2014|title=Simultaneous first- and second-order percolation transitions in interdependent networks|journal=Phys. Rev. E|volume=90|issue=1|pages=012803|bibcode=2014PhRvE..90a2803Z|doi=10.1103/PhysRevE.90.012803|pmid=25122338|arxiv=1211.2330|s2cid=180058}}</ref> A model for repairing failures in order to avoid cascading failures was developed by Di Muro et al.<ref>{{Cite journal|last1=Di Muro|first1=M. A.|last2=La Rocca|first2=C. E.|last3=Stanley|first3=H. E.|last4=Havlin|first4=S.|last5=Braunstein|first5=L. A.|date=2016-03-09|title=Recovery of Interdependent Networks|journal=Scientific Reports|language=En|volume=6|issue=1|pages=22834|doi=10.1038/srep22834|pmid=26956773|pmc=4783785|issn=2045-2322|arxiv=1512.02555|bibcode=2016NatSR...622834D}}</ref>
+
+Furthermore, it was shown that such interdependent systems when embedded in space are extremely vulnerable to localized attacks or failures. Above a critical radius of damage, the failure may spread to the entire system.<ref>{{Cite journal|last1=Berezin|first1=Yehiel|last2=Bashan|first2=Amir|last3=Danziger|first3=Michael M.|last4=Li|first4=Daqing|last5=Havlin|first5=Shlomo|date=2015-03-11|title=Localized attacks on spatially embedded networks with dependencies|journal=Scientific Reports|language=en|volume=5|issue=1|pages=8934|doi=10.1038/srep08934|pmid=25757572|pmc=4355725|issn=2045-2322|bibcode=2015NatSR...5E8934B}}</ref>
+
+Cascading failures spreading of localized attacks on spatial multiplex networks with a community structure has been studied by Vaknin et al.<ref>{{cite journal |last1=D Vaknin, B Gross, SV Buldyrev, S Havlin |title=Spreading of localized attacks on spatial multiplex networks with a community structure |journal=Physical Review Research |date=2020 |volume=2 |issue=4 |pages=043005}}</ref> Universal features of cascading failures in interdependent networks have been reported Duan et al.<ref>{{cite journal |last1=Dongli Duan, Changchun Lv, Shubin Si, Zhen Wang, Daqing Li, Jianxi Gao, Shlomo Havlin, H Eugene Stanley, Stefano Boccaletti |title=Universal behavior of cascading failures in interdependent networks |journal=Proceedings of the National Academy of Sciences |date=2019 |volume=116 |issue=45 |pages=22452}}</ref> A method for mitigating cascading failures in networks using localized information has been developed by Smolyak et al.<ref>{{cite journal |last1=A Smolyak, O Levy, I Vodenska, S Buldyrev, S Havlin |title=Mitigation of cascading failures in complex networks |journal=Scientific Reports |date=2020 |volume=`0 |issue=1 |pages=1-12}}</ref>
+
+For a comprehensive review on cascading failures in complex networks see Valdez et al.<ref>{{cite journal |last1=Lucas D Valdez, Louis Shekhtman, Cristian E La Rocca, Xin Zhang, Sergey V Buldyrev, Paul A Trunfio, Lidia A Braunstein, Shlomo Havlin |title=Cascading failures in complex networks |journal=Journal of Complex Networks 1 |date=2020 |volume=8 |issue=2}}</ref>
+
+== Model for overload cascading failures ==
+A model for cascading failures due to overload propagation is the Motter–Lai model.<ref>{{Cite journal|last1=Motter|first1=A. E.|last2=Lai|first2=Y. C.|date=2002|title=Cascade-based attacks on complex networks|journal=Phys. Rev. E|volume=66|issue=6 Pt 2|pages=065102|doi=10.1103/PhysRevE.66.065102|pmid=12513335|bibcode=2002PhRvE..66f5102M|arxiv=cond-mat/0301086|s2cid=17189308}}</ref> The tempo-spatial propagation of such failures have been studied by Jichang Zhao et al.<ref>{{Cite journal|last1=Zhao|first1=J.|last2=Li|first2=D.|last3=Sanhedrai|first3=H.|last4=Cohen|first4=R.|last5=Havlin|first5=S.|date=2016|title=Spatio-temporal propagation of cascading overload failures in spatially embedded networks|journal=Nature Communications|volume=7|pages=10094|bibcode=2016NatCo...710094Z|doi=10.1038/ncomms10094|pmid=26754065|pmc=4729926}}</ref>
+
+== See also ==
+{{div col}}
+* [[Power outage|Blackouts]]
+* [[Brittle system]]
+* [[Butterfly effect]]
+* [[Byzantine failure]]
+* [[Cascading rollback]]
+* [[Chain reaction]]
+* [[Chaos theory]]
+* [[Cache stampede]]
+* [[Congestion collapse]]
+* [[Domino effect]]
+* [[For Want of a Nail (proverb)]]
+* [[Network science]] 
+* [[Network theory]]
+* [[Interdependent networks]]
+* [[Kessler Syndrome]]
+* [[Percolation theory]]
+* [[Progressive collapse]]
+* [[Virtuous circle and vicious circle]]
+* [[Wicked problem]]
+{{div col end}}
+
+== References ==
+{{reflist}}
+
+== Further reading ==
+* {{cite web 
+ |url=http://www.jaist.ac.jp/library/thesis/ks-master-2005/abstract/tmiyazak/abstract.pdf 
+ |title=Comparison of defense strategies for cascade breakdown on SF networks with degree correlations 
+ |author=Toshiyuki Miyazaki 
+ |date=1 March 2005 
+ |url-status=dead 
+ |archive-url=https://web.archive.org/web/20090220024018/http://www.jaist.ac.jp/library/thesis/ks-master-2005/abstract/tmiyazak/abstract.pdf 
+ |archive-date=2009-02-20 
+ }}
+* {{cite web
+ |url=http://redmondmag.com/columns/print.asp?EditorialsID=1000 
+ |title=(In)Secure Shell? 
+ |accessdate=2007-09-08 
+ |author=Russ Cooper 
+ |date=1 June 2005 
+ |publisher=RedmondMag.com 
+ |archive-url=https://web.archive.org/web/20070928164525/http://redmondmag.com/columns/print.asp?EditorialsID=1000 
+ |archive-date=2007-09-28 
+ |url-status=dead 
+}}
+* {{cite web 
+ |url=http://www.chds.us/?research/software&d=list 
+ |title=Cascade Net (simulation program) 
+ |accessdate=2007-09-08 
+ |author=US Department of Homeland Security 
+ |date=5 February 2007 
+ |publisher=Center for Homeland Defense and Security 
+ |url-status=dead 
+ |archive-url=https://web.archive.org/web/20081228044520/http://www.chds.us/?research%2Fsoftware&d=list 
+ |archive-date=2008-12-28 
+ }}
+* {{cite journal| title = Cascading failures in complex networks | authors = Lucas D Valdez, Louis Shekhtman, Cristian E La Rocca, Xin Zhang, Sergey V Buldyrev, Paul A Trunfio, Lidia A Braunstein, Shlomo Havlin | journal = Journal of Complex Networks| volume = 8 | issue = 2 | date = 2020}}
+
+== External links ==
+* [https://web.archive.org/web/20060827050151/http://www.windows.ucar.edu/spaceweather/blackout.html Space Weather: Blackout — Massive Power Grid Failure]
+* [https://web.archive.org/web/20071022110507/http://vlab.infotech.monash.edu.au/simulations/networks/cascading-failure/ Cascading failure demo applet] (Monash University's Virtual Lab)
+* A. E. Motter and Y.-C. Lai, [http://chaos1.la.asu.edu/~yclai/papers/PRE_02_ML_3.pdf ''Cascade-based attacks on complex networks,''] Physical Review E (Rapid Communications) 66, 065102 (2002).
+* P. Crucitti, V. Latora and M. Marchiori, [https://pdfs.semanticscholar.org/aeda/97ccce03a5979dd4196fb7544ee0dc546f18.pdf ''Model for cascading failures in complex networks,''] Physical Review E (Rapid Communications) 69, 045104 (2004).
+* [https://web.archive.org/web/20040704132003/http://www.epri.com/programHigh.asp?objid=261741 Protection Strategies for Cascading Grid Failures — A Shortcut Approach]
+* I. Dobson, B. A. Carreras, and D. E. Newman, [https://web.archive.org/web/20060222073252/http://eceserv0.ece.wisc.edu/~dobson/PAPERS/dobsonPEIS05.pdf preprint] A loading-dependent model of probabilistic cascading failure, Probability in the Engineering and Informational Sciences, vol. 19, no. 1, January 2005, pp.&nbsp;15–32.
+* [https://www.pbs.org/wgbh/nova/transcripts/3105_aircrash.html Nova: Crash of Flight 111] on September 2, 1998. [[Swissair Flight 111]] flying from New York to Geneva slammed into the Atlantic Ocean off the coast of Nova Scotia with 229 people aboard. Originally believed a terrorist act. After $39 million investigation, insurance settlement of $1.5 billion and more than four years, investigators unravel the puzzle: cascading failure. What is the legacy of Swissair 111? "We have a window into the internal structure of design, checks and balances, protection, and safety." -David Evans, Editor-in-Chief of Air Safety Week.
+* PhysicsWeb story: [http://physicsweb.org/articles/news/5/11/9 Accident grounds neutrino lab]
+* [http://necsi.edu/affiliates/braha/StructureandDynamics.htm The Structure and Dynamics of Large Scale Organizational Networks (Dan Braha, New England Complex Systems Institute)]
+*From Single Network to Network of Networks http://havlin.biu.ac.il/Pdf/Bremen070715a.pdf
+
+{{Electricity delivery}}
+
+[[Category:Failure]]
+[[Category:Reliability engineering]]
+[[Category:Electric power transmission]]
+[[Category:Systemic risk]]
+[[Category:Systems science]]

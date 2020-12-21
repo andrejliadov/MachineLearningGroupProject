@@ -1,0 +1,66 @@
+{{Use American English|date=January 2019}}{{Short description|Concept of modern physics theories that they should, under some circumstances, approximate the predictions of classical physics
+}}
+The '''classical limit''' or '''correspondence limit''' is the ability of a [[theoretical physics|physical theory]] to approximate or "recover" [[classical mechanics]] when considered over special values of its parameters.<ref>{{cite book |last=Bohm |first=D. |author-link=David Bohm |year=1989 |title=Quantum Theory |url=https://archive.org/details/quantumtheory0000bohm |url-access=registration |publisher=[[Dover Publications]] |isbn=0-486-65969-0}}</ref> The classical limit is used with physical theories that predict non-classical behavior.
+
+==Quantum theory==
+A [[heuristic]] postulate called the [[correspondence principle]] was introduced to [[Bohr model|quantum theory]] by [[Niels Bohr]]: in effect it states that some kind of continuity argument should apply to the classical limit of quantum systems as the value of [[Planck's constant]] normalized by the action of these systems becomes very small. Often, this is approached through "quasi-classical" techniques (cf. [[WKB approximation]]).<ref>{{cite book |last1=Landau |first1=L. D. |author1-link=Lev Landau |last2=Lifshitz |first2=E. M. |author2-link=Evgeny Lifshitz |year=1977 |title=Quantum Mechanics: Non-Relativistic Theory |edition=3rd |volume=Vol. 3 |publisher=[[Pergamon Press]] |isbn=978-0-08-020940-1}}</ref>
+
+More rigorously,<ref>{{cite journal |last1=Hepp |first=K. |author1-link=Klaus Hepp |year=1974 |title=The classical limit for quantum mechanical correlation functions |url=http://projecteuclid.org/download/pdf_1/euclid.cmp/1103859623 |journal=[[Communications in Mathematical Physics]] |volume=35 |issue= 4|pages=265–277 |bibcode=1974CMaPh..35..265H |doi=10.1007/BF01646348 }}</ref> the mathematical operation involved in classical limits is a [[group contraction]], approximating physical systems where the relevant action is much larger than Planck's constant {{mvar|ħ}}, so the "deformation parameter" {{mvar|ħ}}/{{mvar|S}} can be effectively taken to be zero (cf. [[Weyl quantization]].) Thus typically, quantum commutators (equivalently, [[Moyal bracket]]s) reduce to [[Poisson bracket]]s,<ref>{{Cite journal |last1=Curtright |first1=T. L. |last2=Zachos |first2=C. K. |year=2012 |title=Quantum Mechanics in Phase Space |journal=[[Asia Pacific Physics Newsletter]] |volume=1 |pages=37–46 |doi=10.1142/S2251158X12000069|arxiv=1104.5269 }}</ref> in a [[group contraction]].
+
+In [[quantum mechanics]], due to [[Werner Heisenberg|Heisenberg's]] [[uncertainty principle]], an [[electron]] can never be at rest; it must always have a non-zero [[kinetic energy]], a result not found in classical mechanics. For example, if we consider something very large relative to an electron, like a baseball, the uncertainty principle predicts that it cannot really have zero kinetic energy, but the uncertainty in kinetic energy is so small that the baseball can effectively appear to be at rest, and hence it appears to obey classical mechanics. In general, if large energies and large objects (relative to the size and energy levels of an electron) are considered in quantum mechanics, the result will appear to obey classical mechanics. The typical [[occupation number]]s involved are huge: a macroscopic harmonic oscillator with {{mvar|ω}}&nbsp;=&nbsp;2&nbsp;Hz, {{mvar|m}}&nbsp;=&nbsp;10&nbsp;g, and maximum [[amplitude]] {{mvar|x}}<sub>0</sub>&nbsp;=&nbsp;10&nbsp;cm, has {{math|''S''&nbsp;≈&nbsp;''E''/''ω''&nbsp;≈ ''mωx''{{su|b=0|p=2}}/2&nbsp;≈ 10<sup>−4</sup>&nbsp;kg·m<sup>2</sup>/s}}&nbsp;=&nbsp;{{mvar|ħn}}, so that {{mvar|n}}&nbsp;≃&nbsp;10<sup>30</sup>. Further see [[Coherent states#The wavefunction of a coherent state|coherent states]]. It is less clear, however, how the classical limit applies to chaotic systems, a field known as [[quantum chaos]].
+
+Quantum mechanics and classical mechanics are usually treated with entirely different formalisms: quantum theory using [[Hilbert space]], and classical mechanics using a representation in [[phase space]]. One can bring the two into a common mathematical framework in various ways. In the [[phase space formulation]] of quantum mechanics, which is statistical in nature, logical connections between quantum mechanics and classical statistical mechanics are made, enabling natural comparisons between them, including the violations of [[Liouville's theorem (Hamiltonian)]] upon quantization.<ref>{{cite journal |last1=Bracken |first1=A. |last2=Wood |first2=J. |year=2006 |title=Semiquantum versus semiclassical mechanics for simple nonlinear systems |journal=[[Physical Review A]] |volume=73 |pages=012104 |arxiv=quant-ph/0511227 |bibcode=2006PhRvA..73a2104B |doi=10.1103/PhysRevA.73.012104 }}</ref><ref> Conversely, in the lesser-known [[Koopman–von Neumann classical mechanics|approach presented in 1932 by Koopman and von Neumann]], the dynamics of classical mechanics have been formulated in terms of an [[operator (physics)|operational]] formalism in [[Hilbert space]], a formalism used conventionally for quantum mechanics.
+*{{cite journal |last1=Koopman |first1=B. O. |author1-link=Bernard Koopman |last2=von Neumann |first2=J. |author2-link=John von Neumann |year=1932 |title=Dynamical Systems of Continuous Spectra |journal=[[Proceedings of the National Academy of Sciences of the United States of America]] |volume=18 |issue=3 |pages=255–263 |bibcode=1932PNAS...18..255K |doi=10.1073/pnas.18.3.255 |pmid=16587673 |pmc=1076203}}
+*{{cite arxiv |last1= Mauro |first1= D. |year= 2003 |title= Topics in Koopman-von Neumann Theory |eprint=quant-ph/0301172}}
+*{{Cite journal |last1=Bracken |first1=A. J. |year=2003 |title=Quantum mechanics as an approximation to classical mechanics in Hilbert space |journal=[[Journal of Physics A]] |volume=36 |issue=23 |pages=L329–L335 |doi=10.1088/0305-4470/36/23/101|arxiv=quant-ph/0210164 }}
+</ref>
+
+In a crucial paper (1933), [[Paul Dirac|Dirac]]<ref>{{cite journal |last=Dirac |first=P.A.M. |author-link=Paul Dirac |year=1933 |title=The Lagrangian in quantum mechanics |url=http://www.ifi.unicamp.br/~cabrera/teaching/aula%2015%202010s1.pdf |journal=[[Physikalische Zeitschrift der Sowjetunion]] |volume=3 |pages=64–72}}</ref> explained how classical mechanics is an [[Emergence#Non-living, physical systems|emergent phenomenon]] of quantum mechanics: [[Destructive interference#Quantum interference|destructive interference]] among paths with non-[[extremal]] macroscopic actions {{mvar|S}}&nbsp;»&nbsp;{{mvar|ħ}} obliterate amplitude contributions in the [[path integral formulation|path integral]] he introduced, leaving the extremal action {{mvar|S}}<sub>class</sub>, thus the classical action path as the dominant contribution, an observation further elaborated by [[Richard Feynman|Feynman]] in his 1942 PhD dissertation.<ref>{{cite thesis |last=Feynman |first=R. P. |author-link=Richard Feynman |year=1942 |title=The Principle of Least Action in Quantum Mechanics |type=Ph.D. Dissertation |publisher=[[Princeton University]]}}
+:Reproduced in {{cite book |last=Feynman |first=R. P. |year=2005 |editor-last=Brown |editor-first=L. M. |title=Feynman's Thesis: a New Approach to Quantum Theory |publisher=[[World Scientific]] |isbn=978-981-256-380-4 |url-access=registration |url=https://archive.org/details/feynmansthesisne00feyn_0 }}</ref> (Further see [[quantum decoherence]].)
+
+==Time-evolution of expectation values==
+{{main|Ehrenfest theorem}}
+One simple way to compare classical to quantum mechanics is to consider the time-evolution of the ''expected'' position and ''expected'' momentum, which can then be compared to the time-evolution of the ordinary position and momentum in classical mechanics. The quantum expectation values satisfy the [[Ehrenfest theorem]]. For a one-dimensional quantum particle moving in a potential <math>V</math>, the Ehrenfest theorem says<ref>{{harvnb|Hall|2013}} Section 3.7.5</ref>
+:<math>m\frac{d}{dt}\langle x\rangle = \langle p\rangle;\quad \frac{d}{dt}\langle p\rangle =  -\left\langle V'(X)\right\rangle .</math>
+Although the first of these equations is consistent with the classical mechanics, the second is not: If the pair <math>(\langle X\rangle,\langle P\rangle)</math> were to satisfy Newton's second law, the right-hand side of the second equation would have read
+:<math>\frac{d}{dt}\langle p\rangle =-V'\left(\left\langle X\right\rangle\right)</math>.
+But in most cases,
+:<math>\left\langle V'(X)\right\rangle\neq V'(\left\langle X\right\rangle)</math>.
+If for example, the potential <math>V</math> is cubic, then <math>V'</math> is quadratic, in which case, we are talking about the distinction between <math>\langle X^2\rangle</math> and <math>\langle X\rangle^2</math>, which differ by <math>(\Delta X)^2</math>.
+
+An exception occurs in case when the classical equations of motion are linear, that is, when <math>V</math> is quadratic and <math>V'</math> is linear. In that special case, <math>V'\left(\left\langle X\right\rangle\right)</math> and <math>\left\langle V'(X)\right\rangle</math> do agree. In particular, for a free particle or a quantum harmonic oscillator, the expected position and expected momentum exactly follows solutions of Newton's equations.
+
+For general systems, the best we can hope for is that the expected position and momentum will ''approximately'' follow the classical trajectories. If the wave function is highly concentrated around a point <math>x_0</math>, then <math>V'\left(\left\langle X\right\rangle\right)</math> and <math>\left\langle V'(X)\right\rangle</math> will be ''almost'' the same, since both will be approximately equal to <math>V'(x_0)</math>. In that case, the expected position and expected momentum will remain very close to the classical trajectories, at least ''for as long as'' the wave function remains highly localized in position.<ref>{{harvnb|Hall|2013}} p. 78</ref> 
+
+Now, if the initial state is very localized in position, it will be very spread out in momentum, and thus we expect that the wave function will rapidly spread out, and the connection with the classical trajectories will be lost. When Planck's constant is small, however, it is possible to have a state that is well localized in ''both'' position and momentum. The small uncertainty in momentum ensures that the particle ''remains'' well localized in position for a long time, so that expected position and momentum continue to closely track the classical trajectories for a long time.
+
+==Relativity and other deformations==
+Other familiar deformations in physics involve:
+
+*The deformation of classical Newtonian into relativistic mechanics ([[special relativity]]), with deformation parameter ''v/c''; the classical limit involves small speeds, so ''v/c''→0, and the systems appear to obey Newtonian mechanics. 
+*Similarly for the deformation of Newtonian gravity into [[general relativity]], with deformation parameter Schwarzschild-radius/characteristic-dimension, we find that objects once again appear to obey classical mechanics (flat space), when the mass of an object times the square of the [[Planck length]] is much smaller than its size and the sizes of the problem addressed. See [[Newtonian limit]].
+*Wave optics might also be regarded as a deformation of [[geometrical optics|ray optics]] for deformation parameter ''λ/a''.
+*Likewise, [[thermodynamics]] deforms to [[statistical mechanics]] with deformation parameter 1/''N''.
+
+==See also==
+* [[WKB approximation]]
+* [[Quantum decoherence]]
+* [[Quantum limit]]
+* [[Quantum realm]]
+* [[Wigner–Weyl transform]]
+* [[Quantum chaos]]
+* [[Fresnel integral]]
+* [[Semiclassical physics]]
+* [[Ehrenfest theorem]]
+* [[Mathematical formulation of quantum mechanics]]
+
+==References==
+<references/>
+{{DEFAULTSORT:Classical Limit}}
+[[Category:Concepts in physics]]
+[[Category:Quantum mechanics]]
+[[Category:Theory of relativity]]
+[[Category:Philosophy of science]]
+[[Category:Theoretical physics]]
+[[Category:Emergence]]
+*{{citation|first=Brian C.|last=Hall|title=Quantum Theory for Mathematicians|series=Graduate Texts in Mathematics|volume=267 |publisher=Springer|year=2013| isbn=978-1461471158}}

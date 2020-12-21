@@ -1,0 +1,199 @@
+{{for|"canonical form" in linguistics|Lemma (morphology)}}
+{{for|"canonical form" in Catholic matrimonial law|Marriage in the Catholic Church#Canonical form}}
+{{refimprove|date=December 2007}}
+[[File:Anagram canonical svg.svg|thumb|Algorithmic [[anagram]] test using [[multiset]]s as canonical forms: The strings "<tt>madam curie</tt>" and "<tt>radium came</tt>" are given as [[C (programming language)|C]] arrays. Each one is converted into a canonical form by sorting. Since both sorted strings literally agree, the original strings were anagrams of each other.]]
+In [[mathematics]] and [[computer science]], a '''canonical''', '''normal''', or '''standard''' '''form''' of a [[mathematical object]] is a standard way of presenting that object as a [[mathematical expression]]. Often, it is one which provides the simplest representation of an object and which allows it to be identified in a unique way.<ref>{{Cite web|url=https://mathvault.ca/math-glossary/#canonical|title=The Definitive Glossary of Higher Mathematical Jargon — Canonical|date=2019-08-01|website=Math Vault|language=en-US|access-date=2019-11-20}}</ref> The distinction between "canonical" and "normal" forms varies from subfield to subfield. In most fields, a canonical form specifies a ''unique'' representation for every object, while a normal form simply specifies its form, without the requirement of uniqueness.<ref>In some occasions, the term "canonical" and "normal" can also be used interchangeably, as in Jordan canonical form and Jordan normal form (see [https://www.mathworks.com/help/symbolic/sym.jordan.html Jordan normal form on MathWorks]).</ref>
+
+The canonical form of a [[positive integer]] in [[decimal representation]] is a finite sequence of digits that does not begin with zero. More generally, for a class of objects on which an [[equivalence relation]] is defined, a '''canonical form''' consists in the choice of a specific object in each class. For example:
+
+* [[Jordan normal form]] is a canonical form for [[matrix similarity]].
+* The [[row echelon form]] is a canonical form, when one considers as equivalent a matrix and its left product by an [[invertible matrix]].
+
+In computer science, and more specifically in [[computer algebra]], when representing mathematical objects in a computer, there are usually many different ways to represent the same object. In this context, a '''canonical form''' is a representation such that every object has a unique representation (with [[canonicalization]] being the process through which a representation is put into its canonical form).<ref>The term 'canonization' is sometimes incorrectly used for this.</ref> Thus, the equality of two objects can easily be tested by testing the equality of their canonical forms. 
+
+Despite this advantage, canonical forms frequently depend on arbitrary choices (like ordering the variables), which introduce difficulties for testing the equality of two objects resulting on independent computations. Therefore, in computer algebra, ''normal form'' is a weaker notion: A '''normal form''' is a representation such that zero is uniquely represented. This allows testing for equality by putting the difference of two objects in normal form.
+
+'''Canonical form''' can also mean a [[differential form]] that is defined in a natural (canonical) way.
+
+==Definition==
+Given a set ''S'' of objects with an [[equivalence relation]] ''R on S'', a '''canonical form''' is given by designating some objects of ''S'' to be "in canonical form", such that every object under consideration is equivalent to exactly one object in canonical form. In other words, the canonical forms in ''S'' represent the equivalence classes, once and only once. To test whether two objects are equivalent, it then suffices to test equality on their canonical forms.
+A canonical form thus provides a [[classification theorem]] and more, in that it not only classifies every class, but also gives a distinguished (canonical) representative for each object in the class.
+
+Formally, a canonicalization with respect to an equivalence relation ''R'' on a set ''S'' is a mapping ''c'':''S''→''S'' such that for all ''s'', ''s''<sub>1</sub>, ''s''<sub>2</sub> ∈ ''S'':
+# ''c''(''s'') = ''c''(''c''(''s'')) &nbsp; ([[idempotence]]),
+# ''s''<sub>1</sub> ''R'' ''s''<sub>2</sub> if and only if ''c''(''s''<sub>1</sub>) = ''c''(''s''<sub>2</sub>) &nbsp; (decisiveness), and 
+# ''s'' ''R'' ''c''(''s'') &nbsp; (representativeness). 
+
+Property 3 is redundant; it follows by applying 2 to 1.
+
+In practical terms, it's often advantageous to be able to recognize the canonical forms. There is also a practical, algorithmic question to consider: how to pass from a given object ''s'' in ''S'' to its canonical form ''s''*? Canonical forms are generally used to make operating with equivalence classes more effective. For example, in [[modular arithmetic]], the canonical form for a residue class is usually taken as the least non-negative integer in it. Operations on classes are carried out by combining these representatives, and then reducing the result to its least non-negative residue.
+The uniqueness requirement is sometimes relaxed, allowing the forms to be unique up to some finer equivalence relation, such as allowing for reordering of terms (if there is no natural ordering on terms).
+
+A canonical form may simply be a convention, or a deep theorem. For example, polynomials are conventionally written with the terms in descending powers: it is more usual to write ''x''<sup>2</sup> + ''x'' + 30 than ''x'' + 30 + ''x''<sup>2</sup>, although the two forms define the same polynomial. By contrast, the existence of [[Jordan canonical form]] for a matrix is a deep theorem.
+
+==Examples==
+Note: in this section, "[[up to]]" some equivalence relation E means that the canonical form is not unique in general, but that if one object has two different canonical forms, they are E-equivalent.
+
+=== Large number notation ===
+
+Standard form is used by many mathematicians and scientists to write extremely [[large numbers#Standardized system of writing very large numbers|large numbers]] in a more concise and understandable way, the most prominent of which being the [[scientific notation]].<ref>{{Cite web|url=https://serc.carleton.edu/quantskills/methods/quantlit/BigNumbers.html|title=Big Numbers and Scientific Notation|website=Teaching Quantitative Literacy|language=en|access-date=2019-11-20}}</ref>
+
+=== Number theory ===
+* [[Canonical representation of a positive integer]]
+* Canonical form of a [[continued fraction]]
+
+=== Linear algebra ===
+{| class="wikitable"
+|-
+! Objects
+! ''A'' is equivalent to ''B'' if:
+! Normal form
+! Notes
+|- 
+| [[Normal matrix|Normal]] matrices over the [[complex numbers]]
+| <math>A=U^* B U</math> for some [[unitary matrix]] ''U'' 
+| [[Diagonal matrices]] (up to reordering)
+| This is the [[Spectral theorem]]
+|- 
+| Matrices over the complex numbers
+| <math>A=U B V^*</math> for some [[unitary matrix|unitary matrices]] ''U'' and ''V''
+| Diagonal matrices with real positive entries (in descending order)
+| [[Singular value decomposition]]
+|- 
+| Matrices over an [[algebraically closed field]]
+| <math>A=P^{-1} B P</math> for some [[invertible]] matrix ''P'' 
+| [[Jordan normal form]] (up to reordering of blocks)
+|
+|- 
+| Matrices over an [[algebraically closed field]]
+| <math>A=P^{-1} B P</math> for some [[invertible]] matrix ''P'' 
+| [[Weyr canonical form]] (up to reordering of blocks)
+|
+|-
+| Matrices over a field
+| <math>A=P^{-1} B P</math> for some [[invertible]] matrix ''P''
+| [[Frobenius normal form]]
+|
+|-
+| Matrices over a [[principal ideal domain]]
+| <math>A=P^{-1} B Q</math> for some [[invertible]] Matrices ''P'' and ''Q''
+| [[Smith normal form]]
+| The equivalence is the same as allowing invertible elementary row and column transformations
+|-
+| Matrices over the integers
+| <math>A=UB</math> for some [[unimodular matrix|unimodular]] matrix ''U''
+| [[Hermite normal form]]
+|
+|- 
+| Finite-dimensional [[vector space]]s over a field ''K''
+| ''A'' and ''B'' are isomorphic as vector spaces
+| <math>K^n</math>, ''n'' a non-negative integer
+|
+|}
+
+=== Algebra ===
+{| class="wikitable"
+|-
+! Objects
+! ''A'' is equivalent to ''B'' if:
+! Normal form
+|-
+| Finitely generated ''R''-modules with ''R'' a [[principal ideal domain]]
+| ''A'' and ''B'' are isomorphic as ''R''-modules
+| [[Structure theorem for finitely generated modules over a principal ideal domain|Primary decomposition (up to reordering) or invariant factor decomposition]]
+|}
+
+=== Geometry ===
+In [[analytic geometry]]:
+*The equation of a line: ''Ax''&nbsp;+&nbsp;''By''&nbsp;=&nbsp;''C'', with  ''A<sup>2</sup>''&nbsp;+&nbsp;''B''<sup>2</sup>&nbsp;=&nbsp;1 and ''C''&nbsp;≥&nbsp;0
+*The equation of a circle: <math>(x - h)^2 + (y - k)^2 = r^2</math>
+
+By contrast, there are alternative forms for writing equations. For example, the equation of a line may be written as a [[linear equation]] in [[point-slope]] and [[slope-intercept form]].
+
+[[Convex polyhedra]] can be put into [[Midsphere#Canonical_polyhedron|canonical form]] such that:
+* All faces are flat,
+* All edges are tangent to the unit sphere, and
+* The centroid of the polyhedron is at the origin.<ref>{{citation|title=Lectures on Polytopes|author-link=Günter M. Ziegler|first=Günter M.|last=Ziegler|year=1995|isbn=0-387-94365-X|series=Graduate Texts in Mathematics|publisher=Springer-Verlag|volume=152|pages=117–118}}</ref>
+===Integrable systems===
+Every differentiable [[manifold]] has a [[cotangent bundle]]. That bundle can always be endowed with a certain [[differential form]], called the [[canonical one-form]]. This form gives the cotangent bundle the structure of a [[symplectic manifold]], and allows vector fields on the manifold to be integrated by means of the [[Euler-Lagrange equation]]s, or by means of [[Hamiltonian mechanics]]. Such systems of integrable [[differential equation]]s are called [[integrable system]]s.
+
+=== Dynamical systems ===
+The study of [[dynamical systems]] overlaps with that of [[Integrable system|integrable systems]]; there one has the idea of a [[normal form (dynamical systems)]].
+
+=== Three dimensional geometry ===
+In the study of manifolds in three dimensions, one has the [[first fundamental form]], the [[second fundamental form]] and the [[third fundamental form]].
+
+=== Functional analysis ===
+{| class="wikitable"
+|-
+! Objects
+! ''A'' is equivalent to ''B'' if:
+! Normal form
+|-
+| [[Hilbert spaces]]
+| If ''A'' and ''B'' are both Hilbert spaces of infinite dimension, then ''A'' and ''B'' are isometrically isomorphic.
+| <math>\ell^2(I)</math> [[Hilbert space#Sequence spaces|sequence spaces]] (up to exchanging the index set ''I'' with another index set of the same [[cardinality]])
+|- 
+<!-- please double-check this one -->
+| Commutative <math>C^*</math>-algebras with unit
+| ''A'' and ''B'' are isomorphic as <math>C^*</math>-algebras
+| The algebra <math>C(X)</math> of continuous functions on a [[compact space|compact]] [[Hausdorff space]], up to [[homeomorphism]] of the base space.
+|}
+
+=== Classical logic ===
+{{main article|Canonical form (Boolean algebra)}}
+* [[Negation normal form]]
+* [[Conjunctive normal form]]
+* [[Disjunctive normal form]]
+* [[Algebraic normal form]]
+* [[Prenex normal form]]
+* [[Skolem normal form]]
+* [[Blake canonical form]], also known as the complete sum of prime implicants, the complete sum, or the disjunctive prime form
+
+=== Set theory ===
+* [[Cantor normal form#Cantor normal form|Cantor normal form]] of an [[ordinal number]]
+
+=== Game theory ===
+* [[Normal form game]]
+
+=== Proof theory ===
+* [[Normal form (natural deduction)]]
+
+===Rewriting systems===
+{{main|Normal form (abstract rewriting)}}
+The symbolic manipulation of a formula from one form to another is called a "rewriting" of that formula. One can study the abstract properties of rewriting generic formulas, by studying the collection of rules by which formulas can be validly manipulated. These are the "rewriting rules"—an integral part of an [[abstract rewriting system]]. A common question is whether it is possible to bring some generic expression to a single, common form, the normal form. If different sequences of rewrites still result in the same form, then that form can be termed a normal form, with the rewrite being called a confluent. It is not always possible to obtain a normal form.
+
+=== Lambda calculus===
+* A lambda term is in [[beta normal form]] if no beta reduction is possible; [[lambda calculus]] is a particular case of an abstract rewriting system. In the untyped lambda calculus, for example, the term <math>(\lambda x.(x x) \; \lambda x.(x x))</math> doesn't have a normal form. In the typed lambda calculus, every well-formed term can be rewritten to its normal form.
+
+===Graph theory===
+{{main article|Graph canonization}}
+In [[graph theory]], a branch of mathematics, '''graph canonization''' is the problem of finding a canonical form of a given graph ''G''. A canonical form is a [[Graph labeling|labeled graph]] Canon(''G'') that is [[graph isomorphism|isomorphic]] to ''G'', such that every graph that is isomorphic to ''G'' has the same canonical form as ''G''. Thus, from a solution to the graph canonization problem, one could also solve the problem of [[graph isomorphism]]: to test whether two graphs ''G'' and ''H'' are isomorphic, compute their canonical forms Canon(''G'') and Canon(''H''), and test whether these two canonical forms are identical.
+
+=== Computing ===
+In [[computing]], the reduction of data to any kind of canonical form is commonly called ''data normalization''.
+
+For instance, [[database normalization]] is the process of organizing the [[Field (computer science)|fields]] and [[Table (database)|table]]s of a [[relational database]] to minimize [[Data redundancy|redundancy]] and dependency.<ref>{{Cite web|url=https://support.microsoft.com/en-ca/help/283878/description-of-the-database-normalization-basics|title=Description of the database normalization basics|website=support.microsoft.com|access-date=2019-11-20}}</ref> 
+
+In the field of [[software security]], a common [[Vulnerability (computing)|vulnerability]] is unchecked malicious input (see ''[[Code injection]]''). The mitigation for this problem is proper [[input validation]]. Before input validation is performed, the input is usually normalized by eliminating encoding (e.g., [[Character encodings in HTML|HTML encoding]]) and reducing the input data to a single common [[character set]].
+
+Other forms of data, typically associated with [[signal processing]] (including [[Audio signal processing|audio]] and [[Image processing|imaging]]) or [[machine learning]], can be normalized in order to provide a limited range of values.
+
+==See also==
+* [[Canonicalization]]
+* [[Canonical basis]]
+* [[Canonical class]]
+* [[Normalization (disambiguation)]]
+* [[Standardization]]
+
+==Notes==
+<references/>
+
+==References==
+*{{citation | last=Shilov | first=Georgi E. | title=Linear Algebra | editor-last=Silverman | editor-first=Richard A. | date=1977 | publisher=Dover | isbn=0-486-63518-X }}.
+*{{citation | last=Hansen | first=Vagn Lundsgaard | title = Functional Analysis: Entering Hilbert Space | date=2006 | publisher=World Scientific Publishing | isbn=981-256-563-9}}.
+
+[[Category:Algebra]]
+[[Category:Concepts in logic]]
+[[Category:Mathematical terminology]]
+[[Category:Formalism (deductive)]]

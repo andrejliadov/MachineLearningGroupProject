@@ -1,0 +1,196 @@
+{{More citations needed|date=August 2020}}
+The '''asymptotic gain model'''<ref>Middlebrook, RD: ''Design-oriented analysis of feedback amplifiers''; Proc. of National Electronics Conference, Vol. XX, Oct. 1964, pp. 1–4</ref><ref name=Rosenstark>{{cite book|author=Rosenstark, Sol|title=Feedback amplifier principles|page=15|year=1986|publisher=Collier Macmillan|location=NY|isbn=0-02-947810-3|url=http://worldcat.org/isbn/0029478103}}</ref> (also known as the '''Rosenstark method'''<ref name=Palumbo>{{cite book|author1=Palumbo, Gaetano  |author2=Salvatore Pennisi |name-list-style=amp |title=Feedback amplifiers: theory and design|year=2002|publisher=Kluwer Academic|location=Boston/Dordrecht/London|isbn=0-7923-7643-9|url=http://worldcat.org/isbn/0792376439|pages=§3.3 pp. 69–72}}</ref>) is a representation of the gain of [[negative feedback amplifier]]s given by the asymptotic gain relation:
+:<math>G = G_{\infty} \left( \frac{T}{T + 1} \right) + G_0 \left( \frac{1}{T + 1} \right) \ ,</math>
+where <math>T</math> is the [[return ratio]] with the input source disabled (equal to the negative of the [[loop gain]] in the case of a single-loop system composed of [[Amplifier#Unilateral or bilateral|unilateral]] blocks), ''G<sub>∞</sub>'' is the asymptotic gain and ''G<sub>0</sub>'' is the direct transmission term. This form for the gain can provide intuitive insight into the circuit and often is easier to derive than a direct attack on the gain.
+[[Image:Asymt feedback.png|thumb|300px|right| Figure 1: Block diagram for asymptotic gain model<ref name=Gray-Meyer>{{cite book|author=Paul R. Gray, Hurst P J Lewis S H & Meyer RG|title=Analysis and design of analog integrated circuits|year=2001|edition=Fourth|publisher=Wiley|location=New York|isbn=0-471-32168-0|url=http://worldcat.org/isbn/0-471-32168-0|nopp=true|pages=Figure 8.42 p. 604}}</ref>]]
+Figure 1 shows a block diagram that leads to the asymptotic gain expression. The asymptotic gain relation also can be expressed as a [[Signal-flow graph#Example 3 Asymptotic gain formula|signal flow graph]]. See Figure 2. The asymptotic gain model is a special case of the [[extra element theorem]].
+[[Image:Modified SFG for feedback amplifier.PNG|thumbnail|300px|Figure 2: Possible equivalent signal-flow graph for the asymptotic gain model]]
+
+==Definition of terms==
+As follows directly from limiting cases of the gain expression, the asymptotic gain ''G<sub>∞</sub>'' is simply the gain of the system when the return ratio approaches infinity:
+:<math>G_{\infty} = G\ \Big |_{T \rightarrow \infty}\ , </math>
+
+while the direct transmission term ''G<sub>0</sub>'' is the gain of the system when the return ratio is zero:
+:<math>G_{0} = G\ \Big |_{T \rightarrow 0}\ .</math>
+
+==Advantages==
+* This model is useful because it completely characterizes feedback amplifiers, including loading effects and the [[Electronic amplifier#Unilateral or bilateral|bilateral]] properties of amplifiers and feedback networks.
+* Often feedback amplifiers are designed such that the return ratio ''T'' is much greater than unity. In this case, and assuming the direct transmission term ''G<sub>0</sub>'' is small (as it often is), the gain ''G'' of the system is approximately equal to the asymptotic gain ''G<sub>∞</sub>''.
+* The asymptotic gain is (usually) only a function of passive elements in a circuit, and can often be found by inspection.
+* The feedback topology (series-series, series-shunt, etc.) need not be identified beforehand as the analysis is the same in all cases.
+
+==Implementation==
+Direct application of the model involves these steps:
+# Select a [[dependent source]] in the circuit.
+# Find the [[return ratio]] for that source.
+# Find the gain ''G<sub>∞</sub>'' directly from the circuit by replacing the circuit with one corresponding to ''T'' = ∞.
+# Find the gain '' G<sub>0</sub>'' directly from the circuit by replacing the circuit with one corresponding to ''T'' = 0.
+# Substitute the values for ''T, G<sub>∞</sub>'' and '' G<sub>0</sub>'' into the asymptotic gain formula.
+
+These steps can be implemented directly in [[SPICE]] using the small-signal circuit of hand analysis. In this approach the dependent sources of the devices are readily accessed. In contrast, for experimental measurements using real devices or SPICE simulations using numerically generated device models with inaccessible dependent sources, evaluating the return ratio requires [[Return ratio#Other Methods|special methods]].
+
+==Connection with classical feedback theory==
+Classical [[Negative feedback amplifier#Classical model|feedback theory]] neglects feedforward (''G''<sub>0</sub>). If feedforward is dropped, the gain from the asymptotic gain model becomes
+
+::<math>G = G_{\infin} \frac {T} {1+T} =\frac {G_{\infin}T}{1+\frac{1} {G_{\infin}} G_{\infin} T} \ , </math>
+
+while in classical feedback theory, in terms of the open loop gain ''A'', the gain with feedback (closed loop gain) is:
+
+::<math>A_\mathrm{FB} = \frac {A} {1 + {\beta}_\mathrm{FB} A} \ . </math>
+
+Comparison of the two expressions indicates the feedback factor ''β''<sub>FB</sub> is:
+
+::<math> \beta_\mathrm{FB} = \frac {1} {G_{\infin}} \ , </math>
+
+while the open-loop gain is:
+
+::<math> A = G_{\infin} \ T \ . </math>
+
+If the accuracy is adequate (usually it is), these formulas suggest an alternative evaluation of ''T'': evaluate the open-loop gain and ''G<sub>∞</sub>'' and use these expressions to find ''T''. Often these two evaluations are easier than evaluation of ''T'' directly.
+
+==Examples==
+The steps in deriving the gain using the asymptotic gain formula are outlined below for two negative feedback amplifiers. The single transistor example shows how the method works in principle for a transconductance amplifier, while the second two-transistor example shows the approach to more complex cases using a current amplifier.
+
+===Single-stage transistor amplifier===
+[[Image:Mosfbamp.png|thumb|Figure 3: FET feedback amplifier|300px|right]]
+Consider the simple [[FET]] feedback amplifier in Figure 3. The aim is to find the low-frequency, open-circuit, [[Electronic amplifier#Input and output variables|transresistance]] gain of this circuit ''G'' = ''v''<sub>out</sub> / ''i''<sub>in</sub> using the asymptotic gain model.
+
+[[Image:Transresistance Amplifier.PNG|thumbnail|250px|Figure 4: Small-signal circuit for transresistance amplifier; the feedback resistor ''R<sub>f</sub>'' is placed below the amplifier to resemble the standard topology]]
+[[Image:Return Ratio.PNG|thumbnail|250px|Figure 5: Small-signal circuit with return path broken and test voltage driving amplifier at the break]]
+
+The [[small-signal]] equivalent circuit is shown in Figure 4, where the transistor is replaced by its [[hybrid-pi model]].
+
+====Return ratio====
+It is most straightforward to begin by finding the return ratio ''T'', because ''G<sub>0</sub>'' and ''G<sub>∞</sub>'' are defined as limiting forms of the gain as ''T'' tends to either zero or infinity. To take these limits, it is necessary to know what parameters ''T'' depends upon. There is only one dependent source in this circuit, so as a starting point the return ratio related to this source is determined as outlined in the article on [[return ratio]].
+
+The [[return ratio]] is found using Figure 5. In Figure 5, the input current source is set to zero, By cutting the dependent source out of the output side of the circuit, and short-circuiting its terminals, the output side of the circuit is isolated from the input and the feedback loop is broken. A test current ''i<sub>t</sub>'' replaces the dependent source. Then the return current generated in the dependent source by the test current is found. The return ratio is then ''T'' = −''i<sub>r</sub> / i<sub>t</sub>''. Using this method, and noticing that ''R''<sub>D</sub> is in parallel with ''r''<sub>O</sub>, ''T'' is determined as:
+:<math>T = g_\mathrm{m} \left( R_\mathrm{D}\ ||r_\mathrm{O} \right) \approx g_\mathrm{m} R_\mathrm{D} \ , </math>
+where the approximation is accurate in the common case where ''r''<sub>O</sub> >> ''R''<sub>D</sub>. With this relationship it is clear that the limits ''T'' → 0, or ∞ are realized if we let [[transconductance]] ''g''<sub>m</sub> → 0, or ∞.<ref>Although changing ''R<sub>D</sub> // r<sub>O</sub>'' also could force the return ratio limits, these resistor values affect other aspects of the circuit as well. It is the ''control parameter'' of the dependent source that must be varied because it affects ''only'' the dependent source.</ref>
+
+====Asymptotic gain====
+Finding the asymptotic gain ''G<sub>∞</sub>'' provides insight, and usually can be done by inspection. To find ''G<sub>∞</sub>'' we let ''g''<sub>m</sub> → ∞ and find the resulting gain. The drain current, ''i''<sub>D</sub> = ''g''<sub>m</sub> ''v''<sub>GS</sub>, must be finite. Hence, as ''g''<sub>m</sub> approaches infinity, ''v''<sub>GS</sub> also must approach zero. As the source is grounded, ''v''<sub>GS</sub> = 0 implies ''v''<sub>G</sub> = 0 as well.<ref>Because the input voltage ''v<sub>GS</sub>'' approaches zero as the return ratio gets larger, the amplifier input impedance also tends to zero, which means in turn (because of [[current division]]) that the amplifier works best if the input signal is a current. If a Norton source is used, rather than an ideal current source, the formal equations derived for ''T'' will be the same as for a Thévenin voltage source. Note that in the case of input current, ''G<sub>∞</sub>'' is a [[Electronic amplifier#Input and output variables|transresistance]] gain.</ref> With ''v''<sub>G</sub> = 0 and the fact that all the input current flows through ''R''<sub>f</sub> (as the FET has an infinite input impedance), the output voltage is simply −''i''<sub>in</sub> ''R''<sub>f</sub>. Hence
+
+:<math>G_{\infty} = \frac{v_\mathrm{out}}{i_\mathrm{in}} = -R_\mathrm{f}\ .</math>
+
+Alternatively ''G<sub>∞</sub>'' is the gain found by replacing the transistor by an ideal amplifier with infinite gain - a [[nullor]].<ref name=Verhoeven>{{cite book|vauthors=Verhoeven CJ, van Staveren A, Monna GL, Kouwenhoven MH, Yildiz E |name-list-style=amp |title=Structured electronic design: negative-feedback amplifiers|year=2003|publisher=Kluwer Academic|location=Boston/Dordrecht/London|isbn=1-4020-7590-1|pages=§2.3 – §2.5 pp. 34–40|url=https://books.google.com/books?id=p8wDptzCMrUC&pg=PA24&dq=isbn=1-4020-7590-1#PPA35,M1}}</ref>
+
+====Direct feedthrough====
+To find the direct feedthrough <math>G_0</math> we simply let ''g<sub>m</sub>'' → 0 and compute the resulting gain. The currents through ''R''<sub>f</sub> and the parallel combination of ''R''<sub>D</sub> || ''r''<sub>O</sub> must therefore be the same and equal to ''i''<sub>in</sub>. The output voltage is therefore ''i''<sub>in</sub> ''(R''<sub>D</sub> ''|| r''<sub>O</sub>'')''.
+
+Hence
+:<math>G_0 = \frac{v_{out}}{i_{in}} = R_D\|r_O \approx R_D \ ,</math>
+
+where the approximation is accurate in the common case where ''r<sub>O</sub>'' >> ''R<sub>D</sub>''.
+
+====Overall gain====
+The overall [[Electronic amplifier#Input and output variables|transresistance gain]] of this amplifier is therefore:
+
+:<math>G = \frac{v_{out}}{i_{in}} = -R_f \frac{g_m R_D}{1+g_m R_D} + R_D \frac{1}{1+g_m R_D} = \frac{R_D\left(1-g_m R_f\right)}{1+g_m R_D}\ .</math>
+
+Examining this equation, it appears to be advantageous to make ''R<sub>D</sub>'' large in order make the overall gain approach the asymptotic gain, which makes the gain insensitive to amplifier parameters (''g<sub>m</sub>'' and ''R<sub>D</sub>''). In addition, a large first term reduces the importance of the direct feedthrough factor, which degrades the amplifier. One way to increase ''R<sub>D</sub>'' is to replace this resistor by an [[active load]], for example, a [[current mirror]].
+[[Image:Two-transistor feedback amp.svg|thumbnail|200px|Figure 6: Two-transistor feedback amplifier; any source impedance ''R<sub>S</sub>'' is lumped in with the base resistor ''R<sub>B</sub>''.]]
+
+===Two-stage transistor amplifier===
+[[Image:Using return ratio.PNG|thumbnail|350px|Figure 7: Schematics for using asymptotic gain model; parameter α = β / ( β+1 ); resistor R<sub>C</sub> = R<sub>C1</sub>.]]
+Figure 6 shows a two-transistor amplifier with a feedback resistor ''R<sub>f</sub>''. This amplifier is often referred to as a ''shunt-series feedback'' amplifier, and analyzed on the basis that resistor ''R<sub>2</sub>'' is in series with the output and samples output current, while ''R<sub>f</sub>'' is in shunt (parallel) with the input and subtracts from the input current. See the article on [[Negative feedback amplifier#Two-port analysis of feedback|negative feedback amplifier]] and references by Meyer or Sedra.<ref name=Gray-Meyer1>{{cite book|author1=P R Gray |author2=P J Hurst |author3=S H Lewis |author4=R G Meyer  |name-list-style=amp |title=Analysis and Design of Analog Integrated Circuits|year=2001|edition=Fourth|publisher=Wiley|location=New York|isbn=0-471-32168-0|url=http://worldcat.org/isbn/0471321680|pages=586–587}}</ref><ref name=Sedra1>{{cite book|author1=A. S. Sedra  |author2=K.C. Smith |name-list-style=amp |title=Microelectronic Circuits|year=2004|edition=Fifth|pages=Example 8.4, pp. 825–829 and PSpice simulation pp. 855–859|publisher=Oxford|location=New York|isbn=0-19-514251-9|url=http://worldcat.org/isbn/0-19-514251-9|nopp=true}}</ref> That is, the amplifier uses current feedback. It frequently is ambiguous just what type of feedback is involved in an amplifier, and the asymptotic gain approach has the advantage/disadvantage that it works whether or not you understand the circuit.
+
+Figure 6 indicates the output node, but does not indicate the choice of output variable. In what follows, the output variable is selected as the short-circuit current of the amplifier, that is, the collector current of the output transistor. Other choices for output are discussed later.
+
+To implement the asymptotic gain model, the dependent source associated with either transistor can be used. Here the first transistor is chosen.
+
+====Return ratio====
+The circuit to determine the return ratio is shown in the top panel of Figure 7. Labels show the currents in the various branches as found using a combination of [[Ohm's law]] and [[Kirchhoff's circuit laws|Kirchhoff's laws]]. Resistor ''R''<sub>1</sub> ''= R''<sub>B</sub> ''// r''<sub>π1</sub> and ''R''<sub>3</sub> ''= R''<sub>C2</sub> ''// R''<sub>L</sub>. KVL from the ground of ''R''<sub>1</sub> to the ground of ''R''<sub>2</sub> provides:
+
+:<math> i_\mathrm{B} = -v_{ \pi} \frac {1+R_2/R_1+R_\mathrm{f}/R_1} {(\beta +1) R_2} \ . </math>
+
+KVL provides the collector voltage at the top of ''R<sub>C</sub>'' as
+
+:<math>v_\mathrm{C} = v_{ \pi} \left(1+ \frac {R_\mathrm{f}} {R_1} \right ) -i_\mathrm{B} r_{ \pi 2} \ . </math>
+
+Finally, KCL at this collector provides
+
+:<math> i_\mathrm{T} = i_\mathrm{B} - \frac {v_\mathrm{C}} {R_\mathrm{C}} \ . </math>
+
+Substituting the first equation into the second and the second into the third, the return ratio is found as
+
+:<math>T = - \frac {i_\mathrm{R}} {i_\mathrm{T}} = -g_\mathrm{m} \frac {v_{ \pi} }{i_\mathrm{T}} </math>
+:::<math> = \frac {g_\mathrm{m} R_\mathrm{C}} { \left( 1 + \frac {R_\mathrm{f}} {R_1} \right) \left( 1+ \frac {R_\mathrm{C}+r_{ \pi 2}}{( \beta +1)R_2} \right) +\frac {R_\mathrm{C}+r_{ \pi 2}}{(\beta +1)R_1} } \ . </math>
+
+====Gain ''G<sub>0</sub>'' with T = 0====
+The circuit to determine ''G<sub>0</sub>'' is shown in the center panel of Figure 7. In Figure 7, the output variable is the output current β''i<sub>B</sub>'' (the short-circuit load current), which leads to the short-circuit current gain of the amplifier, namely β''i<sub>B</sub>'' / ''i''<sub>S</sub>:
+
+::<math> G_0 = \frac { \beta i_B} {i_S} \ . </math>
+
+Using [[Ohm's law]], the voltage at the top of ''R<sub>1</sub>'' is found as
+
+::<math> ( i_S - i_R ) R_1 = i_R R_f +v_E \ \ ,</math>
+
+or, rearranging terms,
+
+::<math> i_S = i_R \left( 1 + \frac {R_f}{R_1} \right) +\frac {v_E} {R_1} \ . </math>
+
+Using KCL at the top of ''R<sub>2</sub>'':
+
+::<math> i_R = \frac {v_E} {R_2} + ( \beta +1 ) i_B \ . </math>
+
+Emitter voltage ''v<sub>E</sub>'' already is known in terms of ''i<sub>B</sub>'' from the diagram of Figure 7. Substituting the second equation in the first, ''i<sub>B</sub>'' is determined in terms of ''i<sub>S</sub>'' alone, and ''G<sub>0</sub>'' becomes:
+
+::<math>G_0 = \frac { \beta } {
+ ( \beta +1) \left( 1 + \frac{R_f}{R_1} \right ) +(r_{ \pi 2} +R_C ) \left[ \frac {1} {R_1} + \frac {1} {R_2} \left( 1 + \frac {R_f} {R_1} \right ) \right]
+} </math>
+
+Gain ''G<sub>0</sub>'' represents feedforward through the feedback network, and commonly is negligible.
+
+====Gain ''G<sub>∞</sub>'' with ''T'' → ∞====
+The circuit to determine ''G<sub>∞</sub>'' is shown in the bottom panel of Figure 7. The introduction of the ideal op amp (a [[nullor]]) in this circuit is explained as follows. When ''T ''→ ∞, the gain of the amplifier goes to infinity as well, and in such a case the differential voltage driving the amplifier (the voltage across the input transistor ''r<sub>π1</sub>'') is driven to zero and (according to Ohm's law when there is no voltage) it draws no input current. On the other hand, the output current and output voltage are whatever the circuit demands. This behavior is like a nullor, so a nullor can be introduced to represent the infinite gain transistor.
+
+The current gain is read directly off the schematic:
+
+::<math> G_{ \infty } = \frac { \beta i_B } {i_S} = \left( \frac {\beta} {\beta +1} \right) \left( 1 + \frac {R_f} {R_2} \right) \ . </math>
+
+====Comparison with classical feedback theory====
+Using the classical model, the feed-forward is neglected and the feedback factor β<sub>FB</sub> is (assuming transistor β >> 1):
+
+::<math> \beta_{FB} = \frac {1} {G_{\infin}} \approx \frac {1} {(1+ \frac {R_f}{R_2} )} = \frac {R_2} {(R_f + R_2)} \ , </math>
+
+and the open-loop gain ''A'' is:
+
+::<math>A = G_{\infin}T \approx \frac {\left( 1+\frac {R_f}{R_2} \right) g_m R_C} { \left( 1 + \frac {R_f} {R_1} \right) \left( 1+ \frac {R_C+r_{ \pi 2}}{( \beta +1)R_2} \right) +\frac {R_C+r_{ \pi 2}}{(\beta +1)R_1} } \ . </math>
+
+====Overall gain====
+The above expressions can be substituted into the asymptotic gain model equation to find the overall gain G. The resulting gain is the ''current'' gain of the amplifier with a short-circuit load.
+
+=====Gain using alternative output variables=====
+In the amplifier of Figure 6, ''R''<sub>L</sub> and ''R''<sub>C2</sub> are in parallel.
+To obtain the transresistance gain, say ''A''<sub>ρ</sub>, that is, the gain using voltage as output variable, the short-circuit current gain ''G'' is multiplied by ''R<sub>C2</sub> // R<sub>L</sub>'' in accordance with [[Ohm's law]]:
+
+::<math> A_{ \rho} = G \left( R_\mathrm{C2} // R_\mathrm{L} \right) \ . </math>
+
+The ''open-circuit'' voltage gain is found from ''A''<sub>ρ</sub> by setting ''R''<sub>L</sub> → ∞.
+
+To obtain the current gain when load current ''i<sub>L</sub>'' in load resistor ''R''<sub>L</sub> is the output variable, say ''A''<sub>i</sub>, the formula for [[current division]] is used: ''i<sub>L</sub> = i<sub>out</sub> × R<sub>C2</sub> / ( R<sub>C2</sub> + R<sub>L</sub> )'' and the short-circuit current gain ''G'' is multiplied by this [[Voltage divider#Loading effect|loading factor]]:
+
+::<math> A_i = G \left( \frac {R_{C2}} {R_{C2}+ R_{L}} \right) \ . </math>
+
+Of course, the short-circuit current gain is recovered by setting ''R''<sub>L</sub> = 0 Ω.
+
+==References and notes==
+{{reflist}}
+
+==See also==
+
+*[[Blackman's theorem]]
+*[[Extra element theorem]]
+*[[Mason's gain formula]]
+*[[Negative feedback amplifier#Two-port analysis of feedback|Feedback amplifiers]]
+*[[Return ratio]]
+*[[Signal-flow graph]]
+
+==External links==
+* [http://users.ece.gatech.edu/~pallen/Academic/ECE_6412/Spring_2004/L290-ReturnRatio-2UP.pdf Lecture notes on the asymptotic gain model]
+
+[[Category:Electronic feedback]]
+[[Category:Electronic amplifiers]]
+[[Category:Control theory]]
+[[Category:Signal processing]]
+[[Category:Analog circuits]]

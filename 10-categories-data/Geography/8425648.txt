@@ -1,0 +1,134 @@
+{{Short description|routing methodology for wireless networks}}
+
+'''Geographic routing''' (also called '''georouting'''<ref name="Ruehrup"/> or '''position-based routing''') is a [[routing]] principle that relies on [[geographic position]] information. It is mainly proposed for [[wireless network]]s and based on the idea that the source sends a message to the geographic location of the destination instead of using the [[network address]]. In the area of [[packet radio]] networks, the idea of using position information for routing was first proposed in the 1980s<ref>
+{{cite journal
+  |last = Takagi  |first = H.
+  |author2=Kleinrock, L.
+  |title = Optimal transmission ranges for randomly distributed packet radio terminals
+  |journal = IEEE Transactions on Communications
+  |volume = 32
+  |issue = 3
+  |pages = 246–257
+  |date=March 1984
+  |doi = 10.1109/TCOM.1984.1096061|citeseerx = 10.1.1.64.9747
+  }}
+</ref> for interconnection networks.<ref>
+{{Cite document
+  |last = Finn  |first = Gregory G.
+  |title = Routing and Addressing Problems in Large Metropolitan-Scale Internetworks
+  |publisher = University of Southern California, ISI/RR-87-180
+  |date=March 1987
+  |url = http://www.isi.edu/div7/people/finn.home/routing_and_addressing_problems_in_large_metropolitan-scale_internetworks.BW.pdf
+  }}
+</ref> Geographic routing requires that each [[Node (networking)|node]] can determine its own location and that the source is aware of the location of the destination. With this information, a message can be routed to the destination without knowledge of the [[network topology]] or a prior route discovery.
+
+==Approaches==
+There are various approaches, such as single-path, multi-path and [[Flooding algorithm|flooding]]-based strategies (see<ref>
+{{cite journal
+  |last = Stojmenovic  |first = Ivan
+  |title = Position based routing in ad hoc networks
+  |journal = IEEE Communications Magazine
+  |volume = 40
+  |issue = 7
+  |pages = 128–134
+  |doi = 10.1109/MCOM.2002.1018018
+  |year = 2002|citeseerx = 10.1.1.6.6012
+  }}
+</ref> for a survey). Most single-path strategies rely on two techniques: '''greedy forwarding''' and '''face routing'''. Greedy forwarding tries to bring the message closer to the destination in each step using only local information. Thus, each node forwards the message to the neighbor that is most suitable from a local point of view. The most suitable neighbor can be the one who minimizes the distance to the destination in each step (Greedy). Alternatively, one can consider another notion of progress, namely the projected distance on the source-destination-line (MFR, NFP), or the minimum angle between neighbor and destination (Compass Routing). Not all of these strategies are loop-free, i.e. a message can circulate among nodes in a certain constellation. It is known that the basic greedy strategy and MFR are loop free, while NFP and Compass Routing are not.<ref>
+{{cite journal
+  |last = Stojmenovic  |first = Ivan
+  |author2=Lin, Xu
+  |title = Loop-free hybrid single-path/flooding routing algorithms with guaranteed delivery for wireless networks
+  |journal = IEEE Transactions on Parallel and Distributed Systems
+  |volume = 12
+  |issue = 10
+  |pages = 1023–1032
+  |doi = 10.1109/71.963415
+  |year = 2001|citeseerx = 10.1.1.67.7527
+  }}
+</ref>
+
+{{multiple image|align=center
+| image1 = Georouting greedy variants.svg
+| width1 = 300
+| caption1 = Greedy forwarding variants: The source node (S) has different choices to find a relay node for further forwarding a message to the destination (D). A = Nearest with Forwarding Progress (NFP), B = Most Forwarding progress within Radius (MFR), C = Compass Routing, E = Greedy
+| width2 = 336
+| image2 = Georouting face routing.svg
+| caption2 = Face routing: A message is routed along the interior of the faces of the communication graph, with face changes at the edges crossing the S-D-line (red). The final routing path is shown in blue.
+}}
+
+Greedy forwarding can lead into a dead end, where there is no neighbor closer to the destination. Then, face routing helps to recover from that situation and find a path to another node, where greedy forwarding can be resumed. A recovery strategy such as face routing is necessary to assure that a message can be delivered to the destination. The combination of greedy forwarding and face routing was first proposed in 1999 under the name GFG (Greedy-Face-Greedy).<ref>
+{{cite conference
+  | last = Bose | first = P. | author1-link = Jit Bose
+  | author2=Morin, P. |author2-link= Pat Morin | author3=Stojmenovic, I. | author4=Urrutia, J. | author4-link=Jorge Urrutia Galicia | title = Routing with guaranteed delivery in ad hoc wireless networks
+  | booktitle = Proc. of the 3rd international workshop on discrete algorithms and methods for mobile computing and communications (DIALM '99)
+  | year = 1999
+  | pages = 48–55
+  | doi = 10.1145/313239.313282 }}
+</ref> It guarantees delivery in the so-called unit disk graph network model. Various variants, which were proposed later
+<ref>
+{{cite journal
+  |last = Djenouri |first = Djamel
+  |author2=Balasingham, Ilangko 
+  |title = Traffic-Differentiation-Based Modular QoS Localized Routing for Wireless Sensor Networks
+  |journal = IEEE Transactions on Mobile Computing
+  |volume = 10
+  |issue = 6
+  |pages = 797–809 
+  |doi = 10.1109/TMC.2010.212
+  |year = 2011|s2cid = 11139687
+ }}
+</ref>
+, also for non-unit disk graphs, are based on the principles of GFG
+.<ref name="Ruehrup">
+{{Cite book
+  |last = Ruehrup  |first = Stefan
+  |title = Theory and Practice of Geographic Routing
+  |series =  Ad Hoc and Sensor Wireless Networks: Architectures, Algorithms and Protocols
+  |editor1= Liu |editor2=Chu |editor3=Leung
+  |publisher = Bentham Science
+  |year = 2009
+  |url = http://archive.cone.informatik.uni-freiburg.de/people/ruehrup/georouting-chapter-draft.pdf
+  }}
+</ref>
+
+Face routing depends on a planar subgraph in general; however distributed planarization is difficult for real wireless sensor networks and does not scale well to 3D environments. 
+<ref>
+{{cite conference
+  | last = Kim | first = Y
+  | author2=Ramesh Govindan
+  | author2-link=Ramesh Govindan
+  | author3=Karp, Brad.
+  | author4=Scott Shenker
+  | author4-link=Scott Shenker
+  | title = On the Pitfalls of Geographic Face Routing
+  | booktitle = Proceedings of the 2005 Joint Workshop on Foundations of Mobile Computing
+  | year = 2005
+  | pages = 34–43
+  | doi = 10.1145/1080810.1080818 }}
+</ref>
+
+==Greedy embedding==
+Although originally developed as a routing scheme that uses the physical positions of each node, geographic routing algorithms have also been applied to networks in which each node is associated with a point in a virtual space, unrelated to its physical position. The process of finding a set of virtual positions for the nodes of a network such that geographic routing using these positions is guaranteed to succeed is called [[greedy embedding]].<ref>{{citation
+ | last1 = Rao | first1 = Ananth
+ | last2 = Ratnasamy | first2 = Sylvia
+ | last3 = Papadimitriou | first3 = Christos H. | author3-link = Christos Papadimitriou
+ | last4 = Shenker | first4 = Scott | author4-link = Scott Shenker
+ | last5 = Stoica | first5 = Ion | author5-link = Ion Stoica
+ | contribution = Geographic routing without location information
+ | pages = 96–108
+ | title = Proc. 9th ACM Mobile Computing and Networking (MobiCom)
+ | year = 2003}}.</ref>
+
+==See also==
+*[[List of ad-hoc routing protocols]]
+*[[Backpressure Routing]]
+
+== References ==
+{{Reflist}}
+
+{{DEFAULTSORT:Geographic Routing}}
+[[Category:Routing protocols]]
+[[Category:Wireless networking]]
+[[Category:Routing algorithms]]
+[[Category:Geographic position]]

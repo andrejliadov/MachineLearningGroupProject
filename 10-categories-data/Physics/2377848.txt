@@ -1,0 +1,995 @@
+[[File:Kaon-Decay.svg|thumb|300px| The decay of a [[kaon]]&nbsp;({{Subatomic particle|Kaon+}}) into three [[pion]]s&nbsp;(2&nbsp;{{Subatomic particle|Pion+}},&nbsp;1&nbsp;{{Subatomic particle|Pion-}}) is a process that involves both [[weak interaction|weak]] and [[strong interaction]]s.<br><br>''Weak interactions'': The [[strange antiquark]]&nbsp;({{Subatomic particle|strange antiquark}}) of the kaon transmutes into an [[up antiquark]]&nbsp;({{Subatomic particle|up antiquark}}) by the emission of a [[W and Z bosons|{{Subatomic particle|W boson+}} boson]]; the {{Subatomic particle|W boson+}} boson subsequently decays into a [[down antiquark]]&nbsp;({{Subatomic particle|down antiquark}}) and an [[up quark]]&nbsp;({{Subatomic particle|up quark}}).<br><br>''Strong interactions'': An up quark&nbsp;({{Subatomic particle|up quark}}) emits a [[gluon]]&nbsp;({{Subatomic particle|gluon}}) which decays into a down quark&nbsp;({{Subatomic particle|down quark}}) and a down antiquark&nbsp;({{Subatomic particle|down antiquark}}). ]]
+
+:''This list is of all known and predicted [[scalar meson|scalar]], [[pseudoscalar meson|pseudoscalar]] and [[vector meson|vector]] [[meson]]s. See [[list of particles]] for a more detailed list of particles found in [[particle physics]].''
+
+This article contains a '''list of mesons''', unstable [[subatomic particle]]s composed of one [[quark]] and one [[antiquark]]. They are part of the [[hadron]] particle family – particles made of quarks. The other members of the hadron family are the [[baryon]]s – subatomic particles composed of three quarks. The main difference between [[meson]]s and baryons is that mesons have integer [[spin (physics)|spin]] (thus are [[boson]]s) while baryons are [[fermion]]s (half-integer spin). [[Spin-statistics theorem|Because mesons are bosons]], the [[Pauli exclusion principle]] does not apply to them. Because of this, they can act as [[force carrier|force mediating particle]]s on short distances, and thus play a part in processes such as the [[nuclear interaction]].
+
+Since mesons are composed of quarks, they participate in both the [[weak interaction|weak]] and [[strong interaction]]s. Mesons with net [[electric charge]] also participate in the [[electromagnetic interaction]]. They are classified according to their quark content, [[total angular momentum]], [[parity (physics)|parity]], and various other properties such as [[C-parity]] and [[G-parity]]. While no meson is stable, those of lower [[mass]] are nonetheless more stable than the most massive mesons, and are easier to observe and study in [[particle accelerator]]s or in [[cosmic ray]] experiments. They are also typically less massive than baryons, meaning that they are more easily produced in experiments, and will exhibit higher-energy phenomena sooner than baryons would. For example, the charm quark was first seen in the [[J/ψ meson|J/Psi meson]] ({{Subatomic particle|J/psi}}) in 1974,<ref>J.J. Aubert ''et al.'' (1974)</ref><ref>J.E. Augustin ''et al.'' (1974)</ref> and the bottom quark in the [[upsilon meson]] ({{Subatomic particle|Upsilon}}) in 1977.<ref>S.W. Herb ''et al.'' (1977)</ref> The top quark (the last and heaviest quark to be discovered till date) was first observed at [[Fermilab]] in 1995.
+
+Each meson has a corresponding [[antiparticle]] (antimeson) where quarks are replaced by their corresponding antiquarks and vice versa. For example, a positive [[pion]] ({{Subatomic particle|Pion+}}) is made of one up quark and one down antiquark; and its corresponding antiparticle, the negative pion ({{Subatomic particle|Pion-}}), is made of one up antiquark and one down quark. Although [[tetraquarks]] with two quarks and two antiquarks can be considered mesons they are not listed here.
+
+The symbols encountered in these lists are: I (''[[isospin]]''), J (''[[total angular momentum]]''), P (''[[parity (physics)|parity]]''), C (''[[C-parity]]''), G (''[[G-parity]]''), u (''[[up quark]]''), d (''[[down quark]]''), s (''[[strange quark]]''), c (''[[charm quark]]''), b (''[[bottom quark]]''), Q (''[[charge (physics)|charge]]''), B (''[[baryon number]]''), S (''[[strangeness]]''), C (''[[charm (quantum number)|charm]]''), and B′ (''[[bottomness]]''), as well as a wide array of subatomic particles (hover for name).
+
+==Summary table==
+Because this table was initially derived from published results and many of those results were preliminary, as many as 64 of the mesons in the following table may not exist or have the wrong mass or quantum numbers.
+
+{| class="wikitable"
+|+ Meson summary table<ref>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/tables/rpp2014-qtab-mesons.pdf Meson Summary Table]</ref>
+|-
+! colspan="4" | Light unflavoured <br>(S = C = B = 0)
+! colspan="2" | Strange <br>(S = ±1, C = B = 0)
+! colspan="2" | Charmed, strange <br>(C = S = ±1)
+! colspan="2" | c{{Physics particle|anti=yes|c}}
+|-
+| || I<sup>G</sup>(J<sup>PC</sup>) || || I<sup>G</sup>(J<sup>PC</sup>) || || I<sup>G</sup>(J<sup>P</sup>) || || I<sup>G</sup>(J<sup>P</sup>) || || I<sup>G</sup>(J<sup>PC</sup>)
+|-
+| {{Physics particle|π|TR=±}} || 1<sup>−</sup>(0<sup>−</sup>) 
+| Φ(1680) || 0<sup>−</sup>(1<sup>−−</sup>) 
+|{{Physics particle|K|TR=±}} || {{frac|1|2}}(0<sup>−</sup>)
+| {{Physics particle|D|TR=±|BR=s}} || 0(0<sup>−</sup>) 
+| {{Physics particle|η|BR=c}}(1S) || 0<sup>+</sup>(0<sup>−+</sup>)
+|-
+| {{Physics particle|π|TR=0}} || 1<sup>−</sup>(0<sup>−+</sup>) 
+| {{Physics particle|ρ|BR=3}}(1690) || 1<sup>+</sup>(3<sup>−−</sup>) 
+| {{Physics particle|K|TR=0}} || {{frac|1|2}}(0<sup>−</sup>)
+| {{Physics particle|D|TR=*±|BR=s}} || 0(?<sup>?</sup>) 
+| J/ψ(1S) || 0<sup>−</sup>(1<sup>−−</sup>)
+|-
+| η || 0<sup>+</sup>(0<sup>−+</sup>) 
+| ρ(1700) || 1<sup>+</sup>(1<sup>−−</sup>) 
+| {{Physics particle|K|TR=0|BR=S}} || {{frac|1|2}}(0<sup>−</sup>)
+| {{Physics particle|D|TR=*|BR=s0}}(2317)<sup>±</sup> || 0(0<sup>+</sup>) 
+| {{Physics particle|χ|BR=c0}}(1P) || 0<sup>+</sup>(0<sup>++</sup>)
+|-
+| {{Physics particle|f|BR=0}}(500) || 0<sup>+</sup>(0<sup>++</sup>) 
+| {{Physics particle|a|BR=2}}(1700) || 1<sup>−</sup>(2<sup>++</sup>) 
+| {{Physics particle|K|TR=0|BR=L}} || {{frac|1|2}}(0<sup>−</sup>)
+| {{Physics particle|D|BR=s1}}(2460)<sup>±</sup> || 0(1<sup>+</sup>) 
+| {{Physics particle|χ|BR=c1}}(1P) || 0<sup>+</sup>(1<sup>++</sup>)
+|-
+| ρ(770) || 1<sup>+</sup>(1<sup>−−</sup>) 
+| f<sub>0</sub>(1710) || 0<sup>+</sup>(0<sup>++</sup>) 
+| {{Physics particle|K||TR=*|BR=0}}(800) || {{frac|1|2}}(0<sup>+</sup>)
+| {{Physics particle|D|BR=s1}}(2536)<sup>±</sup> || 0(1<sup>+</sup>)
+| {{Physics particle|h|BR=c}}(1P) || ?<sup>?</sup>(1<sup>+−</sup>)
+|-
+| ω(782) || 0<sup>−</sup>(1<sup>−−</sup>) 
+| η(1760) || 0<sup>+</sup>(0<sup>−+</sup>) 
+| {{Physics particle|K|TR=*}}(892) || {{frac|1|2}}(1<sup>−</sup>)
+| {{Physics particle|D|BR=s2}}(2573) || 0(?<sup>?</sup>) 
+| {{Physics particle|χ|BR=c2}}(1P) || 0<sup>+</sup>(2<sup>++</sup>)
+|-
+| η&prime; (958) || 0<sup>+</sup>(0<sup>−+</sup>) 
+| π(1800) || 1<sup>−</sup>(0<sup>−+</sup>) 
+| {{Physics particle|K|BR=1}}(1270) || {{frac|1|2}}(1<sup>+</sup>)
+| {{Physics particle|D|TR=*|BR=s1}}(2700)<sup>±</sup> || 0(1<sup>−</sup>) 
+| {{Physics particle|η|BR=c}}(2S) || 0<sup>+</sup>(0<sup>−+</sup>)
+|-
+| {{Physics particle|f|BR=0}}(980) || 0<sup>+</sup>(0<sup>++</sup>) 
+| {{Physics particle|f|BR=2}}(1810) || 0<sup>+</sup>(2<sup>++</sup>) 
+| {{Physics particle|K|BR=1}}(1400) || {{frac|1|2}}(1<sup>+</sup>)
+| {{Physics particle|D|TR=*|BR=sJ}}(2860)<sup>±</sup> || 0(?<sup>?</sup>) 
+| ψ(2S) ||  0<sup>−</sup>(1<sup>−−</sup>)
+|-
+| {{Physics particle|a|BR=0}}(980) || 1<sup>−</sup>(0<sup>++</sup>) 
+| X(1835) || ?<sup>?</sup>(?<sup>−+</sup>) 
+| {{Physics particle|K|TR=*}}(1410) || {{frac|1|2}}(1<sup>−</sup>) 
+| {{Physics particle|D|BR=sJ}}(3040)<sup>±</sup> || 0(?<sup>?</sup>)
+| ψ(3770) ||  0<sup>−</sup>(1<sup>−−</sup>)
+|-
+| φ(1020) || 0<sup>−</sup>(1<sup>−−</sup>) 
+| X(1840) || ?<sup>?</sup>(?<sup>??</sup>) 
+| {{Physics particle|K|TR=*|BR=0}}(1430) || {{frac|1|2}}(0<sup>+</sup>)
+| rowspan="2" colspan="2" align="center" | '''Bottom <br>(B = ±1)'''
+| X(3823) || ?<sup>?</sup>(?<sup>?−</sup>) 
+|-
+| {{Physics particle|h|BR=1}}(1170) || 0<sup>−</sup>(1<sup>+−</sup>) 
+| {{Physics particle|φ|BR=3}}(1850) || 0<sup>−</sup>(3<sup>−−</sup>) 
+| {{Physics particle|K|TR=*|BR=2}}(1430) || {{frac|1|2}}(2<sup>+</sup>)
+| X(3872) || 0<sup>+</sup>(1<sup>++</sup>) 
+|-
+| {{Physics particle|b|BR=1}}(1235) || 1<sup>+</sup>(1<sup>+−</sup>) 
+| {{Physics particle|η|BR=2}}(1870) || 0<sup>+</sup>(2<sup>−+</sup>) 
+| K(1460) || {{frac|1|2}}(0<sup>−</sup>)
+| {{Physics particle|B|TR=±}} || {{frac|1|2}}(0<sup>−</sup>)
+| X(3900)<sup>±</sup> || ?(1<sup>+</sup>)
+|-
+| {{Physics particle|a|BR=1}}(1260) || 1<sup>−</sup>(1<sup>++</sup>) 
+| {{Physics particle|π|BR=2}}(1880) || 1<sup>−</sup>(2<sup>−+</sup>) 
+| {{Physics particle|K|BR=2}}(1580) || {{frac|1|2}}(2<sup>−</sup>)
+| {{Physics particle|B|TR=0}} || {{frac|1|2}}(0<sup>−</sup>)
+| X(3900)<sup>0</sup> || ?(?<sup>?</sup>)
+|-
+| {{Physics particle|f|BR=2}}(1270) || 0<sup>+</sup>(2<sup>++</sup>) 
+| ρ(1900) || 1<sup>+</sup>(1<sup>−−</sup>) 
+| K(1630) || {{frac|1|2}}(?<sup>?</sup>)
+| colspan="2" |{{Physics particle|B|TR=±}}/{{Physics particle|B|TR=0}} Admixture
+| {{Physics particle|χ|BR=c0}}(2P) || 0<sup>+</sup>(0<sup>++</sup>)
+|-
+| {{Physics particle|f|BR=1}}(1285) || 0<sup>+</sup>(1<sup>++</sup>) 
+| {{Physics particle|f|BR=2}}(1910) || 0<sup>+</sup>(2<sup>++</sup>) 
+| {{Physics particle|K|BR=1}}(1650) || {{frac|1|2}}(1<sup>+</sup>)
+| colspan="2" rowspan="2" | {{Physics particle|B|TR=±}}/{{Physics particle|B|TR=0}}/{{Physics particle|B|TR=0|BR=s}}/b-baryon<br>Admixture
+| {{Physics particle|χ|BR=c2}}(2P) || 0<sup>+</sup>(2<sup>++</sup>)
+|-
+| η(1295) || 0<sup>+</sup>(0<sup>−+</sup>) 
+| {{Physics particle|f|BR=2}}(1950) || 0<sup>+</sup>(2<sup>++</sup>) 
+| {{Physics particle|K|TR=*}}(1680) || {{frac|1|2}}(1<sup>−</sup>)
+| X(3940) || ?<sup>?</sup>(?<sup>??</sup>) 
+|-
+| π(1300) || 1<sup>−</sup>(0<sup>−+</sup>) 
+| {{Physics particle|ρ|BR=3}}(1990) || 1<sup>+</sup>(3<sup>−−</sup>) 
+| {{Physics particle|K|BR=2}}(1770) || {{frac|1|2}}(2<sup>−</sup>)
+| colspan="2" rowspan="2" | ''V''<sub>cb</sub> and ''V''<sub>ub</sub> CKM Matrix<br>Admixture
+| X(4020)<sup>±</sup> || ?(?<sup>?</sup>) 
+|-
+| {{Physics particle|a|BR=2}}(1320) || 1<sup>−</sup>(2<sup>++</sup>) 
+| {{Physics particle|f|BR=2}}(2010) || 0<sup>+</sup>(2<sup>++</sup>) 
+| {{Physics particle|K|TR=*|BR=3}}(1780) || {{frac|1|2}}(3<sup>−</sup>)
+| ψ(4040) || 0<sup>−</sup>(1<sup>−−</sup>)
+|-
+| {{Physics particle|f|BR=0}}(1370) || 0<sup>+</sup>(0<sup>++</sup>) 
+| {{Physics particle|f|BR=0}}(2020) || 0<sup>+</sup>(0<sup>++</sup>) 
+| {{Physics particle|K|BR=2}}(1820)|| {{frac|1|2}}(2<sup>−</sup>)
+| {{Physics particle|B|TR=*}} || {{frac|1|2}}(1<sup>−</sup>) 
+| X(4050)<sup>±</sup> || ?(?<sup>?</sup>) 
+|-
+| {{Physics particle|h|BR=1}}(1380) || ?<sup>−</sup>(1<sup>+−</sup>) 
+| {{Physics particle|a|BR=4}}(2040) || 1<sup>−</sup>(4<sup>++</sup>) 
+| K(1830) || {{frac|1|2}}(0<sup>−</sup>)
+| {{Physics particle|B|TR=*|BR=J}}(5732) || ?(?<sup>?</sup>) 
+| X(4140) || 0<sup>+</sup>(?<sup>?+</sup>)
+|-
+| {{Physics particle|π|BR=1}}(1400) || 1<sup>−</sup>(1<sup>−+</sup>) 
+| {{Physics particle|f|BR=4}}(2050) || 0<sup>+</sup>(4<sup>++</sup>) 
+| {{Physics particle|K|TR=*|BR=0}}(1950) || {{frac|1|2}}(0<sup>+</sup>)
+| {{Physics particle|B|BR=1}}(5721)<sup>0</sup> || {{frac|1|2}}(1<sup>+</sup>) 
+| ψ(4160) || 0<sup>−</sup>(1<sup>−−</sup>)
+|-
+| η(1405) || 0<sup>+</sup>(0<sup>−+</sup>) 
+| {{Physics particle|π|BR=2}}(2100) || 1<sup>−</sup>(2<sup>−+</sup>) 
+| {{Physics particle|K|TR=*|BR=2}}(1980) || {{frac|1|2}}(2<sup>+</sup>)
+| {{Physics particle|B|TR=*|BR=1}}(5721)<sup>0</sup> || {{frac|1|2}}(2<sup>+</sup>) 
+| X(4160) || ?<sup>?</sup>(?<sup>??</sup>)
+|-
+| {{Physics particle|f|BR=1}}(1420) || 0<sup>+</sup>(1<sup>++</sup>) 
+| {{Physics particle|f|BR=0}}(2100) || 0<sup>+</sup>(0<sup>++</sup>) 
+| {{Physics particle|K|TR=*|BR=0}}(2045) || {{frac|1|2}}(4<sup>+</sup>)
+| rowspan="2" colspan="2" align="center" | '''Bottom, strange<br>(B = ±1, S = ∓1)'''
+| X(4250)<sup>±</sup> || ?(?<sup>?</sup>)
+|-
+| ω(1420) || 0<sup>−</sup>(1<sup>−−</sup>) 
+| {{Physics particle|f|BR=2}}(2150) || 0<sup>+</sup>(2<sup>++</sup>) 
+| {{Physics particle|K|BR=2}}(2250) || {{frac|1|2}}(2<sup>−</sup>)
+| X(4260) || ?<sup>?</sup>(1<sup>−−</sup>)
+|-
+| {{Physics particle|f|BR=2}}(1430) || 0<sup>+</sup>(2<sup>++</sup>) 
+| ρ(2150) || 1<sup>+</sup>(1<sup>−−</sup>) 
+| {{Physics particle|K|BR=3}}(2320) || {{frac|1|2}}(3<sup>+</sup>)
+| {{Physics particle|B|TR=0|BR=s}} || 0(0<sup>−</sup>)
+| X(4350) || 0<sup>+</sup>(?<sup>?+</sup>)
+|-
+| {{Physics particle|a|BR=0}}(1450) || 1<sup>−</sup>(0<sup>++</sup>) 
+| φ(2170) || 0<sup>−</sup>(1<sup>−−</sup>) 
+| {{Physics particle|K|TR=*|BR=5}}(2380) || {{frac|1|2}}(5<sup>−</sup>)
+| {{Physics particle|B|TR=*|BR=s}} || 0(1<sup>−</sup>)
+| X(4360) || ?<sup>?</sup>(1<sup>−−</sup>)
+|-
+| ρ(1450) || 1<sup>+</sup>(1<sup>−−</sup>) 
+| {{Physics particle|f|BR=0}}(2200) || 0<sup>+</sup>(0<sup>++</sup>) 
+| {{Physics particle|k|BR=4}}(2500) || {{frac|1|2}}(4<sup>−</sup>)
+| {{Physics particle|B|BR=s1}}(5830)<sup>0</sup> || 0(1<sup>+</sup>)
+| ψ(4415) || 0<sup>−</sup>(1<sup>−−</sup>)
+|-
+| η(1475) || 0<sup>+</sup>(0<sup>−+</sup>) 
+| rowspan="2" | f<sub>J</sub>(2200) || rowspan="2" | 0<sup>+</sup>(2<sup>++</sup><br>or 4<sup>++</sup>) 
+| K(3100) || ?<sup>?</sup>(?<sup>??</sup>)
+| {{Physics particle|B|TR=*|BR=s2}}(5840)<sup>0</sup> || 0(2<sup>+</sup>)
+| X(4430)<sup>±</sup> || ?(1<sup>+</sup>)
+|-
+| {{Physics particle|f|BR=0}}(1500) || 0<sup>+</sup>(0<sup>++</sup>) 
+| rowspan="2" colspan="2" align="center" | '''Charmed <br>(C = ±1)'''
+| {{Physics particle|B|TR=*|BR=sJ}}(5850) || ?(?<sup>?</sup>)
+| X(4660) || ?<sup>?</sup>(1<sup>−−</sup>)
+|-
+| {{Physics particle|f|BR=1}}(1510) || 0<sup>+</sup>(1<sup>++</sup>) 
+| η(2225) || 0<sup>+</sup>(0<sup>−+</sup>) 
+| rowspan="2" colspan="2" align="center" | '''Bottom, charmed<br>(B = C = ±1)'''
+| colspan="2" align="center" | '''b{{Physics particle|b|anti=yes}}'''
+|-
+| {{Physics particle|f&prime;|BR=1}}(1525) || 0<sup>+</sup>(2<sup>++</sup>) 
+| {{Physics particle|ρ|BR=3}}(2250) || 1<sup>+</sup>(3<sup>−−</sup>)
+| {{Physics particle|D|TR=±}} || {{frac|1|2}}(0<sup>−</sup>) 
+| {{Physics particle|η|BR=b}}(1S) || 0<sup>+</sup>(0<sup>−+</sup>)
+|-
+| {{Physics particle|f|BR=2}}(1565) || 0<sup>+</sup>(2<sup>++</sup>) 
+|  f<sub>2</sub>(2300) || 0<sup>+</sup>(2<sup>++</sup>)
+| {{Physics particle|D|TR=0}} || {{frac|1|2}}(0<sup>−</sup>) 
+| {{Physics particle|B|TR=±|BR=c}} || 0(0<sup>−</sup>) 
+| Υ(1S) || 0<sup>−</sup>(1<sup>−−</sup>)
+|-
+| ρ(1570) || 1<sup>+</sup>(1<sup>−−</sup>) 
+| {{Physics particle|f|BR=4}}(2300) || 0<sup>+</sup>(4<sup>++</sup>)
+| {{Physics particle|D|TR=*}}(2007)<sup>0</sup> || {{frac|1|2}}(1<sup>−</sup>) 
+| rowspan="20" colspan="2" |
+| {{Physics particle|χ|BR=b0}}(1P) || 0<sup>+</sup>(0<sup>++</sup>)
+|-
+| {{Physics particle|h|BR=1}}(1595) || 0<sup>−</sup>(1<sup>+−</sup>) 
+| {{Physics particle|f|BR=0}}(2330) || 0<sup>+</sup>(0<sup>++</sup>)
+| {{Physics particle|D|TR=*}}(2010)<sup>±</sup> || {{frac|1|2}}(1<sup>−</sup>)
+| {{Physics particle|χ|BR=b1}}(1P) || 0<sup>+</sup>(1<sup>++</sup>)
+|-
+| {{Physics particle|π|BR=1}}(1600) || 1<sup>−</sup>(1<sup>−+</sup>) 
+| {{Physics particle|f|BR=2}}(2340) || 0<sup>+</sup>(2<sup>++</sup>) 
+| {{Physics particle|D|TR=*|BR=0}}(2400)<sup>0</sup> || {{frac|1|2}}(0<sup>+</sup>)
+| {{Physics particle|χ|BR=b0}}(2P) || 0<sup>+</sup>(0<sup>++</sup>)
+|-
+| {{Physics particle|a|BR=1}}(1640) || 1<sup>−</sup>(1<sup>++</sup>) 
+| {{Physics particle|ρ|BR=5}}(2350) || 1<sup>+</sup>(5<sup>−−</sup>)
+| {{Physics particle|D|TR=*|BR=0}}(2400)<sup>±</sup> || {{frac|1|2}}(0<sup>+</sup>)
+| {{Physics particle|h|BR=b}}(1P) || ?<sup>?</sup>(1<sup>+−</sup>)
+|-
+| {{Physics particle|f|BR=2}}(1640) || 0<sup>+</sup>(2<sup>++</sup>) 
+| {{Physics particle|a|BR=6}}(2450) || 1<sup>−</sup>(6<sup>++</sup>) 
+| {{Physics particle|D|BR=1}}(2420)<sup>0</sup> || {{frac|1|2}}(1<sup>+</sup>)
+| {{Physics particle|χ|BR=b2}}(1P) || 0<sup>+</sup>(2<sup>++</sup>)
+|-
+| {{Physics particle|η|BR=2}}(1645) || 0<sup>+</sup>(2<sup>−+</sup>) 
+| {{Physics particle|f|BR=6}}(2510) || 0<sup>+</sup>(6<sup>++</sup>)
+| {{Physics particle|D|BR=1}}(2420)<sup>±</sup> || {{frac|1|2}}(?<sup>?</sup>)
+| {{Physics particle|η|BR=b}}(2S) || 0<sup>+</sup>(0<sup>−+</sup>)
+|-
+| ω(1650) || 0<sup>−</sup>(1<sup>−−</sup>) 
+| colspan="2" align="center" |'''Other light'''
+| {{Physics particle|D|BR=1}}(2430)<sup>0</sup> || {{frac|1|2}}(1<sup>+</sup>)
+| Υ(2S) || 0<sup>−</sup>(1<sup>−−</sup>)
+|-
+| {{Physics particle|ω|BR=3}}(1670) || 0<sup>−</sup>(3<sup>−−</sup>) 
+| colspan="2" | [https://pdg.lbl.gov/2020/listings/rpp2020-list-further-states.pdf  Further States]
+| {{Physics particle|D|TR=*|BR=2}}(2460)<sup>0</sup> || {{frac|1|2}}(2<sup>+</sup>)
+| Υ(1D) || 0<sup>−</sup>(2<sup>−−</sup>)
+|-
+| {{Physics particle|π|BR=2}}(1670) || 1<sup>−</sup>(2<sup>−+</sup>)
+|  rowspan="12" colspan="2" |
+| {{Physics particle|D|TR=*|BR=2}}(2460)<sup>±</sup> || {{frac|1|2}}(2<sup>+</sup>)
+| {{Physics particle|χ|BR=b0}}(2P) || 0<sup>+</sup>(0<sup>++</sup>)
+|-
+| rowspan="11" colspan="2" |
+| D(2550)<sup>0</sup> || {{frac|1|2}}(0<sup>−</sup>)
+| {{Physics particle|χ|BR=b1}}(2P) || 0<sup>+</sup>(1<sup>++</sup>)
+|-
+| D(2600) ||{{frac|1|2}}(?<sup>?</sup>)
+| {{Physics particle|h|BR=b}}(2P) || ?<sup>?</sup>(1<sup>+−</sup>)
+|-
+| {{Physics particle|D|TR=*}}(2640)<sup>±</sup> || {{frac|1|2}}(?<sup>?</sup>) 
+| {{Physics particle|χ|BR=b2}}(2P) || 0<sup>+</sup>(2<sup>++</sup>)
+|-
+| D(2750) ||{{frac|1|2}}(?<sup>?</sup>)
+| Υ(3S) || 0<sup>−</sup>(1<sup>−−</sup>)
+|-
+| rowspan="7" colspan="2" |
+| {{Physics particle|χ|BR=b}}(3P) || ?<sup>?</sup>(?<sup>?+</sup>)
+|-
+| Υ(4S) || 0<sup>−</sup>(1<sup>−−</sup>)
+|-
+| X(10610)<sup>±</sup> || 1<sup>+</sup>(1<sup>+</sup>)
+|-
+| X(10610)<sup>0</sup> || 1<sup>+</sup>(1<sup>+</sup>)
+|-
+| X(10650)<sup>±</sup> || ?<sup>+</sup>(1<sup>+</sup>)
+|-
+| Υ(10860) || 0<sup>−</sup>(1<sup>−−</sup>)
+|-
+| Υ(11020) || 0<sup>−</sup>(1<sup>−−</sup>)
+|}
+
+The letter "f" in the name of a meson denotes that it is a scalar meson (as opposed to a pseudo-scalar meson), and the letter "a" in the name of a meson denotes that it is an axial-vector meson (as opposed to an ordinary vector meson) a.k.a. an isoscalar vector meson, while the letters "b" and "h" refer to axial-vector mesons with positive parity, negative C-parity, and quantum numbers I<sup>G</sup> of 1<sup>+</sup> and 0<sup>−</sup> respectively.<ref>Kan Chen, et al., "Light axial vector mesons" Phys. Rev. D 91, 074025 (2015) doi: 10.1103/PhysRevD.91.074025 open access copy available at https://arxiv.org/abs/1501.07766</ref> The, "f", "a", "b" and "h" mesons are not listed in the tables below and their internal structure and quark content is a matter of ongoing investigation.<ref>M. Tanabashi et al. (Particle Data Group), Phys. Rev. D 98, 030001 (2018) http://pdg.lbl.gov/2019/reviews/rpp2018-rev-scalar-mesons.pdf</ref><ref>Eef van Beveren, George Rupp, "Scalar and axial-vector mesons" (2007) (plenary talk at the IVth International Conference on Quarks and Nuclear Physics (QNP06), Madrid, 5–10 June 2006 with subsequent corrections) https://arxiv.org/abs/hep-ph/0610199</ref> The particle described in the table above as f<sub>0</sub>(500) has historically been known by two other names: f<sub>0</sub>(600) and &sigma; (sigma).<ref>J.R. Pelaez (2016) (open access copy available at https://arxiv.org/abs/1510.00653 )("The existence and properties of the sigma meson have been controversial for almost six decades, despite playing a central role in the spontaneous chiral symmetry of QCD or in the nucleon–nucleon attraction. This controversy has also been fed by the strong indications that it is not an ordinary quark–antiquark meson.")</ref>
+
+A complete set of meson naming conventions is set forth in a 2017 review article for the Particle Data Group which also contains a table mapping pre-2016 common names to the new Particle Data Group standard naming conventions for XYZ mesons.<ref>C. Patrignani et al. (Particle Data Group), Chin. Phys. C, 40, 100001 (2016) and 2017 update http://pdg.lbl.gov/2017/reviews/rpp2017-rev-naming-scheme-hadrons.pdf</ref>
+
+== Meson properties ==
+The following lists details for all known and predicted pseudoscalar ([[total angular momentum|J]]<sup>[[Parity (physics)|P]]</sup> = 0<sup>−</sup>) and vector ([[total angular momentum|J]]<sup>[[Parity (physics)|P]]</sup>  = 1<sup>−</sup>) mesons.
+
+The properties and quark content of the particles are tabulated below; for the corresponding antiparticles, simply change quarks into antiquarks (and vice versa) and flip the sign of Q, B, S, C, and B′. Particles with <sup>†</sup> next to their names have been predicted by the [[standard model]] but not yet observed. Values in {{color|red|red}} have not been firmly established by experiments, but are predicted by the [[quark model]] and are consistent with the measurements.
+
+===Pseudoscalar mesons===
+
+{| class="wikitable sortable" style="text-align:center; width:100%;"
+|+ Pseudoscalar mesons
+|-
+! class=unsortable | Particle <br/>name
+! Particle <br>symbol
+! Antiparticle <br>symbol
+! class=unsortable | Quark <br>content
+! [[Rest mass]] ([[electron volt|MeV]]/[[speed of light|''c'']]<sup>2</sup>)
+! width="50" | [[Isospin|I]]<sup>[[G parity|G]]</sup>
+! width="50" | [[Total angular momentum|J]]<sup>[[Parity (physics)|P]][[C-parity|C]]</sup>
+! width="50" | [[strangeness|S]]
+! width="50" | [[charm (quantum number)|C]]
+! width="50" | [[bottomness|B']]
+! [[Mean lifetime]] ([[second|s]])
+! class=unsortable | Commonly decays to <br>(>5% of decays)
+|-
+| style="text-align:left" | Pion<ref name="PDGPion+-">K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-pi-plus-minus.pdf Particle listings – {{Subatomic particle|Pion+-}}]</ref>
+| {{Subatomic particle|link=yes|Pion+}}
+| {{Subatomic particle|link=yes|Pion-}}
+| {{Subatomic particle|link=yes|Up quark}}{{Subatomic particle|link=yes|Down antiquark}}
+| {{sort|0139.57018|{{val|139.57018|0.00035}}}}
+| 1<sup>−</sup>
+| 0<sup>−</sup>
+| 0
+| 0
+| 0
+| {{sort|-08.2|{{val|2.6033|0.0005|e=-8}}}}
+| {{nowrap|{{Subatomic particle|link=yes|Antimuon}} + {{Subatomic particle|link=yes|Muon neutrino}}}}
+|-
+|style="text-align:left"|Pion<ref name=PDGPion0>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-pi-zero.pdf Particle listings – {{Subatomic particle|Pion0}}]</ref>
+| {{Subatomic particle|link=yes|Pion0}}
+| Self
+| {{nowrap|<math>\mathrm{\tfrac{u\bar{u} - d\bar{d}}{\sqrt{2}}}\,</math><sup>{{ref|quarkcontent|[a]}}</sup>}}
+| {{sort|0134.9766|{{val|134.9766|0.0006}}}}
+| 1<sup>−</sup>
+| 0<sup>−+</sup>
+| 0
+| 0
+| 0
+| {{sort|-17|{{val|8.52|0.18|e=-17}}}}
+| {{nowrap|{{Subatomic particle|link=yes|Photon}} + {{Subatomic particle|link=yes|Photon}}}}
+|-
+|style="text-align:left"|Eta meson<ref name=PDGEta>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-eta.pdf Particle listings – {{Subatomic particle|Eta}}]</ref>
+| {{Subatomic particle|link=yes|Eta}}
+| Self
+| {{nowrap|<math>\mathrm{\tfrac{u\bar{u} + d\bar{d} - 2s\bar{s}}{\sqrt{6}}}\,</math><sup>{{ref|quarkcontent|[a]}}</sup>}}
+| {{sort|0547.862|{{val|547.862|0.018}}}}
+| 0<sup>+</sup>
+| 0<sup>−+</sup>
+| 0
+| 0
+| 0
+| {{sort|-19|{{val|5.02|0.19|e=-19}}<sup>{{ref|Lifetime|[b]}}</sup>}}
+| {{nowrap|{{Subatomic particle|link=yes|Photon}} + {{Subatomic particle|link=yes|Photon}}}} or <br> {{nowrap|{{Subatomic particle|link=yes|Pion0}} + {{Subatomic particle|link=yes|Pion0}} + {{Subatomic particle|link=yes|Pion0}} or}} <br>{{nowrap|{{Subatomic particle|link=yes|Pion+}} + {{Subatomic particle|link=yes|Pion0}} + {{Subatomic particle|link=yes|Pion-}}}}
+|-
+|style="text-align:left"|Eta prime meson<ref name=PDGEtaPrime>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-eta-prime-958.pdf Particle listings – {{Subatomic particle|Eta prime}}]</ref>
+| {{Subatomic particle|link=yes|Eta prime}}(958)
+| Self
+| {{nowrap|<math>\tfrac\mathrm{u\bar{u} + d\bar{d} + s\bar{s}}{\sqrt{3}}\,</math><sup>{{ref|quarkcontent|[a]}}</sup>}}
+| {{sort|0957.78|{{val|957.78|0.06}}}}
+| 0<sup>+</sup>
+| 0<sup>−+</sup>
+| 0
+| 0
+| 0
+| {{sort|-21|{{val|3.32|0.15|e=-21}}<sup>{{ref|Lifetime|[b]}}</sup>}}
+| {{nowrap|{{Subatomic particle|link=yes|Pion+}}  + {{Subatomic particle|link=yes|Pion-}} + {{Subatomic particle|link=yes|Eta}} or}} <br>{{nowrap|({{Subatomic particle|link=yes|rho0}} + {{Subatomic particle|link=yes|Photon}}) / ({{Subatomic particle|link=yes|Pion+}}  + {{Subatomic particle|link=yes|Pion-}} + {{Subatomic particle|link=yes|Photon}}) or}} <br>{{nowrap|{{Subatomic particle|link=yes|Pion0}} + {{Subatomic particle|link=yes|Pion0}} + {{Subatomic particle|link=yes|Eta}}}}
+|-
+|style="text-align:left"|Charmed eta meson<ref name=PDGCharmedEta>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2010/listings/rpp2010-list-eta-c-1S.pdf Particle listings – {{Subatomic particle|Charmed eta}}]</ref>
+| {{Subatomic particle|link=yes|Charmed eta}}(1S)
+| Self
+| {{Subatomic particle|link=yes|charm quark}}{{Subatomic particle|link=yes|charm antiquark}}
+| {{val|2983.6|0.7}}
+| 0<sup>+</sup>
+| 0<sup>−+</sup>
+| 0
+| 0
+| 0
+| {{sort|-23|{{val|2.04|0.05|e=-23}}<sup>{{ref|Lifetime|[b]}}</sup>}}
+| [http://pdg.lbl.gov/2010/listings/rpp2010-list-eta-c-1S.pdf See {{Subatomic particle|Charmed eta}} decay modes]
+|-
+|style="text-align:left"|Bottom eta meson<ref name=PDGBottomEta>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-eta-b-1S.pdf Particle listings – {{Subatomic particle|Bottom eta}}]</ref>
+| {{Subatomic particle|link=yes|Bottom eta}}(1S)
+| Self
+| {{Subatomic particle|link=yes|Bottom quark}}{{Subatomic particle|link=yes|Bottom antiquark}}
+| {{val|9398.0|3.2}}
+| {{color|red|0}}<sup>{{color|red|+}}</sup>
+| {{color|red|0}}<sup>{{color|red|−}}+</sup>
+| 0
+| 0
+| 0
+| Unknown
+| [http://pdg.lbl.gov/2014/listings/rpp2014-list-eta-b-1S.pdf See {{Subatomic particle|Bottom eta}} decay modes]
+|-
+|style="text-align:left"|Kaon<ref name="PDGKaon+">K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-K-plus-minus.pdf Particle listings – {{Subatomic particle|Kaon+-}}]</ref>
+| {{Subatomic particle|link=yes|Kaon+}}
+| {{Subatomic particle|link=yes|Kaon-}}
+| {{Subatomic particle|link=yes|Up quark}}{{Subatomic particle|link=yes|Strange antiquark}}
+| {{sort|0493.677|{{val|493.677|0.016}}}}
+| {{frac|1|2}}
+| 0<sup>−</sup>
+| 1
+| 0
+| 0
+| {{sort|-08.3|{{val|1.2380|0.0021|e=-8}}}}
+| {{nowrap|{{Subatomic particle|link=yes|Antimuon}} + {{Subatomic particle|link=yes|Muon neutrino}} or}} <br>{{nowrap|{{Subatomic particle|link=yes|pion+}} + {{Subatomic particle|link=yes|pion0}} or}} <br>{{nowrap|{{Subatomic particle|link=yes|pion0}} + {{Subatomic particle|link=yes|positron}} + {{Subatomic particle|link=yes|Electron neutrino}} or}} <br>{{nowrap|{{Subatomic particle|link=yes|pion+}} + {{Subatomic particle|link=yes|pion+}} + {{Subatomic particle|link=yes|pion-}} }}
+|-
+|style="text-align:left"|Kaon<ref name=PDGKaon0>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-K-zero.pdf Particle listings – {{Subatomic particle|Kaon0}}]</ref>
+| {{Subatomic particle|link=yes|Kaon0}}
+| {{Subatomic particle|link=yes|Antikaon0}}
+| {{Subatomic particle|link=yes|Down quark}}{{Subatomic particle|link=yes|Strange antiquark}}
+| {{sort|0497.614|{{val|497.614|0.024}}}}
+| {{frac|1|2}}
+| 0<sup>−</sup>
+| 1
+| 0
+| 0
+| <sup>{{ref|strongforce|[c]}}</sup>
+| <sup>{{ref|strongforce|[c]}}</sup>
+|-
+|style="text-align:left"|K-Short<ref name=PDGK-short>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-K-zero-S.pdf Particle listings – {{Subatomic particle|K-short0}}]</ref>
+| {{Subatomic particle|link=yes|K-short0}}
+| Self
+| {{nowrap|<math>\mathrm{\tfrac{d\bar{s} + s\bar{d}}{\sqrt{2}}}\,</math><sup>{{ref|Kaon|[e]}}</sup>}}
+| {{sort|0497.614|{{val|497.614|0.024}}}}<sup>{{ref|Kaonmass|[d]}}</sup>
+| {{frac|1|2}}
+| 0<sup>−</sup>
+| [[List of mesons#Notes on neutral kaons|(*)]]
+| 0
+| 0
+| {{sort|-11|{{val|8.954|0.004|e=-11}}}}
+| {{nowrap|{{Subatomic particle|link=yes|pion+}} + {{Subatomic particle|link=yes|pion-}} or}}<br>
+{{nowrap|{{Subatomic particle|link=yes|pion0}} + {{Subatomic particle|link=yes|pion0}}}}
+|-
+|style="text-align:left"|K-Long<ref name=PDGK-long>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-K-zero-L.pdf Particle listings – {{Subatomic particle|k-long0}}]</ref>
+| {{Subatomic particle|link=yes|K-long0}}
+| Self
+| {{nowrap|<math>\mathrm{\tfrac{d\bar{s} - s\bar{d}}{\sqrt{2}}}\,</math><sup>{{ref|Kaon|[e]}}</sup>}}
+| {{sort|0497.614|{{val|497.614|0.024}}}}<sup>{{ref|Kaonmass|[d]}}</sup>
+| {{frac|1|2}}
+| 0<sup>−</sup>
+| [[List of mesons#Notes on neutral kaons|(*)]]
+| 0
+| 0
+| {{sort|-08.1|{{val|5.116|0.021|e=-8}}}}
+| {{nowrap|{{Subatomic particle|link=yes|Pion+-}} + {{Subatomic particle|link=yes|electron-+}} + {{Subatomic particle|link=yes|Electron neutrino}} or}} <br>{{nowrap|{{Subatomic particle|link=yes|Pion+-}} + {{Subatomic particle|link=yes|muon-+}} + {{Subatomic particle|link=yes|Muon neutrino}} or}} <br>{{nowrap|{{Subatomic particle|link=yes|Pion0}} + {{Subatomic particle|link=yes|Pion0}} + {{Subatomic particle|link=yes|Pion0}} or}} <br>{{nowrap|{{Subatomic particle|link=yes|Pion+}} + {{Subatomic particle|link=yes|Pion0}} + {{Subatomic particle|link=yes|Pion-}}}}
+|-
+|style="text-align:left"|D meson<ref name="PDGD+">K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-D-plus-minus.pdf Particle listings – {{Subatomic particle|D+-}}]</ref>
+| {{Subatomic particle|link=yes|D+}}
+| {{Subatomic particle|link=yes|D-}}
+| {{Subatomic particle|link=yes|Charm quark}}{{Subatomic particle|link=yes|Down antiquark}}
+| {{val|1869.61|0.10}}
+| {{frac|1|2}}
+| 0<sup>−</sup>
+| 0
+| +1
+| 0
+| {{sort|-12.4|{{val|1.040|0.007|e=-12}}}}
+| [http://pdg.lbl.gov/2014/listings/rpp2014-list-D-plus-minus.pdf See {{Subatomic particle|D+}} decay modes]
+|-
+|style="text-align:left"|D meson<ref name=PDGD0>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-D-zero.pdf Particle listings – {{Subatomic particle|D0}}]</ref>
+| {{Subatomic particle|link=yes|D0}}
+| {{Subatomic particle|link=yes|AntiD0}}
+| {{Subatomic particle|link=yes|Charm quark}}{{Subatomic particle|link=yes|up antiquark}}
+| {{val|1864.84|0.07}}
+| {{frac|1|2}}
+| 0<sup>−</sup>
+| 0
+| +1
+| 0
+| {{sort|-13.3|{{val|4.101|0.015|e=-13}}}}
+| [http://pdg.lbl.gov/2014/listings/rpp2014-list-D-zero.pdf See {{Subatomic particle|D0}} decay modes]
+|-
+| style="text-align:left" | strange D meson<ref name=PDGDs>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-Ds-plus-minus.pdf Particle listings – {{Subatomic particle|Strange D+-}}]</ref>
+| {{Subatomic particle|link=yes|Strange D+}}
+| {{Subatomic particle|link=yes|Strange D-}}
+| {{Subatomic particle|link=yes|Charm quark}}{{Subatomic particle|link=yes|strange antiquark}}
+| {{val|1968.30|0.11}}
+| 0
+| 0<sup>{{color|red|−}}</sup>
+| +1
+| +1
+| 0
+| {{sort|-13.1|{{val|5.00|0.07|e=-13}}}}
+| [http://pdg.lbl.gov/2014/listings/rpp2014-list-Ds-plus-minus.pdf See {{Subatomic particle|Strange D+}} decay modes]
+|-
+| style="text-align:left" | B meson<ref name="PDGB+">K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-B-plus-minus.pdf Particle listings – {{Subatomic particle|B+-}}]</ref>
+| {{Subatomic particle|link=yes|B+}}
+| {{Subatomic particle|link=yes|B-}}
+| {{Subatomic particle|link=yes|up quark}}{{Subatomic particle|link=yes|bottom antiquark}}
+| {{val|5279.26|0.17}}
+| {{color|red|{{frac|1|2}}}}
+| {{color|red|0}}<sup>{{color|red|−}}</sup>
+| 0
+| 0
+| +1
+| {{sort|-12.1|{{val|1.638|0.004|e=-12}}}}
+| [http://pdg.lbl.gov/2014/listings/rpp2014-list-B-plus-minus.pdf See {{Subatomic particle|B+}} decay modes]
+|-
+| style="text-align:left" | B meson<ref name=PDGB0>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-B-zero.pdf Particle listings – {{Subatomic particle|B0}}]</ref>
+| {{Subatomic particle|link=yes|B0}}
+| {{Subatomic particle|link=yes|AntiB0}}
+| {{Subatomic particle|link=yes|Down quark}}{{Subatomic particle|link=yes|Bottom antiquark}}
+| {{val|5279.58|0.17}}
+| {{color|red|{{frac|1|2}}}}
+| {{color|red|0}}<sup>{{color|red|−}}</sup>
+| 0
+| 0
+| +1
+| {{sort|-12.2|{{val|1.519|0.009|e=-12}}}}
+| [http://pdg.lbl.gov/2014/listings/rpp2014-list-B-zero.pdf See {{Subatomic particle|B0}} decay modes]
+|-
+| style="text-align:left" | Strange B meson<ref name=PDGBs>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-Bs-zero.pdf Particle listings – {{Subatomic particle|Strange B0}}]</ref>
+| {{Subatomic particle|link=yes|Strange B0}}
+| {{Subatomic particle|link=yes|Strange AntiB0}}
+| {{Subatomic particle|link=yes|strange quark}}{{Subatomic particle|link=yes|Bottom antiquark}}
+| {{val|5366.77|0.24}}
+| {{color|red|0}}
+| {{color|red|0}}<sup>{{color|red|−}}</sup>
+| −1
+| 0
+| +1
+| {{sort|-12.3|{{val|1.512|0.007|e=-12}}}}
+| [http://pdg.lbl.gov/2014/listings/rpp2014-list-Bs-zero.pdf  See {{Subatomic particle|Strange B0}} decay modes]
+|-
+| style="text-align:left" | Charmed B meson<ref name=PDGBc>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-Bc-plus-minus.pdf Particle listings – {{Subatomic particle|Charmed B+-}}]</ref>
+| {{Subatomic particle|link=yes|Charmed B+}}
+| {{Subatomic particle|link=yes|Charmed B-}}
+| {{Subatomic particle|link=yes|Charm quark}}{{Subatomic particle|link=yes|bottom antiquark}}
+| {{val|6275.6|1.1}}
+| {{color|red|0}}
+| {{color|red|0}}<sup>{{color|red|−}}</sup>
+| 0
+| +1
+| +1
+| {{sort|-13.2|{{val|4.52|0.33|e=-13}}}}
+| [http://pdg.lbl.gov/2014/listings/rpp2014-list-Bc-plus-minus.pdf See {{Subatomic particle|Charmed B+}} decay modes]
+|}
+<sup>[a]</sup> {{note|quarkcontent}} Makeup inexact due to non-zero quark masses.<br>
+<sup>[b]</sup> {{note|Lifetime}} PDG reports the [[resonance width]] (Γ). Here the conversion τ&nbsp;=&nbsp;{{frac|ħ|&Gamma;}} is given instead.<br>
+<sup>[c]</sup> {{note|strongforce}}[[Strong force|Strong]] [[eigenstate]]. No definite lifetime (see [[List of mesons#Notes on neutral kaons|kaon notes]] below) <br>
+<sup>[d]</sup> {{note|Kaonmass}} The mass of the {{Subatomic particle|K-long0}} and {{Subatomic particle|K-short0}} are given as that of the {{Subatomic particle|Kaon0}}. However, it is known that a difference between the masses of the {{Subatomic particle|K-long0}} and {{Subatomic particle|K-short0}} on the order of {{val|2.2|e=-11|u=MeV/c2}} exists.<ref name=PDGK-long/><br>
+<sup>[e]</sup> {{note|Kaon}}[[Weak force|Weak]] [[eigenstate]]. Makeup is missing small [[CP violation|CP–violating]] term (see [[List of mesons#Notes on neutral kaons|notes on neutral kaons]] below).
+
+===Vector mesons===
+
+{| class="wikitable sortable" style="text-align: center; width:100%"
+|+Vector mesons
+|-
+! class=unsortable | Particle <br/>name
+! Particle <br>symbol
+! Antiparticle <br>symbol
+! class=unsortable | Quark <br/>content
+! [[Rest mass]] ([[electron volt|MeV]]/[[speed of light|''c'']]<sup>2</sup>)
+! width="50" | [[Isospin|I]]<sup>[[G parity|G]]</sup>
+! width="50" | [[Total angular momentum|J]]<sup>[[Parity (physics)|P]][[C-parity|C]]</sup>
+! width="50" | [[strangeness|S]]
+! width="50" | [[charm (quantum number)|C]]
+! width="50" | [[bottomness|B']]
+! [[Mean lifetime]] ([[second|s]])
+! class=unsortable | Commonly decays to <br>(>5% of decays)
+|-
+| style="text-align:left" | Charged rho meson<ref name=PDGRho>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-rho-770.pdf Particle listings – {{Subatomic particle|rho}}]</ref>
+| {{Subatomic particle|link=yes|Rho+}}(770)
+| {{Subatomic particle|link=yes|Rho-}}(770)
+| {{Subatomic particle|link=yes|Up quark}}{{Subatomic particle|link=yes|Down antiquark}}
+| {{sort|0775.11|{{val|775.11|0.34}}}}
+| 1<sup>+</sup>
+| 1<sup>−</sup>
+| 0
+| 0
+| 0
+| {{sort|-24|{{val|4.41|0.02|e=-24}}<sup>{{ref|Lifetime2|[f]}}{{ref|Lifetime3|[g]}}</sup>}}
+| {{nowrap|{{Subatomic particle|link=yes|Pion+-}} + {{Subatomic particle|link=yes|Pion0}}}}
+|-
+| style="text-align:left" | Neutral rho meson<ref name=PDGRho/>
+| {{Subatomic particle|link=yes|Rho0}}(770)
+| Self
+| {{nowrap|<math>\mathrm{\tfrac{u\bar{u}-d\bar{d}}{\sqrt 2}}</math>}}
+| {{sort|0775.26|{{val|775.26|0.25}}}}
+| 1<sup>+</sup>
+| 1<sup>−−</sup>
+| 0
+| 0
+| 0
+| {{sort|-24|{{val|4.45|0.03|e=-24}}<sup>{{ref|Lifetime2|[f]}}{{ref|Lifetime3|[g]}}</sup>}}
+| {{nowrap|{{Subatomic particle|link=yes|Pion+}} + {{Subatomic particle|link=yes|Pion-}}}}
+|-
+| style="text-align:left" | Omega meson<ref name=PDGOmegaMeson>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-omega-782.pdf Particle listings – {{Subatomic particle|Omega meson}}(782)]</ref>
+| {{Subatomic particle|link=yes|omega meson}}(782)
+| Self
+| {{nowrap|<math>\mathrm{\tfrac{u\bar{u}+d\bar{d}}{\sqrt 2}}</math>}}
+| {{sort|0783|{{val|782.65|0.12}}}}
+| 0<sup>−</sup>
+| 1<sup>−−</sup>
+| 0
+| 0
+| 0
+| {{sort|-23|{{val|7.75|0.07|e=-23}}<sup>{{ref|Lifetime2|[f]}}</sup>}}
+| {{nowrap|{{Subatomic particle|link=yes|Pion+}} + {{Subatomic particle|link=yes|Pion0}} + {{Subatomic particle|link=yes|Pion-}} or}} <br>{{nowrap|{{Subatomic particle|link=yes|Pion0}} + {{Subatomic particle|link=yes|Photon}}}}
+|-
+| style="text-align:left" | Phi meson<ref name=PDGPhi>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-phi-1020.pdf Particle listings – {{Subatomic particle|Phi meson}}]</ref>
+| {{Subatomic particle|link=yes|Phi meson}}(1020)
+| Self
+| {{Subatomic particle|link=yes|Strange quark}}{{Subatomic particle|link=yes|Strange antiquark}}
+| {{val|1019.461|0.019}}
+| 0<sup>−</sup>
+| 1<sup>−−</sup>
+| 0
+| 0
+| 0
+| {{sort|-22.3|{{val|1.54|0.01|e=-22}}<sup>{{ref|Lifetime2|[f]}}</sup>}}
+| {{nowrap|{{Subatomic particle|link=yes|Kaon+}} + {{Subatomic particle|link=yes|Kaon-}} or}}<br> {{nowrap|{{Subatomic particle|link=yes|K-short0}} + {{Subatomic particle|link=yes|K-long0}} or}} <br>{{nowrap|({{Subatomic particle|link=yes|rho}} + {{Subatomic particle|link=yes|pion}}) / ({{Subatomic particle|link=yes|pion+}} + {{Subatomic particle|link=yes|pion0}} + {{Subatomic particle|link=yes|pion-}})}}
+|-
+| style="text-align:left" | J/Psi<ref name="PDGJ/Psi">K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-J-psi-1S.pdf Particle listings – J/Ψ]</ref>
+| {{Subatomic particle|link=yes|J/Psi}}
+| Self
+| {{Subatomic particle|link=yes|Charm quark}}{{Subatomic particle|link=yes|Charm antiquark}}
+| {{val|3096.916|0.011}}
+| 0<sup>−</sup>
+| 1<sup>−−</sup>
+| 0
+| 0
+| 0
+| {{sort|-21.1|{{val|7.09|0.21|e=-21}}<sup>{{ref|Lifetime2|[f]}}</sup>}}
+| [http://pdg.lbl.gov/2014/listings/rpp2014-list-J-psi-1S.pdf See {{Subatomic particle|J/psi}}(1S) decay modes]
+|-
+| style="text-align:left" | Upsilon meson<ref name=PDGUpsilon>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-upsilon-1S.pdf Particle listings – {{Subatomic particle|Upsilon}}(1S)]</ref>
+| {{Subatomic particle|link=yes|Upsilon}}(1S)
+| Self
+| {{Subatomic particle|link=yes|bottom quark}}{{Subatomic particle|link=yes|bottom antiquark}}
+| {{val|9460.30|0.26}}
+| 0<sup>−</sup>
+| 1<sup>−−</sup>
+| 0
+| 0
+| 0
+| {{sort|-20.3|{{val|1.22|0.03|e=-20}}<sup>{{ref|Lifetime2|[f]}}</sup>}}
+| [http://pdg.lbl.gov/2014/listings/rpp2014-list-upsilon-1S.pdf See {{Subatomic particle|Upsilon}}(1S) decay modes]
+|-
+| style="text-align:left" | Kaon<ref name=PDGKaon*>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-K-star-892.pdf Particle listings – {{Subatomic particle|Kaon*}}(892)]</ref>
+| {{Subatomic particle|link=yes|Kaon*+}}
+| {{Subatomic particle|link=yes|Kaon*-}}
+| {{Subatomic particle|link=yes|Up quark}}{{Subatomic particle|link=yes|Strange antiquark}}
+| {{sort|0892|{{val|891.66|0.26}}}}
+| {{frac|1|2}}
+| 1<sup>−</sup>
+| 1
+| 0
+| 0
+| {{sort|-23.1|{{val|3.26|0.06|e=-23}}<sup>{{ref|Lifetime2|[f]}}{{ref|Lifetime3|[g]}}</sup>}}
+| [http://pdg.lbl.gov/2014/listings/rpp2014-list-K-star-892.pdf See {{Subatomic particle|Kaon*}}(892) decay modes]
+|-
+| style="text-align:left" | Kaon<ref name=PDGKaon*/>
+| {{Subatomic particle|link=yes|Kaon*0}}
+| {{Subatomic particle|link=yes|Antikaon*0}}
+| {{Subatomic particle|link=yes|Down quark}}{{Subatomic particle|link=yes|Strange antiquark}}
+| {{sort|0896|{{val|895.81|0.19}}}}
+| {{frac|1|2}}
+| 1<sup>−</sup>
+| 1
+| 0
+| 0
+| {{sort|-20.2|{{val|1.39|0.02|e=-23}}<sup>{{ref|Lifetime2|[f]}}</sup>}}
+| [http://pdg.lbl.gov/2014/listings/rpp2014-list-K-star-892.pdf See {{Subatomic particle|Kaon*}}(892) decay modes]
+|-
+| style="text-align:left" | D meson<ref name="PDGD*+">K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-D-star-2010-plus-minus.pdf Particle listings – {{Subatomic particle|D*+-}}(2010)]</ref>
+| {{Subatomic particle|link=yes|D*+}}(2010)
+| {{Subatomic particle|link=yes|D*-}}(2010)
+| {{Subatomic particle|link=yes|Charm quark}}{{Subatomic particle|link=yes|Down antiquark}}
+| {{val|2010.26|0.07}}
+| {{color|red|{{frac|1|2}}}}
+| {{color|red|1}}<sup>{{color|red|−}}</sup>
+| 0
+| +1
+| 0
+| {{sort|-21.2|{{val|7.89|0.17|e=-21}}<sup>{{ref|Lifetime2|[f]}}</sup>}}
+| {{nowrap|{{Subatomic particle|link=yes|D0}} + {{Subatomic particle|link=yes|Pion+}} or}}<br>{{nowrap|{{Subatomic particle|link=yes|D+}} + {{Subatomic particle|link=yes|Pion0}}}}
+|-
+| style="text-align:left" | D meson<ref name=PDGD*0>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-D-star-2007-zero.pdf Particle listings – {{Subatomic particle|D*0}}(2007)]</ref>
+| {{Subatomic particle|link=yes|D*0}}(2007)
+| {{Subatomic particle|link=yes|AntiD*0}}(2007)
+| {{Subatomic particle|link=yes|Charm quark}}{{Subatomic particle|link=yes|up antiquark}}
+| {{val|2006.96|0.10}}
+| {{color|red|{{frac|1|2}}}}
+| {{color|red|1}}<sup>{{color|red|−}}</sup>
+| 0
+| +1
+| 0
+| {{sort|-22.2|>{{val|3.1|e=-22}}<sup>{{ref|Lifetime2|[f]}}</sup>}}
+| {{nowrap|{{Subatomic particle|link=yes|D0}} + {{Subatomic particle|link=yes|Pion0}} or}}<br>{{nowrap|{{Subatomic particle|link=yes|D0}} + {{Subatomic particle|link=yes|Photon}}}}
+|-
+| style="text-align:left" | Strange D meson<ref name=PDGD*s>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-Ds-star-plus-minus.pdf Particle listings – {{Subatomic particle|Strange D*+-}}]</ref>
+| {{Subatomic particle|link=yes|Strange D*+}}
+| {{Subatomic particle|link=yes|Strange D*-}}
+| {{Subatomic particle|link=yes|Charm quark}}{{Subatomic particle|link=yes|strange antiquark}}
+| {{val|2112.1|0.4}}
+| {{color|red|0}}
+| {{color|red|1}}<sup>{{color|red|−}}</sup>
+| +1
+| +1
+| 0
+| {{sort|-22.1|>{{val|3.4|e=-22}}<sup>{{ref|Lifetime2|[f]}}</sup>}}
+| {{nowrap|{{Subatomic particle|link=yes|D*+}} + {{Subatomic particle|link=yes|Photon}} or}} <br>{{nowrap|{{Subatomic particle|link=yes|D*+}} + {{Subatomic particle|link=yes|Pion0}}}}
+|-
+| style="text-align:left" | B meson<ref name=PDGB*>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-B-star.pdf Particle listings – {{Subatomic particle|B*}}]</ref>
+| {{Subatomic particle|link=yes|B*+}}
+| {{Subatomic particle|link=yes|B*-}}
+| {{Subatomic particle|link=yes|up quark}}{{Subatomic particle|link=yes|bottom antiquark}}
+| {{val|5325.2|0.4}}
+| {{color|red|{{frac|1|2}}}}
+| {{color|red|1}}<sup>{{color|red|−}}</sup>
+| 0
+| 0
+| +1
+| Unknown
+| {{nowrap|{{Subatomic particle|link=yes|B+}} + {{Subatomic particle|link=yes|Photon}}}}
+|-
+| style="text-align:left" | B meson<ref name=PDGB*/>
+| {{Subatomic particle|link=yes|B*0}}
+| {{Subatomic particle|link=yes|AntiB*0}}
+| {{Subatomic particle|link=yes|Down quark}}{{Subatomic particle|link=yes|Bottom antiquark}}
+| {{val|5325.2|0.4}}
+| {{color|red|{{frac|1|2}}}}
+| {{color|red|1}}<sup>{{color|red|−}}</sup>
+| 0
+| 0
+| +1
+| Unknown
+| {{nowrap|{{Subatomic particle|link=yes|B0}} + {{Subatomic particle|link=yes|Photon}}}}
+|-
+| style="text-align:left" | Strange B meson<ref name=PDGBs*>K.A. Olive ''et al''. (2014): [http://pdg.lbl.gov/2014/listings/rpp2014-list-Bs-star.pdf Particle listings – {{Subatomic particle|Strange B*}}]</ref>
+| {{Subatomic particle|link=yes|Strange B*0}}
+| {{Subatomic particle|link=yes|Strange AntiB*0}}
+| {{Subatomic particle|link=yes|strange quark}}{{Subatomic particle|link=yes|Bottom antiquark}}
+| {{val|5415.4|+2.4|-2.1}}
+| {{color|red|0}}
+| {{color|red|1}}<sup>{{color|red|−}}</sup>
+| −1
+| 0
+| +1
+| Unknown
+| {{nowrap|{{Subatomic particle|link=yes|Strange B0}}+{{Subatomic particle|link=yes|Photon}}}}
+|-
+| style="text-align:left" | Charmed B meson<sup>†</sup>
+| {{Subatomic particle|link=yes|Charmed B*+}}
+| {{Subatomic particle|link=yes|Charmed B*-}}
+| {{Subatomic particle|link=yes|Charm quark}}{{Subatomic particle|link=yes|bottom antiquark}}
+| Unknown
+| {{color|red|0}}
+| {{color|red|1}}<sup>{{color|red|−}}</sup>
+| 0
+| +1
+| +1
+| Unknown
+| Unknown
+|}
+<sup>[f]</sup> {{note|Lifetime2}} PDG reports the [[resonance width]] (Γ). Here the conversion τ&nbsp;=&nbsp;{{frac|ħ|&Gamma;}} is given instead.<br>
+<sup>[g]</sup> {{note|Lifetime3}} The exact value depends on the method used. See the given reference for detail.<br>
+
+===Notes on neutral kaons===
+There are two complications with [[Electric charge|neutral]] [[kaon]]s:<ref name="Cronin"/>
+
+*Due to [[Kaon#Neutral kaon mixing|neutral kaon mixing]], the {{Subatomic particle|link=yes|K-short0}} and {{Subatomic particle|link=yes|K-long0}} are not [[eigenstate]]s of [[strangeness]].  However, they ''are'' eigenstates of the [[weak force]], which determines how they [[Radioactive decay|decay]], so these are the particles with definite [[Mean lifetime|lifetime]].
+*The [[linear combination]]s given in the table for the {{Subatomic particle|link=yes|K-short0}} and {{Subatomic particle|link=yes|K-long0}} are not exactly correct, since there is a small correction due to [[CP violation]].  See [[Kaon#CP violation|CP violation in kaons]].
+
+Note that these issues also exist in principle for other neutral [[flavour (particle physics)|flavored]] mesons; however, the weak eigenstates are considered separate particles only for kaons because of their dramatically different lifetimes.<ref name="Cronin">J.W. Cronin (1980)</ref>
+
+==See also==
+{{Wikipedia books
+ |1=Hadronic Matter
+ |3=Particles of the Standard Model
+}}
+
+* [[List of baryons]]
+* [[List of particles]]
+* [[Timeline of particle discoveries]]
+{{Clear}}
+
+== References ==
+{{Reflist|2}}
+
+=== Bibliography ===
+{{refbegin}}
+*{{cite journal
+ |author=J.R. Pelaez
+ |year=2016
+ |title=From controversy to precision on the sigma meson: a review on the status of the non-ordinary f0(500) resonance
+ |journal=[[Physics Reports]]
+ |volume=658
+ |pages=1–111
+ |doi=10.1016/j.physrep.2016.09.001
+ |s2cid=118569293
+ |url=https://eprints.ucm.es/41255/1/pelaezsagredo133preprint.pdf
+ }}
+*{{cite journal
+ |author=K.A. Olive
+ |collaboration=[[Particle Data Group]]
+ |year=2014
+ |title=Review of Particle Physics
+ |journal=[[Chinese Physics C]]
+ |volume=38
+ |issue=9 |pages=1–708
+ |display-authors=etal|doi=10.1088/1674-1137/38/9/090001
+ |pmid=10020536
+ |arxiv=1412.1408
+ }}
+*{{cite book
+ |author=M.S. Sozzi
+ |year=2008a
+ |chapter=Parity
+ |pages=[https://archive.org/details/discretesymmetri00msoz/page/n31 15]–87
+ |title=Discrete Symmetries and CP Violation: From Experiment to Theory
+ |url=https://archive.org/details/discretesymmetri00msoz
+ |url-access=registration
+ |publisher=[[Oxford University Press]]
+ |isbn=978-0-19-929666-8
+}}
+*{{cite book
+ |author=M.S. Sozzi
+ |year=2008a
+ |chapter=Charge Conjugation
+ |pages=[https://archive.org/details/discretesymmetri00msoz/page/n104 88]–120
+ |title=Discrete Symmetries and CP Violation: From Experiment to Theory
+ |url=https://archive.org/details/discretesymmetri00msoz
+ |url-access=registration
+ |publisher=[[Oxford University Press]]
+ |isbn=978-0-19-929666-8
+}}
+*{{cite book
+ |author=M.S. Sozzi
+ |year=2008c
+ |chapter=CP-Symmetry
+ |pages=[https://archive.org/details/discretesymmetri00msoz/page/n247 231]–275
+ |title=Discrete Symmetries and CP Violation: From Experiment to Theory
+ |url=https://archive.org/details/discretesymmetri00msoz
+ |url-access=registration
+ |isbn=978-0-19-929666-8
+ |publisher=[[Oxford University Press]]
+}}
+* {{cite journal
+ |author=C. Amsler
+ |collaboration=[[Particle Data Group]]
+ |year=2008
+ |title=Review of Particle Physics
+ |journal=[[Physics Letters B]]
+ |volume=667 |issue=1 |pages=1–1340
+ |doi=10.1016/j.physletb.2008.07.018
+ |pmid=10020536
+ |bibcode = 2008PhLB..667....1A 
+ |display-authors=etal
+ |url=https://www.zora.uzh.ch/id/eprint/11249/2/scalarsV.pdf
+ }}
+* {{cite book
+ |author=S.S.M. Wong
+ |year=1998
+ |chapter=Nucleon Structure
+ |pages=21–56
+ |title=Introductory Nuclear Physics
+ |edition=2nd
+ |publisher=[[John Wiley & Sons]]
+ |isbn=0-471-23973-9
+}}
+* {{cite book
+ |author=R. Shankar
+ |year=1994
+ |title=Principles of Quantum Mechanics
+ |edition=2nd
+ |publisher=[[Plenum Press]]
+ |isbn=0-306-44790-8
+}}
+* {{cite book
+ |author=K. Gottfried, V.F. Weisskopf
+ |year=1986
+ |chapter=Hadronic Spectroscopy: G-parity
+ |pages=[https://archive.org/details/conceptsofpartic01kurt/page/n137 303]–311
+ |title=Concepts of Particle Physics
+ |volume=2
+ |publisher=[[Oxford University Press]]
+ |isbn=0-19-503393-0
+ |url=https://archive.org/details/conceptsofpartic01kurt
+ |url-access=registration
+ }}
+* {{cite journal
+ |author=J.W. Cronin
+ |year=1980
+ |title=CP Symmetry Violation – The Search for its origin
+ |url=http://nobelprize.org/nobel_prizes/physics/laureates/1980/cronin-lecture.pdf
+ |journal=Nobel Lecture
+ |volume=212
+ |issue=4500
+ |pages=1221–8
+ |publisher=[[The Nobel Foundation]]
+|doi=10.1126/science.212.4500.1221
+ |pmid=17738818
+ }}
+* {{cite journal
+ |author=V.L. Fitch
+ |year=1980
+ |title=The Discovery of Charge – Conjugation Parity Asymmetry
+ |url=http://nobelprize.org/nobel_prizes/physics/laureates/1980/fitch-lecture.pdf
+ |journal=Nobel Lecture
+ |volume=212
+ |issue=4498
+ |pages=989–93
+ |publisher=[[The Nobel Foundation]]
+|doi=10.1126/science.212.4498.989
+ |pmid=17779955
+ }}
+* {{cite journal
+ |author=S.W. Herb
+ |year=1977
+ |title=Observation of a Dimuon Resonance at 9.5 Gev in 400-GeV Proton-Nucleus Collisions
+ |journal=[[Physical Review Letters]]
+ |volume=39|issue=5 |pages=252–255
+ |doi=10.1103/PhysRevLett.39.252
+ |bibcode = 1977PhRvL..39..252H
+ |osti=1155396
+ |display-authors=etal
+ }}
+* {{cite journal
+ |author=J.J. Aubert
+ |year=1974
+ |title=Experimental Observation of a Heavy Particle J
+ |journal=[[Physical Review Letters]]
+ |volume=33 |issue=23 |pages=1404–1406
+ |doi=10.1103/PhysRevLett.33.1404
+ |bibcode = 1974PhRvL..33.1404A
+ |display-authors=etal
+ |doi-access=free
+ }}
+* {{cite journal
+ |author=J.E. Augustin
+ |year=1974
+ |title=Discovery of a Narrow Resonance in e<sup>+</sup>e<sup>−</sup> Annihilation
+ |journal=[[Physical Review Letters]]
+ |volume=33 |issue=23 |pages=1406–1408
+ |doi=10.1103/PhysRevLett.33.1406
+ |bibcode = 1974PhRvL..33.1406A
+ |display-authors=etal
+ |doi-access=free
+ }}
+* {{cite journal
+ |author=M. Gell-Mann
+ |year=1964
+ |title=A Schematic of Baryons and Mesons
+ |journal=[[Physics Letters]]
+ |volume=8 |issue=3 |pages=214–215
+ |doi=10.1016/S0031-9163(64)92001-3
+ |bibcode = 1964PhL.....8..214G }}
+* {{cite journal
+ |author=E. Wigner
+ |year=1937
+ |title=On the Consequences of the Symmetry of the Nuclear Hamiltonian on the Spectroscopy of Nuclei
+ |journal=[[Physical Review]]
+ |volume=51 |issue=2 |pages=106–119
+ |doi=10.1103/PhysRev.51.106
+ |bibcode = 1937PhRv...51..106W }}
+* {{cite journal
+ |author=W. Heisenberg
+ |year=1932
+ |title=Über den Bau der Atomkerne I
+ |journal=[[Zeitschrift für Physik]]
+ |volume=77
+ |issue=1–2 |pages=1–11
+ |doi=10.1007/BF01342433|bibcode = 1932ZPhy...77....1H |s2cid=186218053
+ |language=de}}
+* {{cite journal
+ |author=W. Heisenberg
+ |year=1932
+ |title=Über den Bau der Atomkerne II
+ |journal=[[Zeitschrift für Physik]]
+ |volume=78
+ |issue=3–4 |pages=156–164
+ |doi=10.1007/BF01337585
+ |bibcode = 1932ZPhy...78..156H |s2cid=186221789
+ |language=de}}
+* {{cite journal
+ |author=W. Heisenberg
+ |year=1932
+ |title=Über den Bau der Atomkerne III
+ |journal=[[Zeitschrift für Physik]]
+ |volume=80
+ |issue=9–10 |pages=587–596
+ |doi=10.1007/BF01335696
+ |bibcode = 1933ZPhy...80..587H |s2cid=126422047
+ |language=de}}
+{{refend}}
+
+==External links==
+*[[Particle Data Group]] – [http://pdg.lbl.gov/index.html The Review of Particle Physics (2008)]
+* [https://www.thingsmadethinkable.com/item/mesons.php Mesons made thinkable], an interactive visualisation allowing physical properties to be compared
+
+{{particles}}
+
+[[Category:Mesons|*]]
+[[Category:Physics-related lists|Mesons]]
+
+[[it:Lista dei mesoni]]

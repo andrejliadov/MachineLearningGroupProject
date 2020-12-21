@@ -1,0 +1,49 @@
+{{Technical|date=September 2018}}
+'''Adiabatic accessibility''' denotes a certain relation between two [[equilibrium state]]s of a [[thermodynamic system]] (or of different such systems). The concept was coined by [[Constantin Carathéodory]]<ref>Constantin Carathéodory: ''Untersuchungen über die Grundlagen der Thermodynamik'', [[Mathematische Annalen|Math. Ann.]], 67:355–386, 1909</ref> in 1909 ("adiabatische Erreichbarkeit") and  taken up 90 years later by [[Elliott H. Lieb|Elliott Lieb]] and [[Jakob Yngvason|J. Yngvason]] in their axiomatic approach to the foundations of thermodynamics.<ref name="LY1999">{{cite journal |last1=Lieb |first1=Elliott H. |last2=Yngvason |first2=Jakob |year=1999 |title=The Physics and Mathematics of the Second Law of Thermodynamics |journal=Phys. Rep. |volume=310 |issue= 1|pages=1–96 |doi= 10.1016/s0370-1573(98)00082-9|arxiv=cond-mat/9708200|bibcode=1999PhR...310....1L}}</ref><ref name="LY2003">{{cite journal |last1=Lieb |first1=Elliott H. |last2=Yngvason |first2=Jakob |title=The Mathematical Structure of the Second Law of Thermodynamics |doi=10.1016/S0370-1573(98)00082-9 |year=2003|arxiv=math-ph/0204007|bibcode=1999PhR...310....1L}}</ref> It was also used by R. Giles in his 1964 monograph.<ref>Robin Giles: "Mathematical Foundations of Thermodynamics", Pergamon, Oxford 1964</ref>
+
+==Description==
+A system in a state ''Y'' is said to be adiabatically accessible from a state ''X'' if ''X'' can be transformed into ''Y'' without the system suffering transfer of energy as heat or transfer of matter. ''X'' may, however, be transformed to ''Y'' by  doing work on ''X''. For example, a system consisting of one kilogram of warm water is adiabatically accessible from a system consisting of one kilogram of cool water, since the cool water may be mechanically stirred to warm it. However, the cool water is not adiabatically accessible from the warm water, since no amount or type of work may be done to cool it.
+
+==Carathéodory==
+The original definition of Carathéodory was limited to reversible, [[quasistatic processes|quasistatic process]], described by a curve in the manifold of equilibrium states of the system under consideration. He called such a state change adiabatic if the infinitesimal 'heat' differential form <math>\delta Q=dU-\sum p_idV_i</math> 
+vanishes along the curve.  In other words, at no time in the process does heat enter or leave the system. Carathéodory's formulation of the [[Second Law of Thermodynamics]] then takes the form: "In the neighbourhood of any initial state, there are states which cannot be approached arbitrarily close through adiabatic changes of state." From this principle he derived the existence of [[entropy]] as a state function <math>S</math>
+whose differential <math>dS </math> is proportional to the heat differential form  <math>\delta Q</math>, so it remains constant under adiabatic state changes (in Carathéodory's sense). The increase of entropy during irreversible 
+processes is not obvious in this formulation, without further assumptions.
+
+==Lieb and Yngvason==
+The definition employed by Lieb and Yngvason is rather different since the state changes considered can be the result of arbitrarily complicated, possibly violent, irreversible processes and there is no mention of 'heat' or differential forms. In the example of the water given above, if the stirring is done slowly, the transition from cool water to warm water will be quasistatic. However, a system containing an exploded firecracker is adiabatically accessible from a system containing an unexploded firecracker (but not vice versa), and this transition is far from quasistatic. Lieb and Yngvason's definition of adiabatic accessibility is: A state <math>Y</math> is  adiabatically accessible from a state <math>X</math>, in symbols <math>X\prec Y</math> (pronounced X 'precedes' Y),  if it is possible to transform <math>X</math> into <math>Y</math> in such a way that the only net effect of the process on the surroundings is that a weight has been raised or lowered (or a spring is stretched/compressed, or a flywheel is set in motion).
+
+==Thermodynamic entropy==
+A definition of thermodynamic entropy can be based entirely on certain properties of the relation <math>\prec</math> of adiabatic accessibility that are taken as axioms in the Lieb-Yngvason approach. In the following list of properties of the <math>\prec</math> operator, a system is represented by a capital letter, e.g. ''X'', ''Y'' or ''Z''. A system ''X'' whose extensive parameters are multiplied by <math>\lambda</math>  is written <math>\lambda X</math>. (e.g. for a simple gas, this would mean twice the amount of gas in twice the volume, at the same pressure.)  A system consisting of two subsystems ''X'' and ''Y'' is written (X,Y). If <math>X \prec Y</math> and <math>Y \prec X</math> are both true, then each system can access the other and the transformation taking one into the other is reversible. This is an equivalence relationship written <math>X \overset{\underset{\mathrm{A}}{}}{\sim} Y</math>. Otherwise, it is irreversible. Adiabatic accessibility has the following properties:<ref name="LY2003"/>
+
+*Reflexivity: <math>X \overset{\underset{\mathrm{A}}{}}{\sim} X</math>
+*Transitivity: If <math>X \prec Y</math> and <math>Y \prec Z</math> then <math>X \prec Z</math>
+*Consistency: if <math>X \prec X'</math> and <math>Y \prec Y'</math> then <math>(X,Y) \prec (X',Y')</math>
+*Scaling Invariance: if <math>\lambda > 0</math> and <math>X \prec Y</math> then <math>\lambda X \prec \lambda Y</math>
+*Splitting and Recombination: <math>X\overset{\underset{\mathrm{A}}{}}{\sim}((1-\lambda)X,\lambda X)</math> for all <math>0 < \lambda < 1</math>
+*Stability: if <math>\lim_{\epsilon \to 0} [(X,\epsilon Z_0) \prec (Y,\epsilon Z_1)]</math> then <math>X \prec Y</math>
+
+The entropy has the property that <math>S(X)\leq S(Y)</math> if and only if <math> X\prec Y</math> and <math>S(X)= S(Y)</math> if and only if <math>X \overset{\underset{\mathrm{A}}{}}{\sim} Y</math> in accord with the Second Law. If we choose two states <math>X_0</math> and <math>X_1</math> such that <math>X_0 \prec X_1</math> and assign entropies 0 and 1 respectively to them, then the entropy of a state ''X'' where <math>X_0 \prec X \prec X_1</math> is defined as:<ref name="LY2003"/>
+
+:<math>S(X) = \sup (\lambda : ((1-\lambda)X_0, \lambda X_1) \prec X)</math>
+
+==Sources==
+<references/>
+
+==References==
+
+{{cite book |title=The Entropy Principle - Thermodynamics for the Unsatisfied |first=André |last=Thess |publisher=Springer-Verlag |access-date=November 10, 2012 |url=https://www.springer.com/engineering/mechanical+engineering/book/978-3-642-13348-0 }} translated from  André Thess: ''Das Entropieprinzip - Thermodynamik für Unzufriedene'', Oldenbourg-Verlag 2007, {{ISBN|978-3-486-58428-8}}. A less mathematically intensive and more intuitive  account of the theory of Lieb and Yngvason.
+
+{{cite book |title=The Entropy of Classical Thermodynamics (Princeton Series in Applied Mathematics)|last1=Lieb |first1=Elliott H. |last2=Yngvason |first2=Jakob |publisher=Princeton University Press |year=2003|pages=147–193 |access-date=November 10, 2012 |url=http://press.princeton.edu/titles/7688.html |editor1-first=A. |editor1-last=Greven |editor2-first=G. |editor2-last=Keller |editor3-first=G. |editor3-last=Warnecke}}
+
+==External links==
+* A. Thess: [https://web.archive.org/web/20110721142842/http://www.tu-ilmenau.de/fakmb/fileadmin/template/fgtfd/Thess-Entropie.pdf ''Was ist Entropie?''] {{in lang|de}}
+
+{{Thermodynamic cycles|state=collapsed}}
+
+{{DEFAULTSORT:Adiabatic Accessibility}}
+[[Category:Equilibrium chemistry]]
+[[Category:Thermodynamic cycles]]
+[[Category:Thermodynamic processes]]
+[[Category:Thermodynamic systems]]
+[[Category:Thermodynamics]]

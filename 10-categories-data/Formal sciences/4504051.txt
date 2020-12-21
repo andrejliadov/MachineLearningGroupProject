@@ -1,0 +1,85 @@
+In [[wireless communication]]s, '''channel state information''' ('''CSI''') refers to known channel properties of a communication link. This information describes how a signal [[Multipath propagation|propagates]] from the transmitter to the receiver and represents the combined effect of, for example, [[scattering]], [[fading]], and power decay with distance. The method is called '''Channel estimation'''. The CSI makes it possible to adapt transmissions to current channel conditions, which is crucial for achieving [[bit error rate|reliable communication]] with high [[Bit rate|data rates]] in [[MIMO|multiantenna systems]].
+
+CSI needs to be estimated at the receiver and usually [[quantization (signal processing)|quantized]] and [[feedback]] to the transmitter (although reverse-link estimation is possible in [[Time-division duplex|TDD]] systems). Therefore, the transmitter and receiver can have different CSI. The CSI at the transmitter and the CSI at the receiver are sometimes referred to as CSIT and CSIR, respectively.
+
+== Different kinds of channel state information ==
+
+There are basically two levels of CSI, namely instantaneous CSI and statistical CSI.
+
+'''Instantaneous CSI''' (or short-term CSI) means that the current channel conditions are known, which can be viewed as knowing the [[impulse response]] of a [[digital filter]]. This gives an opportunity to adapt the transmitted signal to the impulse response and thereby optimize the received signal for [[spatial multiplexing]] or to achieve low [[bit error rate]]s.
+
+'''Statistical CSI''' (or long-term CSI) means that a statistical characterization of the channel is known. This description can include, for example, the type of [[Fading#Fading models|fading distribution]], the average channel gain, the [[Line-of-sight propagation|line-of-sight component]], and the [[Spatial Correlation|spatial correlation]]. As with instantaneous CSI, this information can be used for transmission optimization.
+
+The CSI acquisition is practically limited by how fast the channel conditions are changing. In [[Fading#Slow versus fast fading|fast fading systems]] where channel conditions vary rapidly under the transmission of a single information symbol, only statistical CSI is reasonable. On the other hand, in [[Fading#Slow versus fast fading|slow fading systems]] instantaneous CSI can be estimated with reasonable accuracy and used for transmission adaptation for some time before being outdated.
+
+In practical systems, the available CSI often lies in between these two levels; instantaneous CSI with some estimation/quantization error is combined with statistical information.
+
+== Mathematical description ==
+
+In a [[narrowband]] [[flat fading|flat-fading]] channel with multiple transmit and receive antennas ([[MIMO#Mathematical description|MIMO]]), the system is modeled as<ref name=tulino/>
+:<math>\mathbf{y} = \mathbf{H}\mathbf{x} + \mathbf{n}</math>
+where <math>\scriptstyle\mathbf{y}</math> and <math>\scriptstyle\mathbf{x}</math> are the receive and transmit vectors, respectively, and <math>\scriptstyle\mathbf{H}</math> and <math>\scriptstyle\mathbf{n}</math> are the channel matrix and the noise vector, respectively. The noise is often modeled as [[Complex normal distribution|circular symmetric complex normal]] with
+:<math>\mathbf{n} \sim \mathcal{CN}(\mathbf{0},\,\mathbf{S})</math>
+where the mean value is zero and the noise covariance matrix <math>\scriptstyle\mathbf{S}</math> is known.
+
+=== Instantaneous CSI ===
+Ideally, the channel matrix <math>\scriptstyle\mathbf{H}</math> is known perfectly. Due to channel estimation errors, the channel information can be represented as<ref name=bjornson/>
+:<math>\mbox{vec} (\mathbf{H}_{\textrm{estimate}}) \sim \mathcal{CN}(\mbox{vec}(\mathbf{H}),\,\mathbf{R}_{\textrm{error}})</math>
+where <math>\scriptstyle\mathbf{H}_{\textrm{estimate}}</math> is the channel estimate and <math>\scriptstyle\mathbf{R}_{\textrm{error}}</math> is the estimation error covariance matrix. The [[Vectorization (mathematics)|vectorization]] <math>\mbox{vec}()</math> was used to achieve the column stacking of <math>\scriptstyle\mathbf{H}</math>, as [[multivariate random variable]]s are usually defined as vectors.
+
+=== Statistical CSI ===
+In this case, the statistics of <math>\scriptstyle\mathbf{H}</math> are known. In a [[Rayleigh fading]] channel, this corresponds to knowing that<ref name=kermoal/>
+:<math>\mbox{vec} (\mathbf{H}) \sim \mathcal{CN}(\mathbf{0},\,\mathbf{R})</math>
+for some known channel covariance matrix <math>\scriptstyle\mathbf{R}</math>.
+
+== Estimation of CSI ==
+Since the channel conditions vary, instantaneous CSI needs to be [[Estimation Theory|estimated]] on a short-term basis. A popular approach is so-called training sequence (or pilot sequence), where a known signal is transmitted and the channel matrix <math>\scriptstyle\mathbf{H}</math> is estimated using the combined knowledge of the transmitted and received signal.
+
+Let the training sequence be denoted <math> \mathbf{p}_1,\ldots,\mathbf{p}_N</math>, where the vector <math>\mathbf{p}_i</math> is transmitted over the channel as
+:<math>\mathbf{y}_i = \mathbf{H}\mathbf{p}_i + \mathbf{n}_i.</math>
+By combining the received training signals <math>\mathbf{y}_i</math> for <math>i=1,\ldots,N</math>, the total training signalling becomes
+:<math>\mathbf{Y}=[\mathbf{y}_1,\ldots,\mathbf{y}_N] = \mathbf{H}\mathbf{P} + \mathbf{N}</math>
+with the training matrix <math>\scriptstyle \mathbf{P}=[\mathbf{p}_1,\ldots,\mathbf{p}_N]</math> and the noise matrix <math>\scriptstyle \mathbf{N}=[\mathbf{n}_1,\ldots,\mathbf{n}_N]</math>.
+
+With this notation, channel estimation means that <math>\scriptstyle \mathbf{H}</math> should be recovered from the knowledge of <math>\scriptstyle \mathbf{Y}</math> and <math>\scriptstyle \mathbf{P}</math>.
+
+=== Least-square estimation ===
+If the channel and noise distributions are unknown, then the [[Least squares|least-square]] estimator (also known as the [[minimum-variance unbiased estimator]]) is<ref name=biguesh/>
+:<math>\mathbf{H}_{\textrm{LS-estimate}} = \mathbf{Y} \mathbf{P}^H(\mathbf{P} \mathbf{P}^H)^{-1} </math>
+where <math>()^H </math> denotes the [[conjugate transpose]]. The estimation [[Mean squared error|Mean Square Error]] (MSE) is proportional to
+:<math>\mathrm{tr} (\mathbf{P} \mathbf{P}^H)^{-1}</math>
+where <math>\mathrm{tr}</math> denotes the [[Trace (linear algebra)|trace]]. The error is minimized when <math>\mathbf{P} \mathbf{P}^H</math> is a scaled [[identity matrix]]. This can only be achieved when <math>N</math> is equal to (or larger than) the number of transmit antennas. The simplest example of an optimal training matrix is to select <math>\scriptstyle\mathbf{P}</math> as a (scaled) identity matrix of the same size that the number of transmit antennas.
+
+=== MMSE estimation ===
+If the channel and noise distributions are known, then this [[A priori estimate|a priori]] information can be exploited to decrease the estimation error. This approach is known as [[Bayesian estimation]] and for Rayleigh fading channels it exploits that 
+:<math>\mbox{vec} (\mathbf{H}) \sim \mathcal{CN}(0,\,\mathbf{R}), \quad \mbox{vec}(\mathbf{N}) \sim \mathcal{CN}(0,\,\mathbf{S}).</math>
+
+The [[MMSE estimator]] is the Bayesian counterpart to the least-square estimator and becomes<ref name=bjornson/>
+:<math>\mbox{vec}(\mathbf{H}_{\textrm{MMSE-estimate}}) = \left(\mathbf{R}^{-1} + (\mathbf{P}^T \, \otimes\, \mathbf{I})^H \mathbf{S}^{-1} (\mathbf{P}^T \, \otimes\, \mathbf{I}) \right)^{-1} (\mathbf{P}^T \, \otimes\, \mathbf{I})^H \mathbf{S}^{-1} \mbox{vec}(\mathbf{Y}) </math>
+where <math>\otimes</math> denotes the [[Kronecker product]] and the identity matrix <math>\scriptstyle \mathbf{I}</math> has the dimension of the number of receive antennas. The estimation [[Mean squared error|Mean Square Error]] (MSE) is
+:<math> \mathrm{tr} \left(\mathbf{R}^{-1} + (\mathbf{P}^T \, \otimes\, \mathbf{I})^H \mathbf{S}^{-1} (\mathbf{P}^T \, \otimes\, \mathbf{I}) \right)^{-1}</math>
+and is minimized by a training matrix <math>\scriptstyle \mathbf{P}</math> that in general can only be derived through numerical optimization. But there exist heuristic solutions with good performance based on [[Water filling algorithm|waterfilling]]. As opposed to least-square estimation, the estimation error for [[Spatial Correlation|spatially correlated]] channels can be minimized even if <math>N</math> is smaller than the number of transmit antennas.<ref name=bjornson/> Thus, MMSE estimation can both decrease the estimation error and shorten the required training sequence. It needs however additionally the knowledge of the channel correlation matrix <math>\scriptstyle\mathbf{R}</math> and noise correlation matrix <math>\scriptstyle\mathbf{S}</math>. In absence of an accurate knowledge of these correlation matrices, robust choices need to be made to avoid MSE degradation.<ref name=yeli/><ref name=nisar/>
+
+== Data-aided versus blind estimation ==
+In a data-aided approach, the channel estimation is based on some known data, which is known both at the [[transmitter]] and at the [[radio receiver|receiver]], such as training sequences or pilot data.<ref name=Zhuang2000/> In a blind approach, the estimation is based only on the received data, without any known transmitted sequence. The [[tradeoff]] is the accuracy versus the overhead. A data-aided approach requires more [[bandwidth (signal processing)|bandwidth]] or it has a higher [[overhead information|overhead]] than a blind approach, but it can achieve a better channel estimation [[accuracy]] than a blind estimator.
+
+== Weblinks ==
+
+* [http://wands.sg/research/wifi/AtherosCSI/ Atheros CSI Tool]
+* [http://dhalperi.github.io/linux-80211n-csitool/ Linux 802.11n CSI Tool]
+
+== References ==
+{{reflist|refs=
+<ref name=tulino>A. Tulino, A. Lozano, S. Verdú, [http://www.dtic.upf.edu/~alozano/papers/01459054.pdf Impact of antenna correlation on the capacity of multiantenna channels], IEEE Transactions on Information Theory, vol 51, pp. 2491-2509, 2005.</ref>
+<ref name=bjornson>E. Björnson, B. Ottersten, [http://kth.diva-portal.org/smash/get/diva2:337243/FULLTEXT01 A Framework for Training-Based Estimation in Arbitrarily Correlated Rician MIMO Channels with Rician Disturbance], IEEE Transactions on Signal Processing, vol 58, pp. 1807-1820, 2010.</ref>
+<ref name=kermoal>J. Kermoal, L. Schumacher, K.I. Pedersen, P. Mogensen, F. Frederiksen, [http://www.its.caltech.edu/~taocui/page/tutorial/mimo_channel.pdf A Stochastic MIMO Radio Channel Model With Experimental Validation] {{Webarchive|url=https://web.archive.org/web/20091229154616/http://www.its.caltech.edu/~taocui/page/tutorial/mimo_channel.pdf# |date=2009-12-29 }}, IEEE Journal on Selected Areas Communications, vol 20, pp. 1211-1226, 2002.</ref>
+<ref name=biguesh>M. Biguesh and A. Gershman, [http://www.comm.ccu.edu.tw/~comtsliu/CourseInformation/DetectionEstimation07Fall/DetectionEstimation07FallFinalPaper.pdf Training-based MIMO channel estimation: a study of estimator tradeoffs and optimal training signals] {{webarchive |url=https://web.archive.org/web/20090306172253/http://www.comm.ccu.edu.tw/~comtsliu/CourseInformation/DetectionEstimation07Fall/DetectionEstimation07FallFinalPaper.pdf |date=March 6, 2009 }}, IEEE Transactions on Signal Processing, vol 54, pp. 884-893, 2006.</ref>
+<ref name=yeli>Y. Li, L.J. Cimini, and N.R. Sollenberger, [http://ieeexplore.ieee.org/search/freesrchabstract.jsp?tp=&arnumber=701317 Robust channel estimation for OFDM systems with rapid dispersive fading channels], IEEE Transactions on Communications, vol 46, pp. 902-915, July 1998.</ref>
+<ref name=nisar>M. D. Nisar, W. Utschick and T. Hindelang, [https://sites.google.com/site/mdanishnisar/pubs/21_Robust_Channel_Est_Nisar_TSP_2010.pdf?attredirects=0 Maximally Robust 2-D Channel Estimation for OFDM Systems], IEEE Transactions on Signal Processing, vol 58, pp. 3163-3172, June 2010.</ref>
+<ref name=Zhuang2000>A. Zhuang, E.S. Lohan, and M. Renfors, "Comparison of decision-directed and pilot-aided algorithms for complex channel tap estimation in downlink WCDMA systems", in Proc. of 11th IEEE Personal and Indoor Mobile Radio Communications (PIMRC), vol. 2, Sept. 2000, p. 1121-1125.</ref> 
+}}
+
+[[Category:Wireless]]
+[[Category:Information theory]]
+[[Category:Radio resource management]]
+[[Category:Telecommunication theory]]

@@ -549,4 +549,555 @@ This solution self-accelerates at a rate proportional to <math> t^{\frac{2}{3-\a
 {{DEFAULTSORT:Fractional Schrodinger equation}}
 [[Category:Concepts in physics]]
 [[Category:Fractals]]
+[[Category:Quantum mechanics| ]]{{main article|Fractional quantum mechanics}}
+{{Quantum mechanics|cTopic=Advanced topics}}
+
+The '''fractional Schrödinger equation''' is a fundamental equation of [[fractional quantum mechanics]]. It was discovered by [[Nick Laskin]] (1999) as a result of extending the [[Feynman path integral]], from the Brownian-like to Lévy-like quantum mechanical paths. The term ''fractional Schrödinger equation'' was coined by Nick Laskin.<ref>{{Cite journal |doi = 10.1016/S0375-9601(00)00201-2|title = Fractional quantum mechanics and Lévy path integrals|journal = Physics Letters A|volume = 268|issue = 4–6|pages = 298–305|year = 2000|last1 = Laskin|first1 = Nikolai|arxiv = hep-ph/9910419}}</ref>
+
+==Fundamentals==
+
+The fractional Schrödinger equation in the form originally obtained by [[Nick Laskin]] is:<ref>{{cite journal | last=Laskin | first=Nick | title=Fractional Schrödinger equation | journal=Physical Review E | volume=66 | issue=5 | date=18 November 2002 | issn=1063-651X | doi=10.1103/physreve.66.056108 | pmid=12513557 | page=056108|arxiv=quant-ph/0206098}}</ref>
+
+{{Equation box 1
+|indent =:
+|title=
+|equation = <math>i\hbar \frac{\partial \psi (\mathbf{r},t)}{\partial t}=D_\alpha (-\hbar
+^2\Delta )^{\alpha /2}\psi (\mathbf{r},t)+V(\mathbf{r},t)\psi (\mathbf{r},t)</math>
+|cellpadding= 5
+|border
+|border colour = #0073CF
+|background colour=#F5FFFA}}
+
+*'''r''' is the 3-dimensional [[position vector]], 
+*''ħ'' is the reduced [[Planck constant]], 
+*''ψ''('''r''', ''t'') is the [[wavefunction]], which is the quantum mechanical probability amplitude for the particle to have a given position '''r''' at any given time ''t'', 
+*''V''('''r''', ''t'') is a [[potential energy]], 
+*Δ = &part;<sup>2</sup>/&part;'''r'''<sup>2</sup> is the [[Laplace operator]].
+
+Further,
+*''D<sub>α</sub>'' is a scale constant with [[dimensional analysis|physical dimension]] [D<sub>α</sub>] = [energy]<sup>1 − ''α''</sup>·[length]<sup>''α''</sup>[time]<sup>−''α''</sup>, at ''α''&nbsp;=&nbsp;2,  ''D''<sub>2</sub> =1/2''m'', where ''m'' is a particle mass,
+*the operator (−''ħ''<sup>2</sup>Δ)<sup>''α''/2</sup> is the 3-dimensional fractional quantum Riesz derivative defined by (see, Ref.[2]);
+
+::<math>
+(-\hbar ^2\Delta )^{\alpha /2}\psi (\mathbf{r},t)=\frac 1{(2\pi \hbar
+)^3}\int d^3pe^{i\frac{\mathbf{pr}}\hbar }|\mathbf{p}|^\alpha \varphi (
+\mathbf{p},t),
+</math>
+
+Here, the wave functions in the [[position and momentum space]]s; <math>\psi(\mathbf{r},t)</math> and <math> \varphi (\mathbf{p},t)</math> are related each other by the 3-dimensional [[Fourier transform]]s:
+
+:<math>
+\psi (\mathbf{r},t)=\frac 1{(2\pi \hbar )^3}\int d^3pe^{i \mathbf{p}\cdot\mathbf{r}/\hbar}\varphi (\mathbf{p},t),\qquad \varphi (\mathbf{p},t)=\int d^3re^{-i
+\mathbf{p}\cdot\mathbf{r}/\hbar }\psi (\mathbf{r},t).
+</math>
+
+The index ''α'' in the fractional Schrödinger equation is the Lévy index, 1&nbsp;<&nbsp;''α''&nbsp;≤&nbsp;2. Thus, the fractional Schrödinger equation includes a space [[derivative]] of fractional order ''α'' instead of the second order (''α''&nbsp;=&nbsp;2) space derivative in the standard [[Schrödinger equation]]. Thus, the fractional Schrödinger equation is a [[fractional differential equation]] in accordance with modern terminology.<ref>S. G. Samko, A. A. Kilbas, and O. I. Marichev, Fractional
+Integrals and Derivatives, Theory and Applications ~Gordon
+and Breach, Amsterdam, 1993</ref> This is the main point of the term ''fractional Schrödinger equation'' or a more general term [[fractional quantum mechanics]].<ref>{{cite journal | last=Laskin | first=Nick | title=Fractional quantum mechanics | journal=Physical Review E | publisher=American Physical Society (APS) | volume=62 | issue=3 | date=1 August 2000 | issn=1063-651X | doi=10.1103/physreve.62.3135 | pages=3135–3145| pmid=11088808 |arxiv=0811.1769}}</ref> At ''α''&nbsp;=&nbsp;2 fractional Schrödinger equation becomes the well-known [[Schrödinger equation]].
+
+The fractional Schrödinger equation has the following [[operator (physics)|operator]] form
+
+{{Equation box 1
+|indent =:
+|title=
+|equation = <math>
+i\hbar \frac{\partial \psi (\mathbf{r},t)}{\partial t}=\hat{H}_\alpha
+\psi (\mathbf{r},t)</math>
+|cellpadding
+|border
+|border colour = #50C878
+|background colour = #ECFCF4}}
+
+where the fractional Hamilton operator <math>\hat{H}_\alpha </math> is given by
+
+: <math>
+\hat{H}_\alpha =D_\alpha (-\hbar ^2\Delta )^{\alpha /2}+V(\mathbf{r},t). 
+</math>
+
+The [[Hamilton operator]], <math>\hat{H}_\alpha </math> corresponds to the [[classical mechanics]] [[Hamiltonian function]] introduced by [[Nick Laskin]]
+
+: <math>
+H_\alpha (\mathbf{p},\mathbf{r})=D_\alpha |\mathbf{p}|^\alpha +V(\mathbf{r},t),
+</math>
+
+where '''p''' and '''r''' are the momentum and the position vectors respectively.
+
+===Time-independent fractional Schrödinger equation===
+
+The special case when the Hamiltonian <math>H_\alpha </math> is independent of time
+: <math>
+H_\alpha =D_\alpha (-\hbar ^2\Delta )^{\alpha /2}+V(\mathbf{r}), 
+</math>
+is of great importance for physical applications. 
+It is easy to see that in this case there exist the special solution of the fractional Schrödinger equation
+: <math>
+\psi (\mathbf{r},t)=e^{-(i/\hbar )Et}\phi (\mathbf{r}), 
+</math>
+where <math>\phi (\mathbf{r})</math> satisfies
+:<math>
+H_\alpha \phi (\mathbf{r}) = E\phi (\mathbf{r}),  
+</math>
+
+or
+
+:<math>
+D_\alpha (-\hbar ^2\Delta )^{\alpha /2}\phi (\mathbf{r})+V(\mathbf{r})\phi (
+\mathbf{r})=E\phi (\mathbf{r}). 
+</math>
+
+This is the '''time-independent fractional Schrödinger equation''' (see, Ref.[2]).
+
+Thus, we see that the [[wave function]] <math>\psi (\mathbf{r},t)</math> oscillates with a definite frequency. In [[classical physics]] the frequency corresponds to the energy. Therefore, the quantum mechanical state has a definite energy ''E''. 
+The probability to find a particle at <math>\mathbf{r}</math> is the absolute square of the wave function <math>| \psi (\mathbf{r},t) |^2 .</math>
+Because of time-independent fractional Schrödinger equation this is equal to <math>| \phi (\mathbf{r})|^2 </math>  and does not depend upon the time. 
+That is, the probability of finding the particle at <math>\mathbf{r}</math> is independent of the time. One can say that the system is in a stationary
+state. In other words, there is no variation in the probabilities as a function of time.
+
+===Probability current density===
+The conservation law of fractional quantum mechanical probability has been discovered for the first time by D.A.Tayurskii and Yu.V. Lysogorski <ref>{{cite journal | last1=Tayurskii | first1=D A | last2=Lysogorskiy | first2=Yu V | title=Superfluid hydrodynamic in fractal dimension space | journal=Journal of Physics: Conference Series | publisher=IOP Publishing | volume=394 | date=29 November 2012 | issn=1742-6588 | doi=10.1088/1742-6596/394/1/012004 | page=012004|arxiv=1108.4666}}</ref>
+
+:<math>
+\frac{\partial \rho (\mathbf{r},t)}{\partial t}+\nabla \cdot \mathbf{j}(
+\mathbf{r},t)+K(\mathbf{r},t)=0,  
+</math>
+
+where <math>\rho (\mathbf{r},t)=\psi ^{\ast }(\mathbf{r},t)\psi (\mathbf{r},t)</math>
+is the quantum mechanical probability density and the vector <math>\mathbf{j}(\mathbf{r},t)</math>
+can be called by the fractional probability current density vector
+
+:<math>
+\mathbf{j}(\mathbf{r},t)=\frac{D_\alpha \hbar }i\left( \psi ^{*}(\mathbf{r}
+,t)(-\hbar ^2\Delta )^{\alpha /2-1}\mathbf{\nabla }\psi (\mathbf{r},t)-\psi (
+\mathbf{r},t)(-\hbar ^2\Delta )^{\alpha /2-1}\mathbf{\nabla }\psi ^{*}(
+\mathbf{r},t)\right) ,  
+</math>
+
+and
+
+:<math>
+\mathit{K}(\mathbf{r},t)=\frac{D_\alpha \hbar }i\left(\mathbf{\nabla }\psi (\mathbf{r}
+,t)(-\hbar ^2\Delta )^{\alpha /2-1}\mathbf{\nabla }\psi ^{*}(\mathbf{r},t)-(\mathbf{\nabla } \psi^{*} (
+\mathbf{r},t)(-\hbar ^2\Delta )^{\alpha /2-1}\mathbf{\nabla }\psi (
+\mathbf{r},t)\right) ,  
+</math>
+
+here we use the notation (see also [[matrix calculus#Scope|matrix calculus]]): <math>
+\mathbf{\nabla =\partial /\partial r}
+</math>.
+
+It has been found in Ref.[5] that there are quantum physical conditions when the new term <math>\mathit{K}(\mathbf{r},t)</math> is negligible and we come to the [[continuity equation#Quantum mechanics|continuity equation]] for quantum probability current and quantum density (see, Ref.[2]):
+
+:<math>
+\frac{\partial \rho (\mathbf{r},t)}{\partial t}+\nabla \cdot \mathbf{j}(
+\mathbf{r},t)=0.  
+</math>
+
+Introducing the [[momentum operator]] <math>\hat{\mathbf{p}}=\frac{\hbar }{i}
+\frac{\partial }{\partial \mathbf{r}}</math> we can write the vector <math>\mathbf{j}</math>
+in the form (see, Ref.[2])
+
+:<math>
+\mathbf{j=}D_{\alpha }\left( \psi (\hat{\mathbf{p}}^{2})^{\alpha /2-1}
+\hat{\mathbf{p}}\psi ^{\ast }+\psi ^{\ast }(\hat{\mathbf{p}}^{\ast
+2})^{\alpha /2-1}\hat{\mathbf{p}}^{\ast }\psi \right).  
+</math>
+
+This is fractional generalization of the well-known equation for probability current density
+vector of standard quantum mechanics (see, Ref.[7]).
+
+    
+====Velocity operator====
+
+The quantum mechanical velocity operator <math>\hat{\mathbf{v}}</math> is defined as follows:
+
+:<math>
+\hat{\mathbf{v}}=\frac{i}{\hbar }(H_{\alpha }\hat{\mathbf{r}}\mathbf{
+-}\hat{\mathbf{r}}H_{\alpha }),
+</math>
+
+Straightforward calculation results in (see, Ref.[2])
+:<math>
+\hat{\mathbf{v}}=\alpha D_{\alpha }|\hat{\mathbf{p}}^{2}|^{\alpha
+/2-1}\hat{\mathbf{p}}\,. 
+</math>
+
+Hence,
+
+:<math>
+\mathbf{j=}\frac{1}{\alpha }\left( \psi \hat{\mathbf{v}}\psi ^{\ast
+}+\psi ^{\ast }\hat{\mathbf{v}}\psi \right) ,\qquad 1<\alpha \leq 2.
+</math>
+
+To get the [[probability current]] density equal to 1 (the current when one
+particle passes through unit area per unit time) the wave function of a free
+particle has to be normalized as
+
+:<math>
+\psi (\mathbf{r},t)=\sqrt{\frac{\alpha }{2\mathrm{v}}}\exp \left[\frac{i}{\hbar }(
+\mathbf{p}\cdot\mathbf{r}-Et)\right],\qquad E=D_{\alpha }|\mathbf{p}|^{\alpha
+},\qquad 1<\alpha \leq 2,  
+</math>
+
+where <math>\mathrm{v}</math>  is the particle [[velocity]], <math>\mathrm{v}=\alpha D_{\alpha
+}p^{\alpha -1}</math>.
+
+Then we have
+
+:<math>
+\mathbf{j=}\frac{\mathbf{v}}{\mathrm{v}},\qquad \mathbf{v}=\alpha D_{\alpha
+}|\mathbf{p}^{2}|^{\frac{\alpha }{2}-1}\mathbf{p,}  
+</math>
+
+that is, the vector <math>\mathbf{j}</math> is indeed the [[unit vector]].
+
+== Physical applications ==
+
+===Fractional Bohr atom===
+
+{{main article|Bohr atom}}
+
+When <math>V(\mathbf{r})</math> is the potential energy of [[hydrogenlike atom]],
+
+: <math>
+V(\mathbf{r})=-\frac{Ze^{2}}{|\mathbf{r}|},
+</math>
+
+where ''e'' is the [[electron charge]] and ''Z'' is the [[atomic number]] of the hydrogenlike atom, (so ''Ze'' is the nuclear charge of the atom), we come to following fractional [[eigenvalue]] problem,
+
+: <math>
+D_{\alpha }(-\hbar ^{2}\Delta )^{\alpha /2}\phi (\mathbf{r})-\frac{Ze^{2}}{|
+\mathbf{r|}}\phi (\mathbf{r})=E\phi (\mathbf{r}).
+</math>
+
+This eigenvalue problem has first been introduced and solved by [[Nick Laskin]]  in.<ref>{{cite journal | last=Laskin | first=Nick | title=Fractals and quantum mechanics | journal=Chaos: An Interdisciplinary Journal of Nonlinear Science | publisher=AIP Publishing | volume=10 | issue=4 | year=2000 | pages=780–790 | issn=1054-1500 | doi=10.1063/1.1050284 | pmid=12779428 }}</ref>
+
+Using the first [[Niels Bohr]] postulate yields
+: <math>
+ \alpha
+D_{\alpha }\left( \frac{n\hbar }{a_{n}}\right) ^{\alpha }=\frac{Ze^{2}}{a_{n}
+}, 
+</math>
+
+and it gives us the equation for the [[Bohr radius]] of the fractional hydrogenlike atom
+: <math>
+a_{n}=a_{0}n^{\alpha /(\alpha -1)}.  
+</math>
+
+Here ''a''<sub>0</sub> is the fractional Bohr radius (the radius of the lowest, ''n'' = 1, Bohr orbit) defined as,
+
+: <math>
+a_{0}=\left( \frac{\alpha D_{\alpha }\hbar ^{\alpha }}{Ze^{2}}\right) ^{1/(\alpha -1)}.  
+</math>
+
+The [[energy levels]] of the fractional hydrogenlike atom are given by
+
+: <math>
+E_{n}=(1-\alpha )E_{0}n^{-\alpha/(\alpha -1)},\qquad 1<\alpha \leq 2,
+</math>
+
+where ''E''<sub>0</sub> is the [[binding energy]] of the electron in the lowest Bohr orbit
+that is, the energy required to put it in a state with ''E'' = 0 corresponding to ''n'' = ∞,
+
+: <math>
+E_{0}=\left( \frac{Ze^{2}}{\alpha D_{\alpha }^{1/\alpha }\hbar }\right) ^{\alpha/(\alpha -1)}.  
+</math>
+
+The energy (''α''  − 1)''E''<sub>0</sub> divided by ''ħc'', (''α''  − 1)''E''<sub>0</sub>/''ħc'',  can be considered as fractional generalization of the
+[[Rydberg constant]] of standard [[quantum mechanics]]. For ''α''&nbsp;=&nbsp;2 and ''Z'' = 1  the formula
+<math>(\alpha -1)E_{0}/\hbar c</math> is transformed into
+
+: <math>\mathrm{Ry}=me^{4}/2\hbar ^{3}c</math>,
+which is the well-known expression for the [[Rydberg formula]].
+
+According to the second [[Niels Bohr]] postulate, the frequency of radiation <math>\omega_{m,n}</math> associated with the transition, say, for example from the orbit ''m'' to the orbit ''n'', is,
+
+: <math>
+\omega_{m,n} =\frac{(1-\alpha )E_{0}}{\hbar }\left[ \frac{1}{n^{\frac{\alpha }{
+\alpha -1}}}-\frac{1}{m^{\frac{\alpha }{\alpha -1}}}\right]  
+</math>.
+
+The above equations are fractional
+generalization of the Bohr model. In the special Gaussian case, when (''α''&nbsp;=&nbsp;2) those equations give us the well-known results of the [[Bohr model]].<ref>{{cite journal | last=Bohr | first=N. | title=XXXVII. On the constitution of atoms and molecules | journal=The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science | publisher=Informa UK Limited | volume=26 | issue=153 | year=1913 | issn=1941-5982 | doi=10.1080/14786441308634993 | pages=476–502| url=https://zenodo.org/record/1430916 }}</ref>
+
+===The infinite potential well===
+
+A particle in a one-dimensional well moves in a potential field <math>V({x})</math>, which is zero for 
+<math>-a\leq x\leq a</math> and which is infinite elsewhere,
+
+: <math>
+V(x)=\infty ,\qquad x<-a\qquad \qquad (\mathrm{i})
+</math>
+
+: <math>
+V(x)=0,\quad -a\leq x\leq a\quad \quad \quad \ (\mathrm{ii})  
+</math>
+
+: <math>
+V(x)=\infty ,\qquad \ x>a\qquad \qquad \ (\mathrm{iii})
+</math>
+
+It is evident ''a priori'' that the [[energy spectrum]] will be discrete. The solution of the fractional Schrödinger equation for the stationary state with well-defined energy ''E'' is described by a wave function <math>\psi (x)</math>, which can be written as
+
+:<math>
+\psi (x,t)=\left(-i\frac{Et}{\hbar }\right)\phi(x)
+</math>,
+
+where <math>\phi (x)</math>,  is now time independent. 
+In regions (i) and (iii),
+the fractional Schrödinger
+equation can be satisfied only if we take <math>\phi (x)=0</math>. In the middle region
+(ii), the time-independent fractional Schrödinger equation is (see, Ref.[6]).
+
+: <math>
+D_\alpha (\hbar \nabla )^\alpha \phi (x)=E\phi (x).  
+</math>
+
+This equation defines the [[wave functions]] and the energy spectrum within region (ii), while outside
+of the region (ii), x<-a and x>a, the wave functions  are zero. The wave function <math>\phi (x)</math> has to be continuous everywhere, thus we impose the boundary conditions <math>\phi (-a)=\phi (a)=0</math> for the solutions of the ''time-independent fractional Schrödinger equation'' (see, Ref.[6]). Then the solution in region (ii) can be written as
+
+:<math>
+\phi (x)=A\exp(ikx) +B\exp(-ikx).
+</math>
+
+To satisfy the boundary conditions we have to choose
+
+:<math>
+A = -B\exp(-i2ka),
+</math>
+
+and
+:<math>
+\sin(2ka) =0.
+</math>
+
+It follows from the last equation that
+
+:<math>
+2ka = n\pi.
+</math>
+
+Then the even (<math>\phi _n^{\mathrm{even}}(-x) = \phi _n^{\mathrm{even}}(x)</math> under reflection <math>x\rightarrow -x</math>) solution of the time-independent fractional Schrödinger equation <math>\phi ^{\mathrm{even}}(x)</math> in the infinite potential well is
+
+:<math>
+\phi _n^{\mathrm{even}}(x)=\frac 1{\sqrt{a}}\cos \left[ \frac{
+n\pi x}{2a}\right] , \quad n = 1, 3, 5, ....
+</math>
+
+The odd (<math>\phi _n^{\mathrm{odd}}(-x) = -\phi _n^{\mathrm{odd}}(x)</math> under reflection <math>x\rightarrow -x</math>) solution of the time-independent fractional Schrödinger equation <math>\phi ^{\mathrm{even}}(x)</math> in the infinite potential well is
+
+:<math>
+\phi _n^{\mathrm{odd}}(x)=\frac 1{\sqrt{a}}\sin \left[ \frac{
+n\pi x}{2a}\right] , \quad n = 2, 4, 6, ....
+</math>
+
+The solutions <math>\phi ^{\mathrm{even}}(x)</math> and <math>\phi ^{\mathrm{odd}}(x)</math> have the
+property that
+
+:<math>
+\int\limits_{-a}^{a}dx\phi _{m}^{\mathrm{even}}(x)\phi _{n}^{\mathrm{even}
+}(x)=\int\limits_{-a}^{a}dx\phi _{m}^{\mathrm{odd}}(x)\phi _{n}^{\mathrm{odd}
+}(x)=\delta _{mn},
+</math>
+
+where <math>\delta _{mn}</math> is the [[Kronecker symbol]] and
+
+:<math>
+\int\limits_{-a}^{a}dx\phi _{m}^{\mathrm{even}}(x)\phi _{n}^{\mathrm{odd}
+}(x)=0.
+</math>
+
+The eigenvalues of the particle in an infinite potential well are (see, Ref.[6])
+
+: <math>
+E_n=D_\alpha \left( \frac{\pi \hbar }{2a}\right) ^\alpha n^\alpha ,\qquad
+\qquad n=1,2,3....,\qquad 1<\alpha \leq 2.  
+</math>
+
+It is obvious that in the Gaussian case (''α''&nbsp;=&nbsp;2) above equations are ö
+transformed into the standard quantum mechanical equations for a [[particle in a box]] (for example, see
+Eq.(20.7) in <ref>L.D. Landau and E.M. Lifshitz, Quantum mechanics (Non-relativistic Theory), Vol.3, Third Edition, Course of Theoretical Physics, Butterworth-Heinemann, Oxford, 2003</ref>)
+
+The state of the lowest energy, the [[ground state]], in the infinite potential
+well is represented by the <math>\phi _n^{\mathrm{even}}(x)</math> at ''n''=1,
+: <math>
+\phi _{\mathrm{ground}}(x)\equiv \phi _1^{\mathrm{even}}(x)=\frac 1{\sqrt{a}
+}\cos \left(\frac{\pi x}{2a}\right),
+</math>
+
+and its energy is
+
+: <math>
+E_{\mathrm{ground}}=D_{\alpha }\left( \frac{\pi \hbar }{2a}\right) ^{\alpha
+}.  
+</math>
+
+===Fractional quantum oscillator===
+
+''Fractional quantum oscillator'' introduced by [[Nick Laskin]] (see, Ref.[2]) is the fractional quantum  mechanical model with the  [[Hamiltonian operator]] <math>H_{\alpha ,\beta }</math> defined as
+
+:<math>
+H_{\alpha,\beta}=D_{\alpha }(-\hbar ^{2}\Delta )^{\alpha /2}+q^{2}|\mathbf{
+r}|^{\beta },\quad 1<\alpha \leq 2,\quad 1<\beta \leq 2,  
+</math>,
+
+where ''q'' is interaction constant.
+
+The fractional Schrödinger equation for the wave
+function <math>\psi (\mathbf{r},t)</math> of the fractional quantum oscillator is,
+
+:<math>
+i\hbar \frac{\partial \psi (\mathbf{r},t)}{\partial t}=D_{\alpha }(-\hbar
+^{2}\Delta )^{\alpha /2}\psi (\mathbf{r},t)+q^{2}|\mathbf{r}|^{\beta }\psi (
+\mathbf{r},t)  
+</math>
+
+Aiming to search for solution in form
+
+:<math>
+\psi (\mathbf{r},t)=e^{-iEt/\hbar }\phi (\mathbf{r}),
+</math>
+
+we come to the time-independent fractional Schrödinger equation,
+
+:<math>
+D_{\alpha }(-\hbar ^{2}\Delta )^{\alpha /2}\phi (\mathbf{r},t)+q^{2}|\mathbf{
+r}|^{\beta }\phi (\mathbf{r},t)=E\phi (\mathbf{r},t).  
+</math>
+
+The Hamiltonian <math>H_{\alpha,\beta}</math> is the fractional
+generalization of the 3D [[quantum harmonic oscillator]] Hamiltonian of standard quantum
+mechanics.
+
+====Energy levels of the 1D fractional quantum oscillator in semiclassical approximation====
+
+The [[energy levels]] of 1D fractional quantum oscillator with the [[Hamiltonian function]] <math>
+H_{\alpha}=D_{\alpha }|p|^{\alpha }+q^{2}|x|^{\beta }</math> were found in semiclassical approximation (see, Ref.[2]).
+
+We set the total energy equal to ''E'', so that
+
+:<math>
+E=D_{\alpha }|p|^{\alpha }+q^{2}|x|^{\beta },  
+</math>
+
+whence
+
+:<math>
+|p|=\left( \frac{1}{D_{\alpha }}(E-q^{2}|x|^{\beta })\right)
+^{1/\alpha }
+</math>.
+
+At the turning points <math>p=0</math>. Hence, the classical motion is
+possible in the range <math>|x|\leq (E/q^{2})^{1/\beta }</math>.
+
+A routine use of the [[Bohr-Sommerfeld quantization]] rule yields
+
+:<math>
+2\pi \hbar (n+\frac{1}{2})=\oint
+pdx=4\int\limits_{0}^{x_{m}}pdx=4\int\limits_{0}^{x_{m}}D_{\alpha
+}^{-1/\alpha }(E-q^{2}|x|^{\beta })^{1/\alpha }dx,  
+</math>
+
+where the notation <math>\oint  </math> means the integral over one complete period of
+the classical motion and <math>x_{m}=(E/q^{2})^{1/\beta }</math> is the turning point
+of classical motion.
+
+To evaluate the integral in the right hand we introduce a new variable <math>y=x(E/q^{2})^{-1/\beta }</math>. Then we have
+
+:<math>
+\int\limits_0^{x_m}D_\alpha ^{-1/\alpha }(E-q^2|x|^\beta )^{1/\alpha }dx=\frac 1{D_\alpha ^{1/\alpha }q^{2/\beta }}E^{\frac 1\alpha +\frac 1\beta
+}\int\limits_0^1dy(1-y^\beta )^{1/\alpha }.
+</math>
+
+The integral over ''dy'' can be expressed in terms of the [[Beta-function]],
+
+:<math>
+\int\limits_{0}^{1}dy(1-y^{\beta })^{1/\alpha }=\frac{1}{\beta }
+\int\limits_{0}^{1}dzz^{\frac{1}{\beta }-1}(1-z)^{\frac{1}{\alpha }}=\frac{1
+}{\beta }\Beta \left(\frac{1}{\beta },\frac{1}{\alpha }+1\right).  
+</math>
+
+Therefore,
+
+:<math>
+2\pi \hbar (n+\frac 12)=\frac 4{D_\alpha ^{1/\alpha }q^{2/\beta }}E^{\frac
+1\alpha +\frac 1\beta }\frac 1\beta \Beta\left(\frac 1\beta ,\frac 1\alpha +1\right).
+</math>
+
+The above equation gives the energy levels of stationary states for the 1D fractional quantum oscillator (see, Ref.[2]),
+
+:<math>
+E_{n}=\left( \frac{\pi \hbar \beta D_{\alpha }^{1/\alpha }q^{2/\beta }}{2\Beta(
+\frac{1}{\beta },\frac{1}{\alpha }+1)}\right) ^{\frac{\alpha \beta }{\alpha
++\beta }}\left(n+\frac{1}{2}\right)^{\frac{\alpha \beta }{\alpha +\beta }}.
+</math>
+
+This equation is generalization of the well-known [[energy levels]] equation of the
+standard [[quantum harmonic oscillator]] (see, Ref.[7]) and is transformed into it at ''α''&nbsp;=&nbsp;2 and ''β''&nbsp;=&nbsp;2.
+It follows from this equation that at <math>\frac{1}{\alpha }+\frac{1}{\beta }=1</math> the energy levels are equidistant. When <math>1<\alpha \leq 2 </math> and <math>1<\beta \leq 2</math> the equidistant energy levels can be for ''α''&nbsp;=&nbsp;2 and ''β''&nbsp;=&nbsp;2 only. It means that the only standard quantum harmonic oscillator has an [[equidistant]] [[energy spectrum]].
+
+=== Fractional quantum mechanics in solid state systems ===
+The effective mass of states in solid state systems can depend on the wave vector k, i.e. formally one considers m=m(k). Polariton Bose-Einstein condensate modes are examples of states in solid state systems with mass sensitive to variations and locally in k fractional quantum mechanics is experimentally feasible [https://arxiv.org/abs/1508.03621].
+
+=== Self-accelerating beams ===
+Self-accelerating beams, such as the [[Airy beam]], are known solutions of the conventional free Schrödinger equation (with <math> \alpha=2 </math> and without a potential term). Equivalent solutions exist in the free fractional Schrödinger equation. 
+The time-dependent fractional Schrödinger equation in momentum space (assuming <math> \hbar=1 </math> and with one spatial coordinate) is:
+:<math>
+i \frac{\partial \varphi (p,t)}{\partial t}=D_\alpha |p|^\alpha
+\varphi (p,t)</math>.
+
+In position space, an Airy beam is typically expressed using the special Airy function, although it possesses a more transparent expression in momentum space:
+:<math> \psi(x,t=0)= \mathrm{Ai}(b x)\exp(ax), \qquad \varphi(p,t=0)=\frac{1}{2 b \sqrt{2 \pi}}\exp\left(\frac{(a-i p)^3}{3 b^3}\right)</math>.
+Here, the exponential function ensures the square-integrability of the wave function, i.e. that the beam possesses a finite energy, in order to be a physical solution. The parameter <math>a</math> controls the exponential cut-off on the beam’s tail, while the parameter <math>b</math> controls the width of the peaks in position space. 
+The Airy beam solution for the fractional Schrödinger equation in momentum space is obtained from simple integration of the above equation and initial condition: 
+:<math>
+\varphi(p,t) =\frac{1}{2 b \sqrt{2 \pi}}\exp\left(-i D_\alpha |p|^\alpha t + \frac{(a-i p)^3}{3 b^3}\right)</math>.
+
+This solution self-accelerates at a rate proportional to <math> t^{\frac{2}{3-\alpha}}</math>.<ref>{{Cite journal |doi = 10.1103/PhysRevResearch.2.033274|title = Self-accelerating beam dynamics in the space fractional Schrödinger equation |journal = Physical Review Research |volume = 2|pages = 033274 |year = 2020|last1 = Colas|first1 = David|arxiv =2006.12743}}</ref> When taking <math> \alpha=2 </math> for the conventional Schrödinger equation, one recovers the original Airy beam solution with a parabolic acceleration (<math> \propto t^2 </math>).
+
+== See also ==
+*[[Schrödinger equation]]
+*[[Path integral formulation]]
+*[[Relation between Schrödinger's equation and the path integral formulation of quantum mechanics]]
+*[[Fractional calculus]]
+*[[Quantum harmonic oscillator]]
+*[[Variable-order fractional Schrödinger equation]]
+
+== References ==
+
+<references/>
+<!---NO DELETING--->
+*{{cite book|title=Fractional Calculus, An Introduction for Physicists|author=R. Herrmann|year=2011|publisher=World Scientific|chapter=9|isbn=978-981-4340-24-3|chapter-url=https://books.google.com/books?id=mPXzp1f7ycMC&pg=PA97&dq=fractional+schrodinger+equation#v=onepage}}
+*{{cite book|title=Fractional Dynamics: Recent Advances|author1=J. Klafter |author2=S.C. Lim |author3=R. Metzler |year=2012|publisher=World Scientific|page=426|isbn=978-981-434-059-5|url=https://books.google.com/books?id=wwfqHij4V2MC&dq=fractional+schrodinger+equation}}
+*{{cite book|title=Fractional dynamics|author=V.E. Tarasov|year=2010|volume=0|series=Nonlinear physical science|publisher=Springer|chapter=19|isbn=978-3-642-140-037|chapter-url=https://books.google.com/books?id=Mc193Swt_JQC&pg=PA465&dq=Fractional+quantum+mechanics+N+Laskin#v=onepage}}
+*{{cite book|title=Advances in Fractional Calculus: Theoretical Developments and Applications in Physics and Engineering |author=J. Sabatier, O.P.Agrawal, J.A.T.Machado|year=2007|publisher=Springer|isbn=978-1-402-060-427|url=https://books.google.com/books?id=8lBgSDVXULwC&pg=PA126&dq=Fractional+quantum+mechanics+N+Laskin#v=onepage}}
+*{{cite book|title=Fractional Dynamics and Control|author1=D. Baleanu |author2=J.A.T. Machado |author3=A.C.J. Luo |year=2012|publisher=Springer|chapter=17|isbn=978-1-461-404-576|chapter-url=https://books.google.com/books?id=8tpLwiLONDkC&pg=PA210&dq=Fractional+quantum+mechanics+N+Laskin#v=onepage}}
+*{{cite journal | last1=Pinsker | first1=F. | last2=Bao | first2=W. | last3=Zhang | first3=Y. | last4=Ohadi | first4=H. | last5=Dreismann | first5=A. | last6=Baumberg | first6=J. J. | title=Fractional quantum mechanics in polariton condensates with velocity-dependent mass | journal=Physical Review B | volume=92 | issue=19 | date=25 November 2015 | issn=1098-0121 | doi=10.1103/physrevb.92.195310 | page=195310| arxiv=1508.03621 }}
+
+== Further reading ==
+* {{cite book
+  |title=Fractional Quantum Mechanics
+  |first=N.|last=Laskin
+  |publisher=World Scientific
+  |year=2018
+|doi=10.1142/10541
+  |isbn = 978-981-322-379-0|citeseerx = 10.1.1.247.5449}}
+* {{cite journal | last=Naber | first=Mark | title=Time fractional Schrödinger equation | journal=Journal of Mathematical Physics | publisher=AIP Publishing | volume=45 | issue=8 | year=2004 | issn=0022-2488 | doi=10.1063/1.1769611 | pages=3339–3352|arxiv=math-ph/0410028}}
+* {{cite journal | last1=Guo | first1=Xiaoyi | last2=Xu | first2=Mingyu | title=Some physical applications of fractional Schrödinger equation | journal=Journal of Mathematical Physics | publisher=AIP Publishing | volume=47 | issue=8 | year=2006 | issn=0022-2488 | doi=10.1063/1.2235026 | page=082104}}
+* {{cite journal | last1=Wang | first1=Shaowei | last2=Xu | first2=Mingyu | title=Generalized fractional Schrödinger equation with space-time fractional derivatives | journal=Journal of Mathematical Physics | publisher=AIP Publishing | volume=48 | issue=4 | year=2007 | issn=0022-2488 | doi=10.1063/1.2716203 | page=043502}}
+* {{cite journal | last1=Dong | first1=Jianping | last2=Xu | first2=Mingyu | title=Some solutions to the space fractional Schrödinger equation using momentum representation method | journal=Journal of Mathematical Physics | publisher=AIP Publishing | volume=48 | issue=7 | year=2007 | issn=0022-2488 | doi=10.1063/1.2749172 | page=072105}}
+* {{cite journal | last1=Dong | first1=Jianping | last2=Xu | first2=Mingyu | title=Space–time fractional Schrödinger equation with time-independent potentials | journal=Journal of Mathematical Analysis and Applications | publisher=Elsevier BV | volume=344 | issue=2 | year=2008 | issn=0022-247X | doi=10.1016/j.jmaa.2008.03.061 | pages=1005–1017}}
+* {{cite journal | last=Tarasov | first=Vasily E. | title=Fractional Heisenberg equation | journal=Physics Letters A | volume=372 | issue=17 | year=2008 | issn=0375-9601 | doi=10.1016/j.physleta.2008.01.037 | pages=2984–2988|arxiv=0804.0586v1}}
+* {{cite journal | last=Tarasov | first=Vasily E. | title=Weyl quantization of fractional derivatives | journal=Journal of Mathematical Physics | volume=49 | issue=10 | year=2008 | issn=0022-2488 | doi=10.1063/1.3009533 | page=102112|arxiv=0907.2699}}
+* {{cite journal | last=Iomin | first=Alexander | title=Fractional-time quantum dynamics | journal=Physical Review E | volume=80 | issue=2 | date=28 August 2009 | issn=1539-3755 | doi=10.1103/physreve.80.022103 | page=022103| pmid=19792181 | arxiv=0909.1183 }}
+* {{cite book | last=Tarasov | first=Vasily E. | title=Nonlinear Physical Science | chapter=Fractional Dynamics of Open Quantum Systems | publisher=Springer Berlin Heidelberg | location=Berlin, Heidelberg | year=2010 | isbn=978-3-642-14002-0 | issn=1867-8440 | doi=10.1007/978-3-642-14003-7_20 | pages=467–490}}
+* {{cite book | last=Tarasov | first=Vasily E. | title=Nonlinear Physical Science | chapter=Fractional Dynamics of Hamiltonian Quantum Systems | publisher=Springer Berlin Heidelberg | location=Berlin, Heidelberg | year=2010 | isbn=978-3-642-14002-0 | issn=1867-8440 | doi=10.1007/978-3-642-14003-7_19 | pages=457–466}}
+* {{cite journal | last1=de Oliveira | first1=Edmundo Capelas | last2=Costa | first2=Felix Silva | last3=Vaz | first3=Jayme | title=The fractional Schrödinger equation for delta potentials | journal=Journal of Mathematical Physics | publisher=AIP Publishing | volume=51 | issue=12 | year=2010 | issn=0022-2488 | doi=10.1063/1.3525976 | page=123517| url=http://www.repositorio.unicamp.br/handle/REPOSIP/73668 }}
+* {{cite journal | last1=de Oliveira | first1=E Capelas | last2=Vaz | first2=Jayme | title=Tunneling in fractional quantum mechanics | journal=Journal of Physics A: Mathematical and Theoretical | publisher=IOP Publishing | volume=44 | issue=18 | date=5 April 2011 | issn=1751-8113 | doi=10.1088/1751-8113/44/18/185303 | page=185303| arxiv=1011.1948 }}
+* {{cite journal | last=Bayın | first=Selçuk Ş. | title=On the consistency of the solutions of the space fractional Schrödinger equation | journal=Journal of Mathematical Physics | publisher=AIP Publishing | volume=53 | issue=4 | year=2012 | issn=0022-2488 | doi=10.1063/1.4705268 | page=042105|arxiv=1203.4556}}
+
+{{Physics-footer}}
+
+{{DEFAULTSORT:Fractional Schrodinger equation}}
+[[Category:Equations of physics]]
+[[Category:Fractals]]
 [[Category:Quantum mechanics| ]]

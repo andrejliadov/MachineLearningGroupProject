@@ -1,0 +1,38 @@
+{{short description|Classification System}}
+{{Use dmy dates|date=July 2020}}
+The [[BBC]]'s '''Lonclass''' ("London Classification") is a subject classification system used internally at the BBC throughout its [[BBC Archives|archives]].<ref name="vardan">{{cite journal|last=Vardan|first=Vijaylakshmi|title=Book Review : A Handbook for Media Librarians|journal=Library Management|year=2008|volume=29|issue=8/9|pages=814–819|issn=0143-5124}}</ref>
+
+Lonclass is derived from the [[Universal Decimal Classification]] (UDC), itself a reworking of the earlier [[Dewey Decimal Classification]] (DDC). Lonclass dates from the 1960s,<ref name="vardan" /> whereas UDC was created from DDC in the late 19th century. The BBC adaptation of UDC preserves the core features that distinguish UDC from DDC: an emphasis on a compositional semantics that allows new items to be expressed in terms of relationships between known items.
+
+Lonclass and UDC (like DDC) are expressed using codes based on decimal numbers. Unlike DDC, the Lonclass and UDC codes use additional punctuation to express patterns of relationships and re-usable qualifiers. While Lonclass makes a few structural adjustments to the UDC system to support its emphasis on TV and radio content, its main distinction is in the actual set of topics that are recorded within its authority file and within specific BBC catalogue records. Unlike UDC and DDC, which are widely used across the library community, Lonclass has remained a BBC-internal system since its creation in the 1960s.<ref name="vardan" />
+There are 300,000 subject terms in the Lonclass vocabulary.<ref>Dowman, M.; V. Tablan, H. Cunningham, C. Ursu, and
+B. Popov. (2005). "Semantically Enhanced Television News through Web and Video Integration." In ''Second European Semantic Web Conference (ESWC’2005)''.</ref>
+
+==Examples==
+
+For example, a Lonclass or UDC code may represent "Report on the environmental impact of the decline of tin mining in Sweden in the 20th century". This would be represented as a sequence of numbers and punctuation. The complex code can be broken down into primitives such as "Sweden" or "tin mining" (which itself could be broken down to "Tin" and "Mining").
+
+Some specific BBC Lonclass examples (with explanatory labels):
+
+* R672:32.007(47)YELTSIN:342.518.1THATCHER "TWO SHOTS OF MARGARET THATCHER AND BORIS YELTSIN"
+* [BRITISH AEROSPACE].007.11PEARCE: 656.881:342.518.1THATCHER "LETTER TO MRS THATCHER FROM SIR AUSTIN PEARCE"
+* 656.881:301.162.721:32.007THATCHER: 654.192.731TV-AM "MARGARET THATCHER'S LETTER OF APOLOGY TO TV AM"
+* 656.881:301.162.721 "LETTERS OF APOLOGY"
+* 656.881 "LETTERS (POSTAL SERVICES)"
+* 656.881:06.022.6 "RESIGNATION LETTERS"
+* 654.192.731TV-AM "TV AM (TELEVISION AM)"
+
+==Notes==
+{{reflist}}
+
+==External links==
+* [http://dc2008.de/wp-content/uploads/2008/09/3-silver-dublincore-pres.pdf Using web-scale vocabularies to create user journeys across the BBC], by Silver Oliver, Georgi Kobilarov, Chris Sizemore (Dublin Core conference presentation)
+* [http://www.slideshare.net/danbri/notube-investigating-lonclass Investigating Lonclass (NoTube project slides)]
+* [http://danbri.org/words/2010/11/18/585 Lonclass and RDF]; discussion of relationship to [[Resource Description Framework|RDF]]
+* [http://www.acemedia.org/ESWC2005_MSW/papers/ESWC_2005_MMSW_Tablan_Television_News.pdf Semantically Enhanced Television News through Web and Video Integration] (ACEMedia project report mentioning Lonclass)
+* [http://blog.clueful.com.au/2009/11/deathlines-small-peek-into-bbcs-archive.html Deathlines - a small peek into the BBC's archive taxonomy]
+* [https://web.archive.org/web/20110926234128/http://www.online-information.co.uk/online2010/files/conferencing/50/Fran_Alexander.pdf Building bridges: mapping diverse taxonomies for a seamless user navigation experience] (Fran Alexander, Taxonomy Manager, BBC Information and Archives, December 2010)
+* [https://gist.github.com/88607/598a518284a2dfa5333cb7e90cb9c940d4bd0202 experimental ruby/treetop parser]
+
+[[Category:Classification systems]]
+[[Category:Library cataloging and classification]]

@@ -1,0 +1,62 @@
+{{multiple issues | 
+{{pov|date=March 2019}}
+{{more footnotes|date=April 2016}}
+}}
+In the [[philosophy of mathematics]], '''formalism''' is the view that holds that statements of [[mathematics]] and [[logic]] can be considered to be statements about the consequences of the manipulation of [[string (computer science)|string]]s (alphanumeric sequences of symbols, usually as equations) using established [[Rule of inference|manipulation rules]]. A central idea of formalism "is that mathematics is not a body of propositions representing an abstract sector of reality, but is much more akin to a game, bringing with it no more commitment to an [[ontology]] of objects or properties than ludo or [[chess]]."<ref name=":0">{{Citation|last=Weir|first=Alan|title=Formalism in the Philosophy of Mathematics|date=2015|url=https://plato.stanford.edu/archives/spr2015/entries/formalism-mathematics/|encyclopedia=The Stanford Encyclopedia of Philosophy|editor-last=Zalta|editor-first=Edward N.|edition=Spring 2015|publisher=Metaphysics Research Lab, Stanford University|access-date=2019-05-25}}</ref> According to formalism, the truths expressed in logic and mathematics are not about numbers, sets, or triangles or any other coextensive subject matter — in fact, they aren't "about" anything at all. Rather, mathematical statements are [[syntax (logic)|syntactic]] forms whose shapes and locations have no meaning unless they are given an [[interpretation (logic)|interpretation]] (or [[semantics]]). In contrast to [[logicism]] or [[intuitionism]], formalism's contours are less defined due to broad approaches that can be categorized as formalist. 
+
+Along with logicism and intuitionism, formalism is one of the main theories in the philosophy of mathematics that developed in the late nineteenth and early twentieth century. Among formalists, [[David Hilbert]] was the most prominent advocate.<ref>{{Cite book|url=https://books.google.com/books?id=mbn35b2ghgkC&q=formalism|title=Philosophy of Mathematics|last=Simons|first=Peter|publisher=Elsevier|year=2009|isbn=9780080930589|pages=292|language=en|chapter=Formalism}}</ref>
+
+== Early formalism ==
+The early mathematical formalists attempted "to block, avoid, or sidestep (in some way) any ontological commitment to a problematic realm of abstract objects."<ref name=":0" /> German mathematicians [[Eduard Heine]] and [[Carl Johannes Thomae]] are considered early advocates of mathematical formalism.<ref name=":0" /> Heine and Thomae's formalism can be found in [[Gottlob Frege]]'s criticisms in ''[[The Foundations of Arithmetic]]''.  
+
+According to Alan Weir, the formalism of Heine and Thomae that Frege attacks can be "describe[d] as term formalism or game formalism."<ref name=":0" /> Term formalism is the view that mathematical expressions refer to symbols, not numbers. Heine expressed this view as follows: "When it comes to definition, I take a purely formal position, in that I call certain tangible signs numbers, so that the existence of these numbers is not in question."<ref>{{Cite book|url=https://books.google.com/books?id=mbn35b2ghgkC&q=formalism|title=Philosophy of Mathematics|last=Simons|first=Peter|publisher=Elsevier|year=2009|isbn=9780080930589|pages=293|language=en}}</ref> 
+
+Thomae is characterized as a game formalist who claimed that "[f]or the formalist, arithmetic is a game with signs which are called empty. That means that they have no other content (in the calculating game) than they are assigned by their behaviour with respect to certain rules of combination (rules of the game)."<ref>{{Cite book|title=The Foundations of Arithmetic: A Logico-Mathematical Enquiry Into the Concept of Number|last=Frege|first=Gottlob|publisher=Northwestern University Press|year=1903|location=Chicago|pages=183}}</ref> 
+
+Frege provides three criticisms of Heine and Thomae's formalism: "that [formalism] cannot account for the application of mathematics; that it confuses formal theory with metatheory; [and] that it can give no coherent explanation of the concept of an infinite sequence."<ref>{{Cite book|url=https://books.google.com/books?id=S-k9FtxFyEAC&q=formalist|title=Frege: Philosophy of Mathematics|last=Dummett|first=Michael|publisher=Harvard University Press|year=1991|isbn=9780674319356|location=Cambridge|pages=252|language=en}}</ref> Frege's criticism of Heine's formalism is that his formalism cannot account for infinite sequences. Dummett argues that more developed accounts of formalism than Heine's account could avoid Frege's objections by claiming they are concerned with abstract symbols rather than concrete objects.<ref>{{Cite book|url=https://books.google.com/books?id=S-k9FtxFyEAC&q=formalist|title=Frege: Philosophy of Mathematics|last=Dummett|first=Michael|publisher=Harvard University Press|year=1991|isbn=9780674319356|location=Cambridge|pages=253|language=en}}</ref> Frege objects to the comparison of formalism with that of a game, such as chess.<ref>{{Cite book|url=https://books.google.com/books?id=ZxcbAgAAQBAJ&q=heine&pg=PR3|title=Basic Laws of Arithmetic: Derived using concept-script|last1=Frege|first1=Gottlob|last2=Ebert|first2=Philip A.|last3=Cook|first3=Roy T.|publisher=Oxford University Press|year=1893|isbn=9780199281749|location=Oxford|publication-date=2013|pages=§ 93|language=en}}</ref> Frege argues that Thomae's formalism fails to distinguish between game and theory.  
+
+== Hilbert's formalism ==
+[[Image:Hilbert.jpg|thumb|[[David Hilbert]]]]
+
+A major figure of formalism was [[David Hilbert]], whose [[Hilbert's program|program]] was intended to be a [[Completeness (logic)|complete]] and [[Consistency|consistent]] axiomatization of all of mathematics.<ref>{{Citation|last=Zach|first=Richard|title=Hilbert's Program|date=2019|url=https://plato.stanford.edu/archives/sum2019/entries/hilbert-program/|encyclopedia=The Stanford Encyclopedia of Philosophy|editor-last=Zalta|editor-first=Edward N.|edition=Summer 2019|publisher=Metaphysics Research Lab, Stanford University|access-date=2019-05-25}}</ref> Hilbert aimed to show the consistency of mathematical systems from the assumption that the "finitary arithmetic" (a subsystem of the usual [[arithmetic]] of the positive [[integers]], chosen to be philosophically uncontroversial) was consistent (i.e. no [[contradiction]]s can be derived from the system).
+
+The way that [[David Hilbert|Hilbert]] tried to show that an axiomatic system was consistent was by formalizing it using a particular language.<ref name=":1">{{Cite journal|last=Snapper|first=Ernst|date=September 1979|title=The Three Crises in Mathematics: Logicism, Intuitionism and Formalism|url=https://www.maa.org/sites/default/files/pdf/upload_library/22/Allendoerfer/1980/0025570x.di021111.02p0048m.pdf|journal=Mathematics Magazine|volume=52|issue=4|pages=207–216|doi=10.1080/0025570X.1979.11976784}}</ref> In order to formalize an axiomatic system, you must first choose a language in which you can express and perform operations within that system. This language must include five components:
+
+* It must include variables such as ''x,'' which can stand for some number.
+* It must have quantifiers such as the symbol for the existence of an object.
+* It must include equality.
+* It must include connectives such as ↔ for "if and only if."
+* It must include certain undefined terms called parameters. For geometry, these undefined terms might be something like a point or a line, which we still choose symbols for.
+
+By adopting this language, [[David Hilbert|Hilbert]] thought that we could prove all theorems within any axiomatic system using nothing more than the axioms themselves and the chosen formal language.
+
+[[Gödel|Gödel's]] conclusion in his [[Gödel's incompleteness theorems|incompleteness theorems]] was that you cannot prove consistency within any consistent axiomatic system rich enough to include classical arithmetic. On the one hand, you must use only the formal language chosen to formalize this axiomatic system; on the other hand, it is impossible to prove the consistency of this language in itself.<ref name=":1" /> [[David Hilbert|Hilbert]] was originally frustrated by Gödel's work because it shattered his life's goal to completely formalize everything in number theory.<ref name=":2">{{Cite book|url=https://books.google.com/books?id=RtnvBgAAQBAJ&q=Reid,+Constance,+and+Hermann+Weyl.+Hilbert.|title=Hilbert|last1=Reid|first1=Constance|last2=Weyl|first2=Hermann|publisher=Springer-Verlag|year=1970|isbn=9783662286159|pages=198|language=en}}</ref> However, [[Gödel]] did not feel that he contradicted everything about [[David Hilbert|Hilbert's]] formalist point of view.<ref>{{Cite book|url=https://books.google.com/books?id=5ya4A0w62skC&q=hilbert|title=Kurt Gödel: Collected Works: Volume I: Publications 1929-1936|last=Gödel|first=Kurt|publisher=Oxford University Press|year=1986|isbn=9780195039641|editor-last=Feferman|editor-first=Solomon|volume=1|location=Oxford|pages=195|language=en}}</ref> After [[Gödel]] published his work, it became apparent that proof theory still had some use, the only difference is that it could not be used to prove the consistency of all of number theory as [[David Hilbert|Hilbert]] had hoped.<ref name=":2" />
+
+Hilbert was initially a deductivist,{{cn|date=March 2019}} but he considered certain [[metamathematics|metamathematical]] methods to yield intrinsically meaningful results and was a [[Philosophy of mathematics#Mathematical realism|realist]] with respect to the finitary arithmetic. Later, he held the opinion that there was no other meaningful mathematics whatsoever, regardless of interpretation.
+
+== Further developments ==
+Other formalists, such as [[Rudolf Carnap]], considered mathematics to be the investigation of [[formal system|formal axiom systems]].<ref>{{Cite book|url=https://books.google.com/books?id=3e3gAwAAQBAJ|title=Logical Syntax of Language|last=Carnap|first=Rudolf|publisher=Routledge|year=1937|isbn=9781317830597|pages=325–328|language=en}}</ref>
+
+[[Haskell Curry]] defines mathematics as "the science of formal systems."<ref name=":4">{{Cite book|url=https://books.google.com/books?id=tZHrBQgp1bkC&q=haskell+curry|title=Outlines of a Formalist Philosophy of Mathematics|last=Curry|first=Haskell B.|publisher=Elsevier|year=1951|isbn=9780444533685|pages=56|language=en}}</ref> Curry's formalism is unlike that of term formalists, game formalists, or Hilbert's formalism. For Curry, mathematical formalism is about the formal structure of mathematics and not about a formal system.<ref name=":4" /> [[Stewart Shapiro]] describes Curry's formalism as starting from the "historical thesis that as a branch of mathematics develops, it becomes more and more rigorous in its methodology, the end-result being the codification of the branch in formal deductive systems."<ref>{{Cite book|title=The Oxford Companion to Philosophy|last=Shapiro|first=Stewart|publisher=Oxford University Press|others=Honderich, Ted|year=2005|isbn=9780191532658|edition=2nd|location=Oxford|chapter=Formalism|oclc=62563098}}</ref>
+
+== Criticisms of formalism ==
+[[Kurt Gödel]] indicated one of the weak points of formalism by addressing the question of consistency in axiomatic systems. 
+
+[[Bertrand Russell]] has argued that formalism fails to explain what is meant by the linguistic application of numbers in statements such as "there are three men in the room".<ref>Bertrand Russell [https://archive.org/details/in.ernet.dli.2015.125760/page/n113/mode/2up ''My Philosophical Development''], 1959, ch. X.</ref>
+
+== See also ==
+* [[QED project]]
+* [[Formal logical systems|Mathematical formalism]]
+* [[Formalized mathematics]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{Commonscat-inline|Formalism (deductive)}}
+
+{{Philosophical logic}}
+
+{{DEFAULTSORT:Formalism}}
+[[Category:Formalism (deductive)| ]]
+[[Category:Philosophy of mathematics]]

@@ -1,0 +1,53 @@
+{{context|date=June 2011}}
+
+'''Chaos computing''' is the idea of using [[chaos theory|chaotic systems]] for [[computation]]. In particular, chaotic systems can be made to produce all types of [[logic gates]] and further allow them to be morphed into each other.
+
+== Introduction ==
+
+Chaotic systems generate large numbers of patterns of behavior and are irregular because they switch between these patterns. They exhibit sensitivity to initial conditions which, in practice, means that chaotic systems can switch between patterns extremely fast.
+
+Modern digital [[computer]]s perform computations based upon digital logic operations implemented at the lowest level as [[logic gates]].  There are essentially seven basic logic functions implemented as logic gates: [[AND gate|AND]], [[OR gate|OR]], [[NOT gate|NOT]], [[NAND gate|NAND]], [[NOR gate|NOR]], [[XOR gate|XOR]] and [[XNOR gate|XNOR]].
+
+A chaotic morphing logic gate consists of a generic [[Nonlinear system|nonlinear circuit]] that exhibits chaotic dynamics producing various patterns. A control mechanism is used to select patterns that correspond to different logic gates. The sensitivity to initial conditions is used to switch between different patterns extremely fast (well under a computer clock cycle).
+
+== Chaotic Morphing ==
+
+As an example of how chaotic morphing works, consider a generic chaotic system known as the [[Logistic map]]. This nonlinear map is very well studied for its chaotic behavior and its functional representation is given by:
+
+:<math>\qquad x_{n+1} = r x_n (1-x_n) </math>
+
+In this case, the value of {{math|''x''}} is chaotic when {{math|''r''}} >~ 3.57... and rapidly switches between different patterns in the value of {{math|''x''}} as one iterates the value of {{math|''n''}}. A simple threshold controller can control or direct the chaotic map or system to produce one of many patterns. The controller basically sets a threshold on the map such that if the iteration ("chaotic update") of the map takes on a value of {{math|''x''}} that lies above a given threshold value, {{math|''x''}}*,then the output corresponds to a 1, otherwise it corresponds to a 0. One can then reverse engineer the chaotic map to establish a lookup table of thresholds that robustly produce any of the logic gate operations.<ref>{{cite journal | last=Sinha | first=Sudeshna | last2=Ditto | first2=William | title=Dynamics Based Computation | journal=Physical Review Letters | publisher=American Physical Society (APS) | volume=81 | issue=10 | year=1998 | issn=0031-9007 | doi=10.1103/physrevlett.81.2156 | pages=2156–2159}}</ref><ref>{{cite journal | last=Sinha | first=Sudeshna | last2=Ditto | first2=William L. | title=Computing with distributed chaos | journal=Physical Review E | publisher=American Physical Society (APS) | volume=60 | issue=1 | date=1999-07-01 | issn=1063-651X | doi=10.1103/physreve.60.363 | pages=363–377}}</ref><ref>{{cite journal | last=Munakata | first=T. | last2=Sinha | first2=S. | last3=Ditto | first3=W.L. | title=Chaos computing: implementation of fundamental logical gates by chaotic elements | journal=IEEE Transactions on Circuits and Systems I: Fundamental Theory and Applications | publisher=Institute of Electrical and Electronics Engineers (IEEE) | volume=49 | issue=11 | year=2002 | issn=1057-7122 | doi=10.1109/tcsi.2002.804551 | pages=1629–1633}}</ref> Since the system is chaotic, we can then switch between various gates ("patterns") exponentially fast.
+
+== ChaoGate ==
+
+[[File:Ditto Chaos Computing Example 1.jpg|thumb]]
+The ''ChaoGate'' is an implementation of a chaotic morphing logic gate developed by the inventor of the technology William Ditto, along with [[Sudeshna Sinha]] and K. Murali.<ref>{{cite web | url=http://news.techeye.net/chips/scientists-use-chaos-theory-to-create-new-chip | title=Scientists use chaos theory to create new chip Chaogate holds exciting processing prospects | date=16 Nov 2010 | author=Matthew Finnegan | publisher=TechEYE.net | accessdate=October 15, 2012 | archive-url=https://web.archive.org/web/20140512225447/http://news.techeye.net/chips/scientists-use-chaos-theory-to-create-new-chip | archive-date=12 May 2014 | url-status=dead}}</ref><ref>"Method and apparatus for a chaotic computing module," W. Ditto, S. Sinha and K. Murali, US Patent Number 07096347 (August 22, 2006). {{US Patent|8,520,191}}</ref>
+
+A Chaotic computer, made up of a lattice of ChaoGates, has been demonstrated by Chaologix Inc.
+
+==Research==
+
+Recent research has shown how chaotic computers can be recruited in Fault Tolerant applications, by introduction of dynamic based fault detection methods.<ref>{{cite journal | last=Jahed-Motlagh | first=Mohammad R. | last2=Kia | first2=Behnam | last3=Ditto | first3=William L. | last4=Sinha | first4=Sudeshna | title=Fault tolerance and detection in chaotic Computers | journal=International Journal of Bifurcation and Chaos | publisher=World Scientific Pub Co Pte Lt | volume=17 | issue=06 | year=2007 | issn=0218-1274 | doi=10.1142/s0218127407018142 | pages=1955–1968}}</ref> Also it has been demonstrated that multidimensional dynamical states available in a single ChaoGate can be exploited to implement parallel chaos computing,<ref name="Chua 2005">{{cite conference | last=Cafagna | first=D. | last2=Grassi | first2=G. | title=Chaos-based computation via chua's circuit: parallel computing with application to the SR flip-flop |conference= International Symposium on Signals, Circuits and Systems|year=2005| publisher=IEEE | isbn=0-7803-9029-6 | doi=10.1109/isscs.2005.1511349 | volume=2|page=749-752}}</ref><ref>{{cite journal | last=Sinha | first=Sudeshna | last2=Munakata | first2=Toshinori | last3=Ditto | first3=William L. | title=Parallel computing with extended dynamical systems | journal=Physical Review E | publisher=American Physical Society (APS) | volume=65 | issue=3 | date=2002-02-19 | issn=1063-651X | doi=10.1103/physreve.65.036214 | page=036214}}</ref> and as an example, this parallel architecture can lead to constructing an [[SR flip-flop circuit|SR like memory element]] through one ChaoGate.<ref name="Chua 2005" /> As another example, it has been proved that any logic function can be constructed directly from just one ChaoGate.<ref>{{cite journal | last=Pourshaghaghi | first=Hamid Reza | last2=Kia | first2=Behnam | last3=Ditto | first3=William | last4=Jahed-Motlagh | first4=Mohammad Reza | title=Reconfigurable logic blocks based on a chaotic Chua circuit | journal=Chaos, Solitons & Fractals | publisher=Elsevier BV | volume=41 | issue=1 | year=2009 | issn=0960-0779 | doi=10.1016/j.chaos.2007.11.030 | pages=233–244}}</ref>
+
+Chaos allows order to be found in such diverse systems as the atmosphere, heart beating, fluids, seismology, metallurgy, physiology, or the behavior of a stock market.<ref>{{cite book |last1=Soucek |first1=Branko |title=Dynamic, Genetic, and Chaotic Programming: The Sixth-Generation Computer Technology Series |publisher=John Wiley & Sons, Inc |isbn=0-471-55717-X |page=11}}</ref>
+
+== See also ==
+* [[Chua's circuit]]
+
+== References ==
+
+{{reflist}}
+*"The 10 Coolest Technologies You’ve Never Heard Of – Chaos Computing," PC Magazine, Vol. 25, No. 13, page p.&nbsp;66, August 8, 2006. [https://www.pcmag.com/article2/0,2704,1990288,00.asp]
+*"Logic from Chaos," MIT Technology Review, June 15, 2006. [http://www.technologyreview.com/Biztech/16989/]
+*"Exploiting the controlled responses of chaotic elements to design configurable hardware," W. L. Ditto and S. Sinha, Philosophical Transactions of the Royal Society London A, 364, pp.&nbsp;2483–2494 (2006) {{doi|10.1098/rsta.2006.1836}}.
+*"Chaos Computing: ideas and implementations" William L. Ditto, K. Murali and S. Sinha, Philosophical Transactions of the Royal Society London A, (2007) {{doi|10.1098/rsta.2007.2116}}.
+*"Experimental realization of the fundamental NOR Gate using a chaotic circuit," K. Murali, Sudeshna Sinha and William L. Ditto Phys. Rev. E 68, 016205 (2003). {{doi|10.1103/PhysRevE.68.016205}}
+*"Implementation of NOR gate by a chaotic Chua’s circuit," K. Murali, Sudeshna Sinha and William L. Ditto, International Journal of Bifurcation and Chaos, Vol. 13, No. 9, pp.&nbsp;1–4, (2003). {{doi|10.1142/S0218127403008053}}
+*"Fault tolerance and detection in chaotic Computers" M.R. Jahed-Motlagh, B. Kia, W.L. Ditto and S. Sinha, International Journal of Bifurcation and Chaos 17, 1955-1968(2007){{doi|10.1142/S0218127407018142}}
+*"Chaos-based computation via Chua's circuit: parallel computing with application to the SR flip-flop"D. Cafagna, G. Grassi, International Symposium on Signals, Circuits and Systems, ISSCS 2005, Volume: 2, 749-752 (2005) {{doi|10.1109/ISSCS.2005.1511349}}
+*"Parallel computing with extended dynamical systems" S. Sinha, T. Munakata and W.L. Ditto; Physical Review E, 65 036214 [1-7](2002) {{doi|10.1103/PhysRevE.65.036214}}
+
+{{DEFAULTSORT:Chaos Computing}}
+[[Category:Classes of computers]]
+[[Category:Models of computation]]
+[[Category:Theoretical computer science]]

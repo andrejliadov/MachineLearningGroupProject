@@ -1,0 +1,1426 @@
+[[File:Quark structure proton.svg|thumb|A [[proton]], the only [[baryon]] stable in isolation, has two up [[quark]]s and one down quark]]
+
+'''Baryons''' are [[List of particles#Composite particles|composite]] [[particle]]s made of three [[quark]]s, as opposed to [[meson]]s, which are composite particles made of one quark and one antiquark. [[Baryon]]s and mesons are both [[hadron]]s, which are particles composed solely of quarks or both quarks and antiquarks. The term ''baryon'' is derived from the [[Greek language|Greek]] ''"βαρύς"'' (''barys''), meaning "heavy", because, at the time of their naming, it was believed that baryons were characterized by having greater masses than other particles that were classed as matter.
+
+Until a few years ago, it was believed that some experiments showed the existence of [[pentaquark]]s – baryons made of four quarks and one antiquark.<ref>H. Muir (2003)</ref><ref>K. Carter (2003)</ref> The [[particle physics]] community as a whole did not view their existence as likely by 2006.<ref name=PDGPentaquarks2006>W.-M. Yao ''et al''. (2006): [http://pdg.lbl.gov/2006/reviews/theta_b152.pdf Particle listings – Positive Theta]</ref> On 13 July 2015, the [[LHCb|LHCb collaboration]] at [[CERN]] reported results consistent with pentaquark states in the decay of [[bottom Lambda baryon]]s (Λ{{su|p=0|b=b}}).<ref name="LHCb2015">R. Aaij ''et al''. (2015)</ref>
+
+Since baryons are composed of quarks, they participate in the [[strong interaction]]. [[Lepton]]s, on the other hand, are not composed of quarks and as such do not participate in the strong interaction. The best known baryons are the [[proton]]s and [[neutron]]s that make up most of the mass of the visible [[matter]] in the [[universe]], whereas [[electron]]s, the other major component of [[atom]]s, are leptons. Each baryon has a corresponding [[antiparticle]] known as an antibaryon in which quarks are replaced by their corresponding antiquarks. For example, a proton is made of two up quarks and one down quark, while its corresponding antiparticle, the [[antiproton]], is made of two up antiquarks and one down antiquark.
+
+== Lists of baryons ==
+These lists detail all known and predicted baryons in total angular momentum ''J''&nbsp;=&nbsp;{{frac|1|2}} and ''J''&nbsp;=&nbsp;{{frac|3|2}} configurations with positive [[parity (physics)|parity]].<ref name=Griffiths2008>{{citation| author=Griffiths, David J.|title=Introduction to Elementary Particles|edition=2nd revised| publisher=WILEY-VCH |year=2008|isbn= 978-3-527-40601-2|pages=181–188}}</ref>
+
+*Baryons composed of one type of quark (uuu, ddd, ...) can exist in ''J''&nbsp;=&nbsp;{{frac|3|2}} configuration, but ''J''&nbsp;=&nbsp;{{frac|1|2}} is forbidden by the [[Pauli exclusion principle]].
+*Baryons composed of two types of quarks (uud, uus, ...) can exist in both ''J''&nbsp;=&nbsp;{{frac|1|2}} and ''J''&nbsp;=&nbsp;{{frac|3|2}} configurations. 
+*Baryons composed of three types of quarks (uds, udc, ...) can exist in both ''J''&nbsp;=&nbsp;{{frac|1|2}} and ''J''&nbsp;=&nbsp;{{frac|3|2}} configurations.  Two ''J''&nbsp;=&nbsp;{{frac|1|2}} configurations are possible for these baryons.
+
+The symbols encountered in these lists are: ''I'' ([[isospin]]), ''J'' ([[total angular momentum]]), ''P'' ([[parity (physics)|parity]]), u ([[up quark]]), d ([[down quark]]), s ([[strange quark]]), c ([[charm quark]]), b ([[bottom quark]]), ''Q'' ([[charge (physics)|charge]]), ''B'' ([[baryon number]]), ''S'' ([[strangeness]]), ''C'' ([[charm (quantum number)|charm]]), ''B′'' ([[bottomness]]), as well as a wide array of subatomic particles (hover for name). (See the ''[[baryon]]'' article for a detailed explanation of these symbols.)
+
+Antibaryons are not listed in the tables; however, they simply would have all quarks changed to antiquarks, and ''Q'', ''B'', ''S'', ''C'', ''B′'', would be of opposite signs. Particles with <sup>†</sup> next to their names have been predicted by the [[Standard Model]] but not yet observed. Values in parentheses have not been firmly established by experiments, but are predicted by the [[quark model]] and are consistent with the measurements.<ref>J. Beringer ''et al.'' (2012) and 2013 partial update for the 2014 edition: [http://pdg.lbl.gov/2013/tables/rpp2013-sum-baryons.pdf Particle summary tables – Baryons] {{Webarchive|url=https://web.archive.org/web/20140312212714/http://pdg.lbl.gov/2013/tables/rpp2013-sum-baryons.pdf |date=2014-03-12 }}</ref><ref>J.G. Körner ''et al.'' (1994)</ref>
+
+=== ''J''<sup>''P''</sup> = {{sfrac|1|2}}<sup>+</sup> baryons ===
+{| class="wikitable sortable" style="text-align: center; margin-right:0;"
+|+J<sup>P</sup>&nbsp;=&nbsp;{{sfrac|1|2}}<sup>+</sup> baryons
+|-
+|-
+! class=unsortable|Particle name
+! Symbol
+! Quark content
+! Rest mass ([[electron volt|MeV]]/[[speed of light|c]]<sup>2</sup>)
+! width="40"|''[[Isospin|I]]''
+! width="40"|''[[Total angular momentum|J]]'' <sup>''[[Parity (physics)|P]]''</sup>
+! width="50"|''[[Electric charge|Q]]'' ([[elementary charge|e]])
+! width="40"|''[[strangeness|S]]''
+! width="40"|''[[charm (quantum number)|C]]''
+! width="40"|''[[bottomness|B']]''
+! [[Mean lifetime]] ([[second|s]])
+! class=unsortable|Commonly<br/>decays to
+|- style="height:40px"
+|align="left"| [[proton]]<ref name=PDGProton>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-p.pdf Particle listings – {{#invoke:particles|nolink|Proton+}}]</ref>
+| {{#invoke:particles|link|Proton}},{{#invoke:particles|link|Proton+}},<br/>{{#invoke:particles|link|Nucleon+}}
+| {{#invoke:particles|link|Up quark|Up quark|Down quark}}
+| {{sort|0938.272046|{{val|938.272046|(21)}}}}<sup>{{ref|massofnucleons|[a]}}</sup>
+| {{sort|0.5|{{sfrac|1|2}}}}
+| {{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>
+| {{sort|1|+1}}
+| 0
+| 0
+| 0
+| {{sort|+10|Stable}}<sup>{{ref|protonlifetime|[b]}}</sup>
+| [[Proton decay|Unobserved]]
+|- style="height:40px"
+|align="left"| [[neutron]]<ref name=PDGNeutron>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-n.pdf Particle listings – {{#invoke:particles|nolink|Neutron0}}]</ref>
+| {{#invoke:particles|link|Neutron}},{{#invoke:particles|link|Neutron0}},<br/>{{#invoke:particles|link|Nucleon0}}
+| {{#invoke:particles|link|Up quark|Down quark|Down quark}}
+| {{sort|0939.565379|{{val|939.565379|(21)}}}}<sup>{{ref|massofnucleons|[a]}}</sup>
+| {{sort|0.5|{{sfrac|1|2}}}}
+| {{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>
+| 0
+| 0
+| 0
+| 0
+| {{sort|+2|{{val|8.800|0.009|e=+2}}}}<sup>{{ref|neutronlifetime|[c]}}</sup>
+| {{#invoke:particles|link|Proton+|+|Electron|+|Electron antineutrino}}
+|- style="height:40px"
+|align="left"| [[Lambda baryon|Lambda]]<ref>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-lambda.pdf Particle listings – {{#invoke:particles|nolink|Lambda}}]</ref>
+| {{#invoke:particles|link|Lambda0}}
+| {{#invoke:particles|link|Up quark|Down quark|Strange quark}}
+| {{val|1115.683|0.006}}
+| 0
+| {{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>
+| 0
+| {{sort|-1|−1}}
+| 0
+| 0
+| {{sort|-10.2|{{val|2.632|0.020|e=-10}}}}
+| {{#invoke:particles|link|Proton+|+|Pion-|or|br|Neutron0|+|Pion0}}
+|- style="height:40px"
+|align="left"| charmed Lambda<ref name=PDGCharmedLamdba>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-lambdac-plus.pdf Particle listings – {{#invoke:particles|nolink|Charmed Lambda}}]</ref>
+| {{#invoke:particles|link|Charmed Lambda+}}
+| {{#invoke:particles|link|Up quark|Down quark|Charm quark}}
+| {{val|2286.46|0.14}}
+| 0
+| {{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>
+| {{sort|1|+1}}
+| 0
+| {{sort|1|+1}}
+| 0
+| {{sort|-13.2|{{val|2.00|0.06|e=-13}}}}
+| See [http://pdg.lbl.gov/2013/listings/rpp2013-list-lambdac-plus.pdf {{#invoke:particles|nolink|Charmed lambda+}} decay modes]
+|- style="height:40px"
+|align="left"| bottom Lambda<ref name=PDGBottomLambda0>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-lambdab-zero.pdf Particle listings – {{#invoke:particles|nolink|Bottom Lambda}}]</ref>
+| {{#invoke:particles|link|Bottom Lambda0}}
+| {{#invoke:particles|link|Up quark|Down quark|Bottom quark}}
+| {{val|5619.4|0.6}}
+| (0)
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| 0
+| 0
+| 0
+| {{sort|-1|−1}}
+| {{sort|-12.3|{{val|1.429|0.024|e=-12}}}}
+| See [http://pdg.lbl.gov/2013/listings/rpp2013-list-lambdab-zero.pdf {{#invoke:particles|nolink|Bottom Lambda0}} decay modes]
+|- style="height:40px"
+|align="left"| [[Sigma baryon|Sigma]]<ref name="PDGSigma+">J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-sigma-plus.pdf Particle listings – {{#invoke:particles|nolink|Sigma+}}]</ref>
+| {{#invoke:particles|link|Sigma+}}
+| {{#invoke:particles|link|Up quark|Up quark|Strange quark}}
+| {{val|1189.37|0.07}}
+| 1
+| {{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| 0
+| 0
+| {{sort|-11.1|{{val|8.018|0.026|e=-11}}}}
+| {{#invoke:particles|link|Proton+|+|Pion0|or|br|Neutron0|+|Pion+}}
+|- style="height:40px"
+|align="left"| Sigma<ref name=PDGSigma0>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-sigma-zero.pdf Particle listings – {{#invoke:particles|nolink|Sigma0}}]</ref>
+| {{#invoke:particles|link|Sigma0}}
+| {{#invoke:particles|link|Up quark|Down quark|Strange quark}}
+| {{val|1192.642|0.024}}
+| 1
+| {{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>
+| 0
+| {{sort|-1|−1}}
+| 0
+| 0
+| {{sort|-20.1|{{val|7.4|0.7|e=-20}}}}
+| {{#invoke:particles|link|Lambda0|+|Photon}}
+|- style="height:40px"
+|align="left"| Sigma<ref name=PDGSigma->J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-sigma-minus.pdf Particle listings – {{#invoke:particles|nolink|Sigma-}}]</ref>
+| {{#invoke:particles|link|Sigma-}}
+| {{#invoke:particles|link|Down quark|Down quark|Strange quark}}
+| {{val|1197.449|0.030}}
+| 1
+| {{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>
+| {{sort|-1|−1}}
+| {{sort|-1|−1}}
+| 0
+| 0
+| {{sort|-10.4|{{val|1.479|0.011|e=-10}}}}
+| {{#invoke:particles|link|Neutron0|+|Pion-}}
+|- style="height:40px"
+|align="left"| charmed Sigma<ref name=PDGCharmedSigma>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-sigmac-2455.pdf Particle listings – {{#invoke:particles|nolink|Charmed Sigma}}]</ref>
+| {{#invoke:particles|link|Charmed sigma++}}
+| {{#invoke:particles|link|Up quark|Up quark|Charm quark}}
+| {{val|2453.98|0.16}}
+| 1
+| {{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>
+| {{sort|2|+2}}
+| 0
+| {{sort|1|+1}}
+| 0
+| {{sort|-22.2|{{val|2.91|0.32|e=-22}}}}<sup>{{ref|Lifetime|[d]}}</sup>
+| {{#invoke:particles|link|Charmed lambda+|+|Pion+}}
+|- style="height:40px"
+|align="left"| charmed Sigma<ref name=PDGCharmedSigma/>
+| {{#invoke:particles|link|Charmed sigma+}}
+| {{#invoke:particles|link|Up quark|Down quark|Charm quark}}
+| {{val|2452.9|0.4}}
+| 1
+| {{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>
+| {{sort|1|+1}}
+| 0
+| {{sort|1|+1}}
+| 0
+| {{sort|-22.3|>{{val|1.43|e=-22}}}}<sup>{{ref|Lifetime|[d]}}</sup>
+| {{#invoke:particles|link|Charmed lambda+|+|Pion0}}
+|- style="height:40px"
+|align="left"| charmed Sigma<ref name=PDGCharmedSigma/>
+| {{#invoke:particles|link|Charmed sigma0}}
+| {{#invoke:particles|link|Down quark|Down quark|Charm quark}}
+| {{val|2453.74|0.16}}
+| 1
+| {{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>
+| 0
+| 0
+| {{sort|1|+1}}
+| 0
+| {{sort|-22.1|{{val|3.05|0.37|e=-22}}}}<sup>{{ref|Lifetime|[d]}}</sup>
+| {{#invoke:particles|link|Charmed lambda+|+|Pion-}}
+|- style="height:40px"
+|align="left"| bottom Sigma<ref name=BottomSigma>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-sigmab.pdf Particle listings – {{#invoke:particles|nolink|Bottom Sigma}}]</ref>
+| {{#invoke:particles|link|Bottom Sigma+}}
+| {{#invoke:particles|link|Up quark|Up quark|Bottom quark}}
+| {{val|5811.3|0.9|-0.8}}&nbsp;±&nbsp;1.7
+| (1)
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| {{sort|1|+1}}
+| 0
+| 0
+| {{sort|-1|−1}}
+| {{sort|-23|{{val|6.8|2.7|-3.5|e=-23}}}}<sup>{{ref|Lifetime|[d]}}</sup>
+| {{#invoke:particles|link|Bottom Lambda0|+|Pion+}}
+|- style="height:40px"
+|align="left"| bottom Sigma<sup>{{ref|Undiscovered|†}}</sup>
+| {{#invoke:particles|link|Bottom Sigma0}}
+| {{#invoke:particles|link|Up quark|Down quark|Bottom quark}}
+| Unknown
+| (1)
+| ({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)
+| 0
+| 0
+| 0
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| bottom Sigma<ref name=BottomSigma/>
+| {{#invoke:particles|link|Bottom Sigma-}}
+| {{#invoke:particles|link|Down quark|Down quark|Bottom quark}}
+| {{val|5815.5|0.6|-0.5}}&nbsp;±&nbsp;1.7
+| (1)
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| {{sort|-1|−1}}
+| 0
+| 0
+| {{sort|-1|−1}}
+| {{sort|-22.4|{{val|1.34|0.87|-1.15|e=-22}}}}<sup>{{ref|Lifetime|[d]}}</sup>
+| {{#invoke:particles|link|Bottom Lambda0|+|Pion-}}
+|- style="height:40px"
+|align="left"| [[Xi baryon|Xi]]<ref name=PDGXi0>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-xi-zero.pdf Particle listings – {{#invoke:particles|nolink|Xi0}}]</ref>
+| {{#invoke:particles|link|Xi0}}
+| {{#invoke:particles|link|Up quark|Strange quark|Strange quark}}
+| {{val|1314.86|0.20}}
+| {{sort|0.5|{{sfrac|1|2}}}}
+| {{sort|0.5|{{sfrac|1|2}}}}<sup>(+)</sup>
+| 0
+| {{sort|-2|−2}}
+| 0
+| 0
+| {{sort|-10.1|{{val|2.90|0.09|e=-10}}}}
+| {{#invoke:particles|link|Lambda0|+|Pion0}}
+|- style="height:40px"
+|align="left"| Xi<ref name=PDGXi->J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-xi-minus.pdf Particle listings – {{#invoke:particles|nolink|Xi-}}]</ref>
+| {{#invoke:particles|link|Xi-}}
+| {{#invoke:particles|link|Down quark|Strange quark|Strange quark}}
+| {{val|1321.71|0.07}}
+| {{sort|0.5|{{sfrac|1|2}}}}
+| {{sort|0.5|{{sfrac|1|2}}}}<sup>(+)</sup>
+| {{sort|-1|−1}}
+| {{sort|-2|−2}}
+| 0
+| 0
+| {{sort|-10.3|{{val|1.639|0.015|e=-10}}}}
+| {{#invoke:particles|link|Lambda0|+|Pion-}}
+|- style="height:40px"
+|align="left"| charmed Xi<ref name="PDGCharmedXi+">J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-xic-plus.pdf Particle listings – {{#invoke:particles|nolink|Charmed Xi+}}]</ref>
+| {{#invoke:particles|link|Charmed Xi+}}
+| {{#invoke:particles|link|Up quark|Strange quark|Charm quark}}
+| {{val|2467.8|+0.4|-0.6}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| {{sort|1|+1}}
+| 0
+| {{sort|-13.1|{{val|4.42|0.26|e=-13}}}}
+| See [http://pdg.lbl.gov/2013/listings/rpp2013-list-xic-plus.pdf {{#invoke:particles|nolink|charmed Xi+}} decay modes]
+|- style="height:40px"
+|align="left"| charmed Xi<ref name=PDGCharmedXi0>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-xic-zero.pdf Particle listings – {{#invoke:particles|nolink|Charmed Xi0}}]</ref>
+| {{#invoke:particles|link|Charmed Xi0}}
+| {{#invoke:particles|link|Down quark|Strange quark|Charm quark}}
+| {{val|2470.88|+0.34|-0.80}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| 0
+| {{sort|-1|−1}}
+| {{sort|1|+1}}
+| 0
+| {{sort|-13.3|{{val|1.12|+0.13|-0.10|e=-13}}}}
+| See [http://pdg.lbl.gov/2013/listings/rpp2013-list-xic-zero.pdf {{#invoke:particles|nolink|charmed Xi0}} decay modes]
+|- style="height:40px"
+|align="left"| charmed Xi prime<ref name="PDGCharmedXiPrime+">J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-xic-prime-plus.pdf Particle listings – {{#invoke:particles|nolink|Charmed Xi'+}}]</ref>
+| {{#invoke:particles|link|Charmed Xi'+}}
+| {{#invoke:particles|link|Up quark|Strange quark|Charm quark}}
+| {{val|2575.6|3.1}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| {{sort|1|+1}}
+| 0
+| Unknown
+| {{#invoke:particles|link|Charmed Xi+|+|Gamma|seen}}
+|- style="height:40px"
+|align="left"| charmed Xi prime<ref name=PDGCharmedXiPrime0>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-xic-prime-zero.pdf Particle listings – {{#invoke:particles|nolink|Charmed Xi'0}}]</ref>
+| {{#invoke:particles|link|Charmed Xi'0}}
+| {{#invoke:particles|link|Down quark|Strange quark|Charm quark}}
+| {{val|2577.9|2.9}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| 0
+| {{sort|-1|−1}}
+| {{sort|1|+1}}
+| 0
+| Unknown
+| {{#invoke:particles|link|Charmed Xi0|+|Gamma|seen}}
+|- style="height:40px"
+|align="left"| [[Ξcc++|double charmed Xi]]<sup><ref name="LHCb doublecharmxi">{{Cite press release |url =https://press.cern/press-releases/2017/07/lhcb-experiment-charmed-announce-observation-new-particle-two-heavy-quarks|title = The LHCb experiment is charmed to announce observation of a new particle with two heavy quarks|date = 6 July 2017|work = [[CERN]] |accessdate = 7 July 2017}}</ref></sup>
+| {{#invoke:particles|link|Double charmed Xi++}}
+| {{#invoke:particles|link|Up quark|Charm quark|Charm quark}}
+| {{val|3621.40| 0.78}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| {{sort|2|+2}}
+| 0
+| {{sort|2|+2}}
+| 0
+| Unknown
+| {{#invoke:particles|link|Charmed lambda+|+|Kaon-|+|Pion+|+|Pion+|seen}}
+|- style="height:40px"
+|align="left"| double charmed Xi<sup>{{ref|charmedXi0data|[e]}}</sup>
+| {{#invoke:particles|link|Double charmed Xi+}}
+| {{#invoke:particles|link|Down quark|Charm quark|Charm quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| {{sort|1|+1}}
+| 0
+| {{sort|2|+2}}
+| 0
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| bottom Xi<ref name=PDGBottomXi>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-xib-zero-xib-minus.pdf Particle listings – {{#invoke:particles|nolink|Bottom Xi}}]</ref> <br/>or [[Cascade B]]
+| {{#invoke:particles|link|Bottom Xi0}}
+| {{#invoke:particles|link|Up quark|Strange quark|Bottom quark}}
+| {{val|5787.8|5.0}}&nbsp;±&nbsp;1.3
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| 0
+| {{sort|-1|−1}}
+| 0
+| {{sort|-1|−1}}
+| Unknown
+| See [http://pdg.lbl.gov/2013/listings/rpp2013-list-xib-zero-xib-minus.pdf {{#invoke:particles|nolink|Bottom Xi}} decay modes]
+|- style="height:40px"
+|align="left"| bottom Xi<ref name=PDGBottomXi/><br/>or Cascade B
+| {{#invoke:particles|link|Bottom Xi-}}
+| {{#invoke:particles|link|Down quark|Strange quark|Bottom quark}}
+| {{val|5791.1|2.2}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| {{sort|-1|−1}}
+| {{sort|-1|−1}}
+| 0
+| {{sort|-1|−1}}
+| {{sort|-12.1|({{val|1.56|+0.27|-0.25}}&nbsp;±&nbsp;0.02){{e|-12}}}}
+| See [http://pdg.lbl.gov/2013/listings/rpp2013-list-xib-zero-xib-minus.pdf {{#invoke:particles|nolink|Bottom Xi}} decay modes]
+|- style="height:40px"
+|align="left"| bottom Xi prime<sup>†</sup>
+| {{#invoke:particles|link|Bottom Xi'0}}
+| {{#invoke:particles|link|Up quark|Strange quark|Bottom quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| 0
+| {{sort|-1|−1}}
+| 0
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| bottom Xi prime<sup>†</sup>
+| {{#invoke:particles|link|Bottom Xi'-}}
+| {{#invoke:particles|link|Down quark|Strange quark|Bottom quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| {{sort|-1|−1}}
+| {{sort|-1|−1}}
+| 0
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| double bottom Xi<sup>†</sup>
+| {{#invoke:particles|link|Double Bottom Xi0}}
+| {{#invoke:particles|link|Up quark|Bottom quark|Bottom quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| 0
+| 0
+| 0
+| {{sort|-2|−2}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| double bottom Xi<sup>†</sup>
+| {{#invoke:particles|link|Double Bottom Xi-}}
+| {{#invoke:particles|link|Down quark|Bottom quark|Bottom quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| {{sort|-1|−1}}
+| 0
+| 0
+| {{sort|-2|−2}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| charmed bottom Xi<sup>†</sup>
+| {{#invoke:particles|link|Charmed bottom Xi+}}
+| {{#invoke:particles|link|Up quark|Charm quark|Bottom quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| {{sort|1|+1}}
+| 0
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| charmed bottom Xi<sup>†</sup>
+| {{#invoke:particles|link|Charmed bottom Xi0}}
+| {{#invoke:particles|link|Down quark|Charm quark|Bottom quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| 0
+| 0
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| charmed bottom Xi prime<sup>†</sup>
+| {{#invoke:particles|link|Charmed bottom Xi'+}}
+| {{#invoke:particles|link|Up quark|Charm quark|Bottom quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| {{sort|1|+1}}
+| 0
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| charmed bottom Xi prime<sup>†</sup>
+| {{#invoke:particles|link|Charmed bottom Xi'0}}
+| {{#invoke:particles|link|Down quark|Charm quark|Bottom quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| 0
+| 0
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| charmed [[Omega baryon|Omega]]<ref name=PDGCharmedOmega0>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-omegac-zero.pdf Particle listings – {{#invoke:particles|nolink|Charmed omega0}}]</ref>
+| {{#invoke:particles|link|Charmed Omega0}}
+| {{#invoke:particles|link|Strange quark|Strange quark|Charm quark}}
+| {{val|2695.2|1.7}}
+| (0)
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| 0
+| {{sort|-2|−2}}
+| {{sort|1|+1}}
+| 0
+| {{sort|-14.1|{{val|6.9|1.2|e=-14}}}}
+| See [http://pdg.lbl.gov/2013/listings/rpp2013-list-omegac-zero.pdf {{#invoke:particles|nolink|Charmed omega0}} decay modes]
+|- style="height:40px"
+|align="left"| bottom Omega<ref name=PDGBottomOmega->J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-omegab-minus.pdf Particle listings – {{#invoke:particles|nolink|Bottom omega-}}]</ref>
+| {{#invoke:particles|link|Bottom Omega-}}
+| {{#invoke:particles|link|Strange quark|Strange quark|Bottom quark}}
+| {{val|6071|40}}
+| (0)
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| {{sort|-1|−1}}
+| {{sort|-2|−2}}
+| 0
+| {{sort|-1|−1}}
+| {{sort|-12.4|({{val|1.13|+0.55|-0.42}}&nbsp;±&nbsp;0.02){{e|-12}}}}
+| {{#invoke:particles|link|Omega-|+|J/Psi|seen}}
+|- style="height:40px"
+|align="left"| double charmed Omega<sup>†</sup>
+| {{#invoke:particles|link|Double charmed Omega+}}
+| {{#invoke:particles|link|Strange quark|Charm quark|Charm quark}}
+| Unknown
+| (0)
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| {{sort|2|+2}}
+| 0
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| charmed bottom Omega<sup>†</sup>
+| {{#invoke:particles|link|Charmed bottom omega0}}
+| {{#invoke:particles|link|Strange quark|Charm quark|Bottom quark}}
+| Unknown
+| (0)
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| 0
+| {{sort|-1|−1}}
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| charmed bottom Omega prime<sup>†</sup>
+| {{#invoke:particles|link|Charmed bottom omega'0}}
+| {{#invoke:particles|link|Strange quark|Charm quark|Bottom quark}}
+| Unknown
+| (0)
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| 0
+| {{sort|-1|−1}}
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| double bottom Omega<sup>†</sup>
+| {{#invoke:particles|link|Double Bottom Omega-}}
+| {{#invoke:particles|link|Strange quark|Bottom quark|Bottom quark}}
+| Unknown
+| (0)
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| {{sort|-1|−1}}
+| {{sort|-1|−1}}
+| 0
+| {{sort|-2|−2}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| double charmed bottom Omega<sup>†</sup>
+| {{#invoke:particles|link|Double charmed bottom Omega+}}
+| {{#invoke:particles|link|Charm quark|Charm quark|Bottom quark}}
+| Unknown
+| (0)
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| {{sort|1|+1}}
+| 0
+| {{sort|2|+2}}
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| charmed double bottom Omega<sup>†</sup>
+| {{#invoke:particles|link|Charmed double bottom Omega0}}
+| {{#invoke:particles|link|Charm quark|Bottom quark|Bottom quark}}
+| Unknown
+| (0)
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}}<sup>+</sup>)}}
+| 0
+| 0
+| {{sort|1|+1}}
+| {{sort|-2|−2}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|}
+<sup>†</sup>{{note|Undiscovered}} Particle has not yet been observed.
+
+<sup>[a]</sup> {{note|massofnucleons}} The masses of the [[proton]] and [[neutron]] are known with much better precision in [[atomic mass unit]]s (u) than in [[Electron volt|MeV]]/[[Speed of light|c<sup>2</sup>]], due to the relatively poorly known value of the [[elementary charge]]. In atomic mass units, the mass of the proton is {{val|1.007276466812|(90)|ul=u}} whereas that of the neutron is {{val|1.00866491600|(43)|u=u}}.
+
+<sup>[b]</sup> {{note|protonlifetime}} At least 10<sup>35</sup> years. See [[proton decay]].
+
+<sup>[c]</sup> {{note|neutronlifetime}} For [[free neutron]]s; in most common nuclei, neutrons are stable.
+
+<sup>[d]</sup> {{note|Lifetime}} PDG reports the [[resonance width]] (Γ). Here the conversion τ&nbsp;=&nbsp;{{frac|ħ|&Gamma;}} is given instead.
+
+<sup>[e]</sup> {{note|charmedXi0data}} There is a controversial discovery claim, disfavored by other experimental data.<ref name=PDGDoubleCharmedxi>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-xicc-plus.pdf Particle listings – {{#invoke:particles|nolink|Double Charmed Xi+}}]</ref><ref name="LHCb doublecharmxi" />
+
+=== ''J''<sup>''P''</sup> = {{sfrac|3|2}}<sup>+</sup> baryons ===
+{| class="wikitable sortable" style="text-align: center; margin-right:0;"
+|+''J''<sup>''P''</sup>&nbsp;=&nbsp;{{sfrac|3|2}}<sup>+</sup> baryons<sub></sub>
+|-
+! class=unsortable|Particle name
+! Symbol
+! Quark<br/>content
+! [[Rest mass]] ([[electron volt|MeV]]/[[speed of light|c]]<sup>2</sup>)
+! width="40"|''[[Isospin|I]]''
+! width="40"|''[[Total angular momentum|J]]'' <sup>''[[Parity (physics)|P]]''</sup>
+! width="50"|''[[Electric charge|Q]]'' ([[elementary charge|e]])
+! width="40"|''[[strangeness|S]]''
+! width="40"|''[[charm (quantum number)|C]]''
+! width="40"|''[[bottomness|B']]''
+! [[Mean lifetime]] ([[second|s]])
+! class=unsortable|Commonly<br/>decays to
+|- style="height:40px"
+|align="left"| [[Delta baryon|Delta]]<ref name=PDGDelta>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-Delta-1232.pdf Particle listings – {{#invoke:particles|nolink|Delta}}(1232)]</ref>
+| {{#invoke:particles|link|Delta++}}(1232)
+| {{#invoke:particles|link|Up quark|Up quark|Up quark}}
+| {{val|1232|2}}
+| {{sort|1.5|{{sfrac|3|2}}}}
+| {{nowrap|{{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>}}
+| {{sort|2|+2}}
+| 0
+| 0
+| 0
+| {{sort|-24.1|{{val|5.63|0.14|e=-24}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Proton+|+|Pion+}}
+|- style="height:40px"
+|align="left"| Delta<ref name=PDGDelta/>
+| {{#invoke:particles|link|Delta+}}(1232)
+| {{#invoke:particles|link|Up quark|Up quark|Down quark}}
+| {{val|1232|2}}
+| {{sort|1.5|{{sfrac|3|2}}}}
+| {{nowrap|{{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>}}
+| {{sort|1|+1}}
+| 0
+| 0
+| 0
+| {{sort|-24.2|{{val|5.63|0.14|e=-24}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Pion+|+|Neutron0|or|br|Pion0|+|Proton+}}
+|- style="height:40px"
+|align="left"| Delta<ref name=PDGDelta/>
+| {{#invoke:particles|link|Delta0}}(1232)
+| {{#invoke:particles|link|Up quark|Down quark|Down quark}}
+| {{val|1232|2}}
+| {{sort|1.5|{{sfrac|3|2}}}}
+| {{nowrap|{{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>}}
+| 0
+| 0
+| 0
+| 0
+| {{sort|-24.3|{{val|5.63|0.14|e=-24}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Pion0|+|Neutron0|or|br|Pion-|+|Proton+}}
+|- style="height:40px"
+|align="left"| Delta<ref name=PDGDelta/>
+| {{#invoke:particles|link|Delta-}}(1232)
+| {{#invoke:particles|link|Down quark|Down quark|Down quark}}
+| {{val|1232|2}}
+| {{sort|1.5|{{sfrac|3|2}}}}
+| {{nowrap|{{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>}}
+| {{sort|-1|−1}}
+| 0
+| 0
+| 0
+| {{sort|-24.4|{{val|5.63|0.14|e=-24}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Pion-|+|Neutron0}}
+|- style="height:40px"
+|align="left"| [[Sigma baryon|Sigma]]<ref name=PDGSigma*>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-sigma-1385.pdf Particle listings – {{#invoke:particles|nolink|Sigma}}(1385) ]</ref>
+| {{#invoke:particles|link|Sigma*+}}(1385)
+| {{#invoke:particles|link|Up quark|Up quark|Strange quark}}
+| {{val|1382.8|0.4}}
+| 1
+| {{nowrap|{{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>}}
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| 0
+| 0
+| {{sort|-23.6|{{val|1.839|0.0041|e=-23}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Lambda0|+|Pion+|or|br|Sigma+|+|Pion0|or|br|Sigma0|+|Pion+}}
+|- style="height:40px"
+|align="left"| Sigma<ref name=PDGSigma*/>
+| {{#invoke:particles|link|Sigma*0}}(1385)
+| {{#invoke:particles|link|Up quark|Down quark|Strange quark}}
+| {{val|1383.7|1.0}}
+| 1
+| {{nowrap|{{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>}}
+| 0
+| {{sort|-1|−1}}
+| 0
+| 0
+| {{sort|-23.7|{{val|1.83|0.25|e=-23}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Lambda0|+|Pion0|or|br|Sigma+|+|Pion-|or|br|Sigma0|+|Pion0}}
+|- style="height:40px"
+|align="left"| Sigma<ref name=PDGSigma*/>
+| {{#invoke:particles|link|Sigma*-}}(1385)
+| {{#invoke:particles|link|Down quark|Down quark|Strange quark}}
+| {{val|1387.2|0.5}}
+| 1
+| {{nowrap|{{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>}}
+| {{sort|-1|−1}}
+| {{sort|-1|−1}}
+| 0
+| 0
+| {{sort|-23.8|{{val|1.671|0.089|e=-23}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Lambda0|+|Pion-|or|br|Sigma0|+|Pion-|or|br|Sigma-|+|Pion0}}
+|- style="height:40px"
+|align="left"| charmed Sigma<ref name=PDGCharmedSigma*>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-sigmac-2520.pdf Particle listings – {{#invoke:particles|nolink|Charmed Sigma}}(2520)]</ref>
+| {{#invoke:particles|link|Charmed sigma*++}}(2520)
+| {{#invoke:particles|link|Up quark|Up quark|Charm quark}}
+| {{val|2517.9|0.6}}
+| 1
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|2|+2}}
+| 0
+| {{sort|1|+1}}
+| 0
+| {{sort|-23.5|{{val|4.42|0.44|e=-23}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Charmed Lambda+|+|Pion+}}
+|- style="height:40px"
+|align="left"| charmed Sigma<ref name=PDGCharmedSigma*/>
+| {{#invoke:particles|link|Charmed sigma*+}}(2520)
+| {{#invoke:particles|link|Up quark|Down quark|Charm quark}}
+| {{val|2517.5|2.3}}
+| 1
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|1|+1}}
+| 0
+| {{sort|1|+1}}
+| 0
+| {{sort|-23.5|>{{val|3.87|e=-23}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Charmed Lambda+|+|Pion0}}
+|- style="height:40px"
+|align="left"| charmed Sigma<ref name=PDGCharmedSigma*/>
+| {{#invoke:particles|link|Charmed sigma*0}}(2520)
+| {{#invoke:particles|link|Down quark|Down quark|Charm quark}}
+| {{val|2518.8|0.6}}
+| 1
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| 0
+| 0
+| {{sort|1|+1}}
+| 0
+| {{sort|-23.4|{{val|4.54|0.47|e=-23}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Charmed Lambda+|+|Pion-}}
+|- style="height:40px"
+|align="left"| bottom Sigma<ref name=BottomSigma*>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-sigmab-star.pdf Particle listings – {{#invoke:particles|nolink|Bottom Sigma*}}]</ref>
+| {{#invoke:particles|link|Bottom Sigma*+}}
+| {{#invoke:particles|link|Up quark|Up quark|Bottom quark}}
+| {{nowrap|{{val|5832.1|0.7}}&nbsp;{{su|a=r|w=f|p=+1.7|b=&minus;1.8}}}}
+| (1)
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|1|+1}}
+| 0
+| 0
+| {{sort|-1|−1}}
+| {{sort|-23.3|{{val|5.7|1.8|e=-23}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Bottom Lambda0|+|Pion+}}
+|- style="height:40px"
+|align="left"| bottom Sigma<sup>{{ref|Undiscovered2|[e]}}</sup>
+| {{#invoke:particles|link|Bottom Sigma*0}}
+| {{#invoke:particles|link|Up quark|Down quark|Bottom quark}}
+| Unknown
+| (1)
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| 0
+| 0
+| 0
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| bottom Sigma<ref name=BottomSigma*/>
+| {{#invoke:particles|link|Bottom Sigma*-}}
+| {{#invoke:particles|link|Down quark|Down quark|Bottom quark}}
+| {{nowrap|{{val|5835.1|0.6}}&nbsp;{{su|a=r|w=f|p=+1.7|b=&minus;1.8}}}}
+| (1)
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|-1|−1}}
+| 0
+| 0
+| {{sort|-1|−1}}
+| {{sort|-23.0|{{val|8.8|3.7|-3.6|e=-23}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Bottom Lambda0|+|Pion-}}
+|- style="height:40px"
+|align="left"| [[Xi baryon|Xi]]<ref name=PDGXi*>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-xi-1530.pdf Particle listings – {{#invoke:particles|nolink|Xi}}(1530)]</ref>
+| {{#invoke:particles|link|Xi*0}}(1530)
+| {{#invoke:particles|link|Up quark|Strange quark|Strange quark}}
+| {{val|1531.80|0.32}}
+| {{sort|0.5|{{sfrac|1|2}}}}
+| {{nowrap|{{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>}}
+| 0
+| {{sort|-2|−2}}
+| 0
+| 0
+| {{sort|-23.1|{{val|7.23|0.40|e=-23}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Xi0|+|Pion0|or|br|Xi-|+|Pion+}}
+|- style="height:40px"
+|align="left"| Xi<ref name=PDGXi*/>
+| {{#invoke:particles|link|Xi*-}}(1530)
+| {{#invoke:particles|link|Down quark|Strange quark|Strange quark}}
+| {{val|1535.0|0.6}}
+| {{sort|0.5|{{sfrac|1|2}}}}
+| {{nowrap|{{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>}}
+| {{sort|-1|−1}}
+| {{sort|-2|−2}}
+| 0
+| 0
+| {{sort|-23.2|{{val|6.6|+1.3|-1.1|e=-23}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Xi0|+|Pion-|or|br|Xi-|+|Pion0}}
+|- style="height:40px"
+|align="left"| charmed Xi<ref name=PDGCharmedXi*>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-xic-2645.pdf Particle listings – {{#invoke:particles|nolink|Charmed Xi}}(2645)]</ref>
+| {{#invoke:particles|link|Charmed Xi*+}}(2645)
+| {{#invoke:particles|link|Up quark|Strange quark|Charm quark}}
+| {{val|2645.9|+0.5|-0.6}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| {{sort|1|+1}}
+| 0
+| {{sort|-22.2|>{{val|2.1|e=-22}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Charmed Xi+|+|Pion0|seen}}
+|- style="height:40px"
+|align="left"| charmed Xi<ref name=PDGCharmedXi*/>
+| {{#invoke:particles|link|Charmed Xi*0}}(2645)
+| {{#invoke:particles|link|Down quark|Strange quark|Charm quark}}
+| {{val|2645.9|0.5}}
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| 0
+| {{sort|-1|−1}}
+| {{sort|1|+1}}
+| 0
+| {{sort|-22.3|>{{val|1.2|e=-22}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Charmed Xi+|+|Pion-|seen}}
+|- style="height:40px"
+|align="left"| double charmed Xi<sup>†</sup>
+| {{#invoke:particles|link|Double charmed Xi*++}}
+| {{#invoke:particles|link|Up quark|Charm quark|Charm quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|2|+2}}
+| 0
+| {{sort|2|+2}}
+| 0
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| double charmed Xi<sup>†</sup>
+| {{#invoke:particles|link|Double charmed Xi*+}}
+| {{#invoke:particles|link|Down quark|Charm quark|Charm quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|1|+1}}
+| 0
+| {{sort|2|+2}}
+| 0
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| bottom Xi<ref name=PDGBottomXi*0>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-xib-5945-zero.pdf Particle listings – {{#invoke:particles|nolink|Bottom Xi0}}(5945)]</ref>
+| {{#invoke:particles|link|Bottom Xi*0}}
+| {{#invoke:particles|link|Up quark|Strange quark|Bottom quark}}
+| {{val|5945.5|0.8}}±2.2
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| 0
+| {{sort|-1|−1}}
+| 0
+| {{sort|-1|−1}}
+| {{sort|-22.1|{{val|3.1|2.5|e=-22}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Bottom Xi-|+|Pion+|seen}}
+|- style="height:40px"
+|align="left"| bottom Xi<sup>{{ref|Undiscovered2|†}}</sup>
+| {{#invoke:particles|link|Bottom Xi*-}}
+| {{#invoke:particles|link|Down quark|Strange quark|Bottom quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|-1|−1}}
+| {{sort|-1|−1}}
+| 0
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| double bottom Xi<sup>†</sup>
+| {{#invoke:particles|link|Double Bottom Xi*0}}
+| {{#invoke:particles|link|Up quark|Bottom quark|Bottom quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| 0
+| 0
+| 0
+| {{sort|-2|−2}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| double bottom Xi<sup>†</sup>
+| {{#invoke:particles|link|Double Bottom Xi*-}}
+| {{#invoke:particles|link|Down quark|Bottom quark|Bottom quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|-1|−1}}
+| 0
+| 0
+| {{sort|-2|−2}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| charmed bottom Xi<sup>†</sup>
+| {{#invoke:particles|link|Charmed bottom Xi*+}}
+| {{#invoke:particles|link|Up quark|Charm quark|Bottom quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|1|+1}}
+| 0
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| charmed bottom Xi<sup>†</sup>
+| {{#invoke:particles|link|Charmed bottom Xi*0}}
+| {{#invoke:particles|link|Down quark|Charm quark|Bottom quark}}
+| Unknown
+| {{nowrap|({{sort|0.5|{{sfrac|1|2}}}})}}
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| 0
+| 0
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| [[Omega baryon|Omega]]<ref name=PDGOmega->J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2012/listings/rpp2012-list-omega-minus.pdf Particle listings – {{#invoke:particles|nolink|Omega-}}]</ref>
+| {{#invoke:particles|link|Omega-}}
+| {{#invoke:particles|link|Strange quark|Strange quark|Strange quark}}
+| {{val|1672.45|0.29}}
+| 0
+| {{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>
+| {{sort|-1|−1}}
+| {{sort|-3|−3}}
+| 0
+| 0
+| {{sort|-11.1|{{val|8.21|0.11|e=-11}}}}<sup>{{ref|Lifetime2|[h]}}</sup>
+| {{#invoke:particles|link|Lambda0|+|Kaon-|or|br|Xi0|+|Pion-|or|br|Xi-|+|Pion0}}
+|- style="height:40px"
+|align="left"| charmed Omega<ref name=PDGCharmedOmega*0>J. Beringer ''et al''. (2012): [http://pdg.lbl.gov/2013/listings/rpp2013-list-omegac-2770.pdf Particle listings – {{#invoke:particles|nolink|Charmed Omega0}}(2770)]</ref>
+| {{#invoke:particles|link|Charmed Omega*0}}(2770)
+| {{#invoke:particles|link|Strange quark|Strange quark|Charm quark}}
+| {{val|2765.9|2.0}}
+| 0
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| 0
+| {{sort|-2|−2}}
+| {{sort|1|+1}}
+| 0
+| Unknown
+| {{#invoke:particles|link|Charmed Omega0|+|Gamma}}
+|- style="height:40px"
+|align="left"| bottom Omega<sup>†</sup>
+| {{#invoke:particles|link|Bottom Omega*-}}
+| {{#invoke:particles|link|Strange quark|Strange quark|Bottom quark}}
+| Unknown
+| (0)
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|-1|−1}}>
+| {{sort|-2|−2}}
+| 0
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| double charmed Omega<sup>†</sup>
+| {{#invoke:particles|link|Double charmed Omega*+}}
+| {{#invoke:particles|link|Strange quark|Charm quark|Charm quark}}
+| Unknown
+| (0)
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| {{sort|2|+2}}
+| 0
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| charmed bottom Omega<sup>†</sup>
+| {{#invoke:particles|link|Charmed bottom omega*0}}
+| {{#invoke:particles|link|Strange quark|Charm quark|Bottom quark}}
+| Unknown
+| (0)
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| 0
+| {{sort|-1|−1}}
+| {{sort|1|+1}}
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| double bottom Omega<sup>†</sup>
+| {{#invoke:particles|link|Double Bottom Omega*-}}
+| {{#invoke:particles|link|Strange quark|Bottom quark|Bottom quark}}
+| Unknown
+| (0)
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|-1|−1}}
+| {{sort|-1|−1}}
+| 0
+| {{sort|-2|−2}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| triple charmed Omega<sup>†</sup>
+| {{#invoke:particles|link|Triple charmed Omega++}}
+| {{#invoke:particles|link|Charm quark|Charm quark|Charm quark}}
+| Unknown
+| (0)
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|2|+2}}
+| 0
+| {{sort|3|+3}}
+| 0
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| double charmed bottom Omega<sup>†</sup>
+| {{#invoke:particles|link|Double charmed bottom Omega*+}}
+| {{#invoke:particles|link|Charm quark|Charm quark|Bottom quark}}
+| Unknown
+| (0)
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|1|+1}}
+| 0
+| {{sort|2|+2}}
+| {{sort|-1|−1}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| charmed double bottom Omega<sup>†</sup>
+| {{#invoke:particles|link|Charmed double bottom Omega*0}}
+| {{#invoke:particles|link|Charm quark|Bottom quark|Bottom quark}}
+| Unknown
+| (0)
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| 0
+| 0
+| {{sort|1|+1}}
+| {{sort|-2|−2}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|align="left"| triple bottom Omega<sup>†</sup>
+| {{#invoke:particles|link|Triple Bottom Omega-}}
+| {{#invoke:particles|link|Bottom quark|Bottom quark|Bottom quark}}
+| Unknown
+| (0)
+| {{nowrap|({{sort|1.5|{{sfrac|3|2}}}}<sup>+</sup>)}}
+| {{sort|-1|−1}}
+| 0
+| 0
+| {{sort|-3|−3}}
+| Unknown
+| Unknown
+|- style="height:40px"
+|}
+<sup>†</sup>{{note|Undiscovered2}} Particle has not yet been observed.
+
+<sup>[h]</sup> {{note|Lifetime2}} PDG reports the [[resonance width]] (Γ). Here the conversion τ&nbsp;=&nbsp;{{frac|ħ|&Gamma;}} is given instead.
+
+=== Baryon resonance particles ===
+This table gives the name, quantum numbers (where known), and experimental status of baryons resonances confirmed by the [[Particle Data Group|PDG]].<ref>{{cite journal |title=Baryon Summary Table |author=C. Patrignani ''et al''. ([[Particle Data Group]]) |journal=Chin. Phys. C |volume=40 |page=100001 |year=2018 |url=http://pdg.lbl.gov/2018/tables/rpp2018-qtab-baryons.pdf |accessdate=27 September 2018}}</ref> Baryon [[Resonance (particle physics)|resonance]] particles are excited baryon states with short half lives and higher masses. Despite significant research, the fundamental degrees of freedom behind baryon excitation spectra are still poorly understood.<ref>{{cite journal|last1=Crede|first1=Volker|last2=Roberts|first2=Winston|title=Progress Toward Understanding Baryon Resonances|journal=Rep. Prog. Phys.|date=2013|volume=76|issue=7|doi=10.1088/0034-4885/76/7/076301|pmid=23787948|arxiv = 1302.7299 |bibcode = 2013RPPh...76g6301C|page=076301}}</ref> The spin-parity ''J''<sup>P</sup> (when known) is given with each particle. For the strongly decaying particles, the ''J''<sup>P</sup> values are considered to be part of the names, as is the mass for all resonances.
+{| class="wikitable"
+|+ Baryon resonance particles
+|-
+! colspan="3" | Nucleons
+! colspan="3" | Δ particles
+! colspan="3" | Λ particles
+! colspan="3" | Σ particles
+! colspan="3" | Ξ and Ω particles
+! colspan="3" | Charmed particles
+! colspan="3" | Bottom particles
+|-
+| p || {{frac|1|2}}<sup>+</sup> || **** || Δ(1232) || {{frac|3|2}}<sup>+</sup> || ****
+| Λ || {{frac|1|2}}<sup>+</sup> || **** || Σ<sup>+</sup> || {{frac|1|2}}<sup>+</sup> || ****
+| Ξ<sup>0</sup> || {{frac|1|2}}<sup>+</sup> || **** || {{Physics particle|Λ|TR=+|BR=c}} ||{{frac|1|2}}<sup>+</sup> || ****
+| {{Physics particle|Λ|TR=0|BR=b}} ||{{frac|1|2}}<sup>+</sup> || ***
+|-
+| n || {{frac|1|2}}<sup>+</sup> || **** || Δ(1600) || {{frac|3|2}}<sup>+</sup> || ****
+| Λ(1405) || {{frac|1|2}}<sup>−</sup> || **** || Σ<sup>0</sup> || {{frac|1|2}}<sup>+</sup> || ****
+| Ξ<sup>−</sup> || {{frac|1|2}}<sup>+</sup> || **** || Λ<sub>c</sub>(2595)<sup>+</sup>|| {{frac|1|2}}<sup>−</sup> || ***
+| Λ<sub>b</sub>(5912)<sup>0</sup> ||{{frac|1|2}}<sup>−</sup> || ***
+|-
+| N(1440) || {{frac|1|2}}<sup>+</sup> || **** || Δ(1620) || {{frac|1|2}}<sup>−</sup> || ****
+| Λ(1520) || {{frac|3|2}}<sup>−</sup> || **** || Σ<sup>−</sup> || {{frac|1|2}}<sup>+</sup> || ****
+| Ξ(1530) || {{frac|3|2}}<sup>+</sup> || **** || Λ<sub>c</sub>(2625)<sup>+</sup> || {{frac|3|2}}<sup>−</sup> || ***
+| Λ<sub>b</sub>(5920)<sup>0</sup> || {{frac|3|2}}<sup>−</sup> || ***
+|-
+| N(1520) || {{frac|3|2}}<sup>−</sup> || **** || Δ(1700) || {{frac|3|2}}<sup>−</sup> || ****
+| Λ(1600) || {{frac|1|2}}<sup>+</sup> || *** || Σ(1385) || {{frac|3|2}}<sup>+</sup> || ****
+| Ξ(1620) || || * || Λ<sub>c</sub>(2765)<sup>+</sup>|| || *
+| Σ<sub>b</sub> || {{frac|1|2}}<sup>+</sup> || ***
+|-
+| N(1535) || {{frac|1|2}}<sup>−</sup> || **** || Δ(1750) || {{frac|1|2}}<sup>+</sup> || *
+| Λ(1670) || {{frac|1|2}}<sup>−</sup> || **** || Σ(1480) || || *
+| Ξ(1690) || || *** || Λ<sub>c</sub>(2880)<sup>+</sup>|| {{frac|5|2}}<sup>+</sup> || ***
+| {{Physics particle|Σ|TR=*|BR=b}} || {{frac|3|2}}<sup>+</sup> || ***
+|-
+| N(1650) || {{frac|1|2}}<sup>−</sup> || **** || Δ(1900) || {{frac|1|2}}<sup>−</sup> || ***
+| Λ(1690) || {{frac|3|2}}<sup>−</sup> || **** || Σ(1560) || || **
+| Ξ(1820) || {{frac|3|2}}<sup>−</sup> || *** || Λ<sub>c</sub>(2940)<sup>+</sup>|| {{frac|3|2}}<sup>−</sup> || *** 
+| {{Physics particle|Ξ|TR=0|BR=b}}, {{Physics particle|Ξ|TR=−|BR=b}} || {{frac|1|2}}<sup>+</sup> || ***
+|-
+| N(1675) || {{frac|5|2}}<sup>−</sup> || **** || Δ(1905) || {{frac|5|2}}<sup>+</sup> || ****
+| Λ(1710) ||  {{frac|1|2}}<sup>+</sup> || * || Σ(1580) || {{frac|3|2}}<sup>−</sup> || *
+| Ξ(1950) || || *** || || ||
+| Ξ'<sub>b</sub>(5935)<sup>−</sup> || {{frac|1|2}}<sup>+</sup> || ***
+|-
+| N(1680) || {{frac|5|2}}<sup>+</sup> || **** || Δ(1910) || {{frac|1|2}}<sup>+</sup> || ****
+| Λ(1800) || {{frac|1|2}}<sup>−</sup> || ***  || Σ(1620) || {{frac|1|2}}<sup>−</sup> || *
+| Ξ(2030) ||≥&nbsp;{{sfrac|5|2}}? || *** || Σ<sub>c</sub>(2455) || {{frac|1|2}}<sup>+</sup> || ****
+| Ξ<sub>b</sub>(5945)<sup>0</sup> || {{frac|3|2}}<sup>+</sup> || ***
+|-
+| N(1700) || {{frac|3|2}}<sup>−</sup> || *** || Δ(1920) || {{frac|3|2}}<sup>+</sup> || ***
+| Λ(1810) || {{frac|1|2}}<sup>+</sup> || *** || Σ(1660) || {{frac|1|2}}<sup>+</sup> || ***
+| Ξ(2120) || || * || Σ<sub>c</sub>(2520) || {{frac|3|2}}<sup>+</sup> || ***
+| Ξ<sub>b</sub>(5955)<sup>−</sup> || {{frac|3|2}}<sup>+</sup> || ***
+|-
+| N(1710) || {{frac|1|2}}<sup>+</sup> || **** || Δ(1930) || {{frac|5|2}}<sup>−</sup> || ***
+| Λ(1820) || {{frac|5|2}}<sup>+</sup> || **** || Σ(1670) || {{frac|3|2}}<sup>−</sup> || ****
+| Ξ(2250) || || ** || Σ<sub>c</sub>(2800) || || ***
+| {{Physics particle|Ω|TR=−|BR=b}} || {{frac|1|2}}<sup>+</sup> || ***
+|-
+| N(1720) || {{frac|3|2}}<sup>+</sup> || **** || Δ(1940) || {{frac|3|2}}<sup>−</sup> || **
+| Λ(1830) || {{frac|5|2}}<sup>−</sup> || **** || Σ(1690) || || **
+| Ξ(2370) || || ** || || ||
+| P<sub>c</sub>(4380)<sup>+</sup> || || *
+|-
+| N(1860) || {{frac|5|2}}<sup>+</sup> || ** || Δ(1950) || {{frac|7|2}}<sup>+</sup> || ****
+| Λ(1890) || {{frac|3|2}}<sup>+</sup> || **** || Σ(1730) || {{frac|3|2}}<sup>+</sup> || * 
+| Ξ(2500) || || * || {{Physics particle|Ξ|TR=+|BR=c}}|| {{frac|1|2}}<sup>+</sup> || ***
+| P<sub>c</sub>(4450)<sup>+</sup> || || *
+|-
+| N(1875) || {{frac|3|2}}<sup>−</sup> || *** || Δ(2000) || {{frac|5|2}}<sup>+</sup> || **
+| Λ(2000) || || * || Σ(1750) || {{frac|1|2}}<sup>−</sup> || ***
+| || || || {{Physics particle|Ξ|TR=0|BR=c}} || {{frac|1|2}}<sup>+</sup> || ***
+|colspan=3 rowspan=38|
+|-
+| N(1880) || {{frac|1|2}}<sup>+</sup> || *** || Δ(2150) || {{frac|1|2}}<sup>−</sup> || *
+| Λ(2020) || {{frac|7|2}}<sup>+</sup> || * || Σ(1770) || {{frac|1|2}}<sup>+</sup> || *
+| Ω<sup>−</sup> || {{frac|3|2}}<sup>+</sup> || **** || {{Physics particle|Ξ&prime;|TR=+|BR=c}} || {{frac|1|2}}<sup>+</sup> ||***
+|-
+| N(1895) || {{frac|1|2}}<sup>−</sup> || **** || Δ(2200) || {{frac|7|2}}<sup>−</sup> || ***
+| Λ(2050) || {{frac|3|2}}<sup>−</sup> || * || Σ(1775) || {{frac|5|2}}<sup>−</sup> || ****
+| Ω(2250)<sup>−</sup> || || *** || {{Physics particle|Ξ&prime;|TR=0|BR=c}} || {{frac|1|2}}<sup>+</sup> || ***
+|-
+| N(1900) || {{frac|3|2}}<sup>+</sup> || **** || Δ(2300) || {{frac|9|2}}<sup>+</sup> || **
+| Λ(2100) || {{frac|7|2}}<sup>−</sup> || **** || Σ(1840) || {{frac|3|2}}<sup>+</sup> || *
+| Ω(2380)<sup>−</sup> || || ** || Ξ<sub>c</sub>(2645) || {{frac|3|2}}<sup>+</sup> || ***
+|-
+| N(1990) || {{frac|7|2}}<sup>+</sup> || ** || Δ(2350) || {{frac|5|2}}<sup>−</sup> || *
+| Λ(2110) || {{frac|5|2}}<sup>+</sup> || *** || Σ(1880) || {{frac|1|2}}<sup>+</sup> || **
+| Ω(2470)<sup>−</sup> || || ** || Ξ<sub>c</sub>(2790) || {{frac|1|2}}<sup>−</sup> || ***
+|-
+| N(2000) || {{frac|5|2}}<sup>+</sup> || ** || Δ(2390) || {{frac|7|2}}<sup>+</sup> || *
+| Λ(2325) || {{frac|3|2}}<sup>−</sup> || * || Σ(1900) || {{frac|1|2}}<sup>−</sup>  || * 
+|colspan=3 rowspan=27| || Ξ<sub>c</sub>(2815) || {{frac|3|2}}<sup>−</sup> || ***
+|-
+| N(2040) || {{frac|3|2}}<sup>+</sup> || * || Δ(2400) || {{frac|9|2}}<sup>−</sup> || **
+| Λ(2350) || {{frac|9|2}}<sup>+</sup> || *** || Σ(1915) || {{frac|5|2}}<sup>+</sup> || ****
+| Ξ<sub>c</sub>(2930) || || *
+|-
+| N(2060) || {{frac|5|2}}<sup>−</sup> || *** || Δ(2420) || {{frac|11|2}}<sup>+</sup> || ****
+| Λ(2585) || || ** || Σ(1940) || {{frac|3|2}}<sup>+</sup> || * 
+| Ξ<sub>c</sub>(2980) || || ***
+|-
+| N(2100) || {{frac|1|2}}<sup>+</sup> || *** || Δ(2750) || {{frac|13|2}}<sup>−</sup> || **
+|colspan=3 rowspan=24| || Σ(1940) || {{frac|3|2}}<sup>−</sup> || ***
+| Ξ<sub>c</sub>(3055) || || ***
+|-
+| N(2120) || {{frac|3|2}}<sup>−</sup> || *** || Δ(2950) || {{frac|15|2}}<sup>+</sup> || **
+| Σ(2000) || {{frac|1|2}}<sup>−</sup> || *
+| Ξ<sub>c</sub>(3080) || || ***
+|-
+| N(2190) || {{frac|7|2}}<sup>−</sup> || **** ||colspan=3 rowspan=22|
+| Σ(2030) || {{frac|7|2}}<sup>+</sup> || ****
+| Ξ<sub>c</sub>(3123) || || *
+|-
+| N(2220) || {{frac|9|2}}<sup>+</sup> || **** 
+| Σ(2070) || {{frac|5|2}}<sup>+</sup> || *
+| || ||
+|-
+| N(2250) || {{frac|9|2}}<sup>−</sup> || **** 
+| Σ(2080) || {{frac|3|2}}<sup>+</sup> || **
+| {{Physics particle|Ω|TR=0|BR=c}} ||{{frac|1|2}}<sup>+</sup> || ***
+|-
+| N(2300) || {{frac|1|2}}<sup>+</sup> || ** 
+| Σ(2100) || {{frac|7|2}}<sup>−</sup> || *
+| Ω<sub>c</sub>(2770)<sup>0</sup> ||{{frac|3|2}}<sup>+</sup> || ***
+|-
+| N(2570) || {{frac|5|2}}<sup>−</sup> || ** 
+| Σ(2250) || || ***
+| Ω<sub>c</sub>(3000)<sup>0</sup> || || ***
+|-
+| N(2600) || {{frac|11|2}}<sup>−</sup> || ***
+| Σ(2455) || || **
+| Ω<sub>c</sub>(3050)<sup>0</sup> || || ***
+|-
+| N(2700) || {{frac|13|2}}<sup>+</sup> || ** 
+| Σ(2620) || || **
+| Ω<sub>c</sub>(3065)<sup>0</sup> || || ***
+|-
+| colspan=3 rowspan=7| 
+| Σ(3000) || || *
+| Ω<sub>c</sub>(3090)<sup>0</sup> || || ***
+|-
+| colspan=3 rowspan=6| 
+| Ω<sub>c</sub>(3120)<sup>0</sup> || || ***
+|-
+| || || 
+|-
+| {{Physics particle|Ξ|TR=+|BR=cc}} || || *
+|-
+| {{Physics particle|Ξ|TR=++|BR=cc}} || || ***
+|}
+
+{|
+|-
+| **** || Existence is certain, and properties are at least fairly well explored.
+|-
+| *** || Existence ranges from fairly certain to certain, but further confirmation is desirable<br> and/or quantum numbers, branching fractions, etc. are not well determined.
+|-
+| ** || Evidence of existence is only fair.
+|-
+| * || Evidence of existence is poor.
+|}
+
+== See also ==
+{{Wikipedia books
+ |1=Hadronic Matter
+ |3=Particles of the Standard Model
+}}
+* [[Eightfold way (physics)]]
+* [[List of mesons]]
+* [[List of particles]]
+* [[Roper resonance]]
+* [[Timeline of particle discoveries]]
+{{Clear}}
+
+== References ==
+{{Reflist|30em}}
+
+=== Bibliography ===
+{{refbegin}}
+*{{cite journal
+ |author=R. Aaij ''et al''. ([[LHCb|LHCb collaboration]])
+ |year=2015
+ |title=Observation of J/ψp resonances consistent with pentaquark states in Λ{{su|p=0|b=b}}→J/ψK{{su|p=−}}p decays
+ |arxiv=1507.03414
+ |doi=10.1103/PhysRevLett.115.072001
+ |pmid=26317714
+ |volume=115 |issue=7
+ |pages=072001
+ |journal=[[Physical Review Letters]]
+ |bibcode=2015PhRvL.115g2001A
+}}
+*{{cite journal
+ |author=J. Beringer ''et al.'' ([[Particle Data Group]])
+ |year=2012
+ |title=Review of Particle Physics
+ |journal=[[Physical Review D]]
+ |volume=86 |issue=1 |pages=010001
+ |bibcode=2012PhRvD..86a0001B
+ |doi=10.1103/PhysRevD.86.010001
+ |doi-access=free
+}}
+*{{cite journal
+ |author=K. Nakamura ''et al''. ([[Particle Data Group]])
+ |year=2010
+ |title=Review of Particle Physics
+ |journal=[[Journal of Physics G]]
+ |volume=37 |issue=7A |pages=075021
+ |bibcode=2010JPhG...37g5021N
+ |doi=10.1088/0954-3899/37/7A/075021
+ |doi-access=free
+}}
+*{{cite journal
+ |author=C. Amsler ''et al''. ([[Particle Data Group]])
+ |year=2008
+ |title=Review of Particle Physics
+ |journal=[[Physics Letters B]]
+ |volume=667 |issue=1 |pages=1–1340
+ |bibcode=2008PhLB..667....1A
+ |doi=10.1016/j.physletb.2008.07.018
+|url=http://scipp.ucsc.edu/%7Ehaber/pubs/Review_of_Particle_Physics_2014.pdf
+ }}
+*{{cite web
+ |author=V.M. Abazov ''et al''. ([[DØ experiment|DØ Collaboration]])
+ |year=2008
+ |title=Observation of the doubly strange b baryon {{#invoke:particles|nolink|Bottom Omega-}}
+ |url=http://www-d0.fnal.gov/Run2Physics/WWW/results/final/B/B08G/B08G.pdf
+ |id=Fermilab-Pub-08/335-E
+}}
+*{{cite web
+ |author=K. Carter
+ |year=2006
+ |title=The rise and fall of the pentaquark
+ |url=http://www.symmetrymagazine.org/cms/?pid=1000377
+ |work=[[Symmetry Magazine]]
+ |publisher=[[Fermilab]]/[[SLAC]]
+ |accessdate=2008-05-27
+ |archive-url=https://web.archive.org/web/20070708143911/http://www.symmetrymagazine.org/cms/?pid=1000377
+ |archive-date=2007-07-08
+ |url-status=dead
+ }}
+*{{cite journal
+ |author=W.-M. Yao ''et al.'' ([[Particle Data Group]])
+ |year=2006
+ |title=Review of Particle Physics
+ |journal=[[Journal of Physics G]]
+ |volume=33 |issue=1
+ |pages=1–1232
+ |arxiv = astro-ph/0601168
+ |bibcode = 2006JPhG...33....1Y
+ |doi=10.1088/0954-3899/33/1/001
+ |doi-access=free
+}}
+*{{cite web
+ |author=H. Muir
+ |year=2003
+ |title=Pentaquark discovery confounds sceptics
+ |url=https://www.newscientist.com/article/dn3903
+ |work=[[New Scientist]]
+ |accessdate=2008-05-27
+}}
+*{{cite journal
+ |author1=J.G. Körner |author2=M. Krämer |author3=D. Pirjol  |name-list-style=amp |year=1994
+ |title=Heavy Baryons
+ |journal=[[Progress in Particle and Nuclear Physics]]
+ |volume=33 |pages=787–868
+ |doi=10.1016/0146-6410(94)90053-1
+ |arxiv=hep-ph/9406359
+|bibcode = 1994PrPNP..33..787K }}
+{{refend}}
+
+== Further reading ==
+{{refbegin}}
+*{{cite journal
+ |author1=H. Garcilazo |author2=J. Vijande |author3=A. Valcarce  |name-list-style=amp |year=2007
+ |title=Faddeev study of heavy-baryon spectroscopy
+ |journal=[[Journal of Physics G]]
+ |volume=34 |issue=5 |pages=961–976
+ |doi=10.1088/0954-3899/34/5/014
+|arxiv=hep-ph/0703257}}
+*{{cite web
+ |author=S. Robbins
+ |year=2006
+ |title=Physics Particle Overview – Baryons
+ |url=http://filer.case.edu/sjr16/advanced/extras_particlephys.html
+ |work=[[Journey Through the Galaxy]]
+ |accessdate=2008-04-20
+ |url-status=dead
+ |archiveurl=https://web.archive.org/web/20080228011850/http://filer.case.edu/sjr16/advanced/extras_particlephys.html
+ |archivedate=2008-02-28
+}}
+*{{cite journal
+ |author= D.M. Manley
+ |year=2005
+ |title=Status of baryon spectroscopy
+ |journal=[[Journal of Physics: Conference Series]]
+ |volume=5 |issue=1
+ |pages=230–237
+ |doi=10.1088/1742-6596/9/1/043
+|bibcode = 2005JPhCS...9..230M |doi-access=free
+ }}
+*{{cite book
+ |author=S.S.M. Wong
+ |year=1998
+ |title=Introductory Nuclear Physics
+ |edition=2nd
+ |publisher=[[John Wiley & Sons]]
+ |location=New York (NY)
+ |isbn=978-0-471-23973-4}}
+*{{cite book
+ |author=R. Shankar
+ |year=1994
+ |title=Principles of Quantum Mechanics
+ |edition=2nd
+ |publisher=[[Plenum Press]]
+ |location=New York (NY)
+ |isbn=978-0-306-44790-7
+}}
+*{{cite journal
+ |author=E. Wigner
+ |year=1937
+ |title=On the Consequences of the Symmetry of the Nuclear Hamiltonian on the Spectroscopy of Nuclei
+ |journal=[[Physical Review]]
+ |volume=51 |issue=2 |pages=106–119
+ |doi=10.1103/PhysRev.51.106
+|bibcode = 1937PhRv...51..106W }}
+*{{cite journal
+ |author=M. Gell-Mann
+ |year=1964
+ |title=A Schematic of Baryons and Mesons
+ |journal=[[Physics Letters]]
+ |volume=8 |issue=3 |pages=214–215
+ |doi=10.1016/S0031-9163(64)92001-3
+|bibcode = 1964PhL.....8..214G }}
+*{{cite journal
+ |author=W. Heisenberg
+ |year=1932
+ |title=Über den Bau der Atomkerne I
+ |journal=[[Zeitschrift für Physik]]
+ |volume=77 |issue=1–2
+ |pages=1–11
+ |doi=10.1007/BF01342433
+|bibcode = 1932ZPhy...77....1H |language=de}}
+*{{cite journal
+ |author=W. Heisenberg
+ |year=1932
+ |title=Über den Bau der Atomkerne II
+ |journal=[[Zeitschrift für Physik]]
+ |volume=78 |pages=156–164
+ |doi=10.1007/BF01337585|bibcode = 1932ZPhy...78..156H
+ |issue=3–4 |language=de}}
+*{{cite journal
+ |author=W. Heisenberg
+ |year=1932
+ |title=Über den Bau der Atomkerne III
+ |journal=[[Zeitschrift für Physik]]
+ |volume=80 |pages=587–596
+ |doi=10.1007/BF01335696|bibcode = 1933ZPhy...80..587H
+ |issue=9–10 |language=de}}
+{{refend}}
+
+== External links ==
+* Particle Data Group – [https://pdg.lbl.gov/index.html The Review of Particle Physics (2018)]
+* Georgia State University – [https://web.archive.org/web/20181121154316/http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html HyperPhysics]
+* [http://www.thingsmadethinkable.com/item/baryons.php Baryons made thinkable], an interactive visualisation allowing physical properties to be compared
+
+{{particles}}
+{{featured list}}
+
+{{DEFAULTSORT:List Of Baryons}}
+[[Category:Baryons|*]]
+[[Category:Physics-related lists|Baryons]]
+
+[[fr:Baryon#Liste]]
+[[it:Lista dei barioni]]

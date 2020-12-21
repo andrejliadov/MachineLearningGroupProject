@@ -1,0 +1,121 @@
+{{short description|System with an infinite-dimensional state-space}}
+{{refimprove|date=April 2007}}
+
+In [[control theory]], a '''distributed parameter system''' (as opposed to a [[linear lumped parameter|lumped parameter system]]) is a [[system]] whose [[state space (controls)|state space]] is infinite-[[dimension (vector space)|dimensional]]. Such systems are therefore also known as infinite-dimensional systems. Typical examples are systems described by [[partial differential equation]]s or by [[delay differential equation]]s.
+
+== Linear time-invariant distributed parameter systems ==
+
+=== Abstract evolution equations ===
+
+==== Discrete-time ====
+With ''U'', ''X'' and ''Y'' [[Hilbert space]]s and ''<math>A\,</math>''&nbsp;∈&nbsp;''L''(''X''), ''<math>B\,</math>''&nbsp;∈&nbsp;''L''(''U'',&nbsp;''X''), ''<math>C\,</math>''&nbsp;∈&nbsp;''L''(''X'',&nbsp;''Y'') and ''<math>D\,</math>''&nbsp;∈&nbsp;''L''(''U'',&nbsp;''Y'') the following [[difference equation]]s determine a discrete-time [[linear time-invariant system]]:
+:<math>x(k+1)=Ax(k)+Bu(k)\,</math>
+:<math>y(k)=Cx(k)+Du(k)\,</math>
+with ''<math>x\,</math>'' (the state) a sequence with values in ''X'', ''<math>u\,</math>'' (the input or control) a sequence with values in ''U'' and ''<math>y\,</math>'' (the output) a sequence with values in ''Y''.
+
+==== Continuous-time ====
+The continuous-time case is similar to the discrete-time case but now one considers differential equations instead of difference equations:
+:<math>\dot{x}(t)=Ax(t)+Bu(t)\, </math>,
+:<math>y(t)=Cx(t)+Du(t)\, </math>.
+An added complication now however is that to include interesting physical examples such as partial differential equations and delay differential equations into this abstract framework, one is forced to consider [[unbounded operator]]s. Usually ''A'' is assumed to generate a [[C0 semigroup|strongly continuous semigroup]] on the state space ''X''. Assuming ''B'', ''C'' and ''D'' to be bounded operators then already allows for the inclusion of many interesting physical examples,<ref>Curtain and Zwart</ref> but the inclusion of many other interesting physical examples forces unboundedness of ''B'' and ''C'' as well.
+
+=== Example: a partial differential equation ===
+The partial differential equation with <math>t>0</math> and <math>\xi\in[0,1]</math> given by
+:<math>\frac{\partial}{\partial t}w(t,\xi)=-\frac{\partial}{\partial\xi}w(t,\xi)+u(t),</math>
+:<math>w(0,\xi)=w_0(\xi),</math>
+:<math>w(t,0)=0,</math>
+:<math>y(t)=\int_0^1 w(t,\xi)\,d\xi,</math>
+fits into the abstract evolution equation framework described above as follows. The input space ''U'' and the output space ''Y'' are both chosen to be the set of complex numbers. The state space ''X'' is chosen to be  ''L''<sup>2</sup>(0,&nbsp;1). The operator ''A'' is defined as
+:<math>Ax=-x',~~~D(A)=\left\{x\in X: x\text{ absolutely continuous }, x'\in L^2(0,1)\text{ and }x(0)=0\right\}.</math>
+It can be shown<ref>Curtain and Zwart Example 2.2.4</ref> that ''A'' generates a strongly continuous [[semigroup]] on ''X''. The bounded operators ''B'', ''C'' and ''D'' are defined as
+:<math>Bu=u,~~~Cx=\int_0^1 x(\xi)\,d\xi,~~~D=0.</math>
+
+=== Example: a delay differential equation ===
+The delay differential equation
+:<math>\dot{w}(t)=w(t)+w(t-\tau)+u(t),</math>
+:<math>y(t)=w(t),</math>
+fits into the abstract evolution equation framework described above as follows. The input space ''U'' and the output space ''Y'' are both chosen to be the set of complex numbers. The state space ''X'' is chosen to be the product of the complex numbers with ''L''<sup>2</sup>(&minus;''τ'',&nbsp;0). The operator ''A'' is defined as
+:<math>A\begin{pmatrix}r\\f\end{pmatrix}=\begin{pmatrix}r+f(-\tau)\\f'\end{pmatrix},~~~D(A)=\left\{\begin{pmatrix}r\\f\end{pmatrix}\in X: f\text{ absolutely continuous }, f'\in L^2([-\tau,0])\text{ and }r=f(0)\right\}.</math>
+It can be shown<ref>Curtain and Zwart Theorem 2.4.6</ref> that ''A'' generates a strongly continuous semigroup on X. The bounded operators ''B'', ''C'' and ''D'' are defined as
+:<math>Bu=\begin{pmatrix}u\\0\end{pmatrix},~~~C\begin{pmatrix}r\\f\end{pmatrix}=r,~~~D=0.</math>
+
+=== Transfer functions ===
+As in the finite-dimensional case the [[State space (controls)#Transfer function|transfer function]] is defined through the [[Laplace transform]] (continuous-time) or [[Z-transform]] (discrete-time). Whereas in the finite-dimensional case the transfer function is a proper rational function, the infinite-dimensionality of the state space leads to irrational functions (which are however still [[Holomorphic function|holomorphic]]).
+
+==== Discrete-time ====
+In discrete-time the transfer function is given in terms of the state space parameters by <math>D+\sum_{k=0}^\infty CA^kBz^k</math> and it is holomorphic in a disc centered at the origin.<ref>This is the mathematical convention, engineers seem to prefer transfer functions to be holomorphic at infinity; this is achieved by replacing ''z'' by 1/''z''</ref> In case 1/''z'' belongs to the resolvent set of ''A'' (which is the case on a possibly smaller disc centered at the origin) the transfer function equals <math>D+Cz(I-zA)^{-1}B</math>. An interesting fact is that any function that is holomorphic in zero is the transfer function of some discrete-time system.
+
+==== Continuous-time ====
+If ''A'' generates a strongly continuous semigroup and ''B'', ''C'' and ''D'' are bounded operators, then<ref>Curtain and Zwart Lemma 4.3.6</ref> the transfer function is given in terms of the state space parameters by <math>D+C(sI-A)^{-1}B</math> for ''s'' with real part larger than the exponential growth bound of the semigroup generated by ''A''. In more general situations this formula as it stands may not even make sense, but an appropriate generalization of this formula still holds.<ref>Staffans Theorem 4.6.7</ref>
+To obtain an easy expression for the transfer function it is often better to take the Laplace transform in the given differential equation than to use the state space formulas as illustrated below on the examples given above.
+
+==== Transfer function for the partial differential equation example ====
+Setting the initial condition <math>w_0</math> equal to zero and denoting Laplace transforms with respect to ''t'' by capital letters we obtain from the partial differential equation given above
+:<math>sW(s,\xi)=-\frac{d}{d\xi}W(s,\xi)+U(s),</math>
+:<math>W(s,0)=0,</math>
+:<math>Y(s)=\int_0^1 W(s,\xi)\,d\xi.</math>
+This is an inhomogeneous linear differential equation with <math>\xi</math> as the variable, ''s'' as a parameter and initial condition zero. The solution is <math>W(s,\xi)=U(s)(1-e^{-s\xi})/s</math>. Substituting this in the equation for ''Y'' and integrating gives <math>Y(s)=U(s)(e^{-s}+s-1)/s^2</math> so that the transfer function is <math>(e^{-s}+s-1)/s^2</math>.
+
+==== Transfer function for the delay differential equation example ====
+Proceeding similarly as for the partial differential equation example, the transfer function for the delay equation example is<ref>Curtain and Zwart Example 4.3.13</ref> <math>1/(s-1-e^{-s})</math>.
+
+=== Controllability ===
+In the infinite-dimensional case there are several non-equivalent definitions of [[controllability]] which for the finite-dimensional case collapse to the one usual notion of controllability. The three most important controllability concepts are:
+*Exact controllability,
+*Approximate controllability,
+*Null controllability.
+
+==== Controllability in discrete-time ====
+An important role is played by the maps <math>\Phi_n</math> which map the set of all ''U'' valued sequences into X and are given by <math>\Phi_n u=\sum_{k=0}^n A^kBu_k</math>. The interpretation is that <math>\Phi_nu</math> is the state that is reached by applying the input sequence ''u'' when the initial condition is zero. The system is called 
+*exactly controllable in time ''n'' if the range of <math>\Phi_n</math> equals ''X'',
+*approximately controllable in time ''n'' if the range of <math>\Phi_n</math> is dense in ''X'',
+*null controllable in time ''n'' if the range of <math>\Phi_n</math> includes the range of ''A<sup>n</sup>''.
+
+==== Controllability in continuous-time ====
+In controllability of continuous-time systems the map <math>\Phi_t</math> given by <math>\int_0^t {\rm e}^{As}Bu(s)\,ds</math> plays the role that <math>\Phi_n</math> plays in discrete-time. However, the space of control functions on which this operator acts now influences the definition. The usual choice is ''L''<sup>2</sup>(0,&nbsp;∞;''U''), the space of (equivalence classes of) ''U''-valued square integrable functions on the interval (0,&nbsp;∞), but other choices such as ''L''<sup>1</sup>(0,&nbsp;∞;''U'') are possible. The different controllability notions can be defined once the domain of <math>\Phi_t</math> is chosen. The system is called<ref>Tucsnak Definition 11.1.1</ref>
+*exactly controllable in time ''t'' if the range of <math>\Phi_t</math> equals ''X'',
+*approximately controllable in time ''t'' if the range of <math>\Phi_t</math> is dense in ''X'',
+*null controllable in time ''t'' if the range of <math>\Phi_t</math> includes the range of <math>{\rm e}^{At}</math>.
+
+=== Observability ===
+As in the finite-dimensional case, [[observability]] is the dual notion of controllability. In the infinite-dimensional case there are several different notions of observability which in the finite-dimensional case coincide. The three most important ones are:
+*Exact observability (also known as continuous observability),
+*Approximate observability,
+*Final state observability.
+
+==== Observability in discrete-time ====
+An important role is played by the maps <math>\Psi_n</math> which map ''X'' into the space of all ''Y'' valued sequences and are given by <math>(\Psi_nx)_k=CA^kx</math> if ''k''&nbsp;≤&nbsp;''n'' and zero if ''k''&nbsp;>&nbsp;''n''. The interpretation is that <math>\Psi_nx</math> is the truncated output with initial condition ''x'' and control zero. The system is called
+*exactly observable in time ''n'' if there exists a ''k''<sub>''n''</sub>&nbsp;>&nbsp;0 such that <math>\|\Psi_nx\|\geq k_n\|x\|</math> for all ''x''&nbsp;∈&nbsp;''X'',
+*approximately observable in time ''n'' if <math>\Psi_n</math> is [[injective]],
+*final state observable in time ''n'' if there exists a ''k''<sub>''n''</sub>&nbsp;>&nbsp;0 such that <math>\|\Psi_nx\|\geq k_n\|A^nx\|</math> for all ''x''&nbsp;∈&nbsp;''X''.
+
+==== Observability in continuous-time ====
+In observability of continuous-time systems the map <math>\Psi_t</math> given by <math>(\Psi_t)(s)=C{\rm e}^{As}x</math> for ''s&isin;[0,t]'' and zero for ''s>t'' plays the role that <math>\Psi_n</math> plays in discrete-time. However, the space of functions to which this operator maps now influences the definition. The usual choice is ''L''<sup>2</sup>(0,&nbsp;∞,&nbsp;''Y''), the space of (equivalence classes of) ''Y''-valued square integrable functions on the interval ''(0,∞)'', but other choices such as ''L''<sup>1</sup>(0,&nbsp;∞,&nbsp;''Y'') are possible. The different observability notions can be defined once the co-domain of <math>\Psi_t</math> is chosen. The system is called<ref>Tucsnak Definition 6.1.1</ref>
+*exactly observable in time ''t'' if there exists a ''k''<sub>''t''</sub>&nbsp;>&nbsp;0 such that <math>\|\Psi_tx\|\geq k_t\|x\|</math> for all ''x''&nbsp;∈&nbsp;''X'',
+*approximately observable in time ''t'' if <math>\Psi_t</math> is [[injective]],
+*final state observable in time ''t'' if there exists a ''k''<sub>''t''</sub>&nbsp;>&nbsp;0 such that <math>\|\Psi_tx\|\geq k_t\|{\rm e}^{At}x\|</math> for all ''x''&nbsp;∈&nbsp;''X''.
+
+=== Duality between controllability and observability ===
+As in the finite-dimensional case, controllability and observability are dual concepts (at least when for the domain of <math>\Phi</math> and the co-domain of <math>\Psi</math> the usual ''L''<sup>2</sup> choice is made). The correspondence under duality of the different concepts is:<ref>Tucsnak Theorem 11.2.1</ref>
+*Exact controllability ↔ Exact observability,
+*Approximate controllability ↔ Approximate observability,
+*Null controllability ↔ Final state observability.
+
+== See also ==
+* [[Control theory]]
+* [[State space (controls)]]
+
+==Notes==
+
+{{reflist|2}}
+
+==References==
+*{{ citation | last1=Curtain| first1=Ruth|author1-link=Ruth F. Curtain| last2=Zwart| first2=Hans | title=An Introduction to Infinite-Dimensional Linear Systems theory | year=1995| publisher=Springer}}
+*{{ citation | last1=Tucsnak| first1=Marius| last2=Weiss| first2=George | title=Observation and Control for Operator Semigroups | year=2009| publisher=Birkhauser}}
+*{{ citation | last1=Staffans| first1=Olof| title=Well-posed linear systems | year=2005| publisher=Cambridge University Press}}
+*{{ citation | last1=Luo| first1=Zheng-Hua| last2=Guo| first2=Bao-Zhu | last3=Morgul| first3=Omer |title=Stability and Stabilization of Infinite Dimensional Systems with Applications | year=1999| publisher=Springer}}
+*{{ citation | last1=Lasiecka| first1=Irena|author1-link= Irena Lasiecka | last2=Triggiani| first2=Roberto| title=Control Theory for Partial Differential Equations | year=2000| publisher=Cambridge University Press}}
+*{{ citation | last1=Bensoussan| first1=Alain| last2=Da Prato| first2=Giuseppe | last3=Delfour| first3=Michel| last4=Mitter| first4=Sanjoy |title=Representation and Control of Infinite Dimensional Systems | year=2007| publisher=Birkhauser| edition=second}}
+
+{{DEFAULTSORT:Distributed Parameter System}}
+[[Category:Control theory|*]]

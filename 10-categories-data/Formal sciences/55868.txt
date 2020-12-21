@@ -1,0 +1,51 @@
+'''Classical logic''' (or '''standard logic'''<ref name="BunninYu2004">{{cite book|author1=Nicholas Bunnin|author2=Jiyuan Yu|title=The Blackwell dictionary of Western philosophy|url=https://books.google.com/books?id=OskKWI1YA7AC&pg=PA266|year=2004|publisher=Wiley-Blackwell|isbn=978-1-4051-0679-5|page=266}}</ref><ref name="Gamut1991">{{cite book|author=L. T. F. Gamut|author-link=L. T. F. Gamut|title=Logic, language, and meaning, Volume 1: Introduction to Logic|url=https://books.google.com/books?id=Z0KhywkpolMC&pg=PA156|year=1991|publisher=University of Chicago Press|isbn=978-0-226-28085-1|pages=156–157}}</ref>) is the intensively studied and most widely used class of [[logic]]s. Classical logic has had much influence on [[analytic philosophy]], the type of philosophy most often found in the English-speaking world.
+
+==Characteristics==
+
+Each logical system in this class shares characteristic properties:<ref>[[Dov Gabbay|Gabbay, Dov]], (1994). 'Classical vs non-classical logic'. In D.M. Gabbay, C.J. Hogger, and J.A. Robinson, (Eds), ''Handbook of Logic in Artificial Intelligence and Logic Programming'', volume 2, chapter 2.6. Oxford University Press.</ref>
+# [[Law of excluded middle]] and [[double negation elimination]]
+# [[Law of noncontradiction]], and the [[principle of explosion]]
+# [[Monotonicity of entailment]] and [[idempotency of entailment]]
+# [[Commutativity of conjunction]]
+# [[De Morgan duality]]: every [[logical operator]] is dual to another
+
+While not entailed by the preceding conditions, contemporary discussions of classical logic normally only include [[propositional calculus|propositional]] and [[first-order logic|first-order]] logics.<ref>[[Stewart Shapiro|Shapiro, Stewart]] (2000). Classical Logic. In Stanford Encyclopedia of Philosophy [Web]. Stanford: The Metaphysics Research Lab. Retrieved October 28, 2006, from http://plato.stanford.edu/entries/logic-classical/</ref><ref name="haack">[[Susan Haack|Haack, Susan]], (1996). ''Deviant Logic, Fuzzy Logic: Beyond the Formalism''. Chicago: The University of Chicago Press.</ref> In other words, the overwhelming majority of time spent studying classical logic has been spent studying specifically propositional and first-order logic, as opposed to the other forms of classical logic.
+
+Most semantics of classical logic are [[Principle of bivalence|bivalent]], meaning all of the possible denotations of propositions can be categorised as either true or false.
+
+==History==
+
+{{main|History of logic}}
+
+Classical logic is a 19th and 20th century innovation. The name does not refer to [[classical antiquity]], which used the [[term logic]] of [[Aristotle]]. In fact, classical logic was the reconciliation of Aristotle's logic, which dominated most of the last 2000 years, with the propositional [[Stoic logic]]. The two were sometimes seen as irreconcilable.
+
+[[Leibniz]]'s [[calculus ratiocinator]] can be seen as foreshadowing classical logic. [[Bernard Bolzano]] has the understanding of [[existential import]] found in classical logic and not in Aristotle. Though he never questioned Aristotle, [[George Boole]]'s algebraic reformulation of logic, so called [[Boolean logic]], was a predecessor of modern [[mathematical logic]] and classical logic. [[William Stanley Jevons]] and [[John Venn]], who also had the modern understanding of existential import, expanded Boole's system.
+[[File:Begriffsschrift Titel.png|thumb|180px|Begriffsschrift title page]]
+The original [[first-order logic|first-order]], classical logic is found in [[Gottlob Frege]]'s ''[[Begriffsschrift]]''. It has a wider application than Aristotle's logic, and is capable of expressing Aristotle's logic as a special case. It explains the [[quantifier (logic)|quantifier]]s in terms of mathematical functions. It was also the first logic capable of dealing with the [[problem of multiple generality]], for which Aristotle's system was impotent. Frege, who is considered the founder of analytic philosophy, invented it so as to show all of mathematics was derivable from logic, and make [[arithmetic]] rigorous as [[David Hilbert]] had done for [[geometry]], the doctrine known as [[logicism]] in the [[foundations of mathematics]]. The notation Frege used never much caught on. [[Hugh MacColl]] published a variant of propositional logic two years prior.
+
+The writings of [[Augustus De Morgan]] and [[Charles Sanders Peirce]] also pioneered classical logic with the logic of relations. Peirce influenced [[Giuseppe Peano]] and [[Ernst Schröder]].
+
+Classical logic reached fruition in [[Bertrand Russell]] and [[A. N. Whitehead]]'s ''Principia Mathematica'', and [[Ludwig Wittgenstein]]'s ''[[Tractatus Logico Philosophicus]]''. Russell and Whitehead were influenced by Peano (it uses his notation) and Frege, and sought to show mathematics was derived from logic. Wittgenstein was influenced by Frege and Russell, and initially considered the ''Tractatus'' to have solved all problems of philosophy.
+
+[[Willard Van Orman Quine]] insisted on classical, first-order logic as the true logic, saying [[higher-order logic]] was "[[set theory]] in disguise".
+
+[[Jan Łukasiewicz]] pioneered [[non-classical logic]].
+
+==Generalized semantics==
+
+With the advent of [[algebraic logic]] it became apparent that classical [[propositional calculus]] admits other [[semantics]]. In [[Boolean-valued semantics]] (for classical [[propositional logic]]), the truth values are the elements of an arbitrary [[Boolean algebra (structure)|Boolean algebra]]; "true" corresponds to the maximal element of the algebra, and "false" corresponds to the minimal element. Intermediate elements of the algebra correspond to truth values other than "true" and "false".  The principle of bivalence holds only when the Boolean algebra is taken to be the [[two-element Boolean algebra|two-element algebra]], which has no intermediate elements.
+
+== References ==
+{{Reflist}}
+
+== Further reading ==
+{{Portal|Philosophy}}
+* Warren Goldfard, "Deductive Logic", 1st edition, 2003, {{ISBN|0-87220-660-2}}
+
+{{Commons category}}
+{{Classical logic}}
+{{Mathematical logic}}
+
+[[Category:Classical logic| ]]
+[[Category:History of logic]]
+[[Category:Logic]]

@@ -1,0 +1,29 @@
+In computer networking, if the network is [[Bisection|bisected]] into two partitions, the '''bisection bandwidth''' of a [[network topology]] is the bandwidth available between the two partitions.<ref>{{cite book|author = John L. Hennessy and David A. Patterson|title = Computer Architecture: A Quantitative Approach|edition = Third|publisher = Morgan Kaufmann Publishers, Inc|year = 2003|isbn = 978-1-55860-596-1|page = [https://archive.org/details/computerarchitec0003henn/page/789 789]|url = https://archive.org/details/computerarchitec0003henn/page/789}}</ref> Bisection should be done in such a way that the [[Bandwidth (computing)|bandwidth]] between two partitions is minimum.<ref name=":0">{{Cite book|title=Fundamentals of parallel multicore architecture|last=Solihin|first=Yan|publisher=CRC Press|year=2016|isbn=9781482211191|location=|pages=371–381|quote=|via=}}</ref> Bisection bandwidth gives the true bandwidth available in the entire system. Bisection bandwidth accounts for the bottleneck bandwidth of the entire network. Therefore bisection bandwidth represents bandwidth characteristics of the network better than any other metric.
+
+== Bisection bandwidth calculations<ref name=":0" /> ==
+For a [[Network topology|linear array]] with n nodes bisection bandwidth is one link bandwidth. For linear array only one link needs to be broken to bisect the network into two partitions. 
+[[File:Bisected linear array.jpg|none|thumb|173x173px|Bisection of linear array network]]
+
+For [[Ring network|ring]] topology with n nodes two links should be broken to bisect the network, so bisection bandwidth becomes bandwidth of two links. 
+[[File:Bisected ring.jpg|none|thumb|178x178px|Bisection of a ring network]]
+For [[Tree network|tree]] topology with n nodes can be bisected at the root by breaking one link, so bisection bandwidth is one link bandwidth.
+[[File:Bisected tree.jpg|none|thumb|170x170px|Bisection of a tree network]]
+
+For [[Mesh networking|Mesh]] topology with n nodes, <math>\sqrt{n}</math> links should be broken to bisect the network, so bisection bandwidth is bandwidth of  <math>\sqrt{n}</math> links.
+[[File:Bisected mesh.jpg|none|thumb|173x173px|Bisection of a 2d mesh network]]
+
+For [[Hypercube internetwork topology|Hyper-cube]] topology with n nodes, n/2 links should be broken to bisect the network, so bisection bandwidth is bandwidth of n/2 links.
+[[File:Bisected hypercube.jpg|none|thumb|Bisection of hyper-cube network]]
+
+== Significance of bisection bandwidth ==
+Theoretical support for the importance of this measure of network performance was developed in the PhD research of [http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/t/Thomborson:Clark_D=.html Clark Thomborson (formerly Clark Thompson)].<ref>{{cite thesis|url=https://www.cs.auckland.ac.nz/~cthombor/Pubs/cmu-cs-80-140/cmu-cs-80-140scans.pdf|author=C. D. Thompson|title=A complexity theory for VLSI |publisher=Carnegie-Mellon University|year=1980|number=Technical Report CMU-CS-80-140}}</ref>  Thomborson proved that important algorithms for sorting, [[Fast Fourier transform]]ation, and matrix-matrix multiplication become communication-limited—as opposed to CPU-limited or memory-limited—on computers with insufficient bisection width.  [[F. Thomson Leighton]]'s PhD research<ref>{{cite thesis|author=F. Thomson Leighton|author-link=F. Thomson Leighton|title=Complexity Issues in VLSI: Optimal layouts for the shuffle-exchange graph and other networks|publisher=MIT Press|year=1983|ISBN=0-262-12104-2|url=http://mitpress.mit.edu/books/complexity-issues-vlsi}}</ref> tightened Thomborson's loose bound <ref>{{cite conference|author=Clark Thompson|url=http://resolver.caltech.edu/CaltechCONF:20120504-143038397|title=Area-time complexity for VLSI|conference=Proc. Caltech Conf. on VLSI Systems and Computations|pages=81–88|year=1979}}</ref> on the bisection width of a computationally-important variant of the [[De Bruijn graph]] known as the [[shuffle-exchange network]]. Based on [[Bill Dally|Bill Dally's]] analysis of latency, average case throughput, and hot-spot throughput of m-ary n-cube networks<ref name=":0" /> for various m, It can be observed that low-dimensional networks, in comparison to high-dimensional networks (e.g., binary n-cubes) with the same bisection width (e.g., [[Torus interconnect|tori]]), have reduced latency and higher hot-spot throughput.<ref>{{cite journal|author=Bill Dally|author-link=Bill Dally|title=Performance analysis of k-ary n-cube interconnection networks|journal=IEEE Transactions on Computers|volume=39|pages=775–785|number=6|year=1990|doi=10.1109/12.53599|citeseerx=10.1.1.473.5096}}</ref>
+
+==References==
+{{Reflist}}
+
+{{DEFAULTSORT:Bisection Bandwidth}}
+[[Category:Information theory]]
+[[Category:Network management]]
+
+
+{{Compu-network-stub}}

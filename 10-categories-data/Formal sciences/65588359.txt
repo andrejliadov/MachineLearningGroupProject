@@ -1,0 +1,38 @@
+In the mathematical field of [[mathematical analysis|analysis]], the '''Brezis–Lieb lemma''' is a basic result in [[measure theory]]. It is named for [[Haïm Brézis]] and [[Elliott Lieb]], who discovered it in 1983. The lemma can be viewed as an improvement, in certain settings, of [[Fatou's lemma]] to an equality. As such, it has been useful for the study of many [[variational problem]]s.{{sfnm|1a1=Lions|1y=1985}}
+
+==The lemma and its proof==
+===Statement of the lemma===
+Let {{math|(''X'', μ)}} be a [[measure space]] and let {{math|''f''<sub>''n''</sub>}} be a sequence of measurable complex-valued functions on {{mvar|X}} which converge almost everywhere to a function {{mvar|f}}. The limiting function {{mvar|f}} is automatically measurable. The Brezis–Lieb lemma asserts that if {{mvar|p}} is a positive number, then
+:<math>\lim_{n\to\infty}\int_X\Big||f|^p-|f_n|^p+|f-f_n|^p\Big|\,d\mu=0,</math>
+provided that the sequence {{math|''f''<sub>''n''</sub>}} is uniformly bounded in {{math|''L''<sup>''p''</sup>(''X'', μ)}}.{{sfnm|1a1=Brézis|1a2=Lieb|1y=1983|1loc=Theorem 2|2a1=Bogachev|2y=2007|2loc=Proposition 4.7.30|3a1=Lieb|3a2=Loss|3y=2001|3loc=Theorem 1.9}} A significant consequence, which sharpens [[Fatou's lemma]] as applied to the sequence {{math|{{!}}''f''<sub>''n''</sub>{{!}}<sup>''p''</sup>}}, is that
+:<math>\int_X|f|^p\,d\mu=\lim_{n\to\infty}\left(\int_X|f_n|^p\,d\mu-\int_X|f-f_n|^p\,d\mu\right),</math>
+which follows by the triangle inequality. This consequence is often taken as the statement of the lemma, although it does not have a more direct proof.{{sfnm|1a1=Brézis|1a2=Lieb|1y=1983|1loc=Theorem 1|2a1=Evans|2y=1990|2loc=Theorem 1.8|3a1=Willem|3y=1996|3loc=Lemma 1.32}}
+===Proof===
+The essence of the proof is in the inequalities
+:<math>\begin{align}
+W_n\equiv \Big||f_n|^p-|f|^p-|f-f_n|^p\Big|&\leq\Big||f_n|^p-|f-f_n|^p\Big|+|f|^p\\
+&\leq\varepsilon|f-f_n|^p+C_\varepsilon|f|^p.
+\end{align}</math>
+The consequence is that {{math|''W''<sub>''n''</sub> − ε{{!}}''f'' − ''f''<sub>''n''</sub>{{!}}<sup>''p''</sup>}}, which converges almost everywhere to zero, is bounded above by an integrable function, independently of {{mvar|n}}. The observation that
+:<math>W_n\leq\max\Big(0,W_n-\varepsilon|f-f_n|^p\Big)+\varepsilon|f-f_n|^p,</math>
+and the application of the [[dominated convergence theorem]] to the first term on the right-hand side shows that
+:<math>\limsup_{n\to\infty}\int_XW_n\,d\mu\leq\varepsilon\sup_n\int_X |f-f_n|^p\,d\mu.</math>
+The finiteness of the supremum on the right-hand side, with the arbitrariness of {{math|ε}}, shows that the left-hand side must be zero.
+
+== References ==
+{{refbegin}}
+'''Footnotes'''
+{{reflist}}
+'''Sources'''
+*{{wikicite|ref={{sfnRef|Bogachev|2007}}|reference=V.I. Bogachev. ''Measure theory. Vol. I.'' Springer-Verlag, Berlin, 2007. xviii+500 pp. {{ISBN|978-3-540-34513-8}}}}
+*{{wikicite|ref={{sfnRef|Brézis|Lieb|1983}}|reference=Haïm Brézis and Elliott Lieb. ''A relation between pointwise convergence of functions and convergence of functionals.'' Proc. Amer. Math. Soc. 88 (1983), no. 3, 486–490. {{doi|10.1090/S0002-9939-1983-0699419-3}} {{free access}}}}
+*{{wikicite|ref={{sfnRef|Evans|1990}}|reference=Lawrence C. Evans. ''Weak convergence methods for nonlinear partial differential equations.'' CBMS Regional Conference Series in Mathematics, 74. Published for the Conference Board of the Mathematical Sciences, Washington, DC; by the American Mathematical Society, Providence, RI, 1990. viii+80 pp. {{ISBN|0-8218-0724-2}}}}
+*{{wikicite|ref={{sfnRef|Lions|1985}}|reference=P.L. Lions. ''The concentration-compactness principle in the calculus of variations. The limit case. I.'' Rev. Mat. Iberoamericana 1 (1985), no. 1, 145–201.}}
+*{{wikicite|ref={{sfnRef|Lieb|Loss|2001}}|reference=Elliott H. Lieb and Michael Loss. ''Analysis.'' Second edition. Graduate Studies in Mathematics, 14. American Mathematical Society, Providence, RI, 2001. xxii+346 pp. {{ISBN|0-8218-2783-9}}}}
+*{{wikicite|ref={{sfnRef|Willem|1996}}|reference=Michel Willem. ''Minimax theorems.'' Progress in Nonlinear Differential Equations and their Applications, 24. Birkhäuser Boston, Inc., Boston, MA, 1996. x+162 pp. {{ISBN|0-8176-3913-6}}}}
+{{refend}}
+
+
+
+[[Category:Mathematics]]
+[[Category:Measure theory]]

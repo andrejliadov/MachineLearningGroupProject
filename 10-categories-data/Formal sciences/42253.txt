@@ -1,0 +1,288 @@
+{{short description|Finding patterns in large data sets using complex computational methods}}
+{{Machine learning bar}}
+
+'''Data mining''' is a process of discovering patterns in large [[data set]]s involving methods at the intersection of [[machine learning]], [[statistics]], and [[database system]]s.<ref name="acm" /> Data mining is an [[interdisciplinary]] subfield of [[computer science]] and [[statistics]] with an overall goal to extract information (with intelligent methods) from a data set and transform the information into a comprehensible structure for further use.<ref name="acm">{{cite web |url=http://www.kdd.org/curriculum/index.html |title=Data Mining Curriculum |publisher=[[Association for Computing Machinery|ACM]] [[SIGKDD]] |date=2006-04-30 |access-date=2014-01-27 }}</ref><ref name="brittanica">{{cite web |last=Clifton |first=Christopher |title=Encyclopædia Britannica: Definition of Data Mining |year=2010 |url=http://www.britannica.com/EBchecked/topic/1056150/data-mining |access-date=2010-12-09 }}</ref><ref name="elements">{{cite web|last1=Hastie|first1=Trevor|author-link1=Trevor Hastie|last2=Tibshirani|first2=Robert|author-link2=Robert Tibshirani|last3=Friedman|first3=Jerome|author-link3=Jerome H. Friedman|title=The Elements of Statistical Learning: Data Mining, Inference, and Prediction|year=2009|url=http://www-stat.stanford.edu/~tibs/ElemStatLearn/|access-date=2012-08-07|archive-url=https://web.archive.org/web/20091110212529/http://www-stat.stanford.edu/~tibs/ElemStatLearn/|archive-date=2009-11-10|url-status=dead}}</ref><ref>{{cite book|last1=Han, Kamber, Pei|first1=Jaiwei, Micheline, Jian|title=Data Mining: Concepts and Techniques|date=2011|publisher=Morgan Kaufmann|isbn=978-0-12-381479-1|edition=3rd}}</ref> Data mining is the analysis step of the "knowledge discovery in databases" process, or KDD.<ref name="Fayyad" /> Aside from the raw analysis step, it also involves database and [[data management]] aspects, [[data pre-processing]], [[statistical model|model]] and [[Statistical inference|inference]] considerations, interestingness metrics, [[Computational complexity theory|complexity]] considerations, post-processing of discovered structures, [[Data visualization|visualization]], and [[Online algorithm|online updating]].<ref name="acm" /> 
+
+The term "data mining" is a [[misnomer]], because the goal is the extraction of patterns and knowledge from large amounts of data, not the extraction (''mining'') of data itself.<ref name="han-kamber">{{cite book|title=Data mining: concepts and techniques|last1=Han|first1=Jiawei|last2=Kamber|first2=Micheline|date=2001|publisher=[[Morgan Kaufmann]]|isbn=978-1-55860-489-6|page=5|quote=Thus, data mining should have been more appropriately named "knowledge mining from data," which is unfortunately somewhat long|author-link1=Jiawei Han}}</ref> It also is a [[buzzword]]<ref>[http://www.okairp.org/documents/2005%20Fall/F05_ROMEDataQualityETC.pdf OKAIRP 2005 Fall Conference, Arizona State University] {{Webarchive|url=https://web.archive.org/web/20140201170452/http://www.okairp.org/documents/2005%20Fall/F05_ROMEDataQualityETC.pdf|date=2014-02-01}}</ref> and is frequently applied to any form of large-scale data or [[information processing]] ([[Data collection|collection]], [[information extraction|extraction]], [[Data warehouse|warehousing]], analysis, and statistics) as well as any application of [[Decision support system|computer decision support system]], including [[artificial intelligence]] (e.g., machine learning) and [[business intelligence]]. The book ''Data mining: Practical machine learning tools and techniques with Java''<ref name="witten">{{cite book|title=Data Mining: Practical Machine Learning Tools and Techniques|last1=Witten|first1=Ian H.|last2=Frank|first2=Eibe|last3=Hall|first3=Mark A.|date=2011|publisher=Elsevier|isbn=978-0-12-374856-0|edition=3|author-link1=Ian H. Witten}}</ref> (which covers mostly machine learning material) was originally to be named just ''Practical machine learning'', and the term ''data mining'' was only added for marketing reasons.<ref>{{Cite journal|author1=Bouckaert, Remco R.|author2=Frank, Eibe|author3=Hall, Mark A.|author4=Holmes, Geoffrey|author5=Pfahringer, Bernhard|author6=Reutemann, Peter|author7=Witten, Ian H.|author-link7=Ian H. Witten|year=2010|title=WEKA Experiences with a Java open-source project|journal=Journal of Machine Learning Research|volume=11|pages=2533–2541|quote=the original title, "Practical machine learning", was changed&nbsp;... The term "data mining" was [added] primarily for marketing reasons.}}</ref> Often the more general terms (''large scale'') ''[[data analysis]]'' and ''[[analytics]]''—or, when referring to actual methods, ''artificial intelligence'' and ''machine learning''—are more appropriate.
+
+The actual data mining task is the semi-automatic or automatic analysis of large quantities of data to extract previously unknown, interesting patterns such as groups of data records ([[cluster analysis]]), unusual records ([[anomaly detection]]), and dependencies ([[association rule mining]], [[sequential pattern mining]]). This usually involves using database techniques such as [[spatial index|spatial indices]]. These patterns can then be seen as a kind of summary of the input data, and may be used in further analysis or, for example, in machine learning and [[predictive analytics]]. For example, the data mining step might identify multiple groups in the data, which can then be used to obtain more accurate prediction results by a [[decision support system]]. Neither the data collection, data preparation, nor result interpretation and reporting is part of the data mining step, but do belong to the overall KDD process as additional steps.
+
+The difference between [[data analysis]] and data mining is that data analysis is used to test models and hypotheses on the dataset, e.g., analyzing the effectiveness of a marketing campaign, regardless of the amount of data; in contrast, data mining uses machine learning and statistical models to uncover clandestine or hidden patterns in a large volume of data.<ref>Olson, D. L. (2007). Data mining in business services. ''Service Business'', ''1''(3), 181–193. {{doi|10.1007/s11628-006-0014-7}}</ref>
+
+The related terms ''[[data dredging]]'', ''data fishing'', and ''data snooping'' refer to the use of data mining methods to sample parts of a larger population data set that are (or may be) too small for reliable statistical inferences to be made about the validity of any patterns discovered. These methods can, however, be used in creating new hypotheses to test against the larger data populations.
+
+==Etymology==
+In the 1960s, statisticians and economists used terms like ''data fishing'' or ''data dredging'' to refer to what they considered the bad practice of analyzing data without an a-priori hypothesis. The term "data mining" was used in a similarly critical way by economist [[Michael Lovell]] in an article published in the ''[[Review of Economic Studies]]'' in 1983.<ref>{{Cite journal|last=Lovell|first=Michael C.|date=1983|title=Data Mining|journal=The Review of Economics and Statistics|volume=65|issue=1|pages=1–12|doi=10.2307/1924403|jstor=1924403}}</ref><ref>{{cite book |first1=Wojciech W. |last1=Charemza |first2=Derek F. |last2=Deadman |title=New Directions in Econometric Practice |location=Aldershot |publisher=Edward Elgar |year=1992 |chapter=Data Mining |pages=14–31 |isbn=1-85278-461-X }}</ref> Lovell indicates that the practice "masquerades under a variety of aliases, ranging from "experimentation" (positive) to "fishing" or "snooping" (negative).
+
+The term ''data mining'' appeared around 1990 in the database community, generally with positive connotations. For a short time in 1980s, a phrase "database mining"™, was used, but since it was trademarked by HNC, a San Diego-based company, to pitch their Database Mining Workstation;<ref name="Mena">{{cite book |last=Mena |first=Jesús |year=2011 |title=Machine Learning Forensics for Law Enforcement, Security, and Intelligence |location=Boca Raton, FL |publisher=CRC Press (Taylor & Francis Group) |isbn=978-1-4398-6069-4 }}</ref> researchers consequently turned to ''data mining''. Other terms used include ''data archaeology'', ''information harvesting'', ''information discovery'', ''knowledge extraction'', etc. [[Gregory I. Piatetsky-Shapiro|Gregory Piatetsky-Shapiro]] coined the term "knowledge discovery in databases" for the first workshop on the same topic [http://www.kdnuggets.com/meetings/kdd89/ (KDD-1989)] and this term became more popular in [[Artificial intelligence|AI]] and [[machine learning]] community. However, the term data mining became more popular in the business and press communities.<ref>{{cite web |last1=Piatetsky-Shapiro |first1=Gregory |author-link1=Gregory Piatetsky-Shapiro |last2=Parker |first2=Gary |url=http://www.kdnuggets.com/data_mining_course/x1-intro-to-data-mining-notes.html |title=Lesson: Data Mining, and Knowledge Discovery: An Introduction |publisher=KD Nuggets |year=2011 |work=Introduction to Data Mining |access-date=30 August 2012 }}</ref> Currently, the terms ''data mining'' and ''knowledge discovery'' are used interchangeably.
+
+In the academic community, the major forums for research started in 1995 when the First International Conference on Data Mining and Knowledge Discovery ([[KDD-95]]) was started in Montreal under [[AAAI]] sponsorship. It was co-chaired by [[Usama Fayyad]] and Ramasamy Uthurusamy. A year later, in 1996, Usama Fayyad launched the journal by Kluwer called [[Data Mining and Knowledge Discovery]] as its founding editor-in-chief. Later he started the [[SIGKDD]] Newsletter SIGKDD Explorations.<ref name=SIGKDD-explorations>{{cite journal|last1=Fayyad|first1=Usama|title=First Editorial by Editor-in-Chief|journal=SIGKDD Explorations|date=15 June 1999|volume=13|issue=1|pages=102|doi=10.1145/2207243.2207269|s2cid=13314420|url=http://www.kdd.org/explorations/view/june-1999-volume-1-issue-1|access-date=27 December 2010|ref=SIGKDD-explorations}}</ref> The KDD International conference became the primary highest quality conference in data mining with an acceptance rate of research paper submissions below 18%. The journal ''Data Mining and Knowledge Discovery'' is the primary research journal of the field.
+
+==Background==
+The manual extraction of patterns from [[data]] has occurred for centuries. Early methods of identifying patterns in data include [[Bayes' theorem]] (1700s) and [[regression analysis]] (1800s). The proliferation, ubiquity and increasing power of computer technology have dramatically increased data collection, storage, and manipulation ability. As [[data set]]s have grown in size and complexity, direct "hands-on" data analysis has increasingly been augmented with indirect, automated data processing, aided by other discoveries in computer science, specially in the field of machine learning, such as [[neural networks]], [[cluster analysis]], [[genetic algorithms]] (1950s), [[decision tree learning|decision trees]] and [[decision rules]] (1960s), and [[support vector machines]] (1990s). Data mining is the process of applying these methods with the intention of uncovering hidden patterns.<ref name="Kantardzic">{{cite book |last=Kantardzic |first=Mehmed |title=Data Mining: Concepts, Models, Methods, and Algorithms |year=2003 |publisher=John Wiley & Sons |isbn=978-0-471-22852-3 |oclc=50055336 |url-access=registration |url=https://archive.org/details/dataminingconcep0000kant }}</ref> in large data sets. It bridges the gap from [[applied statistics]] and artificial intelligence (which usually provide the mathematical background) to [[database management]] by exploiting the way data is stored and indexed in databases to execute the actual learning and discovery algorithms more efficiently, allowing such methods to be applied to ever-larger data sets.
+
+==Process==
+The ''knowledge discovery in databases (KDD) process'' is commonly defined with the stages:
+
+# Selection
+# Pre-processing
+# Transformation
+# ''Data mining''
+# Interpretation/evaluation.<ref name="Fayyad" />
+
+It exists, however, in many variations on this theme, such as the [[Cross-industry standard process for data mining]] (CRISP-DM) which defines six phases:
+
+# Business understanding
+# Data understanding
+# Data preparation
+# Modeling
+# Evaluation
+# Deployment
+
+or a simplified process such as (1) Pre-processing, (2) Data Mining, and (3) Results Validation.
+
+Polls conducted in 2002, 2004, 2007 and 2014 show that the CRISP-DM methodology is the leading methodology used by data miners.<ref>[[Gregory Piatetsky-Shapiro]] (2002) [http://www.kdnuggets.com/polls/2002/methodology.htm ''KDnuggets Methodology Poll''], [[Gregory Piatetsky-Shapiro]] (2004) [http://www.kdnuggets.com/polls/2004/data_mining_methodology.htm ''KDnuggets Methodology Poll''], [[Gregory Piatetsky-Shapiro]] (2007) [http://www.kdnuggets.com/polls/2007/data_mining_methodology.htm ''KDnuggets Methodology Poll''], [[Gregory Piatetsky-Shapiro]] (2014) [http://www.kdnuggets.com/polls/2014/analytics-data-mining-data-science-methodology.html ''KDnuggets Methodology Poll'']</ref> The only other data mining standard named in these polls was [[SEMMA]]. However, 3–4 times as many people reported using CRISP-DM. Several teams of researchers have published reviews of data mining process models,<ref name="kurgan">Lukasz Kurgan and Petr Musilek: [http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=451120 "A survey of Knowledge Discovery and Data Mining process models"]. ''The Knowledge Engineering Review''. Volume 21 Issue 1, March 2006, pp&nbsp;1–24, Cambridge University Press, New York, {{DOI|10.1017/S0269888906000737}}</ref> and Azevedo and Santos conducted a comparison of CRISP-DM and SEMMA in 2008.<ref name="AzevedoSantos">Azevedo, A. and Santos, M. F. [http://www.iadis.net/dl/final_uploads/200812P033.pdf KDD, SEMMA and CRISP-DM: a parallel overview] {{webarchive|url=https://web.archive.org/web/20130109114939/http://www.iadis.net/dl/final_uploads/200812P033.pdf |date=2013-01-09 }}. In Proceedings of the IADIS European Conference on Data Mining 2008, pp&nbsp;182–185.</ref>
+
+===Pre-processing===
+Before data mining algorithms can be used, a target data set must be assembled. As data mining can only uncover patterns actually present in the data, the target data set must be large enough to contain these patterns while remaining concise enough to be mined within an acceptable time limit. A common source for data is a [[data mart]] or [[data warehouse]]. Pre-processing is essential to analyze the [[Multivariate statistics|multivariate]] data sets before data mining. The target set is then cleaned. Data cleaning removes the observations containing [[statistical noise|noise]] and those with [[missing data]].
+
+===Data mining===
+Data mining involves six common classes of tasks:<ref name="Fayyad">{{cite web |last1=Fayyad |first1=Usama |author-link1=Usama Fayyad |last2=Piatetsky-Shapiro |first2=Gregory|author-link2=Gregory Piatetsky-Shapiro |last3=Smyth |first3=Padhraic |title=From Data Mining to Knowledge Discovery in Databases |year=1996 |url=http://www.kdnuggets.com/gpspubs/aimag-kdd-overview-1996-Fayyad.pdf |access-date = 17 December 2008 }}</ref>
+
+* [[Anomaly detection]] (outlier/change/deviation detection) – The identification of unusual data records, that might be interesting or data errors that require further investigation.
+* [[Association rule learning]] (dependency modeling) – Searches for relationships between variables. For example, a supermarket might gather data on customer purchasing habits. Using association rule learning, the supermarket can determine which products are frequently bought together and use this information for marketing purposes. This is sometimes referred to as market basket analysis.
+* [[Cluster analysis|Clustering]] – is the task of discovering groups and structures in the data that are in some way or another "similar", without using known structures in the data.
+* [[Statistical classification|Classification]] – is the task of generalizing known structure to apply to new data. For example, an e-mail program might attempt to classify an e-mail as "legitimate" or as "spam".
+* [[Regression analysis|Regression]] – attempts to find a function that models the data with the least error that is, for estimating the relationships among data or datasets.
+* [[Automatic summarization|Summarization]] – providing a more compact representation of the data set, including visualization and report generation.
+
+===Results validation===
+[[File:Spurious correlations - spelling bee spiders.svg|thumb|An example of data produced by [[data dredging]] through a bot operated by statistician Tyler Vigen, apparently showing a close link between the best word winning a spelling bee competition and the number of people in the United States killed by venomous spiders. The similarity in trends is obviously a coincidence.]]{{Missing information|section|non-classification tasks in data mining. It only covers [[machine learning]]|date=September 2011}}
+Data mining can unintentionally be misused, and can then produce results that appear to be significant; but which do not actually predict future behavior and cannot be [[Reproducibility|reproduced]] on a new sample of data and bear little use. Often this results from investigating too many hypotheses and not performing proper [[statistical hypothesis testing]]. A simple version of this problem in [[machine learning]] is known as [[overfitting]], but the same problem can arise at different phases of the process and thus a train/test split—when applicable at all—may not be sufficient to prevent this from happening.<ref name="hawkins">{{cite journal | last1 = Hawkins | first1 = Douglas M | year = 2004 | title = The problem of overfitting | journal = Journal of Chemical Information and Computer Sciences | volume = 44 | issue = 1| pages = 1–12 | doi=10.1021/ci0342472| pmid = 14741005 }}</ref>
+
+The final step of knowledge discovery from data is to verify that the patterns produced by the data mining algorithms occur in the wider data set. Not all patterns found by data mining algorithms are necessarily valid. It is common for data mining algorithms to find patterns in the training set which are not present in the general data set. This is called [[overfitting]]. To overcome this, the evaluation uses a [[test set]] of data on which the data mining algorithm was not trained. The learned patterns are applied to this test set, and the resulting output is compared to the desired output. For example, a data mining algorithm trying to distinguish "spam" from "legitimate" emails would be trained on a [[training set]] of sample e-mails. Once trained, the learned patterns would be applied to the test set of e-mails on which it had ''not'' been trained. The accuracy of the patterns can then be measured from how many e-mails they correctly classify. Several statistical methods may be used to evaluate the algorithm, such as [[Receiver operating characteristic|ROC curves]].
+
+If the learned patterns do not meet the desired standards, subsequently it is necessary to re-evaluate and change the pre-processing and data mining steps. If the learned patterns do meet the desired standards, then the final step is to interpret the learned patterns and turn them into knowledge.
+
+==Research==
+The premier professional body in the field is the [[Association for Computing Machinery]]'s (ACM) Special Interest Group (SIG) on Knowledge Discovery and Data Mining ([[SIGKDD]]).<ref>{{cite web|url=http://academic.research.microsoft.com/?SearchDomain=2&SubDomain=7&entitytype=2|title=Microsoft Academic Search: Top conferences in data mining | publisher=[[Microsoft Academic Search]]}}</ref><ref>{{cite web|url=https://scholar.google.de/citations?view_op=top_venues&hl=en&vq=eng_datamininganalysis|title=Google Scholar: Top publications - Data Mining & Analysis|publisher=[[Google Scholar]]}}</ref> Since 1989, this ACM SIG has hosted an annual international conference and published its proceedings,<ref>[http://www.kdd.org/conferences.php Proceedings] {{Webarchive|url=https://web.archive.org/web/20100430120252/http://www.kdd.org/conferences.php |date=2010-04-30 }}, International Conferences on Knowledge Discovery and Data Mining, ACM, New York.</ref> and since 1999 it has published a biannual [[academic journal]] titled "SIGKDD Explorations".<ref>[http://www.kdd.org/explorations/about.php SIGKDD Explorations], ACM, New York.</ref>
+
+Computer science conferences on data mining include:
+
+* [[CIKM Conference]] – ACM [[Conference on Information and Knowledge Management]]
+* [[European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases]]
+* [[KDD Conference]] – ACM SIGKDD [[Conference on Knowledge Discovery and Data Mining]]
+
+Data mining topics are also present on many [[List of computer science conferences#Data Management|data management/database conferences]] such as the ICDE Conference, [[SIGMOD|SIGMOD Conference]] and [[International Conference on Very Large Data Bases]]
+
+==Standards==
+There have been some efforts to define standards for the data mining process, for example, the 1999 European [[Cross Industry Standard Process for Data Mining]] (CRISP-DM 1.0) and the 2004 [[Java Data Mining]] standard (JDM 1.0). Development on successors to these processes (CRISP-DM 2.0 and JDM 2.0) was active in 2006 but has stalled since. JDM 2.0 was withdrawn without reaching a final draft.
+
+For exchanging the extracted models—in particular for use in [[predictive analytics]]—the key standard is the [[Predictive Model Markup Language]] (PMML), which is an [[XML]]-based language developed by the Data Mining Group (DMG) and supported as exchange format by many data mining applications. As the name suggests, it only covers prediction models, a particular data mining task of high importance to business applications. However, extensions to cover (for example) [[subspace clustering]] have been proposed independently of the DMG.<ref>{{Cite book | last1 = Günnemann | first1 = Stephan | last2 = Kremer | first2 = Hardy | last3 = Seidl | first3 = Thomas | doi = 10.1145/2023598.2023605 | chapter = An extension of the PMML standard to subspace clustering models | title = Proceedings of the 2011 workshop on Predictive markup language modeling | page = 48 | year = 2011 | isbn = 978-1-4503-0837-3 | s2cid = 14967969 }}</ref>
+
+==Notable uses==
+{{Main|Examples of data mining}}
+{{Category see also|Applied data mining}}
+
+Data mining is used wherever there is digital data available today. Notable [[examples of data mining]] can be found throughout business, medicine, science, and surveillance.
+
+==Privacy concerns and ethics==
+While the term "data mining" itself may have no ethical implications, it is often associated with the mining of information in relation to peoples' behavior (ethical and otherwise).<ref>{{cite journal |author=Seltzer, William |title=The Promise and Pitfalls of Data Mining: Ethical Issues |url=https://ww2.amstat.org/committees/ethics/linksdir/Jsm2005Seltzer.pdf|publisher = American Statistical Association|journal = ASA Section on Government Statistics|date = 2005 }}</ref>
+
+The ways in which data mining can be used can in some cases and contexts raise questions regarding [[privacy]], legality, and ethics.<ref>{{cite journal |author=Pitts, Chip |title=The End of Illegal Domestic Spying? Don't Count on It |url=http://www.washingtonspectator.com/articles/20070315surveillance_1.cfm |journal=Washington Spectator |date=15 March 2007 |url-status=dead |archive-url=https://web.archive.org/web/20071128015201/http://www.washingtonspectator.com/articles/20070315surveillance_1.cfm |archive-date=2007-11-28 }}</ref> In particular, data mining government or commercial data sets for national security or law enforcement purposes, such as in the [[Total Information Awareness]] Program or in [[ADVISE]], has raised privacy concerns.<ref>{{cite journal |author=Taipale, Kim A. |title=Data Mining and Domestic Security: Connecting the Dots to Make Sense of Data |url=http://www.stlr.org/cite.cgi?volume=5&article=2 |journal=Columbia Science and Technology Law Review |volume=5 |issue=2 |date=15 December 2003 |ssrn=546782 |oclc=45263753 }}</ref><ref>{{cite web|last1=Resig|first1=John|title=A Framework for Mining Instant Messaging Services|url=https://johnresig.com/files/research/SIAMPaper.pdf|access-date=16 March 2018}}</ref>
+
+Data mining requires data preparation which uncovers information or patterns which compromise confidentiality and privacy obligations. A common way for this to occur is through [[aggregate function|data aggregation]]. Data aggregation involves combining data together (possibly from various sources) in a way that facilitates analysis (but that also might make identification of private, individual-level data deducible or otherwise apparent).<ref name="NASCIO">[http://www.nascio.org/publications/documents/NASCIO-dataMining.pdf ''Think Before You Dig: Privacy Implications of Data Mining & Aggregation''] {{webarchive|url=https://web.archive.org/web/20081217063043/http://www.nascio.org/publications/documents/NASCIO-dataMining.pdf |date=2008-12-17 }}, NASCIO Research Brief, September 2004</ref> This is not data mining ''per se'', but a result of the preparation of data before—and for the purposes of—the analysis. The threat to an individual's privacy comes into play when the data, once compiled, cause the data miner, or anyone who has access to the newly compiled data set, to be able to identify specific individuals, especially when the data were originally anonymous.<ref>{{cite magazine |first=Paul |last=Ohm |title=Don't Build a Database of Ruin |magazine=Harvard Business Review |url=http://blogs.hbr.org/cs/2012/08/dont_build_a_database_of_ruin.html}}</ref><ref>Darwin Bond-Graham, [http://www.counterpunch.org/2013/12/03/iron-cagebook/ Iron Cagebook – The Logical End of Facebook's Patents], [[Counterpunch.org]], 2013.12.03</ref><ref>Darwin Bond-Graham, [http://www.counterpunch.org/2013/09/11/inside-the-tech-industrys-startup-conference/ Inside the Tech industry's Startup Conference], [[Counterpunch.org]], 2013.09.11</ref>
+
+It is recommended{{whom|date=August 2019}} to be aware of the following '''before''' data are collected:<ref name="NASCIO" />
+* The purpose of the data collection and any (known) data mining projects;
+* How the data will be used;
+* Who will be able to mine the data and use the data and their derivatives;
+* The status of security surrounding access to the data;
+* How collected data can be updated.
+
+Data may also be modified so as to ''become'' anonymous, so that individuals may not readily be identified.<ref name="NASCIO" /> However, even "anonymized" data sets can potentially contain enough information to allow identification of individuals, as occurred when journalists were able to find several individuals based on a set of search histories that were inadvertently released by AOL.<ref>[http://www.securityfocus.com/brief/277 ''AOL search data identified individuals''], SecurityFocus, August 2006</ref>
+
+The inadvertent revelation of [[personally identifiable information]] leading to the provider violates Fair Information Practices.   This indiscretion can cause financial,
+emotional, or bodily harm to the indicated individual.  In one instance of [[privacy violation]], the patrons of Walgreens filed a lawsuit against the company in 2011 for selling
+prescription information to data mining companies who in turn provided the data
+to pharmaceutical companies.<ref>{{Cite journal|title = Big data׳s impact on privacy, security and consumer welfare|journal = Telecommunications Policy|pages = 1134–1145|volume = 38|issue = 11|doi = 10.1016/j.telpol.2014.10.002|first = Nir|last = Kshetri|year = 2014|url = http://libres.uncg.edu/ir/uncg/f/N_Kshetri_Big_2014.pdf}}</ref>
+
+===Situation in Europe===
+
+[[European Union|Europe]] has rather strong privacy laws, and efforts are underway to further strengthen the rights of the consumers. However, the [[International Safe Harbor Privacy Principles|U.S.–E.U. Safe Harbor Principles]], developed between 1998 and 2000, currently effectively expose European users to privacy exploitation by U.S. companies. As a consequence of [[Edward Snowden]]'s [[global surveillance disclosure]], there has been increased discussion to revoke this agreement, as in particular the data will be fully exposed to the [[National Security Agency]], and attempts to reach an agreement with the United States have failed.<ref>{{cite web |url=https://crsreports.congress.gov/product/pdf/R/R44257/7 |title=U.S.–E.U. Data Privacy: From Safe Harbor to Privacy Shield |last1=Weiss |first1=Martin A. |last2=Archick |first2=Kristin |date=19 May 2016 |agency=Congressional Research Service |location=Washington, D.C. |page=6 |format=PDF |id=R44257 |access-date=9 April 2020 |quote=On October 6, 2015, the [[Court of Justice of the European Union|CJEU]]&nbsp;... issued a decision that invalidated Safe Harbor (effective immediately), as currently implemented. }}</ref>
+
+In the United Kingdom in particular there have been cases of corporations using data mining as a way to target certain groups of customers forcing them to pay unfairly high prices. These groups tend to be people of lower socio-economic status who are not savvy to the ways they can be exploited in digital market places.<ref>Parker, George. “UK Companies Targeted for Using Big Data to Exploit Customers.” Subscribe to Read | Financial Times, Financial Times, 30 Sept. 2018, www.ft.com/content/5dbd98ca-c491-11e8-bc21-54264d1c4647. </ref>
+
+===Situation in the United States===
+
+In the United States, privacy concerns have been addressed by the [[US Congress]] via the passage of regulatory controls such as the [[Health Insurance Portability and Accountability Act]] (HIPAA). The HIPAA requires individuals to give their "informed consent" regarding information they provide and its intended present and future uses. According to an article in ''Biotech Business Week'', "'[i]n practice, HIPAA may not offer any greater protection than the longstanding regulations in the research arena,' says the AAHC. More importantly, the rule's goal of protection through informed consent is approach a level of incomprehensibility to average individuals."<ref>Biotech Business Week Editors (June 30, 2008); ''BIOMEDICINE; HIPAA Privacy Rule Impedes Biomedical Research'', Biotech Business Week, retrieved 17 November 2009 from LexisNexis Academic</ref> This underscores the necessity for data anonymity in data aggregation and mining practices.
+
+U.S. information privacy legislation such as HIPAA and the [[Family Educational Rights and Privacy Act]] (FERPA) applies only to the specific areas that each such law addresses. The use of data mining by the majority of businesses in the U.S. is not controlled by any legislation.
+
+==Copyright law==
+
+===Situation in Europe===
+
+Under [[Copyright law of the European Union|European copyright]] and [[Database Directive|database law]]s, the mining of in-copyright works (such as by [[web mining]]) without the permission of the copyright owner is not legal. Where a database is pure data in Europe, it may be that there is no copyright—but database rights may exist so data mining becomes subject to [[intellectual property]] owners' rights that are protected by the [[Database Directive]]. On the recommendation of the [[Hargreaves review]], this led to the UK government to amend its copyright law in 2014 to allow content mining as a [[Limitations and exceptions to copyright|limitation and exception]].<ref>[http://www.out-law.com/en/articles/2014/june/researchers-given-data-mining-right-under-new-uk-copyright-laws/ UK Researchers Given Data Mining Right Under New UK Copyright Laws.] {{webarchive |url=https://web.archive.org/web/20140609020315/http://www.out-law.com/en/articles/2014/june/researchers-given-data-mining-right-under-new-uk-copyright-laws/ |date=June 9, 2014 }} ''Out-Law.com.''   Retrieved 14 November 2014</ref> The UK was the second country in the world to do so after Japan, which introduced an exception in 2009 for data mining. However, due to the restriction of the [[Information Society Directive]] (2001), the UK exception only allows content mining for non-commercial purposes. UK copyright law also does not allow this provision to be overridden by contractual terms and conditions. 
+
+The [[European Commission]] facilitated stakeholder discussion on text and data mining in 2013, under the title of Licences for Europe.<ref>{{cite web|title=Licences for Europe – Structured Stakeholder Dialogue 2013|url=http://ec.europa.eu/licences-for-europe-dialogue/en/content/about-site|website=European Commission|access-date=14 November 2014}}</ref> The focus on the solution to this legal issue, such as licensing rather than limitations and exceptions, led to representatives of universities, researchers, libraries, civil society groups and [[open access]] publishers to leave the stakeholder dialogue in May 2013.<ref>{{cite web|title=Text and Data Mining:Its importance and the need for change in Europe|url=http://libereurope.eu/news/text-and-data-mining-its-importance-and-the-need-for-change-in-europe/|website=Association of European Research Libraries|access-date=14 November 2014}}</ref>
+
+===Situation in the United States===
+
+[[Copyright law of the United States|US copyright law]], and in particular its provision for [[fair use]], upholds the legality of content mining in America, and other fair use countries such as Israel, Taiwan and South Korea. As content mining is transformative, that is it does not supplant the original work, it is viewed as being lawful under fair use. For example, as part of the [[Google Book Search Settlement Agreement|Google Book settlement]] the presiding judge on the case ruled that Google's digitization project of in-copyright books was lawful, in part because of the transformative uses that the digitization project displayed—one being text and data mining.<ref>{{cite web|title=Judge grants summary judgment in favor of Google Books – a fair use victory|url=http://www.lexology.com/library/detail.aspx?g=a18c5b92-5a20-4d1d-a098-a3095046a88e|website=Lexology.com|publisher=Antonelli Law Ltd|access-date=14 November 2014}}</ref>
+
+==Software==
+{{Category see also|Data mining and machine learning software}}
+
+===Free open-source data mining software and applications===
+The following applications are available under free/open-source licenses. Public access to application source code is also available.
+
+* [[Carrot2]]: Text and search results clustering framework.
+* [[Chemicalize.org]]: A chemical structure miner and web search engine.
+* [[ELKI]]: A university research project with advanced [[cluster analysis]] and [[anomaly detection|outlier detection]] methods written in the [[Java (programming language)|Java]] language.
+* [[General Architecture for Text Engineering|GATE]]: a [[natural language processing]] and language engineering tool.
+* [[KNIME]]: The Konstanz Information Miner, a user-friendly and comprehensive data analytics framework.
+* [[MOA (Massive Online Analysis)|Massive Online Analysis (MOA)]]: a real-time big data stream mining with concept drift tool in the [[Java (programming language)|Java]] programming language.
+* [[Multi expression programming|MEPX]] - cross-platform tool for regression and classification problems based on a Genetic Programming variant.
+* ML-Flex: A software package that enables users to integrate with third-party machine-learning packages written in any programming language, execute classification analyses in parallel across multiple computing nodes, and produce HTML reports of classification results.
+* [[mlpack]]: a collection of ready-to-use machine learning algorithms written in the [[C++]] language.
+* [[NLTK]] ([[Natural Language Toolkit]]): A suite of libraries and programs for symbolic and statistical natural language processing (NLP) for the [[Python (programming language)|Python]] language.
+* [[OpenNN]]: Open [[neural networks]] library.
+* [[Orange (software)|Orange]]: A component-based data mining and [[machine learning]] software suite written in the [[Python (programming language)|Python]] language.
+* [[R (programming language)|R]]: A [[programming language]] and software environment for [[statistics|statistical]] computing, data mining, and graphics. It is part of the [[GNU Project]].
+* [[scikit-learn]] is an open-source machine learning library for the Python programming language
+* [[Torch (machine learning)|Torch]]: An [[open source model|open-source]] [[deep learning]] library for the [[Lua (programming language)|Lua]] programming language and [[scientific computing]] framework with wide support for [[machine learning]] algorithms.
+* [[UIMA]]: The UIMA (Unstructured Information Management Architecture) is a component framework for analyzing unstructured content such as text, audio and video – originally developed by IBM.
+* [[Weka (machine learning)|Weka]]: A suite of machine learning software applications written in the [[Java (programming language)|Java]] programming language.
+
+===Proprietary data-mining software and applications===
+The following applications are available under proprietary licenses.
+
+* [[Angoss]] KnowledgeSTUDIO: data mining tool
+* [[LIONsolver]]: an integrated software application for data mining, business intelligence, and modeling that implements the Learning and Intelligent OptimizatioN (LION) approach.
+* Megaputer Intelligence: data and text mining software is called PolyAnalyst.
+* [[Microsoft Analysis Services]]: data mining software provided by [[Microsoft]].
+* [[NetOwl]]: suite of multilingual text and entity analytics products that enable data mining.
+* [[Oracle Data Mining]]: data mining software by [[Oracle Corporation]].
+* [[PSeven]]: platform for automation of engineering simulation and analysis, multidisciplinary optimization and data mining provided by [[DATADVANCE]].
+* [[Qlucore]] Omics Explorer: data mining software.
+* [[RapidMiner]]: An environment for [[machine learning]] and data mining experiments. <!-- Latest version is NOT opensource -->
+* [[SAS (software)#Components|SAS Enterprise Miner]]: data mining software provided by the [[SAS Institute]].
+* [[SPSS Modeler]]: data mining software provided by [[IBM]].
+* [[STATISTICA]] Data Miner: data mining software provided by [[StatSoft]].
+* [[Tanagra (machine learning)|Tanagra]]: Visualisation-oriented data mining software, also for teaching.
+* [[Vertica]]: data mining software provided by [[Hewlett-Packard]].
+* [[Google Cloud Platform]]: automated custom ML models managed by [[Google]].
+* [[Amazon SageMaker]]: managed service provided by [[Amazon.com|Amazon]] for creating & productionising custom ML models.
+
+==See also==
+; Methods
+{{columns-list|colwidth=22em|
+* [[Agent mining]]
+* [[Anomaly detection|Anomaly/outlier/change detection]]
+* [[Association rule learning]]
+* [[Bayesian network]]s
+* [[Statistical classification|Classification]]
+* [[Cluster analysis]]
+* [[Decision tree]]s
+* [[Ensemble learning]]
+* [[Factor analysis]]
+* [[Genetic algorithms]]
+* [[Intention mining]]
+* [[Learning classifier system]]
+* [[Multilinear subspace learning]]
+* [[Artificial neural network|Neural network]]s
+* [[Regression analysis]]
+* [[Sequence mining]]
+* [[Structured data analysis (statistics)|Structured data analysis]]
+* [[Support vector machines]]
+* [[Text mining]]
+* [[Time series|Time series analysis]]
+
+}}
+
+; Application domains
+{{columns-list|colwidth=22em|
+* [[Analytics]]
+* [[Behavior informatics]]
+* [[Big Data|Big data]]
+* [[Bioinformatics]]
+* [[Business intelligence]]
+* [[Data analysis]]
+* [[Data warehouse]]
+* [[Decision support system]]
+* [[Domain driven data mining]]
+* [[Drug discovery]]
+* [[Exploratory data analysis]]
+* [[Predictive analytics]]
+* [[Web mining]]
+}}
+
+; Application examples
+{{Main|Examples of data mining}}
+{{Category see also|Applied data mining}}
+{{columns-list|colwidth=22em|
+*[[Automatic number plate recognition in the United Kingdom#Data mining|Automatic number plate recognition in the United Kingdom]]
+*[[Customer analytics#Data mining|Customer analytics]]
+*[[Educational data mining]]
+*[[National Security Agency#Transaction data mining|National Security Agency]]
+*[[Quantitative structure–activity relationship#Data mining approach|Quantitative structure–activity relationship]]
+*[[Surveillance#Data mining and profiling|Surveillance]] / [[Mass surveillance#Data mining|Mass surveillance]] (e.g., [[Stellar Wind (code name)|Stellar Wind]])
+}}
+
+; Related topics
+
+For more information about extracting information out of data (as opposed to ''analyzing'' data) , see:
+{{columns-list|colwidth=22em|
+* [[Data integration]]
+* [[Data transformation]]
+* [[Electronic discovery]]
+* [[Information extraction]]
+* [[Information integration]]
+* [[Named-entity recognition]]
+* [[Profiling (information science)]]
+* [[Psychometrics]]
+* [[Social media mining]]
+* [[Surveillance capitalism]]
+* [[Web scraping]]
+}}
+
+;Other resources
+*[[International Journal of Data Warehousing and Mining]]
+
+==References==
+{{Reflist|30em}}
+
+==Further reading==
+{{div col|colwidth=30em}}
+* Cabena, Peter; Hadjnian, Pablo; Stadler, Rolf; Verhees, Jaap; Zanasi, Alessandro (1997); ''Discovering Data Mining: From Concept to Implementation'', [[Prentice Hall]], {{ISBN|0-13-743980-6}}
+* M.S. Chen, J. Han, [[Philip S. Yu|P.S. Yu]] (1996) "[http://cs.nju.edu.cn/zhouzh/zhouzh.files/course/dm/reading/reading01/chen_tkde96.pdf Data mining: an overview from a database perspective]". ''Knowledge and data Engineering, IEEE Transactions'' on 8 (6), 866–883
+* Feldman, Ronen; Sanger, James (2007); ''The Text Mining Handbook'', [[Cambridge University Press]], {{ISBN|978-0-521-83657-9}}
+* Guo, Yike; and Grossman, Robert (editors) (1999); ''High Performance Data Mining: Scaling Algorithms, Applications and Systems'', [[Kluwer Academic Publishers]]
+* [[Jiawei Han|Han, Jiawei]], Micheline Kamber, and Jian Pei. ''Data mining: concepts and techniques''. Morgan kaufmann, 2006.
+* [[Trevor Hastie|Hastie, Trevor]], [[Robert Tibshirani|Tibshirani, Robert]] and [[Jerome H. Friedman|Friedman, Jerome]] (2001); ''The Elements of Statistical Learning: Data Mining, Inference, and Prediction'', Springer, {{ISBN|0-387-95284-5}}
+* [[Bing Liu (computer scientist)|Liu, Bing]] (2007, 2011); ''Web Data Mining: Exploring Hyperlinks, Contents and Usage Data'', [[Springer Verlag|Springer]], {{ISBN|3-540-37881-2}}
+* {{cite journal |last=Murphy |first=Chris |date=16 May 2011 |title=Is Data Mining Free Speech? |journal=[[InformationWeek]] |page=12 }}
+* Nisbet, Robert; Elder, John; Miner, Gary (2009); ''Handbook of Statistical Analysis & Data Mining Applications'', [[Academic Press]]/Elsevier, {{ISBN|978-0-12-374765-5}}
+* Poncelet, Pascal; Masseglia, Florent; and Teisseire, Maguelonne (editors) (October 2007); "Data Mining Patterns: New Methods and Applications", ''Information Science Reference'', {{ISBN|978-1-59904-162-9}}
+* Tan, Pang-Ning; Steinbach, Michael; and Kumar, Vipin (2005); ''Introduction to Data Mining'', {{ISBN|0-321-32136-7}}
+* Theodoridis, Sergios; and Koutroumbas, Konstantinos (2009); ''Pattern Recognition'', 4th Edition, Academic Press, {{ISBN|978-1-59749-272-0}}
+* Weiss, Sholom M.; and Indurkhya, Nitin (1998); ''Predictive Data Mining'', [[Morgan Kaufmann]]
+* {{cite book |author1=Witten, Ian H.|author-link1=Ian H. Witten |author2=Frank, Eibe |author3=Hall, Mark A. |title=Data Mining: Practical Machine Learning Tools and Techniques |edition=3 |date=30 January 2011 |publisher=Elsevier |isbn=978-0-12-374856-0 }} (See also [[Weka (machine learning)|Free Weka software]])
+* Ye, Nong (2003); ''The Handbook of Data Mining'', Mahwah, NJ: Lawrence Erlbaum
+{{div col end}}
+
+==External links==
+{{Commons category|Data mining}}
+* {{DMOZ|Reference/Knowledge_Management/Knowledge_Discovery/Software|Knowledge Discovery Software}}
+* {{DMOZ|Computers/Software/Databases/Data_Mining/Tool_Vendors|Data Mining Tool Vendors}}
+
+{{data}}
+{{Data warehouse}}
+{{Computer science}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Data Mining}}
+[[Category:Data mining| ]]
+[[Category:Formal sciences]]

@@ -1,0 +1,96 @@
+{{dablink|This article concerns formal ontology in philosophy. In information science, a formal ontology is an [[ontology (information science)]] that is defined by [[axiom]]s in a [[formal language]], typically an [[ontology language]].  Those formal ontologies may or may not be based on the kind of formal [[Upper ontology|upper level ontology]] described here.}}
+{{more footnotes|date=August 2009}}
+In [[philosophy]], the term '''formal ontology''' is used to refer to an [[ontology]] defined by [[axiom]]s in a [[formal language]] with the goal to provide an [[unbiased]] ([[Problem domain|domain]]- and application-independent) view on [[Reality#Philosophical views of reality|reality]], which can help the modeler of [[Problem domain|domain]]- or application-specific [[ontology (information science)|ontologies (information science)]] to avoid possibly erroneous ontological assumptions encountered in modeling large-scale ontologies.
+
+By maintaining an independent view on reality a formal ([[Upper ontology|upper level]]) ontology gains the following properties:
+*indefinite expandability:
+*:the ontology remains [[consistent]] with increasing content.
+*content and context independence:
+*:any kind of '[[concept]]' can find its place.
+*accommodate different levels of [[granularity]].
+
+==Historical background==
+Theories on how to conceptualize reality date back as far as [[Plato]] and [[Aristotle]]. The term 'formal ontology' itself was coined by [[Edmund Husserl]] in the second edition of his ''[[Logical Investigations (Husserl)|Logical Investigations]]'' (1900–01), where it refers to an ontological counterpart of formal logic. Formal ontology for Husserl embraces an axiomatized mereology and a theory of dependence relations, for example between the qualities of an object and the object itself. 'Formal' signifies not the use of a formal-logical language, but rather: non-material, or in other words domain-independent (of universal application). Husserl's ideas on formal ontology were developed especially by his Polish student [[Roman Ingarden]] in his ''Controversy over the Existence of the World''.<ref>Roman Ingarden, ''Controversy over the Existence of the World''. Volumes I and II, translated by Arthur Szylewicz, Bern: Peter Lang, 2013 / 2016.</ref> The relations between the Husserlian tradition of formal ontology and the Polish tradition of mereology are set forth in ''[http://ontology.buffalo.edu/smith/book/P&M Parts and Moments. Studies in Logic and Formal Ontology]'',<ref>Barry Smith (ed.), ''Parts and Moments. Studies in Logic and Formal Ontology'', Munich: Philosophia, 1982, reprinted 2001.</ref> edited by [[Barry Smith (academic)|Barry Smith]]. Smith's work on [[Basic Formal Ontology]] (BFO) (see below) arises out of this tradition.
+
+==Existing formal ontologies (foundational ontologies)==
+{{main|Upper ontology}}
+*[[Basic Formal Ontology|BFO – Basic Formal Ontology]]
+*[[BORO|BORO – Business Objects Reference Ontology]]
+*[[CIDOC Conceptual Reference Model]]
+*[[Cyc]] (Cyc is not just an upper ontology, it also contains many mid-level and specialized ontologies as well)
+*[[UMBEL|UMBEL – Upper Mapping and Binding Exchange Layer]], a subset of OpenCyc
+*[[Upper ontology (computer science)#DOLCE and DnS|DOLCE – Descriptive Ontology for Linguistic and Cognitive Engineering]]
+*[[General Formal Ontology|GFO – General Formal Ontology]]
+*[[Suggested Upper Merged Ontology|SUMO – Suggested Upper Merged Ontology]]
+
+== Common terms in formal (upper-level) ontologies ==
+The differences in terminology used between separate formal upper-level ontologies can be quite substantial, but most formal upper-level ontologies apply one foremost [[dichotomy]]: that between endurants and perdurants.
+
+===Endurant===
+Also known as continuants, or in some cases as "substance", endurants are those [[wikt:entity|entities]] that can be observed-perceived as a complete concept, at no matter which given [[wikt:snapshot|snapshot]] of [[time]].
+Were we to freeze time we would still be able to perceive/conceive the entire endurant.
+
+Examples include material objects (such as an apple or a human), and abstract "fiat" objects (such as an organization, or the border of a country).
+
+===Perdurant===
+Also known as occurrents, accidents or happenings, perdurants are those entities for which only a part exists if we look at them at any given snapshot in time.
+When we freeze time we can only see a part of the perdurant. Perdurants are often what we know as processes, for example: "running". If we freeze time then we only see a part of the running, without any previous knowledge one might not even be able to determine the actual process as being a process of running. Other examples include an activation, a kiss, or a procedure.
+
+===Qualities===
+In a broad sense, qualities can also be known as [[Property (philosophy)|properties]] or [[Trope (philosophy)#Trope theory in philosophy .28metaphysics.29|trope]]s.
+
+Qualities do not exist on their own, but they need another [[wikt:entity|entity]] (in many formal ontologies this entity is restricted to be an endurant) which they occupy. Examples of qualities and the values they assume include colors (red color), or temperatures (warm).
+
+Most formal upper-level ontologies recognize qualities, attributes, tropes, or something related, although the exact classification may differ. Some see qualities and the values they can assume (sometimes called [[quale]]) as a separate [[hierarchy]] besides endurants and perdurants (example: [[Upper ontology#DOLCE|DOLCE]]). Others classify qualities as a subsection of endurants, e.g. the dependent endurants (example: [[Basic Formal Ontology|BFO]]). Others consider property-instances or tropes that are single characteristics of individuals as the atoms of the ontology, the simpler entities of which all other entities are composed, so that all the entities are sums or bundles of tropes.
+
+==Formal versus nonformal==
+In information science an ontology is formal if it is specified in a [[formal language]], otherwise it is informal.
+
+In philosophy, a separate distinction between formal and nonformal ontologies exists, which does not relate to the use of a [[formal language]].
+
+===Example===
+An ontology might contain a concept representing 'mobility of the arm'. In a nonformal ontology a concept like this can often be classified as for example a 'finding of the arm', right next to other concepts such as 'bruising of the arm'. This method of modeling might create problems with increasing amounts information, as there is no foolproof way to keep hierarchies like this, or their descendant hierarchies (one is a process, the other is a quality) from entangling or knotting.
+
+In a formal ontology, there is an optimal way to properly classify this concept, it is a kind of 'mobility', which is a kind of quality/property (see above). As a quality, it is said to ''inhere'' in ''independent'' endurant entities (see above), as such, it cannot exist without a bearer (in the case the arm).
+
+==Applications for formal (upper-level) ontologies==
+
+===Formal ontology as a template to create novel specific domain ontologies===
+Having a formal ontology at your disposal, especially when it consists of a Formal upper layer enriched with concrete domain-independent 'middle layer' concepts, can really aid the creation of a domain specific ontology.
+It allows the modeller to focus on the content of the domain specific ontology without having to worry on the exact higher structure or abstract [[Philosophy|philosophical]] framework that gives his ontology a rigid backbone. [[Disjoint sets|Disjoint]] [[axiom]]s at the higher level will prevent many of the commonly made ontological mistakes made when creating the detailed layer of the ontology.
+
+===Formal ontology as a crossmapping hub: crossmapping taxonomies, databases and nonformal ontologies===
+
+Aligning terminologies and ontologies is not an easy task. The divergence of the underlying meaning of word descriptions and terms within different information sources is a well known obstacle for direct approaches to [[data integration]] and mapping. One single description may have a completely different meaning in one data source when compared with another. This is because different databases/terminologies often have a different viewpoint on similar items. They are usually built with a specific application-perspective in mind and their hierarchical structure represents this.
+
+A formal ontology, on the other hand, represents entities without a particular application scope. Its hierarchy reflects ontological principles and a basic class-subclass relation between its concepts. A consistent framework like this is ideal for crossmapping data sources.
+However, one cannot just integrate these external data sources in the formal ontology. A direct incorporation would lead to corruption of the framework and principles of the formal ontology.
+
+A formal ontology is a great crossmapping hub only if a complete distinction between the content and structure of the external information sources and the formal ontology itself is maintained. This is possible by specifying a mapping relation between concepts from a chaotic external information source and a concept in the formal ontology that corresponds with the meaning of the former concept.
+
+Where two or more external information sources map to one and the same formal ontology concept a crossmapping/translation is achieved, as you know that those concepts—no matter what their phrasing is—mean the same thing.
+
+===Formal ontology to empower natural language processing===
+In ontologies designed to serve [[natural language processing]] (NLP) and [[natural language understanding]] (NLU) systems, ontology concepts are usually connected and symbolized by terms. This kind of connection represents a linguistic realization. 
+[[Terminology|Terms]] are words or a combination of words (multi-word units), in different languages, used to describe in natural language an element from reality, and hence connected to that formal ontology concept that frames this element in reality.
+
+The [[lexicon]], the collection of terms and their inflections assigned to the concepts and relationships in an ontology, forms the ‘ontology interface to natural language’, the channel through which the ontology can be accessed from a natural language input.
+
+===Formal ontology to normalize database/instance data===
+The great thing about a formal ontology, in contrast to rigid [[Taxonomy (general)|taxonomies]] or [[Taxonomic classification|classifications]], is that it allows for indefinite expansion. Given proper modeling, just about any kind of [[concept]]ual information, no matter the content, can find its place.
+
+To disambiguate a concept's place in the ontology, often a [[context model]] is useful to improve the classification power. The model typically applies rules to surrounding elements of the context to select the most valid classification.
+
+==See also==
+* [[Mereology]]
+* [[Ontology (information science)]]
+* [[Upper ontology]]
+
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:Formal Ontology}}
+[[Category:Formal sciences]]
+[[Category:Logic]]
+[[Category:Ontology]]
+[[Category:Ontology (information science)]]

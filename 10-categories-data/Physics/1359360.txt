@@ -1,0 +1,89 @@
+{{short description|Initial estimate or framework to the solution of a mathematical problem}}
+In [[physics]] and [[mathematics]], an '''ansatz''' ({{IPAc-en|'|ae|n|s|ae|t|s}}; {{IPA-de|ˈʔanzats|lang}}, meaning: "initial placement of a tool at a work piece", plural '''ansätze''' {{IPAc-en|'|ae|n|s|ɛ|t|s|ə}}; {{IPA-de|ˈʔanzɛtsə|lang}} or '''ansaetze''') is an educated guess or an additional assumption made to help solve a problem, and which is later verified to be part of the solution by its results.<ref name=":0">{{Cite web|url=https://mathvault.ca/math-glossary/#ansatz|title=The Definitive Glossary of Higher Mathematical Jargon — Ansatz|date=2019-08-01|website=Math Vault|language=en-US|access-date=2019-11-19}}</ref><ref name=":1">{{Cite book|title=The nature of mathematical modeling|last=Gershenfeld, Neil A.|date=1999|publisher=Cambridge University Press|isbn=0-521-57095-6|location=Cambridge|pages=10|oclc=39147817}}</ref>
+
+==Use==
+An ansatz is the establishment of the starting equation(s), the theorem(s), or the value(s) describing a mathematical or physical problem or solution. It typically provides an initial estimate or framework to the solution of a mathematical problem,<ref>{{Cite web|url=https://www.merriam-webster.com/dictionary/ansatz|title=Definition of ANSATZ|website=www.merriam-webster.com|language=en|access-date=2019-11-19}}</ref> and can also take into consideration the [[Boundary value problem|boundary conditions]] (in fact, an ansatz is sometimes thought of as a "trial answer" and an important technique in solving differential equations<ref name=":1" />). 
+
+After an ansatz, which constitutes nothing more than an assumption, has been established, the equations are solved more precisely for the general function of interest, which then constitutes a confirmation of the assumption. In essence, an ansatz makes assumptions about the form of the solution to a problem—so as to make the solution easier to find.<ref>{{Cite web|url=https://www.lexico.com/definition/ansatz|title=Ansatz {{!}} Definition of Ansatz by Lexico|website=Lexico Dictionaries {{!}} English|language=en|access-date=2020-10-22}}</ref>
+
+It has been demonstrated that machine learning techniques can be applied to provide initial estimates similar to those invented by humans and to discover new ones in case no ansatz is available.<ref>{{cite journal | last1 = Porotti | first1 = R. | last2 = Tamascelli | first2 = D. | last3 = Restelli | first3 = M. | last4 = Prati | first4 = E. | year = 2019 | title = Coherent transport of quantum states by deep reinforcement learning | journal = Communications Physics | volume = 2 | issue = 1| page = 61 | doi=10.1038/s42005-019-0169-x| arxiv = 1901.06603 | bibcode = 2019CmPhy...2...61P | doi-access = free }}</ref>
+
+==Examples==
+Given a [[set (mathematics)|set]] of experimental data that looks to be [[Cluster analysis|clustered]] about a line, a linear ansatz could be made to find the [[parameter]]s of the line by a [[least squares]] curve fit.<ref name=":0" /> [[Calculus of variations|Variational]] [[approximation]] methods use ansätze and then fit the parameters.
+
+Another example could be the mass, energy, and entropy balance equations that, considered simultaneous for purposes of the elementary operations of [[linear algebra]], are the ''ansatz'' to most basic problems of [[thermodynamics]].
+
+Another example of an ansatz is to suppose the solution of a homogeneous linear [[differential equation]] to take an exponential form,<ref name=":0" /> or a power form in the case of a [[difference equation]]. More generally, one can guess a particular solution of a system of equations, and test such an ansatz by directly substituting the solution into the system of equations. In many cases, the assumed form of the solution is general enough that it can represent arbitrary functions, in such a way that the set of solutions found this way is a full set of all the solutions. 
+
+==See also==
+{{wiktionary|ansatz}}
+
+* [[Bethe ansatz]]
+* [[Coupled cluster]], a technique for solving the many-body problem that is based on an exponential Ansatz
+* [[Demarcation problem]]
+* [[Guesstimate]]
+* [[Heuristic]]
+* [[Hypothesis]]
+* [[Trial and error]]
+* [[Train of thought]]
+
+== References ==
+{{reflist}}
+
+== Bibliography ==
+
+*{{Citation
+| last = Weis
+| first = Erich
+| author2 = Heinrich Mattutat
+| title = The New Schöffler-Weis Compact German and English Dictionary
+| publisher = Ernst Klett Verlag, Stuttgart
+| year = 1968
+| isbn = 0-245-59813-8}}
+*{{Citation
+| last1 = Karbach
+| first1 = M.
+| last2 = Müller
+| first2 = G.
+| title = Introduction to the Bethe ansatz I. Computers in Physics 11 (1997), 36-43.
+| date = September 10, 1998
+| url = http://www.phys.uri.edu/~gerhard/MSS/ms82.pdf
+| accessdate = 2008-10-25
+| archive-url = https://web.archive.org/web/20060901073445/http://www.phys.uri.edu/~gerhard/MSS/ms82.pdf
+| archive-date = September 1, 2006
+| url-status = dead
+}}
+*{{Citation
+ |last1         = Karbach
+ |first1        = M.
+ |last2        = Hu
+ |first2       = K.
+ |last3        = Müller
+ |first3       = G.
+ |title        = Introduction to the Bethe ansatz II. Computers in Physics 12 (1998), 565-573.
+ |date         = September 10, 1998
+ |url          = http://www.phys.uri.edu/~gerhard/MSS/ms86.pdf
+ |accessdate   = 2008-10-25
+ |archive-url  = https://web.archive.org/web/20060901073349/http://www.phys.uri.edu/~gerhard/MSS/ms86.pdf
+ |archive-date = September 1, 2006
+ |url-status     = dead
+}}
+*{{Citation
+ |last1         = Karbach
+ |first1        = M.
+ |last2        = Hu
+ |first2       = K.
+ |last3        = Müller
+ |first3       = G.
+ |title        = Introduction to the Bethe ansatz III.
+ |date         = August 1, 2000
+ |url          = http://www.phys.uri.edu/~gerhard/MSS/ms91.pdf
+ |accessdate   = 2008-10-25
+ |archive-url  = https://web.archive.org/web/20060901073407/http://www.phys.uri.edu/~gerhard/MSS/ms91.pdf
+ |archive-date = September 1, 2006
+ |url-status     = dead
+}}
+
+[[Category:Philosophy of physics]]
+[[Category:Concepts in physics]]
+[[Category:Mathematical terminology]]

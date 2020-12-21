@@ -1,0 +1,51 @@
+[[Image:Feynmann Diagram Gluon Radiation.svg|thumb|287px|right|In the context of experiments involving [[quantum chromodynamics]], acoplanarity can arise from the emission of [[gluons]] from the scattered final state particles.]]
+
+In [[particle physics]], the '''acoplanarity''' of a scattering experiment measures the degree to which the paths of the [[scattering|scattered]] particles deviate from being [[coplanar]]. Measurements of acoplanarity provide a test of [[perturbative]] [[quantum chromodynamics]], because QCD predicts that the emission of [[gluons]] can lead to acoplanar [[scattering event]]s.<ref name="REFG">
+{{cite journal
+ |last1=De Rújula |first1=A.
+ |last2=Ellis     |first2=J.
+ |last3=Floratos  |first3=E. G.
+ |last4=Gaillard  |first4=M. K.
+ |year=1978
+ |title=QCD predictions for hadronic final states in e +e - annihilation
+ |journal=[[Nuclear Physics B]]
+ |volume=138 |issue=3 |pages=387–429
+ |bibcode=1978NuPhB.138..387D
+ |doi=10.1016/0550-3213(78)90388-7
+|url=http://cds.cern.ch/record/132816/files/197803202.pdf
+ }}</ref>
+
+==Measures of acoplanarity==
+For a two-[[Jet (particle physics)|jet]] final state, a useful measure of acoplanarity is
+
+:<math> \varphi = \pi-( \phi_2 - \phi_1 ) </math>
+
+where <math>\phi_i</math> are the [[azimuthal angle]]s of the final state jets with respect to the [[beam line]].<ref>
+{{cite journal
+ |last1=Bordes |first1=G.
+ |last2=Nicolaidis |first2=A.
+ |year=1980
+ |title=Acoplanarity distributions at large transverse momenta
+ |journal=[[Physical Review D]]
+ |volume=22 |issue=9 |pages=2152–2156
+ |bibcode=1980PhRvD..22.2152B
+ |doi=10.1103/PhysRevD.22.2152
+}}</ref>
+An alternative measure of acoplanarity which is [[infrared safe]] and which works for broad jets of many particles is given by
+
+:<math> A = 4 \min{ \left( \frac{ \sum_i |p_{out}^i| }{ \sum_i |p_i| } \right)^2} </math>
+
+where <math>p_i</math> are the momenta of the final state particles and <math>p_{out}^i</math> are the components of these momenta perpendicular to a plane chosen such that A is minimized.<ref name="REFG" />
+In the case of two coplanar final state particles, the plane which minimizes A would contain the paths of both particles and the beamline, and A would equal 0.
+
+==See also==
+* [[Color confinement]] 
+* [[Asymptotic freedom]]
+
+==References==
+{{reflist}}
+
+[[Category:Particle physics]]
+
+
+{{particle-stub}}

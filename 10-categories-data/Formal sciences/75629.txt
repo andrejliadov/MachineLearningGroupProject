@@ -1,0 +1,189 @@
+{{For|the trees used in linguistics|Concrete syntax tree}}
+{{no footnotes|date=February 2013}}
+[[File:Abstract syntax tree for Euclidean algorithm.svg|thumb|400px|An abstract syntax tree for the following code for the [[Euclidean algorithm]]:{{pre|1='''while''' b ≠ 0<br>  '''if''' a > b<br>    a := a − b<br>  '''else'''<br>    b := b − a<br>'''return''' a}}]]
+In [[computer science]], an '''abstract syntax tree''' ('''AST'''), or just '''syntax tree''', is a [[directed tree|tree]] representation of the [[abstract syntax|abstract syntactic]] structure of [[source code]] written in a [[programming language]]. Each node of the tree denotes a construct occurring in the source code.
+
+The syntax is "abstract" in the sense that it does not represent every detail appearing in the real syntax, but rather just the structural or content-related details. For instance, grouping [[Bracket#Parentheses|parentheses]] are implicit in the tree structure, so these do not have to be represented as separate nodes. Likewise, a syntactic construct like an if-condition-then expression may be denoted by means of a single node with three branches.
+
+This distinguishes abstract syntax trees from concrete syntax trees, traditionally designated [[parse tree]]s. Parse trees are typically built by a [[parser]] during the source code translation and [[compiler|compiling]] process. Once built, additional information is added to the AST by means of subsequent processing, e.g., [[Semantic analysis (compilers)|contextual analysis]].
+
+Abstract syntax trees are also used in [[program analysis]] and [[program transformation]] systems.
+
+== Application in compilers ==
+
+Abstract syntax trees are [[data structures]] widely used in [[compilers]] to represent the structure of program code. An AST is usually the result of the [[syntax analysis]] phase of a compiler. It often serves as an intermediate representation of the program through several stages that the compiler requires, and has a strong impact on the final output of the compiler.
+
+=== Motivation ===
+An AST has several properties that aid the further steps of the compilation process:
+* An AST can be edited and enhanced with information such as properties and annotations for every element it contains. Such editing and annotation is impossible with the source code of a program, since it would imply changing it.
+* Compared to the [[source code]], an AST does not include inessential punctuation and delimiters (braces, semicolons, parentheses, etc.).
+* An AST usually contains extra information about the program, due to the consecutive stages of analysis by the compiler. For example, it may store the position of each element in the source code, allowing the compiler to print useful error messages.
+
+ASTs are needed because of the inherent nature of programming languages and their documentation. Languages are often ambiguous by nature. In order to avoid this ambiguity, programming languages are often specified as a [[context-free grammar]] (CFG). However, there are often aspects of programming languages that a CFG can't express, but are part of the language and are documented in its specification. These are details that require a context to determine their validity and behaviour. For example, if a language allows new types to be declared, a CFG cannot predict the names of such types nor the way in which they should be used. Even if a language has a predefined set of types, enforcing proper usage usually requires some context. Another example is [[duck typing]], where the type of an element can change depending on context. [[Operator overloading]] is yet another case where correct usage and final function are determined based on the context. Java provides an excellent example, where the '+' operator is both numerical addition and concatenation of strings.
+
+Although there are other [[data structure]]s involved in the inner workings of a compiler, the AST performs a unique function. During the first stage, the [[syntax analysis]] stage, a compiler produces a parse tree. This parse tree can be used to perform almost all functions of a compiler by means of syntax-directed translation. Although this method can lead to a more efficient compiler, it goes against the software engineering principles of writing and maintaining programs{{Citation needed|date=April 2015}}. Another advantage that the AST has over a parse tree is the size, particularly the smaller height of the AST and the smaller number of elements.
+
+=== Design ===
+
+The design of an AST is often closely linked with the design of a compiler and its expected features.
+
+Core requirements include the following:
+
+* Variable types must be preserved, as well as the location of each declaration in source code.
+* The order of executable statements must be explicitly represented and well defined.
+* Left and right components of binary operations must be stored and correctly identified.
+* Identifiers and their assigned values must be stored for assignment statements.
+
+These requirements can be used to design the data structure for the AST.
+
+Some operations will always require two elements, such as the two terms for addition. However, some language constructs require an arbitrarily large number of children, such as argument lists passed to programs from the [[command shell]]. As a result, an AST used to represent code written in such a language has to also be flexible enough to allow for quick addition of an unknown quantity of children.
+
+To support compiler verification it should be possible to unparse an AST into source code form. The source code produced should be sufficiently similar to the original in appearance and identical in execution, upon recompilation.
+
+=== Usage ===
+
+The AST is used intensively during [[Semantic analysis (compilers)|semantic analysis]], where the compiler checks for correct usage of the elements of the program and the language. The compiler also generates [[symbol table]]s based on the AST during semantic analysis. A complete traversal of the tree allows verification of the correctness of the program.
+
+After verifying correctness, the AST serves as the base for code generation. The AST is often used to generate an intermediate representation (IR), sometimes called an [[intermediate language]], for the code generation.
+
+== See also ==
+* [[Abstract semantic graph]] (ASG), also called ''term graph''
+* [[Composite pattern]]
+* [[Control flow graph]]
+* [[Directed acyclic graph]] (DAG)
+* [[Document Object Model]] (DOM)
+* [[Expression tree]]
+* [[Extended Backus–Naur Form]]
+* [[Lisp (programming language)|Lisp]], a family of languages written in trees, with macros to manipulate code trees
+* [[Parse tree]], also known as ''concrete syntax tree''
+* [[Semantic resolution tree]] (SRT)
+* [[Shunting yard algorithm]]
+* [[Symbol table]]
+* [[TreeDL]]
+
+== References ==
+{{Reflist}}
+{{refbegin}}
+* {{FOLDOC}}
+{{refend}}
+
+==Further reading==
+* {{cite document |last=Jones |first=Joel |title=Abstract Syntax Tree Implementation Idioms |url=http://www.hillside.net/plop/plop2003/Papers/Jones-ImplementingASTs.pdf }} (overview of AST implementation in various language families)
+* {{cite conference |last1=Neamtiu |first1=Iulian |last2=Foster |first2=Jeffrey S. |last3=Hicks |first3=Michael |date=May 17, 2005 |title=Understanding Source Code Evolution Using Abstract Syntax Tree Matching |conference=MSR'05 |location=Saint Louis, Missouri |publisher=ACM |citeseerx=10.1.1.88.5815}}
+* {{cite conference |last1=Baxter |first1=Ira D. |last2=Yahin |first2=Andrew |last3=Moura |first3=Leonardo |last4=Sant' Anna |first4=Marcelo |last5=Bier |first5=Lorraine |date=November 16–19, 1998 |title=Clone Detection Using Abstract Syntax Trees |work=Proceedings of ICSM'98 |location=Bethesda, Maryland |publisher=[[IEEE]] |url=http://www.semanticdesigns.com/Company/Publications/ICSM98.pdf }}
+* {{cite document |last1=Fluri |first1=Beat |last2=Würsch |first2=Michael |last3=Pinzger |first3=Martin |last4=Gall |first4=Harald C. |title=Change Distilling: Tree Differencing for Fine-Grained Source Code Change Extraction |url=http://www.merlin.uzh.ch/publication/show/2531 |format=PDF}} ([http://www.merlin.uzh.ch/contributionDocument/download/2162 direct link to PDF])
+* {{cite thesis |last=Würsch |first=Michael |degree=Diploma |title=Improving Abstract Syntax Tree based Source Code Change Detection |url=http://www.ifi.uzh.ch/seal/research/tools/archive/changeDetection.html}}
+* {{cite conference |work=Proceedings of ASE 2014|last1=Falleri |first1=Jean-Rémy |last2=Morandat |first2=Floréal |last3=Blanc |first3=Xavier |last4=Martinez |first4=Matias |last5=Monperrus |first5=Martin |title=Fine-grained and Accurate Source Code Differencing |url=https://hal.archives-ouvertes.fr/hal-01054552/document |format=PDF|doi=10.1145/2642937.2642982}}
+* {{cite web |last=Lucas |first=Jason |title=Thoughts on the Visual C++ Abstract Syntax Tree (AST) |url=https://devblogs.microsoft.com/cppblog/thoughts-on-the-visual-c-abstract-syntax-tree-ast/}}
+
+==External links==
+{{Commonscat}}
+*[http://www.eclipse.org/jdt/ui/astview/index.php AST View]: an [[Eclipse (software)|Eclipse]] plugin to [[Scientific visualization|visualize]] a [[Java (programming language)|Java]] abstract syntax tree
+*{{cite web|url=http://www.eclipse.org/articles/Article-JavaCodeManipulation_AST/index.html|title=Abstract Syntax Tree and Java Code Manipulation in the Eclipse IDE|work=eclipse.org}}
+*{{cite web|url=http://www.cs.utah.edu/flux/flick/current/doc/guts/gutsch6.html|title=CAST representation|work=cs.utah.edu}}
+*[http://eli-project.sourceforge.net/elionline/idem_3.html eli project]: Abstract Syntax Tree [[Unparsing]]
+*{{cite web | url = http://www.omg.org/news/meetings/workshops/ADM_2005_Proceedings_FINAL/T-3_Newcomb.pdf | title = Abstract Syntax Tree Metamodel Standard }}
+*{{cite web | url = http://www.omg.org/spec/ASTM/ | title = Architecture‑Driven Modernization — ADM: Abstract Syntax Tree Metamodeling — ASTM }} ([[Object Management Group|OMG]] standard).
+*[https://javaparser.org JavaParser]: The JavaParser library provides you with an Abstract Syntax Tree of your Java code. The AST structure then allows you to work with your Java code in an easy programmatic way.
+*[https://github.com/INRIA/spoon Spoon]: A library to analyze, transform, rewrite, and transpile Java source code. It parses source files to build a well-designed AST with powerful analysis and transformation API.
+
+{{Parsers}}
+{{Authority control}}
+
+{{DEFAULTSORT:Abstract Syntax Tree}}
+[[Category:Trees (data structures)]]
+[[Category:Formal languages]]{{For|the trees used in linguistics|Concrete syntax tree}}
+{{no footnotes|date=February 2013}}
+[[File:Abstract syntax tree for Euclidean algorithm.svg|thumb|400px|An abstract syntax tree for the following code for the [[Euclidean algorithm]]:{{pre|1='''while''' b ≠ 0<br>  '''if''' a > b<br>    a := a − b<br>  '''else'''<br>    b := b − a<br>'''return''' a}}]]
+In [[computer science]], an '''abstract syntax tree''' ('''AST'''), or just '''syntax tree''', is a [[directed tree|tree]] representation of the [[abstract syntax|abstract syntactic]] structure of [[source code]] written in a [[programming language]]. Each node of the tree denotes a construct occurring in the source code.
+
+The syntax is "abstract" in the sense that it does not represent every detail appearing in the real syntax, but rather just the structural or content-related details. For instance, grouping [[Bracket#Parentheses|parentheses]] are implicit in the tree structure, so these do not have to be represented as separate nodes. Likewise, a syntactic construct like an if-condition-then expression may be denoted by means of a single node with three branches.
+
+This distinguishes abstract syntax trees from concrete syntax trees, traditionally designated [[parse tree]]s. Parse trees are typically built by a [[parser]] during the source code translation and [[compiler|compiling]] process. Once built, additional information is added to the AST by means of subsequent processing, e.g., [[Semantic analysis (compilers)|contextual analysis]].
+
+Abstract syntax trees are also used in [[program analysis]] and [[program transformation]] systems.
+
+== Application in compilers ==
+
+Abstract syntax trees are [[data structures]] widely used in [[compilers]] to represent the structure of program code. An AST is usually the result of the [[syntax analysis]] phase of a compiler. It often serves as an intermediate representation of the program through several stages that the compiler requires, and has a strong impact on the final output of the compiler.
+
+=== Motivation ===
+An AST has several properties that aid the further steps of the compilation process:
+* An AST can be edited and enhanced with information such as properties and annotations for every element it contains. Such editing and annotation is impossible with the source code of a program, since it would imply changing it.
+* Compared to the [[source code]], an AST does not include inessential punctuation and delimiters (braces, semicolons, parentheses, etc.).
+* An AST usually contains extra information about the program, due to the consecutive stages of analysis by the compiler. For example, it may store the position of each element in the source code, allowing the compiler to print useful error messages.
+
+ASTs are needed because of the inherent nature of programming languages and their documentation. Languages are often ambiguous by nature. In order to avoid this ambiguity, programming languages are often specified as a [[context-free grammar]] (CFG). However, there are often aspects of programming languages that a CFG can't express, but are part of the language and are documented in its specification. These are details that require a context to determine their validity and behaviour. For example, if a language allows new types to be declared, a CFG cannot predict the names of such types nor the way in which they should be used. Even if a language has a predefined set of types, enforcing proper usage usually requires some context. Another example is [[duck typing]], where the type of an element can change depending on context. [[Operator overloading]] is yet another case where correct usage and final function are determined based on the context. Java provides an excellent example, where the '+' operator is both numerical addition and concatenation of strings.
+
+Although there are other [[data structure]]s involved in the inner workings of a compiler, the AST performs a unique function. During the first stage, the [[syntax analysis]] stage, a compiler produces a parse tree. This parse tree can be used to perform almost all functions of a compiler by means of syntax-directed translation. Although this method can lead to a more efficient compiler, it goes against the software engineering principles of writing and maintaining programs{{Citation needed|date=April 2015}}. Another advantage that the AST has over a parse tree is the size, particularly the smaller height of the AST and the smaller number of elements.
+
+=== Design ===
+
+The design of an AST is often closely linked with the design of a compiler and its expected features.
+
+Core requirements include the following:
+
+* Variable types must be preserved, as well as the location of each declaration in source code.
+* The order of executable statements must be explicitly represented and well defined.
+* Left and right components of binary operations must be stored and correctly identified.
+* Identifiers and their assigned values must be stored for assignment statements.
+
+These requirements can be used to design the data structure for the AST.
+
+Some operations will always require two elements, such as the two terms for addition. However, some language constructs require an arbitrarily large number of children, such as argument lists passed to programs from the [[command shell]]. As a result, an AST used to represent code written in such a language has to also be flexible enough to allow for quick addition of an unknown quantity of children.
+
+To support compiler verification it should be possible to unparse an AST into source code form. The source code produced should be sufficiently similar to the original in appearance and identical in execution, upon recompilation.
+
+=== Usage ===
+
+The AST is used intensively during [[Semantic analysis (compilers)|semantic analysis]], where the compiler checks for correct usage of the elements of the program and the language. The compiler also generates [[symbol table]]s based on the AST during semantic analysis. A complete traversal of the tree allows verification of the correctness of the program.
+
+After verifying correctness, the AST serves as the base for code generation. The AST is often used to generate an intermediate representation (IR), sometimes called an [[intermediate language]], for the code generation.
+
+== See also ==
+* [[Abstract semantic graph]] (ASG), also called ''term graph''
+* [[Composite pattern]]
+* [[Control flow graph]]
+* [[Directed acyclic graph]] (DAG)
+* [[Document Object Model]] (DOM)
+* [[Expression tree]]
+* [[Extended Backus–Naur Form]]
+* [[Lisp (programming language)|Lisp]], a family of languages written in trees, with macros to manipulate code trees
+* [[Parse tree]], also known as ''concrete syntax tree''
+* [[Semantic resolution tree]] (SRT)
+* [[Shunting yard algorithm]]
+* [[Symbol table]]
+* [[TreeDL]]
+
+== References ==
+{{Reflist}}
+{{refbegin}}
+* {{FOLDOC}}
+{{refend}}
+
+==Further reading==
+* {{cite document |last=Jones |first=Joel |title=Abstract Syntax Tree Implementation Idioms |url=http://www.hillside.net/plop/plop2003/Papers/Jones-ImplementingASTs.pdf }} (overview of AST implementation in various language families)
+* {{cite conference |last1=Neamtiu |first1=Iulian |last2=Foster |first2=Jeffrey S. |last3=Hicks |first3=Michael |date=May 17, 2005 |title=Understanding Source Code Evolution Using Abstract Syntax Tree Matching |conference=MSR'05 |location=Saint Louis, Missouri |publisher=ACM |citeseerx=10.1.1.88.5815}}
+* {{cite conference |last1=Baxter |first1=Ira D. |last2=Yahin |first2=Andrew |last3=Moura |first3=Leonardo |last4=Sant' Anna |first4=Marcelo |last5=Bier |first5=Lorraine |date=November 16–19, 1998 |title=Clone Detection Using Abstract Syntax Trees |work=Proceedings of ICSM'98 |location=Bethesda, Maryland |publisher=[[IEEE]] |url=http://www.semanticdesigns.com/Company/Publications/ICSM98.pdf }}
+* {{cite document |last1=Fluri |first1=Beat |last2=Würsch |first2=Michael |last3=Pinzger |first3=Martin |last4=Gall |first4=Harald C. |title=Change Distilling: Tree Differencing for Fine-Grained Source Code Change Extraction |url=http://www.merlin.uzh.ch/publication/show/2531 |format=PDF}} ([http://www.merlin.uzh.ch/contributionDocument/download/2162 direct link to PDF])
+* {{cite thesis |last=Würsch |first=Michael |degree=Diploma |title=Improving Abstract Syntax Tree based Source Code Change Detection |url=http://www.ifi.uzh.ch/seal/research/tools/archive/changeDetection.html}}
+* {{cite conference |work=Proceedings of ASE 2014|last1=Falleri |first1=Jean-Rémy |last2=Morandat |first2=Floréal |last3=Blanc |first3=Xavier |last4=Martinez |first4=Matias |last5=Monperrus |first5=Martin |title=Fine-grained and Accurate Source Code Differencing |url=https://hal.archives-ouvertes.fr/hal-01054552/document |format=PDF|doi=10.1145/2642937.2642982}}
+* {{cite web |last=Lucas |first=Jason |title=Thoughts on the Visual C++ Abstract Syntax Tree (AST) |url=https://devblogs.microsoft.com/cppblog/thoughts-on-the-visual-c-abstract-syntax-tree-ast/}}
+
+==External links==
+{{Commonscat}}
+*[http://www.eclipse.org/jdt/ui/astview/index.php AST View]: an [[Eclipse (software)|Eclipse]] plugin to [[Scientific visualization|visualize]] a [[Java (programming language)|Java]] abstract syntax tree
+*{{cite web|url=http://www.eclipse.org/articles/Article-JavaCodeManipulation_AST/index.html|title=Abstract Syntax Tree and Java Code Manipulation in the Eclipse IDE|work=eclipse.org}}
+*{{cite web|url=http://www.cs.utah.edu/flux/flick/current/doc/guts/gutsch6.html|title=CAST representation|work=cs.utah.edu}}
+*[http://eli-project.sourceforge.net/elionline/idem_3.html eli project]: Abstract Syntax Tree [[Unparsing]]
+*{{cite web | url = http://www.omg.org/news/meetings/workshops/ADM_2005_Proceedings_FINAL/T-3_Newcomb.pdf | title = Abstract Syntax Tree Metamodel Standard }}
+*{{cite web | url = http://www.omg.org/spec/ASTM/ | title = Architecture‑Driven Modernization — ADM: Abstract Syntax Tree Metamodeling — ASTM }} ([[Object Management Group|OMG]] standard).
+*[https://javaparser.org JavaParser]: The JavaParser library provides you with an Abstract Syntax Tree of your Java code. The AST structure then allows you to work with your Java code in an easy programmatic way.
+*[https://github.com/INRIA/spoon Spoon]: A library to analyze, transform, rewrite, and transpile Java source code. It parses source files to build a well-designed AST with powerful analysis and transformation API.
+
+{{Parsers}}
+{{Authority control}}
+
+{{DEFAULTSORT:Abstract Syntax Tree}}
+[[Category:Trees (data structures)]]
+[[Category:Formal languages]]

@@ -694,4 +694,700 @@ Viewed as a pure [[probability distribution]], the Bose–Einstein distribution 
 [[Category:Quantum field theory]]
 [[Category:Albert Einstein]]
 [[Category:Statistical mechanics]]
+[[Category:Indian inventions]]{{short description|Statistical description for the behavior of bosons}}
+{{Statistical mechanics|cTopic=[[Particle statistics|Particle Statistics]]}}
+In [[quantum statistics]], '''Bose–Einstein (B–E) statistics''' describe one of two possible ways in which a collection of non-interacting, indistinguishable [[particles]] may occupy a set of available discrete [[Energy level|energy states]] at [[thermodynamic equilibrium]]. The aggregation of particles in the same state, which is a characteristic of particles obeying Bose–Einstein statistics, accounts for the cohesive streaming of [[Laser#Quantum vs. classical emission processes|laser light]] and the frictionless creeping of [[Superfluid helium-4|superfluid helium]]. The theory of this behaviour was developed (1924–25) by [[Satyendra Nath Bose]], who recognized that a collection of identical and indistinguishable particles can be distributed in this way. The idea was later adopted and extended by [[Albert Einstein]] in collaboration with Bose.
+
+The Bose–Einstein statistics apply only to those particles not limited to single occupancy of the same state—that is, particles that do not obey the [[Pauli exclusion principle]] restrictions. Such particles have integer values of [[spin (physics)|spin]] and are named [[boson]]s, after the statistics that correctly describe their behaviour. There must also be no significant interaction between the particles.
+
+[[Image:Fermi-Dirac Bose-Einstein Maxwell-Boltzmann statistics.svg|256px|thumb|right|Comparison of average occupancy of the ground state for three statistics]]
+
+==Bose–Einstein distribution==
+At low temperatures, bosons behave differently from [[fermion]]s (which obey the [[Fermi–Dirac statistics]]) in a way that an unlimited number of them can "condense" into the same energy state. This apparently unusual property also gives rise to the special state of matter &ndash; the [[Bose–Einstein condensate]]. Fermi–Dirac and Bose–Einstein statistics apply when [[quantum|quantum effects]] are important and the particles are "[[Identical particles|indistinguishable]]". Quantum effects appear if the concentration of particles satisfies
+:<math>\frac{N}{V} \ge n_q, </math>
+where {{mvar|N}} is the number of particles, {{mvar|V}} is the volume, and {{math|''n''<sub>''q''</sub>}} is the [[quantum concentration]], for which the interparticle distance is equal to the [[thermal de Broglie wavelength]], so that the [[wavefunction]]s of the particles are barely overlapping.
+
+Fermi–Dirac statistics apply to fermions (particles that obey the [[Pauli exclusion principle]]), and Bose–Einstein statistics apply to [[bosons]]. As the quantum concentration depends on temperature, most systems at high temperatures obey the classical (Maxwell–Boltzmann) limit, unless they also have a very high density, as for a [[white dwarf]]. Both Fermi–Dirac and Bose–Einstein become [[Maxwell–Boltzmann statistics]] at high temperature or at low concentration.
+
+B–E statistics was introduced for [[photon]]s in 1924 by [[Satyendra Nath Bose|Bose]] and generalized to atoms by [[Albert Einstein|Einstein]] in 1924–25.
+
+The expected number of particles in an energy state ''i'' for B–E statistics is:{{Equation box 1|border|indent=:|equation=<math> \bar{n}_i = \frac{g_i}{e^{(\varepsilon_i-\mu) / k_\text{B} T} - 1} </math>|cellpadding=6|border colour=#0070BF|bgcolor=#FAFFFB|title=}}with {{math|''ε<sub>i</sub>''&nbsp;> ''μ''}} and where {{math|''n<sub>i</sub>''}} is the number of particles in state {{math|''i''}} over total number of particles of all energy states. {{math|''g<sub>i</sub>''}} is the [[Degenerate energy level|degeneracy]] of energy level {{math|''i'', ''ε<sub>i</sub>''}} is the [[energy]] of the ''i''-th state, ''μ'' is the [[chemical potential]], {{Math|''k''<sub>B</sub>}} is the [[Boltzmann constant]], and ''T'' is [[Thermodynamic temperature|absolute temperature]].
+
+For comparison, the average number of fermions with energy <math>\varepsilon_i</math> given by [[Fermi–Dirac statistics#Distribution of particles over energy|Fermi–Dirac particle-energy distribution]] has a similar form:
+:<math> \bar{n}_i(\varepsilon_i) = \frac{g_i}{e^{(\varepsilon_i - \mu)/k_\text{B}T} + 1}.</math>
+
+As mentioned above, both the Bose–Einstein distribution and the Fermi–Dirac distribution approaches the [[Maxwell–Boltzmann statistics#Limits of applicability|Maxwell–Boltzmann distribution]] in the limit of high temperature and low particle density, without the need for any ad hoc assumptions: 
+
+* In the limit of low particle density, <math>
+\bar{n}_i = \frac{g_i}{e^{(\varepsilon_i-\mu)/k_\text{B}T}\pm 1} \ll 1
+</math>, therefore <math>
+e^{(\varepsilon_i-\mu)/k_\text{B}T} \pm 1 \gg 1
+</math> or equivalently <math>
+e^{(\varepsilon_i-\mu)/k_\text{B}T} \gg 1
+</math>. In that case, <math>
+\bar{n}_i \approx \frac{g_i}{e^{(\varepsilon_i-\mu)/k_\text{B}T}}=\frac{1}{Z}e^{-\varepsilon_i/k_\text{B}T}
+</math>, which is the result from Maxwell-Boltzmann statistics.
+* In the limit of high temperature, the particles are distributed over a large range of energy values, therefore the occupancy on each state (especially the high energy ones with <math> \varepsilon_i - \mu \gg k_\text{B}T </math>) is again very small, <math>
+\bar{n}_i = \frac{g_i}{e^{(\varepsilon_i-\mu)/k_\text{B}T} \pm 1} \ll 1
+</math>. This again reduces to Maxwell-Boltzmann statistics.
+
+In addition to reducing to the [[Maxwell–Boltzmann distribution]] in the limit of high <math>T</math> and low density, B–E statistics also reduce to [[Rayleigh–Jeans law]] distribution for low energy states with <br> <math> \varepsilon_i - \mu \ll k_\text{B}T </math>, namely <br>
+
+:<math> \begin{align}
+\bar{n}_i & = \frac{g_i}{e^{(\varepsilon_i-\mu)/k_{\text{B}}T}-1} \\
+&\approx \frac{g_i}{(\varepsilon_i-\mu)/k_\text{B}T} = \frac{g_i k_\text{B}T}{\varepsilon_i - \mu}.
+\end{align} </math>
+
+==History==
+While presenting a lecture at the [[University of Dhaka]] (in what was then [[British India]] and is now [[Bangladesh]]) on the theory of radiation and the [[ultraviolet catastrophe]], [[Satyendra Nath Bose]] intended to show his students that the contemporary theory was inadequate, because it predicted results not in accordance with experimental results. During this lecture, Bose committed an error in applying the theory, which unexpectedly gave a prediction that agreed with the experiment. The error was a simple mistake—similar to arguing that flipping two fair coins will produce two heads one-third of the time—that would appear obviously wrong to anyone with a basic understanding of statistics (remarkably, this error resembled the famous blunder by [[Jean le Rond d'Alembert|d'Alembert]] known from his ''Croix ou Pile'' article<ref>{{Cite journal|last=d'Alembert|first=Jean|date=1754|title=Croix ou pile|journal=L'Encyclopédie|language=fr|volume=4}}</ref><ref>{{Cite web|url=http://www.cs.xu.edu/math/Sources/Dalembert/croix_ou_pile.pdf|title=CROIX OU PILE|last=d'Alembert|first=Jean|date=1754|website=Xavier University|trans-title=Translated by Richard J. Pulskamp|access-date=2019-01-14}}</ref>). However, the results it predicted agreed with experiment, and Bose realized it might not be a mistake after all. For the first time, he took the position that the [[Maxwell–Boltzmann distribution]] would not be true for all microscopic particles at all scales. Thus, he studied the probability of finding particles in various states in phase space, where each state is a little patch having phase volume of ''h''<sup>3</sup>, and the position and momentum of the particles are not kept particularly separate but are considered as one variable.
+
+Bose adapted this lecture into a short article called ''Planck's Law and the Hypothesis of Light Quanta''<ref>See p. 14, note 3, of the thesis: {{cite thesis
+ |type=Ph.D.
+ |first=Alessandro
+ |last=Michelangeli
+ |url=https://iris.sissa.it/retrieve/handle/20.500.11767/4185/1874/1963_5272_PhD_Michelangeli.pdf
+ |title=Bose–Einstein condensation: Analysis of problems and rigorous results
+ |date=October 2007
+ |publisher=[[International School for Advanced Studies]]
+ |accessdate=14 February 2019
+ |url-status=live
+ |lay-url=https://iris.sissa.it/handle/20.500.11767/4185?mode=full.1187
+ |archive-url=https://web.archive.org/web/20181103022036/https://iris.sissa.it/retrieve/handle/20.500.11767/4185/1874/1963_5272_PhD_Michelangeli.pdf
+ |archive-date=3 November 2018
+ }}</ref><ref>{{cite web |author=Bose<!--The paper gives the name of the author as just this single word--> |url=http://www.condmat.uni-oldenburg.de/TeachingSP/bose.ps |format=PostScript |title=Planck's law and the hypothesis of light quanta |work=[[University of Oldenburg]] |date=2 July 1924 |accessdate=30 November 2016}}</ref> and submitted it to the ''[[Philosophical Magazine]]''. However, the referee's report was negative, and the paper was rejected. Undaunted, he sent the manuscript to Albert Einstein requesting publication in the ''[[Zeitschrift für Physik]]''. Einstein immediately agreed, personally translated the article from English into German (Bose had earlier translated Einstein's article on the theory of General Relativity from German to English), and saw to it that it was published. Bose's theory achieved respect when Einstein sent his own paper in support of Bose's to ''Zeitschrift für Physik'', asking that they be published together. The paper came out in 1924.<ref>{{Citation | first = <!--The paper gives the name of the author as just this single word--> | last = Bose | title = Plancks Gesetz und Lichtquantenhypothese | journal = [[Zeitschrift für Physik]] | volume = 26 | issue = 1 | pages = 178–181 | year = 1924 | language = de | bibcode = 1924ZPhy...26..178B | doi = 10.1007/BF01327326| s2cid = 186235974 }}</ref>
+
+The reason Bose produced accurate results was that since photons are indistinguishable from each other, one cannot treat any two photons having equal quantum numbers (e.g., polarization and momentum vector) as being two distinct identifiable photons. By analogy, if in an alternate universe coins were to behave like photons and other bosons, the probability of producing two heads would indeed be one-third, and so is the probability of getting a head and a tail which equals one-half for the conventional (classical, distinguishable) coins. Bose's "error" leads to what is now called Bose–Einstein statistics.
+
+Bose and Einstein extended the idea to atoms and this led to the prediction of the existence of phenomena which became known as [[Bose–Einstein condensate]], a dense collection of bosons (which are particles with integer spin, named after Bose), which was demonstrated to exist by experiment in 1995.
+
+==Derivation==
+
+=== Derivation from the microcanonical ensemble ===
+In the [[microcanonical ensemble]], one considers a system with fixed energy, volume, and number of particles. We take a system composed of <math>N=\sum_i n_i</math> identical bosons, <math>n_i</math> of which have energy <math>\varepsilon_i</math> and are distributed over <math>g_i</math> levels or states with the same energy <math>\varepsilon_i</math>, i.e. <math>g_i</math> is the degeneracy associated with energy <math>\varepsilon_i</math> of total energy <math>E=\sum_i n_i\varepsilon_i</math>. Calculation of the number of arrangements of <math>n_i</math> particles distributed among <math>g_i</math> states is a problem of [[combinatorics]]. Since particles and states are indistinguishable in the quantum mechanical context here, and starting with a state, the number of arrangements is
+
+:<math> w_\text{BE} = \frac{(g+n-1)!}{n! (g-1)!} = C^{g+n-1}_n, </math>
+
+where <math> C^m_k </math> is the [[combination|''k''-combination]] of a set with ''m'' elements.
+
+If we start with a particle first, the number is
+
+:<math>w^*_\text{BE} = \frac{(g+n-1)!}{g!\, (n-1)!} = C^{g+n-1}_g.</math>
+
+The sum is
+:<math> w^'_\text{BE}= \frac{(g+n)!}{g!\,n!} = C^{g+n}_g.</math>
+
+Since here all numbers are large, the distinction is irrelevant in the present context. The total number of arrangements in an ensemble of bosons is
+:<math> W_\text{BE} =\prod_i\frac{(n_i +g_i -1)!}{(g_i-1)! n_i!}.</math>
+The maximum number of arrangements determining the corresponding occupation number <math>n_i</math> is obtained looking the condition that maximizes the [[entropy]], or equivalently, setting <math>\mathrm{d}(\ln W_\text{BE}) = 0</math> and taking the subsidiary conditions <math>N=\sum n_i, E=\sum_i n_i\varepsilon_i</math> into account (as [[Lagrange multiplier|Lagrange multipliers]]).<ref name=":0" /> The result for a large number of particles is the Bose–Einstein distribution.
+
+The expressions <math>w_\text{BE}, w^*_\text{BE}</math> are of considerable interest in many problems of combinatorics. For non-huge values of <math>n</math> and <math>g</math> the [[Binomial coefficient|binomial coefficients]] <math>C^n_r, C^{n+r-1}_r</math> are given by [[Pascal's triangle|Pascal's triangles]]. For more details about the combinatorics, see the notes of the canonical derivation.
+
+=== Derivation from the grand canonical ensemble ===
+The Bose–Einstein distribution, which applies only to a quantum system of non-interacting bosons, is naturally derived from the [[grand canonical ensemble]] without any approximations.<ref name="sriva7">{{cite book
+ |title=Statistical Mechanics
+ |last1=Srivastava |first1=R. K.
+ |last2=Ashok |first2=J.
+ |year=2005
+ |publisher=PHI Learning Pvt. Ltd.
+ |chapter=Chapter 7  
+ |isbn=9788120327825
+ |location=[[New Delhi]]
+}}</ref> In this ensemble, the system is able to exchange energy and exchange particles with a reservoir (temperature ''T'' and chemical potential ''µ'' fixed by the reservoir).
+
+Due to the non-interacting quality, each available single-particle level (with energy level ''ϵ'') forms a separate thermodynamic system in contact with the reservoir. That is, the number of particles within the overall system ''that occupy a given single particle state'' form a sub-ensemble that is also grand canonical ensemble; hence, it may be analysed through the construction of a [[grand partition function]].
+
+Every single-particle state is of a fixed energy, <math>\varepsilon</math>. As the sub-ensemble associated with a single-particle state varies by the number of particles only, it is clear that the total energy of the sub-ensemble is also directly proportional to the number of particles in the single-particle state; where <math>N</math> is the number of particles, the total energy of the sub-ensemble will then be <math>N\varepsilon</math>. Beginning with the standard expression for a grand partition function and replacing <math>E</math> with <math>N\varepsilon</math>, the grand partition function takes the form
+
+: <math>
+\mathcal Z = \sum_N \exp((N\mu - N\varepsilon)/k_\text{B} T) = \sum_N \exp(N(\mu - \varepsilon)/k_\text{B} T)
+</math>
+
+This formula applies to fermionic systems as well as bosonic systems. Fermi-Dirac statistics arise when considering the effect of the [[Pauli exclusion principle]]: whilst the number of fermions occupying the same single-particle state can only be either 1 or 0, the number of bosons occupying a single particle state may be any integer. Thus, the grand partition function for bosons can be considered a [[geometric series]] and may be evaluated as such:
+:<math> \begin{align}\mathcal Z & = \sum_{N=0}^\infty \exp(N(\mu - \varepsilon)/k_\text{B} T) = \sum_{N=0}^\infty [\exp((\mu - \varepsilon)/k_\text{B}T)]^N \\
+& = \frac{1}{1 - \exp((\mu - \varepsilon)/k_\text{B} T)}.\end{align}</math>
+Note that the geometric series is convergent only if <math>e^{(\mu - \varepsilon)/k_\text{B}T}<1</math>, including the case where <math>\epsilon=0</math>. This implies that the chemical potential for the Bose gas must be negative, i.e., <math>\mu<0</math>, whereas the Fermi gas is allowed to take both positive and negative values for the chemical potential.<ref>Landau, L. D., Lifšic, E. M., Lifshitz, E. M., & Pitaevskii, L. P. (1980). Statistical physics (Vol. 5). Pergamon Press.</ref>
+
+The average particle number for that single-particle substate is given by
+:<math> \langle N\rangle = k_\text{B} T \frac{1}{\mathcal Z} \left(\frac{\partial \mathcal Z}{\partial \mu}\right)_{V,T} = \frac{1}{\exp((\varepsilon-\mu)/k_\text{B} T)-1} </math>
+This result applies for each single-particle level and thus forms the Bose–Einstein distribution for the entire state of the system.<ref name="sriva6">{{cite book
+ |title=Statistical Mechanics
+ |chapter=Chapter 6  
+ |isbn=9788120327825
+|date=January 2005 
+ }}</ref><ref>The BE distribution can be derived also from thermal field theory.</ref>
+
+The variance in particle number (due to [[thermal fluctuations]]) may also be derived, the result can be expressed in terms of the <math>\langle N\rangle</math> value just derived:
+:<math> \langle \sigma_N^2 \rangle = k_\text{B} T \left(\frac{d\langle N\rangle}{d\mu}\right)_{V,T} = \frac{\exp((\varepsilon-\mu)/k_\text{B} T)}{(\exp((\varepsilon-\mu)/k_\text{B} T)-1)^2} = \langle N\rangle(1 + \langle N\rangle). </math>
+As a result, for highly occupied states the [[standard deviation]] of the particle number of an energy level is very large, slightly larger than the particle number itself: <math>\sigma_N \approx \langle N\rangle</math>. This large uncertainty is due to the fact that the [[probability distribution]] for the number of bosons in a given energy level is a [[geometric distribution]]; somewhat counterintuitively, the most probable value for ''N'' is always 0. (In contrast, [[Maxwell–Boltzmann statistics|classical particles]] have instead a [[Poisson distribution]] in particle number for a given state, with a much smaller uncertainty of <math>\sigma_{N,{\rm classical}} = \sqrt{\langle N\rangle}</math>, and with the most-probable ''N'' value being near <math>\langle N \rangle</math>.)
+
+=== Derivation in the canonical approach ===
+
+It is also possible to derive approximate Bose–Einstein statistics in the [[canonical ensemble]].
+These derivations are lengthy and only yield the above results in the asymptotic limit of a large number of particles.
+The reason is that the total number of bosons is fixed in the canonical ensemble. The Bose–Einstein distribution in this case can be derived as in most texts by maximization, but the mathematically best derivation is by the [[Darwin–Fowler method]] of mean values as emphasized by Dingle.<ref>R.B. Dingle, Asymptotic Expansions: Their Derivation and Interpretation, Academic Press (1973), pp. 267–271.</ref> See also Müller-Kirsten.<ref name=":0">H.J.W. Müller-Kirsten, Basics of Statistical Physics, 2nd ed., World Scientific (2013), {{ISBN|978-981-4449-53-3}}.</ref> The fluctuations of the ground state in the condensed region are however markedly different in the canonical and grand-canonical ensembles.<ref name=ZiffKacUhlenbeck77>Ziff R. M;  Kac, M.; Uhlenbeck, G. E. (1977). "[https://doi.org/10.1016/0370-1573(77)90052-7 The ideal Bose–Einstein gas, revisited.]" ''[[Physics Reports|Phys. Reports]]'' '''32''': 169-248.</ref>
+
+{{hidden begin|style=border:#aaa 1px solid|titlestyle=text-align:center|title=Derivation}}
+Suppose we have a number of energy levels, labeled by index
+<math>\displaystyle i</math>, each level 
+having energy <math>\displaystyle \varepsilon_i</math> and containing a total of 
+<math>\displaystyle n_i</math> particles.  Suppose each level contains 
+<math>\displaystyle g_i</math>
+distinct sublevels, all of which have the same energy, and which are distinguishable. For example, two particles may have different momenta, in which case they are distinguishable from each other, yet they can still have the same energy. 
+The value of  
+<math>\displaystyle g_i</math> associated with level <math>\displaystyle i</math> is called the "degeneracy" of that energy level. Any number of bosons can occupy the same sublevel.
+
+Let <span id="w(n,g)"><math>\displaystyle w(n,g)</math></span> be the number of ways of distributing
+<math>\displaystyle n</math> particles among the 
+<math>\displaystyle g</math> sublevels of an energy level. There is only one way of distributing
+<math>\displaystyle n</math> particles with one sublevel, therefore 
+<math>\displaystyle w(n,1)=1</math>. It is easy to see that
+there are <math>\displaystyle (n+1)</math> ways of distributing
+<math>\displaystyle n</math> particles in two sublevels which we will write as:
+
+:<math>
+w(n,2)=\frac{(n+1)!}{n!1!}.
+</math>
+
+With a little thought 
+(see [[#Notes|Notes]] below) 
+it can be seen that the number of ways of distributing
+<math>\displaystyle n</math> particles in three sublevels is
+
+:<math>w(n,3) = w(n,2) + w(n-1,2) + \cdots + w(1,2) + w(0,2)
+</math>
+so that
+
+:<math>
+w(n,3)=\sum_{k=0}^n w(n-k,2) = \sum_{k=0}^n\frac{(n-k+1)!}{(n-k)!1!}=\frac{(n+2)!}{n!2!}
+</math>
+
+where we have used the following <span id="theorem">theorem</span> involving [[binomial coefficient]]s:
+
+:<math>
+\sum_{k=0}^n\frac{(k+a)!}{k!a!}=\frac{(n+a+1)!}{n!(a+1)!}.
+</math>
+
+Continuing this process, we can see that 
+<span id="w(n,g)"><math>\displaystyle w(n,g)</math></span>
+is just a binomial coefficient
+(See [[#Notes|Notes]] below)
+
+:<math>
+w(n,g)=\frac{(n+g-1)!}{n!(g-1)!}.
+</math>
+
+For example, the population numbers for two particles in three sublevels are 200, 110, 101, 020, 011, or 002 for a total of six which equals 4!/(2!2!). The number of ways that a set of occupation numbers <math>\displaystyle n_i</math> can be realized is the product of the ways that each individual energy level can be populated:
+
+:<math>
+W = \prod_i w(n_i,g_i) =  \prod_i \frac{(n_i+g_i-1)!}{n_i!(g_i-1)!}
+\approx\prod_i \frac{(n_i+g_i)!}{n_i!(g_i)!}
+</math>
+
+where the approximation assumes that <math>n_i \gg 1</math>.
+
+Following the same procedure used in deriving the [[Maxwell–Boltzmann statistics]], we wish to find the set of  <math>\displaystyle n_i</math> for which  ''W'' is maximised, subject to the constraint that there be a fixed total number of particles, and a fixed total energy. The maxima of <math>\displaystyle W</math> and <math>\displaystyle \ln(W)</math> occur at the same value of  <math>\displaystyle n_i</math> and, since it is easier to accomplish mathematically, we will maximise the latter function instead. We constrain our solution using [[Lagrange multipliers]] forming the function:
+
+:<math>
+f(n_i)=\ln(W)+\alpha(N-\sum n_i)+\beta(E-\sum n_i \varepsilon_i)
+</math>
+
+Using the <math>n_i \gg 1</math> approximation and using [[Stirling's approximation]] for the factorials <math>\left(x!\approx x^x\,e^{-x}\,\sqrt{2\pi x}\right)</math> gives
+
+:<math>f(n_i)=\sum_i (n_i + g_i) \ln(n_i + g_i) - n_i \ln(n_i) +\alpha\left(N-\sum n_i\right)+\beta\left(E-\sum n_i \varepsilon_i\right)+K.</math>
+
+Where ''K'' is the sum of a number of terms which are not functions of the <math>n_i</math>. Taking the derivative with respect to <math>\displaystyle n_i</math>, and setting the result to zero and solving for  <math>\displaystyle n_i</math>, yields the Bose–Einstein population numbers:
+
+:<math>
+n_i = \frac{g_i}{e^{\alpha+\beta \varepsilon_i}-1}.
+</math>
+
+By a process similar to that outlined in the [[Maxwell–Boltzmann statistics]] article, it can be seen that:
+:<math>d\ln W=\alpha\,dN+\beta\,dE</math>
+
+which, using Boltzmann's famous relationship <math>S=k_\text{B}\,\ln W</math> becomes a statement of the [[second law of thermodynamics]] at constant volume, and it follows that <math>\beta = \frac{1}{k_\text{B}T}</math> and <math>\alpha = - \frac{\mu}{k_\text{B}T}</math> where ''S'' is the [[entropy]], <math>\mu</math> is the [[chemical potential]], ''k''<sub>B</sub> is [[Boltzmann's constant]] and ''T'' is the [[temperature]], so that finally:
+
+:<math>
+n_i = \frac{g_i}{e^{(\varepsilon_i-\mu)/k_\text{B}T}-1}.
+</math>
+
+Note that the above formula is sometimes written:
+
+:<math>
+n_i = \frac{g_i}{e^{\varepsilon_i/k_\text{B}T}/z-1},
+</math>
+
+where 
+<math>\displaystyle z=\exp(\mu/k_\text{B}T)</math> 
+is the absolute [[Thermodynamic activity|activity]], as noted by McQuarrie.<ref>See McQuarrie in citations</ref>
+
+Also note that when the particle numbers are not conserved, removing the conservation of particle numbers constraint is equivalent to setting <math>\alpha</math> and therefore the chemical potential <math>\mu</math> to zero. This will be the case for photons and massive particles in mutual equilibrium and the resulting distribution will be the [[Planck's law|Planck distribution]].
+{{hidden end}}
+{{hidden begin|style=border:#aaa 1px solid|titlestyle=text-align:center|title=Notes}}
+
+A much simpler way to think of Bose–Einstein distribution function is to consider that '''n''' particles are denoted by identical balls and '''g shells are marked by g-1 line partitions.''' It is clear that the [[permutation#Permutations of multisets|permutation]]s of these '''n balls''' and '''g&nbsp;&minus;&nbsp;1 partitions''' will give different ways of arranging bosons in different energy levels. Say, for 3 (=&nbsp;''n'') particles and 3 (=&nbsp;''g'') shells, therefore (''g''&nbsp;−&nbsp;1)&nbsp;=&nbsp;2, the arrangement might be '''|●●|●''', or '''||●●●''', or '''|●|●● ''', etc. Hence the number of distinct permutations of n + (g-1) objects which have n identical items and (''g''&nbsp;−&nbsp;1) identical items will be:
+
+: <math>
+    \frac{(g-1 + n)!}{(g-1)! n!}
+</math>
+
+'''OR'''
+
+The purpose of these notes is to clarify some aspects of the derivation of the Bose–Einstein (B–E) 
+distribution for beginners.  The enumeration of cases (or ways) in the B–E distribution can be recast as 
+follows.  Consider a game of dice throwing in which there are 
+<math>\displaystyle n</math> dice, 
+with each die taking values in the set 
+<math>\displaystyle \{ 1, \dots, g \}</math>, for <math>g \ge 1</math>.  
+The constraints of the game are that the value of a die 
+<math>\displaystyle i</math>, denoted by <math>\displaystyle m_i</math>, has to be 
+'''''greater than or equal to''''' the value of die 
+<math>\displaystyle (i-1)</math>, denoted by 
+<math>\displaystyle m_{i-1}</math>, in the previous throw, i.e., 
+<math>m_i \ge m_{i-1}</math>.  Thus a valid sequence of die throws can be described by an 
+''n''-tuple 
+<math>\displaystyle ( m_1 , m_2 , \dots , m_n)</math>, such that <math>m_i \ge m_{i-1}</math>.  Let <math>\displaystyle S(n,g)</math> denote the set of these valid ''n''-tuples:
+
+:{| style="width:100%" border="0"
+|-
+| style="width:95%" | 
+<math> S(n,g) = \Big\{ ( m_1 , m_2 , \dots , m_n ) \Big| \Big. m_i \ge m_{i-1}, m_i \in \left\{ 1,  \ldots, g \right\}, \forall i = 1, \dots , n \Big\}.
+</math>
+| style="width:5%" | (1)
+|}
+
+Then the quantity <math>\displaystyle w(n,g)</math> ([[#w(n,g)|defined above]] as the number of ways to distribute 
+<math>\displaystyle n</math> particles among the 
+<math>\displaystyle g</math> sublevels of an energy level) is the cardinality of <math>\displaystyle S(n,g)</math>, i.e., the number of elements (or valid ''n''-tuples) in <math>\displaystyle S(n,g)</math>.
+Thus the problem of finding an expression for 
+<math>\displaystyle w(n,g)</math> 
+becomes the problem of counting the elements in <math>\displaystyle S(n,g)</math>.
+<!--
+'''Example ''n'' = 3, ''g'' = 3:'''
+-->
+
+'''Example ''n'' = 4, ''g'' = 3:'''
+:<math>
+   S(4,3) =
+   \left\{ 
+      \underbrace{(1111), (1112), (1113)}_{(a)},
+      \underbrace{(1122), (1123), (1133)}_{(b)},
+      \underbrace{(1222), (1223), (1233), (1333)}_{(c)},
+   \right.
+</math>
+:::::<math>
+   \left.
+      \underbrace{(2222), (2223), (2233), (2333), (3333)}_{(d)}
+   \right\}
+</math>
+:<math>\displaystyle w(4,3) = 15</math> (there are <math>\displaystyle 15</math> elements in <math>\displaystyle S(4,3)</math>)
+<!--
+<math>
+   \displaystyle S(4,3)
+</math>)
+-->
+
+Subset 
+<math>\displaystyle (a)</math>
+is obtained by fixing all indices 
+<math>\displaystyle m_i</math> to 
+<math>\displaystyle 1</math>, except for the last index, 
+<math>\displaystyle m_n</math>, which is incremented from 
+<math>\displaystyle 1</math> to
+<math>\displaystyle g=3</math>.
+Subset 
+<math>\displaystyle (b)</math>
+is obtained by fixing 
+<math>\displaystyle m_1 = m_2 = 1</math>, and incrementing 
+<math>\displaystyle m_3</math> from 
+<math>\displaystyle 2</math> to
+<math>\displaystyle g=3</math>.  Due to the constraint 
+<math>
+   \displaystyle 
+   m_i \ge m_{i-1}
+</math>
+on the indices in 
+<math>\displaystyle S(n,g)</math>,
+the index
+<math>\displaystyle m_4</math> must 
+automatically
+take values in 
+<math>\displaystyle \left\{ 2, 3 \right\}</math>.
+The construction of subsets
+<math>\displaystyle (c)</math> and 
+<math>\displaystyle (d)</math>
+follows in the same manner.
+
+Each element of 
+<math>\displaystyle S(4,3)</math> can be thought of as a 
+[[multiset]] 
+of cardinality 
+<math>\displaystyle n=4</math>; 
+the elements of such multiset are taken from the set 
+<math>\displaystyle \left\{ 1, 2, 3 \right\}</math>
+of cardinality 
+<math>\displaystyle g=3</math>,
+and the number of such multisets is the 
+[[multiset#Multiset coefficients|multiset coefficient]]
+:<math>
+   \displaystyle 
+   \left\langle 
+      \begin{matrix} 
+	 3 
+	 \\ 
+	 4 
+      \end{matrix}
+   \right\rangle 
+   = {3 + 4 - 1 \choose 3-1}
+   = {3 + 4 - 1 \choose 4}
+   =
+   \frac
+   {6!}
+   {4! 2!}
+   = 15
+</math>
+
+More generally, each element of 
+<math>\displaystyle S(n,g)</math>
+is a 
+[[multiset]] 
+of cardinality
+<math>\displaystyle n</math>
+(number of dice)
+with elements taken from the set 
+<math>\displaystyle \left\{ 1, \dots, g \right\}</math>
+of cardinality 
+<math>\displaystyle g</math>
+(number of possible values of each die),
+and the number of such multisets, i.e., 
+<math>\displaystyle w(n,g)</math>
+is the 
+[[multiset#Multiset coefficients|multiset coefficient]]
+:{| style="width:100%" border="0"
+|-
+| style="width:95%" | 
+<math>
+   \displaystyle 
+   w(n,g) 
+   =
+   \left\langle 
+      \begin{matrix} 
+	 g 
+	 \\ 
+	 n 
+      \end{matrix}
+   \right\rangle 
+   = {g + n - 1 \choose g-1}
+   = {g + n - 1 \choose n}
+   = 
+   \frac{(g + n - 1)!}
+   {n! (g-1)!}
+</math>
+| style="width:5%" | (2)
+|}
+which is exactly the same as the 
+[[#w(n,g)|formula]] for <math>\displaystyle w(n,g)</math>, as derived above with the aid
+of
+a [[#theorem|theorem]] involving binomial coefficients, namely
+
+:{| style="width:100%" border="0"
+|-
+| style="width:95%" | 
+<math>
+\sum_{k=0}^n\frac{(k+a)!}{k!a!}=\frac{(n+a+1)!}{n!(a+1)!}.
+</math>
+| style="width:5%" | (3)
+|}
+
+To understand the decomposition
+:{| style="width:100%" border="0"
+|-
+| style="width:95%" | 
+<math>
+   \displaystyle 
+   w(n,g) 
+   =
+   \sum_{k=0}^n
+   w(n-k, g-1)
+   =
+   w(n, g-1)
+   +
+   w(n-1, g-1)
+   +
+   \cdots
+   +
+   w(1, g-1)
+   +
+   w(0, g-1)
+</math>
+| style="width:5%" | (4)
+|}
+or for example, 
+<math>\displaystyle n=4</math>
+and
+<math>\displaystyle g=3</math>
+:<math>
+   \displaystyle 
+   w(4,3)
+   =
+   w(4,2)
+   +
+   w(3,2)
+   +
+   w(2,2)
+   +
+   w(1,2)
+   +
+   w(0,2),
+</math>
+
+let us rearrange the elements of 
+<math>\displaystyle S(4,3)</math> as follows
+:<math>
+   S(4,3) =
+   \left\{ 
+      \underbrace{
+	 (1111), 
+	 (1112), 
+	 (1122), 
+	 (1222), 
+	 (2222)
+      }_{(\alpha)},
+      \underbrace{
+	 (111{\color{Red}{\underset{=}{3}}}),
+	 (112{\color{Red}{\underset{=}{3}}}), 
+	 (122{\color{Red}{\underset{=}{3}}}), 
+	 (222{\color{Red}{\underset{=}{3}}}) 
+      }_{(\beta)},
+   \right.
+</math>
+:::::<math>
+   \left.
+      \underbrace{
+	 (11{\color{Red}{\underset{==}{33}}}),
+	 (12{\color{Red}{\underset{==}{33}}}), 
+	 (22{\color{Red}{\underset{==}{33}}}) 
+      }_{(\gamma)},
+      \underbrace{
+	 (1{\color{Red}{\underset{===}{333}}}),
+	 (2{\color{Red}{\underset{===}{333}}}) 
+      }_{(\delta)}
+      \underbrace{
+	 ({\color{Red}{\underset{====}{3333}}})
+      }_{(\omega)}
+   \right\}.
+</math>
+
+Clearly, the subset
+<math>\displaystyle (\alpha)</math>
+of 
+<math>\displaystyle S(4,3)</math>
+is the same as the set
+:<math>
+   \displaystyle 
+   S(4,2)
+   =
+   \left\{ 
+	 (1111), 
+	 (1112), 
+	 (1122), 
+	 (1222), 
+	 (2222)
+   \right\}
+</math>.
+
+By deleting the index 
+<math>\displaystyle m_4=3</math>
+(shown in <span style="color:red;">red with double underline</span>)
+in
+the subset 
+<math>\displaystyle (\beta)</math>
+of 
+<math>\displaystyle S(4,3)</math>,
+one obtains
+the set
+:<math>
+   \displaystyle 
+   S(3,2)
+   =
+   \left\{ 
+	 (111),
+	 (112), 
+	 (122), 
+	 (222) 
+   \right\}
+</math>.
+In other words, there is a one-to-one correspondence between the subset
+<math>\displaystyle (\beta)</math>
+of 
+<math>\displaystyle S(4,3)</math>
+and the set
+<math>\displaystyle S(3,2)</math>.  We write
+:<math>
+   \displaystyle 
+   (\beta)
+   \longleftrightarrow
+   S(3,2)
+</math>.
+
+Similarly, it is easy to see that
+:<math>
+   \displaystyle 
+   (\gamma)
+   \longleftrightarrow
+   S(2,2)
+   =
+   \left\{ 
+	 (11),
+	 (12), 
+	 (22) 
+   \right\}
+</math>
+:<math>
+   \displaystyle 
+   (\delta)
+   \longleftrightarrow
+   S(1,2)
+   =
+   \left\{ 
+	 (1),
+	 (2) 
+   \right\}
+</math>
+:<math>
+   \displaystyle 
+   (\omega)
+   \longleftrightarrow
+   S(0,2)
+   =
+   \varnothing
+</math> (empty set).
+
+Thus we can write 
+:<math>
+   \displaystyle 
+   S(4,3) 
+   =
+   \bigcup_{k=0}^{4}
+   S(4-k,2)
+</math>
+
+or more generally,
+:{| style="width:100%" border="0"
+|-
+| style="width:95%" | 
+<math>
+   \displaystyle 
+   S(n,g) 
+   =
+   \bigcup_{k=0}^{n}
+   S(n-k,g-1)
+</math>;
+| style="width:5%" | (5)
+|}
+and since the sets 
+:<math>
+   S(i,g-1), \text{ for } i = 0, \dots , n
+</math>
+are non-intersecting, we thus have
+:{| style="width:100%" border="0"
+|-
+| style="width:95%" | 
+<math>
+   \displaystyle 
+   w(n,g) 
+   =
+   \sum_{k=0}^{n}
+   w(n-k,g-1)
+</math>,
+| style="width:5%" | (6)
+|}
+with the convention that
+:{| style="width:100%" border="0"
+|-
+| style="width:95%" | 
+:<math> w(0,g) = 1 \ , \forall g, \text{ and } w(n,0) = 1 \ , \forall n. </math>
+| style="width:5%" | (7)
+|}
+Continuing the process, we arrive at the following formula
+:<math> w(n,g) = \sum_{k_1=0}^n \sum_{k_2=0}^{n-k_1} w(n - k_1 - k_2, g-2) = \sum_{k_1=0}^n \sum_{k_2=0}^{n-k_1} \cdots \sum_{k_g=0}^{n-\sum_{j=1}^{g-1} k_j} w(n - \sum_{i=1}^{g} k_i, 0). </math>
+Using the convention (7)<sub>2</sub> above, we obtain the formula
+:{| style="width:100%" border="0"
+|-
+| style="width:95%" | 
+<math>
+   \displaystyle 
+   w(n,g) 
+   =
+   \sum_{k_1=0}^{n}
+   \sum_{k_2=0}^{n-k_1}
+   \cdots
+   \sum_{k_g=0}^{n-\sum_{j=1}^{g-1} k_j}
+   1,
+</math>
+| style="width:5%" | (8)
+|}
+
+keeping in mind that for 
+<math>\displaystyle q</math>
+and 
+<math>\displaystyle p</math>
+being constants, we have
+:{| style="width:100%" border="0"
+|-
+| style="width:95%"  |
+<math>
+   \displaystyle 
+   \sum_{k=0}^{q}
+   p
+   =
+   q p
+</math>.
+| style= | (9)
+|}
+
+It can then be verified that (8) and (2) give the same result for 
+<math>\displaystyle w(4,3)</math>,
+<math>\displaystyle w(3,3)</math>, 
+<math>\displaystyle w(3,2)</math>, etc.
+
+{{hidden end}}
+
+==Interdisciplinary applications==
+
+Viewed as a pure [[probability distribution]], the Bose–Einstein distribution has found application in other fields:
+
+* In recent years, Bose Einstein statistics have also been used as a method for term weighting in [[information retrieval]]. The method is one of a collection of DFR ("Divergence From Randomness") models,<ref name=bia1>Amati, G.; C. J. Van Rijsbergen (2002). "[http://dl.acm.org/citation.cfm?id=582416 Probabilistic models of information retrieval based on measuring the divergence from randomness ]" ''[[ACM Transactions on Information Systems|ACM TOIS]]'' '''20'''(4):357–389.</ref> the basic notion being that Bose Einstein statistics may be a useful indicator in cases where a particular term and a particular document have a significant relationship that would not have occurred purely by chance. Source code for implementing this model is available from the [http://ir.dcs.gla.ac.uk/terrier/doc/dfr_description.html Terrier project] at the University of Glasgow.
+* {{Main article|Bose–Einstein condensation (network theory)}} The evolution of many complex systems, including the [[World Wide Web]], business, and citation networks, is encoded in the dynamic web describing the interactions between the system's constituents. Despite their irreversible and nonequilibrium nature these networks follow Bose statistics and can undergo Bose–Einstein condensation. Addressing the dynamical properties of these nonequilibrium systems within the framework of equilibrium quantum gases predicts that the "first-mover-advantage," "fit-get-rich('''FGR''')," and "winner-takes-all" phenomena observed in competitive systems are thermodynamically distinct phases of the underlying evolving networks.<ref name=bia2>[[Ginestra Bianconi|Bianconi, G.]];  Barabási, A.-L. (2001). "[http://prola.aps.org/abstract/PRL/v86/i24/p5632_1 Bose–Einstein Condensation in Complex Networks.]" ''[[Physical Review Letters|Phys. Rev. Lett.]]'' '''86''': 5632–35.</ref>
+
+==See also==
+* [[Bose–Einstein correlations]]
+* [[Bose–Einstein condensate]]
+* [[Bose gas]]
+* [[Einstein solid]]
+* [[Higgs boson]]
+* [[Parastatistics]]
+* [[Planck's law of black body radiation]]
+* [[Superconductivity]]
+* [[Fermi–Dirac statistics]]
+* [[Maxwell–Boltzmann statistics]]
+
+==Notes==
+{{Reflist}}
+
+==References==
+*{{cite book |title=Superconductivity, Superfluids and Condensates |last=Annett |first=James F. |year=2004 |publisher=Oxford University Press |location=New York |isbn=0-19-850755-0 }}
+*{{cite book |title=Classical and Statistical Thermodynamics |last=Carter |first=Ashley H. |year=2001 |publisher=Prentice Hall |location=Upper Saddle River, New Jersey |isbn=0-13-779208-5 }}
+*{{cite book |title=Introduction to Quantum Mechanics |last=Griffiths |first=David J. |year=2005 |edition=2nd |publisher=Pearson, Prentice Hall |location=Upper Saddle River, New Jersey |isbn=0-13-191175-9 }}
+*{{cite book |title=Statistical Mechanics |last=McQuarrie |first=Donald A. |year=2000 |edition=1st |publisher=University Science Books |location=Sausalito, California 94965 |isbn=1-891389-15-7 |page=[https://archive.org/details/statisticalmecha00mcqu_0/page/55 55] |url=https://archive.org/details/statisticalmecha00mcqu_0/page/55 |url-access=registration }}
+
+{{Statistical mechanics topics}}
+{{Einstein}}
+<!-- Editors: Please do not add the probability distributions template here. The Bose Einstein distribution is not a probability distribution. -->
+
+{{DEFAULTSORT:Bose-Einstein statistics}}
+[[Category:Bose–Einstein statistics| ]]
+[[Category:Concepts in physics]]
+[[Category:Quantum field theory]]
+[[Category:Albert Einstein]]
+[[Category:Statistical mechanics]]
 [[Category:Indian inventions]]

@@ -1,0 +1,261 @@
+The [[refractive index]] of [[properties of water|water]] at 20&nbsp;°C for visible light is 1.33<ref>{{cite book|url=https://books.google.com/books?id=kTnxSi2B2FcC|title=CRC Handbook of Chemistry and Physics, 84th Edition|last=Lide|first=David R.|date=2003-06-19|publisher=[[CRC Press]]|isbn=9780849304842|series=[[CRC Handbook]]|at=8—Concentrative Properties of Aqueous Solutions: Density, Refractive Index, Freezing Point Depression, and Viscosity|language=en}}</ref>. The refractive index of normal ice is 1.31 (from [[List of refractive indices]]). In general, an index of refraction is a [[complex number]] with real and imaginary parts, where the latter indicates the strength of absorption loss at a particular wavelength. In the visible part of the electromagnetic spectrum, the imaginary part of the refractive index is very small. However, water and ice absorb in infrared and close the [[infrared window|infrared atmospheric window]] thereby contributing to the [[greenhouse effect]]
+
+The absorption spectrum of pure water is used in numerous applications, including light scattering and absorption by [[ice]] crystals and [[cloud physics|cloud water droplets]], theories of the [[rainbow]], determination of the [[single-scattering albedo]], [[ocean color]], and many others.
+
+==Quantitative description of the refraction index==
+
+Over the wavelengths from 0.2 μm to 1.2 μm, and over temperatures from −12&nbsp;°C to 500&nbsp;°C, the real part of the index of refraction of water can be calculated by the following empirical expression:
+<ref>{{cite report
+  | author = The International Association for the Properties of Water and Steam
+  | title = Release on the Refractive Index of Ordinary Water Substance as a Function of Wavelength, Temperature, and Pressure (IAPWS R9-97)
+  | date= September 1997
+  | url= http://www.iapws.org/relguide/rindex.pdf
+  | accessdate = 2008-10-08}}</ref>
+
+:<math>\frac{n^{2}-1}{n^{2}+2}(1/\overline{\rho })=a_{0}+a_{1}\overline{\rho}+a_{2}\overline{T}+a_{3}{\overline{\lambda}}^{2}\overline{T}+\frac{a_{4}}{{\overline{\lambda}}^{2}}+\frac{a_{5}}{{\overline{\lambda }}^{2}-{\overline{\lambda}}_{\mathit{UV}}^{2}}+\frac{a_{6}}{{\overline{\lambda}}^{2}-{\overline{\lambda }}_{\mathit{IR}}^{2}}+a_{7}{\overline{\rho}}^{2}</math>
+
+Where:
+:<math>\overline T = \frac{T}{T^{\text{*}}}</math>,
+:<math>\overline \rho = \frac{\rho}{\rho^{\text{*}}}</math>, and
+:<math>\overline \lambda = \frac{\lambda}{\lambda^{\text{*}}}</math>
+and the appropriate constants are
+<math>a_0</math> = 0.244257733, <math>a_1</math> = 0.00974634476, <math>a_2</math> = −0.00373234996, <math>a_3</math> = 0.000268678472, <math>a_4</math> = 0.0015892057, <math>a_5</math> = 0.00245934259, <math>a_6</math> = 0.90070492, <math>a_7</math> = −0.0166626219, <math>T^{*}</math> = 273.15 K,<math>\rho^{*}</math> = 1000&nbsp;kg/m<sup>3</sup>, <math>\lambda^{*}</math> = 589&nbsp;nm, <math>\overline\lambda_{\text{IR}}</math> = 5.432937, and <math>\overline\lambda_{\text{UV}}</math> = 0.229202.
+
+In the above expression, T is the absolute temperature of water (in K), <math>\lambda</math> is the wavelength of light in nm, <math>\rho</math> is the density of the water in kg/m<sup>3</sup>, and n is the real part of the index of refraction of water.
+
+==Volumic mass of water==
+In the above formula, the density of water also varies with temperature and is defined by:<ref>https://metgen.pagesperso-orange.fr/metrologiefr19.htm</ref><ref>https://www.econology.info/masse-volumique-eau-temperature/</ref>
+
+<math>\rho(t) = a_5 \left( 1-\frac{(t+a_1)^2(t+a_2)}{a_3(t+a_4)} \right)</math>
+
+with:
+
+* <math>a_1</math> = −3.983035 °C
+* <math>a_2</math> = 301.797 °C
+* <math>a_3</math> = 522528.9 °C<sup>2</sup>
+* <math>a_4</math> = 69.34881 °C
+* <math>a_5</math> = 999.974950 kg / m<sup>3</sup>
+
+==Refractive index (real and imaginary parts) for liquid water==
+{| class="wikitable sortable" border="1"
+|+ Refractive Index of Liquid Water
+|-
+! scope="col" | Wavelength (μm)
+! scope="col" | Wavenumber (cm<sup>−1</sup>)
+! scope="col" | Frequency (THz)
+! scope="col" class="unsortable" | ''n''
+! scope="col" class="unsortable" | ''k''
+! scope="col" class="unsortable" | α' (cm<sup>−1</sup>)
+|-
+| 0.200 || {{val|5.00|e=4}} || {{val|1.50|e=3}} || 1.396 || {{val|1.1|e=-7}} || 0.069
+|-
+| 0.225 || {{val|4.44|e=4}} || {{val|1.33|e=3}} || 1.373 || {{val|4.9|e=-8}} || 0.027
+|-
+| 0.250 || {{val|4.00|e=4}} || {{val|1.20|e=3}} || 1.362 || {{val|3.35|e=-8}} || 0.0168
+|-
+| 0.275 || {{val|3.64|e=4}} || {{val|1.09|e=3}} || 1.354 || {{val|2.35|e=-8}} || 0.0107
+|-
+| 0.300 || {{val|3.33|e=4}} || 999              || 1.349 || {{val|1.6|e=-8}} || {{val|6.7|e=-3}}
+|-
+| 0.325 || {{val|3.08|e=4}} || 922              || 1.346 || {{val|1.08|e=-8}} || {{val|4.18|e=-3}}
+|-
+| 0.350 || {{val|2.86|e=4}} || 857              || 1.343 || {{val|6.5|e=-9}} || {{val|2.3|e=-3}}
+|-
+| 0.375 || {{val|2.67|e=4}} || 799              || 1.341 || {{val|3.5|e=-9}} || {{val|1.2|e=-3}}
+|-
+| 0.400 || {{val|2.50|e=4}} || 749              || 1.339 || {{val|1.86|e=-9}} || {{val|5.84|e=-4}}
+|-
+| 0.425 || {{val|2.35|e=4}} || 705              || 1.338 || {{val|1.3|e=-9}} || {{val|3.8|e=-4}}
+|-
+| 0.450 || {{val|2.22|e=4}} || 666              || 1.337 || {{val|1.02|e=-9}} || {{val|2.85|e=-4}}
+|-
+| 0.475 || {{val|2.11|e=4}} || 631              || 1.336 || {{val|9.35|e=-10}} || {{val|2.47|e=-4}}
+|-
+| 0.500 || {{val|2.00|e=4}} || 600              || 1.335 || {{val|1.00|e=-9}} || {{val|2.51|e=-4}}
+|-
+| 0.525 || {{val|1.90|e=4}} || 571              || 1.334 || {{val|1.32|e=-9}} || {{val|3.16|e=-4}}
+|-
+| 0.550 || {{val|1.82|e=4}} || 545              || 1.333 || {{val|1.96|e=-9}} || {{val|4.48|e=-4}}
+|-
+| 0.575 || {{val|1.74|e=4}} || 521              || 1.333 || {{val|3.60|e=-9}} || {{val|7.87|e=-4}}
+|-
+| 0.600 || {{val|1.67|e=4}} || 500              || 1.332 || {{val|1.09|e=-8}} || {{val|2.28|e=-3}}
+|-
+| 0.625 || {{val|1.60|e=4}} || 480              || 1.332 || {{val|1.39|e=-8}} || {{val|2.79|e=-3}}
+|-
+| 0.650 || {{val|1.54|e=4}} || 461              || 1.331 || {{val|1.64|e=-8}} || {{val|3.17|e=-3}}
+|-
+| 0.675 || {{val|1.48|e=4}} || 444              || 1.331 || {{val|2.23|e=-8}} || {{val|4.15|e=-3}}
+|-
+| 0.700 || {{val|1.43|e=4}} || 428              || 1.331 || {{val|3.35|e=-8}} || {{val|6.01|e=-3}}
+|-
+| 0.725 || {{val|1.38|e=4}} || 414              || 1.330 || {{val|9.15|e=-8}} || 0.0159
+|-
+| 0.750 || {{val|1.33|e=4}} || 400              || 1.330 || {{val|1.56|e=-7}} || 0.0261
+|-
+| 0.775 || {{val|1.29|e=4}} || 387              || 1.330 || {{val|1.48|e=-7}} || 0.0240
+|-
+| 0.800 || {{val|1.25|e=4}} || 375              || 1.329 || {{val|1.25|e=-7}} || 0.0196
+|-
+| 0.825 || {{val|1.21|e=4}} || 363              || 1.329 || {{val|1.82|e=-7}} || 0.0282
+|-
+| 0.850 || {{val|1.18|e=4}} || 353              || 1.329 || {{val|2.93|e=-7}} || 0.0433
+|-
+| 0.875 || {{val|1.14|e=4}} || 343              || 1.328 || {{val|3.91|e=-7}} || 0.0562
+|-
+| 0.900 || {{val|1.11|e=4}} || 333              || 1.328 || {{val|4.86|e=-7}} || 0.0679
+|-
+| 0.925 || {{val|1.08|e=4}} || 324              || 1.328 || {{val|1.06|e=-6}} || 0.144
+|-
+| 0.950 || {{val|1.05|e=4}} || 316              || 1.327 || {{val|2.93|e=-6}} || 0.388
+|-
+| 0.975 || {{val|1.03|e=4}} || 307              || 1.327 || {{val|3.48|e=-6}} || 0.449
+|-
+| 1.0   || {{val|1.0|e=4}}  || 300              || 1.327 || {{val|2.89|e=-6}} || 0.36
+|-
+| 1.2   || 8300             || 250              || 1.324 || {{val|9.89|e=-6}} || 1.0
+|-
+| 1.4   || 7100             || 210              || 1.321 || {{val|1.38|e=-4}} || 12
+|-
+| 1.6   || 6200             || 190              || 1.317 || {{val|8.55|e=-5}} || 6.7
+|-
+| 1.8   || 5600             || 170              || 1.312 || {{val|1.15|e=-4}} || 8.0
+|-
+| 2.0   || 5000             || 150              || 1.306 || {{val|1.1|e=-3}}  || 69
+|-
+| 2.2   || 4500             || 136              || 1.296 || {{val|2.89|e=-4}} || 17
+|-
+| 2.4   || 4200             || 125              || 1.279 || {{val|9.56|e=-4}} || 50.
+|-
+| 2.6   || 3800             || 115              || 1.242 || {{val|3.17|e=-3}} || 150
+|-
+| 2.65  || 3770             || 113              || 1.219 || {{val|6.7|e=-5}}  || 318
+|-
+| 2.70  || 3700             || 111              || 1.188 || 0.019             || 880
+|-
+| 2.75  || 3640             || 109              || 1.157 || 0.059             || 2700
+|-
+| 2.80  || 3570             || 107              || 1.142 || 0.115             || 5160
+|-
+| 2.85  || 3510             || 105              || 1.149 || 0.185             || 8160
+|-
+| 2.90  || 3450             || 103              || 1.201 || 0.268             || 11600
+|-
+| 2.95  || 3390             || 102              || 1.292 || 0.298             || 12700
+|-
+| 3.00  || 3330             || 100.             || 1.371 || 0.272             || 11400
+|-
+| 3.05  || 3280             || 98.3             || 1.426 || 0.240             || 9990
+|-
+| 3.10  || 3230             || 96.7             || 1.467 || 0.192             || 7780
+|-
+| 3.15  || 3170             || 95.2             || 1.483 || 0.135             || 5390
+|-
+| 3.20  || 3120             || 93.7             || 1.478 || 0.0924            || 3630
+|-
+| 3.25  || 3080             || 92.2             || 1.467 || 0.0610            || 2360
+|-
+| 3.30  || 3030             || 90.8             || 1.450 || 0.0368            || 1400
+|-
+| 3.35  || 2990             || 89.5             || 1.432 || 0.0261            || 979
+|-
+| 3.40  || 2940             || 88.2             || 1.420 || 0.0195            || 721
+|-
+| 3.45  || 2900             || 86.9             || 1.410 || 0.0132            || 481
+|-
+| 3.50  || 2860             || 85.7             || 1.400 || 0.0094            || 340
+|-
+| 3.6   || 2780             || 83               || 1.385 || 0.00515           || 180
+|-
+| 3.7   || 2700             || 81               || 1.374 || 0.00360           || 120
+|-
+| 3.8   || 2630             || 79               || 1.364 || 0.00340           || 110
+|-
+| 3.9   || 2560             || 77               || 1.357 || 0.00380           || 120
+|-
+| 4.0   || 2500             || 75               || 1.351 || 0.00460           || 140
+|-
+| 4.1   || 2440             || 73               || 1.346 || 0.00562           || 170
+|-
+| 4.2   || 2380             || 71               || 1.342 || 0.00688           || 210
+|-
+| 4.3   || 2330             || 70.              || 1.338 || 0.00845           || 250
+|-
+| 4.4   || 2270             || 69               || 1.334 || 0.0103            || 290
+|-
+| 4.5   || 2220             || 67               || 1.332 || 0.0134            || 370
+|-
+| 4.6   || 2170             || 65               || 1.330 || 0.0147            || 400
+|-
+| 4.7   || 2130             || 64               || 1.330 || 0.0157            || 420
+|-
+| 4.8   || 2080             || 62               || 1.330 || 0.0150            || 390
+|-
+| 4.9   || 2040             || 61               || 1.328 || 0.0137            || 350
+|-
+| 5.0   || 2000             || 60.              || 1.325 || 0.0124            || 310
+|-
+| 5.1   || 1960             || 59               || 1.322 || 0.0111            || 270
+|-
+| 5.2   || 1920             || 58               || 1.317 || 0.0101            || 240
+|-
+| 5.3   || 1890             || 57               || 1.312 || 0.0098            || 230
+|-
+| 5.4   || 1850             || 56               || 1.305 || 0.0103            || 240
+|-
+| 5.5   || 1820             || 55               || 1.298 || 0.0116            || 380
+|-
+| 5.6   || 1790             || 54               || 1.289 || 0.0142            || 320
+|-
+| 5.7   || 1750             || 53               || 1.277 || 0.0203            || 450
+|-
+| 5.8   || 1720             || 52               || 1.262 || 0.0330            || 710
+|-
+| 5.9   || 1690             || 51               || 1.248 || 0.0622            || 1300
+|-
+| 6.0   || 1670             || 50.              || 1.265 || 0.107             || 2200
+|-
+| 6.1   || 1640             || 49               || 1.319 || 0.131             || 2700
+|-
+| 6.2   || 1610             || 48.4             || 1.363 || 0.0880            || 1800
+|-
+| 6.3   || 1590             || 47.6             || 1.357 || 0.0570            || 1100
+|-
+| 6.4   || 1560             || 46.8             || 1.347 || 0.0449            || 880
+|-
+| 6.5   || 1540             || 46.1             || 1.339 || 0.0392            || 760
+|-
+| 6.6   || 1520             || 45.4             || 1.334 || 0.0356            || 680
+|-
+| 6.7   || 1490             || 44.7             || 1.329 || 0.0337            || 630
+|-
+| 6.8   || 1470             || 44.1             || 1.324 || 0.0327            || 600
+|-
+| 6.9   || 1450             || 43.4             || 1.321 || 0.0322            || 590
+|-
+| 7.0   || 1430             || 42.8             || 1.317 || 0.0320            || 570
+|}
+
+The total refractive index of water is given as ''m = n + ik''. The absorption coefficient α' is used in the [[Beer–Lambert law]] with the prime here signifying [[Natural logarithm|base e]] convention. Values are for water at 25&nbsp;°C, and were obtained through various sources in the cited literature review.<ref>{{cite journal |last1=Hale |first1=George |last2=Querry |first2=Marvin |date=1 March 1973 |title=Optical Constants of Water in the 200-nm to 200μm Wavelength Region |url=https://www.osapublishing.org/ao/fulltext.cfm?uri=ao-12-3-555 |journal=Applied Optics |publisher=[[Optical Society of America]] |volume=12 |issue=3 |pages=555–563 |doi=10.1364/AO.12.000555 |pmid=20125343 |accessdate=8 January 2014|bibcode=1973ApOpt..12..555H}}</ref>
+
+==See also==
+*[[Absorption (electromagnetic radiation)]]
+*[[Atmospheric radiative transfer codes]]
+*[[Color of water]]
+*[[Electromagnetic absorption by water]]
+*[[List of refractive indices]]
+
+==Notes==
+{{Reflist}}
+
+==References==
+{{refbegin}}
+*R. M. Pope and E. S. Fry, Absorption spectrum (380-700&nbsp;nm) of pure water. II. Integrating cavity measurements, Appl. Opt., 36, 8710-8723, 1997.
+*Mobley, Curtis D., Light and water: radiative transfer in natural waters; based in part on collaborations with Rudolph W. Preisendorfer, San Diego, Academic Press, 1994, 592 p., {{ISBN|0-12-502750-8}}
+{{refend}}
+
+[[Category:Atmospheric radiation]]
+[[Category:Optics]]
+[[Category:Physics-related lists]]
+[[Category:Scattering, absorption and radiative transfer (optics)]]
+[[Category:Water physics]]

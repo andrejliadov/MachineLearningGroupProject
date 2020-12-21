@@ -1,0 +1,37 @@
+A '''locationized gun''' is one that uses electronic technologies such as [[geofencing]] to restrict its firing to authorized locations, thereby allowing its use for protecting life and property in those locations while preventing its use in other locations for [[crime]]s such as [[robbery|robberies]], [[drive-by shooting]]s, [[assassination]]s, and [[massacres]].
+
+== History ==
+The first locationized gun was invented by John Martin in 1984.<ref>{{Cite news|url = https://www.washingtonpost.com/archive/business/1984/05/28/new-handgun-could-be-used-for-self-defense-but-not-crime/337e287c-64e9-40a3-9f39-95dbb4c94563/|title = New Handgun Could Be Used For Self-Defense, But Not Crime.|last = Gross|first = Barry|date = 28 May 1984|work = The Washington Post}}</ref>   Although locationized guns could prevent much crime and accompanying deaths and injuries, they have not been commercially developed.  An important reason for that is because legislated restrictions would be required for conventional guns, and those restrictions would be difficult to pass in some markets.
+
+== Operating principles, advantages, and technologies ==
+The main advantage of locationized guns is that they can satisfy the right to possess arms for defense of homes and businesses while being useless for many crimes that can be committed away from those homes and businesses.
+
+Other advantages of locationized guns depend on them having electronic circuitry and electronic control over firing.  Those technologies make it relatively easy to design them to communicate with a [[Cellular network|cellular]] or other [[communication system]] to provide information or to be externally prevented from firing regardless of location.<ref>{{Citation|title = Firearm Global Satellite Positioning System Tracking System|url = http://www.google.com/patents/US20110309975|access-date = 2016-01-07}}</ref><ref>{{Citation|title = Firearm and system for notifying firearm discharge|url = http://www.google.si/patents/US8339257|access-date = 2016-01-07}}</ref><ref>{{Citation|title = Electronic device for a firearm|url = http://www.google.si/patents/US8720092|access-date = 2016-01-07}}</ref>
+
+Using [[GPS]] [[asset tracking]] technology can allow a locationized gun to transmit a message through a [[cellular network]] to its owner if the gun is removed from its normal location.  GPS tracking could then allow its location to be known by its owner and/or law enforcement to assist in recovery of the gun.
+
+Communications can allow police agencies to learn that a locationized gun is or was at a location of interest, thereby facilitating crime solving or allowing precautions to be taken before arriving at the location. [[Police]] agencies can also be automatically notified with information about when and where a locationized gun has been fired. Most importantly, police agencies would be able to prevent firing of the gun in the case of its [[theft]], a [[police raid]], [[shootout]], threatened [[suicide]], [[restraining order]], etc.
+
+=== Limited firing time: Early technology ===
+A locationized gun of this type cannot be fired unless it has remained motionless for a relatively long time, e. g. 24 hours.  Following that time period, there is only a relatively short time period that it can be fired after being picked up for use, e. g. 5 minutes.<ref>[http://www.google.com/patents/US5192818 US Patent 5192818], John M. Martin, "Means for reducing the criminal usefulness of hand weapons", issued 1993-3-9 
+</ref>  After its firing time period expires, it must undergo its motionless period again to allow firing.  Consequently, the usefulness of this gun is restricted to locations relatively close to where it is kept, e.g. its owner's property.  A demonstration model having timing and movement sensing circuitry was produced in 1989.<ref>R. A. Lesmeister "A Cordless .38" American Firearms Industry, April 1989 p. 24, 25.
+</ref>
+
+=== Restricted area of enabling signal reception: Later technologies ===
+This type of locationized gun cannot be fired unless it is located within the range of a signal that enables firing of the gun.<ref>[http://www.google.com/patents/US5068989 US Patent 5068989], John M. Martin, "Means for reducing the criminal usefulness of dischargeable hand weapons", issued 1991-12-3</ref><ref>[https://www.google.co.in/patents/US5168114 US Patent 5168114], Jerome M. Enget, "Automatic gun safety device", issued 1992-12-13 
+</ref><ref>[http://www.google.com/patents/US6314671 US Patent 6314671], Armand Gering, "Fire arm equipped with an enabling system", issued 2001-11-13</ref><ref>[http://www.google.com/patents/US6412207 US Patent 6412207], Caleb Clark Crye, Dmitry Yavid, Efrain Luke Rodriguez, "Firearm safety and control system", issued 2002-7-2</ref>  That signal is transmitted from a permanently or temporarily fixed location either by conductive cable or by [[wireless communication|wireless broadcast]] throughout the area where firing of the gun is allowed. Cable length or reception distance determines the area where firing is possible.  A temporarily fixed transmitting location can be a portable base station that must remain motionless for a relatively long time period, e. g. 24 hours, before its signal transmitting begins.<ref>Barry Gross. New Handgun Could Be Used For Self-Defense, But Not Crime. The Washington Post. p. WB19. 28 May 1984.
+</ref>
+
+=== Triangulation and memory of allowable firing locations: Latest technologies ===
+A locationized gun of this type uses a system of radio frequency [[triangulation]] such as GPS or [[cell phone]] signals to determine its location.<ref>[http://www.google.com/patents/US6438887 US Patent 6438887], John M. Martin, "Dischargeable hand weapons having reduced criminal usefulness", issued 2002-8-27</ref><ref>https://www.facebook.com/GeofencedFirearms/timeline
+</ref><ref>[http://www.google.com/patents/US6415542 US Patent 6415542], Cary Lee Bates, Eric John Nelson, John Matthew Santosuosso, "Location-based firearm discharge prevention", issued 2002-7-9</ref>  Firing is then allowed only if the gun's location is electronically determined to be within the area stored in memory of where its firing is allowed, such as a home, business, or hunting area.
+
+==See also==
+*[[Smart gun]]
+*[[Sentry gun]]
+
+== References ==
+{{Reflist}}
+
+[[Category:Firearms]]
+[[Category:Geographic position]]

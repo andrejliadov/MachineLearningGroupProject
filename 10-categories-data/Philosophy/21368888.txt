@@ -1,0 +1,253 @@
+Following the developments in [[formal logic]] with [[symbolic logic]] in the late nineteenth century and [[mathematical logic]] in the twentieth, topics traditionally treated by [[logic]] not being part of formal logic have tended to be termed either ''philosophy of logic'' or ''philosophical logic'' if no longer simply ''logic''.
+
+Compared to the history of logic, the demarcation between '''philosophy of logic''' and [[philosophical logic]] is of recent coinage and not always entirely clear. Characterisations include:
+
+* '''Philosophy of logic''' is the area of philosophy devoted to examining the scope and nature of logic.<ref name="The Cambridge Dictionary of Philosophy">{{cite book|title=The Cambridge Dictionary of Philosophy|editor=Audi, Robert|publisher=CUP|year=1999|edition=2nd}}</ref>
+* '''Philosophy of logic''' is the investigation, critical analysis and intellectual reflection on issues arising in [[logic]]. The field is considered to be distinct from [[philosophical logic]].
+* '''Philosophical logic''' is the branch of study that concerns questions about [[reference]], [[predicate (mathematical logic)|predication]], [[identity (philosophy)|identity]], [[theories of truth|truth]], [[Quantification (logic)|quantification]], [[existence]], [[logical entailment|entailment]], [[modal logic|modality]], and [[logical necessity|necessity]].<ref>Lowe, E. J.. ''Forms of Thought: A Study in Philosophical Logic''. New York: Cambridge University Press, 2013.</ref>
+* '''Philosophical logic''' is the application of formal logical techniques to philosophical problems.<ref>Russell, Gillian [http://tar.weatherson.org/2007/02/27/jcs-oped/ Thoughts, Arguments, and Rants], ''Jc's Column''.</ref>
+
+This article outlines issues in philosophy of logic or provides links to relevant articles or both.
+
+==Introduction==
+This article makes use of the following terms and concepts:
+* [[Type–token distinction]]
+* [[Use–mention distinction]]
+
+==Truth==
+Aristotle said ''To say that that which is, is not or that which is not is, is a falsehood; and to say that which is, is and that which is not is not, is true''<ref>Aristotle, Metaphysics,Books Γ, Δ, Ε 2nd edition 1011b25 (1993) trans Kirwan,: OUP</ref>
+
+This apparent truism has not proved unproblematic.
+
+===Truthbearers===
+Logic uses such terms as true, false, inconsistent, valid, and self-contradictory. Questions arise as Strawson (1952) writes<ref>{{cite book|last=Strawson |first=P.F.|title=Introduction to Logical Theory |publisher=Methuen: London|year=1952|pages=3}}</ref>
+:<blockquote>(a) when we use these words of logical appraisal, what is it exactly that we are appraising? and (b) how does logical appraisal become possible?</blockquote>
+{{main|Truthbearer}}
+:''See also:'' [[Sentence (linguistics)|Sentence]], [[Statement (logic)|Statement]], [[Proposition]].
+
+===Tarski's definition of truth===
+See:
+* [[Semantic theory of truth#Tarski's Theory|Semantic theory of truth § Tarski's Theory]]
+* [[T-schema]]
+* [http://plato.stanford.edu/entries/tarski-truth/ Stanford Encyclopedia of Philosophy entry on Tarski's Truth Definitions]
+* [http://plato.stanford.edu/entries/self-reference/#Matt-sema Self-reference:2.1 Consequences of the Semantic Paradoxes in Stanford Encyclopedia of Philosophy]
+
+===Analytic truths, logical truth, validity, logical consequence and entailment===
+Since the use, meaning, if not the meaningfulness, of the terms is part of the debate, it is possible only to give the following working definitions for the purposes of the discussion:
+* A [[necessary truth]] is one that is true no matter what the state of the world or, as it is sometimes put, in all possible worlds.<ref>Wolfram (1989) p. 80</ref>
+* [[Logical truth]]s are those necessary truths that are necessarily true owing to the meaning of their logical constants only.<ref>Wolfram (1989), p. 273</ref>
+* In formal logic a ''logical truth'' is just a "statement" (string of symbols in which no variable occurs free) which is true under all possible [[interpretation (logic)|interpretations]].
+* An analytic truth is one whose predicate concept is contained in its subject concept.
+
+The concept of logical truth is intimately linked with those of [[validity (logic)|validity]], [[logical consequence]] and [[entailment]] (as well as self-contradiction, necessarily false etc.).
+* If ''q'' is a logical truth, then ''p therefore q'' will be a valid argument.
+* If ''p1, p2, p3 ... pn therefore q'' is a valid argument then its [[corresponding conditional (logic)|corresponding conditional]] will be a logical truth.
+* If ''p1 & p2 & p3 ... pn entails q'' then ''If (p1 & p2 & p3 ... pn) then q'' is a logical truth.
+* If ''q'' is a logical consequence of ''p1 & p2 & p3 ... pn'' if and only if ''p1 & p2 & p3 ... pn entails q'' and if and only if ''If (p1 & p2 & p3..pn) then q'' is a logical truth
+
+Issues that arise include:
+* If there are truths that must be true, what makes them so?
+* Are there analytic truths that are not logical truths?
+* Are there necessary truths that are not analytic truths?
+* Are there necessary truths that are not logical truths?
+* Is the distinction between analytic truth and synthetic truth spurious?
+
+{{main|necessary truth|logical truth|validity (logic)|Corresponding conditional (logic)|logical consequence|entailment|Analytic-synthetic distinction}}
+See also [http://plato.stanford.edu/entries/logical-truth/]
+
+===Paradox===
+{{main|Paradox}}
+
+==Meaning and reference==
+See
+* [[Sense and reference]]
+* [[Theory of reference]]
+* [[Mediated reference theory]]
+* [[Direct reference theory]]
+* [[Causal theory of reference]] (section References)
+* [[Descriptivist theory of names]] (section References)
+* [[Saul Kripke]] (section References)
+* [[Frege's Puzzle]] (section New Theories of Reference and the Return of Frege's Puzzle)
+* [[Gottlob Frege]] (section References)
+* [[Failure of reference]] (section References)
+* [[Rigid designator]] (section Causal-Historical Theory of Reference)
+* [[Philosophy of language]] (section References)
+* [[Index of philosophy of language articles]]
+* [[Supposition theory]] (section References)
+* [[Referring expression]]
+* [[Meaning (philosophy of language)]]
+* [[Denotation]] and [[Connotation]]
+* [[Extension (semantics)|Extension]] and [[Intension]]
+* [[Extensional definition]]
+* [[Intensional definition]]
+* [[Metacommunicative competence]]
+
+==Names and descriptions==
+* [[Failure to refer]]
+* [[Proper name (philosophy)]]
+* [[Definite description]]
+* [[Descriptivist theory of names]]
+* [[Theory of descriptions]]
+* [[Singular term]]
+* [[Term logic#Singular terms|Term logic § Singular terms]]
+* [[Empty name]]
+* [[Bas van Fraassen#Singular Terms, Truth-value Gaps, and Free Logic|Bas van Fraassen § Singular Terms, Truth-value Gaps, and Free Logic]]
+* [[The Foundations of Arithmetic#Development of Frege's own view of a number|The Foundations of Arithmetic § Development of Frege's own view of a number]]
+* [[Philosophy of language#references|Philosophy of language § references]]
+* [[Direct reference]]
+* [[Mediated reference theory]]
+
+===Formal and material consequence===
+* The problem of the material conditional: see [[Material conditional]]
+
+==Logical constants and connectives==
+{{main|Logical constant|Logical connective}}
+
+==Quantifiers and quantificational theory==
+{{main|Quantifier (logic)}}
+
+==Modal logic==
+{{main|Modal logic}}
+
+==Deviant logics==
+{{main|Deviant logic}}
+
+===Classical v. non-classical logics===
+{{main|Classical logic}}
+
+==Philosophical theories of logic==
+*[[Conceptualism]]
+*[[Constructivism (mathematics)|Constructivism]]
+*[[Dialetheism]]
+*[[Fictionalism]]
+*[[Finitism]]
+*[[Formalism (mathematics)|Formalism]]
+*[[Intuitionism]]
+*[[Logical atomism]]
+*[[Logicism]]
+*[[Nominalism]]
+*[[Philosophical realism|Realism]]
+*[[Platonic realism]]
+*[[Structuralism]]
+*[[Nyaya Epistemology]]
+
+==Other topics==
+* Leibniz's Law: see [[Identity of indiscernibles]]
+* Vacuous names
+* Do predicates have properties?: See [[Second-order logic]]
+* Sense, Reference, Connotation, Denotation, Extension, Intension
+* The status of the Laws of Logic
+* Classical Logic
+* Intuitionism
+* Realism: see [[Platonic realism]], [[Philosophical realism]]
+* The Law of Excluded Middle: see [[Law of excluded middle]]
+* Modality, Intensionality and Propositional Attitude
+* Counter-factuals
+*Psychologism
+
+==See also==
+* [[Ambiguity]]
+* [[Context-free grammar]]
+* [[Intension]]
+* "[[Is Logic Empirical?]]"
+* [[Concatenation theory]]
+* [[Linguistic modality]]
+* [[Pierce's type-token distinction]]
+* [[Type-token distinction]]
+* [[Use–mention distinction]]
+* [[Vagueness]]
+
+===Important figures===
+
+Figures in the philosophy of logic include (but are not limited to):
+{{col-begin}}
+{{col-break}}
+* [[Noriko H. Arai]]
+* [[Aristotle]]
+* [[George Boole]]
+* [[George Boolos]]
+* [[John Buridan]]
+* [[Agata Ciabattoni]]
+* [[Alonzo Church]]
+* [[Gordon Clark]]
+* [[Michael Dummett]]
+* [[Augustus De Morgan]]
+* [[Gottlob Frege]]
+* [[Kurt Gödel]]
+* [[Georg Hegel]]
+* [[William of Ockham]]
+* [[Peter of Spain]]
+* [[Rudolf Carnap]]
+* [[Immanuel Kant]]
+* [[Gottfried Leibniz]]
+* [[David Kellogg Lewis|David Lewis]]
+* [[John Stuart Mill]]
+* [[Charles Sanders Peirce]]
+* [[Valeria de Paiva]]
+* [[Alvin Plantinga]]
+* [[Arthur Prior]]
+* [[Willard Van Orman Quine]]
+* [[Bertrand Russell]]
+* [[Alfred Tarski]]
+* [[Ludwig Wittgenstein]]
+{{col-end}}
+
+=== Philosophers of logic ===
+{{col-begin}}
+{{col-break}}
+*[[W.V.O. Quine]]
+*[[Bertrand Russell]]
+*[[Ludwig Wittgenstein]]
+{{col-break}}
+*[[Michael Dummett]]
+*[[Hilary Putnam]]
+*[[Saul Kripke]]
+{{col-break}}
+*[[Charles Sanders Peirce]]
+*[[Alfred Tarski]]
+*[[Donald Davidson (philosopher)|Donald Davidson]]
+{{col-break}}
+*[[Augustus De Morgan]]
+*[[Gordon Clark]]
+*[[Aristotle]]
+{{col-end}}
+
+==References==
+{{Reflist}}
+
+==Sources==
+* [[Susan Haack|Haack, Susan]].  1978.  ''Philosophy of Logics''.  [[Cambridge University Press]].  ({{ISBN|0-521-29329-4}})
+* [[W. V. O. Quine|Quine, W. V. O.]]  2004.  ''Philosophy of Logic''.  2nd ed.  [[Harvard University Press]].  ({{ISBN|0-674-66563-5}})
+* [[Alfred Tarski]]. 1983. The concept of truth in formalized languages, pp.&nbsp;152–278, Logic,semantics, metamathematics, papers from 1923 to 1938, ed. [[John Corcoran (logician)]], Hackett,Indianapolis 1983.
+
+==Further reading==
+* Fisher Jennifer, On the Philosophy of Logic, Thomson Wadworth, 2008, {{ISBN|978-0-495-00888-0}}
+* Goble, Lou, ed., 2001. [https://books.google.com/books?id=aaO2f60YAwIC&dq=The+Blackwell+Guide+to)+Philosophical+Logic&pg=PP1&ots=y5wP1HQkbh&source=bn&sig=gwaoap-A-Xxzx8daLihFbp2kdCk&hl=en&sa=X&oi=book_result&resnum=5&ct=result ''(The Blackwell Guide to) Philosophical Logic.''] Oxford: [[Blackwell Publishing|Blackwell]]. {{ISBN|0-631-20693-0}}.
+* [[A. C. Grayling|Grayling, A. C.]], 1997. [https://books.google.com/books?id=xGHMFdt7w30C&printsec=frontcover ''An Introduction to Philosophical Logic.''] 3rd ed. Oxford: Blackwell. {{ISBN|0-631-19982-9}}.
+* Jacquette, Dale, ed., 2002. [https://books.google.com/books?id=-pQ1DpdcPy4C&printsec=frontcover#PPP1,M1 '' A Companion to Philosophical Logic.''] Oxford Blackwell. {{ISBN|1-4051-4575-7}}.
+* {{cite book|last=Kneale|first=W&M|title=The development of logic|publisher=Oxford|year=1962|isbn=9780198247739|url=https://books.google.com/books?id=FtXAwgy1w9cC}}
+* McGinn, Colin,  2000. ''Logical Properties: Identity, Existence, Predication, Necessity, Truth''. Oxford: [[Oxford University Press]]. {{ISBN|0-19-926263-2}}.
+* {{cite book|last=Quine|author-link=Willard Van Orman Quine|first=Willard Van Orman|title=Philosophy Of Logic|publisher=Prentice Hall: New JerseyUSA.|year=1970}}
+* Sainsbury, Mark, 2001. [https://books.google.com/books?id=xAFKgdsB_akC&printsec=frontcover ''Logical Forms: An Introduction to Philosophical Logic.''] 2nd ed. Oxford: Blackwell. {{ISBN|0-631-21679-0}}.
+* {{cite book|last=Strawson|author-link=P. F. Strawson|first=PF|title=Philosophical Logic|publisher=OUP|year=1967}}
+* [[Alfred Tarski]],1983. The concept of truth in formalized languages, pp.&nbsp;152–278, Logic,semantics, metamathematics, papers from 1923 to 1938, ed. [[John Corcoran (logician)]], Hackett,Indianapolis 1983.
+* Wolfram, Sybil, 1989. ''Philosophical Logic: An Introduction.'' London: [[Routledge]]. 290 pages. {{ISBN|0-415-02318-1}}, {{ISBN|978-0-415-02318-4}}
+* [https://www.springer.com/10992 Journal of Philosophical Logic], Springer SBM
+
+==External links==
+* [http://www.rep.routledge.com/article/X046 Routledge Encyclopedia of Philosophy entry]
+
+{{Philosophy topics}}
+{{logic}}
+
+<!--[[de:Universalwissenschaft]]-->
+
+{{DEFAULTSORT:Philosophy Of Logic}}
+[[Category:Philosophy of logic| ]]
+[[Category:Concepts in epistemology]]
+[[Category:Concepts in logic]]
+[[Category:Epistemology]]
+[[Category:Logic]]
+[[Category:Philosophical logic]]
+[[Category:Philosophy of education]]
+[[Category:Philosophy of mathematics]]

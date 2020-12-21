@@ -1,0 +1,72 @@
+{{for|the journal|Computational Statistics (journal)}}
+{{More citations needed|article|date=May 2009}}
+[[File:London School of Economics Statistics Machine Room 1964.jpg|thumb|right|Students working in the Statistics [[Computer lab|Machine Room]] of the [[London School of Economics]] in 1964.]]
+'''Computational statistics''', or '''statistical computing''', is the interface between [[statistics]] and [[computer science]]. It is the area of [[computational science]] (or scientific computing) specific to the mathematical science of [[statistics]]. This area is also developing rapidly, leading to calls that a broader concept of computing should be taught as part of general [[statistical education]].<ref>[[Deborah A. Nolan|Nolan, D.]] & Temple Lang, D. (2010). "Computing in the Statistics Curricula", ''[[The American Statistician]]'' '''64''' (2), pp.97-107.</ref>
+
+As in [[Statistics|traditional statistics]] the goal is to transform [[raw data]] into [[knowledge]],<ref name=":0">[[Edward Wegman|Wegman, Edward]] J. “[https://www.jstor.org/stable/24536995 Computational Statistics: A New Agenda for Statistical Theory and Practice.]” ''[http://www.washacadsci.org/journal/ Journal of the Washington Academy of Sciences]'', vol. 78, no. 4, 1988, pp. 310–322. ''JSTOR''</ref> but the focus lies on [[computer]] intensive [[statistical methods]], such as cases with very large [[Sample size determination|sample size]] and non-homogeneous [[data set]]s.<ref name=":0" />
+
+The terms 'computational statistics' and 'statistical computing' are often used interchangeably, although Carlo Lauro (a former president of the [[International Association for Statistical Computing]]) proposed making a distinction, defining 'statistical computing' as "the application of computer science to statistics",
+and 'computational statistics' as "aiming at the design of algorithm for implementing
+statistical methods on computers, including the ones unthinkable before the computer
+age (e.g. [[bootstrapping (statistics)|bootstrap]], [[Monte Carlo simulation|simulation]]), as well as to cope with analytically intractable problems" [''[[sic]]''].<ref>{{Citation| first=Carlo|last=Lauro| title=Computational statistics or statistical computing, is that the question?| journal= Computational Statistics & Data Analysis| volume=23| issue=1| year=1996| pages=191–193| doi=10.1016/0167-9473(96)88920-1}}</ref>
+
+The term 'Computational statistics' may also be used to refer to computationally ''intensive'' statistical methods including [[resampling (statistics)|resampling]] methods, [[Markov chain Monte Carlo]] methods, [[local regression]], [[kernel density estimation]], [[artificial neural networks]] and [[generalized additive model]]s.
+
+==Computational statistics journals==
+*''[[Communications in Statistics|Communications in Statistics - Simulation and Computation]]''
+*''[[Computational Statistics]]''
+*''[[Computational Statistics & Data Analysis]]''
+*''[[Journal of Computational and Graphical Statistics]]''
+*''[[Journal of Statistical Computation and Simulation]]''
+*''[[Journal of Statistical Software]]''
+*''[[The R Journal]]''
+*''[[Statistics and Computing]]''
+*''[[Wiley Interdisciplinary Reviews Computational Statistics]]''
+
+==Associations==
+*[[International Association for Statistical Computing]]
+
+==See also==
+*[[Algorithms for statistical classification]]
+*[[Data science]]
+*[[Artificial intelligence#Statistical|Statistical methods in artificial intelligence]]
+*[[Free statistical software]]
+*[[List of algorithms#Statistics|List of statistical algorithms]]
+*[[List of statistical packages]]
+*[[Machine learning]]
+
+==References==
+<references/>
+
+==Further reading==
+
+===Articles===
+*{{Citation|last1=Albert |first1=J.H.| last2=Gentle|first2=J.E.|title = Special Section: Teaching Computational Statistics| journal = The American Statistician| volume = 58| year=2004| pages=1 |doi=10.1198/0003130042872|editor1-last=Albert|editor1-first=James H|editor2-last=Gentle|editor2-first=James E}}
+*{{Citation|last1= Wilkinson |first1=Leland|title = The Future of Statistical Computing (with discussion)| journal = Technometrics| volume = 50| issue=4| year=2008| pages=418–435 |doi=10.1198/004017008000000460}}
+
+===Books===
+*{{Citation|title= Computational Probability: Algorithms and Applications in the Mathematical Sciences |series=Springer International Series in Operations Research & Management Science |first1=John H.|last1=Drew |first2=Diane L. |last2=Evans| authorlink2 = Diane L. Evans|first3=Andrew G. |last3=Glen | first4=Lawrence M. |last4=Lemis |publisher=Springer| year= 2007|isbn= 978-0-387-74675-3}}
+*{{Citation|title=Elements of Computational Statistics| first=James E.| last=Gentle| year=2002| publisher=Springer| isbn=0-387-95489-9}}
+*{{Citation|title=Handbook of Computational Statistics: Concepts and Methods | editor1-first=James E. |editor1-last=Gentle| editor2-first=Wolfgang|editor2-last=Härdle |editor3-first=Yuichi |editor3-last=Mori| publisher=Springer| year=2004| isbn=3-540-40464-3}}
+*{{Citation|title=Computational Statistics |series=Wiley Series in Probability and Statistics|first1=Geof H. |last1=Givens |first2=Jennifer A. |last2=Hoeting|author2-link= Jennifer A. Hoeting |publisher=Wiley-Interscience| year= 2005|isbn=978-0-471-46124-1}}
+*{{Citation|title=Modeling with Data: Tools and Techniques for Statistical Computing|first=Ben| last=Klemens|year=2008|publisher=Princeton University Press|isbn=978-0-691-13314-0}}
+*{{Citation|title=Numerical Methods of Statistics| first=John| last=Monahan|year=2001|publisher=Cambridge University Press|isbn=978-0-521-79168-7}}
+*{{Citation|title=Mathematical Statistics with Mathematica |series=Springer Texts in Statistics|first1=Colin |last1=Rose |first2=Murray D. |last2=Smith|publisher=Springer| year= 2002|isbn=0-387-95234-9}}
+*{{Citation| title=Elements of Statistical Computing: Numerical Computation| first=Ronald Aaron| last=Thisted| publisher=CRC Press| year=1988| isbn=0-412-01371-1| url-access=registration| url=https://archive.org/details/elementsofstatis0000unse}}
+*{{Citation|title=Data Science: Scientific and Statistical Computing  |first=Reda. R. |last=Gharieb| publisher=Noor Publishing| year=2017| isbn=978-3-330-97256-8}}
+
+==External links==
+
+===Associations===
+*[http://www.iasc-isi.org/ International Association for Statistical Computing]
+*[http://stat-computing.org/ Statistical Computing section of the American Statistical Association]
+
+===Journals===
+*[http://www.elsevier.com/wps/find/journaldescription.cws_home/505539/description Computational Statistics & Data Analysis]
+*[https://web.archive.org/web/20160919090854/http://www.amstat.org/publications/JCGS Journal of Computational & Graphical Statistics] 
+*[https://www.springer.com/statistics/computational/journal/11222 Statistics and Computing]
+
+[[Category:Computational statistics| ]]
+[[Category:Numerical analysis]]
+[[Category:Computational fields of study]]
+[[Category:Mathematics of computing]]
