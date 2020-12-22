@@ -10,7 +10,7 @@ from nltk.corpus import stopwords
 
 #Parse words in the text files into their catagories
 def parse_data(catagory):
-    root_dir = 'MachineLearningGroupProject/MachineLearningGroupProject/data/'
+    root_dir = 'MachineLearningGroupProject/MachineLearningGroupProject/10-categories-data/'
     text_data = ""
     text_data_list = []
 

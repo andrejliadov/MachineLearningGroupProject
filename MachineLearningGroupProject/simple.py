@@ -10,7 +10,7 @@ import nltk
 from nltk.stem.wordnet import WordNetLemmatizer
 
 #Read in the data
-DATA_DIR = "./data/"
+DATA_DIR = "./10-categories-data/"
 data = load_files(DATA_DIR, encoding='utf-8', decode_error='replace')
 labels, counts = np.unique(data.target, return_counts=True)
 labels_str = np.array(data.target_names)[labels]
