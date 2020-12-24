@@ -7,11 +7,11 @@ from sklearn.metrics import classification_report, accuracy_score
 from sklearn.svm import LinearSVC
 import nltk
 from nltk.stem.wordnet import WordNetLemmatizer
-from sklearn.model_selection._validation import cross_validate
-from sklearn.svm._classes import SVC
+from sklearn.model_selection import cross_validate
+from sklearn.svm import SVC
 
 #Read in the data
-DATA_DIR = "./10-categories-data/"
+DATA_DIR = "./clean-10-categories-data/"
 data = load_files(DATA_DIR, encoding='utf-8', decode_error='replace')
 labels, counts = np.unique(data.target, return_counts=True)
 labels_str = np.array(data.target_names)[labels]
@@ -31,19 +31,19 @@ for i in range(0, len(data.data)):
 
 
 #Cross-validation analysis of the model
-vectoriser = CountVectorizer(ngram_range=(1, 2), token_pattern=r'\b\w+\b', min_df=1)
+vectoriser = CountVectorizer(ngram_range=(1,2), stop_words='english', max_features=1000, token_pattern=r'\b\w+\b', min_df=1)
 vectoriser.fit(data.data)
 
 X = vectoriser.transform(data.data)
 Y = data.target
 mean_error=[]; std_error=[]
-c_range = [0.001, 0.01, 0.1, 0.5, 0.75, 1.0, 5.0]
-precision_score = []
+c_range = [1.0, 5.0]
+precision_score = []    
 precision_var = []
 
 for c in c_range:
     svm_model = SVC(C=c, kernel='rbf', gamma=1)
-    scores = cross_validate(svm_model, X, Y, cv=4, scoring=('balanced_accuracy', 'precision_micro', 'f1_micro'))
+    scores = cross_validate(svm_model, X, Y, cv=2, scoring=('balanced_accuracy', 'precision_micro', 'f1_micro'))
     precision_score.append(scores['test_precision_micro'].mean())
     precision_var.append(scores['test_precision_micro'].var())
     print('C = %0.3f' % c)
