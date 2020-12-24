@@ -1,0 +1,77 @@
+{{short description|Altitude above which water boils at human body temperature}}
+[[File:F-16 pilot, closeup, canopy blemishes cleaned.jpg|thumb|300px|If the cockpit lost pressure while the aircraft was above the Armstrong limit, even a positive pressure oxygen mask could not sustain pilot consciousness.]]
+
+The '''Armstrong limit''' or '''Armstrong's line''' is a measure of [[altitude]] above which [[atmospheric pressure]] is sufficiently low that water [[boiling|boils]] at the [[human body temperature|normal temperature]] of the [[human body]]. Exposure to pressure below this limit results in a rapid loss of consciousness, followed by a series of changes to [[cardiovascular]] and [[neurological]] functions, and eventually death, unless pressure is restored within 60–90 seconds.<ref name="Landis" /> On Earth, the limit is around {{cvt|18-19|km|mi ft}} above [[sea level]],<ref name="Landis" /><ref>{{Cite web|archive-url=https://archive.is/20070927100528/http://www.nasaexplores.com/glossary_view_9-12.php|url=http://www.nasaexplores.com/glossary_view_9-12.php|title= NASAexplores Glossary|archive-date=2007-09-27}}</ref> above which atmospheric air pressure drops below 0.0618 [[atmosphere (unit)|atm]] (6.3 [[pascal (unit)|kPa]], 47 [[millimeter of mercury|mmHg]], or about 1 [[pounds per square inch|psi]]). The [[U.S. Standard Atmosphere|U.S. Standard Atmospheric model]] sets the Armstrong pressure at an altitude of {{Convert|63000|ft|m|0}}.
+
+The term is named after [[United States Air Force]] General [[Harry George Armstrong]], who was the first to recognize this phenomenon.<ref>{{Cite web|url=http://nationalaviation.blade6.donet.com/components/content_manager_v02/view_nahf/htdocs/menu_ps.asp?NodeID=1096819117&group_ID=1134656385&Parent_ID=-1|title= NAHF – Harry Armstrong|archive-url=https://web.archive.org/web/20071118090408/http://nationalaviation.blade6.donet.com/components/content_manager_v02/view_nahf/htdocs/menu_ps.asp?NodeID=1096819117&group_ID=1134656385&Parent_ID=-1 |date=November 18, 2007|archive-date= 2007-11-18}}</ref>
+
+== Effect on body fluids ==
+{| class="wikitable plainrowheaders" style="float:right; margin-right:20px"
+|+ [[Atmospheric pressure]] comparison
+! scope="col" | Location
+! scope="col" | Pressure
+|-
+! scope="row" | [[Olympus Mons]] summit
+| {{Convert|72|Pa|abbr=on|lk=on}} (0.0007 [[Atmosphere (unit)|atm]])
+|-
+! scope="row" | [[Atmosphere of Mars|Mars average]]
+| {{Convert|610|Pa|abbr=on}} (0.006 atm)
+|-
+! scope="row" | [[Hellas Planitia]] bottom
+| {{Convert|1.16|kPa|abbr=on}} (0.0114 atm)
+|-
+! scope="row" | '''Armstrong limit'''
+| {{Convert|6.25|kPa|abbr=on}} (0.0617 atm)
+|-
+! scope="row" | [[Mount Everest]] summit<ref>{{cite journal|doi=10.1152/jappl.1999.86.3.1062|pmid=10066724|title=Barometric pressures on Mt. Everest: New data and physiological significance|journal=Journal of Applied Physiology|volume=86|issue=3|pages=1062–1066|year=1999|last1=West|first1=John B.}}</ref>
+| {{Convert|33.7|kPa|abbr=on}} (0.3326 atm)
+|-
+! scope="row" | Earth sea level
+| {{Convert|101.3|kPa|abbr=on}} (1 atm)
+|-
+! scope="row" | [[Dead Sea]] level<ref>{{cite web|url=http://www.cfcenter.co.il/dsinfo.htm|title=The Dead Sea Region as a Health Resort|publisher=Cystic Fibrosis Center LTD. |location=Dead Sea, ISRAEL|accessdate=15 May 2012}}</ref>
+| {{Convert|106.7|kPa|abbr=on}} (1.053 atm)
+|-
+! scope="row" | Surface of [[Venus]]<ref name=Basilevsky2003>{{cite journal|last1=Basilevsky|first1=Alexandr T.|last2=Head|first2=James W.|title=The surface of Venus|journal=Rep. Prog. Phys.|year=2003|volume=66|issue=10|pages=1699–1734|doi=10.1088/0034-4885/66/10/R04|bibcode = 2003RPPh...66.1699B}}</ref>
+| {{Convert|9200|kPa|abbr=on}} (91.8 atm)
+|}
+At or above the Armstrong limit, exposed body fluids such as [[saliva]], [[tears]], [[urine]], and the liquids wetting the [[Pulmonary alveolus|alveoli]] within the lungs—but not [[vascular]] blood (blood within the circulatory system)—will boil away without a full-body [[pressure suit]], and no amount of breathable [[oxygen]] delivered by any means will sustain life for more than a few minutes.<ref name="Landis" /> The [[NASA]] technical report ''Rapid (Explosive) Decompression Emergencies in Pressure-Suited Subjects'', which discusses the brief accidental exposure of a human to near [[vacuum]], notes: "The subject later reported that ... his last conscious memory was of the saliva on his [[tongue]] beginning to boil."<ref name="nasa">{{Cite web|archive-url=https://web.archive.org/web/20141014072430/http://imagine.gsfc.nasa.gov/docs/ask_astro/answers/970603.html |url=http://imagine.gsfc.nasa.gov/docs/ask_astro/answers/970603.html|title=Ask an Astrophysicist: Human Body in a Vacuum|archive-date=2014-10-14}}</ref>
+
+At the nominal body temperature of 37&nbsp;°C (98.6&nbsp;°F), water has a [[vapour pressure]] of {{convert|47|mmHg|kPa|disp=flip}}; which is to say, at an ambient pressure of {{convert|6.3|kPa|mmHg}}, the boiling point of water is 37&nbsp;°C (98.6&nbsp;°F). A pressure of 6.3 kPa—the Armstrong limit—is about 1/16 of the standard sea-level atmospheric pressure of {{convert|101.3|kPa|mmHg}}. Modern formulas for calculating the standard pressure at a given altitude vary—as do the precise pressures one will actually measure at a given altitude on a given day—but a common formula{{citation needed|date=December 2013}} shows that 6.3 kPa is typically found at an altitude of {{convert|19000|m|ft|abbr=on}}.
+
+Blood pressure is a [[pressure|''gauge'' pressure]], which means it is measured relative to ambient pressure. To calculate blood pressure, it has to be summed to ambient pressure for calculating when blood will boil. This is similar to a flat automobile tire: even with zero gauge pressure, a flat tire at altitude of the Armstrong limit would still have an absolute pressure (pressure relative to a perfect vacuum) of {{convert|63|hPa|psi}}, that is, it will have the ambient pressure at the altitude where the 6.3 kPa pressure level occurs (about {{convert|19|km|ft|abbr=on}}), both inside and out of it. If one inflates the tire to non-zero gauge pressure, this internal pressure is ''in addition'' to those {{convert|6.3|kPa|psi}} of ambient pressure. This means that for an individual with a [[Diastole|diastolic]] low blood pressure, typically {{convert|60|mmHg|kPa|disp=flip|abbr=on}}, the person's blood pressure would be {{convert|107|mmHg|kPa|disp=flip|abbr=on}}, the sum of the blood pressure and the ambient pressure. This pressure is more than twice the ambient pressure at the Armstrong limit. This extra pressure is more than sufficient to prevent blood from outright boiling at {{convert|18|km|ft|abbr=on|-4}} while the heart is still beating.<ref name="Landis">{{cite web |author=Geoffrey A. Landis |url=http://www.geoffreylandis.com/vacuum.html |title=Human Exposure to Vacuum |accessdate=2016-02-05 |url-status=dead |archive-url=https://web.archive.org/web/20090721182306/http://www.geoffreylandis.com/vacuum.html |archive-date=2009-07-21 }}</ref><ref name="nasa" />
+
+== Hypoxia below the Armstrong limit ==
+[[File:Caproni Ca.161 pilot.jpg|150px|thumb|[[Mario Pezzi (aviator)|Mario Pezzi]], a pilot in 1937 wearing a pressure suit to avoid hypoxia.]]
+Well below the Armstrong limit, humans typically require supplemental oxygen in order to avoid [[Hypoxia (medical)|hypoxia]]. For most people, this is typically needed at altitudes above 4,500&nbsp;m (15,000&nbsp;ft). Commercial jetliners are required to maintain cabin pressurization at a [[cabin altitude]] of not greater than {{convert|2400|m|abbr=on|-3}}. U.S. regulations on [[general aviation]] aircraft (non-airline, non-government flights) require that the minimum required flight crew, but not the passengers, be on supplemental oxygen if the plane spends more than half an hour at a cabin altitude above {{convert|3800|m|abbr=on}}. The minimum required flight crew must be on supplemental oxygen if the plane spends ''any'' time above a cabin altitude of {{convert|4300|m|abbr=on|-3}}, and even the passengers must be provided with supplemental oxygen above a cabin altitude of {{convert|4500|m|abbr=on|-3}}.<ref name="FAR supplemental oxygen">{{cite act |title=Code of Federal Regulations |type=Docket  |number=18334, 54 FR 34304 §&nbsp;91.211 Supplemental oxygen|language=English |date=August 18, 1989 |article=Subpart C—Equipment, Instrument, and Certificate Requirements |articletype=Title 14, Chapter I, Subchapter F, Part 91—General Operating and Flight Rules |url=http://www.ecfr.gov/cgi-bin/text-idx?SID=2b854616f1b780d1a92192497b708362&mc=true&node=pt14.2.91&rgn=div5#se14.2.91_1211 |accessdate={{date|2016-02-06|mdy}} |ref=}}</ref> [[Parachuting|Skydivers]], who are at altitude only briefly before jumping, do not normally exceed {{convert|4500|m|abbr=on|-3}}.<ref>{{cite web|work=United States Parachute Association|url=http://www.uspa.org/SIM.aspx |title=Skydiver's Information Manual|archive-url=https://web.archive.org/web/20140330053831/http://www.uspa.org/SIM.aspx |date=March 30, 2014 |archive-date=2014-03-30 }}</ref>
+
+== Historical significance ==
+The Armstrong limit describes the altitude associated with an objective, precisely defined natural phenomenon: the vapor pressure of body-temperature water. In the late 1940s, it represented a new fundamental, hard limit to altitude that went beyond the somewhat subjective observations of human physiology and the time{{nbhyph}}dependent effects of hypoxia experienced at lower altitudes. Pressure suits had long been worn at altitudes well below the Armstrong limit to avoid hypoxia. In 1936, Francis Swain of the [[Royal Air Force]] reached {{convert|15,230|m|ft|abbr=on}} flying a [[Bristol Type 138]] while wearing a pressure suit.<ref>{{cite news|url=http://nla.gov.au/nla.news-article17267408|title=Altitude Record|date=1 October 1936|work=Sydney Morning Herald|accessdate=29 September 2020}}</ref> Two years later Italian military officer [[Mario Pezzi (aviator)|Mario Pezzi]] set an [[Flight altitude record|altitude record]] of {{convert|17,083|m|ft|abbr=on}}, wearing a pressure suit in his [[Caproni Ca.161]]bis biplane even though he was well below the altitude at which body-temperature water boils.
+
+A pressure suit is normally required at around {{convert|15,000|m|ft|abbr=on}} for a well conditioned and experienced pilot to safely operate an aircraft in unpressurized cabins.<ref>{{cite web|work=Dryden Research Center|url=http://www.nasa.gov/centers/dryden/research/AirSci/ER-2/pshis.html|title=A Brief History of the Pressure Suit|archive-url=https://web.archive.org/web/20160325173807/http://www.nasa.gov/centers/dryden/research/AirSci/ER-2/pshis.html |date=March 25, 2016 |archive-date=2016-03-25}}</ref> In an unpressurized cockpit at altitudes greater than {{convert|11,900|m|ft|abbr=on}} above sea level, the physiological reaction, even when breathing pure oxygen, is [[Hypoxia (medical)|hypoxia]]—inadequate oxygen level causing confusion and eventual loss of consciousness. [[Air]] contains 20.95% oxygen. At {{convert|11,900|m|ft|abbr=on}}, breathing pure oxygen through an unsealed face mask, one is breathing the same [[partial pressure]] of oxygen as one would experience with regular air at around {{convert|3600|m|ft|abbr=on}} above sea level. At higher altitudes, oxygen must be delivered through a sealed mask with increased pressure, to maintain a physiologically adequate partial pressure of oxygen. If the user does not wear a pressure suit or a counter-pressure garment that restricts the movement of their chest, the high pressure air can cause damage to the lungs.
+
+For modern military aircraft such as the United States’ [[Lockheed Martin F-22 Raptor|F{{nbhyph}}22]] and [[Lockheed Martin F-35 Lightning II|F{{nbhyph}}35]], both of which have operational altitudes of {{convert|18000|m|abbr=on}} or more, the pilot wears a "counter-pressure garment", which is a [[G-suit|g{{nbhyph}}suit]]<!-- EDITORS NOTE: Reliable sources of actual g-suits do not italicize the “G”. This article properly follows the RSs. --> with high-altitude capabilities. In the event the cockpit loses pressure, the oxygen system switches to a positive-pressure mode to deliver above-ambient-pressure oxygen to a specially sealing mask as well as to proportionally inflate the counter-pressure garment. The garment counters the outward expansion of the pilot's chest to prevent pulmonary [[barotrauma]] until the pilot can descend to a safe altitude.<ref>{{cite magazine|magazine=Aviation Week & Space Technology|date=July 18–25, 2011|page= 35|title=Stealthy Danger: Hypoxia incidents troubling Hornets may be related to F-22 crashes|url=https://archive.aviationweek.com/issue/20110718|first1=Bill|last1=Sweetman}}</ref>
+
+== See also ==
+[[File:Comparison International Standard Atmosphere space diving.svg|thumb|Comparison of a graph of [[International Standard Atmosphere]] temperature and pressure with the Armstrong limit and approximate altitudes of various objects]]
+* [[Altitude sickness]]
+* [[Effect of spaceflight on the human body]]
+* [[Decompression illness]]
+* [[Death zone]]
+
+== Notes ==
+<references group="Note" />
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{Cite book|url=http://www.operationalmedicine.org/TextbookFiles/FlightSurgeonsManual.pdf|title= US Naval Flight Surgeon's Manual|chapter= Chapter 1:Physiology of Flight|chapter-url=<!-- not found yet -->}}
+* {{cite web |archive-url=https://web.archive.org/web/20000919061540/http://www.sff.net/people/geoffrey.landis/ebullism.html|url=http://www.sff.net/people/geoffrey.landis/ebullism.html |title=Ebullism at 1 Million Feet: Surviving Rapid/Explosive Decompression|archive-date=2000-09-19}}
+* {{cite web|work=The Engineering ToolBox|archive-url=https://web.archive.org/web/20161109044753/http://www.engineeringtoolbox.com/air-altitude-pressure-d_462.html|url=http://www.engineeringtoolbox.com/air-altitude-pressure-d_462.html |title=Air Pressure and Altitude above Sea Level|archive-date=2016-11-09 }}
+
+[[Category:Atmosphere]]
+[[Category:Aviation medicine]]
+[[Category:Altitudes in aviation]]
+[[Category:Human spaceflight]]
+[[Category:Human physiology]]

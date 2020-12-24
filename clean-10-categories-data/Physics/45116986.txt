@@ -1,0 +1,93 @@
+{{More citations needed|date=August 2015}}
+In signal processing, the '''polynomial Wigner–Ville distribution''' is a [[quasiprobability distribution]] that generalizes the [[Wigner distribution function]]. It was proposed by Boualem Boashash and Peter O'Shea in 1994.
+
+== Introduction ==
+
+Many signals in nature and in engineering applications can be modeled as <math>z(t)=e^{j2\pi\phi(t)}</math>, where <math>\phi(t)</math> is a polynomial phase and <math>j=\sqrt{-1}</math>.
+
+For example, it is important to detect signals of an arbitrary high-order polynomial phase. However, the conventional Wigner–Ville distribution have the limitation being based on the second-order statistics. Hence, the polynomial Wigner–Ville distribution was proposed as a generalized form of the conventional Wigner–Ville distribution, which is able to deal with signals with nonlinear phase.
+
+== Definition ==
+
+The polynomial Wigner–Ville distribution <math>W^g_z(t, f)</math> is defined as
+
+:<math> W^g_z(t, f)=\mathcal{F}_{\tau\to f}\left[K^g_z(t, \tau)\right] </math>
+
+where <math>\mathcal{F}_{\tau\to f}</math> denotes the [[Fourier transform]] with respect to <math>\tau</math>, and <math>K^g_z(t, \tau)</math> is the polynomial kernel given by
+
+:<math> K^g_z(t, \tau)=\prod_{k=-\frac{q}{2}}^{\frac{q}{2}} \left[z\left(t+c_k\tau\right)\right]^{b_k} </math>
+
+where <math>z(t)</math> is the input signal and <math>q</math> is an even number.
+The above expression for the kernel may be rewritten in symmetric form as
+
+:<math> K^g_z(t, \tau)=\prod_{k=0}^{\frac{q}{2}} \left[z\left(t+c_k\tau\right)\right]^{b_k}\left[z^*\left(t+c_{-k}\tau\right)\right]^{-b_{-k}} </math>
+
+The discrete-time version of the polynomial Wigner–Ville distribution is given by the [[discrete Fourier transform]] of
+
+:<math> K^g_z(n, m)=\prod_{k=0}^{\frac{q}{2}} \left[z\left(n+c_{k}m\right)\right]^{b_k}\left[z^*\left(n+c_{-k}m\right)\right]^{-b_{-k}} </math>
+
+where <math>n=t{f}_s, m={\tau}{f}_{s},</math> and <math>f_s</math> is the sampling frequency.
+The conventional [[Wigner distribution function|Wigner–Ville distribution]] is a special case of the polynomial Wigner–Ville distribution with <math>q=2, b_{-1}=-1, b_1=1, b_0=0, c_{-1}=-\frac{1}{2}, c_0=0, c_1=\frac{1}{2} </math>
+
+== Example ==
+
+One of the simplest generalizations of the usual Wigner–Ville distribution kernel can be achieved by taking <math>q=4</math>. The set of coefficients <math>b_k</math> and <math>c_k</math> must be found to completely specify the new kernel. For example, we set
+
+:<math> b_1=-b_{-1}=2, b_2=b_{-2}=1, b_0=0 </math>
+:<math> c_1=-c_{-1}=0.675, c_2=-c_{-2}=-0.85</math>
+
+The resulting discrete-time kernel is then given by
+
+:<math> K^g_z(n, m)=\left[z\left(n+0.675m\right)z^*\left(n-0.675m\right)\right]^2z^*\left(n+0.85m\right)z\left(n-0.85m\right) </math>
+
+=== Design of a Practical Polynomial Kernel ===
+Given a signal <math>z(t)=e^{j2\pi\phi(t)}</math>, where <math>\phi(t)=\sum_{i=0}^p a_i t^i</math>is a polynomial function, its instantaneous frequency (IF) is <math>\phi'(t) = \sum_{i=1}^p ia_it^{i-1}</math>.
+
+For a practical polynomial kernel <math>K^g_z(t, \tau)</math>, the set of coefficients <math>q, b_k</math>and <math>c_k</math>should be chosen properly such that
+:<math> \begin{align}
+K^g_z(t, \tau) &=\prod_{k=0}^{\frac{q}{2}} \left[z\left(t+c_k\tau\right)\right]^{b_k}\left[z^*\left(t+c_{-k}\tau\right)\right]^{-b_{-k}}\\
+&= \exp(j2\pi \sum_{i=1}^pia_it^{i-1}\tau)
+\end{align}</math>
+:<math> \begin{align}
+W_z^g(t,f) &= \int_{-\infin}^{\infin} \exp(-j2\pi(f - \sum_{i=1}^p i a_i t^{i-1}) \tau)d\tau\\
+&\cong \delta (f - \sum_{i=1}^p i a_i t^{i-1})
+\end{align}</math>
+
+* When <math>q=2, b_{-1}=-1, b_0=0, b_1=1, p=2</math>,
+:<math> z\left(t+c_1\tau\right)z^*\left(t+c_{-1}\tau\right)=\exp(j2\pi \sum_{i=1}^2 i a_i t^{i-1}\tau)</math>
+:<math> a_2(t+c_1)^2 + a_1(t+c_1) - a_2(t + c_{-1})^2 - a_1(t + c_{-1}) = 2a_2t\tau + a_1\tau</math>
+:<math> \Rightarrow c_1 - c_{-1} = 1, c_1 + c_{-1} = 0</math>
+:<math> \Rightarrow c_1=\frac{1}{2}, c_{-1}=-\frac{1}{2}</math>
+
+* When <math>q=4, b_{-2}=b_{-1}=-1, b_0=0, b_2=b_1=1, p=3</math>
+:<math> \begin{align}
+&a_3(t + c_1)^3 + a_2(t+c_1)^2 + a_1(t+c_1) \\
+&a_3(t + c_2)^3 + a_2(t+c_2)^2 + a_1(t+c_2) \\
+&- a_3(t + c_{-1})^3 - a_2(t + c_{-1})^2 - a_1(t + c_{-1}) \\
+&- a_3(t + c_{-2})^3 - a_2(t + c_{-2})^2 - a_1(t + c_{-2}) \\
+&= 3a_3t^2\tau + 2a_2t\tau + a_1\tau
+\end{align}</math>
+:<math> \Rightarrow 
+\begin{cases} 
+c_1 + c_2 - c_{-1} - c_{-2} = 1 \\ 
+c_1^2 + c_2^2 - c_{-1}^2 - c_{-2}^2 = 0 \\ 
+c_1^3 + c_2^3 - c_{-1}^3 - c_{-2}^3 = 0 
+\end{cases}</math>
+
+== Applications ==
+
+Nonlinear FM signals are common both in nature and in engineering applications. For example, the sonar system of some bats use hyperbolic FM and quadratic FM signals for echo location. In radar, certain pulse-compression schemes employ linear FM and quadratic signals. The [[Wigner distribution function|Wigner–Ville distribution]] has optimal concentration in the time-frequency plane for linear [[Frequency modulation|frequency modulated]] signals. However, for nonlinear frequency modulated signals, optimal concentration is not obtained, and smeared spectral representations result. The polynomial Wigner–Ville distribution can be designed to cope with such problem.
+
+== References ==
+
+* {{cite journal|last1=Boashash|first1=B.|last2=O'Shea|first2=P.|title=Polynomial Wigner-Ville distributions and their relationship to time-varying higher order spectra|journal=IEEE Transactions on Signal Processing|volume=42|issue=1|year=1994|pages=216–220|issn=1053587X|doi=10.1109/78.258143|url=https://eprints.qut.edu.au/1849/1/Boashash_et.al.%2C_1994%2C_Polynomial_Wigner-Ville_distributions_and_their_relationship_to_time-varying_higher_order_spectra.pdf}}
+* {{cite conference|last1=Luk|first1=Franklin T.|last2=Benidir|first2=Messaoud|last3=Boashash|first3=Boualem|title=Polynomial Wigner-Ville distributions|journal=Proceedings|volume=2563|date=June 1995|pages=69–79|issn=0277786X|doi=10.1117/12.211426|location=San Diego, CA|conference=SPIE Proceedings}}
+* “Polynomial Wigner–Ville distributions and time-varying higher spectra,” in Proc. Time-Freq. Time-Scale Anal., Victoria, B.C., Canada, Oct. 1992, pp.&nbsp;31–34.
+
+{{DEFAULTSORT:Polynomial Wigner-Ville distribution}}
+[[Category:Quantum mechanics]]
+[[Category:Continuous distributions]]
+[[Category:Concepts in physics]]
+[[Category:Mathematical physics]]
+[[Category:Exotic probabilities]]
+[[Category:Polynomials]]

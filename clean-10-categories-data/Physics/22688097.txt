@@ -1,0 +1,133 @@
+{{further|Classical physics|Modern physics|Outline of physics#Branches of physics}}
+[[File:Modernphysicsfields.svg|thumb|Domains of major fields of physics]]
+
+[[Physics]] deals with the combination of matter and energy. It also deals with a wide variety of systems, about which theories have been developed that are used by physicists. In general, theories are experimentally tested numerous times before they are accepted as correct as a description of Nature (within a certain domain of validity). For instance, the theory of [[classical mechanics]] accurately describes the motion of objects, provided they are much larger than [[atom]]s and moving at much less than the [[speed of light]]. These "central theories" are important tools for research in more specialized topics, and any physicist, regardless of his or her specialization, is expected to be literate in them.
+
+==Classical mechanics==
+{{main|Classical mechanics|Mechanics}}<!-- where is this text to go? Jan2018: String Theory=This is a theory which combines the theory of general relativity and quantum mechanics. This theory can predict any particle, small or large. Currently, it is under developmental phase and a lot has to be done.-->
+
+Classical mechanics is a model of the [[physics]] of [[force]]s acting upon bodies; includes sub-fields to describe the behaviors of [[solids]], [[gases]], and [[fluids]]. It is often referred to as "Newtonian mechanics" after [[Isaac Newton]] and his [[Newton's laws of motion|laws of motion]]. It also includes the classical approach as given by [[Hamiltonian mechanics|Hamiltonian]] and [[Lagrangian mechanics|Lagrange]] methods. It deals with the motion of particles and general system of particles.
+
+There are many branches of classical mechanics, such as: [[statics]], [[Dynamics (mechanics)|dynamics]], [[kinematics]], [[continuum mechanics]] (which includes [[fluid mechanics]]), [[statistical mechanics]], etc.
+*Mechanics: A branch of physics in which we study about the object and properties of an object in form of a motion under the action of the force.
+
+==Thermodynamics and statistical mechanics==
+{{main|Thermodynamics|Statistical mechanics}}
+
+The first chapter of ''[[The Feynman Lectures on Physics]]'' is about the [[Atomic theory#Modern atomic theory|existence of atoms]], which Feynman considered being the most compact statement of physics, from which science could easily result even if all other knowledge was lost.<ref>{{cite book|first1=Richard Phillips |last1=Feynman|author-link1=Richard Feynman|first2= Robert Benjamin |last2=Leighton|author-link2=Robert B. Leighton|first3=Matthew Linzee |last3=Sands |author-link3=Matthew Sands|year= 1963|title=The Feynman Lectures on Physics | isbn= 978-0-201-02116-5 |page=[https://archive.org/details/feynmanlectureso0003feyn/page/1 1] |title-link=The Feynman Lectures on Physics}}. Feynman begins with the [[atomic theory|atomic hypothesis]], as his most compact statement of all scientific knowledge: "If, in some cataclysm, all of the scientific knowledge were to be destroyed, and only one sentence passed on to the next generations ..., what statement would contain the most information in the fewest words? I believe it is ... that ''all things are made up of atoms – little particles that move around in perpetual motion, attracting each other when they are a little distance apart, but repelling upon being squeezed into one another. ...''" vol. '''I''' p. I–2</ref> By modelling matter as collections of hard spheres, it is possible to describe the [[kinetic theory of gases]], upon which classical thermodynamics is based.
+
+Thermodynamics studies the effects of changes in [[temperature]], [[pressure]], and [[volume]] on [[physical system]]s on the [[macroscopic]] scale, and the transfer of energy as [[heat]].<ref name="Perot">{{cite book |author=Perot, Pierre |title=A to Z of Thermodynamics |publisher=Oxford University Press |year=1998 |isbn=978-0-19-856552-9}}</ref><ref>{{cite book |author=Clark, John O.E. |title=The Essential Dictionary of Science |publisher=Barnes & Noble Books |year=2004 |isbn=978-0-7607-4616-5}}</ref> Historically, thermodynamics developed out of the desire to increase the [[thermodynamic efficiency|efficiency]] of early [[steam engine]]s.<ref>{{cite book |last=Clausius |first=Rudolf |title=On the Motive Power of Heat, and on the Laws which can be deduced from it for the Theory of Heat |chapter=LXXIX | publisher=Dover Reprint |year=1850 |isbn=978-0-486-59065-3}}{{clarify|reason=isbn does not appear to match book title'|date=December 2019}}</ref>
+
+The starting point for most thermodynamic considerations is the [[laws of thermodynamics]], which postulate that [[energy]] can be exchanged between physical systems as heat or [[Mechanical work|work]].<ref>{{cite book |author=Van Ness, H.C. |title=Understanding Thermodynamics |publisher=Dover Publications, Inc. |year=1969 |isbn=978-0-486-63277-3 |url-access=registration |url=https://archive.org/details/understandingthe00vann }}</ref> They also postulate the existence of a quantity named [[entropy]], which can be defined for any system.<ref>{{cite book |author=Dugdale, J. S. |title=Entropy and its Physical Meaning |publisher=Taylor and Francis |year=1998 |isbn=978-0-7484-0569-5}}</ref> In thermodynamics, interactions between large ensembles of objects are studied and categorized. Central to this are the concepts of [[System (thermodynamics)|system]] and [[Surroundings (thermodynamics)|surroundings]]. A system is composed of particles, whose average motions define its properties, which in turn are related to one another through [[Equation of state|equations of state]]. Properties can be combined to express [[internal energy]] and [[thermodynamic potential]]s, which are useful for determining conditions for [[Dynamic equilibrium|equilibrium]] and [[spontaneous process]]es.
+
+==Electromagnetism and photonics==
+{|border="1" align="right" cellpadding="4"
+| <math>\begin{align}
+&\nabla \cdot \mathbf{D} = \rho_f \\
+&\nabla \cdot \mathbf{B} = 0 \\
+&\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B} }{\partial t} \\
+&\nabla \times \mathbf{H} = \mathbf{J}_f + \frac{\partial \mathbf{D} }{\partial t}
+\end{align}</math>
+|-
+|<small>[[Maxwell's equations]] of [[electromagnetism]]</small>
+|}
+{{main|Electromagnetism}}
+
+The study of the behaviours of electrons, electric media, magnets, magnetic fields, and general interactions of light.
+
+{{see also|Optics}}
+
+==Relativistic mechanics==
+{{main|Special relativity|General relativity}}
+The special theory of relativity enjoys a relationship with electromagnetism and mechanics; that is, the [[principle of relativity]] and the [[principle of stationary action]] in mechanics can be used to derive [[Maxwell's equations]],<ref>Landau and Lifshitz (1951, 1962), ''The Classical Theory of Fields'', Library of Congress Card Number 62-9181, Chapters 1–4 (3rd edition is {{ISBN|0-08-016019-0}})</ref><ref>Corson and Lorrain, ''Electromagnetic Fields and Waves'' {{ISBN|0-7167-1823-5}}</ref> and ''vice versa''.
+
+The theory of special relativity was proposed in 1905 by [[Albert Einstein]] in his article "[[Annus Mirabilis papers#Special relativity|On the Electrodynamics of Moving Bodies]]". The title of the article refers to the fact that special relativity resolves an inconsistency between [[Maxwell's equations]] and classical mechanics. The theory is based on [[postulates of special relativity|two postulates]]: (1) that the mathematical forms of the [[Physical law|laws of physics]] are invariant in all [[inertial frame of reference|inertial systems]]; and (2) that the [[speed of light]] in a [[vacuum]] is constant and independent of the source or observer. Reconciling the two postulates requires a unification of [[space]] and [[time in physics|time]] into the frame-dependent concept of [[spacetime]].
+
+General relativity is the [[geometrical]] theory of [[gravitation]] published by Albert Einstein in 1915/16.<ref name=Ein1915>{{cite journal |last=Einstein |first=Albert |author-link=Albert Einstein |date=November 25, 1915 |title=Die Feldgleichungen der Gravitation |journal=Sitzungsberichte der Preussischen Akademie der Wissenschaften zu Berlin |pages=844–847 |url=http://nausikaa2.mpiwg-berlin.mpg.de/cgi-bin/toc/toc.x.cgi?dir=6E3MAXK4&step=thumb |access-date=2006-09-12}}</ref><ref name=Ein1916>{{cite journal|last=Einstein |first=Albert |title=The Foundation of the General Theory of Relativity |journal=Annalen der Physik |volume= 354|issue= 7|pages= 769-822|year=1916 |url=http://www.alberteinstein.info/gallery/gtext3.html |doi=10.1002/andp.19163540702 |format=PDF |access-date=2006-09-03 |bibcode=1916AnP...354..769E |url-status=dead |archive-url=https://web.archive.org/web/20060829045130/http://www.alberteinstein.info/gallery/gtext3.html |archive-date=2006-08-29 }}</ref> It unifies special relativity, [[Newton's law of universal gravitation]], and the insight that gravitation can be described by the [[curvature]] of space and time. In general relativity, the curvature of spacetime is produced by the [[energy]] of matter and radiation.
+
+==Quantum mechanics, atomic physics, and molecular physics==
+{{main|Quantum mechanics}}
+[[File:HAtomOrbitals.png|thumb|right|225px|The first few [[hydrogen atom]] [[Electron configuration|electron orbital]]s shown as cross-sections with color-coded [[probability amplitude|probability density]]]]
+[[File:SchrodingerEquation.svg|thumb|right|225px|[[Schrödinger equation]] of [[quantum mechanics]]]]
+[[Quantum mechanics]] is the branch of physics treating [[atom]]ic and [[subatomic particle|subatomic]] systems and their interaction based on the observation that all forms of energy are released in discrete units or bundles called "[[quantum|quanta]]". Remarkably, quantum theory typically permits only [[probability|probable]] or [[statistics|statistical]] calculation of the observed features of subatomic particles, understood in terms of [[wave function]]s. The [[Schrödinger equation]] plays the role in quantum mechanics that [[Newton's laws of motion|Newton's laws]] and [[conservation of energy]] serve in classical mechanics—i.e., it predicts the future behavior of a [[dynamical system|dynamic system]]—and is a [[wave equation]] that is used to solve for wavefunctions.
+
+For example, the light, or electromagnetic radiation emitted or absorbed by an atom has only certain [[frequencies]] (or [[wavelength]]s), as can be seen from the [[Emission spectrum|line spectrum]] associated with the chemical element represented by that atom. The quantum theory shows that those frequencies correspond to definite energies of the light quanta, or [[photon]]s, and result from the fact that the [[electron]]s of the atom can have only certain allowed energy values, or levels; when an electron changes from one allowed level to another, a quantum of energy is emitted or absorbed whose frequency is directly proportional to the energy difference between the two levels. The [[photoelectric effect]] further confirmed the quantization of light.
+
+In 1924, [[Louis de Broglie]] proposed that not only do light waves sometimes exhibit particle-like properties, but particles may also exhibit wave-like properties. Two different formulations of quantum mechanics were presented following de Broglie's suggestion. The [[wave|wave mechanics]] of [[Erwin Schrödinger]] (1926) involves the use of a mathematical entity, the wave function, which is related to the probability of finding a particle at a given point in space. The [[matrix mechanics]] of [[Werner Heisenberg]] (1925) makes no mention of wave functions or similar concepts but was shown to be mathematically equivalent to Schrödinger's theory. A particularly important discovery of the quantum theory is the [[uncertainty principle]], enunciated by Heisenberg in 1927, which places an absolute theoretical limit on the accuracy of certain measurements; as a result, the assumption by earlier scientists that the physical state of a system could be measured exactly and used to predict future states had to be abandoned. Quantum mechanics was combined with the theory of relativity in the formulation of [[Paul Dirac]]. Other developments include [[quantum statistics]], [[quantum electrodynamics]], concerned with interactions between charged particles and electromagnetic fields; and its generalization, [[quantum field theory]].
+{{See also|String theory|Quantum gravity|Loop quantum gravity}}'''String Theory'''
+A possible candidate for the theory of everything, this theory combines the theory of general relativity and quantum mechanics to make a single theory. This theory can predict about properties of both small and big objects. This theory is currently under the developmental stage.
+
+==Optics==
+{{main|||Optical physics|Optics|}}
+[[Optics]] is the study of light motions including reflection, refraction, diffraction, and interference. 
+
+{{See also|Optical instruments|}}
+
+==Condensed matter physics==
+{{main|Condensed matter physics}}
+The study of the physical properties of matter in a condensed phase.
+
+{{See also|Materials science|Solid-state physics}}
+
+==High-energy particle physics and nuclear physics==
+{{main|Particle physics|Nuclear physics}}
+[[Particle physics]] studies the nature of particles, while [[nuclear physics]] studies the atomic nuclei.
+
+{{See also|String theory}}
+
+==Cosmology==
+{{Main|Cosmology}}
+[[Cosmology]] studies how the universe came to be, and its eventual fate. It is studied by [[physicists]] and [[astrophysicists]].
+
+==Interdisciplinary fields==
+To the interdisciplinary fields, which define partially sciences of their own, belong e.g. the
+*[[agrophysics]] is a branch of science bordering on agronomy and physics
+*[[astrophysics]], the physics in the universe, including the properties and interactions of celestial bodies in [[astronomy]].
+*[[biophysics]], studying the physical interactions of biological processes.
+*[[chemical physics]], the science of physical relations in [[chemistry]].
+*[[computational physics]], the application of [[computers]] and [[numerical methods]] to physical systems.
+*[[econophysics]], dealing with physical processes and their relations in the science of [[economy]].
+*[[environmental physics]], the branch of physics concerned with the measurement and analysis of interactions between organisms and their environment.
+*[[engineering physics]], the combined discipline of physics and engineering.
+*[[geophysics]], the sciences of physical relations on our planet.
+*[[mathematical physics]], mathematics pertaining to physical problems.
+*[[medical physics]], the application of physics in medicine to prevention, diagnosis, and treatment.
+*[[physical chemistry]], dealing with physical processes and their relations in the science of [[physical chemistry]].
+*[[physical oceanography]], is the study of physical conditions and physical processes within the ocean, especially the motions and physical properties of ocean waters
+*[[psychophysics]], the science of physical relations in psychology
+*[[quantum computing]], the study of quantum-mechanical computation systems.
+*[[sociophysics]] or social physics, is a field of science which uses mathematical tools inspired by physics to understand the behaviour of human crowds
+
+==Summary==
+The table below lists the core theories along with many of the concepts they employ.
+{|class="wikitable"
+!Theory || Major subtopics || Concepts
+|-
+|[[Classical mechanics]]
+|[[Newton's laws of motion]], [[Lagrangian mechanics]], [[Hamiltonian mechanics]], [[kinematics]], [[statics]], [[Dynamics (mechanics)|dynamics]], [[chaos theory]], [[acoustics]], [[fluid dynamics]], [[continuum mechanics]]
+|[[Density]], [[dimension]], [[Law of universal gravitation|gravity]], [[space]], [[time]], [[Motion (physics)|motion]], [[length]], position, [[velocity]], [[acceleration]], [[Galilean invariance]], [[mass]], [[momentum]], [[impulse (physics)|impulse]], [[Force (physics)|force]], [[energy]], [[angular velocity]], [[angular momentum]], [[moment of inertia]], [[torque]], [[Conservation law (physics)|conservation law]], [[harmonic oscillator]], [[wave]], [[Mechanical work|work]], [[Power (physics)|power]], [[Lagrangian mechanics|Lagrangian]], [[Hamiltonian function|Hamiltonian]], [[Tait–Bryan angles]], [[Euler angles]], [[pneumatic]], [[hydraulic]]
+|-
+|[[Electromagnetism]]
+|[[Electrostatics]], [[electrodynamics]], [[electricity]], [[magnetism]], [[magnetostatics]], [[Maxwell's equations]], [[optics]]
+|[[Capacitance]], [[electric charge]], [[Current (electricity)|current]], [[electrical conductivity]], [[electric field]], [[Permittivity|electric permittivity]], [[electric potential]], [[electrical resistance]], [[electromagnetic field]], [[electromagnetic induction]], [[electromagnetic radiation]], [[Gaussian surface]], [[magnetic field]], [[magnetic flux]], [[magnetic monopole]], [[magnetic permeability]]
+|-
+|[[Thermodynamics]] and [[statistical mechanics]]
+|[[Heat engine]], [[kinetic theory of gases|kinetic theory]]
+|[[Boltzmann's constant]], [[Conjugate variables (thermodynamics)|conjugate variables]], [[enthalpy]], [[entropy]], [[equation of state]], [[equipartition theorem]], [[thermodynamic free energy]], [[heat]], [[ideal gas law]], [[internal energy]], [[laws of thermodynamics]], [[Maxwell relations]], [[Non-equilibrium thermodynamics|irreversible process]], [[Ising model]], [[Action (physics)|mechanical action]], [[Partition function (statistical mechanics)|partition function]], [[pressure]], [[Reversible process (thermodynamics)|reversible process]], [[spontaneous process]], [[state function]], [[Statistical ensemble (mathematical physics)|statistical ensemble]], [[temperature]], [[thermodynamic equilibrium]], [[thermodynamic potential]], [[thermodynamic process]]es, [[thermodynamic state]], [[System (thermodynamics)|thermodynamic system]], [[viscosity]], [[volume]], [[Work (thermodynamics)|work]], [[granular material]]
+|-
+|[[Quantum mechanics]]
+|[[Path integral formulation]], [[scattering theory]], [[Schrödinger equation]], [[quantum field theory]], [[quantum statistical mechanics]]
+|[[Born–Oppenheimer approximation|Adiabatic approximation]], [[black-body radiation]], [[correspondence principle]], [[free particle]], [[Hamiltonian (quantum mechanics)|Hamiltonian]], [[Hilbert space]], [[identical particles]], [[matrix mechanics]], [[Planck's constant]], [[Observer effect (physics)|observer effect]], [[Operator (mathematics)|operators]], [[Quantum|quanta]], [[Quantization (physics)|quantization]], [[quantum entanglement]], [[quantum harmonic oscillator]], [[quantum number]], [[quantum tunneling]], [[Schrödinger's cat]], [[Dirac equation]], [[Spin (physics)|spin]], [[wave function]], [[wave|wave mechanics]], [[wave–particle duality]], [[zero-point energy]], [[Pauli exclusion principle]], [[Heisenberg uncertainty principle]]
+|-
+|[[Theory of relativity|Relativity]]
+|[[Special relativity]], [[general relativity]], [[Einstein field equations]]
+|[[General covariance|Covariance]], [[Einstein manifold]], [[equivalence principle]], [[four-momentum]], [[four-vector]], [[general principle of relativity]], [[Geodesic (general relativity)|geodesic motion]], [[gravity]], [[gravitoelectromagnetism]], [[inertial frame of reference]], [[Invariant (physics)|invariance]], [[length contraction]], [[Pseudo-Riemannian manifold|Lorentzian manifold]], [[Lorentz transformation]], [[mass–energy equivalence]], [[Metric (mathematics)|metric]], [[Minkowski diagram]], [[Minkowski space]], [[principle of relativity]], [[proper length]], [[proper time]], [[Frame of reference|reference frame]], [[rest energy]], [[rest mass]], [[relativity of simultaneity]], [[spacetime]], [[special principle of relativity]], [[speed of light]], [[stress–energy tensor]], [[time dilation]], [[twin paradox]], [[world line]]
+|}
+
+== References ==
+{{Reflist}}
+
+{{-}}
+{{Physics-footer}}
+
+[[Category: Subfields of physics| ]]

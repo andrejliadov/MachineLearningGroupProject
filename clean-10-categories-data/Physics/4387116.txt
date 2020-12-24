@@ -1,0 +1,115 @@
+'''Atom optics''' (or atomic optics) is the area of [[physics]] which deals with beams of cold, slowly moving neutral atoms, as a special case of a [[particle beam]].
+Like an optical beam, the atomic beam may exhibit [[diffraction]] and [[Interference (wave propagation)|interference]], and can be focused with a Fresnel [[zone plate]]<ref name="doak">{{cite journal
+ |url=http://www.atomwave.org/rmparticle/ao%20refs/aifm%20refs%20sorted%20by%20topic/nano-structures/fesnell%20zone%20plates/DGR99.pdf 
+ |author=R.B.Doak 
+ |author2=R.E.Grisenti 
+ |author3=S.Rehbein 
+ |author4=G.Schmahl 
+ |author5=J.P.Toennies 
+ |author6=Ch. Wöll 
+ |title=Towards Realization of an Atomic de Broglie Microscope: Helium Atom Focusing Using Fresnel Zone Plates 
+ |journal=[[Physical Review Letters]] 
+ |volume=83 
+ |issue=21 
+ |pages=4229–4232 
+ |year=1999 
+ |doi=10.1103/PhysRevLett.83.4229 
+ |bibcode=1999PhRvL..83.4229D 
+ |url-status=dead 
+ |archive-url=https://web.archive.org/web/20110719220914/http://www.atomwave.org/rmparticle/ao%20refs/aifm%20refs%20sorted%20by%20topic/nano-structures/fesnell%20zone%20plates/DGR99.pdf 
+ |archive-date=2011-07-19 
+}}</ref> or a concave [[atomic mirror]].<ref name="ccccccc">{{cite journal
+| author= J.J.Berkhout |author2=O.J.Luiten |author3=I.D.Setija |author4=T.W.Hijmans |author5=T.Mizusaki |author6=J.T.M.Walraven
+| title=Quantum reflection: Focusing of hydrogen atoms with a concave mirror 
+| journal=[[Physical Review Letters]]
+| volume=63 | issue=16 | pages=1689–1692
+| year=1989
+| doi=10.1103/PhysRevLett.63.1689
+| bibcode=1989PhRvL..63.1689B
+| pmid=10040645
+|url=https://pure.uva.nl/ws/files/2216160/46633_20y.pdf}}</ref>
+Several scientific groups work in this field.<ref name="uq">Atom Optics at the [[University of Queensland]] (Australia) homepage {{cite web|url=http://www.physics.uq.edu.au/atomoptics/ |title=UQ |access-date=2004-03-03 |url-status=live |archive-url=https://web.archive.org/web/20120317220834/http://www.physics.uq.edu.au/atomoptics/ |archive-date=2012-03-17 }}</ref>
+
+Until 2006, the resolution of imaging systems based on atomic beams was not better than that of an optical [[microscope]],
+mainly due to the poor performance of the focusing elements. Such elements use small [[numerical aperture]];
+usually, atomic mirrors use [[angle of incidence (optics)|grazing incidence]], and the reflectivity drops drastically with increase of the
+grazing angle; for efficient normal reflection, atoms should be [[ultracold atom|ultracold]], and
+dealing with such atoms usually involves [[Magnetic trap (atoms)|magnetic]], [[magneto-optical trap|magneto-optical]] or [[Optical tweezers|optical]] traps rather than an [[optics]].
+
+Recent scientific publications about Atom Nano-Optics, [[evanescent field]] lenses<ref>
+V.Balykin, V.Klimov, and V.Letokhov. [[Optics and Photonics News]], March 2005, p.44-48;
+http://www.osa-opn.org/abstract.cfm?URI=OPN-16-3-44{{dead link|date=October 2016 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>
+and [[ridged mirror]]s<ref name="fres">{{cite journal
+| url=http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&id=PRLTAO000094000001013203000001&idtype=cvips&gifs=yes
+| author= H.Oberst |author2=D.Kouznetsov |author3=K.Shimizu |author4=J.Fujita |author5=F. Shimizu
+| title=Fresnel Diffraction Mirror for an Atomic Wave
+| journal=[[Physical Review Letters]]
+| volume=94
+| issue=1
+| pages=013203
+| year=2005
+| doi=10.1103/PhysRevLett.94.013203
+| bibcode=2005PhRvL..94a3203O | pmid=15698079
+| hdl=2241/104208
+| hdl-access=free
+}}</ref><ref name="nanoscope">{{cite journal
+| url=http://stacks.iop.org/0953-4075/39/1605
+| author= D.Kouznetsov |author2=H. Oberst |author3=K. Shimizu |author4=A. Neumann |author5=Y. Kuznetsova |author6=J.-F. Bisson |author7=K. Ueda |author8=S. R. J. Brueck
+| title=Ridged atomic mirrors and atomic nanoscope
+| journal=[[Journal of Physics B]]
+| volume=39
+| issue=7
+| pages=1605–1623
+| year=2006
+| doi=10.1088/0953-4075/39/7/005
+|bibcode = 2006JPhB...39.1605K | citeseerx= 10.1.1.172.7872 }}</ref>
+show significant improvement since the beginning of the 21st century. In particular, an
+[[atomic hologram]] can be realized.<ref name="holo">{{cite journal
+| author = Shimizu
+|author2=J. Fujita
+| year = 2002
+| title = Reflection-Type Hologram for Atoms
+| journal = [[Physical Review Letters]]
+| volume=88| issue = 12 |page=123201
+| doi = 10.1103/PhysRevLett.88.123201
+| pmid = 11909457
+| bibcode=2002PhRvL..88l3201S
+}}</ref>
+An extensive review article "Optics and interferometry with atoms and molecules" appeared in July 2009.<ref name="Optics and interferometry with atoms and molecules">
+{{cite journal
+ |last1=Cronin 
+ |first1=Alexander D. 
+ |author2=Jörg Schmiedmayer 
+ |author3=David E. Pritchard 
+ |year=2009 
+ |title=Optics and interferometry with atoms and molecules 
+ |journal=[[Reviews of Modern Physics]] 
+ |volume=81 
+ |issue=3 
+ |pages=1051 
+ |url=http://www.atomwave.org/rmparticle/RMPLAO.pdf 
+ |doi=10.1103/RevModPhys.81.1051 
+ |bibcode=2009RvMP...81.1051C 
+ |arxiv=0712.3703 
+ |url-status=dead 
+ |archive-url=https://web.archive.org/web/20110719220930/http://www.atomwave.org/rmparticle/RMPLAO.pdf 
+ |archive-date=2011-07-19 
+}}</ref>
+More bibliography about Atom Optics can be found at the Resource Letter.<ref>{{Cite journal | last1 = Rohwedder | first1 = B. | title = Resource Letter AON-1: Atom optics, a tool for nanofabrication | doi = 10.1119/1.2673209 | journal = American Journal of Physics | volume = 75 | issue = 5 | pages = 394–406 | year = 2007 |bibcode = 2007AmJPh..75..394R }}</ref>
+
+==See also==
+* [[Quantum reflection]]
+* [[Atomic nanoscope]]
+
+==References==
+<references/>
+
+*Atomic and Optical Science Researchers at the University of Arizona: http://www.atomwave.org.
+*Pierre Meystre. ''Atom Optics'' {{ASIN|0387952748}}
+*{{ cite journal  |first = Schmidt-Kaler | last = F |author2=T Pfau |author3=P Schmelcher |author4=W Schleich | year = 2010 | title = Focus on Atom Optics and its Applications  | journal = [[New Journal of Physics]] | volume = 12 | issue =  6| pages = 065014| doi =  10.1088/1367-2630/12/6/065014 |bibcode = 2010NJPh...12f5014S | doi-access = free }}
+
+{{DEFAULTSORT:Atom Optics}}
+[[Category:Atomic, molecular, and optical physics]]
+
+
+{{atomic-physics-stub}}

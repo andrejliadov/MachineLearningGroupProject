@@ -1,0 +1,67 @@
+The following is a '''list of second moments of area''' of some shapes. The [[second moment of area]], also known as area moment of inertia, is a geometrical property of an area which reflects how its points are distributed with regard to an arbitrary axis. The [[physical unit|unit]] of dimension of the second moment of area is length to fourth power, [[Unit of length|L]]<sup>4</sup>, and should not be confused with the [[mass moment of inertia]]. If the piece is thin, however, the mass moment of inertia equals the area density times the area moment of inertia.
+
+==Second moments of area==
+
+Please take into account that in the following equations:
+
+<math>I_x = \iint_A y^2 dx dy</math>
+
+and
+
+<math>I_y = \iint_A x^2 dx dy</math>.
+
+
+{|class="wikitable"
+|-
+! Description || Figure || Area moment of inertia || Comment
+|-
+| A filled circular area of radius ''r'' || [[Image:Moment of area of a circle.svg|230px]] ||<math>I_x = \frac{\pi}{4} r^4</math><br><br><math>I_y = \frac{\pi}{4} r^4</math><br><br><math>I_z = \frac{\pi}{2} r^4</math> <ref>{{cite web|url=http://www.efunda.com/math/areas/Circle.cfm|title=Circle|accessdate=2006-12-30|publisher=eFunda}}</ref>||<math>I_z</math> is the [[Polar moment of inertia]].
+|-gtegthg
+| An [[annulus (mathematics)|annulus]] of inner radius ''r''<sub>1</sub> and outer radius ''r''<sub>2</sub> || [[Image:Moment of area of an annulus.svg|230px]] ||<math>I_x = \frac{\pi}{4} \left({r_2}^4-{r_1}^4\right)</math><br><br><math>I_y = \frac{\pi}{4} \left({r_2}^4-{r_1}^4\right)</math><br><br><math>I_z = \frac{\pi}{2} \left({r_2}^4-{r_1}^4\right)</math>|| For thin tubes, <math> r \equiv r_1 \approx r_2</math> and <math>r_2 \equiv r_1+t</math>. So, for a thin tube, <math>I_x = I_y \approx \pi {r}^3{t}</math>.<br><br><math>I_z</math> is the [[Polar moment of inertia]].
+|-
+| A filled [[circular sector]] of angle ''θ'' in [[radian]]s and radius ''r'' with respect to an axis through the centroid of the sector and the center of the circle || [[Image:Moment of area of a circular sector.svg|230px]] || <math>I_x = \left( \theta -\sin \theta \right) \frac{r^{4}}{8}</math> || This formula is valid only for 0 ≤ <math>\theta</math> ≤ <math>2\pi</math>
+|-
+| A filled semicircle with radius ''r'' with respect to a horizontal line passing through the centroid of the area || [[Image:Moment of area of a semicircle through the centroid.svg|230px]] || <math>I_x = \left(\frac{\pi}{8} - \frac{8}{9\pi}\right)r^4 \approx 0.1098r^4 </math><br><br><math>I_y = \frac{\pi r^4}{8}</math> <ref name=semicircle>{{cite web|url=http://www.efunda.com/math/areas/CircleHalf.cfm|title=Circular Half|accessdate=2006-12-30|publisher=eFunda}}</ref> ||
+|-
+| A filled semicircle as above but with respect to an axis collinear with the base || [[Image:Moment of area of a semicircle through the base.svg|230px]] || <math>I_x = \frac{\pi r^4}{8}</math><br><br><math>I_y = \frac{\pi r^4}{8}</math> <ref name=semicircle /> || <math>I_x</math>: This is a consequence of the [[parallel axis theorem]] and the fact that the distance between the x axes of the previous one and this one is <math>\frac{4r}{3\pi}</math>
+|-
+| A filled quarter circle with radius ''r'' with the axes passing through the bases || [[Image:Moment of area of a quarter circle through the base.svg|230px]] || <math>I_x = \frac{\pi r^4}{16}</math><br><br><math>I_y = \frac{\pi r^4}{16}</math> <ref name=quartercircle>{{cite web|url=http://www.efunda.com/math/areas/CircleQuarter.cfm|title=Quarter Circle|accessdate=2006-12-30|publisher=eFunda}}</ref> ||
+|-
+| A filled quarter circle with radius ''r'' with the axes passing through the centroid || [[Image:Moment of area of a quarter circle through the centroid.svg|230px]] || <math>I_x = \left(\frac{\pi}{16}-\frac{4}{9\pi}\right)r^4 \approx 0.0549r^4</math><br><br><math>I_y = \left(\frac{\pi}{16}-\frac{4}{9\pi}\right)r^4 \approx 0.0549r^4</math> <ref name=quartercircle /> || This is a consequence of the [[parallel axis theorem]] and the fact that the distance between these two axes is <math>\frac{4r}{3\pi}</math>
+|-
+| A filled [[ellipse]] whose radius along the ''x''-axis is ''a'' and whose radius along the ''y''-axis is ''b'' || [[Image:Moment of area of an ellipse.svg|230px]]</td><td><math>I_x = \frac{\pi}{4} ab^3</math><br><br><math>I_y = \frac{\pi}{4} a^3b</math> ||
+|-
+| A filled rectangular area with a base width of ''b'' and height ''h'' || [[Image:Moment of area of a rectangle through the centroid.svg|230px]] ||<math>I_x = \frac{bh^3}{12}</math><br><br><math>I_y = \frac{b^3h}{12}</math> <ref name=rect>{{cite web|url=http://www.efunda.com/math/areas/rectangle.cfm|title=Rectangular area|accessdate=2006-12-30|publisher=eFunda}}</ref> ||
+|-
+| A filled rectangular area as above but with respect to an axis collinear with the base || [[Image:Moment of area of a rectangle through the base.svg|230px]] || <math>I_x = \frac{bh^3}{3}</math><br><br><math>I_y = \frac{b^3h}{3}</math> <ref name=rect /> || This is a result from the [[parallel axis theorem]]
+|-
+| A hollow [[rectangle]] with an inner rectangle whose width is ''b''<sub>1</sub> and whose height is ''h''<sub>1</sub> || [[Image:Moment of area of a hollow rectangle.svg|230px]]</td><td><math>I_x = \frac{bh^3 - b_1{h_1}^3}{12}</math><br><br><math>I_y = \frac{b^3h - {b_1}^3h_1}{12}</math> ||
+|-
+| A filled triangular area with a base width of ''b'', height ''h'' and top vertex displacement ''a'', with respect to an axis through the centroid || [[File:Moment of inertia on a triangle through centroide with dimension 'a'.svg|230px|center|The figure presents a triangle with dimensions 'b', 'h' and 'a', along with axes 'x' and 'y' that pass through the centroid.]] || <math>I_x = \frac{bh^3}{36}</math><br><br><math>I_y = \frac{b^3h-b^2ha+bha^2}{36}</math> <ref name=tri>{{cite web|url=http://www.efunda.com/math/areas/triangle.cfm|title=Triangular area|accessdate=2006-12-30|publisher=eFunda}}</ref> 
+|-
+| A filled triangular area as above but with respect to an axis collinear with the base || [[File:Moment of inertia on a traingle through the base with dimension 'a'.svg|230px|center|The figure presents a triangle with dimensions 'b', 'h' and 'a', along with axes 'x' and 'y', 'x' being collinear with the base.]] || <math>I_x = \frac{bh^3}{12}</math><br><br><math>I_y = \frac{b^3h+b^2ha+bha^2}{12}</math> <ref name=tri /> || This is a consequence of the [[parallel axis theorem]]
+|-
+| An equal legged angle, commonly found in engineering applications||[[File:Second_Moment_of_Area_Angle.jpg|230px]]||<math>I_x = I_y = \frac{t(5L^2-5Lt+t^2)(L^2-Lt+t^2)}{12(2L-t)}</math><br><br><math>I_{(xy)} = \frac{L^2t(L-t)^2}{4(t-2L)}</math><br><br><math>I_a =  \frac{t(2L-t)(2L^2-2Lt+t^2)}{12}</math><br><br><math>I_b = \frac{t(2L^4-4L^3t+8L^2t^2-6Lt^3+t^4)}{12(2L-t)}</math> || <math>I_{(xy)}</math> is the often unused product of inertia, used to define inertia with a rotated axis
+|-
+| A filled [[regular hexagon]] with a side length of ''a'' || [[Image:Moment of area of a regular hexagon.svg|230px]] || <math>I_x = \frac{5\sqrt{3}}{16}a^4</math><br><br><math>I_y = \frac{5\sqrt{3}}{16}a^4</math> || The result is valid for both a horizontal and a vertical axis through the centroid, and therefore is also valid for an axis with arbitrary direction that passes through the origin.
+|}
+
+== Parallel axis theorem ==
+[[Image:Parallel axis theorem.svg|thumb]]
+{{main|Parallel axis theorem}}
+
+The parallel axis theorem can be used to determine the second moment of area of a rigid body about any axis, given the body's moment of inertia about a parallel axis through the object's center of mass and the perpendicular distance (d) between the axes.
+
+<math>I_{x'} = I_{x} + Ad^2</math>
+
+==See also==
+
+* [[List of moments of inertia]]
+* [[List of centroids]]
+* [[Polar moment of inertia]]
+
+==References==
+{{reflist}}
+
+[[Category:Mechanics|Area moment of inertia]]
+[[Category:Physics-related lists|Area moments of inertia]]

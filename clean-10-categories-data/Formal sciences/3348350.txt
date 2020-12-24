@@ -1,0 +1,26 @@
+{{short description|A proposed standard language for software agent communication}}
+{{More citations needed|date=September 2014}}
+'''Agent Communication Language''' ('''ACL'''), proposed by the [[Foundation for Intelligent Physical Agents]] (FIPA), is a proposed standard language for [[Software agent|agent]] communications.  [[Knowledge Query and Manipulation Language]] (KQML) is another proposed standard.
+
+The most popular ACLs are:
+
+* FIPA-ACL<ref>{{cite journal|last=Poslad|first=Stefan|title=Specifying Protocols for Multi-agent System Interaction|year=2007|journal=ACM Transactions on Autonomous and Adaptive Systems|volume=2|issue=4|pages=15–es|doi=10.1145/1293731.1293735}}</ref> (by the [[Foundation for Intelligent Physical Agents]], a standardization [[consortium]])
+* [[KQML]]<ref>{{cite journal|last=Finin|first=Tim|author2= Richard Fritzson, Don McKay and Robin McEntire |title=KQML as an agent communication language|year=1994|conference=Proceedings of the third international conference on Information and knowledge management, CIKM '94 |pages= 456–463}}</ref> (Knowledge Query and Manipulation Language)
+
+Both rely on [[speech act]] theory developed by [[John Searle|Searle]] in the 1960s<ref>{{cite book|last=Searle|first=J.R.|year=1969|title=Speech Acts|publisher=Cambridge University Press, Cambridge, UK}}</ref> and enhanced by [[Terry Winograd|Winograd]] and [[Fernando Flores|Flores]] in the 1970s. They define a set of [[Performative utterance|performatives]], also called Communicative Acts, and their meaning (e.g. ask-one). The content of the performative is not standardized, but varies from system to system.
+
+To make agents understand each other they have to not only speak the same language, but also have a common [[Ontology (computer science)|ontology]]. An ontology is a part of the agent's knowledge base that describes what kind of things an agent can deal with and how they are related to each other.
+
+Examples of frameworks that implement a standard agent communication language (FIPA-ACL) include FIPA-OS<ref>{{cite conference|last=Poslad|first=Stefan|author2=Philip Buckle and Robert Hadingham|title=The FIPA-OS agent platform: Open Source for Open Standards|year=2000|conference=Proceedings of 5th International Conference on the Practical Application Of Intelligent Agents And Multi-Agent Technology (PAAM)|pages=355–368}}</ref><ref>{{cite book|last=Poslad|first=S|author2=Buckle P, Hadingham R.G|title=Open Source, Standards and Scaleable Agencies|journal=Lecture Notes in Computer Science|year=2001|volume=1887|pages=[https://archive.org/details/infrastructurefo0000inte/page/296 296–303]|doi=10.1007/3-540-47772-1_30|isbn=978-3-540-42315-7|url=https://archive.org/details/infrastructurefo0000inte/page/296}}</ref>
+and [[Java Agent Development Framework|Jade]].<ref>{{cite conference|last=Bellifeminee|first=Fabio|author2=Agostino Poggi and Giovanni Rimassa|title=JADE: a FIPA2000 compliant agent development environment|year=2001|conference=Proceedings of the fifth international conference on Autonomous agents|pages=216–217}}</ref>
+
+==References==
+{{reflist}}
+
+[[Category:Formal languages]]
+[[Category:Knowledge representation]]
+[[Category:Multi-agent systems]]
+
+
+{{Measurement-stub}}
+{{computing-stub}}

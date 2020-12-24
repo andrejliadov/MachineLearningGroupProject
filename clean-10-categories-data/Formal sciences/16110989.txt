@@ -1,0 +1,84 @@
+{{refimprove|date=February 2009}}
+An '''affix grammar''' is a kind of [[formal grammar]]; it is used to describe the [[Syntax (programming languages)|syntax]] of languages, mainly [[computer language]]s, using an approach based on how natural language is typically described.<ref>Koster, Cornelis HA. "[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.53.5264&rep=rep1&type=pdf Affix grammars for natural languages]." Attribute Grammars, Applications and Systems. Springer, Berlin, Heidelberg, 1991.</ref>
+
+The grammatical rules of an affix grammar are those of a [[context-free grammar]], except that certain parts in the nonterminals (the [[affix]]es) are used as arguments.  If the same affix occurs multiple times in a rule, its value must [[agreement (linguistics)|agree]], i.e. it must be the same everywhere.  In some types of affix grammar, more complex relationships between affix values are possible.
+
+== Example ==
+
+We can describe an extremely simple fragment of English in the following manner:
+
+: ''Sentence'' → ''Subject'' ''Predicate''
+: ''Subject'' → ''Noun''
+: ''Predicate'' → ''Verb'' ''Object''
+: ''Object'' → ''Noun''
+: 
+: ''Noun'' → John
+: ''Noun'' → Mary
+: ''Noun'' → children
+: ''Noun'' → parents
+: 
+: ''Verb'' → like
+: ''Verb'' → likes
+: ''Verb'' → help
+: ''Verb'' → helps
+
+This [[context-free grammar]] describes simple sentences such as
+
+: John likes children
+: Mary helps John
+: children help parents
+: parents like John
+
+With more nouns and verbs, and more rules to introduce other parts of speech, a large range of English sentences can be described; so this is a promising approach for describing the syntax of English.
+
+However, the given grammar also describes sentences such as
+
+: John like children
+: children helps parents
+
+These sentences are wrong: in English, subject and verb have a [[grammatical number]], which must agree.
+
+An affix grammar can express this directly:
+: ''Sentence'' &rarr; ''Subject'' + ''number  Predicate''+''number''
+: ''Subject'' + ''number'' &rarr; ''Noun'' + ''number''
+: ''Predicate'' + ''number'' &rarr; ''Verb'' + ''number  Object''
+: ''Object'' &rarr; ''Noun'' + ''number''
+
+: ''Noun'' + ''singular'' &rarr; John
+: ''Noun'' + ''singular'' &rarr; Mary
+: ''Noun'' + ''plural'' &rarr; children
+: ''Noun'' + ''plural'' &rarr; parents
+: 
+: ''Verb'' + ''singular'' &rarr; likes
+: ''Verb'' + ''plural'' &rarr; like
+: ''Verb'' + ''singular'' &rarr; helps
+: ''Verb'' + ''plural'' &rarr; help
+
+This grammar only describes correct English sentences, although it could be argued that
+: John likes John
+is still incorrect and should instead read
+: John likes himself
+
+This, too, can be incorporated using affixes, if the means of describing the relationships between different affix values are powerful enough. As remarked above, these means depend on the type of affix grammar chosen.
+
+== Types ==
+
+In the simplest type of affix grammar, affixes can only take values from a finite domain, and affix values can only be related through agreement, as in the example.
+Applied in this way, affixes increase compactness of grammars, but do not add expressive power.
+
+Another approach is to allow affixes to take arbitrary strings as values and allow   concatenations of affixes to be used in rules.  The ranges of allowable values for affixes can be described with context-free grammar rules.  This produces the formalism of [[two-level grammar]]s, also known as ''[[Van Wijngaarden grammar]]s'' or ''2VW'' grammars.  These have been successfully used to describe complicated languages, in particular, the syntax of the [[Algol 68]] [[programming language]].  However, it turns out that, even though affix values can only be manipulated with string concatenation, this formalism is [[Turing complete]]; hence, even the most basic questions about the language described by an arbitrary 2VW grammar are [[Undecidable language|undecidable]] in general.
+
+[[Extended Affix Grammar]]s, developed in the 1980s, are a more restricted version of the same idea.  They were mainly applied to describe the grammar of natural language, e.g. English.
+
+Another possibility is to allow the values of affixes to be computed by code written in some programming language.  Two basic approaches have been used:
+* In [[attribute grammar]]s, the affixes (called attributes) can take values from arbitrary domains (e.g. integer or real numbers, complex data structures) and arbitrary functions can be specified, written in a language of choice, to describe how affix values in rules are derived from each other.
+* In CDL (the [[Compiler Description Language]]) and its successor [[CDL2]], developed in the 1970s, fragments of source code (usually in [[assembly language]]) can be used in rules instead of normal right-hand sides, allowing primitives for input scanning and affix value computations to be expressed directly.  Designed as a basis for practical [[compiler]] construction, this approach was used to write compilers, and other software, e.g. a [[text editor]].
+
+== References ==
+
+{{reflist}}
+
+[[Category:Formal languages]]
+[[Category:Compiler construction]]
+[[Category:Syntax]]
+[[Category:Grammar frameworks]]

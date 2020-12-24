@@ -1,0 +1,123 @@
+{{Quantum mechanics|cTopic=Advanced topics}}
+
+In [[physics]], '''fractional quantum mechanics''' is a generalization of standard [[quantum mechanics]], which naturally comes out when the Brownian-like quantum paths substitute with the Lévy-like ones in the [[Feynman path integral]]. This concept was discovered by [[Nick Laskin]] who coined the term ''fractional quantum mechanics''.<ref>{{Cite journal |doi = 10.1016/S0375-9601(00)00201-2|title = Fractional quantum mechanics and Lévy path integrals|journal = Physics Letters A|volume = 268|issue = 4–6|pages = 298–305|year = 2000|last1 = Laskin|first1 = Nikolai|arxiv = hep-ph/9910419}}</ref>
+
+==Fundamentals==
+Standard quantum mechanics can be approached in three different ways: the [[matrix mechanics]], the [[Schrödinger equation]] and the [[Feynman path integral]].
+
+The [[Feynman path integral]]<ref>R. P. Feynman and A. R. Hibbs, Quantum Mechanics and Path Integrals ~McGraw-Hill, New York, 1965</ref> is the path integral over Brownian-like quantum-mechanical paths. Fractional quantum mechanics has been discovered by [[Nick Laskin]] (1999) as a result of expanding the [[Feynman path integral]], from the Brownian-like to the Lévy-like quantum mechanical paths. A path integral over the Lévy-like quantum-mechanical paths results in a generalization of [[quantum mechanics]].<ref>{{cite journal | last=Laskin | first=Nick | title=Fractional quantum mechanics | journal=Physical Review E | publisher=American Physical Society (APS) | volume=62 | issue=3 | date=1 August 2000 | issn=1063-651X | doi=10.1103/physreve.62.3135 | pages=3135–3145|arxiv=0811.1769 | bibcode=2000PhRvE..62.3135L}}</ref> If the [[Feynman path integral]] leads to the well known [[Schrödinger equation]], then the path integral over [[Paul Lévy (mathematician)|Lévy]] trajectories leads to the [[fractional Schrödinger equation]].<ref>{{cite journal | last=Laskin | first=Nick | title=Fractional Schrödinger equation | journal=Physical Review E | publisher=American Physical Society (APS) | volume=66 | issue=5 | date=18 November 2002 | issn=1063-651X | doi=10.1103/physreve.66.056108 | page=056108|arxiv=quant-ph/0206098 | pmid=12513557 | bibcode=2002PhRvE..66e6108L}}</ref> The [[Lévy process]] is characterized
+by the Lévy index ''α'', 0&nbsp;<&nbsp;''α''&nbsp;≤&nbsp;2. At the special case when ''α''&nbsp;=&nbsp;2 the [[Lévy process]] becomes the process of [[Brownian motion]]. The fractional Schrödinger equation includes a space [[derivative]] of fractional order ''α'' instead of the second order (''α''&nbsp;=&nbsp;2) space derivative in the standard Schrödinger equation. Thus, the fractional Schrödinger equation is a [[fractional differential equation]] in accordance with modern terminology.<ref>S. G. Samko, A. A. Kilbas, and O. I. Marichev, Fractional
+Integrals and Derivatives, Theory and Applications ~Gordon
+and Breach, Amsterdam, 1993</ref> This is the key point to launch the term [[fractional Schrödinger equation]] and more general term ''fractional quantum mechanics''. As mentioned above, at ''α''&nbsp;=&nbsp;2 the Lévy motion becomes [[Brownian motion]]. Thus, fractional quantum mechanics includes standard quantum mechanics as a particular case at ''α''&nbsp;=&nbsp;2. The quantum-mechanical path integral over the Lévy paths at ''α''&nbsp;=&nbsp;2 becomes the well-known [[Feynman path integral]] and the [[fractional Schrödinger equation]] becomes the well-known [[Schrödinger equation]].
+
+=== Fractional Schrödinger equation ===
+
+The [[fractional Schrödinger equation]] discovered by [[Nick Laskin]] has the following form (see, Refs.[1,3,4])
+
+: <math>i\hbar \frac{\partial \psi (\mathbf{r},t)}{\partial t}=D_\alpha (-\hbar
+^2\Delta )^{\alpha /2}\psi (\mathbf{r},t)+V(\mathbf{r},t)\psi (\mathbf{r},t)\, </math>
+
+using the standard definitions:
+*'''r''' is the 3-dimensional [[position vector]], 
+*''ħ'' is the reduced [[Planck constant]], 
+*''ψ''('''r''', ''t'') is the [[wavefunction]], which is the quantum mechanical function that determines the probability amplitude for the particle to have a given position '''r''' at any given time ''t'', 
+*''V''('''r''', ''t'') is a [[potential energy]], 
+*Δ = &part;<sup>2</sup>/&part;'''r'''<sup>2</sup> is the [[Laplace operator]].
+
+Further,
+*''D<sub>α</sub>'' is a scale constant with [[dimensional analysis|physical dimension]] [D<sub>α</sub>] = [energy]<sup>1 − ''α''</sup>·[length]<sup>''α''</sup>[time]<sup>−''α''</sup>, at ''α''&nbsp;=&nbsp;2, ''D''<sub>2</sub> =1/2''m'', where ''m'' is a particle mass,
+*the operator (−''ħ''<sup>2</sup>Δ)<sup>''α''/2</sup> is the 3-dimensional fractional quantum Riesz derivative defined by (see, Refs.[3, 4]);
+
+::<math>
+(-\hbar ^2\Delta )^{\alpha /2}\psi (\mathbf{r},t)=\frac 1{(2\pi \hbar
+)^3}\int d^3pe^{i \mathbf{p}\cdot \mathbf{r}/\hbar}|\mathbf{p}|^\alpha \varphi (
+\mathbf{p},t),
+</math>
+
+Here, the wave functions in the [[position and momentum space]]s; <math>\psi(\mathbf{r},t)</math> and <math> \varphi (\mathbf{p},t)</math> are related each other by the 3-dimensional [[Fourier transform]]s:
+
+:<math>
+\psi (\mathbf{r},t)=\frac 1{(2\pi \hbar )^3}\int d^3pe^{i \mathbf{p}\cdot\mathbf{r}/\hbar}\varphi (\mathbf{p},t),\qquad \varphi (\mathbf{p},t)=\int d^3re^{-i
+\mathbf{p}\cdot\mathbf{r}/\hbar }\psi (\mathbf{r},t).
+</math>
+
+The index ''α'' in the fractional Schrödinger equation is the Lévy index, 1&nbsp;<&nbsp;''α''&nbsp;≤&nbsp;2.
+
+=== Fractional quantum mechanics in solid state systems ===
+The effective mass of states in solid state systems can depend on the wave vector k, i.e. formally one considers m=m(k). Polariton Bose-Einstein condensate modes are examples of states in solid state systems with mass sensitive to variations and locally in k fractional quantum mechanics is experimentally feasible.
+
+== See also ==
+*[[Quantum mechanics]]
+*[[Matrix mechanics]]
+*[[Fractional calculus]]
+*[[Fractional dynamics]]
+*[[Fractional Schrödinger equation]]
+*[[Non-linear Schrödinger equation]]
+*[[Path integral formulation]]
+*[[Relation between Schrödinger's equation and the path integral formulation of quantum mechanics]]
+*[[Lévy process]]
+
+== References ==
+
+<references/>
+{{refbegin}}
+{{refend}}
+
+* {{cite book
+  |title=Fractional Integrals and Derivatives: Theory and Applications
+  |last1=Samko|first1=S.
+  |last2=Kilbas|first2=A.A.
+  |last3=Marichev|first3=O.
+  |publisher=Taylor & Francis Books
+  |isbn=978-2-88124-864-1
+  |year=1993
+}}
+
+* {{cite book
+  |title=Theory and Applications of Fractional Differential Equations
+  |last1=Kilbas|first1=A. A.
+  |last2=Srivastava|first2=H. M.
+  |last3=Trujillo|first3=J. J.
+  |location=Amsterdam, Netherlands
+  |publisher=Elsevier
+  |year=2006
+  |isbn=978-0-444-51832-3
+}}
+
+* {{cite book
+  |title=Fractional Calculus - An Introduction for Physicists
+  |first=R.|last=Herrmann
+  |publisher=World Scientific|location=Singapore
+  |year=2014
+|doi=10.1142/8934
+  |isbn = 978-981-4551-07-6}}
+
+* {{cite book
+  |title=Fractional Quantum Mechanics
+  |first=N.|last=Laskin
+  |publisher=World Scientific
+  |year=2018
+|doi=10.1142/10541
+  |isbn = 978-981-322-379-0|citeseerx = 10.1.1.247.5449}}
+
+* {{cite journal | last=Pinsker | first=F. | last2=Bao | first2=W. | last3=Zhang | first3=Y. | last4=Ohadi | first4=H. | last5=Dreismann | first5=A. | last6=Baumberg | first6=J. J. | title=Fractional quantum mechanics in polariton condensates with velocity-dependent mass | journal=Physical Review B | publisher=American Physical Society (APS) | volume=92 | issue=19 | date=25 November 2015 | issn=1098-0121 | doi=10.1103/physrevb.92.195310 | page=195310|arxiv=1508.03621}}
+
+== Further reading ==
+* {{cite journal | last=Amaral | first=R L P G do | last2=Marino | first2=E C | title=Canonical quantization of theories containing fractional powers of the d'Alembertian operator | journal=Journal of Physics A: Mathematical and General | publisher=IOP Publishing | volume=25 | issue=19 | date=7 October 1992 | issn=0305-4470 | doi=10.1088/0305-4470/25/19/026 | pages=5183–5200}}
+* {{cite journal | last=He | first=Xing-Fei | title=Fractional dimensionality and fractional derivative spectra of interband optical transitions | journal=Physical Review B | publisher=American Physical Society (APS) | volume=42 | issue=18 | date=15 December 1990 | issn=0163-1829 | doi=10.1103/physrevb.42.11751 | pages=11751–11756}}
+* {{cite journal | last=Iomin | first=Alexander | title=Fractional-time quantum dynamics | journal=Physical Review E | publisher=American Physical Society (APS) | volume=80 | issue=2 | date=28 August 2009 | issn=1539-3755 | doi=10.1103/physreve.80.022103 | page=022103| arxiv=0909.1183 }}
+* {{cite journal | last=Matos-Abiague | first=A | title=Deformation of quantum mechanics in fractional-dimensional space | journal=Journal of Physics A: Mathematical and General | publisher=IOP Publishing | volume=34 | issue=49 | date=5 December 2001 | issn=0305-4470 | doi=10.1088/0305-4470/34/49/321 | pages=11059–11068| arxiv=quant-ph/0107062 }}
+* {{cite journal | last=Laskin | first=Nick | title=Fractals and quantum mechanics | journal=Chaos: An Interdisciplinary Journal of Nonlinear Science | publisher=AIP Publishing | volume=10 | issue=4 | year=2000 | issn=1054-1500 | doi=10.1063/1.1050284 | page=780}}
+* {{cite journal | last=Naber | first=Mark | title=Time fractional Schrödinger equation | journal=Journal of Mathematical Physics | publisher=AIP Publishing | volume=45 | issue=8 | year=2004 | issn=0022-2488 | doi=10.1063/1.1769611 | pages=3339–3352|arxiv=math-ph/0410028}}
+* {{cite journal | last=Tarasov | first=Vasily E. | title=Fractional Heisenberg equation | journal=Physics Letters A | publisher=Elsevier BV | volume=372 | issue=17 | year=2008 | issn=0375-9601 | doi=10.1016/j.physleta.2008.01.037 | pages=2984–2988|arxiv=0804.0586}}
+* {{cite journal | last=Tarasov | first=Vasily E. | title=Weyl quantization of fractional derivatives | journal=Journal of Mathematical Physics | publisher=AIP Publishing | volume=49 | issue=10 | year=2008 | issn=0022-2488 | doi=10.1063/1.3009533 | page=102112|arxiv=0907.2699}}
+* {{cite journal | last=Wang | first=Shaowei | last2=Xu | first2=Mingyu | title=Generalized fractional Schrödinger equation with space-time fractional derivatives | journal=Journal of Mathematical Physics | publisher=AIP Publishing | volume=48 | issue=4 | year=2007 | issn=0022-2488 | doi=10.1063/1.2716203 | page=043502}} 
+* {{cite journal | last=de Oliveira | first=E Capelas | last2=Vaz | first2=Jayme | title=Tunneling in fractional quantum mechanics | journal=Journal of Physics A: Mathematical and Theoretical | publisher=IOP Publishing | volume=44 | issue=18 | date=5 April 2011 | issn=1751-8113 | doi=10.1088/1751-8113/44/18/185303 | page=185303| arxiv=1011.1948 }}
+* {{cite book | last=Tarasov | first=Vasily E. | title=Nonlinear Physical Science | chapter=Fractional Dynamics of Open Quantum Systems | publisher=Springer Berlin Heidelberg | publication-place=Berlin, Heidelberg | year=2010 | isbn=978-3-642-14002-0 | issn=1867-8440 | doi=10.1007/978-3-642-14003-7_20 | pages=467–490}}
+* {{cite book | last=Tarasov | first=Vasily E. | title=Nonlinear Physical Science | chapter=Fractional Dynamics of Hamiltonian Quantum Systems | publisher=Springer Berlin Heidelberg | publication-place=Berlin, Heidelberg | year=2010 | isbn=978-3-642-14002-0 | issn=1867-8440 | doi=10.1007/978-3-642-14003-7_19 | pages=457–466}}
+
+{{Physics-footer}}
+{{Quantum mechanics topics|state=expanded}}
+
+[[Category:Fractals]]
+[[Category:Quantum mechanics| ]]

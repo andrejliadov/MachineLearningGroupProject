@@ -1,0 +1,993 @@
+{{Format footnotes|date=September 2020}}
+[[Image:Excerpt from CDC 2003 Table 1.pdf|thumb|right|2003 US mortality ([[life table|life]]) table, Table 1, Page 1]]
+
+'''Actuarial science''' is the discipline that applies [[mathematics|mathematical]] and [[statistics|statistical]] methods to [[Risk assessment|assess risk]] in [[insurance]], [[finance]], and other industries and professions. More generally, actuaries apply rigorous mathematics to model matters of uncertainty.
+
+[[Actuary|Actuaries]] are professionals trained in this discipline. In many countries, actuaries must demonstrate their competence by passing a series of rigorous professional examinations.
+
+Actuarial science includes a number of interrelated subjects, including [[mathematics]], [[probability theory]], [[statistics]], [[finance]], [[economics]], and [[computer science]]. Historically, actuarial science used deterministic models in the construction of tables and premiums. The science has gone through revolutionary changes since the 1980s due to the proliferation of high speed computers and the union of [[stochastic]] actuarial models with modern financial theory {{harv|Frees|1990}}.
+
+Many universities have undergraduate and graduate degree programs in actuarial science. In 2010, a study published by job search website CareerCast ranked actuary as the #1 job in the United States {{harv|Needleman|2010}}. The study used five key criteria to rank jobs: environment, income, employment outlook, physical demands, and stress. A similar study by ''U.S. News & World Report'' in 2006 included actuaries among the 25 Best Professions that it expects will be in great demand in the future {{harv|Nemko|2006}}.
+
+==Life insurance, pensions and healthcare==
+Actuarial science became a formal mathematical discipline in the late 17th century with the increased demand for long-term insurance coverage such as burial, [[life insurance]], and annuities. These long term coverages required that money be set aside to pay future benefits, such as annuity and death benefits many years into the future. This requires estimating future contingent events, such as the rates of mortality by age, as well as the development of mathematical techniques for discounting the value of funds set aside and invested. This led to the development of an important actuarial concept, referred to as the [[present value]] of a future sum. Certain aspects of the actuarial methods for discounting [[pension funds]] have come under criticism from modern [[financial economics]].
+
+* In traditional life insurance, actuarial science focuses on the analysis of [[mortality rate|mortality]], the production of [[life table]]s, and the application of [[interest|compound interest]] to produce life insurance, annuities and endowment policies. Contemporary life insurance programs have been extended to include credit and mortgage insurance, [[key person insurance]] for small businesses, [[long term care insurance]] and [[Medical savings account|health savings accounts]] {{harv|Hsiao|2001}}.
+* In health insurance, including insurance provided directly by employers, and social insurance, actuarial science focuses on the analysis of rates of disability, morbidity, mortality, fertility and other contingencies. The effects of consumer choice and the geographical distribution of the utilization of medical services and procedures, and the utilization of drugs and therapies, is also of great importance. These factors underlay the development of the Resource-Base Relative Value Scale ([[RBRVS]]) at Harvard in a multi-disciplined study {{harv|Hsiao|2004}}. Actuarial science also aids in the design of benefit structures, reimbursement standards, and the effects of proposed government standards on the cost of healthcare {{harv|CHBRP|2004}}.
+* In the pension industry, actuarial methods are used to measure the costs of alternative strategies with regard to the design, funding, accounting, administration, and maintenance or redesign of pension plans. The strategies are greatly influenced by short-term and long-term bond rates, the funded status of the pension and benefit arrangements, [[collective bargaining]]; the employer's old, new and foreign competitors; the changing demographics of the workforce; changes in the internal revenue code; changes in the attitude of the internal revenue service regarding the calculation of surpluses; and equally importantly, both the short and long term financial and economic trends. It is common with mergers and acquisitions that several pension plans have to be combined or at least administered on an equitable basis. When benefit changes occur, old and new benefit plans have to be blended, satisfying new social demands and various government discrimination test calculations, and providing employees and retirees with understandable choices and transition paths. Benefit plans liabilities have to be properly valued, reflecting both earned benefits for past service, and the benefits for future service. Finally, funding schemes have to be developed that are manageable and satisfy the standards board or regulators of the appropriate country, such as the [[Financial Accounting Standards Board]] in the United States.
+* In social welfare programs, the [[Office of the Chief Actuary]] (OCACT), [[Social Security Administration]] plans and directs a program of actuarial estimates and analyses relating to SSA-administered retirement, survivors and disability insurance programs and to proposed changes in those programs. It evaluates operations of the [[Social Security (United States)|Federal Old-Age and Survivors Insurance Trust Fund]] and the Federal Disability Insurance Trust Fund, conducts studies of program financing, performs actuarial and demographic research on social insurance and related program issues involving mortality, morbidity, utilization, retirement, disability, survivorship, marriage, unemployment, poverty, old age, families with children, etc., and projects future workloads. In addition, the Office is charged with conducting cost analyses relating to the [[Supplemental Security Income]] (SSI) program, a general-revenue financed, means-tested program for low-income aged, blind and disabled people. The Office provides technical and consultative services to the Commissioner, to the Board of Trustees of the Social Security Trust Funds, and its staff appears before Congressional Committees to provide expert testimony on the actuarial aspects of Social Security issues.
+
+==Applied to other forms of insurance==
+Actuarial science is also applied to [[Property insurance|property]], [[Casualty insurance|casualty]], [[Liability insurance|liability]], and [[general insurance]]. In these forms of insurance, coverage is generally provided on a renewable period, (such as a yearly). Coverage can be cancelled at the end of the period by either party.
+
+[[Property insurance|Property]] and [[casualty insurance]] companies tend to specialize because of the complexity and diversity of risks.{{citation needed|date=December 2010}} One division is to organize around personal and commercial lines of insurance. Personal lines of insurance are for individuals and include fire, auto, homeowners, theft and umbrella coverages. Commercial lines address the insurance needs of businesses and include property, business continuation, product liability, fleet/commercial vehicle, workers compensation, fidelity & surety, and [[Directors and officers liability insurance|D&O]] insurance. The insurance industry also provides coverage for exposures such as catastrophe, weather-related risks, earthquakes, patent infringement and other forms of corporate espionage, terrorism, and "one-of-a-kind" (e.g., satellite launch). Actuarial science provides data collection, measurement, estimating, forecasting, and valuation tools to provide financial and underwriting data for management to assess marketing opportunities and the nature of the risks. Actuarial science often helps to assess the overall risk from catastrophic events in relation to its underwriting capacity or surplus.
+
+In the [[reinsurance]] fields, actuarial science can be used to design and price reinsurance and retrocession arrangements, and to establish reserve funds for known claims and future claims and catastrophes.
+
+==Development==
+
+===Pre-formalization===
+Elementary [[mutual aid (organization)|mutual aid]] agreements and pensions arose in antiquity {{harv|Thucydides}}. Early in the [[Roman Empire|Roman empire]], associations were formed to meet the expenses of burial, cremation, and monuments—precursors to [[Burial society|burial insurance]] and [[Friendly society|friendly societies]]. A small sum was paid into a communal fund on a weekly basis, and upon the death of a member, the fund would cover the expenses of rites and burial. These societies sometimes sold shares in the building of [[Columbarium|columbāria]], or burial vaults, owned by the fund—the precursor to [[Mutual insurance|mutual insurance companies]] {{harv|Johnston|1932|loc=§475–§476}}. Other early examples of mutual [[surety]] and assurance pacts can be traced back to various forms of fellowship within the Saxon clans of England and their Germanic forebears, and to Celtic society {{harv|Loan|1992}}. However, many of these earlier forms of surety and aid would often fail due to lack of understanding and knowledge {{harv|Faculty and Institute of Actuaries|2004}}.
+
+===Initial development===
+The 17th century was a period of advances in mathematics in Germany, France and England. At the same time there was a rapidly growing desire and need to place the valuation of personal risk on a more scientific basis. Independently of each other, [[compound interest]] was studied and [[probability theory]] emerged as a well-understood mathematical discipline. Another important advance came in 1662 from a London [[draper]] named [[John Graunt]], who showed that there were predictable patterns of longevity and death in a group, or [[Cohort (statistics)|cohort]], of people of the same age, despite the uncertainty of the date of death of any one individual. This study became the basis for the original [[life table]]. One could now set up an insurance scheme to provide life insurance or pensions for a group of people, and to calculate with some degree of accuracy how much each person in the group should contribute to a common fund assumed to earn a fixed rate of interest. The first person to demonstrate publicly how this could be done was [[Edmond Halley]] (of [[Halley's comet]] fame). Halley constructed his own life table, and showed how it could be used to calculate the [[Insurance|premium]] amount someone of a given age should pay to purchase a life annuity {{harv|Halley|1693}}.
+
+===Early actuaries===
+[[James Dodson (mathematician)|James Dodson]]'s pioneering work on the long term insurance contracts under which the same premium is charged each year led to the formation of the Society for Equitable Assurances on Lives and Survivorship (now commonly known as [[The Equitable Life Assurance Society|Equitable Life]]) in London in 1762 {{harv|Lewin|2007|p=38}}. [[William Morgan (actuary)|William Morgan]] is often considered the father of modern actuarial science for his work in the field in the 1780s and 90s. Many other life insurance companies and pension funds were created over the following 200 years. Equitable Life was the first to use the word "actuary" for its chief executive officer in 1762 {{harv|Ogborn|1956|p=235}}. Previously, "actuary" meant an official who recorded the decisions, or "acts", of ecclesiastical courts {{harv|Faculty and Institute of Actuaries|2004}}. Other companies that did not use such mathematical and scientific methods most often failed or were forced to adopt the methods pioneered by Equitable {{harv|Bühlmann|1997|p=166}}.
+
+===Technological advances===
+In the 18th and 19th centuries, calculations were performed without computers. The calculations of life insurance premiums and reserving requirements are rather complex, and actuaries developed techniques to make the calculations as easy as possible, for example "commutation functions" (essentially precalculated columns of summations over time of discounted values of survival and death probabilities) {{harv|Slud|2006}}. Actuarial organizations were founded to support and further both actuaries and actuarial science, and to protect the public interest by promoting competency and ethical standards {{harv|Hickman|2004|p=4}}. However, calculations remained cumbersome, and actuarial shortcuts were commonplace. Non-life actuaries followed in the footsteps of their life insurance colleagues during the 20th century. The 1920 revision for the New-York based National Council on Workmen's Compensation Insurance rates took over two months of around-the-clock work by day and night teams of actuaries {{harv|Michelbacher|1920|pp=224, 230}}. In the 1930s and 1940s, the mathematical foundations for [[stochastic]] processes were developed {{harv|Bühlmann|1997|p=168}}. Actuaries could now begin to estimate losses using models of random events, instead of the [[deterministic]] methods they had used in the past. The introduction and development of the computer further revolutionized the actuarial profession. From pencil-and-paper to punchcards to current high-speed devices, the modeling and forecasting ability of the actuary has rapidly improved, while still being heavily dependent on the assumptions input into the models, and actuaries needed to adjust to this new world {{harv|MacGinnitie|1980|pp=50–51}}.
+
+===Actuarial science related to modern financial economics===
+Traditional actuarial science and modern [[financial economics]] in the US have different practices, which is caused by different ways of calculating funding and investment strategies, and by different regulations.
+
+Regulations are from the [[Armstrong investigation of 1905]], the [[Glass–Steagall Act of 1932]], the adoption of the [[Mandatory Security Valuation Reserve]] by the [[National Association of Insurance Commissioners]], which cushioned market fluctuations, and the [[Financial Accounting Standards Board]], (FASB) in the US and Canada, which regulates pensions valuations and funding.
+
+===History===
+Historically, much of the foundation of actuarial theory predated modern financial theory. In the early twentieth century, actuaries were developing many techniques that can be found in modern financial theory, but for various historical reasons, these developments did not achieve much recognition {{harv|Whelan|2002}}.
+
+As a result, actuarial science developed along a different path, becoming more reliant on assumptions, as opposed to the [[arbitrage-free]] [[Rational pricing#Risk neutral valuation|risk-neutral valuation]] concepts used in modern finance. The divergence is not related to the use of historical data and statistical projections of liability cash flows, but is instead caused by the manner in which traditional actuarial methods apply market data with those numbers. For example, one traditional actuarial method suggests that changing the [[asset allocation]] mix of investments can change the value of liabilities and assets (by changing the [[discounted cash flow|discount rate]] assumption). This concept is inconsistent with [[financial economics]].
+
+The potential of modern financial economics theory to complement existing actuarial science was recognized by actuaries in the mid-twentieth century {{harv|Bühlmann|1997|pp=169–171}}. In the late 1980s and early 1990s, there was a distinct effort for actuaries to combine financial theory and stochastic methods into their established models {{harv|D’Arcy|1989}}. Ideas from financial economics became increasingly influential in actuarial thinking, and actuarial science has started to embrace more sophisticated mathematical modelling of finance {{harv|Economist|2006}}. Today, the profession, both in practice and in the educational syllabi of many actuarial organizations, is cognizant of the need to reflect the combined approach of tables, loss models, stochastic methods, and financial theory {{harv|Feldblum|2001|pp=8–9}}. However, assumption-dependent concepts are still widely used (such as the setting of the discount rate assumption as mentioned earlier), particularly in North America.
+
+Product design adds another dimension to the debate. Financial economists argue that pension benefits are bond-like and should not be funded with equity investments without reflecting the risks of not achieving expected returns. But some pension products do reflect the risks of unexpected returns. In some cases, the pension beneficiary assumes the risk, or the employer assumes the risk. The current debate now seems to be focusing on four principles:
+# financial models should be free of arbitrage
+# assets and liabilities with identical cash flows should have the same price. This is at odds with [[FASB]]
+# the value of an asset is independent of its financing
+# the final issue deals with how pension assets should be invested
+
+Essentially, financial economics state that pension assets should not be invested in equities for a variety of theoretical and practical reasons {{harv|Moriarty|2006}}.
+
+===Actuaries in criminal justice===
+There is an increasing trend to recognize that actuarial skills can be applied to a range of applications outside the traditional fields of insurance, pensions, etc. One notable example is the use in some US states of actuarial models to set criminal sentencing guidelines. These models attempt to predict the chance of re-offending according to rating factors which include the type of crime, age, educational background and ethnicity of the offender {{harv|Silver|Chow-Martin|2002}}. However, these models have been open to criticism as providing justification for discrimination against specific ethnic groups by law enforcement personnel.  Whether this is statistically correct or a self-fulfilling correlation remains under debate {{harv|Harcourt|2003}}.
+
+Another example is the use of actuarial models to assess the risk of sex offense recidivism. Actuarial models and associated tables, such as the MnSOST-R, Static-99, and SORAG, have been used since the late 1990s to determine the likelihood that a sex offender will re-offend and thus whether he or she should be institutionalized or set free {{harv|Nieto|Jung|2006|pp=28–33}}.
+
+==See also==
+{{Div col|colwidth=22em}}
+* [[Actuarial control cycle]]
+* [[Actuarial exam]]
+*[[Black swan theory]]
+* [[:Category:Actuarial associations]]
+* [[Data mining]]
+* [[Scenario optimization]]
+* [[List of actuarial topics]]
+* [[Ruin theory]]
+{{div col end}}
+
+== References ==
+
+=== Works cited ===
+{{refbegin|22em}}
+<!-- A -->
+<!-- B -->
+*{{Cite journal
+ |last=Bühlmann
+ |first=Hans
+ |date=November 1997
+ |title=The Actuary: the Role and Limitations of the Profession Since the Mid-19th Century
+ |journal=ASTIN Bulletin
+ |volume=27
+ |issue=2
+ |pages=165–171
+ |url=http://www.casact.org/library/astin/vol27no2/165.pdf
+ |access-date=2006-06-28
+ |doi=10.2143/ast.27.2.542046
+ |issn=0515-0361
+}}
+<!-- C -->
+*{{Cite journal
+ |date=February 9, 2004
+ |url=http://www.chbrp.org/documents/hearingaids174final.pdf
+ |title=Analysis of Senate Bill 174: Hearing Aids for Children
+ |publisher=California Health Benefits Review Program
+ |version=Revised November 19, 2004
+ |access-date=2006-06-28
+ |ref={{harvid|CHBRP|2004}}
+}}
+<!-- D -->
+*{{Cite journal
+ |last=D’Arcy
+ |first=Stephen P.
+ |date=May 1989
+ |title=On Becoming An Actuary of the Third Kind
+ |journal=Proceedings of the Casualty Actuarial Society
+ |volume=LXXVI
+ |issue=145
+ |pages=45–76
+ |url=http://www.casact.org/pubs/proceed/proceed89/89045.pdf
+ |access-date=2006-06-28
+}}
+<!-- E -->
+*{{Cite news
+ |url=http://www.economist.com/finance/displayStory.cfm?story_id=5436947
+ |title=When the Spinning Stops: Can Actuaries Help to Sort out the Mess in Corporate Pensions?
+ |access-date=2006-04-10
+ |work=The Economist
+ |ref={{harvid|Economist|2006}}
+|date=2006-01-26
+}}
+<!-- F -->
+*{{Cite book
+ |last=Feldblum
+ |first=Sholom
+ |editor=Robert F. Lowe
+ |title=Foundations of Casualty Actuarial Science
+ |orig-year=1990
+ |edition=4th
+ |year=2001
+ |publisher=[[Casualty Actuarial Society]]
+ |location=[[Arlington, Virginia]]
+ |isbn=0-9624762-2-6
+ |chapter=Introduction
+ |lccn=2001088378
+}}
+*{{Cite web
+ |date=2004-01-13
+ |url=http://www.actuaries.org.uk/knowledge/actuarial_history/history_of_profession
+ |title=History of the actuarial profession
+ |publisher=Faculty and Institute of Actuaries
+ |access-date=2010-09-26
+ |archive-url=https://web.archive.org/web/20080404072019/http://www.actuaries.org.uk/knowledge/actuarial_history/history_of_profession
+ |archive-date=2008-04-04
+ |ref={{harvid|Faculty and Institute of Actuaries|2004}}
+}}
+*{{Cite journal
+ |last        = Frees
+ |first       = Edward W.
+ |date        = January 1990
+ |title       = Stochastic Life Contingencies with Solvency Considerations
+ |journal     = Transactions of the Society of Actuaries
+ |volume      = XLII
+ |pages       = 91–148
+ |url         = http://library.soa.org/library/tsa/1990-95/TSA90V427.pdf
+ |access-date  = 2006-06-28
+ |ref         = {{harvid|Frees|1990}}
+ |archive-url  = https://web.archive.org/web/20060103161211/http://library.soa.org/library/tsa/1990-95/TSA90V427.pdf
+ |archive-date = 2006-01-03
+ |url-status     = dead
+}}
+<!-- G -->
+<!-- H -->
+*{{Cite journal
+ |last=Halley
+ |first=Edmond
+ |author-link=Edmond Halley
+ |year=1693
+ |title=An Estimate of the Degrees of the Mortality of Mankind, Drawn from Curious Tables of the Births and Funerals at the City of Breslaw; with an Attempt to Ascertain the Price of Annuities Upon Lives
+ |journal=[[Philosophical Transactions of the Royal Society|Philosophical Transactions of the Royal Society of London]]
+ |volume=17
+ |pages=596–610
+ |url=http://www.york.ac.uk/depts/maths/histstat/halley.pdf
+ |access-date=2006-06-21
+ |doi=10.1098/rstl.1693.0007
+ |issn=0260-7085
+ |issue=192–206
+|s2cid=186214203
+ }}
+*{{Cite journal
+ |last         = Harcourt
+ |first        = Bernard E.
+ |year         = 2003
+ |title        = The Shaping of Chance: Actuarial Models and Criminal Profiling at the Turn of the Twenty-First Century
+ |journal      = University of Chicago Law Review
+ |volume       = 70
+ |issue        = 105
+ |pages        = 105–128
+ |doi          = 10.2307/1600548
+ |url          = https://chicagounbound.uchicago.edu/uclrev/vol70/iss1/8/
+ |format       = PDF
+ |access-date   = 2018-10-02
+ |jstor        = 1600548
+ |publisher    = The University of Chicago Law Review, Vol. 70, No. 1
+ |issn         = 0041-9494
+}}
+*{{Cite encyclopedia
+ |url=http://www.wiley.co.uk/eoas/pdfs/TAH012-.pdf 
+ |title=History of Actuarial Profession 
+ |access-date=2006-06-28 
+ |last=Hickman 
+ |first=James 
+ |year=2004 
+ |encyclopedia=Encyclopedia of Actuarial Science 
+ |publisher=John Wiley & Sons, Ltd. 
+ |page=4 
+ |archive-url=https://web.archive.org/web/20060724173339/http://www.wiley.co.uk/eoas/pdfs/TAH012-.pdf 
+ |archive-date=2006-07-24 
+ |url-status=dead 
+}}
+*{{Cite journal
+ |last=Hsiao
+ |first=William C.
+ |date=August 2001
+ |title=Commentary: Behind the Ideology and Theory: What Is the Empirical Evidence for Medical Savings Accounts?
+ |journal=Journal of Health Politics, Policy and Law
+ |volume=26
+ |issue=4
+ |pages=733–737
+ |doi=10.1215/03616878-26-4-733
+ |url=http://www.hsph.harvard.edu/phcf/Papers/Ideology%20and%20theory%20-%20Hsiao.pdf
+ |access-date=2006-07-01
+ |pmid=11523960
+ |s2cid=37841066
+}}
+*{{Cite web
+ |url=http://www.hsph.harvard.edu/faculty/WilliamHsiao.html
+ |title=Harvard School of Public Health
+ |access-date=2010-09-27
+ |last=Hsiao
+ |first=William C
+ |year=2004
+ |format=PDF
+ |archive-url=https://web.archive.org/web/20070327231215/http://www.hsph.harvard.edu/faculty/WilliamHsiao.html
+ |archive-date=2007-03-27
+}}
+<!-- I -->
+<!-- J -->
+*{{Cite book
+ |last=Johnston
+ |first=Harold Whetstone
+ |author-link=Harold Whetstone Johnston
+ |others=Revised by Mary Johnston
+ |title=The Private Life of the Romans
+ |orig-year=1903
+ |url=http://www.forumromanum.org/life/johnston.html
+ |access-date=2006-06-26
+ |year=1932
+ |publisher=Scott, Foresman and Company
+ |location=Chicago, Atlanta
+ |pages=§475–§476
+ |chapter=Burial Places and Funeral Ceremonies
+ |chapter-url=http://www.forumromanum.org/life/johnston_14.html
+ |quote=<small>Early in the Empire, associations were formed for the purpose of meeting the funeral expenses of their members, whether the remains were to be buried or cremated, or for the purpose of building columbāria, or for both....If the members had provided places for the disposal of their bodies after death, they now provided for the necessary funeral expenses by paying into the common fund weekly a small fixed sum, easily within the reach of the poorest of them. When a member died, a stated sum was drawn from the treasury for his funeral....If the purpose of the society was the building of a columbārium, the cost was first determined and the sum total divided into what we should call shares (sortēs virīlēs), each member taking as many as he could afford and paying their value into the treasury.</small>
+ |lccn=32007692
+}}
+<!-- K -->
+<!-- L -->
+*{{cite journal
+| last = Lewin
+| first = Chris
+| date = June 14, 2007
+| title = Actuarial History
+| publisher = [[Institute and Faculty of Actuaries]]
+| access-date = February 27, 2012
+| url = http://www.actuaries.org.uk/research-and-resources/documents/overview-actuarial-history-slides-notes
+| archive-url = https://web.archive.org/web/20111020010331/http://www.actuaries.org.uk/research-and-resources/documents/overview-actuarial-history-slides-notes
+| archive-date = October 20, 2011
+| url-status = dead
+}}
+*{{Cite journal
+ |last=Loan
+ |first=Albert
+ |date=Winter 1992
+ |title=Institutional Bases of the Spontaneous Order: Surety and Assurance
+ |journal=Humane Studies Review
+ |volume=7
+ |issue=1
+ |url=http://mason.gmu.edu/~ihs/w91essay.html
+ |access-date=2006-06-26
+ |page=538
+ |archive-url=https://web.archive.org/web/20060614101416/http://mason.gmu.edu/~ihs/w91essay.html
+ |archive-date=2006-06-14
+ |url-status=dead
+ }}
+<!-- M -->
+*{{Cite journal
+ |last=MacGinnitie
+ |first=James
+ |date=November 1980
+ |title=The Actuary and his Profession: Growth, Development, Promise
+ |journal=Proceedings of the Casualty Actuarial Society
+ |volume=LXVII
+ |issue=127
+ |pages=49–56
+ |url=http://www.casualtyactuarialsociety.com/pubs/proceed/proceed80/80049.pdf
+ |access-date=2006-06-28
+}}
+*{{Cite journal
+ |last=Michelbacher
+ |first=Gustav F.
+ |year=1920
+ |title=The Technique of Rate Making as Illustrated by the 1920 National Revision of Workmen's Compensations Insurance Rates
+ |journal=Proceedings of the Casualty Actuarial Society
+ |volume=VI
+ |issue=14
+ |pages=201–249
+ |url=http://www.casact.org/pubs/proceed/proceed19/19201.pdf
+ |access-date=2006-06-28
+}}
+*{{Cite journal
+ |url=http://www.contingencies.org/julaug06/actuarys_new_clothes_0706.asp
+ |title=The Actuary's New Clothes, A Canadian Perspective on the Financial Economics Debate
+ |access-date=2006-06-28
+ |last=Moriarty
+ |first=Charlene
+ |journal=American Academy of Actuaries, Contingencies Jul/Aug
+ |year=2006
+ |format=PDF
+ |archive-url=https://web.archive.org/web/20060923141536/http://www.contingencies.org/julaug06/actuarys_new_clothes_0706.asp
+ |archive-date=2006-09-23
+ |url-status=dead
+ }}
+<!-- N -->
+*{{cite web
+ |last=Needleman
+ |first=Sarah E.
+ |date=January 5, 2010
+ |url=https://www.wsj.com/articles/SB10001424052748703580904574638321841284190
+ |title=The Best and Worst Jobs
+ |work=[[The Wall Street Journal]]
+ |access-date=2010-01-07
+}}
+*{{cite web
+ |last=Nemko
+ |first=Marty
+ |year=2006
+ |url=https://www.usnews.com/usnews/biztech/best_careers_2007/
+ |title=Best Careers 2007
+ |work=[[U.S. News & World Report]]
+ |access-date=2008-09-14
+ |archive-url=https://web.archive.org/web/20071118105300/http://www.usnews.com/usnews/biztech/best_careers_2007/careertable-njs.htm
+ |archive-date=November 18, 2007 
+}}
+*{{Cite journal
+ |last1=Nieto
+ |first1=Marcus
+ |last2=David
+ |first2=Jung
+ |title=The Impact of Residency Restrictions on Sex Offenders and Correctional Management Practices: A Literature Review
+ |publisher=California Research Bureau, [[California State Library]]
+ |date=August 2006
+ |url=http://www.library.ca.gov/crb/06/08/06-008.pdf
+ |access-date=2006-09-18
+ |ref={{harvid|Nieto|Jung|2006}}
+}}
+<!-- O -->
+*{{cite journal
+ |last=Ogborn 
+ |first=M.E. 
+ |date=December 1956 
+ |title=The Professional Name of Actuary 
+ |journal=Journal of the Institute of Actuaries 
+ |volume=82 
+ |issue=2 
+ |pages=233–246 
+ |url=http://www.actuaries.org.uk/sites/all/files/documents/pdf/0233-0246.pdf 
+ |access-date=April 27, 2011 
+ |publisher=Faculty and Institute of Actuaries 
+ |url-status=dead 
+ |archive-url=https://web.archive.org/web/20120320062211/http://www.actuaries.org.uk/sites/all/files/documents/pdf/0233-0246.pdf 
+ |archive-date=March 20, 2012 
+|doi=10.1017/S0020268100046424 
+ }}
+<!-- P -->
+*{{Cite book
+ |last=Perkins
+ |first=Judith
+ |title=The Suffering Self; Pain and Narrative Representation in the Early Christian Era
+ |date=August 25, 1995
+ |publisher=[[Routledge]]
+ |location=London
+ |isbn=0-415-11363-6
+ |lccn=94042650
+}}
+<!-- Q -->
+<!-- R -->
+<!-- S -->
+*{{Cite journal
+ |last1=Silver
+ |first1=Eric
+ |last2=Chow-Martin
+ |first2=Lynette
+ |date=October 2002
+ |title=A Multiple Models Approach To Assessing Recidivism Risk: Implications for Judicial Decision Making
+ |journal=Criminal Justice and Behavior
+ |volume=29
+ |issue=5
+ |pages=538–568
+ |doi=10.1177/009385402236732
+ |s2cid=144800554
+ |issn=0093-8548
+}}
+*{{Cite book
+ |last=Slud
+ |first=Eric V.
+ |title=Actuarial Mathematics and Life-Table Statistics
+ |orig-year=2001
+ |url=http://www.math.umd.edu/~evs/s470/BookChaps/01Book.pdf
+ |access-date=2006-06-28
+ |year=2006
+ |pages=149–150
+ |chapter=6: Commutation Functions, Reserves & Select Mortality
+ |chapter-url=http://www.math.umd.edu/~evs/s470/BookChaps/Chp6.pdf
+ |quote=<small>The Commutation Functions are a computational device to ensure that net single premiums...can all be obtained from a single table lookup. Historically, this idea has been very important in saving calculational labor when arriving at premium quotes. Even now...company employees without quantitative training could calculate premiums in a spreadsheet format with the aid of a life table.</small>
+}}
+<!-- T -->
+*{{Cite book
+ |last=Thucydides
+ |author-link=Thucydides
+ |others=Translated by [[Richard Crawley]]
+ |title=History of the Peloponnesian War
+ |url=http://classics.mit.edu/Thucydides/pelopwar.html
+ |access-date=2006-06-27
+ |year=1994–2009
+ |orig-year=c. 431 BCE
+ |location=[[Greece]]
+ |chapter=VI&nbsp;– Funeral Oration of Pericles
+ |chapter-url=http://classics.mit.edu/Thucydides/pelopwar.2.second.html
+ |quote=<small>My task is now finished....those who are here interred have received part of their honours already, and for the rest, their children will be brought up till manhood at the public expense: the state thus offers a valuable prize, as the garland of victory in this race of valour, for the reward both of those who have fallen and their survivors.</small>
+ |ref={{harvid|Thucydides}}
+}}
+*{{Cite news
+ |first=Vinnee
+ |last=Tong
+ |url=http://www.suntimes.com/output/news/cst-nws-phil19.html
+ |title=Americans' donations to charity near record
+ |work=[[Chicago Sun-Times]]
+ |publisher=Digital Chicago Inc.
+ |date=June 19, 2006
+ |access-date=2006-06-21
+}}
+<!-- U -->
+<!-- V -->
+<!-- W -->
+*{{Cite news
+ |first=Shane 
+ |last=Whelan 
+ |url=http://www.the-actuary.org.uk/pdfs/02_12_08.pdf 
+ |title=Actuaries' contributions to financial economics 
+ |work=The Actuary 
+ |publisher=Staple Inn Actuarial Society 
+ |pages=34–35 
+ |date=December 2002 
+ |access-date=2006-06-28 
+ |url-status=dead 
+ |archive-url=https://web.archive.org/web/20060724173342/http://www.the-actuary.org.uk/pdfs/02_12_08.pdf 
+ |archive-date=2006-07-24 
+}}
+<!-- X -->
+<!-- Y -->
+<!-- Z -->
+{{refend}}
+
+=== Bibliography ===
+* {{cite journal
+ |author      = Charles L. Trowbridge
+ |year        = 1989
+ |url         = http://www.actuarialfoundation.org/research_edu/fundamental.pdf
+ |title       = Fundamental Concepts of Actuarial Science
+ |publisher   = Actuarial Education and Research Fund
+ |version     = Revised Edition
+ |access-date  = 2006-06-28
+ |url-status     = dead
+ |archive-url  = https://web.archive.org/web/20060629155610/http://www.actuarialfoundation.org/research_edu/fundamental.pdf
+ |archive-date = 2006-06-29
+}}
+
+==External links==
+* {{curlie|Business/Financial_Services/Insurance/Actuarial_Science}}
+
+{{Statistics|applications}}
+
+{{DEFAULTSORT:Actuarial Science}}
+[[Category:Actuarial science| ]]
+[[Category:Insurance]]
+[[Category:Demography]]
+[[Category:Formal sciences]]
+[[Category:Applied statistics]]{{Format footnotes|date=September 2020}}
+[[Image:Excerpt from CDC 2003 Table 1.pdf|thumb|right|2003 US mortality ([[life table|life]]) table, Table 1, Page 1]]
+
+'''Actuarial science''' is the discipline that applies [[mathematics|mathematical]] and [[statistics|statistical]] methods to [[Risk assessment|assess risk]] in [[insurance]], [[finance]], and other industries and professions. More generally, actuaries apply rigorous mathematics to model matters of uncertainty.
+
+[[Actuary|Actuaries]] are professionals trained in this discipline. In many countries, actuaries must demonstrate their competence by passing a series of rigorous professional examinations.
+
+Actuarial science includes a number of interrelated subjects, including [[mathematics]], [[probability theory]], [[statistics]], [[finance]], [[economics]], and [[computer science]]. Historically, actuarial science used deterministic models in the construction of tables and premiums. The science has gone through revolutionary changes since the 1980s due to the proliferation of high speed computers and the union of [[stochastic]] actuarial models with modern financial theory {{harv|Frees|1990}}.
+
+Many universities have undergraduate and graduate degree programs in actuarial science. In 2010, a study published by job search website CareerCast ranked actuary as the #1 job in the United States {{harv|Needleman|2010}}. The study used five key criteria to rank jobs: environment, income, employment outlook, physical demands, and stress. A similar study by ''U.S. News & World Report'' in 2006 included actuaries among the 25 Best Professions that it expects will be in great demand in the future {{harv|Nemko|2006}}.
+
+==Life insurance, pensions and healthcare==
+Actuarial science became a formal mathematical discipline in the late 17th century with the increased demand for long-term insurance coverage such as burial, [[life insurance]], and annuities. These long term coverages required that money be set aside to pay future benefits, such as annuity and death benefits many years into the future. This requires estimating future contingent events, such as the rates of mortality by age, as well as the development of mathematical techniques for discounting the value of funds set aside and invested. This led to the development of an important actuarial concept, referred to as the [[present value]] of a future sum. Certain aspects of the actuarial methods for discounting [[pension funds]] have come under criticism from modern [[financial economics]].
+
+* In traditional life insurance, actuarial science focuses on the analysis of [[mortality rate|mortality]], the production of [[life table]]s, and the application of [[interest|compound interest]] to produce life insurance, annuities and endowment policies. Contemporary life insurance programs have been extended to include credit and mortgage insurance, [[key person insurance]] for small businesses, [[long term care insurance]] and [[Medical savings account|health savings accounts]] {{harv|Hsiao|2001}}.
+* In health insurance, including insurance provided directly by employers, and social insurance, actuarial science focuses on the analysis of rates of disability, morbidity, mortality, fertility and other contingencies. The effects of consumer choice and the geographical distribution of the utilization of medical services and procedures, and the utilization of drugs and therapies, is also of great importance. These factors underlay the development of the Resource-Base Relative Value Scale ([[RBRVS]]) at Harvard in a multi-disciplined study {{harv|Hsiao|2004}}. Actuarial science also aids in the design of benefit structures, reimbursement standards, and the effects of proposed government standards on the cost of healthcare {{harv|CHBRP|2004}}.
+* In the pension industry, actuarial methods are used to measure the costs of alternative strategies with regard to the design, funding, accounting, administration, and maintenance or redesign of pension plans. The strategies are greatly influenced by short-term and long-term bond rates, the funded status of the pension and benefit arrangements, [[collective bargaining]]; the employer's old, new and foreign competitors; the changing demographics of the workforce; changes in the internal revenue code; changes in the attitude of the internal revenue service regarding the calculation of surpluses; and equally importantly, both the short and long term financial and economic trends. It is common with mergers and acquisitions that several pension plans have to be combined or at least administered on an equitable basis. When benefit changes occur, old and new benefit plans have to be blended, satisfying new social demands and various government discrimination test calculations, and providing employees and retirees with understandable choices and transition paths. Benefit plans liabilities have to be properly valued, reflecting both earned benefits for past service, and the benefits for future service. Finally, funding schemes have to be developed that are manageable and satisfy the standards board or regulators of the appropriate country, such as the [[Financial Accounting Standards Board]] in the United States.
+* In social welfare programs, the [[Office of the Chief Actuary]] (OCACT), [[Social Security Administration]] plans and directs a program of actuarial estimates and analyses relating to SSA-administered retirement, survivors and disability insurance programs and to proposed changes in those programs. It evaluates operations of the [[Social Security (United States)|Federal Old-Age and Survivors Insurance Trust Fund]] and the Federal Disability Insurance Trust Fund, conducts studies of program financing, performs actuarial and demographic research on social insurance and related program issues involving mortality, morbidity, utilization, retirement, disability, survivorship, marriage, unemployment, poverty, old age, families with children, etc., and projects future workloads. In addition, the Office is charged with conducting cost analyses relating to the [[Supplemental Security Income]] (SSI) program, a general-revenue financed, means-tested program for low-income aged, blind and disabled people. The Office provides technical and consultative services to the Commissioner, to the Board of Trustees of the Social Security Trust Funds, and its staff appears before Congressional Committees to provide expert testimony on the actuarial aspects of Social Security issues.
+
+==Applied to other forms of insurance==
+Actuarial science is also applied to [[Property insurance|property]], [[Casualty insurance|casualty]], [[Liability insurance|liability]], and [[general insurance]]. In these forms of insurance, coverage is generally provided on a renewable period, (such as a yearly). Coverage can be cancelled at the end of the period by either party.
+
+[[Property insurance|Property]] and [[casualty insurance]] companies tend to specialize because of the complexity and diversity of risks.{{citation needed|date=December 2010}} One division is to organize around personal and commercial lines of insurance. Personal lines of insurance are for individuals and include fire, auto, homeowners, theft and umbrella coverages. Commercial lines address the insurance needs of businesses and include property, business continuation, product liability, fleet/commercial vehicle, workers compensation, fidelity & surety, and [[Directors and officers liability insurance|D&O]] insurance. The insurance industry also provides coverage for exposures such as catastrophe, weather-related risks, earthquakes, patent infringement and other forms of corporate espionage, terrorism, and "one-of-a-kind" (e.g., satellite launch). Actuarial science provides data collection, measurement, estimating, forecasting, and valuation tools to provide financial and underwriting data for management to assess marketing opportunities and the nature of the risks. Actuarial science often helps to assess the overall risk from catastrophic events in relation to its underwriting capacity or surplus.
+
+In the [[reinsurance]] fields, actuarial science can be used to design and price reinsurance and retrocession arrangements, and to establish reserve funds for known claims and future claims and catastrophes.
+
+==Development==
+
+===Pre-formalization===
+Elementary [[mutual aid (organization)|mutual aid]] agreements and pensions arose in antiquity {{harv|Thucydides}}. Early in the [[Roman Empire|Roman empire]], associations were formed to meet the expenses of burial, cremation, and monuments—precursors to [[Burial society|burial insurance]] and [[Friendly society|friendly societies]]. A small sum was paid into a communal fund on a weekly basis, and upon the death of a member, the fund would cover the expenses of rites and burial. These societies sometimes sold shares in the building of [[Columbarium|columbāria]], or burial vaults, owned by the fund—the precursor to [[Mutual insurance|mutual insurance companies]] {{harv|Johnston|1932|loc=§475–§476}}. Other early examples of mutual [[surety]] and assurance pacts can be traced back to various forms of fellowship within the Saxon clans of England and their Germanic forebears, and to Celtic society {{harv|Loan|1992}}. However, many of these earlier forms of surety and aid would often fail due to lack of understanding and knowledge {{harv|Faculty and Institute of Actuaries|2004}}.
+
+===Initial development===
+The 17th century was a period of advances in mathematics in Germany, France and England. At the same time there was a rapidly growing desire and need to place the valuation of personal risk on a more scientific basis. Independently of each other, [[compound interest]] was studied and [[probability theory]] emerged as a well-understood mathematical discipline. Another important advance came in 1662 from a London [[draper]] named [[John Graunt]], who showed that there were predictable patterns of longevity and death in a group, or [[Cohort (statistics)|cohort]], of people of the same age, despite the uncertainty of the date of death of any one individual. This study became the basis for the original [[life table]]. One could now set up an insurance scheme to provide life insurance or pensions for a group of people, and to calculate with some degree of accuracy how much each person in the group should contribute to a common fund assumed to earn a fixed rate of interest. The first person to demonstrate publicly how this could be done was [[Edmond Halley]] (of [[Halley's comet]] fame). Halley constructed his own life table, and showed how it could be used to calculate the [[Insurance|premium]] amount someone of a given age should pay to purchase a life annuity {{harv|Halley|1693}}.
+
+===Early actuaries===
+[[James Dodson (mathematician)|James Dodson]]'s pioneering work on the long term insurance contracts under which the same premium is charged each year led to the formation of the Society for Equitable Assurances on Lives and Survivorship (now commonly known as [[The Equitable Life Assurance Society|Equitable Life]]) in London in 1762 {{harv|Lewin|2007|p=38}}. [[William Morgan (actuary)|William Morgan]] is often considered the father of modern actuarial science for his work in the field in the 1780s and 90s. Many other life insurance companies and pension funds were created over the following 200 years. Equitable Life was the first to use the word "actuary" for its chief executive officer in 1762 {{harv|Ogborn|1956|p=235}}. Previously, "actuary" meant an official who recorded the decisions, or "acts", of ecclesiastical courts {{harv|Faculty and Institute of Actuaries|2004}}. Other companies that did not use such mathematical and scientific methods most often failed or were forced to adopt the methods pioneered by Equitable {{harv|Bühlmann|1997|p=166}}.
+
+===Technological advances===
+In the 18th and 19th centuries, calculations were performed without computers. The calculations of life insurance premiums and reserving requirements are rather complex, and actuaries developed techniques to make the calculations as easy as possible, for example "commutation functions" (essentially precalculated columns of summations over time of discounted values of survival and death probabilities) {{harv|Slud|2006}}. Actuarial organizations were founded to support and further both actuaries and actuarial science, and to protect the public interest by promoting competency and ethical standards {{harv|Hickman|2004|p=4}}. However, calculations remained cumbersome, and actuarial shortcuts were commonplace. Non-life actuaries followed in the footsteps of their life insurance colleagues during the 20th century. The 1920 revision for the New-York based National Council on Workmen's Compensation Insurance rates took over two months of around-the-clock work by day and night teams of actuaries {{harv|Michelbacher|1920|pp=224, 230}}. In the 1930s and 1940s, the mathematical foundations for [[stochastic]] processes were developed {{harv|Bühlmann|1997|p=168}}. Actuaries could now begin to estimate losses using models of random events, instead of the [[deterministic]] methods they had used in the past. The introduction and development of the computer further revolutionized the actuarial profession. From pencil-and-paper to punchcards to current high-speed devices, the modeling and forecasting ability of the actuary has rapidly improved, while still being heavily dependent on the assumptions input into the models, and actuaries needed to adjust to this new world {{harv|MacGinnitie|1980|pp=50–51}}.
+
+===Actuarial science related to modern financial economics===
+Traditional actuarial science and modern [[financial economics]] in the US have different practices, which is caused by different ways of calculating funding and investment strategies, and by different regulations.
+
+Regulations are from the [[Armstrong investigation of 1905]], the [[Glass–Steagall Act of 1932]], the adoption of the [[Mandatory Security Valuation Reserve]] by the [[National Association of Insurance Commissioners]], which cushioned market fluctuations, and the [[Financial Accounting Standards Board]], (FASB) in the US and Canada, which regulates pensions valuations and funding.
+
+===History===
+Historically, much of the foundation of actuarial theory predated modern financial theory. In the early twentieth century, actuaries were developing many techniques that can be found in modern financial theory, but for various historical reasons, these developments did not achieve much recognition {{harv|Whelan|2002}}.
+
+As a result, actuarial science developed along a different path, becoming more reliant on assumptions, as opposed to the [[arbitrage-free]] [[Rational pricing#Risk neutral valuation|risk-neutral valuation]] concepts used in modern finance. The divergence is not related to the use of historical data and statistical projections of liability cash flows, but is instead caused by the manner in which traditional actuarial methods apply market data with those numbers. For example, one traditional actuarial method suggests that changing the [[asset allocation]] mix of investments can change the value of liabilities and assets (by changing the [[discounted cash flow|discount rate]] assumption). This concept is inconsistent with [[financial economics]].
+
+The potential of modern financial economics theory to complement existing actuarial science was recognized by actuaries in the mid-twentieth century {{harv|Bühlmann|1997|pp=169–171}}. In the late 1980s and early 1990s, there was a distinct effort for actuaries to combine financial theory and stochastic methods into their established models {{harv|D’Arcy|1989}}. Ideas from financial economics became increasingly influential in actuarial thinking, and actuarial science has started to embrace more sophisticated mathematical modelling of finance {{harv|Economist|2006}}. Today, the profession, both in practice and in the educational syllabi of many actuarial organizations, is cognizant of the need to reflect the combined approach of tables, loss models, stochastic methods, and financial theory {{harv|Feldblum|2001|pp=8–9}}. However, assumption-dependent concepts are still widely used (such as the setting of the discount rate assumption as mentioned earlier), particularly in North America.
+
+Product design adds another dimension to the debate. Financial economists argue that pension benefits are bond-like and should not be funded with equity investments without reflecting the risks of not achieving expected returns. But some pension products do reflect the risks of unexpected returns. In some cases, the pension beneficiary assumes the risk, or the employer assumes the risk. The current debate now seems to be focusing on four principles:
+# financial models should be free of arbitrage
+# assets and liabilities with identical cash flows should have the same price. This is at odds with [[FASB]]
+# the value of an asset is independent of its financing
+# the final issue deals with how pension assets should be invested
+
+Essentially, financial economics state that pension assets should not be invested in equities for a variety of theoretical and practical reasons {{harv|Moriarty|2006}}.
+
+===Actuaries in criminal justice===
+There is an increasing trend to recognize that actuarial skills can be applied to a range of applications outside the traditional fields of insurance, pensions, etc. One notable example is the use in some US states of actuarial models to set criminal sentencing guidelines. These models attempt to predict the chance of re-offending according to rating factors which include the type of crime, age, educational background and ethnicity of the offender {{harv|Silver|Chow-Martin|2002}}. However, these models have been open to criticism as providing justification for discrimination against specific ethnic groups by law enforcement personnel.  Whether this is statistically correct or a self-fulfilling correlation remains under debate {{harv|Harcourt|2003}}.
+
+Another example is the use of actuarial models to assess the risk of sex offense recidivism. Actuarial models and associated tables, such as the MnSOST-R, Static-99, and SORAG, have been used since the late 1990s to determine the likelihood that a sex offender will re-offend and thus whether he or she should be institutionalized or set free {{harv|Nieto|Jung|2006|pp=28–33}}.
+
+==See also==
+{{Div col|colwidth=22em}}
+* [[Actuarial control cycle]]
+* [[Actuarial exam]]
+*[[Black swan theory]]
+* [[:Category:Actuarial associations]]
+* [[Data mining]]
+* [[Scenario optimization]]
+* [[List of actuarial topics]]
+* [[Ruin theory]]
+{{div col end}}
+
+== References ==
+
+=== Works cited ===
+{{refbegin|22em}}
+<!-- A -->
+<!-- B -->
+*{{Cite journal
+ |last=Bühlmann
+ |first=Hans
+ |date=November 1997
+ |title=The Actuary: the Role and Limitations of the Profession Since the Mid-19th Century
+ |journal=ASTIN Bulletin
+ |volume=27
+ |issue=2
+ |pages=165–171
+ |url=http://www.casact.org/library/astin/vol27no2/165.pdf
+ |access-date=2006-06-28
+ |doi=10.2143/ast.27.2.542046
+ |issn=0515-0361
+}}
+<!-- C -->
+*{{Cite journal
+ |date=February 9, 2004
+ |url=http://www.chbrp.org/documents/hearingaids174final.pdf
+ |title=Analysis of Senate Bill 174: Hearing Aids for Children
+ |publisher=California Health Benefits Review Program
+ |version=Revised November 19, 2004
+ |access-date=2006-06-28
+ |ref={{harvid|CHBRP|2004}}
+}}
+<!-- D -->
+*{{Cite journal
+ |last=D’Arcy
+ |first=Stephen P.
+ |date=May 1989
+ |title=On Becoming An Actuary of the Third Kind
+ |journal=Proceedings of the Casualty Actuarial Society
+ |volume=LXXVI
+ |issue=145
+ |pages=45–76
+ |url=http://www.casact.org/pubs/proceed/proceed89/89045.pdf
+ |access-date=2006-06-28
+}}
+<!-- E -->
+*{{Cite news
+ |url=http://www.economist.com/finance/displayStory.cfm?story_id=5436947
+ |title=When the Spinning Stops: Can Actuaries Help to Sort out the Mess in Corporate Pensions?
+ |access-date=2006-04-10
+ |work=The Economist
+ |ref={{harvid|Economist|2006}}
+|date=2006-01-26
+}}
+<!-- F -->
+*{{Cite book
+ |last=Feldblum
+ |first=Sholom
+ |editor=Robert F. Lowe
+ |title=Foundations of Casualty Actuarial Science
+ |orig-year=1990
+ |edition=4th
+ |year=2001
+ |publisher=[[Casualty Actuarial Society]]
+ |location=[[Arlington, Virginia]]
+ |isbn=0-9624762-2-6
+ |chapter=Introduction
+ |lccn=2001088378
+}}
+*{{Cite web
+ |date=2004-01-13
+ |url=http://www.actuaries.org.uk/knowledge/actuarial_history/history_of_profession
+ |title=History of the actuarial profession
+ |publisher=Faculty and Institute of Actuaries
+ |access-date=2010-09-26
+ |archive-url=https://web.archive.org/web/20080404072019/http://www.actuaries.org.uk/knowledge/actuarial_history/history_of_profession
+ |archive-date=2008-04-04
+ |ref={{harvid|Faculty and Institute of Actuaries|2004}}
+}}
+*{{Cite journal
+ |last        = Frees
+ |first       = Edward W.
+ |date        = January 1990
+ |title       = Stochastic Life Contingencies with Solvency Considerations
+ |journal     = Transactions of the Society of Actuaries
+ |volume      = XLII
+ |pages       = 91–148
+ |url         = http://library.soa.org/library/tsa/1990-95/TSA90V427.pdf
+ |access-date  = 2006-06-28
+ |ref         = {{harvid|Frees|1990}}
+ |archive-url  = https://web.archive.org/web/20060103161211/http://library.soa.org/library/tsa/1990-95/TSA90V427.pdf
+ |archive-date = 2006-01-03
+ |url-status     = dead
+}}
+<!-- G -->
+<!-- H -->
+*{{Cite journal
+ |last=Halley
+ |first=Edmond
+ |author-link=Edmond Halley
+ |year=1693
+ |title=An Estimate of the Degrees of the Mortality of Mankind, Drawn from Curious Tables of the Births and Funerals at the City of Breslaw; with an Attempt to Ascertain the Price of Annuities Upon Lives
+ |journal=[[Philosophical Transactions of the Royal Society|Philosophical Transactions of the Royal Society of London]]
+ |volume=17
+ |pages=596–610
+ |url=http://www.york.ac.uk/depts/maths/histstat/halley.pdf
+ |access-date=2006-06-21
+ |doi=10.1098/rstl.1693.0007
+ |issn=0260-7085
+ |issue=192–206
+|s2cid=186214203
+ }}
+*{{Cite journal
+ |last         = Harcourt
+ |first        = Bernard E.
+ |year         = 2003
+ |title        = The Shaping of Chance: Actuarial Models and Criminal Profiling at the Turn of the Twenty-First Century
+ |journal      = University of Chicago Law Review
+ |volume       = 70
+ |issue        = 105
+ |pages        = 105–128
+ |doi          = 10.2307/1600548
+ |url          = https://chicagounbound.uchicago.edu/uclrev/vol70/iss1/8/
+ |format       = PDF
+ |access-date   = 2018-10-02
+ |jstor        = 1600548
+ |publisher    = The University of Chicago Law Review, Vol. 70, No. 1
+ |issn         = 0041-9494
+}}
+*{{Cite encyclopedia
+ |url=http://www.wiley.co.uk/eoas/pdfs/TAH012-.pdf 
+ |title=History of Actuarial Profession 
+ |access-date=2006-06-28 
+ |last=Hickman 
+ |first=James 
+ |year=2004 
+ |encyclopedia=Encyclopedia of Actuarial Science 
+ |publisher=John Wiley & Sons, Ltd. 
+ |page=4 
+ |archive-url=https://web.archive.org/web/20060724173339/http://www.wiley.co.uk/eoas/pdfs/TAH012-.pdf 
+ |archive-date=2006-07-24 
+ |url-status=dead 
+}}
+*{{Cite journal
+ |last=Hsiao
+ |first=William C.
+ |date=August 2001
+ |title=Commentary: Behind the Ideology and Theory: What Is the Empirical Evidence for Medical Savings Accounts?
+ |journal=Journal of Health Politics, Policy and Law
+ |volume=26
+ |issue=4
+ |pages=733–737
+ |doi=10.1215/03616878-26-4-733
+ |url=http://www.hsph.harvard.edu/phcf/Papers/Ideology%20and%20theory%20-%20Hsiao.pdf
+ |access-date=2006-07-01
+ |pmid=11523960
+ |s2cid=37841066
+}}
+*{{Cite web
+ |url=http://www.hsph.harvard.edu/faculty/WilliamHsiao.html
+ |title=Harvard School of Public Health
+ |access-date=2010-09-27
+ |last=Hsiao
+ |first=William C
+ |year=2004
+ |format=PDF
+ |archive-url=https://web.archive.org/web/20070327231215/http://www.hsph.harvard.edu/faculty/WilliamHsiao.html
+ |archive-date=2007-03-27
+}}
+<!-- I -->
+<!-- J -->
+*{{Cite book
+ |last=Johnston
+ |first=Harold Whetstone
+ |author-link=Harold Whetstone Johnston
+ |others=Revised by Mary Johnston
+ |title=The Private Life of the Romans
+ |orig-year=1903
+ |url=http://www.forumromanum.org/life/johnston.html
+ |access-date=2006-06-26
+ |year=1932
+ |publisher=Scott, Foresman and Company
+ |location=Chicago, Atlanta
+ |pages=§475–§476
+ |chapter=Burial Places and Funeral Ceremonies
+ |chapter-url=http://www.forumromanum.org/life/johnston_14.html
+ |quote=<small>Early in the Empire, associations were formed for the purpose of meeting the funeral expenses of their members, whether the remains were to be buried or cremated, or for the purpose of building columbāria, or for both....If the members had provided places for the disposal of their bodies after death, they now provided for the necessary funeral expenses by paying into the common fund weekly a small fixed sum, easily within the reach of the poorest of them. When a member died, a stated sum was drawn from the treasury for his funeral....If the purpose of the society was the building of a columbārium, the cost was first determined and the sum total divided into what we should call shares (sortēs virīlēs), each member taking as many as he could afford and paying their value into the treasury.</small>
+ |lccn=32007692
+}}
+<!-- K -->
+<!-- L -->
+*{{cite journal
+| last = Lewin
+| first = Chris
+| date = June 14, 2007
+| title = Actuarial History
+| publisher = [[Institute and Faculty of Actuaries]]
+| access-date = February 27, 2012
+| url = http://www.actuaries.org.uk/research-and-resources/documents/overview-actuarial-history-slides-notes
+| archive-url = https://web.archive.org/web/20111020010331/http://www.actuaries.org.uk/research-and-resources/documents/overview-actuarial-history-slides-notes
+| archive-date = October 20, 2011
+| url-status = dead
+}}
+*{{Cite journal
+ |last=Loan
+ |first=Albert
+ |date=Winter 1992
+ |title=Institutional Bases of the Spontaneous Order: Surety and Assurance
+ |journal=Humane Studies Review
+ |volume=7
+ |issue=1
+ |url=http://mason.gmu.edu/~ihs/w91essay.html
+ |access-date=2006-06-26
+ |page=538
+ |archive-url=https://web.archive.org/web/20060614101416/http://mason.gmu.edu/~ihs/w91essay.html
+ |archive-date=2006-06-14
+ |url-status=dead
+ }}
+<!-- M -->
+*{{Cite journal
+ |last=MacGinnitie
+ |first=James
+ |date=November 1980
+ |title=The Actuary and his Profession: Growth, Development, Promise
+ |journal=Proceedings of the Casualty Actuarial Society
+ |volume=LXVII
+ |issue=127
+ |pages=49–56
+ |url=http://www.casualtyactuarialsociety.com/pubs/proceed/proceed80/80049.pdf
+ |access-date=2006-06-28
+}}
+*{{Cite journal
+ |last=Michelbacher
+ |first=Gustav F.
+ |year=1920
+ |title=The Technique of Rate Making as Illustrated by the 1920 National Revision of Workmen's Compensations Insurance Rates
+ |journal=Proceedings of the Casualty Actuarial Society
+ |volume=VI
+ |issue=14
+ |pages=201–249
+ |url=http://www.casact.org/pubs/proceed/proceed19/19201.pdf
+ |access-date=2006-06-28
+}}
+*{{Cite journal
+ |url=http://www.contingencies.org/julaug06/actuarys_new_clothes_0706.asp
+ |title=The Actuary's New Clothes, A Canadian Perspective on the Financial Economics Debate
+ |access-date=2006-06-28
+ |last=Moriarty
+ |first=Charlene
+ |journal=American Academy of Actuaries, Contingencies Jul/Aug
+ |year=2006
+ |format=PDF
+ |archive-url=https://web.archive.org/web/20060923141536/http://www.contingencies.org/julaug06/actuarys_new_clothes_0706.asp
+ |archive-date=2006-09-23
+ |url-status=dead
+ }}
+<!-- N -->
+*{{cite web
+ |last=Needleman
+ |first=Sarah E.
+ |date=January 5, 2010
+ |url=https://www.wsj.com/articles/SB10001424052748703580904574638321841284190
+ |title=The Best and Worst Jobs
+ |work=[[The Wall Street Journal]]
+ |access-date=2010-01-07
+}}
+*{{cite web
+ |last=Nemko
+ |first=Marty
+ |year=2006
+ |url=https://www.usnews.com/usnews/biztech/best_careers_2007/
+ |title=Best Careers 2007
+ |work=[[U.S. News & World Report]]
+ |access-date=2008-09-14
+ |archive-url=https://web.archive.org/web/20071118105300/http://www.usnews.com/usnews/biztech/best_careers_2007/careertable-njs.htm
+ |archive-date=November 18, 2007 
+}}
+*{{Cite journal
+ |last1=Nieto
+ |first1=Marcus
+ |last2=David
+ |first2=Jung
+ |title=The Impact of Residency Restrictions on Sex Offenders and Correctional Management Practices: A Literature Review
+ |publisher=California Research Bureau, [[California State Library]]
+ |date=August 2006
+ |url=http://www.library.ca.gov/crb/06/08/06-008.pdf
+ |access-date=2006-09-18
+ |ref={{harvid|Nieto|Jung|2006}}
+}}
+<!-- O -->
+*{{cite journal
+ |last=Ogborn 
+ |first=M.E. 
+ |date=December 1956 
+ |title=The Professional Name of Actuary 
+ |journal=Journal of the Institute of Actuaries 
+ |volume=82 
+ |issue=2 
+ |pages=233–246 
+ |url=http://www.actuaries.org.uk/sites/all/files/documents/pdf/0233-0246.pdf 
+ |access-date=April 27, 2011 
+ |publisher=Faculty and Institute of Actuaries 
+ |url-status=dead 
+ |archive-url=https://web.archive.org/web/20120320062211/http://www.actuaries.org.uk/sites/all/files/documents/pdf/0233-0246.pdf 
+ |archive-date=March 20, 2012 
+|doi=10.1017/S0020268100046424 
+ }}
+<!-- P -->
+*{{Cite book
+ |last=Perkins
+ |first=Judith
+ |title=The Suffering Self; Pain and Narrative Representation in the Early Christian Era
+ |date=August 25, 1995
+ |publisher=[[Routledge]]
+ |location=London
+ |isbn=0-415-11363-6
+ |lccn=94042650
+}}
+<!-- Q -->
+<!-- R -->
+<!-- S -->
+*{{Cite journal
+ |last1=Silver
+ |first1=Eric
+ |last2=Chow-Martin
+ |first2=Lynette
+ |date=October 2002
+ |title=A Multiple Models Approach To Assessing Recidivism Risk: Implications for Judicial Decision Making
+ |journal=Criminal Justice and Behavior
+ |volume=29
+ |issue=5
+ |pages=538–568
+ |doi=10.1177/009385402236732
+ |s2cid=144800554
+ |issn=0093-8548
+}}
+*{{Cite book
+ |last=Slud
+ |first=Eric V.
+ |title=Actuarial Mathematics and Life-Table Statistics
+ |orig-year=2001
+ |url=http://www.math.umd.edu/~evs/s470/BookChaps/01Book.pdf
+ |access-date=2006-06-28
+ |year=2006
+ |pages=149–150
+ |chapter=6: Commutation Functions, Reserves & Select Mortality
+ |chapter-url=http://www.math.umd.edu/~evs/s470/BookChaps/Chp6.pdf
+ |quote=<small>The Commutation Functions are a computational device to ensure that net single premiums...can all be obtained from a single table lookup. Historically, this idea has been very important in saving calculational labor when arriving at premium quotes. Even now...company employees without quantitative training could calculate premiums in a spreadsheet format with the aid of a life table.</small>
+}}
+<!-- T -->
+*{{Cite book
+ |last=Thucydides
+ |author-link=Thucydides
+ |others=Translated by [[Richard Crawley]]
+ |title=History of the Peloponnesian War
+ |url=http://classics.mit.edu/Thucydides/pelopwar.html
+ |access-date=2006-06-27
+ |year=1994–2009
+ |orig-year=c. 431 BCE
+ |location=[[Greece]]
+ |chapter=VI&nbsp;– Funeral Oration of Pericles
+ |chapter-url=http://classics.mit.edu/Thucydides/pelopwar.2.second.html
+ |quote=<small>My task is now finished....those who are here interred have received part of their honours already, and for the rest, their children will be brought up till manhood at the public expense: the state thus offers a valuable prize, as the garland of victory in this race of valour, for the reward both of those who have fallen and their survivors.</small>
+ |ref={{harvid|Thucydides}}
+}}
+*{{Cite news
+ |first=Vinnee
+ |last=Tong
+ |url=http://www.suntimes.com/output/news/cst-nws-phil19.html
+ |title=Americans' donations to charity near record
+ |work=[[Chicago Sun-Times]]
+ |publisher=Digital Chicago Inc.
+ |date=June 19, 2006
+ |access-date=2006-06-21
+}}
+<!-- U -->
+<!-- V -->
+<!-- W -->
+*{{Cite news
+ |first=Shane 
+ |last=Whelan 
+ |url=http://www.the-actuary.org.uk/pdfs/02_12_08.pdf 
+ |title=Actuaries' contributions to financial economics 
+ |work=The Actuary 
+ |publisher=Staple Inn Actuarial Society 
+ |pages=34–35 
+ |date=December 2002 
+ |access-date=2006-06-28 
+ |url-status=dead 
+ |archive-url=https://web.archive.org/web/20060724173342/http://www.the-actuary.org.uk/pdfs/02_12_08.pdf 
+ |archive-date=2006-07-24 
+}}
+<!-- X -->
+<!-- Y -->
+<!-- Z -->
+{{refend}}
+
+=== Bibliography ===
+* {{cite journal
+ |author      = Charles L. Trowbridge
+ |year        = 1989
+ |url         = http://www.actuarialfoundation.org/research_edu/fundamental.pdf
+ |title       = Fundamental Concepts of Actuarial Science
+ |publisher   = Actuarial Education and Research Fund
+ |version     = Revised Edition
+ |access-date  = 2006-06-28
+ |url-status     = dead
+ |archive-url  = https://web.archive.org/web/20060629155610/http://www.actuarialfoundation.org/research_edu/fundamental.pdf
+ |archive-date = 2006-06-29
+}}
+
+==External links==
+* {{curlie|Business/Financial_Services/Insurance/Actuarial_Science}}
+
+{{Statistics|applications}}
+
+{{DEFAULTSORT:Actuarial Science}}
+[[Category:Actuarial science| ]]
+[[Category:Insurance]]
+[[Category:Demography]]
+[[Category:Formal sciences]]
+[[Category:Applied statistics]]

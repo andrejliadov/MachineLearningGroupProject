@@ -1,0 +1,102 @@
+'''Bayesian model reduction''' is a method for computing the [[Marginal likelihood|evidence]] and [[Posterior probability|posterior]] over the parameters of [[Bayesian statistics|Bayesian]] models that differ in their [[Prior probability|priors]].{{r|Friston1|Friston2}} A full model is fitted to data using standard approaches. Hypotheses are then tested by defining one or more 'reduced' models with alternative (and usually more restrictive) priors, which usually – in the limit – switch off certain parameters. The evidence and parameters of the reduced models can then be computed from the evidence and estimated ([[Posterior probability|posterior]]) parameters of the full model using Bayesian model reduction. If the priors and posteriors are [[Normal distribution|normally distributed]], then there is an analytic solution which can be computed rapidly. This has multiple scientific and engineering applications: these include scoring the evidence for large numbers of models very quickly and facilitating the estimation of hierarchical models ([[Empirical Bayes method|Parametric Empirical Bayes]]).
+
+== Theory ==
+Consider some model with parameters <math>\theta</math>  and a prior probability density on those parameters <math>p(\theta)</math>. The posterior belief about <math>\theta</math> after seeing the data <math>p(\theta\mid y)</math> is given by [[Bayes' theorem|Bayes rule]]:
+
+{{NumBlk|:|<math>\begin{align}
+p(\theta\mid y) & = \frac{p(y\mid\theta)p(\theta)}{p(y)} \\
+p(y) & = \int p(y\mid\theta)p(\theta) \, d\theta
+\end{align}</math>|1}}
+
+The second line of Equation 1 is the model evidence, which is the probability of observing the data given the model. In practice, the posterior cannot usually be computed analytically due to the difficulty in computing the integral over the parameters. Therefore, the posteriors are estimated using approaches such as [[Markov chain Monte Carlo|MCMC sampling]] or [[Variational Bayesian methods|variational Bayes]]. A reduced model can then be defined with an alternative set of priors <math>\tilde{p}(\theta)</math>:
+
+{{NumBlk|:|<math>\begin{align}
+\tilde{p}(\theta\mid y) & = \frac{p(y\mid\theta)\tilde{p}(\theta)}{\tilde{p}(y)} \\
+\tilde{p}(y) & = \int p(y\mid\theta)\tilde{p}(\theta) \, d\theta
+\end{align}</math>|2}}
+
+The objective of Bayesian model reduction is to compute the posterior <math>\tilde{p}(\theta\mid y)</math> and evidence <math>\tilde{p}(y)</math> of the reduced model from the posterior <math>p(\theta\mid y)</math> and evidence <math>p(y)</math> of the full model. Combining Equation 1 and Equation 2 and re-arranging, the reduced posterior <math>\tilde{p}(\theta\mid y)</math> can be expressed as the product of the full posterior, the ratio of priors and the ratio of evidences:
+
+{{NumBlk|:|<math>\begin{align}
+\frac{\tilde{p}(\theta\mid y)\tilde{p}(y)}{p(\theta\mid y)p(y)} &=\frac{p(y\mid\theta)\tilde{p}(\theta)}{p(y\mid\theta)p(\theta)} \\
+\Rightarrow \tilde{p}(\theta\mid y) &= p(\theta\mid y)\frac{\tilde{p}(\theta)}{p(\theta)}\frac{p(y)}{\tilde{p}(y)}
+\end{align}</math>|3}}
+
+The evidence for the reduced model is obtained by integrating over the parameters of each side of the equation:
+
+{{NumBlk|:|<math>\int \tilde{p}(\theta\mid y)\,d\theta = \int p(\theta\mid y)\frac{\tilde{p}(\theta)}{p(\theta)}\frac{p(y)}{\tilde{p}(y)} \, d\theta =1</math>|4}}
+
+And by re-arrangement:
+
+{{NumBlk|:|<math> \begin{align}
+ 1 &= \int p(\theta\mid y)\frac{\tilde{p}(\theta)}{p(\theta)}\frac{p(y)}{\tilde{p}(y)} \, d\theta \\
+ &= \frac{p(y)}{\tilde{p}(y)}\int p(\theta\mid y)\frac{\tilde{p}(\theta)}{p(\theta)} \, d\theta \\
+ \Rightarrow \tilde{p}(y) &= p(y) \int p(\theta\mid y)\frac{\tilde{p}(\theta)}{p(\theta)} \, d\theta
+ \end{align}</math>|5}}
+
+== Gaussian priors and posteriors ==
+Under Gaussian prior and posterior densities, as are used in the context of [[Variational Bayesian methods|variational Bayes]], Bayesian model reduction has a simple analytical solution.{{r|Friston1}} First define normal densities for the priors and posteriors:
+
+{{NumBlk|:|<math>\begin{align}
+p(\theta) &= N(\theta;\mu_0,\Sigma_0)\\
+\tilde{p}(\theta) &= N(\theta;\tilde{\mu}_0,\tilde{\Sigma}_0)\\
+p(\theta\mid y) &= N(\theta;\mu,\Sigma)\\
+\tilde{p}(\theta\mid y) &= N(\theta;\tilde{\mu},\tilde{\Sigma})\\
+\end{align}</math>|6}}
+
+where the tilde symbol (~) indicates quantities relating to the reduced model and subscript zero – such as <math>\mu_0</math> – indicates parameters of the priors. For convenience we also define precision matrices, which are the inverse of each covariance matrix:
+
+{{NumBlk|:|<math>\begin{align}
+\Pi&=\Sigma^{-1}\\
+\Pi_0&=\Sigma_0^{-1}\\
+\tilde{\Pi}&=\tilde{\Sigma}^{-1}\\
+\tilde{\Pi}_0&=\tilde{\Sigma}_0^{-1}\\
+\end{align}</math>|7}}
+
+The free energy of the full model <math>F</math> is an approximation (lower bound) on the log model evidence: <math>F\approx \ln{p(y)}</math> that is optimised explicitly in variational Bayes (or can be recovered from sampling approximations). The reduced model's free energy <math>\tilde{F}</math> and parameters <math>(\tilde{\mu},\tilde{\Sigma})</math> are then given by the expressions:
+
+{{NumBlk|:|<math>\begin{align}
+\tilde{F}  &= \frac{1}{2}\ln|\tilde{\Pi}_0\cdot\Pi\cdot\tilde{\Sigma}\cdot\Sigma_0| \\
+           &- \frac{1}{2}(\mu^T\Pi\mu + \tilde{\mu}_0^T\tilde{\Pi}_0\tilde{\mu}_0 - \mu_0^T\Pi_0\mu_0 - \tilde{\mu}^T\tilde{\Pi}\tilde{\mu}) + F\\
+\tilde{\mu}       &= \tilde{\Sigma}(\Pi\mu + \tilde{\Pi}_0\tilde{\mu}_0 - \Pi_0\mu_0) \\
+\tilde{\Sigma}    &= (\Pi+\tilde{\Pi}_0-\Pi_0)^{-1} \\
+\end{align}</math>|8}}
+
+== Example ==
+[[File:Example_full_and_reduced_priors.png|thumb|Example priors. In a 'full' model, left, a parameter has a Gaussian prior with mean 0 and standard deviation 0.5. In a 'reduced' model, right, the same parameter has prior mean zero and standard deviation 1/1000. Bayesian model reduction enables the evidence and parameter(s) of the reduced model to be derived from the evidence and parameter(s) of the full model.]]
+
+Consider a model with a parameter <math>\theta</math> and Gaussian prior <math>p(\theta)=N(0,0.5^2)</math>, which is the Normal distribution with mean zero and standard deviation 0.5 (illustrated in the Figure, left). This prior says that without any data, the parameter is expected to have value zero, but we are willing to entertain positive or negative values (with a 99% confidence interval [−1.16,1.16]). The model with this prior is fitted to the data, to provide an estimate of the parameter <math>q(\theta)</math> and the model evidence <math>p(y)</math>.
+
+To assess whether the parameter contributed to the model evidence, i.e. whether we learnt anything about this parameter, an alternative 'reduced' model is specified in which the parameter has a prior with a much smaller variance: e.g.  <math>\tilde{p}_0=N(0,0.001^2)</math>. This is illustrated in the Figure (right). This prior effectively 'switches off' the parameter, saying that we are almost certain that it has value zero. The parameter <math>\tilde{q}(\theta)</math> and evidence <math>\tilde{p}(y)</math> for this reduced model are rapidly computed from the full model using Bayesian model reduction.
+
+The hypothesis that the parameter contributed to the model is then tested by comparing the full and reduced models via the [[Bayes factor]], which is the ratio of model evidences:
+
+: <math>\text{BF}=\frac{p(y)}{\tilde{p}(y)}</math>
+
+The larger this ratio, the greater the evidence for the full model, which included the parameter as a free parameter. Conversely, the stronger the evidence for the reduced model, the more confident we can be that the parameter did not contribute. Note this method is not specific to comparing 'switched on' or 'switched off' parameters, and any intermediate setting of the priors could also be evaluated.
+
+== Applications ==
+
+=== Neuroimaging ===
+Bayesian model reduction was initially developed for use in neuroimaging analysis,{{r|Friston1|Rosa}} in the context of modelling brain connectivity, as part of the [[dynamic causal modelling]] framework (where it was originally referred to as post-hoc Bayesian model selection).{{r|Friston1}} Dynamic causal models (DCMs) are differential equation models of brain dynamics.{{r|Friston3}} The experimenter specifies multiple competing models which differ in their priors – e.g. in the choice of parameters which are fixed at their prior expectation of zero. Having fitted a single 'full' model with all parameters of interest informed by the data, Bayesian model reduction enables the evidence and parameters for competing models to be rapidly computed, in order to test hypotheses. These models can be specified manually by the experimenter, or searched over automatically, in order to 'prune' any redundant parameters which do not contribute to the evidence.
+
+Bayesian model reduction was subsequently generalised and applied to other forms of Bayesian models, for example [[empirical Bayes method|parametric empirical Bayes (PEB)]] models of group effects.{{r|Friston2}} Here, it is used to compute the evidence and parameters for any given level of a hierarchical model under constraints (empirical priors) imposed by the level above.
+
+=== Neurobiology ===
+Bayesian model reduction has been used to explain functions of the brain. By analogy to its use in eliminating redundant parameters from models of experimental data, it has been proposed that the brain eliminates redundant parameters of  internal models of the world while offline (e.g. during sleep).{{r|Friston4|Tononi}}
+
+== Software implementations ==
+Bayesian model reduction is implemented in the [[Statistical parametric mapping|Statistical Parametric Mapping]] toolbox, in the [[MATLAB|Matlab]] function [https://github.com/spm/spm12/blob/master/spm_log_evidence_reduce.m spm_log_evidence_reduce.m] .
+
+== References ==
+{{reflist |refs=
+<ref name=Friston1>{{Cite journal|last1=Friston|first1=Karl|last2=Penny|first2=Will|date=June 2011|title=Post hoc Bayesian model selection|journal=NeuroImage|volume=56|issue=4|pages=2089–2099|doi=10.1016/j.neuroimage.2011.03.062|issn=1053-8119|pmc=3112494|pmid=21459150}}</ref>
+<ref name=Friston2>{{Cite journal|last1=Friston|first1=Karl J.|last2=Litvak|first2=Vladimir|last3=Oswal|first3=Ashwini|last4=Razi|first4=Adeel|last5=Stephan|first5=Klaas E.|last6=van Wijk|first6=Bernadette C.M.|last7=Ziegler|first7=Gabriel|last8=Zeidman|first8=Peter|date=March 2016|title=Bayesian model reduction and empirical Bayes for group (DCM) studies|journal=NeuroImage|volume=128|pages=413–431|doi=10.1016/j.neuroimage.2015.11.015|issn=1053-8119|pmc=4767224|pmid=26569570}}</ref>
+<ref name=Rosa>{{Cite journal|last1=Rosa|first1=M.J.|last2=Friston|first2=K.|last3=Penny|first3=W.|date=June 2012|title=Post-hoc selection of dynamic causal models|journal=Journal of Neuroscience Methods|volume=208|issue=1|pages=66–78|doi=10.1016/j.jneumeth.2012.04.013|issn=0165-0270|pmc=3401996|pmid=22561579}}</ref>
+<ref name=Friston3>{{Cite journal|last1=Friston|first1=K.J.|last2=Harrison|first2=L.|last3=Penny|first3=W.|date=August 2003|title=Dynamic causal modelling|journal=NeuroImage|volume=19|issue=4|pages=1273–1302|doi=10.1016/s1053-8119(03)00202-7|pmid=12948688|s2cid=2176588|issn=1053-8119}}</ref>
+<ref name=Friston4>{{Cite journal|last1=Friston|first1=Karl J.|last2=Lin|first2=Marco|last3=Frith|first3=Christopher D.|last4=Pezzulo|first4=Giovanni|last5=Hobson|first5=J. Allan|last6=Ondobaka|first6=Sasha|date=October 2017|title=Active Inference, Curiosity and Insight|journal=Neural Computation|language=en|volume=29|issue=10|pages=2633–2683|doi=10.1162/neco_a_00999|pmid=28777724|s2cid=13354308|issn=0899-7667|url=https://discovery.ucl.ac.uk/id/eprint/1570070/1/Friston_Active%20Inference%20Curiosity%20and%20Insight.pdf}}</ref>
+<ref name=Tononi>{{Cite journal|last1=Tononi|first1=Giulio|last2=Cirelli|first2=Chiara|date=February 2006|title=Sleep function and synaptic homeostasis|journal=Sleep Medicine Reviews|volume=10|issue=1|pages=49–62|doi=10.1016/j.smrv.2005.05.002|pmid=16376591|issn=1087-0792}}</ref>
+}}
+
+[[Category:Bayesian statistics]]
+[[Category:Statistical methods]]

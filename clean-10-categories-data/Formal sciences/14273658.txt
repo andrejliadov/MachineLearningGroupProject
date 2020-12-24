@@ -1,0 +1,71 @@
+{{for|the organization with the same acronym|American Society for Reproductive Medicine}}
+The '''agent systems reference model''' (ASRM) is a layered, abstract description for [[multiagent systems]].  As such, the [[reference model]]
+* provides a taxonomy of terms, concepts and definitions to compare agent systems;
+* identifies functional elements that are common in agent systems;
+* captures data flow and dependencies among the functional elements in agent systems; and
+* specifies assumptions and requirements regarding the dependencies among these elements.
+
+The ASRM differentiates itself from [[technical standard]]s, such as [[Knowledge Interchange Format]], [[Knowledge Query and Manipulation Language]], and those of the [[Foundation for Intelligent Physical Agents]] in that it defines the required ''existence'' of components of a multiagent system; standards prescribe how they are ''designed''.
+
+==Technical approach==
+
+The ASRM was technically constructed through [[Reverse engineering|forensic software analysis]] of existing agent-based systems.  Such fielded systems include [[Java Agent DEvelopment framework|JaDE]], [[Cougaar]], [[Extendable mobile agent architecture|EMAA]], [[NOMADS]], [[Retsina (agent framework)|Retsina]], [[A-Globe]], among others.  In so doing, through empirical evidence, the ASRM motivates its functional breakdown of agent-based systems.
+
+==Description of the ASRM layers==
+
+<!-- Add this to the table after more text has been added: align="right" -->
+{|class="wikitable"
+! colspan="4" | ASRM: the Layered Model
+|-
+!
+!
+!Layer
+!Examples
+|-
+!rowspan="4"|Agent-based<br />System
+!rowspan="2"|Agent system
+|Agent
+|<small>[[Soar (cognitive architecture)|Soar]], [[Knowledge base|KBs]], [[neural network]]</small>
+|-
+|Framework
+|<small>[[Java Agent DEvelopment framework|JADE]], [[Cougaar]], [[GNUBrain]], [[Extendable mobile agent architecture|EMAA]], [[NOMADS]], [[Retsina (agent framework)|Retsina]], [[A-Globe]]</small>
+|-
+!rowspan="2"|Infrastructure
+|Platform
+|<small>[[Operating system|OS]] (''e.g.'' [[Microsoft Windows|Windows]], [[Linux|GNU+Linux]])<br />[[Software]] (''e.g.'' [[Compiler]], [[Virtual machine|VMs]])<br />[[Device drivers]], [[Firmware]]</small>
+|-
+|Host
+|<small>Computing node (''e.g.'' [[Personal computer|PC]], [[Personal digital assistant|PDA]], [[mobile phone]])<br />Devices (''e.g.'' [[Network interface controller|network cards]], [[GPS]], [[robotics|robitic actuators]], [[sensors]])</small>
+|-
+!
+!
+|Environment
+|<small>[[Earth]], [[Robocup|Robot soccer arena]], [[Simulation|simulated environment]]</small>
+|}
+
+==History==
+
+The ASRM was started in July 2005, with the first draft having been completed in November 2006.  Contributors to the document have included [[Drexel University]], [[Cougaar|Cougaar Software]], [http://www.globalinfotek.com/ Global InfoTek] (see also: [[CoABS]]), [http://www.soartech.com/ Soar Technology] (see also: [[Soar (cognitive architecture)|Soar]]), [[Penn State University]], [[University of Southern California]], [[University of South Carolina]], the [[Florida Institute for Human and Machine Cognition]], [[University of West Florida]], [[BBN Technologies]], [[Telcordia]], [[Lockheed Martin]], [[General Dynamics]] and others.
+
+==See also==
+* [[4D-RCS Reference Model Architecture]]
+* [[Agent based model]]
+* [[Artificial Intelligence]]
+* [[Complex systems]]
+* [[Distributed artificial intelligence]]
+* [[Intelligent agent]]
+* [[Multiagent system]]
+* [[Reference model]]
+* [[Software agent]]
+
+==Further reading==
+
+* [http://www.fipa.org/docs/ACIN-reference_model-v1a.pdf Version 1.0a of the ASRM]
+* '''The Case for a Reference Model for Agent-Based Systems.'''  Pragnesh Jay Modi, William C. Regli and Israel Mayk.  In ''Proceedings of the [[IEEE]] Workshop on Distributed Intelligent Systems: Collective Intelligence and Its Applications.'' June, 2006. Pages 321–325.
+* Regli, W. C., Mayk, I., Dugan, C. J., Kopena, J. B., Lass, R. N., Modi, P. J., Mongan, W. M., Salvage, J. K., and Sultanik, E. A. "Development and specification of a reference model for agent-based systems." IEEE Trans. Sys. Man Cyber Part C 39, 5 (Sep. 2009), 572–596.[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4926156]
+
+[[Category:Reference models]]
+[[Category:Artificial intelligence]]
+
+
+{{comp-sci-stub}}

@@ -1,0 +1,433 @@
+{{short description|Time unit equal to seven days}}
+{{Other uses|Week (disambiguation)|Weeks (disambiguation)|Weekly (disambiguation)}}
+{{Use dmy dates|date=August 2019}}
+[[File:Italian - Bracelet - Walters 41269.jpg|thumb|upright=1.75|An Italian [[cameo (carving)|cameo]] bracelet representing the days of the week by their eponymous deities (mid-19th century, [[Walters Art Museum]])]]
+[[File:CLM 14456 71r detail.jpg|thumb|upright=1.75|Circular diagrams showing the division of the day and of the week, from a [[Carolingian Renaissance|Carolingian]] ms. ([[Codex latinus monacensis|Clm]] 14456 fol. 71r) of [[St. Emmeram Abbey]]. The week is divided into seven days, and each day into 24 hours, 96 ''puncta'' (quarter-hours), 240 ''minuta'' (tenths of an hour) and 960 ''[[moment (time)|momenta]]'' (40th parts of an hour).]]
+A '''week''' is a [[time unit]] equal to seven [[day]]s. It is the standard time period used for cycles of rest days in most parts of the world, mostly alongside—although not strictly part of—the [[Gregorian calendar]].
+
+In many languages, the '''days of the week''' [[names of the days of the week|are named]] after [[classical planets]] or gods of a [[Pantheon (religion)|pantheon]]. In English, the names are [[Sunday]], [[Monday]], [[Tuesday]], [[Wednesday]], [[Thursday]], [[Friday]] and [[Saturday]], then returning to [[Sunday]]. Such a week may be called a ''planetary week''.{{cn|date=April 2020}} This arrangement is similar to a week in the [[Bible]] in which the seven days are simply numbered with the first day being a Christian day of worship (aligned with Sunday) and the seventh day being a sabbath day (Saturday).
+
+While, for example, the United States, Canada, Brazil, Japan and other countries consider Sunday as the first day of the week, and while the week begins with Saturday in much of the Middle East, the international [[ISO 8601]] standard{{efn|"ISO 8601 Data elements and interchange formats – Information interchange – Representation of dates and times" is an international standard covering the exchange of date- and time-related data.}} and most of Europe has Monday as the first day of the week. The ISO standard includes the [[ISO week date]] system, a numbering system for weeks within a given year, where each week starting on a Monday is associated with the year that contains that week's Thursday (so that if a year starts in a long weekend Friday–Sunday, week number one of the year will start after that, and if, conversely, a year ends on a Monday, Tuesday or Wednesday, the last days of the year are counted as part of week 1 of the following year). ISO 8601 assigns numbers to the days of the week, running from 1 for Monday through 7 for Sunday.
+
+The term "week" is sometimes expanded to refer to other time units comprising a few days, such as the [[nundinal cycle]] of the ancient Roman calendar, the "work week", or "school week" referring only to the days spent on those activities.
+
+{{anchor|Etymology|Names}}
+
+==Name==
+The English word ''[[:wikt:week|week]]'' comes from the [[Old English]] ''wice'', ultimately from a [[Common Germanic]] ''{{lang|gem-x-proto|wikōn-}}'', from a root ''{{lang|gem-x-proto|wik-}}'' "turn, move, change". The Germanic word probably had a wider meaning prior to the adoption of the [[Roman calendar]], perhaps "succession series", as suggested by [[Gothic language|Gothic]] ''wikō'' translating ''taxis'' "order" in [[gospel of Luke|Luke]] 1:8.
+
+The seven-day week is named in many languages by a word derived from "seven". The [[archaism]] '''sennight''' ("seven-night") preserves the old Germanic practice of reckoning time by nights, as in the more common ''[[fortnight]]'' ("fourteen-night").<ref name=worldwidewords>[http://www.worldwidewords.org/weirdwords/ww-sen1.htm sennight] at worldwidewords.org (retrieved 12 January 2017)</ref> '''Hebdomad''' and '''hebdomadal week''' both derive from the [[Koine Greek|Greek]] ''hebdomás'' ({{lang|grc|{{linktext|ἑβδομάς}}}}, "a seven"). '''Septimana''' is cognate with the [[Romance languages|Romance]] terms derived from [[Latin]] ''[[wikt:septimana|septimana]]'' ("a seven").
+
+Slavic has a formation ''[[:wikt:Reconstruction:Proto-Slavic/tъdьnь|*tъ(žь)dьnь]]'' (Serbian {{Lang-sr-Cyrl|тједан|translit=tjedan|label=none}}, Croatian tjedan, Ukrainian {{Lang-uk|тиждень|translit=tyzhden|label=none}}, Czech ''týden'', Polish ''tydzień''), from ''*tъ'' "this" + ''*dьnь'' "day". Chinese has [[:wikt:星期|星期]], as it were "[[:wikt:星|planetary]] [[:wikt:期|time unit]]".
+
+==Definition and duration==
+A week is defined as an interval of exactly seven [[day]]s,{{efn|1=In pre-modern times, days were measured either from sunset to sunset, or from sunrise to sunrise, so that the length of the week (and the day) would be subject to slight variations depending upon the time of year and the observer's geographical latitude.}} so that technically, except at [[daylight saving time]] transitions or [[leap second]]s,
+:1 week = 7 days = 168 hours = 10,080 minutes = 604,800 seconds.
+With respect to the [[Gregorian calendar]]:
+*1 Gregorian calendar year = 52 weeks + 1 day (2 days in a [[leap year]])
+*1 week = {{frac|1600|6957}} ≈ 22.9984% of an average Gregorian month
+
+In a [[Gregorian calendar|Gregorian]] mean year, there are 365.2425 days, and thus exactly {{frac|52|71|400}} or 52.1775 weeks (unlike the [[Julian year (calendar)|Julian year]] of 365.25 days or {{frac|52|5|28}} ≈ 52.1786 weeks, which cannot be represented by a finite decimal expansion). There are exactly 20,871 weeks in 400 Gregorian years, so {{CURRENTDAY}} {{CURRENTMONTHNAME}} {{#expr: {{CURRENTYEAR}} -400}} was a {{CURRENTDAYNAME}} just as was {{CURRENTDAY}} {{CURRENTMONTHNAME}} {{CURRENTYEAR}}.
+
+Relative to the path of the [[Moon]], a week is 23.659% of an average [[lunation]] or 94.637% of an average quarter lunation.
+
+Historically, the system of [[dominical letter]]s (letters A to G identifying the weekday of the first day of a given year) has been used to facilitate [[determination of the day of the week|calculation of the day of week]].
+The day of the week can be easily calculated given a date's [[Julian day number]] (JD, i.e. the integer value at [[noon]] [[Universal Time|UT]]):
+Adding one to the [[remainder]] after dividing the Julian day number by seven (JD ''[[modulo operation|modulo]]'' 7 + 1) yields that date's [[ISO 8601]] day of the week. For example, the Julian day number of {{CURRENTDAY}} {{CURRENTMONTHNAME}} {{CURRENTYEAR}} is {{#expr: floor({{CURRENTJULIANDAY}}+.5)}}. Calculating {{math|1={{#expr: floor({{CURRENTJULIANDAY}}+.5)}} mod 7 + 1}} yields {{#expr: (floor({{CURRENTJULIANDAY}}+.5) mod 7) + 1}}, corresponding to {{CURRENTDAYNAME}}<!-- +.5 because the JD is integer at noon UT-->.<ref>Richards, E. G. (2013). "Calendars". In S. E. Urban & P. K. Seidelmann, eds. ''Explanatory Supplement to the Astronomical Almanac'', 3rd ed. (pp. 585–624). Mill Valley, Calif.: University Science Books. 2013, pp. 592, 618.
+This is equivalent to saying that JD0, i.e. 1 January 4713 BC of the [[proleptic Julian calendar]], was a Monday.</ref>
+
+==Days of the week==
+{{Main|Names of the days of the week}}
+[[File:Weekday heptagram.ant.png|thumb|Schematic comparison of the ordering of the classical planets (arranged in a circle) and the sequence of days in the week (forming a {7/3} [[heptagram]] within the circle).]]
+
+The days of the week were originally named for the [[classical planet]]s. This naming system persisted alongside an "ecclesiastical" tradition of numbering the days, in [[ecclesiastical Latin]] beginning with ''dominica'' (the [[Lord's Day]]) as the first day. The Greco-Roman gods associated with the classical planets were rendered in their ''[[interpretatio germanica]]'' at some point during the late Roman Empire, yielding the Germanic tradition of names based on indigenous deities.
+
+The ordering of the weekday names is not the classical order of the planets (by distance in the [[planetary spheres]] model, nor, equivalently, by their apparent speed of movement in the night sky). Instead, the [[planetary hours]] systems resulted in succeeding days being named for planets that are three places apart in their traditional listing. This characteristic was apparently discussed in [[Plutarch]] in a treatise written in c. AD 100, which is reported to have addressed the question of ''Why are the days named after the planets reckoned in a different order from the actual order?'' (the text of Plutarch's treatise has been lost).<ref>E. G. Richards, ''Mapping Time, the Calendar and History'', Oxford 1999. p. 269.</ref>
+
+{| class="wikitable"
+|-
+| || [[Sunday]] || [[Monday]] || [[Tuesday]] || [[Wednesday]] || [[Thursday]] || [[Friday]] || [[Saturday]]
+|-
+|Planet
+| [[Planets in astrology#Sun|Sun]]
+| [[Moon (astrology)|Moon]]
+| [[Mars (astrology)|Mars]]
+| [[Mercury (astrology)|Mercury]]
+| [[Jupiter (astrology)|Jupiter]]
+| [[Venus (astrology)|Venus]]
+| [[Saturn (astrology)|Saturn]]
+|-
+| Greco-Roman deity
+| [[Helios]]-[[Sol (Roman mythology)|Sol]]
+| [[Selene]]-[[Luna (goddess)|Luna]]
+| [[Ares]]-[[Mars (mythology)|Mars]]
+| [[Hermes]]-[[Mercury (mythology)|Mercury]]
+| [[Zeus]]-[[Iuppiter|Jupiter]]
+| [[Aphrodite]]-[[Venus (mythology)|Venus]]
+| [[Cronus]]-[[Saturn (mythology)|Saturn]]
+|-
+| [[Koine Greek|Greek]]:
+| ἡμέρα Ἡλίου
+| ἡμέρα Σελήνης
+| ἡμέρα Ἄρεως
+| ἡμέρα Ἑρμοῦ
+| ἡμέρα Διός
+| ἡμέρα Ἀφροδίτης
+| ἡμέρα Κρόνου
+|-
+| [[Classical Latin|Latin]]:
+| [[:la:Dies Solis|dies Sōlis]]
+| [[:la:Dies Lunae|dies Lūnae]]
+| [[:la:Dies Martis|dies Martis]]
+| [[:la:Dies Mercurii|dies Mercuriī]]
+| [[:la:Dies Iovis|dies Iovis]]
+| [[:la:Dies Veneris|dies Veneris]]
+| [[:la:Dies Saturni|dies Saturnī]]
+|-
+|''[[interpretatio germanica]]''
+| [[Sól (Norse mythology)|Sun]] || [[Máni|Moon]] || [[Týr|Tiwaz]] || [[Wodanaz]] || [[Donar|Þunraz]] || [[Frige]] || — 
+|-
+| [[Old English]] || ''sunnandæg'' || ''mōnandæg'' || ''tiwesdæg'' || ''wōdnesdæg'' || ''þunresdæg'' || '' frīgedæg'' || ''sæterndæg''
+|-
+| [[Vedic religion|Vedic]] [[Navagraha]] 
+| [[Surya]]vara || [[Chandra]]vara || [[Mangala]]vara || [[Budha]]vara || [[Bṛhaspati]]vara || [[Shukra]]vara || [[Shani]]vara 
+|}
+
+[[File:First_Day_of_Week_World_Map.svg|thumb|The first day of the week of different countries according to the [[CLDR]]<ref>{{Cite web|url=https://unicode-org.github.io/cldr-staging/charts/38/supplemental/territory_information.html|title=Territory Information|website=www.unicode.org|access-date=2020-11-06}}</ref>
+{{legend|#386cb0|Sunday}}
+{{legend|#fdc086|Monday}}
+{{legend|#f0027f|Friday}}
+{{legend|#7fc97f|Saturday}}]]
+
+An ecclesiastical, non-astrological, system of numbering the days of the week was adopted in Late Antiquity. This model also seems to have influenced (presumably via [[Gothic Christianity|Gothic]]) the designation of Wednesday as "mid-week" in [[Old High German]] (''mittawehha'') and [[Old Church Slavonic]] (срѣда). Old Church Slavonic may have also modeled the name of Monday, понєдѣльникъ, after the Latin ''feria secunda''.<ref>Max Vasmer, Russisches etymologisches Wörterbuch, s.v. понедельник; however, the Slavic languages later introduced a secondary numbering system that names Tuesday as the "second day".<!-- Wiktionary claims "въторъкъ" as OCS, but Vasmer does not recognize an OCS precedent to Russian вторник, so it is unclear when this system was introduced.--></ref> The ecclesiastical system became prevalent in [[Eastern Christianity]], but in the [[Latin Christianity|Latin West]] it remains extant only in modern [[Icelandic language|Icelandic]], [[Galician language|Galician]], and [[Portuguese language|Portuguese]].<ref>the latter specifically due to the influence of [[Martin of Braga]], 6th-century archbishop of [[Braga]]. {{cite book|author=Richard A. Fletcher|title=The Barbarian Conversion: From Paganism to Christianity|url=https://books.google.com/books?id=RB5aWgr7l-gC&pg=PA257|year=1999|publisher=University of California Press|isbn=978-0-520-21859-8|page=257}}{{cite book|last=McKenna|first=Stephen|title=Paganism and Pagan Survivals in Spain Up to the Fall of the Visigothic Kingdom|year=1938|publisher=Catholic University of America|pages=93–94|url=http://libro.uca.edu/mckenna/paganism.htm|access-date=20 March 2013|chapter=Pagan Survivals in Galicia in the Sixth Century}}</ref>
+
+{| class="wikitable"
+|-
+|  || 1. [[Sunday]] ([[Christian Sabbath]]) || 2. [[Monday]] || 3. [[Tuesday]] || 4. [[Wednesday]] || 5. [[Thursday]] || 6. [[Friday]]  || 7. [[Saturday]] ([[Jewish Sabbath]])
+|-
+| [[Byzantine Greek|Greek]]
+| Κυριακὴ ἡμέρα<br/>/kiriaki iméra/
+| Δευτέρα ἡμέρα<br/>/devtéra iméra/ <!--4th century ðéɸteros, 1st century dɛ́ʍtɛros etc., leave the details to Wiktioary-->
+| Τρίτη ἡμέρα<br/>/tríti iméra/
+| Τετάρτη ἡμέρα<br/>/tetárti iméra/
+| Πέμπτη ἡμέρα<br/>/pémpti iméra/
+| Παρασκευὴ ἡμέρα<br/>/paraskevi iméra/<ref>"day of [[wikt:παρασκευή#Ancient Greek|preparation]]", i.e. the day before Sabbath, c.f. [[gospel of Luke|Luke]] 23:54 ({{lang|grc|καὶ ἡμέρα ἦν Παρασκευῆς, καὶ σάββατον ἐπέφωσκεν.}})</ref>
+| Σάββατον<br/>/sáb:aton/
+|-
+| [[Ecclesiastical Latin|Latin]]
+| ''[dies] dominica'';<br>rarely ''feria prima'', ''feria dominica''
+| ''feria secunda''
+| ''feria tertia''
+| ''feria quarta'';<br>rarely ''media septimana''
+| ''feria quinta''
+| ''feria sexta''
+| ''Sabbatum''; ''dies sabbatinus'', ''dies Sabbati'';<br> rarely ''feria septima'', ''feria Sabbati''
+|-
+|}
+
+==History==
+===Ancient Near East===
+The earliest evidence of an astrological significance of a seven-day period is connected to [[Gudea]], priest-king of [[Lagash]] in Sumer during the [[Gutian dynasty of Sumer|Gutian dynasty]], who built a seven-room temple, which he dedicated with a seven-day festival. In the flood story of the Assyro-Babylonian epic of Gilgamesh, the storm lasts for seven days, the dove is sent out after seven days, and the [[Noah]]-like character of [[Utnapishtim]] leaves the ark seven days after it reaches firm ground.{{efn|1=Copeland (1939) states as the date for Gudea "as early as 2600 BC";<ref>{{cite journal |last=Copeland |first=Leland S. |title=Sources of the Seven-Day Week |journal=Popular Astronomy |date=1939 |volume=47 |issue=4 |page=176 |bibcode=1939PA.....47..175C}}</ref> the modern estimate according to the [[short chronology]] places Gudea in the 22nd century BC. By contrast, [[Anthony R. Michaelis]] claims that "the first great empire builder, King Sargon I of Akkad ([ruled] 2335 to 2279 BC [viz., middle chronology]), decreed a seven-day week in his empire. He lived for 56 years, established the first Semitic Dynasty, and defeated the Sumerian City States. Thus the Akkadian language spread, it was adopted by the Babylonians, and the seven-day week was similarly inherited from him."<ref>{{cite journal |title=The Enigmatic Seven |url=http://garfield.library.upenn.edu/michaelis/title310.pdf |journal=Interdisciplinary Science Reviews |volume=7 |page=373 |last=Michaelis |first=Anthony R.}}</ref> The number seven is significant in Sumerian mythology.<ref>{{cite news |title=The power of seven |date=20 December 2001 |url=http://www.economist.com/node/895542?fsrc=scn/fb/wl/ar/thepowerofseven |newspaper=[[The Economist]]}}</ref><!--surely(!) we can come up with a better source for whatever we want to say with this.-->}}
+
+Counting from the [[new moon]], the Babylonians celebrated the 7th, 14th, 21st and 28th as "holy-days", also called "evil days" (meaning "unsuitable" for prohibited activities). On these days, officials were prohibited from various activities and common men were forbidden to "make a wish", and at least the 28th was known as a "rest-day".<ref name=ere/>
+On each of them, offerings were made to a different god and goddess.
+
+In a frequently-quoted suggestion going back to the early 20th century,<ref>{{cite book |chapter-url=https://babel.hathitrust.org/cgi/pt?id=mdp.39015027068470;view=1up;seq=197 |chapter=The Babylonian Sabbath |page=181 |url=https://babel.hathitrust.org/cgi/pt?id=mdp.39015027068470;view=1up;seq=9 |title=The American Antiquarian and Oriental Journal |volume= Vol. XXX |year=1908 |access-date=2018-06-21}}</ref> the Hebrew ''[[Biblical Sabbath#Etymology|Sabbath]]'' is compared to the Sumerian ''sa-bat'' "mid-rest", a term for the [[full moon]]. The Sumerian term has been reconstructed as rendered ''Sapattu<sup>m</sup>'' or ''Sabattu<sup>m</sup>'' in [[Babylonian language|Babylonian]], possibly present in the lost fifth tablet of the [[Enûma Eliš]], tentatively reconstructed {{according to whom|date=April 2015}} "[Sa]bbath shalt thou then encounter, mid[month]ly".<!-- [[Akkadian language|Akkadian]] ''um nuh libbi'' ("day of mid-repose") what is this, a reconstruction or an extant translation of Enuma Elish?--><ref name="ere">{{cite book|author=Pinches, T.G.|url=https://books.google.com/books?id=qVNqXDz4CE8C|title=Encyclopedia of Religion and Ethics|publisher=Kessinger Publishing|others=Selbie, John A., contrib|year=2003|isbn=978-0-7661-3698-4|editor=Hastings, James|volume=20|pages=889–891|chapter=Sabbath (Babylonian)|access-date=2009-03-17}}
+<!--it turns out this ERE article just summarizes a century-old Assyriologist theory, but we don't know whose it is, or how scholars have judged it--></ref>
+
+It is possible that the Hebrew seven-day week is based on the Babylonian tradition, although going through certain adaptations.{{contradict-inline|date=August 2019}} [[George Aaron Barton]] speculated that the seven-day creation account of Genesis is connected to the Babylonian creation epic, [[Enûma Eliš]], which is recorded on seven tablets.<ref>"Each account is arranged in a series of sevens, the Babylonian in seven tablets, the Hebrew in seven days. Each of them places the creation of man in the sixth division of its series." cited after: Albert T. Clay, ''The Origin of Biblical Traditions: Hebrew Legends in Babylonia and Israel'', 1923, [https://books.google.ch/books?id=JKBLAwAAQBAJ&pg=PA74 p. 74].</ref>
+
+===Judea===
+A continuous seven-day cycle that runs throughout history without reference to the phases of the moon was first practised in [[Judaism]], dated to the 6th century BC at the latest.{{sfnp|Zerubavel|1989|loc=[https://books.google.com/books?id=Cd5ZjRsNj4sC&pg=PA11 p. 11]}}<ref name=":0"/>
+
+There are several hypotheses concerning the origin of the [[Old Testament|biblical]] seven-day cycle.
+
+[[Friedrich Delitzsch]] and others suggested that the seven-day week being approximately a quarter of a [[lunation]] is the implicit astronomical origin of the seven-day week,<ref name="LSC">{{cite journal
+|last=Leland
+|first=S. Copeland
+|title=Sources of the Seven-Day Week
+|journal=Popular Astronomy
+|url=http://adsabs.harvard.edu/full/1939PA.....47..175C
+|date=April 1939
+|volume= XLVII| issue = 4
+|page=176 ff
+|bibcode=1939PA.....47..175C}}
+</ref> and indeed the [[Babylonian calendar]] used [[Intercalation (timekeeping)|intercalary]] days to synchronize the last week of a month with the new moon.<ref>A month consisted of three seven-day weeks and a fourth week of eight or nine days, thus breaking the seven-day cycle every month. Consequently, there is no evidence that the days of the week were given individual names in Babylonian tradition. {{cite book|author=Pinches, T.G.|editor=Hastings, James|others=Selbie, John A., contrib|title=Encyclopedia of Religion and Ethics|volume=20|publisher=Kessinger Publishing|year=2003|pages=889–891|chapter=Sabbath (Babylonian)|url=https://books.google.com/books?id=qVNqXDz4CE8C|isbn=978-0-7661-3698-4 |access-date=2009-03-17}}</ref> According to this theory, the Jewish week was adopted from the Babylonians while removing the moon-dependency.
+
+However, [[Niels-Erik Andreasen]], [[Jeffrey H. Tigay]], and others claimed that the [[Biblical Sabbath]] is mentioned as a day of rest in some of the earliest layers of the [[Pentateuch]] dated to the 9th century BC at the latest, centuries before [[Judea]]'s Babylonian exile. They also find the resemblance between the Biblical Sabbath and the Babylonian system to be weak. Therefore, they suggested that the seven-day week may reflect an independent [[Israelites|Israelite]] tradition.<ref>{{cite book |url=https://books.google.com/books?id=kE0YAAAAIAAJ |title=The Old Testament Sabbath: A Tradition-historical Investigation |last=Andreasen |first=Niels-Erik A. |date=1972 |publisher=Society of Biblical Literature |language=en}}</ref><ref>{{cite journal |last=Shafer |first=Byron E. |date=1974 |title=Reviewed Work: ''The Old Testament Sabbath: A Tradition-Historical Investigation'' by Niels-Erik A. Andreasen |jstor=3263102 |journal=Journal of Biblical Literature |volume=93 |issue=2 |pages=300–301 |doi=10.2307/3263102}}</ref><ref name=":1">{{cite journal |last=Tigay |first=Jeffery H. |date=1998 |title=Shavua |journal=Mo'adei Yisra'el: Time and Holy Days in the Biblical and Second Commonwealth Periods (Heb.), Ed. Jacob S. Licht|pages=22–23 }}</ref><ref>{{cite journal |jstor=23506909 |title=New Moons and Sabbaths: A Case-Study in the Contrastive Approach |journal=Hebrew Union College Annual |volume=48 |year=1977 |pages=1–18 |last=Hallo |first=William W.}}</ref> Tigay writes:
+
+<blockquote>It is clear that among neighboring nations that were in position to have an influence over Israel – and in fact which did influence it in various matters – there is no precise parallel to the Israelite Sabbatical week. This leads to the conclusion that the Sabbatical week, which is as unique to Israel as the Sabbath from which it flows, is an independent Israelite creation.<ref name=":1"/><ref>{{cite journal |last=Friedman |first=Allen |date=Sep 2008 |title=Unnatural Time: Its History and Theological Significance |jstor=40914729 |journal=The Torah U-Madda Journal |volume=15 |pages=104–105 |postscript=, Tigay's citation. }}</ref></blockquote>
+
+The seven-day week seems to have been adopted, at different stages, by the [[Persian Empire]], in [[Hellenistic astrology]], and (via [[Hellenistic period|Greek transmission]]) in [[Gupta India]] and [[Tang China]].{{efn|1=It was transmitted to China in the 8th century by Manichaeans, via the country of [[Kangju|Kang]] (a Central Asian polity near [[Samarkand]]).
+Tang-era adoption is documented in the writings of the Chinese Buddhist monk [[I Ching (monk)|Yi Jing]] and the Ceylonese Buddhist monk [[Amoghavajra|Bu Kong]].
+According to the Chinese encyclopaedia ''[[Cihai]]'' ({{Lang|zh-hans|辞海}}), there is some evidence that the system had been adopted twice, the first time already in the 4th century ([[Jin dynasty (265–420)|Jin dynasty]]), based on a reference by a Jin era astrologer, Fan Ning ({{Lang|zh-hant|范寧}} / {{Lang|zh-hans|范宁}}).
+The ''Cihai'' under the entry for "seven luminaries calendar" ({{Lang|zh-hant|七曜曆}} / {{Lang|zh-hans|七曜历}}, ''qī yào lì'') has: "method of recording days according to the seven luminaries [{{Lang|zh|七曜}} ''qī yào'']. China normally observes the following order: Sun, Moon, Mars, Mercury, Jupiter, Venus, and Saturn. Seven days make one week, which is repeated in a cycle. Originated in ancient Babylon (or ancient Egypt according to one theory). Used by the Romans at the time of the 1st century AD, later transmitted to other countries. This method existed in China in the 4th century. It was also transmitted to China by Manichaeans in the 8th century from the country of Kang ({{Lang|zh|康}}) in Central Asia."<ref>{{cite web |title=Japanese Days of the Week: the 'Seven Luminaries' |url=http://www.cjvlang.com/Dow/dowjpn.html |website=Days of the Week in Chinese, Japanese, Vietnamese & Mongolian |publisher=cjvlang}}</ref>}}{{citation needed|date=June 2017}}
+The Babylonian system was received by the Greeks in the 4th century BC (notably via [[Eudoxus of Cnidus]]). However, the designation of the seven days of the week to the seven planets is an innovation introduced in the time of Augustus.<ref name=":2">{{cite book |url=https://books.google.com/books?id=PeVLAQAAQBAJ&pg=PA89|title=Written Space in the Latin West, 200 BC to AD 300 |last1=Keegan |first1=Peter |last2=Sears |first2=Gareth |last3=Laurence |first3=Ray |date=2013-09-12 |publisher=A&C Black |isbn=9781441123046|language=en}}</ref> The astrological concept of [[planetary hours]] is rather an original innovation of Hellenistic astrology, probably first conceived in the 2nd century BC.{{sfnp|Zerubavel|1989|loc=[https://books.google.com/books?id=Cd5ZjRsNj4sC&pg=PA14 p. 14]}}
+
+The seven-day week was widely known throughout the [[Roman Empire]] by the 1st century AD,<ref name=":2"/> along with references to the Jewish Sabbath by Roman authors such as [[Seneca the Younger|Seneca]] and [[Ovid]].<ref>{{cite book |url=https://books.google.com/books?id=e3ijDgAAQBAJ&pg=PA21|title=Jesus in Q: The Sabbath and Theology of the Bible and Extracanonical Texts |last=So |first=Ky-Chun |date=6 April 2017 |publisher=Wipf and Stock Publishers |isbn=9781498282116 |language=en}}</ref> When the seven-day week came into use in Rome during the early imperial period, it did not immediately replace the older eight-day [[nundinal cycle|nundinal]] system.<ref>{{cite book |last1=Brind'Amour |first1=Pierre |title=Le calendrier Romain :Recherches chronologiques |date=1983 |publisher=Editions de l'Universitá d'Ottawa |isbn=2760347028 |pages=256–275 |language=fr}}</ref> The nundinal system had probably fallen out of use by the time Emperor [[Constantine]] adopted the seven-day week for official use in CE 321, making the [[Sunday|Day of the Sun]] ({{lang|la|dies Solis}}) a legal holiday.<ref>{{cite book |last1=Schaff |first1=Philip |title=History of the Christian Church Vol. III |date=1884 |publisher=T&T Clark |location=Edinburgh |page=[https://archive.org/details/historychristia01schagoog/page/n299 380] |url=https://archive.org/details/historychristia01schagoog|access-date=15 March 2019}}</ref>
+
+===Achaemenid period===
+The [[Zoroastrian calendar]] follows the Babylonian in relating the 7th, 14th, 21st, and 28th of the month to [[Ahura Mazda]].<ref name="TSZ">Boyce, Mary (ed. & trans.). ''Textual Sources for the Study of Zoroastrianism''. University of Chicago Press, 1984, p. 19-20.</ref>
+The forerunner of all modern Zoroastrian calendars is the system used to determine dates in the [[Achaemenid Empire|Persian Empire]], adopted from the Babylonian calendar by the 4th century BC.
+
+[[Frank Senn|Frank C. Senn]] in his book ''Christian Liturgy: Catholic and Evangelical'' points to data suggesting evidence of an early continuous use of a seven-day week; referring to the Jews during the [[Babylonian captivity]] in the 6th century BC,<ref name=":0">{{cite book
+| last = Senn
+| first = Frank C.
+| title = Christian Liturgy: Catholic and Evangelical
+| publisher = Fortress Press
+| year = 1997
+| url = https://books.google.com/books?id=g5c7C2rQzU0C
+| isbn = 978-0-8006-2726-3}}</ref> after the destruction of the [[Temple of Solomon]].
+While the seven-day week in Judaism is tied to [[Genesis creation narrative|Creation account]] in the [[Book of Genesis]] in the [[Hebrew Bible]] (where [[Elohim|God]] creates the heavens and the earth in six days and rests on the seventh; {{bibleverse||Genesis|1:1–2:3}}, in the [[Book of Exodus]], the fourth of the [[Ten Commandments]] is to rest on the seventh day, ''[[Shabbat]]'', which can be seen as implying a socially instituted seven-day week), it is not clear whether the Genesis narrative predates the [[Babylonian captivity]] of the Jews in the 6th century BC. At least since the [[Second Temple Judaism|Second Temple period]] under Persian rule, Judaism relied on the seven-day cycle of recurring [[Sabbath]]s.<ref name="Senn 1997">{{cite book
+| last = Senn
+| first = Frank C.
+| title = Christian Liturgy: Catholic and Evangelical
+| publisher = Fortress Press
+| year = 1997
+| url = https://books.google.com/books?id=g5c7C2rQzU0C
+| isbn = 978-0-8006-2726-3}}</ref>
+
+Tablets{{citation needed|date=April 2015}} from the Achaemenid period indicate that the [[lunation]] of 29 or 30 days basically contained three seven-day weeks, and a final week of eight or nine days inclusive, breaking the continuous seven-day cycle.<ref name=ere/>
+The Babylonians additionally celebrated the 19th as a special "evil day", the "day of anger", because it was roughly the 49th day of the (preceding) month, completing a "week of weeks", also with sacrifices and prohibitions.<ref name=ere/>
+
+Difficulties with [[Friedrich Delitzsch]]'s [[origin theory]] connecting Hebrew ''[[Shabbat]]'' with the Babylonian [[lunar cycle]]<ref name=landau>{{cite book
+|url=https://archive.org/stream/sabbath00land/sabbath00land_djvu.txt|title=The Sabbath
+|author=Landau, Judah Leo
+|publisher=Ivri Publishing Society, Ltd
+|access-date=2009-03-26
+|location=[[Johannesburg, South Africa]]
+|pages=2, 12
+}}</ref> include reconciling the differences between an unbroken week and a lunar week, and explaining the absence of texts naming the lunar week as ''Shabbat'' in any language.<ref name=orr>{{cite book
+|chapter-url=https://books.google.com/books?id=Tn4PAAAAYAAJ&pg=PA2630&lpg=PA2630
+|title=The International Standard Bible Encyclopedia
+|editor=[[James Orr (theologian)|Orr, James]]
+|page=2630
+|chapter=Sabbath: Critical Theories
+|author=Sampey, John Richard
+|publisher=Howard-Severance Company
+|year=1915}}</ref>
+
+===Hellenistic and Roman era===
+{{main|Nundinae}}
+In [[Hellenistic Judaism|Jewish sources]] by the time of the [[Septuagint]], the term "Sabbath" ([[Greek language|Greek]] ''Sabbaton'') by synecdoche also came to refer to an entire seven-day week,<ref>''Strong's Concordance'', ''4521''.</ref> the interval between two weekly Sabbaths.
+[[Parables of Jesus|Jesus's parable]] of the [[Pharisee and the Publican]] ([https://www.biblegateway.com/passage/?search=luke+18%3A12 Luke 18:12]) describes the Pharisee as fasting "twice in the week" ([[biblical Greek|Greek]] δὶς τοῦ σαββάτου ''dis tou sabbatou'').
+
+The ancient Romans traditionally used the eight-day [[nundinum]] but, after the [[Julian calendar]] had come into effect in 45 BC, the seven-day week came into increasing use. For a while, the week and the nundinal cycle coexisted, but by the time the week was officially adopted by [[Constantine I (emperor)|Constantine]] in AD 321, the nundinal cycle had fallen out of use. The association of the [[days of the week]] with the Sun, the Moon and the five planets visible to the naked eye dates to the [[Roman era]] (2nd century).{{sfnp|Zerubavel|1989|loc=[https://books.google.com/books?id=Cd5ZjRsNj4sC&pg=PA45 p. 45]}}<ref name="Senn 1997"/>
+
+The continuous seven-day cycle of the days of the week can be traced back to the reign of [[Augustus]]; the first identifiable date cited complete with [[day of the week]] is 6 February [[AD 60]], identified as a "[[Sunday]]" (as ''viii idus Februarius dies solis'' "eighth day before the ides of February, day of the Sun") in a Pompeiian graffito. According to the (contemporary) Julian calendar, 6 February 60 was, however, a [[Wednesday]]. This is explained by the existence of two conventions of naming days of the weeks based on the [[planetary hours]] system: 6 February was a "Sunday" based on the sunset naming convention, and a "Wednesday" based on the sunrise naming convention.<ref>''Nerone Caesare Augusto Cosso Lentulo Cossil fil. Cos. VIII idus Febr(u)arius dies solis, luna XIIIIX nun(dinae) Cumis, V (idus Februarias) nun(dinae) Pompeis''.<br/>{{cite book |author=Robert Hannah |chapter=Time in Written Spaces |editor1=Peter Keegan |editor2=Gareth Sears |editor3=Ray Laurence |title=Written Space in the Latin West, 200 BC to AD 300 |publisher=A&C Black |year=2013 |page=[https://books.google.com/books?id=PeVLAQAAQBAJ&pg=PA89 89]}}</ref>
+
+===Adoption in Asia===
+====China and Japan====
+The earliest known reference in Chinese writings to a seven-day week is attributed to Fan Ning, who lived in the late 4th century in the [[Jin Dynasty (265–420)|Jin Dynasty]], while diffusions from the [[Manichaeism|Manichaeans]] are documented with the writings of the Chinese Buddhist monk [[I Ching (monk)|Yi Jing]] and the Ceylonese or Central Asian Buddhist monk [[Amoghavajra|Bu Kong]] of the 7th century ([[Tang Dynasty]]).
+
+The Chinese variant of the planetary system was brought to Japan by the Japanese monk [[Kūkai]] (9th century). Surviving diaries of the Japanese statesman [[Fujiwara Michinaga]] show the seven-day system in use in [[Heian Period]] Japan as early as 1007. In Japan, the seven-day system was kept in use for astrological purposes until its promotion to a full-fledged Western-style calendrical basis during the [[Meiji Period]] (1868–1912).
+
+====India====
+The seven-day week was known in India by the 6th century, referenced in the [[Pancasiddhantika#Pancha-Siddhantika|Pañcasiddhāntikā]].{{Citation needed|date=April 2013}} Shashi (2000) mentions the [[Yuga Purana|Garga Samhita]], which he places in the 1st century BC or AD, as a possible earlier reference to a seven-day week in India. He concludes "the above references furnish a [[terminus ad quem]] (viz. 1st century) The [[terminus post quem|terminus a quo]] cannot be stated with certainty".<ref>{{cite book
+| last = Shashi
+| first = Shyam Singh
+| title = Encyclopaedia Indica India, Pakistan, Bangladesh Vol. 76 Major dynasties of ancient Orissa: India, Pakistan, Bangladesh
+| publisher = Anmol Publications PVT. LTD
+| year = 2000
+| pages = 114–115
+| url = https://books.google.com/books?id=nhYgnKipe-QC
+| isbn = 978-81-7041-859-7}}</ref><ref>{{cite book
+| author = Pandurang Vaman Kane
+| title = [[History of Dharmaśāstra]]
+| date = 1930–1962
+}}</ref>
+
+===Arabia===
+In Arabia, a similar seven-day week system was adopted, which may have been influenced by the Hebrew week (via Christianity). {{Citation needed|date=February 2019}}
+
+===Christian Europe===
+{{further|Holy Week|Easter Week}}
+The seven-day weekly cycle has remained unbroken in [[Christendom]], and hence in [[Western history]], for almost two millennia, despite changes to the [[Coptic calendar|Coptic]], [[Julian calendar|Julian]], and [[Gregorian calendar|Gregorian]] calendars, demonstrated by the date of [[Easter]] Sunday having been traced back through numerous [[computus|computistic tables]] to an Ethiopic copy of an early Alexandrian table beginning with the Easter of AD 311.<ref>{{cite book
+| last = Neugebauer
+| first = Otto
+| title = Ethiopic astronomy and computus
+| publisher = Verl. d. Österr. Akad. d. Wiss
+| year = 1979
+| isbn = 978-3-7001-0289-2}}
+</ref><ref>{{cite web |url=http://www.bbc.co.uk/religion/0/20394641 |author=Jayne Lutwyche |date=22 January 2013 |title=Why are there seven days in a week? |publisher=BBC |work=Religion & Ethics |quote=The Roman context of the spread of Christianity meant that Rome contributed a lot to the structure and calendar of the new faith}}</ref>
+
+A tradition of divinations arranged for the days of the week on which certain feast days occur develops in the Early Medieval period. There are many later variants of this, including the German ''Bauern-Praktik'' and the versions of ''Erra Pater'' published in 16th to 17th century England, mocked in [[Samuel Butler (poet)|Samuel Butler]]'s ''[[Hudibras]]''. South and East Slavic versions are known as ''koliadniki'' (from ''koliada'', a loan of Latin ''calendae''), with Bulgarian copies dating from the 13th century, and Serbian versions from the 14th century.<ref name="Ryan380">William Francis Ryan, ''The Bathhouse at Midnight: An Historical Survey of Magic and Divination in Russia'', Penn State Press, 1999
+[https://books.google.ch/books?id=S3qJMMYH6VYC&pg=PA380 p. 380].</ref>
+
+Medieval Christian traditions associated with the lucky or unlucky nature of certain days of the week survived into the modern period. This concerns primarily [[Friday]], associated with the [[crucifixion of Jesus]]. [[Sunday]], sometimes personified as [[Anastasia the Patrician|Saint Anastasia]], was itself an object of worship in Russia, a practice denounced in a sermon extant in copies going back to the 14th century.<ref name="Ryan383">William Francis Ryan, ''The Bathhouse at Midnight: An Historical Survey of Magic and Divination in Russia'', Penn State Press, 1999
+[https://books.google.ch/books?id=S3qJMMYH6VYC&pg=PA383 p. 383].</ref>
+
+[[Sunday]], in the ecclesiastical numbering system also counted as the ''feria prima'' or the first day of the week; yet, at the same time, figures as the "[[The eighth day (Christian)|eighth day]]", and has occasionally been so called in Christian liturgy.
+{{efn|1=This is just a reflection of the system of [[ordinal numbers]] in the Greek and Latin languages, where today is the "first" day, tomorrow the "second" day, etc. Compare the [[nundinal cycle]] (literally "nine-days" cycle, describing an [[eight-day week]]) of the Roman calendar, or the [[Resurrection of Jesus]] (after a period of less than 48 hours) being described (in texts derived from Latin) as happening on the "third day".}}
+
+[[Justin Martyr]] wrote: "the first day after the Sabbath, remaining the first of all the days, is called, however, the eighth, according to the number of all the days of the cycle, and [yet] remains the first."<ref>{{cite web |url=http://www.earlychristianwritings.com/text/justinmartyr-dialoguetrypho.html |author=Peter Kirby |title=Saint Justin Martyr: Dialogue with Trypho |website=Early Christian Writings}}</ref>
+
+A period of eight days, usually (but not always, mainly because of Christmas Day) starting and ending on a Sunday, is called an [[octave (liturgy)|octave]], particularly in [[Roman Catholic liturgy]]. In German, the phrase ''heute in acht Tagen'' (literally "today in eight days") means one week from today (i.e. on the same weekday). The same is true of the Italian phrase ''oggi otto'' (literally "today eight").
+
+==Week numbering==
+<!-- This section is linked from [[ISO 8601]] -->
+{{further|Leap week calendar}}
+Weeks in a Gregorian calendar year can be numbered for each year. This style of numbering is often used in European and Asian countries. It is less common in the U.S. and elsewhere.
+
+=== The ISO week date system ===
+{{More citations needed section|date=June 2020}}
+The system for numbering weeks is the [[ISO week date]] system, which is included in [[ISO 8601]]. This system dictates that each week begins on a Monday and is associated with the year that contains that week's Thursday. 
+
+==== Determining ''Week 1'' ====
+In practice week 1 (''W01'' in ISO notation) of any year can be determined as follows:
+
+* If January 1st falls on a Monday, Tuesday, Wednesday or Thursday, then the week of January 1st is Week 1.
+* If January 1st falls on a Friday, Saturday, or Sunday however, then January 1st is considered to be part of the last week of the ''previous'' year and Week 1 will begin on the first Monday after January 1st.
+
+Examples:
+
+* Week 1 of 2015 (''2015W01'' in ISO notation) started on Monday, 29 December 2014 and ended on Sunday, 4 January 2015, because 1 January 2015 fell on Thursday.
+* Week 1 of 2016 (''2016W01'' in ISO notation) started on Monday, 4 January 2016 and ended on Sunday, 10 January 2016, because 1 January 2016 fell on Friday.
+
+==== Week 52 and 53 ====
+It is also possible to determine if the last week of the previous year was Week 52 or Week 53 as follows: 
+
+* If January 1st falls on a Friday, then it is part of Week 53 of the previous year. 
+* If January 1st falls on a Saturday, then it is Week 52 in a common year, but Week 53 in a [[leap year]]. 
+* If January 1st falls on a Sunday, then it is part of Week 52 of the previous year.
+
+==== Schematic representation of [[ISO week date]] ====
+{| class="wikitable"
+|+ [[Dominical letter]](s) plus weekdays, dates and week numbers at the beginning and end of a year
+|- valign=bottom
+! rowspan=2 | Dominical<br>letter(s)<sup>1</sup>
+! colspan=7 | Days at the beginning of January
+! colspan=4 | Effect<sup>1,2</sup>
+! colspan=7 | Days at the end of December<sup>1</sup>
+|- valign=bottom
+! 1<br>Mon || 2<br>Tue || 3<br>Wed ||4<br>Thu || 5<br>Fri || 6<br>Sat || 7<br>Sun
+! {{nobr|W01-1<sup>3</sup> !! 01 Jan week !! … !! 31 Dec week
+! &emsp;&ensp;1<sup>4</sup><br>Mon || 2<br>Tue || 3<br> Wed || 4<br>Thu || 5<br>Fri || 6<br>Sat || 7<br>Sun
+|- align=center
+! G(F)
+| 01 || 02 || 03 || 04 || 05 || 06 || 07
+| 01 Jan || W01 || … || <u>W01</u>
+| 31 (30) || align=right valign=bottom | (31) ||  ||  ||  ||  ||
+|- align=center
+! F(E)
+|  || 01 || 02 || 03 || 04 || 05 || 06
+| <u>31 Dec</u> || W01 || … || <u>W01</u>
+| 30 (29) || 31 (30) || align=right valign=bottom | (31) ||  ||  ||  ||
+|- align=center
+! E(D)
+|  ||  || 01 || 02 || 03 || 04 || 05
+| <u>30 Dec</u> || W01 || … || title="W53 when ending year is leap, W01 otherwise." | <u>W01</u> (W53)
+| 29 (28) || 30 (29) || 31 (30) || align=right valign=bottom | (31) ||  ||  ||
+|- align=center
+! D(C)
+|  ||  ||  || 01 || 02 || 03 || 04
+| <u>29 Dec</u> || W01 || … || W53
+| 28 (27) || 29 (28) || 30 (29) || 31 (30) || align=right valign=bottom | (31) ||  ||
+|- align=center
+! C(B)
+|  ||  ||  ||  || 01 || 02 || 03
+| 04 Jan || <u>W53</u> || … || W52
+| 27 (26) || 28 (27) || 29 (28) || 30 (29) || 31 (30) || align=right valign=bottom | (31) ||
+|- align=center
+! B(A)
+|  ||  ||  ||  ||  || 01 || 02
+| 03 Jan || title="W53 when ending year is leap, W52 otherwise." | (<u>W53</u>) <u>W52</u> || … || W52
+| 26 (25) || 27 (26) || 28 (27) || 29 (28) || 30 (29) || 31 (30) || style="width:7ex" align=right valign=bottom | (31)
+|- align=center
+! A(G)
+|  || || || || || || 01
+| 02 Jan || <u>W52</u> || … || title="31 December is in W01 only if it is in a leap year."| W52 (<u>W01</u>)
+| 25 (31) || align=left valign=top | 26 || align=left valign=top | 27 || align=left valign=top | 28 || align=left valign=top | 29 || align=left valign=top | 30 || align=left valign=top | 31
+|}
+'''Notes'''<br />
+1. Parts in parentheses only apply when the year is a leap year.<br />
+2. <u>Underligned</u> parts belong to previous year or next year.<br />
+3. First date of the '''first''' week in the year.<br />
+4. First date of the '''last''' week in the year.<br />
+
+In some countries, though, the numbering system is different from the ISO standard. At least six numberings are in use:<ref>{{cite web |url=http://www.pjh2.de/datetime/weeknumber/wnd.php?l=en |title=Weeknumber sorted by definition |author=Peter Johann Haas |date=26 January 2002 |website=pjh2.de}}</ref><ref>{{cite web |url=http://www.merlyn.demon.co.uk/weekinfo.htm |title=Calendar Weeks |publisher=J. R. Stockton |url-status=usurped |archive-url=https://web.archive.org/web/20140113000828/http://www.merlyn.demon.co.uk/weekinfo.htm |archive-date=2014-01-13}}</ref> {{Dubious|date=October 2015}}
+
+{|class="wikitable"
+! System
+! First day<br/>of week
+!colspan="3"| First week of year contains
+!Can be last week<br/>of previous year
+! Used by or in
+|-
+| ISO-8601 || [[Monday]] || {{nowrap|4 January}} || {{nowrap|1st Thursday}} || {{nowrap|4–7 days of year}} || align=center | yes || EU and most of other European countries, most of Asia and Oceania
+|-
+|- 
+| (Middle Eastern) || [[Saturday]] || {{nowrap|1 January}} || {{nowrap|1st Friday}} || {{nowrap|1–7 days of year}} || align=center | yes || Much of the Middle East
+|-
+|-
+| (Western traditional)|| [[Sunday]] || {{nowrap|1 January}} || {{nowrap|1st Saturday}} || {{nowrap|1–7 days of year}} || align=center | yes || Canada, United States, Japan, Taiwan, Thailand, Hong Kong, Macau, Israel, Egypt, South Africa, the Philippines, and most of Latin America
+|}
+
+The [[semiconductor package#Date code|semiconductor package date code]] is often a 4 digit date code YYWW where the first two digits YY are the last 2 digits of the calendar year and the last two digits WW are the two-digit week number.<ref>{{cite web |publisher=Texas Instrument |url=http://focus.ti.com/quality/docs/gencontent.tsp?templateId=5909&navigationId=12626&contentId=153966 |title=Quality & Lead-free (Pb-free): Marking Convention |url-status=dead |archive-url=https://web.archive.org/web/20140405090712/http://focus.ti.com/quality/docs/gencontent.tsp?templateId=5909&navigationId=12626&contentId=153966 |archive-date=2014-04-05}}</ref><ref>{{cite web |publisher=Fairchild Semiconductor |url=http://www.fairchildsemi.com/support/packaging/topmark/dateCode4/ |title=Top Mark Convention – 4-Digit Date Code |url-status=dead |archive-url=https://web.archive.org/web/20140714111530/http://www.fairchildsemi.com/support/packaging/topmark/dateCode4/ |archive-date=2014-07-14}}</ref>
+
+The [[tire#DOT code|tire date code mandated by the US DOT]] is a 4 digit date code WWYY with two digits of the week number WW followed by the last two digits of the calendar year YY.<ref>{{cite web |url=https://www.law.cornell.edu/cfr/text/49/574.5 |title=49 CFR 574.5 – Tire identification requirements |website=Legal Information Institute}}</ref>
+
+=="Weeks" in other calendars==
+The term "week" is sometimes expanded to refer to other time units comprising a few days. Such "weeks" of between four and ten days have been used historically in various places.<ref>[[OED]] s.v. "week ''n.''", entry 1.c.: "Sometimes applied ''transf.'' to other artificial cycles of a few days that have been employed various peoples"</ref> Intervals longer than 10 days are not usually termed "weeks" as they are closer in length to the [[fortnight]] or the [[month]] than to the seven-day week.
+
+===Pre-modern calendars===
+Calendars unrelated to the Chaldean, Hellenistic, Christian, or Jewish traditions often have time cycles between the day and the month of varying lengths, sometimes also called "weeks".
+
+An [[eight-day week]] was used in [[Roman calendar#Nundinal cycle|Ancient Rome]] and possibly in the pre-Christian [[Celtic calendar]]. Traces of a [[nine-day week (disambiguation)|nine-day week]] are found in Baltic languages and in [[Welsh language|Welsh]]. The ancient Chinese calendar had a [[Chinese ten-day week|ten-day week]], as did the ancient [[Egyptian calendar]] (and, incidentally, the [[French Republican Calendar]], dividing its 30-day months into thirds).
+
+A six-day week is found in the [[Akan Calendar]]. Several cultures used a five-day week, including the 10th century [[Icelandic calendar]], the [[Javanese calendar]], and the traditional cycle of market days in [[Korean culture|Korea]].{{Citation needed|date=July 2015}} The [[Igbo Culture#Calendar (Iguafo Igbo)|Igbo]] have a "market week" of four days. Evidence of a "three-day week" has been derived from the names of the days of the week in [[Guipuscoan Basque]].<ref name="Knorr">''[http://dialnet.unirioja.es/servlet/fichero_articulo?articulo=26362&orden=59718 Astronomy and Basque Language]'', [[Henrike Knörr]], ''Oxford VI and SEAC 99 "Astronomy and Cultural Diversity"'', [[San Cristóbal de La Laguna|La Laguna]], June 1999. It references [[Alessandro Bausani]], 1982, ''The prehistoric Basque week of three days: archaeoastronomical notes'', ''The Bulletin of the [[Center for Archaeoastronomy]]'' (Maryland), v. 2, 16–22.
+1. ''astelehena'' ("week-first", Monday), 2. ''asteartea'' ("week-between", Tuesday), 3. ''asteazkena'' ("week-last", Wednesday).</ref>
+
+The Aztecs and Mayas used the [[Mesoamerican calendars]]. The most important of these calendars divided a ritual cycle of 260 days (known as ''[[Tonalpohualli]]'' in [[Nahuatl]] and ''[[Tzolk'in]]'' in [[Yucatec Maya]]) into 20 weeks of 13 days (known in Spanish as [[trecena]]s). They also divided the solar year into 18 periods (''winal'') of 20 days and five nameless days (''wayebʼ''), creating a 20-day month divided into four five-day weeks. The end of each five-day week was a market day.{{sfnp|Zerubavel|1989|loc=[https://books.google.com/books?id=Cd5ZjRsNj4sC&pg=PA50 pp. 50–54]}}<ref>{{cite web |url=http://www.aztec-history.com/aztec-calendar-stone.html |title=Aztec calendar stone |website=aztec-history.com}}</ref>
+
+The Balinese [[Pawukon]] is a 210-day calendar consisting of 10 different simultaneously running weeks of 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10 days, of which the weeks of 4, 8, and 9 days are interrupted to fit into the 210-day cycle.
+
+===Modern calendar reforms===
+{{Further|Decimal calendar|French Revolutionary Calendar#Ten days of the week|Bahá'í calendar|International Fixed Calendar|Soviet calendar}}
+A 10-day week, called ''décade'', was used in France for nine and a half years from October 1793 to April 1802; furthermore, the [[Paris Commune]] adopted the Revolutionary Calendar for 18 days in 1871.
+
+The Bahá'í calendar features a 19-day period which some classify as a month and others classify as a week.<ref>{{cite book |title=The Seven-Day Circle |last=Zerubavel |first=Eviatar |publisher=The Free Press |year=1985 |isbn=0029346800 |location=New York |pages=[https://archive.org/details/sevendaycircleth00zeru/page/48 48–50] |author-link=Eviatar Zerubavel |url=https://archive.org/details/sevendaycircleth00zeru/page/48 }}</ref>
+
+The [[International Fixed Calendar]] (also known as the "Eastman plan") fixed every date always on the same weekday. This plan kept a 7-day week while defining a year of 13 months with 28 days each. It was the official calendar of the [[Eastman Kodak Company]] for decades.
+
+{{Multiple image
+| align = right
+| direction = horizontal
+| width = 150
+| image1   = Soviet calendar 1930 color.jpg
+| caption1 = Soviet calendar, 1930.<br/>Five colors of five-day work week repeat.
+| image2   = Soviet calendar 1933 color.jpg
+| caption2 = Soviet calendar, 1933.<br/>Rest day of six-day work week in blue.
+| footer   = Days of each Gregorian month in both calendars are grouped vertically into seven-day weeks.
+}}
+In the [[Soviet Union]] between 1929 and 1940, most factory and enterprise workers, but not collective farm workers, used five- and six-day work weeks while the country as a whole continued to use the traditional seven-day week.<ref name=Foss>{{cite journal |first=Clive |last=Foss |title=Stalin's topsy-turvy work week |journal=History Today |volume=54 |issue=9 |date=September 2004 |pages=46–47}}</ref><ref name=Russie>{{cite web |website=iCalendrier |url=http://icalendrier.fr/calendriers-saga/etudes-thematiques/reforme-gregorienne#russie |title=La réforme en Russie: il faudra attendre… plus de trois siècles |language=fr |trans-title=The reform in Russia: it will be necessary to wait… more than three centuries}}</ref><ref name=Zerubavel>{{cite book |author-link=Eviatar Zerubavel |last=Zerubavel |first=Eviatar |chapter=The Soviet five-day ''Nepreryvka'' |title=The Seven Day Circle |isbn=0029346800 |location=New York |publisher=Free Press |year=1985 |pages=[https://archive.org/details/sevendaycircleth00zeru/page/35 35–43] |chapter-url=https://archive.org/details/sevendaycircleth00zeru/page/35 }}</ref> From 1929 to 1951, five national holidays were days of rest ({{nowrap|22 January}}, {{nowrap|1–2 May}}, {{nowrap|7–8 November}}). From autumn 1929 to summer 1931, the remaining 360 days of the year were subdivided into 72 five-day work weeks beginning on {{nowrap|1 January}}. Workers were assigned any one of the five days as their day off, even if their spouse or friends might be assigned a different day off. Peak usage of the five-day work week occurred on {{nowrap|1 October 1930}} at 72% of industrial workers. From summer 1931 until {{nowrap|26 June 1940}}, each Gregorian month was subdivided into five six-day work weeks, more-or-less, beginning with the first day of each month. The sixth day of each six-day work week was a uniform day of rest. On {{nowrap|1 July 1935}} 74.2% of industrial workers were on non-continuous schedules, mostly six-day work weeks, while 25.8% were still on continuous schedules, mostly five-day work weeks. The Gregorian calendar with its irregular month lengths and the traditional seven-day week were used in the Soviet Union during its entire existence, including 1929–1940; for example, in the masthead of [[Pravda]], the official Communist newspaper, and in both Soviet calendars displayed here. The traditional names of the seven-day week continued to be used, including "Resurrection" (Воскресенье) for Sunday and "Sabbath" (Суббота) for Saturday, despite the government's [[Marxist–Leninist atheism|official]] [[state atheism|atheism]].
+
+==See also==
+{{Commons}}
+*[[Names of the days of the week]]
+*[[Workweek and weekend]]
+
+==Notes==
+{{Notelist}}
+
+==References==
+{{Reflist}}
+*{{cite book |last=Zerubavel |first=Eviatar |title=The Seven Day Circle: The History and Meaning of the Week |date=1989 |url=https://books.google.com/books?id=Cd5ZjRsNj4sC |publisher=University of Chicago Press |isbn=978-0-226-98165-9}}
+
+==Further reading==
+*{{cite book
+| last = Colson
+| first = Francis Henry
+| title = The Week: An Essay on the Origin and Development of the Seven-day Cycle
+| publisher = Cambridge University Press
+| year = 1926
+| oclc = 59110177}}
+*{{cite EB1911|wstitle=week}}
+
+{{Time topics}}
+{{Time measurement and standards}}
+
+{{Authority control}}
+
+[[Category:Weeks| ]]
+[[Category:Units of time]]

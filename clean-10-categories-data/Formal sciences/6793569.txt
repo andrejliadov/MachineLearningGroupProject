@@ -1,0 +1,22 @@
+'''Align-m''' is a [[multiple sequence alignment]] program written by Ivo Van Walle.
+
+Align-m has the ability to accomplish the following tasks:
+* multiple sequence alignment,
+* include extra information to guide the sequence alignment,
+* multiple [[structural alignment]],
+* [[homology modeling]] by (iteratively) combining sequence and structure alignment data,
+* 'filtering' of [[BLAST]] or other pairwise alignments,
+* combining many alignments into one [[consensus sequence]],
+* multiple genome alignment (can cope with rearrangements).
+
+== See also ==
+* [[Sequence alignment software]]
+* [[Clustal]]
+
+== External links ==
+* [http://bioinformatics.vub.ac.be/software/software.html Official website]
+
+
+{{bioinformatics-stub}}
+[[Category:Bioinformatics]]
+[[Category:Computational_phylogenetics]]

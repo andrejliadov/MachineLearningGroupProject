@@ -1,0 +1,241 @@
+{{short description|Branch of metaphysics regarding abstract objects}}
+{{Distinguish|Object theory}}
+{{For|the general concept of objecthood in philosophy|Object (philosophy)}}
+{{Use mdy dates|date=April 2013}}
+'''Abstract object theory''' ('''AOT''') is a branch of [[metaphysics]] regarding [[abstract object]]s.<ref>{{cite web |url= http://mally.stanford.edu/theory.html|title= The Theory of Abstract Objects |last1=Zalta |first1=Edward N. |date=2004 |publisher=The Metaphysics Research Lab, Center for the Study of Language and Information, Stanford University|accessdate=July 18, 2020}}</ref> Originally devised by metaphysician [[Edward Zalta]] in 1981,<ref name=thesis>{{cite web|url=https://scholarworks.umass.edu/dissertations_1/2187/|title=An Introduction to a Theory of Abstract Objects (1981)|publisher=ScholarWorks@[[UMass Amherst]]|date=2009|accessdate=July 21, 2020}}</ref> the theory was an expansion of [[mathematical Platonism]].
+
+==Overview<!--'Computational metaphysics' and 'Axiomatic metaphysics' redirect here-->==
+{{also|Dual copula strategy}}
+''Abstract Objects: An Introduction to Axiomatic Metaphysics'' (1983) is the title of a publication by Edward Zalta that outlines abstract object theory.
+
+AOT is a [[dual predication approach]] (also known as "dual copula strategy") to abstract objects<ref name=SEP>{{cite SEP |url-id=nonexistent-objects |title=Nonexistent Objects |first=Maria |last=Reicher |date=2014 }}</ref><ref name=Jacquette>Dale Jacquette, ''Meinongian Logic: The Semantics of Existence and Nonexistence'', Walter de Gruyter, 1996, p. 17.</ref> influenced by the contributions of [[Alexius Meinong]]<ref>[[Alexius Meinong]], "Über Gegenstandstheorie" ("The Theory of Objects"), in Alexius Meinong, ed. (1904). [https://archive.org/details/untersuchungenzu00mein ''Untersuchungen zur Gegenstandstheorie und Psychologie''] (''Investigations in Theory of Objects and Psychology''), Leipzig: Barth, pp. 1–51.</ref><ref name=:0>Zalta (1983:xi).</ref> and his student [[Ernst Mally]].<ref>[[Ernst Mally]] (1912), ''Gegenstandstheoretische Grundlagen der Logik und Logistik (Object-theoretic Foundations for Logics and Logistics)'', Leipzig: Barth, [https://mally.stanford.edu/mally-book/ObjectTheoreticFoundationsOfLogic2.pdf §§33 and 39].</ref><ref name=:0/> On Zalta's account, there are two modes of [[Predicate (mathematical logic)|predication]]: some objects (the ordinary [[Abstract and concrete|concrete]] ones around us, like tables and chairs) ''exemplify'' properties, while others (abstract objects like numbers, and what others would call "[[non-existent object]]s", like the [[Round square copula|round square]], and the mountain made entirely of gold) merely ''encode'' them.<ref>Zalta (1983:33).</ref> While the objects that exemplify properties are discovered through traditional empirical means, a simple set of axioms allows us to know about objects that encode properties.<ref>Zalta (1983:36).</ref> For every set of properties, there is exactly one object that encodes exactly that set of properties and no others.<ref>Zalta (1983:35).</ref> This allows for a [[Formal system|formalized]] [[ontology]].
+
+A notable feature of AOT is that Romane Clark's paradox (a paradox in naive predication theory undermining the earliest version of [[Héctor-Neri Castañeda]]'s [[guise theory]])<ref>Romane Clark, "Not Every Object of Thought has Being: A Paradox in Naive Predication Theory", ''Noûs'', '''12'''(2) (1978), pp. 181–188.</ref><ref>[[William J. Rapaport]], "Meinongian Theories and a Russellian Paradox", ''Noûs'', '''12'''(2) (1978), pp. 153–80.</ref><ref>Adriano Palma, ed. (2014). [https://books.google.com/books?id=iYHoBQAAQBAJ&dq= ''Castañeda and his Guises: Essays on the Work of Hector-Neri Castañeda'']. Boston/Berlin: Walter de Gruyter, pp. 67–82, esp. 72.</ref> and Alan McMichael's paradox (another paradox in naive predication theory)<ref>Alan McMichael and Edward N. Zalta, [https://link.springer.com/article/10.1007%2FBF00248396 "An Alternative Theory of Nonexistent Objects"], ''Journal of Philosophical Logic'', '''9''' (1980): 297–313, esp. 313 n. 15.</ref> do not arise within it (AOT employs [[Range of quantification|restricted]] [[abstraction]] [[Axiom schema|schemata]] to avoid these paradoxes).<ref>Zalta (1983:158).</ref>
+
+In 2007, Zalta and Branden Fitelson have introduced the term '''computational metaphysics'''<!--boldface per WP:R#PLA--> to describe the implementation and investigation of formal, '''axiomatic metaphysics'''<!--boldface per WP:R#PLA--> in an [[automated reasoning]] environment.<ref>Edward N. Zalta and Branden Fitelson, [https://mally.stanford.edu/Papers/computation.pdf "Steps Toward a Computational Metaphysics"], ''Journal of Philosophical Logic'' '''36'''(2) (April 2007): 227–247.</ref><ref>Jesse Alama, Paul E. Oppenheimer, [[Edward N. Zalta]], [https://mally.stanford.edu/Papers/cade.pdf "Automating Leibniz's Theory of Concepts"], in A. Felty and A. Middeldorp (eds.), ''Automated Deduction – CADE 25: Proceedings of the 25th International Conference on Automated Deduction'' (Lecture Notes in Artificial Intelligence: Volume 9195), Berlin: Springer, 2015, pp. 73–97.</ref>
+
+==See also==
+{{cols|colwidth=21em}}
+* [[Abstract and concrete]]
+* [[Abstract particulars]]
+* [[Abstractionism (philosophy of mathematics)]]
+* [[Algebra of concepts]]
+* [[Mathematical universe hypothesis]]
+* [[Modal Meinongianism]]
+* [[Modal neo-logicism]]
+* [[Object of the mind]]
+{{colend}}
+
+==Notes==
+{{cols|colwidth=21em}}
+{{reflist}}
+{{colend}}
+
+==References==
+* Edward N. Zalta, [https://mally.stanford.edu/abstract-objects.pdf ''Abstract Objects: An Introduction to Axiomatic Metaphysics''], Dordrecht: D. Reidel, 1983.
+* Edward N. Zalta, [https://mally.stanford.edu/intensional-logic.pdf ''Intensional Logic and the Metaphysics of Intentionality''], Cambridge, MA: The MIT Press/Bradford Books, 1988.
+* Edward N. Zalta, [http://doors.stanford.edu/principia-1999-02-10.pdf "Principia Metaphysica"], Center for the Study of Language and Information, Stanford University, 1999.
+
+==Further reading==
+* Edward N. Zalta, [https://mally.stanford.edu/Papers/typed-object-theory.pdf "Typed Object Theory"], in José L. Falguera and Concha Martínez-Vidal (eds.), ''Abstract Objects: For and Against'', Springer (Synthese Library), 2020.
+* Daniel Kirchner, Christoph Benzmüller, Edward N. Zalta, [https://mally.stanford.edu/Papers/mechanizing-principia.pdf "Mechanizing ''Principia Logico-Metaphysica'' in Functional Type Theory"], ''Review of Symbolic Logic'' '''13'''(1) (March 2020): 206–18.
+
+{{Metaphysics}}
+
+[[Category:Abstract object theory| ]]
+[[Category:Abstraction]]
+[[Category:Concepts in epistemology]]
+[[Category:Concepts in metaphysics]]
+[[Category:Concepts in the philosophy of science]]
+[[Category:Epistemology]]
+[[Category:History of philosophy]]
+[[Category:History of science]]
+[[Category:Metaphysical theories]]
+[[Category:Metaphysics]]
+[[Category:Ontology]]
+[[Category:Philosophical concepts]]
+[[Category:Philosophical theories]]
+[[Category:Philosophy of physics]]
+[[Category:Philosophy of science]]
+[[Category:Platonism]]
+[[Category:Reality]]{{short description|Branch of metaphysics regarding abstract objects}}
+{{Distinguish|Object theory}}
+{{For|the general concept of objecthood in philosophy|Object (philosophy)}}
+{{Use mdy dates|date=April 2013}}
+'''Abstract object theory''' ('''AOT''') is a branch of [[metaphysics]] regarding [[abstract object]]s.<ref>{{cite web |url= http://mally.stanford.edu/theory.html|title= The Theory of Abstract Objects |last1=Zalta |first1=Edward N. |date=2004 |publisher=The Metaphysics Research Lab, Center for the Study of Language and Information, Stanford University|accessdate=July 18, 2020}}</ref> Originally devised by metaphysician [[Edward Zalta]] in 1981,<ref name=thesis>{{cite web|url=https://scholarworks.umass.edu/dissertations_1/2187/|title=An Introduction to a Theory of Abstract Objects (1981)|publisher=ScholarWorks@[[UMass Amherst]]|date=2009|accessdate=July 21, 2020}}</ref> the theory was an expansion of [[mathematical Platonism]].
+
+==Overview<!--'Computational metaphysics' and 'Axiomatic metaphysics' redirect here-->==
+{{also|Dual copula strategy}}
+''Abstract Objects: An Introduction to Axiomatic Metaphysics'' (1983) is the title of a publication by Edward Zalta that outlines abstract object theory.
+
+AOT is a [[dual predication approach]] (also known as "dual copula strategy") to abstract objects<ref name=SEP>{{cite SEP |url-id=nonexistent-objects |title=Nonexistent Objects |first=Maria |last=Reicher |date=2014 }}</ref><ref name=Jacquette>Dale Jacquette, ''Meinongian Logic: The Semantics of Existence and Nonexistence'', Walter de Gruyter, 1996, p. 17.</ref> influenced by the contributions of [[Alexius Meinong]]<ref>[[Alexius Meinong]], "Über Gegenstandstheorie" ("The Theory of Objects"), in Alexius Meinong, ed. (1904). [https://archive.org/details/untersuchungenzu00mein ''Untersuchungen zur Gegenstandstheorie und Psychologie''] (''Investigations in Theory of Objects and Psychology''), Leipzig: Barth, pp. 1–51.</ref><ref name=:0>Zalta (1983:xi).</ref> and his student [[Ernst Mally]].<ref>[[Ernst Mally]] (1912), ''Gegenstandstheoretische Grundlagen der Logik und Logistik (Object-theoretic Foundations for Logics and Logistics)'', Leipzig: Barth, [https://mally.stanford.edu/mally-book/ObjectTheoreticFoundationsOfLogic2.pdf §§33 and 39].</ref><ref name=:0/> On Zalta's account, there are two modes of [[Predicate (mathematical logic)|predication]]: some objects (the ordinary [[Abstract and concrete|concrete]] ones around us, like tables and chairs) ''exemplify'' properties, while others (abstract objects like numbers, and what others would call "[[non-existent object]]s", like the [[Round square copula|round square]], and the mountain made entirely of gold) merely ''encode'' them.<ref>Zalta (1983:33).</ref> While the objects that exemplify properties are discovered through traditional empirical means, a simple set of axioms allows us to know about objects that encode properties.<ref>Zalta (1983:36).</ref> For every set of properties, there is exactly one object that encodes exactly that set of properties and no others.<ref>Zalta (1983:35).</ref> This allows for a [[Formal system|formalized]] [[ontology]].
+
+A notable feature of AOT is that Romane Clark's paradox (a paradox in naive predication theory undermining the earliest version of [[Héctor-Neri Castañeda]]'s [[guise theory]])<ref>Romane Clark, "Not Every Object of Thought has Being: A Paradox in Naive Predication Theory", ''Noûs'', '''12'''(2) (1978), pp. 181–188.</ref><ref>[[William J. Rapaport]], "Meinongian Theories and a Russellian Paradox", ''Noûs'', '''12'''(2) (1978), pp. 153–80.</ref><ref>Adriano Palma, ed. (2014). [https://books.google.com/books?id=iYHoBQAAQBAJ&dq= ''Castañeda and his Guises: Essays on the Work of Hector-Neri Castañeda'']. Boston/Berlin: Walter de Gruyter, pp. 67–82, esp. 72.</ref> and Alan McMichael's paradox (another paradox in naive predication theory)<ref>Alan McMichael and Edward N. Zalta, [https://link.springer.com/article/10.1007%2FBF00248396 "An Alternative Theory of Nonexistent Objects"], ''Journal of Philosophical Logic'', '''9''' (1980): 297–313, esp. 313 n. 15.</ref> do not arise within it (AOT employs [[Range of quantification|restricted]] [[abstraction]] [[Axiom schema|schemata]] to avoid these paradoxes).<ref>Zalta (1983:158).</ref>
+
+In 2007, Zalta and Branden Fitelson have introduced the term '''computational metaphysics'''<!--boldface per WP:R#PLA--> to describe the implementation and investigation of formal, '''axiomatic metaphysics'''<!--boldface per WP:R#PLA--> in an [[automated reasoning]] environment.<ref>Edward N. Zalta and Branden Fitelson, [https://mally.stanford.edu/Papers/computation.pdf "Steps Toward a Computational Metaphysics"], ''Journal of Philosophical Logic'' '''36'''(2) (April 2007): 227–247.</ref><ref>Jesse Alama, Paul E. Oppenheimer, [[Edward N. Zalta]], [https://mally.stanford.edu/Papers/cade.pdf "Automating Leibniz's Theory of Concepts"], in A. Felty and A. Middeldorp (eds.), ''Automated Deduction – CADE 25: Proceedings of the 25th International Conference on Automated Deduction'' (Lecture Notes in Artificial Intelligence: Volume 9195), Berlin: Springer, 2015, pp. 73–97.</ref>
+
+==See also==
+{{cols|colwidth=21em}}
+* [[Abstract and concrete]]
+* [[Abstract particulars]]
+* [[Abstractionism (philosophy of mathematics)]]
+* [[Algebra of concepts]]
+* [[Mathematical universe hypothesis]]
+* [[Modal Meinongianism]]
+* [[Modal neo-logicism]]
+* [[Object of the mind]]
+{{colend}}
+
+==Notes==
+{{cols|colwidth=21em}}
+{{reflist}}
+{{colend}}
+
+==References==
+* Edward N. Zalta, [https://mally.stanford.edu/abstract-objects.pdf ''Abstract Objects: An Introduction to Axiomatic Metaphysics''], Dordrecht: D. Reidel, 1983.
+* Edward N. Zalta, [https://mally.stanford.edu/intensional-logic.pdf ''Intensional Logic and the Metaphysics of Intentionality''], Cambridge, MA: The MIT Press/Bradford Books, 1988.
+* Edward N. Zalta, [http://doors.stanford.edu/principia-1999-02-10.pdf "Principia Metaphysica"], Center for the Study of Language and Information, Stanford University, 1999.
+
+==Further reading==
+* Edward N. Zalta, [https://mally.stanford.edu/Papers/typed-object-theory.pdf "Typed Object Theory"], in José L. Falguera and Concha Martínez-Vidal (eds.), ''Abstract Objects: For and Against'', Springer (Synthese Library), 2020.
+* Daniel Kirchner, Christoph Benzmüller, Edward N. Zalta, [https://mally.stanford.edu/Papers/mechanizing-principia.pdf "Mechanizing ''Principia Logico-Metaphysica'' in Functional Type Theory"], ''Review of Symbolic Logic'' '''13'''(1) (March 2020): 206–18.
+
+{{Metaphysics}}
+
+[[Category:Abstract object theory| ]]
+[[Category:Abstraction]]
+[[Category:Concepts in epistemology]]
+[[Category:Concepts in metaphysics]]
+[[Category:Concepts in the philosophy of science]]
+[[Category:Epistemology]]
+[[Category:History of philosophy]]
+[[Category:History of science]]
+[[Category:Metaphysical theories]]
+[[Category:Metaphysics]]
+[[Category:Ontology]]
+[[Category:Philosophical concepts]]
+[[Category:Philosophical theories]]
+[[Category:Philosophy of physics]]
+[[Category:Philosophy of science]]
+[[Category:Platonism]]
+[[Category:Reality]]{{short description|Branch of metaphysics regarding abstract objects}}
+{{Distinguish|Object theory}}
+{{For|the general concept of objecthood in philosophy|Object (philosophy)}}
+{{Use mdy dates|date=April 2013}}
+'''Abstract object theory''' ('''AOT''') is a branch of [[metaphysics]] regarding [[abstract object]]s.<ref>{{cite web |url= http://mally.stanford.edu/theory.html|title= The Theory of Abstract Objects |last1=Zalta |first1=Edward N. |date=2004 |publisher=The Metaphysics Research Lab, Center for the Study of Language and Information, Stanford University|accessdate=July 18, 2020}}</ref> Originally devised by metaphysician [[Edward Zalta]] in 1981,<ref name=thesis>{{cite web|url=https://scholarworks.umass.edu/dissertations_1/2187/|title=An Introduction to a Theory of Abstract Objects (1981)|publisher=ScholarWorks@[[UMass Amherst]]|date=2009|accessdate=July 21, 2020}}</ref> the theory was an expansion of [[mathematical Platonism]].
+
+==Overview<!--'Computational metaphysics' and 'Axiomatic metaphysics' redirect here-->==
+{{also|Dual copula strategy}}
+''Abstract Objects: An Introduction to Axiomatic Metaphysics'' (1983) is the title of a publication by Edward Zalta that outlines abstract object theory.
+
+AOT is a [[dual predication approach]] (also known as "dual copula strategy") to abstract objects<ref name=SEP>{{cite SEP |url-id=nonexistent-objects |title=Nonexistent Objects |first=Maria |last=Reicher |date=2014 }}</ref><ref name=Jacquette>Dale Jacquette, ''Meinongian Logic: The Semantics of Existence and Nonexistence'', Walter de Gruyter, 1996, p. 17.</ref> influenced by the contributions of [[Alexius Meinong]]<ref>[[Alexius Meinong]], "Über Gegenstandstheorie" ("The Theory of Objects"), in Alexius Meinong, ed. (1904). [https://archive.org/details/untersuchungenzu00mein ''Untersuchungen zur Gegenstandstheorie und Psychologie''] (''Investigations in Theory of Objects and Psychology''), Leipzig: Barth, pp. 1–51.</ref><ref name=:0>Zalta (1983:xi).</ref> and his student [[Ernst Mally]].<ref>[[Ernst Mally]] (1912), ''Gegenstandstheoretische Grundlagen der Logik und Logistik (Object-theoretic Foundations for Logics and Logistics)'', Leipzig: Barth, [https://mally.stanford.edu/mally-book/ObjectTheoreticFoundationsOfLogic2.pdf §§33 and 39].</ref><ref name=:0/> On Zalta's account, there are two modes of [[Predicate (mathematical logic)|predication]]: some objects (the ordinary [[Abstract and concrete|concrete]] ones around us, like tables and chairs) ''exemplify'' properties, while others (abstract objects like numbers, and what others would call "[[non-existent object]]s", like the [[Round square copula|round square]], and the mountain made entirely of gold) merely ''encode'' them.<ref>Zalta (1983:33).</ref> While the objects that exemplify properties are discovered through traditional empirical means, a simple set of axioms allows us to know about objects that encode properties.<ref>Zalta (1983:36).</ref> For every set of properties, there is exactly one object that encodes exactly that set of properties and no others.<ref>Zalta (1983:35).</ref> This allows for a [[Formal system|formalized]] [[ontology]].
+
+A notable feature of AOT is that Romane Clark's paradox (a paradox in naive predication theory undermining the earliest version of [[Héctor-Neri Castañeda]]'s [[guise theory]])<ref>Romane Clark, "Not Every Object of Thought has Being: A Paradox in Naive Predication Theory", ''Noûs'', '''12'''(2) (1978), pp. 181–188.</ref><ref>[[William J. Rapaport]], "Meinongian Theories and a Russellian Paradox", ''Noûs'', '''12'''(2) (1978), pp. 153–80.</ref><ref>Adriano Palma, ed. (2014). [https://books.google.com/books?id=iYHoBQAAQBAJ&dq= ''Castañeda and his Guises: Essays on the Work of Hector-Neri Castañeda'']. Boston/Berlin: Walter de Gruyter, pp. 67–82, esp. 72.</ref> and Alan McMichael's paradox (another paradox in naive predication theory)<ref>Alan McMichael and Edward N. Zalta, [https://link.springer.com/article/10.1007%2FBF00248396 "An Alternative Theory of Nonexistent Objects"], ''Journal of Philosophical Logic'', '''9''' (1980): 297–313, esp. 313 n. 15.</ref> do not arise within it (AOT employs [[Range of quantification|restricted]] [[abstraction]] [[Axiom schema|schemata]] to avoid these paradoxes).<ref>Zalta (1983:158).</ref>
+
+In 2007, Zalta and Branden Fitelson have introduced the term '''computational metaphysics'''<!--boldface per WP:R#PLA--> to describe the implementation and investigation of formal, '''axiomatic metaphysics'''<!--boldface per WP:R#PLA--> in an [[automated reasoning]] environment.<ref>Edward N. Zalta and Branden Fitelson, [https://mally.stanford.edu/Papers/computation.pdf "Steps Toward a Computational Metaphysics"], ''Journal of Philosophical Logic'' '''36'''(2) (April 2007): 227–247.</ref><ref>Jesse Alama, Paul E. Oppenheimer, [[Edward N. Zalta]], [https://mally.stanford.edu/Papers/cade.pdf "Automating Leibniz's Theory of Concepts"], in A. Felty and A. Middeldorp (eds.), ''Automated Deduction – CADE 25: Proceedings of the 25th International Conference on Automated Deduction'' (Lecture Notes in Artificial Intelligence: Volume 9195), Berlin: Springer, 2015, pp. 73–97.</ref>
+
+==See also==
+{{cols|colwidth=21em}}
+* [[Abstract and concrete]]
+* [[Abstract particulars]]
+* [[Abstractionism (philosophy of mathematics)]]
+* [[Algebra of concepts]]
+* [[Mathematical universe hypothesis]]
+* [[Modal Meinongianism]]
+* [[Modal neo-logicism]]
+* [[Object of the mind]]
+{{colend}}
+
+==Notes==
+{{cols|colwidth=21em}}
+{{reflist}}
+{{colend}}
+
+==References==
+* Edward N. Zalta, [https://mally.stanford.edu/abstract-objects.pdf ''Abstract Objects: An Introduction to Axiomatic Metaphysics''], Dordrecht: D. Reidel, 1983.
+* Edward N. Zalta, [https://mally.stanford.edu/intensional-logic.pdf ''Intensional Logic and the Metaphysics of Intentionality''], Cambridge, MA: The MIT Press/Bradford Books, 1988.
+* Edward N. Zalta, [http://doors.stanford.edu/principia-1999-02-10.pdf "Principia Metaphysica"], Center for the Study of Language and Information, Stanford University, 1999.
+
+==Further reading==
+* Edward N. Zalta, [https://mally.stanford.edu/Papers/typed-object-theory.pdf "Typed Object Theory"], in José L. Falguera and Concha Martínez-Vidal (eds.), ''Abstract Objects: For and Against'', Springer (Synthese Library), 2020.
+* Daniel Kirchner, Christoph Benzmüller, Edward N. Zalta, [https://mally.stanford.edu/Papers/mechanizing-principia.pdf "Mechanizing ''Principia Logico-Metaphysica'' in Functional Type Theory"], ''Review of Symbolic Logic'' '''13'''(1) (March 2020): 206–18.
+
+{{Metaphysics}}
+
+[[Category:Abstract object theory| ]]
+[[Category:Abstraction]]
+[[Category:Concepts in epistemology]]
+[[Category:Concepts in metaphysics]]
+[[Category:Concepts in the philosophy of science]]
+[[Category:Epistemology]]
+[[Category:History of philosophy]]
+[[Category:History of science]]
+[[Category:Metaphysical theories]]
+[[Category:Metaphysics]]
+[[Category:Ontology]]
+[[Category:Philosophical concepts]]
+[[Category:Philosophical theories]]
+[[Category:Philosophy of physics]]
+[[Category:Philosophy of science]]
+[[Category:Platonism]]
+[[Category:Reality]]{{short description|Branch of metaphysics regarding abstract objects}}
+{{Distinguish|Object theory}}
+{{For|the general concept of objecthood in philosophy|Object (philosophy)}}
+{{Use mdy dates|date=April 2013}}
+'''Abstract object theory''' ('''AOT''') is a branch of [[metaphysics]] regarding [[abstract object]]s.<ref>{{cite web |url= http://mally.stanford.edu/theory.html|title= The Theory of Abstract Objects |last1=Zalta |first1=Edward N. |date=2004 |publisher=The Metaphysics Research Lab, Center for the Study of Language and Information, Stanford University|accessdate=July 18, 2020}}</ref> Originally devised by metaphysician [[Edward Zalta]] in 1981,<ref name=thesis>{{cite web|url=https://scholarworks.umass.edu/dissertations_1/2187/|title=An Introduction to a Theory of Abstract Objects (1981)|publisher=ScholarWorks@[[UMass Amherst]]|date=2009|accessdate=July 21, 2020}}</ref> the theory was an expansion of [[mathematical Platonism]].
+
+==Overview<!--'Computational metaphysics' and 'Axiomatic metaphysics' redirect here-->==
+{{also|Dual copula strategy}}
+''Abstract Objects: An Introduction to Axiomatic Metaphysics'' (1983) is the title of a publication by Edward Zalta that outlines abstract object theory.
+
+AOT is a [[dual predication approach]] (also known as "dual copula strategy") to abstract objects<ref name=SEP>{{cite SEP |url-id=nonexistent-objects |title=Nonexistent Objects |first=Maria |last=Reicher |date=2014 }}</ref><ref name=Jacquette>Dale Jacquette, ''Meinongian Logic: The Semantics of Existence and Nonexistence'', Walter de Gruyter, 1996, p. 17.</ref> influenced by the contributions of [[Alexius Meinong]]<ref>[[Alexius Meinong]], "Über Gegenstandstheorie" ("The Theory of Objects"), in Alexius Meinong, ed. (1904). [https://archive.org/details/untersuchungenzu00mein ''Untersuchungen zur Gegenstandstheorie und Psychologie''] (''Investigations in Theory of Objects and Psychology''), Leipzig: Barth, pp. 1–51.</ref><ref name=:0>Zalta (1983:xi).</ref> and his student [[Ernst Mally]].<ref>[[Ernst Mally]] (1912), ''Gegenstandstheoretische Grundlagen der Logik und Logistik (Object-theoretic Foundations for Logics and Logistics)'', Leipzig: Barth, [https://mally.stanford.edu/mally-book/ObjectTheoreticFoundationsOfLogic2.pdf §§33 and 39].</ref><ref name=:0/> On Zalta's account, there are two modes of [[Predicate (mathematical logic)|predication]]: some objects (the ordinary [[Abstract and concrete|concrete]] ones around us, like tables and chairs) ''exemplify'' properties, while others (abstract objects like numbers, and what others would call "[[non-existent object]]s", like the [[Round square copula|round square]], and the mountain made entirely of gold) merely ''encode'' them.<ref>Zalta (1983:33).</ref> While the objects that exemplify properties are discovered through traditional empirical means, a simple set of axioms allows us to know about objects that encode properties.<ref>Zalta (1983:36).</ref> For every set of properties, there is exactly one object that encodes exactly that set of properties and no others.<ref>Zalta (1983:35).</ref> This allows for a [[Formal system|formalized]] [[ontology]].
+
+A notable feature of AOT is that Romane Clark's paradox (a paradox in naive predication theory undermining the earliest version of [[Héctor-Neri Castañeda]]'s [[guise theory]])<ref>Romane Clark, "Not Every Object of Thought has Being: A Paradox in Naive Predication Theory", ''Noûs'', '''12'''(2) (1978), pp. 181–188.</ref><ref>[[William J. Rapaport]], "Meinongian Theories and a Russellian Paradox", ''Noûs'', '''12'''(2) (1978), pp. 153–80.</ref><ref>Adriano Palma, ed. (2014). [https://books.google.com/books?id=iYHoBQAAQBAJ&dq= ''Castañeda and his Guises: Essays on the Work of Hector-Neri Castañeda'']. Boston/Berlin: Walter de Gruyter, pp. 67–82, esp. 72.</ref> and Alan McMichael's paradox (another paradox in naive predication theory)<ref>Alan McMichael and Edward N. Zalta, [https://link.springer.com/article/10.1007%2FBF00248396 "An Alternative Theory of Nonexistent Objects"], ''Journal of Philosophical Logic'', '''9''' (1980): 297–313, esp. 313 n. 15.</ref> do not arise within it (AOT employs [[Range of quantification|restricted]] [[abstraction]] [[Axiom schema|schemata]] to avoid these paradoxes).<ref>Zalta (1983:158).</ref>
+
+In 2007, Zalta and Branden Fitelson have introduced the term '''computational metaphysics'''<!--boldface per WP:R#PLA--> to describe the implementation and investigation of formal, '''axiomatic metaphysics'''<!--boldface per WP:R#PLA--> in an [[automated reasoning]] environment.<ref>Edward N. Zalta and Branden Fitelson, [https://mally.stanford.edu/Papers/computation.pdf "Steps Toward a Computational Metaphysics"], ''Journal of Philosophical Logic'' '''36'''(2) (April 2007): 227–247.</ref><ref>Jesse Alama, Paul E. Oppenheimer, [[Edward N. Zalta]], [https://mally.stanford.edu/Papers/cade.pdf "Automating Leibniz's Theory of Concepts"], in A. Felty and A. Middeldorp (eds.), ''Automated Deduction – CADE 25: Proceedings of the 25th International Conference on Automated Deduction'' (Lecture Notes in Artificial Intelligence: Volume 9195), Berlin: Springer, 2015, pp. 73–97.</ref>
+
+==See also==
+{{cols|colwidth=21em}}
+* [[Abstract and concrete]]
+* [[Abstract particulars]]
+* [[Abstractionism (philosophy of mathematics)]]
+* [[Algebra of concepts]]
+* [[Mathematical universe hypothesis]]
+* [[Modal Meinongianism]]
+* [[Modal neo-logicism]]
+* [[Object of the mind]]
+{{colend}}
+
+==Notes==
+{{cols|colwidth=21em}}
+{{reflist}}
+{{colend}}
+
+==References==
+* Edward N. Zalta, [https://mally.stanford.edu/abstract-objects.pdf ''Abstract Objects: An Introduction to Axiomatic Metaphysics''], Dordrecht: D. Reidel, 1983.
+* Edward N. Zalta, [https://mally.stanford.edu/intensional-logic.pdf ''Intensional Logic and the Metaphysics of Intentionality''], Cambridge, MA: The MIT Press/Bradford Books, 1988.
+* Edward N. Zalta, [http://doors.stanford.edu/principia-1999-02-10.pdf "Principia Metaphysica"], Center for the Study of Language and Information, Stanford University, 1999.
+
+==Further reading==
+* Edward N. Zalta, [https://mally.stanford.edu/Papers/typed-object-theory.pdf "Typed Object Theory"], in José L. Falguera and Concha Martínez-Vidal (eds.), ''Abstract Objects: For and Against'', Springer (Synthese Library), 2020.
+* Daniel Kirchner, Christoph Benzmüller, Edward N. Zalta, [https://mally.stanford.edu/Papers/mechanizing-principia.pdf "Mechanizing ''Principia Logico-Metaphysica'' in Functional Type Theory"], ''Review of Symbolic Logic'' '''13'''(1) (March 2020): 206–18.
+
+{{Metaphysics}}
+
+[[Category:Abstract object theory| ]]
+[[Category:Abstraction]]
+[[Category:Concepts in epistemology]]
+[[Category:Concepts in metaphysics]]
+[[Category:Concepts in the philosophy of science]]
+[[Category:Epistemology]]
+[[Category:History of philosophy]]
+[[Category:History of science]]
+[[Category:Metaphysical theories]]
+[[Category:Metaphysics]]
+[[Category:Ontology]]
+[[Category:Philosophical concepts]]
+[[Category:Philosophical theories]]
+[[Category:Philosophy of physics]]
+[[Category:Philosophy of science]]
+[[Category:Platonism]]
+[[Category:Reality]]

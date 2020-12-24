@@ -1,0 +1,49 @@
+There have been many  '''criticisms of econometrics'''' usefulness as a discipline and perceived widespread methodological shortcomings in econometric modelling practices.
+
+== Difficulties in model specification ==
+Like other forms of statistical analysis, badly specified econometric models may show a [[spurious correlation]] where two variables are correlated but causally unrelated. Economist [[Ronald Coase]] is widely reported to have said "if you torture the data long enough it will confess".<ref>[[Gordon Tullock]], "A Comment on Daniel Klein's 'A Plea to Economists Who Favor Liberty'", ''Eastern Economic Journal'', Spring 2001, note 2 (Text: "As Ronald Coase says, 'if you torture the data long enough it will confess'." Note: "I have heard him say this several times. So far as I know he has never published it.")</ref> McCloskey argues that in published econometric work, economists tend to rely excessively on statistical techniques and often fail to use economic reasoning for including or excluding variables.<ref>{{cite journal |title=The Loss Function has been mislaid: the Rhetoric of Significance Tests|last=McCloskey |first=D.N.|journal=American Economic Review|date=May 1985|volume=75|issue=2|pages=201&ndash;205|url=http://www.deirdremccloskey.com/docs/pdf/Article_179.pdf}}</ref>
+
+Economic variables are not readily isolated for experimental testing, but Edward Leamer argues that there is no essential difference between econometric analysis and [[randomized trial]]s or [[controlled trials]] provided judicious use of statistical techniques eliminates the effects of collinearity between the variables.<ref>{{cite journal|last=Leamer|first=Edward|title=Let's Take the Con out of Econometrics|journal=American Economic Review|date=March 1983|volume=73|issue=1|pages=31–43|jstor=1803924}}</ref>
+
+Economists are often faced with a high number of often highly collinear potential explanatory variables, leaving researcher bias to play an important role in their selection. Leamer argues that economists can mitigate this by running statistical tests with different specified models and discarding any inferences which prove to be "fragile", concluding that "professionals ... properly withhold belief until an inference can be shown to be adequately insensitive to the choice of assumptions".<ref>{{cite journal|last=Leamer|first=Edward|title=Let's Take the Con out of Econometrics|journal=American Economic Review|date=March 1983|volume=73|issue=1|pages=31–43|jstor=1803924}}</ref> However, as Sala-I-Martin<ref>{{Cite journal|last=Sala-i-Martin|first=Xavier X|date=November 1997|title=I Just Ran Four Million Regressions|url=http://www.nber.org/papers/w6252}}</ref> showed, it is often the case that you can specify two models suggesting contrary relation between two variables. The phenomenon was labeled 'emerging recalcitrant result' phenomenon by Robert Goldfarb.<ref>{{Cite journal|last=Goldfarb|first=Robert S.|date=December 1997|title=Now you see it, now you don't: emerging contrary results in economics|journal=Journal of Economic Methodology|volume=4|issue=2|pages=221–244|doi=10.1080/13501789700000016|issn=1350-178X}}</ref>
+
+== Lucas critique ==
+{{Main|Lucas critique}}
+Robert Lucas criticised the use of overly simplistic econometric models of the macroeconomy to predict the implications of [[economic policy]], arguing that the structural relationships observed in historical models break down if decision makers adjust their preferences to reflect policy changes. Lucas argued that policy conclusions drawn from contemporary [[large-scale macroeconometric model]]s were invalid as economic actors would change their expectations of the future and adjust their behaviour accordingly.
+
+Lucas argued a good macroeconometric model should incorporate [[microfoundations]] to model the effects of policy change, with equations representing economic [[Agent (economics)|representative agents]] responding to economic changes based on [[rational expectations]] of the future; implying their pattern of behaviour might be quite different if economic policy changed.
+
+Modern complex econometric models tend to be designed with the Lucas critique and rational expectations in mind, but [[Robert Solow]] argued that some of these modern [[dynamic stochastic general equilibrium]] models were no better as the assumptions they made about economic behaviour at the micro level were "generally phony".<ref>Solow, R. (2010)  [http://democrats.science.house.gov/Media/file/Commdocs/hearings/2010/Oversight/20july/Solow_Testimony.pdf "Building a Science of Economics for the Real World"] {{webarchive |url=https://web.archive.org/web/20110204034313/http://democrats.science.house.gov/Media/file/Commdocs/hearings/2010/Oversight/20july/Solow_Testimony.pdf |date=February 4, 2011 }}, Prepared Statement of Robert Solow, Professor Emeritus, MIT, to the House Committee on Science and Technology, Subcommittee on Investigations and Oversight: July 20, 2010</ref>
+
+== Other mainstream critiques ==
+Looking primarily at macroeconomics, [[Lawrence Summers]] has criticized econometric formalism, arguing that "the empirical facts of which we are most confident and which provide the most secure basis for theory are those that require the least sophisticated statistical analysis to perceive." He looks at two highly praised macroeconometric studies ([[Lars Peter Hansen|Hansen]] & [[Kenneth Singleton|Singleton]] (1982, 1983), and [[Ben Bernanke|Bernanke]] (1986)), and argues that while both make brilliant use of econometric methods, both papers do not really prove anything that future theory can build on. Noting that in the natural sciences, "investigators rush to check out the validity of claims made by rival laboratories and then build on them," Summers points out that this rarely happen in economics, which to him is a result of the fact that "the results [of econometric studies] are rarely an important input to theory creation or the evolution of professional opinion more generally." To Summers:<ref>{{cite journal
+| last = Summers
+| first = Lawrence
+| authorlink = Lawrence Summers
+
+| title = The Scientific Illusion in Empirical Macroeconomics
+| journal = Scandinavian Journal of Economics
+| volume = 93
+| issue = 2
+| pages = 129–148
+|date=June 1991
+| jstor =3440321
+| doi =
+}}</ref>
+{{quote|Successful empirical research has been characterized by attempts to gauge the strength of associations rather than to estimate structural parameters, verbal characterizations of how causal relations might operate rather than explicit mathematical models, and the skillful use of carefully chosen natural experiments rather than sophisticated statistical technique to achieve identification.}}
+
+== Austrian School critique ==
+The current-day [[Austrian School|Austrian School of economics]] typically rejects econometrics, stating that historical mathematical data used to make econometric models represents past behaviour which may change in future and is ineffective at isolating causal relationships. In this they continue their belief that mathematics and statistical methods are mostly unsuited for the study of social sciences.<ref>Garrison, Roger - in The Meaning of Ludwig von Mises: Contributions is Economics, Sociology, Epistemology, and Political Philosophy, ed. Herbener, pp. 102-117. [http://www.auburn.edu/~garriro/j2mismeth.htm "Mises and His Methods"]</ref>
+
+== See also ==
+* [[Econometrics]]
+* [[Methodology of econometrics]]
+* [[Macroeconomic model]]
+* [[History of macroeconomic thought]]
+
+==Notes==
+{{reflist|1}}
+{{Economics}}
+
+[[Category:Econometrics]]
+[[Category:Criticisms of economics|Econometrics]]

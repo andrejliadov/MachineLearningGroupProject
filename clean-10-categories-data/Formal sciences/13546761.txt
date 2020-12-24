@@ -1,0 +1,223 @@
+{{multiple issues|
+{{More citations needed|date=May 2012}}
+{{prose|date=May 2012}}
+{{more footnotes|date=May 2012}}
+{{cleanup external|date=May 2012}}
+}}
+'''3G MIMO''' describes [[MIMO]] techniques which have been considered as [[3G]] standard techniques.
+ 
+[[MIMO]], as the state of the art of [[intelligent antenna]] (IA), improves the performance of radio systems by embedding electronics [[intelligence]] into the spatial processing unit. Spatial processing includes spatial precoding at the transmitter and spatial postcoding at the receiver, which are dual each other from information signal processing theoretic point of view. Intelligent antenna is technology which represents [[smart antenna]], [[multiple antenna research|multiple antenna]] ([[Multiple-input multiple-output communications|MIMO]]), self-tracking directional antenna, [[Cooperative wireless communications|cooperative virtual antenna]] and so on.
+
+== Technology ==
+Spatial precoding of intelligent antenna includes spatial beamforming and spatial coding. In wireless communications, spatial precoding has been developing for high reliability, high rate and lower interference as shown in the following table.
+
+=== Summary of 3G MIMO ===
+The table summarizes the history of 3G MIMO techniques candidated for 3G standards. Although the table additionally contains the future part but the contents are not clearly filled out since the future is not precisely predictable.
+
+{| class="sortable wikitable"
+|- bgcolor="#CCCCCC"
+! Generation !! 3G !! 3G evolution !! Beyond 3G !! Future
+|-
+! Deployment || 2003/4 || 2005~6/2007~8/2009~10 || 2012~2015 || 2015~2020
+|-
+! Standard || WCDMA || HSPA/HSPA+/LTE || IMT-Advanced || Beyond IMT-Adv
+|-
+! Total rate || 384kbit/s || 14/42/65~250Mbit/s || 1Gbit/s || >10Gbit/s
+|-
+! Bandwidth || 5&nbsp;MHz || 5&nbsp;MHz/20&nbsp;MHz || 20~100&nbsp;MHz || >100&nbsp;MHz
+|-
+! Requirement Paradigm
+| High reliability (High quality)
+| High rate (High capacity)
+| Lower interference
+| High intelligence
+|-
+! Method
+| Spatial diversity
+| Spatial multiplexing
+| Spatial cancellation
+| Ambient intelligence
+|- 
+! Spatial coding (SC)
+| Spatial diversity coding
+| Spatial multiplexing coding
+| Spatial cancellation coding
+| Ambient intelligence coding
+|- 
+! Spatial beamforming (SB)
+| Single-stream beamforming
+| Multi-stream beamforming
+| Interference nulling beamforming
+| Ambient intelligence beamforming
+|- 
+! Examples
+| SC: Alamouti coding, SB: TxAA
+| SC: BLAST coding, SB: SVD 
+| SC: DPC, SB: MU-BF
+| Such as [[cooperative MIMO]]
+|}
+
+=== IA in ad hoc networking ===
+{{main|Wireless ad hoc network}}
+IA technology enables client terminals, which have either multiple antennas or a self-tracking directional antenna, to communicate to each other with as high as possible signal-to-interference-and-noise ratio (SINR). Assume that there is a source terminal, a destination terminal, and some candidate interference terminals. Compared to conventional approaches, an advanced IA based terminal will perform spatial precoding (spatial beamforming and/or spatial coding) not only to enhance the signal power at the destination terminal but also to diminish the interfering power at interference terminals. As a human does, the advanced IA terminal is given to know that occurring high interference to other terminals will eventually degrade the performance of the associated wireless network.
+
+== Comparisons ==
+
+=== Intelligent antenna (IA) vs. Cognitive radio (CR) ===
+However, it requires intelligent multiple or [[cooperation|cooperative]] antenna array. On the contrary, [[cognitive radio]] (CR) allows user terminals to sense the other service usage of spectrum beans to share the spectrum among users, which is so, cognitive spectrum sharing technology. The following table compares the different points between two approach for future wireless systems: Intelligent antenna (IA) vs. Cognitive radio (CR).
+
+{| class="sortable wikitable"
+|- bgcolor="#CCCCCC"
+! Point !! Intelligence antenna (IA) !! Cognitive radio (CR) 
+|-
+! Interference processing
+| Cancellation by spatial pre/post-coding
+| Avoidance by spectrum sensing
+|-
+! Key cost 
+| Multiple or cooperative antenna arrays
+| Spectrum sensing and multi-band RF
+|- 
+! Solution
+| Intelligent spatial beamforming/coding tech
+| Cognitive spectrum management tech
+|- 
+! Application
+| Ambient Spatial Reuse
+| Open Spectrum Sharing
+|- 
+! Applied theory
+| Dirty paper and Wyner-Ziv coding (DP-WZ coding)
+| Software radio and cognition
+|- 
+! Summary
+| Intelligent spectrum reuse technology
+| Cognitive spectrum sharing technology
+|}
+
+=== Fundamental concepts and theories ===
+* '''[[Intelligence]]''' is a property of mind that includes many related abilities.
+* '''[[Cooperation]]''' is the practice of social elements working in common, instead of working individually.
+* '''[[Cognition]]''' can be interpreted as understanding and responding to the world.
+* '''[[Ambient intelligence]] (AmI)''' refers to artificial environments that responses to the movement of people, the paradigm of which builds upon [[Ubiquitous computing]].
+* '''[[Ubiquitous computing|Wireless ubiquitous computing]] (WUC)''' is post-desktop computing where information processing is integrated into anytime and anywhere human activities.
+* '''[[Game theory]]''' is a mathematical theory that studies the strategic interaction between players, which are usually organized into a friend group and an enemy group.
+
+== Principal Issues of Research ==
+
+The following items list the issues of the multiple antenna research aims to improve the performance of radio communications.
+
+* [[Intelligent antenna]]
+* [[Smart antenna]]
+* [[Digital antenna array]]
+* [[Multiple-input multiple-output communications|Multiple-input multiple-output (MIMO)]]
+* [[Beamforming]]
+* [[Diversity combining]]
+* [[Diversity scheme]]
+* [[Space–time code]]
+* [[Spatial multiplexing]]
+* [[Space-division multiple access|Space-division multiple access (SDMA)]]
+* [[Advanced MIMO communications]]
+* [[Multi-user MIMO]]
+* [[Precoding]]
+* [[Dirty paper coding (DPC)]]
+* [[Cooperative wireless communications]]
+* [[Cooperative diversity]]
+
+== Principal Definitions ==
+
+=== Definitions ===
+Here are the definition of principal keywords to clarify the objective and the operations of intelligent antenna.
+
+{| class="wikitable"
+|-
+! Terminology
+! Definition 
+|-
+! [[Intelligent antenna]]
+| Antenna technology that uses some sort of [[electronic intelligence]] to enhance wireless system performance. Electronic intelligence is implemented by spatial pre/post-coding techniques such as spatial information coding and spatial signal beamforming. Notice that smart antenna has been more widely used to represent the similar meaning. 
+|-
+! [[Smart antenna]]
+| In the narrow sense, antenna technology that employs array antennas with beamforming techniques to enhance wireless system performance. In the wide sense, equivalent terminology to intelligent antenna.
+|-
+! [[MIMO]] 
+| Wide sense and well-known: MIMO is the state of the art of IA and SA.
+* Narrow sense: Antenna systems that employ multiple antennas at both the transmitter and the receiver.
+|}
+
+=== Reference Web Sites ===
+The following items list the web sites related to the multiple antenna research.
+
+* MARS, Bell Laboratories — <ref>https://web.archive.org/web/20071001030428/http://mars.bell-labs.com/</ref>
+** '''Multiple Antenna Research and Solutions (MARS)''' is a research group on multiple antenna and space time coding
+* Lucent — <ref>http://www.cdg.org/news/events/CDMASeminar/cdg_tech_forum_02/3_lucent_ia_blast_final_release.pdf</ref>
+** The goal of intelligent antennas is to achieve higher capacity noting that advanced solutions provide higher capacity than basic solutions.
+{| class="wikitable"
+|-
+! Types
+! Antenna configuration
+! Basic solution 
+! Advanced solution 
+|-
+| Diversity 
+| d > wavelength
+| Rx: MRC, MMSE, etc., Tx: STTD, CLTD
+| BLAST (spatial multiplexing)
+|- 
+| Phased Array
+| d < wavelength
+| Switched beams
+| Steered beams
+|}
+
+* IMEC — <ref>https://web.archive.org/web/20071004235801/http://www.imec.be/wireless/mimo/</ref>
+** '''Multiple antenna systems''' are the key to the high-capacity wireless universe. Indeed, they allow increasing the rate, improving the robustness, or accommodating more users in the cell.
+* Georgia Institute of Technology — <ref>https://web.archive.org/web/20070627033614/http://users.ece.gatech.edu/~mai/tutorial_sa_def.htm</ref>
+** '''A smart antenna''' is an array of antenna elements connected to a digital signal processor
+* IEC — <ref>https://web.archive.org/web/20070928011627/http://www.iec.org/online/tutorials/smart_ant/index.html, https://web.archive.org/web/20070928011846/http://www.iec.org/online/tutorials/acrobat/smart_ant.pdf</ref>
+** '''A smart antenna system''' combines multiple antenna elements with a signal-processing capability to optimize its radiation and/or reception pattern automatically in response to the signal environment.
+** '''Spatial division multiple access (SDMA)''' — Among the most sophisticated utilizations of smart antenna technology is SDMA, which employs advanced processing techniques to, in effect, locate and track fixed or mobile terminals, adaptively steering transmission signals toward users and away from interferers.
+* SearchMobileComputing.com — <ref>http://searchmobilecomputing.techtarget.com/sDefinition/0,290660,sid40_gci1026138,00.html</ref>
+** '''A smart antenna''' is a digital wireless communications antenna system that takes advantage of diversity effect at the source (transmitter), the destination (receiver), or both.
+** '''MIMO''' is an antenna technology for wireless communications in which multiple antennas are used at both the source (transmitter) and the destination (receiver).
+* Smart Antennas Research Group, Stanford Univ. — <ref>http://www.stanford.edu/group/sarg/</ref>
+** Our research goal is to advance the state-of-the-art in the applications of '''multiple antennas and space-time signal processing''' in mobile wireless networks, and to improve network performance and economics.
+* CDG — <ref>http://www.cdg.org/technology/cdma_technology/smart_antennas/index.asp, http://www.cdmatech.com/products/how_mimo_works.jsp</ref>
+** '''Smart antennas''' provide greater capacity and performance benefits than standard antennas because they can be used to customize and fine-tune antenna coverage patterns that match the traffic conditions in a wireless network or that are better suited for complex radio frequency (RF) environments.
+** '''MIMO''' employs multiple, spatially separated antennas (at both TX and RX) to take advantage of these "virtual wires" and transfer more data.
+* Nortel — <ref>https://web.archive.org/web/20070526153007/http://www2.nortel.com/go/solution_content.jsp?segId=0&catId=0&parId=0&prod_id=61701</ref>
+** '''MIMO''' is an antenna technology that is used both in transmission and receiver equipment for wireless radio communication.
+** '''MIMO''' is the only advanced antenna technology that simultaneously offers high bandwidth, improved range, and high mobility at a lower cost.
+* Visant Strategies — <ref>https://web.archive.org/web/20070928045359/http://www.visantstrategies.com/market_research/mimo_intelligent_antenna.html, http://www.researchandmarkets.com/reports/c21454</ref>
+** '''Intelligent antennas''' are antenna systems that use some sort of computational or electronic resource to enhance system performance.
+** According to the amounts of intelligence employed, antenna diversity represents the simplest form in the progressive complexity chain, followed by basic beamforming, which is the process of narrowing radiated energy, which is then followed by the more complex space-time processing and finally by MIMO.
+* Magnetic Sciences — <ref>https://web.archive.org/web/20071014181902/http://www.magneticsciences.com/SatelliteTrackingUnits.html</ref>
+** '''Satellite tracking systems and self-steering antennas''' are used aboard ships, vehicles, or aircraft to maintain contact  with satellites.
+
+==See also==
+* [[Antenna diversity]]
+* [[Smart antenna]]
+* [[Multiple antenna research]]
+* [[Multiple-input multiple-output communications]]
+* [[Cooperative wireless communications]]
+* [[Precoding]] includes spatial coding (SC) and spatial beamforming (SB)
+** [[Space–time code]]
+** [[Spatial multiplexing]]
+** [[Dirty paper coding (DPC)]]
+** [[Beamforming]]
+* [[Wsdma]]
+* [[Smart antenna]] for 3G MIMO benefits
+
+==References==
+{{Reflist}}
+* [http://www.itu-apt.org/prez/ericsson_presentation.pdf Dr. Erik Dahlman, LTE, 3G Long Term Evolution]
+* {{cite web |url= http://www.ist-winner.org/WINNER2-Deliverables/D3.4.1.pdf |title= The WINNER II Air Interface: Refined Spatial-Temporal Processing Solutions |date= 30 Nov 2006 |publisher= [[WINNER]] II |access-date= 2008-09-06 |archive-url= https://web.archive.org/web/20090730205247/http://www.ist-winner.org/WINNER2-Deliverables/D3.4.1.pdf |archive-date= 2009-07-30 |url-status= dead|df=  }}
+
+==External links==
+* https://web.archive.org/web/20071007145422/http://www.wireless-world-research.org/fileadmin/sites/default/files/about_the_forum/WG/WG4/Briefings/WWRF-WG4_SmartAntennas_briefing.pdf
+
+{{Mobile telecommunications standards}}
+
+[[Category:IEEE 802]]
+[[Category:Information theory]]
+[[Category:Radio resource management]]

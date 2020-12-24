@@ -1,0 +1,105 @@
+In [[computer science]], in particular in the field of [[formal language]] theory,
+an '''abstract family of languages''' is an abstract mathematical notion generalizing characteristics common to the [[regular language]]s, the [[context-free language]]s and the [[recursively enumerable language]]s, and other families of formal languages studied in the scientific literature.
+
+==Formal definitions==
+
+A ''formal language'' is a set {{mvar|L}} for which there exists a finite set of abstract symbols {{math|&Sigma;}} such that <math>L \subseteq\Sigma^*</math>, where * is the [[Kleene star]] operation.
+
+A ''family of languages'' is an ordered pair <math>(\Sigma,\Lambda)</math>, where
+# {{math|&Sigma;}} is an infinite set of symbols;
+# {{math|&Lambda;}} is a set of formal languages;
+# For each {{mvar|L}} in {{math|&Lambda;}} there exists a finite subset <math>\Sigma_1 \subset \Sigma</math> such that <math>L \subseteq \Sigma_1^*</math>; and
+# {{math|''L'' ≠ Ø}} for some {{mvar|L}} in {{math|&Lambda;}}.
+
+A ''trio'' is a family of languages [[Closure (mathematics)|closed]] under [[e-free homomorphism]], inverse [[homomorphism]], and intersection with regular language.
+
+A ''full trio,'' also called a  ''[[cone (formal languages)|cone]],'' is a trio closed under arbitrary homomorphism.
+
+A ''(full) semi-AFL'' is a (full) trio  closed under [[Union (set theory)|union]].
+
+A ''(full) AFL'' is a ''(full) semi-AFL'' closed under [[concatenation]] and the [[Kleene plus]].
+
+==Some families of languages==
+The following are some simple results from the study of abstract families of languages.<ref name="Seymour">{{harvtxt|Ginsburg|1975}}</ref><ref name="SpringerAFL">{{SpringerEOM| title=Abstract family of languages | id=Abstract_family_of_languages | oldid=18934 | first=A. | last=Mateescu | first2=A. | last2=Salomaa }}</ref>
+
+Within the [[Chomsky hierarchy]], the regular languages, the context-free languages, and the recursively enumerable languages are all full AFLs. However, the [[Context-sensitive language|context sensitive languages]] and the [[recursive language]]s are AFLs, but not full AFLs because they are not closed under arbitrary homomorphisms.
+
+The family of regular languages are contained within any cone (full trio). Other categories of abstract families are identifiable by closure under other operations such as shuffle, reversal, or substitution.<ref name="SpringerOps">{{SpringerEOM| title=AFL operations | id=AFL_operations | oldid=13097 | first=Gh. | last=Păun }}</ref>
+
+==Origins==
+
+[[Seymour Ginsburg]] of the [[University of Southern California]] and [[Sheila Greibach]] of [[Harvard University]] presented the first AFL theory paper at the IEEE Eighth Annual [[Symposium on Switching and Automata Theory]] in 1967.<ref>{{harvtxt|Ginsburg|Greibach|1967}}</ref>
+
+==Notes==
+<references/>
+
+==References==
+* {{cite conference
+  | first1 = Seymour 
+  | last1 = Ginsburg
+  | first2 = Sheila 
+  | last2= Greibach
+  | title=Abstract Families of Languages
+  | booktitle = Conference Record of 1967 Eighth Annual Symposium on Switching and Automata Theory, 18–20 October 1967, Austin, Texas, USA
+  | year = 1967
+  | pages= 128–139
+  |publisher = IEEE
+}}
+*Seymour Ginsburg, ''Algebraic and automata theoretic properties of formal languages'', North-Holland, 1975, {{ISBN|0-7204-2506-9}}.
+* John E. Hopcroft and Jeffrey D. Ullman, ''[[Introduction to Automata Theory, Languages, and Computation]]'', Addison-Wesley Publishing, Reading Massachusetts, 1979. {{ISBN|0-201-02988-X}}. Chapter 11: Closure properties of families of languages.
+* {{cite book |last1=Mateescu | first1=Alexandru |last2=Salomaa|first2=Arto |editor1-first=Grzegorz| editor1-last=Rozenberg|editor2-first=Arto| editor2-last=Salomaa |title=Handbook of Formal Languages. Volume I: Word, language, grammar |publisher=Springer-Verlag |year=1997 |pages=175–252 |chapter=Chapter 4: Aspects of Classical Language Theory |isbn=3-540-61486-9}}
+
+[[Category:Formal languages]]
+[[Category:Applied mathematics]]In [[computer science]], in particular in the field of [[formal language]] theory,
+an '''abstract family of languages''' is an abstract mathematical notion generalizing characteristics common to the [[regular language]]s, the [[context-free language]]s and the [[recursively enumerable language]]s, and other families of formal languages studied in the scientific literature.
+
+==Formal definitions==
+
+A ''formal language'' is a set {{mvar|L}} for which there exists a finite set of abstract symbols {{math|&Sigma;}} such that <math>L \subseteq\Sigma^*</math>, where * is the [[Kleene star]] operation.
+
+A ''family of languages'' is an ordered pair <math>(\Sigma,\Lambda)</math>, where
+# {{math|&Sigma;}} is an infinite set of symbols;
+# {{math|&Lambda;}} is a set of formal languages;
+# For each {{mvar|L}} in {{math|&Lambda;}} there exists a finite subset <math>\Sigma_1 \subset \Sigma</math> such that <math>L \subseteq \Sigma_1^*</math>; and
+# {{math|''L'' ≠ Ø}} for some {{mvar|L}} in {{math|&Lambda;}}.
+
+A ''trio'' is a family of languages [[Closure (mathematics)|closed]] under [[e-free homomorphism]], inverse [[homomorphism]], and intersection with regular language.
+
+A ''full trio,'' also called a  ''[[cone (formal languages)|cone]],'' is a trio closed under arbitrary homomorphism.
+
+A ''(full) semi-AFL'' is a (full) trio  closed under [[Union (set theory)|union]].
+
+A ''(full) AFL'' is a ''(full) semi-AFL'' closed under [[concatenation]] and the [[Kleene plus]].
+
+==Some families of languages==
+The following are some simple results from the study of abstract families of languages.<ref name="Seymour">{{harvtxt|Ginsburg|1975}}</ref><ref name="SpringerAFL">{{SpringerEOM| title=Abstract family of languages | id=Abstract_family_of_languages | oldid=18934 | first=A. | last=Mateescu | first2=A. | last2=Salomaa }}</ref>
+
+Within the [[Chomsky hierarchy]], the regular languages, the context-free languages, and the recursively enumerable languages are all full AFLs. However, the [[Context-sensitive language|context sensitive languages]] and the [[recursive language]]s are AFLs, but not full AFLs because they are not closed under arbitrary homomorphisms.
+
+The family of regular languages are contained within any cone (full trio). Other categories of abstract families are identifiable by closure under other operations such as shuffle, reversal, or substitution.<ref name="SpringerOps">{{SpringerEOM| title=AFL operations | id=AFL_operations | oldid=13097 | first=Gh. | last=Păun }}</ref>
+
+==Origins==
+
+[[Seymour Ginsburg]] of the [[University of Southern California]] and [[Sheila Greibach]] of [[Harvard University]] presented the first AFL theory paper at the IEEE Eighth Annual [[Symposium on Switching and Automata Theory]] in 1967.<ref>{{harvtxt|Ginsburg|Greibach|1967}}</ref>
+
+==Notes==
+<references/>
+
+==References==
+* {{cite conference
+  | first1 = Seymour 
+  | last1 = Ginsburg
+  | first2 = Sheila 
+  | last2= Greibach
+  | title=Abstract Families of Languages
+  | booktitle = Conference Record of 1967 Eighth Annual Symposium on Switching and Automata Theory, 18–20 October 1967, Austin, Texas, USA
+  | year = 1967
+  | pages= 128–139
+  |publisher = IEEE
+}}
+*Seymour Ginsburg, ''Algebraic and automata theoretic properties of formal languages'', North-Holland, 1975, {{ISBN|0-7204-2506-9}}.
+* John E. Hopcroft and Jeffrey D. Ullman, ''[[Introduction to Automata Theory, Languages, and Computation]]'', Addison-Wesley Publishing, Reading Massachusetts, 1979. {{ISBN|0-201-02988-X}}. Chapter 11: Closure properties of families of languages.
+* {{cite book |last1=Mateescu | first1=Alexandru |last2=Salomaa|first2=Arto |editor1-first=Grzegorz| editor1-last=Rozenberg|editor2-first=Arto| editor2-last=Salomaa |title=Handbook of Formal Languages. Volume I: Word, language, grammar |publisher=Springer-Verlag |year=1997 |pages=175–252 |chapter=Chapter 4: Aspects of Classical Language Theory |isbn=3-540-61486-9}}
+
+[[Category:Formal languages]]
+[[Category:Applied mathematics]]

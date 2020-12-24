@@ -1,0 +1,84 @@
+{{short description|Calculated number that reflects the level of risk in the presence of some risk factors}}
+'''Risk score''' (or '''risk scoring''') is the name given to a general practice in applied [[statistics]], [[Biostatistics|bio-statistics]], [[econometrics]] and other related disciplines, of creating an easily calculated number (the '''score''') that reflects the level of [[risk]] in the presence of some [[risk factor]]s (e.g. risk of mortality or disease in the presence of symptoms or genetic profile, risk financial loss considering credit and financial history, etc.). 
+
+Risk scores are designed to be: 
+* Simple to calculate: In many cases all you need to calculate a score is a pen and a piece of paper (although [[QRISK|some]] scores use rely on more sophisticated or less transparent calculations that require a computer program).
+* Easily interpreted: The result of the calculation is a single number, and higher score usually means higher risk. Furthermore, many scoring methods enforce some form of [[Monotonic_function|monotonicity]] along the measured risk factors to allow a straight forward interpretation of the score (e.g. risk of mortality only increases with age, risk of payment default only increase with the amount of total debt the customer has, etc.).
+* Actionable: Scores are designed around a set of possible actions that should be taken as a result of the calculated score. Effective score-based policies can be designed and executed by setting thresholds on the value of the score and associating them with escalating actions. 
+
+== Formal definition ==
+A typical scoring method is composed of 3 components<ref name=ORGC>{{cite arXiv |last=Toren |first=Yizhar |date=2011 |title=Ordinal Risk-Group Classification |eprint=1012.5487}}
+</ref>:
+# A set of consistent rules (or weights) that assign a numerical value ("points") to each risk factor that reflect our estimation of underlying risk.
+# A formula (typically a simple sum of all accumulated points) that calculates the score.
+# A set of thresholds that helps to translate the calculated score into a level of risk, or an equivalent formula or set of rules to translate the calculated score back into probabilities (leaving the nominal evaluation of severity to the practitioner).
+
+Items 1 & 2 can be achieved by using some form of [[Regression_analysis|regression]], that will provide both the risk estimation and the formula to calculate the score. Item 3 requires setting an arbitrary set of thresholds and will usually involve expert opinion. 
+
+=== Estimating risk with GLM ===
+Risk score are designed to represent an underlying probability of an adverse event denoted <math> \lbrace Y = 1 \rbrace </math> given a vector of <math> P </math> [[explaining variables]] <math> \mathbf{X} </math> containing measurements of the relevant risk factors. In order to establish the connection between the risk factors and the probability we estimate a set of weights <math> \beta </math> is estimated using a [[generalized linear model]]:
+
+:<math>\begin{align}
+\operatorname{E}(\mathbf{Y} | \mathbf{X}) = \mathbf{P}(\mathbf{Y} = 1 | \mathbf{X}) = g^{-1}(\mathbf{X} \beta)
+\end{align}</math>
+
+Where <math>g^{-1}: \mathbb{R} \rightarrow [0,1]</math> is a real-valued, monotonically increasing function that maps the values of the [[Generalized_linear_model#Linear_predictor|linear predictor]] <math> \mathbf{X} \beta </math> to the interval <math> [0,1] </math>. GLM methods typically uses the [[logit]] or [[probit]] as the [[Generalized_linear_model#Link_function|link function]].
+
+==== Estimating risk with other methods ====
+While it's possible to estimate <math> \mathbf{P}(\mathbf{Y} = 1 | \mathbf{X}) </math> using other statistical or machine learning methods, the requirements of simplicity and easy interpretation (and monotonicity per risk factor) make most of these methods difficult to use for scoring in this context:
+
+* With more sophisticated methods it becomes difficult to attribute simple weights for each risk factor and to provide a simple formula for the calculation of the score. A notable exception are tree-based methods like [[Classification_and_regression_tree|CART]], that can provide a simple set of decision rules and calculations, but cannot ensure the monotonicity of the scale across the different risk factors.
+
+* The fact that we are estimating underlying risk across the population, and therefore cannot tag people in advance on an ordinal scale (we can't know in advance if a person belongs to a "high risk" group, we only see observed incidences) [[Statistical_classification|classification]] methods are only relevant if we want to classify people into 2 groups or 2 possible actions. 
+
+=== Constructing the score ===
+When using GLM, the set of estimated weights <math> \beta </math> can be used to assign different values (or "points") to different values of the risk factors in <math> \mathbf{X} </math> (continuous or nominal as indicators). The score can then be expressed as a weighted sum:
+
+:<math>\begin{align}
+\text{Score} = \mathbf{X} \beta = \sum_{j=1}^{P} \mathbf{X}_{j} \beta_{j}
+\end{align}</math>
+
+* Some scoring methods will translate the score into probabilities by using <math> g^{-1} </math> (e.g. [[SAPS_II| SAPS II score]]<ref>{{cite journal |last1=Le Gall |first1=JR |last2=Lemeshow |first2=S |last3=Saulnier |first3=F |title=A new Simplified Acute Physiology Score (SAPS II) based on a European/North American multicenter study. |journal=JAMA |date=1993 |volume=270 |issue=24 |pages=2957–63 |pmid=8254858 |doi=10.1001/jama.1993.03510240069035}}</ref> that gives an explicit function to calculate mortality from the score<ref>{{cite web |title=Simplified Acute Physiology Score (SAPS II) Calculator - ClinCalc.com |url=http://clincalc.com/IcuMortality/SAPSII.aspx |website=clincalc.com |language=en |accessdate=August 20, 2018}}</ref>) or a look-up table (e.g. [[ABCD² score]]<ref>Johnston SC; Rothwell PM; Nguyen-Huynh MN; Giles MF; Elkins JS; Bernstein AL; Sidney S. "Validation and refinement of scores to predict very early stroke risk after transient ischaemic attack" Lancet (2007): 369(9558):283-292</ref><ref>{{cite web |title=ABCD² Score for TIA |url=https://www.mdcalc.com/abcd2-score-tia |website=www.mdcalc.com |language=en |accessdate=December 16, 2018}}</ref> or the ISM7 (NI) Scorecard<ref name=AllState2006>{{cite web |title=ISM7 (NI) Scorecard, Allstate Property & Casualty Company |url=http://infoportal.ncdoi.net/getfile.jsp?sfp=/PC/PC095000/PC095470A815823.PDF |language=en |accessdate=December 16, 2018}}</ref>). This practice makes the process of obtaining the score more complicated computationally but has the advantage of translating an arbitrary number to a more familiar scale of 0 to 1.
+* The columns of <math> \mathbf{X} </math> can represent complex transformations of the risk factors (including multiple [[Interaction_(statistics)|interactions]]) and not just the risk factors themselves.
+* The values of <math> \beta </math> are sometimes scaled or rounded to allow working with integers instead of very small fractions (making the calculation simpler). While scaling has no impact ability of the score to estimate risk, rounding has the potential of disrupting the "optimality" of the GLM estimation. 
+
+=== Making score-based decisions ===
+Let <math> \mathbf{A} = \lbrace \mathbf{a}_{1}, ... ,\mathbf{a}_{m} \rbrace </math> denote a set of <math> m \geq 2 </math> "escalating" actions available for the decision maker (e.g. for credit risk decisions:  <math> \mathbf{a}_{1} </math> = "approve automatically", <math> \mathbf{a}_{2} </math> = "require more documentation and check manually", <math> \mathbf{a}_{3} </math> = "decline automatically"). In order to define a decision rule, we want to define a map between different values of the score and the possible decisions in <math> \mathbf{A} </math>. Let <math> \tau = \lbrace \tau_1, ... \tau_{m-1} \rbrace </math> be a [[Partition_of_an_interval|partition]] of <math> \mathbb{R} </math> into <math> m </math> consecutive, non-overlapping intervals, such that <math> \tau_1 < \tau_2 < \ldots < \tau_{m-1} </math>. 
+
+The map is defined as follows: 
+
+:<math>\begin{align}
+\text{If Score} \in [\tau_{j-1},\tau_{j}) \rightarrow \text{Take action } \mathbf{a}_{j}
+\end{align}</math>
+
+* The values of <math> \tau </math> are set based on expert opinion, the type and prevalence of the measured risk, consequences of miss-classification, etc. For example, a risk of 9 out of 10 will usually be considered as "high risk", but a risk of 7 out of 10 can be considered either "high risk" or "medium risk" depending on context. 
+* The definition of the intervals is on right open-ended intervals but can be equivalently defined using left open ended intervals <math> (\tau_{j-1},\tau_{j}] </math>.
+* For scoring methods that are already translated the score into probabilities we either define the partition <math> \tau </math> directly on the interval <math> [0,1] </math> or translate the decision criteria into <math> [g^{-1}(\tau_{j-1}),g^{-1}(\tau_{j})) </math>, and the monotonicity of <math> g </math> ensures a 1-to-1 translation.
+
+== Examples ==
+=== Biostatistics ===
+* [[Framingham Risk Score]]
+* [[QRISK]]
+* [[TIMI]]
+* [[Rockall score]]
+* [[ABCD² score]]
+* [[CHA2DS2–VASc score]]
+* [[SAPS II]]
+(see more examples on the category page [[:Category:Medical_scoring_system]])
+
+=== Financial industry ===
+The primary use of scores in the financial sector is for [[Credit scorecards]], or [[Credit_score|credit scores]]: 
+* In many countries (such as the [[Credit_score_in_the_United_States|US]]) credit score are calculated by commercial entities and therefore the exact method is not public knowledge (for example the [[Bankruptcy risk score]], [[Credit_score_in_the_United_States#FICO_score|FICO score]] and others). Credit scores in [[Credit_score#Australia|Australia]] and [[Credit_score#United_Kindgom|UK]] are often calculated by using [[Logistic_Regression|logistic regression]] to estimate [[probability of default]], and are therefore a type of risk score.
+* Other financial industries, such as the [[Insurance_score|insurance]] industry also use scoring methods, but the exact implementation remains a [[Insurance_score#Public_information| trade secret]], except for some rare cases<ref name=AllState2006 />
+
+=== Social Sciences ===
+* [[COMPAS_(software)| COMPAS]] score for recidivism,  as reverse-engineered by ProPublica<ref>{{cite web |title=How We Analyzed the COMPAS Recidivism Algorithm |url=https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm |language=en |accessdate=December 16, 2018}}</ref> using logistic regression and Cox's [[Proportional_hazards_model| proportional hazard model]].
+
+==References==
+*{{cite book|last = Hastie |first= T. J. |last2=Tibshirani |first2=R. J.|title = Generalized Additive Models|publisher = Chapman & Hall/CRC|year = 1990|isbn=978-0-412-34390-2}}
+{{Reflist}}
+
+[[Category:Econometrics]]
+[[Category:Applied statistics]]
+[[Category:Medical scoring system]]
+[[Category:Credit scoring]]

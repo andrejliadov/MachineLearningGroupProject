@@ -1,0 +1,41 @@
+{{short description|Measure of the ratio of atoms of one kind (i) to another kind (j)}}
+{{Refimprove|date=August 2015}}
+
+The '''atomic ratio''' is a measure of the [[ratio]] of atoms of one kind (i) to another kind (j). A closely related concept is the '''atomic percent''' (or '''at.%'''), which gives the percentage of one kind of atom relative to the total number of atoms.<ref>{{cite book|title=McGraw-Hill Dictionary of Chemistry|date=27 January 2003|url=https://archive.org/details/dictionaryofchem00mcgr_1|url-access=registration|publisher=McGraw-Hill|isbn=0-07-141046-5|pages=[https://archive.org/details/dictionaryofchem00mcgr_1/page/31 31]|ref=1}}</ref> The [[molecule|molecular]] equivalents of these concepts are the '''molar fraction''', or '''[[molar percent]]'''.
+
+==Atoms==
+Mathematically, the ''atomic percent'' is
+
+:<math> \mathrm{atomic \ percent} \ (\mathrm{i}) = \frac{N_\mathrm{i}}{N_\mathrm{tot}} \times 100  \ </math> %
+where ''N''<sub>i</sub> are the number of atoms of interest and ''N''<sub>tot</sub> are the total number of atoms, while the ''atomic ratio'' is
+:<math> \mathrm{atomic \ ratio} \ (\mathrm{i:j}) = \mathrm{atomic \ percent} \ (\mathrm{i}) : \mathrm{atomic \ percent} \ (\mathrm{j}) \ .</math>
+
+For example, the ''atomic percent'' of [[hydrogen]] in [[water]] (H<sub>2</sub>O) is {{nowrap|at.%<sub>H<sub>2</sub>O</sub> {{=}} 2/3 x 100 ≈ 66.67%}}, while the ''atomic ratio'' of hydrogen to oxygen is {{nowrap|''A''<sub>H:O</sub> {{=}} 2:1}}.
+
+==Isotopes==
+Another application is in [[radiochemistry]], where this may refer to '''[[isotopic ratio]]s''' or '''[[isotopic abundance]]s'''. Mathematically, the ''isotopic abundance'' is
+:<math> \mathrm{isotopic \ abundance} \ (\mathrm{i}) = \frac{N_\mathrm{i}}{N_\mathrm{tot}} \ ,</math>
+where ''N''<sub>i</sub> are the number of atoms of the isotope of interest and ''N''<sub>tot</sub> is the total number of atoms, while the ''atomic ratio'' is
+:<math> \mathrm{isotopic \ ratio} \ (\mathrm{i:j}) = \mathrm{isotopic \ percent} \ (\mathrm{i}) : \mathrm{isotopic \ percent} \ (\mathrm{j}) \ .</math>
+
+For example, the ''isotopic ratio'' of [[deuterium]] (D) to [[hydrogen]] (H) in [[heavy water]] is roughly {{nowrap|D:H {{=}} 1:7000}} (corresponding to an ''isotopic abundance'' of 0.00014%).
+
+==Doping in laser physics==
+In [[laser physics]] however, the ''atomic ratio'' may refer to the '''[[Dopant#Lasing media|doping]] ratio '''or the '''doping fraction'''.
+
+*For example, theoretically, a 100% ''doping ratio'' of '''[[Ytterbium|Yb]]''' '''<big>:</big>''' [[Yttrium aluminium garnet|'''Y'''<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>]] is pure '''Yb'''<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>.
+*The ''doping fraction'' equals,
+
+::::::::<math>\mathrm \frac{N_\mathrm{atoms \ of \ dopant}}{N_\mathrm{atoms \ of \ solution \ which \  can \ be \ substituted \ with \ the \ dopant}}</math>
+
+==See also==
+*[[Concentration#Table of concentrations and related quantities|Table of concentration measures]]
+
+==References==
+{{Reflist}}
+
+[[Category:Physical chemistry]]
+
+
+{{physics-stub}}
+{{physical-chemistry-stub}}

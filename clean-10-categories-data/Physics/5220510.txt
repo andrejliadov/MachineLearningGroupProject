@@ -1,0 +1,256 @@
+The following is a '''list of centroids''' of various [[two-dimensional]] and [[three-dimensional]] objects.  The [[centroid]] of an object <math>X</math> in <math>n</math>-[[dimension]]al [[space (mathematics)|space]] is the intersection of all [[hyperplane]]s that divide <math>X</math> into two parts of equal [[moment (physics)|moment]] about the hyperplane. Informally, it is the "[[average]]" of all points of <math>X</math>. For an object of uniform composition, the centroid of a body is also its [[Center of mass|center of mass]]. In the case of two-dimensional objects shown below, the hyperplanes are simply lines.
+
+==2-D Centroids==
+For each two-dimensional shape below, the area and the centroid coordinates <math>(\bar{x},\bar{y})</math> are given:
+{| class="wikitable" 
+|- 
+! Shape !! Figure !! <math>\bar x</math> !! <math>\bar y</math> !! Area
+|-
+|'''[[rectangle]] [[area]]'''
+| align="center" | [[Image:Block centroid axes.svg|250px]]
+| align="center"|0
+| align="center"|0
+| align="center"|<math>{bh}</math>
+|-
+|'''[[Triangle|General triangular]] [[area]]'''
+| align="center" | [[Image:Triangle centroid 1.svg|200px]]
+| align="center"|<math>\frac{x1+x2+x3}{3}</math><ref>https://www.mathopenref.com/coordcentroid.html</ref>
+| align="center"|<math>\frac{h}{3}</math>
+| align="center"|<math>\frac{bh}{2}</math>
+|-
+|'''[[Triangle|Isosceles-triangular]] [[area]]'''
+| align="center" | [[Image:Altitude of isosceles triangle.svg|120px]]
+| align="center"|<math>\frac{l}{2}</math>
+| align="center"|<math>\frac{h}{3}</math>
+| align="center"|<math>\frac{lh}{2}</math>
+|-
+|'''[[Triangle|Right-triangular]] [[area]]'''
+| align="center" | [[Image:Centroid of a triangle.svg|200px]]
+| align="center"|<math>\frac{b}{3}</math>
+| align="center"|<math>\frac{h}{3}</math>
+| align="center"|<math>\frac{bh}{2}</math>
+|-
+|'''[[Disk (mathematics)|Circular]] [[area]]'''
+| align="center"| [[Image:Centre de gravite disque.svg|180px]]
+| align="center"|<math>0</math>
+| align="center"|<math>0</math>
+| align="center"|<math>{\pi r^2}</math>
+|-
+|'''Quarter-circular area'''<ref>{{cite web|title=Quarter Circle|url=http://www.efunda.com/math/areas/CircleQuarter.cfm|website=eFunda|accessdate=23 April 2016}}</ref>
+| align="center"| [[Image:Centroid of a quarter circle.svg|200px]]
+| align="center"|<math>\frac{4r}{3\pi}</math>
+| align="center"|<math>\frac{4r}{3\pi}</math>
+| align="center"|<math>\frac{\pi r^2}{4}</math>
+|-
+|'''[[Semicircle|Semicircular]] area'''<ref>{{cite web|title=Circular Half|url=http://www.efunda.com/math/areas/CircleHalf.cfm|website=eFunda|accessdate=23 April 2016}}</ref>
+| align="center" | [[File:Centroid of a semicircle.svg|200px]]
+| align="center"|<math>0</math>
+| align="center"|<math>\frac{4r}{3\pi}</math>
+| align="center"|<math>\frac{\pi r^2}{2}</math>
+|-
+|'''[[Circular sector]]'''
+| align="center"| [[Image:Centroid of a circular sector.svg|200px]]
+| align="center"|<math>\frac{2r\sin(\alpha)}{3\alpha}</math>
+| align="center"|<math>\,\!0</math>
+| align="center"|<math>\,\!\alpha r^2</math>
+|-
+|'''[[Circular segment]]'''
+| align="center"| [[Image:Centroid of a circular segment.svg|200px]]
+| align="center"|<math>\frac{4r\sin^3(\alpha)}{3(2\alpha-\sin(2\alpha))}</math>
+| align="center"|<math>\,\!0</math>
+| align="center"|<math>\frac{r^2}{2}(2\alpha -\sin(2\alpha))</math>
+|-
+|'''[[Annulus (mathematics)|Annular]] sector'''
+| align="center"| [[Image:Centroid of an annular sector.svg|200px]]
+| align="center"|<math>\frac{2 \sin(\alpha)}{3 \alpha} \frac{r_2^3-r_1^3}{r_2^2-r_1^2}</math>
+| align="center"|<math>\,\!0</math>
+| align="center"|<math>\alpha(r_2^2-r_1^2)</math>
+|-
+|'''Quarter-circular [[Arc (geometry)|arc]]'''
+|The points on the circle <math>\,\!x^2 + y^2 = r^2</math> and in the first quadrant
+| align="center"|<math>\frac{2r}{\pi}</math>
+| align="center"|<math>\frac{2r}{\pi}</math>
+| align="center"|<math>L=\frac{\pi r}{2}</math>
+|-
+|'''Semicircular arc'''
+|The points on the circle <math>\,\!x^2 + y^2 = r^2</math> and above the <math>\,\!x</math> axis
+| align="center"|<math>\,\!0</math>
+| align="center"|<math>\frac{2r}{\pi}</math>
+| align="center"|<math>L=\,\!\pi r</math>
+|-
+|'''[[Arc (geometry)|Arc]] of [[circle]]'''
+|The points on the curve (in polar coordinates) <math>\,\!\rho = r</math>, from <math>\,\!\theta = -\alpha</math> to <math>\,\!\theta = \alpha</math>
+| align="center"|'''<math>\frac{\rho\sin(\alpha)}{\alpha}</math>'''
+| align="center"|<math>\,\!0</math>
+| align="center"|<math>L=\,\!2\alpha \rho</math>
+|-
+|'''[[Ellipse|elliptical]] [[area]]'''
+| align="center" | [[Image:Ellipse-def0.svg|200px]]
+| align="center"|<math>0</math>
+| align="center"|<math>0</math>
+| align="center"|<math>{\pi a b}</math>
+|-
+|'''Quarter-elliptical area'''
+| align="center" | [[Image:Centroid of a quarter ellipse.svg|200px]]
+| align="center"|<math>\frac{4a}{3\pi}</math>
+| align="center"|<math>\frac{4b}{3\pi}</math>
+| align="center"|<math>\frac{\pi a b}{4}</math>
+|-
+|'''Semielliptical area'''
+| align="center"|[[Image:Centroid of a semiellipse.svg|200px]]
+| align="center"|<math>\,\!0</math>
+| align="center"|<math>\frac{4b}{3\pi}</math>
+| align="center"|<math>\frac{\pi a b}{2}</math>
+|-
+|'''[[Parabola|Parabolic]] area'''
+|The area between the curve <math>\,\!y = \frac{h}{b^2} x^2 </math> and the line <math>\,\!y = h</math>
+| align="center"|<math>\,\!0</math>
+| align="center"|<math>\frac{3h}{5}</math>
+| align="center"|<math>\frac{4bh}{3}</math>
+|-
+|'''Semiparabolic area''' 
+The area between the curve <math>y = \frac{h}{b^2} x^2 </math> and the <math>\,\!y</math> axis, from <math>\,\!y = 0</math> to <math>\,\!y = h</math>
+| align="center"|[[File:Half Parabolic Segment Centroid.png|200px]]
+| align="center"|<math>\frac{3b}{8}</math>
+| align="center"|<math>\frac{3h}{5}</math>
+| align="center"|<math>\frac{2bh}{3}</math>
+|-
+|'''Parabolic [[spandrel]]'''
+|The area between the curve <math>\,\!y = \frac{h}{b^2} x^2 </math> and the <math>\,\!x</math> axis, from <math>\,\!x = 0</math> to <math>\,\!x = b</math>
+| align="center"|<math>\frac{3b}{4}</math>
+| align="center"|<math>\frac{3h}{10}</math>
+| align="center"|<math>\frac{bh}{3}</math>
+|-
+|'''General [[spandrel]]'''
+|The area between the curve <math>y = \frac{h}{b^n} x^n</math> and the <math>\,\!x</math> axis, from <math>\,\!x = 0</math> to <math>\,\!x = b</math>
+| align="center"|<math>\frac{n + 1}{n + 2} b</math>
+| align="center"|<math>\frac{n + 1}{4n + 2} h</math>
+| align="center"|<math>\frac{bh}{n + 1}</math>
+|}
+
+*It should be noted to avoid confusion that for the centroid coordinates marked as zero, it truly means the coordinates are at the origin, and the equations to get those points are the lengths of the included axes divided by two, in order to reach the center which in these cases are the origin and thus zero.
+
+==3-D Centroids==
+For each three-dimensional body below, the volume and the centroid coordinates <math>(\bar{x},\bar{y})</math>, <math>(\bar{z})</math> are given:
+
+{| class="wikitable" 
+|- 
+! Shape !! Figure !! <math>\bar x</math> !! <math>\bar y</math> !! <math>\bar z</math> !! Volume
+|-
+|'''[[Cuboid]]'''
+|a, b = the sides of the cuboid's base <br> c = the third side of the cuboid
+| align="center"|<math>\frac{a}{2}</math>
+| align="center"|<math>\frac{b}{2}</math>
+| align="center"|<math>\frac{c}{2}</math>
+| align="center"|<math>{abc}</math>
+|-
+|'''Right-rectangular [[pyramid]]'''
+|a, b = the sides of the base <br> h = the distance is from base to the apex
+| align="center"|<math>\frac{a}{2}</math>
+| align="center"|<math>\frac{b}{2}</math>
+| align="center"|<math>\frac{h}{4}</math>
+| align="center"|<math>\frac{abh}{3}</math>
+|-
+|'''General triangular [[prism (geometry)|prism]]'''
+|b = the base side of the prism's triangular base, <br> h = the height of the prism's triangular base <br> L = the length of the prism
+| align="center"|see above<br> for general <br> triangular base
+| align="center"|<math>\frac{h}{3}</math>
+| align="center"|<math>\frac{L}{2}</math>
+| align="center"|<math>\frac{bhL}{2}</math>
+|-
+|'''Isoscele triangular [[prism (geometry)|prism]]'''
+|b = the base side of the prism's triangular base, <br> h = the height of the prism's triangular base <br> L = the length of the prism
+| align="center"|<math>\frac{b}{2}</math>
+| align="center"|<math>\frac{h}{3}</math>
+| align="center"|<math>\frac{L}{2}</math>
+| align="center"|<math>\frac{bhL}{2}</math>
+|-
+|'''Right-triangular [[prism (geometry)|prism]]'''
+|b = the base side of the prism's triangular base, <br> h = the perpendicular side of the prism's triangular base <br> L = the length of the prism
+| align="center"|<math>\frac{b}{3}</math>
+| align="center"|<math>\frac{h}{3}</math>
+| align="center"|<math>\frac{L}{2}</math>
+| align="center"|<math>\frac{bhL}{2}</math>
+|-
+|'''Right circular [[cylinder]]'''
+|r = the radius of the cylinder <br>h = the height of the cylinder
+| align="center"|<math>0</math>
+| align="center"|<math>0</math>
+| align="center"|<math>\frac{h}{2}</math>
+| align="center"|<math>{\pi r^2h}</math>
+|-
+|'''Right circular [[cone|solid cone]]'''
+| r = the radius of the cone's base <br> h = the distance is from base to the apex
+| align="center"|<math>0</math>
+| align="center"|<math>0</math>
+| align="center"|<math>\frac{h}{4}</math>
+| align="center"|<math>\frac{\pi r^2 h}{3}</math>
+|-
+|'''Solid [[sphere]]'''
+| r = the radius of the sphere
+| align="center"|<math>0</math>
+| align="center"|<math>0</math>
+| align="center"|<math>0</math> 
+| align="center"|<math>\frac{4 \pi r^3}{3}</math>
+|-
+|'''Solid [[sphere|hemisphere]]'''
+| r = the radius of the hemisphere
+| align="center"|<math>0</math>
+| align="center"|<math>0</math>
+| align="center"|<math>\frac{3 r}{8}</math>
+| align="center"|<math>\frac{2 \pi r^3}{3}</math>
+|-
+|'''Solid [[ellipsoid|semi-ellipsoid]] of revolution around z-axe'''
+| a = the radius of the base circle <br>  h = the height of the semi-ellipsoid from the base cicle's center to the edge
+| align="center"|<math>0</math>
+| align="center"|<math>0</math>
+| align="center"|<math>\frac{3 h}{8}</math>
+| align="center"|<math>\frac{2 \pi a^2 h}{3}</math>
+|-
+|'''Solid [[paraboloid]] of revolution around z-axe'''
+| a = the radius of the base circle <br> h = the height of the paboloid from the base cicle's center to the edge
+| align="center"|<math>0</math>
+| align="center"|<math>0</math>
+| align="center"|<math>\frac{h}{3}</math>
+| align="center"|<math>\frac{\pi a^2 h}{2}</math>
+|-
+|'''Solid [[ellipsoid]]'''
+| a, b, c = the principal semi-axes of the ellipsoid
+| align="center"|<math>0</math>
+| align="center"|<math>0</math>
+| align="center"|<math>0</math> 
+| align="center"|<math>\frac{4 \pi a b c}{3}</math>
+|-
+|'''Solid [[ellipsoid|semi-ellipsoid]] around z-axe'''
+| a, b = the principal semi-axes of the base ellipse <br> c = the principal z-semi-axe from the center of base ellipse
+| align="center"|<math>0</math>
+| align="center"|<math>0</math>
+| align="center"|<math>\frac{3 c}{8}</math>
+| align="center"|<math>\frac{2 \pi a b c}{3}</math>
+|-
+|'''Solid [[paraboloid]] around z-axe'''
+| a, b = the principal semi-axes of the base ellipse <br> c = the principal z-semi-axe from the center of base ellipse 
+| align="center"|<math>0</math>
+| align="center"|<math>0</math>
+| align="center"|<math>\frac{c}{3}</math>
+| align="center"|<math>\frac{\pi a b c}{2}</math>
+|}
+
+==See also==
+
+* [[List of moments of inertia]]
+* [[List of second moments of area]]
+
+==References==
+
+{{reflist}}
+
+==External links==
+
+* http://www.engineering.com/Library/ArticlesPage/tabid/85/articleType/ArticleView/articleId/109/Centroids-of-Common-Shapes.aspx
+
+[[Category:Mechanics|Centroids, List of]]
+[[Category:Physics-related lists|Centroids, List of]]
+[[Category:Geometric centers|Centroids, List of]]
+
+{{classicalmechanics-stub}}

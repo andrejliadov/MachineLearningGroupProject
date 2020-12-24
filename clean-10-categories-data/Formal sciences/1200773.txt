@@ -1,0 +1,14 @@
+The '''midparent''' value is defined as the average of the trait value of father and a scaled version of the mother. This value can be used in the study to analyze the data set without heeding sex effects. Studying [[quantitative traits]] in [[heritability|heritability studies]] may be complicated by [[Sexual dimorphism|sex differences]] observed for the trait. 
+
+Well-known examples include studies of stature height, whose midparent value ''h''<sub>''mp''</sub> is given by:<ref>Vogel, F. & Motulsky, A. G. (1997) Human Genetics: Problems and Approaches. Springer, 878, p.&nbsp;207.</ref>
+
+:<math>h_{mp}=\frac{h_f+(1.08\times h_m)}{2}</math>
+
+where ''h''<sub>''f''</sub> and ''h''<sub>''m''</sub> are, respectively, the father's and mother's heights. 
+The [[coefficient]] 1.08 serves as a [[Scale factor|scaling factor]]. After the 1.08 scaling, the mean of the mother's height is the same as that of the father's, and the variance is closer to the father's; in this way, sex difference can be ignored.
+
+==References==
+{{reflist}}
+
+[[Category:Genetics]]
+[[Category:Statistics]]

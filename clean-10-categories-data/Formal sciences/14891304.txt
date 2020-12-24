@@ -1,0 +1,97 @@
+An '''abstract family of acceptors (AFA)''' is a grouping of generalized [[Finite state machine#Acceptors and recognizers|acceptors]]. Informally, an acceptor is a device with a finite state control, a finite number of input symbols, and an internal store with a read and write function. Each acceptor has a start state and a set of accepting states. The device reads a sequence of symbols, transitioning from state to state for each input symbol. If the device ends in an accepting state, the device is said to accept the sequence of symbols. A family of acceptors is a set of acceptors with the same type of internal store. The study of AFA is part of AFL ([[abstract family of languages|abstract families of languages]]) theory.<ref name="Seymour">[[Seymour Ginsburg]], ''Algebraic and automata theoretic properties of formal languages'', North-Holland, 1975, {{ISBN|0-7204-2506-9}}.</ref>
+
+==Formal definitions==
+
+===AFA Schema===
+An ''AFA Schema'' is an ordered 4-tuple <math>(\Gamma, I, f, g)</math>, where
+# <math>\Gamma</math> and <math>I</math> are nonempty abstract sets.
+# <math>f</math> is the ''write'' function: <math>f : \Gamma^* \times I \rightarrow \Gamma^* \cup \{\empty\}</math> (N.B. * is the [[Kleene star]] operation).
+# <math>g</math> is the ''read'' function, a mapping from <math>\Gamma^*</math> into the finite subsets of <math>\Gamma^*</math>, such that <math>g (\epsilon) = \{ \epsilon \}</math> and <math>\epsilon</math> is in <math>g(\gamma)</math> if and only if <math>\gamma = \epsilon</math>. (N.B. <math>\epsilon</math> is the empty word).
+# For each <math>\gamma</math> in <math>g(\Gamma^*)</math>, there is an element <math>1_\gamma</math> in <math>I</math> satisfying <math>f(\gamma', 1_\gamma) = \gamma'</math> for all <math>\gamma'</math> such that <math>\gamma</math> is in <math>g(\gamma')</math>.
+# For each ''u'' in ''I'', there exists a finite set <math>\Gamma_u</math>  ⊆ <math>\Gamma</math>, such that if <math>\Gamma_1</math>  ⊆ <math>\Gamma</math>, <math>\gamma</math> is in <math>\Gamma_1^*</math>, and <math>f(\gamma,u) \ne \empty</math>, then <math>f(\gamma,u)</math> is in <math>(\Gamma_1 \cup \Gamma_u)^*</math>.
+
+===Abstract family of acceptors===
+An ''abstract family of acceptors (AFA)'' is an ordered pair <math>(\Omega, \mathcal{D})</math> such that:
+#<math>\Omega</math> is an ordered 6-tuple (<math>K</math>, <math>\Sigma</math>, <math>\Gamma</math>, <math>I</math>, <math>f</math>, <math>g</math>), where
+## (<math>\Gamma</math>, <math>I</math>, <math>f</math>, <math>g</math>) is an AFA schema; and
+## <math>K</math> and <math>\Sigma</math> are infinite abstract sets
+#<math>\mathcal{D}</math> is the family of all acceptors <math>D</math> = (<math>K_1</math>, <math>\Sigma_1</math>, <math>\delta</math>, <math>q_0</math>, <math>F</math>), where
+##<math>K_1</math> and <math>\Sigma_1</math>  are finite subsets of <math>K</math>, and <math>\Sigma</math> respectively, <math>F</math> ⊆ <math>K_1</math>, and <math>q_0</math> is in <math>K_1</math>; and
+##<math>\delta</math> (called the ''transition'' function) is a mapping from <math>K_1 \times  (\Sigma_1 \cup \{ \epsilon \}) \times g(\Gamma^*)</math> into the finite subsets of <math>K_1 \times I</math> such that the set <math>G_D = \{ \gamma </math> | <math>\delta(q,a,\gamma) </math> ≠ ø for some <math>q</math> and <math>a \}</math> is finite.
+
+For a given acceptor, let <math>\vdash</math> be the relation on <math>K_1 \times  \Sigma_1^* \times \Gamma^*</math> defined by: For <math>a</math> in <math>\Sigma_1 \cup \{ \epsilon \}</math>, <math>(p,aw,\gamma) \vdash (p',w,\gamma')</math> if there exists a <math>\overline{\gamma}</math> and <math>u</math> such that <math>\overline{\gamma}</math> is in <math>g(\gamma)</math>, <math>(p',u)</math> is in <math>\delta(p,a,\overline{\gamma})</math> and <math>f(\gamma,u)=\gamma'</math>. Let <math>\vdash^*</math> denote the [[transitive closure]] of <math>\vdash</math>.
+
+Let <math>(\Omega, \mathcal{D})</math> be an AFA and <math>D</math> = (<math>K_1</math>, <math>\Sigma_1</math>, <math>\delta</math>, <math>q_0</math>, <math>F</math>) be in <math>D</math>. Define <math>L(D)</math> to be the set <math>\{ w \in \Sigma_1^* | \exists q \in F . (q_0,w,\epsilon) \vdash^* (q,\epsilon,\epsilon)\}</math>. For each subset <math>\mathcal{E}</math> of <math>\mathcal{D}</math>, let <math>\mathcal{L}(\mathcal{E}) = \{L(D) | D \in \mathcal{E} \}</math>.
+
+Define <math>L_f(D)</math> to be the set <math>\{ w \in \Sigma_1^* | \exists(q \in F)\exists(\gamma \in \Gamma^*) . (q_0,w,\epsilon) \vdash^* (q,\epsilon,\gamma)\}</math>. For each subset <math>\mathcal{E}</math> of <math>\mathcal{D}</math>, let <math>\mathcal{L}_f(\mathcal{E}) = \{L_f(D) | D \in \mathcal{E} \}</math>.
+
+==Informal discussion==
+
+===AFA Schema===
+An AFA schema defines a store or memory with read and write function. The symbols in <math>\Gamma</math> are called ''storage symbols'' and the symbols in <math>I</math> are called ''instructions''. The write function <math>f</math> returns a new storage state given the current storage state and an instruction. The read function <math>g</math> returns the current state of memory. Condition (3) insures the empty storage configuration is distinct from other configurations. Condition (4)  requires there be an identity instruction that allows the state of memory to remain unchanged while the acceptor changes state or advances the input. Condition (5) assures that the set of storage symbols for any given acceptor is finite.
+
+===Abstract family of acceptors===
+An AFA is the set of all acceptors over a given pair of state and input alphabets which have the same storage mechanism defined by a given AFA schema. The <math>\vdash</math> relation defines one step in the operation of an acceptor.  <math>L_f(D)</math> is the set of words accepted by acceptor <math>D</math> by having the acceptor enter an accepting state. <math>L(D)</math> is the set of words accepted by acceptor <math>D</math> by having the acceptor simultaneously enter an accepting state and having an empty storage.
+
+The abstract acceptors defined by AFA are generalizations of other types of acceptors (e.g. [[finite state automata]], [[pushdown automata]], etc.). They have a finite state control like other automata, but their internal storage may vary widely from the stacks and tapes used in classical automata.
+
+==Results from AFL theory==
+The main result from AFL theory is that a family of languages <math>\mathcal{L}</math> is a full AFL if and only if <math>\mathcal{L} = \mathcal{L}(\mathcal{D})</math> for some AFA <math>(\Omega, \mathcal{D})</math>.  Equally important is the result that <math>\mathcal{L}</math> is a full semi-AFL if and only if <math>\mathcal{L} = \mathcal{L}_f(\mathcal{D})</math> for some AFA <math>(\Omega, \mathcal{D})</math>.
+
+==Origins==
+
+[[Seymour Ginsburg]] of the [[University of Southern California]] and [[Sheila Greibach]] of [[Harvard University]] first presented their AFL theory paper at the [[IEEE]] Eighth Annual Symposium on Switching and Automata Theory in 1967.<ref>[http://www.worldcat.org/oclc/2891921 IEEE conference record of 1967 Eighth Annual Symposium on Switching and Automata Theory] : papers presented at the Eighth Annual Symposium, University of Texas, October 18–20, 1967.</ref>
+
+==References==
+<references/>
+
+[[Category:Formal languages]]
+[[Category:Applied mathematics]]An '''abstract family of acceptors (AFA)''' is a grouping of generalized [[Finite state machine#Acceptors and recognizers|acceptors]]. Informally, an acceptor is a device with a finite state control, a finite number of input symbols, and an internal store with a read and write function. Each acceptor has a start state and a set of accepting states. The device reads a sequence of symbols, transitioning from state to state for each input symbol. If the device ends in an accepting state, the device is said to accept the sequence of symbols. A family of acceptors is a set of acceptors with the same type of internal store. The study of AFA is part of AFL ([[abstract family of languages|abstract families of languages]]) theory.<ref name="Seymour">[[Seymour Ginsburg]], ''Algebraic and automata theoretic properties of formal languages'', North-Holland, 1975, {{ISBN|0-7204-2506-9}}.</ref>
+
+==Formal definitions==
+
+===AFA Schema===
+An ''AFA Schema'' is an ordered 4-tuple <math>(\Gamma, I, f, g)</math>, where
+# <math>\Gamma</math> and <math>I</math> are nonempty abstract sets.
+# <math>f</math> is the ''write'' function: <math>f : \Gamma^* \times I \rightarrow \Gamma^* \cup \{\empty\}</math> (N.B. * is the [[Kleene star]] operation).
+# <math>g</math> is the ''read'' function, a mapping from <math>\Gamma^*</math> into the finite subsets of <math>\Gamma^*</math>, such that <math>g (\epsilon) = \{ \epsilon \}</math> and <math>\epsilon</math> is in <math>g(\gamma)</math> if and only if <math>\gamma = \epsilon</math>. (N.B. <math>\epsilon</math> is the empty word).
+# For each <math>\gamma</math> in <math>g(\Gamma^*)</math>, there is an element <math>1_\gamma</math> in <math>I</math> satisfying <math>f(\gamma', 1_\gamma) = \gamma'</math> for all <math>\gamma'</math> such that <math>\gamma</math> is in <math>g(\gamma')</math>.
+# For each ''u'' in ''I'', there exists a finite set <math>\Gamma_u</math>  ⊆ <math>\Gamma</math>, such that if <math>\Gamma_1</math>  ⊆ <math>\Gamma</math>, <math>\gamma</math> is in <math>\Gamma_1^*</math>, and <math>f(\gamma,u) \ne \empty</math>, then <math>f(\gamma,u)</math> is in <math>(\Gamma_1 \cup \Gamma_u)^*</math>.
+
+===Abstract family of acceptors===
+An ''abstract family of acceptors (AFA)'' is an ordered pair <math>(\Omega, \mathcal{D})</math> such that:
+#<math>\Omega</math> is an ordered 6-tuple (<math>K</math>, <math>\Sigma</math>, <math>\Gamma</math>, <math>I</math>, <math>f</math>, <math>g</math>), where
+## (<math>\Gamma</math>, <math>I</math>, <math>f</math>, <math>g</math>) is an AFA schema; and
+## <math>K</math> and <math>\Sigma</math> are infinite abstract sets
+#<math>\mathcal{D}</math> is the family of all acceptors <math>D</math> = (<math>K_1</math>, <math>\Sigma_1</math>, <math>\delta</math>, <math>q_0</math>, <math>F</math>), where
+##<math>K_1</math> and <math>\Sigma_1</math>  are finite subsets of <math>K</math>, and <math>\Sigma</math> respectively, <math>F</math> ⊆ <math>K_1</math>, and <math>q_0</math> is in <math>K_1</math>; and
+##<math>\delta</math> (called the ''transition'' function) is a mapping from <math>K_1 \times  (\Sigma_1 \cup \{ \epsilon \}) \times g(\Gamma^*)</math> into the finite subsets of <math>K_1 \times I</math> such that the set <math>G_D = \{ \gamma </math> | <math>\delta(q,a,\gamma) </math> ≠ ø for some <math>q</math> and <math>a \}</math> is finite.
+
+For a given acceptor, let <math>\vdash</math> be the relation on <math>K_1 \times  \Sigma_1^* \times \Gamma^*</math> defined by: For <math>a</math> in <math>\Sigma_1 \cup \{ \epsilon \}</math>, <math>(p,aw,\gamma) \vdash (p',w,\gamma')</math> if there exists a <math>\overline{\gamma}</math> and <math>u</math> such that <math>\overline{\gamma}</math> is in <math>g(\gamma)</math>, <math>(p',u)</math> is in <math>\delta(p,a,\overline{\gamma})</math> and <math>f(\gamma,u)=\gamma'</math>. Let <math>\vdash^*</math> denote the [[transitive closure]] of <math>\vdash</math>.
+
+Let <math>(\Omega, \mathcal{D})</math> be an AFA and <math>D</math> = (<math>K_1</math>, <math>\Sigma_1</math>, <math>\delta</math>, <math>q_0</math>, <math>F</math>) be in <math>D</math>. Define <math>L(D)</math> to be the set <math>\{ w \in \Sigma_1^* | \exists q \in F . (q_0,w,\epsilon) \vdash^* (q,\epsilon,\epsilon)\}</math>. For each subset <math>\mathcal{E}</math> of <math>\mathcal{D}</math>, let <math>\mathcal{L}(\mathcal{E}) = \{L(D) | D \in \mathcal{E} \}</math>.
+
+Define <math>L_f(D)</math> to be the set <math>\{ w \in \Sigma_1^* | \exists(q \in F)\exists(\gamma \in \Gamma^*) . (q_0,w,\epsilon) \vdash^* (q,\epsilon,\gamma)\}</math>. For each subset <math>\mathcal{E}</math> of <math>\mathcal{D}</math>, let <math>\mathcal{L}_f(\mathcal{E}) = \{L_f(D) | D \in \mathcal{E} \}</math>.
+
+==Informal discussion==
+
+===AFA Schema===
+An AFA schema defines a store or memory with read and write function. The symbols in <math>\Gamma</math> are called ''storage symbols'' and the symbols in <math>I</math> are called ''instructions''. The write function <math>f</math> returns a new storage state given the current storage state and an instruction. The read function <math>g</math> returns the current state of memory. Condition (3) insures the empty storage configuration is distinct from other configurations. Condition (4)  requires there be an identity instruction that allows the state of memory to remain unchanged while the acceptor changes state or advances the input. Condition (5) assures that the set of storage symbols for any given acceptor is finite.
+
+===Abstract family of acceptors===
+An AFA is the set of all acceptors over a given pair of state and input alphabets which have the same storage mechanism defined by a given AFA schema. The <math>\vdash</math> relation defines one step in the operation of an acceptor.  <math>L_f(D)</math> is the set of words accepted by acceptor <math>D</math> by having the acceptor enter an accepting state. <math>L(D)</math> is the set of words accepted by acceptor <math>D</math> by having the acceptor simultaneously enter an accepting state and having an empty storage.
+
+The abstract acceptors defined by AFA are generalizations of other types of acceptors (e.g. [[finite state automata]], [[pushdown automata]], etc.). They have a finite state control like other automata, but their internal storage may vary widely from the stacks and tapes used in classical automata.
+
+==Results from AFL theory==
+The main result from AFL theory is that a family of languages <math>\mathcal{L}</math> is a full AFL if and only if <math>\mathcal{L} = \mathcal{L}(\mathcal{D})</math> for some AFA <math>(\Omega, \mathcal{D})</math>.  Equally important is the result that <math>\mathcal{L}</math> is a full semi-AFL if and only if <math>\mathcal{L} = \mathcal{L}_f(\mathcal{D})</math> for some AFA <math>(\Omega, \mathcal{D})</math>.
+
+==Origins==
+
+[[Seymour Ginsburg]] of the [[University of Southern California]] and [[Sheila Greibach]] of [[Harvard University]] first presented their AFL theory paper at the [[IEEE]] Eighth Annual Symposium on Switching and Automata Theory in 1967.<ref>[http://www.worldcat.org/oclc/2891921 IEEE conference record of 1967 Eighth Annual Symposium on Switching and Automata Theory] : papers presented at the Eighth Annual Symposium, University of Texas, October 18–20, 1967.</ref>
+
+==References==
+<references/>
+
+[[Category:Formal languages]]
+[[Category:Applied mathematics]]

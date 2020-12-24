@@ -1,0 +1,250 @@
+{{short description|establishing the configuration and plans for a new aeroplane}}
+[[File:AST model in wind tunnel.jpg|thumb|AST model in wind tunnel]]
+The '''aircraft design process''' is a loosely defined method used to balance many competing and demanding requirements to produce an aircraft that is strong, lightweight, economical and can carry an adequate payload while being sufficiently reliable to safely fly for the design life of the aircraft. Similar to, but more exacting than, the usual [[engineering design process]], the technique is highly iterative, involving high level configuration tradeoffs, a mixture of analysis and testing and the detailed examination of the adequacy of every part of the structure. For some types of aircraft, the design process is regulated by [[national aviation authority|national airworthiness authorities]]. 
+
+This article deals with powered [[aircraft]] such as [[airplane]]s and [[helicopter]] designs.
+
+==Design constraints==
+===Purpose===
+The design process starts with the aircraft's intended purpose. Commercial airliners are designed for carrying a passenger or cargo payload, long range and greater fuel efficiency where as fighter jets are designed to perform high speed maneuvers and provide close support to ground troops. Some aircraft have specific missions, for instance, [[Amphibious aircraft|amphibious airplanes]] have a unique design that allows them to operate from both land and water, some fighters, like the [[Harrier Jump Jet]], have [[VTOL]] (Vertical Take-off and Landing) ability, helicopters have the ability to hover over an area for a period of time.<ref>{{cite web|title=Hovering|url=http://www.dynamicflight.com/flight_maneuvers/hovering/|work=Flight maneuvers|publisher=www.dynamicflight.com|accessdate=2011-10-10}}</ref>
+
+The purpose may be to fit a specific requirement, e.g. as in the historical case of a [[list of Air Ministry specifications|British Air Ministry specification]], or fill a perceived "gap in the market"; that is, a class or design of aircraft which does not yet exist, but for which there would be significant demand.
+
+===Aircraft regulations===
+Another important factor that influences the design are the requirements for obtaining a [[type certificate]] for a new design of aircraft. These requirements are published by major national airworthiness authorities including the US [[Federal Aviation Administration]] and the [[European Aviation Safety Agency]].<ref>{{cite web | url=http://www.tc.gc.ca/eng/civilaviation/publications/tp14371-lra-2-0-2566.htm#2-7 | title=Airworthiness - Transport Canada | publisher=Transport Canada | work=Airworthiness Directives | access-date=2011-12-05 | archive-url=https://web.archive.org/web/20110417023605/http://www.tc.gc.ca/eng/civilaviation/publications/tp14371-lra-2-0-2566.htm#2-7 | archive-date=2011-04-17 | url-status=dead }}</ref><ref>{{cite web | url=http://www.casa.gov.au/scripts/nc.dll?WCMS:STANDARD::pc=PC_90822 | title=Airworthiness - CASA | publisher=CASA - Australian Government | work=Airworthiness Directives | access-date=2011-12-05 | archive-url=https://web.archive.org/web/20111213182816/http://www.casa.gov.au/scripts/nc.dll?WCMS:STANDARD::pc=PC_90822 | archive-date=2011-12-13 | url-status=dead }}</ref>
+
+Airports may also impose limits on aircraft, for instance, the maximum wingspan allowed for a conventional aircraft is {{convert|80|m|ft}} to prevent collisions between aircraft while taxiing.<ref>{{cite web|title=ICAO Aerodrome Standards|url=http://www.icao.int/fsix/_Library%5CManual%20Aerodrome%20Stds.pdf|work=ICAO Regulations|publisher=ICAO|accessdate=5 October 2011}}</ref>
+
+===Financial factors and market===
+Budget limitations, market requirements and competition set constraints on the design process and comprise the non-technical influences on aircraft design along with environmental factors. Competition leads to companies striving for better efficiency in the design without compromising performance and incorporating new techniques and technology.<ref>{{cite book|title=Civil Jet Aircraft Design|year=1999|publisher=Arnold Publishers|location=Great Britain|isbn=0-340-74152-X|author=Lloyd R. Jenkinson|author2=Paul Simpkin|author3=Darren Rhodes|page=10|chapter=Aircraft Market}}</ref>
+
+In the 1950s and ’60s, unattainable project goals were regularly set, but then abandoned, whereas today troubled programs like the [[Boeing 787]] and the [[Lockheed Martin F-35]] have proven far more costly and complex to develop than expected.<!--<ref name=AvWeek6may2016>-->
+More advanced and integrated design tools have been developed.<!--<ref name=AvWeek6may2016>--> [[Model-based systems engineering]] predicts potentially problematic interactions, while [[Computational science|computational analysis]] and optimization allows designers to explore more options early in the process.<!--<ref name=AvWeek6may2016>--> Increasing [[automation]] in engineering and manufacturing allows faster and cheaper development.<!--<ref name=AvWeek6may2016>-->
+Technology advances from materials to manufacturing enable more complex design variations like multifunction parts.<!--<ref name=AvWeek6may2016>--> Once impossible to design or construct, these can now be [[3D printed]], but they have yet to prove their utility in applications like the [[Northrop Grumman B-21]] or the re-engined [[A320neo]] and [[737 MAX]].<!--<ref name=AvWeek6may2016>--> [[Airbus and Boeing]] also recognize the economic limits, that the next [[airliner]] generation cannot cost more than the previous ones did.<ref name=AvWeek6may2016>{{cite news |url= http://aviationweek.com/technology-milestones/problems-aerospace-still-has-solve |title= Problems Aerospace Still Has To Solve |date= May 6, 2016 |author= Graham Warwick |work= Aviation Week & Space Technology}}</ref>
+
+===Environmental factors===
+An increase in the number of aircraft also means greater carbon emissions. Environmental scientists have voiced concern over the main kinds of pollution associated with aircraft, mainly noise and emissions. Aircraft engines have been historically notorious for creating noise pollution and the expansion of airways over already congested and polluted cities have drawn heavy criticism, making it necessary to have environmental policies for aircraft noise.<ref>{{cite web|title=Travel(Air) - Aircraft Noise|url=http://ec.europa.eu/transport/air/environment/aircraft_noise_en.htm|work=Mobility and Transport|publisher=European Commission|accessdate=7 October 2011|date=2010-10-30|archive-url=https://web.archive.org/web/20090417003255/http://ec.europa.eu/transport/air/environment/aircraft_noise_en.htm#|archive-date=2009-04-17|url-status=dead}}</ref><ref>{{cite web|title=Annex 16 - Environmental Protection |url=http://www.icao.int/icaonet/anx/info/annexes_booklet_en.pdf |work=Convention on International Civil Aviation |publisher=ICAO |accessdate=8 October 2011 |page=29 |url-status=dead |archiveurl=https://web.archive.org/web/20111005040825/http://www.icao.int/icaonet/anx/info/annexes_booklet_en.pdf |archivedate=October 5, 2011 }}</ref> Noise also arises from the airframe, where the airflow directions are changed.<ref>{{cite web|title=Airframe Noise Reduction|url=http://www.aeronautics.nasa.gov/docs/chicago/airframe.htm|work=NASA Aeronautics|publisher=NASA|accessdate=7 October 2011|author=William Wilshire|archive-url=https://web.archive.org/web/20111021225904/http://www.aeronautics.nasa.gov/docs/chicago/airframe.htm#|archive-date=2011-10-21|url-status=dead}}</ref> Improved noise regulations have forced designers to create quieter engines and airframes.<ref>{{cite web|title=Environment: Aircraft Noise Reduction|url=http://www.aeronautics.nasa.gov/docs/chicago/noise.htm|work=NASA Aeronautics|publisher=NASA|accessdate=7 October 2011|author=Neal Nijhawan|archive-url=https://web.archive.org/web/20111018200346/http://www.aeronautics.nasa.gov/docs/chicago/noise.htm#|archive-date=2011-10-18|url-status=dead}}</ref> Emissions from aircraft include particulates, [[carbon dioxide]] (CO<sub>2</sub>), [[Sulfur dioxide]] (SO<sub>2</sub>), [[Carbon monoxide]] (CO), various [[oxides]] of [[nitrates]] and unburnt [[hydrocarbons]].<ref>{{cite web|title=Safeguarding our atmosphere|url=http://www.nasa.gov/centers/glenn/about/fs10grc.html|work=Fact Sheet|publisher=NASA - Glenn Research Center|accessdate=7 October 2011}}</ref>  To combat the pollution, ICAO set recommendations in 1981 to control aircraft emissions.<ref name="Doc 9889">{{cite web|title=ICAO Airport Air Quality Guidance Manual |url=http://www.icao.int/icaonet/dcs/9889/9889_en.pdf |work=ICAO Guidelines |publisher=ICAO (International Civil Aviation Organisation) |accessdate=7 October 2011 |date=2007-04-15 |url-status=dead |archiveurl=https://web.archive.org/web/20131214220636/http://www.icao.int/icaonet/dcs/9889/9889_en.pdf |archivedate=December 14, 2013 }}(see http://www.icao.int/environmental-protection/Documents/Publications/FINAL.Doc%209889.1st%20Edition.alltext.en.pdf for updated manual.</ref> Newer, environmentally friendly fuels have been developed<ref>{{cite web|title=Biofuel Flight Demonstration|url=http://www.virgin-atlantic.com/en/us/allaboutus/environment/biofuel.jsp|work=Environment|publisher=Virgin Atlantic|accessdate=7 October 2011|year=2008}}</ref> and the use of recyclable materials in manufacturing<ref>{{cite web|title=Aircraft Recycling : Life and times of an aircraft|url=http://www.iata.org/pressroom/airlines-international/august-2011/pages/aircraft-recycling.aspx|work=Pressroom - Airlines International|publisher=IATA|accessdate=7 October 2011|archive-url=https://web.archive.org/web/20111027053159/http://www.iata.org/pressroom/airlines-international/august-2011/Pages/aircraft-recycling.aspx#|archive-date=2011-10-27|url-status=dead}}</ref> have helped reduce the ecological impact due to aircraft. Environmental limitations also affect airfield compatibility. Airports around the world have been built to suit the topography of the particular region. Space limitations, pavement design, [[runway]] end safety areas and the unique location of airport are some of the airport factors that influence aircraft design. However changes in aircraft design also influence airfield design as well, for instance, the recent introduction of new large aircraft (NLAs) such as the superjumbo [[Airbus A380]], have led to airports worldwide redesigning their facilities to accommodate its large size and service requirements.<ref>{{cite web|title=New Aircraft Characteristics Related To Airport Planning|url=http://my.fit.edu/~dkirk/3241/Lectures/Atrgpap.pdf|work=First ATRG Conference, Vancouver, Canada|publisher=Air Transport Research Group of the WCTR Society|accessdate=7 October 2011|author=Alexandre Gomes de Barros|author2=Sumedha Chandana Wirasinghe|year=1997}}</ref><ref>{{cite web|title=Airports prepare for the A380|url=http://atwonline.com/airline-financedata/article/airports-prepare-a380-0309|work=Airline Finance/Data|publisher=ATW (Air Transport World)|accessdate=7 October 2011|author=Sandra Arnoult|date=2005-02-28}}</ref>
+
+===Safety===
+The high speeds, fuel tanks, atmospheric conditions at cruise altitudes, natural hazards (thunderstorms, hail and bird strikes) and human error are some of the many hazards that pose a threat to air travel.<ref>{{cite web|title=Bird hazards|url=http://www.airsafe.com/birds.htm|work=Hazards|publisher=www.airsafe.com|accessdate=12 October 2011}}</ref><ref>{{cite web|title=The human component in air accidents|url=http://www.pilotfriend.com/safe/safety/human_and_accidents.htm|work=Air Safety|publisher=www.pilotfriend.com|accessdate=12 October 2011}}</ref><ref>{{cite web|title=Aviation Weather Hazards |url=http://www.navcanada.ca/ContentDefinitionFiles/publications/lak/CanadianPrairies/2-P32E.PDF |work=LAKP Prairies |publisher=www.navcanada.ca |accessdate=12 October 2011 |url-status=dead |archiveurl=https://web.archive.org/web/20111216030637/http://www.navcanada.ca/ContentDefinitionFiles/publications/lak/CanadianPrairies/2-P32E.PDF |archivedate=16 December 2011 }}</ref>
+
+[[Airworthiness]] is the standard by which aircraft are determined fit to fly.<ref>{{cite web|title=Airworthiness|url=http://www.thefreedictionary.com/airworthiness|work=Dictionary|publisher=The Free online Dictionary|accessdate=2011-10-10}}</ref>  The responsibility for airworthiness lies with [[National aviation authority|national aviation regulatory bodies]], [[Aircraft manufacturers|manufacturers]], as well as owners and operators.{{Citation needed|date=October 2011}}
+
+The [[International Civil Aviation Organization]] sets international standards and recommended practices on which national authorities should base their regulations.<ref>{{cite web | url=http://www.icao.int/environmental-protection/Pages/technology-standards.aspx | title=ICAO regulations | publisher=ICAO | accessdate=May 5, 2012}}</ref><ref>{{cite press release | url=http://www2.icao.int/en/ism/ICAO%20Annexes/Annex%208.pdf | title=Annex 8 - ICAO | publisher=ICAO | accessdate=May 5, 2012 | archive-url=https://web.archive.org/web/20120905175315/http://www2.icao.int/en/ism/ICAO%20Annexes/Annex%208.pdf# | archive-date=2012-09-05 | url-status=dead }}</ref> The national regulatory authorities set standards for airworthiness, issue certificates to manufacturers and operators and the standards of personnel training.<ref>{{cite book|title=Civil Jet Aircraft Design|year=1999|publisher=Arnold Publishers|location=Great Britain|isbn=0-340-74152-X|author=L. Jenkinson|author2=P. Simpkin|author3= D. Rhodes|page=55}}</ref> Every country has its own regulatory body such as the [[Federal Aviation Administration]] in USA, [[Directorate General of Civil Aviation (India)|DGCA (Directorate General of Civil Aviation)]] in India, etc.
+
+The aircraft manufacturer makes sure that the aircraft meets existing design standards, defines the operating limitations and maintenance schedules and provides support and maintenance throughout the operational life of the aircraft. The aviation operators include the [[Civil aviation|passenger and cargo airliners]], [[Military aviation|air forces]] and owners of private aircraft. They agree to comply with the regulations set by the regulatory bodies, understand the limitations of the aircraft as specified by the manufacturer, report defects and assist the manufacturers in keeping up the airworthiness standards.{{Citation needed|date=October 2011}}
+
+Most of the design criticisms these days are built on [[crashworthiness]]. Even with the greatest attention to airworthiness, accidents still occur. Crashworthiness is the qualitative evaluation of how aircraft survive an accident. The main objective is to protect the passengers or valuable cargo from the damage caused by an accident. In the case of airliners the stressed skin of the pressurized fuselage provides this feature, but in the event of a nose or tail impact, large bending moments build all the way through the fuselage, causing fractures in the shell, causing the fuselage to break up into smaller sections.<ref>{{cite web|title=Crashworthy Design Principles|url=http://www.dtic.mil/cgi-bin/GetTRDoc?Location=U2&doc=GetTRDoc.pdf&AD=AD0623575|work=Technical Report|publisher=Defense Technical Information Center (DTIC)|accessdate=9 October 2011|author=D. L. Greer|author2=J. S. Breeden|author3=T. L. Heid|date=1965-11-18}}</ref> So the passenger aircraft are designed in such a way that seating arrangements are away from areas likely to be intruded in an accident, such as near a propeller, engine nacelle undercarriage etc.<ref>{{cite document|title=Basic Principles of Crashworthiness|publisher=NATO|author=Dennis F. Shanahan|citeseerx = 10.1.1.214.8052}}</ref> The interior of the cabin is also fitted with safety features such as oxygen masks that drop down in the event of loss of cabin pressure, lockable luggage compartments, safety belts, lifejackets, emergency doors and luminous floor strips. Aircraft are sometimes designed with emergency [[water landing]] in mind, for instance the [[Airbus A330]] has a 'ditching' switch that closes valves and openings beneath the aircraft slowing the ingress of water.<ref>{{cite web|title=Airbus A330-A340 Overhead Panel |url=http://www.smartcockpit.com/data/pdfs/plane/airbus/a340/instructor/A330-A340_Overhead_Pushbuttons.pdf |archive-url=https://web.archive.org/web/20120330161341/http://www.smartcockpit.com/data/pdfs/plane/airbus/a340/instructor/A330-A340_Overhead_Pushbuttons.pdf |url-status=dead |archive-date=30 March 2012 |work=Data |publisher=www.smartcockpit.com |accessdate=9 October 2011 }}</ref>
+
+==Design optimization==
+Aircraft designers normally rough-out the initial design with consideration of all the constraints on their design. Historically design teams used to be small, usually headed by a Chief Designer who knows all the design requirements and objectives and coordinated the team accordingly. As time progressed, the complexity of military and airline aircraft also grew. Modern military and airline design projects are of such a large scale that every design aspect is tackled by different teams and then brought together. In general aviation a large number of light aircraft are designed and built by [[Homebuilt aircraft|amateur hobbyists and enthusiasts]].<ref>{{cite web|title=Amateur Built Aircraft|url=http://www.faa.gov/aircraft/gen_av/ultralights/amateur_built/|work=General Aviation and Recreational Aircraft|publisher=FAA|accessdate=2011-10-10}}</ref>
+
+==Computer-aided design of aircraft==
+[[File:Navion in Datcom3d.jpg|right|thumb|240px|The external surfaces of an aircraft modelled in [[MATLAB]]]]
+In the early years of aircraft design, designers generally used analytical theory to do the various engineering calculations that go into the design process along with a lot of experimentation. These calculations were labour-intensive and time-consuming. In the 1940s, several engineers started looking for ways to automate and simplify the calculation process and many relations and semi-empirical formulas were developed. Even after simplification, the calculations continued to be extensive. With the invention of the computer, engineers realized that a majority of the calculations could be automated, but the lack of design visualization and the huge amount of experimentation involved kept the field of aircraft design stagnant. With the rise of programming languages, engineers could now write programs that were tailored to design an aircraft. Originally this was done with mainframe computers and used low-level programming languages that required the user to be fluent in the language and know the architecture of the computer. With the introduction of personal computers, design programs began employing a more user-friendly approach.<ref>{{cite web|title=Aircraft Design Software|url=http://www.sti.nasa.gov/tto/spinoff1997/ct11.html|work=Computer Technology|publisher=NASA|accessdate=29 December 2014 |archiveurl = https://web.archive.org/web/19990824052440/http://www.sti.nasa.gov/tto/spinoff1997/ct11.html |archivedate = 24 August 1999}}</ref>{{Failed verification|date=December 2014}}
+
+== Design aspects ==
+The main aspects of aircraft design are:
+#[[Aerodynamics]]
+#[[Powered aircraft|Propulsion]]
+#[[Aircraft flight control system|Controls]]
+#[[Mass]]
+#[[Fixed-wing aircraft#structure|Structure]]
+
+All aircraft designs involve compromises of these factors to achieve the design mission.<ref>{{cite web|title=Techniques for Aircraft Configuration Optimization|url=http://adg.stanford.edu/aa241/design/optimization1.html|work=Aircraft Design : Synthesis and Analysis|publisher=Stanford University|accessdate=2011-09-20|archive-url=https://archive.is/20120701103526/http://adg.stanford.edu/aa241/design/optimization1.html#|archive-date=2012-07-01|url-status=dead}}</ref>
+
+=== Wing design ===
+{{See also|Wing configuration}}
+The wing of a fixed-wing aircraft provides the lift necessary for flight. Wing geometry affects every aspect of an aircraft's flight. The wing area will usually be dictated by the desired [[stalling speed]] but the overall shape of the [[planform (aeronautics)|planform]] and other detail aspects may be influenced by wing layout factors.<ref>{{cite book|title=Civil jet aircraft design|isbn=0-340-74152-X|page=105|last1=Jenkinson|first1=Lloyd R.|last2=Rhodes|first2=Darren|last3=Simpkin|first3=Paul|year=1999}}</ref> The wing can be mounted to the fuselage in high, low and middle positions. The wing design depends on many parameters such as selection of [[aspect ratio]], taper ratio, [[sweepback]] angle, thickness ratio, section profile, [[Washout (aviation)|washout]] and [[Dihedral (aircraft)|dihedral]].<ref>{{cite book|title=Civil Jet Aircraft design|isbn=0-340-74152-X|last1=Jenkinson|first1=Lloyd R.|last2=Rhodes|first2=Darren|last3=Simpkin|first3=Paul|year=1999}}</ref>  The cross-sectional shape of the wing is its [[airfoil]].<ref>{{cite book|title=Understanding aircraft structures|isbn=1-4051-2032-0|author=John Cutler|author2=Jeremy Liber|date=2006-02-10}}</ref> The construction of the wing starts with the [[Rib (aircraft)|rib]] which defines the airfoil shape. Ribs can be made of wood, metal, plastic or even composites.<ref>{{cite book|title=Aero Engineering Vol II Part I|year=1938|publisher=George Newnes|author=Hugh Nelson}}</ref>
+
+The wing must be designed and tested to ensure it can withstand the maximum loads imposed by maneuvering, and by atmospheric gusts.
+
+=== Fuselage ===
+{{Main|Fuselage}}
+The fuselage is the part of the aircraft that contains the cockpit, passenger cabin or cargo hold.<ref>{{cite web|title=Fuselage Layout|url=http://adg.stanford.edu/aa241/fuselayout/fusesection.html|publisher=Stanford University|accessdate=2011-09-18|archive-url=https://web.archive.org/web/20010307121441/http://adg.stanford.edu/aa241/fuselayout/fusesection.html#|archive-date=2001-03-07|url-status=dead}}</ref>
+
+=== Propulsion ===
+[[File:Aircraft engine.jpg|thumb|Aircraft engine]]
+{{Main|Aircraft engine}}
+Aircraft propulsion may be achieved by specially designed aircraft engines, adapted auto, motorcycle or snowmobile engines, electric engines or even human muscle power. The main parameters of engine design are:<ref>{{cite book |last1=Takahashi |first1=Timothy |title=Aircraft Performance and Sizing, Volume I |date=2016 |publisher=Momentum Press Engineering |isbn=978-1-60650-683-7 |pages=77–100}}</ref>
+ 
+*Maximum engine thrust available
+*Fuel consumption
+*Engine mass
+*Engine geometry
+
+The thrust provided by the engine must balance the drag at cruise speed and be greater than the drag to allow acceleration. The engine requirement varies with the type of aircraft. For instance, commercial airliners spend more time in cruise speed and need more engine efficiency. High-performance fighter jets need very high acceleration and therefore have very high thrust requirements.<ref>{{cite web|title=Beginner's Guide to Propulsion|url=http://www.grc.nasa.gov/WWW/K-12/airplane/bgp.html|work=Beginner's Guide|publisher=NASA|accessdate=2011-10-10}}</ref>
+
+=== Weight ===
+{{Main|Aircraft gross weight}} 
+The weight of the aircraft is the common factor that links all aspects of aircraft design such as aerodynamics, structure, and propulsion, all together. An aircraft's weight is derived from various factors such as empty weight, payload, useful load, etc. The various weights are used to then calculate the center of mass of the entire aircraft.<ref>{{cite web|title=Aircraft weight and balance|url=http://www.pilotfriend.com/training/flight_training/wt_bal.htm|work=Pilot friend - Flight training|publisher=www.pilotfriend.com}}</ref>  The center of mass must fit within the established limits set by the manufacturer.
+
+=== Structure ===
+The aircraft structure focuses not only on strength, [[aeroelasticity]], [[Fatigue (material)|durability]], [[damage tolerance]], [[Flight dynamics|stability]], but also on [[fail-safe]]ty, [[corrosion]] resistance, maintainability and ease of manufacturing. The structure must be able to withstand the stresses caused by [[cabin pressurization]], if fitted, turbulence and engine or rotor vibrations.<ref>{{cite book|title=Aircraft Structures|publisher=Elsevier Ltd.|isbn=978-1-85617-932-4|author=T.H.G Megson|date=16 February 2010|edition=4th|page=353}}</ref>
+
+==Design process and simulation==
+{{Expand section|date=December 2011}}
+The design of any aircraft starts out in three phases<ref>{{cite book|title=Aircraft Performance and design|year=1999|publisher=McGraw-Hill|isbn=0-07-001971-1|pages=382–386|author=John D. Anderson}}</ref>
+
+===Conceptual Design===
+[[File:Br-673.svg|thumb|Conceptual design of a [[Bréguet 763 Deux-Ponts]]]]
+Aircraft conceptual design involves sketching a variety of possible configurations that meet the required design specifications. By drawing a set of configurations, designers seek to reach the design configuration that satisfactorily meets all requirements as well as go hand in hand with factors such as aerodynamics, propulsion, flight performance, structural and control systems.<ref>{{cite book|title=Aircraft Design - A conceptual approach|year=1992|publisher=American institute of Aeronautics and Astronautics|isbn=0-930403-51-7|page=4|author=D. Raymer}}</ref>  This is called design optimization. Fundamental aspects such as fuselage shape, wing configuration and location, engine size and type are all determined at this stage. Constraints to design like those mentioned above are all taken into account at this stage as well. The final product is a conceptual layout of the aircraft configuration on paper or computer screen, to be reviewed by engineers and other designers.
+
+===Preliminary design phase===
+The design configuration arrived at in the conceptual design phase is then tweaked and remodeled to fit into the design parameters. In this phase, [[wind tunnel]] testing and [[Computational fluid dynamics|computational fluid dynamic]] calculations of the flow field around the aircraft are done. Major structural and control analysis is also carried out in this phase. Aerodynamic flaws and structural instabilities if any are corrected and the final design is drawn and finalized. Then after the finalization of the design lies the key decision with the manufacturer or individual designing it whether to actually go ahead with the production of the aircraft.<ref>{{cite book|title=Aircraft design - A conceptual approach|year=1992|publisher=American institute of Aeronautics and Astronautics|isbn=0-930403-51-7|page=5|author=D. Raymer}}</ref>  At this point several designs, though perfectly capable of flight and performance, might have been opted out of production due to their being economically nonviable.
+
+===Detail design phase===
+This phase simply deals with the fabrication aspect of the aircraft to be manufactured. It determines the number, design and location of [[Rib (aircraft)|ribs]], [[Spar (aviation)|spars]], sections and other structural elements.<ref>{{cite book|title=Aircraft performance and Design|year=1999|publisher=Mc Graw Hill|isbn=0-07-001971-1|author=John D. Anderson}}</ref>  All aerodynamic, structural, propulsion, control and performance aspects have already been covered in the preliminary design phase and only the manufacturing remains. [[Flight simulator]]s for aircraft are also developed at this stage.
+
+===Delays===
+
+Some commercial aircraft have experienced significant schedule delays and cost overruns in the development phase. Examples of this include the [[Boeing 787 Dreamliner]] with a delay of 4 years with massive cost overruns, the [[Boeing 747-8]] with a two-year delay, the [[Airbus A380]] with a two-year delay and US$6.1 billion in cost overruns, the [[Airbus A350]] with delays and cost overruns, the [[Bombardier C Series]], [[Global 7000]] and 8000, the [[Comac C919]] with a four-year delay and the [[Mitsubishi Regional Jet]], which was delayed by four years and ended up with empty weight issues.<ref>{{cite web |url= https://www2.deloitte.com/content/dam/Deloitte/us/Documents/manufacturing/us-manufacturing-program-management-aerospace-defense.pdf |title= Program management in aerospace and defense - Still late and over budget |date= 2016 |publisher= Deloitte}}</ref>
+
+== Program development ==
+
+An existing aircraft program can be developed for performance and economy gains by stretching the [[fuselage]], increasing the [[MTOW]], enhancing the aerodynamics, installing new [[aircraft engine|engine]]s, new wings or new avionics.
+For a 9,100 nmi long range at Mach 0.8/FL360, a 10% lower [[Thrust specific fuel consumption|TSFC]] saves 13% of fuel, a 10% [[Lift-to-drag ratio|L/D]] increase saves 12%, a 10% lower [[OEW]] saves 6% and all combined saves 28%.<ref>{{cite book |url= https://download.nap.edu/cart/download.cgi?record_id=11837 |title= Improving the Efficiency of Engines for Large Nonfighter Aircraft |author= Committee on Analysis of Air Force Engine Efficiency Improvement Options for Large Non-fighter Aircraft |work= [[US Air Force]] Studies Board - Division on Engineering and Physical Sciences |publisher= [[US National Research Council]] |isbn= 978-0-309-66765-4 |date= 2007 |page=15}}</ref>
+
+=== Re-engine ===
+{| class="wikitable sortable"
+|+ Jet airliners
+! Base !! Previous engines !! First flight !! Re-engined !! New engines !! data-sort-type="date" | First flight 
+|-
+| [[Douglas DC-8#Super 60 Series|DC-8 Super 60]] || [[JT3D]] || May 30, 1958
+| [[Douglas DC-8#Super 70 Series|DC-8 Super 70]] || [[CFM56]] || 1982
+|-
+| [[Boeing 737 Original]] || [[JT8D]] || Apr 9, 1967
+| [[Boeing 737 Classic]] || CFM56 || Feb 24, 1984
+|-
+| [[Fokker F28]] || [[Rolls-Royce Spey]] || May 9, 1967
+| [[Fokker 100]]/70 || [[Rolls-Royce RB.183 Tay|Rolls-Royce Tay]] || Nov 30, 1986
+|-
+| [[Boeing 747]] || [[JT9D]]/[[CF6]]-50/[[RB211]]-524 || Feb 9, 1969
+| [[Boeing 747-400]] || [[PW4000]]/CF6-80/RB211-524G/H || Apr 29, 1988
+|-
+| [[Douglas DC-10]] || JT9D/CF6-50 || Aug 29, 1970
+| [[MD-11]] || PW4000/CF6-80 || Jan 10, 1990
+|-
+| [[Douglas DC-9]]/[[MD-80]] || JT8D || Feb 25, 1965
+| [[MD-90]] || [[V2500]] || Feb 22, 1993
+|-
+| Boeing 737 Classic || CFM56-3 || Feb 24, 1984
+| [[Boeing 737 NG]] || CFM56-7 || Feb 9, 1997
+|-
+| Boeing 747-400 || PW4000/CF6/RB211 || Apr 29, 1988
+| [[Boeing 747-8]] || [[GEnx]] || Feb 8, 2010
+|-
+| [[Airbus A320]] || CFM56/V2500 || Feb 22, 1987
+| [[Airbus A320neo]] || [[CFM LEAP]]/[[PW1100G]] || Sep 25, 2014
+|-
+| Boeing 737 NG || CFM56 || Feb 9, 1997
+| [[Boeing 737 MAX]] || CFM LEAP || Jan 29, 2016
+|-
+| [[Embraer E-Jet]] || [[CF34]] || Feb 19, 2002
+| [[Embraer E-Jet E2]] || [[PW1000G]] || May 23, 2016
+|-
+| [[Airbus A330]] || CF6/PW4000/[[Trent 700]] || Nov 2, 1992
+| [[Airbus A330neo]] || [[Trent 7000]] || Oct 19, 2017
+|-
+| [[Boeing 777]] || [[GE90]]/PW4000/[[Trent 800]] || Jun 12, 1994
+| [[Boeing 777X]] || [[GE9X]] || Jan 25, 2020
+|}
+
+=== Fuselage stretch ===
+{| class="wikitable sortable"
+|+ Jet airliners
+! Base !! Base length !! First flight !! Stretched !! Stretched length !! data-sort-type="date" | First flight 
+|-
+| rowspan=8 | [[Boeing 737-100]] || rowspan=8 | {{cvt|94.00|ft|m|order=flip}}  || rowspan=8 | Apr 9, 1967
+| [[737-200]] || {{cvt|100.2|ft|m|order=flip}} ||Aug 8, 1967
+|-
+| [[737-500]]/600 || {{cvt|31.00|–|31.24|m|ft}} ||
+|-
+| [[737-300]]/700 || {{cvt|33.4|–|33.63|m|ft}} ||
+|-
+| [[737 MAX]] 7 || {{cvt|35.56|m|ft}} ||
+|-
+| [[737-400]] || {{cvt|36.40|m|ft}} ||
+|-
+| [[737-800]]/MAX 8 || {{cvt|39.47|m|ft}} ||
+|-
+| [[737-900]]/MAX 9 || {{cvt|42.11|m|ft}} ||
+|-
+| [[737 MAX]] 10 || {{cvt|43.80|m|ft}} ||plan. 2020
+|-
+| rowspan=2 | [[Boeing 747]]-100/200/300/400 || rowspan=2 | {{cvt|70.66|m|ft}} || rowspan=2 | Feb 9, 1969
+| [[Boeing 747SP]] || {{cvt|56.3|m|ft}} || Jul 4, 1975
+|-
+| [[Boeing 747-8]] || {{cvt|76.25|m|ft}} || Feb 8, 2010
+|-
+| [[Boeing 757]] || {{cvt|47.3|m|ft}} || Feb 19, 1982
+| Boeing 757-300 || {{cvt|54.4|m|ft}} ||
+|-
+| rowspan=2 | [[Boeing 767]]-200/ER || rowspan=2 | {{cvt|48.51|m|ft}} || rowspan=2 | Sep 26, 1981
+| Boeing 767-300/ER || {{cvt|54.94|m|ft}} ||
+|-
+| Boeing 767-400ER || {{cvt|61.37|m|ft}} ||
+|-
+| rowspan=3 | [[Boeing 777]]-200/ER/LR || rowspan=3 | {{cvt|63.73|m|ft}} || rowspan=3 | Jun 12, 1994
+| [[Boeing 777X]]-8 || {{cvt|69.8|m|ft}} || 
+|-
+| Boeing 777-300/ER || {{cvt|73.86|m|ft}} || Oct 16, 1997
+|-
+| Boeing 777X-9 || {{cvt|76.7|m|ft}} || Jan 25, 2020
+|-
+| rowspan=2 | [[Boeing 787]]-8 || rowspan=2 | {{cvt|186.08|ft|m|order=flip}} || rowspan=2 |Dec 15, 2009
+| Boeing 787-9 || {{cvt|206.08|ft|m|order=flip}} || Sep 17, 2013
+|-
+| Boeing 787-10 || {{cvt|224|ft|m|order=flip|2}} || Mar 31, 2017
+|-
+| [[Airbus A300]] || {{cvt|53.61|–|54.08|m|ft}} || Oct 28, 1972
+| [[Airbus A310]] || {{cvt|46.66|ft|m|order=flip}} || Apr 3, 1982
+|-
+| rowspan=3 | [[Airbus A320]] (neo) || rowspan=3 | {{cvt|37.57|m|ft}} || rowspan=3 | Feb 22, 1987
+| [[Airbus A318]] || {{cvt|31.44|m|ft}} || Jan 15, 2002
+|-
+| [[Airbus A319]] (neo) || {{cvt|33.84|m|ft}} || Aug 25, 1995
+|-
+| [[Airbus A321]] (neo) || {{cvt|44.51|m|ft}} || Mar 11, 1993
+|-
+| [[Airbus A330-300]]/900 || {{cvt|63.67|m|ft}} || Nov 2, 1992
+| [[Airbus A330-200]]/800 || {{cvt|58.82|m|ft}} || Aug 13, 1997
+|-
+| rowspan=3 | [[Airbus A340-300]] || rowspan=3 | {{cvt|63.69|m|ft}} || rowspan=3 | Oct 25, 1991
+| [[Airbus A340-200]] || {{cvt|59.40|m|ft}} || Apr 1, 1992
+|-
+| [[Airbus A340-500]] || {{cvt|67.93|m|ft}} || Feb 11, 2002
+|-
+| [[Airbus A340-600]] || {{cvt|75.36|m|ft}} || Apr 23, 2001
+|-
+| [[Airbus A350]]-900 ||  {{cvt|66.61|m|ft}} || Jun 14, 2013
+| A350-1000 || {{cvt|73.59|m|ft}} || Nov 24, 2016
+|}
+
+== See also ==
+*[[Aerospace engineering]]
+*[[Aircraft manufacturer]]
+*[[Iron bird (aviation)]]
+
+== References ==
+{{Reflist|30em}}
+
+== External links ==
+* {{citation |url= https://www.academia.edu/14985385 |title= Synthesis of Subsonic Airplane Design |author= Egbert Torenbeek |date= 1976 |publisher= Delft University Press}}
+*{{citation |journal= Progress in Aerospace Sciences |publisher= Elsevier |title= Data and performances of selected aircraft and rotorcraft |author= Antonio Filippone |date= 2000 |volume= 36 |issue= 8 |pages= 629–654 |doi= 10.1016/S0376-0421(00)00011-7 |bibcode= 2000PrAeS..36..629F |citeseerx= 10.1.1.539.1597 }}
+* {{cite web |publisher=Desktop Aeronautics, Inc. |title= Aircraft Design: Synthesis and Analysis |date= 2001 |url= http://rahauav.com/Library/Design-performance/Aircraft%20Design,%20synthesis%20and%20analysis.pdf}}
+* {{cite web |url= https://www.sto.nato.int/publications/STO%20Educational%20Notes/RTO-EN-HFM-113/EN-HFM-113-07.pdf |title= Basic principles of Crashworthiness |author= Dennis F. Shanahan |publisher= [[NATO]] |date= 8 Mar 2005}}
+* {{cite web |url= https://www.fzt.haw-hamburg.de/pers/Scholz/OPerA/OPerA_PUB_DLRK_10-08-31.pdf |title= From preliminary aircraft cabin design to cabin optimization |authors= M. Nila, D. Scholz ([[Hamburg University of Applied Sciences]]) |work= Deutscher Luft- und Raumfahrtkongress |date= 2010}}
+* {{cite web |url= http://www.courses.netc.navy.mil/downloads.htm?cid=1495 |title= Airman |date= December 2012 |work= Nonresident Training Courses |publisher= U.S. Navy}}
+** {{cite web |url= http://www.courses.netc.navy.mil/courses/14014A/14014A_ch4.pdf |title= chapter 4: Aircraft Basic Construction }}
+* {{cite news |url= https://aviationweek.com/blog/boeings-wonder-wall |title= Boeing's 'Wonder Wall' |date= Mar 10, 2014 |author= Guy Norris |work= Aviation Week Network}}
+* {{cite web |url= http://www.fzt.haw-hamburg.de/pers/Scholz/HOOU/ |title= Aircraft Design - an Open Educational Resource |publisher= Hamburg Open Online University |author= Dieter Scholz |date= 9 July 2018 }}
+
+=== Re-engine ===
+* {{cite news |url= https://www.nytimes.com/1981/11/27/business/boeing-s-re-engining-worry.html |title= BOEING'S 'RE-ENGINING' WORRY |author= Thomas C. Hayes |date= November 27, 1981 |work= NY Times}}
+* {{cite news |url= http://speednews.com/article/6950 |title= To Re-Engine or Not to Re-Engine: That is the Question |date= December 2010 |author= Oliver Wyman |work= Aviation Week Network|author-link= Oliver Wyman }}
+
+[[Category:Aerospace engineering]]
+[[Category:Aerodynamics]]
+[[Category:Aircraft]]
+[[Category:Design]]

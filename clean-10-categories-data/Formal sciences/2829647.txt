@@ -1,0 +1,121 @@
+{{Use mdy dates|date=February 2015}}
+
+'''Algorithmic information theory (AIT)''' is a branch of [[theoretical computer science]] that concerns itself with the relationship between [[theory of computation|computation]] and [[Information#Measuring information|information]] of computably generated objects (as opposed to [[stochastic process|stochastically]] generated), such as strings or any other data structure. In other words, it is shown within algorithmic information theory that computational incompressibility "mimics" (except for a constant that only depends on the chosen universal programming language) the relations or inequalities found in [[information theory]].<ref name=Chaitin75>{{harvnb|Chaitin|1975}}</ref> According to [[Gregory Chaitin]], it is "the result of putting [[Claude Shannon|Shannon]]'s information theory and [[Alan Turing|Turing]]'s computability theory into a cocktail shaker and shaking vigorously."<ref>[http://www.cs.auckland.ac.nz/research/groups/CDMTCS/docs/ait.php Algorithmic Information Theory<!-- Bot generated title -->]</ref>
+
+Besides the formalization of a universal measure for irreducible information content of computably generated objects, some main achievements of AIT were to show that: in fact algorithmic complexity follows (in the [[prefix code|self-delimited]] case) the same inequalities (except for a constant<ref>or, for the mutual algorithmic information, informing the algorithmic complexity of the input along with the input itself.</ref>) that [[entropy (information theory)|entropy]] does, as in classical information theory;<ref name="Chaitin75" /> randomness is incompressibility;<ref name="Calude13">{{harvnb|Calude|2013}}</ref> and, within the realm of randomly generated software, the probability of occurrence of any data structure is of the order of the shortest program that generates it when running on a universal machine.<ref>{{cite book |first1=Rodney G. |last1=Downey |first2=Denis R. |last2=Hirschfeldt |title=Algorithmic Randomness and Complexity |url=https://books.google.com/books?id=FwIKhn4RYzYC |date=2010 |publisher=Springer |isbn=978-0-387-68441-3}}</ref>
+
+AIT principally studies measures of irreducible information content of [[string (computer science)|strings]] (or other [[data structure]]s). Because most mathematical objects can be described in terms of strings, or as the [[limit of a sequence]] of strings, it can be used to study a wide variety of mathematical objects, including [[integer]]s. One of the main motivations behind AIT is the very study of the information carried by mathematical objects as in the field of [[metamathematics]], e.g., as shown by the incompleteness results mentioned below. Other main motivations came from: surpassing the limitations of [[information theory|classical information theory]] for single and fixed objects; formalizing the concept of [[algorithmically random sequence|randomness]]; and finding a meaningful [[bayesian inference|probabilistic inference]] without prior knowledge of the [[probability distribution]] (e.g., whether it is [[independent and identically distributed]], [[markov chain|markovian]], or even [[stationary process|stationary]]). In this way, AIT is known to be basically found upon three main mathematical concepts and the relations between them: [[kolmogorov complexity|algorithmic complexity]], [[algorithmically random sequence|algorithmic randomness]], and [[algorithmic probability]].<ref>{{harvnb|Li|Vitanyi|2013}}</ref><ref name="Calude13" />
+
+== Overview ==
+Algorithmic information theory principally studies [[asymptotic complexity|complexity]] measures on [[string (computer science)|string]]s (or other [[data structure]]s).  Because most mathematical objects can be described in terms of strings, or as the [[limit of a sequence]] of strings, it can be used to study a wide variety of mathematical objects, including [[integer]]s.
+
+Informally, from the point of view of algorithmic information theory, the information content of a string is equivalent to the length of the most-[[data compression|compressed]] possible self-contained representation of that string. A self-contained representation is essentially a [[program (computing)|program]]—in some fixed but otherwise irrelevant universal [[programming language]]—that, when run, outputs the original string.
+
+From this point of view, a 3000-page encyclopedia actually contains less information than 3000 pages of completely random letters, despite the fact that the encyclopedia is much more useful. This is because to reconstruct the entire sequence of random letters, one must know, more or less, what every single letter is. On the other hand, if every vowel were removed from the encyclopedia, someone with reasonable knowledge of the English language could reconstruct it, just as one could likely reconstruct the sentence "Ths sntnc hs lw nfrmtn cntnt" from the context and consonants present.
+
+Unlike classical information theory, algorithmic information theory gives [[Formal system|formal]], [[Rigour#Mathematical rigour|rigorous]] definitions of a [[Kolmogorov complexity|random string]] and a [[algorithmically random sequence|random infinite sequence]] that do not depend on physical or philosophical [[Intuition (knowledge)|intuition]]s about [[wikt:nondeterminism|nondeterminism]] or [[likelihood]]. (The set of random strings depends on the choice of the [[universal Turing machine]] used to define [[Kolmogorov complexity]], but any choice
+gives identical asymptotic results because the Kolmogorov complexity of a string is invariant up to an additive constant depending only on the choice of universal Turing machine. For this reason the set of random infinite sequences is independent of the choice of universal machine.)
+
+Some of the results of algorithmic information theory, such as [[Kolmogorov complexity#Chaitin's incompleteness theorem|Chaitin's incompleteness theorem]], appear to challenge common mathematical and philosophical intuitions. Most notable among these is the construction of [[Chaitin's constant]] '''Ω''', a real number which expresses the probability that a self-delimiting universal Turing machine will [[halting problem|halt]] when its input is supplied by flips of a fair coin (sometimes thought of as the probability that a random computer program will eventually halt). Although '''Ω''' is easily defined, in any [[consistent]] [[axiom]]atizable [[theory (mathematical logic)|theory]] one can only compute finitely many digits of '''Ω''', so it is in some sense ''unknowable'', providing an absolute limit on knowledge that is reminiscent of [[Gödel's Incompleteness Theorem]]. Although the digits of '''Ω''' cannot be determined, many properties of '''Ω''' are known; for example, it is an [[algorithmically random sequence]] and thus its binary digits are evenly distributed (in fact it is [[normal number|normal]]).
+
+== History ==
+Algorithmic information theory was founded by [[Ray Solomonoff]],<ref name=Vitanyi>Vitanyi, P. "[http://homepages.cwi.nl/~paulv/obituary.html Obituary: Ray Solomonoff, Founding Father of Algorithmic Information Theory"]</ref> who published the basic ideas on which the field is based as part of his invention of [[algorithmic probability]]—a way to overcome serious problems associated with the application of [[Bayes' rule]]s in statistics.  He first described his results at a Conference at [[Caltech]] in 1960,<ref name=Caltech1960>Paper from conference on "Cerebral Systems and Computers", California Institute of Technology, February 8–11, 1960, cited in "A Formal Theory of Inductive Inference, Part 1, 1964, p. 1</ref> and in a report, February 1960, "A Preliminary Report on a General Theory of Inductive Inference."<ref name=v131>Solomonoff, R., "[http://world.std.com/~rjs/z138.pdf A Preliminary Report on a General Theory of Inductive Inference]", Report V-131, Zator Co., Cambridge, Ma., (November Revision of February 4, 1960 report.)</ref>  Algorithmic information theory was later developed independently by [[Andrey Kolmogorov]], in 1965 and [[Gregory Chaitin]], around 1966.
+
+There are several variants of Kolmogorov complexity or algorithmic information; the most widely used one is based on [[prefix code|self-delimiting program]]s and is mainly due to [[Leonid Levin]] (1974). [[Per Martin-Löf]] also contributed significantly to the information theory of infinite sequences. An axiomatic approach to algorithmic information theory based on the [[Blum axioms]] (Blum 1967) was introduced by Mark Burgin in a paper presented for publication by [[Andrey Kolmogorov]] (Burgin 1982). The axiomatic approach encompasses other approaches in the algorithmic information theory. It is possible to treat different measures of algorithmic information as particular cases of axiomatically defined measures of algorithmic information. Instead of proving similar theorems, such as the basic invariance theorem, for each particular measure, it is possible to easily deduce all such results from one corresponding theorem proved in the axiomatic setting. This is a general advantage of the axiomatic approach in mathematics. The axiomatic approach to algorithmic information theory was further developed in the book (Burgin 2005) and applied to software metrics (Burgin and Debnath, 2003; Debnath and Burgin, 2003).
+
+== Precise definitions ==
+{{Main|Kolmogorov complexity}}
+A binary string is said to be random if the [[Kolmogorov complexity]] of the string is at least the length of the string. A simple counting argument shows that some strings of any given length are random, and almost all strings are very close to being random. Since Kolmogorov complexity depends on a fixed choice of universal Turing machine (informally, a fixed "description language" in which the "descriptions" are given), the collection of random strings does depend on the choice of fixed universal machine. Nevertheless, the collection of random strings, as a whole, has similar properties regardless of the fixed machine, so one can (and often does) talk about the properties of random strings as a group without having to first specify a universal machine.
+
+{{Main|Algorithmically random sequence}}
+An infinite binary sequence is said to be random if, for some constant ''c'', for all ''n'', the [[Kolmogorov complexity]] of the initial segment of length ''n'' of the sequence is at least ''n''&nbsp;−&nbsp;''c''. It can be shown that almost every sequence (from the point of view of the standard [[measure (mathematics)|measure]]—"fair coin" or [[Lebesgue measure]]—on the space of infinite binary sequences) is random. Also, since it can be shown that the Kolmogorov complexity relative to two different universal machines differs by at most a constant, the collection of random infinite sequences does not depend on the choice of universal machine (in contrast to finite strings). This definition of randomness is usually called ''Martin-Löf'' randomness, after [[Per Martin-Löf]], to distinguish it from other similar notions of randomness. It is also sometimes called ''1-randomness'' to distinguish it from other stronger notions of randomness (2-randomness, 3-randomness, etc.). In addition to Martin-Löf randomness concepts, there are also recursive randomness, Schnorr randomness, and Kurtz randomness etc. [[Yongge Wang]] showed<ref>{{cite thesis |first=Yongge |last=Wang |title=Randomness and Complexity |type=PhD |year=1996 |url=http://webpages.uncc.edu/yonwang/papers/thesis.pdf |publisher=University of Heidelberg}}</ref> that all of these randomness concepts are different.
+
+(Related definitions can be made for alphabets other than the set <math>\{0,1\}</math>.)
+
+== Specific sequence ==
+Algorithmic information theory (AIT) is the information theory of individual objects, using computer science, and concerns itself with the relationship between computation, information, and randomness.
+
+The information content or complexity of an object can be measured by the length of its shortest description. For instance the string
+
+<code>"0101010101010101010101010101010101010101010101010101010101010101"</code>
+
+has the short description "32 repetitions of '01'", while
+
+<code>"1100100001100001110111101110110011111010010000100101011110010110"</code>
+
+presumably has no simple description other than writing down the string itself.
+
+More formally, the [[Kolmogorov complexity|Algorithmic Complexity (AC)]] of a string ''x'' is defined as the length of the shortest program that computes or outputs ''x'', where the program is run on some fixed reference universal computer.
+
+A closely related notion is the probability that a universal computer outputs some string ''x'' when fed with a program chosen at random. This [[Algorithmic probability|Algorithmic "Solomonoff" Probability (AP)]] is key in addressing the old philosophical problem of induction in a formal way.
+
+The major drawback of AC and AP are their incomputability. Time-bounded "Levin" complexity penalizes a slow program by adding the logarithm of its running time to its length. This leads to computable variants of AC and AP, and Universal "Levin" Search (US) solves all inversion problems in optimal time (apart from some unrealistically large multiplicative constant).
+
+AC and AP also allow a formal and rigorous definition of randomness of individual strings to not depend on physical or philosophical intuitions about non-determinism or likelihood. Roughly, a string is Algorithmic "Martin-Löf" Random (AR) if it is incompressible in the sense that its algorithmic complexity is equal to its length.
+
+AC, AP, and AR are the core sub-disciplines of AIT, but AIT spawns into many other areas. It serves as the foundation of the Minimum Description Length (MDL) principle, can simplify proofs in computational complexity theory, has been used to define a universal similarity metric between objects, solves the [[Maxwell's daemon|Maxwell daemon]] problem, and many others.
+
+== See also ==
+{{columns-list|colwidth=30em|
+* [[Algorithmic probability]]
+* [[Algorithmically random sequence]]
+* [[Chaitin's constant]]
+* [[Chaitin–Kolmogorov randomness]]
+* [[Computationally indistinguishable]]
+* [[Distribution ensemble]]
+* [[Epistemology]]
+* [[Inductive inference]]
+* [[Inductive probability]]
+* [[Invariance theorem (disambiguation)|Invariance theorem]]
+* [[Kolmogorov complexity]]
+* [[Limits of knowledge]]
+* [[Minimum description length]]
+* [[Minimum message length]]
+* [[Pseudorandom ensemble]]
+* [[Pseudorandom generator]]
+* [[Simplicity theory]]
+* [[Solomonoff's theory of inductive inference]]
+* [[Uniform ensemble]]
+}}
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://www.scholarpedia.org/article/Algorithmic_information_theory Algorithmic Information Theory] at [[Scholarpedia]]
+* [https://web.archive.org/web/20161117200018/https://www.cs.auckland.ac.nz/~chaitin/unknowable/ch6.html Chaitin's account of the history of AIT].
+
+== Further reading ==
+{{refbegin}}
+*{{cite journal |last=Blum |first=M. |year=1967 |title=On the Size of Machines |journal=Information and Control |volume=11 |issue=3 |pages=257–265|doi=10.1016/S0019-9958(67)90546-3 |doi-access=free }}
+*{{cite journal |last=Blum |first=M. |s2cid=15710280 |year=1967 |title=A Machine-independent Theory of Complexity of Recursive Functions |journal=Journal of the ACM |volume=14 |issue=2 |pages=322–336 |doi=10.1145/321386.321395}}
+*{{cite journal |last=Burgin |first=M. |year=1982 |title=Generalized Kolmogorov complexity and duality in theory of computations |journal=Soviet Math. Dokl. |volume=25 |issue=3 |pages=19–23}}
+*{{cite journal |last=Burgin |first=M. |s2cid=121736453 |year=1990 |title=Generalized Kolmogorov Complexity and other Dual Complexity Measures |journal=Cybernetics |volume=26 |issue=4 |pages=481–490 |doi=10.1007/BF01068189}}
+*{{cite book |last=Burgin |first=M. |title=Super-recursive algorithms |series=Monographs in computer science |publisher=Springer |year=2005 |url=https://www.springer.com/gp/book/9780387955698 |isbn=9780387955698}}
+*{{cite journal |last=Calude |first=C.S. |year=1996 |title=Algorithmic information theory: Open problems |journal=J. UCS |volume=2 |issue=5 |pages=439–441 |url=http://www.jucs.org/jucs_2_5/algorithmic_information_theory_open/calude_c.pdf}}
+*{{cite book |last=Calude |first=C.S. |title=Information and Randomness: An Algorithmic Perspective |series=Texts in Theoretical Computer Science. An EATCS Series |publisher=Springer-Verlag |url=https://books.google.com/books?id=PseqCAAAQBAJ |edition=2nd |year=2013 |isbn=9783662049785 }}
+*{{cite journal |last=Chaitin |first=G.J. |s2cid=207698337 |year=1966 |title=On the Length of Programs for Computing Finite Binary Sequences |journal=Journal of the Association for Computing Machinery |volume=13 |issue=4 |pages=547–569 |doi=10.1145/321356.321363 }}
+*{{cite journal |last=Chaitin |first=G.J. |s2cid=12584692 |year=1969 |title=On the Simplicity and Speed of Programs for Computing Definite Sets of Natural Numbers |journal=Journal of the Association for Computing Machinery |volume=16 |issue=3 |pages=407–412 |doi=10.1145/321526.321530 }}
+*{{cite journal |last=Chaitin |first=G.J. |s2cid=14133389 |year=1975 |title=A Theory of Program Size Formally Identical to Information Theory |journal=Journal of the Association for Computing Machinery |volume=22 |issue=3 |pages=329–340|doi=10.1145/321892.321894 }}
+*{{cite journal |last=Chaitin |first=G.J. |year=1977 |title=Algorithmic information theory |journal=IBM Journal of Research and Development |volume=21 |issue=4 |pages=350–9|doi=10.1147/rd.214.0350 }}
+*{{cite book |last=Chaitin |first=G.J. |title=Algorithmic Information Theory |url=https://archive.org/details/algorithmicinfor00chai |url-access=registration |publisher=Cambridge University Press |year=1987}}
+*{{cite journal |last=Kolmogorov |first=A.N. |year=1965 |title=Three approaches to the definition of the quantity of information |journal=Problems of Information Transmission |issue=1 |pages=3–11}}
+*{{cite journal |last=Kolmogorov |first=A.N. |year=1968 |title=Logical basis for information theory and probability theory |journal=IEEE Trans. Inf. Theory |volume=IT-14 |issue=5 |pages=662–4|doi=10.1109/TIT.1968.1054210 |url=http://mi.mathnet.ru/eng/ppi68}}
+*{{cite journal |last=Levin |first=L. A.  |year=1974 |title=Laws of information (nongrowth) and aspects of the foundation of probability theory |journal=Problems of Information Transmission |volume=10 |issue=3 |pages=206–210 |url=http://mi.mathnet.ru/eng/ppi1039}}
+*{{cite journal |last=Levin |first=L.A. |year=1976 |title=Various Measures of Complexity for Finite Objects (Axiomatic Description) |journal=Soviet Math. Dokl. |volume=17 |pages=522–526 |url=http://mi.mathnet.ru/eng/dan40265}}
+*{{cite book |last1=Li |first1=M. |last2=Vitanyi |first2=P. |title=An Introduction to Kolmogorov Complexity and its Applications |publisher=Springer-Verlag |edition=2nd |url=https://books.google.com/books?id=OIHSBwAAQBAJ |isbn=9781475726060 |year=2013 }}
+*{{cite techreport |last=Solomonoff |first=R.J. |year=1960 |title=A Preliminary Report on a General Theory of Inductive Inference |id=ZTB-138 |publisher=Zator Company |location=Cambridge, Mass |url=http://world.std.com/~rjs/z138.pdf}}
+*{{cite journal |last=Solomonoff |first=R.J. |year=1964 |title=A Formal Theory of Inductive Inference |journal=Information and Control |volume=7 |issue=1 |pages=1–22|doi=10.1016/S0019-9958(64)90223-2 |doi-access=free }}
+*{{cite journal |last=Solomonoff |first=R.J. |year=1964 |title=A Formal Theory of Inductive Inference |journal=Information and Control |volume=7 |issue=2 |pages=224–254|doi=10.1016/S0019-9958(64)90131-7 |doi-access=free }}
+*{{cite book |first=R.J. |last=Solomonoff |title=Algorithmic Probability: Theory and Applications, Information Theory and Statistical Learning |publisher=Springer |year=2009 |isbn=978-0-387-84815-0 |editor-last=Emmert-Streib |editor-first=F. |editor2-last=Dehmer |editor2-first=M. }}
+*{{cite journal |author=Van Lambagen|year=1989|title=Algorithmic Information Theory|journal=Journal of Symbolic Logic |volume=54 |issue=4 |pages=1389–1400 |doi=10.1017/S0022481200041153 |url=https://pure.uva.nl/ws/files/2218357/27367_JSL89.pdf}}
+*{{cite book |first=W.H. |last=Zurek |chapter=Algorithmic Information Content, Church-Turing Thesis, physical entropy, and Maxwell's demon, in |title=Complexity, Entropy and the Physics of Information |publisher=Addison-Wesley |orig-year=1991 |pages=73–89 |chapter-url=https://books.google.com/books?id=RQpQDwAAQBAJ&pg=PT60 |isbn=9780429982514 |year=2018}}
+*{{cite journal |last=Zvonkin |first=A.K. and Levin, L. A. |year=1970 |title=The Complexity of Finite Objects and the Development of the Concepts of Information and Randomness by Means of the Theory of Algorithms |journal=Russian Mathematical Surveys |volume=256 |issue=6 |pages=83–124|doi=10.1070/RM1970v025n06ABEH001269 |bibcode=1970RuMaS..25...83Z }}
+{{refend}}
+
+{{Statistics}}
+
+{{DEFAULTSORT:Algorithmic Information Theory}}
+[[Category:Algorithmic information theory| ]]
+[[Category:Information theory]]
+[[Category:Randomized algorithms]]

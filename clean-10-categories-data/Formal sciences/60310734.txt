@@ -1,0 +1,56 @@
+In [[mathematics]] and [[computer science]], an '''algorithmic technique'''<ref>{{Cite web|url=https://en.oxforddictionaries.com/definition/technique|title=technique {{!}} Definition of technique in English by Oxford Dictionaries|website=Oxford Dictionaries {{!}} English|access-date=2019-03-23}}</ref> is a general approach for implementing a process or [[computation]].<ref name="cormen">{{Cite book|url=https://books.google.com/books?id=NLngYyWFl_YC|title=Introduction To Algorithms|last1=Cormen|first1=Thomas H.|last2=Cormen|first2=Thomas H.|last3=Leiserson|first3=Charles E.|last4=Rivest|first4=Ronald L.|last5=Stein|first5=Clifford|date=2001|publisher=MIT Press|isbn=9780262032933|language=en|page=9}}</ref> 
+
+==General techniques==
+There are several broadly recognized algorithmic techniques that offer a proven method or process for designing and constructing algorithms. Different techniques may be used depending on the objective, which may include [[Search algorithm|searching]], [[Sorting algorithm|sorting]], [[mathematical optimization]], [[Constraint satisfaction problem|constraint satisfaction]], [[categorization]], [[data analysis|analysis]], and [[prediction]].<ref>{{Cite book|url=https://books.google.com/books?id=TrXd-gxPhVYC|title=The Algorithm Design Manual: Text|last=Skiena|first=Steven S.|date=1998|publisher=Springer Science & Business Media|isbn=9780387948607|language=en}}</ref>
+
+===Brute force===
+[[Brute-force search|Brute force]] is a simple, exhaustive technique that evaluates every possible outcome to find a solution.<ref>{{Cite web|url=https://www.webopedia.com/TERM/B/brute_force.html|title=What is brute force? Webopedia Definition|website=www.webopedia.com|language=en|access-date=2019-03-23}}</ref> 
+
+===Divide and conquer===
+The [[Divide-and-conquer algorithm|divide and conquer]] technique decomposes complex problems recursively into smaller sub-problems. Each sub-problem is then solved and these partial solutions are recombined to determine the overall solution. This technique is often used for searching and sorting.<ref>{{Cite journal|last1=Bentley|first1=Jon Louis|last2=Shamos|first2=Michael Ian|date=1976|title=Divide-and-conquer in Multidimensional Space|journal=Proceedings of the Eighth Annual ACM Symposium on Theory of Computing|series=STOC '76|location=New York, NY, USA|publisher=ACM|pages=220–230|doi=10.1145/800113.803652}}</ref>
+
+===Dynamic===
+[[Dynamic programming]] is a systematic technique in which a complex problem is decomposed recursively into smaller, [[overlapping subproblems]] for solution. Dynamic programming stores the results of the overlapping sub-problems locally using an optimization technique called [[memoization]].<ref>{{Cite journal|last=Bellman|first=Richard|date=1966-07-01|title=Dynamic Programming|journal=Science|language=en|volume=153|issue=3731|pages=34–37|doi=10.1126/science.153.3731.34|issn=0036-8075|pmid=17730601}}</ref>  
+
+===Evolutionary===
+An [[Evolutionary algorithm|evolutionary]] approach develops candidate solutions and then, in a manner similar to biological evolution, performs a series of random alterations or combinations of these solutions and evaluates the new results against a fitness function. The most fit or promising results are selected for additional iterations, to achieve an overall optimal solution.<ref>{{Cite journal|last=Coello Coello|first=Carlos A.|date=1999-08-01|title=A Comprehensive Survey of Evolutionary-Based Multiobjective Optimization Techniques|journal=Knowledge and Information Systems|language=en|volume=1|issue=3|pages=269–308|doi=10.1007/BF03325101|issn=0219-3116}}</ref>
+
+===Graph traversal===
+[[Graph traversal]] is a technique for finding solutions to problems that can be represented as [[graph theory|graphs]]. This approach is broad, and includes [[depth-first search]], [[breadth-first search]], [[tree traversal]], and many specific variations that may include local optimizations and excluding search spaces that can be determined to be non-optimum or not possible. These techniques may be used to solve a variety of problems including [[Shortest path problem|shortest path]] and constraint satisfaction problems.<ref>{{Cite book|url=https://books.google.com/books?id=RtHYAgAAQBAJ|title=Algorithms|last1=Kumar|first1=Nitin|last2=Wayne|first2=Kevin|date=2014-02-01|publisher=Addison-Wesley Professional|isbn=9780133799101|language=en}}</ref>
+
+===Greedy===
+A [[Greedy algorithm|greedy]] approach begins by evaluating one possible outcome from the set of possible outcomes, and then searches locally for an improvement on that outcome. When a local improvement is found, it will repeat the process and again search locally for additional improvements near this local optimum. A greedy technique is generally simple to implement, and these series of decisions can be used to find local optimums depending on where the search began. However, greedy techniques may not identify the global optimum across the entire set of possible outcomes.<ref>{{Cite web|url=https://xlinux.nist.gov/dads/HTML/greedyalgo.html|title=greedy algorithm|website=xlinux.nist.gov|access-date=2019-03-23}}</ref>, 
+
+===Heuristic===
+A [[heuristic]] approach employs a practical method to reach an immediate solution not guaranteed to be optimal.<ref>{{Cite web|url=https://xlinux.nist.gov/dads/HTML/heuristic.html|title=heuristic|website=xlinux.nist.gov|access-date=2019-03-23}}</ref>
+
+===Learning===
+[[Machine learning|Learning]] techniques employ statistical methods to perform categorization and analysis without explicit programming. [[Supervised learning]], [[unsupervised learning]], [[reinforcement learning]], and [[deep learning]] techniques are included in this category.<ref>{{Cite book|url=https://books.google.com/books?id=1SylCgAAQBAJ|title=Data Mining: Practical Machine Learning Tools and Techniques|last1=Witten|first1=Ian H.|last2=Frank|first2=Eibe|last3=Hall|first3=Mark A.|last4=Pal|first4=Christopher J.|date=2016-10-01|publisher=Morgan Kaufmann|isbn=9780128043578|language=en}}</ref> 
+
+===Mathematical optimization===
+[[Mathematical optimization]] is a technique that can be used to calculate a mathematical optimum by minimizing or maximizing a function.<ref>{{Cite journal|last1=Marler|first1=R.T.|last2=Arora|first2=J.S.|date=2004-04-01|title=Survey of multi-objective optimization methods for engineering|journal=Structural and Multidisciplinary Optimization|language=en|volume=26|issue=6|pages=369–395|doi=10.1007/s00158-003-0368-6|issn=1615-1488}}</ref> 
+
+===Modeling===
+[[Mathematical model|Modeling]] is a general technique for abstracting a real-world problem into a framework or [[algorithmic paradigm|paradigm]] that assists with solution.<ref>{{Cite book|url=https://books.google.com/books?id=TrXd-gxPhVYC|title=The Algorithm Design Manual: Text|last=Skiena|first=Steven S.|date=1998|publisher=Springer Science & Business Media|isbn=9780387948607|language=en}}</ref> 
+
+===Recursion===
+[[Recursion]] is a general technique for designing a algorithm that calls itself with a progressively simpler part of the task down to one or more base cases with defined results.<ref>{{Cite web|url=https://xlinux.nist.gov/dads/HTML/recursion.html|title=recursion|website=xlinux.nist.gov|access-date=2019-03-23}}</ref><ref>{{Cite web|url=https://www.cs.utah.edu/~germain/PPS/Topics/recursion.html|title=Programming - Recursion|website=www.cs.utah.edu|access-date=2019-03-23}}</ref>
+
+== See also ==
+* [[Algorithm engineering]]
+* [[Algorithm characterizations]]
+* [[Theory of computation]]
+
+==Notes==
+{{Reflist}}
+
+==External links==
+* [https://www.edx.org/course/algorithmic-design-techniques-uc-san-diegox-algs200x Algorithmic Design and Techniques] - [[edX]]
+* [https://www.cs.cmu.edu/afs/cs/academic/class/15210-f13/www/lectures/lecture03.pdf Algorithmic Techniques and Analysis] – [[Carnegie Mellon]] 
+* [https://www.mit.edu/~andoni/F15_AlgoTechMassiveData/index.html Algorithmic Techniques for Massive Data] – [[Massachusetts Institute of Technology|MIT]] 
+
+{{Authority control}}
+
+{{DEFAULTSORT:Algorithmic technique}}
+[[Category:Mathematical logic]]
+[[Category:Theoretical computer science]]

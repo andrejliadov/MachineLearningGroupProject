@@ -1,0 +1,62 @@
+'''Phase reduction''' is a method used to reduce a multi-dimensional dynamical equation describing a nonlinear [[limit cycle]] [[oscillator]] into a one-dimensional phase equation.<ref>{{Cite journal |title=A simple solution-phase reduction method for the synthesis of shape-controlled platinum nanoparticles |date=2005-05-01 |journal=Materials Letters |volume=59 |issue=12 |pages=1567–1570 |language=en |doi=10.1016/j.matlet.2005.01.024 |last1=Tang |first1=Zhicheng |last2=Geng |first2=Dongsheng |last3=Lu |first3=Gongxuan }}</ref><ref name="Nakao">{{cite journal |author=H.Nakao |title=Phase reduction approach to synchronization of nonlinear oscillators |journal=Contemporary Physics |volume=57 |issue=2 |pages=188–214 |date=2017 |doi=10.1080/00107514.2015.1094987|arxiv=1704.03293 }}</ref> Many phenomena in our world such as chemical reactions, electric circuits, mechanical vibrations, cardiac cells, and spiking neurons are examples of [[rhythm]]ic phenomena, and can be considered as nonlinear limit cycle oscillators.<ref name="Nakao"/>
+
+==History==
+The theory of phase reduction method was first introduced in the 1950s, the existence of [[periodic solution]]s to nonlinear oscillators under [[wikt:perturbation|perturbation]], has been discussed by Malkin in,<ref>{{cite book |author=Hoppensteadt F.C. and Izhikevich E.M |title=Weakly connected neural networks |publisher=Springer-Verlag, New York |volume=126 |date=1997 |doi=10.1007/978-1-4612-1828-9|series=Applied Mathematical Sciences |isbn=978-1-4612-7302-8 }}</ref> in the 1960s, Winfree illustrated the importance of the notion of phase and formulated the [[phase model]] for a population of nonlinear oscillators in his studies on biological synchronization.<ref name "Winfree2001">{{cite book |author=Winfree A.T. |title=The Geometry of Biological Time |publisher=Springer, New York |date=2001}}</ref> Since then, many researchers have discovered different rhythmic phenomena related to phase reduction theory.
+
+== Phase model of reduction==
+Consider the dynamical system of the form
+:<math>
+\frac{dx}{dt}=f(x),  
+</math>
+where <math>x\in \mathbb{R}^N</math> is the oscillator state variable, <math>f(x)</math> is the baseline vector field. Let <math>\varphi:\mathbb{R}^N\times \mathbb{R} \rightarrow \mathbb{R}^N</math> be the [[flow (mathematics)|flow]] induced by the system, that is, <math>\varphi(x_0,t)</math> is the solution of the system for the initial condition <math>x(0)=x_0</math>. This system of differential equations can describe for a neuron model for conductance with <math> x=(V,n)\in \mathbb{R}^N</math>, where <math> V</math> represents the voltage difference across the membrane and <math> n</math> represents the <math> (N-1)</math>-dimensional vector that defines [[gating variable]]s. <ref name="BrownMoehlisHolmes">{{cite journal |author=E.Brown, J.Moehlis, P.Holmes |title=On the Phase Reduction and Response Dynamics of Neural Oscillator Populations |journal=Neural Computation |volume=16 |issue=4 |pages=673–715 |date=2004|doi=10.1162/089976604322860668 |pmid=15025826 }}</ref> When a neuron is perturbed by a stimulus current, the dynamics of the perturbed system will no longer be the same with the dynamics of the baseline neural oscillator. 
+
+[[File:Isochron-stable limit cycle.png|thumb|upright=2.1|Isochrons and a stable limit cycle of the planar system <math>\dot{x}=x - y - x(x^2+y^2);  \dot{y}= x + y - y(x^2+y^2)</math>. The system has a unique stable limit cycle (solid circle). Only isochrons corresponding to phases <math>nT/5, n=1, 2, 3, 4, 5</math>, where <math>T=2\pi</math> is the period of the orbit, are shown (dotted lines). Neighbouring trajectories (blue dotted curves) with different initial conditions are attracted to the cycle (except the origin).]]
+
+The target here is to reduce the system by defining a [[Phase (waves)|phase]] for each point in some neighbourhood of the limit cycle. The allowance of sufficiently small perturbations (e.g. external forcing or stimulus effect to the system) might cause a large deviation of the phase, but the amplitude is perturbed slightly because of the attracting of the limit cycle.<ref>{{cite journal |author=M.Rosenblum and A.Pikovsky |title=Synchronization: from pendulum clocks to chaotic lasers and chemical oscillators |journal=Contemporary Physics |volume=44 |issue=5 |page=401–416 |date=2003|doi=10.1080/00107510310001603129 |bibcode=2003ConPh..44..401R }}</ref> Hence we need to extend the definition of the phase to points in the neighborhood of the cycle by introducing the definition of [[asymptotic phase]] (or [[latent phase]]).<ref>
+{{cite book |author-link= Winfree |date= 2001 |title= The Geometry of Biological Time|url= https://www.springer.com/gp/book/9780387989921 |publisher= Springer |isbn= 978-1-4757-3484-3}}
+</ref> This helps us to assign a phase to each point in the [[basin of attraction]] of a periodic orbit. The set of points in the basin of attraction of <math>\gamma</math> that share the same asymptotic phase <math>\Phi(x)</math> is called the [[isochron]] (e.g. see [[:File:Isochron_limit_cycle.png|Figure 1]]), which were first introduced by Winfree.<ref name="Winfree67">{{cite journal |author=A.T.Winfree |title=Biological rhythms and the behavior of populations of coupled oscillators |journal=Journal of Theoretical Biology |volume=16 |issue=1 |pages=15–42 |date=1967|doi=10.1016/0022-5193(67)90051-3 |pmid=6035757 }}</ref> Isochrons can be shown to exist for such a stable hyperbolic limit cycle <math>\gamma</math>. <ref name="Guckenkeimer">{{cite journal |author=J.Guckenkeimer |title=Isochrons and phaseless sets |journal= Journal of Mathematical Biology|volume=1 |issue=3 |pages=259–273 |date=1975|doi=10.1007/BF01273747 |pmid=28303309 }}</ref> So for all point <math>x</math> in some neighbourhood of the cycle, the evolution of the phase <math>\varphi=\Phi(x)</math> can be given by the relation <math> \frac{d\varphi}{dt}=\omega </math>, where <math>\omega=\frac{2\pi}{T_0}</math> is the [[natural frequency]] of the oscillation.<ref name="BrownMoehlisHolmes"/><ref name="Schultheiss">{{cite book |author=N.W.Schultheiss|display-authors=etal|title = The Theory of Weakly Coupled Oscillators |journal=Springer Series in Computational Neuroscience |volume=6 |pages = 3–31 |date=2012 |doi=10.1007/978-1-4614-0739-3_1|isbn = 978-1-4614-0738-6 |citeseerx = 10.1.1.225.4260 }}</ref> By the [[chain rule]] we then obtain an equation that govern the evolution of the phase of the neuron model is given by the phase model:
+:<math>
+\frac{d\varphi}{dt}=\nabla\Phi(x)\cdot f(x)=\omega,
+</math>
+where <math>\nabla\Phi(x)</math> is the gradient of the phase function <math>\Phi(x)</math> with respect to the vector of the neuron's state vector <math>x</math>, for the derivation of this result, see <ref name="Nakao"/><ref name="BrownMoehlisHolmes"/><ref name="Schultheiss"/> This means that the <math>N</math>-dimensional system describing the oscillating neuron dynamics is then reduced to a simple one-dimensional phase equation. One can notice that, it is impossible to retrieve the full information of the oscillator <math>x</math> from the phase <math>\Phi</math> because 
+<math>\Phi(x)</math> is not one-to-one mapping.<ref name="Nakao"/>
+
+==Phase model with external forcing==
+Consider now a [[weakly perturbed system]] of the form
+:<math>
+\frac{dx(t)}{dt}=f(x)+\varepsilon g(t),
+</math>
+where <math> f(x)</math> is the baseline vector field, <math>\varepsilon g(t) </math> is a weak periodic external forcing (or stimulus effect) of period <math>T</math>, which can be different from <math>T_0</math> (in general), and frequency <math>\Omega=2\pi/T </math>, which might depend on the oscillator state <math>x</math>. Assuming that the baseline neural oscillator (that is, when <math>\varepsilon=0</math>)  has an [[exponentially stable]] [[limit cycle]] <math> \gamma</math> with period <math>T_0</math> (example, see [[:File:Isochron-stable_limit_cycle.png|Figure 1]]) <math> \gamma </math> that is [[normally hyperbolic]], <ref>{{cite book |author= J.Guckenheimer and P.Holmes |title=Nonlinear Oscillations, Dynamical Systems, and Bifurcations of Vector Fields |publisher=Springer, NY |date=1983}}</ref> it can be shown that <math>\gamma</math> persists under small perturbations. <ref>{{cite journal |author=N.Fenichel |title=Persistence and smoothness of invariant manifolds for flows |journal=Indiana University Mathematics Journal |volume=21 |issue=3 |date=1971}}</ref> This implies that for a small perturbation, the perturbed system will remain close to the limit cycle. Hence we assume that such a limit cycle always exists for each neuron.
+
+The evolution of the perturbed system in terms of the isochrons is <ref name="Kuramoto"/>
+:<math>
+\frac{d\varphi}{dt}=\omega +\varepsilon \, \nabla\Phi(x)\cdot g(t),
+</math>
+where <math>\nabla\Phi(x)</math> is the gradient of the phase <math>\Phi(x)</math> with respect to the vector of the neuron's state vector <math>x</math>, and <math>g(t)</math> is the stimulus effect driving the firing of the neuron as a function of time <math>t</math>. This phase equation is a [[partial differential equation]] (PDE).
+
+For a sufficiently small <math>\varepsilon>0</math>, a reduced phase model evaluated on the limit cycle <math>\gamma</math> of the unperturbed system can be given by, up to the first order of <math>\varepsilon</math>,
+:<math>
+\frac{d\varphi}{dt}=\omega + \varepsilon \, Z(\varphi) \cdot g(t),
+</math>
+where function <math>Z(\varphi):=\nabla\Phi(\gamma(t))</math> measures the normalized phase shift due to a small perturbation delivered at any point <math> x</math> on the limit cycle <math>\gamma</math>, and is called the [[phase sensitivity function]] or infinitesimal [[phase response curve]]. <ref name="Winfree67"/> <ref name="Kuramoto">{{cite book |author=Y.Kuramoto |title=Chemical oscillations, waves, and turbulence |publisher=Springer-Verlag, Berlin |volume=19 |date=1984 |doi=10.1007/978-3-642-69689-3|series=Springer Series in Synergetics |isbn=978-3-642-69691-6 }}</ref>
+
+In order to analyze the reduced phase equation corresponding to the perturbed nonlinear system, we need to solve a PDE, which is not a trivial one. So we need to simplify it into an [[autonomous]] phase equation for <math>\varphi</math>, which can more easily be analyzed. <ref name="Kuramoto"/> Assuming that the frequencies <math>\omega</math> and <math>\Omega</math> are sufficiently small so that
+<math>\omega-\Omega=\varepsilon\delta </math>, where <math>\delta</math> is <math>O(1)</math>, we can introduce a new phase function <math> \psi(t)=\varphi(t)-\Omega t</math>.<ref name="Kuramoto"/>
+
+By the [[method of averaging]]<ref>{{cite book |author=J.A.Sanders|display-authors=etal|title=Averaging methods in nonlinear dynamical systems |publisher=Springer-Verlag, New York |volume=59 |date=2010 |doi=10.1007/978-0-387-48918-6|series=Applied Mathematical Sciences|isbn=978-0-387-48916-2}}</ref>, assuming that <math>\psi(t)</math> does not vary within <math>T</math>, we obtain an approximated phase equation
+:<math>
+\frac{d\psi(t)}{dt}=\Delta_\varepsilon + \varepsilon\Gamma(\psi),
+</math>
+where <math>\Delta_\varepsilon=\varepsilon\delta </math>, and <math>\Gamma(\psi)</math> is a <math>2\pi</math>-periodic function representing the effect of the periodic external forcing on the oscillator phase,<ref name="Kuramoto"/> defined by
+:<math>
+\Gamma(\psi)= \frac 1 {2\pi} \int_0^{2\pi}Z(\psi+\eta)\cdot g\left(\frac\eta\Omega\right) \, d\eta .
+</math> 
+The graph of this function <math>\Gamma(\psi)</math> can be shown to exhibit the dynamics of the approximated phase model, for more illustrations see <ref name="Nakao"/>.
+
+==Examples of phase reduction==
+For a sufficiently small perturbation of a certain nonlinear oscillator or a network of coupled oscillators, we can compute the corresponding phase sensitivity function or infinitesimal PRC <math>Z(\varphi)</math>.
+
+== References ==
+{{reflist}}
+
+[[Category:Mathematics]]

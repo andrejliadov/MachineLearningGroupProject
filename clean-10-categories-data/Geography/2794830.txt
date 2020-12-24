@@ -1,0 +1,84 @@
+'''Geovisualization''' or '''geovisualisation''' (short for '''geographic visualization'''), also known as '''cartographic visualization''', refers to a set of tools and techniques supporting the analysis of [[geospatial data]] through the use of [[interactive visualization]].
+
+Like the related fields of [[scientific visualization]]<ref name= "ME97">MacEachren, A.M. and Kraak, M.J. 1997 Exploratory cartographic visualization: advancing the agenda. Computers & Geosciences, 23(4), pp. 335–343.</ref> and [[information visualization]]<ref name= "Card99">[[Stuart K. Card]], Mackinlay, J.D., and Shneidermann, B. 1999. Reading in Information Visualization: Using Vision to Think. San Francisco: Morgan Kaumann Publishers.</ref>  geovisualization emphasizes knowledge construction over knowledge storage or information transmission.<ref name= "ME97"/> To do this, geovisualization communicates geospatial information in ways that, when combined with human understanding, allow for data exploration and decision-making processes.<ref name= "ME97"/><ref name="Jiang2005">Jiang, B., and Li, Z. 2005. Editorial: Geovisualization: Design, Enhanced Visual Tools and Applications. The Cartographic Journal, 42(1), pp. 3–4.</ref><ref name= "ME04">[[Alan MacEachren|MacEachren, A.M.]] 2004. Geovisualization for knowledge construction and decision support. [[IEEE Computer Graphics and Applications]], 24(1), pp.13–17.</ref>
+
+Traditional, static maps have a limited exploratory capability; the graphical representations are inextricably linked to the geographical information beneath. [[GIS]] and geovisualization allow for more interactive maps; including the ability to explore different layers of the map, to zoom in or out, and to change the visual appearance of the map, usually on a computer display.<ref name= "Jiang03">Jiang, B., Huang, B., and Vasek, V. 2003. Geovisualisation for Planning Support Systems. In Planning Support Systems in Practice, Geertman, S., and Stillwell, J. (Eds.). Berlin: Springer.</ref> Geovisualization represents a set of cartographic technologies and practices that take advantage of the ability of modern microprocessors to render changes to a map in real time, allowing users to adjust the mapped data on the fly.<ref name= "ME97"/>
+
+==History==
+The term visualization is first mentioned in the cartographic literature at least as early as 1953, in an article by [[University of Chicago]] geographer Allen K. Philbrick. New developments in the field of computer science prompted the [[National Science Foundation]] to redefine the term in a 1987 report which placed visualization at the convergence of computer graphics, image processing, computer vision, computer-aided design, signal processing, and user interface studies<ref>McCormick, B.H., DeFanti, T.A., and Brown, M.D. (Eds.). 1987. Visualization in Scientific Computing. Computer Graphics, 21(6). p. 63.</ref> and emphasized both the knowledge creation and hypothesis generation aspects of scientific visualization.<ref name= "ME97"/>
+
+Geovisualization developed as a field of research in the early 1980s, based largely on the work of French graphic theorist [[Jacques Bertin]].<ref name= "ME04"/> Bertin's work on cartographic design and information visualization share with the National Science Foundation report a focus on the potential for the use of "dynamic visual displays as prompts for scientific insight and on the methods through which dynamic visual displays might leverage perceptual cognitive processes to facilitate scientific thinking".<ref name= "ME04"/>
+
+Geovisualization has continued to grow as a subject of practice and research. The [[International Cartographic Association]] (ICA) established a Commission on Visualization & Virtual Environments in 1995.
+
+==Related fields==
+Geovisualization is closely related to other visualization fields, such as [[scientific visualization]]<ref name= "ME97"/> and [[information visualization]].<ref name= "Card99"/> Owing to its roots in [[cartography]], geovisualization contributes to these other fields by way of the map metaphor, which "has been widely used to visualize non-geographic information in the domains of information visualization and [[domain knowledge]] visualization."<ref name="Jiang2005"/>  It is also related to [[UrbanSim|urban simulation]].
+
+==Applications==
+Geovisualization has made inroads in a diverse set of real-world situations calling for the decision-making and knowledge creation processes it can provide. The following list provides a summary of some of these applications as they are discussed in the geovisualization literature.
+
+===Wildland fire fighting===
+Firefighters have been using sandbox environments to rapidly and physically model topography and fire for wildfire incident command strategic planning. The SimTable is a 3D interactive fire simulator, bringing sandtable exercises to life. The SimTable uses advanced computer simulations to model fires in any area, including local neighborhoods, utilizing actual slope, terrain, wind speed/direction, vegetation, and other factors. SimTable Models were used in Arizona's largest fire on record, the [[Wallow Fire]].<ref>http://www.kob.com/article/stories/S2149915.shtml?cat=0</ref>
+
+===Forestry===
+Geovisualizers, working with European foresters, used CommonGIS and Visualization Toolkit ([[VTK]]) to visualize a large set of spatio-temporal data related to European forests, allowing the data to be explored by non-experts over the Internet. The report summarizing this effort "uncovers a range of fundamental issues relevant to the broad field of geovisualization and information visualization research".<ref name= "GA07">Andrienko, G., Andrienko, N., Jankowski, P, Keim, D., Kraak, M.-J., MacEachren, A.M., and Wrobel, S. 2007. Geovisual analytics for spatial decision support: Setting the research agenda. International Journal of Geographical Information Science, 21(8), pp. 839-857.</ref>
+
+The research team cited the two major problems as the inability of the geovisualizers to convince the foresters of the efficacy of geovisualization in their work and the foresters' misgivings over the dataset's accessibility to non-experts engaging in "uncontrolled exploration". While the geovisualizers focused on the ability of geovisualization to aid in knowledge construction, the foresters preferred the information-communication role of more traditional forms of cartographic representation.<ref name= "GA07"/>
+
+===Archaeology===
+Geovisualization provides archaeologists with a potential technique for mapping unearthed archaeological environments  as well as for accessing and exploring archaeological data in three dimensions.<ref>Watters, M. 2005. Geovisualization: an Example from the Catholme Ceremonial Complex. Archaeological Prospection, 13, pp. 282-290.</ref>
+
+The implications of geovisualization for archaeology are not limited to advances in archaeological theory and exploration but also include the development of new, collaborative relationships between archaeologists and computer scientists.<ref>Watters, M. 2005. Review of Exploring Geovisualization, Dykes, J., MacEachren, A.M., and Kraak, M.J. (Eds.). Amsterdam: Elsevier Science, 2004. In Archaeological Prospection, 12, pp. 265-266.</ref>
+
+===Environmental studies===
+Geovisualization tools provide multiple stakeholders with the ability to make balanced environmental decisions by taking into account "the complex interacting factors that should be taken into account when studying environmental changes".<ref>{{Cite journal|last=Gasco|first=Luis|last2=Asensio|first2=Cesar|last3=de Arcas|first3=Guillermo|date=2017-05-15|title=Communicating airport noise emission data to the general public|journal=Science of the Total Environment|volume=586|pages=836–848|doi=10.1016/j.scitotenv.2017.02.063|pmid=28214112|bibcode=2017ScTEn.586..836G}}</ref> Geovisualization users can use a [[georeference]]d model to explore a complex set of environmental data, interrogating a number of scenarios or policy options to determine a best fit.<ref>Danada, J., Dias, E., Romao, T., Correia, N., Trabuco, A., Santos, C., Serpa, J., Costa, M., Camara, A. 2005. Mobile Environmental Visualization. The Cartographic Journal, 42(1), pp. 61-68.</ref>
+
+===Urban planning===
+Both planners and the general public can use geovisualization to explore real-world environments and model 'what if' scenarios based on spatio-temporal data. While geovisualization in the preceding fields may be divided into two separate domains—the private domain, in which professionals use geovisualization to explore data and generate hypotheses, and the public domain, in which these professionals present their "visual thinking" to the general public<ref name= "Jiang03"/>—planning relies more heavily than many other fields on collaboration between the general public and professionals.
+
+Planners use geovisualization as a tool for modeling the environmental interests and policy concerns of the general public. Jiang et al.<ref name= "Jiang03"/> mention two examples, in which "3D photorealistic representations are used to show urban redevelopment [and] dynamic computer simulations are used to show possible pollution diffusion over the next few years." The widespread use of the Internet by the general public has implications for these collaborative planning efforts, leading to increased participation by the public while decreasing the amount of time it takes to debate more controversial planning decisions.<ref name= "Jiang03"/>
+
+==See also==
+*[[Animated mapping]]
+*[[Cartography]]
+*[[Computer-aided design]]
+*[[Computer graphics]]
+*[[Computer vision]]
+*[[Exploratory data analysis]]
+*[[Geographic information science]]
+*[[Geoinformatics]]
+*[[Image processing]]
+*[[Signal processing]]
+
+==References==
+{{reflist}}
+
+==Further reading==
+*Priyanka Mehta and Saumya Pareek.2012.3D Visualization for Geo-referenced Terrain & Soil-subsurface: An innovative approach for visualization of soil subsurface
+*Cartwright, W. 1997. New media and their application to the production of map products. Computers & Geosciences, 23(4), pp.&nbsp;447–456.
+*Dykes, J., A. M. MacEachren, and M.-J. Kraak eds. 2005. Exploring Geovisualization. Amsterdam: Elsevier.
+*Kraak, M.-J., and A. M. MacEachren. 1999. Visualization for exploration of spatial data (editorial introduction to special issue). International Journal of Geographical Information Science 13 (4):285–287.
+*Kraak, M. J., and A. M. MacEachren. 2005. Geovisualization and GIScience. Cartography and Geographic Information Science 32 (2):67–68.
+*MacEachren, A. M., and M. J. Kraak. 1997. Exploratory cartographic visualization: Advancing the agenda. Computers & Geosciences 23 (4):335–343
+*MacEachren, A. M., and M.-J. Kraak. 2001. Research challenges in geovisualization. Cartography and Geographic Information Science 28 (1):3–12.
+*MacEachren, A. M., M. Gahegan, W. Pike, I. Brewer, G. Cai, E. Lengerich, and F. Hardisty. 2004. Geovisualization for knowledge construction and decision-support. [[IEEE Computer Graphics & Applications]] 24 (1):13–17.
+*Philbrick, A.K. 1953. Toward a unity of cartographical forms and geographical content. Professional Geographer, 5(5), pp.&nbsp;11–15.
+*Taylor, D.R.F. 1994. Geographic Information Systems: the microcomputer and modern cartography. In Geographic Information Systems: The Microcomputer and Modern Cartography, D.R.F. Taylor and A.M. MacEachren (Eds.). Oxford: Pergamon, pp.&nbsp;333–342.
+
+==External links==
+* [http://geoanalytics.net/ica ICA Commission on GeoVisualization] (since 2007)
+* [https://web.archive.org/web/20050824135152/http://kartoweb.itc.nl/ICAvis/ ICA Commission on Visualization and Virtual Environments] (1995-2007)
+* [https://web.archive.org/web/20051110030002/http://gis.cancer.gov/nci/geovisualization.html Geovisualization at the National Cancer Institute]
+* [http://www.geovista.psu.edu/geoviztoolkit/index.html GeoViz Toolkit]—Open Source Toolkit for Geovizualization
+* [http://www.geovista.psu.edu/ Penn State GeoVISTA Center]
+* [http://www.avizo3d.com Avizo Visualization Software]—software framework for geosciences
+* [http://reference.wolfram.com/language/guide/MapsAndCartography.html Wolfram Language] Geovisualization functionality
+
+{{commons category|Geovisualization}}
+
+{{Atlas}}
+{{Visualization}}
+
+[[Category:Cartography]]
+[[Category:Environmental studies]]
+[[Category:Geographic data and information fields of study]]

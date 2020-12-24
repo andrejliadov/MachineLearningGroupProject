@@ -1,0 +1,326 @@
+In [[electronics]], when describing a [[voltage]] or [[current (electricity)|current]] [[step function]], '''rise time''' is the time taken by a [[Signal (electrical engineering)|signal]] to change from a specified low value to a specified high value.<ref name="Std1037C">{{citation |url=https://www.its.bldrdoc.gov/fs-1037/dir-031/_4625.htm |title=rise time |work=Federal Standard 1037C |date=August 7, 1996}}</ref> These values may be expressed as [[ratio]]s<ref name="10-90">See for example {{harv|Cherry|Hooper|1968|loc=p.6 and p.306}}, {{harv|Millman|Taub|1965|p=44}} and {{harv|Nise|2011|p=167}}.</ref> or, equivalently, as [[percentage]]s<ref>See for example {{harvtxt|Levine|1996|p=158}}, {{harv|Ogata|2010|p=170}} and {{harv|Valley|Wallman|1948|p=72}}.</ref> with respect to a given reference value. In [[analog electronics]] and [[digital electronics]]{{Citation needed|reason=Not true for digital electronics as explained on talk page|date=April 2017}}, these percentages are commonly the 10% and 90% (or equivalently {{math|0.1}} and {{math|0.9}}) of the output step height:<ref>See for example {{harv|Cherry|Hooper|1968|loc=p. 6 and p. 306}}, {{harv|Millman|Taub|1965|p=44}} and {{harv|Valley|Wallman|1948|p=72}}.</ref> however, other values are commonly used.<ref>For example {{harvtxt|Valley|Wallman|1948|loc=p. 72, footnote 1}} state that "''For some applications it is desirable to measure rise time between the 5 and 95 per cent points or the 1 and 99 per cent points.''".</ref> For applications in control theory, according to {{harvtxt|Levine|1996|p=158}}, rise time is defined as "''the time required for the response to rise from {{math|x%}} to {{math|y%}} of its final value''", with 0% to 100% rise time common for [[underdamped]] second order systems, 5% to 95% for [[critically damped]] and 10% to 90% for [[overdamped]] ones.<ref name="risedef">Precisely, {{harvtxt|Levine|1996|p=158}} states: "''The rise time is the time required for the response to rise from x% to y% of its final value. For overdamped [[Control system|second order system]]s, the 0% to 100% rise time is normally used, and for underdamped systems'' '''(...)''' ''the 10% to 90% rise time is commonly used''". However, this statement is incorrect since the 0%–100% rise time for an overdamped 2nd order control system is infinite, similarly to the one of an [[Rise time#One-stage low-pass RC network|RC network]]: this statement is repeated also in the second edition of the book {{harv|Levine|2011|p=9-3 (313)}}.</ref> According to {{harvtxt|Orwiler|1969|p=22}}, the term "rise time" applies to either positive or negative [[step response]], even if a displayed negative excursion is popularly termed [[fall time]].<ref>Again according to {{harvtxt|Orwiler|1969|p=22}}.</ref>
+
+==Overview==
+Rise time is an analog parameter of fundamental importance in [[electronics|high speed electronics]], since it is a measure of the ability of a circuit to respond to fast input signals.<ref>According to {{harvtxt|Valley|Wallman|1948|p=72}}, "''The most important characteristics of the reproduction of a leading edge  of a rectangular pulse or step function are the rise time, usually measured from 10 to 90 per cent, and the "[[Overshoot (signal)|overshoot]]"''". And according to {{harvtxt|Cherry|Hooper|1969|p=306}}, "''The two most significant parameters in the square-wave response of an [[amplifier]] are its rise time and percentage tilt''".</ref> There have been many efforts to reduce the rise times of circuits, generators, and data measuring and transmission equipment. These reductions tend to stem from research on faster [[electronic device|electron devices]] and from techniques of reduction in stray circuit parameters (mainly capacitances and inductances). For applications outside the realm of high speed [[electronics]], long (compared to the attainable state of the art) rise times are sometimes desirable: examples are the [[Dimmer|dimming]] of a light, where a longer rise-time results, amongst other things, in a longer life for the bulb, or in the control of analog signals by digital ones by means of an [[analog switch]], where a longer rise time means lower capacitive feedthrough, and thus lower coupling [[noise]] to the controlled analog signal lines.
+
+===Factors affecting rise time===
+For a given system output, its rise time depend both on the rise time of input signal and on the characteristics of the [[system]].<ref>See {{harv|Orwiler|1969|pp=27–29}} and the "[[Rise time#Rise time of cascaded blocks|Rise time of cascaded blocks]]" section.</ref>
+
+For example, rise time values in a resistive circuit are primarily due to stray [[capacitance]] and [[inductance]]. Since every [[electrical network|circuit]] has not only [[electrical resistance|resistance]], but also [[capacitance]] and [[inductance]], a delay in voltage and/or current at the load is apparent until the [[Steady state theory|steady state]] is reached. In a pure [[RC circuit]], the output risetime (10% to 90%) is approximately equal to {{math|2.2 ''RC''}}.<ref>See for example {{harv|Valley|Wallman|1948|p=73}}, {{harv|Orwiler|1969|loc=p. 22 and p. 30}} or the "[[Rise time#One-stage low-pass RC network|One-stage low-pass RC network]]" section.</ref>
+
+===Alternative definitions===
+Other definitions of rise time, apart from the one given by the [[#{{harvid|National Communication Systems|1997}}|Federal Standard 1037C (1997]], p. R-22) and its slight generalization given by {{harvtxt|Levine|1996|p=158}}, are occasionally used:<ref>See {{harv|Valley|Wallman|1948|loc=p. 72, footnote 1}} and {{Harv|Elmore|1948|p=56}}.</ref> these alternative definitions differ from the standard not only for the reference levels considered. For example, the time interval graphically corresponding to the intercept points of the tangent drawn through the 50% point of the step function response is occasionally used.<ref>See {{harv|Valley|Wallman|1948|loc=p. 72, footnote 1}} and {{Harv|Elmore|1948|loc=p. 56 and p. 57, fig. 2a}}.</ref> Another definition, introduced by {{Harvtxt|Elmore|1948|p=57}},<ref>See also {{harv|Petitt|McWhorter|1961|pp=109–111}}.</ref> uses concepts from [[statistics]] and [[probability theory]]. Considering a [[step response]] {{math|''V''(''t'')}}, he redefines the [[Propagation delay#Electronics|delay time]] {{math|''t<sub>D</sub>''}} as the [[first moment]] of its [[first derivative]] {{math|''V′''(''t'')}}, i.e.
+
+:<math>t_D = \frac{\int_0^{+\infty}t V^\prime(t)\mathrm{d}t}{\int_0^{+\infty} V^\prime(t)\mathrm{d}t}.</math>
+
+Finally, he defines the rise time {{math|''t<sub>r</sub>''}} by using the second moment
+
+:<math>t_r^2 = \frac{\int_0^{+\infty}(t -t_D)^2 V^\prime(t)\mathrm{d}t}{\int_0^{+\infty} V^\prime(t)\mathrm{d}t} \quad 
+\Longleftrightarrow \quad t_r =\sqrt{\frac{\int_0^{+\infty}(t -t_D)^2 V^\prime(t)\mathrm{d}t}{\int_0^{+\infty} V^\prime(t)\mathrm{d}t}}</math>
+
+== Rise time of model systems ==
+
+===Notation===
+All notations and assumptions required for the analysis are listed here.
+
+*Following {{harvs|txt|last=Levine | year1=1996 | year2=2011 |loc1=p. 158| loc2= 9-3 (313)}}, we define {{math|''x%''}} as the percentage low value and {{math|''y%''}} the percentage high value respect to a reference value of the signal whose rise time is to be estimated.
+*{{math|''t''<sub>1</sub>}} is the time at which the output of the system under analysis is at the {{math|''x%''}} of the steady-state value, while {{math|''t''<sub>2</sub>}} the one at which it is at the {{math|''y%''}}, both measured in [[second]]s.
+*{{math|''t<sub>r</sub>''}} is the rise time of the analysed system, measured in seconds. By definition,
+
+:<math>t_r = t_2 - t_1.</math>
+
+*{{math|''f<sub>L</sub>''}} is the lower [[cutoff frequency]] (-3&nbsp;dB point) of the analysed system, measured in [[hertz]].
+*{{math|''f<sub>H</sub>''}} is higher cutoff frequency (-3&nbsp;dB point) of the analysed system, measured in hertz.
+*{{math|''h''(''t'')}} is the [[impulse response]] of the analysed system in the time domain.
+*{{math|''H''(''ω'')}} is the [[frequency response]] of the analysed system in the frequency domain.
+*The [[Bandwidth (signal processing)|bandwidth]] is defined as
+
+:<math>BW = f_{H} - f_{L}\,</math>
+
+:and since the lower cutoff frequency {{math|''f<sub>L</sub>''}} is usually several decades lower than the higher cutoff frequency {{math|''f<sub>H</sub>''}},
+
+:<math>BW\cong f_H\,</math>
+
+*All systems analyzed here have a frequency response which extends to {{math|0}} (low-pass systems), thus 
+:<math>f_L=0\,\Longleftrightarrow\,f_H=BW</math> exactly.
+
+*For the sake of simplicity, all systems analysed in the "[[Rise time#Simple examples of calculation of rise time|Simple examples of calculation of rise time]]" section are [[Gain (electronics)#Voltage gain|unity gain]] [[electrical network]]s, and all signals are thought as [[voltage]]s: the input is a [[step function]] of {{math|''V''<sub>0</sub>}} [[volt]]s, and this implies that
+
+:<math>\frac{V(t_1)}{V_0}=\frac{x\%}{100} \qquad \frac{V(t_2)}{V_0}=\frac{y\%}{100}</math>
+
+*{{math|''ζ''}} is the [[damping ratio]] and {{math|''ω''<sub>0</sub>}} is the [[natural frequency]] of a given [[Second-order differential equation|second order system]].
+
+=== Simple examples of calculation of rise time ===
+The aim of this section is the calculation of rise time of [[step response]] for some simple systems:
+
+==== Gaussian response system ====
+A system is said to have a ''[[Gaussian]] response'' if it is characterized by the following frequency response
+
+:<math>|H(\omega)|=e^{-\frac{\omega^2}{\sigma^2}} </math>
+
+where {{math|''σ''&nbsp;<nowiki>></nowiki>&nbsp;0}} is a constant,<ref>See {{harv|Valley|Wallman|1948|p=724}} and {{harv|Petitt|McWhorter|1961|p=122}}.</ref>  related to the high cutoff frequency by the following relation:
+
+:<math>f_H = \frac{\sigma}{2\pi} \sqrt{\frac{3}{20}\ln 10} \cong 0.0935 \sigma.</math>
+
+Even if this kind frequency response is not realizable by a [[causal filter]],<ref>By the [[Paley-Wiener criterion]]: see for example {{harv|Valley|Wallman|1948|loc=p. 721 and p. 724}}. Also {{harvtxt|Petitt|McWhorter|1961|p=122}} briefly recall this fact.</ref> its usefulness lies in the fact that behaviour of a [[cascade connection]] of [[Low-pass filter#First order|first order low pass filters]] approaches the behaviour of this system more closely as the number of cascaded stages [[Asymptotic analysis|asymptotically]] rises to [[Countable set|infinity]].<ref>See {{harv|Valley|Wallman|1948|p=724}}, {{harv|Petitt|McWhorter|1961|loc=p. 111, including footnote 1, and p.}} and {{harv|Orwiler|1969|p=30}}.</ref> The corresponding [[impulse response]] can be calculated using the inverse [[Fourier transform]] of the shown [[frequency response]]
+
+:<math>\mathcal{F}^{-1}\{H\}(t)=h(t)=\frac{1}{2\pi}\int\limits_{-\infty}^{+\infty} {e^{-\frac{\omega^2}{\sigma^2}}e^{i\omega t}} d\omega=\frac{\sigma}{2\sqrt{\pi}}e^{-\frac{1}{4}\sigma^2t^2}</math>
+
+Applying directly the definition of [[step response]],
+
+:<math>V(t) = V_0{H*h}(t) = \frac{V_0}{\sqrt{\pi}}\int\limits_{-\infty}^{\frac{\sigma t}{2}}e^{-\tau^2}d\tau = \frac{V_0}{2}\left[1+\mathrm{erf}\left(\frac{\sigma t}{2}\right)\right] \quad \Longleftrightarrow \quad \frac{V(t)}{V_0} = \frac{1}{2}\left[1+\mathrm{erf}\left(\frac{\sigma t}{2}\right)\right].</math>
+
+To determine the 10% to 90% rise time of the system it is necessary to solve for time the two following equations:
+
+:<math>\frac{V(t_1)}{V_0} = 0.1 = \frac{1}{2}\left[1+\mathrm{erf}\left(\frac{\sigma t_1}{2}\right)\right]
+\qquad \frac{V(t_2)}{V_0} = 0.9= \frac{1}{2}\left[1+\mathrm{erf}\left(\frac{\sigma t_2}{2}\right)\right],</math>
+
+By using known properties of the [[error function]], the value {{math|''t''<nowiki>&nbsp;=&nbsp;</nowiki>&nbsp;-&nbsp;''t''<sub>1</sub>&nbsp;<nowiki>=</nowiki>&nbsp;''t''<sub>2</sub>}} is found: since {{math|''t<sub>r</sub>''&nbsp;<nowiki>=</nowiki>&nbsp;''t''<sub>2</sub>&nbsp;-&nbsp;''t''<sub>1</sub>&nbsp;<nowiki>=</nowiki>&nbsp;2''t''}},
+
+:<math>t_r=\frac{4}{\sigma}{\mathrm{erf}^{-1}(0.8)}\cong\frac{0.3394}{f_H},</math>
+
+and finally
+
+:<math>t_r\cong\frac{0.34}{BW}\quad\Longleftrightarrow\quad BW\cdot t_r\cong 0.34.</math><ref name="Orwp30">Compare with {{harv|Orwiler|1969|p=30}}.</ref>
+
+====One-stage low-pass RC network====
+For a simple one-stage low-pass [[RC circuit|RC network]],<ref>Called also "''single-pole filter''". See {{harv|Cherry|Hooper|1969|p=639}}.</ref> the 10% to 90% rise time is proportional to the network time constant {{math|''τ''&nbsp;<nowiki>=</nowiki>&nbsp;''RC''}}:
+
+:<math>t_r\cong 2.197\tau\,</math>
+
+The proportionality constant can be derived from the knowledge of the step response of the network to a [[unit step function]] input signal of {{math|''V''<sub>0</sub>}} amplitude:
+
+:<math>V(t) = V_0 \left(1-e^{-\frac{t}{\tau}} \right)</math>
+
+Solving for time
+
+:<math>\frac{V(t)}{V_0}=\left(1-e^{-\frac{t}{\tau}}\right) \quad \Longleftrightarrow \quad \frac{V(t)}{V_0}-1=-e^{-\frac{t}{\tau}} \quad \Longleftrightarrow \quad 1-\frac{V(t)}{V_0}=e^{-\frac{t}{\tau}},</math>
+
+and finally,
+
+:<math>\ln\left(1-\frac{V(t)}{V_0}\right)=-\frac{t}{\tau} \quad \Longleftrightarrow \quad t = -\tau \; \ln\left(1-\frac{V(t)}{V_0}\right)</math>
+
+Since {{math|''t''<sub>1</sub>}} and {{math|''t''<sub>2</sub>}} are such that
+
+:<math>\frac{V(t_1)}{V_0}=0.1 \qquad \frac{V(t_2)}{V_0}=0.9,</math>
+
+solving these equations we find the analytical expression for {{math|''t''<sub>1</sub>}} and {{math|''t''<sub>2</sub>}}:
+
+:<math> t_1 = -\tau\;\ln\left(1-0.1\right) = -\tau \; \ln\left(0.9\right) = -\tau\;\ln\left(\frac{9}{10}\right) = \tau\;\ln\left(\frac{10}{9}\right) = \tau({\ln 10}-{\ln 9})</math>
+
+:<math>t_2=\tau\ln{10}\,</math>
+
+The rise time is therefore proportional to the time constant:<ref>Compare with {{harv|Valley|Wallman|1948|loc=p. 72, formula (2)}}, {{harv|Cherry|Hooper|1969|loc=p. 639, formula (13.3)}} or {{harv|Orwiler|1969|loc=p. 22 and p. 30}}.</ref>
+
+:<math>t_r = t_2-t_1 = \tau\cdot\ln 9\cong\tau\cdot 2.197</math>
+
+Now, noting that
+
+:<math>\tau = RC = \frac{1}{2\pi f_H},</math><ref>See the section "[[Time constant#Relation of time constant to bandwidth|Relation of time constant to bandwidth]]" section of the "[[Time constant]]" entry for a formal proof of this relation.</ref>
+
+then
+
+:<math>t_r=\frac{2\ln3}{2\pi f_H}=\frac{\ln3}{\pi f_H}\cong\frac{0.349}{f_H},</math>
+
+and since the high frequency cutoff is equal to the bandwidth,
+
+:<math>t_r\cong\frac{0.35}{BW}\quad\Longleftrightarrow\quad BW\cdot t_r\cong 0.35.</math><ref name="Orwp30" />
+
+Finally note that, if the 20% to 80% rise time is considered instead, {{math|''t<sub>r</sub>''}} becomes:
+
+:<math>t_r = \tau\cdot\ln\frac{8}{2}=(2\ln2)\tau
+\cong1.386\tau\quad\Longleftrightarrow\quad t_r=\frac{\ln2}{\pi BW}\cong\frac{0.22}{BW}</math>
+
+====One-stage low-pass LR network====
+
+Even for a simple one-stage low-pass RL network, the 10% to 90% rise time is proportional to the network time constant {{math|''τ''&nbsp;<nowiki>=</nowiki>&nbsp;''{{frac|L|R}}''}}. The formal proof of this assertion proceed exactly as shown in the previous section: the only difference between the final expressions for the rise time is due to the difference in the expressions for the time constant {{math|''τ''}} of the two different circuits, leading in the present case to the following result
+
+:<math>t_r=\tau\cdot\ln 9 = \frac{L}{R}\cdot\ln 9\cong \frac{L}{R} \cdot 2.197</math>
+
+=== Rise time of damped second order systems ===
+
+According to {{harvtxt|Levine|1996|p=158}}, for underdamped systems used in control theory rise time is commonly defined as the time for a waveform to go from 0% to 100% of its final value:<ref name="risedef"/> accordingly, the rise time from 0 to 100% of an underdamped 2nd-order system has the following form:<ref>See {{harv|Ogata|2010|p=171}}.</ref>
+:<math> t_r \cdot\omega_0= \frac{1}{\sqrt{1-\zeta^2}}\left [ \pi - \tan^{-1}\left ( {\frac{\sqrt{1-\zeta^2}}{\zeta}} \right )\right ]</math>
+
+The [[quadratic function|quadratic]] [[approximation]] for normalized rise time for a 2nd-order system, [[step response]], no zeros is:
+:<math> t_r \cdot\omega_0= 2.230\zeta^2-0.078\zeta+1.12\,</math>  
+where {{math|''ζ''}} is the [[damping ratio]] and {{math|''ω''<sub>0</sub>}} is the [[natural frequency]] of the network.
+
+=== Rise time of cascaded blocks ===
+
+Consider a system composed by {{math|''n''}} cascaded non interacting blocks, each having a rise time {{math|''t<sub>r<sub>i</sub></sub>''}},  {{math|''i''&nbsp;<nowiki>=</nowiki>&nbsp;1,...,''n''}}, and no [[overshoot (signal)|overshoot]] in their [[step response]]: suppose also that the input signal of the first block has a rise time whose value is {{math|''t<sub>r<sub>S</sub></sub>''}}.<ref>"{{math|''S''}}" stands for "source", to be understood as [[Current source|current]] or [[voltage source]].</ref> Afterwards, its output signal has a rise time {{math|''t''<sub>''r''<sub>0</sub></sub>}}  equal to
+
+:<math>t_{r_O}=\sqrt{t_{r_S}^2+t_{r_1}^2+\dots+t_{r_n}^2}</math>
+
+According to {{Harvtxt|Valley|Wallman|1948|pp=77–78}}, this result is a consequence of the [[central limit theorem]] and was proved by  {{Harvtxt|Wallman|1950}}:<ref>This beautiful one-page paper does not contain any calculation. [[Henry Wallman]] simply sets up a table he calls "[[dictionary]]", paralleling concepts from [[electronics engineering]] and [[probability theory]]: the key of the process is the use of [[Laplace transform]]. Then he notes, following the correspondence of concepts established by the "[[dictionary]]", that the [[step response]] of a cascade of blocks corresponds to the [[central limit theorem]] and states that: "This has important practical consequences, among them the fact that if a network is free of overshoot its time-of-response inevitably increases rapidly upon cascading, namely as the square-root of the number of cascaded network"{{harv|Wallman|1950|p=91}}.</ref><ref>See also {{harv|Cherry|Hooper|1969|p=656}} and {{harv|Orwiler|1969|pp=27–28}}.</ref> however, a detailed analysis of the problem is presented by {{harvtxt|Petitt|McWhorter|1961|loc=§4–9, pp. 107–115}},<ref>Cited by {{harv|Cherry|Hooper|1969|p=656}}.</ref> who also credit {{harvtxt|Elmore|1948}} as the first one to prove the previous formula on a somewhat rigorous basis.<ref>See {{harv|Petitt|McWhorter|1961|p=109}}.</ref>
+
+== See also ==
+*[[Fall time]]
+*[[Frequency response]]
+*[[Impulse response]]
+*[[Step response]]
+*[[Settling time]]
+
+==Notes==
+{{reflist|30em}}
+
+== References ==
+{{refbegin}}
+*{{Citation
+ | last =Cherry
+ | first =E. M.
+ | author-link =Edward Moore Cherry
+ | last2 =Hooper
+ | first2 =D. E.
+ | author2-link =Daryl E. Hooper
+ | title =Amplifying Devices and Low-pass Amplifier Design
+ | place =New York–London–[[City of Sydney|Sidney]]
+ | publisher =[[John Wiley & Sons]]
+ | year =1968
+ | pages =xxxii+1036
+}}.
+*{{Citation
+ | last =Elmore
+ | first =William C.
+ | author-link =William Cronk Elmore
+ | title =The Transient Response of Damped Linear Networks with Particular Regard to Wideband Amplifiers
+ | journal =[[Journal of Applied Physics]]
+ | volume =19
+ | issue =1
+ | pages =55–63
+ | date =January 1948
+ | doi =10.1063/1.1697872
+}}. 
+*{{Citation
+| first = William S. 
+| last = Levine 
+| title = The Control Handbook 
+| publisher = [[CRC Press]] 
+| place = [[Boca Raton, FL]]
+| year = 1996
+| pages = xvi+1548
+| isbn= 0-8493-8570-9 
+}}.
+*{{Citation
+| first = William S. 
+| last = Levine 
+| title = The Control Handbook: Control Systems Fundamentals
+| publisher = [[CRC Press]] 
+| place = [[Boca Raton, FL]]
+| orig-year =1996
+| year = 2011
+| edition = 2nd
+| isbn= 978-1-4200-7362-1
+| pages = xx+766
+}}.
+*{{Citation
+ | last = Millman
+ | first = Jacob
+ | last2 = Taub
+ | first2 = Herbert
+ | title = Pulse, digital and switching waveforms
+ | publisher = [[McGraw-Hill]]
+ | place = [[New York City|New York]]–[[St. Louis]]–[[San Francisco]]–[[Toronto]]–[[London]]–[[Sydney]]
+ | pages =xiv+958
+ | year = 1965}}.
+*{{Citation
+ | last =National Communication Systems
+ | first = Technology and Standards Division
+ | author-link =National Communication Systems
+ | title =Federal Standard 1037C. Telecommunications: Glossary of Telecommunications Terms
+ | place =Washington
+ | publisher =General Service Administration Information Technology Service
+ | series =FSC TELE
+ | volume =FED–STD–1037
+ | date =1 March 1997
+ | pages =488
+}}.
+*{{Citation
+  | last = Nise
+  | first = Norman S.
+  | title = Control Systems Engineering
+  | place = New York
+  | publisher = [[John Wiley & Sons]]
+  | year = 2011
+  | edition = 6th
+  | pages = xviii+928
+  | url = http://www.wiley.com/WileyCDA/WileyTitle/productCd-EHEP001649.html
+  | isbn = 978-0470-91769-5
+}}.
+*{{Citation
+ | last = Ogata
+ | first =Katsuhiko
+ | title =Modern Control Engineering
+ | place =[[Englewood Cliffs, NJ]]
+ | publisher =[[Prentice Hall]]
+ | orig-year =1970
+ | year =2010
+ | edition =5th
+ | pages =x+894
+ | isbn =978-0-13-615673-4
+}}.
+*{{Citation
+ | last =Orwiler
+ | first =Bob
+ | title =Vertical Amplifier Circuits
+ | place =[[Beaverton, OR]]
+ | publisher =[[Tektronix]]
+ | series =Circuit Concepts
+ | volume =062-1145-00
+ | date =December 1969
+ | edition =1st
+ | pages =461
+ | url =http://www.davmar.org/TE/TekConcepts/TekVertAmpCircuits.pdf
+}}.
+*{{Citation
+ | last =Petitt
+ | first =Joseph Mayo
+ | author-link =Joseph Mayo Pettit
+ | last2 = McWhorter
+ | first2 =Malcolm Myers
+ | title =Electronic Amplifier Circuits. Theory and Design
+ | place =New York–Toronto–London
+ | publisher =[[McGraw-Hill]]
+ | series =McGraw-Hill Electrical and Electronics Series
+ | year =1961
+ | pages =xiii+325
+}}.
+*{{Citation
+| last = Valley  
+| first = George E., Jr.
+| last2 = Wallman
+| first2 = Henry
+| author2-link = Henry Wallman
+| title = Vacuum Tube Amplifiers
+| series = MIT Radiation Laboratory Series
+| volume = 18
+| publisher = [[McGraw-Hill]]. 
+| place = [[New York City|New York]] 
+| year = 1948
+| chapter = §2 of chapter 2 and §1–7 of chapter 7 
+| pages =xvii+743
+}}.
+*{{Citation
+| last = Wallman
+| first = Henry
+| author-link = Henry Wallman
+| editor-first = A. H.
+| editor-last = Taub
+| editor-link = Abraham H. Taub
+| contribution = Transient response and the central limit theorem of probability
+| title = Electromagnetic Theory (Massachusetts Institute of Technology, July 29–31 1948)
+| series = [[Proceedings of Symposia in Applied Mathematics]]
+| volume = 2
+| page = 91
+| publisher = [[American Mathematical Society]]. 
+| place = [[Providence, Rhode Island|Providence]] 
+| year=1950
+| mr= 0034250 
+| zbl= 0035.08102
+}}. 
+{{refend}}
+
+[[Category:Control theory| ]]
+[[Category:Control engineering]]
+[[Category:Computational mathematics]]
+[[Category:Transient response characteristics]]

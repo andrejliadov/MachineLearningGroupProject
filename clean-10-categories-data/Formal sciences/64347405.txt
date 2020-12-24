@@ -1,0 +1,170 @@
+{{Orphan|date=July 2020}}
+
+'''Composite methods''' are an approach applied in [[structural dynamics]] and related fields. They combine various methods in each time step, in order to acquire the advantages of different methods. The existing composite methods show satisfactory accuracy and powerful numerical dissipation, which is particularly useful for solving [[stiff problem]]s<ref>{{cite book |last1=Hairer |first1=Ernst |last2=Wanner |first2=Gerhard |title=Solving ordinary differential equations |date=1996 |publisher=Berlin: Springer-Verlag |isbn=978-3-540-60452-5 |edition= Second}}</ref> and [[differential-algebraic equation]]s.<ref>{{cite book |last1=Kunkel |first1=Peter |last2=Mehrmann |first2=Volker Ludwig |title=Differential-algebraic equations : analysis and numerical solution |date=2006 |publisher=European Mathematical Society |isbn=978-3-03719-017-3}}</ref>
+
+== Definitions ==
+
+After spatial discretization, structural dynamics problems are generally described by the second-order [[ordinary differential equation]]:
+
+<math>M\ddot{u} + C\dot{u} + f(u,t) = R(t)</math>.
+
+Here <math>u</math>, <math>\dot{u}</math> and <math>\ddot{u}</math> denote the [[displacement (geometry)|displacement]], [[velocity]] and [[acceleration]] vectors respectively,   <math>M</math> is the [[mass matrix]], <math>C</math> is the [[damping matrix]], <math>f(u,t)</math> collects the internal force, and <math>R(t)</math> is the [[external load]]. At the initial time <math>t_0</math>, the initial displacement and velocity are supposed to be given as <math>u_0</math> and <math>\dot{u}_0</math>, respectively, and the initial acceleration can be solved as
+
+<math>\ddot{u}_0=M^{-1}(R(t_0)-C\dot{u}_0-f(u_0,t_0))</math>.
+
+For [[numerical analysis]], the overall time domain <math>[t_0,t_N]</math> is divided into a series of time steps by <math>t_1</math>, <math>t_2</math>, <math>\cdots</math>, <math>t_k</math>, <math>t_{k+1}</math>, <math>\cdots</math>. Taking the step <math>[t_k,t_{k+1}]</math>
+(<math>t_{k+1}-t_k=h</math> is the step size), the main concept of composite methods is to subdivide the current step to several sub-steps <math>[t_k,t_{k+\gamma_1}]</math>, <math>[t_{k+\gamma_1},t_{k+\gamma_2}]</math>, <math>\cdots</math>, and to use different [[numerical method]]s in each sub-step.
+
+Although there are lots of available methods, see the review,<ref>{{cite journal |last1=Tamma |first1=Kumar K. |last2=Har |first2=Jason |last3=Zhou |first3=Xiangmin |last4=Shimada |first4=Masao |last5=Hoitink |first5=Andrew |title=An Overview and Recent Advances in Vector and Scalar Formalisms: Space/Time Discretizations in Computational Dynamics—A Unified Approach |journal=Archives of Computational Methods in Engineering |date=15 July 2011 |volume=18 |issue=2 |pages=119–283 |doi=10.1007/s11831-011-9060-y}}</ref> the existing composite methods basically employ the combination of the [[trapezoidal rule]] and [[linear multistep method]]s. However, to acquire at least second-order [[accuracy]] and unconditional [[stability theory|stability]], the scalar parameters of each method and the division of sub-steps need to be determined carefully.
+
+== Two examples of composite method==
+=== Two-sub-step Bathe method ===
+
+The Bathe method <ref name="Bathe">{{cite journal|last1=Bathe |first1=Klaus-Jürgen |last2=Baig |first2=Mirza M. Irfan |title=On a composite implicit time integration procedure for nonlinear dynamics |journal=Computers & Structures |date=December 2005 |volume=83 |issue=31-32 |pages=2513–2524 |doi=10.1016/j.compstruc.2005.08.001}}</ref><ref name="Bathe2">{{cite journal |last1=Bathe |first1=Klaus-Jürgen |last2=Noh |first2=Gunwoo |title=Insight into an implicit time integration scheme for structural dynamics |journal=Computers & Structures |date=May 2012 |volume=98-99 |pages=1–6 |doi=10.1016/j.compstruc.2012.01.009}}</ref> is a two-sub-step method. In the first sub-step <math>[t_k,t_{k+\gamma}]</math> (<math>t_{k+\gamma}-t_k=\gamma h</math>, <math>\gamma\in(0,1)</math>), the [[trapezoidal rule]] is used as:
+
+<math>u_{k+\gamma}=u_{k}+\frac{\gamma h}{2}(\dot{u}_k+\dot{u}_{k+\gamma})</math>
+
+<math>\dot{u}_{k+\gamma}=\dot{u}_{k}+\frac{\gamma h}{2}(\ddot{u}_k+\ddot{u}_{k+\gamma})</math>
+
+<math>M\ddot{u}_{k+\gamma}+C\dot{u}_{k+\gamma}+f(u_{k+\gamma},t_{k+\gamma})=R(t_{k+\gamma})</math>
+
+In the second sub-step <math>[t_{k+\gamma},t_{k+1}]</math> (<math>t_{k+1}-t_{k+\gamma}=(1-\gamma) h</math>), the 3-point [[Euler backward method]] is employed as
+
+<math>\dot{u}_{k+1}=\frac{1-\gamma}{\gamma h}u_k-\frac{1}{(1-\gamma)\gamma h}u_{k+\gamma}+\frac{2-\gamma}{(1-\gamma)h}u_{k+1}</math>
+
+<math>\ddot{u}_{k+1}=\frac{1-\gamma}{\gamma h}\dot{u}_k-\frac{1}{(1-\gamma)\gamma h}\dot{u}_{k+\gamma}+\frac{2-\gamma}{(1-\gamma)h}\dot{u}_{k+1}</math>
+
+<math>M\ddot{u}_{k+1}+C\dot{u}_{k+1}+f(u_{k+1},t_{k+1})=R(t_{k+1})</math>
+
+For [[nonlinear dynamics]], that is, the internal force <math>f</math> is a [[nonlinear function]] with respect to <math>u</math>, the [[Newton-Raphson iteration]]s can be used to solve the [[nonlinear equation]]s per step. The parameter <math>\gamma</math> is usually set as <math>\frac{1}{2}</math> and <math>2-\sqrt{2}</math> in practice.
+
+The Bathe method is second-order accurate and unconditionally stable from linear analysis. Besides, this method can provide strong numerical dissipation for high-frequency content, which is helpful to damp out the stiff components and enhance the stability for nonlinear dynamics.
+
+On this basis, to acquire prescribed degree of numerical dissipation, the <math>\rho_\infty</math>-Bathe method <ref name="rhoBathe">{{cite journal |last1=Noh |first1=Gunwoo |last2=Bathe |first2=Klaus-Jürgen |title=The Bathe time integration method with controllable spectral radius: The ρ∞-Bathe method |journal=Computers & Structures |date=February 2019 |volume=212 |pages=299–310 |doi=10.1016/j.compstruc.2018.11.001}}</ref> was developed by replacing the 3-point Euler backward method in the second sub-step with a general formula:
+
+<math>u_{k+1}=u_k+h(q_0\dot{u}_k+q_1\dot{u}_{k+\gamma}+q_2\dot{u}_{k+1})</math>
+
+<math>\dot{u}_{k+1}=\dot{u}_k+h(q_0\ddot{u}_k+q_1\ddot{u}_{k+\gamma}+q_2\ddot{u}_{k+1})</math>
+
+<math>M\ddot{u}_{k+1}+C\dot{u}_{k+1}+f(u_{k+1},t_{k+1})=R(t_{k+1})</math>
+
+The parameters are selected as recommended
+
+<math>\gamma=\frac{2-\sqrt{2(1+\rho_\infty)}}{1-\rho_\infty}\text{ if }\rho_\infty\in[0,1); \gamma=\frac{1}{2} \text{ if } \rho_\infty=1</math>
+
+<math>q_1=\frac{\rho_\infty+1}{2\gamma(\rho_\infty-1)+4},q_0=(\gamma-1)q_1+\frac{1}{2},q_2=-\gamma q_1+\frac{1}{2}</math>
+
+With the set of parameters, the <math>\rho_\infty</math>-Bathe method can also achieve second-order accuracy and unconditional stability. Moreover, by adjusting the parameter <math>\rho_\infty</math>, this method can provide tunable degree of numerical dissipation. The method with a smaller <math>\rho_\infty</math> shows stronger numerical dissipation, but lower accuracy in the low-frequency content. When <math>\rho_\infty=0</math>, it is equivalent to the original Bathe method with <math>\gamma=2-\sqrt{2}</math>.
+
+=== Three-sub-step composite method ===
+
+Following the idea of the Bathe method, the three-sub-step composite methods that use the trapezoidal rule in the first two sub-steps were also discussed.<ref name="TTBDF">{{cite journal |last1=Chandra |first1=Yenny |last2=Zhou |first2=Yang |last3=Stanciulescu |first3=Ilinca |last4=Eason |first4=Thomas |last5=Spottswood |first5=Stephen |title=A robust composite time integration scheme for snap-through problems |journal=Computational Mechanics |date=11 April 2015 |volume=55 |issue=5 |pages=1041–1056 |doi=10.1007/s00466-015-1152-3|hdl=1911/80759 |hdl-access=free }}</ref><ref name="OTTBDF1">{{cite journal |last1=Li |first1=Jinze |last2=Yu |first2=Kaiping |last3=Li |first3=Xiangyang |title=A novel family of controllably dissipative composite integration algorithms for structural dynamic analysis |journal=Nonlinear Dynamics |date=26 April 2019 |volume=96 |issue=4 |pages=2475–2507 |doi=10.1007/s11071-019-04936-4}}</ref><ref name="OTTBDF2">{{cite journal |last1=Ji |first1=Yi |last2=Xing |first2=Yufeng |title=An optimized three-sub-step composite time integration method with controllable numerical dissipation |journal=Computers & Structures |date=April 2020 |volume=231 |pages=106210 |doi=10.1016/j.compstruc.2020.106210}}</ref> They divides the current step into <math>[t_k,t_{k+\gamma_1}]</math>, <math>[t_{k+\gamma_1},t_{k+\gamma_2}]</math> and <math>[t_{k+\gamma_2},t_{k+1}]</math>, and generally, the first two sub-steps are set as equal size, that is <math>\gamma_2=2\gamma_1</math>. In the first two sub-steps, the trapezoidal rule is used, as
+
+<math>u_{k+\gamma_1}=u_{k}+\frac{\gamma_1 h}{2}(\dot{u}_k+\dot{u}_{k+\gamma_1})</math>
+
+<math>\dot{u}_{k+\gamma_1}=\dot{u}_{k}+\frac{\gamma_1 h}{2}(\ddot{u}_k+\ddot{u}_{k+\gamma_1})</math>
+
+<math>M\ddot{u}_{k+\gamma_1}+C\dot{u}_{k+\gamma_1}+f(u_{k+\gamma_1},t_{k+\gamma_1})=R(t_{k+\gamma_1})</math>
+
+and
+
+<math>u_{k+\gamma_2}=u_{k+\gamma_1}+\frac{(\gamma_2-\gamma_1) h}{2}(\dot{u}_{k+\gamma_1}+\dot{u}_{k+\gamma_2})</math>
+
+<math>\dot{u}_{k+\gamma_2}=\dot{u}_{k+\gamma_1}+\frac{(\gamma_2-\gamma_1) h}{2}(\ddot{u}_{k+\gamma_1}+\ddot{u}_{k+\gamma_2})</math>
+
+<math>M\ddot{u}_{k+\gamma_2}+C\dot{u}_{k+\gamma_2}+f(u_{k+\gamma_2},t_{k+\gamma_2})=R(t_{k+\gamma_2})</math>
+
+In the last sub-step, a general formula is utilized as
+
+<math>u_{k+1}=u_k+h(c_0\dot{u}_k+c_1\dot{u}_{k+\gamma_1}+c_2\dot{u}_{k+\gamma_2}+c_3\dot{u}_{k+1})</math>
+
+<math>\dot{u}_{k+1}=\dot{u}_k+h(c_0\ddot{u}_k+c_1\ddot{u}_{k+\gamma_1}+c_2\ddot{u}_{k+\gamma_2}+c_3\ddot{u}_{k+1})</math>
+
+<math>M\ddot{u}_{k+1}+C\dot{u}_{k+1}+f(u_{k+1},t_{k+1})=R(t_{k+1})</math>
+
+For this method, Li et al.<ref name="OTTBDF1"/> offered two optimal set of parameters, as
+
+<math>a=\frac{1}{2}(1\pm\rho_\infty),c_0=\frac{-(a+1)\gamma_1^2+4\gamma_1-1}{4\gamma_1},c_1=\frac{1+(a-1)\gamma_1}{2},c_2=\frac{(1-a)\gamma_1^2-2\gamma_1+1}{4\gamma_1},c_3=\frac{\gamma_1}{2}</math>
+
+Here <math>\gamma_2=2\gamma_1</math> is assumed, and <math>\gamma_1</math> is the minimum value that satisfies <math> 48(a-1)\gamma_1^4-32(a-5)\gamma_1^3-192\gamma_1^2+96\gamma_1-16\geq0</math>.
+
+The resulting two sub-families are all second-order accurate, unconditionally stable, and can provide tunable numerical dissipation by adjusting <math>\rho_\infty</math>. They become the same when <math>\rho_\infty=0</math>. When <math>0<\rho_\infty<1</math>, the sub-family with <math>a=\frac{1}{2}(1-\rho_\infty)</math> shows better amplitude and period accuracy than the <math>\rho_\infty</math>-Bathe method under the same computational costs, and the sub-family with <math>a=\frac{1}{2}(1+\rho_\infty)</math> further improves the period accuracy at the cost of lower amplitude accuracy.
+
+== Analysis ==
+
+In structural dynamics, the test model for property analysis is the single degree-of-freedom [[homogeneous equation]], as
+
+<math>\ddot{u}+2\xi\omega\dot{u}+\omega^2u=0</math>
+
+Here <math>\xi</math> is the [[damping ratio]] and <math>\omega</math> is the [[natural frequency]]. Applying the composite method to the test model yields the compact scheme
+
+<math>X_{k+1}=AX_{k}</math>
+
+Here <math>X_{k}=\{u_k;\dot{u}_k;\ddot{u}_k\}</math> and <math>A</math> is the amplitude matrix, which governs the properties of a method. Generally, <math>A</math> has one zero [[characteristic root]] and a pair of conjugate complex roots <math>\lambda_{1,2}</math>, which can be solved from
+
+<math>\lambda^2-A_1\lambda+A_2=0</math>
+
+Here <math>A_1</math> is the trace of <math>A</math> and <math>A_2</math> is the sum of second-order principal minors of <math>A</math>. They are functions of <math>\xi</math>, <math>\omega h</math>, and the parameters of the method.
+
+=== Accuracy ===
+
+From the compact scheme, the difference equation only with respect to the displacement can be written as
+
+<math>u_{k+1}-A_1u_{k}+A_2u_{k-1}=0</math>
+
+The [[local truncation error]] <math>\sigma</math> is defined as
+
+<math>\sigma=u(t_{k+1})-A_1u(t_{k})+A_2u(t_{k-1})</math>
+
+The method is called <math>s</math>th-order accurate if <math>\sigma=O(h^{s+1})</math>.
+
+=== Stability ===
+
+For physically stable systems (<math>\xi\geq0</math>, <math>\omega\geq0</math>), the method can give stable solutions if the [[spectral radius]] <math>\rho=\max\{|\lambda|\}\leq1</math>. A method is called unconditionally stable if the condition <math>\rho\leq1</math> is satisfied for any 
+<math>h\geq0</math>, otherwise it is called conditionally stable. The spectral radius at the high-frequency limit, i.e. <math>\omega h\rightarrow+\infty</math>, is denoted as <math>\rho_\infty</math>, which is usually employed to indicate the degree of numerical dissipation, as used above.
+
+=== Amplitude decay ratio and period elongation ratio ===
+
+In addition to the accuracy order, the amplitude decay ratio and period elongation ratio are also usually evaluated to measure the [[amplitude]] and [[period of a function|period]] accuracy in the low-frequency content. The exact solution of the test model is
+
+<math>u(t)=\text{e}^{-\xi\omega t}(c_1\cos\omega_dt+c_2\sin\omega_dt),\omega_d=\omega\sqrt{1-\xi^2}</math>
+
+Here <math>c_1</math> and <math>c_2</math> are constants determined by the initial conditions. The numerical solution can be also expressed as a similar form, as
+
+<math>u_k=\text{e}^{-\overline{\xi}\overline{\omega}t_k}(\overline{c}_1\cos\overline{\omega}_dt_k+\overline{c}_2\sin\overline{\omega}_dt_k),\overline{\omega}_d=\overline{\omega}\sqrt{1-\overline{\xi}^2}</math>
+
+Likewise, <math>\overline{c}_1</math> and <math>\overline{c}_2</math> are also determined by the initial conditions and they should be close to <math>c_1</math> and <math>c_2</math> respectively for a convergent method. The damping ratio <math>\overline{\xi}</math> and frequency <math>\overline{\omega}</math> can be obtained from the norm <math>|\lambda|</math> and phase <math>\angle\lambda</math>, as<ref>{{cite journal |last1=Zhou |first1=X. |last2=Tamma |first2=K. K. |title=Design, analysis, and synthesis of generalized single step single solve and optimal algorithms for structural dynamics |journal=International Journal for Numerical Methods in Engineering |date=7 February 2004 |volume=59 |issue=5 |pages=597–668 |doi=10.1002/nme.873}}</ref>
+
+<math>\overline{\xi}=-\frac{\ln|\lambda|}{\sqrt{(\angle\lambda)^2+(\ln|\lambda|)^2}},\overline{\omega}=\frac{\sqrt{(\angle\lambda)^2+(\ln|\lambda|)^2}}{h}</math>
+
+Here <math>\overline{\xi}</math> is called the amplitude decay ratio, and <math>\frac{\overline{T}-T}{T}</math> (<math>\overline{T}=\frac{2\pi}{\overline{\omega}},T=\frac{2\pi}{\omega}</math>) is called the period elongation ratio.
+
+=== Example ===
+
+[[File:Spectral radius of the Bathe method.tif|upright=2.0|thumb|Spectral radius of the Bathe method]]
+
+[[File:Amplitude decay ratio of the Bathe method.tif|upright=2.0|thumb|Amplitude decay ratio of the Bathe method]]
+
+[[File:Period elongation ratio of the Bathe method.tif|upright=2.0|thumb|Period elongation ratio of the Bathe method]]
+
+Consider the Bathe method, <math>A_1</math> and <math>A_2</math> have the form as
+
+<math>A_1=\frac{2(\gamma^4-4\gamma^3+6\gamma^2-4)\omega^2h^2+8(\gamma-2)^2}{(\gamma^2\omega^2h^2+4)((\gamma-1)^2\omega^2h^2+(\gamma-2)^2)}</math>
+
+<math>A_2=\frac{(\gamma^4-4\gamma^3+8\gamma^2-8\gamma+4)\omega^2h^2+4(\gamma-2)^2}{(\gamma^2\omega^2h^2+4)((\gamma-1)^2\omega^2h^2+(\gamma-2)^2)}</math>
+
+Here the undamped case, i.e. <math>\xi=0</math>, is considered for simplicity. One can check that this method can satisfy the conditions of second-order accuracy and unconditional stability. With <math>\gamma=\frac{1}{2}</math> and <math>2-\sqrt{2}</math>, the spectral radius, amplitude decay ratio, and period elongation ratio are shown here. It can be observed that this method can provide good amplitude and period accuracy in the low-frequency content, while strong numerical dissipation, as <math>\rho_\infty=0</math>, in the high-frequency content.
+
+==See also==
+* [[Runge-Kutta method]]
+* [[List of Runge–Kutta methods]]
+* [[Numerical ordinary differential equations]]
+* [[Linear multistep method]]
+* [[Lie group integrator]]
+
+== References ==
+{{reflist}}
+
+[[Category:Numerical analysis]]
+[[Category:Numerical differential equations]]
+[[Category:Mathematics]]

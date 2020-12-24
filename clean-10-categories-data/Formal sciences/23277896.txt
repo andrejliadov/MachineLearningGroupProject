@@ -1,0 +1,93 @@
+[[File:IDEF Diagram Example.jpg|thumb|240px|Example of an [[IDEF0]] [[function model]].]]
+[[File:Functional Flow Block Diagram Format.jpg|thumb|240px|[[Functional Flow Block Diagram]] Format.<ref name="SEF01">[http://www.dau.mil/pubs/pdf/SEFGuide%2001-01.pdf ''Systems Engineering Fundamentals.''] {{Webarchive|url=https://web.archive.org/web/20060211165311/http://www.dau.mil/pubs/pdf/SEFGuide%2001-01.pdf |date=2006-02-11 }} Defense Acquisition University Press, 2001</ref>]]
+[[File:6 Decomposition Structure.svg|thumb|240px|[[Functional decomposition|Decomposition structure]].]]
+[[File:Static, Dynamic, and Requirements Models for Sys Partition.jpg|thumb|240px|Static, dynamic, and [[requirement]]s models for systems partition.]]
+[[File:BPMN-AProcesswithNormalFlow.svg|thumb|240px|[[Business Process Modeling Notation]] Example.]]
+ 
+'''Systems modeling''' or '''system modeling''' is the [[Interdisciplinarity|interdisciplinary study]] of the use of [[scientific modeling|model]]s to conceptualize and construct [[system]]s in [[business]] and [[Information technology|IT development]].<ref name="PAW06">[http://lamswww.epfl.ch/people/wegmann/ Research interests] Professor [[Alain Wegmann]], Last changed 2006-12-01. Retrieved June 19, 2009.</ref>
+
+A common type of systems modeling is [[function model]]ing, with specific techniques such as the [[Functional Flow Block Diagram]] and [[IDEF0]]. These models can be extended using [[functional decomposition]], and can be linked to [[requirement]]s models for further systems partition.
+
+Contrasting the functional modeling, another type of systems modeling is [[systems architecture|architectural modeling]] which uses the [[systems architecture]] to conceptually model the [[structure]], [[behavior]], and more [[view model|views]] of a system.
+
+The [[Business Process Modeling Notation]] (BPMN), a graphical representation for specifying business processes in a workflow, can also be considered to be a systems modeling language.
+
+== Overview ==
+In business and IT development the term "systems modeling" has multiple meanings. It can relate to:
+* the use of [[scientific modeling|model]] to conceptualize and construct systems
+* the [[Interdisciplinarity|interdisciplinary study]] of the use of these models
+* the systems modeling, [[systems analysis|analysis]], and [[systems design|design]] efforts 
+* the systems modeling and [[simulation]], such as [[system dynamics]]
+* any specific systems [[modeling language]]
+As a field of study systems modeling has emerged with the development of [[system theory]] and [[systems sciences]].
+
+As a type of [[scientific modeling|modeling]] systems modeling is based on [[systems thinking]] and the systems approach. In business and IT systems modeling contrasts other approaches such as:
+* [[agent based modeling]] 
+* [[data modeling]] and 
+* [[mathematical modeling]]
+In "Methodology for Creating Business Knowledge" (1997) [[Ingeman Arbnor|Arbnor]] and [[Björn Bjerke|Bjerke]] the systems approach (systems modeling) was considered to be one of the three basic methodological approaches for gaining business knowledge, beside the analytical approach and the actor's approach (agent based modeling).<ref>Ingeman Arbnor, Bjorn Bjerke (2007). ''Methodology for Creating Business Knowledge''. Sage Publications, Inc, 1997. Back cover.</ref>
+
+== History ==
+The function model originates in the 1950s, after in the first half of the 20th century other types of management diagrams had already been developed. The first known [[Gantt chart]] was developed in 1896 by [[Karol Adamiecki]], who called it a ''harmonogram''. Because Adamiecki did not publish his chart until 1931 - and in any case his works were published in either Polish or Russian, languages not popular in [[Western world|the West]] - the chart now bears the name of  [[Henry Gantt]] (1861–1919), who designed his chart around the years 1910-1915 and popularized it in the West.<ref>H.L. Gantt, ''Work, Wages and Profit'', published by the ''[[Engineering Magazine]]'', New York, 1910; republished as ''Work, Wages and Profits'', Easton, Pennsylvania, Hive Publishing Company, 1974, {{ISBN|0-87960-048-9}}.</ref> One of the first well defined function models, was the [[Functional Flow Block Diagram]] (FFBD) developed by the defense-related [[TRW Inc.|TRW]] Incorporated in the 1950s.<ref>Tim Weilkiens (2008). ''Systems Engineering with SysML/UML: Modeling, Analysis, Design''. Page 287.</ref> In the 1960s it was exploited by the [[NASA]] to visualize the time sequence of events in a space systems and flight missions.<ref>[[Harold Chestnut]] (1967). ''Systems Engineering Methods''. Page 254.</ref> It is further widely used in classical [[systems engineering]] to show the order of execution of system functions.<ref name="TD03">Thomas Dufresne & James Martin (2003). [http://mason.gmu.edu/~tdufresn/paper.doc "Process Modeling for E-Business"] {{Webarchive|url=https://web.archive.org/web/20061220024049/http://mason.gmu.edu/~tdufresn/paper.doc |date=2006-12-20 }}. INFS 770 Methods for Information Systems Engineering:  Knowledge Management and E-Business. Spring 2003</ref>
+
+One of the earliest pioneering works in [[information system]]s modeling<ref name="JAB07">[[Janis A. Bubenko jr]] (2007) "From Information Algebra to Enterprise Modelling and Ontologies - a Historical Perspective on Modelling for Information Systems". In: ''Conceptual Modelling in Information Systems Engineering''. [[:w:John Krogstie|John Krogstie]] et al. eds. pp 1-18</ref> has been done by Young and Kent (1958), who argued:
+
+:''Since we may be called upon to evaluate different computers or to find alternative ways of organizing current systems it is necessary to have some means of precisely stating a data processing problem independently of mechanization.''<ref>Young, J. W., and Kent, H. K. (1958). "Abstract Formulation of Data Processing Problems". In: ''Journal of Industrial Engineering''. Nov-Dec 1958. 9(6), pp. 471-479</ref>
+
+They aimed for a precise and abstract way of specifying the informational and time characteristics of a [[data processing]] problem, and wanted to create a notation that should enable the [[Systems analyst|analyst]] to organize the problem around any piece of [[computer hardware|hardware]]. Their efforts was not so much focussed on independent systems analysis, but on creating abstract specification and invariant basis for designing different alternative implementations using different hardware components.<ref name="JAB07"/>
+
+A next step in IS modeling was taken by [[CODASYL]], an IT industry consortium formed in 1959, who essentially aimed at the same thing as Young and Kent: the development of "a proper structure for machine independent problem definition language, at the system level of data processing". This led to the development of a specific IS [[information algebra]].<ref name="JAB07"/>
+
+== Types of systems modeling ==
+In business and IT development systems are modeled with different scopes and scales of complexity, such as:
+* [[Functional model]]ing
+* [[Systems architecture]]
+* [[Business process modeling]]
+* [[Enterprise modeling]]
+
+Further more like [[systems thinking]], systems modeling in can be divided into:
+* [[Systems analysis]]
+* [[Hard systems]] modeling or [[operational research]] modeling 
+* [[Soft system modeling]] 
+And all other specific types of systems modeling, such as form example [[complex systems]] modeling, [[dynamical systems]] modeling, and [[critical systems thinking|critical systems]] modeling.
+
+== Specific types of modeling languages ==
+* [[Framework-specific modeling language]]
+* [[Systems Modeling Language]]
+
+== See also ==
+* [[Behavioral modeling]]
+* [[Dynamic systems]]
+* [[Human visual system model]]{{snd}} a human visual system model used by image processing, video processing, and computer vision
+* [[SEQUAL framework]]
+* ''[[Software and Systems Modeling]]''
+* [[Solar system model]]{{snd}} a model that illustrate the relative positions and motions of the planets and stars
+* [[Statistical model]]
+* [[Systems analysis]]
+* [[Systems design]]
+* [[Systems biology modeling]]
+* [[Viable system model]]{{snd}} a model of the organizational structure of any viable or autonomous system
+
+== References ==
+{{reflist}}
+
+== Further reading ==
+{{commons category}}
+* Doo-Kwon Baik eds. (2005). ''Systems modeling and simulation: theory and applications : third Asian Simulation Conference, AsiaSim 2004, Jeju Island, Korea, October 4–6, 2004''. Springer, 2005. {{ISBN|3-540-24477-8}}. 
+* Derek W. Bunn, Erik R. Larsen (1997). ''Systems modelling for energy policy''. Wiley, 1997. {{ISBN|0-471-95794-1}} 
+* Hartmut Ehrig et al. (eds.) (2005). ''Formal methods in software and systems modeling''. Springer, 2005 {{ISBN|3-540-24936-2}}
+* D. J. Harris (1985). ''Mathematics for business, management, and economics: a systems modelling approach''. E. Horwood, 1985. {{ISBN|0-85312-821-9}}
+* Jiming Liu, Xiaolong Jin, Kwok Ching Tsui (2005). ''Autonomy oriented computing: from problem solving to complex systems modeling''. Springer, 2005. {{ISBN|1-4020-8121-9}} 
+* Michael Pidd (2004). ''Systems Modelling: Theory and Practice''. John Wiley & Sons, 2004. {{ISBN|0-470-86732-9}} 
+* Václav Pinkava (1988). ''Introduction to Logic for Systems Modelling''. Taylor & Francis, 1988. {{ISBN|0-85626-431-8}}
+
+{{Software engineering}}
+{{Systems Engineering}}
+
+{{DEFAULTSORT:Systems Modeling}}
+[[Category:Enterprise modelling]]
+[[Category:Software engineering]]
+[[Category:Scientific modeling]]
+[[Category:Systems analysis]]
+[[Category:Systems science]]
+[[Category:Cognitive modeling]]

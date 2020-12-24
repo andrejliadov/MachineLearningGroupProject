@@ -1,0 +1,18 @@
+{{technical|date=May 2012}}
+'''Active disturbance rejection control'''<ref name="test">[http://cact.csuohio.edu/index.php?option=com_docman&task=cat_view&gid=50&Itemid=54 CACT] {{Webarchive|url=https://web.archive.org/web/20150412195633/http://cact.csuohio.edu/index.php?option=com_docman&task=cat_view&gid=50&Itemid=54 |date=2015-04-12 }}, Center for Advanced Control Technologies, Cleveland State University, USA.</ref><ref>[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4796887&tag=1], Han J. From PID to active disturbance rejection control[J]. IEEE transactions on Industrial Electronics, 2009, 56(3): 900-906.</ref> (or ADRC) inherits from proportional–integral–derivative (PID). It embraces the power of nonlinear feedback and puts it to full use. It is a [[robust control]] method that is based on extension of the [[system model]] with an additional and fictitious [[state variable]], representing everything that the user does not include in the [[Mathematics|mathematical]] description of the plant. This virtual state (sum of internal and external [[Errors and residuals in statistics|disturbance]]s, usually denoted as a "total disturbance") is estimated online with a [[state observer]] and used in the [[control signal]] in order to decouple the system from the actual perturbation acting on the plant. This disturbance rejection feature allows user to treat the considered system with a simpler model, since the negative effects of modeling uncertainty are compensated in real time. As a result, the operator does not need a precise analytical description of the system, as one can assume the unknown parts of dynamics as the internal disturbance in the plant. Robustness and the adaptive ability of this method makes it an interesting solution in scenarios where the full knowledge of the system is not available.
+
+==Component==
+
+===Tracking differentiator===
+Tracking differentiator solves the trading off with Rapidity and Overstrike. Besides, it improves the controller's anti-noise ability. The convergence of ADRC is proved by Guo and his students.<ref>[http://www.tandfonline.com/doi/abs/10.1080/00207179.2011.569954], Guo, Bao-Zhu, and Zhi-Liang Zhao. "On convergence of tracking differentiator." International Journal of Control 84.4 (2011): 693-701.</ref><ref>[http://epubs.siam.org/doi/abs/10.1137/110856824], Guo B Z, Zhao Z L. On convergence of the nonlinear active disturbance rejection control for MIMO systems[J]. SIAM Journal on Control and Optimization, 2013, 51(2): 1727-1757.</ref>
+
+===Extended state observer===
+Classical observer only concerns system state. ESO observes system state and external disturbance. It can also estimate unknown model's perturbation. Hence, ADRC isn't dependent on mathematic model.
+
+===Nonlinear PID===
+The success of PID control is error feedback. ADRC uses nonlinear state error feedback, so Han call it Nonlinear PID. In linearization system, people can also use weighted state errors as feedback.
+
+==References==
+{{reflist}}
+
+[[Category:Control theory]]

@@ -1,0 +1,60 @@
+{{Introductory article|Eigenstates}}
+
+Because of the [[uncertainty principle]], statements about both the position and momentum of particles can only assign a [[probability]] that the [[Position (vector)|position]] or [[momentum]] will have some numerical value. The uncertainty principle also says that eliminating uncertainty about position maximises uncertainty about momentum, and eliminating uncertainty about momentum maximizes uncertainty about position. A [[probability distribution]] assigns probabilities to all possible values of position and momentum. [[Schrödinger's wave equation]] gives wavefunction solutions, the squares of which are  probabilities of where the electron might be, just as [[Werner Heisenberg|Heisenberg]]'s probability distribution does.<ref name=Uncertaintyprinciple1>{{cite book
+  | last = Greiner   | first = Walter
+  | title = Quantum mechanics |chapter=The Heisenberg Uncertainty Principle
+  | publisher = Springer-Verlag  | date = 2000
+  | location = New York| pages = 51–63, 79
+  | url = https://books.google.com/books?id=7qCMUfwoQcAC&printsec=frontcover&dq=Introduction+to+quantum+mechanics
+  | isbn = 978-3-540-67458-0}}
+</ref><ref name=Uncertaintyprinciple2>{{cite book
+  | last = Greiner   | first = Walter
+  | title = Quantum mechanics; (probability distribution)
+  | publisher = Springer-Verlag   | date =  2000
+  | location = New York  | pages = 170, 249, 251, 313 
+  | url = https://books.google.com/books?id=7qCMUfwoQcAC&printsec=frontcover&dq=Introduction+to+quantum+mechanics
+  | isbn = 978-3-540-67458-0}}
+</ref><ref name="Schrödinger1">{{cite book
+  | last =  Gamow   | first = George   | title = Thirty Years That Shook Physics: The Story of Quantum Theory
+  | publisher = Dover Publications   | year = 1966
+  | location = Mineola, NY
+  | pages = 3, 90–95, 105, 113–14
+  | url = https://books.google.com/books?id=L90_wY1VCW0C&pg=PA87&dq=Schr%C3%B6dinger%27s+wave+equation
+  | isbn = 978-0-486-24895-0}}</ref>
+
+In the everyday world, it is natural and intuitive to think of every object being in its own eigenstate. This is another way of saying that every object appears to have a definite [[Position (vector)|position]], a definite [[momentum]], a definite measured value, and a definite time of occurrence. However, the uncertainty principle says that it is impossible to measure the exact value for the momentum of a particle like an [[electron]], given that its position has been determined at a given instant. Likewise, it is impossible to determine the exact location of that particle once its momentum has been measured at a particular instant.<ref name=Uncertaintyprinciple1/>
+
+Therefore, it became necessary to formulate clearly the difference between the state of something that is uncertain in the way just described, such as an electron in a [[electron cloud|probability cloud]], and the state of something having a definite value. When an object can definitely be "pinned down" in some respect, it is said to possess an [[eigenstate]]. As stated above, when the wavefunction collapses because the position of an electron has been determined, the electron's state becomes an "eigenstate of position", meaning that its position has a known value, an [[eigenvalue]] of the eigenstate of position.<ref>{{Cite web
+  | title =Energy state
+  | publisher =Sci-tech dictionary
+  | date =2010
+  | url =http://www.answers.com/topic/energy-state-quantum-mechanics
+  }}</ref>
+
+The word "eigenstate" is derived from the German/Dutch word "eigen", meaning "inherent" or "characteristic". An eigenstate is the measured state of some object possessing quantifiable characteristics such as position, momentum, etc. The state being measured and described must be [[observable]] (i.e. something such as position or momentum that can be experimentally measured either directly or indirectly), and must have a definite value, called an eigenvalue. ("Eigenvalue" also refers to a mathematical property of [[square matrices]], a usage pioneered by the mathematician [[David Hilbert]] in 1904. Some such matrices are called [[self-adjoint operator]]s, and represent observables in quantum mechanics<ref>[http://farside.ph.utexas.edu/teaching/qm/lectures/node9.html Quantum Mechanics: A graduate level course], 20 Feb 2010</ref>)
+
+== See also ==
+* [[Superposition principle]]
+* [[List of textbooks on classical mechanics and quantum mechanics|List of textbooks on classical and quantum mechanics]]
+
+== References ==
+<!--See http://en.wikipedia.org/wiki/Wikipedia:Footnotes for an explanation of how to generate footnotes using the <references /> tags-->
+{{reflist}}
+'''Related reading:'''
+* For wave mechanics
+** {{cite book
+  | last =  Messiah
+  | first = Albert
+  | title = Quantum mechanics
+  | publisher = Dover Publications
+  | year = 1961
+  | location = New York
+  | page = 162
+|chapter=Chapter 5
+  | url = https://books.google.com/books?id=mwssSDXzkNcC&printsec=frontcover&dq=quantum+mechanics+subject:%22Science+/+Quantum+Theory%22
+  | isbn = 978-0-486-40924-5}}
+
+{{Introductory science articles}}
+
+{{DEFAULTSORT:Eigenstates, Introduction to}}
+[[Category:Quantum mechanics| ]]

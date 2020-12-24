@@ -1,0 +1,198 @@
+{{Information theory}}
+'''Channel capacity''', in [[electrical engineering]], [[computer science]], and [[information theory]], is the [[tight upper bound]] on the rate at which [[information]] can be reliably transmitted over a [[communication channel]].
+
+Following the terms of the [[noisy-channel coding theorem]], the channel capacity of a given [[Channel (communications)|channel]] is the highest information rate (in units of [[information entropy|information]] per unit time) that can be achieved with arbitrarily small error probability. <ref>{{cite web |url=http://www.cs.ucl.ac.uk/staff/S.Bhatti/D51-notes/node31.html |author=Saleem Bhatti |title=Channel capacity |work=Lecture notes for M.Sc. Data Communication Networks and Distributed Systems D51 -- Basic Communications and Networks |url-status=dead |archiveurl=https://web.archive.org/web/20070821212637/http://www.cs.ucl.ac.uk/staff/S.Bhatti/D51-notes/node31.html |archivedate=2007-08-21 }}</ref><ref>{{cite web | url = http://www.st-andrews.ac.uk/~www_pa/Scots_Guide/iandm/part8/page1.html | title = Signals look like noise! | author = Jim Lesurf | work = Information and Measurement, 2nd ed.}}</ref>
+
+[[Information theory]], developed by [[Claude E. Shannon]] in 1948, defines the notion of channel capacity and provides a mathematical model by which one can compute it. The key result states that the capacity of the channel, as defined above, is given by the maximum of the [[mutual information]] between the input and output of the channel, where the maximization is with respect to the input distribution. <ref>{{cite book| author = Thomas M. Cover, Joy A. Thomas | title = Elements of Information Theory | publisher = John Wiley & Sons, New York |year=2006| isbn = 9781118585771 |url=https://books.google.com/books?id=VWq5GG6ycxMC&q=%22channel+capacity%22}}</ref>
+
+The notion of channel capacity has been central to the development of modern wireline and wireless communication systems, with the advent of novel error correction coding mechanisms that have resulted in achieving performance very close to the limits promised by channel capacity. 
+
+== Formal definition ==
+
+The basic mathematical model for a communication system is the following:
+
+[[File:Channel model.svg|center|700px|Channel model]]
+
+where:
+* <math>W</math> is the message to be transmitted;
+* <math>X</math> is the channel input symbol (<math>X^n</math> is a sequence of <math>n</math> symbols) taken in an alphabet <math>\mathcal{X}</math>;
+* <math>Y</math> is the channel output symbol (<math>Y^n</math> is a sequence of <math>n</math> symbols) taken in an alphabet <math>\mathcal{Y}</math>;
+* <math>\hat{W}</math> is the estimate of the transmitted message;
+* <math>f_n</math> is the encoding function for a block of length <math>n</math>;
+* <math>p(y|x) = p_{Y|X}(y|x)</math> is the noisy channel, which is modeled by a [[conditional probability distribution]]; and,
+* <math>g_n</math> is the decoding function for a block of length <math>n</math>.
+
+Let <math>X</math> and <math>Y</math> be modeled as random variables. Furthermore, let <math> p_{Y|X}(y|x)</math> be the [[conditional probability distribution]] function of <math>Y</math> given <math>X</math>, which is an inherent fixed property of the communication channel. Then the choice of the [[marginal distribution]] <math>p_X(x)</math> completely determines the [[Joint probability distribution|joint distribution]] <math>p_{X,Y}(x,y)</math> due to the identity
+
+:<math>\ p_{X,Y}(x,y)=p_{Y|X}(y|x)\,p_X(x) </math>
+
+which, in turn, induces a [[mutual information]] <math>I(X;Y)</math>. The '''channel capacity''' is defined as
+
+:<math>\ C = \sup_{p_X(x)} I(X;Y)\, </math>
+
+where the [[Infimum and supremum|supremum]] is taken over all possible choices of <math>p_X(x)</math>.
+
+== Additivity of channel capacity ==
+Channel capacity is additive over independent channels.<ref>{{cite book |last1=Cover |first1=Thomas M. |last2=Thomas |first2=Joy A. |title=Elements of Information Theory |publisher=Wiley-Interscience |edition=Second |date=2006 |pages=206–207 |chapter=Chapter 7: Channel Capacity |isbn=978-0-471-24195-9}}</ref> It means that using two independent channels in a combined manner provides the same theoretical  capacity as using them independently. 
+More formally, let <math>p_{1}</math> and <math>p_{2}</math> be two independent channels modelled as above; <math>p_{1}</math> having an input alphabet <math>\mathcal{X}_{1}</math> and an output alphabet <math>\mathcal{Y}_{1}</math>. Idem for <math>p_{2}</math>. 
+We define the product channel <math>p_{1}\times p_2</math> as 
+<math>\forall (x_{1}, x_{2}) \in (\mathcal{X}_{1}, \mathcal{X}_{2}),\;(y_{1}, y_{2}) \in (\mathcal{Y}_{1}, \mathcal{Y}_{2}),\; (p_{1}\times p_{2})((y_{1}, y_{2}) | (x_{1},x_{2}))=p_{1}(y_{1}|x_{1})p_{2}(y_{2}|x_{2})</math>
+
+This theorem states:
+<math display="block"> C(p_{1}\times p_{2}) = C(p_{1}) + C(p_{2})</math>
+
+{{Proof|
+
+We first show that <math> C(p_{1}\times p_{2}) \geq C(p_{1}) + C(p_{2}) </math>.
+
+Let <math>X_1</math> and <math>X_2</math> be two independent random variables. Let <math>Y_1</math> be a random variable corresponding to the output of <math>X_1</math> through the channel <math>p_{1}</math>, and <math>Y_2</math> for <math>X_2</math> through <math>p_2</math>. 
+
+By definition <math>C(p_{1}\times p_{2}) = \sup_{p_{X_{1},X_{2}}}(I(X_{1},X_{2} : Y_{1},Y_{2}))</math>.
+
+Since <math>X_1</math> and <math>X_2</math> are independent, as well as <math>p_1</math> and <math>p_2</math>,  <math>(X_1,Y_1)</math> is independent of <math>(X_2,Y_2)</math>. We can apply the following property of [[mutual information]]: <math>I(X_1,X_2 : Y_1, Y_2) = I(X_1:Y_1) + I(X_2:Y_2)</math>
+
+For now we only need to find a distribution <math>p_{X_1,X_2}</math> such that <math>I(X_1,X_2 : Y_1,Y_2) \geq I(X_1 : Y_1) + I(X_2 : Y_2)</math>. In fact, <math>\pi_1</math> and <math>\pi_2</math>, two probability distributions for <math>X_1</math> and <math>X_2</math> achieving <math>C(p_1)</math> and <math>C(p_2)</math>, suffice:
+:<math>C(p_{1}\times p_{2}) \geq I(X_1, X_2 : Y_1, Y_2) = I(X_1:Y_1) + I(X_2:Y_2) = C(p_1) + C(p_2)</math>
+ie. <math>C(p_{1}\times p_{2}) \geq C(p_1) + C(p_2)</math>
+
+
+
+Now let us show that <math> C(p_{1}\times p_{2}) \leq C(p_{1}) + C(p_{2}) </math>.
+
+Let <math>\pi_{12}</math> be some distribution for the channel <math>p_{1}\times p_{2}</math> defining <math>(X_1, X_2)</math> and the corresponding output <math>(Y_1, Y_2)</math>. Let <math>\mathcal{X}_1</math> be the alphabet of <math>X_1</math>, <math>\mathcal{Y}_1</math> for <math>Y_1</math>, and analogously <math>\mathcal{X}_2</math> and <math>\mathcal{Y}_2</math>.
+
+By definition of mutual information, we have 
+
+<math>
+\begin{align}
+I(X_1, X_2 : Y_1, Y_2) &= H(Y_1, Y_2) - H(Y_1, Y_2 | X_1, X_2)\\
+&\leq H(Y_1) + H(Y_2) - H(Y_1, Y_2 | X_1, X_2)
+\end{align}
+</math>
+
+Let us rewrite the last term of [[Entropy (information theory)|entropy]].
+
+<math>H(Y_1,Y_2|X_1,X_2) = \sum_{(x_1, x_2) \in \mathcal{X}_1\times \mathcal{X}_2}\mathbb{P}(X_{1}, X_{2} = x_{1}, x_{2})H(Y_{1}, Y_{2} | X_{1}, X_{2} = x_{1}, x_{2})
+</math>
+
+By definition of the product channel, <math>\mathbb{P}(Y_{1},Y_{2}=y_{1},y_{2}|X_{1},X_{2}=x_{1},x_{2})=\mathbb{P}(Y_{1}=y_{1}|X_{1}=x_{1})\mathbb{P}(Y_{2}=y_{2}|X_{2}=x_{2})</math>. 
+For a given pair <math>(x_1, x_2)</math>, we can rewrite <math>H(Y_1,Y_2|X_1,X_2=x_1,x_2)</math> as:
+
+<math>
+\begin{align}
+H(Y_1, Y_2 | X_1, X_2 = x_1,x_2) &= \sum_{(y_1, y_2) \in \mathcal{Y}_1\times \mathcal{Y}_2}\mathbb{P}(Y_1, Y_2 = y_1, y_2 | X_1, X_2 = x_1, x_2)\log(\mathbb{P}(Y_1, Y_2 = y_1, y_2 | X_1, X_2 = x_1, x_2)) \\
+
+&= \sum_{(y_1, y_2) \in \mathcal{Y}_1\times \mathcal{Y}_2}\mathbb{P}(Y_1, Y_2 = y_1, y_2 | X_1, X_2 = x_1, x_2)[\log(\mathbb{P}(Y_1 = y_1 | X_1 = x_1)) + \log(\mathbb{P}(Y_2 = y_2 | X_2 = x_2))] \\
+
+&=H(Y_{1}|X_{1}=x_1)+H(Y_{2}|X_{2}=x_2)
+\end{align}
+</math>
+
+By summing this equality over all <math>(x_1, x_2)</math>, we obtain 
+<math>H(Y_1,Y_2|X_1,X_2)=H(Y_1|X_1)+H(Y_2|X_2)</math>.
+
+We can now give an upper bound over mutual information:
+
+<math> 
+\begin{align}
+I(X_{1},X_{2}:Y_{1},Y_{2})&\leq H(Y_{1})+H(Y_{2})-H(Y_{1}|X_{1})-H(Y_{2}|X_{2})\\
+&=I(X_{1}:Y_{1})+I(X_{2}:Y_{2})
+\end{align}
+</math>
+
+This relation is preserved at the supremum. Therefore
+:<math>C(p_{1}\times p_{2}) \leq C(p_1)+C(p_2)</math>
+
+
+
+Combining the two inequalities we proved, we obtain the result of the theorem:
+:<math>C(p_{1}\times p_{2})=C(p_{1})+C(p_{2})</math>
+
+}}
+
+==Shannon capacity of a graph==
+{{main|Shannon capacity of a graph}}
+If ''G'' is an [[undirected graph]], it can be used to define a communications channel in which the symbols are the graph vertices, and two codewords may be confused with each other if their symbols in each position are equal or adjacent. The computational complexity of finding the Shannon capacity of such a channel remains open, but it can be upper bounded by another important graph invariant, the [[Lovász number]].<ref>{{citation | first = László | last = Lovász | authorlink = László Lovász | title = On the Shannon Capacity of a Graph | journal = [[IEEE Transactions on Information Theory]] | volume = IT-25 | issue = 1 | year = 1979 | pages = 1–7 | doi = 10.1109/tit.1979.1055985 }}.</ref>
+
+==Noisy-channel coding theorem==
+
+The [[noisy-channel coding theorem]] states that for any error probability ε &gt; 0 and for any transmission [[information theory#Rate|rate]] ''R'' less than the channel capacity ''C'', there is an encoding and decoding scheme transmitting data at rate ''R'' whose error probability is less than ε, for a sufficiently large block length. Also, for any rate greater than the channel capacity, the probability of error at the receiver goes to 0.5 as the block length goes to infinity.
+
+==Example application==
+
+An application of the channel capacity concept to an [[additive white Gaussian noise]] (AWGN) channel with ''B'' Hz [[Bandwidth (signal processing)|bandwidth]] and [[signal-to-noise ratio]] ''S/N'' is the [[Shannon–Hartley theorem]]:
+:<math> C = B \log_2 \left( 1+\frac{S}{N} \right)\ </math>
+
+''C'' is measured in [[bits per second]] if the [[logarithm]] is taken in base 2, or [[Nat (unit)|nat]]s per second if the [[natural logarithm]] is used, assuming ''B'' is in [[hertz]]; the signal and noise powers ''S'' and ''N'' are expressed in a linear [[Power_(physics)#Units|power unit]] (like watts or volts<sup>2</sup>). Since ''S/N'' figures are often cited in [[decibel|dB]], a conversion may be needed. For example, a signal-to-noise ratio of 30 dB corresponds to a linear power ratio of <math> 10^{30/10} = 10^3 = 1000</math>.
+
+== Channel capacity in wireless communications ==
+
+This section<ref>{{citation | author = David Tse, Pramod Viswanath | title = Fundamentals of Wireless Communication | publisher = Cambridge University Press, UK | year=2005| isbn = 9780521845274 |url=https://books.google.com/books?id=66XBb5tZX6EC&q=%22Channel+capacity%22}}</ref> focuses on the single-antenna, point-to-point scenario. For channel capacity in systems with multiple antennas, see the article on [[MIMO]].
+
+===Bandlimited AWGN channel===
+{{main|Shannon–Hartley theorem}}
+[[File:Channel Capacity with Power- and Bandwidth-Limited Regimes.png|thumb|AWGN channel capacity with the power-limited regime and bandwidth-limited regime indicated. Here, <math>\frac{\bar{P}}{N_0}=1</math>; ''B'' and ''C'' can be scaled proportionally for other values.]]
+
+If the average received power is <math>\bar{P}</math> [W], the total bandwidth is <math>W</math> in Hertz, and the noise [[power spectral density]] is <math>N_0</math> [W/Hz], the AWGN channel capacity is
+
+:<math>C_{\text{AWGN}}=W\log_2\left(1+\frac{\bar{P}}{N_0 W}\right)</math> [bits/s],
+
+where <math>\frac{\bar{P}}{N_0 W}</math> is the received signal-to-noise ratio (SNR). This result is known as the '''Shannon–Hartley theorem'''.<ref>{{cite book|title=The Handbook of Electrical Engineering|year=1996|publisher=Research & Education Association|isbn=9780878919819|page=D-149|url=https://books.google.com/books?id=-WJS3VnvomIC&q=%22Shannon%E2%80%93Hartley+theorem%22&pg=RA1-SL4-PA41}}</ref>
+
+When the SNR is large (SNR >> 0 dB), the capacity <math>C\approx W\log_2 \frac{\bar{P}}{N_0 W} </math> is logarithmic in power and approximately linear in bandwidth. This is called the ''bandwidth-limited regime''.
+
+When the SNR is small (SNR << 0 dB), the capacity <math>C\approx \frac{\bar{P}}{N_0 \ln 2} </math> is linear in power but insensitive to bandwidth. This is called the ''power-limited regime''.
+
+The bandwidth-limited regime and power-limited regime are illustrated in the figure.
+
+===Frequency-selective AWGN channel===
+
+The capacity of the [[fading|frequency-selective]] channel is given by so-called [[Water filling algorithm|water filling]] power allocation,
+
+:<math>C_{N_c}=\sum_{n=0}^{N_c-1} \log_2 \left(1+\frac{P_n^* |\bar{h}_n|^2}{N_0} \right),</math>
+
+where <math>P_n^*=\max \left\{ \left(\frac{1}{\lambda}-\frac{N_0}{|\bar{h}_n|^2} \right),0 \right\}</math> and <math>|\bar{h}_n|^2</math> is the gain of subchannel <math>n</math>, with <math>\lambda</math> chosen to meet the power constraint.
+
+===Slow-fading channel===
+
+In a [[fading|slow-fading channel]], where the coherence time is greater than the latency requirement, there is no definite capacity as the maximum rate of reliable communications supported by the channel, <math>\log_2 (1+|h|^2 SNR)</math>, depends on the random channel gain <math>|h|^2</math>, which is unknown to the transmitter. If the transmitter encodes data at rate <math>R</math> [bits/s/Hz], there is a non-zero probability that the decoding error probability cannot be made arbitrarily small,
+
+:<math>p_{out}=\mathbb{P}(\log(1+|h|^2 SNR)<R)</math>,
+
+in which case the system is said to be in outage. With a non-zero probability that the channel is in deep fade, the capacity of the slow-fading channel in strict sense is zero. However, it is possible to determine the largest value of <math>R</math> such that the outage probability <math>p_{out}</math> is less than <math>\epsilon</math>. This value is known as the <math>\epsilon</math>-outage capacity.
+
+===Fast-fading channel===
+
+In a [[fading|fast-fading channel]], where the latency requirement is greater than the coherence time and the codeword length spans many coherence periods, one can average over many independent channel fades by coding over a large number of coherence time intervals. Thus, it is possible to achieve a reliable rate of communication of <math>\mathbb{E}(\log_2 (1+|h|^2 SNR))</math> [bits/s/Hz] and it is meaningful to speak of this value as the capacity of the fast-fading channel.
+
+==See also==
+
+* [[Bandwidth (computing)]]
+* [[Bandwidth (signal processing)]]
+* [[Bit rate]] 
+* [[Code rate]]
+* [[Error exponent]]
+* [[Nyquist rate]]
+* [[Negentropy]]
+* [[Redundancy (information theory)|Redundancy]]
+* [[Sender]], [[Data compression]], [[Receiver (Information Theory)|Receiver]]
+* [[Shannon–Hartley theorem]]
+* [[Spectral efficiency]]
+* [[Throughput]]
+
+===Advanced Communication Topics===
+* [[MIMO]]
+* [[Cooperative diversity]]
+
+==External links==
+* {{springer|title=Transmission rate of a channel|id=p/t093890}}
+* [http://webdemo.inue.uni-stuttgart.de/webdemos/08_research/capacity/ AWGN Channel Capacity with various constraints on the channel input (interactive demonstration)]
+
+==References==
+{{reflist}}
+{{Mobile phones}}
+{{Refimprove|date=January 2008}}
+
+[[Category:Information theory]]
+[[Category:Telecommunication theory]]
+[[Category:Television terminology]]

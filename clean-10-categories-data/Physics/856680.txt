@@ -1,0 +1,75 @@
+:''This article is a historical introduction to the subject. For the main encyclopedia article, see [[Loop quantum gravity]].''
+The '''history of loop quantum gravity''' spans more than three decades of intense research.
+
+==History==
+===Classical theories of gravitation===
+[[General relativity]] is the theory of [[gravitation]] published by [[Albert Einstein]] in 1915. According to it, the force of gravity is a manifestation of the local geometry of [[spacetime]]. Mathematically, the theory is modelled after [[Bernhard Riemann]]'s [[metric tensor|metric]] geometry, but the [[Lorentz group]] of [[spacetime symmetries]] (an essential ingredient of Einstein's own theory of [[special relativity]]) replaces the group of rotational symmetries of space. (Later, loop quantum gravity inherited this geometric interpretation of gravity, and posits that a quantum theory of gravity is fundamentally a quantum theory of spacetime.)
+
+In the 1920s, the French mathematician [[Élie Cartan]] formulated Einstein's theory in the language of bundles and connections,<ref>Élie Cartan. "Sur une généralisation de la notion de courbure de Riemann et les espaces à torsion." ''C. R. Acad. Sci.'' (Paris) 174, 593–595 (1922); Élie Cartan. "Sur les variétés à connexion affine et la théorie de la relativité généralisée." Part I: ''Ann. Éc. Norm.'' '''40''', 325–412 (1923) and ibid. '''41''', 1–25 (1924); Part II: ibid. '''42''', 17–88 (1925).</ref> a generalization of [[Riemannian geometry]] to which Cartan made important contributions. The so-called [[Einstein–Cartan theory]] of gravity not only reformulated but also generalized general relativity, and allowed spacetimes with [[Torsion (mechanics)|torsion]] as well as curvature. In Cartan's geometry of bundles, the concept of [[parallel transport]] is more fundamental than that of [[distance]], the centerpiece of Riemannian geometry. A similar conceptual shift occurs between the invariant [[interval (mathematics)|interval]] of Einstein's general relativity and the parallel transport of Einstein–Cartan theory.
+
+===Spin networks===
+In 1971, physicist [[Roger Penrose]] explored the idea of space arising from a quantum combinatorial structure.<ref>Roger Penrose, "Applications of negative dimensional tensors," in ''Combinatorial Mathematics and its Applications'', Academic Press (1971).</ref><ref>Roger Penrose, "Angular momentum: an approach to combinatorial space-time" in ''Quantum Theory and Beyond," ed. Ted Bastin, Cambridge University Press, 1971.</ref> His investigations resulted in the development of [[spin network]]s. Because this was a quantum theory of the rotational group and not the Lorentz group, Penrose went on to develop [[Twistor theory|twistors]].
+
+===Loop quantum gravity===
+In 1982, [[Amitabha Sen]] tried to formulate a Hamiltonian formulation of general relativity based on [[spinor]]ial variables, where these variables are the left and right spinorial component equivalents of Einstein–Cartan connection of general relativity.<ref>Amitabha Sen, "Gravity as a spin system," ''Phys. Lett.'' '''B119''':89–91, December 1982.</ref> Particularly, Sen discovered a new way to write down the two constraints of the [[ADM formalism|ADM Hamiltonian formulation]] of general relativity in terms of these spinorial connections. In his form, the constraints are simply conditions that the spinorial [[Weyl curvature]] is trace free and symmetric. He also discovered the presence of new constraints which he suggested to be interpreted as the equivalent of Gauss constraint of [[Yang–Mills field]] theories. But Sen's work fell short of giving a full clear systematic theory and particularly failed to clearly discuss the conjugate momenta to the spinorial variables, its physical interpretation, and its relation to the metric (in his work he indicated this as some lambda variable).
+
+In 1986–87, physicist [[Abhay Ashtekar]] completed the project which Amitabha Sen began. He clearly identified the fundamental conjugate variables of spinorial gravity: The configuration variable is as a spinoral connection (a rule for parallel transport; technically, a [[Connection (mathematics)|connection]]) and the conjugate momentum variable is a coordinate frame (called a [[vierbein]]) at each point.<ref>Abhay Ashtekar, "New variables for classical and quantum gravity," ''Phys. Rev. Lett.'', '''57''', 2244-2247, 1986.</ref><ref>Abhay Ashtekar, "New Hamiltonian formulation of general relativity," ''Phys. Rev.'' '''D36''', 1587-1602, 1987.</ref> So these variable became what we know as [[Ashtekar variables]], a particular flavor of Einstein–Cartan theory with a complex connection. General relativity theory expressed in this way, made possible to pursue quantization of it using well-known techniques from [[quantum field theory|quantum gauge field theory]].
+
+The quantization of gravity in the Ashtekar formulation was based on [[Wilson loop]]s, a technique developed by [[Kenneth G. Wilson]] in 1974<ref>{{cite journal| first=K.| last= Wilson| journal=[[Physical Review D]] | title=Confinement of quarks | volume= 10| issue=8| page= 2445| year= 1974| doi=10.1103/PhysRevD.10.2445|bibcode = 1974PhRvD..10.2445W }}</ref> to study the strong-interaction regime of [[quantum chromodynamics]] (QCD). It is interesting in this connection that Wilson loops were known to be ill-behaved in the case of standard quantum field theory on (flat) Minkowski space, and so did not provide a nonperturbative quantization of QCD. However, because the Ashtekar formulation was [[background-independent]], it was possible to use Wilson loops as the basis for nonperturbative quantization of [[gravity]].
+
+Due to efforts by Sen and Ashtekar, a setting in which the [[Wheeler–DeWitt equation]] was written in terms of a well-defined [[Hamiltonian operator]] on a well-defined [[Hilbert space]] was obtained. This led to the construction of the first known exact solution, the so-called [[Chern–Simons form]] or [[Kodama state]]. The physical interpretation of this state remains obscure.
+
+In 1988–90, [[Carlo Rovelli]] and [[Lee Smolin]] obtained an explicit basis of states of quantum geometry, which turned out to be labeled by Penrose's spin networks.<ref>Carlo Rovelli and Lee Smolin, "Knot theory and quantum gravity," ''Phys. Rev. Lett.'', '''61''' (1988) 1155.</ref><ref>Carlo Rovelli and Lee Smolin, "Loop space representation of quantum general relativity," ''Nuclear Physics'' '''B331''' (1990) 80-152.</ref> In this context, spin networks arose as a generalization of Wilson loops necessary to deal with mutually intersecting loops. Mathematically, spin networks are related to group representation theory and can be used to construct [[knot invariant]]s such as the [[Knot polynomial|Jones polynomial]]. Loop quantum gravity (LQG) thus became related to topological quantum field theory and group representation theory.
+
+In 1994, Rovelli and Smolin showed that the quantum [[operator (physics)|operators]] of the theory associated to area and volume have a discrete spectrum.<ref>Carlo Rovelli, Lee Smolin, "Discreteness of area and volume in quantum gravity" (1994): arXiv:gr-qc/9411005.</ref> Work on the semi-classical limit, the continuum limit, and dynamics was intense after this, but progress was slower.
+
+On the [[semi-classical limit]] front, the goal is to obtain and study analogues of the [[harmonic oscillator]] coherent states (candidates are known as [[weave state]]s).
+
+===Hamiltonian dynamics===
+LQG was initially formulated as a quantization of the Hamiltonian ADM formalism, according to which the Einstein equations are a collection of constraints (Gauss, Diffeomorphism and Hamiltonian). The kinematics are encoded in the Gauss and Diffeomorphism constraints, whose solution is the space spanned by the spin network basis. The problem is to define the Hamiltonian constraint as a [[self-adjoint operator]] on the kinematical state space. The most promising work in this direction is [[Thomas Thiemann]]'s Phoenix Project.<ref>{{cite journal|arxiv=gr-qc/0305080|doi=10.1088/0264-9381/23/7/002|title=The Phoenix Project: Master constraint programme for loop quantum gravity|journal=Classical and Quantum Gravity|volume=23|issue=7|pages=2211–2247|year=2006|last1=Thiemann|first1=T|bibcode=2006CQGra..23.2211T}}</ref>
+
+===Covariant dynamics===
+Much of the recent work in LQG has been done in the [[Covariance|covariant]] formulation of the theory, called "[[spin foam]] theory." The present version of the covariant dynamics is due to the convergent work of different groups, but it is commonly named after a paper by Jonathan Engle, Roberto Pereira and Carlo Rovelli in 2007–08.<ref>Jonathan Engle, Roberto Pereira, Carlo Rovelli, "Flipped spinfoam vertex and loop gravity". ''Nucl. Phys.'' '''B798''' (2008). 251–290. arXiv:0708.1236.</ref> Heuristically, it would be expected that evolution between spin network states might be described by discrete combinatorial operations on the spin networks, which would then trace a two-dimensional skeleton of spacetime. This approach is related to [[state-sum model]]s of statistical mechanics and topological quantum field theory such as the [[Turaeev–Viro model]] of 3D quantum gravity, and also to the [[Regge calculus]] approach to calculate the Feynman path integral of general relativity by discretizing spacetime.
+
+==See also==
+* [[History of string theory]]
+
+==References==
+{{reflist|2}}
+
+==Further reading==
+;Topical reviews
+* [[Carlo Rovelli]], "Loop Quantum Gravity," [http://relativity.livingreviews.org/ Living Reviews in Relativity] '''1''', (1998), 1, [http://www.livingreviews.org/lrr-1998-1 online article], 2001 version.
+* [[Thomas Thiemann]], "Lectures on Loop Quantum Gravity," e-print available as [https://arxiv.org/abs/gr-qc/0210094 gr-qc/0210094]
+* [[Abhay Ashtekar]] and Jerzy Lewandowski, "Background Independent Quantum Gravity: A Status Report," e-print available as [https://arxiv.org/abs/gr-qc/0404018 gr-qc/0404018]
+* Carlo Rovelli and Marcus Gaul, "Loop Quantum Gravity and the Meaning of Diffeomorphism Invariance," e-print available as [https://arxiv.org/abs/gr-qc/9910079 gr-qc/9910079].
+* [[Lee Smolin]], "The Case for Background Independence," e-print available as [https://arxiv.org/abs/hep-th/0507235 hep-th/0507235].
+
+;Popular books
+* [[Julian Barbour]], ''[[The End of Time: The Next Revolution in Our Understanding of the Universe]]'' (1999).
+* Lee Smolin, ''[[Three Roads to Quantum Gravity]]'' (2001).
+* Carlo Rovelli, ''Che cos'è il tempo? Che cos'è lo spazio?'', Di Renzo Editore, Roma, 2004. French translation: ''Qu'est ce que le temps? Qu'est ce que l'espace?'', Bernard Gilson ed, Brussel, 2006. English translation: ''What is Time? What is space?'', Di Renzo Editore, Roma, 2006.
+
+;Magazine articles
+* Lee Smolin, "Atoms in Space and Time", ''[[Scientific American]]'', January 2004.
+
+;Easier introductory, expository or critical works
+* Abhay Ashtekar, "Gravity and the Quantum," e-print available as [https://arxiv.org/abs/gr-qc/0410054 gr-qc/0410054].
+* [[John C. Baez]] and Javier P. Muniain, ''Gauge Fields, Knots and Quantum Gravity'', World Scientific (1994).
+* Carlo Rovelli, "A Dialog on Quantum Gravity," e-print available as [https://arxiv.org/abs/hep-th/0310077 hep-th/0310077].
+
+;More advanced introductory/expository works
+* Carlo Rovelli, ''Quantum Gravity'', Cambridge University Press (2004); [http://www.cpt.univ-mrs.fr/~rovelli/book.pdf draft available online].
+* Thomas Thiemann, "Introduction to Modern Canonical Quantum General Relativity," e-print available as [https://arxiv.org/abs/gr-qc/0110034 gr-qc/0110034].
+* Abhay Ashtekar, ''New Perspectives in Canonical Gravity'', Bibliopolis (1988).
+* Abhay Ashtekar, ''Lectures on Non-Perturbative Canonical Gravity'', World Scientific (1991).
+* [[Rodolfo Gambini]] and [[Jorge Pullin]], ''Loops, Knots, Gauge Theories and Quantum Gravity'', Cambridge University Press (1996).
+* Hermann Nicolai, Kasper Peeters, Marija Zamaklar, "Loop Quantum Gravity: An Outside View," e-print available as [https://arxiv.org/abs/hep-th/0501114 hep-th/0501114].
+* [http://www.arxiv.org/multi?archive=hep-th&file=new+abstracts&year=%2706&month=01&args=0601129&%2Fabs=Show+Abstract&search_year=past+year&field_1=au&query_1=&subj_cond-mat=-%3E+cond-mat+subject+classes&subj_physics=-%3E+physics+subject+classes "Loop and Spin Foam Quantum Gravity: A Brief Guide for beginners arXiv:hep-th/0601129] H. Nicolai and K. Peeters.
+* [[Edward Witten]], "Quantum Background Independence In String Theory," e-print available as [https://arxiv.org/abs/hep-th/9306122 hep-th/9306122].
+
+;Conference proceedings
+* [[John C. Baez]] (ed.), ''Knots and Quantum Gravity'' (1993).
+
+[[Category:Loop quantum gravity]]
+[[Category:History of physics|Loop quantum gravity]]

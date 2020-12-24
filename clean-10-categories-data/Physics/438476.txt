@@ -1,0 +1,745 @@
+{{about|a formulation of quantum mechanics|integrals along a path, also known as line or contour integrals|line integral}}
+{{Quantum mechanics|cTopic=Formulations}}
+The '''path integral formulation''' is a description in [[quantum mechanics]] that generalizes the [[action (physics)|action principle]] of [[classical mechanics]].  It replaces the classical notion of a single, unique classical trajectory for a system with a sum, or [[functional integral]], over an infinity of quantum-mechanically possible trajectories to compute a [[probability amplitude|quantum amplitude]].
+
+This formulation has proven crucial to the subsequent development of [[theoretical physics]], because manifest [[Lorentz covariance]] (time and space components of quantities enter equations in the same way) is easier to achieve than in the operator formalism of [[canonical quantization]]. Unlike previous methods, the path integral allows one to easily change [[coordinates]] between very different [[canonical coordinates|canonical]] descriptions of the same quantum system. Another advantage is that it is in practice easier to guess the correct form of the [[Lagrangian (field theory)|Lagrangian]] of a theory, which naturally enters the path integrals (for interactions of a certain type, these are ''coordinate space'' or ''Feynman path integrals''), than the [[Hamiltonian (quantum mechanics)|Hamiltonian]]. Possible downsides of the approach include that [[unitarity]] (this is related to conservation of probability; the probabilities of all physically possible outcomes must add up to one) of the [[S-matrix]] is obscure in the formulation. The path-integral approach has been proved to be equivalent to the other formalisms of quantum mechanics and quantum field theory. Thus, by ''deriving'' either approach from the other, problems associated with one or the other approach (as exemplified by Lorentz covariance or unitarity) go away.<ref>{{harvnb|Weinberg|2002|loc=Chapter 9.}}</ref>
+
+The path integral also relates quantum and [[stochastic]] processes, and this provided the basis for the grand synthesis of the 1970s, which unified [[quantum field theory]] with the [[statistical field theory]] of a fluctuating field near a [[second-order phase transition]]. The [[Schrödinger equation]] is a [[diffusion equation]] with an imaginary diffusion constant, and the path integral is an [[analytic continuation]] of a method for summing up all possible [[random walk]]s.<ref>{{harvnb|Vinokur|2015}}<br>PDF:[https://www.gc.cuny.edu/CUNY_GC/media/CUNY-Graduate-Center/PDF/ITS/Vinokur_Spring2015.pdf Dynamic Vortex Mott Transition]</ref>
+
+The basic idea of the path integral formulation can be traced back to [[Norbert Wiener]], who introduced the [[Wiener integral]] for solving problems in diffusion and [[Brownian motion]].<ref>{{harvnb|Chaichian|Demichev|2001}}</ref> This idea was extended to the use of the [[Lagrangian (field theory)|Lagrangian]] in quantum mechanics by [[Paul Dirac]] in his 1933 article.<ref>{{harvnb|Dirac|1933}}<br>PDF:[http://www.hep.anl.gov/czachos/soysoy/Dirac33.pdf The Lagrangian in Quantum Mechanics]</ref><ref>{{harvnb|Van Vleck|1928}}</ref> The complete method was developed in 1948 by [[Richard Feynman]]. Some preliminaries were worked out earlier in his doctoral work under the supervision of [[John Archibald Wheeler]]. The original motivation stemmed from the desire to obtain a quantum-mechanical formulation for the [[Wheeler–Feynman absorber theory]] using a [[Lagrangian (field theory)|Lagrangian]] (rather than a [[Hamiltonian (quantum mechanics)|Hamiltonian]]) as a starting point.
+[[File:Feynman paths.png|alt=|thumb|376x376px|These are five of the infinitely many paths available for a particle to move from point A at time t to point B at time t’(>t). Paths which self-intersect or go backwards in time are not allowed.]]
+
+== Quantum action principle ==
+
+In quantum mechanics, as in classical mechanics, the [[Hamiltonian (quantum mechanics)|Hamiltonian]] is the generator of time translations. This means that the state at a slightly later time differs from the state at the current time by the result of acting with the Hamiltonian operator (multiplied by the negative [[imaginary unit]], {{math|−''i''}}). For states with a definite energy, this is a statement of the [[de Broglie relation]] between frequency and energy, and the general relation is consistent with that plus the [[superposition principle]].
+
+The Hamiltonian in classical mechanics is derived from a [[Lagrangian (field theory)|Lagrangian]], which is a more fundamental quantity relative to [[special relativity]]. The Hamiltonian indicates how to march forward in time, but the time is different in different [[Frame of reference|reference frames]]. The Lagrangian is a [[Lorentz scalar]], while the Hamiltonian is the time component of a [[four-vector]]. So the Hamiltonian is different in different frames, and this type of symmetry is not apparent in the original formulation of quantum mechanics.
+
+The Hamiltonian is a function of the position and momentum at one time, and it determines the position and momentum a little later. The Lagrangian is a function of the position now and the position a little later (or, equivalently for infinitesimal time separations, it is a function of the position and velocity). The relation between the two is by a [[Legendre transformation]], and the condition that determines the classical equations of motion (the [[Euler–Lagrange equation]]s) is that the [[action (physics)|action]] has an extremum.
+
+In quantum mechanics, the Legendre transform is hard to interpret, because the motion is not over a definite trajectory. In classical mechanics, with [[discretization]] in time, the Legendre transform becomes
+
+:<math> \varepsilon H = p(t)\big(q(t + \varepsilon) - q(t)\big) - \varepsilon L</math>
+and
+:<math> p = \frac{\partial L}{\partial \dot{q}},</math>
+
+where the partial derivative with respect to <math>\dot q</math> holds {{math|''q''(''t'' + ''ε'')}} fixed. The inverse Legendre transform is
+
+:<math> \varepsilon L = \varepsilon p \dot{q} - \varepsilon H,</math>
+
+where
+
+:<math> \dot q = \frac{\partial H}{\partial p},</math>
+
+and the partial derivative now is with respect to {{mvar|p}} at fixed {{mvar|q}}.
+
+In quantum mechanics, the state is a [[quantum superposition|superposition of different states]] with different values of {{mvar|q}}, or different values of {{mvar|p}}, and the quantities {{mvar|p}} and {{mvar|q}} can be interpreted as noncommuting operators. The operator {{mvar|p}} is only definite on states that are indefinite with respect to {{mvar|q}}. So consider two states separated in time and act with the operator corresponding to the Lagrangian:
+
+:<math> e^{i\big[p \big(q(t + \varepsilon) - q(t)\big) - \varepsilon H(p, q) \big]}.</math>
+
+If the multiplications implicit in this formula are reinterpreted as ''matrix'' multiplications, the first factor is
+
+:<math> e^{-ip q(t)},</math>
+
+and if this is also interpreted as a matrix multiplication, the sum over all states integrates over all {{math|''q''(''t'')}}, and so it takes the [[Fourier transform]] in {{math|''q''(''t'')}} to change basis to {{math|''p''(''t'')}}. That is the action on the Hilbert space – '''change basis to {{mvar|p}} at time {{mvar|t}}'''.
+
+Next comes
+
+:<math>e^{-i\varepsilon H(p,q)},</math>
+
+or '''evolve an infinitesimal time into the future'''.
+
+Finally, the last factor in this interpretation is
+
+:<math>e^{i p q(t + \varepsilon)},</math>
+
+which means '''change basis back to {{mvar|q}} at a later time'''.
+
+This is not very different from just ordinary time evolution: the {{mvar|H}} factor contains all the dynamical information – it pushes the state forward in time. The first part and the last part are just Fourier transforms to change to a pure {{mvar|q}} basis from an intermediate {{mvar|p}} basis.
+{{quote box|align=right|width=42em|quote=...we see that the integrand in (11) must be of the form {{math|''e''<sup>''iF''/''h''</sup>}}, where {{mvar|F}} is a function of {{math|''q''<sub>''T''</sub>, ''q''<sub>1</sub>, ''q''<sub>2</sub>, … ''q''<sub>''m''</sub>, ''q''<sub>''t''</sub>}}, which remains finite as {{mvar|h}} tends to zero. Let us now picture one of the intermediate {{mvar|q}}s, say {{mvar|q<sub>k</sub>}}, as varying continuously while the other ones are fixed. Owing to the smallness of {{mvar|h}}, we shall then in general have ''F''/''h'' varying extremely rapidly. This means that {{math|''e''<sup>''iF''/''h''</sup>}} will vary periodically with a very high frequency about the value zero, as a result of which its integral will be practically zero. The only important part in the domain of integration of {{mvar|q<sub>k</sub>}} is thus that for which a comparatively large variation in {{mvar|q<sub>k</sub>}} produces only a very small variation in {{mvar|F}}. This part is the neighbourhood of a point for which {{mvar|F}} is stationary with respect to small variations in {{mvar|q<sub>k</sub>}}. We can apply this argument to each of the variables of integration ... and obtain the result that the only important part in the domain of integration is that for which {{mvar|F}} is stationary for small variations in all intermediate {{mvar|q}}s. ... We see that {{mvar|F}} has for its classical analogue {{math|{{intmath|int|''T''|''t''}} ''L dt''}}, which is just the action function, which classical mechanics requires to be stationary for small variations in all the intermediate {{mvar|q}}s. This shows the way in which equation (11) goes over into classical results when {{mvar|h}} becomes extremely small. |source=Dirac (1933), p. 69}}
+
+Another way of saying this is that since the Hamiltonian is naturally a function of {{mvar|p}} and {{mvar|q}}, exponentiating this quantity and changing basis from {{mvar|p}} to {{mvar|q}} at each step allows the matrix element of {{mvar|H}} to be expressed as a simple function along each path. This function is the quantum analog of the classical action. This observation is due to [[Paul Dirac]].<ref>{{harvnb|Dirac|1933}}</ref>
+
+Dirac further noted that one could square the time-evolution operator in the {{mvar|S}} representation:
+
+:<math> e^{i\varepsilon S},</math>
+
+and this gives the time-evolution operator between time {{mvar|t}} and time {{math|''t'' + 2''ε''}}. While in the {{mvar|H}} representation the quantity that is being summed over the intermediate states is an obscure matrix element, in the {{mvar|S}} representation it is reinterpreted as a quantity associated to the path. In the limit that one takes a large power of this operator, one reconstructs the full quantum evolution between two states, the early one with a fixed value of {{math|''q''(0)}} and the later one with a fixed value of {{math|''q''(''t'')}}. The result is a sum over paths with a phase, which is the quantum action. Crucially, Dirac identified in this article the deep quantum-mechanical reason for the [[principle of least action]] controlling the classical limit (see quotation box).
+
+== Feynman's interpretation ==
+
+Dirac's work did not provide a precise prescription to calculate the sum over paths, and he did not show that one could recover the Schrödinger equation or the [[canonical commutation relation]]s from this rule. This was done by Feynman.<ref group=nb>Both noted that in the limit of action that is large compared to the reduced [[Planck's constant]] {{mvar|ħ}} (using [[natural units]], {{math|''ħ'' {{=}} 1}}), or the classical limit, the path integral is dominated by solutions which are in the neighborhood of [[stationary point]]s of the action.</ref> That is, the classical path arises naturally in the classical limit.
+
+Feynman showed that Dirac's quantum action was, for most cases of interest, simply equal to the classical action, appropriately discretized. This means that the classical action is the phase acquired by quantum evolution between two fixed endpoints. He proposed to recover all of quantum mechanics from the following postulates:
+# The [[probability]] for an event is given by the squared modulus of a complex number called the "probability amplitude".
+# The [[probability amplitude]] is given by adding together the contributions of all paths in configuration space.
+# The contribution of a path is proportional to {{math|''e''<sup>''iS''/''ħ''</sup>}}, where {{mvar|S}} is the [[Action (physics)|action]] given by the [[time integral]] of the [[Lagrangian mechanics|Lagrangian]] along the path.
+
+In order to find the overall probability amplitude for a given process, then, one adds up, or [[integral|integrates]], the amplitude of the 3rd postulate over the space of ''all'' possible paths of the system in between the initial and final states, including those that are absurd by classical standards. In calculating the probability amplitude for a single particle to go from one space-time coordinate to another, it is correct to include paths in which the particle describes elaborate [[curlicues]], curves in which the particle shoots off into outer space and flies back again, and so forth. The '''path integral''' assigns to all these amplitudes ''equal weight'' but varying [[phase (waves)|phase]], or argument of the [[complex number]]. Contributions from paths wildly different from the classical trajectory may be suppressed by [[Interference (wave propagation)|interference]] (see below).
+
+Feynman showed that this formulation of quantum mechanics is equivalent to the [[Quantization (physics)|canonical approach to quantum mechanics]] when the Hamiltonian is at most quadratic in the momentum.  An amplitude computed according to Feynman's principles will also obey the [[Schrödinger equation]] for the [[Hamiltonian (quantum mechanics)|Hamiltonian]] corresponding to the given action.
+
+The path integral formulation of quantum field theory represents the [[transition amplitude]] (corresponding to the classical [[correlation function]]) as a weighted sum of all possible histories of the system from the initial to the final state. A [[Feynman diagram]] is a graphical representation of a [[perturbative]] contribution to the transition amplitude.
+
+== Path integral in quantum mechanics ==
+
+=== Time-slicing derivation ===
+{{main|Relation between Schrödinger%27s equation and the path integral formulation of quantum mechanics}}
+One common approach to deriving the path integral formula is to divide the time interval into small pieces. Once this is done, the [[Lie product formula|Trotter product formula]] tells us that the noncommutativity of the kinetic and potential energy operators can be ignored.
+
+For a particle in a smooth potential, the path integral is approximated by [[zigzag]] paths, which in one dimension is a product of ordinary integrals. For the motion of the particle from position {{mvar|x<sub>a</sub>}} at time {{mvar|t<sub>a</sub>}} to {{mvar|x<sub>b</sub>}} at time {{mvar|t<sub>b</sub>}}, the time sequence
+:<math>t_a = t_0 < t_1 < \cdots < t_{n-1} < t_n < t_{n+1} = t_b</math>
+can be divided up into {{math|''n'' + 1}} smaller segments {{math|''t<sub>j</sub>'' − ''t''<sub>''j'' − 1</sub>}}, where {{math|''j'' {{=}} 1, ..., ''n'' + 1}}, of fixed duration
+:<math>\varepsilon = \Delta t = \frac{t_b - t_a}{n + 1}.</math>
+
+This process is called ''time-slicing''.
+
+An approximation for the path integral can be computed as proportional to
+
+:<math>\int\limits_{-\infty}^{+\infty} \cdots \int\limits_{-\infty}^{+\infty}
+ \exp \left(\frac{i}{\hbar}\int_{t_a}^{t_b} L\big(x(t), v(t)\big) \,dt\right) \,dx_0 \, \cdots \, dx_n, </math>
+
+where {{math|''L''(''x'', ''v'')}} is the Lagrangian of the one-dimensional system with position variable {{math|''x''(''t'')}} and velocity {{math|''v'' {{=}} ''ẋ''(''t'')}} considered (see below), and {{mvar|dx<sub>j</sub>}} corresponds to the position at the {{mvar|j}}th time step, if the time integral is approximated by a sum of {{mvar|n}} terms.<ref group=nb>For a simplified, step-by-step derivation of the above relation, see [http://www.quantumfieldtheory.info/website_Chap18.pdf Path Integrals in Quantum Theories: A Pedagogic 1st Step].</ref>
+
+In the limit {{mvar|''n'' → ∞}}, this becomes a [[functional integral]], which, apart from a nonessential factor, is directly the product of the probability amplitudes {{math|{{bra-ket|''x<sub>b</sub>'', ''t<sub>b</sub>''|''x<sub>a</sub>'', ''t<sub>a</sub>''}}}} (more precisely, since one must work with a continuous spectrum, the respective densities) to find the quantum mechanical particle at {{mvar|t<sub>a</sub>}} in the initial state {{mvar|x<sub>a</sub>}} and at {{mvar|t<sub>b</sub>}} in the final state {{mvar|x<sub>b</sub>}}.
+
+Actually {{mvar|L}} is the classical [[Lagrangian mechanics|Lagrangian]] of the one-dimensional system considered,
+:<math> L(x, \dot x) = T-V=\frac{1}{2}m|\dot{x}|^2-V(x)</math>
+and the abovementioned "zigzagging" corresponds to the appearance of the terms
+
+:<math>\exp\left(\frac{i}{\hbar}\varepsilon \sum_{j=1}^{n+1} L \left(\tilde x_j, \frac{x_j - x_{j-1}}{\varepsilon}, j \right)\right)</math>
+
+in the [[Riemann sum]] approximating the time integral, which are finally integrated over {{math|''x''<sub>1</sub>}} to {{mvar|x<sub>n</sub>}} with the integration measure {{math|''dx''<sub>1</sub>...''dx<sub>n</sub>''}}, {{mvar|x̃<sub>j</sub>}} is an arbitrary value of the interval corresponding to {{mvar|j}}, e.g. its center, {{math|{{sfrac|''x<sub>j</sub>'' + ''x''<sub>''j''−1</sub>|2}}}}.
+
+Thus, in contrast to classical mechanics, not only does the stationary path contribute, but actually all virtual paths between the initial and the final point also contribute.
+
+===Path integral formula===
+
+In terms of the wave function in the position representation, the path integral formula reads as follows:
+:<math>\psi(x,t)=\frac{1}{Z}\int_{\mathbf{x}(0)=x}\mathcal{D}\mathbf{x}\, e^{iS[\mathbf{x},\dot{\mathbf{x}}]}\psi_0(\mathbf{x}(t))\,</math>
+where <math>\mathcal{D}\mathbf{x}</math> denotes integration over all paths <math>\mathbf{x}</math> with <math>\mathbf{x}(0)=x</math> and where <math>Z</math> is a normalization factor. Here <math>S</math> is the action, given by
+:<math>S[\mathbf{x},\dot\mathbf{x}]=\int dt\, L(\mathbf{x}(t),\dot\mathbf{x}(t))</math>
+
+[[File:Path integral example.webm|thumb|The diagram shows the contribution to the path integral of a free particle for a set of paths.]]
+
+=== Free particle ===
+
+The path integral representation gives the quantum amplitude to go from point {{mvar|x}} to point {{mvar|y}} as an integral over all paths. For a free-particle action (for simplicity let {{math|''m'' {{=}} 1}}, {{math|''ħ'' {{=}} 1}})
+:<math>S = \int \frac{\dot{x}^2}{2}\, dt,</math>
+
+the integral can be evaluated explicitly.
+
+To do this, it is convenient to start without the factor {{mvar|i}} in the exponential, so that large deviations are suppressed by small numbers, not by cancelling oscillatory contributions. The amplitude (or Kernel) reads:
+:<math>K(x - y; T) = \int_{x(0) = x}^{x(T) = y} \exp\left(-\int_0^T \frac{\dot{x}^2}{2} \,dt\right) \,Dx.</math>
+
+Splitting the integral into time slices:
+:<math>K(x, y; T) = \int_{x(0) = x}^{x(T) = y} \prod_t \exp\left(-\tfrac12 \left(\frac{x(t + \varepsilon) - x(t)}{\varepsilon}\right)^2 \varepsilon \right) \,Dx,</math>
+
+where the {{mvar|Dx}} is interpreted as a finite collection of integrations at each integer multiple of {{mvar|ε}}. Each factor in the product is a Gaussian as a function of {{math|''x''(''t'' + ''ε'')}} centered at {{math|''x''(''t'')}} with variance {{mvar|ε}}. The multiple integrals are a repeated [[convolution]] of this Gaussian {{mvar|G<sub>ε</sub>}} with copies of itself at adjacent times:
+:<math>K(x - y; T) = G_\varepsilon * G_\varepsilon * \cdots * G_\varepsilon,</math>
+
+where the number of convolutions is {{math|{{sfrac|''T''|''ε''}}}}. The result is easy to evaluate by taking the Fourier transform of both sides, so that the convolutions become multiplications:
+:<math>\tilde{K}(p; T) = \tilde{G}_\varepsilon(p)^{T/\varepsilon}.</math>
+
+The Fourier transform of the Gaussian {{mvar|G}} is another Gaussian of reciprocal variance:
+
+:<math>\tilde{G}_\varepsilon(p) = e^{-\frac{\varepsilon p^2}{2}},</math>
+
+and the result is
+:<math>\tilde{K}(p; T) = e^{-\frac{T p^2}{2}}.</math>
+
+The Fourier transform gives {{mvar|K}}, and it is a Gaussian again with reciprocal variance:
+:<math>K(x - y; T) \propto e^{ -\frac{(x - y)^2}{2T}}.</math>
+
+The proportionality constant is not really determined by the time-slicing approach, only the ratio of values for different endpoint choices is determined. The proportionality constant should be chosen to ensure that between each two time slices the time evolution is quantum-mechanically unitary, but a more illuminating way to fix the normalization is to consider the path integral as a description of a stochastic process.
+
+The result has a probability interpretation. The sum over all paths of the exponential factor can be seen as the sum over each path of the probability of selecting that path. The probability is the product over each segment of the probability of selecting that segment, so that each segment is probabilistically independently chosen. The fact that the answer is a Gaussian spreading linearly in time is the [[central limit theorem]], which can be interpreted as the first historical evaluation of a statistical path integral.
+
+The probability interpretation gives a natural normalization choice. The path integral should be defined so that
+:<math>\int K(x - y; T) \,dy = 1.</math>
+
+This condition normalizes the Gaussian and produces a kernel that obeys the diffusion equation:
+:<math>\frac{d}{dt} K(x; T) = \frac{\nabla^2}{2} K.</math>
+
+For oscillatory path integrals, ones with an {{mvar|i}} in the numerator, the time slicing produces convolved Gaussians, just as before. Now, however, the convolution product is marginally singular, since it requires careful limits to evaluate the oscillating integrals. To make the factors well defined, the easiest way is to add a small imaginary part to the time increment {{mvar|ε}}. This is closely related to [[Wick rotation]]. Then the same convolution argument as before gives the propagation kernel:
+:<math>K(x - y; T) \propto e^\frac{i(x - y)^2}{2T},</math>
+
+which, with the same normalization as before (not the sum-squares normalization – this function has a divergent norm), obeys a free Schrödinger equation:
+:<math>\frac{d}{dt} K(x; T) = i \frac{\nabla^2}{2} K.</math>
+
+This means that any superposition of {{mvar|K}}s will also obey the same equation, by linearity. Defining
+:<math>\psi_t(y) = \int \psi_0(x) K(x - y; t) \,dx = \int \psi_0(x) \int_{x(0) = x}^{x(t) = y} e^{iS} \,Dx,</math>
+
+then {{mvar|ψ<sub>t</sub>}} obeys the free Schrödinger equation just as {{mvar|K}} does:
+:<math>i\frac{\partial}{\partial t} \psi_t = -\frac{\nabla^2}{2} \psi_t.</math>
+
+=== Simple harmonic oscillator ===
+The Lagrangian for the simple harmonic oscillator is<ref>{{cite web |last1=Hilke |first1=M. |title=Introduction to path integrals |url=http://hitoshi.berkeley.edu/221A/pathintegral.pdf}}</ref>
+:<math>\mathcal{L} = \tfrac12 m \dot{x}^2 - \tfrac12 m \omega^2 x^2.</math>
+
+Write its trajectory {{math|''x''(''t'')}} as the classical trajectory plus some perturbation, {{math|''x''(''t'') {{=}} ''x''<sub>c</sub>(''t'') + ''δx''(''t'')}} and the action as {{math|''S'' {{=}} ''S''<sub>c</sub> + ''δS''}}. The classical trajectory can be written as
+
+:<math>x_\text{c}(t) = x_i \frac{\sin\omega(t_f - t)}{\sin\omega(t_f - t_i)} + x_f \frac{\sin\omega(t - t_i)}{\sin\omega(t_f - t_i)}.</math>
+
+
+This trajectory yields the classical action
+: <math>
+\begin{align}
+S_\text{c} & = \int_{t_i}^{t_f} \mathcal{L} \,dt = \int_{t_i}^{t_f} \left(\tfrac12 m\dot{x}^2 - \tfrac12 m\omega^2 x^2 \right) \,dt \\[6pt]
+& = \frac 1 2 m\omega \left( \frac{(x_i^2 + x_f^2) \cos\omega(t_f - t_i) - 2 x_i x_f}{\sin\omega(t_f - t_i)} \right)~.
+\end{align}
+</math>
+
+Next, expand the deviation from the classical path as a Fourier series, and calculate the contribution to the action {{mvar|δS}}, which gives
+:<math>S = S_\text{c} + \sum_{n = 1}^\infty \tfrac12 a_n^2 \frac{m}{2} \left( \frac{(n \pi)^2}{t_f - t_i} - \omega^2(t_f - t_i) \right).</math>
+
+This means that the propagator is
+: <math>
+\begin{align}
+K(x_f, t_f; x_i, t_i) & = Q e^\frac{i S_\text{c}}{\hbar} \prod_{j=1}^\infty \frac{j \pi}{\sqrt{2}} \int da_j \exp{\left( \frac{i}{2\hbar}a_j^2 \frac{m}{2} \left( \frac{(j \pi)^2}{t_f - t_i} - \omega^2(t_f - t_i) \right) \right)} \\[6pt]
+& = e^\frac{i S_\text{c}}{\hbar} Q \prod_{j=1}^\infty \left( 1 - \left( \frac{\omega(t_f - t_i)}{j \pi} \right)^2 \right)^{-\frac12}
+\end{align}
+</math>
+for some normalization
+:<math> Q = \sqrt{\frac{m}{2\pi i \hbar (t_f - t_i)}}~. </math>
+
+Using the infinite-product representation of the [[sinc function]],
+:<math>\prod_{j=1}^\infty \left( 1 - \frac{x^2}{j^2} \right) = \frac{\sin\pi x}{\pi x}, </math>
+the propagator can be written as
+:<math> K(x_f, t_f; x_i, t_i) = Q e^\frac{i S_\text{c}}{\hbar} \sqrt{ \frac{\omega(t_f - t_i)}{\sin\omega(t_f - t_i)} } = e^\frac{i S_c}{\hbar} \sqrt{ \frac{m\omega}{2\pi i \hbar \sin\omega(t_f - t_i)}}.</math>
+
+Let {{math|''T'' {{=}} ''t<sub>f</sub>'' − ''t<sub>i</sub>''}}.  One may write this propagator in terms of energy eigenstates as
+: <math>
+\begin{align}
+K(x_f, t_f; x_i, t_i) & = \left( \frac{m \omega}{2 \pi i \hbar \sin\omega T } \right)^\frac12 \exp{ \left( \frac{i}{\hbar} \tfrac12 m \omega  \frac{ (x_i^2 + x_f^2) \cos \omega T - 2 x_i x_f }{ \sin \omega T } \right) } \\[6pt]
+& = \sum_{n = 0}^\infty \exp{ \left( - \frac{i E_n T}{\hbar} \right) } \psi_n(x_f) \psi_n(x_i)^{*}~.
+\end{align}
+</math>
+
+Using the identities {{math|''i'' sin ''ωT'' {{=}} {{sfrac|1|2}}''e''<sup>''iωT''</sup> (1 − ''e''<sup>−2''iωT''</sup>)}} and {{math|cos ''ωT'' {{=}} {{sfrac|1|2}}''e''<sup>''iωT''</sup> (1 + ''e''<sup>−2''iωT''</sup>)}}, this amounts to
+:<math>K(x_f, t_f; x_i, t_i) = \left( \frac{m \omega}{\pi \hbar} \right)^\frac12 e^\frac{-i \omega T} 2 \left( 1 - e^{-2 i \omega T} \right)^{-\frac12} \exp{ \left( - \frac{m \omega}{2 \hbar} \left( \left(x_i^2 + x_f^2\right) \frac{ 1 + e^{-2 i \omega T} }{ 1 - e^{- 2 i \omega T}} - \frac{4 x_i x_f e^{-i \omega T}}{1 - e^{ - 2 i \omega T} }\right) \right) }.</math>
+
+One may absorb all terms after the first {{math|''e''<sup>−''iωT''/2</sup>}} into {{math|''R''(''T'')}}, thereby  obtaining
+:<math> K(x_f, t_f; x_i, t_i) = \left( \frac{m \omega}{\pi \hbar} \right)^\frac12 e^\frac{-i \omega T } 2 \cdot R(T).</math>
+
+One may  finally expand {{math|''R''(''T'')}} in  powers of {{math|''e''<sup>−''iωT''</sup>}}: All  terms in this expansion get multiplied by the {{math|''e''<sup>−''iωT''/2</sup>}} factor in the front,  yielding terms  of the form
+:<math>e^\frac{-i\omega T}{2} e^{-i n\omega T} = e^{-i \omega T \left( \frac12 + n\right) } \quad\text{for } n = 0, 1, 2, \ldots.</math>
+Comparison  to the above eigenstate expansion  yields the  standard energy spectrum for the simple harmonic oscillator,
+:<math>E_n = \left( n + \tfrac12 \right) \hbar \omega~.</math>
+
+{{see also|Propagator#Basic examples: propagator of free particle and harmonic oscillator| Mehler kernel}}
+
+===Coulomb potential===
+Feynman's time-sliced approximation does not, however, exist for the most important quantum-mechanical path integrals of atoms, due to the singularity of the [[Coulomb potential]] {{math|{{sfrac|''e''<sup>2</sup>|''r''}}}} at the origin. Only after replacing the time {{mvar|t}} by another path-dependent pseudo-time parameter
+:<math>s = \int \frac{dt}{r(t)}</math>
+the singularity is removed and a time-sliced approximation exists, which is exactly integrable, since it can be made harmonic by a simple coordinate transformation, as discovered in 1979 by [[İsmail Hakkı Duru]] and [[Hagen Kleinert]].<ref>{{harvnb|Duru|Kleinert|1979|loc=Chapter 13.}}</ref> The combination of a path-dependent time transformation and a coordinate transformation is an important tool to solve many path integrals and is called generically the [[Duru–Kleinert transformation]].
+
+=== The Schrödinger equation ===
+
+{{Main|Relation between Schrödinger's equation and the path integral formulation of quantum mechanics}}
+
+The path integral reproduces the Schrödinger equation for the initial and final state even when a potential is present. This is easiest to see by taking a path-integral over infinitesimally separated times.
+:<math>\psi(y;t+\varepsilon) = \int_{-\infty}^\infty \psi(x;t)\int_{x(t)=x}^{x(t+\varepsilon)=y} e^{i\int\limits_t^{t+\varepsilon} \left(\frac{\dot{x}^2}{2} - V(x)\right)\, dt}\, Dx(t) \, dx\qquad (1)</math>
+
+Since the time separation is infinitesimal and the cancelling oscillations become severe for large values of {{mvar|ẋ}}, the path integral has most weight for {{mvar|y}} close to {{mvar|x}}. In this case, to lowest order the potential energy is constant, and only the kinetic energy contribution is nontrivial. (This separation of the kinetic and potential energy terms in the exponent is essentially the [[Lie product formula|Trotter product formula]].) The exponential of the action is
+:<math>e^{-i\varepsilon V(x)} e^{i\frac{\dot{x}^2}{2}\varepsilon}</math>
+
+The first term rotates the phase of {{math|''ψ''(''x'')}} locally by an amount proportional to the potential energy. The second term is the free particle propagator, corresponding to {{mvar|i}} times a diffusion process. To lowest order in {{mvar|ε}} they are additive; in any case one has with (1):
+
+:<math>\psi(y;t+\varepsilon) \approx \int \psi(x;t) e^{-i\varepsilon V(x)} e^\frac{i(x-y)^2 }{ 2\varepsilon} \,dx\,.</math>
+
+As mentioned, the spread in {{mvar|ψ}} is diffusive from the free particle propagation, with an extra infinitesimal rotation in phase which slowly varies from point to point from the potential:
+:<math>\frac{\partial\psi}{\partial t} = i\cdot \left(\tfrac12\nabla^2 - V(x)\right)\psi\,</math>
+
+and this is the Schrödinger equation. The normalization of the path integral needs to be fixed in exactly the same way as in the free particle case. An arbitrary continuous potential does not affect the normalization, although singular potentials require careful treatment.
+
+=== Equations of motion ===
+
+Since the states obey the Schrödinger equation, the path integral must reproduce the Heisenberg equations of motion for the averages of {{mvar|x}} and  {{mvar|ẋ}} variables, but it is instructive to see this directly. The direct approach shows that the expectation values calculated from the path integral reproduce the usual ones of quantum mechanics.
+
+Start by considering the path integral with some fixed initial state
+:<math>\int \psi_0(x) \int_{x(0)=x} e^{iS(x,\dot{x})}\, Dx\,</math>
+
+Now {{mvar|''x''(''t'')}} at each separate time is a separate integration variable. So it is legitimate to change variables in the integral by shifting: {{math|''x''(''t'') {{=}} ''u''(''t'') + ''ε''(''t'')}} where {{math|''ε''(''t'')}} is a different shift at each time but {{math|''ε''(0) {{=}} ''ε''(''T'') {{=}} 0}}, since the endpoints are not integrated:
+:<math>\int \psi_0(x) \int_{u(0)=x} e^{iS(u+\varepsilon,\dot{u}+\dot{\varepsilon})}\, Du\,</math>
+
+The change in the integral from the shift is, to first infinitesimal order in {{mvar|ε}}:
+:<math>\int \psi_0(x) \int_{u(0)=x} \left( \int \frac{\partial S }{ \partial u } \varepsilon + \frac{ \partial S }{ \partial \dot{u} } \dot{\varepsilon}\, dt \right) e^{iS} \,Du\,</math>
+
+which, integrating by parts in {{mvar|t}}, gives:
+:<math>\int \psi_0(x) \int_{u(0)=x} -\left( \int \left(\frac{d}{dt} \frac{\partial S}{\partial \dot{u}} - \frac{\partial S}{\partial u}\right)\varepsilon(t)\, dt \right) e^{iS}\, Du\,</math>
+
+But this was just a shift of integration variables, which doesn't change the value of the integral for any choice of {{mvar|''ε''(''t'')}}. The conclusion is that this first order variation is zero for an arbitrary initial state and at any arbitrary point in time:
+:<math>\left\langle \psi_0\left| \frac{\delta S}{\delta x}(t) \right|\psi_0 \right\rangle = 0</math>
+this is the Heisenberg equation of motion.
+
+If the action contains terms which multiply {{mvar|ẋ}} and {{mvar|x}}, at the same moment in time, the manipulations above are only heuristic, because the multiplication rules for these quantities is just as noncommuting in the path integral as it is in the operator formalism.
+
+=== Stationary-phase approximation ===
+
+If the variation in the action exceeds {{mvar|ħ}} by many orders of magnitude, we typically have destructive interference other than in the vicinity of those trajectories satisfying the [[Euler–Lagrange equation]], which is now reinterpreted as the condition for constructive interference. This can be shown using the method of stationary phase applied to the propagator. As {{mvar|ħ}} decreases, the exponential in the integral oscillates rapidly in the complex domain for any change in the action. Thus, in the limit that {{mvar|ħ}} goes to zero, only points where the classical action does not vary contribute to the propagator.
+
+=== Canonical commutation relations ===
+
+The formulation of the path integral does not make it clear at first sight that the quantities {{mvar|x}} and {{mvar|p}} do not commute. In the path integral, these are just integration variables and they have no obvious ordering. Feynman discovered that the non-commutativity is still present.<ref>{{harvnb|Feynman|1948}}</ref>
+
+To see this, consider the simplest path integral, the brownian walk. This is not yet quantum mechanics, so in the path-integral the action is not multiplied by {{mvar|i}}:
+
+:<math>S=  \int \left( \frac{dx}{dt} \right)^2\, dt</math>
+
+The quantity {{mvar|''x''(''t'')}} is fluctuating, and the derivative is defined as the limit of a discrete difference.
+
+:<math>\frac{dx}{dt} = \frac{x(t+\varepsilon) - x(t)} \varepsilon </math>
+
+The distance that a random walk moves is proportional to {{math|{{sqrt|''t''}}}}, so that:
+:<math>x(t+\varepsilon) - x(t) \approx \sqrt{\varepsilon}</math>
+This shows that the random walk is not differentiable, since the ratio that defines the derivative diverges with probability one.
+
+The quantity {{mvar|xẋ}} is ambiguous, with two possible meanings:
+
+:<math>[1] = x \frac{dx}{dt}  = x(t) \frac{x(t+\varepsilon) - x(t) }{\varepsilon } </math>
+
+:<math>[2] = x \frac{dx}{dt} = x(t+\varepsilon) \frac{x(t+\varepsilon) - x(t) }{\varepsilon} </math>
+
+In elementary calculus, the two are only different by an amount which goes to 0 as {{mvar|ε}} goes to 0. But in this case, the difference between the two is not 0:
+
+:<math>[2] - [1] =  \frac{\big( x(t + \varepsilon) - x(t)\big )^2}{\varepsilon} \approx \frac \varepsilon \varepsilon</math>
+
+Let
+:<math>f(t) = \frac{\big(x(t+\varepsilon)- x(t)\big)^2 }{\varepsilon}</math>
+
+Then {{math|''f''(''t'')}} is a rapidly fluctuating statistical quantity, whose average value is 1, i.e. a normalized "Gaussian process". The fluctuations of such a quantity can be described by a statistical Lagrangian
+:<math>\mathcal L =  (f(t)-1)^2 \,,</math>
+and the equations of motion for {{mvar|f}} derived from extremizing the action {{mvar|S}} corresponding to {{mathcal|L}} just set it equal to 1. In physics, such a quantity is "equal to 1 as an operator identity". In mathematics, it "weakly converges to 1". In either case, it is 1 in any expectation value, or when averaged over any interval, or for all practical purpose.
+
+Defining the time order to ''be'' the operator order:
+:<math>[x, \dot x] = x \frac{dx}{dt} - \frac{dx}{dt} x = 1</math>
+
+This is called the [[Itō lemma]] in [[stochastic calculus]], and the (euclideanized) canonical commutation relations in physics.
+
+For a general statistical action, a similar argument shows that
+:<math>\left[x , \frac{\partial S }{ \partial \dot x} \right] = 1</math>
+and in quantum mechanics, the extra imaginary unit in the action converts this to the canonical commutation relation,
+:<math>[x,p ] = i</math>
+
+=== Particle in curved space ===
+
+For a particle in curved space the kinetic term depends on the position, and the above time slicing cannot be applied, this being a manifestation of the notorious [[operator ordering problem]] in Schrödinger quantum mechanics. One may, however, solve this problem by transforming the time-sliced flat-space path integral to curved space using a multivalued coordinate transformation ([[nonholonomic mapping]] explained [http://www.physik.fu-berlin.de/~kleinert/b5/psfiles/pthic10.pdf here]).
+
+=== Measure-theoretic factors ===
+Sometimes (e.g. a particle moving in curved space) we also have measure-theoretic factors in the functional integral:
+:<math>\int \mu[x] e^{iS[x]} \,\mathcal{D}x.</math>
+This factor is needed to restore unitarity.
+
+For instance, if
+:<math>S = \int \left( \frac{m}{2} g_{ij} \dot{x}^i \dot{x}^j - V(x) \right) \,dt,</math>
+then it means that each spatial slice is multiplied by the measure {{math|{{sqrt|''g''}}}}. This measure cannot be expressed as a functional multiplying the {{math|{{mathcal|D}}''x''}} measure because they belong to entirely different classes.
+
+=== Expectation values and matrix elements ===
+
+Matrix elements of the kind <math>\langle x_f|e^{-\frac{i}{\hbar}\hat{H}(t-t')} F(\hat{x}) e^{-\frac{i}{\hbar}\hat{H}(t')}|x_i\rangle</math> take the form
+
+:<math>\int_{x(0)=x_i}^{x(t)=x_f} \mathcal{D}[x] F(x(t')) e^{\frac{i}{\hbar}\int dt L(x(t),\dot{x}(t))}</math>.
+
+This generalizes to multiple operators, for example
+
+:<math>\langle x_f|e^{-\frac{i}{\hbar}\hat{H}(t-t_1)} F_1(\hat{x}) e^{-\frac{i}{\hbar}\hat{H}(t_1-t_2)} F_2(\hat{x}) e^{-\frac{i}{\hbar}\hat{H}(t_2)}|x_i\rangle =
+\int_{x(0)=x_i}^{x(t)=x_f} \mathcal{D}[x] F_1(x(t_1)) F_2(x(t_2)) e^{\frac{i}{\hbar}\int dt L(x(t),\dot{x}(t))}</math>,
+
+and to the general expectation value
+
+:<math>\langle F\rangle=\frac{\int \mathcal{D}[\phi] F(\phi) e^{\frac{i}{\hbar}S[\phi]}}{\int \mathcal{D}[\phi] e^{\frac{i}{\hbar}S[\phi]}}</math>.
+
+==Euclidean path integrals==
+It is very common in path integrals to perform a [[Wick rotation]] from real to imaginary times. In the setting of quantum field theory, the Wick rotation changes the geometry of space-time from Lorentzian to Euclidean; as a result, Wick-rotated path integrals are often called Euclidean path integrals.
+
+===Wick rotation and the Feynman–Kac formula===
+If we replace <math>t</math> by <math>-it</math>, the time-evolution operator <math>e^{-it\hat{H}/\hbar}</math> is replaced by <math>e^{-t\hat{H}/\hbar}</math>. (This change is known as a [[Wick rotation]].) If we repeat the derivation of the path-integral formula in this setting, we obtain<ref>{{harvnb|Hall|2013|loc=Section 20.3.}}</ref>
+:<math>\psi(x,t)=\frac{1}{Z}\int_{\mathbf{x}(0)=x} e^{-S_{\mathrm{Euclidean}}(\mathbf{x},\dot{\mathbf{x}})/\hbar}\psi_0(\mathbf{x}(t))\, \mathcal{D}\mathbf{x}\,</math>,
+where <math>S_{\mathrm{Euclidean}}</math> is the Euclidean action, given by
+:<math>S_{\mathrm{Euclidean}}(\mathbf{x},\dot{\mathbf{x}})=\int\left[ \frac{m}{2}|\dot\mathbf{x}(t)|^2+V(\mathbf{x}(t))\right] \,dt</math>.
+Note the sign change between this and the normal action, where the potential energy term is negative. (The term ''Euclidean'' is from the context of quantum field theory, where the change from real to imaginary time changes the space-time geometry from Lorentzian to Euclidean.)
+
+Now, the contribution of the kinetic energy to the path integral is as follows:
+:<math>\frac{1}{Z}\int_{\mathbf{x}(0)=x} f(\mathbf{x})e^{-\frac{m}{2}\int |\dot\mathbf{x}|^2dt}\, \mathcal{D}\mathbf{x}\,</math>
+where <math>f(\mathbf{x})</math> includes all the remaining dependence of the integrand on the path. This integral has a rigorous mathematical interpretation as integration against the [[Wiener process|Wiener measure]], denoted <math>\mu_{x}</math>. The Wiener measure, constructed by [[Norbert Wiener]] gives a rigorous foundation to [[Brownian motion#Einstein.27s theory|Einstein's mathematical model of Brownian motion]]. The subscript <math>x</math> indicates that the measure <math>\mu_x</math> is supported on paths <math>\mathbf{x}</math> with <math>\mathbf{x}(0)=x</math>.
+
+We then have a rigorous version of the Feynman path integral, known as the [[Feynman–Kac formula]]:<ref>{{harvnb|Hall|2013|loc=Theorem 20.3.}}</ref>
+
+:<math>\psi(x,t)=\int e^{-\int V(\mathbf{x}(t)\,dt/\hbar}\,\psi_0(\mathbf{x}(t)) \,d\mu_x(\mathbf{x})</math>,
+
+where now <math>\psi(x,t)</math> satisfies the Wick-rotated version of the Schrödinger equation,
+:<math>\hbar \frac{\partial}{\partial t}\psi(x,t) = -\hat H \psi(x,t)</math>.
+Although the Wick-rotated Schrödinger equation does not have a direct physical meaning, interesting properties of the Schrödinger operator <math>\hat{H}</math> can be extracted by studying it.<ref>{{harvnb|Simon|1979}}</ref>
+
+Much of the study of quantum field theories from the path-integral perspective, in both the mathematics and physics literatures, is done in the Euclidean setting, that is, after a Wick rotation. In particular, there are various results showing that if a Euclidean field theory with suitable properties can be constructed, one can then undo the Wick rotation to recover the physical, Lorentzian theory.<ref>{{harvnb|Glimm|Jaffe|1981|loc=Chapter 19.}}</ref> On the other hand, it is much more difficult to give a meaning to path integrals (even Euclidean path integrals) in quantum field theory than in quantum mechanics.<ref>For a brief account of the origins of these difficulties, see {{harvtxt|Hall|2013|loc=Section 20.6.}}</ref>
+
+=== The path integral and the partition function ===
+
+The path integral is just the generalization of the integral above to all quantum mechanical problems—
+:<math>Z = \int  e^\frac{i\mathcal{S}[\mathbf{x}]}{\hbar}\, \mathcal{D}\mathbf{x} \quad\text{where }\mathcal{S}[\mathbf{x}]=\int_0^T L[\mathbf{x}(t),\dot\mathbf{x}(t)]\, dt</math>
+is the [[action (physics)|action]] of the classical problem in which one investigates the path starting at time {{math|''t'' {{=}} 0}} and ending at time {{math|''t'' {{=}} ''T''}}, and <math>\mathcal{D}\mathbf{x}</math> denotes integration over all paths. In the classical limit, <math>\mathcal{S}[\mathbf{x}]\gg\hbar</math>, the path of minimum action dominates the integral, because the phase of any path away from this fluctuates rapidly and different contributions cancel.<ref name="Feynman-Hibbs">{{harvnb|Feynman|Hibbs|Styer|2010|pp=29–31}}</ref>
+
+The connection with [[statistical mechanics]] follows. Considering only paths which begin and end in the same configuration, perform the [[Wick rotation]] {{math|''it'' {{=}} ''τ''}}, i.e., make time imaginary, and integrate over all possible beginning-ending configurations. The Wick-rotated path integral—described in the previous subsection, with the ordinary action replaced by its "Euclidean" counterpart—now resembles the [[partition function (statistical mechanics)|partition function]] of statistical mechanics defined in a [[canonical ensemble]] with inverse temperature proportional to imaginary time, {{math|{{sfrac|1|''T''}} {{=}} {{sfrac|''k''<sub>B</sub>''τ''|''ħ''}}}}. Strictly speaking, though, this is the partition function for a [[statistical field theory]].
+
+Clearly, such a deep analogy between quantum mechanics and statistical mechanics cannot be dependent on the formulation. In the canonical formulation, one sees that the unitary evolution operator of a state is given by
+
+:<math>|\alpha;t\rangle=e^{-\frac{iHt}{\hbar}}|\alpha;0\rangle</math>
+
+where the state {{mvar|α}} is evolved from time {{math|''t'' {{=}} 0}}. If one makes a Wick rotation here, and finds the amplitude to go from any state, back to the same state in (imaginary) time {{mvar|iT}} is given by
+
+: <math>Z = \operatorname{Tr} \left[e^\frac{-HT}{\hbar}\right]</math>
+
+which is precisely the partition function of statistical mechanics for the same system at temperature quoted earlier. One aspect of this equivalence was also known to [[Erwin Schrödinger]] who remarked that the equation named after him looked like the [[diffusion equation]] after Wick rotation. Note, however, that the Euclidean path integral is actually in the form of a ''classical'' statistical mechanics model.
+
+== Quantum field theory ==
+{{Quantum field theory}}
+Both the Schrödinger and Heisenberg approaches to quantum mechanics single out time and are not in the spirit of relativity. For example, the Heisenberg approach requires that scalar field operators obey the commutation relation
+
+:<math>[\varphi(x), \partial_t \varphi(y)] = i \delta^3(x - y)</math>
+
+for two simultaneous spatial positions {{mvar|x}} and {{mvar|y}}, and this is not a relativistically invariant concept. The results of a calculation ''are'' covariant, but the symmetry is not apparent in intermediate stages. If naive field-theory calculations did not produce infinite answers in the continuum limit, this would not have been such a big problem – it would just have been a bad choice of coordinates. But the lack of symmetry means that the infinite quantities must be cut off, and the bad coordinates make it nearly impossible to cut off the theory without spoiling the symmetry. This makes it difficult to extract the physical predictions, which require a [[renormalization|careful limiting procedure]].
+
+The problem of lost symmetry also appears in classical mechanics, where the Hamiltonian formulation also superficially singles out time. The Lagrangian formulation makes the relativistic invariance apparent. In the same way, the path integral is manifestly relativistic. It reproduces the Schrödinger equation, the Heisenberg equations of motion, and the canonical commutation relations and shows that they are compatible with relativity. It extends the Heisenberg-type operator algebra to [[operator product expansion|operator product rules]], which are new relations difficult to see in the old formalism.
+
+Further, different choices of canonical variables lead to very different-seeming formulations of the same theory. The transformations between the variables can be very complicated, but the path integral makes them into reasonably straightforward changes of integration variables. For these reasons, the Feynman path integral has made earlier formalisms largely obsolete.
+
+The price of a path integral representation is that the unitarity of a theory is no longer self-evident, but it can be proven by changing variables to some canonical representation. The path integral itself also deals with larger mathematical spaces than is usual, which requires more careful mathematics, not all of which has been fully worked out. The path integral historically was not immediately accepted, partly because it took many years to incorporate fermions properly. This required physicists to invent an entirely new mathematical object – the [[Grassmann variable]] – which also allowed changes of variables to be done naturally, as well as allowing [[Faddeev–Popov ghost|constrained quantization]].
+
+The integration variables in the path integral are subtly non-commuting. The value of the product of two field operators at what looks like the same point depends on how the two points are ordered in space and time. This makes some naive identities [[Anomaly (physics)|fail]].
+
+=== The propagator ===
+
+In relativistic theories, there is both a particle and field representation for every theory. The field representation is a sum over all field configurations, and the particle representation is a sum over different particle paths.
+
+The nonrelativistic formulation is traditionally given in terms of particle paths, not fields. There, the path integral in the usual variables, with fixed boundary conditions, gives the probability amplitude for a particle to go from point {{mvar|x}} to point {{mvar|y}} in time {{mvar|T}}:
+
+:<math>K(x, y; T) = \langle y; T \mid x; 0 \rangle = \int_{x(0)=x}^{x(T)=y} e^{i S[x]} \,Dx.</math>
+
+This is called the [[propagator]]. Superposing different values of the initial position {{mvar|x}} with an arbitrary initial state {{math|''ψ''<sub>0</sub>(''x'')}} constructs the final state:
+:<math>\psi_T(y) = \int_x \psi_0(x) K(x, y; T) \,dx = \int^{x(T)=y} \psi_0(x(0)) e^{i S[x]} \,Dx.</math>
+
+For a spatially homogeneous system, where {{math|''K''(''x'', ''y'')}} is only a function of {{math|(''x'' − ''y'')}}, the integral is a [[convolution]], the final state is the initial state convolved with the propagator:
+:<math>\psi_T = \psi_0 * K(;T).</math>
+
+For a free particle of mass {{mvar|m}}, the propagator can be evaluated either explicitly from the path integral or by noting that the Schrödinger equation is a diffusion equation in imaginary time, and the solution must be a normalized Gaussian:
+:<math>K(x, y; T) \propto e^\frac{i m(x - y)^2}{2T}.</math>
+
+Taking the Fourier transform in {{math|(''x'' − ''y'')}} produces another Gaussian:
+
+:<math>K(p; T) = e^\frac{i T p^2}{2m},</math>
+
+and in {{mvar|p}}-space the proportionality factor here is constant in time, as will be verified in a moment. The Fourier transform in time, extending {{math|''K''(''p''; ''T'')}} to be zero for negative times, gives Green's function, or the frequency-space propagator:
+:<math>G_\text{F}(p, E) = \frac{-i}{E - \frac{\vec{p}^2}{2m} + i\varepsilon},</math>
+
+which is the reciprocal of the operator that annihilates the wavefunction in the Schrödinger equation, which wouldn't have come out right if the proportionality factor weren't constant in the {{mvar|p}}-space representation.
+
+The infinitesimal term in the denominator is a small positive number, which guarantees that the inverse Fourier transform in {{mvar|E}} will be nonzero only for future times. For past times, the inverse Fourier transform contour closes toward values of {{mvar|E}} where there is no singularity. This guarantees that {{mvar|K}} propagates the particle into the future and is the reason for the subscript "F" on {{mvar|G}}. The infinitesimal term can be interpreted as an infinitesimal rotation toward imaginary time.
+
+It is also possible to reexpress the nonrelativistic time evolution in terms of propagators going toward the past, since the Schrödinger equation is time-reversible. The past propagator is the same as the future propagator except for the obvious difference that it vanishes in the future, and in the Gaussian {{mvar|t}} is replaced by {{math|−''t''}}. In this case, the interpretation is that these are the quantities to convolve the final wavefunction so as to get the initial wavefunction:
+:<math>G_\text{B}(p, E) = \frac{-i}{-E - \frac{i\vec{p}^2}{2m} + i\varepsilon}.</math>
+Given the nearly identical only change is the sign of {{mvar|E}} and {{mvar|ε}}, the parameter {{mvar|E}} in Green's function can either be the energy if the paths are going toward the future, or the negative of the energy if the paths are going toward the past.
+
+For a nonrelativistic theory, the time as measured along the path of a moving particle and the time as measured by an outside observer are the same. In relativity, this is no longer true. For a relativistic theory the propagator should be defined as the sum over all paths that travel between two points in a fixed proper time, as measured along the path (these paths describe the trajectory of a particle in space and in time):
+
+:<math>K(x - y, \Tau) = \int_{x(0)=x}^{x(\Tau)=y} e^{i \int_0^\Tau \sqrt{{\dot x}^2} - \alpha \,d\tau}.</math>
+
+The integral above is not trivial to interpret because of the square root. Fortunately, there is a heuristic trick. The sum is over the relativistic arc length of the path of an oscillating quantity, and like the nonrelativistic path integral should be interpreted as slightly rotated into imaginary time. The function {{math|''K''(''x'' − ''y'', ''τ'')}} can be evaluated when the sum is over paths in Euclidean space:
+:<math>K(x - y, \Tau) = e^{-\alpha \Tau} \int_{x(0)=x}^{x(\Tau)=y} e^{-L}.</math>
+
+This describes a sum over all paths of length {{math|Τ}} of the exponential of minus the length. This can be given a probability interpretation. The sum over all paths is a probability average over a path constructed step by step. The total number of steps is proportional to {{math|Τ}}, and each step is less likely the longer it is. By the [[central limit theorem]], the result of many independent steps is a Gaussian of variance proportional to {{math|Τ}}:
+:<math>K(x - y,\Tau) = e^{-\alpha \Tau} e^{-\frac{(x - y)^2}{\Tau}}.</math>
+
+The usual definition of the relativistic propagator only asks for the amplitude is to travel from {{mvar|x}} to {{mvar|y}}, after summing over all the possible proper times it could take:
+:<math>K(x - y) = \int_0^\infty K(x - y, \Tau) W(\Tau) \,d\Tau,</math>
+where {{math|''W''(Τ)}} is a weight factor, the relative importance of paths of different proper time. By the translation symmetry in proper time, this weight can only be an exponential factor and can be absorbed into the constant {{mvar|α}}:
+:<math>K(x - y) = \int_0^\infty e^{-\frac{(x - y)^2}{\Tau} -\alpha \Tau} \,d\Tau.</math>
+
+This is the [[Feynman diagram#Schwinger representation|Schwinger representation]]. Taking a Fourier transform over the variable {{math|(''x'' − ''y'')}} can be done for each value of {{math|Τ}} separately, and because each separate {{math|Τ}} contribution is a Gaussian, gives whose Fourier transform is another Gaussian with reciprocal width. So in {{mvar|p}}-space, the propagator can be reexpressed simply:
+:<math>K(p) = \int_0^\infty e^{-\Tau p^2 - \Tau \alpha} \,d\Tau = \frac{1}{p^2 + \alpha},</math>
+
+which is the Euclidean propagator for a scalar particle. Rotating {{math|''p''<sub>0</sub>}} to be imaginary gives the usual relativistic propagator, up to a factor of {{math|−''i''}} and an ambiguity, which will be clarified below:
+:<math>K(p) = \frac{i}{p_0^2 - \vec{p}^2 - m^2}.</math>
+
+This expression can be interpreted in the nonrelativistic limit, where it is convenient to split it by [[partial fractions]]:
+
+:<math>2 p_0 K(p) = \frac{i}{p_0 - \sqrt{\vec{p}^2 + m^2}} + \frac{i}{p_0 + \sqrt{\vec{p}^2 + m^2}}.</math>
+
+For states where one nonrelativistic particle is present, the initial wavefunction has a frequency distribution concentrated near {{math|''p''<sub>0</sub> {{=}} ''m''}}. When convolving with the propagator, which in {{mvar|p}} space just means multiplying by the propagator, the second term is suppressed and the first term is enhanced. For frequencies near {{math|''p''<sub>0</sub> {{=}} ''m''}}, the dominant first term has the form
+
+:<math>2m K_\text{NR}(p) = \frac{i}{(p_0 - m) - \frac{\vec{p}^2}{2m}}.</math>
+
+This is the expression for the nonrelativistic [[Green's function]] of a free Schrödinger particle.
+
+The second term has a nonrelativistic limit also, but this limit is concentrated on frequencies that are negative. The second pole is dominated by contributions from paths where the proper time and the coordinate time are ticking in an opposite sense, which means that the second term is to be interpreted as the antiparticle. The nonrelativistic analysis shows that with this form the antiparticle still has positive energy.
+
+The proper way to express this mathematically is that, adding a small suppression factor in proper time, the limit where {{math|''t'' → −∞}} of the first term must vanish, while the {{math|''t'' → +∞}} limit of the second term must vanish. In the Fourier transform, this means shifting the pole in {{math|''p''<sub>0</sub>}} slightly, so that the inverse Fourier transform will pick up a small decay factor in one of the time directions:
+
+:<math>K(p) = \frac{i}{p_0 - \sqrt{\vec{p}^2 + m^2} + i\varepsilon} + \frac{i}{p_0 - \sqrt{\vec{p}^2+m^2} - i\varepsilon}.</math>
+
+Without these terms, the pole contribution could not be unambiguously evaluated when taking the inverse Fourier transform of {{math|''p''<sub>0</sub>}}. The terms can be recombined:
+
+:<math>K(p) = \frac{i}{p^2 - m^2 + i\varepsilon},</math>
+
+which when factored, produces opposite-sign infinitesimal terms in each factor. This is the mathematically precise form of the relativistic particle propagator, free of any ambiguities. The {{mvar|ε}} term introduces a small imaginary part to the {{math|''α'' {{=}} ''m''<sup>2</sup>}}, which in the Minkowski version is a small exponential suppression of long paths.
+
+So in the relativistic case, the Feynman path-integral representation of the propagator includes paths going backwards in time, which describe antiparticles. The paths that contribute to the relativistic propagator go forward and backwards in time, and the [[Feynman–Stueckelberg interpretation|interpretation]] of this is that the amplitude for a free particle to travel between two points includes amplitudes for the particle to fluctuate into an antiparticle, travel back in time, then forward again.
+
+Unlike the nonrelativistic case, it is impossible to produce a relativistic theory of local particle propagation without including antiparticles. All local differential operators have inverses that are nonzero outside the light cone, meaning that it is impossible to keep a particle from travelling faster than light. Such a particle cannot have a Green's function which is only nonzero in the future in a relativistically invariant theory.
+
+=== Functionals of fields ===
+
+However, the path integral formulation is also extremely important in ''direct'' application to quantum field theory, in which the "paths" or histories being considered are not the motions of a single particle, but the possible time evolutions of a [[field (physics)|field]] over all space.  The action is referred to technically as a [[functional (mathematics)|functional]] of the field: {{math|''S''[''ϕ'']}}, where the field {{math|''ϕ''(''x<sup>μ</sup>'')}} is itself a function of space and time, and the square brackets are a reminder that the action depends on all the field's values everywhere, not just some particular value. ''One'' such given function {{math|''ϕ''(''x<sup>μ</sup>'')}} of [[spacetime]] is called a ''field configuration''. In principle, one integrates Feynman's amplitude over the class of all possible field configurations.
+
+Much of the formal study of QFT is devoted to the properties of the resulting functional integral, and much effort (not yet entirely successful) has been made toward making these [[functional integral]]s mathematically precise.
+
+Such a functional integral is extremely similar to the [[partition function (statistical mechanics)|partition function]] in [[statistical mechanics]].  Indeed, it is sometimes ''called'' a [[partition function (quantum field theory)|partition function]], and the two are essentially mathematically identical except for the factor of {{mvar|i}} in the exponent in Feynman's postulate 3. [[Analytic continuation|Analytically continuing]] the integral to an imaginary time variable (called a [[Wick rotation]]) makes the functional integral even more like a statistical partition function and also tames some of the mathematical difficulties of working with these integrals.
+
+=== Expectation values ===
+
+In [[quantum field theory]], if the [[action (physics)|action]] is given by the [[functional (mathematics)|functional]] {{mathcal|S}} of field configurations (which only depends locally on the fields), then the [[time-ordered]] [[vacuum expectation value]] of [[polynomially bounded]] functional {{mvar|F}}, {{math|{{angbr|''F''}}}}, is given by
+
+:<math>\langle F \rangle = \frac{\int\mathcal{D}\varphi F[\varphi]e^{i\mathcal{S}[\varphi]}}{\int\mathcal{D}\varphi e^{i\mathcal{S}[\varphi]}}.</math>
+
+The symbol {{math|∫{{mathcal|D}}''ϕ''}} here is a concise way to represent the infinite-dimensional integral over all possible field configurations on all of space-time. As stated above, the unadorned path integral in the denominator ensures proper normalization.
+
+=== As a probability ===
+Strictly speaking, the only question that can be asked in physics is: ''What fraction of states satisfying condition {{mvar|A}} also satisfy condition {{mvar|B}}?'' The answer to this is a number between 0 and 1, which can be interpreted as a [[conditional probability]], written as {{math|P(''B''{{!}}''A'')}}. In terms of path integration, since {{math|P(''B''{{!}}''A'') {{=}} {{sfrac|P(''A''∩''B'')&nbsp;|&nbsp;P(''A'')}}}}, this means
+
+:<math>\operatorname{P}(B\mid A) = \frac
+{\sum_{F \subset A \cap B}\left| \int\mathcal{D}\varphi O_\text{in}[\varphi]e^{i\mathcal{S}[\varphi]}  F[\varphi]\right|^2}
+{\sum_{F \subset A} \left|\int\mathcal{D}\varphi O_\text{in}[\varphi] e^{i\mathcal{S}[\varphi]} F[\varphi]\right|^2},</math>
+
+where the functional {{math|''O''<sub>in</sub>[''ϕ'']}} is the superposition of all incoming states that could lead to the states we are interested in. In particular, this could be a state corresponding to the state of the Universe just after the [[Big Bang]], although for actual calculation this can be simplified using heuristic methods. Since this expression is a quotient of path integrals, it is naturally normalised.
+
+=== Schwinger–Dyson equations ===
+{{Main|Schwinger–Dyson equation}}
+
+Since this formulation of quantum mechanics is analogous to classical action principle, one might expect that identities concerning the action in classical mechanics would have quantum counterparts derivable from a functional integral. This is often the case.
+
+In the language of functional analysis, we can write the [[Euler–Lagrange equation]]s as
+:<math>\frac{\delta \mathcal{S}[\varphi]}{\delta \varphi} = 0</math>
+(the left-hand side is a [[functional derivative]]; the equation means that the action is stationary under small changes in the field configuration).  The quantum analogues of these equations are called the [[Schwinger–Dyson equation]]s.
+
+If the [[functional measure]] {{math|{{mathcal|D}}''ϕ''}} turns out to be [[Translational symmetry|translationally invariant]] (we'll assume this for the rest of this article, although this does not hold for, let's say [[nonlinear sigma model]]s), and if we assume that after a [[Wick rotation]]
+
+:<math>e^{i\mathcal{S}[\varphi]},</math>
+
+which now becomes
+:<math>e^{-H[\varphi]}</math>
+for some {{mvar|H}}, it goes to zero faster than a [[Multiplicative inverse|reciprocal]] of any [[polynomial]] for large values of {{mvar|φ}}, then we can [[integration by parts|integrate by parts]] (after a Wick rotation, followed by a Wick rotation back) to get the following Schwinger–Dyson equations for the expectation:
+
+:<math>\left\langle \frac{\delta F[\varphi]}{\delta \varphi} \right\rangle = -i \left\langle F[\varphi]\frac{\delta \mathcal{S}[\varphi]}{\delta\varphi} \right\rangle</math>
+
+for any polynomially-bounded functional {{mvar|F}}. In the [[deWitt notation]] this looks like<ref>[http://www.scholarpedia.org/Path_integral Jean Zinn-Justin (2009), ''Scholarpedia'' '''4'''(2):8674 ].</ref>
+:<math>\left\langle F_{,i} \right\rangle = -i \left\langle F \mathcal{S}_{,i} \right\rangle.</math>
+
+These equations are the analog of the [[on-shell]] EL equations. The time ordering is taken before the time derivatives inside the {{math|{{mathcal|S}}<sub>,''i''</sub>}}.
+
+If {{mvar|J}} (called the [[source field]]) is an element of the [[dual space]] of the field configurations (which has at least an [[affine structure]] because of the assumption of the [[translational invariance]] for the functional measure), then the [[generating functional]] {{mvar|Z}} of the source fields is '''defined''' to be
+
+:<math>Z[J] = \int \mathcal{D}\varphi e^{i\left(\mathcal{S}[\varphi] + \langle J,\varphi \rangle\right)}.</math>
+
+Note that
+
+:<math>\frac{\delta^n Z}{\delta J(x_1) \cdots \delta J(x_n)}[J] = i^n \, Z[J] \, \left\langle \varphi(x_1)\cdots \varphi(x_n)\right\rangle_J,</math>
+
+or
+
+:<math>Z^{,i_1\cdots i_n}[J] = i^n Z[J] \left \langle \varphi^{i_1}\cdots \varphi^{i_n}\right\rangle_J,</math>
+
+where
+
+:<math>\langle F \rangle_J = \frac{\int \mathcal{D}\varphi F[\varphi]e^{i\left(\mathcal{S}[\varphi] + \langle J,\varphi \rangle\right)}}{\int\mathcal{D}\varphi e^{i\left(\mathcal{S}[\varphi] + \langle J,\varphi \rangle\right)}}.</math>
+
+Basically, if {{math|{{mathcal|D}}''φ'' ''e''<sup>''i''{{mathcal|S}}[''φ'']</sup>}} is viewed as a functional distribution (this shouldn't be taken too literally as an interpretation of [[Quantum field theory|QFT]], unlike its Wick-rotated [[statistical mechanics]] analogue, because we have [[time ordering]] complications here!), then {{math|{{angbr|''φ''(''x''<sub>1</sub>) ... ''φ''(''x<sub>n</sub>'')}}}} are its [[moment (mathematics)|moments]], and {{mvar|Z}} is its [[Fourier transform]].
+
+If {{mvar|F}} is a functional of {{mvar|φ}}, then for an [[Operator (mathematics)|operator]] {{mvar|K}}, {{math|''F''[''K'']}} is defined to be the operator that substitutes {{mvar|K}} for {{mvar|φ}}. For example, if
+
+:<math>F[\varphi] = \frac{\partial^{k_1}}{\partial x_1^{k_1}}\varphi(x_1)\cdots \frac{\partial^{k_n}}{\partial x_n^{k_n}}\varphi(x_n),</math>
+
+and {{mvar|G}} is a functional of {{mvar|J}}, then
+
+:<math>F\left[-i\frac{\delta}{\delta J}\right] G[J] = (-i)^n \frac{\partial^{k_1}}{\partial x_1^{k_1}}\frac{\delta}{\delta J(x_1)} \cdots \frac{\partial^{k_n}}{\partial x_n^{k_n}}\frac{\delta}{\delta J(x_n)} G[J].</math>
+
+Then, from the properties of the [[functional integral]]s
+
+:<math>\left \langle \frac{\delta \mathcal{S}}{\delta \varphi(x)} [\varphi] + J(x)\right\rangle_J = 0</math>
+
+we get the "master" Schwinger–Dyson equation:
+
+:<math>\frac{\delta \mathcal{S}}{\delta \varphi(x)}\left[-i \frac{\delta}{\delta J}\right]Z[J] + J(x)Z[J] = 0,</math>
+
+or
+
+:<math>\mathcal{S}_{,i}[-i\partial]Z + J_i Z = 0.</math>
+
+If the functional measure is not translationally invariant, it might be possible to express it as the product {{math|''M''[''φ''] {{mathcal|D}}''φ''}}, where {{mvar|M}} is a functional and {{math|{{mathcal|D}}''φ''}} is a translationally invariant measure. This is true, for example, for nonlinear sigma models where the [[target space]] is diffeomorphic to {{math|'''R'''<sup>''n''</sup>}}. However, if the [[target manifold]] is some topologically nontrivial space, the concept of a translation does not even make any sense.
+
+In that case, we would have to replace the {{mathcal|S}} in this equation by another functional
+:<math>\hat{\mathcal{S}} = \mathcal{S} - i\ln M.</math>
+
+If we expand this equation as a [[Taylor series]] about ''J'' {{=}} 0, we get the entire set of Schwinger–Dyson equations.
+
+== Localization ==
+The path integrals are usually thought of as being the sum of all paths through an infinite space–time. However, in [[local quantum field theory]] we would restrict everything to lie within a finite ''causally complete'' region, for example inside a double light-cone. This gives a more mathematically precise and physically rigorous definition of quantum field theory.
+
+=== Ward–Takahashi identities ===
+{{main|Ward–Takahashi identity}}
+
+Now how about the [[on shell]] [[Noether's theorem]] for the classical case? Does it have a quantum analog as well? Yes, but with a caveat. The functional measure would have to be invariant under the one parameter group of symmetry transformation as well.
+
+Let's just assume for simplicity here that the symmetry in question is local (not local in the sense of a [[gauge symmetry]], but in the sense that the transformed value of the field at any given point under an infinitesimal transformation would only depend on the field configuration over an arbitrarily small neighborhood of the point in question). Let's also assume that the action is local in the sense that it is the integral over spacetime of a [[Lagrangian (field theory)|Lagrangian]], and that
+:<math>Q[\mathcal{L}(x)]=\partial_\mu f^\mu (x)</math>
+for some function {{mvar|f}} where {{mvar|f}} only depends locally on {{mvar|φ}} (and possibly the spacetime position).
+
+If we don't assume any special boundary conditions, this would not be a "true" symmetry in the true sense of the term in general unless {{math|''f'' {{=}} 0}} or something. Here, {{mvar|Q}} is a [[Derivation (abstract algebra)|derivation]] which generates the one parameter group in question. We could have [[antiderivation]]s as well, such as [[BRST quantization|BRST]] and [[supersymmetry]].
+
+Let's also assume
+:<math>\int \mathcal{D}\varphi\, Q[F][\varphi]=0</math>
+for any polynomially-bounded functional {{mvar|F}}. This property is called the invariance of the measure. And this does not hold in general. See [[anomaly (physics)]] for more details.
+
+Then,
+:<math>\int \mathcal{D}\varphi\, Q\left[F e^{iS}\right][\varphi]=0,</math>
+
+which implies
+:<math>\langle Q[F]\rangle +i\left\langle F\int_{\partial V} f^\mu\, ds_\mu\right\rangle=0</math>
+
+where the integral is over the boundary. This is the quantum analog of Noether's theorem.
+
+Now, let's assume even further that {{mvar|Q}} is a local integral
+
+:<math>Q=\int d^dx\, q(x)</math>
+
+where
+
+:<math>q(x)[\varphi(y)] = \delta^{(d)}(X-y)Q[\varphi(y)] \,</math>
+
+so that
+
+:<math>q(x)[S]=\partial_\mu j^\mu (x) \,</math>
+
+where
+
+:<math>j^{\mu}(x)=f^\mu(x)-\frac{\partial}{\partial (\partial_\mu \varphi)}\mathcal{L}(x) Q[\varphi] \,</math>
+
+(this is assuming the Lagrangian only depends on {{mvar|φ}} and its first partial derivatives! More general Lagrangians would require a modification to this definition!). We're not insisting that {{math|''q''(''x'')}} is the generator of a symmetry (i.e. we are ''not'' insisting upon the [[gauge principle]]), but just that {{mvar|Q}} is.  And we also assume the even stronger assumption that the functional measure is locally invariant:
+
+:<math>\int \mathcal{D}\varphi\, q(x)[F][\varphi]=0.</math>
+
+Then, we would have
+
+:<math>\langle q(x)[F] \rangle +i\langle F q(x)[S]\rangle=\langle q(x)[F]\rangle +i\left\langle F\partial_\mu j^\mu(x)\right\rangle=0.</math>
+
+Alternatively,
+
+:<math>q(x)[S]\left[-i \frac{\delta}{\delta J}\right]Z[J]+J(x)Q[\varphi(x)]\left[-i \frac{\delta}{\delta J}\right]Z[J]=\partial_\mu j^\mu(x)\left[-i \frac{\delta}{\delta J}\right]Z[J]+J(x)Q[\varphi(x)]\left[-i \frac{\delta}{\delta J}\right]Z[J]=0.</math>
+
+The above two equations are the '''Ward–Takahashi identities'''.
+
+Now for the case where {{math|''f'' {{=}} 0}}, we can forget about all the boundary conditions and locality assumptions. We'd simply have
+
+:<math>\left\langle Q[F]\right\rangle =0.</math>
+
+Alternatively,
+
+:<math>\int d^dx\, J(x)Q[\varphi(x)]\left[-i \frac{\delta}{\delta J}\right]Z[J]=0.</math>
+
+== Caveats ==
+
+=== The need for regulators and renormalization ===
+
+Path integrals as they are defined here require the introduction of [[Regularization (physics)|regulators]]. Changing the scale of the regulator leads to the [[renormalization group]]. In fact, renormalization is the major obstruction to making path integrals well-defined.
+
+=== Ordering prescription ===
+
+Regardless of whether one works in configuration space or phase space, when equating the [[Mathematical formulation of quantum mechanics|operator formalism]] and the path integral formulation, an ordering prescription is required to resolve the ambiguity in the correspondence between non-commutative operators and the commutative functions that appear in path integrands.  For example, the operator <math>\frac{1}{2}(\hat{q}\hat{p}+\hat{p}\hat{q})</math> can be translated back as either <math>qp-\frac{i\hbar}{2}</math>, <math>qp+\frac{i\hbar}{2}</math>, or <math>qp</math> depending of whether one chooses the <math>\hat{q}\hat{p}</math>, <math>\hat{p}\hat{q}</math>, or Weyl ordering prescription; conversely, <math>qp</math> can be translated to either <math>\hat{q}\hat{p}</math>, <math>\hat{p}\hat{q}</math>, or <math>\frac{1}{2}(\hat{q}\hat{p}+\hat{p}\hat{q})</math> for the same respective choice of ordering prescription.
+
+== The path integral in quantum-mechanical interpretation ==
+
+In one [[interpretation of quantum mechanics]], the "sum over histories" interpretation, the path integral is taken to be fundamental, and reality is viewed as a single indistinguishable "class" of paths that all share the same events.  For this interpretation, it is crucial to understand what exactly an event is. The sum-over-histories method gives identical results to canonical quantum mechanics, and Sinha and Sorkin<ref>{{harvnb|Sinha|Sorkin|1991}}</ref> claim the interpretation explains the [[Einstein–Podolsky–Rosen paradox]] without resorting to [[action at a distance|nonlocality]].
+
+Some{{who|date=August 2014}} advocates of interpretations of quantum mechanics emphasizing [[decoherence]] have attempted to make more rigorous the notion of extracting a classical-like "coarse-grained" history from the space of all possible histories.
+
+== Quantum gravity ==
+Whereas in quantum mechanics the path integral formulation is fully equivalent to other formulations, it may be that it can be extended to quantum gravity, which would make it different from the [[Hilbert space]] model. Feynman had some success in this direction, and his work has been extended by [[Stephen Hawking|Hawking]] and others.<ref>{{harvnb|Gell-Mann|1993}}</ref> Approaches that use this method include [[causal dynamical triangulation]]s and [[spinfoam]] models.
+
+== Quantum tunneling ==
+[[Quantum tunnelling]] can be modeled by using the path integral formation to determine the action of the trajectory through a potential barrier. Using the [[WKB approximation]], the tunneling rate ({{math|Γ}}) can be determined to be of the form
+
+:<math> \Gamma = A_\mathrm{o} \exp \left(-\frac{S_\mathrm{eff}}{\hbar}\right) </math>
+
+with the effective action {{math|''S''<sub>eff</sub>}} and pre-exponential factor {{math|''A''<sub>o</sub>}}. This form is specifically useful in a [[dissipative system]], in which the systems and surroundings must be modeled together. Using the [[Langevin equation]] to model [[Brownian motion]], the path integral formation can be used to determine an effective action and pre-exponential model to see the effect of dissipation on tunnelling.<ref>{{harvnb|Caldeira|Leggett|1983}}</ref> From this model, tunneling rates of macroscopic systems (at finite temperatures) can be predicted.
+
+== See also ==
+* [[Theoretical and experimental justification for the Schrödinger equation]]
+* [[Static forces and virtual-particle exchange]]
+* [[Feynman checkerboard]]
+* [[Berezin integral]]
+* [[Propagator]]s
+* [[Wheeler–Feynman absorber theory]]
+* [[Feynman–Kac formula]]
+
+== Remarks ==
+{{Reflist|group=nb}}
+
+== Notes ==
+{{Reflist|2}}
+
+== References ==
+* {{cite book|last=Ahmad|first= Ishfaq |author-link=Ishfaq Ahmad |title=Mathematical Integrals in Quantum Nature |series=The Nucleus |year=1971 |pages=189–209}}
+* {{cite book|last1=Albeverio|first1= S.|last2=Hoegh-Krohn.|first2=R.|last3=Mazzucchi|first3=S|name-list-style=amp |title=Mathematical Theory of Feynman Path Integral |series=Lecture Notes in Mathematics 523 |publisher=Springer-Verlag |year=2008 |isbn=9783540769569}}
+*{{cite journal|first1=A. O.|last1=Caldeira|author-link1=Amir Caldeira|first2=A. J.|last2=Leggett|author-link2=Anthony James Leggett|title=Quantum tunnelling in a dissipative system|journal=Annals of Physics|volume=149|year=1983|issue=2|pages=374–456 |doi=10.1016/0003-4916(83)90202-6 |bibcode=1983AnPhy.149..374C}}
+* {{cite journal|last1=Cartier |first1=P |author-link=Pierre Cartier (mathematician)|last2=DeWitt-Morette |first2=Cécile |title=A new perspective on Functional Integration |journal=Journal of Mathematical Physics |volume=36 |year=1995 |issue=5 |pages=2137–2340 |doi=10.1063/1.531039 |arxiv=funct-an/9602005 |bibcode = 1995JMP....36.2237C |s2cid=119581543 }}
+*{{cite book |title=Path Integrals in Physics Volume 1: Stochastic Process & Quantum Mechanics |chapter-url=https://books.google.com/books?id=-XDP-8mrmQYC&pg=PA1 |chapter=Introduction |page=1ff |isbn=978-0-7503-0801-4 |year=2001 |publisher=Taylor & Francis |first1=M.|last1= Chaichian |first2=A. P.|last2= Demichev }}
+* {{cite journal|author-link=Cécile DeWitt-Morette |last=DeWitt-Morette |first=C.|title=Feynman's path integral: Definition without limiting procedure |journal=Communications in Mathematical Physics |volume=28 |issue=1 |year=1972 |pages=47–67 |mr=0309456 |doi=10.1007/BF02099371 |bibcode = 1972CMaPh..28...47D|s2cid=119669964 }}
+*{{cite journal|last=Dirac |first=Paul A. M. |author-link=Paul Dirac |year=1933 |title=The Lagrangian in Quantum Mechanics |journal=Physikalische Zeitschrift der Sowjetunion |volume=3 |pages=64–72 |url=http://www.hep.anl.gov/czachos/soysoy/Dirac33.pdf}}
+*{{cite journal|first1=İ. H.|last1=Duru|author-link1=İsmail Hakkı Duru|first2=Hagen|last2=Kleinert|author-link2=Hagen Kleinert|title=Solution of the path integral for the H-atom |year=1979 |journal=Physics Letters |volume=84B |issue=2 |pages=185–188 |url=http://www.physik.fu-berlin.de/~kleinert/kleiner_re65/65.pdf|accessdate=2007-11-25|bibcode=1979PhLB...84..185D |doi=10.1016/0370-2693(79)90280-6}}
+* {{cite web|last=Etingof|first=P|author-link=Pavel Etingof |title=Geometry and Quantum Field Theory |publisher=MIT OpenCourseWare |year=2002 |url=http://ocw.mit.edu/courses/mathematics/18-238-geometry-and-quantum-field-theory-fall-2002/index.htm}} <small>This course, designed for mathematicians, is a rigorous introduction to perturbative quantum field theory, using the language of functional integrals.</small>
+*{{cite book|last=Feynman|first=R. P.|author-link=Richard Feynman|editor-last=Brown|editor-first=L. M|title=Feynman's Thesis — A New Approach to Quantum Theory|year=2005|orig-year=1942/1948|isbn=978-981-256-366-8|publisher=World Scientific|doi=10.1142/5852|bibcode=2005ftna.book.....B|url=http://cds.cern.ch/record/910611}} <small>The 1942 thesis. Also includes Dirac's 1933 paper and Feynman's 1948 publication.</small>
+*{{cite journal|last=Feynman|first=R. P. | title=Space-Time Approach to Non-Relativistic Quantum Mechanics |journal=Reviews of Modern Physics|volume= 20| pages=367–387|year=1948|doi= 10.1103/RevModPhys.20.367 |bibcode = 1948RvMP...20..367F|issue= 2 |url=https://authors.library.caltech.edu/47756/1/FEYrmp48.pdf}}
+* {{cite book |last1=Feynman |first1=R. P. |last2=Hibbs |first2=A. R. |year=1965 |title=Quantum Mechanics and Path Integrals |place=New York |publisher=McGraw-Hill |isbn=978-0-07-020650-2 |url-access=registration |url=https://archive.org/details/quantummechanics0000feyn }} <small>The historical reference, written by the inventor of the path integral formulation himself and one of his students.</small>
+*{{cite book|last1=Feynman|first1=R. P.|last2=Hibbs|first2=A. R.|author-link2=Albert Hibbs|last3=Styer|first3=D. F.|author-link3=Daniel F. Styer|title = Quantum Mechanics and Path Integrals|year=2010|publisher=Dover Publications|location=Mineola, NY|isbn=978-0-486-47722-0| pages = 29–31 }}
+*{{cite book|contribution=Most of the Good Stuff|title=Memories Of Richard Feynman|editor1-first=Laurie M.|editor1-last=Brown|editor2-first=John S.|editor2-last=Rigden|publisher=American Institute of Physics|first=Murray|last=Gell-Mann|author-link=Murray Gell-Mann|isbn=978-0883188705|year=1993}}
+*{{cite book|last1=Glimm|first1=J.|last2=Jaffe|first2=A|name-list-style=amp |title=Quantum Physics: A Functional Integral Point of View |url=https://archive.org/details/quantumphysicsfu0000glim|url-access=registration|place=New York |publisher=Springer-Verlag |year=1981 |isbn=978-0-387-90562-4}}
+* {{cite book|last1=Glimm|first1=J.|last2=Jaffe|first2=A.|name-list-style=amp|title=Quantum Physics: A Functional Integral Point of View |url=https://archive.org/details/quantumphysicsfu0000glim|url-access=registration|place=New York |publisher=Springer-Verlag |year=1981 |isbn=978-0-387-90562-4}}
+* {{cite book|last1=Grosche|first= Christian  |last2=Steiner|first2= Frank  |name-list-style=amp |year=1998 |title=Handbook of Feynman Path Integrals |series=Springer Tracts in Modern Physics 145 |publisher=Springer-Verlag |isbn=978-3-540-57135-3}}
+* {{cite arXiv|last=Grosche |first=Christian |title=An Introduction into the Feynman Path Integral  |year=1992 |eprint=hep-th/9302097}}
+*{{cite book|last=Hall |first=Brian C. |year=2013 |title=Quantum Theory for Mathematicians|series=Graduate Texts in Mathematics|volume=267 |publisher=Springer|isbn=978-1-4614-7115-8|doi=10.1007/978-1-4614-7116-5}}
+*{{cite book|last1=Inomata|first1= Akira|last2= Kuratsuji|first2= Hiroshi|last3= Gerry|first3= Christopher  |title=Path Integrals and Coherent States of SU(2) and SU(1,1) |place=Singapore |publisher=World Scientific |year=1992 |isbn=978-981-02-0656-7}}
+*{{cite book|editor-last1=Janke|editor-first1=W.|editor-last2=Pelster|editor-first2=Axel|title=Path Integrals--New Trends And Perspectives|year=2008|series=Proceedings Of The 9Th International Conference|publisher=World Scientific Publishing|isbn=978-981-283-726-4}}
+* {{cite book|first1=Gerald W. |last1=Johnson  |first2=Michel L.|last2= Lapidus  |title=The Feynman Integral and Feynman's Operational Calculus |series=Oxford Mathematical Monographs |publisher=Oxford University Press |year=2002 |isbn=978-0-19-851572-2}}
+* {{cite book|author-link=John R. Klauder |last=Klauder|first=John R.|title=A Modern Approach to Functional Integration |place=New York |publisher=Birkhäuser |year=2010 |isbn=978-0-8176-4790-2}}
+* {{cite book|author-link=Hagen Kleinert |last=Kleinert |first=Hagen |year=2004 |title=Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets |edition=4th |place=Singapore |publisher=World Scientific |isbn=978-981-238-107-1 |url=http://www.physik.fu-berlin.de/~kleinert/b5}}
+* {{cite arXiv|last=MacKenzie |first=Richard |year=2000 |title=Path Integral Methods and Applications |eprint=quant-ph/0004090}}
+* {{cite book|last= Mazzucchi|first= S. |title=Mathematical Feynman path integrals and their applications|publisher=World Scientific |year=2009 |isbn=978-981-283-690-8}}
+* {{cite book|first=Harald J. W.|last=Müller-Kirsten|year=2012|title=Introduction to Quantum Mechanics: Schrödinger Equation and Path Integral| edition=2nd|place=Singapore|publisher=World Scientific}}
+* {{cite book|last=Rivers|first= R. J. |title=Path Integrals Methods in Quantum Field Theory |publisher=Cambridge University Press |year=1987 |isbn=978-0-521-25979-8}}
+* {{cite book|last=Ryder|first= Lewis H. |title=Quantum Field Theory |url=https://archive.org/details/quantumfieldtheo0000ryde|url-access=registration|publisher=Cambridge University Press |year=1985 |isbn=978-0-521-33859-2}} Highly readable textbook; introduction to relativistic QFT for particle physics.
+* {{cite book|last=Schulman|first= L S. |year=1981 |title=Techniques & Applications of Path Integration |place=New York |publisher=John Wiley & Sons |isbn=978-0-486-44528-1}}
+* {{cite book|author-link=Barry Simon|last=Simon|first=B.|title=Functional Integration and Quantum Physics |place=New York |publisher=Academic Press |year=1979 |isbn=978-0-8218-6941-3}}
+*{{cite journal |first1=Sukanya |last1=Sinha |first2=Rafael D. |last2=Sorkin |title=A Sum-over-histories Account of an EPR(B) Experiment |journal=Foundations of Physics Letters |volume=4 |issue=4 |pages=303–335 |year=1991 |doi=10.1007/BF00665892 |url=https://www.perimeterinstitute.ca/personal/rsorkin/some.papers/63.eprb.pdf |bibcode=1991FoPhL...4..303S |s2cid=121370426 }}
+*{{cite book|last=Tomé|first=W. A.|author-link= Wolfgang A. Tomé |year=1998 |title=Path Integrals on Group Manifolds |place=Singapore|publisher=World Scientific |isbn=978-981-02-3355-6}} Discusses the definition of Path Integrals for systems whose kinematical variables are the generators of a real separable, connected Lie group with irreducible, square integrable representations.
+*{{cite journal|last=Van Vleck |first=J. H.|author-link=John Hasbrouck Van Vleck|title=The correspondence principle in the statistical interpretation of quantum mechanics |journal=Proceedings of the National Academy of Sciences of the United States of America|volume=14| issue=2 | pages=178–188|year=1928|doi=10.1073/pnas.14.2.178 | pmid=16577107 | pmc=1085402 | bibcode=1928PNAS...14..178V }}
+*{{citation|last=Weinberg|first=S.|year=2002|orig-year=1995|title=Foundations|series=The Quantum Theory of Fields|volume=1|isbn=978-0-521-55001-7|author-link=Steven Weinberg|location=Cambridge|publisher=[[Cambridge University Press]]|url-access=registration|url=https://archive.org/details/quantumtheoryoff00stev}}
+* {{cite book |last=Zee |first=A. |author-link=Anthony Zee |title=Quantum Field Theory in a Nutshell |edition=Second |publisher=Princeton University Press |isbn=978-0-691-14034-6 |date=2010-02-21 |url-access=registration |url=https://archive.org/details/isbn_9780691140346 }} A great introduction to Path Integrals (Chapter 1) and QFT in general.
+*{{cite book|last=Zinn Justin|first= J.|author-link=Jean Zinn-Justin|year=2004 |title=Path Integrals in Quantum Mechanics |publisher=Oxford University Press |isbn=978-0-19-856674-8}}
+
+== External links ==
+* [http://www.scholarpedia.org/article/Path_integral Path integral on Scholarpedia]
+* [http://www.quantumfieldtheory.info/website_Chap18.pdf Path Integrals in Quantum Theories: A Pedagogic 1st Step]
+* [https://www.youtube.com/watch?v=QTjmLBzAdAA A mathematically rigorous approach to perturbative path integrals]  via animation on YouTube
+*[https://www.youtube.com/watch?v=vSFRN-ymfgE Feynman's Infinite Quantum Paths] | PBS Space Time. July 7, 2017. (Video, 15:48)
+
+{{Quantum mechanics topics|state=expanded}}
+{{Richard Feynman|state=collapsed}}
+
+
+[[Category:Concepts in physics]]
+[[Category:Statistical mechanics]]
+[[Category:Quantum mechanics]]
+[[Category:Quantum field theory]]
+[[Category:Differential equations]]
+[[Category:Articles containing video clips]]
+[[Category:Mathematical physics]]
+[[Category:Integrals]]

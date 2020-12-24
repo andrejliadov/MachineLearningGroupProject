@@ -1,0 +1,55 @@
+A '''bigram''' or '''digram''' is a sequence of two adjacent elements from a [[string (computer science)|string]] of [[Token (parser)|tokens]], which are typically letters, syllables, or words. A bigram is an [[n-gram|''n''-gram]] for ''n''=2. The frequency distribution of every bigram in a string is commonly used for simple statistical analysis of text in many applications, including in computational linguistics, cryptography, speech recognition, and so on.
+
+''Gappy bigrams'' or ''skipping bigrams'' are word pairs which allow gaps (perhaps avoiding connecting words, or allowing some simulation of dependencies, as in a [[dependency grammar]]).
+
+''Head word bigrams'' are gappy bigrams with an explicit dependency relationship.
+
+==Details==
+Bigrams help provide the conditional probability of a token given the preceding token, when the relation of the [[conditional probability]] is applied:
+
+<math> P(W_n|W_{n-1}) = { P(W_{n-1},W_n) \over P(W_{n-1}) } </math>
+
+That is, the probability <math> P() </math> of a token <math>W_n</math> given the preceding token <math>W_{n-1}</math> is equal to the probability of their bigram, or the co-occurrence of the two tokens <math>P(W_{n-1},W_n)</math>, divided by the probability of the preceding token.
+
+==Applications==
+
+Bigrams are used in most successful [[language model]]s for [[speech recognition]].<ref>{{cite book |last1=Collins |first1=Michael John |title=Proceedings of the 34th annual meeting on Association for Computational Linguistics - |chapter=A new statistical parser based on bigram lexical dependencies |date=1996-06-24 |pages=184–191 |doi=10.3115/981863.981888 |chapter-url=http://www.aclweb.org/anthology/P96-1025 |accessdate=2018-10-09 |publisher=Association for Computational Linguistics|arxiv=cmp-lg/9605012 |s2cid=12615602 }}</ref> They are a special case of [[N-gram]].
+
+Bigram frequency attacks can be used in [[cryptography]] to solve [[cryptograms]]. See [[Frequency analysis (cryptanalysis)|frequency analysis]].
+
+Bigram frequency is one approach to [[Language detection#Statistical approaches|statistical language identification]].
+
+Some activities in [[logology (linguistics)|logology]] or recreational linguistics involve bigrams. These include attempts to find English words beginning with every possible bigram,<ref>{{cite journal|last=Cohen|first=Philip M.|year=1975|title=Initial Bigrams|journal=Word Ways|volume=8|issue=2|url=http://digitalcommons.butler.edu/wordways/vol8/iss2/8 |accessdate=11 September 2016}}</ref> or words containing a string of repeated bigrams, such as ''logogogue''.<ref>{{cite journal|last=Corbin|first=Kyle|year=1989|title=Double, Triple, and Quadruple Bigrams|journal=Word Ways|volume=22|issue=3|url=http://digitalcommons.butler.edu/wordways/vol22/iss3/8 |accessdate=11 September 2016}}</ref>
+
+==Bigram frequency in the English language==
+The frequency of the most common letter bigrams in a small English corpus is:<ref>[http://www.math.cornell.edu/~mec/2003-2004/cryptography/subs/digraphs.html Cornell Math Explorer's Project &ndash; Substitution Ciphers]</ref>
+
+ th 1.52       en 0.55       ng 0.18
+ he 1.28       ed 0.53       of 0.16
+ in 0.94       to 0.52       al 0.09
+ er 0.94       it 0.50       de 0.09
+ an 0.82       ou 0.50       se 0.08
+ re 0.68       ea 0.47       le 0.08
+ nd 0.63       hi 0.46       sa 0.06
+ at 0.59       is 0.46       si 0.05
+ on 0.57       or 0.43       ar 0.04
+ nt 0.56       ti 0.34       ve 0.04
+ ha 0.56       as 0.33       ra 0.04
+ es 0.56       te 0.27       ld 0.02
+ st 0.55       et 0.19       ur 0.02
+Complete bigram frequencies for a larger corpus are available.<ref>{{Cite journal | issn = 0743-3808 | volume = 36 | issue = 3 | pages = 388–396| last = Jones| first = Michael N|author2=D J K Mewhort| title = Case-sensitive letter and bigram frequency counts from large-scale English corpora| journal = Behavior Research Methods, Instruments, and Computers | date = August 2004 | pmid=15641428| doi = 10.3758/bf03195586 | doi-access = free}}</ref><ref>{{Cite web|url=http://norvig.com/mayzner.html|title=English Letter Frequency Counts: Mayzner Revisited or ETAOIN SRHLDCU|website=norvig.com|access-date=2019-10-28}}</ref>
+
+==See also==
+* [[Digraph (orthography)]]
+* [[N-gram]]
+* [[Letter frequency]]
+* [[Sørensen–Dice coefficient]]
+
+==References==
+<references/>
+
+{{Natural Language Processing}}
+
+[[Category:Formal languages]]
+[[Category:Classical cryptography]]
+[[Category:Natural language processing]]

@@ -1,0 +1,53 @@
+{{Short description|Geospatial analysis software}}
+{{Infobox software
+|name                   = GeoTime
+|caption                = 
+|developer              =  Uncharted Software Inc. (formerly Oculus Info Inc.)
+|released               = {{Start date and age|2005|05|18}}<ref>{{cite web|url=http://www.geotime.com/News-Events/News/Oculus-GeoTime%E2%84%A2-Enables-Visualization-for-Concurre.aspx |title=Oculus GeoTime™ Enables Visualization for Concurrent Spatial and Temporal Analysis |publisher=Oculus Info Inc. |date=18 May 2005 |accessdate=29 May 2013 |url-status=dead |archiveurl=https://web.archive.org/web/20160304001639/http://www.geotime.com/News-Events/News/Oculus-GeoTime%E2%84%A2-Enables-Visualization-for-Concurre.aspx |archivedate=4 March 2016 }}</ref>
+|latest release version = 5.7
+|latest release date    = {{Start date and age|2016|05|06}}<ref>{{cite web |title=GeoTime 5.7 – Now Available! |date=6 May 2016 |url=https://www.facebook.com/185503129311/photos/a.421762084311.193801.185503129311/10154224855104312/ |archiveurl=https://web.archive.org/web/20160519200435/https://www.facebook.com/185503129311/photos/a.421762084311.193801.185503129311/10154224855104312/ |publisher=Uncharted Software Inc. |website=facebook.com |archivedate=19 May 2016 |accessdate=19 May 2016}}</ref>
+|operating system       = [[Microsoft Windows]], [[Windows Vista|Vista]], [[Windows 7]], [[Windows 8]], [[Windows 10]],  [[Mac OS X Lion]], [[OS X Mountain Lion]]<ref>{{cite web|url=http://www.geotime.com/Support/System-Requirements.aspx |title=GeoTime: System Requirements |publisher=Oculus Info Inc. |accessdate=29 May 2013 |url-status=dead |archiveurl=https://web.archive.org/web/20130511000404/http://www.geotime.com/Support/System-Requirements.aspx |archivedate=11 May 2013 }}</ref>
+|status                 = Active
+|genre                  = [[Geographic information system]]
+|license                = [[Proprietary software|Proprietary]] [[commercial software]]
+|website                = http://geotime.com
+}}
+
+'''GeoTime''' is [[geospatial analysis]] software that allows the visual analysis of events over time. It adds time as the [[third dimension]] to a [[two-dimensional]] map (which can include [[3D projection]] of terrain [[elevation]] [[geodata]] or any abstract diagrammatic space), allowing users to see changes within [[time series]] data. Users can view real-time animated playback of data and use automated analysis tools within the software to identify location patterns, connections between events, and trends.<ref name="overview">{{cite web |url=http://www.oculusinfo.com/geotime/ |title=GeoTime Overview - Oculus |publisher=Oculus Info Inc. |accessdate=29 May 2013 }}</ref>
+
+GeoTime can import data in many formats, such as [[GPS eXchange Format|GPX]], [[Shapefile]], [[KML]], [[Microsoft Excel]], [[Comma-separated values|CSV]], [[geotagged photo]]s, and from live data sources via [[GeoRSS]] and [[RSS]] web feeds and [[Web Map Service|WMS]] servers. It supports most [[Telecommunications data retention|telecommunication carrier reporting]] formats ([[Call detail record|CDR]]), including tower/sector information. These features allow users to aggregate data from [[satellite]]s, [[mobile phone]]s, [[social networking]] web sites, [[web server]] logs and many other sources. GeoTime can export data to other [[GIS software]] such as [[Google Earth]] and [[Environmental Systems Research Institute|ESRI]] [[ArcGIS]] via [[KML]] format, and to other applications via [[Comma-separated values|CSV]], as well as capture [[video]] of data animations.<ref>{{cite web|url=http://www.geotime.com/Product/GeoTime-%281%29/Features---Benefits/Features---Benefits-%281%29.aspx |title=GeoTime: Features |publisher=Oculus Info Inc. |accessdate=29 May 2013 |url-status=dead |archiveurl=https://web.archive.org/web/20130511031801/http://www.geotime.com/Product/GeoTime-(1)/Features---Benefits/Features---Benefits-(1).aspx |archivedate=11 May 2013 }}</ref> An [[ArcGIS#Extensions|ArcGIS extension]] is available that allows GeoTime to work alongside the popular ArcGIS [[geographic information system]] with bi-directional data sharing between the two programs.<ref>{{cite web |url=http://www.geotime.com/Product/GeoTime-%281%29/GeoTime-for-ArcGIS.aspx |title=GeoTime for ArcGIS |publisher=Oculus Info Inc. |accessdate=29 May 2013 |url-status=dead |archiveurl=https://web.archive.org/web/20130601114817/http://www.geotime.com/Product/GeoTime-(1)/GeoTime-for-ArcGIS.aspx |archivedate=1 June 2013 }}</ref><ref>{{cite web |url=http://www.oculusinfo.com/geotime-arcgis-compatibility/ |title=GeoTime ArcGIS Compatibility |publisher=Oculus Info Inc. |accessdate=29 May 2013 }}</ref>
+
+GeoTime was a winner of the [[IEEE]] Visual Analytics Science and Technology (VAST) conference contest for three years in a row.<ref name="overview" />
+
+==Customers==
+GeoTime has been used by professionals in [[public safety]] (including [[metropolitan police]] and [[emergency management]]), [[telecommunications]], [[academic research]], [[healthcare]] and [[human services]], and the [[U.S. military]].<ref>{{cite web |url=http://www.geotime.com/Industries.aspx |title=GeoTime: Industries |publisher=Oculus Info Inc. |accessdate=29 May 2013 |url-status=dead |archiveurl=https://web.archive.org/web/20110825055956/http://www.geotime.com/Industries.aspx |archivedate=25 August 2011 }}</ref> It has been used to analyze data from sources as diverse as downhill [[skiing]],<ref>{{cite web|url=http://www.geotime.com/GeoTime%28s%29/January-2012/Analysis-of-GPS-Data-From-A-Downhill-Skier---New-F.aspx |title=Analysis of GPS data from a downhill skier - new feature sneak peek |publisher=Oculus Info Inc. |date=30 January 2012 |accessdate=29 May 2013 |url-status=dead |archiveurl=https://web.archive.org/web/20130527192135/http://geotime.com/GeoTime%28s%29/January-2012/Analysis-of-GPS-Data-From-A-Downhill-Skier---New-F.aspx |archivedate=27 May 2013 }}</ref> [[influenza]] monitoring,<ref>{{cite web |url=http://www.geotime.com/Product/GeoTime-%281%29/Demos-%281%29/Demos-%281%29.aspx |title=Demos: Tracking the H1N1 (Swine Flu) Pandemic |publisher=Oculus Info Inc. |accessdate=29 May 2013 |url-status=dead |archiveurl=https://web.archive.org/web/20121113022417/http://www.geotime.com/Product/GeoTime-(1)/Demos-(1)/Demos-(1).aspx |archivedate=13 November 2012 }}</ref> and [[GPS wildlife tracking]].<ref>{{cite web|url=http://www.geotime.com/GeoTime%28s%29/April-2012/US-Geological-Survey---Wildlife-Tracking-Analysis-.aspx |title=US Geological Survey - wildlife tracking analysis webinar |publisher=Oculus Info Inc. |date=5 April 2012 |accessdate=29 May 2013 |url-status=dead |archiveurl=https://web.archive.org/web/20130527192856/http://geotime.com/GeoTime(s)/April-2012/US-Geological-Survey---Wildlife-Tracking-Analysis-.aspx |archivedate=27 May 2013 }}</ref> A list of customers is available on the GeoTime web site.<ref>{{cite web |url=http://www.geotime.com/Product/GeoTime-%281%29/Customers---Case-Studies.aspx |title=GeoTime: Customers |publisher=Oculus Info Inc. |accessdate=29 May 2013 |url-status=dead |archiveurl=https://web.archive.org/web/20130530160747/http://www.geotime.com/Product/GeoTime-(1)/Customers---Case-Studies.aspx |archivedate=30 May 2013 }}</ref>
+
+==Controversy==
+Lawyers and privacy campaigners have questioned whether innocent individuals may be tracked by the software, which has been likened to a computer programme in the [[science fiction]] film [[Minority Report (film)|Minority Report]].<ref>{{cite journal |url=http://en.wikinews.org/wiki/Campaigners_angry_at_new_British_police_tracking_system |date=12 May 2011 |title=Campaigners angry at new British police tracking system |journal=Wikinews |accessdate=29 May 2013 }}</ref>
+
+==See also==
+*[[ArcGIS]]
+*{{section link|Geographic information system|Adding the dimension of time}}
+*[[Telecommunications data retention]]
+*[[Time geography]]
+
+==References==
+{{Reflist}}
+
+==Further reading==
+* {{cite journal |last1=Eccles |first1=Ryan |last2=Kapler |first2=Thomas |last3=Harper |first3=Robert |last4=Wright |first4=William |title=Stories in GeoTime |date=Spring 2008 |journal=[[Information Visualization (journal)|Information Visualization]] |volume=7 |issue=1 |pages=3–17 |doi=10.1057/palgrave.ivs.9500173 |ref=harv}}
+* {{cite journal |author=Esri |author-link=Esri |date=Winter 2012 |title=Hardworking crime maps: sophisticated cell tower analysis helps Los Angeles law enforcement pinpoint criminals |journal=ArcNews |volume=34 |issue=4 |pages=32–33 |url=http://www.esri.com/esri-news/arcnews/winter1213articles/hard-working-crime-maps |ref=harv}}
+* {{cite journal |last1=Kapler |first1=Thomas |last2=Wright |first2=William |date=June 2005 |title=GeoTime information visualization |journal=[[Information Visualization (journal)|Information Visualization]] |volume=4 |issue=2 |pages=136–146 |doi=10.1057/palgrave.ivs.9500097 |ref=harv}}
+* {{cite book |last=Neuhaus |first=Fabian |editor1-first=Fabian |editor1-last=Neuhaus |year=2011 |title=Studies in temporal urbanism: the urbanTick experiment |location=Dordrecht; New York |publisher=[[Springer Publishing|Springer]] |isbn=9789400709362 |oclc=747105206 |doi=10.1007/978-94-007-0937-9 |ref=harv}}
+* {{cite journal |last=Nunez |first=Toni |date=November 2013 |title=Tracking criminals with cell tower analysis |journal=Cityscape: A Journal of Policy Development and Research |volume=15 |issue=3 |pages=249–250 |url=http://www.huduser.org/portal/periodicals/cityscpe/vol15num3/ch17.pdf |ref=harv}}
+* {{cite book |last1=Proulx |first1=Pascale |last2=Tandon |first2=Sumeet |last3=Bodnar |first3=Adam |last4=Schroh |first4=David |last5=Harper |first5=Robert |last6=Wright |first6=William |year=2006 |chapter=Avian flu case study with nSpace and GeoTime |editor1-last=Wong |editor1-first=Pak Chung |editor2-last=Keim |editor2-first=Daniel A |title=VAST, IEEE Symposium on Visual Analytics Science and Technology, 2006: proceedings, Baltimore, Maryland, USA, October 31–November 2, 2006 |pages=27–34 |location=Piscataway, NJ |publisher=[[IEEE]] |isbn=1424405912 |oclc=85811533 |doi=10.1109/VAST.2006.261427 |ref=harv}}
+
+==External links==
+*[http://www.geotime.com GeoTime homepage]
+
+{{Visualization}}
+
+[[Category:ArcGIS Extension]]
+[[Category:Cartography]]
+[[Category:Geographical technology]]
+[[Category:GIS software]]

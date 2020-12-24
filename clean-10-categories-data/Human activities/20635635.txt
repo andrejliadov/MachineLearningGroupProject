@@ -1,0 +1,56 @@
+{{update|date=March 2015}}
+[[File:Levels of Enterprise Architecture Planning.svg|thumb|300px|Levels of Enterprise Architecture Planning.<ref name="FAA98">FAA (1998). ''Federal Information Architecture Initiatives''. Federal Aviation Administration, February 1998.</ref>]]
+
+'''Enterprise architecture planning''' ('''EAP''') in [[enterprise architecture]] is the [[planning]] process of defining [[Enterprise Architecture|architectures]] for the use of information in support of the business and the plan for implementing those architectures.<ref name="CIO99">The Chief Information Officers Council (1999). ''[http://www.cio.gov/Documents/fedarch1.pdf Federal Enterprise Architecture Framework Version 1.1] {{webarchive|url=https://web.archive.org/web/20120213215829/http://www.cio.gov/Documents/fedarch1.pdf |date=2012-02-13 }}'' September 1999.</ref>
+
+== Overview ==
+One of the earlier professional practitioners in the field of system architecture [[Steven H. Spewak]] in 1992 defined Enterprise Architecture Planning (EAP) as "the process of defining architectures for the use of information in support of the business and the plan for implementing those architectures."<ref name="EAP">[[Steven Spewak]] and S. C. Hill (1992) ''Enterprise Architecture Planning: Developing a Blueprint for Data, Applications, and Technology''. Boston, QED Pub. Group. p. 1</ref> Spewak’s approach to EAP is similar to that taken by DOE in that the business mission is the primary driver. That is followed by the data required to satisfy the mission, followed by the applications that are built using that data, and finally by the technology to implement the applications.<ref name="FAA98"/>
+
+This hierarchy of activity is represented in the figure above, in which the layers are implemented in order, from top to bottom. Based on the [[Business Systems Planning]] (BSP) approach developed by [[John Zachman]], EAP takes a data-centric approach to architecture planning to provide data quality, access to data, adaptability to changing requirements, data interoperability and sharing, and cost containment. This view counters the more traditional view that applications should be defined before data needs are determined or provided for.<ref name="FAA98"/>
+
+== EAP topics ==
+
+=== Zachman framework ===
+EAP defines the blueprint for subsequent design and implementation and it places the planning/defining stages into a framework. It does not explain how to define the top two rows of the [[Zachman Framework]] in detail but for the sake of the planning exercise, abbreviates the analysis. The Zachman Framework provides the broad context for the description of the architecture layers, while EAP focuses on planning and managing the process of establishing the business alignment of the architectures.<ref name="CIO99"/>
+
+EAP is planning that focuses on the development of matrixes for comparing and analyzing data, applications, and technology. Most important, EAP produces an implementation plan. Within the Federal Enterprise Architecture, EAP will be completed segment enterprise by segment enterprise. The results of these efforts may be of Government wide value; therefore, as each segment completes EAP, the results will be published on the ArchitecturePlus web site.<ref name="CIO99"/>
+
+=== EAP components ===
+Enterprise Architecture Planning model consists of four levels:
+* Level 1 - ''getting started'' : This layer leads to producing an EAP workplan and stresses the necessity of high-level management commitment to support and resource the subsequent six components (or steps) of the process. It consists of Planning Initiation, which covers in general, decisions on which methodology to use, who should be involved, what other support is required, and what toolset will be used.<ref name="CIO99"/>
+* Level 2 - ''where we are today'' : This layer provides a baseline for defining the eventual architecture and the long-range migration plan. It consists of:<ref name="CIO99"/>
+** [[Business process modeling]], the compilation of a knowledge base about the business functions and the information used in conducting and supporting the various business processes, and
+** Current Systems and Technology, the definition of current application systems and supporting technology platforms.
+* Level 3 - ''the vision of where we want to be'' : The arrows delineate the basic definition process flow: data architecture, applications architecture, and technology architecture. It consists of:<ref name="CIO99"/>
+** [[Data Architecture]] - Definition of the major kinds of data needed to support the business.
+** [[Applications Architecture]] - Definition of the major kinds of applications needed to manage that data and support the business functions.
+** [[Technology Architecture]] - Definition of the technology platforms needed to support the applications that manage the data and support the business functions.
+* Level 4 - ''how we plan to get there'' : This consists of the Implementation / Migration Plans - Definition of the sequence for implementing applications, a schedule for implementation, a cost/benefit analysis, and a clear path for migration.<ref name="CIO99"/>
+
+=== EAP methodology ===
+The Enterprise Architecture Planning (EAP) methodology is beneficial to understanding the further definition of the [[Federal Enterprise Architecture Framework]] at level IV. EAP is a how to approach for creating the top two rows of the [[Zachman Framework]], Planner and Owner. The design of systems begins in the third row, outside the scope of EAP.<ref name="CIO99"/>
+
+EAP focuses on defining what data, applications, and technology architectures are appropriate for and support the overall enterprise. Exhibit 6 shows the seven components (or steps) of EAP for defining these architectures and the related migration plan. The seven components are in the shape of a wedding cake, with each layer representing a different focus of each major task (or step).<ref name="CIO99"/>
+
+== Criticism ==
+The effectiveness of the EAP methodology have been questioned in the late 1980s and early 1990s:
+* [[Business system planning#Criticism|Business Systems Planning (BSP)]], the conceptual predecessor of EAP, did not work successfully: "Given their great expense and time consumption, [...] findings seriously challenge the utility of the [BSP and similar] planning methodologies".<ref>Lederer, A.L., and Sethi, V. (1988). ''The Implementation of Strategic Information Systems Planning Methodologies''. In: MIS Quarterly, vol. 12, no. 3, pp. 445-461.</ref><ref>Goodhue, D.L., Quillard, J.A., and Rockart, J.F. (1988). ''Managing the Data Resource: A Contingency Perspective''. In: MIS Quarterly, vol. 12, no. 3, pp. 373-392.</ref><ref>Lederer, A.L., and Sethi, V. (1992). ''Meeting the Challenges of Information Systems Planning''. In: Long Range Planning, vol. 25, no. 2, pp. 69-80.</ref><ref>Goodhue, D.L., Kirsch, L.J., Quillard, J.A., and Wybo, M.D. (1992). ''Strategic Data Planning: Lessons from the Field''. In: MIS Quarterly, vol. 16, no. 1, pp. 11-34.</ref>
+* [[Federal enterprise architecture#Program results|Federal Enterprise Architecture (FEA)]] program based on the EAP methodology has largely failed: "Enterprise Architecture within the federal government hasn‘t been working, and far more often than not hasn‘t delivered useful results. Moreover, significant parts of the federal EA program have been complete and utter failures".<ref>[http://www.ech-bpm.ch/sites/default/files/articles/why_doesnt_the_federal_enterprise_architecture_work.pdf "Why Doesn’t the Federal Enterprise Architecture Work?"], Stanley B. Gaver, visited 19 May 2016.</ref>
+* Even Steven Spewak and Steven Hill (1992) admit that "the vast majority of enterprises that undertake Enterprise Architecture Planning are not successful" (page 19).<ref name="EAP" />
+* The historical analysis shows that the EAP methodology, as well as all other similar formal, documentation-oriented, step-by-step planning methodologies, never worked successfully in practice.<ref>Kotusev, Svyatoslav (2018) ''The Practice of Enterprise Architecture: A Modern Approach to Business and IT Alignment''. Melbourne, Australia: SK Publishing.</ref>
+
+== See also ==
+{{Wikipedia books|Enterprise Architecture}}
+* [[Enterprise Architecture Framework]]
+* [[Enterprise Architecture Process]]
+* [[Enterprise Life Cycle]]
+
+== References ==
+{{Reflist|2}}
+
+== Further reading ==
+{{Commons category|Enterprise Architecture Planning}}
+* [[Steven Spewak]] with Steven C. Hill (1995) ''Enterprise Architecture Planning: Developing a Blueprint for Data, Applications, and Technology''. John Wiley & Sons, New York City. 1995.
+
+[[Category:Enterprise architecture]]
+[[Category:Planning]]

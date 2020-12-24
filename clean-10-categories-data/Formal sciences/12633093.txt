@@ -1,0 +1,39 @@
+{{Cleanup rewrite|date=March 2016}}
+
+'''Adaptive autonomy''' refers to  a suggestion for the definition of the notation 'autonomy' in mobile robotics.<ref>{{cite book|chapter=Adaptive autonomy: a suggestion for the definition of the notation 'autonomy' in mobile robotics|publisher=ieeexplore.ieee.org |doi=10.1109/CCA.2004.1387487|title=Proceedings of the 2004 IEEE International Conference on Control Applications, 2004|year=2004|last1=Glotzbach|first1=T.|volume=2|pages=922–927|isbn=0-7803-8633-7}}</ref>
+
+== Human-automation interaction ==
+The extremist idea of "eliminate the human from the field" rendered the ironies of automation,<ref>L. Bainbridge, “Ironies of automation”, Automatica, Vol. 19, No. 6, pp. 775-779, 1983.</ref> to the extent that the researchers in the related fields shifted the paradigm to the idea of "best-fit autonomy for the computers", in order to provide more humane automation solutions.
+
+One of the first human-machine function-allocation methods was presented by P. M. Fitts in 1951, which was used in automation systems design.<ref>P. M. Fitts, "Some basic questions in designing an air-navigation and air-traffic control system", In N. Moray (Ed.), Ergonomics major writings (Vol. 4, pp. 367–383). London: Taylor & Francis., Reprinted from Human engineering for an effective air navigation and traffic control system, National Research Council, pp. 5–11, 1951.</ref>  Nevertheless, the function allocation concept remains problematic after half a century, and the basic validity of formal function allocation methods has been challenged repeatedly.<ref>N. Jordan, "Allocation of functions between man and machines in automated systems", Journal of Applied Psychology, Vol. 47, No. 3, pp. 55-59, 1963.</ref><ref>R. B. Fuld, "The fiction of function allocation", Ergonomics in Design, Vol. 1, No. 1, pp. 20-24, 1993.</ref><ref>T. B. Sheridan, "Function allocation: algorithm, alchemy or apostasy?", International Journal of Human-Computer Studies, Vol. 52, No. 2, pp. 203-216, 2000.</ref><ref>R. B. Fuld, "The fiction of function allocation, revisited", International Journal of Human-Computer Studies, Vol. 52, No. 2, pp. 217-233, 2000.</ref>
+
+== Clarifications ==
+The peripheral situations affect the performance of cybernetic systems; therefore, though one-shot human-centered automation (HCA) designs might provide better results than the systems designed based on the "automate it as possible" philosophy; however, these designs fail to maintain the advantages of the HCA designs, when the peripheral situations change.<ref>A. Fereidunian, C. Lucas, H. Lesani, M. Lehtonen, M. Nordman, 2007. "[https://www.academia.edu/download/43309012/Challenges_in_implementation_of_human-au20160303-27295-19bwyhg.pdf Challenges in implementation of the human-automation interaction models]", In Proc. of the MED'07 (IEEE), Athens, Greece, June 2007.</ref><ref>A. Fereidunian, M. Lehtonen, H. Lesani, C. Lucas, M. Nordman, 2007. '''"Adaptive autonomy''': smart cooperative cybernetic systems for more humane automation solutions", In Proc. of the IEEE Int. Conf. of SMC07, Montreal, Canada.</ref> 
+
+Consequently, the automation solutions should be smart enough to adapt the level of automation (LOA) to the changes in peripheral situations.  This concept is known as '''adaptive automation''' <ref>R. Parasuraman, T.B. Sheridan, C.D. Wickens, 2000. “[https://www.ida.liu.se/~729A71/Literature/Automation/Parasuraman,%20Sheridan,%20Wickens_2000.pdf A Model for Types and Levels of Human Interaction with Automation]”, IEEE Trans. on SMC– Part A, Vol. 30, No. 3, pp. 286-297.</ref> or '''adjustable autonomy''';<ref>J.M. Bradshaw, et al., 2002.  “[http://www.jeffreymbradshaw.org/publications/020911-Hexmoor%20Teamwork%20C.mod.pdf '''Adjustable Autonomy''' and Human-Agent Teamwork in Practice: An Interim Report on Space Applications]”, Chapter 0, in the IEEE Computer Society Foundation for Intelligent Physical Agents (FIPA) .</ref> however, the term '''"adaptive autonomy" (AA)'''<ref>A. Fereidunian, H. Lesani, C. Lucas, M. Lehtonen, 2008. "[https://www.academia.edu/download/43309013/A_Framework_for_Implementation_of_Adapti20160303-27307-ovi04x.pdf A Framework for Implementation of '''Adaptive Autonomy''' for Intelligent Electronic Devices]", Journal of Applied Sciences, Vol. 8, No. 20, pp.: 3721-3726</ref><ref>A. Fereidunian, M.A. Zamani, H. Lesani, C. Lucas, M. Lehtonen, 2009. "[http://eprints.skums.ac.ir/5589/1/25.pdf An Expert System Realization of '''Adaptive Autonomy''' in Electric Utility Management Automation]", Journal of Applied Sciences, Vol. 9, No. 8, pp.: 1524-1530</ref><ref>reference number 4.</ref>  seems more appropriate, to prevent the confusion with the phrases like adaptive control and adaptive automation in systems control terminology.
+
+==See also==
+{{Col-list|colwidth=20em|
+* [[Automation]]
+* [[Autonomic computing]]
+* [[Autonomy-oriented computation]]
+* [[Autonomous robot]]
+* [[Bionics]]
+* [[Brain–computer interface]]
+* [[Cybernetics]]
+* [[Decision theory]]
+* [[Human-computer interaction]]
+* [[Caro Lucas]]
+* [[Thomas B. Sheridan]]
+}}
+
+==References==
+{{Reflist}}
+
+{{DEFAULTSORT:Adaptive Autonomy}}
+[[Category:Artificial intelligence]]
+[[Category:Autonomy]]
+[[Category:Distributed computing architecture]]
+[[Category:Human communication|Computer interaction]]
+[[Category:Human–computer interaction| ]]
+[[Category:Human–machine interaction|Computer]]

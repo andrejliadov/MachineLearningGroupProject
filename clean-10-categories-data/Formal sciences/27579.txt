@@ -1,0 +1,124 @@
+The '''theory of statistics''' provides a basis for the whole range of techniques, in both [[study design]] and [[data analysis]], that are used within applications of [[statistics]].<ref>Cox & Hinkley (1974, p.1)</ref><ref name="RaoOpt">
+{{cite book|editor1-last=Arthanari|editor1-first=T. S.|editor2-last=Dodge|editor2-first=Yadolah|editor2-link=Yadolah Dodge|last=Rao|first=C.&nbsp;R.|author-link=C. R. Rao|chapter=Foreword| publisher=[[John Wiley & Sons]]|location=New York|year=1981|pages=vii–viii|isbn=0-471-08073-X|mr=607328| title=Mathematical Programming in Statistics}}</ref> The theory covers approaches to [[statistical decision theory|statistical-decision]] problems and to [[statistical inference]], and the actions and deductions that satisfy  the basic principles stated for these different approaches. Within a given approach, statistical theory gives ways of comparing statistical procedures; it can find a best possible procedure within a given context for given statistical problems, or can provide guidance on the choice between alternative procedures.<ref name="RaoOpt"/><ref>Lehmann & Romano (2005)</ref>
+
+Apart from philosophical considerations about how to make statistical inferences and decisions, much of statistical theory consists of [[mathematical statistics]], and is closely linked to [[probability theory]], to [[utility theory]], and to [[mathematical optimization|optimization]].
+
+==Scope==
+
+Statistical theory provides an underlying rationale and provides a consistent basis for the choice of methodology used in [[applied statistics]].
+
+===Modelling===
+
+[[Statistical model]]s describe the sources of data and can have different types of formulation corresponding to these sources and to the problem being studied. Such problems can be of various kinds:
+*[[survey sampling|Sampling]] from a finite population
+*Measuring [[observational error]] and refining procedures
+*Studying statistical [[multivariate statistics|relations]]
+Statistical models, once specified, can be tested to see whether they provide useful inferences for new data sets.<ref>Freedman (2009)</ref> Testing a hypothesis using the data that was used to specify the model is a fallacy, according to the natural science of Bacon and the scientific method of Peirce.{{citation needed|date=January 2015}}
+
+===Data collection===
+Statistical theory provides a guide to comparing methods of [[data collection]], where the problem is to generate informative data using [[Optimization (mathematics)|optimization]] and [[randomization]] while measuring and controlling for [[observational error]].<ref>{{cite journal| author=[[Charles Sanders Peirce]] and [[Joseph Jastrow]]|year=1885|title=On Small Differences in Sensation| journal=Memoirs of the National Academy of Sciences|volume=3|pages=73–83|url=http://psychclassics.yorku.ca/Peirce/small-diffs.htm}} http://psychclassics.yorku.ca/Peirce/small-diffs.htm</ref><ref>{{cite journal|doi=10.1086/354775|first=Ian |last=Hacking|  author-link=Ian Hacking | title=Telepathy: Origins of Randomization in Experimental Design|journal=[[Isis (journal)|Isis]]|issue=3|volume=79|date=September 1988 |pages=427–451|jstor=234674 |mr=1013489}}</ref><ref>{{cite journal|doi=10.1086/444032|author=[[Stephen M. Stigler]]|title=A Historical View of Statistical Concepts in Psychology and Educational Research| journal=[[American Journal of Education]]| volume=101|issue=1|date=November 1992|pages=60–70}}</ref> Optimization of data collection reduces the cost of data while satisfying statistical goals,<ref name=OptDoE>Atkinson et al. (2007)</ref><ref>{{cite book |author-link=Jack Kiefer (mathematician)|last=Kiefer|first=Jack&nbsp;Carl|title=Jack&nbsp;Carl Kiefer: Collected papers&nbsp;III—Design of experiments| editor1-link=Lawrence D. Brown|editor1-last=Brown|editor2-first=Ingram|editor2-link=Ingram Olkin|editor2-last=Olkin|editor3-first=Jerome|editor3-last=Sacks|editor4-first=Henry P.|display-editors = 3 |editor4-last=Wynn|editor4-link=Henry P. Wynn|publisher=Springer-Verlag and the Institute of Mathematical Statistics |year=1985|pages=718+xxv|isbn=0-387-96004-X|editor1-first=Lawrence D.}}</ref> while [[randomization]] allows reliable inferences.  Statistical theory provides a basis for good data collection and the structuring of investigations in the topics of:
+*[[Design of experiments]] to estimate treatment effects, to test hypotheses, and to optimize responses.<ref name="OptDoE"/><ref>Hinkelmann & Kempthorne (2008)</ref><ref>Bailey (2008).</ref>
+*[[Survey sampling]] to describe [[statistical population|populations]]<ref>Kish (1965)</ref><ref>Cochran (1977)</ref><ref>Särndal et al. (1992)</ref>
+
+===Summarising data===
+The task of summarising statistical data in conventional forms (also known as [[descriptive statistics]]) is considered in theoretical statistics as a problem of defining what aspects of statistical samples need to be described and how well they can be described from a typically limited sample of data. Thus the problems theoretical statistics considers include:
+*Choosing [[summary statistics]] to describe a sample
+*Summarising [[probability distribution]]s of sample data while making limited assumptions about the form of distribution that may be met
+*Summarising the relationships between different quantities measured on the same items with a sample
+
+===Interpreting data===
+Besides the philosophy underlying [[statistical inference]], statistical theory has the task of considering the types of questions that [[data analyst]]s might want to ask about the problems they are studying and of providing data analytic techniques for answering them. Some of these tasks are:
+*Summarising populations in the form of a fitted distribution or [[probability density function]]
+*Summarising the relationship between variables using some type of [[regression analysis]]
+*Providing ways of predicting the outcome of a random quantity given other related variables
+*Examining the possibility of reducing the number of variables being considered within a problem (the task of [[Dimension reduction]])
+When a statistical procedure has been specified in the study protocol, then statistical theory provides well-defined probability statements for the method when applied to all populations that could have arisen from the randomization used to generate the data. This provides an objective way of estimating parameters, estimating confidence intervals, testing hypotheses, and selecting the best. Even for observational data, statistical theory provides a way of calculating a value that can be used to interpret a sample of data from a population, it can provide a means of indicating how well that value is determined by the sample, and thus a means of saying corresponding values derived for different populations are as different as they might seem; however, the reliability of inferences from post-hoc observational data is often worse than for planned randomized generation of data.
+
+===Applied statistical inference===
+Statistical theory provides the basis for a number of data-analytic approaches that are common across scientific and social research. [[Interpreting statistical data|Interpreting data]] is done with one of the following approaches:
+*[[estimation theory|Estimating parameters]]
+*Providing a [[Interval estimation|range of values]] instead of a [[point estimate]]
+*[[Statistical hypothesis testing|Testing statistical hypotheses]]
+
+Many of the standard methods for those approaches rely on certain [[statistical assumption]]s (made in the derivation of the methodology) actually holding in practice. Statistical theory studies the consequences of departures from these assumptions. In addition it provides a range of [[robust statistic|robust statistical techniques]] that are less dependent on assumptions, and it provides methods checking whether particular assumptions are reasonable for a given data set.
+
+==See also==
+*[[List of statistical topics]]
+*[[Foundations of statistics]]
+
+== References ==
+=== Citations ===
+{{Reflist}}
+
+=== Sources ===
+{{refbegin}}
+* {{cite book |author1=Atkinson, A. C. |author2=Donev, A. N.|author3= Tobias, R. D. |title = Optimum Experimental Designs, with SAS |url = https://books.google.com/books?id=oIHsrw6NBmoC%7C |publisher= [[Oxford University Press]] |year=2007 |pages=511+xvi |isbn=978-0-19-929660-6 }}
+* {{cite book |author=Bailey, R. A |title=Design of Comparative Experiments |url = http://www.maths.qmul.ac.uk/~rab/DOEbook/ |publisher=[[Cambridge University Press]] |year=2008 |isbn=978-0-521-68357-9 }} Pre-publication chapters are available on-line.
+*{{cite book
+|author=Cochran, William G.
+|author-link= William Gemmell Cochran
+|year=1977
+|title=Sampling Techniques
+|edition=Third
+|publisher=[[John Wiley & Sons]]
+|isbn=0-471-16240-X
+}}
+* Cox, D.R., Hinkley, D.V. (1974) ''Theoretical Statistics'', [[Chapman & Hall]]. {{isbn|0-412-12420-3}}
+* {{cite book
+|author=[[David Freedman (statistician)|Freedman, David A.]]
+|title=Statistical Models: Theory and Practice
+|publisher= [[Cambridge University Press]]
+|isbn=978-0-521-67105-7
+|year=2009
+|edition=Second}}
+*{{cite book
+|author=Hinkelmann, Klaus and [[Oscar Kempthorne|Kempthorne, Oscar]]
+|year=2008
+|title=Design and Analysis of Experiments
+|volume=I, II
+|edition=Second
+|publisher= [[John Wiley & Sons]]
+|isbn=978-0-470-38551-7}}
+* [[Leslie Kish|Kish, L.]] (1965), ''Survey Sampling'', [[John Wiley & Sons]]. {{ISBN|0-471-48900-X}}
+* {{citation |author-link1=Erich Leo Lehmann | last1=Lehmann | first1=E. L. | last2= Romano | first2= J. P. | title=Testing Statistical Hypotheses |year=2005 | edition= third | publisher= Springer}}.
+*{{cite book 
+|author=Särndal, Carl-Erik, Swensson, Bengt, and Wretman, Jan
+|year=1992
+|title=Model Assisted Survey Sampling
+|publisher= [[Springer-Verlag]]
+|isbn=0-387-40620-4
+}}
+{{refend}}
+
+==Further reading==
+* [[Charles Sanders Peirce|Peirce, C. S.]]
+** (1876), "Note on the Theory of the Economy of Research" in ''Coast Survey Report'', pp.&nbsp;197–201 (Appendix No. 14), [http://docs.lib.noaa.gov/rescue/cgs/001_pdf/CSC-0025.PDF#page=222 NOAA PDF Eprint]. Reprinted 1958 in ''Collected Papers of Charles Sanders Peirce'' '''7''', paragraphs 139–157 and in 1967 in ''[http://or.journal.informs.org/cgi/content/abstract/15/4/643 Operations Research]'' '''15''' (4): pp.&nbsp;643–648, [https://www.jstor.org/stable/168276 Abstract from JSTOR]. 
+** (1967) {{cite journal|last1=Peirce|first1=C. S.|title=Note on the Theory of the Economy of Research|journal=Operations Research|volume=15|pages=643|year=1967|doi=10.1287/opre.15.4.643|issue=4}}
+** (1877–1878), "[[Charles Sanders Peirce bibliography#illus|Illustrations of the Logic of Science]]" 
+** (1883), "[[Charles Sanders Peirce bibliography#SIL|A Theory of Probable Inference]]" 
+** and [[Joseph Jastrow|Jastrow, Joseph]] (1885), "On Small Differences in Sensation" in ''Memoirs of the National Academy of Sciences'' '''3''': pp.&nbsp;73–83. [http://psychclassics.yorku.ca/Peirce/small-diffs.htm Eprint].
+* {{cite book
+|author1=Bickel, Peter J.  |author2=Doksum, Kjell A.
+ |name-list-style=amp |title=Mathematical Statistics: Basic and Selected Topics
+|volume=I
+|edition=Second (updated printing 2007) 
+|year=2001
+|publisher=Pearson Prentice-Hall
+|isbn=0-13-850363-X
+}}
+*Davison, A.C. (2003) ''Statistical Models''. Cambridge University Press. {{isbn|0-521-77339-3}}
+* {{cite book|author=[[Erich Leo Lehmann|Lehmann, Erich]]| title=Theory of Point Estimation|year=1983}}
+* {{cite book
+|author1=Liese, Friedrich  |author2=Miescke, Klaus-J.
+ |name-list-style=amp |title=Statistical Decision Theory: Estimation, Testing, and Selection
+|year=2008
+|publisher=Springer
+|isbn=0-387-73193-8
+}}
+
+==External links==
+*{{Commonscat-inline}}
+
+{{Statistics|inference}}
+{{DEFAULTSORT:Statistical Theory}}
+[[Category:Statistical theory| ]]

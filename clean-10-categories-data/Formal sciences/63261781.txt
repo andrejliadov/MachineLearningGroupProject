@@ -1,0 +1,36 @@
+{{short description|Concept in logic}}
+A '''finite game''' (sometimes called a '''founded game'''<ref name="Translating'">{{cite journal |title=Translating the hypergame paradox: Remarks on the set of founded elements of a relation |journal=Journal of Philosophical Logic |date=October 1996 |volume=25 |issue=5 |pages=545–557 |doi=10.1007/BF00257385 |url=https://www.researchgate.net/publication/226498798|last1=Bernardi |first1=Claudio |last2=d'Agostino |first2=Giovanna }}</ref> or a '''well-founded game'''<ref name="Stanford">{{cite web |title=Self-Reference |url=https://plato.stanford.edu/entries/self-reference/ |website=Stanford Encyclopedia of Philosophy |publisher=Stanford University |accessdate=2 March 2020 |date=Aug 31, 2017}}</ref>)  is a [[two-player game]] which is assured to end after a [[wikt:finite|finite]] number of moves. Finite games may have an [[Infinity|infinite]] number of possibilities or even an unbounded number of moves, so long as they are guaranteed to end in a finite number of turns.<ref name="Cornell2006">{{cite web |title=Hypergame |url=http://pi.math.cornell.edu/~mec/2006-2007/Games/hypergame.html |publisher=Cornell University |accessdate=2 March 2020}}</ref>
+
+==Formal definition==
+[[William S. Zwicker|William Zwicker]] defined a game, ''G'', to be ''totally finite'' if it met the following five conditions:<ref name="Zwicker">{{cite journal |last1=Zwicker |first1=William |title=Playing Games with Games: The Hypergame Paradox |journal=The American Mathematical Monthly |date=July 1987 |volume=94 |issue=6 |pages=507–514 |doi=10.2307/2322840 |publisher=Mathematical Association of America|jstor=2322840 }}</ref>
+# Two players, '''I''' and '''II''', move alternately, '''I''' going first. Each has complete knowledge of the other's moves.
+# There is no chance involved.
+# There are no ties (when a play of ''G'' is complete, there is one winner).
+# Every play ends after finitely many moves.
+# At any point in a play of ''G'', there are but finitely many legal possibilities for the next move.
+
+==Examples==
+* [[Tic Tac Toe]]
+* [[Chess]]<ref>{{cite web |title=Game theory |url=https://www.britannica.com/science/game-theory/Two-person-constant-sum-games |website=Encyclopedia Britannica}}</ref>
+* [[Checkers]]
+* [[Poker]]
+* The game where player one chooses any number and immediately wins (this is an example of a finite game with infinite possibilities)<ref name="Cornell2006"/>
+* The game where player one names any number N, then N moves pass with nothing happening before player one wins (this is an example of a finite game with an unbounded number of moves)<ref name="Cornell2006"/>
+
+==Supergame<!--'Supergame (finite game)' redirects here-->==
+A '''supergame'''<!--boldface per WP:R#PLA--> is a variant of the finite game invented by William Zwicker. Zwicker defined a supergame to have the following rules:
+
+"On the first move, '''I''' name any totally finite game ''G'' (called the subgame). The players then proceed to play ''G'', with '''II''' playing the role of '''I''' while ''G'' is being played. The winner of the play of the subgame is declared to be the winner of the play of the supergame."<ref name="Zwicker"/>
+
+Zwicker notes that a supergame satisfies properties 1-4 of a totally finite game, but not property 5. He defines games of this type to be ''somewhat finite.''<ref name="Zwicker"/>
+
+==Hypergame paradox==
+{{anchor|Hypergame}}A '''hypergame''' has the same rules as a super game except that '''I''' may name any somewhat finite game on the first move. The hypergame is closely related to the "hypergame paradox" a self-referential, set-theoretic paradox like [[Russell's paradox]] and [[Cantor's paradox]].<ref name="Stanford"/>
+
+The '''hypergame paradox''' arises from trying to answer the question ''"Is a hypergame somewhat finite?"'' The paradox, as Zwicker note, satisfies conditions 1- 4 making it somewhat finite in the same way a supergame was.<ref name="Stanford"/>  However, if hypergame is a somewhat finite game, then play can proceed infinitely with both players choosing hypergame as their subgame forever. This infinite would appear to violate property 4, making the hypergame not somewhat finite. Thus, the paradox.<ref name="Translating'"/>
+
+==References==
+{{Reflist}}
+
+[[Category:Logic| ]]
+[[Category:Game theory| ]]

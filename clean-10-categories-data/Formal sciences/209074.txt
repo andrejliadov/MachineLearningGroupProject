@@ -1,0 +1,96 @@
+{{for|the star system|Mizar (star)}}
+{{Infobox programming language
+ | name                   = Mizar
+ | logo                   = [[File:Mizar system logo.gif]]
+ | logo caption           = 
+ | screenshot             = Mizar MathWiki screenshot.png
+ | collapsible = yes
+ | screenshot caption     = Mizar MathWiki screenshot
+ | file ext               = .miz .voc
+ | paradigm               = [[Declarative programming|Declarative]]
+ | scope                  =
+ | released               = 1973
+ | designer               =  [[Andrzej Trybulec]]
+ | developer              = 
+ | latest release version = 
+ | latest release date    = <!-- {{start date and age|YYYY|MM|DD}} -->
+ | latest preview version = 
+ | latest preview date    = <!-- {{start date and age|YYYY|MM|DD}} -->
+ | typing                 = [[Weak typing|Weak]], [[Static typing|static]]
+ | implementations        = 
+ | dialects               = 
+ | influenced by          = [[Automath]]
+ | influenced             = [[OMDoc]], [[HOL Light]] and [[Coq]] mizar modes
+ | programming language   = 
+ | platform               = 
+ | operating system       = 
+ | license                = 
+ | website                = [http://mizar.uwb.edu.pl/ www.mizar.org]
+ | wikibooks              = 
+}}
+
+The '''Mizar system''' consists of a [[formal language]] for writing mathematical definitions and proofs, a [[proof assistant]], which is able to [[Automated proof checking|mechanically check]] proofs written in this language, and a library of [[mathematical formalization|formalized mathematics]], which can be used in the proof of new theorems.<ref name="A Brief Overview of Mizar">{{cite journal | last = Naumowicz | first = Adam |author2=Artur Korniłowicz | title = A Brief Overview of Mizar | journal = Theorem Proving in Higher Order Logics | year = 2009 | volume = 5674 | pages = 67–72 | series = Lecture Notes in Computer Science | doi=10.1007/978-3-642-03359-9_5| isbn = 978-3-642-03358-2 }}</ref> The system is maintained and developed by the Mizar Project, formerly under the direction of its founder [[Andrzej Trybulec]].
+
+In 2009 the Mizar Mathematical Library was the largest coherent body of strictly formalized mathematics in existence.<ref name="Arrow">{{cite journal | last = Wiedijk | first = Freek | title = Formalizing Arrow's theorem | journal = [[Sādhanā (journal)|Sādhanā]] | year = 2009 | volume = 34 | pages = 193–220 | issue = 1 | doi=10.1007/s12046-009-0005-1| hdl = 2066/75428 | doi-access = free }}</ref>
+
+== History ==
+
+The Mizar Project was started around 1973 by [[Andrzej Trybulec]] as an attempt to reconstruct mathematical [[vernacular]] so it can be checked by a computer.<ref>{{cite journal | last = Matuszewski | first = Roman |author2=Piotr Rudnicki | title = Mizar: the first 30 years | journal = Mechanized Mathematics and Its Applications | year = 2005 | volume = 4 | url = http://mizar.org/people/romat/MatRud2005.pdf}}</ref> Its current goal, apart from the continual development of the Mizar System, is the collaborative creation of a large library of formally verified proofs, covering most of the core of modern mathematics. This is in line with the influential [[QED manifesto]].<ref>{{cite web | last = Wiedijk | first = Freek | title = Mizar | url = https://www.cs.ru.nl/~freek/mizar/ | accessdate = 24 July 2018}}</ref>
+
+Currently the project is developed and maintained by research groups at [[Białystok University]], Poland, the [[University of Alberta]], Canada, and [[Shinshu University]], Japan. While the Mizar proof checker remains proprietary,<ref name="not-open-source">[http://old.nabble.com/TPHOLs-becomes-ITP-%28fwd%29-td19435554.html#a19493250 Mailing list discussion] {{webarchive|url=https://web.archive.org/web/20111009115553/http://old.nabble.com/TPHOLs-becomes-ITP-(fwd)-td19435554.html |date=2011-10-09 }} referring to the close-sourcing of Mizar.</ref> the Mizar Mathematical Library—the sizable body of formalized mathematics that it verified—is licensed open-source.<ref name="library-open-source">[http://mizar.uwb.edu.pl/forum/archive/1104/msg00000.html Mailing list announcement] referring to the open-sourcing of MML.</ref>
+
+Papers related to the Mizar system regularly appear in the peer-reviewed journals of the mathematic formalization academic community. These include ''[[Studies in Logic, Grammar and Rhetoric]]'', ''[[Intelligent Computer Mathematics]]'', ''[[Interactive Theorem Proving]]'', ''[[Journal of Automated Reasoning]]'' and the ''[[Journal of Formalized Reasoning]]''.
+
+== Mizar language ==
+
+The distinctive feature of the Mizar language is its readability. As is common in mathematical text, it relies on [[classical logic]] and a [[declarative programming|declarative style]].<ref>{{cite journal | last = Geuvers | first = H. | title = Proof assistants: History, ideas and future | journal = Sadhana | year = 2009 | volume = 34 | issue = 1 | pages = 3–25 | doi = 10.1007/s12046-009-0001-5 | doi-access = free }}</ref> Mizar articles are written in ordinary [[ASCII]], but the language was designed to be close enough to the mathematical vernacular that most mathematicians could read and understand Mizar articles without special training.<ref name="A Brief Overview of Mizar"/> Yet, the language enables the increased level of formality necessary for [[automated proof checking]].
+
+For a proof to be admitted, all steps have to be justified either by elementary logical arguments or by citing previously verified proofs.<ref>{{cite journal | last = Wiedijk | first = Freek | title = Formal Proof--Getting Started | journal = Notices of the AMS |volume=55 |issue=11 |pages=1408–1414 | year = 2008 | url = http://www.ams.org/notices/200811/tx081101408p.pdf}}</ref> This results in a higher level of rigor and detail than is customary in mathematical textbooks and publications. Thus, a typical Mizar article is about four times as long as an equivalent paper written in ordinary style.<ref>{{cite web | last = Wiedijk | first = Freek | title = The "de Bruijn factor" | url = https://www.cs.ru.nl/~freek/factor/index.html | accessdate = 24 July 2018}}</ref>
+
+Formalization is relatively labor-intensive, but not impossibly difficult. Once one is versed in the system, it takes about one week of full-time work to have a textbook page formally verified. This suggests that its benefits are now in the reach of applied fields such as [[probability theory]] and [[economics]].<ref name="Arrow"/>
+
+== Mizar Mathematical Library ==
+
+The Mizar Mathematical Library (MML) includes all theorems to which authors can refer in newly written articles. Once approved by the proof checker they are further evaluated in a process of [[peer-review]] for appropriate contribution and style. If accepted they are published in the associated ''Journal of Formalized Mathematics''<ref name="Journal of Formalized Mathematics">[http://fm.mizar.org/ ''Journal of Formalized Mathematics'']</ref> and added to the MML.
+
+=== Breadth ===
+
+As of July 2012, the MML included 1150 articles written by 241 authors.<ref name="MML Query">[http://mmlquery.mizar.org The MML Query search engine]</ref> In aggregate, these contain more than 10,000 formal definitions of mathematical objects and about 52,000 theorems proved on these objects. More than 180 named mathematical facts have so benefited from formal codification.<ref name="MML facts">{{cite web | title = A list of named theorems in the MML | url = http://mmlquery.mizar.org/mmlquery/fillin.php?filledfilename=mml-facts.mqt&argument=number+102 | accessdate = 22 July 2012}}</ref> Some examples are the [[Hahn–Banach theorem]], [[Kőnig's lemma]], [[Brouwer fixed point theorem]], [[Gödel's completeness theorem]] and [[Jordan curve theorem]].
+
+This breadth of coverage has led some<ref>{{cite journal | last = Wiedijk | first = Freek | title = The QED Manifesto Revisited | journal = From Insight to Proof: Festschrift in Honour of Andrzej Trybulec | year = 2007 | volume = 10 | series = [[Studies in Logic, Grammar and Rhetoric]] | issue = 23 | url = http://logika.uwb.edu.pl/studies/vol23.html}}</ref> to suggest Mizar as one of the leading approximations to the [[QED manifesto|QED utopia]] of encoding all core mathematics in computer verifiable form.
+
+=== Availability ===
+
+All MML articles are available in [[PDF]] form as the papers of the ''Journal of Formalized Mathematics''.<ref name="Journal of Formalized Mathematics"/> The full text of the MML is distributed with the Mizar checker and can be freely downloaded from the Mizar website. In an ongoing recent project<ref>[https://archive.today/20130222164311/http://foundations.cs.ru.nl/fndswiki/Research/MathWiki The MathWiki project homepage]</ref> the library was also made available in an experimental [[wiki]] form<ref name="MML wiki">[https://web.archive.org/web/20131202235227/http://mws.cs.ru.nl/mwiki/ The MML in wiki form]</ref> that only admits edits when they are approved by the Mizar checker.<ref>{{cite journal | last = Alama | first = Jesse |author2=Kasper Brink |author3=Lionel Mamane |author4=Josef Urban | title = Large Formal Wikis: Issues and Solutions | journal = Intelligent Computer Mathematics | year = 2011 | volume = 6824 | series = Lecture Notes in Computer Science | pages = 133–148 | doi=10.1007/978-3-642-22673-1_10| arxiv=1107.3212 | isbn = 978-3-642-22672-4 }}</ref>
+
+The MML Query website<ref name="MML Query"/> implements a powerful search engine for the contents of the MML. Among other abilities, it can retrieve all MML theorems proved about any particular type or operator.<ref>[http://mmlquery.mizar.org/cgi-bin/mmlquery/emacs_search?input=(symbol+to_power+|+notation+|+constructor+|+occur+|+th)+ordered+by+number+of+ref An example of an MML query], yielding all theorems proved on the [[exponent]] operator, by the number of times they are cited in subsequent theorems.</ref><ref>[http://mmlquery.mizar.org/cgi-bin/mmlquery/emacs_search?input=(atleast+*+(+PROB_1:modenot+3+ref)+%7C+th)+ordered+by+number+of+ref Another example of an MML query], yielding all theorems proved on [[sigma field]]s.</ref>
+
+=== Logical structure ===
+
+The MML is built on the axioms of the [[Tarski–Grothendieck set theory]]. Even though semantically [[implementation of mathematics in set theory|all objects are sets]], the language allows one to define and use [[weak typing|syntactical weak types]]. For example, a set may be declared to be of type '''Nat''' only when its internal structure conforms with a particular list of requirements. In turn, this list serves as the definition of the [[natural numbers]] and the set of all the sets that conform to this list is denoted as '''NAT'''.<ref>{{cite journal | last = Grabowski | first = Adam |author2=Artur Kornilowicz |author3=Adam Naumowicz  | title = Mizar in a Nutshell | journal = [[Journal of Formalized Reasoning]] | year = 2010 | volume = 3 | issue = 2 | pages = 152–245 | url = http://jfr.unibo.it/article/view/1980}}</ref> This implementation of types seeks to reflect the way most mathematicians formally think of symbols<ref>{{cite book | last = Taylor | first = Paul | title = Practical Foundations of Mathematics | year = 1999 | publisher = [[Cambridge University Press]] | isbn = 9780521631075 | url = http://www.cs.man.ac.uk/~pt/Practical-Foundations/html/ | access-date = 2012-07-24 | archive-url = https://web.archive.org/web/20150623031212/http://www.cs.man.ac.uk/~pt/Practical-Foundations/html/ | archive-date = 2015-06-23 | url-status = dead }}</ref> and so streamline codification.
+
+== Mizar Proof Checker ==
+
+Distributions of the Mizar Proof Checker for all major operating systems are freely available for download at the Mizar Project website. Use of the proof checker is free for all non-commercial purposes. It is written in [[Free Pascal]] and the source code is available to all members of the Association of Mizar Users.<ref name="The Association of Mizar Users website">[http://mizar.uwb.edu.pl/sum/ The Association of Mizar Users website]</ref>
+
+== See also ==
+* [[Isar (Isabelle)]]
+* [[Metamath]]
+
+== References ==
+
+{{reflist|30em}}
+
+== External links ==
+
+* {{official website|http://mizar.uwb.edu.pl/}}
+
+{{authority control}}
+
+[[Category:Large-scale mathematical formalization projects]]
+[[Category:Proof assistants]]
+[[Category:Dependently typed languages]]
+[[Category:Educational math software]]
+[[Category:Mathematical societies]]
+[[Category:Pascal (programming language) software]]
+[[Category:Programming languages created in 1973]]

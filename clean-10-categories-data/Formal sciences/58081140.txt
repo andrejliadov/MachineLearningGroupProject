@@ -1,0 +1,39 @@
+{{Infobox rfam
+| Name = Actino-ugpB
+| image = RF02927.svg
+| width =
+| caption = Consensus [[secondary structure]] and [[sequence conservation]] of Actino-ugpB RNA
+| Symbol = Actino-ugpB
+| AltSymbols =
+| Rfam = RF02927
+| miRBase =
+| miRBase_family =
+| RNA_type = [[Gene]]; [[Small RNA|sRNA]]
+| Tax_domain =
+| GO = 
+| SO = {{SO|0001263}}
+| CAS_number =
+| EntrezGene =
+| HGNCid =
+| OMIM =
+| RefSeq =
+| Chromosome =
+| Arm =
+| Band =
+| LocusSupplementaryData =
+}}
+
+{{DISPLAYTITLE:Actino-''ugpB'' RNA motif}}
+The '''Actino-''ugpB'' RNA motif''' is a conserved [[RNA]] structure that was [[Bioinformatics discovery of non-coding RNAs|discovered by bioinformatics]].<ref name="Weinberg2017b">{{cite journal |vauthors=Weinberg Z, Lünse CE, Corbino KA, Ames TD, Nelson JW, Roth A, Perkins KR, Sherlock ME, Breaker RR |title=Detection of 224 candidate structured RNAs by comparative analysis of specific subsets of intergenic regions |journal=Nucleic Acids Res. |volume=45 |issue=18 |pages=10811–10823 |date=October 2017 |pmid=28977401 |pmc=5737381 |doi=10.1093/nar/gkx699 |url=}}</ref>
+Actino-''ugpB'' motifs are found in strains of the species ''[[Gardnerella vaginalis]]'', within the phylum [[Actinobacteria]].
+
+It is ambiguous whether Actino-''ugpB'' RNAs function as [[cis-regulatory element]]s or whether they operate in ''trans''.  Many of the RNAs are upstream of the gene 'ugpB', which encodes a protein putatively involved in [[sugar]] [[secretion|transport]].  However, several of the RNAs are not located upstream of a protein-coding [[gene]].  Structurally, the motif consists of two hairpins with conserved [[nucleotide]]s located in the stems and outside of the hairpins, but not in their terminal loops.
+
+==References==
+{{Reflist}}
+
+[[Category:RNA]]
+[[Category:Bioinformatics]]
+
+
+{{bioinformatics-stub}}

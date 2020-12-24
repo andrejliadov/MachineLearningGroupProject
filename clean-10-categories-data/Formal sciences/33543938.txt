@@ -1,0 +1,256 @@
+{{Short description|Overview of and topical guide to mathematics}}{{Math topics TOC}}
+'''[[Mathematics]]''' is a field of study that investigates topics such as [[number]], [[space]], [[Mathematical structure|structure]], and [[Change (mathematics)|change]]. More on the relationship between mathematics and [[science]] can be found at [[science#Mathematics|Mathematics and science]].
+
+{{TOC limit|limit=3}}
+
+==Philosophy==
+===Nature===
+* [[Definitions of mathematics]] – Mathematics has no generally accepted definition. Different schools of thought, particularly in philosophy, have put forth radically different definitions, all of which are controversial.
+* [[Language of mathematics]] is the system used by [[mathematician]]s to communicate [[Mathematics|mathematical]] ideas among themselves, and is distinct from natural languages in that it aims to communicate abstract, logical ideas with precision and unambiguity.<ref name=":0">{{Cite web|date=2019-08-01|title=The Definitive Glossary of Higher Mathematical Jargon|url=https://mathvault.ca/math-glossary/|access-date=2020-08-08|website=Math Vault|language=en-US}}</ref><ref>{{Cite web|url=http://www.cut-the-knot.org/language/MathIsLanguage.shtml|title=Mathematics Is a Language|last=Bogomolny|first=Alexander |author-link=Alexander Bogomolny|website=www.cut-the-knot.org|access-date=2017-05-19}}</ref>
+* [[Philosophy of mathematics]] – its aim is to provide an account of the nature and methodology of mathematics and to understand the place of mathematics in people's lives.
+:* [[Classical mathematics]] refers generally to the mainstream approach to mathematics, which is based on classical [[logic]] and [[ZFC set theory]].
+:* [[Constructivism (philosophy of mathematics)|Constructive mathematics]] asserts that it is necessary to find (or "construct") a mathematical object to prove that it exists. In classical mathematics, one can prove the existence of a mathematical object without "finding" that object explicitly, by assuming its non-existence and then deriving a contradiction from that assumption.
+:* [[Impredicativity|Predicative mathematics]]
+
+===Mathematics is===
+* An [[academic discipline]] – branch of knowledge that is taught at all levels of education and researched typically at the college or university level. Disciplines are defined (in part), and recognized by the academic journals in which research is published, and the learned societies and academic departments or faculties to which their practitioners belong.
+* A [[formal science]] – branch of knowledge concerned with the properties of formal systems based on definitions and rules of inference. Unlike other sciences, the formal sciences are not concerned with the validity of theories based on observations in the physical world.
+
+===Concepts===
+* [[Mathematical object]] {{emdash}} an [[abstract concept]] in [[mathematics]]; an ''object'' is anything that has been (or could be) formally defined, and with which one may do [[deductive reasoning]] and [[mathematical proof]]s. Each branch of mathematics has its own objects.{{efn|For a partial list of objects, see [[Mathematical object]].}}{{efn|See [[Object (philosophy)|Object]] and [[Abstract and concrete]] for further information on the philosophical foundations of objects.}}
+* [[Mathematical structure]] {{emdash}} a [[Set (mathematics)|set]] endowed with some additional features on the set (e.g., [[Operation (mathematics)|operation]], [[Relation (math)|relation]], [[Metric (mathematics)|metric]], [[Topology#Topologies on sets|topology]]).<ref>{{Cite web|url=https://mathvault.ca/math-glossary/#structure|title=The Definitive Glossary of Higher Mathematical Jargon — Mathematical Structure|date=2019-08-01|website=Math Vault|language=en-US|access-date=2019-12-09}}</ref> A partial list of possible structures are [[Measure theory|measures]], [[algebraic structure]]s ([[group (mathematics)|group]]s, [[field (mathematics)|field]]s, etc.), [[Topology|topologies]], [[Metric space|metric structures]] ([[Geometry|geometries]]), [[Order theory|orders]], [[Event structure|events]], [[equivalence relation]]s, [[differential structure]]s, and [[Category (category theory)|categories]].
+:* [[Equivalent definitions of mathematical structures]]
+
+=={{anchor|Subjects}}Branches and subjects==
+===Quantity===
+{{Main Article|Mathematics#Quantity|Quantity}}
+{{see also|Outline of arithmetic|History of arithmetic}}
+*[[Number theory]] is a branch of [[pure mathematics]] devoted primarily to the study of the [[integers]] and [[integer-valued function]]s.
+*[[Arithmetic]] {{emdash}} (from the [[Ancient Greek|Greek]] [[wikt:en:ἀριθμός#Ancient Greek|ἀριθμός]] ''arithmos'', 'number' and [[wikt:en:τική#Ancient Greek|τική]] [[wikt:en:τέχνη#Ancient Greek|[τέχνη]]], ''tiké [téchne]'', 'art') is a branch of mathematics that consists of the study of numbers and the properties of the traditional [[operation (mathematics)|mathematical operations]] on them.
+:*[[Elementary arithmetic]] is the part of arithmetic which deals with basic operations of addition, subtraction, multiplication, and division.
+:*[[Modular arithmetic]] 
+:*[[Second-order arithmetic]] is a collection of axiomatic systems that formalize the natural numbers and their subsets. 
+:*[[Peano axioms]] also known as the Dedekind–Peano axioms or the Peano postulates, are axioms for the natural numbers presented by the 19th century Italian mathematician Giuseppe Peano. 
+:*[[Floating-point arithmetic]] is arithmetic using formulaic representation of real numbers as an approximation to support a trade-off between range and precision.
+*[[Numbers]] {{emdash}} a [[mathematical object]] used to count, measure, and label.
+:*[[List of types of numbers]]
+::*[[Natural number]], [[Integer]], [[Rational number]], [[Real number]], [[Irrational number]], [[Imaginary number]], [[Complex number]], [[Hypercomplex number]], [[p-adic number]]
+::*[[Negative number]], [[Positive number]], [[Parity (mathematics)]]
+::*[[Prime number]], [[Composite number]]
+::*[[0]], [[Zero]], [[Infinitesimals]]
+:*[[List of numbers in various languages]]
+:*[[Numeral system]], [[Unary numeral system]], [[Numeral prefix]], [[List of numeral systems]], [[List of numeral system topics]]
+:*[[Counting]], [[Number line]], [[Numerical digit]]
+::*[[Radix]], [[Radix economy]], [[Base (exponentiation)]], [[Table of bases]]
+:*[[Mathematical notation]], [[Infix notation]], [[Scientific notation]], [[Positional notation]], [[Notation in probability and statistics]], [[History of mathematical notation]], [[List of mathematical notation systems]]
+:*[[Infinity]], [[Hyperreal numbers]], [[Surreal numbers]]
+:*[[Fractions]], [[Decimal]], [[Decimal separator]]
+*[[Operation (mathematics)]] {{emdash}} an operation is a [[Function (mathematics)|mathematical function]] which takes zero or more input values called [[operand]]s, to a well-defined output value. The number of operands is the [[arity]] of the operation.<ref>{{Cite web|url=https://mathvault.ca/math-glossary/#operation|title=The Definitive Glossary of Higher Mathematical Jargon — Operation|date=2019-08-01|website=Math Vault|language=en-US|access-date=2019-12-10}}</ref> 
+:*[[Calculation]], [[Computation]], [[Expression (mathematics)]], [[Order of operations]], [[Algorithm]]
+:*Types of Operations: [[Binary operation]], [[Unary operation]], [[Nullary operation]]
+:*Operands: [[Order of operations]], [[Addition]], [[Subtraction]], [[Multiplication]], [[Division (mathematics)|Division]], [[Exponentiation]], [[Logarithm]], [[nth root|Root]]
+::*[[Function (mathematics)]], [[Inverse function]]
+::*[[Commutative property]], [[Anticommutative property]], [[Associative property]], [[Additive identity]], [[Distributive property]]
+::*[[Summation]], [[Product (mathematics)]], [[Divisor]], [[Quotient]], [[Greatest common divisor]], [[Quotition and partition]], [[Remainder]], [[Fractional part]]
+::*[[Subtraction without borrowing]], [[Long division]], [[Short division]], [[Modulo operation]], [[Chunking (division)]], [[Multiplication and repeated addition]], [[Euclidean division]], [[Division by zero]]
+:*[[Plus and minus signs]], [[Multiplication sign]], [[Division sign]], [[Equals sign#Usage in mathematics and computer programming|Equals sign]]
+:*[[Equality (mathematics)]], [[Inequality (mathematics)]], [[Logical equivalence]]
+:*[[Ratio]]
+*[[Variable (mathematics)]], [[Constant (mathematics)]]
+*[[Measurement]]
+
+===Structure===
+{{Main Article|Mathematics#Structure|Mathematical structure}}
+{{see also|Outline of algebra|Outline of algebraic structures}}
+*[[Algebra]]
+*[[Abstract algebra]]
+*[[Linear algebra]]
+:*[[List of linear algebra topics]]
+*[[Number theory]]
+*[[Order theory]]
+*[[Function (mathematics)]]
+
+===Space===
+{{Main Article|Mathematics#Space|Space (mathematics)}}
+{{see also|Outline of geometry|Outline of trigonometry}}
+*[[Geometry]]
+*[[Algebraic geometry]]
+:*[[List of algebraic geometry topics]]
+*[[Trigonometry]]
+*[[Differential geometry]]
+*[[Topology]]
+*[[Fractal geometry]]
+
+===Change===
+{{Main Article|Mathematics#Change|Change (mathematics)}}
+{{See also|Outline of calculus|Timeline of calculus and mathematical analysis}}
+*[[Calculus]]
+*[[Vector calculus]]
+*[[Differential equation]]s
+*[[Dynamical system]]s
+*[[Chaos theory]]
+*[[Mathematical analysis|Analysis]]
+
+===Foundations and philosophy===
+{{Main Article|Foundations of mathematics}}
+{{See also|Outline of category theory}}
+*[[Philosophy of mathematics]]
+*[[Category theory]]
+*[[Set theory]]
+*[[Type theory]]
+
+===Mathematical logic===
+{{see also|Outline of mathematical logic|Outline of logic}}
+{{Main Article|Mathematical logic}}
+*[[Model theory]]
+*[[Proof theory]]
+*[[Set theory]]
+*[[Type theory]]
+*[[Recursion theory]]
+*[[Theory of Computation]]
+*[[List of logic symbols]]
+*[[Second-order arithmetic]] is a collection of axiomatic systems that formalize the natural numbers and their subsets. 
+*[[Peano axioms]] also known as the Dedekind–Peano axioms or the Peano postulates, are axioms for the natural numbers presented by the 19th century Italian mathematician Giuseppe Peano.
+
+===Discrete mathematics===
+{{Main Article|Discrete mathematics}}
+{{See also|Outline of discrete mathematics}}
+*[[Combinatorics]] ([[outline of combinatorics|outline]])
+*[[Cryptography]]
+*[[Graph theory]]
+
+===Applied mathematics===
+{{Main Article|Applied mathematics}}
+{{See also|Outline of probability}}
+*[[Mathematical chemistry]]
+*[[Mathematical physics]]
+*[[Mechanics|Analytical mechanics]]
+*[[Fluid mechanics|Mathematical fluid dynamics]]
+*[[Numerical analysis]]
+*[[Control theory]]
+*[[Dynamical system]]s
+*[[Mathematical optimization]]
+*[[Operations research]]
+*[[Probability]]
+*[[Statistics]]
+*[[Game theory]]
+*[[Engineering mathematics]]
+*[[Mathematical economics]]
+*[[Financial mathematics]]
+*[[Information theory]]
+*[[Cryptography]]
+*[[Mathematical biology]]
+
+==History==
+{{Main Article|History of mathematics}}
+{{See also|List of mathematics history topics}}
+
+===Regional history===
+{{colbegin}}
+*[[Babylonian mathematics]]
+*[[Egyptian mathematics]]
+*[[Indian mathematics]]
+*[[Greek mathematics]]
+*[[Chinese mathematics]]
+*[[History of the Hindu–Arabic numeral system]]
+*[[Islamic mathematics]]
+*[[Japanese mathematics]]
+{{colend}}
+
+===Subject history===
+{{colbegin}}
+*[[History of combinatorics]]
+*[[History of arithmetic]]
+*[[History of algebra]]
+*[[History of geometry]]
+*[[History of calculus]]
+*[[History of logic]]
+*[[History of mathematical notation]]
+*[[History of trigonometry]]
+*[[History of writing numbers]]
+*[[History of statistics]]
+*[[History of probability]]
+*[[History of group theory]]
+*[[History of the function concept]]
+*[[History of logarithms]]
+*[[History of the Theory of Numbers]]
+*[[History of Grandi's series]]
+*[[History of manifolds and varieties]]
+{{colend}}
+
+==Psychology==
+*[[Mathematics education]]
+*[[Numeracy]]
+*[[Numerical Cognition]]
+*[[Subitizing]]
+*[[Mathematical anxiety]]
+*[[Dyscalculia]]
+*[[Acalculia]]
+*[[Ageometresia]]
+*[[Number sense]]
+*[[Numerosity adaptation effect]]
+*[[Approximate number system]]
+*[[Mathematical maturity]]
+
+==Influential mathematicians==
+See [[Lists of mathematicians]].
+
+==Mathematical notation==
+{{Main Article|Mathematical notation}}
+* [[List of mathematical abbreviations]]
+* [[List of mathematical symbols]]
+* [[List of mathematical symbols by subject]]
+* [[Table of mathematical symbols by introduction date]]
+* [[Notation in probability and statistics]]
+* [[List of logic symbols]]
+* [[Physical constant]]s
+* [[Greek letters used in mathematics, science, and engineering]]
+* [[Latin letters used in mathematics]]
+* [[Mathematical alphanumeric symbols]]
+* [[Mathematical operators and symbols in Unicode]]
+* [[ISO 31-11]] (Mathematical signs and symbols for use in physical sciences and technology)
+<!--
+* [[Wikipedia:Mathematical symbols]]
+* {{ml|Help:Advanced editing|Special characters}}
+* [[Help:Displaying a formula]]
+-->
+
+==Classification systems==
+*[[List of Dewey Decimal Classes#500-599 – Science|Mathematics in the Dewey Decimal Classification system]]
+<!--*[[Mathematics in the Library of Congress Classification system]]-->
+*''[[Mathematics Subject Classification]]'' – alphanumerical classification scheme collaboratively produced by staff of and based on the coverage of the two major mathematical reviewing databases, Mathematical Reviews and Zentralblatt MATH.
+
+==Journals and databases==
+{{Main article|List of mathematics journals}}
+*''[[Mathematical Reviews]]'' – journal and online database published by the American Mathematical Society (AMS) that contains brief synopses (and occasionally evaluations) of many articles in mathematics, statistics and theoretical computer science.
+*''[[Zentralblatt MATH]]'' – service providing reviews and abstracts for articles in pure and applied mathematics, published by Springer Science+Business Media. It is a major international reviewing service which covers the entire field of mathematics. It uses the Mathematics Subject Classification codes for organizing their reviews by topic.
+
+==See also==
+{{portal|Mathematics}}
+*[[Lists of mathematics topics]]
+*[[Areas of mathematics]]
+*[[Glossary of areas of mathematics]]
+
+==References==
+===Bibliography===
+
+===Citations===
+{{reflist}}
+
+===Notes===
+{{Notelist}}
+
+== External links ==
+{{Sister project links|Mathematics}}
+*[http://www.maa.org/press/maa-reviews/the-basic-library-list-maas-recommendations-for-undergraduate-libraries MAA Reviews – The Basic Library List – Mathematical Association of America]
+*[http://www.math.ucdavis.edu/~saito/books.html Naoki's Recommended Books, compiled by Naoki Saito, U. C. Davis]
+*[http://www.math.cornell.edu/~hatcher/Other/topologybooks.pdf A List of Recommended Books in Topology, compiled by Allen Hatcher, Cornell U.]
+*[http://ncatlab.org/nlab/show/books+in+algebraic+geometry Books in algebraic geometry in nLab]
+
+{{Outline footer}}
+
+[[Category:Mathematics|+]]
+[[Category:Fields of mathematics|+]]
+[[Category:Outlines of mathematics and logic|Mathematics]]
+[[Category:Wikipedia outlines|Mathematics]]
+[[Category:Mathematics-related lists]]

@@ -1,0 +1,20 @@
+'''Artstein's theorem''' states that a [[Nonlinear system#Nonlinear differential equations|nonlinear dynamical system]] in the control-affine form
+
+<math>\dot{\mathbf{x}} = \mathbf{f(x)} + \sum_{i=1}^m \mathbf{g}_i(\mathbf{x})u_i</math>
+
+has a differentiable [[control-Lyapunov function]] if and only if it admits a regular stabilizing feedback ''u''(''x''), that is a locally Lipschitz function on '''R'''<sup>n</sup>\{0}.<ref>{{Cite journal|last=Artstein|first=Zvi|date=1983|title=Stabilization with relaxed controls|journal=Nonlinear Analysis: Theory, Methods & Applications|language=en|volume=7|issue=11|pages=1163–1173|doi=10.1016/0362-546X(83)90049-4}}</ref>
+
+The original proof of [[Zvi Artstein]] proceeds by a nonconstructive argument. In 1989 [[Eduardo D. Sontag]] provided a constructive version of this theorem explicitly exhibiting the feedback.<ref>Sontag, Eduardo D. [http://citeseer.ist.psu.edu/sontag89universal.html A Universal Construction Of Artstein's Theorem On Nonlinear Stabilization]</ref><ref>{{Citation|last=Sontag|first=Eduardo D.|title=Nonlinear Analysis, Differential Equations and Control|chapter=Stability and stabilization: discontinuities and the effect of disturbances|date=1999|pages=551–598|editor-last=Clarke|editor-first=F. H.|publisher=Springer Netherlands|doi=10.1007/978-94-011-4560-2_10|arxiv=math/9902026|isbn=9780792356660|editor2-last=Stern|editor2-first=R. J.|editor3-last=Sabidussi|editor3-first=G.}}</ref>
+
+==See also==
+*[[Nonlinear control#Analysis%20and%20control%20of%20nonlinear%20systems|Analysis and control of nonlinear systems]]
+*[[Control-Lyapunov function]]
+
+==References==
+{{Reflist}}
+
+[[Category:Control theory]]
+[[Category:Theorems in dynamical systems]]
+
+
+{{mathapplied-stub}}

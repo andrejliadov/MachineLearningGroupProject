@@ -1,0 +1,181 @@
+'''Data-driven control systems''' are a broad family of [[Control theory|control systems]], in which the [[System identification|identification]] of the process model and/or the design of the controller are based entirely on ''experimental data'' collected from the plant.<ref>Bazanella, A.S., Campestrini, L., Eckhard, D. (2012). Data-driven controller design: the <math>H_2</math> approach. Springer, {{ISBN|978-94-007-2300-9}}, 208 pages.</ref>
+
+In many control applications, trying to write a mathematical model of the plant is considered a hard task, requiring efforts and time to the process and control engineers. This problem is overcome by ''data-driven'' methods, which allow to fit a system model to the experimental data collected, choosing it in a specific models class. The control engineer can then exploit this model to design a proper controller for the system. However, it is still difficult to find a simple yet reliable model for a physical system, that includes only those dynamics of the system that are of interest for the control specifications. The ''direct'' data-driven methods allow to tune a controller, belonging to a given class, without the need of an identified model of the system. In this way, one can also simply weight process dynamics of interest inside the control cost function, and exclude those dynamics that are out of interest.
+
+== Overview ==
+
+The ''standard'' approach to control systems design is organized in two-steps: 
+# Model identification aims at estimating a nominal model of the system <math>\widehat{G} = G\left(q; \widehat{\theta}_N\right)</math>, where <math>q</math> is the unit-delay operator (for discrete-time transfer functions representation) and <math>\widehat{\theta}_N</math> is the vector of parameters of <math>G</math> identified on a set of <math>N</math> data. Then, validation consists in constructing the ''uncertainty set'' <math>\Gamma</math> that contains the true system <math>G_0</math> at a certain probability level.
+# Controller design aims at finding a controller <math>C</math> achieving closed-loop stability and meeting the required performance with <math>\widehat{G}</math>.
+Typical objectives of [[System Identification|system identification]] are to have <math>\widehat{G}</math> as close as possible to <math>G_0</math>, and to have <math>\Gamma</math> as small as possible. However, from an [[System identification#Identification for control|identification for control]] perspective, what really matters is the performance achieved by the controller, not the intrinsic quality of the model.
+
+One way to deal with uncertainty is to design a controller that has an acceptable performance with all models in <math>\Gamma</math>, including <math>G_0</math>. This is the main idea behind [[robust control]] design procedure, that aims at building frequency domain uncertainty descriptions of the process. However, being based on worst-case assumptions rather than on the idea of averaging out the noise, this approach typically leads to ''conservative'' uncertainty sets. Rather, data-driven techniques deal with uncertainty by working on experimental data, and avoiding excessive conservativism.
+
+In the following, the main classifications of data-driven control systems are presented.
+
+=== Indirect and direct methods ===
+There are many methods available to control the systems. 
+The fundamental distinction is between '''indirect''' and '''direct''' controller design methods. The former group of techniques is still retaining the standard two-step approach, ''i.e.'' first a model is identified, then a controller is tuned based on such model. The main issue in doing so is that the controller is computed from the estimated model <math>\widehat{G}</math> (according to the [[Stochastic control#Certainty equivalence|certainty equivalence]] principle), but in practice <math>\widehat{G} \neq G_0</math>. To overcome this problem, the idea behind the latter group of techniques is to map the experimental data ''directly'' onto the controller, without any model to be identified in between.
+
+=== Iterative and noniterative methods ===
+
+Another important distinction is between '''iterative''' and '''noniterative''' (or '''one-shot''') methods. In the former group, repeated iterations are needed to estimate the controller parameters, during which the [[optimization problem]] is performed based on the results of the previous iteration, and the estimation is expected to become more and more accurate at each iteration. This approach is also prone to on-line implementations (see below). In the latter group, the (optimal) controller parametrization is provided with a single optimization problem. This is particularly important for those systems in which iterations or repetitions of data collection experiments are limited or even not allowed (for example, due to economic aspects). In such cases, one should select a design technique capable of delivering a controller on a single data set. This approach is often implemented off-line (see below).
+
+=== On-line and off-line methods ===
+
+Since, on practical industrial applications, open-loop or closed-loop data are often available continuously, '''on-line''' data-driven techniques use those data to improve the quality of the identified model and/or the performance of the controller each time new information is collected on the plant. Instead, '''off-line''' approaches work on batch of data, which may be collected only once, or multiple times at a regular (but rather long) interval of time.
+
+== Iterative feedback tuning ==
+
+The iterative feedback tuning (IFT) method was introduced in 1994,<ref>[[Håkan Hjalmarsson|Hjalmarsson, H.]], Gevers, M., Gunnarsson, S., & Lequin, O. (1998). Iterative feedback tuning: theory and applications. IEEE control systems, 18(4), 26–41.</ref> starting from the observation that, in identification for control, each iteration is based on the (wrong) certainty equivalence principle.
+
+IFT is a model-free technique for the direct iterative optimization of the parameters of a fixed-order controller; such parameters can be successively updated using information coming from standard (closed-loop) system operation.
+
+Let <math>y^d</math> be a desired output to the reference signal <math>r</math>; the error between the achieved and desired response is <math>\tilde{y}(\rho)=y(\rho)-y^d</math>. The control design objective can be formulated as the minimization of the objective function:
+
+:<math> J(\rho) = \frac{1}{2N}\sum_{t=1}^N E\left[\tilde{y}(t,\rho)^2\right].</math>
+
+Given the objective function to minimize, the ''quasi-Newton method'' can be applied, i.e. a gradient-based minimization using a gradient search of the type:
+
+:<math> \rho_{i+1} = \rho_i - \gamma_i R_i^{-1}  \frac{d\widehat{J}}{d\rho}(\rho_i). </math>
+
+The value <math>\gamma_i</math> is the step size, <math>R_i</math> is an appropriate positive definite matrix and <math>\frac{d\widehat{J}}{d\rho}</math> is an approximation of the gradient; the true value of the gradient is given by the following:
+
+: <math> \frac{dJ}{d\rho} (\rho) = \frac{1}{N} \sum_{t=1}^N \left[\tilde{y}(t,\rho)\frac{\delta y}{\delta \rho}(t,\rho)\right]. </math>
+
+The value of <math>\frac{\delta y}{\delta \rho}(t,\rho)</math> is obtained through the following three-step methodology:
+
+# Normal Experiment: Perform an experiment on the closed loop system with <math>C(\rho)</math> as controller and <math>r</math> as reference; collect N measurements of the output <math>y(\rho)</math>, denoted as <math>y^{(1)} (\rho) </math>.
+# Gradient Experiment: Perform an experiment on the closed loop system with <math>C(\rho)</math> as controller and 0 as reference <math>r</math>; inject the signal <math>r-y^{(1)} (\rho)</math> such that it is summed to the control variable output by <math>C(\rho)</math>, going as input into the plant. Collect the output, denoted as <math>y^{(2)} (\rho) </math>.
+# Take the following as gradient approximation: <math> \frac{\delta \widehat{y}}{\delta \rho} (\rho) = \frac{\delta C}{\delta \rho} (\rho) y^{(2)} (\rho)</math>.
+
+A crucial factor for the convergence speed of the algorithm is the choice of <math>R_i</math>; when <math>\tilde{y}</math> is small, a good choice is the approximation given by the Gauss–Newton direction:
+
+: <math> R_i = \frac 1 N \sum_{t=1}^N \frac{\delta \widehat{y}}{\delta \rho} (\rho_i) \frac{\delta \widehat{y}^T}{\delta \rho} (\rho_i).</math>
+
+== Noniterative correlation-based tuning ==
+
+Noniterative correlation-based tuning (nCbT) is a noniterative method for data-driven tuning of a fixed-structure controller.<ref>van Heusden, K., Karimi, A. and Bonvin, D. (2011), Data-driven model reference control with asymptotically guaranteed stability. Int. J. Adapt. Control Signal Process., 25: 331–351. {{doi|10.1002/acs.1212}}</ref> It provides a one-shot method to directly synthesize a controller based on a single dataset.
+
+Suppose that <math>G</math> denotes an unknown LTI stable SISO plant, <math>M</math> a user-defined reference model and <math>F</math> a user-defined weighting function. An LTI fixed-order controller is indicated as <math>K(\rho)=\beta^T \rho</math>, where <math> \rho \in \mathbb R ^n</math>, and <math>\beta</math> is a vector of LTI basis functions. Finally, <math>K^*</math> is an ideal LTI controller of any structure, guaranteeing a closed-loop function <math>M</math> when applied to <math>G</math>.
+
+The goal is to minimize the following objective function:
+
+: <math>J(\rho)=\left\| F \bigg( \frac{ K^* G-K(\rho)G }{ (1+K^* G)^2 } \bigg) \right\|_2^2. </math>
+
+<math>J(\rho)</math> is a convex approximation of the objective function obtained from a model reference problem, supposing that <math>\frac{1}{ (1+K(\rho)G) } \approx \frac{1}{ (1+K^*G) }</math>.
+
+When <math>G</math> is stable and minimum-phase, the approximated model reference problem is equivalent to the minimization of the norm of <math>\varepsilon(t)</math> in the scheme in figure.
+
+[[File:Noniterative Correlation-based Tuning Scheme.svg|thumb|483x180px|The idea is that, when ''G'' is stable and minimum phase, the approximated model reference problem is equivalent to the minimization of the norm of <math>\varepsilon</math>.]]
+
+The input signal <math>r(t)</math> is supposed to be a persistently exciting input signal and <math>v(t)</math> to be generated by a stable data-generation mechanism. The two signals are thus uncorrelated in an open-loop experiment; hence, the ideal error <math>\varepsilon(t,\rho^* )</math> is uncorrelated with <math>r(t)</math>. The control objective thus consists in finding <math>\rho</math> such that <math>r(t)</math> and <math>\varepsilon(t,\rho^* )</math> are uncorrelated.
+
+The vector of ''instrumental variables'' <math>\zeta(t)</math> is defined as:
+
+: <math> \zeta(t)=[r_W (t+\ell_1 ),r_W (t+\ell_1-1),\ldots,r_W (t),\ldots,r_W (t-\ell_1) ]^T </math>
+
+where <math>\ell_1</math> is large enough and <math>r_W (t)=Wr(t)</math>, where <math>W</math> is an appropriate filter.
+
+The correlation function is:
+
+: <math>f_{N,\ell_1} (\rho) = \frac{1}{N} \sum_{t=1}^N \zeta(t) \varepsilon(t,\rho)</math>
+
+and the optimization problem becomes:
+
+:<math>\widehat{\rho} = \underset{\rho \in D_k}{\operatorname{arg\,min}} J_{N,\ell_1}(\rho) = \underset{\rho \in D_k}{\operatorname{arg\,min}} f_{N,\ell_1}^T f_{N,\ell_1}.
+</math>
+
+Denoting with <math>\phi_r (\omega)</math> the spectrum of <math>r(t)</math>, it can be demonstrated that, under some assumptions, if <math>W</math> is selected as:
+
+:<math>W(e^{-j\omega}) = \frac{F(e^{-j\omega})(1-M(e^{-j\omega}))}{\phi_r (\omega)}</math>
+
+then, the following holds:
+
+:<math>\lim_{N,\ell_1 \to \infty, \ell_1/N \to \infty} \widehat{\rho} = \rho^*.</math>
+
+=== Stability constraint ===
+
+There is no guarantee that the controller <math>K</math> that minimizes <math>J_{N,\ell_1}</math> is stable. Instability may occur in the following cases:
+
+* If <math>G</math> is non-minimum phase, <math>K^*</math> may lead to cancellations in the right-half complex plane.
+* If <math>K^*</math> (even if stabilizing) is not achievable, <math>K(\rho)</math> may not be stabilizing.
+* Due to measurement noise, even if <math>K^*=K(\rho)</math> is stabilizing, data-estimated <math>\widehat{K}(\rho)</math> may not be so.
+
+Consider a stabilizing controller <math>K_s</math> and the closed loop transfer function <math>M_s=\frac{K_s G}{1+K_s G}</math>.
+Define:
+
+:<math> \Delta(\rho) := M_s - K(\rho) G (1-M_s) </math>
+:<math> \delta(\rho) := \left\| \Delta(\rho) \right\|_\infty. </math>
+
+:'''Theorem''' 
+:''The controller <math>K(\rho)</math> stabilizes the plant <math>G</math> if
+
+# <math> \Delta(\rho) </math> is stable
+# <math>\exist \delta_N \in (0,1) </math> s.t. <math> \delta (\rho) \leq \delta_N. </math>''
+
+Condition 1. is enforced when:
+
+* <math>K(\rho)</math> is stable
+* <math>K(\rho)</math> contains an integrator (it is canceled).
+
+The model reference design with stability constraint becomes:
+
+:<math> \rho_s = \underset{\rho \in D_k}{\operatorname{arg\,min}} J(\rho) </math>
+:<math> \text{s.t. } \delta(\rho) \leq \delta_N. </math>
+
+A '''convex data-driven estimation''' of <math>\delta(\rho)</math> can be obtained through the [[discrete Fourier transform]]. 
+
+Define the following:
+
+: <math>
+\begin{align}
+& \widehat{R}_r (\tau) = \frac{1}{N} \sum_{t=1}^N r(t-\tau) r(t) \text{ for } \tau = -\ell_2,\ldots,\ell_2 \\[4pt]
+& \widehat{R}_{r\varepsilon} (\tau) = \frac{1}{N} \sum_{t=1}^N r(t-\tau) \varepsilon(t,\rho) \text{ for } \tau = -\ell_2,\ldots,\ell_2.
+\end{align}
+</math>
+
+For '''stable minimum phase plants''', the following '''convex data-driven optimization problem''' is given:
+
+:<math>
+\begin{align}
+\widehat{\rho} & = \underset{\rho \in D_k}{\operatorname{arg\,min}} J_{N,\ell_1}(\rho) \\[3pt]
+& \text{s.t.} \\[3pt]
+& \bigg| \sum_{\tau=-\ell_2}^{\ell_2} \widehat{R}_{r\varepsilon} (\tau,\rho) e^{-j\tau\omega_k} \bigg| \leq \delta_N \bigg| \sum_{\tau=-\ell_2}^{\ell_2} \widehat{R}_r (\tau,\rho) e^{-j\tau\omega_k} \bigg| \\[4pt]
+\omega_k & = \frac{2 \pi k}{2\ell_2+1}, \qquad k=0,\ldots,\ell_2+1.
+\end{align}
+</math>
+
+== Virtual reference feedback tuning ==
+
+Virtual Reference Feedback Tuning (VRFT) is a noniterative method for data-driven tuning of a fixed-structure controller. It provides a one-shot method to directly synthesize a controller based on a single dataset.
+
+VRFT was first proposed in <ref>Campi, Marco C., Andrea Lecchini, and Sergio M. Savaresi. "Virtual reference feedback tuning: a direct method for the design of feedback controllers." Automatica 38.8 (2002): 1337–1346.</ref> and then extended to LPV systems.<ref>Formentin, S., Piga, D., Tóth, R., & Savaresi, S. M. (2016). Direct learning of LPV controllers from data. Automatica, 65, 98–110.</ref> VRFT also builds on ideas given in <ref>Guardabassi, Guido O., and Sergio M. Savaresi. "Approximate feedback linearization of discrete-time non-linear systems using virtual input direct design." Systems & Control Letters 32.2 (1997): 63–74.</ref> as <math>VRD^2</math>. 
+
+The main idea is to define a desired closed loop model <math>M</math> and to use its inverse dynamics to obtain a virtual reference <math>r_v (t)</math> from the measured output signal <math>y(t)</math>.
+
+[[File:Virtual Reference Feedback Tuning Scheme.svg|thumb|483x180px|The main idea is to define a desired closed loop model M and to use its inverse dynamics to obtain a virtual reference from the measured output signal y.]]
+
+The virtual signals are <math>r_v (t)=M^{-1} y(t)</math> and <math> e_v (t)=r_v (t) - y(t). </math>
+
+The optimal controller is obtained from noiseless data by solving the following optimization problem:
+
+: <math>\widehat{\rho}_\infty = \underset{\rho}{\operatorname{arg\,min}} \lim_{N \to \infty} J_{vr} (\rho)</math>
+
+where the optimization function is given as follows:
+
+:<math> J_{vr}^N (\rho) = \frac{1}{N} \sum_{t=1}^N \left(u(t)-K(\rho) e_v(t) \right)^2. </math>
+
+== References ==
+
+{{reflist}}
+
+==External links==
+* [https://marco-campi.unibs.it/VRFTwebsite/download_toolbox.html VRFT toolbox for MATLAB]
+
+[[Category:Mathematics]]
+[[Category:Robotics]]
+[[Category:Dynamical systems]]
+[[Category:Control theory]]
+[[Category:Control engineering]]
+[[Category:Computational mathematics]]

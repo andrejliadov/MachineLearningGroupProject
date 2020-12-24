@@ -1,0 +1,50 @@
+{{no footnotes|date=January 2019}}
+'''Ariadne's thread''', named for the legend of [[Ariadne]], is solving a problem by multiple means—such as a physical [[maze]], a [[logic puzzle]], or an [[ethical dilemma]]—through an exhaustive application of logic to all available routes. It is the particular method used that is able to follow completely through to trace steps or take point by point a series of found truths in a contingent, ordered search that reaches an end position. This process can take the form of a mental record, a physical marking, or even a philosophical debate; it is the process itself that assumes the name.
+
+==Implementation==
+The key element to applying Ariadne's thread to a problem is the creation and maintenance of a record—physical or otherwise—of the problem's available and exhausted options at all times. This record is referred to as the "thread", regardless of its actual medium. The purpose the record serves is to permit [[backtracking]]—that is, reversing earlier decisions and trying alternatives. Given the record, applying the [[algorithm]] is straightforward:
+
+* At any moment that there is a choice to be made, make one arbitrarily from those not already marked as failures, and follow it logically as far as possible.
+* If a contradiction results, back up to the last decision made, mark it as a failure, and try another decision at the same point. If no other options exist there, back up to the last place in the record that does, mark the failure at that level, and proceed onward.
+
+This algorithm will terminate upon either finding a solution or marking all initial choices as failures; in the latter case, there is no solution. If a thorough examination is desired even though a solution has been found, one can revert to the previous decision, mark the success, and continue on as if a solution were never found; the algorithm will exhaust all decisions and find all solutions.
+
+==Distinction from trial and error==
+The terms "Ariadne's thread" and "[[trial and error]]" are often used interchangeably, which is not necessarily correct. They have two distinctive differences:
+
+* "Trial and error" implies that each "trial" yields some particular value to be studied and improved upon, removing "errors" from each iteration to enhance the quality of future trials. Ariadne's thread has no such mechanism, and hence all decisions made are arbitrary. For example, the [[scientific method]] is trial and error; puzzle-solving is Ariadne's thread.
+* Trial-and-error approaches are rarely concerned with how ''many'' solutions may exist to a problem, and indeed often assume only one correct solution exists. Ariadne's thread makes no such assumption, and is capable of locating all possible solutions to a purely logical problem.
+
+In short, trial and error ''approaches'' a desired solution; Ariadne's thread blindly exhausts the search space completely, finding any and all solutions. Each has its appropriate distinct uses. They can be employed in tandem—for example, although the editing of a Wikipedia article is arguably a trial-and-error process (given how in theory it approaches an ideal state), article histories provide the record for which Ariadne's thread may be applied, reverting detrimental edits and restoring the article back to the most recent error-free version, from which other options may be attempted.
+
+==Applications==
+Obviously, Ariadne's thread may be applied to the solving of mazes in the same manner as the legend; an actual thread can be used as the record, or chalk or a similar marker can be applied to label passages. If the maze is on paper, the thread may well be a pencil.
+
+Logic problems of all natures may be resolved via Ariadne's thread, the maze being but an example. At present, it is most prominently applied to ''[[Sudoku]]'' puzzles, used to attempt values for as-yet-unsolved cells. The medium of the thread for puzzle-solving can vary widely, from a pencil to numbered chits to a computer program, but all accomplish the same task. Note that as the compilation of Ariadne's thread is an [[Inductive reasoning|inductive]] process, and due to its exhaustiveness leaves no room for actual study, it is largely frowned upon as a solving method, to be employed only as a last resort when [[Deductive reasoning|deductive]] methods fail.
+
+Artificial intelligence is heavily dependent upon Ariadne's thread when it comes to game-playing, most notably in programs which play [[chess]]; the possible moves are the decisions, game-winning states the solutions, and game-losing states failures. Due to the massive depth of many games, most algorithms cannot afford to apply Ariadne's thread ''entirely'' on every move due to time constraints, and therefore work in tandem with a [[heuristic]] that evaluates game states and limits a [[breadth-first search]] only to those that are most likely to be beneficial, a trial-and-error process.
+
+Even circumstances where the concept of "solution" is not so well defined have had Ariadne's thread applied to them, such as navigating the [[World Wide Web]], making sense of patent law, and in philosophy; "Ariadne's Thread" is a popular name for websites of many purposes, but primarily for those that feature philosophical or ethical debate.
+
+==See also==
+*[[Brute force search]]
+*[[Depth First Search]]
+*[[Labyrinth]]
+*[[Deductive reasoning]]
+*[[Computer chess]]
+*[[J. Hillis Miller]]
+*[[Gordian Knot]]
+
+==References==
+{{refbegin}}
+*[http://www.sudoku.org.uk/PDF/Solving_Sudoku.pdf Solving Sudoku] Step-by-step guide by Michael Mepham; includes history of Ariadne's thread and demonstration of application
+*[http://sites.google.com/site/yangyungjui/academic_home/statistics/statistical-files-2/back-tracking.gif Constructing Sudoku] A flow chart shows how to construct and solve Sudoku by using Ariadne's thread (back-tracking technique)
+*[http://www.penelopethemovie.com/pages/Products/electronic/pdf/battistini.pdf Ariadne and the Minotaur: The Cultural Role of a Philosophy of Rhetoric]{{dead link|date=October 2016 |bot=InternetArchiveBot |fix-attempted=yes }} Article by Andrea Battistini detailing Ariadne's thread as a philosophical metaphor
+*[http://www.lavigne.dk/labyrinth/e1a_phil.htm Philosophy in Labyrinths] A study of the logic behind and meaning of labyrinths; includes rather literal interpretations of Ariadne's thread.
+*{{cite book |last1=Maso |first1=Carole |authorlink1=Carole Maso |title=Mother & child: a novel |date=2012 |publisher=Counterpoint Press |location=[[Berkeley, California]] |isbn=978-1-58243-818-4 |page=[https://archive.org/details/motherchildnovel0000maso/page/129 129] |url=https://archive.org/details/motherchildnovel0000maso/page/129 }}
+{{refend}}
+
+[[Category:Logic]]
+[[Category:Philosophical analogies]]
+[[Category:Philosophical methodology]]
+[[Category:Problem solving methods]]

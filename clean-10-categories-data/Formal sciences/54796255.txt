@@ -1,0 +1,48 @@
+The '''Minimum Information Required About a Glycomics Experiment''' ('''MIRAGE''') initiative is part of the [[Minimum Information Standards]] and specifically applies to guidelines for reporting (describing [[metadata]]) on a [[glycomics]] experiment. The initiative is supported by the [[Beilstein Institute for the Advancement of Chemical Sciences]].<ref>{{cite web|url=http://www.beilstein-institut.de/en/projects/mirage|title=MIRAGE at the Beilstein Institute}}</ref> The MIRAGE project focuses on the development of publication guidelines for interaction and structural glycomics data as well as the development of data exchange formats. The project was launched in 2011 in Seattle and set off with the description of the aims of the MIRAGE project.<ref name=KolarichYork>{{cite journal |last12=York |first12=William S. |last11=Kettner |first11=Carsten |last10=Ranzinger |first10=Rene |last9=Kato |first9=Masaki |last8=Campbell |first8=Matthew P. |last7=Agravat |first7=Sanjay |last6=McBride |first6=Ryan |last5=Zaia |first5=Joseph |last4=Haslam |first4=Stuart M. |last3=Struwe |first3=Weston B. |last2=Rapp |first2=Erdmann |last1=Kolarich |first1=Daniel |title=The Minimum Information Required for a Glycomics Experiment (MIRAGE) Project: Improving the Standards for Reporting Mass-spectrometry-based Glycoanalytic Data |journal=Molecular & Cellular Proteomics |date=1 April 2013 |volume=12 |issue=4 |pages=991–995 |doi=10.1074/mcp.O112.026492 |pmid=23378518 |pmc=3617344 |issn=1535-9476}}</ref>
+
+== Organization ==
+The MIRAGE Commission consists of three groups which tightly interact with each other.
+The '''advisory board''' consists of leading scientists in glycobiology, who, for example, critically review the outcomes of the working group and promote the reporting guidelines within the community.
+The '''working group''' seeks for external consultation and directly interacts with the glycomics community. The group members carry out defined subprojects (e.g. development and revision of guidelines) by focusing on specific research areas to fulfill the overall aims of the MIRAGE project.
+The '''co-ordination team''' links the subprojects from the working group together and passes the outcomes to the advisory board for review.
+
+== Reporting guidelines ==
+The following reporting guidelines were developed and published:
+
+* MIRAGE MS guidelines for reporting [[mass spectrometry#Glycan_analysis|mass spectrometry-based glycan analysis]].<ref name=KolarichYork/> These guidelines are based on the [[MIAPE]] guideline template, i.e. MIAPE-MS version 2.24 <ref>{{cite journal |last1=Taylor |first1=Chris F |last2=Binz |first2=Pierre-Alain |last3=Aebersold |first3=Ruedi |last4=Affolter |first4=Michel |last5=Barkovich |first5=Robert |last6=Deutsch |first6=Eric W |last7=Horn |first7=David M |last8=Hühmer |first8=Andreas |last9=Kussmann |first9=Martin |last10=Lilley |first10=Kathryn |last11=Macht |first11=Marcus |last12=Mann |first12=Matthias |last13=Müller |first13=Dieter |last14=Neubert |first14=Thomas A |last15=Nickson |first15=Janice |last16=Patterson |first16=Scott D |last17=Raso |first17=Roberto |last18=Resing |first18=Kathryn |last19=Seymour |first19=Sean L |last20=Tsugita |first20=Akira |last21=Xenarios |first21=Ioannis |last22=Zeng |first22=Rong |last23=Julian |first23=Randall K |title=Guidelines for reporting the use of mass spectrometry in proteomics |journal=Nature Biotechnology |date=1 August 2008 |volume=26 |issue=8 |pages=860–861 |doi=10.1038/nbt0808-860 |pmid=18688232|s2cid=205270031 }}</ref>  
+* MIRAGE Sample preparation guidelines <ref name="The minimum information required for a glycomics experiment (MIRAGE) project: sample preparation guidelines for reliable reporting of glycomics datasets">{{cite journal|vauthors=Struwe et al|title=The minimum information required for a glycomics experiment (MIRAGE) project: sample preparation guidelines for reliable reporting of glycomics datasets|journal=Glycobiology|date=Sep 2016|volume=26|issue=9|pages=907–910|pmid=27654115|pmc=5045532|doi=10.1093/glycob/cww082}}</ref> which are considered a common basis for any further MIRAGE reporting guidelines in order to keep the requirements for data analysis short and consistent.
+* MIRAGE Glycan microarray guidelines for the comprehensive description of [[Glycan array]] experiments the reporting guidelines for glycan microarray analysis have been developed.<ref name="The minimum information required for a glycomics experiment (MIRAGE) project: improving the standards for reporting glycan microarray-based data">{{cite journal|vauthors=Liu et al|title=The minimum information required for a glycomics experiment (MIRAGE) project: improving the standards for reporting glycan microarray-based data|journal=Glycobiology|date=Apr 2017|volume=27|issue=4|pages=280–284|pmid=27993942|pmc=5444268|doi=10.1093/glycob/cww118}}</ref> In order to assist the authors to reporting in compliance with these guidelines, exemplar publications and a template with a data example is provided.<ref>[https://www.beilstein-institut.de/en/projects/mirage/examples#block-4576 Examples - MIRAGE - Projects - Beilstein-Institut zur Förderung der Chemischen Wissenschaften<!-- Bot generated title -->]</ref>
+* MIRAGE Liquid chromatography guidelines for reporting of liquid chromatography (LC) glycan data.<ref>{{cite journal |last1=Campbell |first1=Matthew P |last2=Abrahams |first2=Jodie L |last3=Rapp |first3=Erdmann |last4=Struwe |first4=Weston B |last5=Costello |first5=Catherine E |last6=Novotny |first6=Milos |last7=Ranzinger |first7=Rene |last8=York |first8=William S |last9=Kolarich |first9=Daniel |last10=Rudd |first10=Pauline M |last11=Kettner |first11=Carsten |title=The Minimum Information Required for a Glycomics Experiment (MIRAGE) Project: LC Guidelines |journal=Glycobiology |date=19 February 2019 |doi=10.1093/glycob/cwz009 |volume=29 |issue=5 |pages=349–354|pmid=30778580 }}</ref>
+
+== Derivatives ==
+The MIRAGE reporting guidelines provide essential frameworks for subsequent projects related with the development of both software tools for the analysis of experimental glycan data and databases for the deposition of interaction analysis data (e.g. from glycan microarray experiments) and structural analysis data (e.g. from mass spectrometry and liquid chromatography experiments). As the guidelines include the definitions of the minimum information required for reporting glycomics experiments comprehensively, this information is incorporated in database structures, data acquisition forms and data exchange formats.<br>
+
+The following databases comply with the MIRAGE guidelines:
+* [https://www.unicarb-db.expasy.org/ UniCarb-DB] that stores curated data and information on glycan structures and associated fragment data characterised by LC-[[Tandem_mass spectrometry]] strategies.
+* [https://glycostore.org/ GlycoStore] a curated [[Chromatography]], [[Electrophoresis]] and [[Mass spectrometry]] derived composition database of N-, O-, glycosphingolipid (GSL) glycans and free oligosaccharides associated with a range of glycoproteins, glycolipids and biotherapeutics.
+* UniCarb-DR<ref>{{cite journal |last1=Karlsson |first1=Niclas |last2=Lisacek |first2=Frederique |last3=Aoki-Kinoshita |first3=Kiyoko F. |last4=Packer |first4=Nicolle H. |last5=Kettner |first5=Carsten |last6=Wuhrer |first6=Manfred |last7=Rudd |first7=Pauline M. |last8=Kolarich |first8=Daniel |last9=Levander |first9=Fredrik |last10=Struwe |first10=Weston B. |last11=Horlacher |first11=Oliver |last12=Miller |first12=Rebecca L. |last13=Zhang |first13=Tao |last14=Madunic |first14=Katarina |last15=Ashwood |first15=Christopher |last16=Shinmachi |first16=Daisuke |last17=Aoki |first17=Nobuyuki P. |last18=Venkatakrishnan |first18=Vignesh |last19=Jin |first19=Chunsheng |last20=Andersson |first20=Peter |last21=Mariethoz |first21=Julien |last22=Rojas-Macias |first22=Miguel A. |title=e-workflow for recording of glycomic mass spectrometric data in compliance with reporting guidelines |journal=bioRxiv |date=27 August 2018 |pages=401141 |doi=10.1101/401141|doi-access=free }}</ref> a MS<sup>n</sup> data repository for glycan structures
+* [https://glycopost.glycosmos.org/ GlycoPOST] a mass spectra repository for glycomics and glycoproteomics
+
+The following projects refer to the MIRAGE standards:
+
+* [https://glytoucan.org/ GlyTouCan] is a glycan structure repository where unique identifiers are assigned to individually reported glycan structures 
+* [http://www.unicarbkb.org/ UniCarbKB] a database of glycans and glycoproteins 
+* [http://www.glygen.org/index.html GlyGen], a data integration and dissemination project for carbohydrate and glycoconjugate related data
+* [https://glyconnect.expasy.org/ GlyConnect], an integrated platform  for glycomics and glycoproteomics  
+
+== References==
+{{reflist}}
+
+==External links==
+
+*[https://fairsharing.org/bsg-s000682 Record in Fairsharing.org for MIRAGE Sample Preparation guidelines]
+*[https://fairsharing.org/bsg-s000523 Record in Fairsharing.org for MIRAGE Mass spectrometry guidelines]
+*[https://fairsharing.org/bsg-s000683 Record in Fairsharing.org for MIRAGE Glycan array guidelines]
+*[https://fairsharing.org/bsg-s001361 Record in Fairsharing.org for MIRAGE Liquid chromatography guidelines]
+
+[[Category:Bioinformatics|Bioinformatics]]
+[[Category:Knowledge representation]]
+
+[[Category:Glycobiology|Glycobiology]]
+[[Category:Glycomics|Glycomics]]
+[[Category:Carbohydrates]]

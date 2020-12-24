@@ -1,0 +1,211 @@
+{{short description|The problem of finding adequate collections of axioms for a viable description of a robot environment using first-order logic}}
+In [[artificial intelligence]], the '''frame problem''' describes an issue with using [[first-order logic]] (FOL) to express facts about a robot in the world. Representing the state of a robot with traditional FOL requires the use of many axioms that simply imply that things in the environment do not change arbitrarily. For example, Hayes describes a "[[block world]]" with rules about stacking blocks together. In a FOL system, additional [[axiom]]s are required to make inferences about the environment (for example, that a block cannot change position unless it is physically moved). The frame problem is the problem of finding adequate collections of axioms for a viable description of a robot environment.<ref>{{cite journal|last=Hayes|first=Patrick|title=The Frame Problem and Related Problems in Artificial Intelligence|journal=University of Edinburgh|url=http://aitopics.org/sites/default/files/classic/Webber-Nilsson-Readings/Rdgs-NW-Hayes-FrameProblem.pdf}}</ref>
+
+[[John McCarthy (computer scientist)|John McCarthy]] and [[Patrick J. Hayes]] defined this problem in their 1969 article, ''Some Philosophical Problems from the Standpoint of Artificial Intelligence''.  In this paper, and many that came after, the formal mathematical problem was a starting point for more general discussions of the difficulty of knowledge representation for artificial intelligence. Issues such as how to provide rational default assumptions and what humans consider common sense in a virtual environment.<ref>{{cite journal|last=McCarthy|first=J|author2=P.J. Hayes|title=Some philosophical problems from the standpoint of artificial intelligence|journal=Machine Intelligence|year=1969|volume=4|pages=463–502|citeseerx=10.1.1.85.5082}}</ref>  Later, the term acquired a broader meaning in [[philosophy]], where it is formulated as the problem of limiting the beliefs that have to be updated in response to actions. In the logical context, actions are typically specified by what they change, with the implicit assumption that everything else (the frame) remains unchanged.
+
+==Description==
+The frame problem occurs even in very simple domains. A scenario with a door, which can be open or closed, and a light, which can be on or off, is statically represented by two [[proposition]]s <math>\mathrm{open}</math> and <math>\mathrm{on}</math>. If these conditions can change, they are better represented by two [[Predicate (computer programming)|predicate]]s <math>\mathrm{open}(t)</math> and <math>\mathrm{on}(t)</math> that depend on time; such predicates are called [[fluent (artificial intelligence)|fluent]]s. A domain in which the door is closed and the light off at time 0, and the door opened at time 1, can be directly represented in logic {{clarify|reason=What kind of logic? [Old reason: If ordinary predicate logic is meant, what is the purpose of the 'true →' in the 3rd formula? If some other logic (situation calculus?) is meant, it should be stated explicitly here, together with the purpose of the 'true →' (e.g. some empty action?) in that logic.] (Changed, although it might need to be reverted.)|date=August 2013}} by the following formulae:
+
+:<math>\neg \mathrm{open}(0)</math>
+:<math>\neg \mathrm{on}(0)</math>
+:<math>\mathrm{open}(1)</math>
+
+The first two formulae represent the initial situation; the third formula represents the effect of executing the action of opening the door at time 1. If such an action had preconditions, such as the door being unlocked, it would have been represented by <math>\neg \mathrm{locked}(0) \implies \mathrm{open}(1)</math>. In practice, one would have a predicate <math>\mathrm{executeopen}(t)</math> for specifying when an action is executed and a rule <math>\forall t . \mathrm{executeopen}(t) \implies \mathrm{open}(t+1)</math> for specifying the effects of actions.  The article on the [[situation calculus]] gives more details.
+
+While the three formulae above are a direct expression in logic of what is known, they do not suffice to correctly draw consequences. While the following conditions (representing the expected situation) are consistent with the three formulae above, they are not the only ones.
+
+:{|
+| <math>\neg \mathrm{open}(0)</math> &nbsp; &nbsp;  || <math>\mathrm{open}(1)</math>
+|-
+| <math>\neg \mathrm{on}(0)</math>   || <math>\neg \mathrm{on}(1)</math>
+|}
+
+Indeed, another set of conditions that is consistent with the three formulae above is:
+
+:{|
+| <math>\neg \mathrm{open}(0)</math> &nbsp; &nbsp;  || <math>\mathrm{open}(1)</math>
+|-
+| <math>\neg \mathrm{on}(0)</math>   || <math>\mathrm{on}(1)</math>
+|}
+
+The frame problem is that specifying only which conditions are changed by the actions does not entail that all other conditions are not changed. This problem can be solved by adding the so-called “frame axioms”, which explicitly specify that all conditions not affected by actions are not changed while executing that action. For example, since the action executed at time 0 is that of opening the door, a frame axiom would state that the status of the light does not change from time 0 to time 1:
+
+:<math>\mathrm{on}(0) \iff \mathrm{on}(1)</math>
+
+The frame problem is that one such frame axiom is necessary for every pair of action and condition such that the action does not affect the condition.{{clarify|reason=Shouldn't then the frame axiom be the following modification of the above rule: '∀t.executeopen(t)→open(t+1)∧(on(t+1)↔on(t))' ? In contrast, the formula 'on(0)↔on(1)' seems to be too particular taylored to the 'executeopen(0)' situation.|date=August 2013}} In other words, the problem is that of formalizing a dynamical domain without explicitly specifying the frame axioms.
+
+The solution proposed by McCarthy to solve this problem involves assuming that a minimal amount of condition changes have occurred; this solution is formalized using the framework of [[Circumscription (logic)|circumscription]]. The [[Yale shooting problem]], however, shows that this solution is not always correct. Alternative solutions were then proposed, involving predicate completion, fluent occlusion, [[successor state axiom]]s, etc.; they are explained below. By the end of the 1980s, the frame problem as defined by McCarthy and Hayes was solved{{clarify|reason=Mention the (combination of) approach(es) by which the frame problem was solved.|date=August 2013}}. Even after that, however, the term “frame problem” was still used, in part to refer to the same problem but under different settings (e.g., concurrent actions), and in part to refer to the general problem of representing and reasoning with dynamical domains.
+
+== Solutions ==
+The following solutions depict how the frame problem is solved in various formalisms. The formalisms themselves are not presented in full: what is presented are simplified versions that are sufficient to explain the full solution.
+
+===Fluent occlusion solution===
+This solution was proposed by [[Erik Sandewall]], who also defined a [[formal language]] for the specification of dynamical domains; therefore, such a domain can be first expressed in this language and then automatically translated into logic. In this article, only the expression in logic is shown, and only in the simplified language with no action names.
+
+The rationale of this solution is to represent not only the value of conditions over time, but also whether they can be affected by the last executed action. The latter is represented by another condition, called occlusion. A condition is said to be ''occluded'' in a given time point if an action has been just executed that makes the condition true or false as an effect. Occlusion can be viewed as “permission to change”: if a condition is occluded, it is relieved from obeying the constraint of inertia.
+
+In the simplified example of the door and the light, occlusion can be formalized by two predicates <math>\mathrm{occludeopen}(t)</math> and <math>\mathrm{occludeon}(t)</math>. The rationale is that a condition can change value only if the corresponding occlusion predicate is true at the next time point. In turn, the occlusion predicate is true only when an action affecting the condition is executed.
+
+:<math>\neg \mathrm{open}(0)</math>
+:<math>\neg \mathrm{on}(0)</math>
+:<math>\mathrm{open}(1) \wedge \mathrm{occludeopen}(1)</math>
+:<math>\forall t . \neg \mathrm{occludeopen}(t) \implies (\mathrm{open}(t-1) \iff \mathrm{open}(t))</math>
+:<math>\forall t . \neg \mathrm{occludeon}(t) \implies (\mathrm{on}(t-1) \iff \mathrm{on}(t))</math>
+
+In general, every action making a condition true or false also makes the corresponding occlusion predicate true. In this case, <math>\mathrm{occludeopen}(1)</math> is true, making the antecedent of the fourth formula above false for <math>t=1</math>; therefore, the constraint that <math>\mathrm{open}(t-1) \iff \mathrm{open}(t)</math> does not hold for <math>t=1</math>. Therefore, <math>\mathrm{open}</math> can change value, which is also what is enforced by the third formula.
+
+In order for this condition to work, occlusion predicates have to be true only when they are made true as an effect of an action. This can be achieved either by [[Circumscription (logic)|circumscription]] or by predicate completion. It is worth noticing that occlusion does not necessarily imply a change: for example, executing the action of opening the door when it was already open (in the formalization above) makes the predicate <math>\mathrm{occludeopen}</math> true and makes <math>\mathrm{open}</math> true; however, <math>\mathrm{open}</math> has not changed value, as it was true already.
+
+===Predicate completion solution===
+This encoding is similar to the fluent occlusion solution, but the additional predicates denote change, not permission to change. For example, <math>\mathrm{changeopen}(t)</math> represents the fact that the predicate <math>\mathrm{open}</math> will change from time <math>t</math> to <math>t+1</math>. As a result, a predicate changes if and only if the corresponding change predicate is true. An action results in a change if and only if it makes true a condition that was previously false or vice versa.
+
+:<math>\neg \mathrm{open}(0)</math>
+:<math>\neg \mathrm{on}(0)</math>
+:<math>\neg \mathrm{open}(0) \implies \mathrm{changeopen}(0)</math>
+:<math>\forall t. \mathrm{changeopen}(t) \iff (\neg \mathrm{open}(t) \iff \mathrm{open}(t+1))</math>
+:<math>\forall t. \mathrm{changeon}(t) \iff (\neg \mathrm{on}(t) \iff \mathrm{on}(t+1))</math>
+
+The third formula is a different way of saying that opening the door causes the door to be opened. Precisely, it states that opening the door changes the state of the door if it had been previously closed. The last two conditions state that a condition changes value at time <math>t</math> if and only if the corresponding change predicate is true at time <math>t</math>. To complete the solution, the time points in which the change predicates are true have to be as few as possible, and this can be done by applying predicate completion to the rules specifying the effects of actions.
+
+===Successor state axioms solution===
+The value of a condition after the execution of an action can be determined by
+the fact that the condition is true if and only if:
+
+# the action makes the condition true; or
+# the condition was previously true and the action does not make it false.
+
+A [[successor state axiom]] is a formalization in logic of these two facts. For
+example, if <math>\mathrm{opendoor}(t)</math> and <math>\mathrm{closedoor}(t)</math> are two
+conditions used to denote that the action executed at time <math>t</math> was
+to open or close the door, respectively, the running example is encoded as
+follows.
+
+: <math>\neg \mathrm{open}(0)</math>
+: <math>\neg \mathrm{on}(0)</math>
+: <math>\mathrm{opendoor}(0)</math>
+: <math>\forall t . \mathrm{open}(t+1) \iff \mathrm{opendoor}(t) \vee (\mathrm{open}(t) \wedge \neg \mathrm{closedoor}(t))</math>
+
+This solution is centered around the value of conditions, rather than the
+effects of actions. In other words, there is an axiom for every condition,
+rather than a formula for every action. Preconditions to actions (which are not
+present in this example) are formalized by other formulae. The successor state
+axioms are used in the variant to the [[situation calculus]] proposed by
+[[Ray Reiter]].
+
+===Fluent calculus solution===
+The [[fluent calculus]] is a variant of the situation calculus. It solves the frame problem by using first-order logic
+[[First-order logic#Formation rules|terms]], rather than predicates, to represent the states. Converting
+predicates into terms in first-order logic is called [[Reification (knowledge representation)|reification]]; the
+fluent calculus can be seen as a logic in which predicates representing the
+state of conditions are reified.
+
+The difference between a predicate and a term in first-order logic is that a term is a representation of an object (possibly a complex object composed of other objects), while a predicate represents a condition that can be true or false when evaluated over a given set of terms.
+
+In the fluent calculus, each possible state is represented by a term obtained by composition of other terms, each one representing the conditions that are true in state. For example, the state in which the door is open and the light is on is represented by the term <math>\mathrm{open} \circ \mathrm{on}</math>. It is important to notice that a term is not true or false by itself, as it is an object and not a condition. In other words, the term <math>\mathrm{open} \circ \mathrm{on}</math> represent a possible state, and does not by itself mean that this is the current state. A separate condition can be stated to specify that this is actually the state at a given time, e.g., <math>\mathrm{state}(\mathrm{open} \circ \mathrm{on}, 10)</math> means that this is the state at time <math>10</math>.
+
+The solution to the frame problem given in the fluent calculus is to specify the effects of actions by stating how a term representing the state changes when the action is executed. For example, the action of opening the door at time 0 is represented by the formula:
+
+: <math>\mathrm{state}(s \circ \mathrm{open}, 1) \iff \mathrm{state}(s,0)</math>
+
+The action of closing the door, which makes a condition false instead of true, is represented in a slightly different way:
+
+: <math>\mathrm{state}(s, 1) \iff \mathrm{state}(s \circ \mathrm{open}, 0)</math>
+
+This formula works provided that suitable axioms are given about <math>\mathrm{state}</math> and <math>\circ</math>, e.g., a term containing the same condition twice is not a valid state (for example, <math>\mathrm{state}(\mathrm{open} \circ s \circ \mathrm{open}, t)</math> is always false for every <math>s</math> and <math>t</math>).
+
+===Event calculus solution===
+The [[event calculus]] uses terms for representing fluents, like the fluent calculus, but also has axioms constraining the value of fluents, like the successor state axioms. In the event calculus, inertia is enforced by formulae stating that a fluent is true if it has been true at a given previous time point and no action changing it to false has been performed in the meantime. Predicate completion is still needed in the event calculus for obtaining that a fluent is made true only if an action making it true has been performed, but also for obtaining that an action had been performed only if that is explicitly stated.
+
+===Default logic solution===
+The frame problem can be thought of as the problem of formalizing the principle that, by default, "everything is presumed to remain in the state in which it is" ([[Gottfried Wilhelm Leibniz|Leibniz]], "An Introduction to a Secret Encyclopædia", ''c''. 1679).  This default, sometimes called the ''commonsense law of inertia'', was expressed by [[Raymond Reiter]] in [[default logic]]:
+
+: <math>\frac{R(x,s)\; :\ R(x,\mathrm{do}(a,s))}{R(x,\mathrm{do}(a,s))}</math>
+
+(if <math>R(x)</math> is true in situation <math>s</math>, and it can be assumed<ref>i.e., no contradicting information is known</ref> that <math>R(x)</math> remains true after executing action <math>a</math>, then we can conclude that <math>R(x)</math> remains true).
+
+Steve Hanks and [[Drew McDermott]] argued, on the basis of their [[Yale shooting problem|Yale shooting]] example, that this solution to the frame problem is unsatisfactory.  Hudson Turner showed, however, that it works correctly in the presence of appropriate additional postulates.
+
+===Answer set programming solution===
+The counterpart of the default logic solution in the language of [[answer set programming]] is a rule with [[stable model semantics#Strong negation|strong negation]]:
+
+:<math>r(X,T+1) \leftarrow r(X,T),\ \hbox{not }\sim r(X,T+1)</math>
+
+(if <math>r(X)</math> is true at time <math>T</math>, and it can be assumed that <math>r(X)</math> remains true at time <math>T+1</math>, then we can conclude that <math>r(X)</math> remains true).
+
+=== Separation logic solution ===
+[[Separation logic]] is a formalism for reasoning about computer programs using pre/post specifications of the form <math>\{precondition\}\ code\ \{postcondition\}</math>. Separation logic is an extension of [[Hoare logic]] oriented to  reasoning about mutable data structures in computer memory and other dynamic resources, and it has a special connective *, pronounced "and separately", to support independent reasoning about disjoint memory regions.<ref>{{Cite journal|last=Reynolds|first=J.C.|date=2002|title=Separation logic: a logic for shared mutable data structures|journal=Proceedings 17th Annual IEEE Symposium on Logic in Computer Science|location=Copenhagen, Denmark|publisher=IEEE Comput. Soc|pages=55–74|doi=10.1109/LICS.2002.1029817|citeseerx=10.1.1.110.7749|isbn=978-0-7695-1483-3|s2cid=6271346}}</ref><ref>{{Cite journal|last=O'Hearn|first=Peter|date=2019-01-28|title=Separation logic|journal=Communications of the ACM|language=en|volume=62|issue=2|pages=86–95|doi=10.1145/3211968|issn=0001-0782|doi-access=free}}</ref>
+
+Separation logic employs a ''tight'' interpretation of pre/post specs, which say that the code can ''only'' access memory locations guaranteed to exist by the precondition.<ref>{{Cite journal|last1=O’Hearn|first1=Peter|last2=Reynolds|first2=John|last3=Yang|first3=Hongseok|date=2001|editor-last=Fribourg|editor-first=Laurent|title=Local Reasoning about Programs that Alter Data Structures|journal=Computer Science Logic|volume=2142|series=Lecture Notes in Computer Science|language=en|location=Berlin, Heidelberg|publisher=Springer|pages=1–19|doi=10.1007/3-540-44802-0_1|isbn=978-3-540-44802-0}}</ref> This leads to the soundness of the most important inference rule of the logic, the ''frame rule''
+
+<math>\frac{ \{precondition\}\ code\ \{postcondition\} }{ \{precondition \ast frame\}\ code\ \{postcondition \ast frame\} }</math>
+
+The frame rule  allows descriptions of arbitrary memory outside the footprint (memory accessed) of the code to be added to a specification: this enables the initial specification to concentrate only on the footprint.  For example, the inference
+
+<math>\frac{ \{list(x)\}\ code\ \{sortedlist(x)\} }{ \{list(x) \ast sortedlist(y)\}\ code\ \{sortedlist(x) \ast sortedlist(y)\} }</math>
+
+captures that code which sorts a list ''x'' does not unsort a separate list ''y,'' and it does this without mentioning ''y'' at all in the initial spec above the line.
+
+Automation of the frame rule has led to significant increases in the scalability of automated reasoning techniques for code,<ref>{{Cite journal|last1=Calcagno Cristiano|last2=Dino Distefano|last3=Peter O'Hearn|last4=Hongseok Yang|date=2011-12-01|title=Compositional Shape Analysis by Means of Bi-Abduction|journal=Journal of the ACM|language=EN|volume=58|issue=6|pages=1–66|doi=10.1145/2049697.2049700|s2cid=52808268|url=https://ora.ox.ac.uk/objects/uuid:bcfefe74-a79c-4155-8160-c51f92f05466}}</ref> eventually deployed industrially to codebases with 10s of millions of lines.<ref>{{Cite journal|first1=Dino |last1=Distefano|first2=Manuel |last2=Fähndrich|first3=Francesco |last3=Logozzo|first4=Peter |last4=O'Hearn|date=2019-07-24|title=Scaling static analyses at Facebook|journal=Communications of the ACM|language=EN|volume=62|issue=8|pages=62–70|doi=10.1145/3338112|doi-access=free}}</ref>
+
+There appears to be some similarity between the separation logic solution to the frame problem and that of the fluent calculus mentioned above.
+
+===Action description languages===
+[[Action description language]]s elude the frame problem rather than solving it. An action description language is a formal language with a syntax that is specific for describing situations and actions. For example, that the action <math>\mathrm{opendoor}</math> makes the door open if not locked is expressed by:
+
+: <math>\mathrm{opendoor}</math> causes <math>\mathrm{open}</math> if <math>\neg \mathrm{locked}</math>
+
+The semantics of an action description language depends on what the language can express (concurrent actions, delayed effects, etc.) and is usually based on [[transition system]]s.
+
+Since domains are expressed in these languages rather than directly in logic, the frame problem only arises when a specification given in an action description logic is to be translated into logic. Typically, however, a translation is given from these languages to [[answer set programming]] rather than first-order logic.
+
+==See also==
+* [[Binding problem]]
+* [[Common sense]]
+* [[Commonsense reasoning]]
+* [[Defeasible reasoning]]
+* [[Linear logic]]
+*[[Separation logic]]
+* [[Non-monotonic logic]]
+* [[Qualification problem]]
+* [[Ramification problem]]
+* [[Symbol grounding]]
+* [[Yale shooting problem]]
+
+==Notes==
+{{reflist}}
+
+==References==
+* {{cite journal | last1 = Doherty | first1 = P. | last2 = Gustafsson | first2 = J. | last3 = Karlsson | first3 = L. | last4 = Kvarnström | first4 = J. | year = 1998 | title = TAL: Temporal action logics language specification and tutorial | url = http://www.ep.liu.se/ej/etai/1998/009 | journal = Electronic Transactions on Artificial Intelligence | volume = 2 | issue = 3–4| pages = 273–306 }}
+* {{cite journal | last1 = Gelfond | first1 = M. | last2 = Lifschitz | first2 = V. | year = 1993 | title = Representing action and change by logic programs | journal = Journal of Logic Programming | volume = 17 | issue = 2–4| pages = 301–322 | doi=10.1016/0743-1066(93)90035-f}}
+* {{cite journal | last1 = Gelfond | first1 = M. | last2 = Lifschitz | first2 = V. | year = 1998 | title = Action languages | url = http://www.ep.liu.se/ej/etai/1998/007 | journal = Electronic Transactions on Artificial Intelligence | volume = 2 | issue = 3–4| pages = 193–210 }}
+* {{cite journal | last1 = Hanks | first1 = S. | last2 = McDermott | first2 = D. | year = 1987 | title = Nonmonotonic logic and temporal projection | journal = Artificial Intelligence | volume = 33 | issue = 3| pages = 379–412 | doi=10.1016/0004-3702(87)90043-9}}
+* {{cite journal | last1 = Levesque | first1 = H. | author-link3 = Raymond Reiter | last2 = Pirri | first2 = F. | last3 = Reiter | first3 = R. | year = 1998 | title = Foundations for the situation calculus | url = http://www.ep.liu.se/ej/etai/1998/005 | journal = Electronic Transactions on Artificial Intelligence | volume = 2 | issue = 3–4| pages = 159–178 }}
+* {{cite journal | last1 = Liberatore | first1 = P. | year = 1997 | title = The complexity of the language A | url = http://www.ep.liu.se/ej/etai/1997/002 | journal = [[Electronic Transactions on Artificial Intelligence]] | volume = 1 | issue = 1–3| pages = 13–37 }}
+* {{cite web |first=V. |last=Lifschitz |year=2012 |url=http://www.cs.utexas.edu/~vl/papers/jmc.pdf |title=The frame problem, then and now |publisher=[[University of Texas at Austin]]}} Presented at ''Celebration of John McCarthy's Accomplishments'', [[Stanford University]], March 25, 2012.
+* {{cite journal | last1 = McCarthy | first1 = J. | last2 = Hayes | first2 = P. J. | year = 1969 | title = Some philosophical problems from the standpoint of artificial intelligence | url = http://www-formal.stanford.edu/jmc/mcchay69.html | journal = Machine Intelligence | volume = 4 | pages = 463–502 | citeseerx = 10.1.1.85.5082 }}
+* {{cite journal | last1 = McCarthy | first1 = J. | year = 1986 | title = Applications of circumscription to formalizing common-sense knowledge | url = http://www-formal.stanford.edu/jmc/applications.html | journal = Artificial Intelligence | volume = 28 | pages = 89–116 | doi=10.1016/0004-3702(86)90032-9| citeseerx = 10.1.1.29.5268 }}
+* {{cite journal | last1 = Miller | first1 = R. | last2 = Shanahan | first2 = M. | year = 1999 | title = The event-calculus in classical logic - alternative axiomatizations | url = http://www.ida.liu.se/ext/epa/ej/etai/1999/016/epapage.html | journal = Electronic Transactions on Artificial Intelligence | volume = 3 | issue = 1| pages = 77–105 }}
+* {{cite journal | last1 = Pirri | first1 = F. | last2 = Reiter | first2 = R. | year = 1999 | title = Some contributions to the metatheory of the Situation Calculus | journal = [[Journal of the ACM]] | volume = 46 | issue = 3| pages = 325–361 | doi = 10.1145/316542.316545 | s2cid = 16203802 }}
+* {{cite journal | last1 = Reiter | first1 = R. | author-link = Raymond Reiter | year = 1980 | title = A logic for default reasoning | url = http://www.umiacs.umd.edu/%7Ehorty/courses/readings/reiter-default-1980.pdf| journal = Artificial Intelligence | volume = 13 | issue = 1–2| pages = 81–132 | doi=10.1016/0004-3702(80)90014-4| citeseerx = 10.1.1.250.9224 }}
+* {{cite book |author-link=Raymond Reiter |first=Raymond |last=R. |year=1991 |chapter=The frame problem in the situation calculus: a simple solution (sometimes) and a completeness result for goal regression |editor=Lifschitz, Vladimir |title=Artificial Intelligence and Mathematical Theory of Computation: Papers in Honor of John McCarthy |pages=359–380 |publisher=Academic Press |location=New York|citeseerx=10.1.1.137.2995 }}
+* {{cite journal | last1 = Sandewall | first1 = E. | year = 1972 | title = An approach to the Frame Problem and its Implementation | journal = Machine Intelligence | volume = 7 | pages = 195–204 }}
+* {{cite book |first=E. |last=Sandewall |year=1994 |title=Features and Fluents |volume=(vol. 1) |publisher=Oxford University Press |location=New York |isbn=978-0-19-853845-5}}
+* {{cite book |first1=E. |last1=Sandewall |first2=Y. |last2=Shoham |year=1995 |chapter=Non-monotonic Temporal Reasoning |editor1=Gabbay, D. M. |editor2=Hogger, C. J. |editor3=Robinson, J. A. |title=Handbook of Logic in Artificial Intelligence and Logic Programming |volume=(vol. 4) |pages=439–498 |publisher=Oxford University Press |isbn=978-0-19-853791-5}}
+* {{cite journal | last1 = Sandewall | first1 = E. | year = 1998 | title = Cognitive robotics logic and its metatheory: Features and fluents revisited | url = http://www.ep.liu.se/ej/etai/1998/010 | journal = Electronic Transactions on Artificial Intelligence | volume = 2 | issue = 3–4| pages = 307–329 }}
+* {{cite book |first=M. |last=Shanahan |year=1997 |title=Solving the frame problem: A mathematical investigation of the common sense law of inertia |publisher=MIT Press|url=https://books.google.com/books?id=z8zR3Ds7xKQC&pg=PR13&dq=%22Solving+the+frame+problem:+A+mathematical+investigation+of+the+common+sense+law+of+inertia.%22|isbn=9780262193849 }}
+* {{cite journal | last1 = Thielscher | first1 = M. | year = 1998 | title = Introduction to the fluent calculus | url = http://www.ep.liu.se/ej/etai/1998/006 | journal = Electronic Transactions on Artificial Intelligence | volume = 2 | issue = 3–4| pages = 179–192 }}
+* {{cite journal | last1 = Toth | first1 = J.A. | year = 1995 | title = Book review. Kenneth M. and Patrick J. Hayes, eds | journal = Reasoning Agents in a Dynamic World: The Frame Problem. Artificial Intelligence | volume = 73 | issue = 1–2| pages = 323–369 | doi=10.1016/0004-3702(95)90043-8| doi-access = free }}
+* {{cite journal | last1 = Turner | first1 = H. | year = 1997 | title = Representing actions in logic programs and default theories: a situation calculus approach | url = http://www.d.umn.edu/~hudson/papers/ralpdt6.pdf | journal = Journal of Logic Programming | volume = 31 | issue = 1–3| pages = 245–298 | doi=10.1016/s0743-1066(96)00125-2}}
+
+==External links==
+* {{cite SEP |url-id=frame-problem |title=The Frame Problem}}
+* [http://www-formal.stanford.edu/jmc/mcchay69/mcchay69.html Some Philosophical Problems from the Standpoint of Artificial Intelligence]; the original article of McCarthy and Hayes that proposed the problem.
+
+{{John McCarthy navbox}}
+
+[[Category:Artificial intelligence]]
+[[Category:Knowledge representation]]
+[[Category:Epistemology]]
+[[Category:Logic programming]]
+[[Category:Philosophical problems]]
+[[Category:1969 introductions]]

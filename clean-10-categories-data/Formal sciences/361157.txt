@@ -1,0 +1,191 @@
+{{About|using biology as an inspiration in computing|computers composed of biological parts|Biological computing|data analysis and mathematical modeling in biology|Computational biology}}
+{{cleanup|reason=This article has potential, but is currently mostly used as a coatrack for [[WP:REFSPAM]].|date=August 2016}}
+
+'''Bio-inspired computing''', short for '''biologically inspired computing''', is a field of study which seeks to solve computer science problems using models of biology. It relates to [[connectionism]], [[social behavior]], and [[emergence]]. Within [[computer science]], bio-inspired computing relates to artificial intelligence and machine learning. Bio-inspired computing is a major subset of [[Natural computing|natural computation]].
+
+== Areas of research ==
+
+Some areas of study in biologically inspired computing, and their biological counterparts:
+{| class="wikitable"
+|+
+!Bio-Inspired Computing Topic
+!Biological Inspiration
+|-
+|[[Genetic algorithm|Genetic Algorithms]]
+|[[Evolution]]
+|-
+|[[Biodegradability prediction]]
+|[[Biodegradation]]
+|-
+|[[Cellular automaton|Cellular Automata]]
+|[[Life]]
+|-
+|[[Emergence]]
+|[[Ant|Ants]], [[Termite|termites]], [[Bee|bees]], [[Wasp|wasps]]
+|-
+|[[Neural networks]]
+|[[Brain|The brain]]
+|-
+|[[Artificial life]]
+|[[Life]]
+|-
+|[[Artificial immune system]]
+|[[Immune system]]
+|-
+|[[Rendering (computer graphics)]]
+|Patterning and rendering of animal skins, bird feathers, mollusk shells and bacterial colonies
+|-
+|[[Lindenmayer systems]]
+|Plant structures
+|-
+|[[Communication networks]] and [[Communication protocol|communication protocols]]
+|Epidemiology
+|-
+|[[P system|Membrane computers]]
+|[[Cell membrane|Intra-membrane]] [[Molecular biology|molecular]] processes in the [[Cell (biology)|living cell]]
+|-
+|[[Excitable medium|Excitable media]]
+|[[Wildfire|Forest fires]], [[Audience wave|"the wave"]], [[Tachycardia|heart conditions]], [[Axon|axons]]
+|-
+|[[Sensor networks]]
+|[[Sensory organs]]
+|-
+|[[Learning classifier system|Learning classifier systems]]
+|[[Cognition]], [[evolution]]
+|}
+
+== Artificial intelligence ==
+
+Bio-Inspired computing can be distinguished from traditional artificial intelligence by its approach to computer learning. Bio-inspired computing uses an evolutionary approach, while traditional A.I. uses a '[[Creationism|creationist]]' approach. Bio-inspired computing begins with a set of simple rules and simple organisms which adhere to those rules. Over time, these organisms evolve within simple constraints. This method could be considered [[Top-down and bottom-up design|bottom-up]] or [[Decentralization|decentralized]]. In traditional artificial intelligence, intelligence is often programmed from above: the programmer is the creator, and makes something and imbues it with its intelligence. 
+
+=== Virtual Insect Example ===
+Bio-inspired computing can be used to train a virtual insect. The insect is trained to navigate in an unknown terrain for finding food equipped with six simple rules:
+
+* turn right for target-and-obstacle left; 
+* turn left for target-and-obstacle right; 
+* turn left for target-left-obstacle-right; 
+* turn right for target-right-obstacle-left;
+* turn left for target-left without obstacle;
+* turn right for target-right without obstacle.
+The virtual insect controlled by the trained [[spiking neural network]] can find food after training in any unknown terrain.<ref name="Silvia_2013">{{cite book | author = Xu Z |author2=Ziye X |author3=Craig H |author4=Silvia F | title = Spike-based indirect training of a spiking neural network-controlled virtual insect | journal = IEEE Decision and Control | pages = 6798–6805 |date=Dec 2013 | doi = 10.1109/CDC.2013.6760966 | isbn = 978-1-4673-5717-3 |citeseerx=10.1.1.671.6351 }}</ref> After several generations of rule application it is usually the case that some forms of complex behaviour arise. Complexity gets built upon complexity until the end result is something markedly complex, and quite often completely counterintuitive from what the original rules would be expected to produce (see [[complex system]]s). For this reason, in [[neural network model]]s, it is necessary to accurately model an ''in vivo'' network, by live collection of "noise" coefficients that can be used to refine statistical inference and extrapolation as system complexity increases.<ref>{{cite web|url=http://www.duke.edu/~jme17/Joshua_E._Mendoza-Elias/Research_Interests.html#Neuroscience_-_Neural_Plasticity_in|title="Smart Vaccines" – The Shape of Things to Come|author=Joshua E. Mendoza|work=Research Interests|archiveurl=https://web.archive.org/web/20121114233853/http://people.duke.edu/~jme17/Joshua_E._Mendoza-Elias/Research_Interests.html|archivedate=November 14, 2012}}</ref>
+
+Natural evolution is a good analogy to this method–the rules of evolution ([[Selection (biology)|selection]], [[Genetic recombination|recombination]]/reproduction, [[mutation]] and more recently [[transposition (genetics)|transposition]]) are in principle simple rules, yet over millions of years have produced remarkably complex organisms. A similar technique is used in [[genetic algorithm]]s.
+
+== Brain-inspired Computing ==
+
+Brain-inspired computing refers to computational models and methods that are mainly based on the mechanism of the brain, rather than completely imitating the brain. The goal is to enable the machine to realize various cognitive abilities and coordination mechanisms of human beings in a brain-inspired manner, and finally achieve or exceed Human intelligence level.
+
+=== Research ===
+[[Artificial intelligence]] researchers are now aware of the benefits of learning from the brain information processing mechanism. And the progress of brain science and neuroscience also provides the necessary basis for artificial intelligence to learn from the brain information processing mechanism. Brain and neuroscience researchers are also trying to apply the understanding of brain information processing to a wider range of science field. The development of the discipline benefits from the push of information technology and smart technology and in turn brain and neuroscience will also inspire the next generation of the transformation of information technology.
+
+=== The influence of brain science on Brain-inspired computing ===
+Advances in brain and neuroscience, especially with the help of new technologies and new equipment, support researchers to obtain multi-scale, multi-type biological evidence of the brain through different experimental methods, and are trying to reveal the structure of bio-intelligence from different aspects and functional basis. From the microscopic neurons, synaptic working mechanisms and their characteristics, to the mesoscopic network connection model, to the links in the macroscopic brain interval and their synergistic characteristics, the multi-scale structure and functional mechanisms of brains derived from these experimental and mechanistic studies will provide important inspiration for building a future brain-inspired computing model.<ref>徐波，刘成林，曾毅.类脑智能研究现状与发展思考[J].中国科学院院刊,2016,31(7):793-802.</ref>
+
+=== Brain-inspired chip ===
+Broadly speaking, brain-inspired chip refers to a chip designed with reference to the structure of human brain neurons and the cognitive mode of human brain. Obviously, the "[[neuromorphic]] chip" is a brain-inspired chip that focuses on the design of the chip structure with reference to the human brain neuron model and its tissue structure, which represents a major direction of brain-inspired chip research. Along with the rise and development of “brain plans” in various countries, a large number of research results on neuromorphic chips have emerged, which have received extensive international attention and are well known to the academic community and the industry. For example, EU-backed [[SpiNNaker]] and BrainScaleS, Stanford's [[Neurogrid]], IBM's [[TrueNorth]], and Qualcomm's [[Zeroth (software)|Zeroth]].
+
+TrueNorth is a brain-inspired chip that IBM has been developing for nearly 10 years. The US DARPA program has been funding IBM to develop pulsed neural network chips for intelligent processing since 2008. In 2011, IBM first developed two cognitive silicon prototypes by simulating brain structures that could learn and process information like the brain. Each neuron of a brain-inspired chip is cross-connected with massive parallelism. In 2014, IBM released a second-generation brain-inspired chip called "TrueNorth." Compared with the first generation brain-inspired chips, the performance of the TrueNorth chip has increased dramatically, and the number of neurons has increased from 256 to 1 million; the number of programmable synapses has increased from 262,144 to 256 million; Subsynaptic operation with a total power consumption of 70&nbsp;mW and a power consumption of 20&nbsp;mW per square centimeter. At the same time, TrueNorth handles a nuclear volume of only 1/15 of the first generation of brain chips. At present, IBM has developed a prototype of a neuron computer that uses 16 TrueNorth chips with real-time video processing capabilities.<ref>{{cite web|url=http://www.eepw.com.cn/article/271641.htm|title=美国类脑芯片发展历程|publisher=[[Electronic Engineering & Product World]]}}</ref> The super-high indicators and excellence of the TrueNorth chip have caused a great stir in the academic world at the beginning of its release.
+
+In 2012, the Institute of Computing Technology of the Chinese Academy of Sciences(CAS) and the French Inria collaborated to develop the first chip in the world to support the deep neural network processor architecture chip "Cambrian".<ref>Chen T, Du Z, Sun N, et al. [https://dl.acm.org/doi/pdf/10.1145/2654822.2541967 Diannao: A small-footprint high throughput accelerator for ubiquitous machine-learning]//ACM Sigplan Notices. New York: ACM, 2014, 49(4): 269-284</ref> The technology has won the best international conferences in the field of computer architecture, ASPLOS and MICRO, and its design method and performance have been recognized internationally. The chip can be used as an outstanding representative of the research direction of brain-inspired chips.
+
+=== Challenges in Brain-Inspired Computing ===
+
+==== Unclear Brain mechanism cognition ====
+The human brain is a product of evolution. Although its structure and information processing mechanism are constantly optimized, compromises in the evolution process are inevitable. The cranial nervous system is a multi-scale structure. There are still several important problems in the mechanism of information processing at each scale, such as the fine connection structure of neuron scales and the mechanism of brain-scale feedback. Therefore, even a comprehensive calculation of the number of neurons and synapses is only 1/1000 of the size of the human brain, and it is still very difficult to study at the current level of scientific research.<ref>Markram Henry , Muller Eilif , Ramaswamy Srikanth [https://www.sciencedirect.com/science/article/pii/S0092867415011915 Reconstruction and simulation of neocortical microcircuitry] [J].Cell, 2015, Vol.163 (2), pp.456-92PubMed</ref>
+
+==== Unclear Brain-inspired computational models and algorithms ====
+In the future research of cognitive brain computing model, it is necessary to model the brain information processing system based on multi-scale brain neural system data analysis results, construct a brain-inspired multi-scale neural network computing model, and simulate multi-modality of brain in multi-scale. Intelligent behavioral ability such as perception, self-learning and memory, and choice. Machine learning algorithms are not flexible and require high-quality sample data that is manually labeled on a large scale. Training models require a lot of computational overhead. Brain-inspired artificial intelligence still lacks advanced cognitive ability and inferential learning ability.
+
+==== Constrained  Computational architecture and capabilities ====
+Most of the existing brain-inspired chips are still based on the research of von Neumann architecture, and most of the chip manufacturing materials are still using traditional semiconductor materials. The neural chip is only borrowing the most basic unit of brain information processing. The most basic computer system, such as storage and computational fusion, pulse discharge mechanism, the connection mechanism between neurons, etc., and the mechanism between different scale information processing units has not been integrated into the study of brain-inspired computing architecture. Now an important international trend is to develop neural computing components such as brain memristors, memory containers, and sensory sensors based on new materials such as nanometers, thus supporting the construction of more complex brain-inspired computing architectures. The development of brain-inspired computers and large-scale brain computing systems based on brain-inspired chip development also requires a corresponding software environment to support its wide application.
+
+== See also ==
+{{prose|date=December 2016}}
+* [[Applications of artificial intelligence]]
+* [[Artificial life]]
+* [[Artificial neural network]]
+* [[Behavior based robotics]]
+* [[Bioinformatics]]
+* [[Bionics]]
+* [[Cognitive architecture]]
+* [[Cognitive modeling]]
+* [[Cognitive science]]
+* [[Connectionism]]
+* [[Digital morphogenesis]]
+* [[Digital organism]]
+* [[Evolutionary algorithm]]
+* [[Evolutionary computation]]
+* [[Fuzzy logic]]
+* [[Gene expression programming]]
+* [[Genetic algorithm]]
+* [[Genetic programming]]
+* [[Gerald Edelman]]
+* [[Janine Benyus]]
+* [[Learning classifier system]]
+* [[Mark A. O'Neill]]
+* [[Mathematical biology]]
+* [[Mathematical model]]
+* [[Natural computation]]
+* [[Neuroevolution]]
+* [[Olaf Sporns]]
+* [[Organic computing]]
+* [[Swarm intelligence]]
+
+; Lists
+* [[List of emerging technologies]]
+* [[Outline of artificial intelligence]]
+
+== References ==
+
+<references/>
+
+== Further reading ==
+
+''(the following are presented in ascending order of complexity and depth, with those new to the field suggested to start from the top)''
+
+* "[http://www.cs.uvm.edu/~jbongard/papers/2009_IEEEComp_Bongard.pdf Biologically Inspired Computing]"
+* "[http://peterjbentley.com/ Digital Biology]", Peter J. Bentley.
+* "[https://web.archive.org/web/20060216011353/http://bic05.fsksm.utm.my/ First International Symposium on Biologically Inspired Computing]"
+* ''[https://books.google.com/books?id=Au_tLkCwExQC Emergence: The Connected Lives of Ants, Brains, Cities and Software]'', Steven Johnson.
+* ''Dr. Dobb's Journal'', Apr-1991. (Issue theme: Biocomputing)
+* ''[https://books.google.com/books?id=K8P1rX8T4kYC Turtles, Termites and Traffic Jams]'', Mitchel Resnick.
+* ''Understanding Nonlinear Dynamics'', Daniel Kaplan and [[Leon Glass]].
+* {{cite journal | first1 = E. | last1= Ridge | first2 = D. | last2 = Kudenko | first3 = D. | last3 = Kazakov | first4 = E. |last4=Curry | title = Moving Nature-Inspired Algorithms to Parallel, Asynchronous and Decentralised Environments | citeseerx = 10.1.1.64.3403 | journal = Self-Organization and Autonomic Informatics (I) | year = 2005 | volume = 135 | pages = 35–49 }}
+*''[https://pure.ulster.ac.uk/ws/files/11284565/04160239-2007-Swarms_and_Swarm_Intelligence.pdf Swarms and Swarm Intelligence]'' by Michael G. Hinchey, Roy Sterritt, and Chris Rouff,
+* ''[https://books.google.com/books?id=2wTOBQAAQBAJ Fundamentals of Natural Computing: Basic Concepts, Algorithms, and Applications]'', L. N. de Castro, Chapman & Hall/CRC, June 2006.
+* "[https://web.archive.org/web/20050425003451/http://mitpress.mit.edu/books/FLAOH/cbnhtml/home.html The Computational Beauty of Nature]", [http://flakenstein.net/ Gary William Flake]. MIT Press. 1998, hardcover ed.; 2000, paperback ed. An in-depth discussion of many of the topics and underlying themes of bio-inspired computing.
+* Kevin M. Passino, [https://books.google.com/books?id=7ttpWS75Uo0C Biomimicry for Optimization, Control, and Automation], Springer-Verlag, London, UK, 2005.
+* ''[https://books.google.com/books?id=s_Q5YZ2nh2kC Recent Developments in Biologically Inspired Computing]'', L. N. de Castro and F. J. Von Zuben, Idea Group Publishing, 2004.
+*Nancy Forbes, Imitation of Life: How Biology is Inspiring Computing, MIT Press, Cambridge, MA 2004.
+* M. Blowers and A. Sisti, ''Evolutionary and Bio-inspired Computation: Theory and Applications'', SPIE Press, 2007.
+* X. S. Yang, Z. H. Cui, R. B. Xiao, A. H. Gandomi, M. Karamanoglu, ''Swarm Intelligence and Bio-Inspired Computation: Theory and Applications'', Elsevier, 2013. 
+* "[https://web.archive.org/web/20080517070016/http://informatics.indiana.edu/rocha/i%2Dbic/ Biologically Inspired Computing Lecture Notes]", [[Luis M. Rocha]]
+* ''The portable UNIX programming system (PUPS) and CANTOR: a computational envorionment for dynamical representation and analysis of complex neurobiological data'', [[Mark A. O'Neill]], and Claus-C Hilgetag, Phil Trans R Soc Lond B 356 (2001), 1259–1276
+* "[https://arxiv.org/abs/cs/0512071 Going Back to our Roots: Second Generation Biocomputing]", J. Timmis, M. Amos, W. Banzhaf, and A. Tyrrell, Journal of Unconventional Computing 2 (2007) 349–378.
+* {{cite book | last1=Neumann | first1=Frank | last2=Witt | first2=Carsten | title=Bioinspired computation in combinatorial optimization. Algorithms and their computational complexity | zbl=1223.68002 | series=Natural Computing Series | location=Berlin | publisher=[[Springer-Verlag]] | isbn=978-3-642-16543-6 | year=2010 }}
+* {{cite book | last1=Brabazon | first1=Anthony | last2=O’Neill | first2=Michael | title=Biologically inspired algorithms for financial modelling | zbl=1117.91030 | series=Natural Computing Series | location=Berlin | publisher=[[Springer-Verlag]] | isbn=978-3-540-26252-7 | year=2006 }}
+* C-M. Pintea, 2014, [https://www.springer.com/la/book/9783642401787 Advances in Bio-inspired Computing for Combinatorial Optimization Problem], Springer {{ISBN|978-3-642-40178-7}}
+* "[https://arxiv.org/abs/1709.09840 PSA: A novel optimization algorithm based on survival rules of porcellio scaber]", Y. Zhang and S. Li
+
+== External links ==
+*[https://web.archive.org/web/20120117192422/http://www.surrey.ac.uk/computing/research/nice/ Nature Inspired Computing and Engineering (NICE)] Group, University of Surrey, UK
+*[https://web.archive.org/web/20040603172329/http://www.cogs.susx.ac.uk/users/ezequiel/alife-page/development.html ALife Project in Sussex]
+*[https://web.archive.org/web/20130621005509/http://neurochem-project.eu/ Biologically Inspired Computation for Chemical Sensing ''Neurochem'' Project]
+*[http://www.andcorporation.com AND Corporation]
+*[http://www.cercia.ac.uk/ Centre of Excellence for Research in Computational Intelligence and Applications] Birmingham, UK
+* [https://web.archive.org/web/20080828173733/http://dssg.cs.umb.edu/wiki/index.php/BiSNET BiSNET: Biologically-inspired architecture for Sensor NETworks]
+* [https://web.archive.org/web/20090622110049/http://dssg.cs.umb.edu/wiki/index.php/BiSNET/e BiSNET/e: A Cognitive Sensor Networking Architecture with Evolutionary Multiobjective Optimization]
+*[https://web.archive.org/web/20060621194332/http://www.neuralnetworksolutions.com/ Biologically inspired neural networks]
+*[http://ncra.ucd.ie NCRA] UCD, Dublin Ireland
+*[http://www.tumblingdice.co.uk/pupsp3 The PUPS/P3 Organic Computing Environment for Linux]
+* [https://web.archive.org/web/20090329225051/http://dssg.cs.umb.edu/wiki/index.php/SymbioticSphere SymbioticSphere: A Biologically-inspired Architecture for Scalable, Adaptive and Survivable Network Systems]
+* [http://www.sciencedirect.com/science/article/pii/S1568494615002756 The runner-root algorithm]
+* [http://www.bionet.ufpr.br Bio-inspired Wireless Networking Team (BioNet)]
+* [http://www.ai-one.com Biologically Inspired Intelligence]
+
+{{DEFAULTSORT:Bio-Inspired Computing}}
+[[Category:Theoretical computer science]]
+[[Category:Artificial intelligence]]
+[[Category:Natural computation]]
+[[Category:Nature-inspired metaheuristics| ]]
+[[Category:Bioinspiration]]

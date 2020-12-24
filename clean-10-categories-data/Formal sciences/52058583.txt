@@ -1,0 +1,470 @@
+{{other uses|energy system (disambiguation)}}
+{{use dmy dates|date=October 2016}}
+{{use American English|date=September 2019}}
+
+[[File: Generic energy system supplying fuels and electricity.svg|thumb|300px|Physical components of a generic energy system supplying fuels and electricity (but not [[district heating|district heat]]) to end-users]]
+
+An '''energy system''' is a system primarily designed to supply [[#Energy-services|energy-services]] to [[end user|end-users]].<ref name="groscurth-etal-1995"/>{{rp|941}}  Taking a structural viewpoint, the [[IPCC Fifth Assessment Report]] defines an energy system as "all components related to the production, conversion, delivery, and use of energy".<ref name="allwood-etal-2014"/>{{rp|1261}}  The field of [[energy economics]] includes [[energy market]]s and treats an energy system as the technical and economic systems that satisfy [[consumer demand]] for energy in the forms of [[heat]], [[fuel]]s, and [[electricity]].<ref name="groscurth-etal-1995"/>{{rp|941}}
+
+The first two definitions allow for demand-side measures, including [[daylighting]], retrofitted [[building insulation]], and [[passive solar building design]], as well as socio-economic factors, such as aspects of [[energy demand management]] and even [[telecommuting]], while the third does not.  Neither does the third account for the [[Informal sector|informal economy]] in traditional [[biomass]] that is significant in many [[Developing country|developing countries]].<ref name="van-ruijven-etal-2008"/>
+
+The analysis of energy systems thus spans the disciplines of [[engineering]] and [[economics]].<ref name="hoffman-and-wood-1976"/>{{rp|1}}  Merging ideas from both areas to form a coherent description, particularly where [[macroeconomic]] dynamics are involved, is challenging.<ref name="boehringer-and-rutherford-2008"/><ref name="herbst-etal-2012"/>
+
+The concept of an energy system is evolving as new regulations, technologies, and practices enter into service – for example, [[emissions trading]], the development of [[smart grid]]s, and the greater use of [[energy demand management]], respectively.
+
+== Treatment ==
+
+{{see also|Energy industry|Energy modeling}}
+<!-- {(see also|Energy industry|Energy modeling|Open energy system models}} -->
+
+From a structural perspective, an energy system is like any [[System|general system]] and is made up of a set of interacting component parts, located within an environment.<ref name="merriam-webster-system"/>  These components derive from ideas found in [[engineering]] and [[economics]].  Taking a process view, an energy system "consists of an integrated set of technical and economic activities operating within a complex societal framework".<ref name="hoffman-and-wood-1976"/>{{rp|423}}  The identification of the components and behaviors of an energy system depends on the circumstances, the purpose of the analysis, and the questions under investigation.  The concept of an energy system is therefore an [[Abstraction (software engineering)|abstraction]] which usually precedes some form of computer-based investigation, such as the construction and use of a suitable [[energy modeling|energy model]].<ref name="anandarajah-etal-2009"/>
+
+Viewed in engineering terms, an energy system lends itself to representation as a [[flow network]]: the [[Glossary of graph theory#vertex|vertices]] map to engineering components like [[power station]]s and [[Pipeline transport|pipelines]] and the [[Glossary of graph theory#edge|edges]] map to the interfaces between these components.  This approach allows collections of similar or adjacent components to be aggregated and treated as one to simplify the model.  Once described thus, flow network algorithms, such as [[minimum-cost flow problem|minimum cost flow]], may be applied.<ref name="quelhas-etal-2007"/>  The components themselves can be treated as simple [[dynamical systems]] in their own right.<ref name="groscurth-etal-1995"/>
+
+Conversely, relatively pure economic modeling may adopt a sectoral approach with only limited engineering detail present.  The sector and sub-sector categories published by the [[International Energy Agency]] are often used as a basis for this analysis.  A 2009 study of the UK residential energy sector contrasts the use of the technology-rich [[Markal model]] with several UK sectoral housing stock models.<ref name="kannan-and-strachan-2007"/>
+
+International [[statistical study of energy data|energy statistics]] are typically broken down by carrier, sector and sub-sector, and country.<ref name="ires-2016"/>  Energy carriers ({{abbr|aka|also known as}} energy products) are further classified as [[primary energy]] and [[primary energy#Conversion to energy carriers (or secondary energy)|secondary]] (or intermediate) energy and sometimes final (or end-use) energy.  Published energy datasets are normally adjusted so that they are internally consistent, meaning that all energy stocks and flows must [[Energy balance (energy economics)|balance]].  The IEA regularly publishes energy statistics and energy balances with varying levels of detail and cost and also offers mid-term projections based on this data.<ref name="iea-2016a"/><ref name="iea-2016b"/>  The notion of an energy carrier, as used in [[energy economics]], is distinct and different from the definition of [[energy]] used in physics.
+
+Energy systems can range in scope, from local, municipal, national, and regional, to global, depending on issues under investigation.  Researchers may or may not include demand side measures within their definition of an energy system.  The ([[Intergovernmental Panel on Climate Change|IPCC]]) Intergovernmental Panel on Climate Change does so, for instance, but covers these measures in separate chapters on transport, buildings, industry, and agriculture.{{efn|The IPCC chapter on agriculture is titled: Agriculture, forestry, and other land use (AFOLU).}}<ref name="allwood-etal-2014"/>{{rp|1261}}<ref name="bruckner-etal-2014"/>{{rp|516}}
+
+Household consumption and investment decisions may also be included within the ambit of an energy system.  Such considerations are not common because consumer behavior is difficult to characterize, but the trend is to include human factors in models.  Household decision-taking may be represented using techniques from [[bounded rationality]] and [[Agent-based model|agent-based behavior]].<ref name="wittmann-and-bruckner-2009"/>  The [[American Association for the Advancement of Science]] (AAAS) specifically advocates that "more attention should be paid to incorporating behavioral considerations other than price- and income-driven behavior into economic models [of the energy system]".<ref name="aaas-2011"/>{{rp|6}}
+
+== Energy-services ==
+
+{{see also|Energy conservation|Efficient energy use}}
+
+The concept of an energy-service is central, particularly when defining the purpose of an energy system:
+
+{{quote|It is important to realize that the use of energy is no end in itself but is always directed to satisfy human needs and desires. Energy services are the ends for which the energy system provides the means.<ref name="groscurth-etal-1995"/>{{rp|941}}}}
+
+Energy-services can be defined as amenities that are either furnished through energy consumption or could have been thus supplied.<ref name="morrison-etal-2005"/>{{rp|2}}  More explicitly:
+
+{{quote|Demand should, where possible, be defined in terms of energy-service provision, as characterized by an appropriate intensity{{efn|The term ''intensity'' refers to quantities which do not scale with component size.  See [[intensive and extensive properties]].}} – for example, air [[temperature]] in the case of space-heating or [[lux]] levels for [[illuminance]]. This approach facilitates a much greater set of potential responses to the question of supply, including the use of energetically-passive techniques – for instance, retrofitted [[Building insulation|insulation]] and [[daylighting]].<ref name="bruckner-etal-2003"/>{{rp|156}}}}
+
+A consideration of energy-services per capita and how such services contribute to human welfare and individual quality of life is paramount to the debate on [[sustainable energy]].  People living in poor regions with low levels of energy-services consumption would clearly benefit from greater consumption, but the same is not generally true for those with high levels of consumption.<ref name="haas-etal-2008"/>
+
+The notion of energy-services has given rise to [[energy service company|energy-service companies]] (ESCo) who contract to provide energy-services to a client for an extended period.  The ESCo is then free to choose the best means to do so, including investments in the thermal performance and [[HVAC]] equipment of the buildings in question.<ref name="duplessis-etal-2012"/>
+
+== ISO 13600, 13601, 13602 on technical energy systems ==
+
+ISO{{nnbsp}}[[Energy carrier|13600]], ISO{{nnbsp}}13601, and ISO{{nnbsp}}13602 form a set of [[international standard]]s covering technical energy systems (TES).<ref name="iso-13600-1997-main"/><ref name="iso-13600-1997-corrigendum-1"/><ref name="iso-13601-1998"/><ref name="iso-13602-2002"/>  Although withdrawn prior to 2016, these documents provide useful definitions and a framework for formalizing such systems.  The standards depict an energy system broken down into supply and demand sectors, linked by the flow of tradable energy commodities (or energywares).  Each sector has a set of inputs and outputs, some intentional and some harmful byproducts.  Sectors may be further divided into subsectors, each fulfilling a dedicated purpose.  The demand sector is ultimately present to supply energyware-based services to consumers (see [[#Energy-services|energy-services]]).
+
+== See also ==
+
+* [[Control volume]] – a concept from mechanics and thermodynamics
+* [[Electric power system]] – a network of electrical components used to generate, transfer, and use electric power
+* [[Energy carrier]] – also known as an energy product, energy vector, energy commodity, and energyware
+* [[Energy development]] – the effort to provide societies with sufficient energy under the reduced social and environmental impact
+* [[Energy economics]] – the field of economics which deals with energy supply and demand
+* [[Energy modeling]] – the process of building computer models of energy systems
+* [[Energy industry]] – the supply-side of the energy sector
+* [[Mathematical model]] – the representation of a system using mathematics and often solved using computers
+* [[Object-oriented programming]] – a computer programming paradigm suited to the representation of energy systems as networks
+* [[Network science]] – the study of complex networks
+* [[Open energy system databases]] – database projects which collect, clean, and republish energy-related datasets 
+* [[Open energy system models]]  – a review of energy system models that are also [[Open source software|open source]]
+* [[Sankey diagram]] – used to show energy flows through a system
+* [[System]] – general treatment
+
+== Notes ==
+
+{{notelist}}
+
+== References ==
+
+{{reflist|30em|refs=
+
+<ref name="aaas-2011">{{cite book
+ | title = Beyond technology: strengthening energy policy through social science
+ | date = 2011
+ | publisher = American Academy of Arts and Sciences (AAAS)
+ | location = Cambridge, MA, USA
+ | url = http://www.amacad.org/pdfs/alternativeenergy.pdf
+ | access-date = 2016-10-25
+ | archive-url = https://web.archive.org/web/20170829140825/http://www.amacad.org/pdfs/alternativeEnergy.pdf
+ | archive-date = 29 August 2017
+ | url-status = dead
+ }}</ref>
+
+<ref name="allwood-etal-2014">
+{{cite book
+ | first1 = Julian M | last1 = Allwood
+ | first2 = Valentina | last2 = Bosetti
+ | first3 = Navroz K | last3 = Dubash
+ | first4 = Luis | last4 = Gómez-Echeverri
+ | first5 = Christoph | last5 = von Stechow
+ | editor = IPCC
+ | year = 2014
+ | title = Climate change 2014: mitigation of climate change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change
+ | chapter = Annex I: Glossary, acronyms and chemical symbols
+ | publisher = [[Cambridge University Press]]
+ | location = Cambridge, United Kingdom and New York, NY, USA
+ | pages = 1249–1279
+ | isbn = 978-1-107-65481-5
+ | chapter-url = http://www.ipcc.ch/pdf/assessment-report/ar5/wg3/ipcc_wg3_ar5_full.pdf
+ | access-date = 2016-10-12
+<!--
+ | quote = An energy-service is the benefit received as a result of energy use.{{nbsp}}... The energy system comprises all components related to the production, conversion, delivery, and use of energy. (page 1261)
+-->
+}}</ref>
+
+<ref name="anandarajah-etal-2009">
+{{cite book
+ | first1 = Gabrial | last1 = Anandarajah
+ | first2 = Neil | last2 = Strachan
+ | first3 = Paul | last3 = Ekins
+ | first4 = Ramachandran | last4 = Kannan
+ | first5 = Nick | last5 = Hughes
+ | title = Pathways to a low carbon economy: Energy systems modelling — UKERC Energy 2050 Research Report 1 — UKERC/RR/ESM/2009/001
+ | date = March 2009
+ | publisher = UK Energy Research Centre (UKERC)
+ | location = United Kingdom
+ | url = http://www.ukerc.ac.uk/asset/6A6DE259-DAB0-4EE9-AA182A5F987A8927
+ | access-date = 2016-10-22
+}}</ref>
+
+<ref name="boehringer-and-rutherford-2008">
+{{cite journal
+ | last1 = Böhringer | first1 = Christoph
+ | last2 = Rutherford | first2 = Thomas F
+ | title = Combining bottom-up and top-down
+ | date = March 2008
+ | journal = Energy Economics
+ | volume = 30
+ | issue = 2
+ | pages = 574–596
+ | doi = 10.1016/j.eneco.2007.03.004
+ | issn = 0140-9883
+ | url = https://tarc.exeter.ac.uk/media/universityofexeter/businessschool/documents/centres/tarc/events/masterclasses/CombiningBottomUp.pdf
+ | access-date = 2016-10-21
+| citeseerx = 10.1.1.184.8384
+ }}</ref>
+
+<ref name="bruckner-etal-2003">
+{{cite journal
+ | last1 = Bruckner | first1 = Thomas
+ | last2 = Morrison | first2 = Robbie
+ | last3 = Handley | first3 = Chris
+ | last4 = Patterson | first4 = Murray
+ | title = High-resolution modeling of energy-services supply systems using ''deeco'': overview and application to policy development
+ | date = July 2003
+ | journal = Annals of Operations Research
+ | volume = 121
+ | issue = 1–4
+ | pages = 151–180
+ | doi = 10.1023/A:1023359303704
+ | s2cid = 14877200
+ | url = http://www.wifa.uni-leipzig.de/fileadmin/user_upload/iirm-tm/energiemanagement/publikationen/reviewed_journals/2003_HighResolModelingEnergySystemsDeeco.pdf
+ | access-date = 2016-10-14
+<!--
+ | quote = Demand should, where possible, be defined in terms of energy-service provision, as characterized by an appropriate intensity – for example, air temperature in the case of space-heating or lux levels for illuminance. This approach facilitates a much greater set of potential responses to the question of supply, including the use of energetically-passive techniques – for instance, retrofitted insulation and daylighting. (page 156)
+-->
+}}</ref>
+
+<ref name="bruckner-etal-2014">
+{{cite book
+ | first1 = Thomas | last1 = Bruckner
+ | first2 = Igor Alexeyevic | last2 = Bashmakov
+ | first3 = Yacob | last3 = Mulugetta
+ | display-authors = etal
+ | editor = IPCC
+ | year = 2014
+ | title = Climate change 2014: mitigation of climate change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change
+ | chapter = Chapter 7: Energy systems
+ | publisher = [[Cambridge University Press]]
+ | location = Cambridge, United Kingdom and New York, NY, USA
+ | pages = 511–597
+ | isbn = 978-1-107-65481-5
+ | chapter-url = http://www.ipcc.ch/pdf/assessment-report/ar5/wg3/ipcc_wg3_ar5_full.pdf
+ | access-date = 2016-10-12
+}}</ref>
+
+<ref name="duplessis-etal-2012">
+{{cite journal
+ | last1 = Duplessis | first1 = Bruno
+ | last2 = Adnot | first2 = Jérôme
+ | last3 = Dupont | first3 = Maxime
+ | last4 = Racapé | first4 = François
+ | title = An empirical typology of energy services based on a well-developed market: France
+ | date = June 2012
+ | journal = Energy Policy
+ | volume = 45
+ | pages = 268–276
+ | doi = 10.1016/j.enpol.2012.02.031
+ | issn = 0301-4215
+}}</ref>
+
+<ref name="groscurth-etal-1995">
+{{cite journal
+ | last1 = Groscurth| first1 = Helmuth-M
+ | last2 = Bruckner | first2 = Thomas
+ | last3 = Kümmel | first3 = Reiner
+ | title = Modeling of energy-services supply systems
+ | date = September 1995
+ | journal = Energy
+ | volume = 20
+ | issue = 9
+ | pages = 941–958
+ | doi = 10.1016/0360-5442(95)00067-Q
+ | issn = 0360-5442
+ | url = http://www.groscurth.de/uploads/media/NEMESS_energy_1995.pdf
+ | access-date = 2016-10-14
+<!--
+ | quote = In energy economics, energy systems are usually defined as technical and economic systems meeting the energy demand.  "However, the energy demand is not a fixed quantity but is subject to various influences, e.g., prices, regulations, and consumer preferences. Thus, the definition of energy systems should provide a much broader, socioeconomic view and refer to the technical and economic side of energy supply as well as the socioeconomic phenomena occurring in a society, which uses energy to enhance its standard of living; furthermore, the impact on the natural environment is important. ... It is important to realize that the use of energy is no end in itself but is always directed to satisfy human needs and desires. Energy services are the ends for which the energy system provides the means. (page 941)
+-->
+}}</ref>
+
+<ref name="haas-etal-2008">{{cite journal
+ | last1 = Haas
+ | first1 = Reinhard
+ | last2 = Nakicenovic
+ | first2 = Nebojsa
+ | last3 = Ajanovic
+ | first3 = Amela
+ | last4 = Faber
+ | first4 = Thomas
+ | last5 = Kranzl
+ | first5 = Lukas
+ | last6 = Müller
+ | first6 = Andreas
+ | last7 = Resch
+ | first7 = Gustav
+ | title = Towards sustainability of energy systems: a primer on how to apply the concept of energy services to identify necessary trends and policies
+ | date = November 2008
+ | journal = Transition Towards Sustainable Energy Systems
+ | volume = 36
+ | issue = 11
+ | pages = 4012–4021
+ | doi = 10.1016/j.enpol.2008.06.028
+ | issn = 0301-4215
+ | url = http://www.eeg.tuwien.ac.at/eeg.tuwien.ac.at_pages/publications/pdf/HAA_PAP_2008_1.pdf
+ | access-date = 2016-10-22
+ | archive-url = https://web.archive.org/web/20170705063737/http://eeg.tuwien.ac.at/eeg.tuwien.ac.at_pages/publications/pdf/HAA_PAP_2008_1.pdf
+ | archive-date = 5 July 2017
+ | url-status = dead
+ }}</ref>
+
+<ref name="herbst-etal-2012">
+<!-- listed at: http://econpapers.repec.org/article/sesarsjes/2012-ii-2.htm -->
+{{cite journal
+ | first1 = Andrea | last1 = Herbst
+ | first2 = Felipe | last2 = Toro
+ | first3 = Felix | last3 = Reitze
+ | first4 = Eberhard | last4 = Jochem
+ | title = Introduction to energy systems modelling
+ | date = 2012
+ | journal = Swiss Journal of Economics and Statistics
+ | volume = 148
+ | number = 2
+ | pages = 111–135
+ | url = http://www.irees.de/irees-wAssets/docs/publications/journal-reviewed/Herbst-et-al-2012_Introduction-to-Energy-Systems-Modelling_SJES.pdf
+ | access-date = 2016-11-04
+| doi = 10.1007/BF03399363
+ | s2cid = 13683816
+ }}</ref>
+
+<ref name="hoffman-and-wood-1976">
+{{cite journal
+ | last1 = Hoffman | first1 = Kenneth C
+ | last2 = Wood | first2 = David O
+ | title = Energy system modeling and forecasting
+ | date = 1 November 1976
+ | journal = Annual Review of Energy
+ | volume = 1
+ | issue = 1
+ | pages = 423–453
+ | doi = 10.1146/annurev.eg.01.110176.002231
+ | hdl = 1721.1/27512
+ | issn = 0362-1626
+ | url = https://dspace.mit.edu/bitstream/handle/1721.1/27512/MIT-EL-75-013WP-03830861.pdf
+ | access-date = 2016-10-07
+<!--
+ | quote = The energy system consists of an integrated set of technical and economic activities operating within a complex societal framework.  Energy is a vital component in the economic and social well-being of a nation and must be considered explicitly in the formulation of regional, national, and international policy.  As the importance of energy in policymaking has become apparent, research and analysis in the field of energy system modeling and forecasting has grown rapidly.  The field has evolved from one almost exclusively the domain of planning groups in the major sectors of the energy industry and of government regulatory agencies to one in which many Federal and State agencies are active in the development and application of energy models and forecasts.  Energy system models are now used extensively for regional, national and international forecasting and for policy formulation and analysis.
+-->
+}}</ref>
+
+<ref name="iea-2016a">
+{{cite book
+ | title = Key world energy statistics
+ | date = 2016
+ | publisher = International Energy Agency (IEA)
+ | location = Paris, France
+ | url = https://www.iea.org/publications/freepublications/publication/KeyWorld2016.pdf
+ | access-date = 2016-12-15
+}}</ref>
+
+<ref name="iea-2016b">
+{{cite book
+ | title = World Energy Outlook 2016 — Executive summary
+ | date = 2016
+ | publisher = OECD/IEA
+ | location = Paris, France
+ | url = https://www.iea.org/publications/freepublications/publication/WorldEnergyOutlook2016ExecutiveSummaryEnglish.pdf
+ | access-date = 2016-11-30
+}}</ref>
+
+<ref name="ires-2016">
+<!-- print ISBN: 978-92-1-161584-5 -->
+<!-- PDF dated: 23 September 2016  -->
+{{cite book
+ | title = International Recommendations for Energy Statistics (IRES) — ST/ESA/STAT/SER.M/93
+ | date = 2016
+ | publisher = Statistics Division, Department of Economic and Social Affairs, United Nations
+ | location = New York, NY, USA
+ | isbn = 978-92-1-056520-2
+ | url = http://unstats.un.org/unsd/energy/ires/IRES_edited2.pdf
+ | access-date = 2016-12-17
+}}  Annotated as final edited version prior to typesetting.  Also covers energy-related greenhouse gas emissions accounting.</ref>
+
+<ref name="iso-13600-1997-main">
+<!--
+web: http://webstore.ansi.org
+web: http://www.iso.org
+-->
+{{cite book
+ | title = Technical energy systems: basic concepts — ISO 13600:1997 — First edition
+ | date = 15 November 1997
+ | publisher = International Standards Organization
+ | location = Geneva, Switzerland
+}} Status withdrawn.</ref>
+
+<ref name="iso-13600-1997-corrigendum-1">
+{{cite book
+ | title = Technical energy systems: basic concepts — ISO 13600:1997 — Technical corrigendum 1
+ | date = 1 May 1998
+ | publisher = International Standards Organization
+ | location = Geneva, Switzerland
+}} Status withdrawn.</ref>
+
+<ref name="iso-13601-1998">
+{{cite book
+ | title = Technical energy systems: : structure for analysis : energyware supply and demand sectors — ISO 13601:1998
+ | date = 11 June 1998
+ | publisher = International Standards Organization
+ | location = Geneva, Switzerland
+}} Status withdrawn.</ref>
+
+<ref name="iso-13602-2002">
+{{cite book
+ | title = Technical energy systems: methods for analysis: part 1: general — ISO 13602-1:2002
+ | date = 1 November 2002
+ | publisher = International Standards Organization
+ | location = Geneva, Switzerland
+}} Status withdrawn.</ref>
+
+<ref name="kannan-and-strachan-2007">
+{{cite journal
+ | last1 = Kannan | first1 = Ramachandran
+ | last2 = Strachan | first2 = Neil
+ | title = Modelling the UK residential energy sector under long-term decarbonisation scenarios: Comparison between energy systems and sectoral modelling approaches
+ | date = April 2009
+ | journal = Applied Energy
+ | volume = 86
+ | issue = 4
+ | pages = 416–428
+ | doi = 10.1016/j.apenergy.2008.08.005
+ | issn = 0306-2619
+}}</ref>
+
+<ref name="merriam-webster-system">
+{{cite web
+ | title = Definition of ''system''
+ | website = Merriam-Webster
+ | location = Springfield, MA, USA
+ | accessdate = 2016-10-09
+ | url = http://www.merriam-webster.com/dictionary/system
+}}</ref>
+
+<ref name="morrison-etal-2005">
+{{cite conference
+ | last1 = Morrison | first1 = Robbie
+ | last2 = Wittmann | first2 = Tobias
+ | last3 = Heise | first3 = Jan
+ | last4 = Bruckner | first4 = Thomas
+ | title = Policy-oriented energy system modeling with ''xeona''
+ | date = 20–22 June 2005
+ | conference = ECOS 2005
+ | editor = Norwegian University of Science and Technology (NTNU)
+ | book-title = Proceedings of ECOS 2005: shaping our future energy systems: 18th International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems
+ | publisher = Tapir Academic Press
+ | location = Trondheim, Norway
+ | volume = 2
+ | pages = 659–668
+ | isbn = 82-519-2041-8
+ | url = http://www.wifa.uni-leipzig.de/fileadmin/user_upload/iirm-tm/energiemanagement/publikationen/Conference_Proceedings/2005_PolicyOrientedEXeona.pdf
+ | access-date = 2016-10-14
+}}</ref>
+
+<ref name="quelhas-etal-2007">
+{{cite journal
+ | last1 = Quelhas | first1 = Ana
+ | last2 = Gil | first2 = Esteban
+ | last3 = McCalley | first3 = James D
+ | last4 = Ryan | first4 = Sarah M
+ | title = A multiperiod generalized network flow model of the US integrated energy system: Part I — Model description
+ | date = May 2007
+ | journal = IEEE Transactions on Power Systems
+ | volume = 22
+ | issue = 2
+ | pages = 829–836
+ | doi = 10.1109/TPWRS.2007.894844
+ | s2cid = 719700
+ | issn = 0885-8950
+ | url = https://www.researchgate.net/publication/3267854
+ | access-date = 2016-10-22
+}}</ref>
+
+<ref name="van-ruijven-etal-2008">
+{{cite journal
+ | last1 = van Ruijven | first1 = Bas
+ | last2 = Urban | first2 = Frauke
+ | last3 = Benders | first3 = René MJ
+ | last4 = Moll | first4 = Henri C
+ | last5 = van der Sluijs | first5 = Jeroen P
+ | last6 = de Vries | first6 = Bert
+ | last7 = van Vuuren | first7 = Detlef P
+ | title = Modeling energy and development: an evaluation of models and concepts
+ | date = December 2008
+ | journal = World Development
+ | volume = 36
+ | issue = 12
+ | pages = 2801–2821
+ | doi = 10.1016/j.worlddev.2008.01.011
+ | hdl = 1874/32954
+ | issn = 0305-750X
+ | url = http://dspace.library.uu.nl/bitstream/handle/1874/32954/NWS-E-2008-55.pdf
+ | access-date = 2016-10-25
+}}</ref>
+
+<ref name="wittmann-and-bruckner-2009">
+{{cite conference
+ | last1 = Wittmann | first1 = Tobias
+ | last2 = Bruckner | first2 = Thomas
+ | title = Agent-based modeling of urban energy supply systems facing climate protection constraints
+ | date = 28–30 June 2009
+ | conference = Fifth Urban Research Symposium 2009: Cities and Climate Change: Responding to an Urgent Agenda
+ | conference-url = http://web.worldbank.org/WBSITE/EXTERNAL/TOPICS/EXTURBANDEVELOPMENT/EXTUWM/0,,contentMDK:22446625~menuPK:6725106~pagePK:148956~piPK:216618~theSitePK:341511,00.html
+ | publisher = The World Bank
+ | location = Marseille, France
+ | url = http://siteresources.worldbank.org/INTURBANDEVELOPMENT/Resources/336387-1256566800920/6505269-1268260567624/Wittmann.pdf
+ | access-date = 2016-11-11
+}}
+</ref>
+
+}} <!-- reflist -->
+
+== External links ==
+{{Wikiquote}}
+<!-- templates and categories -->
+{{Systems science}}
+{{Computer modeling}}
+{{Footer energy}}
+{{Energy modeling}}
+
+{{DEFAULTSORT:Energy system}}
+[[Category:Energy]]
+[[Category:Energy development]]
+[[Category:Energy economics]]
+[[Category:Networks]]
+[[Category:Energy infrastructure]]
+[[Category:Systems science]]

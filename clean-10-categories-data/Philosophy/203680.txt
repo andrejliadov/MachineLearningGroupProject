@@ -1,0 +1,84 @@
+{{short description|Philosophical paradox concerning seemingly-absurd assertions}}
+{{distinguish|Langford–Moore paradox|Moore's law}}
+'''Moore's paradox''' concerns the apparent absurdity involved in asserting a first-person present-tense sentence such as "It is raining, but I do not believe that it is raining" or "It is raining, but I believe that it is not raining." The first author to note this apparent absurdity was [[G. E. Moore]].<ref name="ReferenceA">{{Cite book |first=G. E. |last=Moore |chapter=Moore's Paradox |editor-first=Thomas |editor-last=Baldwin |title=G. E. Moore: Selected Writings |location=London |publisher=Routledge |year=1993 |pages=207–212 |isbn=978-0-415-09853-3 }}</ref> These 'Moorean' sentences, as they have become known, are paradoxical in that while they appear absurd, they nevertheless
+# Can be true;
+# Are (logically) consistent; and
+# Are not (obviously) [[contradiction]]s.
+The term 'Moore's paradox' is attributed to [[Ludwig Wittgenstein]],<ref>{{Cite book |first=Ludwig |last=Wittgenstein |title=Philosophical Investigations |publisher=Blackwell Publishers |year=1953 |others=Section II.x |page=190 }}</ref> who considered the paradox Moore's most important contribution to philosophy.<ref>{{Cite book |first=Ludwig |last=Wittgenstein |title=Letters to Russell, Keynes and Moore |editor-first=G. H. |editor-last=von Wright |location=Oxford |publisher=Blackwell Publishers |year=1974 }}</ref> Wittgenstein wrote about the paradox extensively in his later writings,{{efn|See especially ''[[On Certainty]]'' and ''[[Philosophical Investigations]]''.}} which brought Moore's paradox the attention it would not have otherwise received.<ref>{{Cite book |first=Ludwig |last=Wittgenstein |title=Remarks on the Philosophy of Psychology, Volume I |editor1-first=G. E. M. |editor1-last=Anscombe |editor2-first=G. H. |editor2-last=von Wright |others=Translated by G. E. M. Anscombe |location=Oxford |publisher=Blackwell Publishers |year=1980 |isbn=978-0-631-12541-9 }}</ref> 
+
+Moore's paradox has been connected to many other well-known [[paradox#Logical paradox|logical paradoxes]], including, though not limited to, the [[liar paradox]], the [[knower paradox]], the [[unexpected hanging paradox]], and the [[preface paradox]].<ref name="Sorensen">{{Cite book |first=Roy A. |last=Sorensen |year=1988 |title=Blindspots |location=New York |publisher=Oxford University Press |isbn=978-0-19-824981-8 }}</ref>
+
+There is currently no generally accepted explanation of Moore's paradox in the philosophical literature. However, while Moore's paradox remains a philosophical curiosity, Moorean-type sentences are used by [[logician]]s, [[computer scientist]]s, and those working in the [[artificial intelligence]] community as examples of cases in which a knowledge, belief, or information system is unsuccessful in updating its fund of knowledge, belief, or information in light of new or novel data.<ref>{{cite journal | last=Hendricks | first=Vincent F. | last2=Symons | first2=John | title=Where's the Bridge? Epistemology and Epistemic Logic | journal=Philosophical Studies | volume=128 | issue=1 | year=2006 | issn=0031-8116 | doi=10.1007/s11098-005-4060-0 | pages=137–167| citeseerx=10.1.1.330.3026 }}</ref>
+
+==The problem==
+Since [[Jaakko Hintikka]]'s seminal treatment of the problem,<ref name="Hintikka">{{Cite book |first=Jaakko |last=Hintikka |year=1962 |title=Knowledge and Belief: An Introduction to the Logic of the Two Notions |url=https://archive.org/details/knowledgebeliefi00hint_0 |url-access=registration |location=Cornell, NY |publisher=Cornell University Press }}</ref> it has become standard to present Moore's paradox by explaining why it is absurd to assert sentences that have the logical form:
+"P and NOT(I believe that P)" or "P and I believe that NOT-P."
+Philosophers refer to these, respectively, as the omissive and commissive versions of Moore's paradox.
+
+Moore himself presented the problem in two ways.<ref name="ReferenceA"/><ref>{{Cite book |first=G. E. |last=Moore |year=1991 |chapter=Russell's Theory of Descriptions |editor-first=P. A. |editor-last=Schilpp |title=The Philosophy of Bertrand Russell |series=The Library of Living Philosophers |volume=5 |location=La Salle, IL |publisher=Open Court Publishing |pages=177–225 }}</ref>
+
+The more fundamental way of setting up the problem starts from the following three premises:
+# It can be true at a particular time both that P, and that I do not believe that P.
+# I can assert or believe one of the two at a particular time.
+# It is absurd to assert or believe both of them at the same time.
+
+I can assert that it is raining at a particular time. I can assert that I don't believe that it is raining at a particular time. If I say both at the same time, I am saying or doing something absurd. But the content of what I say—the [[proposition]] the sentence expresses—is perfectly consistent: it may well be raining, and I may not believe it. So why cannot I assert that it is so?
+
+Moore presents the problem in a second, distinct, way:
+# It is not absurd to assert the past-tense counterpart; e.g., "It was raining, but I did not believe that it was raining."
+# It is not absurd to assert the second- or third-person counterparts to Moore's sentences; e.g., "It is raining, but ''you'' do not believe that it is raining," or "Michael is dead, but ''they'' do not believe that he is."
+# It is absurd to assert the present-tense "It is raining, and I don't believe that it is raining."
+
+I can assert that I ''was'' a certain way—e.g., believing it was raining when it wasn't—and that you, he, or they ''are'' that way but not that I ''am'' that way.
+
+Subsequent philosophers have further noted that there is an apparent absurdity in asserting a first-person ''future-tense'' sentence such as "It will be raining, and I will believe that it is not raining."<ref>{{Cite journal |first=Luc |last=Bovens |year=1995 |title='P and I Will Believe that not-P': Diachronic Constraints on Rational Belief |journal=[[Mind (journal)|Mind]] |volume=104 |issue=416 |pages=737–760 |doi=10.1093/mind/104.416.737 }}</ref> However, when it does not specify an exact time for when the belief is mistaken, the proposition will tend to be true at some point in the future; its negation would imply that "Every time I believe it's not raining, it will not be raining", which is unlikely since human beliefs are often mistaken.
+
+Many philosophers{{who|date=April 2020}} hold that Moore's paradox arises not only at the level of [[Speech act#Classifying illocutionary speech acts|assertion]], but also at the level of [[belief]]. One who believes an instance of a Moorean sentence is tantamount to one who is subject to or engaging in [[self-deception]], at least on one standard way of describing it.{{vague|date=April 2020}}{{citation needed|date=April 2020}}
+
+==Proposed explanations==
+Philosophical interest in Moore's paradox, since Moore and Wittgenstein, has undergone a resurgence, starting with, though not limited to, [[Jaakko Hintikka]],<ref name="Hintikka" /> continuing with Roy Sorensen,<ref name="Sorensen"/> [[David M. Rosenthal (philosopher)|David Rosenthal]],<ref>{{Cite book |first=David |last=Rosenthal |chapter=Moore's Paradox and Consciousness |series=Philosophical Perspectives |volume=9 |title=AI, Connectionism and Philosophical Psychology |year=1995 |location=Atascadero, CA |publisher=Ridgeview |isbn=978-0-924922-73-2 |pages=313–334 }}</ref> [[Sydney Shoemaker]]<ref>{{Cite book |first=Sydney |last=Shoemaker |chapter=Moore's Paradox and Self-Knowledge |title=The First-Person Perspective and other essays |url=https://archive.org/details/firstpersonpersp00shoe |url-access=limited |location=New York |publisher=Cambridge University Press |year=1996 |isbn=978-0-521-56871-5 |pages=[https://archive.org/details/firstpersonpersp00shoe/page/n89 74]–96 }}</ref> and the first publication, in 2007, of a collection of articles devoted to the problem.<ref>{{Cite book |editor1-first=Mitchell S. |editor1-last=Green |editor2-first=John N. |editor2-last=Williams |title=Moore's Paradox: New Essays on Belief, Rationality and the First-Person |location=New York |publisher=Oxford University Press |year=2007 |isbn=978-0-19-928279-1 }}</ref>
+
+There have been several proposed constraints on a satisfactory explanation in the literature, including (though not limited to):
+*It should explain the absurdity of both the omissive and the commissive versions.
+*It should explain the absurdity of both asserting and believing Moore's sentences.
+*It should preserve, and reveal the roots of, the intuition that contradiction (or something contradiction-like) is at the root of the absurdity.
+
+The first two conditions have generally been the most challenged, while the third appears to be the ''least'' controversial. Some philosophers have claimed that there is, in fact, no problem in believing the content of Moore's sentences (e.g. David Rosenthal).  Others (e.g. Sydney Shoemaker) hold that an explanation of the problem at the level of belief will automatically provide us with an explanation of the absurdity at the level of assertion via the linking principle that what can reasonably be asserted is determined by what can reasonably be believed. Some have also denied (e.g. Rosenthal) that a satisfactory explanation to the problem need be uniform in explaining both the omissive AND commissive versions. Most of the explanations offered of Moore's paradox are united in holding that [[contradiction]] is at the heart of the absurdity.
+
+One type of explanation at the level of assertion exploits the view that assertion implies or expresses [[belief]] in some way so that if someone asserts that ''p'' they imply or express the belief that ''p''. Several versions of this view exploit elements of [[speech act]] theory, which can be distinguished according to the particular explanation given of the link between assertion and belief. Whatever version of this view is preferred, whether cast in terms of the Gricean intentions (see [[Paul Grice]]) or in terms of the structure of Searlean illocutionary acts<ref>{{Cite book |first=John |last=Searle |name-list-style=amp |first2=Daniel |last2=Vanderveken |title=Foundations of Illocutionary Logic |location=New York |publisher=Cambridge University Press |year=1985 |isbn=978-0-521-26324-5 }}</ref> (see [[speech act]]), it does not obviously apply to explaining the absurdity of the commissive version of Moore's paradox. To take one version of this type of explanation, if someone asserts ''p'' and conjoins it with the assertion (or denial) that he does not believe that ''p'', then he has in that very act contradicted himself, for in effect what the speaker says is: I believe that ''p'' and I do not believe that ''p''. The absurdity of asserting '''p'' & I do not believe that ''p''' is thus revealed as being of a more familiar kind. Depending on one's view of the nature of contradiction, one might thus interpret a speaker of the omissive Moorean sentence as asserting everything (that is, asserting ''too'' much) or asserting nothing (that is, not asserting ''enough'').
+
+An alternative view is that the assertion "I believe that ''p''" often (though '''not''' always) functions as an alternative way of asserting "''p''", so that the semantic content of the assertion "I believe that ''p''" is just ''p'': it functions as a statement about the world and not about anyone's state of mind. Accordingly, what someone asserts when they assert "''p'' and I believe that not-''p''" is just "''p'' and not-''p''" Asserting the commissive version of Moore's sentences is again assimilated to the more familiar (putative) impropriety of asserting a [[contradiction]].<ref>{{Cite journal |first=Kent |last=Linville |name-list-style=amp |first2=Merrill |last2=Ring |title=Moore's Paradox Revisited |journal=Synthese |volume=87 |issue=2 |pages=295–309 |doi=10.1007/BF00485405 |year=1991 }}</ref>
+
+At the level of belief, there are two main kinds of explanation. The first, much more popular one, agrees with those at the level of assertion that contradiction is at the heart of the absurdity. The contradiction is revealed in various ways, some using the resources of [[doxastic logic]] (e.g. Hintikka), others (e.g. Sorensen) principles of [[rational belief]] maintenance and formation, while still others appeal to our putative capacity for [[Self-knowledge (psychology)|self-knowledge]] and the [[first-person authority]] (e.g. Shoemaker) we have over our states of mind.
+
+Another alternative view, due to [[Richard Moran (philosopher)|Richard Moran]],<ref>{{Cite book |first=Richard |last=Moran |title=Authority & Estrangement: An Essay on Self-knowledge |location=Princeton |publisher=Princeton University Press |year=2001 |isbn=978-0-691-08944-7 }}</ref> views the existence of Moore's paradox as symptomatic of creatures who are capable of self-knowledge, capable of thinking ''for'' themselves from a deliberative point of view, as well as ''about'' themselves from a theoretical point of view. On this view, anyone who asserted or believed one of Moore's sentences would be subject to a loss of self-knowledge—in particular, would be one who, with respect to a particular 'object', broadly construed, e.g. person, apple, the way of the world, would be in a situation which violates, what Moran calls, the Transparency Condition: if I want to know what I think about X, then I consider/think about nothing but X itself. Moran's view seems to be that what makes Moore's paradox so distinctive is not some contradictory-like phenomenon (or at least not in the sense that most commentators on the problem have construed it), whether it be located at the level of belief or that of assertion. Rather, that the very possibility of Moore's paradox is a consequence of our status as agents (albeit finite and resource-limited ones) who are capable of knowing (and changing) their own minds.
+
+== See also ==
+* [[Belief]]
+* [[Consistency]]
+* [[Doublethink]]
+* [[Doxastic logic]]
+* [[Epistemology]]
+* [[Contradiction]]
+* [[Irrationality]]
+* [[List of paradoxes]]
+* [[Philosophy of Mind]]
+* [[Rationality]]
+* [[Self-knowledge (psychology)]]
+* [[Self-deception]]
+
+==Notes==
+{{notelist}}
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+* [http://plato.stanford.edu/entries/epistemic-paradoxes/#MooPro "Epistemic Paradoxes" (including Moore's) at the ''Stanford Encyclopedia of Philosophy'']
+
+{{Paradoxes}}
+{{authority control}}
+{{DEFAULTSORT:Moore's Paradox}}
+[[Category:Epistemology]]
+[[Category:Philosophical paradoxes]]
+[[Category:Pragmatics]]

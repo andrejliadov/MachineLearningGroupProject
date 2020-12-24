@@ -1,0 +1,369 @@
+{{Expert needed|Computational biology|talk=Content verification needed|date=February 2015}}
+In [[metagenomics]], '''binning''' is the process of grouping reads or [[contig]]s and assigning them to [[operational taxonomic unit]]s. Binning methods can be based on either compositional features or [[sequence alignment|alignment]] (similarity), or both.
+
+== Introduction ==
+
+Metagenomic samples can contain reads from a huge number of organisms. For example, in a single gram of soil, there can be up to 18000 different types of organisms, each with its own genome.<ref name="Nature2005">{{Cite journal
+| doi = 10.1038/nrmicro1160
+| issn = 1740-1526
+| volume = 3
+| issue = 6
+| pages = 470–478
+| last = Daniel
+| first = Rolf
+| title = The metagenomics of soil
+| journal = Nature Reviews Microbiology
+| date = 2005-06-01
+| pmid=15931165
+| s2cid = 32604394
+}}</ref> Metagenomic studies sample DNA from the whole community, and make it available as nucleotide sequences of [[DNA sequencing|certain length]]. In most cases, the incomplete nature of the obtained sequences makes it hard to assemble individual genes,<ref name="Wooley2010">{{Cite journal
+| doi = 10.1371/journal.pcbi.1000667
+| volume = 6
+| issue = 2
+| pages = e1000667
+| last = Wooley
+| first = John C.
+|author2=Adam Godzik|author3=Iddo Friedberg
+| title = A Primer on Metagenomics
+| journal = PLOS Comput Biol
+| date = 2010-02-26
+| pmid=20195499
+| pmc=2829047
+| bibcode = 2010PLSCB...6E0667W
+}}
+</ref> much less recovering the full [[genome]]s of each organism. Thus, binning techniques represent a "best effort" to identify reads or [[contig]]s with certain groups of organisms designated as [[operational taxonomic unit]]s (OTUs).<ref name="thomas2012">{{Cite journal | last1 = Thomas | first1 = T. | last2 = Gilbert | first2 = J. | last3 = Meyer | first3 = F. | doi = 10.1186/2042-5783-2-3 | title = Metagenomics - a guide from sampling to data analysis | journal = Microbial Informatics and Experimentation | volume = 2 | issue = 1 | pages = 3 | year = 2012 | pmid =  22587947| pmc =3351745 }}</ref>
+
+The first studies that sampled DNA from multiple organisms used specific genes to assess diversity and origin of each sample.<ref name="Sargasso">{{Cite journal
+| doi = 10.1038/345060a0
+| pmid = 2330053
+| volume = 345
+| issue = 6270
+| pages = 60–63
+| last = Giovannoni
+| first = Stephen J.
+|author2=Theresa B. Britschgi |author3=Craig L. Moyer |author4=Katharine G. Field
+ | title = Genetic diversity in Sargasso Sea bacterioplankton
+| journal = Nature
+| date = 1990-05-03
+| bibcode = 1990Natur.345...60G
+| s2cid = 4370502
+}}</ref><ref name="Phylopythia">{{Cite journal
+| doi = 10.1038/nmeth976
+| issn = 1548-7091
+| volume = 4
+| issue = 1
+| pages = 63–72
+| last = McHardy
+| first = Alice Carolyn
+|author2=Hector Garcia Martin |author3=Aristotelis Tsirigos |author4=Philip Hugenholtz |author5=Isidore Rigoutsos
+ | title = Accurate phylogenetic classification of variable-length DNA fragments
+| journal = Nature Methods
+| date = January 2007
+ | pmid=17179938
+| s2cid = 28797816
+}}</ref> These [[marker gene]]s had been previously sequenced from clonal cultures from known organisms, so, whenever one of such genes appeared in a read or contig from the metagenomic sample that read could be assigned to a known species or to the OTU of that species. The problem with this method was that only a tiny fraction of the sequences carried a marker gene, leaving most of the data unassigned.
+
+Modern binning techniques use both previously available information independent from the sample and intrinsic information present in the sample. Depending on the diversity and complexity of the sample, their degree of success vary: in some cases they can resolve the sequences up to individual species, while in some others the sequences are identified at best with very broad taxonomic groups.
+
+== Algorithms ==
+
+Binning algorithms can employ previous information, and thus act as [[Supervised learning|supervised classifiers]], or they can try to find new groups, those act as [[Unsupervised learning|unsupervised classifiers]]. Many, of course, do both. The classifiers exploit the previously known sequences by performing [[Sequence alignment|alignments]] against [[Biological databases|databases]], and try to separate sequence based in organism-specific characteristics of the DNA,<ref>{{Cite journal
+| volume = 91
+| issue = 26
+| pages = 12837–12841
+| last = Karlin
+| first = S.
+|author2=I. Ladunga|author3=B. E. Blaisdell
+| title = Heterogeneity of genomes: measures and values
+| journal = Proceedings of the National Academy of Sciences
+| year = 1994
+| doi=10.1073/pnas.91.26.12837
+| pmid = 7809131
+| pmc=45535
+| bibcode = 1994PNAS...9112837K
+}}</ref> like [[GC-content]].
+
+Mande et al., (2012) <ref>{{Cite journal
+| volume = 13
+| issue = 6
+| pages = 669–81
+| last = Mande
+| first = Sharmila S.
+|author2=Monzoorul Haque Mohammed|author3=Tarini Shankar Ghosh
+| title = Classification of metagenomic sequences: methods and challenges.
+| journal = Briefings in Bioinformatics
+| year = 2012
+| doi=10.1093/bib/bbs054
+| pmid = 22962338
+| doi-access = free
+}}</ref> provides a review of the premise, methodologies, advantages, limitations and challenges of various methods available for binning of metagenomic datasets obtained using the shotgun sequencing approach. Some of the prominent binning algorithms are described below.
+
+=== TETRA ===
+
+TETRA is a statistical classifier that uses  tetranucleotide usage patterns in genomic fragments.<ref>{{Cite journal
+| volume = 5
+| issue = 1
+| pages = 163
+| last = Teeling
+| first = Hanno
+|author2=Jost Waldmann |author3=Thierry Lombardot |author4=Margarete Bauer |author5=Frank Glockner
+ | title = TETRA: a web-service and a stand-alone program for the analysis and comparison of tetranucleotide usage patterns in DNA sequences
+| journal = BMC Bioinformatics
+| year = 2004
+| doi = 10.1186/1471-2105-5-163
+ | pmid=15507136
+ | pmc=529438
+}}</ref> There are four possible nucleotides in [[DNA]], therefore there can be <math>4^4=256</math> different fragments of four consecutive nucleotides; these fragments are called tetramers. TETRA works by tabulating the frequencies of each tetramer for a given sequence. From these frequencies  [[Standard score|z-scores]] are then calculated, which indicate how over- or under-represented the tetramer is in contraposition with what would be expected by looking to individual nucleotide compositions. The z-scores for each tetramer are assembled in a vector, and the vectors corresponding to different sequences are compared pair-wise, to yield a measure of how similar different sequences from the sample are. It is expected that the most similar sequences belong to organisms in the same OTU.
+
+=== MEGAN ===
+
+In the DIAMOND<ref>
+{{Cite journal
+|author=Buchfink, Xie and Huson
+|title=Fast and sensitive protein alignment using DIAMOND
+|journal=Nature Methods
+|volume=12 
+|issue=1
+|pages=59–60
+|date= 2015
+|doi=10.1038/nmeth.3176
+|pmid=25402007
+|s2cid=5346781
+}}
+</ref>+MEGAN<ref>
+{{Cite journal
+|last1=Huson
+|first1=Daniel H
+|last2=S. Beier
+|last3=I. Flade
+|last4=A. Gorska
+|last5=M. El-Hadidi
+|last6=H. Ruscheweyh
+|last7=R. Tappu
+|title=MEGAN Community Edition - Interactive exploration and analysis of large-scale microbiome sequencing data 
+|url=
+|journal=PLOS Computational Biology
+|volume=12
+|issue=6
+|pages=e1004957
+|doi=10.1371/journal.pcbi.1004957
+|pmid=27327495
+|pmc=4915700
+|year=2016
+|bibcode=2016PLSCB..12E4957H
+}}
+</ref> approach, all reads are first aligned against a protein reference database, such as NCBI-nr, and then the resulting alignments are analyzed using the naive LCA algorithm, which places a read on the lowest taxonomic node in the NCBI taxonomy that lies above all taxa to which the read has a significant alignment.  Here, an alignment is usually deemed "significant", if its bit score lies above a given threshold (which depends on the length of the reads) and is within 10%, say, of the best score seen for that read. The rationale of using protein reference sequences, rather than DNA reference sequences, is that current DNA reference databases only cover a small fraction of the true diversity of genomes that exist in the environment.
+
+=== Phylopythia ===
+
+Phylopythia is one supervised classifier developed by researchers at IBM labs, and is basically a [[support vector machine]] trained with  DNA-kmers from known sequences.<ref name="Phylopythia" />
+
+=== SOrt-ITEMS ===
+
+SOrt-ITEMS (Monzoorul et al., 2009) <ref>{{Cite journal
+| volume = 25
+| issue = 14
+| pages = 1722–30
+| last = Haque M
+| first = Monzoorul
+|author2=Tarini Shankar Ghosh |author3=Dinakar Komanduri |author4=Sharmila S Mande
+ | title = SOrt-ITEMS: Sequence orthology based approach for improved taxonomic estimation of metagenomic sequences.
+| journal = Bioinformatics
+| year = 2009
+ | doi=10.1093/bioinformatics/btp317
+| pmid = 19439565
+| doi-access = free
+}}</ref> is an alignment-based binning algorithm developed by Innovations Labs of Tata Consultancy Services (TCS) Ltd., India. Users need to perform a similarity search of the input metagenomic sequences (reads) against the nr protein database using BLASTx search. The generated blastx output is then taken as input by the SOrt-ITEMS program. The method uses a range of BLAST alignment parameter thresholds to first identify an appropriate taxonomic level (or rank) where the read can be assigned. An orthology-based approach is then adopted for the final assignment of the metagenomic read. Other alignment-based binning algorithms developed by the Innovation Labs of Tata Consultancy Services (TCS) include DiScRIBinATE,<ref name="Ghosh 2010 S14">{{Cite journal
+| volume = 11
+| issue = S7
+| pages = S14
+| last = Ghosh
+| first = Tarini Shankar
+|author2=Monzoorul Haque M|author3=Sharmila S Mande
+| title = DiScRIBinATE: a rapid method for accurate taxonomic classification of metagenomic sequences.
+| journal = BMC Bioinformatics
+| year = 2010
+| doi=10.1186/1471-2105-11-s7-s14
+| pmid=21106121
+| pmc=2957682
+}}</ref> ProViDE <ref name="Ghosh 2011 91–94">{{Cite journal
+| volume = 6
+| issue = 2
+| pages = 91–94
+| last = Ghosh
+| first = Tarini Shankar
+|author2=Monzoorul Haque Mohammed |author3=Dinakar Komanduri |author4=Sharmila S Mande
+ | title = ProViDE: A software tool for accurate estimation of viral diversity in metagenomic samples
+| journal = Bioinformation
+| year = 2011
+| doi=10.6026/97320630006091
+| pmid = 21544173
+| pmc=3082859
+}}</ref> and SPHINX.<ref name="Mohammed 2011 22–30">{{Cite journal
+| volume = 27
+| issue = 1
+| pages = 22–30
+| last = Mohammed
+| first = Monzoorul Haque
+|author2=Tarini Shankar Ghosh |author3=Nitin Kumar Singh |author4=Sharmila S Mande
+ | title = SPHINX--an algorithm for taxonomic binning of metagenomic sequences.
+| journal = Bioinformatics
+| year = 2011
+| doi=10.1093/bioinformatics/btq608
+ | pmid=21030462
+}}</ref> The methodologies of these algorithms are summarized below.
+
+=== DiScRIBinATE ===
+
+DiScRIBinATE (Ghosh et al., 2010) <ref name="Ghosh 2010 S14"/> is an alignment-based binning algorithms developed by the Innovations Labs of Tata Consultancy Services (TCS) Ltd., India. DiScRIBinATE replaces the orthology approach of SOrt-ITEMS with a quicker 'alignment-free' approach. Incorporating this alternate strategy was observed to reduce the binning time by half without any significant loss in the accuracy and specificity of assignments. Besides, a novel reclassification strategy incorporated in DiScRIBinATE was seem to reduce the overall misclassification rate.
+
+=== ProViDE ===
+
+ProViDE (Ghosh et al., 2011) <ref name="Ghosh 2011 91–94"/> is an alignment-based binning approach developed by the Innovation Labs of Tata Consultancy Services (TCS) Ltd. for the estimation of viral diversity in metagenomic samples. ProViDE adopts the reverse orthlogy based approach similar to SOrt-ITEMS for the taxonomic classification of metagenomic sequences obtained from virome datasets. It a customized set of BLAST parameter thresholds, specifically suited for viral metagenomic sequences. These thresholds capture the pattern of sequence divergence and the non-uniform taxonomic hierarchy observed within/across various taxonomic groups of the viral kingdom.
+
+=== PCAHIER ===
+
+PCAHIER (Zheng et al., 2010),<ref name ="zheng2010">{{Cite journal
+| volume = 8
+| issue = 6
+| pages = 995–1011
+| last = Zheng
+| first = Hao
+|author2=Hongwei Wu
+| title = Short prokaryotic DNA fragment binning using a hierarchical classifier based on linear discriminant analysis and principal component analysis
+| journal = J Bioinform Comput Biol
+| year = 2010
+| doi=10.1142/s0219720010005051
+| pmid = 21121023
+}}</ref> another binning algorithm developed by the Georgia Institute of Technology., employs n-mer oligonucleotide frequencies as the features and adopts a hierarchical classifier (PCAHIER) for binning short metagenomic fragments. The principal component analysis was used to reduce the high dimensionality of the feature space. The effectiveness of the PCAHIER was demonstrated through comparisons against a non-hierarchical classifier, and two existing binning algorithms (TETRA and Phylopythia).
+
+=== SPHINX ===
+
+SPHINX (Mohammed et al., 2011),<ref name="Mohammed 2011 22–30"/> another binning algorithm developed by the Innovation Labs of Tata Consultancy Services (TCS) Ltd., adopts a hybrid strategy that achieves high binning efficiency by utilizing the principles of both 'composition'- and 'alignment'-based binning algorithms. The approach was designed with the objective of analyzing metagenomic datasets as rapidly as composition-based approaches, but nevertheless with the accuracy and specificity of alignment-based algorithms. SPHINX was observed to classify metagenomic sequences as rapidly as composition-based algorithms. In addition, the binning efficiency (in terms of accuracy and specificity of assignments) of SPHINX was observed to be comparable with results obtained using alignment-based algorithms.
+
+=== INDUS<ref>{{Cite journal
+| volume = 12
+| issue = S3
+| pages = S4
+| last = Mohammed
+| first = Monzoorul Haque
+|author2=Tarini Shankar Ghosh |author3=Rachamalla Maheedhar Reddy |author4=CV Reddy |author5=Nitin Kumar Singh |author6=Sharmila S Mande
+ | title = INDUS - a composition-based approach for rapid and accurate taxonomic classification of metagenomic sequences.
+| journal = BMC Genomics
+| year = 2011 | doi=10.1186/1471-2164-12-s3-s4 | pmid=22369237 | pmc=3333187
+}}</ref> and TWARIT<ref>{{Cite journal
+| volume = 505
+| issue = 2
+| pages = 259–65
+| last = Reddy
+| first = Rachamalla Maheedhar
+|author2=Monzoorul Haque Mohammed|author3=Sharmila S Mande
+| title = TWARIT: an extremely rapid and efficient approach for phylogenetic classification of metagenomic sequences.
+| journal = Gene
+| year = 2013
+| doi=10.1016/j.gene.2012.06.014
+| pmid=22710135
+}}</ref> ===
+
+Represent other composition-based binning algorithms developed by the Innovation Labs of Tata Consultancy Services (TCS) Ltd. These algorithms utilize a range of oligonucleotide compositional (as well as statistical) parameters to improve binning time while maintaining the accuracy and specificity of taxonomic assignments.
+
+=== Other algorithms ===
+
+This list is not exhaustive:
+
+* TACOA (Diaz et al., 2009)
+* Parallel-META (Su et al., 2011)
+* PhyloPythiaS (Patil et al., 2011)
+* RITA (MacDonald et al., 2012)<ref name ="mac2012">
+{{Cite journal
+| doi = 10.1093/nar/gks335
+| volume = 40
+| issue = 14
+| pages = e111
+| last = MacDonald 
+| first = Norman J.
+|author2=Donovan H. Parks|author3=Robert G. Beiko
+| title = Metagenomic microbial community profiling using unique clade-specific marker genes
+| journal = Nucleic Acids Research
+| year = 2012
+| pmid = 22532608
+| url = http://nar.oxfordjournals.org/content/40/14/e111.long
+| pmc=3413139
+}}</ref>
+* BiMeta (Le et al., 2015) <ref>Van Vinh, Le, Van Lang, Tran, and Tran Van Hoai. "A two-phase binning algorithm using l-mer frequency on groups of non-overlapping reads." Algorithms for Molecular Biology 10.1 (2015): 1.</ref>
+* MetaPhlAn (Segata et al., 2012)<ref name ="segata2012">
+{{Cite journal
+| doi = 10.1038/nmeth.2066
+| volume = 9
+| issue = 8
+| pages = 811–814
+| last = Nicola 
+| first = Segata
+|author2=Levi Waldron |author3=Annalisa Ballarini |author4=Vagheesh Narasimhan |author5=Olivier Jousson |author6=Curtis Huttenhower
+ | title = Metagenomic microbial community profiling using unique clade-specific marker genes
+| journal = Nature Methods
+| year = 2012
+| pmid = 22688413
+| pmc=3443552
+}}
+</ref>
+* SeMeta (Le et al., 2016) <ref>Van Vinh, Le, Van Lang, Tran, and Tran Van Hoai. "A novel semi-supervised algorithm for the taxonomic assignment of metagenomic reads". BMC bioinformatics, 17(1), 2016.
+</ref>
+* Quikr (Koslicki et al., 2013)<ref name ="koslicki2013">
+{{Cite journal
+| doi = 10.1093/bioinformatics/btt336
+| volume = 29
+| issue = 17
+| pages = 2096–2102
+| last = Koslicki
+| first = David
+|author2=Simon Foucart |author3=Gail Rosen 
+ | title = Quikr: a method for rapid reconstruction of bacterial communities via compressive sensing
+| journal = Bioinformatics
+| year = 2013
+| pmid = 23786768
+| url = http://bioinformatics.oxfordjournals.org/content/29/17/2096
+| doi-access = free
+}}
+</ref>
+
+* Taxoner (Pongor et al., 2014)<ref name ="pongor2014">
+{{Cite journal
+| doi = 10.1371/journal.pone.0103441
+| volume = 9
+| issue = 7
+| pages = e103441
+| last = Pongor
+| first = Lőrinc
+| author2 = Roberto Vera
+| author3 = Balázs Ligeti1
+| title = Fast and sensitive alignment of microbial whole genome sequencing reads to large sequence datasets on a desktop PC: application to metagenomic datasets and pathogen identification
+| journal = PLOS ONE
+| year = 2014
+| pmid = 25077800
+| pmc=4117525
+| bibcode = 2014PLoSO...9j3441P
+}}
+</ref>
+All these algorithms employ different schemes for binning sequences, such as [[hierarchical classification]], and operate in either a [[supervised learning|supervised]] or [[unsupervised learning|unsupervised]] manner. These algorithms provide a global view of how diverse the samples are, and can potentially connect community composition and function in metagenomes.
+
+==References==
+{{reflist}}
+<!--- After listing your sources please cite them using inline citations and place them after the information they cite. Please see http://en.wikipedia.org/wiki/Wikipedia:REFB for instructions on how to add citations. --->
+* {{Cite journal
+| doi = 10.1371/journal.pcbi.0020092
+| pmid = 16848637
+| pmc = 1513271
+| volume = 2
+| issue = 7
+| pages = e92
+| last = Schloss
+| first = Patrick D
+|author2=Jo Handelsman
+| title = Toward a Census of Bacteria in Soil
+| journal = PLOS Comput Biol
+| date = 2006-07-21
+| bibcode = 2006PLSCB...2...92S
+}}
+
+[[Category:Bioinformatics]]

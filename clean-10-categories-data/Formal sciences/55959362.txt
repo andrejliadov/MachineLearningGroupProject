@@ -1,0 +1,141 @@
+{{short description|In combinatorics, the autocorrelation of a word is the set of periods of this word}}
+
+In [[combinatorics]], a branch of [[mathematics]], the autocorrelation of a [[word (group theory)|word]] is the set of periods of this word. More precisely, it is a sequence of values which indicate how much the end of a word looks likes the beginning of a word. This value can be used to compute, for example, the average value of the first occurrence of this word in a random string.
+
+==Definition==
+In this article, ''A'' is an [[Alphabet (formal languages)|alphabet]], and <math>w=w_1\dots w_n</math> a [[Word (group theory)|word]] on ''A'' of length ''n''. The autocorrelation of <math>w</math> can be defined as the [[correlation (formal language)|correlation]] of <math>w</math> with itself. However, we redefine this notion below.
+
+===Autocorrelation vector===
+The autocorrelation vector of <math>w</math> is <math>c=(c_0,\dots,c_{n-1})</math>, with <math>c_i</math> being 1 if the [[Substring#Prefix|prefix]] of length <math>n-i</math> equals the [[Substring#Suffix|suffix]] of length <math>n-i</math>, and with <math>c_i</math> being 0 otherwise. That is <math>c_i</math> indicates whether <math>w_{i+1}\dots w_n=w_1\dots w_{n-i}</math>.
+
+For example, the autocorrelation vector of <math>aaa</math> is <math>(1,1,1)</math> since, clearly, for <math>i</math> being 0, 1 or 2, the prefix of length <math>n-i</math> is equal to the suffix of length <math>n-i</math>. The autocorrelation vector of <math>abb</math> is <math>(1,0,0)</math> since no strict prefix is equal to a strict suffix. Finally, the autocorrelation vector of <math>aabbaa</math> is 100011, as shown in the following table:
+{| class="wikitable"
+!a
+!a
+!b
+!b
+!a
+!a
+! 
+! 
+! 
+! 
+! 
+! 
+|- 
+|a
+|a
+|b
+|b
+|a
+|a
+|
+|
+| 
+| 
+| 
+|1
+|- 
+| 
+|a
+|a
+|b
+|b
+|a
+|a
+| 
+| 
+| 
+| 
+|0
+|- 
+| 
+| 
+|a
+|a
+|b
+|b
+|a
+|a
+| 
+| 
+| 
+|0
+|- 
+| 
+| 
+| 
+|a
+|a
+|b
+|b
+|a
+|a
+| 
+| 
+|0
+|- 
+| 
+| 
+| 
+| 
+|a
+|a
+|b
+|b
+|a
+|a
+| 
+|1
+|- 
+| 
+| 
+| 
+| 
+| 
+|a
+|a
+|b
+|b
+|a
+|a
+|1
+|}
+
+Note that <math>c_0</math> is always equal to 1, since the prefix and the suffix of length <math>n</math> are both equal to the word <math>w</math>. Similarly, <math>c_{n-1}</math> is 1 if and only if the first and the last letters are the same.
+
+
+
+===Autocorrelation polynomial===
+The autocorrelation polynomial of <math>w</math> is defined as <math>c(z)=c_0z^0+\dots+c_{n-1}z^{n-1}</math>. It is a polynomial of degree at most <math>n-1</math>. 
+
+For example, the autocorrelation polynomial of <math>aaa</math> is <math>1+z+z^2</math> and the autocorrelation polynomial of <math>abb</math> is <math>1</math>. Finally, the autocorrelation polynomial of <math>aabbaa</math> is <math>1+z^4+z^5</math>.
+
+==Property==
+We now indicate some properties which can be computed using the autocorrelation polynomial.
+
+===First occurrence of a word in a random string===
+Suppose that you choose an infinite sequence <math>s</math> of letters of <math>A</math>, randomly, each letter with probability <math>\frac{1}{|A|}</math>, where <math>|A|</math> is the number of letters of <math>A</math>. Let us call <math>E</math> the expectation of the first occurrence of <math>m</math> in <math>s</math>. Then <math>E</math> equals <math>|A|^nc\left(\frac{1}{|A|}\right)</math>. That is, each subword <math>v</math> of <math>w</math> which is both a prefix and a suffix causes the average value of the first occurrence of <math>w</math> to occur <math>|A|^{|v|}</math> letters later. Here <math>|v|</math> is the length of <math>|v|</math>.
+
+For example, over the binary alphabet <math>A=\{a,b\}</math>, the first occurrence of <math>aa</math> is at position <math>2^2(1+\frac 12)=6</math>  while the average first occurrence of <math>ab</math> is at position <math>2^2(1)=4</math>. Intuitively, the fact that the first occurrence of <math>aa</math> is later than the first occurrence of <math>ab</math> can be explained in two ways:
+*We can consider, for each position <math>p</math>, what are the requirement for <math>w</math>'s first occurrence to be at <math>p</math>.
+**The first occurrence of <math>ab</math> can be at position 1 in only one way in both case. If <math>s</math> starts with <math>w</math>. This has probability <math>\frac14</math> for both considered values of <math>w</math>.
+**The first occurrence of <math>ab</math> is at  position 2 if the prefix of <math>s</math> of length 3 is <math>aab</math> or is <math>bab</math>. However, the first occurrence of <math>aa</math> is at position 2 if and only if the prefix of <math>s</math> of length 3 is <math>baa</math>.  (Note that the first occurrence of <math>aa</math> in <math>aaa</math> is at position 1.). 
+**In general, the number of prefixes of length <math>n+1</math> such that the first occurrence of <math>aa</math> is at position <math>n</math> is smaller for <math>aa</math> than for <math>ba</math>. This explain why, on average, the first <math>aa</math> arrive later than the first <math>ab</math>.
+*We can also consider the fact that the average number of occurrences of <math>w</math> in a random string of length <math>l</math> is <math>|A|^{l-n}</math>. This number is independent of the autocorrelaction polynomial. An occurrence of <math>w</math> may overlap another occurrence in different ways. More precisely, each 1 in its autocorrelaction vector correspond to a way for occurrence to overlap. Since many occurrences of <math>w</math> can be packed together, using overlapping, but the average number of occurrences does not change, it follows that the distance between two non-overlapping occurrences is greater when the autocorrelaction vector contains many 1's.
+
+
+===Ordinary generating functions===
+Autocorrelation polynomials allows to give simple equations for the [[ordinary generating functions]] (OGF) of many natural questions.
+
+*The OGF of the languages of words not containing  <math>w</math> is <math>\frac{c(z)}{z^n+(1-|A|z)c(z)}</math>.
+*The OGF of the languages of words containing  <math>w</math> is <math>\frac{z^n}{(1-|A|z)(z^n+(1-|A|z)c(z))}</math>. 
+*The OGF of the languages of words containing a single occurrence of <math>w</math>, at the end of the word is <math>\frac{z^n}{z^{n}+(1-|A|z)c(z)}</math>.
+
+==References==
+*{{cite book|last1=Flajolet and Sedgewick|title=Analytic Combinatorics|title-link= Analytic Combinatorics |date=2010|publisher=Cambridge University Press|location=New York|isbn=978-0-521-89806-5|pp=[https://archive.org/details/analyticcombinat00flaj_706/page/n71 60]-61}}
+*{{cite web|last1=Rosen|first1=Ned|title=Expected waiting times for strings of coin flips|url=https://www2.bc.edu/ned-rosen/public/CoinFlips.pdf|accessdate=3 December 2017}}
+*{{cite journal|last1=Odlyzko|first1=A. M.|last2=Guibas|first2=L. J.|title=String overlaps, pattern matching, and nontransitive games|journal=Journal of Combinatorial Theory|date=1981|volume=Series A 30|issue=2|pages=183-208|doi=10.1016/0097-3165(81)90005-4}}
+
+[[Category:Formal languages]]
+[[Category:Combinatorics on words]]

@@ -1,0 +1,109 @@
+'''Bioimage informatics''' is a subfield of [[bioinformatics]] and [[computational biology]].<ref>{{cite journal|last=Peng|first=H|author2=Bateman A|author3=Valencia A|author4=Wren JD|title=Bioimage informatics: a new category in Bioinformatics|journal=Bioinformatics|year=2012|volume=28|issue=8|pages=1057|doi=10.1093/bioinformatics/bts111|pmid=22399678|pmc=3324521}}</ref> It focuses on the use of computational techniques to analyze bioimages, especially cellular and molecular images, at large scale and high throughput. The  goal is to obtain useful knowledge out of complicated and heterogeneous image and related [[metadata]].
+
+Automated microscopes are able to collect large numbers of images with minimal intervention. This has led to a data explosion, which absolutely requires automatic processing. Additionally, and surprisingly, for several of these tasks, there is evidence that automated systems can perform better than humans.<ref name="Murphy 2003 311–321">{{cite journal|last=Murphy|first=Robert|author2=Velliste, M.|author3=Porreca, G.|year=2003|title=Robust numerical features for description and classification of subcellular location patterns in fluorescence microscope images|journal=The Journal of VLSI Signal Processing|volume=35|issue=3|pages=311–321|doi=10.1023/b:vlsi.0000003028.71666.44|citeseerx=10.1.1.186.9521|s2cid=8134907}}</ref><ref>{{cite journal|first=Tim|last=Nattkemper|author2=Thorsten Twellmann |author3=Helge Ritter |author4=Walter Schubert |title= Human vs. machine: evaluation of fluorescence micrographs|journal=Computers in Biology and Medicine|pages=31–43|year=2003|doi=10.1016/S0010-4825(02)00060-4|pmid=12485628|volume=33|issue=1|citeseerx=10.1.1.324.4664}}</ref> In addition, automated systems are unbiased, unlike human based analysis whose evaluation may (even unconsciously) be influenced by the desired outcome.
+
+There has been an increasing focus on developing novel [[image processing]], [[computer vision]], [[data mining]], database and visualization techniques to extract, compare, search and manage the biological knowledge in these data-intensive problems.<ref name="pmid18603566">{{cite journal |author=Peng H |title=Bioimage informatics: a new area of engineering biology |journal=Bioinformatics |volume=24 |issue=17 |pages=1827–36 |date=September 2008 |pmid=18603566 |pmc=2519164 |doi=10.1093/bioinformatics/btn346 }}</ref><ref>{{cite journal|title=The quest for quantitative microscopy|journal=Nature Methods|volume=9|issue=7|doi=10.1038/nmeth.2102|pmid=22930824|pages=627|year=2012|doi-access=free}}</ref>
+
+==Data Modalities==
+
+Several data collection systems and platforms are used, which require different methods to be handled optimally.
+
+===Fluorescent Microscopy===
+{{main|Fluorescent microscopy}}
+
+[[File:TelophaseIF.jpg|right|thumb|Fluorescent image of a cell in [[telophase]]. Multiple dyes were imaged and are shown in different colours.]]
+
+[[Fluorescence microscope|Fluorescent microscopy]] allows the direct visualization of molecules at the subcellular level, in both live and [[Fixation (histology)|fixed]] cells. Molecules of interest are marked with either [[green fluorescent protein]] (GFP), another fluorescent protein, or a fluorescently-labeled [[antibody]]. Several types of microscope are regularly used: widefield, [[confocal microscopy|confocal]], or [[Two-photon excitation microscopy|two-photon]]. Most microscopy system will also support the collection of time-series (movies).
+
+In general, filters are used so that each dye is imaged separately (for example, a blue filter is used to image [[Hoechst stain|Hoechst]], then rapidly switched to a green filter to image GFP). For  consumption, the images are often displayed in [[false color]] by showing each channel in a different color, but these may not even be related to the original wavelengths used. In some cases, the original image could even have been acquired in non-visible wavelengths (infrared is common).
+
+The choices at the image acquisition stage will influence the analysis and often require special processing. Confocal stacks will require 3D processing and widefield pseudo-stacks will often benefit from [[deconvolution|digital deconvolution]] to remove the out-of-focus light.
+
+The advent of automated microscopes that can acquire many images automatically is one of the reasons why analysis cannot be done by  eye (otherwise, annotation would rapidly become the research bottleneck). Using automated microscopes means that some images might be out-of-focus (automated focus finding systems may sometimes be incorrect), contain a small number of cells, or be filled with debris. Therefore, the images generated will be harder to analyse than images acquired by an operator as they would have chosen other locations to image and focus correctly. On the other hand, the operator might introduce an unconscious bias in his selection by choosing only the cells whose phenotype is most like the one expected before the experiment.
+
+===Histology===
+{{main|Histology|Automated tissue image analysis}}
+
+[[File:Alveolar microlithiasis 2.jpg|left|thumb|A histology image of alveolar microlithiasis]]
+
+[[Histology]] is a microscopy application where tissue slices are stained and observed under the microscope (typically light microscope, but electron microscopy is also used).
+
+When using a light microscope, unlike the case of fluorescent imaging, images are typically acquired using standard color camera-systems. This reflects partially the history of the field, where humans were often interpreting the images, but also the fact that the sample can be illuminated with white light and all light collected rather than having to excite fluorophores. When more than one dye is used, a necessary preprocessing step is to unmix the channels and recover an estimate of the pure dye-specific intensities.
+
+It has been shown that the subcellular location of stained proteins can be identified from histology images.
+
+If the goal is a medical diagnostic, then histology applications will often fall into the realm of [[digital pathology]] or [[automated tissue image analysis]], which are sister fields of bioimage informatics. The same computational techniques are often applicable, but the goals are medically- rather than research-oriented.
+
+==Important Problems==
+
+===Subcellular Location Analysis===
+[[File:SubcellularLocationClassification.png|thumbnail|Subcellular Location Example. Examples of different patterns are mapped into a two-dimensional space by computing different [[Feature extraction|image features]]. Image of unknown proteins are similarly mapped into this space and a [[nearest neighbor search]] or other classifier can be used for assigning a location to this unclassified protein.]]
+
+Subcellular location analysis was one of the initial problems in this field. In its supervised mode, the problem is to learn a classifier that can recognize images from the major cell [[organelles]] based on images.
+
+Methods used are based on [[machine learning]], building a [[pattern recognition|discriminative classifier]] based on [[Feature extraction|numeric features]] computed from the image. Features are either generic features from [[computer vision]], such as [[Co-occurrence matrix|Haralick texture features]] or features specially designed to capture biological factors (e.g., co-localization with a nuclear marker being a typical example).
+
+For the basic problem of identifying organelles, very high accuracy values can be obtained, including better than ? results.<ref name="Murphy 2003 311–321"/> These methods are useful in basic cell biology research, but have also been applied to the discovery of proteins whose location changes in cancer cells.<ref>{{cite conference|last=Glory|first=Estelle|author2=Justin Newberg|author3=Robert F. Murphy|title=Automated comparison of protein subcellular location patterns between images of normal and cancerous tissues|book-title=Biomedical Imaging: From Nano to Macro, 2008. ISBI 2008. 5th IEEE International Symposium on|year=2008}}</ref>
+
+However, classification into organelles is a limited form of the problem as many proteins will localize to multiple locations simultaneously (mixed patterns) and many patterns can be distinguished even though they are not different membrane-bound components. There are several unsolved problems in this area and research is ongoing.
+
+===High-Content Screening===
+{{main|High-content screening}}
+
+[[File:Automated confocal image reader.jpg|thumb|An automated confocal image reader]]
+
+High throughput screens using automated imaging technology (sometimes called [[high-content screening]]) have become a standard method for both drug discovery and basic biological research. Using multi-well plates, robotics, and automated microscopy, the same assay can be applied to a large library of possible reagents (typically either [[small molecules]] or [[RNAi]]) very rapidly, obtaining thousands of images in a short amount of time. Due to the high volume of data generated, automatic image analysis is a necessity.<ref>{{cite journal|first=Aabid|last=Shariff|author2=Joshua Kangas |author3=Luis Pedro Coelho |author4=Shannon Quinn |author5=Robert F Murphy |title=Automated image analysis for high-content screening and analysis|year=2010|journal=Journal of Biomolecular Screening|volume=15|issue=7|pages=726–734|doi=10.1177/1087057110370894|pmid=20488979|doi-access=free}}</ref>
+
+When positive and negative controls are available, the problem can be approached as a classification problem and the same techniques of feature computation and classification that are used for subcellular location analysis can be applied.
+
+===Segmentation===
+
+[[File:Gnf-segmented-41-closeup.png|framed|right|Example image for segmentation problem. Shown are nuclei of [[3T3 cells|mouse NIH 3T3]], stained with [[Hoechst stain|Hoechst]] and a  segmentation in red.<ref>{{cite conference|last=Coelho|first=Luis Pedro|author2=Aabid Shariff|author3=Robert F. Murphy|title=Nuclear segmentation in microscope cell images: a hand-segmented dataset and comparison of algorithms|book-title=Biomedical Imaging: From Nano to Macro, 2009. ISBI'09. IEEE International Symposium on. IEEE|year=2009|doi=10.1109/ISBI.2009.5193098|pmc=2901896}}</ref>]]
+
+[[Image segmentation|Segmentation]] of cells is an important sub-problem in many of the fields below (and sometimes useful on its own if the goal is only to obtain a cell count in a [[viability assay]]). The goal is to identify the boundaries of cells in a multi-cell image. This allows for processing each cell individually to measure parameters. In 3D data, segmentation must be performed in 3D space.
+
+As the imaging of a nuclear marker is common across many images, a widely used protocol is to segment the nuclei. This can be useful by itself if nuclear measurements are needed or it can serve to seed a [[Watershed (image processing)|watershed]] which extends the segmentation to the whole image.
+
+All major segmentation methods have been reported on cell images, from simple [[Thresholding (image processing)|thresholding]] to level set methods. Because there are multiple image modalities and different cell types, each of which implies different tradeoffs, there is no single accepted solution for this problem.
+
+Cell image segmentation as an important procedure is often used to study gene expression and colocalization relationship etc. of individual cells. In such cases of single-cell analysis it is often needed to uniquely determine the identities of cells while segmenting the cells. Such a recognition task is often non-trivial computationally. For model organisms such as C. elegans that have well-defined cell lineages, it is possible to explicitly recognize the cell identities via image analysis, by combining both image segmentation and pattern recognition methods.<ref>{{cite journal|last=Long|first=Fuhui|author2=Peng, H.|author3=Liu, X.|author4=Kim, S.|author5=Myers, E.W|title=A 3D digital atlas of C. elegans and its application to single-cell analyses|journal=Nature Methods|date=Sep 2009|volume=6|issue=9|pages=667–672|doi=10.1038/nmeth.1366|pmid=19684595|pmc=2882208}}</ref> Simultaneous segmentation and recognition of cells<ref>{{cite journal|last=Qu|first=Lei|author2=Long, F.|author3=Liu, X.|author4=Kim, S.|author5=Myers, E.W.|author6=Peng, H.|title=Simultaneous recognition and segmentation of cells: application in C. elegans|journal=Bioinformatics|year=2011|volume=27|issue=20|pages=2895–2902|url=http://bioinformatics.oxfordjournals.org/content/27/20/2895.full|doi=10.1093/bioinformatics/btr480|pmid=21849395|pmc=3187651}}</ref>  has also been proposed as a more accurate solution for this problem when an "atlas" or other prior information of cells is available. Since gene expression at single cell resolution can be obtained using these types of imaging based approaches, it is possible to combine these methods with other single cell gene expression quantification methods such as RNAseq.
+
+===Tracking===
+
+Tracking is another traditional image processing problem which appears in bioimage informatics. The problem is to relate objects that appear in subsequent frames of a film. As with segmentation, the problem can be posed in both two- and three-dimensional forms.<ref>{{cite conference|last=Dufour|first=Alexandre|author2=Vasily Shinin|author3=Shahragim Tajbakhsh|author4=Nancy Guillén-Aghion|author5=J-C. Olivo-Marin|author6=Christophe Zimmer|title=Segmenting and tracking fluorescent cells in dynamic 3-D microscopy with coupled active surfaces|book-title=Image Processing, IEEE Transactions on 14, no. 9|year=2005|pages=1396–1410|doi=10.1109/TIP.2005.852790|url=http://www.bioimageanalysis.org/pmwiki/uploads/Main/Dufour2005.pdf|archive-url=https://web.archive.org/web/20140302221531/http://www.bioimageanalysis.org/pmwiki/uploads/Main/Dufour2005.pdf|url-status=dead|archive-date=2014-03-02}}.</ref>
+
+In the case of fluorescent imaging, tracking must often be performed on very low contrast images. As obtaining high contrast is done by shining more light which damages the sample and [[photobleaching|destroys the dye]], illumination is kept at a minimum. It is often useful to think of a photon budget: the number of photons that can be used for imaging before the damage to the sample is so great that data can no longer be trusted. Therefore, if high contrast images are to be obtained, then only a few frames can be used; while for long movies, each frame will be of very low contrast.
+
+===Registration===
+{{main|Image registration}}
+
+When image data samples of different natures, such as those corresponding to different labeling methods, different individuals, samples at different time points, etc. are considered, images often need to be registered for better comparison. One example is as time-course data is collected, images in subsequent frames must often be [[Image registration|registered]] so that minor shifts in the camera position can be corrected for. Another example is that when many images of a model animal (e.g. [[C. elegans]] or [[Drosophila brain]] or a [[mouse brain]]) are collected, there is often a substantial need to register these images to compare their patterns (e.g. those correspond to the same or different neuron population, those share or differ in the gene expression, etc.).
+
+Medical image registration software packages were early attempts to be used for the microscopic image registration applications. However, due to the often much larger image file size and a much bigger number of specimens in the experiments, in many cases it is needed to develop new 3D image registration software. The [http://penglab.janelia.org/proj/brainaligner BrainAligner<ref>{{cite journal|last=Peng|first=Hanchuan|author2=Chung, P.|author3=Long, F.|author4=Qu, L.|author5=Jenett, A.|author6=Seeds, A.|author7=Myers, E.W.|author8=Simpson, J.H|title=BrainAligner: 3D registration atlases of Drosophila brains|journal=Nature Methods|year=2011|volume=8|issue=6|pages=493–498|doi=10.1038/nmeth.1602|pmid=21532582|pmc=3104101}}</ref> ] is a software that has been used to automate the 3D deformable and nonlinear registration process using a reliable-landmark-matching strategy. It has been primarily used to generate more than 50,000 3D standardized fruitfly brain images at Janelia Farm of HHMI, with other applications including dragonfly and mice.
+
+==Important Venues==
+A consortium of scientists from universities and research institutes have organized annual meetings on bioimage informatics<ref>{{cite web|title=Bioimage Informatics Annual Meeting|url=http://www.bioimageinformatics.org/}}</ref>  since 2005. The [[Intelligent Systems for Molecular Biology|ISMB]] conference has had a ''Bioimaging & Data Visualization'' track since 2010. The journal [[Bioinformatics (journal)|Bioinformatics]] also introduced a ''Bioimage Informatics'' track in 2012. The OpenAccess journal [http://www.biomedcentral.com/bmcbioinformatics BMC Bioinformatics] has a section devoted to bioimage analysis, visualization and related applications. Other [[List of bioinformatics journals|computational biology and bioinformatics journals]] also regularly publish bioimage informatics work. A European Union Cost action called NEUBIAS (network of european bioimage analysts) has been organizing annual conferences as well as bioimage analyst training schools and taggathons since 2017.
+
+==Software==
+
+There are several packages that make bioimage informatics methods available through a graphical user interface such as [[ImageJ]], [[FIJI (software)|FIJI]], [[CellProfiler]] or [http://icy.bioimageanalysis.org Icy]. Visualization and analysis platforms such as [http://vaa3d.org Vaa3D] have appeared in recent years and have been used in both large scale projects especially for neuroscience and desktop applications. 
+[[Image:V3d-display 01.png|thumb|250px|Example of a fly brain rendered with its compartments' surface models using Vaa3D]]
+
+Other researchers develop their own methods, typically based on a programming language with good computer vision support such as [[Python (programming language)|Python]], [[C++]], or [[MATLAB]].  The [https://github.com/luispedro/mahotas Mahotas] library for Python is one popular example. Although, examples of researcher developed methods in programming languages with less computer vision support as [[R (programming language)|R]] exist (e.g. trackdem <ref name="BruijningVisser2018">{{cite journal|last1=Bruijning|first1=Marjolein|last2=Visser|first2=Marco D.|last3=Hallmann|first3=Caspar A.|last4=Jongejans|first4=Eelke|last5=Golding|first5=Nick|title=trackdem: Automated particle tracking to obtain population counts and size distributions from videos in r |journal=Methods in Ecology and Evolution|volume=9|issue=4|pages=965–973|year=2018|issn=2041-210X|doi=10.1111/2041-210X.12975|doi-access=free}}</ref>).
+
+==See also==
+* [[Focus stacking]] The technique of combining multiple images with difference focus distances into one.
+* [[High-content screening]]
+* [[digital pathology]]
+* [[Medical imaging]]
+
+==External links==
+* [http://vaa3d.org Vaa3D: High-performance multi-dimensional image visualization and analysis]
+* [http://loci.wisc.edu/software/bio-formats Bioformats] The Image file IO engine that supports dozens of formats
+
+==References==
+{{reflist|2}}
+
+{{Informatics}}
+
+[[Category:Bioinformatics]]

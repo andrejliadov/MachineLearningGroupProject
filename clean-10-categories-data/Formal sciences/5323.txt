@@ -1,0 +1,999 @@
+{{pp-move-indef}}
+{{Redirect|Computer sciences|the American corporation|Computer Sciences Corporation}}
+{{short description|Study of the foundations and applications of computation}}
+{{Use mdy dates|date=October 2017}}
+<div class="thumb tright">
+<div class="thumbinner" style="width:300px;">
+{| style="border:1px solid #ccc;"
+|-
+| [[File:Lambda_calculus-Church_numerals.png|144px|alt=Expression for Church numerals in lambda calculus|Programming language theory|link=Programming language theory]]
+| [[File:Sorting quicksort anim.gif|144px|alt=Plot of a quicksort algorithm|Computational complexity theory|link=Computational complexity theory]]
+|-
+| [[File:Activemarker2.PNG|144px|alt=Example of Computer animation produced using Motion capture|Artificial intelligence|link=Artificial intelligence]]
+| [[File:Half Adder.svg|144px|alt=Half-adder circuit|Computer architecture|link=Computer architecture]]
+|}
+<div class="thumbcaption">Computer science deals with the theoretical foundations of information, algorithms and the architectures of its computation as well as practical techniques for their application.</div>
+</div>
+</div>
+{{TopicTOC-Computer science}}
+
+'''Computer science''' is the study of [[Algorithm|algorithmic processes]] and [[Automata theory|computational machines]].<ref>{{Cite web|title=What is Computer Science? - Computer Science, The University of York|url=https://www.cs.york.ac.uk/undergraduate/what-is-cs/|access-date=2020-06-11|website=www.cs.york.ac.uk}}</ref><ref>{{cite journal|last=Dijkstra|first=E.W.|title=On a cultural gap|journal=The Mathematical Intelligencer|year=1986|volume=8|issue=1|pages=48–52|url=http://www.cs.utexas.edu/users/EWD/transcriptions/EWD09xx/EWD924.html|doi=10.1007/bf03023921|s2cid=120847834}}</ref> As a discipline, computer science spans a range of topics from theoretical studies of [[algorithm]]s, [[Theory of computation|computation]] and [[Information theory|information]] to the practical issues of implementing computing systems in [[Computer architecture|hardware]] and [[Computer programming|software]].<ref>{{cite web |url=http://wordnetweb.princeton.edu/perl/webwn?s=computer%20scientist |title=WordNet Search—3.1 |publisher=Wordnetweb.princeton.edu |accessdate=14 May 2012}}</ref><ref>{{Cite web|title=Definition of computer science {{!}} Dictionary.com|url=https://www.dictionary.com/browse/computer-science|access-date=2020-06-11|website=www.dictionary.com|language=en}}</ref> Computer science addresses any [[Computational problem|computational problems]], especially [[Information processing|information processes]], such as [[control flow|control]], [[Inter-process communication|communication]], [[computer vision|perception]], [[Computational learning theory|learning]], and [[Artificial intelligence|intelligence]].<ref name="Denning_cs_discipline" /><ref>{{Cite journal|last=Denning|first=Peter J.|date=2005-04-01|title=Is computer science science?|url=http://portal.acm.org/citation.cfm?doid=1053291.1053309|journal=Communications of the ACM|language=en|volume=48|issue=4|pages=27–31|doi=10.1145/1053291.1053309|s2cid=827843}}</ref><ref>{{Cite book|last=Floridi|first=Luciano|url=https://books.google.com/books?id=H6viR4Fs7lYC&pg=PA39|title=Information: A Very Short Introduction|date=2010-02-25|publisher=OUP Oxford|isbn=978-0-19-160954-1|language=en}}</ref>
+
+Its fields can be divided into theoretical and [[practical disciplines]]. For example, the [[theory of computation]] concerns abstract [[models of computation]] and general classes of [[computational problem|problems]] that can be solved using them, while [[Computer graphics (computer science)|computer graphics]] and [[computational geometry]] emphasize more specific applications. [[Algorithmics]] have been called the heart of computer science.<ref>{{Cite book|last=Harel, David.|url=http://worldcat.org/oclc/876384882|title=Algorithmics The Spirit of Computing|date=2014|publisher=Springer Berlin|isbn=978-3-642-44135-6|oclc=876384882}}</ref> [[Programming language theory]] considers approaches to the description of computational processes, while [[computer programming]] involves the use of them to create [[complex system]]s. [[Computer architecture]] describes construction of computer components and computer-controlled equipment. [[Artificial intelligence]] aims to synthesize goal-orientated processes such as problem-solving, decision-making, environmental adaptation, [[Automated planning and scheduling|planning]] and [[Computational learning theory|learning]] found in humans and animals. The fundamental concern of computer science is determining what can and cannot be automated.<ref>{{Cite book|last=Arden, B. W.|url=http://worldcat.org/oclc/710775596|title=What can be automated? the computer science and engineering research study (COSERS).|date=1983|publisher=MIT Press|isbn=0-262-01060-7|oclc=710775596}}</ref><ref name="Denning_cs_discipline" /> Unlike other [[computing]] paradigms, computer scientists are focused on academic research.
+{{TOClimit|4}}
+
+==History==
+{{main|History of computer science}}
+{{History of computing}}
+[[File:Babbage40.png|upright|thumb|[[Charles Babbage]], sometimes referred to as the "father of computing".<ref>{{cite web|url=http://www.cbi.umn.edu/about/babbage.html|title=Charles Babbage Institute: Who Was Charles Babbage?|website=cbi.umn.edu|access-date=28 December 2016}}</ref> ]]
+[[File:Ada lovelace.jpg|upright|thumb|[[Ada Lovelace]] published the first [[algorithm]] intended for processing on a computer.<ref>{{cite web|url=http://www.computerhistory.org/babbage/adalovelace/|title=Ada Lovelace {{!}} Babbage Engine {{!}} Computer History Museum|website=www.computerhistory.org|access-date=28 December 2016}}</ref> ]]
+
+The earliest foundations of what would become computer science predate the invention of the modern [[digital computer]]. Machines for calculating fixed numerical tasks such as the [[abacus]] have existed since antiquity, aiding in computations such as multiplication and division. [[Algorithm]]s for performing computations have existed since antiquity, even before the development of sophisticated computing equipment. 
+
+[[Wilhelm Schickard]] designed and constructed the first working [[mechanical calculator]] in 1623.<ref>{{cite web|title=Wilhelm Schickard – Ein Computerpionier|url=http://www.fmi.uni-jena.de/fmimedia/Fakultaet/Institute+und+Abteilungen/Abteilung+f%C3%BCr+Didaktik/GDI/Wilhelm+Schickard.pdf|language = de}}</ref> In 1673, [[Gottfried Leibniz]] demonstrated a digital mechanical calculator, called the [[Stepped Reckoner]].<ref>{{cite web|title=A Brief History of Computing|url=http://blogs.royalsociety.org/history-of-science/2012/06/25/history-of-computing/|first = Fiona|last = Keates|work = The Repository|publisher = The Royal Society|date = 25 June 2012}}</ref> Leibniz may be considered the first computer scientist and information theorist, for, among other reasons, documenting the binary number system. In 1820, [[Charles Xavier Thomas|Thomas de Colmar]] launched the [[mechanical calculator]] industry<ref group=note>In 1851</ref> when he invented his simplified [[arithmometer]], the first calculating machine strong enough and reliable enough to be used daily in an office environment. [[Charles Babbage]] started the design of the first ''automatic mechanical calculator'', his [[Difference Engine]], in 1822, which eventually gave him the idea of the first ''programmable mechanical calculator'', his [[Analytical Engine]].<ref>{{cite web|title=Science Museum, Babbage's Analytical Engine, 1834-1871 (Trial model)|url=https://collection.sciencemuseumgroup.org.uk/objects/co62245/babbages-analytical-engine-1834-1871-trial-model-analytical-engines|accessdate=2020-05-11}}</ref> He started developing this machine in 1834, and "in less than two years, he had sketched out many of the [[wikt:Special:Search/salient|salient]] features of the modern computer".<ref name="Hyman1982">{{cite book |author=Anthony Hyman |title=Charles Babbage, pioneer of the computer |url=https://archive.org/details/charlesbabbagepi0000hyma |url-access=registration |year=1982}}</ref> "A crucial step was the adoption of a punched card system derived from the [[Jacquard loom]]"<ref name="Hyman1982" /> making it infinitely programmable.<ref group=note>"The introduction of punched cards into the new engine was important not only as a more convenient form of control than the drums, or because programs could now be of unlimited extent, and could be stored and repeated without the danger of introducing errors in setting the machine by hand; it was important also because it served to crystallize Babbage's feeling that he had invented something really new, something much more than a sophisticated calculating machine." [[#COLLIER|Bruce Collier]], 1970</ref> In 1843, during the translation of a French article on the Analytical Engine, [[Ada Lovelace]] wrote, in one of the many notes she included, an algorithm to compute the [[Bernoulli number]]s, which is considered to be the first published algorithm ever specifically tailored for implementation on a computer.<ref>{{cite web|url=http://www.scottlan.edu/Lriddle/women/ada-love.htm |title=A Selection and Adaptation From Ada's Notes found in Ada, The Enchantress of Numbers," by Betty Alexandra Toole Ed.D. Strawberry Press, Mill Valley, CA |accessdate=4 May 2006 |url-status=dead |archive-url=https://web.archive.org/web/20060210172109/http://www.scottlan.edu/lriddle/women/ada-love.htm |archive-date=February 10, 2006 }}</ref> Around 1885, [[Herman Hollerith]] invented the [[tabulating machine|tabulator]], which used [[punched card]]s to process statistical information; eventually his company became part of [[IBM]]. Following Babbage, although unaware of his earlier work, [[Percy Ludgate]] in 1909 published <ref>{{Cite web |url=https://scss.tcd.ie/SCSSTreasuresCatalog/miscellany/TCD-SCSS-X.20121208.002/TCD-SCSS-X.20121208.002.pdf/ |title=The John Gabriel Byrne Computer Science Collection |access-date=August 8, 2019 |archive-url=https://web.archive.org/web/20190416071721/https://www.scss.tcd.ie/SCSSTreasuresCatalog/miscellany/TCD-SCSS-X.20121208.002/TCD-SCSS-X.20121208.002.pdf |archive-date=April 16, 2019 |url-status=dead }}</ref> the 2nd of the only two designs for mechanical analytical engines in history. In 1937, one hundred years after Babbage's impossible dream, [[Howard H. Aiken|Howard Aiken]] convinced IBM, which was making all kinds of punched card equipment and was also in the calculator business<ref>"In this sense Aiken needed IBM, whose technology included the use of punched cards, the accumulation of numerical data, and the transfer of numerical data from one register to another", [[#AIKEN|Bernard Cohen]], p.44 (2000)</ref> to develop his giant programmable calculator, the [[Harvard Mark I|ASCC/Harvard Mark I]], based on Babbage's Analytical Engine, which itself used cards and a central computing unit. When the machine was finished, some hailed it as "Babbage's dream come true".<ref>[[#ORIGINS|Brian Randell]], p. 187, 1975</ref>
+
+During the 1940s, with the development of new and more powerful [[computing]] machines such as the [[Atanasoff–Berry computer]] and [[ENIAC]], the term ''computer'' came to refer to the machines rather than their human predecessors.<ref>The [[Association for Computing Machinery]] (ACM) was founded in 1947.</ref> As it became clear that computers could be used for more than just mathematical calculations, the field of computer science broadened to study [[computation]] in general. In 1945, [[IBM]] founded the Watson Scientific Computing Laboratory at [[Columbia University]] in [[New York City]]. The renovated fraternity house on Manhattan's West Side was IBM's first laboratory devoted to pure science. The lab is the forerunner of IBM's Research Division, which today operates research facilities around the world.<ref>{{cite web|url=https://www.ibm.com/ibm/history/history/year_1945.html |title=IBM Archives: 1945 |publisher=Ibm.com |accessdate=2019-03-19}}</ref> Ultimately, the close relationship between IBM and the university was instrumental in the emergence of a new scientific discipline, with Columbia offering one of the first academic-credit courses in computer science in 1946.<ref>{{cite web|url=https://www.ibm.com/ibm/history/ibm100/us/en/icons/compsci/ |title=IBM100 – The Origins of Computer Science |publisher=Ibm.com |date=1995-09-15 |accessdate=2019-03-19}}</ref> Computer science began to be established as a distinct academic discipline in the 1950s and early 1960s.<ref name="Denning_cs_discipline"/><ref>{{cite web |url=http://www.cl.cam.ac.uk/conference/EDSAC99/statistics.html |title=Some EDSAC statistics |publisher=University of Cambridge |accessdate=19 November 2011}}</ref> The world's first computer science degree program, the [[Cambridge Diploma in Computer Science]], began at the [[University of Cambridge]] [[Cambridge Computer Lab|Computer Laboratory]] in 1953. The first computer science department in the United States was formed at [[Purdue University]] in 1962.<ref>{{cite web |url=http://www.cs.purdue.edu/about/conte.html |title=Computer science pioneer Samuel D. Conte dies at 85 |date=July 1, 2002 |publisher=Purdue Computer Science |accessdate=December 12, 2014}}</ref> Since practical computers became available, many applications of computing have become distinct areas of study in their own rights.
+
+Although many initially believed it was impossible that computers themselves could actually be a scientific field of study, in the late fifties it gradually became accepted among the greater academic population.<ref name="Levy1984">{{cite book |author-link=Steven Levy |last=Levy |first=Steven |title=Hackers: Heroes of the Computer Revolution |year=1984 |isbn=978-0-385-19195-1 |publisher=Doubleday |title-link=Hackers: Heroes of the Computer Revolution }}</ref><ref name="Tedre2014">{{cite book |last=Tedre |first=Matti |title=The Science of Computing: Shaping a Discipline |year=2014 |publisher=Taylor and Francis / CRC Press }}</ref> It is the now well-known [[IBM]] brand that formed part of the computer science revolution during this time. IBM (short for International Business Machines) released the IBM 704<ref>{{cite web|url=http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/222/633 |title=IBM 704 Electronic Data Processing System—CHM Revolution |publisher=Computerhistory.org |accessdate=7 July 2013}}</ref> and later the IBM 709<ref>{{cite web |title=IBM 709: a powerful new data processing system |publisher=Computer History Museum |url=http://archive.computerhistory.org/resources/text/IBM/IBM.709.1957.102646304.pdf |accessdate=December 12, 2014 |archive-url=https://web.archive.org/web/20160304130040/http://archive.computerhistory.org/resources/text/IBM/IBM.709.1957.102646304.pdf |archive-date=March 4, 2016 |url-status=dead |df=mdy-all }}</ref> computers, which were widely used during the exploration period of such devices. "Still, working with the IBM [computer] was frustrating […] if you had misplaced as much as one letter in one instruction, the program would crash, and you would have to start the whole process over again".<ref name="Levy1984"/> During the late 1950s, the computer science discipline was very much in its developmental stages, and such issues were commonplace.<ref name="Tedre2014"/>
+
+The concept of a [[field-effect transistor]] was proposed by [[Julius Edgar Lilienfeld]] in 1925. [[John Bardeen]] and [[Walter Brattain]], while working under [[William Shockley]] at [[Bell Labs]], built the first working [[transistor]], the [[point-contact transistor]], in 1947.<ref name="Lee">{{cite book |last1=Lee |first1=Thomas H. |title=The Design of CMOS Radio-Frequency Integrated Circuits |date=2003 |publisher=[[Cambridge University Press]] |isbn=9781139643771 |url=https://web.stanford.edu/class/archive/ee/ee214/ee214.1032/Handouts/HO2.pdf}}</ref><ref name="Puers">{{cite book |last1=Puers |first1=Robert |last2=Baldi |first2=Livio |last3=Voorde |first3=Marcel Van de |last4=Nooten |first4=Sebastiaan E. van |title=Nanoelectronics: Materials, Devices, Applications, 2 Volumes |date=2017 |publisher=[[John Wiley & Sons]] |isbn=9783527340538 |page=14 |url=https://books.google.com/books?id=JOqVDgAAQBAJ&pg=PA14}}</ref> In 1953, the [[University of Manchester]] built the first [[transistorized computer]], called the [[Manchester computers|Transistor Computer]].<ref>{{Citation|last=Lavington|first=Simon|title=A History of Manchester Computers|year=1998|edition=2|publisher=The British Computer Society|location=Swindon|pages=34–35}}</ref> However, early [[junction transistor]]s were relatively bulky devices that were difficult to manufacture on a mass-production basis, which limited them to a number of specialised applications.<ref name="Moskowitz">{{cite book |last1=Moskowitz |first1=Sanford L. |title=Advanced Materials Innovation: Managing Global Technology in the 21st century |date=2016 |publisher=[[John Wiley & Sons]] |isbn=9780470508923 |pages=165–167 |url=https://books.google.com/books?id=2STRDAAAQBAJ&pg=PA165}}</ref> The [[MOSFET|metal–oxide–silicon field-effect transistor]] (MOSFET, or MOS transistor) was invented by [[Mohamed Atalla]] and [[Dawon Kahng]] at Bell Labs in 1959.<ref name="computerhistory">{{cite journal|url=https://www.computerhistory.org/siliconengine/metal-oxide-semiconductor-mos-transistor-demonstrated/|title=1960 - Metal Oxide Semiconductor (MOS) Transistor Demonstrated|journal=The Silicon Engine|publisher=[[Computer History Museum]]}}</ref><ref name="Lojek">{{cite book |last1=Lojek |first1=Bo |title=History of Semiconductor Engineering |url=https://archive.org/details/historysemicondu00loje_697 |url-access=limited |date=2007 |publisher=[[Springer Science & Business Media]] |isbn=9783540342588 |pages=[https://archive.org/details/historysemicondu00loje_697/page/n327 321]–3}}</ref> It was the first truly compact transistor that could be [[MOSFET scaling|miniaturised]] and [[Moore's law|mass-produced]] for a wide range of uses.<ref name="Moskowitz"/> The MOSFET made it possible to build [[very large-scale integration|high-density]] [[integrated circuit]] chips,<ref name="computerhistory-transistor">{{cite web |title=Who Invented the Transistor? |url=https://www.computerhistory.org/atchm/who-invented-the-transistor/ |website=[[Computer History Museum]] |date=4 December 2013 |accessdate=20 July 2019}}</ref><ref name="Hittinger">{{cite journal |last1=Hittinger |first1=William C. |title=Metal-Oxide-Semiconductor Technology |journal=Scientific American |date=1973 |volume=229 |issue=2 |pages=48–59 |issn=0036-8733|jstor=24923169 |doi=10.1038/scientificamerican0873-48 |bibcode=1973SciAm.229b..48H }}</ref> leading to what is known as the [[computer revolution]]<ref>{{cite book |last1=Fossum |first1=Jerry G. |last2=Trivedi |first2=Vishal P. |title=Fundamentals of Ultra-Thin-Body MOSFETs and FinFETs |date=2013 |publisher=[[Cambridge University Press]] |isbn=9781107434493 |page=vii |url=https://books.google.com/books?id=zZJfAAAAQBAJ&pg=PR7}}</ref> or [[microcomputer revolution]].<ref>{{cite book |last1=Malmstadt |first1=Howard V. |last2=Enke |first2=Christie G. |last3=Crouch |first3=Stanley R. |title=Making the Right Connections: Microcomputers and Electronic Instrumentation |date=1994 |publisher=[[American Chemical Society]] |isbn=9780841228610 |page=389 |url=https://books.google.com/books?id=lyJGAQAAIAAJ |quote=The relative simplicity and low power requirements of MOSFETs have fostered today's microcomputer revolution.}}</ref>
+
+Time has seen significant improvements in the usability and effectiveness of [[computing technology]].<ref>{{cite web|title = Timeline of Computer History|url = http://www.computerhistory.org/timeline/computers/|publisher = Computer History Museum|accessdate = November 24, 2015}}</ref> Modern society has seen a significant shift in the demographics which make use of computer technology; usage has shifted from being mostly exclusive to experts and professionals, to a near-[[ubiquitous]] user base. Initially, computers were quite costly, and some degree of humanitarian aid was needed for efficient use—in part from professional computer operators. As computer adoption became more widespread and affordable, less human assistance was needed for common usage.
+{{see also|History of computing|History of informatics}}
+
+==Etymology==
+{{see also|Informatics#Etymology}}
+
+Although first proposed in 1956,<ref name="Tedre2014"/> the term "computer science" appears in a 1959 article in ''[[Communications of the ACM]]'',<ref name="Fine_1959">
+{{cite journal
+ |author=Louis Fine
+ |year=1959
+ |title=The Role of the University in Computers, Data Processing, and Related Fields
+ |journal=Communications of the ACM
+ |volume=2 |issue=9 |pages=7–14
+ |doi=10.1145/368424.368427
+|s2cid=6740821
+ }}</ref>
+in which Louis Fein argues for the creation of a ''Graduate School in Computer Sciences'' analogous to the creation of [[Harvard Business School]] in 1921,<ref>{{cite web|title=Stanford University Oral History|url=http://library.stanford.edu/guides/stanford-university-oral-history|publisher=Stanford University|accessdate=May 30, 2013}}</ref> justifying the name by arguing that, like [[management science]], the subject is applied and interdisciplinary in nature, while having the characteristics typical of an academic discipline.<ref name="Fine_1959"/>
+His efforts, and those of others such as [[numerical analysis|numerical analyst]] [[George Forsythe]], were rewarded: universities went on to create such departments, starting with Purdue in 1962.<ref>[[Donald Knuth]] (1972). ''[http://www.stanford.edu/dept/ICME/docs/history/forsythe_knuth.pdf "George Forsythe and the Development of Computer Science"]''. ''Comms. ACM''. {{webarchive |url=https://web.archive.org/web/20131020200802/http://www.stanford.edu/dept/ICME/docs/history/forsythe_knuth.pdf |date=October 20, 2013 }}</ref> Despite its name, a significant amount of computer science does not involve the study of computers themselves. Because of this, several alternative names have been proposed.<ref>{{cite web |author=Matti Tedre |year=2006 |url=http://epublications.uef.fi/pub/urn_isbn_952-458-867-6/urn_isbn_952-458-867-6.pdf |title=The Development of Computer Science: A Sociocultural Perspective |page=260 |accessdate=December 12, 2014}}</ref> Certain departments of major universities prefer the term ''computing science'', to emphasize precisely that difference. Danish scientist [[Peter Naur]] suggested the term ''datalogy'',<ref>
+{{cite journal
+ |author=Peter Naur
+ |year=1966
+ |title=The science of datalogy
+ |journal=Communications of the ACM
+ |volume=9 |issue=7 |page=485
+ |doi=10.1145/365719.366510
+|s2cid=47558402
+ }}</ref> to reflect the fact that the scientific discipline revolves around data and data treatment, while not necessarily involving computers. The first scientific institution to use the term was the Department of Datalogy at the University of Copenhagen, founded in 1969, with Peter Naur being the first professor in datalogy. The term is used mainly in the Scandinavian countries. An alternative term, also proposed by Naur, is [[data science]]; this is now used for a [[multi-disciplinary]] field of data analysis, including statistics and databases.
+
+In the early days of computing, a number of terms for the practitioners of the field of computing were suggested in the ''Communications of the ACM''—''turingineer'', ''turologist'', ''flow-charts-man'', ''applied meta-mathematician'', and ''applied [[epistemology|epistemologist]]''.<ref>{{cite journal |date=<!-- missing! --> |volume=1 |issue=4 |page=6| doi = 10.1145/368796.368802|last1=Weiss |first1=E.A. |title=Letters to the editor |journal= Communications of the ACM |last2=Corley |first2=Henry P.T. |s2cid=5379449 }}</ref> Three months later in the same journal, ''comptologist'' was suggested, followed next year by ''hypologist''.<ref>Communications of the ACM 2(1):p.4</ref> The term ''computics'' has also been suggested.<ref>IEEE Computer 28(12): p.136</ref> {{anchor|Name of the field in Europe}}In Europe, terms derived from contracted translations of the expression "automatic information" (e.g. "informazione automatica" in Italian) or "information and mathematics" are often used, e.g. ''informatique'' (French), ''Informatik'' (German), ''informatica'' (Italian, Dutch), ''informática'' (Spanish, Portuguese), ''informatika'' ([[Slavic languages]] and [[Hungarian language|Hungarian]]) or ''pliroforiki'' (''πληροφορική'', which means informatics) in [[Greek language|Greek]]. Similar words have also been adopted in the UK (as in ''the School of Informatics of the University of Edinburgh'').<ref>P. Mounier-Kuhn, ''L'Informatique en France, de la seconde guerre mondiale au Plan Calcul. L'émergence d'une science'', Paris, PUPS, 2010, ch. 3 & 4.</ref>  "In the U.S., however, [[informatics]] is linked with applied computing, or computing in the context of another domain."<ref>{{cite web|last=Groth |first=Dennis P. |url=http://cacm.acm.org/magazines/2010/2/69363-why-an-informatics-degree |title=Why an Informatics Degree? |date = February 2010|work= Communications of the ACM |publisher=Cacm.acm.org}}</ref>
+
+A folkloric quotation, often attributed to—but almost certainly not first formulated by—[[Edsger W. Dijkstra|Edsger Dijkstra]], states that "computer science is no more about computers than astronomy is about telescopes."<ref group=note>See the entry
+"[[q:Computer science|Computer science]]" on Wikiquote for the history of this quotation.</ref> The design and deployment of computers and computer systems is generally considered the province of disciplines other than computer science. For example, the study of computer hardware is usually considered part of [[computer engineering]], while the study of commercial [[computer system]]s and their deployment is often called information technology or [[information system]]s. However, there has been much cross-fertilization of ideas between the various computer-related disciplines. Computer science research also often intersects other disciplines, such as philosophy, [[cognitive science]], [[computational linguistics|linguistics]], [[mathematics]], [[physics]], [[biology]], [[Earth science]], [[computational statistics|statistics]], and [[logic]].
+
+Computer science is considered by some to have a much closer relationship with mathematics than many scientific disciplines, with some observers saying that computing is a mathematical science.<ref name="Denning_cs_discipline" /> Early computer science was strongly influenced by the work of mathematicians such as [[Kurt Gödel]], [[Alan Turing]], [[John von Neumann]], [[Rózsa Péter]] and [[Alonzo Church]] and there continues to be a useful interchange of ideas between the two fields in areas such as [[mathematical logic]], [[category theory]], [[domain theory]], and [[algebra]].<ref name="Tedre2014"/>
+
+The relationship between Computer Science and Software Engineering is a contentious issue, which is further muddied by [[Software engineer#Use of the title "Engineer"|disputes]] over what the term "Software Engineering" means, and how computer science is defined.<ref>{{Cite journal | last1 = Tedre | first1 = M. | title = Computing as a Science: A Survey of Competing Viewpoints | doi = 10.1007/s11023-011-9240-4 | journal = Minds and Machines | volume = 21 | issue = 3 | pages = 361–387 | year = 2011 | s2cid = 14263916 }}</ref> [[David Parnas]], taking a cue from the relationship between other engineering and science disciplines, has claimed that the principal focus of computer science is studying the properties of computation in general, while the principal focus of software engineering is the design of specific computations to achieve practical goals, making the two separate but complementary disciplines.<ref>{{Cite journal | last1 = Parnas | first1 = D.L. | journal = Annals of Software Engineering | volume = 6 | pages = 19–37 | year = 1998 | doi = 10.1023/A:1018949113292|title=Software engineering programmes are not computer science programmes| s2cid = 35786237 }}, p. 19: "Rather than treat software engineering as a subfield of computer science, I treat it as an element of the set, Civil Engineering, Mechanical Engineering, Chemical Engineering, Electrical Engineering, […]"</ref>
+
+The academic, political, and funding aspects of computer science tend to depend on whether a department is formed with a mathematical emphasis or with an engineering emphasis. Computer science departments with a mathematics emphasis and with a numerical orientation consider alignment with [[computational science]]. Both types of departments tend to make efforts to bridge the field educationally if not across all research.
+
+==Philosophy==
+{{main|Philosophy of computer science}}
+A number of computer scientists have argued for the distinction of three separate paradigms in computer science. [[Peter Wegner]] argued that those paradigms are science, technology, and mathematics.<ref>{{cite conference |author=Wegner, P. |title=Research paradigms in computer science—Proceedings of the 2nd international Conference on Software Engineering |location=San Francisco, California, United States |date=October 13–15, 1976 |publisher=IEEE Computer Society Press, Los Alamitos, CA}}</ref> [[Peter J. Denning|Peter Denning]]'s working group argued that they are theory, abstraction (modeling), and design.<ref>{{Cite journal | last1 = Denning | first1 = P.J. | last2 = Comer | first2 = D.E. | last3 = Gries | first3 = D. | last4 = Mulder | first4 = M.C. | last5 = Tucker | first5 = A. | last6 = Turner | first6 = A.J. | last7 = Young | first7 = P.R. | title = Computing as a discipline | journal = Communications of the ACM | volume = 32 | pages = 9–23 | date = January 1989 | doi = 10.1145/63238.63239| s2cid = 723103 }}</ref> Amnon H. Eden described them as the "rationalist paradigm" (which treats computer science as a branch of mathematics, which is prevalent in theoretical computer science, and mainly employs [[deductive reasoning]]), the "technocratic paradigm" (which might be found in engineering approaches, most prominently in software engineering), and the "scientific paradigm" (which approaches computer-related artifacts from the empirical perspective of [[natural science]]s, identifiable in some branches of [[artificial intelligence]]).<ref>{{Cite journal | first1 = A.H. | title = Three Paradigms of Computer Science | journal = [[Minds and Machines]] | last1 = Eden | volume = 17 | issue = 2 | year = 2007 | url = http://www.eden-study.org/articles/2007/three_paradigms_of_computer_science.pdf | doi = 10.1007/s11023-007-9060-8 | pages = 135–167 | url-status=dead | archive-url = https://web.archive.org/web/20160215100211/http://www.eden-study.org/articles/2007/three_paradigms_of_computer_science.pdf | archive-date = February 15, 2016 | df = mdy-all | citeseerx = 10.1.1.304.7763 | s2cid = 3023076 }}</ref>
+Computer science focuses on methods involved in design, specification, programming, verification, implementation and testing of human-made computing systems.<ref>{{cite encyclopedia |last1=Turner |first1=Raymond |last2=Angius |first2=Nicola |editor1-last=Zalta |editor1-first=Edward N. |title=The Philosophy of Computer Science |encyclopedia=The Stanford Encyclopedia of Philosophy |date=2019 |url=https://plato.stanford.edu/archives/spr2019/entries/computer-science/}}</ref>
+
+==Fields==
+{{Quote
+|text=Computer science is no more about computers than astronomy is about telescopes.
+|author=[[Edsger Dijkstra]]
+}}
+{{further|Outline of computer science}}
+As a discipline, computer science spans a range of topics from theoretical studies of algorithms and the limits of computation to the practical issues of implementing computing systems in hardware and software.<ref name="CSAB1997">{{cite web|publisher=Computing Sciences Accreditation Board|title=Computer Science as a Profession|url=http://www.csab.org/comp_sci_profession.html |date=May 28, 1997| accessdate=23 May 2010 |archive-url = https://web.archive.org/web/20080617030847/http://www.csab.org/comp_sci_profession.html |archive-date = June 17, 2008}}</ref><ref>{{cite book |author=Committee on the Fundamentals of Computer Science: Challenges and Opportunities, National Research Council |title=Computer Science: Reflections on the Field, Reflections from the Field|url=http://www.nap.edu/catalog.php?record_id=11106#toc|publisher=National Academies Press|isbn=978-0-309-09301-9|year=2004}}</ref>
+[[CSAB (professional organization)|CSAB]], formerly called Computing Sciences Accreditation Board—which is made up of representatives of the [[Association for Computing Machinery]] (ACM), and the [[IEEE Computer Society]] (IEEE CS)<ref>{{cite web |url=http://www.csab.org/ |title=CSAB Leading Computer Education |publisher=CSAB |date=August 3, 2011 |accessdate=19 November 2011}}</ref>—identifies four areas that it considers crucial to the discipline of computer science: ''theory of computation'', ''algorithms and data structures'', ''programming methodology and languages'', and ''computer elements and architecture''. In addition to these four areas, CSAB also identifies fields such as software engineering, artificial intelligence, computer networking and communication, database systems, parallel computation, distributed computation, human–computer interaction, computer graphics, operating systems, and numerical and [[symbolic computation]] as being important areas of computer science.<ref name="CSAB1997"/>
+
+===Theoretical computer science===
+{{main|Theoretical computer science}}
+''Theoretical Computer Science'' is mathematical and abstract in spirit, but it derives its motivation from the practical and everyday computation. Its aim is to understand the nature of computation and, as a consequence of this understanding, provide more efficient methodologies.
+
+====Theory of computation====
+
+{{main|Theory of computation}}
+
+According to [[Peter J. Denning|Peter Denning]], the fundamental question underlying computer science is, "What can be automated?"<ref name="Denning_cs_discipline">{{cite journal | last=Denning | first=Peter J. | author-link=Peter J. Denning | year=2000 | title=Computer Science: The Discipline | url=http://www.idi.ntnu.no/emner/dif8916/denning.pdf | journal=Encyclopedia of Computer Science |archive-url = https://web.archive.org/web/20060525195404/http://www.idi.ntnu.no/emner/dif8916/denning.pdf |archive-date = May 25, 2006}}</ref> Theory of computation is focused on answering fundamental questions about what can be computed and what amount of resources are required to perform those computations. In an effort to answer the first question, [[computability theory]] examines which computational problems are solvable on various theoretical [[models of computation]]. The second question is addressed by [[computational complexity theory]], which studies the time and space costs associated with different approaches to solving a multitude of computational problems.
+
+The famous [[P versus NP problem|P = NP?]] problem, one of the [[Millennium Prize Problems]],<ref>[http://www.claymath.org/millennium/P_vs_NP/ Clay Mathematics Institute] P = NP {{webarchive |url=https://web.archive.org/web/20131014194456/http://www.claymath.org/millennium/P_vs_NP/ |date=October 14, 2013 }}</ref> is an open problem in the theory of computation.
+
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:DFAexample.svg|130px]]
+| [[File:Syntax_tree.svg|96px]]
+| <math>M= \{ X : X \not\in X \}</math>
+| [[File:Complexity classes.svg|120px]]
+|-
+| [[Automata theory]]
+| [[Formal language]]s
+| [[Computability theory]]
+| [[Computational complexity theory]]
+|-
+| '''GNITIRW-TERCES'''
+| [[File:Blochsphere.svg|96px]]
+| [[File:XNOR ANSI Labelled.svg]]
+| [[File:Kellerautomat.svg|96px]]
+|-
+| [[Cryptography]]
+| [[Quantum computer|Quantum computing theory]]
+| [[Circuit_(computer_science)|Logic circuit theory]]
+| [[Cellular automata]]
+|}
+
+====Information and coding theory====
+
+{{main|Information theory|Coding theory}}
+
+Information theory, closely related to [[probability]] and [[statistics]], is related to the quantification of information. This was developed by [[Claude Shannon]] to find fundamental limits on [[signal processing]] operations such as compressing data and on reliably storing and communicating data.<ref>{{cite web |date=October 14, 2002 |last=P. Collins |first=Graham |title=Claude E. Shannon: Founder of Information Theory |url=http://www.scientificamerican.com/article.cfm?id=claude-e-shannon-founder |work=Scientific American |accessdate=December 12, 2014}}</ref>
+Coding theory is the study of the properties of [[code]]s (systems for converting information from one form to another) and their fitness for a specific application. Codes are used for [[data compression]], [[cryptography]], [[error detection and correction]], and more recently also for [[Linear network coding|network coding]]. Codes are studied for the purpose of designing efficient and reliable [[data transmission]] methods.
+<ref>Van-Nam Huynh; Vladik Kreinovich; Songsak Sriboonchitta; 2012. Uncertainty Analysis in Econometrics with Applications. Springer Science & Business Media. p. 63. {{ISBN|978-3-642-35443-4}}.</ref>
+
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:Hamming.jpg|96px]]
+| [[File:Binary symmetric channel.svg|96px]]
+| [[File:Digitalteilchen.svg|96px]]
+| [[File:H0 h1 fehler.jpg|96px]]
+| [[File:Mandelpart2_red.png|96px]]
+|-
+| [[Coding theory]]
+| [[Channel capacity]]
+| [[Algorithmic information theory]]
+| [[Signal detection theory]]
+| [[Kolmogorov complexity]]
+|}
+
+====Data structures and algorithms====
+
+{{main|Data structure|Algorithm}}Data structures and algorithms are the studies of commonly used computational methods and their computational efficiency.
+
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| {{math|''O''(''n''<sup>2</sup>)}}
+| [[File:Sorting quicksort anim.gif|96px]]
+| [[File:Tree_(computer_science).svg|96px]]
+| [[File:TSP Deutschland 3.png|96px]]
+| [[File:SimplexRangeSearching.svg|96px]]
+| [[File:Contraction_vertices.jpg|96px]]
+|-
+| [[Analysis of algorithms]]
+| [[Algorithmics|Algorithm design]]
+| [[Data structures]]
+| [[Combinatorial optimization]]
+| [[Computational geometry]]
+| [[Randomized algorithms]]
+|}
+
+====Programming language theory and formal methods====
+{{main|Programming language theory|Formal methods}}
+Programming language theory is a branch of computer science that deals with the design, implementation, analysis, characterization, and classification of [[programming language]]s and their individual [[Programming language#Elements|features]]. It falls within the discipline of computer science, both depending on and affecting [[mathematics]], software engineering, and [[linguistics]]. It is an active research area, with numerous dedicated academic journals.
+
+Formal methods are a particular kind of [[Mathematics|mathematically]] based technique for the [[formal specification|specification]], development and [[formal verification|verification]] of software and [[computer hardware|hardware]] systems.<ref>Phillip A. Laplante, 2010. Encyclopedia of Software Engineering Three-Volume Set (Print). CRC Press. p. 309. {{ISBN|978-1-351-24926-3}}.</ref> The use of formal methods for software and hardware design is motivated by the expectation that, as in other engineering disciplines, performing appropriate mathematical analysis can contribute to the reliability and robustness of a design. They form an important theoretical underpinning for software engineering, especially where safety or security is involved. Formal methods are a useful adjunct to software testing since they help avoid errors and can also give a framework for testing. For industrial use, tool support is required. However, the high cost of using formal methods means that they are usually only used in the development of high-integrity and [[life-critical system]]s, where safety or [[computer security|security]] is of utmost importance. Formal methods are best described as the application of a fairly broad variety of [[theoretical computer science]] fundamentals, in particular [[logic in computer science|logic]] calculi, [[formal language]]s, [[automata theory]], and [[program semantics]], but also [[type systems]] and [[algebraic data types]] to problems in software and hardware specification and verification.
+
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:IF-THEN-ELSE-END_flowchart.svg|96px]]
+| <math>\Gamma\vdash x: \text{Int}</math>
+| [[File:Compiler.svg|96px]]
+| [[File:Python add5 syntax.svg|96px]]
+| [[File:Prop-tableau-1.svg|96px]]
+| [[File:Coq plus comm screenshot.jpg|96px]]
+|-
+| [[Semantics (computer science)|Formal semantics]]
+| [[Type theory]]
+| [[Compiler construction|Compiler design]]
+| [[Programming language]]s
+| [[Formal verification]]
+| [[Automated theorem proving]]
+|}
+
+===Computer systems and computational processes===
+
+====Artificial intelligence====
+{{main|Artificial intelligence|Bio-inspired computing}}
+Artificial intelligence (AI) aims to or is required to synthesize goal-orientated processes such as problem-solving, decision-making, environmental adaptation, learning, and communication found in humans and animals. From its origins in [[cybernetics]] and in the [[History of artificial intelligence|Dartmouth Conference]] (1956), artificial intelligence research has been necessarily cross-disciplinary, drawing on areas of expertise such as [[applied mathematics]], [[Mathematical logic|symbolic logic]], [[semiotics]], [[electrical engineering]], [[philosophy of mind]], [[neurophysiology]], and [[social intelligence]]. AI is associated in the popular mind with [[Robotics|robotic development]], but the main field of practical application has been as an embedded component in areas of [[software development]], which require computational understanding. The starting point in the late 1940s was [[Alan Turing]]'s question "Can computers think?", and the question remains effectively unanswered, although the [[Turing test]] is still used to assess computer output on the scale of human intelligence. But the automation of evaluative and predictive tasks has been increasingly successful as a substitute for human monitoring and intervention in domains of computer application involving complex real-world data.
+
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:Nicolas P. Rougier's rendering of the human brain.png|96px]]
+| [[File:Human eye, rendered from Eye.png|96px]]
+| [[File:Colored_neural_network.svg|96px]]
+| [[File:Markov_Decision_Process.svg|96px]]
+|-
+| [[Computational learning theory]]
+| [[Computer vision]]
+| [[Artificial neural network|Neural networks]]
+| [[Automated planning and scheduling|Planning and scheduling]]
+|-
+| [[File:english.png|96px]]
+| [[File:Knight's_tour.svg|96px]]
+| [[File:Ackley.gif|96px]]
+| [[File:Ideal_feedback_model.svg|96px]]
+|-
+| [[Natural language processing]]
+| [[Algorithmic game theory|Computational game theory]]
+| [[Evolutionary computation]]
+| [[Autonomic computing|Computational regulation]]
+|-
+| [[File:neuron.svg|96px]]
+| [[File:KnnClassification.svg|96px]]
+| [[File:HONDA ASIMO.jpg|64px]]
+| [[File:Rule_alignment.gif|96px]]
+|-
+| [[Knowledge representation and reasoning|Representation and reasoning]]
+| [[Pattern recognition]]
+| [[Robotics]]
+| [[Swarm intelligence]]
+|}
+
+====Computer architecture and organisation====
+{{main|Computer architecture|Computer organisation|Computer engineering}}
+Computer architecture, or digital computer organization, is the conceptual design and fundamental operational structure of a computer system. It focuses largely on the way by which the central processing unit performs internally and accesses addresses in memory.<ref>{{cite web|last=A. Thisted|first=Ronald|title=Computer Architecture |url=http://galton.uchicago.edu/~thisted/Distribute/comparch.pdf|publisher=The University of Chicago|date=April 7, 1997}}</ref> Computer engineers study [[computational logic]] and design of [[computer hardware]], from individual [[Processor (computing)|processor]] components, [[microcontroller]]s, [[personal computer]]s to [[supercomputer]]s and [[embedded system]]s.
+
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:ABasicComputer.gif|96px]]
+| [[File:Intel_Core2_arch.svg|96px]]
+| [[File:SIMD.svg|96px]]
+| [[File:Z80_arch.svg|96px]]
+|-
+| [[Processor (computing)|Processing unit]]
+| [[Microarchitecture]]
+| [[Multiprocessing]]
+| [[Processor design]]
+|-
+| [[File:Roomba original.jpg|96px]]
+| [[File:flowchart.png|96px]]
+| [[File:Kernel_Layout.svg|96px]]
+| [[File:Uarm_metal_wiki2.jpg|96px]]
+|-
+| [[Ubiquitous computing]]
+| [[Systems architecture]]
+| [[Operating system]]s
+| [[Input/output]]
+|-
+| [[File:Physical_computing.svg|96px]]
+| [[File:FIR_Filter_General.svg|96px]]
+| [[File:Dep-1.svg|96px]]
+| [[File:Linker.svg|96px]]
+|-
+| [[Embedded system]]
+| [[Real-time computing]]
+| [[Dependability]]
+| [[Interpreter (computing)|Interpreter]]
+|}
+
+====Concurrent, parallel and distributed computing====
+{{main|Concurrency (computer science)|Distributed computing}}
+Concurrency is a property of systems in which several computations are executing simultaneously, and potentially interacting with each other.<ref>Jiacun Wang, 2017. Real-Time Embedded Systems. Wiley. p. 12. {{ISBN|978-1-119-42070-5}}.</ref> A number of mathematical models have been developed for general concurrent computation including [[Petri net]]s, [[Process calculus|process calculi]] and the [[Parallel random-access machine|Parallel Random Access Machine]] model.<ref>Gordana Dodig-Crnkovic; Raffaela Giovagnoli; 2013. Computing Nature: Turing Centenary Perspective. Springer Science & Business Media. p. 247. {{ISBN|978-3-642-37225-4}}.</ref> When multiple computers are connected in a network while using concurrency, this is known as a distributed system. Computers within that distributed system have their own private memory, and information can be exchanged to achieve common goals.<ref>Simon Elias Bibri; 2018. Smart Sustainable Cities of the Future: The Untapped Potential of Big Data Analytics and Context-Aware Computing for Advancing Sustainability. Springer. p. 74. {{ISBN|978-3-319-73981-6}}.</ref>
+
+====Computer networks====
+{{main|Computer network}}
+This branch of computer science aims to manage networks between computers worldwide
+
+====Computer security and cryptography====
+{{main|Computer security|Cryptography}}
+Computer security is a branch of computer technology with the objective of protecting information from unauthorized access, disruption, or modification while maintaining the accessibility and usability of the system for its intended users. [[Cryptography]] is the practice and study of hiding (encryption) and therefore deciphering (decryption) information. Modern cryptography is largely related to computer science, for many encryption and decryption algorithms are based on their computational complexity.
+
+====Databases and data mining====
+{{main|Database|Data mining}}
+A database is intended to organize, store, and retrieve large amounts of data easily. Digital databases are managed using database management systems to store, create, maintain, and search data, through [[database model]]s and [[query language]]s. Data mining is a process of discovering patterns in large data sets.
+
+====Computer graphics and visualization====
+{{main|Computer graphics (computer science)}}
+Computer graphics is the study of digital visual contents and involves the synthesis and manipulation of image data. The study is connected to many other fields in computer science, including [[computer vision]], [[image processing]], and [[computational geometry]], and is heavily applied in the fields of special effects and [[video game]]s.
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:Simx2=transl_OK.svg|96px]]
+| [[File:FWDvsINV_Kinematics_HighResTransp.png|96px]]
+| [[File:5-cell.gif|96px]]
+| [[File:Hud_on_the_cat.jpg|96px]]
+| [[File:Visible_light_eye-tracking_algorithm.jpg|96px]]
+| [[File:Csg_tree.png|96px]]
+|-
+| [[2D computer graphics]]
+| [[Computer animation]]
+| [[Rendering (computer graphics)|Rendering]]
+| [[Mixed reality]]
+| [[Virtual reality]]
+| [[Solid modeling]]
+|}
+
+====Image and sound processing====
+{{main|Information processing}}
+[[Information]] can take the form of images, sound, video or other multimedia. [[Bit]]s of information can be streamed via [[signal]]s. Its [[information processing|processing]] is the central notion of [[informatics]], the European view on [[computing]], which studies information processing algorithms independently of the type of information carrier - whether it is electrical, mechanical or biological. This field plays important role in [[information theory]], [[telecommunications]], [[information engineering (field)|information engineering]] and has applications in [[medical image computing]] and [[speech synthesis]], among others. ''What is the lower bound on the complexity of [[fast Fourier transform]] algorithms?'' is one of [[List of unsolved problems in computer science|unsolved problems in theoretical computer science]].
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:DIT-FFT-butterfly.png|96px]]
+| [[File:Bayer_pattern_on_sensor.svg|96px]]
+| [[File:Opus_quality_comparison_colorblind_compatible.svg|96px]]
+| [[File:Quality_comparison_jpg_vs_saveforweb.jpg|96px]]
+| [[File:MeningiomaMRISegmentation.png|96px]]
+| [[File:Ætoms_-_Translation.svg|96px]]
+|-
+| [[Fast Fourier transform|FFT algorithms]]
+| [[Image processing]]
+| [[Speech recognition]]
+| [[Data compression]]
+| [[Medical image computing]]
+| [[Speech synthesis]]
+|}
+
+===Applied computer science===
+====Computational science, finance and engineering====
+{{main|Computational science|Computational finance|Computational engineering}}
+
+[[Scientific computing]] (or [[computational science]]) is the field of study concerned with constructing [[scientific modelling|mathematical models]] and [[numerical analysis|quantitative analysis]] techniques and using computers to analyze and solve [[Science|scientific]] problems. A major usage of scientific computing is [[simulation]] of various processes, including computational [[fluid dynamics]], physical, electrical, and electronic systems and circuits, as well as societies and social situations (notably war games) along with their habitats, among many others. Modern computers enable optimization of such designs as complete aircraft. Notable in electrical and electronic circuit design are SPICE,<ref>Muhammad H. Rashid, 2016. SPICE for Power Electronics and Electric Power. CRC Press. p. 6. {{ISBN|978-1-4398-6047-2}}.</ref> as well as software for physical realization of new (or modified) designs. The latter includes essential design software for [[integrated circuit]]s.{{Citation needed|date=October 2010}}
+
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:Lorenz attractor yb.svg|96px]]
+| [[File:Quark wiki.jpg|96px]]
+| [[File:Naphthalene-3D-balls.png|96px]]
+| [[File:1u04-argonaute.png|96px]]
+| [[File:GalvesLocherbach_-_Low_resolution.gif|96px]]
+| [[File:X-ray_of_hand,_where_bone_age_is_automatically_found_by_BoneXpert_software.jpg|75px]]
+|-
+| [[Numerical analysis]]
+| [[Computational physics]]
+| [[Computational chemistry]]
+| [[Bioinformatics]]
+| [[Neuroinformatics]]
+| [[Medical informatics]]
+|}
+
+====Social computing and human-computer interaction====
+{{main|Social computing|Human-computer interaction}}
+Social computing is an area that is concerned with the intersection of social behavior and computational systems. Human-computer interaction research develops theories, principles, and guidelines for user interface designers.
+
+====Software engineering====
+{{main|Software engineering}}
+{{see also|Computer programming}}
+Software engineering is the study of designing, implementing, and modifying the software in order to ensure it is of high quality, affordable, maintainable, and fast to build. It is a systematic approach to software design, involving the application of engineering practices to software. Software engineering deals with the organizing and analyzing of software—it doesn't just deal with the creation or manufacture of new software, but its internal arrangement and maintenance.
+
+==Discoveries==
+The philosopher of computing [[William J. Rapaport|Bill Rapaport]] noted three ''Great Insights of Computer Science'':<ref>{{cite web|url=http://www.cse.buffalo.edu/~rapaport/computation.html|title=What Is Computation?|publisher=State University of New York at Buffalo|last = Rapaport|first = William J.|date = 20 September 2013}}</ref>
+* [[Gottfried Wilhelm Leibniz]]'s, [[George Boole]]'s, [[Alan Turing]]'s, [[Claude Shannon]]'s, and [[Samuel Morse]]'s insight: there are only ''two objects'' that a computer has to deal with in order to represent "anything".{{refn |group="note"|The word "anything" is written in quotation marks because there are things that computers cannot do. One example is: to answer the question if an arbitrary given computer program will eventually finish or run forever (the [[Halting problem]]).}}
+:: All the information about any computable problem can be represented using only 0 and 1 (or any other bistable pair that can flip-flop between two easily distinguishable states, such as "on/off", "magnetized/de-magnetized", "high-voltage/low-voltage", etc.).
+{{see also|Digital physics}}
+* [[Alan Turing]]'s insight: there are only ''five actions'' that a computer has to perform in order to do "anything".
+:: Every algorithm can be expressed in a language for a computer consisting of only five basic instructions:<ref>B. Jack Copeland, 2012. Alan Turing's Electronic Brain: The Struggle to Build the ACE, the World's Fastest Computer. OUP Oxford. p. 107. {{ISBN|978-0-19-960915-4}}.</ref>
+::* move left one location;
+::* move right one location;
+::* read symbol at current location;
+::* print 0 at current location;
+::* print 1 at current location.
+{{see also|Turing machine}}
+* [[Corrado Böhm]] and [[Giuseppe Jacopini]]'s insight: there are only ''three ways of combining'' these actions (into more complex ones) that are needed in order for a computer to do "anything".<ref>Charles W. Herbert, 2010. An Introduction to Programming Using Alice 2.2. Cengage Learning. p. 122. {{ISBN|0-538-47866-7}}.</ref>
+
+:: Only three rules are needed to combine any set of basic instructions into more complex ones:
+::*''sequence'': first do this, then do that;
+::* '' selection'': IF such-and-such is the case, THEN do this, ELSE do that;
+::* ''repetition'': WHILE such-and-such is the case, DO this.
+:: Note that the three rules of Boehm's and Jacopini's insight can be further simplified with the use of [[goto]] (which means it is more elementary than [[structured programming]]).
+{{see also|Structured program theorem}}
+
+==Programming paradigms==
+{{main|Programming paradigm}}
+
+Programming languages can be used to accomplish different tasks in different ways. Common programming paradigms include:
+
+* [[Functional programming]], a style of building the structure and elements of computer programs that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It is a declarative programming paradigm, which means programming is done with expressions or declarations instead of statements.<ref>Md. Rezaul Karim; Sridhar Alla; 2017. Scala and Spark for Big Data Analytics: Explore the concepts of functional programming, data streaming, and machine learning. Packt Publishing Ltd. p. 87. {{ISBN|978-1-78355-050-0}}.</ref>
+* [[Imperative programming]], a programming paradigm that uses statements that change a program's state.<ref>Lex Sheehan, 2017. Learning Functional Programming in Go: Change the way you approach your applications using functional programming in Go. Packt Publishing Ltd. p. 16. {{ISBN|978-1-78728-604-7}}.</ref> In much the same way that the imperative mood in natural languages expresses commands, an imperative program consists of commands for the computer to perform. Imperative programming focuses on describing how a program operates.
+* [[Object-oriented programming]], a programming paradigm based on the concept of "objects", which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods. A feature of objects is that an object's procedures can access and often modify the data fields of the object with which they are associated. Thus object-oriented computer programs are made out of objects that interact with one another.<ref>Evelio Padilla, 2015. Substation Automation Systems: Design and Implementation. Wiley. p. 245. {{ISBN|978-1-118-98730-8}}.</ref>
+
+Many languages offer support for multiple paradigms, making the distinction more a matter of style than of technical capabilities.<ref>{{cite web |title=Multi-Paradigm Programming Language |url=https://developer.mozilla.org/en-US/docs/multiparadigmlanguage.html |website=developer.mozilla.org |publisher=[[Mozilla Foundation]] |archive-url=https://web.archive.org/web/20130821052407/https://developer.mozilla.org/en-US/docs/multiparadigmlanguage.html |archive-date=21 August 2013}}</ref>
+
+==Academia==
+{{further|List of computer science conferences|Category:Computer science journals}}
+Conferences are important events for computer science research. During these conferences, researchers from the public and private sectors present their recent work and meet. Unlike in most other academic fields, in computer science, the prestige of [[proceedings|conference papers]] is greater than that of journal publications.<ref>{{cite journal|last1=Meyer|first1=Bertrand|title=Viewpoint: Research evaluation for computer science|journal=Communications of the ACM|date=April 2009|volume=25|issue=4|pages=31–34|doi=10.1145/1498765.1498780|s2cid=8625066}}</ref><ref>{{cite web|last1=Patterson|first1=David|title=Evaluating Computer Scientists and Engineers For Promotion and Tenure|url=http://cra.org/resources/bp-view/evaluating_computer_scientists_and_engineers_for_promotion_and_tenure/|publisher=Computing Research Association|date=August 1999}}</ref> One proposed explanation for this is the quick development of this relatively new field requires rapid review and distribution of results, a task better handled by conferences than by journals.<ref>{{cite journal|last1=Fortnow|first1=Lance|title=Viewpoint: Time for Computer Science to Grow Up|journal=Communications of the ACM|date=August 2009|volume=52|issue=8|pages=33–35|doi=10.1145/1536616.1536631|url=http://cacm.acm.org/magazines/2009/8/34492-viewpoint-time-for-computer-science-to-grow-up/fulltext|doi-access=free}}</ref>
+
+==Education==
+{{Main|Computer science education}}
+'''Computer Science''', known by its near synonyms, '''Computing''', '''Computer Studies''', has been taught in UK schools since the days of [[batch processing]], [[punched cards|mark sensitive card]]s and [[paper tape]] but usually to a select few students.<ref>{{cite news |last1=Burns |first1=Judith |title=Computer science A-level 1970s style |url=https://www.bbc.co.uk/news/education-35890450 |accessdate=9 February 2019 |date=3 April 2016}}</ref> In 1981, the BBC produced a [[BBC Model B|micro-computer]] and [[Econet|classroom network]] and Computer Studies became common for GCE [[O level]] students (11–16-year-old), and Computer Science to [[A level]] students. Its importance was recognised, and it became a compulsory part of the [[National Curriculum]], for Key Stage 3 & 4. In September 2014 it became an entitlement for all pupils over the age of 4.<ref name="Jones">{{cite web |last1=Jones |first1=Michael |title=Developing a Computer Science Curriculum in England: Exploring Approaches in the USA |url=https://www.wcmt.org.uk/sites/default/files/report-documents/Jones%20M%20Report%202015%20%20Final.pdf |publisher=Winston Churchill Memorial Trust |accessdate=9 February 2019 |date=October 1915}}</ref>
+
+In the [[United States of America|US]], with 14,000 school districts deciding the curriculum, provision was fractured.<ref>{{cite news|title=Computer Science: Not Just an Elective Anymore|url=http://www.edweek.org/ew/articles/2014/02/26/22computer_ep.h33.html|work=Education Week|date=February 25, 2014}}</ref> According to a 2010 report by the [[Association for Computing Machinery]] (ACM) and [[Computer Science Teachers Association]] (CSTA), only 14 out of 50 states have adopted significant education standards for high school computer science.<ref>{{cite web|title=Running on Empty: The Failure to Teach K–12 Computer Science in the Digital Age |url = http://runningonempty.acm.org/fullreport2.pdf | date= 2010|first1 =Cameron |last1=Wilson|publisher = ACM|first2=Leigh Ann|last2= Sudol|first3= Chris|last3 =Stephenson|first4 =Mark |last4=Stehlik}}</ref>
+
+Israel, New Zealand, and South Korea have included computer science in their national secondary education curricula,<ref>{{cite news|title=A is for algorithm|url=https://www.economist.com/news/international/21601250-global-push-more-computer-science-classrooms-starting-bear-fruit|work=The Economist|date=April 26, 2014}}</ref><ref>{{cite web|title=Computing at School International comparisons|url=http://www.computingatschool.org.uk/data/uploads/internationalcomparisons-v5.pdf|accessdate=July 20, 2015}}</ref> and several others are following.<ref>{{cite news|title=Adding Coding to the Curriculum|url=https://www.nytimes.com/2014/03/24/world/europe/adding-coding-to-the-curriculum.html|work=The New York Times|date=March 23, 2014}}</ref>
+
+==See also==
+{{main|Glossary of computer science|Outline of computer science}}
+{{Div col}}
+* [[Computer Science and Engineering]]
+* [[Computer engineering]]
+* [[Information technology]]
+* [[List of computer scientists]]
+* [[List of computer science awards]]
+* [[List of important publications in computer science]]
+* [[List of pioneers in computer science]]
+* [[List of unsolved problems in computer science]]
+* [[List of terms relating to algorithms and data structures]]
+* [[Digital Revolution]]
+* [[Software engineering]]
+* [[Programming language]]
+* [[Algorithmic trading]]
+* [[Information and communications technology]]
+
+{{Books-inline|Computer science}}
+{{Div col end}}
+
+==Notes==
+{{reflist|group=note}}
+
+==References==
+{{reflist|colwidth=30em}}
+
+==Further reading==
+{{refbegin}}
+===Overview===
+* {{cite book|first=Allen B.|last=Tucker|author-link=Allen B. Tucker|title=Computer Science Handbook|edition=2nd|publisher=Chapman and Hall/CRC|year=2004|isbn=978-1-58488-360-9}}
+** "Within more than 70 chapters, every one new or significantly revised, one can find any kind of information and references about computer science one can imagine. […] all in all, there is absolute nothing about Computer Science that can not be found in the 2.5 kilogram-encyclopaedia with its 110 survey articles […]." (Christoph Meinel, ''[[Zentralblatt MATH]]'')
+* {{cite book|first=Jan|last=van Leeuwen|author-link=Jan van Leeuwen|title=Handbook of Theoretical Computer Science|publisher=The MIT Press|year=1994|isbn=978-0-262-72020-5}}
+** "[…] this set is the most unique and possibly the most useful to the [theoretical computer science] community, in support both of teaching and research […]. The books can be used by anyone wanting simply to gain an understanding of one of these areas, or by someone desiring to be in research in a topic, or by instructors wishing to find timely information on a subject they are teaching outside their major areas of expertise." (Rocky Ross, ''[[SIGACT News]]'')
+* {{cite book|title=Encyclopedia of Computer Science|edition=4th|first1=Anthony|last1=Ralston|author-link=Anthony Ralston|first2=Edwin D.|last2=Reilly|author-link2=Edwin D. Reilly|first3=David|last3=Hemmendinger|author-link3=David Hemmendinger|publisher=Grove's Dictionaries|year=2000|isbn=978-1-56159-248-7|url=http://portal.acm.org/ralston.cfm}}
+** "Since 1976, this has been the definitive reference work on computer, computing, and computer science. […] Alphabetically arranged and classified into broad subject areas, the entries cover hardware, computer systems, information and data, software, the mathematics of computing, theory of computation, methodologies, applications, and computing milieu. The editors have done a commendable job of blending historical perspective and practical reference information. The encyclopedia remains essential for most public and academic library reference collections." (Joe Accardin, Northeastern Illinois Univ., Chicago)
+* {{cite book|url=https://archive.org/details/milestonesincomp0000reil|url-access=registration|title=Milestones in Computer Science and Information Technology|author=Edwin D. Reilly|publisher=Greenwood Publishing Group|year=2003|isbn=978-1-57356-521-9}}
+
+===Selected literature===
+* {{cite book|first=Donald E.|last=Knuth|author-link=Donald Knuth|title=Selected Papers on Computer Science|publisher=CSLI Publications, [[Cambridge University Press]]|year=1996}}
+* {{cite book|ref=COLLIER|last=Collier|first=Bruce|title=The little engine that could've: The calculating machines of Charles Babbage|publisher=Garland Publishing Inc|isbn=978-0-8240-0043-1|url=http://robroy.dyndns.info/collier/index.html|year=1990}}
+* {{cite book|ref=HAIKEN|first=Bernard|last=Cohen|title=Howard Aiken, Portrait of a computer pioneer|publisher=The MIT press|year=2000|isbn=978-0-262-53179-5}}
+* {{cite book|first=Matti|last=Tedre|title=The Science of Computing: Shaping a Discipline|publisher=CRC Press, [[Taylor & Francis]]|year=2014}}
+* {{cite book|title=The origins of Digital computers, Selected Papers|last=Randell|first=Brian|author-link=Brian Randell |year=1973|publisher=Springer-Verlag|isbn=978-3-540-06169-4}}
+** "Covering a period from 1966 to 1993, its interest lies not only in the content of each of these papers – still timely today – but also in their being put together so that ideas expressed at different times complement each other nicely." (N. Bernard, ''Zentralblatt MATH'')
+
+===Articles===
+* Peter J. Denning. ''[http://portal.acm.org/citation.cfm?id=1053309&coll=&dl=ACM&CFID=15151515&CFTOKEN=6184618 Is computer science science?]'', Communications of the ACM, April 2005.
+* Peter J. Denning, ''[http://portal.acm.org/citation.cfm?id=971303&dl=ACM&coll=&CFID=15151515&CFTOKEN=6184618 Great principles in computing curricula]'', Technical Symposium on Computer Science Education, 2004.
+* Research evaluation for computer science, Informatics Europe [http://www.eqanie.eu/media/Como%20Conference/Tanca-Research_Assessment_A_new_Initiative_by_Informatics_Europe.pdf report] {{Webarchive|url=https://web.archive.org/web/20171018181136/http://www.eqanie.eu/media/Como%20Conference/Tanca-Research_Assessment_A_new_Initiative_by_Informatics_Europe.pdf |date=October 18, 2017 }}. Shorter journal version: Bertrand Meyer, Christine Choppy, Jan van Leeuwen and Jorgen Staunstrup, ''Research evaluation for computer science'', in [[Communications of the ACM]], vol. 52, no. 4, pp.&nbsp;31–34, April 2009.
+
+===Curriculum and classification===
+* [[Association for Computing Machinery]]. [https://web.archive.org/web/20080828002940/http://www.acm.org/class/1998/overview.html 1998 ACM Computing Classification System]. 1998.
+* Joint Task Force of Association for Computing Machinery (ACM), [[Association for Information Systems]] (AIS) and [[IEEE Computer Society]] (IEEE CS). [https://web.archive.org/web/20141021153204/http://www.acm.org/education/curric_vols/CC2005-March06Final.pdf Computing Curricula 2005: The Overview Report]. September 30, 2005.
+* [[Norman Gibbs]], Allen Tucker. "A model curriculum for a liberal arts degree in computer science". ''Communications of the ACM'', Volume 29 Issue 3, March 1986.
+{{refend}}
+
+==External links==
+{{Wikibooks|Informatics Practices for Class XI (CBSE)}}
+{{Sister project links| wikt=computer science|c=Category:Computer science | b=Computer science | q=Computer science|n=no|s=no| v=Computer science | voy=no | species=no | d=no}}
+
+{{Library resources box}}
+* {{curlie|Computers/Computer_Science/}}
+* [http://www.lib.uwaterloo.ca/society/compsci_soc.html Scholarly Societies in Computer Science]
+* [https://www.youtube.com/watch?v=fjMU-km-Cso What is Computer Science?]
+* [http://jeffhuang.com/best_paper_awards.html Best Papers Awards in Computer Science since 1996]
+* [http://se.ethz.ch/~meyer/gallery/ Photographs of computer scientists] by [[Bertrand Meyer]]
+* [http://www.eecs.berkeley.edu/department/history.shtml EECS.berkeley.edu]
+
+===Bibliography and academic search engines===
+* [http://citeseerx.ist.psu.edu/ CiteSeer<sup>''x''</sup>] ([[CiteSeerX|article]]): search engine, digital library and repository for scientific and academic papers with a focus on computer and information science.
+* [http://dblp.uni-trier.de/ DBLP Computer Science Bibliography] ([[Digital Bibliography & Library Project|article]]): computer science bibliography website hosted at Universität Trier, in Germany.
+* [http://liinwww.ira.uka.de/bibliography/ The Collection of Computer Science Bibliographies] ([[Collection of Computer Science Bibliographies]])
+
+===Professional organizations===
+* [http://www.acm.org/ Association for Computing Machinery]
+* [http://www.computer.org/ IEEE Computer Society]
+* [http://www.informatics-europe.org/ Informatics Europe]
+* [http://www.aaai.org/home.html AAAI]
+* [https://web.archive.org/web/20160205000119/http://membercentral.aaas.org/categories/computer-science AAAS Computer Science]
+
+===Misc===
+* [https://cs.stackexchange.com/ Computer Science—Stack Exchange]: a community-run question-and-answer site for computer science
+* [http://www.cs.bu.edu/AboutCS/WhatIsCS.pdf What is computer science]
+* [https://web.archive.org/web/20170810205524/https://www.cs.mtu.edu/~john/jenning.pdf Is computer science science?]
+* [https://www.researchgate.net/publication/306078165_Computer_Science_Software_Must_be_Considered_as_an_Independent_Discipline_Computer_Science_Software_must_not_be_Treated_as_a_Sub-Domain_or_Subset_of_Mathematics Computer Science (Software) Must be Considered as an Independent Discipline.]
+
+{{Computer science}}
+{{Glossaries of science and engineering}}
+{{Software engineering}}
+
+{{Authority control}}
+
+[[Category:Computer science| ]]
+[[Category:Formal sciences| ]]
+[[Category:Computer engineering]]{{pp-move-indef}}
+{{Redirect|Computer sciences|the American corporation|Computer Sciences Corporation}}
+{{short description|Study of the foundations and applications of computation}}
+{{Use mdy dates|date=October 2017}}
+<div class="thumb tright">
+<div class="thumbinner" style="width:300px;">
+{| style="border:1px solid #ccc;"
+|-
+| [[File:Lambda_calculus-Church_numerals.png|144px|alt=Expression for Church numerals in lambda calculus|Programming language theory|link=Programming language theory]]
+| [[File:Sorting quicksort anim.gif|144px|alt=Plot of a quicksort algorithm|Computational complexity theory|link=Computational complexity theory]]
+|-
+| [[File:Activemarker2.PNG|144px|alt=Example of Computer animation produced using Motion capture|Artificial intelligence|link=Artificial intelligence]]
+| [[File:Half Adder.svg|144px|alt=Half-adder circuit|Computer architecture|link=Computer architecture]]
+|}
+<div class="thumbcaption">Computer science deals with the theoretical foundations of information, algorithms and the architectures of its computation as well as practical techniques for their application.</div>
+</div>
+</div>
+{{TopicTOC-Computer science}}
+
+'''Computer science''' is the study of [[Algorithm|algorithmic processes]] and [[Automata theory|computational machines]].<ref>{{Cite web|title=What is Computer Science? - Computer Science, The University of York|url=https://www.cs.york.ac.uk/undergraduate/what-is-cs/|access-date=2020-06-11|website=www.cs.york.ac.uk}}</ref><ref>{{cite journal|last=Dijkstra|first=E.W.|title=On a cultural gap|journal=The Mathematical Intelligencer|year=1986|volume=8|issue=1|pages=48–52|url=http://www.cs.utexas.edu/users/EWD/transcriptions/EWD09xx/EWD924.html|doi=10.1007/bf03023921|s2cid=120847834}}</ref> As a discipline, computer science spans a range of topics from theoretical studies of [[algorithm]]s, [[Theory of computation|computation]] and [[Information theory|information]] to the practical issues of implementing computing systems in [[Computer architecture|hardware]] and [[Computer programming|software]].<ref>{{cite web |url=http://wordnetweb.princeton.edu/perl/webwn?s=computer%20scientist |title=WordNet Search—3.1 |publisher=Wordnetweb.princeton.edu |accessdate=14 May 2012}}</ref><ref>{{Cite web|title=Definition of computer science {{!}} Dictionary.com|url=https://www.dictionary.com/browse/computer-science|access-date=2020-06-11|website=www.dictionary.com|language=en}}</ref> Computer science addresses any [[Computational problem|computational problems]], especially [[Information processing|information processes]], such as [[control flow|control]], [[Inter-process communication|communication]], [[computer vision|perception]], [[Computational learning theory|learning]], and [[Artificial intelligence|intelligence]].<ref name="Denning_cs_discipline" /><ref>{{Cite journal|last=Denning|first=Peter J.|date=2005-04-01|title=Is computer science science?|url=http://portal.acm.org/citation.cfm?doid=1053291.1053309|journal=Communications of the ACM|language=en|volume=48|issue=4|pages=27–31|doi=10.1145/1053291.1053309|s2cid=827843}}</ref><ref>{{Cite book|last=Floridi|first=Luciano|url=https://books.google.com/books?id=H6viR4Fs7lYC&pg=PA39|title=Information: A Very Short Introduction|date=2010-02-25|publisher=OUP Oxford|isbn=978-0-19-160954-1|language=en}}</ref>
+
+Its fields can be divided into theoretical and [[practical disciplines]]. For example, the [[theory of computation]] concerns abstract [[models of computation]] and general classes of [[computational problem|problems]] that can be solved using them, while [[Computer graphics (computer science)|computer graphics]] and [[computational geometry]] emphasize more specific applications. [[Algorithmics]] have been called the heart of computer science.<ref>{{Cite book|last=Harel, David.|url=http://worldcat.org/oclc/876384882|title=Algorithmics The Spirit of Computing|date=2014|publisher=Springer Berlin|isbn=978-3-642-44135-6|oclc=876384882}}</ref> [[Programming language theory]] considers approaches to the description of computational processes, while [[computer programming]] involves the use of them to create [[complex system]]s. [[Computer architecture]] describes construction of computer components and computer-controlled equipment. [[Artificial intelligence]] aims to synthesize goal-orientated processes such as problem-solving, decision-making, environmental adaptation, [[Automated planning and scheduling|planning]] and [[Computational learning theory|learning]] found in humans and animals. The fundamental concern of computer science is determining what can and cannot be automated.<ref>{{Cite book|last=Arden, B. W.|url=http://worldcat.org/oclc/710775596|title=What can be automated? the computer science and engineering research study (COSERS).|date=1983|publisher=MIT Press|isbn=0-262-01060-7|oclc=710775596}}</ref><ref name="Denning_cs_discipline" /> Unlike other [[computing]] paradigms, computer scientists are focused on academic research.
+{{TOClimit|4}}
+
+==History==
+{{main|History of computer science}}
+{{History of computing}}
+[[File:Babbage40.png|upright|thumb|[[Charles Babbage]], sometimes referred to as the "father of computing".<ref>{{cite web|url=http://www.cbi.umn.edu/about/babbage.html|title=Charles Babbage Institute: Who Was Charles Babbage?|website=cbi.umn.edu|access-date=28 December 2016}}</ref> ]]
+[[File:Ada lovelace.jpg|upright|thumb|[[Ada Lovelace]] published the first [[algorithm]] intended for processing on a computer.<ref>{{cite web|url=http://www.computerhistory.org/babbage/adalovelace/|title=Ada Lovelace {{!}} Babbage Engine {{!}} Computer History Museum|website=www.computerhistory.org|access-date=28 December 2016}}</ref> ]]
+
+The earliest foundations of what would become computer science predate the invention of the modern [[digital computer]]. Machines for calculating fixed numerical tasks such as the [[abacus]] have existed since antiquity, aiding in computations such as multiplication and division. [[Algorithm]]s for performing computations have existed since antiquity, even before the development of sophisticated computing equipment. 
+
+[[Wilhelm Schickard]] designed and constructed the first working [[mechanical calculator]] in 1623.<ref>{{cite web|title=Wilhelm Schickard – Ein Computerpionier|url=http://www.fmi.uni-jena.de/fmimedia/Fakultaet/Institute+und+Abteilungen/Abteilung+f%C3%BCr+Didaktik/GDI/Wilhelm+Schickard.pdf|language = de}}</ref> In 1673, [[Gottfried Leibniz]] demonstrated a digital mechanical calculator, called the [[Stepped Reckoner]].<ref>{{cite web|title=A Brief History of Computing|url=http://blogs.royalsociety.org/history-of-science/2012/06/25/history-of-computing/|first = Fiona|last = Keates|work = The Repository|publisher = The Royal Society|date = 25 June 2012}}</ref> Leibniz may be considered the first computer scientist and information theorist, for, among other reasons, documenting the binary number system. In 1820, [[Charles Xavier Thomas|Thomas de Colmar]] launched the [[mechanical calculator]] industry<ref group=note>In 1851</ref> when he invented his simplified [[arithmometer]], the first calculating machine strong enough and reliable enough to be used daily in an office environment. [[Charles Babbage]] started the design of the first ''automatic mechanical calculator'', his [[Difference Engine]], in 1822, which eventually gave him the idea of the first ''programmable mechanical calculator'', his [[Analytical Engine]].<ref>{{cite web|title=Science Museum, Babbage's Analytical Engine, 1834-1871 (Trial model)|url=https://collection.sciencemuseumgroup.org.uk/objects/co62245/babbages-analytical-engine-1834-1871-trial-model-analytical-engines|accessdate=2020-05-11}}</ref> He started developing this machine in 1834, and "in less than two years, he had sketched out many of the [[wikt:Special:Search/salient|salient]] features of the modern computer".<ref name="Hyman1982">{{cite book |author=Anthony Hyman |title=Charles Babbage, pioneer of the computer |url=https://archive.org/details/charlesbabbagepi0000hyma |url-access=registration |year=1982}}</ref> "A crucial step was the adoption of a punched card system derived from the [[Jacquard loom]]"<ref name="Hyman1982" /> making it infinitely programmable.<ref group=note>"The introduction of punched cards into the new engine was important not only as a more convenient form of control than the drums, or because programs could now be of unlimited extent, and could be stored and repeated without the danger of introducing errors in setting the machine by hand; it was important also because it served to crystallize Babbage's feeling that he had invented something really new, something much more than a sophisticated calculating machine." [[#COLLIER|Bruce Collier]], 1970</ref> In 1843, during the translation of a French article on the Analytical Engine, [[Ada Lovelace]] wrote, in one of the many notes she included, an algorithm to compute the [[Bernoulli number]]s, which is considered to be the first published algorithm ever specifically tailored for implementation on a computer.<ref>{{cite web|url=http://www.scottlan.edu/Lriddle/women/ada-love.htm |title=A Selection and Adaptation From Ada's Notes found in Ada, The Enchantress of Numbers," by Betty Alexandra Toole Ed.D. Strawberry Press, Mill Valley, CA |accessdate=4 May 2006 |url-status=dead |archive-url=https://web.archive.org/web/20060210172109/http://www.scottlan.edu/lriddle/women/ada-love.htm |archive-date=February 10, 2006 }}</ref> Around 1885, [[Herman Hollerith]] invented the [[tabulating machine|tabulator]], which used [[punched card]]s to process statistical information; eventually his company became part of [[IBM]]. Following Babbage, although unaware of his earlier work, [[Percy Ludgate]] in 1909 published <ref>{{Cite web |url=https://scss.tcd.ie/SCSSTreasuresCatalog/miscellany/TCD-SCSS-X.20121208.002/TCD-SCSS-X.20121208.002.pdf/ |title=The John Gabriel Byrne Computer Science Collection |access-date=August 8, 2019 |archive-url=https://web.archive.org/web/20190416071721/https://www.scss.tcd.ie/SCSSTreasuresCatalog/miscellany/TCD-SCSS-X.20121208.002/TCD-SCSS-X.20121208.002.pdf |archive-date=April 16, 2019 |url-status=dead }}</ref> the 2nd of the only two designs for mechanical analytical engines in history. In 1937, one hundred years after Babbage's impossible dream, [[Howard H. Aiken|Howard Aiken]] convinced IBM, which was making all kinds of punched card equipment and was also in the calculator business<ref>"In this sense Aiken needed IBM, whose technology included the use of punched cards, the accumulation of numerical data, and the transfer of numerical data from one register to another", [[#AIKEN|Bernard Cohen]], p.44 (2000)</ref> to develop his giant programmable calculator, the [[Harvard Mark I|ASCC/Harvard Mark I]], based on Babbage's Analytical Engine, which itself used cards and a central computing unit. When the machine was finished, some hailed it as "Babbage's dream come true".<ref>[[#ORIGINS|Brian Randell]], p. 187, 1975</ref>
+
+During the 1940s, with the development of new and more powerful [[computing]] machines such as the [[Atanasoff–Berry computer]] and [[ENIAC]], the term ''computer'' came to refer to the machines rather than their human predecessors.<ref>The [[Association for Computing Machinery]] (ACM) was founded in 1947.</ref> As it became clear that computers could be used for more than just mathematical calculations, the field of computer science broadened to study [[computation]] in general. In 1945, [[IBM]] founded the Watson Scientific Computing Laboratory at [[Columbia University]] in [[New York City]]. The renovated fraternity house on Manhattan's West Side was IBM's first laboratory devoted to pure science. The lab is the forerunner of IBM's Research Division, which today operates research facilities around the world.<ref>{{cite web|url=https://www.ibm.com/ibm/history/history/year_1945.html |title=IBM Archives: 1945 |publisher=Ibm.com |accessdate=2019-03-19}}</ref> Ultimately, the close relationship between IBM and the university was instrumental in the emergence of a new scientific discipline, with Columbia offering one of the first academic-credit courses in computer science in 1946.<ref>{{cite web|url=https://www.ibm.com/ibm/history/ibm100/us/en/icons/compsci/ |title=IBM100 – The Origins of Computer Science |publisher=Ibm.com |date=1995-09-15 |accessdate=2019-03-19}}</ref> Computer science began to be established as a distinct academic discipline in the 1950s and early 1960s.<ref name="Denning_cs_discipline"/><ref>{{cite web |url=http://www.cl.cam.ac.uk/conference/EDSAC99/statistics.html |title=Some EDSAC statistics |publisher=University of Cambridge |accessdate=19 November 2011}}</ref> The world's first computer science degree program, the [[Cambridge Diploma in Computer Science]], began at the [[University of Cambridge]] [[Cambridge Computer Lab|Computer Laboratory]] in 1953. The first computer science department in the United States was formed at [[Purdue University]] in 1962.<ref>{{cite web |url=http://www.cs.purdue.edu/about/conte.html |title=Computer science pioneer Samuel D. Conte dies at 85 |date=July 1, 2002 |publisher=Purdue Computer Science |accessdate=December 12, 2014}}</ref> Since practical computers became available, many applications of computing have become distinct areas of study in their own rights.
+
+Although many initially believed it was impossible that computers themselves could actually be a scientific field of study, in the late fifties it gradually became accepted among the greater academic population.<ref name="Levy1984">{{cite book |author-link=Steven Levy |last=Levy |first=Steven |title=Hackers: Heroes of the Computer Revolution |year=1984 |isbn=978-0-385-19195-1 |publisher=Doubleday |title-link=Hackers: Heroes of the Computer Revolution }}</ref><ref name="Tedre2014">{{cite book |last=Tedre |first=Matti |title=The Science of Computing: Shaping a Discipline |year=2014 |publisher=Taylor and Francis / CRC Press }}</ref> It is the now well-known [[IBM]] brand that formed part of the computer science revolution during this time. IBM (short for International Business Machines) released the IBM 704<ref>{{cite web|url=http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/222/633 |title=IBM 704 Electronic Data Processing System—CHM Revolution |publisher=Computerhistory.org |accessdate=7 July 2013}}</ref> and later the IBM 709<ref>{{cite web |title=IBM 709: a powerful new data processing system |publisher=Computer History Museum |url=http://archive.computerhistory.org/resources/text/IBM/IBM.709.1957.102646304.pdf |accessdate=December 12, 2014 |archive-url=https://web.archive.org/web/20160304130040/http://archive.computerhistory.org/resources/text/IBM/IBM.709.1957.102646304.pdf |archive-date=March 4, 2016 |url-status=dead |df=mdy-all }}</ref> computers, which were widely used during the exploration period of such devices. "Still, working with the IBM [computer] was frustrating […] if you had misplaced as much as one letter in one instruction, the program would crash, and you would have to start the whole process over again".<ref name="Levy1984"/> During the late 1950s, the computer science discipline was very much in its developmental stages, and such issues were commonplace.<ref name="Tedre2014"/>
+
+The concept of a [[field-effect transistor]] was proposed by [[Julius Edgar Lilienfeld]] in 1925. [[John Bardeen]] and [[Walter Brattain]], while working under [[William Shockley]] at [[Bell Labs]], built the first working [[transistor]], the [[point-contact transistor]], in 1947.<ref name="Lee">{{cite book |last1=Lee |first1=Thomas H. |title=The Design of CMOS Radio-Frequency Integrated Circuits |date=2003 |publisher=[[Cambridge University Press]] |isbn=9781139643771 |url=https://web.stanford.edu/class/archive/ee/ee214/ee214.1032/Handouts/HO2.pdf}}</ref><ref name="Puers">{{cite book |last1=Puers |first1=Robert |last2=Baldi |first2=Livio |last3=Voorde |first3=Marcel Van de |last4=Nooten |first4=Sebastiaan E. van |title=Nanoelectronics: Materials, Devices, Applications, 2 Volumes |date=2017 |publisher=[[John Wiley & Sons]] |isbn=9783527340538 |page=14 |url=https://books.google.com/books?id=JOqVDgAAQBAJ&pg=PA14}}</ref> In 1953, the [[University of Manchester]] built the first [[transistorized computer]], called the [[Manchester computers|Transistor Computer]].<ref>{{Citation|last=Lavington|first=Simon|title=A History of Manchester Computers|year=1998|edition=2|publisher=The British Computer Society|location=Swindon|pages=34–35}}</ref> However, early [[junction transistor]]s were relatively bulky devices that were difficult to manufacture on a mass-production basis, which limited them to a number of specialised applications.<ref name="Moskowitz">{{cite book |last1=Moskowitz |first1=Sanford L. |title=Advanced Materials Innovation: Managing Global Technology in the 21st century |date=2016 |publisher=[[John Wiley & Sons]] |isbn=9780470508923 |pages=165–167 |url=https://books.google.com/books?id=2STRDAAAQBAJ&pg=PA165}}</ref> The [[MOSFET|metal–oxide–silicon field-effect transistor]] (MOSFET, or MOS transistor) was invented by [[Mohamed Atalla]] and [[Dawon Kahng]] at Bell Labs in 1959.<ref name="computerhistory">{{cite journal|url=https://www.computerhistory.org/siliconengine/metal-oxide-semiconductor-mos-transistor-demonstrated/|title=1960 - Metal Oxide Semiconductor (MOS) Transistor Demonstrated|journal=The Silicon Engine|publisher=[[Computer History Museum]]}}</ref><ref name="Lojek">{{cite book |last1=Lojek |first1=Bo |title=History of Semiconductor Engineering |url=https://archive.org/details/historysemicondu00loje_697 |url-access=limited |date=2007 |publisher=[[Springer Science & Business Media]] |isbn=9783540342588 |pages=[https://archive.org/details/historysemicondu00loje_697/page/n327 321]–3}}</ref> It was the first truly compact transistor that could be [[MOSFET scaling|miniaturised]] and [[Moore's law|mass-produced]] for a wide range of uses.<ref name="Moskowitz"/> The MOSFET made it possible to build [[very large-scale integration|high-density]] [[integrated circuit]] chips,<ref name="computerhistory-transistor">{{cite web |title=Who Invented the Transistor? |url=https://www.computerhistory.org/atchm/who-invented-the-transistor/ |website=[[Computer History Museum]] |date=4 December 2013 |accessdate=20 July 2019}}</ref><ref name="Hittinger">{{cite journal |last1=Hittinger |first1=William C. |title=Metal-Oxide-Semiconductor Technology |journal=Scientific American |date=1973 |volume=229 |issue=2 |pages=48–59 |issn=0036-8733|jstor=24923169 |doi=10.1038/scientificamerican0873-48 |bibcode=1973SciAm.229b..48H }}</ref> leading to what is known as the [[computer revolution]]<ref>{{cite book |last1=Fossum |first1=Jerry G. |last2=Trivedi |first2=Vishal P. |title=Fundamentals of Ultra-Thin-Body MOSFETs and FinFETs |date=2013 |publisher=[[Cambridge University Press]] |isbn=9781107434493 |page=vii |url=https://books.google.com/books?id=zZJfAAAAQBAJ&pg=PR7}}</ref> or [[microcomputer revolution]].<ref>{{cite book |last1=Malmstadt |first1=Howard V. |last2=Enke |first2=Christie G. |last3=Crouch |first3=Stanley R. |title=Making the Right Connections: Microcomputers and Electronic Instrumentation |date=1994 |publisher=[[American Chemical Society]] |isbn=9780841228610 |page=389 |url=https://books.google.com/books?id=lyJGAQAAIAAJ |quote=The relative simplicity and low power requirements of MOSFETs have fostered today's microcomputer revolution.}}</ref>
+
+Time has seen significant improvements in the usability and effectiveness of [[computing technology]].<ref>{{cite web|title = Timeline of Computer History|url = http://www.computerhistory.org/timeline/computers/|publisher = Computer History Museum|accessdate = November 24, 2015}}</ref> Modern society has seen a significant shift in the demographics which make use of computer technology; usage has shifted from being mostly exclusive to experts and professionals, to a near-[[ubiquitous]] user base. Initially, computers were quite costly, and some degree of humanitarian aid was needed for efficient use—in part from professional computer operators. As computer adoption became more widespread and affordable, less human assistance was needed for common usage.
+{{see also|History of computing|History of informatics}}
+
+==Etymology==
+{{see also|Informatics#Etymology}}
+
+Although first proposed in 1956,<ref name="Tedre2014"/> the term "computer science" appears in a 1959 article in ''[[Communications of the ACM]]'',<ref name="Fine_1959">
+{{cite journal
+ |author=Louis Fine
+ |year=1959
+ |title=The Role of the University in Computers, Data Processing, and Related Fields
+ |journal=Communications of the ACM
+ |volume=2 |issue=9 |pages=7–14
+ |doi=10.1145/368424.368427
+|s2cid=6740821
+ }}</ref>
+in which Louis Fein argues for the creation of a ''Graduate School in Computer Sciences'' analogous to the creation of [[Harvard Business School]] in 1921,<ref>{{cite web|title=Stanford University Oral History|url=http://library.stanford.edu/guides/stanford-university-oral-history|publisher=Stanford University|accessdate=May 30, 2013}}</ref> justifying the name by arguing that, like [[management science]], the subject is applied and interdisciplinary in nature, while having the characteristics typical of an academic discipline.<ref name="Fine_1959"/>
+His efforts, and those of others such as [[numerical analysis|numerical analyst]] [[George Forsythe]], were rewarded: universities went on to create such departments, starting with Purdue in 1962.<ref>[[Donald Knuth]] (1972). ''[http://www.stanford.edu/dept/ICME/docs/history/forsythe_knuth.pdf "George Forsythe and the Development of Computer Science"]''. ''Comms. ACM''. {{webarchive |url=https://web.archive.org/web/20131020200802/http://www.stanford.edu/dept/ICME/docs/history/forsythe_knuth.pdf |date=October 20, 2013 }}</ref> Despite its name, a significant amount of computer science does not involve the study of computers themselves. Because of this, several alternative names have been proposed.<ref>{{cite web |author=Matti Tedre |year=2006 |url=http://epublications.uef.fi/pub/urn_isbn_952-458-867-6/urn_isbn_952-458-867-6.pdf |title=The Development of Computer Science: A Sociocultural Perspective |page=260 |accessdate=December 12, 2014}}</ref> Certain departments of major universities prefer the term ''computing science'', to emphasize precisely that difference. Danish scientist [[Peter Naur]] suggested the term ''datalogy'',<ref>
+{{cite journal
+ |author=Peter Naur
+ |year=1966
+ |title=The science of datalogy
+ |journal=Communications of the ACM
+ |volume=9 |issue=7 |page=485
+ |doi=10.1145/365719.366510
+|s2cid=47558402
+ }}</ref> to reflect the fact that the scientific discipline revolves around data and data treatment, while not necessarily involving computers. The first scientific institution to use the term was the Department of Datalogy at the University of Copenhagen, founded in 1969, with Peter Naur being the first professor in datalogy. The term is used mainly in the Scandinavian countries. An alternative term, also proposed by Naur, is [[data science]]; this is now used for a [[multi-disciplinary]] field of data analysis, including statistics and databases.
+
+In the early days of computing, a number of terms for the practitioners of the field of computing were suggested in the ''Communications of the ACM''—''turingineer'', ''turologist'', ''flow-charts-man'', ''applied meta-mathematician'', and ''applied [[epistemology|epistemologist]]''.<ref>{{cite journal |date=<!-- missing! --> |volume=1 |issue=4 |page=6| doi = 10.1145/368796.368802|last1=Weiss |first1=E.A. |title=Letters to the editor |journal= Communications of the ACM |last2=Corley |first2=Henry P.T. |s2cid=5379449 }}</ref> Three months later in the same journal, ''comptologist'' was suggested, followed next year by ''hypologist''.<ref>Communications of the ACM 2(1):p.4</ref> The term ''computics'' has also been suggested.<ref>IEEE Computer 28(12): p.136</ref> {{anchor|Name of the field in Europe}}In Europe, terms derived from contracted translations of the expression "automatic information" (e.g. "informazione automatica" in Italian) or "information and mathematics" are often used, e.g. ''informatique'' (French), ''Informatik'' (German), ''informatica'' (Italian, Dutch), ''informática'' (Spanish, Portuguese), ''informatika'' ([[Slavic languages]] and [[Hungarian language|Hungarian]]) or ''pliroforiki'' (''πληροφορική'', which means informatics) in [[Greek language|Greek]]. Similar words have also been adopted in the UK (as in ''the School of Informatics of the University of Edinburgh'').<ref>P. Mounier-Kuhn, ''L'Informatique en France, de la seconde guerre mondiale au Plan Calcul. L'émergence d'une science'', Paris, PUPS, 2010, ch. 3 & 4.</ref>  "In the U.S., however, [[informatics]] is linked with applied computing, or computing in the context of another domain."<ref>{{cite web|last=Groth |first=Dennis P. |url=http://cacm.acm.org/magazines/2010/2/69363-why-an-informatics-degree |title=Why an Informatics Degree? |date = February 2010|work= Communications of the ACM |publisher=Cacm.acm.org}}</ref>
+
+A folkloric quotation, often attributed to—but almost certainly not first formulated by—[[Edsger W. Dijkstra|Edsger Dijkstra]], states that "computer science is no more about computers than astronomy is about telescopes."<ref group=note>See the entry
+"[[q:Computer science|Computer science]]" on Wikiquote for the history of this quotation.</ref> The design and deployment of computers and computer systems is generally considered the province of disciplines other than computer science. For example, the study of computer hardware is usually considered part of [[computer engineering]], while the study of commercial [[computer system]]s and their deployment is often called information technology or [[information system]]s. However, there has been much cross-fertilization of ideas between the various computer-related disciplines. Computer science research also often intersects other disciplines, such as philosophy, [[cognitive science]], [[computational linguistics|linguistics]], [[mathematics]], [[physics]], [[biology]], [[Earth science]], [[computational statistics|statistics]], and [[logic]].
+
+Computer science is considered by some to have a much closer relationship with mathematics than many scientific disciplines, with some observers saying that computing is a mathematical science.<ref name="Denning_cs_discipline" /> Early computer science was strongly influenced by the work of mathematicians such as [[Kurt Gödel]], [[Alan Turing]], [[John von Neumann]], [[Rózsa Péter]] and [[Alonzo Church]] and there continues to be a useful interchange of ideas between the two fields in areas such as [[mathematical logic]], [[category theory]], [[domain theory]], and [[algebra]].<ref name="Tedre2014"/>
+
+The relationship between Computer Science and Software Engineering is a contentious issue, which is further muddied by [[Software engineer#Use of the title "Engineer"|disputes]] over what the term "Software Engineering" means, and how computer science is defined.<ref>{{Cite journal | last1 = Tedre | first1 = M. | title = Computing as a Science: A Survey of Competing Viewpoints | doi = 10.1007/s11023-011-9240-4 | journal = Minds and Machines | volume = 21 | issue = 3 | pages = 361–387 | year = 2011 | s2cid = 14263916 }}</ref> [[David Parnas]], taking a cue from the relationship between other engineering and science disciplines, has claimed that the principal focus of computer science is studying the properties of computation in general, while the principal focus of software engineering is the design of specific computations to achieve practical goals, making the two separate but complementary disciplines.<ref>{{Cite journal | last1 = Parnas | first1 = D.L. | journal = Annals of Software Engineering | volume = 6 | pages = 19–37 | year = 1998 | doi = 10.1023/A:1018949113292|title=Software engineering programmes are not computer science programmes| s2cid = 35786237 }}, p. 19: "Rather than treat software engineering as a subfield of computer science, I treat it as an element of the set, Civil Engineering, Mechanical Engineering, Chemical Engineering, Electrical Engineering, […]"</ref>
+
+The academic, political, and funding aspects of computer science tend to depend on whether a department is formed with a mathematical emphasis or with an engineering emphasis. Computer science departments with a mathematics emphasis and with a numerical orientation consider alignment with [[computational science]]. Both types of departments tend to make efforts to bridge the field educationally if not across all research.
+
+==Philosophy==
+{{main|Philosophy of computer science}}
+A number of computer scientists have argued for the distinction of three separate paradigms in computer science. [[Peter Wegner]] argued that those paradigms are science, technology, and mathematics.<ref>{{cite conference |author=Wegner, P. |title=Research paradigms in computer science—Proceedings of the 2nd international Conference on Software Engineering |location=San Francisco, California, United States |date=October 13–15, 1976 |publisher=IEEE Computer Society Press, Los Alamitos, CA}}</ref> [[Peter J. Denning|Peter Denning]]'s working group argued that they are theory, abstraction (modeling), and design.<ref>{{Cite journal | last1 = Denning | first1 = P.J. | last2 = Comer | first2 = D.E. | last3 = Gries | first3 = D. | last4 = Mulder | first4 = M.C. | last5 = Tucker | first5 = A. | last6 = Turner | first6 = A.J. | last7 = Young | first7 = P.R. | title = Computing as a discipline | journal = Communications of the ACM | volume = 32 | pages = 9–23 | date = January 1989 | doi = 10.1145/63238.63239| s2cid = 723103 }}</ref> Amnon H. Eden described them as the "rationalist paradigm" (which treats computer science as a branch of mathematics, which is prevalent in theoretical computer science, and mainly employs [[deductive reasoning]]), the "technocratic paradigm" (which might be found in engineering approaches, most prominently in software engineering), and the "scientific paradigm" (which approaches computer-related artifacts from the empirical perspective of [[natural science]]s, identifiable in some branches of [[artificial intelligence]]).<ref>{{Cite journal | first1 = A.H. | title = Three Paradigms of Computer Science | journal = [[Minds and Machines]] | last1 = Eden | volume = 17 | issue = 2 | year = 2007 | url = http://www.eden-study.org/articles/2007/three_paradigms_of_computer_science.pdf | doi = 10.1007/s11023-007-9060-8 | pages = 135–167 | url-status=dead | archive-url = https://web.archive.org/web/20160215100211/http://www.eden-study.org/articles/2007/three_paradigms_of_computer_science.pdf | archive-date = February 15, 2016 | df = mdy-all | citeseerx = 10.1.1.304.7763 | s2cid = 3023076 }}</ref>
+Computer science focuses on methods involved in design, specification, programming, verification, implementation and testing of human-made computing systems.<ref>{{cite encyclopedia |last1=Turner |first1=Raymond |last2=Angius |first2=Nicola |editor1-last=Zalta |editor1-first=Edward N. |title=The Philosophy of Computer Science |encyclopedia=The Stanford Encyclopedia of Philosophy |date=2019 |url=https://plato.stanford.edu/archives/spr2019/entries/computer-science/}}</ref>
+
+==Fields==
+{{Quote
+|text=Computer science is no more about computers than astronomy is about telescopes.
+|author=[[Edsger Dijkstra]]
+}}
+{{further|Outline of computer science}}
+As a discipline, computer science spans a range of topics from theoretical studies of algorithms and the limits of computation to the practical issues of implementing computing systems in hardware and software.<ref name="CSAB1997">{{cite web|publisher=Computing Sciences Accreditation Board|title=Computer Science as a Profession|url=http://www.csab.org/comp_sci_profession.html |date=May 28, 1997| accessdate=23 May 2010 |archive-url = https://web.archive.org/web/20080617030847/http://www.csab.org/comp_sci_profession.html |archive-date = June 17, 2008}}</ref><ref>{{cite book |author=Committee on the Fundamentals of Computer Science: Challenges and Opportunities, National Research Council |title=Computer Science: Reflections on the Field, Reflections from the Field|url=http://www.nap.edu/catalog.php?record_id=11106#toc|publisher=National Academies Press|isbn=978-0-309-09301-9|year=2004}}</ref>
+[[CSAB (professional organization)|CSAB]], formerly called Computing Sciences Accreditation Board—which is made up of representatives of the [[Association for Computing Machinery]] (ACM), and the [[IEEE Computer Society]] (IEEE CS)<ref>{{cite web |url=http://www.csab.org/ |title=CSAB Leading Computer Education |publisher=CSAB |date=August 3, 2011 |accessdate=19 November 2011}}</ref>—identifies four areas that it considers crucial to the discipline of computer science: ''theory of computation'', ''algorithms and data structures'', ''programming methodology and languages'', and ''computer elements and architecture''. In addition to these four areas, CSAB also identifies fields such as software engineering, artificial intelligence, computer networking and communication, database systems, parallel computation, distributed computation, human–computer interaction, computer graphics, operating systems, and numerical and [[symbolic computation]] as being important areas of computer science.<ref name="CSAB1997"/>
+
+===Theoretical computer science===
+{{main|Theoretical computer science}}
+''Theoretical Computer Science'' is mathematical and abstract in spirit, but it derives its motivation from the practical and everyday computation. Its aim is to understand the nature of computation and, as a consequence of this understanding, provide more efficient methodologies.
+
+====Theory of computation====
+
+{{main|Theory of computation}}
+
+According to [[Peter J. Denning|Peter Denning]], the fundamental question underlying computer science is, "What can be automated?"<ref name="Denning_cs_discipline">{{cite journal | last=Denning | first=Peter J. | author-link=Peter J. Denning | year=2000 | title=Computer Science: The Discipline | url=http://www.idi.ntnu.no/emner/dif8916/denning.pdf | journal=Encyclopedia of Computer Science |archive-url = https://web.archive.org/web/20060525195404/http://www.idi.ntnu.no/emner/dif8916/denning.pdf |archive-date = May 25, 2006}}</ref> Theory of computation is focused on answering fundamental questions about what can be computed and what amount of resources are required to perform those computations. In an effort to answer the first question, [[computability theory]] examines which computational problems are solvable on various theoretical [[models of computation]]. The second question is addressed by [[computational complexity theory]], which studies the time and space costs associated with different approaches to solving a multitude of computational problems.
+
+The famous [[P versus NP problem|P = NP?]] problem, one of the [[Millennium Prize Problems]],<ref>[http://www.claymath.org/millennium/P_vs_NP/ Clay Mathematics Institute] P = NP {{webarchive |url=https://web.archive.org/web/20131014194456/http://www.claymath.org/millennium/P_vs_NP/ |date=October 14, 2013 }}</ref> is an open problem in the theory of computation.
+
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:DFAexample.svg|130px]]
+| [[File:Syntax_tree.svg|96px]]
+| <math>M= \{ X : X \not\in X \}</math>
+| [[File:Complexity classes.svg|120px]]
+|-
+| [[Automata theory]]
+| [[Formal language]]s
+| [[Computability theory]]
+| [[Computational complexity theory]]
+|-
+| '''GNITIRW-TERCES'''
+| [[File:Blochsphere.svg|96px]]
+| [[File:XNOR ANSI Labelled.svg]]
+| [[File:Kellerautomat.svg|96px]]
+|-
+| [[Cryptography]]
+| [[Quantum computer|Quantum computing theory]]
+| [[Circuit_(computer_science)|Logic circuit theory]]
+| [[Cellular automata]]
+|}
+
+====Information and coding theory====
+
+{{main|Information theory|Coding theory}}
+
+Information theory, closely related to [[probability]] and [[statistics]], is related to the quantification of information. This was developed by [[Claude Shannon]] to find fundamental limits on [[signal processing]] operations such as compressing data and on reliably storing and communicating data.<ref>{{cite web |date=October 14, 2002 |last=P. Collins |first=Graham |title=Claude E. Shannon: Founder of Information Theory |url=http://www.scientificamerican.com/article.cfm?id=claude-e-shannon-founder |work=Scientific American |accessdate=December 12, 2014}}</ref>
+Coding theory is the study of the properties of [[code]]s (systems for converting information from one form to another) and their fitness for a specific application. Codes are used for [[data compression]], [[cryptography]], [[error detection and correction]], and more recently also for [[Linear network coding|network coding]]. Codes are studied for the purpose of designing efficient and reliable [[data transmission]] methods.
+<ref>Van-Nam Huynh; Vladik Kreinovich; Songsak Sriboonchitta; 2012. Uncertainty Analysis in Econometrics with Applications. Springer Science & Business Media. p. 63. {{ISBN|978-3-642-35443-4}}.</ref>
+
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:Hamming.jpg|96px]]
+| [[File:Binary symmetric channel.svg|96px]]
+| [[File:Digitalteilchen.svg|96px]]
+| [[File:H0 h1 fehler.jpg|96px]]
+| [[File:Mandelpart2_red.png|96px]]
+|-
+| [[Coding theory]]
+| [[Channel capacity]]
+| [[Algorithmic information theory]]
+| [[Signal detection theory]]
+| [[Kolmogorov complexity]]
+|}
+
+====Data structures and algorithms====
+
+{{main|Data structure|Algorithm}}Data structures and algorithms are the studies of commonly used computational methods and their computational efficiency.
+
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| {{math|''O''(''n''<sup>2</sup>)}}
+| [[File:Sorting quicksort anim.gif|96px]]
+| [[File:Tree_(computer_science).svg|96px]]
+| [[File:TSP Deutschland 3.png|96px]]
+| [[File:SimplexRangeSearching.svg|96px]]
+| [[File:Contraction_vertices.jpg|96px]]
+|-
+| [[Analysis of algorithms]]
+| [[Algorithmics|Algorithm design]]
+| [[Data structures]]
+| [[Combinatorial optimization]]
+| [[Computational geometry]]
+| [[Randomized algorithms]]
+|}
+
+====Programming language theory and formal methods====
+{{main|Programming language theory|Formal methods}}
+Programming language theory is a branch of computer science that deals with the design, implementation, analysis, characterization, and classification of [[programming language]]s and their individual [[Programming language#Elements|features]]. It falls within the discipline of computer science, both depending on and affecting [[mathematics]], software engineering, and [[linguistics]]. It is an active research area, with numerous dedicated academic journals.
+
+Formal methods are a particular kind of [[Mathematics|mathematically]] based technique for the [[formal specification|specification]], development and [[formal verification|verification]] of software and [[computer hardware|hardware]] systems.<ref>Phillip A. Laplante, 2010. Encyclopedia of Software Engineering Three-Volume Set (Print). CRC Press. p. 309. {{ISBN|978-1-351-24926-3}}.</ref> The use of formal methods for software and hardware design is motivated by the expectation that, as in other engineering disciplines, performing appropriate mathematical analysis can contribute to the reliability and robustness of a design. They form an important theoretical underpinning for software engineering, especially where safety or security is involved. Formal methods are a useful adjunct to software testing since they help avoid errors and can also give a framework for testing. For industrial use, tool support is required. However, the high cost of using formal methods means that they are usually only used in the development of high-integrity and [[life-critical system]]s, where safety or [[computer security|security]] is of utmost importance. Formal methods are best described as the application of a fairly broad variety of [[theoretical computer science]] fundamentals, in particular [[logic in computer science|logic]] calculi, [[formal language]]s, [[automata theory]], and [[program semantics]], but also [[type systems]] and [[algebraic data types]] to problems in software and hardware specification and verification.
+
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:IF-THEN-ELSE-END_flowchart.svg|96px]]
+| <math>\Gamma\vdash x: \text{Int}</math>
+| [[File:Compiler.svg|96px]]
+| [[File:Python add5 syntax.svg|96px]]
+| [[File:Prop-tableau-1.svg|96px]]
+| [[File:Coq plus comm screenshot.jpg|96px]]
+|-
+| [[Semantics (computer science)|Formal semantics]]
+| [[Type theory]]
+| [[Compiler construction|Compiler design]]
+| [[Programming language]]s
+| [[Formal verification]]
+| [[Automated theorem proving]]
+|}
+
+===Computer systems and computational processes===
+
+====Artificial intelligence====
+{{main|Artificial intelligence|Bio-inspired computing}}
+Artificial intelligence (AI) aims to or is required to synthesize goal-orientated processes such as problem-solving, decision-making, environmental adaptation, learning, and communication found in humans and animals. From its origins in [[cybernetics]] and in the [[History of artificial intelligence|Dartmouth Conference]] (1956), artificial intelligence research has been necessarily cross-disciplinary, drawing on areas of expertise such as [[applied mathematics]], [[Mathematical logic|symbolic logic]], [[semiotics]], [[electrical engineering]], [[philosophy of mind]], [[neurophysiology]], and [[social intelligence]]. AI is associated in the popular mind with [[Robotics|robotic development]], but the main field of practical application has been as an embedded component in areas of [[software development]], which require computational understanding. The starting point in the late 1940s was [[Alan Turing]]'s question "Can computers think?", and the question remains effectively unanswered, although the [[Turing test]] is still used to assess computer output on the scale of human intelligence. But the automation of evaluative and predictive tasks has been increasingly successful as a substitute for human monitoring and intervention in domains of computer application involving complex real-world data.
+
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:Nicolas P. Rougier's rendering of the human brain.png|96px]]
+| [[File:Human eye, rendered from Eye.png|96px]]
+| [[File:Colored_neural_network.svg|96px]]
+| [[File:Markov_Decision_Process.svg|96px]]
+|-
+| [[Computational learning theory]]
+| [[Computer vision]]
+| [[Artificial neural network|Neural networks]]
+| [[Automated planning and scheduling|Planning and scheduling]]
+|-
+| [[File:english.png|96px]]
+| [[File:Knight's_tour.svg|96px]]
+| [[File:Ackley.gif|96px]]
+| [[File:Ideal_feedback_model.svg|96px]]
+|-
+| [[Natural language processing]]
+| [[Algorithmic game theory|Computational game theory]]
+| [[Evolutionary computation]]
+| [[Autonomic computing|Computational regulation]]
+|-
+| [[File:neuron.svg|96px]]
+| [[File:KnnClassification.svg|96px]]
+| [[File:HONDA ASIMO.jpg|64px]]
+| [[File:Rule_alignment.gif|96px]]
+|-
+| [[Knowledge representation and reasoning|Representation and reasoning]]
+| [[Pattern recognition]]
+| [[Robotics]]
+| [[Swarm intelligence]]
+|}
+
+====Computer architecture and organisation====
+{{main|Computer architecture|Computer organisation|Computer engineering}}
+Computer architecture, or digital computer organization, is the conceptual design and fundamental operational structure of a computer system. It focuses largely on the way by which the central processing unit performs internally and accesses addresses in memory.<ref>{{cite web|last=A. Thisted|first=Ronald|title=Computer Architecture |url=http://galton.uchicago.edu/~thisted/Distribute/comparch.pdf|publisher=The University of Chicago|date=April 7, 1997}}</ref> Computer engineers study [[computational logic]] and design of [[computer hardware]], from individual [[Processor (computing)|processor]] components, [[microcontroller]]s, [[personal computer]]s to [[supercomputer]]s and [[embedded system]]s.
+
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:ABasicComputer.gif|96px]]
+| [[File:Intel_Core2_arch.svg|96px]]
+| [[File:SIMD.svg|96px]]
+| [[File:Z80_arch.svg|96px]]
+|-
+| [[Processor (computing)|Processing unit]]
+| [[Microarchitecture]]
+| [[Multiprocessing]]
+| [[Processor design]]
+|-
+| [[File:Roomba original.jpg|96px]]
+| [[File:flowchart.png|96px]]
+| [[File:Kernel_Layout.svg|96px]]
+| [[File:Uarm_metal_wiki2.jpg|96px]]
+|-
+| [[Ubiquitous computing]]
+| [[Systems architecture]]
+| [[Operating system]]s
+| [[Input/output]]
+|-
+| [[File:Physical_computing.svg|96px]]
+| [[File:FIR_Filter_General.svg|96px]]
+| [[File:Dep-1.svg|96px]]
+| [[File:Linker.svg|96px]]
+|-
+| [[Embedded system]]
+| [[Real-time computing]]
+| [[Dependability]]
+| [[Interpreter (computing)|Interpreter]]
+|}
+
+====Concurrent, parallel and distributed computing====
+{{main|Concurrency (computer science)|Distributed computing}}
+Concurrency is a property of systems in which several computations are executing simultaneously, and potentially interacting with each other.<ref>Jiacun Wang, 2017. Real-Time Embedded Systems. Wiley. p. 12. {{ISBN|978-1-119-42070-5}}.</ref> A number of mathematical models have been developed for general concurrent computation including [[Petri net]]s, [[Process calculus|process calculi]] and the [[Parallel random-access machine|Parallel Random Access Machine]] model.<ref>Gordana Dodig-Crnkovic; Raffaela Giovagnoli; 2013. Computing Nature: Turing Centenary Perspective. Springer Science & Business Media. p. 247. {{ISBN|978-3-642-37225-4}}.</ref> When multiple computers are connected in a network while using concurrency, this is known as a distributed system. Computers within that distributed system have their own private memory, and information can be exchanged to achieve common goals.<ref>Simon Elias Bibri; 2018. Smart Sustainable Cities of the Future: The Untapped Potential of Big Data Analytics and Context-Aware Computing for Advancing Sustainability. Springer. p. 74. {{ISBN|978-3-319-73981-6}}.</ref>
+
+====Computer networks====
+{{main|Computer network}}
+This branch of computer science aims to manage networks between computers worldwide
+
+====Computer security and cryptography====
+{{main|Computer security|Cryptography}}
+Computer security is a branch of computer technology with the objective of protecting information from unauthorized access, disruption, or modification while maintaining the accessibility and usability of the system for its intended users. [[Cryptography]] is the practice and study of hiding (encryption) and therefore deciphering (decryption) information. Modern cryptography is largely related to computer science, for many encryption and decryption algorithms are based on their computational complexity.
+
+====Databases and data mining====
+{{main|Database|Data mining}}
+A database is intended to organize, store, and retrieve large amounts of data easily. Digital databases are managed using database management systems to store, create, maintain, and search data, through [[database model]]s and [[query language]]s. Data mining is a process of discovering patterns in large data sets.
+
+====Computer graphics and visualization====
+{{main|Computer graphics (computer science)}}
+Computer graphics is the study of digital visual contents and involves the synthesis and manipulation of image data. The study is connected to many other fields in computer science, including [[computer vision]], [[image processing]], and [[computational geometry]], and is heavily applied in the fields of special effects and [[video game]]s.
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:Simx2=transl_OK.svg|96px]]
+| [[File:FWDvsINV_Kinematics_HighResTransp.png|96px]]
+| [[File:5-cell.gif|96px]]
+| [[File:Hud_on_the_cat.jpg|96px]]
+| [[File:Visible_light_eye-tracking_algorithm.jpg|96px]]
+| [[File:Csg_tree.png|96px]]
+|-
+| [[2D computer graphics]]
+| [[Computer animation]]
+| [[Rendering (computer graphics)|Rendering]]
+| [[Mixed reality]]
+| [[Virtual reality]]
+| [[Solid modeling]]
+|}
+
+====Image and sound processing====
+{{main|Information processing}}
+[[Information]] can take the form of images, sound, video or other multimedia. [[Bit]]s of information can be streamed via [[signal]]s. Its [[information processing|processing]] is the central notion of [[informatics]], the European view on [[computing]], which studies information processing algorithms independently of the type of information carrier - whether it is electrical, mechanical or biological. This field plays important role in [[information theory]], [[telecommunications]], [[information engineering (field)|information engineering]] and has applications in [[medical image computing]] and [[speech synthesis]], among others. ''What is the lower bound on the complexity of [[fast Fourier transform]] algorithms?'' is one of [[List of unsolved problems in computer science|unsolved problems in theoretical computer science]].
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:DIT-FFT-butterfly.png|96px]]
+| [[File:Bayer_pattern_on_sensor.svg|96px]]
+| [[File:Opus_quality_comparison_colorblind_compatible.svg|96px]]
+| [[File:Quality_comparison_jpg_vs_saveforweb.jpg|96px]]
+| [[File:MeningiomaMRISegmentation.png|96px]]
+| [[File:Ætoms_-_Translation.svg|96px]]
+|-
+| [[Fast Fourier transform|FFT algorithms]]
+| [[Image processing]]
+| [[Speech recognition]]
+| [[Data compression]]
+| [[Medical image computing]]
+| [[Speech synthesis]]
+|}
+
+===Applied computer science===
+====Computational science, finance and engineering====
+{{main|Computational science|Computational finance|Computational engineering}}
+
+[[Scientific computing]] (or [[computational science]]) is the field of study concerned with constructing [[scientific modelling|mathematical models]] and [[numerical analysis|quantitative analysis]] techniques and using computers to analyze and solve [[Science|scientific]] problems. A major usage of scientific computing is [[simulation]] of various processes, including computational [[fluid dynamics]], physical, electrical, and electronic systems and circuits, as well as societies and social situations (notably war games) along with their habitats, among many others. Modern computers enable optimization of such designs as complete aircraft. Notable in electrical and electronic circuit design are SPICE,<ref>Muhammad H. Rashid, 2016. SPICE for Power Electronics and Electric Power. CRC Press. p. 6. {{ISBN|978-1-4398-6047-2}}.</ref> as well as software for physical realization of new (or modified) designs. The latter includes essential design software for [[integrated circuit]]s.{{Citation needed|date=October 2010}}
+
+{| style="border:1px solid #ccc; text-align:center; margin:auto;" cellspacing="15"
+|-
+| [[File:Lorenz attractor yb.svg|96px]]
+| [[File:Quark wiki.jpg|96px]]
+| [[File:Naphthalene-3D-balls.png|96px]]
+| [[File:1u04-argonaute.png|96px]]
+| [[File:GalvesLocherbach_-_Low_resolution.gif|96px]]
+| [[File:X-ray_of_hand,_where_bone_age_is_automatically_found_by_BoneXpert_software.jpg|75px]]
+|-
+| [[Numerical analysis]]
+| [[Computational physics]]
+| [[Computational chemistry]]
+| [[Bioinformatics]]
+| [[Neuroinformatics]]
+| [[Medical informatics]]
+|}
+
+====Social computing and human-computer interaction====
+{{main|Social computing|Human-computer interaction}}
+Social computing is an area that is concerned with the intersection of social behavior and computational systems. Human-computer interaction research develops theories, principles, and guidelines for user interface designers.
+
+====Software engineering====
+{{main|Software engineering}}
+{{see also|Computer programming}}
+Software engineering is the study of designing, implementing, and modifying the software in order to ensure it is of high quality, affordable, maintainable, and fast to build. It is a systematic approach to software design, involving the application of engineering practices to software. Software engineering deals with the organizing and analyzing of software—it doesn't just deal with the creation or manufacture of new software, but its internal arrangement and maintenance.
+
+==Discoveries==
+The philosopher of computing [[William J. Rapaport|Bill Rapaport]] noted three ''Great Insights of Computer Science'':<ref>{{cite web|url=http://www.cse.buffalo.edu/~rapaport/computation.html|title=What Is Computation?|publisher=State University of New York at Buffalo|last = Rapaport|first = William J.|date = 20 September 2013}}</ref>
+* [[Gottfried Wilhelm Leibniz]]'s, [[George Boole]]'s, [[Alan Turing]]'s, [[Claude Shannon]]'s, and [[Samuel Morse]]'s insight: there are only ''two objects'' that a computer has to deal with in order to represent "anything".{{refn |group="note"|The word "anything" is written in quotation marks because there are things that computers cannot do. One example is: to answer the question if an arbitrary given computer program will eventually finish or run forever (the [[Halting problem]]).}}
+:: All the information about any computable problem can be represented using only 0 and 1 (or any other bistable pair that can flip-flop between two easily distinguishable states, such as "on/off", "magnetized/de-magnetized", "high-voltage/low-voltage", etc.).
+{{see also|Digital physics}}
+* [[Alan Turing]]'s insight: there are only ''five actions'' that a computer has to perform in order to do "anything".
+:: Every algorithm can be expressed in a language for a computer consisting of only five basic instructions:<ref>B. Jack Copeland, 2012. Alan Turing's Electronic Brain: The Struggle to Build the ACE, the World's Fastest Computer. OUP Oxford. p. 107. {{ISBN|978-0-19-960915-4}}.</ref>
+::* move left one location;
+::* move right one location;
+::* read symbol at current location;
+::* print 0 at current location;
+::* print 1 at current location.
+{{see also|Turing machine}}
+* [[Corrado Böhm]] and [[Giuseppe Jacopini]]'s insight: there are only ''three ways of combining'' these actions (into more complex ones) that are needed in order for a computer to do "anything".<ref>Charles W. Herbert, 2010. An Introduction to Programming Using Alice 2.2. Cengage Learning. p. 122. {{ISBN|0-538-47866-7}}.</ref>
+
+:: Only three rules are needed to combine any set of basic instructions into more complex ones:
+::*''sequence'': first do this, then do that;
+::* '' selection'': IF such-and-such is the case, THEN do this, ELSE do that;
+::* ''repetition'': WHILE such-and-such is the case, DO this.
+:: Note that the three rules of Boehm's and Jacopini's insight can be further simplified with the use of [[goto]] (which means it is more elementary than [[structured programming]]).
+{{see also|Structured program theorem}}
+
+==Programming paradigms==
+{{main|Programming paradigm}}
+
+Programming languages can be used to accomplish different tasks in different ways. Common programming paradigms include:
+
+* [[Functional programming]], a style of building the structure and elements of computer programs that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It is a declarative programming paradigm, which means programming is done with expressions or declarations instead of statements.<ref>Md. Rezaul Karim; Sridhar Alla; 2017. Scala and Spark for Big Data Analytics: Explore the concepts of functional programming, data streaming, and machine learning. Packt Publishing Ltd. p. 87. {{ISBN|978-1-78355-050-0}}.</ref>
+* [[Imperative programming]], a programming paradigm that uses statements that change a program's state.<ref>Lex Sheehan, 2017. Learning Functional Programming in Go: Change the way you approach your applications using functional programming in Go. Packt Publishing Ltd. p. 16. {{ISBN|978-1-78728-604-7}}.</ref> In much the same way that the imperative mood in natural languages expresses commands, an imperative program consists of commands for the computer to perform. Imperative programming focuses on describing how a program operates.
+* [[Object-oriented programming]], a programming paradigm based on the concept of "objects", which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods. A feature of objects is that an object's procedures can access and often modify the data fields of the object with which they are associated. Thus object-oriented computer programs are made out of objects that interact with one another.<ref>Evelio Padilla, 2015. Substation Automation Systems: Design and Implementation. Wiley. p. 245. {{ISBN|978-1-118-98730-8}}.</ref>
+
+Many languages offer support for multiple paradigms, making the distinction more a matter of style than of technical capabilities.<ref>{{cite web |title=Multi-Paradigm Programming Language |url=https://developer.mozilla.org/en-US/docs/multiparadigmlanguage.html |website=developer.mozilla.org |publisher=[[Mozilla Foundation]] |archive-url=https://web.archive.org/web/20130821052407/https://developer.mozilla.org/en-US/docs/multiparadigmlanguage.html |archive-date=21 August 2013}}</ref>
+
+==Academia==
+{{further|List of computer science conferences|Category:Computer science journals}}
+Conferences are important events for computer science research. During these conferences, researchers from the public and private sectors present their recent work and meet. Unlike in most other academic fields, in computer science, the prestige of [[proceedings|conference papers]] is greater than that of journal publications.<ref>{{cite journal|last1=Meyer|first1=Bertrand|title=Viewpoint: Research evaluation for computer science|journal=Communications of the ACM|date=April 2009|volume=25|issue=4|pages=31–34|doi=10.1145/1498765.1498780|s2cid=8625066}}</ref><ref>{{cite web|last1=Patterson|first1=David|title=Evaluating Computer Scientists and Engineers For Promotion and Tenure|url=http://cra.org/resources/bp-view/evaluating_computer_scientists_and_engineers_for_promotion_and_tenure/|publisher=Computing Research Association|date=August 1999}}</ref> One proposed explanation for this is the quick development of this relatively new field requires rapid review and distribution of results, a task better handled by conferences than by journals.<ref>{{cite journal|last1=Fortnow|first1=Lance|title=Viewpoint: Time for Computer Science to Grow Up|journal=Communications of the ACM|date=August 2009|volume=52|issue=8|pages=33–35|doi=10.1145/1536616.1536631|url=http://cacm.acm.org/magazines/2009/8/34492-viewpoint-time-for-computer-science-to-grow-up/fulltext|doi-access=free}}</ref>
+
+==Education==
+{{Main|Computer science education}}
+'''Computer Science''', known by its near synonyms, '''Computing''', '''Computer Studies''', has been taught in UK schools since the days of [[batch processing]], [[punched cards|mark sensitive card]]s and [[paper tape]] but usually to a select few students.<ref>{{cite news |last1=Burns |first1=Judith |title=Computer science A-level 1970s style |url=https://www.bbc.co.uk/news/education-35890450 |accessdate=9 February 2019 |date=3 April 2016}}</ref> In 1981, the BBC produced a [[BBC Model B|micro-computer]] and [[Econet|classroom network]] and Computer Studies became common for GCE [[O level]] students (11–16-year-old), and Computer Science to [[A level]] students. Its importance was recognised, and it became a compulsory part of the [[National Curriculum]], for Key Stage 3 & 4. In September 2014 it became an entitlement for all pupils over the age of 4.<ref name="Jones">{{cite web |last1=Jones |first1=Michael |title=Developing a Computer Science Curriculum in England: Exploring Approaches in the USA |url=https://www.wcmt.org.uk/sites/default/files/report-documents/Jones%20M%20Report%202015%20%20Final.pdf |publisher=Winston Churchill Memorial Trust |accessdate=9 February 2019 |date=October 1915}}</ref>
+
+In the [[United States of America|US]], with 14,000 school districts deciding the curriculum, provision was fractured.<ref>{{cite news|title=Computer Science: Not Just an Elective Anymore|url=http://www.edweek.org/ew/articles/2014/02/26/22computer_ep.h33.html|work=Education Week|date=February 25, 2014}}</ref> According to a 2010 report by the [[Association for Computing Machinery]] (ACM) and [[Computer Science Teachers Association]] (CSTA), only 14 out of 50 states have adopted significant education standards for high school computer science.<ref>{{cite web|title=Running on Empty: The Failure to Teach K–12 Computer Science in the Digital Age |url = http://runningonempty.acm.org/fullreport2.pdf | date= 2010|first1 =Cameron |last1=Wilson|publisher = ACM|first2=Leigh Ann|last2= Sudol|first3= Chris|last3 =Stephenson|first4 =Mark |last4=Stehlik}}</ref>
+
+Israel, New Zealand, and South Korea have included computer science in their national secondary education curricula,<ref>{{cite news|title=A is for algorithm|url=https://www.economist.com/news/international/21601250-global-push-more-computer-science-classrooms-starting-bear-fruit|work=The Economist|date=April 26, 2014}}</ref><ref>{{cite web|title=Computing at School International comparisons|url=http://www.computingatschool.org.uk/data/uploads/internationalcomparisons-v5.pdf|accessdate=July 20, 2015}}</ref> and several others are following.<ref>{{cite news|title=Adding Coding to the Curriculum|url=https://www.nytimes.com/2014/03/24/world/europe/adding-coding-to-the-curriculum.html|work=The New York Times|date=March 23, 2014}}</ref>
+
+==See also==
+{{main|Glossary of computer science|Outline of computer science}}
+{{Div col}}
+* [[Computer Science and Engineering]]
+* [[Computer engineering]]
+* [[Information technology]]
+* [[List of computer scientists]]
+* [[List of computer science awards]]
+* [[List of important publications in computer science]]
+* [[List of pioneers in computer science]]
+* [[List of unsolved problems in computer science]]
+* [[List of terms relating to algorithms and data structures]]
+* [[Digital Revolution]]
+* [[Software engineering]]
+* [[Programming language]]
+* [[Algorithmic trading]]
+* [[Information and communications technology]]
+
+{{Books-inline|Computer science}}
+{{Div col end}}
+
+==Notes==
+{{reflist|group=note}}
+
+==References==
+{{reflist|colwidth=30em}}
+
+==Further reading==
+{{refbegin}}
+===Overview===
+* {{cite book|first=Allen B.|last=Tucker|author-link=Allen B. Tucker|title=Computer Science Handbook|edition=2nd|publisher=Chapman and Hall/CRC|year=2004|isbn=978-1-58488-360-9}}
+** "Within more than 70 chapters, every one new or significantly revised, one can find any kind of information and references about computer science one can imagine. […] all in all, there is absolute nothing about Computer Science that can not be found in the 2.5 kilogram-encyclopaedia with its 110 survey articles […]." (Christoph Meinel, ''[[Zentralblatt MATH]]'')
+* {{cite book|first=Jan|last=van Leeuwen|author-link=Jan van Leeuwen|title=Handbook of Theoretical Computer Science|publisher=The MIT Press|year=1994|isbn=978-0-262-72020-5}}
+** "[…] this set is the most unique and possibly the most useful to the [theoretical computer science] community, in support both of teaching and research […]. The books can be used by anyone wanting simply to gain an understanding of one of these areas, or by someone desiring to be in research in a topic, or by instructors wishing to find timely information on a subject they are teaching outside their major areas of expertise." (Rocky Ross, ''[[SIGACT News]]'')
+* {{cite book|title=Encyclopedia of Computer Science|edition=4th|first1=Anthony|last1=Ralston|author-link=Anthony Ralston|first2=Edwin D.|last2=Reilly|author-link2=Edwin D. Reilly|first3=David|last3=Hemmendinger|author-link3=David Hemmendinger|publisher=Grove's Dictionaries|year=2000|isbn=978-1-56159-248-7|url=http://portal.acm.org/ralston.cfm}}
+** "Since 1976, this has been the definitive reference work on computer, computing, and computer science. […] Alphabetically arranged and classified into broad subject areas, the entries cover hardware, computer systems, information and data, software, the mathematics of computing, theory of computation, methodologies, applications, and computing milieu. The editors have done a commendable job of blending historical perspective and practical reference information. The encyclopedia remains essential for most public and academic library reference collections." (Joe Accardin, Northeastern Illinois Univ., Chicago)
+* {{cite book|url=https://archive.org/details/milestonesincomp0000reil|url-access=registration|title=Milestones in Computer Science and Information Technology|author=Edwin D. Reilly|publisher=Greenwood Publishing Group|year=2003|isbn=978-1-57356-521-9}}
+
+===Selected literature===
+* {{cite book|first=Donald E.|last=Knuth|author-link=Donald Knuth|title=Selected Papers on Computer Science|publisher=CSLI Publications, [[Cambridge University Press]]|year=1996}}
+* {{cite book|ref=COLLIER|last=Collier|first=Bruce|title=The little engine that could've: The calculating machines of Charles Babbage|publisher=Garland Publishing Inc|isbn=978-0-8240-0043-1|url=http://robroy.dyndns.info/collier/index.html|year=1990}}
+* {{cite book|ref=HAIKEN|first=Bernard|last=Cohen|title=Howard Aiken, Portrait of a computer pioneer|publisher=The MIT press|year=2000|isbn=978-0-262-53179-5}}
+* {{cite book|first=Matti|last=Tedre|title=The Science of Computing: Shaping a Discipline|publisher=CRC Press, [[Taylor & Francis]]|year=2014}}
+* {{cite book|title=The origins of Digital computers, Selected Papers|last=Randell|first=Brian|author-link=Brian Randell |year=1973|publisher=Springer-Verlag|isbn=978-3-540-06169-4}}
+** "Covering a period from 1966 to 1993, its interest lies not only in the content of each of these papers – still timely today – but also in their being put together so that ideas expressed at different times complement each other nicely." (N. Bernard, ''Zentralblatt MATH'')
+
+===Articles===
+* Peter J. Denning. ''[http://portal.acm.org/citation.cfm?id=1053309&coll=&dl=ACM&CFID=15151515&CFTOKEN=6184618 Is computer science science?]'', Communications of the ACM, April 2005.
+* Peter J. Denning, ''[http://portal.acm.org/citation.cfm?id=971303&dl=ACM&coll=&CFID=15151515&CFTOKEN=6184618 Great principles in computing curricula]'', Technical Symposium on Computer Science Education, 2004.
+* Research evaluation for computer science, Informatics Europe [http://www.eqanie.eu/media/Como%20Conference/Tanca-Research_Assessment_A_new_Initiative_by_Informatics_Europe.pdf report] {{Webarchive|url=https://web.archive.org/web/20171018181136/http://www.eqanie.eu/media/Como%20Conference/Tanca-Research_Assessment_A_new_Initiative_by_Informatics_Europe.pdf |date=October 18, 2017 }}. Shorter journal version: Bertrand Meyer, Christine Choppy, Jan van Leeuwen and Jorgen Staunstrup, ''Research evaluation for computer science'', in [[Communications of the ACM]], vol. 52, no. 4, pp.&nbsp;31–34, April 2009.
+
+===Curriculum and classification===
+* [[Association for Computing Machinery]]. [https://web.archive.org/web/20080828002940/http://www.acm.org/class/1998/overview.html 1998 ACM Computing Classification System]. 1998.
+* Joint Task Force of Association for Computing Machinery (ACM), [[Association for Information Systems]] (AIS) and [[IEEE Computer Society]] (IEEE CS). [https://web.archive.org/web/20141021153204/http://www.acm.org/education/curric_vols/CC2005-March06Final.pdf Computing Curricula 2005: The Overview Report]. September 30, 2005.
+* [[Norman Gibbs]], Allen Tucker. "A model curriculum for a liberal arts degree in computer science". ''Communications of the ACM'', Volume 29 Issue 3, March 1986.
+{{refend}}
+
+==External links==
+{{Wikibooks|Informatics Practices for Class XI (CBSE)}}
+{{Sister project links| wikt=computer science|c=Category:Computer science | b=Computer science | q=Computer science|n=no|s=no| v=Computer science | voy=no | species=no | d=no}}
+
+{{Library resources box}}
+* {{curlie|Computers/Computer_Science/}}
+* [http://www.lib.uwaterloo.ca/society/compsci_soc.html Scholarly Societies in Computer Science]
+* [https://www.youtube.com/watch?v=fjMU-km-Cso What is Computer Science?]
+* [http://jeffhuang.com/best_paper_awards.html Best Papers Awards in Computer Science since 1996]
+* [http://se.ethz.ch/~meyer/gallery/ Photographs of computer scientists] by [[Bertrand Meyer]]
+* [http://www.eecs.berkeley.edu/department/history.shtml EECS.berkeley.edu]
+
+===Bibliography and academic search engines===
+* [http://citeseerx.ist.psu.edu/ CiteSeer<sup>''x''</sup>] ([[CiteSeerX|article]]): search engine, digital library and repository for scientific and academic papers with a focus on computer and information science.
+* [http://dblp.uni-trier.de/ DBLP Computer Science Bibliography] ([[Digital Bibliography & Library Project|article]]): computer science bibliography website hosted at Universität Trier, in Germany.
+* [http://liinwww.ira.uka.de/bibliography/ The Collection of Computer Science Bibliographies] ([[Collection of Computer Science Bibliographies]])
+
+===Professional organizations===
+* [http://www.acm.org/ Association for Computing Machinery]
+* [http://www.computer.org/ IEEE Computer Society]
+* [http://www.informatics-europe.org/ Informatics Europe]
+* [http://www.aaai.org/home.html AAAI]
+* [https://web.archive.org/web/20160205000119/http://membercentral.aaas.org/categories/computer-science AAAS Computer Science]
+
+===Misc===
+* [https://cs.stackexchange.com/ Computer Science—Stack Exchange]: a community-run question-and-answer site for computer science
+* [http://www.cs.bu.edu/AboutCS/WhatIsCS.pdf What is computer science]
+* [https://web.archive.org/web/20170810205524/https://www.cs.mtu.edu/~john/jenning.pdf Is computer science science?]
+* [https://www.researchgate.net/publication/306078165_Computer_Science_Software_Must_be_Considered_as_an_Independent_Discipline_Computer_Science_Software_must_not_be_Treated_as_a_Sub-Domain_or_Subset_of_Mathematics Computer Science (Software) Must be Considered as an Independent Discipline.]
+
+{{Computer science}}
+{{Glossaries of science and engineering}}
+{{Software engineering}}
+
+{{Authority control}}
+
+[[Category:Computer science| ]]
+[[Category:Formal sciences| ]]
+[[Category:Computer engineering]]

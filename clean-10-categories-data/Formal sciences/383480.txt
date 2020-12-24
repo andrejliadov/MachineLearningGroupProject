@@ -1,0 +1,66 @@
+'''Algorithmic learning theory''' is a mathematical framework for analyzing 
+[[machine learning]] problems and algorithms. Synonyms include '''formal learning theory''' and '''algorithmic inductive inference'''. Algorithmic learning theory is different from [[statistical learning theory]] in that it does not make use of statistical assumptions and analysis. Both algorithmic and statistical learning theory are concerned with machine learning and can thus be viewed as branches of [[computational learning theory]].
+
+==Distinguishing characteristics==
+
+Unlike statistical learning theory and most statistical theory in general, algorithmic learning theory does not assume that data are random samples, that is, that data points are independent of each other. This makes the theory suitable for domains where observations are (relatively) noise-free but not random, such as language learning <ref>Jain, S. et al (1999): ''[https://books.google.com/books?id=iG2gZJHCNH0C&printsec=frontcover#v=onepage&q=%22learning%20theory%22&f=false Systems That Learn]'', 2nd ed. Cambridge, MA: MIT Press.</ref> and automated scientific discovery.<ref>Langley, P.; Simon, H.; Bradshaw, G. & Zytkow, J. (1987), ''[https://books.google.com/books?id=VPxc-uPB7LEC&printsec=frontcover#v=onepage&q=%22learning%20theory%22&f=false Scientific Discovery: Computational Explorations of the Creative Processes]'', MIT Press, Cambridge</ref><ref>Schulte, O. (2009), ''[http://www.aaai.org/ocs/index.php/IJCAI/IJCAI-09/paper/download/652/925 Simultaneous Discovery of Conservation Laws and Hidden Particles With Smith Matrix Decomposition]'', in Proceedings of the Twenty-First International Joint Conference on Artificial Intelligence (IJCAI-09), pp. 1481-1487</ref>
+
+The fundamental concept of algorithmic learning theory is learning in the limit: as the number of data points increases, a learning algorithm should converge to a correct hypothesis on ''every'' possible data sequence consistent with the problem space. This is a non-probabilistic version of [[Consistency (statistics)|statistical consistency]], 
+which also requires convergence to a correct model in the limit, but allows a learner to fail on data sequences with probability measure 0.
+
+Algorithmic learning theory investigates the learning power of [[Turing machine]]s. Other frameworks consider a much more restricted class of  learning algorithms than Turing machines, for example learners that compute hypotheses more quickly, for instance in [[polynomial time]]. An example of such a framework is [[probably approximately correct learning]].
+
+==Learning in the limit==
+
+The concept was introduced in [[E. Mark Gold]]'s seminal paper "[[Language identification in the limit]]".<ref>{{cite journal
+ |doi=10.1016/S0019-9958(67)91165-5
+ |author=E. Mark Gold 
+ |title=Language Identification in the Limit 
+ |journal=[[Information and Control]] 
+ |volume=10 
+ |number=5 
+ |pages=447&ndash;474 
+ |date=May 1967 |doi-access=free 
+ }}</ref> The objective of [[language identification]] is for a machine running one program to be capable of developing another program by which any given sentence can be tested to determine whether it is "grammatical" or "ungrammatical". The language being learned need not be [[english language|English]] or any other [[natural language]] - in fact the definition of "grammatical" can be absolutely anything known to the tester.
+
+In Gold's learning model, the tester gives the learner an example sentence at each step, and the learner responds with a [[hypothesis]], which is a suggested [[computer program|program]] to determine grammatical correctness. It is required of the tester that every possible sentence (grammatical or not) appears in the list eventually, but no particular order is required. It is required of the learner that at each step the hypothesis must be correct for all the sentences so far.{{citation needed|reason=In his paper 'Language Identification in the Limit', Gold did not require this, see the definition of 'Learnability' on p.449.|date=November 2013}}
+
+A particular learner is said to be able to "learn a language in the limit" if there is a certain number of steps beyond which its hypothesis no longer changes.{{citation needed|reason=Gold additionally required the hypothesis to be correct, see previous 'citation needed' remark.|date=November 2013}} At this point it has indeed learned the language, because every possible sentence appears somewhere in the sequence of inputs (past or future), and the hypothesis is correct for all inputs (past or future), so the hypothesis is correct for every sentence. The learner is not required to be able to tell when it has reached a correct hypothesis, all that is required is that it be true.
+
+Gold showed that any language which is defined by a [[Turing machine]] program can be learned in the limit by another [[Turing-complete]] machine using [[enumeration]].{{clarify|reason=Gold introduces a methode called 'identification by enumeration' (p.458), but he didn't claim that each language 'defined by a Turing machine program can be learned' by that method, or by any other. Such a result would contradict the unlearnability result stated in the next section of this article.|date=November 2013}} This is done by the learner testing all possible Turing machine programs in turn until one is found which is correct so far - this forms the hypothesis for the current step. Eventually, the correct program will be reached, after which the hypothesis will never change again (but note that the learner does not know that it won't need to change).
+
+Gold also showed that if the learner is given only positive examples (that is, only grammatical sentences appear in the input, not ungrammatical sentences), then the language can only be guaranteed to be learned in the limit if there are only a [[finite set|finite]] number of possible sentences in the language (this is possible if, for example, sentences are known to be of limited length).{{clarify|reason=The problem Gold investigated is not about learning a language, but about learning a language class. For example, it is trivial to learn an infinite language L from a class consisting of L only.) Gold's result meant here is probably that of his Theorem I.8 (p.470). The paragraph should be repharsed accordingly.|date=November 2013}}
+
+Language identification in the limit is a highly abstract model. It does not allow for limits of [[Run time (program lifecycle phase)|runtime]] or [[computer memory]] which can occur in practice, and the enumeration method may fail if there are errors in the input. However the framework is very powerful, because if these strict conditions are maintained, it allows the learning of any program known to be computable. This is because a Turing machine program can be written to mimic any program in any conventional [[programming language]]. See [[Church-Turing thesis]].
+
+==Other identification criteria==
+
+Learning theorists have investigated other learning criteria,<ref>Jain, S. et al (1999): ''Systems That Learn'', 2nd ed. Cambridge, MA: MIT Press.</ref> such as the following.
+
+* ''Efficiency'': minimizing the number of data points required before convergence to a correct hypothesis.
+* ''Mind Changes'': minimizing the number of hypothesis changes that occur before convergence.<ref>Luo, W. & Schulte, O. (2005), ''[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.72.7998&rep=rep1&type=pdf Mind Change Efficient Learning]'', in Peter Auer & Ron Meir, ed., Proceedings of the Conference on Learning Theory (COLT), pp. 398-412</ref>
+
+Mind change bounds are closely related to [[Winnow algorithm#Mistake bounds|mistake bounds]] that are studied in [[statistical learning theory]].<ref>Jain, S. and Sharma, A. (1999), ''[https://www.sciencedirect.com/science/article/pii/S0890540100930013/pdf?md5=dc027e9010554c4d3d96d04903683e01&isDTMRedir=Y&pid=1-s2.0-S0890540100930013-main.pdf&_valck=1 On a generalized notion of mistake bounds]'', Proceedings of the Conference on Learning Theory (COLT), pp.249-256.</ref>  Kevin Kelly has suggested that minimizing mind changes is closely related to choosing maximally simple hypotheses in the sense of [[Occam’s Razor]].<ref>Kevin T. Kelly (2007), ''[https://www.sciencedirect.com/science/article/pii/S0304397507003222/pdf?md5=6531e570cb132bd0368d374431af4397&isDTMRedir=Y&pid=1-s2.0-S0304397507003222-main.pdf&_valck=1 Ockham’s Razor, Empirical Complexity, and Truth-finding Efficiency]'', Theoretical Computer Science, 383: 270-289.</ref>
+
+==Annual conference==
+Since 1990, there is an ''International Conference on Algorithmic Learning Theory (ALT)'', called ''Workshop'' in its first years (1990&ndash;1997).<ref>[https://www-alg.ist.hokudai.ac.jp/~thomas/ALTARCH/altarch.jsp Archives of ALT-Workshops and Conferences] at [[Hokkaido University]]</ref> Beginning in 1992, proceedings were published with in the [[LNCS]] series.<ref>[https://link.springer.com/conference/alt ALT proceedings page] at [[Springer Science+Business Media|Springer]]</ref> The 31st conference will be held in [[San Diego]] in Feb 2020.<ref>[http://alt2020.algorithmiclearningtheory.org ALT'20 home page]</ref>
+
+==See also==
+*[[Formal epistemology]]
+*[[Sample exclusion dimension]]
+
+==References==
+
+{{Reflist}}
+
+==External links==
+
+{{Refbegin}}
+* [https://web.archive.org/web/20120125223248/http://www.learningtheory.org/ Learning Theory in Computer Science.] 
+* [http://plato.stanford.edu/entries/learning-formal/ The Stanford Encyclopaedia of Philosophy] provides a highly accessible introduction to key concepts in algorithmic learning theory, especially as they apply to the philosophical problems of inductive inference.
+{{Refend}}
+
+{{DEFAULTSORT:Algorithmic Learning Theory}}
+[[Category:Computational learning theory]]
+[[Category:Learning theory (education)]]
+[[Category:Formal languages]]

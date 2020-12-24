@@ -1,0 +1,62 @@
+'''Spatial epidemiology''' is a [[Discipline (academia)|subfield]] of [[epidemiology]] focused on the study of the [[Space|spatial]] distribution of health outcomes; it is closely related to [[health geography]].
+
+Specifically, spatial epidemiology is concerned with the description and examination of disease and its geographic variations. This is done in consideration of “demographic, environmental, behavioral, socioeconomic, genetic, and infections risk factors."<ref name=pmid15198920>{{cite journal |last1=Elliott |first1=Paul |last2=Wartenberg |first2=Daniel |title=Spatial epidemiology: current approaches and future challenges |journal=Environmental Health Perspectives |volume=112 |issue=9 |pages=998–1006 |year=2004 |pmid=15198920 |pmc=1247193 |jstor=3838101 |doi=10.1289/ehp.6735}}</ref>
+
+==Types of studies==
+;Disease Mapping:
+* Disease maps are visual representations of intricate geographic data that provide a quick overview of said information. Mainly used for explanatory purposes, disease maps can be presented to survey high-risk areas and to help policy and resource allocation in said areas.
+
+;Geographic correlation studies
+* Geographic correlation studies attempt to study the geographical factors and their effects on geographically differentiated health outcomes. Measured on an ecologic scale, these factors include environmental variables (quality of surrounding space), socioeconomic and demographic statistics (income and race), or even lifestyle choices (nutrition or diet) of the population groups under study. This approach has the convenience of being able to employ already available data from various surveying sources.
+
+;Clustering, disease clusters, and surveillance.
+* Disease clusters, or spatial groupings of proximity and characteristically related epidemics. While the term itself is relatively poorly defined, it generally “implies an excess of cases above some background rate bounded in time and space.”<ref name=pmid15198920/> Although clustering is not the most precise method for spatial analysis, it can and has proved useful for health-related surveillance and monitoring.
+
+Because the statistical models used to draw up such research are complex, the data analysis and the interpretation of results should be carried out by qualified statisticians. Sometimes, the proliferation of errors in disease mapping has led to inefficient decision-making, implementation of inappropriate health policies and negative impact on the advancement of scientific knowledge.<ref>{{cite journal |vauthors=Ocaña-Riola R |title=Common errors in disease mapping |journal=Geospatial Health |volume=4 |issue=2 |pages=139–54 |year=2010 |pmid=20503184 |doi=10.4081/gh.2010.196 |url=http://eprints.bice.rm.cnr.it/2853/1/gh-v4i2-02-ocana-riola.pdf }}</ref>
+
+==Challenges==
+;Data availability and quality
+* Since spatial epidemiology is almost entirely based on the analysis of data and its various visual representations, data collection methods must be routine, accurate, and publicly available. With the advent of specialized and accurate health equipment and global information networks, these methods can be relatively and easily improved. Compiling and standardizing data can also be done efficiently and usefully given the right tools and processes.
+
+;Data protection and confidentiality
+* In our current time, legislation in the United States regarding individual human rights are gaining increasing support, especially in regards to the confidentiality of personal health data and consent over its use in medical investigations. Safe and secure data is a crucial aspect of successful epidemiologic research.
+
+;Exposure assessment and mapping
+* Typically always seen as an analytical weakness, the quality of exposure data, or reported accuracy of the spatial reach of epidemics, is especially important in spatial epidemiology. With the more mainstream use of geographic information systems, the capabilities of spatial interpolation and mapping have been tremendously improved, yet these still greatly depend on the precision and legitimacy of the source data commissioned.
+
+==See also==
+;General topics
+* [[Cluster (epidemiology)]]
+* [[Complete spatial randomness]]
+* [[Geographic information system]]
+* [[Geographic information science]]
+* [[Modifiable areal unit problem]]
+* [[Mutual standardisation]]
+* [[Spatial analysis]]
+* [[Spatial autocorrelation]]
+
+;Specific applications
+* [[French paradox]]
+* [[Stroke Belt]]
+
+==References==
+{{reflist}}
+
+
+==Further reading==
+* {{cite journal | last1 = Linda Beale | first1 = Abellan | last2 = Hodgson | first2 = S. | last3 = Jarup | first3 = L. | year = 2008 | title = Methodologic issues and approaches to spatial epidemiology | journal = Environmental Health Perspectives | volume = 116 | pages = 1105–1110 | pmc=2516558 | pmid=18709139 | doi=10.1289/ehp.10816}}
+* Paul Elliott, J. C. Wakefield, [[Nicky Best|Nicola G. Best]], and David J. Briggs, editors (2000). ''Spatial Epidemiology: Methods and Applications''. Oxford University Press, {{ISBN|978-0-19-851532-6}}
+*{{cite journal |last1=Gruebner |first1=Oliver |last2=Khan |first2=Md Mobarak H |last3=Lautenbach |first3=Sven |last4=Müller |first4=Daniel |last5=Kraemer |first5=Alexander |last6=Lakes |first6=Tobia |last7=Hostert |first7=Patrick |title=A spatial epidemiological analysis of self-rated mental health in the slums of Dhaka |journal=International Journal of Health Geographics |volume=10 |pages=36 |year=2011 |pmid=21599932 |pmc=3123168 |doi=10.1186/1476-072X-10-36 }}
+*{{cite book |first1=Oliver |last1=Gruebner |first2=Mobarak Hossain |last2=Khan |first3=Patrick |last3=Hostert |year=2011 |chapter=Spatial Epidemiological Applications in Public Health Research: Examples from the Megacity of Dhaka |pages=243–61 |chapter-url=https://books.google.com/books?id=rHYT8wfW2uEC&pg=PA243 |doi=10.1007/978-3-7908-2733-0 |editor1-first=Alexander |editor1-last=Krämer |editor2-first=Mobarak Hossain |editor2-last=Khan |editor3-first=Frauke |editor3-last=Kraas |title=Health in Megacities and Urban Areas |series=Contributions to Statistics |isbn=978-3-7908-2733-0 }}
+* Andrew B. Lawson (2018). ''Bayesian disease mapping: hierarchical modeling in spatial epidemiology'' CRC Press 3rd Ed.
+* Andrew B. Lawson (2006) ''Statistical Methods in Spatial Epidemiology''. 2nd Ed, Wiley, New York
+* Andrew B. Lawson, D. Boehning, E. Lessafre, A. Biggeri, J.-F. Viel and R. Bertollini editors (1999) Disease Mapping and Risk Assessment for Public Health. Wiley/WHO  New York
+* {{cite journal|last1=Wilschut|first1=L.I.|last2=Laudisoit|first2=A.|last3=Hughes|first3=N.K.|last4=Addink|first4=E.A.|last5=de Jong|first5=S.M.|last6=Heesterbeek|first6=J.A.P.|last7=Reijniers|first7=J.|last8=Eagle|first8=S.|last9=Dubyanskiy|first9=V.M.|last10=Begon|first10=M.|title=Spatial distribution patterns of plague hosts: point pattern analysis of the burrows of great gerbils in Kazakhstan|journal=Journal of Biogeography|date=2015|volume=42|issue=7|pages=1281-1292|doi=10.1111/jbi.12534|pmc=4737218|pmid=26877580}}
+*Andrew B. Lawson, Sudipto Banerjee, Robert Haining, Maria Dolores Ugarte (eds) (2016) Handbook of Spatial Epidemiology. CRC Press, New York
+
+==External links==
+* [http://www.spatialepidemiology.net/ Spatialepidemiology.net] - Provides a map-based interface for the display and analysis of infectious disease epidemiological data
+*[https://www.ebpi.uzh.ch/en/aboutus/activities/spatial_digital_epidemiology.html ebpi.uzh.ch/en/aboutus/activities/spatial_digital_epidemiology] - Spatial and digital epidemiology: Annual International Summer School at the University of Zürich, Switzerland.*
+
+
+[[Category:Spatial epidemiology|*]]

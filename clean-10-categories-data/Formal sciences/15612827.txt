@@ -1,0 +1,123 @@
+{{short description|Maximum rate of data transfer over a network}}
+In computing, '''bandwidth''' is the maximum rate of data transfer across a given path. Bandwidth may be characterized as '''network bandwidth''',<ref>[[Douglas Comer]], [https://books.google.co.uk/books?id=tm-evHmOs3oC&pg=PA99&dq=%22network+bandwidth%22+%22computer+networks%22&hl=en&ei=mvqcTOHIMIb2tgPbnpXWAQ&sa=X&oi=book_result&ct=result&redir_esc=y#v=onepage&q&f=false Computer Networks and Internets], page 99 ff, Prentice Hall 2008.</ref> '''data bandwidth''',<ref>Fred Halsall, [https://books.google.com/books?ei=dvycTJ2BDoqosAOhu_DVAQ&ct=result&hl=en&id=HrXbAAAAMAAJ&dq=%100data+bandwidth%100++%100computer+networks%22&q=%100data+bandwidth%100+Introduction to data+communications and computer networks], page 108, Addison-Wesley, 1985.</ref> or '''digital bandwidth'''.<ref>[https://books.google.co.uk/books?ei=rfmcTPKEN5L6swOekeXVAQ&ct=result&hl=en&id=7gqsZmr5HJcC&dq=+0digital+bandwidth+0+%22&redir_esc=y Cisco Networking Academy Program: CCNA 1 and 2 companion guide, Volym 1–2], Cisco Academy 2003</ref><ref>Behrouz A. Forouzan, ''Data communications and networking'', McGraw-Hill, 2007</ref>
+
+This definition of ''bandwidth'' is in contrast to the field of signal processing, wireless communications, modem data transmission, [[digital communications]], and [[electronics]]{{citation needed|date=January 2018}}, in which ''bandwidth'' is used to refer to analog [[signal bandwidth]] measured in [[hertz]], meaning the frequency range between lowest and highest attainable frequency while meeting a well-defined impairment level in signal power.  The actual bit rate that can be achieved depends not only on the signal bandwidth but also on the noise on the channel.
+
+==Network bandwidth capacity==
+The term ''bandwidth'' sometimes defines the [[net bit rate]]  'peak bit rate', 'information rate,' or physical layer 'useful bit rate', [[channel capacity]], or the [[maximum throughput]] of a logical or physical communication path in a digital communication system. For example, [[bandwidth test]]s measure the maximum throughput of a computer network. The maximum rate that can be sustained on a link are limited  by the [[Shannon–Hartley]] [[channel capacity]] for these communication systems, which is dependent on the [[bandwidth (signal processing)|bandwidth]] in hertz and the noise on the channel.
+
+==Network bandwidth consumption==
+The ''consumed bandwidth'' in bit/s, corresponds to achieved [[throughput]] or [[goodput]], i.e., the average rate of successful data transfer through a communication path. The consumed bandwidth can be affected by technologies such as [[bandwidth shaping]], [[bandwidth management]], [[bandwidth throttling]], [[bandwidth cap]], [[bandwidth allocation]] (for example [[bandwidth allocation protocol]] and [[dynamic bandwidth allocation]]), etc. A bit stream's bandwidth  is proportional to the average consumed signal bandwidth in hertz (the average spectral bandwidth of the analog signal representing the bit stream) during a studied time interval.
+
+''Channel bandwidth'' may be confused with useful data throughput (or [[goodput]]). For example, a channel with ''x'' bps may not necessarily transmit data at ''x'' rate, since protocols, encryption, and other factors can add appreciable overhead. For instance, much internet traffic uses the [[transmission control protocol]] (TCP), which requires a three-way handshake for each transaction. Although in many modern implementations the protocol is efficient, it does add significant overhead compared to simpler protocols. Also, data packets may be lost, which further reduces the useful data throughput. In general, for any effective digital communication, a framing protocol is needed; overhead and effective throughput depends on implementation. Useful throughput is less than or equal to the actual channel capacity minus implementation overhead.
+
+==Asymptotic bandwidth==
+The [[asymptotic bandwidth]] (formally ''asymptotic throughput'') for a network is the measure of maximum [[throughput]] for a [[greedy source]], for example when the message size (the number of packets per second from a source) approaches close to the maximum amount.<ref>{{cite book |chapter=Modeling Message Passing Overhead |first=C. Y. |last=Chou |year=2006 |title=Advances in Grid and Pervasive Computing: First International Conference, GPC 2006 |editor1-first=Yeh-Ching |editor1-last=Chung |editor2-first=José E. |editor2-last=Moreira |isbn=3540338098 |pages=299–307 |display-authors=etal}}</ref>
+
+Asymptotic bandwidths are usually estimated by sending a number of very large messages through the network, measuring the end-to-end throughput. As other bandwidths, the asymptotic bandwidth is measured in multiples of bits per seconds. Since bandwidth spikes can skew the measurement, carriers often use the 95th [[percentile]] method. This method continuously measures bandwidth usage and then removes the top 5 percent.<ref>{{Cite web|url=https://www.paessler.com/it-explained/bandwidth|title=What is Bandwidth? - Definition and Details|website=www.paessler.com|language=en|access-date=2019-04-18}}</ref>
+
+==Multimedia bandwidth==
+Digital bandwidth may also refer to: [[bit rate#Multimedia|multimedia bit rate]] or [[average bitrate]] after multimedia [[data compression]] ([[source coding]]), defined as the total amount of data divided by the playback time.
+
+Due to the impractically high bandwidth requirements of uncompressed [[digital media]], the required multimedia bandwidth can be significantly reduced with data compression.<ref name="Lee">{{cite book |last1=Lee |first1=Jack |title=Scalable Continuous Media Streaming Systems: Architecture, Design, Analysis and Implementation |date=2005 |publisher=[[John Wiley & Sons]] |isbn=9780470857649 |page=25 |url=https://books.google.com/books?id=7fuvu52cyNEC&pg=PA25}}</ref> The most widely used data compression technique for media bandwidth reduction is the [[discrete cosine transform]] (DCT), which was first proposed by [[N. Ahmed|Nasir Ahmed]] in the early 1970s.<ref name="Stankovic">{{cite journal |last1=Stanković |first1=Radomir S. |last2=Astola |first2=Jaakko T. |title=Reminiscences of the Early Work in DCT: Interview with K.R. Rao |journal=Reprints from the Early Days of Information Sciences |date=2012 |volume=60 |url=http://ticsp.cs.tut.fi/reports/ticsp-report-60-reprint-rao-corrected.pdf |accessdate=13 October 2019}}</ref> DCT compression significantly reduces the amount of memory and bandwidth required for digital signals, capable of achieving a [[data compression ratio]] of up to 100:1 compared to uncompressed media.<ref name="Lea">{{cite book |last1=Lea |first1=William |title=Video on demand: Research Paper 94/68 |date=1994 |publisher=[[House of Commons Library]] |location=9 May 1994 |url=https://researchbriefings.parliament.uk/ResearchBriefing/Summary/RP94-68 |accessdate=20 September 2019 |archive-url=https://web.archive.org/web/20190920082623/https://researchbriefings.parliament.uk/ResearchBriefing/Summary/RP94-68 |archive-date=20 September 2019 |url-status=dead }}</ref>
+
+== Bandwidth in web hosting ==
+In [[Web hosting service]], the term ''bandwidth'' is often incorrectly used to describe the amount of data transferred to or from the website or server within a prescribed period of time, for example ''bandwidth consumption accumulated over a month'' measured in gigabytes per month.{{citation needed|date=November 2011}} The more accurate phrase used for this meaning of a maximum amount of data transfer each month or given period is ''monthly data transfer''.
+
+A similar situation can occur for end user ISPs as well, especially where network capacity is limited (for example in areas with underdeveloped internet connectivity and on wireless networks).
+
+== Internet connection bandwidth ==
+This table shows the maximum bandwidth (the physical layer [[net bitrate]]) of common Internet access technologies. For more detailed lists see 
+* [[list of device bandwidths]]
+* [[Bit rate#Progress trends|bit rate progress trends]]
+* [[Bit rate#Multimedia]].
+
+{| class="wikitable"
+| 56 kbit/s
+| Modem / Dialup
+|-
+| 1.5 Mbit/s
+| [[ADSL Lite]]
+|-
+| 1.544 Mbit/s
+| [[Digital Signal 1|T1/DS1]]
+|-
+| 2.048 Mbit/s
+| E1 / [[E-carrier]]
+|-
+| 4 Mbit/s
+| ADSL1
+|-
+| 10 Mbit/s
+| [[Ethernet]]
+|-
+| 11 Mbit/s
+| Wireless [[802.11b]]
+|-
+| 24 Mbit/s
+| ADSL2+
+|-
+|44.736 Mbit/s
+|[[Digital Signal 3|T3/DS3]] 
+|-
+| 54 Mbit/s
+| Wireless [[802.11g]]
+|-
+| 100 Mbit/s
+| [[Fast Ethernet]]
+|-
+|155 Mbit/s
+|[[OC3]] 
+|-
+| 600 Mbit/s
+| Wireless [[802.11n]]
+|-
+|622 Mbit/s
+|[[OC12]]
+|-
+| 1 Gbit/s
+| [[Gigabit Ethernet]]
+|-
+|1.3 Gbit/s
+|Wireless [[802.11ac]]
+|-
+|2.5 Gbit/s
+|[[OC48]]
+|-
+|5 Gbit/s
+|[[USB 3.2|SuperSpeed USB]]
+|-
+|7 Gbit/s
+|Wireless [[802.11ad]]
+|-
+|9.6 Gbit/s
+|[[OC192]] 
+|-
+| 10 Gbit/s
+| [[10 Gigabit Ethernet]], [[USB 3.2|SuperSpeed USB 10 Gbit/s]]
+|-
+| 20 Gbit/s
+| [[USB 3.2|SuperSpeed USB 20 Gbit/s]]
+|-
+| 40 Gbit/s
+| [[Thunderbolt 3]]
+|-
+| 100 Gbit/s
+| [[100 Gigabit Ethernet]]
+|}
+
+==Edholm's law==
+{{Main|Edholm's law}}
+
+[[Edholm's law]], proposed by and named after Phil Edholm in 2004,<ref name="Cherry">{{cite journal |last1=Cherry |first1=Steven |title=Edholm's law of bandwidth |journal=IEEE Spectrum |date=2004 |volume=41 |issue=7 |pages=58–60 |doi=10.1109/MSPEC.2004.1309810}}</ref> holds that the bandwidth of [[telecommunication network]]s double every 18 months, which has proven to be true since the 1970s.<ref name="Cherry"/><ref name=":1">{{Cite book|title=Time Multiplexed Beam-Forming with Space-Frequency Transformation|last=Deng|first=Wei|last2=Mahmoudi|first2=Reza|last3=van Roermund|first3=Arthur|publisher=Springer|year=2012|isbn=9781461450450|location=New York|pages=1}}</ref> The trend is evident in the cases of [[Internet]],<ref name="Cherry"/> [[cellular network|cellular]] (mobile), [[Wireless LAN|wireless]] [[Local area network|LAN]] and [[Personal area network|wireless personal area networks]].<ref name=":1" />
+
+The [[MOSFET]] (metal-oxide-semiconductor field-effect transistor) is the most important factor enabling the rapid increase in bandwidth.<ref name="Jindal">{{cite journal |last1=Jindal |first1=Renuka P. |title=From millibits to terabits per second and beyond - Over 60 years of innovation |journal=2009 2nd International Workshop on Electron Devices and Semiconductor Technology |date=2009 |pages=1–6 |doi=10.1109/EDST.2009.5166093 |url=https://events.vtools.ieee.org/m/195547|isbn=978-1-4244-3831-0 }}</ref> The MOSFET (MOS transistor) was invented by [[Mohamed M. Atalla]] and [[Dawon Kahng]] at [[Bell Labs]] in 1959,<ref name="computerhistory">{{cite journal|url=https://www.computerhistory.org/siliconengine/metal-oxide-semiconductor-mos-transistor-demonstrated/|title=1960 - Metal Oxide Semiconductor (MOS) Transistor Demonstrated|journal=The Silicon Engine|publisher=[[Computer History Museum]]}}</ref><ref name="Lojek">{{cite book |last1=Lojek |first1=Bo |title=History of Semiconductor Engineering |date=2007 |publisher=[[Springer Science & Business Media]] |isbn=9783540342588 |pages=321–3}}</ref><ref name="computerhistory-transistor">{{cite web |title=Who Invented the Transistor? |url=https://www.computerhistory.org/atchm/who-invented-the-transistor/ |website=[[Computer History Museum]] |date=4 December 2013 |accessdate=20 July 2019}}</ref> and went on to become the basic building block of modern [[telecommunications]] technology.<ref name="triumph">{{cite web |title=Triumph of the MOS Transistor |url=https://www.youtube.com/watch?v=q6fBEjf9WPw |website=[[YouTube]] |publisher=[[Computer History Museum]] |accessdate=21 July 2019 |date=6 August 2010}}</ref><ref name="Raymer">{{cite book |last1=Raymer |first1=Michael G. |title=The Silicon Web: Physics for the Internet Age |date=2009 |publisher=[[CRC Press]] |isbn=9781439803127 |page=365 |url=https://books.google.com/books?id=PLYChGDqa6EC&pg=PA365}}</ref> Continuous [[MOSFET scaling]], along with various advances in MOS technology, has enabled both [[Moore's law]] ([[transistor count]]s in [[integrated circuit]] chips doubling every two years) and Edholm's law (communication bandwidth doubling every 18 months).<ref name="Jindal"/>
+
+==References==
+{{reflist}}
+
+{{Telecommunications}}
+
+[[Category:Network performance]]
+[[Category:Information theory]]
+[[Category:Temporal rates]]

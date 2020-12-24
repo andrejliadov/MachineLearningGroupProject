@@ -1,0 +1,409 @@
+'''Biclustering''', '''block clustering'''
+,<ref>
+{{cite journal
+  | title=Block clustering with bernoulli mixture models: Comparison of different approaches
+  |author1=G. Govaert |author2=M. Nadif | journal=Computational Statistics and Data Analysis
+  | volume=52
+  | number=6
+  | pages=3233–3245
+  | year=2008
+  | doi=10.1016/j.csda.2007.09.007
+}}
+</ref>
+<ref>
+{{cite journal
+  | title=Stellar-Mass Black Hole Optimization for Biclustering Microarray Gene Expression Data
+  |author1=R. Balamurugan |author2=A.M. Natarajan|author3=K. Premalatha| journal=Applied Artificial Intelligence 
+  | volume=29
+  | number=4
+  | pages=353–381
+  | year=2015
+  |doi=10.1080/08839514.2015.1016391 |s2cid=44624424 }}</ref> '''co-clustering''', or '''two-[[mode (statistics)|mode]] clustering'''<ref>
+{{cite book
+  |author1=G. Govaert |author2=M. Nadif | title = Co-clustering: models, algorithms and applications
+  | publisher = ISTE, Wiley
+  | year = 2013
+  | isbn = 978-1-84821-473-6}}
+</ref><ref>
+{{cite journal
+  | title=A Modified Harmony Search Method for Biclustering Microarray Gene Expression Data
+  |author1=R. Balamurugan |author2=A.M. Natarajan|author3=K. Premalatha| journal=International Journal of Data Mining and Bioinformatics
+  | volume=16
+  | number=4
+  | pages=269–289
+  | year=2016
+  |doi=10.1504/IJDMB.2016.082205 }}
+</ref><ref>
+ {{cite journal
+ |vauthors=Van Mechelen I, Bock HH, De Boeck P | year = 2004
+ | title = Two-mode clustering methods:a structured overview
+ | journal = Statistical Methods in Medical Research
+ | volume = 13
+ | issue = 5
+ | pages = 363–94
+ | doi = 10.1191/0962280204sm373ra
+ | pmid = 15516031
+| citeseerx = 10.1.1.706.4201
+ | s2cid = 19058237
+ }}
+</ref> is a [[data mining]] technique which allows simultaneous [[cluster analysis|clustering]] of the rows and columns of a [[matrix (mathematics)|matrix]].
+The term was first introduced by Boris Mirkin<ref name="mirkin">
+{{cite book
+  | last = Mirkin
+  | first = Boris
+  | title = Mathematical Classification and Clustering
+  | publisher = Kluwer Academic Publishers
+  | year = 1996
+  | isbn = 978-0-7923-4159-8 }}
+</ref> to name a technique introduced many years earlier,<ref name="mirkin"/> in 1972, by J.&nbsp;A.&nbsp;Hartigan.<ref>
+ {{cite journal
+ | author = Hartigan JA
+ | year = 1972
+ | title = Direct clustering of a data matrix
+ | journal = Journal of the American Statistical Association
+ | volume = 67
+ | issue = 337
+ | pages = 123–9
+ | doi = 10.2307/2284710
+ | jstor = 2284710
+ }}
+</ref>
+
+Given a set of <math>m</math> samples represented by an <math>n</math>-dimensional feature vector, the entire dataset can be represented as <math>m</math> rows in <math>n</math> columns (i.e., an <math>m \times n</math> matrix). The biclustering algorithm generates biclusters – a subset of rows which exhibit similar behavior across a subset of columns, or vice versa.
+
+== Development ==
+Biclustering was originally introduced by J. A. Hartigan in 1972.<ref>{{cite journal | vauthors = Hartigan JA | year = 1972 | title = Direct clustering of a data matrix | journal = Journal of the American Statistical Association | volume = 67 | issue = 337| pages = 123–129 | doi = 10.1080/01621459.1972.10481214 }}</ref> The term biclustering was later used by Mirkin. This algorithm was not generalized until 2000 when Y. Cheng and G. M. Church proposed a biclustering algorithm based on variance and applied it to biological gene expression data.<ref>https://www.cs.princeton.edu/courses/archive/fall03/cs597F/Articles/biclustering_of_expression_data.pdf Cheng Y, Church G M. Biclustering of expression data[C]//Ismb. 2000, 8: 93–103.</ref> Their paper is still the most important literature in the gene expression biclustering field.
+
+In 2001 and 2003, I.S. Dhillon put forward two algorithms applying biclustering to files and words. One version was based on bipartite spectral graph partitioning.<ref>[http://dl.acm.org/citation.cfm?id=502550  Dhillon I S. Co-clustering documents and words using bipartite spectral graph partitioning&#91;C&#93;//Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining. ACM, 2001: 269–274.]</ref> The other was based on information theory. Dhillon assumed the loss of [[mutual information]] during biclustering was equal to the [[Kullback–Leibler divergence|Kullback–Leibler-distance]] (KL-distance) between P and Q. P represents the distribution of files and feature words before biclustering, while Q is the distribution after biclustering. KL-distance is for measuring the difference between two random distributions. KL&nbsp;=&nbsp;0 when the two distributions are the same and KL increases as the difference increases.<ref>[http://dl.acm.org/citation.cfm?id=956764 Dhillon I S, Mallela S, Modha D S. Information-theoretic co-clustering&#91;C&#93;//Proceedings of the ninth ACM SIGKDD international conference on KKluwer Academic Publishersnowledge discovery and data mining. ACM, 2003: 89–98.]</ref> Thus, the aim of the algorithm was to find the minimum KL-distance between P and Q. In 2004, Arindam Banerjee used a weighted-Bregman distance instead of KL-distance to design a biclustering algorithm which was suitable for any kind of matrix, unlike the KL-distance algorithm.<ref>[http://dl.acm.org/citation.cfm?id=1014111 Banerjee A, Dhillon I, Ghosh J, et al. A generalized maximum entropy approach to Bregman co-clustering and matrix approximation&#91;C&#93;//Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining. ACM, 2004: 509–514.]</ref>
+
+To cluster more than two types of objects, in 2005, Bekkerman expanded the mutual information in Dhillon's theorem from a single pair into multiple pairs.
+
+== Complexity ==
+
+The complexity of the biclustering problem depends on the exact problem formulation, and particularly on the merit function used to evaluate the quality of a given bicluster. However most interesting variants of this problem are [[NP-complete]]. NP-complete have two conditions. In the simple case that there is only element ''a''<sub>(''i'',''j'')</sub> either 0 or 1 in the binary matrix A, a bicluster is equal to a biclique in the corresponding bipartite graph. The maximum size bicluster is equivalent to maximum edge biclique in bipartite graph.  In the complex case, the element in matrix A is used to compute the quality of a given bicluster and solve the more restricted version of the problem.<ref>{{cite journal| doi=10.1016/S0166-218X(03)00333-0 | volume=131 | issue=3 | title=The maximum edge biclique problem is NP-complete | year=2003 | journal=Discrete Applied Mathematics | pages=651–654 | vauthors=Peeters R| url=https://pure.uvt.nl/portal/en/publications/the-maximum-edge-biclique-problem-is-npcomplete(5f7679c1-14e1-465d-a2b5-38a01133047f).html }}</ref> It requires either large [[computer|computational]] effort or the use of lossy [[heuristics]] to short-circuit the calculation.<ref name="madeira-oliveira" />
+
+== Type of bicluster ==
+{{tone|date=February 2017}}
+Different biclustering algorithms have different definitions of bicluster.<ref name="madeira-oliveira">
+{{cite journal
+ |vauthors=Madeira SC, Oliveira AL | year = 2004
+ | title = Biclustering Algorithms for Biological Data Analysis: A Survey
+ | journal = IEEE/ACM Transactions on Computational Biology and Bioinformatics
+ | volume = 1
+ | issue = 1
+ | pages = 24–45
+ | doi = 10.1109/TCBB.2004.2
+ | pmid = 17048406
+| s2cid = 206628783
+ }}
+</ref>
+
+They are:
+
+#Bicluster with constant values (a),
+#Bicluster with constant values on rows (b) or columns (c),
+#Bicluster with coherent values (d, e).
+
+'''1.Bicluster with constant values'''
+
+When a biclustering algorithm tries to find a constant bicluster, the normal way for it is to reorder the rows and columns of the matrix so it can group together similar rows/columns and find biclusters with similar values. This method is OK when the data is tidy. But as the data can be noisy most of the times, so it can't satisfy us. More sophisticated methods should be used.
+A perfect constant bicluster is a matrix(I,J) where all values a(i,j) are equal to μ. In real data, a(i,j) can be seen as n(i,j) +μ where n(i,j) is the noise. 
+According to Hartigan's algorithm, by splitting the original data matrix into a set of biclusters, variance is used to compute constant biclusters. So, a perfect bicluster is a matrix with variance zero. Also, in order to prevent the partitioning of the data matrix into biclusters with only one row and one column, Hartigan assumes that there are K biclusters within the data matrix. When the data matrix is partitioned into K biclusters, the algorithm ends.
+
+'''2.Biclusters with constant values on rows or columns'''
+
+This kind of biclusters can't be evaluated just by variance of its values. To finish the identification, the columns and the rows should be normalized at first. There are other algorithms, without normalization step, can find biclusters have rows and columns with different approaches.
+
+'''3.Biclusters with coherent values'''
+
+For biclusters with coherent values on rows and columns, an overall improvement over the algorithms for biclusters with constant values on rows or on columns should be considered. 
+That means a sophisticated algorithm is needed. This algorithm may contain analysis of variance between groups, using co-variance between both rows and columns. In Cheng and Church's theorem, a bicluster is defined as a subset of rows and columns with almost the same score. The similarity score is used to measure the coherence of rows and columns.
+
+ 
+{| border="0" cellspacing="20"
+|
+{| | border="1px solid black" cellpadding="5" cellspacing="0"
+|+a) Bicluster with constant values
+|-
+| 2.0 || 2.0 || 2.0 || 2.0 || 2.0
+|-
+| 2.0 || 2.0 || 2.0 || 2.0 || 2.0
+|-
+| 2.0 || 2.0 || 2.0 || 2.0 || 2.0
+|-
+| 2.0 || 2.0 || 2.0 || 2.0 || 2.0
+|-
+| 2.0 || 2.0 || 2.0 || 2.0 || 2.0
+|}
+|
+{| | border="1px solid black" cellpadding="5" cellspacing="0"
+|+b) Bicluster with constant values on rows
+|-
+| 1.0 || 1.0 || 1.0 || 1.0 || 1.0
+|-
+| 2.0 || 2.0 || 2.0 || 2.0 || 2.0
+|-
+| 3.0 || 3.0 || 3.0 || 3.0 || 3.0
+|-
+| 4.0 || 4.0 || 4.0 || 4.0 || 4.0
+|-
+| 5.0 || 5.0 || 5.0 || 5.0 || 5.0
+|}
+|
+{| | border="1px solid black" cellpadding="5" cellspacing="0"
+|+c) Bicluster with constant values on columns
+|-
+| 1.0 || 2.0 || 3.0 || 4.0 || 5.0
+|-
+| 1.0 || 2.0 || 3.0 || 4.0 || 5.0
+|-
+| 1.0 || 2.0 || 3.0 || 4.0 || 5.0
+|-
+| 1.0 || 2.0 || 3.0 || 4.0 || 5.0
+|-
+| 1.0 || 2.0 || 3.0 || 4.0 || 5.0
+|}
+|}
+
+{| border="0" cellspacing="20"
+|
+{| | border="1px solid black" cellpadding="5" cellspacing="0"
+|+d) Bicluster with coherent values (additive)
+|-
+| 1.0 || 4.0 || 5.0 || 0.0 || 1.5
+|-
+| 4.0 || 7.0 || 8.0 || 3.0 || 4.5
+|-
+| 3.0 || 6.0 || 7.0 || 2.0 || 3.5
+|-
+| 5.0 || 8.0 || 9.0 || 4.0 || 5.5
+|-
+| 2.0 || 5.0 || 6.0 || 1.0 || 2.5
+|}
+|
+{| | border="1px solid black" cellpadding="5" cellspacing="0"
+|+e) Bicluster with coherent values (multiplicative)
+|-
+| 1.0 || 0.5 || 2.0 || 0.2 || 0.8
+|-
+| 2.0 || 1.0 || 4.0 || 0.4 || 1.6
+|-
+| 3.0 || 1.5 || 6.0 || 0.6 || 2.4
+|-
+| 4.0 || 2.0 || 8.0 || 0.8 || 3.2
+|-
+| 5.0 || 2.5 || 10.0 || 1.0 || 4.0
+|}
+|}
+
+<!-- [[File:bicluster.JPG]] -->
+
+The relationship between these cluster models and other types of clustering such as [[correlation clustering]] is discussed in.<ref>{{cite journal
+  | last = Kriegel
+  | first = H.-P.
+  |author2=Kröger, P.|author3=Zimek, A.
+  | title = Clustering High Dimensional Data: A Survey on Subspace Clustering, Pattern-based Clustering, and Correlation Clustering
+  | journal = ACM Transactions on Knowledge Discovery from Data
+  | volume = 3
+  | issue = 1
+  | pages = 1–58
+  | date = March 2009
+  | doi = 10.1145/1497577.1497578| s2cid = 17363900
+ }}
+</ref>
+
+== Algorithms ==
+
+There are many biclustering [[algorithms]] developed for [[bioinformatics]], including: block clustering, CTWC (Coupled Two-Way Clustering), ITWC (Interrelated Two-Way Clustering), δ-bicluster, δ-pCluster, δ-pattern, FLOC, OPC, Plaid Model, OPSMs (Order-preserving submatrixes), Gibbs, SAMBA (Statistical-Algorithmic Method for Bicluster Analysis),<ref>
+{{cite journal
+ |vauthors=Tanay A, Sharan R, Kupiec M, Shamir R | year = 2004
+ | title = Revealing modularity and organization in the yeast molecular network by integrated analysis of highly heterogeneous genomewide data
+ | journal = Proc Natl Acad Sci USA
+ | volume = 101
+ | issue = 9
+ | pages = 2981–2986
+ | doi = 10.1073/pnas.0308661100
+ | pmid = 14973197
+ | pmc = 365731
+| bibcode = 2004PNAS..101.2981T
+ }}</ref> Robust Biclustering Algorithm (RoBA), Crossing Minimization,<ref name=ahsan/> cMonkey,<ref>
+{{cite journal
+ |vauthors=Reiss DJ, Baliga NS, Bonneau R | year = 2006
+ | title = Integrated biclustering of heterogeneous genome-wide datasets for the inference of global regulatory networks
+ | journal = BMC Bioinformatics
+ | volume = 7
+ | pages = 280–302
+ | doi = 10.1186/1471-2105-7-280
+ | pmid = 16749936
+ | pmc = 1502140
+}}</ref> PRMs, DCC, LEB (Localize and Extract Biclusters), QUBIC (QUalitative BIClustering), BCCA (Bi-Correlation Clustering Algorithm) BIMAX, ISA and FABIA (Factor Analysis for Bicluster Acquisition),<ref>
+{{cite journal
+ | vauthors = Hochreiter S, Bodenhofer U, Heusel M, Mayr A, Mitterecker A, Kasim A, Khamiakova T, Van Sanden S, Lin D, Talloen W, Bijnens L, ((Gohlmann HWH)), Shkedy Z, Clevert DA
+ | author-link = Sepp Hochreiter
+ | year = 2010
+ | title = FABIA: factor analysis for bicluster acquisition
+ | journal = Bioinformatics
+ | pmid = 20418340 
+ | volume = 26
+ | issue = 12
+ | pmc = 2881408
+ | pages = 1520–1527
+ | doi = 10.1093/bioinformatics/btq227
+}}</ref> runibic,<ref>
+{{cite journal
+ | vauthors = Orzechowski P, Pańszczyk A, Huang X, Moore JH
+ | year = 2018
+ | title = runibic: a Bioconductor package for parallel row-based biclustering of gene expression data
+ | journal = Bioinformatics
+ | pmid = 29939213
+ | pmc = 6289127
+ | volume = 34 
+ | issue = 24
+ | pages = 4302–4304
+ | doi = 10.1093/bioinformatics/bty512
+}}</ref>
+and recently proposed hybrid method EBIC (Evolutionary-based biclustering),<ref>
+{{cite journal
+ | vauthors = Orzechowski P, Sipper M, Huang X, Moore JH
+ | year = 2018
+ | title = EBIC: an evolutionary-based parallel biclustering algorithm for pattern discovery 
+ | journal = Bioinformatics
+ | pmid = 29790909
+ | pmc = 6198864
+ | volume = 34
+ | issue = 21
+ | pages = 3719–3726
+ | doi = 10.1093/bioinformatics/bty401
+| arxiv = 1801.03039
+ }}</ref> which was shown to detect multiple patterns with very high accuracy. More recently, IMMD-CC <ref>
+{{cite journal
+ | vauthors = Fanaee-T H, Thoresen, M
+ | year = 2020
+ | title = Iterative Multi-mode Discretization: Applications to Co-clustering
+ | journal = Lecture Notes in Computer Science
+ | volume = 12323
+ | pages = 94–105
+ | doi = 10.1007/978-3-030-61527-7_7
+ | isbn = 978-3-030-61526-0
+ }}</ref> is proposed that is developed based on iterative complexity reduction concept. IMMD-CC is able to identify co-cluster centroids from highly sparse transformation obtained by iterative multi-mode discretization.
+
+Biclustering algorithms have also been proposed and used in other application fields under the names coclustering, bidimensional clustering, and subspace clustering.<ref name="madeira-oliveira" />
+
+Given the known importance of discovering local patterns in [[time-series data]], recent proposals have addressed the biclustering problem in the specific case of time series [[gene expression]] data. In this case, the interesting biclusters can be restricted to those with [[wikt:contiguity|contiguous]] columns. This restriction leads to a [[tractable problem]] and enables the development of efficient exhaustive [[enumeration]] algorithms such as CCC-Biclustering <ref name="ccc-biclustering">
+{{cite journal
+ |vauthors=Madeira SC, Teixeira MC, Sá-Correia I, Oliveira AL | year = 2010
+ | title = Identification of Regulatory Modules in Time Series Gene Expression Data using a Linear Time Biclustering Algorithm
+ | journal = IEEE/ACM Transactions on Computational Biology and Bioinformatics
+ | volume = 1
+ | issue = 7
+ | pages = 153–165
+ | doi = 10.1109/TCBB.2008.34
+| pmid = 20150677
+ | s2cid = 7369531
+ }}
+</ref> and ''e''-CCC-Biclustering.<ref name="e-ccc-biclustering">
+{{cite journal
+ |vauthors=Madeira SC, Oliveira AL | year = 2009
+ | title = A polynomial time biclustering algorithm for finding approximate expression patterns in gene expression time series
+ | journal = Algorithms for Molecular Biology
+ | volume = 4
+ | issue = 8
+| pages = 8
+ | doi = 10.1186/1748-7188-4-8
+ | pmid = 19497096
+ | pmc = 2709627
+ }}
+</ref> 
+The approximate patterns in CCC-Biclustering algorithms allow a given number of errors, per gene, relatively to an expression profile representing the expression pattern in the bicluster. The e-CCC-Biclustering algorithm uses approximate expressions to find and report all maximal CCC-Biclusters by a discretized matrix A and efficient string processing techniques.
+
+These [[algorithm]]s find and report all maximal biclusters with coherent and contiguous columns with perfect/approximate expression patterns, in time linear/[[polynomial]] which is obtained by manipulating a discretized version of original expression matrix in the size of the time series gene expression [[matrix (mathematics)|matrix]] using efficient [[string processing]] techniques based on [[suffix tree]]s. These algorithms are also applied to solve problems and sketch the analysis of computational complexity.
+
+Some recent algorithms have attempted to include additional support for biclustering rectangular matrices in the form of other [[datatype]]s, including cMonkey.
+
+There is an ongoing debate about how to judge the results of these methods, as biclustering allows overlap between clusters and some [[algorithms]] allow the exclusion of hard-to-reconcile columns/conditions. Not all of the available algorithms are deterministic and the analyst must pay attention to the degree to which results represent stable [[minima]]. Because this is an [[unsupervised classification]] problem, the lack of a [[gold standard (test)|gold standard]] makes it difficult to spot errors in the results. One approach is to utilize multiple biclustering algorithms, with majority or [[super-majority]] voting amongst them deciding the best result. Another way is to analyse the quality of shifting and scaling patterns in biclusters.<ref>
+{{cite journal
+ | author = Aguilar-Ruiz JS
+ | year = 2005
+ | title = Shifting and scaling patterns from gene expression data
+ | journal = Bioinformatics
+ | volume = 21
+ | issue = 10
+ | pages = 3840–3845
+ | doi = 10.1093/bioinformatics/bti641
+ | pmid = 16144809
+| doi-access = free
+ }}
+</ref> Biclustering has been used in the domain of [[text mining]] (or classification) where it is popularly known as co-clustering 
+.<ref name="chi-sim">{{cite book
+ |author1=Bisson G.  |author2=Hussain F.
+  |name-list-style=amp | year = 2008
+ | title = Chi-Sim: A new similarity measure for the co-clustering task
+ | journal = ICMLA
+ | pages = 211–217
+ | doi = 10.1109/ICMLA.2008.103
+|isbn=978-0-7695-3495-4
+  |s2cid=15506600
+ }}
+</ref> Text corpora are represented in a [[vector (mathematics and physics)|vector]]ial form as a [[matrix (mathematics)|matrix]] D whose rows denote the documents and whose columns denote the words in the dictionary. Matrix elements D<sub>ij</sub> denote occurrence of word j in document i. [[Co-clustering]] algorithms are then applied to discover blocks in D that correspond to a group of documents (rows) characterized by a group of words(columns).
+
+Test clustering can solve the high-dimensional sparse problem, which means clustering text and words at the same time. When clustering text, we need to think about not only the words information, but also the information of words clusters that was composed by words. Then according to similarity of feature words in the text, will eventually cluster the feature words. This is called co-clustering. There are two advantages of co-clustering: one is clustering the test based on words clusters can extremely decrease the dimension of clustering, it can also appropriate to measure the distance between the tests. Second is mining more useful information and can get the corresponding information in test clusters and words clusters. This corresponding information can be used to describe the type of texts and words, at the same time, the result of words clustering can be also used to text mining and information retrieval.
+
+Several approaches have been proposed based on the information contents of the resulting blocks: matrix-based approaches such as [[singular value decomposition|SVD]] and BVD, and graph-based approaches. [[Information-theoretic]] algorithms [[iterative]]ly assign each row to a cluster of documents and each column to a cluster of words such that the mutual information is maximized. Matrix-based methods focus on the decomposition of matrices into blocks such that the error between the original matrix and the regenerated matrices from the decomposition is minimized.  Graph-based methods tend to minimize the cuts between the clusters. Given two groups of documents d<sub>1</sub> and d<sub>2</sub>, the number of cuts can be measured as the number of words that occur in documents of groups d<sub>1</sub> and d<sub>2</sub>.
+
+More recently (Bisson and Hussain)<ref name="chi-sim"/> have proposed a new approach of using the similarity between words and the similarity between documents to [[co-clustering|co-cluster]] the matrix. Their method (known as '''χ-Sim''', for cross similarity) is based on finding document-document similarity and word-word similarity, and then using classical clustering methods such as [[hierarchical clustering]]. Instead of explicitly clustering rows and columns alternately, they consider higher-order occurrences of words, inherently taking into account the documents in which they occur. Thus, the similarity between two words is calculated based on the documents in which they occur and also the documents in which "similar" words occur. The idea here is that two documents about the same topic do not necessarily use the same set of words to describe it but a subset of the words and other similar words that are characteristic of that topic. This approach of taking higher-order similarities takes the [[latent semantic analysis|latent semantic]] structure of the whole corpus into consideration with the result of generating a better clustering of the documents and words.
+
+In text databases, for a document collection defined by a document by term D matrix (of size m by n, m: number of documents, n: number of terms) the cover-coefficient based clustering methodology<ref>
+{{cite journal
+ |author1=Can, F. |author2=Ozkarahan, E. A. | year = 1990
+ | title = Concepts and effectiveness of the cover coefficient based clustering methodology for text databases
+ | journal = ACM Transactions on Database Systems
+ | volume = 15
+ | issue = 4
+ | pages = 483–517
+ | doi = 10.1145/99935.99938
+|hdl=2374.MIA/246 |s2cid=14309214 | url = http://sc.lib.miamioh.edu/bitstream/2374.MIA/246/2/fulltext.pdf
+ }}
+</ref> yields the same number of clusters both for documents and terms (words) using a double-stage probability experiment. According to the cover coefficient concept number of clusters can also be roughly estimated by the following formula <math>(m \times n) / t</math> where t is the number of non-zero entries in D. Note that in D each row and each column must contain at least one non-zero element.
+
+In contrast to other approaches, FABIA is a multiplicative model that assumes realistic [[non-Gaussianity|non-Gaussian]] signal distributions with [[heavy tails]]. FABIA utilizes well understood model selection techniques like variational approaches and applies the [[Bayesian probability|Bayesian]] framework. The generative framework allows FABIA to determine the [[information content]] of each bicluster to separate spurious biclusters from true biclusters.
+
+== See also ==
+* [https://iitk.ac.in/idea/bideal/ BIDEAL Toolbox for Biclustering]
+* [https://iitk.ac.in/idea/mtba/ MTBA Toolbox for Biclustering]
+* [[Formal concept analysis]]
+* [[Biclique]]
+* [[Galois connection]]
+* [[BiclustGUI: R package for Biclustering]]
+
+== References ==
+{{Reflist|refs=
+<ref name=ahsan>
+{{cite journal
+|last1=Abdullah
+|first1=Ahsan
+|last2=Hussain
+|first2=Amir
+|title=A new biclustering technique based on crossing minimization
+|journal=Neurocomputing
+|year=2006
+|pages=1882–1896
+|doi=10.1016/j.neucom.2006.02.018
+|volume=69
+|issue=16–18
+}}
+</ref>
+}}
+
+=== Others ===
+* N.K. Verma, S. Bajpai, A. Singh, A. Nagrare, S. Meena, Yan Cui, "A Comparison of Biclustering Algorithms" in International conference on Systems in Medicine and Biology (ICSMB 2010)in IIT Kharagpur India, pp.&nbsp;90–97, Dec. 16–18.
+* J. Gupta, S. Singh and N.K. Verma "MTBA: MATLAB Toolbox for Biclustering Analysis", IEEE Workshop on Computational Intelligence: Theories, Applications and Future Directions", IIT Kanpur India, pp.&nbsp;148–152, Jul. 2013.
+* A. Tanay. R. Sharan, and R. Shamir, "Biclustering Algorithms: A Survey", In ''Handbook of Computational Molecular Biology'', Edited by [[Srinivas Aluru]], Chapman (2004)
+* {{cite journal |vauthors=Kluger Y, Basri R, Chang JT, Gerstein MB | year = 2003 | title = Spectral Biclustering of Microarray Data: Coclustering Genes and Conditions | journal = Genome Research | volume = 13 | issue = 4| pages = 703–716 | doi = 10.1101/gr.648603 | pmid = 12671006 | pmc = 430175 }}
+* Adetayo Kasim, Ziv Shkedy, Sebastian Kaiser, Sepp Hochreiter, Willem Talloen (2016), Applied Biclustering Methods for Big and High-Dimensional Data Using R, Chapman & Hall/CRC Press
+* Orzechowski, P., Sipper, M., Huang, X., & Moore, J. H. (2018). EBIC: an evolutionary-based parallel biclustering algorithm for pattern discovery. ''Bioinformatics''.
+
+==External links==
+* [http://www.bioinf.jku.at/software/fabia/fabia.html FABIA: Factor Analysis for Bicluster Acquisition, an R package] &mdash;software
+
+[[Category:Cluster analysis]]
+[[Category:Bioinformatics]]

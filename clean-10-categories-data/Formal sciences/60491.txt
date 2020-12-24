@@ -1,0 +1,259 @@
+{{short description|Technique for arranging complexity of computer systems}}
+{{More citations needed|date=June 2011}}
+{{Use dmy dates|date=December 2019}}
+{{Quote box|quote=The essence of abstraction is preserving information that is relevant in a given context, and forgetting information that is irrelevant in that context.|source=– [[John Guttag|John V. Guttag]]<ref>{{Cite book | edition = Spring 2013 | publisher = The MIT Press | isbn = 9780262519632 | last = Guttag | first = John V. | title = Introduction to Computation and Programming Using Python | location = Cambridge, Massachusetts | date = 18 January 2013}}</ref>|width=25%}}
+
+In [[software engineering]] and [[computer science]], '''abstraction''' is:
+
+* the process of removing physical, spatial, or temporal details<ref name=":1">{{Cite journal|last1=Colburn|first1=Timothy|last2=Shute|first2=Gary|s2cid=5927969|date=5 June 2007|title=Abstraction in Computer Science|journal=Minds and Machines|language=en|volume=17|issue=2|pages=169–184|doi=10.1007/s11023-007-9061-7|issn=0924-6495}}</ref> or [[Attribute (computing)|attributes]] in the study of objects or [[system]]s to focus attention on details of greater importance;<ref name=":0">{{Cite journal|last=Kramer|first=Jeff|s2cid=12481509|date=1 April 2007|title=Is abstraction the key to computing?|journal=Communications of the ACM|volume=50|issue=4|pages=36–42|doi=10.1145/1232743.1232745|issn=0001-0782}}</ref> it is similar in nature to the process of [[generalization]];
+* the creation of [[Abstract and concrete|abstract]] [[concept]]-[[Object (philosophy)|objects]] by mirroring common features or attributes of various non-abstract objects or systems of study<ref name=":0" /> – the result of the process of abstraction.
+
+[[Abstraction|Abstraction, in general]], is a fundamental concept in computer science and [[software development]].<ref>{{Cite journal|last=Ben-Ari|first=Mordechai|date=1 March 1998|title=Constructivism in computer science education|journal=ACM SIGCSE Bulletin|volume=30|issue=1|pages=257, 257–261|doi=10.1145/274790.274308|issn=0097-8418|doi-access=free}}</ref> The process of abstraction can also be referred to as '''modeling''' and is closely related to the concepts of ''[[theory]]'' and ''[[design]]''.<ref>{{Cite journal|last1=Comer|first1=D. E.|last2=Gries|first2=David|last3=Mulder|first3=Michael C.|last4=Tucker|first4=Allen|last5=Turner|first5=A. Joe|last6=Young|first6=Paul R. /Denning|s2cid=723103|date=1 January 1989|title=Computing as a discipline|journal=Communications of the ACM|volume=32|issue=1|pages=9–23|doi=10.1145/63238.63239|issn=0001-0782}}</ref> [[Conceptual model|Models]] can also be considered types of abstractions per their generalization of aspects of [[reality]].
+
+Abstraction in computer science is closely related to [[Abstraction (mathematics)|abstraction in mathematics]] due to their common focus on building abstractions as objects,<ref name=":1" /> but is also related to other notions of abstraction used in other fields [[Abstraction (art)|such as art]].<ref name=":0" />
+
+Abstractions may also refer to real-world objects and systems, rules of [[Computation|computational systems]] or rules of [[programming language]]s that carry or utilize features of abstraction itself, such as:
+
+* the usage of [[data type]]s to perform ''data abstraction'' to separate usage from working representations of [[data structure]]s within [[Computer program|programs]];<ref>{{Cite journal|last=Liskov|first=Barbara|s2cid=14219043|date=1 May 1988|title=Keynote address – data abstraction and hierarchy|journal=ACM SIGPLAN Notices|publisher=ACM|volume=23|pages=17–34|doi=10.1145/62138.62141|isbn=0897912667}}</ref>
+* the concept of [[Procedure (computer science)|procedures, functions, or subroutines]] which represent a specific of implementing [[control flow]] in programs;
+* the rules commonly named "abstraction" that generalize [[Expression (mathematics)|expressions]] using [[Free variables and bound variables|free and bound variables]] in the various versions of [[lambda calculus]];<ref>{{Cite book|title=The lambda calculus : its syntax and semantics|first=Hendrik Pieter|last=Barendregt|date=1984|publisher=North-Holland|isbn=0444867481|edition=Revised|location=Amsterdam|oclc=10559084}}</ref><ref>{{Cite book|title=Lambda calculus with types|first=Hendrik Pieter|last=Barendregt|date=2013|publisher=Cambridge University Press|others=Dekkers, Wil., Statman, Richard., Alessi, Fabio., Association for Symbolic Logic.|isbn=9780521766142|location=Cambridge, UK|oclc=852197712}}</ref>
+* the usage of [[S-expression]]s as an abstraction of data structures and programs in the [[Lisp (programming language)|Lisp programming language]];<ref>{{Cite book|last1=Newell|first1=Allen|last2=Simon|first2=Herbert A.|date=1 January 2007|title=Computer science as empirical inquiry: symbols and search|publisher=ACM|pages=1975|doi=10.1145/1283920.1283930|isbn=9781450310499}}</ref>
+* the process of reorganizing common behavior from non-abstract [[Class (computer programming)|classes]] into "abstract classes" using [[Inheritance (object-oriented programming)|inheritance]] to abstract over [[Inheritance (object-oriented programming)#Subclasses and superclasses|sub-classes]] as seen in the [[Object-oriented programming|object-oriented]] [[C++]] and [[Java (programming language)|Java]] programming languages.
+
+==Rationale==
+Computing mostly operates independently of the concrete world. The hardware implements a [[model of computation]] that is interchangeable with others.{{Citation needed|date=June 2018}} The software is structured in [[software architecture|architecture]]s to enable humans to create the enormous systems by concentrating on a few issues at a time. These architectures are made of specific choices of abstractions. [[Greenspun's Tenth Rule]] is an [[aphorism]] on how such an architecture is both inevitable and complex.
+
+A central form of abstraction in computing is language abstraction: new artificial languages are developed to express specific aspects of a system. ''[[Modeling languages]]'' help in planning. ''[[Computer language]]s'' can be processed with a computer. An example of this abstraction process is the generational development of [[programming language]]s from the [[First-generation programming language|machine language]] to the [[Second-generation programming language|assembly language]] and the [[Third-generation programming language|high-level language]]. Each stage can be used as a stepping stone for the next stage. The language abstraction continues for example in [[scripting language]]s and [[domain-specific programming language]]s.
+
+Within a programming language, some features let the programmer create new abstractions. These include [[subroutine]]s, [[module (programming)|modules]], [[polymorphism (computer science)|polymorphism]], and [[software component]]s. Some other abstractions such as [[software design pattern]]s and [[software architecture#Architecture examples|architectural styles]] remain invisible to a [[translator (computing)|translator]] and operate only in the design of a system.
+
+Some abstractions try to limit the range of concepts a programmer needs to be aware of, by completely hiding the abstractions that they in turn are built on. The software engineer and writer [[Joel Spolsky]] has criticised these efforts by claiming that all abstractions are ''[[leaky abstraction|leaky]]'' – that they can never completely hide the details below;<ref>{{cite web|url=http://www.joelonsoftware.com/articles/LeakyAbstractions.html|title=The Law of Leaky Abstractions|last1=Spolsky|first=Joel}}</ref> however, this does not negate the usefulness of abstraction.
+
+Some abstractions are designed to inter-operate with other abstractions – for example, a programming language may contain a [[foreign function interface]] for making calls to the lower-level language.
+
+==Language features==
+
+===Programming languages===
+{{Main|Programming language}}
+
+Different programming languages provide different types of abstraction, depending on the intended applications for the language. For example:
+
+* In [[object-oriented programming language]]s such as [[C++]], [[Object Pascal]], or [[Java (programming language)|Java]], the concept of '''abstraction''' has itself become a declarative statement – using the [[keyword (computer programming)|keyword]]s ''<code>virtual</code>'' (in [[C++]]) or ''<code>abstract</code>''<ref name="Oracle Java abstract">{{cite web|url=http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html|title=Abstract Methods and Classes|website=The Java™ Tutorials|publisher=Oracle|access-date=4 September 2014}}</ref> and ''<code>interface</code>''<ref name="Oracle Java interface">{{cite web|url=http://docs.oracle.com/javase/tutorial/java/IandI/interfaceAsType.html|title=Using an Interface as a Type|website=The Java™ Tutorials|publisher=Oracle|access-date=4 September 2014}}</ref> (in [[Java (programming language)|Java]]). After such a declaration, it is the responsibility of the programmer to implement a [[Class (computer science)|class]] to instantiate the [[Object (computer science)|object]] of the declaration.
+* [[Functional programming language]]s commonly exhibit abstractions related to functions, such as [[lambda abstraction]]s (making a term into a function of some variable) and [[higher-order function]]s (parameters are functions). <!-- This has to be merged in the following sections. -->
+* Modern members of the Lisp programming language family such as [[Clojure]], [[Scheme (programming language)|Scheme]] and [[Common Lisp]] support [[Macro (computer science)#Syntactic macros|macro systems]] to allow syntactic abstraction. Other programming languages such as [[Scala (programming language)|Scala]] also have macros, or very similar [[metaprogramming]] features (for example, [[Haskell (programming language)|Haskell]] has [[Template Haskell]], and [[OCaml]] has [[MetaOCaml]]). These can allow a programmer to eliminate [[boilerplate code]], abstract away tedious function call sequences, implement new [[Control flow|control flow structures]], and implement [[Domain-specific language|Domain Specific Languages (DSLs)]], which allow domain-specific concepts to be expressed in concise and elegant ways. All of these, when used correctly, improve both the programmer's efficiency and the clarity of the code by making the intended purpose more explicit. A consequence of syntactic abstraction is also that any Lisp dialect and in fact almost any programming language can, in principle, be implemented in any modern Lisp with significantly reduced (but still non-trivial in some cases) effort when compared to "more traditional" programming languages such as [[Python (programming language)|Python]], [[C (programming language)|C]] or [[Java (programming language)|Java]].
+
+===Specification methods===
+{{Main|Formal specification}}
+
+Analysts have developed various methods to formally specify software systems.  Some known methods include:
+
+* Abstract-model based method (VDM, Z);
+* Algebraic techniques (Larch, CLEAR, OBJ, ACT ONE, CASL);
+* Process-based techniques (LOTOS, SDL, Estelle);
+* Trace-based techniques (SPECIAL, TAM);
+* Knowledge-based techniques (Refine, Gist).
+
+===Specification languages===
+{{Main|Specification language}}
+
+Specification languages generally rely on abstractions of one kind or another, since specifications are typically defined earlier in a project, (and at a more abstract level) than an eventual implementation. The [[Unified Modeling Language|UML]] specification language, for example, allows the definition of ''abstract'' classes, which in a waterfall project, remain abstract during the architecture and specification phase of the project.
+
+==Control abstraction==
+{{Main|Control flow}}
+
+Programming languages offer control abstraction as one of the main purposes of their use. Computer machines understand operations at the very low level such as moving some bits from one location of the memory to another location and producing the sum of two sequences of bits. Programming languages allow this to be done in the higher level. For example, consider this statement written in a [[Pascal (programming language)|Pascal]]-like fashion:
+
+:<code>a := (1 + 2) * 5</code>
+
+To a human, this seems a fairly simple and obvious calculation (''"one plus two is three, times five is fifteen"''). However, the low-level steps necessary to carry out this evaluation, and return the value "15", and then assign that value to the variable "a", are actually quite subtle and complex. The values need to be converted to binary representation (often a much more complicated task than one would think) and the calculations decomposed (by the compiler or interpreter) into assembly instructions (again, which are much less intuitive to the programmer: operations such as shifting a binary register left, or adding the binary complement of the contents of one register to another, are simply not how humans think about the abstract arithmetical operations of addition or multiplication). Finally, assigning the resulting value of "15" to the variable labeled "a", so that "a" can be used later, involves additional 'behind-the-scenes' steps of looking up a variable's label and the resultant location in physical or virtual memory, storing the binary representation of "15" to that memory location, etc.
+
+Without control abstraction, a programmer would need to specify ''all'' the register/binary-level steps each time they simply wanted to add or multiply a couple of numbers and assign the result to a variable. Such duplication of effort has two serious negative consequences:
+
+# it forces the programmer to constantly repeat fairly common tasks every time a similar operation is needed
+# it forces the programmer to program for the particular hardware and instruction set
+
+===Structured programming===
+{{Main|Structured programming}}
+
+Structured programming involves the splitting of complex program tasks into smaller pieces with clear flow-control and interfaces between components, with a reduction of the complexity potential for side-effects.
+
+In a simple program, this may aim to ensure that loops have single or obvious exit points and (where possible) to have single exit points from functions and procedures.
+
+In a larger system, it may involve breaking down complex tasks into many different modules. Consider a system which handles payroll on ships and at shore offices:
+
+* The uppermost level may feature a menu of typical end-user operations.
+* Within that could be standalone executables or libraries for tasks such as signing on and off employees or printing checks.
+* Within each of those standalone components there could be many different source files, each containing the program code to handle a part of the problem, with only selected interfaces available to other parts of the program. A sign on program could have source files for each data entry screen and the database interface (which may itself be a standalone third party library or a statically linked set of library routines).
+*Either the database or the payroll application also has to initiate the process of exchanging data with between ship and shore, and that data transfer task will often contain many other components.
+
+These layers produce the effect of isolating the implementation details of one component and its assorted internal methods from the others. Object-oriented programming embraces and extends this concept.
+
+==Data abstraction==
+{{Main|Abstract data type}}
+
+Data abstraction enforces a clear separation between the ''abstract'' properties of a [[data type]] and the ''concrete'' details of its implementation. The abstract properties are those that are visible to client code that makes use of the data type—the ''interface'' to the data type—while the concrete implementation is kept entirely private, and indeed can change, for example to incorporate efficiency improvements over time. The idea is that such changes are not supposed to have any impact on client code, since they involve no difference in the abstract behaviour.
+
+For example, one could define an [[abstract data type]] called ''lookup table'' which uniquely associates ''keys'' with ''values'', and in which values may be retrieved by specifying their corresponding keys. Such a lookup table may be implemented in various ways: as a [[hash table]], a [[binary search tree]], or even a simple linear [[List (computing)|list]] of (key:value) pairs. As far as client code is concerned, the abstract properties of the type are the same in each case.
+
+Of course, this all relies on getting the details of the interface right in the first place, since any changes there can have major impacts on client code. As one way to look at this: the interface forms a ''contract'' on agreed behaviour between the data type and client code; anything not spelled out in the contract is subject to change without notice.
+
+== Manual data abstraction ==
+While much of data abstraction occurs through computer science and automation, there are times when this process is done manually and without programming intervention. One way this can be understood is through data abstraction within the process of conducting a [[systematic review]] of the literature. In this methodology, data is abstracted by one or several abstractors when conducting a [[meta-analysis]], with errors reduced through dual data abstraction followed by independent checking, known as [[adjudication]].<ref>{{Cite journal|last1=E|first1=Jian‐Yu|last2=Saldanha|first2=Ian J.|last3=Canner|first3=Joseph|last4=Schmid|first4=Christopher H.|last5=Le|first5=Jimmy T.|last6=Li|first6=Tianjing|date=2020|title=Adjudication rather than experience of data abstraction matters more in reducing errors in abstracting data in systematic reviews|journal=Research Synthesis Methods|language=en|volume=11|issue=3|pages=354–362|doi=10.1002/jrsm.1396|pmid=31955502|issn=1759-2879}}</ref>
+
+==Abstraction in object oriented programming==
+{{Main|Object (computer science)}}
+
+In [[object-oriented programming]] theory, '''abstraction''' involves the facility to define objects that represent abstract "actors" that can perform work, report on and change their state, and "communicate" with other objects in the system. The term [[Encapsulation (object-oriented programming)|encapsulation]] refers to the hiding of [[state (computer science)|state]] details, but extending the concept of ''data type'' from earlier programming languages to associate ''behavior'' most strongly with the data, and standardizing the way that different data types interact, is the beginning of '''abstraction'''.  When abstraction proceeds into the operations defined, enabling objects of different types to be substituted, it is called [[polymorphism (computer science)|polymorphism]]. When it proceeds in the opposite direction, inside the types or classes, structuring them to simplify a complex set of relationships, it is called [[Delegation (object-oriented programming)|delegation]] or [[Inheritance (computer science)|inheritance]].
+
+Various object-oriented programming languages offer similar facilities for abstraction, all to support a general strategy of [[polymorphism (computer science)|polymorphism]] in object-oriented programming, which includes the substitution of one [[type in object-oriented programming|type]] for another in the same or similar role. Although not as generally supported, a [[configuration in object-oriented programming|configuration]] or image or package may predetermine a great many of these [[name binding|bindings]] at [[compile-time]], [[link-time]], or [[loadtime]]. This would leave only a minimum of such bindings to change at [[Run time (program lifecycle phase)|run-time]].
+
+[[Common Lisp Object System]] or [[Self (programming language)|Self]], for example, feature less of a class-instance distinction and more use of delegation for [[polymorphism in object-oriented programming|polymorphism]]. Individual objects and functions are abstracted more flexibly to better fit with a shared functional heritage from [[Lisp programming language|Lisp]].
+
+C++ exemplifies another extreme: it relies heavily on [[generic programming|templates]] and [[method overloading|overloading]] and other static bindings at compile-time, which in turn has certain flexibility problems.
+
+Although these examples offer alternate strategies for achieving the same abstraction, they do not fundamentally alter the need to support abstract nouns in code – all programming relies on an ability to abstract verbs as functions, nouns as data structures, and either as processes.
+
+Consider for example a sample [[Java (programming language)|Java]] fragment to represent some common farm "animals" to a level of abstraction suitable to model simple aspects of their hunger and feeding. It defines an <code>Animal</code> class to represent both the state of the animal and its functions:
+
+<syntaxhighlight lang="java">
+public class Animal extends LivingThing
+{
+     private Location loc;
+     private double energyReserves;
+
+     public boolean isHungry() {
+         return energyReserves < 2.5;
+     }
+     public void eat(Food food) {
+         // Consume food
+         energyReserves += food.getCalories();
+     }
+     public void moveTo(Location location) {
+         // Move to new location
+         this.loc = location;
+     }
+}
+</syntaxhighlight>
+With the above definition, one could create objects of type {{samp|Animal}} and call their methods like this:
+
+<syntaxhighlight lang="java">
+thePig = new Animal();
+theCow = new Animal();
+if (thePig.isHungry()) {
+    thePig.eat(tableScraps);
+}
+if (theCow.isHungry()) {
+    theCow.eat(grass);
+}
+theCow.moveTo(theBarn);
+</syntaxhighlight>
+In the above example, the class ''<code>Animal</code>'' is an abstraction used in place of an actual animal, ''<code>LivingThing</code>'' is a further abstraction (in this case a generalisation) of ''<code>Animal</code>''.
+
+If one requires a more differentiated hierarchy of animals – to differentiate, say, those who provide milk from those who provide nothing except meat at the end of their lives – that is an intermediary level of abstraction, probably DairyAnimal (cows, goats) who would eat foods suitable to giving good milk, and MeatAnimal (pigs, steers) who would eat foods to give the best meat-quality.
+
+Such an abstraction could remove the need for the application coder to specify the type of food, so s/he could concentrate instead on the feeding schedule. The two classes could be related using [[Inheritance (computer science)|inheritance]] or stand alone, and the programmer could define varying degrees of [[polymorphism (computer science)|polymorphism]] between the two types. These facilities tend to vary drastically between languages, but in general each can achieve anything that is possible with any of the others. A great many operation overloads, data type by data type, can have the same effect at compile-time as any degree of inheritance or other means to achieve polymorphism. The class notation is simply a coder's convenience.
+
+===Object-oriented design===
+{{Main|Object-oriented design}}
+
+Decisions regarding what to abstract and what to keep under the control of the coder become the major concern of object-oriented design and [[domain analysis]]—actually determining the relevant relationships in the real world is the concern of [[object-oriented analysis and design|object-oriented analysis]] or [[legacy analysis]].
+
+In general, to determine appropriate abstraction, one must make many small decisions about scope (domain analysis), determine what other systems one must cooperate with (legacy analysis), then perform a detailed object-oriented analysis which is expressed within project time and budget constraints as an object-oriented design. In our simple example, the domain is the barnyard, the live pigs and cows and their eating habits are the legacy constraints, the detailed analysis is that coders must have the flexibility to feed the animals what is available and thus there is no reason to code the type of food into the class itself, and the design is a single simple Animal class of which pigs and cows are instances with the same functions. A decision to differentiate DairyAnimal would change the detailed analysis but the domain and legacy analysis would be unchanged—thus it is entirely under the control of the programmer, and it is called an abstraction in object-oriented programming as distinct from abstraction in domain or legacy analysis.
+
+==Considerations==
+When discussing [[formal semantics of programming languages]], [[formal methods]] or [[abstract interpretation]], '''abstraction''' refers to the act of considering a less detailed, but safe, definition of the observed program behaviors. For instance, one may observe only the final result of program executions instead of considering all the intermediate steps of executions. Abstraction is defined to a '''concrete''' (more precise) model of execution.
+
+Abstraction may be '''exact''' or '''faithful''' with respect to a property if one can answer a question about the property equally well on the concrete or abstract model. For instance, if one wishes to know what the result of the evaluation of a mathematical expression involving only integers +, -, ×, is worth [[modular arithmetic|modulo]] ''n'', then one needs only perform all operations modulo ''n'' (a familiar form of this abstraction is [[casting out nines]]).
+
+Abstractions, however, though not necessarily '''exact''', should be '''sound'''. That is, it should be possible to get sound answers from them—even though the abstraction may simply yield a result of [[undecidable problem|undecidability]]. For instance, students in a class may be abstracted by their minimal and maximal ages; if one asks whether a certain person belongs to that class, one may simply compare that person's age with the minimal and maximal ages; if his age lies outside the range, one may safely answer that the person does not belong to the class; if it does not, one may only answer "I don't know".
+
+The level of abstraction included in a programming language can influence its overall [[usability]]. The [[Cognitive dimensions]] framework includes the concept of ''abstraction gradient'' in a formalism. This framework allows the designer of a programming language to study the trade-offs between abstraction and other characteristics of the design, and how changes in abstraction influence the language usability.
+
+Abstractions can prove useful when dealing with computer programs, because non-trivial properties of computer programs are essentially [[undecidable problem|undecidable]] (see [[Rice's theorem]]). As a consequence, automatic methods for deriving information on the behavior of computer programs either have to drop termination (on some occasions, they may fail, crash or never yield out a result), soundness (they may provide false information), or precision (they may answer "I don't know" to some questions).
+
+Abstraction is the core concept of [[abstract interpretation]]. [[Model checking]] generally takes place on abstract versions of the studied systems.
+
+==Levels of abstraction==
+{{Main|Abstraction layer}}
+
+Computer science commonly presents ''levels'' (or, less commonly, ''layers'') of abstraction, wherein each level represents a different model of the same information and processes, but with varying amounts of detail. Each level uses a system of expression involving a unique set of objects and compositions that apply only to a particular domain.
+<ref>[[Luciano Floridi]], [http://www.cs.ox.ac.uk/activities/ieg/research_reports/ieg_rr221104.pdf ''Levellism and the Method of Abstraction'']
+IEG – Research Report 22.11.04</ref>
+Each relatively abstract, "higher" level builds on a relatively concrete, "lower" level, which tends to provide an increasingly "granular" representation. For example, gates build on electronic circuits, binary on gates, machine language on binary, programming language on machine language, applications and operating systems on programming languages. Each level is embodied, but not determined, by the level beneath it, making it a language of description that is somewhat self-contained.
+
+===Database systems===
+{{Main|Database management system}}
+
+Since many users of database systems lack in-depth familiarity with computer data-structures, database developers often hide complexity through the following levels:
+
+[[Image:Data abstraction levels.png|thumb|Data abstraction levels of a database system]]
+
+'''Physical level:''' The lowest level of abstraction describes ''how'' a system actually stores data. The physical level describes complex low-level data structures in detail.
+
+'''Logical level:''' The next higher level of abstraction describes ''what'' data the database stores, and what relationships exist among those data. The logical level thus describes an entire database in terms of a small number of relatively simple structures. Although implementation of the simple structures at the logical level may involve complex physical level structures, the user of the logical level does not need to be aware of this complexity. This is referred to as [[physical data independence]]. [[Database administrator]]s, who must decide what information to keep in a database, use the logical level of abstraction.
+
+'''View level:''' The highest level of abstraction describes only part of the entire database. Even though the logical level uses simpler structures, complexity remains because of the variety of information stored in a large database. Many users of a database system do not need all this information; instead, they need to access only a part of the database. The view level of abstraction exists to simplify their interaction with the system. The system may provide many [[view (database)|view]]s for the same database.
+
+===Layered architecture===
+{{Main|Abstraction layer}}
+The ability to provide a [[design]] of different levels of abstraction can
+
+* simplify the design considerably
+* enable different role players to effectively work at various levels of abstraction
+* support the portability of [[software artifact]]s (model-based ideally)
+
+[[Systems design]] and [[Business process modeling|business process design]] can both use this. Some [[Software modeling|design processes]] specifically generate designs that contain various levels of abstraction.
+
+Layered architecture partitions the concerns of the application into stacked groups (layers).
+It is a technique used in designing computer software, hardware, and communications in which system or network components are isolated in layers so that changes can be made in one layer without affecting the others.
+
+==See also==
+* [[Abstraction principle (computer programming)]]
+* [[Abstraction inversion]] for an anti-pattern of one danger in abstraction
+* [[Abstract data type]] for an abstract description of a set of data
+* [[Algorithm]] for an abstract description of a computational procedure
+* [[Bracket abstraction]] for making a term into a function of a variable
+* [[Data modeling]] for structuring data independent of the processes that use it
+* [[Encapsulation (object-oriented programming)|Encapsulation]] for abstractions that hide implementation details
+* [[Greenspun's Tenth Rule]] for an aphorism about an (the?) optimum point in the space of abstractions
+* [[Higher-order function]] for abstraction where functions produce or consume other functions
+* [[Lambda abstraction]] for making a term into a function of some variable
+* [[List of abstractions (computer science)]]
+* [[Program refinement|Refinement]] for the opposite of abstraction in computing
+* [[Integer (computer science)]]
+* [[Heuristic (computer science)]]
+
+==References==
+{{Reflist}}
+{{refbegin}}
+* {{FOLDOC}}
+{{refend}}
+
+==Further reading==
+{{refbegin}}
+* {{cite book|author1=Harold Abelson|author2=Gerald Jay Sussman|author3=Julie Sussman|title=Structure and Interpretation of Computer Programs|url=http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-10.html|access-date=22 June 2012|edition=2|date=25 July 1996|publisher=MIT Press|isbn=978-0-262-01153-2|archive-url=https://web.archive.org/web/20090226050622/http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-10.html|archive-date=26 February 2009|url-status=dead}}
+* {{cite web|last=Spolsky|first=Joel|title=The Law of Leaky Abstractions|url=http://www.joelonsoftware.com/articles/LeakyAbstractions.html|work=Joel on Software|date=11 November 2002}}
+* [http://www.cs.cornell.edu/courses/cs211/2006sp/Lectures/L08-abstraction/08_abstraction.html Abstraction/information hiding] – CS211 course, Cornell University.
+* {{cite book|author=Eric S. Roberts|title=Programming Abstractions in C A Second Course in Computer Science|date=1997}}
+* {{cite web|last=Palermo|first=Jeffrey|title=The Onion Architecture|url=http://jeffreypalermo.com/blog/the-onion-architecture-part-1/|work=Jeffrey Palermo|date=29 July 2008}} 
+*{{Cite journal
+| last1=Vishkin | first1=Uzi
+| journal=Communications of the ACM
+| volume=54
+| issue=1
+| date=January 2011 
+| title=Using simple abstraction to reinvent computing for parallelism
+| pages=75–85
+| doi=10.1145/1866739.1866757
+| doi-access=free
+}}
+{{refend}}
+
+==External links==
+* [https://sites.google.com/site/simulationarchitecture/ SimArch] example of layered architecture for distributed simulation systems.
+
+{{DEFAULTSORT:Abstraction (computer science)}}
+[[Category:Data management]]
+[[Category:Articles with example Java code]]
+[[Category:Abstraction]]
+[[Category:Computer science]]

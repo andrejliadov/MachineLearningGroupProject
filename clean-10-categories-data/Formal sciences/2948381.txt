@@ -1,0 +1,93 @@
+'''BioCreAtIvE''' (A critical assessment of text mining methods in [[molecular biology]]) consists in a community-wide effort for evaluating [[information extraction]] and [[text mining]] developments in the biological domain.<ref>{{Cite journal 
+| last1 = Hirschman | first1 = L. 
+| last2 = Yeh | first2 = A. 
+| last3 = Blaschke | first3 = C. 
+| last4 = Valencia | first4 = A. 
+| title = Overview of BioCreAtIvE: Critical assessment of information extraction for biology 
+| doi = 10.1186/1471-2105-6-S1-S1 
+| journal = BMC Bioinformatics 
+| volume = 6 
+| pages = S1 
+| year = 2005 
+| pmid = 15960821 
+| pmc =1869002 
+}}</ref> 
+
+Three main tasks were posed at the first BioCreAtIvE challenge: the entity extraction task,<ref>{{Cite journal 
+| last1 = Yeh | first1 = A. 
+| last2 = Morgan | first2 = A. 
+| last3 = Colosimo | first3 = M. 
+| last4 = Hirschman | first4 = L. 
+| title = BioCreAtIvE Task 1A: Gene mention finding evaluation 
+| doi = 10.1186/1471-2105-6-S1-S2 
+| journal = BMC Bioinformatics 
+| volume = 6 
+| pages = S2 
+| year = 2005 
+| pmid = 15960832 
+| pmc =1869012 
+}}</ref> the gene name normalization task,<ref>{{Cite journal 
+| last1 = Hirschman | first1 = L. 
+| last2 = Colosimo | first2 = M. 
+| last3 = Morgan | first3 = A. 
+| last4 = Yeh | first4 = A. 
+| title = Overview of BioCreAtIvE task 1B: Normalized gene lists 
+| doi = 10.1186/1471-2105-6-S1-S11 
+| journal = BMC Bioinformatics 
+| volume = 6 
+| pages = S11 
+| year = 2005 
+| pmid = 15960823 
+| pmc =1869004 
+}}</ref><ref>{{Cite journal 
+| last1 = Colosimo | first1 = M. E. 
+| last2 = Morgan | first2 = A. A. 
+| last3 = Yeh | first3 = A. S. 
+| last4 = Colombe | first4 = J. B. 
+| last5 = Hirschman | first5 = L. 
+| title = Data preparation and interannotator agreement: BioCreAtIvE Task 1B 
+| doi = 10.1186/1471-2105-6-S1-S12 
+| journal = BMC Bioinformatics 
+| volume = 6 
+| pages = S12 
+| year = 2005 
+| pmid = 15960824 
+| pmc =1869005 
+}}</ref> and the functional annotation of gene products task.<ref>{{Cite journal 
+| last1 = Blaschke | first1 = C. 
+| last2 = Leon | first2 = E. 
+| last3 = Krallinger | first3 = M. 
+| last4 = Valencia | first4 = A. 
+| title = Evaluation of BioCreAtIvE assessment of task 2 
+| doi = 10.1186/1471-2105-6-S1-S16 
+| journal = BMC Bioinformatics 
+| volume = 6 
+| pages = S16 
+| year = 2005 
+| pmid = 15960828 
+| pmc =1869008 
+}}</ref> The data sets produced by this contest serve as a Gold Standard training and test set to evaluate and train Bio-NER tools and annotation extraction tools.
+
+The second BioCreAtIvE included three tasks organized by [[Lynette Hirschman]] and Alex Morgan of [[MITRE]]; [[Alfonso Valencia]] and [[Martin Krallinger]] of CNIO in Spain; and W. John Wilbur, Lorrie Tanabe and Larry Smith of [[NIH]].
+
+BioCreative V will have 5 different tracks, described at:
+https://biocreative.bioinformatics.udel.edu/events/biocreative-v/CFP/
+
+== See also ==
+
+* [[Biocuration]]
+
+==References==
+{{reflist}}
+==External links==
+*[https://biocreative.bioinformatics.udel.edu/ BioCreAtIve, 2007-2015]
+*[http://biocreative.sourceforge.net BioCreAtIve 2, 2006-2007]
+*[https://web.archive.org/web/20051220211111/http://www.pdg.cnb.uam.es/BioLink/workshop_BioCreative_04/ First BioCreAtIvE workshop, 2004]
+*[https://web.archive.org/web/20060216163236/http://www.biomedcentral.com/1471-2105/6?issue=S1 BMC Bioinformatics special issue : BioCreAtIvE]
+*[https://web.archive.org/web/20060314001046/http://www.pdg.cnb.uam.es/BioLINK/workshop_BioCreative_04/results/agreetment.html  First BioCreAtIvE data download request]
+{{DEFAULTSORT:Biocreative}}
+[[Category:Bioinformatics]]
+[[Category:Information science]]
+
+
+{{bioinformatics-stub}}

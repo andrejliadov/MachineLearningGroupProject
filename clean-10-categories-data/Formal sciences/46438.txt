@@ -1,0 +1,73 @@
+{{short description|Syntatically correct, semantically improper phrase}}
+{{Italictitle}}
+[[File:Syntax tree.svg|thumb|right|300px|alt=Approximate X-Bar representation of ''Colorless green ideas sleep furiously''|Approximate [[X-bar theory|X-Bar]] representation of ''Colorless green ideas sleep furiously''. See [[phrase structure rules]].]]
+
+'''''Colorless green ideas sleep furiously''''' is a sentence composed by [[Noam Chomsky]] in his 1957 book ''[[Syntactic Structures]]'' as an example of a [[sentence (linguistics)|sentence]] that is [[grammatically]] correct, but [[semantically]] [[Nonsense|nonsensical]]. The sentence was originally used in his 1955 thesis ''[[The Logical Structure of Linguistic Theory]]'' and in his 1956 paper "Three Models for the Description of Language".<ref name="chomsky1956">{{Cite journal | last=Chomsky | first=Noam |date=September 1956 | doi=10.1109/TIT.1956.1056813 | title=Three Models for the Description of Language | journal=IRE Transactions on Information Theory | volume=2 |issue=3 |pages=113–124 |url=https://chomsky.info/wp-content/uploads/195609-.pdf}}</ref>{{rp|116}} Although the sentence is grammatically correct, no obvious [[understandable]] meaning can be derived from it, and thus it demonstrates the distinction between [[syntax]] and [[semantics]]. As an example of a [[category mistake]], it was used to show the inadequacy of certain probabilistic models of grammar, and the need for more structured models.
+
+==Details==
+Chomsky writes in his 1957 book ''[[Syntactic Structures]]'': {{quote|
+# Colorless green ideas sleep furiously.
+# *Furiously sleep ideas green colorless.{{efn|In linguistics, an [[asterisk]] is used to denote a sentence that is ungrammatical.}}}}
+
+It is fair to assume that neither sentence (1) nor (2) (nor indeed any part of these sentences) has ever occurred in an English discourse. Hence, in any statistical model for grammaticalness, these sentences will be ruled out on identical grounds as equally "remote" from English. Yet (1), though nonsensical, is grammatical, while (2) is not grammatical.<ref>{{cite book |last= Chomsky |first= Noam |author-link= Noam Chomsky |title= Syntactic Structures |year= 1957 |publisher= Mouton |location= The Hague/Paris | page=15 |isbn= 3-11-017279-8}}</ref><ref name="chomsky1956" />
+
+While the meaninglessness of the sentence is often considered fundamental to Chomsky's point, Chomsky was only relying on the sentences having never been spoken before. Thus, even if one were to ascribe a likely and reasonable meaning to the sentence, the [[grammaticality]] of the sentence is concrete despite being the first time a person had ever uttered the statement, or any part thereof in such a combination. This was used then as a counter-example to the idea that the human speech engine was based upon statistical models, such as a [[Markov chain]], or simple statistics of words following others.
+
+==Attempts at meaningful interpretations==
+The sentence can be partially interpreted through [[polysemy]]. Both ''green'' and ''colorless'' have figurative meanings, which allow ''colorless'' to be interpreted as "nondescript" and ''green'' as either "immature" or pertaining to environmental consciousness. The sentence can therefore be construed as "nondescript immature ideas have violent nightmares", a phrase with less oblique semantics. In particular, the phrase can have legitimate [[Meaning (linguistic)|meaning]] too, if ''green'' is understood to mean "newly formed" and ''sleep'' can be used to figuratively express mental or verbal dormancy. "Furiously" remains problematic when applied to the verb "sleep", since "furiously" denotes "angrily", "violently", and "intensely energetically", meanings which are generally incompatible with sleep, dormancy, and unconscious agents typically construed as conscious ones, e.g. animals or humans, which truly "sleep".<ref>"Furiously" American Heritage Dictionary, 2014. http://dictionary.reference.com/browse/furiously?s=t</ref>
+
+Writers have attempted to provide the sentence meaning through context, one of the first of which were written by Russian-American linguist [[Roman Jakobson]] (1959)<ref>{{cite book|author=Roman Jakobson|author-link=Roman Jakobson|chapter=Boas' view of grammatical meaning|title=The anthropology of Franz Boas; Essays on the Centennial of His Birth|edition=American Anthropological Association, Memoir LXXX|location=[[Menasha, Wisconsin]]|publisher=[[American Anthropological Association]]|year=1959|pages=134-145}}</ref> and Chinese linguist [[Yuen Ren Chao]] (1997).<ref>{{cite web | last= Chao | first= Yuen Ren | author-link= Yuen Ren Chao | title= Making Sense Out of Nonsense | url=http://www-linguistics.stanford.edu/Archives/Sesquipedalian/1996-97/msg00033.html  | work=The Sesquipedalian, vol. VII, no. 32 (June 12, 1997) | accessdate=2006-08-30 |archive-url = https://web.archive.org/web/20060830210332/http://www-linguistics.stanford.edu/Archives/Sesquipedalian/1996-97/msg00033.html |archive-date = 2006-08-30}}</ref> [[John Hollander]] wrote a poem titled [http://web.mit.edu/24.900/www/poem.html "Coiled Alizarine"] in his book ''The Night Mirror'' which ends with Chomsky's sentence. [[Clive James]] wrote a poem titled "A Line and a Theme from Noam Chomsky" in his book ''Other Passports: Poems 1958–1985''. It opens with Chomsky's second meaningless sentence and discusses the [[Vietnam War]].
+
+In 1985, a literary competition was held at [[Stanford University]] in which the contestants were invited to make Chomsky's sentence meaningful using not more than 100 words of prose or 14 lines of verse.<ref>{{cite web | url=http://www.linguistlist.org/issues/2/2-457.html#2 | title=LINGUIST List 2.457  | date= 1991-09-03| accessdate=2007-03-14 }}</ref>
+<!-- I've made some changes here to dictate sensical meaning vs. other meaning.  It's hard to argue that the sentence cannot have a meaning (meaningless) while it's easy to argue that it is patent nonsense (nonsensical).  The quote of Chomsky above indicates he felt the sentence to be nonsensical, not meaningless.  As such, providing any meaning at all to the sentence would be a counter-example to the position that it is meaningless, yet one would have to actually give a common and clear sensical meaning to be a counter-example of nonsense. [but "sensical" is not really a word] oops :( it's a colloquial word, but not appropriate for an encyclopedia entry. -->
+An example entry from the competition, from C.M. Street, is:
+{{quote|It can only be the thought of verdure to come, which prompts us in the autumn to buy these dormant white lumps of vegetable matter covered by a brown papery skin, and lovingly to plant them and care for them. It is a marvel to me that under this cover they are labouring unseen at such a rate within to give us the sudden awesome beauty of spring flowering bulbs. While winter reigns the earth reposes but these colourless green ideas sleep furiously.}}
+
+==Statistical challenges==
+Fernando Pereira of the [[University of Pennsylvania]] has fitted a simple statistical Markov model to a body of newspaper text, and shown that under this model, ''Furiously sleep ideas green colorless'' is about 200,000 times less probable than ''Colorless green ideas sleep furiously''.<ref>{{Cite journal |last=Pereira |first=Fernando |year=2000 |url=http://www.cis.upenn.edu/%7epereira/papers/rsoc.pdf |title=Formal grammar and information theory: together again? |journal=Philosophical Transactions of the Royal Society |volume=358 |issue=1769 |pages=1239–1253 |doi=10.1098/rsta.2000.0583 |access-date=2006-03-28 |archive-url=https://web.archive.org/web/20060624100428/http://www.cis.upenn.edu/%7epereira/papers/rsoc.pdf |archive-date=2006-06-24 |url-status=dead }}. See also [http://itre.cis.upenn.edu/~myl/languagelog/archives/000025.html this post] at [[Language Log]].</ref>
+
+This statistical model defines a similarity metric, whereby sentences which are more like those within a corpus in certain respects are assigned higher values than sentences less alike. Pereira's model assigns an ungrammatical version of the same sentence a lower probability than the syntactically correct form demonstrating that statistical models can learn grammaticality distinctions with minimal linguistic assumptions. However, it is not clear that the model assigns every ungrammatical sentence a lower probability than every grammatical sentence. That is, ''colorless green ideas sleep furiously'' may still be statistically more "remote" from English than some ungrammatical sentences. To this, it may be argued that ''no'' current theory of grammar is capable of distinguishing ''all'' grammatical English sentences from ungrammatical ones.{{citation needed|date=June 2015}}
+
+==Related and similar examples==
+The [[France|French]] [[syntax|syntactician]] [[Lucien Tesnière]] came up with the [[French language]] sentence "Le silence vertébral indispose la voile licite" ("The vertebral silence indisposes the licit sail").
+
+The game of ''[[exquisite corpse]]'' is a method for generating nonsense sentences. It was named after the first sentence generated in the game in 1925: ''Le cadavre exquis boira le vin nouveau'' (the exquisite corpse will drink the new wine).
+
+In the popular game of "[[Mad Libs]]", a chosen player asks each other player to provide parts of speech without providing any contextual information (e.g., "Give me a proper noun", or "Give me an adjective"), and these words are inserted into pre-composed sentences with a correct grammatical structure, but in which certain words have been omitted. The humor of the game is in the generation of sentences which are grammatical but which are meaningless or have absurd or ambiguous meanings (such as 'loud sharks'). The game also tends to generate humorous [[double entendres]].
+
+There are likely earlier examples of such sentences, possibly from the philosophy of language literature, but not necessarily uncontroversial ones, given that the focus has been mostly on borderline cases. For example, followers of [[logical positivism]] hold that "metaphysical" (i.e. not [[Empirical validation|empirically verifiable]]) statements are simply meaningless; e.g. [[Rudolf Carnap]] wrote an article where he argued that almost every sentence from [[Martin Heidegger|Heidegger]] was grammatically correct, yet meaningless. 
+
+The philosopher [[Bertrand Russell]] used the sentence "Quadruplicity drinks procrastination" in his "An Inquiry into Meaning and Truth" from 1940, to make a similar point;<ref>{{cite book | url=https://archive.org/details/BertrandRussell-AnInquaryIntoMeaningAndTruth | author=Bertrand Russell | title=An Inquiry into Meaning and Truth | location=New York | publisher=W. W. Norton & Company | year=1940 }} Here: [https://archive.org/details/BertrandRussell-AnInquaryIntoMeaningAndTruth/page/n179 p.166]</ref> [[W.V. Quine]] took issue with him on the grounds that for a sentence to be false is nothing more than for it not to be true; and since quadruplicity doesn't drink ''anything'', the sentence is simply false, not meaningless.<ref>{{cite book | author=Willard Van Orman Quine | title=Theories and Things | location=Cambridge | publisher=Harvard Univiversity Press | year=1981 }} Here: Ch.12 "On the Individuation of Attributes", p.110</ref>
+
+In a sketch about linguistics, British comedy duo [[Fry and Laurie]] used the nonsensical sentence "Hold the newsreader's nose squarely, waiter, or friendly milk will countermand my trousers."<ref>http://www.bbc.com/future/story/20160906-the-people-who-study-the-meaning-of-nonsense</ref>
+
+Another approach is to create a syntactically-correct, easily parsable sentence using nonsense words; a famous such example is "[[Gostak|The gostak distims the doshes]]". [[Lewis Carroll]]'s [[Jabberwocky]] is also famous for using this technique, although in this case for literary purposes; similar sentences used in neuroscience experiments are called [[Jabberwocky sentence]]s. In Russian schools of linguistics, the ''[[glokaya kuzdra]]'' example has similar characteristics.
+
+Other arguably "meaningless" utterances are ones that make sense, are grammatical, but have no reference to the present state of the world, such as Russell's ''The present [[King of France]] is bald'' from "[[On Denoting]]"<ref>{{Cite journal | last = Russell  | first = Bertrand  | author-link = Bertrand Russell   | title = On Denoting  | journal = Mind  | volume = 14  | issue = 56  | pages = 479–493  | publisher = Oxford University Press on behalf of the Mind Association | location = Oxford  | date = October 1905  | doi = 10.1093/mind/XIV.4.479 | jstor = 2248381 | issn = 0026-4423| url = https://zenodo.org/record/1431813 }} Here: p.483</ref> (also see [[definite description]]).
+
+The ''[[Star Trek: The Next Generation]]'' episode "[[Darmok]]" features a race that communicates entirely by referencing folklore and stories. While the vessel's [[universal translator]] correctly translates the characters and places from these stories, it fails to decipher the intended meaning, leaving Captain Picard unable to understand the alien.
+
+==See also==
+* [[List of linguistic example sentences]]
+*[[Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo]]
+*[[James while John had had had had had had had had had had had a better effect on the teacher]]
+*[[Pseudoword]]
+
+==Notes==
+{{notelist}}
+
+==References==
+{{reflist}}
+<!--*Chomsky, Noam. 1965. ''Aspects of the Theory of Syntax''. MIT Press.-->
+
+{{Noam Chomsky}}
+
+[[Category:Semantics]]
+[[Category:Syntax]]
+[[Category:English phrases]]
+[[Category:Noam Chomsky]]
+[[Category:Logic]]
+[[Category:Professional humor]]
+[[Category:Ambiguity]]
+[[Category:1950s neologisms]]
+[[Category:Nonsense]]

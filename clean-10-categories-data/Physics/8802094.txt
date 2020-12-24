@@ -1,0 +1,49 @@
+{{More references|date=October 2018}}
+[[Image:Photon Cross Sections.png|thumb|right|300px|'''Cross-sections''' values for all elements with [[atomic number]] Z smaller than 100 collected for photons with energies from 1 keV to 20 MeV. The discontinuities in the values are due to [[absorption edge]]s which were also shown.]]
+
+'''Absorption cross section''' is a measure for the probability of an absorption process. More generally, the term [[cross section (physics)|cross section]] is used in physics to quantify the probability of a certain particle-particle interaction, e.g., [[scattering]], [[absorption (electromagnetic radiation)|electromagnetic absorption]], etc. (Note that light in this context is described as consisting of [[elementary particle|particle]]s, i.e., [[photon]]s.) In honor of the fundamental contribution of [[Maria Goeppert Mayer]] to this area, the unit for the two-photon absorption cross section is named the "GM". One GM is 10<sup>−50</sup> cm<sup>4</sup> s photon<sup>−1</sup>.<ref>{{cite web |url=http://www.dtic.mil/cgi-bin/GetTRDoc?AD=ADA473083 |title=Two-Photon Absorption Measurements: Establishing Reference Standards. |date=June 8, 2007 |accessdate=September 14, 2013 |publisher=[[Australian National University]] }}</ref>
+
+In the context of [[ozone]] shielding of [[ultraviolet light]], '''absorption cross section''' is the ability of a [[molecule]] to absorb a photon of a particular [[wavelength]] and [[polarization (waves)|polarization]]. Analogously, in the context of [[nuclear engineering]] it refers to the probability of a particle (usually a [[neutron]]) being absorbed by a nucleus.  Although the units are given as an area, it does not refer to an actual size area, at least partially because the [[density]] or state of the target molecule will affect the [[probability]] of absorption. Quantitatively, the number ''dN'' of photons absorbed, between the points ''x'' and ''x'' + ''dx'' along the path of a beam is the product of the number ''N'' of photons penetrating to depth ''x'' times the number ''n'' of absorbing molecules per unit volume times the absorption cross section σ:
+
+:<math>\frac{dN}{dx}= -N n \sigma</math>.
+
+The absorption cross-section is closely related to [[molar absorptivity]] and [[mass absorption coefficient]]. For a given particle and its energy, the absorption cross-section of the target material can be calculated from mass absorption coefficient using:
+
+:<math>\sigma= (\mu/\rho) m_a/N_A</math>
+
+where: 
+* <math>\mu/\rho</math> is the mass absorption coefficient
+* <math>m_a</math> is the [[atomic mass|atomic molar mass]] in g/mol
+* <math>N_A</math> is [[Avogadro's number]] and is the number of molecules per mole
+
+
+This is also commonly expressed as:
+
+:<math>\sigma= \alpha/n</math>
+
+where: 
+* <math>\alpha</math> is the [[absorption coefficient]]
+* <math>n</math> is the atomic number density
+
+==See also==
+{{div col|colwidth=30em}}
+* [[Cross section (physics)]]
+* [[Photoionisation cross section]]
+* [[Nuclear cross section]]
+* [[Neutron cross section]]
+* [[Mean free path]]
+* [[Compton scattering]]
+* [[Transmittance]]
+* [[Attenuation]]
+* [[Beer-Lambert law]]
+* [[High energy X-rays]]
+* [[Attenuation coefficient]]
+* [[Absorption spectroscopy]]
+{{div col end}}
+
+==References==
+{{reflist}}
+
+[[Category:Electromagnetism]]
+[[Category:Nuclear physics]]
+[[Category:Scattering, absorption and radiative transfer (optics)]]

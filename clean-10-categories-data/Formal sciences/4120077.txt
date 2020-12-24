@@ -1,0 +1,11 @@
+{{Short description|Rule that is never worse and sometimes better}}In [[decision theory]], a decision rule is said to '''dominate''' another if the performance of the former is sometimes better, and never worse, than that of the latter.
+
+Formally, let <math>\delta_1</math> and <math>\delta_2</math> be two [[decision theory|decision rules]], and let <math>R(\theta, \delta)</math> be the [[risk function|risk]] of rule <math>\delta</math> for parameter <math>\theta</math>. The decision rule <math>\delta_1</math> is said to dominate the rule <math>\delta_2</math> if <math>R(\theta,\delta_1)\le R(\theta,\delta_2)</math> for all <math>\theta</math>, and the inequality is strict for some <math>\theta</math>.<ref name="fusion">{{citation|title=Data Fusion in Robotics & Machine Intelligence|first1=Mongi|last1=Abadi|last2=Gonzalez|first2=Rafael C.|publisher=Academic Press|year=1992|isbn=9780323138352|page=227|url=https://books.google.com/books?id=47kOwU1xvMMC&pg=PA227}}.</ref>
+
+This defines a [[partial order]] on decision rules; the [[maximal element]]s with respect to this order are called ''[[admissible decision rule]]s.''<ref name="fusion"/>
+
+==References==
+{{reflist}}
+
+{{statistics-stub}}
+[[Category:Decision theory]]

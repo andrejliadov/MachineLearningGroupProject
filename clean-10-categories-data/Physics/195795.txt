@@ -1,0 +1,677 @@
+{{about|metric tensors on real Riemannian manifolds|Lorentzian metric tensors satisfying the [[Einstein field equations]] of general relativity|Metric tensor (general relativity)|metric tensors on complex Riemannian manifolds|Hermitian manifold#Formal definition}}
+
+In the [[mathematics|mathematical]] field of [[differential geometry]], one definition<!-- Should there be a parallel article from the perspective of covariant tensors? --> of a '''metric tensor''' is a type of function which takes as input a pair of [[tangent vector]]s {{mvar|v}} and {{mvar|w}} at a point of a surface (or higher dimensional [[differentiable manifold]]) and produces a [[real number]] [[scalar (mathematics)|scalar]] {{math|''g''(''v'', ''w'')}} in a way that generalizes many of the familiar properties of the [[dot product]] of [[Vector (geometry)|vectors]] in [[Euclidean space]].  In the same way as a dot product, metric tensors are used to define the length of and angle between tangent vectors.  Through [[integral|integration]], the metric tensor allows one to define and compute the length of curves on the manifold.
+
+A metric tensor is called ''positive-definite'' if it assigns a positive value {{math|''g''(''v'', ''v'') > 0}} to every nonzero vector {{mvar|v}}.  A manifold equipped with a positive-definite metric tensor is known as a [[Riemannian manifold]].  On a Riemannian manifold, the curve connecting two points that (locally) has the smallest length is called a [[geodesic]], and its length is the distance that a passenger in the manifold needs to traverse to go from one point to the other.  Equipped with this notion of length, a Riemannian manifold is a [[metric space]], meaning that it has a [[metric (mathematics)|distance function]] {{math|''d''(''p'', ''q'')}} whose value at a pair of points {{mvar|p}} and {{mvar|q}} is the distance from {{mvar|p}} to {{mvar|q}}.  Conversely, the metric tensor itself is the [[derivative]] of the distance function (taken in a suitable manner).  Thus the metric tensor gives the ''infinitesimal'' distance on the manifold.
+
+While the notion of a metric tensor was known in some sense to mathematicians such as [[Carl Gauss]] from the early 19th century, it was not until the early 20th century that its properties as a [[tensor]] were understood by, in particular, [[Gregorio Ricci-Curbastro]] and [[Tullio Levi-Civita]], who first codified the notion of a tensor.  The metric tensor is an example of a [[tensor field]].
+
+The components of a metric tensor in a [[coordinate basis]] take on the form of a [[symmetric matrix]] whose entries transform [[covariance and contravariance of vectors|covariantly]] under changes to the coordinate system.  Thus a metric tensor is a covariant [[symmetric tensor]].  From the [[Coordinate-free|coordinate-independent]] point of view, a metric tensor field is defined to be a [[nondegenerate form|nondegenerate]] [[symmetric bilinear form]] on each tangent space that varies [[smooth function|smoothly]] from point to point.
+
+==Introduction==
+[[Carl Friedrich Gauss]] in his 1827 ''[[#CITEREFGauss1827|Disquisitiones generales circa superficies curvas]]'' (''General investigations of curved surfaces'') considered a surface [[parametric surface|parametrically]], with the [[Cartesian coordinates]] {{mvar|x}}, {{mvar|y}}, and {{mvar|z}} of points on the surface depending on two auxiliary variables {{mvar|u}} and {{mvar|v}}. Thus a parametric surface is (in today's terms) a [[vector-valued function]]
+
+:<math>\vec{r}(u,\,v) = \bigl( x(u,\,v),\, y(u,\,v),\, z(u,\,v) \bigr)</math>
+
+depending on an [[ordered pair]] of real variables {{math|(''u'', ''v'')}}, and defined in an [[open set]] {{mvar|D}} in the {{mvar|uv}}-plane. One of the chief aims of Gauss's investigations was to deduce those features of the surface which could be described by a function which would remain unchanged if the surface underwent a transformation in space (such as bending the surface without stretching it), or a change in the particular parametric form of the same geometrical surface.
+
+One natural such invariant quantity is the [[arclength|length of a curve]] drawn along the surface. Another is the [[angle]] between a pair of curves drawn along the surface and meeting at a common point. A third such quantity is the [[area]] of a piece of the surface. The study of these invariants of a surface led Gauss to introduce the predecessor of the modern notion of the metric tensor.
+
+===Arc length===
+If the variables {{mvar|u}} and {{mvar|v}} are taken to depend on a third variable, {{mvar|t}}, taking values in an [[interval (mathematics)|interval]] {{math|[''a'', ''b'']}}, then {{math|{{vec|''r''}}(''u''(''t''), ''v''(''t''))}} will trace out a [[parametric curve]] in parametric surface {{mvar|M}}. The [[arc length]] of that curve is given by the [[integral]]
+
+: <math> \begin{align}
+  s &= \int_a^b\left\|\frac{d}{dt}\vec{r}(u(t),v(t))\right\|\,dt \\[5pt]
+    &= \int_a^b \sqrt{u'(t)^2\,\vec{r}_u\cdot\vec{r}_u + 2u'(t)v'(t)\, \vec{r}_u\cdot\vec{r}_v + v'(t)^2\,\vec{r}_v\cdot\vec{r}_v}\, dt \,,
+\end{align}</math>
+
+where <math> \left\| \cdot \right\| </math> represents the [[Norm (mathematics)#Euclidean norm|Euclidean norm]]. Here the [[chain rule]] has been applied, and the subscripts denote [[partial derivative]]s:
+
+:<math>\vec{r}_u = \frac{\partial \vec{r}}{\partial u}\,, \quad \vec{r}_v = \frac{\partial \vec{r}}{\partial v}\,.</math>
+
+The integrand is the restriction<ref>More precisely, the integrand is the [[pullback (differential geometry)|pullback]] of this differential to the curve.</ref> to the curve of the square root of the ([[quadratic form|quadratic]]) [[differential (infinitesimal)|differential]]
+
+{{NumBlk|:|<math>(ds)^2 = E \,(du)^2 + 2F \,du\, dv + G\, (dv)^2 ,</math>|{{EquationRef|1}}}}
+
+where
+
+{{NumBlk|:|<math>
+  E = \vec r_u \cdot \vec r_u, \quad
+  F = \vec r_u \cdot \vec r_v , \quad
+  G = \vec r_v \cdot \vec r_v .
+</math>|{{EquationRef|2}}}}
+
+The quantity {{mvar|ds}} in ({{EquationNote|1}}) is called the [[line element]], while {{math|''ds''<sup>2</sup>}} is called the [[first fundamental form]] of {{mvar|M}}. Intuitively, it represents the [[principal part]] of the square of the displacement undergone by {{math|{{vec|''r''}}(''u'', ''v'')}} when {{mvar|u}} is increased by {{mvar|du}} units, and {{mvar|v}} is increased by {{mvar|dv}} units.
+
+Using matrix notation, the first fundamental form becomes
+:<math>ds^2 =
+  \begin{bmatrix} du & dv \end{bmatrix}
+  \begin{bmatrix} E & F \\ F & G \end{bmatrix}
+  \begin{bmatrix} du \\ dv \end{bmatrix}
+</math>
+
+===Coordinate transformations===
+Suppose now that a different parameterization is selected, by allowing {{mvar|u}} and {{mvar|v}} to depend on another pair of variables {{math|''u''′}} and {{math|''v''′}}. Then the analog of ({{EquationNote|2}}) for the new variables is
+{{NumBlk|:|<math>
+  E' = \vec r_{u'} \cdot \vec r_{u'}, \quad
+  F' = \vec r_{u'} \cdot \vec r_{v'}, \quad
+  G' = \vec r_{v'} \cdot \vec r_{v'}.
+</math>|{{EquationRef|2'}}}}
+
+The [[chain rule]] relates {{math|''E''′}}, {{math|''F''′}}, and {{math|''G''′}} to {{mvar|E}}, {{mvar|F}}, and {{mvar|G}} via the [[matrix (mathematics)|matrix]] equation
+
+{{NumBlk|:|<math>\begin{bmatrix} E' & F' \\ F' & G' \end{bmatrix} =
+  \begin{bmatrix}
+    \frac{\partial u}{\partial u'} & \frac{\partial u}{\partial v'} \\
+    \frac{\partial v}{\partial u'} & \frac{\partial v}{\partial v'}
+  \end{bmatrix}^\mathsf{T}
+  \begin{bmatrix} E & F \\ F & G \end{bmatrix}
+  \begin{bmatrix}
+    \frac{\partial u}{\partial u'} & \frac{\partial u}{\partial v'} \\
+    \frac{\partial v}{\partial u'} & \frac{\partial v}{\partial v'}
+  \end{bmatrix}
+</math>|{{EquationRef|3}}}}
+
+where the superscript T denotes the [[matrix transpose]]. The matrix with the coefficients {{mvar|E}}, {{mvar|F}}, and {{mvar|G}} arranged in this way therefore transforms by the [[Jacobian matrix]] of the coordinate change
+
+:<math>
+  J = \begin{bmatrix}
+    \frac{\partial u}{\partial u'} & \frac{\partial u}{\partial v'} \\
+    \frac{\partial v}{\partial u'} & \frac{\partial v}{\partial v'}
+\end{bmatrix}\,.</math>
+
+A matrix which transforms in this way is one kind of what is called a [[tensor]]. The matrix
+
+:<math>\begin{bmatrix} E & F \\ F & G \end{bmatrix}</math>
+
+with the transformation law ({{EquationNote|3}}) is known as the metric tensor of the surface.
+
+===Invariance of arclength under coordinate transformations===
+{{harvtxt|Ricci-Curbastro|Levi-Civita|1900}} first observed the significance of a system of coefficients {{mvar|E}}, {{mvar|F}}, and {{mvar|G}}, that transformed in this way on passing from one system of coordinates to another. The upshot is that the first fundamental form ({{EquationNote|1}}) is ''invariant'' under changes in the coordinate system, and that this follows exclusively from the transformation properties of {{mvar|E}}, {{mvar|F}}, and {{mvar|G}}. Indeed, by the chain rule,
+
+:<math>\begin{bmatrix} du \\ dv \end{bmatrix} =
+  \begin{bmatrix}
+    \dfrac{\partial u}{\partial u'} & \dfrac{\partial u}{\partial v'} \\
+    \dfrac{\partial v}{\partial u'} & \dfrac{\partial v}{\partial v'}
+  \end{bmatrix}
+  \begin{bmatrix} du' \\ dv' \end{bmatrix}
+</math>
+
+so that
+
+:<math>\begin{align}
+  ds^2
+  &=
+    \begin{bmatrix} du & dv \end{bmatrix}
+    \begin{bmatrix} E & F \\ F & G \end{bmatrix}
+    \begin{bmatrix} du \\ dv \end{bmatrix} \\[6pt]
+  &=
+    \begin{bmatrix} du' & dv' \end{bmatrix}
+    \begin{bmatrix}
+      \dfrac{\partial u}{\partial u'} & \dfrac{\partial u}{\partial v'} \\[6pt]
+      \dfrac{\partial v}{\partial u'} & \dfrac{\partial v}{\partial v'}
+    \end{bmatrix}^\mathsf{T}
+    \begin{bmatrix} E & F \\ F & G \end{bmatrix}
+    \begin{bmatrix}
+      \dfrac{\partial u}{\partial u'} & \dfrac{\partial u}{\partial v'} \\[6pt]
+      \dfrac{\partial v}{\partial u'} & \dfrac{\partial v}{\partial v'}
+    \end{bmatrix}
+    \begin{bmatrix} du' \\ dv' \end{bmatrix} \\[6pt]
+  &=
+    \begin{bmatrix} du' & dv' \end{bmatrix}
+    \begin{bmatrix} E' & F' \\ F' & G' \end{bmatrix}
+    \begin{bmatrix} du' \\ dv' \end{bmatrix}\\[6pt]
+  &= (ds')^2 \,.
+\end{align}</math>
+
+===Length and angle===
+Another interpretation of the metric tensor, also considered by Gauss, is that it provides a way in which to compute the length of [[tangent vector]]s to the surface, as well as the angle between two tangent vectors. In contemporary terms, the metric tensor allows one to compute the [[dot product]] of tangent vectors in a manner independent of the parametric description of the surface. Any tangent vector at a point of the parametric surface {{mvar|M}} can be written in the form
+
+:<math>\mathbf{p} = p_1\vec{r}_u + p_2\vec{r}_v</math>
+
+for suitable real numbers {{math|''p''<sub>1</sub>}} and {{math|''p''<sub>2</sub>}}. If two tangent vectors are given:
+
+:<math>\begin{align}
+  \mathbf{a} &= a_1\vec{r}_u + a_2\vec{r}_v \\
+  \mathbf{b} &= b_1\vec{r}_u + b_2\vec{r}_v
+\end{align}</math>
+
+then using the [[bilinear transform|bilinearity]] of the dot product,
+
+:<math>\begin{align}
+  \mathbf{a} \cdot \mathbf{b}
+    &= a_1 b_1 \vec{r}_u\cdot\vec{r}_u + a_1b_2 \vec{r}_u\cdot\vec{r}_v + b_1a_2 \vec{r}_v\cdot\vec{r}_u + a_2 b_2 \vec{r}_v\cdot\vec{r}_v \\[8pt]
+    &= a_1 b_1 E + a_1b_2 F + b_1a_2 F + a_2b_2G \\[8pt]
+    &= \begin{bmatrix} a_1 & a_2 \end{bmatrix}
+         \begin{bmatrix} E & F \\ F & G \end{bmatrix}
+         \begin{bmatrix} b_1 \\ b_2 \end{bmatrix} \,.
+\end{align}</math>
+
+This is plainly a function of the four variables {{math|''a''<sub>1</sub>}}, {{math|''b''<sub>1</sub>}}, {{math|''a''<sub>2</sub>}}, and {{math|''b''<sub>2</sub>}}. It is more profitably viewed, however, as a function that takes a pair of arguments {{math|'''a''' {{=}} [''a''<sub>1</sub> ''a''<sub>2</sub>]}} and {{math|'''b''' {{=}} [''b''<sub>1</sub> ''b''<sub>2</sub>]}} which are vectors in the {{mvar|uv}}-plane. That is, put
+
+:<math>g(\mathbf{a}, \mathbf{b}) = a_1b_1 E + a_1b_2 F + b_1a_2 F + a_2b_2G \,.</math>
+
+This is a [[symmetric function]] in {{math|'''a'''}} and {{math|'''b'''}}, meaning that
+
+:<math>g(\mathbf{a}, \mathbf{b}) = g(\mathbf{b}, \mathbf{a})\,.</math>
+
+It is also [[bilinear form|bilinear]], meaning that it is [[linear functional|linear]] in each variable {{math|'''a'''}} and {{math|'''b'''}} separately. That is,
+
+:<math>\begin{align}
+  g\left(\lambda\mathbf{a} + \mu\mathbf{a}', \mathbf{b}\right) &= \lambda g(\mathbf{a}, \mathbf{b}) + \mu g\left(\mathbf{a}', \mathbf{b}\right),\quad\text{and} \\
+  g\left(\mathbf{a}, \lambda\mathbf{b} + \mu\mathbf{b}'\right) &= \lambda g(\mathbf{a}, \mathbf{b}) + \mu g\left(\mathbf{a}, \mathbf{b}'\right)
+\end{align}</math>
+
+for any vectors {{math|'''a'''}}, {{math|'''a'''′}}, {{math|'''b'''}}, and {{math|'''b'''′}} in the {{mvar|uv}} plane, and any real numbers {{mvar|μ}} and {{mvar|λ}}.
+
+In particular, the length of a tangent vector {{math|'''a'''}} is given by
+
+:<math> \left\| \mathbf{a} \right\| = \sqrt{g(\mathbf{a}, \mathbf{a})}</math>
+
+and the angle {{mvar|θ}} between two vectors {{math|'''a'''}} and {{math|'''b'''}} is calculated by
+
+:<math>\cos(\theta) = \frac{g(\mathbf{a}, \mathbf{b})}{ \left\| \mathbf{a} \right\| \left\| \mathbf{b} \right\| } \,.</math>
+
+===Area===
+The [[surface area]] is another numerical quantity which should depend only on the surface itself, and not on how it is parameterized. If the surface {{mvar|M}} is parameterized by the function {{math|{{vec|''r''}}(''u'', ''v'')}} over the domain {{mvar|D}} in the {{mvar|uv}}-plane, then the surface area of {{mvar|M}} is given by the integral
+
+:<math>\iint_D \left|\vec{r}_u \times \vec{r}_v\right|\,du\,dv</math>
+
+where {{math|×}} denotes the [[cross product]], and the absolute value denotes the length of a vector in Euclidean space. By [[Lagrange's identity]] for the cross product, the integral can be written
+
+:<math>\begin{align}
+       &\iint_D \sqrt{\left(\vec{r}_u\cdot\vec{r}_u\right) \left(\vec{r}_v\cdot\vec{r}_v\right) - \left(\vec{r}_u\cdot\vec{r}_v\right)^2}\,du\,dv \\[5pt]
+   ={} &\iint_D \sqrt{EG - F^2}\,du\,dv\\[5pt]
+   ={} &\iint_D \sqrt{\det \begin{bmatrix} E & F \\ F & G \end{bmatrix}}\, du\, dv
+\end{align}</math>
+
+where {{math|det}} is the [[determinant]].
+
+==Definition==
+Let {{mvar|M}} be a [[smooth manifold]] of dimension {{mvar|n}}; for instance a [[surface (differential geometry)|surface]] (in the case {{math|''n'' {{=}} 2}}) or [[hypersurface]] in the [[Cartesian space]] {{math|'''ℝ'''<sup>''n'' + 1</sup>}}. At each point {{math|''p'' ∈ ''M''}} there is a [[vector space]] {{math|T<sub>''p''</sub>''M''}}, called the [[tangent space]], consisting of all tangent vectors to the manifold at the point {{mvar|p}}. A metric tensor at {{mvar|p}} is a function {{math|''g''<sub>''p''</sub>(''X''<sub>''p''</sub>, ''Y''<sub>''p''</sub>)}} which takes as inputs a pair of tangent vectors {{math|''X''<sub>''p''</sub>}} and {{math|''Y''<sub>''p''</sub>}} at {{mvar|p}}, and produces as an output a [[real number]] ([[scalar (mathematics)|scalar]]), so that the following conditions are satisfied:
+* {{math|''g''<sub>''p''</sub>}} is [[bilinear form|bilinear]]. A function of two vector arguments is bilinear if it is linear separately in each argument. Thus if {{math|''U''<sub>''p''</sub>}}, {{math|''V''<sub>''p''</sub>}}, {{math|''Y''<sub>''p''</sub>}} are three tangent vectors at {{mvar|p}} and {{mvar|a}} and {{mvar|b}} are real numbers, then
+*:<math>\begin{align}
+  g_p\left(aU_p + bV_p, Y_p\right) &= ag_p\left(U_p, Y_p\right) + bg_p\left(V_p, Y_p\right) \,, \quad \text{and} \\
+  g_p\left(Y_p, aU_p + bV_p\right) &= ag_p\left(Y_p, U_p\right) + bg_p\left(Y_p, V_p\right) \,.
+\end{align}</math>
+* {{math|''g''<sub>''p''</sub>}} is [[symmetric function|symmetric]].<ref>In several formulations of [[classical unified field theories]], the metric tensor was allowed to be non-symmetric; however, the antisymmetric part of such a tensor plays no role in the contexts described here, so it will not be further considered.</ref> A function of two vector arguments is symmetric provided that for all vectors {{math|''X''<sub>''p''</sub>}} and {{math|''Y''<sub>''p''</sub>}},
+*:<math>g_p\left(X_p, Y_p\right) = g_p\left(Y_p, X_p\right)\,.</math>
+* {{math|''g''<sub>''p''</sub>}} is [[nondegenerate]]. A bilinear function is nondegenerate provided that, for every tangent vector {{math|''X''<sub>''p''</sub> ≠ 0}}, the function
+*:<math>Y_p\mapsto g_p\left(X_p,Y_p\right)</math>
+:obtained by holding {{math|''X''<sub>''p''</sub>}} constant and allowing {{math|''Y''<sub>''p''</sub>}} to vary is not [[identically zero]]. That is, for every {{math|''X''<sub>''p''</sub> ≠ 0}} there exists a {{math|''Y''<sub>''p''</sub>}} such that {{math|''g''<sub>''p''</sub>(''X''<sub>''p''</sub>, ''Y''<sub>''p''</sub>) ≠ 0}}.
+
+A metric tensor field {{mvar|g}} on {{mvar|M}} assigns to each point {{mvar|p}} of {{mvar|M}} a metric tensor {{math|''g''<sub>''p''</sub>}} in the tangent space at {{mvar|p}} in a way that varies [[smooth function|smoothly]] with {{mvar|p}}. More precisely, given any [[open set|open subset]] {{mvar|U}} of manifold {{mvar|M}} and any (smooth) [[vector field]]s {{mvar|X}} and {{mvar|Y}} on {{mvar|U}}, the real function
+
+:<math>g(X, Y)(p) = g_p\left(X_p, Y_p\right)</math>
+
+is a smooth function of {{mvar|p}}.
+
+==Components of the metric==
+{{Hatnote|This section assumes some familiarity with [[coordinate vector]]s.}}
+The components of the metric in any [[basis of a vector space|basis]] of [[vector field]]s, or [[frame bundle|frame]], {{math|'''f''' {{=}}  (''X''<sub>1</sub>, ..., ''X''<sub>''n''</sub>)}} are given by<ref>The notation of using square brackets to denote the basis in terms of which the components are calculated is not universal. The notation employed here is modeled on that of {{harvtxt|Wells|1980}}. Typically, such explicit dependence on the basis is entirely suppressed.</ref>
+{{NumBlk|:|<math>g_{ij}[\mathbf{f}] = g\left(X_i, X_j\right).</math>|{{EquationRef|4}}}}
+The {{math|''n''<sup>2</sup>}} functions {{math|''g''<sub>''ij''</sub>['''f''']}} form the entries of an {{math|''n'' × ''n''}} [[symmetric matrix]], {{math|''G''['''f''']}}. If
+:<math>v = \sum_{i=1}^n v^iX_i \,, \quad w = \sum_{i=1}^n w^iX_i</math>
+are two vectors at {{math|''p'' ∈ ''U''}}, then the value of the metric applied to {{mvar|v}} and {{mvar|w}} is determined by the coefficients ({{EquationNote|4}}) by bilinearity:
+
+:<math>g(v, w) = \sum_{i,j=1}^n v^iw^jg\left(X_i,X_j\right) = \sum_{i,j=1}^n v^iw^jg_{ij}[\mathbf{f}]</math>
+
+Denoting the [[matrix (mathematics)|matrix]] {{math|(''g''<sub>''ij''</sub>['''f'''])}} by {{math|''G''['''f''']}} and arranging the components of the vectors {{mvar|v}} and {{mvar|w}} into [[column vector]]s {{math|'''v'''['''f''']}} and {{math|'''w'''['''f''']}},
+
+:<math>g(v,w) = \mathbf{v}[\mathbf{f}]^\mathsf{T} G[\mathbf{f}] \mathbf{w}[\mathbf{f}] = \mathbf{w}[\mathbf{f}]^\mathsf{T} G[\mathbf{f}]\mathbf{v}[\mathbf{f}]</math>
+
+where {{math|'''v'''['''f''']}}<sup>T</sup> and {{math|'''w'''['''f''']}}<sup>T</sup> denote the [[matrix transpose|transpose]] of the vectors {{math|'''v'''['''f''']}} and {{math|'''w'''['''f''']}}, respectively. Under a [[change of basis]] of the form
+
+:<math>\mathbf{f}\mapsto \mathbf{f}' = \left(\sum_k X_ka_{k1},\dots,\sum_k X_ka_{kn}\right) = \mathbf{f}A</math>
+
+for some [[invertible matrix|invertible]] {{math|''n'' × ''n''}} matrix {{math|''A'' {{=}} (''a''<sub>''ij''</sub>)}}, the matrix of components of the metric changes by {{mvar|A}} as well. That is,
+
+:<math>G[\mathbf{f}A] = A^\mathsf{T} G[\mathbf{f}]A</math>
+
+or, in terms of the entries of this matrix,
+
+:<math>g_{ij}[\mathbf{f}A] = \sum_{k,l=1}^n a_{ki}g_{kl}[\mathbf{f}]a_{lj} \, .</math>
+
+For this reason, the system of quantities {{math|''g''<sub>''ij''</sub>['''f''']}} is said to transform covariantly with respect to changes in the frame {{math|'''f'''}}.
+
+===Metric in coordinates===
+A system of {{mvar|n}} real-valued functions {{math|(''x''<sup>1</sup>, ..., ''x''<sup>''n''</sup>)}}, giving a [[local coordinates|local coordinate system]] on an [[open set]] {{mvar|U}} in {{mvar|M}}, determines a basis of vector fields on {{mvar|U}}
+:<math>\mathbf{f} = \left(X_1 = \frac{\partial}{\partial x^1}, \dots, X_n = \frac{\partial}{\partial x^n}\right) \,.</math>
+
+The metric {{mvar|g}} has components relative to this frame given by
+:<math>g_{ij}\left[\mathbf{f}\right] = g\left(\frac{\partial}{\partial x^i}, \frac{\partial}{\partial x^j}\right) \,.</math>
+
+Relative to a new system of local coordinates, say
+:<math>y^i = y^i(x^1, x^2, \dots, x^n),\quad i=1,2,\dots,n</math>
+
+the metric tensor will determine a different matrix of coefficients,
+:<math>g_{ij}\left[\mathbf{f}'\right] = g\left(\frac{\partial}{\partial y^i}, \frac{\partial}{\partial y^j}\right).</math>
+
+This new system of functions is related to the original {{math|''g''<sub>''ij''</sub>('''f''')}} by means of the [[chain rule]]
+:<math>\frac{\partial}{\partial y^i} = \sum_{k=1}^n \frac{\partial x^k}{\partial y^i}\frac{\partial}{\partial x^k}</math>
+
+so that
+:<math>g_{ij}\left[\mathbf{f}'\right] = \sum_{k,l=1}^n \frac{\partial x^k}{\partial y^i} g_{kl}\left[\mathbf{f}\right]\frac{\partial x^l}{\partial y^j}.</math>
+
+Or, in terms of the matrices {{math|''G''['''f'''] {{=}} (''g''<sub>''ij''</sub>['''f'''])}} and {{math|''G''['''f'''′] {{=}} (''g''<sub>''ij''</sub>['''f'''′])}},
+:<math>G\left[\mathbf{f}'\right] = \left((Dy)^{-1}\right)^\mathsf{T} G\left[\mathbf{f}\right] (Dy)^{-1}</math>
+
+where {{mvar|Dy}} denotes the [[Jacobian matrix]] of the coordinate change.
+
+===Signature of a metric===
+{{main|Metric signature}}
+
+Associated to any metric tensor is the [[quadratic form]] defined in each tangent space by
+
+:<math>q_m(X_m) = g_m(X_m,X_m) \,, \quad X_m\in T_mM.</math>
+
+If {{math|''q''<sub>''m''</sub>}} is positive for all non-zero {{math|''X''<sub>''m''</sub>}}, then the metric is [[definite bilinear form|positive-definite]] at {{mvar|m}}. If the metric is positive-definite at every {{math|''m'' ∈ ''M''}}, then {{mvar|g}} is called a [[Riemannian metric]]. More generally, if the quadratic forms {{math|''q''<sub>''m''</sub>}} have constant [[signature of a quadratic form|signature]] independent of {{mvar|m}}, then the signature of {{mvar|g}} is this signature, and {{mvar|g}} is called a [[pseudo-Riemannian metric]].<ref>{{harvnb|Dodson|Poston|1991|loc=Chapter VII §3.04}}</ref> If {{mvar|M}} is [[connected space|connected]], then the signature of {{mvar|q<sub>m</sub>}} does not depend on {{mvar|m}}.<ref>{{harvnb|Vaughn|2007|loc=§3.4.3}}</ref>
+
+By [[Sylvester's law of inertia]], a basis of tangent vectors {{math|''X''<sub>''i''</sub>}} can be chosen locally so that the quadratic form diagonalizes in the following manner
+
+:<math>q_m\left(\sum_i\xi^iX_i\right) = \left(\xi^1\right)^2+\left(\xi^2\right)^2+\cdots+\left(\xi^p\right)^2 - \left(\xi^{p+1}\right)^2-\cdots-\left(\xi^n\right)^2</math>
+
+for some {{mvar|p}} between 1 and {{mvar|n}}. Any two such expressions of {{mvar|q}} (at the same point {{mvar|m}} of {{mvar|M}}) will have the same number {{mvar|p}} of positive signs. The signature of {{mvar|g}} is the pair of integers {{math|(''p'', ''n'' − ''p'')}}, signifying that there are {{mvar|p}} positive signs and {{math|''n'' − ''p''}} negative signs in any such expression. Equivalently, the metric has signature {{math|(''p'', ''n'' − ''p'')}} if the matrix {{math|''g''<sub>''ij''</sub>}} of the metric has {{mvar|p}} positive and {{math|''n'' − ''p''}} negative [[eigenvalue]]s.
+
+Certain metric signatures which arise frequently in applications are:
+* If {{mvar|g}} has signature {{math|(''n'', 0)}}, then {{mvar|g}} is a Riemannian metric, and {{mvar|M}} is called a [[Riemannian manifold]]. Otherwise, {{mvar|g}} is a pseudo-Riemannian metric, and {{mvar|M}} is called a [[pseudo-Riemannian manifold]] (the term semi-Riemannian is also used).
+* If {{mvar|M}} is four-dimensional with signature {{math|(1, 3)}} or {{math|(3, 1)}}, then the metric is called [[Lorentzian metric|Lorentzian]]. More generally, a metric tensor in dimension {{mvar|n}} other than 4 of signature {{math|(1, ''n'' − 1)}} or {{math|(''n'' − 1, 1)}} is sometimes also called Lorentzian.
+* If {{mvar|M}} is {{math|2''n''}}-dimensional and {{mvar|g}} has signature {{math|(''n'', ''n'')}}, then the metric is called [[ultrahyperbolic metric|ultrahyperbolic]].
+
+===Inverse metric===
+Let {{math|'''f''' {{=}} (''X''<sub>1</sub>, ..., ''X''<sub>''n''</sub>)}} be a basis of vector fields, and as above let {{math|''G''['''f''']}} be the matrix of coefficients
+:<math>g_{ij}[\mathbf{f}] = g\left(X_i,X_j\right) \,.</math>
+One can consider the [[inverse matrix]] {{math|''G''['''f''']<sup>−1</sup>}}, which is identified with the '''inverse metric''' (or ''conjugate'' or ''dual metric''). The inverse metric satisfies a transformation law when the frame {{math|'''f'''}} is changed by a matrix {{mvar|A}} via
+
+{{NumBlk|:|<math>G[\mathbf{f}A]^{-1} = A^{-1}G[\mathbf{f}]^{-1}\left(A^{-1}\right)^\mathsf{T}.</math>|{{EquationRef|5}}}}
+
+The inverse metric transforms ''[[Covariance and contravariance of vectors|contravariantly]]'', or with respect to the inverse of the change of basis matrix {{mvar|A}}. Whereas the metric itself provides a way to measure the length of (or angle between) vector fields, the inverse metric supplies a means of measuring the length of (or angle between) [[covector]] fields; that is, fields of [[linear functional]]s.
+
+To see this, suppose that {{mvar|α}} is a covector field. To wit, for each point {{mvar|p}}, {{mvar|α}} determines a function {{math|''α''<sub>''p''</sub>}} defined on tangent vectors at {{mvar|p}} so that the following [[linear transformation|linearity]] condition holds for all tangent vectors {{math|''X''<sub>''p''</sub>}} and {{math|''Y''<sub>''p''</sub>}}, and all real numbers {{mvar|a}} and {{mvar|b}}:
+
+:<math>\alpha_p \left(aX_p + bY_p\right) = a\alpha_p \left(X_p\right) + b\alpha_p \left(Y_p\right)\,.</math>
+
+As {{mvar|p}} varies, {{mvar|α}} is assumed to be a [[smooth function]] in the sense that
+
+:<math>p \mapsto \alpha_p \left(X_p\right)</math>
+
+is a smooth function of {{mvar|p}} for any smooth vector field {{mvar|X}}.
+
+Any covector field {{mvar|α}} has components in the basis of vector fields {{math|'''f'''}}. These are determined by
+
+:<math>\alpha_i = \alpha \left(X_i\right)\,,\quad i = 1, 2, \dots, n\,.</math>
+
+Denote the [[row vector]] of these components by
+
+:<math>\alpha[\mathbf{f}] = \big\lbrack\begin{array}{cccc} \alpha_1 & \alpha_2 & \dots & \alpha_n \end{array}\big\rbrack \,.</math>
+
+Under a change of {{math|'''f'''}} by a matrix {{mvar|A}}, {{math|''α''['''f''']}} changes by the rule
+
+:<math>\alpha[\mathbf{f}A] = \alpha[\mathbf{f}]A \,.</math>
+
+That is, the row vector of components {{math|''α''['''f''']}} transforms as a ''covariant'' vector.
+
+For a pair {{mvar|α}} and {{mvar|β}} of covector fields, define the inverse metric applied to these two covectors by
+
+{{NumBlk|:|<math>\tilde{g}(\alpha,\beta) = \alpha[\mathbf{f}]G[\mathbf{f}]^{-1}\beta[\mathbf{f}]^\mathsf{T}.</math>|{{EquationRef|6}}}}
+
+The resulting definition, although it involves the choice of basis {{math|'''f'''}}, does not actually depend on {{math|'''f'''}} in an essential way. Indeed, changing basis to {{math|'''f'''''A''}} gives
+
+:<math>\begin{align}
+      &\alpha[\mathbf{f}A] G[\mathbf{f}A]^{-1} \beta[\mathbf{f}A]^\mathsf{T} \\
+  ={} &\left(\alpha[\mathbf{f}]A\right) \left(A^{-1}G[\mathbf{f}]^{-1} \left(A^{-1}\right)^\mathsf{T}\right) \left(A^\mathsf{T}\beta[\mathbf{f}]^\mathsf{T}\right) \\
+  ={} &\alpha[\mathbf{f}] G[\mathbf{f}]^{-1} \beta[\mathbf{f}]^\mathsf{T}.
+\end{align}
+</math>
+
+So that the right-hand side of equation ({{EquationNote|6}}) is unaffected by changing the basis {{math|'''f'''}} to any other basis {{math|'''f'''''A''}} whatsoever. Consequently, the equation may be assigned a meaning independently of the choice of basis. The entries of the matrix {{math|''G''['''f''']}} are denoted by {{math|''g''<sup>''ij''</sup>}}, where the indices {{mvar|i}} and {{mvar|j}} have been raised to indicate the transformation law ({{EquationNote|5}}).
+
+===Raising and lowering indices===
+{{See also|Raising and lowering indices}}
+In a basis of vector fields {{math|'''f''' {{=}} (''X''<sub>1</sub>, ..., ''X''<sub>''n''</sub>)}}, any smooth tangent vector field {{mvar|X}} can be written in the form
+
+{{NumBlk|:|<math>X =
+  v^1[\mathbf{f}]X_1 + v^2 [\mathbf{f}]X_2 + \dots + v^n[\mathbf{f}]X_n =
+  \mathbf{f} \begin{bmatrix}v^1[\mathbf{f}] \\ v^2[\mathbf{f}] \\ \vdots \\ v^n[\mathbf{f}]\end{bmatrix} =
+  \mathbf{f} v[\mathbf{f}]
+</math>|{{EquationRef|7}}}}
+
+for some uniquely determined smooth functions {{math|''v''<sup>1</sup>, ..., ''v''<sup>''n''</sup>}}. Upon changing the basis {{math|'''f'''}} by a nonsingular matrix {{mvar|A}}, the coefficients {{math|''v''<sup>''i''</sup>}} change in such a way that equation ({{EquationNote|7}}) remains true. That is,
+
+:<math>X = \mathbf{fA}v[\mathbf{fA}] = \mathbf{f}v[\mathbf{f}]\,.</math>
+
+Consequently, {{math|''v''['''f'''''A''] {{=}} ''A''<sup>−1</sup>''v''['''f''']}}. In other words, the components of a vector transform ''contravariantly'' (that is, inversely or in the opposite way) under a change of basis by the nonsingular matrix {{mvar|A}}. The contravariance of the components of {{math|''v''['''f''']}} is notationally designated by placing the indices of {{math|''v''<sup>''i''</sup>['''f''']}} in the upper position.
+
+A frame also allows covectors to be expressed in terms of their components. For the basis of vector fields {{math|'''f''' {{=}} (''X''<sub>1</sub>, ..., ''X''<sub>''n''</sub>)}} define the [[dual basis]] to be the [[linear functional]]s {{math|(''θ''<sup>1</sup>['''f'''], ..., ''θ''<sup>''n''</sup>['''f'''])}} such that
+
+:<math>\theta^i[\mathbf{f}](X_j) = \begin{cases} 1 & \mathrm{if}\ i=j\\ 0&\mathrm{if}\ i\not=j.\end{cases}</math>
+
+That is, {{math|''θ''<sup>''i''</sup>['''f'''](''X''<sub>''j''</sub>) {{=}} ''δ''<sub>''j''</sub><sup>''i''</sup>}}, the [[Kronecker delta]]. Let
+
+:<math>\theta[\mathbf{f}] = \begin{bmatrix}\theta^1[\mathbf{f}] \\ \theta^2[\mathbf{f}] \\ \vdots \\ \theta^n[\mathbf{f}]\end{bmatrix}.</math>
+
+Under a change of basis {{math|'''f''' ↦ '''f'''''A''}} for a nonsingular matrix {{math|''A''}}, {{math|''θ''['''f''']}} transforms via
+
+:<math>\theta[\mathbf{f}A] = A^{-1}\theta[\mathbf{f}].</math>
+
+Any linear functional {{mvar|α}} on tangent vectors can be expanded in terms of the dual basis {{mvar|θ}}
+
+{{NumBlk|:|<math>\begin{align}
+  \alpha &= a_1[\mathbf{f}] \theta^1[\mathbf{f}] + a_2[\mathbf{f}] \theta^2[\mathbf{f}] + \cdots + a_n[\mathbf{f}] \theta^n[\mathbf{f}] \\[8pt]
+         &= \big\lbrack\begin{array}{cccc}a_1[\mathbf{f}] & a_2[\mathbf{f}] & \dots & a_n[\mathbf{f}]\end{array}\big\rbrack \theta[\mathbf{f}] \\[8pt]
+         &= a[\mathbf{f}] \theta[\mathbf{f}]
+\end{align}</math>|{{EquationRef|8}}}}
+
+where {{math|''a''['''f''']}} denotes the [[row vector]] {{math|[ ''a''<sub>1</sub>['''f'''] ... ''a''<sub>''n''</sub>['''f'''] ]}}. The components {{math|''a''<sub>''i''</sub>}} transform when the basis {{math|'''f'''}} is replaced by {{math|'''f'''''A''}} in such a way that equation ({{EquationNote|8}}) continues to hold. That is,
+
+:<math>\alpha = a[\mathbf{f}A]\theta[\mathbf{f}A] = a[\mathbf{f}]\theta[\mathbf{f}]</math>
+
+whence, because {{math|''θ''['''f'''''A''] {{=}} ''A''<sup>−1</sup>''θ''['''f''']}}, it follows that {{math|1=''a''['''f'''''A''] {{=}} ''a''['''f''']''A''}}. That is, the components {{mvar|a}} transform ''covariantly'' (by the matrix {{mvar|A}} rather than its inverse). The covariance of the components of {{math|''a''['''f''']}} is notationally designated by placing the indices of {{math|''a''<sub>''i''</sub>['''f''']}} in the lower position.
+
+Now, the metric tensor gives a means to identify vectors and covectors as follows. Holding {{math|''X''<sub>''p''</sub>}} fixed, the function
+
+:<math>g_p(X_p, -) : Y_p \mapsto g_p(X_p, Y_p)</math>
+
+of tangent vector {{math|''Y''<sub>''p''</sub>}} defines a [[linear functional]] on the tangent space at {{mvar|p}}. This operation takes a vector {{math|''X''<sub>''p''</sub>}} at a point {{mvar|p}} and produces a covector {{math|''g''<sub>''p''</sub>(''X''<sub>''p''</sub>, −)}}. In a basis of vector fields {{math|'''f'''}}, if a vector field {{mvar|X}} has components {{math|''v''['''f''']}}, then the components of the covector field {{math|''g''(''X'', −)}} in the dual basis are given by the entries of the row vector
+:<math>a[\mathbf{f}] = v[\mathbf{f}]^\mathsf{T} G[\mathbf{f}].</math>
+
+Under a change of basis {{math|'''f''' ↦ '''f'''''A''}}, the right-hand side of this equation transforms via
+:<math>
+  v[\mathbf{f}A]^\mathsf{T} G[\mathbf{f}A] =
+    v[\mathbf{f}]^\mathsf{T} \left(A^{-1}\right)^\mathsf{T} A^\mathsf{T} G[\mathbf{f}]A =
+    v[\mathbf{f}]^\mathsf{T} G[\mathbf{f}]A
+</math>
+
+so that {{math|''a''['''f'''''A''] {{=}} ''a''['''f''']''A''}}: {{mvar|a}} transforms covariantly. The operation of associating to the (contravariant) components of a vector field {{math|''v''['''f'''] {{=}} [ ''v''<sup>1</sup>['''f'''] ''v''<sup>2</sup>['''f'''] ... ''v''<sup>''n''</sup>['''f'''] ]}}<sup>T</sup> the (covariant) components of the covector field {{math|''a''['''f'''] {{=}} [ ''a''<sub>1</sub>['''f'''] ''a''<sub>2</sub>['''f'''] … ''a''<sub>''n''</sub>['''f'''] ]}}, where
+:<math>a_i[\mathbf{f}] = \sum_{k=1}^n v^k[\mathbf{f}]g_{ki}[\mathbf{f}]</math>
+
+is called '''lowering the index'''.
+
+To ''raise the index'', one applies the same construction but with the inverse metric instead of the metric. If {{math|''a''['''f'''] {{=}} [ ''a''<sub>1</sub>['''f'''] ''a''<sub>2</sub>['''f'''] ... ''a''<sub>''n''</sub>['''f'''] ]}} are the components of a covector in the dual basis {{math|''θ''['''f''']}}, then the column vector
+{{NumBlk|:|<math>v[\mathbf{f}] = G^{-1}[\mathbf{f}]a[\mathbf{f}]^\mathsf{T}</math>|{{EquationRef|9}}}}
+has components which transform contravariantly:
+:<math>v[\mathbf{f}A] = A^{-1}v[\mathbf{f}].</math>
+
+Consequently, the quantity {{math|''X'' {{=}} '''f'''''v''['''f''']}} does not depend on the choice of basis {{math|'''f'''}} in an essential way, and thus defines a vector field on {{mvar|M}}. The operation ({{EquationNote|9}}) associating to the (covariant) components of a covector {{math|''a''['''f''']}} the (contravariant) components of a vector {{math|''v''['''f''']}} given is called '''raising the index'''. In components, ({{EquationNote|9}}) is
+:<math>v^i[\mathbf{f}] = \sum_{k=1}^n g^{ik}[\mathbf{f}] a_k[\mathbf{f}].</math>
+
+===Induced metric===
+<!--{{main|Induced metric}} Not currently well-written. -->
+Let {{mvar|U}} be an [[open set]] in {{math|'''ℝ'''<sup>''n''</sup>}}, and let {{mvar|φ}} be a [[continuously differentiable]] function from {{mvar|U}} into the [[Euclidean space]] {{math|'''ℝ'''<sup>''m''</sup>}}, where {{math|''m'' > ''n''}}. The mapping {{mvar|φ}} is called an [[immersion (mathematics)|immersion]] if its differential is [[injective]] at every point of {{mvar|U}}. The image of {{mvar|φ}} is called an [[immersed submanifold]]. More specifically, for {{math|1=''m'' = 3}}, which means that the ambient [[Euclidean space]] is {{math|'''ℝ'''<sup>''3''</sup>}}, the induced metric tensor is called the [[First_fundamental_form|first fundamental form]].
+
+Suppose that {{mvar|φ}} is an immersion onto the submanifold {{math|''M'' ⊂ '''R'''<sup>''m''</sup>}}. The usual Euclidean [[dot product]] in {{math|'''ℝ'''<sup>''m''</sup>}} is a metric which, when restricted to vectors tangent to {{mvar|M}}, gives a means for taking the dot product of these tangent vectors. This is called the '''induced metric'''.
+
+Suppose that {{mvar|v}} is a tangent vector at a point of {{mvar|U}}, say
+:<math>v = v^1\mathbf{e}_1 + \dots + v^n\mathbf{e}_n</math>
+
+where {{math|'''e'''<sub>''i''</sub>}} are the standard coordinate vectors in {{math|'''ℝ'''<sup>''n''</sup>}}. When {{mvar|φ}} is applied to {{mvar|U}}, the vector {{mvar|v}} goes over to the vector tangent to {{mvar|M}} given by
+:<math>\varphi_*(v) = \sum_{i=1}^n \sum_{a=1}^m v^i\frac{\partial \varphi^a}{\partial x^i}\mathbf{e}_a\,.</math>
+
+(This is called the [[pushforward (differential)|pushforward]] of {{mvar|v}} along {{mvar|φ}}.) Given two such vectors, {{mvar|v}} and {{mvar|w}}, the induced metric is defined by
+:<math>g(v,w) = \varphi_*(v)\cdot \varphi_*(w).</math>
+
+It follows from a straightforward calculation that the matrix of the induced metric in the basis of coordinate vector fields {{math|'''e'''}} is given by
+:<math>G(\mathbf{e}) = (D\varphi)^\mathsf{T}(D\varphi)</math>
+
+where {{mvar|Dφ}} is the Jacobian matrix:
+:<math>D\varphi = \begin{bmatrix}
+  \frac{\partial\varphi^1}{\partial x^1} & \frac{\partial\varphi^1}{\partial x^2} &
+    \dots  & \frac{\partial\varphi^1}{\partial x^n} \\[1ex]
+  \frac{\partial\varphi^2}{\partial x^1} & \frac{\partial\varphi^2}{\partial x^2} &
+    \dots  & \frac{\partial\varphi^2}{\partial x^n} \\
+  \vdots                                 & \vdots                                 &
+    \ddots & \vdots \\
+  \frac{\partial\varphi^m}{\partial x^1} & \frac{\partial\varphi^m}{\partial x^2} &
+    \dots  & \frac{\partial\varphi^m}{\partial x^n}
+\end{bmatrix}.</math>
+
+==Intrinsic definitions of a metric==
+The notion of a metric can be defined intrinsically using the language of [[fiber bundle]]s and [[vector bundle]]s. In these terms, a '''metric tensor''' is a function
+
+{{NumBlk|:|<math>g : \mathrm{T}M\times_M \mathrm{T}M\to \mathbf{R}</math>|{{EquationRef|10}}}}
+
+from the [[fiber product]] of the [[tangent bundle]] of {{mvar|M}} with itself to {{math|'''R'''}} such that the restriction of {{mvar|g}} to each fiber is a nondegenerate bilinear mapping
+
+:<math>g_p : \mathrm{T}_pM\times \mathrm{T}_pM \to \mathbf{R}.</math>
+
+The mapping ({{EquationNote|10}}) is required to be [[continuous function|continuous]], and often [[continuously differentiable]], [[smooth function|smooth]], or [[real analytic]], depending on the case of interest, and whether {{mvar|M}} can support such a structure.
+
+===Metric as a section of a bundle===
+By the [[Tensor product#Universal property|universal property of the tensor product]], any bilinear mapping ({{EquationNote|10}}) gives rise [[natural transformation|naturally]] to a [[section (fiber bundle)|section]] {{math|''g''<sub>⊗</sub>}} of the [[dual space|dual]] of the [[tensor product bundle]] of {{math|T''M''}} with itself
+
+:<math>g_\otimes \in \Gamma\left((\mathrm{T}M \otimes \mathrm{T}M)^*\right).</math>
+
+The section {{math|''g''<sub>⊗</sub>}} is defined on simple elements of {{math|T''M'' ⊗ T''M''}} by
+
+:<math>g_\otimes(v \otimes w) = g(v, w)</math>
+
+and is defined on arbitrary elements of {{math|T''M'' ⊗ T''M''}} by extending linearly to linear combinations of simple elements. The original bilinear form {{mvar|g}} is symmetric if and only if
+:<math>g_\otimes \circ \tau = g_\otimes</math>
+where
+:<math>\tau : \mathrm{T}M \otimes \mathrm{T}M \stackrel{\cong}{\to} TM \otimes TM</math>
+is the [[tensor product#Tensor powers and braiding|braiding map]].
+
+Since {{mvar|M}} is finite-dimensional, there is a [[natural isomorphism]]
+
+:<math>(\mathrm{T}M \otimes \mathrm{T}M)^* \cong \mathrm{T}^*M \otimes \mathrm{T}^*M,</math>
+
+so that {{math|''g''<sub>⊗</sub>}} is regarded also as a section of the bundle {{math|T*''M'' ⊗ T*''M''}} of the [[cotangent bundle]] {{math|T*''M''}} with itself. Since {{mvar|g}} is symmetric as a bilinear mapping, it follows that {{math|''g''<sub>⊗</sub>}} is a [[symmetric tensor]].
+
+===Metric in a vector bundle===
+More generally, one may speak of a metric in a [[vector bundle]]. If {{mvar|E}} is a vector bundle over a manifold {{mvar|M}}, then a metric is a mapping
+
+:<math>g : E\times_M E\to \mathbf{R}</math>
+
+from the [[fiber product]] of {{mvar|E}} to {{math|'''R'''}} which is bilinear in each fiber:
+
+:<math>g_p : E_p \times E_p\to \mathbf{R}.</math>
+
+Using duality as above, a metric is often identified with a [[section (fiber bundle)|section]] of the [[tensor product]] bundle {{math|''E''* ⊗ ''E''*}}. (See [[metric (vector bundle)]].)
+
+===Tangent–cotangent isomorphism===
+{{see also|Musical isomorphism}}
+The metric tensor gives a [[natural isomorphism]] from the [[tangent bundle]] to the [[cotangent bundle]], sometimes called the [[musical isomorphism]].<ref>For the terminology "musical isomorphism", see {{harvtxt|Gallot|Hulin|Lafontaine|2004|p=75}}. See also {{harvtxt|Lee|1997|pp=27–29}}</ref> This isomorphism is obtained by setting, for each tangent vector {{math|''X''<sub>''p''</sub> ∈ T<sub>''p''</sub>''M''}},
+
+:<math>S_gX_p\, \stackrel\text{def}{=}\, g(X_p, -),</math>
+
+the [[linear functional]] on {{math|T<sub>''p''</sub>''M''}} which sends a tangent vector {{math|''Y''<sub>''p''</sub>}} at {{mvar|p}} to {{math|''g''<sub>''p''</sub>(''X''<sub>''p''</sub>,''Y''<sub>''p''</sub>)}}. That is, in terms of the pairing {{math|[−, −]}} between {{math|T<sub>''p''</sub>''M''}} and its [[dual space]] {{math|T{{su|b=''p''|p=∗}}''M''}},
+
+:<math>[S_gX_p, Y_p] = g_p(X_p, Y_p)</math>
+
+for all tangent vectors {{math|''X''<sub>''p''</sub>}} and {{math|''Y''<sub>''p''</sub>}}. The mapping {{math|''S''<sub>''g''</sub>}} is a [[linear transformation]] from {{math|T<sub>''p''</sub>''M''}} to {{math|T{{su|b=''p''|p=∗}}''M''}}. It follows from the definition of non-degeneracy that the [[kernel (set theory)|kernel]] of {{math|''S''<sub>''g''</sub>}} is reduced to zero, and so by the [[rank–nullity theorem]], {{math|''S''<sub>''g''</sub>}} is a [[linear isomorphism]]. Furthermore, {{math|''S''<sub>''g''</sub>}} is a [[symmetric linear transformation]] in the sense that
+
+:<math>[S_gX_p, Y_p] = [S_gY_p, X_p] </math>
+
+for all tangent vectors {{math|''X''<sub>''p''</sub>}} and {{math|''Y''<sub>''p''</sub>}}.
+
+Conversely, any linear isomorphism {{math|''S'' : T<sub>''p''</sub>''M'' → T{{su|b=''p''|p=∗}}''M''}} defines a non-degenerate bilinear form on {{math|T<sub>''p''</sub>''M''}} by means of
+
+:<math>g_S(X_p, Y_p) = [SX_p, Y_p]\,.</math>
+
+This bilinear form is symmetric if and only if {{mvar|S}} is symmetric. There is thus a natural one-to-one correspondence between symmetric bilinear forms on {{math|T<sub>''p''</sub>''M''}} and symmetric linear isomorphisms of {{math|T<sub>''p''</sub>''M''}} to the dual {{math|T{{su|b=''p''|p=∗}}''M''}}.
+
+As {{mvar|p}} varies over {{mvar|M}}, {{math|''S''<sub>''g''</sub>}} defines a section of the bundle {{math|Hom(T''M'', T*''M'')}} of [[vector bundle morphism|vector bundle isomorphisms]] of the tangent bundle to the cotangent bundle. This section has the same smoothness as {{mvar|g}}: it is continuous, differentiable, smooth, or real-analytic according as {{mvar|g}}. The mapping {{math|''S''<sub>''g''</sub>}}, which associates to every vector field on {{mvar|M}} a covector field on {{mvar|M}} gives an abstract formulation of "lowering the index" on a vector field. The inverse of {{math|''S''<sub>''g''</sub>}} is a mapping {{math|T*''M'' → T''M''}} which, analogously, gives an abstract formulation of "raising the index" on a covector field.
+
+The inverse {{math|''S''{{su|b=''g''|p=−1}}}} defines a linear mapping
+:<math>S_g^{-1} : \mathrm{T}^*M \to \mathrm{T}M</math>
+
+which is nonsingular and symmetric in the sense that
+:<math>\left[S_g^{-1}\alpha, \beta\right] = \left[S_g^{-1}\beta, \alpha\right]</math>
+
+for all covectors {{mvar|α}}, {{mvar|β}}. Such a nonsingular symmetric mapping gives rise (by the [[tensor-hom adjunction]]) to a map
+:<math>\mathrm{T}^*M \otimes \mathrm{T}^*M \to \mathbf{R}</math>
+
+or by the [[Double dual|double dual isomorphism]] to a section of the tensor product
+:<math>\mathrm{T}M \otimes \mathrm{T}M.</math>
+
+==Arclength and the line element==
+Suppose that {{mvar|g}} is a Riemannian metric on {{mvar|M}}. In a local coordinate system {{math|''x''<sup>''i''</sup>}}, {{math|''i'' {{=}} 1, 2, …, ''n''}}, the metric tensor appears as a [[matrix (math)|matrix]], denoted here by {{math|'''G'''}}, whose entries are the components {{math|''g''<sub>''ij''</sub>}} of the metric tensor relative to the coordinate vector fields.
+
+Let {{math|''γ''(''t'')}} be a piecewise-differentiable [[parametric curve]] in {{mvar|M}}, for {{math|''a'' ≤ ''t'' ≤ ''b''}}. The [[arclength]] of the curve is defined by
+
+:<math>L = \int_a^b \sqrt{ \sum_{i,j=1}^n g_{ij}(\gamma(t)) \left(\frac{d}{dt}x^i \circ \gamma(t)\right) \left(\frac{d}{dt} x^j \circ \gamma(t)\right)}\,dt \,.</math>
+
+In connection with this geometrical application, the [[quadratic form|quadratic]] [[differential form]]
+
+:<math>ds^2 = \sum_{i,j=1}^n g_{ij}(p) dx^i dx^j</math>
+
+is called the [[first fundamental form]] associated to the metric, while {{mvar|ds}} is the [[line element]]. When {{math|''ds''<sup>2</sup>}} is [[pullback (differential geometry)|pulled back]] to the image of a curve in {{mvar|M}}, it represents the square of the differential with respect to arclength.
+
+For a pseudo-Riemannian metric, the length formula above is not always defined, because the term under the square root may become negative. We generally only define the length of a curve when the quantity under the square root is always of one sign or the other. In this case, define
+
+:<math>L = \int_a^b \sqrt{ \left|\sum_{i,j=1}^ng_{ij}(\gamma(t)) \left(\frac{d}{dt}x^i \circ \gamma(t)\right)\left(\frac{d}{dt}x^j \circ \gamma(t)\right)\right|}\,dt \, .</math>
+
+Note that, while these formulas use coordinate expressions, they are in fact independent of the coordinates chosen; they depend only on the metric, and the curve along which the formula is integrated.
+
+===The energy, variational principles and geodesics===
+Given a segment of a curve, another frequently defined quantity is the (kinetic) '''energy''' of the curve:
+
+:<math>E = \frac{1}{2} \int_a^b \sum_{i,j=1}^ng_{ij}(\gamma(t)) \left(\frac{d}{dt}x^i \circ \gamma(t)\right)\left(\frac{d}{dt}x^j \circ \gamma(t)\right)\,dt \,. </math>
+
+This usage comes from [[physics]], specifically, [[classical mechanics]], where the integral {{mvar|E}} can be seen to directly correspond to the [[kinetic energy]] of a point particle moving on the surface of a manifold. Thus, for example, in Jacobi's formulation of [[Maupertuis' principle]], the metric tensor can be seen to correspond to the mass tensor of a moving particle.
+
+In many cases, whenever a calculation calls for the length to be used, a similar calculation using the energy may be done as well. This often leads to simpler formulas by avoiding the need for the square-root. Thus, for example, the [[geodesic equation]]s may be obtained by applying [[variational principle]]s to either the length or the energy. In the latter case, the geodesic equations are seen to arise from the [[principle of least action]]: they describe the motion of a "free particle" (a particle feeling no forces) that is confined to move on the manifold, but otherwise moves freely, with constant momentum, within the manifold.<ref>{{harvnb|Sternberg|1983}}</ref>
+
+==Canonical measure and volume form==
+In analogy with the case of surfaces, a metric tensor on an {{mvar|n}}-dimensional paracompact manifold {{mvar|M}} gives rise to a natural way to measure the {{mvar|n}}-dimensional [[volume]] of subsets of the manifold. The resulting natural positive [[Borel measure]] allows one to develop a theory of integrating functions on the manifold by means of the associated [[Lebesgue integral]].
+
+A measure can be defined, by the [[Riesz representation theorem]], by giving a positive [[linear functional]] {{mvar|Λ}} on the space {{math|''C''<sub>0</sub>(''M'')}} of [[compact support|compactly supported]] [[continuous function]]s on {{mvar|M}}. More precisely, if {{mvar|M}} is a manifold with a (pseudo-)Riemannian metric tensor {{mvar|g}}, then there is a unique positive [[Borel measure]] {{math|''μ''<sub>''g''</sub>}} such that for any [[coordinate chart]] {{math|(''U'', ''φ'')}},
+:<math>\Lambda f = \int_U f\,d\mu_g = \int_{\varphi(U)} f\circ\varphi^{-1}(x) \sqrt{|\det g|}\,dx</math>
+for all {{mvar|f}} supported in {{mvar|U}}. Here {{math|det ''g''}} is the [[determinant]] of the matrix formed by the components of the metric tensor in the coordinate chart. That {{mvar|Λ}} is well-defined on functions supported in coordinate neighborhoods is justified by [[integration by substitution|Jacobian change of variables]]. It extends to a unique positive linear functional on {{math|''C''<sub>0</sub>(''M'')}} by means of a [[partition of unity]].
+
+If {{mvar|M}} is in addition [[orientation (mathematics)|oriented]], then it is possible to define a natural [[volume form]] from the metric tensor. In a [[right-handed coordinate system|positively oriented coordinate system]] {{math|(''x''<sup>''1''</sup>, ..., ''x''<sup>''n''</sup>)}} the volume form is represented as
+:<math>\omega = \sqrt{|\det g|}\, dx^1\wedge\cdots\wedge dx^n</math>
+where the {{math|''dx''<sup>''i''</sup>}} are the [[coordinate differential]]s and {{math|∧}} denotes the [[exterior product]] in the algebra of [[differential form]]s. The volume form also gives a way to integrate functions on the manifold, and this geometric integral agrees with the integral obtained by the canonical Borel measure.
+
+==Examples==
+
+===Euclidean metric===
+The most familiar example is that of elementary [[Euclidean geometry]]: the two-dimensional [[Euclidean distance|Euclidean]] metric tensor. In the usual {{math|(''x'', ''y'')}} coordinates, we can write
+
+:<math>g = \begin{bmatrix} 1 & 0 \\ 0 & 1\end{bmatrix} \,. </math>
+
+The length of a curve reduces to the formula:
+
+:<math>L = \int_a^b \sqrt{ (dx)^2 + (dy)^2} \,. </math>
+
+The Euclidean metric in some other common coordinate systems can be written as follows.
+
+[[Polar coordinates]] {{math|(''r'', ''θ'')}}:
+:<math>\begin{align}
+  x &= r \cos\theta \\
+  y &= r \sin\theta \\
+  J &= \begin{bmatrix}\cos\theta & -r\sin\theta \\ \sin\theta & r\cos\theta\end{bmatrix} \,.
+\end{align}</math>
+
+So
+:<math>g = J^\mathsf{T}J =
+  \begin{bmatrix}
+      \cos^2\theta + \sin^2\theta                  & -r\sin\theta \cos\theta + r\sin\theta\cos\theta \\
+    -r\cos\theta\sin\theta + r\cos\theta\sin\theta & r^2 \sin^2\theta + r^2\cos^2\theta
+  \end{bmatrix} = \begin{bmatrix}
+    1 & 0 \\
+    0 & r^2
+  \end{bmatrix}
+</math>
+by [[trigonometric identity|trigonometric identities]].
+
+In general, in a [[Cartesian coordinate system]] {{math|''x''<sup>''i''</sup>}} on a [[Euclidean space]], the partial derivatives {{math|∂ / ∂''x<sup>i</sup>''}} are [[orthonormal]] with respect to the Euclidean metric. Thus the metric tensor is the [[Kronecker delta]] δ<sub>''ij''</sub> in this coordinate system. The metric tensor with respect to arbitrary (possibly curvilinear) coordinates {{math|''q<sup>i</sup>''}} is given by
+:<math>g_{ij} =
+  \sum_{kl}\delta_{kl}\frac{\partial x^k}{\partial q^i} \frac{\partial x^l}{\partial q^j} =
+  \sum_k\frac{\partial x^k}{\partial q^i}\frac{\partial x^k}{\partial q^j}.
+</math>
+
+====The round metric on a sphere====
+The unit sphere in {{math|'''ℝ'''<sup>3</sup>}} comes equipped with a natural metric induced from the ambient Euclidean metric, through the process explained in the [[Metric_tensor#Induced_metric|induced metric section]]. In standard spherical coordinates {{math|(''θ'', ''φ'')}}, with {{math|''θ''}} the [[colatitude]], the angle measured from the {{mvar|z}}-axis, and {{mvar|φ}} the angle from the {{mvar|x}}-axis in the {{mvar|xy}}-plane, the metric takes the form
+
+:<math>g = \begin{bmatrix} 1 & 0 \\ 0 & \sin^2 \theta\end{bmatrix} \,.</math>
+
+This is usually written in the form
+
+:<math>ds^2 = d\theta^2 + \sin^2\theta\,d\varphi^2\,.</math>
+
+===Lorentzian metrics from relativity===
+{{main|Metric tensor (general relativity)}}
+In flat [[Minkowski space]] ([[special relativity]]), with coordinates
+:<math>r^\mu \rightarrow \left(x^0, x^1, x^2, x^3\right) = (ct, x, y, z) \, ,</math>
+
+the metric is, depending on choice of [[metric signature]],
+:<math>g = \begin{bmatrix} 1 & 0 & 0 & 0\\ 0 & -1 & 0 & 0 \\ 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1 \end{bmatrix} \quad \text{or} \quad g = \begin{bmatrix} -1 & 0 & 0 & 0\\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix} \,. </math>
+
+For a curve with—for example—constant time coordinate, the length formula with this metric reduces to the usual length formula. For a [[Spacetime interval|timelike]] curve, the length formula gives the [[proper time]] along the curve.
+
+In this case, the [[spacetime interval]] is written as
+:<math>ds^2 = c^2 dt^2 - dx^2 - dy^2 - dz^2 = dr^\mu dr_\mu = g_{\mu \nu} dr^\mu dr^\nu\,. </math>
+
+The [[Schwarzschild metric]] describes the spacetime around a spherically symmetric body, such as a planet, or a [[black hole]]. With coordinates
+:<math>\left(x^0, x^1, x^2, x^3\right) = (ct, r, \theta, \varphi) \,,</math>
+
+we can write the metric as
+:<math>g_{\mu\nu} =
+  \begin{bmatrix}
+    \left(1 - \frac{2GM}{rc^2}\right) & 0 & 0 & 0 \\
+    0 & -\left(1 - \frac{2GM}{r c^2}\right)^{-1} & 0 & 0 \\
+    0 & 0 & -r^2 & 0 \\
+    0 & 0 & 0 & -r^2 \sin^2 \theta
+  \end{bmatrix}\,,
+</math>
+
+where {{mvar|G}} (inside the matrix) is the [[gravitational constant]] and {{mvar|M}} represents the total [[mass-energy]] content of the central object.
+
+==See also==
+* [[Basic introduction to the mathematics of curved spacetime]]
+* [[Clifford algebra]]
+* [[Finsler manifold]]
+* [[List of coordinate charts]]
+* [[Ricci calculus]]
+* [[Tissot's indicatrix]], a technique to visualize the metric tensor
+
+==Notes==
+{{Reflist}}
+
+==References==
+* {{Citation | last1=Dodson | first1=C. T. J. | last2=Poston | first2=T. | title=Tensor geometry | publisher=Springer-Verlag | location=Berlin, New York | edition=2nd | series=Graduate Texts in Mathematics | isbn=978-3-540-52018-4 |mr=1223091 | year=1991 | volume=130 | doi=10.1007/978-3-642-10514-2}}
+* {{Citation | last1=Gallot | first1=Sylvestre | last2=Hulin | first2=Dominique | last3=Lafontaine | first3=Jacques | title=Riemannian Geometry | publisher=Springer-Verlag | location=Berlin, New York | edition=3rd | isbn=978-3-540-20493-0 | year=2004}}.
+* {{citation|last=Gauss|first=Carl Friedrich|author-link=Carl Friedrich Gauss|title=General Investigations of Curved Surfaces|url= http://quod.lib.umich.edu/cgi/t/text/text-idx?c=umhistmath;idno=ABR1255|publication-date=1965|year=1827|publisher = Raven Press|location=New York}} translated by A. M. Hiltebeitel and J. C. Morehead; [http://www-gdz.sub.uni-goettingen.de/cgi-bin/digbib.cgi?PPN35283028X_0006_2NS "Disquisitiones generales circa superficies curvas"], ''Commentationes Societatis Regiae Scientiarum Gottingesis Recentiores'' Vol. '''VI''' (1827), pp.&nbsp;99–146.
+* {{citation|first1=S.W.|last1=Hawking|author-link1=Stephen Hawking|first2=G.F.R.|last2=Ellis|title=The large scale structure of space-time|publisher=Cambridge University Press|year=1973}}.
+* {{citation|title=Schaum's Outline of Theory and Problems of Tensor Calculus|first=David|last=Kay|publisher=McGraw-Hill|year=1988|isbn=978-0-07-033484-7}}.
+* {{citation|first=Morris|last=Kline|author-link=Morris Kline|title= Mathematical thought from ancient to modern times, Volume 3|year=1990|publisher=Oxford University Press}}.
+* {{citation|first=John|last=Lee|title=Riemannian manifolds|publisher=Springer Verlag|year=1997|isbn=978-0-387-98322-6}}.
+* {{citation|first=Peter W.|last=Michor|title=Topics in Differential Geometry|series=[[Graduate Studies in Mathematics]]|volume=93|publisher=American Mathematical Society|location=Providence|year=2008}} (''to appear'').
+* {{Citation
+ | first1=Charles W.
+ | last1=Misner
+ | author-link1=Charles W. Misner
+ | first2=Kip S.
+ | last2=Thorne
+ | author-link2=Kip Thorne
+ | first3=John A.
+ | last3=Wheeler
+ | author-link3=John Archibald Wheeler
+ | title=Gravitation
+ | publisher= W. H. Freeman
+ | year=1973
+ | isbn=0-7167-0344-0
+ }}
+* {{citation | first1=Gregorio|last1=Ricci-Curbastro|author-link1=Gregorio Ricci-Curbastro|first2=Tullio|last2=Levi-Civita|author-link2=Tullio Levi-Civita|title=Méthodes de calcul différentiel absolu et leurs applications|journal=Mathematische Annalen|year=1900|volume=54|pages=125–201|issn=1432-1807 | doi=10.1007/BF01454201|issue=1|s2cid=120009332|url=http://gdz.sub.uni-goettingen.de/index.php?id=11&PPN=PPN235181684_0054&DMDID=DMDLOG_0011&L=1}}
+* {{citation | last = Sternberg | first = S. |author-link=Shlomo Sternberg| year = 1983 | title = Lectures on Differential Geometry | edition = 2nd | publisher = Chelsea Publishing Co. | location = New York | isbn = 0-8218-1385-4}}
+* {{Citation
+| last=Vaughn
+| first=Michael T.
+| title=Introduction to mathematical physics
+| publisher=Wiley-VCH Verlag GmbH & Co.
+| location=Weinheim
+| isbn=978-3-527-40627-2
+|mr=2324500
+| year=2007
+| doi=10.1002/9783527618859| url=http://cds.cern.ch/record/1070811/files/9783527406272_TOC.pdf
+}}
+* {{Citation | last1=Wells | first1=Raymond | author1-link=Raymond O. Wells, Jr. | title=Differential Analysis on Complex Manifolds | publisher=Springer-Verlag | location=Berlin, New York | year=1980|url=https://epdf.pub/differential-analysis-on-complex-manifolds.html}}
+
+{{tensors}}
+
+[[Category:Riemannian geometry]]
+[[Category:Tensors]]
+[[Category:Concepts in physics]]
+[[Category:Differential geometry]]
+[[Category:Metric tensors|*1]]

@@ -1,0 +1,106 @@
+{{short description|Method of solution for certain mechanical problems}}
+{{classical mechanics}}
+In [[classical mechanics]], '''action-angle coordinates''' are a set of [[canonical coordinates]] useful in solving many [[integrable system]]s. The method of action-angles is useful for obtaining the [[frequency|frequencies]] of oscillatory or rotational motion without solving the [[equations of motion]].  Action-angle coordinates are chiefly used when the [[Hamilton–Jacobi equation]]s are completely separable.  (Hence, the [[Hamiltonian (quantum mechanics)|Hamiltonian]] does not depend explicitly on time, i.e., the [[conservation of energy|energy is conserved]].) Action-angle variables define an '''invariant torus''', so called because holding the action constant defines the surface of a [[torus]], while the angle variables parameterize the coordinates on the torus.
+
+The [[Bohr–Sommerfeld quantization]] conditions, used to develop quantum mechanics before the advent of [[Schrödinger equation#Particles as waves|wave mechanics]], state that the action must be an integral multiple of [[Planck's constant]]; similarly, [[Albert Einstein|Einstein]]'s insight into [[Einstein–Brillouin–Keller method|EBK quantization]] and the difficulty of quantizing non-integrable systems was expressed in terms of the invariant tori of action-angle coordinates.
+
+Action-angle coordinates are also useful in [[perturbation theory]] of [[Hamiltonian mechanics]], especially in determining [[adiabatic invariant]]s. One of the earliest results from [[chaos theory]], for the non-linear  perturbations of dynamical systems with a small number of degrees of freedom is the [[KAM theorem]], which states that the invariant tori are stable under small perturbations.
+
+The use of action-angle variables was central to the solution of the [[Toda lattice]], and to the definition of [[Lax pairs]], or more generally, the idea of the [[isospectral]] evolution of  a system.
+
+==Derivation==
+Action angles result from a [[Canonical_transformation#Type_2_generating_function|type-2]] [[canonical transformation]] where the generating function is [[Hamilton–Jacobi equation|Hamilton's characteristic function]] <math>W(\mathbf{q})</math> (''not'' Hamilton's principal function <math>S</math>).  Since the original Hamiltonian does not depend on time explicitly, the new Hamiltonian <math>K(\mathbf{w}, \mathbf{J})</math> is merely the old Hamiltonian <math>H(\mathbf{q}, \mathbf{p})</math> expressed in terms of the new [[canonical coordinates]], which we denote as <math>\mathbf{w}</math> (the '''action angles''', which are the [[generalized coordinates]]) and their new generalized momenta <math>\mathbf{J}</math>.  We will not need to solve here for the generating function <math>W</math> itself; instead, we will use it merely as a vehicle for relating the new and old [[canonical coordinates]].
+
+Rather than defining the action angles <math>\mathbf{w}</math> directly, we define instead their generalized momenta, which resemble the [[action (physics)|classical action]] for each original [[generalized coordinate]]
+
+:<math>
+J_{k} \equiv \oint p_k \, \mathrm{d}q_k
+</math>
+
+where the integration path is implicitly given by the constant energy function <math>E=E(q_k,p_k)</math>.  Since the actual motion is not involved in this integration, these generalized momenta <math>J_k</math> are constants of the motion, implying that the transformed Hamiltonian <math>K</math> does not depend on the conjugate [[generalized coordinates]] <math>w_k</math>
+
+:<math>
+\frac{\mathrm{d}}{\mathrm{d}t} J_{k} = 0 = \frac{\partial K}{\partial w_k}
+</math>
+
+where the <math>w_k</math> are given by the typical equation for a type-2 [[canonical transformation]]
+
+:<math>
+w_k \equiv \frac{\partial W}{\partial J_k}
+</math>
+
+Hence, the new Hamiltonian <math>K=K(\mathbf{J})</math> depends only on the new generalized momenta <math>\mathbf{J}</math>.
+
+The dynamics of the action angles is given by [[Hamilton's equations]]
+
+:<math>
+\frac{\mathrm{d}}{\mathrm{d}t} w_k = \frac{\partial K}{\partial J_k} \equiv \nu_k(\mathbf{J})
+</math>
+
+The right-hand side is a constant of the motion (since all the <math>J</math>'s are).  Hence, the solution is given by
+
+:<math>
+w_k = \nu_k(\mathbf{J}) t + \beta_k
+</math>
+
+where <math>\beta_k</math> is a constant of integration.  In particular, if the original [[generalized coordinate]] undergoes an oscillation or rotation of period <math>T</math>, the corresponding action angle <math>w_k</math> changes by <math>\Delta w_k = \nu_k (\mathbf{J}) T</math>.
+
+These <math>\nu_k(\mathbf{J})</math> are the frequencies of oscillation/rotation for the original [[generalized coordinate]]s <math>q_k</math>.  To show this, we integrate the net change in the action angle <math>w_k</math> over exactly one complete variation (i.e., oscillation or rotation) of its [[generalized coordinate]]s <math>q_k</math>
+
+:<math>
+\Delta w_k \equiv \oint \frac{\partial w_k}{\partial q_k} \, \mathrm{d}q_k = 
+\oint \frac{\partial^2 W}{\partial J_k \, \partial q_k} \, \mathrm{d}q_k = 
+\frac{\mathrm{d}}{\mathrm{d}J_k} \oint \frac{\partial W}{\partial q_k} \, \mathrm{d}q_k = 
+\frac{\mathrm{d}}{\mathrm{d}J_k} \oint p_k \, \mathrm{d}q_k = \frac{\mathrm{d}J_k}{\mathrm{d}J_k} = 1
+</math>
+
+Setting the two expressions for <math>\Delta w_{k}</math> equal, we obtain the desired equation
+
+:<math> 
+\nu_k(\mathbf{J}) = \frac{1}{T}
+</math>
+
+The action angles <math>\mathbf{w}</math> are an independent set of [[generalized coordinates]].  Thus, in the general case, each original generalized coordinate <math>q_{k}</math> can be expressed as a [[Fourier series]] in ''all'' the action angles
+
+:<math>
+q_k = \sum_{s_1=-\infty}^\infty \sum_{s_2 = -\infty}^\infty \cdots \sum_{s_N = -\infty}^\infty A^k_{s_1, s_2, \ldots, s_N} e^{i2\pi s_1 w_1} e^{i2\pi s_2 w_2} \cdots e^{i2\pi s_N w_N}
+</math>
+
+where <math>A^k_{s_1, s_2, \ldots, s_N}</math> is the Fourier series coefficient.  In most practical cases, however, an original generalized coordinate <math>q_k</math> will be expressible as a [[Fourier series]] in only its own action angles <math>w_k</math>
+
+:<math>
+q_k = \sum_{s_k=-\infty}^\infty A^k_{s_k} e^{i2\pi s_k w_k}
+</math>
+
+==Summary of basic protocol==
+
+The general procedure has three steps:
+
+# Calculate the new generalized momenta <math>J_{k}</math> 
+# Express the original Hamiltonian entirely in terms of these variables.
+# Take the derivatives of the Hamiltonian with respect to these momenta to obtain the frequencies <math>\nu_k</math>
+
+==Degeneracy==
+
+In some cases, the frequencies of two different [[generalized coordinate]]s are identical, i.e., <math>\nu_k = \nu_l</math> for <math>k \neq l</math>.  In such cases, the motion is called '''degenerate'''.
+
+Degenerate motion signals that there are additional general conserved quantities; for example, the frequencies of the [[Kepler problem]] are degenerate, corresponding to the conservation of the [[Laplace–Runge–Lenz vector]].
+
+Degenerate motion also signals that the [[Hamilton–Jacobi equation]]s are completely separable in more than one coordinate system; for example, the Kepler problem is completely separable in both [[spherical coordinates]] and [[parabolic coordinates]].
+
+==See also==
+* [[Integrable system]]
+* [[Tautological one-form]]
+* [[Superintegrable Hamiltonian system]]
+* [[Einstein-Brillouin-Keller method]]
+
+==References==
+* L. D. Landau and E. M. Lifshitz, (1976) ''Mechanics'', 3rd. ed., Pergamon Press. {{ISBN|0-08-021022-8}} (hardcover) and {{ISBN|0-08-029141-4}} (softcover).
+* H. Goldstein, (1980) ''Classical Mechanics'', 2nd. ed., Addison-Wesley. {{ISBN|0-201-02918-9}}
+* [[Gennadi Sardanashvily|G. Sardanashvily]], (2015) ''Handbook of Integrable Hamiltonian Systems'', URSS. {{ISBN|978-5-396-00687-4}}
+*{{Citation | last=Previato | first=Emma |  title=Dictionary of Applied Math for Engineers and Scientists | publisher=[[CRC Press]] | year=2003 | isbn=978-1-58488-053-0| bibcode=2003dame.book.....P }}
+
+[[Category:Coordinate systems]]
+[[Category:Classical mechanics]]
+[[Category:Dynamical systems]]
+[[Category:Hamiltonian mechanics]]

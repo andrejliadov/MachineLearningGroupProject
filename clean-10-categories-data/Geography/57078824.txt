@@ -1,0 +1,138 @@
+{{Multiple issues|
+{{notability|date=February 2020}}
+{{one source|date=February 2020}}
+{{More citations needed|date=January 2020}}
+{{Original research|date=January 2020}}
+}}
+'''Earth section paths''' are paths on the earth defined by the intersection of a [[reference ellipsoid]] and a plane. Common examples of earth sections include the great ellipse and normal sections. This page provides a unifying approach to all earth sections and their associated [[geodesy|geodetic problems]].
+
+== The Indirect Problem ==
+The indirect problem for earth sections is: given two points, <math>P_1</math> and <math>P_2</math> on the surface of the reference ellipsoid, find the length, <math>s_{12}</math>, of the short arc of a spheroid section from <math>P_1</math> to <math>P_2</math> and also find the departure and arrival (true north referenced) [[azimuth]]s of that curve, <math>\alpha_1</math> and <math>\alpha_2</math>. Let <math>P_k</math> have geodetic latitude  <math>\phi_k</math> and longitude <math>\lambda_k</math> (k=1,2). This problem is best solved using [[analytic geometry]] in [[ECEF]] coordinates.
+Let <math>R_1=ECEF(P_1)</math> and <math>R_2=ECEF(P_2)</math> be the ECEF coordinates of the two points, computed using the geodetic to ECEF transformations discussed [[Geographic coordinate conversion|here]].
+
+=== Section plane ===
+To define the section plane select any third point <math>R_0</math> not on the line from <math>R_1</math> to <math>R_2</math>. Choosing <math>R_0</math> to be on the surface normal at <math>P_1</math> will define the normal section at <math>P_1</math>. If <math>R_0</math> is the origin then the earth section is the great ellipse. (The origin would be co-linear with 2 antipodal points so a different point must be used in that case). Since there are infinitely many choices for <math>R_0</math>, the above problem is really a class of problems (one for each plane). Let <math>R_0</math> be given. To put the equation of the plane into the standard form, <math>lx + my + nz = d</math>, where <math>\ l^2 + m^2 + n^2 = 1</math>, requires the components of a [[unit vector]], <math>{\hat{N}} = (l, m, n)</math>, normal to the section plane. These components may be computed as follows: The vector from <math>R_0</math> to <math>R_1</math> has components <math>V_0=R_1 - R_0</math>, and the vector from <math>R_1</math> to <math>R_2</math> has components <math>V_1=R_2 - R_1</math>. Therefore, <math>{\hat{N}}</math> = <math>unit(V_0</math>×<math>V_1</math>), where <math>unit(V)</math> is the unit vector in the direction of <math>V</math>. The orientation convention used here is that <math>{\hat{N}}</math> points to the left of the path. If this is not the case then redefine <math>V_0</math> = -<math>V_0</math>. Finally, the parameter d for the plane may be computed using the [[dot product]] of <math>{\hat{N}}</math> with a vector from the origin to any point on the plane, such as <math>R_1</math>, i.e. d = <math>{\hat{N}}\cdot{R_1}</math>. The equation of the plane (in vector form) is thus <math>{\hat{N}}</math> ⋅ <math>R</math> = d, where <math>R</math> is the [[position vector]] of (x, y, z).
+
+=== Azimuth ===
+Examination of the ENU to ECEF transformation reveals that the ECEF coordinates of a unit vector pointing east at any point on the ellipsoid is: <math>\mathbf{\hat{e}}</math>=<math>(-\sin\lambda,\cos\lambda,0)</math>, a unit vector pointing north is <math>\mathbf{\hat{n}}</math>=<math>(-\sin\phi\cos\lambda,-\sin\phi\sin\lambda,\cos\phi)</math>, and a unit vector pointing up is <math>\mathbf{\hat{u}}</math>=<math>(\cos\phi\cos\lambda,\cos\phi\sin\lambda,\sin\phi)</math>. A vector tangent to the path is:
+<math>\mathbf{t}= \hat{N} \times \mathbf{\hat{u}}</math> so the east component of <math>\mathbf{t}</math> is <math>\mathbf{t}\cdot\mathbf{\hat{e}}</math>, and the north component is <math>\mathbf{t}\cdot\mathbf{\hat{n}}</math>. Therefore, the azimuth may be obtained from a [[atan2|two-argument arctangent function]], <math>\alpha</math>=<math>\operatorname{atan2}(\mathbf{t}\cdot\mathbf{\hat{e}},\mathbf{t}\cdot\mathbf{\hat{n}})</math>. Use this method at both <math>P_1</math> and <math>P_2</math> to get <math>\alpha_1</math> and <math>\alpha_2</math>.
+
+=== Section Ellipse ===
+The (non-trivial) intersection of a plane and ellipsoid is an ellipse. Therefore, the arc length, <math>s_{12}</math>, on the section path from <math>P_1</math> to <math>P_2</math> is an [[elliptic integral]] that may be computed to any desired accuracy using a truncated series. Before this can be done the ellipse must be defined and the limits of integration computed.
+Let the ellipsoid given by <math>\frac{x^2}{a^2}+\frac{y^2}{a^2}+\frac{z^2}{b^2} = 1</math>, and let <math> p=\sqrt{l^2+m^2}</math>.
+If p=0 then the section is a horizontal circle of radius <math>a\sqrt{1-\frac{d^2}{b^2}}</math>, which has no solution if <math>|d|>b</math>.
+
+If p>0 then Gilbertson<ref>{{cite journal|last1=Gilbertson|first1=Charles|title=Earth Section Paths|journal=Navigation|date=Spring 2012|volume=59|issue=1|pages=1–7|doi=10.1002/navi.2}}</ref> showed that the ECEF coordinates of the center of the ellipse is <math>{R_c}=\frac{d}{C}(la^2, ma^2, nb^2)</math>, where <math>C=a^2p^2+b^2n^2</math>,
+
+the semi-major axis is <math>a^*=a\sqrt{1-\frac{d^2}{C}}</math>, in the direction <math>\mathbf{\hat{i^*}}=(\frac{m}{p}, \frac{-l}{p}, 0)</math>, and
+the semi-minor axis is <math>b^*=\frac{b}{\sqrt{C}}a^*</math>,  in the direction <math>\mathbf{\hat{j^*}}=(\frac{ln}{p}, \frac{mn}{p}, -p)</math>, which has no solution if <math>|d|>\sqrt{C}</math>.
+
+=== Arc Length ===
+The polar form relative to center for the equation of an ellipse is <math>R(\theta)= \frac{b^*}{\sqrt{1-e^2 \cos^2 \theta}}</math>, where <math>e^2=1-\frac{(b^*)^2}{(a^*)^2}</math>, relates to the ellipse eccentricity,  not the spheroid eccentricity (see [[ellipse]]). Let P be a point on the ellipse and <math>R=ECEF(P)</math>, then the vector from <math>{R_c}</math> to <math>R</math> has components <math>R-R_c</math>. Using an argument similar to the one for azimuth above, let <math>\mathbf{\hat{w}}=unit(R-R_c)</math>, then <math>\cos\theta=\mathbf{\hat{w}}\cdot\mathbf{\hat{i^*}}</math>, and <math>\sin\theta=\mathbf{\hat{w}}\cdot\mathbf{\hat{j^*}}</math>, and <math>\theta =\operatorname{atan2}(\sin\theta,\cos\theta)</math>. In this way we obtain the central angles <math>\theta_{1}</math> and <math>\theta_{2}</math> corresponding to <math>P_1</math> and <math>P_2</math> respectively. Care must be taken to ensure that <math>\theta_1</math> ≤ <math> \theta_2</math> ≤ <math>\theta_1  + \pi </math>. Then the [[arc length]] along the ellipse is given by <math>s_{12}</math> =<math>\int_{\theta_1}^{\theta_2} \sqrt{R^2+(R^')^2}d\theta.</math> Substituting <math>R(\theta)</math> above into this formula, performing the indicated operations, using one more term than Gilbertson's expression and regrouping, results in 
+<math>s_{12} = ArcLength(\theta_1,\theta_2) = b^*({c_0}\Delta\theta + {c_1}\Delta s2 + {c_2}\Delta s4 + {c_3}\Delta s6)</math>, where
+: <math>
+\begin{align}
+\Delta\theta&=\theta_2-\theta_1,\\[6pt]
+\Delta s2&=\sin(2\theta_2)-\sin(2\theta_1),\\[6pt]
+\Delta s4&=\sin(4\theta_2)-\sin(4\theta_1),\\[6pt]
+\Delta s6&=\sin(6\theta_2)-\sin(6\theta_1),\\[6pt]
+{c_0}&=1+e^2(4096 + 3328e^2 + 2880e^4)/16384,\\[6pt]
+{c_1}&=e^2(512 + 384e^2 + 380e^4)/4096,\\[6pt]
+{c_2}&=-e^4(64 + 80e^2)/16384,\\[6pt]
+{c_3}&=-60 e^6/12288.\\[6pt]
+\end{align}
+</math>
+Alternatively, expansions for the [[Meridian arc]] may be used here by replacing the spheroid eccentricity with the section ellipse eccentricity.
+
+== The Direct Problem ==
+The direct problem is given <math>{P_1}</math>, the distance, <math>\delta</math>, and departure azimuth, <math>\alpha_1</math>, find <math>{P_2}</math> and the arrival azimuth, <math>\alpha_2</math>.
+
+=== Section plane ===
+Construct the tangent vector at <math>{P_1}</math>, <math>\mathbf\hat{t_1}= \mathbf\hat{n_1}\cos{\alpha_1} + \mathbf{\hat{e_1}}\sin{\alpha_1}</math>, where <math>\mathbf\hat{n_1}</math> and <math>\mathbf{\hat{e_1}}</math> are unit vectors pointing north and east (respectively) at <math>{P_1}</math>. Pick a vector,  <math>V_0</math>, to define the section plane, paying attention to orientation. Observe that <math>V_0</math> must not be in span{<math>\mathbf\hat{n_1} ,\mathbf{\hat{e_1}}</math>} (otherwise the plane would be tangent to the earth at <math>{P_1}</math>, so no path would result). The normal vector <math>{\hat{N}}</math> = <math>unit(V_0</math>×<math>\mathbf\hat{t_1}</math>),  together with <math>{P_1}</math> defines the plane.
+
+=== Locate <math>{P_2}</math>===
+This is a 2-d problem in span{<math>\mathbf\hat{i^*} , \mathbf\hat{j^*}</math>},  which will be solved with the help of the arc length formula above. The basic approach is to use Newton-Raphson iteration to arrive at <math>{P_2}</math>. The basis of the estimate is that the position vector of any point on the section ellipse may be expressed in terms of the position vector of the center and the central angle as 
+<math>V={V_c} + {r(\theta)}(\mathbf{\hat{i^*}}\cos\theta+\mathbf{\hat{j^*}}\sin\theta)</math>.
+To get an initial estimate of <math>{\theta_2}</math>, let <math>{V_1}={R_1}-R{_c}</math>, <math>{\theta_1}</math>=Central_Angle<math>({V_1})</math> (see the arc length section above),
+<math>{r_1}=r({\theta_1})</math>, <math>\Delta\theta=\frac{\delta}{r_1}</math>.
+
+Now initialize <math>\theta_2</math> = <math>\theta_1 + \Delta\theta</math>, and iterate the following steps:
+: <math>
+\begin{align}
+s &= ArcLength({\theta_1}, {\theta_2}),\\[6pt]
+Err &= \delta - s,\\[6pt]
+s'({\theta}) &= \frac{b^*}{(1-e^2 \cos^2 \theta)}\sqrt{\frac{(1-(2-e^2) e^2 \cos^2 \theta}{1-e^2 \cos^2 \theta}},\\[6pt]
+\Delta\theta &= \frac{Err}{s'({\theta_2})}, \\[6pt]
+\theta_2 &= \theta_2 + \Delta\theta, \\[6pt]
+\end{align}
+</math>
+exit when <math>abs(\Delta\theta) < 10^{-12}</math>
+
+No more than three iterations are usually necessary, although nearly antipodal cases can be problematic.
+Finally, let <math>{V_2}={V_c} + {r(\theta_2)}(\mathbf{\hat{i^*}}\cos\theta_2+\mathbf{\hat{j^*}}\sin\theta_2)</math>, and <math>{P_2}</math> = ECEF_to_Geo<math>({V_2})</math> using Bowring's 1985 algorithm,<ref>{{cite journal|last1=Bowring|first1=B.R.|title=The accuracy of geodetic latitude and height equations|journal=Survey Review|date=1985|volume=28|issue=218|pages=202–206|doi=10.1179/sre.1985.28.218.202}}</ref> or the algorithm [[Geographic coordinate conversion|here]].
+
+Alternatively, inversion of the arc length series may be used to avoid iterations.
+
+=== Azimuth ===
+Azimuth may be obtained by the same method as the indirect problem: <math>{\alpha_2}</math>=<math>\operatorname{atan2}(\mathbf{t_2}\cdot\mathbf{\hat{e_2}},\mathbf{t_2}\cdot\mathbf{\hat{n_2}})</math>, where the subscript 2 indicates evaluation of the associated quantity at <math>P_2</math>.
+
+== Examples ==
+=== The great ellipse ===
+Let <math>R_0</math> be the origin, so that <math>{V_0}</math> = the position vector of <math>R_1</math>. The above approach provides an alternative to that of others, such as Bowring.<ref>{{cite journal|last1=Bowring|first1=B.R.|title=The Direct and Inverse Solutions for the Great Elliptic Line on the Reference Ellipsoid|journal=Bulletin Géodésique|date=1984|volume=58|issue=1|pages=101–108|doi=10.1007/BF02521760|bibcode=1984BGeod..58..101B}}</ref>
+
+=== Normal sections ===
+The normal section at <math>P_1</math> is determined by letting <math>{V_0}</math> =  <math>\mathbf\hat{u_1}</math> (the surface normal at <math>P_1</math>). The above approach provides an alternative to that of others, such as Bowring.<ref>{{cite journal|last1=Bowring|first1=B.R.|title=The normal section -- forward and inverse formulae at any distance|journal=Survey Review|date=1971|volume=XXI|issue=161|pages=131–136|doi=10.1179/sre.1971.21.161.131}}</ref>
+
+=== The mean normal section ===
+The mean normal section from <math>P_1</math> to <math>P_2</math> is determined by letting <math>{V_0}</math> =  <math>0.5(\mathbf\hat{u_1}+\mathbf\hat{u_2})</math>. This is a good approximation to the geodesic from <math>P_1</math> to <math>P_2</math> for aviation or sailing.
+
+=== A class of sections ===
+A class of sections may be imagined by rotating <math>\mathbf\hat{u_1}</math> about the chord connecting <math>P_1</math> and <math>P_2.</math> All of these may be solved with the single approach above.
+
+== Intersections ==
+Let two section planes be given: <math>\hat{N_1}</math>⋅<math>R</math> = <math>d_1</math>, and <math>\hat{N_2}</math>⋅<math>R</math> = <math>d_2</math>. Assuming that the two planes are not parallel, the line of intersection is on both planes. Hence orthogonal to both normals, i.e. in the direction of <math>\hat{N_3} = \hat{N_1} \times \hat{N_2}</math>.
+
+Since <math>\hat{N_1}</math> and <math>\hat{N_2}</math> are not colinear <math>\hat{N_1}</math>, <math>\hat{N_2}</math>, <math>\hat{N_3}</math> is a basis for <math>R^3</math>. Therefore, there exist constants <math>C_1</math> and <math>C_2</math> such that the line of intersection of the 2 planes is given by <math>R</math> = <math>C_1\hat{N_1}</math> + <math>C_2\hat{N_2}</math> + t<math>\hat{N_3}</math>, where t is an independent parameter.
+
+Since this line is on both section planes, it satisfies both: 
+<math>C_1</math> + <math>C_2</math>(<math>\hat{N_1}</math>·<math>\hat{N_2}</math>) = <math>d_1</math>, and 
+<math>C_1</math>(<math>\hat{N_1}</math>·<math>\hat{N_2}</math>) + <math>C_2</math> = <math>d_2</math>.
+
+Solving these equations for <math>{C_1}</math> and <math>{C_2}</math> gives 
+<math>C_1</math> [1 - (<math>\hat{N_1}\hat{N_2})^2</math> ] = <math>d_1</math> - <math>d_2</math>(<math>\hat{N_1}</math>·<math>\hat{N_2}</math>), and 
+<math>C_2</math> [1 - (<math>\hat{N_1}\hat{N_2})^2</math> ] = <math>d_2</math> - <math>d_1</math>(<math>\hat{N_1}</math>·<math>\hat{N_2}</math>).
+
+Define the "dihedral angle", <math>\alpha</math>, by <math>\cos\alpha</math> = <math>{\hat{N_1}}</math>·<math>{\hat{N_2}}</math>.
+Then <math>C_1</math> = <math>\frac{(d_1- d_2  \cos\alpha)}{\sin^2\alpha}</math> ,  and <math>C_2</math> = <math>\frac{(d_2- d_1 \cos\alpha)}{\sin^2 \alpha}</math>.
+
+On the intersection line we have <math>R</math> = <math>R_0</math> + t<math>\hat{N_3}</math>,  where <math>R_0</math> = <math>C_1\hat{N_1}</math> + <math>C_2\hat{N_2}</math>.
+Hence: <math>x</math> = <math>x_0</math> + t<math>l_3</math>, <math>y</math> = <math>y_0</math> + t<math>m_3</math>,  and <math>z</math> = <math>z_0</math> + t<math>n_3</math>, where
+<math>x_0</math>= <math>C_1l_1</math> + <math>C_2l_2</math>, <math>y_0</math> = <math>C_1m_1</math> + <math>C_2m_2</math>, and <math>z_0</math> = <math>C_1n_1</math> +<math>C_2n_2</math>.
+and <math>\hat{N_i}</math>=(<math>l_i</math>,<math>m_i</math>,<math>n_i</math>), for i=1,2,3.
+
+To find the intersection of this line with the earth, plug the line equations into <math>\frac{x^2}{a^2}+\frac{y^2}{a^2}+\frac{z^2}{b^2} = 1</math>, to get
+<math>At^2 + 2Bt + C = 0</math>, where <math>A</math> = <math>l_3^2 + m_3^2 + \frac{a^2}{b^2}n_3^2</math>, 
+<math>B</math> = <math>x_0l_3 + y_0m_3 + \frac{a^2}{b^2}z_0n_3</math>,
+<math>C</math> = <math>x_0^2 + y_0^2 + \frac{a^2}{b^2}z_0^2 - a^2</math>.
+
+Therefore, the line intersects the earth at <math>t = \frac{-B \pm \sqrt{{B}^2-AC}}{A}</math>. If <math>B^2 < AC</math>, then there is no intersection. If <math>B^2 = AC</math>, then the line is tangent to the earth at <math>t = -B/A</math> (i.e. the sections intersect at that single point).
+
+Observe that <math>A\ne0</math> since <math>\hat{N_1}</math> and <math>\hat{N_2}</math>are not colinear.  Plugging t into
+<math>R</math> = <math>R_0</math> + t<math>\hat{N_3}</math>, gives the points of intersection of the earth sections.
+
+=== Examples ===
+==== Maximum or Minimum Latitude ====
+on an earth section path may be found by dropping the subscripts on the given section; <math>\hat{N_1} = (l, m, n)</math>,  <math>d_1 = d</math>, and setting <math>\hat{N_2} = (0, 0, 1)</math>, so that <math>\hat{N_3} = (m, -l, 0)</math>. Then solve for <math>d_2 = z_2</math> such that <math>B^2 = AC</math>.
+
+Since <math>B = 0</math>, and <math>A \ne 0</math>, we must have <math>C = 0</math>. Plugging t into <math>R</math> = <math>R_0 + t\hat{N_3}</math>, gives the points of intersection of the earth sections. Alternatively, just set <math>R = {R_c} \pm b^*\mathbf{\hat{j^*}}</math>.
+
+==== Maximum or Minimum Longitude ====
+on an earth section path may be found by dropping the subscripts on the given section; <math>\hat{N_1} = (l, m, n)</math>,  <math>d_1 = d</math>, and setting <math>\hat{N_2} = (-\sin\theta, \cos\theta, 0)</math>, where <math>\theta</math> is the longitude to be solved for such that <math>B^2 = AC</math>.
+
+Alternatively, just set <math>R = {R_c} \pm a^*\mathbf{\hat{i^*}}</math>.
+
+==References==
+{{reflist}}
+
+[[Category:Geography]]
+[[Category:Geodesy]]

@@ -1,0 +1,26 @@
+[[File:Globe.svg|thumb|Semi-transparent orthographic projection, centered on 40° N, 40° W, using shoreline data from GSHHG ("crude level")]]
+'''GSHHG''' ('''Global Self-consistent, Hierarchical, High-resolution Geography Database'''; formerly ''Global Self-consistent, Hierarchical, High-resolution Shoreline Database'' (''GSHHS'')) is a high-resolution shoreline data set amalgamated from two data bases (the CIA world database WDBII, and the World Vector Shoreline database) in the public domain. The data have undergone extensive processing and are free of internal inconsistencies such as [[erratic point]]s and crossing segments. The shorelines are constructed entirely from hierarchically arranged closed polygons. The four-level hierarchy is as follows: seashore, lakes, islands within lakes, ponds within islands within lakes.
+
+The data can be used to simplify data searches and data selections, or to study the statistical characteristics of shorelines and land-masses. It comes with access software and routines to facilitate decimation based on a standard line-reduction algorithm.
+
+GSHHS is developed and maintained by [[Paul Wessel (geophysicist)|Dr. Paul Wessel]] at the [[University of Hawai'i]], and Dr. [[Walter H. F. Smith]] at the [[NOAA Laboratory for Satellite Altimetry]].
+
+== See also ==
+*[[Vector Map]], a vector based collection of GIS data covering the earth
+
+== References ==
+* {{cite journal|last1=Wessel|first1=Pål|last2=Smith|first2=Walter H. F.|title=A global, self-consistent, hierarchical, high-resolution shoreline database|journal=Journal of Geophysical Research: Solid Earth|volume=101|issue=B4|year=1996|pages=8741–8743|issn=01480227|doi=10.1029/96JB00104|url=https://zenodo.org/record/1231376}}
+
+== External links ==
+* http://www.soest.hawaii.edu/pwessel/gshhg/ (Version 2.3.7 as of June 15, 2017)
+* http://www.ngdc.noaa.gov/mgg/shorelines/gshhs.html
+
+''This article contains public domain text created by the U.S. Federal government, taken from the NOAA website at [http://www.ngdc.noaa.gov/mgg/shorelines/gshhs.html]''
+
+[[Category:Maps]]
+[[Category:Geographical technology]]
+
+
+{{cartography-stub}}
+{{database-stub}}
+{{ocean-stub}}

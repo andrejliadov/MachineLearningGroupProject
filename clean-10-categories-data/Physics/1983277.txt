@@ -1,0 +1,72 @@
+[[File:Moseley step ladder.jpg|thumb|Photographic recording of Kα and Kβ x-ray emission lines for a range of elements; note that for the dispersive element used, the line position is proportional to the wavelength (not energy)]]
+'''Moseley's law''' is an [[empirical law]] concerning the characteristic [[X-ray#Physics|x-rays]] emitted by [[atom]]s. The law had been  discovered and published by the English physicist [[Henry Moseley]] in 1913-1914.<ref name="Mose1913" /><ref name="Mose1914" /> Until Moseley's work, "atomic number" was merely an element's place in the periodic table and was not known to be associated with any measurable physical quantity.<ref>e.g. {{Cite book |first=J. |last=Mehra |first2=H. |last2=Rechenberg |title=The historical development of quantum theory |publisher=Springer-Verlag |location=New York |year=1982 |others=Vol. 1, Part 1 |pages=193–196 |isbn=3-540-90642-8 }}</ref> In brief, the law states that the square root of the frequency of the emitted x-ray is approximately proportional to the [[atomic number]].<math>\surd v \varpropto Z</math>
+
+==History==
+[[File:Henry Moseley.jpg|thumb|upright|[[Henry Moseley]], holding an X-ray tube]]
+
+The [[History of the periodic table|historic periodic table]] was roughly ordered by increasing atomic ''weight'', but in a few famous cases the physical properties of two elements suggested that the heavier ought to precede the lighter.  An example is [[cobalt]] having a weight of 58.9 and [[nickel]] having an atomic weight of 58.7.
+
+[[Henry Moseley]] and other physicists used [[Bragg's law|x-ray diffraction]] to study the elements, and the results of their experiments led to organizing the periodic table by proton count.
+
+== Apparatus ==
+Since the spectral emissions for the heavier elements would be in the soft X-ray range (absorbed by air), the spectrometry apparatus had to be enclosed inside a [[vacuum]].<ref name="Brag1915">{{cite book |title=X Rays and Crystal Structure |last=Bragg |first=W. H. |publisher=G. Bell and Sons, Ltd. |year=1915 |pages=75-87 |url=https://archive.org/download/xrayscrystalstru00braguoft}}</ref> Details of the experimental setup are documented in the journal articles "The High-Frequency Spectra of the Elements" Part I<ref name="Mose1913">{{Cite journal |title=The High-Frequency Spectra of the Elements |journal=The London, Edinburgh and Dublin Philosophical Magazine and Journal of Science |last=Moseley |first=Henry G. J. |year=1913 |publisher=London : Taylor & Francis |others=Smithsonian Libraries |location=London-Edinburgh |series=6 |volume=26 |pages=1024-1034 |url=https://archive.org/details/londonedinburg6261913lond}}</ref> and Part II.<ref name="Mose1914">{{cite journal|title=The High-Frequency Spectra of the Elements. Part II.|url=https://archive.org/details/londonedinburg6271914lond|first=Henry G. J.|last=Moseley|year=1914|journal=Philosophical Magazine|series=6|volume=27|pages=703-713}}</ref>
+
+== Results ==
+
+Moseley found that the <math>K_\alpha</math> lines (in [[Siegbahn notation]]) were indeed related to the atomic number, ''Z.''<ref name="Mose1914" />
+
+Following Bohr's lead, Moseley found that for the spectral lines, this relationship could be ''approximated'' by a simple formula, later called ''Moseley's Law''.
+ 
+:<math> \nu = A \cdot \left(Z - b\right)^2 </math>''<ref name="Mose1914" />
+
+where:
+
+:<math> \nu \ </math> is the frequency of the observed x-ray emission line
+:<math> A \ </math> and <math> b \ </math> are constants that depend on the type of line (that is, K, L, etc. in x-ray notation)
+
+:<math> A = \left( \frac{1}{1^2} - \frac{1}{2^2} \right) \cdot </math>  [[Rydberg_constant#Rydberg_frequency|Rydberg frequency]] and  <math> b \ </math>= 1 for  <math>K_\alpha</math> lines, and  <math>A = \left( \frac{1}{2^2} - \frac{1}{3^2} \right) \cdot</math>  ''(Rydberg frequency)'' and  <math> b \ </math>= 7.4 for  <math>L_\alpha</math> lines.<ref name="Mose1914" />
+
+== Derivation ==
+
+Moseley derived his formula empirically by [[line fitting]] the square roots of the X-ray frequencies plotted by atomic number,<ref name="Mose1914" /> and his formula could be explained in terms of the [[Bohr model]] of the atom. 
+:<math>E = h\nu = E_\text{i}-E_\text{f}=\frac{m_\text{e} q_\text{e}^2 q_Z^2}{8 h^2 \varepsilon_{0}^2} \left( \frac{1}{n_\text{f}^2} - \frac{1}{n_\text{i}^2} \right) \,</math>
+
+in which
+:<math>\varepsilon_{0}</math> is the [[Vacuum_permittivity|permittivity of free space]]
+:<math>m_\text{e}</math> is the [[mass of an electron]]
+:<math>q_\text{e}</math> is the [[charge of an electron]]
+:<math>n_\text{f}</math> is the quantum number of final energy level
+:<math>n_\text{i}</math> is the quantum number of initial energy level
+
+It is assumed that the final energy level is less than the initial energy level.
+
+Considering the empirically found constant that approximately reduced (or apparently "screened") the energy of the charges, Bohr's formula for Moseley's <math>K_\alpha</math> X-ray transitions became:
+
+::<math>E= h\nu = E_\text{i}-E_\text{f}=\frac{m_\text{e} q_\text{e}^4}{8 h^2 \varepsilon_{0}^2} \left( \frac{1}{1^2} - \frac{1}{2^2} \right)(Z-1)^2 \, = \left( \frac{3}{4}\right)(Z-1)^2 \times 13.6\ \mathrm{eV}</math><ref name="Mose1914" />
+
+or (dividing both sides by ''h'' to convert ''E'' to <math>\ \nu</math>):<br>
+
+::<math>\nu =\frac{E}{h} = \frac{m_\text{e} q_\text{e}^4}{8 h^3 \varepsilon_{0}^2} \left( \frac{3}{4}\right) (Z-1)^2 = (2.47 \cdot 10^{15} \ \mathrm{Hz})(Z-1)^2 \,</math>
+
+The coefficient in this formula simplifies to a frequency of {{sfrac|3|4''h''}}&nbsp;[[Rydberg constant#Rydberg unit of energy|Ry]], with an approximate value of {{val|2.47|e=15|ul=Hz}}.
+
+== Screening ==
+
+A simplified explanation for the effective charge of a nucleus being one less than its actual charge is that an unpaired electron in the K-shell screens it.<ref>{{cite journal|author=K. R. Naqvi|title=The physical (in)significance of Moseley's screening parameter|journal=American Journal of Physics|volume=64|number=10|pages=1332|year=1996|doi=10.1119/1.18381|bibcode = 1996AmJPh..64.1332R }}</ref><ref>{{cite journal|author=A. M. Lesk|title=Reinterpretation of Moseley's experiments relating K alpha line frequencies and atomic number|journal=American Journal of Physics|volume=48|number=6|pages=492–493|year=1980|doi=10.1119/1.12320|bibcode = 1980AmJPh..48..492L }}</ref> An elaborate discussion criticizing Moseley's interpretation of screening can be found in a paper by Whitaker<ref>{{Cite journal|last=Whitaker|first=M. A. B.|year=1999|title=The Bohr–Moseley synthesis and a simple model for atomic x-ray energies|journal=European Journal of Physics|volume=20|issue=3|pages=213–220|bibcode=1999EJPh...20..213W|doi=10.1088/0143-0807/20/3/312}}</ref> which is repeated in most modern texts.
+
+A list of experimentally found X-ray transitions is available at NIST.<ref name="NIST1">{{cite web |title=X-ray Transition Energies Database |url=https://physics.nist.gov/cgi-bin/XrayTrans/search.pl?sorttype=energy&element=All&trans=KL3&lower=&upper=&units=eV}}</ref> Theoretical energies can be computed to a much greater accuracy than Moseley's law using a particle physics simulation method such as Dirac-Fock.<ref name="NIST2">{{cite web |title=Theoretical Transition Energies |website=X-ray Transition Energies Database |url=https://physics.nist.gov/PhysRefData/XrayTrans/Html/theoretical.html}}</ref>
+
+== See also ==
+
+* Mosley's [[periodic law]], concerning the modern periodic table
+*[[Auger electron spectroscopy]], a similar phenomenon with increased x-ray yield from species of higher atomic number
+
+==References==
+{{Reflist}}
+
+==External links==
+* Oxford Physics Teaching - History Archive, "[http://www.physics.ox.ac.uk/history.asp?page=Exhibit12 Exhibit 12 - Moseley's graph]" ''(Reproduction of the original Moseley diagram showing the square root frequency dependence)''
+
+[[Category:History of physics]]
+[[Category:Atomic physics]]
+[[Category:X-rays]]

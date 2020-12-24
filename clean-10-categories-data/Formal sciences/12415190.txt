@@ -1,0 +1,67 @@
+In [[algebraic logic]], an '''action algebra''' is an [[algebraic structure]] which is both a [[residuated semilattice]] and a [[Kleene algebra]].  It adds the star or reflexive transitive closure operation of the latter to the former, while adding the left and right residuation or implication operations of the former to the latter.  Unlike [[dynamic logic (modal logic)|dynamic logic]] and other modal logics of programs, for which programs and propositions form two distinct sorts, action algebra combines the two into a single sort.  It can be thought of as a variant of [[Heyting algebra|intuitionistic logic]] with star and with a noncommutative conjunction whose identity need not be the top element.  Unlike Kleene algebras, action algebras form a [[Variety_(universal_algebra)|variety]], which furthermore is finitely axiomatizable, the crucial axiom being ''a''•(''a'' → ''a'')* ≤ ''a''.  Unlike models of the equational theory of Kleene algebras (the regular expression equations), the star operation of action algebras is reflexive transitive closure in every model of the equations.
+__TOC__
+
+==Definition==
+
+An '''action algebra''' (''A'', ∨, 0, •, 1, ←, →, *) is an [[algebraic structure]] such that (''A'', ∨, •, 1, ←, →) forms a [[residuated semilattice]] while (''A'', ∨, 0, •, 1, *) forms a [[Kleene algebra]].<ref>{{citation
+| last = Kozen | first = Dexter
+| contribution = On Kleene algebras and closed semirings
+| contribution-url = https://www.cs.cornell.edu/~kozen/Papers/kacs.pdf
+| title = Mathematical Foundations of Computer Science (MFCS)
+| editor = B. Rovan
+| series = LNCS 452
+| pages = 26–47
+| publisher = Springer-Verlag
+| year = 1990}}</ref>  That is, it is any model of the joint theory of both classes of algebras.  Now Kleene algebras are axiomatized with quasiequations, that is, implications between two or more equations, whence so are action algebras when axiomatized directly in this way.  However, action algebras have the advantage that they also have an equivalent axiomatization that is purely equational.<ref>{{citation
+| last = Pratt | first = Vaughan
+| contribution = Action Logic and Pure Induction
+| contribution-url = http://boole.stanford.edu/pub/jelia.pdf
+| title = Logics in AI: European Workshop JELIA '90'' (ed. J. van Eijck)
+| series = LNCS 478
+| pages = 97–120
+| publisher = Springer-Verlag
+| year = 1990}}.</ref>  The language of action algebras extends in a natural way to that of [[action lattice]]s, namely by the inclusion of a meet operation.<ref>{{citation
+ | last = Kozen | first = Dexter
+ | contribution = On action algebras
+ | contribution-url = http://www.cs.cornell.edu/~kozen/papers/act.pdf
+ | mr = 1295061
+ | pages = 78–88
+ | publisher = MIT Press, Cambridge, MA
+ | series = Found. Comput. Ser.
+ | title = Logic and information flow
+ | year = 1994}}.</ref>
+
+In the following we write the inequality ''a'' ≤ ''b'' as an abbreviation for the equation ''a'' ∨ ''b'' = ''b''.  This allows us to axiomatize the theory using inequalities yet still have a purely equational axiomatization when the inequalities are expanded to equalities.
+
+The equations axiomatizing action algebra are those for a residuated semilattice, together with the following equations for star.
+::: 1 ∨ ''a''*•''a''* ∨ ''a''  &nbsp; ≤ &nbsp; ''a''*
+::: ''a''* ≤ (''a'' ∨ ''b'')*
+::: (''a'' → ''a'')* &nbsp; ≤ &nbsp; ''a'' → ''a''
+
+The first equation can be broken out into three equations, 1 ≤ ''a''*, ''a''*•''a''* ≤ ''a''*, and ''a'' ≤ ''a''*.  These force ''a''* to be reflexive, transitive,{{clarify|reason=These are properties of binary relations. Explain why a* can be considered as a binary relation.|date=June 2014}} and greater or equal to ''a'' respectively.  The second axiom asserts that star is monotone.  The third axiom can be written equivalently as ''a''•(''a'' → ''a'')* ≤ ''a'', a form which makes its role as induction more apparent.  These two axioms in conjunction with the axioms for a residuated semilattice force ''a''* to be the least reflexive transitive element of the semilattice greater or equal to ''a''.  Taking that as the definition of reflexive transitive closure of ''a'', we then have that for every element ''a'' of any action algebra, ''a''* is the reflexive transitive closure of ''a''.
+
+The equational theory of the implication-free fragment of action algebras, those equations not containing → or ←, can be shown to coincide with the equational theory of Kleene algebras, also known as the [[regular expression]] equations.  In that sense the above axioms constitute a finite axiomatization of regular expressions.  Redko showed in 1967 that these equations had no finite axiomatization, for which [[John Horton Conway]] gave a shorter proof in 1971.  Salomaa gave an equation schema axiomatizing this theory which Kozen subsequently reformulated as a finite axiomatization using quasiequations, or implications between equations, the crucial quasiequations being those of induction: if ''x''•''a'' ≤ ''x'' then ''x''•''a''* ≤ ''x'', and if ''a''•''x'' ≤ ''x'' then ''a''*•''x'' ≤ ''x''.  Kozen defined a Kleene algebra to be any model of this finite axiomatization.
+
+Conway showed that the equational theory of regular expressions admit models in which ''a''* was not the reflexive transitive closure of ''a'', by giving a four-element model 0 ≤ 1 ≤ ''a'' ≤ ''a''* in which ''a''•''a'' = ''a''.  In Conway's model, ''a'' is reflexive and transitive, whence its reflexive transitive closure should be ''a''.  However the regular expressions do not enforce this, allowing ''a''* to be strictly greater than ''a''.  Such anomalous behavior is not possible in an action algebra.
+
+==Examples==
+Any [[Heyting algebra]] (and hence any [[Boolean algebra (structure)|Boolean algebra]]) is made an action algebra by taking • to be ∧ and ''a''* = 1.  This is necessary and sufficient for star because the top element 1 of a Heyting algebra is its only reflexive element, and is transitive as well as greater or equal to every element of the algebra.
+
+The set 2<sup>Σ*</sup> of all [[formal language]]s (sets of finite strings) over an alphabet Σ forms an action algebra with 0 as the empty set, 1 = {ε}, ∨ as union, • as concatenation, ''L'' ← ''M'' as the set of all strings ''x'' such that ''xM'' ⊆ ''L'' (and dually for ''M'' → ''L''), and ''L''* as the set of all strings of strings in ''L'' (Kleene closure).
+
+The set 2<sup>''X''²</sup> of all binary relations on a set ''X'' forms an action algebra with 0 as the empty relation, 1 as the identity relation or equality, ∨ as union, • as relation composition, ''R'' ← ''S'' as the relation consisting of all pairs (''x,y'') such that for all ''z'' in ''X'', ''ySz'' implies ''xRz'' (and dually for ''S'' → ''R''), and ''R*'' as the reflexive transitive closure of ''R'', defined as the union over all relations ''R''<sup>''n''</sup> for integers ''n'' ≥ 0.
+
+The two preceding examples are power sets, which are [[Boolean algebra (logic)|Boolean algebras]] under the usual set theoretic operations of union, intersection, and complement.  This justifies calling them '''Boolean action algebras'''.  The relational example constitutes a [[relation algebra]] equipped with an operation of reflexive transitive closure.  Note that every Boolean algebra is a Heyting algebra and therefore an action algebra by virtue of being an instance of the first example.
+
+==See also==
+* [[Kleene star]]
+* [[Regular expression]]
+
+==References==
+{{Reflist}}
+* {{cite book | first=J.H. | last=Conway | authorlink=John Horton Conway | title=Regular algebra and finite machines | publisher=Chapman and Hall | year=1971 | isbn=0-412-10620-5 | zbl=0231.94041 | location=London }}
+* V.N. Redko, On defining relations for the algebra of regular events (Russian), ''Ukrain. Mat. Z.'', 16:120–126, 1964.
+
+[[Category:Formal languages]]
+[[Category:Algebraic logic]]
+[[Category:Algebraic structures]]

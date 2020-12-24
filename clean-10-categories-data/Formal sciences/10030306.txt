@@ -1,0 +1,19 @@
+<!--ABCDEFG Schema links here --><!-- ABCDDNA Schema links here -->
+The '''Access to Biological Collections Data''' ('''ABCD''') '''[[XML schema|schema]]''' is a highly structured [[data exchange]] and [[data access|access]] [[data model|model]] for [[taxon]] occurrence data (specimens, observations, etc. of living organisms), i.e. primary [[biodiversity]] data.
+
+In 2006, the schema was extended, to include an 'Extension For Geosciences', to form the '''ABCDEFG''' Schema<ref>{{cite web|url=http://www.geocase.eu/documentation/efg_schema.pdf |title=EFG Schema |accessdate=8 September 2011 |url-status=dead |archiveurl=https://web.archive.org/web/20120402084651/http://www.geocase.eu/documentation/efg_schema.pdf |archivedate=April 2, 2012 }}</ref> and, in 2010, [[Biodiversity Information Standards|TDWG]] published a draft standard extension for [[DNA]]; '''ABCDDNA'''.<ref>{{cite web |url=http://www.tdwg.org/standards/640/ |title=ABCDDNA : DNA extension for Access to Biological Collection Data |publisher=[[TDWG]] |accessdate=30 August 2013}}</ref>
+
+==References==
+{{Reflist}}
+
+==External links==
+*https://www.tdwg.org/standards/abcd/
+*http://www.codata.org/
+*https://web.archive.org/web/20070929124618/http://www.wfcc.nig.ac.jp/NEWSLETTER/newsletter36/a6.pdf the ABCD [[database schema]]
+
+{{DEFAULTSORT:Abcd Schema}}
+[[Category:Bioinformatics]]
+[[Category:XML-based standards]]
+
+
+{{bioinformatics-stub}}

@@ -1,0 +1,252 @@
+{{short description|Mathematical study of waiting lines, or queues}}
+{{redirect|First come, first served|the Kool Keith album|First Come, First Served}}
+[[File:ServidorParalelo.jpg|thumb|right|[[Queueing theory#Queueing networks|Queue networks]] are systems in which single queues are connected by a routing network. In this image, servers are represented by circles, queues by a series of rectangles and the routing network by arrows. In the study of queue networks one typically tries to obtain the [[equilibrium distribution]] of the network, although in many applications the study of the [[transient state]] is fundamental.]]
+
+'''Queueing theory''' is the mathematical study of waiting lines, or [[wikt:queue|queues]].<ref name="sun">{{cite book | title = Probability, Statistics and Queueing Theory | first = V. | last = Sundarapandian | publisher = PHI Learning | year = 2009 | chapter = 7. Queueing Theory | isbn = 978-8120338449 }}</ref> A queueing model is constructed so that queue lengths and waiting time can be predicted.<ref name="sun" /> Queueing theory is generally considered a branch of [[operations research]] because the results are often used when making business decisions about the resources needed to provide a service.
+
+Queueing theory has its origins in research by [[Agner Krarup Erlang]] when he created models to describe the system of Copenhagen Telephone Exchange company, a Danish company.<ref name="sun" /> The ideas have since seen applications including [[telecommunication]], [[Traffic engineering (transportation)|traffic engineering]], [[computing]]<ref>{{cite web
+  | last = Lawrence W. Dowdy, Virgilio A.F. Almeida
+  | first = Daniel A. Menasce
+  | title = Performance by Design: Computer Capacity Planning by Example
+  | url = http://www.cs.gmu.edu/~menasce/perfbyd/
+  }}</ref>
+and, particularly in [[industrial engineering]], in the design of factories, shops, offices and hospitals, as well as in project management.<ref>{{Cite news
+  | first = Kira
+  | last = Schlechter
+  | title = Hershey Medical Center to open redesigned emergency room
+  | newspaper = The Patriot-News
+  | date = March 2, 2009
+  | url = http://www.pennlive.com/midstate/index.ssf/2009/03/hershey_med_to_open_redesigned.html
+  }}</ref><ref>{{cite book |url= http://www.cass.city.ac.uk/media/stories/story_96_105659_69284.html |accessdate= 2008-05-20 |author= Mayhew, Les |author2= Smith, David |date= December 2006 |title= Using queuing theory to analyse completion times in accident and emergency departments in the light of the Government 4-hour target |publisher= [[Cass Business School]] |isbn= 978-1-905752-06-5 }}{{dead link|date=April 2018 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>
+
+== Spelling ==
+
+The spelling "queueing" over "queuing" is typically encountered in the academic research field. In fact, one of the flagship journals of the profession is ''[[Queueing Systems]]''.
+
+== Single queueing nodes ==
+
+A queue, or queueing node can be thought of as nearly a [[black box]]. Jobs or "customers" arrive to the queue, possibly wait some time, take some time being processed, and then depart from the queue.
+
+[[File:Black box queue diagram.png|thumb|350px|center|A black box. Jobs arrive to, and depart from, the queue.]]
+
+The queueing node is not quite a pure black box, however, since some information is needed about the inside of the queuing node. The queue has one or more "servers" which can each be paired with an arriving job until it departs, after which that server will be free to be paired with another arriving job.
+
+[[File:Queueing node service digram.png|thumb|500px|center|A queueing node with 3 servers. Server '''a''' is idle, and thus an arrival is given to it to process. Server '''b''' is currently busy and will take some time before it can complete service of its job. Server '''c''' has just completed service of a job and thus will be next to receive an arriving job.]]
+
+An analogy often used is that of the cashier at a supermarket. There are other models, but this is one commonly encountered in the literature. Customers arrive, are processed by the cashier, and depart. Each cashier processes one customer at a time, and hence this is a queueing node with only one server. A setting where a customer will leave immediately if the cashier is busy when the customer arrives, is referred to as a queue with no buffer (or no "waiting area", or similar terms). A setting with a waiting zone for up to ''n'' customers is called a queue with a buffer of size ''n''.
+
+=== Birth-death process ===
+
+The behaviour of a single queue (also called a "queueing node") can be described by a [[birth–death process]], which describes the arrivals and departures from the queue, along with the number of jobs (also called "customers" or "requests", or any number of other things, depending on the field) currently in the system. An arrival increases the number of jobs by 1, and a departure (a job completing its service) decreases ''k'' by 1.
+
+[[File:BD-proces.png|thumb|center|500px|A birth–death process. The values in the circles represent the state of the birth-death process. For a queueing system, ''k'' is the number of jobs in the system (either being serviced or waiting if the queue has a buffer of waiting jobs). The system transitions between values of ''k'' by "births" and "deaths" which occur at rates given by various values of ''λ''<sub>''i''</sub> and ''μ''<sub>''i''</sub>, respectively. Further, for a queue, the arrival rates and departure rates are generally considered not to vary with the number of jobs in the queue, so a single average rate of arrivals/departures per unit time to the queue is assumed. Under this assumption, this process has an arrival rate of ''λ'' = ''λ''<sub>1</sub>, ''λ''<sub>2</sub>, ..., ''λ''<sub>''k''</sub> and a departure rate of ''μ'' = ''μ''<sub>1</sub>, ''μ''<sub>2</sub>, ..., ''μ''<sub>''k''</sub> (see next figure).]]
+
+[[File:Mm1_queue.svg|thumb|center|250px|A queue with 1 server, arrival rate ''λ'' and departure rate ''μ''.]]
+
+==== Balance equations ====
+
+The [[steady state]] equations for the birth-and-death process, known as the [[balance equation]]s, are as follows. Here <math>P_n</math> denotes the steady state probability to be in state ''n''.
+
+: <math>\mu_1 P_1 = \lambda_0 P_0</math>
+: <math>\lambda_0 P_0 + \mu_2 P_2 = (\lambda_1 + \mu_1) P_1</math>
+: <math>\lambda_{n-1} P_{n-1} + \mu_{n+1} P_{n+1} = (\lambda_n + \mu_n) P_n</math>
+
+The first two equations imply
+: <math>P_1 = \frac{\lambda_0}{\mu_1} P_0</math>
+and
+: <math>P_2 = \frac{\lambda_1}{\mu_2} P_1 + \frac{1}{\mu_2} (\mu_1 P_1 - \lambda_0 P_0) = \frac{\lambda_1}{\mu_2} P_1 = \frac{\lambda_1 \lambda_0}{\mu_2 \mu_1} P_0.</math>
+
+By mathematical induction,
+: <math>P_n = \frac{\lambda_{n-1} \lambda_{n-2} \cdots \lambda_0}{\mu_n \mu_{n-1} \cdots \mu_1} P_0 = P_0 \prod_{i = 0}^{n-1} \frac{\lambda_i}{\mu_{i+1}}.</math>
+
+The condition <math>\sum_{n = 0}^{\infty} P_n = P_0 + P_0 \sum_{n=1}^\infty \prod_{i=0}^{n-1} \frac{\lambda_i}{\mu_{i+1}} = 1</math> leads to:
+: <math>P_0 = \frac{1}{1 + \sum_{n=1}^{\infty}\prod_{i=0}^{n-1} \frac{\lambda_i}{\mu_{i+1}} },</math>
+which, together with the equation for <math>P_n</math> <math>(n\geq1)</math>, fully describes the required steady state probabilities.
+
+=== Kendall's notation ===
+
+Single queueing nodes are usually described using [[Kendall's notation]] in the form A/S/''c'' where ''A'' describes the distribution of durations between each arrival to the queue, ''S'' the distribution of service times for jobs and ''c'' the number of servers at the node.<ref name="tijms">Tijms, H.C, ''Algorithmic Analysis of Queues", Chapter 9 in  A First Course in Stochastic Models, Wiley, Chichester, 2003</ref><ref>{{Cite journal | last1 = Kendall | first1 = D. G. | author-link1 = David George Kendall| title = Stochastic Processes Occurring in the Theory of Queues and their Analysis by the Method of the Imbedded Markov Chain | doi = 10.1214/aoms/1177728975 | jstor = 2236285| journal = The Annals of Mathematical Statistics | volume = 24 | issue = 3 | pages = 338–354 | year = 1953| doi-access = free }}</ref> For an example of the notation, the [[M/M/1 queue]] is a simple model where a single server serves jobs that arrive according to a [[Poisson process]] (where inter-arrival durations are [[exponentially distributed]]) and have exponentially distributed service times (the M denotes a [[Markov process]]). In an [[M/G/1 queue]], the G stands for "general" and indicates an arbitrary [[probability distribution]] for service times.
+
+=== Example analysis of an M/M/1 queue ===
+
+Consider a queue with one server and the following characteristics:
+* ''λ'': the arrival rate (the expected time between each customer arriving, e.g. 30 seconds);
+* ''μ'': the reciprocal of the mean service time (the expected number of consecutive service completions per the same unit time, e.g. per 30 seconds);
+* ''n'': the parameter characterizing the number of customers in the system;
+* ''P''<sub>''n''</sub>: the probability of there being ''n'' customers in the system in steady state.
+
+Further, let ''E''<sub>''n''</sub> represent the number of times the system enters state ''n'', and ''L''<sub>''n''</sub> represent the number of times the system leaves state ''n''. Then for all ''n'', |''E''<sub>''n''</sub> − ''L''<sub>''n''</sub>| ∈ {0, 1}. That is, the number of times the system leaves a state differs by at most 1 from the number of times it enters that state, since it will either return into that state at some time in the future (''E''<sub>''n''</sub> = ''L''<sub>''n''</sub>) or not (|''E''<sub>''n''</sub> − ''L''<sub>''n''</sub>| = 1).
+
+When the system arrives at a steady state, the arrival rate should be equal to the departure rate.
+
+Thus the balance equations
+: <math>\mu P_1 = \lambda P_0</math>
+: <math>\lambda P_0 + \mu P_2 = (\lambda + \mu) P_1</math>
+: <math>\lambda P_{n-1} + \mu P_{n+1} = (\lambda + \mu) P_n</math>
+imply
+: <math>P_n = \frac{\lambda}{\mu} P_{n-1},\ n=1,2,\ldots</math>
+The fact that <math>P_0 + P_1 + \cdots = 1</math> leads to the [[geometric distribution]] formula
+: <math>P_n = (1 - \rho) \rho^n</math>
+where <math>\rho = \frac{\lambda}{\mu} < 1.</math>
+
+=== Simple two-equation queue ===
+
+A common basic queuing system is attributed to [[Erlang distribution|Erlang]], and is a modification of [[Little's Law]]. Given an arrival rate ''λ'', a dropout rate ''σ'', and a departure rate ''μ'', length of the queue ''L'' is defined as:
+
+: <math>L = \frac{\lambda - \sigma}{\mu}.</math>
+
+Assuming an exponential distribution for the rates, the waiting time ''W'' can be defined as the proportion of arrivals that are served. This is equal to the exponential survival rate of those who do not drop out over the waiting period, giving:
+
+: <math>\frac{\mu}{\lambda} = e^{-W{\mu}}</math>
+
+The second equation is commonly rewritten as:
+
+: <math>W = \frac{1}{\mu} \mathrm{ln}\frac{\lambda}{\mu}</math>
+
+The two-stage one-box model is common in epidemiology.<ref>{{Cite journal|last=Hernández-Suarez|first=Carlos|date=2010|title=An application of queuing theory to SIS and SEIS epidemic models|journal=Math. Biosci.|volume=7|issue=4|pages=809–823|doi=10.3934/mbe.2010.7.809|pmid=21077709|doi-access=free}}</ref>
+
+== Overview of the development of the theory ==
+
+In 1909, [[Agner Krarup Erlang]], a Danish engineer who worked for the Copenhagen Telephone Exchange, published the first paper on what would now be called queueing theory.<ref>{{cite web|url=http://pass.maths.org.uk/issue2/erlang/index.html |title=Agner Krarup Erlang (1878-1929) &#124; plus.maths.org |publisher=Pass.maths.org.uk |accessdate=2013-04-22|date=1997-04-30 }}</ref><ref>{{Cite journal | last1 = Asmussen | first1 = S. R. | last2 = Boxma | first2 = O. J. | author-link2 = Onno Boxma| doi = 10.1007/s11134-009-9151-8 | title = Editorial introduction | journal = [[Queueing Systems]] | volume = 63 | issue = 1–4 | pages = 1–2 | year = 2009 | s2cid = 45664707 }}</ref><ref>{{cite journal | author-link = Agner Krarup Erlang | first = Agner Krarup | last = Erlang
+| title = The theory of probabilities and telephone conversations | journal = Nyt Tidsskrift for Matematik B | volume = 20 | pages = 33–39 | archive-url = https://web.archive.org/web/20111001212934/http://oldwww.com.dtu.dk/teletraffic/erlangbook/pps131-137.pdf | archive-date = 2011-10-01 | url = http://oldwww.com.dtu.dk/teletraffic/erlangbook/pps131-137.pdf | year = 1909}}</ref> He modeled the number of telephone calls arriving at an exchange by a [[Poisson process]] and solved the [[M/D/1 queue]] in 1917 and [[M/D/k queue|M/D/''k'' queue]]ing model in 1920.<ref name="century">{{Cite journal | last1 = Kingman | first1 = J. F. C. | author-link1 = John Kingman | title = The first Erlang century—and the next | journal = [[Queueing Systems]] | volume = 63 | issue = 1–4 | pages = 3–4 | year = 2009 | doi = 10.1007/s11134-009-9147-4| s2cid = 38588726 }}</ref> In Kendall's notation:
+
+* M stands for Markov or memoryless and means arrivals occur according to a Poisson process;
+* D stands for deterministic and means jobs arriving at the queue which require a fixed amount of service;
+* ''k'' describes the number of servers at the queueing node (''k'' = 1, 2, ...).
+
+If there are more jobs at the node than there are servers, then jobs will queue and wait for service
+
+The M/G/1 queue was solved by [[Felix Pollaczek]] in 1930,<ref>Pollaczek, F., Ueber eine Aufgabe der Wahrscheinlichkeitstheorie, Math. Z. 1930</ref> a solution later recast in probabilistic terms by [[Aleksandr Khinchin]] and now known as the [[Pollaczek–Khinchine formula]].<ref name="century" /><ref name="century1" />
+
+After the 1940s queueing theory became an area of research interest to mathematicians.<ref name="century1">{{Cite journal | last1 = Whittle | first1 = P. | author-link1 = Peter Whittle (mathematician)| doi = 10.1287/opre.50.1.227.17792 | title = Applied Probability in Great Britain | journal = [[Operations Research (journal)|Operations Research]]| volume = 50 | issue = 1 | pages = 227–239| year = 2002 | jstor = 3088474| doi-access = free }}</ref> In 1953 [[David George Kendall]] solved the GI/M/''k'' queue<ref>Kendall, D.G.:Stochastic processes occurring in the theory of queues and their analysis by the method of the imbedded Markov chain, Ann. Math. Stat. 1953</ref> and introduced the modern notation for queues, now known as [[Kendall's notation]]. In 1957 Pollaczek studied the GI/G/1 using an [[integral equation]].<ref>Pollaczek, F., Problèmes Stochastiques posés par le phénomène de formation d'une queue</ref> [[John Kingman]] gave a formula for the [[Mean sojourn time|mean waiting time]] in a [[G/G/1 queue]]: [[Kingman's formula]].<ref>{{Cite journal | last1 = Kingman | first1 = J. F. C. | author-link = John Kingman| doi = 10.1017/S0305004100036094 | author2 = <!-- (exclude bad crossref data) --> | last2 = Atiyah | title = The single server queue in heavy traffic | journal = [[Mathematical Proceedings of the Cambridge Philosophical Society]]| volume = 57 | issue = 4 | pages = 902 | date=October 1961 | jstor = 2984229}}</ref>
+
+[[Leonard Kleinrock]] worked on the application of queueing theory to [[message switching]] (in the early 1960s) and [[packet switching]] (in the early 1970s). His initial contribution to this field was his doctoral thesis at the [[Massachusetts Institute of Technology]] in 1962, published in book form in 1964 in the field of message switching. His theoretical work published in the early 1970s underpinned the use of packet switching in the [[ARPANET]], a forerunner to the Internet.
+
+The [[matrix geometric method]] and [[matrix analytic method]]s have allowed queues with [[phase-type distribution|phase-type distributed]] inter-arrival and service time distributions to be considered.<ref>{{Cite journal | last1 = Ramaswami | first1 = V. | doi = 10.1080/15326348808807077 | title = A stable recursion for the steady state vector in markov chains of m/g/1 type | journal = Communications in Statistics. Stochastic Models | volume = 4 | pages = 183–188 | year = 1988 }}</ref>
+
+Systems with coupled orbits are an important part in queueing theory in the application to wireless networks and signal processing. <ref>{{Cite journal | last1 = Morozov | first1 = E. |title = Stability analysis of a multiclass retrial system withcoupled orbit queues | doi = 10.1007/978-3-319-66583-2-6 | journal = Proceedings of 14th European Workshop| volume = 17| pages = 73–90 | year = 2017| doi-broken-date = 2020-11-07 | doi-access = free }}</ref>  
+
+Problems such as performance metrics for the [[M/G/k queue|M/G/''k'' queue]] remain an open problem.<ref name="century" /><ref name="century1" />
+
+== Service disciplines ==
+[[File:Fifo queue.png|thumb|350px|First in first out (FIFO) queue example.]]
+Various scheduling policies can be used at queuing nodes:
+
+; [[FIFO (computing and electronics)|First in first out]]: Also called ''first-come, first-served'' (FCFS),<ref name="Manuel">{{cite book|last1=Manuel|first1=Laguna|title=Business Process Modeling, Simulation and Design|date=2011|publisher=Pearson Education India|isbn=9788131761359|page=178|url=https://books.google.com/books?id=d-V8c8YRJikC&q=%22First-come%2C+first-served%22+business&pg=PA178|accessdate=6 October 2017|language=en}}</ref> this principle states that customers are served one at a time and that the customer that has been waiting the longest is served first.<ref name="penttinen">Penttinen A., ''Chapter 8 &ndash; Queueing Systems'', Lecture Notes: S-38.145 - Introduction to Teletraffic Theory.</ref>
+
+; [[LIFO (computing)|Last in first out]]: This principle also serves customers one at a time, but the customer with the shortest [[Mean sojourn time|waiting time]] will be served first.<ref name="penttinen"/> Also known as a [[Stack (data structure)|stack]].
+
+; [[Processor sharing]]: Service capacity is shared equally between customers.<ref name="penttinen"/>
+
+; Priority: Customers with high priority are served first.<ref name="penttinen"/> Priority queues can be of two types, non-preemptive (where a job in service cannot be interrupted) and preemptive (where a job in service can be interrupted by a higher-priority job). No work is lost in either model.<ref>{{Cite book | last1 = Harchol-Balter | first1 = M.|author1-link=Mor Harchol-Balter | chapter = Scheduling: Non-Preemptive, Size-Based Policies | doi = 10.1017/CBO9781139226424.039 | title = Performance Modeling and Design of Computer Systems | pages = 499–507 | year = 2012 | isbn = 9781139226424 }}</ref>
+
+; [[Shortest job first]]: The next job to be served is the one with the smallest size
+
+; Preemptive shortest job first: The next job to be served is the one with the original smallest size<ref>{{Cite book | last1 = Harchol-Balter | first1 = M. |author1-link=Mor Harchol-Balter| chapter = Scheduling: Preemptive, Size-Based Policies | doi = 10.1017/CBO9781139226424.040 | title = Performance Modeling and Design of Computer Systems | pages = 508–517 | year = 2012 | isbn = 9781139226424 }}</ref>
+
+; [[Shortest remaining processing time]]: The next job to serve is the one with the smallest remaining processing requirement.<ref>{{Cite book | last1 = Harchol-Balter | first1 = M.|author1-link=Mor Harchol-Balter | chapter = Scheduling: SRPT and Fairness | doi = 10.1017/CBO9781139226424.041 | title = Performance Modeling and Design of Computer Systems | pages = 518–530 | year = 2012 | isbn = 9781139226424 }}</ref>
+
+; Service facility
+* Single server: customers line up and there is only one server
+* Several parallel servers–Single queue: customers line up and there are several servers
+* Several servers–Several queues: there are many counters and customers can decide going where to queue
+
+; Unreliable server
+
+Server failures occur according to a stochastic process (usually Poisson) and are followed by the setup periods during which the server is unavailable. The interrupted customer remains in the service area until server is fixed.<ref>{{Cite journal | last1 = Dimitriou | first1 = I. | title = A Multiclass Retrial System With Coupled Orbits And Service Interruptions: Verification of Stability Conditions | journal = Proceedings of FRUCT 24 | volume = 7 | pages = 75–82 | year = 2019}}</ref> 
+
+; Customer's behavior of waiting
+* Balking: customers deciding not to join the queue if it is too long
+* Jockeying: customers switch between queues if they think they will get served faster by doing so
+* Reneging: customers leave the queue if they have waited too long for service
+
+Arriving customers not served (either due to the queue having no buffer, or due to balking or reneging by the customer) are also known as dropouts and the average rate of dropouts is a significant parameter describing a queue.
+
+== Queueing networks ==
+
+Networks of queues are systems in which a number of queues are connected by what's known as customer routing. When a customer is serviced at one node it can join another node and queue for service, or leave the network.
+
+For networks of ''m'' nodes, the state of the system can be described by an ''m''–dimensional vector (''x''<sub>1</sub>, ''x''<sub>2</sub>, ..., ''x''<sub>''m''</sub>) where ''x''<sub>''i''</sub> represents the number of customers at each node.
+
+The simplest non-trivial network of queues is called [[Jackson network|tandem queues]].<ref>http://www.stats.ox.ac.uk/~winkel/bs3a07l13-14.pdf#page=4</ref> The first significant results in this area were [[Jackson network]]s,<ref>{{Cite journal | last1 = Jackson | first1 = J. R. | author-link = James R. Jackson| title = Networks of Waiting Lines | doi = 10.1287/opre.5.4.518 | journal = Operations Research | volume = 5 | issue = 4 | pages = 518–521 | year = 1957 | jstor = 167249}}</ref><ref name="jackson">{{cite journal|title=Jobshop-like Queueing Systems|first=James R.|last=Jackson|journal=[[Management Science: A Journal of the Institute for Operations Research and the Management Sciences|Management Science]]|volume=10|number=1|date=Oct 1963|pages=131–142|doi=10.1287/mnsc.1040.0268|jstor=2627213}}</ref> for which an efficient [[product-form stationary distribution]] exists and the [[mean value analysis]]<ref>{{Cite journal | last1 = Reiser | first1 = M.| last2 = Lavenberg | first2 = S. S. | doi = 10.1145/322186.322195 | title = Mean-Value Analysis of Closed Multichain Queuing Networks | journal = [[Journal of the ACM]]| volume = 27 | issue = 2 | pages = 313 | year = 1980 | s2cid = 8694947}}</ref> which allows average metrics such as throughput and sojourn times to be computed.<ref>{{Cite journal | last1 = Van Dijk | first1 = N. M. | title = On the arrival theorem for communication networks | doi = 10.1016/0169-7552(93)90073-D | journal = Computer Networks and ISDN Systems | volume = 25 | issue = 10 | pages = 1135–2013 | year = 1993 | url = https://research.vu.nl/ws/files/73611045/Scanjob%20199100081 }}</ref> If the total number of customers in the network remains constant the network is called a closed network and has also been shown to have a product–form stationary distribution in the [[Gordon–Newell theorem]].<ref>{{Cite journal | last1 = Gordon | first1 = W. J. | last2 = Newell | first2 = G. F. | author-link2 = Gordon F. Newell| doi = 10.1287/opre.15.2.254 | jstor = 168557| title = Closed Queuing Systems with Exponential Servers | journal = [[Operations Research (journal)|Operations Research]]| volume = 15 | issue = 2 | pages = 254 | year = 1967 }}</ref> This result was extended to the [[BCMP network]]<ref>{{Cite journal | last1 = Baskett | first1 = F. | last2 = Chandy | first2 = K. Mani | author2-link = K. Mani Chandy | last3 = Muntz | first3 = R.R. | last4 = Palacios | first4 = F.G. | title = Open, closed and mixed networks of queues with different classes of customers | journal = Journal of the ACM | volume = 22 | issue = 2 | pages = 248&ndash;260 | year = 1975 | doi = 10.1145/321879.321887 | s2cid = 15204199 }}</ref> where a network with very general service time, regimes and customer routing is shown to also exhibit a product-form stationary distribution. The [[normalizing constant]] can be calculated with the [[Buzen's algorithm]], proposed in 1973.<ref name="buzen-1973">{{Cite journal | last1 = Buzen | first1 = J. P. | author-link = Jeffrey P. Buzen| title = Computational algorithms for closed queueing networks with exponential servers | doi = 10.1145/362342.362345 | url = http://www-unix.ecs.umass.edu/~krishna/ece673/buzen.pdf| journal = Communications of the ACM | volume = 16 | issue = 9 | pages = 527–531 | year = 1973 | s2cid = 10702 }}</ref>
+
+Networks of customers have also been investigated, [[Kelly network]]s where customers of different classes experience different priority levels at different service nodes.<ref>{{Cite journal | last1 = Kelly | first1 = F. P. | author-link1 = Frank Kelly (mathematician)| title = Networks of Queues with Customers of Different Types | journal = Journal of Applied Probability | volume = 12 | issue = 3 | pages = 542–554 | doi = 10.2307/3212869 | jstor = 3212869| year = 1975 }}</ref> Another type of network are [[G-networks]] first proposed by [[Erol Gelenbe]] in 1993:<ref>{{cite journal | doi = 10.2307/3214781 | title = G-Networks with Triggered Customer Movement | first = Erol | last = Gelenbe | author-link = Erol Gelenbe | journal = Journal of Applied Probability | volume = 30 | issue = 3 | date = Sep 1993 | pages = 742–748 | jstor = 3214781 }}</ref> these networks do not assume exponential time distributions like the classic Jackson Network.
+
+=== Routing algorithms ===
+
+In discrete time networks where there is a constraint on which service nodes can be active at any time, the max-weight scheduling algorithm chooses a service policy to give optimal throughput in the case that each job visits only a single person <ref name="Manuel" /> service node. In the more general case where jobs can visit more than one node, [[backpressure routing]] gives optimal throughput. A [[network scheduler]] must choose a [[queuing algorithm]], which affects the characteristics of the larger network{{citation needed|date=August 2017}}. See also [[Stochastic scheduling]] for more about scheduling of queueing systems.
+
+=== Mean field limits ===
+
+[[Mean field model]]s consider the limiting behaviour of the [[empirical measure]] (proportion of queues in different states) as the number of queues (''m'' above) goes to infinity. The impact of other queues on any given queue in the network is approximated by a differential equation. The deterministic model converges to the same stationary distribution as the original model.<ref>{{Cite book | last1 = Bobbio | first1 = A. | last2 = Gribaudo | first2 = M. | last3 = Telek | first3 = M. S. | doi = 10.1109/QEST.2008.47 | chapter = Analysis of Large Scale Interacting Systems by Mean Field Method | title = 2008 Fifth International Conference on Quantitative Evaluation of Systems | pages = 215 | year = 2008 | isbn = 978-0-7695-3360-5 | s2cid = 2714909 }}</ref>
+
+=== Heavy traffic/diffusion approximations ===
+{{Main|Heavy traffic approximation}}
+In a system with high occupancy rates (utilisation near 1) a heavy traffic approximation can be used to approximate the queueing length process by a [[reflected Brownian motion]],<ref>{{Cite journal | last1 = Chen | first1 = H. | last2 = Whitt | first2 = W. | doi = 10.1007/BF01149260 | title = Diffusion approximations for open queueing networks with service interruptions | journal = [[Queueing Systems]]| volume = 13 | issue = 4 | pages = 335 | year = 1993 | s2cid = 1180930 }}</ref> [[Ornstein–Uhlenbeck process]], or more general [[diffusion process]].<ref>{{Cite journal | last1 = Yamada | first1 = K. | title = Diffusion Approximation for Open State-Dependent Queueing Networks in the Heavy Traffic Situation | doi = 10.1214/aoap/1177004602 | journal = The Annals of Applied Probability | volume = 5 | issue = 4 | pages = 958–982 | year = 1995 | jstor = 2245101| doi-access = free }}</ref> The number of dimensions of the Brownian process is equal to the number of queueing nodes, with the diffusion restricted to the non-negative [[orthant]].
+
+=== Fluid limits ===
+{{main|Fluid limit}}
+Fluid models are continuous deterministic analogs of queueing networks obtained by taking the limit when the process is scaled in time and space, allowing heterogeneous objects. This scaled trajectory converges to a deterministic equation which allows the stability of the system to be proven. It is known that a queueing network can be stable, but have an unstable fluid limit.<ref>{{Cite journal | last1 = Bramson | first1 = M. | title = A stable queueing network with unstable fluid model | doi = 10.1214/aoap/1029962815 | journal = The Annals of Applied Probability | volume = 9 | issue = 3 | pages = 818–853 | year = 1999 | jstor = 2667284| doi-access = free }}</ref>
+
+== See also ==
+{{div col|colwidth=15em}}
+* [[Ehrenfest model]]
+* [[Erlang unit]]
+* [[Network simulation]]
+* [[Project production management]]
+* [[Queue area]]
+* [[Queueing delay]]
+* [[Queue management system]]
+* [[Queuing Rule of Thumb]]
+* [[Random early detection]]
+* [[Renewal theory]]
+* [[Throughput]]
+* [[Scheduling (computing)]]
+* [[Traffic jam]]
+* [[Traffic generation model]]
+* [[Flow network]]
+{{div col end}}
+
+== References ==
+{{Reflist|30em}}
+
+== Further reading ==
+* {{cite book | first=Donald | last=Gross |author2=Carl M. Harris  | title=Fundamentals of Queueing Theory | publisher=Wiley | year=1998 | isbn=978-0-471-32812-4}} [https://books.google.com/books?id=K3lQGeCtAJgC Online]
+* {{cite book | last=Zukerman | first=Moshe | title=Introduction to Queueing Theory and Stochastic Teletraffic Models | url=http://www.ee.cityu.edu.hk/~zukerman/classnotes.pdf}}
+* {{cite book |last=Deitel |first=Harvey M. |title=An introduction to operating systems |orig-year=1982 |url=https://archive.org/details/introductiontoopdeit00deit/page/673 |edition=revisited first |year=1984 |publisher=Addison-Wesley |isbn=978-0-201-14502-1 |page=[https://archive.org/details/introductiontoopdeit00deit/page/673 673] }} chap.15, pp.&nbsp;380–412
+* {{cite book | last= Newell | first=Gordron F. | title= Applications of Queueing Theory | publisher = Chapman and Hall | date= 1 June 1971}}
+* Leonard Kleinrock, [http://www.lk.cs.ucla.edu/bibliography-public_reports.html Information Flow in Large Communication Nets], (MIT, Cambridge, May 31, 1961) Proposal for a Ph.D. Thesis
+* Leonard Kleinrock. ''Information Flow in Large Communication Nets''(RLE Quarterly Progress Report, July 1961)
+* Leonard Kleinrock. ''Communication Nets: Stochastic Message Flow and Delay''(McGraw-Hill, New York, 1964)
+*{{cite book |first=Leonard |last=Kleinrock |author-link=Leonard Kleinrock |title=Queueing Systems: Volume I – Theory |url=https://archive.org/details/queueingsystems02klei |url-access=registration |publisher=Wiley Interscience |location=New York |date=2 January 1975 |pages=[https://archive.org/details/queueingsystems02klei/page/417 417] |isbn=978-0471491101}}
+*{{cite book |first=Leonard |last=Kleinrock |author-link=Leonard Kleinrock |title=Queueing Systems: Volume II – Computer Applications |publisher=Wiley Interscience |location=New York |date=22 April 1976 |pages=[https://archive.org/details/queueingsystems00klei/page/576 576] |isbn=978-0471491118 |url=https://archive.org/details/queueingsystems00klei/page/576 }}
+*{{cite book | last=Lazowska | first=Edward D. | author2=John Zahorjan | author3=G. Scott Graham | author4=Kenneth C. Sevcik | publisher=Prentice-Hall, Inc | year=1984 | title=Quantitative System Performance: Computer System Analysis Using Queueing Network Models | url=https://archive.org/details/quantitativesyst00lazo | isbn=978-0-13-746975-8 }}
+
+== External links ==
+{{Wiktionary|queueing|queuing}}
+{{External links|date=May 2017}}
+* [http://www.supositorio.com/rcalc/rcalclite.htm Queueing theory calculator]
+* [http://people.revoledu.com/kardi/tutorial/Queuing/index.html Teknomo's Queueing theory tutorial and calculators]
+* {{YouTube|id=st8HRgHOErw|title=Office Fire Emergency Evacuation Simulation}}
+* [http://www.netlab.tkk.fi/opetus/s383143/kalvot/english.shtml Virtamo's Queueing Theory Course]
+* [http://web2.uwindsor.ca/math/hlynka/queue.html Myron Hlynka's Queueing Theory Page]
+*[https://virtuaq.com/blog/2017-11-23-basics-of-queuing-theory Queueing Theory Basics]
+* [https://web.archive.org/web/20111207044006/http://queueing-systems.ens-lyon.fr/ A free online tool to solve some classical queueing systems]
+* [http://jmt.sf.net/ JMT: an open source graphical environment for queueing theory]
+* [http://line-solver.sf.net LINE: a general-purpose engine to solve queueing models]
+* [http://www.slate.com/articles/business/operations/2012/06/queueing_theory_what_people_hate_most_about_waiting_in_line_.html What You Hate Most About Waiting in Line: (It’s not the length of the wait.)], by Seth Stevenson, ''Slate'', 2012 – popular introduction
+
+{{Queueing theory}}
+
+{{Authority control}}
+
+[[Category:Queueing theory| ]]
+[[Category:Stochastic processes]]
+[[Category:Production planning]]
+[[Category:Customer experience]]
+[[Category:Operations research]]
+[[Category:Formal sciences]]
+[[Category:Rationing]]
+[[Category:Network performance]]
+[[Category:Markov models]]
+[[Category:Markov processes]]

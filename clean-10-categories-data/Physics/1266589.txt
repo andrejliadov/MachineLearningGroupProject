@@ -1,0 +1,141 @@
+{{Use American English|date = February 2019}}
+{{Short description|Mathematical abstraction modeling objects with zero extent, heavily used in physics to understand nature}}
+
+A '''point particle''' ('''ideal particle'''<ref>H. C. Ohanian, J. T. Markert (2007), p. 3.</ref> or '''point-like particle''', often spelled '''pointlike particle''') is an [[idealization (science philosophy)|idealization]] of [[particle]]s heavily used in [[physics]]. Its defining feature is that it lacks spatial [[extension (metaphysics)|extension]]; being [[dimensionless quantity|dimensionless]], it does not take up [[space]].<ref>F. E. Udwadia, R. E. Kalaba (2007), p. 1.</ref> A point particle is an appropriate representation of any object whenever its size, shape, and structure are irrelevant in a given context. For example, from far enough away, any finite-size object will look and behave as a point-like object. A point particle can also be referred in the case of a moving body in terms of physics.
+
+In the theory of [[gravity]], physicists often discuss a '''{{vanchor|point mass|POINT_MASS}}''', meaning a point particle with a nonzero [[mass]] and no other properties or structure. Likewise, in [[electromagnetism]], physicists discuss a '''{{vanchor|point charge|POINT_CHARGE}}''', a point particle with a nonzero [[charge (physics)|charge]].<ref>R. Snieder (2001), pp. 196–198.</ref>
+
+Sometimes, due to specific combinations of properties, extended objects behave as point-like even in their immediate vicinity.  For example, spherical objects interacting in [[3-dimensional space]] whose interactions are described by the [[inverse square law]] behave in such a way as if all their matter were concentrated in their [[center of mass|centers of mass]].{{Citation needed|date=April 2019}} In [[Law of universal gravitation|Newtonian gravitation]] and classical [[electromagnetism]], for example, the respective [[Field (physics)|fields]] outside a spherical object are identical to those of a point particle of equal charge/mass located at the center of the sphere.<ref>I. Newton, I. B Cohen, A. Whitmann (1999), p. 956 (Proposition 75, Theorem 35).</ref><ref name=NewtonMotteMachin1>I. Newton, A. Motte, J. Machin (1729), p. 270–271.</ref>
+
+In [[quantum mechanics]], the concept of a point particle is complicated by the [[Uncertainty principle|Heisenberg uncertainty principle]], because even an [[elementary particle]], with no internal structure, occupies a nonzero volume. For example, the [[atomic orbital|atomic orbit]] of an [[electron]] in the [[hydrogen atom]] occupies a volume of ~10<sup>−30</sup> m<sup>3</sup>. There is nevertheless a distinction between elementary particles such as [[electron]]s or [[quark]]s, which have no known internal structure, versus [[composite particle]]s such as [[proton]]s, which do have internal structure: A proton is made of three quarks.
+
+Elementary particles are sometimes called "point particles", but this is in a different sense than discussed above.
+
+==Property concentrated at a single point==
+When a point particle has an additive property, such as mass or charge, concentrated at a single point in space, this can be represented by a [[Dirac delta function]].
+
+==Physical point mass==
+[[Image:Example of a point.svg|220px|thumb|right|An example of a point mass graphed on a [[Grid (spatial index)|grid]]. The grey mass can be simplified to a point mass (the black [[circle]]). It becomes practical to represent point mass as small [[circle]], or dot, as an actual [[Point (geometry)|point]] is invisible.]]
+
+'''Point mass''' ('''pointlike mass''') is the concept, for example in [[classical physics]], of a physical object (typically [[matter]]) that has nonzero mass, and yet explicitly and specifically is (or is being thought of or modeled as) [[infinitesimal]] (infinitely small) in its volume or [[length|linear dimension]]s.
+
+===Application===
+
+A common use for point mass lies in the analysis of the [[gravitational field]]s. When analyzing the gravitational forces in a system, it becomes impossible to account for every unit of [[mass]] individually. However, a spherically symmetric body affects external objects gravitationally as if all of its mass were concentrated at its center.
+
+==Probability point mass==
+A '''point mass''' in [[probability]] and [[statistics]] does not refer to mass in the sense of physics, but rather refers to a finite nonzero probability that is concentrated at a point in the [[probability mass function|probability mass distribution]], where there is a discontinuous segment in a [[probability density function]]. To calculate such a point mass, an [[integral|integration]] is carried out over the entire range of the [[random variable]], on the probability density of the continuous part. After equating this integral to 1, the point mass can be found by further calculation.
+
+==Point charge==
+[[File:Scalar potential of a point charge.jpg|left|thumb|Scalar potential of a point charge shortly after exiting a dipole magnet, moving left to right.]]
+A '''point charge''' is an idealized model of a particle which has an [[electric charge]]. A point charge is an electric charge at a [[Point (geometry)|mathematical point]] with no dimensions.
+
+The fundamental [[equation]] of [[electrostatics]] is [[Coulomb's law]], which describes the electric force between two point charges.  The [[electric field]] associated with a classical point charge increases to infinity as the distance from the point charge decreases towards [[0 (number)|zero]] making energy (thus mass) of point charge [[Infinity|infinite]].
+
+[[Earnshaw's theorem]] states that a collection of point charges cannot be maintained in an [[mechanical equilibrium|equilibrium]] configuration solely by the electrostatic interaction of the charges.
+
+==In quantum mechanics==
+[[Image:Proton quark structure.svg|thumb|200px|right|A proton is a combination of two [[up quark]]s and one [[down quark]], held together by [[gluon]]s.]]
+{{main|Elementary particle}}
+In [[quantum mechanics]], there is a distinction between an [[elementary particle]] (also called "point particle") and a [[composite particle]]. An elementary particle, such as an [[electron]], [[quark]], or [[photon]], is a particle with no internal structure. Whereas a composite particle, such as a [[proton]] or [[neutron]], has an internal structure (see figure).
+However, neither elementary nor composite particles are spatially localized, because of the [[Uncertainty principle|Heisenberg uncertainty principle]]. The particle [[wavepacket]] always occupies a nonzero volume. For example, see [[atomic orbital]]: The electron is an elementary particle, but its quantum states form three-dimensional patterns.
+
+Nevertheless, there is good reason that an elementary particle is often called a point particle. Even if an elementary particle has a delocalized wavepacket, the wavepacket can be represented as a [[quantum superposition]] of [[quantum state]]s wherein the particle is exactly localized. Moreover, the ''interactions'' of the particle can be represented as a superposition of interactions of individual states which are localized.  This is not true for a composite particle, which can never be represented as a superposition of exactly-localized quantum states. It is in this sense that physicists can discuss the intrinsic "size" of a particle: The size of its internal structure, not the size of its wavepacket. The "size" of an elementary particle, in this sense, is exactly zero.
+
+For example, for the electron, experimental evidence shows that the size of an electron is less than 10<sup>−18</sup> m.<ref>{{cite web|url=http://cerncourier.com/cws/article/cern/29724|title=Precision pins down the electron's magnetism}}</ref> This is consistent with the expected value of exactly zero. (This should not be confused with the [[classical electron radius]], which, despite the name, is unrelated to the actual size of an electron.)
+
+==See also==
+* [[Test particle]]
+* [[Elementary particle]]
+* [[Brane]]
+* [[Charge (physics)]] (general concept, not limited to ''[[electric charge]]'')
+* [[Standard Model]] of particle physics
+*[[Wave–particle duality]]
+
+==Notes and references==
+
+===Notes===
+{{reflist}}
+
+===Bibliography===
+*{{cite book
+ | author = H. C. Ohanian, J. T. Markert
+ | year = 2007
+ | title = Physics for Engineers and Scientists
+ | volume = 1 |edition = 3rd
+ | publisher = [[W. W. Norton & Company|Norton]]
+ | isbn = 978-0-393-93003-0
+}}
+*{{cite book
+ | author = F. E. Udwadia, R. E. Kalaba
+ | year = 2007
+ | title = Analytical Dynamics: A New Approach
+ | publisher = [[Cambridge University Press]]
+ | isbn = 978-0-521-04833-0
+}}
+*{{cite book
+ | author = R. Snieder
+ | year = 2001
+ | title = A Guided Tour of Mathematical Methods for the Physical Sciences
+ | publisher = [[Cambridge University Press]]
+ | isbn = 0-521-78751-3
+}}
+*{{cite book
+ | author = I. Newton
+ | year = 1729
+ | others = A. Motte, J. Machin (trans.)
+ | title = The Mathematical Principles of Natural Philosophy
+ | url = https://archive.org/details/bub_gb_Tm0FAAAAQAAJ
+ | page = [https://archive.org/details/bub_gb_Tm0FAAAAQAAJ/page/n354 270]
+ | publisher = [[Benjamin Motte]]
+ | isbn =
+}}
+*{{cite book
+ | author = I. Newton
+ | year = 1999
+ | others = I. B. Cohen, A. Whitman (trans.)
+ | title = The Principia: Mathematical Principles of Natural Philosophy
+ | publisher = [[University of California Press]]
+ | isbn = 0-520-08817-4
+}}
+*{{cite encyclopedia
+ | author = C. Quigg
+ | year = 2009
+ | title = Particle, Elementary
+ | url = http://ea.grolier.com/article?id=0303750-00
+ | archive-url = https://wayback.archive-it.org/all/20130401135900/http://auth.grolier.com/login/go_login.html?bffs=N
+ | url-status = dead
+ | archive-date = 2013-04-01
+ | encyclopedia = [[Encyclopedia Americana]]
+ | publisher = [[Grolier|Grolier Online]]
+ | accessdate = 2009-07-04
+ }}
+*{{cite encyclopedia
+ | author = S. L. Glashow
+ | year = 2009
+ | title = Quark
+ | url = http://ea.grolier.com/article?id=0325780-00
+ | archive-url = https://wayback.archive-it.org/all/20130401135900/http://auth.grolier.com/login/go_login.html?bffs=N
+ | url-status = dead
+ | archive-date = 2013-04-01
+ | encyclopedia = [[Encyclopedia Americana]]
+ | publisher = [[Grolier|Grolier Online]]
+ | accessdate = 2009-07-04
+ }}
+*{{cite book
+ | author = M. Alonso, E. J. Finn
+ | year = 1968
+ | title = Fundamental University Physics Volume III: Quantum and Statistical Physics
+ | publisher = [[Addison-Wesley]]
+ | isbn = 0-201-00262-0
+}}
+
+==Further reading==
+* {{cite web |last=Weisstein |first=Eric W. |url=http://scienceworld.wolfram.com/physics/PointCharge.html |title=Point Charge |website=[[Eric Weisstein's World of Physics]]}}
+* {{cite journal |last1=Cornish |first1=F. H. J. |title=Classical radiation theory and point charges |journal=[[Proceedings of the Physical Society]] |year=1965 |volume=86 |issue=3 |pages=427–442 |doi=10.1088/0370-1328/86/3/301|bibcode=1965PPS....86..427C }}
+* {{cite journal |last1=Jefimenko |first1=Oleg D. |title=Direct calculation of the electric and magnetic fields of an electric point charge moving with constant velocity |journal=[[American Journal of Physics]] |year=1994 |volume=62 |issue=1 |pages=79–85 |doi=10.1119/1.17716|bibcode=1994AmJPh..62...79J }}
+* {{cite journal |last1=Selke |first1=David L. |title=Against Point Charges |journal=[[Applied Physics Research]] |year=2015 |volume=7 |issue=6 |pages=138 |doi=10.5539/apr.v7n6p138|doi-access=free }}
+
+{{DEFAULTSORT:Point Particle}}
+[[Category:Concepts in physics]]
+[[Category:Classical mechanics]]

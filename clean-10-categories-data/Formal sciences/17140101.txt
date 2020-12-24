@@ -1,0 +1,177 @@
+The Method for an Integrated Knowledge Environment ('''MIKE2.0''') is an [[open source]] delivery methodology for [[enterprise information management]] consultants. MIKE2.0 was released in December, 2006, by [[BearingPoint]], a management and technology consulting company, under the [[Creative Commons]] [[Creative Commons licenses|Attribution License]]. The project is now run by the MIKE2.0 Governance Association,<ref>{{cite web
+| url = http://mike2.openmethodology.org/wiki/MIKE2.0_Governance_Association
+| title = MIKE2.0 Governance Association
+| accessdate = 2009-07-07
+| author = 
+| publisher = www.openmethodology.org
+}}</ref> a non-profit organisation based in Switzerland, with BearingPoint and Deloitte as the founding members. In March 2013 a book ''Information Development Using MIKE2.0'' was published promoting it.<ref>{{cite web
+| url = http://www.prweb.com/releases/2013/4/prweb10635725.htm
+| title = MGA Book Release Announcement: "Information Development Using MIKE2.0"
+| accessdate = April 3, 2017
+|date= April 16, 2013 
+|work= Press release
+}}</ref>
+
+==Description==
+The methodology provides a framework for [[information management]].
+It covers how information is created, accessed, presented and used in decision-making to how it is kept secure, stored and destroyed.
+
+=== Information development ===
+While initially focused around structured data, it coined the term "information development". 
+The MIKE2.0 approach is based on the premise that traditional software delivery has under-focused on the information management.  The goal of MIKE2.0 is to create a new competency, specifically for managing information, <ref>{{cite web
+| url = http://www.podtech.net/home/4445/mike-20-simplifying-the-methodology-of-information-management
+| title = Simplifying the methodology of Information Management
+| accessdate = 
+| author = Interview with Robert Hillard
+| publisher = podtech.net
+}}</ref>
+<ref>{{cite web
+| url = http://www.datamigrationpro.com/?page=mike20
+| title = What is MIKE2.0
+| accessdate = 
+| author = Interview with Sean McClowry
+| publisher = Data Migration Pro
+}}</ref>
+
+=== Integrated content repository ===
+[[Image:Mike2 integrated content repository.jpg|thumb|right|400px|Integrated Content Repository of MIKE2.0]]
+MIKE2.0 introduces the concept of an integrated content repository.<ref>{{cite web
+| url = http://mike2.openmethodology.org/wiki/MIKE2:Integrated_Content_Repository
+| title = Integrated Content Repository Overview from MIKE2.0
+| accessdate = 2008-05-05
+| author = 
+| publisher = www.openmethodology.org
+}}</ref>
+
+This repository is a federated hub of shared assets from the Internet and content held internally within an organization.  Using this concept, organizations can create [[Mashup (digital)|mashups]] to the MIKE2.0 standard and information management assets on the [[World Wide Web]].  Although they are not required to share any of their assets with the open source community, they are encouraged to contribute. The content repository architecture is based on using wiki-pages created in MIKE2.0, assets that are linked from other sites using a social bookmarking tools and common tagging and extensions that allows  users to create mashups into their organization.<!-- What the heck does that mean? Sounds like buzz -->
+
+=== Open methodology framework ===
+MIKE2.0 claimed to be a pilot project for a "framework".<ref>{{cite web
+| url = http://mike2.openmethodology.org/wiki/Open_Methodology_Framework
+| title = Open Methodology Framework Overview from MIKE2.0
+| access-date = April 3, 2017
+| author = 
+| publisher = Openmethodology.org
+}}</ref>  It proposes to be an approach which sits between a completely open Wikipedia-style model and a more rigorous development approach seen with software development.  The collaborative technology, the structure of the [http://mike2.openmethodology.org/wiki/MIKE2:Content_Model content model] and a number of content governance articles are used to enable this concept.  The methodology states that this model is likely to evolve over time
+.<ref>{{cite web
+| url = http://mike2.openmethodology.org/wiki/MIKE2:Alternative_Release_Methodologies
+| title = MIKE2.0 view on likely alternatives to current release mode
+| accessdate = 2008-05-05
+| author = 
+| publisher = www.openmethodology.org
+}}</ref>
+
+== Content model ==
+[[Image:Mike2 content model.jpg|thumb|right|400px|MIKE2.0 Content Model]]
+MIKE2.0 is made up of building blocks, given in a block diagram.
+
+=== Products ===
+Products tend to focus on a certain type of problem as opposed to being generalized for information management like the overall implementation guide.
+
+=== SAFE Architecture ===
+[[Image:Mike2 safe architecture.jpg|thumb|right|400px|SAFE Architecture for enterprise information management]]
+
+The approach of the MIKE2 Methodology is to drive implementation of information management projects through a conceptual architecture framework known as strategic architecture for the federated enterprise (SAFE). SAFE goes across applications, data, and infrastructure and is designed to accommodate the inherent complexities of a highly federated organisation. Using a Conceptual Architecture helps align projects to a target vision for the future and to take the complexity out of the myriad of vendor choices around integration and information management.
+
+=== Information governance ===
+Information governance is a term used in MIKE2.0.<!-- what the heck is it?? -->  The governance model provides assessment tools, information standards, organizational structures and roles and responsibilities in relation to managing information assets.  Governance 2.0 is another term used, along with Enterprise 2.0 techniques and technologies.
+
+==== Overall task list ====
+* '''Overview and Key Concepts''' frame the overall approach as well as the rationale for why MIKE2.0 was created.
+* The ''overall task list'' is a project management and project implementation methodology consisting of five phases, activities for each phase, tasks for each activity and inputs/outputs for each task. These are:
+
+:* ''Phase 1'' – Business Assessment and Strategy Definition Blueprint
+:* ''Phase 2'' – Technology Assessment and Selection Blueprint
+:* ''Phase 3'' – Information Management Roadmap and Foundation Activities
+:* ''Phase 4'' – Design Increment
+:* ''Phase 5'' – Incremental Development, Testing, Deployment and Improvement
+
+The task list is underpinned by the information development approach and tightly integrated with SAFE architecture.
+
+* '''Usage Models''' show how the different tasks are applied for different solutions. Usage models use an indicator approach to show the relevance of an activity.
+
+==== Supporting assets ====
+''Supporting assets'' complement the overall methodology with:
+* Tools and technique papers (such as [http://mike2.openmethodology.org/wiki/Information_Maturity_QuickScan Information Maturity Quickscan])
+* Deliverable templates
+* Capability statements
+* Software assets
+* Other tools and guides
+Supporting Assets are typically the lowest-level assets of the overall approach.
+
+== Collaboration environment ==
+[[Image:Mike2 main page.jpg|thumb|right|400px|The MIKE2.0 Methodology]]
+The MIKE2.0 collaboration environment is provided through omCollab, an open source collaboration product that provides the following capabilities:
+
+* A [[Wiki]] to collaboratively create and share content (based on the same [[MediaWiki]] software that powers [[Wikipedia]])
+* [[Blogs]] to publish individual or group-based information (based on [[WordPress]])
+* [[Social Bookmarking]] for storing, sharing and discovering web bookmarks
+* [[Social Networking]]  for the MIKE2.0 community to store basic profile information and to interact with one another.
+* [[Tag (metadata)]] and [[Categorization|categories]] are used to classify articles, blogs and bookmarks into a common taxonomy.  MIKE2.0 brings these two concepts together in the bookmarking component.
+* Techniques and technologies to [[Mashup (web application hybrid)|mashup]] to MIKE2.0, to build integrated solutions based on open content and internally  held assets
+* [[Search engine|Search]] for users to discover content across federated repositories.  MIKE2.0 uses [[Google Custom Search]].
+* A rich user interface with advanced navigational components an integrated skin and single sign on to provide common look and feel across the platform
+* An open methodology compliance (OMC) capability to link an organisation into MIKE2.0
+
+The overall product is referred to as "omCollab" and was released in 2008.<ref>{{cite web
+| url = http://mike2.openmethodology.org/blogs/information-development/2008/07/11/omcollab-enterprise-20-collaboration-platform-released/
+| title = omCollab contribution to the open source community
+|date= July 11, 2008 |access-date = April 3, 2017
+| author = Andreas Rindler
+| work= MIKE2.0 blog
+}}</ref>
+
+== Impact ==
+Since its release, MIKE2.0 was referenced as a case study on [[Web 2.0]] reports,<ref>{{cite web
+ |url=http://www.idc.com/research/viewtoc.jsp;jsessionid=GBEYGVX245N4CCQJAFICFFAKBEAUMIWD?containerId=209923 
+ |title=IDC CMO Advisory Best Practices Series: B-to-B Online and Interactive Marketing ... Cutting Through the Hype 
+ |accessdate=2008-01-01 
+ |author=Michael Gerard, Seth Fishbein 
+ |publisher=IDC Research 
+ |url-status=dead 
+ |archiveurl=https://web.archive.org/web/20100313150016/http://www.idc.com/research/viewtoc.jsp%3Bjsessionid%3DGBEYGVX245N4CCQJAFICFFAKBEAUMIWD?containerId=209923 
+ |archivedate=2010-03-13 
+}}</ref><ref>{{cite web
+| url = http://jhingran.typepad.com/anant_jhingrans_musings/2007/10/information-man.html
+| title = Information Management Communities
+| accessdate = 2008-05-05
+| author = Anant Jhingran
+| publisher = 
+}}</ref>
+The 2008 book ''[[Groundswell (Book)|Groundswell]]'' might mention it.
+The content was taught through online webinars and as a part of a [[Melbourne University]] lecture series on data warehousing in 2008.<ref>{{cite web
+ |url=http://www.dis.unimelb.edu.au/staff/gshanks/615644/ 
+ |title=Melbourne university course on Data Warehousing 
+ |accessdate=2008-05-05 
+ |publisher=Melbourne University 
+ |archiveurl=https://web.archive.org/web/20080412040349/http://www.dis.unimelb.edu.au/staff/gshanks/615644/ 
+ |archivedate=2008-04-12 
+ |url-status=dead 
+}}</ref>
+The [[Association for Information and Image Management]] (AIIM) included a case study of MIKE2.0 in their [[Enterprise 2.0]] specialist certification program in 2008.<ref>{{cite web
+ |url=http://www.aiim.org/documents/education/E20/E20Specialist.pdf 
+ |title=AIIM Enterprise 2.0 Specialist Program 
+ |access-date=April 3, 2017 
+ |date=August 15, 2008 
+ |publisher=AIIM 
+ |url-status=dead 
+ |archivedate=March 4, 2009 
+ |archiveurl=https://web.archive.org/web/20090304082835/http://www.aiim.org/documents/education/E20/E20Specialist.pdf 
+}}</ref>
+
+== Criticisms of the approach ==
+
+{{Empty section|date=July 2010}}
+
+== References ==
+{{reflist|2}}
+
+== External links ==
+* [http://mike2.openmethodology.org MIKE2.0 Homepage]
+* [http://www.sypherlink.com/news/articles/CDI-MDM%20Poster%20-%20Diagram.pdf?articleId=6651 MIKE2.0 within the MDM-CDI Ecosystem], initially published by Zornes, DM Review
+
+{{DEFAULTSORT:Mike2.0 Methodology}}
+[[Category:Methodology]]
+[[Category:Enterprise architecture]]
+[[Category:Project management techniques]]
+[[Category:Information science]]

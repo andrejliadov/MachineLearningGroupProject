@@ -1,0 +1,38 @@
+{{More footnotes|date=November 2010}}
+
+The '''philosophy of statistics''' involves the [[Meaning (philosophy of language)|meaning]], [[Theory of justification|justification]], [[utility]], use and abuse of [[statistics]] and its [[methodology]], and [[ethical]] and [[epistemological]] issues involved in the consideration of choice and interpretation of data and methods of [[statistics]].<ref>{{cite web |first=Jan-Willem |last=Romijn |year=2014 |title=Philosophy of statistics |publisher=Stanford Encyclopedia of Philosophy |url=http://plato.stanford.edu/entries/statistics/}}</ref>
+
+==Topics of interest==
+* [[Foundations of statistics]] involves issues in [[theoretical statistics]], its goals and [[Optimization (mathematics)|optimization]] methods to meet these goals, [[Parametric statistics|parametric]] assumptions or lack thereof considered in [[nonparametric statistics]], [[model selection]] for the underlying [[probability distribution]], and interpretation of the meaning of inferences made using statistics, related to the [[philosophy of probability]] and the [[philosophy of science]]. Discussion of the selection of the goals and the meaning of optimization, in foundations of statistics, are the subject of the philosophy of statistics.  Selection of distribution models, and of the means of selection, is the subject of the philosophy of statistics, whereas the mathematics of optimization is the subject of nonparametric statistics.
+* [[Sir David Cox (statistician)|David Cox]] makes the point {{Citation needed|date=July 2016}} that any kind of interpretation of evidence is in fact a statistical model, although it is known through Ian Hacking's work {{Citation needed|reason=Which of Hacking's works are being referred to here|date=July 2016}} that many are ignorant of this subtlety.
+* Issues arise involving [[sample size]], such as cost and efficiency, are common, such as in polling and pharmaceutical research.
+* Extra-mathematical considerations in the design of experiments and accommodating these issues arise in most actual experiments.{{elucidate|date=July 2016}}
+* The motivation and justification of [[data analysis]] and [[experimental design]], as part of the [[scientific method]] are considered.
+* Distinctions between [[inductive reasoning|induction]] and [[logical deduction]] relevant to inferences from [[data]] and [[evidence]] arise, such as when [[frequentist]] interpretations are compared with [[Confidence Interval|degrees of certainty]] derived from [[Bayesian inference]]. However, the difference between induction and ordinary reasoning is not generally appreciated.{{sfn|Hacking|2006}}
+* Leo Breiman exposed the diversity of thinking in his article on 'The Two Cultures', making the point that statistics has several kinds of inference to make, modelling and prediction amongst them.{{sfn|Breiman|2001}}
+* Issues in the philosophy of statistics arise throughout the [[history of statistics]].  [[Causality]] considerations arise with interpretations of, and definitions of, [[correlation]], and in the [[theory of measurement]].
+* Objectivity in statistics is often confused with truth whereas it is better understood as replicability, which then needs to be defined in the particular case. [[Theodore Porter]] develops this as being the path pursued when trust has evaporated, being replaced with criteria.{{sfn|Porter|1995}}
+* [[Ethics]] associated with [[epistemology]] and [[medical]] applications arise from potential abuse of statistics, such as selection of method or [[Data transformation (statistics)|transformations]] of the data to arrive at different probability conclusions for the same data set.  For example, the meaning of applications of a [[statistical inference]] to a single person, such as one single cancer patient, when there is no frequentist interpretation for that patient to adopt.
+* Campaigns for [[statistical literacy]] must wrestle with the problem that most interesting questions around individual risk are very difficult to determine or interpret, even with the computer power currently available.
+
+==Notes==
+{{reflist}}
+
+== Further reading ==
+{{refbegin}}
+*{{cite journal |last=Breiman |first=Leo |title=Statistical Modeling: The Two Cultures |journal=Statistical Science |volume=16 |issue=3 |pages=199–231 |year=2001 |doi=10.1214/ss/1009213726 |ref=harv|doi-access=free }}
+*{{cite magazine |last1=Efron |first1=Bradley |author1link=Bradley Efron |last2=Morris |first2=Carl |year=1977 |title=Stein's Paradox in Statistics |url=http://www-stat.stanford.edu/~ckirby/brad/other/Article1977.pdf |magazine=[[Scientific American]] |volume=236 |issue=5 |pages=119&ndash;127}}
+*{{cite journal |last=Efron |first=Bradley |year=1979 |title=Computer and the Theory of Statistics: Thinking the Unthinkable |journal=[[SIAM Review]] |volume=21 |issue=4 |pages=460&ndash;480 |doi=10.1137/1021092}}
+*{{cite journal |last=Good |first=Irving J. |authorlink=I. J. Good |year=1988 |title=The Interface Between Statistics and Philosophy of Science |journal=[[Statistical Science]] |volume=3 |issue=4 |pages=386&ndash;397 |jstor=2245388 |doi=10.1214/ss/1177012754|doi-access=free }}
+*{{cite book |last=Hacking |first=Ian |authorlink=Ian Hacking |year=2006 |title=The Emergence of Probability |publisher=Cambridge University Press |isbn=0-521-68557-5 |edition=2nd |ref=harv}}
+*{{cite journal |last=Hacking |first=Ian |year=1964 |title=On the Foundations of Statistics |journal=The British Journal for the Philosophy of Science |volume=15 |issue=57 |pages=1&ndash;26 |jstor=685624 |doi=10.1093/bjps/xv.57.1}}
+*{{cite book |last=Hacking |first=Ian |year=1990 |title=The Taming of Chance |url=https://archive.org/details/isbn_9780521388849 |url-access=registration |publisher=Cambridge University Press |isbn=0-521-38884-8}}
+*{{cite book |last=Mayo |first=Deborah |year=1996 |title=Error and the growth of experimental knowledge |publisher=University of Chicago Press |isbn=0-226-51198-7}}
+*{{cite book |last=Porter |first=Theodore |year=1995 |title=Trust in Numbers |publisher=Princeton University Press |isbn=0-691-03776-0 |ref=harv}}
+*{{cite book |last=Savage |first=Leonard J. |authorlink=Leonard Jimmie Savage |year=1972 |title=The Foundations of Statistics |publisher=Dover |isbn=0-486-62349-1 |edition=2003 |url-access=registration |url=https://archive.org/details/foundationsofsta00leon }}
+*{{cite book |last=Vallverdu |first=Jordi |year=2016 |title=Bayesians Versus Frequentists. A Philosophical Debate on Statistical Reasoning |publisher=Springer |isbn=978-3-662-48638-2 |url=https://www.springer.com/us/book/9783662486368}}
+{{refend}}
+
+[[Category:Philosophy of statistics| ]]
+[[Category:Ethics and statistics]]
+[[Category:Applied philosophy]]

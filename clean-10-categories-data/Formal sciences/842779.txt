@@ -1,0 +1,32 @@
+{{short description|Book by Konrad Zuse}}
+{{Italic title}}
+[[File:Digitalteilchen.svg|thumb|250px|An elementary process in Zuse's Calculating Space: Two digital particles A and B form a new digital particle C.<ref>[ftp://ftp.idsia.ch/pub/juergen/zuse67scan.pdf ''Rechnender Raum''] (PDF document), Elektronische Datenverarbeitung, 8: 336–344, 1967.</ref>]]
+'''''Calculating Space''''' ({{lang-de|Rechnender Raum}}) is [[Konrad Zuse]]'s 1969 book on [[automata theory]]. He proposed that all processes in the [[universe]] are computational.<ref name=mainzer-chua>{{cite book | first1=Klaus | last1=Mainzer | first2=Leon | last2=Chua | title=The Universe as Automaton: From Simplicity and Symmetry to Complexity | page=6 | publisher=Springer |date=September 2011}}</ref> This view is known today as [[simulation hypothesis]], [[digital physics]] or [[pancomputationalism]].<ref>{{Cite journal|last=Müller|first=Vincent|title=Pancomputationalism: Theory or Metaphor?|url=https://www.researchgate.net/publication/242700683_Pancomputationalism_Theory_or_Metaphor|journal=Philosophy, computing and information science|pages=213-221}}</ref> Zuse proposed that the [[universe]] is being computed by some sort of [[cellular automaton]] or other discrete computing machinery,<ref name=mainzer-chua/> challenging the long-held view that some physical laws are continuous by nature. He focused on cellular automata as a possible substrate of the computation, and pointed out that the classical notions of [[entropy]] and [[second law of thermodynamics|its growth]] do not make sense in deterministically computed universes. Zuse's thesis was later expanded by German computer scientist [[Jürgen Schmidhuber]] in his book ''Algorithimic Theories of Everything''.<ref>{{Cite book|last=Schmidhuber|first=Jürgen Schmidhuber|url=https://arxiv.org/pdf/quant-ph/0011122.pdf|title=Algorithimic Theories of Everything}}</ref>
+
+[[Bell's theorem]] is sometimes thought to contradict Zuse's hypothesis, but it is not applicable to [[deterministic universe]]s, as Bell himself pointed out. Similarly, while [[Werner Heisenberg|Heisenberg]]'s [[uncertainty principle]] limits in a fundamental way what an observer can observe, when the observer is himself a part of the universe he is trying to observe, that principle does not rule out Zuse's hypothesis, which views any observer as a part of the hypothesized deterministic process. So far there is no unambiguous physical evidence against the possibility that "everything is just a computation," and a great deal has been written about [[digital physics]] since Zuse's book appeared.
+
+==See also==
+*''[[A New Kind of Science]]''
+*[[Simulated reality]]
+
+==References==
+{{Reflist}}
+*[[Konrad Zuse]], 1969. ''Rechnender Raum''. Braunschweig: Friedrich Vieweg & Sohn. 70 pp.
+*--------, 1970. "Calculating Space", MIT Technical Translation AZT-70-164-GEMIT, [[Massachusetts Institute of Technology]] (Project MAC), Cambridge, Mass. 02139. [http://www.mathrix.org/zenil/ZuseCalculatingSpace-GermanZenil.pdf Adrian German and Hector Zenil (eds) re-edition in LaTeX with permission of MIT and Zuse's family, 2012]
+*Jürgen Alex: Rechnender Raum, in: Drsb.: Zur Entstehung des Computers - Von Alfred Tarski zu Konrad Zuse [ ... ] - Tertium non datur, VDI-Verlag Düsseldorf 2007, SS. 251 bis 279, {{ISBN|978-3-18-150051-4}}
+
+==External links==
+*[[Jürgen Schmidhuber]]'s [http://www.idsia.ch/~juergen/digitalphysics.html site] Zuse's book and 1967 paper.
+*[http://www.chessbase.com/news/2010/zuse03.jpg ''Calculating Space'' - a painting by Zuse] - Konrad Zuse's visualization of the idea
+*[https://web.archive.org/web/20120107214633/http://sites.google.com/site/clauserhardwimmer/raum Web article and simulation of such a calculating space in C and LIBPNG] GERMAN
+*[https://code.google.com/p/secondspace/ SecondSpace] Simulation of waves within a 2D space (time and space are discrete), similar to FDTD. An OpenCL graphic card is needed.
+
+[[Category:Theoretical computer science]]
+[[Category:Konrad Zuse]]
+[[Category:1969 non-fiction books]]
+[[Category:Physics books]]
+[[Category:Cellular automata]]
+
+
+
+{{physics-book-stub}}

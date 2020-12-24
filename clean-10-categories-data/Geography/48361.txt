@@ -1,0 +1,242 @@
+{{Selfref|For geographical coordinates on Wikipedia, see [[Template:Coord]].}}
+{{pp-move-indef|small=yes}}
+{{pp-pc|small=yes}}
+{{short description|Coordinate system to specify locations on Earth}}
+
+{{Use dmy dates|date=May 2019}}
+
+{{Geodesy}}
+
+[[File:FedStats Lat long.svg|thumb|upright=1.2|Longitude lines are perpendicular to and latitude lines are parallel to the Equator.]]
+
+A '''geographic coordinate system''' ('''GCS''') is a [[coordinate system]] associated with [[position (geometry)|positions]] on [[Earth]] ('''geographic position'''). A GCS can give positions:
+*as [[Geodetic coordinates|spherical coordinate system]] using [[latitude]], [[longitude]], and [[elevation]];<ref name=OSGB>{{Citation |title=A guide to coordinate systems in Great Britain |date=Mar 2015 |series=D00659 v2.3 |access-date=22 June 2015 |publisher=Ordnance Survey |url=http://www.ordnancesurvey.co.uk/docs/support/guide-coordinate-systems-great-britain.pdf |archive-url=https://web.archive.org/web/20150924061607/http://www.ordnancesurvey.co.uk/docs/support/guide-coordinate-systems-great-britain.pdf |archive-date=24 September 2015 |url-status=dead }}</ref>
+*as [[Map projection|map coordinates projected onto the plane]], possibly including elevation;<ref name=OSGB/>
+*as earth-centered, earth-fixed ([[ECEF]]) Cartesian coordinates in [[3-space]]; 
+* as a set of numbers, letters or symbols forming a [[geocode]].
+In geodetic coordinates and map coordinates, the coordinate [[tuple]] is decomposed such that one of the numbers represents a [[vertical position]] and two of the numbers represent a [[horizontal position]].<ref name="Taylor2002">{{cite web |last=Taylor |first=Chuck |title=Locating a Point On the Earth |url = http://home.hiwaay.net/~taylorc/bookshelf/math-science/geodesy/positioning/index.html|accessdate = 4 March 2014 }}</ref>
+
+== History ==
+{{Main|History of geodesy|history of longitude|history of prime meridians}}
+
+The [[invention]] of a geographic coordinate system is generally credited to [[Eratosthenes]] of [[Cyrene, Libya|Cyrene]], who composed his now-lost ''[[Geography (Eratosthenes)|Geography]]'' at the [[Library of Alexandria]] in the 3rd century&nbsp;BC.<ref>{{Citation |last=McPhail |first=Cameron |title=Reconstructing Eratosthenes'<!--sic--> Map of the World |pages=20–24 |url = https://ourarchive.otago.ac.nz/bitstream/handle/10523/1713/McPhailCameron2011MA.pdf |year=2011 |publisher=University of Otago |location=[[Dunedin]] }}.</ref> A century later, [[Against the Geography of Eratosthenes|Hipparchus]] of [[Nicaea]] improved on this system by determining latitude from stellar measurements rather than solar altitude and determining longitude by timings of [[lunar eclipse]]s, rather than [[dead reckoning]]. In the 1st or 2nd century, [[Marinus of Tyre]] compiled an extensive gazetteer and [[equirectangular projection|mathematically-plotted world map]] using coordinates measured east from a [[prime meridian]] at the westernmost known land, designated the [[Fortunate Isles]], off the coast of western Africa around the Canary or Cape Verde Islands, and measured north or south of the island of [[Rhodes]] off [[Asia Minor]]. [[Ptolemy]] credited him with the full adoption of longitude and latitude, rather than measuring latitude in terms of the length of the [[midsummer]] day.<ref>{{Citation |last=Evans |first=James |title=The History and Practice of Ancient Astronomy |url = https://books.google.com/books?id=LVp_gkwyvC8C&pg=PA102 |pages = 102–103 |publisher=Oxford University Press |year=1998 |location=Oxford, England |isbn=9780199874453 }}.</ref>
+
+Ptolemy's 2nd-century [[Ptolemy's Geography|''Geography'']] used the same prime meridian but measured latitude from the [[Equator]] instead. After their work was translated into [[Arabic language|Arabic]] in the 9th century, [[Muḥammad ibn Mūsā al-Khwārizmī|Al-Khwārizmī]]'s ''[[Book of the Description of the Earth]]'' corrected Marinus' and Ptolemy's errors regarding the length of the [[Mediterranean Sea]],{{NoteTag|The pair had accurate absolute distances within the Mediterranean but underestimated the [[circumference of the Earth]], causing their degree measurements to overstate its length west from Rhodes or Alexandria, respectively.}} causing [[medieval Arabic cartography]] to use a prime meridian around 10° east of Ptolemy's line. Mathematical cartography resumed in Europe following [[Maximus Planudes]]' recovery of Ptolemy's text a little before 1300; the text was translated into [[Latin]] at [[Republic of Florence|Florence]] by [[Jacobus Angelus]] around 1407.<!--more sources at linked pages-->
+
+In 1884, the [[United States]] hosted the [[International Meridian Conference]], attended by representatives from twenty-five nations. Twenty-two of them agreed to adopt the longitude of the [[Royal Observatory, Greenwich|Royal Observatory]] in [[Greenwich, England]] as the zero-reference line. The [[Dominican Republic]] voted against the motion, while France and [[Brazil]] abstained.<ref>{{cite web |author=Greenwich 2000 Limited |url = http://wwp.millennium-dome.com/info/conference.htm |title=The International Meridian Conference |publisher=Wwp.millennium-dome.com |date=9 June 2011 |access-date=31 October 2012 |url-status=dead |archive-url = https://web.archive.org/web/20120806065207/http://wwp.millennium-dome.com/info/conference.htm |archive-date=6 August 2012 }}</ref> France adopted [[Greenwich Mean Time]] in place of local determinations by the [[Paris Observatory]] in 1911.
+
+== Geodetic datum ==
+{{Main|Geodetic datum}}
+{{further|Figure of the Earth|Reference ellipsoid|Geographic coordinate conversion|Spatial reference system}}
+
+In order to be unambiguous about the direction of "vertical" and the "horizontal" surface above which they are measuring, map-makers choose a [[reference ellipsoid]] with a given origin and orientation that best fits their need for the area to be mapped. They then choose the most appropriate mapping of the [[spherical coordinate system]] onto that ellipsoid, called a terrestrial reference system or [[geodetic datum]].
+
+Datums may be global, meaning that they represent the whole Earth, or they may be local, meaning that they represent an ellipsoid best-fit to only a portion of the Earth. Points on the Earth's surface move relative to each other due to continental plate motion, subsidence, and diurnal [[Earth tide|Earth tidal]] movement caused by the [[Moon]] and the Sun. This daily movement can be as much as a meter. Continental movement can be up to {{nowrap|10 cm}} a year, or {{nowrap|10 m}} in a century. A [[weather system]] high-pressure area can cause a sinking of {{nowrap|5 mm}}. [[Scandinavia]] is rising by {{nowrap|1 cm}} a year as a result of the melting of the ice sheets of the [[quaternary glaciation|last ice age]], but neighboring [[Scotland]] is rising by only {{nowrap|0.2 cm}}. These changes are insignificant if a local datum is used, but are statistically significant if a global datum is used.<ref name=OSGB/>
+
+Examples of global datums include [[World Geodetic System]] (WGS 84, also known as EPSG:4326 <ref>{{Cite web|url=https://spatialreference.org/ref/epsg/4326/|title=WGS 84: EPSG Projection -- Spatial Reference|website=spatialreference.org|accessdate=5 May 2020}}</ref>), the default datum used for the [[Global Positioning System]],{{NoteTag|WGS 84 is the default datum used in most GPS equipment, but other datums can be selected.}} and the [[International Terrestrial Reference Frame]] (ITRF), used for estimating [[continental drift]] and [[crustal deformation]].<ref name=Bolstad>{{cite book |last=Bolstad |first=Paul |title=GIS Fundamentals |edition = 5th |publisher=Atlas books|isbn=978-0-9717647-3-6 |page=102 |url = http://www.paulbolstad.net/5thedition/samplechaps/Chapter3_5th_small.pdf }}</ref> The distance to Earth's center can be used both for very deep positions and for positions in space.<ref name=OSGB/>
+
+Local datums chosen by a national cartographical organization include the [[North American Datum]], the European [[ED50]], and the British [[OSGB36]]. Given a location, the datum provides the latitude <math>\phi</math> and longitude <math>\lambda</math>. In the United Kingdom there are three common latitude, longitude, and height systems in use. WGS{{nbsp}}84 differs at Greenwich from the one used on published maps [[OSGB36]] by approximately 112{{nbsp}}m. The military system [[ED50]], used by [[NATO]], differs from about 120{{nbsp}}m to 180{{nbsp}}m.<ref name=OSGB/>
+
+The latitude and longitude on a map made against a local datum may not be the same as one obtained from a GPS receiver. Converting coordinates from one datum to another requires a [[Geographic coordinate conversion#Datum transformations|datum transformation]] such as a [[Helmert transformation]], although in certain situations a simple [[Translation (geometry)|translation]] may be sufficient.<ref name=Irish>{{cite web |url = http://www.osi.ie/GetAttachment.aspx?id=25113681-c086-485a-b113-bab7c75de6fa |title=Making maps compatible with GPS |publisher=Government of Ireland 1999 |access-date=15 April 2008 |archive-url = https://web.archive.org/web/20110721130505/http://www.osi.ie/GetAttachment.aspx?id=25113681-c086-485a-b113-bab7c75de6fa |archive-date=21 July 2011 |url-status=dead }}</ref>
+
+In popular GIS software, data projected in latitude/longitude is often represented as a ''Geographic Coordinate System''. For example, data in latitude/longitude if the datum is the [[NAD83|North American Datum of 1983]] is denoted by 'GCS North American 1983'.
+
+==Horizontal coordinates==
+{{Main|Horizontal position}}
+
+===Latitude and longitude===
+{{Location map-line|lat=0|caption=Equator, the 0° parallel of latitude}}
+{{Main|Latitude|Longitude}}
+
+The "latitude" (abbreviation: Lat., [[φ]], or phi) of a point on Earth's surface is the angle between the equatorial plane and the straight line that passes through that point and through (or close to) the center of the Earth.{{NoteTag|Alternative versions of latitude and longitude include geocentric coordinates, which measure with respect to Earth's center; geodetic coordinates, which model Earth as an [[ellipsoid]]; and geographic coordinates, which measure with respect to a plumb line at the location for which coordinates are given.}} Lines joining points of the same latitude trace circles on the surface of Earth called [[circle of latitude|parallels]], as they are parallel to the Equator and to each other. The [[North Pole]] is 90°&nbsp;N; the [[South Pole]] is 90°&nbsp;S. The 0° parallel of latitude is designated the [[Equator]], the [[fundamental plane (spherical coordinates)|fundamental plane]] of all geographic coordinate systems. The Equator divides the globe into [[Northern Hemisphere|Northern]] and [[Southern Hemisphere]]s.
+
+{{Location map-line|lon=0|caption=Prime Meridian, the 0° of longitude}}
+
+The "longitude" (abbreviation: Long., [[λ]], or lambda) of a point on Earth's surface is the angle east or west of a reference [[meridian (geography)|meridian]] to another meridian that passes through that point. All meridians are halves of great [[ellipse]]s (often called [[great circle]]s), which converge at the North and South Poles. The meridian of the [[UK|British]] [[Royal Observatory, Greenwich|Royal Observatory]] in [[Greenwich, England|Greenwich]], in southeast London, England, is the international [[prime meridian]], although some organizations—such as the French [[Institut Géographique National]]—continue to use other meridians for internal purposes. The prime meridian determines the proper [[Eastern Hemisphere|Eastern]] and [[Western Hemisphere]]s, although maps often divide these hemispheres further west in order to keep the [[Old World]] on a single side. The [[Antipodes|antipodal]] meridian of Greenwich is both 180°W and 180°E. This is not to be conflated with the [[International Date Line]], which diverges from it in several places for political and convenience reasons, including between far eastern Russia and the far western [[Aleutian Islands]].
+
+The combination of these two components specifies the position of any location on the surface of Earth, without consideration of [[altitude]] or depth. The grid formed by lines of latitude and longitude is known as a "graticule".<ref>{{cite book |url = https://books.google.com/books?id=jPVxSDzVRP0C&q=graticule&pg=PA224 |title=Glossary of the Mapping Sciences |last=American Society of Civil Engineers |date=1 January 1994 |publisher=ASCE Publications|isbn=9780784475706|language=en|page= 224 }}</ref> The origin/zero point of this system is located in the [[Gulf of Guinea]] about {{convert|625|km|sp=us|abbr=on|sigfig=2}} south of [[Tema]], [[Ghana]].
+
+====Length of a degree====
+{{Main|Length of a degree of latitude|Length of a degree of longitude}}
+
+{{unreferenced section|date=May 2015}}
+
+On the GRS80 or [[WGS84]] spheroid at [[sea level]] at the Equator, one latitudinal second measures 30.715 [[meter]]s, one latitudinal minute is 1843&nbsp;meters and one latitudinal degree is 110.6&nbsp;kilometers. The circles of longitude, meridians, meet at the geographical poles, with the west–east width of a second naturally decreasing as latitude increases. On the [[Equator]] at sea level, one longitudinal second measures 30.92&nbsp;meters, a longitudinal minute is 1855&nbsp;meters and a longitudinal degree is 111.3&nbsp;kilometers. At 30° a longitudinal second is 26.76&nbsp;meters, at Greenwich (51°28′38″N) 19.22&nbsp;meters, and at 60° it is 15.42&nbsp;meters.
+
+On the WGS84 spheroid, the length in meters of a degree of latitude at latitude φ (that is, the number of meters you would have to travel along a north–south line to move 1 degree in latitude, when at latitude φ), is about
+
+{{block indent|1=
+<math>111132.92 - 559.82\, \cos 2\varphi + 1.175\, \cos 4\varphi - 0.0023\, \cos 6\varphi</math><ref name=GISS>[http://gis.stackexchange.com/questions/75528/length-of-a-degree-where-do-the-terms-in-this-formula-come-from] Geographic Information Systems - Stackexchange</ref>
+}}
+
+The returned measure of meters per degree latitude varies continuously with latitude.
+
+Similarly, the length in meters of a degree of longitude can be calculated as
+
+{{block indent|1=
+<math>111412.84\, \cos \varphi - 93.5\, \cos 3\varphi + 0.118\, \cos 5\varphi</math><ref name=GISS/>
+}}
+
+(Those coefficients can be improved, but as they stand the distance they give is correct within a centimeter.)
+
+The formulae both return units of meters per degree.
+
+An alternative method to estimate the length of a longitudinal degree at latitude <math>\textstyle{\varphi}\,\!</math> is to assume a spherical Earth (to get the width per minute and second, divide by 60 and 3600, respectively):
+
+{{block indent|1=
+<math> \frac{\pi}{180}M_r\cos \varphi \!</math>
+}}
+
+where [[Earth radius#Meridional Earth radius|Earth's average meridional radius]] <math>\textstyle{M_r}\,\!</math> is {{nowrap|6,367,449 m}}. Since the Earth is an [[Spheroid#Oblate spheroids|oblate spheroid]], not spherical, that result can be off by several tenths of a percent; a better approximation of a longitudinal degree at latitude <math>\textstyle{\varphi}\,\!</math> is
+
+{{block indent|1=
+<math>\frac{\pi}{180}a \cos \beta \,\!</math>
+}}
+
+where Earth's equatorial radius <math>a</math> equals ''6,378,137 m'' and <math>\textstyle{\tan \beta = \frac{b}{a}\tan\varphi}\,\!</math>; for the GRS80 and WGS84 spheroids, b/a calculates to be 0.99664719. (<math>\textstyle{\beta}\,\!</math> is known as the [[Latitude#Reduced (or parametric) latitude|reduced (or parametric) latitude]]). Aside from rounding, this is the exact distance along a parallel of latitude; getting the distance along the shortest route will be more work, but those two distances are always within 0.6 meter of each other if the two points are one degree of longitude apart.
+
+{| class="wikitable"
+|+ Longitudinal length equivalents at selected latitudes
+|-
+! style="width:100px;" | Latitude
+! style="width:150px;" | City
+! style="width:100px;" | Degree
+! style="width:100px;" | Minute
+! style="width:100px;" | Second
+! style="width:100px;" | ±0.0001°
+|-
+| 60°
+| [[Saint Petersburg]]
+| style="text-align:center;" | 55.80&nbsp;km
+| style="text-align:center;" | 0.930&nbsp;km
+| style="text-align:center;" | 15.50&nbsp;m
+| style="text-align:center;" | 5.58&nbsp;m
+|-
+| 51° 28′ 38″ N
+| [[Greenwich]]
+| style="text-align:center;" | 69.47&nbsp;km
+| style="text-align:center;" | 1.158&nbsp;km
+| style="text-align:center;" | 19.30&nbsp;m
+| style="text-align:center;" | 6.95&nbsp;m
+|-
+| 45°
+| [[Bordeaux]]
+| style="text-align:center;" | 78.85&nbsp;km
+| style="text-align:center;" | 1.31&nbsp;km
+| style="text-align:center;" | 21.90&nbsp;m
+| style="text-align:center;" | 7.89&nbsp;m
+|-
+| 30°
+| [[New Orleans]]
+| style="text-align:center;" | 96.49&nbsp;km
+| style="text-align:center;" | 1.61&nbsp;km
+| style="text-align:center;" | 26.80&nbsp;m
+| style="text-align:center;" | 9.65&nbsp;m
+|-
+| 0°
+| [[Quito]]
+| style="text-align:center;" | 111.3&nbsp;km
+| style="text-align:center;" | 1.855&nbsp;km
+| style="text-align:center;" | 30.92&nbsp;m
+| style="text-align:center;" | 11.13&nbsp;m
+|}
+<!--The Equator is the [[fundamental plane (spherical coordinates)|fundamental plane]] of all geographic coordinate systems. All spherical coordinate systems define such a fundamental plane.-->
+
+=== Map projection ===
+{{Main|Map projection}}
+
+To establish the position of a geographic location on a [[map]], a map projection is used to convert geodetic coordinates to plane coordinates on a map; it projects the datum ellipsoidal coordinates and height onto a flat surface of a map. The datum, along with a map projection applied to a grid of reference locations, establishes a ''grid system'' for plotting locations. Common map projections in current use include the [[Universal Transverse Mercator coordinate system|Universal Transverse Mercator]] (UTM), the [[Military Grid Reference System]] (MGRS), the [[United States National Grid]] (USNG), the [[Global Area Reference System]] (GARS) and the [[World Geographic Reference System]] (GEOREF).<ref name=NGA_grids>{{cite web |title=Grids and Reference Systems |url = http://earth-info.nga.mil/GandG/coordsys/grids/referencesys.html |publisher=National Geospatial-Intelligence Agency |access-date=4 March 2014 }}</ref>
+Coordinates on a map are usually in terms [[northing]] N and [[easting]] E offsets relative to a specified origin.
+
+Map projection formulas depend on the geometry of the projection as well as parameters dependent on the particular location at which the map is projected. The set of parameters can vary based on the type of project and the conventions chosen for the projection. For the [[transverse Mercator projection]] used in UTM, the parameters associated are the latitude and longitude of the natural origin, the false northing and false easting, and an overall scale factor.<ref name=OGP7_2>{{cite web |title=Geomatics Guidance Note Number 7, part 2 Coordinate Conversions and Transformations including Formulas |url = http://info.ogp.org.uk/geodesy/guides/docs/G7-2.pdf |publisher=International Association of Oil and Gas Producers (OGP) |access-date=5 March 2014 |pages=9–10 |url-status=dead |archive-url = https://web.archive.org/web/20140306005736/http://info.ogp.org.uk/geodesy/guides/docs/G7-2.pdf |archive-date=6 March 2014 }}</ref> Given the parameters associated with particular location or grin, the projection formulas for the transverse Mercator are a complex mix of algebraic and trigonometric functions.{{r|OGP7_2|page1=45-54}}
+
+====UTM and UPS systems====
+{{Main|Universal Transverse Mercator|Universal Polar Stereographic}}
+
+The [[Universal Transverse Mercator]] (UTM) and [[Universal Polar Stereographic]] (UPS) coordinate systems both use a metric-based Cartesian grid laid out on a [[Map projection#Projections by preservation of a metric property|conformally projected]] surface to locate positions on the surface of the Earth. The UTM system is not a single map projection but a series of sixty, each covering 6-degree bands of longitude. The UPS system is used for the polar regions, which are not covered by the UTM system.
+
+====Stereographic coordinate system====
+{{Further|Stereographic projection}}
+
+During medieval times, the stereographic coordinate system was used for navigation purposes.{{Citation needed|date=December 2007}} The stereographic coordinate system was superseded by the latitude-longitude system. Although no longer used in navigation, the stereographic coordinate system is still used in modern times to describe crystallographic orientations in the fields of [[crystallography]], [[mineralogy]] and materials science.{{Citation needed|date=December 2007}}
+
+==Vertical coordinates==
+{{Main|Vertical position}}
+
+{{expand section|date=December 2018}}
+
+Vertical coordinates include height and depth.
+
+==3D Cartesian coordinates==
+{{Further|Axes conventions}}
+
+Every point that is expressed in ellipsoidal coordinates can be expressed as an rectilinear {{nowrap|x y z}} ([[Cartesian coordinate|Cartesian]]) coordinate. Cartesian coordinates simplify many mathematical calculations. The Cartesian systems of different datums are not equivalent.<ref name=Taylor2002/>
+
+===Earth-centered, Earth-fixed===
+[[File:ECEF.svg|alt=Earth Centered, Earth Fixed coordinates|thumb|upright=1.3|Earth centered, Earth fixed coordinates in relation to latitude and longitude.]]
+{{Main|ECEF}}
+
+The [[ECEF|Earth-centered Earth-fixed]] (also known as the ECEF, ECF, or conventional terrestrial coordinate system) rotates with the Earth and has its origin at the center of the Earth.
+
+The conventional right-handed coordinate system puts:
+* The origin at the center of mass of the Earth, a point close to the Earth's [[figure of the Earth|center of figure]]
+* The Z axis on the line between the North and South Poles, with positive values increasing northward (but does not exactly coincide with the Earth's rotational axis)<ref>[http://www.weblab.dlr.de/rbrt/pdf/TN_0001.pdf Note on the BIRD ACS Reference Frames] {{webarchive|url=https://web.archive.org/web/20110718231431/http://www.weblab.dlr.de/rbrt/pdf/TN_0001.pdf |date=18 July 2011 }}</ref>
+* The X and Y axes in the plane of the Equator
+* The X axis passing through extending from 180 degrees longitude at the Equator (negative) to 0 degrees longitude ([[prime meridian#IERS Reference Meridian|prime meridian]]) at the Equator (positive)
+* The Y axis passing through extending from 90 degrees west longitude at the Equator (negative) to 90 degrees east longitude at the Equator (positive)
+
+An example is the [http://www.ngs.noaa.gov/cgi-bin/ds_mark.prl?PidBox=aa3449 NGS data] for a brass disk near Donner Summit, in California. Given the dimensions of the ellipsoid, the conversion from lat/lon/height-above-ellipsoid coordinates to X-Y-Z is straightforward—calculate the X-Y-Z for the given lat-lon on the surface of the ellipsoid and add the X-Y-Z vector that is perpendicular to the ellipsoid there and has length equal to the point's height above the ellipsoid. The reverse conversion is harder: given X-Y-Z we can immediately get longitude, but no closed formula for latitude and height exists. <!--, However, --> See "[[Geodetic system#Geodetic to/from ECEF coordinates|Geodetic system]]." Using Bowring's formula in 1976 ''Survey Review'' the first iteration gives latitude correct within 10{{sup|-11}} degree as long as the point is within 10000 meters above or 5000 meters below the ellipsoid.
+
+=== Local tangent plane ===
+[[File:ECEF ENU Longitude Latitude relationships.svg|thumb|Earth centered Earth fixed and East, North, up coordinates.]]
+{{Main|Local tangent plane}}
+{{Further|Geographic coordinate conversion#From ECEF to ENU}}
+
+A local tangent plane can be defined based on the [[vertical and horizontal]] dimensions. The [[vertical coordinate]] can point either up or down. There are two kinds of conventions for the frames:
+* East, North, up (ENU), used in geography
+* North, East, down (NED), used specially in aerospace
+
+In many targeting and tracking applications the local ENU Cartesian coordinate system is far more intuitive and practical than ECEF or geodetic coordinates. The local ENU coordinates are formed from a plane tangent to the Earth's surface fixed to a specific location and hence it is sometimes known as a ''local tangent'' or ''local geodetic'' plane. By convention the east axis is labeled <math>x</math>, the north <math>y</math> and the up <math>z</math>.
+
+In an airplane, most objects of interest are below the aircraft, so it is sensible to define down as a positive number. The NED coordinates allow this as an alternative to the ENU. By convention, the north axis is labeled <math>x'</math>, the east <math>y'</math> and the down <math>z'</math>. To avoid confusion between <math>x</math> and <math>x'</math>, etc. in this article we will restrict the local coordinate frame to ENU.
+
+== On other celestial bodies ==
+Similar coordinate systems are defined for other celestial bodies such as:
+
+* The cartographic coordinate systems for almost all of the solid bodies in the [[Solar System]] were established by [[Merton E. Davies]] of the [[Rand Corporation]], including [[Mercury (planet)|Mercury]],<ref>Davies, M. E., "Surface Coordinates and Cartography of Mercury," Journal of Geophysical Research, Vol. 80, No. 17, June 10, 1975.</ref><ref>Davies, M. E., S. E. Dwornik, D. E. Gault, and R. G. Strom, NASA Atlas of Mercury, NASA Scientific and Technical Information Office, 1978.</ref> [[Venus]],<ref>Davies, M. E., T. R. Colvin, P. G. Rogers, P. G. Chodas, W. L. Sjogren, W. L. Akim, E. L. Stepanyantz, Z. P. Vlasova, and A. I. Zakharov, "The Rotation Period, Direction of the North Pole, and Geodetic Control Network of Venus," Journal of Geophysical Research, Vol. 97, £8, pp. 13,14 1-13,151, 1992.</ref> [[Mars]],<ref>Davies, M. E., and R. A. Berg, "Preliminary Control Net of Mars,"Journal of Geophysical Research, Vol. 76, No. 2, pps. 373-393, January 10, 1971.</ref> the four [[Galilean moons]] of [[Jupiter]],<ref>[[Merton E. Davies]], Thomas A. Hauge, et. al.: Control Networks for the Galilean Satellites: November 1979 R-2532-JPL/NASA</ref> and [[Triton (moon)|Triton]], the largest [[Natural satellite|moon]] of [[Neptune]].<ref>Davies, M. E., P. G. Rogers, and T. R. Colvin, "A Control Network of Triton," Journal of Geophysical Research, Vol. 96, E l, pp. 15, 675-15, 681, 1991.</ref>
+* [[Selenographic coordinates]] for the [[Moon]]
+
+== See also ==
+* {{annotated link|Decimal degrees}}
+* {{annotated link|Geographical distance}}
+* {{annotated link|Geographic information system}}
+* {{annotated link|Geo URI scheme}}
+* [[ISO 6709]], standard representation of geographic point location by coordinates
+* {{annotated link|Linear referencing}}
+* {{annotated link|Primary direction}}
+* {{annotated link|Spatial reference system}}
+
+== Notes ==
+{{NoteFoot}}
+
+== References ==
+=== Citations ===
+{{Reflist}}
+
+=== Sources ===
+{{refbegin}}
+* ''Portions of this article are from Jason Harris' "Astroinfo" which is distributed with [[KStars]], a desktop planetarium for [[Linux]]/[[KDE]]. See [http://edu.kde.org/kstars/index.phtml The KDE Education Project - KStars]''
+{{refend}}
+
+== External links ==
+{{Wikidata property|P625}}
+* {{Commons category-inline}}
+
+{{-}}
+{{Geographical coordinates |state = autocollapse }}
+{{Authority control}}
+[[Category:Geographic coordinate systems| ]]
+[[Category:Cartography]]
+[[Category:Geographic position|*]]
+[[Category:Geodesy]]
+[[Category:Navigation]]

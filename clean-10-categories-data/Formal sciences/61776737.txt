@@ -1,0 +1,10 @@
+In computing, a device or software program is said to be '''agnostic''' or '''data agnostic''' if it does not know or does not care in what manner the data it receives was sent to it, any programming language used, the underlying operating system or protocols used to transmit it. This can mean, for example, that a device supports both [[USB]] and [[IEEE 1394|FireWire]], and doesn't care which of these interfaces the data arrived on. 
+
+For a software program, the data might be read from a local file, a network port, a [[pipeline (Unix)|pipe]], or something else, and does not care. It may also mean the device or program is simply provided with some data and neither knows nor cares how the data got to it, what operating system, programming language, nor transport protocol provided the data, nor does it know or care how what it generates will be sent to whatever is processing its output.
+
+A good example of a program that is data agnostic is one which retrieves, updates, sorts, and / or writes, data using [[SQL]] statements. The program neither knows nor cares how underlying files holding the data are organized, and, depending on whether an SQL interface module ([[compatibility layer]]) to handle differences between different database systems was employed, might be completely unaware what database system was being used.
+
+An example on a non-data agnostic program would be one which must specify the file type ([[flat file database|flat file]], archive or archive member, [[indexed file]]) specify the access method (sequential, [[ISAM]], direct, [[stream (computing)|stream]]), record size, block size, and other file system or operating system specific information about the file, as well as processing records retrieved from, or written to, the specific file system and access method being used.
+
+[[Category: Computer data]]
+[[Category: Computer science]]

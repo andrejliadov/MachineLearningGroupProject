@@ -1,0 +1,86 @@
+{{#iferror:{{#expr:{{{1}}}*2}}|{{error|Error: {{#if:{{{1|}}}|Invalid year|No input year specified}}}}|
+{{Navbox
+| name = {{{name|Years in sports by country}}}
+| state = {{{state|autocollapse}}}
+| border = {{{border|}}}
+| navbar = {{{navbar|}}}
+
+| titlestyle = {{{titlestyle|}}}
+| title = {{{title|{{#ifexist:{{{1}}} in sports|[[{{{1}}} in sports]]|{{{1}}} in sports}}}}}
+| image = {{{image|}}}
+| groupstyle = {{{groupstyle|}}}
+| listclass = hlist
+
+| group1 = by Asia
+| list1 =
+* {{Years in Sports/expr|{{{1}}}|{{{AF|♦}}}|1945|name=Afghanistani sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{AZ|♦}}}|1991|name=Azerbaijani sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{BD|♦}}}|1971|name=Bangladeshi sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{CN|♦}}}|name=Chinese sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{EG|♦}}}|name=Egyptian sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{IN|♦}}}|1947|name=Indian sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{ID|♦}}}|1949|name=Indonesian sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{IR|♦}}}|1935|name=Iranian sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{JP|♦}}}|name=Japanese sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{KZ|♦}}}|1991|name=Kazakhstani sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{KR|♦}}}|1948|name=South Korean sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{LB|♦}}}|1943|name=Lebanese sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{MY|♦}}}|1963|name=Malaysian sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{MV|♦}}}|1965|name=Maldives sports|the=the}}
+* {{Years in Sports/expr|{{{1}}}|{{{NP|♦}}}|1768|name=Nepali sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{PK|♦}}}|1971|name=Pakistani sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{PH|♦}}}|1911|name=Philippine sports|}}
+* {{Years in Sports/expr|{{{1}}}|{{{RU|♦}}}|1991|name=Russian sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{SA|♦}}}|1932|name=Saudi Arabian sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{SG|♦}}}|1965|name=Singapore sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{LK|♦}}}|1972|name=Sri Lankan sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{TH|♦}}}|1939|name=Thai sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{TR|♦}}}|1923|name=Turkish sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{AE|♦}}}|1971|name=United Arab Emirates sports|the=the}}
+* {{Years in Sports/expr|{{{1}}}|{{{VN|♦}}}|1975|name=Vietnamese sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{YE|♦}}}|1990|name=Yemeni sports}}
+
+| group2 = by Oceania
+| list2 =
+* {{Years in Sports/expr|{{{1}}}|{{{AU|♦}}}|1901|name=Australian sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{FJ|♦}}}|1947|name=Fijian sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{NZ|♦}}}|1939|name=New Zealand sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{PG|♦}}}|1975|name=Papua New Guinean sports}}
+
+| group3 = by Europe
+| list3 =
+* {{Years in Sports/expr|{{{1}}}|{{{UK|♦}}}|1898|name=British sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{DE|♦}}}|1923|name=Danish sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{GE|♦}}}|1908|name=German sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{IR|♦}}}|1901|name=Irish sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{SW|♦}}}|1937|name=Swedish sports}}
+
+| group4 = by Africa
+| list4 =
+* {{Years in Sports/expr|{{{1}}}|{{{ALG|♦}}}|1901|name=Algerian sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{AGL|♦}}}|1898|name=Angolan sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{NGA|♦}}}|1960|name=Nigerian sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{RSA|♦}}}|1931|name=South African sports}}
+
+| group5 = by North America
+| list5 =
+* {{Years in Sports/expr|{{{1}}}|{{{USA|♦}}}|name=American sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{BAH|♦}}}|1973|name=Bahamian sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{BLZ|♦}}}|1902|name=Belizean sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{CAN|♦}}}|name=Canadian sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{CUB|♦}}}|1898|name=Cuban sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{MEX|♦}}}|1890|name=Mexican sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{PUR|♦}}}|1900|name=Puerto Rican sports}}
+
+| group6 = by South America
+| list6 =
+* {{Years in Sports/expr|{{{1}}}|{{{ARG|♦}}}|1893|name=Argentine sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{BRA|♦}}}|name=Brazilian sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{BOL|♦}}}|1900|name=Bolivian sports}}
+* {{Years in Sports/expr|{{{1}}}|{{{VEN|♦}}}|1915|name=Venezuelan sports}}
+
+}}}}<noinclude>
+{{Documentation}}
+
+[[Category:Sport by year| ]]
+</noinclude>

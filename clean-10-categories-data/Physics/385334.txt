@@ -1,0 +1,340 @@
+{{short description|Wikimedia list article}}
+This is a list of known and hypothesized particles.
+
+==Elementary particles==
+{{Main article|Elementary particle}}
+Elementary particles are particles with no measurable internal structure; that is, it is unknown whether they are composed of other particles.<ref name="PFIp1-3">
+{{cite book
+ |author1=Sylvie Braibant
+ |author2=Giorgio Giacomelli
+ |author3=Maurizio Spurio
+ |year=2012
+ |title=Particles and Fundamental Interactions: An Introduction to Particle Physics
+ |url=https://books.google.com/books?id=e8YUUG2pGeIC&pg=PA1
+ |edition=1st
+ |pages=1
+
+ |publisher=[[Springer (publisher)|Springer]]
+ |isbn=978-94-007-2463-1
+}}</ref> They are the fundamental objects of [[quantum field theory]]. Many families and sub-families of elementary particles exist. Elementary particles are classified according to their [[spin (physics)|spin]]. [[Fermion]]s have half-integer spin while [[boson]]s have integer spin. All the particles of the [[Standard Model]] have been experimentally observed, recently including the [[Higgs boson]] in 2012.<ref>{{Cite journal |last1=Khachatryan |first1=V. |display-authors=etal |collaboration=CMS Collaboration |year=2012 |title=Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC |journal=[[Physics Letters B]] |volume=716 |issue=2012 |pages=30–61 |arxiv=1207.7235 |bibcode= 2012PhLB..716...30C|doi=10.1016/j.physletb.2012.08.021 }}</ref><ref>{{Cite journal |last1=Abajyan |first1=T. |collaboration=ATLAS Collaboration |display-authors=etal |title=Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC |journal=[[Physics Letters B]] |volume=716 |issue=2012 |pages=1–29 |year=2012 |arxiv=1207.7214  |bibcode= 2012PhLB..716....1A|doi=10.1016/j.physletb.2012.08.020}}</ref> Many other hypothetical elementary particles, such as the [[graviton]], have been proposed, but not observed experimentally.
+
+===Fermions===
+{{Main article|Fermion}}
+
+Fermions are one of the two fundamental classes of particles, the other being [[boson]]s. Fermion particles are described by [[Fermi–Dirac statistics]] and have [[quantum numbers]] described by the [[Pauli exclusion principle]]. They include the [[quarks]] and [[leptons]], as well as any [[composite particles]] consisting of an odd number of these, such as all [[baryons]] and many atoms and nuclei.
+
+Fermions have half-integer spin; for all known elementary fermions this is {{frac|1|2}}. All known fermions, except [[neutrinos]], are also [[Dirac fermion]]s; that is, each known fermion has its own distinct [[antiparticle]]. It is not known whether the [[neutrino]] is a [[Dirac fermion]] or a [[Majorana fermion]].<ref>{{cite arxiv |eprint=1012.4469|last1=Kayser|first1=Boris|title=Two Questions About Neutrinos|class=hep-ph|year=2010}}</ref> Fermions are the basic building blocks of all [[matter]]. They are classified according to whether they interact via the [[strong interaction]] or not. In the Standard Model, there are 12 types of elementary fermions: six [[quark]]s and six [[lepton]]s.
+
+====Quarks====
+{{Main article|Quark}}
+
+Quarks are the fundamental constituents of [[hadron]]s and interact via the [[strong force]]. Quarks are the only known carriers of [[fractional charge]], but because they combine in groups of three (baryons) or in pairs of one quark and one [[antiquark]] (mesons), only integer charge is observed in nature. Their respective [[antiparticle]]s are the [[antiquark]]s, which are identical except that they carry the opposite electric charge (for example the up quark carries charge +{{frac|2|3}}, while the up antiquark carries charge −{{frac|2|3}}), color charge, and baryon number. There are six [[flavor (particle physics)|flavors]] of quarks; the three positively charged quarks are called "up-type quarks" while the three negatively charged quarks are called "down-type quarks".
+
+<center>
+{|class="wikitable sortable" style="text-align:center"
+|+Quarks
+|-
+! Generation !! Name !! Symbol !! Antiparticle !! Spin !! Charge<br>([[elementary charge|e]]) !! data-sort-type="number"|Mass ([[electronvolt|MeV]]/[[speed of light|c]]<sup>2</sup>) <ref name="PDG2016">{{cite journal |title=Review of Particle Physics |author=Particle Data Group |journal=Chinese Physics C |volume=40 |issue=10|pages=100001 |year=2016 |doi=10.1088/1674-1137/40/10/100001 |bibcode=2016ChPhC..40j0001P |hdl=1983/c6dc3926-daee-4d0e-9149-5ff3a8120574 |url=http://cds.cern.ch/record/2241948}}</ref>
+|-
+|rowspan=2| 1
+| [[Up quark|up]] || u || {{Subatomic particle|up antiquark}} 
+|data-sort-value="1"|{{frac|1|2}} || +{{frac|2|3}} || 2.2{{+-|0.6|0.4}}
+|-
+| [[Down quark|down]] || d || {{Subatomic particle|down antiquark}}
+|data-sort-value="2"|{{frac|1|2}} || −{{frac|1|3}} || 4.6{{+-|0.5|0.4}}
+|-
+|rowspan=2| 2
+| [[Charm quark|charm]] || c || {{Subatomic particle|charm antiquark}} 
+|data-sort-value="3"|{{frac|1|2}} || +{{frac|2|3}} || 1,280{{+-|30}}
+|-
+| [[Strange quark|strange]] || s || {{Subatomic particle|strange antiquark}}
+|data-sort-value="4"|{{frac|1|2}} || −{{frac|1|3}} || 96{{+-|8|4}}
+|-
+|rowspan=2| 3
+| [[Top quark|top]] || t || {{Subatomic particle|top antiquark}}
+|data-sort-value="5"|{{frac|1|2}} || +{{frac|2|3}} || 173,100{{+-|600}}
+|-
+| [[Bottom quark|bottom]] || b || {{Subatomic particle|bottom antiquark}}
+|data-sort-value="6"|{{frac|1|2}} || −{{frac|1|3}} || 4,180{{+-|40|30}}
+|}
+</center>
+
+====Leptons====
+{{Main article|Leptons}}
+
+Leptons do not interact via the [[strong interaction]]. Their respective [[antiparticle]]s are the [[antilepton]]s, which are identical, except that they carry the opposite electric charge and lepton number. The antiparticle of an [[electron]] is an antielectron, which is almost always called a "[[positron]]" for historical reasons. There are six leptons in total; the three charged leptons are called "electron-like leptons", while the neutral leptons are called "[[neutrino]]s". Neutrinos are known to [[neutrino oscillation|oscillate]], so that neutrinos of definite [[flavour (particle physics)|flavor]] do not have definite mass, rather they exist in a superposition of mass [[eigenstate]]s. The hypothetical heavy right-handed neutrino, called a "[[sterile neutrino]]", has been left off the list.
+
+<center>
+{|class="wikitable sortable" style="text-align:center"
+|+Leptons
+|-
+! Generation !! Name !! Symbol !! Antiparticle !! Spin !! Charge<br>([[elementary charge|e]]) !! Mass ([[electronvolt|MeV]]/[[speed of light|c]]<sup>2</sup>) <ref name="PDG2016"/>
+|-
+|rowspan=2| 1
+| [[Electron]] || {{Subatomic particle|electron}} || {{Subatomic particle|positron}}
+|data-sort-value="4"|{{frac|1|2}} || −1 || 0.511{{refn|The electron mass is known very precisely as 0.5109989461{{+-|0.0000000031}} MeV/c<sup>2</sup>|group=note}}
+|-
+| [[Electron neutrino]] || {{Subatomic particle|electron neutrino}} || {{Subatomic particle|electron antineutrino}}
+|data-sort-value="1"|{{frac|1|2}} ||0|| <&nbsp;0.0000022
+|-
+|rowspan=2| 2
+| [[Muon]] || {{Subatomic particle|muon}} || {{Subatomic particle|antimuon}}
+|data-sort-value="5"|{{frac|1|2}} || −1 || 105.7{{refn|The muon mass is known very precisely as 105.6583745{{+-|0.0000024}} MeV/c<sup>2</sup>|group=note}}
+|-
+| [[Muon neutrino]] || {{Subatomic particle|muon neutrino}} || {{Subatomic particle|muon antineutrino}}
+|data-sort-value="2"|{{frac|1|2}} || 0 || <&nbsp;0.170
+|-
+|rowspan=2| 3
+| [[Tau (particle)|Tau]] || {{Subatomic particle|tau}} || {{Subatomic particle|antitau}}
+|data-sort-value="3"|{{frac|1|2}} || −1 || 1,776.86{{+-|0.12}}
+|-
+| [[Tau neutrino]] || {{Subatomic particle|tau neutrino}} || {{Subatomic particle|tau antineutrino}}
+|data-sort-value="6"|{{frac|1|2}} || 0 || <&nbsp;15.5
+|-
+|}
+</center>
+{{reflist|group=note}}
+
+
+===Bosons===
+{{main article|Boson}}
+
+Bosons are one of the two fundamental classes of particles, the other being [[fermion]]s. Bosons are characterized by [[Bose–Einstein statistics]] and all have integer spins. Bosons may be either elementary, like [[photons]] and [[gluons]], or composite, like [[mesons]].
+
+According to the [[Standard Model]] the elementary bosons are:
+
+<center>
+{| class="wikitable sortable" style="align: center; text-align: center;"
+|-
+! Name !! Symbol !! Antiparticle !! Spin !! Charge ([[elementary charge|e]]) !! Mass (GeV/c<sup>2</sup>) <ref name="PDG2016"/> !! Interaction mediated !!Observed
+|-
+|[[Photon]] || γ || Self || 1 || 0 || 0 || [[Electromagnetism]] ||Yes
+|-
+|[[W and Z bosons|W boson]] || {{Subatomic particle|W Boson-}} || {{Subatomic particle|W Boson+}} || 1 || −1 || 80.385{{+-|0.015}} || [[Weak interaction]] ||Yes
+|-
+|[[W and Z bosons|Z boson]] || {{Subatomic particle|Z Boson}} || Self || 1 || 0 || 91.1875{{+-|0.0021}} || [[Weak interaction]] ||Yes
+|-
+|[[Gluon]] || {{Subatomic particle|Gluon}} ||Self || 1 || 0 || 0 |||[[Strong interaction]] ||Yes
+|-
+|[[Higgs boson]] || {{Subatomic particle|Higgs boson}} || Self || 0 || 0 ||125.09{{+-|0.24}} || [[Mass]] ||Yes
+|-
+|}
+</center>
+
+The [[Higgs boson]] is postulated by the [[electroweak theory]] primarily to explain the origin of [[Mass|particle masses]]. In a process known as the "[[Higgs mechanism]]", the Higgs boson and the other gauge bosons in the Standard Model acquire mass via [[spontaneous symmetry breaking]] of the SU(2) gauge symmetry. The [[Minimal Supersymmetric Standard Model]] (MSSM) predicts several Higgs bosons. On 4 July 2012, the discovery of a new particle with a mass between 125 and 127 GeV/c2 was announced; physicists suspected that it was the Higgs boson. Since then, the particle has been shown to behave, interact, and decay in many of the ways predicted for Higgs particles by the Standard Model, as well as having even parity and zero spin, two fundamental attributes of a Higgs boson. This also means it is the first elementary scalar particle discovered in nature.
+
+Elementary bosons responsible for the four [[fundamental force]]s of nature are called [[Force carrier|force particles]] ([[gauge boson]]s). [[Strong interaction]] is mediated by the [[gluon]], [[weak interaction]] is mediated by the W and Z bosons.
+
+<center>
+{| class="wikitable sortable" style="align: center; text-align: center;"
+|-
+! Name !! Symbol !! Antiparticle !! Spin !! Charge ([[elementary charge|e]]) !! Mass (GeV/c<sup>2</sup>) <ref name="PDG2016"/> !! Interaction mediated !!Observed
+|-
+|[[Graviton]] || G || Self || 2 || 0 || 0 ||[[Gravitation]]  ||No
+|}
+</center>
+The [[graviton]], listed separately above, is a hypothetical particle that has been included in some extensions to the standard model to mediate the [[gravitation]]al force. It is in a peculiar category between known and hypothetical particles: As an unobserved particle that is not predicted by, nor required for the [[Standard Model]], it belongs in the table of hypothetical particles, below. But gravitational force itself is a certainty, and expressing that known force in the framework of a [[quantum field theory]] requires a boson to mediate it.
+
+===Hypothetical particles===
+[[Supersymmetry|Supersymmetric]] theories predict the existence of more particles, none of which have been confirmed experimentally.
+:
+<center>
+{|class="wikitable"
+|+Superpartners (Sparticles)
+|-
+! [[Superpartner]] !! Spin !! width="500"|Notes !! superpartner of: 
+|-
+| [[chargino]] || {{frac|1|2}} || The charginos are [[quantum superposition|superposition]]s of the [[superpartner]]s of charged Standard Model bosons: charged [[Higgs boson]] and [[W boson]].<br>The MSSM predicts two pairs of charginos. || charged bosons
+|-
+| [[gluino]] || {{frac|1|2}} || Eight [[gluon]]s and eight gluinos. || gluon
+|-
+| [[gravitino]] || {{frac|3|2}} || Predicted by [[supergravity]] (SUGRA). The [[graviton]] is hypothetical, too – see next table.  || graviton
+|-
+| [[Higgsino]] || {{frac|1|2}} || For supersymmetry there is a need for several Higgs bosons, neutral and charged, according with their superpartners. || [[Higgs boson]]
+|-
+| [[neutralino]] || {{frac|1|2}} || The neutralinos are [[quantum superposition|superposition]]s of the [[superpartner]]s of neutral Standard Model bosons: neutral [[Higgs boson]], [[Z boson]] and [[photon]].<br>The lightest neutralino is a leading candidate for [[dark matter]].<br>The [[Minimal Supersymmetric Standard Model|MSSM]] predicts four neutralinos. || neutral bosons
+|-
+| [[photino]] || {{frac|1|2}} || Mixing with zino and neutral Higgsinos for neutralinos. || [[photon]]
+|-
+| [[slepton]]s || 0 || The superpartners of the [[lepton]]s (electron, muon, tau) and the neutrinos. || leptons
+|-
+| [[sneutrino]] || 0 || Introduced by many extensions of the Standard Supermodel, and may be needed to explain the [[LSND]] results.<br>A special role has the sterile sneutrino, the supersymmetric counterpart of the hypothetical right-handed neutrino, called the "[[sterile neutrino]]". || [[neutrino]]
+|-
+| [[squark]]s || 0 || The stop squark (superpartner of the [[top quark]]) is thought to have a low mass and is often the subject of experimental searches. || [[quark]]s
+|-
+| [[gaugino|wino, zino]] || {{frac|1|2}} || The charged wino mixing with the charged Higgsino for charginos, for the zino see line above.  || [[W and Z bosons|W<sup>±</sup> and Z<sup>0</sup> bosons]]
+|}
+</center>
+
+Just as the photon, Z boson and W<sup>±</sup> bosons are superpositions of the B<sup>0</sup>, W<sup>0</sup>, W<sup>1</sup>, and W<sup>2</sup> fields, the photino, zino, and wino<sup>±</sup> are superpositions of the bino<sup>0</sup>, wino<sup>0</sup>, wino<sup>1</sup>, and wino<sup>2</sup>. No matter if one uses the original gauginos or this superpositions as a basis, the only predicted physical particles are neutralinos and charginos as a superposition of them together with the Higgsinos.
+ 
+Other theories predict the existence of additional bosons:
+<center>
+{|class="wikitable"
+|+Other hypothetical bosons and fermions
+|-
+! Name !! Spin !! width="500"|Notes
+|-
+| [[axion]] || 0 || A pseudoscalar particle introduced in [[Peccei–Quinn theory]] to solve the [[strong-CP problem]].
+|-
+| [[axino]] || {{frac|1|2}} || Superpartner of the axion. Forms, together with the saxion and axion, a [[supermultiplet]] in supersymmetric extensions of Peccei–Quinn theory.
+|-
+| [[branon]] || ? || Predicted in [[Brane cosmology|brane world]] models.
+|-
+| [[chameleon particle|chameleon]] || 0 || a possible candidate for [[dark energy]] and [[dark matter]], and may contribute to [[cosmic inflation]].
+|-
+| [[dilaton]] || 0 || Predicted in some string theories.
+|-
+| [[dilatino]] || {{frac|1|2}} || Superpartner of the dilaton.
+|-
+| [[dual graviton]] || 2 || Has been hypothesized as dual of [[graviton]] under [[electric-magnetic duality|electric–magnetic duality]]] in [[supergravity]].
+|-
+| [[graviphoton]] || 1 || Also known as "gravivector".<ref>
+{{cite journal
+ |last=Maartens |first=R.
+ |date=2004
+ |title=Brane-World Gravity
+ |url=http://www.emis.de/journals/LRG/Articles/lrr-2004-7/download/lrr-2004-7BW.pdf
+ |journal=[[Living Reviews in Relativity]]
+ |volume=7 |issue=1|pages=7
+ |arxiv=gr-qc/0312059
+ |bibcode=2004LRR.....7....7M
+ |doi=10.12942/lrr-2004-7
+|pmid=28163642
+ |pmc=5255527
+ }}</ref>
+|-
+| [[graviscalar]] || 0 || Also known as "radion".
+|-
+| [[inflaton]] || 0 || Unknown force-carrier that is presumed to have the physical cause of cosmological “[[inflation (cosmology)|inflation]]” – the [[metric expansion of space|rapid expansion]] from 10<sup>&minus;35</sup> to 10<sup>&minus;34</sup>&nbsp;[[second]]s after the [[Big Bang]].
+|-
+| [[magnetic photon]] || ? || A. Salam (1966). "Magnetic monopole and two photon theories of C-violation." Physics Letters 22 (5): 683–684.
+|-
+| [[majoron]] || 0 || Predicted to understand [[neutrino]] masses by the [[seesaw mechanism]]. 
+|-
+| [[majorana fermion]] || {{frac|1|2}} ; {{frac|3|2}} ?... || [[gluino]], [[neutralino]], or other – is its own [[antiparticle]].
+|-
+| [[axion#Predictions|saxion]] || 0 || 
+|-
+| [[X17 particle]] || ? || possible cause of anomalous measurement results near 17 MeV, and possible candidate for [[dark matter]].
+|-
+| [[X and Y bosons]] || 1 || These [[leptoquark]]s are predicted by [[grand unification theory|GUT theories]] to be heavier equivalents of the W and Z.
+|-
+| [[W' and Z' bosons]] || 1 || 
+|}
+</center>
+
+[[Mirror matter|Mirror particles]] are predicted by theories that restore [[Parity (physics)|parity symmetry]].
+
+"[[Magnetic monopole]]" is a generic name for particles with non-zero magnetic charge.  They are predicted by some GUTs.
+
+"[[Tachyon]]" is a generic name for hypothetical particles that travel faster than the speed of light (and so paradoxically experience time in reverse due to inversal of [[Theory of relativity]]) and have an [[imaginary number|imaginary]] rest mass, they would violate the laws of causality.
+
+[[Preon]]s were suggested as subparticles of quarks and leptons, but modern [[collider]] experiments have all but ruled out their existence.
+
+[[Kaluza–Klein theory|Kaluza–Klein towers]] of particles are predicted by some models of extra dimensions. The extra-dimensional momentum is manifested as extra mass in four-dimensional spacetime.
+
+==Composite particles<!--'Composite particle' and 'Composite particles' redirect here-->==
+
+===Hadrons===
+{{Main article|Hadron}}
+Hadrons are defined as [[strong interaction|strongly interacting]] '''composite particles'''<!--boldface per WP:R#PLA-->. Hadrons are either:
+* Composite fermions (especially 3 quarks), in which case they are called [[baryon]]s.
+* Composite bosons (especially 2 quarks), in which case they are called [[meson]]s.
+
+[[Quark model]]s, first proposed in 1964 independently by [[Murray Gell-Mann]] and [[George Zweig]] (who called quarks "aces"), describe the known hadrons as composed of valence [[quark]]s and/or antiquarks, tightly bound by the [[strong interaction|color force]], which is mediated by [[gluon]]s. (The interaction between quarks and gluons is described by the theory of [[quantum chromodynamics]].) A "sea" of virtual quark-antiquark pairs is also present in each hadron.
+
+====Baryons====
+[[File:Baryon decuplet.svg|thumb|A combination of three u, d or s-quarks with a total spin of {{frac|3|2}} form the so-called "baryon decuplet".]]
+[[File:Proton quark structure.svg|thumb|200px|Proton quark structure: 2 up quarks and 1 down quark. The gluon tubes or flux tubes are now known to be Y shaped.]]
+{{See also|List of baryons}}
+
+Ordinary [[baryon]]s (composite [[fermion]]s) contain three valence quarks or three valence antiquarks each.
+* [[Nucleon]]s are the fermionic constituents of normal atomic nuclei:
+**[[Proton]]s, composed of two up and one down quark (uud)
+**[[Neutron]]s, composed of two down and one up quark (ddu)
+* [[Hyperon]]s, such as the Λ, Σ, Ξ, and Ω particles, which contain one or more [[strange quark]]s, are short-lived and heavier than nucleons. Although not normally present in atomic nuclei, they can appear in short-lived [[hypernucleus|hypernuclei]].
+* A number of [[charm quark|charmed]] and [[bottom quark|bottom]] baryons have also been observed.
+* [[Pentaquark]]s consist of four valence quarks and one valence antiquark.
+* Other [[exotic baryon]]s may also exist.
+
+====Mesons====
+[[File:Noneto mesônico de spin 0.png|thumb|Mesons of spin 0 form a nonet]]
+{{See also|List of mesons}}
+
+Ordinary [[meson]]s are made up of a [[valence quark]] and a valence [[antiquark]]. Because mesons have [[spin (physics)|spin]] of 0 or 1 and are not themselves elementary particles, they are "composite" [[boson]]s. Examples of mesons include the [[pion]], [[kaon]], and the [[J/ψ]]. In [[quantum hadrodynamics]], mesons mediate the [[residual strong force]] between nucleons.
+
+At one time or another, positive [[signature]]s have been reported for all of the following [[exotic meson]]s  but their existences have yet to be confirmed.
+* A [[tetraquark]] consists of two valence quarks and two valence antiquarks;
+* A [[glueball]] is a bound state of gluons with no valence quarks;
+* [[Hybrid (particle physics)|Hybrid]] mesons consist of one or more valence quark–antiquark pairs and one or more real gluons.
+
+===Atomic nuclei===
+[[File:Helium atom QM.svg|right|300px|thumbnail|A [[Uncertainty principle|semi-accurate]] depiction of the [[helium]] atom.  In the nucleus, the protons are in red and neutrons are in purple. In reality, the nucleus is also spherically symmetrical.]]
+[[Atomic nucleus|Atomic nuclei]] consist of protons and neutrons. Each type of nucleus contains a specific number of protons and a specific number of neutrons, and is called a "[[nuclide]]" or "[[isotope]]". [[Nuclear reaction]]s can change one nuclide into another. See [[table of nuclides]] for a complete list of isotopes.
+
+===Atoms===
+[[Atom]]s are the smallest neutral particles into which matter can be divided by [[chemical reaction]]s. An atom consists of a small, heavy nucleus surrounded by a relatively large, light cloud of electrons. Each type of atom corresponds to a specific [[chemical element]]. To date, 118 elements have been discovered or created.
+
+An atomic nucleus consists of 1 or more protons and 0 or more neutrons. Protons and neutrons are, in turn, made of quarks.
+
+===Molecules===<!-- This section is linked from [[Molecule]] -->
+[[Molecule]]s are the smallest particles into which a substance can be divided while maintaining the chemical properties of the substance. Each type of molecule corresponds to a specific [[chemical substance]]. A molecule is a composite of two or more atoms. See [[list of compounds]] for a list of molecules. Atoms are combined in a fixed proportion to form a molecule. Molecule is one of the most basic units of matter.
+
+==Quasiparticles==
+
+[[Quasiparticles]] are effective particles that exist in many particle systems. The field equations of [[condensed matter physics]] are remarkably similar to those of high energy particle physics.  As a result, much of the theory of particle physics applies to condensed matter physics as well; in particular, there  are a selection of field excitations, called [[quasi-particle]]s, that can be created and explored. These include:
+
+* [[Phonon]]s are vibrational modes in a [[crystal lattice]].
+* [[Exciton]]s are bound states of an [[electron]] and a [[electron hole|hole]].
+* [[Plasmon]]s are coherent excitations of a [[Plasma (physics)|plasma]].
+* [[Polariton]]s are mixtures of [[photon]]s with other quasi-particles.
+* [[Polaron]]s are moving, charged (quasi-) particles that are surrounded by ions in a material.
+* [[Magnon]]s are coherent excitations of electron spins in a material.
+
+==Other==
+* [[Acceleron]]s are hypothetical particles postulated to relate neutrino mass to dark energy, and are named for the role they play in the [[accelerating expansion of the universe]]
+* An [[anyon]] is a generalization of fermion and boson in two-dimensional systems like sheets of [[graphene]] that obeys [[braid statistics]].
+* A [[plekton]] is a theoretical kind of particle discussed as a generalization of the braid statistics of the anyon to dimension > 2.
+* A [[Weakly Interacting Massive Particle|WIMP]] (weakly interacting massive particle) is any one of a number of particles that might explain dark matter (such as the neutralino or the axion).
+* A [[Gravitationally-interacting massive particles|GIMP]] (gravitationally interacting massive particle) is a particle which provides an alternative explanation of dark matter, instead of the aforementioned WIMP.
+* The [[pomeron]], used to explain the [[elastic scattering]] of hadrons and the location of [[Regge pole]]s in [[Regge theory]].
+* The [[skyrmion]], a topological solution of the [[pion]] field, used to model the low-energy properties of the [[nucleon]], such as the axial vector current coupling and the mass.
+* A genon is a particle existing in a closed [[timelike]] [[world line]] where [[spacetime]] is curled as in a [[Frank Tipler]] or [[Ronald Mallett]] [[Time travel|time machine]].{{Citation needed|date=August 2017}}
+* A [[Goldstone boson]] is a massless excitation of a field that has been [[spontaneous symmetry breaking|spontaneously broken]]. The [[pion]]s are quasi-goldstone bosons (quasi- because they are not exactly massless) of the broken [[Chirality (physics)|chiral]] [[isospin]] symmetry of [[quantum chromodynamics]].
+* A [[goldstino]] is a goldstone [[fermion]] produced by the spontaneous breaking of [[supersymmetry]].
+* An [[instanton]] is a field configuration which is a local minimum of the Euclidean action. Instantons are used in nonperturbative calculations of tunneling rates.
+* A [[dyon]] is a hypothetical particle with both electric and magnetic charges.
+* A [[Geon (physics)|geon]] is an electromagnetic or gravitational wave which is held together in a confined region by the gravitational attraction of its own field of energy.
+* An [[inflaton]] is the generic name for an unidentified scalar particle responsible for the [[cosmic inflation]].
+* A [[spurion]] is the name given to a "particle" inserted mathematically into an isospin-violating decay in order to analyze it as though it conserved isospin.
+* What is called [[Muonium|"true muonium"]], a [[bound state]] of a [[muon]] and an antimuon, is a theoretical exotic atom which has never been observed.
+* A [[Dislon|dislon]] is a localized collective excitation of a crystal dislocation around the static displacement.
+
+==Classification by speed==
+* A [[bradyon|tardyon or bradyon]] travels slower than light and has a non-zero, [[Real number|real]] rest mass.
+* A [[Massless particle|luxon]] travels at the speed of light and has no rest mass.
+* A [[tachyon]] (mentioned above) is a hypothetical particle that travels faster than the speed of light and has an [[imaginary number|imaginary]] rest mass.
+
+== See also ==
+{{cols|colwidth=21em}}
+* [[List of baryons]]
+* [[List of compounds]] for a list of molecules
+* [[List of fictional elements, materials, isotopes and atomic particles]]
+* [[List of mesons]]
+* [[Particle zoo]]
+* [[Ion]]
+* [[Periodic table]] for an overview of atoms
+* [[Standard Model]] for the current consensus theory of these particles
+* [[Table of nuclides]]
+* [[Timeline of particle discoveries]]
+{{colend}}
+
+==References==
+{{Reflist}}
+
+{{Particles}}
+
+[[Category:Physics-related lists|Particles]]
+[[Category:Subatomic particles|∗]]
+[[Category:Unsolved problems in physics]]

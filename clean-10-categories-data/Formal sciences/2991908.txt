@@ -1,0 +1,28 @@
+{{Multiple issues|
+{{noref|date=October 2018}}
+{{technical|date=May 2016}}
+}}
+
+In [[survival analysis]], the '''area compatibility factor''', ''F'', is used in indirect standardisation of [[Population (statistics)|population]] [[mortality rate]]s.
+
+:<math>F = \frac{\sum_x {}^sE_{x,t}^c {}^sm_{x,t}}{\sum_x {}^sE_{x,t}^c} \left/
+\frac{\sum_xE_{x,t}^c {}^sm_{x,t}}{\sum_x E_{x,t}^c}\right.</math>
+
+where:
+
+:<math>{}^sE_{x,t}^c</math> is the standardised central exposed-to risk from age ''x'' to ''x''&nbsp;+&nbsp;''t'' for the standard population,
+
+:<math>E_{x,t}^c</math> is the central exposed-to risk from age ''x'' to ''x''&nbsp;+&nbsp;''t'' for the population under study and
+
+:<math>{}^sm_{x,t}</math> is the [[mortality rate]] in the standard population for ages ''x'' to ''x''&nbsp;+&nbsp;''t''.
+
+The expression can be thought of as the crude mortality rate for the standard population divided by what the crude mortality rate is for the region being studied, assuming the mortality rates are the same as for the standard population.
+
+''F'' is then multiplied by the crude mortality rate to arrive at the indirectly standardised mortality rate.
+
+[[Category:Actuarial science]]
+[[Category:Demography]]
+[[Category:Epidemiology]]
+
+
+{{statistics-stub}}

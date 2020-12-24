@@ -1,0 +1,171 @@
+In [[philosophy]], '''term logic''', also known as '''traditional logic''', '''syllogistic logic''' or '''[[Aristotelianism|Aristotelian]] logic''', is a loose name for an approach to [[logic]] that began with [[Aristotle]] and was developed further in ancient times mostly by his followers, the [[peripatetics]], but largely fell into decline by the third century CE. Term logic revived in medieval times, first in [[Islamic logic]] by [[Alpharabius]] in the tenth century, and later in Christian Europe in the twelfth century with the advent of [[new logic]],  and remained dominant until the advent of modern [[predicate logic]] in the late nineteenth century. This entry is an introduction to the term logic needed to understand philosophy texts written before it was replaced as a [[formal logic]] system by predicate logic. Readers lacking a grasp of the basic [[terminology]] and ideas of term logic can have difficulty understanding such texts, because their authors typically assumed an acquaintance with term logic.
+
+== Aristotle's system ==
+[[Aristotle]]'s logical work is collected in the six texts that are collectively known as the ''[[Organon]]''. Two of these texts in particular, namely the ''[[Prior Analytics]]'' and ''[[De Interpretatione]]'', contain the heart of Aristotle's treatment of judgements and formal [[inference]], and it is principally this part of Aristotle's works that is about term [[logic]]. Modern work on Aristotle's logic builds on the tradition started in 1951 with the establishment by [[Jan Lukasiewicz]] of a revolutionary paradigm.<ref>Degnan, M. 1994. Recent Work in Aristotle's Logic. Philosophical Books 35.2 (April, 1994): 81-89.</ref> The [[Jan Lukasiewicz]] approach was reinvigorated in the early 1970s by [[John Corcoran (logician)|John Corcoran]] and [[Timothy Smiley]] – which informs modern translations of ''Prior Analytics'' by Robin Smith in 1989 and [[Gisela Striker]] in 2009.<ref>*Review of "Aristotle, Prior Analytics: Book I, Gisela Striker (translation and commentary), Oxford UP, 2009, 268pp., $39.95 (pbk), {{ISBN|978-0-19-925041-7}}." in the ''Notre Dame Philosophical Reviews'', [http://ndpr.nd.edu/review.cfm?id=18787 2010.02.02].</ref>
+
+== Basics ==
+The fundamental assumption behind the theory is that [[propositions]] are composed of two terms – hence the name "two-term theory" or "term logic" – and that the [[reasoning]] process is in turn built from propositions:
+*The ''term'' is a part of speech representing something, but which is not true or false in its own right, such as "man" or "mortal".
+*The ''proposition'' consists of two terms, in which one term (the "[[predicate (grammar)|predicate]]") is "affirmed" or "denied" of the other (the "[[subject (grammar)|subject]]"), and which is capable of [[truth]] or [[falsity]].
+*The ''[[syllogism]]'' is an [[inference]] in which one [[proposition]] (the "[[Consequent|conclusion]]") follows of necessity from two other propositions (the "[[premise]]s").
+
+A proposition may be universal or particular, and it may be affirmative or negative. Traditionally, the four kinds of propositions are:
+:* A-type: Universal and affirmative ("All philosophers are mortal")
+:* I-type: Particular and affirmative ("Some philosophers are mortal")
+:* E-type: Universal and negative ("All philosophers are not mortal")
+:* O-type: Particular and negative ("Some philosophers are not mortal")
+This was called the ''fourfold scheme'' of propositions (see [[Syllogism#Types|types of syllogism]] for an explanation of the letters A, I, E, and O in the traditional square). Aristotle's ''original'' [[square of opposition]], however, does not lack [[Syllogism#Existential import|existential import]].
+
+In the [[Stanford Encyclopedia of Philosophy]] article, "The Traditional Square of Opposition", [[Terence Parsons]] explains:
+{{quote|One central concern of the Aristotelian tradition in logic is the theory of the [[categorical syllogism]]. This is the theory of two-premised arguments in which the premises and conclusion share three terms among them, with each proposition containing two of them. It is distinctive of this enterprise that everybody agrees on which syllogisms are valid. The theory of the syllogism partly constrains the interpretation of the forms. For example, it determines that the '''''A''''' form has existential import, at least if the '''''I''''' form does. For one of the valid patterns (Darapti) is:
+:Every ''C'' is ''B''
+:Every ''C'' is ''A''
+:So, some ''A'' is ''B''
+
+This is invalid if the '''''A''''' form lacks [[Syllogism#Existential import|existential import]], and valid if it has existential import. It is held to be valid, and so we know how the '''''A''''' form is to be interpreted. One then naturally asks about the '''''O''''' form; what do the syllogisms tell us about it? The answer is that they tell us nothing. This is because Aristotle did not discuss weakened forms of syllogisms, in which one concludes a particular proposition when one could already conclude the corresponding universal. For example, he does not mention the form:
+:No ''C'' is ''B''
+:Every ''A'' is ''C''
+:So, some ''A'' is not ''B''
+
+If people had thoughtfully taken sides for or against the validity of this form, that would clearly be relevant to the understanding of the O form. But the weakened forms were typically ignored...
+
+One other piece of subject-matter bears on the [[interpretation (logic)|interpretation]] of the '''''O''''' form. People were interested in Aristotle's discussion of "infinite" negation, which is the use of negation to form a term from a term instead of a proposition from a proposition. In modern English we use "non" for this; we make "non-horse," which is true for exactly those things that are not horses. In medieval Latin "non" and "not" are the same word, and so the distinction required special discussion. It became common to use infinite negation, and logicians pondered its logic. Some writers in the twelfth century and [[13th century|thirteenth centuries]] adopted a principle called "conversion by contraposition". It states that
+
+* 'Every ''S'' is ''P'' ' is equivalent to 'Every non-''P'' is non-''S'' '
+* 'Some ''S'' is not ''P'' ' is equivalent to 'Some non-''P'' is not non-''S'' '
+
+Unfortunately, this principle (which is not endorsed by Aristotle) conflicts with the idea that there may be empty or universal terms. For in the universal case it leads directly from the truth:
+:Every man is a being
+
+to the falsehood:
+:Every non-being is a non-man
+
+(which is false because the universal affirmative has existential import, and there are no non-beings). And in the particular case it leads from the truth (remember that the '''''O''''' form has no existential import):
+:A chimera is not a man
+To the falsehood:
+:A non-man is not a non-chimera
+
+These are [Jean] Buridan's examples, used in the fourteenth century to show the invalidity of [[Contraposition (traditional logic)|contraposition]]. Unfortunately, by Buridan's time the principle of contraposition had been advocated by a number of authors. The doctrine is already present in several twelfth century tracts, and it is endorsed in the thirteenth century by Peter of Spain, whose work was republished for centuries, by William Sherwood, and by Roger Bacon. By the fourteenth century, problems associated with contraposition seem to be well-known, and authors generally cite the principle and note that it is not valid, but that it becomes valid with an additional assumption of existence of things falling under the subject term. For example, Paul of Venice in his eclectic and widely published ''Logica Parva'' from the end of the fourteenth century gives the traditional square with simple conversion but rejects conversion by contraposition, essentially for Buridan's reason.<ref>{{cite encyclopedia |first=Terence |last=Parsons |editor=Edward N. Zalta |year=2012 |title=The Traditional Square of Opposition |encyclopedia=The Stanford Encyclopedia of Philosophy |edition=Fall 2012 |url=http://plato.stanford.edu/archives/fall2012/entries/square#IrrSyl |at=3-4}}</ref>|Terence Parsons|The Stanford Encyclopedia of Philosophy}}
+
+== Term ==
+A term (Greek ὅρος ''horos'') is the basic component of the proposition.  The original meaning of the ''horos'' (and also of the Latin ''terminus'') is "extreme" or "boundary". The two terms lie on the outside of the proposition, joined by the act of affirmation or denial.
+
+For early modern [[logician]]s like Arnauld (whose ''[[Port-Royal Logic]]'' was the best-known text of his day), it is a psychological entity like an "idea" or "[[concept]]".  Mill considers it a word.  To assert "all Greeks are men" is not to say that the concept of Greeks is the concept of men, or that word "Greeks" is the word "men".  A [[proposition]] cannot be built from real things or ideas, but it is not just meaningless words either.
+
+== Proposition ==
+In term logic, a "proposition" is simply a ''form of language'': a particular kind of sentence, in which the subject and [[predicate (grammar)|predicate]] are combined, so as to assert something true or false.  It is not a thought, or an [[abstract entity]].  The word ''"propositio"'' is from the Latin, meaning the first premise of a [[syllogism]].  Aristotle uses the word premise (''protasis'') as a sentence affirming or denying one thing or another (''Posterior Analytics'' 1. 1 24a 16), so a [[premise]] is also a form of words.
+
+However, as in modern philosophical logic, it means that which is asserted by the sentence.  Writers before [[Frege]] and [[Bertrand Russell|Russell]], such as [[F. H. Bradley|Bradley]], sometimes spoke of the "judgment" as something distinct from a sentence, but this is not quite the same.  As a further confusion the word "sentence" derives from the Latin, meaning an [[opinion]] or [[judgment]], and so is equivalent to "[[proposition]]".
+
+The ''[[logical quality]]'' of a proposition is whether it is affirmative (the predicate is affirmed of the subject) or negative (the predicate is denied of the subject).  Thus ''every philosopher is mortal'' is affirmative, since the mortality of philosophers is affirmed universally, whereas ''no philosopher is mortal'' is negative by denying such mortality in particular.
+
+The ''quantity'' of a proposition is whether it is universal (the predicate is affirmed or denied of all subjects or of "the whole") or particular (the predicate is affirmed or denied of some subject or a "part" thereof). In case where [[existential]] import is assumed, [[quantifier (linguistics)|quantification]] implies the existence of at least one subject, unless disclaimed.
+
+== Singular terms ==
+For Aristotle, the distinction between singular and universal is a fundamental [[metaphysical]] one, and not merely [[grammatical]].  A singular term for Aristotle is [[substance theory|primary substance]], which can only be [[predicate (grammar)|predicate]]d of itself: (this) "Callias" or (this) "Socrates" are not predicable of any other thing, thus one does not say ''every Socrates'' one says ''every human'' (''De Int.'' 7; ''Meta.'' D9, 1018a4).  It may feature as a grammatical predicate, as in the sentence "the person coming this way is Callias".  But it is still a ''logical'' subject.
+
+He contrasts universal (''katholou'')<ref name="katholouLSJ">{{LSJ|kaqo/lou|καθόλου|ref}}.</ref> secondary substance, genera, with primary substance, particular (''kath' hekaston'')<ref name="katholouLSJ"/><ref>{{LSJ|e(/kastos|καθ' ἕκαστον|shortref}}.</ref> specimens. The formal nature of universals, in so far as they can be generalized "always, or for the most part", is the subject matter of both scientific study and formal logic.<ref>They are mentioned briefly in the ''De Interpretatione''.  Afterwards, in the chapters of the ''Prior Analytics'' where Aristotle methodically sets out his theory of the syllogism, they are entirely ignored.</ref>
+
+The essential feature of the [[syllogism]] is that, of the four terms in the two premises, one must occur twice.  Thus
+
+:All Greeks are '''men'''
+:All '''men''' are mortal.
+
+The subject of one premise, must be the predicate of the other, and so it is necessary to eliminate from the logic any terms which cannot function both as subject and predicate, namely singular terms.
+
+However, in a popular 17th-century version of the syllogism, [[Port-Royal Logic]], singular terms were treated as universals:<ref>Arnauld, Antoine and Nicole, Pierre; (1662) ''La logique, ou l'art de penser''. Part 2, chapter 3</ref>
+
+:All men are mortals
+:All Socrates are men
+:All Socrates are mortals
+
+This is clearly awkward, a weakness exploited by Frege in his devastating attack on the system.
+
+The famous syllogism "Socrates is a man ...", is frequently quoted as though from Aristotle,<ref>For example: Kapp, ''Greek Foundations of Traditional Logic'', New York 1942, p.&nbsp;17, Copleston ''[[A History of Philosophy (Copleston)|A History of Philosophy]]'' Vol. I., p.&nbsp;277, [[Bertrand Russell|Russell]], ''A History of Western Philosophy'' London 1946 p.&nbsp;218.</ref> but in fact, it is nowhere in the ''[[Organon]]''.  [[Sextus Empiricus]] in his ''Hyp. Pyrrh'' (Outlines of Pyrronism) ii. 164 first mentions the related syllogism "Socrates is a human being, Every human being is an animal, Therefore, Socrates is an animal."
+
+== Influence on philosophy ==
+The Aristotelian logical system had a formidable influence on the late-philosophy of the French psychoanalyst [[Jacques Lacan]]. In the early 1970s, Lacan reworked Aristotle's term logic by way of Frege and Jacques Brunschwig to produce his four formulae of sexuation.<ref>{{Cite web|url=http://www.swingtradesystems.com/lacan/lacan-and-aristotle.html|title=The Aristotelian Roots of Lacan's Formulas of Sexuation}}</ref> While these formulae retain the formal arrangement of the square of opposition, they seek to undermine the universals of both qualities by the 'existence without essence' of Lacan's particular negative proposition.<ref>{{Cite book|title=Lacan and Meaning: Sexuation, Discourse Theory, and Topology in the Age of Hermeneutics|last=Urban|first=William J.|year=2015|isbn=978-1530345502|location=New York|pages=108–10, 132–3}}</ref>
+
+== Decline of term logic ==
+Term logic began to decline in Europe during the [[Renaissance]], when logicians like [[Rodolphus Agricola]] Phrisius (1444–1485) and [[Petrus Ramus|Ramus]] (1515–1572) began to promote place logics. The logical tradition called [[Port-Royal Logic]], or sometimes "traditional logic", saw propositions as combinations of ideas rather than of terms, but otherwise followed many of the conventions of term logic. It remained influential, especially in England, until the 19th century. [[Gottfried Wilhelm Leibniz|Leibniz]] created a distinctive [[logical calculus]], but nearly all of his work on [[logic]] remained unpublished and unremarked until [[Louis Couturat]] went through the Leibniz ''[[Nachlass]]'' around 1900, publishing his pioneering studies in logic.
+
+19th-century attempts to algebraize logic, such as the work of [[George Boole|Boole]] (1815–1864) and [[John Venn|Venn]] (1834–1923), typically yielded systems highly influenced by the term-logic tradition. The first [[predicate logic]] was that of [[Frege]]'s landmark ''[[Begriffsschrift]]'' (1879), little read before 1950, in part because of its eccentric notation. Modern [[predicate logic]] as we know it began in the 1880s with the writings of [[Charles Sanders Peirce]], who influenced [[Peano]] (1858–1932) and even more, [[Ernst Schröder]] (1841–1902). It reached fruition in the hands of [[Bertrand Russell]] and [[A. N. Whitehead]], whose ''[[Principia Mathematica]]'' (1910–13) made use of a variant of Peano's predicate logic.
+
+Term logic also survived to some extent in traditional [[Roman Catholic]] education, especially in [[seminary|seminaries]]. Medieval Catholic [[theology]], especially the writings of [[Thomas Aquinas]], had a powerfully [[Aristotle|Aristotelean]] cast, and thus term logic became a part of Catholic theological reasoning. For example, Joyce's ''Principles of Logic'' (1908; 3rd edition 1949), written for use in Catholic seminaries, made no mention of [[Frege]] or of [[Bertrand Russell]].<ref>[[Frederick Copleston|Copleston]]'s ''[[A History of Philosophy (Copleston)|A History of Philosophy]]''</ref>
+
+== Revival ==
+Some philosophers have complained that predicate logic:
+* Is unnatural in a sense, in that its syntax does not follow the syntax of the sentences that figure in our everyday reasoning. It is, as Quine acknowledged, "[[Procrustean]]," employing an [[artificial language]] of [[function (mathematics)|function]] and [[Logical argument|argument]], [[Quantifier (logic)|quantifier]], and [[bound variable]].
+* Suffers from theoretical problems, probably the most serious being [[empty name]]s and identity statements.
+
+Even academic philosophers entirely in the mainstream, such as [[Gareth Evans (philosopher)|Gareth Evans]], have written as follows:
+:"I come to semantic investigations with a preference for ''homophonic'' theories; theories which try to take serious account of the syntactic and semantic devices which actually exist in the language ...I would prefer [such] a theory ... over a theory which is only able to deal with [sentences of the form "all A's are B's"] by "discovering" hidden [[logical constants]] ... The objection would not be that such [Fregean] truth conditions are not correct, but that, in a sense which we would all dearly love to have more exactly explained, the syntactic shape of the sentence is treated as so much misleading surface structure"  (Evans 1977)
+
+== See also ==
+{{col-begin}}
+{{col-break}}
+*[[Converse (logic)]]
+*[[Obversion]]
+*[[Port-Royal Logic]]
+{{col-break}}
+{{Portal|Philosophy}}
+*[[Propositional calculus]]
+*[[Stoic logic]]
+*[[Transposition (logic)]]
+{{col-end}}
+
+== Notes ==
+{{reflist|25em}}
+
+== References ==
+* Bochenski, I. M., 1951. ''Ancient Formal Logic''. North-Holland.
+* [[Louis Couturat]], 1961 (1901). ''La Logique de Leibniz''. Hildesheim: Georg Olms Verlagsbuchhandlung.
+* [[Gareth Evans (philosopher)|Gareth Evans]], 1977, "Pronouns, Quantifiers and Relative Clauses," ''Canadian Journal of Philosophy''.
+* [[Peter Geach]], 1976. ''Reason and Argument''. University of California Press.
+* Hammond and Scullard, 1992. ''The Oxford Classical Dictionary''. Oxford University Press, {{ISBN|0-19-869117-3}}.
+* Joyce, George Hayward, 1949 (1908). ''[https://web.archive.org/web/20060227234924/http://uk.geocities.com/frege@btinternet.com/joyce/principlesoflogic.htm  Principles of Logic]'', 3rd ed.  Longmans. A manual written for use in Catholic seminaries. Authoritative on traditional logic, with many references to medieval and ancient sources. Contains no hint of modern formal logic. The author lived 1864–1943.
+* [[Jan Lukasiewicz]], 1951.  ''Aristotle's Syllogistic, from the Standpoint of Modern Formal Logic''. Oxford Univ. Press.
+* [[John Stuart Mill]], 1904.  ''A System of Logic'', 8th ed.  London.
+* Parry and Hacker, 1991. ''Aristotelian Logic''. State University of New York Press.
+* [[Arthur Prior]]
+*: 1962: ''Formal Logic'', 2nd ed. Oxford Univ. Press. While primarily devoted to modern formal logic, contains much on term and medieval logic.
+*: 1976: ''The Doctrine of Propositions and Terms''. [[Peter Geach]] and A. J. P. Kenny, eds. London: Duckworth.
+* [[Willard Quine]], 1986. ''Philosophy of Logic'' 2nd ed. Harvard Univ. Press.
+* Rose, Lynn E., 1968. ''Aristotle's Syllogistic''. Springfield: Clarence C. Thomas.
+* [[Frederic Tamler Sommers|Sommers, Fred]]
+*: 1970: "The Calculus of Terms," ''Mind 79'': 1-39. Reprinted in Englebretsen, G., ed., 1987. ''The new syllogistic'' New York: Peter Lang. {{ISBN|0-8204-0448-9}}
+*: 1982: ''The logic of natural language''. Oxford University Press.
+*: 1990: "[http://projecteuclid.org/Dienst/UI/1.0/Summarize/euclid.ndjfl/1093635336 Predication in the Logic of Terms]," ''Notre Dame Journal of Formal Logic 31'': 106–26.
+*: and Englebretsen, George, 2000: ''An invitation to formal reasoning. The logic of terms''. Aldershot UK: Ashgate. {{ISBN|0-7546-1366-6}}.
+* Szabolcsi Lorne, 2008. ''Numerical Term Logic''. Lewiston: Edwin Mellen Press.
+
+==External links==
+{{Commons category}}
+*{{PhilPapers|category|aristotelian-logic}}
+*{{cite SEP |url-id=aristotle-logic |title=Aristotle's Logic |last=Smith |first=Robin}}
+*{{cite IEP |url-id=aris-log |title=Term logic}}
+*[http://aristotelianlogic.glashoff.net Aristotle's term logic online]-This online program provides a platform for experimentation and research on Aristotelian logic.
+* Annotated bibliographies:
+*:[http://www.ontology.co/sommersf.htm Fred Sommers.]
+*:[http://www.ontology.co/biblio/englebretseng.htm George Englebretsen.]
+*[[PlanetMath]]: [http://planetmath.org/AristotelianLogic Aristotelian Logic].
+*[http://thefirstscience.org/syllogistic-machine/  Interactive Syllogistic Machine for Term Logic] A web based syllogistic machine for exploring fallacies, figures, terms, and modes of syllogisms.
+
+{{Aristotelianism}}
+{{Mathematical logic}}
+{{Authority control}}
+[[Category:Term logic| ]]
+[[Category:Aristotelianism| ]]
+[[Category:Aristotle| ]]
+[[Category:Logic| ]]
+[[Category:Concepts in epistemology]]
+[[Category:Concepts in logic]]
+[[Category:Concepts in metaphysics]]
+[[Category:History of ideas]]
+[[Category:History of logic]]
+[[Category:History of philosophy]]
+[[Category:Mathematical logic]]
+[[Category:Philosophical concepts]]
+[[Category:Philosophical logic]]
+[[Category:Philosophical theories]]
+[[Category:Philosophy of logic]]

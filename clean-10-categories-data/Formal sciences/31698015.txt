@@ -1,0 +1,143 @@
+The '''Berlekamp–Welch algorithm''', also known as the '''Welch–Berlekamp algorithm''', is named for [[Elwyn R. Berlekamp]] and [[Lloyd R. Welch]]. This is a decoder algorithm that efficiently corrects errors in [[Reed–Solomon error correction|Reed–Solomon codes]] for an RS(''n'', ''k''), code based on the Reed Solomon original view where a message <math>m_1, \cdots, m_k</math> is used as coefficients of a polynomial <math>F(a_i)</math> or used with [[Lagrange polynomial|Lagrange interpolation]] to generate the polynomial <math>F(a_i)</math> of degree < ''k'' for inputs <math>a_1 , \cdots, a_k</math> and then <math>F(a_i)</math> is applied to <math>a_{k+1}, \cdots , a_n</math> to create an encoded codeword <math>c_1, \cdots , c_n</math>.
+
+The goal of the decoder is to recover the original encoding polynomial <math>F(a_i)</math>, using the known inputs <math>a_1, \cdots , a_n</math> and received codeword <math>b_1, \cdots , b_n</math> with possible errors. It also computes an error polynomial <math>E(a_i)</math> where <math>E(a_i) = 0</math> corresponding to errors in the received codeword.
+
+== The key equations ==
+
+Defining ''e'' = number of errors, the key set of ''n'' equations is
+
+:<math>b_i E(a_i) = E(a_i) F(a_i) </math>
+
+Where E(''a<sub>i</sub>'') = 0 for the ''e'' cases when b<sub>i</sub> &ne; F(a<sub>i</sub>), and E(a<sub>i</sub>) &ne; 0 for the ''n'' - ''e'' non error cases where ''b<sub>i</sub>'' = F(''a<sub>i</sub>'') . These equations can't be solved directly, but by defining Q() as the product of E() and F():
+
+:<math>Q(a_i) = E(a_i) F(a_i) </math>
+
+and adding the constraint that the most significant coefficient of E(a<sub>i</sub>) = ''e<sub>e</sub>'' = 1, the result will lead to a set of equations that can be solved with linear algebra.
+
+:<math>b_i E(a_i) = Q(a_i)</math>
+:<math>b_i E(a_i) - Q(a_i) = 0 </math>
+:<math>b_i(e_0 + e_1 a_i + e_2 a_i^2 + \cdots + e_e a_i^e) -(q_0 + q_1 a_i + q_2 a_i^2 + \cdots + q_q a_i^q) = 0</math>
+
+where ''q'' = ''n'' - ''e'' - 1. Since ''e<sub>e</sub>'' is constrained to be 1, the equations become:
+
+:<math>b_i(e_0 + e_1 a_i + e_2 a_i^2 + \cdots + e_{e-1} a_i^{e-1}) -(q_0 + q_1 a_i + q_2 a_i^2 + \cdots + q_q a_i^q) = - b_i a_i^e</math>
+
+resulting in a set of equations which can be solved using linear algebra, with time complexity O(n^3).
+
+The algorithm begins assuming the maximum number of errors ''e'' = ⌊ (''n''-''k'')/2 ⌋. If the equations can not be solved (due to redundancy), ''e'' is reduced by 1 and the process repeated, until the equations can be solved or ''e'' is reduced to 0, indicating no errors. If Q()/E() has remainder = 0, then F() = Q()/E() and the code word values F(''a<sub>i</sub>'') are calculated for the locations where E(''a<sub>i</sub>'') = 0 to recover the original code word. If the remainder &ne; 0, then an uncorrectable error has been detected.
+
+==Example==
+
+Consider RS(7,3) (''n'' = 7, ''k'' = 3) defined in {{math|''GF''(7)}} with ''α'' = 3 and input values: ''a<sub>i</sub>'' = i-1 : {0,1,2,3,4,5,6}. The message to be systematically encoded is {1,6,3}. Using Lagrange interpolation, ''F(a<sub>i</sub>)'' = 3 x<sup>2</sup> + 2 x + 1, and applying ''F(a<sub>i</sub>)'' for ''a<sub>4</sub>'' = 3 to ''a<sub>7</sub>'' = 6, results in the code word {1,6,3,6,1,2,2}. Assume errors occur at ''c<sub>2</sub>'' and ''c<sub>5</sub>'' resulting in the received code word {1,5,3,6,3,2,2}. Start off with ''e'' = 2 and solve the linear equations:
+
+:<math>\begin{bmatrix}
+ b_1 & b_1 a_1 & -1 & -a_1 & -a_1^2 & -a_1^3 & -a_1^4 \\
+ b_2 & b_2 a_2 & -1 & -a_2 & -a_2^2 & -a_2^3 & -a_2^4 \\
+ b_3 & b_3 a_3 & -1 & -a_3 & -a_3^2 & -a_3^3 & -a_3^4 \\
+ b_4 & b_4 a_4 & -1 & -a_4 & -a_4^2 & -a_4^3 & -a_4^4 \\
+ b_5 & b_5 a_5 & -1 & -a_5 & -a_5^2 & -a_5^3 & -a_5^4 \\
+ b_6 & b_6 a_6 & -1 & -a_6 & -a_6^2 & -a_6^3 & -a_6^4 \\
+ b_7 & b_7 a_7 & -1 & -a_7 & -a_7^2 & -a_7^3 & -a_7^4 \\
+\end{bmatrix}
+\begin{bmatrix}
+e_0 \\ e_1 \\ q0 \\ q1 \\ q2 \\ q3 \\ q4 \\
+\end{bmatrix}
+= 
+\begin{bmatrix}
+-b_1 a_1^2\\
+-b_2 a_2^2\\
+-b_3 a_3^2\\
+-b_4 a_4^2\\
+-b_5 a_5^2\\
+-b_6 a_6^2\\
+-b_7 a_7^2\\
+\end{bmatrix}
+</math>
+<br>
+:<math>\begin{bmatrix}
+ 1 & 0 & 6 & 0 & 0 & 0 & 0 \\
+ 5 & 5 & 6 & 6 & 6 & 6 & 6 \\
+ 3 & 6 & 6 & 5 & 3 & 6 & 5 \\
+ 6 & 4 & 6 & 4 & 5 & 1 & 3 \\
+ 3 & 5 & 6 & 3 & 5 & 6 & 3 \\
+ 2 & 3 & 6 & 2 & 3 & 1 & 5 \\
+ 2 & 5 & 6 & 1 & 6 & 1 & 6 \\
+\end{bmatrix}
+\begin{bmatrix}
+e_0 \\ e_1 \\ q0 \\ q1 \\ q2 \\ q3 \\ q4 \\
+\end{bmatrix}
+= 
+\begin{bmatrix}
+0\\
+2\\
+2\\
+2\\
+1\\
+6\\
+5\\
+\end{bmatrix}
+</math>
+<br>
+:<math>\begin{bmatrix}
+ 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+ 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+ 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+ 0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+ 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\end{bmatrix}
+\begin{bmatrix}
+e_0 \\ e_1 \\ q0 \\ q1 \\ q2 \\ q3 \\ q4 \\
+\end{bmatrix}
+= 
+\begin{bmatrix}
+4\\
+2\\
+4\\
+3\\
+3\\
+1\\
+3\\
+\end{bmatrix}
+</math>
+
+Starting from the bottom of the right matrix, and the constraint ''e<sub>2</sub>'' = 1:
+
+<math>Q(a_i) = 3 x^4 + 1 x^3 + 3 x^2 + 3x + 4</math>
+
+<math>E(a_i) = 1 x^2 + 2 x + 4</math>
+
+<math>F(a_i) = Q(a_i) / E(a_i) = 3 x^2 + 2 x + 1</math> with remainder = 0.
+
+E(''a<sub>i</sub>'') = 0 at ''a<sub>2</sub>'' = 1 and ''a<sub>5</sub>'' = 4
+Calculate F(''a<sub>2</sub>'' = 1) = 6 and F(''a<sub>5</sub>'' = 4) = 1 to produce corrected code word {1,6,3,6,1,2,2}.
+
+==See also==
+
+*[[Reed–Solomon error correction]]
+
+==External links==
+* [http://people.csail.mit.edu/madhu/FT02/ MIT Lecture Notes on Essential Coding Theory – Dr. Madhu Sudan]
+* [https://web.archive.org/web/20110606191907/http://www.cse.buffalo.edu/~atri/courses/coding-theory/fall07.html University at Buffalo Lecture Notes on Coding Theory – Dr. Atri Rudra]
+* Algebraic Codes on Lines, Planes and Curves, An Engineering Approach – Richard E. Blahut
+* Welch Berlekamp Decoding of Reed–Solomon Codes – L. R. Welch
+* {{cite patent
+ |inventor1-last= Welch
+ |inventor1-first= Lloyd R.
+ |inventor1link=Lloyd R. Welch
+ |inventor2-last= Berlekamp
+ |inventor2-first= Elwyn R.
+ |inventor2link= Elwyn Berlekamp
+ |title= Error Correction for Algebraic Block Codes
+ |country-code= US
+ |patent-number= 4,633,470
+ |publication-date= September 27, 1983
+ |issue-date= December 30, 1986
+ |doi=}} – The patent by Lloyd R. Welch and Elewyn R. Berlekamp
+
+{{DEFAULTSORT:Berlekamp-Welch algorithm}}
+[[Category:Finite fields]]
+[[Category:Coding theory]]
+[[Category:Information theory]]
+[[Category:Error detection and correction]]

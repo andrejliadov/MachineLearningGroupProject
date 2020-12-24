@@ -1,0 +1,50 @@
+A subfield of [[fluid statics]], '''aerostatics''' is the study of gases that are not in motion with respect to the coordinate system in which they are considered. The corresponding study of gases in motion is called [[aerodynamics]].
+
+Aerostatics studies density allocation, especially in air. One of the applications of this is the [[barometric formula]].
+
+An [[aerostat]] is a [[lighter than air]] craft, such as an [[airship]] or [[balloon]], which uses the principles of aerostatics to [[buoyancy|float]].
+
+== Basic laws ==
+
+Treatment of the equations of gaseous behaviour at rest is generally taken, as in hydrostatics, to begin with a consideration of the general equations of momentum for fluid flow, which can be expressed as:
+
+<math> \rho  [{\partial U_j\over\partial t} + U_i {\partial U_j\over\partial t}] = -{\partial P\over\partial x_j} - {\partial \tau_{ij}\over\partial x_i} + \rho g_j </math>,
+
+where <math> \rho </math> is the mass density of the fluid, <math> U_j </math> is the instantaneous velocity, <math> P </math> is fluid pressure, <math> g </math> are the external body forces acting on the fluid, and <math> \tau_{ij} </math> is the momentum transport coefficient. As the fluid's static nature mandates that <math> U_j = 0 </math>, and that <math> \tau_{ij} = 0 </math>, the following set of [[partial differential equations]] representing the basic equations of aerostatics is found.<ref name=Durst>{{cite book |last= Durst |first= Franz |date= 1 September 2008 |title= An Introduction to Theory of Fluid Flows |url= https://books.google.com/books?id=QF1XCLJjAJIC&dq=aerostatics |location= |publisher= Springer science and business media, 2008. |isbn= 978-3540713425 |accessdate= 27 October 2016 }}</ref>{{rp|154}}
+
+<math> {\partial P\over\partial x_j} = \rho g_j </math>
+
+However, the presence of a non-constant density as is found in gaseous fluid systems (due to the compressibility of gases) requires the inclusion of the [[ideal gas law]]:
+
+<math> {P\over\rho} = RT </math>,
+
+where <math> R </math> denotes the universal gas constant, and <math> T </math> the temperature of the gas, in order to render the valid aerostatic partial differential equations:
+
+<math> {\partial P\over\partial x_j} = \rho \hat{g_j} = {P\over\ RT} \hat{g_j}</math>,
+
+which can be employed to compute the pressure distribution in gases whose thermodynamic states are given by the equation of state for ideal gases.<ref name=Durst />{{rp|183}}
+
+== Fields of study ==
+* [[Atmospheric pressure]] fluctuation
+* Composition of mountain air
+* Cross-section of the [[atmosphere]]
+* Gas [[density]]
+* [[soil gas|Gas diffusion in soil]]
+* Gas pressure
+* [[Kinetic theory of gases]]
+* [[Partial pressure]]s in gas mixtures
+* Pressure measurement
+
+== See also ==
+* [[Aeronautics]]
+
+==References==
+{{Reflist}}
+
+[[Category:Fluid mechanics]]
+[[Category:Aerodynamics]]
+
+
+{{physics-stub}}
+{{aviation-stub}}
+{{meteorology-stub}}

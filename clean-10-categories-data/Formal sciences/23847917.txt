@@ -1,0 +1,92 @@
+[[File:4D-RCS reference model architecture for an individual vehicle.jpg|thumb|420px|4D-RCS reference model architecture for an individual vehicle. It contains many layers of computational nodes each containing elements of sensory processing, world modeling, value judgment, and behavior generation.]]
+The '''4D/RCS Reference Model Architecture''' is a [[reference model]] for military [[unmanned vehicle]]s on how their [[software]] components should be identified and organized.
+
+The 4D/RCS has been developed by the Intelligent Systems Division (ISD) of the [[National Institute of Standards and Technology]] (NIST) since the 1980s.<ref>Danil Prokhorov (2008) ''Computational Intelligence in Automotive Applications''. p. 315</ref>
+
+This reference model is based on the general [[Real-time Control System]] (RCS) Reference Model Architecture, and has been applied to many kinds of robot control, including autonomous vehicle control.<ref name="Albus06">Albus, J.S. et al. (2006). "[https://www.nist.gov/cgi-bin//get_pdf.cgi?pub_id=822702 Learning in a Hierarchical Control System: 4D/RCS in the DARPA LAGR Program]". NIST June 26, 2006. in: ''ICINCO 06 - International Conference in Control, Automation and Robotics, Setubal, Portugal, August 2006''</ref>
+
+==Overview==
+4D/RCS is a reference model architecture that provides a theoretical foundation for designing, engineering, integrating intelligent systems software for [[unmanned ground vehicle]]s.<ref>Douglas Whitney Gage (2004). ''Mobile robots XVII: 26–28 October 2004, Philadelphia, Pennsylvania, USA''. Society of Photo-optical Instrumentation Engineers. page 35.</ref> 
+[[File:4D-RCS control loop fundamental structure.jpg|thumb|320px|left|Fundamental structure of a 4D/RCS control loop.]]
+According to Balakirsky (2003) 4D/RCS is an example of deliberative [[agent architecture]]. These architectures "include all systems that plan to meet future goal or deadline. In general, these systems plan on a model of the world rather than planning directly on processed sensor output. This may be accomplished by real-time [[sensor]]s, [[A priori and a posteriori|a priori]] information, or a combination of the two in order to create a picture or snapshot of the world that is used to update a world model".<ref name="SBB03">S.B. Balakirsky (2003). ''A framework for planning with incrementally created graphs in attributed problem spaces''. IOS Press. {{ISBN|1-58603-370-0}}. p.10-11.</ref> The course of action of a deliberative agent architecture is based on the world model and the commanded mission goal, see image. This goal "may be a given system state or physical location. To meet the goal systems of this kind attempts to compute a path through a multi-dimensional space contained in the real world".<ref name="SBB03"/>
+
+The 4D/RCS is a hierarchical deliberative architecture, that "plans up to the [[subsystem]] level to compute plans for an [[autonomous vehicle]] driving over rough terrain. In this system, the world model contains a pre-computed dictionary of possible vehicle trajectories known as an [[ego-graph]] as well as information from the real-time sensor processing. The trajectories are computed based on a discrete set of possible vehicle velocities and starting steering angles. All of the trajectories are guaranteed to be dynamically correct for the given velocity and steering angle. The systems runs under a fixed planning cycle, with the sensed information being updated into the world model at the beginning of the cycle. These update information include information on what area is currently under observation by the sensors, where detected obstacles exist, and vehicle status".<ref name="SBB03"/>
+
+==History==
+The National Institute of Standards and Technology’s (NIST) Intelligent Systems Division (ISD) has been developing the [[RCS reference model architecture]] for over 30 years. 4D/RCS is the most recent version of RCS developed for the Army Research Lab Experimental Unmanned Ground Vehicle program. The 4D in 4D/RCS signifies adding time as another dimension to each level of the three-dimensional (sensor processing, world modeling, behavior generation), hierarchical control structure. ISD has studied the use of 4D/RCS in defense mobility, transportation, robot cranes, manufacturing, and several other applications.<ref name="Albus06"/>
+
+4D/RCS integrates the NIST Real-time Control System (RCS) architecture with the German ([[Bundeswehr University of Munich]]) [[Ernst Dickmanns|VaMoRs 4-D approach]] to dynamic machine vision. It incorporates many concepts developed under the U.S. Department of Defense Demo I, Demo II, and Demo III programs, which demonstrated increasing levels of robotic vehicle autonomy. The theory embodied in 4D/RCS borrows heavily from cognitive psychology, semiotics, neuroscience, and artificial intelligence.<ref name="Albus02">Albus et al. (2002). ''4D-RCS A Reference Model Architecture For Unmanned Vehicle Systems Version 2.0''. National Institute of Standards and Technology, Gaithersburg, Maryland 20899Aug 2002.</ref>
+
+Three [[United States Government|US Government]] funded military efforts known as Demo I (US Army), Demo II (DARPA), and Demo III ([[US Army]]), are currently underway. Demo III (2001)<ref>{{cite conference|url=http://www.isd.mel.nist.gov/documents/albus/4DRCS.pdf |format=PDF |title=4-D/RCS reference model architecture for unmanned ground vehicles |first=J.A. |last=Albus |booktitle=Proc. of Symposium on Aerospace/Defense Sensing, Simulation and Controls |location=Orlando, FL |year=2002 |url-status=dead |archiveurl=https://web.archive.org/web/20040725051856/http://www.isd.mel.nist.gov/documents/albus/4DRCS.pdf |archivedate=2004-07-25 }}</ref> demonstrated the ability of unmanned ground vehicles to navigate miles of difficult off-road terrain, avoiding obstacles such as rocks and trees. [[James Albus]] at [[NIST]] provided the [[Real-time Control System]] which is a [[hierarchical control system]].  Not only were individual vehicles controlled (e.g. throttle, steering, and brake), but groups of vehicles had their movements automatically coordinated in response to high level goals.
+
+In 2002, the [[DARPA Grand Challenge]] competitions were announced.  The [[DARPA Grand Challenge (2005)|2004]] and [[DARPA Grand Challenge (2005)|2005 DARPA competitions]] allowed international teams to compete in fully autonomous vehicle races over rough unpaved terrain and in a non-populated suburban setting. The [[DARPA Grand Challenge (2007)|2007 DARPA challenge]], the DARPA urban challenge, involved autonomous cars driving in an urban setting.
+
+==4D/RCS Building blocks==
+The 4D/RCS architecture is characterized by a generic control node at all the [[Hierarchical routing|hierarchical control]] levels. The 4D/RCS hierarchical levels are scalable to facilitate systems of any degree of complexity. Each node within the hierarchy functions as a goal-driven, model-based, [[closed-loop controller]]. Each node is capable of accepting and decomposing task commands with goals into actions that accomplish task goals despite unexpected conditions and dynamic perturbations in the world.<ref name="Albus06"/>
+
+===4D/RCS Hierarchy===
+[[File:4D-RCS reference model architecture typical high level block diagram.jpg|thumb|360px|A high level block diagram of a typical 4D/RCS reference model architecture. UAV = Unmanned Air Vehicle, UARV = Unmanned Armed Reconnaissance Vehicle, UGS = Unattended Ground Sensors.]]
+4D/RCS prescribes a hierarchical control principle that decomposed high level commands into actions that employ physical actuators and sensors. The figure for example shows a high level block diagram of a 4D/RCS reference model architecture for a notional [[Future Combat System]] (FCS) battalion. Commands flow down the hierarchy, and status feedback and sensory information flows up. Large amounts of communication may occur between nodes at the same level, particularly within the same subtree of the command tree:<ref name="Albus02"/>
+
+* At the ''Servo level'' : Commands to actuator groups are decomposed into control signals to individual actuators.
+* At the ''Primitive level'' : Multiple actuator groups are coordinated and dynamical interactions between actuator groups are taken into account.
+* At the ''Subsystem level'' :  All the components within an entire subsystem are coordinated, and planning takes into consideration issues such as obstacle avoidance and gaze control.
+* At the ''Vehicle level'' : All the subsystems within an entire vehicle are coordinated to generate tactical behaviors.
+* At the ''Section level'' : Multiple vehicles are coordinated to generate joint tactical behaviors.
+* At the ''Platoon level'' : Multiple sections containing a total of 10 or more vehicles of different types are coordinated to generate platoon tactics.
+* At the ''Company level'' : Multiple platoons containing a total of 40 or more vehicles of different types are coordinated to generate company tactics.
+* At the ''Battalion level'' : Multiple companies containing a total of 160 or more vehicles of different types are coordinated to generate battalion tactics.
+At all levels, task commands are decomposed into jobs for lower level units and coordinated schedules for subordinates are generated. At all levels, communication between peers enables coordinated actions. At all levels, feedback from lower levels is used to cycle subtasks and to compensate for deviations from the planned situations.<ref name="Albus02"/>
+
+===4D/RCS control loop===
+[[File:4D-RCS control loop basic internal structure.jpg|thumb|360px|4D-RCS control loop basic internal structure.]]
+At the heart of the control loop through each node is the world model, which provides the node with an internal model of the external world. The world model provides a site for data fusion, acts as a buffer between perception and behavior, and supports both sensory processing and behavior generation.<ref name="Albus06"/>
+A high level diagram of the internal structure of the world model and value judgment system is shown in the figure. Within the knowledge database, iconic information (images and maps) is linked to each other and to symbolic information (entities and events). Situations and relationships between entities, events, images, and maps are represented by pointers. Pointers that link symbolic data structures to each other form syntactic, semantic, causal, and situational networks. Pointers that link symbolic data structures to regions in images and maps provide symbol grounding and enable the world model to project its understanding of reality onto the physical world.<ref name="Albus06"/>
+
+Sensory processing performs the functions of windowing, grouping, computation, estimation, and classification on input from sensors. World modeling maintains knowledge in the form of images, maps, entities, and events with states, attributes, and values. Relationships between images, maps, entities, and events are defined by pointers. These relationships include class membership, ontologies, situations, and inheritance. Value judgment provides criteria for decision making. Behavior generation is responsible for planning and execution of behaviors.<ref name="Albus02"/>
+
+===Computational nodes===
+[[File:RCS NODE Internal structure.jpg|thumb|360px|RCS NODE Internal structure.]]
+The 4D/RCS nodes have internal structure such as shown in the figure. Within each node there typically are four functional elements or processes:<ref name="Albus02"/> 
+# behavior generation,
+# world modeling,
+# sensory processing, and
+# value judgment.
+There is also a [[knowledge base|knowledge database]] that represents the node’s best estimate of the state of the world at the
+range and resolution that are appropriate for the behavioral decisions that are the responsibility of that node.
+
+These are supported by a knowledge database, and a communication system that interconnects the functional processes and the knowledge database. Each functional element in the node may have an operator interface. The connections to the Operator Interface enable a human operator to input commands, to override or modify system behavior, to perform various types of [[teleoperation]], to switch control modes (e.g., automatic, teleoperation, single step, pause), and to observe the values of state variables, images, maps, and entity attributes. The Operator Interface can also be used for programming, debugging, and maintenance.<ref name="Albus02"/>
+
+===Five levels of the architecture===
+[[File:4D-RCS Five levels of the architecture for Demo III..jpg|thumb|360px|Five levels of the 4D/RCS architecture for Demo III.]] 
+The figure is a computational hierarchy view of the first five levels in the chain of command containing the Autonomous Mobility Subsystem in the 4D/RCS architecture developed for Demo III. On the right of figure, Behavior Generation (consisting of Planner and Executor) decompose high level mission commands into low level actions. The text inside the Planner at each level indicates the planning horizon at that level.<ref name="Albus02"/>
+
+In the center of the figure, each map has a range and resolution that is appropriate for path planning at its level. At each level, there are symbolic data structures and segmented images with labeled regions that describe entities, events, and situations that are relevant to decisions that must be made at that level. On the left is a sensory processing hierarchy that extracts information from the sensory data stream that is needed to keep the world model knowledge database current and accurate.<ref name="Albus02"/>
+
+The bottom (Servo) level has no map representation. The Servo level deals with actuator dynamics and reacts to sensory feedback from actuator sensors. The Primitive level map has range of 5 m with resolution of 4&nbsp;cm. This enables the vehicle to make small path corrections to avoid bumps and ruts during the 500 ms planning horizon of the Primitive level. The Primitive level also uses accelerometer data to control vehicle dynamics and prevent rollover during high speed driving.<ref name="Albus02"/>
+
+At all levels, 4D/RCS planners are designed to generate new plans well before current plans become obsolete. Thus, action always takes place in the context of a recent plan, and feedback through the executors closes reactive control loops using recently selected control parameters. To meet the demands of dynamic battlefield environments, the 4D/RCS architecture specifies that replanning should occur within about one-tenth of the planning horizon at each level.<ref name="Albus02"/>
+
+===Inter-Node Interactions within a Hierarchy===
+Sensory processing and behavior generation are both hierarchical processes, and both are embedded in the nodes that form the 4D/RCS organizational hierarchy. However, the SP and BG hierarchies are quite different in nature and are not directly coupled. Behavior generation is a hierarchy based on the decomposition of tasks and the assignment of tasks to operational units. Sensory processing is a hierarchy based on the grouping of signals and pixels into entities and events. In 4D/RCS, the hierarchies of sensory processing and behavior generation are separated by a hierarchy of world modeling processes. The WM hierarchy provides a buffer between the SP and BG hierarchies with interfaces to both.<ref name="Albus02"/>
+
+==Criticisms==
+There have been major criticisms of this architectural form, according to Balakirsky (2003) due to the fact that "the planning is performed on a model of the world rather than on the actual world, and the complexity of the computing large plans... Since the world is not static, and may change during this time delay that occurs between sensing, plan conception, and final execution, the validation of the computed plans have been called into question".<ref name="SBB03"/>
+
+==References==
+{{NIST-PD}}
+{{reflist}}
+
+==Further reading==
+* Albus, J.S (1988). ''System Description and Design Architecture for Multiple Autonomous Undersea Vehicles''. NISTTN 1251, National Institute of Standards and Technology, Gaithersburg, MD, September 1988
+* [[James S. Albus]] (2002). "[https://web.archive.org/web/20040725051856/http://www.isd.mel.nist.gov/documents/albus/4DRCS.pdf 4D/RCS A Reference Model Architecture for Intelligent Unmanned Ground Vehicles]". In: ''Proceedings of the SPIE 16th Annual International Symposium on Aerospace/Defense Sensing, Simulation and Controls, Orlando, FL, April 1–5, 2002''.
+* James Albus et al. (2002). [https://web.archive.org/web/20100527162324/http://www.isd.mel.nist.gov/documents/albus/4DRCS_ver2.pdf ''4D/RCS: A Reference Model Architecture For Unmanned Vehicle Systems Version 2.2.''] NIST August 2002
+
+==External links==
+{{commons category|4D-RCS Reference Model Architecture}}
+* [https://web.archive.org/web/20091010082639/http://www.isd.mel.nist.gov/projects/rcs/ RCS The Real-time Control Systems Architecture] NIST Homepage
+
+{{DEFAULTSORT:4d-Rcs Reference Model Architecture}}
+[[Category:Control theory]]
+[[Category:Industrial computing]]
+[[Category:Unmanned vehicles]]

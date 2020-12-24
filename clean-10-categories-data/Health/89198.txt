@@ -1,0 +1,325 @@
+{{Use dmy dates|date=April 2020}}
+{{enzyme
+| Name = Alcohol dehydrogenase
+| EC_number = 1.1.1.1
+| IUBMB_EC_number = 1/1/1/1
+| CAS_number= 9031-72-5
+| GO_code = 0004022
+| image = Protein ADH5 PDB 1m6h.png
+| width =
+| caption = [[Protein crystallography|Crystallographic]] structure of the<br />homodimer of human [[ADH5]].<ref name="pmid12196016">{{PDB|1m6h}}; {{cite journal | vauthors = Sanghani PC, Robinson H, Bosron WF, Hurley TD | title = Human glutathione-dependent formaldehyde dehydrogenase. Structures of apo, binary, and inhibitory ternary complexes | journal = Biochemistry | volume = 41 | issue = 35 | pages = 10778–86 | date = September 2002 | pmid = 12196016 | doi = 10.1021/bi0257639 }}</ref>
+}}
+
+'''Alcohol dehydrogenases''' ('''ADH''') ({{EC number|1.1.1.1}}) are a group of [[dehydrogenase]] [[enzyme]]s that occur in many organisms and facilitate the interconversion between [[alcohol]]s and [[aldehyde]]s or [[ketone]]s with the reduction of [[nicotinamide adenine dinucleotide]] (NAD<sup>+</sup>) to NADH. In [[human]]s and many other [[animal]]s, they serve to break down alcohols that otherwise are toxic, and they also participate in generation of useful aldehyde, ketone, or alcohol groups during biosynthesis of various [[metabolites]]. In [[yeast]], plants, and many [[bacteria]], some alcohol dehydrogenases [[catalysis|catalyze]] the opposite reaction as part of [[fermentation]] to ensure a constant supply of NAD<sup>+</sup>.
+
+== Evolution ==
+Genetic evidence from comparisons of multiple organisms showed that a [[glutathione]]-dependent [[formaldehyde dehydrogenase]], identical to a [[ADH5|class III alcohol dehydrogenase]] (ADH-3/ADH5), is presumed to be the ancestral enzyme for the entire ADH family.<ref name="pmid1731906">{{cite journal | vauthors = Gutheil WG, Holmquist B, Vallee BL | title = Purification, characterization, and partial sequence of the glutathione-dependent formaldehyde dehydrogenase from Escherichia coli: a class III alcohol dehydrogenase | journal = Biochemistry | volume = 31 | issue = 2 | pages = 475–81 | date = January 1992 | pmid = 1731906 | doi = 10.1021/bi00117a025 }}</ref><ref name="pmid1409630">{{cite journal | vauthors = Danielsson O, Jörnvall H | title = "Enzymogenesis": classical liver alcohol dehydrogenase origin from the glutathione-dependent formaldehyde dehydrogenase line | journal = Proceedings of the National Academy of Sciences of the United States of America | volume = 89 | issue = 19 | pages = 9247–51 | date = October 1992 | pmid = 1409630 | pmc = 50103 | doi = 10.1073/pnas.89.19.9247 | bibcode = 1992PNAS...89.9247D }}</ref><ref name="pmid19011751">{{cite journal | vauthors = Persson B, Hedlund J, Jörnvall H | title = Medium- and short-chain dehydrogenase/reductase gene and protein families : the MDR superfamily | journal = Cellular and Molecular Life Sciences | volume = 65 | issue = 24 | pages = 3879–94 | date = December 2008 | pmid = 19011751 | pmc = 2792335 | doi = 10.1007/s00018-008-8587-z }}</ref> Early on in evolution, an effective method for eliminating both endogenous and exogenous formaldehyde was important and this capacity has conserved the ancestral ADH-3 through time. [[Gene duplication]] of ADH-3, followed by series of mutations, led to the evolution of other ADHs.<ref name="pmid1409630"/><ref name="pmid19011751"/>
+
+The ability to produce [[ethanol]] from sugar (which is the basis of how alcoholic beverages are made) is believed to have initially evolved in [[yeast]]. Though this feature is not adaptive from an energy point of view, by making alcohol in such high concentrations so that they would be toxic to other organisms, yeast cells could effectively eliminate their competition. Since rotting fruit can contain more than 4% of ethanol, animals eating the fruit needed a system to metabolize exogenous ethanol. This was thought to explain the conservation of ethanol active ADH in species other than yeast, though ADH-3 is now known to also have a major role in [[Signal transduction#Nitric oxide|nitric oxide signaling]].<ref name="pmid19011746">{{cite journal | vauthors = Staab CA, Hellgren M, Höög JO | title = Medium- and short-chain dehydrogenase/reductase gene and protein families : Dual functions of alcohol dehydrogenase 3: implications with focus on formaldehyde dehydrogenase and S-nitrosoglutathione reductase activities | journal = Cellular and Molecular Life Sciences | volume = 65 | issue = 24 | pages = 3950–60 | date = December 2008 | pmid = 19011746 | doi = 10.1007/s00018-008-8592-2 | s2cid = 8574022 }}</ref><ref name="pmid16763671">{{cite journal | vauthors = Godoy L, Gonzàlez-Duarte R, Albalat R | title = S-Nitrosogluthathione reductase activity of amphioxus ADH3: insights into the nitric oxide metabolism | journal = International Journal of Biological Sciences | volume = 2 | issue = 3 | pages = 117–24 | year = 2006 | pmid = 16763671 | pmc = 1458435 | doi = 10.7150/ijbs.2.117 }}</ref>
+
+In humans, sequencing of the [[ADH1B]] gene (responsible for production of an alcohol dehydrogenase [[polypeptide]]) shows several functional variants. In one, there is a [[single nucleotide polymorphism|SNP]] (single nucleotide polymorphism) that leads to either a Histidine or an Arginine residue at position 47 in the mature polypeptide. In the Histidine variant, the enzyme is much more effective at the aforementioned conversion.<ref name="whitfield">{{cite journal|vauthors=Whitfield, John B |title=ADH and ALDH genotypes in relation to alcohol metabolic rate and sensitivity |journal=Alcohol and Alcoholism |volume=2 |pages=59–65 |url=http://152.98.160.29/contents/p/staff/JW058.pdf |pmid=8974317 |year=1994 }}{{dead link|date=June 2017 |bot=InternetArchiveBot |fix-attempted=yes }}</ref> The enzyme responsible for the conversion of acetaldehyde to acetate, however, remains unaffected, which leads to differential rates of substrate catalysis and causes a buildup of toxic acetaldehyde, causing cell damage.<ref name = whitfield /> This provides some protection against excessive alcohol consumption and alcohol dependence (alcoholism).<ref name=":0">{{cite journal | vauthors = Thomasson HR, Edenberg HJ, Crabb DW, Mai XL, Jerome RE, Li TK, Wang SP, Lin YT, Lu RB, Yin SJ | title = Alcohol and aldehyde dehydrogenase genotypes and alcoholism in Chinese men | journal = American Journal of Human Genetics | volume = 48 | issue = 4 | pages = 677–81 | date = April 1991 | pmid = 2014795 | pmc = 1682953 }}</ref><ref name=":1">{{cite journal | vauthors = Edenberg HJ, McClintick JN | title = Alcohol dehydrogenases, aldehyde dehydrogenases and alcohol use disorders: a critical review | journal = Alcoholism, Clinical and Experimental Research | volume = 42 | issue = 12 | pages = 2281–2297 | date = October 2018 | pmid = 30320893 | pmc = 6286250 | doi = 10.1111/acer.13904 }}</ref><ref name=":2">{{cite journal | vauthors = Hurley TD, Edenberg HJ | title = Genes encoding enzymes involved in ethanol metabolism | journal = Alcohol Research | volume = 34 | issue = 3 | pages = 339–44 | date = 2012 | pmid = 23134050 | pmc = 3756590 }}</ref><ref name=":3">{{cite journal | vauthors = Walters RK, Polimanti R, Johnson EC, McClintick JN, Adams MJ, Adkins AE, etal | title = Transancestral GWAS of alcohol dependence reveals common genetic underpinnings with psychiatric disorders | journal = Nature Neuroscience | volume = 21 | issue = 12 | pages = 1656–1669 | date = December 2018 | pmid = 30482948 | pmc = 6430207 | doi = 10.1038/s41593-018-0275-1 }}</ref> Various haplotypes arising from this mutation are more concentrated in regions near Eastern China, a region also known for its low alcohol tolerance and dependence.
+
+A study was conducted in order to find a correlation between allelic distribution and alcoholism, and the results suggest that the allelic distribution arose along with rice cultivation in the region between 12,000 and 6,000 years ago.<ref name = rice >{{cite journal | vauthors = Peng Y, Shi H, Qi XB, Xiao CJ, Zhong H, Ma RL, Su B | title = The ADH1B Arg47His polymorphism in east Asian populations and expansion of rice domestication in history | journal = BMC Evolutionary Biology | volume = 10 | pages = 15 | date = January 2010 | pmid = 20089146 | pmc = 2823730 | doi = 10.1186/1471-2148-10-15 }}</ref> In regions where rice was cultivated, rice was also fermented into ethanol.<ref name = rice /> This led to speculation that increased alcohol availability led to alcoholism and abuse, resulting in lower reproductive fitness.<ref name = rice /> Those with the variant allele have little tolerance for alcohol, thus lowering chance of dependence and abuse.<ref name = whitfield /><ref name = rice /> The hypothesis posits that those individuals with the Histidine variant enzyme were sensitive enough to the effects of alcohol that differential reproductive success arose and the corresponding alleles were passed through the generations. Classical [[Darwinian evolution]] would act to select against the detrimental form of the enzyme (Arg variant) because of the lowered reproductive success of individuals carrying the allele. The result would be a higher frequency of the allele responsible for the His-variant enzyme in regions that had been under selective pressure the longest. The distribution and frequency of the His variant follows the spread of rice cultivation to inland regions of Asia, with higher frequencies of the His variant in regions that have cultivated rice the longest.<ref name="whitfield" /> The geographic distribution of the alleles seems to therefore be a result of natural selection against individuals with lower reproductive success, namely, those who carried the Arg variant allele and were more susceptible to alcoholism.<ref>{{cite journal|last1=Eng|first1=Mimi Y | name-list-style = vanc |title=Alcohol Research and Health|journal=Alcohol Health & Research World |date=2007-01-01|publisher=U.S. Government Printing Office|issn=1535-7414}}</ref> However, the persistence of the Arg variant in other populations argues that the effect could not be strong.
+
+== Discovery ==
+[[Image:ladh.jpg|thumb|right| Horse LADH (Liver Alcohol Dehydrogenase)]]
+The first-ever isolated alcohol dehydrogenase (ADH) was purified in 1937 from ''[[Saccharomyces cerevisiae]]'' (brewer's yeast).<ref>{{cite journal |title=Diphosphopyridinproteid ackohol, acetaldehyd|vauthors = Negelein E, Wulff HJ | journal = Biochem. Z. | year = 1937 | volume = 293 | page = 351 }}</ref> Many aspects of the [[catalytic]] mechanism for the horse liver ADH enzyme were investigated by Hugo Theorell and coworkers.<ref name="pmid13920552">{{cite journal | vauthors = Theorell H, McKEE JS | title = Mechanism of action of liver alcohol dehydrogenase | journal = Nature | volume = 192 | issue = 4797 | pages = 47–50 | date = October 1961 | pmid = 13920552 | doi = 10.1038/192047a0 | bibcode = 1961Natur.192...47T | s2cid = 19199733 }}</ref> ADH was also one of the first oligomeric enzymes that had its amino acid sequence and three-dimensional structure determined.<ref name="pmid5462776">{{cite journal | vauthors = Jörnvall H, Harris JI | title = Horse liver alcohol dehydrogenase. On the primary structure of the ethanol-active isoenzyme | journal = European Journal of Biochemistry | volume = 13 | issue = 3 | pages = 565–76 | date = April 1970 | pmid = 5462776 | doi = 10.1111/j.1432-1033.1970.tb00962.x }}</ref><ref name="pmid4365379">{{cite journal | vauthors = Brändén CI, Eklund H, Nordström B, Boiwe T, Söderlund G, Zeppezauer E, Ohlsson I, Akeson A | title = Structure of liver alcohol dehydrogenase at 2.9-angstrom resolution | journal = Proceedings of the National Academy of Sciences of the United States of America | volume = 70 | issue = 8 | pages = 2439–42 | date = August 1973 | pmid = 4365379 | pmc = 433752 | doi = 10.1073/pnas.70.8.2439 | bibcode = 1973PNAS...70.2439B }}</ref><ref name="isbn978-91-7409-567-8">{{cite book | vauthors = Hellgren M | title = Enzymatic studies of alcohol dehydrogenase by a combination of in vitro and in silico methods, PhD thesis | publisher = Karolinska Institutet | location = Stockholm, Sweden | year = 2009 | page = 70 | isbn = 978-91-7409-567-8 | url = http://diss.kib.ki.se/2009/978-91-7409-567-8/thesis.pdf }}</ref>
+
+In early 1960, it was discovered in fruit flies of the genus ''[[Drosophila]]''.<ref name="Sofer">{{cite journal | vauthors = Sofer W, Martin PF | title = Analysis of alcohol dehydrogenase gene expression in Drosophila | journal = Annual Review of Genetics | volume = 21 | pages = 203–25 | year = 1987 | pmid = 3327463 | doi = 10.1146/annurev.ge.21.120187.001223 }}</ref>
+
+== Properties ==
+The alcohol dehydrogenases comprise a group of several [[isozyme]]s that catalyse the oxidation of primary and secondary alcohols to aldehydes and ketones, respectively, and also can catalyse the reverse reaction.<ref name="Sofer" /> In mammals this is a [[redox]] (reduction/oxidation) reaction involving the [[coenzyme]] [[nicotinamide adenine dinucleotide]] (NAD<sup>+</sup>).
+
+== Oxidation of alcohol ==
+
+=== Mechanism of action in humans ===
+
+==== Steps ====
+# Binding of the coenzyme NAD<sup>+</sup>
+# Binding of the alcohol substrate by coordination to zinc
+# Deprotonation of His-51
+# Deprotonation of nicotinamide ribose
+# Deprotonation of Thr-48
+# Deprotonation of the alcohol
+# Hydride transfer from the [[alkoxide]] ion to NAD<sup>+</sup>, leading to NADH and a zinc bound aldehyde or ketone
+# Release of the product aldehyde.
+
+The mechanism in yeast and bacteria is the reverse of this reaction. These steps are supported through kinetic studies.<ref name="Hammes">{{cite journal | vauthors = Hammes-Schiffer S, Benkovic SJ | title = Relating protein motion to catalysis | journal = Annual Review of Biochemistry | volume = 75 | pages = 519–41 | year = 2006 | pmid = 16756501 | doi = 10.1146/annurev.biochem.75.103004.142800 }}</ref>
+
+==== Involved subunits ====
+The substrate is coordinated to the zinc and this enzyme has two zinc atoms per subunit. One is the active site, which is involved in catalysis. In the active site, the ligands are Cys-46, Cys-174, His-67, and one water molecule. The other subunit is involved with structure. In this mechanism, the hydride from the alcohol goes to NAD<sup>+</sup>. Crystal structures indicate that the His-51 deprotonates the nicotinamide ribose, which deprotonates Ser-48. Finally, Ser-48 deprotonates the alcohol, making it an aldehyde.<ref name="Hammes" /> From a mechanistic perspective, if the enzyme adds hydride to the [[re face]] of NAD<sup>+</sup>, the resulting hydrogen is incorporated into the pro-R position. Enzymes that add hydride to the re face are deemed Class A dehydrogenases.
+
+== Active site ==
+[[Image:active site3.jpg|thumb|The active site of alcohol dehydrogenase]]
+The active site of human ADH1 (PDB:1HSO) consists of a zinc atom, His-67, Cys-174, Cys-46, Thr-48, His-51, Ile-269, Val-292, Ala-317, and Phe-319. In the commonly studied horse liver isoform, Thr-48 is a Ser, and Leu-319 is a Phe. The zinc coordinates the substrate (alcohol). The zinc is coordinated by Cys-46, Cys-174, and His-67. Leu-319, Ala-317, His-51, Ile-269 and Val-292 stabilize NAD<sup>+</sup> by forming [[hydrogen bonds]]. His-51 and Ile-269 form hydrogen bonds with the alcohols on nicotinamide ribose. Phe-319, Ala-317 and Val-292 form hydrogen bonds with the amide on NAD<sup>+</sup>.<ref name="Hammes" />
+
+== Structural zinc site ==
+[[Image:Zinc interaction Cysteine.jpg|thumb|The structural zinc binding motif in alcohol dehydrogenase from an MD simulation]]
+Mammalian alcohol dehydrogenases also have a structural zinc site. This Zn ion plays a structural role and is crucial for protein stability. The structures of the catalytic and structural zinc sites in horse liver alcohol dehydrogenase (HLADH) as revealed in crystallographic structures, which has been studied computationally with quantum chemical as well as with classical molecular dynamics methods. The structural zinc site is composed of four closely spaced cysteine ligands (Cys97, Cys100, Cys103, and Cys111 in the amino acid sequence) positioned in an almost symmetric tetrahedron around the Zn ion. A recent study showed that the interaction between zinc and cysteine is governed by primarily an electrostatic contribution with an additional covalent contribution to the binding.<ref name="pmid19177216">{{cite journal | vauthors = Brandt EG, Hellgren M, Brinck T, Bergman T, Edholm O | title = Molecular dynamics study of zinc binding to cysteines in a peptide mimic of the alcohol dehydrogenase structural zinc site | journal = Physical Chemistry Chemical Physics | volume = 11 | issue = 6 | pages = 975–83 | date = February 2009 | pmid = 19177216 | doi = 10.1039/b815482a | url = https://zenodo.org/record/996012 | bibcode = 2009PCCP...11..975B }}</ref>
+
+== Types ==
+
+=== Human ===
+In humans, ADH exists in multiple forms as a dimer and is encoded by at least seven different genes. There are five classes (I-V) of alcohol dehydrogenase, but the [[hepatic]] forms that are used primarily in humans are class 1. Class 1 consists of α, β, and γ subunits that are encoded by the genes [[ADH1A]], [[ADH1B]], and [[ADH1C]].<ref name="pmid14718645">{{cite journal | vauthors = Sultatos LG, Pastino GM, Rosenfeld CA, Flynn EJ | title = Incorporation of the genetic control of alcohol dehydrogenase into a physiologically based pharmacokinetic model for ethanol in humans | journal = Toxicological Sciences | volume = 78 | issue = 1 | pages = 20–31 | date = March 2004 | pmid = 14718645 | doi = 10.1093/toxsci/kfh057 | doi-access = free }}</ref><ref>{{cite journal | vauthors = Edenberg HJ, McClintick JN | title = Alcohol Dehydrogenases, Aldehyde Dehydrogenases, and Alcohol Use Disorders: A Critical Review | journal = Alcoholism, Clinical and Experimental Research | volume = 42 | issue = 12 | pages = 2281–2297 | date = December 2018 | pmid = 30320893 | doi = 10.1111/acer.13904 | pmc = 6286250 }}</ref> The enzyme is present at high levels in the [[liver]] and the lining of the [[stomach]].<ref name="Farrés">{{cite journal | vauthors = Farrés J, Moreno A, Crosas B, Peralba JM, Allali-Hassani A, Hjelmqvist L, Jörnvall H, Parés X | display-authors = 6 | title = Alcohol dehydrogenase of class IV (sigma sigma-ADH) from human stomach. cDNA sequence and structure/function relationships | journal = European Journal of Biochemistry | volume = 224 | issue = 2 | pages = 549–57 | date = September 1994 | pmid = 7925371 | doi = 10.1111/j.1432-1033.1994.00549.x }}</ref> It catalyzes the [[oxidation]] of [[ethanol]] to [[acetaldehyde]] (ethanal):
+
+:CH<sub>3</sub>CH<sub>2</sub>OH + NAD<sup>+</sup> → CH<sub>3</sub>CHO + [[NADH]] + H<sup>+</sup>
+
+This allows the consumption of [[alcoholic beverage]]s, but its evolutionary purpose is probably the breakdown of alcohols naturally contained in foods or produced by [[bacteria]] in the [[digestive tract]].<ref name="urlwww.medicinenet.com">{{cite web | url = http://www.medicinenet.com/alcohol_and_nutrition/article.htm | title = Alcohol and Nutrition | vauthors = Kovacs B, Stöppler MC | publisher = MedicineNet, Inc. | access-date = 2011-06-07 | archive-url = https://web.archive.org/web/20110623122224/http://www.medicinenet.com/alcohol_and_nutrition/article.htm | archive-date = 23 June 2011 | url-status = dead }}</ref>
+
+Another evolutionary purpose may be metabolism of the endogenous alcohol [[vitamin A]] ([[retinol]]), which generates the hormone [[retinoic acid]], although the function here may be primarily the elimination of toxic levels of retinol.<ref name="Duester">{{cite journal | vauthors = Duester G | title = Retinoic acid synthesis and signaling during early organogenesis | journal = Cell | volume = 134 | issue = 6 | pages = 921–31 | date = September 2008 | pmid = 18805086 | pmc = 2632951 | doi = 10.1016/j.cell.2008.09.002 }}</ref><ref>{{cite journal | vauthors = Hellgren M, Strömberg P, Gallego O, Martras S, Farrés J, Persson B, Parés X, Höög JO | title = Alcohol dehydrogenase 2 is a major hepatic enzyme for human retinol metabolism | journal = Cellular and Molecular Life Sciences | volume = 64 | issue = 4 | pages = 498–505 | date = February 2007 | pmid = 17279314 | doi = 10.1007/s00018-007-6449-8 | s2cid = 21612648 }}</ref>
+
+{|
+|-
+|{{infobox protein
+| Name = [[ADH1A|alcohol dehydrogenase 1A,<br />α polypeptide]]
+| caption =
+| image =
+| width =
+| HGNCid = 249
+| Symbol = [[ADH1A]]
+| AltSymbols = ADH1
+| EntrezGene = 124
+| OMIM = 103700
+| RefSeq = NM_000667
+| UniProt = P07327
+| PDB =
+| ECnumber = 1.1.1.1
+| CAS_number=
+| Chromosome = 4
+| Arm = q
+| Band = 23
+| LocusSupplementaryData =
+}}
+|{{infobox protein
+| Name = [[ADH1B|alcohol dehydrogenase 1B,<br />β polypeptide]]
+| caption =
+| image =
+| width =
+| HGNCid = 250
+| Symbol = [[ADH1B]]
+| AltSymbols = ADH2
+| EntrezGene = 125
+| OMIM = 103720
+| RefSeq = NM_000668
+| UniProt = P00325
+| PDB =
+| ECnumber = 1.1.1.1
+| Chromosome = 4
+| Arm = q
+| Band = 23
+| LocusSupplementaryData =
+}}
+|{{infobox protein
+| Name = [[ADH1C|alcohol dehydrogenase 1C,<br />γ polypeptide]]
+| caption =
+| image =
+| width =
+| HGNCid = 251
+| Symbol = [[ADH1C]]
+| AltSymbols = ADH3
+| EntrezGene = 126
+| OMIM = 103730
+| RefSeq = NM_000669
+| UniProt = P00326
+| PDB =
+| ECnumber = 1.1.1.1
+| Chromosome = 4
+| Arm = q
+| Band = 23
+| LocusSupplementaryData =
+}}
+|}
+
+Alcohol dehydrogenase is also involved in the toxicity of other types of alcohol: For instance, it oxidizes [[methanol]] to produce [[formaldehyde]] and ultimately [[formic acid]].<ref>{{Citation|last1=Ashurst|first1=John V.|title=Methanol Toxicity|date=2020|url=http://www.ncbi.nlm.nih.gov/books/NBK482121/|work=StatPearls|place=Treasure Island (FL)|publisher=StatPearls Publishing|pmid=29489213|access-date=2020-11-06|last2=Nappe|first2=Thomas M.}}</ref> Humans have at least six slightly different alcohol dehydrogenases. Each is a [[protein dimer|dimer]] (i.e., consists of two [[polypeptide]]s), with each dimer containing two [[zinc]] [[ion]]s Zn<sup>2+</sup>. One of those ions is crucial for the operation of the enzyme: It is located at the catalytic site and holds the [[hydroxyl]] group of the alcohol in place.
+
+Alcohol dehydrogenase activity varies between men and women, between young and old, and among populations from different areas of the world. For example, young women are unable to process alcohol at the same rate as young men because they do not express the alcohol dehydrogenase as highly, although the inverse is true among the middle-aged.<ref name="pmid12107043">{{cite journal | vauthors = Parlesak A, Billinger MH, Bode C, Bode JC | title = Gastric alcohol dehydrogenase activity in man: influence of gender, age, alcohol consumption and smoking in a caucasian population | journal = Alcohol and Alcoholism | volume = 37 | issue = 4 | pages = 388–93 | year = 2002 | pmid = 12107043 | doi = 10.1093/alcalc/37.4.388 | doi-access = free }}</ref> The level of activity may not be dependent only on level of expression but also on [[allele|allelic]] diversity among the population.
+
+The human genes that encode class II, III, IV, and V alcohol dehydrogenases are [[ADH4]], [[ADH5]], [[ADH7]], and [[ADH6]], respectively.
+<div style="overflow:auto;">
+{|
+|-
+|{{infobox protein
+| Name = [[ADH4|alcohol dehydrogenase 4<br />(class II), π polypeptide]]
+| caption =
+| image =
+| width =
+| HGNCid = 252
+| Symbol = [[ADH4]]
+| AltSymbols =
+| EntrezGene = 127
+| OMIM = 103740
+| RefSeq = NM_000670
+| UniProt = P08319
+| PDB =
+| ECnumber = 1.1.1.1
+| Chromosome = 4
+| Arm = q
+| Band = 22
+| LocusSupplementaryData =
+}}
+|{{infobox protein
+| Name = [[ADH5|alcohol dehydrogenase 5<br />(class III), χ polypeptide]]
+| caption =
+| image =
+| width =
+| HGNCid = 253
+| Symbol = [[ADH5]]
+| AltSymbols =
+| EntrezGene = 128
+| OMIM = 103710
+| RefSeq = NM_000671
+| UniProt = P11766
+| PDB =
+| ECnumber = 1.1.1.1
+| Chromosome = 4
+| Arm = q
+| Band = 23
+| LocusSupplementaryData =
+}}
+|{{infobox protein
+| Name = [[ADH6|alcohol dehydrogenase 6<br />(class V)]]
+| caption =
+| image =
+| width =
+| HGNCid = 255
+| Symbol = [[ADH6]]
+| AltSymbols =
+| EntrezGene = 130
+| OMIM = 103735
+| RefSeq = NM_000672
+| UniProt = P28332
+| PDB =
+| ECnumber = 1.1.1.1
+| Chromosome = 4
+| Arm = q
+| Band = 23
+| LocusSupplementaryData =
+}}
+|{{infobox protein
+| Name = [[ADH7|alcohol dehydrogenase 7<br />(class IV), μ or σ polypeptide]]
+| caption =
+| image =
+| width =
+| HGNCid = 256
+| Symbol = [[ADH7]]
+| AltSymbols =
+| EntrezGene = 131
+| OMIM = 600086
+| RefSeq = NM_000673
+| UniProt = P40394
+| PDB =
+| ECnumber = 1.1.1.1
+| Chromosome = 4
+| Arm = q
+| Band = 23
+| LocusSupplementaryData = -q24 }}
+|}</div>
+
+=== Yeast and bacteria ===
+Unlike humans, yeast and bacteria (except [[lactic acid bacteria]], and ''[[Escherichia coli|E. coli]]'' in certain conditions) do not ferment glucose to lactate. Instead, they ferment it to ethanol and {{co2}}. The overall reaction can be seen below:
+
+: Glucose + 2 ADP + 2 Pi → 2 ethanol + 2 CO<sub>2</sub> + 2 ATP + 2 H<sub>2</sub>O<ref name="isbn0-7167-4339-6">{{cite book | last1 = Cox | first1 = Michael | last2 = Nelson | first2 = David R. | last3 = Lehninger | first3 = Albert L | name-list-style = vanc | title = Lehninger Principles of Biochemistry | publisher = W. H. Freeman | location = San Francisco | year = 2005 | page = [https://archive.org/details/lehningerprincip00lehn_0/page/180 180] | isbn = 978-0-7167-4339-2 | url = https://archive.org/details/lehningerprincip00lehn_0/page/180 | url-access = registration }}</ref>
+
+[[Image:AlcoholDehydrogenase-1A4U.png|thumb|left | Alcohol Dehydrogenase]]
+In [[yeast]]<ref>{{cite journal | vauthors = Leskovac V, Trivić S, Pericin D | title = The three zinc-containing alcohol dehydrogenases from baker's yeast, Saccharomyces cerevisiae | journal = FEMS Yeast Research | volume = 2 | issue = 4 | pages = 481–94 | date = December 2002 | pmid = 12702265 | doi = 10.1111/j.1567-1364.2002.tb00116.x | doi-access = free }}</ref> and many [[bacteria]], alcohol dehydrogenase plays an important part in fermentation: [[Pyruvate]] resulting from [[glycolysis]] is converted to acetaldehyde and [[carbon dioxide]], and the acetaldehyde is then reduced to ethanol by an alcohol dehydrogenase called ADH1. The purpose of this latter step is the regeneration of NAD<sup>+</sup>, so that the energy-generating glycolysis can continue. Humans exploit this process to produce alcoholic beverages, by letting yeast ferment various fruits or grains. Yeast can produce and consume their own alcohol.
+
+The main alcohol dehydrogenase in yeast is larger than the human one, consisting of four rather than just two subunits. It also contains zinc at its catalytic site. Together with the zinc-containing alcohol dehydrogenases of animals and humans, these enzymes from yeasts and many bacteria form the family of "long-chain"-alcohol dehydrogenases.
+
+[[Brewer's yeast]] also has another alcohol dehydrogenase, [[ADH2]], which evolved out of a duplicate version of the chromosome containing the [https://www.yeastgenome.org/locus/adh1 ADH1] gene. [https://www.yeastgenome.org/locus/adh2 ADH2] is used by the yeast to convert ethanol back into acetaldehyde, and it is expressed only when sugar concentration is low. Having these two enzymes allows yeast to produce alcohol when sugar is plentiful (and this alcohol then kills off competing microbes), and then continue with the oxidation of the alcohol once the sugar, and competition, is gone.<ref name="urlFestive special: The brewers tale - life - 23 December 2006 - New Scientist">{{cite magazine | url = https://www.newscientist.com/channel/life/mg19225831.100-festive-special-the-brewers-tale.html | title = Festive special: The brewer's tale - life | vauthors = Coghlan A | date = 23 December 2006 | magazine = New Scientist | access-date = 2009-04-27| archive-url= https://web.archive.org/web/20080915051831/http://www.newscientist.com/channel/life/mg19225831.100-festive-special-the-brewers-tale.html| archive-date=15 September 2008| url-status= live}}</ref>
+
+===Plants===
+In plants, ADH catalyses the same reaction as in yeast and bacteria to ensure that there is a constant supply of NAD<sup>+</sup>. [[Maize]] has two versions of ADH - ADH1 and ADH2, ''[[Arabidopsis thaliana]]'' contains only one ADH gene. The structure of ''Arabidopsis'' ADH is 47%-conserved, relative to ADH from horse liver.  Structurally and functionally important residues, such as the seven residues that provide ligands for the catalytic and noncatalytic zinc atoms, however, are conserved, suggesting that the enzymes have a similar structure.<ref>{{cite journal | vauthors = Chang C, Meyerowitz EM | title = Molecular cloning and DNA sequence of the Arabidopsis thaliana alcohol dehydrogenase gene | journal = Proceedings of the National Academy of Sciences of the United States of America | volume = 83 | issue = 5 | pages = 1408–12 | date = March 1986 | pmid = 2937058 | pmc = 323085 | doi = 10.1073/pnas.83.5.1408 | bibcode = 1986PNAS...83.1408C }}</ref> ADH is constitutively expressed at low levels in the roots of young plants grown on agar.  If the roots lack oxygen, the expression of ''ADH'' increases significantly.<ref>{{cite journal | vauthors = Chung HJ, Ferl RJ | title = Arabidopsis alcohol dehydrogenase expression in both shoots and roots is conditioned by root growth environment | journal = Plant Physiology | volume = 121 | issue = 2 | pages = 429–36 | date = October 1999 | pmid = 10517834 | pmc = 59405 | doi = 10.1104/pp.121.2.429 }}</ref> Its expression is also increased in response to dehydration, to low temperatures, and to [[abscisic acid]], and it plays an important role in fruit ripening, seedlings development, and pollen development.<ref name=Thompson>{{cite journal | vauthors = Thompson CE, Fernandes CL, de Souza ON, de Freitas LB, Salzano FM | title = Evaluation of the impact of functional diversification on Poaceae, Brassicaceae, Fabaceae, and Pinaceae alcohol dehydrogenase enzymes | journal = Journal of Molecular Modeling | volume = 16 | issue = 5 | pages = 919–28 | date = May 2010 | pmid = 19834749 | doi = 10.1007/s00894-009-0576-0 | s2cid = 24730389 }}</ref> Differences in the sequences of ''ADH'' in different species have been used to create [[phylogeny|phylogenies]] showing how closely related different species of plants are.<ref>{{cite journal | vauthors = Järvinen P, Palmé A, Orlando Morales L, Lännenpää M, Keinänen M, Sopanen T, Lascoux M | title = Phylogenetic relationships of Betula species (Betulaceae) based on nuclear ADH and chloroplast matK sequences | journal = American Journal of Botany | volume = 91 | issue = 11 | pages = 1834–45 | date = November 2004 | pmid = 21652331 | doi = 10.3732/ajb.91.11.1834 | url = http://www.amjbot.org/cgi/content/abstract/91/11/1834 | archive-url = https://web.archive.org/web/20100526070916/http://www.amjbot.org/cgi/content/abstract/91/11/1834 | url-status = live | archive-date = 26 May 2010  }}</ref> It is an ideal gene to use due to its convenient size (2–3 kb in length with a ≈1000 nucleotide coding sequence) and low copy number.<ref name=Thompson/>
+
+=== Iron-containing ===
+{{Infobox protein family
+| Symbol = Fe-ADH
+| Name = Iron-containing alcohol dehydrogenase
+| image = PDB 1jqa EBI.jpg
+| width = 
+| caption = bacillus stearothermophilus glycerol dehydrogenase complex with glycerol
+| Pfam = PF00465
+| Pfam_clan = CL0224 
+| InterPro = IPR001670
+| SMART = 
+| PROSITE = PDOC00059
+| MEROPS = 
+| SCOP = 1jqa
+| TCDB = 
+| OPM family = 
+| OPM protein = 
+| CAZy = 
+| CDD = 
+}}
+A third family of alcohol dehydrogenases, unrelated to the above two, are [[iron]]-containing ones. They occur in bacteria and fungi. In comparison to enzymes the above families, these enzymes are oxygen-sensitive.{{Citation needed|date=August 2011}}
+Members of the iron-containing alcohol dehydrogenase family include:
+*''[[Saccharomyces cerevisiae]]'' alcohol dehydrogenase 4 (gene ADH4)<ref name="pmid2823079">{{cite journal | vauthors = Williamson VM, Paquin CE | title = Homology of Saccharomyces cerevisiae ADH4 to an iron-activated alcohol dehydrogenase from Zymomonas mobilis | journal = Molecular & General Genetics | volume = 209 | issue = 2 | pages = 374–81 | date = September 1987 | pmid = 2823079 | doi = 10.1007/bf00329668 | s2cid = 22397371 }}</ref>
+*''[[Zymomonas mobilis]]'' alcohol dehydrogenase 2 (gene adhB)<ref name="pmid3584063">{{cite journal | vauthors = Conway T, Sewell GW, Osman YA, Ingram LO | title = Cloning and sequencing of the alcohol dehydrogenase II gene from Zymomonas mobilis | journal = Journal of Bacteriology | volume = 169 | issue = 6 | pages = 2591–7 | date = June 1987 | pmid = 3584063 | pmc = 212129 | doi =  10.1128/jb.169.6.2591-2597.1987}}</ref>
+* ''[[Escherichia coli]]'' propanediol oxidoreductase {{EC number|1.1.1.77}} (gene fucO),<ref name="pmid2661535">{{cite journal | vauthors = Conway T, Ingram LO | title = Similarity of Escherichia coli propanediol oxidoreductase (fucO product) and an unusual alcohol dehydrogenase from Zymomonas mobilis and Saccharomyces cerevisiae | journal = Journal of Bacteriology | volume = 171 | issue = 7 | pages = 3754–9 | date = July 1989 | pmid = 2661535 | pmc = 210121 | doi =  10.1128/jb.171.7.3754-3759.1989}}</ref> an [[enzyme]] involved in the [[metabolism]] of [[fucose]] and which also seems to contain [[ferrous]] ion(s).
+* ''[[Clostridium acetobutylicum]]'' [[NADPH]]- and [[NADH]]-dependent butanol dehydrogenases {{EC number|1.1.1.-}} (genes adh1, bdhA and bdhB),<ref name="pmid1385386">{{cite journal | vauthors = Walter KA, Bennett GN, Papoutsakis ET | title = Molecular characterization of two Clostridium acetobutylicum ATCC 824 butanol dehydrogenase isozyme genes | journal = Journal of Bacteriology | volume = 174 | issue = 22 | pages = 7149–58 | date = November 1992 | pmid = 1385386 | pmc = 207405 | doi =  10.1128/jb.174.22.7149-7158.1992}}</ref> enzymes that have activity using [[butanol]] and [[ethanol]] as [[substrate (biochemistry)|substrates]].
+* ''E. coli'' adhE,<ref name="pmid2015910">{{cite journal | vauthors = Kessler D, Leibrecht I, Knappe J | title = Pyruvate-formate-lyase-deactivase and acetyl-CoA reductase activities of Escherichia coli reside on a polymeric protein particle encoded by adhE | journal = FEBS Letters | volume = 281 | issue = 1–2 | pages = 59–63 | date = April 1991 | pmid = 2015910 | doi = 10.1016/0014-5793(91)80358-A | s2cid = 22541869 }}</ref> an iron-dependent enzyme that harbours three different activities: alcohol dehydrogenase, [[acetaldehyde dehydrogenase]] (acetylating) {{EC number|1.2.1.10}} and pyruvate-formate-lyase deactivase.
+*[[Bacteria]]l [[glycerol dehydrogenase]] {{EC number|1.1.1.6}} (gene gldA or dhaD).<ref name="pmid8132480">{{cite journal | vauthors = Truniger V, Boos W | title = Mapping and cloning of gldA, the structural gene of the Escherichia coli glycerol dehydrogenase | journal = Journal of Bacteriology | volume = 176 | issue = 6 | pages = 1796–800 | date = March 1994 | pmid = 8132480 | pmc = 205274 | doi =  10.1128/jb.176.6.1796-1800.1994}}</ref>
+* ''[[Clostridium kluyveri]]'' NAD-dependent [[4-hydroxybutyrate dehydrogenase]] (4hbd) {{EC number|1.1.1.61}}
+* ''[[Citrobacter freundii]]'' and ''[[Klebsiella pneumoniae]]'' [[1,3-propanediol dehydrogenase]] {{EC number|1.1.1.202}} (gene dhaT)
+* ''Bacillus methanolicus'' NAD-dependent [[methanol dehydrogenase]] {{EC number|1.1.1.244}}<ref name="pmid1644761">{{cite journal | vauthors = de Vries GE, Arfman N, Terpstra P, Dijkhuizen L | title = Cloning, expression, and sequence analysis of the Bacillus methanolicus C1 methanol dehydrogenase gene | journal = Journal of Bacteriology | volume = 174 | issue = 16 | pages = 5346–53 | date = August 1992 | pmid = 1644761 | pmc = 206372 | doi =  10.1128/jb.174.16.5346-5353.1992}}</ref>
+*''E. coli'' and ''[[Salmonella typhimurium]]'' [[ethanolamine]] utilization [[protein]] eutG.
+*''E. coli'' hypothetical protein yiaY.
+
+=== Other types ===
+A further class of alcohol dehydrogenases belongs to quinoenzymes and requires quinoid cofactors (e.g., pyrroloquinoline quinone, PQQ) as enzyme-bound electron acceptors. A typical example for this type of enzyme is methanol dehydrogenase of methylotrophic bacteria.
+
+== Applications ==
+
+In biotransformation, alcohol dehydrogenases are often used for the synthesis of enantiomerically pure stereoisomers of chiral alcohols. Often, high chemo- and enantioselectivity can be achieved. One example is the alcohol dehydrogenase from ''[[Lactobacillus brevis]]'' (''Lb''ADH), which is described to be a versatile biocatalyst.<ref>{{cite journal|vauthors=Leuchs S, Greiner L |title=Alcohol dehydrogenase from ''Lactobacillus brevis'': A versatile catalyst for enenatioselective reduction |journal=CABEQ |pages=267–281 |year=2011 |url=http://www.hdki.hr/cabeq/pdf/25_2_2011/Cabeq_2011_02_13.pdf }}{{dead link|date=June 2017 |bot=InternetArchiveBot |fix-attempted=yes }}</ref> The high chemospecificity has been confirmed also in the case of substrates presenting two potential redox sites. For instance [[cinnamaldehyde]] presents both aliphatic double bond and aldehyde function. Unlike conventional catalysts, alcohol dehydrogenases are able to selectively act only on the latter, yielding exclusively [[cinnamyl alcohol]].<ref name="pmid19420690">{{cite journal | vauthors = Zucca P, Littarru M, Rescigno A, Sanjust E | title = Cofactor recycling for selective enzymatic biotransformation of cinnamaldehyde to cinnamyl alcohol | journal = Bioscience, Biotechnology, and Biochemistry | volume = 73 | issue = 5 | pages = 1224–6 | date = May 2009 | pmid = 19420690 | doi = 10.1271/bbb.90025 | s2cid = 28741979 }}</ref>
+
+In fuel cells, alcohol dehydrogenases can be used to catalyze the breakdown of fuel for an ethanol [[fuel cell]]. Scientists at [[Saint Louis University]] have used carbon-supported alcohol dehydrogenase with poly([[methylene green]]) as an anode, with a [[nafion]] membrane, to achieve about 50&nbsp;μ[[ampere|A]]/cm<sup>2</sup>.<ref name="pmid15672138">{{cite journal | vauthors = Moore CM, Minteer SD, Martin RS | title = Microchip-based ethanol/oxygen biofuel cell | journal = Lab on a Chip | volume = 5 | issue = 2 | pages = 218–25 | date = February 2005 | pmid = 15672138 | doi = 10.1039/b412719f }}</ref>
+
+In 1949, [[Efraim Racker|E. Racker]] defined one unit of alcohol dehydrogenase activity as the amount that causes a change in [[optical density]] of 0.001 per minute under the standard conditions of [[assay]].<ref name="pmid15443900">{{cite journal | vauthors = Racker E | title = Crystalline alcohol dehydrogenase from baker's yeast | journal = The Journal of Biological Chemistry | volume = 184 | issue = 1 | pages = 313–9 | date = May 1950 | pmid = 15443900 }}</ref> Recently, the international definition of enzymatic unit (E.U.) has been more common: one unit of Alcohol Dehydrogenase will convert 1.0 μmole of [[ethanol]] to [[acetaldehyde]] per minute at pH 8.8 at 25&nbsp;°C.<ref>{{cite web | title = Enzymatic Assay of Alcohol Dehydrogenase (EC 1.1.1.1) | url = http://www.sigmaaldrich.com/technical-documents/protocols/biology/enzymatic-assay-of-alcohol-dehydrogenase.html | publisher = Sigma Aldrich | access-date = 13 July 2015 }}</ref>
+
+== Clinical significance ==
+
+=== Alcoholism ===
+
+There have been studies showing that variations in ADH that influence [[ethanol metabolism]] have an impact on the risk of alcohol dependence.<ref name=":0" /><ref name=":1" /><ref name=":2" /><ref name=":3" /><ref>{{Cite journal|last1=Sanchez-Roige|first1=Sandra|last2=Palmer|first2=Abraham A.|last3=Fontanillas|first3=Pierre|last4=Elson|first4=Sarah L.|last5=Adams|first5=Mark J.|last6=Howard|first6=David M.|last7=Edenberg|first7=Howard J.|last8=Davies|first8=Gail|last9=Crist|first9=Richard C.|last10=Deary|first10=Ian J.|last11=McIntosh|first11=Andrew M.|date=2019-02-01|title=Genome-wide association study meta-analysis of the Alcohol Use Disorder Identification Test (AUDIT) in two population-based cohorts|journal=The American Journal of Psychiatry|volume=176|issue=2|pages=107–118|doi=10.1176/appi.ajp.2018.18040369|issn=0002-953X|pmc=6365681|pmid=30336701}}</ref> The strongest effect is due to variations in ADH1B that increase the rate at which alcohol is converted to acetaldehyde. One such variant is most common in individuals from East Asia and the Middle East, another is most common in individuals from Africa.<ref name=":1" /> Both variants reduce the risk for alcoholism, but individuals can become alcoholic despite that. Researchers have tentatively detected a few other genes to be associated with [[alcoholism]], and know that there must be many more remaining to be found.<ref>{{Cite journal|last1=Kranzler|first1=Henry R.|last2=Zhou|first2=Hang|last3=Kember|first3=Rachel L.|last4=Vickers Smith|first4=Rachel|last5=Justice|first5=Amy C.|last6=Damrauer|first6=Scott|last7=Tsao|first7=Philip S.|last8=Klarin|first8=Derek|last9=Baras|first9=Aris|last10=Reid|first10=Jeffrey|last11=Overton|first11=John|date=2019-04-02|title=Genome-wide association study of alcohol consumption and use disorder in 274,424 individuals from multiple populations|journal=Nature Communications|volume=10|issue=1|pages=1499|doi=10.1038/s41467-019-09480-8|issn=2041-1723|pmc=6445072|pmid=30940813|bibcode=2019NatCo..10.1499K}}</ref> Research continues in order to identify the genes and their influence on alcoholism.
+
+=== Drug dependence ===
+
+Drug dependence is another problem associated with ADH, which researchers think might be linked to alcoholism. One particular study suggests that drug dependence has seven ADH genes associated with it, however, more research is necessary.<ref name="pmid17185388">{{cite journal | vauthors = Luo X, Kranzler HR, Zuo L, Wang S, Schork NJ, Gelernter J | title = Multiple ADH genes modulate risk for drug dependence in both African- and European-Americans | journal = Human Molecular Genetics | volume = 16 | issue = 4 | pages = 380–90 | date = February 2007 | pmid = 17185388 | pmc = 1853246 | doi = 10.1093/hmg/ddl460 }}</ref> Alcohol dependence and other drug dependence may share some risk factors, but because alcohol dependence is often comorbid with other drug dependences, the association of ADH with the other drug dependencies may not be causal.
+
+=== Poisoning ===
+
+[[Fomepizole]], a drug that [[competitive inhibition|competitively inhibits]] alcohol dehydrogenase, can be used in the setting of acute [[methanol]]<ref>International Programme on Chemical Safety (IPCS): Methanol (PIM 335), [http://www.inchem.org/documents/pims/chemical/pim335.htm#10.%20MANAGEMENT], retrieved on 1 March 2008</ref> or [[ethylene glycol]]<ref name="pmid18072148">{{cite journal | vauthors = Velez LI, Shepherd G, Lee YC, Keyes DC | title = Ethylene glycol ingestion treated only with fomepizole | journal = Journal of Medical Toxicology | volume = 3 | issue = 3 | pages = 125–8 | date = September 2007 | pmid = 18072148 | pmc = 3550067 | doi = 10.1007/BF03160922 }}</ref> toxicity. This prevents the conversion of the methanol or ethylene glycol to its toxic metabolites (such as [[formic acid]], [[formaldehyde]], or [[glycolic acid|glycolate]]). The same effect is also sometimes achieved with [[ethanol]], again by competitive inhibition of ADH.
+
+=== Drug metabolism ===
+The drug [[hydroxyzine]] is broken into it's active metabolite [[Cetirizine|certizine]] by alcohol dehydrogenase. Other drugs with alcohol groups may be metabolized in a similar way as long as steric hinderance does not prevent the alcohol from reaching the active site.<ref>{{cite book| vauthors = Nelson W | chapter = Chapter 36: Nonsteroidal anti-inflammatory drugs | veditors = Foye WO, Lemke TL, Williams DA |title=Foye's Principles of Medicinal Chemistry | edition = 7th |year= 2013 |isbn=978-1-60913-345-0 | location = Philadelphia | publisher = Wolters Kluwer Health/Lippincott Williams & Wilkins }}</ref>
+
+== See also ==
+* [[Alcohol dehydrogenase (NAD(P)+)]]
+* [[Aldehyde dehydrogenase]]
+* [[Oxidoreductase]]
+* [[Blood alcohol content]] for rates of metabolism
+
+== References ==
+{{InterPro content|IPR001670}}
+{{reflist|33em}}
+
+== External links ==
+{{commons category|Alcohol dehydrogenase}}
+* [https://web.archive.org/web/20080517055711/http://www.biochem.ucl.ac.uk/bsm/enzymes/ec1/ec01/ec01/ec0001/index.html PDBsum] has links to three-dimensional structures of various alcohol dehydrogenases contained in the [[Protein Data Bank]]
+* [http://www.expasy.org/cgi-bin/nicezyme.pl?1.1.1.1 ExPASy] contains links to the alcohol dehydrogenase sequences in [[Swiss-Prot]], to a [[Medline]] literature search about the enzyme, and to entries in other databases.
+* [https://www.ebi.ac.uk/pdbe/pdbe-kb/proteins/P07327 PDBe-KB] provides an overview of all the structure information available in the PDB for Alcohol dehydrogenase 1A.
+* [https://www.ebi.ac.uk/pdbe/pdbe-kb/proteins/P00325 PDBe-KB] provides an overview of all the structure information available in the PDB for Alcohol dehydrogenase 1B.
+* [https://www.ebi.ac.uk/pdbe/pdbe-kb/proteins/P00326 PDBe-KB] provides an overview of all the structure information available in the PDB for Alcohol dehydrogenase 1C.
+* [https://www.ebi.ac.uk/pdbe/pdbe-kb/proteins/P08319 PDBe-KB] provides an overview of all the structure information available in the PDB for Alcohol dehydrogenase 4.
+* [https://www.ebi.ac.uk/pdbe/pdbe-kb/proteins/P11766 PDBe-KB] provides an overview of all the structure information available in the PDB for Alcohol dehydrogenase class-3.
+
+{{Alcohol oxidoreductases}}
+{{enzymes}}
+{{Portal bar|Biology|border=no}}
+
+{{DEFAULTSORT:Alcohol Dehydrogenase}}
+[[Category:Protein families]]
+[[Category:EC 1.1.1]]
+[[Category:NADH-dependent enzymes]]
+[[Category:Iron enzymes]]
+[[Category:Zinc enzymes]]
+[[Category:Alcohol and health]]

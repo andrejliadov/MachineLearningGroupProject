@@ -1,0 +1,84 @@
+In the [[decision theory|mathematical theory of decisions]], '''decision-theoretic rough sets''' ('''DTRS''') is a probabilistic extension of [[rough set]] classification.  First created in 1990 by Dr. Yiyu Yao,<ref>{{cite journal|last=Yao|first=Y.Y.|author2=Wong, S.K.M. |author3=Lingras, P.|year=1990|title=A decision-theoretic rough set model|journal=Methodologies for Intelligent Systems, 5, Proceedings of the 5th International Symposium on Methodologies for Intelligent Systems|publisher=North-Holland|location=Knoxville, Tennessee, USA|pages=17–25}}</ref> the extension makes use of loss functions to derive '''<math>\textstyle \alpha</math>''' and '''<math>\textstyle \beta</math>''' region parameters. Like rough sets, the lower and upper approximations of a set are used.
+
+==Definitions==
+The following contains the basic principles of decision-theoretic rough sets.
+
+===Conditional risk===
+
+Using the Bayesian decision procedure, the decision-theoretic rough set (DTRS) approach allows for minimum-risk decision making based on observed evidence. Let <math>\textstyle A=\{a_1,\ldots,a_m\}</math> be a finite set of <math>\textstyle m</math>
+possible actions and let <math>\textstyle \Omega=\{w_1,\ldots, w_s\}</math> be a finite set of <math>s</math> states. <math>\textstyle P(w_j\mid[x])</math> is
+calculated as the conditional probability of an object <math>\textstyle x</math> being in state <math>\textstyle w_j</math> given the object description
+<math>\textstyle [x]</math>. <math>\textstyle \lambda(a_i\mid w_j)</math> denotes the loss, or cost, for performing action <math>\textstyle a_i</math> when the state is <math>\textstyle w_j</math>.
+The expected loss (conditional risk) associated with taking action <math>\textstyle a_i</math> is given
+by:
+
+: <math>
+R(a_i\mid [x]) = \sum_{j=1}^s \lambda(a_i\mid w_j)P(w_j\mid[x]).
+</math>
+
+Object classification with the approximation operators can be fitted into the Bayesian decision framework. The
+set of actions is given by <math>\textstyle A=\{a_P,a_N,a_B\}</math>, where <math>\textstyle a_P</math>, <math>\textstyle a_N</math>, and <math>\textstyle a_B</math> represent the three
+actions in classifying an object into POS(<math>\textstyle A</math>), NEG(<math>\textstyle A</math>), and BND(<math>\textstyle A</math>) respectively.  To indicate whether an
+element is in <math>\textstyle A</math> or not in <math>\textstyle A</math>, the set of states is given by <math>\textstyle \Omega=\{A,A^c\}</math>.  Let
+<math>\textstyle \lambda(a_\diamond\mid A)</math> denote the loss incurred by taking action <math>\textstyle a_\diamond</math> when an object belongs to
+<math>\textstyle A</math>, and let <math>\textstyle \lambda(a_\diamond\mid A^c)</math> denote the loss incurred by take the same action when the object
+belongs to <math>\textstyle A^c</math>.
+
+===Loss functions===
+
+Let <math>\textstyle \lambda_{PP}</math> denote the loss function for classifying an object in <math>\textstyle A</math> into the POS region, <math>\textstyle \lambda_{BP}</math> denote the loss function for classifying an object in <math>\textstyle A</math> into the BND region, and let <math>\textstyle \lambda_{NP}</math> denote the loss function for classifying an object in <math>\textstyle A</math> into the NEG region. A loss function <math>\textstyle \lambda_{\diamond N}</math> denotes the loss of classifying an object that does not belong to <math>\textstyle A</math> into the regions specified by <math>\textstyle \diamond</math>.
+
+Taking individual can be associated with the expected loss <math>\textstyle R(a_\diamond\mid[x])</math>actions and can be expressed as:
+
+: <math>\textstyle R(a_P\mid[x]) = \lambda_{PP}P(A\mid[x]) + \lambda_{PN}P(A^c\mid[x]),</math>
+
+: <math>\textstyle R(a_N\mid[x]) = \lambda_{NP}P(A\mid[x]) + \lambda_{NN}P(A^c\mid[x]),</math>
+
+: <math>\textstyle R(a_B\mid[x]) = \lambda_{BP}P(A\mid[x]) + \lambda_{BN}P(A^c\mid[x]),</math>
+
+where <math>\textstyle \lambda_{\diamond P}=\lambda(a_\diamond\mid A)</math>, <math>\textstyle \lambda_{\diamond N}=\lambda(a_\diamond\mid A^c)</math>, and <math>\textstyle \diamond=P</math>, <math>\textstyle N</math>, or <math>\textstyle B</math>.
+
+===Minimum-risk decision rules===
+
+If we consider the loss functions <math>\textstyle \lambda_{PP} \leq \lambda_{BP} < \lambda_{NP}</math> and <math>\textstyle \lambda_{NN} \leq \lambda_{BN} < \lambda_{PN}</math>, the following decision rules are formulated (''P'', ''N'', ''B''):
+
+* '''P''': If <math>\textstyle P(A\mid[x]) \geq \gamma</math> and <math>\textstyle P(A\mid[x]) \geq \alpha</math>, decide POS(<math>\textstyle A</math>);
+* '''N''': If <math>\textstyle P(A\mid[x]) \leq \beta</math> and <math>\textstyle P(A\mid[x]) \leq \gamma</math>, decide NEG(<math>\textstyle A</math>);
+* '''B''': If <math>\textstyle \beta \leq P(A\mid[x]) \leq \alpha</math>, decide BND(<math>\textstyle A</math>);
+
+where,
+
+: <math>\alpha = \frac{\lambda_{PN} - \lambda_{BN}}{(\lambda_{BP} - \lambda_{BN}) - (\lambda_{PP}-\lambda_{PN})},</math>
+
+: <math>\gamma = \frac{\lambda_{PN} - \lambda_{NN}}{(\lambda_{NP} - \lambda_{NN}) - (\lambda_{PP}-\lambda_{PN})},</math>
+
+: <math>\beta = \frac{\lambda_{BN} - \lambda_{NN}}{(\lambda_{NP} - \lambda_{NN}) - (\lambda_{BP}-\lambda_{BN})}.</math>
+
+The <math>\textstyle \alpha</math>, <math>\textstyle \beta</math>, and <math>\textstyle \gamma</math> values define the three different regions, giving us an associated risk for classifying an object. When <math>\textstyle \alpha > \beta</math>, we get <math>\textstyle \alpha > \gamma > \beta</math> and can simplify (''P'', ''N'', ''B'') into (''P''1, ''N''1, ''B''1):
+
+* '''P1''': If <math>\textstyle P(A\mid [x]) \geq \alpha</math>, decide POS(<math>\textstyle A</math>);
+* '''N1''': If <math>\textstyle P(A\mid[x]) \leq \beta</math>, decide NEG(<math>\textstyle A</math>);
+* '''B1''': If <math>\textstyle \beta < P(A\mid[x]) < \alpha</math>, decide BND(<math>\textstyle A</math>).
+
+When <math>\textstyle \alpha = \beta = \gamma</math>, we can simplify the rules (P-B) into (P2-B2), which divide the regions based solely on <math>\textstyle \alpha</math>:
+
+* '''P2''': If <math>\textstyle P(A\mid[x]) > \alpha</math>, decide POS(<math>\textstyle A</math>);
+* '''N2''': If <math>\textstyle P(A\mid[x]) < \alpha</math>, decide NEG(<math>\textstyle A</math>);
+* '''B2''': If <math>\textstyle P(A\mid[x]) = \alpha</math>, decide BND(<math>\textstyle A</math>).
+
+[[Data mining]], [[feature selection]], [[information retrieval]], and [[Classification (machine learning)|classifications]] are just some of the applications in which the DTRS approach has been successfully used.
+
+==See also==
+* [[Rough sets]]
+* [[Granular computing]]
+* [[Fuzzy set theory]]
+
+==References==
+<references/>
+
+==External links==
+* [http://roughsets.home.pl/www/ The International Rough Set Society]
+* [http://www.roughsets.com The Decision-theoretic Rough Set Portal]
+
+{{DEFAULTSORT:Decision-Theoretic Rough Sets}}
+[[Category:Decision theory]]

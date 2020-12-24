@@ -1,0 +1,30 @@
+{{for|read–write file system permissions|file system permissions}}
+
+'''Read–write memory''' is a type of [[computer memory]] that may be relatively easily written to as well as read from, that is, using electrical signalling normally associated with running a software, and without any other physical processes (unlike [[Read-only memory|ROM]] or "read-only memory" and distinct from [[EEPROM]]).<ref>{{cite web |url=https://www.jedec.org/standards-documents/dictionary/terms/readwrite-memory |title=JEDEC: read/write memory |website=JEDEC |accessdate=7 March 2017}}</ref> The related term [[RAM]] (for "random access memory") means something different; it refers to memory that can access any memory location in a constant amount of time.<ref>{{citation |url=https://www.jedec.org/standards-documents/dictionary/terms/random-access-memory-ram |website=JEDEC |title=JEDEC: random-access memory |accessdate=7 March 2017}}</ref>
+
+The term might also refer to memory locations having both read and write permissions. In modern computer systems using [[memory segmentation]], each segment has a length and set of permissions (for example, ''read'', ''write'', ''execute'') associated with it.
+
+
+'''Types'''
+
+Read-write memory is composed of either [[Volatile memory|volatile]] or [[Non-volatile memory|non-volatile]] types of storage. A computer holds many types of storage that can Read-write memory and be in many different physical sizes and forms. Typically read-write speeds are limited to its [[Bandwidth (computing)|bandwidth]] or have mechanical limitations of either rotation speeds and arm movement delays for storage types such as [[Cloud storage|Cloud Storage]], [[Hard disk drive|Hard Disk Drive]] or [[CD-RW|CD-RWs]], [[DVD recordable|DVD-RWs]], [[SD card|SD cards]], [[Solid-state drive|Solid State Drive]], [[Static random-access memory|SRAM]], and [[Dynamic random-access memory|DRAM]], or other [[Integrated circuit|integrated circuitry]].<ref>{{Cite web|title=Reading: Random Access Memory {{!}} Introduction to Computer Applications and Concepts|url=https://courses.lumenlearning.com/zeliite115/chapter/reading-random-access-memory/|access-date=2020-11-17|website=courses.lumenlearning.com}}</ref>
+
+
+'''History'''
+
+San Francisco in 1956, [[IBM]] was the first company to develop and sell the first commercial drive [[Hard disk drive|Hard Disk Drive(HDD)]] the drive was the Model 350 disk storage unit, which was 3.75 Megabytes of data storage capacity and had fifty 24-inch diameter disks stacked on a spindle and sold to [[Crown Zellerbach|Zellerbach paper]].<ref>{{Cite web|title=1956: First commercial hard disk drive shipped {{!}} The Storage Engine {{!}} Computer History Museum|url=https://www.computerhistory.org/storageengine/first-commercial-hard-disk-drive-shipped/|access-date=2020-11-17|website=www.computerhistory.org}}</ref>
+
+Years of development have taken place since, and the development of read-write memory is larger in capacity and smaller in size. Today, you can store capacities of multiple [[Terabyte|terabytes]] of storage.
+
+==See also==
+* [[Read-mostly memory]] (RMM)
+
+==References==
+{{Reflist}}
+
+[[Category:Computer memory]]
+
+
+{{compu-hardware-stub}}
+[[Category:History]]
+[[Category:Types]]

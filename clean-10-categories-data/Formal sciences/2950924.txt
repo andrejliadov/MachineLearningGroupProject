@@ -1,0 +1,12 @@
+{{refimprove|date=November 2008}}
+An '''accession number''' in bioinformatics is a unique identifier given to a [[DNA sequence|DNA]] or [[amino acid sequence|protein]] sequence record to allow for tracking of different versions of that sequence record and the associated sequence over time in a single data repository.  Because of its relative stability, accession numbers can be utilized as [[foreign key]]s for referring to a sequence object, but not necessarily to a unique sequence.  All sequence information repositories implement the concept of "accession number" but might do so with subtle variations.
+
+==LRG==
+{{main|Locus Reference Genomic}}
+Locus Reference Genomic (LRG) records have unique accession numbers starting with LRG_ followed by a number. They are recommended in the [http://www.hgvs.org/mutnomen/ Human Genome Variation Society Nomenclature guidelines] as stable genomic reference sequences to report sequence variants in LSDBs and the literature.
+
+==Notes and references==
+# {{note|uniprot}} {{cite web | author=[[Amos Bairoch]] |author2=[[Rolf Apweiler]] |author3=Cathy H. Wu | title=User Manual | work=UniProt Knowledgebase | url=http://www.expasy.org/sprot/userman.html#AC_line | accessdate=October 20, 2005 | archiveurl= https://web.archive.org/web/20050921221534/http://www.expasy.org/sprot/userman.html| archivedate= 21 September 2005 | url-status= live}}
+# {{NCBI-handbook}}
+
+[[Category:Bioinformatics]]

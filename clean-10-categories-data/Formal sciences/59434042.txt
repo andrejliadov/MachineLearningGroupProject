@@ -1,0 +1,302 @@
+{{tone|date=December 2018}}
+The '''local average treatment effect (LATE)''', also known as the complier average causal effect (CACE), was first introduced into the econometrics literature by [[Guido Imbens|Guido W. Imbens]] and [[Joshua Angrist|Joshua D. Angrist]] in 1994.<ref name="Imbens 467">{{Cite journal|last=Imbens|first=Guido W.|last2=Angrist|first2=Joshua D.|date=March 1994|title=Identification and Estimation of Local Average Treatment Effects|journal=Econometrica|volume=62|issue=2|pages=467|doi=10.2307/2951620|issn=0012-9682|jstor=2951620|url=http://www.nber.org/papers/t0118.pdf}}</ref> It is the treatment effect for the subset of the sample that takes the treatment if and only if they were assigned to the treatment, otherwise known as the compliers. It is not to be confused with the [[Average treatment effect|average treatment effect (ATE)]], which is the average subject-level treatment effect; the LATE is only the ATE among the compliers. The LATE can be estimated by a ratio of the estimated intent-to-treat effect and the estimated proportion of compliers, or alternatively through an [[Instrumental variables estimation|instrumental variable]] estimator.
+
+== General definition ==
+
+Following the terminology from the [[Rubin causal model|potential outcomes framework]], the ATE is the difference between the expected value of the treatment group and the expected value of the control group. In an experimental setting, random assignment allows us to assume that the treatment group and control group have the same expected potential outcomes when treated (or untreated). This can be expressed as:
+
+<math>E[Y_i(1)|D_i=1]=E[Y_i(1)|D_i=0]=E[Y_i(1)] </math>
+
+<math>E[Y_i(0)|D_i=1]=E[Y_i(0)|D_i=0]=E[Y_i(0)]</math>
+
+In an ideal experiment, all subjects assigned to treatment are treated, while those that are assigned to control will remain untreated. In reality, however, the compliance rate is often imperfect, which prevents researchers from identifying the ATE. In such cases, estimating the LATE becomes the more feasible option. The LATE is the average treatment effect among a specific subset of the subjects, who in this case would be the compliers.
+
+== Potential outcome framework and notation ==
+
+Let  <math>  Y_i(d) </math> denotes the potential outcome of subject i, where d is the binary indicator of subject <math> i </math>’s treatment status. <math> Y_i(1) </math> denotes the treated potential outcome for subject i, while <math>  Y_i(0) </math> denotes the untreated potential outcome.  The causal effect of the treatment on subject <math> i </math> is <math> Y_i(1)-Y_i(0) </math>.  However, we can never observe both  <math> Y_i(1) </math>and <math>  Y_i(0) </math> for the same subject. At any given time, we can only observe a subject in its treated <math> Y_i(1) </math> or untreated <math>  Y_i(0) </math> state.
+
+Through random assignment, the expected untreated potential outcome of the control group is the same as that of the treatment group, and the expected treated potential outcome of treatment group is the same as that of the control group. The random assignment assumption thus allows us to take the difference between the average outcome in the treatment group and the average outcome in the control group as the overall average treatment effect, such that:
+
+<math>ATE= E[Y_i(1)-Y_i(0)]=E[Y_i(1)]-E[Y_i(0)]=E[Y_i(1)|D_i=1]-E[Y_i(0)|D_i=0] </math>
+
+=== Noncompliance framework ===
+Quite often will researchers encounter noncompliance problems in their experiments, whereby subjects fail to comply with their experimental assignments. Some subjects will not take the treatment when assigned to the treatment group, so their potential outcome of <math> Y_i(1) </math> will not be revealed, while some subjects assigned to the control group will take the treatment, so they will not reveal their <math> Y_i(0) </math>.
+
+Given noncompliance, the population in an experiment can be divided into four subgroups: compliers, always-takers, never-takers and defiers. We then introduce <math>z</math> as a binary indicator of experimental assignment, such that when <math>z_i = 1</math>, subject <math>i</math> is assigned to treatment, and when <math>z_i=0</math>, subject <math> i </math> is assigned to control. Thus, <math>d_i(z)</math>represents whether subject <math> i </math> is actually treated or not when treatment assignment is <math>z_i</math>.
+
+Compliers are subjects who will take the treatment if and only if they were assigned to the treatment group, i.e. the subpopulation with  <math>d_i(1)=1</math> and <math>d_i(0)=0</math>.
+
+Noncompliers are composed of the three remaining subgroups:
+
+* Always-takers are subjects who will always take the treatment even if they were assigned to the control group, i.e. the subpopulation with <math>d_i(z)=1</math>
+* Never-takers are subjects who will never take the treatment even if they were assigned to the treatment group, i.e. the subpopulation with <math>d_i(z)=0</math>
+* Defiers are subjects who will do the opposite of their treatment assignment status, i.e. the subpopulation with <math>d_i(1)=0</math> and <math>d_i(0)=1
+</math>
+
+Non-compliance can take two forms. In the case of one-sided non-compliance, a number of the subjects who were assigned to the treatment group remain untreated. Subjects are thus divided into compliers and never-takers, such that <math>d_i(0) = 0</math>for all <math>i</math>, while <math>d_i(1)= </math>  0 or 1. In the case of two-sided non-compliance, a number of the subjects assigned to the treatment group fail to receive the treatment, while a number of the subjects assigned to the control group receive the treatment. In this case, subjects are divided into the four subgroups, such that both <math>d_i(0)</math> and <math>d_i(1)</math> can be 0 or 1.
+
+Given non-compliance, we require certain assumptions to estimate the LATE. Under one-sided non-compliance, we assume non-interference and excludability. Under two-sided non-compliance, we assume non-interference, excludability, and monotonicity.
+
+=== Assumptions under one-sided non-compliance ===
+
+* The non-interference assumption, otherwise known as the Stable Unit Treatment Value Assumption (SUTVA), is composed of two parts.<ref>{{Cite journal|last=Rubin|first=Donald B.|date=January 1978|title=Bayesian Inference for Causal Effects: The Role of Randomization|journal=The Annals of Statistics|volume=6|issue=1|pages=34–58|doi=10.1214/aos/1176344064|issn=0090-5364|doi-access=free}}</ref>
+** The first part of this assumption stipulates that the actual treatment status, <math>d_i</math>, of subject <math>i</math> depends only on the subject's own treatment assignment status, <math>z_i</math>. The treatment assignment status of other subjects will not affect the treatment status of subject <math>i</math>. Formally, if <math>z_i=z_i'</math>, then <math>D_i(\mathbf{z})=D_i(\mathbf{z}')</math>, where <math>\mathbf{z}</math> denotes the vector of treatment assignment status for all individuals.<ref name=":0">{{Cite journal|last=Angrist|first=Joshua D.|last2=Imbens|first2=Guido W.|last3=Rubin|first3=Donald B.|date=June 1996|title=Identification of Causal Effects Using Instrumental Variables|journal=Journal of the American Statistical Association|volume=91|issue=434|pages=444–455|doi=10.1080/01621459.1996.10476902|issn=0162-1459|url=http://www.nber.org/papers/t0136.pdf}}</ref>
+** The second part of this assumption stipulates that subject <math> i </math>'s potential outcomes are affected by its own treatment assignment, and the treatment it receives as a consequence of that assignment. The treatment assignment and treatment status of other subjects will not affect subject <math>i</math>'s outcomes. Formally, if <math>z_i=z_i'</math> and <math>d_i=d_i'</math>, then <math>Y_i(z,d)=Y_i(z',d)</math>.
+** The plausibility of the non-interference assumption must be assessed on a case-by-case basis.
+* The excludability assumption requires that potential outcomes respond to treatment itself, <math>d_i</math>, not treatment assignment, <math>z_i</math>. Formally <math>  Y_i(z,d)=Y_i(d) </math>. So under this assumption, only <math> d </math>matters.<ref>{{Cite journal|last=Imbens|first=G. W.|last2=Rubin|first2=D. B.|date=1997-10-01|title=Estimating Outcome Distributions for Compliers in Instrumental Variables Models|journal=The Review of Economic Studies|volume=64|issue=4|pages=555–574|doi=10.2307/2971731|issn=0034-6527|jstor=2971731}}</ref> The plausibility of the excludability assumption must also be assessed on a case-by-case basis.
+
+=== Assumptions under two-sided non-compliance ===
+
+* All of the above, and
+* The monotonicity assumption, i.e. for all subject  <math> i </math>,  <math>d_i(1) \geq d_i(0)</math>. This states that whenever a subject moves from the control to treatment group, <math> d_i </math> either remains unchanged or increases. The monotonicity assumption rules out defiers, since their potential outcomes are characterized by <math>d_i(1) < d_i(0)</math>.<ref name="Imbens 467"/> Monotonicity cannot be tested, so like the non-interference and excludability assumptions, its validity must be determined on a case-by-case basis.
+
+== Identification ==
+The <math>  LATE = \frac{ITT}{ITT_D} </math>, whereby
+
+<math>  ITT=E[Y_i(z=1)]-E[Y_i(z=0)]</math>
+
+<math>  ITT_D = E[d_i(z=1)]-E[d_i(z=0)]</math>
+
+The <math>ITT </math> measures the average effect of experimental assignment on outcomes without accounting for the proportion of the group that was actually treated (i.e. average of those assigned to treatment minus the average of those assigned to control). In experiments with full compliance, the <math>ITT = ATE </math>.
+
+The <math>ITT_D </math>measures the proportion of subjects who are treated when they are assigned to the treatment group, minus the proportion who would have been treated even if they had been assigned to the control group, i.e. <math>ITT_D </math>= the share of compliers.
+
+=== Proof ===
+Under one-sided noncompliance , all subjects assigned to control group will not take the treatment, therefore:<ref name=":0" /> <math> E[d_i(z=0)]=0</math>,
+
+so that <math>  ITT_D = E[d_i(z=1)]==P[d_i(1)=1]</math>
+
+If all subjects were assigned to treatment, the expected potential outcomes would be a weighted average of the treated potential outcomes among compliers, and the untreated potential outcomes among never-takers, such that
+
+<math>\begin{align} {\displaystyle E[Y_{i}(z=1)]=E[Y_{i}(d(1),z=1)]}  = E[Y_i(z=1,d=1)|d_i(1)=1]*P[d_i(1)=1] & \\  +E[Y_i(z=1,d=0)|d_i(1)=0]* (1-P[d_i(1)=1])
+ \end{align}
+
+</math>
+
+If all subjects were assigned to control, however, the expected potential outcomes would be a weighted average of the untreated potential outcomes among compliers and never-takers, such that
+
+<math>\begin{align} {\displaystyle E[Y_{i}(z=0)]=E[Y_{i}(d=0,z=0)]}   = E[Y_i(z=0,d=0)|d_i(1)=1]*P[d_i(1)=1] & \\  +E[Y_i(z=0,d=0)|d_i(1)=0]* (1-P[d_i(1)=1])
+ \end{align}
+
+</math>
+
+Through substitution, we can express the ITT as a weighted average of the ITT among the two subpopulations (compliers and never-takers), such that
+
+<math> \begin{alignat}{2}  
+ITT= E[Y_i(z=1)]-E[Y_i(z=0)]   = E[Y_i(z=1,d=1)-Y_i(z=0,d=0)|d_i(1)=1]*P[d_i(1)=1]+&\\ 
+E[Y_i(z=1,d=0)-Y_i(z=0,d=0)|d_i(1)=0]*P[d_i(1)=0]
+ \end{alignat}</math>
+
+Given the exclusion and monotonicity assumption, the second half of this equation should be zero.
+
+As such,
+
+<math>  \frac{ITT}{ITT_D}= \frac {E[Y_i(z=1,d=1)-Y_i(z=0,d=0)|d_i(1)=1]*P[d_i(1)=1]}{P[d_i(1)=1]} =E[Y_i(d=1)-Y_i(d=0)|d_i(1)=1]= LATE
+</math>
+
+== Application: hypothetical schedule of potential outcome under two-sided noncompliance ==
+The table below lays out the hypothetical schedule of potential outcomes under two-sided noncompliance.
+
+The ATE is calculated by the average of <math>Y_i(d=1)- Y_i(d=0)</math>
+{| class="wikitable"
+|+
+Hypothetical Schedule of Potential Outcome under Two-sided Noncompliance
+!Observation
+!<math> Y_i(1) </math>
+!<math> Y_i(0) </math>
+!<math> Y_i(1)-Y_i(0) </math>
+!<math> d_i(z=0) </math>
+!<math> d_i(z=1) </math>
+!Type
+|-
+|1
+|4
+|7
+|3
+|0
+|1
+|Complier
+|-
+|2
+|3
+|5
+|2
+|0
+|0
+|Never-taker
+|-
+|3
+|1
+|5
+|4
+|0
+|1
+|Complier
+|-
+|4
+|5
+|8
+|3
+|1
+|1
+|Always-taker
+|-
+|5
+|4
+|10
+|6
+|0
+|1
+|Complier
+|-
+|6
+|2
+|8
+|6
+|0
+|0
+|Never-taker
+|-
+|7
+|6
+|10
+|4
+|0
+|1
+|Complier
+|-
+|8
+|5
+|9
+|4
+|0
+|1
+|Complier
+|-
+|9
+|2
+|5
+|3
+|1
+|1
+|Always-taker
+|}
+<math>ATE= \frac{3+2+4+3+6+6+4+4+3}{9}=\frac{35}{9}=3.9 </math>
+
+LATE is calculated by ATE among compliers, so
+
+<math>LATE = \frac{3+4+6+4+4}{5}=4.2</math>
+
+ITT is calculated by the average of <math>Y_i(z=1)-Y_i(z=0)</math>,
+
+so <math>ITT = \frac{3+0+4+0+6+0+4+4+0}{9}=\frac{21}{9}=2.3</math>
+
+<math> ITT_D </math>  is the share of compliers
+
+<math> ITT_D = \frac{5}{9}</math> 
+
+<math> \frac{ITT}{ITT_D}= \frac{21/9}{5/9}=\frac{21}{5}=4.2=LATE </math>
+
+== Others: LATE in instrumental variable framework==
+We can also think of  LATE through an IV framework.<ref>{{Cite journal|last=Hanck|first=Christoph|date=2009-10-24|title=Joshua D. Angrist and Jörn-Steffen Pischke (2009): Mostly Harmless Econometrics: An Empiricist's Companion|journal=Statistical Papers|volume=52|issue=2|pages=503–504|doi=10.1007/s00362-009-0284-y|issn=0932-5026|doi-access=free}}</ref> Treatment assignment <math>z_i</math> is the instrument that drives the causal effect on outcome <math>Y_i</math> through the variable of interest <math>d_i</math>, such that <math>z_i</math> only influences <math>Y_i</math> through the endogenous variable <math>d_i</math>, and through no other path. This would produce the treatment effect for compliers.
+
+In addition to the potential outcomes framework mentioned above, LATE can also be estimated through the [[Structural equation modeling|Structural Equation Modeling (SEM)]] framework, originally developed for econometric applications.
+
+SEM is derived through the following equations:
+
+<math>D_1 = \alpha_0 + \alpha_1 Z_i + \xi_{1i}</math>
+
+<math>Y_i = \beta_0 + \beta_1 Z_i + \xi_{2i}</math>
+
+The first equation captures the first stage effect of <math>z_i</math>on <math>d_i</math>, adjusting for variance, where
+
+<math>\alpha_1=Cov(D,Z)/var(Z)</math>
+
+The second equation <math>\beta_1</math> captures the reduced form effect of <math>z_i</math> on <math>Y_i</math>,
+
+<math>\beta_1=Cov(Y,Z)/var(Z)</math>
+
+The covariate-adjusted IV estimator is  the ratio <math>\tau_{LATE}=\frac{\beta_1}{\alpha_1}=\frac{Cov(Y,Z)/Var(Z)}{Cov(D,Z)/Var(Z) } = \frac{Cov(Y,Z)}{Cov(D,Z)}</math>
+
+Similar to the nonzero compliance assumption, the coefficient <math>\alpha_1 </math> in first stage regression needs to be significant to make <math>z </math> a valid instrument.
+
+However, because of SEM’s strict assumption of constant effect on every individual, the potential outcomes framework is in more prevalent use today.
+
+== Generalizing LATE ==
+The primary goal of running an experiment is to obtain causal leverage, and it does so by randomly assigning subjects to experimental conditions, which sets it apart from observational studies. In an experiment with perfect compliance, the average treatment effect can be obtained easily. However, many experiments are likely to experience either one-sided or two-sided non-compliance. In the presence of non-compliance, the ATE can no longer be recovered. Instead, what is recovered is the average treatment effect for a certain subpopulation known as the compliers, which is the LATE.
+
+When there may exist heterogeneous treatment effects across groups, the LATE is unlikely to be equivalent to the ATE. In one example, Angrist (1989)<ref>{{Cite journal|last=Angrist|first=Joshua|date=September 1990|title=The Draft Lottery and Voluntary Enlistment in the Vietnam Era|location=Cambridge, MA|doi=10.3386/w3514|doi-access=free}}</ref> attempts to estimate the causal effect of serving in the military on earnings, using the draft lottery as an [[Instrumental variables estimation|instrument]]. The compliers are those who were induced by the draft lottery to serve in the military. If the research interest is on how to compensate those involuntarily taxed by the draft, LATE would be useful, since the research targets compliers. However, if researchers are concerned about a more universal draft for future interpretation, then the ATE would be more important (Imbens 2009).<ref name="Imbens 467">{{Cite journal|last=Imbens|first=Guido W.|last2=Angrist|first2=Joshua D.|date=March 1994|title=Identification and Estimation of Local Average Treatment Effects|journal=Econometrica|volume=62|issue=2|pages=467|doi=10.2307/2951620|issn=0012-9682|jstor=2951620|url=http://www.nber.org/papers/t0118.pdf}}</ref>
+
+Generalizing from the LATE to the ATE thus becomes an important issue when the research interest lies with the causal treatment effect on a broader population, not just the compliers. In these cases, the LATE may not be the parameter of interest, and researchers have questioned its utility.<ref>{{Cite journal|last=Deaton|first=Angus|date=January 2009|title=Instruments of development: Randomization in the tropics, and the search for the elusive keys to economic development|location=Cambridge, MA|doi=10.3386/w14690|doi-access=free}}</ref><ref>{{Cite journal|last=Heckman|first=James J.|last2=Urzúa|first2=Sergio|date=May 2010|title=Comparing IV with structural models: What simple IV can and cannot identify|journal=Journal of Econometrics|volume=156|issue=1|pages=27–37|doi=10.1016/j.jeconom.2009.09.006|pmid=20440375|pmc=2861784|issn=0304-4076}}</ref> Other researchers, however, have countered this criticism by proposing new methods to generalize from the LATE to the ATE.<ref name=":0b">{{Cite journal|last=Aronow|first=Peter M.|last2=Carnegie|first2=Allison|year=2013|title=Beyond LATE: Estimation of the Average Treatment Effect with an Instrumental Variable|journal=Political Analysis|volume=21|issue=4|pages=492–506|doi=10.1093/pan/mpt013|issn=1047-1987}}</ref><ref>{{Cite journal|last=Imbens|first=Guido W|date=June 2010|title=Better LATE Than Nothing: Some Comments on Deaton (2009) and Heckman and Urzua (2009)|journal=Journal of Economic Literature|volume=48|issue=2|pages=399–423|doi=10.1257/jel.48.2.399|issn=0022-0515|url=http://www.nber.org/papers/w14896.pdf}}</ref><ref name=":1">{{Cite journal|last=Kowalski|first=Amanda|year=2016|title=Doing More When You're Running LATE: Applying Marginal Treatment Effect Methods to Examine Treatment Effect Heterogeneity in Experiments|journal=NBER Working Paper No. 22363|doi=10.3386/w22363|doi-access=free}}</ref> Most of these involve some form of reweighting from the LATE, under certain key assumptions that allow for extrapolation from the compliers.
+
+=== Reweighting ===
+The intuition behind reweighting comes from the notion that given a certain strata, the distribution among the compliers may not reflect the distribution of the broader population. Thus, to retrieve the ATE, it is necessary to reweight based on the information gleaned from compliers. There are a number of ways that reweighting can be used to try to get at the ATE from the LATE.
+
+==== Reweighting by ignorability assumption ====
+By leveraging [[Instrumental variables estimation|instrumental variable]], Aronow and Carnegie (2013)<ref name=":0b" /> propose a new reweighting method called Inverse Compliance Score weighting (ICSW), with a similar intuition behind [[Inverse probability weighting|IPW]]. This method assumes compliance propensity is a pre-treatment covariate and compliers would have the same average treatment effect within their strata. ICSW first estimates the conditional probability of being a complier (Compliance Score) for each subject by [[Maximum likelihood estimation|Maximum Likelihood estimator]] given covariates control, then reweights each unit by its inverse of compliance score, so that compliers would have covariate distribution that matches the full population. ICSW is applicable at both [[Local Average Treatment Effect|one-sided]] and [[Local Average Treatment Effect|two-sided noncompliance]] situation.
+
+Although one's compliance score cannot be directly observed, the probability of compliance can be estimated by observing the compliance condition from the same strata,&nbsp; in other words those that share the same covariate profile. The compliance score is treated as a latent pretreatment covariate, which is independent of treatment assignment <math>Z</math>. For each unit <math>i</math>, compliance score is denoted as <math display="inline">P_{Ci}=Pr(D_1>D_0|X=x_i)</math>, where <math>x_i</math>is the covariate vector for unit <math>i </math>.
+
+In [[Local Average Treatment Effect|one-sided noncompliance]] case,&nbsp; the population consists of only compliers and never-takers. All units assigned to the treatment group that take the treatment will be compliers. Thus, a simple bivariate regression of D on X can predict the probability of compliance.
+
+In [[Local Average Treatment Effect|two-sided noncompliance]] case, compliance score is estimated using [[maximum likelihood estimation]].
+
+By assuming [[Probit model|probit distribution]] for compliance and of Bernoulli distribution of D,
+
+where&nbsp;<math>\hat{\Pr{c_i}}=\hat{\Pr}(D_1>D_0|X=x_i)=F(\hat{\theta}_{A,C,x_i})(1-F(\hat{\theta}_{A|A,C,x_i}))^3</math> .
+
+and&nbsp;<math>\theta</math> is a vector of covariates to be estimated, <math>F(.)</math> is the cumulative distribution function for a [[probit model]]
+
+* ICSW estimator
+
+By the LATE theorem,<ref name="Imbens 467"/>&nbsp; [[Local Average Treatment Effect|average treatment effect for compliers]] can be estimated with equation:
+
+<math>\tau_{LATE}=\frac{\sum_{i=1}^n {Z_i}{Y_i}/\sum_{i=1}^n {Z_i}-\sum_{i=1}^n {(1-Z_i)}{Y_i}/\sum_{i=1}^n {(1-Z_i)}}{
+    \sum_{i=1}^n {Z_i}{D_i}/\sum_{i=1}^n {Z_i}-\sum_{i=1}^n {(1-Z_i)}{D_i}/\sum_{i=1}^n {(1-Z_i)}}
+</math>
+
+Define <math>\hat{w_{Ci}}=1/\hat{Pr_{Ci}}</math> the ICSW estimator&nbsp; &nbsp;is simply&nbsp; weighted by&nbsp; :
+
+<math>\tau_{ATE}=\frac{\sum_{i=1}^n \hat{W_i}{Z_i}{Y_i}/\sum_{i=1}^n \hat{W_i}{Z_i}-\sum_{i=1}^n \hat{W_i}{(1-Z_i)}{Y_i}/\sum_{i=1}^n {\hat{W_i}(1-Z_i)}}{
+    \sum_{i=1}^n \hat{W_i}{Z_i}{D_i}/\sum_{i=1}^n \hat{W_i}{Z_i}-\sum_{i=1}^n \hat{W_i}{(1-Z_i)}{D_i}/\sum_{i=1}^n \hat{W_i}{(1-Z_i)}}
+</math>
+
+This estimator is equivalent to using [[2SLS]] estimator with weight .
+
+* Core assumptions under reweighting
+
+An essential assumption of ICSW relying on&nbsp; treatment homogeneity within strata, which means the treatment effect should on average be the same for everyone in the strata, not just for the compliers. If this assumption holds, LATE is equal to ATE within some covariate profile. Denote as:
+
+<math>\text{for all }x \in Supp(X), E[Y_1-Y_0|D_1>D_0]</math>
+
+Notice this is a less restrictive assumption than the traditional [[ignorability]] assumption, as this only concerns the covariate sets that are relevant to compliance score, which further leads to heterogeneity, without considering all sets of covariates.
+
+The second assumption is consistency of&nbsp; <math>\hat{Pr_{Ci}}</math>&nbsp;for <math>Pr_{Ci}</math>&nbsp;and the third assumption is the nonzero compliance for each strata, which is an extension of IV assumption of nonzero compliance over population. This is a reasonable assumption as if compliance score is zero for certain strata, the inverse of it would be infinite.
+
+ICSW estimator is more sensible than that of IV estimator, as it incorporate more covariate information, such that the estimator might have higher variances. This is a general problem for IPW-style estimation. The problem is exaggerated when there is only a small population in certain strata and compliance rate is low.&nbsp; One way to compromise it to winsorize the estimates, in this paper they set the threshold as =0.275. If compliance score for lower than 0.275, it is replaced by this value. Bootstrap is also recommended in the entire process to reduce uncertainty(Abadie 2002).<ref>{{Cite journal|last=Abadie|first=Alberto|date=March 2002|title=Bootstrap Tests for Distributional Treatment Effects in Instrumental Variable Models|journal=Journal of the American Statistical Association|volume=97|issue=457|pages=284–292|doi=10.1198/016214502753479419|issn=0162-1459|citeseerx=10.1.1.337.3129}}</ref>
+
+==== Reweighting under monotonicity assumption ====
+{{more citations needed|section|date=December 2018}}
+In another approach, one might assume that an underlying utility model links the never-takers, compliers, and always-takers. The ATE can be estimated by reweighting based on an extrapolation of the complier treated and untreated potential outcomes to the never-takers and always-takers. The following method is one that has been proposed by Amanda Kowalski.<ref name=":1" />
+
+First, all subjects are assumed to have a utility function, determined by their individual gains from treatment and costs from treatment. Based on an underlying assumption of monotonicity, the never-takers, compliers, and always-takers can be arranged on the same continuum based on their utility function. This assumes that the always-takers have such a high utility from taking the treatment that they will take it even without encouragement. On the other hand, the never-takers have such a low utility function that they will not take the treatment despite encouragement. Thus, the never-takers can be aligned with the compliers with the lowest utilities, and the always-takers with the compliers with the highest utility functions.
+
+In an experimental population, several aspects can be observed: the treated potential outcomes of the always-takers (those who are treated in the control group); the untreated potential outcomes of the never-takers (those who remain untreated in the treatment group); the treated potential outcomes of the always-takers and compliers (those who are treated in the treatment group); and the untreated potential outcomes of the compliers and never-takers (those who are untreated in the control group). However, the treated and untreated potential outcomes of the compliers should be extracted from the latter two observations. To do so, the LATE must be extracted from the treated population.
+
+Assuming no defiers, it can be assumed that the treated group in the treatment condition consists of both always-takers and compliers. From the observations of the treated outcomes in the control group, the average treated outcome for always-takers can be extracted, as well as their share of the overall population. As such, the weighted average can be undone and the treated potential outcome for the compliers can be obtained; then, the LATE is subtracted to get the untreated potential outcomes for the compliers. This move will then allow extrapolation from the compliers to obtain the ATE.
+
+Returning to the weak monotonicity assumption, which assumes that the utility function always runs in one direction, the utility of a marginal complier would be similar to the utility of a never-taker on one end, and that of an always-taker on the other end. The always-takers will have the same untreated potential outcomes as the compliers, which is its maximum untreated potential outcome. Again, this is based on the underlying utility model linking the subgroups, which assumes that the utility function of an always-taker would not be lower than the utility function of a complier. The same logic would apply to the never-takers, who are assumed to have a utility function that will always be lower than that of a complier.
+
+Given this, extrapolation is possible by projecting the untreated potential outcomes of the compliers to the always-takers, and the treated potential outcomes of the compliers to the never-takers. In other words, if it is assumed that the untreated compliers are informative about always-takers, and the treated compliers are informative about never-takers, then comparison is now possible among the treated always-takers to their “as-if” untreated always-takers, and the untreated never-takers can be compared to their “as-if” treated counterparts. This will then allow the calculation of the overall treatment effect. Extrapolation under the weak monotonicity assumption will provide a bound, rather than a point-estimate.
+
+=== Limitations ===
+The estimation of the extrapolation to ATE from the LATE requires certain key assumptions, which may vary from one approach to another. While some may assume homogeneity within covariates, and thus extrapolate based on strata,<ref name=":0b" /> others may instead assume [[Monotonic function|monotonicity]].<ref name=":1" />&nbsp; All will assume the absence of defiers within the experimental population. Some of these assumptions may be weaker than others—for example, the monotonicity assumption is weaker than the [[ignorability]] assumption. However, there are other trade-offs to consider, such as whether the estimates produced are point-estimates, or bounds. Ultimately, the literature on generalizing the LATE relies entirely on key assumptions. It is not a design-based approach per se, and the field of experiments is not usually in the habit of comparing groups unless they are randomly assigned. Even in case when assumptions are difficult to verify, researcher can incorporate through the foundation of experiment design. For example, in a typical field experiment where instrument is&nbsp; “encouragement to treatment”, treatment heterogeneity could be detected by varying intensity of encouragement. If the compliance rate remains stable under different intensity, if could be a signal of homogeneity across groups. Thus, it is important to be a smart consumer of this line of literature, and examine whether the key assumptions are going to be valid in each experimental case.
+
+== References ==
+{{Reflist}}
+
+==Further reading==
+*{{Cite book|last=Angrist|first=Joshua D.|pages=401–434|publisher=Cambridge University Press|isbn=9781139060035|last2=Fernández-Val|first2=Iván|doi=10.1017/cbo9781139060035.012|title=Advances in Economics and Econometrics|year=2013}}
+
+[[Category:Econometrics]]
+[[Category:Medical statistics]]

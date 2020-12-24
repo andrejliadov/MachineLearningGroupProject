@@ -1,0 +1,49 @@
+{{short description|Algorithm in numerical linear algebra}}
+In [[numerical linear algebra]], the '''Bartels–Stewart algorithm''' is used to numerically solve the [[Sylvester equation|Sylvester matrix equation]] <math> AX - XB = C</math>. Developed by R.H. Bartels and G.W. Stewart in 1971,<ref name=":0">{{Cite journal|last1=Bartels|first1=R. H.|last2=Stewart|first2=G. W.|date=1972|title=Solution of the matrix equation AX + XB = C [F4]|journal=Communications of the ACM|volume=15|issue=9|pages=820–826|doi=10.1145/361573.361582|issn=0001-0782}}</ref> it was the first [[numerical stability|numerically stable]] method that could be systematically applied to solve such equations. The algorithm works by using the [[Schur decomposition|real Schur decompositions]] of <math>A</math> and <math>B</math> to transform <math> AX - XB = C</math> into a triangular system that can then be solved using forward or backward substitution. In 1979, [[Gene H. Golub|G. Golub]], [[Charles F. Van Loan|C. Van Loan]] and S. Nash introduced an improved version of the algorithm,<ref name=":1">{{Cite journal|last1=Golub|first1=G.|last2=Nash|first2=S.|last3=Loan|first3=C. Van|date=1979|title=A Hessenberg–Schur method for the problem AX + XB= C|journal=IEEE Transactions on Automatic Control|volume=24|issue=6|pages=909–913|doi=10.1109/TAC.1979.1102170|issn=0018-9286|hdl=1813/7472|hdl-access=free}}</ref> known as the Hessenberg–Schur algorithm. It remains a standard approach for solving [[Sylvester equation| Sylvester equations]] when <math>X</math> is of small to moderate size.
+
+== The algorithm ==
+Let <math>X, C \in \mathbb{R}^{m \times n}</math>, and assume that the eigenvalues of <math>A</math> are distinct from the eigenvalues of <math>B</math>. Then, the matrix equation <math> AX - XB = C</math> has a unique solution. The Bartels–Stewart algorithm computes <math>X</math> by applying the following steps:<ref name=":1" /> 
+
+1.Compute the [[Schur decomposition|real Schur decompositions]]
+
+: <math>R = U^TAU,</math>
+
+: <math>S = V^TB^TV.</math>
+
+The matrices <math>R</math> and <math>S</math> are block-upper triangular matrices, with diagonal blocks of size <math>1 \times 1</math> or <math>2 \times 2</math>.
+
+2. Set <math>F = U^TCV.</math>
+
+3. Solve the  simplified system <math>RY - YS^T = F</math>, where <math>Y = U^TXV</math>. This can be done using forward substitution on the blocks. Specifically, if <math>s_{k-1, k} = 0</math>, then
+
+: <math>(R - s_{kk}I)y_k = f_{k} + \sum_{j = k+1}^n s_{kj}y_j,</math>
+
+where <math>y_k</math>is the <math>k</math>th column of <math>Y</math>. When <math>s_{k-1, k} \neq 0</math>, columns <math>[ y_{k-1} \mid y_{k}]</math>  should be concatenated and solved for simultaneously. 
+
+4. Set <math>X = UYV^T.</math>
+
+=== Computational cost ===
+Using the [[QR algorithm]], the [[Schur decomposition| real Schur decompositions]] in step 1 require approximately <math>10(m^3 + n^3)</math> flops, so that the overall computational cost is  <math>10(m^3 + n^3) + 2.5(mn^2 + nm^2)</math>.<ref name=":1" /> 
+
+=== Simplifications and special cases ===
+In the special case where <math>B=-A^T</math> and <math>C</math> is symmetric, the solution <math>X</math> will also be symmetric. This symmetry can be exploited so that <math>Y</math> is found more efficiently in step 3 of the algorithm.<ref name=":0" />
+
+== The Hessenberg–Schur algorithm ==
+The Hessenberg–Schur algorithm<ref name=":1" /> replaces the decomposition <math>R = U^TAU</math> in step 1 with the decomposition <math>H = Q^TAQ</math>, where <math>H</math> is an [[Hessenberg matrix| upper-Hessenberg matrix]]. This leads to a system of the form <math> HY - YS^T = F</math> that can be solved using forward substitution. The advantage of this approach is that <math>H = Q^TAQ</math> can be found using [[Householder transformation| Householder reflections]] at a cost of <math>(5/3)m^3</math> flops, compared to the <math>10m^3</math> flops required to compute the real Schur decomposition of <math>A</math>. 
+
+== Software and implementation ==
+The subroutines required for the Hessenberg-Schur variant of the Bartels–Stewart  algorithm are implemented in the SLICOT library. These are used in the MATLAB control system toolbox.
+
+== Alternative approaches ==
+For large systems, the <math>\mathcal{O}(m^3 + n^3)</math> cost of the Bartels–Stewart algorithm can be prohibitive. When <math>A</math> and <math>B</math> are sparse or structured, so that linear solves and matrix vector multiplies involving them are efficient, iterative algorithms can potentially perform better. These include projection-based methods, which use [[Krylov subspace method|Krylov subspace]] iterations, methods based on the [[Alternating direction implicit method|alternating direction implicit]] (ADI) iteration, and hybridizations that involve both projection and ADI.<ref>{{Cite journal|last=Simoncini|first=V.|s2cid=17271167|date=2016|title=Computational Methods for Linear Matrix Equations|journal=SIAM Review|language=en-US|volume=58|issue=3|pages=377–441|doi=10.1137/130912839|issn=0036-1445}}</ref>  Iterative methods can also be used to directly construct [[Low-rank approximation|low rank approximations]] to <math>X</math> when solving <math>AX-XB = C</math>. 
+
+== References ==
+{{Reflist}}
+
+{{Numerical linear algebra}}
+
+{{DEFAULTSORT:Bartels-Stewart algorithm}}
+[[Category:Algorithms]]
+[[Category:Control theory]]
+[[Category:Matrices]]
+[[Category:Numerical linear algebra]]

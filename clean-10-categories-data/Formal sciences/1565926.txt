@@ -1,0 +1,372 @@
+{{Short description|Branch of statistics to estimate models based on measured data}}
+
+{{distinguish-redirect|Parameter estimation|Point estimation|Interval estimation}}
+{{other uses|Estimation (disambiguation)}}
+
+'''Estimation theory''' is a branch of [[statistics]] that deals with estimating the values of [[Statistical parameter|parameters]] based on measured empirical data that has a random component.  The parameters describe an underlying physical setting in such a way that their value affects the distribution of the measured data. An [[estimator]] attempts to approximate the unknown parameters using the measurements.
+
+In estimation theory, two approaches are generally considered.<ref>
+{{cite book |last1=Walter |first1=E. |last2=Pronzato |first2=L. |title=Identification of Parametric Models from Experimental Data |year=1997 |publisher=Springer-Verlag |location=London, England }}
+</ref>
+
+* The probabilistic approach (described in this article) assumes that the measured data is random with [[probability distribution]] dependent on the parameters of interest
+* The [[set estimation|set-membership approach]] assumes that the measured data vector belongs to a set which depends on the parameter vector.
+
+== Examples ==
+For example, it is desired to estimate the proportion of a population of voters who will vote for a particular candidate.  That proportion is the parameter sought; the estimate is based on a small random sample of voters. Alternatively, it is desired to estimate the probability of a voter voting for a particular candidate, based on some demographic features, such as age.
+
+Or, for example, in [[radar]] the aim is to find the range of objects (airplanes, boats, etc.) by analyzing the two-way transit timing of received echoes of transmitted pulses. Since the reflected pulses are unavoidably embedded in electrical noise, their measured values are randomly distributed, so that the transit time must be estimated.
+
+As another example, in electrical communication theory, the measurements which contain information regarding the parameters of interest are often associated with a [[noise (physics)|noisy]] [[signal (electrical engineering)|signal]].
+
+== Basics ==
+For a given model, several statistical "ingredients" are needed so the estimator can be implemented. The first is a [[statistical sample]] – a set of data points taken from a [[random vector]] (RV) of size ''N''. Put into a [[vector (geometric)|vector]],
+
+: <math>\mathbf{x} = \begin{bmatrix} x[0] \\ x[1] \\ \vdots \\ x[N-1] \end{bmatrix}.</math>
+
+Secondly, there are ''M'' parameters
+
+: <math>\mathbf{\theta} = \begin{bmatrix} \theta_1 \\ \theta_2 \\ \vdots \\ \theta_M \end{bmatrix},</math>
+
+whose values are to be estimated. Third, the continuous [[probability density function]] (pdf) or its discrete counterpart, the [[probability mass function]] (pmf), of the underlying distribution that generated the data must be stated conditional on the values of the parameters:
+
+: <math>p(\mathbf{x} | \mathbf{\theta}).\,</math>
+
+It is also possible for the parameters themselves to have a probability distribution (e.g., [[Bayesian statistics]]). It is then necessary to define the [[Bayesian probability]]
+
+: <math>\pi( \mathbf{\theta}).\,</math>
+
+After the model is formed, the goal is to estimate the parameters, with the estimates commonly denoted <math>\hat{\mathbf{\theta}}</math>, where the "hat" indicates the estimate.
+
+One common estimator is the [[minimum mean squared error]] (MMSE) estimator, which utilizes the error between the estimated parameters and the actual value of the parameters
+
+: <math>\mathbf{e} = \hat{\mathbf{\theta}} - \mathbf{\theta}</math>
+
+as the basis for optimality.  This error term is then squared and the [[expected value]] of this squared value is minimized for the MMSE estimator.
+
+==Estimators==
+{{main|Estimator}}
+
+Commonly used estimators (estimation methods) and topics related to them include:
+*[[Maximum likelihood]] estimators
+*[[Bayes estimator]]s
+*[[method of moments (statistics)|Method of moments]] estimators
+*[[Cramér–Rao bound]]
+*[[Least squares]]
+*[[Minimum mean squared error]] (MMSE), also known as Bayes least squared error (BLSE)
+*[[Maximum a posteriori]] (MAP)
+*[[Minimum variance unbiased estimator]] (MVUE)
+*[[Nonlinear system identification]]
+*[[Best linear unbiased estimator]] (BLUE)
+*Unbiased estimators &mdash; see [[estimator bias]].
+*[[Particle filter]]
+*[[Markov chain Monte Carlo]] (MCMC)
+*[[Kalman filter]], and its various derivatives
+*[[Wiener filter]]
+
+==Examples==
+
+===Unknown constant in additive white Gaussian noise===
+Consider a received [[discrete signal]], <math>x[n]</math>, of <math>N</math> [[statistical independence|independent]] [[statistical sample|samples]] that consists of an unknown constant <math>A</math> with [[additive white Gaussian noise]] (AWGN) <math>w[n]</math> with zero [[mean]] and known [[variance]] <math>\sigma^2</math> (''i.e.'', <math>\mathcal{N}(0, \sigma^2)</math>).
+Since the variance is known then the only unknown parameter is <math>A</math>.
+
+The model for the signal is then
+: <math>x[n] = A + w[n] \quad n=0, 1, \dots, N-1</math>
+
+Two possible (of many) estimators for the parameter <math>A</math> are:
+* <math>\hat{A}_1 = x[0]</math>
+* <math>\hat{A}_2 = \frac{1}{N} \sum_{n=0}^{N-1} x[n]</math> which is the [[sample mean]]
+
+Both of these estimators have a [[mean]] of <math>A</math>, which can be shown through taking the [[expected value]] of each estimator
+
+:<math>\mathrm{E}\left[\hat{A}_1\right] = \mathrm{E}\left[ x[0] \right] = A</math>
+and
+:<math>
+\mathrm{E}\left[ \hat{A}_2 \right]
+=
+\mathrm{E}\left[ \frac{1}{N} \sum_{n=0}^{N-1} x[n] \right]
+=
+\frac{1}{N} \left[ \sum_{n=0}^{N-1} \mathrm{E}\left[ x[n] \right] \right]
+=
+\frac{1}{N} \left[ N A \right]
+=
+A
+</math>
+
+At this point, these two estimators would appear to perform the same.
+However, the difference between them becomes apparent when comparing the variances.
+
+:<math>\mathrm{var} \left( \hat{A}_1 \right) = \mathrm{var} \left( x[0] \right) = \sigma^2</math>
+and
+:<math>
+\mathrm{var} \left( \hat{A}_2 \right)
+=
+\mathrm{var} \left( \frac{1}{N} \sum_{n=0}^{N-1} x[n] \right)
+\overset{\text{independence}}{=}
+\frac{1}{N^2} \left[ \sum_{n=0}^{N-1} \mathrm{var} (x[n]) \right]
+=
+\frac{1}{N^2} \left[ N \sigma^2 \right]
+=
+\frac{\sigma^2}{N}
+</math>
+
+It would seem that the sample mean is a better estimator since its variance is lower for every&nbsp;''N''&nbsp;>&nbsp;1.
+
+====Maximum likelihood====
+{{main|Maximum likelihood}}
+
+Continuing the example using the [[maximum likelihood]] estimator, the [[probability density function]] (pdf) of the noise for one sample <math>w[n]</math> is
+
+:<math>p(w[n]) = \frac{1}{\sigma \sqrt{2 \pi}} \exp\left(- \frac{1}{2 \sigma^2} w[n]^2 \right)</math>
+
+and the probability of <math>x[n]</math> becomes (<math>x[n]</math> can be thought of a <math>\mathcal{N}(A, \sigma^2)</math>)
+
+:<math>p(x[n]; A) = \frac{1}{\sigma \sqrt{2 \pi}} \exp\left(- \frac{1}{2 \sigma^2} (x[n] - A)^2 \right)</math>
+
+By [[statistical independence|independence]], the probability of <math>\mathbf{x}</math> becomes
+
+:<math>
+p(\mathbf{x}; A)
+=
+\prod_{n=0}^{N-1} p(x[n]; A)
+=
+\frac{1}{\left(\sigma \sqrt{2\pi}\right)^N}
+\exp\left(- \frac{1}{2 \sigma^2} \sum_{n=0}^{N-1}(x[n] - A)^2 \right)
+</math>
+
+Taking the [[natural logarithm]] of the pdf
+
+:<math>
+\ln p(\mathbf{x}; A)
+=
+-N \ln \left(\sigma \sqrt{2\pi}\right)
+- \frac{1}{2 \sigma^2} \sum_{n=0}^{N-1}(x[n] - A)^2
+</math>
+
+and the maximum likelihood estimator is
+
+:<math>\hat{A} = \arg \max \ln p(\mathbf{x}; A)</math>
+
+Taking the first [[derivative]] of the log-likelihood function
+
+:<math>
+\frac{\partial}{\partial A} \ln p(\mathbf{x}; A)
+=
+\frac{1}{\sigma^2} \left[ \sum_{n=0}^{N-1}(x[n] - A) \right]
+=
+\frac{1}{\sigma^2} \left[ \sum_{n=0}^{N-1}x[n] - N A \right]
+</math>
+
+and setting it to zero
+
+:<math>
+0
+=
+\frac{1}{\sigma^2} \left[ \sum_{n=0}^{N-1}x[n] - N A \right]
+=
+\sum_{n=0}^{N-1}x[n] - N A
+</math>
+
+This results in the maximum likelihood estimator
+
+:<math>
+\hat{A} = \frac{1}{N} \sum_{n=0}^{N-1}x[n]
+</math>
+
+which is simply the sample mean.
+From this example, it was found that the sample mean is the maximum likelihood estimator for <math>N</math> samples of a fixed, unknown parameter corrupted by AWGN.
+
+====Cramér–Rao lower bound====
+{{details|Cramér–Rao bound}}
+
+To find the [[Cramér–Rao lower bound]] (CRLB) of the sample mean estimator, it is first necessary to find the [[Fisher information]] number
+
+:<math>
+\mathcal{I}(A)
+=
+\mathrm{E}
+\left(
+ \left[
+  \frac{\partial}{\partial A} \ln p(\mathbf{x}; A)
+ \right]^2
+\right)
+=
+-\mathrm{E}
+\left[
+ \frac{\partial^2}{\partial A^2} \ln p(\mathbf{x}; A)
+\right]
+</math>
+
+and copying from above
+
+:<math>
+\frac{\partial}{\partial A} \ln p(\mathbf{x}; A)
+=
+\frac{1}{\sigma^2} \left[ \sum_{n=0}^{N-1}x[n] - N A \right]
+</math>
+
+Taking the second derivative
+:<math>
+\frac{\partial^2}{\partial A^2} \ln p(\mathbf{x}; A)
+=
+\frac{1}{\sigma^2} (- N)
+=
+\frac{-N}{\sigma^2}
+</math>
+
+and finding the negative expected value is trivial since it is now a deterministic constant
+<math>
+-\mathrm{E}
+\left[
+ \frac{\partial^2}{\partial A^2} \ln p(\mathbf{x}; A)
+\right]
+=
+\frac{N}{\sigma^2}
+</math>
+
+Finally, putting the Fisher information into
+
+:<math>
+\mathrm{var}\left( \hat{A} \right)
+\geq
+\frac{1}{\mathcal{I}}
+</math>
+
+results in
+
+:<math>
+\mathrm{var}\left( \hat{A} \right)
+\geq
+\frac{\sigma^2}{N}
+</math>
+
+Comparing this to the variance of the sample mean (determined previously) shows that the sample mean is ''equal to'' the Cramér–Rao lower bound for all values of <math>N</math> and <math>A</math>.
+In other words, the sample mean is the (necessarily unique) [[efficient estimator]], and thus also the [[minimum variance unbiased estimator]] (MVUE), in addition to being the [[maximum likelihood]] estimator.
+
+===Maximum of a uniform distribution===
+{{main|German tank problem}}
+
+One of the simplest non-trivial examples of estimation is the estimation of the maximum of a uniform distribution. It is used as a hands-on classroom exercise and to illustrate basic principles of estimation theory. Further, in the case of estimation based on a single sample, it demonstrates philosophical issues and possible misunderstandings in the use of [[maximum likelihood]] estimators and [[likelihood functions]].
+
+Given a [[discrete uniform distribution]] <math>1,2,\dots,N</math> with unknown maximum, the [[UMVU]] estimator for the maximum is given by
+:<math>\frac{k+1}{k} m - 1 = m + \frac{m}{k} - 1</math>
+where ''m'' is the [[sample maximum]] and ''k'' is the [[sample size]], sampling without replacement.<ref name="Johnson">{{citation
+|last=Johnson
+|first=Roger
+|title=Estimating the Size of a Population
+|year=1994
+|journal=Teaching Statistics
+|volume=16
+|issue=2 (Summer)
+|doi=10.1111/j.1467-9639.1994.tb00688.x
+|pages=50–52
+}}</ref><ref name="Johnson2">{{citation
+ |last=Johnson 
+ |first=Roger 
+ |contribution=Estimating the Size of a Population 
+ |title=Getting the Best from Teaching Statistics 
+ |year=2006 
+ |url=http://www.rsscse.org.uk/ts/gtb/contents.html 
+ |contribution-url=http://www.rsscse.org.uk/ts/gtb/johnson.pdf 
+ |url-status=dead 
+ |archiveurl=https://web.archive.org/web/20081120085633/http://www.rsscse.org.uk/ts/gtb/contents.html 
+ |archivedate=November 20, 2008 
+}}</ref> This problem is commonly known as the [[German tank problem]], due to application of maximum estimation to estimates of German tank production during [[World War II]].
+
+The formula may be understood intuitively as;
+:"The sample maximum plus the average gap between observations in the sample",
+the gap being added to compensate for the negative bias of the sample maximum as an estimator for the population maximum.{{NoteTag|The sample maximum is never more than the population maximum, but can be less, hence it is a [[biased estimator]]: it will tend to ''underestimate'' the population maximum.}}
+
+This has a variance of<ref name="Johnson" />
+:<math>\frac{1}{k}\frac{(N-k)(N+1)}{(k+2)} \approx \frac{N^2}{k^2} \text{ for small samples } k \ll N</math>
+so a standard deviation of approximately <math>N/k</math>, the (population) average size of a gap between samples; compare <math>\frac{m}{k}</math> above. This can be seen as a very simple case of [[maximum spacing estimation]].
+
+The sample maximum is the [[maximum likelihood]] estimator for the population maximum, but, as discussed above, it is biased.
+
+== Applications ==
+
+Numerous fields require the use of estimation theory.
+Some of these fields include (but are by no means limited to):
+* Interpretation of scientific [[experiment]]s
+* [[Signal processing]]
+* [[Clinical trial]]s
+* [[Opinion poll]]s
+* [[Quality control]]
+* [[Telecommunication]]s
+* [[Project management]]
+* [[Software engineering]]
+* [[Control theory]] (in particular [[Adaptive control]])
+* [[Network intrusion detection system]]
+* [[Orbit determination]]
+
+Measured data are likely to be subject to [[noise (physics)|noise]] or uncertainty and it is through statistical [[probability]] that [[optimization (mathematics)|optimal]] solutions are sought to extract as much [[Fisher information|information]] from the data as possible.
+
+== See also ==
+{{Main category|Estimation theory}}
+{{colbegin}}
+* [[Best linear unbiased estimator]] (BLUE)
+* [[Chebyshev center]]
+* [[Completeness (statistics)]]
+* [[Cramér–Rao bound]]
+* [[Detection theory]]
+* [[Efficiency (statistics)]]
+* [[Estimator]], [[Estimator bias]]
+* [[Expectation-maximization algorithm]] (EM algorithm)
+* [[Fermi problem]]
+* [[Grey box model]]
+* [[Information theory]]
+* [[Kalman filter]]
+* [[Least-squares spectral analysis]]
+* [[Markov chain Monte Carlo]] (MCMC)
+* [[Matched filter]]
+* [[Maximum a posteriori]] (MAP)
+* [[Maximum likelihood]]
+* [[Maximum entropy spectral estimation]]
+* [[Method of moments (statistics)|Method of moments]], [[generalized method of moments]]
+* [[Minimum mean squared error]] (MMSE)
+* [[Minimum variance unbiased estimator]] (MVUE)
+*[[Nonlinear system identification]]
+* [[Nuisance parameter]]
+* [[Parametric equation]]
+* [[Pareto principle]]
+* [[Particle filter]]
+* [[Rao–Blackwell theorem]]
+* [[Rule of three (statistics)]]
+* [[Spectral density]], [[Spectral density estimation]]
+* [[Statistical signal processing]]
+* [[Sufficiency (statistics)]]
+* [[Wiener filter]]
+{{colend}}
+
+== Notes ==
+{{NoteFoot}}
+
+==References==
+===Citations===
+{{Reflist}}
+
+===Sources===
+{{refbegin}}
+* ''Theory of Point Estimation'' by E.L. Lehmann and G. Casella. ({{ISBN|0387985026}})
+* ''Systems Cost Engineering'' by Dale Shermon. ({{ISBN|978-0-566-08861-2}})
+* ''Mathematical Statistics and Data Analysis'' by John Rice. ({{ISBN|0-534-209343}})
+* ''Fundamentals of Statistical Signal Processing: Estimation Theory'' by Steven M. Kay ({{ISBN|0-13-345711-7}})
+* ''An Introduction to Signal Detection and Estimation'' by H. Vincent Poor ({{ISBN|0-387-94173-8}})
+* ''Detection, Estimation, and Modulation Theory, Part 1'' by Harry L. Van Trees ({{ISBN|0-471-09517-6}}; [https://web.archive.org/web/20050428233957/http://gunston.gmu.edu/demt/demtp1/ website])
+* ''Optimal State Estimation: Kalman, H-infinity, and Nonlinear Approaches'' by Dan Simon [http://academic.csuohio.edu/simond/estimation/ website]
+* [[Ali H. Sayed]], Adaptive Filters, Wiley, NJ, 2008, {{ISBN|978-0-470-25388-5}}.
+* [[Ali H. Sayed]], Fundamentals of Adaptive Filtering, Wiley, NJ, 2003, {{ISBN|0-471-46126-1}}.
+* [[Thomas Kailath]], [[Ali H. Sayed]], and [[Babak Hassibi]], Linear Estimation, Prentice-Hall, NJ, 2000, {{ISBN|978-0-13-022464-4}}.
+* [[Babak Hassibi]], [[Ali H. Sayed]], and [[Thomas Kailath]], Indefinite Quadratic Estimation and Control: A Unified Approach to H<sup>2</sup> and H<sup><math>\infty</math></sup> Theories, Society for Industrial & Applied Mathematics (SIAM), PA, 1999, {{ISBN|978-0-89871-411-1}}.
+* V.G.Voinov, M.S.Nikulin, "Unbiased estimators and their applications. Vol.1: Univariate case",  Kluwer Academic Publishers, 1993, {{ISBN|0-7923-2382-3}}.
+* V.G.Voinov, M.S.Nikulin, "Unbiased estimators and their applications. Vol.2: Multivariate case",  Kluwer Academic Publishers, 1996, {{ISBN|0-7923-3939-8}}.
+{{refend}}
+
+==External links==
+*{{Commonscatinline}}
+
+{{DSP}}
+
+[[Category:Estimation theory| ]]
+[[Category:Signal processing]]
+[[Category:Mathematical and quantitative methods (economics)]]

@@ -1,0 +1,183 @@
+In [[computer science]] and [[mathematics]], more precisely in [[automata theory]], [[model theory]] and [[formal language]], a '''regular numerical predicate''' is a kind of relation over integers. Regular numerical predicates can also be considered as a subset of <math>\mathbb N^r</math> for some arity <math>r</math>. One of the main interests of this class of predicates is that it can be defined in plenty of different ways, using different logical formalisms. Furthermore, most of the definitions use only basic notions, and thus allows to relate foundations of various fields of fundamental computer science such as [[automata|automata theory]], [[syntactic semigroup]], [[model theory]] and [[semigroup theory]].
+
+The class of regular numerical predicate is denoted <math>\mathcal C_{lca}</math><ref name="Peladeau"/>{{rp|140}}, <math>\mathcal N_{\mathtt{thres, mod}}</math><ref name="Choffrut">{{cite journal |last1=Choffrut |first1=Christian |title=Deciding whether a relation defined in Presburger logic can be defined in weaker logics |journal=RAIRO - Theoretical Informatics and Applications |date=January 2008 |volume=42 |issue=1 |pages=121-135 |doi=10.1051/ita:2007047}}</ref> and REG.<ref name="Straubing">{{cite book |last1=Straubing |first1=Howard |title=Finite Automata, Formal Logic and Circuit Complexity |date=1994 |publisher=Birkhäser |isbn=978-1-4612-0289-9}}</ref>
+
+== Definitions ==
+The class of '''regular numerical predicate''' admits a lot of equivalent definitions. They are now given. In all of those definitions, we fix <math>r\in\mathbb N</math> and <math>P\subseteq\mathbb N^r</math> a (numerical) predicate of arity <math>r</math>.
+
+=== Automata with variables ===
+The first definition encodes predicate as a [[formal language]]. A predicate is said to be regular if the formal language is [[regular language|regular]]<ref name="Straubing"/>{{rp|25}}.
+
+Let the alphabet <math>A</math> be the set of subset of <math>\{1,\dots,r\}</math>. Given a vector of <math>r</math> integers <math>\mathbf n=(n_0,\dots,n_{r-1})\in\mathbb N^r</math>, it is represented by the word <math>\overline{\mathbf n}</math> of length <math>\max(n_0,\dots,n_{r-1})</math> whose <math>i</math>-th letter is <math>\{j\mid n_j=i\}</math>. For example, the vector <math>(3,1,3)</math> is represented by the word <math>\emptyset\{1\}\emptyset\{0,2\}</math>.
+
+We then define <math>\overline P</math> as <math>\{\overline {\mathbf n}\mid\mathbf n\}</math>.
+
+The numerical predicate <math>P</math> is said to be regular if <math>\overline P</math> is a [[regular language]] over the alphabet <math>A</math>. This is the reason for the use of the word "regular" to describe this kind of numerical predicate.
+
+=== Automata reading unary numbers ===
+This second definition is similar to the previous one. Predicates are encoded into languages in a different way, and the predicate is said to be regular if and only if the language is regular<ref name="Straubing"/>{{rp|25}}.
+
+Our alphabet <math>A</math> is the set of vectors of <math>r</math> binary digits. That is: <math>\{0,1\}^r</math>. Before explaining how to encode a vector of numbers, we explain how to encode a single number.
+
+Given a length <math>l</math> and a number <math>n\le l</math>, the unary representation of <math>n</math> of length <math>l</math> is the word <math>\mid{n}\mid_l</math> over the binary alphabet <math>\{0,1\}</math>, beginning by a sequence of <math>n</math> "1"'s, followed by <math>n-l</math> "0"'s. For example, the unary representation of 1 of length 4 is  <math>1000</math>.
+
+Given a vector of <math>r</math> integers <math>\mathbf n=(n_0,\dots,n_{r-1})\in\mathbb N^r</math>, let <math>l=\max(n_0,\dots,n_{r-1})</math>. The vector <math>\mathbf n</math> is represented by the word <math>\overline{\mathbf n}\in\left(\{0,1\}^r\right)^*</math> such that, the projection of <math>\overline{\mathbf n}</math> over it's <math>i</math>-th component is <math>\mid{n_i}\mid_{\max(n_0,\dots,n_{r-1})}</math>. For example, the representation of <math>(3,1,3)</math> is <math>\begin{array}{l|l|l}1&1&1\\1&0&0\\1&1&1\end{array}</math>. This is a word whose letters are the vectors <math>(1,1,1)</math>, <math>(1,0,0)</math> and <math>(1,0,0)</math> and whose projection over each components are <math>111</math>, <math>100</math> and <math>111</math>.
+
+As in the previous definition, the numerical predicate <math>P</math> is said to be regular if <math>\overline P</math> is a [[regular language]] over the alphabet <math>A</math>.
+
+=== <math>(\exists)MSO(+1)</math> ===
+A predicate is regular if and only if it can be defined by a [[monadic second order]] formula <math>\phi(x_0,\dots,x_{r-1})</math>, or equivalently by an existential monadic second order formula, where the only atomic predicate is the successor function <math>y+1=z</math><ref name="Straubing"/>{{rp|26}}.
+
+=== <math>FO(\le,\mod)</math> ===
+A predicate is regular if and only if it can be defined by a first order logic formula <math>\phi(x_0,\dots,x_{r-1})</math>, where the atomic predicates are:
+* the order relation <math>y\le z</math>,
+* the predicate stating that a number is a multiple of a constant <math>m</math>, that is <math>y\equiv 0\mod m</math><ref name="Straubing"/>{{rp|26}}.
+
+=== Congruence arithmetic ===
+The '''language of congruence arithmetic'''<ref name="Peladeau"/>{{rp|140}} is defined as the est of Boolean combinations, where  the atomic predicates are:
+* the addition of a constant <math>x_i+c=x_j</math>, with <math>c</math> an integral constant,
+* the order relation <math>x_i\le x_j</math>,
+* the modular relations, with a fixed modular value. That is, predicates of the form <math>x_i\equiv c\mod m</math> where <math>c</math> and <math>m</math> are fixed constants and <math>x</math> is a variable.
+
+A predicate is regular if and only if it can be defined in the language of congruence arithmetic. The equivalence with previous definition is due to quantifier elimination<ref>{{cite book |last1=Smoryński. |first1=Craig A. |title=Logical number theory. 1. , an introduction. |date=1991 |publisher=Springer |isbn=978-3-642-75462-3 |page=322}}</ref>.
+
+=== Using recursion and patterns ===
+This definition requires a fixed parameter <math>m</math>. A set is said to be regular if it is '''<math>m</math>-regular''' for some <math>m\ge2</math>. 
+In order to introduce the definition of '''<math>m</math>-regular''', the trivial case where <math>r=0</math> should be considered separately. When <math>r=0</math>, then the predicate <math>P</math> is either the constant true or the constant false. Those two predicates are said to be <math>m</math>-regular. Let us now assume that <math>r\ge1</math>. In order to introduce the definition of regular predicate in this case, we need to introduce the notion of '''section of a predicate'''.
+
+The section <math>P^{x_i=c}</math> of <math>P</math> is the predicate of arity <math>r-1</math> where the <math>i</math>-th component is fixed to <math>c</math>. Formally, it is defined as <math>\{(x_0,\dots,x_{i-1},x_{i+1},\dots,x_{r-1})\mid P(x_0,\dots,x_{i-1},c,x_{i+1},\dots,x_{r-1})\}</math>. For example, let us consider  the sum predicate <math>S=\{(n_0,n_1,n_2)\mid n_0+n_1=n_2\}</math>. Then <math>S^{x_0=c}=\{(n_1,n_2)\mid c+n_1=n_2\}</math> is the predicate which adds the constant <math>c</math>, and <math>S^{x_2=c}=\{(n_0,n_1)\mid n_0+n_1=c\}</math> is the predicate which states that the sum of its two elements is <math>c</math>.
+
+The last equivalent definition of regular predicate can now be given. A predicate <math>P</math> of arity <math>r\ge1</math> is regular if it satisfies the two following conditions<ref name="milchior">{{cite journal |last1=Milchior |first1=Arthur |title=Undecidability of satisfiability of expansions of FO [&lt;] with a Semilinear Non Regular Predicate over words. |journal=The nature of computation |date=January 2017  |pages=161-170}}</ref>:
+* all of its sections are regular,
+* there exists a threshold <math>t\in\mathbb N</math> such that, for each vectors <math>(n_0,\dots,n_r)\in\mathbb N^r</math> with each <math>n_i\ge t</math>, <math>P(n_0,\dots,n_r)\iff P(n_0+m,\dots,n_r+m)</math>.
+
+The second property intuitively means that, when number are big enough, then their exact value does not matter. The properties which matters are the order relation between the numbers and their value modulo the period <math>m</math>.
+
+=== Using recognizable semigroups ===
+Given a subset <math>s\subseteq\{0,\dots,r-1\}</math>, let <math>\overline s</math> be the characteristic vector of <math>s</math>. That is, the vector in <math>\{0,1\}^r</math> whose <math>i</math>-th component is 1 if <math>i\in s</math>, and 0 otherwise. Given a sequence <math>\mathbf s=s_0\subsetneq\dots\subsetneq s_{p-1}</math> of sets, let <math>P_{\mathbf s}=\{(n_0,\dots,n_{p-1})\in\mathbb N^p\mid P(\sum n_ie_i)\}</math>.
+
+The predicate <math>P</math> is regular if and only if for each increasing sequence of set <math>\mathbf s</math>, <math>P_{\mathbf s}</math> is a [[recognizable set|recognizable submonoid]] of <math>\mathbb N^p</math><ref name="Choffrut"/>.
+
+=== Definition of non regular language ===
+The predicate <math>P</math> is regular if and only if all languages which can be defined in first order logic with atomic predicates for letters and the atomic predicate <math>P</math> are regular. The same property would hold for the monadic second order logic, and with modular quantifiers. <ref name="Peladeau">{{cite journal |last1=Péladeau |first1=Pierre |title=Formulas, regular languages and Boolean circuits|journal=Theoretical Computer Science|date=1992 |pages=133-142|volume=101}}</ref>
+
+=== Reducing arity ===
+The following property allows to reduce an arbitrarily complex non-regular predicate to a simpler binary predicate which is also non-regular<ref name="milchior"/>.
+
+Let us assume that <math>P</math> is definable in Presburger Arithmetic. The predicate <math>P</math> is non regular if and only if there exists a formula in <math>\mathbf{FO}[\le,R]</math> which defines the multiplication by a rational <math>\frac pq\not\in\{0,1\}</math>. More precisely, it allows to define the non-regular predicate <math>\{(p\times n,q\times n)\mid n\in\mathbb N\}</math> for some <math>p\not\in{0,q}</math>.
+
+== Properties ==
+The class of regular numerical predicate satisfies many properties. 
+
+=== Satisfiability ===
+As in previous case, let us assume that <math>P</math> is definable in Presburger Arithmetic. The satisfiability of <math>\exists\mathbf{MSO}(+1,P)</math> is decidable if and only if <math>P</math> is regular.
+
+This theorem is due to the previous property and the fact that the satisfiability of <math>\exists\mathbf{MSO}(+1,\times{\frac pq})</math> is undecidable when <math>p\ne0</math> and <math>p\ne q</math>.{{citation needed|date=May 2020}}
+
+=== Closure property ===
+The class of regular predicates is closed under union, intersection, complement, taking a section, projection and Cartesian product. All of those properties follows directly from the definition of this class as the class of predicates definable in <math>\mathbf{FO}(\le, \mod) </math>.{{citation needed|date=May 2020}}
+
+=== Decidability ===
+It is decidable whether a predicate defined in [[Presburger arithmetic]] is regular<ref name="Choffrut"/>.
+
+=== Elimination of quantifier ===
+The logic <math>\mathbf{FO}(\le, +c,\mod) </math> considered above admit the elimination of quantifier. More precisely, the algorithm for elimination of quantifier by Cooper<ref name="Cooper">{{cite journal |last1=Cooper |first1=D. C. |title=Theorem Proving in Arithmetic without Multiplication |journal=Machine Intelligence |date=1972 |volume=7 |pages=91-99}}</ref> does not introduce multiplication by constants nor sums of variable. Therefore, when applied to a <math>\mathbf{FO}(\le, +c,\mod) </math> it returns a quantifier-free formula in<math>\mathbf{FO}(\le, +c,\mod)</math>.
+
+==References==
+{{reflist}}
+
+[[Category:Automata (computation)]]
+[[Category:Formal languages| ]]
+[[Category:Theoretical computer science]]
+[[Category:Mathematical logic| ]]In [[computer science]] and [[mathematics]], more precisely in [[automata theory]], [[model theory]] and [[formal language]], a '''regular numerical predicate''' is a kind of relation over integers. Regular numerical predicates can also be considered as a subset of <math>\mathbb N^r</math> for some arity <math>r</math>. One of the main interests of this class of predicates is that it can be defined in plenty of different ways, using different logical formalisms. Furthermore, most of the definitions use only basic notions, and thus allows to relate foundations of various fields of fundamental computer science such as [[automata|automata theory]], [[syntactic semigroup]], [[model theory]] and [[semigroup theory]].
+
+The class of regular numerical predicate is denoted <math>\mathcal C_{lca}</math><ref name="Peladeau"/>{{rp|140}}, <math>\mathcal N_{\mathtt{thres, mod}}</math><ref name="Choffrut">{{cite journal |last1=Choffrut |first1=Christian |title=Deciding whether a relation defined in Presburger logic can be defined in weaker logics |journal=RAIRO - Theoretical Informatics and Applications |date=January 2008 |volume=42 |issue=1 |pages=121-135 |doi=10.1051/ita:2007047}}</ref> and REG.<ref name="Straubing">{{cite book |last1=Straubing |first1=Howard |title=Finite Automata, Formal Logic and Circuit Complexity |date=1994 |publisher=Birkhäser |isbn=978-1-4612-0289-9}}</ref>
+
+== Definitions ==
+The class of '''regular numerical predicate''' admits a lot of equivalent definitions. They are now given. In all of those definitions, we fix <math>r\in\mathbb N</math> and <math>P\subseteq\mathbb N^r</math> a (numerical) predicate of arity <math>r</math>.
+
+=== Automata with variables ===
+The first definition encodes predicate as a [[formal language]]. A predicate is said to be regular if the formal language is [[regular language|regular]]<ref name="Straubing"/>{{rp|25}}.
+
+Let the alphabet <math>A</math> be the set of subset of <math>\{1,\dots,r\}</math>. Given a vector of <math>r</math> integers <math>\mathbf n=(n_0,\dots,n_{r-1})\in\mathbb N^r</math>, it is represented by the word <math>\overline{\mathbf n}</math> of length <math>\max(n_0,\dots,n_{r-1})</math> whose <math>i</math>-th letter is <math>\{j\mid n_j=i\}</math>. For example, the vector <math>(3,1,3)</math> is represented by the word <math>\emptyset\{1\}\emptyset\{0,2\}</math>.
+
+We then define <math>\overline P</math> as <math>\{\overline {\mathbf n}\mid\mathbf n\}</math>.
+
+The numerical predicate <math>P</math> is said to be regular if <math>\overline P</math> is a [[regular language]] over the alphabet <math>A</math>. This is the reason for the use of the word "regular" to describe this kind of numerical predicate.
+
+=== Automata reading unary numbers ===
+This second definition is similar to the previous one. Predicates are encoded into languages in a different way, and the predicate is said to be regular if and only if the language is regular<ref name="Straubing"/>{{rp|25}}.
+
+Our alphabet <math>A</math> is the set of vectors of <math>r</math> binary digits. That is: <math>\{0,1\}^r</math>. Before explaining how to encode a vector of numbers, we explain how to encode a single number.
+
+Given a length <math>l</math> and a number <math>n\le l</math>, the unary representation of <math>n</math> of length <math>l</math> is the word <math>\mid{n}\mid_l</math> over the binary alphabet <math>\{0,1\}</math>, beginning by a sequence of <math>n</math> "1"'s, followed by <math>n-l</math> "0"'s. For example, the unary representation of 1 of length 4 is  <math>1000</math>.
+
+Given a vector of <math>r</math> integers <math>\mathbf n=(n_0,\dots,n_{r-1})\in\mathbb N^r</math>, let <math>l=\max(n_0,\dots,n_{r-1})</math>. The vector <math>\mathbf n</math> is represented by the word <math>\overline{\mathbf n}\in\left(\{0,1\}^r\right)^*</math> such that, the projection of <math>\overline{\mathbf n}</math> over it's <math>i</math>-th component is <math>\mid{n_i}\mid_{\max(n_0,\dots,n_{r-1})}</math>. For example, the representation of <math>(3,1,3)</math> is <math>\begin{array}{l|l|l}1&1&1\\1&0&0\\1&1&1\end{array}</math>. This is a word whose letters are the vectors <math>(1,1,1)</math>, <math>(1,0,0)</math> and <math>(1,0,0)</math> and whose projection over each components are <math>111</math>, <math>100</math> and <math>111</math>.
+
+As in the previous definition, the numerical predicate <math>P</math> is said to be regular if <math>\overline P</math> is a [[regular language]] over the alphabet <math>A</math>.
+
+=== <math>(\exists)MSO(+1)</math> ===
+A predicate is regular if and only if it can be defined by a [[monadic second order]] formula <math>\phi(x_0,\dots,x_{r-1})</math>, or equivalently by an existential monadic second order formula, where the only atomic predicate is the successor function <math>y+1=z</math><ref name="Straubing"/>{{rp|26}}.
+
+=== <math>FO(\le,\mod)</math> ===
+A predicate is regular if and only if it can be defined by a first order logic formula <math>\phi(x_0,\dots,x_{r-1})</math>, where the atomic predicates are:
+* the order relation <math>y\le z</math>,
+* the predicate stating that a number is a multiple of a constant <math>m</math>, that is <math>y\equiv 0\mod m</math><ref name="Straubing"/>{{rp|26}}.
+
+=== Congruence arithmetic ===
+The '''language of congruence arithmetic'''<ref name="Peladeau"/>{{rp|140}} is defined as the est of Boolean combinations, where  the atomic predicates are:
+* the addition of a constant <math>x_i+c=x_j</math>, with <math>c</math> an integral constant,
+* the order relation <math>x_i\le x_j</math>,
+* the modular relations, with a fixed modular value. That is, predicates of the form <math>x_i\equiv c\mod m</math> where <math>c</math> and <math>m</math> are fixed constants and <math>x</math> is a variable.
+
+A predicate is regular if and only if it can be defined in the language of congruence arithmetic. The equivalence with previous definition is due to quantifier elimination<ref>{{cite book |last1=Smoryński. |first1=Craig A. |title=Logical number theory. 1. , an introduction. |date=1991 |publisher=Springer |isbn=978-3-642-75462-3 |page=322}}</ref>.
+
+=== Using recursion and patterns ===
+This definition requires a fixed parameter <math>m</math>. A set is said to be regular if it is '''<math>m</math>-regular''' for some <math>m\ge2</math>. 
+In order to introduce the definition of '''<math>m</math>-regular''', the trivial case where <math>r=0</math> should be considered separately. When <math>r=0</math>, then the predicate <math>P</math> is either the constant true or the constant false. Those two predicates are said to be <math>m</math>-regular. Let us now assume that <math>r\ge1</math>. In order to introduce the definition of regular predicate in this case, we need to introduce the notion of '''section of a predicate'''.
+
+The section <math>P^{x_i=c}</math> of <math>P</math> is the predicate of arity <math>r-1</math> where the <math>i</math>-th component is fixed to <math>c</math>. Formally, it is defined as <math>\{(x_0,\dots,x_{i-1},x_{i+1},\dots,x_{r-1})\mid P(x_0,\dots,x_{i-1},c,x_{i+1},\dots,x_{r-1})\}</math>. For example, let us consider  the sum predicate <math>S=\{(n_0,n_1,n_2)\mid n_0+n_1=n_2\}</math>. Then <math>S^{x_0=c}=\{(n_1,n_2)\mid c+n_1=n_2\}</math> is the predicate which adds the constant <math>c</math>, and <math>S^{x_2=c}=\{(n_0,n_1)\mid n_0+n_1=c\}</math> is the predicate which states that the sum of its two elements is <math>c</math>.
+
+The last equivalent definition of regular predicate can now be given. A predicate <math>P</math> of arity <math>r\ge1</math> is regular if it satisfies the two following conditions<ref name="milchior">{{cite journal |last1=Milchior |first1=Arthur |title=Undecidability of satisfiability of expansions of FO [&lt;] with a Semilinear Non Regular Predicate over words. |journal=The nature of computation |date=January 2017  |pages=161-170}}</ref>:
+* all of its sections are regular,
+* there exists a threshold <math>t\in\mathbb N</math> such that, for each vectors <math>(n_0,\dots,n_r)\in\mathbb N^r</math> with each <math>n_i\ge t</math>, <math>P(n_0,\dots,n_r)\iff P(n_0+m,\dots,n_r+m)</math>.
+
+The second property intuitively means that, when number are big enough, then their exact value does not matter. The properties which matters are the order relation between the numbers and their value modulo the period <math>m</math>.
+
+=== Using recognizable semigroups ===
+Given a subset <math>s\subseteq\{0,\dots,r-1\}</math>, let <math>\overline s</math> be the characteristic vector of <math>s</math>. That is, the vector in <math>\{0,1\}^r</math> whose <math>i</math>-th component is 1 if <math>i\in s</math>, and 0 otherwise. Given a sequence <math>\mathbf s=s_0\subsetneq\dots\subsetneq s_{p-1}</math> of sets, let <math>P_{\mathbf s}=\{(n_0,\dots,n_{p-1})\in\mathbb N^p\mid P(\sum n_ie_i)\}</math>.
+
+The predicate <math>P</math> is regular if and only if for each increasing sequence of set <math>\mathbf s</math>, <math>P_{\mathbf s}</math> is a [[recognizable set|recognizable submonoid]] of <math>\mathbb N^p</math><ref name="Choffrut"/>.
+
+=== Definition of non regular language ===
+The predicate <math>P</math> is regular if and only if all languages which can be defined in first order logic with atomic predicates for letters and the atomic predicate <math>P</math> are regular. The same property would hold for the monadic second order logic, and with modular quantifiers. <ref name="Peladeau">{{cite journal |last1=Péladeau |first1=Pierre |title=Formulas, regular languages and Boolean circuits|journal=Theoretical Computer Science|date=1992 |pages=133-142|volume=101}}</ref>
+
+=== Reducing arity ===
+The following property allows to reduce an arbitrarily complex non-regular predicate to a simpler binary predicate which is also non-regular<ref name="milchior"/>.
+
+Let us assume that <math>P</math> is definable in Presburger Arithmetic. The predicate <math>P</math> is non regular if and only if there exists a formula in <math>\mathbf{FO}[\le,R]</math> which defines the multiplication by a rational <math>\frac pq\not\in\{0,1\}</math>. More precisely, it allows to define the non-regular predicate <math>\{(p\times n,q\times n)\mid n\in\mathbb N\}</math> for some <math>p\not\in{0,q}</math>.
+
+== Properties ==
+The class of regular numerical predicate satisfies many properties. 
+
+=== Satisfiability ===
+As in previous case, let us assume that <math>P</math> is definable in Presburger Arithmetic. The satisfiability of <math>\exists\mathbf{MSO}(+1,P)</math> is decidable if and only if <math>P</math> is regular.
+
+This theorem is due to the previous property and the fact that the satisfiability of <math>\exists\mathbf{MSO}(+1,\times{\frac pq})</math> is undecidable when <math>p\ne0</math> and <math>p\ne q</math>.{{citation needed|date=May 2020}}
+
+=== Closure property ===
+The class of regular predicates is closed under union, intersection, complement, taking a section, projection and Cartesian product. All of those properties follows directly from the definition of this class as the class of predicates definable in <math>\mathbf{FO}(\le, \mod) </math>.{{citation needed|date=May 2020}}
+
+=== Decidability ===
+It is decidable whether a predicate defined in [[Presburger arithmetic]] is regular<ref name="Choffrut"/>.
+
+=== Elimination of quantifier ===
+The logic <math>\mathbf{FO}(\le, +c,\mod) </math> considered above admit the elimination of quantifier. More precisely, the algorithm for elimination of quantifier by Cooper<ref name="Cooper">{{cite journal |last1=Cooper |first1=D. C. |title=Theorem Proving in Arithmetic without Multiplication |journal=Machine Intelligence |date=1972 |volume=7 |pages=91-99}}</ref> does not introduce multiplication by constants nor sums of variable. Therefore, when applied to a <math>\mathbf{FO}(\le, +c,\mod) </math> it returns a quantifier-free formula in<math>\mathbf{FO}(\le, +c,\mod)</math>.
+
+==References==
+{{reflist}}
+
+[[Category:Automata (computation)]]
+[[Category:Formal languages| ]]
+[[Category:Theoretical computer science]]
+[[Category:Mathematical logic| ]]

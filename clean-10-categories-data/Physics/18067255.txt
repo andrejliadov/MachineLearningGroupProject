@@ -1,0 +1,40 @@
+{{Orphan|date=December 2012}}
+
+'''Physlets''' are ''phys''ics app''lets'' that are free for non-commercial use and were created by the same team as the [[Open Source Physics]] Project. Since their creation at [[Davidson College]] in 1998, over 2,000 individual exercises have been created using Physlets for the teaching and learning of astronomy and physics on a variety of levels and a variety of settings. Physlets have also been used in a number of textbooks, and have been translated into a number of languages including: Spanish, Slovenian, German, Hebrew, and Portuguese.
+
+The original Physlet-based interactive materials relied on Java applets. With the 2014 release of the new HTML5 standards, browsers gradually ceased supporting plug-ins, such as Java. In 2018-2019, Physlet Java Applets were ported to JavaScript/HTML5 in collaboration with Robert Hanson (St. Olaf College) using the java2script-SwingJS platform, which allows Physlet-based materials to run on any platform (desktop, laptop, tablet, phone) using any recent JavaScript-enabled browser. 
+
+==Recent Developments==
+On July 1, 2018, the third, all electronic, JavaScript version of the book, ''Physlets Physics 3E'', was released under a [[Creative Commons]] Attribution-NonCommercial-NoDerivs License on the ComPADRE National Science Digital Library.<ref>[http://www.compadre.org/physlets/ Physlet Physics 3E]</ref>
+
+On April 15, 2019, the third, all electronic, JavaScript version of the book, ''Physlets Quantum Physics 3E'', was released under a [[Creative Commons]] Attribution-NonCommercial-NoDerivs License on the ComPADRE National Science Digital Library.<ref>[http://www.compadre.org/pqp/ Physlet Quantum Physics 3E]</ref>
+
+==Design==
+Physlets are small, flexible [[Java (programming language)|Java]] [[applet]]s that can be used in the teaching of [[physics]] and other sciences. In particular:
+* Physlets use simple graphics to convey only the salient features of physical phenomena.
+* Physlet-based exercises can be used as part of almost any curriculum with almost any teaching style.
+* Physlets are created and controlled with [[JavaScript]], meaning that with only 24 Physlets, there can be hundreds of Physlet-based exercises created.
+* Physlets are Web based and run on any platform ([[Windows]], [[Mac OS X]], or [[Linux]]).
+* Physlets are free for noncommercial use. The Java programs themselves are free and can be downloaded from the ComPADREPhyslet site.
+
+==Requirements==
+Physlets were created using the Java programming language, and they were accessed via a web browser as Java applets. Now in JavaScript/HTML5, the Physlet-based curricular materials in Physlet Physics 3E and Physlet Quantum Physics 3E run on any platform (desktop, laptop, tablet, phone) using any recent JavaScript-enabled browser
+
+As "Physlet" is a registered trademark,<ref>[http://webphysics.davidson.edu/Applets/DownLoad_Files/intro_download.html Physlet site copyright page]</ref> this word may not be appropriate to name arbitrary Java applet that demonstrates physical laws without approval from the trademark owners.
+
+==References==
+{{reflist}}
+;Notes
+{{refbegin}}
+* M. Belloni, W. Christian, and A. J. Cox, "Teaching Qualitative Energy-eigenfunction Shape with Physlets," ''The Physics Teacher'' 45, 488-491 (2007).
+* M. Dancy, W. Christian, and M. Belloni, "Teaching with Physlets: Examples from Optics," ''The Physics Teacher'' 40, 494 (2002).
+* W. Christian and M. Belloni, "Physlets: Teaching Physics with Interactive Curricular Material," Prentice Hall (2000).
+{{refend}}
+
+==External links==
+* [http://webphysics.davidson.edu/Applets/Applets.html Official website of Physlets]
+* [http://www.compadre.org/physlets/  Website of Physlet Physics 3E on ComPADRE]
+* [http://www.compadre.org/pqp/  Website of Physlet Quantum Physics 3E on ComPADRE]
+
+[[Category:Physics websites]]
+[[Category:Educational software]]

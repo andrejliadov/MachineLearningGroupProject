@@ -1,0 +1,133 @@
+{{short description|Process of data preservation done by collecting and saving web content}}
+{{Redirect|Web archive||Web archive (disambiguation)}}
+{{Use mdy dates|date=May 2020}}
+
+'''Web archiving''' is the process of collecting portions of the [[World Wide Web]] to ensure the information is [[digital preservation|preserved]] in an [[archive]] for future researchers, historians, and the public.<ref>{{Cite journal|title = Decay of References to Web sites in Articles Published in General Medical Journals: Mainstream vs Small Journals|journal = Applied Clinical Informatics|date = January 1, 2013|volume = 4|issue = 4|pages = 455–464|doi = 10.4338/aci-2013-07-ra-0055|pmid = 24454575|first = P.|last = Habibzadeh|first2 = Schattauer GmbH – Publishers for Medicine and Natural|last2 = Sciences|pmc = 3885908}}</ref> Web archivists typically employ [[web crawler]]s for automated capture due to the massive size and amount of information on the Web. The largest web archiving organization based on a bulk crawling approach is the [[Wayback Machine]], which strives to maintain an archive of the entire Web.
+
+The growing portion of human culture created and recorded on the web makes it inevitable that more and more libraries and archives will have to face the challenges of web archiving.<ref>{{Cite journal|url=http://nrs.harvard.edu/urn-3:HUL.InstRepos:25658314|title=Truman, Gail. 2016. Web Archiving Environmental Scan. Harvard Library Report|year=2016|publisher=Gail Truman}}</ref> [[National library|National libraries]], [[national archive]]s and various consortia of organizations are also involved in archiving culturally important Web content.
+
+Commercial web archiving software and services are also available to organizations who need to archive their own web content for corporate heritage, regulatory, or legal purposes.
+
+==History and development==
+While curation and organization of the web has been prevalent since the mid- to late-1990s, one of the first large-scale web archiving project was the [[Internet Archive]], a non-profit organization created by [[Brewster Kahle]] in 1996.<ref name=kitsuregawa>{{Cite journal|last=Toyoda|first=M.|last2=Kitsuregawa|first2=M.|date=May 2012|title=The History of Web Archiving|journal=Proceedings of the IEEE|volume=100|issue=Special Centennial Issue|pages=1441–1443|doi=10.1109/JPROC.2012.2189920|issn=0018-9219|doi-access=free}}</ref> The Internet Archive released its own search engine for viewing archived web content, the [[Wayback Machine]], in 2001.<ref name=kitsuregawa/> As of 2018, the Internet Archive was home to 40 petabytes of data.<ref>{{Cite web|url=https://thehustle.co/inside-wayback-machine-internet-archive|title=Inside Wayback Machine, the internet's time capsule|date=September 28, 2018|website=The Hustle|at=sec. Wayyyy back|access-date=July 21, 2020}}</ref> The Internet Archive also developed many of its own tools for collecting and storing its data, including Petabox for storing the large amounts of data efficiently and safely, and Hertrix, a web crawler developed in conjunction with the Nordic national libraries.<ref name=kitsuregawa/> Other projects launched around the same time included Australia's [[Pandora Archive|Pandora]] and Tasmanian web archives and Sweden's Kulturarw3.<ref>{{Cite journal|last=Costa|first=Miguel|last2=Gomes|first2=Daniel|last3=Silva|first3=Mário J.|date=September 2017|title=The evolution of web archiving|journal=International Journal on Digital Libraries|volume=18|issue=3|pages=191–205|doi=10.1007/s00799-016-0171-9|issn=1432-5012}} {{verify source |date=September 2019 |reason=This ref was deleted Special:Diff/911701885 by a bug in VisualEditor and later restored by a bot from the original cite located at Special:Permalink/911567736 cite #4 - verify the cite is accurate and delete this template. [[User:GreenC bot/Job 18]]}}</ref>
+
+From 2001 {{failed verification span|to 2010,|reason=Neither say that it ended in 2010|date=July 2020}} the International Web Archiving Workshop (IWAW) provided a platform to share experiences and exchange ideas.<ref>{{Cite web|url=http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=9651|title=IWAW 2010: The 10th Intl Web Archiving Workshop|website=www.wikicfp.com|access-date=August 19, 2019}}</ref><ref>{{Cite web|url=http://bibnum.bnf.fr/ecdl/index.html|title=IWAW - International Web Archiving Workshops|website=bibnum.bnf.fr|access-date=August 19, 2019}}</ref> The [[International Internet Preservation Consortium|International Internet Preservation Consortium (IIPC)]], established in 2003, has facilitated international collaboration in developing standards and open source tools for the creation of web archives.<ref>{{Cite web|url=http://netpreserve.org/about-us/|title=ABOUT IIPC|website=IIPC|access-date=August 19, 2019}} {{verify source |date=September 2019 |reason=This ref was deleted Special:Diff/911702057 by a bug in VisualEditor and later restored by a bot from the original cite located at Special:Permalink/911567736 cite #7 - verify the cite is accurate and delete this template. [[User:GreenC bot/Job 18]]}}</ref>
+
+The now-defunct [[Internet Memory Foundation]] was founded in 2004 and founded by the [[European Commission]] in order to archive the web in the Europe.<ref name=kitsuregawa/> This project developed and released many open source tools, such as "rich media capturing, temporal coherence&nbsp;analysis, spam assessment, and terminology evolution detection."<ref name=kitsuregawa/> The data from the foundation is now housed by the Internet Archive, but not currently publicly accessible.<ref>{{Cite web|url=https://archive.org/details/internetmemoryfoundation|title=Internet Memory Foundation : Free Web : Free Download, Borrow and Streaming|website=archive.org|publisher=Internet Archive|access-date=July 21, 2020}}</ref>
+
+Despite the fact that there is no centralized responsibility for its preservation, web content is rapidly becoming the official record. For example, in 2017, the United States Department of Justice affirmed that the government treats the President’s tweets as official statements.<ref>{{cite web|url=https://www.historyassociates.com/resources/blog/web-archiving-challenges/ |title=Web Archiving: Think the Web is Permanent? Think Again |author=Regis, Camille |date=June 4, 2019 |publisher=History Associates |accessdate=July 14, 2019}}</ref>
+
+==Collecting the web==
+Web archivists generally archive various types of web content including [[HTML]] web pages, [[style sheet (web development)|style sheets]], [[JavaScript]], [[digital image|images]], and [[digital video|video]]. They also archive [[metadata]] about the collected resources such as access time, [[MIME type]], and content length. This metadata is useful in establishing [[Authentication|authenticity]] and [[provenance]] of the archived collection.
+
+==Methods of collection==
+{{see also|List of Web archiving initiatives}}
+
+===Remote harvesting===
+The most common web archiving technique uses [[web crawler]]s to automate the process of collecting [[web page]]s. Web crawlers typically access web pages in the same manner that users with a browser see the Web, and therefore provide a comparatively simple method of remote harvesting web content. Examples of web crawlers used for web archiving include:
+* [[Heritrix]]
+* [[HTTrack]]
+* [[Wget]]
+
+There exist various free services which may be used to archive web resources "on-demand", using web crawling techniques. These services include the [[Wayback Machine]] and [[WebCite]].
+
+===Database archiving===
+Database archiving refers to methods for archiving the underlying content of database-driven websites. It typically requires the extraction of the [[database]] content into a standard [[logical schema|schema]], often using [[XML]]. Once stored in that standard format, the archived content of multiple databases can then be made available using a single access system. This approach is exemplified by the [http://deeparc.sourceforge.net/ DeepArc] and [https://web.archive.org/web/20110227202744/http://www.nla.gov.au/xinq/ Xinq] tools developed by the [[Bibliothèque Nationale de France]] and the [[National Library of Australia]] respectively. DeepArc enables the structure of a [[relational database]] to be mapped to an [[XML schema]], and the content exported into an XML document. Xinq then allows that content to be delivered online. Although the original layout and behavior of the website cannot be preserved exactly, Xinq does allow the basic querying and retrieval functionality to be replicated.
+
+===Transactional archiving===
+Transactional archiving is an event-driven approach, which collects the actual transactions which take place between a [[web server]] and a [[web browser]]. It is primarily used as a means of preserving evidence of the content which was actually viewed on a particular [[website]], on a given date. This may be particularly important for organizations which need to comply with legal or regulatory requirements for disclosing and retaining information.
+
+A transactional archiving system typically operates by intercepting every [[HTTP]] request to, and response from, the web server, filtering each response to eliminate duplicate content, and permanently storing the responses as bitstreams.
+
+==Difficulties and limitations==
+===Crawlers===
+Web archives which rely on web crawling as their primary means of collecting the Web are influenced by the difficulties of web crawling:
+* The [[robots exclusion protocol]] may request crawlers not access portions of a website. Some web archivists may ignore the request and crawl those portions anyway.
+* Large portions of a web site may be hidden in the [[Deep Web (search indexing)|Deep Web]]. For example, the results page behind a web form can lie in the Deep Web if crawlers cannot follow a link to the results page.
+* [[Crawler trap]]s (e.g., calendars) may cause a crawler to download an infinite number of pages, so crawlers are usually configured to limit the number of dynamic pages they crawl.
+* Most of the archiving tools do not capture the page as it is. It is observed that ad banners and images are often missed while archiving.
+
+However, it is important to note that a native format web archive, i.e., a fully browsable web archive, with working links, media, etc., is only really possible using crawler technology.
+
+The Web is so large that crawling a significant portion of it takes a large number of technical resources. The Web is changing so fast that portions of a website may change before a crawler has even finished crawling it.
+
+===General limitations===
+Some web servers are configured to return different pages to web archiver requests than they would in response to regular browser requests.<ref>{{Cite journal |last=Habibzadeh |first=Parham |date=July 30, 2015 |title=Are current archiving systems reliable enough? |journal=International Urogynecology Journal |volume=26 |issue=10 |issn=0937-3462 |pages=1553 |doi=10.1007/s00192-015-2805-7 |doi-access=free |pmid=26224384}}</ref> This is typically done to fool search engines into directing more user traffic to a website, and is often done to avoid accountability, or to provide enhanced content only to those browsers that can display it.
+
+Not only must web archivists deal with the technical challenges of web archiving, they must also contend with intellectual property laws. Peter Lyman<ref>Lyman (2002)</ref> states that "although the Web is popularly regarded as a [[public domain]] resource, it is [[copyright]]ed; thus, archivists have no legal right to copy the Web". However [[national library|national libraries]] in some countries<ref>{{Cite web |url=http://netpreserve.org/legal-deposit |title=Legal Deposit {{!}} IIPC |website=netpreserve.org |access-date=January 31, 2017 |url-status=live |archive-url=https://web.archive.org/web/20170316103200/http://netpreserve.org/legal-deposit |archive-date=March 16, 2017}}</ref> have a legal right to copy portions of the web under an extension of a [[legal deposit]].
+
+Some private non-profit web archives that are made publicly accessible like [[WebCite]], the [[Internet Archive]] or the [[Internet Memory Foundation]] allow content owners to hide or remove archived content that they do not want the public to have access to. Other web archives are only accessible from certain locations or have regulated usage. WebCite cites a recent lawsuit against Google's caching, which [[Google]] won.<ref>{{cite web |url=https://www.webcitation.org/faq |title=WebCite FAQ |work=Webcitation.org |access-date=September 20, 2018}}{{cbignore}}</ref>
+
+==Laws==
+In 2017 the [[Financial Industry Regulatory Authority |Financial Industry Regulatory Authority, Inc.]] (FINRA), a United States financial regulatory organization, released a notice stating all the business doing digital communications are required to keep a record. This includes website data, social media posts, and messages.<ref>{{cite web |title=Social Media and Digital Communications |url=https://www.finra.org/sites/default/files/notice_doc_file_ref/Regulatory-Notice-17-18.pdf |website=finra.org |publisher=FINRA}}</ref> Some [[copyright law]]s may inhibit Web archiving. For instance, academic archiving by [[Sci-Hub]] falls outside the bounds of contemporary copyright law. The site provides enduring access to academic works including those that do not have an [[open access]] license and thereby contributes to the archival of scientific research which may otherwise be lost.<ref name="Claburn 2020">{{cite web |last1=Claburn |first1=Thomas |title=Open access journals are vanishing from the web, Internet Archive stands ready to fill in the gaps |url=https://www.theregister.com/2020/09/10/open_access_journal/ |website=[[The Register]] |language=en |date=10 September 2020}}</ref><ref>{{cite web |last1=Laakso |first1=Mikael |last2=Matthias |first2=Lisa |last3=Jahn |first3=Najko |title=Open is not forever: a study of vanished open access journals |url=https://arxiv.org/abs/2008.11933 |website=arXiv:2008.11933 [cs] |accessdate=11 October 2020 |date=3 September 2020}} [[File:CC-BY icon.svg|50px]]  Text and images are available under a [https://creativecommons.org/licenses/by/4.0/  Creative Commons Attribution 4.0 International License].</ref>
+
+==See also==
+{{Portal|Internet}}
+<!-- Please keep entries in alphabetical order & add a short description [[WP:SEEALSO]] -->
+{{div col|colwidth=15em}}
+* [[Archive site]]
+* [[Archive Team]]
+* [[archive.today]] (formerly archive.is)
+* [[Collective memory]]
+* [[Common Crawl]]
+* [[Digital preservation]]
+* [[Google Cache]]
+* [[List of Web archiving initiatives]]
+* [[Memento Project]]
+* [[Minerva Initiative]]
+* [[Mirror website]]
+* [[National Digital Information Infrastructure and Preservation Program]] (NDIIPP)
+* [[National Digital Library Program]] (NDLP)
+* [[PADICAT]]
+* [[PageFreezer]]
+* [[Pandora Archive]]
+* [[UK Web Archive]]
+* [[Virtual artifact]]
+* [[Wayback Machine]]
+* [[Web crawling]]
+* [[WebCite]]
+{{div col end}}
+<!-- please keep entries in alphabetical order -->
+
+==References==
+{{reflist}}
+
+=== General bibliography ===
+{{refbegin}}
+* {{cite book | last = Brown | first = A. | title = Archiving Websites: A Practical Guide for Information Management Professionals | publisher = Facet Publishing | place = London | year = 2006 | isbn = 978-1-85604-553-7}}
+* {{cite book | last = Brügger | first = N. | title = Archiving Websites. General Considerations and Strategies | publisher = The Centre for Internet Research | place = Aarhus | year = 2005 | isbn = 978-87-990507-0-3 | url = http://www.cfi.au.dk/en/publications/cfi | archive-url = https://web.archive.org/web/20090129171453/http://www.cfi.au.dk/en/publications/cfi | archive-date = January 29, 2009}}
+* {{cite journal | author = Day, M. | title = Preserving the Fabric of Our Lives: A Survey of Web Preservation Initiatives | journal = Research and Advanced Technology for Digital Libraries: Proceedings of the 7th European Conference (ECDL) | volume = 2769 | year = 2003 | pages = 461–472 | url = http://www.ukoln.ac.uk/metadata/presentations/ecdl2003-day/day-paper.pdf| doi = 10.1007/978-3-540-45175-4_42 | isbn = 978-3-540-40726-3 | series = Lecture Notes in Computer Science }}
+* {{cite journal|author1=Eysenbach, G. |author2=Trudel, M. |name-list-style=amp | year = 2005 | title = Going, going, still there: using the WebCite service to permanently archive cited web pages | journal = Journal of Medical Internet Research | volume = 7 | issue = 5 | doi = 10.2196/jmir.7.5.e60| pages = e60| pmid = 16403724| pmc = 1550686}}
+* {{cite conference | first = Kent | last = Fitch | title = Web site archiving—an approach to recording every materially different response produced by a website | book-title = Ausweb 03 | url = http://ausweb.scu.edu.au/aw03/papers/fitch/ | year = 2003 | access-date = September 27, 2006 | archive-url = https://web.archive.org/web/20030720111610/http://ausweb.scu.edu.au/aw03/papers/fitch/ | archive-date = July 20, 2003 | url-status = dead }}
+* {{cite web | last = Jacoby | first = Robert | title = Archiving a Web Page | date = August 19, 2010 | url = http://www.seoq.com/archiving-a-web-page/ | archive-url = https://web.archive.org/web/20110103095915/http://www.seoq.com/archiving-a-web-page/ | archive-date = January 3, 2011 | accessdate = October 23, 2010}}
+* {{cite journal | author = Lyman, P. | title = Archiving the World Wide Web | journal = Building a National Strategy for Preservation: Issues in Digital Media Archiving | year = 2002 | url = http://www.clir.org/pubs/reports/pub106/web.html}}
+* {{cite book | editor-last = Masanès | editor-first = J.) | title = Web Archiving | publisher = [[Springer-Verlag]] | place = Berlin | year = 2006 | isbn = 978-3-540-23338-1}}
+* {{cite book | first = Maureen | last = Pennock | title = Web-Archiving | place = Great Britain | publisher = [[Digital Preservation Coalition]] | series = DPC Technology Watch Reports | year = 2013 | issn = 2048-7916 | doi = 10.7207/twr13-01}}
+* {{cite journal|title=The History of Web Archiving|authors=Toyoda, M., Kitsuregawa, M.|journal=[[Proceedings of the IEEE]]|year=2012|volume=100|issue=special centennial issue|pages=1441–1443|doi=10.1109/JPROC.2012.2189920|doi-access=free}}
+{{refend}}
+
+==External links==
+{{external links|section|date=March 2014}}
+{{Library resources box|onlinebooks=yes}}
+* [http://www.netpreserve.org/ International Internet Preservation Consortium (IIPC)]—International consortium whose mission is to acquire, preserve, and make accessible knowledge and information from the Internet for future generations
+* [http://www.iwaw.net/ International Web Archiving Workshop (IWAW)]—Annual workshop that focuses on web archiving
+* [http://www.nla.gov.au/padi/topics/92.html National Library of Australia, Preserving Access to Digital Information (PADI)]
+* [https://www.loc.gov/webarchiving/ Library of Congress—Web Archiving]
+* [http://www.ifs.tuwien.ac.at/~aola/links/WebArchiving.html Web archiving bibliography]—Lengthy list of web-archiving resources
+* [http://www.dlib.org/dlib/december02/masanes/12masanes.html "Towards continuous web archiving"]—Julien Masanès, Bibliothèque Nationale de France
+* [http://wiki.dandascalescu.com/reviews/online_services/web_page_archiving Comparison of web archiving services]
+* [https://netpreserveblog.wordpress.com/2015/08/14/so-you-want-to-get-started-in-web-archiving/ List of blogs about web archiving], 2015
+
+{{DigitalPreservation}}
+{{Cultural Conservation-Restoration}}
+{{Authority control}}
+
+{{DEFAULTSORT:Web Archiving}}
+[[Category:Web archiving| ]]
+[[Category:Collections care]]
+[[Category:Computer-related introductions in 2001]]
+[[Category:Conservation and restoration of cultural heritage]]
+[[Category:Digital preservation]]
+[[Category:Internet Archive projects| ]]
+[[Category:Library of Congress|Digital Library project]]
+[[Category:Museology]]

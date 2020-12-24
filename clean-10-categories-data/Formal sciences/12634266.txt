@@ -1,0 +1,30 @@
+'''Structural estimation''' is a technique for estimating deep "structural" [[parameter#Statistics and econometrics|parameter]]s of theoretical [[model (economics)|economic models]]. The term is inherited from the [[simultaneous equations model]]. In this sense "structural estimation" is contrasted with "reduced-form estimation", which is the statistical relationship between observed variables.{{sfn|Reiss|Wolak|2007}}
+
+The difference between a structural parameter and a reduced-form parameter was formalized in the work of the [[Cowles Foundation]].{{sfn|Reiss|Wolak|2007}} A structural parameter is also said to be "policy invariant" whereas the value of reduced-form parameter can depend on exogenously determined parameters set by public policy makers. The distinction between structural and reduced-form estimation within "microeconometrics" is related to the [[Lucas critique]] of reduced-form macroeconomic policy predictions.
+
+The original distinction between structure and reduced-form was between the underlying system and the direct relationship between observables implied by the system. Different combinations of structural parameters can imply the same reduced-form parameters, so structural estimation must go beyond the direct relationship between variables.{{sfn|Reiss|Wolak|2007}}{{sfn|Keane|2010}}
+
+Many economists now use the term "reduced form" to mean statistical estimation without reference to a specific economic model. For example, a [[regression analysis|regression]] is often called a reduced-form equation even when no standard economic model would generate it as the reduced form relationship between variables.
+
+These conflicting distinctions between structural and reduced form estimation arose from the increasing complexity of economic theory since the formalization of simultaneous equations estimation. A structural model often involves sequential decision-making under uncertainty or strategic environments where beliefs about other agents' actions matter. Parameters of such models are estimated not with regression analysis but non-linear techniques such as [[generalized method of moments]], [[maximum likelihood]], and [[indirect inference]]. The reduced-form of such models may result in a regression relationship but often only for special or trivial cases of the structural parameters.
+
+== See also ==
+
+* [[Methodology of econometrics]]
+== Notes ==
+
+{{reflist}}
+
+== References ==
+
+* {{cite journal | last=Angrist | first=Joshua D | last2=Pischke | first2=Jörn-Steffen | title=The Credibility Revolution in Empirical Economics: How Better Research Design is Taking the Con out of Econometrics | journal=Journal of Economic Perspectives | publisher=American Economic Association | volume=24 | issue=2 | year=2010 | issn=0895-3309 | doi=10.1257/jep.24.2.3 | pages=3–30 | ref=harv| url=http://cep.lse.ac.uk/pubs/download/dp0976.pdf }}
+* {{cite journal | last=Keane | first=Michael P. | title=Structural vs. atheoretic approaches to econometrics | journal=Journal of Econometrics | publisher=Elsevier BV | volume=156 | issue=1 | year=2010 | issn=0304-4076 | doi=10.1016/j.jeconom.2009.09.003 | pages=3–20 | ref=harv}}
+
+* {{cite book | last=Reiss | first=Peter C. | last2=Wolak | first2=Frank A. | title=Handbook of Econometrics | chapter=Chapter 64 Structural Econometric Modeling: Rationales and Examples from Industrial Organization | publisher=Elsevier | year=2007 | isbn=978-0-444-50631-3 | issn=1573-4412 | doi=10.1016/s1573-4412(07)06064-3 | ref=harv}}
+* {{cite journal | last=Rust | first=John | title=The Limits of Inference with Theory: A Review of Wolpin (2013) | journal=Journal of Economic Literature | publisher=American Economic Association | volume=52 | issue=3 | year=2014 | issn=0022-0515 | doi=10.1257/jel.52.3.820 | pages=820–850 | ref=harv}}
+{{Econometrics-stub}}
+[[Category:Estimation methods]]
+
+[[Category:Economic methodology]]
+
+[[Category:Econometrics]]

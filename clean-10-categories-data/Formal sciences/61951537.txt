@@ -1,0 +1,133 @@
+{{Other uses|BED (disambiguation){{!}}Bed (disambiguation)}}{{Infobox file format
+| name = BED (file format)
+| icon = 
+| extension = <tt>.bed</tt>
+| mime = text/x-bed
+| developer = 
+| type = [[Text file]]
+| standard = 
+| url = 
+}}The '''BED''' ('''Browser Extensible Data''') format is a [[text file]] format used to store [[Genome|genomic]] regions as [[Coordinate system|coordinates]] and associated [[DNA annotation|annotations]]. The data are presented in the form of columns separated by spaces or tabs. This format was developed during the [[Human Genome Project]]<ref name="Kent2002">{{Cite journal|last=Kent WJ., Sugnet CW., Furey TS., Roskin KM., Pringle TH., Zahler AM. & Haussler D.|year=2002|title=The human genome browser at UCSC.|journal=[[Genome Research]]|volume=12|issue=6|pages=996–1006|doi=10.1101/gr.229102|issn=1088-9051|pmid=12045153|pmc=186604|doi-access=free}} </ref> and then adopted by other sequencing projects. As a result of this increasingly wide use, this format has become a ''de facto'' [[Technical standard|standard]] in [[bioinformatics]] without receiving any official specifications.
+
+One of the advantages of this format is the manipulation of coordinates instead of [[Nucleic acid sequence|nucleotide sequences]], which optimizes the power and computation time when comparing all or part of genomes. In addition, its simplicity makes it easy to manipulate and read (or [[parsing]]) coordinates or annotations using [[word processing]] and [[scripting language]]s such as [[Python (programming language)|Python]], [[Ruby (programming language)|Ruby]] or [[Perl]] or more specialized tools such as [[BEDTools]].
+
+== History ==
+The end of the 20th century saw the emergence of the first projects to [[DNA sequencing|sequence]] complete [[Genome|genomes]]. Among these projects, the [[Human Genome Project]] was the most ambitious at the time, aiming to sequence for the first time a genome of several [[Base pair|gigabases]]. This required the sequencing centres to carry out major methodological development in order to automate the processing of sequences and their analyses. Thus, many formats were created, such as [[FASTQ format|FASTQ]],<ref name="Cock2009"> {{Cite journal|last=Cock PJ., Fields CJ., Goto N., Heuer ML. & Rice PM.|year=2010|title=The Sanger FASTQ file format for sequences with quality scores, and the Solexa/Illumina FASTQ variants.|journal=[[Nucleic Acids Research]]|volume=38|issue=6|pages=1767–71|doi=10.1093/nar/gkp1137|issn=1362-4962|pmid=20015970|pmc=2847217|doi-access=free}} </ref> [[General feature format|GFF]] or BED.<ref name="Kent2002"/> However, no official specifications were published, which affected some formats such as FASTQ when [[List of sequenced animal genomes|sequencing projects]] multiplied at the beginning of the 21st century.
+
+Its wide use within [[genome browser]]s has made it possible to define this format in a relatively stable way as this description is used by many tools.
+
+== Format ==
+The BED format does not have any official specifications. However, the description provided by the [[UCSC Genome Browser]]<ref name=ucsc>{{Cite web|url=http://genome.cse.ucsc.edu/FAQ/FAQformat.html#format1|title=Frequently Asked Questions: Data File Formats. BED format|website=UCSC Genome Browser|publisher=University of California Santa Cruz Genomics Institute|access-date=2 October 2019}}</ref> is widely used.
+
+=== Description ===
+A BED file consists of a minimum of three columns to which nine optional columns can be added for a total of twelve columns. The first three columns contain the names of [[Chromosome|chromosomes]] or [[Scaffolding (bioinformatics)|scaffolds]], the start, and the end coordinates of the sequences considered. The next nine columns contain annotations related to these sequences. These columns must be separated by [[Space (punctuation)|spaces]] or [[Tab-separated values|tabs]], the latter being recommended for reasons of compatibility between programs.<ref name="BEDtools">{{Cite book|url=https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/bedtools/BEDTools-User-Manual.v4.pdf|title=The BEDTools manual|last1=Quinlan|first1=AR|last2=Hall|first2=IM|date=21 September 2010|access-date=3 October 2019}}</ref> Each row of a file must have the same number of columns. The order of the columns must be respected: if columns of high numbers are used, the columns of intermediate numbers must be filled in.
+
+<center>
+{| class="wikitable alternance sortable" style="text-align:center; border:solid 1px black;"
+|+ Columns of BED files (in red are the obligatory columns)
+|-
+! Column number
+! Title
+! Definition
+|-
+| style="background:#fd6763" | '''1'''
+| style="background:#fd6763" | '''chrom'''
+| style="text-align:left; background:#fd6763" | [[Chromosome]] (e.g. chr3, chrY, chr2_random) or ''[[Scaffolding (bioinformatics)|scaffold]]'' (e.g. scaffold10671) name
+|-
+| style="background:#fd6763" | '''2'''
+| style="background:#fd6763" | '''chromStart'''
+| style="text-align:left; background:#fd6763" | Start coordinate on the chromosome or scaffold for the sequence considered (the first base on the chromosome is numbered 0)
+|-
+| style="background:#fd6763" | '''3'''
+| style="background:#fd6763" | '''chromEnd'''
+| style="text-align:left; background:#fd6763" | End coordinate on the chromosome or scaffold for the sequence considered. This position is non-inclusive, unlike chromStart.
+|-
+| '''4'''
+| '''name'''
+| align="left" | Name of the line in the BED file
+|-
+| '''5'''
+| '''score'''
+| align="left" | Score between 0 and 1000
+|-
+| '''6'''
+| '''strand'''
+| align="left" | DNA strand orientation (positive ["+"] or negative ["-"] or "." if no strand)
+|-
+| '''7'''
+| '''thickStart'''
+| align="left" | Starting coordinate from which the annotation is displayed in a thicker way on a graphical representation (e.g.: the start [[codon]] of a [[gene]])
+|-
+| '''8'''
+| '''thickEnd'''
+| align="left" | End coordinates from which the annotation is no longer displayed in a thicker way on a graphical representation (e.g.: the stop codon of a gene)
+|-
+| '''9'''
+| '''itemRgb'''
+| align="left" | [[Red green blue|RGB]] value in the form R,G,B (e.g. 255,0,0) determining the display color of the annotation contained in the BED file
+|-
+| '''10'''
+| '''blockCount'''
+| align="left" | Number of blocks (e.g. [[exon]]s) on the line of the BED file
+|-
+| '''11'''
+| '''blockSizes'''
+| align="left" | List of values separated by [[comma]]s corresponding to the size of the blocks (the number of values must correspond to that of the "blockCount")
+|-
+| '''12'''
+| '''blockStarts'''
+| align="left" | List of values separated by commas corresponding to the starting coordinates of the blocks, coordinates calculated relative to those present in the chromStart column (the number of values must correspond to that of the "blockCount")
+|}
+</center>
+
+=== Header ===
+A BED file can optionally contain a [[Header (computing)|header]]. However, there is no official description of the format of the header. It may contain one or more lines and be signified by different words or symbols,<ref name="BEDtools"/> depending on its functional role or simply descriptive. Thus, a header line can begin with these words or symbol:
+
+* "browser": functional header used by the [[UCSC Genome Browser]] to set options related to it,
+* "track": functional header used by [[genome browser]]s to specify display options related to it,
+* "#": descriptive header to add comments such as the name of each column.
+
+=== Coordinate system ===
+Unlike the [[coordinate system]] used by other standards such as [[General feature format|GFF]], the system used by the BED format is zero-based for the coordinate start and one-based for the coordinate end.<ref name="BEDtools"/> Thus, the [[nucleotide]] with the coordinate 1 in a genome will have a value of 0 in column 2 and a value of 1 in column 3.
+
+This choice is justified by the method of calculating the lengths of the genomic regions considered, this calculation being based on the simple subtraction of the end coordinates (column 3) by those of the start (column 2): <math>x_{end} - x_{start}</math>. When the coordinate system is based on the use of 1 to designate the first position, the calculation becomes slightly more complex: <math>x_{end} - x_{start} + 1</math>. This slight difference can have a relatively large impact in terms of computation time when [[data sets]] with several thousand to hundreds of thousands of lines are used.
+
+=== Examples ===
+Here is a minimal example:
+ chr7    127471196    127472363
+ chr7    127472363    127473530
+ chr7    127473530    127474697
+Here is a typical example with nine columns from the [[UCSC Genome Browser]]:
+ browser position chr7:127471196-127495720
+ browser hide all
+ track name="ItemRGBDemo" description="Item RGB demonstration" visibility=2 itemRgb="On"
+ chr7    127471196    127472363    Pos1    0    +    127471196    127472363    255,0,0
+ chr7    127472363    127473530    Pos2    0    +    127472363    127473530    255,0,0
+ chr7    127473530    127474697    Pos3    0    +    127473530    127474697    255,0,0
+ chr7    127474697    127475864    Pos4    0    +    127474697    127475864    255,0,0
+ chr7    127475864    127477031    Neg1    0    -    127475864    127477031    0,0,255
+ chr7    127477031    127478198    Neg2    0    -    127477031    127478198    0,0,255
+ chr7    127478198    127479365    Neg3    0    -    127478198    127479365    0,0,255
+ chr7    127479365    127480532    Pos5    0    +    127479365    127480532    255,0,0
+ chr7    127480532    127481699    Neg4    0    -    127480532    127481699    0,0,255
+
+== File extension ==
+There is currently no standard [[Filename extension|file extension]] for BED files, but the ".bed" extension is the most frequently used. The number of columns sometimes is noted in the file extension, for example: ".bed3", ".bed4", ".bed6", ".bed12".<ref name=galaxy>{{cite web|url=https://galaxyproject.org/learn/datatypes/#bed|title=Datatypes|website=Galaxy Community Hub|access-date=3 October 2019}}</ref>
+
+== Usage ==
+The use of BED files has spread rapidly with the emergence of [[Next-generation sequencing|new sequencing techniques]] and the manipulation of larger and larger [[Nucleic acid sequence|sequence]] files. The comparison of genomic sequences or even entire genomes by comparing the sequences themselves can quickly require significant computational resources and become time-consuming. Handling BED files makes this work more efficient by using coordinates to extract sequences of interest from sequencing sets or to directly compare and manipulate two sets of coordinates.
+
+To perform these tasks, various programs can be used to manipulate BED files, including but not limited to the following:
+
+* [[Genome browser]]s: from BED files allows the visualization and extraction of sequences of mammalian genomes currently sequenced (e.g. the function Manage Custom Tracks in [[UCSC Genome Browser]]).<ref name=ucsc/>
+* [[Galaxy (computational biology)|Galaxy]] : [[World Wide Web|web-based]] platform.<ref name=galaxy/>
+* Command-line tools:
+** BEDTools: program allowing the manipulation of coordinate sets and the extraction of sequences from a BED file.<ref name="BEDtools"/>
+** BEDOPS: a suite of tools for fast boolean operations on BED files.<ref>{{cite journal |last1=Neph |first1=S |last2=Kuehn |first2=MS |last3=Reynolds |first3=AP |last4=Haugen |first4=E |last5=Thurman |first5=RE |last6=Johnson |first6=AK |last7=Rynes |first7=E |last8=Maurano |first8=MT |last9=Vierstra |first9=J |last10=Thomas |first10=S |last11=Sandstrom |first11=R |last12=Humbert |first12=R |last13=Stamatoyannopoulos |first13=JA |title=BEDOPS: high-performance genomic feature operations. |journal=Bioinformatics (Oxford, England) |date=15 July 2012 |volume=28 |issue=14 |pages=1919–20 |doi=10.1093/bioinformatics/bts277 |pmid=22576172|pmc=3389768 |doi-access=free }}</ref>
+** BedTk: a faster alternative to BEDTools for a limited and specialized sub-set of operations.<ref name="bedtk">{{cite web |last1=Li |first1=Heng |title=BedTk |url=https://github.com/lh3/bedtk |website=GitHub |access-date=22 July 2020}}</ref>
+** covtobed: a tool to convert a BAM file into a BED coverage track.<ref>{{cite journal |last1=Birolo |first1=Giovanni |last2=Telatin |first2=Andrea |title=covtobed: a simple and fast tool to extract coverage tracks from BAM files |journal=Journal of Open Source Software |date=6 March 2020 |volume=5 |issue=47 |pages=2119 |doi=10.21105/joss.02119|doi-access=free }}</ref>
+
+== References ==
+{{Reflist}}
+[[Category:Bioinformatics]]
+[[Category:Computer file formats]]

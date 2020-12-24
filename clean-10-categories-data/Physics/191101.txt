@@ -1,0 +1,119 @@
+{{Use American English|date=January 2019}}
+{{Use mdy dates|date=January 2019}}
+{{Short description|Mathematical construction for dynamical systems}}
+{{other uses}}
+{{Differential equations}}
+
+[[Image:Comet plot 1.gif|thumb|300px|Phase path of the [[Duffing oscillator]]]] 
+[[Image:Focal stability.png|thumb|300px|right|Phase space of a dynamic system with focal stability, showing one phase space [[trajectory]]]] 
+
+In [[Dynamical systems theory|dynamical system theory]], a '''phase space''' is a [[Space (mathematics)|space]] in which all possible states of a [[system]] are represented, with each possible state corresponding to one unique point in the phase space. For [[classical mechanics|mechanical systems]], the phase space usually consists of all possible values of [[position (vector)|position]] and [[momentum]] variables.  The concept of phase space was developed in the late 19th century by [[Ludwig Boltzmann]], [[Henri Poincaré]], and [[Josiah Willard Gibbs]].<ref>{{Cite journal | last1 = Nolte | first1 = D. D. | title = The tangled tale of phase space | doi = 10.1063/1.3397041 | journal = Physics Today | volume = 63 | issue = 4 | pages = 33–38| year = 2010 |bibcode = 2010PhT....63d..33N | s2cid = 17205307 | url = https://semanticscholar.org/paper/87da19abd46c65e60109b654bf22e3df7483376e }}</ref>
+
+==Introduction==
+In a phase space, every [[degrees of freedom (physics and chemistry)|degree of freedom]] or [[parameter]] of the system is represented as an axis of a multidimensional space; a one-dimensional system is called a [[Phase line (mathematics)|phase line]], while a two-dimensional system is called a [[phase plane]]. For every possible state of the system or allowed combination of values of the system's parameters, a point is included in the multidimensional space. The system's evolving state over time traces a path (a '''phase space trajectory''' for the system) through the high-dimensional space. The phase space trajectory represents the set of states compatible with starting from one particular [[initial condition]], located in the full phase space that represents the set of states compatible with starting from ''any'' initial condition.   As a whole, the phase diagram represents all that the system can be, and its shape can easily elucidate qualities of the system that might not be obvious otherwise. A phase space may contain a great number of dimensions. For instance, a gas containing many molecules may require a separate dimension for each particle's ''x'', ''y'' and ''z'' positions and momenta (6 dimensions for an idealized monatomic gas), and for more complex molecular systems additional dimensions are required to describe vibrational modes of the molecular bonds, as well as spin around 3 axes. Phase spaces are easier to use when analyzing the behavior of mechanical systems restricted to motion around and along various axes of rotation or translation - e.g. in robotics, like analyzing the range of motion of a [[robotic arm]] or determining the optimal path to achieve a particular position/momentum result.
+
+[[File:Hamiltonian flow classical.gif|frame|left|Evolution of an [[statistical ensemble (mathematical physics)|ensemble]] of classical systems in phase space (top). The systems are a massive particle in a one-dimensional potential well (red curve, lower figure). The initially compact ensemble becomes swirled up over time.]]
+
+===Conjugate momenta===
+
+In classical mechanics, any choice of [[generalized coordinates]] ''q''<sub>''i''</sub> for the position (i.e. coordinates on [[Configuration space (physics)|configuration space]]) defines [[conjugate momentum|conjugate generalized momenta]] ''p''<sub>''i''</sub> which together define co-ordinates on phase space. More abstractly, in classical mechanics phase space is the [[cotangent bundle]] of configuration space, and in this interpretation the procedure above expresses that a choice of local coordinates on configuration space induces a choice of natural local [[Darboux coordinates]] for the standard [[symplectic structure]] on a cotangent space.
+
+===Statistical ensembles in phase space===
+The motion of an [[Statistical ensemble (mathematical physics)|ensemble]] of systems in this space is studied by classical [[statistical mechanics]]. The local density of points in such systems obeys [[Liouville's theorem (Hamiltonian)|Liouville's theorem]], and so can be taken as constant. Within the context of a model system in classical mechanics, the phase space coordinates of the system at any given time are composed of all of the system's dynamic variables.  Because of this, it is possible to calculate the state of the system at any given time in the future or the past, through integration of Hamilton's or Lagrange's equations of motion.
+
+== Examples ==
+[[File:Pendulum phase portrait illustration.svg|430px|left|thumbnail|Illustration of how a phase portrait would be constructed for the motion of a simple [[pendulum]].]]
+[[File:PenduleEspaceDesPhases.png|thumb|right|Time-series flow in phase space specified by the differential equation of a [[pendulum]]. The X axis corresponds to the pendulum's position, and the Y-axis its speed.]]
+
+=== Low dimensions ===
+{{main|phase line (mathematics)|phase plane}}
+
+For simple systems, there may be as few as one or two degrees of freedom. One degree of freedom occurs when one has an [[Autonomous system (mathematics)|autonomous]] [[ordinary differential equation]] in a single variable, <math>dy/dt = f(y),</math> with the resulting one-dimensional system being called a [[Phase line (mathematics)|phase line]], and the qualitative behaviour of the system being immediately visible from the phase line. The simplest non-trivial examples are the [[exponential growth model]]/decay (one unstable/stable equilibrium) and the [[logistic growth model]] (two equilibria, one stable, one unstable).
+
+The phase space of a two-dimensional system is called a [[phase plane]], which occurs in classical mechanics for a single particle moving in one dimension, and where the two variables are position and velocity. In this case, a sketch of the [[phase portrait]] may give qualitative information about the dynamics of the system, such as the [[limit cycle]] of the [[Van der Pol oscillator]] shown in the diagram.
+
+Here, the horizontal axis gives the position and vertical axis the velocity.  As the system evolves, its state follows one of the lines (trajectories) on the phase diagram.
+[[Image:Limitcycle.svg|thumb|340px|right|[[Phase portrait]] of the [[Van der Pol oscillator]]]]
+
+=== Chaos theory ===
+Classic examples of phase diagrams from [[chaos theory]] are :
+* the [[Lorenz attractor]]
+* population growth (i.e. [[logistic map]])
+* parameter plane of [[complex quadratic polynomial]]s with [[Mandelbrot set]].
+
+==Phase plot==
+A plot of position and momentum variables as a function of time is sometimes called a '''phase plot''' or a '''phase diagram'''. However the latter expression, "[[phase diagram]]", is more usually reserved in the [[Outline of physical science|physical sciences]] for a diagram showing the various regions of stability of the thermodynamic phases of a chemical system, which consists of [[pressure]], [[temperature]], and composition.
+
+==Quantum mechanics==
+In [[quantum mechanics]], the coordinates ''p'' and ''q'' of phase space normally become [[Hermitian operators]] in a [[Hilbert space]].
+
+But they may alternatively retain their classical interpretation, provided functions of them compose in novel algebraic ways (through [[Moyal product|Groenewold's 1946 star product]]). This is consistent with the [[uncertainty principle]] of quantum mechanics. 
+Every quantum mechanical [[observable]] corresponds to a unique function or [[Distribution (mathematics)|distribution]] on phase space, and vice versa, as specified by [[Hermann Weyl]] (1927) and supplemented by [[John von Neumann]] (1931); [[Eugene Wigner]] (1932); and, in a grand synthesis, by [[Hilbrand J. Groenewold|H J Groenewold]] (1946). 
+With [[José Enrique Moyal|J E Moyal]] (1949), these completed the foundations of  the '''[[phase space formulation]] of quantum mechanics''', a complete and logically autonomous reformulation of quantum mechanics.<ref>{{Cite journal | last1 = Curtright | first1 = T. L. | last2 = Zachos | first2 = C. K. | doi = 10.1142/S2251158X12000069 | title = Quantum Mechanics in Phase Space | journal = Asia Pacific Physics Newsletter | volume = 01 | pages = 37–46 | year = 2012 | arxiv = 1104.5269 | s2cid = 119230734 }}</ref>  (Its modern abstractions include [[deformation quantization]] and [[geometric quantization]].)
+ 
+Expectation values in phase-space quantization are obtained isomorphically to tracing operator observables with the density matrix in Hilbert space: they are obtained by phase-space integrals of observables, with the [[Wigner quasi-probability distribution]] effectively serving as a measure.
+
+Thus, by expressing quantum mechanics in phase space (the same ambit as for classical mechanics), the [[Wigner–Weyl transform|Weyl map]] facilitates recognition of quantum mechanics as a [[Deformation theory|'''deformation''']] (generalization) of classical mechanics, with deformation parameter ''[[Reduced Planck constant|ħ]]/S'', where ''S'' is the [[Action (physics)|action]] of the relevant process. (Other familiar deformations in physics involve the deformation of classical Newtonian into [[Special relativity|relativistic mechanics]], with deformation parameter ''v''/''c'';{{Citation needed|date=June 2018}} or the deformation of Newtonian gravity into [[General Relativity]], with deformation parameter [[Schwarzschild radius]]/characteristic-dimension.){{Citation needed|date=June 2018}}
+
+Classical expressions, observables, and operations (such as Poisson brackets) are modified by ħ-dependent quantum corrections, as the conventional commutative multiplication applying in classical mechanics is generalized to the noncommutative star-multiplication characterizing quantum mechanics and underlying its uncertainty principle.
+
+==Thermodynamics and statistical mechanics==
+<!-- [[Thermodynamic phase space]] redirects here]] -->
+In [[thermodynamics]] and [[statistical mechanics]] contexts, the term phase space has two meanings: for one, it is used in the same sense as in classical mechanics. If a thermodynamic system consists of ''N'' particles, then a point in the 6''N''-dimensional phase space describes the dynamic state of every particle in that system, as each particle is associated with three-position variables and three momentum variables. In this sense, as long as the particles are [[Gibbs paradox|distinguishable]], a point in phase space is said to be a [[Microstate (statistical mechanics)|microstate]] of the system. (For [[identical particles|indistinguishable particles]] a microstate will consist of a set of ''N''<nowiki>!</nowiki> points, corresponding to all possible exchanges of the ''N'' particles.)  ''N'' is typically on the order of [[Avogadro's number]], thus describing the system at a microscopic level is often impractical. This leads to the use of phase space in a different sense.
+
+The phase space can also refer to the space that is parameterized by the ''macroscopic'' states of the system, such as pressure, temperature, etc. For instance, one may view the pressure-volume diagram or entropy-temperature diagrams as describing part of this phase space. A point in this phase space is correspondingly called a macrostate. There may easily be more than one microstate with the same macrostate. For example, for a fixed temperature, the system could have many dynamic configurations at the microscopic level. When used in this sense, a phase is a region of phase space where the system in question is in, for example, the [[liquid]] phase, or [[solid]] phase, etc.
+
+Since there are many more microstates than macrostates, the phase space in the first sense is usually a [[manifold]] of much larger dimensions than in the second sense. Clearly, many more parameters are required to register every detail of the system down to the molecular or atomic scale than to simply specify, say, the temperature or the pressure of the system.
+
+==Optics==
+Phase space is extensively used in [[nonimaging optics]],<ref name="IntroNio2e">{{cite book | first = Julio | last = Chaves | title = Introduction to Nonimaging Optics, Second Edition |url=https://books.google.com/books?id=e11ECgAAQBAJ | publisher = [[CRC Press]] |  year = 2015 | isbn = 978-1482206739}}</ref> the branch of optics devoted to illumination. It is also an important concept in [[Hamiltonian optics]].
+
+== Phase integral ==
+In classical statistical mechanics (continuous energies) the concept of phase space provides a classical analog to the [[Partition function (mathematics)|partition function]] (sum over states) known as the phase integral.<ref>{{cite book |last=Laurendeau |first=Normand M. |title=Statistical Thermodynamics: Fundamentals and Applications |location=New York |publisher=Cambridge University Press |year=2005 |isbn=0-521-84635-8 }}</ref>  Instead of summing the Boltzmann factor over discretely spaced energy states (defined by
+appropriate integer [[quantum numbers]] for each degree of freedom) one may integrate over continuous phase space.  Such integration essentially consists of two parts: integration of the momentum component of all degrees of freedom (momentum space) and integration of the position component of all degrees of freedom (configuration space).  Once the phase integral is known, it may be related to the classical partition function by multiplication of a normalization constant representing the number of [[quantum energy states]] per unit phase space. This normalization constant is simply the inverse of [[Planck's constant]] raised to a power equal to the number of degrees of freedom for the system.<ref>{{cite web|url=http://clesm.mae.ufl.edu/wiki.pub/index.php/Configuration_integral_%28statistical_mechanics%29|title=Configuration integral|last=Vu-Quoc|first=L.|year=2008|archive-url=https://web.archive.org/web/20120428193950/http://clesm.mae.ufl.edu/wiki.pub/index.php/Configuration_integral_%28statistical_mechanics%29|archive-date=April 28, 2012}}
+<!---
+{{cite web |url=http://clesm.mae.ufl.edu/wiki.pub/index.php/Configuration_integral_(statistical_mechanics) |title=Configuration_integral_(statistical_mechanics) |accessdate=2010-05-02 |last=Vu-Quoc |first=Loc |url-status=dead |archiveurl=https://web.archive.org/web/20081011041922/http://clesm.mae.ufl.edu/wiki.pub/index.php/Configuration_integral_(statistical_mechanics) |archivedate=2008-10-11 }}
+--->
+</ref>
+
+==See also==
+{{colbegin}}
+*[[Phase line (mathematics)|Phase line]], 1-dimensional case
+*[[Phase plane]], 2-dimensional case
+*[[Phase portrait]]
+*[[Phase space method]]
+*[[Parameter space]]
+*[[Separatrix (dynamical systems)|Separatrix]]
+;Applications
+*[[Optical phase space]]
+*[[State space (controls)]] for information about state space (similar to phase state) in control engineering.
+*[[State space]] for information about state space with discrete states in computer science.
+*[[Molecular dynamics]]
+;Mathematics
+*[[Cotangent bundle]]
+*[[Dynamic system]]
+*[[Symplectic manifold]]
+*[[Wigner–Weyl transform]]
+;Physics
+*[[Classical mechanics]]
+*[[Hamiltonian mechanics]]
+*[[Lagrangian mechanics]]
+*[[State space (physics)]] for information about state space in physics
+*[[Phase-space formulation]] of quantum mechanics
+ {{colend}}
+
+== References ==
+<references/>
+
+==Further reading==
+*{{cite book |last=Nolte |first=D. D. |title=Introduction to Modern Dynamics: Chaos, Networks, Space and Time |publisher=Oxford University Press |year=2015 |isbn=978-0-19-965703-2 }}
+*{{cite book |last=Nolte |first=D. D. |title=Galileo Unbound: A Path Across Life, the Universe and Everything |publisher=Oxford University Press |year=2018 |isbn=978-0-19-880584-7 }}
+
+==External links==
+* {{springer|title=Phase space|id=p/p072590}}
+{{authority control}}
+{{DEFAULTSORT:Phase Space}}
+[[Category:Concepts in physics]]
+[[Category:Dynamical systems]]
+[[Category:Dimensional analysis]]
+[[Category:Hamiltonian mechanics]]

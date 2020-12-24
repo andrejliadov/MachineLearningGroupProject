@@ -1,0 +1,51 @@
+The concept of '''negative and positive [[frequency]]''' can be as simple as a wheel rotating one way or the other way: a ''signed value'' of frequency can indicate both the rate and direction of rotation. The rate is expressed in units such as revolutions (a.k.a. ''cycles'') per second ([[hertz]]) or [[radians per second|radian/second]] (where 1&nbsp;cycle corresponds to 2''π''&nbsp;[[radian]]s).
+
+==Sinusoids==
+Let ''ω'' be a nonnegative parameter with units of radians/second.  Then the angular function (angle vs. time) {{nowrap|−''ωt'' + ''θ''}}, has slope −''ω'', which is called a '''negative frequency'''.  But when the function is used as the argument of a cosine operator, the result is indistinguishable from {{nowrap|cos(''ωt'' − ''θ'')}}.&nbsp; Similarly, {{nowrap|sin(−''ωt'' + ''θ'')}} is indistinguishable from {{nowrap|sin(''ωt'' − ''θ'' + ''π'')}}.  Thus any [[Sine wave|sinusoid]] can be represented in terms of positive frequencies.  The sign of the underlying phase slope is ambiguous.
+
+[[File:Negative frequency.svg|thumb|right|300px|A negative frequency causes the sin function (violet) to lead the cos (red) by 1/4 cycle.]]
+[[File:Unit_circle.svg|thumb|right|300px|The vector {{nowrap|(cos ''t'', sin ''t'')}} rotates counter-clockwise at 1&nbsp;radian/second, and completes a circle every 2''π'' seconds.  The vector {{nowrap|(cos −''t'', sin −''t'')}} rotates in the other direction (not shown).]]
+The ambiguity is resolved when the cosine and sine operators can be observed simultaneously, because {{nowrap|cos(''ωt'' + ''θ'')}} leads {{nowrap|sin(''ωt'' + ''θ'')}} by 1/4 cycle (= ''π''/2 radians) when {{nowrap|''ω'' > 0}}, and lags by 1/4 cycle when {{nowrap|''ω'' < 0}}.&nbsp; Similarly, a vector, {{nowrap|(cos ''t'', sin ''t'')}}, rotates counter-clockwise at 1&nbsp;radian/second, and completes a circle every 2π seconds, and the vector {{nowrap|(cos −t, sin −t)}} rotates in the other direction.
+
+The sign of ''ω'' is also preserved in the [[complex-valued function]]:
+
+{{NumBlk|:|<math>e^{i \omega t} = \underbrace{\cos(\omega t)}_{R(t)} + i \cdot \underbrace{\sin(\omega t)}_{I(t)},</math>{{efn-ua|The equivalence is called [[Euler's formula]]}}|{{EquationRef|Eq.1}}}}
+
+since R(''t'') and I(''t'') can be separately extracted and compared.  Although <math>e^{i \omega t}</math>&nbsp; clearly contains more information than either of its components, a common interpretation is that it is a simpler function, because:{{bulleted list
+| It simplifies many important [[Euler's formula#Relationship to trigonometry|trigonometric calculations]], which leads to its formal description as the [[analytic signal|analytic representation]] of &nbsp;<math>\cos(\omega t)</math>.{{efn-ua
+| See {{section link|Euler's formula|Relationship to trigonometry}} and {{section link|Phasor|Addition}} for examples of calculations simplified by the complex representation.}}
+| A corollary of {{EquationNote|Eq.1}} is:
+{{NumBlk|:|<math>\cos(\omega t) = \begin{matrix}\frac{1}{2}\end{matrix}\left(e^{i \omega t} + e^{-i \omega t}\right),</math>|{{EquationRef|Eq.2}}}}
+
+which gives rise to the interpretation that cos(''ωt'') comprises ''both'' positive and negative frequencies.&nbsp; But the sum is actually a cancellation that contains less, not more, information.  Any measure that indicates both frequencies includes a false positive (or ''alias''), because ''ω'' can have only one sign.{{efn-ua|Conversely, any measure that indicates only one frequency has made an assumption, perhaps based on collateral information.}} The [[Fourier transform]], for instance, merely tells us that cos(''ωt'') cross-correlates equally well with {{nowrap|cos(''ωt'') + ''i'' sin(''ωt'')}} as with {{nowrap|cos(''ωt'') − ''i'' sin(''ωt'')}}.{{efn-ua|cos(''ωt'') and sin(''ωt'') are [[Orthogonality#Orthogonal functions|orthogonal functions]], so the imaginary parts of both correlations are zero.}}
+}}
+
+==Applications==
+<!--hide unsupported claim
+negative frequency are used in [[doppler effect]] if the source travel toward the observer or the observer travel away from the source twice the speed of sound-->
+
+Perhaps the most well-known application of negative frequency is the calculation:
+
+:<math>X(\omega) = \int_{a}^{b} x(t)\cdot e^{-i\omega t} dt,</math>
+
+which is a measure of the amount of frequency ω in the function ''x''(''t'') over the interval {{nowrap|(''a'', ''b'')}}.  When evaluated as a continuous function of ''ω'' for the theoretical interval {{nowrap|(−∞, ∞)}}, it is known as the [[Fourier transform]] of ''x''(''t'').  A brief explanation is that the product of two complex sinusoids is also a complex sinusoid whose frequency is the sum of the original frequencies.  So when ''ω'' is positive, <math>e^{-i\omega t}</math> causes all the frequencies of ''x''(''t'') to be reduced by amount ''ω''.  Whatever part of ''x''(''t'') that was at frequency ''ω'' is changed to frequency zero, which is just a constant whose amplitude level is a measure of the strength of the original ''ω'' content.  And whatever part of ''x''(''t'') that was at frequency zero is changed to a sinusoid at frequency −''ω''.  Similarly, all other frequencies are changed to non-zero values.  As the interval {{nowrap|(''a'', ''b'')}} increases, the contribution of the constant term grows in proportion.  But the contributions of the sinusoidal terms only oscillate around zero.  So ''X''(''ω'') improves as a relative measure of the amount of frequency ''ω'' in the function ''x''(''t'').
+
+The [[Fourier transform]] of &nbsp;<math>e^{i \omega t}</math>&nbsp; produces a non-zero response only at frequency ''ω''.  The transform of <math>\cos(\omega t)</math> has responses at both ''ω'' and −''ω'', as anticipated by {{EquationNote|Eq.2}}.
+{{clear}}
+
+==Sampling of positive and negative frequencies and aliasing==
+{{Main article|Aliasing#Complex sinusoids}}
+[[File:Aliasing between a positive and a negative frequency.svg|frame|left|This figure depicts two complex sinusoids, colored gold and cyan, that fit the same sets of real and imaginary sample points.  They are thus aliases of each other when sampled at the rate (''f<sub>s</sub>'') indicated by the grid lines.  The gold-colored function depicts a positive frequency, because its real part (the cos function) leads its imaginary part by 1/4 of one cycle.  The cyan function depicts a negative frequency, because its real part lags the imaginary part.]]
+{{clear}}
+
+==Notes==
+{{notelist-ua}}
+
+==Further reading==
+* [http://ccrma.stanford.edu/~jos/mdft/Positive_Negative_Frequencies.html Positive and Negative Frequencies]
+* Lyons, Richard G. (Nov 11, 2010). Chapt 8.4. ''Understanding Digital Signal Processing'' (3rd ed.). Prentice Hall. 944 pgs. {{ISBN|0137027419}}.
+
+{{DEFAULTSORT:Negative Frequency}}
+[[Category:Waves]]
+[[Category:Concepts in physics]]
+[[Category:Negative concepts]]

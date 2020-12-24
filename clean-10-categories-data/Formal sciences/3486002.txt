@@ -1,0 +1,661 @@
+This article examines the implementation of mathematical concepts in [[set theory]]. The implementation of a number of basic mathematical concepts is carried out in parallel in [[ZFC]] (the dominant set theory) and in [[New Foundations|NFU]], the version of Quine's [[New Foundations]] shown to be consistent by [[R. B. Jensen]] in 1969 (here understood to include at least axioms of [[Axiom of infinity|Infinity]] and [[Axiom of choice|Choice]]).
+
+What is said here applies also to two families of set theories: on the one hand, a range of theories including [[Zermelo set theory]] near the lower end of the scale and going up to ZFC extended with [[large cardinal property|large cardinal]] hypotheses such as "there is a [[measurable cardinal]]"; and on the other hand a hierarchy of extensions of NFU which is surveyed in the [[New Foundations]] article. These correspond to different general views of what the set-theoretical universe is like, and it is the approaches to implementation of mathematical concepts under these two general views that are being compared and contrasted.
+
+It is not the primary aim of this article to say anything about the relative merits of these theories as foundations for mathematics. The reason for the use of two different set theories is to illustrate that multiple approaches to the implementation of mathematics are feasible. Precisely because of this approach, this article is not a source of "official" definitions for any mathematical concept.
+
+==Preliminaries==
+
+The following sections carry out certain constructions in the two theories [[ZFC]] and [[New Foundations|NFU]] and compare the resulting implementations of certain mathematical structures (such as the [[natural numbers]]).
+
+Mathematical theories prove theorems (and nothing else). So saying that a theory allows the construction of a certain object means that it is a theorem of that theory that that object exists. This is a statement about a definition of the form "the x such that <math>\phi</math> exists", where <math>\phi</math> is a [[Well-formed formula|formula]] of our [[Formal language|language]]: the theory proves the existence of "the x such that <math>\phi</math>" just in case it is a theorem that "there is one and only one x such that <math>\phi</math>". (See [[Bertrand Russell|Bertrand Russell's]] [[theory of descriptions]].) Loosely, the theory "defines" or "constructs" this object in this case. If the statement is not a theorem, the theory cannot show that the object exists; if the statement is provably false in the theory, it proves that the object cannot exist; loosely, the object cannot be constructed.
+
+ZFC and NFU share the language of set theory, so the same formal definitions "the x such that <math>\phi</math>" can be contemplated in the two theories. A specific form of definition in the language of set theory is [[set-builder notation]]: <math>\{x \mid \phi\}</math> means "the set A such that for all x, <math>x \in A \leftrightarrow \phi</math>" (A cannot be [[Free variables and bound variables|free]] in <math>\phi</math>). This notation admits certain conventional extensions: <math>\{x \in B \mid \phi\}</math> is synonymous with <math>\{x \mid x \in B \wedge \phi\}</math>; <math>\{f(x_1,\ldots,x_n) \mid \phi\}</math> is defined as <math>\{z \mid \exists x_1,\ldots,x_n\,(z=f(x_1,\dots,x_n) \wedge \phi)\}</math>, where <math>f(x_1,\ldots,x_n)</math> is an expression already defined.
+
+Expressions definable in set-builder notation make sense in both ZFC and NFU: it may be that both theories prove that a given definition succeeds, or that neither do (the expression <math>\{x \mid x\not\in x\}</math> fails to refer to anything in ''any'' set theory with classical logic; in [[Class (set theory)|class]] theories like [[Von Neumann–Bernays–Gödel set theory|NBG]] this notation does refer to a class, but it is defined differently), or that one does and the other doesn't. Further, an object defined in the same way in ZFC and NFU may turn out to have different properties in the two theories (or there may be a difference in what can be proved where there is no provable difference between their properties).
+
+Further, set theory imports concepts from other branches of mathematics (in intention, ''all'' branches of mathematics). In some cases, there are different ways to import the concepts into ZFC and NFU. For example, the usual definition of the first infinite [[Ordinal number|ordinal]] <math>\omega</math> in ZFC is not suitable for NFU because the object (defined in purely set theoretical language as the set of all finite [[von Neumann ordinal]]s) cannot be shown to exist in NFU. The usual definition of <math>\omega</math> in NFU is (in purely set theoretical language) the set of all infinite [[well-ordering]]s all of whose proper initial segments are finite, an object which can be shown not to exist in ZFC. In the case of such imported objects, there may be different definitions, one for use in ZFC and related theories, and one for use in NFU and related theories. For such "implementations" of imported mathematical concepts to make sense, it is necessary to be able to show that the two parallel interpretations have the expected properties: for example, the implementations of the natural numbers in ZFC and NFU are different, but both are implementations of the same mathematical structure, because both include definitions for all the primitives of [[Peano arithmetic]] and satisfy (the translations of) the Peano axioms. It is then possible to compare what happens in the two theories as when only set theoretical language is in use, as long as the definitions appropriate to ZFC are understood to be used in the [[ZFC]] context and the definitions appropriate to NFU are understood to be used in the NFU context.
+
+Whatever is proven to exist in a theory clearly provably exists in any extension of that theory; moreover, analysis of the proof that an object exists in a given theory may show that it exists in weaker versions of that theory (one may consider [[Zermelo set theory]] instead of ZFC for much of what is done in this article, for example).
+
+== Empty set, singleton, unordered pairs and tuples ==
+These constructions appear first because they are the simplest constructions in set theory, not because they are the first constructions that come to mind in mathematics (though the notion of finite set is certainly fundamental). Even though NFU also allows the construction of set [[Urelement|ur-elements]] yet to become members of a set, the [[empty set]] is the unique ''set'' with no members:  
+:<math>\left.\varnothing\right. \, \overset{\mathrm{def.}}{=} \left\{x : x \neq x\right\}</math>
+For each object <math>x</math>, there is a set <math>\{x\}</math> with <math>x</math> as its only element:  
+:<math>\left\{x\right\} \overset{\mathrm{def.}}{=} \left\{y : y = x\right\}</math>
+For objects <math>x</math> and <math>y</math>, there is a set <math>\{x,y\}</math> containing <math>x</math> and <math>y</math> as its only elements:  
+:<math>\left\{x,y\right\} \overset{\mathrm{def.}}{=} \left\{z : z=x \vee z = y\right\}</math>
+The [[Union (set theory)|union]] of two sets is defined in the usual way:  
+:<math>\left.x \cup y\right. \, \overset{\mathrm{def.}}{=} \left\{z : z \in x \vee z \in y\right\}</math>
+This is a recursive definition of unordered <math>n</math>-tuples for any concrete <math>n</math> (finite sets given as lists of their elements:)  
+:<math>\left\{x_1, \ldots, x_n, x_{n+1}\right\} \overset{\mathrm{def.}}{=} \left\{x_1, \ldots, x_n\right\} \cup \left\{x_{n+1}\right\}</math>
+In NFU, all the set definitions given work by stratified comprehension; in ZFC, the existence of the unordered pair is given by the [[Axiom of pairing|Axiom of Pairing]], the existence of the empty set follows by [[Axiom schema of separation|Separation]] from the existence of any set, and the binary union of two sets exists by the axioms of Pairing and [[Axiom of union|Union]] (<math>x \cup y = \bigcup\{x,y\}</math>).
+
+== Ordered pair ==
+{{main article|Ordered pair}}
+First, consider the '''ordered pair'''. The reason that this comes first is technical: ordered pairs are needed to implement [[Relation (mathematics)|relations]] and [[Function (mathematics)|functions]], which are needed to implement other concepts which may seem to be prior.
+The first definition of the ordered pair was the definition <math>(x,y) \overset{\mathrm{def}}{=} \{\{\{x\},\emptyset\},\{\{y\}\}\}</math> proposed by [[Norbert Wiener]] in 1914 in the context of the type theory of [[Principia Mathematica]]. Wiener observed that this allowed the elimination of types of ''n''-ary relations for ''n'' > 1 from the system of that work.
+It is more usual now to use the definition <math>(x,y) \overset{\mathrm{def.}}{=} \{\{x\},\{x,y\}\}</math>, due to [[Kazimierz Kuratowski|Kuratowski]].
+Either of these definitions works in either ZFC or NFU. In NFU, these two definitions have a technical disadvantage: the Kuratowski ordered pair is two types higher than its projections, while the Wiener ordered pair is three types higher. It is common to postulate the existence of a type-level ordered pair (a pair <math>(x,y)</math> which is the same type as its [[Projection (mathematics)|projections]]) in NFU. It is convenient to use the Kuratowski pair in both systems until the use of type-level pairs can be formally justified.
+The internal details of these definitions have nothing to do with their actual mathematical function. For any notion <math>(x,y)</math> of ordered pair, the thing that matters is that it satisfies the defining condition
+:<math>(x,y)=(z,w) \ \equiv \ x=z \wedge y=w</math>
+…and that it be reasonably easy to collect ordered pairs into sets.
+
+== Relations ==
+[[Relation (mathematics)|Relations]] are sets whose members are all [[ordered pair]]s. Where possible, a relation <math>R</math> (understood as a [[binary predicate]]) is implemented as <math>\{(x,y) \mid x R y\}</math> (which may be written as <math>\{z \mid \pi_1(z) R \pi_2(z)\}</math>). When <math>R</math> is a relation, the notation <math>xRy</math> means <math>\left(x, y\right) \in R</math>.
+
+In ZFC, some relations (such as the general equality relation or subset relation on sets) are 'too large'
+to be sets (but may be harmlessly reified as [[proper class]]es). In NFU, some relations (such as the membership relation) are not sets because their definitions are not stratified: in <math>\{(x,y) \mid x \in y\}</math>  <math>x</math> and <math>y</math> would
+need to have the same type (because they appear as projections of the same pair), but also
+successive types (because <math>x</math> is considered as an element of <math>y</math>).
+
+=== Related definitions ===
+Let <math>R</math> and <math>S</math> be given [[binary relation]]s. Then the following concepts are useful:
+
+The '''[[converse relation|converse]]''' of <math>R</math> is the relation <math>\left\{\left(y, x\right) : xRy\right\}</math>.
+
+The '''domain''' of <math>R</math> is the set <math>\left\{x : \exists y \left(xRy\right)\right\}</math>.
+
+The '''range''' of <math>R</math> is the domain of the converse of <math>R</math>. That is, the set <math>\left\{y : \exists x \left(xRy\right)\right\}</math>.
+
+The '''field''' of <math>R</math> is the [[union (set theory)|union]] of the domain and range of <math>R</math>.
+
+The '''[[preimage]]''' of a member <math>x</math> of the field of <math>R</math> is the set <math>\left\{y : yRx\right\}</math> (used in the definition of 'well-founded' below.)
+
+The '''downward closure''' of a member <math>x</math> of the field of <math>R</math> is the smallest set <math>D</math> containing <math>x</math>, and containing each <math>zRy</math> for each <math>y \in D</math> (i.e., including the preimage of each of its elements with respect to <math>R</math> as a subset.)
+
+The '''[[relation composition|relative product]]''' <math>R|S</math> of <math>R</math> and <math>S</math> is the relation <math>\left\{\left(x, z\right) : \exists y\,\left(xRy \wedge ySz\right)\right\}</math>.
+
+Notice that with our formal definition of a binary relation, the range and codomain of a relation are not distinguished. This could be done by representing a relation <math>R</math> with codomain <math>B</math> as <math>\left(R, B\right)</math>, but our development will not require this.
+
+In ZFC, any relation whose domain is a subset of a set <math>A</math> and whose range is a subset of a set <math>B</math> will be a set, since the [[Cartesian product]] <math>A \times B = \left\{\left(a, b\right) : a \in A \wedge b \in B\right\}</math> is a set (being a subclass of <math>\mathcal{P}\!\left(A \cup B\right)</math>), and ''Separation'' provides for the existence of <math>\left\{\left(x, y\right) \in A \times B : xRy\right\}</math>. In NFU, some relations with global scope (such as equality and subset) can be implemented as sets. In NFU, bear in mind that <math>x</math> and <math>y</math> are three types lower than <math>R</math> in <math>xRy</math> (one type lower if a type-level ordered pair is used).
+
+=== Properties and kinds of relations ===
+A binary relation <math>R</math> is:
+*'''[[Reflexive relation|Reflexive]]''' if <math>xRx</math> for every <math>x</math> in the field of <math>R</math>.
+* '''[[Symmetric relation|Symmetric]]''' if <math>\forall x, y \,(xRy \to yRx)</math>.
+* '''[[Transitive relation|Transitive]]''' if <math>\forall x, y, z \,(xRy \wedge yRz \rightarrow xRz)</math>.
+* '''[[Antisymmetric relation|Antisymmetric]]''' if <math>\forall x, y \,(xRy \wedge yRx \rightarrow x=y)</math>.
+* '''[[Well-founded relation|Well-founded]]''' if for every set <math>S</math> which meets the field of <math>R</math>, <math>\ \exists x \in S</math> whose preimage under <math>R</math> does not meet <math>S</math>.
+* '''Extensional''' if for every <math>x, y</math> in the field of <math>R</math>, <math>x = y</math> if and only if <math>x</math> and <math>y</math> have the same preimage under <math>R</math>.
+
+Relations having certain combinations of the above properties have standard names. A binary relation <math>R</math> is:
+
+* An '''[[equivalence relation]]''' if <math>R</math> is reflexive, symmetric, and transitive.
+* A '''[[partial order]]''' if <math>R</math> is reflexive, antisymmetric, and transitive.
+* A '''[[linear order]]''' if <math>R</math> is a partial order and for every <math>x, y</math> in the field of <math>R</math>, either <math>xRy</math> or <math>yRx</math>.
+* A '''[[well-ordering]]''' if <math>R</math> is a linear order and well-founded.
+* A '''set picture''' if <math>R</math> is well-founded and extensional, and the field of <math>R</math> either equals the downward closure of one of its members (called its ''top element''), or is empty.
+
+== Functions ==
+A '''functional relation''' is a [[binary predicate]] <math>F</math> such that <math>\forall x, y, z\,\left(xFy \wedge xFz \to y = z\right).</math> Such a [[Relation (mathematics)|relation]] ([[Predicate (logic)|predicate]]) is implemented as a relation (set) exactly as described in the previous section. So the predicate <math>F</math> is implemented by the set <math>\left\{\left(x, y\right) : xFy\right\}</math>. A relation <math>F</math> is a '''function''' if and only if <math>\forall x, y, z\,\left(\left(x, y\right) \in F \wedge \left(x, z\right) \in F \to y = z\right).</math> It is therefore possible to define the value function <math>F\!\left(x\right)</math> as the unique object <math>y</math> such that <math>xFy</math>&thinsp;–&thinsp;i.e.:  <math>x</math> is <math>F</math>-related to <math>y</math> such that the relation <math>f</math> holds between <math>x</math> and <math>y</math>&thinsp;–&thinsp;or as the unique object <math>y</math> such that <math>\left(x, y\right) \in F</math>. The presence in both theories of functional predicates which are not sets makes it useful to allow the notation <math>F\!\left(x\right)</math> both for sets <math>F</math> and for important functional predicates. As long as one does not quantify over functions in the latter sense, all such uses are in principle eliminable.
+
+Outside of formal set theory, we usually specify a function in terms of its domain and codomain, as in the phrase "Let <math>f: A \to B</math> be a function". The domain of a function is just its domain as a relation, but we have not yet defined the codomain of a function. To do this we introduce the terminology that a function is '''from <math>A</math> to <math>B</math>''' if its domain equals <math>A</math> and its range ''is contained in'' <math>B</math>. In this way, every function is a function from its domain to its range, and a function <math>f</math> from <math>A</math> to <math>B</math> is also a function from <math>A</math> to <math>C</math> for any set <math>C</math> containing <math>B</math>.
+
+Indeed, no matter which set we consider to be the codomain of a function, the function does not change as a set since by definition it is just a set of ordered pairs. That is, a function does not determine its codomain by our definition. If one finds this unappealing then one can instead define a function as the ordered pair <math>(f, B)</math>, where <math>f</math> is a functional relation and <math>B</math> is its codomain, but we do not take this approach in this article (more elegantly, if one first defines ordered triples - for example as <math>(x, y, z) = (x, (y, z))</math>- then one could define a function as the ordered triple <math>(f, A, B)</math> so as to also include the domain). Note that the same issue exists for relations: outside of formal set theory we usually say "Let <math>R \subseteq A \times B</math> be a binary relation", but formally <math>R</math> is a set of ordered pairs such that <math>\text{dom}\,R \subseteq A</math> and <math>\text{ran}\,R \subseteq B</math>.
+
+In NFU, <math>x</math> has the same type as <math>F\!\left(x\right)</math>, and <math>F</math> is three types higher than <math>F\!\left(x\right)</math> (one type higher, if a type-level ordered pair is used). To solve this problem, one could define <math>F\left[A\right]</math> as <math>\left\{y : \exists x\,\left(x \in A \wedge y = F\!\left(x\right)\right)\right\}</math> for any set <math>A</math>, but this is more conveniently written as <math>\left\{F\!\left(x\right) : x \in A\right\}</math>. Then, if <math>A</math> is a set and <math>F</math> is any functional relation, the [[Axiom of replacement|Axiom of Replacement]] assures that <math>F\left[A\right]</math> is a set in [[ZFC]]. In NFU, <math>F\left[A\right]</math> and <math>A</math> now have the same type, and <math>F</math> is two types higher than <math>F\left[A\right]</math> (the same type, if a type-level ordered pair is used).
+
+The function <math>I\!\left(x\right) = x</math> is not a set in ZFC because it is "too large". <math>I\!\left(x\right)</math> is however a set in NFU. The function (predicate) <math>S\!\left(x\right) = \left\{x\right\}</math> is neither a function nor a set in either theory; in ZFC, this is true because such a set would be too large, and, in NFU, this is true because its definition would not be [[Stratified formula#In set theory|stratified]]. Moreover, <math>S\!\left(x\right)</math> can be proved not to exist in NFU (see the resolution of [[Cantor's paradox]] in [[New Foundations]].)
+
+=== Operations on functions ===
+Let <math>f</math> and <math>g</math> be arbitrary functions. The '''[[function composition|composition]]''' of <math>f</math> and <math>g</math>, <math>g \circ f</math>, is defined as the relative product <math>f\,|\,g</math>, but only if this results in a function such that <math>g \circ f</math> is also a function, with <math>\left(g \circ f\right)\!\left(x\right) = g\!\left(f\!\left(x\right)\right)</math>, if the range of <math>f</math> is a subset of the domain of <math>g</math>. The '''[[inverse function|inverse]]''' of <math>f</math>, <math>f^\left(-1\right)</math>, is defined as the [[inverse relation|converse]] of <math>f</math> if this is a function. Given any set <math>A</math>, the identity function <math>i_A</math> is the set <math>\left\{\left(x, x\right) \mid x \in A\right\}</math>, and this is a set in both ZFC and NFU for different reasons.
+
+=== Special kinds of function ===
+A function is an '''[[injective]]''' (also called '''[[bijection|one-to-one]]''') if it has an inverse function.
+
+A function <math>f</math> from <math>A</math> to <math>B</math> is a:
+* '''[[Injective function|Injection]]''' from <math>A</math> to <math>B</math> if the [[image (mathematics)|image]]s under <math>f</math> of distinct members of <math>A</math> are distinct members of <math>B</math>.
+* '''[[Surjection]]''' from <math>A</math> to <math>B</math> if the range of <math>f</math> is <math>B</math>.
+* '''[[Bijection]]''' from <math>A</math> to <math>B</math> if <math>f</math> is both an injection and a surjection.
+
+Defining functions as ordered pairs <math>(f, B)</math> or ordered triples <math>(f, A, B)</math> has the advantages that we do not have to introduce the terminology of being a function "from <math>A</math> to <math>B</math>", and that we can speak of "being surjective" outright as opposed to only being able to speak of "being surjective onto <math>B</math>".
+
+== Size of sets ==
+
+In both [[ZFC]] and [[New Foundations|NFU]], two sets ''A'' and ''B'' are the same size (or are '''[[equinumerous]]''') if and only if there is a [[bijection]] ''f'' from ''A'' to ''B''. This can be written as <math>|A|=|B|</math>, but note that (for the moment) this expresses a relation between ''A'' and ''B'' rather than a relation between yet-undefined objects <math>|A|</math> and <math>|B|</math>. Denote this relation by <math>A \sim B</math> in contexts such as the actual definition of the [[Cardinal number|cardinals]] where even the appearance of presupposing abstract cardinals should be avoided.
+
+Similarly, define <math>|A| \leq |B|</math> as holding if and only if there is an [[Injective function|injection]] from ''A'' to ''B''.
+
+It is straightforward to show that the relation of equinumerousness is an [[equivalence relation]]: equinumerousness of ''A'' with ''A'' is witnessed by <math>i_A</math>; if ''f'' witnesses <math>|A|=|B|</math>, then <math>f^{-1}</math> witnesses <math>|B|=|A|</math>; and if ''f'' witnesses <math>|A|=|B|</math> and ''g'' witnesses <math>|B|=|C|</math>, then <math>g\circ f</math> witnesses <math>|A|=|C|</math>.
+
+It can be shown that <math>|A| \leq |B|</math> is a [[linear order]] on abstract cardinals, but not on sets. Reflexivity is obvious and transitivity is proven just as for equinumerousness. The [[Cantor–Bernstein–Schroeder theorem|Schröder–Bernstein theorem]], provable in [[ZFC]] and [[New Foundations|NFU]] in an entirely standard way, establishes that
+*<math>|A| \leq |B| \wedge |B| \leq |A| \rightarrow |A| = |B|</math>
+(this establishes antisymmetry on cardinals), and
+*<math>|A| \leq |B| \vee |B| \leq |A|</math>
+follows in a standard way in either theory from the [[axiom of choice]].
+
+== Finite sets and natural numbers ==
+
+Natural numbers can be considered either as finite ordinals or finite cardinals. Here consider them as finite cardinal numbers. This is the first place where a major difference between the implementations in [[ZFC]] and [[New Foundations|NFU]] becomes evident.
+
+The Axiom of Infinity of ZFC tells us that there is a set ''A'' which contains <math>\emptyset</math> and contains <math>y \cup \{y\}</math> for each <math>y \in A</math>. This set ''A'' is not uniquely determined (it can be made larger while preserving this closure property): the set ''N'' of natural numbers is
+*<math>\{x \in A \mid \forall B\,(\emptyset \in B \wedge \forall y\,(y \in B \rightarrow y \cup \{y\} \in B) \rightarrow x \in B)\}</math>
+which is the intersection of all sets which contain the empty set and are closed under the "successor" operation <math>y \mapsto y \cup \{y\}</math>.
+
+In ZFC, a set <math>A</math> is finite if and only if there is <math>n \in N</math> such that <math>|n|=|A|</math>: further, define <math>|A|</math> as this ''n'' for finite ''A''. (It can be proved that no two distinct natural numbers are the same size).
+
+The usual operations of arithmetic can be defined recursively and in a style very similar to that in which the set of natural numbers itself is defined. For example, + (the addition operation on natural numbers) can be defined as the smallest set which contains <math>((x,\emptyset),x)</math> for each natural number <math>x</math> and contains <math>((x,y \cup \{y\}),z \cup \{z\})</math> whenever it contains <math>((x,y),z)</math>.
+
+In NFU, it is not obvious that this approach can be used, since the successor operation <math>y \cup \{y\}</math> is unstratified and so the set ''N'' as defined above cannot be shown to exist in NFU (it is consistent for the set of finite von Neumann ordinals to exist in NFU, but this strengthens the theory, as the existence of this set implies the Axiom of Counting (for which see below or the [[New Foundations]] article)).
+
+The standard definition of the natural numbers, which is actually the oldest [[set-theoretic definition of natural numbers]], is as equivalence classes of finite sets under equinumerousness. Essentially the same definition is appropriate to [[New Foundations|NFU]] (this is not the usual definition, but the results are the same): define ''Fin'', the set of finite sets, as
+:<math>\{A \mid \forall F\,(\emptyset \in F \wedge \forall x,y\,(x \in F \rightarrow x \cup \{y\} \in F) \rightarrow A \in F)\}</math>
+For any set <math>A \in Fin</math>, define <math>|A|</math> as <math>\{B \mid A \sim B\}</math>. Define ''N'' as the set <math>\{|A| \mid A \in Fin\}</math>.
+
+The Axiom of Infinity of NFU can be expressed as <math>V \not\in Fin</math>: this is enough to establish that each natural number has a nonempty successor (the successor of <math>|A|</math> being <math>|A \cup \{x\}|</math> for any <math>x \not\in A</math>) which is the hard part of showing that the Peano axioms of arithmetic are satisfied.
+
+The operations of arithmetic can be defined in a style similar to the style given above (using the definition of successor just given). They can also be defined in a natural set theoretical way: if A and B are disjoint finite sets, define |A|+|B| as <math>|A \cup B|</math>. More formally, define ''m+n'' for ''m'' and ''n'' in ''N'' as
+:<math>\{A \mid \exists B,C\,(B \in m \wedge C \in n \wedge B \cap C = \emptyset \wedge A = B \cup C)\}</math>
+(But note that this style of definition is feasible for the ZFC numerals as well, but more circuitous: the form of the [[New Foundations|NFU]] definition facilitates set manipulations while the form of the ZFC definition facilitates recursive definitions, but either theory supports either style of definition).
+
+The two implementations are quite different. In ZFC, choose a representative of each finite cardinality (the equivalence classes themselves are too large to be sets); in NFU the equivalence classes themselves are sets, and are thus an obvious choice for objects to stand in for the cardinalities. However, the arithmetic of the two theories is identical: the same abstraction is implemented by these two superficially different approaches.
+
+== Equivalence relations and partitions ==
+
+A general technique for implementing abstractions in set theory is the use of equivalence classes. If an equivalence relation ''R'' tells us that elements of its field ''A'' are alike in some particular respect, then for any set ''x'', regard the set <math>[x]_R=\{y \in A \mid x R y\}</math> as representing an abstraction from the set ''x'' respecting just those features (identify elements of ''A'' [[up to]] ''R'').
+
+For any set ''A'', a set <math>P</math> is a '''partition''' of ''A'' if all elements of ''P'' are nonempty, any two distinct elements of ''P'' are disjoint, and <math>A=\bigcup P</math>.
+
+For every equivalence relation ''R'' with field ''A'', <math>\{[x]_R \mid x \in A\}</math> is a partition of ''A''. Moreover, each partition ''P'' of ''A'' determines an equivalence relation <math>\{(x,y) \mid \exists A \in P\,(x \in A \wedge y \in A)\}</math>.
+
+This technique has limitations in both [[ZFC]] and [[New Foundations|NFU]]. In ZFC, since the universe is not a set, it seems possible to abstract features only from elements of small domains. This can be circumvented using a trick due to [[Dana Scott]]: if ''R'' is an equivalence relation on the universe, define <math>[x]_R</math> as the set of all ''y'' such that <math>y R x</math> and the [[rank (set theory)|rank]] of ''y'' is less than or equal to the rank of any <math>z R x</math>. This works because the ranks are sets. Of course, there still may be a proper class of <math>[x]_R</math>'s. In NFU, the main difficulty is that <math>[x]_R</math> is one type higher than x, so for example the "map" <math>x \mapsto [x]_R</math> is not in general a (set) function (though <math>\{x\} \mapsto [x]_R</math> is a set). This can be circumvented by the use of the Axiom of Choice to select a representative from each equivalence class to replace <math>[x]_R</math>, which will be at the same type as ''x'', or by choosing a canonical representative if there is a way to do this without invoking Choice (the use of representatives is hardly unknown in ZFC, either). In NFU, the use of equivalence class constructions to abstract properties of general sets is more common, as for example in the definitions of cardinal and ordinal number below.
+
+== Ordinal numbers ==
+
+Two well-orderings <math>W_1</math> and <math>W_2</math> are '''similar''' and write <math>W_1 \sim W_2</math> just in case there is a bijection ''f'' from the field of <math>W_1</math> to the field of <math>W_2</math> such that <math>x W_1 y \leftrightarrow f(x)W_2f(y)</math> for all ''x'' and ''y''.
+
+Similarity is shown to be an equivalence relation in much the same way that equinumerousness was shown to be an equivalence relation above.
+
+In [[New Foundations]] (NFU), the '''order type''' of a well-ordering ''W'' is the set of all well-orderings which are similar to ''W''. The set of '''ordinal numbers''' is the set of all order types of well-orderings.
+
+This does not work in [[ZFC]], because the equivalence classes are too large. It would be formally possible to use [[Scott's trick]] to define the ordinals in essentially the same way, but a device of [[John von Neumann|von Neumann]] is more commonly used.
+
+For any partial order <math>\leq</math>, the corresponding '''strict partial order''' &lt; is defined as <math>\{(x,y) \mid x \leq y \wedge x \neq y\}</math>. Strict linear orders and strict well-orderings are defined similarly.
+
+A set ''A'' is said to be '''transitive''' if <math>\bigcup A \subseteq A</math>: each element of an element of ''A'' is also an element of ''A''. A '''(von Neumann) ordinal''' is a transitive set on which membership is a strict well-ordering.
+
+In ZFC, the order type of a well-ordering ''W'' is then defined as the unique von Neumann ordinal which is equinumerous with the field of ''W'' and membership on which is isomorphic to the strict well-ordering associated with ''W''. (the equinumerousness condition distinguishes between well-orderings with fields of size 0 and 1, whose associated strict well-orderings are indistinguishable).
+
+In ZFC there cannot be a set of all ordinals. In fact, the von Neumann ordinals are an inconsistent totality in any set theory: it can be shown with modest set theoretical assumptions that every element of a von Neumann ordinal is a von Neumann ordinal and the von Neumann ordinals are strictly well-ordered by membership. It follows that the class of von Neumann ordinals would be a von Neumann ordinal if it were a set: but it would then be an element of itself, which contradicts the fact that membership is a strict well-ordering of the von Neumann ordinals.
+
+The existence of order types for all well-orderings is not a theorem of [[Zermelo set theory]]: it requires the [[Axiom of replacement]]. Even Scott's trick cannot be used in Zermelo set theory without an additional assumption (such as the assumption that every set belongs to a [[rank (set theory)|rank]] which is a set, which does not essentially
+strengthen Zermelo set theory but is not a theorem of that theory).
+
+In NFU, the collection of all ordinals is a set by stratified comprehension. The Burali-Forti paradox is evaded in an unexpected way. There is a natural order on the ordinals defined by <math>\alpha\leq \beta</math> if and only if some (and so any) <math>W_1 \in \alpha</math> is similar to an initial segment of some (and so any) <math>W_2\in \beta</math>. Further, it can be shown that this natural order is a well-ordering of the ordinals and so must have an order type <math>\Omega</math>. It would seem that the order type of the ordinals less than
+<math>\Omega</math> with the natural order would be <math>\Omega</math>, contradicting the fact that <math>\Omega</math> is the order type of the entire natural order on the ordinals (and so not of any of its proper initial segments). But this relies on one's intuition (correct in ZFC) that the order type of the natural order on the ordinals less than <math>\alpha</math> is <math>\alpha</math> for any ordinal <math>\alpha</math>. This assertion is unstratified, because the type of the second <math>\alpha</math> is four higher than the type of the first (two higher if a type level pair is used). The assertion which is true and provable in NFU is that the order type of the natural order on the ordinals less than <math>\alpha</math> is <math>T^4(\alpha)</math> for any ordinal <math>\alpha</math>, where <math>T(\alpha)</math> is the order type of <math>W^{\iota}=\{(\{x\},\{y\})\mid xWy\}</math> for any <math>W \in \alpha</math> (it is easy to show that this does not depend on the choice of W; note that T raises type by one). Thus the order type of the ordinals less than <math>\Omega</math> with the natural order is <math>T^4(\Omega)</math>, and <math>T^4(\Omega)<\Omega</math>. All uses of <math>T^4</math> here can be replaced with <math>T^2</math> if a type-level pair is used.
+
+This shows that the T operation is nontrivial, which has a number of consequences. It follows immediately that the singleton map <math>x \mapsto \{x\}</math> is not a set, as otherwise restrictions of this map would establish the similarity of ''W'' and <math>W^{\iota}</math> for any well-ordering ''W''. T is (externally) bijective and order-preserving. Because of this, the fact <math>T^4(\Omega)<\Omega</math> establishes that <math>\Omega > T(\Omega) > T^2(\Omega) \ldots</math> is a "descending sequence" in the ordinals which cannot be a set.
+
+Ordinals fixed by T are called '''Cantorian''' ordinals, and ordinals which dominate only cantorian ordinals (which are easily shown to be cantorian themselves) are said to be '''strongly cantorian'''. There can be no set of cantorian ordinals or set of strongly cantorian ordinals.
+
+=== Digression: von Neumann ordinals in NFU ===
+
+It is possible to reason about von Neumann ordinals in [[New Foundations|NFU]]. Recall that a von Neumann ordinal is a transitive set ''A'' such that the restriction of membership to ''A'' is a strict well-ordering. This is quite a strong condition in the NFU context, since the membership relation involves a difference of type. A von Neumann ordinal ''A'' is not an ordinal in the sense of NFU, but <math>\in\lceil A</math> belongs to an ordinal <math>\alpha</math> which may be termed the order type of (membership on) ''A''. It is easy to show that the order type of a von Neumann ordinal ''A'' is cantorian: for any well-ordering ''W'' of order type <math>\alpha</math>, the induced well-ordering of initial segments of ''W'' by inclusion has order type <math>T(\alpha)</math> (it is one type higher, thus the application of T): but the order types of the well-ordering of a von Neumann ordinal ''A'' by membership and the well-ordering of its initial segments by inclusion are clearly the same because the two well-orderings are actually the same relation, so the order type of ''A'' is fixed under T. Moreover, the same argument applies to any smaller ordinal (which will be the order type of an initial segment of ''A'', also a von Neumann ordinal) so the order type of any von Neumann ordinal is strongly cantorian.
+
+The only von Neumann ordinals which can be shown to exist in NFU without additional assumptions are the concrete finite ones. However, the application of a permutation method can convert any model of NFU to a model in which every strongly cantorian ordinal is the order type of a von Neumann ordinal. This suggests that the concept "strongly cantorian ordinal of NFU" might be a better analogue to "ordinal of ZFC" than is the apparent analogue "ordinal of NFU".
+
+== Cardinal numbers ==
+
+Cardinal numbers are defined in [[New Foundations|NFU]] in a way which generalizes the definition of natural
+number: for any set ''A'', <math>|A| =_{\mathrm{def}} \{B \mid B \sim A\}</math>.
+
+In [[ZFC]], these equivalence classes are too large as usual. Scott's trick could be used (and indeed is used in [[Zermelo–Fraenkel set theory|ZF]]), <math>|A|</math> is usually defined as the smallest order type (here a von Neumann ordinal) of a well-ordering of ''A'' (that every set can be well-ordered follows from
+the Axiom of Choice in the usual way in both theories).
+
+The natural order on cardinal numbers is seen to be a well-ordering: that it is reflexive, antisymmetric (on abstract cardinals, which are now available) and transitive has been shown above. That it is a linear order follows from the Axiom of Choice: well-order two sets and an 
+initial segment of one well-ordering will be isomorphic to the other, so one set will have cardinality smaller than that of the other. That it is a well-ordering follows from the Axiom of Choice in a similar way.
+
+With each infinite cardinal, many order types are associated for the usual reasons (in either set theory).
+
+Cantor's theorem shows (in both theories) that there are nontrivial distinctions between infinite cardinal numbers. In [[ZFC]], one proves <math>|A|<|P(A)|.</math> In [[New Foundations|NFU]], the usual form of Cantor's theorem is false (consider the case A=V), but Cantor's theorem is an ill-typed statement. The correct form of the theorem in [[New Foundations|NFU]] is <math>|P_1(A)|<|P(A)|</math>, where <math>P_1(A)</math> is the set of one-element subsets of A. <math>|P_1(V)|<|P(V)|</math> shows that there are "fewer" singletons than sets (the obvious bijection <math>x \mapsto \{x\}</math> from <math>P_1(V)</math> to ''V'' has already been seen not to be a set). It is actually provable in NFU + Choice that <math>|P_1(V)|<|P(V)|\ll|V|</math> (where <math>\ll</math> signals the existence of many intervening cardinals; there are many, many urelements!). Define a type-raising T operation on cardinals analogous to the T operation on ordinals: <math>T(|A|) = |P_1(A)|</math>; this is an external endomorphism of the cardinals just as the T operation on ordinals is an external endomorphism of the ordinals.
+
+A set ''A'' is said to be '''cantorian''' just in case <math>|A| = |P_1(A)| = T(|A|)</math>; the cardinal <math>|A|</math> is also said to be a cantorian cardinal. A set ''A'' is said to be '''strongly cantorian''' (and its cardinal to be strongly cantorian as well) just in case the restriction of the singleton map to ''A'' (<math>(x \mapsto \{x\})\lceil A</math>) is a set. Well-orderings of strongly cantorian sets are always strongly cantorian ordinals; this is not always true of well-orderings of cantorian sets (though the shortest well-ordering of a cantorian set will be cantorian). A cantorian set is a set which satisfies the usual form of Cantor's theorem.
+
+The operations of cardinal arithmetic are defined in a set-theoretically motivated way in both theories. <math>|A| + |B| = \{C \cup D \mid C \sim A \wedge D \sim B \wedge C \cap D = \emptyset\}</math>. One would like to define <math>|A|\cdot|B|</math> as <math>|A \times B|</math>, and one does this in [[ZFC]], but there is an obstruction in [[New Foundations|NFU]] when using the Kuratowski pair: one defines <math>|A|\cdot|B|</math> as <math>T^{-2}(|A \times B|)</math> because of the type displacement of 2 between the pair and its projections, which implies a type displacement of two between a cartesian product and its factors. It is straightforward to prove that the product always exists (but requires attention because the inverse of T is not total).
+
+Defining the exponential operation on cardinals requires T in an essential way: if <math>B^A</math> was defined as the collection of functions from ''A'' to ''B'', this is three types higher than ''A'' or ''B'', so it is reasonable to define <math>|B|^{|A|}</math> as <math>T^{-3}(|B^A|)</math> so that it is the same type as ''A'' or ''B'' (<math>T^{-1}</math> replaces <math>T^{-3}</math> with type-level pairs). An effect of this is that the exponential operation is partial: for example, <math>2^{|V|}</math> is undefined. In [[ZFC]] one defines <math>|B|^{|A|}</math> as <math>|B^A|</math> without difficulty.
+
+The exponential operation is total and behaves exactly as expected on cantorian cardinals, since T fixes such cardinals and it is easy to show that a function space between cantorian sets is cantorian (as are power sets, cartesian products, and other usual type constructors). This offers further encouragement to the view that the "standard" cardinalities in [[New Foundations|NFU]] are the cantorian (indeed, the strongly cantorian) cardinalities, just as the "standard" ordinals seem to be the strongly cantorian ordinals.
+
+Now the usual theorems of cardinal arithmetic with the axiom of choice can be proved, including <math>\kappa \cdot \kappa = \kappa</math>. From the case <math>|V|\cdot |V| = |V|</math> the existence of a type level ordered pair can be derived: <math>|V| \cdot |V| = T^{-2}(|V \times V|)</math> is equal to <math>|V|</math> just in case <math>|V \times V| = T^2(|V|) = |P_1^2(V)|</math>, which would be witnessed by a one-to-one correspondence between Kuratowski pairs <math>(a,b)</math> and double singletons <math>\{\{c\}\}</math>: redefine <math>(a,b)</math> as the ''c'' such that <math>\{\{c\}\}</math> is associated with the Kuratowski <math>(a,b)</math>: this is a type-level notion of ordered pair.
+
+== The Axiom of Counting and subversion of stratification ==
+
+So there are two different implementations of the natural numbers in [[New Foundations|NFU]] (though they are the same in [[ZFC]]): finite ordinals and finite cardinals. Each of these supports a T operation in [[New Foundations|NFU]] (basically the same operation). It is easy to prove that <math>T(n)</math> is a natural number if n is a natural number in [[New Foundations|NFU]] + Infinity + Choice (and so <math>|N|</math> and the first
+infinite ordinal <math>\omega</math> are cantorian) but it is not possible to prove in this theory that <math>T(n)=n</math>. However, common sense indicates that this should be true, and so it can be adopted as an axiom:
+*'''Rosser's Axiom of Counting''': For each natural number ''n'', <math>T(n)=n</math>.
+One natural consequence of this axiom (and indeed its original formulation) is
+*<math>|\{1,\ldots,n\}| = n</math> for each natural number ''n''.
+All that can be proved in [[New Foundations|NFU]] without Counting is <math>|\{1,\ldots,n\}| = T^2(n)</math>.
+
+A consequence of Counting is that ''N'' is a strongly cantorian set (again, this is an equivalent assertion).
+
+===Properties of strongly cantorian sets===
+The type of any variable restricted to a strongly cantorian set ''A'' can be raised or lowered as desired by replacing references to <math>a \in A</math> with references to <math>\bigcup f(a)</math> (type of ''a'' raised; this presupposes that it is known that ''a'' is a set; otherwise one must say "the element of <math>f(a)</math>" to get this effect) or <math>f^{-1}(\{a\})</math> (type of a lowered) where <math>f(a) = \{a\}</math> for all <math>a \in A</math>, so it is not necessary to assign types to such variables for purposes of stratification.
+
+Any subset of a strongly cantorian set is strongly cantorian. The power set of a strongly cantorian set is strongly cantorian. The cartesian product of two strongly cantorian sets is strongly cantorian.
+
+Introducing the Axiom of Counting means that types need not be assigned to variables restricted to ''N'' or to ''P''(''N''), ''R'' (the set of reals) or indeed any set ever considered in classical mathematics outside of set theory.
+
+There are no analogous phenomena in [[ZFC]]. See the main [[New Foundations]] article for stronger axioms that can be adjoined to NFU to enforce "standard" behavior of familiar mathematical objects.
+
+== Familiar number systems: positive rationals, magnitudes, and reals ==
+
+Represent '''positive fractions''' as pairs of positive natural numbers (0 is excluded): <math>\frac pq</math> is represented by the pair <math>(p,q)</math>. To make <math>\frac pq = \frac rs \leftrightarrow ps=qr</math>, introduce the relation <math>\sim</math> defined by <math>(p,q)\sim (r,s) \leftrightarrow ps=qr</math>. It is provable that this is an equivalence relation: define '''positive rational numbers''' as equivalence classes of pairs of positive natural numbers under this relation. Arithmetic operations on positive rational numbers and the order relation on positive rationals are defined just as in elementary school and proved (with some effort) to have the expected properties.
+
+Represent '''magnitudes''' (positive reals) as nonempty proper initial segments of the positive rationals with no largest element. The operations of addition and multiplication on magnitudes are implemented by elementwise addition of the positive rational elements of the magnitudes. Order is implemented as set inclusion.
+
+Represent '''real numbers''' as differences <math>m-n</math> of magnitudes: formally speaking, a real number is an equivalence class of pairs <math>(m,n)</math> of magnitudes under the equivalence relation <math>\sim</math> defined by <math>(m,n) \sim (r,s) \leftrightarrow m+s = n+r</math>. The operations of addition and multiplication on real numbers are defined just as one would expect from the algebraic rules for adding and multiplying differences. The treatment of order is also as in elementary algebra.
+
+This is the briefest sketch of the constructions. Note that the constructions are exactly the same in [[ZFC]] and in [[New Foundations|NFU]], except for the difference in the constructions of the natural numbers: since all variables are restricted to strongly cantorian sets, there is no need to worry about stratification restrictions. Without the Axiom of Counting, it might be necessary to introduce some applications of T in a full discussion of these constructions.
+
+== Operations on indexed families of sets ==
+
+In this class of constructions it appears that [[ZFC]] has an advantage over [[New Foundations|NFU]]: though the constructions are clearly feasible in [[New Foundations|NFU]], they are more complicated than in ZFC for reasons having to do with stratification.
+
+Throughout this section assume a type-level ordered pair. Define <math>(x_1,x_2,\ldots,x_n)</math> as <math>(x_1,(x_2,\ldots,x_n))</math>. The definition of the general ''n''-tuple using the Kuratowski pair is trickier, as one needs to keep the types of all the projections the same, and the type displacement between the ''n''-tuple and its projections increases as ''n'' increases. Here, the ''n''-tuple has the same type as each of its projections.
+
+General cartesian products are defined similarly: <math>A_1 \times A_2 \times \ldots \times A_n = A_1 \times (A_2 \times \ldots \times A_n)</math>
+
+The definitions are the same in ZFC but without any worries about stratification (the grouping given here is opposite to that more usually used, but this is easily corrected for).
+
+Now consider the infinite cartesian product <math>\Pi_{i \in I}A_i</math>. In ZFC, this is defined as the set of all functions ''f'' with domain ''I'' such that <math>f(i) \in A_i</math> (where ''A'' is implicitly understood as a function taking each ''i'' to <math>A_i</math>).
+
+In NFU, this is requires attention to type. Given a set ''I'' and set valued function ''A'' whose value at <math>\{i\}</math> in <math>P_1(I)</math> is written <math>A_i</math>, Define <math>\Pi_{i \in I}A_i</math> as the set of all functions ''f'' with domain ''I'' such that <math>f(i) \in A_i</math>: notice that <math>f(i) \in A_i = A(\{i\})</math> is stratified because of our convention that ''A'' is a function with values at singletons of the indices. Note that the very largest families of sets (which cannot be indexed by sets of singletons) will not have cartesian products under this definition. Note further that the sets <math>A_i</math> are at the same type as the index set ''I'' (since one type higher than its elements); the product, as a set of functions with domain ''I'' (so at the same type as ''I'') is one type higher (assuming a type-level ordered pair).
+
+Now consider the product <math>\Pi_{i \in I}|A_i|</math> of the cardinals of these sets. The cardinality |<math>\Pi_{i \in I}A_i</math>| is one type higher than the cardinals <math>|A_i|</math>, so the correct definition of the infinite product of cardinals is <math>T^{-1}(|\Pi_{i \in I}A_i|)</math> (because the inverse of T is not total, it is possible that this may not exist).
+
+Repeat this for disjoint unions of families of sets and sums of families of cardinals. Again, let ''A'' be a set-valued function with domain <math>P_1(I)</math>: write <math>A_i</math> for <math>A(\{i\})</math>. The disjoint union <math>\Sigma_{i \in I}A_i</math> is the set <math>\{(i,a) \mid a \in A_i\}</math>. This set is at the same type as the sets <math>A_i</math>.
+
+The correct definition of the sum <math>\Sigma_{i \in I}|A_i|</math> is thus <math>|\Sigma_{i \in I}A_i|</math>, since there is no type displacement.
+
+It is possible to extend these definitions to handle index sets which are not sets of singletons, but this introduces an additional type level and is not needed for most purposes.
+
+In ZFC, define the disjoint union <math>\Sigma_{i \in I}A_i</math> as <math>\{(i,a) \mid a \in A_i\}</math>, where <math>A_i</math> abbreviates <math>A(i)</math>.
+
+Permutation methods can be used to show relative consistency with NFU of the assertion that for every strongly cantorian set A there is a set ''I'' of the same size whose elements are self-singletons: <math>i = \{i\}</math> for each ''i'' in ''I''.
+
+== The cumulative hierarchy ==
+
+In [[ZFC]], define the ''cumulative hierarchy'' as the ordinal-indexed sequence of sets satisfying the following conditions: <math>V_0 = \emptyset</math>; <math>V_{\alpha+1} = P(V_{\alpha})</math>; <math>V_{\lambda} = \bigcup\{V_{\beta} \mid \beta<\lambda\}</math> for limit ordinals <math>\lambda</math>. This is an example of a construction by [[transfinite recursion]]. The rank of a set ''A'' is said to be <math>\alpha</math> if and only if <math>A \in V_{\alpha+1}-V_{\alpha}</math>. The existence of the ranks as sets depends on the axiom of replacement at each limit step (the hierarchy cannot be constructed in [[Zermelo set theory]]); by the axiom of foundation, every set belongs to some rank.
+
+The cardinal <math>|P(V_{\omega + \alpha})|</math> is called <math>\beth_{\alpha}</math>.
+
+This construction cannot be carried out in [[New Foundations|NFU]] because the power set operation is not a set function in [[New Foundations|NFU]] (<math>P(A)</math> is one type higher than A for purposes of stratification).
+
+The sequence of cardinals <math>\beth_{\alpha}</math> can be implemented in NFU. Recall that <math>2^{|A|}</math> is defined as <math>T^{-1}(|\{0,1\}^A|)</math>, where <math>\{0,1\}</math> is a convenient set of size 2, and <math>|\{0,1\}^A|=|P(A)|</math>. Let <math>\beth</math> be the smallest set of cardinals which contains <math>|N|</math> (the cardinality of the set of natural numbers), contains the cardinal <math>2^{|A|}</math> whenever it contains <math>|A|</math>, and which is closed under suprema of sets of cardinals.
+
+A convention for ordinal indexing of any well-ordering <math>W_\alpha</math> is defined as the element ''x'' of the field of <math>W</math> such that
+the order type of the restriction of <math>W</math> to <math>\{y \mid y W x\}</math> is <math>\alpha</math>; then define <math>\beth_{\alpha}</math> as the element with index <math>\alpha</math> in the natural order on the elements of <math>\beth</math>. The cardinal <math>\aleph_{\alpha}</math> is the element with index <math>\alpha</math> in the natural order on all infinite cardinals (which is a well-ordering, see above). Note that <math>\aleph_0 = |N|</math> follows immediately from this definition. In all these constructions, notice that the type of the index <math>\alpha</math> is two higher (with type-level ordered pair) than the type of <math>W_{\alpha}</math>.
+
+Each set ''A'' of ZFC has a transitive closure <math>TC(A)</math> (the intersection of all transitive sets which contains ''A''). By the axiom of foundation, the restriction of the membership relation to the transitive closure of ''A'' is a [[well-founded relation]]. The relation <math>\in \lceil TC(A)</math> is either empty or has ''A'' as its top element, so this relation is a ''set picture''. It can be proved in ZFC that every set picture is isomorphic to some <math>\in \lceil TC(A)</math>.
+
+This suggests that (an initial segment of) the cumulative hierarchy can be studied by considering the isomorphism classes of set pictures. These isomorphism classes are sets and make up a set in [[New Foundations|NFU]]. There is a natural set relation analogous to membership on isomorphism classes of set pictures: if <math>x</math> is a set picture, write <math>[x]</math> for its isomorphism class and define <math>[x] E [y]</math> as holding if <math>[x]</math> is the isomorphism class of the restriction of ''y'' to the downward closure of one of the elements of the preimage under ''y'' of the top element of ''y''. The relation E is a set relation, and it is straightforward to prove that it is well-founded and extensional. If the definition of E is confusing, it can be deduced from the observation that it is induced by precisely the relationship which holds between the set picture associated with ''A'' and the set picture associated with ''B'' when <math>A \in B</math> in the usual set theory.
+
+There is a T operation on isomorphism classes of set pictures analogous to the T operation on ordinals: if ''x'' is a set picture, so is <math>x^{\iota} = \{(\{a\},\{b\})\mid (a,b) \in x\}</math>. Define <math>T([x])</math> as <math>[x^{\iota}]</math>. It is easy to see that <math>[x]E[y] \leftrightarrow T([x])=T([y])</math>.
+
+An axiom of extensionality for this simulated set theory follows from E's extensionality. From its well-foundedness follows an axiom of foundation. There remains the question of what comprehension axiom E may have. Consider any collection of set pictures <math>\{x^{\iota}\mid x \in S\}</math> (collection of set pictures whose fields are made up entirely of singletons). Since each <math>x^{\iota}</math> is one type higher than x (using a type-level ordered pair), replacing each element <math>\{a\}</math> of the field of each <math>x^{\iota}</math> in the collection with <math>(x,\{a\})</math> results in a collection of set pictures isomorphic to the original collection but with their fields disjoint. The union of these set
+pictures with a new top element yields a set picture whose isomorphism type will have as its preimages under E exactly the elements of the original collection. That is, for any collection of isomorphism types <math>[x^{\iota}] = T([x])</math>, there is an isomorphism type <math>[y]</math> whose preimage under E is exactly this collection.
+
+In particular, there will be an isomorphism type ''[v]'' whose preimage under E is the collection of ''all'' ''T''[''x'']'s (including ''T''[''v'']). Since ''T''[''v''] ''E'' ''v'' and E is well-founded, <math>T[v] \neq v</math>. This resembles the resolution of the Burali–Forti paradox discussed above and in the [[New Foundations]] article, and is in fact the local resolution of [[Mirimanoff's paradox]] of the set of all well-founded sets.
+
+There are ranks of isomorphism classes of set pictures just as there are ranks of sets in the usual set theory. For any collection of set pictures ''A'', define ''S''(''A'') as the set of all isomorphism classes of set pictures whose preimage under E is a subset of A; call A a "complete" set if every subset of ''A'' is a preimage under E. The collection of "ranks" is the smallest collection containing the empty set and closed under the S operation (which is a kind of power set construction) and under unions of its subcollections. It is straightforward to prove (much as in the usual set theory) that the ranks are well-ordered by inclusion, and so the ranks have an index in this well-order: refer to the rank with index <math>\alpha</math> as <math>R_{\alpha}</math>. It is provable that <math>|R_{\alpha}|=\beth_{\alpha}</math> for complete ranks <math>R_{\alpha}</math>. The union of the complete ranks (which will be the first incomplete rank) with the relation E looks like an initial segment of the universe of Zermelo-style set theory (not necessarily like the full universe of [[ZFC]] because it may not be large enough). It is provable that if <math>R_{\alpha}</math> is the first incomplete rank, then <math>R_{T(\alpha)}</math> is a complete rank and thus <math>T(\alpha)<\alpha</math>. So there is a "rank of the cumulative hierarchy" with an "external automorphism" T moving the rank downward, exactly the condition on a nonstandard model of a rank in the cumulative hierarchy under which a model of NFU is constructed in the [[New Foundations]] article. There are technical details to verify, but there is an interpretation not only of a fragment of [[ZFC]] but of [[New Foundations|NFU]] itself in this structure, with <math>[x]\in_{NFU}[y]</math> defined as <math>T([x]) E [y] \wedge [y] \in R_{T(\alpha)+1}</math>: this "relation" <math>E_{NFU}</math> is not a set relation but has the same type displacement between its arguments as the usual membership relation <math>\in</math>.
+
+So there is a natural construction inside NFU of the cumulative hierarchy of sets which internalizes the natural construction of a model of NFU in Zermelo-style set theory.
+
+Under the Axiom of Cantorian Sets described in the [[New Foundations]] article, the strongly cantorian part of the set of isomorphism classes of set pictures with the E relation as membership becomes a (proper class) model of ZFC (in which there are ''n''-[[Mahlo cardinals]] for each&nbsp;''n''; this extension of NFU is strictly stronger than ZFC). This is a proper class model because the strongly cantorian isomorphism classes do not make up a set.
+
+Permutation methods can be used to create from any model of NFU a model in which every strongly cantorian isomorphism type of set pictures is actually realized as the restriction of the true membership relation to the transitive closure of a set.
+
+== See also ==
+*[[Axiomatic set theory]]
+
+==References==
+*[[Keith Devlin]], 1994. ''The Joy of Sets'', 2nd ed. Springer-Verlag.
+*Holmes, Randall, 1998. ''[http://math.boisestate.edu/~holmes/holmes/head.pdf Elementary Set Theory with a Universal Set]''. Academia-Bruylant. The publisher has graciously consented to permit diffusion of this introduction to NFU via the web. Copyright is reserved.
+*Potter, Michael, 2004. ''Set Theory and its Philosophy'', 2nd ed. Oxford Univ. Press.
+*Suppes, Patrick, 1972. ''Axiomatic Set Theory''. Dover.
+*Tourlakis, George, 2003. ''Lectures in Logic and Set Theory, Vol. 2''. Cambridge Univ. Press.
+
+== External links ==
+*[http://us.metamath.org/ Metamath:] A web site devoted to an ongoing derivation of mathematics from the axioms of ZFC and [[first-order logic]].
+* [[Stanford Encyclopedia of Philosophy]]:
+** [http://plato.stanford.edu/entries/quine-nf Quine's New Foundations]—by Thomas Forster.
+** [http://setis.library.usyd.edu.au/stanford/entries/settheory-alternative/ Alternative axiomatic set theories]—by Randall Holmes.
+* Randall Holmes: [http://math.boisestate.edu/~holmes/holmes/nf.html New Foundations Home Page]
+
+[[Category:Mathematical logic]]
+[[Category:Set theory]]
+[[Category:Formalism (deductive)]]
+[[Category:Large-scale mathematical formalization projects]]This article examines the implementation of mathematical concepts in [[set theory]]. The implementation of a number of basic mathematical concepts is carried out in parallel in [[ZFC]] (the dominant set theory) and in [[New Foundations|NFU]], the version of Quine's [[New Foundations]] shown to be consistent by [[R. B. Jensen]] in 1969 (here understood to include at least axioms of [[Axiom of infinity|Infinity]] and [[Axiom of choice|Choice]]).
+
+What is said here applies also to two families of set theories: on the one hand, a range of theories including [[Zermelo set theory]] near the lower end of the scale and going up to ZFC extended with [[large cardinal property|large cardinal]] hypotheses such as "there is a [[measurable cardinal]]"; and on the other hand a hierarchy of extensions of NFU which is surveyed in the [[New Foundations]] article. These correspond to different general views of what the set-theoretical universe is like, and it is the approaches to implementation of mathematical concepts under these two general views that are being compared and contrasted.
+
+It is not the primary aim of this article to say anything about the relative merits of these theories as foundations for mathematics. The reason for the use of two different set theories is to illustrate that multiple approaches to the implementation of mathematics are feasible. Precisely because of this approach, this article is not a source of "official" definitions for any mathematical concept.
+
+==Preliminaries==
+
+The following sections carry out certain constructions in the two theories [[ZFC]] and [[New Foundations|NFU]] and compare the resulting implementations of certain mathematical structures (such as the [[natural numbers]]).
+
+Mathematical theories prove theorems (and nothing else). So saying that a theory allows the construction of a certain object means that it is a theorem of that theory that that object exists. This is a statement about a definition of the form "the x such that <math>\phi</math> exists", where <math>\phi</math> is a [[Well-formed formula|formula]] of our [[Formal language|language]]: the theory proves the existence of "the x such that <math>\phi</math>" just in case it is a theorem that "there is one and only one x such that <math>\phi</math>". (See [[Bertrand Russell|Bertrand Russell's]] [[theory of descriptions]].) Loosely, the theory "defines" or "constructs" this object in this case. If the statement is not a theorem, the theory cannot show that the object exists; if the statement is provably false in the theory, it proves that the object cannot exist; loosely, the object cannot be constructed.
+
+ZFC and NFU share the language of set theory, so the same formal definitions "the x such that <math>\phi</math>" can be contemplated in the two theories. A specific form of definition in the language of set theory is [[set-builder notation]]: <math>\{x \mid \phi\}</math> means "the set A such that for all x, <math>x \in A \leftrightarrow \phi</math>" (A cannot be [[Free variables and bound variables|free]] in <math>\phi</math>). This notation admits certain conventional extensions: <math>\{x \in B \mid \phi\}</math> is synonymous with <math>\{x \mid x \in B \wedge \phi\}</math>; <math>\{f(x_1,\ldots,x_n) \mid \phi\}</math> is defined as <math>\{z \mid \exists x_1,\ldots,x_n\,(z=f(x_1,\dots,x_n) \wedge \phi)\}</math>, where <math>f(x_1,\ldots,x_n)</math> is an expression already defined.
+
+Expressions definable in set-builder notation make sense in both ZFC and NFU: it may be that both theories prove that a given definition succeeds, or that neither do (the expression <math>\{x \mid x\not\in x\}</math> fails to refer to anything in ''any'' set theory with classical logic; in [[Class (set theory)|class]] theories like [[Von Neumann–Bernays–Gödel set theory|NBG]] this notation does refer to a class, but it is defined differently), or that one does and the other doesn't. Further, an object defined in the same way in ZFC and NFU may turn out to have different properties in the two theories (or there may be a difference in what can be proved where there is no provable difference between their properties).
+
+Further, set theory imports concepts from other branches of mathematics (in intention, ''all'' branches of mathematics). In some cases, there are different ways to import the concepts into ZFC and NFU. For example, the usual definition of the first infinite [[Ordinal number|ordinal]] <math>\omega</math> in ZFC is not suitable for NFU because the object (defined in purely set theoretical language as the set of all finite [[von Neumann ordinal]]s) cannot be shown to exist in NFU. The usual definition of <math>\omega</math> in NFU is (in purely set theoretical language) the set of all infinite [[well-ordering]]s all of whose proper initial segments are finite, an object which can be shown not to exist in ZFC. In the case of such imported objects, there may be different definitions, one for use in ZFC and related theories, and one for use in NFU and related theories. For such "implementations" of imported mathematical concepts to make sense, it is necessary to be able to show that the two parallel interpretations have the expected properties: for example, the implementations of the natural numbers in ZFC and NFU are different, but both are implementations of the same mathematical structure, because both include definitions for all the primitives of [[Peano arithmetic]] and satisfy (the translations of) the Peano axioms. It is then possible to compare what happens in the two theories as when only set theoretical language is in use, as long as the definitions appropriate to ZFC are understood to be used in the [[ZFC]] context and the definitions appropriate to NFU are understood to be used in the NFU context.
+
+Whatever is proven to exist in a theory clearly provably exists in any extension of that theory; moreover, analysis of the proof that an object exists in a given theory may show that it exists in weaker versions of that theory (one may consider [[Zermelo set theory]] instead of ZFC for much of what is done in this article, for example).
+
+== Empty set, singleton, unordered pairs and tuples ==
+These constructions appear first because they are the simplest constructions in set theory, not because they are the first constructions that come to mind in mathematics (though the notion of finite set is certainly fundamental). Even though NFU also allows the construction of set [[Urelement|ur-elements]] yet to become members of a set, the [[empty set]] is the unique ''set'' with no members:  
+:<math>\left.\varnothing\right. \, \overset{\mathrm{def.}}{=} \left\{x : x \neq x\right\}</math>
+For each object <math>x</math>, there is a set <math>\{x\}</math> with <math>x</math> as its only element:  
+:<math>\left\{x\right\} \overset{\mathrm{def.}}{=} \left\{y : y = x\right\}</math>
+For objects <math>x</math> and <math>y</math>, there is a set <math>\{x,y\}</math> containing <math>x</math> and <math>y</math> as its only elements:  
+:<math>\left\{x,y\right\} \overset{\mathrm{def.}}{=} \left\{z : z=x \vee z = y\right\}</math>
+The [[Union (set theory)|union]] of two sets is defined in the usual way:  
+:<math>\left.x \cup y\right. \, \overset{\mathrm{def.}}{=} \left\{z : z \in x \vee z \in y\right\}</math>
+This is a recursive definition of unordered <math>n</math>-tuples for any concrete <math>n</math> (finite sets given as lists of their elements:)  
+:<math>\left\{x_1, \ldots, x_n, x_{n+1}\right\} \overset{\mathrm{def.}}{=} \left\{x_1, \ldots, x_n\right\} \cup \left\{x_{n+1}\right\}</math>
+In NFU, all the set definitions given work by stratified comprehension; in ZFC, the existence of the unordered pair is given by the [[Axiom of pairing|Axiom of Pairing]], the existence of the empty set follows by [[Axiom schema of separation|Separation]] from the existence of any set, and the binary union of two sets exists by the axioms of Pairing and [[Axiom of union|Union]] (<math>x \cup y = \bigcup\{x,y\}</math>).
+
+== Ordered pair ==
+{{main article|Ordered pair}}
+First, consider the '''ordered pair'''. The reason that this comes first is technical: ordered pairs are needed to implement [[Relation (mathematics)|relations]] and [[Function (mathematics)|functions]], which are needed to implement other concepts which may seem to be prior.
+The first definition of the ordered pair was the definition <math>(x,y) \overset{\mathrm{def}}{=} \{\{\{x\},\emptyset\},\{\{y\}\}\}</math> proposed by [[Norbert Wiener]] in 1914 in the context of the type theory of [[Principia Mathematica]]. Wiener observed that this allowed the elimination of types of ''n''-ary relations for ''n'' > 1 from the system of that work.
+It is more usual now to use the definition <math>(x,y) \overset{\mathrm{def.}}{=} \{\{x\},\{x,y\}\}</math>, due to [[Kazimierz Kuratowski|Kuratowski]].
+Either of these definitions works in either ZFC or NFU. In NFU, these two definitions have a technical disadvantage: the Kuratowski ordered pair is two types higher than its projections, while the Wiener ordered pair is three types higher. It is common to postulate the existence of a type-level ordered pair (a pair <math>(x,y)</math> which is the same type as its [[Projection (mathematics)|projections]]) in NFU. It is convenient to use the Kuratowski pair in both systems until the use of type-level pairs can be formally justified.
+The internal details of these definitions have nothing to do with their actual mathematical function. For any notion <math>(x,y)</math> of ordered pair, the thing that matters is that it satisfies the defining condition
+:<math>(x,y)=(z,w) \ \equiv \ x=z \wedge y=w</math>
+…and that it be reasonably easy to collect ordered pairs into sets.
+
+== Relations ==
+[[Relation (mathematics)|Relations]] are sets whose members are all [[ordered pair]]s. Where possible, a relation <math>R</math> (understood as a [[binary predicate]]) is implemented as <math>\{(x,y) \mid x R y\}</math> (which may be written as <math>\{z \mid \pi_1(z) R \pi_2(z)\}</math>). When <math>R</math> is a relation, the notation <math>xRy</math> means <math>\left(x, y\right) \in R</math>.
+
+In ZFC, some relations (such as the general equality relation or subset relation on sets) are 'too large'
+to be sets (but may be harmlessly reified as [[proper class]]es). In NFU, some relations (such as the membership relation) are not sets because their definitions are not stratified: in <math>\{(x,y) \mid x \in y\}</math>  <math>x</math> and <math>y</math> would
+need to have the same type (because they appear as projections of the same pair), but also
+successive types (because <math>x</math> is considered as an element of <math>y</math>).
+
+=== Related definitions ===
+Let <math>R</math> and <math>S</math> be given [[binary relation]]s. Then the following concepts are useful:
+
+The '''[[converse relation|converse]]''' of <math>R</math> is the relation <math>\left\{\left(y, x\right) : xRy\right\}</math>.
+
+The '''domain''' of <math>R</math> is the set <math>\left\{x : \exists y \left(xRy\right)\right\}</math>.
+
+The '''range''' of <math>R</math> is the domain of the converse of <math>R</math>. That is, the set <math>\left\{y : \exists x \left(xRy\right)\right\}</math>.
+
+The '''field''' of <math>R</math> is the [[union (set theory)|union]] of the domain and range of <math>R</math>.
+
+The '''[[preimage]]''' of a member <math>x</math> of the field of <math>R</math> is the set <math>\left\{y : yRx\right\}</math> (used in the definition of 'well-founded' below.)
+
+The '''downward closure''' of a member <math>x</math> of the field of <math>R</math> is the smallest set <math>D</math> containing <math>x</math>, and containing each <math>zRy</math> for each <math>y \in D</math> (i.e., including the preimage of each of its elements with respect to <math>R</math> as a subset.)
+
+The '''[[relation composition|relative product]]''' <math>R|S</math> of <math>R</math> and <math>S</math> is the relation <math>\left\{\left(x, z\right) : \exists y\,\left(xRy \wedge ySz\right)\right\}</math>.
+
+Notice that with our formal definition of a binary relation, the range and codomain of a relation are not distinguished. This could be done by representing a relation <math>R</math> with codomain <math>B</math> as <math>\left(R, B\right)</math>, but our development will not require this.
+
+In ZFC, any relation whose domain is a subset of a set <math>A</math> and whose range is a subset of a set <math>B</math> will be a set, since the [[Cartesian product]] <math>A \times B = \left\{\left(a, b\right) : a \in A \wedge b \in B\right\}</math> is a set (being a subclass of <math>\mathcal{P}\!\left(A \cup B\right)</math>), and ''Separation'' provides for the existence of <math>\left\{\left(x, y\right) \in A \times B : xRy\right\}</math>. In NFU, some relations with global scope (such as equality and subset) can be implemented as sets. In NFU, bear in mind that <math>x</math> and <math>y</math> are three types lower than <math>R</math> in <math>xRy</math> (one type lower if a type-level ordered pair is used).
+
+=== Properties and kinds of relations ===
+A binary relation <math>R</math> is:
+*'''[[Reflexive relation|Reflexive]]''' if <math>xRx</math> for every <math>x</math> in the field of <math>R</math>.
+* '''[[Symmetric relation|Symmetric]]''' if <math>\forall x, y \,(xRy \to yRx)</math>.
+* '''[[Transitive relation|Transitive]]''' if <math>\forall x, y, z \,(xRy \wedge yRz \rightarrow xRz)</math>.
+* '''[[Antisymmetric relation|Antisymmetric]]''' if <math>\forall x, y \,(xRy \wedge yRx \rightarrow x=y)</math>.
+* '''[[Well-founded relation|Well-founded]]''' if for every set <math>S</math> which meets the field of <math>R</math>, <math>\ \exists x \in S</math> whose preimage under <math>R</math> does not meet <math>S</math>.
+* '''Extensional''' if for every <math>x, y</math> in the field of <math>R</math>, <math>x = y</math> if and only if <math>x</math> and <math>y</math> have the same preimage under <math>R</math>.
+
+Relations having certain combinations of the above properties have standard names. A binary relation <math>R</math> is:
+
+* An '''[[equivalence relation]]''' if <math>R</math> is reflexive, symmetric, and transitive.
+* A '''[[partial order]]''' if <math>R</math> is reflexive, antisymmetric, and transitive.
+* A '''[[linear order]]''' if <math>R</math> is a partial order and for every <math>x, y</math> in the field of <math>R</math>, either <math>xRy</math> or <math>yRx</math>.
+* A '''[[well-ordering]]''' if <math>R</math> is a linear order and well-founded.
+* A '''set picture''' if <math>R</math> is well-founded and extensional, and the field of <math>R</math> either equals the downward closure of one of its members (called its ''top element''), or is empty.
+
+== Functions ==
+A '''functional relation''' is a [[binary predicate]] <math>F</math> such that <math>\forall x, y, z\,\left(xFy \wedge xFz \to y = z\right).</math> Such a [[Relation (mathematics)|relation]] ([[Predicate (logic)|predicate]]) is implemented as a relation (set) exactly as described in the previous section. So the predicate <math>F</math> is implemented by the set <math>\left\{\left(x, y\right) : xFy\right\}</math>. A relation <math>F</math> is a '''function''' if and only if <math>\forall x, y, z\,\left(\left(x, y\right) \in F \wedge \left(x, z\right) \in F \to y = z\right).</math> It is therefore possible to define the value function <math>F\!\left(x\right)</math> as the unique object <math>y</math> such that <math>xFy</math>&thinsp;–&thinsp;i.e.:  <math>x</math> is <math>F</math>-related to <math>y</math> such that the relation <math>f</math> holds between <math>x</math> and <math>y</math>&thinsp;–&thinsp;or as the unique object <math>y</math> such that <math>\left(x, y\right) \in F</math>. The presence in both theories of functional predicates which are not sets makes it useful to allow the notation <math>F\!\left(x\right)</math> both for sets <math>F</math> and for important functional predicates. As long as one does not quantify over functions in the latter sense, all such uses are in principle eliminable.
+
+Outside of formal set theory, we usually specify a function in terms of its domain and codomain, as in the phrase "Let <math>f: A \to B</math> be a function". The domain of a function is just its domain as a relation, but we have not yet defined the codomain of a function. To do this we introduce the terminology that a function is '''from <math>A</math> to <math>B</math>''' if its domain equals <math>A</math> and its range ''is contained in'' <math>B</math>. In this way, every function is a function from its domain to its range, and a function <math>f</math> from <math>A</math> to <math>B</math> is also a function from <math>A</math> to <math>C</math> for any set <math>C</math> containing <math>B</math>.
+
+Indeed, no matter which set we consider to be the codomain of a function, the function does not change as a set since by definition it is just a set of ordered pairs. That is, a function does not determine its codomain by our definition. If one finds this unappealing then one can instead define a function as the ordered pair <math>(f, B)</math>, where <math>f</math> is a functional relation and <math>B</math> is its codomain, but we do not take this approach in this article (more elegantly, if one first defines ordered triples - for example as <math>(x, y, z) = (x, (y, z))</math>- then one could define a function as the ordered triple <math>(f, A, B)</math> so as to also include the domain). Note that the same issue exists for relations: outside of formal set theory we usually say "Let <math>R \subseteq A \times B</math> be a binary relation", but formally <math>R</math> is a set of ordered pairs such that <math>\text{dom}\,R \subseteq A</math> and <math>\text{ran}\,R \subseteq B</math>.
+
+In NFU, <math>x</math> has the same type as <math>F\!\left(x\right)</math>, and <math>F</math> is three types higher than <math>F\!\left(x\right)</math> (one type higher, if a type-level ordered pair is used). To solve this problem, one could define <math>F\left[A\right]</math> as <math>\left\{y : \exists x\,\left(x \in A \wedge y = F\!\left(x\right)\right)\right\}</math> for any set <math>A</math>, but this is more conveniently written as <math>\left\{F\!\left(x\right) : x \in A\right\}</math>. Then, if <math>A</math> is a set and <math>F</math> is any functional relation, the [[Axiom of replacement|Axiom of Replacement]] assures that <math>F\left[A\right]</math> is a set in [[ZFC]]. In NFU, <math>F\left[A\right]</math> and <math>A</math> now have the same type, and <math>F</math> is two types higher than <math>F\left[A\right]</math> (the same type, if a type-level ordered pair is used).
+
+The function <math>I\!\left(x\right) = x</math> is not a set in ZFC because it is "too large". <math>I\!\left(x\right)</math> is however a set in NFU. The function (predicate) <math>S\!\left(x\right) = \left\{x\right\}</math> is neither a function nor a set in either theory; in ZFC, this is true because such a set would be too large, and, in NFU, this is true because its definition would not be [[Stratified formula#In set theory|stratified]]. Moreover, <math>S\!\left(x\right)</math> can be proved not to exist in NFU (see the resolution of [[Cantor's paradox]] in [[New Foundations]].)
+
+=== Operations on functions ===
+Let <math>f</math> and <math>g</math> be arbitrary functions. The '''[[function composition|composition]]''' of <math>f</math> and <math>g</math>, <math>g \circ f</math>, is defined as the relative product <math>f\,|\,g</math>, but only if this results in a function such that <math>g \circ f</math> is also a function, with <math>\left(g \circ f\right)\!\left(x\right) = g\!\left(f\!\left(x\right)\right)</math>, if the range of <math>f</math> is a subset of the domain of <math>g</math>. The '''[[inverse function|inverse]]''' of <math>f</math>, <math>f^\left(-1\right)</math>, is defined as the [[inverse relation|converse]] of <math>f</math> if this is a function. Given any set <math>A</math>, the identity function <math>i_A</math> is the set <math>\left\{\left(x, x\right) \mid x \in A\right\}</math>, and this is a set in both ZFC and NFU for different reasons.
+
+=== Special kinds of function ===
+A function is an '''[[injective]]''' (also called '''[[bijection|one-to-one]]''') if it has an inverse function.
+
+A function <math>f</math> from <math>A</math> to <math>B</math> is a:
+* '''[[Injective function|Injection]]''' from <math>A</math> to <math>B</math> if the [[image (mathematics)|image]]s under <math>f</math> of distinct members of <math>A</math> are distinct members of <math>B</math>.
+* '''[[Surjection]]''' from <math>A</math> to <math>B</math> if the range of <math>f</math> is <math>B</math>.
+* '''[[Bijection]]''' from <math>A</math> to <math>B</math> if <math>f</math> is both an injection and a surjection.
+
+Defining functions as ordered pairs <math>(f, B)</math> or ordered triples <math>(f, A, B)</math> has the advantages that we do not have to introduce the terminology of being a function "from <math>A</math> to <math>B</math>", and that we can speak of "being surjective" outright as opposed to only being able to speak of "being surjective onto <math>B</math>".
+
+== Size of sets ==
+
+In both [[ZFC]] and [[New Foundations|NFU]], two sets ''A'' and ''B'' are the same size (or are '''[[equinumerous]]''') if and only if there is a [[bijection]] ''f'' from ''A'' to ''B''. This can be written as <math>|A|=|B|</math>, but note that (for the moment) this expresses a relation between ''A'' and ''B'' rather than a relation between yet-undefined objects <math>|A|</math> and <math>|B|</math>. Denote this relation by <math>A \sim B</math> in contexts such as the actual definition of the [[Cardinal number|cardinals]] where even the appearance of presupposing abstract cardinals should be avoided.
+
+Similarly, define <math>|A| \leq |B|</math> as holding if and only if there is an [[Injective function|injection]] from ''A'' to ''B''.
+
+It is straightforward to show that the relation of equinumerousness is an [[equivalence relation]]: equinumerousness of ''A'' with ''A'' is witnessed by <math>i_A</math>; if ''f'' witnesses <math>|A|=|B|</math>, then <math>f^{-1}</math> witnesses <math>|B|=|A|</math>; and if ''f'' witnesses <math>|A|=|B|</math> and ''g'' witnesses <math>|B|=|C|</math>, then <math>g\circ f</math> witnesses <math>|A|=|C|</math>.
+
+It can be shown that <math>|A| \leq |B|</math> is a [[linear order]] on abstract cardinals, but not on sets. Reflexivity is obvious and transitivity is proven just as for equinumerousness. The [[Cantor–Bernstein–Schroeder theorem|Schröder–Bernstein theorem]], provable in [[ZFC]] and [[New Foundations|NFU]] in an entirely standard way, establishes that
+*<math>|A| \leq |B| \wedge |B| \leq |A| \rightarrow |A| = |B|</math>
+(this establishes antisymmetry on cardinals), and
+*<math>|A| \leq |B| \vee |B| \leq |A|</math>
+follows in a standard way in either theory from the [[axiom of choice]].
+
+== Finite sets and natural numbers ==
+
+Natural numbers can be considered either as finite ordinals or finite cardinals. Here consider them as finite cardinal numbers. This is the first place where a major difference between the implementations in [[ZFC]] and [[New Foundations|NFU]] becomes evident.
+
+The Axiom of Infinity of ZFC tells us that there is a set ''A'' which contains <math>\emptyset</math> and contains <math>y \cup \{y\}</math> for each <math>y \in A</math>. This set ''A'' is not uniquely determined (it can be made larger while preserving this closure property): the set ''N'' of natural numbers is
+*<math>\{x \in A \mid \forall B\,(\emptyset \in B \wedge \forall y\,(y \in B \rightarrow y \cup \{y\} \in B) \rightarrow x \in B)\}</math>
+which is the intersection of all sets which contain the empty set and are closed under the "successor" operation <math>y \mapsto y \cup \{y\}</math>.
+
+In ZFC, a set <math>A</math> is finite if and only if there is <math>n \in N</math> such that <math>|n|=|A|</math>: further, define <math>|A|</math> as this ''n'' for finite ''A''. (It can be proved that no two distinct natural numbers are the same size).
+
+The usual operations of arithmetic can be defined recursively and in a style very similar to that in which the set of natural numbers itself is defined. For example, + (the addition operation on natural numbers) can be defined as the smallest set which contains <math>((x,\emptyset),x)</math> for each natural number <math>x</math> and contains <math>((x,y \cup \{y\}),z \cup \{z\})</math> whenever it contains <math>((x,y),z)</math>.
+
+In NFU, it is not obvious that this approach can be used, since the successor operation <math>y \cup \{y\}</math> is unstratified and so the set ''N'' as defined above cannot be shown to exist in NFU (it is consistent for the set of finite von Neumann ordinals to exist in NFU, but this strengthens the theory, as the existence of this set implies the Axiom of Counting (for which see below or the [[New Foundations]] article)).
+
+The standard definition of the natural numbers, which is actually the oldest [[set-theoretic definition of natural numbers]], is as equivalence classes of finite sets under equinumerousness. Essentially the same definition is appropriate to [[New Foundations|NFU]] (this is not the usual definition, but the results are the same): define ''Fin'', the set of finite sets, as
+:<math>\{A \mid \forall F\,(\emptyset \in F \wedge \forall x,y\,(x \in F \rightarrow x \cup \{y\} \in F) \rightarrow A \in F)\}</math>
+For any set <math>A \in Fin</math>, define <math>|A|</math> as <math>\{B \mid A \sim B\}</math>. Define ''N'' as the set <math>\{|A| \mid A \in Fin\}</math>.
+
+The Axiom of Infinity of NFU can be expressed as <math>V \not\in Fin</math>: this is enough to establish that each natural number has a nonempty successor (the successor of <math>|A|</math> being <math>|A \cup \{x\}|</math> for any <math>x \not\in A</math>) which is the hard part of showing that the Peano axioms of arithmetic are satisfied.
+
+The operations of arithmetic can be defined in a style similar to the style given above (using the definition of successor just given). They can also be defined in a natural set theoretical way: if A and B are disjoint finite sets, define |A|+|B| as <math>|A \cup B|</math>. More formally, define ''m+n'' for ''m'' and ''n'' in ''N'' as
+:<math>\{A \mid \exists B,C\,(B \in m \wedge C \in n \wedge B \cap C = \emptyset \wedge A = B \cup C)\}</math>
+(But note that this style of definition is feasible for the ZFC numerals as well, but more circuitous: the form of the [[New Foundations|NFU]] definition facilitates set manipulations while the form of the ZFC definition facilitates recursive definitions, but either theory supports either style of definition).
+
+The two implementations are quite different. In ZFC, choose a representative of each finite cardinality (the equivalence classes themselves are too large to be sets); in NFU the equivalence classes themselves are sets, and are thus an obvious choice for objects to stand in for the cardinalities. However, the arithmetic of the two theories is identical: the same abstraction is implemented by these two superficially different approaches.
+
+== Equivalence relations and partitions ==
+
+A general technique for implementing abstractions in set theory is the use of equivalence classes. If an equivalence relation ''R'' tells us that elements of its field ''A'' are alike in some particular respect, then for any set ''x'', regard the set <math>[x]_R=\{y \in A \mid x R y\}</math> as representing an abstraction from the set ''x'' respecting just those features (identify elements of ''A'' [[up to]] ''R'').
+
+For any set ''A'', a set <math>P</math> is a '''partition''' of ''A'' if all elements of ''P'' are nonempty, any two distinct elements of ''P'' are disjoint, and <math>A=\bigcup P</math>.
+
+For every equivalence relation ''R'' with field ''A'', <math>\{[x]_R \mid x \in A\}</math> is a partition of ''A''. Moreover, each partition ''P'' of ''A'' determines an equivalence relation <math>\{(x,y) \mid \exists A \in P\,(x \in A \wedge y \in A)\}</math>.
+
+This technique has limitations in both [[ZFC]] and [[New Foundations|NFU]]. In ZFC, since the universe is not a set, it seems possible to abstract features only from elements of small domains. This can be circumvented using a trick due to [[Dana Scott]]: if ''R'' is an equivalence relation on the universe, define <math>[x]_R</math> as the set of all ''y'' such that <math>y R x</math> and the [[rank (set theory)|rank]] of ''y'' is less than or equal to the rank of any <math>z R x</math>. This works because the ranks are sets. Of course, there still may be a proper class of <math>[x]_R</math>'s. In NFU, the main difficulty is that <math>[x]_R</math> is one type higher than x, so for example the "map" <math>x \mapsto [x]_R</math> is not in general a (set) function (though <math>\{x\} \mapsto [x]_R</math> is a set). This can be circumvented by the use of the Axiom of Choice to select a representative from each equivalence class to replace <math>[x]_R</math>, which will be at the same type as ''x'', or by choosing a canonical representative if there is a way to do this without invoking Choice (the use of representatives is hardly unknown in ZFC, either). In NFU, the use of equivalence class constructions to abstract properties of general sets is more common, as for example in the definitions of cardinal and ordinal number below.
+
+== Ordinal numbers ==
+
+Two well-orderings <math>W_1</math> and <math>W_2</math> are '''similar''' and write <math>W_1 \sim W_2</math> just in case there is a bijection ''f'' from the field of <math>W_1</math> to the field of <math>W_2</math> such that <math>x W_1 y \leftrightarrow f(x)W_2f(y)</math> for all ''x'' and ''y''.
+
+Similarity is shown to be an equivalence relation in much the same way that equinumerousness was shown to be an equivalence relation above.
+
+In [[New Foundations]] (NFU), the '''order type''' of a well-ordering ''W'' is the set of all well-orderings which are similar to ''W''. The set of '''ordinal numbers''' is the set of all order types of well-orderings.
+
+This does not work in [[ZFC]], because the equivalence classes are too large. It would be formally possible to use [[Scott's trick]] to define the ordinals in essentially the same way, but a device of [[John von Neumann|von Neumann]] is more commonly used.
+
+For any partial order <math>\leq</math>, the corresponding '''strict partial order''' &lt; is defined as <math>\{(x,y) \mid x \leq y \wedge x \neq y\}</math>. Strict linear orders and strict well-orderings are defined similarly.
+
+A set ''A'' is said to be '''transitive''' if <math>\bigcup A \subseteq A</math>: each element of an element of ''A'' is also an element of ''A''. A '''(von Neumann) ordinal''' is a transitive set on which membership is a strict well-ordering.
+
+In ZFC, the order type of a well-ordering ''W'' is then defined as the unique von Neumann ordinal which is equinumerous with the field of ''W'' and membership on which is isomorphic to the strict well-ordering associated with ''W''. (the equinumerousness condition distinguishes between well-orderings with fields of size 0 and 1, whose associated strict well-orderings are indistinguishable).
+
+In ZFC there cannot be a set of all ordinals. In fact, the von Neumann ordinals are an inconsistent totality in any set theory: it can be shown with modest set theoretical assumptions that every element of a von Neumann ordinal is a von Neumann ordinal and the von Neumann ordinals are strictly well-ordered by membership. It follows that the class of von Neumann ordinals would be a von Neumann ordinal if it were a set: but it would then be an element of itself, which contradicts the fact that membership is a strict well-ordering of the von Neumann ordinals.
+
+The existence of order types for all well-orderings is not a theorem of [[Zermelo set theory]]: it requires the [[Axiom of replacement]]. Even Scott's trick cannot be used in Zermelo set theory without an additional assumption (such as the assumption that every set belongs to a [[rank (set theory)|rank]] which is a set, which does not essentially
+strengthen Zermelo set theory but is not a theorem of that theory).
+
+In NFU, the collection of all ordinals is a set by stratified comprehension. The Burali-Forti paradox is evaded in an unexpected way. There is a natural order on the ordinals defined by <math>\alpha\leq \beta</math> if and only if some (and so any) <math>W_1 \in \alpha</math> is similar to an initial segment of some (and so any) <math>W_2\in \beta</math>. Further, it can be shown that this natural order is a well-ordering of the ordinals and so must have an order type <math>\Omega</math>. It would seem that the order type of the ordinals less than
+<math>\Omega</math> with the natural order would be <math>\Omega</math>, contradicting the fact that <math>\Omega</math> is the order type of the entire natural order on the ordinals (and so not of any of its proper initial segments). But this relies on one's intuition (correct in ZFC) that the order type of the natural order on the ordinals less than <math>\alpha</math> is <math>\alpha</math> for any ordinal <math>\alpha</math>. This assertion is unstratified, because the type of the second <math>\alpha</math> is four higher than the type of the first (two higher if a type level pair is used). The assertion which is true and provable in NFU is that the order type of the natural order on the ordinals less than <math>\alpha</math> is <math>T^4(\alpha)</math> for any ordinal <math>\alpha</math>, where <math>T(\alpha)</math> is the order type of <math>W^{\iota}=\{(\{x\},\{y\})\mid xWy\}</math> for any <math>W \in \alpha</math> (it is easy to show that this does not depend on the choice of W; note that T raises type by one). Thus the order type of the ordinals less than <math>\Omega</math> with the natural order is <math>T^4(\Omega)</math>, and <math>T^4(\Omega)<\Omega</math>. All uses of <math>T^4</math> here can be replaced with <math>T^2</math> if a type-level pair is used.
+
+This shows that the T operation is nontrivial, which has a number of consequences. It follows immediately that the singleton map <math>x \mapsto \{x\}</math> is not a set, as otherwise restrictions of this map would establish the similarity of ''W'' and <math>W^{\iota}</math> for any well-ordering ''W''. T is (externally) bijective and order-preserving. Because of this, the fact <math>T^4(\Omega)<\Omega</math> establishes that <math>\Omega > T(\Omega) > T^2(\Omega) \ldots</math> is a "descending sequence" in the ordinals which cannot be a set.
+
+Ordinals fixed by T are called '''Cantorian''' ordinals, and ordinals which dominate only cantorian ordinals (which are easily shown to be cantorian themselves) are said to be '''strongly cantorian'''. There can be no set of cantorian ordinals or set of strongly cantorian ordinals.
+
+=== Digression: von Neumann ordinals in NFU ===
+
+It is possible to reason about von Neumann ordinals in [[New Foundations|NFU]]. Recall that a von Neumann ordinal is a transitive set ''A'' such that the restriction of membership to ''A'' is a strict well-ordering. This is quite a strong condition in the NFU context, since the membership relation involves a difference of type. A von Neumann ordinal ''A'' is not an ordinal in the sense of NFU, but <math>\in\lceil A</math> belongs to an ordinal <math>\alpha</math> which may be termed the order type of (membership on) ''A''. It is easy to show that the order type of a von Neumann ordinal ''A'' is cantorian: for any well-ordering ''W'' of order type <math>\alpha</math>, the induced well-ordering of initial segments of ''W'' by inclusion has order type <math>T(\alpha)</math> (it is one type higher, thus the application of T): but the order types of the well-ordering of a von Neumann ordinal ''A'' by membership and the well-ordering of its initial segments by inclusion are clearly the same because the two well-orderings are actually the same relation, so the order type of ''A'' is fixed under T. Moreover, the same argument applies to any smaller ordinal (which will be the order type of an initial segment of ''A'', also a von Neumann ordinal) so the order type of any von Neumann ordinal is strongly cantorian.
+
+The only von Neumann ordinals which can be shown to exist in NFU without additional assumptions are the concrete finite ones. However, the application of a permutation method can convert any model of NFU to a model in which every strongly cantorian ordinal is the order type of a von Neumann ordinal. This suggests that the concept "strongly cantorian ordinal of NFU" might be a better analogue to "ordinal of ZFC" than is the apparent analogue "ordinal of NFU".
+
+== Cardinal numbers ==
+
+Cardinal numbers are defined in [[New Foundations|NFU]] in a way which generalizes the definition of natural
+number: for any set ''A'', <math>|A| =_{\mathrm{def}} \{B \mid B \sim A\}</math>.
+
+In [[ZFC]], these equivalence classes are too large as usual. Scott's trick could be used (and indeed is used in [[Zermelo–Fraenkel set theory|ZF]]), <math>|A|</math> is usually defined as the smallest order type (here a von Neumann ordinal) of a well-ordering of ''A'' (that every set can be well-ordered follows from
+the Axiom of Choice in the usual way in both theories).
+
+The natural order on cardinal numbers is seen to be a well-ordering: that it is reflexive, antisymmetric (on abstract cardinals, which are now available) and transitive has been shown above. That it is a linear order follows from the Axiom of Choice: well-order two sets and an 
+initial segment of one well-ordering will be isomorphic to the other, so one set will have cardinality smaller than that of the other. That it is a well-ordering follows from the Axiom of Choice in a similar way.
+
+With each infinite cardinal, many order types are associated for the usual reasons (in either set theory).
+
+Cantor's theorem shows (in both theories) that there are nontrivial distinctions between infinite cardinal numbers. In [[ZFC]], one proves <math>|A|<|P(A)|.</math> In [[New Foundations|NFU]], the usual form of Cantor's theorem is false (consider the case A=V), but Cantor's theorem is an ill-typed statement. The correct form of the theorem in [[New Foundations|NFU]] is <math>|P_1(A)|<|P(A)|</math>, where <math>P_1(A)</math> is the set of one-element subsets of A. <math>|P_1(V)|<|P(V)|</math> shows that there are "fewer" singletons than sets (the obvious bijection <math>x \mapsto \{x\}</math> from <math>P_1(V)</math> to ''V'' has already been seen not to be a set). It is actually provable in NFU + Choice that <math>|P_1(V)|<|P(V)|\ll|V|</math> (where <math>\ll</math> signals the existence of many intervening cardinals; there are many, many urelements!). Define a type-raising T operation on cardinals analogous to the T operation on ordinals: <math>T(|A|) = |P_1(A)|</math>; this is an external endomorphism of the cardinals just as the T operation on ordinals is an external endomorphism of the ordinals.
+
+A set ''A'' is said to be '''cantorian''' just in case <math>|A| = |P_1(A)| = T(|A|)</math>; the cardinal <math>|A|</math> is also said to be a cantorian cardinal. A set ''A'' is said to be '''strongly cantorian''' (and its cardinal to be strongly cantorian as well) just in case the restriction of the singleton map to ''A'' (<math>(x \mapsto \{x\})\lceil A</math>) is a set. Well-orderings of strongly cantorian sets are always strongly cantorian ordinals; this is not always true of well-orderings of cantorian sets (though the shortest well-ordering of a cantorian set will be cantorian). A cantorian set is a set which satisfies the usual form of Cantor's theorem.
+
+The operations of cardinal arithmetic are defined in a set-theoretically motivated way in both theories. <math>|A| + |B| = \{C \cup D \mid C \sim A \wedge D \sim B \wedge C \cap D = \emptyset\}</math>. One would like to define <math>|A|\cdot|B|</math> as <math>|A \times B|</math>, and one does this in [[ZFC]], but there is an obstruction in [[New Foundations|NFU]] when using the Kuratowski pair: one defines <math>|A|\cdot|B|</math> as <math>T^{-2}(|A \times B|)</math> because of the type displacement of 2 between the pair and its projections, which implies a type displacement of two between a cartesian product and its factors. It is straightforward to prove that the product always exists (but requires attention because the inverse of T is not total).
+
+Defining the exponential operation on cardinals requires T in an essential way: if <math>B^A</math> was defined as the collection of functions from ''A'' to ''B'', this is three types higher than ''A'' or ''B'', so it is reasonable to define <math>|B|^{|A|}</math> as <math>T^{-3}(|B^A|)</math> so that it is the same type as ''A'' or ''B'' (<math>T^{-1}</math> replaces <math>T^{-3}</math> with type-level pairs). An effect of this is that the exponential operation is partial: for example, <math>2^{|V|}</math> is undefined. In [[ZFC]] one defines <math>|B|^{|A|}</math> as <math>|B^A|</math> without difficulty.
+
+The exponential operation is total and behaves exactly as expected on cantorian cardinals, since T fixes such cardinals and it is easy to show that a function space between cantorian sets is cantorian (as are power sets, cartesian products, and other usual type constructors). This offers further encouragement to the view that the "standard" cardinalities in [[New Foundations|NFU]] are the cantorian (indeed, the strongly cantorian) cardinalities, just as the "standard" ordinals seem to be the strongly cantorian ordinals.
+
+Now the usual theorems of cardinal arithmetic with the axiom of choice can be proved, including <math>\kappa \cdot \kappa = \kappa</math>. From the case <math>|V|\cdot |V| = |V|</math> the existence of a type level ordered pair can be derived: <math>|V| \cdot |V| = T^{-2}(|V \times V|)</math> is equal to <math>|V|</math> just in case <math>|V \times V| = T^2(|V|) = |P_1^2(V)|</math>, which would be witnessed by a one-to-one correspondence between Kuratowski pairs <math>(a,b)</math> and double singletons <math>\{\{c\}\}</math>: redefine <math>(a,b)</math> as the ''c'' such that <math>\{\{c\}\}</math> is associated with the Kuratowski <math>(a,b)</math>: this is a type-level notion of ordered pair.
+
+== The Axiom of Counting and subversion of stratification ==
+
+So there are two different implementations of the natural numbers in [[New Foundations|NFU]] (though they are the same in [[ZFC]]): finite ordinals and finite cardinals. Each of these supports a T operation in [[New Foundations|NFU]] (basically the same operation). It is easy to prove that <math>T(n)</math> is a natural number if n is a natural number in [[New Foundations|NFU]] + Infinity + Choice (and so <math>|N|</math> and the first
+infinite ordinal <math>\omega</math> are cantorian) but it is not possible to prove in this theory that <math>T(n)=n</math>. However, common sense indicates that this should be true, and so it can be adopted as an axiom:
+*'''Rosser's Axiom of Counting''': For each natural number ''n'', <math>T(n)=n</math>.
+One natural consequence of this axiom (and indeed its original formulation) is
+*<math>|\{1,\ldots,n\}| = n</math> for each natural number ''n''.
+All that can be proved in [[New Foundations|NFU]] without Counting is <math>|\{1,\ldots,n\}| = T^2(n)</math>.
+
+A consequence of Counting is that ''N'' is a strongly cantorian set (again, this is an equivalent assertion).
+
+===Properties of strongly cantorian sets===
+The type of any variable restricted to a strongly cantorian set ''A'' can be raised or lowered as desired by replacing references to <math>a \in A</math> with references to <math>\bigcup f(a)</math> (type of ''a'' raised; this presupposes that it is known that ''a'' is a set; otherwise one must say "the element of <math>f(a)</math>" to get this effect) or <math>f^{-1}(\{a\})</math> (type of a lowered) where <math>f(a) = \{a\}</math> for all <math>a \in A</math>, so it is not necessary to assign types to such variables for purposes of stratification.
+
+Any subset of a strongly cantorian set is strongly cantorian. The power set of a strongly cantorian set is strongly cantorian. The cartesian product of two strongly cantorian sets is strongly cantorian.
+
+Introducing the Axiom of Counting means that types need not be assigned to variables restricted to ''N'' or to ''P''(''N''), ''R'' (the set of reals) or indeed any set ever considered in classical mathematics outside of set theory.
+
+There are no analogous phenomena in [[ZFC]]. See the main [[New Foundations]] article for stronger axioms that can be adjoined to NFU to enforce "standard" behavior of familiar mathematical objects.
+
+== Familiar number systems: positive rationals, magnitudes, and reals ==
+
+Represent '''positive fractions''' as pairs of positive natural numbers (0 is excluded): <math>\frac pq</math> is represented by the pair <math>(p,q)</math>. To make <math>\frac pq = \frac rs \leftrightarrow ps=qr</math>, introduce the relation <math>\sim</math> defined by <math>(p,q)\sim (r,s) \leftrightarrow ps=qr</math>. It is provable that this is an equivalence relation: define '''positive rational numbers''' as equivalence classes of pairs of positive natural numbers under this relation. Arithmetic operations on positive rational numbers and the order relation on positive rationals are defined just as in elementary school and proved (with some effort) to have the expected properties.
+
+Represent '''magnitudes''' (positive reals) as nonempty proper initial segments of the positive rationals with no largest element. The operations of addition and multiplication on magnitudes are implemented by elementwise addition of the positive rational elements of the magnitudes. Order is implemented as set inclusion.
+
+Represent '''real numbers''' as differences <math>m-n</math> of magnitudes: formally speaking, a real number is an equivalence class of pairs <math>(m,n)</math> of magnitudes under the equivalence relation <math>\sim</math> defined by <math>(m,n) \sim (r,s) \leftrightarrow m+s = n+r</math>. The operations of addition and multiplication on real numbers are defined just as one would expect from the algebraic rules for adding and multiplying differences. The treatment of order is also as in elementary algebra.
+
+This is the briefest sketch of the constructions. Note that the constructions are exactly the same in [[ZFC]] and in [[New Foundations|NFU]], except for the difference in the constructions of the natural numbers: since all variables are restricted to strongly cantorian sets, there is no need to worry about stratification restrictions. Without the Axiom of Counting, it might be necessary to introduce some applications of T in a full discussion of these constructions.
+
+== Operations on indexed families of sets ==
+
+In this class of constructions it appears that [[ZFC]] has an advantage over [[New Foundations|NFU]]: though the constructions are clearly feasible in [[New Foundations|NFU]], they are more complicated than in ZFC for reasons having to do with stratification.
+
+Throughout this section assume a type-level ordered pair. Define <math>(x_1,x_2,\ldots,x_n)</math> as <math>(x_1,(x_2,\ldots,x_n))</math>. The definition of the general ''n''-tuple using the Kuratowski pair is trickier, as one needs to keep the types of all the projections the same, and the type displacement between the ''n''-tuple and its projections increases as ''n'' increases. Here, the ''n''-tuple has the same type as each of its projections.
+
+General cartesian products are defined similarly: <math>A_1 \times A_2 \times \ldots \times A_n = A_1 \times (A_2 \times \ldots \times A_n)</math>
+
+The definitions are the same in ZFC but without any worries about stratification (the grouping given here is opposite to that more usually used, but this is easily corrected for).
+
+Now consider the infinite cartesian product <math>\Pi_{i \in I}A_i</math>. In ZFC, this is defined as the set of all functions ''f'' with domain ''I'' such that <math>f(i) \in A_i</math> (where ''A'' is implicitly understood as a function taking each ''i'' to <math>A_i</math>).
+
+In NFU, this is requires attention to type. Given a set ''I'' and set valued function ''A'' whose value at <math>\{i\}</math> in <math>P_1(I)</math> is written <math>A_i</math>, Define <math>\Pi_{i \in I}A_i</math> as the set of all functions ''f'' with domain ''I'' such that <math>f(i) \in A_i</math>: notice that <math>f(i) \in A_i = A(\{i\})</math> is stratified because of our convention that ''A'' is a function with values at singletons of the indices. Note that the very largest families of sets (which cannot be indexed by sets of singletons) will not have cartesian products under this definition. Note further that the sets <math>A_i</math> are at the same type as the index set ''I'' (since one type higher than its elements); the product, as a set of functions with domain ''I'' (so at the same type as ''I'') is one type higher (assuming a type-level ordered pair).
+
+Now consider the product <math>\Pi_{i \in I}|A_i|</math> of the cardinals of these sets. The cardinality |<math>\Pi_{i \in I}A_i</math>| is one type higher than the cardinals <math>|A_i|</math>, so the correct definition of the infinite product of cardinals is <math>T^{-1}(|\Pi_{i \in I}A_i|)</math> (because the inverse of T is not total, it is possible that this may not exist).
+
+Repeat this for disjoint unions of families of sets and sums of families of cardinals. Again, let ''A'' be a set-valued function with domain <math>P_1(I)</math>: write <math>A_i</math> for <math>A(\{i\})</math>. The disjoint union <math>\Sigma_{i \in I}A_i</math> is the set <math>\{(i,a) \mid a \in A_i\}</math>. This set is at the same type as the sets <math>A_i</math>.
+
+The correct definition of the sum <math>\Sigma_{i \in I}|A_i|</math> is thus <math>|\Sigma_{i \in I}A_i|</math>, since there is no type displacement.
+
+It is possible to extend these definitions to handle index sets which are not sets of singletons, but this introduces an additional type level and is not needed for most purposes.
+
+In ZFC, define the disjoint union <math>\Sigma_{i \in I}A_i</math> as <math>\{(i,a) \mid a \in A_i\}</math>, where <math>A_i</math> abbreviates <math>A(i)</math>.
+
+Permutation methods can be used to show relative consistency with NFU of the assertion that for every strongly cantorian set A there is a set ''I'' of the same size whose elements are self-singletons: <math>i = \{i\}</math> for each ''i'' in ''I''.
+
+== The cumulative hierarchy ==
+
+In [[ZFC]], define the ''cumulative hierarchy'' as the ordinal-indexed sequence of sets satisfying the following conditions: <math>V_0 = \emptyset</math>; <math>V_{\alpha+1} = P(V_{\alpha})</math>; <math>V_{\lambda} = \bigcup\{V_{\beta} \mid \beta<\lambda\}</math> for limit ordinals <math>\lambda</math>. This is an example of a construction by [[transfinite recursion]]. The rank of a set ''A'' is said to be <math>\alpha</math> if and only if <math>A \in V_{\alpha+1}-V_{\alpha}</math>. The existence of the ranks as sets depends on the axiom of replacement at each limit step (the hierarchy cannot be constructed in [[Zermelo set theory]]); by the axiom of foundation, every set belongs to some rank.
+
+The cardinal <math>|P(V_{\omega + \alpha})|</math> is called <math>\beth_{\alpha}</math>.
+
+This construction cannot be carried out in [[New Foundations|NFU]] because the power set operation is not a set function in [[New Foundations|NFU]] (<math>P(A)</math> is one type higher than A for purposes of stratification).
+
+The sequence of cardinals <math>\beth_{\alpha}</math> can be implemented in NFU. Recall that <math>2^{|A|}</math> is defined as <math>T^{-1}(|\{0,1\}^A|)</math>, where <math>\{0,1\}</math> is a convenient set of size 2, and <math>|\{0,1\}^A|=|P(A)|</math>. Let <math>\beth</math> be the smallest set of cardinals which contains <math>|N|</math> (the cardinality of the set of natural numbers), contains the cardinal <math>2^{|A|}</math> whenever it contains <math>|A|</math>, and which is closed under suprema of sets of cardinals.
+
+A convention for ordinal indexing of any well-ordering <math>W_\alpha</math> is defined as the element ''x'' of the field of <math>W</math> such that
+the order type of the restriction of <math>W</math> to <math>\{y \mid y W x\}</math> is <math>\alpha</math>; then define <math>\beth_{\alpha}</math> as the element with index <math>\alpha</math> in the natural order on the elements of <math>\beth</math>. The cardinal <math>\aleph_{\alpha}</math> is the element with index <math>\alpha</math> in the natural order on all infinite cardinals (which is a well-ordering, see above). Note that <math>\aleph_0 = |N|</math> follows immediately from this definition. In all these constructions, notice that the type of the index <math>\alpha</math> is two higher (with type-level ordered pair) than the type of <math>W_{\alpha}</math>.
+
+Each set ''A'' of ZFC has a transitive closure <math>TC(A)</math> (the intersection of all transitive sets which contains ''A''). By the axiom of foundation, the restriction of the membership relation to the transitive closure of ''A'' is a [[well-founded relation]]. The relation <math>\in \lceil TC(A)</math> is either empty or has ''A'' as its top element, so this relation is a ''set picture''. It can be proved in ZFC that every set picture is isomorphic to some <math>\in \lceil TC(A)</math>.
+
+This suggests that (an initial segment of) the cumulative hierarchy can be studied by considering the isomorphism classes of set pictures. These isomorphism classes are sets and make up a set in [[New Foundations|NFU]]. There is a natural set relation analogous to membership on isomorphism classes of set pictures: if <math>x</math> is a set picture, write <math>[x]</math> for its isomorphism class and define <math>[x] E [y]</math> as holding if <math>[x]</math> is the isomorphism class of the restriction of ''y'' to the downward closure of one of the elements of the preimage under ''y'' of the top element of ''y''. The relation E is a set relation, and it is straightforward to prove that it is well-founded and extensional. If the definition of E is confusing, it can be deduced from the observation that it is induced by precisely the relationship which holds between the set picture associated with ''A'' and the set picture associated with ''B'' when <math>A \in B</math> in the usual set theory.
+
+There is a T operation on isomorphism classes of set pictures analogous to the T operation on ordinals: if ''x'' is a set picture, so is <math>x^{\iota} = \{(\{a\},\{b\})\mid (a,b) \in x\}</math>. Define <math>T([x])</math> as <math>[x^{\iota}]</math>. It is easy to see that <math>[x]E[y] \leftrightarrow T([x])=T([y])</math>.
+
+An axiom of extensionality for this simulated set theory follows from E's extensionality. From its well-foundedness follows an axiom of foundation. There remains the question of what comprehension axiom E may have. Consider any collection of set pictures <math>\{x^{\iota}\mid x \in S\}</math> (collection of set pictures whose fields are made up entirely of singletons). Since each <math>x^{\iota}</math> is one type higher than x (using a type-level ordered pair), replacing each element <math>\{a\}</math> of the field of each <math>x^{\iota}</math> in the collection with <math>(x,\{a\})</math> results in a collection of set pictures isomorphic to the original collection but with their fields disjoint. The union of these set
+pictures with a new top element yields a set picture whose isomorphism type will have as its preimages under E exactly the elements of the original collection. That is, for any collection of isomorphism types <math>[x^{\iota}] = T([x])</math>, there is an isomorphism type <math>[y]</math> whose preimage under E is exactly this collection.
+
+In particular, there will be an isomorphism type ''[v]'' whose preimage under E is the collection of ''all'' ''T''[''x'']'s (including ''T''[''v'']). Since ''T''[''v''] ''E'' ''v'' and E is well-founded, <math>T[v] \neq v</math>. This resembles the resolution of the Burali–Forti paradox discussed above and in the [[New Foundations]] article, and is in fact the local resolution of [[Mirimanoff's paradox]] of the set of all well-founded sets.
+
+There are ranks of isomorphism classes of set pictures just as there are ranks of sets in the usual set theory. For any collection of set pictures ''A'', define ''S''(''A'') as the set of all isomorphism classes of set pictures whose preimage under E is a subset of A; call A a "complete" set if every subset of ''A'' is a preimage under E. The collection of "ranks" is the smallest collection containing the empty set and closed under the S operation (which is a kind of power set construction) and under unions of its subcollections. It is straightforward to prove (much as in the usual set theory) that the ranks are well-ordered by inclusion, and so the ranks have an index in this well-order: refer to the rank with index <math>\alpha</math> as <math>R_{\alpha}</math>. It is provable that <math>|R_{\alpha}|=\beth_{\alpha}</math> for complete ranks <math>R_{\alpha}</math>. The union of the complete ranks (which will be the first incomplete rank) with the relation E looks like an initial segment of the universe of Zermelo-style set theory (not necessarily like the full universe of [[ZFC]] because it may not be large enough). It is provable that if <math>R_{\alpha}</math> is the first incomplete rank, then <math>R_{T(\alpha)}</math> is a complete rank and thus <math>T(\alpha)<\alpha</math>. So there is a "rank of the cumulative hierarchy" with an "external automorphism" T moving the rank downward, exactly the condition on a nonstandard model of a rank in the cumulative hierarchy under which a model of NFU is constructed in the [[New Foundations]] article. There are technical details to verify, but there is an interpretation not only of a fragment of [[ZFC]] but of [[New Foundations|NFU]] itself in this structure, with <math>[x]\in_{NFU}[y]</math> defined as <math>T([x]) E [y] \wedge [y] \in R_{T(\alpha)+1}</math>: this "relation" <math>E_{NFU}</math> is not a set relation but has the same type displacement between its arguments as the usual membership relation <math>\in</math>.
+
+So there is a natural construction inside NFU of the cumulative hierarchy of sets which internalizes the natural construction of a model of NFU in Zermelo-style set theory.
+
+Under the Axiom of Cantorian Sets described in the [[New Foundations]] article, the strongly cantorian part of the set of isomorphism classes of set pictures with the E relation as membership becomes a (proper class) model of ZFC (in which there are ''n''-[[Mahlo cardinals]] for each&nbsp;''n''; this extension of NFU is strictly stronger than ZFC). This is a proper class model because the strongly cantorian isomorphism classes do not make up a set.
+
+Permutation methods can be used to create from any model of NFU a model in which every strongly cantorian isomorphism type of set pictures is actually realized as the restriction of the true membership relation to the transitive closure of a set.
+
+== See also ==
+*[[Axiomatic set theory]]
+
+==References==
+*[[Keith Devlin]], 1994. ''The Joy of Sets'', 2nd ed. Springer-Verlag.
+*Holmes, Randall, 1998. ''[http://math.boisestate.edu/~holmes/holmes/head.pdf Elementary Set Theory with a Universal Set]''. Academia-Bruylant. The publisher has graciously consented to permit diffusion of this introduction to NFU via the web. Copyright is reserved.
+*Potter, Michael, 2004. ''Set Theory and its Philosophy'', 2nd ed. Oxford Univ. Press.
+*Suppes, Patrick, 1972. ''Axiomatic Set Theory''. Dover.
+*Tourlakis, George, 2003. ''Lectures in Logic and Set Theory, Vol. 2''. Cambridge Univ. Press.
+
+== External links ==
+*[http://us.metamath.org/ Metamath:] A web site devoted to an ongoing derivation of mathematics from the axioms of ZFC and [[first-order logic]].
+* [[Stanford Encyclopedia of Philosophy]]:
+** [http://plato.stanford.edu/entries/quine-nf Quine's New Foundations]—by Thomas Forster.
+** [http://setis.library.usyd.edu.au/stanford/entries/settheory-alternative/ Alternative axiomatic set theories]—by Randall Holmes.
+* Randall Holmes: [http://math.boisestate.edu/~holmes/holmes/nf.html New Foundations Home Page]
+
+[[Category:Mathematical logic]]
+[[Category:Set theory]]
+[[Category:Formalism (deductive)]]
+[[Category:Large-scale mathematical formalization projects]]

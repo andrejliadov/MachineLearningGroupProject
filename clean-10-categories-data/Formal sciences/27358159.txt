@@ -1,0 +1,32 @@
+{{short description|Specifies when restoration of a signal by the sampling theorem can become ill-posed}}
+In [[information theory]], the '''Cheung&ndash;Marks theorem''',<ref name="BC">J.L. Brown and S.D.Cabrera, "On well-posedness of the Papoulis generalized sampling expansion," IEEE Transactions on Circuits and Systems, May 1991  Volume: 38 , Issue 5, pp. 554&ndash;556</ref> named after K. F. Cheung and [[Robert J. Marks II]], specifies conditions<ref name="CMT">K.F. Cheung and [[R. J. Marks II]], "Ill-posed sampling theorems", IEEE Transactions on Circuits and Systems, vol. CAS-32, pp.829&ndash;835 (1985).</ref> where restoration of a [[signal (electronics)|signal]] by the [[sampling theorem]] can become [[ill-posed]]. It offers conditions whereby "reconstruction error with unbounded [[variance]] [results] when a bounded variance noise is added to the samples."<ref>D. Seidner, "Vector sampling expansion," IEEE Transactions on Signal Processing.  v. 48. no. 5. 2000. p. 1401&ndash;1416.</ref>
+
+==Background==
+
+In the sampling theorem, the uncertainty of the interpolation as measured by noise variance is the same as the uncertainty of the sample data when the noise is [[i.i.d.]]<ref>R.C. Bracewell, ''The [[Fourier Transform]] and Its Applications,'' McGraw Hill (1968)</ref> In his classic 1948 paper founding [[information theory]], [[Claude Shannon]] offered the following generalization of the sampling theorem:<ref name="CES">Claude E. Shannon, "Communication in the presence of noise", Proc. Institute of Radio Engineers, vol. 37, no.1, pp.&nbsp;10&ndash;21, Jan. 1949. [http://www.stanford.edu/class/ee104/shannonpaper.pdf Reprint as classic paper in: ''Proc. IEEE'', Vol. 86, No. 2, (Feb 1998)]</ref>
+
+{{quotation
+ | The 2''TW'' numbers used to specify the function need not be the equally spaced samples used above. For example, the samples can be unevenly spaced, although, if there is considerable bunching, the samples must be known very accurately to give a good reconstruction of the function. The reconstruction process is also more involved with unequal spacing. One can further show that the value of the function and its derivative at every other sample point are sufficient. The value and first and second derivatives at every third sample point give a still different set of parameters which uniquely determine the function. Generally speaking, any set of 2''TW'' independent numbers associated with the function can be used to describe it.
+}}
+
+Although true in the absence of noise, many of the expansions proposed by Shannon become [[ill-posed]].  An arbitrarily small amount of noise on the data renders restoration unstable. Such sampling expansions are not useful in practice since sampling noise, such as [[quantization noise]], rules out stable interpolation and therefore any practical use.
+
+===Example===
+
+Shannon's suggestion of simultaneous sampling of the signal and its derivative at half the Nyquist rate results in well behaved interpolation.<ref>Athanasios Papoulis, ''Signal Analysis,'' McGraw-Hill Companies (May 1977)</ref> The Cheung&ndash;Marks theorem shows counter-intuitively that interlacing signal and derivative samples makes the restoration problem ill-posed.<ref name="BC" /><ref name="CMT" />
+
+The theorem also shows sensitivity increases with derivative order.<ref>{{Cite journal |first=M. |last=Unser |first2=J. |last2=Zerubia |title=Generalized sampling: stability and performance analysis |journal=IEEE Transactions on Signal Processing|volume=45 |issue=12 |pages=2941–2950 |year=1997 |doi=10.1109/78.650255 }}</ref>
+
+==The theorem==
+
+Generally, the Cheung&ndash;Marks theorem shows the sampling theorem becomes ill-posed when the area ([[integral]]) of the squared magnitude of the [[interpolation function]] over all time is not finite.<ref name="BC" /><ref name="CMT" />
+"While the generalized sampling concept is relatively straightforward, the reconstruction is not always feasible because of potential instabilities."<ref>M. Unser, "Sampling &ndash; 50 years after Shannon," Proceedings of the IEEE, Vol 88, Issue 4, pp. 569&ndash;587, April 2000</ref>
+
+==References==
+
+{{reflist|2}}
+
+{{DEFAULTSORT:Cheung-Marks theorem}}
+[[Category:Information theory]]
+[[Category:Digital signal processing]]
+[[Category:Mathematical theorems in theoretical computer science]]

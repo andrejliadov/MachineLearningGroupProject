@@ -1,0 +1,37 @@
+{{short description|Rule in math and political science}}
+In [[mathematic]]s and [[political science]], the '''quota rule''' describes a desired property of a [[proportional representation|proportional]] [[Apportionment (politics)|apportionment]] or [[electoral system|election]] method. It states that the number of seats that should be allocated to a given party should be between the upper or lower roundings (called upper and lower quotas) of its fractional proportional share (called natural quota).<ref name="maa">Michael J. Caulfield. [https://www.maa.org/press/periodicals/convergence/apportioning-representatives-in-the-united-states-congress-the-quota-rule "Apportioning Representatives in the United States Congress - The Quota Rule"]. MAA Publications. Retrieved October 22, 2018</ref> As an example, if a party deserves 10.56 seats out of 15, the quota rule states that when the seats are allotted, the party may get 10 or 11 seats, but not lower or higher. Many common election methods, such as all [[highest averages method]]s, violate the quota rule.
+
+==Mathematics==
+If <math>P</math> is the population of the party, <math>T</math> is the total population, and <math>S</math> is the number of available seats, then the natural quota for that party (the number of seats the party would ideally get) is
+:<math> \frac P T \cdot S</math>
+
+The lower quota is then the natural quota rounded down to the nearest [[integer]] while the upper quota is the natural quota rounded up. The quota rule states that the only two allocations that a party can receive should be either the lower or upper quota.<ref name="maa"/> If at any time an allocation gives a party a greater or lesser number of seats than the upper or lower quota, that allocation (and by extension, the method used to allocate it) is said to be in violation of the quota rule. Another way to state this is to say that a given method only satisfies the quota rule if each party's allocation differs from its natural quota by less than one, where each party's allocation is an integer value.<ref>Alan Stein. [http://www.math.uconn.edu/~stein/math103/Slides/math103-02.pdf Apportionment Methods] Retrieved December 9, 2018</ref>
+
+===Example===
+If there are 5 available seats in the council of a club with 300 members, and party ''A'' has 106 members, then the natural quota for party ''A'' is <math> \frac {106} {300} \cdot 5 \approx 1.8</math>. The lower quota for party ''A'' is 1, because 1.8 rounded down equal 1. The upper quota, 1.8 rounded up, is 2. Therefore, the quota rule states that the only two allocations allowed for party ''A'' are 1 or 2 seats on the council. If there is a second party, ''B'', that has 137 members, then the quota rule states that party ''B'' gets <math> \frac {137} {300} \cdot 5 \approx 2.3</math>, rounded up and down equals either 2 or 3 seats. Finally, a party ''C'' with the remaining 57 members of the club has a natural quota of <math> \frac {57} {300} \cdot 5 \approx 0.95</math>, which means its allocated seats should be either 0 or 1. In all cases, the method for actually allocating the seats determines whether an allocation violates the quota rule, which in this case would mean giving party ''A'' any seats other than 1 or 2, giving party ''B'' any other than 2 or 3, or giving party ''C'' any other than 0 or 1 seat.
+
+===Relation to apportionment paradoxes===
+The [[Apportionment_paradox#Balinski–Young_theorem|Balinski–Young theorem]] proved in 1980 that if an apportionment method satisfies the quota rule, it must fail to satisfy some [[apportionment paradox]].<ref>Beth-Allyn Osikiewicz, Ph.D. [http://www.personal.kent.edu/~bosikiew/Math11008/imposs-apportion.pdf  Impossibilities of Apportionment] Retrieved October 23, 2018.</ref> For instance, although [[Largest remainder method|Hamilton's method]] satisfies the quota rule, it violates the [[Alabama paradox]] and the [[population paradox]].<ref>Warren D. Smith. (2007).[https://rangevoting.org/Apportion.html Apportionment and rounding schemes] Retrieved October 23, 2018</ref> The theorem itself is broken up into several different proofs that cover a wide number of circumstances.<ref name="Balinski">M.L. Balinski and H.P. Young. (1980). [http://pure.iiasa.ac.at/id/eprint/1338/1/WP-80-131.pdf "The Theory of Apportionment"]. Retrieved October 23 2018</ref>
+
+Specifically, there are two main statements that apply to the quota rule:
+*Any method that follows the quota rule must fail the population paradox.<ref name="Balinski"/>
+*Any method that is free of both the Alabama paradox and the population paradox must necessarily fail the quota rule for some circumstances.<ref name="Balinski"/>
+
+==Use in apportionment methods==
+Different methods for allocating seats may or may not satisfy the quota rule. While many methods do violate the quota rule, it is sometimes preferable to violate the rule very rarely than to violate some other apportionment paradox; some sophisticated methods violate the rule so rarely that it has not ever happened in a real apportionment, while some methods that never violate the quota rule violate other paradoxes in much more serious fashions.
+
+[[Hamilton's method]] does satisfy the quota rule. The method works by proportioning seats equally until a fractional value is reached; the surplus seats are then given to the state with the largest fractional parts until there are no more surplus seats. Because it is impossible to give more than one surplus seat to a state, every state will always get either its lower or upper quota.<ref>Hilary Freeman. [http://www.math.colostate.edu/~freeman/m130/apportionment1.pdf "Apportionment"]. Retrieved October 22 2018</ref> 
+
+[[Jefferson's method]], which was one of the first used by the [[United States]],<ref>[http://people.cas.uab.edu/~jcmayer/Apportionment%202.pdf "Apportionment 2"] Retrieved October 22, 2018.</ref> sometimes violated the quota rule by allocating more seats than the upper quota allowed.<ref> [http://www.math.colostate.edu/~spriggs/m130/apportionment2.pdf Jefferson’s Method] Retrieved October 22, 2018.</ref> This violation led to a growing problem where larger states receive more representatives than smaller states, which was not corrected until [[Webster/Sainte-Laguë method|Webster's method]] was implemented in 1842; even though Webster's method does violate the quota rule, it happens extremely rarely.<ref>Ghidewon Abay Asmerom. [http://www.people.vcu.edu/~gasmerom/MAT131/lecture4.html Apportionment. Lecture 4.] Retrieved October 23, 2018.</ref>
+
+==See also==
+*[[Apportionment in the European Parliament]]
+*[[Highest averages method]]
+*[[Huntington–Hill method]]
+*[[Apportionment (politics)#Malapportionment|Malapportionment]]
+
+==References==
+{{reflist}}
+
+[[Category:Mathematics]]
+[[Category:Politics]]

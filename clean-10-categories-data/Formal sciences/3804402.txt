@@ -1,0 +1,159 @@
+{{about|the formalism for [[ubiquitous computing]]|graphs whose edges alternate between two kinds of vertices|Bipartite graph}}
+
+A '''bigraph''' (often used in the plural '''bigraphs''') can be modelled as the superposition of a [[Graph (discrete mathematics)|graph]] (the ''link graph'') and a set of [[Tree (graph theory)|trees]] (the ''place graph'').<ref name="intro">''[http://www.itu.dk/research/pls/wiki/index.php/A_Brief_Introduction_To_Bigraphs A Brief Introduction To Bigraphs]'', [[IT University of Copenhagen]], Denmark.</ref><ref name="milner">Milner, Robin. ''[http://www.cl.cam.ac.uk/archive/rm135/uam-theme.html The Bigraphical Model]'', [[University of Cambridge Computer Laboratory]], UK.</ref>
+
+Each [[Node (mathematics)|node]] of the bigraph is part of a graph and also part of some tree that describes how the nodes are nested. Bigraphs can be conveniently and formally displayed as [[diagram]]s.<ref name="intro" /> They have applications in the modelling of distributed systems for [[ubiquitous computing]] and can be used to describe [[Mobile agent|mobile]] interactions. They have also been used by [[Robin Milner]] in an attempt to subsume [[Calculus of Communicating Systems]] (CCS) and [[Pi calculus|π-calculus]].<ref name="milner" /> They have been studied in the context of [[category theory]].<ref>{{cite journal
+|first=Robin
+|last=Milner
+|title=Bigraphs and Their Algebra
+|journal=[[Electronic Notes in Theoretical Computer Science]]
+|volume=209
+|pages=5–19
+|year=2008
+|doi=10.1016/j.entcs.2008.04.002|url=https://www.pure.ed.ac.uk/ws/files/15231681/Bigraphs_and_Their_Algebra.pdf
+}}</ref>
+
+==Anatomy of a bigraph==
+
+Aside from nodes and ([[hyperedge|hyper-]])[[Edge (graph theory)|edges]], a bigraph may have associated with it one or more ''regions'' which are roots in the place forest, and zero or more  ''holes'' in the place graph, into which other bigraph regions may be inserted.  Similarly, to nodes we may assign ''controls'' that define identities and an arity (the number of ''ports'' for a given node to which link-graph edges may connect).  These controls are drawn from a bigraph ''signature''.  In the link graph we define ''inner'' and ''outer'' names, which define the connection points at which coincident names may be fused to form a single link.
+
+==Foundations==
+
+A bigraph is a 5-tuple:
+
+<math>(V,E,ctrl,prnt,link) : \langle k,X \rangle \to \langle m,Y \rangle,</math>
+
+where <math>V</math> is a set of nodes, <math>E</math> is a set of edges, <math>ctrl</math> is the ''control map'' that assigns controls to nodes, <math>prnt</math> is the ''parent map'' that defines the nesting of nodes, and <math>link</math> is the ''link map'' that defines the link structure.
+
+The notation <math>\langle k,X \rangle \to \langle m,Y \rangle</math> indicates that the bigraph has <math>k</math> ''holes'' (sites) and a set of inner names <math>X</math> and <math>m</math> ''regions'', with a set of ''outer names'' <math>Y</math>.  These are respectively known as the ''inner'' and ''outer'' interfaces of the bigraph.
+
+Formally speaking, each bigraph is an arrow in a symmetric partial [[monoidal category]] (usually abbreviated ''spm-category'') in which the objects are these interfaces.<ref>{{cite conference
+|first=Robin
+|last=Milner
+|title=Bigraphical Categories
+|series=[[Lecture Notes in Computer Science]]
+|volume=5710
+|pages=30–36
+|year=2009
+|booktitle=CONCUR 2009 - ''Concurrency Theory''
+|publisher=Springer-Verlag
+|doi=10.1007/978-3-642-04081-8_3}}</ref>  As a result, the composition of bigraphs is definable in terms of the composition of arrows in the category.
+
+==Extensions and variants==
+
+===Bigraphs with sharing===
+[[File:Bigraphs-sharing-example.svg|alt=Example bigraph with sharing|thumb|230x230px|Example bigraph with sharing in which the node of control M is shared by the two nodes of control S. This is represented by M being in the intersection of the two S-nodes.]]
+Bigraphs with sharing<ref>{{cite journal
+|first1=Michele
+|last1=Sevegnani
+|first2=Muffy
+|last2=Calder
+|title=Bigraphs with sharing
+|journal=[[Theoretical Computer Science]]
+|volume=577
+|pages=43–73
+|year=2015
+|doi=10.1016/j.tcs.2015.02.011|doi-access=free
+}}</ref> are a generalisation of Milner's formalisation that allows for a straightforward representation of overlapping or intersecting spatial locations. In bigraphs with sharing, the place graph is defined as a [[directed acyclic graph |directed acyclic graph (DAG)]], i.e. <math>prnt</math> is a [[binary relation]] instead of a [[Function (mathematics)|map]]. The definition of link graph is unaffected by the introduction of sharing. Note that standard bigraphs are a sub-class of bigraphs with sharing.
+
+Areas of application of bigraphs with sharing include wireless networking protocols,<ref>{{cite journal
+|first1=Muffy
+|last1=Calder
+|first2=Michele
+|last2=Sevegnani
+|title=Modelling IEEE 802.11 CSMA/CA RTS/CTS with stochastic bigraphs with sharing
+|journal=[[Formal Aspects of Computing]]
+|volume=26
+|issue=3
+|pages=537–561
+|year=2014
+|doi=10.1007/s00165-012-0270-3|doi-access=free
+}}</ref> real-time management of domestic wireless networks<ref>{{cite journal
+|first1=Muffy
+|last1=Calder
+|first2=Alexandros
+|last2=Koliousis
+|first3=Michele
+|last3=Sevegnani
+|first4=Joseph
+|last4=Sventek
+|title=Real-time verification of wireless home networks using bigraphs with sharing
+|journal=[[Science of Computer Programming]]
+|volume=80
+|pages=288–310
+|year=2014
+|doi=10.1016/j.scico.2013.08.004|doi-access=free
+}}</ref> and [[mixed reality]] systems.<ref>{{Cite journal|last=Benford|first=Steve|last2=Calder|first2=Muffy|last3=Rodden|first3=Tom|last4=Sevegnani|first4=Michele|date=2016-05-01|title=On Lions, Impala, and Bigraphs: Modelling Interactions in Physical/Virtual Spaces|journal=ACM Trans. Comput.-Hum. Interact.|volume=23|issue=2|pages=9:1–9:56|doi=10.1145/2882784|issn=1073-0516|url=http://eprints.nottingham.ac.uk/39044/1/main_savannah-accepted.pdf}}</ref>
+
+== Implementations ==
+* [http://www.dcs.gla.ac.uk/~michele/bigrapher.html BigraphER] is a modelling and reasoning environment for bigraphs consisting of an [[OCaml]] library and a command-line tool providing an efficient implementation of rewriting, simulation, and visualisation for both bigraphs and bigraphs with sharing.<ref>{{Cite book|title=Computer Aided Verification|last=Sevegnani|first=Michele|last2=Calder|first2=Muffy|date=2016-07-17|publisher=Springer International Publishing|isbn=9783319415390|editor-last=Chaudhuri|editor-first=Swarat|series=Lecture Notes in Computer Science|pages=494–501|language=en|doi=10.1007/978-3-319-41540-6_27|editor-last2=Farzan|editor-first2=Azadeh|url = http://eprints.gla.ac.uk/119384/13/119384.pdf}}</ref>
+
+==See also==
+* [[Bisimulation]]
+* [[Combinatorial species]]
+
+==Bibliography==
+* {{cite book
+|first=Robin
+|last=Milner
+|title=The Space and Motion of Communicating Agents
+|publisher=[[Cambridge University Press]]
+|year=2009
+|isbn=978-0521738330
+}}
+* {{cite conference
+|first=Robin
+|last=Milner
+|title=Bigraphical reactive systems, (invited paper)
+|booktitle=CONCUR 2001 – Concurrency Theory, Proc. 12th International Conference
+|volume=2154
+|series=[[Lecture Notes in Computer Science]]
+|publisher=[[Springer-Verlag]]
+|year=2001
+|pages=16–35
+|doi=10.1007/3-540-44685-0_2}}
+* {{cite conference
+|first=Robin
+|last=Milner
+|title=Bigraphs as a Model for Mobile Interaction (invited paper)
+|booktitle=ICGT 2002: First International Conference on Graph Transformation
+|series=[[Lecture Notes in Computer Science]]
+|publisher=Springer-Verlag
+|volume=2505
+|year=2002
+|pages=8–13
+|doi=10.1007/3-540-45832-8_3
+}}
+* {{cite book
+|first1=Søren
+|last1=Debois
+|first2=Troels Christoffer
+|last2=Damgaard
+|chapter=Bigraphs by Example
+|citeseerx=10.1.1.73.176
+|title=IT University Technical Report Series TR-2005-61
+|publisher=[[IT University of Copenhagen]]
+|location=Denmark
+|year=2005
+|isbn=978-87-7949-090-1}}
+*{{cite journal
+|first1=Michele
+|last1=Sevegnani
+|first2=Muffy
+|last2=Calder
+|title=Bigraphs with sharing
+|journal=[[Theoretical Computer Science]]
+|volume=577
+|pages=43–73
+|year=2015
+|doi=10.1016/j.tcs.2015.02.011|doi-access=free
+}}
+
+==References==
+{{reflist}}
+
+==External links==
+* [https://web.archive.org/web/20110927042614/http://www.itu.dk/~mikkelbu/research/bigraphsbib/ Bibliography on Bigraphs]
+
+[[Category:Formal methods]]
+[[Category:Theoretical computer science]]

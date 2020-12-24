@@ -1,0 +1,10 @@
+In [[econometrics]], the '''Bry and Boschan routine''' finds statistical [[maxima and minima]] while using certain [[censoring (statistics)|censoring]] rules and phase and cycle length constraints. <ref>{{Cite web|url=http://www.oecd.org/sdd/leading-indicators/oecdcompositeleadingindicatorsreferenceturningpointsandcomponentseries.htm|title=OECD Composite Leading Indicators: Reference Turning Points and Component Series - OECD|website=www.oecd.org}}</ref><ref>{{Cite web|url=https://econwpa.ub.uni-muenchen.de/econ-wp/em/papers/0312/0312003.pdf|title=Dating the Italian Business Cycle &#124; A Comparison of Procedures &#124; Giancarlo Bruno† Edoardo Otranto &#124; 18th December 2003 Methods page 3}}</ref>
+
+The [[OECD]] has composite [[Economic_indicator#Classification_by_timing|leading indicators]] and [[Stationary point|turning points]] that are [[recession]] indicators with peak through the trough turning points chronologies determined by the rules in a computer routine (Bry and Boschan)<ref>{{Cite web|url=https://fred.stlouisfed.org/series/MSCRECDM|title=OECD based Recession Indicators for Major Seven Countries from the Peak through the Trough|date=April 1, 1957|website=FRED, Federal Reserve Bank of St. Louis}}</ref>
+
+The U.S. [[National Bureau of Economic Research]] (NBER) uses a computer routine (Bry and Boschan) and includes a Phase-Average Trend (PAT) [[detrending]] procedure. The turning point detection [[algorithm]] is decoupled from the de-trending procedure.<ref>{{Cite web|url=https://fred.stlouisfed.org/series/USARECDP|title=OECD based Recession Indicators for the United States from the Peak through the Period preceding the Trough|date=February 1, 1947|website=FRED, Federal Reserve Bank of St. Louis}}</ref>
+
+==References==
+{{reflist}}
+
+[[Category:Econometrics]]

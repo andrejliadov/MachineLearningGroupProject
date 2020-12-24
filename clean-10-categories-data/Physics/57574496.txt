@@ -1,0 +1,57 @@
+In [[general relativity]] and [[tensor calculus]], the '''contracted Bianchi identities''' are:<ref>{{Citation
+|author-first=Luigi
+|author-last=Bianchi
+|author-link =Luigi Bianchi
+|title = Sui simboli a quattro indici e sulla curvatura di Riemann
+|trans-title= 
+|journal = Rend. Acc. Naz. Lincei
+|volume =11
+|issue=5
+|pages =3–7
+|year =1902
+|language =Italian
+|url =https://archive.org/stream/rendiconti51111902acca#page/n9/mode/2up
+|doi =
+|jfm = 
+}}</ref>
+
+:<math> \nabla_\rho {R^\rho}_\mu = {1 \over 2} \nabla_{\mu} R,</math>
+
+where <math>{R^\rho}_\mu</math> is the [[Ricci tensor]], <math>R</math> the [[scalar curvature]], and <math>\nabla_\rho</math> indicates [[covariant differentiation]].
+
+A proof can be found in the entry [[Proofs involving covariant derivatives]].
+
+These identities are named after [[Luigi Bianchi]], although they had been already derived by [[Aurel Voss]] in 1880.<ref name="voss" >{{citation|title=Zur Theorie der Transformation quadratischer Differentialausdrücke und der Krümmung höherer Mannigfaltigketien |last=Voss|first=A.|author-link=Aurel Voss|journal=Mathematische Annalen|volume=16|pages=129–178|year=1880|url=https://zenodo.org/record/2440927|doi=10.1007/bf01446384|s2cid=122828265}}</ref> In the [[Einstein field equations]], the contracted Bianchi identity ensures consistency with the vanishing divergence of the matter [[stress-energy tensor]].
+
+==See also==
+*[[Bianchi identities]]
+*[[Einstein tensor]]
+*[[Ricci calculus]]
+*[[Tensor calculus]]
+*[[Riemann curvature tensor]]
+
+==Notes==
+{{Reflist}}
+
+==References==
+*{{cite book
+ | last = Lovelock
+ | first = David
+ |author2=Hanno Rund
+ | title = Tensors, Differential Forms, and Variational Principles
+ | year=  1989
+ | publisher = Dover
+ | isbn = 978-0-486-65840-7
+ | origyear = 1975
+ }}
+* {{cite book |author=Synge J.L., Schild A. |title=Tensor Calculus |publisher=first Dover Publications 1978 edition |year=1949 |isbn=978-0-486-63612-2 |url-access=registration |url=https://archive.org/details/tensorcalculus00syng }}
+* {{citation | author=J.R. Tyldesley| title = An introduction to Tensor Analysis: For Engineers and Applied Scientists| publisher=Longman| year=1975|isbn=0-582-44355-5}}
+* {{citation | author=D.C. Kay| title = Tensor Calculus| publisher=Schaum’s Outlines, McGraw Hill (USA)|year=1988|isbn=0-07-033484-6}}
+* {{citation | author=T. Frankel| title = The Geometry of Physics| publisher=Cambridge University Press|edition=3rd|year=2012|isbn=978-1107-602601}}
+
+[[Category:Concepts in physics]]
+[[Category:Tensors]]
+[[Category:General relativity]]
+
+{{physics-stub}}
+{{mathematics-stub}}

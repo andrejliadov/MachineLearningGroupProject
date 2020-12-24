@@ -1,0 +1,39 @@
+{{tone|date=September 2020}}
+'''API Calculus''' is a program that solves calculus problems using operating systems within a device that solves calculus problems. In 1989 the PI- Calculus was created by [[Robin Milner]] and was very successful throughout the years. The PI Calculus is an extension of the extension of the [http://theory.stanford.edu/~rvg/process.html process algebra CCS],  a tool that has algebraic languages that are specific to processing and formulating statements.<ref>{{Cite web|title = Process Algebra|url = http://theory.stanford.edu/~rvg/process.html|website = theory.stanford.edu|access-date = 2015-11-09}}</ref> The PI Calculus provides a formal theory for modeling systems and reasoning about their behaviors.<ref name=":4">{{Cite book|title = An Extension to Pi-Calculus for Performance Evaluation|last = Rahimi|first = Shahram|publisher = Scientific Research|year = 2011|location = Illinois}}</ref> In the PI Calculus there are two specific variables such as name and processes.<ref name=":4" />  But it was not until 2002 when  [http://www.cs.siu.edu/research/activities/full-time/rahimi.php Shahram Rahimi] decided to create an upgraded version of the PI- Calculus and call it the API Calculus. Milner claimed the detailed characteristics of the API Calculus to be its "Communication Ability, Capacity for Cooperation, Capacity for Reasoning and Learning, Adaptive Behavior and Trustworthiness."<ref name=":3">{{Cite journal|url = http://www2.cs.siu.edu/~rahimi/papers/17.pdf|title = ACVisualizer: A Visualization Tool for Api-Calculus|last = Rahimi|first = Shahram|date = 2015-10-20|journal = ACVisualizer: A Visualization Tool for Api-Calculus}}</ref>  The main purpose of creating this mobile advancement is to better network and communicate with other operators while completing a task. Unfortunately, the API Calculus is not perfect and has faced a problem with its security system. The language has seven features that was created within the device that the [[Π-calculus|PI Calculus]] does not have. Since this program is so advanced by the way the software was created and the different abilities that  are offered in the program, it is required to be converted to other programming languages so it can be used on various devices and other computing languages. Although the API Calculus is currently being used by various other programming languages, modifications are still being done since the security on the API Calculus is causing problems to users.
+
+== What Does It Do? ==
+The API Calculus is the main demonstration for modeling migration, intelligence, natural grouping and security in agent-based systems.<ref name=":0">{{Cite journal|url = http://www2.cs.siu.edu/~rahimi/papers/17.pdf|title = ACVisualizer: A Visualization Tool for Api-Calculus|last = Rahimi|first = Shahram|date = October 20, 2015|journal = ACVisualizer: A Visualization Tool for Api-Calculus}}</ref> This calculus programming language is usually used in various other program languages such as [https://books.google.com/books?id=K5ALcHEgeN0C&pg=PA155&lpg=PA155&dq=what+programming+languages+have+API+Calculus'&source=bl&ots=hYT8iIecq8&sig=ASN0_gRW9K0wsAop9HphicwemDQ&hl=en&sa=X&ved=0CB0Q6AEwAGoVChMIzdqwkvrSyAIVTJyICh1WzQ71#v=onepage&q=what%20programming%20languages%20have%20API%20Calculus'&f=false Java].<ref name=":1" /> In Java, a famous programming language used by various corporations such as [http://www.ibm.com/us-en/ IBM], [http://www.telecomsys.com/ TCS], and Google, the API Calculus is commonly used to solve equations and programs involving calculus.
+
+== Features ==
+The API Calculus has a wide variety of features those similar to the [[Π-calculus|PI Calculus]]  but has new and improved features such as:
+* accepts processes to be passed over communication links
+* natural grouping of mobile processes is addressed
+* features calculus dictionary  
+* includes milieu - a level of abstraction that is between a single [[mobile agent]]s (combination of computer software and data that is able to transfer from one computer to another independently and still able to work on the most recent computer that data was transferred to) and the device as a whole. It is a very restricted environment that involves zero or many agents or other milieus that work closely together to solve computer based problems.<ref name=":5">{{Cite book|title = Soft Computing Agents: A New Perspective for Dynamic Information Systems|url = https://books.google.com/books?id=jRZxTozuEvgC|publisher = IOS Press|date = 2002-01-01|isbn = 9784274905445|first = Vincenzo|last = Loia}}</ref> 
+* ability of grouping together [[Host (network)|hosts]] ( a [[Node (networking)|physical node]] - connection point -  or software program ) and [[Process (computing)|processes]] ( computer program that is running ) that are similar
+* contains different programming languages
+* knowledge units
+
+== Verification Strategy  ==
+The software language used throughout the API Calculus program is translated into two other different languages. It is first translated from API Calculus syntax to [https://wiki.eclipse.org/ATL/User_Guide_-_Overview_of_the_ATL_Language ATEL/ATL], then to [http://www.imagineersystems.com/products/mocha-pro/ MOCHA]. The outcome of the translating module is like the step previously mentioned.<ref name=":1">{{Cite web|title = The First Stage of a System Verification Strategy for API-Calculus.|url = https://www.researchgate.net/publication/221282902_The_First_Stage_of_a_System_Verification_Strategy_for_API-Calculus|website = ResearchGate|access-date = 2015-10-21}}</ref> 
+# Input Module( receives API Calculus model )
+# Translating Model ( converts API syntax to ATEL/ATL syntax )
+# Model Verification ( MOCHA )
+# Display Mode 
+Transferring API syntax to ATEL/ATL requires coding transformation knowledge to successfully transfer.
+
+== Syntax ==
+The API program has its own syntax that it follows in order to make the program run smoothly. The program is broken down into four main categories such as terms, processes, knowledge units, and milieu. The terms can be names, terms, facts, rules or functions that are assigned to variable names of the program. The process is the list of expressions used within the program to solve a calculus problem or equation. The knowledge units or commonly known as parameters are the facts and rules that can be used in order to solve the program. Lastly, the milieu is the ability to transfer computer data and information from one computer to another independently.<ref name=":5" />
+
+== Flaws ==
+The only flaw that the API Calculus has is the ability to not support a security system on mobile devices such as [[laptop computer|laptops]]. The problem is that is any outside source tries to enter the milieu is not allowed to enter because the API Calculus requires proof that is can be a trusted source.
+
+== References ==
+<!--- See http://en.wikipedia.org/wiki/Wikipedia:Footnotes on how to create references using <ref></ref> tags, these references will then appear here automatically -->
+{{Reflist}}
+
+{{DEFAULTSORT:Api-Calculus}}
+{{Concurrent computing}}
+
+[[Category:Process calculi]]
+[[Category:Theoretical computer science]]

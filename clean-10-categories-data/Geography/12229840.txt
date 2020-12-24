@@ -1,0 +1,86 @@
+{{short description|Global bioclimatic scheme for the classification of land areas}}
+[[Image:Lifezones Pengo.svg|thumb|600px|Holdridge life zone classification scheme. Although conceived as three-dimensional by its originator, it is usually shown as a two-dimensional array of hexagons in a triangular frame.]]
+The '''Holdridge life zones system''' is a global bioclimatic scheme for the classification of land areas. It was first published by [[Leslie Holdridge]] in 1947, and updated in 1967. It is a relatively simple system based on few empirical data, giving objective mapping criteria.<ref>{{Cite web|url=https://www.epa.gov/aboutepa/about-national-health-and-environmental-effects-research-laboratory-nheerl|archive-url=https://www.webcitation.org/6EN4ZYhX6?url=http://www.epa.gov/wed/pages/publications/abstracts/archived/lugo.htm|url-status=dead|title=About the National Health and Environmental Effects Research Laboratory (NHEERL)|first=OA|last=US EPA|date=January 29, 2013|archive-date=February 12, 2013|website=US EPA}}</ref> A basic assumption of the system is that both [[soil type|soil]] and [[Climax community|climax vegetation]] can be mapped once the climate is known.<ref>{{Cite journal |title=Comments on the Application of the Holdridge System for Classification of World Life Zones as Applied to Costa Rica |author=Harris SA |journal=Arctic and Alpine Research |volume=5 |year=1973 |pages=A187–A191 |jstor=1550169 |issue=3 }}</ref>
+
+==Scheme==
+While it was first designed for tropical and subtropical areas, the system applies globally. The system has been shown to fit [[tropical]] vegetation zones, [[Mediterranean]] zones, and [[boreal ecosystem|boreal]] zones, but is less applicable to cold oceanic or cold arid climates where moisture becomes the determining factor. The system has found a major use in assessing the possible changes in natural vegetation patterns due to [[global warming]].<ref>{{Cite web |url=http://www.ngdc.noaa.gov/ecosys/cdroms/ged_iia/datasets/a06/reprints/lh1.htm |title=Possible Changes in Natural Vegetation Patterns Due to a Global Warming |last=Leemans |first=Rik |year=1990 |publisher=National Geophysical Data Center (NOAA) |url-status=live |archive-url=https://web.archive.org/web/20091016000404/http://www.ngdc.noaa.gov/ecosys/cdroms/ged_iia/datasets/a06/reprints/lh1.htm |archive-date=2009-10-16 }}</ref>
+
+The three axes of the [[barycentric subdivision]]s are:
+* [[Precipitation (meteorology)|precipitation]] (annual, logarithmic)
+* biotemperature (mean annual, logarithmic)
+* [[potential evapotranspiration]] ratio  (PET) to mean total annual precipitation.
+
+Further indicators incorporated into the system are:
+* [[humidity]] provinces
+* [[Latitudinal|latitudinal regions]]
+* [[Altitudinal zonation|altitudinal belts]]
+
+Biotemperature is based on the growing season length and temperature. It is measured as the mean of all temperatures, with all temperatures below freezing and above 30&nbsp;°C adjusted to 0&nbsp;°C,<ref>{{cite journal|last1=Lugo|first1=A. E.|title=The Holdridge life zones of the conterminous United States in relation to ecosystem mapping|journal=Journal of Biogeography|date=1999|volume=26|issue=5|pages=1025–1038|url=https://www.researchgate.net/publication/227649905|access-date=27 May 2015|doi=10.1046/j.1365-2699.1999.00329.x|url-status=live|archive-url=https://web.archive.org/web/20150527185728/http://www.researchgate.net/profile/Herman_Shugart/publication/227649905_The_Holdridge_life_zones_of_the_conterminous_United_States_in_relation_to_ecosystem_mapping/links/00b49515b1408efd9c000000.pdf|archive-date=27 May 2015}}</ref> as plants are dormant at these temperatures. Holdridge's system uses biotemperature first, rather than the temperate latitude bias of [[Clinton Hart Merriam|Merriam]]'s life zones, and does not primarily consider elevation. The system is considered more appropriate to the complexities of [[tropical vegetation]] than Merriam's system.
+
+== Scientific relationship between the 3 axes and 3 indicators ==
+[[Potential evapotranspiration]] (PET) is the amount of water that would be evaporated and transpired if there were sufficient [[water]] available. High temperatures result in higher PET. [[Evapotranspiration]] (ET) is the sum of evaporation and plant transpiration from the Earth's land surface to atmosphere. Evapotranspiration can never be greater than PET. The ratio, Precipitation/PET, is the [[aridity index]] (AI), with an AI<0.2 indicating arid/hyperarid, and AI<0.5 indicating dry.
+         Coldest
+           /\
+          /  \
+     PET - -- - Rain
+The coldest regions have not much evapotranspiration nor precipitation, hence polar deserts. In the warmer regions, there are deserts with maximum PET but low rainfall that make the soil even drier, and rain forests with low PET and maximum rainfall causing [[river]] systems to drain excess water into oceans.
+
+== Classes ==
+The classes defined within the system, as used by the [[International Institute for Applied Systems Analysis]] (IIASA), are:
+{{div col|colwidth=22em}}
+# [[Polar desert]]
+# Subpolar dry [[tundra]]
+# Subpolar moist tundra
+# Subpolar wet tundra
+# Subpolar rain tundra
+# [[Boreal ecosystem|Boreal]] [[desert]]
+# Boreal dry [[Scrubland|scrub]]
+# Boreal moist [[forest]]
+# Boreal wet forest
+# Boreal rain forest
+# [[Cool temperate]] desert
+# Cool temperate [[desert scrub]]
+# Cool temperate [[steppe]]
+# Cool temperate moist forest
+# Cool temperate wet forest
+# Cool temperate rain forest
+# Warm temperate desert
+# Warm temperate desert scrub
+# Warm temperate thorn scrub
+# Warm temperate dry forest
+# Warm temperate moist forest
+# Warm temperate wet forest
+# Warm temperate rain forest
+# [[Subtropical]] desert
+# Subtropical desert scrub
+# Subtropical thorn woodland
+# [[Subtropical dry forest]]
+# [[Subtropical moist forest]]
+# Subtropical wet forest
+# Subtropical rain forest
+# [[Tropical]] desert
+# Tropical desert scrub
+# Tropical thorn woodland
+# Tropical very dry forest
+# [[Tropical dry forest]]
+# [[Tropical moist forest]]
+# [[Tropical wet forest]]
+# [[Tropical rain forest]]
+{{div col end}}
+
+==See also==
+*[[Andrew Delmar Hopkins]]
+*[[Biome]]
+*[[Ecoregion]]
+*[[Holdridge life zones in Guatemala]]
+*[[Köppen climate classification]]
+*[[Life zone]]
+*[[Trewartha climate classification]]
+
+== References ==
+{{Reflist}}
+
+[[Category:Biogeographic realms]]
+[[Category:Sustainable building]]
+[[Category:Geographic classifications]]
+[[Category:Climate and weather classification systems]]

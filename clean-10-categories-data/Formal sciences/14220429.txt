@@ -1,0 +1,87 @@
+{{other uses|Heuristic (disambiguation)}}
+
+In [[computer science]], [[artificial intelligence]], and [[mathematical optimization]], a '''heuristic''' (from Greek εὑρίσκω "I find, discover") is a technique designed for [[problem solving|solving a problem]] more quickly when classic methods are too slow, or for finding an approximate solution when classic methods fail to find any exact solution.  This is achieved by trading optimality, completeness, [[Accuracy and precision|accuracy]], or [[Accuracy and precision|precision]] for speed.  In a way, it can be considered a shortcut.
+
+A '''heuristic function''', also called simply a '''heuristic''', is a [[Function (mathematics)|function]] that ranks alternatives in [[search algorithm]]s at each branching step based on available information to decide which branch to follow. For example, it may approximate the exact solution.<ref>{{cite book |last=Pearl |first=Judea |title=Heuristics: intelligent search strategies for computer problem solving |year=1984 |publisher=Addison-Wesley Pub. Co., Inc., Reading, MA |location=United States |page=3|osti=5127296 }}</ref>
+
+== Definition and motivation ==
+
+The objective of a heuristic is to produce a solution in a reasonable time frame that is good enough for solving the problem at hand.  This solution may not be the best of all the solutions to this problem, or it may simply approximate the exact solution. But it is still valuable because finding it does not require a prohibitively long time.
+
+Heuristics may produce results by themselves, or they may be used in conjunction with optimization algorithms to improve their efficiency (e.g., they may be used to generate good seed values).
+
+Results about [[NP-hard]]ness in theoretical computer science make heuristics the only viable option for a variety of complex optimization problems that need to be routinely solved in real-world applications.
+
+Heuristics underlie the whole field of Artificial Intelligence and the computer simulation of thinking, as they may be used in situations where there are no known [[algorithm]]s.<ref>{{cite book|last=Apter|first=Michael J.|title=The Computer Simulation of Behaviour|year=1970|publisher=Hutchinson & Co|location=London|page=83|isbn=9781351021005|url=https://books.google.com/books?id=-b5aDwAAQBAJ&q=Heuristic}}</ref>
+
+== Trade-off ==
+
+The trade-off criteria for deciding whether to use a heuristic for solving a given problem include the following:
+
+* ''Optimality:'' When several solutions exist for a given problem, does the heuristic guarantee that the best solution will be found? Is it actually necessary to find the best solution?
+* ''Completeness:'' When several solutions exist for a given problem, can the heuristic find them all? Do we actually need all solutions? Many heuristics are only meant to find one solution.
+* ''Accuracy and precision:'' Can the heuristic provide a [[confidence interval]] for the purported solution? Is the error bar on the solution unreasonably large?
+* ''Execution time'': Is this the best known heuristic for solving this type of problem? Some heuristics converge faster than others. Some heuristics are only marginally quicker than classic methods.
+
+In some cases, it may be difficult to decide whether the solution found by the heuristic is good enough, because the theory underlying heuristics is not very elaborate.
+
+== Examples ==
+
+=== Simpler problem ===
+
+One way of achieving the computational performance gain expected of a heuristic consists of solving a simpler problem whose solution is also a solution to the initial problem.
+
+=== Travelling salesman problem ===
+
+An example of approximation is described by [[Jon Bentley (computer scientist)|Jon Bentley]] for solving the [[travelling salesman problem]] (TSP):
+* "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?"
+so as to select the order to draw using a [[pen plotter]]. TSP is known to be [[NP-Hard]] so an optimal solution for even a moderate size problem is difficult to solve. Instead, the [[greedy algorithm]] can be used to give a good but not optimal solution (it is an approximation to the optimal answer) in a reasonably short amount of time. The greedy algorithm heuristic says to pick whatever is currently the best next step regardless of whether that prevents (or even makes impossible) good steps later. It is a heuristic in that practice says it is a good enough solution, theory says there are better solutions (and even can tell how much better in some cases).<ref>{{cite book|last=Jon Louis Bentley|title=Writing Efficient Programs|url=https://archive.org/details/writingefficient00bent|url-access=registration|year=1982|publisher=Prentice Hall|page=[https://archive.org/details/writingefficient00bent/page/11 11]}}</ref>
+
+=== Search ===
+
+Another example of heuristic making an algorithm faster occurs in certain search problems. Initially, the heuristic tries every possibility at each step, like the full-space search algorithm. But it can stop the search at any time if the current possibility is already worse than the best solution already found. In such search problems, a heuristic can be used to try good choices first so that bad paths can be eliminated early (see [[alpha-beta pruning]]). In the case of [[best-first search]] algorithms, such as [[A* search]], the heuristic improves the algorithm's convergence while maintaining its correctness as long as the heuristic is [[admissible heuristic|admissible]].
+
+=== Newell and Simon: heuristic search hypothesis ===
+
+In their [[Turing Award]] acceptance speech, [[Allen Newell]] and [[Herbert A. Simon]] discuss the heuristic search hypothesis: a physical symbol system will repeatedly generate and modify known symbol structures until the created structure matches the solution structure. Each following step depends upon the step before it, thus the heuristic search learns what avenues to pursue and which ones to disregard by measuring how close the current step is to the solution. Therefore, some possibilities will never be generated as they are measured to be less likely to complete the solution.
+
+A heuristic method can accomplish its task by using search trees. However, instead of generating all possible solution branches, a heuristic selects branches more likely to produce outcomes than other branches. It is selective at each decision point, picking branches that are more likely to produce solutions.<ref>{{cite journal|last=Allen Newell and Herbert A. Simon|title=Computer Science as Empirical Inquiry: Symbols and Search|journal=Comm. ACM|volume=19|issue=3|pages=113–126|year=1976|url=http://lidecc.cs.uns.edu.ar/~grs/InteligenciaArtificial/NewellSimon-1975.pdf|doi=10.1145/360018.360022|s2cid=5581562}}</ref>
+
+=== Antivirus software ===
+
+[[Antivirus software]] often uses heuristic rules for detecting viruses and other forms of malware. Heuristic scanning looks for code and/or behavioral patterns common to a class or family of viruses, with different sets of rules for different viruses. If a file or executing process is found to contain matching code patterns and/or to be performing that set of activities, then the scanner infers that the file is infected. The most advanced part of behavior-based heuristic scanning is that it can work against highly randomized self-modifying/mutating ([[Polymorphic code|polymorphic]]) viruses that cannot be reliably detected by simpler string scanning methods. Heuristic scanning has the potential to detect future viruses without requiring the virus to be first detected somewhere else, submitted to the virus scanner developer, analyzed, and a detection update for the scanner provided to the scanner's users.
+
+== Pitfalls ==
+
+Some heuristics have a strong underlying theory; they are either derived in a top-down manner from the theory or are arrived at based on either experimental or real world data. Others are just [[rule of thumb|rules of thumb]] based on real-world observation or experience without even a glimpse of theory. The latter are exposed to a larger number of pitfalls.
+
+When a heuristic is reused in various contexts because it has been seen to "work" in one context, without having been mathematically proven to meet a given set of requirements, it is possible that the current data set does not necessarily represent future data sets (see: [[overfitting]]) and that purported "solutions" turn out to be akin to noise.
+
+[[Statistical analysis]] can be conducted when employing heuristics to estimate the probability of incorrect outcomes. To use a heuristic for solving a [[search problem]] or a [[knapsack problem]], it is necessary to check that the heuristic is [[admissible heuristic|admissible]]. Given a heuristic function <math>h(v_i, v_g)</math> meant to approximate the true optimal distance <math>d^\star(v_i,v_g)</math> to the goal node <math>v_g</math> in a directed graph <math>G</math> containing <math>n</math> total nodes or vertexes labeled <math>v_0,v_1,\cdots,v_n</math>, "admissible" means roughly that the heuristic underestimates the cost to the goal or formally that <math>h(v_i, v_g) \leq d^\star(v_i,v_g)</math> for ''all'' <math>(v_i, v_g)</math> where <math>{i,g} \in [0, 1, ... , n]</math>.
+
+If a heuristic is not admissible, it may never find the goal, either by ending up in a dead end of graph <math>G</math> or by skipping back and forth between two nodes <math>v_i</math> and <math>v_j</math> where <math>{i, j}\neq g</math>.
+
+== Etymology ==
+{{wiktionary|heuristic}}
+The word "heuristic" came into usage in the early 19th century. It is formed irregularly from the [[Greek language|Greek]] word ''heuriskein'', meaning "to find".<ref>{{cite web|url=https://en.oxforddictionaries.com/definition/heuristic |title=Definition of ''heuristic'' in English |publisher=Oxford University Press |access-date=22 October 2016 |archive-url=https://web.archive.org/web/20161023011059/https://en.oxforddictionaries.com/definition/heuristic |archive-date=23 October 2016 |url-status=live }}</ref>
+
+== See also ==
+*[[Algorithm]]
+*[[Constructive heuristic]]
+*[[Genetic algorithm]]
+*[[Heuristic]]
+*[[Heuristic routing]]
+*[[Heuristic evaluation]]: Method for identifying [[usability]] problems in user interfaces.
+*[[Metaheuristic]]: Methods for controlling and tuning basic heuristic algorithms, usually with usage of memory and learning.
+*[[Matheuristics]]: Optimization algorithms made by the interoperation of metaheuristics and mathematical programming (MP) techniques.
+*Reactive search optimization: Methods using online [[machine learning]] principles for self-tuning of heuristics.
+* [[Recursion (computer science)]]
+* [[Macro (computer science)]]
+
+== References ==
+{{reflist}}
+
+[[Category:Heuristic algorithms| ]]
+[[Category:Computer science]]
+
+[[de:Heuristik#Informatik]]

@@ -1,0 +1,117 @@
+In [[physics]], [[chemistry]] and [[biology]], a '''potential gradient''' is the local [[derivative|rate of change]] of the [[potential]] with respect to displacement, i.e. spatial derivative, or gradient. This quantity frequently occurs in equations of physical processes because it leads to some form of [[flux]].
+
+==Definition==
+
+===One dimension===
+
+The simplest definition for a potential gradient ''F'' in one dimension is the following:<ref>Essential Principles of Physics, P.M. Whelan, M.J. Hodgeson, 2nd Edition, 1978, John Murray, {{ISBN|0-7195-3382-1}}</ref>
+
+:<math> F = \frac{\phi_2-\phi_1}{x_2-x_1} = \frac{\Delta \phi}{\Delta x}\,\!</math>
+
+where {{math|''ϕ''(''x'')}} is some type of [[scalar potential]] and {{math|''x''}} is [[Displacement (vector)|displacement]] (not [[distance]]) in the {{math|''x''}} direction, the subscripts label two different positions {{math|''x''<sub>1</sub>, ''x''<sub>2</sub>}}, and potentials at those points, {{math|''ϕ''<sub>1</sub> {{=}} ''ϕ''(''x''<sub>1</sub>), ''ϕ''<sub>2</sub> {{=}} ''ϕ''(''x''<sub>2</sub>)}}. In the limit of [[infinitesimal]] displacements, the ratio of differences becomes a ratio of [[differential of a function|differentials]]:
+
+:<math> F = \frac{{\rm d} \phi}{{\rm d} x}.\,\!</math>
+
+The direction of the electric potential gradient is from <math>x_1</math> to <math>x_2</math>.
+
+===Three dimensions===
+
+In [[three dimensional space|three dimensions]], [[Cartesian coordinates]] make it clear that the resultant potential gradient is the sum of the potential gradients in each direction:
+
+:<math> \mathbf{F} = \mathbf{e}_x\frac{\partial \phi}{\partial x} + \mathbf{e}_y\frac{\partial \phi}{\partial y} + \mathbf{e}_z\frac{\partial \phi}{\partial z}\,\!</math> 
+
+where {{math|'''e'''<sub>x</sub>, '''e'''<sub>y</sub>, '''e'''<sub>z</sub>}} are [[unit vector]]s in the {{math|''x, y, z''}} directions. This can be compactly written in terms of the [[gradient]] [[operator (mathematics)|operator]] {{math|∇}},
+
+:<math> \mathbf{F} = \nabla \phi.\,\!</math>
+
+although this final form holds in any [[curvilinear coordinate system]], not just Cartesian.
+
+This expression represents a significant feature of any [[conservative vector field]] {{math|'''F'''}}, namely {{math|'''F'''}} has a corresponding potential {{math|''ϕ''}}.<ref>Vector Analysis (2nd Edition), M.R. Spiegel, S. Lipcshutz, D. Spellman, Schaum’s Outlines, McGraw Hill (USA), 2009, {{ISBN|978-0-07-161545-7}}</ref>
+
+Using [[Stokes' theorem]], this is equivalently stated as
+
+:<math> \nabla\times\mathbf{F} = \boldsymbol{0} \,\!</math>
+
+meaning the [[Curl (mathematics)|curl]], denoted ∇×, of the vector field vanishes.
+
+==Physics==
+
+===Newtonian gravitation===
+
+In the case of the [[gravitational field#classical mechanics|gravitational field]] {{math|'''g'''}}, which can be shown to be conservative,<ref>Dynamics and Relativity, J.R. Forshaw, A.G. Smith, Wiley, 2009, {{ISBN|978-0-470-01460-8}}</ref> it is equal to the gradient in [[gravitational potential]] {{math|Φ}}:
+
+:<math>\mathbf{g} = - \nabla \Phi. \,\!</math>
+
+There are opposite signs between gravitational field and potential, because the potential gradient and field are opposite in direction: as the potential increases, the gravitational field strength decreases and vice versa.
+
+===Electromagnetism===
+{{main|Maxwell's equations|Mathematical descriptions of the electromagnetic field}}
+In [[electrostatics]], the [[electric field]] {{math|'''E'''}} is independent of time {{math|''t''}}, so there is no induction of a time-dependent [[magnetic field]] {{math|'''B'''}} by [[Faraday's law of induction]]:
+
+:<math>\nabla\times\mathbf{E} = -\frac{\partial\mathbf{B}}{\partial t} = \boldsymbol{0} \,,</math>
+
+which implies {{math|'''E'''}} is the gradient of the electric potential {{math|''V''}}, identical to the classical gravitational field:<ref>Electromagnetism (2nd Edition), I.S. Grant, W.R. Phillips, Manchester Physics, John Wiley & Sons, 2008, {{ISBN|978-0-471-92712-9}}</ref>
+
+:<math>- \mathbf{E} = \nabla V. \,\!</math>
+
+In [[electrodynamics]], the {{math|'''E'''}} field is time dependent and induces a time-dependent {{math|'''B'''}} field also (again by Faraday's law), so the curl of {{math|'''E'''}} is not zero like before, which implies the electric field is no longer the gradient of electric potential. A time-dependent term must be added:<ref>Introduction to Electrodynamics (3rd Edition), D.J. Griffiths, Pearson Education, Dorling Kindersley, 2007, {{ISBN|81-7758-293-3}}</ref> 
+
+:<math>- \mathbf{E} = \nabla V + \frac{\partial \mathbf{A}}{\partial t}\,\!</math>
+
+where {{math|'''A'''}} is the electromagnetic [[vector potential]]. This last potential expression in fact reduces Faraday's law to an identity.
+
+===Fluid mechanics===
+
+In [[fluid mechanics]], the [[velocity field]] {{math|'''v'''}} describes the fluid motion. An [[irrotational flow]] means the velocity field is conservative, or equivalently the [[vorticity]] [[pseudovector]] field {{math|'''ω'''}} is zero: 
+
+:<math> \boldsymbol{\omega} = \nabla\times\mathbf{v} = \boldsymbol{0}.</math>
+
+This allows the [[velocity potential]] to be defined simply as:
+
+:<math> \mathbf{v} = \nabla\phi</math>
+
+==Chemistry==
+
+{{main|Electrode potentials}}
+
+In an [[Electrochemistry|electrochemical]] [[half-cell]], at the interface between the [[electrolyte]] (an [[ion]]ic [[solution]]) and the [[metal]] [[electrode]], the standard [[electric potential difference]] is:<ref>Physical chemistry, P.W. Atkins, Oxford University Press, 1978, {{ISBN|0-19-855148-7}}</ref>
+
+:<math>\Delta \phi_{(M,M^{+z})} = \Delta \phi_{(M,M^{+z})}^{\ominus} + \frac{RT}{zeN_\text{A}}\ln a_{M^{+z}} \,\!</math>
+
+where ''R'' = [[gas constant]], ''T'' = [[temperature]] of solution, ''z'' = [[Valence (chemistry)|valency]] of the metal, ''e'' = [[elementary charge]], ''N''<sub>A</sub> = [[Avogadro constant]], and ''a''<sub>M<sup>+z</sup></sub> is the [[Activity (chemistry)|activity]] of the ions in solution. Quantities with superscript ⊖ denote the measurement is taken under [[Standard conditions for temperature and pressure|standard conditions]]. The potential gradient is relatively abrupt, since there is an almost definite boundary between the metal and solution, hence the interface term.<!---What is this sentence trying to say!??--->{{clarify|date=March 2013}}
+
+==Biology==
+
+In [[biology]], a potential gradient is the net difference in [[electric charge]] across a [[cell membrane]].
+
+==Non-uniqueness of potentials==
+
+Since gradients in potentials correspond to [[Field (physics)|physical field]]s, it makes no difference if a constant is added on (it is erased by the gradient operator {{math|&nabla;}} which includes [[partial differentiation]]). This means there is no way to tell what the "absolute value" of the potential "is" – the zero value of potential is completely arbitrary and can be chosen anywhere by convenience (even "at infinity"). This idea also applies to vector potentials, and is exploited in [[classical field theory]] and also [[gauge field theory]].
+
+Absolute values of potentials are not physically observable, only gradients and path-dependent potential differences are. However, the [[Aharonov–Bohm effect]] is a [[quantum mechanics|quantum mechanical]] effect which illustrates that non-zero [[electromagnetic potential]]s along a closed loop (even when the {{math|'''E'''}} and {{math|'''B'''}} fields are zero everywhere in the region) lead to changes in the phase of the [[wave function]] of an electrically [[charged particle]] in the region, so the potentials appear to have measurable significance.
+
+==Potential theory==
+
+[[Field equation]]s, such as Gauss's laws [[Gauss's law|for electricity]], [[Gauss's law for magnetism|for magnetism]], and [[Gauss's law for gravity|for gravity]], can be written in the form:
+
+:<math>\nabla\cdot\mathbf{F}= X \rho</math>
+
+where {{math|''ρ''}} is the electric [[charge density]], [[magnetic monopole|monopole]] density (should they exist), or [[mass density]] and {{math|''X''}} is a constant (in terms of [[physical constant]]s [[Gravitational constant|{{math|''G''}}]], [[Vacuum permittivity|{{math|''ε''<sub>0</sub>}}]], [[Vacuum permeability|{{math|''μ''<sub>0</sub>}}]] and other numerical factors).
+
+Scalar potential gradients lead to [[Poisson's equation]]:
+
+:<math>\nabla\cdot (\nabla\phi)= X \rho \quad \Rightarrow \quad \nabla^2 \phi = X \rho</math>
+
+A general [[potential theory|theory of potentials]] has been developed to solve this equation for the potential. The gradient of that solution gives the physical field, solving the field equation.
+
+==See also==
+*[[Tensors in curvilinear coordinates]]
+
+==References==
+
+{{reflist}}
+
+[[Category:Concepts in physics]]
+[[Category:Spatial gradient]]
+
+[[pl:Gradient potencjału]]

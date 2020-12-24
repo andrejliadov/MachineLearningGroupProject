@@ -1,0 +1,47 @@
+In the [[philosophy of mathematics]], '''Benacerraf's identification problem''' is a [[philosophical argument]] developed by [[Paul Benacerraf]] against [[set-theoretic Platonism]], and published in 1965 in an article entitled "What Numbers Could Not Be".<ref name= "What Numbers Could Not Be">Paul Benacerraf (1965), “What Numbers Could Not Be”, ''Philosophical Review'' Vol. 74, pp. 47–73.</ref><ref>Bob Hale and Crispin Wright (2002) [http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.693.9943&rep=rep1&type=pdf "Benacerraf's Dilemma Revisited"] ''European Journal of Philosophy'', '''10'''(1).</ref>  Historically, the work became a significant catalyst in motivating the development of [[Structuralism (philosophy of mathematics)|mathematical structuralism]].<ref>Stewart Shapiro (1997) ''Philosophy of Mathematics: Structure and Ontology'' New York: Oxford University Press, p. 37. {{ISBN|0195139305}}</ref>
+
+The identification problem argues that there exists a fundamental problem in [[Reductionism|reducing]] [[natural numbers]] to [[pure sets]].  Since there exists an [[Infinity|infinite]] number of ways of identifying the natural numbers with pure sets, no particular set-theoretic method can be determined as the "true" reduction.  Benacerraf infers that any attempt to make such a choice of reduction immediately results in generating a meta-level, set-theoretic falsehood, namely in relation to other [[Elementarily equivalent|elementarily-equivalent]] set-theories not [[Law of identity|identical]] to the one chosen.<ref name= "What Numbers Could Not Be" />  The identification problem argues that this creates a fundamental problem for Platonism, which maintains that mathematical objects have a real, abstract existence.  '''Benacerraf's dilemma'''<!--boldface per WP:R#PLA--> to Platonic set-theory is arguing that the Platonic attempt to identify the "true" reduction of natural numbers to pure sets, as revealing the [[intrinsic properties]] of these abstract mathematical objects, is impossible.<ref name= "What Numbers Could Not Be" />  As a result, the identification problem ultimately argues that the relation of set theory to natural numbers cannot have an [[Ontology|ontologically]] Platonic nature.<ref name= "What Numbers Could Not Be" />
+
+== Historical motivations ==
+
+The historical motivation for the development of Benacerraf's identification problem derives from a fundamental problem of ontology.  Since [[Medieval philosophy|Medieval]] times, philosophers have argued as to whether the ontology of mathematics contains [[abstract objects]].  In the philosophy of mathematics, an abstract object is traditionally defined as an entity that: (1) exists independent of the mind; (2) exists independent of the empirical world; and (3) has eternal, unchangeable properties.<ref>Michael Loux (2006) ''Metaphysics: A Contemporary Introduction'' (Routledge Contemporary Introductions to Philosophy), London: Routledge. {{ISBN|0415401348}}</ref>  Traditional mathematical Platonism maintains that some set of mathematical elements–[[natural numbers]], [[real numbers]], [[Functions (mathematics)|functions]], [[Relation (mathematics)|relations]], [[systems]]–are such abstract objects.  Contrarily, mathematical [[nominalism]] denies the existence of any such abstract objects in the ontology of mathematics.  
+   
+In the late 19th and early 20th century, a number of anti-Platonist programs gained in popularity.  These included [[intuitionism]], [[Formalism (mathematics)|formalism]], and [[predicativism]].  By the mid-20th century, however, these anti-Platonist theories had a number of their own issues.  This subsequently resulted in a resurgence of interest in Platonism.  It was in this historic context that the motivations for the identification problem developed.
+
+== Description ==
+
+The identification problem begins by evidencing some set of elementarily-equivalent, set-theoretic models of the natural numbers.<ref name= "What Numbers Could Not Be" />  Benacerraf considers two such set-theoretic methods:
+
+::'''Set-theoretic method I''' (using [[Zermelo ordinals]])
+::0 = ∅
+::1 = {{mset|0}} = {{mset|∅}}
+::2 = {{mset|1}} = {{mset|{{mset|∅}}}}
+::3 = {{mset|2}} = {{mset|{{mset|{{mset|∅}}}}}}
+::...
+
+::'''Set-theoretic method II''' (using [[von Neumann ordinals]])
+::0 = ∅
+::1 = {{mset|0}} = {{mset|∅}}
+::2 = {{mset|0, 1}} = {{mset|∅, {{mset|∅}}}}
+::3 = {{mset|0, 1, 2}} = {{mset|∅, {{mset|∅}}, {{mset|∅, {{mset|∅}}}}}}
+::...
+
+As Benacerraf demonstrates, both method I and II reduce natural numbers to sets.<ref name= "What Numbers Could Not Be" />  Benacerraf formulates the dilemma as a question: which of these set-theoretic methods uniquely provides the true identity statements, which elucidates the true ontological nature of the natural numbers?<ref name= "What Numbers Could Not Be" />  Either method I or II could be used to define the natural numbers and subsequently generate true arithmetical statements to form a mathematical system.  In their relation, the elements of such mathematical systems are [[isomorphic]] in their structure.  However, the problem arises when these isomorphic structures are related together on the meta-level.  The definitions and arithmetical statements from system I are not identical to the definitions and arithmetical statements from system II.  For example, the two systems differ in their answer to whether 0 ∈ 2, insofar as ∅ is not an element of {{mset|{{mset|∅}}}}.  Thus, in terms of failing the [[transitivity of identity]], the search for true identity statements similarly fails.<ref name= "What Numbers Could Not Be" /> By attempting to reduce the natural numbers to sets, this renders a set-theoretic falsehood between the isomorphic structures of different mathematical systems.  This is the essence of the identification problem.
+
+According to Benacerraf, the philosophical ramifications of this identification problem result in Platonic approaches failing the ontological test.<ref name= "What Numbers Could Not Be" />  The argument is used to demonstrate the impossibility for Platonism to reduce numbers to sets and reveal the existence of abstract objects.
+
+== See also ==
+* [[Benacerraf's epistemological problem]]
+
+== References ==
+{{Reflist}}
+
+== Bibliography ==
+*Benacerraf, Paul (1973) "Mathematical Truth", in Benacerraf & Putnam Philosophy of Mathematics: Selected Readings, Cambridge: Cambridge University Press, 2nd edition. 1983, pp.&nbsp;403–420.
+*Hale, Bob (1987) ''Abstract Objects''. Oxford: Basil Blackwell. {{ISBN|0631145931}}
+
+[[Category:Philosophical arguments]]
+[[Category:Philosophical problems]]
+[[Category:Philosophy of mathematics]]
+[[Category:Set theory]]
+[[Category:Structuralism (philosophy of mathematics)]]

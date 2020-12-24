@@ -1,0 +1,82 @@
+{{short description|Extraction of information from images via digital image processing techniques}}
+{{distinguish|Image processing}}
+{{no footnotes|article|date=September 2013}}
+
+'''Image analysis''' is the extraction of meaningful information from [[image]]s; mainly from [[digital image]]s by means of [[digital image processing]] techniques.<ref name="solomonbreckon10fundamentals">{{cite book| author=Solomon, C.J., Breckon, T.P.| title=Fundamentals of Digital Image Processing: A Practical Approach with Examples in Matlab| year=2010| publisher=Wiley-Blackwell| doi=10.1002/9780470689776| isbn=978-0470844731}}</ref> Image analysis tasks can be as simple as reading [[barcode|bar code]]d tags or as sophisticated as [[facial recognition system|identifying a person from their face]].
+
+[[Computer]]s are indispensable for the analysis of large amounts of data, for tasks that require complex computation, or for the extraction of quantitative information.  On the other hand, the human [[visual cortex]] is an excellent image analysis apparatus, especially for extracting higher-level information, and for many applications &mdash; including medicine, security, and remote sensing &mdash; human analysts still cannot be replaced by computers.  For this reason, many important image analysis tools such as [[edge detection|edge detectors]] and [[neural networks]] are inspired by human [[visual perception]] models.
+
+==Digital==
+Digital Image Analysis or Computer Image Analysis is when a computer or electrical device automatically studies an image to obtain useful information from it. Note that the device is often a computer but may also be an electrical circuit, a digital camera or a mobile phone. 
+It involves the fields of [[computer vision|computer]] or [[machine vision]], and [[medical imaging]], and makes heavy use of [[pattern recognition]], [[digital geometry]], and [[signal processing]].  This field of [[computer science]] developed in the 1950s at academic institutions such as the [[Massachusetts Institute of Technology|MIT]] A.I. Lab, originally as a branch of [[artificial intelligence]] and [[robotics]].
+
+It is the [[quantitative property|quantitative]] or [[Qualitative property|qualitative]] characterization of [[two-dimensional]] (2D) or [[Three-dimensional space|three-dimensional]] (3D) [[digital images]]. 2D images are, for example, to be analyzed in [[computer vision]], and 3D images in [[medical imaging]]. The field was established in the 1950s—1970s, for example with pioneering contributions by [[Azriel Rosenfeld]], [[Herbert Freeman]], [[Jack E. Bresenham]], or [[King-Sun Fu]].
+
+==Techniques==
+There are many different techniques used in automatically analysing images. Each technique may be useful for a small range of tasks, however there still aren't any known methods of image analysis that are generic enough for wide ranges of tasks, compared to the abilities of a human's image analysing capabilities. Examples of image analysis techniques in different fields include:
+* 2D and 3D [[object recognition]],
+* [[Segmentation (image processing)|image segmentation]], 
+* [[motion detection]] e.g. [[Single particle tracking]], 
+* [[video tracking]], 
+* [[optical flow]], 
+* [[Medical imaging|medical scan analysis]], 
+* [[3D Pose Estimation]].
+
+==Applications==
+The applications of digital image analysis are continuously expanding through all areas of science and industry, including:
+*[[plate reader|assay micro plate reading]], such as detecting where a chemical was manufactured.
+*[[astronomical image processing|astronomy]], such as calculating the size of a planet.
+*[[automated species identification]] (e.g. plant and animal species)
+*[[defense (military)|defense]]
+*[[error level analysis]]
+*[[filter (software)|filter]]ing <!-- get a more specific link, and-or examples -->
+*[[machine vision]], such as to automatically count items in a factory conveyor belt.
+*[[materials science]], such as determining if a metal weld has cracks. <!-- get a more specific link-->
+*[[medical image processing|medicine]], such as detecting cancer in a mammography scan.
+*[[metallography]], such as determining the mineral content of a rock sample.
+*[[microscope image processing|microscopy]], such as counting the germs in a swab.
+*[[automatic number plate recognition]];
+*[[optical character recognition]], such as automatic license plate detection.
+*[[remote sensing]], such as detecting intruders in a house, and producing land cover/land use maps.<ref>{{cite journal|last1=Xie|first1=Y.|last2=Sha|first2=Z.|last3=Yu|first3=M.|title=Remote sensing imagery in vegetation mapping: a review|journal=Journal of Plant Ecology|date=2008|volume=1|issue=1|pages=9–23|doi=10.1093/jpe/rtm005|doi-access=free}}</ref><ref>{{cite journal|last1=Wilschut|first1=L.I.|last2=Addink|first2=E.A.|last3=Heesterbeek|first3=J.A.P.|last4=Dubyanskiy|first4=V.M.|last5=Davis|first5=S.A.|last6=Laudisoit|first6=A.|last7=Begon|first7=M.|last8=Burdelov|first8=L.A.|last9=Atshabar|first9=B.B.|last10=de Jong|first10=S.M|title=Mapping the distribution of the main host for plague in a complex landscape in Kazakhstan: An object-based approach using SPOT-5 XS, Landsat 7 ETM+, SRTM and multiple Random Forests|journal=International Journal of Applied Earth Observation and Geoinformation|date=2013|volume=23|issue=100|pages=81–94|doi=10.1016/j.jag.2012.11.007|pmid=24817838|pmc=4010295}}</ref>
+*[[robotics]], such as to avoid steering into an obstacle.
+*[[security]], such as detecting a person's eye color or hair color. <!-- get more specific links: fingerprints, face recog, iris, surveillance, license plate-->
+
+==Object-based==
+{{split section|Object-based image analysis|date=May 2016}}
+[[File:Object based image analysis.jpg|thumb|Image segmentation during the
+object base image analysis]]
+''Object-Based Image Analysis'' (OBIA) employs two main processes, segmentation and classification.  Traditional image segmentation is on a per-pixel basis.  However, OBIA groups pixels into homogeneous objects.  These objects can have different shapes and scale.   Objects also have statistics associated with them which can be used to classify objects.  Statistics can include geometry, context and texture of image objects.  The analyst defines statistics in the classification process to generate for example [[land cover]].
+
+{{anchor|GEOBIA}}When applied to earth images, OBIA is known as ''Geographic Object-Based Image Analysis'' (GEOBIA), defined as "a sub-discipline of [[geoinformation]] science devoted to (...) partitioning [[remote sensing]] (RS) imagery into meaningful image-objects, and assessing their characteristics through spatial, spectral and temporal scale".<ref>G.J. Hay & G. Castilla: ''Geographic Object-Based Image Analysis (GEOBIA): A new name for a new discipline.'' In: T. Blaschke, S. Lang & G. Hay (eds.): Object-Based Image Analysis – Spatial Concepts for Knowledge-Driven Remote Sensing Applications. Lecture Notes in Geoinformation and Cartography, 18. Springer, Berlin/Heidelberg, Germany: 75-89 (2008)</ref><ref name="Blaschke Hay Kelly Lang 2014 pp. 180–191">{{cite journal | last1=Blaschke | first1=Thomas | last2=Hay | first2=Geoffrey J. | last3=Kelly | first3=Maggi | last4=Lang | first4=Stefan | last5=Hofmann | first5=Peter | last6=Addink | first6=Elisabeth | last7=Queiroz Feitosa | first7=Raul | last8=van der Meer | first8=Freek | last9=van der Werff | first9=Harald | last10=van Coillie | first10=Frieke | last11=Tiede | first11=Dirk | title=Geographic Object-Based Image Analysis – Towards a new paradigm | journal=ISPRS Journal of Photogrammetry and Remote Sensing | publisher=Elsevier BV | volume=87 | year=2014 | issue=100 | issn=0924-2716 | doi=10.1016/j.isprsjprs.2013.09.014 | pages=180–191| pmid=24623958 | pmc=3945831 | doi-access=free }}</ref>
+The international GEOBIA conference has been held biannually since 2006.<ref>[http://www.mdpi.com/journal/remotesensing/special_issues/geobia]</ref>
+
+Object-based image analysis is also applied in other fields, such as cell biology or medicine. It can for instance detect changes of cellular shapes in the process of cell differentiation.<ref>{{Cite journal|last1=Salzmann|first1=M.|last2=Hoesel|first2=B.|last3=Haase|first3=M.|last4=Mussbacher|first4=M.|last5=Schrottmaier|first5=W. C.|last6=Kral-Pointner|first6=J. B.|last7=Finsterbusch|first7=M.|last8=Mazharian|first8=A.|last9=Assinger|first9=A.|date=2018-02-20|title=A novel method for automated assessment of megakaryocyte differentiation and proplatelet formation|journal=Platelets|volume=29|issue=4|pages=357–364|doi=10.1080/09537104.2018.1430359|issn=1369-1635|pmid=29461915|s2cid=3785563|url=https://research.birmingham.ac.uk/portal/files/48276169/A_novel_method_for_automated_assessment_of_megakaryocyte_differentiation_and_proplatelet_formation.pdf}}</ref>
+
+The technique is implemented in software such as [[eCognition]] or the [[Orfeo toolbox]].
+
+==See also==
+*[[Archeological imagery]]
+*[[Imaging technologies]]
+*[[Image processing]]
+*[[Land cover mapping]]
+*[[Military intelligence]]
+*[[Remote sensing]]
+
+==References==
+{{Reflist}}
+
+==Further reading==
+* ''The Image Processing Handbook'' by John C. Russ, {{ISBN|0-8493-7254-2}} (2006)
+* ''Image Processing and Analysis - Variational, PDE, Wavelet, and Stochastic Methods'' by [[Tony F. Chan]] and [https://sites.google.com/view/jackieshen/ Jianhong (Jackie) Shen], {{ISBN|0-89871-589-X}} (2005)
+* ''Front-End Vision and Multi-Scale Image Analysis'' by Bart M. ter Haar Romeny, Paperback, {{ISBN|1-4020-1507-0}} (2003)
+* ''Practical Guide to Image Analysis'' by J.J. Friel, et al., [[ASM International (society)|ASM International]], {{ISBN|0-87170-688-1}} (2000). 
+* ''Fundamentals of Image Processing'' by Ian T. Young, Jan J. Gerbrands, Lucas J. Van Vliet, Paperback, {{ISBN|90-75691-01-7}} (1995)
+* ''Image Analysis and Metallography'' edited by P.J. Kenny, et al., [[International Metallographic Society]] and [[ASM International (society)|ASM International]] (1989).
+* ''Quantitative Image Analysis of Microstructures'' by H.E. Exner & H.P. Hougardy,  DGM Informationsgesellschaft mbH, {{ISBN|3-88355-132-5}} (1988). 
+* "Metallographic and Materialographic Specimen Preparation, Light Microscopy, Image Analysis and Hardness Testing", Kay Geels in collaboration with Struers A/S, ASTM International 2006.
+
+
+{{Authority control}}
+
+[[Category:Computer vision]]
+[[Category:Formal sciences]]

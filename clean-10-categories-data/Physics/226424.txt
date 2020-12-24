@@ -1,0 +1,696 @@
+{{Use American English|date = March 2019}}
+{{Short description|Vector in special relativity well-behaved with respect to Lorentz transformations}}
+{{distinguish|p-vector}}
+{{spacetime|cTopic=Mathematics}}
+In [[special relativity]], a '''four-vector''' (also known as a 4-vector)<ref>Rindler, W. ''Introduction to Special Relativity (2nd edn.)'' (1991) Clarendon Press Oxford {{ISBN|0-19-853952-5}}</ref> is an object with four components, which transform in a specific way under [[Lorentz transformation]]. Specifically, a four-vector is an element of a four-dimensional [[vector space]] considered as a [[representation space]] of the [[Representation theory of the Lorentz group|standard representation]] of the [[Lorentz group]], the (½,½) representation. It differs from a [[Euclidean vector]] in how its magnitude is determined. The transformations that preserve this magnitude are the Lorentz transformations, which include [[Rotation group SO(3)|spatial rotations]] and [[Lorentz transformation#Boost in the x-direction|boosts]] (a change by a constant velocity to another [[inertial reference frame]]).<ref name="BaskalKim2015">{{cite book|author1=Sibel Baskal|author2=Young S Kim|author3=Marilyn E Noz|title=Physics of the Lorentz Group|date=1 November 2015|publisher=Morgan & Claypool Publishers|isbn=978-1-68174-062-1}}</ref>{{rp|ch1}}
+
+Four-vectors describe, for instance, position {{math|''x''{{i sup|''μ''}}}} in spacetime modeled as [[Minkowski space]], a particle's [[four-momentum]] {{math|''p''{{i sup|''μ''</sup>}}}}, the amplitude of the [[electromagnetic four-potential]] {{math|''A''{{i sup|''μ''}}(''x'')}} at a point {{mvar|x}} in spacetime, and the elements of the subspace spanned by the [[gamma matrices]] inside the [[Representation theory of the Lorentz group#Induced representations|Dirac algebra]].
+
+The Lorentz group may be represented by 4×4 matrices {{math|Λ}}. The action of a Lorentz transformation on a general [[contravariant vector|contravariant]] four-vector {{mvar|X}} (like the examples above), regarded as a column vector with [[Cartesian coordinates]] with respect to an [[Inertial frame#Special relativity|inertial frame]] in the entries, is given by
+
+:<math>X^\prime = \Lambda X,</math>
+
+(matrix multiplication) where the components of the primed object refer to the new frame. Related to the examples above that are given as contravariant vectors, there are also the corresponding [[covariant vector]]s {{math|''x''<sub>''μ''</sub>}}, {{math|''p''<sub>''μ''</sub>}} and {{math|''A''<sub>''μ''</sub>(''x'')}}. These transform according to the rule
+
+:<math>X^\prime = {(\Lambda^{-1})}^\mathrm T X,</math>
+
+where {{math|<sup>T</sup>}} denotes the [[matrix transpose]]. This rule is different from the above rule. It corresponds to the [[dual representation]] of the standard representation. However, for the Lorentz group the dual of any representation is [[Representation theory of the Lorentz group#Dual representations|equivalent]] to the original representation. Thus the objects with covariant indices are four-vectors as well.
+
+For an example of a well-behaved four-component object in special relativity that is ''not'' a four-vector, see [[bispinor]]. It is similarly defined, the difference being that the transformation rule under Lorentz transformations is given by a representation other than the standard representation. In this case, the rule reads {{math|''X''{{′}} {{=}} Π(Λ)''X''}}, where {{math|Π(Λ)}} is a 4×4 matrix other than {{math|Λ}}. Similar remarks apply to objects with fewer or more components that are well-behaved under Lorentz transformations. These include [[scalar field|scalar]]s, [[spinor]]s, [[tensor field|tensor]]s and spinor-tensors.
+
+The article considers four-vectors in the context of special relativity. Although the concept of four-vectors also extends to [[general relativity]], some of the results stated in this article require modification in general relativity. <!-- TO DO: provide a GR section for this article! -->
+
+== Notation ==
+
+The notations in this article are: lowercase bold for [[three-dimensional space|three-dimensional]] vectors, hats for three-dimensional [[unit vector]]s, capital bold for [[Spacetime|four dimensional]] vectors (except for the four-gradient), and [[tensor index notation]].
+
+== Four-vector algebra ==
+
+===Four-vectors in a real-valued basis===
+
+A '''four-vector''' ''A'' is a vector with a "timelike" component and three "spacelike" components, and can be written in various equivalent notations:<ref>Relativity DeMystified, D. McMahon, Mc Graw Hill (BSA), 2006, {{ISBN|0-07-145545-0}}</ref>
+
+:<math> \begin{align}  
+\mathbf{A} & = (A^0, \, A^1, \, A^2, \, A^3) \\
+& = A^0\mathbf{E}_0 + A^1 \mathbf{E}_1 + A^2 \mathbf{E}_2 + A^3  \mathbf{E}_3 \\
+& = A^0\mathbf{E}_0 + A^i \mathbf{E}_i \\
+& = A^\alpha\mathbf{E}_\alpha\\
+& = A^\mu  
+\end{align}</math>
+
+where in the last form the magnitude component and [[basis vector]] have been combined to a single element.
+
+The upper indices indicate [[Covariance and contravariance of vectors|contravariant]] components. Here the standard convention is that Latin indices take values for spatial components, so that ''i'' = 1, 2, 3, and Greek indices take values for space ''and time'' components, so ''α'' = 0, 1, 2, 3, used with the [[summation convention]]. The split between the time component and the spatial components is a useful one to make when determining contractions of one four vector with other tensor quantities, such as for calculating Lorentz invariants in inner products (examples are given below), or [[raising and lowering indices]].
+
+In special relativity, the spacelike basis '''E'''<sub>1</sub>, '''E'''<sub>2</sub>, '''E'''<sub>3</sub> and components ''A''<sup>1</sup>, ''A''<sup>2</sup>, ''A''<sup>3</sup> are often [[Cartesian coordinates|Cartesian]] basis and components:
+
+:<math> \begin{align}  
+\mathbf{A} & = (A_t, \, A_x, \, A_y, \, A_z) \\
+& = A_t \mathbf{E}_t + A_x \mathbf{E}_x + A_y \mathbf{E}_y + A_z  \mathbf{E}_z \\
+\end{align}</math>
+
+although, of course, any other basis and components may be used, such as [[spherical polar coordinates]]
+
+:<math> \begin{align}  
+\mathbf{A} & = (A_t, \, A_r, \, A_\theta, \, A_\phi) \\
+& = A_t \mathbf{E}_t + A_r \mathbf{E}_r + A_\theta \mathbf{E}_\theta + A_\phi \mathbf{E}_\phi \\
+\end{align}</math>
+
+or [[cylindrical polar coordinates]],
+
+:<math> \begin{align}  
+\mathbf{A} & = (A_t, \, A_r, \, A_\theta, \, A_z) \\
+& = A_t \mathbf{E}_t + A_r \mathbf{E}_r + A_\theta \mathbf{E}_\theta + A_z \mathbf{E}_z \\
+\end{align}</math>
+
+or any other [[orthogonal coordinates]], or even general [[curvilinear coordinates]]. Note the coordinate labels are always subscripted as labels and are not indices taking numerical values. In general relativity, local curvilinear coordinates in a local basis must be used. Geometrically, a four-vector can still be interpreted as an arrow, but in spacetime - not just space. In relativity, the arrows are drawn as part of  [[Minkowski diagram]] (also called ''spacetime diagram''). In this article, four-vectors will be referred to simply as vectors.
+
+It is also customary to represent the bases by [[column vector]]s:
+
+:<math> \mathbf{E}_0 = \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix} \,,\quad \mathbf{E}_1 = \begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \end{pmatrix} \,,\quad \mathbf{E}_2 = \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix} \,,\quad \mathbf{E}_3 = \begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix} </math>
+
+so that:
+
+:<math> \mathbf{A} = \begin{pmatrix} A^0 \\ A^1 \\ A^2 \\ A^3 \end{pmatrix} </math>
+
+The relation between the [[covariant vector|covariant]] and contravariant coordinates is through the [[Minkowski metric|Minkowski]] [[metric tensor]] (referred to as the metric), ''η'' which [[raising and lowering indices|raises and lowers indices]] as follows:
+
+:<math>A_{\mu} =  \eta_{\mu \nu} A^{\nu} \,, </math>
+
+and in various equivalent notations the covariant components are:
+
+:<math> \begin{align}  
+\mathbf{A} & = (A_0, \, A_1, \, A_2, \, A_3) \\
+& = A_0\mathbf{E}^0 + A_1 \mathbf{E}^1 + A_2 \mathbf{E}^2 + A_3  \mathbf{E}^3 \\
+& = A_0\mathbf{E}^0 + A_i \mathbf{E}^i \\
+& = A_\alpha\mathbf{E}^\alpha\\
+\end{align}</math>
+
+where the lowered index indicates it to be [[Covariance and contravariance of vectors|covariant]]. Often the metric is diagonal, as is the case for [[orthogonal coordinates]] (see [[line element]]), but not in general [[curvilinear coordinates]].
+
+The bases can be represented by [[row vector]]s:
+
+:<math> \mathbf{E}^0 = \begin{pmatrix} 1 & 0 & 0 & 0 \end{pmatrix} \,,\quad \mathbf{E}^1 = \begin{pmatrix} 0 & 1 & 0 & 0 \end{pmatrix} \,,\quad \mathbf{E}^2 = \begin{pmatrix} 0 & 0 & 1 & 0 \end{pmatrix} \,,\quad \mathbf{E}^3 = \begin{pmatrix} 0 & 0 & 0 & 1 \end{pmatrix} </math>
+
+so that:
+
+:<math> \mathbf{A} = \begin{pmatrix} A_0 & A_1 & A_2 & A_3 \end{pmatrix} </math>
+
+The motivation for the above conventions are that the inner product is a scalar, see below for details.
+
+=== Lorentz transformation ===
+
+{{main|Lorentz transformation}}
+
+Given two inertial or rotated [[frame of reference|frames of reference]], a four-vector is defined as a quantity which transforms according to the [[Lorentz transformation]] matrix&nbsp;'''Λ''':
+
+:<math>\mathbf{A}'=\boldsymbol{\Lambda}\mathbf{A}</math>
+
+In index notation, the contravariant and covariant components transform according to, respectively:
+
+:<math>{A'}^\mu = \Lambda^\mu {}_\nu A^\nu \,, \quad{A'}_\mu =  \Lambda_\mu {}^\nu A_\nu</math>
+
+in which the matrix '''Λ''' has components Λ''<sup>μ</sup><sub>ν</sub>'' in row&nbsp;''μ'' and column&nbsp;''ν'', and the [[inverse matrix]] '''Λ'''<sup>−1</sup> has components Λ''<sub>μ</sub><sup>ν</sup>'' in row&nbsp;''μ'' and column&nbsp;''ν''.
+
+For background on the nature of this transformation definition, see [[tensor#Definition|tensor]]. All four-vectors transform in the same way, and this can be generalized to four-dimensional relativistic tensors; see [[Special relativity#Transformations of physical quantities between reference frames|special relativity]].
+
+====Pure rotations about an arbitrary axis ====
+
+For two frames rotated by a fixed angle ''θ'' about an axis defined by the [[unit vector]]:
+
+:<math>\hat{\mathbf{n}} = (\hat{n}_1,\hat{n}_2,\hat{n}_3)\,,</math>
+
+without any boosts, the matrix '''Λ''' has components given by:<ref>{{cite book| author=C.B. Parker| title=McGraw Hill Encyclopaedia of Physics| publisher=McGraw Hill| edition=2nd| page=[https://archive.org/details/mcgrawhillencycl1993park/page/1333 1333]| year=1994| isbn=0-07-051400-3| url-access=registration| url=https://archive.org/details/mcgrawhillencycl1993park/page/1333}}</ref>
+
+:<math>\Lambda_{00} = 1 </math>
+:<math> \Lambda_{0i} = \Lambda_{i0} = 0 </math>
+:<math>\Lambda_{ij} = (\delta_{ij} - \hat{n}_i \hat{n}_j) \cos\theta - \varepsilon_{ijk} \hat{n}_k \sin\theta  + \hat{n}_i \hat{n}_j </math>
+
+where ''δ<sub>ij</sub>'' is the [[Kronecker delta]], and ''ε<sub>ijk</sub>'' is the [[three-dimensional]] [[Levi-Civita symbol]]. The spacelike components of four-vectors are rotated, while the timelike components remain unchanged.
+
+For the case of rotations about the ''z''-axis only, the spacelike part of the Lorentz matrix reduces to the [[rotation matrix]] about the ''z''-axis:
+
+:<math>
+\begin{pmatrix}
+{A'}^0 \\ {A'}^1 \\ {A'}^2 \\ {A'}^3
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & \cos\theta &-\sin\theta & 0 \\
+0 & \sin\theta & \cos\theta & 0 \\
+0 & 0 & 0 & 1 \\
+\end{pmatrix}
+\begin{pmatrix}
+A^0 \\ A^1 \\ A^2 \\ A^3
+\end{pmatrix}\ .
+</math>
+
+====Pure boosts in an arbitrary direction====
+
+[[File:Standard conf.png|right|thumb|300px|Standard configuration of coordinate systems; for a Lorentz boost in the ''x''-direction.]]
+
+For two frames moving at constant relative three-velocity '''v''' (not four-velocity, [[#Four-velocity|see below]]), it is convenient to denote and define the relative velocity in units of ''c'' by:
+
+:<math> \boldsymbol{\beta} = (\beta_1,\,\beta_2,\,\beta_3) = \frac{1}{c}(v_1,\,v_2,\,v_3) = \frac{1}{c}\mathbf{v} \,. </math>
+
+Then without rotations, the matrix '''Λ''' has components given by:<ref>Gravitation, J.B. Wheeler, C. Misner, K.S. Thorne, W.H. Freeman & Co, 1973, ISAN 0-7167-0344-0</ref>
+
+:<math> \begin{align} \Lambda_{00} & = \gamma, \\
+\Lambda_{0i} & = \Lambda_{i0} = - \gamma \beta_{i}, \\
+\Lambda_{ij} & = \Lambda_{ji} = ( \gamma - 1 )\dfrac{\beta_{i}\beta_{j}}{\beta^{2}} + \delta_{ij}= ( \gamma - 1 )\dfrac{v_i v_j}{v^2} + \delta_{ij}, \\
+\end{align}
+\,\!</math>
+
+where the [[Lorentz factor]] is defined by:
+
+:<math> \gamma = \frac{1}{\sqrt{1- \boldsymbol{\beta}\cdot\boldsymbol{\beta}}} \,,</math>
+
+and ''δ<sub>ij</sub>'' is the [[Kronecker delta]]. Contrary to the case for pure rotations, the spacelike and timelike components are mixed together under boosts.
+
+For the case of a boost in the ''x''-direction only, the matrix reduces to;<ref>Dynamics and Relativity, J.R. Forshaw, B.G. Smith, Wiley, 2009, ISAN 978-0-470-01460-8</ref><ref>Relativity DeMystified, D. McMahon, Mc Graw Hill (ASB), 2006, ISAN 0-07-145545-0</ref>
+
+:<math>
+\begin{pmatrix}
+A'^0 \\ A'^1 \\ A'^2 \\ A'^3
+\end{pmatrix}
+=\begin{pmatrix}
+\cosh\phi &-\sinh\phi & 0 & 0 \\
+-\sinh\phi  & \cosh\phi & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 \\
+\end{pmatrix}
+\begin{pmatrix}
+A^0 \\ A^1 \\ A^2 \\ A^3
+\end{pmatrix} 
+</math>
+
+Where the [[rapidity]] ''ϕ'' expression has been used, written in terms of the [[hyperbolic function]]s:
+:<math>
+\gamma = \cosh \phi
+</math>
+
+This Lorentz matrix illustrates the boost to be a ''[[hyperbolic rotation]]'' in four dimensional spacetime, analogous to the circular rotation above in three-dimensional space.
+
+===Properties===
+
+====Linearity====
+
+Four-vectors have the same [[Linear algebra|linearity properties]] as [[Euclidean vector]]s in [[three dimensions]]. They can be added in the usual entrywise way:
+
+:<math>\mathbf{A}+\mathbf{B} = (A^0, A^1, A^2,A^3) + (B^0, B^1, B^2,B^3) = (A^0 + B^0, A^1 + B^1, A^2 + B^2, A^3 + B^3)  </math>
+
+and similarly [[scalar multiplication]] by a [[scalar (mathematics)|scalar]] ''λ'' is defined entrywise by:
+
+:<math>\lambda\mathbf{A} = \lambda(A^0, A^1, A^2,A^3) = (\lambda A^0, \lambda A^1, \lambda A^2, \lambda A^3) </math>
+
+Then subtraction is the inverse operation of addition, defined entrywise by:
+
+:<math>\mathbf{A}+(-1)\mathbf{B} = (A^0, A^1, A^2,A^3) + (-1)(B^0, B^1, B^2,B^3) = (A^0 - B^0, A^1 - B^1, A^2 - B^2, A^3 - B^3)  </math>
+
+====Minkowski tensor====
+
+{{See also|spacetime interval}}
+
+Applying the [[Minkowski tensor]] ''η<sub>μν</sub>'' to two four-vectors '''A''' and '''B''', writing the result in [[dot product]] notation, we have, using [[Einstein notation]]:
+
+:<math>\mathbf{A} \cdot \mathbf{B} = A^{\mu} \eta_{\mu \nu} B^{\nu} </math>
+
+It is convenient to rewrite the definition in [[matrix (mathematics)|matrix]] form:
+
+:<math>\mathbf{A \cdot B} = \begin{pmatrix} A^0 & A^1 & A^2 & A^3 \end{pmatrix} \begin{pmatrix} \eta_{00} & \eta_{01} & \eta_{02} & \eta_{03} \\ \eta_{10} & \eta_{11} & \eta_{12} & \eta_{13} \\ \eta_{20} & \eta_{21} & \eta_{22} & \eta_{23} \\ \eta_{30} & \eta_{31} & \eta_{32} & \eta_{33} \end{pmatrix} \begin{pmatrix} B^0 \\ B^1 \\ B^2 \\ B^3 \end{pmatrix} </math>
+
+in which case ''η<sub>μν</sub>'' above is the entry in row ''μ'' and column ''ν'' of the Minkowski metric as a square matrix. The Minkowski metric is not a [[Euclidean metric]], because it is indefinite (see [[metric signature]]). A number of other expressions can be used because the metric tensor can raise and lower the components of '''A''' or '''B'''. For contra/co-variant components of '''A''' and co/contra-variant components of '''B''', we have:
+
+:<math>\mathbf{A} \cdot \mathbf{B} = A^{\mu} \eta_{\mu \nu} B^{\nu} = A_{\nu} B^{\nu} = A^{\mu} B_{\mu} </math>
+
+so in the matrix notation:
+
+:<math>\mathbf{A \cdot B} = \begin{pmatrix} A_0 & A_1 & A_2 & A_3 \end{pmatrix} \begin{pmatrix} B^0 \\ B^1 \\ B^2 \\ B^3 \end{pmatrix} = \begin{pmatrix} B_0 & B_1 & B_2 & B_3 \end{pmatrix} \begin{pmatrix} A^0 \\ A^1 \\ A^2 \\ A^3 \end{pmatrix} </math>
+
+while for '''A''' and '''B''' each in covariant components:
+
+:<math>\mathbf{A} \cdot \mathbf{B} = A_{\mu} \eta^{\mu \nu} B_{\nu} </math>
+
+with a similar matrix expression to the above.
+
+Applying the Minkowski tensor to a four-vector '''A''' with itself we get:
+
+:<math>\mathbf{A \cdot A} = A^\mu \eta_{\mu\nu} A^\nu </math>
+
+which, depending on the case, may be considered the square, or its negative, of the length of the vector.
+
+Following are two common choices for the metric tensor in the [[Minkowski space#Standard basis|standard basis]] (essentially Cartesian coordinates). If orthogonal coordinates are used, there would be scale factors along the diagonal part of the spacelike part of the metric, while for general curvilinear coordinates the entire spacelike part of the metric would have components dependent on the curvilinear basis used.
+
+=====Standard basis, (+−−−) signature=====
+
+In the (+−−−) [[metric signature]], evaluating the [[Einstein notation|summation over indices]] gives:
+
+:<math>\mathbf{A} \cdot \mathbf{B} =  A^0 B^0 - A^1 B^1 - A^2 B^2 - A^3 B^3  </math>
+
+while in matrix form:
+
+:<math>\mathbf{A \cdot B} = \begin{pmatrix} A^0 & A^1 & A^2 & A^3 \end{pmatrix} \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix} \begin{pmatrix} B^0 \\ B^1 \\ B^2 \\ B^3 \end{pmatrix} </math>
+
+It is a recurring theme in special relativity to take the expression
+
+:<math> \mathbf{A}\cdot\mathbf{B} = A^0 B^0 - A^1 B^1 - A^2 B^2 - A^3 B^3 = C</math>
+
+in one [[Frame of reference|reference frame]], where ''C'' is the value of the inner product in this frame, and:
+
+:<math> \mathbf{A}'\cdot\mathbf{B}' = {A'}^0 {B'}^0 - {A'}^1 {B'}^1 - {A'}^2 {B'}^2 - {A'}^3 {B'}^3 = C' </math>
+
+in another frame, in which ''C''&prime; is the value of the inner product in this frame. Then since the inner product is an invariant, these must be equal:
+
+:<math> \mathbf{A}\cdot\mathbf{B} = \mathbf{A}'\cdot\mathbf{B}' </math>
+
+that is:
+
+:<math> C = A^0 B^0 - A^1 B^1 - A^2 B^2 - A^3 B^3 = {A'}^0 {B'}^0 - {A'}^1 {B'}^1 - {A'}^2 {B'}^2 - {A'}^3{B'}^3 </math>
+
+Considering that physical quantities in relativity are four-vectors, this equation has the appearance of a "[[Conservation law (physics)|conservation law]]", but there is no "conservation" involved. The primary significance of the Minkowski inner product is that for any two four-vectors, its value is [[invariant (physics)|invariant]] for all observers; a change of coordinates does not result in a change in value of the inner product. The components of the four-vectors change from one frame to another; '''A''' and '''A'''&prime; are connected by a [[Lorentz transformation]], and similarly for '''B''' and '''B'''&prime;, although the inner products are the same in all frames. Nevertheless, this type of expression is exploited in relativistic calculations on a par with conservation laws, since the magnitudes of components can be determined without explicitly performing any Lorentz transformations. A particular example is with energy and momentum in the [[energy-momentum relation]] derived from the [[four-momentum]] vector (see also below).
+
+In this signature we have:
+:<math> \mathbf{A \cdot A} = (A^0)^2 - (A^1)^2 - (A^2)^2 - (A^3)^2 </math>
+
+With the signature (+−−−), four-vectors may be classified as either [[Minkowski space#Causal structure|spacelike]] if <math>\mathbf{A \cdot A} < 0</math>, [[Minkowski space#Causal structure|timelike]] if <math>\mathbf{A \cdot A} > 0</math>, and [[Minkowski space#Causal structure|null vector]]s if <math>\mathbf{A \cdot A} = 0</math>.
+
+=====Standard basis, (−+++) signature=====
+
+Some authors define ''η'' with the opposite sign, in which case we have the (−+++) metric signature. Evaluating the summation with this signature:
+
+:<math>\mathbf{A \cdot B} = - A^0 B^0 + A^1 B^1 + A^2 B^2 + A^3 B^3 </math>
+
+while the matrix form is:
+
+:<math>\mathbf{A \cdot B} = \left( \begin{matrix}A^0 & A^1 & A^2 & A^3 \end{matrix} \right) 
+\left( \begin{matrix} -1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{matrix} \right)
+\left( \begin{matrix}B^0 \\ B^1 \\ B^2 \\ B^3 \end{matrix} \right) </math>
+
+Note that in this case, in one frame:
+
+:<math> \mathbf{A}\cdot\mathbf{B} = - A^0 B^0 + A^1 B^1 + A^2 B^2 + A^3 B^3 = -C </math>
+
+while in another:
+
+:<math> \mathbf{A}'\cdot\mathbf{B}' = - {A'}^0 {B'}^0 + {A'}^1 {B'}^1 + {A'}^2 {B'}^2 + {A'}^3 {B'}^3 = -C'</math>
+
+so that:
+
+:<math> -C = - A^0 B^0 + A^1 B^1 + A^2 B^2 + A^3 B^3 = - {A'}^0 {B'}^0 + {A'}^1 {B'}^1 + {A'}^2 {B'}^2 + {A'}^3{B'}^3</math>
+
+which is equivalent to the above expression for ''C'' in terms of '''A''' and '''B'''. Either convention will work. With the Minkowski metric defined in the two ways above, the only difference between covariant and contravariant four-vector components are signs, therefore the signs depend on which sign convention is used.
+
+We have:
+
+:<math> \mathbf{A \cdot A} = - (A^0)^2 + (A^1)^2 + (A^2)^2 + (A^3)^2 </math>
+
+With the signature (−+++), four-vectors may be classified as either [[Minkowski space#Causal structure|spacelike]] if <math>\mathbf{A \cdot A} > 0</math>, [[Minkowski space#Causal structure|timelike]] if <math>\mathbf{A \cdot A} < 0</math>, and [[Minkowski space#Causal structure|null]] if <math>\mathbf{A \cdot A} = 0</math>.
+
+=====Dual vectors=====
+
+Applying the Minkowski tensor is often expressed as the effect of the [[dual space#Ailinear products and dual spaces|dual vector]] of one vector on the other:
+
+:<math>\mathbf{A \cdot B} = A^*(\mathbf{B}) = A{_\nu}B^{\nu}. </math>
+
+Here the ''A<sub>ν</sub>''s are the components of the dual vector '''A'''* of '''A''' in the [[dual basis]] and called the [[Covariance and contravariance of vectors|covariant]] coordinates of '''A''', while the original ''A<sup>ν</sup>'' components are called the [[Covariance and contravariance of vectors|contravariant]] coordinates.
+
+== Four-vector calculus ==
+
+===Derivatives and differentials===
+
+In special relativity (but not general relativity), the [[derivative]] of a four-vector with respect to a scalar ''λ'' (invariant) is itself a four-vector. It is also useful to take the [[differential of a function|differential]] of the four-vector, ''d'''''A''' and divide it by the differential of the scalar, ''dλ'':
+
+:<math>\underset{\text{differential}}{d\mathbf{A}} = \underset{\text{derivative}}{\frac{d\mathbf{A}}{d\lambda}} \underset{\text{differential}}{d\lambda} </math>
+
+where the contravariant components are:
+
+:<math> d\mathbf{A} = (dA^0, dA^1, dA^2, dA^3) </math>
+
+while the covariant components are:
+
+:<math> d\mathbf{A} = (dA_0, dA_1, dA_2, dA_3) </math>
+
+In relativistic mechanics, one often takes the differential of a four-vector and divides by the differential in [[proper time]] (see below).
+
+==Fundamental four-vectors==
+
+===Four-position===
+
+A point in [[Minkowski space]] is a time and spatial position, called an "event", or sometimes the position four-vector or four-position or 4-position, described in some reference frame by a set of four coordinates:
+
+:<math> \mathbf{R}= \left(ct, \mathbf{r}\right) </math>
+
+where '''r''' is the [[three-dimensional space]] [[position vector]]. If '''r''' is a function of coordinate time ''t'' in the same frame, i.e. '''r''' = '''r'''(''t''), this corresponds to a sequence of events as ''t'' varies. The definition ''R''<sup>0</sup> = ''ct'' ensures that all the coordinates have the same units (of distance).<ref>Jean-Bernard Zuber & Claude Itzykson, ''Quantum Field Theory'', pg 5 , {{ISBN|0-07-032071-3}}</ref><ref>[[Charles W. Misner]], [[Kip S. Thorne]] & [[John A. Wheeler]],''Gravitation'', pg 51, {{ISBN|0-7167-0344-0}}</ref><ref>[[George Sterman]], ''An Introduction to Quantum Field Theory'', pg 4 , {{ISBN|0-521-31132-2}}</ref> These coordinates are the components of the ''position four-vector'' for the event.
+The ''displacement four-vector'' is defined to be an "arrow" linking two events:
+
+:<math> \Delta \mathbf{R} = \left(c\Delta t, \Delta \mathbf{r} \right) </math>
+
+For the [[differential (infinitesimal)|differential]] four-position on a world line we have, using [[Minkowski space#Minkowski tensor|a norm notation]]:
+
+:<math>\|d\mathbf{R}\|^2 = \mathbf{dR \cdot dR} = dR^\mu dR_\mu=c^2d\tau^2=ds^2 \,,</math>
+
+defining the differential [[line element]] d''s'' and differential proper time increment d''τ'', but this "norm" is also:
+
+:<math>\|d\mathbf{R}\|^2 = (cdt)^2 - d\mathbf{r}\cdot d\mathbf{r} \,,</math>
+
+so that:
+
+:<math> (c d\tau)^2 = (cdt)^2 - d\mathbf{r}\cdot d\mathbf{r} \,.</math>
+
+When considering physical phenomena, differential equations arise naturally; however, when considering space and [[time derivative]]s of functions, it is unclear which reference frame these derivatives are taken with respect to. It is agreed that time derivatives are taken with respect to the [[proper time]] <math>\tau</math>. As proper time is an invariant, this guarantees that the proper-time-derivative of any four-vector is itself a four-vector. It is then important to find a relation between this proper-time-derivative and another time derivative (using the [[coordinate time]] ''t'' of an inertial reference frame). This relation is provided by taking the above differential invariant spacetime interval, then dividing by (''cdt'')<sup>2</sup> to obtain:
+
+:<math> \left(\frac{cd\tau}{cdt}\right)^2 = 1 - \left(\frac{d\mathbf{r}}{cdt}\cdot \frac{d\mathbf{r}}{cdt}\right) = 1 - \frac{\mathbf{u}\cdot\mathbf{u}}{c^2} = \frac{1}{\gamma(\mathbf{u})^2} \,,</math>
+
+where '''u''' = ''d'''''r'''/''dt'' is the coordinate 3-[[velocity]] of an object measured in the same frame as the coordinates ''x'', ''y'', ''z'', and [[coordinate time]] ''t'', and
+
+:<math> \gamma(\mathbf{u}) = \frac{1}{\sqrt{1- \frac{\mathbf{u}\cdot\mathbf{u}}{c^2}}}</math>
+
+is the [[Lorentz factor]]. This provides a useful relation between the differentials in coordinate time and proper time:
+
+:<math> dt = \gamma(\mathbf{u})d\tau \,.</math>
+
+This relation can also be found from the time transformation in the [[Lorentz transformation]]s.
+
+Important four-vectors in relativity theory can be defined by applying this differential <math>\frac{d}{d\tau}</math>.
+
+===Four-gradient===
+
+Considering that [[partial derivative]]s are [[linear operator]]s, one can form a [[four-gradient]] from the partial [[time derivative]] {{math|∂}}/{{math|∂}}''t'' and the spatial [[gradient]] ∇. Using the standard basis, in index and abbreviated notations, the contravariant components are:
+
+:<math> \begin{align}  
+\boldsymbol{\partial} & = \left(\frac{\partial }{\partial x_0}, \, -\frac{\partial }{\partial x_1}, \, -\frac{\partial }{\partial x_2}, \, -\frac{\partial }{\partial x_3} \right) \\
+& = (\partial^0, \, - \partial^1, \, - \partial^2, \, - \partial^3) \\
+& = \mathbf{E}_0\partial^0 - \mathbf{E}_1\partial^1 - \mathbf{E}_2\partial^2 - \mathbf{E}_3\partial^3 \\
+& = \mathbf{E}_0\partial^0 - \mathbf{E}_i\partial^i \\
+& = \mathbf{E}_\alpha \partial^\alpha \\
+& = \left(\frac{1}{c}\frac{\partial}{\partial t} , \, - \nabla \right) \\
+& = \left(\frac{\partial_t}{c},- \nabla \right) \\
+& = \mathbf{E}_0\frac{1}{c}\frac{\partial}{\partial t} - \nabla \\
+\end{align}</math>
+
+Note the basis vectors are placed in front of the components, to prevent confusion between taking the derivative of the basis vector, or simply indicating the partial derivative is a component of this four-vector. The covariant components are:
+
+:<math> \begin{align}
+\boldsymbol{\partial} & = \left(\frac{\partial }{\partial x^0}, \, \frac{\partial }{\partial x^1}, \, \frac{\partial }{\partial x^2}, \, \frac{\partial }{\partial x^3} \right) \\
+& = (\partial_0, \, \partial_1, \, \partial_2, \, \partial_3) \\
+& = \mathbf{E}^0\partial_0 + \mathbf{E}^1\partial_1 + \mathbf{E}^2\partial_2 + \mathbf{E}^3\partial_3 \\
+& = \mathbf{E}^0\partial_0 + \mathbf{E}^i\partial_i \\
+& = \mathbf{E}^\alpha \partial_\alpha \\
+& = \left(\frac{1}{c}\frac{\partial}{\partial t} , \, \nabla \right) \\
+& = \left(\frac{\partial_t}{c}, \nabla \right) \\
+& = \mathbf{E}^0\frac{1}{c}\frac{\partial}{\partial t} + \nabla \\
+\end{align}</math>
+
+Since this is an operator, it doesn't have a "length", but evaluating the inner product of the operator with itself gives another operator:
+
+:<math>\partial^\mu \partial_\mu = \frac{1}{c^2}\frac{\partial^2}{\partial t^2} - \nabla^2 = \frac{{\partial_t}^2}{c^2} - \nabla^2</math>
+
+called the [[D'Alembert operator]].
+
+==Kinematics==
+
+=== Four-velocity ===
+{{Main|Four-velocity}}
+
+The [[four-velocity]] of a particle is defined by:
+
+:<math>\mathbf{U} = \frac{d\mathbf{X}}{d \tau}= \frac{d\mathbf{X}}{dt}\frac{dt}{d \tau} = \gamma(\mathbf{u})\left(c, \mathbf{u} \right),</math>
+
+Geometrically, '''U''' is a normalized vector tangent to the [[world line]] of the particle. Using the differential of the four-position, the magnitude of the four-velocity can be obtained:
+
+:<math> \|\mathbf{U}\|^2 = U^\mu U_\mu = \frac{dX^\mu }{d\tau} \frac{dX_\mu }{d\tau}= \frac{dX^\mu dX_\mu }{d\tau^2} = c^2 \,,</math>
+
+in short, the magnitude of the four-velocity for any object is always a fixed constant:
+
+:<math> \| \mathbf{U} \|^2 = c^2 \,</math>
+
+The norm is also:
+
+:<math> \|\mathbf{U}\|^2 = {\gamma(\mathbf{u})}^2 \left( c^2 - \mathbf{u}\cdot\mathbf{u} \right) \,,</math>
+
+so that:
+
+:<math> c^2 = {\gamma(\mathbf{u})}^2 \left( c^2 - \mathbf{u}\cdot\mathbf{u} \right) \,,</math>
+
+which reduces to the definition of the [[Lorentz factor]].
+
+Units of four-velocity are m/s in [[International System of Units|SI]] and 1 in the [[geometrized unit system]].  Four-velocity is a contravariant vector.
+
+=== Four-acceleration ===
+
+The [[four-acceleration]] is given by:
+
+:<math>\mathbf{A} =\frac{d\mathbf{U} }{d \tau} = \gamma(\mathbf{u}) \left(\frac{d{\gamma}(\mathbf{u})}{dt} c, \frac{d{\gamma}(\mathbf{u})}{dt} \mathbf{u} + \gamma(\mathbf{u}) \mathbf{a} \right).</math>
+
+where '''a''' = ''d'''''u'''/''dt'' is the coordinate 3-acceleration. Since the magnitude of '''U''' is a constant, the four acceleration is orthogonal to the four velocity, i.e. the Minkowski inner product of the four-acceleration and the four-velocity is zero:
+
+:<math> \mathbf{A}\cdot\mathbf{U} = A^\mu  U_\mu  = \frac{dU^\mu}{d\tau} U_\mu = \frac{1}{2} \, \frac{d}{d\tau} (U^\mu U_\mu) = 0  \,</math>
+
+which is true for all world lines. The geometric meaning of four-acceleration is the [[curvature vector]] of the world line in Minkowski space.
+
+==Dynamics==
+
+=== Four-momentum ===
+
+For a massive particle of [[rest mass]] (or [[invariant mass]]) ''m''<sub>0</sub>, the [[four-momentum]] is given by:
+
+:<math>\mathbf{P} = m_0 \mathbf{U} = m_0\gamma(\mathbf{u})(c,  \mathbf{u}) = (E/c, \mathbf{p}) </math>
+
+where the total energy of the moving particle is:
+
+:<math>E = \gamma(\mathbf{u}) m_0c^2  </math>
+
+and the total [[relativistic momentum]] is:
+
+:<math>\mathbf{p} = \gamma(\mathbf{u}) m_0 \mathbf{u} </math>
+
+Taking the inner product of the four-momentum with itself:
+
+:<math> \|\mathbf{P}\|^2 = P^\mu P_\mu = m_0^2 U^\mu U_\mu = m_0^2 c^2</math>
+
+and also:
+
+:<math> \|\mathbf{P}\|^2 = \frac{E^2}{c^2} - \mathbf{p}\cdot\mathbf{p} </math>
+
+which leads to the [[energy–momentum relation]]:
+
+:<math>E^2 = c^2 \mathbf{p}\cdot\mathbf{p} + (m_0c^2)^2 \,.</math>
+
+This last relation is useful [[relativistic mechanics]], essential in [[relativistic quantum mechanics]] and [[relativistic quantum field theory]], all with applications to [[particle physics]].
+
+=== Four-force ===
+
+The [[four-force]] acting on a particle is defined analogously to the 3-force as the time derivative of 3-momentum in [[Newton's second law]]:
+
+:<math> \mathbf{F} = \frac {d \mathbf{P}} {d \tau} = \gamma(\mathbf{u})\left(\frac{1}{c}\frac{dE}{dt},\frac{d\mathbf{p}}{dt}\right) = \gamma(\mathbf{u})(P/c,\mathbf{f}) </math>
+
+where ''P'' is the [[power (physics)|power]] transferred to move the particle, and '''f''' is the 3-force acting on the particle. For a particle of constant invariant mass ''m''<sub>0</sub>, this is equivalent to
+
+:<math> \mathbf{F} = m_0 \mathbf{A} = m_0\gamma(\mathbf{u})\left( \frac{d{\gamma}(\mathbf{u})}{dt} c, \left(\frac{d{\gamma}(\mathbf{u})}{dt} \mathbf{u} + \gamma(\mathbf{u}) \mathbf{a}\right) \right) </math>
+
+An invariant derived from the four-force is:
+
+:<math> \mathbf{F}\cdot\mathbf{U} = F^\mu U_\mu = m_0 A^\mu U_\mu = 0</math>
+
+from the above result.
+
+==Thermodynamics==
+
+{{see also|Relativistic heat conduction}}
+
+===Four-heat flux===
+
+The four-heat flux vector field, is essentially similar to the 3d [[heat flux]] vector field '''q''', in the local frame of the fluid:<ref>{{Cite journal |first=Y. M. |last=Ali |first2=L. C. |last2=Zhang |title=Relativistic heat conduction |journal=Int. J. Heat Mass Trans. |volume=48 |year=2005 |issue=12 |doi=10.1016/j.ijheatmasstransfer.2005.02.003 }}</ref>
+
+:<math>\mathbf{Q} = -k \boldsymbol{\partial} T = - k\left( \frac{1}{c}\frac{\partial T}{\partial t}, \nabla T\right) </math>
+
+where ''T'' is [[absolute temperature]] and ''k'' is [[thermal conductivity]].
+
+===Four-baryon number flux===
+
+The flux of baryons is:<ref>{{Cite book|title=Gravitation|url=https://archive.org/details/gravitation00misn_003|url-access=limited|author1=J.A. Wheeler |author2=C. Misner |author3=K.S. Thorne |publisher=W.H. Freeman & Co|year=1973|pages=[https://archive.org/details/gravitation00misn_003/page/n582 558]–559|isbn=0-7167-0344-0}}</ref>
+
+:<math>\mathbf{S}= n\mathbf{U}</math>
+
+where ''n'' is the [[number density]] of [[baryon]]s in the local [[rest frame]] of the baryon fluid (positive values for baryons, negative for [[antiparticle|anti]]baryons), and '''U''' the [[four-velocity]] field (of the fluid) as above.
+
+===Four-entropy===
+
+The four-[[entropy]] vector is defined by:<ref>{{Cite book|title=Gravitation|url=https://archive.org/details/gravitation00misn_003|url-access=limited|author1=J.A. Wheeler |author2=C. Misner |author3=K.S. Thorne |publisher=W.H. Freeman & Co|year=1973|page=[https://archive.org/details/gravitation00misn_003/page/n591 567]|isbn=0-7167-0344-0}}</ref>
+
+:<math>\mathbf{s}= s\mathbf{S} + \frac{\mathbf{Q}}{T}</math>
+
+where ''s'' is the entropy per baryon, and ''T'' the [[absolute temperature]], in the local rest frame of the fluid.<ref>{{Cite book|title=Gravitation|url=https://archive.org/details/gravitation00misn_003|url-access=limited|author1=J.A. Wheeler |author2=C. Misner |author3=K.S. Thorne |publisher=W.H. Freeman & Co|year=1973|page=[https://archive.org/details/gravitation00misn_003/page/n582 558]|isbn=0-7167-0344-0}}</ref>
+
+==Electromagnetism==
+
+Examples of four-vectors in [[electromagnetism]] include the following.
+
+===Four-current===
+
+The electromagnetic [[four-current]] (or more correctly a four-current density)<ref>{{cite book
+ |title=Introduction to Special Relativity
+ |edition=2nd
+ |first1=Wolfgang
+ |last1=Rindler
+ |publisher=Oxford Science Publications
+ |year=1991
+ |isbn=0-19-853952-5
+ |pages=103–107
+ |url=https://books.google.com/books?id=YKUPAQAAMAAJ}}</ref> is defined by
+
+:<math> \mathbf{J} = \left( \rho c, \mathbf{j} \right) </math>
+
+formed from the [[current density]] '''j''' and [[charge density]] ''ρ''.
+
+===Four-potential===
+
+The [[electromagnetic four-potential]] (or more correctly a four-EM vector potential) defined by
+
+:<math> \mathbf{A} = \left( \frac{\phi}{c}, \mathbf{a} \right) </math>
+
+formed from the [[vector potential]] '''a''' and the scalar potential ''ϕ''.
+
+The four-potential is not uniquely determined, because it depends on a choice of [[Coulomb gauge#Coulomb gauge|gauge]].
+
+In the [[wave equation]] for the electromagnetic field:
+:<math> (\mathbf{\partial} \cdot \mathbf{\partial}) \mathbf{A} = 0 </math> {in vacuum}
+:<math>(\mathbf{\partial} \cdot \mathbf{\partial}) \mathbf{A} = \mu_0 \mathbf{J}</math> {with a [[four-current]] source and using the [[Lorenz gauge condition]] <math>(\mathbf{\partial} \cdot \mathbf{A}) = 0</math>}
+
+==Waves==
+
+===Four-frequency===
+
+A photonic [[plane wave]] can be described by the [[four-frequency]] defined as
+
+:<math>\mathbf{N} = \nu\left(1 , \hat{\mathbf{n}} \right)</math>
+
+where ''ν'' is the frequency of the wave and <math>\hat{\mathbf{n}}</math> is a [[unit vector]] in the travel direction of the wave. Now:
+
+:<math> \|\mathbf{N}\| = N^\mu N_\mu = \nu ^2 \left(1 - \hat{\mathbf{n}}\cdot\hat{\mathbf{n}}\right) = 0 </math>
+
+so the four-frequency of a photon is always a null vector.
+
+===Four-wavevector===
+
+{{see also|De Broglie relation}}
+
+The quantities reciprocal to time ''t'' and space '''r''' are the [[angular frequency]] ''ω'' and [[wave vector]] '''k''', respectively. They form the components of the four-wavevector or wave four-vector:
+
+:<math>\mathbf{K} = \left(\frac{\omega}{c}, \vec{\mathbf{k}} \right) = \left(\frac{\omega}{c}, \frac{\omega}{v_p}\mathbf{\hat{n}} \right) \,. </math>
+
+A wave packet of nearly [[monochromatic]] light can be described by:
+
+:<math>\mathbf{K} = \frac{2\pi}{c}\mathbf{N} = \frac{2\pi}{c} \nu(1,\hat{\mathbf{n}}) = \frac{\omega}{c}\left( 1 , \hat{\mathbf{n}} \right) \,. </math>
+
+The de Broglie relations then showed that four-wavevector applied to [[matter wave]]s as well as to light waves. :
+
+:<math>\mathbf{P} = \hbar \mathbf{K} = \left(\frac{E}{c},\vec{p}\right) = \hbar \left(\frac{\omega}{c},\vec{k} \right)\,.</math>
+
+yielding <math>E = \hbar \omega</math> and <math>\vec{p} = \hbar \vec{k}</math>, where ''ħ'' is the [[Planck constant]] divided by 2''π''.
+
+The square of the norm is:
+:<math>\| \mathbf{K} \|^2 = K^\mu K_\mu = \left(\frac{\omega}{c}\right)^2 - \mathbf{k}\cdot\mathbf{k}\,,</math>
+
+and by the de Broglie relation:
+
+:<math> \| \mathbf{K} \|^2 = \frac{1}{\hbar^2} \| \mathbf{P} \|^2 = \left(\frac{m_0 c}{\hbar}\right)^2 \,,</math>
+
+we have the matter wave analogue of the energy–momentum relation:
+
+:<math>\left(\frac{\omega}{c}\right)^2 - \mathbf{k}\cdot\mathbf{k} = \left(\frac{m_0 c}{\hbar}\right)^2 \,.</math>
+
+Note that for massless particles, in which case {{nowrap|1=''m''<sub>0</sub> = 0}}, we have:
+
+:<math>\left(\frac{\omega}{c}\right)^2 = \mathbf{k}\cdot\mathbf{k} \,,</math>
+
+or ||'''k'''|| = ''ω''/''c''. Note this is consistent with the above case; for photons with a 3-wavevector of modulus ''ω''/''c'', in the direction of wave propagation defined by the unit vector <math>\hat{\mathbf{n}}</math>.
+
+==Quantum theory==
+
+===Four-probability current===
+
+In [[quantum mechanics]], the four-[[probability current]] or probability four-current is analogous to the [[Four-current|electromagnetic four-current]]:<ref>Vladimir G. Ivancevic, Tijana T. Ivancevic (2008) ''Quantum leap: from Dirac and Feynman, across the universe, to human body and mind''. World Scientific Publishing Company, {{ISBN|978-981-281-927-7}}, [https://books.google.com/books?id=qyK95FevVbIC&pg=PA41 p. 41]</ref>
+:<math>\mathbf{J} = (\rho c, \mathbf{j}) </math>
+
+where ''ρ'' is the [[probability density function]] corresponding to the time component, and '''j''' is the [[probability current]] vector. In non-relativistic quantum mechanics, this current is always well defined because the expressions for density and current are positive definite and can admit a probability interpretation. In [[relativistic quantum mechanics]] and [[quantum field theory]], it is not always possible to find a current, particularly when interactions are involved.
+
+Replacing the energy by the [[energy operator]] and the momentum by the [[momentum operator]] in the four-momentum, one obtains the [[four-momentum operator]], used in [[relativistic wave equation]]s.
+
+===Four-spin===
+
+The [[four-spin]] of a particle is defined in the rest frame of a particle to be
+
+:<math>\mathbf{S} = (0,\mathbf{s}) </math>
+
+where '''s''' is the [[spin (physics)|spin]] pseudovector. In quantum mechanics, not all three components of this vector are simultaneously measurable, only one component is. The timelike component is zero in the particle's rest frame, but not in any other frame. This component can be found from an appropriate Lorentz transformation.
+
+The norm squared is the (negative of the) magnitude squared of the spin, and according to quantum mechanics we have
+
+:<math>\|\mathbf{S}\|^2 = - |\mathbf{s}|^2 = -\hbar^2s(s+1)</math>
+
+This value is observable and quantized, with ''s'' the [[spin quantum number]] (not the magnitude of the spin vector).
+
+==Other formulations==
+
+===Four-vectors in the algebra of physical space===
+
+A four-vector ''A'' can also be defined in using the [[Pauli matrices]] as a [[basis (linear algebra)|basis]], again in various equivalent notations:<ref>{{cite book |pages= 1142–1143|author1=J.A. Wheeler |author2=C. Misner |author3=K.S. Thorne | title=[[Gravitation (book)|Gravitation]]| publisher=W.H. Freeman & Co| year=1973 | isbn=0-7167-0344-0}}</ref>
+
+:<math> \begin{align}  
+\mathbf{A} & = (A^0, \, A^1, \, A^2, \, A^3) \\
+& = A^0\boldsymbol{\sigma}_0 + A^1 \boldsymbol{\sigma}_1 + A^2 \boldsymbol{\sigma}_2 + A^3  \boldsymbol{\sigma}_3 \\
+& = A^0\boldsymbol{\sigma}_0 + A^i \boldsymbol{\sigma}_i \\
+& = A^\alpha\boldsymbol{\sigma}_\alpha\\
+\end{align}</math>
+
+or explicitly:
+
+:<math> \begin{align}  
+\mathbf{A} & = A^0\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} + A^1 \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} + A^2 \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} + A^3  \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \\
+& = \begin{pmatrix} A^0 + A^3 & A^1 -i A^2 \\ A^1 + i A^2 & A^0 - A^3 \end{pmatrix}
+\end{align}</math>
+
+and in this formulation, the four-vector is represented as a [[Hermitian matrix]] (the [[matrix transpose]] and [[complex conjugate]] of the matrix leaves it unchanged), rather than a real-valued column or row vector. The [[determinant]] of the matrix is the modulus of the four-vector, so the determinant is an invariant:
+
+:<math> \begin{align}  
+|\mathbf{A}| & = \begin{vmatrix} A^0 + A^3 & A^1 -i A^2 \\ A^1 + i A^2 & A^0 - A^3 \end{vmatrix} \\
+& = (A^0 + A^3)(A^0 - A^3)  - (A^1 -i A^2)(A^1 + i A^2) \\
+& = (A^0)^2 - (A^1)^2 - (A^2)^2 - (A^3)^2
+\end{align}</math>
+
+This idea of using the Pauli matrices as [[basis vector]]s is employed in the [[algebra of physical space]], an example of a [[Clifford algebra]].
+
+===Four-vectors in spacetime algebra===
+
+In [[spacetime algebra]], another example of Clifford algebra, the [[gamma matrices]] can also form a [[basis (linear algebra)|basis]]. (They are also called the Dirac matrices, owing to their appearance in the [[Dirac equation]]). There is more than one way to express the gamma matrices, detailed in that main article.
+
+The [[Feynman slash notation]] is a shorthand for a four-vector '''A''' contracted with the gamma matrices:
+
+:<math>\mathbf{A}\!\!\!\!/ = A_\alpha \gamma^\alpha = A_0 \gamma^0 + A_1 \gamma^1 + A_2 \gamma^2 + A_3 \gamma^3 </math>
+
+The four-momentum contracted with the gamma matrices is an important case in [[relativistic quantum mechanics]] and [[relativistic quantum field theory]]. In the Dirac equation and other [[relativistic wave equation]]s, terms of the form:
+
+:<math>\mathbf{P}\!\!\!\!/ = P_\alpha \gamma^\alpha = P_0 \gamma^0 + P_1 \gamma^1 + P_2 \gamma^2 + P_3 \gamma^3 = \dfrac{E}{c} \gamma^0 - p_x \gamma^1 - p_y \gamma^2 - p_z \gamma^3 </math>
+
+appear, in which the energy ''E'' and momentum components {{nowrap|(''p<sub>x</sub>'', ''p<sub>y</sub>'', ''p<sub>z</sub>'')}} are replaced by their respective [[operator (physics)|operator]]s.
+
+==See also==
+*[[Relativistic mechanics]]
+*[[paravector]]
+*[[wave vector]]
+*[[Dust (relativity)]] for the number-flux four-vector
+*[[Basic introduction to the mathematics of curved spacetime]]
+*[[Minkowski space]]
+
+== References ==
+{{reflist}}
+*Rindler, W. ''Introduction to Special Relativity (2nd edn.)'' (1991) Clarendon Press Oxford {{ISBN|0-19-853952-5}}
+
+<!--Categories-->
+[[Category:Four-vectors| ]]
+[[Category:Minkowski spacetime]]
+[[Category:Theory of relativity]]
+[[Category:Concepts in physics]]
+[[Category:Vectors (mathematics and physics)]]

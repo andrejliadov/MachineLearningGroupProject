@@ -1,0 +1,48 @@
+'''Communication, navigation and surveillance''' ('''CNS''') are the main functions that form the infrastructure for [[air traffic management]],
+<ref  name="CNS/ATM">{{cite  news|title=CNS/ATM|publisher=[[Eurocontrol]]|accessdate=14 August  2017|url=http://www.eurocontrol.int/dossiers/communications-navigation-and-surveillance}}</ref><ref name="CNS">{{cite news|title=CNS|publisher=[[Airports Authority  of India]]|accessdate=14 August  2017|url=http://www.aai.aero/public_notices/aaisite_test/faq_cns.jsp}}</ref> and ensure that air traffic is safe and efficient.<ref name="Communication navigation and surveillance">{{cite  news|title=Communication navigation and surveillance|publisher=Turks and Caicos Islands Civil Aviation Authority|accessdate=19 August 2017|url=http://www.tcicaa.org/operations-and-safety/airspace/communication-navigation-and-surveillance}}</ref>
+
+==Functions==
+The CNS has the following three main functions.
+
+===Communication===
+'''C'''ommunication, i.e. [[aviation communication]], refers to communication between two or more aircraft, the exchange of data or verbal information between aircraft and [[air traffic control]] and the ground based communication infrastructure of the ATM network (like the [[aeronautical fixed service]]).<ref name="CNS"/> For [[Continent|continental airspace]], [[Very high frequency|VHF]] (civil) and [[ultra high frequency|UHF]] (military) systems are used whereas for [[Ocean|oceanic areas]], [[high frequency]] systems and [[Communications satellite|SATCOM]]s are used.<ref name="Communication navigation and surveillance"/>
+
+===Navigation===
+'''N'''avigation, i.e. [[air navigation]], refers to the process of planning, recording, and controlling the movement of an aircraft from one place to another by providing accurate, reliable and seamless position determination capability.<ref name="CNS"/><ref name='NVPUB9V1'>{{cite book
+ | last1 = Bowditch
+ | first1 = Nathaniel
+ | title = The American Practical Navigator
+ | chapter = Glossary
+ | volume = 9
+ | publisher = National Imagery and Mapping Agency
+ | year = 1995
+ | location = Bethesda, Maryland
+ | page = 815
+ | url = http://www.irbs.com/bowditch/pdf/glossary/gloss-n.pdf
+ | accessdate = 2017-08-19
+ | isbn = 978-0-939837-54-0
+ | archive-url = https://web.archive.org/web/20110520040826/http://www.irbs.com/bowditch/pdf/glossary/gloss-n.pdf
+ | archive-date = 2011-05-20
+ | url-status = dead
+ }}</ref>
+
+===Surveillance===
+[[Surveillance|'''S'''urveillance]] systems are used by air traffic control to determine the position of aircraft. There are two types of surveillance systems:
+
+====Cooperative systems====
+Cooperative systems ([[Pseudonym|a.k.a.]] dependent surveillance): Under this form of surveillance, systems on the ground (such as [[Secondary surveillance radar|SSR]]) communicate with equipment (such as [[Transponder (aeronautics)|transponder]]s) on board the aircraft to determine the position and other details of the aircraft. Aircraft information, which may include position from [[GNSS]] or other means is determined on board and then transmitted to [[air traffic control|ATC]] in response to interrogation.<ref name="CNS"/><ref name="Communication navigation and surveillance"/> Other cooperative systems such as [[ADS-B]] rely on aircraft transmitting their position and other information without interrogation from the ground.
+
+====Non-cooperative systems====
+Non-cooperative systems (a.k.a. independent surveillance): Under this form of surveillance, systems on the ground (such as [[Primary surveillance radar|PSR]]) are able to locate the aircraft and measure its position from the ground by transmitting pulses of radio waves which reflect off the aircraft's hull.<ref name="CNS"/><ref name="Communication navigation and surveillance"/>
+ 
+==See also==
+* [[Air traffic management]]
+
+{{Portal bar|Aviation}}
+
+==References==
+{{Reflist|colwidth=30em}}
+
+==External links==
+[[Category:Air traffic management|Air traffic management]]
+[[Category:Aviation]]
