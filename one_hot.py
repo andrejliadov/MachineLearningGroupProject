@@ -1,9 +1,7 @@
 import numpy as np
-# import matplotlib.pyplot as plt
 from sklearn.datasets import load_files
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.metrics import classification_report, accuracy_score
 from sklearn.svm import LinearSVC
 from sklearn.linear_model import LogisticRegression
@@ -13,7 +11,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import OneHotEncoder
 
 #Read in the data
-DATA_DIR = "./data/"
+DATA_DIR = "MachineLearningGroupProject/data/"
 data = load_files(DATA_DIR, encoding='utf-8', decode_error='replace')
 labels, counts = np.unique(data.target, return_counts=True)
 labels_str = np.array(data.target_names)[labels]
@@ -34,6 +32,13 @@ for i in range(0, len(data.data)):
 
 label_encoder = le.fit_transform(data.data)
 integer_encoder = label_encoder.reshape(len(label_encoder), 1)
-onehot_encoder = onehot_encoder.fit_transform(integer_encoder)
+onehot = onehot_encoder.fit_transform(integer_encoder)
 
-X_train, X_test, Y_train, Y_test = train_test_split(data.data, data.target)
+X_train, X_test, Y_train, Y_test = train_test_split(onehot, data.target)
+
+model = LinearSVC()
+model.fit(X_train, Y_train)
+
+y_pred = model.predict(X_test)
+print(accuracy_score(Y_test, y_pred))
+print(classification_report(Y_test, y_pred))
